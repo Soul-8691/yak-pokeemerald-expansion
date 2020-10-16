@@ -1810,3 +1810,23 @@ gTilesetPalettes_Lumbridge_Swamp::
 gTilesetTiles_Lumbridge_Swamp::
 	.incbin "data/tilesets/secondary/Lumbridge_Swamp/tiles.4bpp.lz"
 	
+
+	.align 2
+gTilesetPalettes_Windmill::
+	.incbin "data/tilesets/secondary/windmill/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/windmill/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/windmill/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/windmill/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/windmill/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/windmill/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/windmill/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/windmill/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/windmill/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/windmill/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/windmill/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/windmill/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/windmill/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Windmill::
+	.incbin "data/tilesets/secondary/windmill/tiles.4bpp.lz"

@@ -4540,6 +4540,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Lumbridge_GeneralStore2/border.bin",
       "blockdata_filepath": "data/layouts/Lumbridge_GeneralStore2/map.bin"
+    },
+    {
+      "id": "LAYOUT_MILL_LANE_MILL",
+      "name": "Mill_Lane_Mill_Layout",
+      "width": 30,
+      "height": 32,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Windmill",
+      "border_filepath": "data/layouts/Mill_Lane_Mill/border.bin",
+      "blockdata_filepath": "data/layouts/Mill_Lane_Mill/map.bin"
     }
   ]
 }

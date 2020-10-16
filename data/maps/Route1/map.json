@@ -17,6 +17,11 @@
       "direction": "down",
       "offset": 38,
       "map": "MAP_LUMBRIDGE"
+    },
+    {
+      "direction": "up",
+      "offset": 18,
+      "map": "MAP_MILL_LANE_MILL"
     }
   ],
   "object_events": [

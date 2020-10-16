@@ -589,3 +589,10 @@ gMetatiles_Lumbridge_Swamp::
 	
 gMetatileAttributes_Lumbridge_Swamp::
 	.incbin "data/tilesets/secondary/Lumbridge_Swamp/metatile_attributes.bin"
+	.align 1
+gMetatiles_Windmill::
+	.incbin "data/tilesets/secondary/windmill/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Windmill::
+	.incbin "data/tilesets/secondary/windmill/metatile_attributes.bin"

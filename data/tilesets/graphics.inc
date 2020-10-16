@@ -1729,3 +1729,84 @@ gTilesetPalettes_UnionRoom:: @ 8395678
 	.align 2
 gTilesetTiles_UnionRoom:: @ 8395878
 	.incbin "data/tilesets/secondary/union_room/tiles.4bpp.lz"
+	
+		.align 2
+gTilesetPalettes_PokeScapeOutdoors::
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/palettes/00.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/palettes/01.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/palettes/02.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/palettes/03.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/palettes/04.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/palettes/05.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/palettes/06.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/palettes/07.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/palettes/08.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/palettes/09.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/palettes/10.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/palettes/11.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_PokeScapeOutdoors::
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Lumbridge::
+	.incbin "data/tilesets/secondary/Lumbridge/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Lumbridge::
+	.incbin "data/tilesets/secondary/Lumbridge/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_PokeScapeIndoors::
+	.incbin "data/tilesets/primary/PokeScapeIndoors/palettes/00.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeIndoors/palettes/01.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeIndoors/palettes/02.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeIndoors/palettes/03.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeIndoors/palettes/04.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeIndoors/palettes/05.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeIndoors/palettes/06.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeIndoors/palettes/07.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeIndoors/palettes/08.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeIndoors/palettes/09.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeIndoors/palettes/10.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeIndoors/palettes/11.gbapal"
+	.incbin "data/tilesets/primary/PokeScapeIndoors/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_PokeScapeIndoors::
+	.incbin "data/tilesets/primary/PokeScapeIndoors/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Lumbridge_Swamp::
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Lumbridge_Swamp::
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/tiles.4bpp.lz"
+	

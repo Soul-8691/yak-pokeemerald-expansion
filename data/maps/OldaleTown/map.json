@@ -95,8 +95,8 @@
       "x": 15,
       "y": 16,
       "elevation": 0,
-      "dest_map": "MAP_OLDALE_TOWN_HOUSE2",
-      "dest_warp_id": 0
+      "dest_map": "MAP_LUMBRIDGE",
+      "dest_warp_id": 3
     },
     {
       "x": 6,

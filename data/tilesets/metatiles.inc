@@ -557,3 +557,35 @@ gMetatiles_UnionRoom:: @ 83DF392
 	.align 1
 gMetatileAttributes_UnionRoom:: @ 83DF6A2
 	.incbin "data/tilesets/secondary/union_room/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_PokeScapeOutdoors::
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/metatiles.bin"
+	.align 1
+	
+gMetatileAttributes_PokeScapeOutdoors::
+	.incbin "data/tilesets/primary/PokeScapeOutdoors/metatile_attributes.bin"
+	.align 1
+	
+gMetatiles_Lumbridge::
+	.incbin "data/tilesets/secondary/lumbridge/metatiles.bin"
+	.align 1
+	
+gMetatileAttributes_Lumbridge::
+	.incbin "data/tilesets/secondary/lumbridge/metatile_attributes.bin"
+	
+	.align 1
+gMetatiles_PokeScapeIndoors::
+	.incbin "data/tilesets/primary/PokeScapeIndoors/metatiles.bin"
+	.align 1
+	
+gMetatileAttributes_PokeScapeIndoors::
+	.incbin "data/tilesets/primary/PokeScapeIndoors/metatile_attributes.bin"
+	.align 1
+	
+gMetatiles_Lumbridge_Swamp::
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/metatiles.bin"
+	.align 1
+	
+gMetatileAttributes_Lumbridge_Swamp::
+	.incbin "data/tilesets/secondary/Lumbridge_Swamp/metatile_attributes.bin"

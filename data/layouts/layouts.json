@@ -4410,6 +4410,136 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE",
+      "name": "Lumbridge_Layout",
+      "width": 62,
+      "height": 44,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge",
+      "border_filepath": "data/layouts/Lumbridge/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE1",
+      "name": "Route1_Layout",
+      "width": 80,
+      "height": 34,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp",
+      "border_filepath": "data/layouts/Route1/border.bin",
+      "blockdata_filepath": "data/layouts/Route1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_SWAMP",
+      "name": "Lumbridge_Swamp_Layout",
+      "width": 76,
+      "height": 34,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp",
+      "border_filepath": "data/layouts/Lumbridge_Swamp/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Swamp/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_HOUSE_BOBSAXES1",
+      "name": "Lumbridge_House_BobsAxes1_Layout",
+      "width": 7,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Lumbridge_House_BobsAxes1/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_House_BobsAxes1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_HOUSE_BOBSAXES2",
+      "name": "Lumbridge_House_BobsAxes2_Layout",
+      "width": 7,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Lumbridge_House_BobsAxes2/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_House_BobsAxes2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_HOUSE_1",
+      "name": "Lumbridge_House_1_Layout",
+      "width": 6,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Lumbridge_House_1/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_House_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_HOUSE_2",
+      "name": "Lumbridge_House_2_Layout",
+      "width": 6,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Lumbridge_House_2/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_House_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_HOUSE_RODDECK1",
+      "name": "Lumbridge_House_Roddeck1_Layout",
+      "width": 6,
+      "height": 9,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Lumbridge_House_Roddeck1/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_House_Roddeck1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_HOUSE_RODDECK2",
+      "name": "Lumbridge_House_Roddeck2_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Lumbridge_House_Roddeck2/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_House_Roddeck2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_HOUSE_STARTER1",
+      "name": "Lumbridge_House_Starter1_Layout",
+      "width": 8,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Lumbridge_House_Starter1/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_House_Starter1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_HOUSE_STARTER2",
+      "name": "Lumbridge_House_Starter2_Layout",
+      "width": 8,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Lumbridge_House_Starter2/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_House_Starter2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_GENERALSTORE1",
+      "name": "Lumbridge_GeneralStore1_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Lumbridge_GeneralStore1/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_GeneralStore1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_GENERALSTORE2",
+      "name": "Lumbridge_GeneralStore2_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Lumbridge_GeneralStore2/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_GeneralStore2/map.bin"
     }
   ]
 }

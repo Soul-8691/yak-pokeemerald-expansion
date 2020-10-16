@@ -830,3 +830,49 @@ gTileset_UnionRoom:: @ 83DFDFC
 	.4byte gMetatiles_UnionRoom
 	.4byte gMetatileAttributes_UnionRoom
 	.4byte NULL @ animation callback
+	
+	.align 2
+gTileset_PokeScapeOutdoors::
+	.byte TRUE @ is compressed
+	.byte FALSE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_PokeScapeOutdoors
+	.4byte gTilesetPalettes_PokeScapeOutdoors
+	.4byte gMetatiles_PokeScapeOutdoors
+	.4byte gMetatileAttributes_PokeScapeOutdoors
+	.4byte InitTilesetAnim_PokeScapeOutdoors
+
+	.align 2
+gTileset_Lumbridge::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Lumbridge
+	.4byte gTilesetPalettes_Lumbridge
+	.4byte gMetatiles_Lumbridge
+	.4byte gMetatileAttributes_Lumbridge
+	.4byte InitTilesetAnim_Lumbridge
+	
+
+	.align 2
+gTileset_PokeScapeIndoors::
+	.byte TRUE @ is compressed
+	.byte FALSE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_PokeScapeIndoors
+	.4byte gTilesetPalettes_PokeScapeIndoors
+	.4byte gMetatiles_PokeScapeIndoors
+	.4byte gMetatileAttributes_PokeScapeIndoors
+	.4byte NULL
+
+
+	.align 2
+gTileset_Lumbridge_Swamp::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Lumbridge_Swamp
+	.4byte gTilesetPalettes_Lumbridge_Swamp
+	.4byte gMetatiles_Lumbridge_Swamp
+	.4byte gMetatileAttributes_Lumbridge_Swamp
+	.4byte NULL

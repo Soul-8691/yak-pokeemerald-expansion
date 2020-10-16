@@ -1,0 +1,41 @@
+{
+  "id": "MAP_LUMBRIDGE_HOUSE_BOBS_AXES1",
+  "name": "Lumbridge_House_BobsAxes1",
+  "layout": "LAYOUT_LUMBRIDGE_HOUSE_BOBSAXES1",
+  "music": "MUS_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_LUMBRIDGE",
+      "dest_warp_id": 5
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_LUMBRIDGE_HOUSE_BOBS_AXES2",
+      "dest_warp_id": 0
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

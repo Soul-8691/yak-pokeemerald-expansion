@@ -1060,3 +1060,29 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+	
+	.include "data/maps/Lumbridge/scripts.inc"
+
+	.include "data/maps/Route1/scripts.inc"
+	
+	.include "data/maps/Lumbridge_Swamp/scripts.inc"
+
+	.include "data/maps/Lumbridge_House_BobsAxes1/scripts.inc"
+
+	.include "data/maps/Lumbridge_House_BobsAxes2/scripts.inc"
+
+	.include "data/maps/Lumbridge_House_1/scripts.inc"
+
+	.include "data/maps/Lumbridge_House_2/scripts.inc"
+
+	.include "data/maps/Lumbridge_House_Roddeck1/scripts.inc"
+
+	.include "data/maps/Lumbridge_House_Roddeck2/scripts.inc"
+
+	.include "data/maps/Lumbridge_House_Starter1/scripts.inc"
+
+	.include "data/maps/Lumbridge_House_Starter2/scripts.inc"
+
+	.include "data/maps/Lumbridge_GeneralStore1/scripts.inc"
+
+	.include "data/maps/Lumbridge_GeneralStore2/scripts.inc"

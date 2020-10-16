@@ -591,6 +591,27 @@
 // Map Group 33
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
-#define MAP_GROUPS_COUNT 34
+// Map Group 34
+#define MAP_LUMBRIDGE (0 | (34 << 8))
+
+// Map Group 35
+#define MAP_ROUTE1 (0 | (35 << 8))
+
+// Map Group 36
+#define MAP_LUMBRIDGE_SWAMP (0 | (36 << 8))
+
+// Map Group 37
+#define MAP_LUMBRIDGE_HOUSE_BOBS_AXES1 (0 | (37 << 8))
+#define MAP_LUMBRIDGE_HOUSE_BOBS_AXES2 (1 | (37 << 8))
+#define MAP_LUMBRIDGE_HOUSE_1          (2 | (37 << 8))
+#define MAP_LUMBRIDGE_HOUSE_2          (3 | (37 << 8))
+#define MAP_LUMBRIDGE_HOUSE_RODDECK1   (4 | (37 << 8))
+#define MAP_LUMBRIDGE_HOUSE_RODDECK2   (5 | (37 << 8))
+#define MAP_LUMBRIDGE_HOUSE_STARTER1   (6 | (37 << 8))
+#define MAP_LUMBRIDGE_HOUSE_STARTER2   (7 | (37 << 8))
+#define MAP_LUMBRIDGE_GENERAL_STORE1   (8 | (37 << 8))
+#define MAP_LUMBRIDGE_GENERAL_STORE2   (9 | (37 << 8))
+
+#define MAP_GROUPS_COUNT 38
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

@@ -34,7 +34,11 @@
     "gMapGroup30",
     "gMapGroup31",
     "gMapGroup32",
-    "gMapGroup33"
+    "gMapGroup33",
+    "gMapGroup34",
+    "gMapGroup35",
+    "gMapGroup36",
+    "gMapGroup37"
   ],
   "gMapGroup0": [
     "PetalburgCity",
@@ -621,5 +625,26 @@
   ],
   "gMapGroup33": [
     "Route124_DivingTreasureHuntersHouse"
+  ],
+  "gMapGroup34": [
+    "Lumbridge"
+  ],
+  "gMapGroup35": [
+    "Route1"
+  ],
+  "gMapGroup36": [
+    "Lumbridge_Swamp"
+  ],
+  "gMapGroup37": [
+    "Lumbridge_House_BobsAxes1",
+    "Lumbridge_House_BobsAxes2",
+    "Lumbridge_House_1",
+    "Lumbridge_House_2",
+    "Lumbridge_House_Roddeck1",
+    "Lumbridge_House_Roddeck2",
+    "Lumbridge_House_Starter1",
+    "Lumbridge_House_Starter2",
+    "Lumbridge_GeneralStore1",
+    "Lumbridge_GeneralStore2"
   ]
 }

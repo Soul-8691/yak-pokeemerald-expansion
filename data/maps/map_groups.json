@@ -38,7 +38,8 @@
     "gMapGroup34",
     "gMapGroup35",
     "gMapGroup36",
-    "gMapGroup37"
+    "gMapGroup37",
+    "gMapGroup38"
   ],
   "gMapGroup0": [
     "PetalburgCity",
@@ -647,5 +648,10 @@
     "Lumbridge_House_Starter2",
     "Lumbridge_GeneralStore1",
     "Lumbridge_GeneralStore2"
+  ],
+  "gMapGroup38": [
+    "Mill_Lane_Mill_1",
+    "Mill_Lane_Mill_2",
+    "Mill_Lane_Mill_3"
   ]
 }

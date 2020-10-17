@@ -4427,7 +4427,7 @@
       "width": 80,
       "height": 34,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Lumbridge_Swamp",
+      "secondary_tileset": "gTileset_Windmill",
       "border_filepath": "data/layouts/Route1/border.bin",
       "blockdata_filepath": "data/layouts/Route1/map.bin"
     },
@@ -4550,6 +4550,36 @@
       "secondary_tileset": "gTileset_Windmill",
       "border_filepath": "data/layouts/Mill_Lane_Mill/border.bin",
       "blockdata_filepath": "data/layouts/Mill_Lane_Mill/map.bin"
+    },
+    {
+      "id": "LAYOUT_MILL_LANE_MILL_1",
+      "name": "Mill_Lane_Mill_1_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Windmill",
+      "border_filepath": "data/layouts/Mill_Lane_Mill_1/border.bin",
+      "blockdata_filepath": "data/layouts/Mill_Lane_Mill_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_MILL_LANE_MILL_2",
+      "name": "Mill_Lane_Mill_2_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Windmill",
+      "border_filepath": "data/layouts/Mill_Lane_Mill_2/border.bin",
+      "blockdata_filepath": "data/layouts/Mill_Lane_Mill_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_MILL_LANE_MILL_3",
+      "name": "Mill_Lane_Mill_3_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Windmill",
+      "border_filepath": "data/layouts/Mill_Lane_Mill_3/border.bin",
+      "blockdata_filepath": "data/layouts/Mill_Lane_Mill_3/map.bin"
     }
   ]
 }

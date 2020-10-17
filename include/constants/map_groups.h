@@ -613,6 +613,11 @@
 #define MAP_LUMBRIDGE_GENERAL_STORE1   (8 | (37 << 8))
 #define MAP_LUMBRIDGE_GENERAL_STORE2   (9 | (37 << 8))
 
-#define MAP_GROUPS_COUNT 38
+// Map Group 38
+#define MAP_MILL_LANE_MILL_1 (0 | (38 << 8))
+#define MAP_MILL_LANE_MILL_2 (1 | (38 << 8))
+#define MAP_MILL_LANE_MILL_3 (2 | (38 << 8))
+
+#define MAP_GROUPS_COUNT 39
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

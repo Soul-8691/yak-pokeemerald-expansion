@@ -74,22 +74,22 @@
   "coord_events": [
     {
       "type": "weather",
-      "x": 37,
-      "y": 35,
+      "x": 42,
+      "y": 43,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_FOG_DIAGONAL"
     },
     {
       "type": "weather",
-      "x": 38,
-      "y": 34,
+      "x": 43,
+      "y": 43,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_FOG_DIAGONAL"
     },
     {
       "type": "weather",
-      "x": 37,
-      "y": 34,
+      "x": 36,
+      "y": 36,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
     },
@@ -99,6 +99,20 @@
       "y": 35,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
+    },
+    {
+      "type": "weather",
+      "x": 37,
+      "y": 36,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "type": "weather",
+      "x": 37,
+      "y": 35,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
     }
   ],
   "bg_events": [

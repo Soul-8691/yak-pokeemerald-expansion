@@ -1088,3 +1088,9 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Lumbridge_GeneralStore2/scripts.inc"
 
 	.include "data/maps/Mill_Lane_Mill/scripts.inc"
+
+	.include "data/maps/Mill_Lane_Mill_1/scripts.inc"
+
+	.include "data/maps/Mill_Lane_Mill_2/scripts.inc"
+
+	.include "data/maps/Mill_Lane_Mill_3/scripts.inc"

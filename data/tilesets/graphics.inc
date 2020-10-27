@@ -1830,3 +1830,43 @@ gTilesetPalettes_Windmill::
 	.align 2
 gTilesetTiles_Windmill::
 	.incbin "data/tilesets/secondary/windmill/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Rimmington::
+	.incbin "data/tilesets/secondary/rimmington/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rimmington/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rimmington/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rimmington/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rimmington/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rimmington/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rimmington/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rimmington/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rimmington/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rimmington/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rimmington/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rimmington/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rimmington/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Rimmington::
+	.incbin "data/tilesets/secondary/rimmington/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Bank::
+	.incbin "data/tilesets/secondary/bank/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/bank/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/bank/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/bank/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/bank/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/bank/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/bank/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/bank/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/bank/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/bank/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/bank/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/bank/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/bank/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Bank::
+	.incbin "data/tilesets/secondary/bank/tiles.4bpp.lz"

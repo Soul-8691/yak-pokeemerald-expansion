@@ -1094,3 +1094,47 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Mill_Lane_Mill_2/scripts.inc"
 
 	.include "data/maps/Mill_Lane_Mill_3/scripts.inc"
+
+	.include "data/maps/Route1_House_Fred/scripts.inc"
+
+	.include "data/maps/Lumbridge_House_3/scripts.inc"
+
+	.include "data/maps/Draynor/scripts.inc"
+
+	.include "data/maps/Route2/scripts.inc"
+
+	.include "data/maps/Route3/scripts.inc"
+
+	.include "data/maps/Route4/scripts.inc"
+
+	.include "data/maps/Route5/scripts.inc"
+
+	.include "data/maps/Route6/scripts.inc"
+
+	.include "data/maps/Port_Sarim/scripts.inc"
+
+	.include "data/maps/Draynor_Manor/scripts.inc"
+
+	.include "data/maps/Route7/scripts.inc"
+
+	.include "data/maps/Route8/scripts.inc"
+
+	.include "data/maps/Route9/scripts.inc"
+
+	.include "data/maps/Rimmington/scripts.inc"
+
+	.include "data/maps/Route10/scripts.inc"
+
+	.include "data/maps/Route11/scripts.inc"
+
+	.include "data/maps/Lumbridge_Bank/scripts.inc"
+
+	.include "data/maps/Lumbridge_House_4/scripts.inc"
+
+	.include "data/maps/Lumbridge_Castle_1/scripts.inc"
+
+	.include "data/maps/Lumbridge_Castle_2/scripts.inc"
+
+	.include "data/maps/Lumbridge_Castle_3/scripts.inc"
+
+	.include "data/maps/Lumbridge_Castle_4/scripts.inc"

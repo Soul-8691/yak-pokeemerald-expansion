@@ -4434,8 +4434,8 @@
     {
       "id": "LAYOUT_LUMBRIDGE_SWAMP",
       "name": "Lumbridge_Swamp_Layout",
-      "width": 76,
-      "height": 34,
+      "width": 84,
+      "height": 38,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Lumbridge_Swamp",
       "border_filepath": "data/layouts/Lumbridge_Swamp/border.bin",
@@ -4544,7 +4544,7 @@
     {
       "id": "LAYOUT_MILL_LANE_MILL",
       "name": "Mill_Lane_Mill_Layout",
-      "width": 30,
+      "width": 32,
       "height": 32,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Windmill",
@@ -4580,6 +4580,226 @@
       "secondary_tileset": "gTileset_Windmill",
       "border_filepath": "data/layouts/Mill_Lane_Mill_3/border.bin",
       "blockdata_filepath": "data/layouts/Mill_Lane_Mill_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE1_HOUSE_FRED",
+      "name": "Route1_House_Fred_Layout",
+      "width": 13,
+      "height": 9,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Windmill",
+      "border_filepath": "data/layouts/Route1_House_Fred/border.bin",
+      "blockdata_filepath": "data/layouts/Route1_House_Fred/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_HOUSE_3",
+      "name": "Lumbridge_House_3_Layout",
+      "width": 10,
+      "height": 6,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Lumbridge_House_3/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_House_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR",
+      "name": "Draynor_Layout",
+      "width": 54,
+      "height": 38,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Windmill",
+      "border_filepath": "data/layouts/Draynor/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE2",
+      "name": "Route2_Layout",
+      "width": 38,
+      "height": 44,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp",
+      "border_filepath": "data/layouts/Route2/border.bin",
+      "blockdata_filepath": "data/layouts/Route2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE3",
+      "name": "Route3_Layout",
+      "width": 22,
+      "height": 22,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route3/border.bin",
+      "blockdata_filepath": "data/layouts/Route3/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE4",
+      "name": "Route4_Layout",
+      "width": 34,
+      "height": 22,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Windmill",
+      "border_filepath": "data/layouts/Route4/border.bin",
+      "blockdata_filepath": "data/layouts/Route4/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE5",
+      "name": "Route5_Layout",
+      "width": 46,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route5/border.bin",
+      "blockdata_filepath": "data/layouts/Route5/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE6",
+      "name": "Route6_Layout",
+      "width": 12,
+      "height": 36,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route6/border.bin",
+      "blockdata_filepath": "data/layouts/Route6/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM",
+      "name": "Port_Sarim_Layout",
+      "width": 46,
+      "height": 46,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Rimmington",
+      "border_filepath": "data/layouts/Port_Sarim/border.bin",
+      "blockdata_filepath": "data/layouts/Port_Sarim/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_MANOR",
+      "name": "Draynor_Manor_Layout",
+      "width": 32,
+      "height": 42,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Draynor_Manor/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_Manor/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE7",
+      "name": "Route7_Layout",
+      "width": 38,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp",
+      "border_filepath": "data/layouts/Route7/border.bin",
+      "blockdata_filepath": "data/layouts/Route7/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE8",
+      "name": "Route8_Layout",
+      "width": 82,
+      "height": 26,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route8/border.bin",
+      "blockdata_filepath": "data/layouts/Route8/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE9",
+      "name": "Route9_Layout",
+      "width": 58,
+      "height": 30,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route9/border.bin",
+      "blockdata_filepath": "data/layouts/Route9/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIMMINGTON",
+      "name": "Rimmington_Layout",
+      "width": 58,
+      "height": 36,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Rimmington",
+      "border_filepath": "data/layouts/Rimmington/border.bin",
+      "blockdata_filepath": "data/layouts/Rimmington/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE10",
+      "name": "Route10_Layout",
+      "width": 24,
+      "height": 18,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge",
+      "border_filepath": "data/layouts/Route10/border.bin",
+      "blockdata_filepath": "data/layouts/Route10/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE11",
+      "name": "Route11_Layout",
+      "width": 42,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route11/border.bin",
+      "blockdata_filepath": "data/layouts/Route11/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_BANK",
+      "name": "Lumbridge_Bank_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Lumbridge_Bank/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Bank/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_HOUSE_4",
+      "name": "Lumbridge_House_4_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Lumbridge_House_4/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_House_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_CASTLE_1",
+      "name": "Lumbridge_Castle_1_Layout",
+      "width": 46,
+      "height": 36,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge",
+      "border_filepath": "data/layouts/Lumbridge_Castle_1/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Castle_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_CASTLE_2",
+      "name": "Lumbridge_Castle_2_Layout",
+      "width": 36,
+      "height": 17,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Lumbridge",
+      "border_filepath": "data/layouts/Lumbridge_Castle_2/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Castle_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_CASTLE_3",
+      "name": "Lumbridge_Castle_3_Layout",
+      "width": 36,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Lumbridge",
+      "border_filepath": "data/layouts/Lumbridge_Castle_3/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Castle_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_CASTLE_4",
+      "name": "Lumbridge_Castle_4_Layout",
+      "width": 16,
+      "height": 9,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Lumbridge",
+      "border_filepath": "data/layouts/Lumbridge_Castle_4/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Castle_4/map.bin"
     }
   ]
 }

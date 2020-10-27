@@ -596,3 +596,17 @@ gMetatiles_Windmill::
 	.align 1
 gMetatileAttributes_Windmill::
 	.incbin "data/tilesets/secondary/windmill/metatile_attributes.bin"
+	.align 1
+gMetatiles_Rimmington::
+	.incbin "data/tilesets/secondary/rimmington/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Rimmington::
+	.incbin "data/tilesets/secondary/rimmington/metatile_attributes.bin"
+	.align 1
+gMetatiles_Bank::
+	.incbin "data/tilesets/secondary/bank/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Bank::
+	.incbin "data/tilesets/secondary/bank/metatile_attributes.bin"

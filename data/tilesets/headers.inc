@@ -887,3 +887,25 @@ gTileset_Windmill::
 	.4byte gMetatiles_Windmill
 	.4byte gMetatileAttributes_Windmill
 	.4byte NULL
+
+	.align 2
+gTileset_Rimmington::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Rimmington
+	.4byte gTilesetPalettes_Rimmington
+	.4byte gMetatiles_Rimmington
+	.4byte gMetatileAttributes_Rimmington
+	.4byte NULL
+
+	.align 2
+gTileset_Bank::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Bank
+	.4byte gTilesetPalettes_Bank
+	.4byte gMetatiles_Bank
+	.4byte gMetatileAttributes_Bank
+	.4byte NULL

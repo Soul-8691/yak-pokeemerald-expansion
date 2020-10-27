@@ -15,8 +15,13 @@
   "connections": [
     {
       "direction": "up",
-      "offset": 14,
+      "offset": 22,
       "map": "MAP_LUMBRIDGE"
+    },
+    {
+      "direction": "left",
+      "offset": -6,
+      "map": "MAP_ROUTE2"
     }
   ],
   "object_events": [

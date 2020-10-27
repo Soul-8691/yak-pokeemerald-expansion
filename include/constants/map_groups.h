@@ -592,14 +592,28 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // Map Group 34
-#define MAP_LUMBRIDGE (0 | (34 << 8))
+#define MAP_LUMBRIDGE  (0 | (34 << 8))
+#define MAP_DRAYNOR    (1 | (34 << 8))
+#define MAP_PORT_SARIM (2 | (34 << 8))
+#define MAP_RIMMINGTON (3 | (34 << 8))
 
 // Map Group 35
-#define MAP_ROUTE1 (0 | (35 << 8))
+#define MAP_ROUTE1  (0 | (35 << 8))
+#define MAP_ROUTE2  (1 | (35 << 8))
+#define MAP_ROUTE3  (2 | (35 << 8))
+#define MAP_ROUTE4  (3 | (35 << 8))
+#define MAP_ROUTE5  (4 | (35 << 8))
+#define MAP_ROUTE6  (5 | (35 << 8))
+#define MAP_ROUTE7  (6 | (35 << 8))
+#define MAP_ROUTE8  (7 | (35 << 8))
+#define MAP_ROUTE9  (8 | (35 << 8))
+#define MAP_ROUTE10 (9 | (35 << 8))
+#define MAP_ROUTE11 (10 | (35 << 8))
 
 // Map Group 36
 #define MAP_LUMBRIDGE_SWAMP (0 | (36 << 8))
 #define MAP_MILL_LANE_MILL  (1 | (36 << 8))
+#define MAP_DRAYNOR_MANOR   (2 | (36 << 8))
 
 // Map Group 37
 #define MAP_LUMBRIDGE_HOUSE_BOBS_AXES1 (0 | (37 << 8))
@@ -612,12 +626,22 @@
 #define MAP_LUMBRIDGE_HOUSE_STARTER2   (7 | (37 << 8))
 #define MAP_LUMBRIDGE_GENERAL_STORE1   (8 | (37 << 8))
 #define MAP_LUMBRIDGE_GENERAL_STORE2   (9 | (37 << 8))
+#define MAP_LUMBRIDGE_HOUSE_3          (10 | (37 << 8))
+#define MAP_LUMBRIDGE_BANK             (11 | (37 << 8))
+#define MAP_LUMBRIDGE_HOUSE_4          (12 | (37 << 8))
+#define MAP_LUMBRIDGE_CASTLE_1         (13 | (37 << 8))
+#define MAP_LUMBRIDGE_CASTLE_2         (14 | (37 << 8))
+#define MAP_LUMBRIDGE_CASTLE_3         (15 | (37 << 8))
+#define MAP_LUMBRIDGE_CASTLE_4         (16 | (37 << 8))
 
 // Map Group 38
 #define MAP_MILL_LANE_MILL_1 (0 | (38 << 8))
 #define MAP_MILL_LANE_MILL_2 (1 | (38 << 8))
 #define MAP_MILL_LANE_MILL_3 (2 | (38 << 8))
 
-#define MAP_GROUPS_COUNT 39
+// Map Group 39
+#define MAP_ROUTE1_HOUSE_FRED (0 | (39 << 8))
+
+#define MAP_GROUPS_COUNT 40
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

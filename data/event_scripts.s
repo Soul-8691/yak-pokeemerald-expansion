@@ -1138,3 +1138,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Lumbridge_Castle_3/scripts.inc"
 
 	.include "data/maps/Lumbridge_Castle_4/scripts.inc"
+
+	.include "data/maps/Falador/scripts.inc"

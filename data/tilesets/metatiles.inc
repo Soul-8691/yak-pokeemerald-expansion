@@ -610,3 +610,17 @@ gMetatiles_Bank::
 	.align 1
 gMetatileAttributes_Bank::
 	.incbin "data/tilesets/secondary/bank/metatile_attributes.bin"
+	.align 1
+gMetatiles_Draynor::
+	.incbin "data/tilesets/secondary/draynor/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Draynor::
+	.incbin "data/tilesets/secondary/draynor/metatile_attributes.bin"
+	.align 1
+gMetatiles_Falador::
+	.incbin "data/tilesets/secondary/falador/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Falador::
+	.incbin "data/tilesets/secondary/falador/metatile_attributes.bin"

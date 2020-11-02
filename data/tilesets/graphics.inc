@@ -1870,3 +1870,43 @@ gTilesetPalettes_Bank::
 	.align 2
 gTilesetTiles_Bank::
 	.incbin "data/tilesets/secondary/bank/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Draynor::
+	.incbin "data/tilesets/secondary/draynor/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/draynor/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/draynor/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/draynor/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/draynor/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/draynor/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/draynor/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/draynor/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/draynor/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/draynor/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/draynor/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/draynor/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/draynor/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Draynor::
+	.incbin "data/tilesets/secondary/draynor/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Falador::
+	.incbin "data/tilesets/secondary/falador/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/falador/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/falador/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/falador/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/falador/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/falador/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/falador/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/falador/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/falador/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/falador/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/falador/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/falador/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/falador/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Falador::
+	.incbin "data/tilesets/secondary/falador/tiles.4bpp.lz"

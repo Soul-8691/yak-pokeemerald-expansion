@@ -4607,7 +4607,7 @@
       "width": 54,
       "height": 38,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Windmill",
+      "secondary_tileset": "gTileset_Draynor",
       "border_filepath": "data/layouts/Draynor/border.bin",
       "blockdata_filepath": "data/layouts/Draynor/map.bin"
     },
@@ -4627,7 +4627,7 @@
       "width": 22,
       "height": 22,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Draynor",
       "border_filepath": "data/layouts/Route3/border.bin",
       "blockdata_filepath": "data/layouts/Route3/map.bin"
     },
@@ -4657,7 +4657,7 @@
       "width": 12,
       "height": 36,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Falador",
       "border_filepath": "data/layouts/Route6/border.bin",
       "blockdata_filepath": "data/layouts/Route6/map.bin"
     },
@@ -4687,7 +4687,7 @@
       "width": 38,
       "height": 14,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Lumbridge_Swamp",
+      "secondary_tileset": "gTileset_Falador",
       "border_filepath": "data/layouts/Route7/border.bin",
       "blockdata_filepath": "data/layouts/Route7/map.bin"
     },
@@ -4800,6 +4800,16 @@
       "secondary_tileset": "gTileset_Lumbridge",
       "border_filepath": "data/layouts/Lumbridge_Castle_4/border.bin",
       "blockdata_filepath": "data/layouts/Lumbridge_Castle_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR",
+      "name": "Falador_Layout",
+      "width": 86,
+      "height": 44,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/Falador/border.bin",
+      "blockdata_filepath": "data/layouts/Falador/map.bin"
     }
   ]
 }

@@ -909,3 +909,25 @@ gTileset_Bank::
 	.4byte gMetatiles_Bank
 	.4byte gMetatileAttributes_Bank
 	.4byte NULL
+
+	.align 2
+gTileset_Draynor::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Draynor
+	.4byte gTilesetPalettes_Draynor
+	.4byte gMetatiles_Draynor
+	.4byte gMetatileAttributes_Draynor
+	.4byte NULL
+
+	.align 2
+gTileset_Falador::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Falador
+	.4byte gTilesetPalettes_Falador
+	.4byte gMetatiles_Falador
+	.4byte gMetatileAttributes_Falador
+	.4byte NULL

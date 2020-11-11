@@ -2319,3 +2319,12 @@ const u8 gDeoxysPokedexText[] = _(
     "extraterrestrial virus exposed to a laser\n"
     "beam. Its body is configured for superior\n"
     "agility and speed.");
+
+//POKESCAPE
+const u8 gGuthlingPokedexText[] = _(
+	"Hatched from a green egg. These birds seek\n"
+	"balance in the world.");
+	
+const u8 gGuthbirdPokedexText[] = _(
+	"Hatched from a green egg. These birds seek\n"
+	"balance in the world.");

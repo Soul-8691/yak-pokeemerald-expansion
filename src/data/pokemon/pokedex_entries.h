@@ -4643,4 +4643,30 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 290,
         .trainerOffset = 2,
     },
+	
+	//POKESCAPE
+	[NATIONAL_DEX_GUTHLING] =
+	{
+		.categoryName = _("Small Bird"),
+		.height = 1.0,
+		.weight = 10.0,
+		.description = gGuthlingPokedexText,
+		.pokemonScale = 256,
+		.pokemonOffset = 0,
+		.trainerScale = 256,
+		.trainerOffset = 0,
+	},
+	
+	[NATIONAL_DEX_GUTHBIRD] =
+	{
+		.categoryName = _("Small Bird"),
+		.height = 1.0,
+		.weight = 10.0,
+		.description = gGuthbirdPokedexText,
+		.pokemonScale = 256,
+		.pokemonOffset = 0,
+		.trainerScale = 256,
+		.trainerOffset = 0,
+	},
+	
 };

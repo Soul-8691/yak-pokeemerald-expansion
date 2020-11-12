@@ -4868,7 +4868,7 @@ static const union AnimCmd sAnim_COW_HARLEQUIN_FORM_1[] =
 	ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_SKELETAL_OX_FEMALE_FORM_1[] =
+static const union AnimCmd sAnim_SKELETALOX_FEMALE_FORM_1[] =
 {
 	ANIMCMD_FRAME(1, 40),
 	ANIMCMD_FRAME(0, 5),
@@ -4889,7 +4889,7 @@ static const union AnimCmd sAnim_BULL_ELDER_FORM_1[] =
 	ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_SKELETAL_OX_MALE_FORM_1[] =
+static const union AnimCmd sAnim_SKELETALOX_MALE_FORM_1[] =
 {
 	ANIMCMD_FRAME(1, 40),
 	ANIMCMD_FRAME(0, 5),
@@ -5043,7 +5043,7 @@ static const union AnimCmd sAnim_ANGRY_RAT_1[] =
 	ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_EXPERIMENT_RAT_FORM_1[] =
+static const union AnimCmd sAnim_EXPERIMENT_2_FORM_1[] =
 {
 	ANIMCMD_FRAME(1, 40),
 	ANIMCMD_FRAME(0, 5),
@@ -7199,7 +7199,7 @@ static const union AnimCmd sAnim_SHRIMP_1[] =
 	ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_LOBSTER_1[] =
+static const union AnimCmd sAnim_LOBSTER_NORMAL_FORM_1[] =
 {
 	ANIMCMD_FRAME(1, 40),
 	ANIMCMD_FRAME(0, 5),
@@ -7479,7 +7479,7 @@ static const union AnimCmd sAnim_JELLY_SPIRIT_FORM_1[] =
 	ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_ABBY_SPECTR_1[] =
+static const union AnimCmd sAnim_ABBYSPECTR_1[] =
 {
 	ANIMCMD_FRAME(1, 40),
 	ANIMCMD_FRAME(0, 5),
@@ -8347,7 +8347,7 @@ static const union AnimCmd sAnim_KEBBIT_BIG_FORM_1[] =
 	ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_KEBBIT_DESERT_DEVIL_FORM_1[] =
+static const union AnimCmd sAnim_KEBBIT_DESERTDEVIL_FORM_1[] =
 {
 	ANIMCMD_FRAME(1, 40),
 	ANIMCMD_FRAME(0, 5),
@@ -8459,7 +8459,7 @@ static const union AnimCmd sAnim_MONKEY_KARAMJA_BABY_FORM_1[] =
 	ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_MONKEY_KAJARMA_ADULT_FORM_1[] =
+static const union AnimCmd sAnim_MONKEY_KARAMJA_ADULT_FORM_1[] =
 {
 	ANIMCMD_FRAME(1, 40),
 	ANIMCMD_FRAME(0, 5),
@@ -8599,14 +8599,14 @@ static const union AnimCmd sAnim_BUNYIP_1[] =
 	ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_TALON_BEAST_TALON_FORM_1[] =
+static const union AnimCmd sAnim_TALONBEAST_TALON_FORM_1[] =
 {
 	ANIMCMD_FRAME(1, 40),
 	ANIMCMD_FRAME(0, 5),
 	ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_TALON_BEAST_NAIL_FORM_1[] =
+static const union AnimCmd sAnim_TALONBEAST_NAIL_FORM_1[] =
 {
 	ANIMCMD_FRAME(1, 40),
 	ANIMCMD_FRAME(0, 5),
@@ -8690,7 +8690,7 @@ static const union AnimCmd sAnim_MARIONETTE_1[] =
 	ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_DRAGON_KITE_1[] =
+static const union AnimCmd sAnim_DRAGONKITE_1[] =
 {
 	ANIMCMD_FRAME(1, 40),
 	ANIMCMD_FRAME(0, 5),
@@ -8921,7 +8921,7 @@ static const union AnimCmd sAnim_THINGUMWUT_1[] =
 	ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_EXPERIMENT_DOG_FORM_1[] =
+static const union AnimCmd sAnim_EXPERIMENT_3_FORM_1[] =
 {
 	ANIMCMD_FRAME(1, 40),
 	ANIMCMD_FRAME(0, 5),
@@ -8934,6 +8934,7 @@ static const union AnimCmd sAnim_CABBAGE_1[] =
 	ANIMCMD_FRAME(0, 5),
 	ANIMCMD_END,
 };
+
 
 
 
@@ -11376,9 +11377,9 @@ static const union AnimCmd *const sAnims_COW_HARLEQUIN_FORM[] ={
 	sAnim_COW_HARLEQUIN_FORM_1,
 };
 
-static const union AnimCmd *const sAnims_SKELETAL_OX_FEMALE_FORM[] ={
+static const union AnimCmd *const sAnims_SKELETALOX_FEMALE_FORM[] ={
 	sAnim_GeneralFrame0,
-	sAnim_SKELETAL_OX_FEMALE_FORM_1,
+	sAnim_SKELETALOX_FEMALE_FORM_1,
 };
 
 static const union AnimCmd *const sAnims_BULL[] ={
@@ -11391,9 +11392,9 @@ static const union AnimCmd *const sAnims_BULL_ELDER_FORM[] ={
 	sAnim_BULL_ELDER_FORM_1,
 };
 
-static const union AnimCmd *const sAnims_SKELETAL_OX_MALE_FORM[] ={
+static const union AnimCmd *const sAnims_SKELETALOX_MALE_FORM[] ={
 	sAnim_GeneralFrame0,
-	sAnim_SKELETAL_OX_MALE_FORM_1,
+	sAnim_SKELETALOX_MALE_FORM_1,
 };
 
 static const union AnimCmd *const sAnims_TROJAN_COW[] ={
@@ -11501,9 +11502,9 @@ static const union AnimCmd *const sAnims_ANGRY_RAT[] ={
 	sAnim_ANGRY_RAT_1,
 };
 
-static const union AnimCmd *const sAnims_EXPERIMENT_RAT_FORM[] ={
+static const union AnimCmd *const sAnims_EXPERIMENT_2_FORM[] ={
 	sAnim_GeneralFrame0,
-	sAnim_EXPERIMENT_RAT_FORM_1,
+	sAnim_EXPERIMENT_2_FORM_1,
 };
 
 static const union AnimCmd *const sAnims_LAMB[] ={
@@ -13041,9 +13042,9 @@ static const union AnimCmd *const sAnims_SHRIMP[] ={
 	sAnim_SHRIMP_1,
 };
 
-static const union AnimCmd *const sAnims_LOBSTER[] ={
+static const union AnimCmd *const sAnims_LOBSTER_NORMAL_FORM[] ={
 	sAnim_GeneralFrame0,
-	sAnim_LOBSTER_1,
+	sAnim_LOBSTER_NORMAL_FORM_1,
 };
 
 static const union AnimCmd *const sAnims_LOBSTER_GOLDEN_FORM[] ={
@@ -13241,9 +13242,9 @@ static const union AnimCmd *const sAnims_JELLY_SPIRIT_FORM[] ={
 	sAnim_JELLY_SPIRIT_FORM_1,
 };
 
-static const union AnimCmd *const sAnims_ABBY_SPECTR[] ={
+static const union AnimCmd *const sAnims_ABBYSPECTR[] ={
 	sAnim_GeneralFrame0,
-	sAnim_ABBY_SPECTR_1,
+	sAnim_ABBYSPECTR_1,
 };
 
 static const union AnimCmd *const sAnims_SALAMANDER_GREEN_FORM[] ={
@@ -13861,9 +13862,9 @@ static const union AnimCmd *const sAnims_KEBBIT_BIG_FORM[] ={
 	sAnim_KEBBIT_BIG_FORM_1,
 };
 
-static const union AnimCmd *const sAnims_KEBBIT_DESERT_DEVIL_FORM[] ={
+static const union AnimCmd *const sAnims_KEBBIT_DESERTDEVIL_FORM[] ={
 	sAnim_GeneralFrame0,
-	sAnim_KEBBIT_DESERT_DEVIL_FORM_1,
+	sAnim_KEBBIT_DESERTDEVIL_FORM_1,
 };
 
 static const union AnimCmd *const sAnims_KEBBIT_FELDIP_WEASEL_FORM[] ={
@@ -13941,9 +13942,9 @@ static const union AnimCmd *const sAnims_MONKEY_KARAMJA_BABY_FORM[] ={
 	sAnim_MONKEY_KARAMJA_BABY_FORM_1,
 };
 
-static const union AnimCmd *const sAnims_MONKEY_KAJARMA_ADULT_FORM[] ={
+static const union AnimCmd *const sAnims_MONKEY_KARAMJA_ADULT_FORM[] ={
 	sAnim_GeneralFrame0,
-	sAnim_MONKEY_KAJARMA_ADULT_FORM_1,
+	sAnim_MONKEY_KARAMJA_ADULT_FORM_1,
 };
 
 static const union AnimCmd *const sAnims_LARUPIA_NORMAL_FORM[] ={
@@ -14041,14 +14042,14 @@ static const union AnimCmd *const sAnims_BUNYIP[] ={
 	sAnim_BUNYIP_1,
 };
 
-static const union AnimCmd *const sAnims_TALON_BEAST_TALON_FORM[] ={
+static const union AnimCmd *const sAnims_TALONBEAST_TALON_FORM[] ={
 	sAnim_GeneralFrame0,
-	sAnim_TALON_BEAST_TALON_FORM_1,
+	sAnim_TALONBEAST_TALON_FORM_1,
 };
 
-static const union AnimCmd *const sAnims_TALON_BEAST_NAIL_FORM[] ={
+static const union AnimCmd *const sAnims_TALONBEAST_NAIL_FORM[] ={
 	sAnim_GeneralFrame0,
-	sAnim_TALON_BEAST_NAIL_FORM_1,
+	sAnim_TALONBEAST_NAIL_FORM_1,
 };
 
 static const union AnimCmd *const sAnims_FERRET[] ={
@@ -14106,9 +14107,9 @@ static const union AnimCmd *const sAnims_MARIONETTE[] ={
 	sAnim_MARIONETTE_1,
 };
 
-static const union AnimCmd *const sAnims_DRAGON_KITE[] ={
+static const union AnimCmd *const sAnims_DRAGONKITE[] ={
 	sAnim_GeneralFrame0,
-	sAnim_DRAGON_KITE_1,
+	sAnim_DRAGONKITE_1,
 };
 
 static const union AnimCmd *const sAnims_ANIMOUR[] ={
@@ -14271,15 +14272,16 @@ static const union AnimCmd *const sAnims_THINGUMWUT[] ={
 	sAnim_THINGUMWUT_1,
 };
 
-static const union AnimCmd *const sAnims_EXPERIMENT_DOG_FORM[] ={
+static const union AnimCmd *const sAnims_EXPERIMENT_3_FORM[] ={
 	sAnim_GeneralFrame0,
-	sAnim_EXPERIMENT_DOG_FORM_1,
+	sAnim_EXPERIMENT_3_FORM_1,
 };
 
 static const union AnimCmd *const sAnims_CABBAGE[] ={
 	sAnim_GeneralFrame0,
 	sAnim_CABBAGE_1,
 };
+
 
 //POKESCAPE END
 
@@ -14889,10 +14891,10 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(COW_STRAWBERRY_FORM),
 	ANIM_CMD(COW_VANILLA_FORM),
 	ANIM_CMD(COW_HARLEQUIN_FORM),
-	ANIM_CMD(SKELETAL_OX_FEMALE_FORM),
+	ANIM_CMD(SKELETALOX_FEMALE_FORM),
 	ANIM_CMD(BULL),
 	ANIM_CMD(BULL_ELDER_FORM),
-	ANIM_CMD(SKELETAL_OX_MALE_FORM),
+	ANIM_CMD(SKELETALOX_MALE_FORM),
 	ANIM_CMD(TROJAN_COW),
 	ANIM_CMD(COW_PLAGUE_FORM),
 	ANIM_CMD(MINOTAUR_NORMAL_FORM),
@@ -14914,7 +14916,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(GIANT_RAT_KING_FORM),
 	ANIM_CMD(ALBINO_RAT),
 	ANIM_CMD(ANGRY_RAT),
-	ANIM_CMD(EXPERIMENT_RAT_FORM),
+	ANIM_CMD(EXPERIMENT_2_FORM),
 	ANIM_CMD(LAMB),
 	ANIM_CMD(SHEEP_WHITE_FORM),
 	ANIM_CMD(SHEEP_PLAGUE_FORM),
@@ -15222,7 +15224,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(SPIDINE),
 	ANIM_CMD(CRAYFISH),
 	ANIM_CMD(SHRIMP),
-	ANIM_CMD(LOBSTER),
+	ANIM_CMD(LOBSTER_NORMAL_FORM),
 	ANIM_CMD(LOBSTER_GOLDEN_FORM),
 	ANIM_CMD(LOBSTER_GIANT_FORM),
 	ANIM_CMD(LOBSTER_HEIM_FORM),
@@ -15262,7 +15264,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(JELLY_NORMAL_FORM),
 	ANIM_CMD(JELLY_WARPED_FORM),
 	ANIM_CMD(JELLY_SPIRIT_FORM),
-	ANIM_CMD(ABBY_SPECTR),
+	ANIM_CMD(ABBYSPECTR),
 	ANIM_CMD(SALAMANDER_GREEN_FORM),
 	ANIM_CMD(SALAMANDER_ORANGE_FORM),
 	ANIM_CMD(SALAMANDER_RED_FORM),
@@ -15386,7 +15388,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(KEBBIT_PRICKLY_FORM),
 	ANIM_CMD(KEBBIT_RAZOR_FORM),
 	ANIM_CMD(KEBBIT_BIG_FORM),
-	ANIM_CMD(KEBBIT_DESERT_DEVIL_FORM),
+	ANIM_CMD(KEBBIT_DESERTDEVIL_FORM),
 	ANIM_CMD(KEBBIT_FELDIP_WEASEL_FORM),
 	ANIM_CMD(KEBBIT_BARBED_FORM),
 	ANIM_CMD(KEBBIT_DISEASED_FORM),
@@ -15402,7 +15404,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(GORILLA_LEEUNI_FORM),
 	ANIM_CMD(GORILLA_ERUNI_FORM),
 	ANIM_CMD(MONKEY_KARAMJA_BABY_FORM),
-	ANIM_CMD(MONKEY_KAJARMA_ADULT_FORM),
+	ANIM_CMD(MONKEY_KARAMJA_ADULT_FORM),
 	ANIM_CMD(LARUPIA_NORMAL_FORM),
 	ANIM_CMD(LARUPIA_SPIRIT_FORM),
 	ANIM_CMD(KYATT_NORMAL_FORM),
@@ -15422,8 +15424,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(RABBIT),
 	ANIM_CMD(WOLPERTING),
 	ANIM_CMD(BUNYIP),
-	ANIM_CMD(TALON_BEAST_TALON_FORM),
-	ANIM_CMD(TALON_BEAST_NAIL_FORM),
+	ANIM_CMD(TALONBEAST_TALON_FORM),
+	ANIM_CMD(TALONBEAST_NAIL_FORM),
 	ANIM_CMD(FERRET),
 	ANIM_CMD(TOY_MOUSE),
 	ANIM_CMD(TOY_DOLL),
@@ -15435,7 +15437,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(SPOOKAXE),
 	ANIM_CMD(DOBBIN),
 	ANIM_CMD(MARIONETTE),
-	ANIM_CMD(DRAGON_KITE),
+	ANIM_CMD(DRAGONKITE),
 	ANIM_CMD(ANIMOUR),
 	ANIM_CMD(DEAD_TREE),
 	ANIM_CMD(JADINKO),
@@ -15468,7 +15470,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 	ANIM_CMD(SNAKE_SEA_FORM),
 	ANIM_CMD(BIG_SNAKE_SEA_FORM),
 	ANIM_CMD(THINGUMWUT),
-	ANIM_CMD(EXPERIMENT_DOG_FORM),
+	ANIM_CMD(EXPERIMENT_3_FORM),
 	ANIM_CMD(CABBAGE),
 	//POKESCAPE END	
     ANIM_CMD(EGG),

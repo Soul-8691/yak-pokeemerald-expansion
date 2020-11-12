@@ -13752,7 +13752,7 @@ const struct BaseStats gBaseStats[] =
 		.noFlip = FALSE,
 	},
 
-	[SPECIES_SKELETAL_OX_FEMALE_FORM] =
+	[SPECIES_SKELETALOX_FEMALE_FORM] =
 	{
 		.baseHP = 80,
 		.baseAttack = 75,
@@ -13848,7 +13848,7 @@ const struct BaseStats gBaseStats[] =
 		.noFlip = FALSE,
 	},
 
-	[SPECIES_SKELETAL_OX_MALE_FORM] =
+	[SPECIES_SKELETALOX_MALE_FORM] =
 	{
 		.baseHP = 80,
 		.baseAttack = 130,
@@ -14552,7 +14552,7 @@ const struct BaseStats gBaseStats[] =
 		.noFlip = FALSE,
 	},
 
-	[SPECIES_EXPERIMENT_RAT_FORM] =
+	[SPECIES_EXPERIMENT_2_FORM] =
 	{
 		.baseHP = 80,
 		.baseAttack = 95,
@@ -24408,7 +24408,7 @@ const struct BaseStats gBaseStats[] =
 		.noFlip = FALSE,
 	},
 
-	[SPECIES_LOBSTER] =
+	[SPECIES_LOBSTER_NORMAL_FORM] =
 	{
 		.baseHP = 65,
 		.baseAttack = 85,
@@ -25688,7 +25688,7 @@ const struct BaseStats gBaseStats[] =
 		.noFlip = FALSE,
 	},
 
-	[SPECIES_ABBY_SPECTR] =
+	[SPECIES_ABBYSPECTR] =
 	{
 		.baseHP = 110,
 		.baseAttack = 85,
@@ -29656,7 +29656,7 @@ const struct BaseStats gBaseStats[] =
 		.noFlip = FALSE,
 	},
 
-	[SPECIES_KEBBIT_DESERT_DEVIL_FORM] =
+	[SPECIES_KEBBIT_DESERTDEVIL_FORM] =
 	{
 		.baseHP = 30,
 		.baseAttack = 20,
@@ -30168,7 +30168,7 @@ const struct BaseStats gBaseStats[] =
 		.noFlip = FALSE,
 	},
 
-	[SPECIES_MONKEY_KAJARMA_ADULT_FORM] =
+	[SPECIES_MONKEY_KARAMJA_ADULT_FORM] =
 	{
 		.baseHP = 65,
 		.baseAttack = 95,
@@ -30808,7 +30808,7 @@ const struct BaseStats gBaseStats[] =
 		.noFlip = FALSE,
 	},
 
-	[SPECIES_TALON_BEAST_TALON_FORM] =
+	[SPECIES_TALONBEAST_TALON_FORM] =
 	{
 		.baseHP = 90,
 		.baseAttack = 110,
@@ -30840,7 +30840,7 @@ const struct BaseStats gBaseStats[] =
 		.noFlip = FALSE,
 	},
 
-	[SPECIES_TALON_BEAST_NAIL_FORM] =
+	[SPECIES_TALONBEAST_NAIL_FORM] =
 	{
 		.baseHP = 80,
 		.baseAttack = 90,
@@ -31224,7 +31224,7 @@ const struct BaseStats gBaseStats[] =
 		.noFlip = FALSE,
 	},
 
-	[SPECIES_DRAGON_KITE] =
+	[SPECIES_DRAGONKITE] =
 	{
 		.baseHP = 50,
 		.baseAttack = 50,
@@ -32250,16 +32250,16 @@ const struct BaseStats gBaseStats[] =
 
 	[SPECIES_THINGUMWUT] =
 	{
-		.baseHP = 255,
-		.baseAttack = 255,
-		.baseDefense = 255,
-		.baseSpeed = 255,
-		.baseSpAttack = 255,
-		.baseSpDefense = 255,
+		.baseHP = 1,
+		.baseAttack = 1,
+		.baseDefense = 1,
+		.baseSpeed = 1,
+		.baseSpAttack = 1,
+		.baseSpDefense = 1,
 		.type1 = TYPE_FAIRY,
 		.type2 = TYPE_FAIRY,
 		.catchRate = 1,
-		.expYield = 255,
+		.expYield = 1,
 		.evYield_HP = 5,
 		.evYield_Attack = 0,
 		.evYield_Defense = 0,
@@ -32271,16 +32271,16 @@ const struct BaseStats gBaseStats[] =
 		.genderRatio = MON_GENDERLESS,
 		.eggCycles = 15,
 		.friendship = 200,
-		.growthRate = GROWTH_FAST,
-		.eggGroup1 = EGG_GROUP_DRAGON,
-		.eggGroup2 = EGG_GROUP_DRAGON,
-		.abilities = {ABILITY_SHED_SKIN, ABILITY_MERCILESS},
+		.growthRate = GROWTH_ERRATIC,
+		.eggGroup1 = EGG_GROUP_DITTO,
+		.eggGroup2 = EGG_GROUP_DITTO,
+		.abilities = {ABILITY_PRESSURE, ABILITY_NONE},
 		.safariZoneFleeRate = 0,
 		.bodyColor = BODY_COLOR_BLACK,
 		.noFlip = FALSE,
 	},
 
-	[SPECIES_EXPERIMENT_DOG_FORM] =
+	[SPECIES_EXPERIMENT_3_FORM] =
 	{
 		.baseHP = 80,
 		.baseAttack = 120,

@@ -2267,7 +2267,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_SKELETAL_OX_FEMALE_FORM] =
+	[SPECIES_SKELETALOX_FEMALE_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
@@ -2282,7 +2282,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_SKELETAL_OX_MALE_FORM] =
+	[SPECIES_SKELETALOX_MALE_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
@@ -2392,7 +2392,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_EXPERIMENT_RAT_FORM] =
+	[SPECIES_EXPERIMENT_2_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
@@ -3932,7 +3932,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_LOBSTER] =
+	[SPECIES_LOBSTER_NORMAL_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
@@ -4132,7 +4132,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_ABBY_SPECTR] =
+	[SPECIES_ABBYSPECTR] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
@@ -4752,7 +4752,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_KEBBIT_DESERT_DEVIL_FORM] =
+	[SPECIES_KEBBIT_DESERTDEVIL_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
@@ -4832,7 +4832,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_MONKEY_KAJARMA_ADULT_FORM] =
+	[SPECIES_MONKEY_KARAMJA_ADULT_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
@@ -4932,12 +4932,12 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_TALON_BEAST_TALON_FORM] =
+	[SPECIES_TALONBEAST_TALON_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_TALON_BEAST_NAIL_FORM] =
+	[SPECIES_TALONBEAST_NAIL_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
@@ -4997,7 +4997,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_DRAGON_KITE] =
+	[SPECIES_DRAGONKITE] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
@@ -5162,7 +5162,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_EXPERIMENT_DOG_FORM] =
+	[SPECIES_EXPERIMENT_3_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,

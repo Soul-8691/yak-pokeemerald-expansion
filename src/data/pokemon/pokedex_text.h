@@ -2322,9 +2322,2815 @@ const u8 gDeoxysPokedexText[] = _(
 
 //POKESCAPE
 const u8 gGuthlingPokedexText[] = _(
-	"Hatched from a green egg. These birds seek\n"
+	"Hatched from a green egg. These birds seek/n"
 	"balance in the world.");
-	
+
 const u8 gGuthbirdPokedexText[] = _(
-	"Hatched from a green egg. These birds seek\n"
-	"balance in the world.");
+	"Now a juvenile, the bird flies great\n"
+	"horizons in the name of Guthix.");
+
+const u8 gGuthraptorPokedexText[] = _(
+	"Known as a bird symbolizing harmony and\n"
+	"balance. If it shows up, all is well.");
+
+const u8 gZamlingPokedexText[] = _(
+	"Hatched from a red egg. These birds align\n"
+	"with Zamorak.");
+
+const u8 gZambirdPokedexText[] = _(
+	"Birds who flies over battlefields.They are\n"
+	"known for enjoying chaos.");
+
+const u8 gZamohawkPokedexText[] = _(
+	"During the Third Age these hawks were used\n"
+	"by falconers under Zamorak.");
+
+const u8 gSaralingPokedexText[] = _(
+	"Hatched from a blue egg. They possess\n"
+	"great wisdom from birth.");
+
+const u8 gSarabirdPokedexText[] = _(
+	"With age these birds gain evermore wisdom\n"
+	"of law and order.");
+
+const u8 gSaraowlPokedexText[] = _(
+	"A herald of Saradomin. These owls align\n"
+	"themselves to wise individuals who\n"
+	"respects law and order above all else.");
+
+const u8 gChickPokedexText[] = _(
+	"Newly hatched from an egg, these birds\n"
+	"will one day be killed for feathers by\n"
+	"adventurers.");
+
+const u8 gChicken_Normal_FormPokedexText[] = _(
+	"Gielinor's finest creature and in great\n"
+	"abundance. Their feathers make excellent "
+	"arrows.");
+
+const u8 gChicken_Varrock_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gChicken_Karamja_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gChicken_Bandosian_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gDreadfowlPokedexText[] = _(
+	"While it is unclear how it is connected to "
+	"the evil chicken. They do share a "
+	"dreadfull magic attack.");
+
+const u8 gChicken_Diving_FormPokedexText[] = _(
+	"This chicken adapted to underwater life "
+	"after its home was sunken to the bottom of "
+	"the oceas. ");
+
+const u8 gRooster_Normal_FormPokedexText[] = _(
+	"While seemingly unusable due to not laying "
+	"eggs, they are great for getting up early.");
+
+const u8 gRooster_Varrock_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gRooster_Karamja_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gRooster_Bandosian_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gOomliePokedexText[] = _(
+	"Strictly found inside the kharazi jungle, "
+	"their meat is used in the renowned 'oomlie "
+	"wrap'.");
+
+const u8 gErnestPokedexText[] = _(
+	"A coward went inside draynor manor as a "
+	"dare. Now his shape reflects his spirit.");
+
+const u8 gChicken_Undead_FormPokedexText[] = _(
+	"Chickens who died, but became reanimated. "
+	"They mainly hail fromMorytania.");
+
+const u8 gChicken_Lizard_FormPokedexText[] = _(
+	"It is unclear wether it is a lizard or a "
+	"chicken. Nor what came first, the egg or "
+	"the lizard.");
+
+const u8 gSwordchickPokedexText[] = _(
+	"With a beak mightier than any others, it "
+	"faces any opponents on land or sea. One of "
+	"the homunculus's greatest creations.");
+
+const u8 gNewtroostPokedexText[] = _(
+	"Pretentious and arrogant. It flexes its "
+	"muscles and howls in the glory of itself "
+	"and its creator.");
+
+const u8 gEvilChickenPokedexText[] = _(
+	"A chicken known to eat its fellow "
+	"chickens. Bad to the bone. It attacks "
+	"adventurers on sight.");
+
+const u8 gCalfPokedexText[] = _(
+	"Unsteady on their feet, they never stray "
+	"too far from their herd.");
+
+const u8 gCowPokedexText[] = _(
+	"While they produce milk, most adventurers "
+	"prefer their hide to make clothes.");
+
+const u8 gBullPokedexText[] = _(
+	"Angry and impatient, these monsters do not "
+	"like fashionable people in red.");
+
+const u8 gSkeletalOx_Male_FormPokedexText[] = _(
+	"An undead bovine who has lost its skin. "
+	"They are great companions for teenage "
+	"witches.");
+
+const u8 gSkeletalOx_Female_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gCow_Undead_FormPokedexText[] = _(
+	"A cow who died in the ghastly lands of "
+	"Morytania. Do not drink it's milk.");
+
+const u8 gUnicowPokedexText[] = _(
+	"An experiment crossing the purity of a "
+	"unicorn, with the shape of a cow. It's "
+	"purity it still in question.");
+
+const u8 gCrayfishPokedexText[] = _(
+	"One of the weakest water creatures there "
+	"is. Very envious of shrimps.");
+
+const u8 gShrimpPokedexText[] = _(
+	"Often one of the first things fished by "
+	"adventurers, shrimp never stay alone.");
+
+const u8 gLobster_Normal_FormPokedexText[] = _(
+	"Praised by some as the best food in the "
+	"free world. They are mostly found by the "
+	"Karamja docks.");
+
+const u8 gRat_Normal_FormPokedexText[] = _(
+	"While very small, they are sometimes "
+	"capable of killing kittens.");
+
+const u8 gGiant_Rat_Normal_FormPokedexText[] = _(
+	"Too big for any cat to hunt. These rats "
+	"lurk about in the wild in search of food.");
+
+const u8 gExperiment_2_FormPokedexText[] = _(
+	"The experiment of a witch. They fling "
+	"ogleroots as their weapons.");
+
+const u8 gBrine_RatPokedexText[] = _(
+	"A rat who lurks in the brine of the sea. "
+	"They hold on to brine sabres.");
+
+const u8 gAlbino_RatPokedexText[] = _(
+	"A rat that has become white and with red "
+	"eyes. They can not stop themselves from "
+	"feasting on cheese.");
+
+const u8 gRat_Hell_FormPokedexText[] = _(
+	"Demonic rats, they are MALICIOUSLY CRUEL "
+	"to anyone and TOTALLY EVIL.");
+
+const u8 gGiant_Rat_Hell_FormPokedexText[] = _(
+	"Bigger than before, they are now capable "
+	"of UNRELENTING MALICIOUSNESS.");
+
+const u8 gShell_RatPokedexText[] = _(
+	"A being so BRUTALLY ANTAGONISTIC it could "
+	"not pass the custom. So it entered a "
+	"coconut.");
+
+const u8 gGiant_Rat_Dungeon_FormPokedexText[] = _(
+	"Rats adapting to the life in the dungeon. "
+	"Their scars are from many battles with "
+	"other rats.");
+
+const u8 gRat_Crypt_FormPokedexText[] = _(
+	"The crypts of morytania warped these small "
+	"rats, hardening their skills and "
+	"aggresion.");
+
+const u8 gGiant_Rat_Crypt_FormPokedexText[] = _(
+	"Despite living in a crypt, this rat is "
+	"beyond fat. All rats used to look more "
+	"like this before.");
+
+const u8 gWarped_RatPokedexText[] = _(
+	"A rat warped by a necromancer. Opening its "
+	"mind to psychic powers, but losing the "
+	"sanity.");
+
+const u8 gZombie_RatPokedexText[] = _(
+	"Arisen from death, they serve as guards to "
+	"Melzar the Mad.");
+
+const u8 gRat_King_FormPokedexText[] = _(
+	"A rat so deadly it could kill kittens with "
+	"a single strike. They are known to form "
+	"rat courts.");
+
+const u8 gGiant_Rat_King_FormPokedexText[] = _(
+	"A king rat who lived to become a giant. "
+	"Its hedonism and cruelty grew "
+	"correspondingly.");
+
+const u8 gAngry_RatPokedexText[] = _(
+	"Formed by the anger of Tolna, shaped to a "
+	"rat. It knows only anger. ");
+
+const u8 gGiant_Rat_Blessed_FormPokedexText[] = _(
+	"Iban, son of zamorak blessed these beings. "
+	"Making them stronger than regular rats.");
+
+const u8 gLambPokedexText[] = _(
+	"Woolless and unready for the world. The "
+	"lamb only hopes to baa with its parents.");
+
+const u8 gSheep_White_FormPokedexText[] = _(
+	"The favoured race of Guthix. Mostly "
+	"sheared illegally by adventurers.");
+
+const u8 gRam_Shaggy_FormPokedexText[] = _(
+	"Not as easily sheared as sheep, these "
+	"monsters enjoy to strike back at "
+	"unprepared adventurers.");
+
+const u8 gSheep_Pirate_FormPokedexText[] = _(
+	"When a pirate accidentally said he wanted "
+	"a 'pirate sheep' his crewmates gave him "
+	"this. It was accepted into the crew.");
+
+const u8 gSardinePokedexText[] = _(
+	"A small and otherwise weak fish. But rich "
+	"in nutrients and purines.");
+
+const u8 gHerringPokedexText[] = _(
+	"Not to be confused with red herrings from "
+	"Sinclair Mansion. These fish live their "
+	"entire lives in water.");
+
+const u8 gTrout_Normal_FormPokedexText[] = _(
+	"Capable of crossing great lengths of water "
+	"to mate, these fish can swim an entire day "
+	"without rest.");
+
+const u8 gTrout_Tropical_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gTrout_Leaping_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gSwordfishPokedexText[] = _(
+	"Sporting a sword-like nose, these fish are "
+	"very territorial over their turf.");
+
+const u8 gSalmon_Normal_FormPokedexText[] = _(
+	"When it is time to mate, these fish will "
+	"climb the baxtorian falls, avoiding the "
+	"whirlpools, to find a mate.");
+
+const u8 gSalmon_Leaping_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gSturgeonPokedexText[] = _(
+	"Its nose is long for territorial fights, "
+	"as well as a handy tool for examining "
+	"areas.");
+
+const u8 gSailfishPokedexText[] = _(
+	"Their sail allows them to travel at far "
+	"greater speed than swordfish, making them "
+	"exceptional hunters.");
+
+const u8 gThallasusPokedexText[] = _(
+	"The beast of the sea, it has been known to "
+	"drown even the biggest ships and seasoned "
+	"fishermen on the smallest of whims.");
+
+const u8 gBassPokedexText[] = _(
+	"Often dropped on the ground by "
+	"adventurers. These fish often feel lonely "
+	"and alone.");
+
+const u8 gShark_Normal_FormPokedexText[] = _(
+	"A fish sporting a great number of teeth "
+	"that can be regrown. Adventurers like to "
+	"eat these in large numbers cooked.");
+
+const u8 gShark_Tiger_FormPokedexText[] = _(
+	"A shark only found in the middle of the "
+	"sea. They sometimes get caught in the "
+	"fishing trawler, but most expeditions end "
+	"up a wreck.");
+
+const u8 gShark_GreatWhite_FormPokedexText[] = _(
+	"The most dangerous of all sharks, these "
+	"fish will lash out and bite anything they "
+	"find or deem edible.");
+
+const u8 gMackerelPokedexText[] = _(
+	"During the reign of Captain Rabid Jack. A "
+	"man was filled to the brim with mackerels "
+	"as punishment.");
+
+const u8 gCatfishPokedexText[] = _(
+	"Despite it's name, it is not a cat. But "
+	"rather a fish. The whiskers threw marine "
+	"biologists off.");
+
+const u8 gFury_SharkPokedexText[] = _(
+	"It is unknown where these shark hail from. "
+	"Some theorise they can only live inside "
+	"lava.");
+
+const u8 gTarponPokedexText[] = _(
+	"A vital ingredient for fish oil, hailing "
+	"from Waiko.");
+
+const u8 gSeerfishPokedexText[] = _(
+	"These fish are apparently distantly "
+	"related to the mackerel, despite their "
+	"uppity name.");
+
+const u8 gSillagoPokedexText[] = _(
+	"A rare fish from the arc. It scours the "
+	"reef hiding from predators and looking for "
+	"food.");
+
+const u8 gWobbegongPokedexText[] = _(
+	"Despite its ferocious look, it is actully "
+	"not a dangereous shark to humans and "
+	"prefer to hunt small fish.");
+
+const u8 gCodPokedexText[] = _(
+	"A fish that often gets the blame for "
+	"children becoming angry or aggressive to "
+	"others. It is unknown why.");
+
+const u8 gRainbowPokedexText[] = _(
+	"As it shines in every colour conceivable, "
+	"it was almost fished to extinction at one "
+	"point.");
+
+const u8 gShark_Golden_FormPokedexText[] = _(
+	"A rare shark with a seemingly kind grin on "
+	"its face. They are mostly seen in "
+	"aquariums.");
+
+const u8 gShark_Baron_FormPokedexText[] = _(
+	"It is so rare and golden that it is "
+	"sometimes hung up on the walls of houses. "
+	"A rare prize for fishermen.");
+
+const u8 gDesertSolePokedexText[] = _(
+	"Since it is only found in the desert. It "
+	"hides along the ocean floor camouflaged.");
+
+const u8 gWhitefishPokedexText[] = _(
+	"A rare fish that feeds on slimy eels. They "
+	"can be crushed and used as bleach to "
+	"decolour clothes.");
+
+const u8 gGoblinFishPokedexText[] = _(
+	"A fish that only lives in the caves of the "
+	"Dorgeshuun. Its taste is said to be very "
+	"unique.");
+
+const u8 gBeltfishPokedexText[] = _(
+	"A fish so long it could be used as a belt. "
+	"Apparently this is how it got it's name.");
+
+const u8 gManta_RayPokedexText[] = _(
+	"A deep sea fish usually only found through "
+	"fishing trawlers. They taste delicious but "
+	"are hard to come by.");
+
+const u8 gKarambwanjPokedexText[] = _(
+	"A fish that is hard to catch, only "
+	"catchable in Karamja. It is very "
+	"poisonous.");
+
+const u8 gKarambwanPokedexText[] = _(
+	"An octopus whose method of being caught "
+	"was a mystery to mostly anyone but the Tai "
+	"Bwo Wannai. Nowadays everyone knows about "
+	"it.");
+
+const u8 gGiant_CarpPokedexText[] = _(
+	"A carp that could single handedly win "
+	"someone a fishing contest. But it's tricky "
+	"to bait it.");
+
+const u8 gPikePokedexText[] = _(
+	"A fish known for its green colour. Only "
+	"about half the pike fished by adventurers "
+	"actually get cooked.");
+
+const u8 gMonkfish_Normal_FormPokedexText[] = _(
+	"Only found in the Piscatoris fishing "
+	"colony, they are sought after by sea "
+	"trolls who fight humans for the land.");
+
+const u8 gMonkfish_Golden_FormPokedexText[] = _(
+	"A monkfish so rare, that it's hardly "
+	"eaten. Most find their way to aquariums in "
+	"houses.");
+
+const u8 gAnglerFishPokedexText[] = _(
+	"A fish that captivates its prey with a "
+	"shining light. As they adore the light, it "
+	"bites and swallows them whole.");
+
+const u8 gPet_FishPokedexText[] = _(
+	"Unable to live beyond their fish bowl "
+	"container. They become quite discontent "
+	"with their limited life.");
+
+const u8 gGilbertPokedexText[] = _(
+	"A fish who wanted to see more than the "
+	"ocean... But ironically needed to see the "
+	"world through the ocean.");
+
+const u8 gCavefishPokedexText[] = _(
+	"Living its entire life in underground "
+	"water, it is unknown if they can even see "
+	"in light.");
+
+const u8 gRocktailPokedexText[] = _(
+	"Hard as a rock. Even harder to bite. These "
+	"fish are tasty treats to most adventurers.");
+
+const u8 gEel_Slimy_FormPokedexText[] = _(
+	"An eel whose only defensive strategy is to "
+	"be so slimy it can slip out of any "
+	"situation.");
+
+const u8 gEel_Cave_FormPokedexText[] = _(
+	"It prefers the water in caves. It had "
+	"peace and solitude until the dorgeshuun "
+	"realized their existence.");
+
+const u8 gEel_Sacred_FormPokedexText[] = _(
+	"An eel that used to be worshipped in the "
+	"past for its spiritual powers. Nowadays "
+	"they are eaten like any other eel.");
+
+const u8 gEel_Lava_FormPokedexText[] = _(
+	"This fish can only survive in lava and "
+	"requires special methods to be caught. One "
+	"is needed to enter the heroes guild.");
+
+const u8 gEel_Infernal_FormPokedexText[] = _(
+	"An eel once feared as an eel from "
+	"Infernus, dimension of demons. No one "
+	"knows or care for that since it tastes "
+	"delicious these days.");
+
+const u8 gPigletPokedexText[] = _(
+	"These small things serve no real purpose "
+	"to farmer but to grow into mud wrestlers.");
+
+const u8 gPigPokedexText[] = _(
+	"Rumours has it that pigs have a purpose "
+	"beyond merely mud wrestling. But the "
+	"farmer who spread the rumour refused to "
+	"tell.");
+
+const u8 gPuppy_Pup_FormPokedexText[] = _(
+	"A cute little pupper that would die for "
+	"you. Whenever you leave home, it will stay "
+	"by your door until you come back.");
+
+const u8 gPuppy_Mutt_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gTerrierPokedexText[] = _(
+	"In ancient times, these were used for "
+	"hunting and detective work.");
+
+const u8 gSheepdogPokedexText[] = _(
+	"Used to guard sheep. These dogs will bark "
+	"at anyone out of line, or run them down a "
+	"cliff.");
+
+const u8 gDalmatianPokedexText[] = _(
+	"It is unknown how many spots a dalmation "
+	"can truly have. The only thing we know is "
+	"that some are brown and without any.");
+
+const u8 gGreyhoundPokedexText[] = _(
+	"Known for their excellent speed, people "
+	"use them for gambling in races.");
+
+const u8 gBulldogPokedexText[] = _(
+	"Ready to fight at any moment. These dogs "
+	"often get breathing problems.");
+
+const u8 gLabradorPokedexText[] = _(
+	"Genetically engineered to emotionally love "
+	"everyone. Loves head pats too.");
+
+const u8 gCorgiPokedexText[] = _(
+	"Dogs that faithfully serve their queen, as "
+	"long as they get lots of treats in the "
+	"process.");
+
+const u8 gTerror_DogPokedexText[] = _(
+	"A dog warped by Tarn in order to find the "
+	"salve stone, he never succeeded.");
+
+const u8 gStray_DogPokedexText[] = _(
+	"A mangy mutt who wanders the street, "
+	"looking for the occasional bone and "
+	"adventurers to follow.");
+
+const u8 gMuncherPokedexText[] = _(
+	"A skeletal hellhound who served as the "
+	"lord of death, Harold's faithful "
+	"companion.");
+
+const u8 gHellpuppyPokedexText[] = _(
+	"When a puppy accidentally fell to the "
+	"infernal dimension, it comes back as a "
+	"hellpuppy.");
+
+const u8 gHellhoundPokedexText[] = _(
+	"A shakroth type demon from infernus. They "
+	"bite really hard if not fed.");
+
+const u8 gCerberusPokedexText[] = _(
+	"Known for its 3 heads, it's unknown if the "
+	"heads act as one or if they retain "
+	"individual personalities.");
+
+const u8 gKittenPokedexText[] = _(
+	"Small and curious about the world. A "
+	"kitten will do anything to play with a "
+	"ball of wool.");
+
+const u8 gCat_Normal_FormPokedexText[] = _(
+	"Known for their rat hunting prowess, they "
+	"have become a mainstay in Gielinor.");
+
+const u8 gCat_Overgrown_FormPokedexText[] = _(
+	"Since it has now grown to full size, it "
+	"has become too lazy to actively hunt rats. "
+	"The cat simply can not find the energy. ");
+
+const u8 gCat_Lazy_FormPokedexText[] = _(
+	"When a wily cat does not exercise it "
+	"becomes a lazy cat. Out of shape and out "
+	"of motivation. Just like its owner.");
+
+const u8 gCat_Wily_FormPokedexText[] = _(
+	"A cat trained to peak condition. Ready to "
+	"strike at any rat it sees. They would "
+	"fight a giant rat if allowed to.");
+
+const u8 gCat_Purple_FormPokedexText[] = _(
+	"Cat made purple by the powers of a "
+	"sweet-tooth witch. It is unknown if there "
+	"is more to it beyond the colour.");
+
+const u8 gCat_Hell_FormPokedexText[] = _(
+	"When a cat eats too many hell rats, they "
+	"become a hellcat. Infused by the hell rats "
+	"infernal energy.");
+
+const u8 gCat_Post_FormPokedexText[] = _(
+	"Letters connect people, and cats connect "
+	"cat lovers. The postcat is an epitome of "
+	"them both.");
+
+const u8 gCat_Sunken_FormPokedexText[] = _(
+	"Sent as an omen to warn the adventurer of "
+	"a terrible, terrible future. A sunken "
+	"future. It also removes special effect on "
+	"command.");
+
+const u8 gBobPokedexText[] = _(
+	"The reincarnation of Odysseus, the mighty "
+	"panther who died in a battle versus the "
+	"dragonkin. Really likes Fish.");
+
+const u8 gEvil_BobPokedexText[] = _(
+	"An evil tyrant of whom most who have seen "
+	"rarely survive. He takes slaves in to put "
+	"them trough cruel services like uncooking "
+	"fish.");
+
+const u8 gPet_RockPokedexText[] = _(
+	"Known as the best companion an adventurer "
+	"could ever have. They will fetch any stick "
+	"thrown.");
+
+const u8 gStrykewyrm_Freezy_FormPokedexText[] = _(
+	"The different forms of strykewyrms are "
+	"well adapted and dangerous.");
+
+const u8 gStrykewyrm_Leafy_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gStrykewyrm_Sandy_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gStrykewyrm_Wildy_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gScorplingPokedexText[] = _(
+	"While small, these arachnids pack a real "
+	"punch if an adventurer gets stung.");
+
+const u8 gScorpion_Normal_FormPokedexText[] = _(
+	"These scorpions are far bigger than most "
+	"adventurers.");
+
+const u8 gPeeplingPokedexText[] = _(
+	"Has a curious eye for everything. Many "
+	"adventurers have gone mad from their "
+	"stares.");
+
+const u8 gSneakrpeepPokedexText[] = _(
+	"Some say they watch adventurers and their "
+	"every action to learn. Some theorize they "
+	"gaze into their soul.");
+
+const u8 gRuntstablePokedexText[] = _(
+	"Made by a Gorajo, it lurks the Polymore "
+	"Dungeon for food.");
+
+const u8 gBasiliskPokedexText[] = _(
+	"With its petrifying gaze, anyone who "
+	"challenges it without a mirror will be "
+	"left a garden ornament.");
+
+const u8 gBaby_MolePokedexText[] = _(
+	"Small and harmless, it will one day grow "
+	"big enough to destroy any gardeners dream.");
+
+const u8 gGiant_MolePokedexText[] = _(
+	"A pest to Gardener Wyson. This mole "
+	"destroys the Falador garden from below.");
+
+const u8 gSquirrelPokedexText[] = _(
+	"Happily jumping around without a care in "
+	"the world. They often forget where they "
+	"bury their nuts.");
+
+const u8 gRavenlingPokedexText[] = _(
+	"Hatched from a black egg. They rarely "
+	"leave their nest on purpose.");
+
+const u8 gRaven_Normal_FormPokedexText[] = _(
+	"Known to pick up anything shiny. If you "
+	"find a birds nest with a ring in it, it "
+	"most likely belonged to a raven.");
+
+const u8 gRaven_Nevermore_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gMagpiePokedexText[] = _(
+	"It picks up shiny objects from everywhere. "
+	"But is most known by summoners for its "
+	"horrible cockney accent.");
+
+const u8 gChinchompa_Grey_FormPokedexText[] = _(
+	"Capable of running great lengths. All "
+	"barbers in Mishtalin uses them as energy.");
+
+const u8 gChinchompa_Red_FormPokedexText[] = _(
+	"While usually passive, if provoked, they "
+	"will put their all into exploding as a "
+	"last resort.");
+
+const u8 gChinchompa_Gold_FormPokedexText[] = _(
+	"A chinchompa with a golden coloration. "
+	"They sell for a wealthy prize but do not "
+	"explode.");
+
+const u8 gVultlingPokedexText[] = _(
+	"Rarely leaving its nest before they can "
+	"fly, they survive on scraps given by their "
+	"parents.");
+
+const u8 gVulturePokedexText[] = _(
+	"Preying mostly on carcasses, they are "
+	"important to the ecosystem as they remove "
+	"diseased bodies from the world.");
+
+const u8 gPenglingPokedexText[] = _(
+	"Young and immature, they mature fast as "
+	"they learn of their oppressors.");
+
+const u8 gPenguinPokedexText[] = _(
+	"Secret agents of the K.G.P on an "
+	"undercover mission. Easily bribed by fish "
+	"and cowbells.");
+
+const u8 gExExParrotPokedexText[] = _(
+	"Used to be a real parrot but they are no "
+	"more, its gone, and it longs for the "
+	"fjords.");
+
+const u8 gBroavPokedexText[] = _(
+	"With a great sense of smell, they are able "
+	"to find anything from truffles to secret "
+	"trapdoors.");
+
+const u8 gToothsPokedexText[] = _(
+	"A creature created by the magic of the "
+	"tooth fairy. They turn rotten if they eat "
+	"chocolate.");
+
+const u8 gRune_GuardianPokedexText[] = _(
+	"Created by rune crafting wizards, this "
+	"automation is easily influenced by runic "
+	"energy.");
+
+const u8 gGnomeyPokedexText[] = _(
+	"Given to winners of the golden gnome "
+	"awards. Most being for pity or lack of "
+	"competition.");
+
+const u8 gSparklesPokedexText[] = _(
+	"A tinsel snake celebrating christmas. They "
+	"refuse to curl around a tree.");
+
+const u8 gBatPokedexText[] = _(
+	"Using echolocation they find their prey. "
+	"They usually don't come out during the "
+	"day.");
+
+const u8 gGiant_BatPokedexText[] = _(
+	"One of the biggest bats there are. They "
+	"have recently been hunted to make magic "
+	"armour.");
+
+const u8 gWarped_BatPokedexText[] = _(
+	"A bat warped by unknown energy. They have "
+	"become aggressive; but not necessarily "
+	"that strong.");
+
+const u8 gAlbino_BatPokedexText[] = _(
+	"Found in Mos Le'Harmless. These bats have "
+	"lost all colour in their bodies. ");
+
+const u8 gBat_Box_FormPokedexText[] = _(
+	"Mostly used as court evidence, these bats "
+	"are perfectly sheltered from sunlight.");
+
+const u8 gFruit_BatPokedexText[] = _(
+	"Despite their vampyric cousins, these bats "
+	"love fruit among all things. Especially "
+	"papaya.");
+
+const u8 gVampyreBatPokedexText[] = _(
+	"Whenever it clings to it's enemies, it "
+	"will not let go until it is full of blood.");
+
+const u8 gImpPokedexText[] = _(
+	"Known as a fire imp, these are the weakest "
+	"demons that exist and love to play tricks "
+	"on adventurers.");
+
+const u8 gDemon_Lesser_Normal_FormPokedexText[] = _(
+	"A Byzroth demon. Once slaves in their home "
+	"realm. Now they fight for the god of "
+	"chaos.");
+
+const u8 gDemon_Greater_Normal_FormPokedexText[] = _(
+	"An Alyaroth demon. Once used as slaves to "
+	"the Chthonians, they now spread their "
+	"wings for Zamorak.");
+
+const u8 gKalgerionPokedexText[] = _(
+	"One of the strongest demons summoned by "
+	"Bilrach for his lord. Zamorak used them as "
+	"generals in his army.");
+
+const u8 gPyrefiendPokedexText[] = _(
+	"A demon posessing the power of fire. They "
+	"fought for Zamorak in the god wars.");
+
+const u8 gPyrelordPokedexText[] = _(
+	"Lord among pyrefiends. Their flames are "
+	"said to scorch all who challenge it.");
+
+const u8 gWaterfiendPokedexText[] = _(
+	"A demon made of demonic energy and water. "
+	"If frozen, they turn into Icefiends.");
+
+const u8 gWaterlordPokedexText[] = _(
+	"Ruler of Waterfiends. They can expel water "
+	"at very harmful speeds.");
+
+const u8 gIcefiendPokedexText[] = _(
+	"A demon made of ice. Killing one sometimes "
+	"cools down food to pleasant temperatures.");
+
+const u8 gIcelordPokedexText[] = _(
+	"Leader of icefiends. No heat is ever seen "
+	"in the vicinity of a Icelord.");
+
+const u8 gPhoenling_Rebirth_FormPokedexText[] = _(
+	"A baby phoenix. A wonder unthought of for "
+	"many millennia. It loves attention.");
+
+const u8 gPhoenling_Reborn_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gPhoenix_Rebirth_FormPokedexText[] = _(
+	"A bird born of fire, if it dies it would "
+	"simply return from its ashes.");
+
+const u8 gPhoenix_Reborn_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gEvilTurnipPokedexText[] = _(
+	"A turnip so dastardly evil, not even "
+	"demons dare to go near it. It gives the "
+	"Evil chicken a run for its title.");
+
+const u8 gCreature_Cute_FormPokedexText[] = _(
+	"A cute and innocent creature that would "
+	"never harm you, spy on you, or find your "
+	"deepest, darkest secrets.");
+
+const u8 gCreature_Evil_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gBaby_YakPokedexText[] = _(
+	"A yak that can hardly growl 'baroo'. With "
+	"long locks of hair, they eat any grass "
+	"they come across.");
+
+const u8 gYak_Normal_FormPokedexText[] = _(
+	"Making their home in the islands of "
+	"Neitiznot, their fur and hide are used to "
+	"make clothes.");
+
+const u8 gYak_Pack_FormPokedexText[] = _(
+	"A companion to any and all adventurers, "
+	"the pack yaks will not stop at any weight "
+	"to bring gear to their summoner.");
+
+const u8 gYak_Sacred_FormPokedexText[] = _(
+	"A Yak said to be holy and sacred. It's "
+	"presence is an omen of good.");
+
+const u8 gYak_ClueScroll_FormPokedexText[] = _(
+	"It carries a hefty amount of clue scrolls, "
+	"but without any interest in reading them. "
+	"Not that it has the ability to. ");
+
+const u8 gMinitricePokedexText[] = _(
+	"The smallest of all cockatrices. They may "
+	"not even be able to petrify a human.");
+
+const u8 gCockatricePokedexText[] = _(
+	"Born of a rooster and snake, these "
+	"monsters lay eggs to increase their "
+	"numbers.");
+
+const u8 gGuthatricePokedexText[] = _(
+	"A green egg corrupted to become a "
+	"guthatrice. Their view on balance is rocky "
+	"at best.");
+
+const u8 gZamatricePokedexText[] = _(
+	"A red egg corrupted to become a Zamatrice. "
+	"They petrify any who defies chaos.");
+
+const u8 gSaratricePokedexText[] = _(
+	"A blue egg corrupted to become a "
+	"Saratrice. Their eyes gaze upon any who do "
+	"not uphold order.");
+
+const u8 gCorxatricePokedexText[] = _(
+	"A black egg corrupted to become a "
+	"corxatrice. They get really sad when they "
+	"find shiny things and they turn to stone.");
+
+const u8 gVulatricePokedexText[] = _(
+	"A vulture egg corrupted to become a "
+	"Vulatrice. Hoarding the deserts for food, "
+	"they often petrify their meal "
+	"accidentally.");
+
+const u8 gPengatricePokedexText[] = _(
+	"A penguin egg corrupted to become a "
+	"Pengatrice. It is unknown if it sides with "
+	"the K.G.P.");
+
+const u8 gChocatricePokedexText[] = _(
+	"A chocolate monster full of anger over its "
+	"state. Its gaze will turn monsters to "
+	"chocolate.");
+
+const u8 gSproutling_Summer_FormPokedexText[] = _(
+	"A sprout that changes its appearance "
+	"depending on the season.");
+
+const u8 gSproutling_Spring_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gSproutling_Winter_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gSproutling_Autumn_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gKalphite_Worker_FormPokedexText[] = _(
+	"Workers of the hive. These kalphites are "
+	"not meant for combat.");
+
+const u8 gKalphite_Soldier_FormPokedexText[] = _(
+	"Kalphites born only to fight intruders of "
+	"the hive. Their poison stings any "
+	"adventurer.");
+
+const u8 gKalphite_Guardian_FormPokedexText[] = _(
+	"The personal guardians of the hive's "
+	"queen, these kalphites are far bigger than "
+	"regular soldiers.");
+
+const u8 gKalphite_Queen_FormPokedexText[] = _(
+	"Each kalphite hive needs a queen. And upon "
+	"reaching a point in their life, they "
+	"change form to become better at combat.");
+
+const u8 gKalphite_King_FormPokedexText[] = _(
+	"A corrupted kalphite that has become "
+	"warped. Capable of things a regular "
+	"kalphite king would never be able to do.");
+
+const u8 gRuePokedexText[] = _(
+	"A dragon made of runic energy. They are "
+	"known to sometimes steal adventurers runes "
+	"as snacks.");
+
+const u8 gMontyPokedexText[] = _(
+	"Unchosen by the people, they live only to "
+	"claim revenge on their hated enemy. "
+	"Refuses to rest until their blade tastes "
+	"blood.");
+
+const u8 gZygomitePokedexText[] = _(
+	"A mushroom hailing from Zanaris, the moon "
+	"of Gielinor.");
+
+const u8 gAbyssalingPokedexText[] = _(
+	"A spawn from the abyssal realm. While "
+	"young, they are very aggressive.");
+
+const u8 gAbyssal_Minion_FormPokedexText[] = _(
+	"A minion to the hive mind of the abyssal "
+	"pathways. They wander the abyss in search "
+	"of intruders.");
+
+const u8 gAbyssal_Demon_FormPokedexText[] = _(
+	"A demon from the abyssal realm. They are "
+	"said to manipulate the fabric of space to "
+	"teleport.");
+
+const u8 gAbyssal_Sire_FormPokedexText[] = _(
+	"An abyssal demon of phenomenal power. It "
+	"acts as if the gateway to the abyss goes "
+	"through its body.");
+
+const u8 gAbyssal_Parasite_FormPokedexText[] = _(
+	"A parasite from the abyss. They cling to "
+	"their host; sucking them dry of energy.");
+
+const u8 gAbyssal_Lurker_FormPokedexText[] = _(
+	"Gets their name from lurking the abyss. In "
+	"Gielinor, they simply follow their "
+	"summoners.");
+
+const u8 gAbyssal_Titan_FormPokedexText[] = _(
+	"A titan from the abyss summoned by a "
+	"summoning obelisk. It's unclear if it "
+	"enjoys to serve others.");
+
+const u8 gTz_KihPokedexText[] = _(
+	"Smallest of the wild beings of the tzhaar "
+	"volcano. They fly around in the fight "
+	"caves.");
+
+const u8 gTz_KekPokedexText[] = _(
+	"A fighter of the fight cave, they were "
+	"originally builders of the elder god Fuh.");
+
+const u8 gTok_XilPokedexText[] = _(
+	"They fire deadly spines out of their arms, "
+	"projected by their own heat.");
+
+const u8 gKet_DillPokedexText[] = _(
+	"A plague upon the tzhaar volcano. These "
+	"monsters are hunted for their meat but are "
+	"hard to catch.");
+
+const u8 gKet_ZekPokedexText[] = _(
+	"A strong monster from the fight caves "
+	"capable of firing great balls of fire from "
+	"their bodies.");
+
+const u8 gYt_HurKotPokedexText[] = _(
+	"It's unknown for what reason, but these "
+	"monsters seem to heal stronger monsters of "
+	"the Tzhaar.");
+
+const u8 gYt_MejKotPokedexText[] = _(
+	"Possessing great strength they are a "
+	"threat to any challenger of the fight "
+	"caves. They struggle with small spaces.");
+
+const u8 gTzRek_JadPokedexText[] = _(
+	"A small creature that loves exploring what "
+	"lies beyond the tzhaar volcano.");
+
+const u8 gTzTok_JadPokedexText[] = _(
+	"A monster and king of the fight caves. "
+	"Warriors who beat one are presented with a "
+	"fire cape.");
+
+const u8 gJal_NibPokedexText[] = _(
+	"Often referred to as 'Nibblers'. They are "
+	"at the bottom of the food chain in the "
+	"Inferno.");
+
+const u8 gJal_MejRahPokedexText[] = _(
+	"Ancestor of the Tz-Kih. They fly around in "
+	"the Inferno.");
+
+const u8 gJal_AkPokedexText[] = _(
+	"Superior variant of the Tz-Kek. They are "
+	"slow and powerful.");
+
+const u8 gJal_ImKotPokedexText[] = _(
+	"A monster found in the Inferno. They "
+	"possess extremely powerful claws that let "
+	"them claw at their opponents.");
+
+const u8 gJal_ZekPokedexText[] = _(
+	"Superior variant of the Ket-Zek. They hurl "
+	"large, projectile fire balls at their "
+	"enemies. They are also capable of reviving "
+	"their allies.");
+
+const u8 gJalTok_JadPokedexText[] = _(
+	"Superior variant of the TzTok-Jad. Opposed "
+	"to being leaders in their own right, they "
+	"become guardians of the imprisoned leader "
+	"TzKal-Zuk.");
+
+const u8 gTzKal_ZukPokedexText[] = _(
+	"A dangerous entity that got imprisoned "
+	"deep below the TzHaar City during the "
+	"ancient times. Sacrifices are regularly "
+	"send to keep it at bay.");
+
+const u8 gDucklingPokedexText[] = _(
+	"With huge self-doubts, they fear that they "
+	"might be truly ugly. Its parents are "
+	"unaware.");
+
+const u8 gSwanPokedexText[] = _(
+	"Possessing teeth infused with infernal "
+	"energy and a scream that makes any grown "
+	"man scared, these demons attack any who "
+	"oppose them.");
+
+const u8 gDuck_Normal_FormPokedexText[] = _(
+	"Waddling along playfully through the "
+	"falador park. Some say they can grow to "
+	"enormous sizes.");
+
+const u8 gMega_DuckPokedexText[] = _(
+	"The biggest duck on Gielinor. At some "
+	"point they will go on a holy pilgrimage to "
+	"the far off land of Feldip.");
+
+const u8 gDuck_Cart_FormPokedexText[] = _(
+	"A duck that climbed on top of a cart and "
+	"has since never moved. It is now the king "
+	"of the minecart.");
+
+const u8 gPlatypodePokedexText[] = _(
+	"Small and weak, they attack back with "
+	"poison to any who harm them.");
+
+const u8 gPlatypusPokedexText[] = _(
+	"A pest to any resort owners. These "
+	"monsters make great pets for hunters.");
+
+const u8 gFledglingPokedexText[] = _(
+	"Having just grown big enough to move, "
+	"these monsters are ready to eat anything.");
+
+const u8 gDagannoth_Normal_FormPokedexText[] = _(
+	"A monster that is the sworn enemy of the "
+	"Fremmenik. They hail from waterbirth "
+	"island.");
+
+const u8 gDagannoth_Guardian_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gDagannoth_King_Range_FormPokedexText[] = _(
+	"The kings of the Dagannoth, each "
+	"possessing great strength above any normal "
+	"Dagannoth. They serve their queen.");
+
+const u8 gDagannoth_King_Magic_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gDagannoth_King_Melee_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gDagannoth_King_Range_Mega_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gDagannoth_King_Magic_Mega_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gDagannoth_King_Melee_Mega_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gChaos_ElePokedexText[] = _(
+	"An elemental of pure chaotic energy. Its "
+	"powers and behaviour is unpredictable to "
+	"any enemy or friend alike.");
+
+const u8 gChaos_Ele_Mega_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gBandlingPokedexText[] = _(
+	"Hatched from a brown egg, this little bird "
+	"seeks only conflict.");
+
+const u8 gBandbirdPokedexText[] = _(
+	"If there are peaceful times, this bird "
+	"will fly to great lengths to find a war to "
+	"fight in.");
+
+const u8 gBandeaglePokedexText[] = _(
+	"Used by bandosian warlords as weapons, "
+	"their claws have felled many soldiers on "
+	"the battlefield.");
+
+const u8 gZarolingPokedexText[] = _(
+	"Hatched from a purple egg, its motivations "
+	"and goal is a mystery.");
+
+const u8 gZarobirdPokedexText[] = _(
+	"It closes its eyes and remains in "
+	"solitude. Some say their presence is "
+	"empty.");
+
+const u8 gZaravenPokedexText[] = _(
+	"Possessing dark powers unheard of, these "
+	"ravens appear at the darkest of times to "
+	"watch over the world.");
+
+const u8 gSerelingPokedexText[] = _(
+	"Hatched from a cyan egg, these birds shine "
+	"in pure light.");
+
+const u8 gSerebirdPokedexText[] = _(
+	"Peacefully jittering along, they love to "
+	"sing in harmonic tunes.");
+
+const u8 gSerepeaPokedexText[] = _(
+	"While not a great flier, they refract "
+	"light in a great many directions due to "
+	"their crystals.");
+
+const u8 gFrogspawnPokedexText[] = _(
+	"Unable to move, the frogspawn patiently "
+	"wait for their bodies to grow.");
+
+const u8 gFrog_Normal_FormPokedexText[] = _(
+	"Denizen of any pond or lake, the frog will "
+	"ribbit in the face of any foe.");
+
+const u8 gGiant_Frog_Normal_FormPokedexText[] = _(
+	"A frog grown to large size. They are "
+	"hunted by the Dorgeshuun for food.");
+
+const u8 gGiant_Frog_Royal_FormPokedexText[] = _(
+	"A royal member cursed to become a frog. "
+	"Only a kiss from an adventurer could ever "
+	"save them.");
+
+const u8 gFrog_Bloated_FormPokedexText[] = _(
+	"A frog infused with swamp gas. They are "
+	"not very mobile and are easy prey for "
+	"Chompies.");
+
+const u8 gFrog_Balloon_FormPokedexText[] = _(
+	"A very gassy toad that has no ability to "
+	"move. Only being held down by the rock its "
+	"tied to. They hate their lives.");
+
+const u8 gToad_Barker_FormPokedexText[] = _(
+	"A summoned monster from the spirit realm. "
+	"They get their name from the sound they "
+	"make when attacking.");
+
+const u8 gFrogeelPokedexText[] = _(
+	"An abomination made by the Homunculi. Part "
+	"frog part eel, it does not comprehend its "
+	"existence.");
+
+const u8 gSpiderlingPokedexText[] = _(
+	"While small, these spiders are used by "
+	"inexperienced mages for training.");
+
+const u8 gSpider_Giant_FormPokedexText[] = _(
+	"Capable of growing quite big, these "
+	"spiders are usually not a threat to "
+	"seasoned adventurers.");
+
+const u8 gSpider_Huge_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gSpider_DeadlyRed_FormPokedexText[] = _(
+	"Sporting the name 'deadly red spider', "
+	"these spiders protect their eggs from "
+	"hoarders.");
+
+const u8 gSpider_Night_FormPokedexText[] = _(
+	"They lurk the ruins of Daemonheim. But it "
+	"is most known for posessing a hood that "
+	"makes you invisible.");
+
+const u8 gSpider_Blessed_FormPokedexText[] = _(
+	"Spider that is blessed by the son of "
+	"Zamorak, Iban. They are led by their brood "
+	"Kalrag.");
+
+const u8 gSpider_Jungle_FormPokedexText[] = _(
+	"Since they live in the jungle, they have a "
+	"green coloration. This makes them "
+	"invisible to see on maps.");
+
+const u8 gSpider_Ice_FormPokedexText[] = _(
+	"It's body is made of ice, making it one of "
+	"very few cold-blooded insects.");
+
+const u8 gEekPokedexText[] = _(
+	"A really scary spider who loves webbing "
+	"houses for the spider queen. Not doing so "
+	"is an offense and will leave a spider in "
+	"your bathtub.");
+
+const u8 gMinstrlWebPokedexText[] = _(
+	"It is customary for the lord of Death, "
+	"Harold, to always have cobwebs in his "
+	"house. If not, this spider will punish "
+	"him.");
+
+const u8 gSpidinePokedexText[] = _(
+	"Staring eerily at anyone with its many "
+	"eyes. It is unsure if its life was a folly "
+	"or a mistake.");
+
+const u8 gCrawler_Cave_FormPokedexText[] = _(
+	"Crawlers who search for food all day. They "
+	"once became famous due to a combat expert.");
+
+const u8 gCrawler_Chasm_FormPokedexText[] = _(
+	"A far larger cave crawler who might "
+	"venture deeper into caves than their "
+	"younger counterparts.");
+
+const u8 gCrawler_Monstrous_FormPokedexText[] = _(
+	"The apex of the cave crawlers. Their "
+	"bodies are so solid, moss and plants have "
+	"begun growing on them.");
+
+const u8 gWinstonPokedexText[] = _(
+	"Small tortoises bred by the grand tree for "
+	"use as mounts. They love cabbage.");
+
+const u8 gTortoise_Normal_FormPokedexText[] = _(
+	"These large creatures are usually ridden "
+	"by 3 gnome warriors, each using a "
+	"different combat style.");
+
+const u8 gTortoise_Warped_FormPokedexText[] = _(
+	"Tortoise warped by Aposandra but the "
+	"experiment failed. They now lurk the "
+	"poison waste sewers.");
+
+const u8 gTortoise_War_FormPokedexText[] = _(
+	"A summonable tortoise that loves to carry "
+	"items. Its offense is pitiable however.");
+
+const u8 gVallutaPokedexText[] = _(
+	"A guardian of Guthix sent to fend off the "
+	"void invasion. It can finish off a pest "
+	"queen easily.");
+
+const u8 gSea_TurtlePokedexText[] = _(
+	"These sea turtles sometimes get caught by "
+	"fishing trawlers. Therefore, they are hard "
+	"to catch in bulk.");
+
+const u8 gCave_SlimePokedexText[] = _(
+	"A slime that seemingly absorbs nutrients "
+	"as it goes. It's unclear if they possess a "
+	"will.");
+
+const u8 gJelly_Normal_FormPokedexText[] = _(
+	"A gelatinous blob of slime, what is inside "
+	"it is seemingly skeletons and organs. It "
+	"is unknown where they came from.");
+
+const u8 gJelly_Warped_FormPokedexText[] = _(
+	"A jelly so warped it could never be served "
+	"to anyone. It's insides are beyond "
+	"comprehension.");
+
+const u8 gJelly_Spirit_FormPokedexText[] = _(
+	"Even in the spirit realm there exists "
+	"jellies. Eating humans will cause them "
+	"indigestion.");
+
+const u8 gSalamander_Green_FormPokedexText[] = _(
+	"A green swamp lizard usually found in "
+	"Morytania. They love Guam leaves.");
+
+const u8 gSalamander_Orange_FormPokedexText[] = _(
+	"Apparently related to desert lizards. They "
+	"can fire a fiery breath at their enemies.");
+
+const u8 gSalamander_Red_FormPokedexText[] = _(
+	"Usually found around lava, these "
+	"Salamanders have a fondness for herbs.");
+
+const u8 gSalamander_Black_FormPokedexText[] = _(
+	"Found only in the wilderness, these "
+	"salamanders are rarely hunted due to the "
+	"dangers of the Wilderness.");
+
+const u8 gSalamander_Augmented_FormPokedexText[] = _(
+	"As a strike against the gods, a black "
+	"lizard became augmented by the inventions "
+	"of mankind. Now stronger than ever, it "
+	"strikes back.");
+
+const u8 gGeckoPokedexText[] = _(
+	"As they have no eyelids they lick their "
+	"eyes to make sure they don't dry up.");
+
+const u8 gChameleonPokedexText[] = _(
+	"Capable of looking in any direction, "
+	"shooting its tongue like an arrow, and "
+	"colour-changing skin. This lizard has "
+	"everything.");
+
+const u8 gBloodveldPokedexText[] = _(
+	"One of the lower forms of Chtonian demons. "
+	"They hunger for blood their entire lives.");
+
+const u8 gBloodveld_Insatiable_Physical_FormPokedexText[] = _(
+	"Often used as pets for Vampyres, these "
+	"monsters will salivate upon even small "
+	"whiffs of blood.");
+
+const u8 gBloodveld_Insatiable_Special_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gBloodveld_Mutated_Physical_FormPokedexText[] = _(
+	"A bloodveld experimented upon to truly "
+	"understand hemomancy. The experiments "
+	"failed.");
+
+const u8 gBloodveld_Mutated_Special_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gArmalingPokedexText[] = _(
+	"Hatched from a pink egg. These birds seek "
+	"to uphold law.");
+
+const u8 gArmabirdPokedexText[] = _(
+	"Flying swiftly through the sky, these "
+	"birds will fly to kingdoms that uphold the "
+	"law.");
+
+const u8 gArmafalconPokedexText[] = _(
+	"Hailing from the homeworld of the "
+	"aviansies, they possess wings able to "
+	"carry them anywhere.");
+
+const u8 gUngodlingPokedexText[] = _(
+	"Hatched from a regular egg, this bird "
+	"needs a god to align with.");
+
+const u8 gUngodbirdPokedexText[] = _(
+	"Knowing that following a god is a folly, "
+	"they want to prove to everyone that gods "
+	"are of no use to them.");
+
+const u8 gUngodgeonPokedexText[] = _(
+	"Fighting with no aid from the gods, the "
+	"godless assume they are the true believers "
+	"of Guthix.");
+
+const u8 gTumeklingPokedexText[] = _(
+	"Born of an orange egg, this bird holds a "
+	"small orb in honor of Tumeken.");
+
+const u8 gTumekbirdPokedexText[] = _(
+	"Balancing atop its orb, it will stand "
+	"still even in the biggest of desert "
+	"storms.");
+
+const u8 gTumekibisPokedexText[] = _(
+	"Balancing the orb along its tail feathers, "
+	"it is said to only drop it if it has no "
+	"strength left to fight.");
+
+const u8 gKerritPokedexText[] = _(
+	"As they refuse to help you see in the "
+	"dark, their only use is as a makeshift "
+	"weapon.");
+
+const u8 gSnufflePokedexText[] = _(
+	"Running great lengths at surprisingly fast "
+	"paces, only seasoned hunters seem able to "
+	"catch them.");
+
+const u8 gPopocaPokedexText[] = _(
+	"Expelling fire from their husks, they seem "
+	"to smell like bonfires. It's hard to let "
+	"them out in the wild as they start forest "
+	"fires.");
+
+const u8 gCholoaPokedexText[] = _(
+	"A very skittish creature that when "
+	"agitated, will simply roll away. Sometimes "
+	"it rolls down hills and gets mad it has to "
+	"walk up the hill again.");
+
+const u8 gDurzagPokedexText[] = _(
+	"A airut commander under the god of Tuska. "
+	"They seek nothing but destruction.");
+
+const u8 gYakamaruPokedexText[] = _(
+	"A spirit guardian who fell victim to airut "
+	"shamans. It now summons jellyfish to fight "
+	"for it.");
+
+const u8 gXinachtoPokedexText[] = _(
+	"A guardian spirit who holds the key to the "
+	"anima mundi of its world. It feels "
+	"shackled to the body it has.");
+
+const u8 gChompyPokedexText[] = _(
+	"A fat bird that has trouble flying. Ogres "
+	"hunt them for food.");
+
+const u8 gJubblyPokedexText[] = _(
+	"A bird so fat that it could feed an Ogre "
+	"for an entire week. The trick to catching "
+	"them is a secret.");
+
+const u8 gTerrorbird_Normal_FormPokedexText[] = _(
+	"Trained as mounts by the gnomes, these "
+	"birds have no quarrel with fighting any "
+	"who challenge them.");
+
+const u8 gTerrorbird_Warped_FormPokedexText[] = _(
+	"Failed attempts to make the terrorbird "
+	"smarter warped it to become like this. It "
+	"is a failure.");
+
+const u8 gTerrorbird_Spirit_FormPokedexText[] = _(
+	"A terrorbird from the spirit realm. They "
+	"can carry a great load of baggage on their "
+	"backs.");
+
+const u8 gJubsterPokedexText[] = _(
+	"Created by the homunculus, their reserves "
+	"of meat and fat are so large, that it "
+	"could feed a family of 3 on lobster for a "
+	"week.");
+
+const u8 gWolf_Juvenile_FormPokedexText[] = _(
+	"A young wolf who prefers to stay inside "
+	"caves. Their favourite treat is cave mice.");
+
+const u8 gWolf_Normal_FormPokedexText[] = _(
+	"They form packs and hunt together in a "
+	"flock. This way, survival becomes easier "
+	"for the pack as they collaborate.");
+
+const u8 gWolf_White_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gWolf_Fenris_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gWolf_Dire_FormPokedexText[] = _(
+	"A big and dangerous wolf from Arendar "
+	"gates. They sometimes come down to Isafdar "
+	"to hunt the unknowing.");
+
+const u8 gWolf_Skoll_FormPokedexText[] = _(
+	"A big wolf said in the Fremennik Tales to "
+	"be a wolf capable of even swallowing the "
+	"sun.");
+
+const u8 gWolf_Hati_HatiPokedexText[] = _(
+	"A big wolf said in the Fremennik Tales to "
+	"be the harbinger of Ragnarok, the events "
+	"that end the world.");
+
+const u8 gFoxPokedexText[] = _(
+	"A crafty and shrewd vulpine. Known for "
+	"sneaking into chicken pens to steal food.");
+
+const u8 gInariPokedexText[] = _(
+	"A fox that has lived so long it grew "
+	"additional tails. Each tail gave it more "
+	"power.");
+
+const u8 gWolf_Spirit_FormPokedexText[] = _(
+	"A wolf from the spirit world. Its howl can "
+	"scare and repel any enemy, making it a "
+	"good companion for new adventurers.");
+
+const u8 gHelwyrPokedexText[] = _(
+	"Sorcerer of the Cywir clan, it fights in "
+	"the name of Seren with the power of the "
+	"spirit realm.");
+
+const u8 gBird_NestPokedexText[] = _(
+	"A delight for people who chop down trees. "
+	"These nests often have small eggs in them.");
+
+const u8 gPigeonPokedexText[] = _(
+	"Mostly harmless birds that enjoy looking "
+	"down on people from coathangers in a "
+	"scornful way.");
+
+const u8 gPheasantPokedexText[] = _(
+	"Often seen with the Freaky Forester. These "
+	"birds serve no purpose except being food.");
+
+const u8 gRoclingPokedexText[] = _(
+	"It's wings are not ready to fly, yet it "
+	"hunts for goatweed all day.");
+
+const u8 gRocPokedexText[] = _(
+	"Known by a local farmer as 'big bird'. It "
+	"has large wings capable of knocking "
+	"farmers over.");
+
+const u8 gFoalPokedexText[] = _(
+	"A young unicorn pure of will and naive to "
+	"the dangers of the world.");
+
+const u8 gUnicorn_White_FormPokedexText[] = _(
+	"With a pure mind, the unicorn is said to "
+	"grant blessings. They enjoy the company of "
+	"virgins and pure souls.");
+
+const u8 gUnicorn_Stallion_FormPokedexText[] = _(
+	"A stallion from the spirit realm. With "
+	"great healing powers, they help their "
+	"allies in battles.");
+
+const u8 gPawyaPokedexText[] = _(
+	"Native to Isafdar, these small critters "
+	"love the taste of papaya, which are in "
+	"short supply in the elven lands.");
+
+const u8 gGrenwallPokedexText[] = _(
+	"Hunters to the core. They prey on Pawya. "
+	"If threatened, they will curl up into a "
+	"defensive mode. Their spikes are used for "
+	"potions.");
+
+const u8 gBear_CubPokedexText[] = _(
+	"A young bear with much to learn. Easily "
+	"tricked by honey. Tends to repay favours "
+	"with an oblivious slap.");
+
+const u8 gBear_Normal_FormPokedexText[] = _(
+	"A large monster of the ursa family. They "
+	"will eat large amounts of food before "
+	"hibernating in the winter.");
+
+const u8 gKendallPokedexText[] = _(
+	"A god of the mountain. A cannibal posed as "
+	"the Kendall once and ate whoever came "
+	"close to his domain.");
+
+const u8 gPolar_Bear_Normal_FormPokedexText[] = _(
+	"A bear native to Archeron. They held "
+	"penguins as slaves and are the sworn "
+	"enemies of the seals.");
+
+const u8 gPolar_Bear_Arctic_FormPokedexText[] = _(
+	"A very curious bear from the spirit realm. "
+	"They will seemingly entertain any audience "
+	"in an informative way.");
+
+const u8 gGraahk_Normal_FormPokedexText[] = _(
+	"A big horned monster from the Karamja "
+	"jungles. Their horns are so solid, they "
+	"will leave a dent on even steel.");
+
+const u8 gGraahk_Spirit_FormPokedexText[] = _(
+	"A graahk from the spirit realm. They are "
+	"not as easily teased as their Gielinorian "
+	"counterpart.");
+
+const u8 gDust_DevilPokedexText[] = _(
+	"A devil that makes a sound so dastardly "
+	"any dog will bark at it in fear. It cleans "
+	"up its domain however.");
+
+const u8 gSmokeDevilPokedexText[] = _(
+	"Expelling great amounts of smoke, it is "
+	"hard to know if it does so to defend "
+	"itself, or annoy its opponents.");
+
+const u8 gSmokeDevil_Nuclear_FormPokedexText[] = _(
+	"A monster said to be so unstable it could "
+	"blow up at any moment. Yet it keeps on "
+	"living as if nothing is a threat.");
+
+const u8 gChokeDevilPokedexText[] = _(
+	"A monster who will make even a grown man "
+	"choke on his own breath. Any who challenge "
+	"it should wear a facemask.");
+
+const u8 gSmokeDevil_Thermonuclear_FormPokedexText[] = _(
+	"Said to be a danger to itself and any "
+	"around it. It will refuse to do anything "
+	"but harm those it loves.");
+
+const u8 gHatchlingPokedexText[] = _(
+	"A newly hatched dragon. When they eat, "
+	"they sometimes burn their food and become "
+	"grumpy.");
+
+const u8 gDragonling_Green_FormPokedexText[] = _(
+	"A small dragon. Dragons were originally "
+	"made by the dragonkin to relieve them of "
+	"their curse.");
+
+const u8 gDragon_Green_FormPokedexText[] = _(
+	"Sporting incredibly thick hide, dragons "
+	"are killed for their bones and hide which "
+	"sells for a good price.");
+
+const u8 gDragon_Brutal_Green_FormPokedexText[] = _(
+	"Scarred from battle, these dragon's are "
+	"battle hardened and stronger than the "
+	"regular kind.");
+
+const u8 gDragonling_Blue_FormPokedexText[] = _(
+	"Small and cute, they have yet to breathe "
+	"fire. They are still killed anyway.");
+
+const u8 gDragon_Blue_FormPokedexText[] = _(
+	"A weaker dragon that can still pack a "
+	"punch. Adventurers choose to kill them for "
+	"trade.");
+
+const u8 gDragon_Brutal_Blue_FormPokedexText[] = _(
+	"A dragon that should never be "
+	"underestimated. Aside from being coloured "
+	"blue, they are distinguished by spiky "
+	"horns.");
+
+const u8 gDragonling_Red_FormPokedexText[] = _(
+	"A young creature secluded to the Brimhaven "
+	"Dungeon. They make friends with dogs.");
+
+const u8 gDragon_Red_FormPokedexText[] = _(
+	"A strong creature hidden away in "
+	"inconvenient locations. They are not "
+	"valued as high as their cousins.");
+
+const u8 gDragon_Brutal_Red_FormPokedexText[] = _(
+	"A dragon that should never be "
+	"underestimated. Aside from being coloured "
+	"red, they are distinguished by a pointy "
+	"horn.");
+
+const u8 gDragonling_Black_FormPokedexText[] = _(
+	"The elite of all baby dragon forms. They "
+	"tend to stick close to their parents.");
+
+const u8 gDragon_Black_FormPokedexText[] = _(
+	"All hail the feared black dragon. They "
+	"were once believed to be the strongest "
+	"monsters of all.");
+
+const u8 gDragon_Brutal_Black_FormPokedexText[] = _(
+	"A dragon that should never be "
+	"underestimated. Aside from being coloured "
+	"black, they are distinguished by curvy "
+	"horns.");
+
+const u8 gDragon_ThreeHeaded_FormPokedexText[] = _(
+	"A monster that should no longer exist. "
+	"Finding one is a statistical anomaly.");
+
+const u8 gElvargPokedexText[] = _(
+	"Slayer of Crandor Island. Elvarg is a "
+	"threat to be reckoned with for any "
+	"unprepared adventurer.");
+
+const u8 gDragon_King_Black_FormPokedexText[] = _(
+	"A 3-headed black dragon made by Kerapac. "
+	"Its real name is Shakorexis.");
+
+const u8 gDragon_Queen_Black_FormPokedexText[] = _(
+	"The first dragon ever created, laid to "
+	"slumber as it serves to use anymore. "
+	"Grotworms have since infested it.");
+
+const u8 gHand_Creeping_FormPokedexText[] = _(
+	"A really small hand. So small, it would\n"
+	"come in handy at any kind of on-hand\n"
+	"situation. They hate puns.");
+
+const u8 gHand_Crawling_FormPokedexText[] = _(
+	"A hand from Viggora's Folly, a tower that "
+	"fell into the ground due to unstable "
+	"foundations. They love rings and gloves.");
+
+const u8 gHand_Skeletal_FormPokedexText[] = _(
+	"A crawling hand without any skin left. "
+	"Some theorize there could be skeletal feet "
+	"out there.");
+
+const u8 gHand_Crushing_FormPokedexText[] = _(
+	"A hand so big it will crush anything it "
+	"can. Despite lacking a body, it really "
+	"packs a punch.");
+
+const u8 gHand_Zombie_FormPokedexText[] = _(
+	"Perhaps you should avoid shaking the hand. "
+	"It has been rotting for some time.");
+
+const u8 gTurothPokedexText[] = _(
+	"A creature so persistent, only a broad "
+	"type of weapons could ever wish to harm "
+	"it.");
+
+const u8 gTuroth_Mightiest_FormPokedexText[] = _(
+	"A turoth grown to prime strength. Stronger "
+	"than others of its kind, it will fight "
+	"till its last breath to feed itself.");
+
+const u8 gBig_TurothPokedexText[] = _(
+	"Its size is far larger than other turoth's "
+	"making it more dangereous. But not that "
+	"much dangereous.");
+
+const u8 gSockrothPokedexText[] = _(
+	"A turoth who, due to a number of "
+	"inconvenient events and a fallout with Meg "
+	"the Adventurer, now possesses a sock.");
+
+const u8 gLilraskPokedexText[] = _(
+	"A kurask not fully grown yet. To prove its "
+	"worth, it must travel to Karamja and "
+	"return home with a pineapple.");
+
+const u8 gKuraskPokedexText[] = _(
+	"Having returned from Karamja with its "
+	"prized possession, it is now marked an "
+	"adult and can be a respected member of its "
+	"herd.");
+
+const u8 gKurask_King_FormPokedexText[] = _(
+	"The king of its herd. They lead their herd "
+	"with wisdom and experience.");
+
+const u8 gKurask_Overlord_FormPokedexText[] = _(
+	"It leads with a stern hand, demanding "
+	"fruit as tribute for its protection.");
+
+const u8 gKebbitPokedexText[] = _(
+	"A small monster mostly seen as prey by "
+	"everyone else than other kebbits.");
+
+const u8 gKebbit_Polar_FormPokedexText[] = _(
+	"A monster that defends itself with "
+	"camouflage in snowy areas. It does not "
+	"like the cold however.");
+
+const u8 gKebbit_Sabre_FormPokedexText[] = _(
+	"One of the more dangerous kebbits, they "
+	"have massive fangs that bite predators. "
+	"They are not that smart however.");
+
+const u8 gKebbit_Spotted_FormPokedexText[] = _(
+	"Their spots confuse predators by causing "
+	"optical illusions while running.");
+
+const u8 gKebbit_Dark_FormPokedexText[] = _(
+	"They can run at great speed without making "
+	"a sound. This is due to their sleek fur.");
+
+const u8 gKebbit_Dashing_FormPokedexText[] = _(
+	"These monsters are swift runners. Fast "
+	"regular traps are no match for them. "
+	"Falcons, however, easily catch them.");
+
+const u8 gKebbit_Wild_FormPokedexText[] = _(
+	"These kebbits have grown small spikes in "
+	"an attempt to defend themselves. But they "
+	"got hunted even more by humans for trade.");
+
+const u8 gKebbit_Prickly_FormPokedexText[] = _(
+	"A kebbit that is usually hunted by "
+	"intermediate hunters. They hate falcons "
+	"with a passion.");
+
+const u8 gKebbit_Razor_FormPokedexText[] = _(
+	"These kebbits will lower their bodies to "
+	"the ground and then throw their backs into "
+	"their enemies for self defence.");
+
+const u8 gKebbit_Big_FormPokedexText[] = _(
+	"A kebbit that has grown to an extreme "
+	"size. Despite its size, it is still a weak "
+	"kebbit.");
+
+const u8 gKebbit_DesertDevil_FormPokedexText[] = _(
+	"They only live in the desert, despite "
+	"there not being much food around.");
+
+const u8 gKebbit_Feldip_Weasel_FormPokedexText[] = _(
+	"One of the more common kebbits, hailing "
+	"from the Piscatoris hunter area.");
+
+const u8 gKebbit_Barbed_FormPokedexText[] = _(
+	"A kebbit with a barb tail so sharp, it can "
+	"even be used to fish.");
+
+const u8 gKebbit_Diseased_FormPokedexText[] = _(
+	"Being struck by disease, this kebbit "
+	"awaits for it's life to end. Possibly "
+	"dragging more of its kind with it.");
+
+const u8 gKebbit_Chocolate_FormPokedexText[] = _(
+	"A kebbit made entirely of chocolate, "
+	"usually by the powers of a chocatrice.");
+
+const u8 gMonkey_Normal_FormPokedexText[] = _(
+	"Denizens of Karamja, these creatures love "
+	"bananas and playing tricks on humans.");
+
+const u8 gMonkey_Ninja_FormPokedexText[] = _(
+	"Monkey trained to prime speed and form. "
+	"They defend the Ape Atoll from any "
+	"outsiders.");
+
+const u8 gMonkey_Zombie_FormPokedexText[] = _(
+	"Monkeys arisen by necromantic arts and "
+	"locked away in the caves beneath the Ape "
+	"Atoll.");
+
+const u8 gGorilla_Normal_FormPokedexText[] = _(
+	"A stronger kind of primate that are used "
+	"when the speed of a monkey is not enough, "
+	"and raw strength is needed.");
+
+const u8 gGorilla_Ancient_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gLarupia_Normal_FormPokedexText[] = _(
+	"A swift hunter from the Feldip region. "
+	"Their fur is adapted to camouflage in the "
+	"jungles.");
+
+const u8 gLarupia_Spirit_FormPokedexText[] = _(
+	"A hunter from the spirit realm. These "
+	"monsters have really sharp senses, making "
+	"them great partners for hunters.");
+
+const u8 gKyatt_Normal_FormPokedexText[] = _(
+	"The apex predator of the snowy north. "
+	"Their fangs are really sharp, but if they "
+	"break, they cannot be regrown.");
+
+const u8 gKyatt_Spirit_FormPokedexText[] = _(
+	"A kyatt from the spirit realm. Capable of "
+	"teleporting it and its adventurer to where "
+	"it pleases, when it pleases.");
+
+const u8 gCrablingPokedexText[] = _(
+	"So small it can hide anywhere, it needs to "
+	"make a decision how to survive in the "
+	"future.");
+
+const u8 gRock_Crab_Normal_FormPokedexText[] = _(
+	"A crab made of solid rock. They stay along "
+	"beaches motionlessly. If a rock moves, it "
+	"might be a rock crab.");
+
+const u8 gRock_Crab_Giant_Normal_FormPokedexText[] = _(
+	"Far larger than it's smaller counterpart, "
+	"it has become a lot harder to hide as a "
+	"small rock.");
+
+const u8 gRock_Crab_Giant_Ammonite_FormPokedexText[] = _(
+	"A crab so ancient, fossils can be seen on "
+	"it. Archaeologists want to study them but "
+	"are no match to their powers.");
+
+const u8 gLobster_Rock_FormPokedexText[] = _(
+	"A lobsters pretending to be a rock. Except "
+	"it wasn't a rock, it was a rock lobster.");
+
+const u8 gRock_Crab_Sand_FormPokedexText[] = _(
+	"These crabs are mainly found in desert "
+	"regions, using sand instead of rocks.");
+
+const u8 gRock_Crab_Swamp_FormPokedexText[] = _(
+	"Mainly found in swamp's, they use whatever "
+	"they can find as substitute shells.");
+
+const u8 gCrab_Granite_FormPokedexText[] = _(
+	"A bigger rockcrab from Waterbirth Island. "
+	"They are far larger and deadlier but "
+	"prefer to stay immobile.");
+
+const u8 gLobster_Granite_FormPokedexText[] = _(
+	"A lobster from the spirit realm. Smaller "
+	"and swifter, these lobsters are really "
+	"good at fishing underwater.");
+
+const u8 gRabbitPokedexText[] = _(
+	"A creature that is light on its feet but "
+	"are otherwise useless. Their meat is tasty "
+	"and their feet bring luck to lumberjacks.");
+
+const u8 gWolpertingPokedexText[] = _(
+	"A rabbit from the spirit realm with "
+	"antlers and magical powers. It also "
+	"seemingly grants a great deal of "
+	"camouflage to those in its herd.");
+
+const u8 gBunyipPokedexText[] = _(
+	"A swamp creature from the spirit realm. "
+	"They prefer to swallow their fish raw.");
+
+const u8 gTalonBeast_Talon_FormPokedexText[] = _(
+	"A feared monster of Morytania. It gets it "
+	"name from the talons it possesses that has "
+	"killed many adventurers.");
+
+const u8 gTalonBeast_Nail_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gFerretPokedexText[] = _(
+	"A friendly critter not to be confused with "
+	"the ferret of doom. These muspelids will "
+	"gladly hunt rabbits.");
+
+const u8 gToy_MousePokedexText[] = _(
+	"An automation made of clockwork to mimic a "
+	"mouse. Cats love to play with these.");
+
+const u8 gToy_DollPokedexText[] = _(
+	"Toy doll made from clockwork. It "
+	"pirouettes and dances whenever it can.");
+
+const u8 gToy_SoldierPokedexText[] = _(
+	"Made of clockwork, it seemingly follows "
+	"its duty of marching to war. Even if there "
+	"isn't any...");
+
+const u8 gPenguin_Clockwork_FormPokedexText[] = _(
+	"Penguin toy made of clockwork. If someone "
+	"was small enough to fit, they could "
+	"probably control it from the inside.");
+
+const u8 gCat_Clockwork_FormPokedexText[] = _(
+	"An automation made of clockwork to mimic "
+	"mans best friend. They refuse to meow.");
+
+const u8 gMagicarpetPokedexText[] = _(
+	"Magically infused carpets capable of "
+	"flight. They are used as transportation in "
+	"the Kharidian desert.");
+
+const u8 gAnichairPokedexText[] = _(
+	"A chair that has seemingly gained life. "
+	"They love to play tricks on adventurers "
+	"who enter their domain.");
+
+const u8 gExoraxePokedexText[] = _(
+	"An axe posessed by a ghost. Their "
+	"movements are primitive, but deadly.");
+
+const u8 gSpookaxePokedexText[] = _(
+	"A pickaxe possessed by a long passed away "
+	"miner. Even in death it keeps on chopping "
+	"at anything.");
+
+const u8 gDobbinPokedexText[] = _(
+	"Toy of a being that is now extinct. A "
+	"horse is apparently something like a "
+	"hornless unicorn that tasted delicious.");
+
+const u8 gMarionettePokedexText[] = _(
+	"Marionette who dances to the puppetmaster. "
+	"If there are no strings, it will fight "
+	"back.");
+
+const u8 gDragonKitePokedexText[] = _(
+	"Sold due to high demand of Dragon kites. "
+	"Adventurers got upset it was not a "
+	"kiteshield and sales plummeted.");
+
+const u8 gAnimourPokedexText[] = _(
+	"Armour reanimated by magic to become a "
+	"test of strength. They are great for "
+	"combat training.");
+
+const u8 gDead_TreePokedexText[] = _(
+	"Just a normal tree without any leaves or "
+	"life left. Something like this could never "
+	"move.");
+
+const u8 gJadinkoPokedexText[] = _(
+	"Born of vines and plants, these monsters "
+	"are one with nature and take many forms.");
+
+const u8 gKillerwattPokedexText[] = _(
+	"A being from another plane. They are made "
+	"entirely of electrical energy and will "
+	"expel it at every opportunity.");
+
+const u8 gMackersPokedexText[] = _(
+	"Unrelated to the K.G.P. The turkeys are "
+	"trying to launch an attack on humans. "
+	"Humans don't care since it is "
+	"thanksgiving.");
+
+const u8 gTurkey_Female_FormPokedexText[] = _(
+	"Grown and ready to defend itself. It "
+	"retaliates against adventurers to fight "
+	"for its freedom. They are then eaten.");
+
+const u8 gTurkey_Male_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gTurkey_Protestor_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gToucan_Tenacious_Male_FormPokedexText[] = _(
+	"Tenacious to a T, they will relentlessly "
+	"attack adventurers embarking into the jade "
+	"vine.");
+
+const u8 gToucan_Tenacious_Female_FormPokedexText[] = _(
+	"Nothing Interesting Happens.");
+
+const u8 gToucan_Tuai_Leit_FormPokedexText[] = _(
+	"Despite the look of it, its beak is "
+	"actually very brittle and prone to "
+	"breaking.");
+
+const u8 gJellyfish_Blubber_FormPokedexText[] = _(
+	"Its blue colorations are meant to disguise "
+	"it under the sea. This makes it easier to "
+	"fight prey.");
+
+const u8 gJellyfishPokedexText[] = _(
+	"They are commonly referred to as 'melee "
+	"fish' since they are very physically "
+	"strong.");
+
+const u8 gPurePokedexText[] = _(
+	"A chunk of runestone from a rock infused "
+	"by the stone of Jas.");
+
+const u8 gRunePokedexText[] = _(
+	"Infused with the energy of the runic "
+	"altars, the rune essence gains the powers "
+	"of the altars.");
+
+const u8 gEssencePokedexText[] = _(
+	"In large supplies, runes are capable of "
+	"creating spells. But not knowing what to "
+	"do with them might expel said energy.");
+
+const u8 gSeagull_Normal_FormPokedexText[] = _(
+	"A small bird often found amongst docks. "
+	"They tend to clean harbours of food scraps "
+	"otherwise left unattended.");
+
+const u8 gPelicanPokedexText[] = _(
+	"Pelicans lurk fishing platforms hoping to "
+	"either steal a fish, or for a fishing "
+	"adventurer to give them a treat.");
+
+const u8 gAlbatrossPokedexText[] = _(
+	"Flying around Cairn Island, these birds "
+	"fish for food.");
+
+const u8 gSeagull_Hattenkrapper_FormPokedexText[] = _(
+	"Baron von Hattenkrapper. Sworn rival of "
+	"Count Ludvig Koppenploppen. Known as the "
+	"slayer of barrelchests on Bloodsplatter "
+	"island.");
+
+const u8 gSeagull_Koppenploppen_FormPokedexText[] = _(
+	"Count Ludwig Koppenploppen. Sworn rival to "
+	"Baron von Hattenkrapper. Known to have "
+	"eaten many meals on The rock.");
+
+const u8 gSeagull_Steven_FormPokedexText[] = _(
+	"Flightless, the bird has nothing but it's "
+	"own name that holds any value. It fights "
+	"with all it has.");
+
+const u8 gIbisPokedexText[] = _(
+	"Fishers with good summoning levels summon "
+	"these birds to improve their catches.");
+
+const u8 gDesertWyrmPokedexText[] = _(
+	"A smaller, limbless kind of dragon that "
+	"prefers to sail along the desert. The "
+	"sandstorms cannot damage them.");
+
+const u8 gWyrmPokedexText[] = _(
+	"A bigger, limbless dragon. While it has no "
+	"fire breath, it is still a threat to "
+	"unprepared adventurers.");
+
+const u8 gAbbySpectrPokedexText[] = _(
+	"Their bodies are covered in slime, no one "
+	"but other ghosts would dare to hug it.");
+
+const u8 gSnake_Normal_FormPokedexText[] = _(
+	"Found in the jungles of Karamja, these "
+	"snakes are usually harmless to most "
+	"travelers.");
+
+const u8 gCobra_Normal_FormPokedexText[] = _(
+	"Their necks can enlargen to scare their "
+	"enemies. They dance when they are charmed "
+	"by a flute.");
+
+const u8 gCobra_Spirit_FormPokedexText[] = _(
+	"A cobra from the spirit realm. They can "
+	"corrupt eggs, making them into cockatrice "
+	"egg's");
+
+const u8 gJunaPokedexText[] = _(
+	"Guardian of Guthix, this snake was set to "
+	"guard the residual sadness of Guthix left "
+	"in the rocks of lumbridge.");
+
+const u8 gSnake_Sea_FormPokedexText[] = _(
+	"Found deep beneath Misthalin and "
+	"Etceteria, these snakes only live in "
+	"underwater caves.");
+
+const u8 gBig_Snake_Sea_FormPokedexText[] = _(
+	"Grown to a size far larger than any other "
+	"snake, it preys on what enters its caves.");
+
+const u8 gRock_Polished_FormPokedexText[] = _(
+	"Created by betraying a friend and turning "
+	"them into a polishing rock for the purpose "
+	"of completing a quest.");
+
+const u8 gPillarPokedexText[] = _(
+	"The Elder Gods created several Elder "
+	"Artefacts. The Pillar was not one of them. "
+	"Despite this, it killed Mother Mallum in "
+	"one attack.");
+
+const u8 gRock_SoupPokedexText[] = _(
+	"A troll delicacy made by mixing a pet rock\n"
+	"into a soup of cabbage. You can really\n"
+	"taste the rock in it.");
+
+const u8 gSlagilithPokedexText[] = _(
+	"Most Slagilith are caused by unknowing "
+	"adventurers animating the face of a rock. "
+	"It becomes sentient and will try to kill "
+	"them.");
+
+const u8 gRock_Strange_FormPokedexText[] = _(
+	"These rocks are known to sneak into a "
+	"player's inventory when they are least "
+	"needed.");
+
+const u8 gRock_Golden_FormPokedexText[] = _(
+	"These golden rocks are known to sneak into "
+	"a player's inventory when they are "
+	"sometimes needed.");
+
+const u8 gParty_RockPokedexText[] = _(
+	"They dance with the fury of a mighty "
+	"statue. Having one at a party is sure to "
+	"raise the roof.");
+
+const u8 gYak_Undead_FormPokedexText[] = _(
+	"When a yak dies, that is usually it. "
+	"Unless they become zombie yaks.");
+
+const u8 gYak_Snack_FormPokedexText[] = _(
+	"A yak tasked with the important duty of "
+	"bearing the food supply for an entire "
+	"winter, without eating it.");
+
+const u8 gCow_Dairy_FormPokedexText[] = _(
+	"Dairy cows are specialized in producing "
+	"the highest quality milk and can be milked "
+	"by any passing adventurers.");
+
+const u8 gCow_Strawberry_FormPokedexText[] = _(
+	"Strawberry cows come to be by feeding a "
+	"dairy cow plenty of strawberries "
+	"throughout its period of growth.");
+
+const u8 gCow_Vanilla_FormPokedexText[] = _(
+	"It is said that if you shake a vanilla cow "
+	"enough and use a bucket on it, it will "
+	"create a milkshake.");
+
+const u8 gCow_Chocolate_FormPokedexText[] = _(
+	"According to several surveys, 80% of "
+	"players prefer the Chocolate cow over the "
+	"vanilla or strawberry ones.");
+
+const u8 gCow_Harlequin_FormPokedexText[] = _(
+	"A cow posessing the rare qualities of its "
+	"fellow cows. When slaughtered, the pink "
+	"parts are usually left behind.");
+
+const u8 gSuper_CowPokedexText[] = _(
+	"When a slayer comes near, the matriarch "
+	"will challenge it to a battle so epic, "
+	"only cowhide is left.");
+
+const u8 gCow_Plague_FormPokedexText[] = _(
+	"The cows of Sophanem and Menaphos were "
+	"cursed by the devourer, and are thus "
+	"slowly awaiting death.");
+
+const u8 gBull_Elder_FormPokedexText[] = _(
+	"The apex of bulls. They are capable of "
+	"knocking players over, and filling their "
+	"stomachs for a slayer task.");
+
+const u8 gMinotaur_Normal_FormPokedexText[] = _(
+	"Far smarter than regular cows or bulls, "
+	"they reside in the Stronghold of Security "
+	"for no apparent reason.");
+
+const u8 gMinotaur_Rune_FormPokedexText[] = _(
+	"Whenever they see humans with horny "
+	"helmets, they will ruthlessly charge at "
+	"them for a duel.");
+
+const u8 gTrojan_CowPokedexText[] = _(
+	"Fred the farmer collects balls of wool in "
+	"order to create the ultimate cow. The "
+	"trojan cow.");
+
+const u8 gChicken_Mystery_FormPokedexText[] = _(
+	"A chicken without any clear purpose or "
+	"meaning. The real mystery is why it "
+	"exists.");
+
+const u8 gChicken_War_FormPokedexText[] = _(
+	"The horse of Frank, the fifth member of "
+	"the clan, 'The Horsemen'.");
+
+const u8 gChicken_Pestilence_FormPokedexText[] = _(
+	"The Scientist Avalani sent several chicken "
+	"into the sky to research the clan citadel. "
+	"Not many returned.");
+
+const u8 gChicken_Famine_FormPokedexText[] = _(
+	"The fusion of 4 different chickens sent to "
+	"certain death. Its power is that of 4 "
+	"whole chickens.");
+
+const u8 gChicken_Death_FormPokedexText[] = _(
+	"Serving as the steed of Frank, the fifth "
+	"member of The Horsemen. This chicken has "
+	"done nothing worth mentioning.");
+
+const u8 gRam_Golden_FormPokedexText[] = _(
+	"Golden rams tend to be monopolised by the "
+	"troll Lalli. But their wool can be used to "
+	"create enchanted lyres.");
+
+const u8 gGoat_Billy_FormPokedexText[] = _(
+	"Known for eating mostly anything, these "
+	"goats are great for controlling grasslands "
+	"on the mountain.");
+
+const u8 gGoat_Desert_FormPokedexText[] = _(
+	"As they wander the desert near Nardah they "
+	"sometimes find adventurers killing them "
+	"for their horns.");
+
+const u8 gSheep_Black_FormPokedexText[] = _(
+	"Sheep born with black fur are worth less "
+	"than white ones because their wool can not "
+	"be coloured.");
+
+const u8 gGoat_Mountain_FormPokedexText[] = _(
+	"Their hooves are so expertly crafted, they "
+	"can climb even the steepes mountain. "
+	"Despite this, they are often used for "
+	"soup.");
+
+const u8 gGorakPokedexText[] = _(
+	"Despite being found in another plane of "
+	"existence, some made it to Gielinor to "
+	"fight by Zamorak's side during the God "
+	"Wars.");
+
+const u8 gSheep_Plague_FormPokedexText[] = _(
+	"A sheep coloured to pretend there was a "
+	"plague in Kandarin. This was instigated by "
+	"the faction of mourners.");
+
+const u8 gThe_ThingPokedexText[] = _(
+	"A perfectly normal sheep. In no way is it "
+	"collecting information about you to use "
+	"against you.");
+
+const u8 gCrab_Red_FormPokedexText[] = _(
+	"Their pincers are designed to hold on to "
+	"their enemies. But at this stage, they are "
+	"too small to effectively use them.");
+
+const u8 gCrab_Moss_FormPokedexText[] = _(
+	"Once a year, crabs come out of their shell "
+	"to grow bigger, but they are vulnerable "
+	"while doing so.");
+
+const u8 gGiant_Crab_Red_FormPokedexText[] = _(
+	"Capable of dealing massive damage, these "
+	"crabs use their mighty pincers to battle.");
+
+const u8 gHeim_CrabPokedexText[] = _(
+	"A delicious, cute, and sweet crab found in "
+	"the deep ruins of Daemonheim.");
+
+const u8 gGiant_Crab_Moss_FormPokedexText[] = _(
+	"These crabs are mostly herded by Mogres; "
+	"ogres living underwater. Their meat is a "
+	"delicacy.");
+
+const u8 gGiant_Crab_RumPumped_FormPokedexText[] = _(
+	"A crab pumped full of rum under the orders "
+	"of Rabbid Jack. They are served as a "
+	"delicacy in Menaphos.");
+
+const u8 gWebSnipperPokedexText[] = _(
+	"When adventurers Marmaros and Thok "
+	"explored Daemonheim, these crabs would "
+	"snip their fishing nets.");
+
+const u8 gBlue_CrabPokedexText[] = _(
+	"Easily recognized by their blue shell, "
+	"these crabs linger in the deep caverns of "
+	"Daemonheim.");
+
+const u8 gGiant_Crab_Dark_FormPokedexText[] = _(
+	"Crabs that are so elusive and rare that "
+	"even expert fishermen have trouble fishing "
+	"them. Or live long enough to return to the "
+	"bank with them.");
+
+const u8 gKnife_CrabPokedexText[] = _(
+	"By giving a crab a knife, it is said their "
+	"attack power triples. They are a threat to "
+	"behold as they dance.");
+
+const u8 gCrablet_Tier0_FormPokedexText[] = _(
+	"A small crab more known for what they "
+	"carry on their back. Which can vary in a "
+	"lot of ways.");
+
+const u8 gLobster_Golden_FormPokedexText[] = _(
+	"A lobster so rare they are mostly found in "
+	"player-owned homes. They are easily "
+	"recognized by their blue shell.");
+
+const u8 gLobster_Heim_FormPokedexText[] = _(
+	"Found near the shores of Daemonheim, these "
+	"lobsters are quite big, but otherwise "
+	"harmless to all.");
+
+const u8 gLobster_Obsidian_FormPokedexText[] = _(
+	"A rare and elusive lobster. Fabled as an "
+	"unbelievably rare creature, people are "
+	"willing to pay 100k for one. Limited time "
+	"offer.");
+
+const u8 gEel_Mottled_FormPokedexText[] = _(
+	"Known for their mottled texture, these "
+	"eels tends to be fished with the aid of "
+	"falconry.");
+
+const u8 gEel_Short_Finned_FormPokedexText[] = _(
+	"Everything but appetizing, these eels are "
+	"known for their many short fins.");
+
+const u8 gEel_Salve_FormPokedexText[] = _(
+	"For unknown reasons these eels seem to "
+	"have some lesser holy qualities to them.");
+
+const u8 gEel_Dusk_FormPokedexText[] = _(
+	"Eels that enjoy lurking in the darkest of "
+	"waters as to not be caught. When caught, "
+	"they are anything but pretty.");
+
+const u8 gCave_MorayPokedexText[] = _(
+	"The biggest of all water-dwelling monsters "
+	"of Daemonheim. The Cave Moray is a meal in "
+	"itself for adventurers.");
+
+const u8 gVile_FishPokedexText[] = _(
+	"A fish so vile, no one would ever attempt "
+	"to eat one. Except maybe Thok.");
+
+const u8 gLobster_Giant_FormPokedexText[] = _(
+	"These highly aggressive lobsters are only "
+	"found in Witchaven.");
+
+const u8 gBear_Grizzly_FormPokedexText[] = _(
+	"A bear, larger and stronger than a black "
+	"bear. They spend most of their time in "
+	"solitude.");
+
+const u8 gBear_Angry_FormPokedexText[] = _(
+	"Anger does not even begin to explain what "
+	"this bear is capable of. A pure "
+	"representation of Tolna's anger.");
+
+const u8 gCallistoPokedexText[] = _(
+	"It can charge thundering blows that might "
+	"stun anyone nearby. So it is best to avoid "
+	"it.");
+
+const u8 gBear_Reanimated_FormPokedexText[] = _(
+	"A bear reanimated through the power of the "
+	"death altar. Killing them helps train "
+	"prayer.");
+
+const u8 gBear_Crystal_FormPokedexText[] = _(
+	"An uncorrupted bear from the gauntlet. "
+	"Shining in pure crystalline light.");
+
+const u8 gBear_Corrupted_FormPokedexText[] = _(
+	"A corrupted bear from the gauntlet. Its "
+	"once crystalline body has become dirty "
+	"with corruption.");
+
+const u8 gPolar_Bear_Nanuq_FormPokedexText[] = _(
+	"When danger approaches the kingdom of "
+	"Misthalin, Nanuq will stand vigilant near "
+	"a kiln to warn them.");
+
+const u8 gPolar_Bear_PBJ_Agent_FormPokedexText[] = _(
+	"Highly trained in the art of disguises, "
+	"these agents are the vanguard against the "
+	"K.G.P.");
+
+const u8 gScorpion_Pit_FormPokedexText[] = _(
+	"Scorpions, often nesting in pits, looking "
+	"for scorpionite to eat.");
+
+const u8 gScorpion_King_FormPokedexText[] = _(
+	"Fighting its way to the top, it has become "
+	"the apex of all scorpions in its group.");
+
+const u8 gDreadnipPokedexText[] = _(
+	"Small and fierce, they will run at any "
+	"enemy they see trying to eat them");
+
+const u8 gScorpion_Khazard_FormPokedexText[] = _(
+	"Generald Khazard's pet. It has been "
+	"trained to fight his prisoners.");
+
+const u8 gScorpion_Crystal_FormPokedexText[] = _(
+	"Uncorrupted, these scorpions find their "
+	"homes in the gauntlet.");
+
+const u8 gScorpion_Corrupt_Crystal_FormPokedexText[] = _(
+	"A corrupted crystalline scorpion, now no "
+	"longer holding a light within it.");
+
+const u8 gScorpion_Grave_FormPokedexText[] = _(
+	"This scorpion got its name for killing a "
+	"grave digger who dug near a scorpion pit.");
+
+const u8 gScorpiaPokedexText[] = _(
+	"A vicious and cruel beast ready to kill "
+	"and eat anything willingly entering its "
+	"domain.");
+
+const u8 gScorpion_Corrupt_FormPokedexText[] = _(
+	"Scorpion corrupted by the devourer, "
+	"granting it power at the loss of its will.");
+
+const u8 gScorpion_Poison_FormPokedexText[] = _(
+	"The poison they produce is strong enough "
+	"to kill a kharidian sheikah.");
+
+const u8 gScorpion_Reanimated_FormPokedexText[] = _(
+	"Unwillingly sent back to the mortal realm, "
+	"this reanimated being just exists.");
+
+const u8 gScorpion_Spirit_FormPokedexText[] = _(
+	"In the spirit realm they are known as "
+	"vicious fighters preying on other spirit "
+	"inhabitants.");
+
+const u8 gUnicorn_Black_FormPokedexText[] = _(
+	"A unicorn corrupted by the dark will of "
+	"man. It laughs at adventurers misfortunes.");
+
+const u8 gUnicorn_Angry_FormPokedexText[] = _(
+	"In Tolna's rift, these unicorns are the "
+	"incarnation of anger, stabbing anything "
+	"they see.");
+
+const u8 gUnicorn_Reanimated_FormPokedexText[] = _(
+	"Losing its holy and serene aura, these "
+	"unicorns exist for no reason but to die "
+	"again.");
+
+const u8 gStarlightPokedexText[] = _(
+	"The bodyguard of Commander Zilyana. Often "
+	"annoyed, her employer is nicknamed "
+	"'Saradomin'.");
+
+const u8 gThingumwutPokedexText[] = _(
+	"They are said to be beings of immense "
+	"power by the authority on the subject, "
+	"Traiborn.");
+
+const u8 gExperiment_3_FormPokedexText[] = _(
+	"Made by Dr. Fenkenstrain, these "
+	"experiments are either sheep in wolf "
+	"clothing, or the opposite.");
+
+const u8 gCabbagePokedexText[] = _(
+	"They pray each morning to their god\n"
+	"Brassica Prime, the strongest of all gods.");
+
+const u8 gRock_Crab_Ammonite_FormPokedexText[] = _(
+	"They carry fossils on their back, unaware "
+	"of their history.");
+
+const u8 gRock_Crab_Giant_Sand_FormPokedexText[] = _(
+	"In the warm desert its not uncommon to "
+	"accidentally step on one.");
+
+const u8 gRock_Crab_Giant_Swamp_FormPokedexText[] = _(
+	"As swamps get less and less stumps, these "
+	"crabs are slowly going extinct.");
+
+const u8 gMonkey_Harmless_FormPokedexText[] = _(
+	"The mohawk is uncoloured as opposed to its "
+	"Karamjan cousin, making them more boring.");
+
+const u8 gMonkey_Ghost_FormPokedexText[] = _(
+	"They are the souls of monkeys who died in "
+	"the process of making a colony.");
+
+const u8 gGorilla_Ayuni_FormPokedexText[] = _(
+	"The Devourer stripped Apmeken of her "
+	"sight, creating Ayuni");
+
+const u8 gGorilla_Leeuni_FormPokedexText[] = _(
+	"Apmekens lips and voice given shape in a "
+	"cruel avatar. Causing havock in the "
+	"Desert.");
+
+const u8 gGorilla_Eruni_FormPokedexText[] = _(
+	"Without her ears, Apmeken could no longer "
+	"hear the pleas of her followers.");
+
+const u8 gMonkey_Karamja_Baby_FormPokedexText[] = _(
+	"A small monkey often brought as pets by "
+	"passing adventurers.");
+
+const u8 gMonkey_Kajarma_Adult_FormPokedexText[] = _(
+	"As they grow older, most of these monkeys "
+	"are left in Player owned menageries to be "
+	"forgotten.");
+
+const u8 gBirds_Nest_God_FormPokedexText[] = _(
+	"The next holds a egg which will one day "
+	"hatch into a bird.");
+
+const u8 gReaverPokedexText[] = _(
+	"A faction of Virii pledged to defend and "
+	"fight for Nex, champion of Zaros.");
+
+const u8 gSea_Turtle_Treasure_FormPokedexText[] = _(
+	"Carrying a great fortune on its back, "
+	"fishermen perceives it as a sign of luck.");
+
+const u8 gHerbertPokedexText[] = _(
+	"A small and plantlike being often confused "
+	"by a toad by passing adventurers.");
+
+const u8 gCrab_RumPumped_FormPokedexText[] = _(
+	"This small crab has been pumped with "
+	"alcohol since its birth. ");
+
+const u8 gCrab_Dark_FormPokedexText[] = _(
+	"A small adolscent crab posessing dark "
+	"power it will never unleash.");
+
+const u8 gCrab_Grey_FormPokedexText[] = _(
+	"While initially gray or blue coloured, "
+	"they turn red when they get boiled alive.");
+
+const u8 gGiant_Crab_Grey_FormPokedexText[] = _(
+	"They fight with their pinchers for rights "
+	"to mate, but most end up eaten by sharks.");
+
+const u8 gSarachnisPokedexText[] = _(
+	"A spider known to be the leader of temple "
+	"spiders. Looming from above to hunt its "
+	"prey.");
+
+const u8 gVenenatisPokedexText[] = _(
+	"It finds its nest in the wilderness where "
+	"it awaits for unwitting prey to ambush.");
+
+const u8 gJal_XilPokedexText[] = _(
+	"Researchers conclude that it is distantly "
+	"related to the Tok-Xil.");
+
+const u8 gAbyssal_Leech_FormPokedexText[] = _(
+	"They make their home in the abyss where "
+	"they attack anything they can see.");
+
+const u8 gAbyssal_Walker_FormPokedexText[] = _(
+	"Their name as walkers come from how their "
+	"best trait is they have legs.");
+
+const u8 gPlant_Strange_FormPokedexText[] = _(
+	"A plant that can grow anywhere. But if the "
+	"fruit isnt picked it will attack.");
+
+const u8 gPlant_Stranger_FormPokedexText[] = _(
+	"A summoning familiar known to be even "
+	"stranger than the strange plant.");
+
+const u8 gSnow_ImpPokedexText[] = _(
+	"They help out Santa Claus in his workshop "
+	"with a smile on their face.");
+
+const u8 gDemon_Lesser_Tongue_FormPokedexText[] = _(
+	"Their tongue is a source of pride since "
+	"they have smaller horns than other demons.");
+
+const u8 gDemon_Greater_Black_FormPokedexText[] = _(
+	"Known for their strong black colour these "
+	"demons are cruel and strong.");
+
+const u8 gDemon_Ice_FormPokedexText[] = _(
+	"They can only live where its cold, and has "
+	"since only been found in Ghorrock.");
+
+const u8 gDemon_Jungle_FormPokedexText[] = _(
+	"A poisoneous demon once summoned by gnomes "
+	"to ambush a adventurer.");
+
+const u8 gDemon_Ripper_FormPokedexText[] = _(
+	"They posess humans warping their "
+	"appearence to slaughter everyone nearby.");
+
+const u8 gDelrithPokedexText[] = _(
+	"A demon once sealed by the ancestor of "
+	"todays Sir Prysin.");
+
+const u8 gImpling_Baby_FormPokedexText[] = _(
+	"A baby impling known for stealing anything "
+	"it can carry.");
+
+const u8 gImpling_Magpie_FormPokedexText[] = _(
+	"If they see anythign shiny they will rush "
+	"for it to pick it up.");
+
+const u8 gImpling_Dragon_FormPokedexText[] = _(
+	"They have a strange fascination with "
+	"anything related to dragons in name and "
+	"appearence.");
+
+const u8 gImpling_Kingly_FormPokedexText[] = _(
+	"A impling with a kingly appearence, but "
+	"not much kingly manners or charisma.");
+
+const u8 gImpling_Lucky_FormPokedexText[] = _(
+	"These implings are known for being so "
+	"lucky they are rarely caught.");
+
+const u8 gShaikahPokedexText[] = _(
+	"Feared as the scourge of Karamja. This "
+	"beast is hard to fell.");
+
+const u8 gGrowlerPokedexText[] = _(
+	"The bodyguard of Commander Zylliana and "
+	"the vanguard of the Saradomin army.");
+
+const u8 gDemon_Tormented_FormPokedexText[] = _(
+	"Their flesh burns as theyre fused with the "
+	"draconic metal around them. ");
+
+const u8 gDeathwingPokedexText[] = _(
+	"A rare bat only found in the deep caves of "
+	"the Kharasi jungles.");
+
+const u8 gPingPokedexText[] = _(
+	"A musician fighting against the K.G.P from "
+	"the inside.");
+
+const u8 gPongPokedexText[] = _(
+	"Rebellious in spirit its song invokes glee "
+	"and glamour in penguins.");
+
+const u8 gPenguin_McGraw_FormPokedexText[] = _(
+	"A penguin wearing a hat to distinguish "
+	"itself from other penguins similar to it.");
+
+const u8 gPenguin_Spy_FormPokedexText[] = _(
+	"The vanguard of the K.G.P who investigate "
+	"everything related to humans and their "
+	"world.");
+
+const u8 gPenguin_Agent_FormPokedexText[] = _(
+	"A agent from the K.G.P fighting endlessly "
+	"to take over the world.");
+
+const u8 gPenguin_Disguise_Cactus_FormPokedexText[] = _(
+	"Disguising themselves as cactus these "
+	"spies roam the desert.");
+
+const u8 gPenguin_Disguise_Rock_FormPokedexText[] = _(
+	"Next to a pet rock its hard to tell which "
+	"one might pick up a stick.");
+
+const u8 gPenguin_Disguise_Bush_FormPokedexText[] = _(
+	"In forests they stand perfectly still to "
+	"not be spotted by anyone or anything.");
+
+const u8 gPenguin_Disguise_Box_FormPokedexText[] = _(
+	"Hiding in boxes allows them to check urban "
+	"areas for intelligence.");
+
+const u8 gRaven_Spooky_FormPokedexText[] = _(
+	"It flies in the night while calling for "
+	"its ghostly friends. Not many show up.");
+
+const u8 gRaven_Crystal_FormPokedexText[] = _(
+	"Said to be the harbringer of the end, "
+	"their allegience is to Seren.");
+
+const u8 gCrowPokedexText[] = _(
+	"A flock of crows often lurks around cities "
+	"looking for food.");
+
+const u8 gMonkfish_Fresh_FormPokedexText[] = _(
+	"Not to be confused with regular monkfish "
+	"that can actually be cooked and eaten.");
+
+const u8 gRam_Fluffy_FormPokedexText[] = _(
+	"Its horns signals its ready to fight other "
+	"males for dominance.");
+
+const u8 gPigzillaPokedexText[] = _(
+	"The apex of all pigs. Its said no big has "
+	"ever grown bigger than the pigzilla.");
+

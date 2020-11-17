@@ -83,64 +83,64 @@
             "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 1,
-                "max_level": 1,
-                "species": "SPECIES_IBIS"
+                "min_level": 100,
+                "max_level": 100,
+                "species": "SPECIES_ABYSSALING"
               },
               {
-                "min_level": 2,
-                "max_level": 2,
-                "species": "SPECIES_PURE"
-              },
-              {
-                "min_level": 3,
-                "max_level": 3,
-                "species": "SPECIES_CABBAGE"
-              },
-              {
-                "min_level": 4,
-                "max_level": 4,
-                "species": "SPECIES_CABBAGE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PURE"
-              },
-              {
-                "min_level": 6,
-                "max_level": 6,
-                "species": "SPECIES_PURE"
-              },
-              {
-                "min_level": 7,
-                "max_level": 7,
-                "species": "SPECIES_PURE"
-              },
-              {
-                "min_level": 8,
-                "max_level": 8,
-                "species": "SPECIES_IBIS"
-              },
-              {
-                "min_level": 9,
-                "max_level": 9,
-                "species": "SPECIES_RUNE"
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_ALBATROSS"
               },
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_RUNE"
+                "species": "SPECIES_ALBINO_RAT"
+              },
+              {
+                "min_level": 4,
+                "max_level": 4,
+                "species": "SPECIES_ALBINO_BAT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ANGLERFISH"
+              },
+              {
+                "min_level": 6,
+                "max_level": 6,
+                "species": "SPECIES_ANGRY_RAT"
+              },
+              {
+                "min_level": 7,
+                "max_level": 7,
+                "species": "SPECIES_ANICHAIR"
+              },
+              {
+                "min_level": 8,
+                "max_level": 8,
+                "species": "SPECIES_ANIMOUR"
+              },
+              {
+                "min_level": 9,
+                "max_level": 9,
+                "species": "SPECIES_ABYSSAL_WALKER_FORM"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_ABBYSPECTR"
               },
               {
                 "min_level": 11,
                 "max_level": 11,
-                "species": "SPECIES_CABBAGE"
+                "species": "SPECIES_ABBYSPECTR"
               },
               {
                 "min_level": 12,
                 "max_level": 12,
-                "species": "SPECIES_RUNE"
+                "species": "SPECIES_ABBYSPECTR"
               }
             ]
           }

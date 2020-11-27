@@ -4765,7 +4765,7 @@
       "id": "LAYOUT_LUMBRIDGE_CASTLE_1",
       "name": "Lumbridge_Castle_1_Layout",
       "width": 46,
-      "height": 36,
+      "height": 40,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Lumbridge",
       "border_filepath": "data/layouts/Lumbridge_Castle_1/border.bin",

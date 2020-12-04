@@ -632,7 +632,9 @@
     "Lumbridge",
     "Draynor",
     "Port_Sarim",
-    "Rimmington"
+    "Rimmington",
+    "Varrock",
+    "VarrockNorth"
   ],
   "gMapGroup35": [
     "Route1",
@@ -652,7 +654,12 @@
     "Route14",
     "Route15",
     "Route16",
-    "Route17"
+    "Route17",
+    "Route18",
+    "Route19",
+    "Route20",
+    "Route21",
+    "Route22"
   ],
   "gMapGroup36": [
     "Lumbridge_Swamp",

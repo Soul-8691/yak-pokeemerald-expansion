@@ -931,3 +931,14 @@ gTileset_Falador::
 	.4byte gMetatiles_Falador
 	.4byte gMetatileAttributes_Falador
 	.4byte NULL
+
+	.align 2
+gTileset_Varrock::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Varrock
+	.4byte gTilesetPalettes_Varrock
+	.4byte gMetatiles_Varrock
+	.4byte gMetatileAttributes_Varrock
+	.4byte NULL

@@ -624,3 +624,10 @@ gMetatiles_Falador::
 	.align 1
 gMetatileAttributes_Falador::
 	.incbin "data/tilesets/secondary/falador/metatile_attributes.bin"
+	.align 1
+gMetatiles_Varrock::
+	.incbin "data/tilesets/secondary/varrock/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Varrock::
+	.incbin "data/tilesets/secondary/varrock/metatile_attributes.bin"

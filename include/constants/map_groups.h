@@ -1,6 +1,10 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
+//
+// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
+//
+
 // Map Group 0
 #define MAP_PETALBURG_CITY      (0 | (0 << 8))
 #define MAP_SLATEPORT_CITY      (1 | (0 << 8))
@@ -588,10 +592,12 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // Map Group 34
-#define MAP_LUMBRIDGE  (0 | (34 << 8))
-#define MAP_DRAYNOR    (1 | (34 << 8))
-#define MAP_PORT_SARIM (2 | (34 << 8))
-#define MAP_RIMMINGTON (3 | (34 << 8))
+#define MAP_LUMBRIDGE     (0 | (34 << 8))
+#define MAP_DRAYNOR       (1 | (34 << 8))
+#define MAP_PORT_SARIM    (2 | (34 << 8))
+#define MAP_RIMMINGTON    (3 | (34 << 8))
+#define MAP_VARROCK       (4 | (34 << 8))
+#define MAP_VARROCK_NORTH (5 | (34 << 8))
 
 // Map Group 35
 #define MAP_ROUTE1  (0 | (35 << 8))
@@ -612,6 +618,11 @@
 #define MAP_ROUTE15 (15 | (35 << 8))
 #define MAP_ROUTE16 (16 | (35 << 8))
 #define MAP_ROUTE17 (17 | (35 << 8))
+#define MAP_ROUTE18 (18 | (35 << 8))
+#define MAP_ROUTE19 (19 | (35 << 8))
+#define MAP_ROUTE20 (20 | (35 << 8))
+#define MAP_ROUTE21 (21 | (35 << 8))
+#define MAP_ROUTE22 (22 | (35 << 8))
 
 // Map Group 36
 #define MAP_LUMBRIDGE_SWAMP (0 | (36 << 8))

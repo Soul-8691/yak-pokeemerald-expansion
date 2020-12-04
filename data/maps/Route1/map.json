@@ -35,13 +35,18 @@
     },
     {
       "direction": "right",
-      "offset": -27,
+      "offset": -32,
       "map": "MAP_ROUTE14"
     },
     {
       "direction": "down",
       "offset": 38,
       "map": "MAP_LUMBRIDGE"
+    },
+    {
+      "direction": "up",
+      "offset": 48,
+      "map": "MAP_ROUTE22"
     }
   ],
   "object_events": [

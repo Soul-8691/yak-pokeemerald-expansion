@@ -19,14 +19,14 @@
       "map": "MAP_ROUTE13"
     },
     {
-      "direction": "left",
-      "offset": 18,
-      "map": "MAP_ROUTE13"
-    },
-    {
       "direction": "up",
       "offset": 0,
       "map": "MAP_ROUTE16"
+    },
+    {
+      "direction": "left",
+      "offset": -32,
+      "map": "MAP_VARROCK"
     }
   ],
   "object_events": [

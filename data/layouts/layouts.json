@@ -4827,7 +4827,7 @@
       "width": 46,
       "height": 34,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Varrock",
+      "secondary_tileset": "gTileset_Lumbridge",
       "border_filepath": "data/layouts/Route13/border.bin",
       "blockdata_filepath": "data/layouts/Route13/map.bin"
     },
@@ -4837,7 +4837,7 @@
       "width": 20,
       "height": 66,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Varrock",
+      "secondary_tileset": "gTileset_Lumbridge",
       "border_filepath": "data/layouts/Route14/border.bin",
       "blockdata_filepath": "data/layouts/Route14/map.bin"
     },
@@ -4847,7 +4847,7 @@
       "width": 36,
       "height": 52,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Varrock",
+      "secondary_tileset": "gTileset_Lumbridge",
       "border_filepath": "data/layouts/Route15/border.bin",
       "blockdata_filepath": "data/layouts/Route15/map.bin"
     },
@@ -4917,7 +4917,7 @@
       "width": 26,
       "height": 64,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Draynor",
       "border_filepath": "data/layouts/Route20/border.bin",
       "blockdata_filepath": "data/layouts/Route20/map.bin"
     },
@@ -4937,7 +4937,7 @@
       "width": 32,
       "height": 32,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Lumbridge",
       "border_filepath": "data/layouts/Route22/border.bin",
       "blockdata_filepath": "data/layouts/Route22/map.bin"
     }

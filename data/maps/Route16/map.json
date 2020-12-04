@@ -1,9 +1,9 @@
 {
-  "id": "MAP_ROUTE15",
-  "name": "Route15",
-  "layout": "LAYOUT_ROUTE15",
+  "id": "MAP_ROUTE16",
+  "name": "Route16",
+  "layout": "LAYOUT_ROUTE16",
   "music": "MUS_ABANDONED_SHIP",
-  "region_map_section": "MAPSEC_ROUTE_15",
+  "region_map_section": "MAPSEC_ROUTE_16",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",
@@ -14,19 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
-      "offset": 18,
-      "map": "MAP_ROUTE13"
-    },
-    {
-      "direction": "left",
-      "offset": 18,
-      "map": "MAP_ROUTE13"
-    },
-    {
-      "direction": "up",
+      "direction": "down",
       "offset": 0,
-      "map": "MAP_ROUTE16"
+      "map": "MAP_ROUTE15"
     }
   ],
   "object_events": [

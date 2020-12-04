@@ -610,6 +610,8 @@
 #define MAP_ROUTE13 (13 | (35 << 8))
 #define MAP_ROUTE14 (14 | (35 << 8))
 #define MAP_ROUTE15 (15 | (35 << 8))
+#define MAP_ROUTE16 (16 | (35 << 8))
+#define MAP_ROUTE17 (17 | (35 << 8))
 
 // Map Group 36
 #define MAP_LUMBRIDGE_SWAMP (0 | (36 << 8))

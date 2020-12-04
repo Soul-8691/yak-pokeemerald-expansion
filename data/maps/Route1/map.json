@@ -32,6 +32,16 @@
       "direction": "up",
       "offset": -16,
       "map": "MAP_DRAYNOR_MANOR"
+    },
+    {
+      "direction": "right",
+      "offset": -27,
+      "map": "MAP_ROUTE14"
+    },
+    {
+      "direction": "down",
+      "offset": 38,
+      "map": "MAP_LUMBRIDGE"
     }
   ],
   "object_events": [

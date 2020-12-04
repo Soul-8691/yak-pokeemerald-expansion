@@ -4834,7 +4834,7 @@
     {
       "id": "LAYOUT_ROUTE14",
       "name": "Route14_Layout",
-      "width": 17,
+      "width": 20,
       "height": 61,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Lumbridge",

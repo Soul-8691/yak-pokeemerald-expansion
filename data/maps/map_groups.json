@@ -634,7 +634,11 @@
     "Port_Sarim",
     "Rimmington",
     "Varrock",
-    "VarrockNorth"
+    "VarrockNorth",
+    "BarbarianVillage",
+    "GoblinVillage",
+    "DwarvenMines",
+    "Edgeville"
   ],
   "gMapGroup35": [
     "Route1",
@@ -659,7 +663,12 @@
     "Route19",
     "Route20",
     "Route21",
-    "Route22"
+    "Route22",
+    "Route23",
+    "Route24",
+    "Route25",
+    "Route26",
+    "Route27"
   ],
   "gMapGroup36": [
     "Lumbridge_Swamp",

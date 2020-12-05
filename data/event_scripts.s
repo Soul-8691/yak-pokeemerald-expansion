@@ -1166,3 +1166,21 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Route21/scripts.inc"
 
 	.include "data/maps/Route22/scripts.inc"
+
+	.include "data/maps/BarbarianVillage/scripts.inc"
+
+	.include "data/maps/Route23/scripts.inc"
+
+	.include "data/maps/Route24/scripts.inc"
+
+	.include "data/maps/GoblinVillage/scripts.inc"
+
+	.include "data/maps/Route25/scripts.inc"
+
+	.include "data/maps/DwarvenMines/scripts.inc"
+
+	.include "data/maps/Route26/scripts.inc"
+
+	.include "data/maps/Route27/scripts.inc"
+
+	.include "data/maps/Edgeville/scripts.inc"

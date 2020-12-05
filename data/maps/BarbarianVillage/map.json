@@ -1,12 +1,12 @@
 {
-  "id": "MAP_ROUTE20",
-  "name": "Route20",
-  "layout": "LAYOUT_ROUTE20",
+  "id": "MAP_BARBARIAN_VILLAGE",
+  "name": "BarbarianVillage",
+  "layout": "LAYOUT_BARBARIAN_VILLAGE",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_ROUTE",
+  "map_type": "MAP_TYPE_TOWN",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -16,36 +16,21 @@
     {
       "direction": "right",
       "offset": 0,
-      "map": "MAP_ROUTE19"
-    },
-    {
-      "direction": "right",
-      "offset": 18,
-      "map": "MAP_ROUTE18"
-    },
-    {
-      "direction": "down",
-      "offset": 0,
-      "map": "MAP_MILL_LANE_MILL"
+      "map": "MAP_ROUTE20"
     },
     {
       "direction": "left",
-      "offset": 54,
-      "map": "MAP_DRAYNOR_MANOR"
-    },
-    {
-      "direction": "right",
-      "offset": 46,
-      "map": "MAP_ROUTE21"
+      "offset": 16,
+      "map": "MAP_ROUTE23"
     },
     {
       "direction": "left",
-      "offset": 0,
-      "map": "MAP_BARBARIAN_VILLAGE"
+      "offset": -6,
+      "map": "MAP_ROUTE25"
     },
     {
       "direction": "up",
-      "offset": -16,
+      "offset": 12,
       "map": "MAP_EDGEVILLE"
     }
   ],

@@ -4940,6 +4940,96 @@
       "secondary_tileset": "gTileset_Varrock",
       "border_filepath": "data/layouts/Route22/border.bin",
       "blockdata_filepath": "data/layouts/Route22/map.bin"
+    },
+    {
+      "id": "LAYOUT_BARBARIAN_VILLAGE",
+      "name": "BarbarianVillage_Layout",
+      "width": 28,
+      "height": 42,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/BarbarianVillage/border.bin",
+      "blockdata_filepath": "data/layouts/BarbarianVillage/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE23",
+      "name": "Route23_Layout",
+      "width": 52,
+      "height": 26,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route23/border.bin",
+      "blockdata_filepath": "data/layouts/Route23/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE24",
+      "name": "Route24_Layout",
+      "width": 44,
+      "height": 56,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/Route24/border.bin",
+      "blockdata_filepath": "data/layouts/Route24/map.bin"
+    },
+    {
+      "id": "LAYOUT_GOBLIN_VILLAGE",
+      "name": "GoblinVillage_Layout",
+      "width": 44,
+      "height": 38,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/GoblinVillage/border.bin",
+      "blockdata_filepath": "data/layouts/GoblinVillage/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE25",
+      "name": "Route25_Layout",
+      "width": 26,
+      "height": 22,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route25/border.bin",
+      "blockdata_filepath": "data/layouts/Route25/map.bin"
+    },
+    {
+      "id": "LAYOUT_DWARVEN_MINES",
+      "name": "DwarvenMines_Layout",
+      "width": 26,
+      "height": 22,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/DwarvenMines/border.bin",
+      "blockdata_filepath": "data/layouts/DwarvenMines/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE26",
+      "name": "Route26_Layout",
+      "width": 26,
+      "height": 38,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route26/border.bin",
+      "blockdata_filepath": "data/layouts/Route26/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE27",
+      "name": "Route27_Layout",
+      "width": 38,
+      "height": 38,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Varrock",
+      "border_filepath": "data/layouts/Route27/border.bin",
+      "blockdata_filepath": "data/layouts/Route27/map.bin"
+    },
+    {
+      "id": "LAYOUT_EDGEVILLE",
+      "name": "Edgeville_Layout",
+      "width": 44,
+      "height": 44,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Varrock",
+      "border_filepath": "data/layouts/Edgeville/border.bin",
+      "blockdata_filepath": "data/layouts/Edgeville/map.bin"
     }
   ]
 }

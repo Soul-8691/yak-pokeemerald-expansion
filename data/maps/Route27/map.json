@@ -1,7 +1,7 @@
 {
-  "id": "MAP_ROUTE20",
-  "name": "Route20",
-  "layout": "LAYOUT_ROUTE20",
+  "id": "MAP_ROUTE27",
+  "name": "Route27",
+  "layout": "LAYOUT_ROUTE27",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
@@ -14,38 +14,23 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "direction": "down",
       "offset": 0,
-      "map": "MAP_ROUTE19"
+      "map": "MAP_ROUTE25"
     },
     {
-      "direction": "right",
-      "offset": 18,
-      "map": "MAP_ROUTE18"
+      "direction": "left",
+      "offset": 0,
+      "map": "MAP_ROUTE26"
     },
     {
       "direction": "down",
-      "offset": 0,
-      "map": "MAP_MILL_LANE_MILL"
-    },
-    {
-      "direction": "left",
-      "offset": 54,
-      "map": "MAP_DRAYNOR_MANOR"
+      "offset": -26,
+      "map": "MAP_DWARVEN_MINES"
     },
     {
       "direction": "right",
-      "offset": 46,
-      "map": "MAP_ROUTE21"
-    },
-    {
-      "direction": "left",
       "offset": 0,
-      "map": "MAP_BARBARIAN_VILLAGE"
-    },
-    {
-      "direction": "up",
-      "offset": -16,
       "map": "MAP_EDGEVILLE"
     }
   ],

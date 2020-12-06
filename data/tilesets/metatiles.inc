@@ -631,3 +631,10 @@ gMetatiles_Varrock::
 	.align 1
 gMetatileAttributes_Varrock::
 	.incbin "data/tilesets/secondary/varrock/metatile_attributes.bin"
+	.align 1
+gMetatiles_AlKharid::
+	.incbin "data/tilesets/secondary/alkharid/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_AlKharid::
+	.incbin "data/tilesets/secondary/alkharid/metatile_attributes.bin"

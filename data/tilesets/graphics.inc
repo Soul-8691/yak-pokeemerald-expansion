@@ -1930,3 +1930,23 @@ gTilesetPalettes_Varrock::
 	.align 2
 gTilesetTiles_Varrock::
 	.incbin "data/tilesets/secondary/varrock/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_AlKharid::
+	.incbin "data/tilesets/secondary/alkharid/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/alkharid/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/alkharid/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/alkharid/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/alkharid/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/alkharid/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/alkharid/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/alkharid/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/alkharid/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/alkharid/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/alkharid/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/alkharid/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/alkharid/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_AlKharid::
+	.incbin "data/tilesets/secondary/alkharid/tiles.4bpp.lz"

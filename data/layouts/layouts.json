@@ -5037,7 +5037,7 @@
       "width": 42,
       "height": 38,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_AlKharid",
       "border_filepath": "data/layouts/Route28/border.bin",
       "blockdata_filepath": "data/layouts/Route28/map.bin"
     },
@@ -5047,7 +5047,7 @@
       "width": 52,
       "height": 42,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_AlKharid",
       "border_filepath": "data/layouts/AlKharid/border.bin",
       "blockdata_filepath": "data/layouts/AlKharid/map.bin"
     },
@@ -5057,7 +5057,7 @@
       "width": 42,
       "height": 32,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_AlKharid",
       "border_filepath": "data/layouts/Route29/border.bin",
       "blockdata_filepath": "data/layouts/Route29/map.bin"
     }

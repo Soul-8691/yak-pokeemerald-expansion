@@ -942,3 +942,14 @@ gTileset_Varrock::
 	.4byte gMetatiles_Varrock
 	.4byte gMetatileAttributes_Varrock
 	.4byte NULL
+
+	.align 2
+gTileset_AlKharid::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_AlKharid
+	.4byte gTilesetPalettes_AlKharid
+	.4byte gMetatiles_AlKharid
+	.4byte gMetatileAttributes_AlKharid
+	.4byte NULL

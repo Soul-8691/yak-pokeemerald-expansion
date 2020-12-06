@@ -5030,6 +5030,36 @@
       "secondary_tileset": "gTileset_Varrock",
       "border_filepath": "data/layouts/Edgeville/border.bin",
       "blockdata_filepath": "data/layouts/Edgeville/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE28",
+      "name": "Route28_Layout",
+      "width": 42,
+      "height": 38,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route28/border.bin",
+      "blockdata_filepath": "data/layouts/Route28/map.bin"
+    },
+    {
+      "id": "LAYOUT_AL_KHARID",
+      "name": "AlKharid_Layout",
+      "width": 52,
+      "height": 42,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/AlKharid/border.bin",
+      "blockdata_filepath": "data/layouts/AlKharid/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE29",
+      "name": "Route29_Layout",
+      "width": 42,
+      "height": 32,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route29/border.bin",
+      "blockdata_filepath": "data/layouts/Route29/map.bin"
     }
   ]
 }

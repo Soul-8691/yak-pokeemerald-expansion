@@ -598,6 +598,7 @@
 #define MAP_GOBLIN_VILLAGE    (7 | (34 << 8))
 #define MAP_DWARVEN_MINES     (8 | (34 << 8))
 #define MAP_EDGEVILLE         (9 | (34 << 8))
+#define MAP_AL_KHARID         (10 | (34 << 8))
 
 // Map Group 35
 #define MAP_ROUTE1  (0 | (35 << 8))
@@ -628,6 +629,8 @@
 #define MAP_ROUTE25 (25 | (35 << 8))
 #define MAP_ROUTE26 (26 | (35 << 8))
 #define MAP_ROUTE27 (27 | (35 << 8))
+#define MAP_ROUTE28 (28 | (35 << 8))
+#define MAP_ROUTE29 (29 | (35 << 8))
 
 // Map Group 36
 #define MAP_LUMBRIDGE_SWAMP (0 | (36 << 8))

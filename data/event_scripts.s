@@ -1184,3 +1184,9 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Route27/scripts.inc"
 
 	.include "data/maps/Edgeville/scripts.inc"
+
+	.include "data/maps/Route28/scripts.inc"
+
+	.include "data/maps/AlKharid/scripts.inc"
+
+	.include "data/maps/Route29/scripts.inc"

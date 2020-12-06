@@ -1,7 +1,7 @@
 {
-  "id": "MAP_ROUTE19",
-  "name": "Route19",
-  "layout": "LAYOUT_ROUTE19",
+  "id": "MAP_ROUTE28",
+  "name": "Route28",
+  "layout": "LAYOUT_ROUTE28",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
-      "offset": 0,
-      "map": "MAP_ROUTE18"
+      "direction": "left",
+      "offset": -32,
+      "map": "MAP_ROUTE12"
     },
     {
-      "direction": "left",
-      "offset": 0,
-      "map": "MAP_ROUTE20"
+      "direction": "down",
+      "offset": -10,
+      "map": "MAP_AL_KHARID"
     },
     {
       "direction": "up",
-      "offset": -42,
-      "map": "MAP_EDGEVILLE"
+      "offset": 0,
+      "map": "MAP_ROUTE29"
     }
   ],
   "object_events": [

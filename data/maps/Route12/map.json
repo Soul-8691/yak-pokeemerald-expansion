@@ -27,6 +27,21 @@
       "direction": "left",
       "offset": -34,
       "map": "MAP_ROUTE14"
+    },
+    {
+      "direction": "right",
+      "offset": 32,
+      "map": "MAP_ROUTE28"
+    },
+    {
+      "direction": "down",
+      "offset": 30,
+      "map": "MAP_AL_KHARID"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_ROUTE29"
     }
   ],
   "object_events": [

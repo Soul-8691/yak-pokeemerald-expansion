@@ -639,7 +639,9 @@
     "GoblinVillage",
     "DwarvenMines",
     "Edgeville",
-    "AlKharid"
+    "AlKharid",
+    "MusaPoint",
+    "Taverley"
   ],
   "gMapGroup35": [
     "Route1",
@@ -671,12 +673,22 @@
     "Route26",
     "Route27",
     "Route28",
-    "Route29"
+    "Route29",
+    "Route30",
+    "Route31",
+    "Route32",
+    "Route33",
+    "Route34",
+    "Route35",
+    "Route36",
+    "Route37",
+    "Route38"
   ],
   "gMapGroup36": [
     "Lumbridge_Swamp",
     "Mill_Lane_Mill",
-    "Draynor_Manor"
+    "Draynor_Manor",
+    "MudskipperPoint"
   ],
   "gMapGroup37": [
     "Lumbridge_House_BobsAxes1",

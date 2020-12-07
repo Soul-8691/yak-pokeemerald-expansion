@@ -599,6 +599,8 @@
 #define MAP_DWARVEN_MINES     (8 | (34 << 8))
 #define MAP_EDGEVILLE         (9 | (34 << 8))
 #define MAP_AL_KHARID         (10 | (34 << 8))
+#define MAP_MUSA_POINT        (11 | (34 << 8))
+#define MAP_TAVERLEY          (12 | (34 << 8))
 
 // Map Group 35
 #define MAP_ROUTE1  (0 | (35 << 8))
@@ -631,11 +633,21 @@
 #define MAP_ROUTE27 (27 | (35 << 8))
 #define MAP_ROUTE28 (28 | (35 << 8))
 #define MAP_ROUTE29 (29 | (35 << 8))
+#define MAP_ROUTE30 (30 | (35 << 8))
+#define MAP_ROUTE31 (31 | (35 << 8))
+#define MAP_ROUTE32 (32 | (35 << 8))
+#define MAP_ROUTE33 (33 | (35 << 8))
+#define MAP_ROUTE34 (34 | (35 << 8))
+#define MAP_ROUTE35 (35 | (35 << 8))
+#define MAP_ROUTE36 (36 | (35 << 8))
+#define MAP_ROUTE37 (37 | (35 << 8))
+#define MAP_ROUTE38 (38 | (35 << 8))
 
 // Map Group 36
-#define MAP_LUMBRIDGE_SWAMP (0 | (36 << 8))
-#define MAP_MILL_LANE_MILL  (1 | (36 << 8))
-#define MAP_DRAYNOR_MANOR   (2 | (36 << 8))
+#define MAP_LUMBRIDGE_SWAMP  (0 | (36 << 8))
+#define MAP_MILL_LANE_MILL   (1 | (36 << 8))
+#define MAP_DRAYNOR_MANOR    (2 | (36 << 8))
+#define MAP_MUDSKIPPER_POINT (3 | (36 << 8))
 
 // Map Group 37
 #define MAP_LUMBRIDGE_HOUSE_BOBS_AXES1 (0 | (37 << 8))

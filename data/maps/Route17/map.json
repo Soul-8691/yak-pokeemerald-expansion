@@ -27,6 +27,11 @@
       "direction": "left",
       "offset": -16,
       "map": "MAP_VARROCK_NORTH"
+    },
+    {
+      "direction": "right",
+      "offset": -10,
+      "map": "MAP_ROUTE38"
     }
   ],
   "object_events": [

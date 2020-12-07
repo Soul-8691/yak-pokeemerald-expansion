@@ -1190,3 +1190,27 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/AlKharid/scripts.inc"
 
 	.include "data/maps/Route29/scripts.inc"
+
+	.include "data/maps/Route30/scripts.inc"
+
+	.include "data/maps/Route31/scripts.inc"
+
+	.include "data/maps/MudskipperPoint/scripts.inc"
+
+	.include "data/maps/Route32/scripts.inc"
+
+	.include "data/maps/MusaPoint/scripts.inc"
+
+	.include "data/maps/Route33/scripts.inc"
+
+	.include "data/maps/Route34/scripts.inc"
+
+	.include "data/maps/Route35/scripts.inc"
+
+	.include "data/maps/Route36/scripts.inc"
+
+	.include "data/maps/Taverley/scripts.inc"
+
+	.include "data/maps/Route37/scripts.inc"
+
+	.include "data/maps/Route38/scripts.inc"

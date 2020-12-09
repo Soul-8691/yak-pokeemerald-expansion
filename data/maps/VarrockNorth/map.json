@@ -44,6 +44,21 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 27,
+      "y": 21,
+      "elevation": 3,
+      "item": "ITEM_POUCH_NORMAL",
+      "flag": "FLAG_UNUSED_0x2A0"
+    },
+    {
+      "type": "hidden_item",
+      "x": 28,
+      "y": 21,
+      "elevation": 3,
+      "item": "ITEM_PULSE_CORE",
+      "flag": "FLAG_UNUSED_0x29F"
+    }
   ]
 }

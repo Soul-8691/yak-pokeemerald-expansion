@@ -638,3 +638,10 @@ gMetatiles_AlKharid::
 	.align 1
 gMetatileAttributes_AlKharid::
 	.incbin "data/tilesets/secondary/alkharid/metatile_attributes.bin"
+	.align 1
+gMetatiles_IndoorTowns1::
+	.incbin "data/tilesets/secondary/indoortowns1/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_IndoorTowns1::
+	.incbin "data/tilesets/secondary/indoortowns1/metatile_attributes.bin"

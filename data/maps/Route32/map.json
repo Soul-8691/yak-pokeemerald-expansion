@@ -32,6 +32,11 @@
       "direction": "right",
       "offset": 0,
       "map": "MAP_MUDSKIPPER_POINT"
+    },
+    {
+      "direction": "up",
+      "offset": 56,
+      "map": "MAP_ROUTE11"
     }
   ],
   "object_events": [

@@ -675,6 +675,7 @@
 
 // Map Group 39
 #define MAP_ROUTE1_HOUSE_FRED (0 | (39 << 8))
+#define MAP_ROUTE1_HOUSE_1    (1 | (39 << 8))
 
 #define MAP_GROUPS_COUNT 40
 

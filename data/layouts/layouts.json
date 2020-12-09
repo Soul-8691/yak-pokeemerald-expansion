@@ -5034,7 +5034,7 @@
     {
       "id": "LAYOUT_ROUTE28",
       "name": "Route28_Layout",
-      "width": 42,
+      "width": 46,
       "height": 38,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_AlKharid",
@@ -5054,7 +5054,7 @@
     {
       "id": "LAYOUT_ROUTE29",
       "name": "Route29_Layout",
-      "width": 42,
+      "width": 46,
       "height": 32,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_AlKharid",

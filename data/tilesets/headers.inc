@@ -931,3 +931,36 @@ gTileset_Falador::
 	.4byte gMetatiles_Falador
 	.4byte gMetatileAttributes_Falador
 	.4byte NULL
+
+	.align 2
+gTileset_Varrock::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Varrock
+	.4byte gTilesetPalettes_Varrock
+	.4byte gMetatiles_Varrock
+	.4byte gMetatileAttributes_Varrock
+	.4byte NULL
+
+	.align 2
+gTileset_AlKharid::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_AlKharid
+	.4byte gTilesetPalettes_AlKharid
+	.4byte gMetatiles_AlKharid
+	.4byte gMetatileAttributes_AlKharid
+	.4byte NULL
+
+	.align 2
+gTileset_IndoorTowns1::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_IndoorTowns1
+	.4byte gTilesetPalettes_IndoorTowns1
+	.4byte gMetatiles_IndoorTowns1
+	.4byte gMetatileAttributes_IndoorTowns1
+	.4byte NULL

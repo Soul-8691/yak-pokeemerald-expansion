@@ -624,3 +624,24 @@ gMetatiles_Falador::
 	.align 1
 gMetatileAttributes_Falador::
 	.incbin "data/tilesets/secondary/falador/metatile_attributes.bin"
+	.align 1
+gMetatiles_Varrock::
+	.incbin "data/tilesets/secondary/varrock/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Varrock::
+	.incbin "data/tilesets/secondary/varrock/metatile_attributes.bin"
+	.align 1
+gMetatiles_AlKharid::
+	.incbin "data/tilesets/secondary/alkharid/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_AlKharid::
+	.incbin "data/tilesets/secondary/alkharid/metatile_attributes.bin"
+	.align 1
+gMetatiles_IndoorTowns1::
+	.incbin "data/tilesets/secondary/indoortowns1/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_IndoorTowns1::
+	.incbin "data/tilesets/secondary/indoortowns1/metatile_attributes.bin"

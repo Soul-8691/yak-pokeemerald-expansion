@@ -20,8 +20,23 @@
     },
     {
       "direction": "down",
-      "offset": 2,
+      "offset": 0,
       "map": "MAP_ROUTE7"
+    },
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_ROUTE24"
+    },
+    {
+      "direction": "left",
+      "offset": 24,
+      "map": "MAP_ROUTE34"
+    },
+    {
+      "direction": "left",
+      "offset": -8,
+      "map": "MAP_ROUTE35"
     }
   ],
   "object_events": [

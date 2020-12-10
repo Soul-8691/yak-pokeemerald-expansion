@@ -20,13 +20,18 @@
     },
     {
       "direction": "down",
-      "offset": -44,
+      "offset": -42,
       "map": "MAP_ROUTE8"
     },
     {
       "direction": "up",
-      "offset": -2,
+      "offset": 0,
       "map": "MAP_FALADOR"
+    },
+    {
+      "direction": "left",
+      "offset": -20,
+      "map": "MAP_ROUTE34"
     }
   ],
   "object_events": [

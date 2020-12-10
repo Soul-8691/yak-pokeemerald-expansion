@@ -27,6 +27,16 @@
       "direction": "left",
       "offset": -24,
       "map": "MAP_RIMMINGTON"
+    },
+    {
+      "direction": "down",
+      "offset": 0,
+      "map": "MAP_MUDSKIPPER_POINT"
+    },
+    {
+      "direction": "down",
+      "offset": -56,
+      "map": "MAP_ROUTE32"
     }
   ],
   "object_events": [

@@ -632,7 +632,16 @@
     "Lumbridge",
     "Draynor",
     "Port_Sarim",
-    "Rimmington"
+    "Rimmington",
+    "Varrock",
+    "VarrockNorth",
+    "BarbarianVillage",
+    "GoblinVillage",
+    "DwarvenMines",
+    "Edgeville",
+    "AlKharid",
+    "MusaPoint",
+    "Taverley"
   ],
   "gMapGroup35": [
     "Route1",
@@ -646,12 +655,40 @@
     "Route9",
     "Route10",
     "Route11",
-    "Falador"
+    "Falador",
+    "Route12",
+    "Route13",
+    "Route14",
+    "Route15",
+    "Route16",
+    "Route17",
+    "Route18",
+    "Route19",
+    "Route20",
+    "Route21",
+    "Route22",
+    "Route23",
+    "Route24",
+    "Route25",
+    "Route26",
+    "Route27",
+    "Route28",
+    "Route29",
+    "Route30",
+    "Route31",
+    "Route32",
+    "Route33",
+    "Route34",
+    "Route35",
+    "Route36",
+    "Route37",
+    "Route38"
   ],
   "gMapGroup36": [
     "Lumbridge_Swamp",
     "Mill_Lane_Mill",
-    "Draynor_Manor"
+    "Draynor_Manor",
+    "MudskipperPoint"
   ],
   "gMapGroup37": [
     "Lumbridge_House_BobsAxes1",
@@ -678,6 +715,7 @@
     "Mill_Lane_Mill_3"
   ],
   "gMapGroup39": [
-    "Route1_House_Fred"
+    "Route1_House_Fred",
+    "Route1_House_1"
   ]
 }

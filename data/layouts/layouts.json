@@ -5107,7 +5107,7 @@
       "width": 46,
       "height": 50,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_AlKharid",
       "border_filepath": "data/layouts/MusaPoint/border.bin",
       "blockdata_filepath": "data/layouts/MusaPoint/map.bin"
     },

@@ -246,7 +246,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh = {0xFFFF, OB
 
 //POKESCAPE
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_trainers_0 = {0xFFFF, OBJ_EVENT_PAL_trainers_0, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, gObjectEventSpriteOamTables_16x32, gObjectEventImageAnimTable_Standard, gObjectEventPicTable_trainers_0, gDummySpriteAffineAnimTable};
-
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_trainers_2 = {0xFFFF, OBJ_EVENT_PAL_trainers_2, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, gObjectEventSpriteOamTables_16x32, gObjectEventImageAnimTable_Standard, gObjectEventPicTable_trainers_2, gDummySpriteAffineAnimTable};
 
 /*
 

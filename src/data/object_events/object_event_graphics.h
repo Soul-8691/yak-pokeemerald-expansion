@@ -364,6 +364,9 @@ const u16 gObjectEventPalette31[] = INCBIN_U16("graphics/object_events/palettes/
 const u32 gObjectEventPic_trainers_0[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/trainers_0.4bpp");
 const u16 gObjectEventPalette_trainers_0[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/trainers_0.gbapal");
 
+const u32 gObjectEventPic_trainers_2[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/trainers_2.4bpp");
+const u16 gObjectEventPalette_trainers_2[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/trainers_2.gbapal");
+
 
 
 

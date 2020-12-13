@@ -242,8 +242,9 @@
 #define OBJ_EVENT_GFX_HOOH                       238
 //POKESCAPE
 #define OBJ_EVENT_GFX_trainers_0                 239
+#define OBJ_EVENT_GFX_trainers_2                 240
 
-#define NUM_OBJ_EVENT_GFX                        240
+#define NUM_OBJ_EVENT_GFX                        241
 
 
 // These are dynamic object gfx ids.

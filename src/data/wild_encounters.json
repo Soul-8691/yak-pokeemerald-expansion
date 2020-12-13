@@ -85,62 +85,62 @@
               {
                 "min_level": 100,
                 "max_level": 100,
-                "species": "SPECIES_ABYSSALING"
+                "species": "SPECIES_HELWYR"
               },
               {
                 "min_level": 50,
                 "max_level": 50,
-                "species": "SPECIES_ALBATROSS"
+                "species": "SPECIES_WOLF_DIRE_FORM"
               },
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_ALBINO_RAT"
+                "species": "SPECIES_UNICORN_REANIMATED_FORM"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_ALBINO_BAT"
+                "species": "SPECIES_STARLIGHT"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ANGLERFISH"
+                "species": "SPECIES_SEAGULL_HATTENKRAPPER_FORM"
               },
               {
                 "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_ANGRY_RAT"
+                "species": "SPECIES_DEMON_TORMENTED_FORM"
               },
               {
                 "min_level": 7,
                 "max_level": 7,
-                "species": "SPECIES_ANICHAIR"
+                "species": "SPECIES_PING"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_ANIMOUR"
+                "species": "SPECIES_PONG"
               },
               {
                 "min_level": 9,
                 "max_level": 9,
-                "species": "SPECIES_ABYSSAL_WALKER_FORM"
+                "species": "SPECIES_BEAR_CORRUPTED_FORM"
               },
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_ABBYSPECTR"
+                "species": "SPECIES_POLAR_BEAR_ARCTIC_FORM"
               },
               {
                 "min_level": 11,
                 "max_level": 11,
-                "species": "SPECIES_ARMABIRD"
+                "species": "SPECIES_POLAR_BEAR_PBJ_AGENT_FORM"
               },
               {
                 "min_level": 12,
                 "max_level": 12,
-                "species": "SPECIES_ARMAFALCON"
+                "species": "SPECIES_PENGUIN"
               }
             ]
           }
@@ -363,62 +363,62 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_MINOTAUR_NORMAL_FORM"
+                "species": "SPECIES_BUNYIP"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_MONKEY_ZOMBIE_FORM"
+                "species": "SPECIES_CAVE_MORAY"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_OOMLIE"
+                "species": "SPECIES_CAT_SUNKEN_FORM"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_SEREPEA"
+                "species": "SPECIES_BAT_BOX_FORM"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_SKELETALOX_MALE_FORM"
+                "species": "SPECIES_BLUE_CRAB"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_SKELETALOX_FEMALE_FORM"
+                "species": "SPECIES_DEAD_TREE"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_UNGODGEON"
+                "species": "SPECIES_GIANT_CARP"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_WARPED_RAT"
+                "species": "SPECIES_FRUIT_BAT"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_YT_HURKOT"
+                "species": "SPECIES_PURE"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_YT_MEJKOT"
+                "species": "SPECIES_WHITEFISH"
               },
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_ZYGOMITE"
+                "species": "SPECIES_YAK_NORMAL_FORM"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_ZARAVEN"
+                "species": "SPECIES_WOBBEGONG"
               }
             ]
           },

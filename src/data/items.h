@@ -4884,4 +4884,41 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 0,
     },
+	
+	
+//POKESCAPE
+	// Pokescape Evolution items
+
+    [ITEM_AIR_RUNE] =
+    {
+        .name = _("AIR RUNE"),
+        .itemId = ITEM_AIR_RUNE,
+        .price = 2100,
+        .description = sAirRuneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 };

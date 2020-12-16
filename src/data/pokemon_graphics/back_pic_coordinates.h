@@ -3855,7 +3855,7 @@ const struct MonCoords gMonBackPicCoords[] =
 	[SPECIES_SPIDERLING] =
 	{
 		.size = 0x0,
-		.y_offset = 21,
+		.y_offset = 0,
 	},
 	[SPECIES_SPIDER_GIANT_FORM] =
 	{

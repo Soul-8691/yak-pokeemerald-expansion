@@ -2065,7 +2065,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_GUTHLING] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 13,
 	},
 	[SPECIES_GUTHBIRD] =
 	{
@@ -3575,7 +3575,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_ABYSSAL_LURKER_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 10,
 	},
 	[SPECIES_ABYSSAL_WALKER_FORM] =
 	{

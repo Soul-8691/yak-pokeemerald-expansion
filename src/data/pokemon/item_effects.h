@@ -401,6 +401,17 @@ const u8 gItemEffect_TamatoBerry[10] = {
     [9] = 2,
 };
 
+//POKESCAPE
+const u8 gItemEffect_AirRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+
+
+
+
+
+
 const u8 *const gItemEffectTable[] =
 {
     [ITEM_POTION - ITEM_POTION] = gItemEffect_Potion,
@@ -472,5 +483,8 @@ const u8 *const gItemEffectTable[] =
     [ITEM_HONDEW_BERRY - ITEM_POTION] = gItemEffect_HondewBerry,
     [ITEM_GREPA_BERRY - ITEM_POTION] = gItemEffect_GrepaBerry,
     [ITEM_TAMATO_BERRY - ITEM_POTION] = gItemEffect_TamatoBerry,
+	
+	//POKESCAPE
+	[ITEM_AIR_RUNE - ITEM_POTION] = gItemEffect_AirRune,
     [LAST_BERRY_INDEX - ITEM_POTION] = NULL
 };

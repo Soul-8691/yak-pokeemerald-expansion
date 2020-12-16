@@ -11525,67 +11525,67 @@
             ]
           },
           "land_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 100,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SPIDERLING"
+                "species": "SPECIES_PET_ROCK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_RAT_NORMAL_FORM"
+                "species": "SPECIES_PET_ROCK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SALAMANDER_GREEN_FORM"
+                "species": "SPECIES_PET_ROCK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_GIANT_FROG_NORMAL_FORM"
+                "species": "SPECIES_PET_ROCK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SPIDERLING"
+                "species": "SPECIES_PET_ROCK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BAT"
+                "species": "SPECIES_PET_ROCK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_RAT_CRYPT_FORM"
+                "species": "SPECIES_BIRD_NEST"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CROW"
+                "species": "SPECIES_BIRD_NEST"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_RAVENLING"
+                "species": "SPECIES_BIRD_NEST"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IMP"
+                "species": "SPECIES_BIRD_NEST"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IMP"
+                "species": "SPECIES_BIRD_NEST"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_RAVENLING"
+                "species": "SPECIES_BIRD_NEST"
               }
             ]
           },

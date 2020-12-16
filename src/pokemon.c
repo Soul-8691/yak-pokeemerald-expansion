@@ -13,6 +13,7 @@
 #include "event_data.h"
 #include "evolution_scene.h"
 #include "field_specials.h"
+#include "field_weather.h"
 #include "item.h"
 #include "link.h"
 #include "main.h"
@@ -35,6 +36,7 @@
 #include "text.h"
 #include "trainer_hill.h"
 #include "util.h"
+#include "constants/party_menu.h"
 #include "constants/abilities.h"
 #include "constants/battle_frontier.h"
 #include "constants/battle_move_effects.h"
@@ -45,6 +47,7 @@
 #include "constants/moves.h"
 #include "constants/songs.h"
 #include "constants/trainers.h"
+#include "constants/weather.h"
 
 struct SpeciesItem
 {
@@ -7599,13 +7602,15 @@ u8 GetNatureFromPersonality(u32 personality)
 
 u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
 {
-    int i;
+    int i,j;
     u16 targetSpecies = 0;
     u16 species = GetMonData(mon, MON_DATA_SPECIES, 0);
     u16 heldItem = GetMonData(mon, MON_DATA_HELD_ITEM, 0);
     u32 personality = GetMonData(mon, MON_DATA_PERSONALITY, 0);
     u8 level;
+	u8 ailment;
     u16 friendship;
+	u16 currentMap;
     u8 beauty = GetMonData(mon, MON_DATA_BEAUTY, 0);
     u16 upperPersonality = personality >> 16;
     u8 holdEffect;
@@ -7677,9 +7682,148 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
                 if (gEvolutionTable[species][i].param <= beauty)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
+			
+			case EVO_MALE_LEVEL:
+				if (gEvolutionTable[species][i].param <= level)
+					if (GetGenderFromSpeciesAndPersonality(species, personality) == MON_MALE)
+					targetSpecies = gEvolutionTable[species][i].targetSpecies;
+				break;
+				
+			case EVO_FEMALE_LEVEL:
+				if (gEvolutionTable[species][i].param <= level)
+					if (GetGenderFromSpeciesAndPersonality(species, personality) == MON_FEMALE)
+					targetSpecies = gEvolutionTable[species][i].targetSpecies;
+				break;
+			
+			case EVO_MALE_DEATH:
+				if (gEvolutionTable[species][i].param <= level)
+					if (GetGenderFromSpeciesAndPersonality(species, personality) == MON_MALE)
+						if (GetMonData(mon, MON_DATA_HP, 0) <= 6)
+						targetSpecies = gEvolutionTable[species][i].targetSpecies;
+				break;
+				
+			case EVO_FEMALE_DEATH:
+				if (gEvolutionTable[species][i].param <= level)
+					if (GetGenderFromSpeciesAndPersonality(species, personality) == MON_FEMALE)
+						if (GetMonData(mon, MON_DATA_HP, 0) <= 6)
+						targetSpecies = gEvolutionTable[species][i].targetSpecies;
+				break;
+				
+				
+			 case EVO_HOLD_ITEM:
+                if (gEvolutionTable[species][i].param == heldItem)
+				{
+                    heldItem = 0;
+                    SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                }
+                break;
+			
+			 case EVO_SPECIFIC_MAP:
+                currentMap = ((gSaveBlock1Ptr->location.mapGroup) << 8 | gSaveBlock1Ptr->location.mapNum);
+                if (currentMap == gEvolutionTable[species][i].param)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+				
+			case EVO_MOVE:
+				if (MonKnowsMove(mon, gEvolutionTable[species][i].param))
+                targetSpecies = gEvolutionTable[species][i].targetSpecies;
+				
+                break;
+				
+			case EVO_MOVE_TYPE:
+				for (j = 0; j < 4; j++)
+                {
+                    if (gBattleMoves[GetMonData(mon, MON_DATA_MOVE1 + j, NULL)].type == gEvolutionTable[species][i].param)
+                    {
+                        targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                        break;
+                    }
+                }
+                break;
+				
+			case EVO_STATUS_LEVEL:
+				ailment = GetMonAilment(mon);
+				if(gEvolutionTable[species][i].param <= level && ailment != AILMENT_NONE)
+				targetSpecies = gEvolutionTable[species][i].targetSpecies;
+				break;	
+				
+				
+			case EVO_SPECIFIC_MON:
+                for (j = 0; j < PARTY_SIZE; j++)
+                {
+                    if (GetMonData(&gPlayerParty[j], MON_DATA_SPECIES, NULL) == gEvolutionTable[species][i].param)
+                    {
+                        targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                        break;
+                    }
+                }
+                break;
+				
+			case EVO_PARTY_TYPE:
+                    for (j = 0; j < PARTY_SIZE; j++)
+                    {
+                        u16 species2 = GetMonData(&gPlayerParty[j], MON_DATA_SPECIES, NULL);
+                        if (gBaseStats[species2].type1 == gEvolutionTable[species][i].param
+                            || gBaseStats[species2].type2 == gEvolutionTable[species][i].param)
+                        {
+                            targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                            break;
+                        }
+                    }
+                break;
+				
+			case EVO_WEATHER:
+				if (gWeatherPtr->currWeather == gEvolutionTable[species][i].param)
+					targetSpecies = gEvolutionTable[species][i].targetSpecies;
+				
+				
+				break;
+			
+			
+			case EVO_RANDOM_ONE:
+                if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) <= 1)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+			
+			case EVO_RANDOM_TWO:
+                if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) == 2)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+				
+			case EVO_RANDOM_THREE:
+                if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) == 3)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+			case EVO_RANDOM_FOUR:
+                if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) == 4)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+			case EVO_RANDOM_FIVE:
+                if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) == 5)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+			case EVO_RANDOM_SIX:
+                if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) == 6)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+			case EVO_RANDOM_SEVEN:
+                if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) == 7)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+			case EVO_RANDOM_EIGHT:
+                if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) == 8)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+			case EVO_RANDOM_NINE:
+                if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) == 9)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;				
+				
+				
             }
+			
         }
-        break;
     case 1:
         for (i = 0; i < EVOS_PER_MON; i++)
         {

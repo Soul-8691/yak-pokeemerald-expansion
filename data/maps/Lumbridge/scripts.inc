@@ -6,6 +6,11 @@ Lumbridge_MapScripts::
 Script_GnomeBoiKevin::
 	msgbox Text_GnomeBoiKevin_1, MSGBOX_NPC
 	
+	
+	giveitem ITEM_RARE_CANDY, 99
+	giveitem ITEM_AIR_RUNE, 1
+	giveitem ITEM_FIRE_STONE, 1
+	
 	checkitem ITEM_MACH_BIKE, 1
 	compare VAR_RESULT, 1
 	goto_if_eq HaveMACH_BIKE

@@ -309,8 +309,29 @@
 #define EVO_LEVEL_NINJASK    13     // Pokémon reaches the specified level (special value for Ninjask)
 #define EVO_LEVEL_SHEDINJA   14     // Pokémon reaches the specified level (special value for Shedinja)
 #define EVO_BEAUTY           15     // Pokémon levels up with beauty ≥ specified value
+#define EVO_FEMALE_LEVEL	 16		// Pokemon reaches the specified level and is female
+#define EVO_MALE_LEVEL		 17		// Pokemon reaches the specified level and is male
+#define EVO_MALE_DEATH		 18		// Pokemon levels up while fainted and is male
+#define EVO_FEMALE_DEATH	 19		// Pokemon levels up while fainted and is female
+#define EVO_HOLD_ITEM		 20		// Pokemon levels up while holding specified item
+#define EVO_SPECIFIC_MAP     21		// Pokemon levels up in a specific map
+#define	EVO_MOVE			 22		// Pokemon levels up with a specific known move
+#define EVO_MOVE_TYPE		 23		// Pokemon levels up while knowing a move of given type
+#define EVO_STATUS_LEVEL	 24	 	// Pokemon levels up while being status'd
+#define EVO_SPECIFIC_MON	 25		//Pokemon levels up with a specific mon in the party
+#define EVO_PARTY_TYPE		 26		// Pokemon evolves with a specific pokemon type in party
+#define EVO_WEATHER			 27		// Pokemon evolves when leveling in specific weather
+#define EVO_RANDOM_ONE		 28		// pokemon evolves with randomness wooo
+#define EVO_RANDOM_TWO		 29		// pokemon evolves with randomness wooo
+#define EVO_RANDOM_THREE	 30		// pokemon evolves with randomness wooo
+#define EVO_RANDOM_FOUR	 	 31		// pokemon evolves with randomness wooo
+#define EVO_RANDOM_FIVE		 32		// pokemon evolves with randomness wooo
+#define EVO_RANDOM_SIX		 33		// pokemon evolves with randomness wooo
+#define EVO_RANDOM_SEVEN	 34		// pokemon evolves with randomness wooo
+#define EVO_RANDOM_EIGHT	 35		// pokemon evolves with randomness wooo
+#define EVO_RANDOM_NINE	 	 36		// pokemon evolves with randomness wooo
 
-#define EVOS_PER_MON 5
+#define EVOS_PER_MON 15
 
 #define NUM_MALE_LINK_FACILITY_CLASSES   8
 #define NUM_FEMALE_LINK_FACILITY_CLASSES 8

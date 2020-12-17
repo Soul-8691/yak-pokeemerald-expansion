@@ -8,10 +8,18 @@ Script_GnomeBoiKevin::
 	
 	
 	giveitem ITEM_RARE_CANDY, 99
-	giveitem ITEM_AIR_RUNE, 1
-	giveitem ITEM_WATER_RUNE, 1
-	giveitem ITEM_EARTH_RUNE, 1
-	giveitem ITEM_FIRE_RUNE, 1
+	giveitem ITEM_AIR_RUNE, 10
+	giveitem ITEM_WATER_RUNE, 10
+	giveitem ITEM_EARTH_RUNE, 10
+	giveitem ITEM_FIRE_RUNE, 10
+	
+	giveitem ITEM_EVERSTONE, 1
+	
+	giveitem ITEM_HP_UP, 90
+	giveitem ITEM_PROTEIN, 90
+	giveitem ITEM_CARBOS, 90
+	giveitem ITEM_CALCIUM, 90
+	giveitem ITEM_IRON, 90
 //	giveitem ITEM_MIND_RUNE, 1
 	
 	checkitem ITEM_MACH_BIKE, 1

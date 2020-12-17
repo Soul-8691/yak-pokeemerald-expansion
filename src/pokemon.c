@@ -48,6 +48,7 @@
 #include "constants/songs.h"
 #include "constants/trainers.h"
 #include "constants/weather.h"
+#include "constants/region_map_sections.h"
 
 struct SpeciesItem
 {
@@ -7818,9 +7819,85 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
 			case EVO_RANDOM_NINE:
                 if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) == 9)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
-                break;				
+                break;	
 				
+			case EVO_FEMALE_MAP:
+				currentMap = ((gSaveBlock1Ptr->location.mapGroup) << 8 | gSaveBlock1Ptr->location.mapNum);
+                if (currentMap == gEvolutionTable[species][i].param)
+					if (GetGenderFromSpeciesAndPersonality(species, personality) == MON_FEMALE)
+					targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;	
+			case EVO_MALE_MAP:
+				currentMap = ((gSaveBlock1Ptr->location.mapGroup) << 8 | gSaveBlock1Ptr->location.mapNum);
+                if (currentMap == gEvolutionTable[species][i].param)
+					if (GetGenderFromSpeciesAndPersonality(species, personality) == MON_MALE)
+					targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;	
 				
+			case EVO_MAPSEC:
+                if (gMapHeader.regionMapSectionId == gEvolutionTable[species][i].param)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+				
+			case EVO_MAPSEC_MALE:
+			     if (gMapHeader.regionMapSectionId == gEvolutionTable[species][i].param)
+				 		if (GetGenderFromSpeciesAndPersonality(species, personality) == MON_MALE)
+						targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+			case EVO_MAPSEC_FEMALE:
+					if (gMapHeader.regionMapSectionId == gEvolutionTable[species][i].param)
+				 		if (GetGenderFromSpeciesAndPersonality(species, personality) == MON_FEMALE)
+						targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+			case EVO_LEVEL_DAY:
+				RtcCalcLocalTime();
+					if(gEvolutionTable[species][i].param <= level)
+					if (gLocalTime.hours >= 12 && gLocalTime.hours < 24)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+				
+			case EVO_LEVEL_NIGHT:
+				RtcCalcLocalTime();
+					if(gEvolutionTable[species][i].param <= level)
+                if (gLocalTime.hours >= 0 && gLocalTime.hours < 12)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+				
+			case EVO_ATK_LT_SPATK:
+                if (gEvolutionTable[species][i].param <= level)
+                    if (GetMonData(mon, MON_DATA_ATK, 0) < GetMonData(mon, MON_DATA_SPATK, 0))
+                        targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+				
+			case EVO_ATK_GT_SPATK:
+			    if (gEvolutionTable[species][i].param <= level)
+                    if (GetMonData(mon, MON_DATA_ATK, 0) > GetMonData(mon, MON_DATA_SPATK, 0))
+                        targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+				
+			case EVO_SPE_LT_SPDEF:
+			    if (gEvolutionTable[species][i].param <= level)
+                    if (GetMonData(mon, MON_DATA_SPEED, 0) < GetMonData(mon, MON_DATA_SPDEF, 0))
+                        targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+				
+			case EVO_SPE_GT_SPDEF:
+			    if (gEvolutionTable[species][i].param <= level)
+                    if (GetMonData(mon, MON_DATA_SPEED, 0) > GetMonData(mon, MON_DATA_SPDEF, 0))
+                        targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+				
+			case EVO_DEF_LT_SPE:
+			    if (gEvolutionTable[species][i].param <= level)
+                    if (GetMonData(mon, MON_DATA_DEF, 0) < GetMonData(mon, MON_DATA_SPEED, 0))
+                        targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+				
+			case EVO_DEF_GT_SPE:
+			    if (gEvolutionTable[species][i].param <= level)
+                    if (GetMonData(mon, MON_DATA_DEF, 0) > GetMonData(mon, MON_DATA_SPEED, 0))
+                        targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
             }
 			
         }
@@ -7840,6 +7917,8 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 }
                 break;
+				
+
             }
         }
         break;

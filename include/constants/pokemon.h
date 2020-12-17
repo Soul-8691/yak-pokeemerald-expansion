@@ -330,6 +330,19 @@
 #define EVO_RANDOM_SEVEN	 34		// pokemon evolves with randomness wooo
 #define EVO_RANDOM_EIGHT	 35		// pokemon evolves with randomness wooo
 #define EVO_RANDOM_NINE	 	 36		// pokemon evolves with randomness wooo
+#define EVO_FEMALE_MAP		 37		// pokemon evolves on a specific map if female
+#define EVO_MALE_MAP		 38		//pokemon evolves on a specific map if male
+#define EVO_MAPSEC			 39		// pokemon evolves in a map section
+#define EVO_LEVEL_DAY		 40		// pokemon evolves at level at daytime
+#define EVO_LEVEL_NIGHT		 41		// pokemon evolves at level at nighttime
+#define EVO_MAPSEC_MALE		 42		// pokemon evolves in a map section if male
+#define EVO_MAPSEC_FEMALE	 43		// pokemon evolves in a map section if female
+#define EVO_ATK_LT_SPATK	 44		//pokemon evolves at given level if ATK < SPATK
+#define EVO_ATK_GT_SPATK	 45		//pokemon evolves at given level if ATK > SPATK
+#define EVO_SPE_LT_SPDEF	 46		// pokemon  evolves at given level if SPE < SPDEF
+#define EVO_SPE_GT_SPDEF	 47		// pokemon evolves at given level if SPE > SPDEF
+#define EVO_DEF_LT_SPE		 48		// pokemon evolves at given level if DEF > SPE
+#define EVO_DEF_GT_SPE		 49		// pokemon evolves at given level if DEF < SPE
 
 #define EVOS_PER_MON 15
 

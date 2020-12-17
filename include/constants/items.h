@@ -466,8 +466,26 @@
 
 //POKESCAPE
 #define ITEM_AIR_RUNE 377
+#define ITEM_WATER_RUNE 378
+#define ITEM_EARTH_RUNE 379
+#define ITEM_FIRE_RUNE 380
+#define ITEM_MIND_RUNE 381
+#define ITEM_BODY_RUNE 382
 
-#define ITEMS_COUNT 378
+#define ITEM_LAW_RUNE 383
+#define ITEM_NATURE_RUNE 384
+#define ITEM_CHAOS_RUNE 385
+#define ITEM_COSMIC_RUNE 386
+#define ITEM_BLOOD_RUNE 387
+#define ITEM_SOUL_RUNE 388
+#define ITEM_DEATH_RUNE 389
+#define ITEM_MUD_RUNE 390
+#define ITEM_MIST_RUNE 391
+#define ITEM_LAVA_RUNE 392
+#define ITEM_LIFE_RUNE 393
+
+
+#define ITEMS_COUNT 394
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 #define FIRST_BERRY_INDEX             ITEM_CHERI_BERRY
@@ -510,6 +528,6 @@
 #define SUPER_ROD 2
 
 // Check if the item is one that can be used on a Pokemon.
-#define ITEM_HAS_EFFECT(item) ((item) >= ITEM_POTION && (item) <= ITEM_0B2)
+#define ITEM_HAS_EFFECT(item) (((item) >= ITEM_POTION && (item) <= ITEM_0B2) || ((item) >= ITEM_AIR_RUNE && (item) < ITEMS_COUNT))
 
 #endif  // GUARD_CONSTANTS_ITEMS_H

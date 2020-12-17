@@ -404,6 +404,9 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_OLD_SEA_MAP] = {gItemIcon_OldSeaMap, gItemIconPalette_OldSeaMap},
 	//POKESCAPE
 	[ITEM_AIR_RUNE] = {gItemIcon_AirRune, gItemIconPalette_AirRune},
+	[ITEM_WATER_RUNE] = {gItemIcon_WaterRune, gItemIconPalette_WaterRune},
+	[ITEM_EARTH_RUNE] = {gItemIcon_EarthRune, gItemIconPalette_EarthRune},
+	[ITEM_FIRE_RUNE] = {gItemIcon_FireRune, gItemIconPalette_FireRune},
 	
     // Return to field arrow
     [ITEM_FIELD_ARROW] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},

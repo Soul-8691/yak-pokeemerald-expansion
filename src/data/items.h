@@ -4901,10 +4901,42 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },
 	
+
+    [ITEM_WATER_RUNE] =
+    {
+        .name = _("WATER RUNE"),
+        .itemId = ITEM_WATER_RUNE,
+        .price = 2100,
+        .description = sRuneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },
 	
-	
-	
-	
+    [ITEM_EARTH_RUNE] =
+    {
+        .name = _("EARTH RUNE"),
+        .itemId = ITEM_EARTH_RUNE,
+        .price = 2100,
+        .description = sRuneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },	
+
+	    [ITEM_FIRE_RUNE] =
+    {
+        .name = _("FIRE RUNE"),
+        .itemId = ITEM_FIRE_RUNE,
+        .price = 2100,
+        .description = sRuneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },	
 	
 	
 	

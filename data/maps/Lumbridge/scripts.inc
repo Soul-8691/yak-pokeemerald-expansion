@@ -9,7 +9,10 @@ Script_GnomeBoiKevin::
 	
 	giveitem ITEM_RARE_CANDY, 99
 	giveitem ITEM_AIR_RUNE, 1
-	giveitem ITEM_FIRE_STONE, 1
+	giveitem ITEM_WATER_RUNE, 1
+	giveitem ITEM_EARTH_RUNE, 1
+	giveitem ITEM_FIRE_RUNE, 1
+//	giveitem ITEM_MIND_RUNE, 1
 	
 	checkitem ITEM_MACH_BIKE, 1
 	compare VAR_RESULT, 1

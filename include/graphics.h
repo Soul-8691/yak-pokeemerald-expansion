@@ -8211,8 +8211,37 @@ extern const u32 gItemIconPalette_OldSeaMap[];
 //Pokescape Items
 extern const u32 gItemIcon_AirRune[];
 extern const u32 gItemIconPalette_AirRune[];
+extern const u32 gItemIcon_WaterRune[];
+extern const u32 gItemIconPalette_WaterRune[];
+extern const u32 gItemIcon_EarthRune[];
+extern const u32 gItemIconPalette_EarthRune[];
+extern const u32 gItemIcon_FireRune[];
+extern const u32 gItemIconPalette_FireRune[];
 
-
+extern const u32 gItemIcon_MindRune[];
+extern const u32 gItemIconPalette_MindRune[];
+extern const u32 gItemIcon_BodyRune[];
+extern const u32 gItemIconPalette_BodyRune[];
+extern const u32 gItemIcon_NatureRune[];
+extern const u32 gItemIconPalette_NatureRune[];
+extern const u32 gItemIcon_CosmicRune[];
+extern const u32 gItemIconPalette_CosmicRune[];
+extern const u32 gItemIcon_ChaosRune[];
+extern const u32 gItemIconPalette_ChaosRune[];
+extern const u32 gItemIcon_DeathRune[];
+extern const u32 gItemIconPalette_DeathRune[];
+extern const u32 gItemIcon_BloodRune[];
+extern const u32 gItemIconPalette_BloodRune[];
+extern const u32 gItemIcon_MistRune[];
+extern const u32 gItemIconPalette_MistRune[];
+extern const u32 gItemIcon_DustRune[];
+extern const u32 gItemIconPalette_DustRune[];
+extern const u32 gItemIcon_MudRune[];
+extern const u32 gItemIconPalette_MudRune[];
+extern const u32 gItemIcon_LavaRune[];
+extern const u32 gItemIconPalette_LavaRune[];
+extern const u32 gItemIcon_LifeRune[];
+extern const u32 gItemIconPalette_LifeRune[];
 
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];

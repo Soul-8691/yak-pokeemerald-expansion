@@ -406,7 +406,17 @@ const u8 gItemEffect_AirRune[6] = {
     [4] = ITEM4_EVO_STONE,
 };
 
+const u8 gItemEffect_WaterRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
 
+const u8 gItemEffect_EarthRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_FireRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
 
 
 
@@ -483,8 +493,10 @@ const u8 *const gItemEffectTable[] =
     [ITEM_HONDEW_BERRY - ITEM_POTION] = gItemEffect_HondewBerry,
     [ITEM_GREPA_BERRY - ITEM_POTION] = gItemEffect_GrepaBerry,
     [ITEM_TAMATO_BERRY - ITEM_POTION] = gItemEffect_TamatoBerry,
-	
 	//POKESCAPE
 	[ITEM_AIR_RUNE - ITEM_POTION] = gItemEffect_AirRune,
+	[ITEM_WATER_RUNE - ITEM_POTION] = gItemEffect_WaterRune,
+	[ITEM_EARTH_RUNE - ITEM_POTION] = gItemEffect_EarthRune,
+	[ITEM_FIRE_RUNE - ITEM_POTION] = gItemEffect_FireRune,
     [LAST_BERRY_INDEX - ITEM_POTION] = NULL
 };

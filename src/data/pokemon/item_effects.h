@@ -483,7 +483,9 @@ const u8 gItemEffect_SpiritCharm[6] = {
     [4] = ITEM4_EVO_STONE,
 };
 
-
+const u8 gItemEffect_LegendaryItem[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
 
 
 
@@ -580,6 +582,7 @@ const u8 *const gItemEffectTable[] =
 	[ITEM_LIFE_RUNE - ITEM_POTION] = gItemEffect_LifeRune,
 	[ITEM_ASTRAL_RUNE - ITEM_POTION] = gItemEffect_AstralRune,
 	[ITEM_SPIRIT_CHARM - ITEM_POTION] = gItemEffect_SpiritCharm,
+	[ITEM_LEGENDARY_ITEM - ITEM_POTION] = gItemEffect_LegendaryItem,
 	
     [LAST_BERRY_INDEX - ITEM_POTION] = NULL
 };

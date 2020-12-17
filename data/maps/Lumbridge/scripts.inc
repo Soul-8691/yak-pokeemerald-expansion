@@ -30,6 +30,7 @@ Script_GnomeBoiKevin::
 	giveitem ITEM_LAVA_RUNE, 10
 	giveitem ITEM_LIFE_RUNE, 10
 	giveitem ITEM_SPIRIT_CHARM, 10	
+	giveitem ITEM_LEGENDARY_ITEM, 10
 	
 	giveitem ITEM_EVERSTONE, 1
 

@@ -8249,7 +8249,8 @@ extern const u32 gItemIcon_SoulRune[];
 extern const u32 gItemIconPalette_SoulRune[];
 extern const u32 gItemIcon_SpiritCharm[];
 extern const u32 gItemIconPalette_SpiritCharm[];
-
+extern const u32 gItemIcon_LegendaryItem[];
+extern const u32 gItemIconPalette_LegendaryItem[];
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];

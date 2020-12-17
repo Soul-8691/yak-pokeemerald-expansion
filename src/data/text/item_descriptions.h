@@ -1563,7 +1563,10 @@ static const u8 sEvoItemDesc[] = _(
     "evolve.");
 	
 	
-	
+static const u8 sEvoLegendaryItemDesc[] = _(
+    "Makes Legendary\n"
+    "species of POKéMON\n"
+    "evolve.");	
 	
 	
 	

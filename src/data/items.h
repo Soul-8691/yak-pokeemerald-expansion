@@ -5131,7 +5131,17 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },			
 	
-	
+		[ITEM_LEGENDARY_ITEM] =
+    {
+        .name = _("LEGENDARY"),
+        .itemId = ITEM_LEGENDARY_ITEM,
+        .price = 2100,
+        .description = sEvoLegendaryItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },			
 	
 	
 	

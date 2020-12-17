@@ -799,6 +799,7 @@ const u32 gItemIconPalette_AstralRune[] = INCBIN_U32("graphics/items/pokescape_i
 const u32 gItemIcon_SpiritCharm[] = INCBIN_U32("graphics/items/pokescape_icons/spirit_charm.4bpp.lz");
 const u32 gItemIconPalette_SpiritCharm[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/spirit_charm.gbapal.lz");  
 
-
+const u32 gItemIcon_LegendaryItem[] = INCBIN_U32("graphics/items/pokescape_icons/legendary_item.4bpp.lz");
+const u32 gItemIconPalette_LegendaryItem[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/legendary_item.gbapal.lz");  
 
 

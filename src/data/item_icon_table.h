@@ -423,7 +423,7 @@ const u32 *const gItemIconTable[][2] =
 	[ITEM_LIFE_RUNE] = {gItemIcon_LifeRune, gItemIconPalette_LifeRune},
 	[ITEM_ASTRAL_RUNE] = {gItemIcon_AstralRune, gItemIconPalette_AstralRune},
 	[ITEM_SPIRIT_CHARM] = {gItemIcon_SpiritCharm, gItemIconPalette_SpiritCharm},	
-	
+	[ITEM_LEGENDARY_ITEM] = {gItemIcon_LegendaryItem, gItemIconPalette_LegendaryItem},		
 	
 	
     // Return to field arrow

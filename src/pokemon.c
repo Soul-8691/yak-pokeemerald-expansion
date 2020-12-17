@@ -7633,7 +7633,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
         for (i = 0; i < EVOS_PER_MON; i++)
         {
             switch (gEvolutionTable[species][i].method)
-            {
+            {	
             case EVO_FRIENDSHIP:
                 if (friendship >= 220)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
@@ -7863,41 +7863,60 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
 				
-			case EVO_ATK_LT_SPATK:
+			case EVO_LEVEL_ATK_LT_SPATK:
                 if (gEvolutionTable[species][i].param <= level)
                     if (GetMonData(mon, MON_DATA_ATK, 0) < GetMonData(mon, MON_DATA_SPATK, 0))
                         targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
 				
-			case EVO_ATK_GT_SPATK:
+			case EVO_LEVEL_ATK_GT_SPATK:
 			    if (gEvolutionTable[species][i].param <= level)
                     if (GetMonData(mon, MON_DATA_ATK, 0) > GetMonData(mon, MON_DATA_SPATK, 0))
                         targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
 				
-			case EVO_SPE_LT_SPDEF:
+			case EVO_LEVEL_ATK_EQ_SPATK:
+			    if (gEvolutionTable[species][i].param <= level)
+                    if (GetMonData(mon, MON_DATA_ATK, 0) == GetMonData(mon, MON_DATA_SPATK, 0))
+                        targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+				
+			case EVO_LEVEL_SPE_LT_SPDEF:
 			    if (gEvolutionTable[species][i].param <= level)
                     if (GetMonData(mon, MON_DATA_SPEED, 0) < GetMonData(mon, MON_DATA_SPDEF, 0))
                         targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
 				
-			case EVO_SPE_GT_SPDEF:
+			case EVO_LEVEL_SPE_GT_SPDEF:
 			    if (gEvolutionTable[species][i].param <= level)
                     if (GetMonData(mon, MON_DATA_SPEED, 0) > GetMonData(mon, MON_DATA_SPDEF, 0))
                         targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
 				
-			case EVO_DEF_LT_SPE:
+			case EVO_LEVEL_DEF_LT_SPE:
 			    if (gEvolutionTable[species][i].param <= level)
                     if (GetMonData(mon, MON_DATA_DEF, 0) < GetMonData(mon, MON_DATA_SPEED, 0))
                         targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
 				
-			case EVO_DEF_GT_SPE:
+			case EVO_LEVEL_DEF_GT_SPE:
 			    if (gEvolutionTable[species][i].param <= level)
                     if (GetMonData(mon, MON_DATA_DEF, 0) > GetMonData(mon, MON_DATA_SPEED, 0))
                         targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
+				
+			case EVO_LEVEL_DEF_EQ_SPE:
+			    if (gEvolutionTable[species][i].param <= level)
+                    if (GetMonData(mon, MON_DATA_DEF, 0) == GetMonData(mon, MON_DATA_SPEED, 0))
+                        targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+				
+				
+			case EVO_DEATH:
+				if (gEvolutionTable[species][i].param <= level)
+						if (GetMonData(mon, MON_DATA_HP, 0) <= 6)
+						targetSpecies = gEvolutionTable[species][i].targetSpecies;
+				break;
             }
 			
         }
@@ -7932,6 +7951,22 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
             }
+			
+			if (gEvolutionTable[species][i].method == EVO_ITEM_MALE)
+			 if (GetGenderFromSpeciesAndPersonality(species, personality) == MON_MALE) 
+				if (gEvolutionTable[species][i].param == evolutionItem)
+					{
+						targetSpecies = gEvolutionTable[species][i].targetSpecies;
+						break;
+					}
+			if (gEvolutionTable[species][i].method == EVO_ITEM_FEMALE)
+				if (GetGenderFromSpeciesAndPersonality(species, personality) == MON_FEMALE)
+					if (gEvolutionTable[species][i].param == evolutionItem)
+						{
+							targetSpecies = gEvolutionTable[species][i].targetSpecies;
+							break;
+						}
+			
         }
         break;
     }

@@ -803,3 +803,49 @@ const u32 gItemIcon_LegendaryItem[] = INCBIN_U32("graphics/items/pokescape_icons
 const u32 gItemIconPalette_LegendaryItem[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/legendary_item.gbapal.lz");  
 
 
+const u32 gItemIcon_RedScale[] = INCBIN_U32("graphics/items/pokescape_icons/red_scale.4bpp.lz");
+const u32 gItemIconPalette_RedScale[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/red_scale.gbapal.lz");  
+
+const u32 gItemIcon_BlueScale[] = INCBIN_U32("graphics/items/pokescape_icons/blue_scale.4bpp.lz");
+const u32 gItemIconPalette_BlueScale[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/blue_scale.gbapal.lz");  
+
+const u32 gItemIcon_BlackScale[] = INCBIN_U32("graphics/items/pokescape_icons/black_scale.4bpp.lz");
+const u32 gItemIconPalette_BlackScale[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/black_scale.gbapal.lz");  
+
+const u32 gItemIcon_GreenScale[] = INCBIN_U32("graphics/items/pokescape_icons/green_scale.4bpp.lz");
+const u32 gItemIconPalette_GreenScale[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/green_scale.gbapal.lz");  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

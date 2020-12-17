@@ -31,29 +31,34 @@ Script_GnomeBoiKevin::
 	giveitem ITEM_LIFE_RUNE, 10
 	giveitem ITEM_SPIRIT_CHARM, 10	
 	giveitem ITEM_LEGENDARY_ITEM, 10
+	giveitem ITEM_RED_SCALE, 10
+	giveitem ITEM_BLUE_SCALE, 10
+	giveitem ITEM_GREEN_SCALE, 10
+	giveitem ITEM_BLACK_SCALE, 10
+
 	
 	giveitem ITEM_EVERSTONE, 1
 
 //STAT ITEMS
-	giveitem ITEM_RARE_CANDY, 99
-	giveitem ITEM_HP_UP, 90
-	giveitem ITEM_PROTEIN, 90
-	giveitem ITEM_CARBOS, 90
-	giveitem ITEM_CALCIUM, 90
-	giveitem ITEM_IRON, 90
+//	giveitem ITEM_RARE_CANDY, 99
+//	giveitem ITEM_HP_UP, 90
+//	giveitem ITEM_PROTEIN, 90
+//	giveitem ITEM_CARBOS, 90
+//	giveitem ITEM_CALCIUM, 90
+//	giveitem ITEM_IRON, 90
 
 //KEY ITEMS
-	checkitem ITEM_MACH_BIKE, 1
-	compare VAR_RESULT, 1
-	goto_if_eq HaveMACH_BIKE
-	giveitem ITEM_MACH_BIKE, 1
+//	checkitem ITEM_MACH_BIKE, 1
+//	compare VAR_RESULT, 1
+//	goto_if_eq HaveMACH_BIKE
+//	giveitem ITEM_MACH_BIKE, 1
 	
 	
-	giveitem ITEM_OLD_ROD, 1
-	giveitem ITEM_GOOD_ROD, 1
-	giveitem ITEM_SUPER_ROD, 1
-	giveitem ITEM_BICYCLE, 1
-	giveitem ITEM_ACRO_BIKE, 1
+//	giveitem ITEM_OLD_ROD, 1
+//	giveitem ITEM_GOOD_ROD, 1
+//	giveitem ITEM_SUPER_ROD, 1
+//	giveitem ITEM_BICYCLE, 1
+//	giveitem ITEM_ACRO_BIKE, 1
 	
 	
 	msgbox Text_GnomeBoiKevin_2, MSGBOX_NPC

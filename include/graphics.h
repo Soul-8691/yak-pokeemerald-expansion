@@ -8251,6 +8251,15 @@ extern const u32 gItemIcon_SpiritCharm[];
 extern const u32 gItemIconPalette_SpiritCharm[];
 extern const u32 gItemIcon_LegendaryItem[];
 extern const u32 gItemIconPalette_LegendaryItem[];
+extern const u32 gItemIcon_RedScale[];
+extern const u32 gItemIconPalette_RedScale[];
+extern const u32 gItemIcon_BlueScale[];
+extern const u32 gItemIconPalette_BlueScale[];
+extern const u32 gItemIcon_BlackScale[];
+extern const u32 gItemIconPalette_BlackScale[];
+extern const u32 gItemIcon_GreenScale[];
+extern const u32 gItemIconPalette_GreenScale[];
+
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];

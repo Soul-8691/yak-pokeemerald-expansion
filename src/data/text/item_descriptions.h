@@ -1568,11 +1568,21 @@ static const u8 sEvoLegendaryItemDesc[] = _(
     "species of POKéMON\n"
     "evolve.");	
 	
+static const u8 sRedScaleDesc[] = _(
+    "A scale obtained\n"
+	"from a Red Dragon.");		
 	
+static const u8 sGreenScaleDesc[] = _(
+    "A scale obtained\n"
+	"from a Green Dragon.");		
 	
-	
-	
-	
+static const u8 sBlueScaleDesc[] = _(
+    "A scale obtained\n"
+	"from a Blue Dragon.");		
+		
+static const u8 sBlackScaleDesc[] = _(
+    "A scale obtained\n"
+	"from a Black Dragon.");		
 	
 	
 	

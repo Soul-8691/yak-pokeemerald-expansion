@@ -5143,6 +5143,67 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },			
 	
+	    [ITEM_RED_SCALE] =
+    {
+        .name = _("RED SCALE"),
+        .itemId = ITEM_RED_SCALE,
+        .price = 2100,
+        .description = sRedScaleDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+	
+	    [ITEM_BLUE_SCALE] =
+    {
+        .name = _("BLUE SCALE"),
+        .itemId = ITEM_BLUE_SCALE,
+        .price = 2100,
+        .description = sBlueScaleDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },	
+	
+	    [ITEM_BLACK_SCALE] =
+    {
+        .name = _("BLACK SCALE"),
+        .itemId = ITEM_BLACK_SCALE,
+        .price = 2100,
+        .description = sBlackScaleDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },		
+	
+	    [ITEM_GREEN_SCALE] =
+    {
+        .name = _("GREEN SCALE"),
+        .itemId = ITEM_GREEN_SCALE,
+        .price = 2100,
+        .description = sGreenScaleDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

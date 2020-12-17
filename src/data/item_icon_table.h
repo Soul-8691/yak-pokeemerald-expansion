@@ -424,7 +424,10 @@ const u32 *const gItemIconTable[][2] =
 	[ITEM_ASTRAL_RUNE] = {gItemIcon_AstralRune, gItemIconPalette_AstralRune},
 	[ITEM_SPIRIT_CHARM] = {gItemIcon_SpiritCharm, gItemIconPalette_SpiritCharm},	
 	[ITEM_LEGENDARY_ITEM] = {gItemIcon_LegendaryItem, gItemIconPalette_LegendaryItem},		
-	
+	[ITEM_RED_SCALE] = {gItemIcon_RedScale, gItemIconPalette_RedScale},	
+	[ITEM_BLUE_SCALE] = {gItemIcon_BlueScale, gItemIconPalette_BlueScale},	
+	[ITEM_GREEN_SCALE] = {gItemIcon_GreenScale, gItemIconPalette_GreenScale},	
+	[ITEM_BLACK_SCALE] = {gItemIcon_BlackScale, gItemIconPalette_BlackScale},	
 	
     // Return to field arrow
     [ITEM_FIELD_ARROW] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},

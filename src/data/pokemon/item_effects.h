@@ -487,6 +487,21 @@ const u8 gItemEffect_LegendaryItem[6] = {
     [4] = ITEM4_EVO_STONE,
 };
 
+const u8 gItemEffect_RedScale[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_BlueScale[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_GreenScale[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_BlackScale[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
 
 
 
@@ -583,6 +598,13 @@ const u8 *const gItemEffectTable[] =
 	[ITEM_ASTRAL_RUNE - ITEM_POTION] = gItemEffect_AstralRune,
 	[ITEM_SPIRIT_CHARM - ITEM_POTION] = gItemEffect_SpiritCharm,
 	[ITEM_LEGENDARY_ITEM - ITEM_POTION] = gItemEffect_LegendaryItem,
+	[ITEM_RED_SCALE - ITEM_POTION] = gItemEffect_RedScale,
+	[ITEM_BLUE_SCALE - ITEM_POTION] = gItemEffect_BlueScale,
+	[ITEM_GREEN_SCALE - ITEM_POTION] = gItemEffect_GreenScale,	
+	[ITEM_BLACK_SCALE - ITEM_POTION] = gItemEffect_BlackScale,	
+	
+	
+	
 	
     [LAST_BERRY_INDEX - ITEM_POTION] = NULL
 };

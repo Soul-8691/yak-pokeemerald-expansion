@@ -419,6 +419,72 @@ const u8 gItemEffect_FireRune[6] = {
 };
 
 
+const u8 gItemEffect_MindRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_BodyRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_CosmicRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_ChaosRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_LawRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_NatureRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_DeathRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_BloodRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_SoulRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_DustRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_MudRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_MistRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_LavaRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_LifeRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_AstralRune[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+const u8 gItemEffect_SpiritCharm[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+
+
+
 
 
 
@@ -497,6 +563,48 @@ const u8 *const gItemEffectTable[] =
 	[ITEM_AIR_RUNE - ITEM_POTION] = gItemEffect_AirRune,
 	[ITEM_WATER_RUNE - ITEM_POTION] = gItemEffect_WaterRune,
 	[ITEM_EARTH_RUNE - ITEM_POTION] = gItemEffect_EarthRune,
-	[ITEM_FIRE_RUNE - ITEM_POTION] = gItemEffect_FireRune,
+	[ITEM_FIRE_RUNE - ITEM_POTION] = gItemEffect_FireRune,	
+	[ITEM_MIND_RUNE - ITEM_POTION] = gItemEffect_MindRune,
+	[ITEM_BODY_RUNE - ITEM_POTION] = gItemEffect_BodyRune,
+	[ITEM_CHAOS_RUNE - ITEM_POTION] = gItemEffect_ChaosRune,
+	[ITEM_COSMIC_RUNE - ITEM_POTION] = gItemEffect_CosmicRune,
+	[ITEM_LAW_RUNE - ITEM_POTION] = gItemEffect_LawRune,
+	[ITEM_NATURE_RUNE - ITEM_POTION] = gItemEffect_NatureRune,
+	[ITEM_DEATH_RUNE - ITEM_POTION] = gItemEffect_DeathRune,
+	[ITEM_BLOOD_RUNE - ITEM_POTION] = gItemEffect_BloodRune,
+	[ITEM_SOUL_RUNE - ITEM_POTION] = gItemEffect_SoulRune,
+	[ITEM_DUST_RUNE - ITEM_POTION] = gItemEffect_DustRune,
+	[ITEM_MUD_RUNE - ITEM_POTION] = gItemEffect_MudRune,
+	[ITEM_MIST_RUNE - ITEM_POTION] = gItemEffect_MistRune,
+	[ITEM_LAVA_RUNE - ITEM_POTION] = gItemEffect_LavaRune,
+	[ITEM_LIFE_RUNE - ITEM_POTION] = gItemEffect_LifeRune,
+	[ITEM_ASTRAL_RUNE - ITEM_POTION] = gItemEffect_AstralRune,
+	[ITEM_SPIRIT_CHARM - ITEM_POTION] = gItemEffect_SpiritCharm,
+	
     [LAST_BERRY_INDEX - ITEM_POTION] = NULL
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

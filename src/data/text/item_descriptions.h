@@ -1557,7 +1557,7 @@ static const u8 sAirRuneDesc[] = _(
     "species of POKéMON\n"
     "evolve.");
 
-static const u8 sRuneDesc[] = _(
+static const u8 sEvoItemDesc[] = _(
     "Makes certain\n"
     "species of POKéMON\n"
     "evolve.");

@@ -4907,7 +4907,7 @@ const struct Item gItems[] =
         .name = _("WATER RUNE"),
         .itemId = ITEM_WATER_RUNE,
         .price = 2100,
-        .description = sRuneDesc,
+        .description = sEvoItemDesc,
         .pocket = POCKET_ITEMS,
         .type = 1,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -4919,7 +4919,7 @@ const struct Item gItems[] =
         .name = _("EARTH RUNE"),
         .itemId = ITEM_EARTH_RUNE,
         .price = 2100,
-        .description = sRuneDesc,
+        .description = sEvoItemDesc,
         .pocket = POCKET_ITEMS,
         .type = 1,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -4931,7 +4931,7 @@ const struct Item gItems[] =
         .name = _("FIRE RUNE"),
         .itemId = ITEM_FIRE_RUNE,
         .price = 2100,
-        .description = sRuneDesc,
+        .description = sEvoItemDesc,
         .pocket = POCKET_ITEMS,
         .type = 1,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
@@ -4939,12 +4939,197 @@ const struct Item gItems[] =
     },	
 	
 	
+		[ITEM_MIND_RUNE] =
+    {
+        .name = _("MIND RUNE"),
+        .itemId = ITEM_MIND_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },	
 	
+		[ITEM_BODY_RUNE] =
+    {
+        .name = _("BODY RUNE"),
+        .itemId = ITEM_BODY_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },		
 	
+		[ITEM_COSMIC_RUNE] =
+    {
+        .name = _("COSMIC RUNE"),
+        .itemId = ITEM_COSMIC_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },		
 	
+		[ITEM_CHAOS_RUNE] =
+    {
+        .name = _("CHAOS RUNE"),
+        .itemId = ITEM_CHAOS_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },		
 	
+		[ITEM_NATURE_RUNE] =
+    {
+        .name = _("NATURE RUNE"),
+        .itemId = ITEM_NATURE_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },		
 	
+		[ITEM_DEATH_RUNE] =
+    {
+        .name = _("DEATH RUNE"),
+        .itemId = ITEM_DEATH_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },		
 	
+		[ITEM_BLOOD_RUNE] =
+    {
+        .name = _("BLOOD RUNE"),
+        .itemId = ITEM_BLOOD_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },		
+	
+		[ITEM_LAW_RUNE] =
+    {
+        .name = _("LAW RUNE"),
+        .itemId = ITEM_LAW_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },		
+	
+		[ITEM_SOUL_RUNE] =
+    {
+        .name = _("SOUL RUNE"),
+        .itemId = ITEM_SOUL_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },		
+	
+		[ITEM_DUST_RUNE] =
+    {
+        .name = _("DUST RUNE"),
+        .itemId = ITEM_DUST_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },		
+	
+		[ITEM_MUD_RUNE] =
+    {
+        .name = _("MUD RUNE"),
+        .itemId = ITEM_MUD_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },		
+	
+		[ITEM_MIST_RUNE] =
+    {
+        .name = _("MIST RUNE"),
+        .itemId = ITEM_MIST_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },		
+	
+		[ITEM_LAVA_RUNE] =
+    {
+        .name = _("LAVA RUNE"),
+        .itemId = ITEM_LAVA_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },		
+	
+		[ITEM_LIFE_RUNE] =
+    {
+        .name = _("LIFE RUNE"),
+        .itemId = ITEM_LIFE_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },		
+	
+		[ITEM_ASTRAL_RUNE] =
+    {
+        .name = _("ASTRAL RUNE"),
+        .itemId = ITEM_ASTRAL_RUNE,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },			
+	
+		[ITEM_SPIRIT_CHARM] =
+    {
+        .name = _("SPIRIT CHARM"),
+        .itemId = ITEM_SPIRIT_CHARM,
+        .price = 2100,
+        .description = sEvoItemDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },			
 	
 	
 	

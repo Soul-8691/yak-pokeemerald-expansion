@@ -8217,7 +8217,6 @@ extern const u32 gItemIcon_EarthRune[];
 extern const u32 gItemIconPalette_EarthRune[];
 extern const u32 gItemIcon_FireRune[];
 extern const u32 gItemIconPalette_FireRune[];
-
 extern const u32 gItemIcon_MindRune[];
 extern const u32 gItemIconPalette_MindRune[];
 extern const u32 gItemIcon_BodyRune[];
@@ -8242,6 +8241,14 @@ extern const u32 gItemIcon_LavaRune[];
 extern const u32 gItemIconPalette_LavaRune[];
 extern const u32 gItemIcon_LifeRune[];
 extern const u32 gItemIconPalette_LifeRune[];
+extern const u32 gItemIcon_AstralRune[];
+extern const u32 gItemIconPalette_AstralRune[];
+extern const u32 gItemIcon_LawRune[];
+extern const u32 gItemIconPalette_LawRune[];
+extern const u32 gItemIcon_SoulRune[];
+extern const u32 gItemIconPalette_SoulRune[];
+extern const u32 gItemIcon_SpiritCharm[];
+extern const u32 gItemIconPalette_SpiritCharm[];
 
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];

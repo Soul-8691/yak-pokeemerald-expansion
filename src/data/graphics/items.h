@@ -750,7 +750,7 @@ const u32 gItemIconPalette_EarthRune[] = INCBIN_U32("graphics/items/pokescape_ic
 
 const u32 gItemIcon_FireRune[] = INCBIN_U32("graphics/items/pokescape_icons/rune_fire.4bpp.lz");
 const u32 gItemIconPalette_FireRune[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/rune_fire.gbapal.lz");   
-/*
+
 const u32 gItemIcon_MindRune[] = INCBIN_U32("graphics/items/pokescape_icons/rune_mind.4bpp.lz");
 const u32 gItemIconPalette_MindRune[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/rune_mind.gbapal.lz");   
 
@@ -787,15 +787,17 @@ const u32 gItemIconPalette_MistRune[] = INCBIN_U32("graphics/items/pokescape_ico
 const u32 gItemIcon_DustRune[] = INCBIN_U32("graphics/items/pokescape_icons/rune_dust.4bpp.lz");
 const u32 gItemIconPalette_DustRune[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/rune_dust.gbapal.lz");  
 
-const u32 gItemIcon_lavaRune[] = INCBIN_U32("graphics/items/pokescape_icons/rune_lava.4bpp.lz");
+const u32 gItemIcon_LavaRune[] = INCBIN_U32("graphics/items/pokescape_icons/rune_lava.4bpp.lz");
 const u32 gItemIconPalette_LavaRune[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/rune_lava.gbapal.lz");  
 
 const u32 gItemIcon_LifeRune[] = INCBIN_U32("graphics/items/pokescape_icons/rune_life.4bpp.lz");
 const u32 gItemIconPalette_LifeRune[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/rune_life.gbapal.lz");  
-*/
 
+const u32 gItemIcon_AstralRune[] = INCBIN_U32("graphics/items/pokescape_icons/rune_astral.4bpp.lz");
+const u32 gItemIconPalette_AstralRune[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/rune_astral.gbapal.lz");  
 
-
+const u32 gItemIcon_SpiritCharm[] = INCBIN_U32("graphics/items/pokescape_icons/spirit_charm.4bpp.lz");
+const u32 gItemIconPalette_SpiritCharm[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/spirit_charm.gbapal.lz");  
 
 
 

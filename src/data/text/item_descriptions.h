@@ -1585,7 +1585,8 @@ static const u8 sBlackScaleDesc[] = _(
 	"from a Black Dragon.");		
 	
 	
-	
+static const u8 sFragmentOfJasDesc[] = _(
+    "MEGA EVOLUTION");	
 	
 	
 	

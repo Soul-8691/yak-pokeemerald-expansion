@@ -5191,7 +5191,18 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },			
 	
-	
+    [ITEM_FRAGMENT_OF_JAS] =
+    {
+        .name = _("JAS Fragment"),
+        .itemId = ITEM_FRAGMENT_OF_JAS,
+        .price = 200,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = sFragmentOfJasDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },	
 	
 	
 	

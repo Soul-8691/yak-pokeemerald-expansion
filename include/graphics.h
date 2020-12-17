@@ -8259,7 +8259,8 @@ extern const u32 gItemIcon_BlackScale[];
 extern const u32 gItemIconPalette_BlackScale[];
 extern const u32 gItemIcon_GreenScale[];
 extern const u32 gItemIconPalette_GreenScale[];
-
+extern const u32 gItemIcon_FragmentOfJas[];
+extern const u32 gItemIconPalette_FragmentOfJas[];
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];

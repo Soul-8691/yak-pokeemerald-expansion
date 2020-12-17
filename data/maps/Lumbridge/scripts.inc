@@ -10,34 +10,34 @@ Script_GnomeBoiKevin::
 
 	
 //EVOLUTION ITEMS
-	giveitem ITEM_AIR_RUNE, 10
-	giveitem ITEM_WATER_RUNE, 10
-	giveitem ITEM_EARTH_RUNE, 10
-	giveitem ITEM_FIRE_RUNE, 10
-	giveitem ITEM_COSMIC_RUNE, 10
-	giveitem ITEM_CHAOS_RUNE, 10
-	giveitem ITEM_MIND_RUNE, 10
-	giveitem ITEM_BODY_RUNE, 10
-	giveitem ITEM_LAW_RUNE, 10
-	giveitem ITEM_NATURE_RUNE, 10
-	giveitem ITEM_DEATH_RUNE, 10
-	giveitem ITEM_BLOOD_RUNE, 10
-	giveitem ITEM_SOUL_RUNE, 10
-	giveitem ITEM_ASTRAL_RUNE, 10
-	giveitem ITEM_DUST_RUNE, 10
-	giveitem ITEM_MUD_RUNE, 10
-	giveitem ITEM_MIST_RUNE, 10
-	giveitem ITEM_LAVA_RUNE, 10
-	giveitem ITEM_LIFE_RUNE, 10
-	giveitem ITEM_SPIRIT_CHARM, 10	
-	giveitem ITEM_LEGENDARY_ITEM, 10
-	giveitem ITEM_RED_SCALE, 10
-	giveitem ITEM_BLUE_SCALE, 10
-	giveitem ITEM_GREEN_SCALE, 10
-	giveitem ITEM_BLACK_SCALE, 10
+//	giveitem ITEM_AIR_RUNE, 10
+//	giveitem ITEM_WATER_RUNE, 10
+//	giveitem ITEM_EARTH_RUNE, 10
+//	giveitem ITEM_FIRE_RUNE, 10
+//	giveitem ITEM_COSMIC_RUNE, 10
+//	giveitem ITEM_CHAOS_RUNE, 10
+//	giveitem ITEM_MIND_RUNE, 10
+//	giveitem ITEM_BODY_RUNE, 10
+//	giveitem ITEM_LAW_RUNE, 10
+//	giveitem ITEM_NATURE_RUNE, 10
+//	giveitem ITEM_DEATH_RUNE, 10
+//	giveitem ITEM_BLOOD_RUNE, 10
+//	giveitem ITEM_SOUL_RUNE, 10
+//	giveitem ITEM_ASTRAL_RUNE, 10
+//	giveitem ITEM_DUST_RUNE, 10
+//	giveitem ITEM_MUD_RUNE, 10
+//	giveitem ITEM_MIST_RUNE, 10
+//	giveitem ITEM_LAVA_RUNE, 10
+//	giveitem ITEM_LIFE_RUNE, 10
+//	giveitem ITEM_SPIRIT_CHARM, 10	
+//	giveitem ITEM_LEGENDARY_ITEM, 10
+//	giveitem ITEM_RED_SCALE, 10
+//	giveitem ITEM_BLUE_SCALE, 10
+//	giveitem ITEM_GREEN_SCALE, 10
+//	giveitem ITEM_BLACK_SCALE, 10
 
-	
-	giveitem ITEM_EVERSTONE, 1
+	giveitem ITEM_FRAGMENT_OF_JAS, 10
+//	giveitem ITEM_EVERSTONE, 1
 
 //STAT ITEMS
 //	giveitem ITEM_RARE_CANDY, 99

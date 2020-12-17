@@ -428,6 +428,7 @@ const u32 *const gItemIconTable[][2] =
 	[ITEM_BLUE_SCALE] = {gItemIcon_BlueScale, gItemIconPalette_BlueScale},	
 	[ITEM_GREEN_SCALE] = {gItemIcon_GreenScale, gItemIconPalette_GreenScale},	
 	[ITEM_BLACK_SCALE] = {gItemIcon_BlackScale, gItemIconPalette_BlackScale},	
+	[ITEM_FRAGMENT_OF_JAS] = {gItemIcon_FragmentOfJas, gItemIconPalette_FragmentOfJas},	
 	
     // Return to field arrow
     [ITEM_FIELD_ARROW] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},

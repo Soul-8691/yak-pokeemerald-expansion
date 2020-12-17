@@ -487,6 +487,7 @@ const u8 gItemEffect_LegendaryItem[6] = {
     [4] = ITEM4_EVO_STONE,
 };
 
+//ERROR I DO NOT NEED THESE METHODS?
 const u8 gItemEffect_RedScale[6] = {
     [4] = ITEM4_EVO_STONE,
 };

@@ -801,8 +801,6 @@ const u32 gItemIconPalette_SpiritCharm[] = INCBIN_U32("graphics/items/pokescape_
 
 const u32 gItemIcon_LegendaryItem[] = INCBIN_U32("graphics/items/pokescape_icons/legendary_item.4bpp.lz");
 const u32 gItemIconPalette_LegendaryItem[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/legendary_item.gbapal.lz");  
-
-
 const u32 gItemIcon_RedScale[] = INCBIN_U32("graphics/items/pokescape_icons/red_scale.4bpp.lz");
 const u32 gItemIconPalette_RedScale[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/red_scale.gbapal.lz");  
 
@@ -815,7 +813,8 @@ const u32 gItemIconPalette_BlackScale[] = INCBIN_U32("graphics/items/pokescape_i
 const u32 gItemIcon_GreenScale[] = INCBIN_U32("graphics/items/pokescape_icons/green_scale.4bpp.lz");
 const u32 gItemIconPalette_GreenScale[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/green_scale.gbapal.lz");  
 
-
+const u32 gItemIcon_FragmentOfJas[] = INCBIN_U32("graphics/items/pokescape_icons/fragment_of_jas.4bpp.lz");
+const u32 gItemIconPalette_FragmentOfJas[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fragment_of_jas.gbapal.lz");  
 
 
 

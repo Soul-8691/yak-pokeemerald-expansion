@@ -1262,3 +1262,10 @@ $(MID_SUBDIR)/se_m_leer.s: %.s: %.mid
 
 $(MID_SUBDIR)/se_dex_search.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G127 -v100 -P5
+	
+$(MID_SUBDIR)/a_pokescape_mus_battle.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V080 -P1
+	
+$(MID_SUBDIR)/pokescape_encounter_strongtrainer.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
+	

@@ -520,6 +520,31 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_zanik_1 0x1174
 #define OBJ_EVENT_PAL_zanik_2 0x1175
 #define OBJ_EVENT_PAL_zezima 0x1176
+#define OBJ_EVENT_PAL_basilisk 0x1177
+#define OBJ_EVENT_PAL_cavefish 0x1178
+#define OBJ_EVENT_PAL_chicken 0x1179
+#define OBJ_EVENT_PAL_cow 0x117A
+#define OBJ_EVENT_PAL_duck_swimming 0x117B
+#define OBJ_EVENT_PAL_duck_walking 0x117C
+#define OBJ_EVENT_PAL_dwarf_1 0x117D
+#define OBJ_EVENT_PAL_dwarf_2 0x117E
+#define OBJ_EVENT_PAL_dwarf_3 0x117F
+#define OBJ_EVENT_PAL_evil_chicken 0x1180
+#define OBJ_EVENT_PAL_guthraptor 0x1181
+#define OBJ_EVENT_PAL_imp 0x1182
+#define OBJ_EVENT_PAL_rat 0x1183
+#define OBJ_EVENT_PAL_raven 0x1184
+#define OBJ_EVENT_PAL_rune_guardian 0x1185
+#define OBJ_EVENT_PAL_sandy 0x1186
+#define OBJ_EVENT_PAL_saraling 0x1187
+#define OBJ_EVENT_PAL_seagull 0x1188
+#define OBJ_EVENT_PAL_sheep 0x1189
+#define OBJ_EVENT_PAL_skeleton_ox_f 0x118A
+#define OBJ_EVENT_PAL_skeleton_ox_m 0x118B
+#define OBJ_EVENT_PAL_snow_imp 0x118C
+#define OBJ_EVENT_PAL_terrorbird_1 0x118D
+#define OBJ_EVENT_PAL_terrorbird_2 0x118E
+#define OBJ_EVENT_PAL_tzhaar_2 0x118F
 
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
@@ -651,6 +676,33 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
 	{gObjectEventPalette_zanik_1, OBJ_EVENT_PAL_zanik_1},
 	{gObjectEventPalette_zanik_2, OBJ_EVENT_PAL_zanik_2},
 	{gObjectEventPalette_zezima, OBJ_EVENT_PAL_zezima},
+	{gObjectEventPalette_basilisk, OBJ_EVENT_PAL_basilisk},
+	{gObjectEventPalette_cavefish, OBJ_EVENT_PAL_cavefish},
+	{gObjectEventPalette_chicken, OBJ_EVENT_PAL_chicken},
+	{gObjectEventPalette_cow, OBJ_EVENT_PAL_cow},
+	{gObjectEventPalette_duck_swimming, OBJ_EVENT_PAL_duck_swimming},
+	{gObjectEventPalette_duck_walking, OBJ_EVENT_PAL_duck_walking},
+	{gObjectEventPalette_dwarf_1, OBJ_EVENT_PAL_dwarf_1},
+	{gObjectEventPalette_dwarf_2, OBJ_EVENT_PAL_dwarf_2},
+	{gObjectEventPalette_dwarf_3, OBJ_EVENT_PAL_dwarf_3},
+	{gObjectEventPalette_evil_chicken, OBJ_EVENT_PAL_evil_chicken},
+	{gObjectEventPalette_guthraptor, OBJ_EVENT_PAL_guthraptor},
+	{gObjectEventPalette_imp, OBJ_EVENT_PAL_imp},
+	{gObjectEventPalette_rat, OBJ_EVENT_PAL_rat},
+	{gObjectEventPalette_raven, OBJ_EVENT_PAL_raven},
+	{gObjectEventPalette_rune_guardian, OBJ_EVENT_PAL_rune_guardian},
+	{gObjectEventPalette_sandy, OBJ_EVENT_PAL_sandy},
+	{gObjectEventPalette_saraling, OBJ_EVENT_PAL_saraling},
+	{gObjectEventPalette_seagull, OBJ_EVENT_PAL_seagull},
+	{gObjectEventPalette_sheep, OBJ_EVENT_PAL_sheep},
+	{gObjectEventPalette_skeleton_ox_f, OBJ_EVENT_PAL_skeleton_ox_f},
+	{gObjectEventPalette_skeleton_ox_m, OBJ_EVENT_PAL_skeleton_ox_m},
+	{gObjectEventPalette_snow_imp, OBJ_EVENT_PAL_snow_imp},
+	{gObjectEventPalette_terrorbird_1, OBJ_EVENT_PAL_terrorbird_1},
+	{gObjectEventPalette_terrorbird_2, OBJ_EVENT_PAL_terrorbird_2},
+	{gObjectEventPalette_tzhaar_2, OBJ_EVENT_PAL_tzhaar_2},
+
+
     {NULL,                  0x0000},
 };
 

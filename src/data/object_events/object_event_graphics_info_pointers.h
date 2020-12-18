@@ -328,6 +328,33 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_zenia;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_zanik_1;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_zanik_2;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_zezima;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_basilisk;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_cavefish;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_chicken;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_cow;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_duck_swimming;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_duck_walking;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_dwarf_1;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_dwarf_2;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_dwarf_3;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_evil_chicken;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_guthraptor;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_imp;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_rat;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_raven;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_rune_guardian;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_sandy;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_saraling;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_seagull;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_sheep;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_skeleton_ox_f;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_skeleton_ox_m;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_snow_imp;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_terrorbird_1;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_terrorbird_2;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_tzhaar_2;
+
+
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -653,6 +680,33 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 	[OBJ_EVENT_GFX_zanik_1] =                  &gObjectEventGraphicsInfo_zanik_1,
 	[OBJ_EVENT_GFX_zanik_2] =                  &gObjectEventGraphicsInfo_zanik_2,
 	[OBJ_EVENT_GFX_zezima] =                   &gObjectEventGraphicsInfo_zezima,
+	[OBJ_EVENT_GFX_basilisk] =               &gObjectEventGraphicsInfo_basilisk,
+	[OBJ_EVENT_GFX_cavefish] =               &gObjectEventGraphicsInfo_cavefish,
+	[OBJ_EVENT_GFX_chicken] =               &gObjectEventGraphicsInfo_chicken,
+	[OBJ_EVENT_GFX_cow] =               &gObjectEventGraphicsInfo_cow,
+	[OBJ_EVENT_GFX_duck_swimming] =               &gObjectEventGraphicsInfo_duck_swimming,
+	[OBJ_EVENT_GFX_duck_walking] =               &gObjectEventGraphicsInfo_duck_walking,
+	[OBJ_EVENT_GFX_dwarf_1] =               &gObjectEventGraphicsInfo_dwarf_1,
+	[OBJ_EVENT_GFX_dwarf_2] =               &gObjectEventGraphicsInfo_dwarf_2,
+	[OBJ_EVENT_GFX_dwarf_3] =               &gObjectEventGraphicsInfo_dwarf_3,
+	[OBJ_EVENT_GFX_evil_chicken] =               &gObjectEventGraphicsInfo_evil_chicken,
+	[OBJ_EVENT_GFX_guthraptor] =               &gObjectEventGraphicsInfo_guthraptor,
+	[OBJ_EVENT_GFX_imp] =               &gObjectEventGraphicsInfo_imp,
+	[OBJ_EVENT_GFX_rat] =               &gObjectEventGraphicsInfo_rat,
+	[OBJ_EVENT_GFX_raven] =               &gObjectEventGraphicsInfo_raven,
+	[OBJ_EVENT_GFX_rune_guardian] =               &gObjectEventGraphicsInfo_rune_guardian,
+	[OBJ_EVENT_GFX_sandy] =               &gObjectEventGraphicsInfo_sandy,
+	[OBJ_EVENT_GFX_saraling] =               &gObjectEventGraphicsInfo_saraling,
+	[OBJ_EVENT_GFX_seagull] =               &gObjectEventGraphicsInfo_seagull,
+	[OBJ_EVENT_GFX_sheep] =               &gObjectEventGraphicsInfo_sheep,
+	[OBJ_EVENT_GFX_skeleton_ox_f] =               &gObjectEventGraphicsInfo_skeleton_ox_f,
+	[OBJ_EVENT_GFX_skeleton_ox_m] =               &gObjectEventGraphicsInfo_skeleton_ox_m,
+	[OBJ_EVENT_GFX_snow_imp] =               &gObjectEventGraphicsInfo_snow_imp,
+	[OBJ_EVENT_GFX_terrorbird_1] =               &gObjectEventGraphicsInfo_terrorbird_1,
+	[OBJ_EVENT_GFX_terrorbird_2] =               &gObjectEventGraphicsInfo_terrorbird_2,
+	[OBJ_EVENT_GFX_tzhaar_2] =               &gObjectEventGraphicsInfo_tzhaar_2,
+
+
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

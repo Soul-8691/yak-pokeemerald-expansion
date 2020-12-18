@@ -324,8 +324,34 @@
 #define OBJ_EVENT_GFX_zanik_1                    319
 #define OBJ_EVENT_GFX_zanik_2                    320
 #define OBJ_EVENT_GFX_zezima                     321
+#define OBJ_EVENT_GFX_basilisk                   322
+#define OBJ_EVENT_GFX_cavefish                   323
+#define OBJ_EVENT_GFX_chicken                    324
+#define OBJ_EVENT_GFX_cow                        325
+#define OBJ_EVENT_GFX_duck_swimming              326
+#define OBJ_EVENT_GFX_duck_walking               327
+#define OBJ_EVENT_GFX_dwarf_1                    328
+#define OBJ_EVENT_GFX_dwarf_2                    329
+#define OBJ_EVENT_GFX_dwarf_3                    330
+#define OBJ_EVENT_GFX_evil_chicken               331
+#define OBJ_EVENT_GFX_guthraptor                 332
+#define OBJ_EVENT_GFX_imp                        333
+#define OBJ_EVENT_GFX_rat                        334
+#define OBJ_EVENT_GFX_raven                      335
+#define OBJ_EVENT_GFX_rune_guardian              336
+#define OBJ_EVENT_GFX_sandy                      337
+#define OBJ_EVENT_GFX_saraling                   338
+#define OBJ_EVENT_GFX_seagull                    339
+#define OBJ_EVENT_GFX_sheep                      340
+#define OBJ_EVENT_GFX_skeleton_ox_f              341
+#define OBJ_EVENT_GFX_skeleton_ox_m              342
+#define OBJ_EVENT_GFX_snow_imp                   343
+#define OBJ_EVENT_GFX_terrorbird_1               344
+#define OBJ_EVENT_GFX_terrorbird_2               345
+#define OBJ_EVENT_GFX_tzhaar_2                   346
 
-#define NUM_OBJ_EVENT_GFX                        322
+
+#define NUM_OBJ_EVENT_GFX                        347
 
 
 // These are dynamic object gfx ids.

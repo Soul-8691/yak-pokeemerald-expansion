@@ -1588,7 +1588,9 @@ static const u8 sBlackScaleDesc[] = _(
 static const u8 sFragmentOfJasDesc[] = _(
     "MEGA EVOLUTION");	
 	
-	
-	
+static const u8 sPouchNormalDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
 
 

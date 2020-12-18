@@ -5204,6 +5204,19 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },	
 	
+    [ITEM_POUCH_NORMAL] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_POUCH_NORMAL,
+        .price = 200,
+        .description = sPouchNormalDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
 	
 	
 	

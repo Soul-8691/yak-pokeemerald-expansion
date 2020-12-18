@@ -140,6 +140,58 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_chicken",
+      "x": 40,
+      "y": 26,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route_1_Chicken_Battle_Script1",
+      "flag": "FLAG_UNUSED_0x020"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_chicken",
+      "x": 45,
+      "y": 26,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route_1_Chicken_Battle_Script2",
+      "flag": "FLAG_UNUSED_0x022"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_chicken",
+      "x": 43,
+      "y": 29,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route_1_Chicken_Battle_Script3",
+      "flag": "FLAG_UNUSED_0x021"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_evil_chicken",
+      "x": 43,
+      "y": 27,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route_1_EvilChicken_Battle_Script",
+      "flag": "FLAG_UNUSED_0x023"
     }
   ],
   "warp_events": [

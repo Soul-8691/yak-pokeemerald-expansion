@@ -58,24 +58,44 @@ Script_Maggie_2:
 	end
 	
 Text_DIALOG_5_Maggie:
-	.string "Oh hi its cha again!$"		
+	.string "Oh hi!\n"
+	.string "It's cha again!$"		
 	
 	
 	
 	
 	
 	
-Script_Wendy::
-	msgbox Text_Wendy, MSGBOX_NPC
+Script_Wendy_1::
+	lock
+	faceplayer
+	goto_if_defeated TRAINER_MAGGIE, Script_Wendy_2
+	msgbox Text_Wendy_1, MSGBOX_NPC
+	release
 	end
+	
+Text_Wendy_1:
+	.string "Seems like Maggie over there is urging\n"
+	.string "for a battle.\p"
+	.string "Stop by once in awhile for a quick fix\n"
+	.string "won't you?$"
 
-Text_Wendy:
-	.string "Hi!\n"
-	.string "My name is Wendy.$"
+
+Script_Wendy_2:	
+	msgbox Text_Wendy_2, MSGBOX_NPC
+	release
+	end
 	
+Text_Wendy_2:
+	.string "Hey how's it going?\n"
+	.string "Maggie has been in a better mood since\l"
+	.string "your last battle.\p"
+	.string "She usually becomes to irritating to be\n"
+	.string "around without her battle fix.$"
 	
+
 	
-	
+
 	
 Script_SkeletalOx::
 	lock
@@ -85,6 +105,24 @@ Script_SkeletalOx::
 
 Text_SkeletalOx:
 	.string "Baroo!$"
+
+
+
+Script_Cauldron::
+	lock
+	msgbox Text_Cauldron, MSGBOX_DEFAULT
+	release
+	end
+
+Text_Cauldron:
+	.string "Something smells... Interesting.$"
+
+
+
+
+
+
+
 
 
 

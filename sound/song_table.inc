@@ -611,8 +611,18 @@ gSongTable:: @ 86B49F0
 	song ph_nurse_blend, 2, 2
 	song ph_nurse_held, 2, 2
 	song ph_nurse_solo, 2, 2
-	song a_pokescape_mus_battle, 0, 0
-	song pokescape_encounter_strongtrainer, 0, 0
+	song mus_pokescape_encounter_pker, 0, 0
+	song mus_pokescape_route_asgarnia, 0, 0
+	song mus_pokescape_wizards_tower, 0, 0
+	song mus_pokescape_port_sarim, 0, 0
+	song mus_pokescape_falador, 0, 0
+	song mus_pokescape_forest, 0, 0
+	song mus_pokescape_cave, 0, 0
+	song mus_pokescape_bank, 0, 0
+	song mus_pokescape_general_store, 0, 0
+	song mus_pokescape_surfing, 0, 0
+	song mus_pokescape_terrorbird, 0, 0
+	song mus_pokescape_quest_complete, 0, 0
 
 	.align 2
 dummy_song_header: @ 86B5D00

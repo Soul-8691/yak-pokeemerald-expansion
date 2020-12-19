@@ -1231,8 +1231,19 @@ SECTIONS {
         sound/songs/midi/ph_nurse_blend.o(.rodata);
         sound/songs/midi/ph_nurse_held.o(.rodata);
         sound/songs/midi/ph_nurse_solo.o(.rodata);
-		sound/songs/midi/a_pokescape_mus_battle.o(.rodata);
-		sound/songs/midi/pokescape_encounter_strongtrainer.o(.rodata);
+		sound/songs/midi/mus_pokescape_encounter_pker.o(.rodata);
+		sound/songs/midi/mus_pokescape_route_asgarnia.o(.rodata);
+		sound/songs/midi/mus_pokescape_wizards_tower.o(.rodata);
+		sound/songs/midi/mus_pokescape_port_sarim.o(.rodata);
+		sound/songs/midi/mus_pokescape_falador.o(.rodata);
+		sound/songs/midi/mus_pokescape_forest.o(.rodata);
+		sound/songs/midi/mus_pokescape_cave.o(.rodata);
+		sound/songs/midi/mus_pokescape_bank.o(.rodata);
+		sound/songs/midi/mus_pokescape_general_store.o(.rodata);
+		sound/songs/midi/mus_pokescape_surfing.o(.rodata);
+		sound/songs/midi/mus_pokescape_terrorbird.o(.rodata);
+		sound/songs/midi/mus_pokescape_quest_complete.o(.rodata);
+
     } =0
 
     lib_rodata :

@@ -2,7 +2,7 @@
   "id": "MAP_MILL_LANE_MILL",
   "name": "Mill_Lane_Mill",
   "layout": "LAYOUT_MILL_LANE_MILL",
-  "music": "MUS_ROUTE113",
+  "music": "MUS_POKESCAPE_CAVE",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

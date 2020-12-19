@@ -2,7 +2,7 @@
   "id": "MAP_DRAYNOR_MANOR",
   "name": "Draynor_Manor",
   "layout": "LAYOUT_DRAYNOR_MANOR",
-  "music": "MUS_RG_SEVII_DUNGEON",
+  "music": "MUS_POKESCAPE_FOREST",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

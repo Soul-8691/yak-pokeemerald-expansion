@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE3",
   "name": "Route3",
   "layout": "LAYOUT_ROUTE3",
-  "music": "MUS_EVER_GRANDE",
+  "music": "MUS_POKESCAPE_WIZARDS_TOWER",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -31,7 +31,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_wendy",
       "x": 8,
       "y": 5,
       "elevation": 3,
@@ -40,11 +40,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Script_Wendy",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_maggie",
       "x": 11,
       "y": 4,
       "elevation": 3,
@@ -53,11 +53,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Script_Maggie_1",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BIG_REGICE_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_skeleton_ox_m",
       "x": 13,
       "y": 6,
       "elevation": 3,
@@ -66,11 +66,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Script_SkeletalOx",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "graphics_id": "OBJ_EVENT_GFX_skiller_1",
       "x": 14,
       "y": 9,
       "elevation": 3,
@@ -79,7 +79,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Script_Skiller_Trainer",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_skeleton_ox_f",
+      "x": 9,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Script_SkeletalOx",
       "flag": "0"
     }
   ],

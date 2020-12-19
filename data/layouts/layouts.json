@@ -5190,6 +5190,16 @@
       "secondary_tileset": "gTileset_Lumbridge",
       "border_filepath": "data/layouts/Route1_House_1/border.bin",
       "blockdata_filepath": "data/layouts/Route1_House_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_FOREST",
+      "name": "Lumbridge_Forest_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp",
+      "border_filepath": "data/layouts/Lumbridge_Forest/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Forest/map.bin"
     }
   ]
 }

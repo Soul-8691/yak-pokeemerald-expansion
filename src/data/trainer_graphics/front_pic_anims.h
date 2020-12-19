@@ -370,6 +370,14 @@ static const union AnimCmd *const sAnims_RubySapphireMay[] ={
     sAnim_GeneralFrame0,
 };
 
+//POKESCAPE
+static const union AnimCmd *const sAnims_Maggie[] ={
+    sAnim_GeneralFrame0,
+};
+
+
+
+
 const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
 {
     [TRAINER_PIC_HIKER] = sAnims_Hiker,
@@ -465,4 +473,6 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_LEAF] = sAnims_Leaf,
     [TRAINER_PIC_RS_BRENDAN] = sAnims_RubySapphireBrendan,
     [TRAINER_PIC_RS_MAY] = sAnims_RubySapphireMay,
+	//POKESCAPE
+	[TRAINER_PIC_MAGGIE] = sAnims_Maggie,
 };

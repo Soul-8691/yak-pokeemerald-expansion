@@ -28,7 +28,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 32,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_LUMBRIDGE_FOREST",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 33,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_LUMBRIDGE_FOREST",
+      "dest_warp_id": 2
+    }
   ],
   "coord_events": [
 

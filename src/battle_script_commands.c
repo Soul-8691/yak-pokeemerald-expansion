@@ -877,7 +877,7 @@ static const u8 sBallCatchBonuses[] =
     [ITEM_ULTRA_BALL - ITEM_ULTRA_BALL]  = 20,
     [ITEM_GREAT_BALL - ITEM_ULTRA_BALL]  = 15,
     [ITEM_POKE_BALL - ITEM_ULTRA_BALL]   = 10,
-    [ITEM_SAFARI_BALL - ITEM_ULTRA_BALL] = 15
+    [ITEM_SAFARI_BALL - ITEM_ULTRA_BALL] = 15,
 };
 
 // In Battle Palace, moves are chosen based on the pokemons nature rather than by the player
@@ -11658,6 +11658,18 @@ static void Cmd_handleballthrow(void)
                 if (ballMultiplier > 40)
                     ballMultiplier = 40;
                 break;
+			case ITEM_NORMAL_POUCH:
+			case ITEM_BRONZE_POUCH:
+			case ITEM_IRON_POUCH:
+			case ITEM_STEEL_POUCH:
+			case ITEM_BLACK_POUCH:
+			case ITEM_MITHRIL_POUCH:
+			case ITEM_ADAMANT_POUCH:
+			case ITEM_RUNE_POUCH:
+			case ITEM_DRAGON_POUCH:
+			case ITEM_CRYSTAL_POUCH:
+				ballMultiplier = 70;
+				break;
             case ITEM_LUXURY_BALL:
             case ITEM_PREMIER_BALL:
                 ballMultiplier = 10;

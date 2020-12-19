@@ -35,7 +35,8 @@ Script_GnomeBoiKevin::
 //	giveitem ITEM_BLUE_SCALE, 10
 //	giveitem ITEM_GREEN_SCALE, 10
 //	giveitem ITEM_BLACK_SCALE, 10
-	giveitem ITEM_POUCH_NORMAL, 10
+	giveitem ITEM_NORMAL_POUCH, 10
+	giveitem ITEM_RUNE_POUCH, 10
 //	giveitem ITEM_FRAGMENT_OF_JAS, 1
 //	giveitem ITEM_EVERSTONE, 1
 

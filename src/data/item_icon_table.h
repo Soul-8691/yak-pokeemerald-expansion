@@ -429,7 +429,16 @@ const u32 *const gItemIconTable[][2] =
 	[ITEM_GREEN_SCALE] = {gItemIcon_GreenScale, gItemIconPalette_GreenScale},	
 	[ITEM_BLACK_SCALE] = {gItemIcon_BlackScale, gItemIconPalette_BlackScale},	
 	[ITEM_FRAGMENT_OF_JAS] = {gItemIcon_FragmentOfJas, gItemIconPalette_FragmentOfJas},	
-	[ITEM_POUCH_NORMAL] = {gItemIcon_PouchNormal, gItemIconPalette_PouchNormal},	
+	[ITEM_NORMAL_POUCH] = {gItemIcon_NormalPouch, gItemIconPalette_NormalPouch},	
+	[ITEM_BRONZE_POUCH] = {gItemIcon_BronzePouch, gItemIconPalette_BronzePouch},
+	[ITEM_IRON_POUCH] = {gItemIcon_IronPouch, gItemIconPalette_IronPouch},
+	[ITEM_STEEL_POUCH] = {gItemIcon_SteelPouch, gItemIconPalette_SteelPouch},
+	[ITEM_BLACK_POUCH] = {gItemIcon_BlackPouch, gItemIconPalette_BlackPouch},
+	[ITEM_MITHRIL_POUCH] = {gItemIcon_MithrilPouch, gItemIconPalette_MithrilPouch},
+	[ITEM_ADAMANT_POUCH] = {gItemIcon_AdamantPouch, gItemIconPalette_AdamantPouch},
+	[ITEM_RUNE_POUCH] = {gItemIcon_RunePouch, gItemIconPalette_RunePouch},
+	[ITEM_DRAGON_POUCH] = {gItemIcon_DragonPouch, gItemIconPalette_DragonPouch},
+	[ITEM_CRYSTAL_POUCH] = {gItemIcon_CrystalPouch, gItemIconPalette_CrystalPouch},
 	
     // Return to field arrow
     [ITEM_FIELD_ARROW] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},

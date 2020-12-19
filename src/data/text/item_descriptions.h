@@ -1588,9 +1588,56 @@ static const u8 sBlackScaleDesc[] = _(
 static const u8 sFragmentOfJasDesc[] = _(
     "MEGA EVOLUTION");	
 	
-static const u8 sPouchNormalDesc[] = _(
+static const u8 sNormalPouchDesc[] = _(
     "A tool used for\n"
     "catching wild\n"
     "POKéMON.");
+	
+static const u8 sBronzePouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sIronPouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sSteelPouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sBlackPouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sMithrilPouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sAdamantPouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sRunePouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sDragonPouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sCrystalPouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+
 
 

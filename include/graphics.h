@@ -30,6 +30,38 @@ extern const u32 gInterfaceGfx_LuxuryBall[];
 extern const u32 gInterfacePal_LuxuryBall[];
 extern const u32 gInterfaceGfx_PremierBall[];
 extern const u32 gInterfacePal_PremierBall[];
+//pokescape
+extern const u32 gInterfaceGfx_NormalPouch[];
+extern const u32 gInterfacePal_NormalPouch[];
+
+extern const u32 gInterfaceGfx_BronzePouch[];
+extern const u32 gInterfacePal_BronzePouch[];
+
+extern const u32 gInterfaceGfx_IronPouch[];
+extern const u32 gInterfacePal_IronPouch[];
+
+extern const u32 gInterfaceGfx_SteelPouch[];
+extern const u32 gInterfacePal_SteelPouch[];
+
+extern const u32 gInterfaceGfx_BlackPouch[];
+extern const u32 gInterfacePal_BlackPouch[];
+
+extern const u32 gInterfaceGfx_MithrilPouch[];
+extern const u32 gInterfacePal_MithrilPouch[];
+
+extern const u32 gInterfaceGfx_AdamantPouch[];
+extern const u32 gInterfacePal_AdamantPouch[];
+
+extern const u32 gInterfaceGfx_RunePouch[];
+extern const u32 gInterfacePal_RunePouch[];
+
+extern const u32 gInterfaceGfx_DragonPouch[];
+extern const u32 gInterfacePal_DragonPouch[];
+
+extern const u32 gInterfaceGfx_CrystalPouch[];
+extern const u32 gInterfacePal_CrystalPouch[];
+
+
 extern const u32 gOpenPokeballGfx[];
 
 // pokemon gfx
@@ -7746,6 +7778,39 @@ extern const u32 gItemIcon_TimerBall[];
 extern const u32 gItemIcon_LuxuryBall[];
 extern const u32 gItemIconPalette_LuxuryBall[];
 extern const u32 gItemIcon_PremierBall[];
+
+//pokescape pokeballs
+extern const u32 gItemIconPalette_NormalPouch[];
+extern const u32 gItemIcon_NormalPouch[];
+
+extern const u32 gItemIconPalette_BronzePouch[];
+extern const u32 gItemIcon_BronzePouch[];
+
+extern const u32 gItemIconPalette_IronPouch[];
+extern const u32 gItemIcon_IronPouch[];
+
+extern const u32 gItemIconPalette_SteelPouch[];
+extern const u32 gItemIcon_SteelPouch[];
+
+extern const u32 gItemIconPalette_BlackPouch[];
+extern const u32 gItemIcon_BlackPouch[];
+
+extern const u32 gItemIconPalette_MithrilPouch[];
+extern const u32 gItemIcon_MithrilPouch[];
+
+extern const u32 gItemIconPalette_AdamantPouch[];
+extern const u32 gItemIcon_AdamantPouch[];
+
+extern const u32 gItemIconPalette_RunePouch[];
+extern const u32 gItemIcon_RunePouch[];
+
+extern const u32 gItemIconPalette_DragonPouch[];
+extern const u32 gItemIcon_DragonPouch[];
+
+extern const u32 gItemIconPalette_CrystalPouch[];
+extern const u32 gItemIcon_CrystalPouch[];
+
+
 // Medicine
 extern const u32 gItemIcon_Potion[];
 extern const u32 gItemIconPalette_Potion[];

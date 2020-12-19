@@ -817,9 +817,35 @@ const u32 gItemIconPalette_GreenScale[] = INCBIN_U32("graphics/items/pokescape_i
 const u32 gItemIcon_FragmentOfJas[] = INCBIN_U32("graphics/items/pokescape_icons/fragment_of_jas.4bpp.lz");
 const u32 gItemIconPalette_FragmentOfJas[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fragment_of_jas.gbapal.lz");  
 
-const u32 gItemIcon_PouchNormal[] = INCBIN_U32("graphics/items/pokescape_icons/pouch_normal.4bpp.lz");
-const u32 gItemIconPalette_PouchNormal[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/pouch_normal.gbapal.lz");  
+const u32 gItemIcon_NormalPouch[] = INCBIN_U32("graphics/items/pokescape_icons/normal_pouch.4bpp.lz");
+const u32 gItemIconPalette_NormalPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/normal_pouch.gbapal.lz");  
 
+const u32 gItemIcon_BronzePouch[] = INCBIN_U32("graphics/items/pokescape_icons/bronze_pouch.4bpp.lz");
+const u32 gItemIconPalette_BronzePouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/bronze_pouch.gbapal.lz");  
+
+const u32 gItemIcon_IronPouch[] = INCBIN_U32("graphics/items/pokescape_icons/iron_pouch.4bpp.lz");
+const u32 gItemIconPalette_IronPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/iron_pouch.gbapal.lz"); 
+
+const u32 gItemIcon_SteelPouch[] = INCBIN_U32("graphics/items/pokescape_icons/steel_pouch.4bpp.lz");
+const u32 gItemIconPalette_SteelPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/steel_pouch.gbapal.lz");
+
+const u32 gItemIcon_BlackPouch[] = INCBIN_U32("graphics/items/pokescape_icons/black_pouch.4bpp.lz");
+const u32 gItemIconPalette_BlackPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/black_pouch.gbapal.lz"); 
+
+const u32 gItemIcon_MithrilPouch[] = INCBIN_U32("graphics/items/pokescape_icons/mithril_pouch.4bpp.lz");
+const u32 gItemIconPalette_MithrilPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/mithril_pouch.gbapal.lz"); 
+
+const u32 gItemIcon_AdamantPouch[] = INCBIN_U32("graphics/items/pokescape_icons/adamant_pouch.4bpp.lz");
+const u32 gItemIconPalette_AdamantPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/adamant_pouch.gbapal.lz"); 
+
+const u32 gItemIcon_RunePouch[] = INCBIN_U32("graphics/items/pokescape_icons/rune_pouch.4bpp.lz");
+const u32 gItemIconPalette_RunePouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/rune_pouch.gbapal.lz"); 
+
+const u32 gItemIcon_DragonPouch[] = INCBIN_U32("graphics/items/pokescape_icons/dragon_pouch.4bpp.lz");
+const u32 gItemIconPalette_DragonPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/dragon_pouch.gbapal.lz");
+
+const u32 gItemIcon_CrystalPouch[] = INCBIN_U32("graphics/items/pokescape_icons/crystal_pouch.4bpp.lz");
+const u32 gItemIconPalette_CrystalPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/crystal_pouch.gbapal.lz"); 
 
 
 

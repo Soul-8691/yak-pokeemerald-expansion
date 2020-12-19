@@ -5204,18 +5204,136 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },	
 	
-    [ITEM_POUCH_NORMAL] =
+    [ITEM_NORMAL_POUCH] =
     {
         .name = _("POUCH"),
-        .itemId = ITEM_POUCH_NORMAL,
+        .itemId = ITEM_NORMAL_POUCH,
         .price = 200,
-        .description = sPouchNormalDesc,
+        .description = sNormalPouchDesc,
         .pocket = POCKET_POKE_BALLS,
         .type = 3,
         .battleUsage = 2,
         .battleUseFunc = ItemUseInBattle_PokeBall,
         .secondaryId = 3,
     },
+	   
+	[ITEM_BRONZE_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_BRONZE_POUCH,
+        .price = 200,
+        .description = sBronzePouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+    [ITEM_IRON_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_IRON_POUCH,
+        .price = 200,
+        .description = sIronPouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+    [ITEM_STEEL_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_STEEL_POUCH,
+        .price = 200,
+        .description = sSteelPouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+    [ITEM_BLACK_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_BLACK_POUCH,
+        .price = 200,
+        .description = sBlackPouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+    [ITEM_MITHRIL_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_MITHRIL_POUCH,
+        .price = 200,
+        .description = sMithrilPouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+    [ITEM_ADAMANT_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_ADAMANT_POUCH,
+        .price = 200,
+        .description = sAdamantPouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+    [ITEM_RUNE_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_RUNE_POUCH,
+        .price = 200,
+        .description = sRunePouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+    [ITEM_DRAGON_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_DRAGON_POUCH,
+        .price = 200,
+        .description = sDragonPouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+    [ITEM_CRYSTAL_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_CRYSTAL_POUCH,
+        .price = 200,
+        .description = sCrystalPouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
 	
 	
 	

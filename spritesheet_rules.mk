@@ -1002,3 +1002,32 @@ $(OBJEVENTGFXDIR)/pokescape_overworlds/guthraptor.4bpp: %.4bpp: %.png
 	
 $(OBJEVENTGFXDIR)/pokescape_overworlds/basilisk.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_male/walking.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+	
+$(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_male/running.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+	
+$(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_male/fishing.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+	
+$(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_male/surfing.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

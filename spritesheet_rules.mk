@@ -1003,6 +1003,7 @@ $(OBJEVENTGFXDIR)/pokescape_overworlds/guthraptor.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokescape_overworlds/basilisk.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+
 $(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_male/walking.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 	
@@ -1015,11 +1016,30 @@ $(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_male/fishing.4bpp: %.4bpp: %.
 $(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_male/surfing.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 	
+$(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_male/terrorbird.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+	
+$(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_male/underwater.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4	
 	
 	
+$(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_female/walking.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
 	
+$(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_female/running.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
 	
+$(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_female/fishing.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
 	
+$(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_female/surfing.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+	
+$(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_female/terrorbird.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+	
+$(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_female/underwater.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4		
 	
 	
 	

@@ -4,7 +4,7 @@ Lumbridge_MapScripts::
 
 
 Script_GnomeBoiKevin::
-	msgbox Text_GnomeBoiKevin_1, MSGBOX_NPC
+//	msgbox Text_GnomeBoiKevin_1, MSGBOX_NPC
 	
 	
 
@@ -35,7 +35,7 @@ Script_GnomeBoiKevin::
 //	giveitem ITEM_BLUE_SCALE, 10
 //	giveitem ITEM_GREEN_SCALE, 10
 //	giveitem ITEM_BLACK_SCALE, 10
-	giveitem ITEM_POUCH_NORMAL, 10
+
 //	giveitem ITEM_FRAGMENT_OF_JAS, 1
 //	giveitem ITEM_EVERSTONE, 1
 
@@ -51,14 +51,24 @@ Script_GnomeBoiKevin::
 //	checkitem ITEM_MACH_BIKE, 1
 //	compare VAR_RESULT, 1
 //	goto_if_eq HaveMACH_BIKE
-//	giveitem ITEM_MACH_BIKE, 1
+	giveitem ITEM_MACH_BIKE, 1
 	
 	
-//	giveitem ITEM_OLD_ROD, 1
-//	giveitem ITEM_GOOD_ROD, 1
-//	giveitem ITEM_SUPER_ROD, 1
+	giveitem ITEM_OLD_ROD, 1
+	giveitem ITEM_GOOD_ROD, 1
+	giveitem ITEM_SUPER_ROD, 1
 //	giveitem ITEM_BICYCLE, 1
-//	giveitem ITEM_ACRO_BIKE, 1
+	giveitem ITEM_ACRO_BIKE, 1
+
+	setflag FLAG_BADGE05_GET
+	giveitem ITEM_HM01
+	giveitem ITEM_HM02
+	giveitem ITEM_HM03
+	giveitem ITEM_HM04
+	giveitem ITEM_HM05
+	giveitem ITEM_HM06
+	giveitem ITEM_HM07
+	giveitem ITEM_HM08
 	
 	
 	msgbox Text_GnomeBoiKevin_2, MSGBOX_NPC

@@ -552,6 +552,7 @@
 #define MUS_POKESCAPE_SURFING			619
 #define MUS_POKESCAPE_TERRORBIRD		620
 #define MUS_POKESCAPE_QUEST_COMPLETE	621
+#define MUS_POKESCAPE_ROUTE_BEGINNING	622
 
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().

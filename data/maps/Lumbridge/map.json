@@ -419,6 +419,13 @@
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_CASTLE_1",
       "dest_warp_id": 0
+    },
+    {
+      "x": 18,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_UNDERWATER_ROUTE129",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

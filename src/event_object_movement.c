@@ -8450,12 +8450,6 @@ static void (*const sGroundEffectFuncs[])(struct ObjectEvent *objEvent, struct S
     GroundEffect_StepOnTallGrass,       // GROUND_EFFECT_FLAG_TALL_GRASS_ON_MOVE
     GroundEffect_SpawnOnLongGrass,      // GROUND_EFFECT_FLAG_LONG_GRASS_ON_SPAWN
     GroundEffect_StepOnLongGrass,       // GROUND_EFFECT_FLAG_LONG_GRASS_ON_MOVE
-	
-	
-	//pokescape
-	GroundEffect_StepOnWheat,
-	GroundEffect_SpawnOnWheat,
-	
     GroundEffect_WaterReflection,       // GROUND_EFFECT_FLAG_ICE_REFLECTION
     GroundEffect_IceReflection,         // GROUND_EFFECT_FLAG_REFLECTION
     GroundEffect_FlowingWater,          // GROUND_EFFECT_FLAG_SHALLOW_FLOWING_WATER
@@ -8471,7 +8465,10 @@ static void (*const sGroundEffectFuncs[])(struct ObjectEvent *objEvent, struct S
     GroundEffect_JumpLandingDust,       // GROUND_EFFECT_FLAG_LAND_ON_NORMAL_GROUND
     GroundEffect_ShortGrass,            // GROUND_EFFECT_FLAG_SHORT_GRASS
     GroundEffect_HotSprings,            // GROUND_EFFECT_FLAG_HOT_SPRINGS
-    GroundEffect_Seaweed                // GROUND_EFFECT_FLAG_SEAWEED
+    GroundEffect_Seaweed,               // GROUND_EFFECT_FLAG_SEAWEED
+    //pokescape
+    GroundEffect_SpawnOnWheat,          // GROUND_EFFECT_FLAG_WHEAT_ON_SPAWN
+    GroundEffect_StepOnWheat,           // GROUND_EFFECT_FLAG_WHEAT_ON_MOVE
 };
 
 static void DoFlaggedGroundEffects(struct ObjectEvent *objEvent, struct Sprite *sprite, u32 flags)

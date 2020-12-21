@@ -123,6 +123,6 @@
 #define FLDEFF_PAL_TAG_HOF_MONITOR        0x1010
 #define FLDEFF_PAL_TAG_UNKNOWN            0x1011
 #define FLDEFF_PAL_TAG_SURF_BLOB          0x1012
-#define FLDEFF_PAL_TAG_WHEAT         0x1013
+#define FLDEFF_PAL_TAG_WHEAT              0x1013
 
 #endif // GUARD_FIELD_EFFECT_CONSTANTS_H

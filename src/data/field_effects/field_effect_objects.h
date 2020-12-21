@@ -1,7 +1,7 @@
 const struct SpritePalette gSpritePalette_GeneralFieldEffect0 = {gFieldEffectObjectPalette0,            FLDEFF_PAL_TAG_GENERAL_0};
 const struct SpritePalette gSpritePalette_GeneralFieldEffect1 = {gFieldEffectObjectPalette1,            FLDEFF_PAL_TAG_GENERAL_1};
 const struct SpritePalette gSpritePalette_SurfBlob            = {gFieldEffectObjectPic_SurfBlobPalette, FLDEFF_PAL_TAG_SURF_BLOB};
-const struct SpritePalette gSpritePalette_Wheat           = {gFieldEffectObjectPic_WheatPalette, FLDEFF_PAL_TAG_WHEAT};
+const struct SpritePalette gSpritePalette_Wheat               = {gFieldEffectObjectPic_WheatPalette,    FLDEFF_PAL_TAG_WHEAT};
 
 static const union AnimCmd sAnim_Shadow[] =
 {
@@ -1324,5 +1324,5 @@ const struct SpriteTemplate gFieldEffectObjectTemplate_Wheat = {
     .anims = sAnimTable_Wheat,
     .images = sPicTable_Wheat,
     .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = UpdateLongGrassFieldEffect,
+    .callback = UpdateWheatFieldEffect,
 };

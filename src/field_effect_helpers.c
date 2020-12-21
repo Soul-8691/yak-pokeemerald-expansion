@@ -1629,17 +1629,12 @@ static const u8 gUnknown_085CDC6E[] =
 
 //pokescape 
 
-extern const struct SpritePalette gSpritePalette_Wheat;
-
 u32 FldEff_Wheat(void)
 {
     s16 x;
     s16 y;
     u8 spriteId;
     struct Sprite *sprite;
-	LoadSpritePalette(&gSpritePalette_Wheat);
-    UpdatePaletteGammaType(IndexOfSpritePaletteTag(gSpritePalette_Wheat.tag), GAMMA_NORMAL);
-    UpdateSpritePaletteWithWeather(IndexOfSpritePaletteTag(gSpritePalette_Wheat.tag));
     x = gFieldEffectArguments[0];
     y = gFieldEffectArguments[1];
     SetSpritePosToOffsetMapCoords(&x, &y, 8, 8);

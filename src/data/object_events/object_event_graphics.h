@@ -286,6 +286,7 @@ const u32 gObjectEventPic_LansatBerryTree[] = INCBIN_U32("graphics/object_events
 const u32 gObjectEventPic_DurinBerryTree[] = INCBIN_U32("graphics/object_events/pics/berry_trees/durin.4bpp");
 const u32 gObjectEventPic_TamatoBerryTree[] = INCBIN_U32("graphics/object_events/pics/berry_trees/tamato.4bpp");
 const u32 gFieldEffectObjectPic_SurfBlob[] = INCBIN_U32("graphics/field_effects/pics/surf_blob.4bpp");
+const u16 gFieldEffectObjectPic_SurfBlobPalette[] = INCBIN_U16("graphics/field_effects/pics/surf_blob.gbapal");
 const u32 gObjectEventPic_QuintyPlump[] = INCBIN_U32("graphics/object_events/pics/people/quinty_plump.4bpp");
 const u16 gObjectEventPalette12[] = INCBIN_U16("graphics/object_events/palettes/12.gbapal");
 const u16 gObjectEventPalette13[] = INCBIN_U16("graphics/object_events/palettes/13.gbapal");

@@ -928,11 +928,16 @@ static void UpdateAshFieldEffect_Step2(struct Sprite *sprite)
         FieldEffectStop(sprite, FLDEFF_ASH);
 }
 
+extern const struct SpritePalette gSpritePalette_SurfBlob;
+
 u32 FldEff_SurfBlob(void)
 {
     u8 spriteId;
     struct Sprite *sprite;
 
+    LoadSpritePalette(&gSpritePalette_SurfBlob);
+    UpdatePaletteGammaType(IndexOfSpritePaletteTag(gSpritePalette_SurfBlob.tag), GAMMA_NORMAL);
+    UpdateSpritePaletteWithWeather(IndexOfSpritePaletteTag(gSpritePalette_SurfBlob.tag));
     SetSpritePosToOffsetMapCoords((s16 *)&gFieldEffectArguments[0], (s16 *)&gFieldEffectArguments[1], 8, 8);
     spriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_SURF_BLOB], gFieldEffectArguments[0], gFieldEffectArguments[1], 0x96);
     if (spriteId != MAX_SPRITES)

@@ -359,13 +359,18 @@ u8 FindTallGrassFieldEffectSpriteId(u8 localId, u8 mapNum, u8 mapGroup, s16 x, s
     return MAX_SPRITES;
 }
 
+
+extern const struct SpritePalette gSpritePalette_LongGrass;
+
 u32 FldEff_LongGrass(void)
 {
     s16 x;
     s16 y;
     u8 spriteId;
     struct Sprite *sprite;
-
+	LoadSpritePalette(&gSpritePalette_LongGrass);
+    UpdatePaletteGammaType(IndexOfSpritePaletteTag(gSpritePalette_LongGrass.tag), GAMMA_NORMAL);
+    UpdateSpritePaletteWithWeather(IndexOfSpritePaletteTag(gSpritePalette_LongGrass.tag));
     x = gFieldEffectArguments[0];
     y = gFieldEffectArguments[1];
     SetSpritePosToOffsetMapCoords(&x, &y, 8, 8);

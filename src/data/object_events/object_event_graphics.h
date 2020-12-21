@@ -703,6 +703,9 @@ const u32 gObjectEventPic_MaySurfing[] = INCBIN_U32("graphics/object_events/pics
 const u32 gObjectEventPic_MayMachBike[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_female/terrorbird.4bpp");
 const u32 gObjectEventPic_MayUnderwater[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_female/underwater.4bpp");
 
+const u32 gFieldEffectObjectPic_Wheat[] = INCBIN_U32("graphics/field_effects/pics/wheat.4bpp");
+const u16 gFieldEffectObjectPic_WheatPalette[] = INCBIN_U16("graphics/field_effects/pics/wheat.gbapal");
+
 
 
 

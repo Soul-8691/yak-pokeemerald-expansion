@@ -586,7 +586,7 @@ bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavi
 			
 			
 			//pokescape long grass serpate encounters
-			if (MetatileBehavior_IsLongGrass(currMetaTileBehavior) == TRUE){
+			if (MetatileBehavior_IsWheat(currMetaTileBehavior) == TRUE){
 				if (gWildMonHeaders[headerId].landMonsInfo == NULL)
 					return FALSE;
 				else if (previousMetaTileBehavior != currMetaTileBehavior && !DoGlobalWildEncounterDiceRoll())

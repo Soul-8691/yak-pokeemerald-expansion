@@ -242,5 +242,8 @@
 #define MB_UNUSED_EE 0xEE
 #define MB_UNUSED_EF 0xEF
 
+//pokescape
+#define MB_WHEAT 0xF0
+
 
 #endif // GUARD_METATILE_BEHAVIORS

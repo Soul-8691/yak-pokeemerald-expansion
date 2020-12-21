@@ -250,6 +250,9 @@ static const u8 sTileBitAttributes[] =
     [MB_UNUSED_ED] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_UNUSED_EE] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
     [MB_UNUSED_EF] = TILE_ATTRIBUTES(FALSE, FALSE, FALSE),
+	
+	//pokescape
+	[MB_WHEAT] = TILE_ATTRIBUTES(TRUE,FALSE,TRUE),
 };
 
 bool8 MetatileBehavior_IsATile(u8 metatileBehavior)
@@ -299,7 +302,7 @@ bool8 MetatileBehavior_IsJumpSouth(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsPokeGrass(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_TALL_GRASS || metatileBehavior == MB_LONG_GRASS)
+    if (metatileBehavior == MB_TALL_GRASS || metatileBehavior == MB_LONG_GRASS || metatileBehavior == MB_WHEAT)
         return TRUE;
     else
         return FALSE;
@@ -865,6 +868,8 @@ bool8 MetatileBehavior_IsLongGrass(u8 metatileBehavior)
     else
         return FALSE;
 }
+
+
 
 bool8 MetatileBehavior_IsBerryTreeSoil(u8 metatileBehavior)
 {
@@ -1567,6 +1572,17 @@ bool8 MetatileBehavior_IsSidewaysStairsLeftSideAny(u8 metatileBehavior)
 bool8 MetatileBehavior_IsRockStairs(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_ROCK_STAIRS)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+
+//pokescape
+
+bool8 MetatileBehavior_IsWheat(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_WHEAT)
         return TRUE;
     else
         return FALSE;

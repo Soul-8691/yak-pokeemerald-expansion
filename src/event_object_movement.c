@@ -87,6 +87,10 @@ static void GetGroundEffectFlags_Puddle(struct ObjectEvent*, u32*);
 static void GetGroundEffectFlags_Ripple(struct ObjectEvent*, u32*);
 static void GetGroundEffectFlags_Seaweed(struct ObjectEvent*, u32*);
 static void GetGroundEffectFlags_JumpLanding(struct ObjectEvent*, u32*);
+//pokescape
+static void GetGroundEffectFlags_WheatOnSpawn(struct ObjectEvent*, u32*);
+static void GetGroundEffectFlags_WheatOnBeginStep(struct ObjectEvent*, u32*);
+
 static u8 ObjectEventCheckForReflectiveSurface(struct ObjectEvent*);
 static u8 GetReflectionTypeByMetatileBehavior(u32);
 static void InitObjectPriorityByZCoord(struct Sprite *sprite, u8 z);
@@ -7731,6 +7735,7 @@ static void GetAllGroundEffectFlags_OnSpawn(struct ObjectEvent *objEvent, u32 *f
     GetGroundEffectFlags_Reflection(objEvent, flags);
     GetGroundEffectFlags_TallGrassOnSpawn(objEvent, flags);
     GetGroundEffectFlags_LongGrassOnSpawn(objEvent, flags);
+	GetGroundEffectFlags_WheatOnSpawn(objEvent, flags);
     GetGroundEffectFlags_SandHeap(objEvent, flags);
     GetGroundEffectFlags_ShallowFlowingWater(objEvent, flags);
     GetGroundEffectFlags_ShortGrass(objEvent, flags);
@@ -7743,6 +7748,7 @@ static void GetAllGroundEffectFlags_OnBeginStep(struct ObjectEvent *objEvent, u3
     GetGroundEffectFlags_Reflection(objEvent, flags);
     GetGroundEffectFlags_TallGrassOnBeginStep(objEvent, flags);
     GetGroundEffectFlags_LongGrassOnBeginStep(objEvent, flags);
+	GetGroundEffectFlags_WheatOnBeginStep(objEvent, flags);
     GetGroundEffectFlags_Tracks(objEvent, flags);
     GetGroundEffectFlags_SandHeap(objEvent, flags);
     GetGroundEffectFlags_ShallowFlowingWater(objEvent, flags);
@@ -7964,6 +7970,19 @@ static void GetGroundEffectFlags_JumpLanding(struct ObjectEvent *objEvent, u32 *
     }
 }
 
+//pokescape
+static void GetGroundEffectFlags_WheatOnSpawn(struct ObjectEvent *objEvent, u32 *flags)
+{
+    if (MetatileBehavior_IsWheat(objEvent->currentMetatileBehavior))
+        *flags |= GROUND_EFFECT_FLAG_WHEAT_ON_SPAWN;
+}
+
+static void GetGroundEffectFlags_WheatOnBeginStep(struct ObjectEvent *objEvent, u32 *flags)
+{
+    if (MetatileBehavior_IsWheat(objEvent->currentMetatileBehavior))
+        *flags |= GROUND_EFFECT_FLAG_WHEAT_ON_MOVE;
+}
+
 static u8 ObjectEventCheckForReflectiveSurface(struct ObjectEvent *objEvent)
 {
     const struct ObjectEventGraphicsInfo *info = GetObjectEventGraphicsInfo(objEvent->graphicsId);
@@ -8070,6 +8089,29 @@ bool8 IsZCoordMismatchAt(u8 z, s16 x, s16 y)
 
     return FALSE;
 }
+
+
+
+
+//pokescape
+
+static void SetObjectEventSpriteOamTableForWheat(struct ObjectEvent *objEvent, struct Sprite *sprite)
+{
+    if (objEvent->disableCoveringGroundEffects)
+        return;
+
+    if (!MetatileBehavior_IsWheat(objEvent->currentMetatileBehavior))
+        return;
+
+    if (!MetatileBehavior_IsWheat(objEvent->previousMetatileBehavior))
+        return;
+
+    sprite->subspriteTableNum = 4;
+
+    if (ZCoordToPriority(objEvent->previousElevation) == 1)
+        sprite->subspriteTableNum = 5;
+}
+
 
 static const u8 sUnknown_08376050[] = {
     0x73, 0x73, 0x53, 0x73, 0x53, 0x73, 0x53, 0x73, 0x53, 0x73, 0x53, 0x73, 0x53, 0x00, 0x00, 0x73
@@ -8205,6 +8247,34 @@ void GroundEffect_StepOnLongGrass(struct ObjectEvent *objEvent, struct Sprite *s
     gFieldEffectArguments[7] = 0;
     FieldEffectStart(FLDEFF_LONG_GRASS);
 }
+
+//pokescape
+void GroundEffect_SpawnOnWheat(struct ObjectEvent *objEvent, struct Sprite *sprite)
+{
+    gFieldEffectArguments[0] = objEvent->currentCoords.x;
+    gFieldEffectArguments[1] = objEvent->currentCoords.y;
+    gFieldEffectArguments[2] = objEvent->previousElevation;
+    gFieldEffectArguments[3] = 2;
+    gFieldEffectArguments[4] = objEvent->localId << 8 | objEvent->mapNum;
+    gFieldEffectArguments[5] = objEvent->mapGroup;
+    gFieldEffectArguments[6] = (u8)gSaveBlock1Ptr->location.mapNum << 8 | (u8)gSaveBlock1Ptr->location.mapGroup;
+    gFieldEffectArguments[7] = 1;
+    FieldEffectStart(FLDEFF_WHEAT);
+}
+
+void GroundEffect_StepOnWheat(struct ObjectEvent *objEvent, struct Sprite *sprite)
+{
+    gFieldEffectArguments[0] = objEvent->currentCoords.x;
+    gFieldEffectArguments[1] = objEvent->currentCoords.y;
+    gFieldEffectArguments[2] = objEvent->previousElevation;
+    gFieldEffectArguments[3] = 2;
+    gFieldEffectArguments[4] = (objEvent->localId << 8) | objEvent->mapNum;
+    gFieldEffectArguments[5] = objEvent->mapGroup;
+    gFieldEffectArguments[6] = (u8)gSaveBlock1Ptr->location.mapNum << 8 | (u8)gSaveBlock1Ptr->location.mapGroup;
+    gFieldEffectArguments[7] = 0;
+    FieldEffectStart(FLDEFF_WHEAT);
+}
+//end pokescape
 
 void GroundEffect_WaterReflection(struct ObjectEvent *objEvent, struct Sprite *sprite)
 {
@@ -8380,6 +8450,12 @@ static void (*const sGroundEffectFuncs[])(struct ObjectEvent *objEvent, struct S
     GroundEffect_StepOnTallGrass,       // GROUND_EFFECT_FLAG_TALL_GRASS_ON_MOVE
     GroundEffect_SpawnOnLongGrass,      // GROUND_EFFECT_FLAG_LONG_GRASS_ON_SPAWN
     GroundEffect_StepOnLongGrass,       // GROUND_EFFECT_FLAG_LONG_GRASS_ON_MOVE
+	
+	
+	//pokescape
+	GroundEffect_StepOnWheat,
+	GroundEffect_SpawnOnWheat,
+	
     GroundEffect_WaterReflection,       // GROUND_EFFECT_FLAG_ICE_REFLECTION
     GroundEffect_IceReflection,         // GROUND_EFFECT_FLAG_REFLECTION
     GroundEffect_FlowingWater,          // GROUND_EFFECT_FLAG_SHALLOW_FLOWING_WATER
@@ -8442,6 +8518,7 @@ static void DoGroundEffects_OnSpawn(struct ObjectEvent *objEvent, struct Sprite 
         UpdateObjectEventZCoordAndPriority(objEvent, sprite);
         GetAllGroundEffectFlags_OnSpawn(objEvent, &flags);
         SetObjectEventSpriteOamTableForLongGrass(objEvent, sprite);
+		SetObjectEventSpriteOamTableForWheat(objEvent, sprite);
         DoFlaggedGroundEffects(objEvent, sprite, flags);
         objEvent->triggerGroundEffectsOnMove = 0;
         objEvent->disableCoveringGroundEffects = 0;
@@ -8458,6 +8535,7 @@ static void DoGroundEffects_OnBeginStep(struct ObjectEvent *objEvent, struct Spr
         UpdateObjectEventZCoordAndPriority(objEvent, sprite);
         GetAllGroundEffectFlags_OnBeginStep(objEvent, &flags);
         SetObjectEventSpriteOamTableForLongGrass(objEvent, sprite);
+		SetObjectEventSpriteOamTableForWheat(objEvent, sprite);
         filters_out_some_ground_effects(objEvent, &flags);
         DoFlaggedGroundEffects(objEvent, sprite, flags);
         objEvent->triggerGroundEffectsOnMove = 0;
@@ -8475,6 +8553,7 @@ static void DoGroundEffects_OnFinishStep(struct ObjectEvent *objEvent, struct Sp
         UpdateObjectEventZCoordAndPriority(objEvent, sprite);
         GetAllGroundEffectFlags_OnFinishStep(objEvent, &flags);
         SetObjectEventSpriteOamTableForLongGrass(objEvent, sprite);
+		SetObjectEventSpriteOamTableForWheat(objEvent, sprite);
         FilterOutStepOnPuddleGroundEffectIfJumping(objEvent, &flags);
         DoFlaggedGroundEffects(objEvent, sprite, flags);
         objEvent->triggerGroundEffectsOnStop = 0;

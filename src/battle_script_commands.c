@@ -11666,9 +11666,11 @@ static void Cmd_handleballthrow(void)
 			case ITEM_MITHRIL_POUCH:
 			case ITEM_ADAMANT_POUCH:
 			case ITEM_RUNE_POUCH:
-			case ITEM_DRAGON_POUCH:
 			case ITEM_CRYSTAL_POUCH:
 				ballMultiplier = 70;
+				break;
+			case ITEM_DRAGON_POUCH:
+				ballMultiplier = 255;
 				break;
             case ITEM_LUXURY_BALL:
             case ITEM_PREMIER_BALL:

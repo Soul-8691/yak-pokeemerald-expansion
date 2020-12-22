@@ -67,7 +67,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MEW",
+      "graphics_id": "OBJ_EVENT_GFX_sheep",
       "x": 7,
       "y": 21,
       "elevation": 3,
@@ -80,7 +80,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MEW",
+      "graphics_id": "OBJ_EVENT_GFX_sheep",
       "x": 26,
       "y": 16,
       "elevation": 3,

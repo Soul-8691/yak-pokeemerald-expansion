@@ -38,7 +38,14 @@ Script_GnomeBoiKevin::
 //	giveitem ITEM_FRAGMENT_OF_JAS, 1
 //	giveitem ITEM_EVERSTONE, 1
 
-    giveitem ITEM_DRAGON_POUCH, 99
+    //giveitem ITEM_DRAGON_POUCH, 
+	giveitem ITEM_BRONZE_POUCH, 10
+	giveitem ITEM_IRON_POUCH, 10
+	giveitem ITEM_STEEL_POUCH, 10
+	giveitem ITEM_BLACK_POUCH, 10
+	giveitem ITEM_MITHRIL_POUCH, 10
+	giveitem ITEM_ADAMANT_POUCH, 10
+	giveitem ITEM_CRYSTAL_POUCH, 10
 
 //STAT ITEMS
 //	giveitem ITEM_RARE_CANDY, 99

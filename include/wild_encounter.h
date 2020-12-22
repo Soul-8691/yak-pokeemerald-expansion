@@ -5,6 +5,7 @@
 #define WATER_WILD_COUNT    5
 #define ROCK_WILD_COUNT     5
 #define FISH_WILD_COUNT     10
+#define WHEAT_WILD_COUNT 	12
 
 struct WildPokemon
 {
@@ -23,6 +24,7 @@ struct WildPokemonHeader
 {
     u8 mapGroup;
     u8 mapNum;
+	const struct WildPokemonInfo *wheatMonsInfo;
     const struct WildPokemonInfo *landMonsInfo;
     const struct WildPokemonInfo *waterMonsInfo;
     const struct WildPokemonInfo *rockSmashMonsInfo;

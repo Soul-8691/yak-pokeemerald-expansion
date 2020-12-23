@@ -1587,7 +1587,9 @@ static const u8 sBlackScaleDesc[] = _(
 	
 static const u8 sFragmentOfJasDesc[] = _(
     "MEGA EVOLUTION");	
-	
+
+
+//pokescape pouches
 static const u8 sNormalPouchDesc[] = _(
     "A tool used for\n"
     "catching wild\n"
@@ -1634,6 +1636,46 @@ static const u8 sDragonPouchDesc[] = _(
     "POKéMON.");
 	
 static const u8 sCrystalPouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+
+static const u8 sSplitbarkPouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sDragonbanePouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sAugmentedPouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sMysticPouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sBarrowsPouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sGranitePouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sAncientPouchDesc[] = _(
+    "A tool used for\n"
+    "catching wild\n"
+    "POKéMON.");
+	
+static const u8 sElementalPouchDesc[] = _(
     "A tool used for\n"
     "catching wild\n"
     "POKéMON.");

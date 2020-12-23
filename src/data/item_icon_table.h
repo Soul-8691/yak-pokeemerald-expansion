@@ -439,6 +439,14 @@ const u32 *const gItemIconTable[][2] =
 	[ITEM_RUNE_POUCH] = {gItemIcon_RunePouch, gItemIconPalette_RunePouch},
 	[ITEM_DRAGON_POUCH] = {gItemIcon_DragonPouch, gItemIconPalette_DragonPouch},
 	[ITEM_CRYSTAL_POUCH] = {gItemIcon_CrystalPouch, gItemIconPalette_CrystalPouch},
+	[ITEM_SPLITBARK_POUCH] = {gItemIcon_SplitbarkPouch, gItemIconPalette_SplitbarkPouch},
+	[ITEM_DRAGONBANE_POUCH] = {gItemIcon_DragonbanePouch, gItemIconPalette_DragonbanePouch},
+	[ITEM_AUGMENTED_POUCH] = {gItemIcon_AugmentedPouch, gItemIconPalette_AugmentedPouch},
+	[ITEM_MYSTIC_POUCH] = {gItemIcon_MysticPouch, gItemIconPalette_MysticPouch},
+	[ITEM_BARROWS_POUCH] = {gItemIcon_BarrowsPouch, gItemIconPalette_BarrowsPouch},
+	[ITEM_GRANITE_POUCH] = {gItemIcon_GranitePouch, gItemIconPalette_GranitePouch},
+	[ITEM_ANCIENT_POUCH] = {gItemIcon_AncientPouch, gItemIconPalette_AncientPouch},
+	[ITEM_ELEMENTAL_POUCH] = {gItemIcon_ElementalPouch, gItemIconPalette_ElementalPouch},
 	
     // Return to field arrow
     [ITEM_FIELD_ARROW] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},

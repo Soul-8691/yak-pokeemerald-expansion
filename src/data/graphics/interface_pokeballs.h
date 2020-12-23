@@ -65,6 +65,30 @@ const u32 gInterfacePal_DragonPouch[] = INCBIN_U32("graphics/interface/ball/drag
 const u32 gInterfaceGfx_CrystalPouch[] = INCBIN_U32("graphics/interface/ball/crystal_pouch.4bpp.lz");
 const u32 gInterfacePal_CrystalPouch[] = INCBIN_U32("graphics/interface/ball/crystal_pouch.gbapal.lz");
 
+const u32 gInterfaceGfx_SplitbarkPouch[] = INCBIN_U32("graphics/interface/ball/splitbark_pouch.4bpp.lz");
+const u32 gInterfacePal_SplitbarkPouch[] = INCBIN_U32("graphics/interface/ball/splitbark_pouch.gbapal.lz");
+
+const u32 gInterfaceGfx_DragonbanePouch[] = INCBIN_U32("graphics/interface/ball/dragonbane_pouch.4bpp.lz");
+const u32 gInterfacePal_DragonbanePouch[] = INCBIN_U32("graphics/interface/ball/dragonbane_pouch.gbapal.lz");
+
+const u32 gInterfaceGfx_AugmentedPouch[] = INCBIN_U32("graphics/interface/ball/augmented_pouch.4bpp.lz");
+const u32 gInterfacePal_AugmentedPouch[] = INCBIN_U32("graphics/interface/ball/augmented_pouch.gbapal.lz");
+
+const u32 gInterfaceGfx_MysticPouch[] = INCBIN_U32("graphics/interface/ball/mystic_pouch.4bpp.lz");
+const u32 gInterfacePal_MysticPouch[] = INCBIN_U32("graphics/interface/ball/mystic_pouch.gbapal.lz");
+
+const u32 gInterfaceGfx_BarrowsPouch[] = INCBIN_U32("graphics/interface/ball/barrows_pouch.4bpp.lz");
+const u32 gInterfacePal_BarrowsPouch[] = INCBIN_U32("graphics/interface/ball/barrows_pouch.gbapal.lz");
+
+const u32 gInterfaceGfx_GranitePouch[] = INCBIN_U32("graphics/interface/ball/granite_pouch.4bpp.lz");
+const u32 gInterfacePal_GranitePouch[] = INCBIN_U32("graphics/interface/ball/granite_pouch.gbapal.lz");
+
+const u32 gInterfaceGfx_AncientPouch[] = INCBIN_U32("graphics/interface/ball/ancient_pouch.4bpp.lz");
+const u32 gInterfacePal_AncientPouch[] = INCBIN_U32("graphics/interface/ball/ancient_pouch.gbapal.lz");
+
+const u32 gInterfaceGfx_ElementalPouch[] = INCBIN_U32("graphics/interface/ball/elemental_pouch.4bpp.lz");
+const u32 gInterfacePal_ElementalPouch[] = INCBIN_U32("graphics/interface/ball/elemental_pouch.gbapal.lz");
+
 
 
 

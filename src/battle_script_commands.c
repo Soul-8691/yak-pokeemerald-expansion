@@ -11667,6 +11667,14 @@ static void Cmd_handleballthrow(void)
 			case ITEM_ADAMANT_POUCH:
 			case ITEM_RUNE_POUCH:
 			case ITEM_CRYSTAL_POUCH:
+			case ITEM_SPLITBARK_POUCH:
+			case ITEM_DRAGONBANE_POUCH:
+			case ITEM_AUGMENTED_POUCH:
+			case ITEM_MYSTIC_POUCH:
+			case ITEM_BARROWS_POUCH:
+			case ITEM_GRANITE_POUCH:
+			case ITEM_ANCIENT_POUCH:
+			case ITEM_ELEMENTAL_POUCH:
 				ballMultiplier = 70;
 				break;
 			case ITEM_DRAGON_POUCH:
@@ -11709,6 +11717,11 @@ static void Cmd_handleballthrow(void)
             MarkBattlerForControllerExec(gActiveBattler);
             gBattlescriptCurrInstr = BattleScript_SuccessBallThrow;
             SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_POKEBALL, &gLastUsedItem);
+			
+			
+			//todo code pouch for 0 friendship catch 
+			//if (gLastUsedItem == ITEM_POKE_BALL)
+				//SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_FRIENDSHIP, 0);
 
             if (CalculatePlayerPartyCount() == PARTY_SIZE)
                 gBattleCommunication[MULTISTRING_CHOOSER] = 0;

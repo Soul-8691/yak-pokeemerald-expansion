@@ -61,6 +61,29 @@ extern const u32 gInterfacePal_DragonPouch[];
 extern const u32 gInterfaceGfx_CrystalPouch[];
 extern const u32 gInterfacePal_CrystalPouch[];
 
+extern const u32 gInterfaceGfx_SplitbarkPouch[];
+extern const u32 gInterfacePal_SplitbarkPouch[];
+
+extern const u32 gInterfaceGfx_DragonbanePouch[];
+extern const u32 gInterfacePal_DragonbanePouch[];
+
+extern const u32 gInterfaceGfx_AugmentedPouch[];
+extern const u32 gInterfacePal_AugmentedPouch[];
+
+extern const u32 gInterfaceGfx_MysticPouch[];
+extern const u32 gInterfacePal_MysticPouch[];
+
+extern const u32 gInterfaceGfx_BarrowsPouch[];
+extern const u32 gInterfacePal_BarrowsPouch[];
+
+extern const u32 gInterfaceGfx_GranitePouch[];
+extern const u32 gInterfacePal_GranitePouch[];
+
+extern const u32 gInterfaceGfx_AncientPouch[];
+extern const u32 gInterfacePal_AncientPouch[];
+
+extern const u32 gInterfaceGfx_ElementalPouch[];
+extern const u32 gInterfacePal_ElementalPouch[];
 
 extern const u32 gOpenPokeballGfx[];
 
@@ -7809,6 +7832,30 @@ extern const u32 gItemIcon_DragonPouch[];
 
 extern const u32 gItemIconPalette_CrystalPouch[];
 extern const u32 gItemIcon_CrystalPouch[];
+
+extern const u32 gItemIconPalette_SplitbarkPouch[];
+extern const u32 gItemIcon_SplitbarkPouch[];
+
+extern const u32 gItemIconPalette_DragonbanePouch[];
+extern const u32 gItemIcon_DragonbanePouch[];
+
+extern const u32 gItemIconPalette_AugmentedPouch[];
+extern const u32 gItemIcon_AugmentedPouch[];
+
+extern const u32 gItemIconPalette_MysticPouch[];
+extern const u32 gItemIcon_MysticPouch[];
+
+extern const u32 gItemIconPalette_BarrowsPouch[];
+extern const u32 gItemIcon_BarrowsPouch[];
+
+extern const u32 gItemIconPalette_GranitePouch[];
+extern const u32 gItemIcon_GranitePouch[];
+
+extern const u32 gItemIconPalette_AncientPouch[];
+extern const u32 gItemIcon_AncientPouch[];
+
+extern const u32 gItemIconPalette_ElementalPouch[];
+extern const u32 gItemIcon_ElementalPouch[];
 
 
 // Medicine

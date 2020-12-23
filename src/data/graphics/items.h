@@ -817,6 +817,8 @@ const u32 gItemIconPalette_GreenScale[] = INCBIN_U32("graphics/items/pokescape_i
 const u32 gItemIcon_FragmentOfJas[] = INCBIN_U32("graphics/items/pokescape_icons/fragment_of_jas.4bpp.lz");
 const u32 gItemIconPalette_FragmentOfJas[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fragment_of_jas.gbapal.lz");  
 
+
+//pokescape pouches
 const u32 gItemIcon_NormalPouch[] = INCBIN_U32("graphics/items/pokescape_icons/normal_pouch.4bpp.lz");
 const u32 gItemIconPalette_NormalPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/normal_pouch.gbapal.lz");  
 
@@ -846,6 +848,30 @@ const u32 gItemIconPalette_DragonPouch[] = INCBIN_U32("graphics/items/pokescape_
 
 const u32 gItemIcon_CrystalPouch[] = INCBIN_U32("graphics/items/pokescape_icons/crystal_pouch.4bpp.lz");
 const u32 gItemIconPalette_CrystalPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/crystal_pouch.gbapal.lz"); 
+
+const u32 gItemIcon_SplitbarkPouch[] = INCBIN_U32("graphics/items/pokescape_icons/splitbark_pouch.4bpp.lz");
+const u32 gItemIconPalette_SplitbarkPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/splitbark_pouch.gbapal.lz");
+
+const u32 gItemIcon_DragonbanePouch[] = INCBIN_U32("graphics/items/pokescape_icons/dragonbane_pouch.4bpp.lz");
+const u32 gItemIconPalette_DragonbanePouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/dragonbane_pouch.gbapal.lz");
+
+const u32 gItemIcon_AugmentedPouch[] = INCBIN_U32("graphics/items/pokescape_icons/augmented_pouch.4bpp.lz");
+const u32 gItemIconPalette_AugmentedPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/augmented_pouch.gbapal.lz");
+
+const u32 gItemIcon_MysticPouch[] = INCBIN_U32("graphics/items/pokescape_icons/mystic_pouch.4bpp.lz");
+const u32 gItemIconPalette_MysticPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/mystic_pouch.gbapal.lz");
+
+const u32 gItemIcon_BarrowsPouch[] = INCBIN_U32("graphics/items/pokescape_icons/barrows_pouch.4bpp.lz");
+const u32 gItemIconPalette_BarrowsPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/barrows_pouch.gbapal.lz");
+
+const u32 gItemIcon_GranitePouch[] = INCBIN_U32("graphics/items/pokescape_icons/granite_pouch.4bpp.lz");
+const u32 gItemIconPalette_GranitePouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/granite_pouch.gbapal.lz");
+
+const u32 gItemIcon_AncientPouch[] = INCBIN_U32("graphics/items/pokescape_icons/ancient_pouch.4bpp.lz");
+const u32 gItemIconPalette_AncientPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/ancient_pouch.gbapal.lz");
+
+const u32 gItemIcon_ElementalPouch[] = INCBIN_U32("graphics/items/pokescape_icons/elemental_pouch.4bpp.lz");
+const u32 gItemIconPalette_ElementalPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/elemental_pouch.gbapal.lz");
 
 
 

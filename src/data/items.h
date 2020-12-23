@@ -5204,6 +5204,9 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },	
 	
+	
+	//pokescape pouches
+	
     [ITEM_NORMAL_POUCH] =
     {
         .name = _("POUCH"),
@@ -5333,6 +5336,119 @@ const struct Item gItems[] =
         .battleUseFunc = ItemUseInBattle_PokeBall,
         .secondaryId = 3,
     },
+	
+	
+    [ITEM_SPLITBARK_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_SPLITBARK_POUCH,
+        .price = 200,
+        .description = sSplitbarkPouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+	
+    [ITEM_DRAGONBANE_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_DRAGONBANE_POUCH,
+        .price = 200,
+        .description = sDragonbanePouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+	
+    [ITEM_AUGMENTED_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_AUGMENTED_POUCH,
+        .price = 200,
+        .description = sAugmentedPouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+	
+    [ITEM_MYSTIC_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_MYSTIC_POUCH,
+        .price = 200,
+        .description = sMysticPouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+	
+    [ITEM_BARROWS_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_BARROWS_POUCH,
+        .price = 200,
+        .description = sBarrowsPouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+	
+    [ITEM_GRANITE_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_GRANITE_POUCH,
+        .price = 200,
+        .description = sGranitePouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+	
+    [ITEM_ANCIENT_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_ANCIENT_POUCH,
+        .price = 200,
+        .description = sAncientPouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
+	
+    [ITEM_ELEMENTAL_POUCH] =
+    {
+        .name = _("POUCH"),
+        .itemId = ITEM_ELEMENTAL_POUCH,
+        .price = 200,
+        .description = sElementalPouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	
 	
 	
 	

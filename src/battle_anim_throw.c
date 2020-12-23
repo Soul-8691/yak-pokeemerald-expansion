@@ -139,6 +139,8 @@ static const struct CaptureStar sCaptureStars[] =
 #define TAG_PARTICLES_TIMERBALL   55029
 #define TAG_PARTICLES_LUXURYBALL  55030
 #define TAG_PARTICLES_PREMIERBALL 55031
+//POKESCAPE
+
 #define TAG_PARTICLES_NORMALPOUCH 65032
 #define TAG_PARTICLES_BRONZEPOUCH 65033
 #define TAG_PARTICLES_IRONPOUCH 65034
@@ -149,6 +151,14 @@ static const struct CaptureStar sCaptureStars[] =
 #define TAG_PARTICLES_RUNEPOUCH 65039
 #define TAG_PARTICLES_DRAGONPOUCH 65040
 #define TAG_PARTICLES_CRYSTALPOUCH 65041
+#define TAG_PARTICLES_SPLITBARKPOUCH 65042
+#define TAG_PARTICLES_DRAGONBANEPOUCH 65043
+#define TAG_PARTICLES_AUGMENTEDPOUCH 65044
+#define TAG_PARTICLES_MYSTICPOUCH 65045
+#define TAG_PARTICLES_BARROWSPOUCH 65046
+#define TAG_PARTICLES_GRANITEPOUCH 65047
+#define TAG_PARTICLES_ANCIENTPOUCH 65048
+#define TAG_PARTICLES_ELEMENTALPOUCH 65049
 
 static const struct CompressedSpriteSheet sBallParticleSpriteSheets[POKEBALL_COUNT] =
 {
@@ -164,6 +174,7 @@ static const struct CompressedSpriteSheet sBallParticleSpriteSheets[POKEBALL_COU
     [BALL_TIMER]   = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_TIMERBALL},
     [BALL_LUXURY]  = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_LUXURYBALL},
     [BALL_PREMIER] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_PREMIERBALL},
+	//POKESCAPE
 	[BALL_NORMALPOUCH] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_NORMALPOUCH},
 	[BALL_BRONZEPOUCH] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_BRONZEPOUCH},
 	[BALL_IRONPOUCH] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_IRONPOUCH},
@@ -174,6 +185,14 @@ static const struct CompressedSpriteSheet sBallParticleSpriteSheets[POKEBALL_COU
 	[BALL_RUNEPOUCH] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_RUNEPOUCH},
 	[BALL_DRAGONPOUCH] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_DRAGONPOUCH},
 	[BALL_CRYSTALPOUCH] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_CRYSTALPOUCH},
+	[BALL_SPLITBARKPOUCH] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_SPLITBARKPOUCH},
+	[BALL_DRAGONBANEPOUCH] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_DRAGONBANEPOUCH},
+	[BALL_AUGMENTEDPOUCH] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_AUGMENTEDPOUCH},
+	[BALL_MYSTICPOUCH] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_MYSTICPOUCH},
+	[BALL_BARROWSPOUCH] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_BARROWSPOUCH},
+	[BALL_GRANITEPOUCH] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_GRANITEPOUCH},
+	[BALL_ANCIENTPOUCH] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_ANCIENTPOUCH},
+	[BALL_ELEMENTALPOUCH] = {gBattleAnimSpriteGfx_Particles, 0x100, TAG_PARTICLES_ELEMENTALPOUCH},
 	
 };
 
@@ -201,6 +220,14 @@ static const struct CompressedSpritePalette sBallParticlePalettes[POKEBALL_COUNT
 	[BALL_RUNEPOUCH] = {gBattleAnimSpritePal_CircleImpact,  TAG_PARTICLES_RUNEPOUCH},
 	[BALL_DRAGONPOUCH] = {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_DRAGONPOUCH},
 	[BALL_CRYSTALPOUCH] = {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_CRYSTALPOUCH},
+	[BALL_SPLITBARKPOUCH] = {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_SPLITBARKPOUCH},
+	[BALL_DRAGONBANEPOUCH] = {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_DRAGONBANEPOUCH},
+	[BALL_AUGMENTEDPOUCH] = {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_AUGMENTEDPOUCH},
+	[BALL_MYSTICPOUCH] = {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_MYSTICPOUCH},
+	[BALL_BARROWSPOUCH] = {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_BARROWSPOUCH},
+	[BALL_GRANITEPOUCH] = {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_GRANITEPOUCH},
+	[BALL_ANCIENTPOUCH] = {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_ANCIENTPOUCH},
+	[BALL_ELEMENTALPOUCH] = {gBattleAnimSpritePal_CircleImpact, TAG_PARTICLES_ELEMENTALPOUCH},
 };
 
 static const union AnimCmd sAnim_RegularBall[] =
@@ -279,6 +306,14 @@ static const u8 sBallParticleAnimNums[POKEBALL_COUNT] =
 	[BALL_RUNEPOUCH] = 5,
 	[BALL_DRAGONPOUCH] = 5,
 	[BALL_CRYSTALPOUCH] = 5,
+	[BALL_SPLITBARKPOUCH] = 5,
+	[BALL_DRAGONBANEPOUCH] = 5,
+	[BALL_AUGMENTEDPOUCH] = 5,
+	[BALL_MYSTICPOUCH] = 5,
+	[BALL_BARROWSPOUCH] = 5,
+	[BALL_GRANITEPOUCH] = 5,
+	[BALL_ANCIENTPOUCH] = 5,
+	[BALL_ELEMENTALPOUCH] = 5,
 		
 };
 
@@ -307,6 +342,14 @@ static const TaskFunc sBallParticleAnimationFuncs[POKEBALL_COUNT] =
 	[BALL_RUNEPOUCH] = PremierBallOpenParticleAnimation,
 	[BALL_DRAGONPOUCH] = PremierBallOpenParticleAnimation,
 	[BALL_CRYSTALPOUCH] = PremierBallOpenParticleAnimation,
+	[BALL_SPLITBARKPOUCH] = PremierBallOpenParticleAnimation,
+	[BALL_DRAGONBANEPOUCH] = PremierBallOpenParticleAnimation,
+	[BALL_AUGMENTEDPOUCH] = PremierBallOpenParticleAnimation,
+	[BALL_MYSTICPOUCH] = PremierBallOpenParticleAnimation,
+	[BALL_BARROWSPOUCH] = PremierBallOpenParticleAnimation,
+	[BALL_GRANITEPOUCH] = PremierBallOpenParticleAnimation,
+	[BALL_ANCIENTPOUCH] = PremierBallOpenParticleAnimation,
+	[BALL_ELEMENTALPOUCH] = PremierBallOpenParticleAnimation,
 };
 
 static const struct SpriteTemplate sBallParticleSpriteTemplates[POKEBALL_COUNT] =
@@ -518,6 +561,78 @@ static const struct SpriteTemplate sBallParticleSpriteTemplates[POKEBALL_COUNT] 
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCallbackDummy,
     },
+		[BALL_SPLITBARKPOUCH] = {
+        .tileTag = TAG_PARTICLES_SPLITBARKPOUCH,
+        .paletteTag = TAG_PARTICLES_SPLITBARKPOUCH,
+        .oam = &gOamData_AffineOff_ObjNormal_8x8,
+        .anims = sAnims_BallParticles,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = SpriteCallbackDummy,
+    },
+		[BALL_DRAGONBANEPOUCH] = {
+        .tileTag = TAG_PARTICLES_DRAGONBANEPOUCH,
+        .paletteTag = TAG_PARTICLES_DRAGONBANEPOUCH,
+        .oam = &gOamData_AffineOff_ObjNormal_8x8,
+        .anims = sAnims_BallParticles,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = SpriteCallbackDummy,
+    },
+		[BALL_AUGMENTEDPOUCH] = {
+        .tileTag = TAG_PARTICLES_AUGMENTEDPOUCH,
+        .paletteTag = TAG_PARTICLES_AUGMENTEDPOUCH,
+        .oam = &gOamData_AffineOff_ObjNormal_8x8,
+        .anims = sAnims_BallParticles,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = SpriteCallbackDummy,
+    },
+		[BALL_MYSTICPOUCH] = {
+        .tileTag = TAG_PARTICLES_MYSTICPOUCH,
+        .paletteTag = TAG_PARTICLES_MYSTICPOUCH,
+        .oam = &gOamData_AffineOff_ObjNormal_8x8,
+        .anims = sAnims_BallParticles,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = SpriteCallbackDummy,
+    },
+		[BALL_BARROWSPOUCH] = {
+        .tileTag = TAG_PARTICLES_BARROWSPOUCH,
+        .paletteTag = TAG_PARTICLES_BARROWSPOUCH,
+        .oam = &gOamData_AffineOff_ObjNormal_8x8,
+        .anims = sAnims_BallParticles,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = SpriteCallbackDummy,
+    },
+		[BALL_GRANITEPOUCH] = {
+        .tileTag = TAG_PARTICLES_GRANITEPOUCH,
+        .paletteTag = TAG_PARTICLES_GRANITEPOUCH,
+        .oam = &gOamData_AffineOff_ObjNormal_8x8,
+        .anims = sAnims_BallParticles,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = SpriteCallbackDummy,
+    },
+		[BALL_ANCIENTPOUCH] = {
+        .tileTag = TAG_PARTICLES_ANCIENTPOUCH,
+        .paletteTag = TAG_PARTICLES_ANCIENTPOUCH,
+        .oam = &gOamData_AffineOff_ObjNormal_8x8,
+        .anims = sAnims_BallParticles,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = SpriteCallbackDummy,
+    },
+		[BALL_ELEMENTALPOUCH] = {
+        .tileTag = TAG_PARTICLES_ELEMENTALPOUCH,
+        .paletteTag = TAG_PARTICLES_ELEMENTALPOUCH,
+        .oam = &gOamData_AffineOff_ObjNormal_8x8,
+        .anims = sAnims_BallParticles,
+        .images = NULL,
+        .affineAnims = gDummySpriteAffineAnimTable,
+        .callback = SpriteCallbackDummy,
+    },
 };
 
 const u16 gBallOpenFadeColors[] =
@@ -545,6 +660,14 @@ const u16 gBallOpenFadeColors[] =
 	[BALL_RUNEPOUCH] = RGB(31, 9, 10),
 	[BALL_DRAGONPOUCH] = RGB(31, 9, 10),
 	[BALL_CRYSTALPOUCH] = RGB(31, 9, 10),
+	[BALL_SPLITBARKPOUCH] = RGB(31, 9, 10),
+	[BALL_DRAGONBANEPOUCH] = RGB(31, 9, 10),
+	[BALL_AUGMENTEDPOUCH] = RGB(31, 9, 10),
+	[BALL_MYSTICPOUCH] = RGB(31, 9, 10),
+	[BALL_BARROWSPOUCH] = RGB(31, 9, 10),
+	[BALL_GRANITEPOUCH] = RGB(31, 9, 10),
+	[BALL_ANCIENTPOUCH] = RGB(31, 9, 10),
+	[BALL_ELEMENTALPOUCH] = RGB(31, 9, 10),
 	
     // Garbage data
     RGB(0, 0, 0),
@@ -917,32 +1040,56 @@ u8 ItemIdToBallId(u16 ballItem)
 	case ITEM_NORMAL_POUCH:
 		return BALL_NORMALPOUCH;
 		
-		case ITEM_BRONZE_POUCH:
+	case ITEM_BRONZE_POUCH:
 		return BALL_BRONZEPOUCH;
 		
-			case ITEM_IRON_POUCH:
+	case ITEM_IRON_POUCH:
 		return BALL_IRONPOUCH;
 		
-			case ITEM_STEEL_POUCH:
+	case ITEM_STEEL_POUCH:
 		return BALL_STEELPOUCH;
 		
-			case ITEM_BLACK_POUCH:
+	case ITEM_BLACK_POUCH:
 		return BALL_BLACKPOUCH;
 		
-			case ITEM_MITHRIL_POUCH:
+	case ITEM_MITHRIL_POUCH:
 		return BALL_MITHRILPOUCH;
 		
-			case ITEM_ADAMANT_POUCH:
+	case ITEM_ADAMANT_POUCH:
 		return BALL_ADAMANTPOUCH;
 		
-			case ITEM_RUNE_POUCH:
+	case ITEM_RUNE_POUCH:
 		return BALL_RUNEPOUCH;
 		
-			case ITEM_DRAGON_POUCH:
+	case ITEM_DRAGON_POUCH:
 		return BALL_DRAGONPOUCH;
 		
-			case ITEM_CRYSTAL_POUCH:
+	case ITEM_CRYSTAL_POUCH:
 		return BALL_CRYSTALPOUCH;
+		
+	case ITEM_SPLITBARK_POUCH:
+		return BALL_SPLITBARKPOUCH;
+		
+	case ITEM_DRAGONBANE_POUCH:
+		return BALL_DRAGONBANEPOUCH;
+		
+	case ITEM_AUGMENTED_POUCH:
+		return BALL_AUGMENTEDPOUCH;
+		
+	case ITEM_MYSTIC_POUCH:
+		return BALL_MYSTICPOUCH;
+		
+	case ITEM_BARROWS_POUCH:
+		return BALL_BARROWSPOUCH;
+		
+	case ITEM_GRANITE_POUCH:
+		return BALL_GRANITEPOUCH;
+		
+	case ITEM_ANCIENT_POUCH:
+		return BALL_ANCIENTPOUCH;
+		
+	case ITEM_ELEMENTAL_POUCH:
+		return BALL_ELEMENTALPOUCH;
 		
     case ITEM_POKE_BALL:
     default:

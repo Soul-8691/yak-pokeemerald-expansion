@@ -39,13 +39,21 @@ Script_GnomeBoiKevin::
 //	giveitem ITEM_EVERSTONE, 1
 
     //giveitem ITEM_DRAGON_POUCH, 
-	giveitem ITEM_BRONZE_POUCH, 10
-	giveitem ITEM_IRON_POUCH, 10
-	giveitem ITEM_STEEL_POUCH, 10
-	giveitem ITEM_BLACK_POUCH, 10
-	giveitem ITEM_MITHRIL_POUCH, 10
-	giveitem ITEM_ADAMANT_POUCH, 10
-	giveitem ITEM_CRYSTAL_POUCH, 10
+	//giveitem ITEM_BRONZE_POUCH, 10
+	//giveitem ITEM_IRON_POUCH, 10
+	//giveitem ITEM_STEEL_POUCH, 10
+	//giveitem ITEM_BLACK_POUCH, 10
+	//giveitem ITEM_MITHRIL_POUCH, 10
+	//giveitem ITEM_ADAMANT_POUCH, 10
+	//giveitem ITEM_CRYSTAL_POUCH, 10
+	giveitem ITEM_SPLITBARK_POUCH, 10
+	giveitem ITEM_DRAGONBANE_POUCH, 10
+	giveitem ITEM_AUGMENTED_POUCH, 10
+	giveitem ITEM_MYSTIC_POUCH, 10
+	giveitem ITEM_BARROWS_POUCH, 10
+	giveitem ITEM_GRANITE_POUCH, 10
+	giveitem ITEM_ANCIENT_POUCH, 10
+	giveitem ITEM_ELEMENTAL_POUCH, 10
 
 //STAT ITEMS
 //	giveitem ITEM_RARE_CANDY, 99

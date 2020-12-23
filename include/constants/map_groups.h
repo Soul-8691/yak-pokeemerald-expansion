@@ -1,6 +1,10 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
+//
+// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
+//
+
 // Map Group 0
 #define MAP_PETALBURG_CITY      (0 | (0 << 8))
 #define MAP_SLATEPORT_CITY      (1 | (0 << 8))
@@ -645,11 +649,12 @@
 #define MAP_ROUTE38 (38 | (35 << 8))
 
 // Map Group 36
-#define MAP_LUMBRIDGE_SWAMP  (0 | (36 << 8))
-#define MAP_MILL_LANE_MILL   (1 | (36 << 8))
-#define MAP_DRAYNOR_MANOR    (2 | (36 << 8))
-#define MAP_MUDSKIPPER_POINT (3 | (36 << 8))
-#define MAP_LUMBRIDGE_FOREST (4 | (36 << 8))
+#define MAP_LUMBRIDGE_SWAMP      (0 | (36 << 8))
+#define MAP_MILL_LANE_MILL       (1 | (36 << 8))
+#define MAP_DRAYNOR_MANOR        (2 | (36 << 8))
+#define MAP_MUDSKIPPER_POINT     (3 | (36 << 8))
+#define MAP_LUMBRIDGE_FOREST     (4 | (36 << 8))
+#define MAP_TUTORIAL_ISLAND_CAVE (5 | (36 << 8))
 
 // Map Group 37
 #define MAP_LUMBRIDGE_HOUSE_BOBS_AXES1 (0 | (37 << 8))
@@ -676,8 +681,10 @@
 #define MAP_MILL_LANE_MILL_3 (2 | (38 << 8))
 
 // Map Group 39
-#define MAP_ROUTE1_HOUSE_FRED (0 | (39 << 8))
-#define MAP_ROUTE1_HOUSE_1    (1 | (39 << 8))
+#define MAP_ROUTE1_HOUSE_FRED        (0 | (39 << 8))
+#define MAP_ROUTE1_HOUSE_1           (1 | (39 << 8))
+#define MAP_TUTORIAL_ISLAND_LAB_UP   (2 | (39 << 8))
+#define MAP_TUTORIAL_ISLAND_LAB_DOWN (3 | (39 << 8))
 
 #define MAP_GROUPS_COUNT 40
 

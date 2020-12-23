@@ -1,14 +1,14 @@
 {
-  "id": "MAP_TUTORIAL_ISLAND",
-  "name": "Tutorial_Island",
-  "layout": "LAYOUT_TUTORIAL_ISLAND",
+  "id": "MAP_TUTORIAL_ISLAND_CAVE",
+  "name": "Tutorial_Island_Cave",
+  "layout": "LAYOUT_TUTORIAL_ISLAND_CAVE",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_NONE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_TOWN",
+  "map_type": "MAP_TYPE_UNDERGROUND",
   "allow_cycling": true,
-  "allow_escaping": false,
+  "allow_escaping": true,
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
@@ -18,24 +18,17 @@
   ],
   "warp_events": [
     {
-      "x": 36,
-      "y": 11,
+      "x": 14,
+      "y": 26,
       "elevation": 0,
-      "dest_map": "MAP_TUTORIAL_ISLAND_CAVE",
+      "dest_map": "MAP_TUTORIAL_ISLAND",
       "dest_warp_id": 1
     },
     {
-      "x": 28,
-      "y": 13,
+      "x": 5,
+      "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_TUTORIAL_ISLAND_CAVE",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 36,
-      "y": 20,
-      "elevation": 0,
-      "dest_map": "MAP_TUTORIAL_ISLAND_LAB_DOWN",
+      "dest_map": "MAP_TUTORIAL_ISLAND",
       "dest_warp_id": 0
     }
   ],

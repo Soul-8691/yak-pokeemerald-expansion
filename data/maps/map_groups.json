@@ -690,7 +690,8 @@
     "Mill_Lane_Mill",
     "Draynor_Manor",
     "MudskipperPoint",
-    "Lumbridge_Forest"
+    "Lumbridge_Forest",
+    "Tutorial_Island_Cave"
   ],
   "gMapGroup37": [
     "Lumbridge_House_BobsAxes1",
@@ -718,6 +719,8 @@
   ],
   "gMapGroup39": [
     "Route1_House_Fred",
-    "Route1_House_1"
+    "Route1_House_1",
+    "Tutorial_Island_Lab_Up",
+    "Tutorial_Island_Lab_Down"
   ]
 }

@@ -1220,3 +1220,9 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Lumbridge_Forest/scripts.inc"
 
 	.include "data/maps/Tutorial_Island/scripts.inc"
+
+	.include "data/maps/Tutorial_Island_Cave/scripts.inc"
+
+	.include "data/maps/Tutorial_Island_Lab_Up/scripts.inc"
+
+	.include "data/maps/Tutorial_Island_Lab_Down/scripts.inc"

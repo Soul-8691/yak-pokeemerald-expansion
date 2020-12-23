@@ -5210,6 +5210,36 @@
       "secondary_tileset": "gTileset_Bank",
       "border_filepath": "data/layouts/Tutorial_Island/border.bin",
       "blockdata_filepath": "data/layouts/Tutorial_Island/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUTORIAL_ISLAND_CAVE",
+      "name": "Tutorial_Island_Cave_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge",
+      "border_filepath": "data/layouts/Tutorial_Island_Cave/border.bin",
+      "blockdata_filepath": "data/layouts/Tutorial_Island_Cave/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUTORIAL_ISLAND_LAB_UP",
+      "name": "Tutorial_Island_Lab_Up_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Tutorial_Island_Lab_Up/border.bin",
+      "blockdata_filepath": "data/layouts/Tutorial_Island_Lab_Up/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUTORIAL_ISLAND_LAB_DOWN",
+      "name": "Tutorial_Island_Lab_Down_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Tutorial_Island_Lab_Down/border.bin",
+      "blockdata_filepath": "data/layouts/Tutorial_Island_Lab_Down/map.bin"
     }
   ]
 }

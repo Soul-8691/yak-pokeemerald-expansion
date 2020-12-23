@@ -11762,7 +11762,7 @@ static void Cmd_handleballthrow(void)
 				gBattleMons[gBattlerTarget].species == SPECIES_DEMON_RIPPER_FORM ||
 				gBattleMons[gBattlerTarget].species == SPECIES_DELRITH ||
 				gBattleMons[gBattlerTarget].species == SPECIES_DEMON_TORMENTED_FORM ||
-				gBattleMons[gBattlerTarget].species == SPECIES_ABYSSAL_DEMON_FORM ||
+				gBattleMons[gBattlerTarget].species == SPECIES_ABYSSAL_DEMON_FORM 
 			
 			
 			)

@@ -27,24 +27,24 @@ gBattlescriptsForBallThrow:: @ 82DBD08
 	.4byte BattleScript_BallThrow        @ ITEM_TIMER_BALL
 	.4byte BattleScript_BallThrow        @ ITEM_LUXURY_BALL
 	.4byte BattleScript_BallThrow        @ ITEM_PREMIER_BALL
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
-	.4byte BattleScript_BallThrow
+	.4byte BattleScript_BallThrow		 @ ITEM_NORMAL_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_BRONZE_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_IRON_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_STEEL_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_BLACK_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_MITHRIL_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_ADAMANT_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_RUNE_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_DRAGON_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_CRYSTAL_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_SPLITBARK_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_DRAGONBANE_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_AUGMENTED_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_MYSTIC_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_BARROWS_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_GRANITE_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_ANCIENT_POUCH
+	.4byte BattleScript_BallThrow		 @ ITEM_ELEMENTAL_POUCH
 
 	.align 2
 gBattlescriptsForUsingItem:: @ 82DBD3C

@@ -11642,62 +11642,62 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ZIGZAGOON"
+                "species": "SPECIES_NEWTROOST"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ZIGZAGOON"
+                "species": "SPECIES_NEWTROOST"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ZIGZAGOON"
+                "species": "SPECIES_NEWTROOST"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ZIGZAGOON"
+                "species": "SPECIES_NEWTROOST"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_PET_ROCK"
+                "species": "SPECIES_MINOTAUR_RUNE_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_PET_ROCK"
+                "species": "SPECIES_LABRADOR"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIRD_NEST"
+                "species": "SPECIES_MINOTAUR_RUNE_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIRD_NEST"
+                "species": "SPECIES_MINOTAUR_RUNE_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIRD_NEST"
+                "species": "SPECIES_LABRADOR"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIRD_NEST"
+                "species": "SPECIES_MINOTAUR_RUNE_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIRD_NEST"
+                "species": "SPECIES_MINOTAUR_RUNE_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BIRD_NEST"
+                "species": "SPECIES_LABRADOR"
               }
             ]
           },
@@ -13671,62 +13671,62 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CAT_NORMAL_FORM"
+                "species": "SPECIES_TOY_DOLL"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ABYSSAL_PARASITE_FORM"
+                "species": "SPECIES_TOY_DOLL"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ABYSSAL_PARASITE_FORM"
+                "species": "SPECIES_TOY_DOLL"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ARMALING"
+                "species": "SPECIES_TOY_DOLL"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ZAROBIRD"
+                "species": "SPECIES_TOY_DOLL"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CRABLET_TIER3_FORM"
+                "species": "SPECIES_TOY_DOLL"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_FROG_BLOATED_FORM"
+                "species": "SPECIES_TOY_DOLL"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_HAND_CREEPING_FORM"
+                "species": "SPECIES_TOY_DOLL"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_GIANT_SWAMP_FORM"
+                "species": "SPECIES_TOY_DOLL"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SARABIRD"
+                "species": "SPECIES_TOY_DOLL"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHICKEN_BANDOSIAN_FORM"
+                "species": "SPECIES_TOY_DOLL"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BANDLING"
+                "species": "SPECIES_TOY_DOLL"
               }
             ]
           }

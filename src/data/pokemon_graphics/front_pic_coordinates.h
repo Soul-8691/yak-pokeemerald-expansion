@@ -2200,7 +2200,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_CHICKEN_UNDEAD_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset =11,
 	},
 	[SPECIES_CHICKEN_MYSTERY_FORM] =
 	{
@@ -3030,7 +3030,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_GIANT_MOLE] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 1,
 	},
 	[SPECIES_SQUIRREL] =
 	{
@@ -3135,7 +3135,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_PENGUIN_SPY_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 4,
 	},
 	[SPECIES_PENGUIN_AGENT_FORM] =
 	{
@@ -3320,7 +3320,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_DELRITH] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 5,
 	},
 	[SPECIES_IMPLING_BABY_FORM] =
 	{
@@ -3420,7 +3420,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_YAK_SACRED_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 6,
 	},
 	[SPECIES_YAK_CLUESCROLL_FORM] =
 	{
@@ -3485,22 +3485,22 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_SPROUTLING_SUMMER_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 3,
 	},
 	[SPECIES_SPROUTLING_SPRING_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 3,
 	},
 	[SPECIES_SPROUTLING_WINTER_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 4,
 	},
 	[SPECIES_SPROUTLING_AUTUMN_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 3,
 	},
 	[SPECIES_KALPHITE_WORKER_FORM] =
 	{
@@ -3525,7 +3525,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_KALPHITE_KING_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 1,
 	},
 	[SPECIES_RUE] =
 	{
@@ -3590,7 +3590,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_TZ_KIH] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 4,
 	},
 	[SPECIES_TZ_KEK] =
 	{
@@ -3600,12 +3600,12 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_TOK_XIL] =
 	{
 		.size = 0x0,
-		.y_offset = 1,
+		.y_offset = 5,
 	},
 	[SPECIES_TZ_KIH_SPIRIT_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 6,
 	},
 	[SPECIES_KET_DILL] =
 	{
@@ -3730,17 +3730,17 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_DAGANNOTH_KING_RANGE_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 1,
 	},
 	[SPECIES_DAGANNOTH_KING_MAGIC_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 2,
 	},
 	[SPECIES_DAGANNOTH_KING_MELEE_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 2,
 	},
 	[SPECIES_DAGANNOTH_KING_RANGE_MEGA_FORM] =
 	{
@@ -3910,12 +3910,12 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_SARACHNIS] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 1,
 	},
 	[SPECIES_VENENATIS] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 5,
 	},
 	[SPECIES_SPIDINE] =
 	{
@@ -4110,7 +4110,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_XINACHTO] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 1,
 	},
 	[SPECIES_CAVE_SLIME] =
 	{
@@ -4270,7 +4270,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_DURZAG] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 1,
 	},
 	[SPECIES_YAKAMARU] =
 	{
@@ -4385,7 +4385,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_BIRDS_NEST_GOD_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 20,
 	},
 	[SPECIES_PIGEON] =
 	{
@@ -4815,17 +4815,17 @@ const struct MonCoords gMonFrontPicCoords[] =
 	[SPECIES_GORILLA_AYUNI_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 1,
 	},
 	[SPECIES_GORILLA_LEEUNI_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 1,
 	},
 	[SPECIES_GORILLA_ERUNI_FORM] =
 	{
 		.size = 0x0,
-		.y_offset = 0,
+		.y_offset = 3,
 	},
 	[SPECIES_MONKEY_KARAMJA_BABY_FORM] =
 	{
@@ -5172,6 +5172,33 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 17,
 	},
+	
+	/*[SPECIES_BALANCEELE] =
+	{
+		.size = 0x0,
+		.y_offset = 1,
+	
+	},
+	[SPECIES_CAMEL] =
+	{
+		.size = 0x0,
+		.y_offset = 7,
+	
+	},
+	[SPECIES_CAMEL_WARRIOR_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 2,
+	
+	},
+	[SPECIES_UGHTANKI] =
+	{
+		.size = 0x0,
+		.y_offset = 1,
+	
+	},
+	
+	*/
 	//POKESCAPE END	
 	
     [SPECIES_EGG] =

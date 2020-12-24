@@ -1,0 +1,54 @@
+mapscripts Tutorial_Island_Cave_MapScripts{}
+
+script ratbattle {
+	lock
+	faceplayer
+	showmonpic (SPECIES_RAT_NORMAL_FORM, 10, 3)
+	msgbox ("REEEEE")
+	setwildbattle (SPECIES_RAT_NORMAL_FORM, 3, ITEM_NONE)
+	hidemonpic
+	dowildbattle
+	
+	if (var(VAR_RESULT) == B_OUTCOME_WON){
+		applymovement(1, Rat1Run)
+		applymovement(2, Rat2Run)
+		applymovement(3, Rat3Run)
+		waitmovement(0)
+		removeobject (1)
+		removeobject (2)
+		removeobject (3)
+		release
+	}
+	else {
+	lock
+	msgbox(format("Vannaka: GET BACK IN THERE AND FIGHT YOU COWARD!"))
+	release
+	}
+	
+
+}
+
+movement Rat1Run{
+	jump_in_place_up
+	walk_fast_up *3
+	jump_up
+	walk_fast_up *6
+	
+}
+
+movement Rat2Run{
+	jump_in_place_up
+	walk_fast_up *2
+	walk_fast_right *8
+	jump_right
+	walk_fast_right *6
+	
+}
+
+movement Rat3Run{
+	jump_in_place_down
+	walk_fast_down *3
+	jump_down
+	walk_fast_down *8
+	
+}

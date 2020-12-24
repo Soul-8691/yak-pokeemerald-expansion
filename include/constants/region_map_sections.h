@@ -214,18 +214,18 @@
 #define MAPSEC_ALTERING_CAVE                0xD2
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
-#define MAPSEC_NONE                         0xD5
-
 //POKESCAPE
-#define MAPSEC_MISTHALIN					0xD6
-#define MAPSEC_KHARIDIAN_DESERT				0xD7
-#define MAPSEC_ASGARNIA						0xD8
-#define MAPSEC_FELDIP_HILLS					0xD9
-#define MAPSEC_FREMENNIK_PROVINCE			0xDA
-#define MAPSEC_KANDARIN						0xDB
-#define MAPSEC_KARAMJA						0xDC
-#define MAPSEC_MORYTANIA					0xDD
-#define MAPSEC_WILDERNESS					0xDE			
+#define MAPSEC_MISTHALIN					0xD5
+#define MAPSEC_KHARIDIAN_DESERT				0xD6
+#define MAPSEC_ASGARNIA						0xD7
+#define MAPSEC_FELDIP_HILLS					0xD8
+#define MAPSEC_FREMENNIK_PROVINCE			0xD9
+#define MAPSEC_KANDARIN						0xDA
+#define MAPSEC_KARAMJA						0xDB
+#define MAPSEC_MORYTANIA					0xDC
+#define MAPSEC_WILDERNESS					0xDD
+#define MAPSEC_TUTORIAL_ISLAND				0xDE
+#define MAPSEC_NONE							0xDF
 
 
 

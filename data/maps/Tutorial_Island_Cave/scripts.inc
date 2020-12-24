@@ -86,3 +86,4 @@ ratbattle_Text_0:
 ratbattle_Text_1:
 	.string "Vannaka: GET BACK IN THERE AND FIGHT\n"
 	.string "YOU COWARD!$"
+

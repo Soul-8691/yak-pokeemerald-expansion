@@ -605,6 +605,7 @@
 #define MAP_AL_KHARID         (10 | (34 << 8))
 #define MAP_MUSA_POINT        (11 | (34 << 8))
 #define MAP_TAVERLEY          (12 | (34 << 8))
+#define MAP_TUTORIAL_ISLAND   (13 | (34 << 8))
 
 // Map Group 35
 #define MAP_ROUTE1  (0 | (35 << 8))
@@ -648,11 +649,12 @@
 #define MAP_ROUTE38 (38 | (35 << 8))
 
 // Map Group 36
-#define MAP_LUMBRIDGE_SWAMP  (0 | (36 << 8))
-#define MAP_MILL_LANE_MILL   (1 | (36 << 8))
-#define MAP_DRAYNOR_MANOR    (2 | (36 << 8))
-#define MAP_MUDSKIPPER_POINT (3 | (36 << 8))
-#define MAP_LUMBRIDGE_FOREST (4 | (36 << 8))
+#define MAP_LUMBRIDGE_SWAMP      (0 | (36 << 8))
+#define MAP_MILL_LANE_MILL       (1 | (36 << 8))
+#define MAP_DRAYNOR_MANOR        (2 | (36 << 8))
+#define MAP_MUDSKIPPER_POINT     (3 | (36 << 8))
+#define MAP_LUMBRIDGE_FOREST     (4 | (36 << 8))
+#define MAP_TUTORIAL_ISLAND_CAVE (5 | (36 << 8))
 
 // Map Group 37
 #define MAP_LUMBRIDGE_HOUSE_BOBS_AXES1 (0 | (37 << 8))
@@ -679,8 +681,10 @@
 #define MAP_MILL_LANE_MILL_3 (2 | (38 << 8))
 
 // Map Group 39
-#define MAP_ROUTE1_HOUSE_FRED (0 | (39 << 8))
-#define MAP_ROUTE1_HOUSE_1    (1 | (39 << 8))
+#define MAP_ROUTE1_HOUSE_FRED        (0 | (39 << 8))
+#define MAP_ROUTE1_HOUSE_1           (1 | (39 << 8))
+#define MAP_TUTORIAL_ISLAND_LAB_UP   (2 | (39 << 8))
+#define MAP_TUTORIAL_ISLAND_LAB_DOWN (3 | (39 << 8))
 
 #define MAP_GROUPS_COUNT 40
 

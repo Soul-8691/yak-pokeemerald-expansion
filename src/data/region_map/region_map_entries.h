@@ -198,17 +198,6 @@ static const u8 sMapName_MarineCave[] = _("MARINE CAVE");
 static const u8 sMapName_TerraCave[] = _("TERRA CAVE");
 static const u8 sMapName_DesertUnderpass[] = _("DESERT UNDERPASS");
 static const u8 sMapName_TrainerHill[] = _("TRAINER HILL");
-//pokescape
-static const u8 sMapName_Misthalin[] = ("MISTHALIN");
-static const u8 sMapName_KharidianDesert[] = ("KHARIDIAN DESERT");
-static const u8 sMapName_Asgarnia[] = ("ASGARNIA");
-static const u8 sMapName_FeldipHills[] = ("FELDIP HILLS");
-static const u8 sMapName_FremennikProvince[] = ("FREMENNIK PROVINCE");
-static const u8 sMapName_Kandarin[] = ("KANDARIN");
-static const u8 sMapName_Karamja[] = ("KARAMJA");
-static const u8 sMapName_Morytania[] = ("MORYTANIA");
-static const u8 sMapName_Wilderness[] = ("WILDERNESS");
-static const u8 sMapName_TutorialIsland[] = ("TUTORIAL ISLAND");
 
 const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_LITTLEROOT_TOWN]            = { 4, 11, 1, 1, sMapName_LittlerootTown},
@@ -423,18 +412,7 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_DESERT_UNDERPASS]           = { 2,  0, 1, 1, sMapName_DesertUnderpass},
     [MAPSEC_ALTERING_CAVE]              = { 6,  8, 1, 1, sMapName_AlteringCave},
     [MAPSEC_NAVEL_ROCK]                 = { 0,  0, 1, 1, sMapName_NavelRock},
-    [MAPSEC_TRAINER_HILL]               = { 8,  4, 1, 1, sMapName_TrainerHill},
-	//pokescape
-	[MAPSEC_MISTHALIN] 					= {0,	0, 1, 1, sMapName_Misthalin},
-	[MAPSEC_KHARIDIAN_DESERT]			= {0,	0, 1, 1, sMapName_KharidianDesert},		
-	[MAPSEC_ASGARNIA] 					= {0,	0, 1, 1, sMapName_Asgarnia},
-	[MAPSEC_FELDIP_HILLS] 				= {0,	0, 1, 1, sMapName_FeldipHills},
-	[MAPSEC_FREMENNIK_PROVINCE] 		= {0,	0, 1, 1, sMapName_FremennikProvince},
-	[MAPSEC_KANDARIN] 					= {0,	0, 1, 1, sMapName_Kandarin},
-	[MAPSEC_KARAMJA] 					= {0,	0, 1, 1, sMapName_Karamja},
-	[MAPSEC_MORYTANIA] 					= {0,	0, 1, 1, sMapName_Morytania},
-	[MAPSEC_WILDERNESS] 				= {0,	0, 1, 1, sMapName_Wilderness},
-	[MAPSEC_TUTORIAL_ISLAND]			= {0,	0, 1, 1, sMapName_TutorialIsland}
+    [MAPSEC_TRAINER_HILL]               = { 8,  4, 1, 1, sMapName_TrainerHill}
 };
 
 #endif //GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H

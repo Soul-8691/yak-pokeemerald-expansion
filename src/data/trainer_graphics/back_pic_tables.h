@@ -15,8 +15,8 @@ const struct MonCoords gTrainerBackPicCoords[] =
 // the casts are so they'll play nice with the strict struct definition
 const struct CompressedSpriteSheet gTrainerBackPicTable[] =
 {
-    (const u32 *)gTrainerBackPic_Brendan, 0x2000, TRAINER_BACK_PIC_BRENDAN,
-    (const u32 *)gTrainerBackPic_May, 0x2000, TRAINER_BACK_PIC_MAY,
+    (const u32 *)gTrainerBackPic_protaganist_m, 0x2000, TRAINER_BACK_PIC_BRENDAN,
+    (const u32 *)gTrainerBackPic_protaganist_f, 0x2000, TRAINER_BACK_PIC_MAY,
     (const u32 *)gTrainerBackPic_Red, 0x2800, TRAINER_BACK_PIC_RED,
     (const u32 *)gTrainerBackPic_Leaf, 0x2800, TRAINER_BACK_PIC_LEAF,
     (const u32 *)gTrainerBackPic_RubySapphireBrendan, 0x2000, TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN,
@@ -27,8 +27,8 @@ const struct CompressedSpriteSheet gTrainerBackPicTable[] =
 
 const struct CompressedSpritePalette gTrainerBackPicPaletteTable[] =
 {
-    TRAINER_BACK_PAL(BRENDAN, gTrainerPalette_Brendan),
-    TRAINER_BACK_PAL(MAY, gTrainerPalette_May),
+    TRAINER_BACK_PAL(BRENDAN, gTrainerPalette_protaganist_m_back),
+    TRAINER_BACK_PAL(MAY, gTrainerPalette_protaganist_f_back),
     TRAINER_BACK_PAL(RED, gTrainerBackPicPalette_Red),
     TRAINER_BACK_PAL(LEAF, gTrainerBackPicPalette_Leaf),
     TRAINER_BACK_PAL(RUBY_SAPPHIRE_BRENDAN, gTrainerPalette_RubySapphireBrendan),

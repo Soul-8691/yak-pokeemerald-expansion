@@ -25,6 +25,21 @@ ratbattle_1:
 	removeobject 1
 	removeobject 2
 	removeobject 3
+	setvar VAR_UNUSED_0x4083, 2
+	release
+	return
+
+
+RatArenaLockedIn::
+	setvar VAR_UNUSED_0x4083, 1
+	return
+
+
+RatArenaCantLeave::
+	lock
+	msgbox ratbattle_Text_1
+	applymovement OBJ_EVENT_ID_PLAYER, RatArenaMoveDown
+	waitmovement 0
 	release
 	return
 
@@ -80,10 +95,15 @@ Rat3Run:
 	walk_fast_down
 	step_end
 
+RatArenaMoveDown:
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
 ratbattle_Text_0:
 	.string "REEEEE$"
 
 ratbattle_Text_1:
 	.string "Vannaka: GET BACK IN THERE AND FIGHT\n"
 	.string "YOU COWARD!$"
-

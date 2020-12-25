@@ -1,0 +1,35 @@
+mapscripts Tutorial_Island_Lab_Up_MapScripts{}
+
+script ClockNotSetLeft{
+	if (!flag(FLAG_SET_WALL_CLOCK)){
+		lock
+		msgbox("I should check what time it is.")
+		applymovement(OBJ_EVENT_ID_PLAYER,ClockMoveLeft)
+		waitmovement(0)
+		release
+	}
+	else {
+	release
+	}
+}
+
+script ClockNotSetDown{
+	if (!flag(FLAG_SET_WALL_CLOCK)){
+		lock
+		msgbox("I should check what time it is.")
+		applymovement(OBJ_EVENT_ID_PLAYER,ClockMoveDown)
+		waitmovement(0)
+		release
+	}
+	else{
+	release
+	}
+}
+
+movement ClockMoveLeft{
+	walk_left
+}
+
+movement ClockMoveDown{
+	walk_down
+}

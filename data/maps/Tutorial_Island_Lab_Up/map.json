@@ -3,8 +3,7 @@
   "name": "Tutorial_Island_Lab_Up",
   "layout": "LAYOUT_TUTORIAL_ISLAND_LAB_UP",
   "music": "MUS_ABANDONED_SHIP",
-  "region_map_section": "MAPSEC_TUTORIAL_ISLAND",
-
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -19,17 +18,41 @@
   ],
   "warp_events": [
     {
-      "x": 5,
-      "y": 3,
+      "x": 9,
+      "y": 2,
       "elevation": 0,
       "dest_map": "MAP_TUTORIAL_ISLAND_LAB_DOWN",
-      "dest_warp_id": 0
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 2,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "ClockNotSetLeft"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "ClockNotSetDown"
+    }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Tutorial_Island_EventScript_WallClock"
+    }
   ]
 }

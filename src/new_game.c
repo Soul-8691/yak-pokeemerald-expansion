@@ -132,6 +132,12 @@ static void WarpToTruck(void)
     WarpIntoMap();
 }
 
+static void WarpToTutorialIsland(void)
+{
+    SetWarpDestination(MAP_GROUP(TUTORIAL_ISLAND_LAB_UP), MAP_NUM(TUTORIAL_ISLAND_LAB_UP), -1, -1, -1);
+    WarpIntoMap();
+}
+
 void Sav2_ClearSetDefault(void)
 {
     ClearSav2();
@@ -194,7 +200,8 @@ void NewGameInitData(void)
     InitDewfordTrend();
     ResetFanClub();
     ResetLotteryCorner();
-    WarpToTruck();
+    //WarpToTruck();
+	WarpToTutorialIsland();
     ScriptContext2_RunNewScript(EventScript_ResetAllMapFlags);
     ResetMiniGamesResults();
     InitUnionRoomChatRegisteredTexts();

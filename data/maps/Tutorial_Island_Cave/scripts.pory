@@ -17,6 +17,7 @@ script ratbattle {
 		removeobject (1)
 		removeobject (2)
 		removeobject (3)
+		setvar(VAR_UNUSED_0x4083, 2)
 		release
 	}
 	else {
@@ -24,8 +25,18 @@ script ratbattle {
 	msgbox(format("Vannaka: GET BACK IN THERE AND FIGHT YOU COWARD!"))
 	release
 	}
-	
+}
 
+script RatArenaLockedIn {
+	setvar(VAR_UNUSED_0x4083, 1)
+}
+
+script RatArenaCantLeave{
+	lock
+	msgbox(format("Vannaka: GET BACK IN THERE AND FIGHT YOU COWARD!"))
+	applymovement(OBJ_EVENT_ID_PLAYER, RatArenaMoveDown)
+	waitmovement(0)
+	release
 }
 
 movement Rat1Run{
@@ -51,4 +62,8 @@ movement Rat3Run{
 	jump_down
 	walk_fast_down *8
 	
+}
+
+movement RatArenaMoveDown{
+	walk_down *3
 }

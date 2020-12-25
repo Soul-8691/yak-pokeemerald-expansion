@@ -301,8 +301,12 @@ const u32 gTrainerFrontPic_maggie[] = INCBIN_U32("graphics/trainers/pokescape/fr
 const u32 gTrainerFrontPic_meg[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/EVENT/meg.4bpp.lz");
 const u32 gTrainerFrontPic_mithrilman[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/EVENT/mithrilman.4bpp.lz");
 const u32 gTrainerFrontPic_ozan[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/EVENT/ozan.4bpp.lz");
+
 const u32 gTrainerFrontPic_protaganist_f[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/EVENT/protaganist_f.4bpp.lz");
 const u32 gTrainerFrontPic_protaganist_m[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/EVENT/protaganist_m.4bpp.lz");
+const u8 gTrainerBackPic_protaganist_f[] = INCBIN_U8("graphics/trainers/pokescape/back_pics/protaganist_f.4bpp");
+const u8 gTrainerBackPic_protaganist_m[] = INCBIN_U8("graphics/trainers/pokescape/back_pics/protaganist_m.4bpp");
+
 const u32 gTrainerFrontPic_raptor[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/EVENT/raptor.4bpp.lz");
 const u32 gTrainerFrontPic_sigmund[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/EVENT/sigmund.4bpp.lz");
 const u32 gTrainerFrontPic_sir_owen[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/EVENT/sir_owen.4bpp.lz");
@@ -405,6 +409,9 @@ const u32 gTrainerPalette_mithrilman[] = INCBIN_U32("graphics/trainers/pokescape
 const u32 gTrainerPalette_ozan[] = INCBIN_U32("graphics/trainers/pokescape/palettes/ozan.gbapal.lz");
 const u32 gTrainerPalette_protaganist_f[] = INCBIN_U32("graphics/trainers/pokescape/palettes/protaganist_f.gbapal.lz");
 const u32 gTrainerPalette_protaganist_m[] = INCBIN_U32("graphics/trainers/pokescape/palettes/protaganist_m.gbapal.lz");
+const u32 gTrainerPalette_protaganist_f_back[] = INCBIN_U32("graphics/trainers/pokescape/palettes/protaganist_f_back.gbapal.lz");
+const u32 gTrainerPalette_protaganist_m_back[] = INCBIN_U32("graphics/trainers/pokescape/palettes/protaganist_m_back.gbapal.lz");
+
 const u32 gTrainerPalette_raptor[] = INCBIN_U32("graphics/trainers/pokescape/palettes/raptor.gbapal.lz");
 const u32 gTrainerPalette_sigmund[] = INCBIN_U32("graphics/trainers/pokescape/palettes/sigmund.gbapal.lz");
 const u32 gTrainerPalette_sir_owen[] = INCBIN_U32("graphics/trainers/pokescape/palettes/sir_owen.gbapal.lz");

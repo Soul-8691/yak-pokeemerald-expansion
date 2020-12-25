@@ -7577,6 +7577,8 @@ extern const u32 gTrainerPalette_mithrilman[];
 extern const u32 gTrainerPalette_ozan[];
 extern const u32 gTrainerPalette_protaganist_f[];
 extern const u32 gTrainerPalette_protaganist_m[];
+extern const u32 gTrainerPalette_protaganist_f_back[];
+extern const u32 gTrainerPalette_protaganist_m_back[];
 extern const u32 gTrainerPalette_raptor[];
 extern const u32 gTrainerPalette_sigmund[];
 extern const u32 gTrainerPalette_sir_owen[];
@@ -7662,6 +7664,9 @@ extern const u32 gTrainerPalette_cook_fm_duo[];
 extern const u32 gTrainerPalette_lukien[];
 extern const u32 gTrainerPalette_firemaking[];
 extern const u32 gTrainerPalette_pk_duo[];
+
+extern const u8 gTrainerBackPic_protaganist_f[];
+extern const u8 gTrainerBackPic_protaganist_m[];
 
 extern const u8 gTrainerBackPic_Brendan[];
 extern const u8 gTrainerBackPic_May[];

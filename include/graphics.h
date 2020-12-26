@@ -8575,6 +8575,34 @@ extern const u32 gItemIconPalette_FragmentOfJas[];
 extern const u32 gItemIcon_PouchNormal[];
 extern const u32 gItemIconPalette_PouchNormal[];
 
+//pokescape key items
+extern const u32 gItemIcon_Pickaxe[];
+extern const u32 gItemIconPalette_Pickaxe[];
+
+extern const u32 gItemIcon_Boat[];
+extern const u32 gItemIconPalette_Boat[];
+
+extern const u32 gItemIcon_Axe[];
+extern const u32 gItemIconPalette_Axe[];
+
+extern const u32 gItemIcon_StrengthItem[];
+extern const u32 gItemIconPalette_StrengthItem[];
+
+extern const u32 gItemIcon_DiveItem[];
+extern const u32 gItemIconPalette_DiveItem[];
+
+extern const u32 gItemIcon_Spade[];
+extern const u32 gItemIconPalette_Spade[];
+
+extern const u32 gItemIcon_FlyItem[];
+extern const u32 gItemIconPalette_FlyItem[];
+
+extern const u32 gItemIcon_Lantern[];
+extern const u32 gItemIconPalette_Lantern[];
+
+extern const u32 gItemIcon_WaterfallItem[];
+extern const u32 gItemIconPalette_WaterfallItem[];
+
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];
 

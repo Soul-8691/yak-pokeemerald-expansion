@@ -429,6 +429,8 @@ const u32 *const gItemIconTable[][2] =
 	[ITEM_GREEN_SCALE] = {gItemIcon_GreenScale, gItemIconPalette_GreenScale},	
 	[ITEM_BLACK_SCALE] = {gItemIcon_BlackScale, gItemIconPalette_BlackScale},	
 	[ITEM_FRAGMENT_OF_JAS] = {gItemIcon_FragmentOfJas, gItemIconPalette_FragmentOfJas},	
+	
+	//pokescape pokeballs
 	[ITEM_NORMAL_POUCH] = {gItemIcon_NormalPouch, gItemIconPalette_NormalPouch},	
 	[ITEM_BRONZE_POUCH] = {gItemIcon_BronzePouch, gItemIconPalette_BronzePouch},
 	[ITEM_IRON_POUCH] = {gItemIcon_IronPouch, gItemIconPalette_IronPouch},
@@ -447,7 +449,16 @@ const u32 *const gItemIconTable[][2] =
 	[ITEM_GRANITE_POUCH] = {gItemIcon_GranitePouch, gItemIconPalette_GranitePouch},
 	[ITEM_ANCIENT_POUCH] = {gItemIcon_AncientPouch, gItemIconPalette_AncientPouch},
 	[ITEM_ELEMENTAL_POUCH] = {gItemIcon_ElementalPouch, gItemIconPalette_ElementalPouch},
-	
+	//pokescape key Items
+	[ITEM_PICKAXE] = {gItemIcon_Pickaxe, gItemIconPalette_Pickaxe},
+	[ITEM_BOAT] = {gItemIcon_Boat, gItemIconPalette_Boat},
+	[ITEM_AXE] = {gItemIcon_Axe, gItemIconPalette_Axe},
+	[ITEM_STRENGTHITEM] = {gItemIcon_StrengthItem, gItemIconPalette_StrengthItem},
+	[ITEM_DIVEITEM] = {gItemIcon_DiveItem, gItemIconPalette_DiveItem},
+	[ITEM_SPADE] = {gItemIcon_Spade, gItemIconPalette_Spade},
+	[ITEM_FLYITEM] = {gItemIcon_FlyItem, gItemIconPalette_FlyItem},
+	[ITEM_LANTERN] = {gItemIcon_Lantern, gItemIconPalette_Lantern},
+	[ITEM_WATERFALLITEM] = {gItemIcon_WaterfallItem, gItemIconPalette_WaterfallItem},
     // Return to field arrow
     [ITEM_FIELD_ARROW] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };

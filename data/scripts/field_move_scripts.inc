@@ -4,7 +4,7 @@ EventScript_CutTree:: @ 82906BB
 	//goto_if_unset FLAG_BADGE01_GET, EventScript_CheckTreeCantCut
 	//checkpartymove MOVE_CUT
 	//compare VAR_RESULT, PARTY_SIZE
-	checkitem ITEM_ELEMENTAL_POUCH, 1
+	checkitem ITEM_AXE, 1
 	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_CheckTreeCantCut
 	setfieldeffectargument 0, VAR_RESULT
@@ -67,10 +67,10 @@ EventScript_RockSmash:: @ 82907A6
 	//goto_if_unset FLAG_BADGE03_GET, EventScript_CantSmashRock
 	//checkpartymove MOVE_ROCK_SMASH
 	//compare VAR_RESULT, PARTY_SIZE
-	checkitem ITEM_ELEMENTAL_POUCH, 1
+	checkitem ITEM_PICKAXE, 1
 	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_CantSmashRock
-	setitemarg ITEM_ELEMENTAL_POUCH
+	setitemarg ITEM_PICKAXE
 	setfieldeffectargument 0, VAR_RESULT
 	//bufferpartymonnick 0, VAR_RESULT
 	//buffermovename 1, MOVE_ROCK_SMASH
@@ -138,7 +138,7 @@ EventScript_StrengthBoulder:: @ 82908BA
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
 	//checkpartymove MOVE_STRENGTH
 	//compare VAR_RESULT, PARTY_SIZE
-	checkitem ITEM_ELEMENTAL_POUCH, 1
+	checkitem ITEM_STRENGTHITEM, 1
 	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_CantStrength
 	setfieldeffectargument 0, VAR_RESULT
@@ -201,7 +201,7 @@ EventScript_UseWaterfall:: @ 8290A49
 	lockall
 	//checkpartymove MOVE_WATERFALL
 	//compare VAR_RESULT, PARTY_SIZE
-	checkitem ITEM_ELEMENTAL_POUCH, 1
+	checkitem ITEM_WATERFALLITEM, 1
 	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_CantWaterfall
 	//bufferpartymonnick 0, VAR_RESULT
@@ -238,7 +238,7 @@ EventScript_UseDive:: @ 8290B0F
 	lockall
 	//checkpartymove MOVE_DIVE
 	//compare VAR_RESULT, PARTY_SIZE
-	checkitem ITEM_ELEMENTAL_POUCH, 1
+	checkitem ITEM_DIVEITEM, 1
 	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_CantDive
 	//bufferpartymonnick 0, VAR_RESULT
@@ -263,16 +263,18 @@ EventScript_EndDive:: @ 8290B58
 
 EventScript_UseDiveUnderwater:: @ 8290B5A
 	lockall
-	checkpartymove MOVE_DIVE
-	compare VAR_RESULT, PARTY_SIZE
-	goto_if_eq EventScript_CantSurface
-	bufferpartymonnick 0, VAR_RESULT
+	//checkpartymove MOVE_DIVE
+	//compare VAR_RESULT, PARTY_SIZE
+	//goto_if_eq EventScript_CantSurface
+	checkitem ITEM_DIVEITEM, 1
+	compare VAR_RESULT, FALSE
+	//bufferpartymonnick 0, VAR_RESULT
 	setfieldeffectargument 0, VAR_RESULT
 	setfieldeffectargument 1, 1
 	msgbox Text_WantToSurface, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq EventScript_EndSurface
-	msgbox Text_MonUsedDive, MSGBOX_DEFAULT
+	//msgbox Text_MonUsedDive, MSGBOX_DEFAULT
 	dofieldeffect FLDEFF_USE_DIVE
 	goto EventScript_EndSurface
 	end

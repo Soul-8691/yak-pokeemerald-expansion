@@ -873,18 +873,34 @@ const u32 gItemIconPalette_AncientPouch[] = INCBIN_U32("graphics/items/pokescape
 const u32 gItemIcon_ElementalPouch[] = INCBIN_U32("graphics/items/pokescape_icons/elemental_pouch.4bpp.lz");
 const u32 gItemIconPalette_ElementalPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/elemental_pouch.gbapal.lz");
 
+//pokescape key items
 
+const u32 gItemIcon_Pickaxe[] = INCBIN_U32("graphics/items/pokescape_icons/pickaxe.4bpp.lz");
+const u32 gItemIconPalette_Pickaxe[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/pickaxe.gbapal.lz");
 
+const u32 gItemIcon_Boat[] = INCBIN_U32("graphics/items/pokescape_icons/boat.4bpp.lz");
+const u32 gItemIconPalette_Boat[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/boat.gbapal.lz");
 
+const u32 gItemIcon_Axe[] = INCBIN_U32("graphics/items/pokescape_icons/axe.4bpp.lz");
+const u32 gItemIconPalette_Axe[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/axe.gbapal.lz");
 
+const u32 gItemIcon_StrengthItem[] = INCBIN_U32("graphics/items/pokescape_icons/strength_item.4bpp.lz");
+const u32 gItemIconPalette_StrengthItem[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/strength_item.gbapal.lz");
 
+const u32 gItemIcon_DiveItem[] = INCBIN_U32("graphics/items/pokescape_icons/dive_item.4bpp.lz");
+const u32 gItemIconPalette_DiveItem[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/dive_item.gbapal.lz");
 
+const u32 gItemIcon_Spade[] = INCBIN_U32("graphics/items/pokescape_icons/spade.4bpp.lz");
+const u32 gItemIconPalette_Spade[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/spade.gbapal.lz");
 
+const u32 gItemIcon_FlyItem[] = INCBIN_U32("graphics/items/pokescape_icons/fly_item.4bpp.lz");
+const u32 gItemIconPalette_FlyItem[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fly_item.gbapal.lz");
 
+const u32 gItemIcon_Lantern[] = INCBIN_U32("graphics/items/pokescape_icons/lantern.4bpp.lz");
+const u32 gItemIconPalette_Lantern[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/lantern.gbapal.lz");
 
-
-
-
+const u32 gItemIcon_WaterfallItem[] = INCBIN_U32("graphics/items/pokescape_icons/waterfall_item.4bpp.lz");
+const u32 gItemIconPalette_WaterfallItem[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/waterfall_item.gbapal.lz");
 
 
 

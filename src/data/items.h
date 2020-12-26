@@ -5442,14 +5442,116 @@ const struct Item gItems[] =
         .itemId = ITEM_ELEMENTAL_POUCH,
         .price = 200,
         .description = sElementalPouchDesc,
+        .pocket = POCKET_POKE_BALLS,
+        .type = 3,
+        .battleUsage = 2,
+        .battleUseFunc = ItemUseInBattle_PokeBall,
+        .secondaryId = 3,
+    },
+	//pokescape key items
+    [ITEM_PICKAXE] =
+    {
+        .name = _("Pickaxe"),
+        .itemId = ITEM_PICKAXE,
+        .price = 200,
+        .description = sElementalPouchDesc,
         .pocket = POCKET_KEY_ITEMS,
         .type = 3,
         .battleUsage = 2,
-        //.battleUseFunc = ItemUseInBattle_PokeBall,
-		.fieldUseFunc = ItemUseOutOfBattle_Lantern,
+        .fieldUseFunc = ItemUseOutOfBattle_Pickaxe,
         .secondaryId = 3,
     },
 	
+    [ITEM_BOAT] =
+    {
+        .name = _("Boat"),
+        .itemId = ITEM_BOAT,
+        .price = 200,
+        .description = sElementalPouchDesc,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 3,
+        .battleUsage = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_Boat,
+        .secondaryId = 3,
+    },
+	
+    [ITEM_AXE] =
+    {
+        .name = _("Dragon Axe"),
+        .itemId = ITEM_AXE,
+        .price = 200,
+        .description = sElementalPouchDesc,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 3,
+        .battleUsage = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_Axe,
+        .secondaryId = 3,
+    },
+	
+    [ITEM_STRENGTHITEM] =
+    {
+        .name = _("Barbell"),
+        .itemId = ITEM_STRENGTHITEM,
+        .price = 200,
+        .description = sElementalPouchDesc,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 3,
+        .battleUsage = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_StrengthItem,
+        .secondaryId = 3,
+    },
+
+    [ITEM_DIVEITEM] =
+    {
+        .name = _("Diving Gear"),
+        .itemId = ITEM_DIVEITEM,
+        .price = 200,
+        .description = sElementalPouchDesc,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 3,
+        .battleUsage = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_DiveItem,
+        .secondaryId = 3,
+    },
+	
+    [ITEM_SPADE] =
+    {
+        .name = _("Spade"),
+        .itemId = ITEM_SPADE,
+        .price = 200,
+        .description = sElementalPouchDesc,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 3,
+        .battleUsage = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_Spade,
+        .secondaryId = 3,
+    },
+	
+    [ITEM_FLYITEM] =
+    {
+        .name = _("Teletab Bag"),
+        .itemId = ITEM_FLYITEM,
+        .price = 200,
+        .description = sElementalPouchDesc,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 3,
+        .battleUsage = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_FlyItem,
+        .secondaryId = 3,
+    },
+	
+    [ITEM_WATERFALLITEM] =
+    {
+        .name = _("Engines"),
+        .itemId = ITEM_WATERFALLITEM,
+        .price = 200,
+        .description = sElementalPouchDesc,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 3,
+        .battleUsage = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 3,
+    },
 	
 	
 	

@@ -47,11 +47,20 @@ RatArenaCantLeave::
 KevinItemsTest::
 	lock
 	faceplayer
-	giveitem ITEM_NORMAL_POUCH, 10
-	giveitem ITEM_RARE_CANDY, 10
-	giveitem ITEM_ELEMENTAL_POUCH, 1
-	giveitem ITEM_ESCAPE_ROPE, 10
-	giveitem ITEM_BLACK_SCALE, 10
+	//giveitem ITEM_NORMAL_POUCH, 10
+	//giveitem ITEM_RARE_CANDY, 10
+	//giveitem ITEM_ELEMENTAL_POUCH, 1
+	//giveitem ITEM_ESCAPE_ROPE, 10
+	//giveitem ITEM_BLACK_SCALE, 10
+	giveitem ITEM_PICKAXE, 1
+	giveitem ITEM_BOAT, 1
+	giveitem ITEM_AXE, 1
+	giveitem ITEM_STRENGTHITEM, 1
+	giveitem ITEM_DIVEITEM, 1
+	giveitem ITEM_SPADE, 1
+	giveitem ITEM_FLYITEM, 1
+	giveitem ITEM_LANTERN, 1
+	giveitem ITEM_WATERFALLITEM, 1
 	msgbox KevinItemsTest_Text_0
 	release
 	return

@@ -495,9 +495,19 @@
 #define ITEM_BLUE_SCALE 418
 #define ITEM_BLACK_SCALE 419
 #define ITEM_FRAGMENT_OF_JAS 420
+//pokescape key items
+#define ITEM_PICKAXE			421
+#define ITEM_BOAT				422
+#define ITEM_AXE				423
+#define ITEM_STRENGTHITEM		424
+#define ITEM_DIVEITEM			425
+#define ITEM_SPADE				426
+#define ITEM_FLYITEM			427
+#define ITEM_LANTERN			428
+#define ITEM_WATERFALLITEM		429
 
 
-#define ITEMS_COUNT 421
+#define ITEMS_COUNT 430
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 #define FIRST_BERRY_INDEX             ITEM_CHERI_BERRY

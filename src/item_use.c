@@ -1168,7 +1168,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
     {
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = 30;
+			gSaveBlock2Ptr->ItemArg = 421;
 			gFieldCallback = FieldCallback_RockSmash;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
@@ -1196,7 +1196,7 @@ void ItemUseOutOfBattle_Boat(u8 taskId)
 	{
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = 30;
+			gSaveBlock2Ptr->ItemArg = 422;
 			gFieldCallback = FieldCallback_Surf;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
@@ -1225,7 +1225,7 @@ void ItemUseOutOfBattle_Axe(u8 taskId)
 	{
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = 30;
+			gSaveBlock2Ptr->ItemArg = 423;
 			gFieldCallback = FieldCallback_Cut;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
@@ -1252,7 +1252,7 @@ void ItemUseOutOfBattle_StrengthItem(u8 taskId)
 {
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = 30;
+			gSaveBlock2Ptr->ItemArg = 424;
 			gFieldCallback = FieldCallback_Strength;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
@@ -1283,7 +1283,7 @@ void ItemUseOutOfBattle_DiveItem(u8 taskId)
         {
            	if(!gTasks[taskId].tUsingRegisteredKeyItem)
 			{
-				gSaveBlock2Ptr->ItemArg = 30;
+				gSaveBlock2Ptr->ItemArg = 425;
 				gFieldCallback = FieldCallback_Dive;
 				gBagMenu->exitCallback = CB2_ReturnToField;
 				Task_FadeAndCloseBagMenu(taskId);
@@ -1303,7 +1303,7 @@ void ItemUseOutOfBattle_DiveItem(u8 taskId)
         {
             if(!gTasks[taskId].tUsingRegisteredKeyItem)
 			{
-				gSaveBlock2Ptr->ItemArg = 30;
+				gSaveBlock2Ptr->ItemArg = 425;
 				gFieldCallback = FieldCallback_Dive;
 				gBagMenu->exitCallback = CB2_ReturnToField;
 				Task_FadeAndCloseBagMenu(taskId);
@@ -1341,7 +1341,7 @@ void ItemUseOutOfBattle_Spade(u8 taskId)
 	{
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 			{
-				gSaveBlock2Ptr->ItemArg = 30;
+				gSaveBlock2Ptr->ItemArg = 426;
 				gFieldCallback = FieldCallback_Dig;
 				gBagMenu->exitCallback = CB2_ReturnToField;
 				Task_FadeAndCloseBagMenu(taskId);
@@ -1372,7 +1372,7 @@ void ItemUseOutOfBattle_Lantern(u8 taskId)
 	{
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 			{
-				gSaveBlock2Ptr->ItemArg = 30;
+				gSaveBlock2Ptr->ItemArg = 428;
 				gFieldCallback = FieldCallback_Flash;
 				gBagMenu->exitCallback = CB2_ReturnToField;
 				Task_FadeAndCloseBagMenu(taskId);
@@ -1437,7 +1437,7 @@ void DoFlyItem(u8 taskId, TaskFunc task)
 
 void SetUpFlyUseCallback(u8 taskId)
 {
-	gSaveBlock2Ptr->ItemArg = 30;
+	gSaveBlock2Ptr->ItemArg = 427;
 	gBagMenu->exitCallback = CB2_OpenFlyMap;
 	Task_FadeAndCloseBagMenu(taskId);
 	

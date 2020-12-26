@@ -50,6 +50,8 @@ KevinItemsTest::
 	giveitem ITEM_NORMAL_POUCH, 10
 	giveitem ITEM_RARE_CANDY, 10
 	giveitem ITEM_ELEMENTAL_POUCH, 1
+	giveitem ITEM_ESCAPE_ROPE, 10
+	giveitem ITEM_BLACK_SCALE, 10
 	msgbox KevinItemsTest_Text_0
 	release
 	return

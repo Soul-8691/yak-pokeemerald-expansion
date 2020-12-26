@@ -90,4 +90,8 @@ void BufferMoveDeleterNicknameAndMove(void);
 void GetNumMovesSelectedMonHas(void);
 void MoveDeleterChooseMoveToForget(void);
 
+bool8 SetUpFieldMove_Fly(void);
+void Task_ClosePartyMenu(u8 taskId);
+
+
 #endif // GUARD_PARTY_MENU_H

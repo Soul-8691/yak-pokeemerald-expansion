@@ -46,13 +46,13 @@ Script_GnomeBoiKevin::
 	//giveitem ITEM_MITHRIL_POUCH, 10
 	//giveitem ITEM_ADAMANT_POUCH, 10
 	//giveitem ITEM_CRYSTAL_POUCH, 10
-	giveitem ITEM_SPLITBARK_POUCH, 10
-	giveitem ITEM_DRAGONBANE_POUCH, 10
-	giveitem ITEM_AUGMENTED_POUCH, 10
-	giveitem ITEM_MYSTIC_POUCH, 10
-	giveitem ITEM_BARROWS_POUCH, 10
-	giveitem ITEM_GRANITE_POUCH, 10
-	giveitem ITEM_ANCIENT_POUCH, 10
+	//giveitem ITEM_SPLITBARK_POUCH, 10
+	//giveitem ITEM_DRAGONBANE_POUCH, 10
+	//giveitem ITEM_AUGMENTED_POUCH, 10
+	//giveitem ITEM_MYSTIC_POUCH, 10
+	//giveitem ITEM_BARROWS_POUCH, 10
+	//giveitem ITEM_GRANITE_POUCH, 10
+	//giveitem ITEM_ANCIENT_POUCH, 10
 	giveitem ITEM_ELEMENTAL_POUCH, 10
 
 //STAT ITEMS
@@ -77,6 +77,7 @@ Script_GnomeBoiKevin::
 	//giveitem ITEM_ACRO_BIKE, 1
 
 	//setflag FLAG_BADGE05_GET
+	setflag FLAG_BADGE07_GET
 	//giveitem ITEM_HM01
 	//giveitem ITEM_HM02
 	//giveitem ITEM_HM03
@@ -84,7 +85,7 @@ Script_GnomeBoiKevin::
 	//giveitem ITEM_HM05
 	//giveitem ITEM_HM06
 	//giveitem ITEM_HM07
-	//giveitem ITEM_HM08
+	giveitem ITEM_HM08
 	
 	
 	msgbox Text_GnomeBoiKevin_2, MSGBOX_NPC

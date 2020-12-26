@@ -32,6 +32,11 @@
       "direction": "up",
       "offset": 42,
       "map": "MAP_ROUTE14"
+    },
+    {
+      "direction": "dive",
+      "offset": 0,
+      "map": "MAP_UNDERWATER_LUMBRIDGE"
     }
   ],
   "object_events": [

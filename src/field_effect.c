@@ -11,6 +11,7 @@
 #include "fieldmap.h"
 #include "fldeff.h"
 #include "gpu_regs.h"
+#include "item_icon.h"
 #include "main.h"
 #include "mirage_tower.h"
 #include "menu.h"
@@ -2562,19 +2563,21 @@ bool8 FldEff_FieldMoveShowMon(void)
     else
         taskId = CreateTask(Task_FieldMoveShowMonIndoors, 0xff);
 
-    gTasks[taskId].tMonSpriteId = InitFieldMoveMonSprite(gFieldEffectArguments[0], gFieldEffectArguments[1], gFieldEffectArguments[2]);
+    gTasks[taskId].tMonSpriteId = InitFieldMoveMonSprite(gSaveBlock2Ptr->ItemArg, gFieldEffectArguments[1], gFieldEffectArguments[2]);
     return FALSE;
 }
 
 bool8 FldEff_FieldMoveShowMonInit(void)
 {
-    struct Pokemon *pokemon;
+    //struct Pokemon *pokemon;
     u32 flag = gFieldEffectArguments[0] & 0x80000000;
-    pokemon = &gPlayerParty[(u8)gFieldEffectArguments[0]];
+   /* pokemon = &gPlayerParty[(u8)gFieldEffectArguments[0]];
     gFieldEffectArguments[0] = GetMonData(pokemon, MON_DATA_SPECIES);
     gFieldEffectArguments[1] = GetMonData(pokemon, MON_DATA_OT_ID);
     gFieldEffectArguments[2] = GetMonData(pokemon, MON_DATA_PERSONALITY);
-    gFieldEffectArguments[0] |= flag;
+	*/
+   // gFieldEffectArguments[0] |= flag;
+   gSaveBlock2Ptr->ItemArg |= flag;
     FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON);
     FieldEffectActiveListRemove(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
     return FALSE;
@@ -2919,7 +2922,10 @@ static u8 InitFieldMoveMonSprite(u32 species, u32 otId, u32 personality)
     struct Sprite *sprite;
     v0 = (species & 0x80000000) >> 16;
     species &= 0x7fffffff;
-    monSprite = CreateMonSprite_FieldMove(species, otId, personality, 320, 80, 0);
+    //monSprite = CreateMonSprite_FieldMove(species, otId, personality, 320, 80, 0);
+	monSprite = AddItemIconSprite(2110,2110,species);
+	gSprites[monSprite].pos1.y = 0x50;
+    gSprites[monSprite].pos1.x = 0x140;
     sprite = &gSprites[monSprite];
     sprite->callback = SpriteCallbackDummy;
     sprite->oam.priority = 0;
@@ -2935,7 +2941,7 @@ static void SpriteCB_FieldMoveMonSlideOnscreen(struct Sprite *sprite)
         sprite->pos1.x = DISPLAY_WIDTH / 2;
         sprite->sOnscreenTimer = 30;
         sprite->callback = SpriteCB_FieldMoveMonWaitAfterCry;
-        if (sprite->data[6])
+       /* if (sprite->data[6])
         {
             PlayCry2(sprite->sSpecies, 0, 0x7d, 0xa);
         }
@@ -2943,6 +2949,7 @@ static void SpriteCB_FieldMoveMonSlideOnscreen(struct Sprite *sprite)
         {
             PlayCry1(sprite->sSpecies, 0);
         }
+		*/
     }
 }
 

@@ -5442,10 +5442,11 @@ const struct Item gItems[] =
         .itemId = ITEM_ELEMENTAL_POUCH,
         .price = 200,
         .description = sElementalPouchDesc,
-        .pocket = POCKET_POKE_BALLS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = 3,
         .battleUsage = 2,
-        .battleUseFunc = ItemUseInBattle_PokeBall,
+        //.battleUseFunc = ItemUseInBattle_PokeBall,
+		.fieldUseFunc = ItemUseOutOfBattle_Lantern,
         .secondaryId = 3,
     },
 	

@@ -1228,3 +1228,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Tutorial_Island_Lab_Down/scripts.inc"
 
 	.include "data/maps/Tutorial_Island_Shop/scripts.inc"
+
+	.include "data/maps/Underwater_Lumbridge/scripts.inc"

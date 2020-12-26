@@ -24,6 +24,19 @@ void ItemUseOutOfBattle_EvolutionStone(u8);
 void ItemUseOutOfBattle_Berry(u8);
 void ItemUseOutOfBattle_EnigmaBerry(u8);
 void ItemUseOutOfBattle_CannotUse(u8);
+//pokescape
+void ItemUseOutOfBattle_Pickaxe(u8);
+void ItemUseOutOfBattle_Boat(u8);
+void ItemUseOutOfBattle_Axe(u8);
+void ItemUseOutOfBattle_StrengthItem(u8);
+void ItemUseOutOfBattle_DiveItem(u8);
+void ItemUseOutOfBattle_Spade(u8);
+void ItemUseOutOfBattle_FlyItem(u8);
+void ItemUseOutOfBattle_Lantern(u8);
+
+
+//
+
 void ItemUseInBattle_PokeBall(u8);
 void ItemUseInBattle_StatIncrease(u8);
 void ItemUseInBattle_Medicine(u8);

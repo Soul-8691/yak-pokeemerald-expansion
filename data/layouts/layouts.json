@@ -5250,6 +5250,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/Tutorial_Island_Shop/border.bin",
       "blockdata_filepath": "data/layouts/Tutorial_Island_Shop/map.bin"
+    },
+    {
+      "id": "LAYOUT_UNDERWATER_LUMBRIDGE",
+      "name": "Underwater_Lumbridge_Layout",
+      "width": 62,
+      "height": 44,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/Underwater_Lumbridge/border.bin",
+      "blockdata_filepath": "data/layouts/Underwater_Lumbridge/map.bin"
     }
   ]
 }

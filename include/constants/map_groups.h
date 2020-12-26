@@ -655,6 +655,7 @@
 #define MAP_MUDSKIPPER_POINT     (3 | (36 << 8))
 #define MAP_LUMBRIDGE_FOREST     (4 | (36 << 8))
 #define MAP_TUTORIAL_ISLAND_CAVE (5 | (36 << 8))
+#define MAP_UNDERWATER_LUMBRIDGE (6 | (36 << 8))
 
 // Map Group 37
 #define MAP_LUMBRIDGE_HOUSE_BOBS_AXES1 (0 | (37 << 8))

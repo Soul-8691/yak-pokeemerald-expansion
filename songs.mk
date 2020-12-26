@@ -1300,5 +1300,10 @@ $(MID_SUBDIR)/mus_pokescape_quest_complete.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
 	
 $(MID_SUBDIR)/mus_pokescape_route_beginning.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100		
+	
+$(MID_SUBDIR)/mus_pokescape_vs_monster.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100 -P1
 
+$(MID_SUBDIR)/mus_pokescape_vs_trainer.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100 -P1

@@ -402,9 +402,9 @@
 #define MUS_VS_FRONTIER_BRAIN       471 // MUS_VS_FRONT
 #define MUS_VS_MEW                  472 // MUS_VS_MEW
 #define MUS_B_DOME_LOBBY            473 // MUS_B_DOME1
-#define MUS_VS_WILD                 474 // MUS_BATTLE27
+#define MUS_POKESCAPE_VS_TRAINER    474 // CUSTOM - POKESCAPE VS WILD MON
 #define MUS_VS_AQUA_MAGMA           475 // MUS_BATTLE31
-#define MUS_VS_TRAINER              476 // MUS_BATTLE20
+#define MUS_POKESCAPE_VS_MONSTER    476 // CUSTOM - POKESCAPE VS TRAINER
 #define MUS_VS_GYM_LEADER           477 // MUS_BATTLE32
 #define MUS_VS_CHAMPION             478 // MUS_BATTLE33
 #define MUS_VS_REGI                 479 // MUS_BATTLE36
@@ -412,6 +412,7 @@
 #define MUS_VS_RIVAL                481 // MUS_BATTLE35
 #define MUS_VS_ELITE_FOUR           482 // MUS_BATTLE38
 #define MUS_VS_AQUA_MAGMA_LEADER    483 // MUS_BATTLE30
+
 // FRLG Music
 #define MUS_RG_FOLLOW_ME            484 // MUS_RG_ANNAI
 #define MUS_RG_GAME_CORNER          485 // MUS_RG_SLOT
@@ -540,6 +541,8 @@
 #define PH_NURSE_BLEND              607
 #define PH_NURSE_HELD               608
 #define PH_NURSE_SOLO               609
+
+//POKESCAPE BGM
 #define MUS_POKESCAPE_ENCOUNTER_PKER	610
 #define MUS_POKESCAPE_ROUTE_ASGARNIA	611
 #define MUS_POKESCAPE_WIZARDS_TOWER		612
@@ -553,6 +556,10 @@
 #define MUS_POKESCAPE_TERRORBIRD		620
 #define MUS_POKESCAPE_QUEST_COMPLETE	621
 #define MUS_POKESCAPE_ROUTE_BEGINNING	622
+
+//RELOCATED OR UNUSED AUDIO
+#define MUS_VS_WILD		     623 // MUS_BATTLE27 - MUS_VS_WILD ORIGIN ID 474
+#define MUS_VS_TRAINER               624 // MUS_BATTLE20 - MUS_VS_TRAINER ORIGIN ID 476
 
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().

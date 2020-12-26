@@ -1,0 +1,22 @@
+mapscripts Tutorial_Island_Shop_MapScripts{}
+
+script Tutorial_Island_Shop_EventScript_Clerk{
+	lock
+	faceplayer
+	msgbox("Can I help you at all?")
+	waitmessage
+	pokemart (Tutorial_Island_Shop_Pokemart)
+	msgbox("Smell you later!")
+	release
+}
+
+raw `
+
+	Tutorial_Island_Shop_Pokemart:
+	.2byte ITEM_BRONZE_POUCH
+	.2byte ITEM_IRON_POUCH
+	.2byte ITEM_STEEL_POUCH
+	.2byte ITEM_NONE
+	release
+	end
+`

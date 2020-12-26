@@ -5240,6 +5240,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Tutorial_Island_Lab_Down/border.bin",
       "blockdata_filepath": "data/layouts/Tutorial_Island_Lab_Down/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUTORIAL_ISLAND_SHOP",
+      "name": "Tutorial_Island_Shop_Layout",
+      "width": 20,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/Tutorial_Island_Shop/border.bin",
+      "blockdata_filepath": "data/layouts/Tutorial_Island_Shop/map.bin"
     }
   ]
 }

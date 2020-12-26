@@ -685,6 +685,7 @@
 #define MAP_ROUTE1_HOUSE_1           (1 | (39 << 8))
 #define MAP_TUTORIAL_ISLAND_LAB_UP   (2 | (39 << 8))
 #define MAP_TUTORIAL_ISLAND_LAB_DOWN (3 | (39 << 8))
+#define MAP_TUTORIAL_ISLAND_SHOP     (4 | (39 << 8))
 
 #define MAP_GROUPS_COUNT 40
 

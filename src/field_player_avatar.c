@@ -235,9 +235,9 @@ static bool8 (*const sArrowWarpMetatileBehaviorChecks[])(u8) =
     MetatileBehavior_IsEastArrowWarp,
 };
 
-static const u16 sRivalAvatarGfxIds[][2] =
+static const u32 sRivalAvatarGfxIds[][2] =
 {
-    {OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL,     OBJ_EVENT_GFX_RIVAL_MAY_NORMAL},
+    {OBJ_EVENT_GFX_BRENDAN_NORMAL ,     OBJ_EVENT_GFX_MAY_NORMAL},
     {OBJ_EVENT_GFX_RIVAL_BRENDAN_MACH_BIKE,  OBJ_EVENT_GFX_RIVAL_MAY_MACH_BIKE},
     {OBJ_EVENT_GFX_RIVAL_BRENDAN_ACRO_BIKE,  OBJ_EVENT_GFX_RIVAL_MAY_ACRO_BIKE},
     {OBJ_EVENT_GFX_RIVAL_BRENDAN_SURFING,    OBJ_EVENT_GFX_RIVAL_MAY_SURFING},

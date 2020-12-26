@@ -44,6 +44,13 @@
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE",
       "dest_warp_id": 13
+    },
+    {
+      "x": 13,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_TUTORIAL_ISLAND_SHOP",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

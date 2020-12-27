@@ -1244,6 +1244,8 @@ SECTIONS {
 		sound/songs/midi/mus_pokescape_terrorbird.o(.rodata);
 		sound/songs/midi/mus_pokescape_quest_complete.o(.rodata);
 		sound/songs/midi/mus_pokescape_route_beginning.o(.rodata);
+		sound/songs/midi/mus_pokescape_vs_trainer.o(.rodata);
+		sound/songs/midi/mus_pokescape_vs_monster.o(.rodata);
 		
     } =0
 

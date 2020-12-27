@@ -14,7 +14,6 @@ Cannot_Pass::
 Cow_Battle::
 	lock
 	faceplayer
-	showmonpic SPECIES_COW, 10, 3
 	msgbox Cow_Battle_Text_0
 	setwildbattle SPECIES_COW, 7, ITEM_NONE
 	hidemonpic

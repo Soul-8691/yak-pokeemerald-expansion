@@ -53,7 +53,7 @@ Script_GnomeBoiKevin::
 	//giveitem ITEM_BARROWS_POUCH, 10
 	//giveitem ITEM_GRANITE_POUCH, 10
 	//giveitem ITEM_ANCIENT_POUCH, 10
-	giveitem ITEM_ELEMENTAL_POUCH, 10
+	//giveitem ITEM_ELEMENTAL_POUCH, 10
 
 //STAT ITEMS
 //	giveitem ITEM_RARE_CANDY, 99
@@ -77,15 +77,16 @@ Script_GnomeBoiKevin::
 	//giveitem ITEM_ACRO_BIKE, 1
 
 	//setflag FLAG_BADGE05_GET
-	setflag FLAG_BADGE07_GET
-	//giveitem ITEM_HM01
-	//giveitem ITEM_HM02
-	//giveitem ITEM_HM03
-	//giveitem ITEM_HM04
-	//giveitem ITEM_HM05
-	//giveitem ITEM_HM06
-	//giveitem ITEM_HM07
-	giveitem ITEM_HM08
+	//setflag FLAG_BADGE07_GET
+	giveitem ITEM_PICKAXE
+	giveitem ITEM_BOAT
+	giveitem ITEM_AXE
+	giveitem ITEM_STRENGTHITEM
+	giveitem ITEM_DIVEITEM
+	giveitem ITEM_SPADE
+	giveitem ITEM_FLYITEM
+	giveitem ITEM_LANTERN
+	giveitem ITEM_WATERFALLITEM
 	
 	
 	msgbox Text_GnomeBoiKevin_2, MSGBOX_NPC

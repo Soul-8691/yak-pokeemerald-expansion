@@ -54,9 +54,9 @@
       "flag": "FLAG_RATDEFEATED"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_gnome_child",
-      "x": 30,
-      "y": 33,
+      "graphics_id": "OBJ_EVENT_GFX_farmer_male",
+      "x": 34,
+      "y": 35,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -68,8 +68,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_dwarf_1",
-      "x": 32,
-      "y": 33,
+      "x": 33,
+      "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -81,8 +81,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 31,
-      "y": 35,
+      "x": 35,
+      "y": 34,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -93,9 +93,9 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 29,
-      "y": 35,
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 33,
+      "y": 33,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -106,9 +106,9 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 33,
-      "y": 35,
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 35,
+      "y": 37,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -117,6 +117,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_StrengthBoulder",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_gymleaders_7",
+      "x": 20,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -124,8 +137,8 @@
       "x": 14,
       "y": 26,
       "elevation": 0,
-      "dest_map": "MAP_TUTORIAL_ISLAND",
-      "dest_warp_id": 1
+      "dest_map": "MAP_TUTORIAL_ISLAND_SHOP",
+      "dest_warp_id": 2
     },
     {
       "x": 5,
@@ -136,7 +149,7 @@
     },
     {
       "x": 24,
-      "y": 31,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_VICTORY_ROAD_B2F",
       "dest_warp_id": 4

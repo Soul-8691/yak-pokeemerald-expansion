@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_general_store_clerk",
-      "x": 9,
+      "x": 4,
       "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -26,15 +26,62 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Tutorial_Island_Shop_EventScript_Clerk",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_banker_female",
+      "x": 25,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BANK_EventScript_Banker",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_banker_male",
+      "x": 26,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BANK_EventScript_PC",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 9,
-      "y": 11,
+      "x": 4,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_TUTORIAL_ISLAND",
       "dest_warp_id": 4
+    },
+    {
+      "x": 14,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_TUTORIAL_ISLAND",
+      "dest_warp_id": 5
+    },
+    {
+      "x": 16,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_TUTORIAL_ISLAND_CAVE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 25,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_TUTORIAL_ISLAND",
+      "dest_warp_id": 6
     }
   ],
   "coord_events": [

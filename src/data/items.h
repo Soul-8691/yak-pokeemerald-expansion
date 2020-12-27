@@ -5540,6 +5540,20 @@ const struct Item gItems[] =
         .secondaryId = 3,
     },
 	
+    [ITEM_LANTERN] =
+    {
+        .name = _("Lantern"),
+        .itemId = ITEM_LANTERN,
+        .price = 200,
+        .description = sElementalPouchDesc,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 3,
+        .battleUsage = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_Lantern,
+        .secondaryId = 3,
+    },
+	
+	
     [ITEM_WATERFALLITEM] =
     {
         .name = _("Engines"),

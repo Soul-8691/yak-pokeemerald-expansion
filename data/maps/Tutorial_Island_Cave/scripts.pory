@@ -92,6 +92,111 @@ script CraftPouchStart{
 }
 
 
+script PouchCraftMenu {
+	lock
+	faceplayer
+	msgbox("Hi there! Good to see you again!")
+	msgbox("Would you like to craft a pouch?", MSGBOX_YESNO)
+	if (var(VAR_RESULT))
+	{
+		release
+		multichoicedefault (1, 0, MULTI_POUCH_CRAFT, 0, 1)
+		switch (var(VAR_RESULT)){
+			case 0:
+				checkitem (ITEM_NORMAL_POUCH, 1)
+				if (var(VAR_RESULT))
+				{
+					checkitem (ITEM_RARE_CANDY, 1)
+					if(var(VAR_RESULT))
+					{
+						random (3)
+						if (var(VAR_RESULT) == 2)
+						{
+							removeitem (ITEM_NORMAL_POUCH, 1)
+							removeitem (ITEM_RARE_CANDY, 1)
+							giveitem (ITEM_BLACK_POUCH, 1)
+							msgbox("Congrats! You made a black pouch!")
+							release
+						}
+					
+						else
+						{
+							msgbox("It looks like the pouch broke!")
+							removeitem (ITEM_NORMAL_POUCH, 1)
+							removeitem (ITEM_RARE_CANDY, 1)
+							giveitem (ITEM_SPLITBARK_POUCH, 1)
+							release
+						}
+				
+					}
+					else 
+					{
+						msgbox("You don't have the crafting item!")
+						release
+					}
+				}
+				else
+				{
+					msgbox("You don't have a normal pouch!")
+					release
+				}
+			case 1:
+				checkitem (ITEM_NORMAL_POUCH, 1)
+				if (var(VAR_RESULT))
+				{
+					checkitem (ITEM_RARE_CANDY, 1)
+					if(var(VAR_RESULT))
+					{
+						random (3)
+						if (var(VAR_RESULT) == 2)
+						{
+							removeitem (ITEM_NORMAL_POUCH, 1)
+							removeitem (ITEM_RARE_CANDY, 1)
+							giveitem (ITEM_CRYSTAL_POUCH, 1)
+							msgbox("Congrats! You made a crystal pouch!")
+							release
+						}
+					
+						else
+						{
+							msgbox("It looks like the pouch broke!")
+							removeitem (ITEM_NORMAL_POUCH, 1)
+							removeitem (ITEM_RARE_CANDY, 1)
+							giveitem (ITEM_SPLITBARK_POUCH, 1)
+							release
+						}
+				
+					}
+					else 
+					{
+						msgbox("You don't have the crafting item!")
+						release
+					}
+				}
+				else
+				{
+					msgbox("You don't have a normal pouch!")
+					release
+				}
+			case 2:
+			case 3:
+			case 4:
+			case 5:
+			case 6:
+			case 7:
+			case 8:
+				msgbox("Smell ya later!")
+				releaseall
+		
+		}
+	}
+	else
+	{
+		msgbox("Smell ya later!")
+		release
+	}
+
+}
 
 
 

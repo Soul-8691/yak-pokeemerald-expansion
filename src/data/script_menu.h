@@ -210,10 +210,11 @@ static const struct MenuAction MultichoiceList_Mechadoll5_Q3[] =
 
 static const struct MenuAction MultichoiceList_VendingMachine[] =
 {
-    {gText_FreshWaterAndPrice},
+	{gText_FreshWaterAndPrice},
     {gText_SodaPopAndPrice},
     {gText_LemonadeAndPrice},
     {gText_Exit},
+
 };
 
 static const struct MenuAction MultichoiceList_MachBikeInfo[] =
@@ -771,6 +772,21 @@ static const struct MenuAction MultichoiceList_TagMatchType[] =
     {gText_Exit},
 };
 
+static const struct MenuAction MultichoiceList_PouchCraft[] =
+{
+	{gText_BlackPouch},
+	{gText_CrystalPouch},
+	{gText_DragonbanePouch},
+	{gText_AugmentedPouch},
+	{gText_MysticPouch},
+	{gText_GranitePouch},
+	{gText_AncientPouch},
+	{gText_ElementalPouch},
+	{gText_Exit},
+	
+
+};
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -898,6 +914,11 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_SLATEPORT_TENT_RULES]       = MULTICHOICE(MultichoiceList_SlateportTentRules),
     [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
+	
+	//pokescape
+	[MULTI_POUCH_CRAFT]				   = MULTICHOICE(MultichoiceList_PouchCraft),
+	
+	
 };
 
 const u8 *const gStdStrings[] =

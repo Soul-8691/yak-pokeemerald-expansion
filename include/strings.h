@@ -2995,4 +2995,15 @@ extern const u8 gText_SavingDontTurnOff2[];
 extern const u8 gText_BlenderMaxSpeedRecord[];
 extern const u8 gText_234Players[];
 
+//pokescape pouch crafting
+extern const u8 gText_BlackPouch[];
+extern const u8 gText_CrystalPouch[];
+extern const u8 gText_DragonbanePouch[];
+extern const u8 gText_AugmentedPouch[];
+extern const u8 gText_MysticPouch[];
+extern const u8 gText_BarrowsPouch[];
+extern const u8 gText_GranitePouch[];
+extern const u8 gText_AncientPouch[];
+extern const u8 gText_ElementalPouch[];
+
 #endif // GUARD_STRINGS_H

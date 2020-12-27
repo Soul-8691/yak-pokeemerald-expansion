@@ -47,20 +47,9 @@ RatArenaCantLeave::
 KevinItemsTest::
 	lock
 	faceplayer
-	//giveitem ITEM_NORMAL_POUCH, 10
-	//giveitem ITEM_RARE_CANDY, 10
-	//giveitem ITEM_ELEMENTAL_POUCH, 1
-	//giveitem ITEM_ESCAPE_ROPE, 10
-	//giveitem ITEM_BLACK_SCALE, 10
-	giveitem ITEM_PICKAXE, 1
-	giveitem ITEM_BOAT, 1
-	giveitem ITEM_AXE, 1
-	giveitem ITEM_STRENGTHITEM, 1
-	giveitem ITEM_DIVEITEM, 1
-	giveitem ITEM_SPADE, 1
-	giveitem ITEM_FLYITEM, 1
-	giveitem ITEM_LANTERN, 1
-	giveitem ITEM_WATERFALLITEM, 1
+	giveitem ITEM_NORMAL_POUCH, 10
+	giveitem ITEM_RARE_CANDY, 10
+	giveitem ITEM_ELEMENTAL_POUCH, 1
 	msgbox KevinItemsTest_Text_0
 	release
 	return
@@ -105,6 +94,108 @@ CraftPouchStart_9:
 	removeitem ITEM_RARE_CANDY, 1
 	giveitem ITEM_AUGMENTED_POUCH, 1
 	msgbox CraftPouchStart_Text_1
+	release
+	return
+
+
+PouchCraftMenu::
+	lock
+	faceplayer
+	msgbox PouchCraftMenu_Text_0
+	msgbox PouchCraftMenu_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_1
+	msgbox CraftPouchStart_Text_4
+	release
+	return
+
+PouchCraftMenu_1:
+	release
+	multichoicedefault 1, 0, MULTI_POUCH_CRAFT, 0, 1
+	switch VAR_RESULT
+	case 0, PouchCraftMenu_5
+	case 1, PouchCraftMenu_6
+	case 2, PouchCraftMenu_7
+	case 3, PouchCraftMenu_7
+	case 4, PouchCraftMenu_7
+	case 5, PouchCraftMenu_7
+	case 6, PouchCraftMenu_7
+	case 7, PouchCraftMenu_7
+	case 8, PouchCraftMenu_7
+	return
+
+PouchCraftMenu_5:
+	checkitem ITEM_NORMAL_POUCH, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_8
+	msgbox PouchCraftMenu_Text_5
+	release
+	return
+
+PouchCraftMenu_6:
+	checkitem ITEM_NORMAL_POUCH, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_11
+	msgbox PouchCraftMenu_Text_5
+	release
+	return
+
+PouchCraftMenu_7:
+	msgbox CraftPouchStart_Text_4
+	releaseall
+	return
+
+PouchCraftMenu_8:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_14
+	msgbox PouchCraftMenu_Text_4
+	release
+	return
+
+PouchCraftMenu_11:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_17
+	msgbox PouchCraftMenu_Text_4
+	release
+	return
+
+PouchCraftMenu_14:
+	random 3
+	compare VAR_RESULT, 2
+	goto_if_eq PouchCraftMenu_20
+	msgbox PouchCraftMenu_Text_3
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_SPLITBARK_POUCH, 1
+	release
+	return
+
+PouchCraftMenu_17:
+	random 3
+	compare VAR_RESULT, 2
+	goto_if_eq PouchCraftMenu_23
+	msgbox PouchCraftMenu_Text_3
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_SPLITBARK_POUCH, 1
+	release
+	return
+
+PouchCraftMenu_20:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_BLACK_POUCH, 1
+	msgbox PouchCraftMenu_Text_2
+	release
+	return
+
+PouchCraftMenu_23:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_CRYSTAL_POUCH, 1
+	msgbox PouchCraftMenu_Text_6
 	release
 	return
 
@@ -192,3 +283,24 @@ CraftPouchStart_Text_3:
 
 CraftPouchStart_Text_4:
 	.string "Smell ya later!$"
+
+PouchCraftMenu_Text_0:
+	.string "Hi there! Good to see you again!$"
+
+PouchCraftMenu_Text_1:
+	.string "Would you like to craft a pouch?$"
+
+PouchCraftMenu_Text_2:
+	.string "Congrats! You made a black pouch!$"
+
+PouchCraftMenu_Text_3:
+	.string "It looks like the pouch broke!$"
+
+PouchCraftMenu_Text_4:
+	.string "You don't have the crafting item!$"
+
+PouchCraftMenu_Text_5:
+	.string "You don't have a normal pouch!$"
+
+PouchCraftMenu_Text_6:
+	.string "Congrats! You made a crystal pouch!$"

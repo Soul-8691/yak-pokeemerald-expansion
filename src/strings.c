@@ -1823,3 +1823,16 @@ const u8 gText_Answer[] = _("ANSWER");
 const u8 gText_PokeBalls[] = _("POKé BALLS");
 const u8 gText_Berry[] = _("BERRY");
 const u8 gText_Berries[] = _("BERRIES");
+
+
+//pokescape 
+
+const u8 gText_BlackPouch[] =_("Black Pouch");
+const u8 gText_CrystalPouch[] =_("Crystal Pouch");
+const u8 gText_DragonbanePouch[] =_("Dragonbane Pouch");
+const u8 gText_AugmentedPouch[] =_("Augmented Pouch");
+const u8 gText_MysticPouch[] =_("Mystic Pouch");
+const u8 gText_BarrowsPouch[] =_("Barrows Pouch");
+const u8 gText_GranitePouch[] =_("Granite Pouch");
+const u8 gText_AncientPouch[] =_("Ancient Pouch");
+const u8 gText_ElementalPouch[] =_("Elemental Pouch");

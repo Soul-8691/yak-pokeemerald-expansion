@@ -5204,10 +5204,10 @@
     {
       "id": "LAYOUT_TUTORIAL_ISLAND",
       "name": "Tutorial_Island_Layout",
-      "width": 50,
+      "width": 60,
       "height": 50,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Bank",
+      "secondary_tileset": "gTileset_Lumbridge",
       "border_filepath": "data/layouts/Tutorial_Island/border.bin",
       "blockdata_filepath": "data/layouts/Tutorial_Island/map.bin"
     },

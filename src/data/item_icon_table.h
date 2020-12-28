@@ -459,6 +459,9 @@ const u32 *const gItemIconTable[][2] =
 	[ITEM_FLYITEM] = {gItemIcon_FlyItem, gItemIconPalette_FlyItem},
 	[ITEM_LANTERN] = {gItemIcon_Lantern, gItemIconPalette_Lantern},
 	[ITEM_WATERFALLITEM] = {gItemIcon_WaterfallItem, gItemIconPalette_WaterfallItem},
+	[ITEM_SMALL_NET] = {gItemIcon_SmallNet, gItemIconPalette_SmallNet},
+	[ITEM_LARGE_NET] = {gItemIcon_LargeNet, gItemIconPalette_LargeNet},
+	[ITEM_DRAGON_NET] = {gItemIcon_DragonNet, gItemIconPalette_DragonNet},
     // Return to field arrow
     [ITEM_FIELD_ARROW] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };

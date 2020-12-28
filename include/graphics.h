@@ -8603,6 +8603,15 @@ extern const u32 gItemIconPalette_Lantern[];
 extern const u32 gItemIcon_WaterfallItem[];
 extern const u32 gItemIconPalette_WaterfallItem[];
 
+extern const u32 gItemIcon_SmallNet[];
+extern const u32 gItemIconPalette_SmallNet[];
+
+extern const u32 gItemIcon_LargeNet[];
+extern const u32 gItemIconPalette_LargeNet[];
+
+extern const u32 gItemIcon_DragonNet[];
+extern const u32 gItemIconPalette_DragonNet[];
+
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];
 

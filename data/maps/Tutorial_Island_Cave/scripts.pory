@@ -99,34 +99,38 @@ script PouchCraftMenu {
 	msgbox("Would you like to craft a pouch?", MSGBOX_YESNO)
 	if (var(VAR_RESULT))
 	{
-		release
-		multichoicedefault (1, 0, MULTI_POUCH_CRAFT, 0, 1)
-		switch (var(VAR_RESULT)){
-			case 0:
-				checkitem (ITEM_NORMAL_POUCH, 1)
-				if (var(VAR_RESULT))
-				{
+		checkitem (ITEM_NORMAL_POUCH, 1)
+		if (var(VAR_RESULT)){
+			release
+			multichoicedefault (1, 0, MULTI_POUCH_CRAFT, 0, 0)
+			switch (var(VAR_RESULT))
+			{
+				case 0:
 					checkitem (ITEM_RARE_CANDY, 1)
 					if(var(VAR_RESULT))
 					{
-						random (3)
-						if (var(VAR_RESULT) == 2)
-						{
-							removeitem (ITEM_NORMAL_POUCH, 1)
-							removeitem (ITEM_RARE_CANDY, 1)
-							giveitem (ITEM_BLACK_POUCH, 1)
-							msgbox("Congrats! You made a black pouch!")
-							release
-						}
+						
+						removeitem (ITEM_NORMAL_POUCH, 1)
+						removeitem (ITEM_RARE_CANDY, 1)
+						giveitem (ITEM_BRONZE_POUCH, 1)
+						msgbox("You made a bronze pouch!")
+						release
+					}
+					else 
+					{
+						msgbox("You don't have the crafting item!")
+						release
+					}
+				case 1:
+					checkitem (ITEM_RARE_CANDY, 1)
+					if(var(VAR_RESULT))
+					{
+						removeitem (ITEM_NORMAL_POUCH, 1)
+						removeitem (ITEM_RARE_CANDY, 1)
+						giveitem (ITEM_IRON_POUCH, 1)
+						msgbox("You made an iron pouch!")
+						release
 					
-						else
-						{
-							msgbox("It looks like the pouch broke!")
-							removeitem (ITEM_NORMAL_POUCH, 1)
-							removeitem (ITEM_RARE_CANDY, 1)
-							giveitem (ITEM_SPLITBARK_POUCH, 1)
-							release
-						}
 				
 					}
 					else 
@@ -134,37 +138,16 @@ script PouchCraftMenu {
 						msgbox("You don't have the crafting item!")
 						release
 					}
-				}
-				else
-				{
-					msgbox("You don't have a normal pouch!")
-					release
-				}
-			case 1:
-				checkitem (ITEM_NORMAL_POUCH, 1)
-				if (var(VAR_RESULT))
-				{
+				case 2:
 					checkitem (ITEM_RARE_CANDY, 1)
 					if(var(VAR_RESULT))
 					{
-						random (3)
-						if (var(VAR_RESULT) == 2)
-						{
-							removeitem (ITEM_NORMAL_POUCH, 1)
-							removeitem (ITEM_RARE_CANDY, 1)
-							giveitem (ITEM_CRYSTAL_POUCH, 1)
-							msgbox("Congrats! You made a crystal pouch!")
-							release
-						}
+						removeitem (ITEM_NORMAL_POUCH, 1)
+						removeitem (ITEM_RARE_CANDY, 1)
+						giveitem (ITEM_STEEL_POUCH, 1)
+						msgbox("You made a steel pouch!")
+						release
 					
-						else
-						{
-							msgbox("It looks like the pouch broke!")
-							removeitem (ITEM_NORMAL_POUCH, 1)
-							removeitem (ITEM_RARE_CANDY, 1)
-							giveitem (ITEM_SPLITBARK_POUCH, 1)
-							release
-						}
 				
 					}
 					else 
@@ -172,29 +155,250 @@ script PouchCraftMenu {
 						msgbox("You don't have the crafting item!")
 						release
 					}
-				}
-				else
-				{
-					msgbox("You don't have a normal pouch!")
-					release
-				}
-			case 2:
-			case 3:
-			case 4:
-			case 5:
-			case 6:
-			case 7:
-			case 8:
-				msgbox("Smell ya later!")
-				releaseall
-		
+				case 3:
+					checkitem (ITEM_RARE_CANDY, 1)
+					if(var(VAR_RESULT))
+					{
+						removeitem (ITEM_NORMAL_POUCH, 1)
+						removeitem (ITEM_RARE_CANDY, 1)
+						giveitem (ITEM_BLACK_POUCH, 1)
+						msgbox("You made a black pouch!")
+						release
+					
+				
+					}
+					else 
+					{
+						msgbox("You don't have the crafting item!")
+						release
+					}
+				case 4:
+					checkitem (ITEM_RARE_CANDY, 1)
+					if(var(VAR_RESULT))
+					{
+						removeitem (ITEM_NORMAL_POUCH, 1)
+						removeitem (ITEM_RARE_CANDY, 1)
+						giveitem (ITEM_MITHRIL_POUCH, 1)
+						msgbox("You made a mithril pouch!")
+						release
+					
+				
+					}
+					else 
+					{
+						msgbox("You don't have the crafting item!")
+						release
+					}
+				case 5:
+					checkitem (ITEM_RARE_CANDY, 1)
+					if(var(VAR_RESULT))
+					{
+						removeitem (ITEM_NORMAL_POUCH, 1)
+						removeitem (ITEM_RARE_CANDY, 1)
+						giveitem (ITEM_ADAMANT_POUCH, 1)
+						msgbox("You made an adamant pouch!")
+						release
+					
+				
+					}
+					else 
+					{
+						msgbox("You don't have the crafting item!")
+						release
+					}
+				case 6:
+					checkitem (ITEM_RARE_CANDY, 1)
+					if(var(VAR_RESULT))
+					{
+						removeitem (ITEM_NORMAL_POUCH, 1)
+						removeitem (ITEM_RARE_CANDY, 1)
+						giveitem (ITEM_RUNE_POUCH, 1)
+						msgbox("You made a rune pouch!")
+						release
+					
+				
+					}
+					else 
+					{
+						msgbox("You don't have the crafting item!")
+						release
+					}
+				case 7:
+					checkitem (ITEM_RARE_CANDY, 1)
+					if(var(VAR_RESULT))
+					{
+						removeitem (ITEM_NORMAL_POUCH, 1)
+						removeitem (ITEM_RARE_CANDY, 1)
+						giveitem (ITEM_DRAGON_POUCH, 1)
+						msgbox("You made a dragon pouch!")
+						release
+					
+				
+					}
+					else 
+					{
+						msgbox("You don't have the crafting item!")
+						release
+					}
+					
+				case 8:
+					multichoicedefault (1, 0, MULTI_POUCH_CRAFT2, 0, 0)
+					switch (var(VAR_RESULT))
+					{
+				
+						case 0:
+							checkitem (ITEM_RARE_CANDY, 1)
+							if(var(VAR_RESULT))
+							{
+								removeitem (ITEM_NORMAL_POUCH, 1)
+								removeitem (ITEM_RARE_CANDY, 1)
+								giveitem (ITEM_ANCIENT_POUCH, 1)
+								msgbox("You made an ancient pouch!")
+								release
+					
+				
+							}
+							else 
+							{
+								msgbox("You don't have the crafting item!")
+								release
+							}
+						case 1:
+							checkitem (ITEM_RARE_CANDY, 1)
+							if(var(VAR_RESULT))
+							{
+								removeitem (ITEM_NORMAL_POUCH, 1)
+								removeitem (ITEM_RARE_CANDY, 1)
+								giveitem (ITEM_AUGMENTED_POUCH, 1)
+								msgbox("You made an augmented pouch!")
+								release
+					
+				
+							}
+							else 
+							{
+								msgbox("You don't have the crafting item!")
+								release
+							}
+						case 2:
+							checkitem (ITEM_RARE_CANDY, 1)
+							if(var(VAR_RESULT))
+							{
+								removeitem (ITEM_NORMAL_POUCH, 1)
+								removeitem (ITEM_RARE_CANDY, 1)
+								giveitem (ITEM_BARROWS_POUCH, 1)
+								msgbox("You made a barrows pouch!")
+								release
+					
+				
+							}
+							else 
+							{
+								msgbox("You don't have the crafting item!")
+								release
+							}
+						case 3:
+							checkitem (ITEM_RARE_CANDY, 1)
+							if(var(VAR_RESULT))
+							{
+								removeitem (ITEM_NORMAL_POUCH, 1)
+								removeitem (ITEM_RARE_CANDY, 1)
+								giveitem (ITEM_CRYSTAL_POUCH, 1)
+								msgbox("You made a crystal pouch!")
+								release
+					
+				
+							}
+							else 
+							{
+								msgbox("You don't have the crafting item!")
+								release
+							}
+						case 4:
+							checkitem (ITEM_RARE_CANDY, 1)
+							if(var(VAR_RESULT))
+							{
+								removeitem (ITEM_NORMAL_POUCH, 1)
+								removeitem (ITEM_RARE_CANDY, 1)
+								giveitem (ITEM_DRAGONBANE_POUCH, 1)
+								msgbox("You made a dragonbane pouch!")
+								release
+					
+				
+							}
+							else 
+							{
+								msgbox("You don't have the crafting item!")
+								release
+							}
+						case 5:
+							checkitem (ITEM_RARE_CANDY, 1)
+							if(var(VAR_RESULT))
+							{
+								removeitem (ITEM_NORMAL_POUCH, 1)
+								removeitem (ITEM_RARE_CANDY, 1)
+								giveitem (ITEM_ELEMENTAL_POUCH, 1)
+								msgbox("You made an elemental pouch!")
+								release
+					
+				
+							}
+							else 
+							{
+								msgbox("You don't have the crafting item!")
+								release
+							}
+						case 6:
+							checkitem (ITEM_RARE_CANDY, 1)
+							if(var(VAR_RESULT))
+							{
+								removeitem (ITEM_NORMAL_POUCH, 1)
+								removeitem (ITEM_RARE_CANDY, 1)
+								giveitem (ITEM_GRANITE_POUCH, 1)
+								msgbox("You made a granite pouch!")
+								release
+					
+				
+							}
+							else 
+							{
+								msgbox("You don't have the crafting item!")
+								release
+							}
+						case 7:
+							checkitem (ITEM_RARE_CANDY, 1)
+							if(var(VAR_RESULT))
+							{
+								removeitem (ITEM_NORMAL_POUCH, 1)
+								removeitem (ITEM_RARE_CANDY, 1)
+								giveitem (ITEM_MYSTIC_POUCH, 1)
+								msgbox("You made a mystic pouch!")
+								release
+					
+				
+							}
+							else 
+							{
+								msgbox("You don't have the crafting item!")
+								release
+							}
+						case 8:
+						releaseall
+					}
+			}
+		}
+		else
+		{
+			msgbox("You don't have a normal pouch!")
 		}
 	}
 	else
 	{
-		msgbox("Smell ya later!")
 		release
 	}
+	
+	msgbox("Smell ya later!")
+	releaseall
 
 }
 

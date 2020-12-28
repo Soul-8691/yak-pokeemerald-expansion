@@ -60,8 +60,8 @@
 
 //POKESCAPE TUTORIAL ISLAND SCRIPTS
 #define FLAG_RATDEFEATED    0x29 // Unused Flag
+#define FLAG_DISABLE_RUN   0x2A // Unused Flag
 
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag
 #define FLAG_UNUSED_0x02D    0x2D // Unused Flag

@@ -361,6 +361,7 @@ void DoWhiteOut(void)
     HealPlayerParty();
     Overworld_ResetStateAfterWhiteOut();
     SetWarpDestinationToLastHealLocation();
+	FlagClear(FLAG_DISABLE_RUN);
     WarpIntoMap();
 }
 

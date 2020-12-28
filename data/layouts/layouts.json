@@ -5227,7 +5227,7 @@
       "width": 26,
       "height": 26,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Tutorial_Island_Lab_Up/border.bin",
       "blockdata_filepath": "data/layouts/Tutorial_Island_Lab_Up/map.bin"
     },
@@ -5260,6 +5260,16 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/Underwater_Lumbridge/border.bin",
       "blockdata_filepath": "data/layouts/Underwater_Lumbridge/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUTORIAL_ISLAND_CHURCH",
+      "name": "Tutorial_Island_Church_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_PokeScape_Church",
+      "border_filepath": "data/layouts/Tutorial_Island_Church/border.bin",
+      "blockdata_filepath": "data/layouts/Tutorial_Island_Church/map.bin"
     }
   ]
 }

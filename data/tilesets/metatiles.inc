@@ -645,3 +645,10 @@ gMetatiles_IndoorTowns1::
 	.align 1
 gMetatileAttributes_IndoorTowns1::
 	.incbin "data/tilesets/secondary/indoortowns1/metatile_attributes.bin"
+	.align 1
+gMetatiles_PokeScape_Church::
+	.incbin "data/tilesets/secondary/pokescape_church/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_PokeScape_Church::
+	.incbin "data/tilesets/secondary/pokescape_church/metatile_attributes.bin"

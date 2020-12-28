@@ -964,3 +964,14 @@ gTileset_IndoorTowns1::
 	.4byte gMetatiles_IndoorTowns1
 	.4byte gMetatileAttributes_IndoorTowns1
 	.4byte NULL
+
+	.align 2
+gTileset_PokeScape_Church::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_PokeScape_Church
+	.4byte gTilesetPalettes_PokeScape_Church
+	.4byte gMetatiles_PokeScape_Church
+	.4byte gMetatileAttributes_PokeScape_Church
+	.4byte NULL

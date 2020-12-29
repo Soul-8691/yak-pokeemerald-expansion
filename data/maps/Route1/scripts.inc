@@ -66,7 +66,16 @@ Route_1_EvilChicken_Battle_Script::
 	setflag FLAG_EVILCHICKEN_DEFEATED
 	end
 	
+Route_1_Goblin_1_Battle::
+	trainerbattle_single TRAINER_ROUTE1_GOBLIN1, Text_Wartnose, Text_WartnoseDefeated
+	release
+	end
 	
+	Text_Wartnose:
+	.string "Brown armour best!$"
+	
+	Text_WartnoseDefeated:
+	.string "Um... my brown armor in the wash$"
 
 	
 	Text_EvilChicken:

@@ -5490,7 +5490,7 @@ const struct Item gItems[] =
 	
     [ITEM_STRENGTHITEM] =
     {
-        .name = _("Barbell"),
+        .name = _("Battle Axe"),
         .itemId = ITEM_STRENGTHITEM,
         .price = 200,
         .description = sElementalPouchDesc,
@@ -5556,7 +5556,7 @@ const struct Item gItems[] =
 	
     [ITEM_WATERFALLITEM] =
     {
-        .name = _("Engines"),
+        .name = _("Grapple"),
         .itemId = ITEM_WATERFALLITEM,
         .price = 200,
         .description = sElementalPouchDesc,

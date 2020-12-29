@@ -1273,7 +1273,7 @@ $(MID_SUBDIR)/mus_pokescape_wizards_tower.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
 	
 $(MID_SUBDIR)/mus_pokescape_port_sarim.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100	
 	
 $(MID_SUBDIR)/mus_pokescape_falador.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	

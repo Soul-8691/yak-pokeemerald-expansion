@@ -3410,7 +3410,9 @@ const struct SpriteFrameImage gObjectEventPicTable_basilisk[] = {
     overworld_frame(gObjectEventPic_basilisk, 4, 4, 8),
 };
 
-
+const struct SpriteFrameImage gObjectEventPicTable_KALPHITE_KING[] = {
+    overworld_frame(gObjectEventPic_KALPHITE_KING, 4, 4, 0),
+};
 
 
 

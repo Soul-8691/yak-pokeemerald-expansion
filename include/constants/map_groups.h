@@ -1,6 +1,10 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
+//
+// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
+//
+
 // Map Group 0
 #define MAP_PETALBURG_CITY      (0 | (0 << 8))
 #define MAP_SLATEPORT_CITY      (1 | (0 << 8))
@@ -59,9 +63,6 @@
 #define MAP_UNDERWATER_ROUTE129 (54 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE105 (55 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
-#define MAP_KALPHITE_CAVES_1    (57 | (0 << 8))
-#define MAP_KAPLHITE_CAVES_2    (58 | (0 << 8))
-#define MAP_KALPHITE_CAVES_3    (59 | (0 << 8))
 
 // Map Group 1
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -655,6 +656,12 @@
 #define MAP_LUMBRIDGE_FOREST     (4 | (36 << 8))
 #define MAP_TUTORIAL_ISLAND_CAVE (5 | (36 << 8))
 #define MAP_UNDERWATER_LUMBRIDGE (6 | (36 << 8))
+#define MAP_KALPHITE_CAVES_1     (7 | (36 << 8))
+#define MAP_KAPLHITE_CAVES_2     (8 | (36 << 8))
+#define MAP_KALPHITE_CAVES_3     (9 | (36 << 8))
+#define MAP_AL_KHARID_MINES_1    (10 | (36 << 8))
+#define MAP_AL_KHARID_MINES_2    (11 | (36 << 8))
+#define MAP_AL_KHARID_MINES_3    (12 | (36 << 8))
 
 // Map Group 37
 #define MAP_LUMBRIDGE_HOUSE_BOBS_AXES1 (0 | (37 << 8))
@@ -689,9 +696,6 @@
 #define MAP_TUTORIAL_ISLAND_LAB_DOWN (1 | (40 << 8))
 #define MAP_TUTORIAL_ISLAND_SHOP     (2 | (40 << 8))
 #define MAP_TUTORIAL_ISLAND_CHURCH   (3 | (40 << 8))
-#define MAP_AL_KHARID_MINES_1        (4 | (40 << 8))
-#define MAP_AL_KHARID_MINES_2        (5 | (40 << 8))
-#define MAP_AL_KHARID_MINES_3        (6 | (40 << 8))
 
 #define MAP_GROUPS_COUNT 41
 

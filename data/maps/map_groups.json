@@ -100,10 +100,7 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125",
-    "Kalphite_Caves_1",
-    "Kaplhite_Caves_2",
-    "Kalphite_Caves_3"
+    "Underwater_Route125"
   ],
   "gMapGroup1": [
     "LittlerootTown_BrendansHouse_1F",
@@ -696,7 +693,13 @@
     "MudskipperPoint",
     "Lumbridge_Forest",
     "Tutorial_Island_Cave",
-    "Underwater_Lumbridge"
+    "Underwater_Lumbridge",
+    "Kalphite_Caves_1",
+    "Kaplhite_Caves_2",
+    "Kalphite_Caves_3",
+    "AlKharid_Mines_1",
+    "AlKharid_Mines_2",
+    "AlKharid_Mines_3"
   ],
   "gMapGroup37": [
     "Lumbridge_House_BobsAxes1",
@@ -730,9 +733,6 @@
     "Tutorial_Island_Lab_Up",
     "Tutorial_Island_Lab_Down",
     "Tutorial_Island_Shop",
-    "Tutorial_Island_Church",
-    "AlKharid_Mines_1",
-    "AlKharid_Mines_2",
-    "AlKharid_Mines_3"
+    "Tutorial_Island_Church"
   ]
 }

@@ -353,7 +353,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_snow_imp;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_terrorbird_1;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_terrorbird_2;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_tzhaar_2;
-
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KALPHITE_KING;
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -705,7 +705,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 	[OBJ_EVENT_GFX_terrorbird_1] =               &gObjectEventGraphicsInfo_terrorbird_1,
 	[OBJ_EVENT_GFX_terrorbird_2] =               &gObjectEventGraphicsInfo_terrorbird_2,
 	[OBJ_EVENT_GFX_tzhaar_2] =               &gObjectEventGraphicsInfo_tzhaar_2,
-
+	[OBJ_EVENT_GFX_KALPHITE_KING] =               &gObjectEventGraphicsInfo_KALPHITE_KING,
 
 };
 

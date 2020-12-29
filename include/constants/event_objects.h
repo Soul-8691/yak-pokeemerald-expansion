@@ -349,9 +349,10 @@
 #define OBJ_EVENT_GFX_terrorbird_1               344
 #define OBJ_EVENT_GFX_terrorbird_2               345
 #define OBJ_EVENT_GFX_tzhaar_2                   346
+#define OBJ_EVENT_GFX_KALPHITE_KING              347
 
 
-#define NUM_OBJ_EVENT_GFX                        347
+#define NUM_OBJ_EVENT_GFX                        348
 
 
 // These are dynamic object gfx ids.

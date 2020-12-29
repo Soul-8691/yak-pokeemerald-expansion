@@ -5270,6 +5270,66 @@
       "secondary_tileset": "gTileset_PokeScape_Church",
       "border_filepath": "data/layouts/Tutorial_Island_Church/border.bin",
       "blockdata_filepath": "data/layouts/Tutorial_Island_Church/map.bin"
+    },
+    {
+      "id": "LAYOUT_AL_KHARID_MINES_1",
+      "name": "AlKharid_Mines_1_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AlKharid_Mines_1/border.bin",
+      "blockdata_filepath": "data/layouts/AlKharid_Mines_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_AL_KHARID_MINES_2",
+      "name": "AlKharid_Mines_2_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AlKharid_Mines_2/border.bin",
+      "blockdata_filepath": "data/layouts/AlKharid_Mines_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_AL_KHARID_MINES_3",
+      "name": "AlKharid_Mines_3_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AlKharid_Mines_3/border.bin",
+      "blockdata_filepath": "data/layouts/AlKharid_Mines_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_KALPHITE_CAVES_1",
+      "name": "Kalphite_Caves_1_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Kalphite_Caves_1/border.bin",
+      "blockdata_filepath": "data/layouts/Kalphite_Caves_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_KAPLHITE_CAVES_2",
+      "name": "Kaplhite_Caves_2_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Kaplhite_Caves_2/border.bin",
+      "blockdata_filepath": "data/layouts/Kaplhite_Caves_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_KALPHITE_CAVES_3",
+      "name": "Kalphite_Caves_3_Layout",
+      "width": 40,
+      "height": 22,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Kalphite_Caves_3/border.bin",
+      "blockdata_filepath": "data/layouts/Kalphite_Caves_3/map.bin"
     }
   ]
 }

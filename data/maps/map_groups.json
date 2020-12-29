@@ -100,7 +100,10 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125"
+    "Underwater_Route125",
+    "Kalphite_Caves_1",
+    "Kaplhite_Caves_2",
+    "Kalphite_Caves_3"
   ],
   "gMapGroup1": [
     "LittlerootTown_BrendansHouse_1F",
@@ -727,6 +730,9 @@
     "Tutorial_Island_Lab_Up",
     "Tutorial_Island_Lab_Down",
     "Tutorial_Island_Shop",
-    "Tutorial_Island_Church"
+    "Tutorial_Island_Church",
+    "AlKharid_Mines_1",
+    "AlKharid_Mines_2",
+    "AlKharid_Mines_3"
   ]
 }

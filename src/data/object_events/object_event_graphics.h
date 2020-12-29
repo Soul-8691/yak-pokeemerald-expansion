@@ -687,6 +687,10 @@ const u16 gObjectEventPalette_terrorbird_2[] = INCBIN_U16("graphics/object_event
 const u32 gObjectEventPic_tzhaar_2[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/tzhaar_2.4bpp");
 const u16 gObjectEventPalette_tzhaar_2[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/tzhaar_2.gbapal");
 
+const u32 gObjectEventPic_KALPHITE_KING[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/kalphite_king.4bpp");
+const u16 gObjectEventPalette_KALPHITE_KING[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/kalphite_king.gbapal");
+
+//PROTAGANIST
 const u16 gObjectEventPalette_Protaganist[] = INCBIN_U16("graphics/object_events/palettes/protaganist.gbapal");
 //PROTAGANIST MALE
 const u32 gObjectEventPic_BrendanNormal[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_male/walking.4bpp");

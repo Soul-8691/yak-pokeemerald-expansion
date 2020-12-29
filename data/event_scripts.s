@@ -1222,3 +1222,17 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Tutorial_Island_Shop/scripts.inc"
 
 	.include "data/maps/Underwater_Lumbridge/scripts.inc"
+
+	.include "data/maps/Tutorial_Island_Church/scripts.inc"
+
+	.include "data/maps/AlKharid_Mines_1/scripts.inc"
+
+	.include "data/maps/AlKharid_Mines_2/scripts.inc"
+
+	.include "data/maps/AlKharid_Mines_3/scripts.inc"
+
+	.include "data/maps/Kalphite_Caves_1/scripts.inc"
+
+	.include "data/maps/Kaplhite_Caves_2/scripts.inc"
+
+	.include "data/maps/Kalphite_Caves_3/scripts.inc"

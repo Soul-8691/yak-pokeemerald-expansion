@@ -112,8 +112,8 @@
       "x": 43,
       "y": 22,
       "elevation": 0,
-      "dest_map": "MAP_TUTORIAL_ISLAND_LAB_UP",
-      "dest_warp_id": 2
+      "dest_map": "MAP_TUTORIAL_ISLAND_CHURCH",
+      "dest_warp_id": 0
     },
     {
       "x": 48,
@@ -147,8 +147,8 @@
       "x": 42,
       "y": 22,
       "elevation": 0,
-      "dest_map": "MAP_TUTORIAL_ISLAND_LAB_UP",
-      "dest_warp_id": 1
+      "dest_map": "MAP_TUTORIAL_ISLAND_CHURCH",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

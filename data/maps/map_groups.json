@@ -40,7 +40,8 @@
     "gMapGroup36",
     "gMapGroup37",
     "gMapGroup38",
-    "gMapGroup39"
+    "gMapGroup39",
+    "gMapGroup40"
   ],
   "gMapGroup0": [
     "PetalburgCity",
@@ -633,6 +634,7 @@
     "Draynor",
     "Port_Sarim",
     "Rimmington",
+    "Falador",
     "Varrock",
     "VarrockNorth",
     "BarbarianVillage",
@@ -656,7 +658,6 @@
     "Route9",
     "Route10",
     "Route11",
-    "Falador",
     "Route12",
     "Route13",
     "Route14",
@@ -692,7 +693,13 @@
     "MudskipperPoint",
     "Lumbridge_Forest",
     "Tutorial_Island_Cave",
-    "Underwater_Lumbridge"
+    "Underwater_Lumbridge",
+    "Kalphite_Caves_1",
+    "Kaplhite_Caves_2",
+    "Kalphite_Caves_3",
+    "AlKharid_Mines_1",
+    "AlKharid_Mines_2",
+    "AlKharid_Mines_3"
   ],
   "gMapGroup37": [
     "Lumbridge_House_BobsAxes1",
@@ -720,9 +727,12 @@
   ],
   "gMapGroup39": [
     "Route1_House_Fred",
-    "Route1_House_1",
+    "Route1_House_1"
+  ],
+  "gMapGroup40": [
     "Tutorial_Island_Lab_Up",
     "Tutorial_Island_Lab_Down",
-    "Tutorial_Island_Shop"
+    "Tutorial_Island_Shop",
+    "Tutorial_Island_Church"
   ]
 }

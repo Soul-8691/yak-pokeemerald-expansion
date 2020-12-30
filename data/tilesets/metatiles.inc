@@ -652,3 +652,10 @@ gMetatiles_PokeScape_Church::
 	.align 1
 gMetatileAttributes_PokeScape_Church::
 	.incbin "data/tilesets/secondary/pokescape_church/metatile_attributes.bin"
+	.align 1
+gMetatiles_PokeScape_Caves::
+	.incbin "data/tilesets/secondary/pokescape_caves/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_PokeScape_Caves::
+	.incbin "data/tilesets/secondary/pokescape_caves/metatile_attributes.bin"

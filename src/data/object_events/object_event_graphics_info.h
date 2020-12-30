@@ -354,7 +354,6 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_skeleton_ox_f = {0
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_skeleton_ox_m = {0xFFFF, OBJ_EVENT_PAL_skeleton_ox_m, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, gObjectEventSpriteOamTables_16x32, gObjectEventImageAnimTable_Standard, gObjectEventPicTable_skeleton_ox_m, gDummySpriteAffineAnimTable};
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_basilisk = {0xFFFF, OBJ_EVENT_PAL_basilisk, OBJ_EVENT_PAL_TAG_NONE, 256, 32, 16, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_32x32, gObjectEventSpriteOamTables_32x32, gObjectEventImageAnimTable_Standard, gObjectEventPicTable_basilisk, gDummySpriteAffineAnimTable};
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KALPHITE_KING = {0xFFFF, OBJ_EVENT_PAL_KALPHITE_KING, OBJ_EVENT_PAL_TAG_NONE, 256, 32, 16, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_32x32, gObjectEventSpriteOamTables_32x32, gObjectEventImageAnimTable_Standard, gObjectEventPicTable_KALPHITE_KING, gDummySpriteAffineAnimTable};
 
 //PROTAGANIST MALE
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanNormal = {0xFFFF, OBJ_EVENT_PAL_PROTAGANIST, OBJ_EVENT_PAL_TAG_10, 512, 16, 32, 0, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, gObjectEventSpriteOamTables_16x32, gObjectEventImageAnimTable_BrendanMayNormal, gObjectEventPicTable_BrendanNormal, gDummySpriteAffineAnimTable};
@@ -369,3 +368,12 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MayMachBike = {0xF
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaySurfing = {0xFFFF, OBJ_EVENT_PAL_PROTAGANIST, OBJ_EVENT_PAL_TAG_NONE, 512, 32, 32, 0, SHADOW_SIZE_M, FALSE, TRUE, TRACKS_FOOT, &gObjectEventBaseOam_32x32, gObjectEventSpriteOamTables_32x32, gObjectEventImageAnimTable_Surfing, gObjectEventPicTable_MaySurfing, gDummySpriteAffineAnimTable};
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MayFishing = {0xFFFF, OBJ_EVENT_PAL_PROTAGANIST, OBJ_EVENT_PAL_TAG_10, 512, 32, 32, 0, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_32x32, gObjectEventSpriteOamTables_32x32, gObjectEventImageAnimTable_Fishing, gObjectEventPicTable_MayFishing, gDummySpriteAffineAnimTable};
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MayUnderwater = {0xFFFF, OBJ_EVENT_PAL_TAG_11, OBJ_EVENT_PAL_TAG_NONE, 512, 32, 32, 10, SHADOW_SIZE_M, FALSE, TRUE, TRACKS_FOOT, &gObjectEventBaseOam_32x32, gObjectEventSpriteOamTables_32x32, gObjectEventImageAnimTable_Standard, gObjectEventPicTable_MayUnderwater, gDummySpriteAffineAnimTable};
+
+
+//Kalphites
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KalphiteKing = {0xFFFF, OBJ_EVENT_PAL_KALPHITE_KING, OBJ_EVENT_PAL_TAG_NONE, 512, 32, 32, 5, SHADOW_SIZE_M, TRUE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_32x32, gObjectEventSpriteOamTables_32x32, gObjectEventImageAnimTable_Idle, gObjectEventPicTable_KalphiteKing, gDummySpriteAffineAnimTable};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KalphiteQueen = {0xFFFF, OBJ_EVENT_PAL_KALPHITE_QUEEN, OBJ_EVENT_PAL_TAG_NONE, 512, 32, 32, 5, SHADOW_SIZE_M, TRUE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_32x32, gObjectEventSpriteOamTables_32x32, gObjectEventImageAnimTable_Idle, gObjectEventPicTable_KalphiteQueen, gDummySpriteAffineAnimTable};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KalphiteWorker = {0xFFFF, OBJ_EVENT_PAL_KALPHITE_WORKER, OBJ_EVENT_PAL_TAG_NONE, 128, 16, 16, 2, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x16, gObjectEventSpriteOamTables_16x16, gObjectEventImageAnimTable_Standard, gObjectEventPicTable_KalphiteWorker, gDummySpriteAffineAnimTable};
+

@@ -801,6 +801,18 @@ static const struct MenuAction MultichoiceList_PouchCraft2[] =
 	
 };
 
+
+static const struct MenuAction MultichoiceList_CheatMenu[] =
+{
+	{gText_CheatEvolutionShop},
+	{gText_CheatPouchShop},
+	{gText_AddCash},
+	{gText_AddCandy},
+	{gText_AddKeyItems},
+	{gText_Exit},
+	
+};
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -932,6 +944,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
 	//pokescape
 	[MULTI_POUCH_CRAFT]				   = MULTICHOICE(MultichoiceList_PouchCraft),
 	[MULTI_POUCH_CRAFT2]			   = MULTICHOICE(MultichoiceList_PouchCraft2),
+	[MULTI_CHEAT_MENU]				   = MULTICHOICE(MultichoiceList_CheatMenu),
 	
 	
 };

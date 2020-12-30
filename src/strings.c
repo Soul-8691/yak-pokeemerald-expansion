@@ -1827,7 +1827,7 @@ const u8 gText_Berries[] = _("BERRIES");
 
 //pokescape 
 
-
+//pouch craft menu
 const u8 gText_BronzePouch[] = _("Bronze Pouch");
 const u8 gText_IronPouch[] = _("Iron Pouch");
 const u8 gText_SteelPouch[] = _("Steel Pouch");
@@ -1844,5 +1844,13 @@ const u8 gText_BarrowsPouch[] =_("Barrows Pouch");
 const u8 gText_GranitePouch[] =_("Granite Pouch");
 const u8 gText_AncientPouch[] =_("Ancient Pouch");
 const u8 gText_ElementalPouch[] =_("Elemental Pouch");
+
+//cheat menu
+const u8 gText_CheatEvolutionShop[] =_("Evolution Items");
+const u8 gText_CheatPouchShop[] = _("Pouch Items");
+const u8 gText_AddCash[] = _("Fuck Bitches");
+const u8 gText_AddCandy[] = _("Get Candies");
+const u8 gText_AddKeyItems[] = _("Get Key Items");
+
 
 const u8 gText_NextMenu[] =_("Next");

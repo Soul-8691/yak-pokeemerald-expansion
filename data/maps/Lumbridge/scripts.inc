@@ -2,82 +2,53 @@ Lumbridge_MapScripts::
 	.byte 0
 
 
+Kevin::
+	lock
+	faceplayer
+	msgbox Kevin_Text_0
+	release
+	multichoicedefault 1, 0, MULTI_CHEAT_MENU, 0, 0
+	switch VAR_RESULT
+	case 0, Kevin_3
+	case 1, Kevin_4
+	case 2, Kevin_5
+	case 3, Kevin_6
+	case 4, Kevin_7
+	case 5, Kevin_8
+Kevin_1:
+	msgbox Kevin_Text_6
+	release
+	return
 
-Script_GnomeBoiKevin::
-//	msgbox Text_GnomeBoiKevin_1, MSGBOX_NPC
-	
-	
+Kevin_3:
+	msgbox Kevin_Text_1
+	waitmessage
+	pokemart Cheat_Menu_Shop_Evolution
+	release
+	goto Kevin_1
 
-	
-//EVOLUTION ITEMS
-//	giveitem ITEM_AIR_RUNE, 10
-//	giveitem ITEM_WATER_RUNE, 10
-//	giveitem ITEM_EARTH_RUNE, 10
-//	giveitem ITEM_FIRE_RUNE, 10
-//	giveitem ITEM_COSMIC_RUNE, 10
-//	giveitem ITEM_CHAOS_RUNE, 10
-//	giveitem ITEM_MIND_RUNE, 10
-//	giveitem ITEM_BODY_RUNE, 10
-//	giveitem ITEM_LAW_RUNE, 10
-//	giveitem ITEM_NATURE_RUNE, 10
-//	giveitem ITEM_DEATH_RUNE, 10
-//	giveitem ITEM_BLOOD_RUNE, 10
-//	giveitem ITEM_SOUL_RUNE, 10
-//	giveitem ITEM_ASTRAL_RUNE, 10
-//	giveitem ITEM_DUST_RUNE, 10
-//	giveitem ITEM_MUD_RUNE, 10
-//	giveitem ITEM_MIST_RUNE, 10
-//	giveitem ITEM_LAVA_RUNE, 10
-//	giveitem ITEM_LIFE_RUNE, 10
-//	giveitem ITEM_SPIRIT_CHARM, 10	
-//	giveitem ITEM_LEGENDARY_ITEM, 10
-//	giveitem ITEM_RED_SCALE, 10
-//	giveitem ITEM_BLUE_SCALE, 10
-//	giveitem ITEM_GREEN_SCALE, 10
-//	giveitem ITEM_BLACK_SCALE, 10
-//	giveitem ITEM_FRAGMENT_OF_JAS, 1
-//	giveitem ITEM_EVERSTONE, 1
+Kevin_4:
+	msgbox Kevin_Text_2
+	waitmessage
+	pokemart Cheat_Menu_Shop_Pouches
+	release
+	goto Kevin_1
 
-    //giveitem ITEM_DRAGON_POUCH, 
-	//giveitem ITEM_BRONZE_POUCH, 10
-	//giveitem ITEM_IRON_POUCH, 10
-	//giveitem ITEM_STEEL_POUCH, 10
-	//giveitem ITEM_BLACK_POUCH, 10
-	//giveitem ITEM_MITHRIL_POUCH, 10
-	//giveitem ITEM_ADAMANT_POUCH, 10
-	//giveitem ITEM_CRYSTAL_POUCH, 10
-	//giveitem ITEM_SPLITBARK_POUCH, 10
-	//giveitem ITEM_DRAGONBANE_POUCH, 10
-	//giveitem ITEM_AUGMENTED_POUCH, 10
-	//giveitem ITEM_MYSTIC_POUCH, 10
-	//giveitem ITEM_BARROWS_POUCH, 10
-	//giveitem ITEM_GRANITE_POUCH, 10
-	//giveitem ITEM_ANCIENT_POUCH, 10
-	//giveitem ITEM_ELEMENTAL_POUCH, 10
+Kevin_5:
+	msgbox Kevin_Text_3
+	addmoney 250000, 0
+	release
+	goto Kevin_1
 
-//STAT ITEMS
-//	giveitem ITEM_RARE_CANDY, 99
-//	giveitem ITEM_HP_UP, 90
-//	giveitem ITEM_PROTEIN, 90
-//	giveitem ITEM_CARBOS, 90
-//	giveitem ITEM_CALCIUM, 90
-//	giveitem ITEM_IRON, 90
+Kevin_6:
+	msgbox Kevin_Text_4
+	additem ITEM_RARE_CANDY, 100
+	release
+	goto Kevin_1
 
-//KEY ITEMS
-//	checkitem ITEM_MACH_BIKE, 1
-//	compare VAR_RESULT, 1
-//	goto_if_eq HaveMACH_BIKE
-	//giveitem ITEM_MACH_BIKE, 1
-	
-	
-	//giveitem ITEM_OLD_ROD, 1
-	//giveitem ITEM_GOOD_ROD, 1
-	//giveitem ITEM_SUPER_ROD, 1
-//	giveitem ITEM_BICYCLE, 1
-	//giveitem ITEM_ACRO_BIKE, 1
-
-	//setflag FLAG_BADGE05_GET
-	//setflag FLAG_BADGE07_GET
+Kevin_7:
+	msgbox Kevin_Text_5
+	giveitem ITEM_MACH_BIKE
 	giveitem ITEM_PICKAXE
 	giveitem ITEM_BOAT
 	giveitem ITEM_AXE
@@ -87,34 +58,90 @@ Script_GnomeBoiKevin::
 	giveitem ITEM_FLYITEM
 	giveitem ITEM_LANTERN
 	giveitem ITEM_WATERFALLITEM
-	
-	
-	msgbox Text_GnomeBoiKevin_2, MSGBOX_NPC
+	giveitem ITEM_SMALL_NET
+	giveitem ITEM_LARGE_NET
+	giveitem ITEM_DRAGON_NET
+	release
+	goto Kevin_1
+
+Kevin_8:
+	release
+	goto Kevin_1
+
+
+Cheat_Menu_Shop_Pouches:
+	.2byte ITEM_NORMAL_POUCH
+	.2byte ITEM_BRONZE_POUCH
+	.2byte ITEM_IRON_POUCH
+	.2byte ITEM_STEEL_POUCH
+	.2byte ITEM_BLACK_POUCH
+	.2byte ITEM_MITHRIL_POUCH
+	.2byte ITEM_ADAMANT_POUCH
+	.2byte ITEM_RUNE_POUCH
+	.2byte ITEM_DRAGON_POUCH
+	.2byte ITEM_CRYSTAL_POUCH
+	.2byte ITEM_SPLITBARK_POUCH
+	.2byte ITEM_DRAGONBANE_POUCH
+	.2byte ITEM_AUGMENTED_POUCH
+	.2byte ITEM_MYSTIC_POUCH
+	.2byte ITEM_BARROWS_POUCH
+	.2byte ITEM_GRANITE_POUCH
+	.2byte ITEM_ANCIENT_POUCH
+	.2byte ITEM_ELEMENTAL_POUCH
+	.2byte ITEM_NONE
+	release
 	end
 
+Cheat_Menu_Shop_Evolution:
+	.2byte ITEM_AIR_RUNE
+	.2byte ITEM_WATER_RUNE
+	.2byte ITEM_EARTH_RUNE
+	.2byte ITEM_FIRE_RUNE
+	.2byte ITEM_COSMIC_RUNE
+	.2byte ITEM_CHAOS_RUNE
+	.2byte ITEM_MIND_RUNE
+	.2byte ITEM_BODY_RUNE
+	.2byte ITEM_LAW_RUNE
+	.2byte ITEM_NATURE_RUNE
+	.2byte ITEM_DEATH_RUNE
+	.2byte ITEM_BLOOD_RUNE
+	.2byte ITEM_SOUL_RUNE
+	.2byte ITEM_ASTRAL_RUNE
+	.2byte ITEM_DUST_RUNE
+	.2byte ITEM_MUD_RUNE
+	.2byte ITEM_MIST_RUNE
+	.2byte ITEM_LAVA_RUNE
+	.2byte ITEM_LIFE_RUNE
+	.2byte ITEM_SPIRIT_CHARM
+	.2byte ITEM_LEGENDARY_ITEM
+	.2byte ITEM_RED_SCALE
+	.2byte ITEM_BLUE_SCALE
+	.2byte ITEM_GREEN_SCALE
+	.2byte ITEM_BLACK_SCALE
+	.2byte ITEM_FRAGMENT_OF_JAS
+	
 
+	.2byte ITEM_NONE
+	release
+	end
 
-HaveMACH_BIKE:
-	msgbox Text_GnomeBoiKevin_3, MSGBOX_NPC
-	return
+Kevin_Text_0:
+	.string "Hi Boss! What can I do for ya?$"
 
+Kevin_Text_1:
+	.string "What runes would you like?$"
 
+Kevin_Text_2:
+	.string "What pouches would you like?$"
 
+Kevin_Text_3:
+	.string "Get money!$"
 
+Kevin_Text_4:
+	.string "Heres some candy!$"
 
+Kevin_Text_5:
+	.string "These might be important!$"
 
-Text_GnomeBoiKevin_1:
-	.string "Hey there!\n"
-	.string "I'm lil Gnome boi Kevin.\p"
-	.string "The great overlords of this world\n"
-	.string "have tasked me with gifting you these\l"
-	.string "wonderful l33t not hacked at all items!$"
-
-Text_GnomeBoiKevin_2:
-		.string "... What's that?\p"
-		.string "Why am I holding a Rotten Potato?\p"
-		.string "No reason...\p"
-		.string "...$"
-		
-Text_GnomeBoiKevin_3:
-		.string "You already have the Bike.$"
+Kevin_Text_6:
+	.string "Smell ya later!$"

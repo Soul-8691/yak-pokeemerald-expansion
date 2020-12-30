@@ -14,11 +14,20 @@ static const struct TrainerMonItemDefaultMoves sParty_Maggie[] = {
     }
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_Route1_Goblin1[] = {
+static const struct TrainerMonItemDefaultMoves sParty_Wartfoot[] = {
     {
     .iv = 0,
     .lvl = 5,
     .species = SPECIES_SPIDERLING,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Frogface[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_RAT_NORMAL_FORM,
     .heldItem = ITEM_NONE
     }
 };

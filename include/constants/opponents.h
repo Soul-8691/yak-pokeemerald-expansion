@@ -3,7 +3,9 @@
 
 #define TRAINER_NONE                          0
 #define TRAINER_MAGGIE            			  1
-#define TRAINER_ROUTE1_GOBLIN1				  2
+#define TRAINER_WARTFOOT					  2
+#define TRAINER_FROGFACE					  3
+#define TRAINER_RSN_ROUTE1					  4
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

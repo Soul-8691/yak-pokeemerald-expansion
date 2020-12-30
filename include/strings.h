@@ -3015,6 +3015,13 @@ extern const u8 gText_GranitePouch[];
 extern const u8 gText_AncientPouch[];
 extern const u8 gText_ElementalPouch[];
 
+//pokescape cheat menu
+extern const u8 gText_CheatEvolutionShop[];
+extern const u8 gText_CheatPouchShop[];
+extern const u8 gText_AddCash[];
+extern const u8 gText_AddCandy[];
+extern const u8 gText_AddKeyItems[];
+
 extern const u8 gText_NextMenu[];
 
 #endif // GUARD_STRINGS_H

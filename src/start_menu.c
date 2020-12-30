@@ -825,7 +825,6 @@ static bool8 BattlePyramidRetireCallback(void)
         ClearDialogWindowAndFrameToTransparent(0, TRUE);
         ScriptUnfreezeObjectEvents();
         ScriptContext2_Disable();
-        ScriptContext1_SetupScript(BattlePyramid_Retire);
         return TRUE;
     }
 
@@ -941,7 +940,6 @@ static u8 SaveConfirmSaveCallback(void)
 
     if (InBattlePyramid())
     {
-        ShowSaveMessage(gText_BattlePyramidConfirmRest, SaveYesNoCallback);
     }
     else
     {
@@ -1117,7 +1115,6 @@ static u8 SaveReturnErrorCallback(void)
 
 static void InitBattlePyramidRetire(void)
 {
-    sSaveDialogCallback = BattlePyramidConfirmRetireCallback;
     sSavingComplete = FALSE;
 }
 
@@ -1125,7 +1122,6 @@ static u8 BattlePyramidConfirmRetireCallback(void)
 {
     ClearStdWindowAndFrame(GetStartMenuWindowId(), FALSE);
     RemoveStartMenuWindow();
-    ShowSaveMessage(gText_BattlePyramidConfirmRetire, BattlePyramidRetireYesNoCallback);
 
     return SAVE_IN_PROGRESS;
 }

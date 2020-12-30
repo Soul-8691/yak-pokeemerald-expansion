@@ -5490,7 +5490,7 @@ const struct Item gItems[] =
 	
     [ITEM_STRENGTHITEM] =
     {
-        .name = _("Barbell"),
+        .name = _("Battle Axe"),
         .itemId = ITEM_STRENGTHITEM,
         .price = 200,
         .description = sElementalPouchDesc,
@@ -5556,7 +5556,7 @@ const struct Item gItems[] =
 	
     [ITEM_WATERFALLITEM] =
     {
-        .name = _("Engines"),
+        .name = _("Grapple"),
         .itemId = ITEM_WATERFALLITEM,
         .price = 200,
         .description = sElementalPouchDesc,
@@ -5566,6 +5566,50 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 3,
     },
+	
+    [ITEM_SMALL_NET] =
+    {
+        .name = _("Small Net"),
+        .itemId = ITEM_SMALL_NET,
+        .price = 0,
+        .description = sOldRodDesc,
+        .importance = 1,
+        .unk19 = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_Rod,
+        .secondaryId = OLD_ROD,
+    },
+	
+    [ITEM_LARGE_NET] =
+    {
+        .name = _("Large Net"),
+        .itemId = ITEM_LARGE_NET,
+        .price = 0,
+        .description = sGoodRodDesc,
+        .importance = 1,
+        .unk19 = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_Rod,
+        .secondaryId = GOOD_ROD,
+    },
+	
+    [ITEM_DRAGON_NET] =
+    {
+        .name = _("Dragon Net"),
+        .itemId = ITEM_DRAGON_NET,
+        .price = 0,
+        .description = sSuperRodDesc,
+        .importance = 1,
+        .unk19 = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_Rod,
+        .secondaryId = SUPER_ROD,
+    },
+	
+	
 	
 	
 	

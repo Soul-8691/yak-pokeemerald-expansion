@@ -3646,6 +3646,11 @@ u8 IsRunningFromBattleImpossible(void)
         gBattleCommunication[MULTISTRING_CHOOSER] = 0;
         return 1;
     }
+	if (FlagGet(FLAG_DISABLE_RUN))
+	{
+		gBattleCommunication[MULTISTRING_CHOOSER] = 5;
+        return 1;
+	}
 
     if (holdEffect == HOLD_EFFECT_CAN_ALWAYS_RUN)
         return 0;
@@ -4030,6 +4035,15 @@ static void HandleTurnActionSelectionState(void)
                     }
                     break;
                 case B_ACTION_RUN:
+					if (FlagGet(FLAG_DISABLE_RUN))
+					{
+						gBattleCommunication[MULTISTRING_CHOOSER] = 213; 
+					}
+					else
+					{
+						gHitMarker |= HITMARKER_RUN;
+						gBattleCommunication[gActiveBattler]++;
+					}
                     gHitMarker |= HITMARKER_RUN;
                     gBattleCommunication[gActiveBattler]++;
                     break;

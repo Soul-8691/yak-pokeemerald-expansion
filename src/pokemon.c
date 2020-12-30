@@ -9053,7 +9053,6 @@ const u8 *GetTrainerPartnerName(void)
     {
         if (gPartnerTrainerId == TRAINER_STEVEN_PARTNER)
         {
-            return gTrainers[TRAINER_STEVEN].trainerName;
         }
         else
         {

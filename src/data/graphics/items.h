@@ -902,6 +902,16 @@ const u32 gItemIconPalette_Lantern[] = INCBIN_U32("graphics/items/pokescape_icon
 const u32 gItemIcon_WaterfallItem[] = INCBIN_U32("graphics/items/pokescape_icons/waterfall_item.4bpp.lz");
 const u32 gItemIconPalette_WaterfallItem[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/waterfall_item.gbapal.lz");
 
+const u32 gItemIcon_SmallNet[] = INCBIN_U32("graphics/items/pokescape_icons/small_net.4bpp.lz");
+const u32 gItemIconPalette_SmallNet[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/small_net.gbapal.lz");
+
+const u32 gItemIcon_LargeNet[] = INCBIN_U32("graphics/items/pokescape_icons/large_net.4bpp.lz");
+const u32 gItemIconPalette_LargeNet[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/large_net.gbapal.lz");
+
+const u32 gItemIcon_DragonNet[] = INCBIN_U32("graphics/items/pokescape_icons/dragon_net.4bpp.lz");
+const u32 gItemIconPalette_DragonNet[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/dragon_net.gbapal.lz");
+
+
 
 
 

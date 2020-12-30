@@ -676,6 +676,8 @@ static const u8 sText_PkmnAbsorbingPower[] = _("{B_ATK_NAME_WITH_PREFIX} is abso
 static const u8 sText_NoOneWillBeAbleToRun[] = _("No one will be able to run away\nduring the next turn!");
 static const u8 sText_DestinyKnotActivates[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} fell in love\nfrom the {B_LAST_ITEM}!");
 static const u8 sText_CloakedInAFreezingLight[] = _("{B_ATK_NAME_WITH_PREFIX} became cloaked\nin a freezing light!");
+static const u8 sText_CantRunFromRat[] = _("DON'T EVEN THINK ABOUT RUNNING\nFROM A RAT!!");
+
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 {
@@ -1215,6 +1217,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_GRASSYTERRAINHEALS - 12] = sText_GrassyTerrainHeals,
     [STRINGID_ELECTRICTERRAINPREVENTS - 12] = sText_ElectricTerrainPreventsSleep,
     [STRINGID_PSYCHICTERRAINPREVENTS - 12] = sText_PsychicTerrainPreventsPriority,
+	[STRINGID_CANTRUNFROMRAT - 12] = sText_CantRunFromRat,
 };
 
 const u16 gTerrainStringIds[] =
@@ -1259,7 +1262,7 @@ const u16 gMissStringIds[] =
 const u16 gNoEscapeStringIds[] =
 {
     STRINGID_CANTESCAPE, STRINGID_DONTLEAVEBIRCH, STRINGID_PREVENTSESCAPE,
-    STRINGID_CANTESCAPE2, STRINGID_ATTACKERCANTESCAPE
+    STRINGID_CANTESCAPE2, STRINGID_ATTACKERCANTESCAPE, STRINGID_CANTRUNFROMRAT
 };
 
 const u16 gMoveWeatherChangeStringIds[] =

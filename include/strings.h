@@ -2996,6 +2996,15 @@ extern const u8 gText_BlenderMaxSpeedRecord[];
 extern const u8 gText_234Players[];
 
 //pokescape pouch crafting
+
+extern const u8 gText_BronzePouch[];
+extern const u8 gText_IronPouch[];
+extern const u8 gText_SteelPouch[];
+extern const u8 gText_MithrilPouch[];
+extern const u8 gText_AdamantPouch[];
+extern const u8 gText_RunePouch[];
+extern const u8 gText_DragonPouch[];
+
 extern const u8 gText_BlackPouch[];
 extern const u8 gText_CrystalPouch[];
 extern const u8 gText_DragonbanePouch[];
@@ -3005,5 +3014,14 @@ extern const u8 gText_BarrowsPouch[];
 extern const u8 gText_GranitePouch[];
 extern const u8 gText_AncientPouch[];
 extern const u8 gText_ElementalPouch[];
+
+//pokescape cheat menu
+extern const u8 gText_CheatEvolutionShop[];
+extern const u8 gText_CheatPouchShop[];
+extern const u8 gText_AddCash[];
+extern const u8 gText_AddCandy[];
+extern const u8 gText_AddKeyItems[];
+
+extern const u8 gText_NextMenu[];
 
 #endif // GUARD_STRINGS_H

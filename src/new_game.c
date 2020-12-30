@@ -45,6 +45,7 @@
 #include "berry_powder.h"
 #include "mevent.h"
 #include "union_room_chat.h"
+#include "constants/heal_locations.h"
 
 extern const u8 EventScript_ResetAllMapFlags[];
 
@@ -202,6 +203,7 @@ void NewGameInitData(void)
     ResetLotteryCorner();
     //WarpToTruck();
 	WarpToTutorialIsland();
+	SetLastHealLocationWarp(HEAL_LOCATION_LUMBRIDGE);
     ScriptContext2_RunNewScript(EventScript_ResetAllMapFlags);
     ResetMiniGamesResults();
     InitUnionRoomChatRegisteredTexts();

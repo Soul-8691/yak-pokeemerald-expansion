@@ -9,7 +9,9 @@ ratbattle::
 	msgbox ratbattle_Text_0
 	setwildbattle SPECIES_RAT_NORMAL_FORM, 3, ITEM_NONE
 	hidemonpic
+	setflag FLAG_DISABLE_RUN
 	dowildbattle
+	clearflag FLAG_DISABLE_RUN
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq ratbattle_1
 	lock
@@ -104,100 +106,308 @@ PouchCraftMenu::
 	msgbox PouchCraftMenu_Text_0
 	msgbox PouchCraftMenu_Text_1, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_ne PouchCraftMenu_1
-	msgbox CraftPouchStart_Text_4
+	goto_if_ne PouchCraftMenu_2
 	release
-	return
-
 PouchCraftMenu_1:
-	release
-	multichoicedefault 1, 0, MULTI_POUCH_CRAFT, 0, 1
-	switch VAR_RESULT
-	case 0, PouchCraftMenu_5
-	case 1, PouchCraftMenu_6
-	case 2, PouchCraftMenu_7
-	case 3, PouchCraftMenu_7
-	case 4, PouchCraftMenu_7
-	case 5, PouchCraftMenu_7
-	case 6, PouchCraftMenu_7
-	case 7, PouchCraftMenu_7
-	case 8, PouchCraftMenu_7
-	return
-
-PouchCraftMenu_5:
-	checkitem ITEM_NORMAL_POUCH, 1
-	compare VAR_RESULT, 0
-	goto_if_ne PouchCraftMenu_8
-	msgbox PouchCraftMenu_Text_5
-	release
-	return
-
-PouchCraftMenu_6:
-	checkitem ITEM_NORMAL_POUCH, 1
-	compare VAR_RESULT, 0
-	goto_if_ne PouchCraftMenu_11
-	msgbox PouchCraftMenu_Text_5
-	release
-	return
-
-PouchCraftMenu_7:
 	msgbox CraftPouchStart_Text_4
 	releaseall
 	return
 
-PouchCraftMenu_8:
+PouchCraftMenu_2:
+	checkitem ITEM_NORMAL_POUCH, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_5
+	msgbox PouchCraftMenu_Text_19
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_5:
+	release
+	multichoicedefault 1, 0, MULTI_POUCH_CRAFT, 0, 0
+	switch VAR_RESULT
+	case 0, PouchCraftMenu_9
+	case 1, PouchCraftMenu_10
+	case 2, PouchCraftMenu_11
+	case 3, PouchCraftMenu_12
+	case 4, PouchCraftMenu_13
+	case 5, PouchCraftMenu_14
+	case 6, PouchCraftMenu_15
+	case 7, PouchCraftMenu_16
+	case 8, PouchCraftMenu_17
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_9:
 	checkitem ITEM_RARE_CANDY, 1
 	compare VAR_RESULT, 0
-	goto_if_ne PouchCraftMenu_14
-	msgbox PouchCraftMenu_Text_4
+	goto_if_ne PouchCraftMenu_18
+	msgbox PouchCraftMenu_Text_3
 	release
-	return
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_10:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_21
+	msgbox PouchCraftMenu_Text_3
+	release
+	goto PouchCraftMenu_1
 
 PouchCraftMenu_11:
 	checkitem ITEM_RARE_CANDY, 1
 	compare VAR_RESULT, 0
-	goto_if_ne PouchCraftMenu_17
-	msgbox PouchCraftMenu_Text_4
+	goto_if_ne PouchCraftMenu_24
+	msgbox PouchCraftMenu_Text_3
 	release
-	return
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_12:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_27
+	msgbox PouchCraftMenu_Text_3
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_13:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_30
+	msgbox PouchCraftMenu_Text_3
+	release
+	goto PouchCraftMenu_1
 
 PouchCraftMenu_14:
-	random 3
-	compare VAR_RESULT, 2
-	goto_if_eq PouchCraftMenu_20
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_33
 	msgbox PouchCraftMenu_Text_3
-	removeitem ITEM_NORMAL_POUCH, 1
-	removeitem ITEM_RARE_CANDY, 1
-	giveitem ITEM_SPLITBARK_POUCH, 1
 	release
-	return
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_15:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_36
+	msgbox PouchCraftMenu_Text_3
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_16:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_39
+	msgbox PouchCraftMenu_Text_3
+	release
+	goto PouchCraftMenu_1
 
 PouchCraftMenu_17:
-	random 3
-	compare VAR_RESULT, 2
-	goto_if_eq PouchCraftMenu_23
-	msgbox PouchCraftMenu_Text_3
+	multichoicedefault 1, 0, MULTI_POUCH_CRAFT2, 0, 0
+	switch VAR_RESULT
+	case 0, PouchCraftMenu_43
+	case 1, PouchCraftMenu_44
+	case 2, PouchCraftMenu_45
+	case 3, PouchCraftMenu_46
+	case 4, PouchCraftMenu_47
+	case 5, PouchCraftMenu_48
+	case 6, PouchCraftMenu_49
+	case 7, PouchCraftMenu_50
+	case 8, PouchCraftMenu_51
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_18:
 	removeitem ITEM_NORMAL_POUCH, 1
 	removeitem ITEM_RARE_CANDY, 1
-	giveitem ITEM_SPLITBARK_POUCH, 1
+	giveitem ITEM_BRONZE_POUCH, 1
+	msgbox PouchCraftMenu_Text_2
 	release
-	return
+	goto PouchCraftMenu_1
 
-PouchCraftMenu_20:
+PouchCraftMenu_21:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_IRON_POUCH, 1
+	msgbox PouchCraftMenu_Text_4
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_24:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_STEEL_POUCH, 1
+	msgbox PouchCraftMenu_Text_5
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_27:
 	removeitem ITEM_NORMAL_POUCH, 1
 	removeitem ITEM_RARE_CANDY, 1
 	giveitem ITEM_BLACK_POUCH, 1
-	msgbox PouchCraftMenu_Text_2
+	msgbox PouchCraftMenu_Text_6
 	release
-	return
+	goto PouchCraftMenu_1
 
-PouchCraftMenu_23:
+PouchCraftMenu_30:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_MITHRIL_POUCH, 1
+	msgbox PouchCraftMenu_Text_7
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_33:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_ADAMANT_POUCH, 1
+	msgbox PouchCraftMenu_Text_8
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_36:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_RUNE_POUCH, 1
+	msgbox PouchCraftMenu_Text_9
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_39:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_DRAGON_POUCH, 1
+	msgbox PouchCraftMenu_Text_10
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_43:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_52
+	msgbox PouchCraftMenu_Text_3
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_44:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_55
+	msgbox PouchCraftMenu_Text_3
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_45:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_58
+	msgbox PouchCraftMenu_Text_3
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_46:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_61
+	msgbox PouchCraftMenu_Text_3
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_47:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_64
+	msgbox PouchCraftMenu_Text_3
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_48:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_67
+	msgbox PouchCraftMenu_Text_3
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_49:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_70
+	msgbox PouchCraftMenu_Text_3
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_50:
+	checkitem ITEM_RARE_CANDY, 1
+	compare VAR_RESULT, 0
+	goto_if_ne PouchCraftMenu_73
+	msgbox PouchCraftMenu_Text_3
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_51:
+	releaseall
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_52:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_ANCIENT_POUCH, 1
+	msgbox PouchCraftMenu_Text_11
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_55:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_AUGMENTED_POUCH, 1
+	msgbox PouchCraftMenu_Text_12
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_58:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_BARROWS_POUCH, 1
+	msgbox PouchCraftMenu_Text_13
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_61:
 	removeitem ITEM_NORMAL_POUCH, 1
 	removeitem ITEM_RARE_CANDY, 1
 	giveitem ITEM_CRYSTAL_POUCH, 1
-	msgbox PouchCraftMenu_Text_6
+	msgbox PouchCraftMenu_Text_14
 	release
-	return
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_64:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_DRAGONBANE_POUCH, 1
+	msgbox PouchCraftMenu_Text_15
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_67:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_ELEMENTAL_POUCH, 1
+	msgbox PouchCraftMenu_Text_16
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_70:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_GRANITE_POUCH, 1
+	msgbox PouchCraftMenu_Text_17
+	release
+	goto PouchCraftMenu_1
+
+PouchCraftMenu_73:
+	removeitem ITEM_NORMAL_POUCH, 1
+	removeitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_MYSTIC_POUCH, 1
+	msgbox PouchCraftMenu_Text_18
+	release
+	goto PouchCraftMenu_1
 
 
 Rat1Run:
@@ -291,16 +501,55 @@ PouchCraftMenu_Text_1:
 	.string "Would you like to craft a pouch?$"
 
 PouchCraftMenu_Text_2:
-	.string "Congrats! You made a black pouch!$"
+	.string "You made a bronze pouch!$"
 
 PouchCraftMenu_Text_3:
-	.string "It looks like the pouch broke!$"
-
-PouchCraftMenu_Text_4:
 	.string "You don't have the crafting item!$"
 
+PouchCraftMenu_Text_4:
+	.string "You made an iron pouch!$"
+
 PouchCraftMenu_Text_5:
-	.string "You don't have a normal pouch!$"
+	.string "You made a steel pouch!$"
 
 PouchCraftMenu_Text_6:
-	.string "Congrats! You made a crystal pouch!$"
+	.string "You made a black pouch!$"
+
+PouchCraftMenu_Text_7:
+	.string "You made a mithril pouch!$"
+
+PouchCraftMenu_Text_8:
+	.string "You made an adamant pouch!$"
+
+PouchCraftMenu_Text_9:
+	.string "You made a rune pouch!$"
+
+PouchCraftMenu_Text_10:
+	.string "You made a dragon pouch!$"
+
+PouchCraftMenu_Text_11:
+	.string "You made an ancient pouch!$"
+
+PouchCraftMenu_Text_12:
+	.string "You made an augmented pouch!$"
+
+PouchCraftMenu_Text_13:
+	.string "You made a barrows pouch!$"
+
+PouchCraftMenu_Text_14:
+	.string "You made a crystal pouch!$"
+
+PouchCraftMenu_Text_15:
+	.string "You made a dragonbane pouch!$"
+
+PouchCraftMenu_Text_16:
+	.string "You made an elemental pouch!$"
+
+PouchCraftMenu_Text_17:
+	.string "You made a granite pouch!$"
+
+PouchCraftMenu_Text_18:
+	.string "You made a mystic pouch!$"
+
+PouchCraftMenu_Text_19:
+	.string "You don't have a normal pouch!$"

@@ -1,0 +1,114 @@
+mapscripts Lumbridge_MapScripts{}
+
+script Kevin {
+	lock
+	faceplayer
+	msgbox("Hi Boss! What can I do for ya?")
+	release
+	multichoicedefault (1, 0, MULTI_CHEAT_MENU, 0, 0)
+	switch (var(VAR_RESULT))
+	{
+		case 0:
+			msgbox("What runes would you like?")
+			waitmessage
+			pokemart (Cheat_Menu_Shop_Evolution)
+			release
+		case 1:
+			msgbox("What pouches would you like?")
+			waitmessage
+			pokemart (Cheat_Menu_Shop_Pouches)
+			release
+		case 2:
+			msgbox("Get money!")
+			addmoney (250000, 0)
+			release
+		case 3:
+			msgbox ("Heres some candy!")
+			additem (ITEM_RARE_CANDY, 100)
+			release
+		
+		case 4:
+			msgbox("These might be important!")
+			giveitem (ITEM_MACH_BIKE)
+			giveitem (ITEM_PICKAXE)
+			giveitem (ITEM_BOAT)
+			giveitem (ITEM_AXE)
+			giveitem (ITEM_STRENGTHITEM)
+			giveitem (ITEM_DIVEITEM)
+			giveitem (ITEM_SPADE)
+			giveitem (ITEM_FLYITEM)
+			giveitem (ITEM_LANTERN)
+			giveitem (ITEM_WATERFALLITEM)
+			giveitem (ITEM_SMALL_NET)
+			giveitem (ITEM_LARGE_NET)
+			giveitem (ITEM_DRAGON_NET)
+			release
+			
+		case 5:
+			release
+		
+	}
+	msgbox ("Smell ya later!")
+	release
+}
+
+raw `
+
+Cheat_Menu_Shop_Pouches:
+	.2byte ITEM_NORMAL_POUCH
+	.2byte ITEM_BRONZE_POUCH
+	.2byte ITEM_IRON_POUCH
+	.2byte ITEM_STEEL_POUCH
+	.2byte ITEM_BLACK_POUCH
+	.2byte ITEM_MITHRIL_POUCH
+	.2byte ITEM_ADAMANT_POUCH
+	.2byte ITEM_RUNE_POUCH
+	.2byte ITEM_DRAGON_POUCH
+	.2byte ITEM_CRYSTAL_POUCH
+	.2byte ITEM_SPLITBARK_POUCH
+	.2byte ITEM_DRAGONBANE_POUCH
+	.2byte ITEM_AUGMENTED_POUCH
+	.2byte ITEM_MYSTIC_POUCH
+	.2byte ITEM_BARROWS_POUCH
+	.2byte ITEM_GRANITE_POUCH
+	.2byte ITEM_ANCIENT_POUCH
+	.2byte ITEM_ELEMENTAL_POUCH
+	.2byte ITEM_NONE
+	release
+	end
+
+Cheat_Menu_Shop_Evolution:
+	.2byte ITEM_AIR_RUNE
+	.2byte ITEM_WATER_RUNE
+	.2byte ITEM_EARTH_RUNE
+	.2byte ITEM_FIRE_RUNE
+	.2byte ITEM_COSMIC_RUNE
+	.2byte ITEM_CHAOS_RUNE
+	.2byte ITEM_MIND_RUNE
+	.2byte ITEM_BODY_RUNE
+	.2byte ITEM_LAW_RUNE
+	.2byte ITEM_NATURE_RUNE
+	.2byte ITEM_DEATH_RUNE
+	.2byte ITEM_BLOOD_RUNE
+	.2byte ITEM_SOUL_RUNE
+	.2byte ITEM_ASTRAL_RUNE
+	.2byte ITEM_DUST_RUNE
+	.2byte ITEM_MUD_RUNE
+	.2byte ITEM_MIST_RUNE
+	.2byte ITEM_LAVA_RUNE
+	.2byte ITEM_LIFE_RUNE
+	.2byte ITEM_SPIRIT_CHARM
+	.2byte ITEM_LEGENDARY_ITEM
+	.2byte ITEM_RED_SCALE
+	.2byte ITEM_BLUE_SCALE
+	.2byte ITEM_GREEN_SCALE
+	.2byte ITEM_BLACK_SCALE
+	.2byte ITEM_FRAGMENT_OF_JAS
+	
+
+	.2byte ITEM_NONE
+	release
+	end
+
+
+`

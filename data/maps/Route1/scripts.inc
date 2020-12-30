@@ -66,7 +66,30 @@ Route_1_EvilChicken_Battle_Script::
 	setflag FLAG_EVILCHICKEN_DEFEATED
 	end
 	
+Route_1_Wartfoot_Battle::
+	trainerbattle_single TRAINER_WARTFOOT, Text_Wartfoot, Text_WartfootDefeated
+	msgbox Text_WartfootDefeated, MSGBOX_DEFAULT
+	release
+	end
+
+Route_1_Frogface_Battle::
+	trainerbattle_single TRAINER_FROGFACE, Text_Frogface, Text_FrogfaceDefeated
+	msgbox Text_FrogfaceDefeated, MSGBOX_DEFAULT
+	release
+	end
 	
+	
+	Text_Wartfoot:
+	.string "Brown armour best!$"
+	
+	Text_WartfootDefeated:
+	.string "Um... my brown armor in the wash$"
+	
+	Text_Frogface:
+	.string "I kill you human!$"
+	
+	Text_FrogfaceDefeated:
+	.string "You ugly!$"
 
 	
 	Text_EvilChicken:

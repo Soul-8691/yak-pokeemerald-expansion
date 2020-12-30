@@ -911,6 +911,85 @@ const u32 gItemIconPalette_LargeNet[] = INCBIN_U32("graphics/items/pokescape_ico
 const u32 gItemIcon_DragonNet[] = INCBIN_U32("graphics/items/pokescape_icons/dragon_net.4bpp.lz");
 const u32 gItemIconPalette_DragonNet[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/dragon_net.gbapal.lz");
 
+//pokescape crafting items
+//pouches
+ const u32 gItemIcon_CopperOre[] = INCBIN_U32("graphics/items/pokescape_icons/copper_ore.4bpp.lz");
+ const u32 gItemIconPalette_CopperOre[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/copper_ore.gbapal.lz");
+
+ const u32 gItemIcon_TinOre[] = INCBIN_U32("graphics/items/pokescape_icons/tin_ore.4bpp.lz");
+ const u32 gItemIconPalette_TinOre[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/tin_ore.gbapal.lz");
+
+ const u32 gItemIcon_IronOre[] = INCBIN_U32("graphics/items/pokescape_icons/iron_ore.4bpp.lz");
+ const u32 gItemIconPalette_IronOre[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/iron_ore.gbapal.lz");
+
+ const u32 gItemIcon_CoalOre[] = INCBIN_U32("graphics/items/pokescape_icons/coal_ore.4bpp.lz");
+ const u32 gItemIconPalette_CoalOre[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/coal_ore.gbapal.lz");
+
+ const u32 gItemIcon_MithrilOre[] = INCBIN_U32("graphics/items/pokescape_icons/mithril_ore.4bpp.lz");
+ const u32 gItemIconPalette_MithrilOre[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/mithril_ore.gbapal.lz");
+
+ const u32 gItemIcon_AdamantOre[] = INCBIN_U32("graphics/items/pokescape_icons/adamant_ore.4bpp.lz");
+ const u32 gItemIconPalette_AdamantOre[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/adamant_ore.gbapal.lz");
+
+ const u32 gItemIcon_RuneOre[] = INCBIN_U32("graphics/items/pokescape_icons/rune_ore.4bpp.lz");
+ const u32 gItemIconPalette_RuneOre[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/rune_ore.gbapal.lz");
+
+ const u32 gItemIcon_OrikalkumOre[] = INCBIN_U32("graphics/items/pokescape_icons/orikalkum_ore.4bpp.lz");
+ const u32 gItemIconPalette_OrikalkumOre[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/orikalkum_ore.gbapal.lz");
+
+ const u32 gItemIcon_Augmentor[] = INCBIN_U32("graphics/items/pokescape_icons/augmentor.4bpp.lz");
+ const u32 gItemIconPalette_Augmentor[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/augmentor.gbapal.lz");
+
+ const u32 gItemIcon_BaneOre[] = INCBIN_U32("graphics/items/pokescape_icons/bane_ore.4bpp.lz");
+ const u32 gItemIconPalette_BaneOre[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/bane_ore.gbapal.lz");
+
+ const u32 gItemIcon_BarrowsItem[] = INCBIN_U32("graphics/items/pokescape_icons/barrows_item.4bpp.lz");
+ const u32 gItemIconPalette_BarrowsItem[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/barrows_item.gbapal.lz");
+
+ const u32 gItemIcon_BlackMushroom[] = INCBIN_U32("graphics/items/pokescape_icons/black_mushroom.4bpp.lz");
+ const u32 gItemIconPalette_BlackMushroom[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/black_mushroom.gbapal.lz");
+
+ const u32 gItemIcon_CrystalShard[] = INCBIN_U32("graphics/items/pokescape_icons/crystal_shard.4bpp.lz");
+ const u32 gItemIconPalette_CrystalShard[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/crystal_shard.gbapal.lz");
+
+ const u32 gItemIcon_ElementalOre[] = INCBIN_U32("graphics/items/pokescape_icons/elemental_ore.4bpp.lz");
+ const u32 gItemIconPalette_ElementalOre[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/elemental_ore.gbapal.lz");
+
+ const u32 gItemIcon_Granite[] = INCBIN_U32("graphics/items/pokescape_icons/granite.4bpp.lz");
+ const u32 gItemIconPalette_Granite[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/granite.gbapal.lz");
+
+ const u32 gItemIcon_HellfireMetal[] = INCBIN_U32("graphics/items/pokescape_icons/hellfire_metal.4bpp.lz");
+ const u32 gItemIconPalette_HellfireMetal[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/hellfire_metal.gbapal.lz");
+
+ const u32 gItemIcon_MysticCloth[] = INCBIN_U32("graphics/items/pokescape_icons/mystic_cloth.4bpp.lz");
+ const u32 gItemIconPalette_MysticCloth[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/mystic_cloth.gbapal.lz");
+
+ const u32 gItemIcon_Splitbark[] = INCBIN_U32("graphics/items/pokescape_icons/splitbark.4bpp.lz");
+ const u32 gItemIconPalette_Splitbark[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/splitbark.gbapal.lz");
+ 
+ //food items
+ 
+ const u32 gItemIcon_Egg[] = INCBIN_U32("graphics/items/pokescape_icons/egg.4bpp.lz");
+ const u32 gItemIconPalette_Egg[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/egg.gbapal.lz");
+ 
+ const u32 gItemIcon_EmptyBucket[] = INCBIN_U32("graphics/items/pokescape_icons/empty_bucket.4bpp.lz");
+ const u32 gItemIconPalette_EmptyBucket[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/empty_bucket.gbapal.lz");
+ 
+ const u32 gItemIcon_WaterBucket[] = INCBIN_U32("graphics/items/pokescape_icons/water_bucket.4bpp.lz");
+ const u32 gItemIconPalette_WaterBucket[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/water_bucket.gbapal.lz");
+ 
+ const u32 gItemIcon_MilkBucket[] = INCBIN_U32("graphics/items/pokescape_icons/milk_bucket.4bpp.lz");
+ const u32 gItemIconPalette_MilkBucket[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/milk_bucket.gbapal.lz");
+ 
+ const u32 gItemIcon_Wheat[] = INCBIN_U32("graphics/items/pokescape_icons/wheat.4bpp.lz");
+ const u32 gItemIconPalette_Wheat[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/wheat.gbapal.lz");
+ 
+ const u32 gItemIcon_EmptyPot[] = INCBIN_U32("graphics/items/pokescape_icons/empty_pot.4bpp.lz");
+ const u32 gItemIconPalette_EmptyPot[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/empty_pot.gbapal.lz");
+ 
+ const u32 gItemIcon_FlourPot[] = INCBIN_U32("graphics/items/pokescape_icons/flour_pot.4bpp.lz");
+ const u32 gItemIconPalette_FlourPot[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/flour_pot.gbapal.lz");
+ 
 
 
 

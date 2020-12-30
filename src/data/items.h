@@ -5613,12 +5613,12 @@ const struct Item gItems[] =
     {
         .name = _("Copper Ore"),
         .itemId = ITEM_COPPER_ORE,
-        .price = 0,
-        .description = sSuperRodDesc,
+        .price = 210,
+        .description = sElementalPouchDesc,
         .pocket = POCKET_ITEMS,
         .type = 2,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = 2,
+        .secondaryId = 0,
     },
 	
     [ITEM_TIN_ORE] =
@@ -5843,7 +5843,7 @@ const struct Item gItems[] =
     {
         .name = _("Empty Bucket"),
         .itemId = ITEM_EMPTY_BUCKET,
-        .price = 0,
+        .price = 300,
         .description = sSuperRodDesc,
         .pocket = POCKET_ITEMS,
         .type = 2,
@@ -5907,4 +5907,4 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 2,
     },
-}
+};

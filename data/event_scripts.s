@@ -1236,3 +1236,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Kaplhite_Caves_2/scripts.inc"
 
 	.include "data/maps/Kalphite_Caves_3/scripts.inc"
+
+	.include "data/maps/Giant_Mole_Cave/scripts.inc"

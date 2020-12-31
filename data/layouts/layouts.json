@@ -5330,6 +5330,16 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Kalphite_Caves_3/border.bin",
       "blockdata_filepath": "data/layouts/Kalphite_Caves_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_GIANT_MOLE_CAVE",
+      "name": "Giant_Mole_Cave_Layout",
+      "width": 35,
+      "height": 55,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Giant_Mole_Cave/border.bin",
+      "blockdata_filepath": "data/layouts/Giant_Mole_Cave/map.bin"
     }
   ]
 }

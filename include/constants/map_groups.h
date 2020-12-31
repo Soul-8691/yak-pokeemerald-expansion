@@ -658,6 +658,7 @@
 #define MAP_AL_KHARID_MINES_1    (10 | (36 << 8))
 #define MAP_AL_KHARID_MINES_2    (11 | (36 << 8))
 #define MAP_AL_KHARID_MINES_3    (12 | (36 << 8))
+#define MAP_TZHAAR_1F            (13 | (36 << 8))
 
 // Map Group 37
 #define MAP_LUMBRIDGE_HOUSE_BOBS_AXES1 (0 | (37 << 8))

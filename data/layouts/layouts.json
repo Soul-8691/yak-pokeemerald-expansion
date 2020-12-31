@@ -5107,7 +5107,7 @@
       "width": 46,
       "height": 50,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_AlKharid",
+      "secondary_tileset": "gTileset_Karamja",
       "border_filepath": "data/layouts/MusaPoint/border.bin",
       "blockdata_filepath": "data/layouts/MusaPoint/map.bin"
     },
@@ -5330,6 +5330,16 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Kalphite_Caves_3/border.bin",
       "blockdata_filepath": "data/layouts/Kalphite_Caves_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_TZHAAR_1F",
+      "name": "Tzhaar_1F_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Tzhaar_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Tzhaar_1F/map.bin"
     }
   ]
 }

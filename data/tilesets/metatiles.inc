@@ -659,3 +659,10 @@ gMetatiles_PokeScape_Caves::
 	.align 1
 gMetatileAttributes_PokeScape_Caves::
 	.incbin "data/tilesets/secondary/pokescape_caves/metatile_attributes.bin"
+	.align 1
+gMetatiles_Karamja::
+	.incbin "data/tilesets/secondary/karamja/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Karamja::
+	.incbin "data/tilesets/secondary/karamja/metatile_attributes.bin"

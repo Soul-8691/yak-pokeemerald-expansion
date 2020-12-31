@@ -687,9 +687,6 @@ const u16 gObjectEventPalette_terrorbird_2[] = INCBIN_U16("graphics/object_event
 const u32 gObjectEventPic_tzhaar_2[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/tzhaar_2.4bpp");
 const u16 gObjectEventPalette_tzhaar_2[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/tzhaar_2.gbapal");
 
-const u32 gObjectEventPic_KALPHITE_KING[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/kalphite_king.4bpp");
-const u16 gObjectEventPalette_KALPHITE_KING[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/kalphite_king.gbapal");
-
 //PROTAGANIST
 const u16 gObjectEventPalette_Protaganist[] = INCBIN_U16("graphics/object_events/palettes/protaganist.gbapal");
 //PROTAGANIST MALE
@@ -709,9 +706,13 @@ const u32 gObjectEventPic_MayUnderwater[] = INCBIN_U32("graphics/object_events/p
 
 const u32 gFieldEffectObjectPic_Wheat[] = INCBIN_U32("graphics/field_effects/pics/wheat.4bpp");
 const u16 gFieldEffectObjectPic_WheatPalette[] = INCBIN_U16("graphics/field_effects/pics/wheat.gbapal");
-
-
-
+//KALPHITES
+const u32 gObjectEventPic_KalphiteKing[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/kalphite_king.4bpp");
+const u16 gObjectEventPalette_KalphiteKing[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/kalphite_king.gbapal");
+const u32 gObjectEventPic_KalphiteQueen[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/kalphite_queen.4bpp");
+const u16 gObjectEventPalette_KalphiteQueen[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/kalphite_queen.gbapal");
+const u32 gObjectEventPic_KalphiteWorker[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/kalphite_worker.4bpp");
+const u16 gObjectEventPalette_KalphiteWorker[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/kalphite_worker.gbapal");
 
 
 

@@ -1047,8 +1047,11 @@ $(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_female/underwater.4bpp: %.4bp
 $(OBJEVENTGFXDIR)/pokescape_overworlds/kalphite_king.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4	
 	
+$(OBJEVENTGFXDIR)/pokescape_overworlds/kalphite_queen.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4		
 	
-	
+$(OBJEVENTGFXDIR)/pokescape_overworlds/kalphite_worker.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 	
 	
 	

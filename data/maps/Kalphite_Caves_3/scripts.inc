@@ -31,3 +31,15 @@ KalphiteQueen_Battle_Script::
 	
 	Text_KalphiteQueen:
 	.string "ROOAWWR!$"	
+	
+	
+	
+KalphiteWorker_Script::
+	lock
+	faceplayer
+	msgbox Text_KalphiteWorker, MSGBOX_DEFAULT	
+	release
+	end
+	
+	Text_KalphiteWorker:
+	.string "Screech!$"	

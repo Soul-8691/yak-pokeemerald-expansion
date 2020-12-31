@@ -794,6 +794,15 @@ const union AnimCmd gObjectEventImageAnim_HoOhStayStill[] =
     ANIMCMD_FRAME(3, 16),
     ANIMCMD_JUMP(0),
 };
+//POKESCAPE
+const union AnimCmd gObjectEventImageAnim_SouthIdle[] =
+{
+    ANIMCMD_FRAME(0, 16),
+	ANIMCMD_FRAME(1, 16),
+	ANIMCMD_JUMP(0),
+	ANIMCMD_END,
+};
+
 
 const union AnimCmd *const gObjectEventImageAnimTable_Inanimate[] = {
     gObjectEventImageAnim_StayStill,
@@ -1135,6 +1144,11 @@ const union AffineAnimCmd *const gObjectEventRotScalAnimTable_KyogreGroudon[] = 
     gObjectEventRotScalAnim_8509060,
 };
 
+//POKESCAPE
+const union AnimCmd *const gObjectEventImageAnimTable_Idle[] = {
+    gObjectEventImageAnim_SouthIdle,
+};
+
 const struct UnkStruct_085094AC gUnknown_085094AC[] = {
     {
         .anims = gObjectEventImageAnimTable_QuintyPlump,
@@ -1162,6 +1176,10 @@ const struct UnkStruct_085094AC gUnknown_085094AC[] = {
     },
     {
         .anims = gObjectEventImageAnimTable_Fishing,
+        .animPos = {1, 3, 0, 2},
+    },
+	{
+        .anims = gObjectEventImageAnimTable_Idle,
         .animPos = {1, 3, 0, 2},
     },
     {

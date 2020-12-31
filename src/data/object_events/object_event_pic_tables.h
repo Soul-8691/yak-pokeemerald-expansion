@@ -3410,10 +3410,25 @@ const struct SpriteFrameImage gObjectEventPicTable_basilisk[] = {
     overworld_frame(gObjectEventPic_basilisk, 4, 4, 8),
 };
 
-const struct SpriteFrameImage gObjectEventPicTable_KALPHITE_KING[] = {
-    overworld_frame(gObjectEventPic_KALPHITE_KING, 4, 4, 0),
+const struct SpriteFrameImage gObjectEventPicTable_KalphiteKing[] = {
+    overworld_frame(gObjectEventPic_KalphiteKing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_KalphiteKing, 4, 4, 1),
 };
 
+const struct SpriteFrameImage gObjectEventPicTable_KalphiteQueen[] = {
+    overworld_frame(gObjectEventPic_KalphiteQueen, 4, 4, 0),
+    overworld_frame(gObjectEventPic_KalphiteQueen, 4, 4, 1),
+};
 
-
+const struct SpriteFrameImage gObjectEventPicTable_KalphiteWorker[] = {
+    overworld_frame(gObjectEventPic_KalphiteWorker, 2, 2, 0),
+    overworld_frame(gObjectEventPic_KalphiteWorker, 2, 2, 1),
+    overworld_frame(gObjectEventPic_KalphiteWorker, 2, 2, 2),
+    overworld_frame(gObjectEventPic_KalphiteWorker, 2, 2, 3),
+    overworld_frame(gObjectEventPic_KalphiteWorker, 2, 2, 4),
+    overworld_frame(gObjectEventPic_KalphiteWorker, 2, 2, 5),
+    overworld_frame(gObjectEventPic_KalphiteWorker, 2, 2, 6),
+    overworld_frame(gObjectEventPic_KalphiteWorker, 2, 2, 7),
+    overworld_frame(gObjectEventPic_KalphiteWorker, 2, 2, 8),
+};
 

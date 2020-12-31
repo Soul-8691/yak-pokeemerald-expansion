@@ -9,9 +9,7 @@ ratbattle::
 	msgbox ratbattle_Text_0
 	setwildbattle SPECIES_RAT_NORMAL_FORM, 3, ITEM_NONE
 	hidemonpic
-	setflag FLAG_DISABLE_RUN
 	dowildbattle
-	clearflag FLAG_DISABLE_RUN
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq ratbattle_1
 	lock

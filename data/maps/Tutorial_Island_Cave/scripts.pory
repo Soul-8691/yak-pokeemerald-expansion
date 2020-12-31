@@ -406,6 +406,8 @@ script PouchCraftMenu {
 
 
 
+
+
 movement Rat1Run{
 	jump_in_place_up
 	walk_fast_up *3

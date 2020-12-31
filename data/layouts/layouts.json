@@ -5244,7 +5244,7 @@
     {
       "id": "LAYOUT_TUTORIAL_ISLAND_SHOP",
       "name": "Tutorial_Island_Shop_Layout",
-      "width": 32,
+      "width": 45,
       "height": 12,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Bank",

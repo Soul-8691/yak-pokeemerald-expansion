@@ -5,72 +5,45 @@ Tutorial_Island_Shop_MapScripts::
 Tutorial_Island_Shop_EventScript_Clerk::
 	lock
 	faceplayer
-	msgbox Tutorial_Island_Shop_EventScript_Clerk_Text_0
+	checkitem ITEM_BRONZE_POUCH, 1
+	compare VAR_RESULT, 0
+	goto_if_eq Tutorial_Island_Shop_EventScript_Clerk_1
+	msgbox Tutorial_Island_Shop_EventScript_Clerk_Text_3
 	waitmessage
 	pokemart Tutorial_Island_Shop_Pokemart
+	msgbox Tutorial_Island_Shop_EventScript_Clerk_Text_4
+	release
+	return
+
+Tutorial_Island_Shop_EventScript_Clerk_1:
+	msgbox Tutorial_Island_Shop_EventScript_Clerk_Text_0
 	msgbox Tutorial_Island_Shop_EventScript_Clerk_Text_1
+	giveitem ITEM_BRONZE_POUCH, 1
+	msgbox Tutorial_Island_Shop_EventScript_Clerk_Text_2
 	release
 	return
 
 
+	.align 2
 	Tutorial_Island_Shop_Pokemart:
-	.2byte ITEM_MYSTIC_CLOTH
-	.2byte ITEM_EGG
-	.2byte ITEM_SPLITBARK
-	.2byte ITEM_WATER_BUCKET
+	.2byte ITEM_BRONZE_POUCH
 	.2byte ITEM_EMPTY_BUCKET
-	.2byte ITEM_FLOUR_POT
-	.2byte ITEM_BARROWS_ITEM
 	.2byte ITEM_EMPTY_POT
-	.2byte ITEM_AUGMENTOR
-	.2byte ITEM_WHEAT
-	.2byte ITEM_MILK_BUCKET
-	.2byte ITEM_BANE_ORE
-	.2byte ITEM_SOUL_RUNE
-	.2byte ITEM_ASTRAL_RUNE
-	.2byte ITEM_DUST_RUNE
-	.2byte ITEM_MUD_RUNE
-	.2byte ITEM_MIST_RUNE
-	.2byte ITEM_LAVA_RUNE
-	.2byte ITEM_LIFE_RUNE
-	.2byte ITEM_SPIRIT_CHARM
-	.2byte ITEM_LEGENDARY_ITEM
-	.2byte ITEM_RED_SCALE
-	.2byte ITEM_BLUE_SCALE
-	.2byte ITEM_GREEN_SCALE
-	.2byte ITEM_BLACK_SCALE
-	.2byte ITEM_FRAGMENT_OF_JAS
-	.2byte ITEM_TIN_ORE
-	.2byte ITEM_BLACK_MUSHROOM
-	.2byte ITEM_HELLFIRE_METAL
-	.2byte ITEM_IRON_POUCH
-	.2byte ITEM_STEEL_POUCH
-	.2byte ITEM_BLACK_POUCH
-	.2byte ITEM_MITHRIL_POUCH
-	.2byte ITEM_ADAMANT_POUCH
-	.2byte ITEM_RUNE_POUCH
-	.2byte ITEM_DRAGON_POUCH
-	.2byte ITEM_CRYSTAL_POUCH
-	.2byte ITEM_SPLITBARK_POUCH
-	.2byte ITEM_DRAGONBANE_POUCH
-	.2byte ITEM_AUGMENTED_POUCH
-	.2byte ITEM_MYSTIC_POUCH
-	.2byte ITEM_BARROWS_POUCH
-	.2byte ITEM_GRANITE_POUCH
-	.2byte ITEM_ANCIENT_POUCH
-	.2byte ITEM_ELEMENTAL_POUCH
 	.2byte ITEM_NONE
 	release
 	end
 
 Tutorial_Island_Shop_EventScript_Clerk_Text_0:
-	.string "Can I help you at all?$"
+	.string "Welcome!\n This is a general store!\p Here you can buy general use items!$"
 
 Tutorial_Island_Shop_EventScript_Clerk_Text_1:
-	.string "Smell you later!$"
+	.string "Since this is your first time take this!$"
 
+Tutorial_Island_Shop_EventScript_Clerk_Text_2:
+	.string "Next time it will cost you!\n Good luck on your journey!$"
 
+Tutorial_Island_Shop_EventScript_Clerk_Text_3:
+	.string "Can I help you at all?$"
 
-
-
-
+Tutorial_Island_Shop_EventScript_Clerk_Text_4:
+	.string "Thanks for shopping!$"

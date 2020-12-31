@@ -135,7 +135,7 @@ static void WarpToTruck(void)
 
 static void WarpToTutorialIsland(void)
 {
-    SetWarpDestination(MAP_GROUP(TUTORIAL_ISLAND_LAB_UP), MAP_NUM(TUTORIAL_ISLAND_LAB_UP), -1, -1, -1);
+    SetWarpDestination(MAP_GROUP(TUTORIAL_ISLAND_LAB_UP), MAP_NUM(TUTORIAL_ISLAND_LAB_UP), -1, 5, 5);
     WarpIntoMap();
 }
 

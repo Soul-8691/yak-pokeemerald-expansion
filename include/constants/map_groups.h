@@ -672,7 +672,7 @@
 #define MAP_LUMBRIDGE_HOUSE_RODDECK2   (5 | (37 << 8))
 #define MAP_LUMBRIDGE_HOUSE_STARTER1   (6 | (37 << 8))
 #define MAP_LUMBRIDGE_HOUSE_STARTER2   (7 | (37 << 8))
-#define MAP_LUMBRIDGE_GENERAL_STORE1   (8 | (37 << 8))
+#define MAP_LUMBRIDGE_GENERAL_STORE    (8 | (37 << 8))
 #define MAP_LUMBRIDGE_GENERAL_STORE2   (9 | (37 << 8))
 #define MAP_LUMBRIDGE_HOUSE_3          (10 | (37 << 8))
 #define MAP_LUMBRIDGE_BANK             (11 | (37 << 8))

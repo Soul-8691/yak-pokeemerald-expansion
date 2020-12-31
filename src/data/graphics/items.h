@@ -873,8 +873,8 @@ const u32 gItemIconPalette_AncientPouch[] = INCBIN_U32("graphics/items/pokescape
 const u32 gItemIcon_ElementalPouch[] = INCBIN_U32("graphics/items/pokescape_icons/elemental_pouch.4bpp.lz");
 const u32 gItemIconPalette_ElementalPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/elemental_pouch.gbapal.lz");
 
-//pokescape key items
 
+//pokescape key items
 const u32 gItemIcon_Pickaxe[] = INCBIN_U32("graphics/items/pokescape_icons/pickaxe.4bpp.lz");
 const u32 gItemIconPalette_Pickaxe[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/pickaxe.gbapal.lz");
 
@@ -967,8 +967,8 @@ const u32 gItemIconPalette_DragonNet[] = INCBIN_U32("graphics/items/pokescape_ic
  const u32 gItemIcon_Splitbark[] = INCBIN_U32("graphics/items/pokescape_icons/splitbark.4bpp.lz");
  const u32 gItemIconPalette_Splitbark[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/splitbark.gbapal.lz");
  
- //food items
  
+ //food items
  const u32 gItemIcon_Egg[] = INCBIN_U32("graphics/items/pokescape_icons/egg.4bpp.lz");
  const u32 gItemIconPalette_Egg[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/egg.gbapal.lz");
  

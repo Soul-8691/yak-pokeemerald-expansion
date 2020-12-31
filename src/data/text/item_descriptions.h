@@ -1680,6 +1680,6 @@ static const u8 sElementalPouchDesc[] = _(
     "catching wild\n"
     "POKéMON.");
 	
-
-
+static const u8 sCupholderDesc[] = _(
+    "This is a Cupholder.");
 

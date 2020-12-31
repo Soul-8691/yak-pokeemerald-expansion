@@ -61,7 +61,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_general_store_clerk",
       "x": 23,
       "y": 11,
       "elevation": 3,
@@ -70,7 +70,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "GENERALSTORE_LUMBRIDGE_CLERK",
       "flag": "0"
     }
   ],

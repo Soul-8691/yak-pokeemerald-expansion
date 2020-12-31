@@ -8518,7 +8518,6 @@ extern const u32 gItemIcon_MagmaEmblem[];
 extern const u32 gItemIconPalette_MagmaEmblem[];
 extern const u32 gItemIcon_OldSeaMap[];
 extern const u32 gItemIconPalette_OldSeaMap[];
-
 //Pokescape Items
 extern const u32 gItemIcon_AirRune[];
 extern const u32 gItemIconPalette_AirRune[];
@@ -8572,127 +8571,91 @@ extern const u32 gItemIcon_GreenScale[];
 extern const u32 gItemIconPalette_GreenScale[];
 extern const u32 gItemIcon_FragmentOfJas[];
 extern const u32 gItemIconPalette_FragmentOfJas[];
-extern const u32 gItemIcon_PouchNormal[];
-extern const u32 gItemIconPalette_PouchNormal[];
-
 //pokescape key items
 extern const u32 gItemIcon_Pickaxe[];
 extern const u32 gItemIconPalette_Pickaxe[];
-
 extern const u32 gItemIcon_Boat[];
 extern const u32 gItemIconPalette_Boat[];
-
 extern const u32 gItemIcon_Axe[];
 extern const u32 gItemIconPalette_Axe[];
-
 extern const u32 gItemIcon_StrengthItem[];
 extern const u32 gItemIconPalette_StrengthItem[];
-
 extern const u32 gItemIcon_DiveItem[];
 extern const u32 gItemIconPalette_DiveItem[];
-
 extern const u32 gItemIcon_Spade[];
 extern const u32 gItemIconPalette_Spade[];
-
 extern const u32 gItemIcon_FlyItem[];
 extern const u32 gItemIconPalette_FlyItem[];
-
 extern const u32 gItemIcon_Lantern[];
 extern const u32 gItemIconPalette_Lantern[];
-
 extern const u32 gItemIcon_WaterfallItem[];
 extern const u32 gItemIconPalette_WaterfallItem[];
-
 extern const u32 gItemIcon_SmallNet[];
 extern const u32 gItemIconPalette_SmallNet[];
-
 extern const u32 gItemIcon_LargeNet[];
 extern const u32 gItemIconPalette_LargeNet[];
-
 extern const u32 gItemIcon_DragonNet[];
 extern const u32 gItemIconPalette_DragonNet[];
-
-extern const u32 gItemIcon_ReturnToFieldArrow[];
-extern const u32 gItemIconPalette_ReturnToFieldArrow[];
-
 //pokescape crafting items
-
 //pouch crafting items
 extern const u32 gItemIcon_CopperOre[];
 extern const u32 gItemIconPalette_CopperOre[];
-
 extern const u32 gItemIcon_TinOre[];
 extern const u32 gItemIconPalette_TinOre[];
-
 extern const u32 gItemIcon_IronOre[];
 extern const u32 gItemIconPalette_IronOre[];
-
 extern const u32 gItemIcon_CoalOre[];
 extern const u32 gItemIconPalette_CoalOre[];
-
 extern const u32 gItemIcon_MithrilOre[];
 extern const u32 gItemIconPalette_MithrilOre[];
-
 extern const u32 gItemIcon_AdamantOre[];
 extern const u32 gItemIconPalette_AdamantOre[];
-
 extern const u32 gItemIcon_RuneOre[];
 extern const u32 gItemIconPalette_RuneOre[];
-
 extern const u32 gItemIcon_OrikalkumOre[];
 extern const u32 gItemIconPalette_OrikalkumOre[];
-
 extern const u32 gItemIcon_Augmentor[];
 extern const u32 gItemIconPalette_Augmentor[];
-
 extern const u32 gItemIcon_BaneOre[];
 extern const u32 gItemIconPalette_BaneOre[];
-
 extern const u32 gItemIcon_BarrowsItem[];
 extern const u32 gItemIconPalette_BarrowsItem[];
-
 extern const u32 gItemIcon_BlackMushroom[];
 extern const u32 gItemIconPalette_BlackMushroom[];
-
 extern const u32 gItemIcon_CrystalShard[];
 extern const u32 gItemIconPalette_CrystalShard[];
-
 extern const u32 gItemIcon_ElementalOre[];
 extern const u32 gItemIconPalette_ElementalOre[];
-
 extern const u32 gItemIcon_Granite[];
 extern const u32 gItemIconPalette_Granite[];
-
 extern const u32 gItemIcon_HellfireMetal[];
 extern const u32 gItemIconPalette_HellfireMetal[];
-
 extern const u32 gItemIcon_MysticCloth[];
 extern const u32 gItemIconPalette_MysticCloth[];
-
 extern const u32 gItemIcon_Splitbark[];
 extern const u32 gItemIconPalette_Splitbark[];
-
 //food crafting items
 extern const u32 gItemIcon_Egg[];
 extern const u32 gItemIconPalette_Egg[];
-
 extern const u32 gItemIcon_EmptyBucket[];
 extern const u32 gItemIconPalette_EmptyBucket[];
-
 extern const u32 gItemIcon_WaterBucket[];
 extern const u32 gItemIconPalette_WaterBucket[];
-
 extern const u32 gItemIcon_MilkBucket[];
 extern const u32 gItemIconPalette_MilkBucket[];
-
 extern const u32 gItemIcon_Wheat[];
 extern const u32 gItemIconPalette_Wheat[];
-
 extern const u32 gItemIcon_EmptyPot[];
 extern const u32 gItemIconPalette_EmptyPot[];
-
 extern const u32 gItemIcon_FlourPot[];
 extern const u32 gItemIconPalette_FlourPot[];
+
+
+
+
+
+extern const u32 gItemIcon_ReturnToFieldArrow[];
+extern const u32 gItemIconPalette_ReturnToFieldArrow[];
 
 
 //menu graphics

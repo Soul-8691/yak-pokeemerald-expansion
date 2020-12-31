@@ -429,7 +429,6 @@ const u32 *const gItemIconTable[][2] =
 	[ITEM_GREEN_SCALE] = {gItemIcon_GreenScale, gItemIconPalette_GreenScale},	
 	[ITEM_BLACK_SCALE] = {gItemIcon_BlackScale, gItemIconPalette_BlackScale},	
 	[ITEM_FRAGMENT_OF_JAS] = {gItemIcon_FragmentOfJas, gItemIconPalette_FragmentOfJas},	
-	
 	//pokescape pokeballs
 	[ITEM_NORMAL_POUCH] = {gItemIcon_NormalPouch, gItemIconPalette_NormalPouch},	
 	[ITEM_BRONZE_POUCH] = {gItemIcon_BronzePouch, gItemIconPalette_BronzePouch},

@@ -1,19 +1,19 @@
-Tutorial_Island_Shop_MapScripts::
+Lumbridge_General_Store_MapScripts::
 	.byte 0
 
 
-Tutorial_Island_Shop_EventScript_Clerk::
+GENERALSTORE_LUMBRIDGE_CLERK::
 	lock
 	faceplayer
-	msgbox Tutorial_Island_Shop_EventScript_Clerk_Text_0
+	msgbox GENERALSTORE_CLERK_HELLO_Text
 	waitmessage
-	pokemart Tutorial_Island_Shop_Pokemart
-	msgbox Tutorial_Island_Shop_EventScript_Clerk_Text_1
+	pokemart GENERALSTORE_LUMBRIDGE
+	msgbox GENERALSTORE_CLERK_GOODBYE_Text
 	release
 	return
 
 
-	Tutorial_Island_Shop_Pokemart:
+GENERALSTORE_LUMBRIDGE:
 	.2byte ITEM_MYSTIC_CLOTH
 	.2byte ITEM_EGG
 	.2byte ITEM_SPLITBARK
@@ -63,14 +63,8 @@ Tutorial_Island_Shop_EventScript_Clerk::
 	release
 	end
 
-Tutorial_Island_Shop_EventScript_Clerk_Text_0:
-	.string "Can I help you at all?$"
+GENERALSTORE_CLERK_HELLO_Text:
+	.string "Buy something or get out.$"
 
-Tutorial_Island_Shop_EventScript_Clerk_Text_1:
-	.string "Smell you later!$"
-
-
-
-
-
-
+GENERALSTORE_CLERK_GOODBYE_Text:
+	.string "Smell ya later!$"

@@ -1057,6 +1057,7 @@ $(OBJEVENTGFXDIR)/pokescape_overworlds/kalphite_worker.4bpp: %.4bpp: %.png
 $(TITLEGFXDIR)/title_fire.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4	
 	
-	
+$(OBJEVENTGFXDIR)/pokescape_mining/copper_ore.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 	
 	

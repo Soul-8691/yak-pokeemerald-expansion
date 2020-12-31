@@ -377,3 +377,8 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KalphiteQueen = {0
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KalphiteWorker = {0xFFFF, OBJ_EVENT_PAL_KALPHITE_WORKER, OBJ_EVENT_PAL_TAG_NONE, 128, 16, 16, 2, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x16, gObjectEventSpriteOamTables_16x16, gObjectEventImageAnimTable_Standard, gObjectEventPicTable_KalphiteWorker, gDummySpriteAffineAnimTable};
 
+
+//mineable rocks
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CopperOre = {0xFFFF, OBJ_EVENT_PAL_ORE_PAL, OBJ_EVENT_PAL_TAG_NONE, 128, 16, 16, 2, SHADOW_SIZE_S, TRUE, FALSE, TRACKS_NONE, &gObjectEventBaseOam_16x16, gObjectEventSpriteOamTables_16x16, gObjectEventImageAnimTable_BreakableRock, gObjectEventPicTable_CopperOre, gDummySpriteAffineAnimTable};
+

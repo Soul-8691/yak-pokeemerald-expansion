@@ -352,8 +352,9 @@
 #define OBJ_EVENT_GFX_KALPHITE_KING              347
 #define OBJ_EVENT_GFX_KALPHITE_QUEEN             348
 #define OBJ_EVENT_GFX_KALPHITE_WORKER            349
+#define OBJ_EVENT_GFX_COPPER_ORE				 350
 
-#define NUM_OBJ_EVENT_GFX                        350
+#define NUM_OBJ_EVENT_GFX                        351
 
 
 // These are dynamic object gfx ids.

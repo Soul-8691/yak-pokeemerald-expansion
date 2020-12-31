@@ -357,6 +357,9 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KalphiteKing;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KalphiteQueen;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KalphiteWorker;
 
+//mining
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CopperOre;
+
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -709,6 +712,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 	[OBJ_EVENT_GFX_KALPHITE_KING] =               	&gObjectEventGraphicsInfo_KalphiteKing,
 	[OBJ_EVENT_GFX_KALPHITE_QUEEN] =              	&gObjectEventGraphicsInfo_KalphiteQueen,
 	[OBJ_EVENT_GFX_KALPHITE_WORKER] =             	&gObjectEventGraphicsInfo_KalphiteWorker,
+	[OBJ_EVENT_GFX_COPPER_ORE] =          		    &gObjectEventGraphicsInfo_CopperOre,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

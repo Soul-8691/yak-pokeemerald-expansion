@@ -83,6 +83,31 @@ EventScript_RockSmash:: @ 82907A6
 	waitstate
 	goto EventScript_SmashRock
 	end
+	
+	
+	
+EventScript_CopperSmash::
+	lockall
+	//goto_if_unset FLAG_BADGE03_GET, EventScript_CantSmashRock
+	//checkpartymove MOVE_ROCK_SMASH
+	//compare VAR_RESULT, PARTY_SIZE
+	checkitem ITEM_PICKAXE, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_CantSmashRock
+	setitemarg ITEM_PICKAXE
+	setfieldeffectargument 0, VAR_RESULT
+	//bufferpartymonnick 0, VAR_RESULT
+	//buffermovename 1, MOVE_ROCK_SMASH
+	msgbox Text_WantToSmash, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq EventScript_CancelSmash
+	//msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
+	closemessage
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashCopper
+	end
+	
 
 @ Use rock smash from party menu
 EventScript_UseRockSmash:: @ 82907F0
@@ -91,7 +116,30 @@ EventScript_UseRockSmash:: @ 82907F0
 	waitstate
 	goto EventScript_SmashRock
 	end
+	
+@ Use rock smash from party menu
+EventScript_UseCopperSmash:: @ 82907F0
+	lockall
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashCopper
+	end
 
+EventScript_SmashCopper:: @ 82907FB
+	applymovement VAR_LAST_TALKED, Movement_SmashRock
+	waitmovement 0
+	removeobject VAR_LAST_TALKED
+	giveitem ITEM_COPPER_ORE, 1
+	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
+	compare VAR_RESULT, TRUE
+	goto_if_eq EventScript_EndSmash
+	special RockSmashWildEncounter
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_EndSmash
+	waitstate
+	releaseall
+	end
+	
 EventScript_SmashRock:: @ 82907FB
 	applymovement VAR_LAST_TALKED, Movement_SmashRock
 	waitmovement 0

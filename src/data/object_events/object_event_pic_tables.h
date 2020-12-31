@@ -3432,3 +3432,12 @@ const struct SpriteFrameImage gObjectEventPicTable_KalphiteWorker[] = {
     overworld_frame(gObjectEventPic_KalphiteWorker, 2, 2, 8),
 };
 
+
+//mining
+
+const struct SpriteFrameImage gObjectEventPicTable_CopperOre[] = {
+    overworld_frame(gObjectEventPic_CopperOre, 2, 2, 0),
+    overworld_frame(gObjectEventPic_CopperOre, 2, 2, 1),
+    overworld_frame(gObjectEventPic_CopperOre, 2, 2, 2),
+    overworld_frame(gObjectEventPic_CopperOre, 2, 2, 3),
+};

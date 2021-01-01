@@ -52,5 +52,19 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_Frogface),
         .party = {.ItemDefaultMoves = sParty_Frogface},
     },
+	
+	[TRAINER_RSN_ROUTE1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_NOOB,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = TRAINER_PIC_noob_default,
+        .trainerName = _("BOB"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_Rsn_Route1),
+        .party = {.ItemDefaultMoves = sParty_Rsn_Route1},
+    },
 
 };

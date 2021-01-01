@@ -78,6 +78,12 @@ Route_1_Frogface_Battle::
 	release
 	end
 	
+Route_1_Rsn_Battle::
+	trainerbattle_single TRAINER_RSN_ROUTE1, Text_RsnRoute1, Text_RsnRoute1Defeated
+	msgbox Text_RsnRoute1Defeated, MSGBOX_DEFAULT
+	release
+	end
+	
 	
 	Text_Wartfoot:
 	.string "Brown armour best!$"
@@ -98,3 +104,8 @@ Route_1_Frogface_Battle::
 	Text_SimpleMsgScript:
 	.string "BWAAK!$"
 	
+	Text_RsnRoute1:
+	.string "You look like a noob!$"
+	
+	Text_RsnRoute1Defeated:
+	.string "You're still a noob!$"

@@ -32,5 +32,20 @@ static const struct TrainerMonItemDefaultMoves sParty_Frogface[] = {
     }
 };
 
+static const struct TrainerMonItemDefaultMoves sParty_Rsn_Route1[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_RAT_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+	{
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_CHICK,
+    .heldItem = ITEM_NONE
+    }
+};
+
 
 

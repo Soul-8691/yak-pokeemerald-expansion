@@ -1,6 +1,10 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
+//
+// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
+//
+
 // Map Group 0
 #define MAP_PETALBURG_CITY      (0 | (0 << 8))
 #define MAP_SLATEPORT_CITY      (1 | (0 << 8))
@@ -659,6 +663,7 @@
 #define MAP_AL_KHARID_MINES_2    (11 | (36 << 8))
 #define MAP_AL_KHARID_MINES_3    (12 | (36 << 8))
 #define MAP_TZHAAR_1F            (13 | (36 << 8))
+#define MAP_GIANT_MOLE_CAVE      (14 | (36 << 8))
 
 // Map Group 37
 #define MAP_LUMBRIDGE_HOUSE_BOBS_AXES1 (0 | (37 << 8))
@@ -669,7 +674,7 @@
 #define MAP_LUMBRIDGE_HOUSE_RODDECK2   (5 | (37 << 8))
 #define MAP_LUMBRIDGE_HOUSE_STARTER1   (6 | (37 << 8))
 #define MAP_LUMBRIDGE_HOUSE_STARTER2   (7 | (37 << 8))
-#define MAP_LUMBRIDGE_GENERAL_STORE1   (8 | (37 << 8))
+#define MAP_LUMBRIDGE_GENERAL_STORE    (8 | (37 << 8))
 #define MAP_LUMBRIDGE_GENERAL_STORE2   (9 | (37 << 8))
 #define MAP_LUMBRIDGE_HOUSE_3          (10 | (37 << 8))
 #define MAP_LUMBRIDGE_BANK             (11 | (37 << 8))

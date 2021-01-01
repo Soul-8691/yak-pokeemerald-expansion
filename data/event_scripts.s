@@ -1075,7 +1075,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 
 	.include "data/maps/Lumbridge_House_Starter2/scripts.inc"
 
-	.include "data/maps/Lumbridge_GeneralStore1/scripts.inc"
+	.include "data/maps/Lumbridge_General_Store/scripts.inc"
 
 	.include "data/maps/Lumbridge_GeneralStore2/scripts.inc"
 
@@ -1238,3 +1238,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Kalphite_Caves_3/scripts.inc"
 
 	.include "data/maps/Tzhaar_1F/scripts.inc"
+
+	.include "data/maps/Giant_Mole_Cave/scripts.inc"

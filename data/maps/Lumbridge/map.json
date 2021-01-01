@@ -128,7 +128,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "GENERALSTORE_LUMBRIDGE_CLERK",
       "flag": "0"
     },
     {
@@ -373,7 +373,7 @@
       "x": 19,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_LUMBRIDGE_GENERAL_STORE1",
+      "dest_map": "MAP_LUMBRIDGE_GENERAL_STORE",
       "dest_warp_id": 0
     },
     {

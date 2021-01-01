@@ -48,6 +48,7 @@
 #include "constants/songs.h"
 
 extern const u8 EventScript_SmashRock[];
+extern const u8 EventScript_SmashCopper[];
 static void SetUpItemUseCallback(u8 taskId);
 static void FieldCB_UseItemOnField(void);
 static void Task_CallItemUseOnFieldCallback(u8 taskId);
@@ -1162,6 +1163,12 @@ static void FieldCallback_RockSmash(void)
     ScriptContext1_SetupScript(EventScript_UseRockSmash);
 }
 
+static void FieldCallback_CopperSmash(void)
+{
+    FadeInFromBlack();
+    ScriptContext1_SetupScript(EventScript_UseCopperSmash);
+}
+
 void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 {
 	if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_BREAKABLE_ROCK) == TRUE)
@@ -1177,6 +1184,22 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 		{
 			//PlaySE(SE_W088);
 			ScriptContext1_SetupScript(EventScript_UseRockSmash);
+			DestroyTask(taskId);
+		}
+    }
+	else if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_COPPER_ORE) == TRUE)
+    {
+		if(!gTasks[taskId].tUsingRegisteredKeyItem)
+		{
+			gSaveBlock2Ptr->ItemArg = 421;
+			gFieldCallback = FieldCallback_CopperSmash;
+			gBagMenu->exitCallback = CB2_ReturnToField;
+			Task_FadeAndCloseBagMenu(taskId);
+		}
+		else
+		{
+			//PlaySE(SE_W088);
+			ScriptContext1_SetupScript(EventScript_UseCopperSmash);
 			DestroyTask(taskId);
 		}
     }

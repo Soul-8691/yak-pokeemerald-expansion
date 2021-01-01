@@ -119,8 +119,6 @@ Cheat_Menu_Shop_Evolution:
 	.2byte ITEM_GREEN_SCALE
 	.2byte ITEM_BLACK_SCALE
 	.2byte ITEM_FRAGMENT_OF_JAS
-	
-
 	.2byte ITEM_NONE
 	release
 	end
@@ -145,3 +143,9 @@ Kevin_Text_5:
 
 Kevin_Text_6:
 	.string "Smell ya later!$"
+
+
+
+
+
+

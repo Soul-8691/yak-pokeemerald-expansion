@@ -26,6 +26,7 @@ static void Task_DoFieldMove_WaitForMon(u8 taskId);
 static void Task_DoFieldMove_RunFunc(u8 taskId);
 
 static void FieldCallback_RockSmash(void);
+static void FieldCallback_CopperSmash(void);
 static void FieldMove_RockSmash(void);
 
 // text
@@ -137,6 +138,12 @@ bool8 SetUpFieldMove_RockSmash(void)
         gPostMenuFieldCallback = FieldCallback_RockSmash;
         return TRUE;
     }
+	else if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_COPPER_ORE) == TRUE)
+    {
+        gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
+        gPostMenuFieldCallback = FieldCallback_CopperSmash;
+        return TRUE;
+    }
     else
     {
         return FALSE;
@@ -147,6 +154,12 @@ static void FieldCallback_RockSmash(void)
 {
     gFieldEffectArguments[0] = GetCursorSelectionMonId();
     ScriptContext1_SetupScript(EventScript_UseRockSmash);
+}
+
+static void FieldCallback_CopperSmash(void)
+{
+    gFieldEffectArguments[0] = GetCursorSelectionMonId();
+    ScriptContext1_SetupScript(EventScript_UseCopperSmash);
 }
 
 bool8 FldEff_UseRockSmash(void)

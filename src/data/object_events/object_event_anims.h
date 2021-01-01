@@ -1149,6 +1149,7 @@ const union AnimCmd *const gObjectEventImageAnimTable_Idle[] = {
     gObjectEventImageAnim_SouthIdle,
 };
 
+
 const struct UnkStruct_085094AC gUnknown_085094AC[] = {
     {
         .anims = gObjectEventImageAnimTable_QuintyPlump,

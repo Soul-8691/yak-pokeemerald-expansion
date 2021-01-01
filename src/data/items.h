@@ -5448,7 +5448,7 @@ const struct Item gItems[] =
         .battleUseFunc = ItemUseInBattle_PokeBall,
         .secondaryId = 3,
     },
-	//pokescape key items
+//pokescape key items
     [ITEM_PICKAXE] =
     {
         .name = _("Pickaxe"),
@@ -5608,24 +5608,303 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_Rod,
         .secondaryId = SUPER_ROD,
     },
+//CRAFTING ITEMS	
+    [ITEM_COPPER_ORE] =
+    {
+        .name = _("Copper Ore"),
+        .itemId = ITEM_COPPER_ORE,
+        .price = 210,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
 	
+    [ITEM_TIN_ORE] =
+    {
+        .name = _("Tin Ore"),
+        .itemId = ITEM_TIN_ORE,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_IRON_ORE] =
+    {
+        .name = _("Iron Ore"),
+        .itemId = ITEM_IRON_ORE,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_COAL_ORE] =
+    {
+        .name = _("Coal"),
+        .itemId = ITEM_COAL_ORE,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_MITHRIL_ORE] =
+    {
+        .name = _("Mithril Ore"),
+        .itemId = ITEM_MITHRIL_ORE,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_ADAMANT_ORE] =
+    {
+        .name = _("Adamant Ore"),
+        .itemId = ITEM_ADAMANT_ORE,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_RUNE_ORE] =
+    {
+        .name = _("Rune Ore"),
+        .itemId = ITEM_RUNE_ORE,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_ORIKALKUM_ORE] =
+    {
+        .name = _("Orikalkum Ore"),
+        .itemId = ITEM_ORIKALKUM_ORE,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+	[ITEM_AUGMENTOR] =
+    {
+        .name = _("Augmentor"),
+        .itemId = ITEM_AUGMENTOR,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_BANE_ORE] =
+    {
+        .name = _("Bane Ore"),
+        .itemId = ITEM_BANE_ORE,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+	[ITEM_BARROWS_ITEM] =
+    {
+        .name = _("Barrows Item"),
+        .itemId = ITEM_BARROWS_ITEM,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_BLACK_MUSHROOM] =
+    {
+        .name = _("Dark Mushroom"),
+        .itemId = ITEM_BLACK_MUSHROOM,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_CRYSTAL_SHARD] =
+    {
+        .name = _("Crystal Shard"),
+        .itemId = ITEM_CRYSTAL_SHARD,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_ELEMENTAL_ORE] =
+    {
+        .name = _("Elemental Ore"),
+        .itemId = ITEM_ELEMENTAL_ORE,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_GRANITE] =
+    {
+        .name = _("Granite"),
+        .itemId = ITEM_GRANITE,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_HELLFIRE_METAL] =
+    {
+        .name = _("Ancient Metal"),
+        .itemId = ITEM_HELLFIRE_METAL,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_MYSTIC_CLOTH] =
+    {
+        .name = _("Mystic Cloth"),
+        .itemId = ITEM_MYSTIC_CLOTH,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_SPLITBARK] =
+    {
+        .name = _("Splitbark"),
+        .itemId = ITEM_SPLITBARK,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+//food items
+
+    [ITEM_EGG] =
+    {
+        .name = _("Egg"),
+        .itemId = ITEM_EGG,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_EMPTY_BUCKET] =
+    {
+        .name = _("Empty Bucket"),
+        .itemId = ITEM_EMPTY_BUCKET,
+        .price = 300,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 	
+    [ITEM_WATER_BUCKET] =
+    {
+        .name = _("Water Bucket"),
+        .itemId = ITEM_WATER_BUCKET,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
+	
+    [ITEM_MILK_BUCKET] =
+    {
+        .name = _("Milk Bucket"),
+        .itemId = ITEM_MILK_BUCKET,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
+    [ITEM_WHEAT] =
+    {
+        .name = _("Wheat Grain"),
+        .itemId = ITEM_WHEAT,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
+    [ITEM_EMPTY_POT] =
+    {
+        .name = _("Empty Pot"),
+        .itemId = ITEM_EMPTY_POT,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
+    [ITEM_FLOUR_POT] =
+    {
+        .name = _("Pot of Flour"),
+        .itemId = ITEM_FLOUR_POT,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
 };

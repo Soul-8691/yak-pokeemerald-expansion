@@ -986,3 +986,14 @@ gTileset_PokeScape_Caves::
 	.4byte gMetatiles_PokeScape_Caves
 	.4byte gMetatileAttributes_PokeScape_Caves
 	.4byte NULL
+
+	.align 2
+gTileset_Karamja::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Karamja
+	.4byte gTilesetPalettes_Karamja
+	.4byte gMetatiles_Karamja
+	.4byte gMetatileAttributes_Karamja
+	.4byte NULL

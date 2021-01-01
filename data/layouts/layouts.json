@@ -5107,7 +5107,7 @@
       "width": 46,
       "height": 50,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_AlKharid",
+      "secondary_tileset": "gTileset_Karamja",
       "border_filepath": "data/layouts/MusaPoint/border.bin",
       "blockdata_filepath": "data/layouts/MusaPoint/map.bin"
     },
@@ -5332,14 +5332,34 @@
       "blockdata_filepath": "data/layouts/Kalphite_Caves_3/map.bin"
     },
     {
+      "id": "LAYOUT_TZHAAR_1F",
+      "name": "Tzhaar_1F_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Tzhaar_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Tzhaar_1F/map.bin"
+    },
+    {
       "id": "LAYOUT_GIANT_MOLE_CAVE",
       "name": "Giant_Mole_Cave_Layout",
       "width": 35,
       "height": 55,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Giant_Mole_Cave/border.bin",
       "blockdata_filepath": "data/layouts/Giant_Mole_Cave/map.bin"
+    },
+    {
+      "id": "LAYOUT_TZHAAR_FIGHT_CAVES",
+      "name": "Tzhaar_FightCaves_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Tzhaar_FightCaves/border.bin",
+      "blockdata_filepath": "data/layouts/Tzhaar_FightCaves/map.bin"
     }
   ]
 }

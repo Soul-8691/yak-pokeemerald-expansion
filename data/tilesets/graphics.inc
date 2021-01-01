@@ -2010,3 +2010,23 @@ gTilesetPalettes_PokeScape_Caves::
 	.align 2
 gTilesetTiles_PokeScape_Caves::
 	.incbin "data/tilesets/secondary/pokescape_caves/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Karamja::
+	.incbin "data/tilesets/secondary/karamja/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/karamja/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/karamja/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/karamja/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/karamja/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/karamja/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/karamja/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/karamja/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/karamja/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/karamja/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/karamja/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/karamja/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/karamja/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Karamja::
+	.incbin "data/tilesets/secondary/karamja/tiles.4bpp.lz"

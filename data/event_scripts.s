@@ -1240,3 +1240,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Tzhaar_1F/scripts.inc"
 
 	.include "data/maps/Giant_Mole_Cave/scripts.inc"
+
+	.include "data/maps/Tzhaar_FightCaves/scripts.inc"

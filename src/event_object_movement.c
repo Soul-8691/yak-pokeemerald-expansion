@@ -554,6 +554,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_KALPHITE_QUEEN 0x1192
 #define OBJ_EVENT_PAL_KALPHITE_WORKER 0x1193
 #define OBJ_EVENT_PAL_ORE_PAL 0x1194
+#define OBJ_EVENT_PAL_ORE_PAL2 0x1195
 
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
@@ -715,6 +716,7 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
 	{gObjectEventPalette_KalphiteQueen, OBJ_EVENT_PAL_KALPHITE_QUEEN},
 	{gObjectEventPalette_KalphiteWorker, OBJ_EVENT_PAL_KALPHITE_WORKER},
 	{gObjectEventPalette_OrePal, OBJ_EVENT_PAL_ORE_PAL},
+	{gObjectEventPalette_OrePal2, OBJ_EVENT_PAL_ORE_PAL2},
 
     {NULL,                  0x0000},
 };

@@ -353,8 +353,17 @@
 #define OBJ_EVENT_GFX_KALPHITE_QUEEN             348
 #define OBJ_EVENT_GFX_KALPHITE_WORKER            349
 #define OBJ_EVENT_GFX_COPPER_ORE				 350
+#define OBJ_EVENT_GFX_TIN_ORE				 	 351
+#define OBJ_EVENT_GFX_IRON_ORE					 352
+#define OBJ_EVENT_GFX_COAL_ORE				 	 353
+#define OBJ_EVENT_GFX_MITHRIL_ORE				 354
+#define OBJ_EVENT_GFX_ADAMANT_ORE				 355
+#define OBJ_EVENT_GFX_RUNE_ORE				 	 356
+#define OBJ_EVENT_GFX_ORIKALKUM_ORE				 357
+#define OBJ_EVENT_GFX_ELEMENTAL_ORE				 358
+#define OBJ_EVENT_GFX_BANE_ORE				 	 359
 
-#define NUM_OBJ_EVENT_GFX                        351
+#define NUM_OBJ_EVENT_GFX                        360
 
 
 // These are dynamic object gfx ids.

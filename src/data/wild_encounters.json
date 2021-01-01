@@ -65,16 +65,6 @@
           }
         },
         {
-          "type": "rock_mons",
-          "encounter_rates": [
-            60,
-            30,
-            5,
-            4,
-            1
-          ]
-        },
-        {
           "type": "wheat_mons",
           "encounter_rates": [
             20,
@@ -86,6 +76,16 @@
             5,
             5,
             5,
+            5,
+            4,
+            1
+          ]
+        },
+        {
+          "type": "rock_smash_mons",
+          "encounter_rates": [
+            60,
+            30,
             5,
             4,
             1
@@ -11397,36 +11397,6 @@
               }
             ]
           },
-          "rock_mons": {
-            "encounter_rate": 0,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          },
           "water_mons": {
             "encounter_rate": 0,
             "mons": [
@@ -13125,36 +13095,6 @@
               }
             ]
           },
-          "rock_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_SAND_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CRABLING"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SCORPLING"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PET_ROCK"
-              }
-            ]
-          },
           "water_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -13309,36 +13249,6 @@
               }
             ]
           },
-          "rock_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_SAND_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CRABLING"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SCORPION_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PET_ROCK"
-              }
-            ]
-          },
           "water_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -13435,36 +13345,6 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_DESERTWYRM"
-              }
-            ]
-          },
-          "rock_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_SAND_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CRABLING"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BABY_MOLE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GNOMEY"
               }
             ]
           }
@@ -13743,36 +13623,6 @@
                 "species": "SPECIES_IMPLING_DRAGON_FORM"
               }
             ]
-          },
-          "rock_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_AMMONITE_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PET_ROCK"
-              }
-            ]
           }
         },
         {
@@ -14047,6 +13897,40 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_KALPHITE_GUARDIAN_FORM"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_TUTORIAL_ISLAND_CAVE",
+          "base_label": "gTutorial_Island_Cave0",
+          "rock_smash_mons": {
+            "encounter_rate": 70,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
               }
             ]
           }

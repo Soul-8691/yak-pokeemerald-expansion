@@ -138,12 +138,6 @@ bool8 SetUpFieldMove_RockSmash(void)
         gPostMenuFieldCallback = FieldCallback_RockSmash;
         return TRUE;
     }
-	else if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_COPPER_ORE) == TRUE)
-    {
-        gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
-        gPostMenuFieldCallback = FieldCallback_CopperSmash;
-        return TRUE;
-    }
     else
     {
         return FALSE;

@@ -359,6 +359,15 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KalphiteWorker;
 
 //mining
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CopperOre;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TinOre;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_IronOre;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CoalOre;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MithrilOre;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AdamantOre;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RuneOre;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_OrikalkumOre;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ElementalOre;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BaneOre;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -713,6 +722,15 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 	[OBJ_EVENT_GFX_KALPHITE_QUEEN] =              	&gObjectEventGraphicsInfo_KalphiteQueen,
 	[OBJ_EVENT_GFX_KALPHITE_WORKER] =             	&gObjectEventGraphicsInfo_KalphiteWorker,
 	[OBJ_EVENT_GFX_COPPER_ORE] =          		    &gObjectEventGraphicsInfo_CopperOre,
+	[OBJ_EVENT_GFX_TIN_ORE] =          		    	&gObjectEventGraphicsInfo_TinOre,
+	[OBJ_EVENT_GFX_IRON_ORE] =          		    &gObjectEventGraphicsInfo_IronOre,
+	[OBJ_EVENT_GFX_COAL_ORE] =          		    &gObjectEventGraphicsInfo_CoalOre,
+	[OBJ_EVENT_GFX_MITHRIL_ORE] =          		    &gObjectEventGraphicsInfo_MithrilOre,
+	[OBJ_EVENT_GFX_ADAMANT_ORE] =          		    &gObjectEventGraphicsInfo_AdamantOre,
+	[OBJ_EVENT_GFX_RUNE_ORE] =          		    &gObjectEventGraphicsInfo_RuneOre,
+	[OBJ_EVENT_GFX_ORIKALKUM_ORE] =          	    &gObjectEventGraphicsInfo_OrikalkumOre,
+	[OBJ_EVENT_GFX_ELEMENTAL_ORE] =          	    &gObjectEventGraphicsInfo_ElementalOre,
+	[OBJ_EVENT_GFX_BANE_ORE] =          		    &gObjectEventGraphicsInfo_BaneOre,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

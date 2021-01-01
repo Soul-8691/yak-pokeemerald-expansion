@@ -1060,4 +1060,31 @@ $(TITLEGFXDIR)/title_fire.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokescape_mining/copper_ore.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 	
+$(OBJEVENTGFXDIR)/pokescape_mining/tin_ore.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
+	
+$(OBJEVENTGFXDIR)/pokescape_mining/iron_ore.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
+	
+$(OBJEVENTGFXDIR)/pokescape_mining/coal_ore.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
+	
+$(OBJEVENTGFXDIR)/pokescape_mining/mithril_ore.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
+	
+$(OBJEVENTGFXDIR)/pokescape_mining/adamant_ore.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
+	
+$(OBJEVENTGFXDIR)/pokescape_mining/rune_ore.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
+	
+$(OBJEVENTGFXDIR)/pokescape_mining/orikalkum_ore.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
+	
+$(OBJEVENTGFXDIR)/pokescape_mining/elemental_ore.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
+	
+$(OBJEVENTGFXDIR)/pokescape_mining/bane_ore.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
+	
 	

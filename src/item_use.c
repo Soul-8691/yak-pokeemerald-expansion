@@ -49,6 +49,19 @@
 
 extern const u8 EventScript_SmashRock[];
 extern const u8 EventScript_SmashCopper[];
+extern const u8 EventScript_SmashTin[];
+extern const u8 EventScript_SmashIron[];
+extern const u8 EventScript_SmashCoal[];
+extern const u8 EventScript_SmashMithril[];
+extern const u8 EventScript_SmashAdamant[];
+extern const u8 EventScript_SmashRune[];
+extern const u8 EventScript_SmashOrikalkum[];
+extern const u8 EventScript_SmashElemental[];
+extern const u8 EventScript_SmashBane[];
+
+
+
+
 static void SetUpItemUseCallback(u8 taskId);
 static void FieldCB_UseItemOnField(void);
 static void Task_CallItemUseOnFieldCallback(u8 taskId);
@@ -1169,6 +1182,61 @@ static void FieldCallback_CopperSmash(void)
     ScriptContext1_SetupScript(EventScript_UseCopperSmash);
 }
 
+static void FieldCallback_TinSmash(void)
+{
+    FadeInFromBlack();
+    ScriptContext1_SetupScript(EventScript_UseTinSmash);
+}
+
+static void FieldCallback_IronSmash(void)
+{
+    FadeInFromBlack();
+    ScriptContext1_SetupScript(EventScript_UseIronSmash);
+}
+
+static void FieldCallback_CoalSmash(void)
+{
+    FadeInFromBlack();
+    ScriptContext1_SetupScript(EventScript_UseCoalSmash);
+}
+
+static void FieldCallback_MithrilSmash(void)
+{
+    FadeInFromBlack();
+    ScriptContext1_SetupScript(EventScript_UseMithrilSmash);
+}
+
+static void FieldCallback_AdamantSmash(void)
+{
+    FadeInFromBlack();
+    ScriptContext1_SetupScript(EventScript_UseAdamantSmash);
+}
+
+static void FieldCallback_RuneSmash(void)
+{
+    FadeInFromBlack();
+    ScriptContext1_SetupScript(EventScript_UseRuneSmash);
+}
+
+static void FieldCallback_OrikalkumSmash(void)
+{
+    FadeInFromBlack();
+    ScriptContext1_SetupScript(EventScript_UseOrikalkumSmash);
+}
+
+static void FieldCallback_ElementalSmash(void)
+{
+    FadeInFromBlack();
+    ScriptContext1_SetupScript(EventScript_UseElementalSmash);
+}
+
+static void FieldCallback_BaneSmash(void)
+{
+    FadeInFromBlack();
+    ScriptContext1_SetupScript(EventScript_UseBaneSmash);
+}
+
+
 void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 {
 	if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_BREAKABLE_ROCK) == TRUE)
@@ -1200,6 +1268,150 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 		{
 			//PlaySE(SE_W088);
 			ScriptContext1_SetupScript(EventScript_UseCopperSmash);
+			DestroyTask(taskId);
+		}
+    }
+	else if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_TIN_ORE) == TRUE)
+    {
+		if(!gTasks[taskId].tUsingRegisteredKeyItem)
+		{
+			gSaveBlock2Ptr->ItemArg = 421;
+			gFieldCallback = FieldCallback_TinSmash;
+			gBagMenu->exitCallback = CB2_ReturnToField;
+			Task_FadeAndCloseBagMenu(taskId);
+		}
+		else
+		{
+			//PlaySE(SE_W088);
+			ScriptContext1_SetupScript(EventScript_UseTinSmash);
+			DestroyTask(taskId);
+		}
+    }
+	else if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_IRON_ORE) == TRUE)
+    {
+		if(!gTasks[taskId].tUsingRegisteredKeyItem)
+		{
+			gSaveBlock2Ptr->ItemArg = 421;
+			gFieldCallback = FieldCallback_IronSmash;
+			gBagMenu->exitCallback = CB2_ReturnToField;
+			Task_FadeAndCloseBagMenu(taskId);
+		}
+		else
+		{
+			//PlaySE(SE_W088);
+			ScriptContext1_SetupScript(EventScript_UseIronSmash);
+			DestroyTask(taskId);
+		}
+    }
+	else if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_COAL_ORE) == TRUE)
+    {
+		if(!gTasks[taskId].tUsingRegisteredKeyItem)
+		{
+			gSaveBlock2Ptr->ItemArg = 421;
+			gFieldCallback = FieldCallback_CoalSmash;
+			gBagMenu->exitCallback = CB2_ReturnToField;
+			Task_FadeAndCloseBagMenu(taskId);
+		}
+		else
+		{
+			//PlaySE(SE_W088);
+			ScriptContext1_SetupScript(EventScript_UseCoalSmash);
+			DestroyTask(taskId);
+		}
+    }
+	else if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_MITHRIL_ORE) == TRUE)
+    {
+		if(!gTasks[taskId].tUsingRegisteredKeyItem)
+		{
+			gSaveBlock2Ptr->ItemArg = 421;
+			gFieldCallback = FieldCallback_MithrilSmash;
+			gBagMenu->exitCallback = CB2_ReturnToField;
+			Task_FadeAndCloseBagMenu(taskId);
+		}
+		else
+		{
+			//PlaySE(SE_W088);
+			ScriptContext1_SetupScript(EventScript_UseMithrilSmash);
+			DestroyTask(taskId);
+		}
+    }
+	else if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_ADAMANT_ORE) == TRUE)
+    {
+		if(!gTasks[taskId].tUsingRegisteredKeyItem)
+		{
+			gSaveBlock2Ptr->ItemArg = 421;
+			gFieldCallback = FieldCallback_AdamantSmash;
+			gBagMenu->exitCallback = CB2_ReturnToField;
+			Task_FadeAndCloseBagMenu(taskId);
+		}
+		else
+		{
+			//PlaySE(SE_W088);
+			ScriptContext1_SetupScript(EventScript_UseAdamantSmash);
+			DestroyTask(taskId);
+		}
+    }
+	else if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_RUNE_ORE) == TRUE)
+    {
+		if(!gTasks[taskId].tUsingRegisteredKeyItem)
+		{
+			gSaveBlock2Ptr->ItemArg = 421;
+			gFieldCallback = FieldCallback_RuneSmash;
+			gBagMenu->exitCallback = CB2_ReturnToField;
+			Task_FadeAndCloseBagMenu(taskId);
+		}
+		else
+		{
+			//PlaySE(SE_W088);
+			ScriptContext1_SetupScript(EventScript_UseRuneSmash);
+			DestroyTask(taskId);
+		}
+    }
+	else if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_ORIKALKUM_ORE) == TRUE)
+    {
+		if(!gTasks[taskId].tUsingRegisteredKeyItem)
+		{
+			gSaveBlock2Ptr->ItemArg = 421;
+			gFieldCallback = FieldCallback_OrikalkumSmash;
+			gBagMenu->exitCallback = CB2_ReturnToField;
+			Task_FadeAndCloseBagMenu(taskId);
+		}
+		else
+		{
+			//PlaySE(SE_W088);
+			ScriptContext1_SetupScript(EventScript_UseOrikalkumSmash);
+			DestroyTask(taskId);
+		}
+    }
+	else if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_ELEMENTAL_ORE) == TRUE)
+    {
+		if(!gTasks[taskId].tUsingRegisteredKeyItem)
+		{
+			gSaveBlock2Ptr->ItemArg = 421;
+			gFieldCallback = FieldCallback_ElementalSmash;
+			gBagMenu->exitCallback = CB2_ReturnToField;
+			Task_FadeAndCloseBagMenu(taskId);
+		}
+		else
+		{
+			//PlaySE(SE_W088);
+			ScriptContext1_SetupScript(EventScript_UseElementalSmash);
+			DestroyTask(taskId);
+		}
+    }
+	else if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_BANE_ORE) == TRUE)
+    {
+		if(!gTasks[taskId].tUsingRegisteredKeyItem)
+		{
+			gSaveBlock2Ptr->ItemArg = 421;
+			gFieldCallback = FieldCallback_BaneSmash;
+			gBagMenu->exitCallback = CB2_ReturnToField;
+			Task_FadeAndCloseBagMenu(taskId);
+		}
+		else
+		{
+			//PlaySE(SE_W088);
+			ScriptContext1_SetupScript(EventScript_UseBaneSmash);
 			DestroyTask(taskId);
 		}
     }

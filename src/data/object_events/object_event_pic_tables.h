@@ -3441,3 +3441,67 @@ const struct SpriteFrameImage gObjectEventPicTable_CopperOre[] = {
     overworld_frame(gObjectEventPic_CopperOre, 2, 2, 2),
     overworld_frame(gObjectEventPic_CopperOre, 2, 2, 3),
 };
+
+const struct SpriteFrameImage gObjectEventPicTable_TinOre[] = {
+    overworld_frame(gObjectEventPic_TinOre, 2, 2, 0),
+    overworld_frame(gObjectEventPic_TinOre, 2, 2, 1),
+    overworld_frame(gObjectEventPic_TinOre, 2, 2, 2),
+    overworld_frame(gObjectEventPic_TinOre, 2, 2, 3),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_IronOre[] = {
+    overworld_frame(gObjectEventPic_IronOre, 2, 2, 0),
+    overworld_frame(gObjectEventPic_IronOre, 2, 2, 1),
+    overworld_frame(gObjectEventPic_IronOre, 2, 2, 2),
+    overworld_frame(gObjectEventPic_IronOre, 2, 2, 3),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_CoalOre[] = {
+    overworld_frame(gObjectEventPic_CoalOre, 2, 2, 0),
+    overworld_frame(gObjectEventPic_CoalOre, 2, 2, 1),
+    overworld_frame(gObjectEventPic_CoalOre, 2, 2, 2),
+    overworld_frame(gObjectEventPic_CoalOre, 2, 2, 3),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_MithrilOre[] = {
+    overworld_frame(gObjectEventPic_MithrilOre, 2, 2, 0),
+    overworld_frame(gObjectEventPic_MithrilOre, 2, 2, 1),
+    overworld_frame(gObjectEventPic_MithrilOre, 2, 2, 2),
+    overworld_frame(gObjectEventPic_MithrilOre, 2, 2, 3),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_AdamantOre[] = {
+    overworld_frame(gObjectEventPic_AdamantOre, 2, 2, 0),
+    overworld_frame(gObjectEventPic_AdamantOre, 2, 2, 1),
+    overworld_frame(gObjectEventPic_AdamantOre, 2, 2, 2),
+    overworld_frame(gObjectEventPic_AdamantOre, 2, 2, 3),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_RuneOre[] = {
+    overworld_frame(gObjectEventPic_RuneOre, 2, 2, 0),
+    overworld_frame(gObjectEventPic_RuneOre, 2, 2, 1),
+    overworld_frame(gObjectEventPic_RuneOre, 2, 2, 2),
+    overworld_frame(gObjectEventPic_RuneOre, 2, 2, 3),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_OrikalkumOre[] = {
+    overworld_frame(gObjectEventPic_OrikalkumOre, 2, 2, 0),
+    overworld_frame(gObjectEventPic_OrikalkumOre, 2, 2, 1),
+    overworld_frame(gObjectEventPic_OrikalkumOre, 2, 2, 2),
+    overworld_frame(gObjectEventPic_OrikalkumOre, 2, 2, 3),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_ElementalOre[] = {
+    overworld_frame(gObjectEventPic_ElementalOre, 2, 2, 0),
+    overworld_frame(gObjectEventPic_ElementalOre, 2, 2, 1),
+    overworld_frame(gObjectEventPic_ElementalOre, 2, 2, 2),
+    overworld_frame(gObjectEventPic_ElementalOre, 2, 2, 3),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_BaneOre[] = {
+    overworld_frame(gObjectEventPic_BaneOre, 2, 2, 0),
+    overworld_frame(gObjectEventPic_BaneOre, 2, 2, 1),
+    overworld_frame(gObjectEventPic_BaneOre, 2, 2, 2),
+    overworld_frame(gObjectEventPic_BaneOre, 2, 2, 3),
+};
+

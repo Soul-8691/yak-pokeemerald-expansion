@@ -716,8 +716,18 @@ const u16 gObjectEventPalette_KalphiteWorker[] = INCBIN_U16("graphics/object_eve
 
 //mining
 const u32 gObjectEventPic_CopperOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/copper_ore.4bpp");
+const u32 gObjectEventPic_TinOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/tin_ore.4bpp");
+const u32 gObjectEventPic_IronOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/iron_ore.4bpp");
+const u32 gObjectEventPic_CoalOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/coal_ore.4bpp");
+const u32 gObjectEventPic_MithrilOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/mithril_ore.4bpp");
+const u32 gObjectEventPic_AdamantOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/adamant_ore.4bpp");
+const u32 gObjectEventPic_RuneOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/rune_ore.4bpp");
+const u32 gObjectEventPic_OrikalkumOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/orikalkum_ore.4bpp");
+const u32 gObjectEventPic_ElementalOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/elemental_ore.4bpp");
+const u32 gObjectEventPic_BaneOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/bane_ore.4bpp");
 
 const u16 gObjectEventPalette_OrePal[] = INCBIN_U16("graphics/object_events/pics/pokescape_mining/ore_pal1.gbapal");
+const u16 gObjectEventPalette_OrePal2[] = INCBIN_U16("graphics/object_events/pics/pokescape_mining/ore_pal2.gbapal");
 
 
 

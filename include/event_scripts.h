@@ -378,6 +378,15 @@ extern const u8 EventScript_UseFlash[];
 extern const u8 EventScript_UseCut[];
 extern const u8 EventScript_UseRockSmash[];
 extern const u8 EventScript_UseCopperSmash[];
+extern const u8 EventScript_UseTinSmash[];
+extern const u8 EventScript_UseIronSmash[];
+extern const u8 EventScript_UseCoalSmash[];
+extern const u8 EventScript_UseMithrilSmash[];
+extern const u8 EventScript_UseAdamantSmash[];
+extern const u8 EventScript_UseRuneSmash[];
+extern const u8 EventScript_UseOrikalkumSmash[];
+extern const u8 EventScript_UseElementalSmash[];
+extern const u8 EventScript_UseBaneSmash[];
 
 //player pc
 extern const u8 LittlerootTown_BrendansHouse_2F_EventScript_TurnOffPlayerPC[];

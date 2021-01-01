@@ -64,20 +64,14 @@ Text_CantCut: @ 829077D
 @ Interact with smashable rock
 EventScript_RockSmash:: @ 82907A6
 	lockall
-	//goto_if_unset FLAG_BADGE03_GET, EventScript_CantSmashRock
-	//checkpartymove MOVE_ROCK_SMASH
-	//compare VAR_RESULT, PARTY_SIZE
 	checkitem ITEM_PICKAXE, 1
 	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_CantSmashRock
 	setitemarg ITEM_PICKAXE
 	setfieldeffectargument 0, VAR_RESULT
-	//bufferpartymonnick 0, VAR_RESULT
-	//buffermovename 1, MOVE_ROCK_SMASH
 	msgbox Text_WantToSmash, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq EventScript_CancelSmash
-	//msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
 	closemessage
 	dofieldeffect FLDEFF_USE_ROCK_SMASH
 	waitstate
@@ -88,27 +82,165 @@ EventScript_RockSmash:: @ 82907A6
 	
 EventScript_CopperSmash::
 	lockall
-	//goto_if_unset FLAG_BADGE03_GET, EventScript_CantSmashRock
-	//checkpartymove MOVE_ROCK_SMASH
-	//compare VAR_RESULT, PARTY_SIZE
 	checkitem ITEM_PICKAXE, 1
 	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_CantSmashRock
 	setitemarg ITEM_PICKAXE
 	setfieldeffectargument 0, VAR_RESULT
-	//bufferpartymonnick 0, VAR_RESULT
-	//buffermovename 1, MOVE_ROCK_SMASH
 	msgbox Text_WantToSmash, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq EventScript_CancelSmash
-	//msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
 	closemessage
 	dofieldeffect FLDEFF_USE_ROCK_SMASH
 	waitstate
 	goto EventScript_SmashCopper
 	end
 	
+EventScript_TinSmash::
+	lockall
+	checkitem ITEM_PICKAXE, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_CantSmashRock
+	setitemarg ITEM_PICKAXE
+	setfieldeffectargument 0, VAR_RESULT
+	msgbox Text_WantToSmash, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq EventScript_CancelSmash
+	closemessage
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashTin
+	end
+	
+EventScript_IronSmash::
+	lockall
+	checkitem ITEM_PICKAXE, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_CantSmashRock
+	setitemarg ITEM_PICKAXE
+	setfieldeffectargument 0, VAR_RESULT
+	msgbox Text_WantToSmash, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq EventScript_CancelSmash
+	closemessage
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashIron
+	end
+	
+EventScript_CoalSmash::
+	lockall
+	checkitem ITEM_PICKAXE, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_CantSmashRock
+	setitemarg ITEM_PICKAXE
+	setfieldeffectargument 0, VAR_RESULT
+	msgbox Text_WantToSmash, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq EventScript_CancelSmash
+	closemessage
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashCoal
+	end
 
+EventScript_MithrilSmash::
+	lockall
+	checkitem ITEM_PICKAXE, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_CantSmashRock
+	setitemarg ITEM_PICKAXE
+	setfieldeffectargument 0, VAR_RESULT
+	msgbox Text_WantToSmash, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq EventScript_CancelSmash
+	closemessage
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashMithril
+	end
+	
+EventScript_AdamantSmash::
+	lockall
+	checkitem ITEM_PICKAXE, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_CantSmashRock
+	setitemarg ITEM_PICKAXE
+	setfieldeffectargument 0, VAR_RESULT
+	msgbox Text_WantToSmash, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq EventScript_CancelSmash
+	closemessage
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashAdamant
+	end
+	
+EventScript_RuneSmash::
+	lockall
+	checkitem ITEM_PICKAXE, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_CantSmashRock
+	setitemarg ITEM_PICKAXE
+	setfieldeffectargument 0, VAR_RESULT
+	msgbox Text_WantToSmash, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq EventScript_CancelSmash
+	closemessage
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashRune
+	end
+	
+EventScript_OrikalkumSmash::
+	lockall
+	checkitem ITEM_PICKAXE, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_CantSmashRock
+	setitemarg ITEM_PICKAXE
+	setfieldeffectargument 0, VAR_RESULT
+	msgbox Text_WantToSmash, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq EventScript_CancelSmash
+	closemessage
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashOrikalkum
+	end
+	
+EventScript_ElementalSmash::
+	lockall
+	checkitem ITEM_PICKAXE, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_CantSmashRock
+	setitemarg ITEM_PICKAXE
+	setfieldeffectargument 0, VAR_RESULT
+	msgbox Text_WantToSmash, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq EventScript_CancelSmash
+	closemessage
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashElemental
+	end
+	
+EventScript_BaneSmash::
+	lockall
+	checkitem ITEM_PICKAXE, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_CantSmashRock
+	setitemarg ITEM_PICKAXE
+	setfieldeffectargument 0, VAR_RESULT
+	msgbox Text_WantToSmash, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq EventScript_CancelSmash
+	closemessage
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashBane
+	end
+	
+	
 @ Use rock smash from party menu
 EventScript_UseRockSmash:: @ 82907F0
 	lockall
@@ -118,11 +250,97 @@ EventScript_UseRockSmash:: @ 82907F0
 	end
 	
 @ Use rock smash from party menu
-EventScript_UseCopperSmash:: @ 82907F0
+EventScript_UseCopperSmash::
 	lockall
 	dofieldeffect FLDEFF_USE_ROCK_SMASH
 	waitstate
 	goto EventScript_SmashCopper
+	end
+	
+@ Use rock smash from party menu
+EventScript_UseTinSmash::
+	lockall
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashTin
+	end
+	
+@ Use rock smash from party menu
+EventScript_UseIronSmash::
+	lockall
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashIron
+	end
+	
+@ Use rock smash from party menu
+EventScript_UseCoalSmash::
+	lockall
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashCoal
+	end
+	
+@ Use rock smash from party menu
+EventScript_UseMithrilSmash::
+	lockall
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashMithril
+	end
+	
+@ Use rock smash from party menu
+EventScript_UseAdamantSmash::
+	lockall
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashAdamant
+	end
+	
+@ Use rock smash from party menu
+EventScript_UseRuneSmash::
+	lockall
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashRune
+	end
+	
+@ Use rock smash from party menu
+EventScript_UseOrikalkumSmash::
+	lockall
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashOrikalkum
+	end
+	
+@ Use rock smash from party menu
+EventScript_UseElementalSmash::
+	lockall
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashElemental
+	end
+	
+@ Use rock smash from party menu
+EventScript_UseBaneSmash::
+	lockall
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
+	goto EventScript_SmashBane
+	end
+		
+EventScript_SmashRock:: @ 82907FB
+	applymovement VAR_LAST_TALKED, Movement_SmashRock
+	waitmovement 0
+	removeobject VAR_LAST_TALKED
+	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
+	compare VAR_RESULT, TRUE
+	goto_if_eq EventScript_EndSmash
+	special RockSmashWildEncounter
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_EndSmash
+	waitstate
+	releaseall
 	end
 
 EventScript_SmashCopper:: @ 82907FB
@@ -140,10 +358,11 @@ EventScript_SmashCopper:: @ 82907FB
 	releaseall
 	end
 	
-EventScript_SmashRock:: @ 82907FB
+EventScript_SmashTin:: @ 82907FB
 	applymovement VAR_LAST_TALKED, Movement_SmashRock
 	waitmovement 0
 	removeobject VAR_LAST_TALKED
+	giveitem ITEM_TIN_ORE, 1
 	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
 	compare VAR_RESULT, TRUE
 	goto_if_eq EventScript_EndSmash
@@ -153,7 +372,128 @@ EventScript_SmashRock:: @ 82907FB
 	waitstate
 	releaseall
 	end
-
+	
+	
+EventScript_SmashIron:: @ 82907FB
+	applymovement VAR_LAST_TALKED, Movement_SmashRock
+	waitmovement 0
+	removeobject VAR_LAST_TALKED
+	giveitem ITEM_IRON_ORE, 1
+	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
+	compare VAR_RESULT, TRUE
+	goto_if_eq EventScript_EndSmash
+	special RockSmashWildEncounter
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_EndSmash
+	waitstate
+	releaseall
+	end
+	
+EventScript_SmashCoal:: @ 82907FB
+	applymovement VAR_LAST_TALKED, Movement_SmashRock
+	waitmovement 0
+	removeobject VAR_LAST_TALKED
+	giveitem ITEM_COAL_ORE, 1
+	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
+	compare VAR_RESULT, TRUE
+	goto_if_eq EventScript_EndSmash
+	special RockSmashWildEncounter
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_EndSmash
+	waitstate
+	releaseall
+	end
+	
+EventScript_SmashMithril:: @ 82907FB
+	applymovement VAR_LAST_TALKED, Movement_SmashRock
+	waitmovement 0
+	removeobject VAR_LAST_TALKED
+	giveitem ITEM_MITHRIL_ORE, 1
+	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
+	compare VAR_RESULT, TRUE
+	goto_if_eq EventScript_EndSmash
+	special RockSmashWildEncounter
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_EndSmash
+	waitstate
+	releaseall
+	end
+	
+EventScript_SmashAdamant:: @ 82907FB
+	applymovement VAR_LAST_TALKED, Movement_SmashRock
+	waitmovement 0
+	removeobject VAR_LAST_TALKED
+	giveitem ITEM_ADAMANT_ORE, 1
+	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
+	compare VAR_RESULT, TRUE
+	goto_if_eq EventScript_EndSmash
+	special RockSmashWildEncounter
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_EndSmash
+	waitstate
+	releaseall
+	end
+	
+EventScript_SmashRune:: @ 82907FB
+	applymovement VAR_LAST_TALKED, Movement_SmashRock
+	waitmovement 0
+	removeobject VAR_LAST_TALKED
+	giveitem ITEM_RUNE_ORE, 1
+	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
+	compare VAR_RESULT, TRUE
+	goto_if_eq EventScript_EndSmash
+	special RockSmashWildEncounter
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_EndSmash
+	waitstate
+	releaseall
+	end
+	
+EventScript_SmashOrikalkum:: @ 82907FB
+	applymovement VAR_LAST_TALKED, Movement_SmashRock
+	waitmovement 0
+	removeobject VAR_LAST_TALKED
+	giveitem ITEM_ORIKALKUM_ORE, 1
+	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
+	compare VAR_RESULT, TRUE
+	goto_if_eq EventScript_EndSmash
+	special RockSmashWildEncounter
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_EndSmash
+	waitstate
+	releaseall
+	end
+	
+EventScript_SmashElemental:: @ 82907FB
+	applymovement VAR_LAST_TALKED, Movement_SmashRock
+	waitmovement 0
+	removeobject VAR_LAST_TALKED
+	giveitem ITEM_ELEMENTAL_ORE, 1
+	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
+	compare VAR_RESULT, TRUE
+	goto_if_eq EventScript_EndSmash
+	special RockSmashWildEncounter
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_EndSmash
+	waitstate
+	releaseall
+	end
+	
+EventScript_SmashBane:: @ 82907FB
+	applymovement VAR_LAST_TALKED, Movement_SmashRock
+	waitmovement 0
+	removeobject VAR_LAST_TALKED
+	giveitem ITEM_BANE_ORE, 1
+	specialvar VAR_RESULT, TryUpdateRusturfTunnelState
+	compare VAR_RESULT, TRUE
+	goto_if_eq EventScript_EndSmash
+	special RockSmashWildEncounter
+	compare VAR_RESULT, FALSE
+	goto_if_eq EventScript_EndSmash
+	waitstate
+	releaseall
+	end
+	
 EventScript_EndSmash:: @ 8290829
 	releaseall
 	end

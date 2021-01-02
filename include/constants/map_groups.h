@@ -607,6 +607,7 @@
 #define MAP_MUSA_POINT        (12 | (34 << 8))
 #define MAP_TAVERLEY          (13 | (34 << 8))
 #define MAP_TUTORIAL_ISLAND   (14 | (34 << 8))
+#define MAP_KARAMJA           (15 | (34 << 8))
 
 // Map Group 35
 #define MAP_ROUTE1  (0 | (35 << 8))

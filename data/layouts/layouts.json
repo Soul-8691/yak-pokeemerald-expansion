@@ -5360,6 +5360,16 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Tzhaar_FightCaves/border.bin",
       "blockdata_filepath": "data/layouts/Tzhaar_FightCaves/map.bin"
+    },
+    {
+      "id": "LAYOUT_KARAMJA",
+      "name": "Karamja_Layout",
+      "width": 49,
+      "height": 50,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Karamja",
+      "border_filepath": "data/layouts/Karamja/border.bin",
+      "blockdata_filepath": "data/layouts/Karamja/map.bin"
     }
   ]
 }

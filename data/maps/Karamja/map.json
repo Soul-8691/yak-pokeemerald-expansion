@@ -1,12 +1,12 @@
 {
-  "id": "MAP_MUSA_POINT",
-  "name": "MusaPoint",
-  "layout": "LAYOUT_MUSA_POINT",
+  "id": "MAP_KARAMJA",
+  "name": "Karamja",
+  "layout": "LAYOUT_KARAMJA",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_TOWN",
+  "map_type": "MAP_TYPE_NONE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -16,17 +16,7 @@
     {
       "direction": "right",
       "offset": 0,
-      "map": "MAP_ROUTE32"
-    },
-    {
-      "direction": "left",
-      "offset": 0,
-      "map": "MAP_ROUTE33"
-    },
-    {
-      "direction": "left",
-      "offset": 0,
-      "map": "MAP_KARAMJA"
+      "map": "MAP_MUSA_POINT"
     }
   ],
   "object_events": [

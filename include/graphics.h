@@ -8596,6 +8596,8 @@ extern const u32 gItemIcon_LargeNet[];
 extern const u32 gItemIconPalette_LargeNet[];
 extern const u32 gItemIcon_DragonNet[];
 extern const u32 gItemIconPalette_DragonNet[];
+extern const u32 gItemIcon_TerrorbirdPouch[];
+extern const u32 gItemIconPalette_TerrorbirdPouch[];
 //pokescape crafting items
 //pouch crafting items
 extern const u32 gItemIcon_CopperOre[];

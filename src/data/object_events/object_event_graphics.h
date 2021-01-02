@@ -21,7 +21,7 @@ const u16 gObjectEventPaletteNull14[16] = {};
 const u16 gObjectEventPaletteNull15[16] = {};
 const u16 gObjectEventPalette9[] = INCBIN_U16("graphics/object_events/palettes/09.gbapal");
 const u16 gObjectEventPalette10[] = INCBIN_U16("graphics/object_events/palettes/10.gbapal");
-const u32 gObjectEventPic_BrendanFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/brendan/field_move.4bpp");
+//const u32 gObjectEventPic_BrendanFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/brendan/field_move.4bpp");
 //const u32 gObjectEventPic_BrendanSurfing[] = INCBIN_U32("graphics/object_events/pics/people/brendan/surfing.4bpp");
 //const u32 gObjectEventPic_BrendanMachBike[] = INCBIN_U32("graphics/object_events/pics/people/brendan/mach_bike.4bpp");
 const u32 gObjectEventPic_BrendanAcroBike[] = INCBIN_U32("graphics/object_events/pics/people/brendan/acro_bike.4bpp");
@@ -696,6 +696,7 @@ const u32 gObjectEventPic_BrendanFishing[] = INCBIN_U32("graphics/object_events/
 const u32 gObjectEventPic_BrendanSurfing[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_male/surfing.4bpp");
 const u32 gObjectEventPic_BrendanMachBike[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_male/terrorbird.4bpp");
 const u32 gObjectEventPic_BrendanUnderwater[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_male/underwater.4bpp");
+const u32 gObjectEventPic_BrendanFieldMove[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_male/field_move.4bpp");
 //PROTAGANIST FEMALE
 const u32 gObjectEventPic_MayNormal[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_female/walking.4bpp");
 const u32 gObjectEventPic_MayRunning[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_female/running.4bpp");

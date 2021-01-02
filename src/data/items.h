@@ -5608,6 +5608,19 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_Rod,
         .secondaryId = SUPER_ROD,
     },
+    [ITEM_TERRORBIRD_POUCH] =
+    {
+        .name = _("Terrorbird"),
+        .itemId = ITEM_TERRORBIRD_POUCH,
+        .price = 0,
+        .description = sCupholderDesc,
+        .importance = 1,
+        .unk19 = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_Bike,
+        .secondaryId = 0,
+    },
 //CRAFTING ITEMS	
     [ITEM_COPPER_ORE] =
     {

@@ -911,6 +911,9 @@ const u32 gItemIconPalette_LargeNet[] = INCBIN_U32("graphics/items/pokescape_ico
 const u32 gItemIcon_DragonNet[] = INCBIN_U32("graphics/items/pokescape_icons/dragon_net.4bpp.lz");
 const u32 gItemIconPalette_DragonNet[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/dragon_net.gbapal.lz");
 
+const u32 gItemIcon_TerrorbirdPouch[] = INCBIN_U32("graphics/items/pokescape_icons/terrorbird_pouch.4bpp.lz");
+const u32 gItemIconPalette_TerrorbirdPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/terrorbird_pouch.gbapal.lz");
+
 //pokescape crafting items
 //pouches
  const u32 gItemIcon_CopperOre[] = INCBIN_U32("graphics/items/pokescape_icons/copper_ore.4bpp.lz");

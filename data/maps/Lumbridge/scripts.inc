@@ -48,7 +48,7 @@ Kevin_6:
 
 Kevin_7:
 	msgbox Kevin_Text_5
-	giveitem ITEM_MACH_BIKE
+	giveitem ITEM_TERRORBIRD_POUCH
 	giveitem ITEM_PICKAXE
 	giveitem ITEM_BOAT
 	giveitem ITEM_AXE

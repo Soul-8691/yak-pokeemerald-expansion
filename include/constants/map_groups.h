@@ -1,10 +1,6 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
-//
-// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
-//
-
 // Map Group 0
 #define MAP_PETALBURG_CITY      (0 | (0 << 8))
 #define MAP_SLATEPORT_CITY      (1 | (0 << 8))
@@ -687,9 +683,18 @@
 #define MAP_LUMBRIDGE_CASTLE_4         (16 | (37 << 8))
 
 // Map Group 38
-#define MAP_MILL_LANE_MILL_1 (0 | (38 << 8))
-#define MAP_MILL_LANE_MILL_2 (1 | (38 << 8))
-#define MAP_MILL_LANE_MILL_3 (2 | (38 << 8))
+#define MAP_MILL_LANE_MILL_1          (0 | (38 << 8))
+#define MAP_MILL_LANE_MILL_2          (1 | (38 << 8))
+#define MAP_MILL_LANE_MILL_3          (2 | (38 << 8))
+#define MAP_VARROCK_HOUSE_1           (3 | (38 << 8))
+#define MAP_VARROCK_HOUSE_1_UP        (4 | (38 << 8))
+#define MAP_VARROCK_THESSALIA_SHOP    (5 | (38 << 8))
+#define MAP_VARROCK_THESSALIA_SHOP_UP (6 | (38 << 8))
+#define MAP_VARROCK_LOWE_SHOP         (7 | (38 << 8))
+#define MAP_VARROCK_LOWE_SHOP_UP      (8 | (38 << 8))
+#define MAP_VARROCK_HOUSE_2           (9 | (38 << 8))
+#define MAP_VARROCK_HOUSE_3           (10 | (38 << 8))
+#define MAP_VARROCK_HOUSE_4           (11 | (38 << 8))
 
 // Map Group 39
 #define MAP_ROUTE1_HOUSE_FRED (0 | (39 << 8))

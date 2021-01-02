@@ -5370,6 +5370,96 @@
       "secondary_tileset": "gTileset_Karamja",
       "border_filepath": "data/layouts/Karamja/border.bin",
       "blockdata_filepath": "data/layouts/Karamja/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_HOUSE_1",
+      "name": "Varrock_House_1_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_House_1/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_House_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_HOUSE_1_UP",
+      "name": "Varrock_House_1_Up_Layout",
+      "width": 9,
+      "height": 7,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_House_1_Up/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_House_1_Up/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_THESSALIA_SHOP",
+      "name": "Varrock_Thessalia_Shop_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_Thessalia_Shop/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Thessalia_Shop/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_THESSALIA_SHOP_UP",
+      "name": "Varrock_Thessalia_Shop_Up_Layout",
+      "width": 10,
+      "height": 11,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_Thessalia_Shop_Up/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Thessalia_Shop_Up/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_LOWE_SHOP",
+      "name": "Varrock_Lowe_Shop_Layout",
+      "width": 13,
+      "height": 11,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_Lowe_Shop/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Lowe_Shop/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_LOWE_SHOP_UP",
+      "name": "Varrock_Lowe_Shop_Up_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_Lowe_Shop_Up/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Lowe_Shop_Up/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_HOUSE_2",
+      "name": "Varrock_House_2_Layout",
+      "width": 8,
+      "height": 9,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_House_2/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_House_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_HOUSE_3",
+      "name": "Varrock_House_3_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_House_3/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_House_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_HOUSE_4",
+      "name": "Varrock_House_4_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_House_4/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_House_4/map.bin"
     }
   ]
 }

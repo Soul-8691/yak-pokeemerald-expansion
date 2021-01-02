@@ -1244,3 +1244,21 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Tzhaar_FightCaves/scripts.inc"
 
 	.include "data/maps/Karamja/scripts.inc"
+
+	.include "data/maps/Varrock_House_1/scripts.inc"
+
+	.include "data/maps/Varrock_House_1_Up/scripts.inc"
+
+	.include "data/maps/Varrock_Thessalia_Shop/scripts.inc"
+
+	.include "data/maps/Varrock_Thessalia_Shop_Up/scripts.inc"
+
+	.include "data/maps/Varrock_Lowe_Shop/scripts.inc"
+
+	.include "data/maps/Varrock_Lowe_Shop_Up/scripts.inc"
+
+	.include "data/maps/Varrock_House_2/scripts.inc"
+
+	.include "data/maps/Varrock_House_3/scripts.inc"
+
+	.include "data/maps/Varrock_House_4/scripts.inc"

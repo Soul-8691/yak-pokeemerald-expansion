@@ -127,6 +127,10 @@
 #define MULTI_POUCH_CRAFT2				   115
 //pokescape cheat menu
 #define MULTI_CHEAT_MENU				   116
+//pokescape starter menus
+#define MULTI_STARTER_FREE				   117
+#define MULTI_STARTER_MEMBER			   118
+
 
 // Lilycove SS Tidal Multichoice Selections
 #define SSTIDAL_SELECTION_SLATEPORT        0

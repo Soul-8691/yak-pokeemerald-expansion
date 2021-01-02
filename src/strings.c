@@ -1851,6 +1851,13 @@ const u8 gText_CheatPouchShop[] = _("Pouch Items");
 const u8 gText_AddCash[] = _("Fuck Bitches");
 const u8 gText_AddCandy[] = _("Get Candies");
 const u8 gText_AddKeyItems[] = _("Get Key Items");
-
+// choose starter menu
+const u8 gText_GuthlingStarter[] = _("Guthling");
+const u8 gText_ZamlingStarter[] =_("Zamling");
+const u8 gText_SaralingStarter[] =_("Saraling");
+// members starters
+const u8 gText_ArmalingStarter[] =_("Armaling");
+const u8 gText_UngodlingStarter[] =_("Ungodling");
+const u8 gText_TumeklingStarter[] =_("Tumekling");
 
 const u8 gText_NextMenu[] =_("Next");

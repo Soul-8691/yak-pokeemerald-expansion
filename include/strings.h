@@ -3015,6 +3015,17 @@ extern const u8 gText_GranitePouch[];
 extern const u8 gText_AncientPouch[];
 extern const u8 gText_ElementalPouch[];
 
+//pokescape starter menu
+
+extern const u8 gText_GuthlingStarter[];
+extern const u8 gText_ZamlingStarter[];
+extern const u8 gText_SaralingStarter[];
+
+extern const u8 gText_ArmalingStarter[];
+extern const u8 gText_UngodlingStarter[];
+extern const u8 gText_TumeklingStarter[];
+
+
 //pokescape cheat menu
 extern const u8 gText_CheatEvolutionShop[];
 extern const u8 gText_CheatPouchShop[];

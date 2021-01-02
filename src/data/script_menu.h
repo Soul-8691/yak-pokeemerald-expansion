@@ -813,6 +813,21 @@ static const struct MenuAction MultichoiceList_CheatMenu[] =
 	
 };
 
+static const struct MenuAction MultichoiceList_StarterFree[] =
+{
+	{gText_GuthlingStarter},
+	{gText_ZamlingStarter},
+	{gText_SaralingStarter},
+};
+
+static const struct MenuAction MultichoiceList_StarterMember[] =
+{
+	{gText_ArmalingStarter},
+	{gText_UngodlingStarter},
+	{gText_TumeklingStarter},
+};
+
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -945,6 +960,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
 	[MULTI_POUCH_CRAFT]				   = MULTICHOICE(MultichoiceList_PouchCraft),
 	[MULTI_POUCH_CRAFT2]			   = MULTICHOICE(MultichoiceList_PouchCraft2),
 	[MULTI_CHEAT_MENU]				   = MULTICHOICE(MultichoiceList_CheatMenu),
+	[MULTI_STARTER_FREE]			   = MULTICHOICE(MultichoiceList_StarterFree),
+	[MULTI_STARTER_MEMBER]			   = MULTICHOICE(MultichoiceList_StarterMember),
 	
 	
 };

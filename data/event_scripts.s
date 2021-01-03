@@ -1225,17 +1225,17 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 
 	.include "data/maps/Tutorial_Island_Church/scripts.inc"
 
-	.include "data/maps/AlKharid_Mines_1/scripts.inc"
+	.include "data/maps/Al_Kharid_Mines_B1F/scripts.inc"
 
-	.include "data/maps/AlKharid_Mines_2/scripts.inc"
+	.include "data/maps/Al_Kharid_Mines_B2F/scripts.inc"
 
-	.include "data/maps/AlKharid_Mines_3/scripts.inc"
+	.include "data/maps/Kalphite_Caves_B4F/scripts.inc"
 
-	.include "data/maps/Kalphite_Caves_1/scripts.inc"
+	.include "data/maps/Kalphite_Caves_B1F/scripts.inc"
 
-	.include "data/maps/Kaplhite_Caves_2/scripts.inc"
+	.include "data/maps/Kalphite_Caves_B2F/scripts.inc"
 
-	.include "data/maps/Kalphite_Caves_3/scripts.inc"
+	.include "data/maps/Kalphite_Caves_B3F/scripts.inc"
 
 	.include "data/maps/Tzhaar_1F/scripts.inc"
 
@@ -1243,7 +1243,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 
 	.include "data/maps/Tzhaar_FightCaves/scripts.inc"
 
-	.include "data/maps/Karamja/scripts.inc"
+	.include "data/maps/Route39/scripts.inc"
 
 	.include "data/maps/Varrock_House_1/scripts.inc"
 

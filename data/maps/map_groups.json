@@ -41,7 +41,17 @@
     "gMapGroup37",
     "gMapGroup38",
     "gMapGroup39",
-    "gMapGroup40"
+    "gMapGroup40",
+    "gMapGroup41",
+    "gMapGroup42",
+    "gMapGroup43",
+    "gMapGroup44",
+    "gMapGroup45",
+    "gMapGroup46",
+    "gMapGroup47",
+    "gMapGroup48",
+    "gMapGroup49",
+    "gMapGroup50"
   ],
   "gMapGroup0": [
     "PetalburgCity",
@@ -630,6 +640,7 @@
     "Route124_DivingTreasureHuntersHouse"
   ],
   "gMapGroup34": [
+    "Tutorial_Island",
     "Lumbridge",
     "Draynor",
     "Port_Sarim",
@@ -644,8 +655,10 @@
     "AlKharid",
     "MusaPoint",
     "Taverley",
-    "Tutorial_Island",
-    "Karamja"
+    "Lumbridge_Swamp",
+    "Mill_Lane_Mill",
+    "Draynor_Manor",
+    "MudskipperPoint"
   ],
   "gMapGroup35": [
     "Route1",
@@ -685,27 +698,28 @@
     "Route35",
     "Route36",
     "Route37",
-    "Route38"
+    "Route38",
+    "Route39"
   ],
   "gMapGroup36": [
-    "Lumbridge_Swamp",
-    "Mill_Lane_Mill",
-    "Draynor_Manor",
-    "MudskipperPoint",
-    "Lumbridge_Forest",
     "Tutorial_Island_Cave",
+    "Lumbridge_Forest",
     "Underwater_Lumbridge",
-    "Kalphite_Caves_1",
-    "Kaplhite_Caves_2",
-    "Kalphite_Caves_3",
-    "AlKharid_Mines_1",
-    "AlKharid_Mines_2",
-    "AlKharid_Mines_3",
-    "Tzhaar_1F",
-    "Giant_Mole_Cave",
-    "Tzhaar_FightCaves"
+    "Al_Kharid_Mines_B1F",
+    "Al_Kharid_Mines_B2F",
+    "Kalphite_Caves_B1F",
+    "Kalphite_Caves_B2F",
+    "Kalphite_Caves_B3F",
+    "Kalphite_Caves_B4F",
+    "Giant_Mole_Cave"
   ],
   "gMapGroup37": [
+    "Tutorial_Island_Lab_Up",
+    "Tutorial_Island_Lab_Down",
+    "Tutorial_Island_Shop",
+    "Tutorial_Island_Church"
+  ],
+  "gMapGroup38": [
     "Lumbridge_House_BobsAxes1",
     "Lumbridge_House_BobsAxes2",
     "Lumbridge_House_1",
@@ -724,16 +738,25 @@
     "Lumbridge_Castle_3",
     "Lumbridge_Castle_4"
   ],
-  "gMapGroup38": [
-    "Mill_Lane_Mill_1",
-    "Mill_Lane_Mill_2",
-    "Mill_Lane_Mill_3",
-    "Varrock_House_1",
-    "Varrock_House_1_Up",
+  "gMapGroup39": [
+
+  ],
+  "gMapGroup40": [
+
+  ],
+  "gMapGroup41": [
+
+  ],
+  "gMapGroup42": [
+
+  ],
+  "gMapGroup43": [
     "Varrock_Thessalia_Shop",
     "Varrock_Thessalia_Shop_Up",
     "Varrock_Lowe_Shop",
     "Varrock_Lowe_Shop_Up",
+    "Varrock_House_1",
+    "Varrock_House_1_Up",
     "Varrock_House_2",
     "Varrock_House_3",
     "Varrock_House_4",
@@ -742,14 +765,30 @@
     "Varrock_Weapon_Shop",
     "Varrock_Weapon_Shop_Up"
   ],
-  "gMapGroup39": [
-    "Route1_House_Fred",
-    "Route1_House_1"
+  "gMapGroup44": [
+
   ],
-  "gMapGroup40": [
-    "Tutorial_Island_Lab_Up",
-    "Tutorial_Island_Lab_Down",
-    "Tutorial_Island_Shop",
-    "Tutorial_Island_Church"
+  "gMapGroup45": [
+
+  ],
+  "gMapGroup46": [
+
+  ],
+  "gMapGroup47": [
+
+  ],
+  "gMapGroup48": [
+
+  ],
+  "gMapGroup49": [
+    "Tzhaar_1F",
+    "Tzhaar_FightCaves"
+  ],
+  "gMapGroup50": [
+    "Route1_House_Fred",
+    "Route1_House_1",
+    "Mill_Lane_Mill_1",
+    "Mill_Lane_Mill_2",
+    "Mill_Lane_Mill_3"
   ]
 }

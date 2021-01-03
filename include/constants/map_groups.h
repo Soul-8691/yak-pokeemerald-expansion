@@ -1,6 +1,10 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
+//
+// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
+//
+
 // Map Group 0
 #define MAP_PETALBURG_CITY      (0 | (0 << 8))
 #define MAP_SLATEPORT_CITY      (1 | (0 << 8))
@@ -588,22 +592,25 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // Map Group 34
-#define MAP_LUMBRIDGE         (0 | (34 << 8))
-#define MAP_DRAYNOR           (1 | (34 << 8))
-#define MAP_PORT_SARIM        (2 | (34 << 8))
-#define MAP_RIMMINGTON        (3 | (34 << 8))
-#define MAP_FALADOR           (4 | (34 << 8))
-#define MAP_VARROCK           (5 | (34 << 8))
-#define MAP_VARROCK_NORTH     (6 | (34 << 8))
-#define MAP_BARBARIAN_VILLAGE (7 | (34 << 8))
-#define MAP_GOBLIN_VILLAGE    (8 | (34 << 8))
-#define MAP_DWARVEN_MINES     (9 | (34 << 8))
-#define MAP_EDGEVILLE         (10 | (34 << 8))
-#define MAP_AL_KHARID         (11 | (34 << 8))
-#define MAP_MUSA_POINT        (12 | (34 << 8))
-#define MAP_TAVERLEY          (13 | (34 << 8))
-#define MAP_TUTORIAL_ISLAND   (14 | (34 << 8))
-#define MAP_KARAMJA           (15 | (34 << 8))
+#define MAP_TUTORIAL_ISLAND   (0 | (34 << 8))
+#define MAP_LUMBRIDGE         (1 | (34 << 8))
+#define MAP_DRAYNOR           (2 | (34 << 8))
+#define MAP_PORT_SARIM        (3 | (34 << 8))
+#define MAP_RIMMINGTON        (4 | (34 << 8))
+#define MAP_FALADOR           (5 | (34 << 8))
+#define MAP_VARROCK           (6 | (34 << 8))
+#define MAP_VARROCK_NORTH     (7 | (34 << 8))
+#define MAP_BARBARIAN_VILLAGE (8 | (34 << 8))
+#define MAP_GOBLIN_VILLAGE    (9 | (34 << 8))
+#define MAP_DWARVEN_MINES     (10 | (34 << 8))
+#define MAP_EDGEVILLE         (11 | (34 << 8))
+#define MAP_AL_KHARID         (12 | (34 << 8))
+#define MAP_MUSA_POINT        (13 | (34 << 8))
+#define MAP_TAVERLEY          (14 | (34 << 8))
+#define MAP_LUMBRIDGE_SWAMP   (15 | (34 << 8))
+#define MAP_MILL_LANE_MILL    (16 | (34 << 8))
+#define MAP_DRAYNOR_MANOR     (17 | (34 << 8))
+#define MAP_MUDSKIPPER_POINT  (18 | (34 << 8))
 
 // Map Group 35
 #define MAP_ROUTE1  (0 | (35 << 8))
@@ -644,72 +651,89 @@
 #define MAP_ROUTE36 (35 | (35 << 8))
 #define MAP_ROUTE37 (36 | (35 << 8))
 #define MAP_ROUTE38 (37 | (35 << 8))
+#define MAP_ROUTE39 (38 | (35 << 8))
 
 // Map Group 36
-#define MAP_LUMBRIDGE_SWAMP      (0 | (36 << 8))
-#define MAP_MILL_LANE_MILL       (1 | (36 << 8))
-#define MAP_DRAYNOR_MANOR        (2 | (36 << 8))
-#define MAP_MUDSKIPPER_POINT     (3 | (36 << 8))
-#define MAP_LUMBRIDGE_FOREST     (4 | (36 << 8))
-#define MAP_TUTORIAL_ISLAND_CAVE (5 | (36 << 8))
-#define MAP_UNDERWATER_LUMBRIDGE (6 | (36 << 8))
-#define MAP_KALPHITE_CAVES_1     (7 | (36 << 8))
-#define MAP_KAPLHITE_CAVES_2     (8 | (36 << 8))
-#define MAP_KALPHITE_CAVES_3     (9 | (36 << 8))
-#define MAP_AL_KHARID_MINES_1    (10 | (36 << 8))
-#define MAP_AL_KHARID_MINES_2    (11 | (36 << 8))
-#define MAP_AL_KHARID_MINES_3    (12 | (36 << 8))
-#define MAP_TZHAAR_1F            (13 | (36 << 8))
-#define MAP_GIANT_MOLE_CAVE      (14 | (36 << 8))
-#define MAP_TZHAAR_FIGHT_CAVES   (15 | (36 << 8))
+#define MAP_TUTORIAL_ISLAND_CAVE (0 | (36 << 8))
+#define MAP_LUMBRIDGE_FOREST     (1 | (36 << 8))
+#define MAP_UNDERWATER_LUMBRIDGE (2 | (36 << 8))
+#define MAP_AL_KHARID_MINES_B1F  (3 | (36 << 8))
+#define MAP_AL_KHARID_MINES_B2F  (4 | (36 << 8))
+#define MAP_KALPHITE_CAVES_B1F   (5 | (36 << 8))
+#define MAP_KALPHITE_CAVES_B2F   (6 | (36 << 8))
+#define MAP_KALPHITE_CAVES_B3F   (7 | (36 << 8))
+#define MAP_KALPHITE_CAVES_B4F   (8 | (36 << 8))
+#define MAP_GIANT_MOLE_CAVE      (9 | (36 << 8))
 
 // Map Group 37
-#define MAP_LUMBRIDGE_HOUSE_BOBS_AXES1 (0 | (37 << 8))
-#define MAP_LUMBRIDGE_HOUSE_BOBS_AXES2 (1 | (37 << 8))
-#define MAP_LUMBRIDGE_HOUSE_1          (2 | (37 << 8))
-#define MAP_LUMBRIDGE_HOUSE_2          (3 | (37 << 8))
-#define MAP_LUMBRIDGE_HOUSE_RODDECK1   (4 | (37 << 8))
-#define MAP_LUMBRIDGE_HOUSE_RODDECK2   (5 | (37 << 8))
-#define MAP_LUMBRIDGE_HOUSE_STARTER1   (6 | (37 << 8))
-#define MAP_LUMBRIDGE_HOUSE_STARTER2   (7 | (37 << 8))
-#define MAP_LUMBRIDGE_GENERAL_STORE    (8 | (37 << 8))
-#define MAP_LUMBRIDGE_GENERAL_STORE2   (9 | (37 << 8))
-#define MAP_LUMBRIDGE_HOUSE_3          (10 | (37 << 8))
-#define MAP_LUMBRIDGE_BANK             (11 | (37 << 8))
-#define MAP_LUMBRIDGE_HOUSE_4          (12 | (37 << 8))
-#define MAP_LUMBRIDGE_CASTLE_1         (13 | (37 << 8))
-#define MAP_LUMBRIDGE_CASTLE_2         (14 | (37 << 8))
-#define MAP_LUMBRIDGE_CASTLE_3         (15 | (37 << 8))
-#define MAP_LUMBRIDGE_CASTLE_4         (16 | (37 << 8))
+#define MAP_TUTORIAL_ISLAND_LAB_UP   (0 | (37 << 8))
+#define MAP_TUTORIAL_ISLAND_LAB_DOWN (1 | (37 << 8))
+#define MAP_TUTORIAL_ISLAND_SHOP     (2 | (37 << 8))
+#define MAP_TUTORIAL_ISLAND_CHURCH   (3 | (37 << 8))
 
 // Map Group 38
-#define MAP_MILL_LANE_MILL_1          (0 | (38 << 8))
-#define MAP_MILL_LANE_MILL_2          (1 | (38 << 8))
-#define MAP_MILL_LANE_MILL_3          (2 | (38 << 8))
-#define MAP_VARROCK_HOUSE_1           (3 | (38 << 8))
-#define MAP_VARROCK_HOUSE_1_UP        (4 | (38 << 8))
-#define MAP_VARROCK_THESSALIA_SHOP    (5 | (38 << 8))
-#define MAP_VARROCK_THESSALIA_SHOP_UP (6 | (38 << 8))
-#define MAP_VARROCK_LOWE_SHOP         (7 | (38 << 8))
-#define MAP_VARROCK_LOWE_SHOP_UP      (8 | (38 << 8))
-#define MAP_VARROCK_HOUSE_2           (9 | (38 << 8))
-#define MAP_VARROCK_HOUSE_3           (10 | (38 << 8))
-#define MAP_VARROCK_HOUSE_4           (11 | (38 << 8))
-#define MAP_VARROCK_BANK_EAST         (12 | (38 << 8))
-#define MAP_VARROCK_BANK_EAST_UP      (13 | (38 << 8))
-#define MAP_VARROCK_WEAPON_SHOP       (14 | (38 << 8))
-#define MAP_VARROCK_WEAPON_SHOP_UP    (15 | (38 << 8))
+#define MAP_LUMBRIDGE_HOUSE_BOBS_AXES1 (0 | (38 << 8))
+#define MAP_LUMBRIDGE_HOUSE_BOBS_AXES2 (1 | (38 << 8))
+#define MAP_LUMBRIDGE_HOUSE_1          (2 | (38 << 8))
+#define MAP_LUMBRIDGE_HOUSE_2          (3 | (38 << 8))
+#define MAP_LUMBRIDGE_HOUSE_RODDECK1   (4 | (38 << 8))
+#define MAP_LUMBRIDGE_HOUSE_RODDECK2   (5 | (38 << 8))
+#define MAP_LUMBRIDGE_HOUSE_STARTER1   (6 | (38 << 8))
+#define MAP_LUMBRIDGE_HOUSE_STARTER2   (7 | (38 << 8))
+#define MAP_LUMBRIDGE_GENERAL_STORE    (8 | (38 << 8))
+#define MAP_LUMBRIDGE_GENERAL_STORE2   (9 | (38 << 8))
+#define MAP_LUMBRIDGE_HOUSE_3          (10 | (38 << 8))
+#define MAP_LUMBRIDGE_BANK             (11 | (38 << 8))
+#define MAP_LUMBRIDGE_HOUSE_4          (12 | (38 << 8))
+#define MAP_LUMBRIDGE_CASTLE_1         (13 | (38 << 8))
+#define MAP_LUMBRIDGE_CASTLE_2         (14 | (38 << 8))
+#define MAP_LUMBRIDGE_CASTLE_3         (15 | (38 << 8))
+#define MAP_LUMBRIDGE_CASTLE_4         (16 | (38 << 8))
 
 // Map Group 39
-#define MAP_ROUTE1_HOUSE_FRED (0 | (39 << 8))
-#define MAP_ROUTE1_HOUSE_1    (1 | (39 << 8))
 
 // Map Group 40
-#define MAP_TUTORIAL_ISLAND_LAB_UP   (0 | (40 << 8))
-#define MAP_TUTORIAL_ISLAND_LAB_DOWN (1 | (40 << 8))
-#define MAP_TUTORIAL_ISLAND_SHOP     (2 | (40 << 8))
-#define MAP_TUTORIAL_ISLAND_CHURCH   (3 | (40 << 8))
 
-#define MAP_GROUPS_COUNT 41
+// Map Group 41
+
+// Map Group 42
+
+// Map Group 43
+#define MAP_VARROCK_THESSALIA_SHOP    (0 | (43 << 8))
+#define MAP_VARROCK_THESSALIA_SHOP_UP (1 | (43 << 8))
+#define MAP_VARROCK_LOWE_SHOP         (2 | (43 << 8))
+#define MAP_VARROCK_LOWE_SHOP_UP      (3 | (43 << 8))
+#define MAP_VARROCK_HOUSE_1           (4 | (43 << 8))
+#define MAP_VARROCK_HOUSE_1_UP        (5 | (43 << 8))
+#define MAP_VARROCK_HOUSE_2           (6 | (43 << 8))
+#define MAP_VARROCK_HOUSE_3           (7 | (43 << 8))
+#define MAP_VARROCK_HOUSE_4           (8 | (43 << 8))
+#define MAP_VARROCK_BANK_EAST         (9 | (43 << 8))
+#define MAP_VARROCK_BANK_EAST_UP      (10 | (43 << 8))
+#define MAP_VARROCK_WEAPON_SHOP       (11 | (43 << 8))
+#define MAP_VARROCK_WEAPON_SHOP_UP    (12 | (43 << 8))
+
+// Map Group 44
+
+// Map Group 45
+
+// Map Group 46
+
+// Map Group 47
+
+// Map Group 48
+
+// Map Group 49
+#define MAP_TZHAAR_1F          (0 | (49 << 8))
+#define MAP_TZHAAR_FIGHT_CAVES (1 | (49 << 8))
+
+// Map Group 50
+#define MAP_ROUTE1_HOUSE_FRED (0 | (50 << 8))
+#define MAP_ROUTE1_HOUSE_1    (1 | (50 << 8))
+#define MAP_MILL_LANE_MILL_1  (2 | (50 << 8))
+#define MAP_MILL_LANE_MILL_2  (3 | (50 << 8))
+#define MAP_MILL_LANE_MILL_3  (4 | (50 << 8))
+
+#define MAP_GROUPS_COUNT 51
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

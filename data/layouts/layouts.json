@@ -5087,7 +5087,7 @@
       "width": 42,
       "height": 34,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_AlKharid",
+      "secondary_tileset": "gTileset_Karamja",
       "border_filepath": "data/layouts/MudskipperPoint/border.bin",
       "blockdata_filepath": "data/layouts/MudskipperPoint/map.bin"
     },
@@ -5272,64 +5272,64 @@
       "blockdata_filepath": "data/layouts/Tutorial_Island_Church/map.bin"
     },
     {
-      "id": "LAYOUT_AL_KHARID_MINES_1",
-      "name": "AlKharid_Mines_1_Layout",
+      "id": "LAYOUT_AL_KHARID_MINES_B1F",
+      "name": "Al_Kharid_Mines_B1F_Layout",
       "width": 30,
       "height": 30,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/AlKharid_Mines_1/border.bin",
-      "blockdata_filepath": "data/layouts/AlKharid_Mines_1/map.bin"
+      "border_filepath": "data/layouts/Al_Kharid_Mines_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/Al_Kharid_Mines_B1F/map.bin"
     },
     {
-      "id": "LAYOUT_AL_KHARID_MINES_2",
-      "name": "AlKharid_Mines_2_Layout",
+      "id": "LAYOUT_AL_KHARID_MINES_B2F",
+      "name": "Al_Kharid_Mines_B2F_Layout",
       "width": 40,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_PokeScape_Caves",
-      "border_filepath": "data/layouts/AlKharid_Mines_2/border.bin",
-      "blockdata_filepath": "data/layouts/AlKharid_Mines_2/map.bin"
+      "border_filepath": "data/layouts/Al_Kharid_Mines_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/Al_Kharid_Mines_B2F/map.bin"
     },
     {
-      "id": "LAYOUT_AL_KHARID_MINES_3",
-      "name": "AlKharid_Mines_3_Layout",
+      "id": "LAYOUT_KALPHITE_CAVES_B4F",
+      "name": "Kalphite_Caves_B4F_Layout",
       "width": 40,
       "height": 40,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_PokeScape_Caves",
-      "border_filepath": "data/layouts/AlKharid_Mines_3/border.bin",
-      "blockdata_filepath": "data/layouts/AlKharid_Mines_3/map.bin"
+      "border_filepath": "data/layouts/Kalphite_Caves_B4F/border.bin",
+      "blockdata_filepath": "data/layouts/Kalphite_Caves_B4F/map.bin"
     },
     {
-      "id": "LAYOUT_KALPHITE_CAVES_1",
-      "name": "Kalphite_Caves_1_Layout",
+      "id": "LAYOUT_KALPHITE_CAVES_B1F",
+      "name": "Kalphite_Caves_B1F_Layout",
       "width": 40,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_PokeScape_Caves",
-      "border_filepath": "data/layouts/Kalphite_Caves_1/border.bin",
-      "blockdata_filepath": "data/layouts/Kalphite_Caves_1/map.bin"
+      "border_filepath": "data/layouts/Kalphite_Caves_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/Kalphite_Caves_B1F/map.bin"
     },
     {
-      "id": "LAYOUT_KAPLHITE_CAVES_2",
-      "name": "Kaplhite_Caves_2_Layout",
+      "id": "LAYOUT_KALPHITE_CAVES_B2F",
+      "name": "Kalphite_Caves_B2F_Layout",
       "width": 40,
       "height": 40,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_PokeScape_Caves",
-      "border_filepath": "data/layouts/Kaplhite_Caves_2/border.bin",
-      "blockdata_filepath": "data/layouts/Kaplhite_Caves_2/map.bin"
+      "border_filepath": "data/layouts/Kalphite_Caves_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/Kalphite_Caves_B2F/map.bin"
     },
     {
-      "id": "LAYOUT_KALPHITE_CAVES_3",
-      "name": "Kalphite_Caves_3_Layout",
+      "id": "LAYOUT_KALPHITE_CAVES_B3F",
+      "name": "Kalphite_Caves_B3F_Layout",
       "width": 40,
       "height": 22,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_PokeScape_Caves",
-      "border_filepath": "data/layouts/Kalphite_Caves_3/border.bin",
-      "blockdata_filepath": "data/layouts/Kalphite_Caves_3/map.bin"
+      "border_filepath": "data/layouts/Kalphite_Caves_B3F/border.bin",
+      "blockdata_filepath": "data/layouts/Kalphite_Caves_B3F/map.bin"
     },
     {
       "id": "LAYOUT_TZHAAR_1F",
@@ -5362,14 +5362,14 @@
       "blockdata_filepath": "data/layouts/Tzhaar_FightCaves/map.bin"
     },
     {
-      "id": "LAYOUT_KARAMJA",
-      "name": "Karamja_Layout",
+      "id": "LAYOUT_ROUTE39",
+      "name": "Route39_Layout",
       "width": 49,
       "height": 50,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Karamja",
-      "border_filepath": "data/layouts/Karamja/border.bin",
-      "blockdata_filepath": "data/layouts/Karamja/map.bin"
+      "border_filepath": "data/layouts/Route39/border.bin",
+      "blockdata_filepath": "data/layouts/Route39/map.bin"
     },
     {
       "id": "LAYOUT_VARROCK_HOUSE_1",

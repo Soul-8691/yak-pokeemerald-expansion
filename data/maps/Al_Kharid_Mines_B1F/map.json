@@ -1,7 +1,7 @@
 {
-  "id": "MAP_AL_KHARID_MINES_1",
-  "name": "AlKharid_Mines_1",
-  "layout": "LAYOUT_AL_KHARID_MINES_1",
+  "id": "MAP_AL_KHARID_MINES_B1F",
+  "name": "Al_Kharid_Mines_B1F",
+  "layout": "LAYOUT_AL_KHARID_MINES_B1F",
   "music": "MUS_POKESCAPE_CAVE",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": true,
@@ -105,21 +105,21 @@
       "x": 11,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_AL_KHARID_MINES_1",
+      "dest_map": "MAP_AL_KHARID_MINES_B1F",
       "dest_warp_id": 2
     },
     {
       "x": 5,
       "y": 25,
       "elevation": 0,
-      "dest_map": "MAP_AL_KHARID_MINES_1",
+      "dest_map": "MAP_AL_KHARID_MINES_B1F",
       "dest_warp_id": 1
     },
     {
       "x": 22,
       "y": 18,
       "elevation": 0,
-      "dest_map": "MAP_AL_KHARID_MINES_2",
+      "dest_map": "MAP_AL_KHARID_MINES_B2F",
       "dest_warp_id": 0
     }
   ],

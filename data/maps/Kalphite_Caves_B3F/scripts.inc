@@ -1,4 +1,4 @@
-Kalphite_Caves_3_MapScripts::
+Kalphite_Caves_B3F_MapScripts::
 	.byte 0
 
 

@@ -1270,3 +1270,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Varrock_Weapon_Shop/scripts.inc"
 
 	.include "data/maps/Varrock_Weapon_Shop_Up/scripts.inc"
+
+	.include "data/maps/Varrock_Bank_West/scripts.inc"
+
+	.include "data/maps/Varrock_Bank_West_B1F/scripts.inc"

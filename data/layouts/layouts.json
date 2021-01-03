@@ -5500,6 +5500,26 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Varrock_Weapon_Shop_Up/border.bin",
       "blockdata_filepath": "data/layouts/Varrock_Weapon_Shop_Up/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_BANK_WEST",
+      "name": "Varrock_Bank_West_Layout",
+      "width": 19,
+      "height": 15,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Varrock_Bank_West/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Bank_West/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_BANK_WEST_B1F",
+      "name": "Varrock_Bank_West_B1F_Layout",
+      "width": 11,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Varrock_Bank_West_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Bank_West_B1F/map.bin"
     }
   ]
 }

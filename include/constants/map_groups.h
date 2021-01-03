@@ -708,6 +708,8 @@
 #define MAP_VARROCK_BANK_EAST_UP      (10 | (43 << 8))
 #define MAP_VARROCK_WEAPON_SHOP       (11 | (43 << 8))
 #define MAP_VARROCK_WEAPON_SHOP_UP    (12 | (43 << 8))
+#define MAP_VARROCK_BANK_WEST         (13 | (43 << 8))
+#define MAP_VARROCK_BANK_WEST_B1F     (14 | (43 << 8))
 
 // Map Group 44
 

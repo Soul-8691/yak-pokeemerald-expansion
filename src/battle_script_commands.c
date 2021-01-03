@@ -11830,7 +11830,7 @@ static void Cmd_handleballthrow(void)
 
         if (gLastUsedItem != ITEM_SAFARI_BALL)
         {
-            if (gLastUsedItem == ITEM_MASTER_BALL)
+            if (gLastUsedItem == ITEM_MASTER_BALL|| gLastUsedItem == ITEM_DRAGON_POUCH)
             {
                 gBattleResults.usedMasterBall = TRUE;
             }
@@ -11875,7 +11875,7 @@ static void Cmd_handleballthrow(void)
                 maxShakes = 4;
             }
 
-            if (gLastUsedItem == ITEM_MASTER_BALL)
+            if (gLastUsedItem == ITEM_MASTER_BALL|| gLastUsedItem == ITEM_DRAGON_POUCH)
             {
                 shakes = maxShakes;
             }

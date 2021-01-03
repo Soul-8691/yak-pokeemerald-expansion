@@ -695,6 +695,10 @@
 #define MAP_VARROCK_HOUSE_2           (9 | (38 << 8))
 #define MAP_VARROCK_HOUSE_3           (10 | (38 << 8))
 #define MAP_VARROCK_HOUSE_4           (11 | (38 << 8))
+#define MAP_VARROCK_BANK_EAST         (12 | (38 << 8))
+#define MAP_VARROCK_BANK_EAST_UP      (13 | (38 << 8))
+#define MAP_VARROCK_WEAPON_SHOP       (14 | (38 << 8))
+#define MAP_VARROCK_WEAPON_SHOP_UP    (15 | (38 << 8))
 
 // Map Group 39
 #define MAP_ROUTE1_HOUSE_FRED (0 | (39 << 8))

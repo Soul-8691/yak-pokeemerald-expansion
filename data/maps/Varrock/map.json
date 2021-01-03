@@ -83,10 +83,10 @@
       "dest_warp_id": 1
     },
     {
-      "x": 40,
-      "y": 9,
+      "x": 22,
+      "y": 31,
       "elevation": 0,
-      "dest_map": "MAP_VARROCK_LOWE_SHOP",
+      "dest_map": "MAP_VARROCK_WEAPON_SHOP",
       "dest_warp_id": 1
     },
     {
@@ -109,6 +109,20 @@
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
       "dest_warp_id": 0
+    },
+    {
+      "x": 54,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_VARROCK_BANK_EAST",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 40,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_VARROCK_LOWE_SHOP",
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [

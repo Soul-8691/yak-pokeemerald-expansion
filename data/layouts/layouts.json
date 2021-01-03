@@ -5414,8 +5414,8 @@
     {
       "id": "LAYOUT_VARROCK_LOWE_SHOP",
       "name": "Varrock_Lowe_Shop_Layout",
-      "width": 13,
-      "height": 11,
+      "width": 14,
+      "height": 12,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Varrock_Lowe_Shop/border.bin",
@@ -5424,8 +5424,8 @@
     {
       "id": "LAYOUT_VARROCK_LOWE_SHOP_UP",
       "name": "Varrock_Lowe_Shop_Up_Layout",
-      "width": 12,
-      "height": 11,
+      "width": 8,
+      "height": 10,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Varrock_Lowe_Shop_Up/border.bin",
@@ -5460,6 +5460,46 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Varrock_House_4/border.bin",
       "blockdata_filepath": "data/layouts/Varrock_House_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_BANK_EAST",
+      "name": "Varrock_Bank_East_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Varrock_Bank_East/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Bank_East/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_BANK_EAST_UP",
+      "name": "Varrock_Bank_East_Up_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Varrock_Bank_East_Up/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Bank_East_Up/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_WEAPON_SHOP",
+      "name": "Varrock_Weapon_Shop_Layout",
+      "width": 13,
+      "height": 11,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_Weapon_Shop/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Weapon_Shop/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_WEAPON_SHOP_UP",
+      "name": "Varrock_Weapon_Shop_Up_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_Weapon_Shop_Up/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Weapon_Shop_Up/map.bin"
     }
   ]
 }

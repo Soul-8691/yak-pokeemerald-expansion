@@ -736,7 +736,11 @@
     "Varrock_Lowe_Shop_Up",
     "Varrock_House_2",
     "Varrock_House_3",
-    "Varrock_House_4"
+    "Varrock_House_4",
+    "Varrock_Bank_East",
+    "Varrock_Bank_East_Up",
+    "Varrock_Weapon_Shop",
+    "Varrock_Weapon_Shop_Up"
   ],
   "gMapGroup39": [
     "Route1_House_Fred",

@@ -1,7 +1,7 @@
 {
-  "id": "MAP_VARROCK_LOWE_SHOP",
-  "name": "Varrock_Lowe_Shop",
-  "layout": "LAYOUT_VARROCK_LOWE_SHOP",
+  "id": "MAP_VARROCK_BANK_EAST_UP",
+  "name": "Varrock_Bank_East_Up",
+  "layout": "LAYOUT_VARROCK_BANK_EAST_UP",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
@@ -9,7 +9,7 @@
   "map_type": "MAP_TYPE_NONE",
   "allow_cycling": false,
   "allow_escaping": false,
-  "allow_running": false,
+  "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
@@ -18,18 +18,11 @@
   ],
   "warp_events": [
     {
-      "x": 12,
-      "y": 9,
+      "x": 2,
+      "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_VARROCK_LOWE_SHOP_UP",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 8,
-      "y": 9,
-      "elevation": 0,
-      "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 6
+      "dest_map": "MAP_VARROCK_BANK_EAST",
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [

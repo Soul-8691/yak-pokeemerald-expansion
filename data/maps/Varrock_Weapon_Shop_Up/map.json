@@ -1,13 +1,13 @@
 {
-  "id": "MAP_VARROCK_LOWE_SHOP",
-  "name": "Varrock_Lowe_Shop",
-  "layout": "LAYOUT_VARROCK_LOWE_SHOP",
+  "id": "MAP_VARROCK_WEAPON_SHOP_UP",
+  "name": "Varrock_Weapon_Shop_Up",
+  "layout": "LAYOUT_VARROCK_WEAPON_SHOP_UP",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
-  "allow_cycling": false,
+  "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": false,
   "show_map_name": true,
@@ -18,18 +18,11 @@
   ],
   "warp_events": [
     {
-      "x": 12,
-      "y": 9,
+      "x": 1,
+      "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_VARROCK_LOWE_SHOP_UP",
+      "dest_map": "MAP_VARROCK_WEAPON_SHOP",
       "dest_warp_id": 0
-    },
-    {
-      "x": 8,
-      "y": 9,
-      "elevation": 0,
-      "dest_map": "MAP_VARROCK",
-      "dest_warp_id": 6
     }
   ],
   "coord_events": [

@@ -5185,7 +5185,7 @@
       "id": "LAYOUT_ROUTE1_HOUSE_1",
       "name": "Route1_House_1_Layout",
       "width": 10,
-      "height": 10,
+      "height": 12,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Lumbridge",
       "border_filepath": "data/layouts/Route1_House_1/border.bin",
@@ -5217,7 +5217,7 @@
       "width": 50,
       "height": 50,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Lumbridge",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Tutorial_Island_Cave/border.bin",
       "blockdata_filepath": "data/layouts/Tutorial_Island_Cave/map.bin"
     },

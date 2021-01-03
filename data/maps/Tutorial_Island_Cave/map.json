@@ -67,45 +67,6 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 28,
-      "y": 36,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_1"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 29,
-      "y": 33,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_2"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 24,
-      "y": 36,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_StrengthBoulder",
-      "flag": "0"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_gymleaders_7",
       "x": 24,
       "y": 2,
@@ -120,8 +81,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_COPPER_ORE",
-      "x": 20,
-      "y": 32,
+      "x": 30,
+      "y": 33,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -198,8 +159,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MITHRIL_ORE",
-      "x": 24,
-      "y": 30,
+      "x": 29,
+      "y": 31,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -211,8 +172,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_COAL_ORE",
-      "x": 23,
-      "y": 31,
+      "x": 27,
+      "y": 38,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -224,7 +185,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_IRON_ORE",
-      "x": 22,
+      "x": 33,
       "y": 32,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -237,8 +198,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TIN_ORE",
-      "x": 21,
-      "y": 32,
+      "x": 29,
+      "y": 38,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -259,7 +220,7 @@
     },
     {
       "x": 5,
-      "y": 6,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_TUTORIAL_ISLAND",
       "dest_warp_id": 0

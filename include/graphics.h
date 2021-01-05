@@ -7892,6 +7892,19 @@ extern const u32 gBattleTerrainPalette_StadiumPhoebe[];
 extern const u32 gBattleTerrainPalette_StadiumGlacia[];
 extern const u32 gBattleTerrainPalette_StadiumDrake[];
 extern const u32 gBattleTerrainPalette_StadiumWallace[];
+//POKESCAPE
+extern const u32 gBattleTerrainTiles_Wilderness[];
+extern const u32 gBattleTerrainTilemap_Wilderness[];
+extern const u32 gBattleTerrainAnimTiles_Wilderness[];
+extern const u32 gBattleTerrainAnimTilemap_Wilderness[];
+extern const u32 gBattleTerrainPalette_Wilderness[];
+
+extern const u32 gBattleTerrainTiles_Wheat[];
+extern const u32 gBattleTerrainTilemap_Wheat[];
+extern const u32 gBattleTerrainAnimTiles_Wheat[];
+extern const u32 gBattleTerrainAnimTilemap_Wheat[];
+extern const u32 gBattleTerrainPalette_Wheat[];
+
 
 // pokedex
 extern const u32 gPokedexInterface_Gfx[];

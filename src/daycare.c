@@ -28,7 +28,7 @@ static void ClearDaycareMonMail(struct DayCareMail *mail);
 static void SetInitialEggData(struct Pokemon *mon, u16 species, struct DayCare *daycare);
 static u8 GetDaycareCompatibilityScore(struct DayCare *daycare);
 static void DaycarePrintMonInfo(u8 windowId, s32 daycareSlotId, u8 y);
-//pokescape
+//pokescape checks for creature creation
 static u8 isMonAFrog(u16 species);
 static u8 isMonAnEel(u16 species);
 static u8 isMonACow(u16 species);
@@ -38,9 +38,34 @@ static u8 isMonAChicken(u16 species);
 static u8 isMonASalamander(u16 species);
 static u8 isMonALobster(u16 species);
 static u8 isMonAJubbly(u16 species);
+static u8 isMonASheep(u16 species);
+static u8 isMonAStrangePlant(u16 species);
+static u8 isMonARat(u16 species);
+static u8 isMonADog(u16 species);
 
+//pokescape checks for god birds
 static u8 isMonAGuthling(u16 species);
 static u8 isMonAZamling(u16 species);
+static u8 isMonASaraling(u16 species);
+static u8 isMonAnArmaling(u16 species);
+static u8 isMonABandling(u16 species);
+static u8 isMonAZaroling(u16 species);
+static u8 isMonASereling(u16 species);
+static u8 isMonAUngodling(u16 species);
+static u8 isMonATumekling(u16 species);
+static u8 isMonAGodbird(u16 species);
+
+//pokescape check for birds
+static u8 isMonARocling(u16 species);
+static u8 isMonAChompy(u16 species);
+static u8 isMonARaven(u16 species);
+static u8 isMonAVulture(u16 species);
+static u8 isMonASeagull(u16 species);
+static u8 isMonARebornPhoenix(u16 species);
+static u8 isMonARebirthPhoenix(u16 species);
+static u8 isMonABirdNestBird(u16 species);
+
+
 
 // RAM buffers used to assist with BuildEggMoveset()
 EWRAM_DATA static u16 sHatchedEggLevelUpMoves[EGG_LVL_UP_MOVES_ARRAY_COUNT] = {0};
@@ -446,7 +471,7 @@ static s32 GetParentToInheritNature(struct DayCare *daycare)
     for (dittoCount = 0, i = 0; i < DAYCARE_MON_COUNT; i++)
     {
         species[i] = GetBoxMonData(&daycare->mons[i].mon, MON_DATA_SPECIES);
-        if (species[i] == SPECIES_DITTO)
+        if (species[i] == SPECIES_DITTO || species[i] == SPECIES_CABBAGE )
             dittoCount++, parent = i;
     }
 
@@ -754,16 +779,29 @@ static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare
         {
             *species = SPECIES_MARILL;
         }
-		
-		if ((*species == SPECIES_GUTHLING && motherItem == ITEM_RARE_CANDY) || (*species == SPECIES_GUTHLING && fatherItem == ITEM_RARE_CANDY))
-        {
-            *species = SPECIES_BIRDS_NEST_GOD_FORM;
-        }
-		if ((*species == SPECIES_ZAMLING && motherItem == ITEM_RARE_CANDY) || (*species == SPECIES_ZAMLING && fatherItem == ITEM_RARE_CANDY))
-        {
-            *species = SPECIES_BIRDS_NEST_GOD_FORM;
-        }
     }
+	
+	
+	
+	if (isMonAGodbird(*species))
+	{
+		motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
+        fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
+		if (motherItem == ITEM_RARE_CANDY || fatherItem == ITEM_RARE_CANDY){
+			*species = SPECIES_BIRDS_NEST_GOD_FORM;
+		}			
+	
+	}
+	
+	if (isMonABirdNestBird(*species))
+	{
+		motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
+        fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
+		if (motherItem == ITEM_RARE_CANDY || fatherItem == ITEM_RARE_CANDY){
+			*species = SPECIES_BIRD_NEST;
+		}			
+	
+	}
 }
 
 static void GiveVoltTackleIfLightBall(struct Pokemon *mon, struct DayCare *daycare)
@@ -787,7 +825,7 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
     for (i = 0; i < DAYCARE_MON_COUNT; i++)
     {
         species[i] = GetBoxMonData(&daycare->mons[i].mon, MON_DATA_SPECIES);
-        if (species[i] == SPECIES_DITTO)
+        if (species[i] == SPECIES_DITTO || species[i] == SPECIES_CABBAGE)
         {
             parentSlots[0] = i ^ 1;
             parentSlots[1] = i;
@@ -854,6 +892,24 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
 	}
 	//
 	
+	//check if mother is a dog/sheep and check if the father is the opposite
+	if (isMonADog(species[parentSlots[0]]) && isMonASheep(species[parentSlots[1]])){
+		eggSpecies = SPECIES_EXPERIMENT_3_FORM;
+	}
+	if (isMonADog(species[parentSlots[1]]) && isMonASheep(species[parentSlots[0]])){
+		eggSpecies = SPECIES_EXPERIMENT_3_FORM;
+	}	
+	
+	//check if mother is a rat/strange plant and check if father is the opposite
+	if (isMonARat(species[parentSlots[0]]) && isMonAStrangePlant(species[parentSlots[1]])){
+		eggSpecies = SPECIES_EXPERIMENT_2_FORM;
+	}
+	if (isMonARat(species[parentSlots[1]]) && isMonAStrangePlant(species[parentSlots[0]])){
+		eggSpecies = SPECIES_EXPERIMENT_2_FORM;
+	}	
+	
+	
+	// 
     if (eggSpecies == SPECIES_NIDORAN_F && daycare->offspringPersonality & EGG_GENDER_MALE)
     {
         eggSpecies = SPECIES_NIDORAN_M;
@@ -863,20 +919,77 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
         eggSpecies = SPECIES_VOLBEAT;
     }
 	
-	//god bird egg shit
+	//if god bird is being bred get base form instead of god nest 
+	//see altered with incense for god nest breeding
 	
 	if (eggSpecies == SPECIES_BIRDS_NEST_GOD_FORM){
+		if (species[parentSlots[0]] == SPECIES_PIGEON){
+			eggSpecies = SPECIES_PIGEON;
+		}
+		if (species[parentSlots[0]] == SPECIES_PHEASANT){
+			eggSpecies = SPECIES_PHEASANT;
+		}
+		if (isMonASaraling(species[parentSlots[0]])){
+			eggSpecies = SPECIES_SARALING;
+		}
+		if (isMonAnArmaling(species[parentSlots[0]])){
+			eggSpecies = SPECIES_ARMALING;
+		}
+		if (isMonABandling(species[parentSlots[0]])){
+			eggSpecies = SPECIES_BANDLING;
+		}
+		if (isMonAZaroling(species[parentSlots[0]])){
+			eggSpecies = SPECIES_ZAROLING;
+		}
+		if (isMonASereling(species[parentSlots[0]])){
+			eggSpecies = SPECIES_SERELING;
+		}
+		if (isMonAUngodling(species[parentSlots[0]])){
+			eggSpecies = SPECIES_UNGODLING;
+		}
+		if (isMonATumekling(species[parentSlots[0]])){
+			eggSpecies = SPECIES_TUMEKLING;
+		}
+
+		
+	}
+	// check base species for birds that evolve from bird nest
+	//to get bird nest need held item see changing with incense
+	if (eggSpecies == SPECIES_BIRD_NEST){
 		if (isMonAGuthling(species[parentSlots[0]])){
 			eggSpecies = SPECIES_GUTHLING;
 		}
 		if (isMonAZamling(species[parentSlots[0]])){
 			eggSpecies = SPECIES_ZAMLING;
 		}
+		if (isMonARocling(species[parentSlots[0]])){
+			eggSpecies = SPECIES_ROCLING;
+		}
+		if (isMonAChompy(species[parentSlots[0]])){
+			eggSpecies = SPECIES_CHOMPY;
+		}
+		if (isMonARaven(species[parentSlots[0]])){
+			eggSpecies = SPECIES_RAVENLING;
+		}
+		if (isMonAVulture(species[parentSlots[0]])){
+			eggSpecies = SPECIES_VULTLING;
+		}
+		if (isMonASeagull(species[parentSlots[0]])){
+			eggSpecies = SPECIES_SEAGULL_NORMAL_FORM;
+		}
+		if (isMonARebirthPhoenix(species[parentSlots[0]])){
+			eggSpecies = SPECIES_PHOENLING_REBIRTH_FORM;
+		}
+		if (isMonARebornPhoenix(species[parentSlots[0]])){
+			eggSpecies = SPECIES_PHOENLING_REBORN_FORM;
+		}
+
 		
 	}
 
     // Make Ditto the "mother" slot if the other daycare mon is male.
-    if (species[parentSlots[1]] == SPECIES_DITTO && GetBoxMonGender(&daycare->mons[parentSlots[0]].mon) != MON_FEMALE)
+    if ((species[parentSlots[1]] == SPECIES_DITTO && GetBoxMonGender(&daycare->mons[parentSlots[0]].mon) != MON_FEMALE) ||
+		(species[parentSlots[1]] == SPECIES_CABBAGE && GetBoxMonGender(&daycare->mons[parentSlots[0]].mon) != MON_FEMALE))
     {
         u8 ditto = parentSlots[1];
         parentSlots[1] = parentSlots[0];
@@ -1483,6 +1596,51 @@ bool8 isMonAJubbly(u16 species){
 	}
 }
 
+bool8 isMonARat(u16 species){
+	u16 eggSpecies2;
+	eggSpecies2 = GetEggSpecies(species);
+	if (eggSpecies2 == SPECIES_RAT_NORMAL_FORM || eggSpecies2 == SPECIES_RAT_KING_FORM || eggSpecies2 == SPECIES_RAT_CRYPT_FORM) {
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonAStrangePlant(u16 species){
+	u16 eggSpecies2;
+	eggSpecies2 = GetEggSpecies(species);
+	if (eggSpecies2 == SPECIES_PLANT_STRANGE_FORM) {
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+
+bool8 isMonASheep(u16 species){
+	u16 eggSpecies2;
+	eggSpecies2 = GetEggSpecies(species);
+	if (eggSpecies2 == SPECIES_LAMB) {
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+bool8 isMonADog(u16 species){
+	u16 eggSpecies2;
+	eggSpecies2 = GetEggSpecies(species);
+	if (eggSpecies2 == SPECIES_PUPPY_PUP_FORM || eggSpecies2 == SPECIES_PUPPY_MUTT_FORM) {
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+//god birds
 bool8 isMonAGuthling(u16 species){
 	if (species == SPECIES_GUTHLING || species == SPECIES_GUTHBIRD || species == SPECIES_GUTHRAPTOR){
 		return TRUE;
@@ -1500,3 +1658,170 @@ bool8 isMonAZamling(u16 species){
 		return FALSE;
 	}
 }
+
+bool8 isMonASaraling(u16 species){
+	if (species == SPECIES_SARALING || species == SPECIES_SARABIRD || species == SPECIES_SARAOWL){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonAnArmaling(u16 species){
+	if (species == SPECIES_ARMALING || species == SPECIES_ARMABIRD || species == SPECIES_ARMAFALCON){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonABandling(u16 species){
+	if (species == SPECIES_BANDLING || species == SPECIES_BANDBIRD || species == SPECIES_BANDEAGLE){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonAZaroling(u16 species){
+	if (species == SPECIES_ZAROLING || species == SPECIES_ZAROBIRD || species == SPECIES_ZARAVEN){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonASereling(u16 species){
+	if (species == SPECIES_SERELING || species == SPECIES_SEREBIRD || species == SPECIES_SEREPEA){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonAUngodling(u16 species){
+	if (species == SPECIES_UNGODLING || species == SPECIES_UNGODBIRD || species == SPECIES_UNGODGEON){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonATumekling(u16 species){
+	if (species == SPECIES_TUMEKLING || species == SPECIES_TUMEKBIRD || species == SPECIES_TUMEKIBIS){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonAGodbird(u16 species){
+	if (species == SPECIES_GUTHLING || species == SPECIES_ZAMLING || species == SPECIES_SARALING 
+	|| species == SPECIES_ARMALING || species == SPECIES_BANDLING || species == SPECIES_ZAROLING
+	|| species == SPECIES_SERELING || species == SPECIES_UNGODLING || species == SPECIES_TUMEKLING)
+	
+	{
+		return TRUE;
+	}
+	else {
+		return FALSE;
+	}
+}
+
+//bird nest birds
+bool8 isMonARocling(u16 species){
+	if (species == SPECIES_ROCLING || species == SPECIES_ROC){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+bool8 isMonAChompy(u16 species){
+	if (species == SPECIES_CHOMPY || species == SPECIES_JUBBLY ||
+		species == SPECIES_TERRORBIRD_NORMAL_FORM || species == SPECIES_TERRORBIRD_WARPED_FORM ||
+		species == SPECIES_TERRORBIRD_SPIRIT_FORM){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+bool8 isMonARaven(u16 species){
+	if (species == SPECIES_RAVENLING || species == SPECIES_RAVEN_NORMAL_FORM ||
+	    species == SPECIES_RAVEN_NEVERMORE_FORM || species == SPECIES_RAVEN_SPOOKY_FORM ||
+		species == SPECIES_RAVEN_CRYSTAL_FORM)
+	{
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+bool8 isMonAVulture(u16 species){
+	if (species == SPECIES_VULTLING || species == SPECIES_VULTURE){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+bool8 isMonASeagull(u16 species){
+	if (species == SPECIES_SEAGULL_NORMAL_FORM || 
+		species == SPECIES_PELICAN ||
+		species == SPECIES_ALBATROSS ||
+		species == SPECIES_SEAGULL_HATTENKRAPPER_FORM ||
+		species == SPECIES_SEAGULL_KOPPENPLOPPEN_FORM ||
+		species == SPECIES_SEAGULL_STEVEN_FORM ||
+		species == SPECIES_IBIS)
+	{
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+bool8 isMonARebirthPhoenix(u16 species){
+	if (species == SPECIES_PHOENLING_REBIRTH_FORM || species == SPECIES_PHOENIX_REBIRTH_FORM){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+bool8 isMonARebornPhoenix(u16 species){
+	if (species == SPECIES_PHOENLING_REBORN_FORM || species == SPECIES_PHOENIX_REBORN_FORM){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonABirdNestBird(u16 species){
+	if (species == SPECIES_PIGEON ||
+		species == SPECIES_PHEASANT ||
+		species == SPECIES_ROCLING ||
+		species == SPECIES_CHOMPY ||
+		species == SPECIES_RAVENLING ||
+		species == SPECIES_VULTLING ||
+		species == SPECIES_SEAGULL_NORMAL_FORM ||
+		species == SPECIES_PHOENLING_REBIRTH_FORM ||
+		species == SPECIES_PHOENLING_REBORN_FORM)
+	{
+		return TRUE;
+	}
+	else {
+		return FALSE;
+	}
+}
+
+
+

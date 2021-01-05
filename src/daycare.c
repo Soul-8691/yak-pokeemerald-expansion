@@ -28,6 +28,19 @@ static void ClearDaycareMonMail(struct DayCareMail *mail);
 static void SetInitialEggData(struct Pokemon *mon, u16 species, struct DayCare *daycare);
 static u8 GetDaycareCompatibilityScore(struct DayCare *daycare);
 static void DaycarePrintMonInfo(u8 windowId, s32 daycareSlotId, u8 y);
+//pokescape
+static u8 isMonAFrog(u16 species);
+static u8 isMonAnEel(u16 species);
+static u8 isMonACow(u16 species);
+static u8 isMonAUnicorn(u16 species);
+static u8 isMonASpider(u16 species);
+static u8 isMonAChicken(u16 species);
+static u8 isMonASalamander(u16 species);
+static u8 isMonALobster(u16 species);
+static u8 isMonAJubbly(u16 species);
+
+static u8 isMonAGuthling(u16 species);
+static u8 isMonAZamling(u16 species);
 
 // RAM buffers used to assist with BuildEggMoveset()
 EWRAM_DATA static u16 sHatchedEggLevelUpMoves[EGG_LVL_UP_MOVES_ARRAY_COUNT] = {0};
@@ -728,7 +741,7 @@ void RejectEggFromDayCare(void)
 static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare)
 {
     u16 motherItem, fatherItem;
-    if (*species == SPECIES_WYNAUT || *species == SPECIES_AZURILL)
+    if (*species == SPECIES_WYNAUT || *species == SPECIES_AZURILL || *species == SPECIES_GUTHLING || *species == SPECIES_ZAMLING)
     {
         motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
         fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
@@ -740,6 +753,15 @@ static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare
         if (*species == SPECIES_AZURILL && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
         {
             *species = SPECIES_MARILL;
+        }
+		
+		if ((*species == SPECIES_GUTHLING && motherItem == ITEM_RARE_CANDY) || (*species == SPECIES_GUTHLING && fatherItem == ITEM_RARE_CANDY))
+        {
+            *species = SPECIES_BIRDS_NEST_GOD_FORM;
+        }
+		if ((*species == SPECIES_ZAMLING && motherItem == ITEM_RARE_CANDY) || (*species == SPECIES_ZAMLING && fatherItem == ITEM_RARE_CANDY))
+        {
+            *species = SPECIES_BIRDS_NEST_GOD_FORM;
         }
     }
 }
@@ -778,6 +800,60 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
     }
 
     eggSpecies = GetEggSpecies(species[parentSlots[0]]);
+	//if mother is a frog/eel check if father is the opposite
+	if (eggSpecies == SPECIES_EEL_SLIMY_FORM && isMonAFrog(species[parentSlots[1]])){
+		eggSpecies = SPECIES_FROGEEL;
+	}
+	if (eggSpecies == SPECIES_FROGSPAWN && isMonAnEel(species[parentSlots[1]])){
+		eggSpecies = SPECIES_FROGEEL;
+	}
+	//
+	
+	//if mother is a cow/unicorn check if the father is the oppsite
+	if (eggSpecies == SPECIES_CALF && isMonAUnicorn(species[parentSlots[1]])){
+		eggSpecies = SPECIES_UNICOW;
+	}
+	if (eggSpecies == SPECIES_FOAL && isMonACow(species[parentSlots[1]])){
+		eggSpecies = SPECIES_UNICOW;
+	}	
+	//
+	
+	//check if mother is a sardine/spider and check if father is opposite
+	if (species[parentSlots[0]] == SPECIES_SARDINE && isMonASpider(species[parentSlots[1]])){
+		eggSpecies = SPECIES_SPIDINE;
+	}
+	if (eggSpecies == SPECIES_SPIDERLING && species[parentSlots[1]] == SPECIES_SARDINE ){
+		eggSpecies = SPECIES_SPIDINE;
+	}
+	//
+	
+	//check if mother is a salamander/chicken and if the father is opposite
+	if (eggSpecies == SPECIES_SALAMANDER_GREEN_FORM && isMonAChicken(species[parentSlots[1]])){
+		eggSpecies = SPECIES_NEWTROOST;
+	}
+	if (eggSpecies == SPECIES_CHICK && isMonASalamander(species[parentSlots[1]])){
+		eggSpecies = SPECIES_NEWTROOST;
+	}
+	//
+	
+	//check if mother is a chicken/swordfish and if the father is opposite
+	if (eggSpecies == SPECIES_CHICK && species[parentSlots[1]] == SPECIES_SWORDFISH){
+		eggSpecies = SPECIES_SWORDCHICK;
+	}
+	if (species[parentSlots[0]] == SPECIES_SWORDFISH && isMonAChicken(species[parentSlots[1]])){
+		eggSpecies = SPECIES_SWORDCHICK;
+	}
+	//
+	
+	//check if mother is a lobster/jubbly and check if the father is the opposite
+	if (isMonALobster(species[parentSlots[0]]) && isMonAJubbly(species[parentSlots[1]])){
+		eggSpecies = SPECIES_JUBSTER;
+	}
+	if (isMonALobster(species[parentSlots[1]]) && isMonAJubbly(species[parentSlots[0]])){
+		eggSpecies = SPECIES_JUBSTER;
+	}
+	//
+	
     if (eggSpecies == SPECIES_NIDORAN_F && daycare->offspringPersonality & EGG_GENDER_MALE)
     {
         eggSpecies = SPECIES_NIDORAN_M;
@@ -786,6 +862,18 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
     {
         eggSpecies = SPECIES_VOLBEAT;
     }
+	
+	//god bird egg shit
+	
+	if (eggSpecies == SPECIES_BIRDS_NEST_GOD_FORM){
+		if (isMonAGuthling(species[parentSlots[0]])){
+			eggSpecies = SPECIES_GUTHLING;
+		}
+		if (isMonAZamling(species[parentSlots[0]])){
+			eggSpecies = SPECIES_ZAMLING;
+		}
+		
+	}
 
     // Make Ditto the "mother" slot if the other daycare mon is male.
     if (species[parentSlots[1]] == SPECIES_DITTO && GetBoxMonGender(&daycare->mons[parentSlots[0]].mon) != MON_FEMALE)
@@ -1293,4 +1381,122 @@ void ChooseSendDaycareMon(void)
 {
     ChooseMonForDaycare();
     gMain.savedCallback = CB2_ReturnToField;
+}
+
+//pokescape
+
+bool8 isMonAFrog(u16 species){
+	
+	u16 eggSpecies2;
+	eggSpecies2 = GetEggSpecies(species);
+	if (eggSpecies2 == SPECIES_FROGSPAWN){
+		return TRUE;
+	}
+	else {
+		return FALSE;
+	}
+}
+
+bool8 isMonAnEel(u16 species){
+	u16 eggSpecies2;
+	eggSpecies2 = GetEggSpecies(species);
+	if (eggSpecies2 == SPECIES_EEL_SLIMY_FORM || eggSpecies2 == SPECIES_EEL_MOTTLED_FORM){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonACow(u16 species){
+	u16 eggSpecies2;
+	eggSpecies2 = GetEggSpecies(species);
+	if (eggSpecies2 == SPECIES_CALF) {
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonAUnicorn(u16 species){
+	u16 eggSpecies2;
+	eggSpecies2 = GetEggSpecies(species);
+	if (eggSpecies2 == SPECIES_FOAL) {
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonASpider(u16 species){
+	u16 eggSpecies2;
+	eggSpecies2 = GetEggSpecies(species);
+	if (eggSpecies2 == SPECIES_SPIDERLING) {
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonAChicken(u16 species){
+	u16 eggSpecies2;
+	eggSpecies2 = GetEggSpecies(species);
+	if (eggSpecies2 == SPECIES_CHICK) {
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonASalamander(u16 species){
+	u16 eggSpecies2;
+	eggSpecies2 = GetEggSpecies(species);
+	if (eggSpecies2 == SPECIES_SALAMANDER_GREEN_FORM) {
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonALobster(u16 species){
+	u16 eggSpecies2;
+	eggSpecies2 = GetEggSpecies(species);
+	if (eggSpecies2 == SPECIES_CRAYFISH ||eggSpecies2 == SPECIES_LOBSTER_GRANITE_FORM ) {
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonAJubbly(u16 species){
+	if (species == SPECIES_CHOMPY || species == SPECIES_JUBBLY){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonAGuthling(u16 species){
+	if (species == SPECIES_GUTHLING || species == SPECIES_GUTHBIRD || species == SPECIES_GUTHRAPTOR){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
+}
+
+bool8 isMonAZamling(u16 species){
+	if (species == SPECIES_ZAMLING || species == SPECIES_ZAMBIRD || species == SPECIES_ZAMOHAWK){
+		return TRUE;
+	}
+	else{
+		return FALSE;
+	}
 }

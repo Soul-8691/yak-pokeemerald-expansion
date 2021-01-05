@@ -86,3 +86,29 @@ const u32 gBattleTerrainAnimTilemap_Building[] = INCBIN_U32("graphics/battle_ter
 
 const u32 gBattleTerrainAnimTiles_Rayquaza[] = INCBIN_U32("graphics/battle_terrain/sky/anim_tiles.4bpp.lz");
 const u32 gBattleTerrainAnimTilemap_Rayquaza[] = INCBIN_U32("graphics/battle_terrain/sky/anim_map.bin.lz");
+
+//POKESCAPE
+const u32 gBattleTerrainTiles_Wilderness[] = INCBIN_U32("graphics/battle_terrain/wilderness/tiles.4bpp.lz");
+const u32 gBattleTerrainPalette_Wilderness[] = INCBIN_U32("graphics/battle_terrain/wilderness/palette.gbapal.lz");
+const u32 gBattleTerrainTilemap_Wilderness[] = INCBIN_U32("graphics/battle_terrain/wilderness/map.bin.lz");
+const u32 gBattleTerrainAnimTiles_Wilderness[] = INCBIN_U32("graphics/battle_terrain/wilderness/anim_tiles.4bpp.lz");
+const u32 gBattleTerrainAnimTilemap_Wilderness[] = INCBIN_U32("graphics/battle_terrain/wilderness/anim_map.bin.lz");
+
+const u32 gBattleTerrainTiles_Wheat[] = INCBIN_U32("graphics/battle_terrain/wheat/tiles.4bpp.lz");
+const u32 gBattleTerrainPalette_Wheat[] = INCBIN_U32("graphics/battle_terrain/wheat/palette.gbapal.lz");
+const u32 gBattleTerrainTilemap_Wheat[] = INCBIN_U32("graphics/battle_terrain/wheat/map.bin.lz");
+const u32 gBattleTerrainAnimTiles_Wheat[] = INCBIN_U32("graphics/battle_terrain/wheat/anim_tiles.4bpp.lz");
+const u32 gBattleTerrainAnimTilemap_Wheat[] = INCBIN_U32("graphics/battle_terrain/wheat/anim_map.bin.lz");
+
+
+
+
+
+
+
+
+
+
+
+
+

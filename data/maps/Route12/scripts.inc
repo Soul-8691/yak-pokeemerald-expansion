@@ -3,8 +3,8 @@ Route12_MapScripts::
 	.byte 0
 
 Route12_MapScripts_MAP_SCRIPT_ON_TRANSITION:
-	random 10
-	compare VAR_RESULT, 9
+	random 100
+	compare VAR_RESULT, 99
 	goto_if_eq Route12_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
 	setflag FLAG_UNUSED_0x493
 Route12_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:

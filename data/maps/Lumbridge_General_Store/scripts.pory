@@ -1,0 +1,24 @@
+mapscripts Lumbridge_General_Store_MapScripts {}    
+
+script Generalstore_Lumbridge_Clerk {
+    lock
+    faceplayer
+    msgbox("Buy something or get out")
+    waitmessage
+    pokemart (GeneralStoreLumbridge)
+    msgbox("Smell ya later!")
+    release
+}
+
+
+raw `
+    .align 2
+GeneralStoreLumbridge:
+    .2byte ITEM_EMPTY_POT
+    .2byte ITEM_EGG
+    .2byte ITEM_EMPTY_BUCKET
+    .2byte ITEM_NONE
+    release
+    end
+
+`

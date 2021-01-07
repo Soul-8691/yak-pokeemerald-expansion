@@ -2,70 +2,28 @@ Lumbridge_General_Store_MapScripts::
 	.byte 0
 
 
-GENERALSTORE_LUMBRIDGE_CLERK::
+Generalstore_Lumbridge_Clerk::
 	lock
 	faceplayer
-	msgbox GENERALSTORE_CLERK_HELLO_Text
+	msgbox Generalstore_Lumbridge_Clerk_Text_0
 	waitmessage
-	pokemart GENERALSTORE_LUMBRIDGE
-	msgbox GENERALSTORE_CLERK_GOODBYE_Text
+	pokemart GeneralStoreLumbridge
+	msgbox Generalstore_Lumbridge_Clerk_Text_1
 	release
 	return
 
-	.align 2
-GENERALSTORE_LUMBRIDGE:
-	.align 2
-	.2byte ITEM_MYSTIC_CLOTH
-	.2byte ITEM_EGG
-	.2byte ITEM_SPLITBARK
-	.2byte ITEM_WATER_BUCKET
-	.2byte ITEM_EMPTY_BUCKET
-	.2byte ITEM_FLOUR_POT
-	.2byte ITEM_BARROWS_ITEM
-	.2byte ITEM_EMPTY_POT
-	.2byte ITEM_AUGMENTOR
-	.2byte ITEM_WHEAT
-	.2byte ITEM_MILK_BUCKET
-	.2byte ITEM_BANE_ORE
-	.2byte ITEM_SOUL_RUNE
-	.2byte ITEM_ASTRAL_RUNE
-	.2byte ITEM_DUST_RUNE
-	.2byte ITEM_MUD_RUNE
-	.2byte ITEM_MIST_RUNE
-	.2byte ITEM_LAVA_RUNE
-	.2byte ITEM_LIFE_RUNE
-	.2byte ITEM_SPIRIT_CHARM
-	.2byte ITEM_LEGENDARY_ITEM
-	.2byte ITEM_RED_SCALE
-	.2byte ITEM_BLUE_SCALE
-	.2byte ITEM_GREEN_SCALE
-	.2byte ITEM_BLACK_SCALE
-	.2byte ITEM_FRAGMENT_OF_JAS
-	.2byte ITEM_TIN_ORE
-	.2byte ITEM_BLACK_MUSHROOM
-	.2byte ITEM_HELLFIRE_METAL
-	.2byte ITEM_IRON_POUCH
-	.2byte ITEM_STEEL_POUCH
-	.2byte ITEM_BLACK_POUCH
-	.2byte ITEM_MITHRIL_POUCH
-	.2byte ITEM_ADAMANT_POUCH
-	.2byte ITEM_RUNE_POUCH
-	.2byte ITEM_DRAGON_POUCH
-	.2byte ITEM_CRYSTAL_POUCH
-	.2byte ITEM_SPLITBARK_POUCH
-	.2byte ITEM_DRAGONBANE_POUCH
-	.2byte ITEM_AUGMENTED_POUCH
-	.2byte ITEM_MYSTIC_POUCH
-	.2byte ITEM_BARROWS_POUCH
-	.2byte ITEM_GRANITE_POUCH
-	.2byte ITEM_ANCIENT_POUCH
-	.2byte ITEM_ELEMENTAL_POUCH
-	.2byte ITEM_NONE
-	release
-	end
 
-GENERALSTORE_CLERK_HELLO_Text:
-	.string "Buy something or get out.$"
+    .align 2
+GeneralStoreLumbridge:
+    .2byte ITEM_EMPTY_POT
+    .2byte ITEM_EGG
+    .2byte ITEM_EMPTY_BUCKET
+    .2byte ITEM_NONE
+    release
+    end
 
-GENERALSTORE_CLERK_GOODBYE_Text:
+Generalstore_Lumbridge_Clerk_Text_0:
+	.string "Buy something or get out$"
+
+Generalstore_Lumbridge_Clerk_Text_1:
 	.string "Smell ya later!$"

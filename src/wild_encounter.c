@@ -41,6 +41,9 @@ static bool8 IsAbilityAllowingEncounter(u8 level);
 // EWRAM vars
 EWRAM_DATA static u8 sWildEncountersDisabled = 0;
 EWRAM_DATA static u32 sFeebasRngValue = 0;
+EWRAM_DATA u8 gChainFishingStreak = 0;
+EWRAM_DATA static u16 sLastFishingSpecies = 0;
+EWRAM_DATA bool8 gIsFishingEncounter = FALSE;  
 
 #include "data/wild_encounters.h"
 
@@ -864,7 +867,7 @@ bool8 DoesCurrentMapHaveFishingMons(void)
 void FishingWildEncounter(u8 rod)
 {
     u16 species;
-
+	gIsFishingEncounter = TRUE;
     if (CheckFeebas() == TRUE)
     {
         u8 level = ChooseWildMonLevel(&gWildFeebasRoute119Data);
@@ -876,6 +879,19 @@ void FishingWildEncounter(u8 rod)
     {
         species = GenerateFishingWildMon(gWildMonHeaders[GetCurrentMapWildMonHeaderId()].fishingMonsInfo, rod);
     }
+	
+	if (species == sLastFishingSpecies)
+    {
+       if (gChainFishingStreak < 20)
+           gChainFishingStreak++;
+    }
+    else
+    {
+        gChainFishingStreak = 0;    //reeling in different species resets chain fish counter
+    }
+
+    sLastFishingSpecies = species;
+	
     IncrementGameStat(GAME_STAT_FISHING_CAPTURES);
     SetPokemonAnglerSpecies(species);
     BattleSetup_StartWildBattle();

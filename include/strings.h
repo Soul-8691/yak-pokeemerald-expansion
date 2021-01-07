@@ -3032,7 +3032,14 @@ extern const u8 gText_CheatPouchShop[];
 extern const u8 gText_AddCash[];
 extern const u8 gText_AddCandy[];
 extern const u8 gText_AddKeyItems[];
+extern const u8 gText_CheatTMShop[];
+extern const u8 gText_CheatMiscShop[];
 
+
+
+//misc pokescape stuff
 extern const u8 gText_NextMenu[];
+extern const u8 gText_YouAlreadyHaveThis[];
+extern const u8 gText_YouWantedThisTM[];
 
 #endif // GUARD_STRINGS_H

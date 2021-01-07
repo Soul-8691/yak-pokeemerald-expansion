@@ -944,6 +944,10 @@ static void Task_BuyMenu(u8 taskId)
             {
                 BuyMenuDisplayMessage(taskId, gText_YouDontHaveMoney, BuyMenuReturnToItemList);
             }
+			else if (ItemId_GetPocket(itemId) == POCKET_TM_HM && CheckBagHasItem(itemId, 1))
+            {
+             BuyMenuDisplayMessage(taskId, gText_YouAlreadyHaveThis, BuyMenuReturnToItemList);
+            }
             else
             {
                 if (gMartInfo.martType == MART_TYPE_NORMAL)
@@ -952,7 +956,11 @@ static void Task_BuyMenu(u8 taskId)
                     if (ItemId_GetPocket(itemId) == POCKET_TM_HM)
                     {
                         StringCopy(gStringVar2, gMoveNames[ItemIdToBattleMoveId(itemId)]);
-                        BuyMenuDisplayMessage(taskId, gText_Var1CertainlyHowMany2, Task_BuyHowManyDialogueInit);
+						ConvertIntToDecimalStringN(gStringVar1, gShopDataPtr->totalCost, STR_CONV_MODE_LEFT_ALIGN, 6);\
+						tItemCount = 1;
+                        //BuyMenuDisplayMessage(taskId, gText_Var1CertainlyHowMany2, Task_BuyHowManyDialogueInit);
+						
+						BuyMenuDisplayMessage(taskId, gText_YouWantedThisTM, BuyMenuConfirmPurchase);
                     }
                     else
                     {

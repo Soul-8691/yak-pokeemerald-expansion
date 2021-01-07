@@ -1851,6 +1851,8 @@ const u8 gText_CheatPouchShop[] = _("Pouch Items");
 const u8 gText_AddCash[] = _("Fuck Bitches");
 const u8 gText_AddCandy[] = _("Get Candies");
 const u8 gText_AddKeyItems[] = _("Get Key Items");
+const u8 gText_CheatTMShop[] = _("TM's");
+const u8 gText_CheatMiscShop[] = _("Misc Items");
 // choose starter menu
 const u8 gText_GuthlingStarter[] = _("Guthling");
 const u8 gText_ZamlingStarter[] =_("Zamling");
@@ -1860,4 +1862,7 @@ const u8 gText_ArmalingStarter[] =_("Armaling");
 const u8 gText_UngodlingStarter[] =_("Ungodling");
 const u8 gText_TumeklingStarter[] =_("Tumekling");
 
+//misc
 const u8 gText_NextMenu[] =_("Next");
+const u8 gText_YouAlreadyHaveThis[] =_("You already have this item.{PAUSE_UNTIL_PRESS}");
+const u8 gText_YouWantedThisTM[] =_("You want {STR_VAR_2}?\nThat will be ¥{STR_VAR_1}.");

@@ -806,9 +806,11 @@ static const struct MenuAction MultichoiceList_CheatMenu[] =
 {
 	{gText_CheatEvolutionShop},
 	{gText_CheatPouchShop},
+	{gText_CheatTMShop},
+	{gText_CheatMiscShop},
+	{gText_AddKeyItems},
 	{gText_AddCash},
 	{gText_AddCandy},
-	{gText_AddKeyItems},
 	{gText_Exit},
 	
 };

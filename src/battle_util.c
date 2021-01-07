@@ -1612,6 +1612,7 @@ enum
 	ENDTURN_PSYCHIC_TERRAIN,
 	ENDTURN_ION_DELUGE,
 	ENDTURN_FAIRY_LOCK,
+    ENDTURN_CHAOTIC_RIFT,
 	ENDTURN_FIELD_COUNT,
 };
 
@@ -1942,6 +1943,9 @@ u8 DoFieldEndTurnEffects(void)
             }
             gBattleStruct->turnCountersTracker++;
             break;
+
+
+
         case ENDTURN_WONDER_ROOM:
             if (gFieldStatuses & STATUS_FIELD_WONDER_ROOM && --gFieldTimers.wonderRoomTimer == 0)
             {
@@ -2035,6 +2039,16 @@ u8 DoFieldEndTurnEffects(void)
             }
             gBattleStruct->turnCountersTracker++;
             break;
+        case ENDTURN_CHAOTIC_RIFT:
+            if (gFieldStatuses & STATUS_FIELD_CHAOTIC_RIFT && --gFieldTimers.chaoticRiftTimer == 0)
+            {
+                gFieldStatuses &= ~(STATUS_FIELD_CHAOTIC_RIFT);
+                BattleScriptExecute(BattleScript_ChaoticRiftEnds);
+                effect++;
+            }
+            gBattleStruct->turnCountersTracker++;
+            break;
+        
         case ENDTURN_FIELD_COUNT:
             effect++;
             break;
@@ -7372,7 +7386,8 @@ u16 CalcPartyMonTypeEffectivenessMultiplier(u16 move, u16 speciesDef, u8 ability
 
 u16 GetTypeModifier(u8 atkType, u8 defType)
 {
-    if (B_FLAG_INVERSE_BATTLE != 0 && FlagGet(B_FLAG_INVERSE_BATTLE))
+    if (gFieldStatuses & STATUS_FIELD_CHAOTIC_RIFT)
+    //if(B_FLAG_INVERSE_BATTLE)
         return sInverseTypeEffectivenessTable[atkType][defType];
     else
         return sTypeEffectivenessTable[atkType][defType];

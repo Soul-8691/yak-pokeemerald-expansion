@@ -2766,6 +2766,10 @@ static const u8 sSTEEL_BEAMDescription[] = _(
     "Fires a beam of steel from\n"
     "its body. It hurts the user.");
 
+static const u8 sCHAOTIC_RIFTDescription[] = _(
+    "Opens a chaotic rift.\n"
+    "Type matchups get weird!.");
+
 static const u8 sNotDoneYetDescription[] = _(
 	"Not done yet.");
 
@@ -3485,4 +3489,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_METEOR_ASSAULT - 1] = sMETEOR_ASSAULTDescription,
     [MOVE_ETERNABEAM - 1] = sETERNABEAMDescription,
     [MOVE_STEEL_BEAM - 1] = sSTEEL_BEAMDescription,
+    [MOVE_CHAOTIC_RIFT - 1] = sCHAOTIC_RIFTDescription,
 };

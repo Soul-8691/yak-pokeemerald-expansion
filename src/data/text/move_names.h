@@ -713,4 +713,6 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_METEOR_ASSAULT] = _("Meteor Ass."),
     [MOVE_ETERNABEAM] = _("Eternabeam"),
     [MOVE_STEEL_BEAM] = _("Steel Beam"),
+    //pokescape
+    [MOVE_CHAOTIC_RIFT] = _("Chaotic Rift"),
 };

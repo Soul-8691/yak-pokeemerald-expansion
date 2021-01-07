@@ -233,6 +233,7 @@
 #define STATUS_FIELD_PSYCHIC_TERRAIN    0x200
 #define STATUS_FIELD_ION_DELUGE         0x400
 #define STATUS_FIELD_FAIRY_LOCK         0x800
+#define STATUS_FIELD_CHAOTIC_RIFT       0x1000
 
 // Flags describing move's result
 #define MOVE_RESULT_MISSED             (1 << 0)

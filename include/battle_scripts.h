@@ -349,4 +349,8 @@ extern const u8 BattleScript_EmergencyExitWild[];
 extern const u8 BattleScript_EmergencyExitWildNoPopUp[];
 extern const u8 BattleScript_CheekPouchActivates[];
 
+//pokescape
+
+extern const u8 BattleScript_ChaoticRiftEnds[];
+
 #endif // GUARD_BATTLE_SCRIPTS_H

@@ -677,6 +677,8 @@ static const u8 sText_NoOneWillBeAbleToRun[] = _("No one will be able to run awa
 static const u8 sText_DestinyKnotActivates[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} fell in love\nfrom the {B_LAST_ITEM}!");
 static const u8 sText_CloakedInAFreezingLight[] = _("{B_ATK_NAME_WITH_PREFIX} became cloaked\nin a freezing light!");
 static const u8 sText_CantRunFromRat[] = _("DON'T EVEN THINK ABOUT RUNNING\nFROM A RAT!!");
+static const u8 sText_ThingsGetWeird[] = _("Things just got weird..");
+static const u8 sText_ChaoticRiftEnds[] = _("The weird pressence fades.");
 
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
@@ -1218,6 +1220,8 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_ELECTRICTERRAINPREVENTS - 12] = sText_ElectricTerrainPreventsSleep,
     [STRINGID_PSYCHICTERRAINPREVENTS - 12] = sText_PsychicTerrainPreventsPriority,
 	[STRINGID_CANTRUNFROMRAT - 12] = sText_CantRunFromRat,
+    [STRINGID_THINGSGETWEIRD - 12] = sText_ThingsGetWeird,
+    [STRINGID_CHAOTICRIFTENDS - 12] = sText_ChaoticRiftEnds,
 };
 
 const u16 gTerrainStringIds[] =
@@ -1552,6 +1556,7 @@ const u16 gRoomsStringIds[] =
     STRINGID_PKMNTWISTEDDIMENSIONS, STRINGID_TRICKROOMENDS,
     STRINGID_SWAPSDEFANDSPDEFOFALLPOKEMON, STRINGID_WONDERROOMENDS,
     STRINGID_HELDITEMSLOSEEFFECTS, STRINGID_MAGICROOMENDS,
+    STRINGID_THINGSGETWEIRD, STRINGID_CHAOTICRIFTENDS,
     STRINGID_EMPTYSTRING3
 };
 

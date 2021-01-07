@@ -693,6 +693,7 @@ gBattleAnims_Moves::
 	.4byte Move_PLASMA_FISTS
 	.4byte Move_PHOTON_GEYSER
     .4byte Move_DOUBLE_IRON_BASH
+	.4byte Move_CHAOTIC_RIFT
 @@@@@@@@@@@@ GEN 8 @@@@@@@@@@@@
 	.4byte Move_DYNAMAX_CANNON
 	.4byte Move_SNIPE_SHOT
@@ -3028,6 +3029,8 @@ Move_TRICK_ROOM::
 	waitbgfadein
 	blendoff
 	end
+
+
 InitRoomAnimation:
 	setalpha 8, 8
 	playsewithpan SE_M_SUPERSONIC, SOUND_PAN_TARGET
@@ -13205,6 +13208,17 @@ Move_DOUBLE_IRON_BASH::
 	blendoff
 	end
 
+Move_CHAOTIC_RIFT::	
+	call InitRoomAnimation
+	fadetobg BG_TRICK_ROOM
+	waitbgfadein
+	delay 0x40
+	restorebg
+	waitbgfadein
+	blendoff
+	end
+
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 8 @@@@@@@@@@@@@@@@@@@@@@@
 Move_DYNAMAX_CANNON::
     goto Move_HYPER_BEAM
@@ -14039,6 +14053,8 @@ Move_STEEL_BEAM::
 	launchtask AnimTask_BlendBattleAnimPal 0xa 0x5 ANIM_PAL_BG 0x1 0xE 0x0 0x6B59    @From gray
 	waitforvisualfinish
 	end
+
+
 SteelBeamShards:
 	launchtemplate gSteelBeamSpikeShardTemplate 0x80, 0x5 0xf 0xf 0x14 0x0 0x0
 	launchtemplate gSteelBeamSpikeShardTemplate 0x80, 0x5 0xf 0xf 0x14 0xa 0x5

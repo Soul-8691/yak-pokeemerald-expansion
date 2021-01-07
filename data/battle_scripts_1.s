@@ -365,10 +365,22 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectFairyLock
 	.4byte BattleScript_EffectAllySwitch
 	.4byte BattleScript_EffectSleepHit
+	.4byte BattleScript_EffectInverseBattle
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
 	goto BattleScript_EffectHit
+
+BattleScript_EffectInverseBattle:
+	attackcanceler
+	attackstring
+	ppreduce
+	setroom
+	attackanimation
+	waitanimation
+	printfromtable gRoomsStringIds
+	waitmessage 0x40
+	goto BattleScript_MoveEnd
 	
 BattleScript_EffectAllySwitch:
 	attackcanceler
@@ -5375,6 +5387,11 @@ BattleScript_TailwindEnds::
 
 BattleScript_TrickRoomEnds::
 	printstring STRINGID_TRICKROOMENDS
+	waitmessage 0x40
+	end2
+
+BattleScript_ChaoticRiftEnds::
+	printstring STRINGID_CHAOTICRIFTENDS
 	waitmessage 0x40
 	end2
 

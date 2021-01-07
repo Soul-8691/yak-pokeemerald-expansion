@@ -695,7 +695,10 @@
 #define MOVE_PHOTON_GEYSER 675
 #define MOVE_DOUBLE_IRON_BASH 676
 
-#define MOVES_COUNT_GEN7 677
+//pokescape
+#define MOVE_CHAOTIC_RIFT 677
+
+#define MOVES_COUNT_GEN7 678
 
 // Gen 8 moves.
 #define MOVE_DYNAMAX_CANNON           (MOVES_COUNT_GEN7 + 0)
@@ -735,6 +738,9 @@
 #define MOVE_STEEL_BEAM               (MOVES_COUNT_GEN7 + 34)
 
 #define MOVES_COUNT_GEN8              (MOVES_COUNT_GEN7 + 35)
+
+//pokescape
+
 
 #define MOVES_COUNT                 MOVES_COUNT_GEN8
 

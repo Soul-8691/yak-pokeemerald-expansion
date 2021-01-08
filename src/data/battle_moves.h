@@ -9993,7 +9993,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     //pokescape moves
 
-        [MOVE_CHAOTIC_RIFT] =
+    [MOVE_CHAOTIC_RIFT] =
     {
         .effect = EFFECT_INVERSE_BATTLE,
         .power = 0,
@@ -10005,5 +10005,18 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = 0,
         .split = SPLIT_STATUS,
+    },
+    [MOVE_SARADOMIN_STRIKE] =
+    {
+        .effect = EFFECT_HIT,
+        .power = 90,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 15,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_HIT_IN_AIR,
+        .split = SPLIT_SPECIAL,
     },
 };

@@ -2770,6 +2770,10 @@ static const u8 sCHAOTIC_RIFTDescription[] = _(
     "Opens a chaotic rift.\n"
     "Type matchups get weird!.");
 
+static const u8 sSARADOMIN_STRIKEDescription[] = _(
+    "Fires a bolt of lightning.\n"
+    "STRIKE!.");
+
 static const u8 sNotDoneYetDescription[] = _(
 	"Not done yet.");
 
@@ -3490,4 +3494,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_ETERNABEAM - 1] = sETERNABEAMDescription,
     [MOVE_STEEL_BEAM - 1] = sSTEEL_BEAMDescription,
     [MOVE_CHAOTIC_RIFT - 1] = sCHAOTIC_RIFTDescription,
+    [MOVE_SARADOMIN_STRIKE - 1] = sSARADOMIN_STRIKEDescription,
 };

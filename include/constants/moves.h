@@ -697,8 +697,9 @@
 
 //pokescape
 #define MOVE_CHAOTIC_RIFT 677
+#define MOVE_SARADOMIN_STRIKE 678
 
-#define MOVES_COUNT_GEN7 678
+#define MOVES_COUNT_GEN7 679
 
 // Gen 8 moves.
 #define MOVE_DYNAMAX_CANNON           (MOVES_COUNT_GEN7 + 0)

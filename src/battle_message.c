@@ -678,7 +678,7 @@ static const u8 sText_DestinyKnotActivates[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX
 static const u8 sText_CloakedInAFreezingLight[] = _("{B_ATK_NAME_WITH_PREFIX} became cloaked\nin a freezing light!");
 static const u8 sText_CantRunFromRat[] = _("DON'T EVEN THINK ABOUT RUNNING\nFROM A RAT!!");
 static const u8 sText_ThingsGetWeird[] = _("Things just got weird..");
-static const u8 sText_ChaoticRiftEnds[] = _("The weird pressence fades.");
+static const u8 sText_ChaoticRiftEnds[] = _("The weird presence fades.");
 
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =

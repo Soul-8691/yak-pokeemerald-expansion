@@ -13212,9 +13212,15 @@ Move_CHAOTIC_RIFT::
 	call InitRoomAnimation
 	fadetobg BG_TRICK_ROOM
 	waitbgfadein
-	delay 0x40
-	restorebg
-	waitbgfadein
+	loadspritegfx ANIM_TAG_TEAL_ALERT
+	loadspritegfx ANIM_TAG_OPENING_EYE
+	playsewithpan SE_M_CONFUSE_RAY, SOUND_PAN_TARGET
+	createsprite gOpeningEyeSpriteTemplate, ANIM_ATTACKER, 5, 50, -30, 1, 0
+	call SetPsychicBackground
+	delay 40
+	playsewithpan SE_M_LEER, SOUND_PAN_TARGET
+	createvisualtask AnimTask_BlendColorCycle, 2, 1, 1, 2, 0, 10, RGB_BLACK
+	call UnsetPsychicBg
 	blendoff
 	end
 

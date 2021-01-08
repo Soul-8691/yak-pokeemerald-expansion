@@ -56,6 +56,17 @@ const struct SpriteTemplate gLightningSpriteTemplate =
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimLightning,
 };
+const struct SpriteTemplate gSaradominStrikeSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SARADOMIN_STRIKE,
+    .paletteTag = ANIM_TAG_SARADOMIN_STRIKE,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = sAnims_Lightning,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimLightning,
+};
+
 
 static const union AffineAnimCmd gUnknown_085956D8[] =
 {

@@ -2771,8 +2771,36 @@ static const u8 sCHAOTIC_RIFTDescription[] = _(
     "Type matchups get weird!.");
 
 static const u8 sSARADOMIN_STRIKEDescription[] = _(
-    "Fires a bolt of lightning.\n"
-    "STRIKE!.");
+    "Strikes your foe with the power.\n"
+    "of Saradomin. Lowers PP of target.");
+
+static const u8 sSWORD_STRIKEDescription[] = _(
+    "Strike forth with a mighty blade.\n"
+    "High critical ratio.");
+
+static const u8 sSLICE_DICEDescription[] = _(
+    "Rapidly strikes the foe with razor sharp claws.\n"
+    "Always hits 4 times.");
+
+static const u8 sZAMORAK_FLAMESDescription[] = _(
+    "Strike your foe with the power of Zamorak.\n"
+    "Lowers targets SPATK.");
+
+static const u8 sGUTHIX_CLAWSDescription[] = _(
+    "Strike your foe with the power of Zamorak.\n"
+    "Lowers targets SPATK.");
+
+static const u8 sPOLYPORE_STRIKEDescription[] = _(
+    "Send forth a ball of nature.\n"
+    "May paralyze the target.");
+
+static const u8 sICE_BARRAGEDescription[] = _(
+    "Strike the target with ice magic.\n"
+    "May freeze the target.");
+
+static const u8 sBLOOD_BARRAGEDescription[] = _(
+    "Strike the target with blood magic.\n"
+    "Steals a large amount of health.");
 
 static const u8 sNotDoneYetDescription[] = _(
 	"Not done yet.");
@@ -3493,6 +3521,14 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_METEOR_ASSAULT - 1] = sMETEOR_ASSAULTDescription,
     [MOVE_ETERNABEAM - 1] = sETERNABEAMDescription,
     [MOVE_STEEL_BEAM - 1] = sSTEEL_BEAMDescription,
+    //pokescape
     [MOVE_CHAOTIC_RIFT - 1] = sCHAOTIC_RIFTDescription,
     [MOVE_SARADOMIN_STRIKE - 1] = sSARADOMIN_STRIKEDescription,
+    [MOVE_SWORD_STRIKE - 1] = sSWORD_STRIKEDescription,
+    [MOVE_SLICE_DICE - 1] = sSLICE_DICEDescription,
+    [MOVE_ZAMORAK_FLAMES - 1] = sZAMORAK_FLAMESDescription,
+    [MOVE_GUTHIX_CLAWS - 1] = sGUTHIX_CLAWSDescription,
+    [MOVE_POLYPORE_STRIKE - 1] = sPOLYPORE_STRIKEDescription,
+    [MOVE_ICE_BARRAGE - 1] = sICE_BARRAGEDescription,   
+    [MOVE_BLOOD_BARRAGE - 1] = sBLOOD_BARRAGEDescription, 
 };

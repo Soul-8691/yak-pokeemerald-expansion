@@ -360,6 +360,17 @@ const struct SpriteTemplate gWaterGunProjectileSpriteTemplate =
     .callback = AnimThrowProjectile,
 };
 
+const struct SpriteTemplate gBloodBarrageProjectileSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_BLOOD_BUBBLE,
+    .paletteTag = ANIM_TAG_BLOOD_BUBBLE,
+    .oam = &gOamData_AffineOff_ObjBlend_16x16,
+    .anims = gAnims_WaterBubble,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimThrowProjectile,
+};
+
 const struct SpriteTemplate gWaterGunDropletSpriteTemplate =
 {
     .tileTag = ANIM_TAG_SMALL_BUBBLES,

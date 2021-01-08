@@ -107,6 +107,17 @@ const struct SpriteTemplate gEnergyBallSpriteTemplate =
     .callback = AnimShadowBall,
 };
 
+const struct SpriteTemplate gPolyporeStrikeSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_POLYPORE_STRIKE,
+    .paletteTag = ANIM_TAG_POLYPORE_STRIKE,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gAffineAnims_ShadowBall,
+    .callback = AnimShadowBall,
+};
+
 const struct SpriteTemplate gBattleAnimSpriteTemplate_LeafStorm =
 {
     .tileTag = ANIM_TAG_RAZOR_LEAF,

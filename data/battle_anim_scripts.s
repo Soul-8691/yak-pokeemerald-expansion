@@ -695,6 +695,13 @@ gBattleAnims_Moves::
     .4byte Move_DOUBLE_IRON_BASH
 	.4byte Move_CHAOTIC_RIFT
 	.4byte Move_SARADOMIN_STRIKE
+	.4byte Move_SWORD_STRIKE
+	.4byte Move_SLICE_DICE
+	.4byte Move_ZAMORAK_FLAMES
+	.4byte Move_GUTHIX_CLAWS
+	.4byte Move_POLYPORE_STRIKE
+	.4byte Move_ICE_BARRAGE
+	.4byte Move_BLOOD_BARRAGE
 @@@@@@@@@@@@ GEN 8 @@@@@@@@@@@@
 	.4byte Move_DYNAMAX_CANNON
 	.4byte Move_SNIPE_SHOT
@@ -13226,53 +13233,148 @@ Move_CHAOTIC_RIFT::
 	end
 
 Move_SARADOMIN_STRIKE::
-	loadspritegfx ANIM_TAG_LIGHTNING
-	fadetobg BG_WATER
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, 1, 2, 0, 16, RGB_BLACK
+	loadspritegfx ANIM_TAG_SARADOMIN_STRIKE
+	call SetHighSpeedBg
 	delay 16
 	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 16, -36
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 16, -20
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 16, 12
-	delay 20
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 6, -16, -32
-	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 6, -16, -16
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 6, -16, 16
-	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
-	delay 5
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 24, -32
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 24, -16
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 24, 16
-	delay 30
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -32
+	createsprite gSaradominStrikeSpriteTemplate, ANIM_TARGET, 2, 0, -64
 	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -16
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, 16
-	delay 10
-	delay 1
-	createvisualtask AnimTask_ShakeTargetInPattern, 2, 30, 3, TRUE, 0
 	delay 2
-	delay 1
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_TARGET, 2, 1, 2, 16, 0, RGB_BLACK
+	createsprite gSaradominStrikeSpriteTemplate, ANIM_TARGET, 2, 0, -48
+	delay 2
+	createsprite gSaradominStrikeSpriteTemplate, ANIM_TARGET, 2, 0, -16
+	delay 2
+	createsprite gSaradominStrikeSpriteTemplate, ANIM_TARGET, 2, 0, 0
+	delay 10
+	createvisualtask AnimTask_ShakeTargetInPattern, 2, 30, 3, TRUE, 0
 	waitforvisualfinish
-	restorebg
-	waitbgfadeout
+	call UnsetHighSpeedBg
 	setarg 7, 0xFFFF
-	waitbgfadein
 	end
 
+Move_SWORD_STRIKE:
+	loadspritegfx ANIM_TAG_SWORD_STRIKE
+	createsprite gSwordStrikeSpriteTemplate, ANIM_TARGET, 2, 1, -8, 0
+	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
+	delay 4
+	createsprite gSwordStrikeSpriteTemplate, ANIM_TARGET, 2, 1, 8, 0
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
+	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
+	waitforvisualfinish
+	end
+
+Move_SLICE_DICE:
+	loadspritegfx ANIM_TAG_CLAW_SLASH 
+	setalpha 12, 8 
+	createsprite gHorizontalLungeSpriteTemplate ANIM_ATTACKER, 2, 6, 4  
+	delay 4
+	createvisualtask AnimTask_ShakeMon2 2, ANIM_TARGET, 2, 0, 18, 1  
+	createsprite gClawSlashSpriteTemplate, ANIM_TARGET, 2, -10, -10, 0  
+	createsprite gClawSlashSpriteTemplate, ANIM_TARGET, 2, -10, 10, 0 
+	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET 
+	delay 12,
+	createsprite gClawSlashSpriteTemplate, ANIM_TARGET, 2, 10, -10, 1 
+	createsprite gClawSlashSpriteTemplate, ANIM_TARGET, 2, 10, 10, 1  
+	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET 
+	waitforvisualfinish  
+	end
+
+Move_ZAMORAK_FLAMES:
+	loadspritegfx ANIM_TAG_SMALL_EMBER 
+	loadspritegfx ANIM_TAG_FIRE_PLUME 
+	createvisualtask AnimTask_BlendColorCycle, 2, 2, 2, 2, 0, 11, RGB_RED 
+	waitforvisualfinish
+	loopsewithpan 145, SOUND_PAN_TARGET 11, 3
+
+	createsprite gDragonRageFirePlumeSpriteTemplate, 194, 3, 1, 5, 0
+	delay 1
+	createsprite gDragonRageFirePlumeSpriteTemplate, 194, 3, 1, -10, -15 
+	delay 1
+	createsprite gDragonRageFirePlumeSpriteTemplate, 130, 3, 1, 0, 25 
+	delay 1
+	createsprite gDragonRageFirePlumeSpriteTemplate, 194, 3, 1, 15, 5  
+	delay 1
+	createsprite gDragonRageFirePlumeSpriteTemplate, 194, 3, 1, -25, 0  
+	delay 1
+	createsprite gDragonRageFirePlumeSpriteTemplate, 130, 3, 1, 30, 30 
+	delay 1
+	createsprite gDragonRageFirePlumeSpriteTemplate, 130, 3, 1, -27, 25 
+	delay 1
+	createsprite gDragonRageFirePlumeSpriteTemplate, 194, 3, 1, 0, 8
+	waitforvisualfinish 
+	createsprite gSlideMonToOriginalPosSpriteTemplate, 194, 3, 0, 0, 4
+	waitforvisualfinish 
+	end
+
+Move_GUTHIX_CLAWS:
+
+	loadspritegfx ANIM_TAG_PURPLE_SWIPE
+	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 6, 4
+	delay 4
+	playsewithpan SE_M_SWAGGER, SOUND_PAN_TARGET
+	createsprite gRevengeBigScratchSpriteTemplate, ANIM_TARGET,2, 80, -30
+	waitforvisualfinish
+	end
+
+Move_POLYPORE_STRIKE:
+	loadspritegfx ANIM_TAG_POLYPORE_STRIKE
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, 1, 1, 0, 8, RGB_BLACK
+	waitforvisualfinish
+	delay 15
+	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_MIST, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 5, 5, 0, 5
+	createsprite gPolyporeStrikeSpriteTemplate, ANIM_TARGET, 2, 12, 4, 8
+	waitforvisualfinish
+	playsewithpan SE_M_SAND_ATTACK, SOUND_PAN_TARGET
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 8, 1
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, 1, 1, 8, 0, RGB_BLACK
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	blendoff
+	end
+
+Move_ICE_BARRAGE:
+	loadspritegfx ANIM_TAG_ICE_CUBE
+	loadspritegfx ANIM_TAG_SMALL_BUBBLES
+	loadspritegfx ANIM_TAG_WATER_IMPACT
+	monbg ANIM_DEF_PARTNER
+	monbgprio_28 ANIM_TARGET
+	setalpha 12, 8
+	createsprite gWaterGunProjectileSpriteTemplate, ANIM_ATTACKER, 2, 20, 0, 0, 0, 40, -25
+	waitforvisualfinish
+	createsprite gWaterHitSplatSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, ANIM_TARGET, 2
+	createvisualtask AnimTask_FrozenIceCube, 2
+	waitplaysewithpan SE_M_HAIL, SOUND_PAN_TARGET, 17
+	waitforvisualfinish
+	blendoff
+	clearmonbg ANIM_DEF_PARTNER
+	end
+
+
+Move_BLOOD_BARRAGE:
+	loadspritegfx ANIM_TAG_BLOOD_BUBBLE
+	loadspritegfx ANIM_TAG_BLOOD_BARRAGE_PARTICLES
+	monbg ANIM_DEF_PARTNER
+	monbgprio_28 ANIM_TARGET
+	setalpha 12, 8
+	createsprite gBloodBarrageProjectileSpriteTemplate, ANIM_ATTACKER, 2, 20, 0, 0, 0, 40, -25
+	waitforvisualfinish
+	createsprite gBloodBarrageParticlesSpriteTemplate, ANIM_TARGET, 2, -24, 16, 1, 1
+	playsewithpan SE_M_TOXIC, SOUND_PAN_TARGET
+	delay 15
+	createsprite gBloodBarrageParticlesSpriteTemplate, ANIM_TARGET, 2, 8, 16, 1, 1
+	playsewithpan SE_M_TOXIC, SOUND_PAN_TARGET
+	delay 15
+	createsprite gBloodBarrageParticlesSpriteTemplate, ANIM_TARGET, 2, -8, 16, 1, 1
+	playsewithpan SE_M_TOXIC, SOUND_PAN_TARGET
+	delay 15
+	createsprite gBloodBarrageParticlesSpriteTemplate, ANIM_TARGET, 2, 24, 16, 1, 1
+	playsewithpan SE_M_TOXIC, SOUND_PAN_TARGET
+	delay 15
+	blendoff
+	clearmonbg ANIM_DEF_PARTNER
+	end
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 8 @@@@@@@@@@@@@@@@@@@@@@@
 Move_DYNAMAX_CANNON::
     goto Move_HYPER_BEAM

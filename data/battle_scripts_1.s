@@ -366,21 +366,14 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectAllySwitch
 	.4byte BattleScript_EffectSleepHit
 	.4byte BattleScript_EffectInverseBattle
+	.4byte BattleScript_EffectSliceDice
+	.4byte BattleScript_EffectSpiteHit
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
 	goto BattleScript_EffectHit
 
-BattleScript_EffectInverseBattle:
-	attackcanceler
-	attackstring
-	ppreduce
-	setroom
-	attackanimation
-	waitanimation
-	printfromtable gRoomsStringIds
-	waitmessage 0x40
-	goto BattleScript_MoveEnd
+
 	
 BattleScript_EffectAllySwitch:
 	attackcanceler
@@ -7647,3 +7640,97 @@ BattleScript_PrintPlayerForfeitedLinkBattle::
 	atk57
 	waitmessage 0x40
 	end2
+
+@@@@@pokescape
+BattleScript_EffectInverseBattle:
+	attackcanceler
+	attackstring
+	ppreduce
+	setroom
+	attackanimation
+	waitanimation
+	printfromtable gRoomsStringIds
+	waitmessage 0x40
+	goto BattleScript_MoveEnd
+
+
+BattleScript_EffectSliceDice::
+	attackcanceler
+	attackstring
+	ppreduce
+	sethword sTRIPLE_KICK_POWER, 0x0
+	initmultihitstring
+	setmultihit 0x4
+
+BattleScript_SliceDiceLoop::
+	jumpifhasnohp BS_ATTACKER, BattleScript_SliceDiceEnd
+	jumpifhasnohp BS_TARGET, BattleScript_SliceDiceNoMoreHits
+	jumpifhalfword CMP_EQUAL, gChosenMove, MOVE_SLEEP_TALK, BattleScript_DoSliceDiceAttack
+	jumpifstatus BS_ATTACKER, STATUS1_SLEEP, BattleScript_SliceDiceNoMoreHits
+
+BattleScript_DoSliceDiceAttack::
+	accuracycheck BattleScript_SliceDiceNoMoreHits, ACC_CURR_MOVE
+	movevaluescleanup
+	addbyte sTRIPLE_KICK_POWER, 8
+	addbyte sMULTIHIT_STRING + 4, 0x1
+	critcalc
+	damagecalc
+	adjustdamage
+	jumpifmovehadnoeffect BattleScript_SliceDiceNoMoreHits
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage 0x40
+	printstring STRINGID_EMPTYSTRING3
+	waitmessage 0x1
+	moveendto MOVEEND_NEXT_TARGET
+	jumpifbyte CMP_COMMON_BITS, gMoveResultFlags, MOVE_RESULT_FOE_ENDURED, BattleScript_SliceDicePrintStrings
+	decrementmultihit BattleScript_SliceDiceLoop
+	goto BattleScript_SliceDicePrintStrings
+
+BattleScript_SliceDiceNoMoreHits::
+	pause 0x20
+	jumpifbyte CMP_EQUAL, sMULTIHIT_STRING + 4, 0x0, BattleScript_SliceDicePrintStrings
+	bichalfword gMoveResultFlags, MOVE_RESULT_MISSED
+
+BattleScript_SliceDicePrintStrings::
+	resultmessage
+	waitmessage 0x40
+	jumpifbyte CMP_EQUAL, sMULTIHIT_STRING + 4, 0x0, BattleScript_SliceDiceEnd
+	jumpifbyte CMP_COMMON_BITS, gMoveResultFlags, MOVE_RESULT_DOESNT_AFFECT_FOE, BattleScript_SliceDiceEnd
+	copyarray gBattleTextBuff1, sMULTIHIT_STRING, 0x6
+	printstring STRINGID_HITXTIMES
+	waitmessage 0x40
+
+BattleScript_SliceDiceEnd::
+	seteffectwithchance
+	tryfaintmon BS_TARGET, FALSE, NULL
+	moveendfrom MOVEEND_UPDATE_LAST_MOVES
+	end
+
+BattleScript_EffectSpiteHit::
+	attackcanceler
+	attackstring
+	ppreduce
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	critcalc
+	damagecalc
+	adjustdamage
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage 0x40
+	tryfaintmon BS_TARGET, FALSE, NULL
+	tryspiteppreduce BattleScript_MoveEnd
+	printstring STRINGID_PKMNREDUCEDPP
+	goto BattleScript_MoveEnd

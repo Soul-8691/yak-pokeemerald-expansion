@@ -1642,6 +1642,16 @@ const u32 gBattleAnimSpritePal_Slash2[] = INCBIN_U32("graphics/battle_anims/spri
 const u32 gBattleAnimSpriteGfx_WhiteShadow[] = INCBIN_U32("graphics/battle_anims/sprites/white_shadow.4bpp.lz");
 const u32 gBattleAnimSpritePal_WhiteShadow[] = INCBIN_U32("graphics/battle_anims/sprites/white_shadow.gbapal.lz");
 
+//pokescape battle graphics
+const u32 gBattleAnimSpritePal_SwordStrike[] = INCBIN_U32("graphics/battle_anims/sprites/steel_slash.gbapal.lz");
+const u32 gBattleAnimSpritePal_SaradominStrike[] = INCBIN_U32("graphics/battle_anims/sprites/saradomin_strike.gbapal.lz");
+const u32 gBattleAnimSpritePal_PolyporeStrike[] = INCBIN_U32("graphics/battle_anims/sprites/polypore_strike.gbapal.lz");
+const u32 gBattleAnimSpritePal_BloodBubble[] = INCBIN_U32("graphics/battle_anims/sprites/blood_bubbles.gbapal.lz");
+const u32 gBattleAnimSpritePal_BloodBarrageParticles[] = INCBIN_U32("graphics/battle_anims/sprites/blood_barrage_particles.gbapal.lz");
+
+
+
+
 const u32 gPartyMenuBg_Gfx[] = INCBIN_U32("graphics/interface/party_menu_bg.4bpp.lz");
 const u32 gPartyMenuBg_Pal[] = INCBIN_U32("graphics/interface/party_menu_bg.gbapal.lz");
 const u32 gPartyMenuBg_Tilemap[] = INCBIN_U32("graphics/interface/party_menu_bg.bin.lz");

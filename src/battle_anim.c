@@ -1564,6 +1564,12 @@ const struct CompressedSpriteSheet gBattleAnimPicTable[] =
     {gBattleAnimSpriteGfx_DreepyMissile, 0x200, ANIM_TAG_DREEPY},
     {gBattleAnimSpriteGfx_IceRock, 0x1800, ANIM_TAG_ICE_ROCK_SINGLE},
     {gBattleAnimSpriteGfx_StonePillar, 0x1800, ANIM_TAG_STONE_PILLAR_MULTI},
+    //pokescape
+    {gBattleAnimSpriteGfx_Slash, 0x0800, ANIM_TAG_SWORD_STRIKE},
+    {gBattleAnimSpriteGfx_Lightning, 0x0800, ANIM_TAG_SARADOMIN_STRIKE},
+    {gBattleAnimSpriteGfx_EnergyBall, 0x0200, ANIM_TAG_POLYPORE_STRIKE},
+    {gBattleAnimSpriteGfx_ToxicBubble, 0x0400, ANIM_TAG_BLOOD_BARRAGE_PARTICLES},
+    {gBattleAnimSpriteGfx_SmallBubbles, 0x0140, ANIM_TAG_BLOOD_BUBBLE},
 };
 
 const struct CompressedSpritePalette gBattleAnimPaletteTable[] =
@@ -2011,6 +2017,12 @@ const struct CompressedSpritePalette gBattleAnimPaletteTable[] =
     {gBattleAnimSpritePal_DreepyMissile, ANIM_TAG_DREEPY},
     {gBattleAnimSpritePal_IceRock, ANIM_TAG_ICE_ROCK_SINGLE},
     {gBattleAnimSpritePal_StonePillar, ANIM_TAG_STONE_PILLAR_MULTI},
+    //pokescape
+    {gBattleAnimSpritePal_SwordStrike, ANIM_TAG_SWORD_STRIKE},
+    {gBattleAnimSpritePal_SaradominStrike, ANIM_TAG_SARADOMIN_STRIKE},
+    {gBattleAnimSpritePal_PolyporeStrike, ANIM_TAG_POLYPORE_STRIKE},
+    {gBattleAnimSpritePal_BloodBubble, ANIM_TAG_BLOOD_BUBBLE},
+    {gBattleAnimSpritePal_BloodBarrageParticles, ANIM_TAG_BLOOD_BARRAGE_PARTICLES},
 };
 
 const struct BattleAnimBackground gBattleAnimBackgroundTable[] =

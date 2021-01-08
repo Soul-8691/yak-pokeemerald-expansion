@@ -1901,6 +1901,17 @@ const struct SpriteTemplate gFalseSwipePositionedSliceSpriteTemplate =
     .callback = AnimFalseSwipePositionedSlice,
 };
 
+const struct SpriteTemplate gSwordStrikeSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SWORD_STRIKE,
+    .paletteTag = ANIM_TAG_SWORD_STRIKE,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gSlashSliceAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSlashSlice,
+};
+
 const union AnimCmd gEndureEnergyAnimCmds[] =
 {
     ANIMCMD_FRAME(0, 4),

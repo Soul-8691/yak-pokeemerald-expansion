@@ -716,4 +716,11 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     //pokescape
     [MOVE_CHAOTIC_RIFT] = _("Chaotic Rift"),
     [MOVE_SARADOMIN_STRIKE] = _("Sara Strike"),
+    [MOVE_SWORD_STRIKE] = _("Slice"),
+    [MOVE_SLICE_DICE] = _("Slice&Dice"),
+    [MOVE_ZAMORAK_FLAMES] = _("Zammy Flame"),
+    [MOVE_GUTHIX_CLAWS] = _("Guthix Claws"),
+    [MOVE_POLYPORE_STRIKE] = _("Poly Strike"),
+    [MOVE_ICE_BARRAGE] = _("Ice Barrage"),
+    [MOVE_BLOOD_BARRAGE] = _("Blood Barrage"),
 };

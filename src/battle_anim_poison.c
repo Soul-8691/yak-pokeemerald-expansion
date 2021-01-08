@@ -41,6 +41,17 @@ const struct SpriteTemplate gToxicBubbleSpriteTemplate =
     .callback = AnimSpriteOnMonPos,
 };
 
+const struct SpriteTemplate gBloodBarrageParticlesSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_BLOOD_BARRAGE_PARTICLES,
+    .paletteTag = ANIM_TAG_BLOOD_BARRAGE_PARTICLES,
+    .oam = &gOamData_AffineOff_ObjNormal_16x32,
+    .anims = sAnims_ToxicBubble,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteOnMonPos,
+};
+
 static const union AnimCmd sAnim_PoisonProjectile[] =
 {
     ANIMCMD_FRAME(0, 1),

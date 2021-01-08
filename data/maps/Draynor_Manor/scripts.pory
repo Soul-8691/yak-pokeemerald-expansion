@@ -1,0 +1,67 @@
+mapscripts Draynor_Manor_MapScripts {}
+
+
+
+script DeadTree1 {
+
+	if (var(VAR_TEMP_1)==1){
+	}
+	else 
+	{
+		lock
+		applymovement (OBJ_EVENT_ID_PLAYER, DeadTree_PlayerMovement1)
+		waitmovement(0)		
+		msgbox ("The Tree attacked!")
+		setwildbattle (SPECIES_DEAD_TREE, 5, ITEM_NONE)
+		dowildbattle
+		setvar(VAR_TEMP_1, 1)
+		release
+		}
+}
+
+
+movement DeadTree_PlayerMovement1 {
+	emote_exclamation_mark
+	lock_facing_direction
+	jump_in_place_down
+	DELAY_16
+	unlock_facing_direction	
+}
+
+
+
+script DeadTree2 {
+
+	if (var(VAR_TEMP_2)==1){
+	}
+	else 
+	{
+		lock
+		applymovement (OBJ_EVENT_ID_PLAYER, DeadTree_PlayerMovement1)
+		waitmovement(0)		
+		msgbox ("The Tree attacked!")
+		setwildbattle (SPECIES_DEAD_TREE, 5, ITEM_NONE)
+		dowildbattle
+		setvar(VAR_TEMP_2, 1)
+		release
+		}
+}
+
+
+
+script DeadTree3 {
+
+	if (var(VAR_TEMP_3)==1){
+	}
+	else 
+	{
+		lock
+		applymovement (OBJ_EVENT_ID_PLAYER, DeadTree_PlayerMovement1)
+		waitmovement(0)		
+		msgbox ("The Tree attacked!")
+		setwildbattle (SPECIES_DEAD_TREE, 5, ITEM_NONE)
+		dowildbattle
+		setvar(VAR_TEMP_3, 1)
+		release
+		}
+}

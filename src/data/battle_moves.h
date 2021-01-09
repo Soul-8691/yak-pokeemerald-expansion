@@ -10008,7 +10008,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
     [MOVE_SARADOMIN_STRIKE] =
     {
-        .effect = EFFECT_SPITE_HIT,
+        .effect = EFFECT_SARADOMIN_STRIKE,
         .power = 90,
         .type = TYPE_WATER,
         .accuracy = 100,

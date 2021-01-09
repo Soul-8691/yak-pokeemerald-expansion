@@ -367,7 +367,7 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectSleepHit
 	.4byte BattleScript_EffectInverseBattle
 	.4byte BattleScript_EffectSliceDice
-	.4byte BattleScript_EffectSpiteHit
+	.4byte BattleScript_EffectSaradominStrike
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -7713,7 +7713,7 @@ BattleScript_SliceDiceEnd::
 	moveendfrom MOVEEND_UPDATE_LAST_MOVES
 	end
 
-BattleScript_EffectSpiteHit::
+BattleScript_EffectSaradominStrike::
 	attackcanceler
 	attackstring
 	ppreduce
@@ -7729,6 +7729,8 @@ BattleScript_EffectSpiteHit::
 	healthbarupdate BS_TARGET
 	datahpupdate BS_TARGET
 	critmessage
+	waitmessage 0x40
+	resultmessage
 	waitmessage 0x40
 	tryfaintmon BS_TARGET, FALSE, NULL
 	tryspiteppreduce BattleScript_MoveEnd

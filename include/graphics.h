@@ -8611,6 +8611,9 @@ extern const u32 gItemIcon_DragonNet[];
 extern const u32 gItemIconPalette_DragonNet[];
 extern const u32 gItemIcon_TerrorbirdPouch[];
 extern const u32 gItemIconPalette_TerrorbirdPouch[];
+
+extern const u32 gItemIcon_Map[];
+extern const u32 gItemIconPalette_Map[];
 //pokescape crafting items
 //pouch crafting items
 extern const u32 gItemIcon_CopperOre[];
@@ -8666,6 +8669,8 @@ extern const u32 gItemIcon_FlourPot[];
 extern const u32 gItemIconPalette_FlourPot[];
 extern const u32 gItemIcon_Cabbage[];
 extern const u32 gItemIconPalette_Cabbage[];
+extern const u32 gItemIcon_Cake[];
+extern const u32 gItemIconPalette_Cake[];
 
 // pokescape crops
 extern const u32 gBerryPic_Cabbage[];

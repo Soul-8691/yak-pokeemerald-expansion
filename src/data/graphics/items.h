@@ -914,6 +914,9 @@ const u32 gItemIconPalette_DragonNet[] = INCBIN_U32("graphics/items/pokescape_ic
 const u32 gItemIcon_TerrorbirdPouch[] = INCBIN_U32("graphics/items/pokescape_icons/terrorbird_pouch.4bpp.lz");
 const u32 gItemIconPalette_TerrorbirdPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/terrorbird_pouch.gbapal.lz");
 
+const u32 gItemIcon_Map[] = INCBIN_U32("graphics/items/pokescape_icons/map.4bpp.lz");
+const u32 gItemIconPalette_Map[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/map.gbapal.lz");
+
 //pokescape crafting items
 //pouches
  const u32 gItemIcon_CopperOre[] = INCBIN_U32("graphics/items/pokescape_icons/copper_ore.4bpp.lz");
@@ -995,6 +998,10 @@ const u32 gItemIconPalette_TerrorbirdPouch[] = INCBIN_U32("graphics/items/pokesc
  
  const u32 gItemIcon_Cabbage[] = INCBIN_U32("graphics/items/pokescape_icons/cabbage.4bpp.lz");
  const u32 gItemIconPalette_Cabbage[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/cabbage.gbapal.lz");
+
+ const u32 gItemIcon_Cake[] = INCBIN_U32("graphics/items/pokescape_icons/cake.4bpp.lz");
+ const u32 gItemIconPalette_Cake[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/cake.gbapal.lz");
+
 
 
 

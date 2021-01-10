@@ -462,6 +462,7 @@ const u32 *const gItemIconTable[][2] =
 	[ITEM_LARGE_NET] = {gItemIcon_LargeNet, gItemIconPalette_LargeNet},
 	[ITEM_DRAGON_NET] = {gItemIcon_DragonNet, gItemIconPalette_DragonNet},
 	[ITEM_TERRORBIRD_POUCH] = {gItemIcon_TerrorbirdPouch, gItemIconPalette_TerrorbirdPouch},
+	[ITEM_MAP] = {gItemIcon_Map, gItemIconPalette_Map},
 	//pokescape crafting items
 	//pouches
 	[ITEM_COPPER_ORE] = {gItemIcon_CopperOre, gItemIconPalette_CopperOre},
@@ -491,6 +492,7 @@ const u32 *const gItemIconTable[][2] =
 	[ITEM_EMPTY_POT] = {gItemIcon_EmptyPot, gItemIconPalette_EmptyPot},
 	[ITEM_FLOUR_POT] = {gItemIcon_FlourPot, gItemIconPalette_FlourPot},
 	[ITEM_CABBAGE] = {gItemIcon_Cabbage, gItemIconPalette_Cabbage},
+    [ITEM_CAKE] = {gItemIcon_Cake, gItemIconPalette_Cake},
     // Return to field arrow
     [ITEM_FIELD_ARROW] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };

@@ -32,6 +32,7 @@
 #include "party_menu.h"
 #include "pokeblock.h"
 #include "pokemon.h"
+#include "pokenav.h"
 #include "region_map.h"
 #include "script.h"
 #include "sound.h"
@@ -1676,6 +1677,13 @@ void SetUpFlyUseCallback(u8 taskId)
 	gBagMenu->exitCallback = CB2_OpenFlyMap;
 	Task_FadeAndCloseBagMenu(taskId);
 	
+}
+
+extern void  CB2_FieldShowRegionMap(void);
+
+void ItemUseOutOfBattle_Map(u8 taskId){
+    gBagMenu->exitCallback = CB2_FieldShowRegionMap;
+	Task_FadeAndCloseBagMenu(taskId);
 }
 
 

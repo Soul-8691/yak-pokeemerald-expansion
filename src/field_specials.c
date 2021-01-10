@@ -1020,7 +1020,7 @@ u8 GetLeadMonFriendshipScore(void)
     return 0;
 }
 
-static void CB2_FieldShowRegionMap(void)
+void CB2_FieldShowRegionMap(void)
 {
     FieldInitRegionMap(CB2_ReturnToFieldContinueScriptPlayMapMusic);
 }

@@ -5671,6 +5671,20 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_Bike,
         .secondaryId = 0,
     },
+
+    [ITEM_MAP] =
+    {
+        .name = _("Map"),
+        .itemId = ITEM_MAP,
+        .price = 0,
+        .description = sCupholderDesc,
+        .importance = 1,
+        .unk19 = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_Map,
+        .secondaryId = 0,
+    },
 //CRAFTING ITEMS	
     [ITEM_COPPER_ORE] =
     {
@@ -5963,6 +5977,18 @@ const struct Item gItems[] =
     {
         .name = _("Pot of Flour"),
         .itemId = ITEM_FLOUR_POT,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
+
+    [ITEM_CAKE] =
+    {
+        .name = _("Cake"),
+        .itemId = ITEM_CAKE,
         .price = 0,
         .description = sCupholderDesc,
         .pocket = POCKET_ITEMS,

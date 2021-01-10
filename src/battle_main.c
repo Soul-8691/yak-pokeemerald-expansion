@@ -1914,12 +1914,12 @@ u16 PartyLevelAdjust;
 					rand_diff = 0;
 					break;
 				case 3:
-					rand_diff = -1;
+					rand_diff = 0;
 					break;
 				case 4:
-					rand_diff = -2;
+					rand_diff = 0;
 			}
-			dynamicLevel += rand_diff + PartyLevelAdjust;
+			dynamicLevel += rand_diff + PartyLevelAdjust - 2;
 			
             if (gTrainers[trainerNum].doubleBattle == TRUE)
                 personalityValue = 0x80;

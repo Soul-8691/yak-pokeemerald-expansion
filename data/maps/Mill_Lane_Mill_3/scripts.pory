@@ -1,0 +1,34 @@
+mapscripts Mill_Lane_Mill_3_MapScripts {
+    
+}
+
+script FarmerBattle4{
+    trainerbattle_single(TRAINER_MILL_LANE_4,MillyIntro," I was so close!",GiveQuestWheat)
+    //if flag for cooks quest not set and player has no flour give flour otherwise play message TODO
+    msgbox("Would you like to buy some flour?")
+    pokemart(MillLaneMillFlourShop)
+    release
+}
+
+script GiveQuestWheat{
+    msgbox("Congratulations! Here is the flour.")
+    giveitem(ITEM_FLOUR_POT)
+    msgbox(format(" If you run out you may get some more from me anytime you wish. Although it will come at a cost. Tehehehe!"))
+    release
+}
+
+text MillyIntro{
+    format("Welcome to Mill Lane Mill! I heard that you were after some of our flour. Tehehehehe. I can give you some if you want. But you'll have to battle me for it. Teheehehe!")
+}
+
+raw `
+
+    .align 2
+MillLaneMillFlourShop:
+	.2byte ITEM_FLOUR_POT
+	.2byte ITEM_NONE
+
+    release
+    end
+
+`

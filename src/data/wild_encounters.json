@@ -13405,68 +13405,133 @@
         {
           "map": "MAP_MILL_LANE_MILL",
           "base_label": "gMill_Lane_Mill0",
+          "land_mons": {
+            "encounter_rate": 40,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_LAMB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_RAT_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHICK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHICK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DUCKLING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BABY_YAK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BABY_YAK"
+              }
+            ]
+          },
           "wheat_mons": {
             "encounter_rate": 40,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TOY_DOLL"
+                "species": "SPECIES_CALF"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TOY_DOLL"
+                "species": "SPECIES_CALF"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TOY_DOLL"
+                "species": "SPECIES_LAMB"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TOY_DOLL"
+                "species": "SPECIES_CHICK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TOY_DOLL"
+                "species": "SPECIES_SPIDERLING"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TOY_DOLL"
+                "species": "SPECIES_IMPLING_BABY_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TOY_DOLL"
+                "species": "SPECIES_IMPLING_BABY_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TOY_DOLL"
+                "species": "SPECIES_LAMB"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TOY_DOLL"
+                "species": "SPECIES_CHICK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TOY_DOLL"
+                "species": "SPECIES_SPIDERLING"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TOY_DOLL"
+                "species": "SPECIES_PENGLING"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TOY_DOLL"
+                "species": "SPECIES_BABY_YAK"
               }
             ]
           }

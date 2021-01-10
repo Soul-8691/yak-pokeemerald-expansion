@@ -1,111 +1,194 @@
-
 Route1_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route1_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
 
-Route_1_Chicken_Battle_Script1::
+Route1_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	goto TryMoveCowBlockersRoute1
+	return
+
+
+ChickenBattleScript1::
 	lock
 	faceplayer
-	msgbox Text_SimpleMsgScript, MSGBOX_DEFAULT
-	
+	msgbox ChickenBattleScript1_Text_0
 	setwildbattle SPECIES_CHICKEN_NORMAL_FORM, 7, ITEM_NONE
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	removeobject 8
-	
-	goto Common_EventScript_RemoveStaticPokemon
 	release
-	end
-	
-Route_1_Chicken_Battle_Script2::
+	return
+
+
+ChickenBattleScript2::
 	lock
 	faceplayer
-	msgbox Text_SimpleMsgScript, MSGBOX_DEFAULT
-	
-	
+	msgbox ChickenBattleScript1_Text_0
 	setwildbattle SPECIES_CHICKEN_NORMAL_FORM, 7, ITEM_NONE
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	removeobject 9
-	
-	goto Common_EventScript_RemoveStaticPokemon
 	release
-	end
+	return
 
-Route_1_Chicken_Battle_Script3::
+
+ChickenBattleScript3::
 	lock
 	faceplayer
-	msgbox Text_SimpleMsgScript, MSGBOX_DEFAULT
-	
-	
+	msgbox ChickenBattleScript1_Text_0
 	setwildbattle SPECIES_CHICKEN_NORMAL_FORM, 7, ITEM_NONE
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	removeobject 10
-	
-	goto Common_EventScript_RemoveStaticPokemon
 	release
-	end
-	
-Route_1_EvilChicken_Battle_Script::
+	return
 
 
+EvilChickenBattleScript::
 	lock
 	faceplayer
-	msgbox Text_EvilChicken, MSGBOX_DEFAULT
-	
-	
-	setwildbattle SPECIES_EVILCHICKEN, 7, ITEM_NONE
-	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	msgbox EvilChickenBattleScript_Text_0
+	setwildbattle SPECIES_EVILCHICKEN, 15, ITEM_NONE
 	dowildbattle
-	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-
 	removeobject 11
 	setflag FLAG_EVILCHICKEN_DEFEATED
-	end
-	
-Route_1_Wartfoot_Battle::
-	trainerbattle_single TRAINER_WARTFOOT, Text_Wartfoot, Text_WartfootDefeated
-	msgbox Text_WartfootDefeated, MSGBOX_DEFAULT
-	release
-	end
+	return
 
-Route_1_Frogface_Battle::
-	trainerbattle_single TRAINER_FROGFACE, Text_Frogface, Text_FrogfaceDefeated
-	msgbox Text_FrogfaceDefeated, MSGBOX_DEFAULT
+
+WartfootBattle::
+	trainerbattle_single TRAINER_GOBLIN_1_ROUTE1, WartfootBattle_Text_0, WartfootBattle_Text_1
+	msgbox WartfootBattle_Text_1
 	release
-	end
-	
-Route_1_Rsn_Battle::
-	trainerbattle_single TRAINER_RSN_ROUTE1, Text_RsnRoute1, Text_RsnRoute1Defeated
-	msgbox Text_RsnRoute1Defeated, MSGBOX_DEFAULT
+	return
+
+
+FrogfaceBattle::
+	trainerbattle_single TRAINER_GOBLIN_2_ROUTE1, FrogfaceBattle_Text_0, FrogfaceBattle_Text_1
+	msgbox FrogfaceBattle_Text_2
 	release
-	end
-	
-	
-	Text_Wartfoot:
-	.string "Brown armour best!$"
-	
-	Text_WartfootDefeated:
-	.string "Um... my brown armor in the wash$"
-	
-	Text_Frogface:
-	.string "I kill you human!$"
-	
-	Text_FrogfaceDefeated:
+	return
+
+
+MudbeardBattle::
+	trainerbattle_single TRAINER_GOBLIN_3_ROUTE1, MudbeardBattle_Text_0, MudbeardBattle_Text_1
+	msgbox MudbeardBattle_Text_2
+	release
+	return
+
+
+RsnBattle::
+	trainerbattle_single TRAINER_RSN_ROUTE1, RsnBattle_Text_0, RsnBattle_Text_1
+	msgbox RsnBattle_Text_2
+	release
+	return
+
+
+Route1FarmerBattle::
+	trainerbattle_single TRAINER_FARMER_ROUTE1, Route1FarmerBattle_Text_0, Route1FarmerBattle_Text_1
+	msgbox Route1FarmerBattle_Text_1
+	release
+	return
+
+
+Route1Man::
+	msgbox Route1Man_Text_0
+	release
+	return
+
+
+Route1Woman::
+	msgbox Route1Woman_Text_0
+	release
+	return
+
+
+GenericCowMoo::
+	msgbox GenericCowMoo_Text_0
+	release
+	return
+
+
+Route1FarmerBlocking::
+	lock
+	faceplayer
+	goto_if_unset FLAG_BADGE01_GET, Route1FarmerBlocking_2
+	msgbox Route1FarmerBlocking_Text_1
+Route1FarmerBlocking_1:
+	release
+	return
+
+Route1FarmerBlocking_2:
+	msgbox Route1FarmerBlocking_Text_0
+	goto Route1FarmerBlocking_1
+
+
+TryMoveCowBlockersRoute1::
+	goto_if_set FLAG_BADGE01_GET, TryMoveCowBlockersRoute1_1
+	return
+
+TryMoveCowBlockersRoute1_1:
+	setobjectxyperm 4, 42, 9
+	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 12, 38, 9
+	setobjectxyperm 13, 36, 11
+	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_DOWN
+	return
+
+
+ChickenBattleScript1_Text_0:
+	.string "BAWWK$"
+
+EvilChickenBattleScript_Text_0:
+	.string "TIME TO DIE!$"
+
+WartfootBattle_Text_0:
+	.string "Brown armor best!$"
+
+WartfootBattle_Text_1:
+	.string "Um.. my brown armor in the wash$"
+
+FrogfaceBattle_Text_0:
 	.string "You ugly!$"
 
-	
-	Text_EvilChicken:
-	.string "TIME TO DIE!$"
-	
-	Text_SimpleMsgScript:
-	.string "BWAAK!$"
-	
-	Text_RsnRoute1:
+FrogfaceBattle_Text_1:
+	.string "You still ugly!$"
+
+FrogfaceBattle_Text_2:
+	.string "you really really ugly$"
+
+MudbeardBattle_Text_0:
+	.string "Go away smelly human!$"
+
+MudbeardBattle_Text_1:
+	.string "Leave me alone!$"
+
+MudbeardBattle_Text_2:
+	.string "Smelly human!$"
+
+RsnBattle_Text_0:
 	.string "You look like a noob!$"
-	
-	Text_RsnRoute1Defeated:
-	.string "You're still a noob!$"
+
+RsnBattle_Text_1:
+	.string "Maybe I'm the noob..$"
+
+RsnBattle_Text_2:
+	.string "The mill is up ahead. I heard you can get\n"
+	.string "some good wheat there.$"
+
+Route1FarmerBattle_Text_0:
+	.string "Cor blimey what are ye doing on me\n"
+	.string "lands!$"
+
+Route1FarmerBattle_Text_1:
+	.string "Its not really my lands yet.$"
+
+Route1Man_Text_0:
+	.string "Isn't my GF great?$"
+
+Route1Woman_Text_0:
+	.string "I'm actually a guy.$"
+
+GenericCowMoo_Text_0:
+	.string "MOOO$"
+
+Route1FarmerBlocking_Text_0:
+	.string "I can't seem to control these dang cows!$"
+
+Route1FarmerBlocking_Text_1:
+	.string "I finally got my cows out of the way.$"

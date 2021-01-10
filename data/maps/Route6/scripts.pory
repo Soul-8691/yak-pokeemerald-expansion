@@ -1,0 +1,9 @@
+mapscripts Route6_MapScripts {
+    
+}
+
+script MuggerBattleRoute6{
+    trainerbattle_single(TRAINER_MUGGER_ROUTE6, format("Your money or your life!"),format("Okay I guess you can keep both.."))
+    msgbox(format("Shoo you're making it hard for me to mug people."))
+    release
+}

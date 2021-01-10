@@ -219,7 +219,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "GuardBlockUpRoute1",
       "flag": "0"
     },
     {
@@ -426,13 +426,6 @@
       "dest_warp_id": 0
     },
     {
-      "x": 18,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_UNDERWATER_ROUTE129",
-      "dest_warp_id": 0
-    },
-    {
       "x": 28,
       "y": 7,
       "elevation": 0,
@@ -444,13 +437,6 @@
       "y": 30,
       "elevation": 0,
       "dest_map": "MAP_TZHAAR_1F",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 41,
-      "y": 30,
-      "elevation": 0,
-      "dest_map": "MAP_LUMBRIDGE",
       "dest_warp_id": 0
     }
   ],
@@ -496,6 +482,42 @@
       "y": 35,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "GuardBlockLeftRoute1"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "GuardBlockRightRoute1"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 43,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "GuardBlockDownRoute1"
     }
   ],
   "bg_events": [

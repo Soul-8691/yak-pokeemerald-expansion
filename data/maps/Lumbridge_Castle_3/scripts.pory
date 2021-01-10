@@ -1,0 +1,45 @@
+mapscripts Lumbridge_Castle_3_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION{
+        goto (TryMoveGuardLumbridgeCastle3)
+    }
+}
+
+script DukeFirstEncounter{
+    lock
+    faceplayer
+    if (!flag(FLAG_BADGE01_GET)){
+        msgbox(format("Hi there! I'm Duke Horacio, lord of castle lumbridge. If you wish to challenge me to a battle you will have to reach the top of the castle."))
+        fadescreen(FADE_TO_BLACK)
+        removeobject(1)
+        fadescreen(FADE_FROM_BLACK)
+    }
+    else {
+        msgbox("You fought well earlier!\n I look forward to a rematch.")
+    }
+    release
+}
+
+script TryMoveGuardLumbridgeCastle3{
+    if (flag(FLAG_BADGE01_GET)){
+        setobjectxyperm(2, 27, 4)
+        setobjectmovementtype(2,MOVEMENT_TYPE_FACE_DOWN)
+        clearflag (FLAG_DUKE_TALKED)
+    }
+}
+
+script LumbridgeCastleGuard{
+    if (!flag(FLAG_BADGE01_GET)){
+        msgbox(format("This hallway is off limits. You'll have to find another way up."))
+    }
+    else {
+        msgbox(format("Welcome to castle Lumbridge. Mind yourself."))
+    }
+    release
+}
+
+script SigmundMessage{
+    lock
+    faceplayer
+    msgbox("I think you're looking for the Duke.\n He's in the next room.")
+    release
+}

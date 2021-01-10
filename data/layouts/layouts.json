@@ -4797,7 +4797,7 @@
       "width": 16,
       "height": 9,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_Lumbridge",
+      "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Lumbridge_Castle_4/border.bin",
       "blockdata_filepath": "data/layouts/Lumbridge_Castle_4/map.bin"
     },

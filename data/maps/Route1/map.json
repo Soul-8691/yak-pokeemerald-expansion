@@ -60,7 +60,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route_1_Wartfoot_Battle",
+      "script": "WartfootBattle",
       "flag": "0"
     },
     {
@@ -73,7 +73,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "Route_1_Frogface_Battle",
+      "script": "FrogfaceBattle",
       "flag": "0"
     },
     {
@@ -86,24 +86,24 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "Route_1_Rsn_Battle",
+      "script": "RsnBattle",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_farmer_male",
-      "x": 20,
-      "y": 16,
+      "x": 30,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route1FarmerBlocking",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_man_1",
       "x": 7,
       "y": 16,
       "elevation": 3,
@@ -112,11 +112,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route1Man",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_woman_1",
       "x": 8,
       "y": 16,
       "elevation": 3,
@@ -125,20 +125,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route1Woman",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "graphics_id": "OBJ_EVENT_GFX_goblin_1",
       "x": 14,
       "y": 30,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "MudbeardBattle",
       "flag": "0"
     },
     {
@@ -151,7 +151,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route_1_Chicken_Battle_Script1",
+      "script": "ChickenBattleScript1",
       "flag": "FLAG_CHICKEN1_HIDE"
     },
     {
@@ -164,7 +164,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route_1_Chicken_Battle_Script2",
+      "script": "ChickenBattleScript2",
       "flag": "FLAG_CHICKEN3_HIDE"
     },
     {
@@ -177,7 +177,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route_1_Chicken_Battle_Script3",
+      "script": "ChickenBattleScript3",
       "flag": "FLAG_CHICKEN2_HIDE"
     },
     {
@@ -190,8 +190,47 @@
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route_1_EvilChicken_Battle_Script",
+      "script": "EvilChickenBattleScript",
       "flag": "FLAG_EVILCHICKEN_HIDE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_cow",
+      "x": 28,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GenericCowMoo",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_cow",
+      "x": 27,
+      "y": 19,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "GenericCowMoo",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_farmer_male",
+      "x": 20,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Route1FarmerBattle",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -211,15 +250,7 @@
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 41,
-      "y": 9,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
-    }
+
   ],
   "bg_events": [
 

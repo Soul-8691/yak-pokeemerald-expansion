@@ -3,9 +3,37 @@
 
 #define TRAINER_NONE                          0
 #define TRAINER_MAGGIE            			  1
-#define TRAINER_WARTFOOT					  2
-#define TRAINER_FROGFACE					  3
-#define TRAINER_RSN_ROUTE1					  4
+//route 1
+#define TRAINER_GOBLIN_1_ROUTE1			      2
+#define TRAINER_GOBLIN_2_ROUTE1				  3
+#define TRAINER_GOBLIN_3_ROUTE1               4
+#define TRAINER_FARMER_ROUTE1                 5
+#define TRAINER_RSN_ROUTE1					  6
+//mill lane mill
+#define TRAINER_MILL_LANE_1                   7
+#define TRAINER_MILL_LANE_2                   8
+#define TRAINER_MILL_LANE_3                   9
+#define TRAINER_MILL_LANE_4                   10
+//route 12
+#define TRAINER_GOBLIN_4_ROUTE12              11
+#define TRAINER_GOBLIN_5_ROUTE12              12
+#define TRAINER_GOBLIN_6_ROUTE12              13
+#define TRAINER_GOBLIN_7_ROUTE12              14
+#define TRAINER_RSN_ROUTE12                   15
+//route 4
+#define TRAINER_SCAMMER_ROUTE4                16
+#define TRAINER_FARMER_ROUTE4                 17
+#define TRAINER_MUGGER_ROUTE4                 18
+//route 6
+#define TRAINER_MUGGER_ROUTE6                 19
+
+//lumbridge castle gym
+
+#define TRAINER_LUMBRIDGE_GYM1                20
+#define TRAINER_LUMBRIDGE_GYM2                21
+#define TRAINER_LUMBRIDGE_GYM3                22
+#define TRAINER_LUMBRIDGE_GYM4                23
+#define TRAINER_DUKE                          24
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

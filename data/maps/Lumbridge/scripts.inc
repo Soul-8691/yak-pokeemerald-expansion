@@ -65,6 +65,7 @@ Kevin_7:
 	giveitem ITEM_SMALL_NET
 	giveitem ITEM_LARGE_NET
 	giveitem ITEM_DRAGON_NET
+	giveitem ITEM_MAP
 	release
 	goto Kevin_1
 
@@ -84,6 +85,108 @@ Kevin_10:
 	release
 	goto Kevin_1
 
+
+GuardBlockLeftRoute1::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, GuardBlockLeftRoute1_2
+GuardBlockLeftRoute1_1:
+	release
+	return
+
+GuardBlockLeftRoute1_2:
+	lock
+	applymovement 13, BlockLeftLumbridge
+	waitmovement 0
+	msgbox GuardBlockLeftRoute1_Text_0
+	waitmessage
+	release
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveBackLumbridge
+	waitmovement 0
+	goto GuardBlockLeftRoute1_1
+
+
+GuardBlockRightRoute1::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, GuardBlockRightRoute1_2
+GuardBlockRightRoute1_1:
+	release
+	return
+
+GuardBlockRightRoute1_2:
+	lock
+	applymovement 13, BlockRightLumbridge
+	waitmovement 0
+	msgbox GuardBlockLeftRoute1_Text_0
+	waitmessage
+	release
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveBackLumbridge
+	waitmovement 0
+	goto GuardBlockRightRoute1_1
+
+
+GuardBlockUpRoute1::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, GuardBlockUpRoute1_2
+GuardBlockUpRoute1_1:
+	release
+	return
+
+GuardBlockUpRoute1_2:
+	lock
+	applymovement 14, BlockUpLumbridge
+	waitmovement 0
+	msgbox GuardBlockLeftRoute1_Text_0
+	waitmessage
+	release
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveLeftLumbridge
+	waitmovement 0
+	goto GuardBlockUpRoute1_1
+
+
+GuardBlockDownRoute1::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, GuardBlockDownRoute1_2
+GuardBlockDownRoute1_1:
+	release
+	return
+
+GuardBlockDownRoute1_2:
+	lock
+	applymovement 14, BlockDownLumbridge
+	waitmovement 0
+	msgbox GuardBlockLeftRoute1_Text_0
+	waitmessage
+	release
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveLeftLumbridge
+	waitmovement 0
+	goto GuardBlockDownRoute1_1
+
+
+BlockLeftLumbridge:
+	emote_exclamation_mark
+	jump_in_place_left
+	step_end
+
+BlockRightLumbridge:
+	emote_exclamation_mark
+	jump_in_place_right
+	step_end
+
+BlockUpLumbridge:
+	emote_exclamation_mark
+	jump_in_place_up
+	step_end
+
+BlockDownLumbridge:
+	emote_exclamation_mark
+	jump_in_place_down
+	step_end
+
+PlayerMoveLeftLumbridge:
+	walk_left
+	walk_left
+	step_end
+
+PlayerMoveBackLumbridge:
+	walk_down
+	walk_down
+	step_end
 
 	.align 2
 Cheat_Menu_Shop_Pouches:
@@ -231,3 +334,7 @@ Kevin_Text_7:
 
 Kevin_Text_8:
 	.string "Smell ya later!$"
+
+GuardBlockLeftRoute1_Text_0:
+	.string "You should speak to the cook first. I\n"
+	.string "heard he was looking for help.$"

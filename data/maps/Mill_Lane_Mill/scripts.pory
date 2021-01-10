@@ -1,0 +1,11 @@
+mapscripts Mill_Lane_Mill_MapScripts {
+    
+}
+
+
+script MillLaneNPC1{
+    lock
+    faceplayer
+    msgbox(format("This is the windmill, at the top farmers insert wheat to create flour"))
+    release
+}

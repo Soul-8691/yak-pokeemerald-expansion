@@ -1,0 +1,50 @@
+mapscripts Lumbridge_Castle_1_MapScripts {
+    
+}
+
+script Hans{
+    msgbox("Cupholder")
+    release
+}
+
+script Man1LumbridgeCastle{
+    msgbox("I love the castle!")
+    release
+}
+
+script Woman1LumbridgeCastle{
+    msgbox("I don't remember why I came here")
+    release
+}
+
+script ImpBattleLumbridge{
+    setwildbattle(SPECIES_IMP,5,ITEM_NONE)
+    msgbox("EEEEE")
+    dowildbattle
+    removeobject(VAR_LAST_TALKED)
+    release
+}
+
+script LumbridgeGym1{
+    trainerbattle_single(TRAINER_LUMBRIDGE_GYM1, format("You think you're ready to face the duke? You're not!"),format("You are ready to face the duke after all it seems.") )
+    msgbox(format("You fought well. I should train harder."))
+    release
+}
+
+script LumbridgeGym2{
+    trainerbattle_single(TRAINER_LUMBRIDGE_GYM2, format("Feast your eyes upon my evolved monster!"),format("Maybe I should have evolved it differently with a rune after all.") )
+    msgbox(format("Next time I'll use a rune."))
+    release
+}
+
+script LumbridgeGym3{
+    trainerbattle_single(TRAINER_LUMBRIDGE_GYM3, format("The Duke of Lumbridge is the strongest man this side of the Lum. "),format("Then again this side of the Lum is pretty big."))
+    msgbox(format("Maybe I should train on the other side of the river."))
+    release
+}
+
+script LumbridgeGym4{
+    trainerbattle_single(TRAINER_LUMBRIDGE_GYM4, format("Ready to face the Duke himself? Let us check."),format("Sure. You pass. Barely.") )
+    msgbox(format("It was a close fight."))
+    release
+}

@@ -1,0 +1,23 @@
+mapscripts Lumbridge_Castle_4_MapScripts {
+    
+}
+
+script GymBattle1{
+    lock
+    faceplayer
+    msgbox("So you've made it to the top!\nCongratulations!")
+    trainerbattle_single(TRAINER_DUKE,format("You wish to challenge me to a battle?\nSo be it!\lMay the best trainer win!"),"You beat me.. Congratulations!",GymBattle1Won)
+}
+
+script GymBattle1Won{
+    msgbox(format("Congratulations! You've managed to defeat me. Here is your official GYM BADGE, you've definitely earned it."))
+    msgbox("OBTAINED THE LUMBRIDGE BADGE!")
+    msgbox(format("Here is my favorite move. Hopefully it will help you on your journey"))
+    giveitem (ITEM_TM08, 1)
+    msgbox(format("I suppose you'll be heading to the next gym, correct? Then you'd be wanting to go to Falador. Might I suggest first stopping off at the Wizards' Tower and doing some training with Archmage Sedridor. Best of luck adventurer! The Wizards' Tower is south of Draynor Village. Give Archmage Sedridor my regards."))
+    fadescreen(FADE_TO_BLACK)
+    removeobject(1)
+    settrainerflag(TRAINER_LUMBRIDGE_GYM4)
+    fadescreen(FADE_FROM_BLACK)
+    release
+}

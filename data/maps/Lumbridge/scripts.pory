@@ -45,6 +45,7 @@ script Kevin {
 			giveitem (ITEM_SMALL_NET)
 			giveitem (ITEM_LARGE_NET)
 			giveitem (ITEM_DRAGON_NET)
+			giveitem (ITEM_MAP)
 			release
 		case 5:
 			msgbox("Get money!")
@@ -62,6 +63,86 @@ script Kevin {
 	release
 }
 
+script GuardBlockLeftRoute1{
+	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+		lock
+		applymovement(13, BlockLeftLumbridge)
+		waitmovement(0)
+		msgbox(format("You should speak to the cook first. I heard he was looking for help."))
+		waitmessage 
+		release
+		applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveBackLumbridge)
+		waitmovement(0)
+	}
+	release
+}
+
+script GuardBlockRightRoute1{
+		if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+		lock
+		applymovement(13, BlockRightLumbridge)
+		waitmovement(0)
+		msgbox(format("You should speak to the cook first. I heard he was looking for help."))
+		waitmessage 
+		release
+		applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveBackLumbridge)
+		waitmovement(0)
+	}
+	release
+}
+
+script GuardBlockUpRoute1{
+		if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+		lock
+		applymovement(14, BlockUpLumbridge)
+		waitmovement(0)
+		msgbox(format("You should speak to the cook first. I heard he was looking for help."))
+		waitmessage 
+		release
+		applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveLeftLumbridge)
+		waitmovement(0)
+	}
+	release
+}
+
+script GuardBlockDownRoute1{
+		if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+		lock
+		applymovement(14, BlockDownLumbridge)
+		waitmovement(0)
+		msgbox(format("You should speak to the cook first. I heard he was looking for help."))
+		waitmessage 
+		release
+		applymovement(OBJ_EVENT_ID_PLAYER, PlayerMoveLeftLumbridge)
+		waitmovement(0)
+	}
+	release
+}
+
+movement BlockLeftLumbridge{
+	emote_exclamation_mark
+	jump_in_place_left
+}
+movement BlockRightLumbridge{
+	emote_exclamation_mark
+	jump_in_place_right
+}
+movement BlockUpLumbridge{
+	emote_exclamation_mark
+	jump_in_place_up
+}
+movement BlockDownLumbridge{
+	emote_exclamation_mark
+	jump_in_place_down
+}
+
+
+movement PlayerMoveLeftLumbridge {
+	walk_left *2
+}
+movement PlayerMoveBackLumbridge {
+	walk_down *2
+}
 raw `
 	.align 2
 Cheat_Menu_Shop_Pouches:

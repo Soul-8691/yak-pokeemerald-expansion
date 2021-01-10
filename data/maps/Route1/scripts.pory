@@ -1,0 +1,119 @@
+mapscripts Route1_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION{
+    goto(TryMoveCowBlockersRoute1)
+    }
+} 
+
+script ChickenBattleScript1{
+    lock
+    faceplayer
+    msgbox("BAWWK")
+    setwildbattle (SPECIES_CHICKEN_NORMAL_FORM, 7, ITEM_NONE)
+    dowildbattle
+    removeobject (8)
+    release
+}
+
+script ChickenBattleScript2{
+    lock
+    faceplayer
+    msgbox("BAWWK")
+    setwildbattle (SPECIES_CHICKEN_NORMAL_FORM, 7, ITEM_NONE)
+    dowildbattle
+    removeobject (9)
+    release
+}
+
+script ChickenBattleScript3{
+    lock
+    faceplayer
+    msgbox("BAWWK")
+    setwildbattle (SPECIES_CHICKEN_NORMAL_FORM, 7, ITEM_NONE)
+    dowildbattle
+    removeobject (10)
+    release
+}
+
+script EvilChickenBattleScript{
+    lock
+    faceplayer
+    msgbox("TIME TO DIE!")
+    setwildbattle (SPECIES_EVILCHICKEN, 15, ITEM_NONE)
+    dowildbattle
+    removeobject (11)
+    setflag (FLAG_EVILCHICKEN_DEFEATED)
+
+}
+
+script WartfootBattle{
+    trainerbattle_single(TRAINER_GOBLIN_1_ROUTE1, "Brown armor best!","Um.. my brown armor in the wash")
+    msgbox("Um.. my brown armor in the wash")
+    release
+}
+
+script FrogfaceBattle{
+        trainerbattle_single(TRAINER_GOBLIN_2_ROUTE1, "You ugly!","You still ugly!")
+        msgbox("you really really ugly")
+        release
+}
+
+script MudbeardBattle{
+    trainerbattle_single(TRAINER_GOBLIN_3_ROUTE1,"Go away smelly human!","Leave me alone!" )
+    msgbox("Smelly human!")
+    release
+    
+}
+
+script RsnBattle{
+    trainerbattle_single(TRAINER_RSN_ROUTE1, "You look like a noob!","Maybe I'm the noob..")
+    msgbox(format("The mill is up ahead. I heard you can get some good wheat there."))
+    release
+
+}
+
+script Route1FarmerBattle{
+    trainerbattle_single(TRAINER_FARMER_ROUTE1,format("Cor blimey what are ye doing on me lands!"),format("Its not really my lands yet."))
+    msgbox("Its not really my lands yet.")
+    release
+}
+
+script Route1Man{
+    msgbox("Isn't my GF great?")
+    release
+}
+
+script Route1Woman{
+    msgbox("I'm actually a guy.")
+    release
+}
+
+script GenericCowMoo{
+    msgbox("MOOO")
+    release
+}
+
+script Route1FarmerBlocking{
+    lock 
+    faceplayer
+    if (!flag(FLAG_BADGE01_GET)){
+        msgbox("I can't seem to control these dang cows!")
+    }
+    else{
+        msgbox("I finally got my cows out of the way.")
+    }
+    release
+}
+
+
+script TryMoveCowBlockersRoute1{
+    if (flag(FLAG_BADGE01_GET)){
+        setobjectxyperm(4, 42, 9)
+        setobjectmovementtype(4,MOVEMENT_TYPE_FACE_DOWN)
+
+        setobjectxyperm(12, 38, 9)
+
+        setobjectxyperm(13, 36, 11)
+        setobjectmovementtype(13,MOVEMENT_TYPE_FACE_DOWN)
+    }
+}
+

@@ -1,14 +1,14 @@
 mapscripts Route12_MapScripts{
 	MAP_SCRIPT_ON_TRANSITION{
-		random (100)
-		if (var(VAR_RESULT) == 99)
-		{
-			clearflag(FLAG_UNUSED_0x493)
-		}
-		else {
-			setflag (FLAG_UNUSED_0x493)
-		}
-		release
+		#random (100)
+		#if (var(VAR_RESULT) == 99)
+		#{
+		#	clearflag(FLAG_UNUSED_0x493)
+		#}
+		#else {
+		#	setflag (FLAG_UNUSED_0x493)
+		#}
+		#release
 	}
 }
 
@@ -31,8 +31,16 @@ script Cow_Battle
 	setwildbattle (SPECIES_COW, 7, ITEM_NONE)
 	#hidemonpic
 	dowildbattle
+	removeobject (VAR_LAST_TALKED)
 	if (var(VAR_RESULT) == B_OUTCOME_WON || var(VAR_RESULT) == B_OUTCOME_CAUGHT){
-		removeobject (VAR_LAST_TALKED)
+		checkitem(ITEM_EMPTY_BUCKET, 1)
+		if (var(VAR_RESULT)){
+			removeitem (ITEM_EMPTY_BUCKET, 1)
+			giveitem (ITEM_MILK_BUCKET, 1)
+		}
+		else{
+			msgbox(format("If I had an empty bucket I could milk this cow."))
+		}
 		release
 	}
 	else {
@@ -43,9 +51,78 @@ script Cow_Battle
 
 }
 
-script TestRemove 
-{
+script ChickenBattle{
+	lock
+	faceplayer
+	msgbox("BAWK")
+	setwildbattle(SPECIES_CHICKEN_NORMAL_FORM, 5, ITEM_NONE)
+	dowildbattle
 	removeobject (VAR_LAST_TALKED)
+	if (var(VAR_RESULT) == B_OUTCOME_WON || var(VAR_RESULT) == B_OUTCOME_CAUGHT){
+		giveitem (ITEM_EGG)
+		release
+	}
+}
+
+script GoblinBattle4{
+	trainerbattle_single(TRAINER_GOBLIN_4_ROUTE12, "This place goblin place. Human go home.",format("Human strong. This now Goblin and human home."))
+	msgbox(format("Human strong. This now Goblin and human home."))
+	release
+}
+
+script GoblinBattle5{
+	trainerbattle_single(TRAINER_GOBLIN_5_ROUTE12, format("Human weak. Feethands show why."),format("Feethands weak. Human show Feethands why."))
+	msgbox(format("Feethands weak. Human show Feethands why."))
+	release
+}
+
+script GoblinBattle6{
+	trainerbattle_single(TRAINER_GOBLIN_6_ROUTE12, format("Human homes makes for weak monster. See strong monster here."),format("Strong monsters in human homes it seems."))
+	msgbox(format("Strong monsters in human homes it seems."))
+	release
+}
+
+script GoblinBattle7{
+	trainerbattle_single(TRAINER_GOBLIN_7_ROUTE12, format("Big high war god say human go home."),format("Big high war god calls for rematch. Later. Much later."))
+	msgbox(format("Big high war god calls for rematch. Later. Much later."))
+	release
+}
+
+script RsnBattleRoute12{
+	trainerbattle_single(TRAINER_RSN_ROUTE12, format("You look like a noob, even I could beat you!"),format("Well drat. Maybe I should've looked for rarer monsters around here first."))
+	msgbox(format("Well drat. Maybe I should've looked for rarer monsters around here first."))
+	release
+}
+
+
+script Route12CookingGoblin{
+	msgbox("Go away human. Goblin cooking.")
+	release
+}
+
+script Route12Farmer{
+	faceplayer
+	msgbox(format("Here you can plant crops and harvest them later!"))
+	release
+}
+
+script Route12MilkLady{
+	faceplayer
+	msgbox(format("If you need milk feel free to milk the cows. Make sure you have an empty bucket!"))
+	release
+}
+
+script MilkCow{
+	msgbox("MOOOO")
+	checkitem(ITEM_EMPTY_BUCKET, 1)
+	if (var(VAR_RESULT)){
+		removeitem (ITEM_EMPTY_BUCKET, 1)
+		giveitem (ITEM_MILK_BUCKET, 1)
+	}
+	else{
+		msgbox(format("If I had an empty bucket I could milk this cow."))
+	}
+	release
 }
 
 movement Cannot_Pass_Move

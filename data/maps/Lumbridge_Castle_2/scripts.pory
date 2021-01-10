@@ -1,4 +1,82 @@
-mapscripts Lumbridge_Castle_2_MapScripts{}
+mapscripts Lumbridge_Castle_2_MapScripts{
+	MAP_SCRIPT_ON_TRANSITION{
+		goto (TryMoveGuardLumbridgeCastle2)
+	}
+
+}
+
+
+script LumbridgeCastleCook{
+	lock
+	faceplayer
+	checkitem(ITEM_CAKE, 1)
+	if (var(VAR_RESULT) && !flag(FLAG_COOKS_ASSIST_FINISHED)){
+		removeitem (ITEM_CAKE, 1)
+		msgbox(format("I am saved! Thank you so much!\pFeel free to use my Range anytime."))
+		msgbox(format(" Oh? What's that?\n You wanted to challenge the Duke to a Gym Battle?\p Why didn't you say so!\n Go straight up those stairs.\n I'll let him know you're coming."))
+		setflag(FLAG_COOKS_ASSIST_FINISHED)
+		release
+	}
+
+	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+		msgbox(CookAssistStartTextFirst)
+		msgbox(CookAssistStartTextSecond)
+		msgbox("Can you please help me?", MSGBOX_YESNO)
+		if (var(VAR_RESULT)){
+			msgbox("Oh, thank you, thank you!")
+			msgbox(CookItemsListFirst)
+			msgbox(CookItemsListSecond)
+			msgbox("oh.. before you go.")
+			giveitem (ITEM_MAP)
+			msgbox(format("Hopefully that map will help you if you get lost."))
+			setflag(FLAG_COOKS_ASSIST_STARTED)
+			release
+		}
+		else{
+			msgbox(format("Fine! I always knew you adventurer types were callous beasts! Go on your merry way."))
+			release
+		}
+	}
+
+	elif (flag(FLAG_COOKS_ASSIST_STARTED) && !flag(FLAG_COOKS_ASSIST_FINISHED)){
+		msgbox(format("Do you need help with finding the ingredients?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT)){
+			msgbox("I need an egg, some milk, and some flour.")
+			checkitem (ITEM_EGG,1)
+			if (!var(VAR_RESULT)){
+				msgbox(format("You should visit the farm north of here for an egg."))
+			}
+			else{
+				checkitem (ITEM_MILK_BUCKET,1)
+				if (var(VAR_RESULT)){
+					checkitem (ITEM_FLOUR_POT, 1)
+					if(var(VAR_RESULT)){
+						msgbox(format("It looks like you have everything!\p Could you also make the cake?\n I forgot how.\p Use the range over there!"))
+						release
+					}
+				}
+			}
+			checkitem(ITEM_MILK_BUCKET,1)
+			if(!var(VAR_RESULT)){
+				msgbox(format("You can get some milk from the Cow Field, east of Lumbridge."))
+			}
+			checkitem(ITEM_FLOUR_POT,1)
+			if(!var(VAR_RESULT)){
+				msgbox(format("You should ask someone at the Windmill if they can give you some flour."))
+			}
+			release	
+		}
+		else {
+			msgbox("Great! Please hurry!")
+			release
+		}
+	}
+	else{
+		msgbox("Thanks again for all the help!")
+		release
+	}
+
+}
 
 script FillBucketWater{
 	checkitem (ITEM_EMPTY_BUCKET, 1)
@@ -12,3 +90,92 @@ script FillBucketWater{
 		release
 	}
 }
+
+script CookCake{
+	lock
+	msgbox("Would you like to bake a cake?", MSGBOX_YESNO)
+	if (var(VAR_RESULT)){
+		checkitem (ITEM_EGG, 1)
+		if (var(VAR_RESULT)){
+			checkitem (ITEM_MILK_BUCKET, 1)
+			if(var(VAR_RESULT)){
+				checkitem (ITEM_FLOUR_POT,1)
+				if(var(VAR_RESULT)){
+					removeitem(ITEM_EGG, 1)
+					removeitem(ITEM_MILK_BUCKET,1)
+					removeitem(ITEM_FLOUR_POT, 1)
+					additem(ITEM_EMPTY_BUCKET, 1)
+					additem(ITEM_EMPTY_POT, 1)
+					additem(ITEM_CAKE, 1)
+					msgbox("You bake a cake.")
+				}
+				else{
+					msgbox("You don't have any flour!")
+				}
+			}
+			else{
+				msgbox("You don't have any milk!")
+			}
+		}
+		else{
+			msgbox("You don't have any eggs!")
+		}
+	}
+
+	release
+}
+
+script CheckCookFinished{
+	if (!flag(FLAG_COOKS_ASSIST_FINISHED)){
+		lock
+		applymovement(1, CookAlert)
+		waitmovement(0)
+		msgbox(format("Hey come here!"))
+		release
+		applymovement(OBJ_EVENT_ID_PLAYER,ReturnToCook)
+		waitmovement(0)
+	}
+	release
+}
+
+script LumbridgeCastle2NPC{
+	faceplayer
+	msgbox(format("The castle is great! I hope to challenge the Duke some day."))
+	setflag(FLAG_BADGE01_GET)
+	release
+}
+
+script TryMoveGuardLumbridgeCastle2{
+    if (flag(FLAG_BADGE01_GET)){
+        setobjectxyperm(3, 26, 12)
+        setobjectmovementtype(3,MOVEMENT_TYPE_FACE_DOWN)
+    }
+}
+
+movement CookAlert {
+	jump_in_place_left
+	emote_exclamation_mark
+}
+movement ReturnToCook {
+	walk_right*2
+	walk_down*2
+	walk_right*2
+
+}
+
+text CookAssistStartTextFirst{
+	format("Oh dear.. What am I to do.. I'm in a terrible, terrible mess!")
+}
+text CookAssistStartTextSecond{
+	format("I should be making a cake for the Duke but I forgot to get the ingredients!")
+}
+
+
+text CookItemsListFirst{
+	format("I need an egg, some milk and some flour. You should go visit the farm north of here for an egg.")
+}
+
+text CookItemsListSecond{
+	format("You can get some milk from the Cow Field, east of Lumbridge. You should ask someone at the Windmill if they can give you some flour.")
+}
+

@@ -1,0 +1,17 @@
+mapscripts Mill_Lane_Mill_1_MapScripts {
+    
+}
+
+script MillLaneGreeter{
+    lock
+    faceplayer
+    msgbox(format("Welcome to Mill Lane Mill! We have the best flour this side of the river lum!"))
+    release
+
+}
+
+script FarmerBattle1{
+    trainerbattle_single(TRAINER_MILL_LANE_1, format("If you want to get to the top you will need to get past the mill three! Be warned I'm the second strongest of us!"),"You will never reach the top!")
+    msgbox(format("You may have beaten me but you'll never make it to the top!"))
+    release
+}

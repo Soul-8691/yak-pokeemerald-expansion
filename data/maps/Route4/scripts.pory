@@ -1,0 +1,26 @@
+mapscripts Route4_MapScripts {
+    
+}
+
+script MuggerBattleRoute4{
+    trainerbattle_single(TRAINER_MUGGER_ROUTE4, "Stand and deliver!",format("People seem very afraid of me. Maybe it's the way I say hello?"))
+    msgbox(format("People seem very afraid of me. Maybe it's the way I say hello?"))
+    release
+}
+
+script ScammerBattleRoute4{
+    trainerbattle_single(TRAINER_SCAMMER_ROUTE4, format("Psst.. Want to buy some cabbage?"),format("A no would have been fine.."))
+    msgbox(format("Selling rare black lobster!"))
+    release
+}
+
+script FarmerBattleRoute4{
+    trainerbattle_single(TRAINER_FARMER_ROUTE4, format("I breed all my animals here at Potterington farm."),format("Guess I need to breed stronger monsters!"))
+    msgbox(format("Have you checked out the farm? It's a great place to raise monsters of your own!"))
+    release
+}
+
+script Route4Sign{
+    msgbox("Potterington Farm", MSGBOX_SIGN)
+    release
+}

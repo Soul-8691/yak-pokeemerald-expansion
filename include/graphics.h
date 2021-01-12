@@ -9743,12 +9743,14 @@ extern const u32 gBattleAnimSpriteGfx_Tornado[];
 extern const u32 gBattleAnimSpritePal_Tornado[];
 extern const u32 gBattleAnimSpriteGfx_ZMoveSymbol[];
 extern const u32 gBattleAnimSpritePal_ZMoveSymbol[];
-// pokescape
+// pokescape moves
 extern const u32 gBattleAnimSpritePal_SwordStrike[];
 extern const u32 gBattleAnimSpritePal_SaradominStrike[];
 extern const u32 gBattleAnimSpritePal_PolyporeStrike[];
 extern const u32 gBattleAnimSpritePal_BloodBubble[];
 extern const u32 gBattleAnimSpritePal_BloodBarrageParticles[];
+extern const u32 gBattleAnimSpritePal_Vengeance[];
+
 
 extern const u32 gBattleAnimBgImage_Dark[];
 extern const u32 gBattleAnimBgImage_Ghost[];

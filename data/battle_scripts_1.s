@@ -368,6 +368,7 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectInverseBattle
 	.4byte BattleScript_EffectSliceDice
 	.4byte BattleScript_EffectSaradominStrike
+	.4byte BattleScript_EffectVengeance
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -7735,4 +7736,13 @@ BattleScript_EffectSaradominStrike::
 	tryfaintmon BS_TARGET, FALSE, NULL
 	tryspiteppreduce BattleScript_MoveEnd
 	printstring STRINGID_PKMNREDUCEDPP
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectVengeance::
+	attackcanceler
+	attackstring
+	ppreduce
+	attackanimation
+	waitanimation
+	setvengeance BS_ATTACKER
 	goto BattleScript_MoveEnd

@@ -2802,6 +2802,10 @@ static const u8 sBLOOD_BARRAGEDescription[] = _(
     "Strike the target with blood magic.\n"
     "Steals a large amount of health.");
 
+static const u8 sVENGEANCEDescription[] = _(
+    "Strike the target with blood magic.\n"
+    "Steals a large amount of health.");
+
 static const u8 sNotDoneYetDescription[] = _(
 	"Not done yet.");
 
@@ -3531,4 +3535,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_POLYPORE_STRIKE - 1] = sPOLYPORE_STRIKEDescription,
     [MOVE_ICE_BARRAGE - 1] = sICE_BARRAGEDescription,   
     [MOVE_BLOOD_BARRAGE - 1] = sBLOOD_BARRAGEDescription, 
+    [MOVE_VENGEANCE - 1] = sVENGEANCEDescription,
 };

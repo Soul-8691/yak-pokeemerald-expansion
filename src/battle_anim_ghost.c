@@ -222,6 +222,17 @@ const struct SpriteTemplate gCurseGhostSpriteTemplate =
     .callback = AnimGhostStatusSprite,
 };
 
+const struct SpriteTemplate gVengeanceSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_VENGEANCE,
+    .paletteTag = ANIM_TAG_VENGEANCE,
+    .oam = &gOamData_AffineOff_ObjBlend_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimGhostStatusSprite,
+};
+
 const struct SpriteTemplate gNightmareDevilSpriteTemplate =
 {
     .tileTag = ANIM_TAG_DEVIL,

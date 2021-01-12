@@ -4846,6 +4846,26 @@ static void Cmd_moveend(void)
             }
             gBattleScripting.moveendState++;
             break;
+
+        case MOVEEND_VENGEANCE_CHECK:
+            if(gBattleMons[gBattlerTarget].status2 & STATUS2_VENGEANCE
+              && gBattleMons[gBattlerAttacker].hp != 0
+              && gBattlerAttacker != gBattlerTarget
+              && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+              && TARGET_TURN_DAMAGED
+            )
+            {
+                    gBattleMons[gBattlerTarget].status2 &= ~(STATUS2_VENGEANCE);
+                    PREPARE_MOVE_BUFFER(gBattleTextBuff1, MOVE_VENGEANCE);
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_SpikyShieldEffect;
+                    effect = 1; 
+
+            }
+
+        gBattleScripting.moveendState++;
+        break;
+
         case MOVEEND_CLEAR_BITS: // Clear/Set bits for things like using a move for all targets and all hits.
             if (gSpecialStatuses[gBattlerAttacker].instructedChosenTarget)
                 *(gBattleStruct->moveTarget + gBattlerAttacker) = gSpecialStatuses[gBattlerAttacker].instructedChosenTarget & 0x3;
@@ -8057,12 +8077,22 @@ static void Cmd_various(void)
             PREPARE_TYPE_BUFFER(gBattleTextBuff1, gBattleMoves[gCurrentMove].argument);
             gBattlescriptCurrInstr += 7;
         }
-        return;
-    }
+        break;
+    case VARIOUS_SET_VENGEANCE:
+        if (!(gBattleMons[gBattlerAttacker].status2 & STATUS2_VENGEANCE))
+        {
+            gBattleMons[gBattlerAttacker].status2 |= STATUS2_VENGEANCE;
+        }
+        else{
 
+        }
+        break;
+
+    
+    return;
+    }
     gBattlescriptCurrInstr += 3;
 }
-
 static void Cmd_setprotectlike(void)
 {
     bool32 fail = TRUE;
@@ -8831,6 +8861,8 @@ static void Cmd_setbide(void)
 
     gBattlescriptCurrInstr++;
 }
+
+
 
 static void Cmd_confuseifrepeatingattackends(void)
 {
@@ -12313,6 +12345,7 @@ static void Cmd_metalburstdamagecalculator(void)
         gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 1);
     }
 }
+
 
 static bool32 CriticalCapture(u32 odds)
 {

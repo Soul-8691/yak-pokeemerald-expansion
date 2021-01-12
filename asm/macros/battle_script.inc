@@ -1630,6 +1630,10 @@
 	.macro setauroraveil battler:req
 	various \battler, VARIOUS_SET_AURORA_VEIL
 	.endm
+
+	.macro setvengeance battler:req
+	various \battler, VARIOUS_SET_VENGEANCE
+	.endm
 	
 	.macro trysetthirdtype battler:req, ptr:req
 	various \battler, VARIOUS_TRY_THIRD_TYPE

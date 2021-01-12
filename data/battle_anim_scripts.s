@@ -702,6 +702,7 @@ gBattleAnims_Moves::
 	.4byte Move_POLYPORE_STRIKE
 	.4byte Move_ICE_BARRAGE
 	.4byte Move_BLOOD_BARRAGE
+	.4byte Move_VENGEANCE
 @@@@@@@@@@@@ GEN 8 @@@@@@@@@@@@
 	.4byte Move_DYNAMAX_CANNON
 	.4byte Move_SNIPE_SHOT
@@ -13374,6 +13375,18 @@ Move_BLOOD_BARRAGE:
 	delay 15
 	blendoff
 	clearmonbg ANIM_DEF_PARTNER
+	end
+
+Move_VENGEANCE:
+	loadspritegfx ANIM_TAG_VENGEANCE
+	monbg ANIM_TARGET 
+	monbgprio_29
+	launchtask AnimTask_ShakeMon 0x5 0x5 ANIM_TARGET 0x2 0x0 0x25 0x1
+	playsewithpan SE_M_NIGHTMARE, SOUND_PAN_TARGET
+	delay 0x20
+	launchtemplate gVengeanceSpriteTemplate 0x84, 0x0
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
 	end
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 8 @@@@@@@@@@@@@@@@@@@@@@@
 Move_DYNAMAX_CANNON::

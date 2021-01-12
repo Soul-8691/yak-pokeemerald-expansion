@@ -165,6 +165,7 @@
 #define VARIOUS_SET_LAST_USED_ITEM              99
 #define VARIOUS_PARALYZE_TYPE_IMMUNITY          100
 #define VARIOUS_JUMP_IF_ABSENT                  101
+#define VARIOUS_SET_VENGEANCE                   102
 
 // Cmd_manipulatedamage
 #define DMG_CHANGE_SIGN            0
@@ -214,8 +215,9 @@
 #define MOVEEND_LIFE_ORB 21
 #define MOVEEND_DANCER 22
 #define MOVEEND_EMERGENCY_EXIT 23
-#define MOVEEND_CLEAR_BITS 24
-#define MOVEEND_COUNT 25
+#define MOVEEND_VENGEANCE_CHECK 24
+#define MOVEEND_CLEAR_BITS 25
+#define MOVEEND_COUNT 26
 
 // stat flags for Cmd_playstatchangeanimation
 #define BIT_HP                      0x1

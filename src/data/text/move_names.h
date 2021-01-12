@@ -723,4 +723,5 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_POLYPORE_STRIKE] = _("Poly Strike"),
     [MOVE_ICE_BARRAGE] = _("Ice Barrage"),
     [MOVE_BLOOD_BARRAGE] = _("Blood Barrage"),
+    [MOVE_VENGEANCE]= _("Vengeance"),
 };

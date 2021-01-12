@@ -8672,6 +8672,470 @@ extern const u32 gItemIconPalette_Cabbage[];
 extern const u32 gItemIcon_Cake[];
 extern const u32 gItemIconPalette_Cake[];
 
+//pokescape items need to be sorted still
+extern const u32 gItemIcon_10th_squad_sigil[];
+extern const u32 gItemIconPalette_10th_squad_sigil[];
+
+extern const u32 gItemIcon_abyssal_whip[];
+extern const u32 gItemIconPalette_abyssal_whip[];
+
+extern const u32 gItemIcon_adamantPickaxe[];
+extern const u32 gItemIconPalette_adamantPickaxe[];
+
+extern const u32 gItemIcon_ahrimStaff[];
+extern const u32 gItemIconPalette_ahrimStaff[];
+
+extern const u32 gItemIcon_akrisaeMace[];
+extern const u32 gItemIconPalette_akrisaeMace[];
+
+extern const u32 gItemIcon_apple[];
+extern const u32 gItemIconPalette_apple[];
+
+extern const u32 gItemIcon_arma_helm[];
+extern const u32 gItemIconPalette_arma_helm[];
+
+extern const u32 gItemIcon_bad_egg[];
+extern const u32 gItemIconPalette_bad_egg[];
+
+extern const u32 gItemIcon_bananna[];
+extern const u32 gItemIconPalette_bananna[];
+
+extern const u32 gItemIcon_blackPickaxe[];
+extern const u32 gItemIconPalette_blackPickaxe[];
+
+extern const u32 gItemIcon_bloodFury[];
+extern const u32 gItemIconPalette_bloodFury[];
+
+extern const u32 gItemIcon_blueberry_special[];
+extern const u32 gItemIconPalette_blueberry_special[];
+
+extern const u32 gItemIcon_blueBoater[];
+extern const u32 gItemIconPalette_blueBoater[];
+
+extern const u32 gItemIcon_boneCrossbow[];
+extern const u32 gItemIconPalette_boneCrossbow[];
+
+extern const u32 gItemIcon_bread[];
+extern const u32 gItemIconPalette_bread[];
+
+extern const u32 gItemIcon_bronzeHelmet[];
+extern const u32 gItemIconPalette_bronzeHelmet[];
+
+extern const u32 gItemIcon_bronzePickaxe[];
+extern const u32 gItemIconPalette_bronzePickaxe[];
+
+extern const u32 gItemIcon_cadavaBerry[];
+extern const u32 gItemIconPalette_cadavaBerry[];
+/*
+extern const u32 gItemIcon_cake_1-3[];
+extern const u32 gItemIconPalette_cake_1-3[];
+
+extern const u32 gItemIcon_cake_2-3[];
+extern const u32 gItemIconPalette_cake_2-3[];
+*/
+extern const u32 gItemIcon_chocolate_cake[];
+extern const u32 gItemIconPalette_chocolate_cake[];
+
+extern const u32 gItemIcon_chocolate_sunday[];
+extern const u32 gItemIconPalette_chocolate_sunday[];
+
+extern const u32 gItemIcon_climbingBoots[];
+extern const u32 gItemIconPalette_climbingBoots[];
+
+extern const u32 gItemIcon_coconut[];
+extern const u32 gItemIconPalette_coconut[];
+
+extern const u32 gItemIcon_corn[];
+extern const u32 gItemIconPalette_corn[];
+
+extern const u32 gItemIcon_dagannoth_egg_shell[];
+extern const u32 gItemIconPalette_dagannoth_egg_shell[];
+
+extern const u32 gItemIcon_dagannoth_scale[];
+extern const u32 gItemIconPalette_dagannoth_scale[];
+
+extern const u32 gItemIcon_dagonhaiHat[];
+extern const u32 gItemIconPalette_dagonhaiHat[];
+
+extern const u32 gItemIcon_dfs[];
+extern const u32 gItemIconPalette_dfs[];
+
+extern const u32 gItemIcon_dharokAxe[];
+extern const u32 gItemIconPalette_dharokAxe[];
+
+extern const u32 gItemIcon_double_eyepatch[];
+extern const u32 gItemIconPalette_double_eyepatch[];
+
+extern const u32 gItemIcon_dragon_claws[];
+extern const u32 gItemIconPalette_dragon_claws[];
+
+extern const u32 gItemIcon_dragon_dagger_poison[];
+extern const u32 gItemIconPalette_dragon_dagger_poison[];
+
+extern const u32 gItemIcon_dragon_scimitar[];
+extern const u32 gItemIconPalette_dragon_scimitar[];
+
+extern const u32 gItemIcon_dragonkin_notes[];
+extern const u32 gItemIconPalette_dragonkin_notes[];
+
+extern const u32 gItemIcon_druid_pouch[];
+extern const u32 gItemIconPalette_druid_pouch[];
+
+extern const u32 gItemIcon_drunk_dragon[];
+extern const u32 gItemIconPalette_drunk_dragon[];
+
+extern const u32 gItemIcon_effigy[];
+extern const u32 gItemIconPalette_effigy[];
+
+extern const u32 gItemIcon_elemental_shield[];
+extern const u32 gItemIconPalette_elemental_shield[];
+
+extern const u32 gItemIcon_fighter_boots[];
+extern const u32 gItemIconPalette_fighter_boots[];
+
+extern const u32 gItemIcon_fighter_torso[];
+extern const u32 gItemIconPalette_fighter_torso[];
+
+extern const u32 gItemIcon_fireCape[];
+extern const u32 gItemIconPalette_fireCape[];
+
+extern const u32 gItemIcon_fruit_blast[];
+extern const u32 gItemIconPalette_fruit_blast[];
+
+extern const u32 gItemIcon_garlic[];
+extern const u32 gItemIconPalette_garlic[];
+
+extern const u32 gItemIcon_ghostspeak_amulet[];
+extern const u32 gItemIconPalette_ghostspeak_amulet[];
+
+extern const u32 gItemIcon_gnomeGoggles[];
+extern const u32 gItemIconPalette_gnomeGoggles[];
+
+extern const u32 gItemIcon_gnomeScarf[];
+extern const u32 gItemIconPalette_gnomeScarf[];
+
+extern const u32 gItemIcon_godRabbitFoot[];
+extern const u32 gItemIconPalette_godRabbitFoot[];
+
+extern const u32 gItemIcon_godsword[];
+extern const u32 gItemIconPalette_godsword[];
+
+extern const u32 gItemIcon_granite_maul[];
+extern const u32 gItemIconPalette_granite_maul[];
+
+extern const u32 gItemIcon_grapes[];
+extern const u32 gItemIconPalette_grapes[];
+
+extern const u32 gItemIcon_guthanSpear[];
+extern const u32 gItemIconPalette_guthanSpear[];
+
+extern const u32 gItemIcon_holy_wrench[];
+extern const u32 gItemIconPalette_holy_wrench[];
+
+extern const u32 gItemIcon_infinity_boots[];
+extern const u32 gItemIconPalette_infinity_boots[];
+
+extern const u32 gItemIcon_ironman_helmet[];
+extern const u32 gItemIconPalette_ironman_helmet[];
+
+extern const u32 gItemIcon_ironPickaxe[];
+extern const u32 gItemIconPalette_ironPickaxe[];
+
+extern const u32 gItemIcon_item_gnomeball[];
+extern const u32 gItemIconPalette_item_gnomeball[];
+
+extern const u32 gItemIcon_jangerBerry[];
+extern const u32 gItemIconPalette_jangerBerry[];
+
+extern const u32 gItemIcon_karilCrossbow[];
+extern const u32 gItemIconPalette_karilCrossbow[];
+
+extern const u32 gItemIcon_keris[];
+extern const u32 gItemIconPalette_keris[];
+
+extern const u32 gItemIcon_kraken_tentacle[];
+extern const u32 gItemIconPalette_kraken_tentacle[];
+
+extern const u32 gItemIcon_lamp_att[];
+extern const u32 gItemIconPalette_lamp_att[];
+
+extern const u32 gItemIcon_lamp_def[];
+extern const u32 gItemIconPalette_lamp_def[];
+
+extern const u32 gItemIcon_lamp_hp[];
+extern const u32 gItemIconPalette_lamp_hp[];
+
+extern const u32 gItemIcon_lamp_spatt[];
+extern const u32 gItemIconPalette_lamp_spatt[];
+
+extern const u32 gItemIcon_lamp_spdef[];
+extern const u32 gItemIconPalette_lamp_spdef[];
+
+extern const u32 gItemIcon_lamp_speed[];
+extern const u32 gItemIconPalette_lamp_speed[];
+
+extern const u32 gItemIcon_lemon[];
+extern const u32 gItemIconPalette_lemon[];
+
+extern const u32 gItemIcon_linzaHammer[];
+extern const u32 gItemIconPalette_linzaHammer[];
+
+extern const u32 gItemIcon_loveLetter[];
+extern const u32 gItemIconPalette_loveLetter[];
+
+extern const u32 gItemIcon_luckyRabbitFoot[];
+extern const u32 gItemIconPalette_luckyRabbitFoot[];
+
+extern const u32 gItemIcon_mithrilPickaxe[];
+extern const u32 gItemIconPalette_mithrilPickaxe[];
+
+extern const u32 gItemIcon_numbling_root[];
+extern const u32 gItemIconPalette_numbling_root[];
+
+extern const u32 gItemIcon_onion[];
+extern const u32 gItemIconPalette_onion[];
+
+extern const u32 gItemIcon_orange[];
+extern const u32 gItemIconPalette_orange[];
+
+extern const u32 gItemIcon_orb_of_oculus[];
+extern const u32 gItemIconPalette_orb_of_oculus[];
+
+extern const u32 gItemIcon_overload[];
+extern const u32 gItemIconPalette_overload[];
+
+extern const u32 gItemIcon_pineapple[];
+extern const u32 gItemIconPalette_pineapple[];
+
+extern const u32 gItemIcon_pineapple_punch[];
+extern const u32 gItemIconPalette_pineapple_punch[];
+
+extern const u32 gItemIcon_poisonIvyBerry[];
+extern const u32 gItemIconPalette_poisonIvyBerry[];
+
+extern const u32 gItemIcon_potato[];
+extern const u32 gItemIconPalette_potato[];
+
+extern const u32 gItemIcon_potion_att[];
+extern const u32 gItemIconPalette_potion_att[];
+
+extern const u32 gItemIcon_potion_def[];
+extern const u32 gItemIconPalette_potion_def[];
+
+extern const u32 gItemIcon_potion_hp[];
+extern const u32 gItemIconPalette_potion_hp[];
+
+extern const u32 gItemIcon_potion_spatt[];
+extern const u32 gItemIconPalette_potion_spatt[];
+
+extern const u32 gItemIcon_potion_spdef[];
+extern const u32 gItemIconPalette_potion_spdef[];
+
+extern const u32 gItemIcon_potion_speed[];
+extern const u32 gItemIconPalette_potion_speed[];
+
+extern const u32 gItemIcon_prayer_potion[];
+extern const u32 gItemIconPalette_prayer_potion[];
+
+extern const u32 gItemIcon_prismatic_star[];
+extern const u32 gItemIconPalette_prismatic_star[];
+
+extern const u32 gItemIcon_pulse_core[];
+extern const u32 gItemIconPalette_pulse_core[];
+
+extern const u32 gItemIcon_Purple_Sweets[];
+extern const u32 gItemIconPalette_Purple_Sweets[];
+
+extern const u32 gItemIcon_redBerry[];
+extern const u32 gItemIconPalette_redBerry[];
+
+extern const u32 gItemIcon_researchNotes[];
+extern const u32 gItemIconPalette_researchNotes[];
+
+extern const u32 gItemIcon_ring_of_life[];
+extern const u32 gItemIconPalette_ring_of_life[];
+
+extern const u32 gItemIcon_Ring_of_Wealth[];
+extern const u32 gItemIconPalette_Ring_of_Wealth[];
+
+extern const u32 gItemIcon_rockCake[];
+extern const u32 gItemIconPalette_rockCake[];
+
+extern const u32 gItemIcon_rotten_potato[];
+extern const u32 gItemIconPalette_rotten_potato[];
+
+extern const u32 gItemIcon_rune_essence[];
+extern const u32 gItemIconPalette_rune_essence[];
+
+extern const u32 gItemIcon_runePickaxe[];
+extern const u32 gItemIconPalette_runePickaxe[];
+
+extern const u32 gItemIcon_Saradomin_brew[];
+extern const u32 gItemIconPalette_Saradomin_brew[];
+
+extern const u32 gItemIcon_shrivelled_dagannoth_claw[];
+extern const u32 gItemIconPalette_shrivelled_dagannoth_claw[];
+
+extern const u32 gItemIcon_sickle[];
+extern const u32 gItemIconPalette_sickle[];
+
+extern const u32 gItemIcon_snelm[];
+extern const u32 gItemIconPalette_snelm[];
+
+extern const u32 gItemIcon_sock[];
+extern const u32 gItemIconPalette_sock[];
+
+extern const u32 gItemIcon_special_cake[];
+extern const u32 gItemIconPalette_special_cake[];
+
+extern const u32 gItemIcon_spiritShield[];
+extern const u32 gItemIconPalette_spiritShield[];
+
+extern const u32 gItemIcon_spottedCape[];
+extern const u32 gItemIconPalette_spottedCape[];
+
+extern const u32 gItemIcon_staff_of_earth[];
+extern const u32 gItemIconPalette_staff_of_earth[];
+
+extern const u32 gItemIcon_stake[];
+extern const u32 gItemIconPalette_stake[];
+
+extern const u32 gItemIcon_stat_beer[];
+extern const u32 gItemIconPalette_stat_beer[];
+
+extern const u32 gItemIcon_stat_moonlight_mead[];
+extern const u32 gItemIconPalette_stat_moonlight_mead[];
+
+extern const u32 gItemIcon_steelPickaxe[];
+extern const u32 gItemIconPalette_steelPickaxe[];
+
+extern const u32 gItemIcon_strawberry[];
+extern const u32 gItemIconPalette_strawberry[];
+
+extern const u32 gItemIcon_super_prayer_potion[];
+extern const u32 gItemIconPalette_super_prayer_potion[];
+
+extern const u32 gItemIcon_talisman_air[];
+extern const u32 gItemIconPalette_talisman_air[];
+
+extern const u32 gItemIcon_talisman_chaos[];
+extern const u32 gItemIconPalette_talisman_chaos[];
+
+extern const u32 gItemIcon_talisman_cosmic[];
+extern const u32 gItemIconPalette_talisman_cosmic[];
+
+extern const u32 gItemIcon_talisman_earth[];
+extern const u32 gItemIconPalette_talisman_earth[];
+
+extern const u32 gItemIcon_talisman_fire[];
+extern const u32 gItemIconPalette_talisman_fire[];
+
+extern const u32 gItemIcon_talisman_law[];
+extern const u32 gItemIconPalette_talisman_law[];
+
+extern const u32 gItemIcon_talisman_mind[];
+extern const u32 gItemIconPalette_talisman_mind[];
+
+extern const u32 gItemIcon_talisman_nature[];
+extern const u32 gItemIconPalette_talisman_nature[];
+
+extern const u32 gItemIcon_talisman_soul[];
+extern const u32 gItemIconPalette_talisman_soul[];
+
+extern const u32 gItemIcon_talisman_water[];
+extern const u32 gItemIconPalette_talisman_water[];
+
+extern const u32 gItemIcon_tear_of_guthix[];
+extern const u32 gItemIconPalette_tear_of_guthix[];
+
+extern const u32 gItemIcon_tinderbox[];
+extern const u32 gItemIconPalette_tinderbox[];
+
+/*
+extern const u32 gItemIcon_TM_Scroll(1)[];
+extern const u32 gItemIconPalette_TM_Scroll(1)[];
+
+extern const u32 gItemIcon_TM_Scroll(2)[];
+extern const u32 gItemIconPalette_TM_Scroll(2)[];
+
+extern const u32 gItemIcon_TM_Scroll(3)[];
+extern const u32 gItemIconPalette_TM_Scroll(3)[];
+
+extern const u32 gItemIcon_TM_Scroll(4)[];
+extern const u32 gItemIconPalette_TM_Scroll(4)[];
+
+extern const u32 gItemIcon_TM_Scroll(5)[];
+extern const u32 gItemIconPalette_TM_Scroll(5)[];
+
+extern const u32 gItemIcon_TM_Scroll(6)[];
+extern const u32 gItemIconPalette_TM_Scroll(6)[];
+
+extern const u32 gItemIcon_TM_Scroll(7)[];
+extern const u32 gItemIconPalette_TM_Scroll(7)[];
+
+extern const u32 gItemIcon_TM_Scroll(8)[];
+extern const u32 gItemIconPalette_TM_Scroll(8)[];
+
+extern const u32 gItemIcon_TM_Scroll(9)[];
+extern const u32 gItemIconPalette_TM_Scroll(9)[];
+
+extern const u32 gItemIcon_TM_Scroll(10)[];
+extern const u32 gItemIconPalette_TM_Scroll(10)[];
+
+extern const u32 gItemIcon_TM_Scroll(11)[];
+extern const u32 gItemIconPalette_TM_Scroll(11)[];
+
+extern const u32 gItemIcon_TM_Scroll(12)[];
+extern const u32 gItemIconPalette_TM_Scroll(12)[];
+
+extern const u32 gItemIcon_TM_Scroll(13)[];
+extern const u32 gItemIconPalette_TM_Scroll(13)[];
+
+extern const u32 gItemIcon_TM_Scroll(14)[];
+extern const u32 gItemIconPalette_TM_Scroll(14)[];
+
+extern const u32 gItemIcon_TM_Scroll(15)[];
+extern const u32 gItemIconPalette_TM_Scroll(15)[];
+
+extern const u32 gItemIcon_TM_Scroll(16)[];
+extern const u32 gItemIconPalette_TM_Scroll(16)[];
+
+extern const u32 gItemIcon_TM_Scroll(17)[];
+extern const u32 gItemIconPalette_TM_Scroll(17)[];
+*/
+extern const u32 gItemIcon_tomato[];
+extern const u32 gItemIconPalette_tomato[];
+
+extern const u32 gItemIcon_tome_of_frost[];
+extern const u32 gItemIconPalette_tome_of_frost[];
+
+extern const u32 gItemIcon_toragHammer[];
+extern const u32 gItemIconPalette_toragHammer[];
+
+extern const u32 gItemIcon_turnip[];
+extern const u32 gItemIconPalette_turnip[];
+
+extern const u32 gItemIcon_veracFlail[];
+extern const u32 gItemIconPalette_veracFlail[];
+
+extern const u32 gItemIcon_watermelon[];
+extern const u32 gItemIconPalette_watermelon[];
+
+extern const u32 gItemIcon_waterskin[];
+extern const u32 gItemIconPalette_waterskin[];
+
+extern const u32 gItemIcon_whiteBerry[];
+extern const u32 gItemIconPalette_whiteBerry[];
+
+extern const u32 gItemIcon_wizards_blizzard[];
+extern const u32 gItemIconPalette_wizards_blizzard[];
+
+extern const u32 gItemIcon_wizards_hat[];
+extern const u32 gItemIconPalette_wizards_hat[];
+
+extern const u32 gItemIcon_woolBall[];
+extern const u32 gItemIconPalette_woolBall[];
+
 // pokescape crops
 extern const u32 gBerryPic_Cabbage[];
 extern const u32 gBerryPalette_Cabbage[];

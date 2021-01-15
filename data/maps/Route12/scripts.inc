@@ -1,5 +1,19 @@
 Route12_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route12_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+Route12_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	random 10
+	compare VAR_RESULT, 9
+	goto_if_eq Route12_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+	setflag FLAG_UNUSED_0x493
+Route12_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+	release
+	return
+
+Route12_MapScripts_MAP_SCRIPT_ON_TRANSITION_2:
+	clearflag FLAG_UNUSED_0x493
+	goto Route12_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 
 
 Cannot_Pass::
@@ -16,7 +30,6 @@ Cow_Battle::
 	faceplayer
 	msgbox Cow_Battle_Text_0
 	setwildbattle SPECIES_COW, 7, ITEM_NONE
-	hidemonpic
 	dowildbattle
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Cow_Battle_1
@@ -30,6 +43,11 @@ Cow_Battle::
 Cow_Battle_1:
 	removeobject VAR_LAST_TALKED
 	release
+	return
+
+
+TestRemove::
+	removeobject VAR_LAST_TALKED
 	return
 
 

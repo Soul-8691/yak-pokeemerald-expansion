@@ -993,7 +993,8 @@ const u32 gItemIconPalette_TerrorbirdPouch[] = INCBIN_U32("graphics/items/pokesc
  const u32 gItemIcon_FlourPot[] = INCBIN_U32("graphics/items/pokescape_icons/flour_pot.4bpp.lz");
  const u32 gItemIconPalette_FlourPot[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/flour_pot.gbapal.lz");
  
-
+ const u32 gItemIcon_Cabbage[] = INCBIN_U32("graphics/items/pokescape_icons/cabbage.4bpp.lz");
+ const u32 gItemIconPalette_Cabbage[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/cabbage.gbapal.lz");
 
 
 

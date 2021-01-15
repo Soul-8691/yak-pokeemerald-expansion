@@ -69,6 +69,7 @@ Kevin_8:
 	goto Kevin_1
 
 
+	.align 2
 Cheat_Menu_Shop_Pouches:
 	.2byte ITEM_NORMAL_POUCH
 	.2byte ITEM_BRONZE_POUCH
@@ -91,7 +92,8 @@ Cheat_Menu_Shop_Pouches:
 	.2byte ITEM_NONE
 	release
 	end
-
+	
+	.align 2
 Cheat_Menu_Shop_Evolution:
 	.2byte ITEM_AIR_RUNE
 	.2byte ITEM_WATER_RUNE
@@ -119,8 +121,7 @@ Cheat_Menu_Shop_Evolution:
 	.2byte ITEM_GREEN_SCALE
 	.2byte ITEM_BLACK_SCALE
 	.2byte ITEM_FRAGMENT_OF_JAS
-	
-
+	.2byte ITEM_CABBAGE
 	.2byte ITEM_NONE
 	release
 	end

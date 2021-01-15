@@ -221,7 +221,7 @@ static const struct MenuAction sItemMenuActions[] = {
     [ITEMMENUACTION_CHECK] =        {gMenuText_Check, ItemMenu_UseOutOfBattle},
     [ITEMMENUACTION_WALK] =         {gMenuText_Walk, ItemMenu_UseOutOfBattle},
     [ITEMMENUACTION_DESELECT] =     {gMenuText_Deselect, ItemMenu_Register},
-    [ITEMMENUACTION_CHECK_TAG] =    {gMenuText_CheckTag, ItemMenu_CheckTag},
+    //[ITEMMENUACTION_CHECK_TAG] =    {gMenuText_CheckTag, ItemMenu_CheckTag},
     [ITEMMENUACTION_CONFIRM] =      {gMenuText_Confirm, Task_FadeAndCloseBagMenu},
     [ITEMMENUACTION_SHOW] =         {gMenuText_Show, unknown_ItemMenu_Show},
     [ITEMMENUACTION_GIVE_2] =       {gMenuText_Give2, unknown_ItemMenu_Give2},
@@ -252,7 +252,7 @@ static const u8 sContextMenuItems_TmHmPocket[] = {
 };
 
 static const u8 sContextMenuItems_BerriesPocket[] = {
-    ITEMMENUACTION_CHECK_TAG,   ITEMMENUACTION_DUMMY,
+    //ITEMMENUACTION_CHECK_TAG,   ITEMMENUACTION_DUMMY,
     ITEMMENUACTION_USE,         ITEMMENUACTION_GIVE,
     ITEMMENUACTION_TOSS,        ITEMMENUACTION_CANCEL
 };
@@ -1892,11 +1892,13 @@ void sub_81AD350(u8 taskId)
     }
 }
 
+/*
 void ItemMenu_CheckTag(u8 taskId)
 {
     gBagMenu->exitCallback = DoBerryTagScreen;
     Task_FadeAndCloseBagMenu(taskId);
 }
+*/
 
 void ItemMenu_Cancel(u8 taskId)
 {

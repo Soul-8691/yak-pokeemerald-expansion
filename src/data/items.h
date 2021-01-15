@@ -5920,4 +5920,19 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 2,
     },
+	
+	[ITEM_CABBAGE] =
+    {
+        .name = _("Cabbage"),
+        .itemId = ITEM_CABBAGE,
+        .price = 20,
+        .holdEffect = HOLD_EFFECT_CURE_PAR,
+        .description = sCupholderDesc,
+        .pocket = POCKET_BERRIES,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = 1,
+        .battleUseFunc = ItemUseInBattle_Medicine,
+        .secondaryId = 0,
+    },
 };

@@ -715,6 +715,7 @@ const u16 gObjectEventPalette_KalphiteQueen[] = INCBIN_U16("graphics/object_even
 const u32 gObjectEventPic_KalphiteWorker[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/kalphite_worker.4bpp");
 const u16 gObjectEventPalette_KalphiteWorker[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/kalphite_worker.gbapal");
 
+
 //mining
 const u32 gObjectEventPic_CopperOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/copper_ore.4bpp");
 const u32 gObjectEventPic_TinOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/tin_ore.4bpp");
@@ -730,7 +731,9 @@ const u32 gObjectEventPic_BaneOre[] = INCBIN_U32("graphics/object_events/pics/po
 const u16 gObjectEventPalette_OrePal[] = INCBIN_U16("graphics/object_events/pics/pokescape_mining/ore_pal1.gbapal");
 const u16 gObjectEventPalette_OrePal2[] = INCBIN_U16("graphics/object_events/pics/pokescape_mining/ore_pal2.gbapal");
 
-
+//farming
+const u32 gObjectEventPic_CabbageCrop[] = INCBIN_U32("graphics/object_events/pics/berry_trees/cabbage_crop.4bpp");
+const u16 gObjectEventPalette_CabbageCrop[] = INCBIN_U16("graphics/object_events/palettes/cabbage_crop.gbapal");
 
 
 

@@ -490,6 +490,7 @@ const u32 *const gItemIconTable[][2] =
 	[ITEM_WHEAT] = {gItemIcon_Wheat, gItemIconPalette_Wheat},
 	[ITEM_EMPTY_POT] = {gItemIcon_EmptyPot, gItemIconPalette_EmptyPot},
 	[ITEM_FLOUR_POT] = {gItemIcon_FlourPot, gItemIconPalette_FlourPot},
+	[ITEM_CABBAGE] = {gItemIcon_Cabbage, gItemIconPalette_Cabbage},
     // Return to field arrow
     [ITEM_FIELD_ARROW] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };

@@ -8664,9 +8664,12 @@ extern const u32 gItemIcon_EmptyPot[];
 extern const u32 gItemIconPalette_EmptyPot[];
 extern const u32 gItemIcon_FlourPot[];
 extern const u32 gItemIconPalette_FlourPot[];
+extern const u32 gItemIcon_Cabbage[];
+extern const u32 gItemIconPalette_Cabbage[];
 
-
-
+// pokescape crops
+extern const u32 gBerryPic_Cabbage[];
+extern const u32 gBerryPalette_Cabbage[];
 
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];

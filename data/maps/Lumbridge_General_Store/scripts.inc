@@ -12,8 +12,9 @@ GENERALSTORE_LUMBRIDGE_CLERK::
 	release
 	return
 
-
+	.align 2
 GENERALSTORE_LUMBRIDGE:
+	.align 2
 	.2byte ITEM_MYSTIC_CLOTH
 	.2byte ITEM_EGG
 	.2byte ITEM_SPLITBARK

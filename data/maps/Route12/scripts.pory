@@ -1,4 +1,16 @@
-mapscripts Route12_MapScripts{}
+mapscripts Route12_MapScripts{
+	MAP_SCRIPT_ON_TRANSITION{
+		random (100)
+		if (var(VAR_RESULT) == 99)
+		{
+			clearflag(FLAG_UNUSED_0x493)
+		}
+		else {
+			setflag (FLAG_UNUSED_0x493)
+		}
+		release
+	}
+}
 
 script Cannot_Pass
 {
@@ -17,7 +29,7 @@ script Cow_Battle
 	#showmonpic (SPECIES_COW, 10, 3)
 	msgbox ("MOOOO")
 	setwildbattle (SPECIES_COW, 7, ITEM_NONE)
-	hidemonpic
+	#hidemonpic
 	dowildbattle
 	if (var(VAR_RESULT) == B_OUTCOME_WON || var(VAR_RESULT) == B_OUTCOME_CAUGHT){
 		removeobject (VAR_LAST_TALKED)
@@ -29,6 +41,11 @@ script Cow_Battle
 	release
 	}
 
+}
+
+script TestRemove 
+{
+	removeobject (VAR_LAST_TALKED)
 }
 
 movement Cannot_Pass_Move

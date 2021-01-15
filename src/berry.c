@@ -110,6 +110,11 @@ static const u8 sBerryDescriptionPart1_Lansat[] = _("Said to be a legendary BERR
 static const u8 sBerryDescriptionPart2_Lansat[] = _("Holding it supposedly brings joy.");
 static const u8 sBerryDescriptionPart1_Starf[] = _("So strong, it was abandoned at the");
 static const u8 sBerryDescriptionPart2_Starf[] = _("world's edge. Considered a mirage.");
+
+//pokescape crops
+static const u8 sBerryDescriptionPart1_Cabbage[] = _("Cupholder");
+static const u8 sBerryDescriptionPart2_Cabbage[] = _("Cupholder");
+
 static const u8 sBerryDescriptionPart1_Enigma[] = _("A completely enigmatic BERRY.");
 static const u8 sBerryDescriptionPart2_Enigma[] = _("Appears to have the power of stars.");
 
@@ -888,6 +893,25 @@ const struct Berry gBerries[] =
         .sour = 40,
         .smoothness = 40,
     },
+	
+    [ITEM_CABBAGE - FIRST_BERRY_INDEX] =
+    {
+        .name = _("Cabbage"),
+        .firmness = BERRY_FIRMNESS_UNKNOWN,
+        .size = 0,
+        .maxYield = 6,
+        .minYield = 4,
+        .description1 = sBerryDescriptionPart1_Cabbage,
+        .description2 = sBerryDescriptionPart2_Cabbage,
+        .stageDuration = 18,
+        .spicy = 40,
+        .dry = 40,
+        .sweet = 40,
+        .bitter = 40,
+        .sour = 40,
+        .smoothness = 40,
+    },
+	
 };
 
 const struct UnkStruct_0858AB24 gUnknown_0858AB24[] = {

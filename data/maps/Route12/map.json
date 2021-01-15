@@ -114,6 +114,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Cow_Battle",
       "flag": "FLAG_TEMP_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_duck_walking",
+      "x": 27,
+      "y": 58,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 5,
+      "movement_range_y": 5,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "TestRemove",
+      "flag": "FLAG_UNUSED_0x493"
     }
   ],
   "warp_events": [

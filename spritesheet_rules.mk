@@ -1090,4 +1090,7 @@ $(OBJEVENTGFXDIR)/pokescape_mining/elemental_ore.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokescape_mining/bane_ore.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 	
+$(OBJEVENTGFXDIR)/berry_trees/cabbage_crop.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+	
 	

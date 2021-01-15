@@ -233,7 +233,7 @@ BerryTree_Text_WantToPick: @ 82745EE
 	.string "{STR_VAR_1}?$"
 
 BerryTree_Text_PickedTheBerry: @ 827461B
-	.string "{PLAYER} picked the {STR_VAR_2} {STR_VAR_1}.$"
+	.string "{PLAYER} harvested {STR_VAR_2} {STR_VAR_1}.$"
 
 BerryTree_Text_PutAwayBerry: @ 8274630
 	.string "{PLAYER} put away the {STR_VAR_1}\n"

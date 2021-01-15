@@ -416,6 +416,23 @@ const struct SpriteFrameImage gObjectEventPicTable_TamatoBerryTree[] = {
     overworld_frame(gObjectEventPic_TamatoBerryTree, 2, 4, 5),
 };
 
+//pokescape crops
+const struct SpriteFrameImage gObjectEventPicTable_CabbageCrop[] = {
+    overworld_frame(gObjectEventPic_BerryTreeDirtPile, 2, 2, 0),
+    overworld_frame(gObjectEventPic_BerryTreeSprout, 2, 2, 0),
+    overworld_frame(gObjectEventPic_BerryTreeSprout, 2, 2, 1),
+    overworld_frame(gObjectEventPic_CabbageCrop, 2, 4, 0),
+    overworld_frame(gObjectEventPic_CabbageCrop, 2, 4, 1),
+    overworld_frame(gObjectEventPic_CabbageCrop, 2, 4, 2),
+    overworld_frame(gObjectEventPic_CabbageCrop, 2, 4, 3),
+    overworld_frame(gObjectEventPic_CabbageCrop, 2, 4, 4),
+    overworld_frame(gObjectEventPic_CabbageCrop, 2, 4, 5),
+};
+
+const u16 gBerryTreePaletteTagTable_Cabbage[] = {OBJ_EVENT_PAL_TAG_1, OBJ_EVENT_PAL_TAG_2, OBJ_EVENT_PAL_CABBAGE_CROP, OBJ_EVENT_PAL_CABBAGE_CROP, OBJ_EVENT_PAL_CABBAGE_CROP};
+
+
+
 const u16 gBerryTreePaletteTagTable_Tamato[] = {OBJ_EVENT_PAL_TAG_1, OBJ_EVENT_PAL_TAG_2, OBJ_EVENT_PAL_TAG_0, OBJ_EVENT_PAL_TAG_0, OBJ_EVENT_PAL_TAG_0};
 
 const u16 gDeadBerryTreeObjectEventGraphicsIdTable[] = {OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES, OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES, OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES, OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES, OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES};
@@ -465,6 +482,7 @@ const struct SpriteFrameImage *const gBerryTreePicTablePointers[] = {
     [ITEM_APICOT_BERRY - FIRST_BERRY_INDEX] = gObjectEventPicTable_GrepaBerryTree,
     [ITEM_LANSAT_BERRY - FIRST_BERRY_INDEX] = gObjectEventPicTable_LansatBerryTree,
     [ITEM_STARF_BERRY - FIRST_BERRY_INDEX] = gObjectEventPicTable_CornnBerryTree,
+    [ITEM_CABBAGE - FIRST_BERRY_INDEX] = gObjectEventPicTable_CabbageCrop,
     [ITEM_ENIGMA_BERRY - FIRST_BERRY_INDEX] = gObjectEventPicTable_DurinBerryTree,
 };
 
@@ -512,6 +530,7 @@ const u16 *const gBerryTreePaletteTagTablePointers[] = {
     [ITEM_APICOT_BERRY - FIRST_BERRY_INDEX] = gBerryTreePaletteTagTable_Grepa,
     [ITEM_LANSAT_BERRY - FIRST_BERRY_INDEX] = gBerryTreePaletteTagTable_Lansat,
     [ITEM_STARF_BERRY - FIRST_BERRY_INDEX] = gBerryTreePaletteTagTable_Cornn,
+	[ITEM_CABBAGE - FIRST_BERRY_INDEX] = 	gBerryTreePaletteTagTable_Cabbage,
     [ITEM_ENIGMA_BERRY - FIRST_BERRY_INDEX] = gBerryTreePaletteTagTable_Durin,
 };
 
@@ -559,6 +578,7 @@ const u16 *const gBerryTreeObjectEventGraphicsIdTablePointers[] = {
     [ITEM_LANSAT_BERRY - FIRST_BERRY_INDEX] = gBerryTreeObjectEventGraphicsIdTable,
     [ITEM_STARF_BERRY - FIRST_BERRY_INDEX] = gBerryTreeObjectEventGraphicsIdTable,
     [ITEM_ENIGMA_BERRY - FIRST_BERRY_INDEX] = gBerryTreeObjectEventGraphicsIdTable,
+    [ITEM_CABBAGE - FIRST_BERRY_INDEX] = gBerryTreeObjectEventGraphicsIdTable,
     // 3 unused berries.
     [ITEM_0B0 - FIRST_BERRY_INDEX] = gBerryTreeObjectEventGraphicsIdTable,
     [ITEM_0B1 - FIRST_BERRY_INDEX] = gBerryTreeObjectEventGraphicsIdTable,

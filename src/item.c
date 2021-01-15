@@ -109,6 +109,7 @@ void CopyItemNameHandlePlural(u16 itemId, u8 *dst, u32 quantity)
     }
 }
 
+
 void GetBerryCountString(u8 *dst, const u8 *berryName, u32 quantity)
 {
     const u8 *berryString;

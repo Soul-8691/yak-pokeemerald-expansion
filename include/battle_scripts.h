@@ -348,6 +348,12 @@ extern const u8 BattleScript_EmergencyExitNoPopUp[];
 extern const u8 BattleScript_EmergencyExitWild[];
 extern const u8 BattleScript_EmergencyExitWildNoPopUp[];
 extern const u8 BattleScript_CheekPouchActivates[];
+extern const u8 BattleScript_RandomStatDown[];
+extern const u8 BattleScript_RandomStatDown2[];
+extern const u8 BattleScript_KarilCrossbow[];
+extern const u8 BattleScript_AhrimStaff[];
+extern const u8 BattleScript_ToragHammer[];
+
 
 //pokescape
 

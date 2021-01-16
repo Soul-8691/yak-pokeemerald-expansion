@@ -135,6 +135,18 @@
 #define HOLD_EFFECT_ADRENALINE_ORB   152
 #define HOLD_EFFECT_MEMORY           153
 
+#define HOLD_EFFECT_RANDOM_STAT_DOWN 154
+#define HOLD_EFFECT_SNELM            155
+#define HOLD_EFFECT_SPIRIT_SHIELD    156
+#define HOLD_EFFECT_VERAC            157
+#define HOLD_EFFECT_DHAROK           158
+#define HOLD_EFFECT_KARIL            159
+#define HOLD_EFFECT_AHRIM            160
+#define HOLD_EFFECT_TORAG            161
+#define HOLD_EFFECT_PRESSURE         162
+#define HOLD_EFFECT_GODSWORD         163
+#define HOLD_EFFECT_DFS              164
+
 #define HOLD_EFFECT_CHOICE(holdEffect)((holdEffect == HOLD_EFFECT_CHOICE_BAND || holdEffect == HOLD_EFFECT_CHOICE_SCARF || holdEffect == HOLD_EFFECT_CHOICE_SPECS))
 
 #endif // GUARD_HOLD_EFFECTS_H

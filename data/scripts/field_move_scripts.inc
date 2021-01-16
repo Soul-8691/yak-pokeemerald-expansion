@@ -85,6 +85,7 @@ EventScript_CopperSmash::
 	checkitem ITEM_PICKAXE, 1
 	compare VAR_RESULT, FALSE
 	goto_if_eq EventScript_CantSmashRock
+	call_if_unset FLAG_BADGE01_GET, EventScript_CantSmashRock
 	setitemarg ITEM_PICKAXE
 	setfieldeffectargument 0, VAR_RESULT
 	msgbox Text_WantToSmash, MSGBOX_YESNO
@@ -517,8 +518,8 @@ Text_WantToSmash: @ 829083A
 	.string "Would you like to use ROCK SMASH?$"
 
 Text_CantSmash: @ 829087F
-	.string "It's a rugged rock, but a POKéMON\n"
-	.string "may be able to smash it.$"
+	.string "It's a rugged rock.\n"
+	.string "I need more xp to mine it.$"
 
 EventScript_StrengthBoulder:: @ 82908BA
 	lockall

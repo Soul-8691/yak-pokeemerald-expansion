@@ -717,7 +717,7 @@ static void BuildEggMoveset(struct Pokemon *egg, struct BoxPokemon *father, stru
         {
             for (j = 0; j < NUM_TECHNICAL_MACHINES + NUM_HIDDEN_MACHINES; j++)
             {
-                if (sHatchedEggFatherMoves[i] == ItemIdToBattleMoveId(ITEM_TM01_FOCUS_PUNCH + j) && CanMonLearnTMHM(egg, j))
+                if (sHatchedEggFatherMoves[i] == ItemIdToBattleMoveId(ITEM_TM01_SUNNY_DAY + j) && CanMonLearnTMHM(egg, j))
                 {
                     if (GiveMoveToMon(egg, sHatchedEggFatherMoves[i]) == MON_HAS_MAX_MOVES)
                         DeleteFirstMoveAndGiveMoveToMon(egg, sHatchedEggFatherMoves[i]);
@@ -787,7 +787,7 @@ static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare
 	{
 		motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
         fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
-		if (motherItem == ITEM_RARE_CANDY || fatherItem == ITEM_RARE_CANDY){
+		if (motherItem == ITEM_GODRABBITFOOT || fatherItem == ITEM_GODRABBITFOOT){
 			*species = SPECIES_BIRDS_NEST_GOD_FORM;
 		}			
 	
@@ -797,7 +797,7 @@ static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare
 	{
 		motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
         fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
-		if (motherItem == ITEM_RARE_CANDY || fatherItem == ITEM_RARE_CANDY){
+		if (motherItem == ITEM_LUCKYRABBITFOOT || fatherItem == ITEM_LUCKYRABBITFOOT){
 			*species = SPECIES_BIRD_NEST;
 		}			
 	

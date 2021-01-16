@@ -679,6 +679,10 @@ static const u8 sText_CloakedInAFreezingLight[] = _("{B_ATK_NAME_WITH_PREFIX} be
 static const u8 sText_CantRunFromRat[] = _("DON'T EVEN THINK ABOUT RUNNING\nFROM A RAT!!");
 static const u8 sText_ThingsGetWeird[] = _("Things just got weird..");
 static const u8 sText_ChaoticRiftEnds[] = _("The weird presence fades.");
+static const u8 sText_KarilCrossbow[] =_("{B_ATK_NAME_WITH_PREFIX}'s {B_LAST_ITEM} LOWERED\n{B_DEF_NAME_WITH_PREFIX}'s SPEED!");
+static const u8 sText_AhrimStaff[] =_("{B_ATK_NAME_WITH_PREFIX}'s {B_LAST_ITEM} LOWERED\n{B_DEF_NAME_WITH_PREFIX}'s ATTACK!");
+static const u8 sText_ToragHammer[] =_("{B_ATK_NAME_WITH_PREFIX}'s {B_LAST_ITEM} PREVENTS\n{B_DEF_NAME_WITH_PREFIX} FROM RUNNING!");
+
 
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
@@ -1222,6 +1226,9 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
 	[STRINGID_CANTRUNFROMRAT - 12] = sText_CantRunFromRat,
     [STRINGID_THINGSGETWEIRD - 12] = sText_ThingsGetWeird,
     [STRINGID_CHAOTICRIFTENDS - 12] = sText_ChaoticRiftEnds,
+    [STRINGID_KARILCROSSBOW - 12] = sText_KarilCrossbow,
+    [STRINGID_AHRIMSTAFF - 12] = sText_AhrimStaff,
+    [STRINGID_TORAGHAMMER - 12] = sText_ToragHammer,
 };
 
 const u16 gTerrainStringIds[] =

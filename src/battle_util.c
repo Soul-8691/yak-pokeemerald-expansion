@@ -1009,8 +1009,9 @@ u8 GetBattlerForBattleScript(u8 caseId)
 void PressurePPLose(u8 target, u8 attacker, u16 move)
 {
     int moveIndex;
+    u32 holdEffect = GetBattlerHoldEffect(target, TRUE);
 
-    if (gBattleMons[target].ability != ABILITY_PRESSURE)
+    if (gBattleMons[target].ability != ABILITY_PRESSURE && holdEffect != HOLD_EFFECT_PRESSURE)
         return;
 
     for (moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
@@ -1472,7 +1473,7 @@ u8 TrySetCantSelectMoveBattleScript(void)
             limitations++;
         }
     }
-    else if (holdEffect == HOLD_EFFECT_ASSAULT_VEST && gBattleMoves[move].power == 0)
+    else if ((holdEffect == HOLD_EFFECT_ASSAULT_VEST && gBattleMoves[move].power == 0) || (holdEffect == HOLD_EFFECT_SNELM && gBattleMoves[move].power == 0))
     {
         gCurrentMove = move;
         gLastUsedItem = gBattleMons[gActiveBattler].item;
@@ -1529,7 +1530,7 @@ u8 CheckMoveLimitations(u8 battlerId, u8 unusableMoves, u8 check)
             unusableMoves |= gBitTable[i];
         else if (HOLD_EFFECT_CHOICE(holdEffect) && *choicedMove != 0 && *choicedMove != 0xFFFF && *choicedMove != gBattleMons[battlerId].moves[i])
             unusableMoves |= gBitTable[i];
-        else if (holdEffect == HOLD_EFFECT_ASSAULT_VEST && gBattleMoves[gBattleMons[battlerId].moves[i]].power == 0)
+        else if ((holdEffect == HOLD_EFFECT_ASSAULT_VEST|| holdEffect == HOLD_EFFECT_SNELM) && gBattleMoves[gBattleMons[battlerId].moves[i]].power == 0)
             unusableMoves |= gBitTable[i];
         else if (IsGravityPreventingMove(gBattleMons[battlerId].moves[i]))
             unusableMoves |= gBitTable[i];
@@ -2099,7 +2100,7 @@ enum
 s32 GetDrainedBigRootHp(u32 battler, s32 hp)
 {
     if (GetBattlerHoldEffect(battler, TRUE) == HOLD_EFFECT_BIG_ROOT)
-        hp = (hp * 1300) / 1000;
+        hp = (hp * 1500) / 1000;
     if (hp == 0)
         hp = 1;
 
@@ -5501,6 +5502,32 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                     effect = ITEM_EFFECT_OTHER;
                 }
                 break;
+            case HOLD_EFFECT_RANDOM_STAT_DOWN:
+                if(!moveTurn)
+                {
+                     i = Random() % 7;
+                     if (gBattleMons[battlerId].statStages[i+1] > 0)
+                    {
+                        PREPARE_STAT_BUFFER(gBattleTextBuff1, i + 1);
+
+                        gBattleTextBuff2[0] = B_BUFF_PLACEHOLDER_BEGIN;
+                        gBattleTextBuff2[1] = B_BUFF_STRING;
+                        gBattleTextBuff2[2] = STRINGID_STATSHARPLY;
+                        gBattleTextBuff2[3] = STRINGID_STATSHARPLY >> 8;
+                        gBattleTextBuff2[4] = B_BUFF_STRING;
+                        gBattleTextBuff2[5] = STRINGID_STATROSE;
+                        gBattleTextBuff2[6] = STRINGID_STATROSE >> 8;
+                        gBattleTextBuff2[7] = EOS;
+
+                        gEffectBattler = battlerId;
+                        SET_STATCHANGER(i + 1, 1, TRUE);
+                        gBattleScripting.animArg1 = 0x21 + i + 6;
+                        gBattleScripting.animArg2 = 0;
+                        BattleScriptExecute(BattleScript_RandomStatDown);
+                        effect = ITEM_STATS_CHANGE;
+                    }
+                }
+                break;
             }
 
             if (effect)
@@ -5655,6 +5682,7 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                     return effect;
                 }
                 break;
+
             }
 
             if (effect)
@@ -5669,6 +5697,62 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
             }
         }
         break;
+    case ITEMEFFECT_KARIL:
+        if (gBattleMoveDamage)
+        {
+            switch(atkHoldEffect)
+            {
+            case HOLD_EFFECT_KARIL:
+                if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+                    && TARGET_TURN_DAMAGED
+                    && IS_MOVE_PHYSICAL(gCurrentMove)
+                    && !(gBattleMoves[gCurrentMove].flags & FLAG_MAKES_CONTACT)
+                    && gBattleMons[gBattlerTarget].hp
+                    && gBattleMons[gBattlerTarget].statStages[STAT_SPEED] > 0)
+                {
+                        gBattleScripting.animArg1 = 0x11;
+                        gBattleScripting.animArg2 = 0;
+                        BattleScriptPushCursor();
+                        gBattlescriptCurrInstr = BattleScript_KarilCrossbow;
+                        gBattleMons[gBattlerTarget].statStages[STAT_SPEED]--;
+                        effect++;
+                }
+                break;
+            case HOLD_EFFECT_AHRIM:
+                if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+                    && TARGET_TURN_DAMAGED
+                    && (!IS_MOVE_PHYSICAL(gCurrentMove))
+                    && gBattleMons[gBattlerTarget].hp
+                    && gBattleMons[gBattlerTarget].statStages[STAT_ATK] > 0)
+                {
+                        gBattleScripting.animArg1 = 0x11;
+                        gBattleScripting.animArg2 = 0;
+                        BattleScriptPushCursor();
+                        gBattlescriptCurrInstr = BattleScript_AhrimStaff;
+                        gBattleMons[gBattlerTarget].statStages[STAT_ATK]--;
+                        effect++;
+                }
+                break;
+            case HOLD_EFFECT_TORAG:
+                if (
+                    !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+                    && TARGET_TURN_DAMAGED
+                    && IS_MOVE_PHYSICAL(gCurrentMove)
+                    && (gBattleMoves[gCurrentMove].flags & FLAG_MAKES_CONTACT)
+                    && gBattleMons[gBattlerTarget].hp
+                    && !(gBattleMons[gBattlerTarget].status2 & STATUS2_ESCAPE_PREVENTION))
+                {
+                    gBattleMons[gBattlerTarget].status2 |= STATUS2_ESCAPE_PREVENTION;
+                    gDisableStructs[gBattlerTarget].battlerPreventingEscape = gBattlerAttacker;
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_ToragHammer;
+                    effect++;
+                }
+                break;
+            }
+        }
+    break;
+    
     case ITEMEFFECT_KINGSROCK_SHELLBELL:
         if (gBattleMoveDamage)
         {
@@ -5687,6 +5771,7 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                     BattleScriptPop();
                 }
                 break;
+            case HOLD_EFFECT_GODSWORD:
             case HOLD_EFFECT_SHELL_BELL:
                 if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
                     && gSpecialStatuses[gBattlerTarget].dmg != 0
@@ -5794,6 +5879,7 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                     gBattleScripting.statChanger = SET_STATCHANGER(STAT_SPATK, 1, FALSE);
                 }
                 break;
+
             }
         }
         break;
@@ -6259,6 +6345,22 @@ static const u8 sFlailHpScaleToPowerTable[] =
     32, 40,
     48, 20
 };
+
+static const double sDhHpScaleToModifierTable[] =
+{
+    1, 1.75,
+    2, 1.60,
+    3, 1.50,
+    4, 1.40,
+    5, 1.30,
+    6, 1.20,
+    7, 1.15,
+    8, 1.10,
+    9, 1.05,
+    10, 1
+};
+
+
 
 // format: min. weight (hectograms), base power
 static const u16 sWeightToDamageTable[] =
@@ -6951,6 +7053,7 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
     u8 defStage;
     u32 defStat, def, spDef;
     u16 modifier;
+    u32 holdEffect;
 
     if (gFieldStatuses & STATUS_FIELD_WONDER_ROOM) // the defense stats are swapped
     {
@@ -6982,6 +7085,12 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
     // pokemon with unaware ignore defense stat changes while dealing damage
     if (GetBattlerAbility(battlerAtk) == ABILITY_UNAWARE)
         defStage = 6;
+    
+    //while holding veracs flail ignore positive defence changes
+    holdEffect = ItemId_GetHoldEffect(gBattleMons[battlerAtk].item);
+    if (holdEffect == HOLD_EFFECT_VERAC && defStage > 6)
+        defStage = 6;
+
     // certain moves also ignore stat changes
     if (gBattleMoves[move].flags & FLAG_STAT_STAGES_IGNORED)
         defStage = 6;
@@ -7056,6 +7165,21 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
         if (!usesDefStat)
             MulModifier(&modifier, UQ_4_12(1.5));
         break;
+    case HOLD_EFFECT_SNELM:
+        if (usesDefStat)
+            MulModifier(&modifier, UQ_4_12(1.5));
+        break;
+    case HOLD_EFFECT_SPIRIT_SHIELD:
+        GET_MOVE_TYPE(gCurrentMove, moveType);
+        if(moveType == TYPE_GHOST|| moveType == TYPE_FAIRY)
+            MulModifier(&modifier, UQ_4_12(2.0));
+        break;
+        case HOLD_EFFECT_DFS:
+        GET_MOVE_TYPE(gCurrentMove, moveType);
+        if(moveType == TYPE_FIRE|| moveType == TYPE_DRAGON)
+            MulModifier(&modifier, UQ_4_12(2.0));
+        break;
+    
     }
 
     // sandstorm sp.def boost for rock types
@@ -7072,7 +7196,8 @@ static u32 CalcFinalDmg(u32 dmg, u16 move, u8 battlerAtk, u8 battlerDef, u8 move
     u32 abilityDef = GetBattlerAbility(battlerDef);
     u32 defSide = GET_BATTLER_SIDE(battlerDef);
     u16 finalModifier = UQ_4_12(1.0);
-
+    u32 i,hpFraction;
+    double hpPowerScale;
     // check multiple targets in double battle
     if (GetMoveTargetCount(move, battlerAtk, battlerDef) >= 2)
         MulModifier(&finalModifier, UQ_4_12(0.75));
@@ -7183,6 +7308,16 @@ static u32 CalcFinalDmg(u32 dmg, u16 move, u8 battlerAtk, u8 battlerDef, u8 move
         break;
     case HOLD_EFFECT_LIFE_ORB:
         MulModifier(&finalModifier, UQ_4_12(1.3));
+        break;
+    case HOLD_EFFECT_DHAROK:
+        hpFraction = GetScaledHPFraction(gBattleMons[battlerAtk].hp, gBattleMons[battlerAtk].maxHP, 10);
+        for (i = 0; i < sizeof(sDhHpScaleToModifierTable); i += 2)
+        {
+            if (hpFraction <= sDhHpScaleToModifierTable[i])
+                break;
+        }
+        hpPowerScale = sDhHpScaleToModifierTable[i + 1];
+        MulModifier(&finalModifier, UQ_4_12(hpPowerScale));
         break;
     }
 

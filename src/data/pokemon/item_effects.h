@@ -486,8 +486,159 @@ const u8 gItemEffect_SpiritCharm[6] = {
 const u8 gItemEffect_LegendaryItem[6] = {
     [4] = ITEM4_EVO_STONE,
 };
+const u8 gItemEffect_BadEgg[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+const u8 gItemEffect_DagannothEggShell[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+const u8 gItemEffect_DagannothScale[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+const u8 gItemEffect_NumblingRoot[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+const u8 gItemEffect_RottenPotato[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+const u8 gItemEffect_ShrivelledDagannothClaw[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+const u8 gItemEffect_Sock[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+const u8 gItemEffect_TearOfGuthix[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+const u8 gItemEffect_BlueberrySpecial[6] = {
+    [3] = ITEM3_STATUS_ALL,
+};
+const u8 gItemEffect_Bread[7] = {
+    [4] = ITEM4_HEAL_HP,
+    [6] = 20,
+};
+const u8 gItemEffect_ChocolateCake[7] = {
+    [3] = ITEM3_STATUS_ALL,
+    [4] = ITEM4_HEAL_HP,
+    [6] = 200,
+};
+const u8 gItemEffect_ChocolateSunday[6] = {
+    [3] = ITEM3_POISON,
+};
+const u8 gItemEffect_AttackLamp[10] = {
+    [4] = ITEM4_EV_ATK,
+    [5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = 10,
+    [7] = 5,
+    [8] = 3,
+    [9] = 2,
+};
+const u8 gItemEffect_DefenceLamp[10] = {
+    [5] = ITEM5_EV_DEF | ITEM5_FRIENDSHIP_ALL,
+    [6] = 10,
+    [7] = 5,
+    [8] = 3,
+    [9] = 2,
+};
+const u8 gItemEffect_HealthLamp[10] = {
+    [4] = ITEM4_EV_HP,
+    [5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = 10,
+    [7] = 5,
+    [8] = 3,
+    [9] = 2,
+};
+const u8 gItemEffect_MagicLamp[10] = {
+    [5] = ITEM5_EV_SPATK | ITEM5_FRIENDSHIP_ALL,
+    [6] = 10,
+    [7] = 5,
+    [8] = 3,
+    [9] = 2,
+};
+const u8 gItemEffect_MagicDefenceLamp[10] = {
+    [5] = ITEM5_EV_SPDEF | ITEM5_FRIENDSHIP_ALL,
+    [6] = 10,
+    [7] = 5,
+    [8] = 3,
+    [9] = 2,
+};
+const u8 gItemEffect_SpeedLamp[10] = {
+    [5] = ITEM5_EV_SPEED | ITEM5_FRIENDSHIP_ALL,
+    [6] = 10,
+    [7] = 5,
+    [8] = 3,
+    [9] = 2,
+};
+const u8 gItemEffect_DrunkDragon[6] = {
+    [3] = ITEM3_BURN,
+};
+const u8 gItemEffect_FruitBlast[6] = {
+    [3] = ITEM3_PARALYSIS,
+};
+
+const u8 gItemEffect_PineapplePunch[6] = {
+    [3] = ITEM3_SLEEP,
+};
+
+const u8 gItemEffect_AttackPotion[8] = {
+    [0] = 1,
+    [5] = ITEM5_FRIENDSHIP_LOW | ITEM5_FRIENDSHIP_MID,
+    [6] = 1,
+    [7] = 1,
+};
+const u8 gItemEffect_DefencePotion[8] = {
+    [1] = 1 << 4,
+    [5] = ITEM5_FRIENDSHIP_LOW | ITEM5_FRIENDSHIP_MID,
+    [6] = 1,
+    [7] = 1,
+};
+const u8 gItemEffect_MagicPotion[8] = {
+    [2] = 1,
+    [5] = ITEM5_FRIENDSHIP_LOW | ITEM5_FRIENDSHIP_MID,
+    [6] = 1,
+    [7] = 1,
+};
+const u8 gItemEffect_MagicDefencePotion[8] = {
+    [2] = 1,
+    [5] = ITEM5_FRIENDSHIP_LOW | ITEM5_FRIENDSHIP_MID,
+    [6] = 1,
+    [7] = 1,
+};
+
+const u8 gItemEffect_SpeedPotion[8] = {
+    [1] = 1,
+    [5] = ITEM5_FRIENDSHIP_LOW | ITEM5_FRIENDSHIP_MID,
+    [6] = 1,
+    [7] = 1,
+};
+const u8 gItemEffect_PrayerPotion[7] = {
+    [4] = ITEM4_HEAL_PP_ALL,
+    [6] = 10,
+};
+const u8 gItemEffect_Beer[9] = {
+    [4] = ITEM4_PP_UP,
+    [5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = 5,
+    [7] = 3,
+    [8] = 2,
+};
+const u8 gItemEffect_MoonlightMead[9] = {
+    [5] = ITEM5_PP_MAX | ITEM5_FRIENDSHIP_ALL,
+    [6] = 5,
+    [7] = 3,
+    [8] = 2,
+};
+
+const u8 gItemEffect_SuperPrayerPotion[7] = {
+    [4] = ITEM4_HEAL_PP_ALL,
+    [6] = 0x7F,
+};
+const u8 gItemEffect_WizardBlizzard[6] = {
+    [3] = ITEM3_FREEZE,
+};
 
 
+//end pokescape
 
 
 const u8 *const gItemEffectTable[] =
@@ -583,6 +734,39 @@ const u8 *const gItemEffectTable[] =
 	[ITEM_ASTRAL_RUNE - ITEM_POTION] = gItemEffect_AstralRune,
 	[ITEM_SPIRIT_CHARM - ITEM_POTION] = gItemEffect_SpiritCharm,
 	[ITEM_LEGENDARY_ITEM - ITEM_POTION] = gItemEffect_LegendaryItem,
+	[ITEM_BAD_EGG - ITEM_POTION] = gItemEffect_BadEgg,
+	[ITEM_DAGANNOTH_EGG_SHELL - ITEM_POTION] = gItemEffect_DagannothEggShell,
+	[ITEM_DAGANNOTH_SCALE - ITEM_POTION] = gItemEffect_DagannothScale,
+	[ITEM_NUMBLING_ROOT - ITEM_POTION] = gItemEffect_NumblingRoot,
+	[ITEM_ROTTEN_POTATO - ITEM_POTION] = gItemEffect_RottenPotato,
+	[ITEM_SHRIVELLED_DAGANNOTH_CLAW- ITEM_POTION] = gItemEffect_ShrivelledDagannothClaw,
+	[ITEM_SOCK - ITEM_POTION] = gItemEffect_Sock,
+	[ITEM_TEAR_OF_GUTHIX - ITEM_POTION] = gItemEffect_TearOfGuthix,
+    [ITEM_BLUEBERRY_SPECIAL - ITEM_POTION] = gItemEffect_BlueberrySpecial,
+    [ITEM_BREAD - ITEM_POTION] = gItemEffect_Bread,
+    [ITEM_CHOCOLATE_CAKE- ITEM_POTION] = gItemEffect_ChocolateCake,
+    [ITEM_CHOCOLATE_SUNDAY- ITEM_POTION] = gItemEffect_ChocolateSunday,
+    [ITEM_LAMP_ATT- ITEM_POTION] = gItemEffect_AttackLamp,
+    [ITEM_LAMP_DEF- ITEM_POTION] = gItemEffect_DefenceLamp,
+    [ITEM_LAMP_HP- ITEM_POTION] = gItemEffect_HealthLamp,
+    [ITEM_LAMP_SPATT- ITEM_POTION] = gItemEffect_MagicLamp,
+    [ITEM_LAMP_SPDEF- ITEM_POTION] = gItemEffect_MagicDefenceLamp,
+    [ITEM_LAMP_SPEED- ITEM_POTION] = gItemEffect_SpeedLamp,
+    [ITEM_DRUNK_DRAGON- ITEM_POTION] = gItemEffect_DrunkDragon,
+    [ITEM_FRUIT_BLAST- ITEM_POTION] = gItemEffect_FruitBlast,
+    [ITEM_PINEAPPLE_PUNCH- ITEM_POTION] = gItemEffect_PineapplePunch,
+    [ITEM_POTION_ATT- ITEM_POTION] = gItemEffect_AttackPotion,
+    [ITEM_POTION_DEF- ITEM_POTION] = gItemEffect_DefencePotion,
+    [ITEM_POTION_SPATT- ITEM_POTION] = gItemEffect_MagicPotion,
+    [ITEM_POTION_SPDEF- ITEM_POTION] = gItemEffect_MagicDefencePotion,
+    [ITEM_POTION_SPEED- ITEM_POTION] = gItemEffect_SpeedPotion,
+    [ITEM_PRAYER_POTION- ITEM_POTION] = gItemEffect_PrayerPotion,
+    [ITEM_STAT_BEER- ITEM_POTION] = gItemEffect_Beer,
+    [ITEM_STAT_MOONLIGHT_MEAD- ITEM_POTION] = gItemEffect_MoonlightMead,
+    [ITEM_SUPER_PRAYER_POTION- ITEM_POTION] = gItemEffect_SuperPrayerPotion,
+    [ITEM_WIZARDS_BLIZZARD- ITEM_POTION] = gItemEffect_WizardBlizzard,
+
+    
 
 	
 	

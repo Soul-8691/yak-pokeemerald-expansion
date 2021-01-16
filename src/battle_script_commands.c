@@ -846,11 +846,11 @@ static const u16 sRarePickupItems[] =
     ITEM_FULL_RESTORE,
     ITEM_ETHER,
     ITEM_WHITE_HERB,
-    ITEM_TM44_REST,
+    ITEM_WHITE_HERB,
     ITEM_ELIXIR,
-    ITEM_TM01_FOCUS_PUNCH,
+    ITEM_WHITE_HERB,
     ITEM_LEFTOVERS,
-    ITEM_TM26_EARTHQUAKE,
+    ITEM_WHITE_HERB,
 };
 
 static const u8 sPickupProbabilities[] =
@@ -1420,6 +1420,8 @@ static void Cmd_ppreduce(void)
             {
                 if (i != gBattlerAttacker && IsBattlerAlive(i))
                     ppToDeduct += (GetBattlerAbility(i) == ABILITY_PRESSURE);
+                if (GetBattlerSide(i) != GetBattlerSide(gBattlerAttacker) && (GetBattlerHoldEffect(i, TRUE) == HOLD_EFFECT_PRESSURE) && IsBattlerAlive(i))
+                    ppToDeduct ++;
             }
             break;
         case MOVE_TARGET_BOTH:
@@ -1428,12 +1430,24 @@ static void Cmd_ppreduce(void)
             {
                 if (GetBattlerSide(i) != GetBattlerSide(gBattlerAttacker) && IsBattlerAlive(i))
                     ppToDeduct += (GetBattlerAbility(i) == ABILITY_PRESSURE);
+                if (GetBattlerSide(i) != GetBattlerSide(gBattlerAttacker) && GetBattlerHoldEffect(i, TRUE) == HOLD_EFFECT_PRESSURE)
+                    ppToDeduct ++;
             }
             break;
         default:
             if (gBattlerAttacker != gBattlerTarget && GetBattlerAbility(gBattlerTarget) == ABILITY_PRESSURE)
+            {
                 ppToDeduct++;
+            }
+            if (gBattlerAttacker != gBattlerTarget && GetBattlerHoldEffect(gBattlerTarget, TRUE) == HOLD_EFFECT_PRESSURE)
+            {
+                ppToDeduct++;
+            }
             break;
+        
+        }
+        if (GetBattlerHoldEffect(gBattlerAttacker, TRUE) == HOLD_EFFECT_GODSWORD){
+            ppToDeduct --;
         }
     }
 
@@ -4532,6 +4546,12 @@ static void Cmd_moveend(void)
                 effect = TRUE;
             gBattleScripting.moveendState++;
             break;
+        case MOVEEND_KARIL:
+            if (ItemBattleEffects(ITEMEFFECT_KARIL, 0, FALSE))
+                effect = TRUE;
+            gBattleScripting.moveendState++;
+            break;
+
         case MOVEEND_STATUS_IMMUNITY_ABILITIES: // status immunities
             if (AbilityBattleEffects(ABILITYEFFECT_IMMUNITY, 0, 0, 0, 0))
                 effect = TRUE; // it loops through all battlers, so we increment after its done with all battlers
@@ -11023,7 +11043,12 @@ static void HandleRoomMove(u32 statusFlag, u8 *timer, u8 stringId)
     else
     {
         gFieldStatuses |= statusFlag;
-        *timer = 5;
+        if (GetBattlerHoldEffect(gBattlerAttacker, TRUE) == HOLD_EFFECT_TERRAIN_EXTENDER){
+            *timer = 8;
+        }
+        else {
+            *timer = 5;
+        }
         gBattleCommunication[MULTISTRING_CHOOSER] = stringId;
     }
 }

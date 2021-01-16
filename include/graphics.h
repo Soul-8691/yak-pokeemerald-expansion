@@ -8532,6 +8532,7 @@ extern const u32 gItemIconPalette_MagmaEmblem[];
 extern const u32 gItemIcon_OldSeaMap[];
 extern const u32 gItemIconPalette_OldSeaMap[];
 //Pokescape Items
+//evo items
 extern const u32 gItemIcon_AirRune[];
 extern const u32 gItemIconPalette_AirRune[];
 extern const u32 gItemIcon_WaterRune[];
@@ -9051,58 +9052,6 @@ extern const u32 gItemIconPalette_tear_of_guthix[];
 extern const u32 gItemIcon_tinderbox[];
 extern const u32 gItemIconPalette_tinderbox[];
 
-/*
-extern const u32 gItemIcon_TM_Scroll(1)[];
-extern const u32 gItemIconPalette_TM_Scroll(1)[];
-
-extern const u32 gItemIcon_TM_Scroll(2)[];
-extern const u32 gItemIconPalette_TM_Scroll(2)[];
-
-extern const u32 gItemIcon_TM_Scroll(3)[];
-extern const u32 gItemIconPalette_TM_Scroll(3)[];
-
-extern const u32 gItemIcon_TM_Scroll(4)[];
-extern const u32 gItemIconPalette_TM_Scroll(4)[];
-
-extern const u32 gItemIcon_TM_Scroll(5)[];
-extern const u32 gItemIconPalette_TM_Scroll(5)[];
-
-extern const u32 gItemIcon_TM_Scroll(6)[];
-extern const u32 gItemIconPalette_TM_Scroll(6)[];
-
-extern const u32 gItemIcon_TM_Scroll(7)[];
-extern const u32 gItemIconPalette_TM_Scroll(7)[];
-
-extern const u32 gItemIcon_TM_Scroll(8)[];
-extern const u32 gItemIconPalette_TM_Scroll(8)[];
-
-extern const u32 gItemIcon_TM_Scroll(9)[];
-extern const u32 gItemIconPalette_TM_Scroll(9)[];
-
-extern const u32 gItemIcon_TM_Scroll(10)[];
-extern const u32 gItemIconPalette_TM_Scroll(10)[];
-
-extern const u32 gItemIcon_TM_Scroll(11)[];
-extern const u32 gItemIconPalette_TM_Scroll(11)[];
-
-extern const u32 gItemIcon_TM_Scroll(12)[];
-extern const u32 gItemIconPalette_TM_Scroll(12)[];
-
-extern const u32 gItemIcon_TM_Scroll(13)[];
-extern const u32 gItemIconPalette_TM_Scroll(13)[];
-
-extern const u32 gItemIcon_TM_Scroll(14)[];
-extern const u32 gItemIconPalette_TM_Scroll(14)[];
-
-extern const u32 gItemIcon_TM_Scroll(15)[];
-extern const u32 gItemIconPalette_TM_Scroll(15)[];
-
-extern const u32 gItemIcon_TM_Scroll(16)[];
-extern const u32 gItemIconPalette_TM_Scroll(16)[];
-
-extern const u32 gItemIcon_TM_Scroll(17)[];
-extern const u32 gItemIconPalette_TM_Scroll(17)[];
-*/
 extern const u32 gItemIcon_tomato[];
 extern const u32 gItemIconPalette_tomato[];
 
@@ -9143,6 +9092,27 @@ extern const u32 gBerryPalette_Cabbage[];
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];
+
+//pokescape TMs
+extern const u32 gItemIcon_TMScroll[];
+extern const u32 gItemIconPalette_BugTM[];
+extern const u32 gItemIconPalette_DarkTM[];
+extern const u32 gItemIconPalette_DragonTM[];
+extern const u32 gItemIconPalette_ElectricTM[];
+extern const u32 gItemIconPalette_FairyTM[];
+extern const u32 gItemIconPalette_FightingTM[];
+extern const u32 gItemIconPalette_FireTM[];
+extern const u32 gItemIconPalette_FlyingTM[];
+extern const u32 gItemIconPalette_GhostTM[];
+extern const u32 gItemIconPalette_GrassTM[];
+extern const u32 gItemIconPalette_GroundTM[];
+extern const u32 gItemIconPalette_IceTM[];
+extern const u32 gItemIconPalette_NormalTM[];
+extern const u32 gItemIconPalette_PoisonTM[];
+extern const u32 gItemIconPalette_PsychicTM[];
+extern const u32 gItemIconPalette_RockTM[];
+extern const u32 gItemIconPalette_SteelTM[];
+extern const u32 gItemIconPalette_WaterTM[];
 
 
 //menu graphics

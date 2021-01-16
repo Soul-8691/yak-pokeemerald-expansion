@@ -3041,5 +3041,6 @@ extern const u8 gText_CheatMiscShop[];
 extern const u8 gText_NextMenu[];
 extern const u8 gText_YouAlreadyHaveThis[];
 extern const u8 gText_YouWantedThisTM[];
+extern const u8 gText_NeedMoreBadges[];
 
 #endif // GUARD_STRINGS_H

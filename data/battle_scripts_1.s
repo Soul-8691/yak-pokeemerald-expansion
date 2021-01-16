@@ -369,6 +369,9 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectSliceDice
 	.4byte BattleScript_EffectSaradominStrike
 	.4byte BattleScript_EffectVengeance
+	.4byte BattleScript_KarilCrossbow
+	.4byte BattleScript_AhrimStaff
+	.4byte BattleScript_ToragHammer
 
 BattleScript_EffectSleepHit:
 	setmoveeffect MOVE_EFFECT_SLEEP
@@ -7499,6 +7502,13 @@ BattleScript_82DB85B::
 	removeitem BS_ATTACKER
 	end2
 
+BattleScript_RandomStatDown::
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_BUFF_ALLOW_PTR, BattleScript_RandomStatDown2
+BattleScript_RandomStatDown2::
+	setbyte cMULTISTRING_CHOOSER, 0x4
+	call BattleScript_StatUp
+	end2
+
 BattleScript_BerryFocusEnergyEnd2::
 	playanimation BS_ATTACKER, B_ANIM_HELD_ITEM_EFFECT, NULL
 	printstring STRINGID_PKMNUSEDXTOGETPUMPED
@@ -7746,3 +7756,20 @@ BattleScript_EffectVengeance::
 	waitanimation
 	setvengeance BS_ATTACKER
 	goto BattleScript_MoveEnd
+
+BattleScript_KarilCrossbow::
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_KARILCROSSBOW
+	waitmessage 0x40
+	return
+
+BattleScript_AhrimStaff::
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_AHRIMSTAFF
+	waitmessage 0x40
+	return
+
+BattleScript_ToragHammer::
+	printstring STRINGID_TORAGHAMMER
+	waitmessage 0x40
+	return

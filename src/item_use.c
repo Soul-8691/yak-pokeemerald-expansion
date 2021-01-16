@@ -43,6 +43,7 @@
 #include "constants/event_bg.h"
 #include "constants/event_objects.h"
 #include "constants/field_effects.h"
+#include "constants/flags.h"
 #include "constants/item_effects.h"
 #include "constants/items.h"
 #include "constants/map_types.h"
@@ -178,6 +179,11 @@ static void DisplayCannotUseItemMessage(u8 taskId, bool8 isUsingRegisteredKeyIte
 static void DisplayDadsAdviceCannotUseItemMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnField)
 {
     DisplayCannotUseItemMessage(taskId, isUsingRegisteredKeyItemOnField, gText_DadsAdvice);
+}
+
+static void DisplayNeedMoreBadges(u8 taskId, bool8 isUsingRegisteredKeyItemOnField)
+{
+    DisplayCannotUseItemMessage(taskId, isUsingRegisteredKeyItemOnField, gText_NeedMoreBadges);
 }
 
 static void DisplayCannotDismountBikeMessage(u8 taskId, bool8 isUsingRegisteredKeyItemOnField)
@@ -1240,11 +1246,12 @@ static void FieldCallback_BaneSmash(void)
 
 void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 {
+    
 	if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_BREAKABLE_ROCK) == TRUE)
     {
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = 421;
+			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_RockSmash;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
@@ -1258,25 +1265,30 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
     }
 	else if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_COPPER_ORE) == TRUE)
     {
-		if(!gTasks[taskId].tUsingRegisteredKeyItem)
-		{
-			gSaveBlock2Ptr->ItemArg = 421;
-			gFieldCallback = FieldCallback_CopperSmash;
-			gBagMenu->exitCallback = CB2_ReturnToField;
-			Task_FadeAndCloseBagMenu(taskId);
-		}
-		else
-		{
-			//PlaySE(SE_W088);
-			ScriptContext1_SetupScript(EventScript_UseCopperSmash);
-			DestroyTask(taskId);
-		}
+        if (FlagGet(FLAG_BADGE01_GET)){
+            if(!gTasks[taskId].tUsingRegisteredKeyItem)
+            {
+                gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
+                gFieldCallback = FieldCallback_CopperSmash;
+                gBagMenu->exitCallback = CB2_ReturnToField;
+                Task_FadeAndCloseBagMenu(taskId);
+            }
+            else
+            {
+                //PlaySE(SE_W088);
+                ScriptContext1_SetupScript(EventScript_UseCopperSmash);
+                DestroyTask(taskId);
+            }
+        }
+        else{
+            DisplayNeedMoreBadges(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
+        }
     }
 	else if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_TIN_ORE) == TRUE)
     {
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = 421;
+			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_TinSmash;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
@@ -1292,7 +1304,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
     {
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = 421;
+			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_IronSmash;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
@@ -1308,7 +1320,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
     {
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = 421;
+			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_CoalSmash;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
@@ -1324,7 +1336,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
     {
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = 421;
+			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_MithrilSmash;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
@@ -1340,7 +1352,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
     {
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = 421;
+			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_AdamantSmash;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
@@ -1356,7 +1368,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
     {
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = 421;
+			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_RuneSmash;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
@@ -1372,7 +1384,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
     {
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = 421;
+			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_OrikalkumSmash;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
@@ -1388,7 +1400,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
     {
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = 421;
+			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_ElementalSmash;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
@@ -1404,7 +1416,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
     {
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = 421;
+			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_BaneSmash;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);

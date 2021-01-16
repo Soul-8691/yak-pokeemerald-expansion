@@ -53,7 +53,7 @@ script Kevin {
 			release
 		case 6:
 			msgbox ("Heres some candy!")
-			additem (ITEM_RARE_CANDY, 100)
+			additem (ITEM_PURPLE_SWEETS, 100)
 			release
 		case 7:
 			release
@@ -75,6 +75,18 @@ script GuardBlockLeftRoute1{
 		waitmovement(0)
 	}
 	release
+}
+
+script HappyBirthday{
+	lock
+	faceplayer
+	msgbox(format("Today is my birthday! To celebrate I'm giving everyone this cool hat! Here you can have one too!"))
+	waitmessage
+	giveitem(ITEM_DAGONHAIHAT, 1)
+	applymovement(24, EmoteHeartMovement)
+	msgbox(format("I hope you like it as much as I do!"))
+	release
+	
 }
 
 script GuardBlockRightRoute1{
@@ -136,6 +148,9 @@ movement BlockDownLumbridge{
 	jump_in_place_down
 }
 
+movement EmoteHeartMovement{
+	emote_heart
+}
 
 movement PlayerMoveLeftLumbridge {
 	walk_left *2
@@ -253,6 +268,22 @@ Cheat_Menu_Shop_TM:
     .2byte ITEM_TM48
     .2byte ITEM_TM49
     .2byte ITEM_TM50
+	.2byte ITEM_TM51
+	.2byte ITEM_TM52
+	.2byte ITEM_TM53
+	.2byte ITEM_TM54
+	.2byte ITEM_TM55
+	.2byte ITEM_TM56
+	.2byte ITEM_TM57
+	.2byte ITEM_TM58
+	.2byte ITEM_TM59
+	.2byte ITEM_TM60
+	.2byte ITEM_TM61
+	.2byte ITEM_TM62
+	.2byte ITEM_TM63
+	.2byte ITEM_TM64
+	.2byte ITEM_TM65
+	.2byte ITEM_TM66
 	.2byte ITEM_NONE
 	release
 	end
@@ -260,6 +291,22 @@ Cheat_Menu_Shop_TM:
 	.align 2
 Cheat_Menu_Shop_Misc:
 	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_BLUEBERRY_SPECIAL
+	.2byte ITEM_BREAD
+	.2byte ITEM_CHOCOLATE_CAKE
+	.2byte ITEM_LAMP_ATT
+	.2byte ITEM_LAMP_DEF
+	.2byte ITEM_LAMP_HP
+	.2byte ITEM_LAMP_SPATT
+	.2byte ITEM_LAMP_SPDEF
+	.2byte ITEM_LAMP_SPEED
+	.2byte ITEM_POTION_ATT
+	.2byte ITEM_POTION_DEF
+	.2byte ITEM_POTION_SPATT
+	.2byte ITEM_POTION_SPDEF
+	.2byte ITEM_PRAYER_POTION
+	.2byte ITEM_STAT_BEER
+	.2byte ITEM_STAT_MOONLIGHT_MEAD
 	.2byte ITEM_NONE
 	release
 	end

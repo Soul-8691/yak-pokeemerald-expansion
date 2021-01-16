@@ -77,7 +77,7 @@ Kevin_8:
 
 Kevin_9:
 	msgbox Kevin_Text_7
-	additem ITEM_RARE_CANDY, 100
+	additem ITEM_PURPLE_SWEETS, 100
 	release
 	goto Kevin_1
 
@@ -102,6 +102,18 @@ GuardBlockLeftRoute1_2:
 	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveBackLumbridge
 	waitmovement 0
 	goto GuardBlockLeftRoute1_1
+
+
+HappyBirthday::
+	lock
+	faceplayer
+	msgbox HappyBirthday_Text_0
+	waitmessage
+	giveitem ITEM_DAGONHAIHAT, 1
+	applymovement 24, EmoteHeartMovement
+	msgbox HappyBirthday_Text_1
+	release
+	return
 
 
 GuardBlockRightRoute1::
@@ -176,6 +188,10 @@ BlockUpLumbridge:
 BlockDownLumbridge:
 	emote_exclamation_mark
 	jump_in_place_down
+	step_end
+
+EmoteHeartMovement:
+	emote_heart
 	step_end
 
 PlayerMoveLeftLumbridge:
@@ -297,6 +313,22 @@ Cheat_Menu_Shop_TM:
     .2byte ITEM_TM48
     .2byte ITEM_TM49
     .2byte ITEM_TM50
+	.2byte ITEM_TM51
+	.2byte ITEM_TM52
+	.2byte ITEM_TM53
+	.2byte ITEM_TM54
+	.2byte ITEM_TM55
+	.2byte ITEM_TM56
+	.2byte ITEM_TM57
+	.2byte ITEM_TM58
+	.2byte ITEM_TM59
+	.2byte ITEM_TM60
+	.2byte ITEM_TM61
+	.2byte ITEM_TM62
+	.2byte ITEM_TM63
+	.2byte ITEM_TM64
+	.2byte ITEM_TM65
+	.2byte ITEM_TM66
 	.2byte ITEM_NONE
 	release
 	end
@@ -304,6 +336,22 @@ Cheat_Menu_Shop_TM:
 	.align 2
 Cheat_Menu_Shop_Misc:
 	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_BLUEBERRY_SPECIAL
+	.2byte ITEM_BREAD
+	.2byte ITEM_CHOCOLATE_CAKE
+	.2byte ITEM_LAMP_ATT
+	.2byte ITEM_LAMP_DEF
+	.2byte ITEM_LAMP_HP
+	.2byte ITEM_LAMP_SPATT
+	.2byte ITEM_LAMP_SPDEF
+	.2byte ITEM_LAMP_SPEED
+	.2byte ITEM_POTION_ATT
+	.2byte ITEM_POTION_DEF
+	.2byte ITEM_POTION_SPATT
+	.2byte ITEM_POTION_SPDEF
+	.2byte ITEM_PRAYER_POTION
+	.2byte ITEM_STAT_BEER
+	.2byte ITEM_STAT_MOONLIGHT_MEAD
 	.2byte ITEM_NONE
 	release
 	end
@@ -338,3 +386,11 @@ Kevin_Text_8:
 GuardBlockLeftRoute1_Text_0:
 	.string "You should speak to the cook first. I\n"
 	.string "heard he was looking for help.$"
+
+HappyBirthday_Text_0:
+	.string "Today is my birthday! To celebrate I'm\n"
+	.string "giving everyone this cool hat! Here you\l"
+	.string "can have one too!$"
+
+HappyBirthday_Text_1:
+	.string "I hope you like it as much as I do!$"

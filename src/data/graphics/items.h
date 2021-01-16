@@ -1385,58 +1385,6 @@ const u32 gItemIconPalette_tear_of_guthix[] = INCBIN_U32("graphics/items/pokesca
 const u32 gItemIcon_tinderbox[] = INCBIN_U32("graphics/items/pokescape_icons/tinderbox.4bpp.lz");
 const u32 gItemIconPalette_tinderbox[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/tinderbox.gbapal.lz");
 
-/*
-const u32 gItemIcon_TM_Scroll(1)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(1).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(1)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(1).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(2)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(2).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(2)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(2).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(3)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(3).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(3)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(3).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(4)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(4).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(4)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(4).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(5)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(5).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(5)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(5).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(6)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(6).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(6)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(6).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(7)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(7).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(7)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(7).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(8)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(8).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(8)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(8).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(9)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(9).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(9)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(9).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(10)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(10).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(10)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(10).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(11)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(11).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(11)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(11).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(12)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(12).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(12)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(12).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(13)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(13).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(13)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(13).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(14)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(14).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(14)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(14).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(15)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(15).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(15)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(15).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(16)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(16).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(16)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(16).gbapal.lz");
-
-const u32 gItemIcon_TM_Scroll(17)[] = INCBIN_U32("graphics/items/pokescape_icons/TM_Scroll(17).4bpp.lz");
-const u32 gItemIconPalette_TM_Scroll(17)[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/TM_Scroll(17).gbapal.lz");
-*/
 const u32 gItemIcon_tomato[] = INCBIN_U32("graphics/items/pokescape_icons/tomato.4bpp.lz");
 const u32 gItemIconPalette_tomato[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/tomato.gbapal.lz");
 
@@ -1470,7 +1418,27 @@ const u32 gItemIconPalette_wizards_hat[] = INCBIN_U32("graphics/items/pokescape_
 const u32 gItemIcon_woolBall[] = INCBIN_U32("graphics/items/pokescape_icons/woolBall.4bpp.lz");
 const u32 gItemIconPalette_woolBall[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/woolBall.gbapal.lz");
 
+//pokescape tms
 
+const u32 gItemIcon_TMScroll[] = INCBIN_U32("graphics/items/pokescape_icons/tmscroll.4bpp.lz");
+const u32 gItemIconPalette_BugTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/bugtm.gbapal.lz");
+const u32 gItemIconPalette_DarkTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/darktm.gbapal.lz");
+const u32 gItemIconPalette_DragonTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/dragontm.gbapal.lz");
+const u32 gItemIconPalette_ElectricTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/electrictm.gbapal.lz");
+const u32 gItemIconPalette_FairyTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fairytm.gbapal.lz");
+const u32 gItemIconPalette_FightingTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fightingtm.gbapal.lz");
+const u32 gItemIconPalette_FireTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/firetm.gbapal.lz");
+const u32 gItemIconPalette_FlyingTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/flyingtm.gbapal.lz");
+const u32 gItemIconPalette_GhostTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/ghosttm.gbapal.lz");
+const u32 gItemIconPalette_GrassTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/grasstm.gbapal.lz");
+const u32 gItemIconPalette_GroundTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/groundtm.gbapal.lz");
+const u32 gItemIconPalette_IceTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/icetm.gbapal.lz");
+const u32 gItemIconPalette_NormalTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/normaltm.gbapal.lz");
+const u32 gItemIconPalette_PoisonTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/poisontm.gbapal.lz");
+const u32 gItemIconPalette_PsychicTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/psychictm.gbapal.lz");
+const u32 gItemIconPalette_RockTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/rocktm.gbapal.lz");
+const u32 gItemIconPalette_SteelTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/steeltm.gbapal.lz");
+const u32 gItemIconPalette_WaterTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/watertm.gbapal.lz");
 
 
 

@@ -5676,7 +5676,8 @@ static void Cmd_switchineffects(void)
             || ItemBattleEffects(ITEMEFFECT_ON_SWITCH_IN, gActiveBattler, FALSE)
             || AbilityBattleEffects(ABILITYEFFECT_INTIMIDATE2, 0, 0, 0, 0)
             || AbilityBattleEffects(ABILITYEFFECT_TRACE2, 0, 0, 0, 0)
-            || AbilityBattleEffects(ABILITYEFFECT_FORECAST, 0, 0, 0, 0))
+            || AbilityBattleEffects(ABILITYEFFECT_FORECAST, 0, 0, 0, 0)
+            || AbilityBattleEffects(ABILITYEFFECT_PETRIFY2,0,0,0,0))
             return;
 
         gSideStatuses[GetBattlerSide(gActiveBattler)] &= ~(SIDE_STATUS_SPIKES_DAMAGED | SIDE_STATUS_TOXIC_SPIKES_DAMAGED | SIDE_STATUS_STEALTH_ROCK_DAMAGED | SIDE_STATUS_STICKY_WEB_DAMAGED);
@@ -7307,6 +7308,7 @@ static void Cmd_various(void)
         AbilityBattleEffects(ABILITYEFFECT_ON_SWITCHIN, gActiveBattler, 0, 0, 0);
         AbilityBattleEffects(ABILITYEFFECT_INTIMIDATE2, gActiveBattler, 0, 0, 0);
         AbilityBattleEffects(ABILITYEFFECT_TRACE2, gActiveBattler, 0, 0, 0);
+        AbilityBattleEffects(ABILITYEFFECT_PETRIFY2, gActiveBattler,0,0,0);
         return;
     case VARIOUS_SAVE_TARGET:
         gBattleStruct->savedBattlerTarget = gBattlerTarget;

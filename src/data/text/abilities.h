@@ -221,6 +221,8 @@ static const u8 sMistySurgeDescription[] = _("Field becomes misty.");
 static const u8 sGrassySurgeDescription[] = _("Field becomes grassy.");
 static const u8 sFullMetalBodyDescription[] = _("Prevents stat reduction.");
 static const u8 sNeuroforceDescription[] = _("Ups “super effective.“.");
+//pokescape
+static const u8 sPetrifyDescription[] = _("Lowers SPEED of Targets.");
 
 const u8 gAbilityNames[ABILITIES_COUNT_GEN7][ABILITY_NAME_LENGTH + 1] =
 {
@@ -459,6 +461,14 @@ const u8 gAbilityNames[ABILITIES_COUNT_GEN7][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_SHADOW_SHIELD] = _("ShadowShield"),
     [ABILITY_PRISM_ARMOR] = _("Prism Armor"),
     [ABILITY_NEUROFORCE] = _("Neuroforce"),
+    //pokescape
+    [ABILITY_GLORY] = _("Glory"),
+    [ABILITY_EMPTY_LORD] = _("Empty Lord"),
+    [ABILITY_CRYSTAL_BEING] = _("CrystalBeing"),
+    [ABILITY_SWIFT_MIND] = _("Swift Mind"),
+    [ABILITY_UNDERDOG] = _("Underdog"),
+    [ABILITY_MENAPHITE] = _("Menaphite"),
+    [ABILITY_PETRIFY] = _("Petrify"),
 };
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT_GEN7] =
@@ -698,4 +708,12 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT_GEN7] =
     [ABILITY_SHADOW_SHIELD] = sMultiscaleDescription,
     [ABILITY_PRISM_ARMOR] = sFilterDescription,
     [ABILITY_NEUROFORCE] = sNeuroforceDescription,
+    //pokescape
+    [ABILITY_GLORY] = sPetrifyDescription,
+    [ABILITY_EMPTY_LORD] = sPetrifyDescription,
+    [ABILITY_CRYSTAL_BEING] = sPetrifyDescription,
+    [ABILITY_SWIFT_MIND] = sPetrifyDescription,
+    [ABILITY_UNDERDOG] = sPetrifyDescription,
+    [ABILITY_MENAPHITE] = sPetrifyDescription,
+    [ABILITY_PETRIFY] = sPetrifyDescription,
 };

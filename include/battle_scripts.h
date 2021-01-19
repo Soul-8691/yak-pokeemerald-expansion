@@ -358,5 +358,7 @@ extern const u8 BattleScript_ToragHammer[];
 //pokescape
 
 extern const u8 BattleScript_ChaoticRiftEnds[];
+extern const u8 BattleScript_PetrifyActivatesEnd3[];
+extern const u8 BattleScript_PetrifyActivates[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

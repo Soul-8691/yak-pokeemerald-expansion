@@ -3823,6 +3823,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
             }
             break;
         case ABILITY_INTIMIDATE:
+        case ABILITY_PETRIFY:
             if (!(gSpecialStatuses[battler].intimidatedMon))
             {
                 gBattleResources->flags->flags[battler] |= RESOURCE_FLAG_INTIMIDATED;
@@ -4734,6 +4735,29 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                 {
                     BattleScriptPushCursor();
                     gBattlescriptCurrInstr = BattleScript_IntimidateActivates;
+                }
+                battler = gBattlerAbility = gBattleStruct->intimidateBattler = i;
+                effect++;
+                break;
+            }
+        }
+        break;
+    case ABILITYEFFECT_PETRIFY1:
+    case ABILITYEFFECT_PETRIFY2:
+        for (i = 0; i < gBattlersCount; i++)
+        {
+            if (gBattleMons[i].ability == ABILITY_PETRIFY && gBattleResources->flags->flags[i] & RESOURCE_FLAG_INTIMIDATED)
+            {
+                gLastUsedAbility = ABILITY_PETRIFY;
+                gBattleResources->flags->flags[i] &= ~(RESOURCE_FLAG_INTIMIDATED);
+                if (caseID == ABILITYEFFECT_PETRIFY1)
+                {
+                    BattleScriptPushCursorAndCallback(BattleScript_PetrifyActivatesEnd3);
+                }
+                else
+                {
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_PetrifyActivates;
                 }
                 battler = gBattlerAbility = gBattleStruct->intimidateBattler = i;
                 effect++;

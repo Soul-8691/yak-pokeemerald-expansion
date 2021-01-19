@@ -1274,3 +1274,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Varrock_Bank_West/scripts.inc"
 
 	.include "data/maps/Varrock_Bank_West_B1F/scripts.inc"
+
+	.include "data/maps/Yanille/scripts.inc"

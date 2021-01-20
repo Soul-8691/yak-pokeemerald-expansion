@@ -225,7 +225,8 @@
 #define MAPSEC_KANDARIN						0xDB
 #define MAPSEC_KARAMJA						0xDC
 #define MAPSEC_MORYTANIA					0xDD
-#define MAPSEC_WILDERNESS					0xDE			
+#define MAPSEC_WILDERNESS					0xDE
+#define MAPSEC_ENDMAPSEC                    0xDF			
 
 
 

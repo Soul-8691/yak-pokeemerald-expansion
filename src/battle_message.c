@@ -683,6 +683,7 @@ static const u8 sText_KarilCrossbow[] =_("{B_ATK_NAME_WITH_PREFIX}'s {B_LAST_ITE
 static const u8 sText_AhrimStaff[] =_("{B_ATK_NAME_WITH_PREFIX}'s {B_LAST_ITEM} LOWERED\n{B_DEF_NAME_WITH_PREFIX}'s ATTACK!");
 static const u8 sText_ToragHammer[] =_("{B_ATK_NAME_WITH_PREFIX}'s {B_LAST_ITEM} PREVENTS\n{B_DEF_NAME_WITH_PREFIX} FROM RUNNING!");
 static const u8 sText_Petrify[] =_("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nlowers {B_DEF_NAME_WITH_PREFIX}'s SPEED!");
+static const u8 sText_TooScared[] =_("{B_ATK_NAME_WITH_PREFIX}'s {B_LAST_ABILITY} makes\n{B_DEF_NAME_WITH_PREFIX} only able to attack!");
 
 
 
@@ -1231,6 +1232,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_AHRIMSTAFF - 12] = sText_AhrimStaff,
     [STRINGID_TORAGHAMMER - 12] = sText_ToragHammer,
     [STRINGID_PETRIFY - 12] = sText_Petrify,
+    [STRINGID_TOOSCARED - 12] = sText_TooScared,
 };
 
 const u16 gTerrainStringIds[] =

@@ -7862,12 +7862,12 @@ BattleScript_Haemancy::
 	pause 0x20
 	return
 
-BattleScript_Aracnaphobia::
+BattleScript_Goosebumps::
 pause 0x20
 call BattleScript_AbilityPopUp
 waitmessage 0x40
 settaunt BattleScript_ButItFailed
-printstring STRINGID_PKMNFELLFORTAUNT
+printstring STRINGID_TOOSCARED
 waitmessage 0x40
 return
 

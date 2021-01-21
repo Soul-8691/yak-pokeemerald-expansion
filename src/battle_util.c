@@ -52,6 +52,10 @@ static const u8 sPkblToEscapeFactor[][3] = {{0, 0, 0}, {3, 5, 0}, {2, 3, 0}, {1,
 static const u8 sGoNearCounterToCatchFactor[] = {4, 3, 2, 1};
 static const u8 sGoNearCounterToEscapeFactor[] = {4, 4, 4, 4};
 
+static int setRoomThisTurn = 0;
+
+void HandleRoomMove(u32 statusFlag, u8 *timer, u8 stringId);
+
 void HandleAction_UseMove(void)
 {
     u32 i, side, moveType, var = 4;
@@ -3426,7 +3430,7 @@ bool32 TryChangeBattleWeather(u8 battler, u32 weatherEnumId, bool32 viaAbility)
     else if (!(gBattleWeather & (sWeatherFlagsInfo[weatherEnumId][0] | sWeatherFlagsInfo[weatherEnumId][1])))
     {
         gBattleWeather = (sWeatherFlagsInfo[weatherEnumId][0]);
-        if (GetBattlerHoldEffect(battler, TRUE) == sWeatherFlagsInfo[weatherEnumId][2])
+        if (GetBattlerHoldEffect(battler, TRUE) == (sWeatherFlagsInfo[weatherEnumId][2] || HOLD_EFFECT_WEATHER_EXTENDER))
             gWishFutureKnock.weatherDuration = 8;
         else
             gWishFutureKnock.weatherDuration = 5;
@@ -3822,6 +3826,16 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                 effect++;
             }
             break;
+        case ABILITY_ABYSSAL:
+            if (!gSpecialStatuses[battler].switchInAbilityDone)
+            {
+                gSpecialStatuses[battler].switchInAbilityDone = 1;
+                HandleRoomMove(STATUS_FIELD_TRICK_ROOM, &gFieldTimers.trickRoomTimer, 0);
+                gCurrentMove = MOVE_TRICK_ROOM;
+                BattleScriptPushCursorAndCallback(BattleScript_AbyssalActivates);
+                effect++;
+            }
+            break;
         case ABILITY_INTIMIDATE:
         case ABILITY_PETRIFY:
             if (!(gSpecialStatuses[battler].intimidatedMon))
@@ -3872,6 +3886,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
             break;
         }
         break;
+
     case ABILITYEFFECT_ENDTURN: // 1
         if (gBattleMons[battler].hp != 0)
         {
@@ -4549,7 +4564,40 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                 effect++;
             }
             break;
-        }
+        case ABILITY_HAEMANCY:
+                if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+                    && gSpecialStatuses[gBattlerTarget].dmg != 0
+                    && gSpecialStatuses[gBattlerTarget].dmg != 0xFFFF
+                    && gBattlerAttacker != gBattlerTarget
+                    && gBattleMons[gBattlerAttacker].hp != gBattleMons[gBattlerAttacker].maxHP
+                    && gBattleMons[gBattlerAttacker].hp != 0)
+                {
+                    gLastUsedAbility = ABILITY_HAEMANCY;
+                    gPotentialItemEffectBattler = gBattlerAttacker;
+                    gBattleScripting.battler = gBattlerAttacker;
+                    gBattleMoveDamage = (gSpecialStatuses[gBattlerTarget].dmg / 10) * -1;
+                    if (gBattleMoveDamage == 0)
+                        gBattleMoveDamage = -1;
+                    gSpecialStatuses[gBattlerTarget].dmg = 0;
+                    BattleScriptPushCursor();
+                    gBattlescriptCurrInstr = BattleScript_Haemancy;
+                    effect++;
+                }
+                break;
+        case ABILITY_GOOSEBUMPS:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+             && gBattleMons[gBattlerTarget].hp != 0
+             && !gProtectStructs[gBattlerTarget].confusionSelfDmg
+             && IsMoveMakingContact(move, gBattlerAttacker)
+             && (Random() % 100) < 50)
+             {
+                 gLastUsedAbility = ABILITY_GOOSEBUMPS;
+                 BattleScriptPushCursor();
+                 gBattlescriptCurrInstr = BattleScript_Goosebumps;
+                 effect++;
+             }
+
+            }
         break;
     case ABILITYEFFECT_MOVE_END_OTHER: // Abilities that activate on *another* battler's moveend: Dancer, Soul-Heart, Receiver, Symbiosis
         switch (GetBattlerAbility(battler))
@@ -6844,7 +6892,7 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
     switch (gBattleMoves[move].effect)
     {
     case EFFECT_FACADE:
-        if (gBattleMons[battlerAtk].status1 & (STATUS1_BURN | STATUS1_PSN_ANY | STATUS1_PARALYSIS))
+        if (gBattleMons[battlerAtk].status1 & (STATUS1_ANY))
             MulModifier(&modifier, UQ_4_12(2.0));
         break;
     case EFFECT_BRINE:
@@ -6895,6 +6943,18 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
         MulModifier(&modifier, (B_TERRAIN_TYPE_BOOST >= GEN_8) ? UQ_4_12(1.3) : UQ_4_12(1.5));
 
     return ApplyModifier(modifier, basePower);
+}
+
+static bool32 CanEvolve(u32 species)
+{
+    u32 i;
+
+    for (i = 0; i < EVOS_PER_MON; i++)
+    {
+        if (gEvolutionTable[species][i].method && gEvolutionTable[species][i].method != EVO_MEGA_EVOLUTION)
+            return TRUE;
+    }
+    return FALSE;
 }
 
 static u32 CalcAttackStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, bool32 isCrit, bool32 updateFlags)
@@ -6968,19 +7028,43 @@ static u32 CalcAttackStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, b
             MulModifier(&modifier, UQ_4_12(1.5));
         break;
     case ABILITY_SWARM:
-        if (moveType == TYPE_BUG && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
+        if (moveType == TYPE_BUG && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 2))
             MulModifier(&modifier, UQ_4_12(1.5));
         break;
     case ABILITY_TORRENT:
-        if (moveType == TYPE_WATER && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
+        if (moveType == TYPE_WATER && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 2))
             MulModifier(&modifier, UQ_4_12(1.5));
         break;
     case ABILITY_BLAZE:
-        if (moveType == TYPE_FIRE && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
+        if (moveType == TYPE_FIRE && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 2))
             MulModifier(&modifier, UQ_4_12(1.5));
         break;
     case ABILITY_OVERGROW:
-        if (moveType == TYPE_GRASS && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
+        if (moveType == TYPE_GRASS && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 2))
+            MulModifier(&modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_GLORY:
+        if (moveType == TYPE_STEEL && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 2))
+            MulModifier(&modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_EMPTY_LORD:
+        if (moveType == TYPE_DARK && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 2))
+            MulModifier(&modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_CRYSTAL_BEING:
+        if (moveType == TYPE_ICE && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 2))
+            MulModifier(&modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_SWIFT_MIND:
+        if (moveType == TYPE_PSYCHIC && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 2))
+            MulModifier(&modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_UNDERDOG:
+        if (moveType == TYPE_FIGHTING && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 2))
+            MulModifier(&modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_MENAPHITE:
+        if (moveType == TYPE_ROCK && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 2))
             MulModifier(&modifier, UQ_4_12(1.5));
         break;
     case ABILITY_PLUS:
@@ -7054,22 +7138,16 @@ static u32 CalcAttackStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, b
         if (IS_MOVE_SPECIAL(move))
             MulModifier(&modifier, UQ_4_12(1.5));
         break;
+    case HOLD_EFFECT_EVO_ATTACK:
+        if (CanEvolve(gBattleMons[battlerAtk].species))
+            MulModifier(&modifier, UQ_4_12(1.5));
+        break;
     }
+    
 
     return ApplyModifier(modifier, atkStat);
 }
 
-static bool32 CanEvolve(u32 species)
-{
-    u32 i;
-
-    for (i = 0; i < EVOS_PER_MON; i++)
-    {
-        if (gEvolutionTable[species][i].method && gEvolutionTable[species][i].method != EVO_MEGA_EVOLUTION)
-            return TRUE;
-    }
-    return FALSE;
-}
 
 static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, bool32 isCrit, bool32 updateFlags)
 {
@@ -7125,6 +7203,8 @@ static u32 CalcDefenseStat(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, 
     // apply defense stat modifiers
     modifier = UQ_4_12(1.0);
 
+    if (GetBattlerAbility(battlerAtk) == ABILITY_PINCERS && usesDefStat)
+        MulModifier(&modifier, UQ_4_12(0.8));
     // target's abilities
     switch (GetBattlerAbility(battlerDef))
     {
@@ -7438,6 +7518,9 @@ static void MulByTypeEffectiveness(u16 *modifier, u16 move, u8 moveType, u8 batt
 
     if (moveType == TYPE_PSYCHIC && defType == TYPE_DARK && gStatuses3[battlerDef] & STATUS3_MIRACLE_EYED && mod == UQ_4_12(0.0))
         mod = UQ_4_12(1.0);
+    else if (moveType == TYPE_PSYCHIC && defType == TYPE_DARK && GetBattlerAbility(battlerAtk) == ABILITY_SEEKER && mod == UQ_4_12(0.0))
+        mod = UQ_4_12(2.0);
+
     if (gBattleMoves[move].effect == EFFECT_FREEZE_DRY && defType == TYPE_WATER)
         mod = UQ_4_12(2.0);
 

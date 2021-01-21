@@ -146,6 +146,8 @@
 #define HOLD_EFFECT_PRESSURE         162
 #define HOLD_EFFECT_GODSWORD         163
 #define HOLD_EFFECT_DFS              164
+#define HOLD_EFFECT_WEATHER_EXTENDER 165
+#define HOLD_EFFECT_EVO_ATTACK       166
 
 #define HOLD_EFFECT_CHOICE(holdEffect)((holdEffect == HOLD_EFFECT_CHOICE_BAND || holdEffect == HOLD_EFFECT_CHOICE_SCARF || holdEffect == HOLD_EFFECT_CHOICE_SPECS))
 

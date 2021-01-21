@@ -11033,8 +11033,7 @@ static void Cmd_setdamagetohealthdifference(void)
         gBattlescriptCurrInstr += 5;
     }
 }
-
-static void HandleRoomMove(u32 statusFlag, u8 *timer, u8 stringId)
+void HandleRoomMove(u32 statusFlag, u8 *timer, u8 stringId)
 {
     if (gFieldStatuses & statusFlag)
     {

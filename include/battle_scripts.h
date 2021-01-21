@@ -360,5 +360,8 @@ extern const u8 BattleScript_ToragHammer[];
 extern const u8 BattleScript_ChaoticRiftEnds[];
 extern const u8 BattleScript_PetrifyActivatesEnd3[];
 extern const u8 BattleScript_PetrifyActivates[];
+extern const u8 BattleScript_AbyssalActivates[];
+extern const u8 BattleScript_Haemancy[];
+extern const u8 BattleScript_Goosebumps[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

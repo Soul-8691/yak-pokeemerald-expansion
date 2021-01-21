@@ -222,7 +222,18 @@ static const u8 sGrassySurgeDescription[] = _("Field becomes grassy.");
 static const u8 sFullMetalBodyDescription[] = _("Prevents stat reduction.");
 static const u8 sNeuroforceDescription[] = _("Ups “super effective.“.");
 //pokescape
+static const u8 sGloryDescription[] =_("Ups Steel moves in a pinch.");
+static const u8 sEmptyLordDescription[] =_("Ups Dark moves in a pinch.");
+static const u8 sCrystalBeingDescription[] =_("Ups Ice moves in a pinch.");
+static const u8 sSwiftMindDescription[] =_("Ups PSY moves in a pinch.");
+static const u8 sUnderdogDescription[] =_("Ups FGT moves in a pinch.");
+static const u8 sMenaphiteDescription[] =_("Ups Rock moves in a pinch.");
 static const u8 sPetrifyDescription[] = _("Lowers SPEED of Targets.");
+static const u8 sAbyssalDescription[] = _("Twists the dimensions.");
+static const u8 sSeekerDescription[] = _("Allows PSY to hit DARK.");
+static const u8 sHaemancyDescription[] = _("Drains life from foe.");
+static const u8 sPincerDescription[] = _("Ignores 20% of targets DEF.");
+static const u8 sGoosebumpsDescription[] = _("Taunts enemy on contact.");
 
 const u8 gAbilityNames[ABILITIES_COUNT_GEN7][ABILITY_NAME_LENGTH + 1] =
 {
@@ -469,6 +480,11 @@ const u8 gAbilityNames[ABILITIES_COUNT_GEN7][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_UNDERDOG] = _("Underdog"),
     [ABILITY_MENAPHITE] = _("Menaphite"),
     [ABILITY_PETRIFY] = _("Petrify"),
+    [ABILITY_ABYSSAL] = _("Abyssal"),
+    [ABILITY_SEEKER] = _("Seeker"),
+    [ABILITY_HAEMANCY]= _("Haemancy"),
+    [ABILITY_PINCERS]= _("Pincers"),
+    [ABILITY_GOOSEBUMPS]= _("Goosebumps")
 };
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT_GEN7] =
@@ -709,11 +725,16 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT_GEN7] =
     [ABILITY_PRISM_ARMOR] = sFilterDescription,
     [ABILITY_NEUROFORCE] = sNeuroforceDescription,
     //pokescape
-    [ABILITY_GLORY] = sPetrifyDescription,
-    [ABILITY_EMPTY_LORD] = sPetrifyDescription,
-    [ABILITY_CRYSTAL_BEING] = sPetrifyDescription,
-    [ABILITY_SWIFT_MIND] = sPetrifyDescription,
-    [ABILITY_UNDERDOG] = sPetrifyDescription,
-    [ABILITY_MENAPHITE] = sPetrifyDescription,
+    [ABILITY_GLORY] = sGloryDescription,
+    [ABILITY_EMPTY_LORD] = sEmptyLordDescription,
+    [ABILITY_CRYSTAL_BEING] = sCrystalBeingDescription,
+    [ABILITY_SWIFT_MIND] = sSwiftMindDescription,
+    [ABILITY_UNDERDOG] = sUnderdogDescription,
+    [ABILITY_MENAPHITE] = sMenaphiteDescription,
     [ABILITY_PETRIFY] = sPetrifyDescription,
+    [ABILITY_ABYSSAL] = sAbyssalDescription,
+    [ABILITY_SEEKER] = sSeekerDescription,
+    [ABILITY_HAEMANCY] = sHaemancyDescription,
+    [ABILITY_PINCERS] = sPincerDescription,
+    [ABILITY_GOOSEBUMPS] = sGoosebumpsDescription,
 };

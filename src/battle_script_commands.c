@@ -6907,6 +6907,10 @@ static void Cmd_various(void)
     s32 i, j;
     u8 data[10];
     u32 side, bits;
+    u16 species, heldItem;
+    u8 ability;
+    u8 lvlDivBy10;
+    s32 rand;
 
     if (gBattleControllerExecFlags)
         return;
@@ -8109,9 +8113,32 @@ static void Cmd_various(void)
 
         }
         break;
-
-    
-    return;
+    case VARIOUS_FREE_STUFF:
+        mon = &gPlayerParty[gBattlerPartyIndexes[gBattlerAttacker]];
+        lvlDivBy10 = (GetMonData(mon, MON_DATA_LEVEL)-1) / 10;
+        heldItem  = GetMonData(mon, MON_DATA_HELD_ITEM);
+        rand = Random() % 100;
+        if (lvlDivBy10 > 9){
+            lvlDivBy10 = 9;
+        }
+        if (heldItem == ITEM_NONE)
+        {
+            for (j = 0; j < (int)ARRAY_COUNT(sPickupProbabilities); j++)
+            {
+                if (sPickupProbabilities[j] > rand)
+                {
+                    SetMonData(mon, MON_DATA_HELD_ITEM, &sPickupItems[lvlDivBy10 + j]);
+                    break;
+                }
+                else if (rand == 99 || rand == 98)
+                {
+                    SetMonData(mon, MON_DATA_HELD_ITEM, &sRarePickupItems[lvlDivBy10 + (99 - rand)]);
+                    break;
+                }
+            }
+        }
+        break;
+        return;
     }
     gBattlescriptCurrInstr += 3;
 }

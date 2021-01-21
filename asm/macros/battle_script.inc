@@ -1634,6 +1634,10 @@
 	.macro setvengeance battler:req
 	various \battler, VARIOUS_SET_VENGEANCE
 	.endm
+
+	.macro freestuff battler:req
+	various \battler, VARIOUS_FREE_STUFF
+	.endm
 	
 	.macro trysetthirdtype battler:req, ptr:req
 	various \battler, VARIOUS_TRY_THIRD_TYPE

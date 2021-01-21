@@ -2826,6 +2826,26 @@ static const u8 sTELEGRABDescription[] = _(
     "Casts a spell to retrieve an item.\n"
     "Steals targets item.");
 
+static const u8 sFREE_STUFFDescription[] = _(
+    "Beg for free stuff!\n"
+    "Can find items.");
+
+static const u8 sBANDOS_FURYDescription[] = _(
+    "Attack with the fury of Bandos!\n"
+    "Can raise ATK.");
+
+static const u8 sZAROS_BECKONDescription[] = _(
+    "Draw the foes in the dark abyss.\n"
+    "Prevents healing.");
+
+static const u8 sSEREN_SHINEDescription[] = _(
+    "Protects allies in the hail.\n"
+    "Sets aurora veil in hail.");
+
+static const u8 sGODLESS_REBELDescription[] = _(
+    "Draw from the power of the godless.\n"
+    "Doubles power with status.");
+
 static const u8 sNotDoneYetDescription[] = _(
 	"Not done yet.");
 
@@ -3561,4 +3581,9 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_SMOKE_BARRAGE - 1] = sSMOKE_BARRAGEDescription,
     [MOVE_SHADOW_BARRAGE -1] = sSHADOW_BARRAGEDescription,
     [MOVE_TELEGRAB - 1] = sTELEGRABDescription,
+    [MOVE_FREE_STUFF - 1] = sFREE_STUFFDescription,
+    [MOVE_BANDOS_FURY - 1] = sBANDOS_FURYDescription,
+    [MOVE_ZAROS_BECKON - 1] = sZAROS_BECKONDescription,
+    [MOVE_SEREN_SHINE - 1] = sSEREN_SHINEDescription,
+    [MOVE_GODLESS_REBEL - 1] = sGODLESS_REBELDescription,
 };

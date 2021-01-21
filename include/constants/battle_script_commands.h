@@ -166,6 +166,7 @@
 #define VARIOUS_PARALYZE_TYPE_IMMUNITY          100
 #define VARIOUS_JUMP_IF_ABSENT                  101
 #define VARIOUS_SET_VENGEANCE                   102
+#define VARIOUS_FREE_STUFF                      103
 
 // Cmd_manipulatedamage
 #define DMG_CHANGE_SIGN            0

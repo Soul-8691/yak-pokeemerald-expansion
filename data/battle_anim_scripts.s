@@ -708,6 +708,11 @@ gBattleAnims_Moves::
 	.4byte Move_SMOKE_BARRAGE
 	.4byte Move_SHADOW_BARRAGE
 	.4byte Move_TELEGRAB
+	.4byte Move_FREE_STUFF
+	.4byte Move_BANDOS_FURY
+	.4byte Move_ZAROS_BECKON
+	.4byte Move_SEREN_SHINE
+	.4byte Move_GODLESS_REBEL
 @@@@@@@@@@@@ GEN 8 @@@@@@@@@@@@
 	.4byte Move_DYNAMAX_CANNON
 	.4byte Move_SNIPE_SHOT
@@ -13510,8 +13515,19 @@ Move_TELEGRAB:
 	clearmonbg ANIM_DEF_PARTNER
 	end
 
+Move_FREE_STUFF:
+	goto Move_PRESENT
+
+Move_BANDOS_FURY:
+	goto Move_RAGE
 	
-	
+Move_ZAROS_BECKON:
+	goto Move_DARK_PULSE
+
+Move_SEREN_SHINE:
+	goto Move_BLIZZARD
+Move_GODLESS_REBEL:
+	goto Move_FACADE
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 8 @@@@@@@@@@@@@@@@@@@@@@@
 Move_DYNAMAX_CANNON::
     goto Move_HYPER_BEAM

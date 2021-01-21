@@ -371,6 +371,9 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectVengeance
 	.4byte BattleScript_EffectSandstormHit
 	.4byte BattleScript_EffectEvasionUpHit
+	.4byte BattleScript_EffectFreeStuff
+	.4byte BattleScript_EffectHealBlockHit
+	.4byte BattleScript_EffectAuroraVeilHit
 	.4byte BattleScript_KarilCrossbow
 	.4byte BattleScript_AhrimStaff
 	.4byte BattleScript_ToragHammer
@@ -7826,6 +7829,60 @@ BattleScript_EffectEvasionUpHit::
 	setmoveeffect MOVE_EFFECT_EVS_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
 	goto BattleScript_EffectHit
 
+BattleScript_EffectFreeStuff::
+	freestuff BS_ATTACKER
+	goto BattleScript_EffectHit
+
+BattleScript_EffectHealBlockHit:
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	critcalc
+	damagecalc
+	adjustdamage
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage 0x40
+	resultmessage
+	waitmessage 0x40
+	jumpifability BS_TARGET_SIDE, ABILITY_AROMA_VEIL, BattleScript_AromaVeilProtects
+	sethealblock BattleScript_ButItFailed
+	printstring STRINGID_PKMNPREVENTEDFROMHEALING
+	waitmessage 0x40
+	tryfaintmon BS_TARGET, FALSE, NULL
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectAuroraVeilHit:
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	critcalc
+	damagecalc
+	adjustdamage
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage 0x40
+	resultmessage
+	waitmessage 0x40
+	tryfaintmon BS_TARGET, FALSE, NULL
+	setauroraveil BS_ATTACKER
+	printfromtable gReflectLightScreenSafeguardStringIds
+	waitmessage 0x40
+	goto BattleScript_MoveEnd
 
 BattleScript_KarilCrossbow::
 	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1

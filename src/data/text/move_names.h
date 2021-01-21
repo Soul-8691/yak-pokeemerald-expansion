@@ -729,4 +729,9 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_SMOKE_BARRAGE] = _("Smoke Barrage"),
     [MOVE_SHADOW_BARRAGE] = _("Shadow Barrage"),
     [MOVE_TELEGRAB] = _("Telegrab"),
+    [MOVE_FREE_STUFF] = _("Free Stuff???"),
+    [MOVE_BANDOS_FURY] = _("Bandos Fury"),
+    [MOVE_ZAROS_BECKON] = _("Zaros Beckon"),
+    [MOVE_SEREN_SHINE]= _("Seren Shine"),
+    [MOVE_GODLESS_REBEL] = _("Godless Rebel"),
 };

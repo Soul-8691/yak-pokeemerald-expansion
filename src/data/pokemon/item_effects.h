@@ -765,6 +765,7 @@ const u8 *const gItemEffectTable[] =
     [ITEM_STAT_MOONLIGHT_MEAD- ITEM_POTION] = gItemEffect_MoonlightMead,
     [ITEM_SUPER_PRAYER_POTION- ITEM_POTION] = gItemEffect_SuperPrayerPotion,
     [ITEM_WIZARDS_BLIZZARD- ITEM_POTION] = gItemEffect_WizardBlizzard,
+    [ITEM_PURPLE_SWEETS - ITEM_POTION] = gItemEffect_RareCandy,
 
     
 

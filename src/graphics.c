@@ -1649,6 +1649,7 @@ const u32 gBattleAnimSpritePal_PolyporeStrike[] = INCBIN_U32("graphics/battle_an
 const u32 gBattleAnimSpritePal_BloodBubble[] = INCBIN_U32("graphics/battle_anims/sprites/blood_bubbles.gbapal.lz");
 const u32 gBattleAnimSpritePal_BloodBarrageParticles[] = INCBIN_U32("graphics/battle_anims/sprites/blood_barrage_particles.gbapal.lz");
 const u32 gBattleAnimSpritePal_Vengeance[] = INCBIN_U32("graphics/battle_anims/sprites/vengeance.gbapal.lz");
+const u32 gBattleAnimSpritePal_Telegrab[] = INCBIN_U32("graphics/battle_anims/sprites/telegrab.gbapal.lz");
 
 
 

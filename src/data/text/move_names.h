@@ -724,4 +724,9 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_ICE_BARRAGE] = _("Ice Barrage"),
     [MOVE_BLOOD_BARRAGE] = _("Blood Barrage"),
     [MOVE_VENGEANCE]= _("Vengeance"),
+    [MOVE_ARMADYL_STORM] = _("Armadyl Storm"),
+    [MOVE_TUMEKEN_STORM] = _("Tumeken Storm"),
+    [MOVE_SMOKE_BARRAGE] = _("Smoke Barrage"),
+    [MOVE_SHADOW_BARRAGE] = _("Shadow Barrage"),
+    [MOVE_TELEGRAB] = _("Telegrab"),
 };

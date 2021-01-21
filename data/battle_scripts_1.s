@@ -369,6 +369,8 @@ gBattleScriptsForMoveEffects:: @ 82D86A8
 	.4byte BattleScript_EffectSliceDice
 	.4byte BattleScript_EffectSaradominStrike
 	.4byte BattleScript_EffectVengeance
+	.4byte BattleScript_EffectSandstormHit
+	.4byte BattleScript_EffectEvasionUpHit
 	.4byte BattleScript_KarilCrossbow
 	.4byte BattleScript_AhrimStaff
 	.4byte BattleScript_ToragHammer
@@ -7794,6 +7796,37 @@ BattleScript_EffectVengeance::
 	setvengeance BS_ATTACKER
 	goto BattleScript_MoveEnd
 
+BattleScript_EffectSandstormHit::
+	attackcanceler
+	attackstring
+	ppreduce
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	critcalc
+	damagecalc
+	adjustdamage
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage 0x40
+	resultmessage
+	waitmessage 0x40
+	tryfaintmon BS_TARGET, FALSE, NULL
+	setsandstorm
+	printfromtable gMoveWeatherChangeStringIds
+	waitmessage 0x40
+	call BattleScript_WeatherFormChanges
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectEvasionUpHit::
+	setmoveeffect MOVE_EFFECT_EVS_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
+	goto BattleScript_EffectHit
+
+
 BattleScript_KarilCrossbow::
 	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
 	printstring STRINGID_KARILCROSSBOW
@@ -7810,3 +7843,31 @@ BattleScript_ToragHammer::
 	printstring STRINGID_TORAGHAMMER
 	waitmessage 0x40
 	return
+
+BattleScript_AbyssalActivates::
+	pause 0x20
+	call BattleScript_AbilityPopUp
+	attackanimation
+	waitanimation
+	printstring STRINGID_PKMNTWISTEDDIMENSIONS
+	end3
+
+BattleScript_Haemancy::
+	pause 0x20
+	call BattleScript_AbilityPopUp
+	waitmessage 0x40
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	pause 0x20
+	return
+
+BattleScript_Aracnaphobia::
+pause 0x20
+call BattleScript_AbilityPopUp
+waitmessage 0x40
+settaunt BattleScript_ButItFailed
+printstring STRINGID_PKMNFELLFORTAUNT
+waitmessage 0x40
+return
+

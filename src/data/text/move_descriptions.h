@@ -2806,6 +2806,26 @@ static const u8 sVENGEANCEDescription[] = _(
     "Strike the target with blood magic.\n"
     "Steals a large amount of health.");
 
+static const u8 sARMADYLSTORMDescription[] = _(
+    "Strike the target with armadyls winds.\n"
+    "Deals a large amount of damage.");
+
+static const u8 sTUMEKENSTORMDescription[] = _(
+    "Strike with the force of the desert.\n"
+    "Sets up a sandstorm.");
+
+static const u8 sSMOKE_BARRAGEDescription[] = _(
+    "Strike with the force of the desert.\n"
+    "Sets up a sandstorm.");
+
+static const u8 sSHADOW_BARRAGEDescription[] = _(
+    "Strike with the force of the desert.\n"
+    "Sets up a sandstorm.");
+    
+static const u8 sTELEGRABDescription[] = _(
+    "Casts a spell to retrieve an item.\n"
+    "Steals targets item.");
+
 static const u8 sNotDoneYetDescription[] = _(
 	"Not done yet.");
 
@@ -3536,4 +3556,9 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_ICE_BARRAGE - 1] = sICE_BARRAGEDescription,   
     [MOVE_BLOOD_BARRAGE - 1] = sBLOOD_BARRAGEDescription, 
     [MOVE_VENGEANCE - 1] = sVENGEANCEDescription,
+    [MOVE_ARMADYL_STORM - 1] = sARMADYLSTORMDescription,
+    [MOVE_TUMEKEN_STORM - 1] = sTUMEKENSTORMDescription,
+    [MOVE_SMOKE_BARRAGE - 1] = sSMOKE_BARRAGEDescription,
+    [MOVE_SHADOW_BARRAGE -1] = sSHADOW_BARRAGEDescription,
+    [MOVE_TELEGRAB - 1] = sTELEGRABDescription,
 };

@@ -10184,6 +10184,7 @@ extern const u32 gBattleAnimSpritePal_PolyporeStrike[];
 extern const u32 gBattleAnimSpritePal_BloodBubble[];
 extern const u32 gBattleAnimSpritePal_BloodBarrageParticles[];
 extern const u32 gBattleAnimSpritePal_Vengeance[];
+extern const u32 gBattleAnimSpritePal_Telegrab[];
 
 
 extern const u32 gBattleAnimBgImage_Dark[];

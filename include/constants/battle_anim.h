@@ -397,6 +397,7 @@
 #define ANIM_TAG_BLOOD_BUBBLE               (ANIM_SPRITES_START + 385)
 #define ANIM_TAG_BLOOD_BARRAGE_PARTICLES    (ANIM_SPRITES_START + 386)
 #define ANIM_TAG_VENGEANCE                  (ANIM_SPRITES_START + 387)
+#define ANIM_TAG_TELEGRAB                   (ANIM_SPRITES_START + 388)                 
 
 // battlers
 #define ANIM_ATTACKER    0

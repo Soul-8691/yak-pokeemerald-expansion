@@ -720,7 +720,8 @@
 // Map Group 47
 
 // Map Group 48
-#define MAP_YANILLE (0 | (48 << 8))
+#define MAP_YANILLE  (0 | (48 << 8))
+#define MAP_ARDOUGNE (1 | (48 << 8))
 
 // Map Group 49
 #define MAP_TZHAAR_1F          (0 | (49 << 8))

@@ -2134,7 +2134,7 @@ const u8 gMonIconPaletteIndices[] =
 	//[SPECIES_UGHTANKI] = 2,
 	//[SPECIES_CAMEL_WARRIOR_FORM] = 1,
 	//POKESCAPE END
-    [SPECIES_EGG] = 1,
+    [SPECIES_EGG] = 2,
     [SPECIES_UNOWN_B] = 0,
     [SPECIES_UNOWN_C] = 0,
     [SPECIES_UNOWN_D] = 0,

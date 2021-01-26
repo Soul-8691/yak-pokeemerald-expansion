@@ -234,6 +234,9 @@ static const u8 sSeekerDescription[] = _("Allows PSY to hit DARK.");
 static const u8 sHaemancyDescription[] = _("Drains life from foe.");
 static const u8 sPincerDescription[] = _("Ignores 20% of targets DEF.");
 static const u8 sGoosebumpsDescription[] = _("Taunts enemy on contact.");
+static const u8 sPunkRockDescription[] = _("Sound based moves do more damage.");
+static const u8 sAvernicDescription[] = _("Raises attack when lowering enemy stats.");
+static const u8 sFireShieldDescription[] = _("Protects the user from attacks.");
 
 const u8 gAbilityNames[ABILITIES_COUNT_GEN7][ABILITY_NAME_LENGTH + 1] =
 {
@@ -484,7 +487,10 @@ const u8 gAbilityNames[ABILITIES_COUNT_GEN7][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_SEEKER] = _("Seeker"),
     [ABILITY_HAEMANCY]= _("Haemancy"),
     [ABILITY_PINCERS]= _("Pincers"),
-    [ABILITY_GOOSEBUMPS]= _("Goosebumps")
+    [ABILITY_GOOSEBUMPS]= _("Goosebumps"),
+    [ABILITY_PUNK_ROCK] = _("Punk Rock"),
+    [ABILITY_AVERNIC] = _("Avernic"),
+    [ABILITY_FIRE_SHIELD] = _("Fire Shield")
 };
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT_GEN7] =
@@ -737,4 +743,7 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT_GEN7] =
     [ABILITY_HAEMANCY] = sHaemancyDescription,
     [ABILITY_PINCERS] = sPincerDescription,
     [ABILITY_GOOSEBUMPS] = sGoosebumpsDescription,
+    [ABILITY_PUNK_ROCK] = sPunkRockDescription,
+    [ABILITY_AVERNIC] = sAvernicDescription,
+    [ABILITY_FIRE_SHIELD] = sFireShieldDescription,
 };

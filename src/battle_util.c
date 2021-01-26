@@ -1211,7 +1211,6 @@ void PrepareStringBattle(u16 stringId, u8 battler)
         else
             SET_STATCHANGER(STAT_SPATK, 2, FALSE);
     }
-
     gActiveBattler = battler;
     BtlController_EmitPrintString(0, stringId);
     MarkBattlerForControllerExec(gActiveBattler);
@@ -3570,6 +3569,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
     speciesDef = gBattleMons[gBattlerTarget].species;
     pidDef = gBattleMons[gBattlerTarget].personality;
 
+
     if (special)
         gLastUsedAbility = special;
     else
@@ -4539,6 +4539,21 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                 effect++;
             }
             break;
+        
+
+        case ABILITY_FIRE_SHIELD:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+                && TARGET_TURN_DAMAGED
+                && IsBattlerAlive(gBattlerTarget)
+                && (moveType == TYPE_WATER || move == TYPE_FAIRY)
+                )
+            {
+                gLastUsedAbility = ABILITY_FIRE_SHIELD;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_FireShieldEnds;
+                effect++;
+            }
+            break;
         }
         break;
     case ABILITYEFFECT_MOVE_END_ATTACKER: // Same as above, but for attacker
@@ -4597,8 +4612,35 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                  effect++;
              }
 
-            }
+            
         break;
+
+        case ABILITY_AVERNIC:
+        if (gSpecialStatuses[gBattlerTarget].changedStatsBattlerId == gBattlerAttacker)
+        {
+            if (gBattleMons[gBattlerAttacker].attack >= gBattleMons[gBattlerAttacker].spAttack)
+            {
+                if (gBattleMons[gBattlerAttacker].statStages[STAT_ATK] != 12)
+                    SET_STATCHANGER(STAT_ATK, 1, FALSE);
+                else 
+                    break;
+            }
+            else
+            {
+                if (gBattleMons[gBattlerAttacker].statStages[STAT_SPATK] != 12)
+                    SET_STATCHANGER(STAT_SPATK,1,FALSE);
+                else
+                    break;
+            }
+
+            gLastUsedAbility = ABILITY_AVERNIC;
+            BattleScriptPushCursor();
+            gBattlescriptCurrInstr = BattleScript_AvernicActivates;
+            effect++;
+        }
+        break;
+        
+        }
     case ABILITYEFFECT_MOVE_END_OTHER: // Abilities that activate on *another* battler's moveend: Dancer, Soul-Heart, Receiver, Symbiosis
         switch (GetBattlerAbility(battler))
         {
@@ -6767,6 +6809,10 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
         if (moveType == TYPE_NORMAL && gBattleStruct->ateBoost[battlerAtk])
             MulModifier(&modifier, UQ_4_12(1.2));
         break;
+    case ABILITY_PUNK_ROCK:
+        if (gBattleMoves[move].flags & FLAG_SOUND)
+            MulModifier(&modifier, UQ_4_12(1.3));
+        break;
     }
 
     // field abilities
@@ -6818,7 +6864,17 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
         if (moveType == TYPE_FIRE)
             MulModifier(&modifier, UQ_4_12(2.0));
         break;
+    case ABILITY_PUNK_ROCK:
+        if (gBattleMoves[move].flags & FLAG_SOUND)
+            MulModifier(&modifier, UQ_4_12(0.5));
+        break;
+    case ABILITY_FIRE_SHIELD:
+        if (updateFlags)
+            RecordAbilityBattle(battlerDef, ability);
+        MulModifier(&modifier, UQ_4_12(0.5));
+        break;
     }
+
 
     holdEffectAtk = GetBattlerHoldEffect(battlerAtk, TRUE);
     holdEffectParamAtk = GetBattlerHoldEffectParam(battlerAtk);

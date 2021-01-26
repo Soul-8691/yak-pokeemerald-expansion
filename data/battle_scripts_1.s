@@ -6535,6 +6535,17 @@ BattleScript_DefiantActivates::
 	waitmessage 0x40
 	return
 
+BattleScript_AvernicActivates::
+	pause 0x20
+	call BattleScript_AbilityPopUp
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN, NULL
+	setgraphicalstatchangevalues
+	playanimation BS_ABILITY_BATTLER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_PKMNSSTATCHANGED3
+	waitmessage 0x40
+	return
+
+
 BattleScript_AbilityPopUp:
 	showabilitypopup BS_ABILITY_BATTLER
 	recordability BS_ABILITY_BATTLER
@@ -7920,11 +7931,19 @@ BattleScript_Haemancy::
 	return
 
 BattleScript_Goosebumps::
-pause 0x20
-call BattleScript_AbilityPopUp
-waitmessage 0x40
-settaunt BattleScript_ButItFailed
-printstring STRINGID_TOOSCARED
-waitmessage 0x40
-return
+	pause 0x20
+	call BattleScript_AbilityPopUp
+	waitmessage 0x40
+	settaunt BattleScript_ButItFailed
+	printstring STRINGID_TOOSCARED
+	waitmessage 0x40
+	return
 
+BattleScript_FireShieldEnds::
+	pause 0x20
+	call BattleScript_AbilityPopUp
+	waitmessage 0x40
+	setgastroacid BattleScript_ButItFailed
+	printstring STRINGID_FIRESHIELDENDS
+	waitmessage 0x40
+	return

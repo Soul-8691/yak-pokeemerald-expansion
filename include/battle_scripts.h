@@ -363,5 +363,7 @@ extern const u8 BattleScript_PetrifyActivates[];
 extern const u8 BattleScript_AbyssalActivates[];
 extern const u8 BattleScript_Haemancy[];
 extern const u8 BattleScript_Goosebumps[];
+extern const u8 BattleScript_AvernicActivates[];
+extern const u8 BattleScript_FireShieldEnds[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

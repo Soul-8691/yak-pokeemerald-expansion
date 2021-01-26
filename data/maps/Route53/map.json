@@ -1,12 +1,12 @@
 {
-  "id": "MAP_YANILLE",
-  "name": "Yanille",
-  "layout": "LAYOUT_YANILLE",
+  "id": "MAP_ROUTE53",
+  "name": "Route53",
+  "layout": "LAYOUT_ROUTE53",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_TOWN",
+  "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -15,26 +15,25 @@
   "connections": [
     {
       "direction": "right",
-      "offset": -22,
+      "offset": -6,
       "map": "MAP_ROUTE52"
     },
     {
       "direction": "up",
-      "offset": 18,
-      "map": "MAP_ROUTE53"
+      "offset": 46,
+      "map": "MAP_ROUTE54"
+    },
+    {
+      "direction": "down",
+      "offset": -18,
+      "map": "MAP_YANILLE"
     }
   ],
   "object_events": [
 
   ],
   "warp_events": [
-    {
-      "x": 37,
-      "y": 20,
-      "elevation": 0,
-      "dest_map": "MAP_LUMBRIDGE",
-      "dest_warp_id": 14
-    }
+
   ],
   "coord_events": [
 

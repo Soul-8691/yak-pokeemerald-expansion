@@ -2242,8 +2242,8 @@ void RestoreBagAfterWallyTutorial(void)
 void DoWallyTutorialBagMenu(void)
 {
     PrepareBagForWallyTutorial();
-    AddBagItem(ITEM_POTION, 1);
-    AddBagItem(ITEM_POKE_BALL, 1);
+    AddBagItem(ITEM_BREAD, 1);
+    AddBagItem(ITEM_BRONZE_POUCH, 1);
     GoToBagMenu(ITEMMENULOCATION_WALLY, ITEMS_POCKET, CB2_SetUpReshowBattleScreenAfterMenu2);
 }
 
@@ -2263,7 +2263,7 @@ void Task_WallyTutorialBagMenu(u8 taskId)
             case 0xCC:
                 PlaySE(SE_SELECT);
                 BagMenu_PrintCursor_(data[0], 2);
-                gSpecialVar_ItemId = ITEM_POKE_BALL;
+                gSpecialVar_ItemId = ITEM_BRONZE_POUCH;
                 OpenContextMenu(taskId);
                 data[8]++;
                 break;

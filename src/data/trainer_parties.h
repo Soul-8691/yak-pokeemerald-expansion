@@ -352,3 +352,66 @@ static const struct TrainerMonItemDefaultMoves sParty_Duke[] = {
     .heldItem = ITEM_NONE
     },
 };
+    //lumbridge swamp
+    static const struct TrainerMonItemDefaultMoves sParty_Rsn_Lum_Swamp[] = {
+    {
+    .iv = 0,
+    .lvl = 9,
+    .species = SPECIES_FROGSPAWN,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 9,
+    .species = SPECIES_FROGSPAWN,
+    .heldItem = ITEM_NONE
+    },
+	{
+    .iv = 0,
+    .lvl = 9,
+    .species = SPECIES_RAT_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },   
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Mugger_Lum_Swamp[] = {
+    {
+    .iv = 0,
+    .lvl = 11,
+    .species = SPECIES_TOAD_BARKER_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 11,
+    .species = SPECIES_SNAKE_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+	{
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_RAT_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },   
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Skeleton_Lum_Swamp[] = {
+    {
+    .iv = 0,
+    .lvl = 10,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 11,
+    .species = SPECIES_HAND_SKELETAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+	{
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_HAND_ZOMBIE_FORM,
+    .heldItem = ITEM_NONE
+    },   
+};

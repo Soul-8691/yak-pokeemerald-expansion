@@ -1,0 +1,39 @@
+mapscripts Lumbridge_Swamp_MapScripts {
+} 
+
+script LumSwampRsnBattle{
+    trainerbattle_single(TRAINER_RSN_LUM_SWAMP, "You look like a noob!","Maybe I'm the noob..")
+    msgbox(format("The mill is up ahead. I heard you can get some good wheat there."))
+    release
+}
+
+script LumSwampSkeletonBattle{
+    trainerbattle_single(TRAINER_SKELETON_LUM_SWAMP, "You look like a noob!","Maybe I'm the noob..")
+    msgbox(format("The mill is up ahead. I heard you can get some good wheat there."))
+    release
+}
+
+script LumSwampMuggerBattle{
+    trainerbattle_single(TRAINER_MUGGER_LUM_SWAMP, "You look like a noob!","Maybe I'm the noob..")
+    msgbox(format("The mill is up ahead. I heard you can get some good wheat there."))
+    release
+}
+
+script LumSwampCaveWarning{
+    lock
+    faceplayer
+    msgbox(format("I wouldn't go down there without a light. It's dangerous!"))
+    release
+}
+
+script LumSwampRat{
+    lock
+    faceplayer
+    msgbox("REEEEEE!")
+    release
+}
+
+script LumSwampSign{
+    msgbox(format("WARNING: Goblins below!"), MSGBOX_SIGN)
+    release
+}

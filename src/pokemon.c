@@ -100,6 +100,7 @@ static const struct CombinedMove sCombinedMoves[2] =
 
 const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex Index (Summary No. for Hoenn Dex)
 {
+    
     SPECIES_TO_HOENN(BULBASAUR),
     SPECIES_TO_HOENN(IVYSAUR),
     SPECIES_TO_HOENN(VENUSAUR),
@@ -511,6 +512,7 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
     SPECIES_TO_HOENN(JIRACHI),
     SPECIES_TO_HOENN(DEOXYS),
     SPECIES_TO_HOENN(CHIMECHO),
+    
 	//POKESCAPE
 	SPECIES_TO_HOENN(GUTHLING),
 	SPECIES_TO_HOENN(GUTHBIRD),
@@ -1139,6 +1141,7 @@ const u16 gSpeciesToHoennPokedexNum[] = // Assigns all species to the Hoenn Dex 
 
 const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the National Dex Index (Summary No. for National Dex)
 {
+    
     SPECIES_TO_NATIONAL(BULBASAUR),
     SPECIES_TO_NATIONAL(IVYSAUR),
     SPECIES_TO_NATIONAL(VENUSAUR),
@@ -1550,6 +1553,7 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
     SPECIES_TO_NATIONAL(JIRACHI),
     SPECIES_TO_NATIONAL(DEOXYS),
     SPECIES_TO_NATIONAL(CHIMECHO),
+    
 	//POKESCAPE
 	SPECIES_TO_NATIONAL(GUTHLING),
 	SPECIES_TO_NATIONAL(GUTHBIRD),
@@ -2178,6 +2182,7 @@ const u16 gSpeciesToNationalPokedexNum[] = // Assigns all species to the Nationa
 
 const u16 gHoennToNationalOrder[] = // Assigns Hoenn Dex Pokémon (Using National Dex Index)
 {
+    
     HOENN_TO_NATIONAL(TREECKO),
     HOENN_TO_NATIONAL(GROVYLE),
     HOENN_TO_NATIONAL(SCEPTILE),
@@ -9477,4 +9482,46 @@ u8 *sub_806F4F8(u8 id, u8 arg1)
         arg1 = 0;
 
     return structPtr->byteArrays[arg1];
+}
+
+void MaxHpIV (void){
+    u8 iv = 31;
+    SetMonData(&gPlayerParty[GetLeadMonIndex()],MON_DATA_HP_IV, &iv);
+    CalculateMonStats(&gPlayerParty[GetLeadMonIndex()]);
+    return;
+}
+
+void MaxAtkIV (void){
+    u8 iv = 31;
+    SetMonData(&gPlayerParty[GetLeadMonIndex()],MON_DATA_ATK_IV, &iv);
+    CalculateMonStats(&gPlayerParty[GetLeadMonIndex()]);
+    return;
+}
+
+void MaxDefIV (void){
+    u8 iv = 31;
+    SetMonData(&gPlayerParty[GetLeadMonIndex()],MON_DATA_DEF_IV, &iv);
+    CalculateMonStats(&gPlayerParty[GetLeadMonIndex()]);
+    return;
+}
+
+void MaxSpAtkIV (void){
+    u8 iv = 31;
+    SetMonData(&gPlayerParty[GetLeadMonIndex()],MON_DATA_SPATK_IV, &iv);
+    CalculateMonStats(&gPlayerParty[GetLeadMonIndex()]);
+    return;
+}
+
+void MaxSpDefIV (void){
+    u8 iv = 31;
+    SetMonData(&gPlayerParty[GetLeadMonIndex()],MON_DATA_SPDEF_IV, &iv);
+    CalculateMonStats(&gPlayerParty[GetLeadMonIndex()]);
+    return;
+}
+
+void MaxSpeedIV (void){
+    u8 iv = 31;
+    SetMonData(&gPlayerParty[GetLeadMonIndex()],MON_DATA_SPEED_IV, &iv);
+    CalculateMonStats(&gPlayerParty[GetLeadMonIndex()]);
+    return;
 }

@@ -419,4 +419,10 @@ struct Unknown_806F160_Struct *sub_806F2AC(u8 id, u8 arg1);
 void sub_806F47C(u8 id);
 u8 *sub_806F4F8(u8 id, u8 arg1);
 
+void MaxHpIv(void);
+void MaxAtkIv(void);
+void MaxDefIv(void);
+void MaxSpAtkIv(void);
+void MaxSpDefIv(void);
+void MaxSpeedIv(void);
 #endif // GUARD_POKEMON_H

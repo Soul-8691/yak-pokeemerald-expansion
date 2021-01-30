@@ -535,3 +535,9 @@ gSpecials:: @ 81DBA64
 	def_special RemoveRecordsWindow
 	def_special CloseDeptStoreElevatorWindow
 	def_special TrySetBattleTowerLinkType
+	def_special MaxHpIV
+	def_special MaxAtkIV
+	def_special MaxDefIV
+	def_special MaxSpAtkIV
+	def_special MaxSpDefIV
+	def_special MaxSpeedIV

@@ -294,7 +294,7 @@ static u16 TakeSelectedPokemonFromDaycare(struct DaycareMon *daycareMon)
 
     if (GetMonData(&pokemon, MON_DATA_LEVEL) != MAX_LEVEL)
     {
-        experience = GetMonData(&pokemon, MON_DATA_EXP) + daycareMon->steps;
+        experience = GetMonData(&pokemon, MON_DATA_EXP) + (daycareMon->steps * 5);
         SetMonData(&pokemon, MON_DATA_EXP, &experience);
         ApplyDaycareExperience(&pokemon);
     }
@@ -1030,10 +1030,9 @@ void CreateEgg(struct Pokemon *mon, u16 species, bool8 setHotSpringsLocation)
     u8 language;
     u8 metLocation;
     u8 isEgg;
-
     CreateMon(mon, species, EGG_HATCH_LEVEL, 32, FALSE, 0, OT_ID_PLAYER_ID, 0);
     metLevel = 0;
-    ball = ITEM_POKE_BALL;
+    ball = ITEM_BRONZE_POUCH;
     language = LANGUAGE_JAPANESE;
     SetMonData(mon, MON_DATA_POKEBALL, &ball);
     SetMonData(mon, MON_DATA_NICKNAME, sJapaneseEggNickname);
@@ -1056,11 +1055,31 @@ static void SetInitialEggData(struct Pokemon *mon, u16 species, struct DayCare *
     u16 ball;
     u8 metLevel;
     u8 language;
+    u32 parentSpecies[DAYCARE_MON_COUNT];
+    s32 i;
+    s32 dittoCount;
+    s32 parent = -1;
+
+    // search for female gender
+    for (i = 0; i < DAYCARE_MON_COUNT; i++)
+    {
+        if (GetBoxMonGender(&daycare->mons[i].mon) == MON_FEMALE)
+            parent = i;
+    }
+
+    // search for ditto
+    for (dittoCount = 0, i = 0; i < DAYCARE_MON_COUNT; i++)
+    {
+        parentSpecies[i] = GetBoxMonData(&daycare->mons[i].mon, MON_DATA_SPECIES);
+        if (parentSpecies[i] == SPECIES_DITTO || parentSpecies[i] == SPECIES_CABBAGE )
+            dittoCount++, parent = i;
+    }
 
     personality = daycare->offspringPersonality;
     CreateMon(mon, species, EGG_HATCH_LEVEL, 32, TRUE, personality, OT_ID_PLAYER_ID, 0);
     metLevel = 0;
-    ball = ITEM_POKE_BALL;
+    ball = GetBoxMonData(&daycare->mons[parent].mon, MON_DATA_POKEBALL);
+    //ball = ITEM_BRONZE_POUCH;
     language = LANGUAGE_JAPANESE;
     SetMonData(mon, MON_DATA_POKEBALL, &ball);
     SetMonData(mon, MON_DATA_NICKNAME, sJapaneseEggNickname);
@@ -1241,9 +1260,9 @@ static u8 GetDaycareCompatibilityScore(struct DayCare *daycare)
     if (eggGroups[0][0] == EGG_GROUP_DITTO || eggGroups[1][0] == EGG_GROUP_DITTO)
     {
         if (trainerIds[0] == trainerIds[1])
-            return PARENTS_LOW_COMPATIBILITY;
+            return PARENTS_MED_COMPATABILITY;
 
-        return PARENTS_MED_COMPATABILITY;
+        return PARENTS_MAX_COMPATABILITY;
     }
     // neither parent is Ditto
     else

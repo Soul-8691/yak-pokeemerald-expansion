@@ -1,5 +1,10 @@
 Route4_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route4_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+Route4_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	goto TryMoveDaycareMan
+	return
 
 
 MuggerBattleRoute4::
@@ -26,6 +31,16 @@ FarmerBattleRoute4::
 Route4Sign::
 	msgbox Route4Sign_Text_0, MSGBOX_SIGN
 	release
+	return
+
+
+TryMoveDaycareMan::
+	goto_if_set FLAG_PENDING_DAYCARE_EGG, TryMoveDaycareMan_1
+	setobjectxyperm 1, 19, 8
+	return
+
+TryMoveDaycareMan_1:
+	setobjectxyperm 1, 17, 17
 	return
 
 

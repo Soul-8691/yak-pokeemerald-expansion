@@ -1,5 +1,7 @@
 mapscripts Route4_MapScripts {
-    
+    MAP_SCRIPT_ON_TRANSITION{
+        goto (TryMoveDaycareMan)
+    }
 }
 
 script MuggerBattleRoute4{
@@ -23,4 +25,13 @@ script FarmerBattleRoute4{
 script Route4Sign{
     msgbox("Potterington Farm", MSGBOX_SIGN)
     release
+}
+
+script TryMoveDaycareMan{
+    if (flag(FLAG_PENDING_DAYCARE_EGG)){
+        setobjectxyperm(1,17,17)
+    }
+    else{
+        setobjectxyperm(1,19,8)
+    }
 }

@@ -637,7 +637,8 @@
     "Route119_House"
   ],
   "gMapGroup33": [
-    "Route124_DivingTreasureHuntersHouse"
+    "Route124_DivingTreasureHuntersHouse",
+    "Pokescape_Battle_Tower_Battle_Room"
   ],
   "gMapGroup34": [
     "Tutorial_Island",
@@ -737,7 +738,8 @@
     "Lumbridge_Castle_1",
     "Lumbridge_Castle_2",
     "Lumbridge_Castle_3",
-    "Lumbridge_Castle_4"
+    "Lumbridge_Castle_4",
+    "Potterington_Farm_Interior"
   ],
   "gMapGroup39": [
 

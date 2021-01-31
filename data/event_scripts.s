@@ -1276,3 +1276,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Varrock_Bank_West_B1F/scripts.inc"
 
 	.include "data/maps/Dwarven_Mine_B1F/scripts.inc"
+
+	.include "data/maps/Potterington_Farm_Interior/scripts.inc"
+
+	.include "data/maps/Pokescape_Battle_Tower_Battle_Room/scripts.inc"

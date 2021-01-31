@@ -5530,6 +5530,26 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Dwarven_Mine_B1F/border.bin",
       "blockdata_filepath": "data/layouts/Dwarven_Mine_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_POTTERINGTON_FARM_INTERIOR",
+      "name": "Potterington_Farm_Interior_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Potterington_Farm_Interior/border.bin",
+      "blockdata_filepath": "data/layouts/Potterington_Farm_Interior/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKESCAPE_BATTLE_TOWER_BATTLE_ROOM",
+      "name": "Pokescape_Battle_Tower_Battle_Room_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Pokescape_Battle_Tower_Battle_Room/border.bin",
+      "blockdata_filepath": "data/layouts/Pokescape_Battle_Tower_Battle_Room/map.bin"
     }
   ]
 }

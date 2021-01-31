@@ -590,6 +590,7 @@
 
 // Map Group 33
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
+#define MAP_POKESCAPE_BATTLE_TOWER_BATTLE_ROOM     (1 | (33 << 8))
 
 // Map Group 34
 #define MAP_TUTORIAL_ISLAND   (0 | (34 << 8))
@@ -690,6 +691,7 @@
 #define MAP_LUMBRIDGE_CASTLE_2         (14 | (38 << 8))
 #define MAP_LUMBRIDGE_CASTLE_3         (15 | (38 << 8))
 #define MAP_LUMBRIDGE_CASTLE_4         (16 | (38 << 8))
+#define MAP_POTTERINGTON_FARM_INTERIOR (17 | (38 << 8))
 
 // Map Group 39
 

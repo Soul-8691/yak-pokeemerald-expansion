@@ -9525,3 +9525,10 @@ void MaxSpeedIV (void){
     CalculateMonStats(&gPlayerParty[GetLeadMonIndex()]);
     return;
 }
+
+void MinSpeedIV(void){
+    u8 iv = 0;
+    SetMonData(&gPlayerParty[GetLeadMonIndex()],MON_DATA_SPEED_IV, &iv);
+    CalculateMonStats(&gPlayerParty[GetLeadMonIndex()]);
+    return;
+}

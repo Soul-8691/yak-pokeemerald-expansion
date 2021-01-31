@@ -541,3 +541,4 @@ gSpecials:: @ 81DBA64
 	def_special MaxSpAtkIV
 	def_special MaxSpDefIV
 	def_special MaxSpeedIV
+	def_special MinSpeedIV

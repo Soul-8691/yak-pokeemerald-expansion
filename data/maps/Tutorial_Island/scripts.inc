@@ -96,6 +96,17 @@ Tutorial_ReturnToPond:
 	walk_right
 	step_end
 
+
+DoTutorialBattle::
+	lock
+	special SavePlayerParty
+	special PutZigzagoonInPlayerParty
+	special StartWallyTutorialBattle
+	waitstate
+	special LoadPlayerParty
+	release
+	return
+
 Tutorial_Jogger_Text_0:
 	.string "cupholder$"
 

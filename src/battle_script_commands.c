@@ -11840,13 +11840,13 @@ static void Cmd_handleballthrow(void)
 			if 
 			(
 				gBattleMons[gBattlerTarget].species == SPECIES_IMP ||
-				gBattleMons[gBattlerTarget].species == SPECIES_DEMON_LESSER_NORMAL_FORM ||
-				gBattleMons[gBattlerTarget].species == SPECIES_DEMON_GREATER_NORMAL_FORM ||
-				gBattleMons[gBattlerTarget].species == SPECIES_KALGERION ||
+				gBattleMons[gBattlerTarget].species == SPECIES_DEMON_LESSER_OSRS_FORM ||
+				gBattleMons[gBattlerTarget].species == SPECIES_DEMON_GREATER_RS3_FORM ||
+				gBattleMons[gBattlerTarget].species == SPECIES_DEMON_KALGERION_FORM ||
 				gBattleMons[gBattlerTarget].species == SPECIES_SNOW_IMP ||
 				gBattleMons[gBattlerTarget].species == SPECIES_DEMON_LESSER_TONGUE_FORM ||
 				gBattleMons[gBattlerTarget].species == SPECIES_DEMON_GREATER_BLACK_FORM ||
-				gBattleMons[gBattlerTarget].species == SPECIES_DEMON_ICE_FORM ||
+				gBattleMons[gBattlerTarget].species == SPECIES_DEMON_ICE_RS3_FORM ||
 				gBattleMons[gBattlerTarget].species == SPECIES_DEMON_JUNGLE_FORM ||
 				gBattleMons[gBattlerTarget].species == SPECIES_DEMON_RIPPER_FORM ||
 				gBattleMons[gBattlerTarget].species == SPECIES_DELRITH ||

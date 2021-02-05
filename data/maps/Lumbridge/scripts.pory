@@ -1,4 +1,6 @@
-mapscripts Lumbridge_MapScripts{}
+mapscripts Lumbridge_MapScripts{
+	MAP_SCRIPT_ON_FRAME_TABLE: BattleFrontier_BattleTowerLobby_OnFrame
+}
 
 script Kevin {
 	lock
@@ -87,6 +89,53 @@ script HappyBirthday{
 	msgbox(format("I hope you like it as much as I do!"))
 	release
 	
+}
+
+script MaxIvs{
+	lock
+	faceplayer
+	bufferleadmonspeciesname (0)
+	msgbox("Would you like to max {STR_VAR_1}'s IVs?", MSGBOX_YESNO)
+	if (var(VAR_RESULT)){
+		msgbox("Would you like 0 speed IVs?",MSGBOX_YESNO)
+		if (var(VAR_RESULT)){
+			special (MaxHpIV)
+			special (MaxAtkIV)
+			special (MaxDefIV)
+			special (MaxSpAtkIV)
+			special (MaxSpDefIV)
+			special (MinSpeedIV)
+			msgbox("Enjoy your IVs!")
+		}
+		else{
+			special (MaxHpIV)
+			special (MaxAtkIV)
+			special (MaxDefIV)
+			special (MaxSpAtkIV)
+			special (MaxSpDefIV)
+			special (MaxSpeedIV)
+			msgbox("Enjoy your IVs!")
+		}
+	}
+	else{
+		msgbox("Maybe another time then..")
+	}
+	release
+}
+
+script ChangeAbilityScript{
+	lock
+	faceplayer
+	bufferleadmonspeciesname(0)
+	msgbox("Would you like to change \n{STR_VAR_1}'s Ability?", MSGBOX_YESNO)
+	if (var(VAR_RESULT)){
+		special(ChangeAbility)
+		msgbox("Ability changed!")
+	}
+	else{
+		msgbox("Maybe another time then?")
+	}	
+	release
 }
 
 script GuardBlockRightRoute1{

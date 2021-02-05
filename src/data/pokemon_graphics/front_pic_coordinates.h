@@ -2962,7 +2962,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 1,
 	},
-	[SPECIES_SCORPION_CORRUPT_FORM] =
+	[SPECIES_SCORPION_CORRUPTED_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 1,
@@ -2972,12 +2972,12 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 5,
 	},
-	[SPECIES_SCORPION_CRYSTAL_FORM] =
+	[SPECIES_SCORPION_GAUNTLET_CRYSTALLINE_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 4,
 	},
-	[SPECIES_SCORPION_CORRUPT_CRYSTAL_FORM] =
+	[SPECIES_SCORPION_GAUNTLET_CORRUPTED_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 4,
@@ -3237,17 +3237,17 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 10,
 	},
-	[SPECIES_DEMON_LESSER_NORMAL_FORM] =
+	[SPECIES_DEMON_LESSER_OSRS_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 6,
 	},
-	[SPECIES_DEMON_GREATER_NORMAL_FORM] =
+	[SPECIES_DEMON_GREATER_RS3_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 3,
 	},
-	[SPECIES_KALGERION] =
+	[SPECIES_DEMON_KALGERION_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
@@ -3302,7 +3302,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 1,
 	},
-	[SPECIES_DEMON_ICE_FORM] =
+	[SPECIES_DEMON_ICE_RS3_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 1,
@@ -4027,27 +4027,27 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 11,
 	},
-	[SPECIES_CRABLET_TIER0_FORM] =
+	[SPECIES_CRABLET_FIRST_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_CRABLET_TIER1_FORM] =
+	[SPECIES_CRABLET_SECOND_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_CRABLET_TIER2_FORM] =
+	[SPECIES_CRABLET_THIRD_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_CRABLET_TIER3_FORM] =
+	[SPECIES_CRABLET_FORTH_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_CRABLET_TIER4_FORM] =
+	[SPECIES_CRABLET_FIFTH_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 0,
@@ -4467,7 +4467,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 4,
 	},
-	[SPECIES_BEAR_CRYSTAL_FORM] =
+	[SPECIES_BEAR_GAUNTLET_CRYSTALLINE_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 4,
@@ -4507,7 +4507,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_BEAR_CORRUPTED_FORM] =
+	[SPECIES_BEAR_GAUNTLET_CORRUPTED_FORM] =
 	{
 		.size = 0x0,
 		.y_offset = 3,
@@ -5173,7 +5173,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.y_offset = 17,
 	},
 	
-	/*[SPECIES_BALANCEELE] =
+	[SPECIES_BALANCEELE] =
 	{
 		.size = 0x0,
 		.y_offset = 1,
@@ -5198,7 +5198,507 @@ const struct MonCoords gMonFrontPicCoords[] =
 	
 	},
 	
-	*/
+	[SPECIES_KALPHITE_LARVA_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_KALPHITE_SPIRIT_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_KALPHITE_QUEEN_MEGA_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_KALPHITE_PARAGON_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_KALPHITE_CORRUPTED_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_KALPHITE_MARAUDER_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_KALPHITE_DUNG_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_KALPHITE_REANIMATED_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_ABYSSAL_DEMON_REANIMATED_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BAT_GAUNTLET_CORRUPTED_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BAT_GAUNTLET_CRYSTALLINE_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BLOODVELD_REANIMATED_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DARK_BEAST_GAUNTLET_CORRUPTED_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DARK_BEAST_GAUNTLET_CRYSTALLINE_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DARK_BEAST_PUP_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DARK_BEAST_NORMAL_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DARK_BEAST_SOTETSEG_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_EXPERIMENT_4_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_EXPERIMENT_5_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_GANODERMIC_BEAST] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_GRIFOLAPINE] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_GRIFOLAROO] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_SPORAXE] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_HEADLESS_BEAST] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BEHEMOTH_NORMAL_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BEHEMOTH_ADOLSCENT_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_SIEGE_BEAST] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BULWARK_BEAST] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BEHEMOTH_GLUTTONOUS_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BEHEMOTH_RUNEBOUND_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_STOMP] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_HOPE_DEVOURER] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_KARAMTHULU_OVERLORD] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_LIGHT_CREATURE] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_MINOTAUR_REANIMATED_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_MONKEY_REANIMATED_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_RAT_GAUNTLET_CORRUPTED_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_RAT_GAUNTLET_CRYSTALLINE_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_RAT_FUNGAL_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_SPARKY] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_SPIDER_CORPSE_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_SPIDER_FEVER_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_SPIDER_LAVA_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_SPIDER_SHADOW_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_STALKER] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_SOULSEEKER] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_STALKER_SENTINEL_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_NIGHT_GAZER] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_PLANE_FREEZER] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_WORLD_GORGER] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_FLESH_MONGER] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_SHADOW_FORGER] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_VEIL_RIPPER] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_UNICORN_GAUNTLET_CORRUPTED_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_UNICORN_GAUNTLET_CRYSTALLINE_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_WOLF_CAVE_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_WOLF_DRAGON_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_SHADOW_HOUND] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BORDER_COLLIE] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BLOODHOUND] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_GUARD_DOG] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_LYCURGUS] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_YAK_MOORRISSEY_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_YAK_ROBIN_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_YAK_YAKTRICK_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_CABBAGE_SISTER_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_CABBAGE_CRISPY_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_STRYKEWYRM_MINI_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_CROCODILE_NORMAL_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_CROCODILE_MUTADILE_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_CROCODILE_ANKH_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_CROCODILE_UKUNDUKA_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BLOODVELD_INSATIABLE_MUTATED_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BLOODVELD_ACIDIC_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BLOODVELD_VAMPIRIC_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BLOODVELD_RS3_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_BEAVER] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_GIANT_BEAVER] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_RACOON] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_RALPH] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_ROCKY] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_HONEY_BADGER] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_SQUIRREL_GIANT_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_SQUIRREL_AUSTRALIAN_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_JADE_VINE] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_KLIK] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_JACKALOPE] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DEMON_THUNDEREOUS_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DEMON_GREATER_OSRS_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DEMON_TSTANON_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DEMON_GREATER_TONGUE_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DEMON_ZAKLN_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DEMON_PUMMELER_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DEMON_CHOCOLATE_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DEMON_LESSER_BLACK_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DEMON_RIFTSPLITTER_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+
+	[SPECIES_DEMON_ICE_OSRS_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DEMON_BLOODCHILLER_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_DEMON_REANIMATED_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_KRIL_TSUTSAROTH] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
 	//POKESCAPE END	
 	
     [SPECIES_EGG] =

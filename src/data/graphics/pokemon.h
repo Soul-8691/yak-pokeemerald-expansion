@@ -3973,12 +3973,12 @@ const u32 gMonShinyPalette_Scorpion_Grave_Form[] = INCBIN_U32("graphics/pokescap
 const u8 gMonIcon_Scorpion_Grave_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Grave_Form/icon.4bpp");
 const u8 gMonFootprint_Scorpion_Grave_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Grave_Form/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Scorpion_Corrupt_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Corrupt_Form/front.4bpp.lz");
-const u32 gMonPalette_Scorpion_Corrupt_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Corrupt_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Scorpion_Corrupt_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Corrupt_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Scorpion_Corrupt_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Corrupt_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Scorpion_Corrupt_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Corrupt_Form/icon.4bpp");
-const u8 gMonFootprint_Scorpion_Corrupt_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Corrupt_Form/footprint.1bpp");
+const u32 gMonStillFrontPic_Scorpion_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Corrupted_Form/front.4bpp.lz");
+const u32 gMonPalette_Scorpion_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Corrupted_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Scorpion_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Corrupted_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Scorpion_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Corrupted_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Scorpion_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Corrupted_Form/icon.4bpp");
+const u8 gMonFootprint_Scorpion_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Corrupted_Form/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Scorpion_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Reanimated_Form/front.4bpp.lz");
 const u32 gMonPalette_Scorpion_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Reanimated_Form/normal.gbapal.lz");
@@ -3987,19 +3987,19 @@ const u32 gMonShinyPalette_Scorpion_Reanimated_Form[] = INCBIN_U32("graphics/pok
 const u8 gMonIcon_Scorpion_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Reanimated_Form/icon.4bpp");
 const u8 gMonFootprint_Scorpion_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Reanimated_Form/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Scorpion_Crystal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Crystal_Form/front.4bpp.lz");
-const u32 gMonPalette_Scorpion_Crystal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Crystal_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Scorpion_Crystal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Crystal_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Scorpion_Crystal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Crystal_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Scorpion_Crystal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Crystal_Form/icon.4bpp");
-const u8 gMonFootprint_Scorpion_Crystal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Crystal_Form/footprint.1bpp");
+const u32 gMonStillFrontPic_Scorpion_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Gauntlet_Crystalline_Form/front.4bpp.lz");
+const u32 gMonPalette_Scorpion_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Gauntlet_Crystalline_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Scorpion_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Gauntlet_Crystalline_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Scorpion_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Gauntlet_Crystalline_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Scorpion_Gauntlet_Crystalline_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Gauntlet_Crystalline_Form/icon.4bpp");
+const u8 gMonFootprint_Scorpion_Gauntlet_Crystalline_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Gauntlet_Crystalline_Form/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Scorpion_Corrupt_Crystal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Corrupt_Crystal_Form/front.4bpp.lz");
-const u32 gMonPalette_Scorpion_Corrupt_Crystal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Corrupt_Crystal_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Scorpion_Corrupt_Crystal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Corrupt_Crystal_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Scorpion_Corrupt_Crystal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Corrupt_Crystal_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Scorpion_Corrupt_Crystal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Corrupt_Crystal_Form/icon.4bpp");
-const u8 gMonFootprint_Scorpion_Corrupt_Crystal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Corrupt_Crystal_Form/footprint.1bpp");
+const u32 gMonStillFrontPic_Scorpion_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Gauntlet_Corrupted_Form/front.4bpp.lz");
+const u32 gMonPalette_Scorpion_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Gauntlet_Corrupted_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Scorpion_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Gauntlet_Corrupted_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Scorpion_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Gauntlet_Corrupted_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Scorpion_Gauntlet_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Gauntlet_Corrupted_Form/icon.4bpp");
+const u8 gMonFootprint_Scorpion_Gauntlet_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Scorpion_Gauntlet_Corrupted_Form/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Scorpion_Khazard_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Khazard_Form/front.4bpp.lz");
 const u32 gMonPalette_Scorpion_Khazard_Form[] = INCBIN_U32("graphics/pokescape_monsters/Scorpion_Khazard_Form/normal.gbapal.lz");
@@ -4351,167 +4351,6 @@ const u32 gMonShinyPalette_Deathwing[] = INCBIN_U32("graphics/pokescape_monsters
 const u8 gMonIcon_Deathwing[] = INCBIN_U8("graphics/pokescape_monsters/Deathwing/icon.4bpp");
 const u8 gMonFootprint_Deathwing[] = INCBIN_U8("graphics/pokescape_monsters/Deathwing/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Imp/front.4bpp.lz");
-const u32 gMonPalette_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Imp/normal.gbapal.lz");
-const u32 gMonBackPic_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Imp/back.4bpp.lz");
-const u32 gMonShinyPalette_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Imp/shiny.gbapal.lz");
-const u8 gMonIcon_Imp[] = INCBIN_U8("graphics/pokescape_monsters/Imp/icon.4bpp");
-const u8 gMonFootprint_Imp[] = INCBIN_U8("graphics/pokescape_monsters/Imp/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Demon_Lesser_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Normal_Form/front.4bpp.lz");
-const u32 gMonPalette_Demon_Lesser_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Normal_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Demon_Lesser_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Normal_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Demon_Lesser_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Normal_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Demon_Lesser_Normal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Lesser_Normal_Form/icon.4bpp");
-const u8 gMonFootprint_Demon_Lesser_Normal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Lesser_Normal_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Demon_Greater_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Normal_Form/front.4bpp.lz");
-const u32 gMonPalette_Demon_Greater_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Normal_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Demon_Greater_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Normal_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Demon_Greater_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Normal_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Demon_Greater_Normal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Greater_Normal_Form/icon.4bpp");
-const u8 gMonFootprint_Demon_Greater_Normal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Greater_Normal_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Kalgerion[] = INCBIN_U32("graphics/pokescape_monsters/Kalgerion/front.4bpp.lz");
-const u32 gMonPalette_Kalgerion[] = INCBIN_U32("graphics/pokescape_monsters/Kalgerion/normal.gbapal.lz");
-const u32 gMonBackPic_Kalgerion[] = INCBIN_U32("graphics/pokescape_monsters/Kalgerion/back.4bpp.lz");
-const u32 gMonShinyPalette_Kalgerion[] = INCBIN_U32("graphics/pokescape_monsters/Kalgerion/shiny.gbapal.lz");
-const u8 gMonIcon_Kalgerion[] = INCBIN_U8("graphics/pokescape_monsters/Kalgerion/icon.4bpp");
-const u8 gMonFootprint_Kalgerion[] = INCBIN_U8("graphics/pokescape_monsters/Kalgerion/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Demon_Tormented_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Tormented_Form/front.4bpp.lz");
-const u32 gMonPalette_Demon_Tormented_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Tormented_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Demon_Tormented_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Tormented_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Demon_Tormented_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Tormented_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Demon_Tormented_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Tormented_Form/icon.4bpp");
-const u8 gMonFootprint_Demon_Tormented_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Tormented_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Pyrefiend[] = INCBIN_U32("graphics/pokescape_monsters/Pyrefiend/front.4bpp.lz");
-const u32 gMonPalette_Pyrefiend[] = INCBIN_U32("graphics/pokescape_monsters/Pyrefiend/normal.gbapal.lz");
-const u32 gMonBackPic_Pyrefiend[] = INCBIN_U32("graphics/pokescape_monsters/Pyrefiend/back.4bpp.lz");
-const u32 gMonShinyPalette_Pyrefiend[] = INCBIN_U32("graphics/pokescape_monsters/Pyrefiend/shiny.gbapal.lz");
-const u8 gMonIcon_Pyrefiend[] = INCBIN_U8("graphics/pokescape_monsters/Pyrefiend/icon.4bpp");
-const u8 gMonFootprint_Pyrefiend[] = INCBIN_U8("graphics/pokescape_monsters/Pyrefiend/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Pyrelord[] = INCBIN_U32("graphics/pokescape_monsters/Pyrelord/front.4bpp.lz");
-const u32 gMonPalette_Pyrelord[] = INCBIN_U32("graphics/pokescape_monsters/Pyrelord/normal.gbapal.lz");
-const u32 gMonBackPic_Pyrelord[] = INCBIN_U32("graphics/pokescape_monsters/Pyrelord/back.4bpp.lz");
-const u32 gMonShinyPalette_Pyrelord[] = INCBIN_U32("graphics/pokescape_monsters/Pyrelord/shiny.gbapal.lz");
-const u8 gMonIcon_Pyrelord[] = INCBIN_U8("graphics/pokescape_monsters/Pyrelord/icon.4bpp");
-const u8 gMonFootprint_Pyrelord[] = INCBIN_U8("graphics/pokescape_monsters/Pyrelord/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Waterfiend[] = INCBIN_U32("graphics/pokescape_monsters/Waterfiend/front.4bpp.lz");
-const u32 gMonPalette_Waterfiend[] = INCBIN_U32("graphics/pokescape_monsters/Waterfiend/normal.gbapal.lz");
-const u32 gMonBackPic_Waterfiend[] = INCBIN_U32("graphics/pokescape_monsters/Waterfiend/back.4bpp.lz");
-const u32 gMonShinyPalette_Waterfiend[] = INCBIN_U32("graphics/pokescape_monsters/Waterfiend/shiny.gbapal.lz");
-const u8 gMonIcon_Waterfiend[] = INCBIN_U8("graphics/pokescape_monsters/Waterfiend/icon.4bpp");
-const u8 gMonFootprint_Waterfiend[] = INCBIN_U8("graphics/pokescape_monsters/Waterfiend/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Waterlord[] = INCBIN_U32("graphics/pokescape_monsters/Waterlord/front.4bpp.lz");
-const u32 gMonPalette_Waterlord[] = INCBIN_U32("graphics/pokescape_monsters/Waterlord/normal.gbapal.lz");
-const u32 gMonBackPic_Waterlord[] = INCBIN_U32("graphics/pokescape_monsters/Waterlord/back.4bpp.lz");
-const u32 gMonShinyPalette_Waterlord[] = INCBIN_U32("graphics/pokescape_monsters/Waterlord/shiny.gbapal.lz");
-const u8 gMonIcon_Waterlord[] = INCBIN_U8("graphics/pokescape_monsters/Waterlord/icon.4bpp");
-const u8 gMonFootprint_Waterlord[] = INCBIN_U8("graphics/pokescape_monsters/Waterlord/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Icefiend[] = INCBIN_U32("graphics/pokescape_monsters/Icefiend/front.4bpp.lz");
-const u32 gMonPalette_Icefiend[] = INCBIN_U32("graphics/pokescape_monsters/Icefiend/normal.gbapal.lz");
-const u32 gMonBackPic_Icefiend[] = INCBIN_U32("graphics/pokescape_monsters/Icefiend/back.4bpp.lz");
-const u32 gMonShinyPalette_Icefiend[] = INCBIN_U32("graphics/pokescape_monsters/Icefiend/shiny.gbapal.lz");
-const u8 gMonIcon_Icefiend[] = INCBIN_U8("graphics/pokescape_monsters/Icefiend/icon.4bpp");
-const u8 gMonFootprint_Icefiend[] = INCBIN_U8("graphics/pokescape_monsters/Icefiend/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Icelord[] = INCBIN_U32("graphics/pokescape_monsters/Icelord/front.4bpp.lz");
-const u32 gMonPalette_Icelord[] = INCBIN_U32("graphics/pokescape_monsters/Icelord/normal.gbapal.lz");
-const u32 gMonBackPic_Icelord[] = INCBIN_U32("graphics/pokescape_monsters/Icelord/back.4bpp.lz");
-const u32 gMonShinyPalette_Icelord[] = INCBIN_U32("graphics/pokescape_monsters/Icelord/shiny.gbapal.lz");
-const u8 gMonIcon_Icelord[] = INCBIN_U8("graphics/pokescape_monsters/Icelord/icon.4bpp");
-const u8 gMonFootprint_Icelord[] = INCBIN_U8("graphics/pokescape_monsters/Icelord/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Snow_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Snow_Imp/front.4bpp.lz");
-const u32 gMonPalette_Snow_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Snow_Imp/normal.gbapal.lz");
-const u32 gMonBackPic_Snow_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Snow_Imp/back.4bpp.lz");
-const u32 gMonShinyPalette_Snow_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Snow_Imp/shiny.gbapal.lz");
-const u8 gMonIcon_Snow_Imp[] = INCBIN_U8("graphics/pokescape_monsters/Snow_Imp/icon.4bpp");
-const u8 gMonFootprint_Snow_Imp[] = INCBIN_U8("graphics/pokescape_monsters/Snow_Imp/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Demon_Lesser_Tongue_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Tongue_Form/front.4bpp.lz");
-const u32 gMonPalette_Demon_Lesser_Tongue_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Tongue_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Demon_Lesser_Tongue_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Tongue_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Demon_Lesser_Tongue_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Tongue_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Demon_Lesser_Tongue_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Lesser_Tongue_Form/icon.4bpp");
-const u8 gMonFootprint_Demon_Lesser_Tongue_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Lesser_Tongue_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Demon_Greater_Black_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Black_Form/front.4bpp.lz");
-const u32 gMonPalette_Demon_Greater_Black_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Black_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Demon_Greater_Black_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Black_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Demon_Greater_Black_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Black_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Demon_Greater_Black_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Greater_Black_Form/icon.4bpp");
-const u8 gMonFootprint_Demon_Greater_Black_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Greater_Black_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Demon_Ice_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ice_Form/front.4bpp.lz");
-const u32 gMonPalette_Demon_Ice_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ice_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Demon_Ice_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ice_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Demon_Ice_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ice_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Demon_Ice_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Ice_Form/icon.4bpp");
-const u8 gMonFootprint_Demon_Ice_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Ice_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Demon_Jungle_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Jungle_Form/front.4bpp.lz");
-const u32 gMonPalette_Demon_Jungle_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Jungle_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Demon_Jungle_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Jungle_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Demon_Jungle_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Jungle_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Demon_Jungle_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Jungle_Form/icon.4bpp");
-const u8 gMonFootprint_Demon_Jungle_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Jungle_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Demon_Ripper_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ripper_Form/front.4bpp.lz");
-const u32 gMonPalette_Demon_Ripper_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ripper_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Demon_Ripper_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ripper_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Demon_Ripper_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ripper_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Demon_Ripper_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Ripper_Form/icon.4bpp");
-const u8 gMonFootprint_Demon_Ripper_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Ripper_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Delrith[] = INCBIN_U32("graphics/pokescape_monsters/Delrith/front.4bpp.lz");
-const u32 gMonPalette_Delrith[] = INCBIN_U32("graphics/pokescape_monsters/Delrith/normal.gbapal.lz");
-const u32 gMonBackPic_Delrith[] = INCBIN_U32("graphics/pokescape_monsters/Delrith/back.4bpp.lz");
-const u32 gMonShinyPalette_Delrith[] = INCBIN_U32("graphics/pokescape_monsters/Delrith/shiny.gbapal.lz");
-const u8 gMonIcon_Delrith[] = INCBIN_U8("graphics/pokescape_monsters/Delrith/icon.4bpp");
-const u8 gMonFootprint_Delrith[] = INCBIN_U8("graphics/pokescape_monsters/Delrith/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Impling_Baby_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Baby_Form/front.4bpp.lz");
-const u32 gMonPalette_Impling_Baby_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Baby_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Impling_Baby_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Baby_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Impling_Baby_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Baby_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Impling_Baby_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Baby_Form/icon.4bpp");
-const u8 gMonFootprint_Impling_Baby_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Baby_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Impling_Magpie_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Magpie_Form/front.4bpp.lz");
-const u32 gMonPalette_Impling_Magpie_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Magpie_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Impling_Magpie_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Magpie_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Impling_Magpie_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Magpie_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Impling_Magpie_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Magpie_Form/icon.4bpp");
-const u8 gMonFootprint_Impling_Magpie_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Magpie_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Impling_Dragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Dragon_Form/front.4bpp.lz");
-const u32 gMonPalette_Impling_Dragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Dragon_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Impling_Dragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Dragon_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Impling_Dragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Dragon_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Impling_Dragon_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Dragon_Form/icon.4bpp");
-const u8 gMonFootprint_Impling_Dragon_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Dragon_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Impling_Kingly_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Kingly_Form/front.4bpp.lz");
-const u32 gMonPalette_Impling_Kingly_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Kingly_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Impling_Kingly_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Kingly_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Impling_Kingly_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Kingly_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Impling_Kingly_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Kingly_Form/icon.4bpp");
-const u8 gMonFootprint_Impling_Kingly_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Kingly_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Impling_Lucky_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Lucky_Form/front.4bpp.lz");
-const u32 gMonPalette_Impling_Lucky_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Lucky_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Impling_Lucky_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Lucky_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Impling_Lucky_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Lucky_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Impling_Lucky_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Lucky_Form/icon.4bpp");
-const u8 gMonFootprint_Impling_Lucky_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Lucky_Form/footprint.1bpp");
-
 const u32 gMonStillFrontPic_Shaikah[] = INCBIN_U32("graphics/pokescape_monsters/Shaikah/front.4bpp.lz");
 const u32 gMonPalette_Shaikah[] = INCBIN_U32("graphics/pokescape_monsters/Shaikah/normal.gbapal.lz");
 const u32 gMonBackPic_Shaikah[] = INCBIN_U32("graphics/pokescape_monsters/Shaikah/back.4bpp.lz");
@@ -4728,41 +4567,6 @@ const u32 gMonBackPic_Sproutling_Autumn_Form[] = INCBIN_U32("graphics/pokescape_
 const u32 gMonShinyPalette_Sproutling_Autumn_Form[] = INCBIN_U32("graphics/pokescape_monsters/Sproutling_Autumn_Form/shiny.gbapal.lz");
 const u8 gMonIcon_Sproutling_Autumn_Form[] = INCBIN_U8("graphics/pokescape_monsters/Sproutling_Autumn_Form/icon.4bpp");
 const u8 gMonFootprint_Sproutling_Autumn_Form[] = INCBIN_U8("graphics/pokescape_monsters/Sproutling_Autumn_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Kalphite_Worker_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Worker_Form/front.4bpp.lz");
-const u32 gMonPalette_Kalphite_Worker_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Worker_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Kalphite_Worker_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Worker_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Kalphite_Worker_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Worker_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Kalphite_Worker_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Worker_Form/icon.4bpp");
-const u8 gMonFootprint_Kalphite_Worker_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Worker_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Kalphite_Soldier_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Soldier_Form/front.4bpp.lz");
-const u32 gMonPalette_Kalphite_Soldier_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Soldier_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Kalphite_Soldier_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Soldier_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Kalphite_Soldier_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Soldier_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Kalphite_Soldier_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Soldier_Form/icon.4bpp");
-const u8 gMonFootprint_Kalphite_Soldier_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Soldier_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Kalphite_Guardian_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Guardian_Form/front.4bpp.lz");
-const u32 gMonPalette_Kalphite_Guardian_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Guardian_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Kalphite_Guardian_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Guardian_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Kalphite_Guardian_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Guardian_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Kalphite_Guardian_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Guardian_Form/icon.4bpp");
-const u8 gMonFootprint_Kalphite_Guardian_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Guardian_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Kalphite_Queen_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Queen_Form/front.4bpp.lz");
-const u32 gMonPalette_Kalphite_Queen_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Queen_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Kalphite_Queen_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Queen_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Kalphite_Queen_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Queen_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Kalphite_Queen_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Queen_Form/icon.4bpp");
-const u8 gMonFootprint_Kalphite_Queen_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Queen_Form/footprint.1bpp");
-
-const u32 gMonStillFrontPic_Kalphite_King_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_King_Form/front.4bpp.lz");
-const u32 gMonPalette_Kalphite_King_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_King_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Kalphite_King_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_King_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Kalphite_King_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_King_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Kalphite_King_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_King_Form/icon.4bpp");
-const u8 gMonFootprint_Kalphite_King_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_King_Form/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Rue[] = INCBIN_U32("graphics/pokescape_monsters/Rue/front.4bpp.lz");
 const u32 gMonPalette_Rue[] = INCBIN_U32("graphics/pokescape_monsters/Rue/normal.gbapal.lz");
@@ -5464,40 +5268,40 @@ const u32 gMonShinyPalette_Blue_Crab[] = INCBIN_U32("graphics/pokescape_monsters
 const u8 gMonIcon_Blue_Crab[] = INCBIN_U8("graphics/pokescape_monsters/Blue_Crab/icon.4bpp");
 const u8 gMonFootprint_Blue_Crab[] = INCBIN_U8("graphics/pokescape_monsters/Blue_Crab/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Crablet_Tier0_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier0_Form/front.4bpp.lz");
-const u32 gMonPalette_Crablet_Tier0_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier0_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Crablet_Tier0_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier0_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Crablet_Tier0_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier0_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Crablet_Tier0_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Tier0_Form/icon.4bpp");
-const u8 gMonFootprint_Crablet_Tier0_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Tier0_Form/footprint.1bpp");
+const u32 gMonStillFrontPic_Crablet_First_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_First_Form/front.4bpp.lz");
+const u32 gMonPalette_Crablet_First_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_First_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Crablet_First_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_First_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Crablet_First_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_First_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Crablet_First_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_First_Form/icon.4bpp");
+const u8 gMonFootprint_Crablet_First_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_First_Form/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Crablet_Tier1_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier1_Form/front.4bpp.lz");
-const u32 gMonPalette_Crablet_Tier1_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier1_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Crablet_Tier1_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier1_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Crablet_Tier1_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier1_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Crablet_Tier1_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Tier1_Form/icon.4bpp");
-const u8 gMonFootprint_Crablet_Tier1_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Tier1_Form/footprint.1bpp");
+const u32 gMonStillFrontPic_Crablet_Second_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Second_Form/front.4bpp.lz");
+const u32 gMonPalette_Crablet_Second_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Second_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Crablet_Second_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Second_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Crablet_Second_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Second_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Crablet_Second_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Second_Form/icon.4bpp");
+const u8 gMonFootprint_Crablet_Second_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Second_Form/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Crablet_Tier2_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier2_Form/front.4bpp.lz");
-const u32 gMonPalette_Crablet_Tier2_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier2_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Crablet_Tier2_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier2_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Crablet_Tier2_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier2_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Crablet_Tier2_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Tier2_Form/icon.4bpp");
-const u8 gMonFootprint_Crablet_Tier2_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Tier2_Form/footprint.1bpp");
+const u32 gMonStillFrontPic_Crablet_Third_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Third_Form/front.4bpp.lz");
+const u32 gMonPalette_Crablet_Third_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Third_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Crablet_Third_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Third_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Crablet_Third_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Third_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Crablet_Third_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Third_Form/icon.4bpp");
+const u8 gMonFootprint_Crablet_Third_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Third_Form/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Crablet_Tier3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier3_Form/front.4bpp.lz");
-const u32 gMonPalette_Crablet_Tier3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier3_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Crablet_Tier3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier3_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Crablet_Tier3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier3_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Crablet_Tier3_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Tier3_Form/icon.4bpp");
-const u8 gMonFootprint_Crablet_Tier3_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Tier3_Form/footprint.1bpp");
+const u32 gMonStillFrontPic_Crablet_Forth_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Forth_Form/front.4bpp.lz");
+const u32 gMonPalette_Crablet_Forth_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Forth_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Crablet_Forth_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Forth_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Crablet_Forth_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Forth_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Crablet_Forth_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Forth_Form/icon.4bpp");
+const u8 gMonFootprint_Crablet_Forth_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Forth_Form/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Crablet_Tier4_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier4_Form/front.4bpp.lz");
-const u32 gMonPalette_Crablet_Tier4_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier4_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Crablet_Tier4_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier4_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Crablet_Tier4_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Tier4_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Crablet_Tier4_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Tier4_Form/icon.4bpp");
-const u8 gMonFootprint_Crablet_Tier4_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Tier4_Form/footprint.1bpp");
+const u32 gMonStillFrontPic_Crablet_Fifth_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Fifth_Form/front.4bpp.lz");
+const u32 gMonPalette_Crablet_Fifth_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Fifth_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Crablet_Fifth_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Fifth_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Crablet_Fifth_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crablet_Fifth_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Crablet_Fifth_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Fifth_Form/icon.4bpp");
+const u8 gMonFootprint_Crablet_Fifth_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crablet_Fifth_Form/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Crawler_Cave_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crawler_Cave_Form/front.4bpp.lz");
 const u32 gMonPalette_Crawler_Cave_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crawler_Cave_Form/normal.gbapal.lz");
@@ -6080,12 +5884,12 @@ const u32 gMonShinyPalette_Bear_Reanimated_Form[] = INCBIN_U32("graphics/pokesca
 const u8 gMonIcon_Bear_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bear_Reanimated_Form/icon.4bpp");
 const u8 gMonFootprint_Bear_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bear_Reanimated_Form/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Bear_Crystal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Crystal_Form/front.4bpp.lz");
-const u32 gMonPalette_Bear_Crystal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Crystal_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Bear_Crystal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Crystal_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Bear_Crystal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Crystal_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Bear_Crystal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bear_Crystal_Form/icon.4bpp");
-const u8 gMonFootprint_Bear_Crystal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bear_Crystal_Form/footprint.1bpp");
+const u32 gMonStillFrontPic_Bear_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Gauntlet_Crystalline_Form/front.4bpp.lz");
+const u32 gMonPalette_Bear_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Gauntlet_Crystalline_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Bear_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Gauntlet_Crystalline_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Bear_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Gauntlet_Crystalline_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Bear_Gauntlet_Crystalline_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bear_Gauntlet_Crystalline_Form/icon.4bpp");
+const u8 gMonFootprint_Bear_Gauntlet_Crystalline_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bear_Gauntlet_Crystalline_Form/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Callisto[] = INCBIN_U32("graphics/pokescape_monsters/Callisto/front.4bpp.lz");
 const u32 gMonPalette_Callisto[] = INCBIN_U32("graphics/pokescape_monsters/Callisto/normal.gbapal.lz");
@@ -6136,12 +5940,12 @@ const u32 gMonShinyPalette_Kendall[] = INCBIN_U32("graphics/pokescape_monsters/K
 const u8 gMonIcon_Kendall[] = INCBIN_U8("graphics/pokescape_monsters/Kendall/icon.4bpp");
 const u8 gMonFootprint_Kendall[] = INCBIN_U8("graphics/pokescape_monsters/Kendall/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Bear_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Corrupted_Form/front.4bpp.lz");
-const u32 gMonPalette_Bear_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Corrupted_Form/normal.gbapal.lz");
-const u32 gMonBackPic_Bear_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Corrupted_Form/back.4bpp.lz");
-const u32 gMonShinyPalette_Bear_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Corrupted_Form/shiny.gbapal.lz");
-const u8 gMonIcon_Bear_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bear_Corrupted_Form/icon.4bpp");
-const u8 gMonFootprint_Bear_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bear_Corrupted_Form/footprint.1bpp");
+const u32 gMonStillFrontPic_Bear_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Gauntlet_Corrupted_Form/front.4bpp.lz");
+const u32 gMonPalette_Bear_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Gauntlet_Corrupted_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Bear_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Gauntlet_Corrupted_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Bear_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Gauntlet_Corrupted_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Bear_Gauntlet_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bear_Gauntlet_Corrupted_Form/icon.4bpp");
+const u8 gMonFootprint_Bear_Gauntlet_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bear_Gauntlet_Corrupted_Form/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Bear_Angry_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Angry_Form/front.4bpp.lz");
 const u32 gMonPalette_Bear_Angry_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bear_Angry_Form/normal.gbapal.lz");
@@ -7067,6 +6871,943 @@ const u32 gMonShinyPalette_Cabbage[] = INCBIN_U32("graphics/pokescape_monsters/C
 const u8 gMonIcon_Cabbage[] = INCBIN_U8("graphics/pokescape_monsters/Cabbage/icon.4bpp");
 const u8 gMonFootprint_Cabbage[] = INCBIN_U8("graphics/pokescape_monsters/Cabbage/footprint.1bpp");
 
+const u32 gMonStillFrontPic_Ughtanki[] = INCBIN_U32("graphics/pokescape_monsters/Ughtanki/front.4bpp.lz");
+const u32 gMonPalette_Ughtanki[] = INCBIN_U32("graphics/pokescape_monsters/Ughtanki/normal.gbapal.lz");
+const u32 gMonBackPic_Ughtanki[] = INCBIN_U32("graphics/pokescape_monsters/Ughtanki/back.4bpp.lz");
+const u32 gMonShinyPalette_Ughtanki[] = INCBIN_U32("graphics/pokescape_monsters/Ughtanki/shiny.gbapal.lz");
+const u8 gMonIcon_Ughtanki[] = INCBIN_U8("graphics/pokescape_monsters/Ughtanki/icon.4bpp");
+const u8 gMonFootprint_Ughtanki[] = INCBIN_U8("graphics/pokescape_monsters/Ughtanki/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Camel[] = INCBIN_U32("graphics/pokescape_monsters/Camel/front.4bpp.lz");
+const u32 gMonPalette_Camel[] = INCBIN_U32("graphics/pokescape_monsters/Camel/normal.gbapal.lz");
+const u32 gMonBackPic_Camel[] = INCBIN_U32("graphics/pokescape_monsters/Camel/back.4bpp.lz");
+const u32 gMonShinyPalette_Camel[] = INCBIN_U32("graphics/pokescape_monsters/Camel/shiny.gbapal.lz");
+const u8 gMonIcon_Camel[] = INCBIN_U8("graphics/pokescape_monsters/Camel/icon.4bpp");
+const u8 gMonFootprint_Camel[] = INCBIN_U8("graphics/pokescape_monsters/Camel/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Camel_Warrior_Form[] = INCBIN_U32("graphics/pokescape_monsters/Camel_Warrior_Form/front.4bpp.lz");
+const u32 gMonPalette_Camel_Warrior_Form[] = INCBIN_U32("graphics/pokescape_monsters/Camel_Warrior_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Camel_Warrior_Form[] = INCBIN_U32("graphics/pokescape_monsters/Camel_Warrior_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Camel_Warrior_Form[] = INCBIN_U32("graphics/pokescape_monsters/Camel_Warrior_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Camel_Warrior_Form[] = INCBIN_U8("graphics/pokescape_monsters/Camel_Warrior_Form/icon.4bpp");
+const u8 gMonFootprint_Camel_Warrior_Form[] = INCBIN_U8("graphics/pokescape_monsters/Camel_Warrior_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_BalanceEle[] = INCBIN_U32("graphics/pokescape_monsters/BalanceEle/front.4bpp.lz");
+const u32 gMonPalette_BalanceEle[] = INCBIN_U32("graphics/pokescape_monsters/BalanceEle/normal.gbapal.lz");
+const u32 gMonBackPic_BalanceEle[] = INCBIN_U32("graphics/pokescape_monsters/BalanceEle/back.4bpp.lz");
+const u32 gMonShinyPalette_BalanceEle[] = INCBIN_U32("graphics/pokescape_monsters/BalanceEle/shiny.gbapal.lz");
+const u8 gMonIcon_BalanceEle[] = INCBIN_U8("graphics/pokescape_monsters/BalanceEle/icon.4bpp");
+const u8 gMonFootprint_BalanceEle[] = INCBIN_U8("graphics/pokescape_monsters/BalanceEle/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kalphite_Larva_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Larva_Form/front.4bpp.lz");
+const u32 gMonPalette_Kalphite_Larva_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Larva_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Kalphite_Larva_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Larva_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Kalphite_Larva_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Larva_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Kalphite_Larva_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Larva_Form/icon.4bpp");
+const u8 gMonFootprint_Kalphite_Larva_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Larva_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kalphite_Worker_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Worker_Form/front.4bpp.lz");
+const u32 gMonPalette_Kalphite_Worker_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Worker_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Kalphite_Worker_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Worker_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Kalphite_Worker_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Worker_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Kalphite_Worker_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Worker_Form/icon.4bpp");
+const u8 gMonFootprint_Kalphite_Worker_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Worker_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kalphite_Soldier_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Soldier_Form/front.4bpp.lz");
+const u32 gMonPalette_Kalphite_Soldier_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Soldier_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Kalphite_Soldier_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Soldier_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Kalphite_Soldier_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Soldier_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Kalphite_Soldier_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Soldier_Form/icon.4bpp");
+const u8 gMonFootprint_Kalphite_Soldier_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Soldier_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kalphite_Spirit_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Spirit_Form/front.4bpp.lz");
+const u32 gMonPalette_Kalphite_Spirit_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Spirit_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Kalphite_Spirit_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Spirit_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Kalphite_Spirit_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Spirit_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Kalphite_Spirit_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Spirit_Form/icon.4bpp");
+const u8 gMonFootprint_Kalphite_Spirit_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Spirit_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kalphite_Guardian_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Guardian_Form/front.4bpp.lz");
+const u32 gMonPalette_Kalphite_Guardian_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Guardian_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Kalphite_Guardian_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Guardian_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Kalphite_Guardian_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Guardian_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Kalphite_Guardian_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Guardian_Form/icon.4bpp");
+const u8 gMonFootprint_Kalphite_Guardian_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Guardian_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kalphite_Queen_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Queen_Form/front.4bpp.lz");
+const u32 gMonPalette_Kalphite_Queen_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Queen_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Kalphite_Queen_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Queen_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Kalphite_Queen_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Queen_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Kalphite_Queen_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Queen_Form/icon.4bpp");
+const u8 gMonFootprint_Kalphite_Queen_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Queen_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kalphite_Queen_Mega_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Queen_Mega_Form/front.4bpp.lz");
+const u32 gMonPalette_Kalphite_Queen_Mega_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Queen_Mega_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Kalphite_Queen_Mega_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Queen_Mega_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Kalphite_Queen_Mega_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Queen_Mega_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Kalphite_Queen_Mega_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Queen_Mega_Form/icon.4bpp");
+const u8 gMonFootprint_Kalphite_Queen_Mega_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Queen_Mega_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kalphite_Paragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Paragon_Form/front.4bpp.lz");
+const u32 gMonPalette_Kalphite_Paragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Paragon_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Kalphite_Paragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Paragon_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Kalphite_Paragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Paragon_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Kalphite_Paragon_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Paragon_Form/icon.4bpp");
+const u8 gMonFootprint_Kalphite_Paragon_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Paragon_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kalphite_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Corrupted_Form/front.4bpp.lz");
+const u32 gMonPalette_Kalphite_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Corrupted_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Kalphite_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Corrupted_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Kalphite_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Corrupted_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Kalphite_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Corrupted_Form/icon.4bpp");
+const u8 gMonFootprint_Kalphite_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Corrupted_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kalphite_Marauder_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Marauder_Form/front.4bpp.lz");
+const u32 gMonPalette_Kalphite_Marauder_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Marauder_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Kalphite_Marauder_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Marauder_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Kalphite_Marauder_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Marauder_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Kalphite_Marauder_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Marauder_Form/icon.4bpp");
+const u8 gMonFootprint_Kalphite_Marauder_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Marauder_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kalphite_King_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_King_Form/front.4bpp.lz");
+const u32 gMonPalette_Kalphite_King_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_King_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Kalphite_King_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_King_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Kalphite_King_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_King_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Kalphite_King_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_King_Form/icon.4bpp");
+const u8 gMonFootprint_Kalphite_King_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_King_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kalphite_Dung_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Dung_Form/front.4bpp.lz");
+const u32 gMonPalette_Kalphite_Dung_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Dung_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Kalphite_Dung_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Dung_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Kalphite_Dung_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Dung_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Kalphite_Dung_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Dung_Form/icon.4bpp");
+const u8 gMonFootprint_Kalphite_Dung_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Dung_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kalphite_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Reanimated_Form/front.4bpp.lz");
+const u32 gMonPalette_Kalphite_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Reanimated_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Kalphite_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Reanimated_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Kalphite_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Kalphite_Reanimated_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Kalphite_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Reanimated_Form/icon.4bpp");
+const u8 gMonFootprint_Kalphite_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Kalphite_Reanimated_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Abyssal_Demon_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_Demon_Reanimated_Form/front.4bpp.lz");
+const u32 gMonPalette_Abyssal_Demon_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_Demon_Reanimated_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Abyssal_Demon_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_Demon_Reanimated_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Abyssal_Demon_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_Demon_Reanimated_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Abyssal_Demon_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Abyssal_Demon_Reanimated_Form/icon.4bpp");
+const u8 gMonFootprint_Abyssal_Demon_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Abyssal_Demon_Reanimated_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Bat_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bat_Gauntlet_Corrupted_Form/front.4bpp.lz");
+const u32 gMonPalette_Bat_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bat_Gauntlet_Corrupted_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Bat_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bat_Gauntlet_Corrupted_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Bat_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bat_Gauntlet_Corrupted_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Bat_Gauntlet_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bat_Gauntlet_Corrupted_Form/icon.4bpp");
+const u8 gMonFootprint_Bat_Gauntlet_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bat_Gauntlet_Corrupted_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Bat_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bat_Gauntlet_Crystalline_Form/front.4bpp.lz");
+const u32 gMonPalette_Bat_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bat_Gauntlet_Crystalline_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Bat_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bat_Gauntlet_Crystalline_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Bat_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bat_Gauntlet_Crystalline_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Bat_Gauntlet_Crystalline_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bat_Gauntlet_Crystalline_Form/icon.4bpp");
+const u8 gMonFootprint_Bat_Gauntlet_Crystalline_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bat_Gauntlet_Crystalline_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Bloodveld_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Reanimated_Form/front.4bpp.lz");
+const u32 gMonPalette_Bloodveld_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Reanimated_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Bloodveld_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Reanimated_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Bloodveld_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Reanimated_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Bloodveld_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bloodveld_Reanimated_Form/icon.4bpp");
+const u8 gMonFootprint_Bloodveld_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bloodveld_Reanimated_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Dark_Beast_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Gauntlet_Corrupted_Form/front.4bpp.lz");
+const u32 gMonPalette_Dark_Beast_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Gauntlet_Corrupted_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Dark_Beast_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Gauntlet_Corrupted_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Dark_Beast_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Gauntlet_Corrupted_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Dark_Beast_Gauntlet_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Dark_Beast_Gauntlet_Corrupted_Form/icon.4bpp");
+const u8 gMonFootprint_Dark_Beast_Gauntlet_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Dark_Beast_Gauntlet_Corrupted_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Dark_Beast_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Gauntlet_Crystalline_Form/front.4bpp.lz");
+const u32 gMonPalette_Dark_Beast_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Gauntlet_Crystalline_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Dark_Beast_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Gauntlet_Crystalline_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Dark_Beast_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Gauntlet_Crystalline_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Dark_Beast_Gauntlet_Crystalline_Form[] = INCBIN_U8("graphics/pokescape_monsters/Dark_Beast_Gauntlet_Crystalline_Form/icon.4bpp");
+const u8 gMonFootprint_Dark_Beast_Gauntlet_Crystalline_Form[] = INCBIN_U8("graphics/pokescape_monsters/Dark_Beast_Gauntlet_Crystalline_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Dark_Beast_Pup_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Pup_Form/front.4bpp.lz");
+const u32 gMonPalette_Dark_Beast_Pup_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Pup_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Dark_Beast_Pup_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Pup_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Dark_Beast_Pup_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Pup_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Dark_Beast_Pup_Form[] = INCBIN_U8("graphics/pokescape_monsters/Dark_Beast_Pup_Form/icon.4bpp");
+const u8 gMonFootprint_Dark_Beast_Pup_Form[] = INCBIN_U8("graphics/pokescape_monsters/Dark_Beast_Pup_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Dark_Beast_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Normal_Form/front.4bpp.lz");
+const u32 gMonPalette_Dark_Beast_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Normal_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Dark_Beast_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Normal_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Dark_Beast_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Normal_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Dark_Beast_Normal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Dark_Beast_Normal_Form/icon.4bpp");
+const u8 gMonFootprint_Dark_Beast_Normal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Dark_Beast_Normal_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Dark_Beast_Sotetseg_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Sotetseg_Form/front.4bpp.lz");
+const u32 gMonPalette_Dark_Beast_Sotetseg_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Sotetseg_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Dark_Beast_Sotetseg_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Sotetseg_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Dark_Beast_Sotetseg_Form[] = INCBIN_U32("graphics/pokescape_monsters/Dark_Beast_Sotetseg_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Dark_Beast_Sotetseg_Form[] = INCBIN_U8("graphics/pokescape_monsters/Dark_Beast_Sotetseg_Form/icon.4bpp");
+const u8 gMonFootprint_Dark_Beast_Sotetseg_Form[] = INCBIN_U8("graphics/pokescape_monsters/Dark_Beast_Sotetseg_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Experiment_4_Form[] = INCBIN_U32("graphics/pokescape_monsters/Experiment_4_Form/front.4bpp.lz");
+const u32 gMonPalette_Experiment_4_Form[] = INCBIN_U32("graphics/pokescape_monsters/Experiment_4_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Experiment_4_Form[] = INCBIN_U32("graphics/pokescape_monsters/Experiment_4_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Experiment_4_Form[] = INCBIN_U32("graphics/pokescape_monsters/Experiment_4_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Experiment_4_Form[] = INCBIN_U8("graphics/pokescape_monsters/Experiment_4_Form/icon.4bpp");
+const u8 gMonFootprint_Experiment_4_Form[] = INCBIN_U8("graphics/pokescape_monsters/Experiment_4_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Experiment_5_Form[] = INCBIN_U32("graphics/pokescape_monsters/Experiment_5_Form/front.4bpp.lz");
+const u32 gMonPalette_Experiment_5_Form[] = INCBIN_U32("graphics/pokescape_monsters/Experiment_5_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Experiment_5_Form[] = INCBIN_U32("graphics/pokescape_monsters/Experiment_5_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Experiment_5_Form[] = INCBIN_U32("graphics/pokescape_monsters/Experiment_5_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Experiment_5_Form[] = INCBIN_U8("graphics/pokescape_monsters/Experiment_5_Form/icon.4bpp");
+const u8 gMonFootprint_Experiment_5_Form[] = INCBIN_U8("graphics/pokescape_monsters/Experiment_5_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Ganodermic_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Ganodermic_Beast/front.4bpp.lz");
+const u32 gMonPalette_Ganodermic_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Ganodermic_Beast/normal.gbapal.lz");
+const u32 gMonBackPic_Ganodermic_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Ganodermic_Beast/back.4bpp.lz");
+const u32 gMonShinyPalette_Ganodermic_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Ganodermic_Beast/shiny.gbapal.lz");
+const u8 gMonIcon_Ganodermic_Beast[] = INCBIN_U8("graphics/pokescape_monsters/Ganodermic_Beast/icon.4bpp");
+const u8 gMonFootprint_Ganodermic_Beast[] = INCBIN_U8("graphics/pokescape_monsters/Ganodermic_Beast/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Grifolapine[] = INCBIN_U32("graphics/pokescape_monsters/Grifolapine/front.4bpp.lz");
+const u32 gMonPalette_Grifolapine[] = INCBIN_U32("graphics/pokescape_monsters/Grifolapine/normal.gbapal.lz");
+const u32 gMonBackPic_Grifolapine[] = INCBIN_U32("graphics/pokescape_monsters/Grifolapine/back.4bpp.lz");
+const u32 gMonShinyPalette_Grifolapine[] = INCBIN_U32("graphics/pokescape_monsters/Grifolapine/shiny.gbapal.lz");
+const u8 gMonIcon_Grifolapine[] = INCBIN_U8("graphics/pokescape_monsters/Grifolapine/icon.4bpp");
+const u8 gMonFootprint_Grifolapine[] = INCBIN_U8("graphics/pokescape_monsters/Grifolapine/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Grifolaroo[] = INCBIN_U32("graphics/pokescape_monsters/Grifolaroo/front.4bpp.lz");
+const u32 gMonPalette_Grifolaroo[] = INCBIN_U32("graphics/pokescape_monsters/Grifolaroo/normal.gbapal.lz");
+const u32 gMonBackPic_Grifolaroo[] = INCBIN_U32("graphics/pokescape_monsters/Grifolaroo/back.4bpp.lz");
+const u32 gMonShinyPalette_Grifolaroo[] = INCBIN_U32("graphics/pokescape_monsters/Grifolaroo/shiny.gbapal.lz");
+const u8 gMonIcon_Grifolaroo[] = INCBIN_U8("graphics/pokescape_monsters/Grifolaroo/icon.4bpp");
+const u8 gMonFootprint_Grifolaroo[] = INCBIN_U8("graphics/pokescape_monsters/Grifolaroo/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Sporaxe[] = INCBIN_U32("graphics/pokescape_monsters/Sporaxe/front.4bpp.lz");
+const u32 gMonPalette_Sporaxe[] = INCBIN_U32("graphics/pokescape_monsters/Sporaxe/normal.gbapal.lz");
+const u32 gMonBackPic_Sporaxe[] = INCBIN_U32("graphics/pokescape_monsters/Sporaxe/back.4bpp.lz");
+const u32 gMonShinyPalette_Sporaxe[] = INCBIN_U32("graphics/pokescape_monsters/Sporaxe/shiny.gbapal.lz");
+const u8 gMonIcon_Sporaxe[] = INCBIN_U8("graphics/pokescape_monsters/Sporaxe/icon.4bpp");
+const u8 gMonFootprint_Sporaxe[] = INCBIN_U8("graphics/pokescape_monsters/Sporaxe/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Headless_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Headless_Beast/front.4bpp.lz");
+const u32 gMonPalette_Headless_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Headless_Beast/normal.gbapal.lz");
+const u32 gMonBackPic_Headless_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Headless_Beast/back.4bpp.lz");
+const u32 gMonShinyPalette_Headless_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Headless_Beast/shiny.gbapal.lz");
+const u8 gMonIcon_Headless_Beast[] = INCBIN_U8("graphics/pokescape_monsters/Headless_Beast/icon.4bpp");
+const u8 gMonFootprint_Headless_Beast[] = INCBIN_U8("graphics/pokescape_monsters/Headless_Beast/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Behemoth_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Normal_Form/front.4bpp.lz");
+const u32 gMonPalette_Behemoth_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Normal_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Behemoth_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Normal_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Behemoth_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Normal_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Behemoth_Normal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Behemoth_Normal_Form/icon.4bpp");
+const u8 gMonFootprint_Behemoth_Normal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Behemoth_Normal_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Behemoth_Adolscent_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Adolscent_Form/front.4bpp.lz");
+const u32 gMonPalette_Behemoth_Adolscent_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Adolscent_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Behemoth_Adolscent_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Adolscent_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Behemoth_Adolscent_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Adolscent_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Behemoth_Adolscent_Form[] = INCBIN_U8("graphics/pokescape_monsters/Behemoth_Adolscent_Form/icon.4bpp");
+const u8 gMonFootprint_Behemoth_Adolscent_Form[] = INCBIN_U8("graphics/pokescape_monsters/Behemoth_Adolscent_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Siege_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Siege_Beast/front.4bpp.lz");
+const u32 gMonPalette_Siege_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Siege_Beast/normal.gbapal.lz");
+const u32 gMonBackPic_Siege_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Siege_Beast/back.4bpp.lz");
+const u32 gMonShinyPalette_Siege_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Siege_Beast/shiny.gbapal.lz");
+const u8 gMonIcon_Siege_Beast[] = INCBIN_U8("graphics/pokescape_monsters/Siege_Beast/icon.4bpp");
+const u8 gMonFootprint_Siege_Beast[] = INCBIN_U8("graphics/pokescape_monsters/Siege_Beast/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Bulwark_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Bulwark_Beast/front.4bpp.lz");
+const u32 gMonPalette_Bulwark_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Bulwark_Beast/normal.gbapal.lz");
+const u32 gMonBackPic_Bulwark_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Bulwark_Beast/back.4bpp.lz");
+const u32 gMonShinyPalette_Bulwark_Beast[] = INCBIN_U32("graphics/pokescape_monsters/Bulwark_Beast/shiny.gbapal.lz");
+const u8 gMonIcon_Bulwark_Beast[] = INCBIN_U8("graphics/pokescape_monsters/Bulwark_Beast/icon.4bpp");
+const u8 gMonFootprint_Bulwark_Beast[] = INCBIN_U8("graphics/pokescape_monsters/Bulwark_Beast/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Behemoth_Gluttonous_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Gluttonous_Form/front.4bpp.lz");
+const u32 gMonPalette_Behemoth_Gluttonous_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Gluttonous_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Behemoth_Gluttonous_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Gluttonous_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Behemoth_Gluttonous_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Gluttonous_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Behemoth_Gluttonous_Form[] = INCBIN_U8("graphics/pokescape_monsters/Behemoth_Gluttonous_Form/icon.4bpp");
+const u8 gMonFootprint_Behemoth_Gluttonous_Form[] = INCBIN_U8("graphics/pokescape_monsters/Behemoth_Gluttonous_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Behemoth_Runebound_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Runebound_Form/front.4bpp.lz");
+const u32 gMonPalette_Behemoth_Runebound_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Runebound_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Behemoth_Runebound_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Runebound_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Behemoth_Runebound_Form[] = INCBIN_U32("graphics/pokescape_monsters/Behemoth_Runebound_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Behemoth_Runebound_Form[] = INCBIN_U8("graphics/pokescape_monsters/Behemoth_Runebound_Form/icon.4bpp");
+const u8 gMonFootprint_Behemoth_Runebound_Form[] = INCBIN_U8("graphics/pokescape_monsters/Behemoth_Runebound_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Stomp[] = INCBIN_U32("graphics/pokescape_monsters/Stomp/front.4bpp.lz");
+const u32 gMonPalette_Stomp[] = INCBIN_U32("graphics/pokescape_monsters/Stomp/normal.gbapal.lz");
+const u32 gMonBackPic_Stomp[] = INCBIN_U32("graphics/pokescape_monsters/Stomp/back.4bpp.lz");
+const u32 gMonShinyPalette_Stomp[] = INCBIN_U32("graphics/pokescape_monsters/Stomp/shiny.gbapal.lz");
+const u8 gMonIcon_Stomp[] = INCBIN_U8("graphics/pokescape_monsters/Stomp/icon.4bpp");
+const u8 gMonFootprint_Stomp[] = INCBIN_U8("graphics/pokescape_monsters/Stomp/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Hope_Devourer[] = INCBIN_U32("graphics/pokescape_monsters/Hope_Devourer/front.4bpp.lz");
+const u32 gMonPalette_Hope_Devourer[] = INCBIN_U32("graphics/pokescape_monsters/Hope_Devourer/normal.gbapal.lz");
+const u32 gMonBackPic_Hope_Devourer[] = INCBIN_U32("graphics/pokescape_monsters/Hope_Devourer/back.4bpp.lz");
+const u32 gMonShinyPalette_Hope_Devourer[] = INCBIN_U32("graphics/pokescape_monsters/Hope_Devourer/shiny.gbapal.lz");
+const u8 gMonIcon_Hope_Devourer[] = INCBIN_U8("graphics/pokescape_monsters/Hope_Devourer/icon.4bpp");
+const u8 gMonFootprint_Hope_Devourer[] = INCBIN_U8("graphics/pokescape_monsters/Hope_Devourer/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Karamthulu_Overlord[] = INCBIN_U32("graphics/pokescape_monsters/Karamthulu_Overlord/front.4bpp.lz");
+const u32 gMonPalette_Karamthulu_Overlord[] = INCBIN_U32("graphics/pokescape_monsters/Karamthulu_Overlord/normal.gbapal.lz");
+const u32 gMonBackPic_Karamthulu_Overlord[] = INCBIN_U32("graphics/pokescape_monsters/Karamthulu_Overlord/back.4bpp.lz");
+const u32 gMonShinyPalette_Karamthulu_Overlord[] = INCBIN_U32("graphics/pokescape_monsters/Karamthulu_Overlord/shiny.gbapal.lz");
+const u8 gMonIcon_Karamthulu_Overlord[] = INCBIN_U8("graphics/pokescape_monsters/Karamthulu_Overlord/icon.4bpp");
+const u8 gMonFootprint_Karamthulu_Overlord[] = INCBIN_U8("graphics/pokescape_monsters/Karamthulu_Overlord/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Light_Creature[] = INCBIN_U32("graphics/pokescape_monsters/Light_Creature/front.4bpp.lz");
+const u32 gMonPalette_Light_Creature[] = INCBIN_U32("graphics/pokescape_monsters/Light_Creature/normal.gbapal.lz");
+const u32 gMonBackPic_Light_Creature[] = INCBIN_U32("graphics/pokescape_monsters/Light_Creature/back.4bpp.lz");
+const u32 gMonShinyPalette_Light_Creature[] = INCBIN_U32("graphics/pokescape_monsters/Light_Creature/shiny.gbapal.lz");
+const u8 gMonIcon_Light_Creature[] = INCBIN_U8("graphics/pokescape_monsters/Light_Creature/icon.4bpp");
+const u8 gMonFootprint_Light_Creature[] = INCBIN_U8("graphics/pokescape_monsters/Light_Creature/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Minotaur_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Minotaur_Reanimated_Form/front.4bpp.lz");
+const u32 gMonPalette_Minotaur_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Minotaur_Reanimated_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Minotaur_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Minotaur_Reanimated_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Minotaur_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Minotaur_Reanimated_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Minotaur_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Minotaur_Reanimated_Form/icon.4bpp");
+const u8 gMonFootprint_Minotaur_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Minotaur_Reanimated_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Monkey_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Monkey_Reanimated_Form/front.4bpp.lz");
+const u32 gMonPalette_Monkey_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Monkey_Reanimated_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Monkey_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Monkey_Reanimated_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Monkey_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Monkey_Reanimated_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Monkey_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Monkey_Reanimated_Form/icon.4bpp");
+const u8 gMonFootprint_Monkey_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Monkey_Reanimated_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Rat_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Rat_Gauntlet_Corrupted_Form/front.4bpp.lz");
+const u32 gMonPalette_Rat_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Rat_Gauntlet_Corrupted_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Rat_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Rat_Gauntlet_Corrupted_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Rat_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Rat_Gauntlet_Corrupted_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Rat_Gauntlet_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Rat_Gauntlet_Corrupted_Form/icon.4bpp");
+const u8 gMonFootprint_Rat_Gauntlet_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Rat_Gauntlet_Corrupted_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Rat_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Rat_Gauntlet_Crystalline_Form/front.4bpp.lz");
+const u32 gMonPalette_Rat_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Rat_Gauntlet_Crystalline_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Rat_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Rat_Gauntlet_Crystalline_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Rat_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Rat_Gauntlet_Crystalline_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Rat_Gauntlet_Crystalline_Form[] = INCBIN_U8("graphics/pokescape_monsters/Rat_Gauntlet_Crystalline_Form/icon.4bpp");
+const u8 gMonFootprint_Rat_Gauntlet_Crystalline_Form[] = INCBIN_U8("graphics/pokescape_monsters/Rat_Gauntlet_Crystalline_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Rat_Fungal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Rat_Fungal_Form/front.4bpp.lz");
+const u32 gMonPalette_Rat_Fungal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Rat_Fungal_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Rat_Fungal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Rat_Fungal_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Rat_Fungal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Rat_Fungal_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Rat_Fungal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Rat_Fungal_Form/icon.4bpp");
+const u8 gMonFootprint_Rat_Fungal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Rat_Fungal_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Sparky[] = INCBIN_U32("graphics/pokescape_monsters/Sparky/front.4bpp.lz");
+const u32 gMonPalette_Sparky[] = INCBIN_U32("graphics/pokescape_monsters/Sparky/normal.gbapal.lz");
+const u32 gMonBackPic_Sparky[] = INCBIN_U32("graphics/pokescape_monsters/Sparky/back.4bpp.lz");
+const u32 gMonShinyPalette_Sparky[] = INCBIN_U32("graphics/pokescape_monsters/Sparky/shiny.gbapal.lz");
+const u8 gMonIcon_Sparky[] = INCBIN_U8("graphics/pokescape_monsters/Sparky/icon.4bpp");
+const u8 gMonFootprint_Sparky[] = INCBIN_U8("graphics/pokescape_monsters/Sparky/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Spider_Corpse_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Corpse_Form/front.4bpp.lz");
+const u32 gMonPalette_Spider_Corpse_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Corpse_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Spider_Corpse_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Corpse_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Spider_Corpse_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Corpse_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Spider_Corpse_Form[] = INCBIN_U8("graphics/pokescape_monsters/Spider_Corpse_Form/icon.4bpp");
+const u8 gMonFootprint_Spider_Corpse_Form[] = INCBIN_U8("graphics/pokescape_monsters/Spider_Corpse_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Spider_Fever_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Fever_Form/front.4bpp.lz");
+const u32 gMonPalette_Spider_Fever_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Fever_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Spider_Fever_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Fever_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Spider_Fever_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Fever_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Spider_Fever_Form[] = INCBIN_U8("graphics/pokescape_monsters/Spider_Fever_Form/icon.4bpp");
+const u8 gMonFootprint_Spider_Fever_Form[] = INCBIN_U8("graphics/pokescape_monsters/Spider_Fever_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Spider_Lava_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Lava_Form/front.4bpp.lz");
+const u32 gMonPalette_Spider_Lava_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Lava_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Spider_Lava_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Lava_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Spider_Lava_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Lava_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Spider_Lava_Form[] = INCBIN_U8("graphics/pokescape_monsters/Spider_Lava_Form/icon.4bpp");
+const u8 gMonFootprint_Spider_Lava_Form[] = INCBIN_U8("graphics/pokescape_monsters/Spider_Lava_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Spider_Shadow_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Shadow_Form/front.4bpp.lz");
+const u32 gMonPalette_Spider_Shadow_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Shadow_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Spider_Shadow_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Shadow_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Spider_Shadow_Form[] = INCBIN_U32("graphics/pokescape_monsters/Spider_Shadow_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Spider_Shadow_Form[] = INCBIN_U8("graphics/pokescape_monsters/Spider_Shadow_Form/icon.4bpp");
+const u8 gMonFootprint_Spider_Shadow_Form[] = INCBIN_U8("graphics/pokescape_monsters/Spider_Shadow_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Stalker[] = INCBIN_U32("graphics/pokescape_monsters/Stalker/front.4bpp.lz");
+const u32 gMonPalette_Stalker[] = INCBIN_U32("graphics/pokescape_monsters/Stalker/normal.gbapal.lz");
+const u32 gMonBackPic_Stalker[] = INCBIN_U32("graphics/pokescape_monsters/Stalker/back.4bpp.lz");
+const u32 gMonShinyPalette_Stalker[] = INCBIN_U32("graphics/pokescape_monsters/Stalker/shiny.gbapal.lz");
+const u8 gMonIcon_Stalker[] = INCBIN_U8("graphics/pokescape_monsters/Stalker/icon.4bpp");
+const u8 gMonFootprint_Stalker[] = INCBIN_U8("graphics/pokescape_monsters/Stalker/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Soulseeker[] = INCBIN_U32("graphics/pokescape_monsters/Soulseeker/front.4bpp.lz");
+const u32 gMonPalette_Soulseeker[] = INCBIN_U32("graphics/pokescape_monsters/Soulseeker/normal.gbapal.lz");
+const u32 gMonBackPic_Soulseeker[] = INCBIN_U32("graphics/pokescape_monsters/Soulseeker/back.4bpp.lz");
+const u32 gMonShinyPalette_Soulseeker[] = INCBIN_U32("graphics/pokescape_monsters/Soulseeker/shiny.gbapal.lz");
+const u8 gMonIcon_Soulseeker[] = INCBIN_U8("graphics/pokescape_monsters/Soulseeker/icon.4bpp");
+const u8 gMonFootprint_Soulseeker[] = INCBIN_U8("graphics/pokescape_monsters/Soulseeker/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Stalker_Sentinel_Form[] = INCBIN_U32("graphics/pokescape_monsters/Stalker_Sentinel_Form/front.4bpp.lz");
+const u32 gMonPalette_Stalker_Sentinel_Form[] = INCBIN_U32("graphics/pokescape_monsters/Stalker_Sentinel_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Stalker_Sentinel_Form[] = INCBIN_U32("graphics/pokescape_monsters/Stalker_Sentinel_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Stalker_Sentinel_Form[] = INCBIN_U32("graphics/pokescape_monsters/Stalker_Sentinel_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Stalker_Sentinel_Form[] = INCBIN_U8("graphics/pokescape_monsters/Stalker_Sentinel_Form/icon.4bpp");
+const u8 gMonFootprint_Stalker_Sentinel_Form[] = INCBIN_U8("graphics/pokescape_monsters/Stalker_Sentinel_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Night_Gazer[] = INCBIN_U32("graphics/pokescape_monsters/Night_Gazer/front.4bpp.lz");
+const u32 gMonPalette_Night_Gazer[] = INCBIN_U32("graphics/pokescape_monsters/Night_Gazer/normal.gbapal.lz");
+const u32 gMonBackPic_Night_Gazer[] = INCBIN_U32("graphics/pokescape_monsters/Night_Gazer/back.4bpp.lz");
+const u32 gMonShinyPalette_Night_Gazer[] = INCBIN_U32("graphics/pokescape_monsters/Night_Gazer/shiny.gbapal.lz");
+const u8 gMonIcon_Night_Gazer[] = INCBIN_U8("graphics/pokescape_monsters/Night_Gazer/icon.4bpp");
+const u8 gMonFootprint_Night_Gazer[] = INCBIN_U8("graphics/pokescape_monsters/Night_Gazer/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Plane_Freezer[] = INCBIN_U32("graphics/pokescape_monsters/Plane_Freezer/front.4bpp.lz");
+const u32 gMonPalette_Plane_Freezer[] = INCBIN_U32("graphics/pokescape_monsters/Plane_Freezer/normal.gbapal.lz");
+const u32 gMonBackPic_Plane_Freezer[] = INCBIN_U32("graphics/pokescape_monsters/Plane_Freezer/back.4bpp.lz");
+const u32 gMonShinyPalette_Plane_Freezer[] = INCBIN_U32("graphics/pokescape_monsters/Plane_Freezer/shiny.gbapal.lz");
+const u8 gMonIcon_Plane_Freezer[] = INCBIN_U8("graphics/pokescape_monsters/Plane_Freezer/icon.4bpp");
+const u8 gMonFootprint_Plane_Freezer[] = INCBIN_U8("graphics/pokescape_monsters/Plane_Freezer/footprint.1bpp");
+
+const u32 gMonStillFrontPic_World_Gorger[] = INCBIN_U32("graphics/pokescape_monsters/World_Gorger/front.4bpp.lz");
+const u32 gMonPalette_World_Gorger[] = INCBIN_U32("graphics/pokescape_monsters/World_Gorger/normal.gbapal.lz");
+const u32 gMonBackPic_World_Gorger[] = INCBIN_U32("graphics/pokescape_monsters/World_Gorger/back.4bpp.lz");
+const u32 gMonShinyPalette_World_Gorger[] = INCBIN_U32("graphics/pokescape_monsters/World_Gorger/shiny.gbapal.lz");
+const u8 gMonIcon_World_Gorger[] = INCBIN_U8("graphics/pokescape_monsters/World_Gorger/icon.4bpp");
+const u8 gMonFootprint_World_Gorger[] = INCBIN_U8("graphics/pokescape_monsters/World_Gorger/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Flesh_Monger[] = INCBIN_U32("graphics/pokescape_monsters/Flesh_Monger/front.4bpp.lz");
+const u32 gMonPalette_Flesh_Monger[] = INCBIN_U32("graphics/pokescape_monsters/Flesh_Monger/normal.gbapal.lz");
+const u32 gMonBackPic_Flesh_Monger[] = INCBIN_U32("graphics/pokescape_monsters/Flesh_Monger/back.4bpp.lz");
+const u32 gMonShinyPalette_Flesh_Monger[] = INCBIN_U32("graphics/pokescape_monsters/Flesh_Monger/shiny.gbapal.lz");
+const u8 gMonIcon_Flesh_Monger[] = INCBIN_U8("graphics/pokescape_monsters/Flesh_Monger/icon.4bpp");
+const u8 gMonFootprint_Flesh_Monger[] = INCBIN_U8("graphics/pokescape_monsters/Flesh_Monger/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Shadow_Forger[] = INCBIN_U32("graphics/pokescape_monsters/Shadow_Forger/front.4bpp.lz");
+const u32 gMonPalette_Shadow_Forger[] = INCBIN_U32("graphics/pokescape_monsters/Shadow_Forger/normal.gbapal.lz");
+const u32 gMonBackPic_Shadow_Forger[] = INCBIN_U32("graphics/pokescape_monsters/Shadow_Forger/back.4bpp.lz");
+const u32 gMonShinyPalette_Shadow_Forger[] = INCBIN_U32("graphics/pokescape_monsters/Shadow_Forger/shiny.gbapal.lz");
+const u8 gMonIcon_Shadow_Forger[] = INCBIN_U8("graphics/pokescape_monsters/Shadow_Forger/icon.4bpp");
+const u8 gMonFootprint_Shadow_Forger[] = INCBIN_U8("graphics/pokescape_monsters/Shadow_Forger/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Veil_Ripper[] = INCBIN_U32("graphics/pokescape_monsters/Veil_Ripper/front.4bpp.lz");
+const u32 gMonPalette_Veil_Ripper[] = INCBIN_U32("graphics/pokescape_monsters/Veil_Ripper/normal.gbapal.lz");
+const u32 gMonBackPic_Veil_Ripper[] = INCBIN_U32("graphics/pokescape_monsters/Veil_Ripper/back.4bpp.lz");
+const u32 gMonShinyPalette_Veil_Ripper[] = INCBIN_U32("graphics/pokescape_monsters/Veil_Ripper/shiny.gbapal.lz");
+const u8 gMonIcon_Veil_Ripper[] = INCBIN_U8("graphics/pokescape_monsters/Veil_Ripper/icon.4bpp");
+const u8 gMonFootprint_Veil_Ripper[] = INCBIN_U8("graphics/pokescape_monsters/Veil_Ripper/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Unicorn_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Unicorn_Gauntlet_Corrupted_Form/front.4bpp.lz");
+const u32 gMonPalette_Unicorn_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Unicorn_Gauntlet_Corrupted_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Unicorn_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Unicorn_Gauntlet_Corrupted_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Unicorn_Gauntlet_Corrupted_Form[] = INCBIN_U32("graphics/pokescape_monsters/Unicorn_Gauntlet_Corrupted_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Unicorn_Gauntlet_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Unicorn_Gauntlet_Corrupted_Form/icon.4bpp");
+const u8 gMonFootprint_Unicorn_Gauntlet_Corrupted_Form[] = INCBIN_U8("graphics/pokescape_monsters/Unicorn_Gauntlet_Corrupted_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Unicorn_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Unicorn_Gauntlet_Crystalline_Form/front.4bpp.lz");
+const u32 gMonPalette_Unicorn_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Unicorn_Gauntlet_Crystalline_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Unicorn_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Unicorn_Gauntlet_Crystalline_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Unicorn_Gauntlet_Crystalline_Form[] = INCBIN_U32("graphics/pokescape_monsters/Unicorn_Gauntlet_Crystalline_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Unicorn_Gauntlet_Crystalline_Form[] = INCBIN_U8("graphics/pokescape_monsters/Unicorn_Gauntlet_Crystalline_Form/icon.4bpp");
+const u8 gMonFootprint_Unicorn_Gauntlet_Crystalline_Form[] = INCBIN_U8("graphics/pokescape_monsters/Unicorn_Gauntlet_Crystalline_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Wolf_Cave_Form[] = INCBIN_U32("graphics/pokescape_monsters/Wolf_Cave_Form/front.4bpp.lz");
+const u32 gMonPalette_Wolf_Cave_Form[] = INCBIN_U32("graphics/pokescape_monsters/Wolf_Cave_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Wolf_Cave_Form[] = INCBIN_U32("graphics/pokescape_monsters/Wolf_Cave_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Wolf_Cave_Form[] = INCBIN_U32("graphics/pokescape_monsters/Wolf_Cave_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Wolf_Cave_Form[] = INCBIN_U8("graphics/pokescape_monsters/Wolf_Cave_Form/icon.4bpp");
+const u8 gMonFootprint_Wolf_Cave_Form[] = INCBIN_U8("graphics/pokescape_monsters/Wolf_Cave_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Wolf_Dragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Wolf_Dragon_Form/front.4bpp.lz");
+const u32 gMonPalette_Wolf_Dragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Wolf_Dragon_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Wolf_Dragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Wolf_Dragon_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Wolf_Dragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Wolf_Dragon_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Wolf_Dragon_Form[] = INCBIN_U8("graphics/pokescape_monsters/Wolf_Dragon_Form/icon.4bpp");
+const u8 gMonFootprint_Wolf_Dragon_Form[] = INCBIN_U8("graphics/pokescape_monsters/Wolf_Dragon_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Shadow_Hound[] = INCBIN_U32("graphics/pokescape_monsters/Shadow_Hound/front.4bpp.lz");
+const u32 gMonPalette_Shadow_Hound[] = INCBIN_U32("graphics/pokescape_monsters/Shadow_Hound/normal.gbapal.lz");
+const u32 gMonBackPic_Shadow_Hound[] = INCBIN_U32("graphics/pokescape_monsters/Shadow_Hound/back.4bpp.lz");
+const u32 gMonShinyPalette_Shadow_Hound[] = INCBIN_U32("graphics/pokescape_monsters/Shadow_Hound/shiny.gbapal.lz");
+const u8 gMonIcon_Shadow_Hound[] = INCBIN_U8("graphics/pokescape_monsters/Shadow_Hound/icon.4bpp");
+const u8 gMonFootprint_Shadow_Hound[] = INCBIN_U8("graphics/pokescape_monsters/Shadow_Hound/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Border_Collie[] = INCBIN_U32("graphics/pokescape_monsters/Border_Collie/front.4bpp.lz");
+const u32 gMonPalette_Border_Collie[] = INCBIN_U32("graphics/pokescape_monsters/Border_Collie/normal.gbapal.lz");
+const u32 gMonBackPic_Border_Collie[] = INCBIN_U32("graphics/pokescape_monsters/Border_Collie/back.4bpp.lz");
+const u32 gMonShinyPalette_Border_Collie[] = INCBIN_U32("graphics/pokescape_monsters/Border_Collie/shiny.gbapal.lz");
+const u8 gMonIcon_Border_Collie[] = INCBIN_U8("graphics/pokescape_monsters/Border_Collie/icon.4bpp");
+const u8 gMonFootprint_Border_Collie[] = INCBIN_U8("graphics/pokescape_monsters/Border_Collie/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Bloodhound[] = INCBIN_U32("graphics/pokescape_monsters/Bloodhound/front.4bpp.lz");
+const u32 gMonPalette_Bloodhound[] = INCBIN_U32("graphics/pokescape_monsters/Bloodhound/normal.gbapal.lz");
+const u32 gMonBackPic_Bloodhound[] = INCBIN_U32("graphics/pokescape_monsters/Bloodhound/back.4bpp.lz");
+const u32 gMonShinyPalette_Bloodhound[] = INCBIN_U32("graphics/pokescape_monsters/Bloodhound/shiny.gbapal.lz");
+const u8 gMonIcon_Bloodhound[] = INCBIN_U8("graphics/pokescape_monsters/Bloodhound/icon.4bpp");
+const u8 gMonFootprint_Bloodhound[] = INCBIN_U8("graphics/pokescape_monsters/Bloodhound/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Guard_Dog[] = INCBIN_U32("graphics/pokescape_monsters/Guard_Dog/front.4bpp.lz");
+const u32 gMonPalette_Guard_Dog[] = INCBIN_U32("graphics/pokescape_monsters/Guard_Dog/normal.gbapal.lz");
+const u32 gMonBackPic_Guard_Dog[] = INCBIN_U32("graphics/pokescape_monsters/Guard_Dog/back.4bpp.lz");
+const u32 gMonShinyPalette_Guard_Dog[] = INCBIN_U32("graphics/pokescape_monsters/Guard_Dog/shiny.gbapal.lz");
+const u8 gMonIcon_Guard_Dog[] = INCBIN_U8("graphics/pokescape_monsters/Guard_Dog/icon.4bpp");
+const u8 gMonFootprint_Guard_Dog[] = INCBIN_U8("graphics/pokescape_monsters/Guard_Dog/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Lycurgus[] = INCBIN_U32("graphics/pokescape_monsters/Lycurgus/front.4bpp.lz");
+const u32 gMonPalette_Lycurgus[] = INCBIN_U32("graphics/pokescape_monsters/Lycurgus/normal.gbapal.lz");
+const u32 gMonBackPic_Lycurgus[] = INCBIN_U32("graphics/pokescape_monsters/Lycurgus/back.4bpp.lz");
+const u32 gMonShinyPalette_Lycurgus[] = INCBIN_U32("graphics/pokescape_monsters/Lycurgus/shiny.gbapal.lz");
+const u8 gMonIcon_Lycurgus[] = INCBIN_U8("graphics/pokescape_monsters/Lycurgus/icon.4bpp");
+const u8 gMonFootprint_Lycurgus[] = INCBIN_U8("graphics/pokescape_monsters/Lycurgus/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Yak_Moorrissey_Form[] = INCBIN_U32("graphics/pokescape_monsters/Yak_Moorrissey_Form/front.4bpp.lz");
+const u32 gMonPalette_Yak_Moorrissey_Form[] = INCBIN_U32("graphics/pokescape_monsters/Yak_Moorrissey_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Yak_Moorrissey_Form[] = INCBIN_U32("graphics/pokescape_monsters/Yak_Moorrissey_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Yak_Moorrissey_Form[] = INCBIN_U32("graphics/pokescape_monsters/Yak_Moorrissey_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Yak_Moorrissey_Form[] = INCBIN_U8("graphics/pokescape_monsters/Yak_Moorrissey_Form/icon.4bpp");
+const u8 gMonFootprint_Yak_Moorrissey_Form[] = INCBIN_U8("graphics/pokescape_monsters/Yak_Moorrissey_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Yak_Robin_Form[] = INCBIN_U32("graphics/pokescape_monsters/Yak_Robin_Form/front.4bpp.lz");
+const u32 gMonPalette_Yak_Robin_Form[] = INCBIN_U32("graphics/pokescape_monsters/Yak_Robin_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Yak_Robin_Form[] = INCBIN_U32("graphics/pokescape_monsters/Yak_Robin_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Yak_Robin_Form[] = INCBIN_U32("graphics/pokescape_monsters/Yak_Robin_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Yak_Robin_Form[] = INCBIN_U8("graphics/pokescape_monsters/Yak_Robin_Form/icon.4bpp");
+const u8 gMonFootprint_Yak_Robin_Form[] = INCBIN_U8("graphics/pokescape_monsters/Yak_Robin_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Yak_Yaktrick_Form[] = INCBIN_U32("graphics/pokescape_monsters/Yak_Yaktrick_Form/front.4bpp.lz");
+const u32 gMonPalette_Yak_Yaktrick_Form[] = INCBIN_U32("graphics/pokescape_monsters/Yak_Yaktrick_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Yak_Yaktrick_Form[] = INCBIN_U32("graphics/pokescape_monsters/Yak_Yaktrick_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Yak_Yaktrick_Form[] = INCBIN_U32("graphics/pokescape_monsters/Yak_Yaktrick_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Yak_Yaktrick_Form[] = INCBIN_U8("graphics/pokescape_monsters/Yak_Yaktrick_Form/icon.4bpp");
+const u8 gMonFootprint_Yak_Yaktrick_Form[] = INCBIN_U8("graphics/pokescape_monsters/Yak_Yaktrick_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Cabbage_Sister_Form[] = INCBIN_U32("graphics/pokescape_monsters/Cabbage_Sister_Form/front.4bpp.lz");
+const u32 gMonPalette_Cabbage_Sister_Form[] = INCBIN_U32("graphics/pokescape_monsters/Cabbage_Sister_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Cabbage_Sister_Form[] = INCBIN_U32("graphics/pokescape_monsters/Cabbage_Sister_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Cabbage_Sister_Form[] = INCBIN_U32("graphics/pokescape_monsters/Cabbage_Sister_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Cabbage_Sister_Form[] = INCBIN_U8("graphics/pokescape_monsters/Cabbage_Sister_Form/icon.4bpp");
+const u8 gMonFootprint_Cabbage_Sister_Form[] = INCBIN_U8("graphics/pokescape_monsters/Cabbage_Sister_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Cabbage_Crispy_Form[] = INCBIN_U32("graphics/pokescape_monsters/Cabbage_Crispy_Form/front.4bpp.lz");
+const u32 gMonPalette_Cabbage_Crispy_Form[] = INCBIN_U32("graphics/pokescape_monsters/Cabbage_Crispy_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Cabbage_Crispy_Form[] = INCBIN_U32("graphics/pokescape_monsters/Cabbage_Crispy_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Cabbage_Crispy_Form[] = INCBIN_U32("graphics/pokescape_monsters/Cabbage_Crispy_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Cabbage_Crispy_Form[] = INCBIN_U8("graphics/pokescape_monsters/Cabbage_Crispy_Form/icon.4bpp");
+const u8 gMonFootprint_Cabbage_Crispy_Form[] = INCBIN_U8("graphics/pokescape_monsters/Cabbage_Crispy_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Strykewyrm_Mini_Form[] = INCBIN_U32("graphics/pokescape_monsters/Strykewyrm_Mini_Form/front.4bpp.lz");
+const u32 gMonPalette_Strykewyrm_Mini_Form[] = INCBIN_U32("graphics/pokescape_monsters/Strykewyrm_Mini_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Strykewyrm_Mini_Form[] = INCBIN_U32("graphics/pokescape_monsters/Strykewyrm_Mini_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Strykewyrm_Mini_Form[] = INCBIN_U32("graphics/pokescape_monsters/Strykewyrm_Mini_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Strykewyrm_Mini_Form[] = INCBIN_U8("graphics/pokescape_monsters/Strykewyrm_Mini_Form/icon.4bpp");
+const u8 gMonFootprint_Strykewyrm_Mini_Form[] = INCBIN_U8("graphics/pokescape_monsters/Strykewyrm_Mini_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Crocodile_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Normal_Form/front.4bpp.lz");
+const u32 gMonPalette_Crocodile_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Normal_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Crocodile_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Normal_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Crocodile_Normal_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Normal_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Crocodile_Normal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crocodile_Normal_Form/icon.4bpp");
+const u8 gMonFootprint_Crocodile_Normal_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crocodile_Normal_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Crocodile_Mutadile_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Mutadile_Form/front.4bpp.lz");
+const u32 gMonPalette_Crocodile_Mutadile_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Mutadile_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Crocodile_Mutadile_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Mutadile_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Crocodile_Mutadile_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Mutadile_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Crocodile_Mutadile_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crocodile_Mutadile_Form/icon.4bpp");
+const u8 gMonFootprint_Crocodile_Mutadile_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crocodile_Mutadile_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Crocodile_Ankh_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Ankh_Form/front.4bpp.lz");
+const u32 gMonPalette_Crocodile_Ankh_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Ankh_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Crocodile_Ankh_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Ankh_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Crocodile_Ankh_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Ankh_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Crocodile_Ankh_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crocodile_Ankh_Form/icon.4bpp");
+const u8 gMonFootprint_Crocodile_Ankh_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crocodile_Ankh_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Crocodile_Ukunduka_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Ukunduka_Form/front.4bpp.lz");
+const u32 gMonPalette_Crocodile_Ukunduka_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Ukunduka_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Crocodile_Ukunduka_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Ukunduka_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Crocodile_Ukunduka_Form[] = INCBIN_U32("graphics/pokescape_monsters/Crocodile_Ukunduka_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Crocodile_Ukunduka_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crocodile_Ukunduka_Form/icon.4bpp");
+const u8 gMonFootprint_Crocodile_Ukunduka_Form[] = INCBIN_U8("graphics/pokescape_monsters/Crocodile_Ukunduka_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Bloodveld_Insatiable_Mutated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Insatiable_Mutated_Form/front.4bpp.lz");
+const u32 gMonPalette_Bloodveld_Insatiable_Mutated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Insatiable_Mutated_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Bloodveld_Insatiable_Mutated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Insatiable_Mutated_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Bloodveld_Insatiable_Mutated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Insatiable_Mutated_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Bloodveld_Insatiable_Mutated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bloodveld_Insatiable_Mutated_Form/icon.4bpp");
+const u8 gMonFootprint_Bloodveld_Insatiable_Mutated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bloodveld_Insatiable_Mutated_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Bloodveld_Acidic_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Acidic_Form/front.4bpp.lz");
+const u32 gMonPalette_Bloodveld_Acidic_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Acidic_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Bloodveld_Acidic_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Acidic_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Bloodveld_Acidic_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Acidic_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Bloodveld_Acidic_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bloodveld_Acidic_Form/icon.4bpp");
+const u8 gMonFootprint_Bloodveld_Acidic_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bloodveld_Acidic_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Bloodveld_Vampiric_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Vampiric_Form/front.4bpp.lz");
+const u32 gMonPalette_Bloodveld_Vampiric_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Vampiric_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Bloodveld_Vampiric_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Vampiric_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Bloodveld_Vampiric_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Vampiric_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Bloodveld_Vampiric_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bloodveld_Vampiric_Form/icon.4bpp");
+const u8 gMonFootprint_Bloodveld_Vampiric_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bloodveld_Vampiric_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Bloodveld_Rs3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Rs3_Form/front.4bpp.lz");
+const u32 gMonPalette_Bloodveld_Rs3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Rs3_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Bloodveld_Rs3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Rs3_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Bloodveld_Rs3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Bloodveld_Rs3_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Bloodveld_Rs3_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bloodveld_Rs3_Form/icon.4bpp");
+const u8 gMonFootprint_Bloodveld_Rs3_Form[] = INCBIN_U8("graphics/pokescape_monsters/Bloodveld_Rs3_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Beaver[] = INCBIN_U32("graphics/pokescape_monsters/Beaver/front.4bpp.lz");
+const u32 gMonPalette_Beaver[] = INCBIN_U32("graphics/pokescape_monsters/Beaver/normal.gbapal.lz");
+const u32 gMonBackPic_Beaver[] = INCBIN_U32("graphics/pokescape_monsters/Beaver/back.4bpp.lz");
+const u32 gMonShinyPalette_Beaver[] = INCBIN_U32("graphics/pokescape_monsters/Beaver/shiny.gbapal.lz");
+const u8 gMonIcon_Beaver[] = INCBIN_U8("graphics/pokescape_monsters/Beaver/icon.4bpp");
+const u8 gMonFootprint_Beaver[] = INCBIN_U8("graphics/pokescape_monsters/Beaver/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Giant_Beaver[] = INCBIN_U32("graphics/pokescape_monsters/Giant_Beaver/front.4bpp.lz");
+const u32 gMonPalette_Giant_Beaver[] = INCBIN_U32("graphics/pokescape_monsters/Giant_Beaver/normal.gbapal.lz");
+const u32 gMonBackPic_Giant_Beaver[] = INCBIN_U32("graphics/pokescape_monsters/Giant_Beaver/back.4bpp.lz");
+const u32 gMonShinyPalette_Giant_Beaver[] = INCBIN_U32("graphics/pokescape_monsters/Giant_Beaver/shiny.gbapal.lz");
+const u8 gMonIcon_Giant_Beaver[] = INCBIN_U8("graphics/pokescape_monsters/Giant_Beaver/icon.4bpp");
+const u8 gMonFootprint_Giant_Beaver[] = INCBIN_U8("graphics/pokescape_monsters/Giant_Beaver/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Racoon[] = INCBIN_U32("graphics/pokescape_monsters/Racoon/front.4bpp.lz");
+const u32 gMonPalette_Racoon[] = INCBIN_U32("graphics/pokescape_monsters/Racoon/normal.gbapal.lz");
+const u32 gMonBackPic_Racoon[] = INCBIN_U32("graphics/pokescape_monsters/Racoon/back.4bpp.lz");
+const u32 gMonShinyPalette_Racoon[] = INCBIN_U32("graphics/pokescape_monsters/Racoon/shiny.gbapal.lz");
+const u8 gMonIcon_Racoon[] = INCBIN_U8("graphics/pokescape_monsters/Racoon/icon.4bpp");
+const u8 gMonFootprint_Racoon[] = INCBIN_U8("graphics/pokescape_monsters/Racoon/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Ralph[] = INCBIN_U32("graphics/pokescape_monsters/Ralph/front.4bpp.lz");
+const u32 gMonPalette_Ralph[] = INCBIN_U32("graphics/pokescape_monsters/Ralph/normal.gbapal.lz");
+const u32 gMonBackPic_Ralph[] = INCBIN_U32("graphics/pokescape_monsters/Ralph/back.4bpp.lz");
+const u32 gMonShinyPalette_Ralph[] = INCBIN_U32("graphics/pokescape_monsters/Ralph/shiny.gbapal.lz");
+const u8 gMonIcon_Ralph[] = INCBIN_U8("graphics/pokescape_monsters/Ralph/icon.4bpp");
+const u8 gMonFootprint_Ralph[] = INCBIN_U8("graphics/pokescape_monsters/Ralph/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Rocky[] = INCBIN_U32("graphics/pokescape_monsters/Rocky/front.4bpp.lz");
+const u32 gMonPalette_Rocky[] = INCBIN_U32("graphics/pokescape_monsters/Rocky/normal.gbapal.lz");
+const u32 gMonBackPic_Rocky[] = INCBIN_U32("graphics/pokescape_monsters/Rocky/back.4bpp.lz");
+const u32 gMonShinyPalette_Rocky[] = INCBIN_U32("graphics/pokescape_monsters/Rocky/shiny.gbapal.lz");
+const u8 gMonIcon_Rocky[] = INCBIN_U8("graphics/pokescape_monsters/Rocky/icon.4bpp");
+const u8 gMonFootprint_Rocky[] = INCBIN_U8("graphics/pokescape_monsters/Rocky/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Honey_Badger[] = INCBIN_U32("graphics/pokescape_monsters/Honey_Badger/front.4bpp.lz");
+const u32 gMonPalette_Honey_Badger[] = INCBIN_U32("graphics/pokescape_monsters/Honey_Badger/normal.gbapal.lz");
+const u32 gMonBackPic_Honey_Badger[] = INCBIN_U32("graphics/pokescape_monsters/Honey_Badger/back.4bpp.lz");
+const u32 gMonShinyPalette_Honey_Badger[] = INCBIN_U32("graphics/pokescape_monsters/Honey_Badger/shiny.gbapal.lz");
+const u8 gMonIcon_Honey_Badger[] = INCBIN_U8("graphics/pokescape_monsters/Honey_Badger/icon.4bpp");
+const u8 gMonFootprint_Honey_Badger[] = INCBIN_U8("graphics/pokescape_monsters/Honey_Badger/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Squirrel_Giant_Form[] = INCBIN_U32("graphics/pokescape_monsters/Squirrel_Giant_Form/front.4bpp.lz");
+const u32 gMonPalette_Squirrel_Giant_Form[] = INCBIN_U32("graphics/pokescape_monsters/Squirrel_Giant_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Squirrel_Giant_Form[] = INCBIN_U32("graphics/pokescape_monsters/Squirrel_Giant_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Squirrel_Giant_Form[] = INCBIN_U32("graphics/pokescape_monsters/Squirrel_Giant_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Squirrel_Giant_Form[] = INCBIN_U8("graphics/pokescape_monsters/Squirrel_Giant_Form/icon.4bpp");
+const u8 gMonFootprint_Squirrel_Giant_Form[] = INCBIN_U8("graphics/pokescape_monsters/Squirrel_Giant_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Squirrel_Australian_Form[] = INCBIN_U32("graphics/pokescape_monsters/Squirrel_Australian_Form/front.4bpp.lz");
+const u32 gMonPalette_Squirrel_Australian_Form[] = INCBIN_U32("graphics/pokescape_monsters/Squirrel_Australian_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Squirrel_Australian_Form[] = INCBIN_U32("graphics/pokescape_monsters/Squirrel_Australian_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Squirrel_Australian_Form[] = INCBIN_U32("graphics/pokescape_monsters/Squirrel_Australian_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Squirrel_Australian_Form[] = INCBIN_U8("graphics/pokescape_monsters/Squirrel_Australian_Form/icon.4bpp");
+const u8 gMonFootprint_Squirrel_Australian_Form[] = INCBIN_U8("graphics/pokescape_monsters/Squirrel_Australian_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Jade_Vine[] = INCBIN_U32("graphics/pokescape_monsters/Jade_Vine/front.4bpp.lz");
+const u32 gMonPalette_Jade_Vine[] = INCBIN_U32("graphics/pokescape_monsters/Jade_Vine/normal.gbapal.lz");
+const u32 gMonBackPic_Jade_Vine[] = INCBIN_U32("graphics/pokescape_monsters/Jade_Vine/back.4bpp.lz");
+const u32 gMonShinyPalette_Jade_Vine[] = INCBIN_U32("graphics/pokescape_monsters/Jade_Vine/shiny.gbapal.lz");
+const u8 gMonIcon_Jade_Vine[] = INCBIN_U8("graphics/pokescape_monsters/Jade_Vine/icon.4bpp");
+const u8 gMonFootprint_Jade_Vine[] = INCBIN_U8("graphics/pokescape_monsters/Jade_Vine/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Klik[] = INCBIN_U32("graphics/pokescape_monsters/Klik/front.4bpp.lz");
+const u32 gMonPalette_Klik[] = INCBIN_U32("graphics/pokescape_monsters/Klik/normal.gbapal.lz");
+const u32 gMonBackPic_Klik[] = INCBIN_U32("graphics/pokescape_monsters/Klik/back.4bpp.lz");
+const u32 gMonShinyPalette_Klik[] = INCBIN_U32("graphics/pokescape_monsters/Klik/shiny.gbapal.lz");
+const u8 gMonIcon_Klik[] = INCBIN_U8("graphics/pokescape_monsters/Klik/icon.4bpp");
+const u8 gMonFootprint_Klik[] = INCBIN_U8("graphics/pokescape_monsters/Klik/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Jackalope[] = INCBIN_U32("graphics/pokescape_monsters/Jackalope/front.4bpp.lz");
+const u32 gMonPalette_Jackalope[] = INCBIN_U32("graphics/pokescape_monsters/Jackalope/normal.gbapal.lz");
+const u32 gMonBackPic_Jackalope[] = INCBIN_U32("graphics/pokescape_monsters/Jackalope/back.4bpp.lz");
+const u32 gMonShinyPalette_Jackalope[] = INCBIN_U32("graphics/pokescape_monsters/Jackalope/shiny.gbapal.lz");
+const u8 gMonIcon_Jackalope[] = INCBIN_U8("graphics/pokescape_monsters/Jackalope/icon.4bpp");
+const u8 gMonFootprint_Jackalope[] = INCBIN_U8("graphics/pokescape_monsters/Jackalope/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Imp/front.4bpp.lz");
+const u32 gMonPalette_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Imp/normal.gbapal.lz");
+const u32 gMonBackPic_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Imp/back.4bpp.lz");
+const u32 gMonShinyPalette_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Imp/shiny.gbapal.lz");
+const u8 gMonIcon_Imp[] = INCBIN_U8("graphics/pokescape_monsters/Imp/icon.4bpp");
+const u8 gMonFootprint_Imp[] = INCBIN_U8("graphics/pokescape_monsters/Imp/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Lesser_RS3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_RS3_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Lesser_RS3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_RS3_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Lesser_RS3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_RS3_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Lesser_RS3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_RS3_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Lesser_RS3_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Lesser_RS3_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Lesser_RS3_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Lesser_RS3_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Greater_RS3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_RS3_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Greater_RS3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_RS3_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Greater_RS3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_RS3_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Greater_RS3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_RS3_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Greater_RS3_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Greater_RS3_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Greater_RS3_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Greater_RS3_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Kalgerion_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Kalgerion_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Kalgerion_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Kalgerion_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Kalgerion_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Kalgerion_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Kalgerion_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Kalgerion_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Kalgerion_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Kalgerion_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Kalgerion_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Kalgerion_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Thundereous_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Thundereous_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Thundereous_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Thundereous_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Thundereous_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Thundereous_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Thundereous_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Thundereous_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Thundereous_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Thundereous_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Thundereous_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Thundereous_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Ripper_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ripper_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Ripper_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ripper_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Ripper_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ripper_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Ripper_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ripper_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Ripper_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Ripper_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Ripper_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Ripper_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Lesser_OSRS_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_OSRS_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Lesser_OSRS_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_OSRS_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Lesser_OSRS_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_OSRS_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Lesser_OSRS_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_OSRS_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Lesser_OSRS_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Lesser_OSRS_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Lesser_OSRS_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Lesser_OSRS_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Greater_OSRS_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_OSRS_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Greater_OSRS_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_OSRS_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Greater_OSRS_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_OSRS_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Greater_OSRS_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_OSRS_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Greater_OSRS_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Greater_OSRS_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Greater_OSRS_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Greater_OSRS_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Tstanon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Tstanon_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Tstanon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Tstanon_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Tstanon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Tstanon_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Tstanon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Tstanon_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Tstanon_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Tstanon_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Tstanon_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Tstanon_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Tormented_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Tormented_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Tormented_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Tormented_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Tormented_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Tormented_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Tormented_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Tormented_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Tormented_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Tormented_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Tormented_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Tormented_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Delrith[] = INCBIN_U32("graphics/pokescape_monsters/Delrith/front.4bpp.lz");
+const u32 gMonPalette_Delrith[] = INCBIN_U32("graphics/pokescape_monsters/Delrith/normal.gbapal.lz");
+const u32 gMonBackPic_Delrith[] = INCBIN_U32("graphics/pokescape_monsters/Delrith/back.4bpp.lz");
+const u32 gMonShinyPalette_Delrith[] = INCBIN_U32("graphics/pokescape_monsters/Delrith/shiny.gbapal.lz");
+const u8 gMonIcon_Delrith[] = INCBIN_U8("graphics/pokescape_monsters/Delrith/icon.4bpp");
+const u8 gMonFootprint_Delrith[] = INCBIN_U8("graphics/pokescape_monsters/Delrith/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Lesser_Tongue_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Tongue_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Lesser_Tongue_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Tongue_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Lesser_Tongue_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Tongue_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Lesser_Tongue_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Tongue_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Lesser_Tongue_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Lesser_Tongue_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Lesser_Tongue_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Lesser_Tongue_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Greater_Tongue_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Tongue_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Greater_Tongue_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Tongue_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Greater_Tongue_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Tongue_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Greater_Tongue_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Tongue_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Greater_Tongue_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Greater_Tongue_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Greater_Tongue_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Greater_Tongue_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Zakln_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Zakln_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Zakln_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Zakln_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Zakln_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Zakln_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Zakln_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Zakln_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Zakln_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Zakln_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Zakln_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Zakln_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Pummeler_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Pummeler_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Pummeler_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Pummeler_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Pummeler_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Pummeler_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Pummeler_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Pummeler_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Pummeler_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Pummeler_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Pummeler_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Pummeler_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Chocolate_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Chocolate_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Chocolate_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Chocolate_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Chocolate_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Chocolate_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Chocolate_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Chocolate_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Chocolate_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Chocolate_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Chocolate_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Chocolate_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Lesser_Black_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Black_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Lesser_Black_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Black_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Lesser_Black_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Black_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Lesser_Black_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Lesser_Black_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Lesser_Black_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Lesser_Black_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Lesser_Black_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Lesser_Black_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Greater_Black_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Black_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Greater_Black_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Black_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Greater_Black_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Black_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Greater_Black_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Greater_Black_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Greater_Black_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Greater_Black_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Greater_Black_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Greater_Black_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Balfrug_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Balfrug_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Balfrug_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Balfrug_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Balfrug_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Balfrug_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Balfrug_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Balfrug_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Balfrug_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Balfrug_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Balfrug_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Balfrug_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Jungle_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Jungle_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Jungle_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Jungle_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Jungle_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Jungle_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Jungle_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Jungle_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Jungle_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Jungle_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Jungle_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Jungle_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Riftsplitter_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Riftsplitter_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Riftsplitter_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Riftsplitter_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Riftsplitter_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Riftsplitter_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Riftsplitter_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Riftsplitter_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Riftsplitter_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Riftsplitter_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Riftsplitter_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Riftsplitter_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Snow_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Snow_Imp/front.4bpp.lz");
+const u32 gMonPalette_Snow_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Snow_Imp/normal.gbapal.lz");
+const u32 gMonBackPic_Snow_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Snow_Imp/back.4bpp.lz");
+const u32 gMonShinyPalette_Snow_Imp[] = INCBIN_U32("graphics/pokescape_monsters/Snow_Imp/shiny.gbapal.lz");
+const u8 gMonIcon_Snow_Imp[] = INCBIN_U8("graphics/pokescape_monsters/Snow_Imp/icon.4bpp");
+const u8 gMonFootprint_Snow_Imp[] = INCBIN_U8("graphics/pokescape_monsters/Snow_Imp/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Ice_OSRS_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ice_OSRS_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Ice_OSRS_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ice_OSRS_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Ice_OSRS_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ice_OSRS_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Ice_OSRS_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ice_OSRS_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Ice_OSRS_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Ice_OSRS_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Ice_OSRS_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Ice_OSRS_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Ice_RS3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ice_RS3_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Ice_RS3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ice_RS3_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Ice_RS3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ice_RS3_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Ice_RS3_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Ice_RS3_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Ice_RS3_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Ice_RS3_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Ice_RS3_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Ice_RS3_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Bloodchiller_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Bloodchiller_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Bloodchiller_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Bloodchiller_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Bloodchiller_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Bloodchiller_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Bloodchiller_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Bloodchiller_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Bloodchiller_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Bloodchiller_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Bloodchiller_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Bloodchiller_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Demon_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Reanimated_Form/front.4bpp.lz");
+const u32 gMonPalette_Demon_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Reanimated_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Demon_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Reanimated_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Demon_Reanimated_Form[] = INCBIN_U32("graphics/pokescape_monsters/Demon_Reanimated_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Demon_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Reanimated_Form/icon.4bpp");
+const u8 gMonFootprint_Demon_Reanimated_Form[] = INCBIN_U8("graphics/pokescape_monsters/Demon_Reanimated_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Kril_Tsutsaroth[] = INCBIN_U32("graphics/pokescape_monsters/Kril_Tsutsaroth/front.4bpp.lz");
+const u32 gMonPalette_Kril_Tsutsaroth[] = INCBIN_U32("graphics/pokescape_monsters/Kril_Tsutsaroth/normal.gbapal.lz");
+const u32 gMonBackPic_Kril_Tsutsaroth[] = INCBIN_U32("graphics/pokescape_monsters/Kril_Tsutsaroth/back.4bpp.lz");
+const u32 gMonShinyPalette_Kril_Tsutsaroth[] = INCBIN_U32("graphics/pokescape_monsters/Kril_Tsutsaroth/shiny.gbapal.lz");
+const u8 gMonIcon_Kril_Tsutsaroth[] = INCBIN_U8("graphics/pokescape_monsters/Kril_Tsutsaroth/icon.4bpp");
+const u8 gMonFootprint_Kril_Tsutsaroth[] = INCBIN_U8("graphics/pokescape_monsters/Kril_Tsutsaroth/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Pyrefiend[] = INCBIN_U32("graphics/pokescape_monsters/Pyrefiend/front.4bpp.lz");
+const u32 gMonPalette_Pyrefiend[] = INCBIN_U32("graphics/pokescape_monsters/Pyrefiend/normal.gbapal.lz");
+const u32 gMonBackPic_Pyrefiend[] = INCBIN_U32("graphics/pokescape_monsters/Pyrefiend/back.4bpp.lz");
+const u32 gMonShinyPalette_Pyrefiend[] = INCBIN_U32("graphics/pokescape_monsters/Pyrefiend/shiny.gbapal.lz");
+const u8 gMonIcon_Pyrefiend[] = INCBIN_U8("graphics/pokescape_monsters/Pyrefiend/icon.4bpp");
+const u8 gMonFootprint_Pyrefiend[] = INCBIN_U8("graphics/pokescape_monsters/Pyrefiend/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Pyrelord[] = INCBIN_U32("graphics/pokescape_monsters/Pyrelord/front.4bpp.lz");
+const u32 gMonPalette_Pyrelord[] = INCBIN_U32("graphics/pokescape_monsters/Pyrelord/normal.gbapal.lz");
+const u32 gMonBackPic_Pyrelord[] = INCBIN_U32("graphics/pokescape_monsters/Pyrelord/back.4bpp.lz");
+const u32 gMonShinyPalette_Pyrelord[] = INCBIN_U32("graphics/pokescape_monsters/Pyrelord/shiny.gbapal.lz");
+const u8 gMonIcon_Pyrelord[] = INCBIN_U8("graphics/pokescape_monsters/Pyrelord/icon.4bpp");
+const u8 gMonFootprint_Pyrelord[] = INCBIN_U8("graphics/pokescape_monsters/Pyrelord/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Waterfiend[] = INCBIN_U32("graphics/pokescape_monsters/Waterfiend/front.4bpp.lz");
+const u32 gMonPalette_Waterfiend[] = INCBIN_U32("graphics/pokescape_monsters/Waterfiend/normal.gbapal.lz");
+const u32 gMonBackPic_Waterfiend[] = INCBIN_U32("graphics/pokescape_monsters/Waterfiend/back.4bpp.lz");
+const u32 gMonShinyPalette_Waterfiend[] = INCBIN_U32("graphics/pokescape_monsters/Waterfiend/shiny.gbapal.lz");
+const u8 gMonIcon_Waterfiend[] = INCBIN_U8("graphics/pokescape_monsters/Waterfiend/icon.4bpp");
+const u8 gMonFootprint_Waterfiend[] = INCBIN_U8("graphics/pokescape_monsters/Waterfiend/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Waterlord[] = INCBIN_U32("graphics/pokescape_monsters/Waterlord/front.4bpp.lz");
+const u32 gMonPalette_Waterlord[] = INCBIN_U32("graphics/pokescape_monsters/Waterlord/normal.gbapal.lz");
+const u32 gMonBackPic_Waterlord[] = INCBIN_U32("graphics/pokescape_monsters/Waterlord/back.4bpp.lz");
+const u32 gMonShinyPalette_Waterlord[] = INCBIN_U32("graphics/pokescape_monsters/Waterlord/shiny.gbapal.lz");
+const u8 gMonIcon_Waterlord[] = INCBIN_U8("graphics/pokescape_monsters/Waterlord/icon.4bpp");
+const u8 gMonFootprint_Waterlord[] = INCBIN_U8("graphics/pokescape_monsters/Waterlord/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Icefiend[] = INCBIN_U32("graphics/pokescape_monsters/Icefiend/front.4bpp.lz");
+const u32 gMonPalette_Icefiend[] = INCBIN_U32("graphics/pokescape_monsters/Icefiend/normal.gbapal.lz");
+const u32 gMonBackPic_Icefiend[] = INCBIN_U32("graphics/pokescape_monsters/Icefiend/back.4bpp.lz");
+const u32 gMonShinyPalette_Icefiend[] = INCBIN_U32("graphics/pokescape_monsters/Icefiend/shiny.gbapal.lz");
+const u8 gMonIcon_Icefiend[] = INCBIN_U8("graphics/pokescape_monsters/Icefiend/icon.4bpp");
+const u8 gMonFootprint_Icefiend[] = INCBIN_U8("graphics/pokescape_monsters/Icefiend/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Icelord[] = INCBIN_U32("graphics/pokescape_monsters/Icelord/front.4bpp.lz");
+const u32 gMonPalette_Icelord[] = INCBIN_U32("graphics/pokescape_monsters/Icelord/normal.gbapal.lz");
+const u32 gMonBackPic_Icelord[] = INCBIN_U32("graphics/pokescape_monsters/Icelord/back.4bpp.lz");
+const u32 gMonShinyPalette_Icelord[] = INCBIN_U32("graphics/pokescape_monsters/Icelord/shiny.gbapal.lz");
+const u8 gMonIcon_Icelord[] = INCBIN_U8("graphics/pokescape_monsters/Icelord/icon.4bpp");
+const u8 gMonFootprint_Icelord[] = INCBIN_U8("graphics/pokescape_monsters/Icelord/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Impling_Baby_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Baby_Form/front.4bpp.lz");
+const u32 gMonPalette_Impling_Baby_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Baby_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Impling_Baby_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Baby_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Impling_Baby_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Baby_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Impling_Baby_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Baby_Form/icon.4bpp");
+const u8 gMonFootprint_Impling_Baby_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Baby_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Impling_Magpie_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Magpie_Form/front.4bpp.lz");
+const u32 gMonPalette_Impling_Magpie_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Magpie_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Impling_Magpie_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Magpie_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Impling_Magpie_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Magpie_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Impling_Magpie_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Magpie_Form/icon.4bpp");
+const u8 gMonFootprint_Impling_Magpie_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Magpie_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Impling_Dragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Dragon_Form/front.4bpp.lz");
+const u32 gMonPalette_Impling_Dragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Dragon_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Impling_Dragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Dragon_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Impling_Dragon_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Dragon_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Impling_Dragon_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Dragon_Form/icon.4bpp");
+const u8 gMonFootprint_Impling_Dragon_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Dragon_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Impling_Kingly_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Kingly_Form/front.4bpp.lz");
+const u32 gMonPalette_Impling_Kingly_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Kingly_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Impling_Kingly_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Kingly_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Impling_Kingly_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Kingly_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Impling_Kingly_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Kingly_Form/icon.4bpp");
+const u8 gMonFootprint_Impling_Kingly_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Kingly_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Impling_Lucky_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Lucky_Form/front.4bpp.lz");
+const u32 gMonPalette_Impling_Lucky_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Lucky_Form/normal.gbapal.lz");
+const u32 gMonBackPic_Impling_Lucky_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Lucky_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_Impling_Lucky_Form[] = INCBIN_U32("graphics/pokescape_monsters/Impling_Lucky_Form/shiny.gbapal.lz");
+const u8 gMonIcon_Impling_Lucky_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Lucky_Form/icon.4bpp");
+const u8 gMonFootprint_Impling_Lucky_Form[] = INCBIN_U8("graphics/pokescape_monsters/Impling_Lucky_Form/footprint.1bpp");
 
 //POKESCAPE END
 

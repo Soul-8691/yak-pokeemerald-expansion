@@ -1,4 +1,5 @@
 Lumbridge_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattleTowerLobby_OnFrame
 	.byte 0
 
 
@@ -114,6 +115,60 @@ HappyBirthday::
 	msgbox HappyBirthday_Text_1
 	release
 	return
+
+
+MaxIvs::
+	lock
+	faceplayer
+	bufferleadmonspeciesname 0
+	msgbox MaxIvs_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne MaxIvs_2
+	msgbox MaxIvs_Text_3
+MaxIvs_1:
+	release
+	return
+
+MaxIvs_2:
+	msgbox MaxIvs_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne MaxIvs_5
+	special MaxHpIV
+	special MaxAtkIV
+	special MaxDefIV
+	special MaxSpAtkIV
+	special MaxSpDefIV
+	special MaxSpeedIV
+	msgbox MaxIvs_Text_2
+	goto MaxIvs_1
+
+MaxIvs_5:
+	special MaxHpIV
+	special MaxAtkIV
+	special MaxDefIV
+	special MaxSpAtkIV
+	special MaxSpDefIV
+	special MinSpeedIV
+	msgbox MaxIvs_Text_2
+	goto MaxIvs_1
+
+
+ChangeAbilityScript::
+	lock
+	faceplayer
+	bufferleadmonspeciesname 0
+	msgbox ChangeAbilityScript_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne ChangeAbilityScript_2
+	msgbox ChangeAbilityScript_Text_2
+ChangeAbilityScript_1:
+	release
+	return
+
+ChangeAbilityScript_2:
+	special ChangeAbility
+	msgbox ChangeAbilityScript_Text_1
+	goto ChangeAbilityScript_1
 
 
 GuardBlockRightRoute1::
@@ -394,3 +449,24 @@ HappyBirthday_Text_0:
 
 HappyBirthday_Text_1:
 	.string "I hope you like it as much as I do!$"
+
+MaxIvs_Text_0:
+	.string "Would you like to max {STR_VAR_1}'s IVs?$"
+
+MaxIvs_Text_1:
+	.string "Would you like 0 speed IVs?$"
+
+MaxIvs_Text_2:
+	.string "Enjoy your IVs!$"
+
+MaxIvs_Text_3:
+	.string "Maybe another time then..$"
+
+ChangeAbilityScript_Text_0:
+	.string "Would you like to change {STR_VAR_1}'s Ability?$"
+
+ChangeAbilityScript_Text_1:
+	.string "Ability changed!$"
+
+ChangeAbilityScript_Text_2:
+	.string "Maybe another time then?$"

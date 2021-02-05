@@ -237,6 +237,7 @@ static const u8 sGoosebumpsDescription[] = _("Taunts enemy on contact.");
 static const u8 sPunkRockDescription[] = _("Sound based moves do more damage.");
 static const u8 sAvernicDescription[] = _("Raises attack when lowering enemy stats.");
 static const u8 sFireShieldDescription[] = _("Protects the user from attacks.");
+static const u8 sHunterDescription[] = _("Deals more damage to weak foes.");
 
 const u8 gAbilityNames[ABILITIES_COUNT_GEN7][ABILITY_NAME_LENGTH + 1] =
 {
@@ -490,7 +491,8 @@ const u8 gAbilityNames[ABILITIES_COUNT_GEN7][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_GOOSEBUMPS]= _("Goosebumps"),
     [ABILITY_PUNK_ROCK] = _("Punk Rock"),
     [ABILITY_AVERNIC] = _("Avernic"),
-    [ABILITY_FIRE_SHIELD] = _("Fire Shield")
+    [ABILITY_FIRE_SHIELD] = _("Fire Shield"),
+    [ABILITY_HUNTER] = _("Hunter"),
 };
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT_GEN7] =
@@ -746,4 +748,5 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT_GEN7] =
     [ABILITY_PUNK_ROCK] = sPunkRockDescription,
     [ABILITY_AVERNIC] = sAvernicDescription,
     [ABILITY_FIRE_SHIELD] = sFireShieldDescription,
+    [ABILITY_HUNTER] = sHunterDescription,
 };

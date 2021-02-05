@@ -1211,6 +1211,27 @@ void PrepareStringBattle(u16 stringId, u8 battler)
         else
             SET_STATCHANGER(STAT_SPATK, 2, FALSE);
     }
+
+    //case ABILITY_AVERNIC:
+    else if (gSpecialStatuses[gBattlerTarget].changedStatsBattlerId == gBattlerAttacker 
+            && stringId == STRINGID_PKMNSSTATCHANGED4 
+            && GetBattlerAbility(gBattlerAttacker) == ABILITY_AVERNIC)
+    {
+        if (gBattleMons[gBattlerAttacker].attack >= gBattleMons[gBattlerAttacker].spAttack)
+        {
+            if (gBattleMons[gBattlerAttacker].statStages[STAT_ATK] != 12)
+                SET_STATCHANGER(STAT_ATK, 1, FALSE);
+        }
+        else
+        {
+            if (gBattleMons[gBattlerAttacker].statStages[STAT_SPATK] != 12)
+                SET_STATCHANGER(STAT_SPATK,1,FALSE);
+        }
+        gBattlerAbility = gBattlerAttacker;
+        gLastUsedAbility = ABILITY_AVERNIC;
+        BattleScriptPushCursor();
+        gBattlescriptCurrInstr = BattleScript_AvernicActivates;
+    }
     gActiveBattler = battler;
     BtlController_EmitPrintString(0, stringId);
     MarkBattlerForControllerExec(gActiveBattler);
@@ -4615,6 +4636,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
             
         break;
 
+        /*
         case ABILITY_AVERNIC:
         if (gSpecialStatuses[gBattlerTarget].changedStatsBattlerId == gBattlerAttacker)
         {
@@ -4639,7 +4661,8 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
             effect++;
         }
         break;
-        
+        */
+
         }
     case ABILITYEFFECT_MOVE_END_OTHER: // Abilities that activate on *another* battler's moveend: Dancer, Soul-Heart, Receiver, Symbiosis
         switch (GetBattlerAbility(battler))
@@ -6474,6 +6497,20 @@ static const double sDhHpScaleToModifierTable[] =
     10, 1
 };
 
+static const double sHunterHpToModifierTable[] = 
+{
+    1, 1.5,
+    2, 1.5,
+    3, 1.5,
+    4, 1.5,
+    5, 1.5,
+    6, 1.4,
+    7, 1.3,
+    8, 1.2,
+    9, 1.1,
+    10, 1
+};
+
 
 
 // format: min. weight (hectograms), base power
@@ -6717,11 +6754,12 @@ static u16 CalcMoveBasePower(u16 move, u8 battlerAtk, u8 battlerDef)
 
 static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDef, u8 moveType, bool32 updateFlags)
 {
-    u32 i, ability;
+    u32 i,ability,hpFraction;
     u32 holdEffectAtk, holdEffectParamAtk;
     u16 basePower = CalcMoveBasePower(move, battlerAtk, battlerDef);
     u16 holdEffectModifier;
     u16 modifier = UQ_4_12(1.0);
+    double hpPowerScale;
 
     // attacker's abilities
     switch (GetBattlerAbility(battlerAtk))
@@ -6751,7 +6789,8 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
            MulModifier(&modifier, UQ_4_12(1.3));
         break;
     case ABILITY_SAND_FORCE:
-        if (moveType == TYPE_STEEL || moveType == TYPE_ROCK || moveType == TYPE_GROUND)
+        if ((moveType == TYPE_STEEL || moveType == TYPE_ROCK || moveType == TYPE_GROUND) 
+           && WEATHER_HAS_EFFECT && gBattleWeather & WEATHER_SANDSTORM_ANY)
            MulModifier(&modifier, UQ_4_12(1.3));
         break;
     case ABILITY_RIVALRY:
@@ -6813,7 +6852,18 @@ static u32 CalcMoveBasePowerAfterModifiers(u16 move, u8 battlerAtk, u8 battlerDe
         if (gBattleMoves[move].flags & FLAG_SOUND)
             MulModifier(&modifier, UQ_4_12(1.3));
         break;
+    case ABILITY_HUNTER:
+        hpFraction = GetScaledHPFraction(gBattleMons[battlerDef].hp, gBattleMons[battlerDef].maxHP, 10);
+        for (i = 0; i < sizeof(sHunterHpToModifierTable); i += 2)
+        {
+            if (hpFraction <= sHunterHpToModifierTable[i])
+                break;
+        }
+        hpPowerScale = sHunterHpToModifierTable[i + 1];
+        MulModifier(&modifier, UQ_4_12(hpPowerScale));
+        break;
     }
+
 
     // field abilities
     if ((IsAbilityOnField(ABILITY_DARK_AURA) && moveType == TYPE_DARK)

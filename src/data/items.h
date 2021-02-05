@@ -5813,6 +5813,44 @@ const struct Item gItems[] =
         .secondaryId = 2,
     },
 
+    [ITEM_PHOENIX_NECKLACE] = 
+        {
+        .name = _("PHOENIX NECK"),
+        .itemId = ITEM_PHOENIX_NECKLACE,
+        .holdEffect = HOLD_EFFECT_FOCUS_SASH,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
+
+    [ITEM_MITHRIL_SCIMITAR] = 
+        {
+        .name = _("MITH SCIMITAR"),
+        .itemId = ITEM_MITHRIL_SCIMITAR,
+        .holdEffect = HOLD_EFFECT_EVO_ATTACK,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
+
+    [ITEM_SNOW_GLOBE] = 
+        {
+        .name = _("SNOW GLOBE"),
+        .itemId = ITEM_SNOW_GLOBE,
+        .holdEffect = HOLD_EFFECT_WEATHER_EXTENDER,
+        .price = 0,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
     //end pokescape hold items
 
 	// Pokescape Evolution items

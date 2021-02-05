@@ -1418,6 +1418,15 @@ const u32 gItemIconPalette_wizards_hat[] = INCBIN_U32("graphics/items/pokescape_
 const u32 gItemIcon_woolBall[] = INCBIN_U32("graphics/items/pokescape_icons/woolBall.4bpp.lz");
 const u32 gItemIconPalette_woolBall[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/woolBall.gbapal.lz");
 
+const u32 gItemIcon_phoenixNecklace[] = INCBIN_U32("graphics/items/pokescape_icons/phoenix_necklace.4bpp.lz");
+const u32 gItemIconPalette_phoenixNecklace[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/phoenix_necklace.gbapal.lz");
+
+const u32 gItemIcon_mithrilScimitar[] = INCBIN_U32("graphics/items/pokescape_icons/mithril_scimitar.4bpp.lz");
+const u32 gItemIconPalette_mithrilScimitar[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/mithril_scimitar.gbapal.lz");
+
+const u32 gItemIcon_snowGlobe[] = INCBIN_U32("graphics/items/pokescape_icons/snow_globe.4bpp.lz");
+const u32 gItemIconPalette_snowGlobe[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/snow_globe.gbapal.lz");
+
 //pokescape tms
 
 const u32 gItemIcon_TMScroll[] = INCBIN_U32("graphics/items/pokescape_icons/tmscroll.4bpp.lz");

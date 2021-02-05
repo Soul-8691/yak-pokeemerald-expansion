@@ -644,7 +644,9 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_WIZARDS_BLIZZARD] = {gItemIcon_wizards_blizzard, gItemIconPalette_wizards_blizzard},
     [ITEM_WIZARDS_HAT] = {gItemIcon_wizards_hat, gItemIconPalette_wizards_hat},
     [ITEM_WOOLBALL] = {gItemIcon_woolBall, gItemIconPalette_woolBall},
-
+    [ITEM_PHOENIX_NECKLACE] = {gItemIcon_phoenixNecklace, gItemIconPalette_phoenixNecklace},
+    [ITEM_MITHRIL_SCIMITAR] = {gItemIcon_mithrilScimitar, gItemIconPalette_mithrilScimitar},
+    [ITEM_SNOW_GLOBE] = {gItemIcon_snowGlobe, gItemIconPalette_snowGlobe},
     // Return to field arrow
     [ITEM_FIELD_ARROW] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };

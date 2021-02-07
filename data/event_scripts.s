@@ -1280,3 +1280,20 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Potterington_Farm_Interior/scripts.inc"
 
 	.include "data/maps/Pokescape_Battle_Tower_Battle_Room/scripts.inc"
+
+	.include "data/maps/Yanille/scripts.inc"
+
+	.include "data/maps/Ardougne/scripts.inc"
+
+	.include "data/maps/Route50/scripts.inc"
+
+	.include "data/maps/Route51/scripts.inc"
+
+	.include "data/maps/Route52/scripts.inc"
+
+	.include "data/maps/Route53/scripts.inc"
+
+	.include "data/maps/Route54/scripts.inc"
+
+	.include "data/maps/PortKhazard/scripts.inc"
+

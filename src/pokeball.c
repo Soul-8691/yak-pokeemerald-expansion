@@ -1334,9 +1334,9 @@ u8 CreateTradePokeballSprite(u8 a, u8 b, u8 x, u8 y, u8 oamPriority, u8 subPrior
 {
     u8 spriteId;
 
-    LoadCompressedSpriteSheetUsingHeap(&gBallSpriteSheets[0]);
-    LoadCompressedSpritePaletteUsingHeap(&gBallSpritePalettes[0]);
-    spriteId = CreateSprite(&gBallSpriteTemplates[0], x, y, subPriority);
+    LoadCompressedSpriteSheetUsingHeap(&gBallSpriteSheets[12]);
+    LoadCompressedSpritePaletteUsingHeap(&gBallSpritePalettes[12]);
+    spriteId = CreateSprite(&gBallSpriteTemplates[12], x, y, subPriority);
     gSprites[spriteId].data[0] = a;
     gSprites[spriteId].data[1] = g;
     gSprites[spriteId].data[2] = b;

@@ -10018,6 +10018,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_KINGSROCK_AFFECTED| FLAG_MIRROR_MOVE_AFFECTED | FLAG_HIT_IN_AIR,
         .split = SPLIT_SPECIAL,
+        .argument = TYPE_ELECTRIC
     },
     [MOVE_SWORD_STRIKE] =
     {

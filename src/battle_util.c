@@ -7629,15 +7629,7 @@ static void MulByTypeEffectiveness(u16 *modifier, u16 move, u8 moveType, u8 batt
 
     if (gBattleMoves[move].effect == EFFECT_FREEZE_DRY && defType == TYPE_WATER)
         mod = UQ_4_12(2.0);
-
-    if (gBattleMoves[move].effect == EFFECT_SARADOMIN_STRIKE){
-        if (defType == TYPE_WATER || defType == TYPE_FLYING){
-            mod = UQ_4_12(2.0);
-        }
-        else if (defType == TYPE_GRASS || defType == TYPE_DRAGON){
-            mod = UQ_4_12(0.5);
-        }
-    }
+    
       
 
     if (moveType == TYPE_GROUND && defType == TYPE_FLYING && IsBattlerGrounded(battlerDef) && mod == UQ_4_12(0.0))
@@ -7716,7 +7708,7 @@ u16 CalcTypeEffectivenessMultiplier(u16 move, u8 moveType, u8 battlerAtk, u8 bat
     if (move != MOVE_STRUGGLE && moveType != TYPE_MYSTERY)
     {
         modifier = CalcTypeEffectivenessMultiplierInternal(move, moveType, battlerAtk, battlerDef, recordAbilities, modifier);
-        if (gBattleMoves[move].effect == EFFECT_TWO_TYPED_MOVE)
+        if (gBattleMoves[move].effect == EFFECT_TWO_TYPED_MOVE || gBattleMoves[move].effect == EFFECT_SARADOMIN_STRIKE)
             modifier = CalcTypeEffectivenessMultiplierInternal(move, gBattleMoves[move].argument, battlerAtk, battlerDef, recordAbilities, modifier);
     }
 

@@ -1614,6 +1614,25 @@
 	.2byte \quantity
 	.endm
 
+	.macro givemonwithnature species:req, level:req, item:req, nature:req
+	.byte 0xe3
+	.2byte \species
+	.byte \level
+	.2byte \item
+	.4byte \nature
+	.4byte 0x0
+	.byte 0
+	.endm
+
+	.macro giveshinymon species:req, level:req, item:req, nature:req
+	.byte 0xe4
+	.2byte \species
+	.byte \level
+	.2byte \item
+	.4byte \nature
+	.4byte 0x0
+	.byte 0
+	.endm
 
 @ Supplementary
 

@@ -76,7 +76,8 @@
 #define FLAG_DUKE_TALKED    0x2F // Unused Flag
 
 
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
+//trade flags
+#define FLAG_LUMBRIDGE_TRADE_1    0x30 // Unused Flag
 #define FLAG_UNUSED_0x031    0x31 // Unused Flag
 #define FLAG_UNUSED_0x032    0x32 // Unused Flag
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag
@@ -93,6 +94,8 @@
 #define FLAG_UNUSED_0x03E    0x3E // Unused Flag
 #define FLAG_UNUSED_0x03F    0x3F // Unused Flag
 #define FLAG_UNUSED_0x040    0x40 // Unused Flag
+
+
 #define FLAG_UNUSED_0x041    0x41 // Unused Flag
 #define FLAG_UNUSED_0x042    0x42 // Unused Flag
 #define FLAG_UNUSED_0x043    0x43 // Unused Flag

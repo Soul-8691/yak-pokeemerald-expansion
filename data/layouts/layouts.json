@@ -5550,6 +5550,86 @@
       "secondary_tileset": "gTileset_Bank",
       "border_filepath": "data/layouts/Pokescape_Battle_Tower_Battle_Room/border.bin",
       "blockdata_filepath": "data/layouts/Pokescape_Battle_Tower_Battle_Room/map.bin"
+    },
+    {
+      "id": "LAYOUT_YANILLE",
+      "name": "Yanille_Layout",
+      "width": 68,
+      "height": 30,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Varrock",
+      "border_filepath": "data/layouts/Yanille/border.bin",
+      "blockdata_filepath": "data/layouts/Yanille/map.bin"
+    },
+    {
+      "id": "LAYOUT_ARDOUGNE",
+      "name": "Ardougne_Layout",
+      "width": 68,
+      "height": 56,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Varrock",
+      "border_filepath": "data/layouts/Ardougne/border.bin",
+      "blockdata_filepath": "data/layouts/Ardougne/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE50",
+      "name": "Route50_Layout",
+      "width": 58,
+      "height": 36,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge",
+      "border_filepath": "data/layouts/Route50/border.bin",
+      "blockdata_filepath": "data/layouts/Route50/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE51",
+      "name": "Route51_Layout",
+      "width": 46,
+      "height": 36,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route51/border.bin",
+      "blockdata_filepath": "data/layouts/Route51/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE52",
+      "name": "Route52_Layout",
+      "width": 24,
+      "height": 52,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Varrock",
+      "border_filepath": "data/layouts/Route52/border.bin",
+      "blockdata_filepath": "data/layouts/Route52/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE53",
+      "name": "Route53_Layout",
+      "width": 50,
+      "height": 16,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Varrock",
+      "border_filepath": "data/layouts/Route53/border.bin",
+      "blockdata_filepath": "data/layouts/Route53/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE54",
+      "name": "Route54_Layout",
+      "width": 12,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route54/border.bin",
+      "blockdata_filepath": "data/layouts/Route54/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_KHAZARD",
+      "name": "PortKhazard_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PortKhazard/border.bin",
+      "blockdata_filepath": "data/layouts/PortKhazard/map.bin"
     }
   ]
 }

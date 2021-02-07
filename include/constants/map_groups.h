@@ -688,6 +688,8 @@
 #define MAP_LUMBRIDGE_CASTLE_3         (15 | (38 << 8))
 #define MAP_LUMBRIDGE_CASTLE_4         (16 | (38 << 8))
 #define MAP_POTTERINGTON_FARM_INTERIOR (17 | (38 << 8))
+#define MAP_LUMBRIDGE_HOUSE_3_2F       (18 | (38 << 8))
+#define MAP_LUMBRIDGE_CHURCH           (19 | (38 << 8))
 
 // Map Group 39
 

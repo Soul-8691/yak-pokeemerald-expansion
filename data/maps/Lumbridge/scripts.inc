@@ -463,7 +463,7 @@ MaxIvs_Text_3:
 	.string "Maybe another time then..$"
 
 ChangeAbilityScript_Text_0:
-	.string "Would you like to change {STR_VAR_1}'s Ability?$"
+	.string "Would you like to change \n{STR_VAR_1}'s Ability?$"
 
 ChangeAbilityScript_Text_1:
 	.string "Ability changed!$"

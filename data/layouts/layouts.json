@@ -5630,6 +5630,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/PortKhazard/border.bin",
       "blockdata_filepath": "data/layouts/PortKhazard/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_HOUSE_3_2F",
+      "name": "Lumbridge_House_3_2F_Layout",
+      "width": 10,
+      "height": 6,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Lumbridge_House_3_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_House_3_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_CHURCH",
+      "name": "Lumbridge_Church_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_PokeScape_Church",
+      "border_filepath": "data/layouts/Lumbridge_Church/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Church/map.bin"
     }
   ]
 }

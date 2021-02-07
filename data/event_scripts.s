@@ -1297,3 +1297,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 
 	.include "data/maps/PortKhazard/scripts.inc"
 
+
+	.include "data/maps/Lumbridge_House_3_2F/scripts.inc"
+
+	.include "data/maps/Lumbridge_Church/scripts.inc"

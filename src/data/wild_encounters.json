@@ -142,7 +142,7 @@
               {
                 "min_level": 9,
                 "max_level": 9,
-                "species": "SPECIES_BEAR_CORRUPTED_FORM"
+                "species": "SPECIES_BEAR_GAUNTLET_CORRUPTED_FORM"
               },
               {
                 "min_level": 10,
@@ -13283,7 +13283,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_KALGERION"
+                "species": "SPECIES_DEMON_KALGERION_FORM"
               },
               {
                 "min_level": 5,

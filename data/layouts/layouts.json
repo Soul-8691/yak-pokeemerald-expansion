@@ -5550,8 +5550,8 @@
       "secondary_tileset": "gTileset_Bank",
       "border_filepath": "data/layouts/Pokescape_Battle_Tower_Battle_Room/border.bin",
       "blockdata_filepath": "data/layouts/Pokescape_Battle_Tower_Battle_Room/map.bin"
-	},
-	{
+    },
+    {
       "id": "LAYOUT_YANILLE",
       "name": "Yanille_Layout",
       "width": 68,

@@ -26,6 +26,7 @@
 #include "party_menu.h"
 #include "pokeball.h"
 #include "pokedex.h"
+#include "pokemon.h"
 #include "pokemon_icon.h"
 #include "pokemon_summary_screen.h"
 #include "pokemon_storage_system.h"
@@ -60,7 +61,7 @@ struct InGameTrade {
     /*0x0E*/ u8 ivs[NUM_STATS];
     /*0x14*/ u8 abilityNum;
     /*0x18*/ u32 otId;
-    /*0x1C*/ u8 conditions[CONTEST_CATEGORIES_COUNT];
+    /*0x1C*/ u32 moves[4];
     /*0x24*/ u32 personality;
     /*0x28*/ u16 heldItem;
     /*0x2A*/ u8 mailNum;
@@ -4430,13 +4431,18 @@ static void _CreateInGameTradePokemon(u8 whichPlayerMon, u8 whichInGameTrade)
 {
     const struct InGameTrade *inGameTrade = &sIngameTrades[whichInGameTrade];
     u8 level = GetMonData(&gPlayerParty[whichPlayerMon], MON_DATA_LEVEL);
-
+    u8 i;
     struct MailStruct mail;
     u8 metLocation = METLOC_IN_GAME_TRADE;
     u8 isMail;
     struct Pokemon *pokemon = &gEnemyParty[0];
 
-    CreateMon(pokemon, inGameTrade->species, level, 32, TRUE, inGameTrade->personality, OT_ID_PRESET, inGameTrade->otId);
+    if (inGameTrade->personality == 0x00){
+        CreateMon(pokemon, inGameTrade->species, level, 32, 0, 0, OT_ID_PRESET, inGameTrade->otId);
+    }
+    else{
+        CreateMon(pokemon, inGameTrade->species, level, 32, 0, 0, OT_ID_PRESET_SHINY, inGameTrade->otId);
+    }
 
     SetMonData(pokemon, MON_DATA_HP_IV, &inGameTrade->ivs[0]);
     SetMonData(pokemon, MON_DATA_ATK_IV, &inGameTrade->ivs[1]);
@@ -4448,14 +4454,17 @@ static void _CreateInGameTradePokemon(u8 whichPlayerMon, u8 whichInGameTrade)
     SetMonData(pokemon, MON_DATA_OT_NAME, inGameTrade->otName);
     SetMonData(pokemon, MON_DATA_OT_GENDER, &inGameTrade->otGender);
     SetMonData(pokemon, MON_DATA_ABILITY_NUM, &inGameTrade->abilityNum);
-    SetMonData(pokemon, MON_DATA_BEAUTY, &inGameTrade->conditions[1]);
-    SetMonData(pokemon, MON_DATA_CUTE, &inGameTrade->conditions[2]);
-    SetMonData(pokemon, MON_DATA_COOL, &inGameTrade->conditions[0]);
-    SetMonData(pokemon, MON_DATA_SMART, &inGameTrade->conditions[3]);
-    SetMonData(pokemon, MON_DATA_TOUGH, &inGameTrade->conditions[4]);
+    
+    if (!(&inGameTrade->moves[0] == MOVE_NONE)){
+        for (i = 0; i < 4; i++)
+        {
+            SetMonData(pokemon, MON_DATA_MOVE1 + i, &inGameTrade->moves[i]);
+            SetMonData(pokemon, MON_DATA_PP1 + i, &gBattleMoves[inGameTrade->moves[i]].pp);
+        }
+    }
     SetMonData(pokemon, MON_DATA_SHEEN, &inGameTrade->sheen);
     SetMonData(pokemon, MON_DATA_MET_LOCATION, &metLocation);
-
+    
     isMail = FALSE;
     if (inGameTrade->heldItem != ITEM_NONE)
     {

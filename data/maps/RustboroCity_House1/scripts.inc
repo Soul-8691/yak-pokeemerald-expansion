@@ -5,7 +5,6 @@ RustboroCity_House1_EventScript_Trader:: @ 821593F
 	lock
 	faceplayer
 	goto_if_set FLAG_RUSTBORO_NPC_TRADE_COMPLETED, RustboroCity_House1_EventScript_TradeCompleted
-	setvar VAR_0x8008, INGAME_TRADE_SEEDOT
 	copyvar VAR_0x8004, VAR_0x8008
 	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
 	copyvar VAR_0x8009, VAR_RESULT

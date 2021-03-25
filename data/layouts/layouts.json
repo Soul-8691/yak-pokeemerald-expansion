@@ -5237,7 +5237,7 @@
       "width": 20,
       "height": 16,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Tutorial_Island_Lab_Down/border.bin",
       "blockdata_filepath": "data/layouts/Tutorial_Island_Lab_Down/map.bin"
     },

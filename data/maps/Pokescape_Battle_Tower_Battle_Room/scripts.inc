@@ -30,7 +30,7 @@ Pokescape_Battle_Tower_Battle_Room_EventScript_EnterRoom:: @ 8241B6C
 	goto_if_eq Pokescape_Battle_Tower_Battle_Room_EventScript_OpponentEnter
 	applymovement LOCALID_ATTENDANT_1, Pokescape_Battle_Tower_Battle_Room_Movement_AttendantApproachPlayer
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Pokescape_Battle_Tower_Battle_Room_Movement_PlayerFaceAttendant
+	applymovement OBJ_EVENT_ID_PLAYER, Pokescape_Battle_Tower_Battle_Room_Movement_PlayerGoToChest
 	waitmovement 0
 	setvar VAR_TEMP_2, 1
 	frontier_set FRONTIER_DATA_RECORD_DISABLED, TRUE
@@ -65,9 +65,7 @@ Pokescape_Battle_Tower_Battle_Room_EventScript_DefeatedOpponent:: @ 8241C2F
 	frontier_getbrainstatus
 	compare VAR_RESULT, FRONTIER_BRAIN_NOT_READY
 	call_if_ne Pokescape_Battle_Tower_Battle_Room_EventScript_SecondAttendantEnter
-	applymovement LOCALID_ATTENDANT_1, Pokescape_Battle_Tower_Battle_Room_Movement_AttendantApproachPlayer
-	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Pokescape_Battle_Tower_Battle_Room_Movement_PlayerFaceAttendant
+	applymovement OBJ_EVENT_ID_PLAYER, Pokescape_Battle_Tower_Battle_Room_Movement_PlayerGoToChest
 	waitmovement 0
 	msgbox Pokescape_Battle_Tower_Battle_Room_Text_RestoreMonsToFullHealth, MSGBOX_DEFAULT
 	playfanfare MUS_HEAL
@@ -336,12 +334,15 @@ Pokescape_Battle_Tower_Battle_Room_Movement_PlayerEnter: @ 8242179
 	face_right
 	step_end
 
-Pokescape_Battle_Tower_Battle_Room_Movement_PlayerFaceAttendant: @ 824217E
-	face_down
+Pokescape_Battle_Tower_Battle_Room_Movement_PlayerGoToChest: @ 824217E
+	walk_left
+	walk_left
+	face_up
 	step_end
 
 Pokescape_Battle_Tower_Battle_Room_Movement_PlayerFaceBattle: @ 8242180
-	face_right
+	walk_right
+	walk_right
 	step_end
 
 Pokescape_Battle_Tower_Battle_Room_Movement_OpponentEnter: @ 8242182

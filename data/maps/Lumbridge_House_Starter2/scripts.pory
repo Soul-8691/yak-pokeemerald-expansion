@@ -1,0 +1,67 @@
+mapscripts Lumbridge_House_Starter2_MapScripts {
+}
+
+
+script Quackers {
+	lock
+	faceplayer
+    random(2)
+        switch (var(VAR_RESULT)) {
+            case 0: msgbox(format("It's Quackers!\pExplorer Jack's pet Duck."))
+            case 1: msgbox(format("It's totally Quackers."))
+        }
+	release
+	end
+}
+
+
+script ITEM_CUPHOLDER {
+	lock
+	faceplayer
+    msgbox(format("CONGRATULATIONS!\pYou OBTAINED 'A CUPHOLDER!'"))
+	release
+	end
+}
+
+
+
+
+script The_Needle_Clock
+{
+    if (var(VAR_POKESCAPE_STARTER_HOUSE_STATE)==1){
+    lock
+    msgbox(format("It's a grandfather clock.\pOne of the hands looks like it has been replaced with a weird looking needle."))
+	msgbox(format("Would you like to change the time?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT)==1){
+        clearflag (FLAG_SET_WALL_CLOCK)
+        goto (Set_The_Needle_Clock)
+        }
+        else{
+        msgbox(format("You decided to not touch the clock."))
+        }
+    }
+	msgbox(format("It's a grandfather clock."))
+	release
+    end
+}
+
+script Set_The_Needle_Clock
+{
+	fadescreen (FADE_TO_BLACK)
+	special (StartWallClock)
+	waitstate
+	setflag (FLAG_SET_WALL_CLOCK)
+}
+
+
+
+
+raw `
+EventScript_CheckClock::
+	incrementgamestat GAME_STAT_CHECKED_CLOCK
+	fadescreen FADE_TO_BLACK
+	special Special_ViewWallClock
+	waitstate
+	releaseall
+	end
+`

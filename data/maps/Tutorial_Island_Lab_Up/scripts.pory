@@ -103,7 +103,7 @@ script MemberStarterChoice{
 		}
 		else{
 			setflag (FLAG_SYS_POKEMON_GET)
-			setflag (FLAG_CHOSE_STARTER1)
+			setflag (FLAG_STARTER1)
 			givemon (SPECIES_ARMALING,5, ITEM_NONE)
 			msgbox(format("Would you like to give your monster a nickname?"), MSGBOX_YESNO)
 			if (var(VAR_RESULT) == NO){
@@ -129,7 +129,7 @@ script MemberStarterChoice{
 	
 		}
 		else{
-			setflag (FLAG_CHOSE_STARTER2)
+			setflag (FLAG_STARTER2)
 			setflag (FLAG_SYS_POKEMON_GET)
 			givemon (SPECIES_UNGODLING,5, ITEM_NONE)
 			msgbox(format("Would you like to give your monster a nickname?"), MSGBOX_YESNO)
@@ -155,7 +155,7 @@ script MemberStarterChoice{
 				goto (MemberStarterChoice)
 			}
 			else{
-				setflag (FLAG_CHOSE_STARTER3)
+				setflag (FLAG_STARTER3)
 				setflag (FLAG_SYS_POKEMON_GET)
 				givemon (SPECIES_TUMEKLING,5, ITEM_NONE)
 				msgbox(format("Would you like to give your monster a nickname?"), MSGBOX_YESNO)
@@ -191,7 +191,7 @@ script FreeStarterChoice{
 		}
 		else{
 			setflag (FLAG_SYS_POKEMON_GET)
-			setflag (FLAG_CHOSE_STARTER1)
+			setflag (FLAG_STARTER1)
 			givemon (SPECIES_GUTHLING,5, ITEM_NONE)
 			msgbox(format("Would you like to give your monster a nickname?"), MSGBOX_YESNO)
 			if (var(VAR_RESULT) == NO){
@@ -217,7 +217,7 @@ script FreeStarterChoice{
 	
 		}
 		else{
-			setflag (FLAG_CHOSE_STARTER2)
+			setflag (FLAG_STARTER2)
 			setflag (FLAG_SYS_POKEMON_GET)
 			givemon (SPECIES_ZAMLING,5, ITEM_NONE)
 			msgbox(format("Would you like to give your monster a nickname?"), MSGBOX_YESNO)
@@ -243,7 +243,7 @@ script FreeStarterChoice{
 				goto (FreeStarterChoice)
 			}
 			else{
-				setflag (FLAG_CHOSE_STARTER3)
+				setflag (FLAG_STARTER3)
 				setflag (FLAG_SYS_POKEMON_GET)
 				givemon (SPECIES_SARALING,5, ITEM_NONE)
 				msgbox(format("Would you like to give your monster a nickname?"), MSGBOX_YESNO)

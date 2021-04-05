@@ -1,472 +1,617 @@
 Lumbridge_MapScripts::
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattleTowerLobby_OnFrame
+	map_script MAP_SCRIPT_ON_TRANSITION, Lumbridge_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
 
+Lumbridge_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	goto MoveNPCsAfterEvents_Lumbridge
+	return
 
-Kevin::
+
+CUPHOLDER_NPC::
 	lock
 	faceplayer
-	msgbox Kevin_Text_0
+	msgbox CUPHOLDER_NPC_Text_0
 	release
-	multichoicedefault 1, 0, MULTI_CHEAT_MENU, 0, 0
-	switch VAR_RESULT
-	case 0, Kevin_3
-	case 1, Kevin_4
-	case 2, Kevin_5
-	case 3, Kevin_6
-	case 4, Kevin_7
-	case 5, Kevin_8
-	case 6, Kevin_9
-	case 7, Kevin_10
-Kevin_1:
-	msgbox Kevin_Text_8
-	release
-	return
-
-Kevin_3:
-	msgbox Kevin_Text_1
-	waitmessage
-	pokemart Cheat_Menu_Shop_Evolution
-	release
-	goto Kevin_1
-
-Kevin_4:
-	msgbox Kevin_Text_2
-	waitmessage
-	pokemart Cheat_Menu_Shop_Pouches
-	release
-	goto Kevin_1
-
-Kevin_5:
-	msgbox Kevin_Text_3
-	waitmessage
-	pokemart Cheat_Menu_Shop_TM
-	release
-	goto Kevin_1
-
-Kevin_6:
-	msgbox Kevin_Text_4
-	waitmessage
-	pokemart Cheat_Menu_Shop_Misc
-	release
-	goto Kevin_1
-
-Kevin_7:
-	msgbox Kevin_Text_5
-	giveitem ITEM_TERRORBIRD_POUCH
-	giveitem ITEM_PICKAXE
-	giveitem ITEM_BOAT
-	giveitem ITEM_AXE
-	giveitem ITEM_STRENGTHITEM
-	giveitem ITEM_DIVEITEM
-	giveitem ITEM_SPADE
-	giveitem ITEM_FLYITEM
-	giveitem ITEM_LANTERN
-	giveitem ITEM_WATERFALLITEM
-	giveitem ITEM_SMALL_NET
-	giveitem ITEM_LARGE_NET
-	giveitem ITEM_DRAGON_NET
-	giveitem ITEM_MAP
-	release
-	goto Kevin_1
-
-Kevin_8:
-	msgbox Kevin_Text_6
-	addmoney 250000, 0
-	release
-	goto Kevin_1
-
-Kevin_9:
-	msgbox Kevin_Text_7
-	additem ITEM_PURPLE_SWEETS, 100
-	release
-	goto Kevin_1
-
-Kevin_10:
-	release
-	goto Kevin_1
+	end
 
 
-GuardBlockLeftRoute1::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, GuardBlockLeftRoute1_2
-GuardBlockLeftRoute1_1:
-	release
-	return
-
-GuardBlockLeftRoute1_2:
-	lock
-	applymovement 13, BlockLeftLumbridge
-	waitmovement 0
-	msgbox GuardBlockLeftRoute1_Text_0
-	waitmessage
-	release
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveBackLumbridge
-	waitmovement 0
-	goto GuardBlockLeftRoute1_1
-
-
-HappyBirthday::
+Lumbridge_Phileas::
 	lock
 	faceplayer
-	msgbox HappyBirthday_Text_0
-	waitmessage
-	giveitem ITEM_DAGONHAIHAT, 1
-	applymovement 24, EmoteHeartMovement
-	msgbox HappyBirthday_Text_1
+	msgbox Lumbridge_Phileas_Text_0
 	release
-	return
+	end
 
 
-MaxIvs::
+Lumbridge_Saraowl::
 	lock
 	faceplayer
-	bufferleadmonspeciesname 0
-	msgbox MaxIvs_Text_0, MSGBOX_YESNO
-	compare VAR_RESULT, 0
-	goto_if_ne MaxIvs_2
-	msgbox MaxIvs_Text_3
-MaxIvs_1:
+	msgbox Lumbridge_Saraowl_Text_0
 	release
-	return
-
-MaxIvs_2:
-	msgbox MaxIvs_Text_1, MSGBOX_YESNO
-	compare VAR_RESULT, 0
-	goto_if_ne MaxIvs_5
-	special MaxHpIV
-	special MaxAtkIV
-	special MaxDefIV
-	special MaxSpAtkIV
-	special MaxSpDefIV
-	special MaxSpeedIV
-	msgbox MaxIvs_Text_2
-	goto MaxIvs_1
-
-MaxIvs_5:
-	special MaxHpIV
-	special MaxAtkIV
-	special MaxDefIV
-	special MaxSpAtkIV
-	special MaxSpDefIV
-	special MinSpeedIV
-	msgbox MaxIvs_Text_2
-	goto MaxIvs_1
+	end
 
 
-ChangeAbilityScript::
+Lumbridge_GENERALSTORE_CLERK::
 	lock
 	faceplayer
-	bufferleadmonspeciesname 0
-	msgbox ChangeAbilityScript_Text_0, MSGBOX_YESNO
-	compare VAR_RESULT, 0
-	goto_if_ne ChangeAbilityScript_2
-	msgbox ChangeAbilityScript_Text_2
-ChangeAbilityScript_1:
+	msgbox Lumbridge_GENERALSTORE_CLERK_Text_0
 	release
-	return
-
-ChangeAbilityScript_2:
-	special ChangeAbility
-	msgbox ChangeAbilityScript_Text_1
-	goto ChangeAbilityScript_1
+	end
 
 
-GuardBlockRightRoute1::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, GuardBlockRightRoute1_2
-GuardBlockRightRoute1_1:
-	release
-	return
-
-GuardBlockRightRoute1_2:
+Lumbridge_FAYETH::
 	lock
-	applymovement 13, BlockRightLumbridge
-	waitmovement 0
-	msgbox GuardBlockLeftRoute1_Text_0
-	waitmessage
+	faceplayer
+	msgbox Lumbridge_FAYETH_Text_0
 	release
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveBackLumbridge
-	waitmovement 0
-	goto GuardBlockRightRoute1_1
+	end
 
 
-GuardBlockUpRoute1::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, GuardBlockUpRoute1_2
-GuardBlockUpRoute1_1:
-	release
-	return
-
-GuardBlockUpRoute1_2:
+Lumbridge_BOT::
 	lock
-	applymovement 14, BlockUpLumbridge
-	waitmovement 0
-	msgbox GuardBlockLeftRoute1_Text_0
-	waitmessage
+	msgbox Lumbridge_BOT_Text_0
 	release
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveLeftLumbridge
-	waitmovement 0
-	goto GuardBlockUpRoute1_1
+	end
 
 
-GuardBlockDownRoute1::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, GuardBlockDownRoute1_2
-GuardBlockDownRoute1_1:
-	release
-	return
-
-GuardBlockDownRoute1_2:
+Lumbridge_DONIE::
 	lock
-	applymovement 14, BlockDownLumbridge
-	waitmovement 0
-	msgbox GuardBlockLeftRoute1_Text_0
-	waitmessage
+	faceplayer
+	msgbox Lumbridge_DONIE_Text_0
 	release
-	applymovement OBJ_EVENT_ID_PLAYER, PlayerMoveLeftLumbridge
+	end
+
+
+Lumbridge_HATIUS::
+	lock
+	faceplayer
+	msgbox Lumbridge_HATIUS_Text_0
+	release
+	end
+
+
+Lumbridge_LACHTOPHER::
+	lock
+	faceplayer
+	msgbox Lumbridge_LACHTOPHER_Text_0
+	release
+	end
+
+
+Lumbridge_DOOMSAYER::
+	lock
+	faceplayer
+	msgbox Lumbridge_DOOMSAYER_Text_0
+	release
+	end
+
+
+Lumbridge_IRONMAN_PAUL::
+	lock
+	faceplayer
+	msgbox Lumbridge_IRONMAN_PAUL_Text_0
+	release
+	end
+
+
+Lumbridge_BANKER::
+	lock
+	faceplayer
+	msgbox Lumbridge_BANKER_Text_0
+	release
+	end
+
+
+Lumbridge_IMP::
+	lock
+	faceplayer
+	msgbox Lumbridge_IMP_Text_0
+	release
+	end
+
+
+Lumbridge_EVENT_NPC1::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_EVENT_NPC1_2
+	lock
+	faceplayer
+	msgbox Lumbridge_EVENT_NPC1_Text_1
+	release
+	end
+
+Lumbridge_EVENT_NPC1_2:
+	lock
+	faceplayer
+	msgbox Lumbridge_EVENT_NPC1_Text_0
+	release
+	end
+
+
+Lumbridge_Guard_NORTH::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_NORTH_2
+	lock
+	faceplayer
+	msgbox Lumbridge_Guard_NORTH_Text_1
+	applymovement 13, MOVEMENT_LUMBRIDGE_GUARD_NORTH
 	waitmovement 0
-	goto GuardBlockDownRoute1_1
+	release
+	end
+
+Lumbridge_Guard_NORTH_2:
+	lock
+	faceplayer
+	msgbox Lumbridge_Guard_NORTH_Text_0
+	release
+	end
 
 
-BlockLeftLumbridge:
+MOVEMENT_LUMBRIDGE_GUARD_NORTH:
+	face_right
+	step_end
+
+Lumbridge_Guard_EAST::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_EAST_2
+	lock
+	faceplayer
+	msgbox Lumbridge_Guard_EAST_Text_0
+	release
+	end
+
+Lumbridge_Guard_EAST_2:
+	lock
+	faceplayer
+	msgbox Lumbridge_Guard_NORTH_Text_0
+	release
+	end
+
+
+Lumbridge_Guard_SOUTH::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_SOUTH_2
+	lock
+	faceplayer
+	msgbox Lumbridge_Guard_SOUTH_Text_0
+	release
+	end
+
+Lumbridge_Guard_SOUTH_2:
+	lock
+	faceplayer
+	msgbox Lumbridge_Guard_NORTH_Text_0
+	release
+	end
+
+
+Lumbridge_Guard_NORTH_TRIGGER::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_NORTH_TRIGGER_2
+	release
+	end
+
+Lumbridge_Guard_NORTH_TRIGGER_2:
+	lock
+	PlaySE SE_PIN
+	applymovement 13, LUMBRIDGE_GUARD_NORTH_TRIGGER_1
+	waitmovement 0
+	msgbox Lumbridge_Guard_NORTH_Text_0
+	waitmessage
+	applymovement OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_NORTH_TRIGGER
+	applymovement 13, LUMBRIDGE_GUARD_NORTH_TRIGGER_2
+	waitmovement 0
+	release
+	end
+
+
+LUMBRIDGE_GUARD_NORTH_TRIGGER_1:
 	emote_exclamation_mark
-	jump_in_place_left
+	face_player
 	step_end
 
-BlockRightLumbridge:
-	emote_exclamation_mark
-	jump_in_place_right
-	step_end
-
-BlockUpLumbridge:
-	emote_exclamation_mark
-	jump_in_place_up
-	step_end
-
-BlockDownLumbridge:
-	emote_exclamation_mark
-	jump_in_place_down
-	step_end
-
-EmoteHeartMovement:
-	emote_heart
-	step_end
-
-PlayerMoveLeftLumbridge:
-	walk_left
-	walk_left
-	step_end
-
-PlayerMoveBackLumbridge:
-	walk_down
+LUMBRIDGE_PLAYER_NORTH_TRIGGER:
 	walk_down
 	step_end
 
-	.align 2
-Cheat_Menu_Shop_Pouches:
-	.2byte ITEM_NORMAL_POUCH
-	.2byte ITEM_BRONZE_POUCH
-	.2byte ITEM_IRON_POUCH
-	.2byte ITEM_STEEL_POUCH
-	.2byte ITEM_BLACK_POUCH
-	.2byte ITEM_MITHRIL_POUCH
-	.2byte ITEM_ADAMANT_POUCH
-	.2byte ITEM_RUNE_POUCH
-	.2byte ITEM_DRAGON_POUCH
-	.2byte ITEM_CRYSTAL_POUCH
-	.2byte ITEM_SPLITBARK_POUCH
-	.2byte ITEM_DRAGONBANE_POUCH
-	.2byte ITEM_AUGMENTED_POUCH
-	.2byte ITEM_MYSTIC_POUCH
-	.2byte ITEM_BARROWS_POUCH
-	.2byte ITEM_GRANITE_POUCH
-	.2byte ITEM_ANCIENT_POUCH
-	.2byte ITEM_ELEMENTAL_POUCH
-	.2byte ITEM_NONE
-	release
-	end
-	
-	.align 2
-Cheat_Menu_Shop_Evolution:
-	.2byte ITEM_AIR_RUNE
-	.2byte ITEM_WATER_RUNE
-	.2byte ITEM_EARTH_RUNE
-	.2byte ITEM_FIRE_RUNE
-	.2byte ITEM_COSMIC_RUNE
-	.2byte ITEM_CHAOS_RUNE
-	.2byte ITEM_MIND_RUNE
-	.2byte ITEM_BODY_RUNE
-	.2byte ITEM_LAW_RUNE
-	.2byte ITEM_NATURE_RUNE
-	.2byte ITEM_DEATH_RUNE
-	.2byte ITEM_BLOOD_RUNE
-	.2byte ITEM_SOUL_RUNE
-	.2byte ITEM_ASTRAL_RUNE
-	.2byte ITEM_DUST_RUNE
-	.2byte ITEM_MUD_RUNE
-	.2byte ITEM_MIST_RUNE
-	.2byte ITEM_LAVA_RUNE
-	.2byte ITEM_LIFE_RUNE
-	.2byte ITEM_SPIRIT_CHARM
-	.2byte ITEM_LEGENDARY_ITEM
-	.2byte ITEM_RED_SCALE
-	.2byte ITEM_BLUE_SCALE
-	.2byte ITEM_GREEN_SCALE
-	.2byte ITEM_BLACK_SCALE
-	.2byte ITEM_FRAGMENT_OF_JAS
-	.2byte ITEM_CABBAGE
-	.2byte ITEM_NONE
+LUMBRIDGE_GUARD_NORTH_TRIGGER_2:
+	face_down
+	step_end
+
+Lumbridge_Guard_EAST_TRIGGER::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_EAST_TRIGGER_2
 	release
 	end
 
-	.align 2
-Cheat_Menu_Shop_TM:
-	.2byte ITEM_TM01
-	.2byte ITEM_TM02
-	.2byte ITEM_TM03
-    .2byte ITEM_TM04
-    .2byte ITEM_TM05
-    .2byte ITEM_TM06
-    .2byte ITEM_TM07
-    .2byte ITEM_TM08
-    .2byte ITEM_TM09
-    .2byte ITEM_TM10
-    .2byte ITEM_TM11
-    .2byte ITEM_TM12
-    .2byte ITEM_TM13
-    .2byte ITEM_TM14
-    .2byte ITEM_TM15
-    .2byte ITEM_TM16
-    .2byte ITEM_TM17
-    .2byte ITEM_TM18
-    .2byte ITEM_TM19
-    .2byte ITEM_TM20
-    .2byte ITEM_TM21
-    .2byte ITEM_TM22
-    .2byte ITEM_TM23
-    .2byte ITEM_TM24
-    .2byte ITEM_TM25
-    .2byte ITEM_TM26
-    .2byte ITEM_TM27
-    .2byte ITEM_TM28
-    .2byte ITEM_TM29
-    .2byte ITEM_TM30
-    .2byte ITEM_TM31
-    .2byte ITEM_TM32
-    .2byte ITEM_TM33
-    .2byte ITEM_TM34
-    .2byte ITEM_TM35
-    .2byte ITEM_TM36
-    .2byte ITEM_TM37
-    .2byte ITEM_TM38
-    .2byte ITEM_TM39
-    .2byte ITEM_TM40
-    .2byte ITEM_TM41
-    .2byte ITEM_TM42
-    .2byte ITEM_TM43
-    .2byte ITEM_TM44
-    .2byte ITEM_TM45
-    .2byte ITEM_TM46
-    .2byte ITEM_TM47
-    .2byte ITEM_TM48
-    .2byte ITEM_TM49
-    .2byte ITEM_TM50
-	.2byte ITEM_TM51
-	.2byte ITEM_TM52
-	.2byte ITEM_TM53
-	.2byte ITEM_TM54
-	.2byte ITEM_TM55
-	.2byte ITEM_TM56
-	.2byte ITEM_TM57
-	.2byte ITEM_TM58
-	.2byte ITEM_TM59
-	.2byte ITEM_TM60
-	.2byte ITEM_TM61
-	.2byte ITEM_TM62
-	.2byte ITEM_TM63
-	.2byte ITEM_TM64
-	.2byte ITEM_TM65
-	.2byte ITEM_TM66
-	.2byte ITEM_NONE
-	release
-	end
-	
-	.align 2
-Cheat_Menu_Shop_Misc:
-	.2byte ITEM_MAX_REPEL
-	.2byte ITEM_BLUEBERRY_SPECIAL
-	.2byte ITEM_BREAD
-	.2byte ITEM_CHOCOLATE_CAKE
-	.2byte ITEM_LAMP_ATT
-	.2byte ITEM_LAMP_DEF
-	.2byte ITEM_LAMP_HP
-	.2byte ITEM_LAMP_SPATT
-	.2byte ITEM_LAMP_SPDEF
-	.2byte ITEM_LAMP_SPEED
-	.2byte ITEM_POTION_ATT
-	.2byte ITEM_POTION_DEF
-	.2byte ITEM_POTION_SPATT
-	.2byte ITEM_POTION_SPDEF
-	.2byte ITEM_PRAYER_POTION
-	.2byte ITEM_STAT_BEER
-	.2byte ITEM_STAT_MOONLIGHT_MEAD
-	.2byte ITEM_NONE
+Lumbridge_Guard_EAST_TRIGGER_2:
+	lock
+	PlaySE SE_PIN
+	applymovement 14, LUMBRIDGE_GUARD_EAST_TRIGGER_1
+	waitmovement 0
+	msgbox Lumbridge_Guard_NORTH_Text_0
+	waitmessage
+	applymovement OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_EAST_TRIGGER
+	applymovement 14, LUMBRIDGE_GUARD_EAST_TRIGGER_2
+	waitmovement 0
 	release
 	end
 
-Kevin_Text_0:
-	.string "Hi Boss! What can I do for ya?$"
 
-Kevin_Text_1:
-	.string "What runes would you like?$"
+LUMBRIDGE_GUARD_EAST_TRIGGER_1:
+	emote_exclamation_mark
+	face_player
+	step_end
 
-Kevin_Text_2:
-	.string "What pouches would you like?$"
+LUMBRIDGE_PLAYER_EAST_TRIGGER:
+	walk_left
+	step_end
 
-Kevin_Text_3:
-	.string "Look at my wares!$"
+LUMBRIDGE_GUARD_EAST_TRIGGER_2:
+	face_left
+	step_end
 
-Kevin_Text_4:
-	.string "Look at my junk!$"
+Lumbridge_Guard_SOUTH_TRIGGER::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_SOUTH_TRIGGER_2
+	release
+	end
 
-Kevin_Text_5:
-	.string "These might be important!$"
+Lumbridge_Guard_SOUTH_TRIGGER_2:
+	lock
+	PlaySE SE_PIN
+	applymovement 12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_1
+	waitmovement 0
+	msgbox Lumbridge_Guard_NORTH_Text_0
+	waitmessage
+	applymovement OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_SOUTH_TRIGGER
+	applymovement 12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_2
+	waitmovement 0
+	release
+	end
 
-Kevin_Text_6:
-	.string "Get money!$"
 
-Kevin_Text_7:
-	.string "Heres some candy!$"
+LUMBRIDGE_GUARD_SOUTH_TRIGGER_1:
+	emote_exclamation_mark
+	face_player
+	step_end
 
-Kevin_Text_8:
-	.string "Smell ya later!$"
+LUMBRIDGE_PLAYER_SOUTH_TRIGGER:
+	walk_left
+	step_end
 
-GuardBlockLeftRoute1_Text_0:
-	.string "You should speak to the cook first. I\n"
-	.string "heard he was looking for help.$"
+LUMBRIDGE_GUARD_SOUTH_TRIGGER_2:
+	face_left
+	step_end
 
-HappyBirthday_Text_0:
-	.string "Today is my birthday! To celebrate I'm\n"
-	.string "giving everyone this cool hat! Here you\l"
-	.string "can have one too!$"
+MoveNPCsAfterEvents_Lumbridge::
+	goto_if_set FLAG_COOKS_ASSIST_STARTED, MoveNPCsAfterEvents_Lumbridge_1
+	return
 
-HappyBirthday_Text_1:
-	.string "I hope you like it as much as I do!$"
+MoveNPCsAfterEvents_Lumbridge_1:
+	setobjectxyperm 12, 37, 34
+	setobjectmovementtype 12, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 13, 10, 5
+	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm 14, 41, 20
+	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 25, 35, 5
+	setobjectmovementtype 25, MOVEMENT_TYPE_WANDER_AROUND
+	return
 
-MaxIvs_Text_0:
-	.string "Would you like to max {STR_VAR_1}'s IVs?$"
 
-MaxIvs_Text_1:
-	.string "Would you like 0 speed IVs?$"
+Lumbridge_Bridge_NPC1::
+	lock
+	faceplayer
+	msgbox Lumbridge_Bridge_NPC1_Text_0
+	release
+	end
 
-MaxIvs_Text_2:
-	.string "Enjoy your IVs!$"
 
-MaxIvs_Text_3:
-	.string "Maybe another time then..$"
+Lumbridge_House_NPC1::
+	lock
+	faceplayer
+	msgbox Lumbridge_House_NPC1_Text_0
+	release
+	end
 
-ChangeAbilityScript_Text_0:
-	.string "Would you like to change \n{STR_VAR_1}'s Ability?$"
 
-ChangeAbilityScript_Text_1:
-	.string "Ability changed!$"
+Lumbridge_GeneralStore_NPC1::
+	lock
+	faceplayer
+	msgbox Lumbridge_GeneralStore_NPC1_Text_0
+	release
+	end
 
-ChangeAbilityScript_Text_2:
-	.string "Maybe another time then?$"
+
+Lumbridge_GeneralStore_NPC2::
+	lock
+	faceplayer
+	msgbox Lumbridge_GeneralStore_NPC2_Text_0
+	release
+	end
+
+
+Lumbridge_House_BobsAxes::
+	lock
+	faceplayer
+	msgbox Lumbridge_House_BobsAxes_Text_0
+	release
+	end
+
+
+Lumbridge_House_BobsGirl::
+	lock
+	faceplayer
+	msgbox Lumbridge_House_BobsGirl_Text_0
+	release
+	end
+
+
+Lumbridge_House_Victoria::
+	lock
+	faceplayer
+	msgbox Lumbridge_House_Victoria_Text_0
+	release
+	end
+
+
+Lumbridge_House_NPC3::
+	lock
+	faceplayer
+	msgbox Lumbridge_House_NPC3_Text_0
+	release
+	end
+
+
+Lumbridge_House_NPC4::
+	lock
+	faceplayer
+	msgbox Lumbridge_House_NPC4_Text_0
+	release
+	end
+
+
+Lumbridge_GeneralStore_MOD_ASH::
+	lock
+	faceplayer
+	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_0
+	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_1
+	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_2
+	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_3
+	release
+	end
+
+
+Lumbridge_GeneralStore_FANFIC::
+	lock
+	faceplayer
+	msgbox Lumbridge_GeneralStore_FANFIC_Text_0
+	release
+	end
+
+
+Lumbridge_House_Roddeck::
+	goto_if_set FLAG_COOKS_ASSIST_STARTED, Lumbridge_House_Roddeck_2
+	msgbox Lumbridge_House_Roddeck_Text_2
+	release
+	end
+
+Lumbridge_House_Roddeck_2:
+	lock
+	faceplayer
+	msgbox Lumbridge_House_Roddeck_Text_0
+	msgbox Lumbridge_House_Roddeck_Text_1
+	release
+	end
+
+
+CUPHOLDER_NPC_Text_0:
+	.string "I am currently a Cupholder with no\n"
+	.string "dialog.$"
+
+Lumbridge_Phileas_Text_0:
+	.string "My Saraowl keeps me company on my\n"
+	.string "travels.$"
+
+Lumbridge_Saraowl_Text_0:
+	.string "Hoo Hoo!$"
+
+Lumbridge_GENERALSTORE_CLERK_Text_0:
+	.string "Hello there and welcome to the General\n"
+	.string "Store.\p"
+	.string "What is the General Store you ask?\p"
+	.string "You did not ask?\p"
+	.string "Well, I will tell you anyway because I\n"
+	.string "like your face!\p"
+	.string "The general store is where we sell items\n"
+	.string "TO YOU for a small insignificant fee.\p"
+	.string "You are about to go on an adventure?\p"
+	.string "Well you better get to the General\n"
+	.string "Store to buy Buckets and other items\l"
+	.string "that will help you out!\p"
+	.string "At the General Store!$"
+
+Lumbridge_FAYETH_Text_0:
+	.string "You should keep in mind you can only\n"
+	.string "capture a monster when their health is\l"
+	.string "above zero.$"
+
+Lumbridge_BOT_Text_0:
+	.string "...\p"
+	.string "...\p"
+	.string "...\p"
+	.string "...\p"
+	.string "There is no response.$"
+
+Lumbridge_DONIE_Text_0:
+	.string "It is always good to talk to people,\n"
+	.string "even if they do not give you anything.\p"
+	.string "They might give you vital information\n"
+	.string "for your adventure.$"
+
+Lumbridge_HATIUS_Text_0:
+	.string "There were some muggers in the alley\n"
+	.string "eyeing off my 3rd armour.\p"
+	.string "So I've had to change into a more casual\n"
+	.string "look.\p"
+	.string "But now the Goblins are eyeing me, I\n"
+	.string "cannot win.$"
+
+Lumbridge_LACHTOPHER_Text_0:
+	.string "Free st00f pl0x!$"
+
+Lumbridge_DOOMSAYER_Text_0:
+	.string "DOOOOOOOM!\p"
+	.string "I can sense it on you!\p"
+	.string "You have a terrible doom in your future!$"
+
+Lumbridge_IRONMAN_PAUL_Text_0:
+	.string "My friend Adam is currently on Tutorial\n"
+	.string "Island.\p"
+	.string "I wonder when he'll come home.$"
+
+Lumbridge_BANKER_Text_0:
+	.string "A few years ago we were in a bidding war\n"
+	.string "with a fisherman.\p"
+	.string "He wanted to put a fishing shop here\n"
+	.string "instead of a bank.\p"
+	.string "We polled it to the community and we won\n"
+	.string "by 75% of votes.$"
+
+Lumbridge_IMP_Text_0:
+	.string "You found an Imp!\p"
+	.string "COR'BLIMEY MATE!\l"
+	.string "It tried to steal your pouches.$"
+
+Lumbridge_EVENT_NPC1_Text_0:
+	.string "Woowee!\p"
+	.string "So this is Lumbridge Castle.\p"
+	.string "I'm too afraid to walk through the\n"
+	.string "gates.$"
+
+Lumbridge_EVENT_NPC1_Text_1:
+	.string "I've come all the way from Catherby.\p"
+	.string "I've always wanted to check out what\n"
+	.string "sort of fish can be caught in the River\l"
+	.string "Lum.$"
+
+Lumbridge_Guard_NORTH_Text_0:
+	.string "I'm sorry, but it's really dangerous out\n"
+	.string "there for anyone who isn't an\l"
+	.string "adventurer.$"
+
+Lumbridge_Guard_NORTH_Text_1:
+	.string "Please don't bother me while I'm on my\n"
+	.string "break.$"
+
+Lumbridge_Guard_EAST_Text_0:
+	.string "Be careful, there are a lot of gobins\n"
+	.string "across the bridge.$"
+
+Lumbridge_Guard_SOUTH_Text_0:
+	.string "It's quite dangerous even with a\n"
+	.string "monster to protect you.\p"
+	.string "So be careful.$"
+
+Lumbridge_Bridge_NPC1_Text_0:
+	.string "People just run trough this area.\p"
+	.string "They should call it run by the bridge\n"
+	.string "instead of Lumbridge.$"
+
+Lumbridge_House_NPC1_Text_0:
+	.string "The forge broke, so I've sent for a\n"
+	.string "dwarf to come from Falador to fix it.$"
+
+Lumbridge_GeneralStore_NPC1_Text_0:
+	.string "It is better to have more pouches than\n"
+	.string "less.\p"
+	.string "If you are on a long trip you might need\n"
+	.string "them.$"
+
+Lumbridge_GeneralStore_NPC2_Text_0:
+	.string "There are a lot of goblins around these\n"
+	.string "parts, you might want to stock up on\l"
+	.string "some antipoisons.\p"
+	.string "This will prepare you for the worst.$"
+
+Lumbridge_House_BobsAxes_Text_0:
+	.string "Welcome to Bob's Brilliant Axes.\p"
+	.string "My name is Bob, how may I be of\n"
+	.string "assistance?$"
+
+Lumbridge_House_BobsGirl_Text_0:
+	.string "Hey, are you the contractor we hired to\n"
+	.string "fix our bed?\p"
+	.string "...\l"
+	.string "No?\p"
+	.string "Why are you in our house?$"
+
+Lumbridge_House_Victoria_Text_0:
+	.string "Please don't give my brother,\n"
+	.string "Lachtopher any money.\p"
+	.string "He is lazy and begs random strangers all\n"
+	.string "the time.$"
+
+Lumbridge_House_NPC3_Text_0:
+	.string "I used a Bronze Pouch.\p"
+	.string "Turns out they're really bad for\n"
+	.string "catching monsters.$"
+
+Lumbridge_House_NPC4_Text_0:
+	.string "Some monster evolve differently\n"
+	.string "depending on which evolution method.$"
+
+Lumbridge_GeneralStore_MOD_ASH_Text_0:
+	.string "WOAH!\p"
+	.string "I didn't see you there, I almost spilt my\n"
+	.string "drink.\p"
+	.string "I'm just writing out some dialog for my\n"
+	.string "new fanfic.\p"
+	.string "I call it MY ARM'S BIG ADVENTURE!\p"
+	.string "...\p"
+	.string "What?\l"
+	.string "It is a great name.\p"
+	.string "Although I'm a bit stuck, I've made the\n"
+	.string "adventuer in this story fight a giant\l"
+	.string "bird but I'm not sure what the bird\l"
+	.string "should look like.\p"
+	.string "Do you have any monsters that might\n"
+	.string "help inspire me?$"
+
+Lumbridge_GeneralStore_MOD_ASH_Text_1:
+	.string "No, I don't think that would work..$"
+
+Lumbridge_GeneralStore_MOD_ASH_Text_2:
+	.string "Yes!\p"
+	.string "That's it!\p"
+	.string "I'll have the player face off against a\n"
+	.string "giant ROC!\p"
+	.string "Thank you for giving me the inspiration\n"
+	.string "I need to finish my story!\p"
+	.string "Please take this!$"
+
+Lumbridge_GeneralStore_MOD_ASH_Text_3:
+	.string "Once again, thank you for helping me.\p"
+	.string "What is that?\p"
+	.string "You would like to read my fanfic?\p"
+	.string "Sorry it's not finished yet, you'll have\n"
+	.string "to wait.\p"
+	.string "...\p"
+	.string "How long?\p"
+	.string "Soon TM.$"
+
+Lumbridge_GeneralStore_FANFIC_Text_0:
+	.string "It's a fanfic filled to the brim with\n"
+	.string "weird innuendo's.$"
+
+Lumbridge_House_Roddeck_Text_0:
+	.string "Hello adventurer!\p"
+	.string "Do you happen to have a Green\n"
+	.string "Dragonling?\p"
+	.string "Would you be willing to trade it for my\n"
+	.string "Red Dragon?$"
+
+Lumbridge_House_Roddeck_Text_1:
+	.string "Please take care of Sottlepot, he is a\n"
+	.string "good boy.$"
+
+Lumbridge_House_Roddeck_Text_2:
+	.string "Did you know the more Badges you have\n"
+	.string "the easier it is to control Monsters\l"
+	.string "obtained in a trade?\p"
+	.string "I wish I knew that before Sottlepot\n"
+	.string "went on a rampage killing Sir Vant and\l"
+	.string "an adventurer..$"

@@ -111,7 +111,7 @@ MemberStarterChoice_2:
 	compare VAR_RESULT, NO
 	goto_if_eq MemberStarterChoice_5
 	setflag FLAG_SYS_POKEMON_GET
-	setflag FLAG_CHOSE_STARTER1
+	setflag FLAG_STARTER1
 	givemon SPECIES_ARMALING, 5, ITEM_NONE
 	msgbox MemberStarterChoice_Text_2, MSGBOX_YESNO
 	compare VAR_RESULT, NO
@@ -128,7 +128,7 @@ MemberStarterChoice_3:
 	msgbox MemberStarterChoice_Text_1, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq MemberStarterChoice_8
-	setflag FLAG_CHOSE_STARTER2
+	setflag FLAG_STARTER2
 	setflag FLAG_SYS_POKEMON_GET
 	givemon SPECIES_UNGODLING, 5, ITEM_NONE
 	msgbox MemberStarterChoice_Text_2, MSGBOX_YESNO
@@ -146,7 +146,7 @@ MemberStarterChoice_4:
 	msgbox MemberStarterChoice_Text_1, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq MemberStarterChoice_11
-	setflag FLAG_CHOSE_STARTER3
+	setflag FLAG_STARTER3
 	setflag FLAG_SYS_POKEMON_GET
 	givemon SPECIES_TUMEKLING, 5, ITEM_NONE
 	msgbox MemberStarterChoice_Text_2, MSGBOX_YESNO
@@ -205,7 +205,7 @@ FreeStarterChoice_2:
 	compare VAR_RESULT, NO
 	goto_if_eq FreeStarterChoice_5
 	setflag FLAG_SYS_POKEMON_GET
-	setflag FLAG_CHOSE_STARTER1
+	setflag FLAG_STARTER1
 	givemon SPECIES_GUTHLING, 5, ITEM_NONE
 	msgbox MemberStarterChoice_Text_2, MSGBOX_YESNO
 	compare VAR_RESULT, NO
@@ -222,7 +222,7 @@ FreeStarterChoice_3:
 	msgbox MemberStarterChoice_Text_1, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq FreeStarterChoice_8
-	setflag FLAG_CHOSE_STARTER2
+	setflag FLAG_STARTER2
 	setflag FLAG_SYS_POKEMON_GET
 	givemon SPECIES_ZAMLING, 5, ITEM_NONE
 	msgbox MemberStarterChoice_Text_2, MSGBOX_YESNO
@@ -240,7 +240,7 @@ FreeStarterChoice_4:
 	msgbox MemberStarterChoice_Text_1, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq FreeStarterChoice_11
-	setflag FLAG_CHOSE_STARTER3
+	setflag FLAG_STARTER3
 	setflag FLAG_SYS_POKEMON_GET
 	givemon SPECIES_SARALING, 5, ITEM_NONE
 	msgbox MemberStarterChoice_Text_2, MSGBOX_YESNO

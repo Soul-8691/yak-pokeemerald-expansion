@@ -2,7 +2,7 @@
   "id": "MAP_LUMBRIDGE_CASTLE_1",
   "name": "Lumbridge_Castle_1",
   "layout": "LAYOUT_LUMBRIDGE_CASTLE_1",
-  "music": "MUS_RG_TRAINER_TOWER",
+  "music": "MUS_POKESCAPE_PORT_SARIM",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -15,47 +15,8 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_hans",
-      "x": 20,
-      "y": 27,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Hans",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_woman_1",
-      "x": 15,
-      "y": 29,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
-      "movement_range_x": 1,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Woman1LumbridgeCastle",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_imp",
-      "x": 28,
-      "y": 26,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "ImpBattleLumbridge",
-      "flag": "FLAG_TEMP_1"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_man_1",
-      "x": 15,
+      "graphics_id": "OBJ_EVENT_GFX_sudo_bash",
+      "x": 21,
       "y": 25,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -63,7 +24,46 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Man1LumbridgeCastle",
+      "script": "CUPHOLDER_NPC",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_sudo_bash",
+      "x": 29,
+      "y": 27,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CUPHOLDER_NPC",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SUDOWOODO",
+      "x": 31,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CUPHOLDER_NPC",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_man_1",
+      "x": 17,
+      "y": 25,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Lumbridge_Castle_NPC1",
       "flag": "0"
     },
     {
@@ -74,7 +74,7 @@
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LumbridgeGym1",
       "flag": "0"
@@ -87,7 +87,7 @@
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LumbridgeGym2",
       "flag": "0"
@@ -100,7 +100,7 @@
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LumbridgeGym3",
       "flag": "0"
@@ -113,7 +113,7 @@
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LumbridgeGym4",
       "flag": "0"
@@ -122,14 +122,14 @@
   "warp_events": [
     {
       "x": 22,
-      "y": 30,
+      "y": 32,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE",
       "dest_warp_id": 10
     },
     {
-      "x": 23,
-      "y": 30,
+      "x": 24,
+      "y": 32,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE",
       "dest_warp_id": 9

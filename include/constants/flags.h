@@ -53,10 +53,10 @@
 
 
 //POKESCAPE START FLAGS
-#define FLAG_MEMBERSHIP        0x25 // Unused Flag
-#define FLAG_CHOSE_STARTER1    0x26 // Unused Flag
-#define FLAG_CHOSE_STARTER2    0x27 // Unused Flag
-#define FLAG_CHOSE_STARTER3    0x28 // Unused Flag
+#define FLAG_MEMBERSHIP         0x25 // Unused Flag
+#define FLAG_STARTER1           0x26 // Unused Flag
+#define FLAG_STARTER2           0x27 // Unused Flag
+#define FLAG_STARTER3           0x28 // Unused Flag
 
 //POKESCAPE TUTORIAL ISLAND SCRIPTS
 #define FLAG_RATDEFEATED    0x29 // Unused Flag

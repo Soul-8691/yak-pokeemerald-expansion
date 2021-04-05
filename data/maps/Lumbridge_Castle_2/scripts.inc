@@ -1,10 +1,472 @@
 Lumbridge_Castle_2_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_TRANSITION
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
-Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_TRANSITION:
-	goto TryMoveGuardLumbridgeCastle2
+Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
+	map_script_2 VAR_POKESCAPE_LUMBRIDGE_CASTLE_STATE, 0, Lumbridge_Castle_Introduction
+	.2byte 0
+
+
+Lumbridge_Castle_Introduction::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Castle_Introduction_2
+	release
+	end
+
+Lumbridge_Castle_Introduction_2:
+	lockall
+	setvar VAR_POKESCAPE_LUMBRIDGE_CASTLE_STATE, 1
+	applymovement 9, Movement_Duke
+	applymovement 10, Movement_Hans_1
+	waitmovement 0
+	playse SE_PIN
+	applymovement 10, Movement_Hans_2
+	waitmovement 0
+	msgbox Lumbridge_Castle_Introduction_Text_0
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_PLAYER_1
+	waitmovement 0
+	msgbox Lumbridge_Castle_Introduction_Text_1
+	waitmessage
+	closemessage
+	applymovement 10, Movement_Hans_3
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_PLAYER_2
+	waitmovement 0
+	applymovement 4, Movement_NORMALTREE_1
+	waitmovement 0
+	msgbox Lumbridge_Castle_Introduction_Text_2
+	applymovement 4, Movement_NORMALTREE_2
+	waitmovement 0
+	msgbox Lumbridge_Castle_Introduction_Text_3
+	msgbox Lumbridge_Castle_Introduction_Text_4, MSGBOX_YESNO
+Lumbridge_Castle_Introduction_5:
+	compare VAR_RESULT, 1
+	goto_if_ne Lumbridge_Castle_Introduction_6
+	msgbox Lumbridge_Castle_Introduction_Text_6
+	release
+	end
+
+Lumbridge_Castle_Introduction_6:
+	msgbox Lumbridge_Castle_Introduction_Text_5, MSGBOX_YESNO
+	goto Lumbridge_Castle_Introduction_5
+
+
+Lumbridge_Castle_Professor_Normal_Tree_1::
+	goto_if_set FLAG_STARTER1, Lumbridge_Castle_Professor_Normal_Tree_1_2
+	goto_if_set FLAG_STARTER2, Lumbridge_Castle_Professor_Normal_Tree_1_3
+	goto_if_set FLAG_STARTER3, Lumbridge_Castle_Professor_Normal_Tree_1_4
+Lumbridge_Castle_Professor_Normal_Tree_1_1:
+	msgbox Lumbridge_Castle_Professor_Normal_Tree_1_Text_0
+	waitmessage
+	closemessage
+	fadescreen FADE_TO_BLACK
+	removeobject 4
+	fadescreen FADE_FROM_BLACK
+	goto Lumbridge_Castle_Hans_1
+	release
+	end
+
+Lumbridge_Castle_Professor_Normal_Tree_1_2:
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_Starter1
+	waitmovement 0
+	goto Lumbridge_Castle_Professor_Normal_Tree_1_1
+
+Lumbridge_Castle_Professor_Normal_Tree_1_3:
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_Starter2
+	waitmovement 0
+	goto Lumbridge_Castle_Professor_Normal_Tree_1_1
+
+Lumbridge_Castle_Professor_Normal_Tree_1_4:
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_Starter3
+	waitmovement 0
+	goto Lumbridge_Castle_Professor_Normal_Tree_1_1
+
+
+Lumbridge_Castle_Professor_Normal_Tree_2::
+	lock
+	faceplayer
+	msgbox Lumbridge_Castle_Professor_Normal_Tree_2_Text_0
+	release
+	end
+
+
+Lumbridge_Castle_Hans_0::
+	lock
+	faceplayer
+	msgbox Lumbridge_Castle_Hans_0_Text_0
+	release
+	end
+
+
+Lumbridge_Castle_Hans_1::
+	applymovement 10, Movement_Hans_4
+	waitmovement 0
+	msgbox Lumbridge_Castle_Hans_1_Text_0
+	waitmessage
+	closemessage
+	fadescreen FADE_TO_BLACK
+	removeobject 9
+	removeobject 10
+	fadescreen FADE_FROM_BLACK
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
+	release
+	end
+
+
+Starter_TRIGGER::
+	goto_if_unset FLAG_SYS_POKEMON_GET, Starter_TRIGGER_1
+	release
+	end
+
+Starter_TRIGGER_1:
+	lock
+	msgbox Lumbridge_Castle_Professor_Normal_Tree_2_Text_0
+	waitmessage
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_Starter_TRIGGER
+	waitmovement 0
+	release
 	return
+
+
+Movement_Starter_TRIGGER:
+	walk_up
+	step_end
+
+Movement_Duke:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+Movement_Hans_1:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+Movement_Hans_2:
+	emote_exclamation_mark
+	face_player
+	delay_16
+	walk_down
+	step_end
+
+Movement_PLAYER_1:
+	walk_in_place_up
+	walk_in_place_up
+	step_end
+
+Movement_Hans_3:
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	step_end
+
+Movement_PLAYER_2:
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	face_up
+	step_end
+
+Movement_NORMALTREE_1:
+	face_right
+	step_end
+
+Movement_NORMALTREE_2:
+	face_player
+	step_end
+
+Movement_Hans_4:
+	walk_left
+	face_player
+	step_end
+
+Movement_Starter1:
+	walk_right
+	face_up
+	step_end
+
+Movement_Starter2:
+	face_up
+	step_end
+
+Movement_Starter3:
+	walk_left
+	face_up
+	step_end
+
+Pouch_Starter1::
+	lock
+	goto_if_set FLAG_STARTER2, Pouch_Starter1_1
+	goto_if_set FLAG_STARTER3, Pouch_Starter1_1
+	goto_if_unset FLAG_MEMBERSHIP, Pouch_Starter1_6
+	goto_if_set FLAG_MEMBERSHIP, Pouch_Starter1_7
+	return
+
+Pouch_Starter1_1:
+	msgbox Pouch_Starter1_Text_0
+	release
+	return
+
+Pouch_Starter1_6:
+	lock
+	showmonpic SPECIES_GUTHLING, 10, 3
+	msgbox Pouch_Starter1_Text_1
+	msgbox Pouch_Starter1_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Pouch_Starter1_10
+	setflag FLAG_SYS_POKEMON_GET
+	givemon SPECIES_GUTHLING, 5, ITEM_NONE
+	msgbox Pouch_Starter1_Text_3, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Pouch_Starter1_17
+	setvar VAR_0x8004, 0
+	call Common_EventScript_NameReceivedPartyMon
+	removeobject 5
+Pouch_Starter1_16:
+	goto Lumbridge_Castle_Professor_Normal_Tree_1
+	return
+
+Pouch_Starter1_7:
+	lock
+	showmonpic SPECIES_ARMALING, 10, 3
+	msgbox Pouch_Starter1_Text_4
+	msgbox Pouch_Starter1_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Pouch_Starter1_13
+	setflag FLAG_SYS_POKEMON_GET
+	givemon SPECIES_ARMALING, 5, ITEM_NONE
+	msgbox Pouch_Starter1_Text_3, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Pouch_Starter1_21
+	setvar VAR_0x8004, 0
+	call Common_EventScript_NameReceivedPartyMon
+	removeobject 5
+Pouch_Starter1_20:
+	goto Lumbridge_Castle_Professor_Normal_Tree_1
+	return
+
+Pouch_Starter1_10:
+	hidemonpic
+	release
+	return
+
+Pouch_Starter1_13:
+	hidemonpic
+	release
+	return
+
+Pouch_Starter1_17:
+	removeobject 5
+	hidemonpic
+	release
+	goto Pouch_Starter1_16
+
+Pouch_Starter1_21:
+	removeobject 5
+	hidemonpic
+	release
+	goto Pouch_Starter1_20
+
+
+Pouch_Starter2::
+	lock
+	goto_if_set FLAG_STARTER1, Pouch_Starter2_1
+	goto_if_set FLAG_STARTER3, Pouch_Starter2_1
+	goto_if_unset FLAG_MEMBERSHIP, Pouch_Starter2_6
+	goto_if_set FLAG_MEMBERSHIP, Pouch_Starter2_7
+	return
+
+Pouch_Starter2_1:
+	msgbox Pouch_Starter1_Text_0
+	release
+	return
+
+Pouch_Starter2_6:
+	lock
+	showmonpic SPECIES_ZAMLING, 10, 3
+	msgbox Pouch_Starter2_Text_0
+	msgbox Pouch_Starter1_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Pouch_Starter2_10
+	setflag FLAG_SYS_POKEMON_GET
+	givemon SPECIES_ZAMLING, 5, ITEM_NONE
+	msgbox Pouch_Starter1_Text_3, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Pouch_Starter2_17
+	setvar VAR_0x8004, 0
+	call Common_EventScript_NameReceivedPartyMon
+	removeobject 6
+Pouch_Starter2_16:
+	goto Lumbridge_Castle_Professor_Normal_Tree_1
+	return
+
+Pouch_Starter2_7:
+	lock
+	showmonpic SPECIES_UNGODLING, 10, 3
+	msgbox Pouch_Starter2_Text_1
+	msgbox Pouch_Starter1_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Pouch_Starter2_13
+	setflag FLAG_SYS_POKEMON_GET
+	givemon SPECIES_UNGODLING, 5, ITEM_NONE
+	msgbox Pouch_Starter1_Text_3, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Pouch_Starter2_21
+	setvar VAR_0x8004, 0
+	call Common_EventScript_NameReceivedPartyMon
+	removeobject 6
+Pouch_Starter2_20:
+	goto Lumbridge_Castle_Professor_Normal_Tree_1
+	return
+
+Pouch_Starter2_10:
+	hidemonpic
+	release
+	return
+
+Pouch_Starter2_13:
+	hidemonpic
+	release
+	return
+
+Pouch_Starter2_17:
+	removeobject 6
+	hidemonpic
+	release
+	goto Pouch_Starter2_16
+
+Pouch_Starter2_21:
+	removeobject 6
+	hidemonpic
+	release
+	goto Pouch_Starter2_20
+
+
+Pouch_Starter3::
+	lock
+	goto_if_set FLAG_STARTER1, Pouch_Starter3_1
+	goto_if_set FLAG_STARTER2, Pouch_Starter3_1
+	goto_if_unset FLAG_MEMBERSHIP, Pouch_Starter3_6
+	goto_if_set FLAG_MEMBERSHIP, Pouch_Starter3_7
+	return
+
+Pouch_Starter3_1:
+	msgbox Pouch_Starter1_Text_0
+	release
+	return
+
+Pouch_Starter3_6:
+	lock
+	showmonpic SPECIES_SARALING, 10, 3
+	msgbox Pouch_Starter3_Text_0
+	msgbox Pouch_Starter1_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Pouch_Starter3_10
+	setflag FLAG_SYS_POKEMON_GET
+	givemon SPECIES_SARALING, 5, ITEM_NONE
+	msgbox Pouch_Starter1_Text_3, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Pouch_Starter3_17
+	setvar VAR_0x8004, 0
+	call Common_EventScript_NameReceivedPartyMon
+	removeobject 7
+Pouch_Starter3_16:
+	goto Lumbridge_Castle_Professor_Normal_Tree_1
+	return
+
+Pouch_Starter3_7:
+	lock
+	showmonpic SPECIES_TUMEKLING, 10, 3
+	msgbox Pouch_Starter3_Text_1
+	msgbox Pouch_Starter1_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Pouch_Starter3_13
+	setflag FLAG_SYS_POKEMON_GET
+	givemon SPECIES_TUMEKLING, 5, ITEM_NONE
+	msgbox Pouch_Starter1_Text_3, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Pouch_Starter3_21
+	setvar VAR_0x8004, 0
+	call Common_EventScript_NameReceivedPartyMon
+	removeobject 7
+Pouch_Starter3_20:
+	goto Lumbridge_Castle_Professor_Normal_Tree_1
+	return
+
+Pouch_Starter3_10:
+	hidemonpic
+	release
+	return
+
+Pouch_Starter3_13:
+	hidemonpic
+	release
+	return
+
+Pouch_Starter3_17:
+	removeobject 7
+	hidemonpic
+	release
+	goto Pouch_Starter3_16
+
+Pouch_Starter3_21:
+	removeobject 7
+	hidemonpic
+	release
+	goto Pouch_Starter3_20
 
 
 LumbridgeCastleCook::
@@ -215,6 +677,125 @@ ReturnToCook:
 	walk_right
 	step_end
 
+Lumbridge_Castle_NPC1::
+	lock
+	faceplayer
+	msgbox Lumbridge_Castle_NPC1_Text_0
+	release
+	end
+
+
+Lumbridge_Castle_Introduction_Text_0:
+	.string "Hello there!\p"
+	.string "My name is Hans.\p"
+	.string "You are...?$"
+
+Lumbridge_Castle_Introduction_Text_1:
+	.string "...\p"
+	.string "Nice to meet you {PLAYER}.\p"
+	.string "You must be here to see the\n"
+	.string "researcher?\p"
+	.string "We've had a few others come see him\n"
+	.string "today too.\p"
+	.string "Follow me.$"
+
+Lumbridge_Castle_Introduction_Text_2:
+	.string "Sorry to interrupt but this is\n"
+	.string "{PLAYER}.\p"
+	.string "They are interested in your quest\n"
+	.string "Professor.$"
+
+Lumbridge_Castle_Introduction_Text_3:
+	.string "Nice.\p"
+	.string "I am Professor Normal Tree.\p"
+	.string "I am in need of assistants to help me in\n"
+	.string "my research, as you would know this\l"
+	.string "world is full to the brim with all sorts\l"
+	.string "of monsters.\p"
+	.string "What I would like assistance with is\n"
+	.string "filling this BESTIARY with as much data\l"
+	.string "as possible.\p"
+	.string "Of course I wouldn't ask you to do it\n"
+	.string "for free, I'll be giving you one of 3\l"
+	.string "rare monsters to take with you on your\l"
+	.string "journey.$"
+
+Lumbridge_Castle_Introduction_Text_4:
+	.string "Would you like to accept my Quest?$"
+
+Lumbridge_Castle_Introduction_Text_5:
+	.string "Noob.\p"
+	.string "...How about now?$"
+
+Lumbridge_Castle_Introduction_Text_6:
+	.string "Nice.\p"
+	.string "Please choose from one of these 3\n"
+	.string "monsters on the table.$"
+
+Lumbridge_Castle_Professor_Normal_Tree_1_Text_0:
+	.string "Nice.\p"
+	.string "I've got to head to Kandarin now, I look\n"
+	.string "forward to seeing how much of the\l"
+	.string "BEASTIARY you've filled out the next\l"
+	.string "we meet.\p"
+	.string "Until then...\l"
+	.string "Nice.$"
+
+Lumbridge_Castle_Professor_Normal_Tree_2_Text_0:
+	.string "Please choose from one of these 3\n"
+	.string "monsters on the table.$"
+
+Lumbridge_Castle_Hans_0_Text_0:
+	.string "Oh how exciting!\p"
+	.string "I wonder which one you will choose.$"
+
+Lumbridge_Castle_Hans_1_Text_0:
+	.string "{PLAYER}, before you go have you\n"
+	.string "heard of the MvM championships?\p"
+	.string "MvM, which stands for Monster VS\n"
+	.string "Monster, is where trainers compete\l"
+	.string "against eachother in battle by using\l"
+	.string "their monsters to fight for them.\p"
+	.string "If you wish to participate in the MvM\n"
+	.string "Championships you must defeat 8\l"
+	.string "leaders from around Gielinor and make\l"
+	.string "your way to the Wilderness Volcano.\p"
+	.string "The Duke is one of these 8 Leaders.\l"
+	.string "If you are interested you should pay\l"
+	.string "him a visit.\p"
+	.string "Anyway, all the best on your adventure\n"
+	.string "{PLAYER}, I'm sure I'll see you\l"
+	.string "around.$"
+
+Pouch_Starter1_Text_0:
+	.string "You have already chosen!$"
+
+Pouch_Starter1_Text_1:
+	.string "This is a Guthling.$"
+
+Pouch_Starter1_Text_2:
+	.string "Would you like this monster as your\n"
+	.string "starter?$"
+
+Pouch_Starter1_Text_3:
+	.string "Would you like to give your monster a\n"
+	.string "nickname?$"
+
+Pouch_Starter1_Text_4:
+	.string "This is an Armaling.$"
+
+Pouch_Starter2_Text_0:
+	.string "This is a Zamling.$"
+
+Pouch_Starter2_Text_1:
+	.string "This is an Ungodling.$"
+
+Pouch_Starter3_Text_0:
+	.string "This is a Saraling.$"
+
+Pouch_Starter3_Text_1:
+	.string "This is an Tumekling.$"
+
 LumbridgeCastleCook_Text_0:
 	.string "I am saved! Thank you so much!\p"
 	.string "Feel free to use my Range anytime.$"
@@ -300,6 +881,11 @@ CheckCookFinished_Text_0:
 LumbridgeCastle2NPC_Text_0:
 	.string "The castle is great! I hope to challenge\n"
 	.string "the Duke some day.$"
+
+Lumbridge_Castle_NPC1_Text_0:
+	.string "The Duke is sort of like the regional\n"
+	.string "champion around here.\p"
+	.string "Better stay on his good side.$"
 
 CookAssistStartTextFirst::
 	.string "Oh dear.. What am I to do.. I'm in a\n"

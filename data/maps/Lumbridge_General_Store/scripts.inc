@@ -15,15 +15,17 @@ Generalstore_Lumbridge_Clerk::
 
     .align 2
 GeneralStoreLumbridge:
+    .2byte ITEM_BRONZE_POUCH
+    .2byte ITEM_EMPTY_BUCKET
     .2byte ITEM_EMPTY_POT
     .2byte ITEM_EGG
-    .2byte ITEM_EMPTY_BUCKET
     .2byte ITEM_NONE
     release
     end
 
 Generalstore_Lumbridge_Clerk_Text_0:
-	.string "Buy something or get out$"
+	.string "Welcome to the Lumbridge General Store.\p"
+	.string "How may I help you?$"
 
 Generalstore_Lumbridge_Clerk_Text_1:
-	.string "Smell ya later!$"
+	.string "Thank you, come again!$"

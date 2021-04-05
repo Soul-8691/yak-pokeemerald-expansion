@@ -3,10 +3,10 @@ mapscripts Lumbridge_General_Store_MapScripts {}
 script Generalstore_Lumbridge_Clerk {
     lock
     faceplayer
-    msgbox("Buy something or get out")
+    msgbox(format("Welcome to the Lumbridge General Store.\pHow may I help you?"))
     waitmessage
     pokemart (GeneralStoreLumbridge)
-    msgbox("Smell ya later!")
+    msgbox("Thank you, come again!")
     release
 }
 
@@ -14,9 +14,10 @@ script Generalstore_Lumbridge_Clerk {
 raw `
     .align 2
 GeneralStoreLumbridge:
+    .2byte ITEM_BRONZE_POUCH
+    .2byte ITEM_EMPTY_BUCKET
     .2byte ITEM_EMPTY_POT
     .2byte ITEM_EGG
-    .2byte ITEM_EMPTY_BUCKET
     .2byte ITEM_NONE
     release
     end

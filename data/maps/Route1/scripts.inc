@@ -7,11 +7,23 @@ Route1_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	return
 
 
+NPC_SHEEP::
+	lock
+	faceplayer
+	playmoncry SPECIES_MAREEP, 0
+	msgbox NPC_SHEEP_Text_0
+	waitmoncry
+	release
+	end
+
+
 ChickenBattleScript1::
 	lock
 	faceplayer
+	playmoncry SPECIES_TORCHIC, 0
 	msgbox ChickenBattleScript1_Text_0
-	setwildbattle SPECIES_CHICKEN_NORMAL_FORM, 7, ITEM_NONE
+	waitmoncry
+	setwildbattle SPECIES_CHICKEN_NORMAL_FORM, 4, ITEM_NONE
 	dowildbattle
 	removeobject 8
 	release
@@ -21,8 +33,10 @@ ChickenBattleScript1::
 ChickenBattleScript2::
 	lock
 	faceplayer
+	playmoncry SPECIES_TORCHIC, 0
 	msgbox ChickenBattleScript1_Text_0
-	setwildbattle SPECIES_CHICKEN_NORMAL_FORM, 7, ITEM_NONE
+	waitmoncry
+	setwildbattle SPECIES_CHICKEN_NORMAL_FORM, 4, ITEM_NONE
 	dowildbattle
 	removeobject 9
 	release
@@ -32,8 +46,10 @@ ChickenBattleScript2::
 ChickenBattleScript3::
 	lock
 	faceplayer
+	playmoncry SPECIES_TORCHIC, 0
 	msgbox ChickenBattleScript1_Text_0
-	setwildbattle SPECIES_CHICKEN_NORMAL_FORM, 7, ITEM_NONE
+	waitmoncry
+	setwildbattle SPECIES_CHICKEN_NORMAL_FORM, 4, ITEM_NONE
 	dowildbattle
 	removeobject 10
 	release
@@ -43,8 +59,10 @@ ChickenBattleScript3::
 EvilChickenBattleScript::
 	lock
 	faceplayer
+	playmoncry SPECIES_COMBUSKEN, 0
 	msgbox EvilChickenBattleScript_Text_0
-	setwildbattle SPECIES_EVILCHICKEN, 15, ITEM_NONE
+	waitmoncry
+	setwildbattle SPECIES_EVILCHICKEN, 10, ITEM_NONE
 	dowildbattle
 	removeobject 11
 	setflag FLAG_EVILCHICKEN_DEFEATED
@@ -131,11 +149,15 @@ TryMoveCowBlockersRoute1_1:
 	return
 
 
+NPC_SHEEP_Text_0:
+	.string "BAAA.$"
+
 ChickenBattleScript1_Text_0:
-	.string "BAWWK$"
+	.string "BWAK!$"
 
 EvilChickenBattleScript_Text_0:
-	.string "TIME TO DIE!$"
+	.string "BWAWWWK!\p"
+	.string "BEGONE {PLAYER}!$"
 
 WartfootBattle_Text_0:
 	.string "Brown armor best!$"

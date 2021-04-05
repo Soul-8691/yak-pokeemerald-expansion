@@ -4,11 +4,30 @@ mapscripts Route1_MapScripts {
     }
 } 
 
+script NPC_SHEEP
+{
+	lock
+	faceplayer
+    playmoncry(SPECIES_MAREEP, 0)
+	msgbox(format("BAAA."))
+    waitmoncry
+	release
+	end
+}
+
+
+
+
+
+
+
 script ChickenBattleScript1{
     lock
     faceplayer
-    msgbox("BAWWK")
-    setwildbattle (SPECIES_CHICKEN_NORMAL_FORM, 7, ITEM_NONE)
+    playmoncry(SPECIES_TORCHIC, 0)
+    msgbox(format("BWAK!"))
+    waitmoncry
+    setwildbattle (SPECIES_CHICKEN_NORMAL_FORM, 4, ITEM_NONE)
     dowildbattle
     removeobject (8)
     release
@@ -17,8 +36,10 @@ script ChickenBattleScript1{
 script ChickenBattleScript2{
     lock
     faceplayer
-    msgbox("BAWWK")
-    setwildbattle (SPECIES_CHICKEN_NORMAL_FORM, 7, ITEM_NONE)
+    playmoncry(SPECIES_TORCHIC, 0)
+    msgbox(format("BWAK!"))
+    waitmoncry
+    setwildbattle (SPECIES_CHICKEN_NORMAL_FORM, 4, ITEM_NONE)
     dowildbattle
     removeobject (9)
     release
@@ -27,8 +48,10 @@ script ChickenBattleScript2{
 script ChickenBattleScript3{
     lock
     faceplayer
-    msgbox("BAWWK")
-    setwildbattle (SPECIES_CHICKEN_NORMAL_FORM, 7, ITEM_NONE)
+    playmoncry(SPECIES_TORCHIC, 0)
+    msgbox(format("BWAK!"))
+    waitmoncry
+    setwildbattle (SPECIES_CHICKEN_NORMAL_FORM, 4, ITEM_NONE)
     dowildbattle
     removeobject (10)
     release
@@ -37,8 +60,10 @@ script ChickenBattleScript3{
 script EvilChickenBattleScript{
     lock
     faceplayer
-    msgbox("TIME TO DIE!")
-    setwildbattle (SPECIES_EVILCHICKEN, 15, ITEM_NONE)
+    playmoncry(SPECIES_COMBUSKEN, 0)
+    msgbox(format("BWAWWWK!\pBEGONE {PLAYER}!"))
+    waitmoncry
+    setwildbattle (SPECIES_EVILCHICKEN, 10, ITEM_NONE)
     dowildbattle
     removeobject (11)
     setflag (FLAG_EVILCHICKEN_DEFEATED)

@@ -2,7 +2,7 @@
   "id": "MAP_POTTERINGTON_FARM_INTERIOR",
   "name": "Potterington_Farm_Interior",
   "layout": "LAYOUT_POTTERINGTON_FARM_INTERIOR",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_POKESCAPE_ROUTE_ASGARNIA",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -67,6 +67,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "EventScript_CheckClock"
+    }
   ]
 }

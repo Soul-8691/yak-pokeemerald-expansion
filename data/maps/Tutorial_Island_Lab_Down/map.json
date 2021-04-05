@@ -16,42 +16,42 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 7,
-      "y": 4,
+      "x": 6,
+      "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "starter1",
-      "flag": "FLAG_CHOSE_STARTER1"
+      "script": "Pouch_Starter1",
+      "flag": "FLAG_STARTER1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 7,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Pouch_Starter2",
+      "flag": "FLAG_STARTER2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 8,
-      "y": 4,
+      "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "starter2",
-      "flag": "FLAG_CHOSE_STARTER2"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 9,
-      "y": 4,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "starter3",
-      "flag": "FLAG_CHOSE_STARTER3"
+      "script": "Pouch_Starter3",
+      "flag": "FLAG_STARTER3"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_monk",
@@ -69,7 +69,7 @@
   ],
   "warp_events": [
     {
-      "x": 11,
+      "x": 12,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_TUTORIAL_ISLAND",
@@ -86,7 +86,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 11,
+      "x": 12,
       "y": 12,
       "elevation": 0,
       "var": "VAR_TEMP_0",
@@ -95,7 +95,7 @@
     },
     {
       "type": "trigger",
-      "x": 10,
+      "x": 11,
       "y": 13,
       "elevation": 0,
       "var": "VAR_TEMP_0",
@@ -104,7 +104,7 @@
     },
     {
       "type": "trigger",
-      "x": 12,
+      "x": 13,
       "y": 13,
       "elevation": 0,
       "var": "VAR_TEMP_0",

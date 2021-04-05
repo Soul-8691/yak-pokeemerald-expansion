@@ -1,0 +1,78 @@
+mapscripts Lumbridge_House_Starter1_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_POKESCAPE_STARTER_HOUSE_STATE, 0: Explorer_Jack_1
+    ]
+}
+
+script Explorer_Jack_1
+{
+	if (!flag(FLAG_SET_WALL_CLOCK)){
+		lockall
+		setvar(VAR_POKESCAPE_STARTER_HOUSE_STATE, 1)
+		applymovement(1, Movement_Explorer_Jack_1)
+		waitmovement (0)
+		msgbox(format("You're awake!\pDo you know what time it is?"))
+		goto (SetClock)
+		release
+		end
+	}
+	else{
+		release
+		end
+	}
+}
+
+script SetClock
+{
+	fadescreen (FADE_TO_BLACK)
+	special (StartWallClock)
+	waitstate
+	setflag (FLAG_SET_WALL_CLOCK)
+	goto (Explorer_Jack_2)
+}
+
+script Explorer_Jack_2 {
+    gettime
+    if (var(VAR_0x8000) < 7 || var(VAR_0x8000) >= 21) {
+        msgbox(format("Are you sure you don't want to go back to bed?"))
+    } elif (var(VAR_0x8000) < 12) {
+        msgbox(format("I'm surprised you're up this early, you usually oversleep."))
+    } else {
+        msgbox(format("It's about time you got up."))
+    }
+	msgbox(format("Anyhow, I've got some news for you.\pApparently a famous researcher is currently visiting the Duke in Lumbridge Castle and I heard he is giving out Monsters to anyone who can help him with a quest!\pI think you should go pay him a visit seeing as you've always had a fondness for adventures."))
+	closemessage
+	applymovement(1, Movement_Explorer_Jack_2)
+	waitmovement (0)
+	setflag (FLAG_RECEIVED_RUNNING_SHOES)
+	setflag (FLAG_SYS_B_DASH)
+	release
+	end
+}
+
+movement Movement_Explorer_Jack_1
+{
+	face_up
+	emote_exclamation_mark
+	delay_8
+	walk_up * 2
+	walk_right
+	face_up
+}
+
+movement Movement_Explorer_Jack_2
+{
+	walk_left * 3
+	walk_up
+}
+
+script Explorer_Jack_3 {
+	lock
+	faceplayer
+	msgbox(format("You should make your way to Lumbridge Castle."))
+	release
+	end
+}
+
+
+

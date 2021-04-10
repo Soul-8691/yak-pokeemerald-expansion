@@ -15,10 +15,11 @@ Generalstore_Lumbridge_Clerk::
 
     .align 2
 GeneralStoreLumbridge:
-    .2byte ITEM_BRONZE_POUCH
     .2byte ITEM_EMPTY_BUCKET
     .2byte ITEM_EMPTY_POT
+    .2byte ITEM_BRONZE_POUCH
     .2byte ITEM_EGG
+    .2byte ITEM_POTATO
     .2byte ITEM_NONE
     release
     end

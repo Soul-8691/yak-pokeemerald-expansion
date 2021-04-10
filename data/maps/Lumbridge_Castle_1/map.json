@@ -15,55 +15,55 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_sudo_bash",
-      "x": 21,
-      "y": 25,
+      "graphics_id": "OBJ_EVENT_GFX_mithrilman",
+      "x": 12,
+      "y": 23,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CUPHOLDER_NPC",
-      "flag": "0"
+      "script": "Mithrilman_LUMBRIDGE2",
+      "flag": "FLAG_MITHRILMAN1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_sudo_bash",
-      "x": 29,
-      "y": 27,
+      "graphics_id": "OBJ_EVENT_GFX_mithrilman",
+      "x": 13,
+      "y": 23,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 1,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CUPHOLDER_NPC",
-      "flag": "0"
+      "script": "Mithrilman_FALADOR2",
+      "flag": "FLAG_MITHRILMAN2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SUDOWOODO",
-      "x": 31,
+      "graphics_id": "OBJ_EVENT_GFX_mithrilman",
+      "x": 16,
       "y": 24,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 1,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CUPHOLDER_NPC",
-      "flag": "FLAG_TEMP_1"
+      "script": "Mithrilman_WILDERNESSVOLCANO1",
+      "flag": "FLAG_MITHRILMAN9"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_man_1",
-      "x": 17,
-      "y": 25,
+      "graphics_id": "OBJ_EVENT_GFX_MITHRIL_ORE",
+      "x": 11,
+      "y": 23,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Lumbridge_Castle_NPC1",
+      "script": "Mithrilman_FLAGS",
       "flag": "0"
     },
     {
@@ -117,6 +117,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LumbridgeGym4",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_mithrilman",
+      "x": 18,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Mithrilman_WILDERNESSVOLCANO2",
+      "flag": "FLAG_MITHRILMAN9"
     }
   ],
   "warp_events": [

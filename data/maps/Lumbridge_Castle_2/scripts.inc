@@ -7,6 +7,49 @@ Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 	.2byte 0
 
 
+Lumbridge_Castle_GUARD::
+	lock
+	faceplayer
+	msgbox Lumbridge_Castle_GUARD_Text_0
+	release
+	end
+
+
+Lumbridge_Castle_HALLWAY_GUARD::
+	lock
+	faceplayer
+	msgbox Lumbridge_Castle_HALLWAY_GUARD_Text_0
+	release
+	end
+
+
+Lumbridge_Castle_HALLWAY_TRIGGER::
+	lock
+	PlaySE SE_PIN
+	applymovement 13, Movement_Lumbridge_Castle_HALLWAY_TRIGGER1
+	waitmovement 0
+	msgbox Lumbridge_Castle_HALLWAY_GUARD_Text_0
+	waitmessage
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_HALLWAY_TRIGGER2
+	applymovement 13, Movement_Lumbridge_Castle_HALLWAY_TRIGGER3
+	waitmovement 0
+	release
+	end
+
+
+Movement_Lumbridge_Castle_HALLWAY_TRIGGER1:
+	emote_exclamation_mark
+	face_player
+	step_end
+
+Movement_Lumbridge_Castle_HALLWAY_TRIGGER2:
+	walk_left
+	step_end
+
+Movement_Lumbridge_Castle_HALLWAY_TRIGGER3:
+	face_left
+	step_end
+
 Lumbridge_Castle_Introduction::
 	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Castle_Introduction_2
 	release
@@ -55,6 +98,10 @@ Lumbridge_Castle_Professor_Normal_Tree_1::
 	goto_if_set FLAG_STARTER3, Lumbridge_Castle_Professor_Normal_Tree_1_4
 Lumbridge_Castle_Professor_Normal_Tree_1_1:
 	msgbox Lumbridge_Castle_Professor_Normal_Tree_1_Text_0
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Lumbridge_Castle_Professor_Normal_Tree_1_Text_1
+	waitfanfare
+	msgbox Lumbridge_Castle_Professor_Normal_Tree_1_Text_2
 	waitmessage
 	closemessage
 	fadescreen FADE_TO_BLACK
@@ -645,24 +692,6 @@ CheckCookFinished_2:
 	goto CheckCookFinished_1
 
 
-LumbridgeCastle2NPC::
-	faceplayer
-	msgbox LumbridgeCastle2NPC_Text_0
-	setflag FLAG_BADGE01_GET
-	release
-	return
-
-
-TryMoveGuardLumbridgeCastle2::
-	goto_if_set FLAG_BADGE01_GET, TryMoveGuardLumbridgeCastle2_1
-	return
-
-TryMoveGuardLumbridgeCastle2_1:
-	setobjectxyperm 3, 26, 12
-	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_DOWN
-	return
-
-
 CookAlert:
 	jump_in_place_left
 	emote_exclamation_mark
@@ -684,6 +713,16 @@ Lumbridge_Castle_NPC1::
 	release
 	end
 
+
+Lumbridge_Castle_GUARD_Text_0:
+	.string "I'm on guard duty.\p"
+	.string "Please do not cause any problems.$"
+
+Lumbridge_Castle_HALLWAY_GUARD_Text_0:
+	.string "I'm sorry but this hallway is off limits.\p"
+	.string "I'm surpirsed you are talking to be to\n"
+	.string "be honest.\p"
+	.string "No one ever uses this hallway.$"
 
 Lumbridge_Castle_Introduction_Text_0:
 	.string "Hello there!\p"
@@ -734,6 +773,12 @@ Lumbridge_Castle_Introduction_Text_6:
 
 Lumbridge_Castle_Professor_Normal_Tree_1_Text_0:
 	.string "Nice.\p"
+	.string "Please take this BEASTIARY.$"
+
+Lumbridge_Castle_Professor_Normal_Tree_1_Text_1:
+	.string "Obtained the BEASTIARY.$"
+
+Lumbridge_Castle_Professor_Normal_Tree_1_Text_2:
 	.string "I've got to head to Kandarin now, I look\n"
 	.string "forward to seeing how much of the\l"
 	.string "BEASTIARY you've filled out the next\l"
@@ -760,8 +805,8 @@ Lumbridge_Castle_Hans_1_Text_0:
 	.string "Championships you must defeat 8\l"
 	.string "leaders from around Gielinor and make\l"
 	.string "your way to the Wilderness Volcano.\p"
-	.string "The Duke is one of these 8 Leaders.\l"
-	.string "If you are interested you should pay\l"
+	.string "The Duke is one of these 8 Leaders.\p"
+	.string "If you are interested you should pay\n"
 	.string "him a visit.\p"
 	.string "Anyway, all the best on your adventure\n"
 	.string "{PLAYER}, I'm sure I'll see you\l"
@@ -877,10 +922,6 @@ CookCake_Text_4:
 
 CheckCookFinished_Text_0:
 	.string "Hey come here!$"
-
-LumbridgeCastle2NPC_Text_0:
-	.string "The castle is great! I hope to challenge\n"
-	.string "the Duke some day.$"
 
 Lumbridge_Castle_NPC1_Text_0:
 	.string "The Duke is sort of like the regional\n"

@@ -2,6 +2,31 @@ mapscripts Lumbridge_Castle_1_MapScripts {
     
 }
 
+
+
+
+
+
+script Lumbridge_Castle_Hans{
+	lock
+	faceplayer
+	msgbox(format("I've been patrolling this castle for years!\pI've seen many things in my life time."))
+    release
+	end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 script Hans{
     msgbox("Cupholder")
     release

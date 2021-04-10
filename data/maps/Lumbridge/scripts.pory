@@ -13,6 +13,14 @@ script CUPHOLDER_NPC
 	end
 }	
 
+script Lumbridge_SIGN
+{
+	lock
+	faceplayer
+	msgbox(format("Welcome to Lumbridge.\pHome of the River Lum."))
+	release
+	end
+}
 
 script Lumbridge_Phileas
 {
@@ -103,14 +111,7 @@ script Lumbridge_IRONMAN_PAUL
 	end
 }
 
-script Lumbridge_BANKER
-{
-	lock
-	faceplayer
-	msgbox(format("A few years ago we were in a bidding war with a fisherman.\pHe wanted to put a fishing shop here instead of a bank.\pWe polled it to the community and we won by 75% of votes."))
-	release
-	end
-}
+
 
 script Lumbridge_IMP
 {
@@ -123,6 +124,22 @@ script Lumbridge_IMP
 
 
 //--EVENT---------------------------------------------------------------------------------------
+script Lumbridge_BANKER
+{
+	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+	lock
+	faceplayer
+	msgbox(format("I'm waiting for my BF to finish work."))
+	release
+	end
+	}
+	lock
+	faceplayer
+	msgbox(format("A few years ago we were in a bidding war with a fisherman.\pHe wanted to put a fishing shop here instead of a bank.\pWe polled it to the community and we won by 75% of votes."))
+	release
+	end
+}
+
 script Lumbridge_EVENT_NPC1
 {
 	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
@@ -301,6 +318,9 @@ script MoveNPCsAfterEvents_Lumbridge{
 
 		setobjectxyperm(25, 35, 5)
         setobjectmovementtype(25,MOVEMENT_TYPE_WANDER_AROUND)
+
+		setobjectxyperm(3, 11, 5)
+        setobjectmovementtype(3,MOVEMENT_TYPE_FACE_LEFT)
     }
 }
 //--EVENT---------------------------------------------------------------------------------------

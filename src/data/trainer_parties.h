@@ -415,3 +415,306 @@ static const struct TrainerMonItemDefaultMoves sParty_Skeleton_Lum_Swamp[] = {
     .heldItem = ITEM_NONE
     },   
 };
+
+//MITHRILMAN------------------------------------------------------------------------------------------
+static const struct TrainerMonItemDefaultMoves sParty_MITHRILMAN1[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_ZAROLING,
+    .heldItem = ITEM_NONE
+    },
+
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_MITHRILMAN2[] = {
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_ZAROLING,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_DUCK_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_MITHRILMAN3[] = {
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_ZAROBIRD,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_DUCK_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_BEAR_CUB,
+    .heldItem = ITEM_NONE
+    },
+};
+
+
+static const struct TrainerMonItemDefaultMoves sParty_MITHRILMAN4[] = {
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_ZAROBIRD,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_DUCK_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_BEAR_CUB,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_SCORPLING,
+    .heldItem = ITEM_NONE
+    },
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_MITHRILMAN5[] = {
+    {
+    .iv = 0,
+    .lvl = 45,
+    .species = SPECIES_ZAROBIRD,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 45,
+    .species = SPECIES_DUCK_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 45,
+    .species = SPECIES_POLAR_BEAR_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 45,
+    .species = SPECIES_SCORPION_PIT_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 45,
+    .species = SPECIES_TZ_KEK,
+    .heldItem = ITEM_NONE
+    },
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_MITHRILMAN6[] = {
+    {
+    .iv = 0,
+    .lvl = 55,
+    .species = SPECIES_ZARAVEN,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 55,
+    .species = SPECIES_DUCK_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 55,
+    .species = SPECIES_POLAR_BEAR_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 55,
+    .species = SPECIES_SCORPION_PIT_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 55,
+    .species = SPECIES_TZ_KEK,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 55,
+    .species = SPECIES_PLANT_STRANGE_FORM,
+    .heldItem = ITEM_NONE
+    },
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_MITHRILMAN7[] = {
+    {
+    .iv = 0,
+    .lvl = 65,
+    .species = SPECIES_ZARAVEN,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 65,
+    .species = SPECIES_DUCK_CART_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 65,
+    .species = SPECIES_POLAR_BEAR_ARCTIC_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 65,
+    .species = SPECIES_SCORPION_POISON_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 65,
+    .species = SPECIES_TZ_KEK,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 65,
+    .species = SPECIES_PLANT_STRANGE_FORM,
+    .heldItem = ITEM_NONE
+    },
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_MITHRILMAN8[] = {
+    {
+    .iv = 0,
+    .lvl = 75,
+    .species = SPECIES_ZARAVEN,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 75,
+    .species = SPECIES_DUCK_CART_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 75,
+    .species = SPECIES_POLAR_BEAR_ARCTIC_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 75,
+    .species = SPECIES_SCORPION_POISON_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 75,
+    .species = SPECIES_TOK_XIL,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 75,
+    .species = SPECIES_PLANT_STRANGE_FORM,
+    .heldItem = ITEM_NONE
+    },
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_MITHRILMAN9[] = {
+    {
+    .iv = 0,
+    .lvl = 85,
+    .species = SPECIES_ZARAVEN,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 85,
+    .species = SPECIES_DUCK_CART_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 85,
+    .species = SPECIES_POLAR_BEAR_ARCTIC_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 85,
+    .species = SPECIES_SCORPION_POISON_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 85,
+    .species = SPECIES_TOK_XIL,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 85,
+    .species = SPECIES_PLANT_STRANGER_FORM,
+    .heldItem = ITEM_NONE
+    },
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_MITHRILMAN10[] = {
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_ZARAVEN,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_DUCK_CART_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_POLAR_BEAR_ARCTIC_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_SCORPION_POISON_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_TOK_XIL,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_JADE_VINE,
+    .heldItem = ITEM_NONE
+    },
+};

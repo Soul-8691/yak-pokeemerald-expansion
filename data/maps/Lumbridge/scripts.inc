@@ -15,6 +15,14 @@ CUPHOLDER_NPC::
 	end
 
 
+Lumbridge_SIGN::
+	lock
+	faceplayer
+	msgbox Lumbridge_SIGN_Text_0
+	release
+	end
+
+
 Lumbridge_Phileas::
 	lock
 	faceplayer
@@ -94,18 +102,26 @@ Lumbridge_IRONMAN_PAUL::
 	end
 
 
-Lumbridge_BANKER::
-	lock
-	faceplayer
-	msgbox Lumbridge_BANKER_Text_0
-	release
-	end
-
-
 Lumbridge_IMP::
 	lock
 	faceplayer
 	msgbox Lumbridge_IMP_Text_0
+	release
+	end
+
+
+Lumbridge_BANKER::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_BANKER_2
+	lock
+	faceplayer
+	msgbox Lumbridge_BANKER_Text_1
+	release
+	end
+
+Lumbridge_BANKER_2:
+	lock
+	faceplayer
+	msgbox Lumbridge_BANKER_Text_0
 	release
 	end
 
@@ -289,6 +305,8 @@ MoveNPCsAfterEvents_Lumbridge_1:
 	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 25, 35, 5
 	setobjectmovementtype 25, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 3, 11, 5
+	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
 	return
 
 
@@ -402,6 +420,10 @@ CUPHOLDER_NPC_Text_0:
 	.string "I am currently a Cupholder with no\n"
 	.string "dialog.$"
 
+Lumbridge_SIGN_Text_0:
+	.string "Welcome to Lumbridge.\p"
+	.string "Home of the River Lum.$"
+
 Lumbridge_Phileas_Text_0:
 	.string "My Saraowl keeps me company on my\n"
 	.string "travels.$"
@@ -463,18 +485,21 @@ Lumbridge_IRONMAN_PAUL_Text_0:
 	.string "Island.\p"
 	.string "I wonder when he'll come home.$"
 
+Lumbridge_IMP_Text_0:
+	.string "You found an Imp!\p"
+	.string "COR'BLIMEY MATE!\l"
+	.string "It tried to steal your pouches.$"
+
 Lumbridge_BANKER_Text_0:
+	.string "I'm waiting for my BF to finish work.$"
+
+Lumbridge_BANKER_Text_1:
 	.string "A few years ago we were in a bidding war\n"
 	.string "with a fisherman.\p"
 	.string "He wanted to put a fishing shop here\n"
 	.string "instead of a bank.\p"
 	.string "We polled it to the community and we won\n"
 	.string "by 75% of votes.$"
-
-Lumbridge_IMP_Text_0:
-	.string "You found an Imp!\p"
-	.string "COR'BLIMEY MATE!\l"
-	.string "It tried to steal your pouches.$"
 
 Lumbridge_EVENT_NPC1_Text_0:
 	.string "Woowee!\p"

@@ -40,6 +40,16 @@
 #define TRAINER_SKELETON_LUM_SWAMP            26
 #define TRAINER_RSN_LUM_SWAMP                 27
 
+#define TRAINER_MITHRILMAN1                      28
+#define TRAINER_MITHRILMAN2                      29
+#define TRAINER_MITHRILMAN3                      30
+#define TRAINER_MITHRILMAN4                      31
+#define TRAINER_MITHRILMAN5                      32
+#define TRAINER_MITHRILMAN6                      33
+#define TRAINER_MITHRILMAN7                      34
+#define TRAINER_MITHRILMAN8                      35
+#define TRAINER_MITHRILMAN9                      36
+#define TRAINER_MITHRILMAN10                     37
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space

@@ -6,8 +6,10 @@ Lumbridge_MapScripts::
 Kevin::
 	lock
 	faceplayer
+	namebox kevinName
 	msgbox Kevin_Text_0
 	release
+	hidenamebox
 	multichoicedefault 1, 0, MULTI_CHEAT_MENU, 0, 0
 	switch VAR_RESULT
 	case 0, Kevin_3
@@ -19,8 +21,10 @@ Kevin::
 	case 6, Kevin_9
 	case 7, Kevin_10
 Kevin_1:
+	namebox kevinName
 	msgbox Kevin_Text_8
 	release
+	hidenamebox
 	return
 
 Kevin_3:
@@ -410,6 +414,9 @@ Cheat_Menu_Shop_Misc:
 	.2byte ITEM_NONE
 	release
 	end
+
+kevinName:
+	.string "Kevin$"
 
 Kevin_Text_0:
 	.string "Hi Boss! What can I do for ya?$"

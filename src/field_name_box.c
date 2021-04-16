@@ -7,7 +7,9 @@
 #include "text.h"
 #include "field_name_box.h"
 
-#define NAMEBOX_TAG 0x2722
+#define NAMEBOX_TAG_LEFT 0x2722
+#define NAMEBOX_TAG_RIGHT 0x2723
+#define NAMEBOX_TAG_SMALL 0x2724
 
 //  Usage:
 //  namebox <text>  ->  displays the namebox with the given text
@@ -18,13 +20,21 @@ static void LoadNameboxTilemap();
 static void CreateTask_DisplayNamebox();
 static void Task_DisplayNamebox(u8 taskId);
 static void LoadNameboxSprite(s8 x, s8 y);
+static void LoadNameboxSprite2(s8 x, s8 y);
+static void LoadNameboxSpriteSmall(s8 x, s8 y);
 static void AddTextPrinterForName();
 static void ClearNameboxTiles();
+static void CheckNameLength(u8 string);
 
 static EWRAM_DATA u8 sNameboxWindowId = 0;
-static EWRAM_DATA u8 sNameboxGfxId = 0;
+static EWRAM_DATA u8 sNameboxGfxIdLeft = 0;
+static EWRAM_DATA u8 sNameboxGfxIdRight = 0;
+static EWRAM_DATA u8 sNameboxGfxIdSmall = 0;
 
-static const u32 sNamebox_Gfx[] = INCBIN_U32("graphics/text_window/name_box.4bpp.lz");
+
+static const u32 sNamebox_Left_Gfx[] = INCBIN_U32("graphics/text_window/name_box_left.4bpp.lz");
+static const u32 sNamebox_Right_Gfx[] = INCBIN_U32("graphics/text_window/name_box_right.4bpp.lz");
+static const u32 sNamebox_Small_Gfx[] = INCBIN_U32("graphics/text_window/name_box.4bpp.lz");
 static const u16 sNamebox_Pal[] = INCBIN_U16("graphics/text_window/name_box.gbapal");
 
 static const struct OamData sOam_Namebox =
@@ -42,10 +52,22 @@ static const struct OamData sOam_Namebox =
 };
 
 
-static const struct CompressedSpriteSheet sSpriteSheet_Namebox = {
-    .data = sNamebox_Gfx,
+static const struct CompressedSpriteSheet sSpriteSheet_Namebox_Left = {
+    .data = sNamebox_Left_Gfx,
     .size = 1024,
-    .tag = NAMEBOX_TAG,
+    .tag = NAMEBOX_TAG_LEFT,
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_Namebox_Right = {
+    .data = sNamebox_Right_Gfx,
+    .size = 1024,
+    .tag = NAMEBOX_TAG_RIGHT,
+};
+
+static const struct CompressedSpriteSheet sSpriteSheet_Namebox_Small = {
+    .data = sNamebox_Small_Gfx,
+    .size = 1024,
+    .tag = NAMEBOX_TAG_SMALL,
 };
 
 static const union AnimCmd sSpriteAnim_Namebox[] = {
@@ -57,9 +79,29 @@ static const union AnimCmd *const sSpriteAnimTable_Namebox[] = {
     sSpriteAnim_Namebox,
 };
 
-static const struct SpriteTemplate sSpriteTemplate_Namebox = {
-    .tileTag = NAMEBOX_TAG,
-    .paletteTag = NAMEBOX_TAG,
+static const struct SpriteTemplate sSpriteTemplate_Namebox_Left = {
+    .tileTag = NAMEBOX_TAG_LEFT,
+    .paletteTag = NAMEBOX_TAG_LEFT,
+    .oam = &sOam_Namebox,
+    .anims = sSpriteAnimTable_Namebox,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy
+};
+
+static const struct SpriteTemplate sSpriteTemplate_Namebox_Right = {
+    .tileTag = NAMEBOX_TAG_RIGHT,
+    .paletteTag = NAMEBOX_TAG_LEFT,
+    .oam = &sOam_Namebox,
+    .anims = sSpriteAnimTable_Namebox,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy
+};
+
+static const struct SpriteTemplate sSpriteTemplate_Namebox_Small = {
+    .tileTag = NAMEBOX_TAG_SMALL,
+    .paletteTag = NAMEBOX_TAG_LEFT,
     .oam = &sOam_Namebox,
     .anims = sSpriteAnimTable_Namebox,
     .images = NULL,
@@ -69,7 +111,7 @@ static const struct SpriteTemplate sSpriteTemplate_Namebox = {
 
 static const struct SpritePalette sSpritePalette_Namebox = {
     .data = sNamebox_Pal, 
-    .tag = NAMEBOX_TAG,
+    .tag = NAMEBOX_TAG_LEFT,
 };
 
 static const struct WindowTemplate sNamebox_WindowTemplate =
@@ -87,7 +129,6 @@ static const struct WindowTemplate sNamebox_WindowTemplate =
 void ShowFieldName(const u8 *str) {
     if(IsNameboxDisplayed())
             ClearNamebox();
-
     LoadNameboxWindow(&sNamebox_WindowTemplate);
     StringExpandPlaceholders(gStringVar3, str);
     AddTextPrinterForName();
@@ -104,7 +145,8 @@ void ClearNamebox() {
     ClearNameboxTiles();
     RemoveWindow(sNameboxWindowId);
     sNameboxWindowId = 0;
-    DestroySpriteAndFreeResources(&gSprites[sNameboxGfxId]);
+    DestroySpriteAndFreeResources(&gSprites[sNameboxGfxIdLeft]);
+    DestroySpriteAndFreeResources(&gSprites[sNameboxGfxIdRight]);
 }
 
 
@@ -122,6 +164,7 @@ static void Task_DisplayNamebox(u8 taskId) {
         gTasks[taskId].tTimer--;
     else{
         LoadNameboxTilemap();
+    
         LoadNameboxSprite(32, 104);
 
         DestroyTask(taskId);
@@ -143,15 +186,43 @@ static void LoadNameboxTilemap() {
 
 static void LoadNameboxSprite(s8 x, s8 y) {
     u8 spriteId;
-
-    LoadCompressedSpriteSheet(&sSpriteSheet_Namebox);
+    LoadCompressedSpriteSheet(&sSpriteSheet_Namebox_Left);
     LoadSpritePalette(&sSpritePalette_Namebox);
-    spriteId = CreateSprite(&sSpriteTemplate_Namebox, x, y, 0);
-    if (sNameboxGfxId == MAX_SPRITES)
+    spriteId = CreateSprite(&sSpriteTemplate_Namebox_Left, x, y, 0);
+    if (sNameboxGfxIdLeft == MAX_SPRITES)
         return;
     else
-        sNameboxGfxId = spriteId;
+        sNameboxGfxIdLeft = spriteId;
+    
+    LoadNameboxSprite2(96, 104);
 }
+
+static void LoadNameboxSprite2(s8 x, s8 y)
+{
+    u8 spriteId2;
+
+    LoadCompressedSpriteSheet(&sSpriteSheet_Namebox_Right);
+    LoadSpritePalette(&sSpritePalette_Namebox);
+    spriteId2 = CreateSprite(&sSpriteTemplate_Namebox_Right, x, y, 0);
+    if (sNameboxGfxIdRight == MAX_SPRITES)
+        return;
+    else
+        sNameboxGfxIdRight = spriteId2;
+}
+
+static void LoadNameboxSpriteSmall(s8 x, s8 y)
+{
+    u8 spriteId3;
+
+    LoadCompressedSpriteSheet(&sSpriteSheet_Namebox_Small);
+    LoadSpritePalette(&sSpritePalette_Namebox);
+    spriteId3 = CreateSprite(&sSpriteTemplate_Namebox_Small, x, y, 0);
+    if (sNameboxGfxIdSmall == MAX_SPRITES)
+        return;
+    else
+        sNameboxGfxIdSmall = spriteId3;
+}
+
 
 static void AddTextPrinterForName() {
     struct TextPrinterTemplate printer;
@@ -178,3 +249,4 @@ static void ClearNameboxTiles(){
     FillWindowPixelBuffer(sNameboxWindowId, PIXEL_FILL(0));
     CopyWindowToVram(sNameboxWindowId, 3);
 }
+

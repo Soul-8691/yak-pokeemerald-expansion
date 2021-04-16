@@ -71,7 +71,9 @@ EvilChickenBattleScript::
 
 WartfootBattle::
 	trainerbattle_single TRAINER_GOBLIN_1_ROUTE1, WartfootBattle_Text_0, WartfootBattle_Text_1
+	namebox WartfootBattle_Text_2
 	msgbox WartfootBattle_Text_1
+	hidenamebox
 	release
 	return
 
@@ -164,6 +166,9 @@ WartfootBattle_Text_0:
 
 WartfootBattle_Text_1:
 	.string "Um.. my brown armor in the wash$"
+
+WartfootBattle_Text_2:
+	.string "WartFoot$"
 
 FrogfaceBattle_Text_0:
 	.string "You ugly!$"

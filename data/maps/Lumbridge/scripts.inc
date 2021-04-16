@@ -10,7 +10,6 @@ Lumbridge_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 CUPHOLDER_NPC::
 	lock
 	faceplayer
-
 	msgbox CUPHOLDER_NPC_Text_0
 	release
 	end
@@ -24,11 +23,12 @@ Lumbridge_SIGN::
 	end
 
 
-
 Lumbridge_Phileas::
 	lock
 	faceplayer
-	msgbox Lumbridge_Phileas_Text_0
+	namebox Lumbridge_Phileas_Text_0
+	msgbox Lumbridge_Phileas_Text_1
+	hidenamebox
 	release
 	end
 
@@ -52,7 +52,9 @@ Lumbridge_GENERALSTORE_CLERK::
 Lumbridge_FAYETH::
 	lock
 	faceplayer
-	msgbox Lumbridge_FAYETH_Text_0
+	namebox Lumbridge_FAYETH_Text_0
+	msgbox Lumbridge_FAYETH_Text_1
+	hidenamebox
 	release
 	end
 
@@ -67,7 +69,9 @@ Lumbridge_BOT::
 Lumbridge_DONIE::
 	lock
 	faceplayer
-	msgbox Lumbridge_DONIE_Text_0
+	namebox Lumbridge_DONIE_Text_0
+	msgbox Lumbridge_DONIE_Text_1
+	hidenamebox
 	release
 	end
 
@@ -75,7 +79,9 @@ Lumbridge_DONIE::
 Lumbridge_HATIUS::
 	lock
 	faceplayer
-	msgbox Lumbridge_HATIUS_Text_0
+	namebox Lumbridge_HATIUS_Text_0
+	msgbox Lumbridge_HATIUS_Text_1
+	hidenamebox
 	release
 	end
 
@@ -83,7 +89,9 @@ Lumbridge_HATIUS::
 Lumbridge_LACHTOPHER::
 	lock
 	faceplayer
-	msgbox Lumbridge_LACHTOPHER_Text_0
+	namebox Lumbridge_LACHTOPHER_Text_0
+	msgbox Lumbridge_LACHTOPHER_Text_1
+	hidenamebox
 	release
 	end
 
@@ -91,7 +99,9 @@ Lumbridge_LACHTOPHER::
 Lumbridge_DOOMSAYER::
 	lock
 	faceplayer
-	msgbox Lumbridge_DOOMSAYER_Text_0
+	namebox Lumbridge_DOOMSAYER_Text_0
+	msgbox Lumbridge_DOOMSAYER_Text_1
+	hidenamebox
 	release
 	end
 
@@ -99,7 +109,9 @@ Lumbridge_DOOMSAYER::
 Lumbridge_IRONMAN_PAUL::
 	lock
 	faceplayer
-	msgbox Lumbridge_IRONMAN_PAUL_Text_0
+	namebox Lumbridge_IRONMAN_PAUL_Text_0
+	msgbox Lumbridge_IRONMAN_PAUL_Text_1
+	hidenamebox
 	release
 	end
 
@@ -148,7 +160,9 @@ Lumbridge_Guard_NORTH::
 	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_NORTH_2
 	lock
 	faceplayer
-	msgbox Lumbridge_Guard_NORTH_Text_1
+	namebox Lumbridge_Guard_NORTH_Text_0
+	msgbox Lumbridge_Guard_NORTH_Text_2
+	hidenamebox
 	applymovement 13, MOVEMENT_LUMBRIDGE_GUARD_NORTH
 	waitmovement 0
 	release
@@ -157,7 +171,9 @@ Lumbridge_Guard_NORTH::
 Lumbridge_Guard_NORTH_2:
 	lock
 	faceplayer
-	msgbox Lumbridge_Guard_NORTH_Text_0
+	namebox Lumbridge_Guard_NORTH_Text_0
+	msgbox Lumbridge_Guard_NORTH_Text_1
+	hidenamebox
 	release
 	end
 
@@ -170,14 +186,18 @@ Lumbridge_Guard_EAST::
 	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_EAST_2
 	lock
 	faceplayer
-	msgbox Lumbridge_Guard_EAST_Text_0
+	namebox Lumbridge_Guard_EAST_Text_0
+	msgbox Lumbridge_Guard_EAST_Text_1
+	hidenamebox
 	release
 	end
 
 Lumbridge_Guard_EAST_2:
 	lock
 	faceplayer
-	msgbox Lumbridge_Guard_NORTH_Text_0
+	namebox Lumbridge_Guard_EAST_Text_0
+	msgbox Lumbridge_Guard_NORTH_Text_1
+	hidenamebox
 	release
 	end
 
@@ -186,14 +206,18 @@ Lumbridge_Guard_SOUTH::
 	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_SOUTH_2
 	lock
 	faceplayer
-	msgbox Lumbridge_Guard_SOUTH_Text_0
+	namebox Lumbridge_Guard_SOUTH_Text_0
+	msgbox Lumbridge_Guard_SOUTH_Text_1
+	hidenamebox
 	release
 	end
 
 Lumbridge_Guard_SOUTH_2:
 	lock
 	faceplayer
-	msgbox Lumbridge_Guard_NORTH_Text_0
+	namebox Lumbridge_Guard_SOUTH_Text_0
+	msgbox Lumbridge_Guard_NORTH_Text_1
+	hidenamebox
 	release
 	end
 
@@ -208,8 +232,10 @@ Lumbridge_Guard_NORTH_TRIGGER_2:
 	PlaySE SE_PIN
 	applymovement 13, LUMBRIDGE_GUARD_NORTH_TRIGGER_1
 	waitmovement 0
-	msgbox Lumbridge_Guard_NORTH_Text_0
+	namebox Lumbridge_Guard_NORTH_Text_0
+	msgbox Lumbridge_Guard_NORTH_Text_1
 	waitmessage
+	hidenamebox
 	applymovement OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_NORTH_TRIGGER
 	applymovement 13, LUMBRIDGE_GUARD_NORTH_TRIGGER_2
 	waitmovement 0
@@ -240,8 +266,10 @@ Lumbridge_Guard_EAST_TRIGGER_2:
 	PlaySE SE_PIN
 	applymovement 14, LUMBRIDGE_GUARD_EAST_TRIGGER_1
 	waitmovement 0
-	msgbox Lumbridge_Guard_NORTH_Text_0
+	namebox Lumbridge_Guard_EAST_Text_0
+	msgbox Lumbridge_Guard_NORTH_Text_1
 	waitmessage
+	hidenamebox
 	applymovement OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_EAST_TRIGGER
 	applymovement 14, LUMBRIDGE_GUARD_EAST_TRIGGER_2
 	waitmovement 0
@@ -272,8 +300,10 @@ Lumbridge_Guard_SOUTH_TRIGGER_2:
 	PlaySE SE_PIN
 	applymovement 12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_1
 	waitmovement 0
-	msgbox Lumbridge_Guard_NORTH_Text_0
+	namebox Lumbridge_Guard_SOUTH_Text_0
+	msgbox Lumbridge_Guard_NORTH_Text_1
 	waitmessage
+	hidenamebox
 	applymovement OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_SOUTH_TRIGGER
 	applymovement 12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_2
 	waitmovement 0
@@ -293,7 +323,6 @@ LUMBRIDGE_PLAYER_SOUTH_TRIGGER:
 LUMBRIDGE_GUARD_SOUTH_TRIGGER_2:
 	face_left
 	step_end
-
 
 MoveNPCsAfterEvents_Lumbridge::
 	goto_if_set FLAG_COOKS_ASSIST_STARTED, MoveNPCsAfterEvents_Lumbridge_1
@@ -348,7 +377,9 @@ Lumbridge_GeneralStore_NPC2::
 Lumbridge_House_BobsAxes::
 	lock
 	faceplayer
-	msgbox Lumbridge_House_BobsAxes_Text_0
+	namebox Lumbridge_House_BobsAxes_Text_0
+	msgbox Lumbridge_House_BobsAxes_Text_1
+	hidenamebox
 	release
 	end
 
@@ -364,7 +395,9 @@ Lumbridge_House_BobsGirl::
 Lumbridge_House_Victoria::
 	lock
 	faceplayer
-	msgbox Lumbridge_House_Victoria_Text_0
+	namebox Lumbridge_House_Victoria_Text_0
+	msgbox Lumbridge_House_Victoria_Text_1
+	hidenamebox
 	release
 	end
 
@@ -388,10 +421,12 @@ Lumbridge_House_NPC4::
 Lumbridge_GeneralStore_MOD_ASH::
 	lock
 	faceplayer
-	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_0
+	namebox Lumbridge_GeneralStore_MOD_ASH_Text_0
 	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_1
 	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_2
 	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_3
+	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_4
+	hidenamebox
 	release
 	end
 
@@ -406,15 +441,19 @@ Lumbridge_GeneralStore_FANFIC::
 
 Lumbridge_House_Roddeck::
 	goto_if_set FLAG_COOKS_ASSIST_STARTED, Lumbridge_House_Roddeck_2
-	msgbox Lumbridge_House_Roddeck_Text_2
+	namebox Lumbridge_House_Roddeck_Text_0
+	msgbox Lumbridge_House_Roddeck_Text_3
+	hidenamebox
 	release
 	end
 
 Lumbridge_House_Roddeck_2:
 	lock
 	faceplayer
-	msgbox Lumbridge_House_Roddeck_Text_0
+	namebox Lumbridge_House_Roddeck_Text_0
 	msgbox Lumbridge_House_Roddeck_Text_1
+	msgbox Lumbridge_House_Roddeck_Text_2
+	hidenamebox
 	release
 	end
 
@@ -428,6 +467,9 @@ Lumbridge_SIGN_Text_0:
 	.string "Home of the River Lum.$"
 
 Lumbridge_Phileas_Text_0:
+	.string "Phileas$"
+
+Lumbridge_Phileas_Text_1:
 	.string "My Saraowl keeps me company on my\n"
 	.string "travels.$"
 
@@ -450,6 +492,9 @@ Lumbridge_GENERALSTORE_CLERK_Text_0:
 	.string "At the General Store!$"
 
 Lumbridge_FAYETH_Text_0:
+	.string "Fayeth$"
+
+Lumbridge_FAYETH_Text_1:
 	.string "You should keep in mind you can only\n"
 	.string "capture a monster when their health is\l"
 	.string "above zero.$"
@@ -462,12 +507,18 @@ Lumbridge_BOT_Text_0:
 	.string "There is no response.$"
 
 Lumbridge_DONIE_Text_0:
+	.string "Donie$"
+
+Lumbridge_DONIE_Text_1:
 	.string "It is always good to talk to people,\n"
 	.string "even if they do not give you anything.\p"
 	.string "They might give you vital information\n"
 	.string "for your adventure.$"
 
 Lumbridge_HATIUS_Text_0:
+	.string "Hatius$"
+
+Lumbridge_HATIUS_Text_1:
 	.string "There were some muggers in the alley\n"
 	.string "eyeing off my 3rd armour.\p"
 	.string "So I've had to change into a more casual\n"
@@ -476,14 +527,23 @@ Lumbridge_HATIUS_Text_0:
 	.string "cannot win.$"
 
 Lumbridge_LACHTOPHER_Text_0:
+	.string "Lachtopher$"
+
+Lumbridge_LACHTOPHER_Text_1:
 	.string "Free st00f pl0x!$"
 
 Lumbridge_DOOMSAYER_Text_0:
+	.string "Doomsayer$"
+
+Lumbridge_DOOMSAYER_Text_1:
 	.string "DOOOOOOOM!\p"
 	.string "I can sense it on you!\p"
 	.string "You have a terrible doom in your future!$"
 
 Lumbridge_IRONMAN_PAUL_Text_0:
+	.string "Paul$"
+
+Lumbridge_IRONMAN_PAUL_Text_1:
 	.string "My friend Adam is currently on Tutorial\n"
 	.string "Island.\p"
 	.string "I wonder when he'll come home.$"
@@ -517,19 +577,28 @@ Lumbridge_EVENT_NPC1_Text_1:
 	.string "Lum.$"
 
 Lumbridge_Guard_NORTH_Text_0:
+	.string "Pazel$"
+
+Lumbridge_Guard_NORTH_Text_1:
 	.string "I'm sorry, but it's really dangerous out\n"
 	.string "there for anyone who isn't an\l"
 	.string "adventurer.$"
 
-Lumbridge_Guard_NORTH_Text_1:
+Lumbridge_Guard_NORTH_Text_2:
 	.string "Please don't bother me while I'm on my\n"
 	.string "break.$"
 
 Lumbridge_Guard_EAST_Text_0:
+	.string "DeShawn$"
+
+Lumbridge_Guard_EAST_Text_1:
 	.string "Be careful, there are a lot of gobins\n"
 	.string "across the bridge.$"
 
 Lumbridge_Guard_SOUTH_Text_0:
+	.string "Peale$"
+
+Lumbridge_Guard_SOUTH_Text_1:
 	.string "It's quite dangerous even with a\n"
 	.string "monster to protect you.\p"
 	.string "So be careful.$"
@@ -556,6 +625,9 @@ Lumbridge_GeneralStore_NPC2_Text_0:
 	.string "This will prepare you for the worst.$"
 
 Lumbridge_House_BobsAxes_Text_0:
+	.string "Bob$"
+
+Lumbridge_House_BobsAxes_Text_1:
 	.string "Welcome to Bob's Brilliant Axes.\p"
 	.string "My name is Bob, how may I be of\n"
 	.string "assistance?$"
@@ -568,6 +640,9 @@ Lumbridge_House_BobsGirl_Text_0:
 	.string "Why are you in our house?$"
 
 Lumbridge_House_Victoria_Text_0:
+	.string "Victoria$"
+
+Lumbridge_House_Victoria_Text_1:
 	.string "Please don't give my brother,\n"
 	.string "Lachtopher any money.\p"
 	.string "He is lazy and begs random strangers all\n"
@@ -583,6 +658,9 @@ Lumbridge_House_NPC4_Text_0:
 	.string "depending on which evolution method.$"
 
 Lumbridge_GeneralStore_MOD_ASH_Text_0:
+	.string "Mod Ash$"
+
+Lumbridge_GeneralStore_MOD_ASH_Text_1:
 	.string "WOAH!\p"
 	.string "I didn't see you there, I almost spilt my\n"
 	.string "drink.\p"
@@ -599,10 +677,10 @@ Lumbridge_GeneralStore_MOD_ASH_Text_0:
 	.string "Do you have any monsters that might\n"
 	.string "help inspire me?$"
 
-Lumbridge_GeneralStore_MOD_ASH_Text_1:
+Lumbridge_GeneralStore_MOD_ASH_Text_2:
 	.string "No, I don't think that would work..$"
 
-Lumbridge_GeneralStore_MOD_ASH_Text_2:
+Lumbridge_GeneralStore_MOD_ASH_Text_3:
 	.string "Yes!\p"
 	.string "That's it!\p"
 	.string "I'll have the player face off against a\n"
@@ -611,7 +689,7 @@ Lumbridge_GeneralStore_MOD_ASH_Text_2:
 	.string "I need to finish my story!\p"
 	.string "Please take this!$"
 
-Lumbridge_GeneralStore_MOD_ASH_Text_3:
+Lumbridge_GeneralStore_MOD_ASH_Text_4:
 	.string "Once again, thank you for helping me.\p"
 	.string "What is that?\p"
 	.string "You would like to read my fanfic?\p"
@@ -626,21 +704,23 @@ Lumbridge_GeneralStore_FANFIC_Text_0:
 	.string "weird innuendo's.$"
 
 Lumbridge_House_Roddeck_Text_0:
+	.string "Roddeck$"
+
+Lumbridge_House_Roddeck_Text_1:
 	.string "Hello adventurer!\p"
 	.string "Do you happen to have a Green\n"
 	.string "Dragonling?\p"
 	.string "Would you be willing to trade it for my\n"
 	.string "Red Dragon?$"
 
-Lumbridge_House_Roddeck_Text_1:
+Lumbridge_House_Roddeck_Text_2:
 	.string "Please take care of Sottlepot, he is a\n"
 	.string "good boy.$"
 
-Lumbridge_House_Roddeck_Text_2:
+Lumbridge_House_Roddeck_Text_3:
 	.string "Did you know the more Badges you have\n"
 	.string "the easier it is to control Monsters\l"
 	.string "obtained in a trade?\p"
 	.string "I wish I knew that before Sottlepot\n"
 	.string "went on a rampage killing Sir Vant and\l"
 	.string "an adventurer..$"
-

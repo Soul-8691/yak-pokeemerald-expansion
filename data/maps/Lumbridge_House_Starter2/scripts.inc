@@ -84,8 +84,12 @@ Mithrilman_LUMBRIDGE1::
 	lock
 	faceplayer
 	playbgm MUS_ENCOUNTER_MAY, 1
-	msgbox Mithrilman_LUMBRIDGE1_Text_0
-	trainerbattle_single TRAINER_MITHRILMAN1, Mithrilman_LUMBRIDGE1_Text_1, Mithrilman_LUMBRIDGE1_Text_2, Mithrilman_LUMBRIDGE2
+	namebox Mithrilman_LUMBRIDGE1_Text_0
+	msgbox Mithrilman_LUMBRIDGE1_Text_1
+	namebox Mithrilman_LUMBRIDGE1_Text_2
+	msgbox Mithrilman_LUMBRIDGE1_Text_3
+	trainerbattle_single TRAINER_MITHRILMAN1, Mithrilman_LUMBRIDGE1_Text_4, Mithrilman_LUMBRIDGE1_Text_5, Mithrilman_LUMBRIDGE2
+	hidenamebox
 	release
 	return
 
@@ -93,8 +97,10 @@ Mithrilman_LUMBRIDGE1::
 Mithrilman_LUMBRIDGE2::
 	lock
 	faceplayer
+	namebox Mithrilman_LUMBRIDGE1_Text_2
 	msgbox Mithrilman_LUMBRIDGE2_Text_0
 	waitmessage
+	hidenamebox
 	closemessage
 	fadescreen FADE_TO_BLACK
 	removeobject 2
@@ -112,7 +118,7 @@ Mithrilman_FALADOR1::
 	faceplayer
 	playbgm MUS_ENCOUNTER_MAY, 1
 	msgbox Mithrilman_FALADOR1_Text_0
-	trainerbattle_single TRAINER_MITHRILMAN2, Mithrilman_FALADOR1_Text_1, Mithrilman_LUMBRIDGE1_Text_2, Mithrilman_FALADOR2
+	trainerbattle_single TRAINER_MITHRILMAN2, Mithrilman_FALADOR1_Text_1, Mithrilman_LUMBRIDGE1_Text_5, Mithrilman_FALADOR2
 	return
 
 
@@ -138,7 +144,7 @@ Mithrilman_VARROCK1::
 	faceplayer
 	playbgm MUS_ENCOUNTER_MAY, 1
 	msgbox Mithrilman_VARROCK1_Text_0
-	trainerbattle_single TRAINER_MITHRILMAN3, Mithrilman_VARROCK1_Text_1, Mithrilman_LUMBRIDGE1_Text_2, Mithrilman_VARROCK2
+	trainerbattle_single TRAINER_MITHRILMAN3, Mithrilman_VARROCK1_Text_1, Mithrilman_LUMBRIDGE1_Text_5, Mithrilman_VARROCK2
 	return
 
 
@@ -164,7 +170,7 @@ Mithrilman_ALKHARID1::
 	faceplayer
 	playbgm MUS_ENCOUNTER_MAY, 1
 	msgbox Mithrilman_ALKHARID1_Text_0
-	trainerbattle_single TRAINER_MITHRILMAN4, Mithrilman_ALKHARID1_Text_1, Mithrilman_LUMBRIDGE1_Text_2, Mithrilman_ALKHARID2
+	trainerbattle_single TRAINER_MITHRILMAN4, Mithrilman_ALKHARID1_Text_1, Mithrilman_LUMBRIDGE1_Text_5, Mithrilman_ALKHARID2
 	return
 
 
@@ -194,7 +200,7 @@ Mithrilman_TZHAAR1::
 	faceplayer
 	playbgm MUS_ENCOUNTER_MAY, 1
 	msgbox Mithrilman_TZHAAR1_Text_0
-	trainerbattle_single TRAINER_MITHRILMAN5, Mithrilman_TZHAAR1_Text_1, Mithrilman_LUMBRIDGE1_Text_2, Mithrilman_TZHAAR2
+	trainerbattle_single TRAINER_MITHRILMAN5, Mithrilman_TZHAAR1_Text_1, Mithrilman_LUMBRIDGE1_Text_5, Mithrilman_TZHAAR2
 	return
 
 
@@ -220,7 +226,7 @@ Mithrilman_DRAYNOR1::
 	faceplayer
 	playbgm MUS_ENCOUNTER_MAY, 1
 	msgbox Mithrilman_DRAYNOR1_Text_0
-	trainerbattle_single TRAINER_MITHRILMAN6, Mithrilman_DRAYNOR1_Text_1, Mithrilman_LUMBRIDGE1_Text_2, Mithrilman_DRAYNOR2
+	trainerbattle_single TRAINER_MITHRILMAN6, Mithrilman_DRAYNOR1_Text_1, Mithrilman_LUMBRIDGE1_Text_5, Mithrilman_DRAYNOR2
 	return
 
 
@@ -254,7 +260,7 @@ Mithrilman_EDGEVILLE1_1:
 	faceplayer
 	playbgm MUS_ENCOUNTER_MAY, 1
 	msgbox Mithrilman_EDGEVILLE1_Text_0
-	trainerbattle_single TRAINER_MITHRILMAN7, Mithrilman_EDGEVILLE1_Text_1, Mithrilman_LUMBRIDGE1_Text_2, Mithrilman_EDGEVILLE2
+	trainerbattle_single TRAINER_MITHRILMAN7, Mithrilman_EDGEVILLE1_Text_1, Mithrilman_LUMBRIDGE1_Text_5, Mithrilman_EDGEVILLE2
 	return
 
 
@@ -277,7 +283,7 @@ Mithrilman_WILDERNESS1::
 	faceplayer
 	playbgm MUS_ENCOUNTER_MAY, 1
 	msgbox Mithrilman_WILDERNESS1_Text_0
-	trainerbattle_single TRAINER_MITHRILMAN8, Mithrilman_WILDERNESS1_Text_1, Mithrilman_LUMBRIDGE1_Text_2, Mithrilman_WILDERNESS2
+	trainerbattle_single TRAINER_MITHRILMAN8, Mithrilman_WILDERNESS1_Text_1, Mithrilman_LUMBRIDGE1_Text_5, Mithrilman_WILDERNESS2
 	return
 
 
@@ -306,7 +312,7 @@ Mithrilman_WILDERNESSVOLCANO1::
 	compare VAR_RESULT, 1
 	goto_if_ne Mithrilman_WILDERNESSVOLCANO1_3
 	msgbox Mithrilman_WILDERNESSVOLCANO1_Text_2
-	trainerbattle_single TRAINER_MITHRILMAN9, Mithrilman_WILDERNESSVOLCANO1_Text_3, Mithrilman_LUMBRIDGE1_Text_2, Mithrilman_WILDERNESSVOLCANO2
+	trainerbattle_single TRAINER_MITHRILMAN9, Mithrilman_WILDERNESSVOLCANO1_Text_3, Mithrilman_LUMBRIDGE1_Text_5, Mithrilman_WILDERNESSVOLCANO2
 	return
 
 Mithrilman_WILDERNESSVOLCANO1_3:
@@ -363,24 +369,32 @@ Mithrilman_FLAGS_Text_0:
 	.string "MITHRILMEN FLAG SET!$"
 
 Mithrilman_LUMBRIDGE1_Text_0:
+	.string "???$"
+
+Mithrilman_LUMBRIDGE1_Text_1:
 	.string "Helloust there knave, thee be a\n"
 	.string "challenger of the duke thine can tell.\p"
 	.string "Whomst am I?\p"
 	.string "Look upon me in awe knave, for thine\n"
 	.string "amst the greatest of all challengers\l"
 	.string "of the PokeScapian realm.\p"
-	.string "Thine's a Mithrilman.\p"
+	.string "Thine's a Mithrilman.$"
+
+Mithrilman_LUMBRIDGE1_Text_2:
+	.string "Mithrilman$"
+
+Mithrilman_LUMBRIDGE1_Text_3:
 	.string "Morest fabled thanst the Ironmen and\n"
 	.string "faster than the Adamantmen.\p"
 	.string "The Mithrilman is a challenge upon the\n"
 	.string "very spirit ofst PokeScape itself.\p"
 	.string "As thy predecessor inst this realm.$"
 
-Mithrilman_LUMBRIDGE1_Text_1:
+Mithrilman_LUMBRIDGE1_Text_4:
 	.string "Why doesnt thine show ye, knave, howst\n"
 	.string "a true master battles.$"
 
-Mithrilman_LUMBRIDGE1_Text_2:
+Mithrilman_LUMBRIDGE1_Text_5:
 	.string "...$"
 
 Mithrilman_LUMBRIDGE2_Text_0:

@@ -26,7 +26,9 @@ script Lumbridge_Phileas
 {
 	lock
 	faceplayer
+	namebox ("Phileas")
 	msgbox(format("My Saraowl keeps me company on my travels."))
+	hidenamebox
 	release
 	end
 }
@@ -53,7 +55,9 @@ script Lumbridge_FAYETH
 {
 	lock
 	faceplayer
+	namebox ("Fayeth")
 	msgbox(format("You should keep in mind you can only capture a monster when their health is above zero."))
+	hidenamebox
 	release
 	end
 }
@@ -70,7 +74,9 @@ script Lumbridge_DONIE
 {
 	lock
 	faceplayer
+	namebox ("Donie")
 	msgbox(format("It is always good to talk to people, even if they do not give you anything.\pThey might give you vital information for your adventure."))
+	hidenamebox
 	release
 	end
 }
@@ -79,7 +85,9 @@ script Lumbridge_HATIUS
 {
 	lock
 	faceplayer
+	namebox ("Hatius")
 	msgbox(format("There were some muggers in the alley eyeing off my 3rd armour.\pSo I've had to change into a more casual look.\pBut now the Goblins are eyeing me, I cannot win."))
+	hidenamebox
 	release
 	end
 }
@@ -88,7 +96,9 @@ script Lumbridge_LACHTOPHER
 {
 	lock
 	faceplayer
+	namebox ("Lachtopher")
 	msgbox(format("Free st00f pl0x!"))
+	hidenamebox
 	release
 	end
 }
@@ -97,7 +107,9 @@ script Lumbridge_DOOMSAYER
 {
 	lock
 	faceplayer
+	namebox ("Doomsayer")
 	msgbox(format("DOOOOOOOM!\pI can sense it on you!\pYou have a terrible doom in your future!"))
+	hidenamebox
 	release
 	end
 }
@@ -106,7 +118,9 @@ script Lumbridge_IRONMAN_PAUL
 {
 	lock
 	faceplayer
+	namebox ("Paul")
 	msgbox(format("My friend Adam is currently on Tutorial Island.\pI wonder when he'll come home."))
+	hidenamebox
 	release
 	end
 }
@@ -162,13 +176,17 @@ script Lumbridge_Guard_NORTH
 	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
 		lock
 		faceplayer
+		namebox ("Pazel")
 		msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't an adventurer."))
+		hidenamebox
 		release
 		end
 	}
 	lock
 	faceplayer
+	namebox ("Pazel")
 	msgbox(format("Please don't bother me while I'm on my break."))
+	hidenamebox
 	applymovement(13, MOVEMENT_LUMBRIDGE_GUARD_NORTH)
     waitmovement(0)
 	release
@@ -184,13 +202,17 @@ script Lumbridge_Guard_EAST
 	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
 		lock
 		faceplayer
+		namebox ("DeShawn")
 		msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't an adventurer."))
+		hidenamebox
 		release
 		end
 	}
 	lock
 	faceplayer
+	namebox ("DeShawn")
 	msgbox(format("Be careful, there are a lot of gobins across the bridge."))
+	hidenamebox
 	release
 	end
 }
@@ -201,13 +223,17 @@ script Lumbridge_Guard_SOUTH
 	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
 		lock
 		faceplayer
+		namebox ("Peale")
 		msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't an adventurer."))
+		hidenamebox
 		release
 		end
 	}
 	lock
 	faceplayer
+	namebox ("Peale")
 	msgbox(format("It's quite dangerous even with a monster to protect you.\pSo be careful."))
+	hidenamebox
 	release
 	end
 }
@@ -219,8 +245,10 @@ script Lumbridge_Guard_NORTH_TRIGGER{
 		PlaySE(SE_PIN)
 		applymovement(13, LUMBRIDGE_GUARD_NORTH_TRIGGER_1)
 		waitmovement(0)
+		namebox ("Pazel")
 		msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't an adventurer."))
 		waitmessage 
+		hidenamebox
 		applymovement(OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_NORTH_TRIGGER)
         applymovement(13, LUMBRIDGE_GUARD_NORTH_TRIGGER_2)
         waitmovement(0)
@@ -248,8 +276,10 @@ script Lumbridge_Guard_EAST_TRIGGER{
 		PlaySE(SE_PIN)
 		applymovement(14, LUMBRIDGE_GUARD_EAST_TRIGGER_1)
 		waitmovement(0)
+		namebox ("DeShawn")
 		msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't an adventurer."))
 		waitmessage 
+		hidenamebox
 		applymovement(OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_EAST_TRIGGER)
         applymovement(14, LUMBRIDGE_GUARD_EAST_TRIGGER_2)
         waitmovement(0)
@@ -277,8 +307,10 @@ script Lumbridge_Guard_SOUTH_TRIGGER{
 		PlaySE(SE_PIN)
 		applymovement(12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_1)
 		waitmovement(0)
+		namebox ("Peale")
 		msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't an adventurer."))
 		waitmessage 
+		hidenamebox
 		applymovement(OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_SOUTH_TRIGGER)
         applymovement(12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_2)
         waitmovement(0)
@@ -387,7 +419,9 @@ script Lumbridge_House_BobsAxes
 {
 	lock
 	faceplayer
+	namebox ("Bob")
 	msgbox(format("Welcome to Bob's Brilliant Axes.\pMy name is Bob, how may I be of assistance?"))
+	hidenamebox
 	release
 	end
 }	
@@ -405,7 +439,9 @@ script Lumbridge_House_Victoria
 {
 	lock
 	faceplayer
+	namebox ("Victoria")
 	msgbox(format("Please don't give my brother, Lachtopher any money.\pHe is lazy and begs random strangers all the time."))
+	hidenamebox
 	release
 	end
 }	
@@ -445,12 +481,13 @@ script Lumbridge_GeneralStore_MOD_ASH
 {
 	lock
 	faceplayer
+	namebox ("Mod Ash")
 	msgbox(format("WOAH!\pI didn't see you there, I almost spilt my drink.\pI'm just writing out some dialog for my new fanfic.\pI call it MY ARM'S BIG ADVENTURE!\p...\pWhat?\lIt is a great name.\pAlthough I'm a bit stuck, I've made the adventuer in this story fight a giant bird but I'm not sure what the bird should look like.\p Do you have any monsters that might help inspire me?"))
 	
 	msgbox(format("No, I don't think that would work.."))
 	msgbox(format("Yes!\pThat's it!\pI'll have the player face off against a giant ROC!\pThank you for giving me the inspiration I need to finish my story!\pPlease take this!"))
 	msgbox(format("Once again, thank you for helping me.\pWhat is that?\pYou would like to read my fanfic?\pSorry it's not finished yet, you'll have to wait.\p...\pHow long?\pSoon TM."))
-
+	hidenamebox
 	release
 	end
 }	
@@ -471,14 +508,18 @@ script Lumbridge_House_Roddeck
 	if (flag(FLAG_COOKS_ASSIST_STARTED)){
 	lock
 	faceplayer
+	namebox ("Roddeck")
 	msgbox(format("Hello adventurer!\pDo you happen to have a Green Dragonling?\pWould you be willing to trade it for my Red Dragon?"))
     //TRADE
     msgbox(format("Please take care of Sottlepot, he is a good boy."))
+	hidenamebox
     release
 	end
 	}
+	namebox ("Roddeck")
     msgbox(format("Did you know the more Badges you have the easier it is to control Monsters obtained in a trade?\pI wish I knew that before Sottlepot went on a rampage killing Sir Vant and an adventurer.."))
-    release
+    hidenamebox
+	release
 	end
 }
 //---------------------

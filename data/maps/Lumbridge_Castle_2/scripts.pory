@@ -63,11 +63,13 @@ script Lumbridge_Castle_Introduction
 	playse(SE_PIN)
 	applymovement(10, Movement_Hans_2)
 	waitmovement (0)
+	namebox ("Hans")
 	msgbox(format("Hello there!\pMy name is Hans.\pYou are...?"))
 	applymovement(OBJ_EVENT_ID_PLAYER, Movement_PLAYER_1)
 	waitmovement (0)
 	msgbox(format("...\pNice to meet you {PLAYER}.\pYou must be here to see the researcher?\pWe've had a few others come see him today too.\pFollow me."))
 	waitmessage
+	hidenamebox
 	closemessage
 	applymovement(10, Movement_Hans_3)
 	applymovement(OBJ_EVENT_ID_PLAYER, Movement_PLAYER_2)
@@ -75,15 +77,19 @@ script Lumbridge_Castle_Introduction
 	applymovement(4, Movement_NORMALTREE_1)
 	waitmovement (0)
 //SECTION 2
+	namebox ("Hans")
 	msgbox(format("Sorry to interrupt but this is {PLAYER}.\pThey are interested in your quest Professor."))
+	hidenamebox
 	applymovement(4, Movement_NORMALTREE_2)
 	waitmovement (0)
+	namebox ("Prof. Normal Tree")
 	msgbox(format("Nice.\pI am Professor Normal Tree.\pI am in need of assistants to help me in my research, as you would know this world is full to the brim with all sorts of monsters.\pWhat I would like assistance with is filling this BESTIARY with as much data as possible.\pOf course I wouldn't ask you to do it for free, I'll be giving you one of 3 rare monsters to take with you on your journey."))
 	msgbox(format("Would you like to accept my Quest?"), MSGBOX_YESNO)
 	while (var(VAR_RESULT) != 1) {
         msgbox(format("Noob.\p...How about now?"), MSGBOX_YESNO)	
 	}
 		msgbox(format("Nice.\pPlease choose from one of these 3 monsters on the table."))
+		hidenamebox
 	release
 	end
 	}
@@ -104,12 +110,16 @@ script Lumbridge_Castle_Professor_Normal_Tree_1{
 			applymovement(OBJ_EVENT_ID_PLAYER, Movement_Starter3)
 			waitmovement(0)
 		}
+		namebox ("Prof. Normal Tree")
 		msgbox(format("Nice.\pPlease take this BEASTIARY."))
+		hidenamebox
 		playfanfare(MUS_OBTAIN_ITEM)
 		msgbox(format("Obtained the BEASTIARY."))
 		waitfanfare
+		namebox ("Prof. Normal Tree")
 		msgbox(format("I've got to head to Kandarin now, I look forward to seeing how much of the BEASTIARY you've filled out the next we meet.\pUntil then...\lNice."))
 		waitmessage
+		hidenamebox
 		closemessage
 		fadescreen (FADE_TO_BLACK)
 		removeobject(4)
@@ -122,7 +132,9 @@ script Lumbridge_Castle_Professor_Normal_Tree_1{
 script Lumbridge_Castle_Professor_Normal_Tree_2{
 	lock
 	faceplayer
+	namebox ("Prof. Normal Tree")
 	msgbox(format("Please choose from one of these 3 monsters on the table."))
+	hidenamebox
 	release
 	end
 	}
@@ -130,7 +142,9 @@ script Lumbridge_Castle_Professor_Normal_Tree_2{
 script Lumbridge_Castle_Hans_0{
 	lock
 	faceplayer
+	namebox ("Hans")
 	msgbox(format("Oh how exciting!\pI wonder which one you will choose."))
+	hidenamebox
 	release
 	end
 	}
@@ -138,8 +152,10 @@ script Lumbridge_Castle_Hans_0{
 script Lumbridge_Castle_Hans_1{
 	applymovement(10, Movement_Hans_4)
 	waitmovement(0)
+	namebox ("Hans")
 	msgbox(format("{PLAYER}, before you go have you heard of the MvM championships?\pMvM, which stands for Monster VS Monster, is where trainers compete against eachother in battle by using their monsters to fight for them.\pIf you wish to participate in the MvM Championships you must defeat 8 leaders from around Gielinor and make your way to the Wilderness Volcano.\pThe Duke is one of these 8 Leaders.\pIf you are interested you should pay him a visit.\pAnyway, all the best on your adventure {PLAYER}, I'm sure I'll see you around."))
 	waitmessage
+	hidenamebox
 	closemessage
 	fadescreen (FADE_TO_BLACK)
 	removeobject(9)
@@ -155,8 +171,10 @@ script Lumbridge_Castle_Hans_1{
 script Starter_TRIGGER{
 	if(!flag(FLAG_SYS_POKEMON_GET)){
 		lock
+		namebox ("Prof. Normal Tree")
 		msgbox(format("Please choose from one of these 3 monsters on the table."))
 		waitmessage
+		hidenamebox
 		closemessage
 		applymovement(OBJ_EVENT_ID_PLAYER, Movement_Starter_TRIGGER)
 		waitmovement(0)

@@ -180,12 +180,12 @@
     },
     {
       "type": "trigger",
-      "x": 32,
-      "y": 5,
+      "x": 24,
+      "y": 6,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Starter_TRIGGER"
     },
     {
       "type": "trigger",
@@ -198,8 +198,35 @@
     },
     {
       "type": "trigger",
-      "x": 22,
-      "y": 10,
+      "x": 20,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Starter_TRIGGER"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Starter_TRIGGER"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Starter_TRIGGER"
+    },
+    {
+      "type": "trigger",
+      "x": 26,
+      "y": 6,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",

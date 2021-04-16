@@ -72,7 +72,9 @@ script EvilChickenBattleScript{
 
 script WartfootBattle{
     trainerbattle_single(TRAINER_GOBLIN_1_ROUTE1, "Brown armor best!","Um.. my brown armor in the wash")
+    namebox ("WartFoot")
     msgbox("Um.. my brown armor in the wash")
+    hidenamebox
     release
 }
 

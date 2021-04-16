@@ -1634,6 +1634,19 @@
 	.byte 0
 	.endm
 
+	@displays a name box containing specified text.
+	.macro namebox name:req
+	.byte 0xe5
+	.4byte \name
+	.endm
+
+	@ closes current message box
+	.macro hidenamebox
+	.byte 0xe6
+	.endm
+
+
+
 @ Supplementary
 
 	.macro goto_if_unset flag:req, dest:req

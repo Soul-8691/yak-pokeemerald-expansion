@@ -1786,7 +1786,8 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
     s32 i, j;
     u8 monsCount;
 	u16 dynamicLevel = 0;
-	
+    bool16 Scaling = TRUE;
+
 // This is used to hold the level's of the player's strongest[1] and weakest[0] Pokemon
 u8 LevelSpread[] = {0, 0};
 	
@@ -1820,6 +1821,10 @@ u16 PartyLevelAdjust;
 		LevelSpread[1] = LevelCheck;
 	}
     }
+
+    if (gTrainers[trainerNum].scaling == FALSE)
+        Scaling = FALSE;
+        
     if(i == PARTY_SIZE)
 		dynamicLevel /= i;
 /* The following is used to account for a player having one or two very weak Pokemon
@@ -1942,8 +1947,12 @@ u16 PartyLevelAdjust;
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * 31 / 255;
-				if (partyData[i].lvl >= dynamicLevel)
-				CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+				if (partyData[i].lvl >= dynamicLevel){
+				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                }
+                else if (Scaling != TRUE){
+				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                }
 				else
 				{
 					if(HasLevelEvolution(partyData[i].species, dynamicLevel))
@@ -1962,8 +1971,12 @@ u16 PartyLevelAdjust;
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * 31 / 255;
-				if (partyData[i].lvl >= dynamicLevel)
-				CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+				if (partyData[i].lvl >= dynamicLevel){
+				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                }
+                else if (Scaling != TRUE){
+				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                }
 				else
 				{
 					if(HasLevelEvolution(partyData[i].species, dynamicLevel))
@@ -1988,8 +2001,12 @@ u16 PartyLevelAdjust;
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * 31 / 255;
-				if (partyData[i].lvl >= dynamicLevel)
-				CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+				if (partyData[i].lvl >= dynamicLevel){
+				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                }
+                else if (Scaling != TRUE){
+				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                }
 				else
 				{
 					if(HasLevelEvolution(partyData[i].species, dynamicLevel))
@@ -2010,8 +2027,12 @@ u16 PartyLevelAdjust;
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * 31 / 255;
-				if (partyData[i].lvl >= dynamicLevel)
-				CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+				if (partyData[i].lvl >= dynamicLevel){
+				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                }
+                else if (Scaling != TRUE){
+				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                }
 				else
 				{
 					if(HasLevelEvolution(partyData[i].species, dynamicLevel))

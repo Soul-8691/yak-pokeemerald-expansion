@@ -49,6 +49,7 @@
 #include "tv.h"
 #include "window.h"
 #include "constants/event_objects.h"
+#include "field_name_box.h"
 
 typedef u16 (*SpecialFunc)(void);
 typedef void (*NativeFunc)(void);
@@ -2332,4 +2333,19 @@ bool8 ScrCmd_warpsootopolislegend(struct ScriptContext *ctx)
 void ScrCmd_SetItemArg(void)
 {
 	gSaveBlock2Ptr->ItemArg = gSpecialVar_0x8000;
+}
+
+bool8 ScrCmd_namebox(struct ScriptContext *ctx) {
+    const u8 *name = (const u8 *)ScriptReadWord(ctx);
+
+    if (name == NULL)
+        name = (const u8 *)ctx->data[0];
+    ShowFieldName(name);
+    return FALSE;
+}
+
+bool8 ScrCmd_hidenamebox(struct ScriptContext *ctx) {
+    if(IsNameboxDisplayed())
+        ClearNamebox();
+    return FALSE;
 }

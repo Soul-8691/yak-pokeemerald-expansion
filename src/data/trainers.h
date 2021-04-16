@@ -11,6 +11,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = 0,
         .partySize = 0,
         .party = {.NoItemDefaultMoves = NULL},
+        .scaling = TRUE, 
     },
     [TRAINER_MAGGIE] =
     {
@@ -24,6 +25,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Maggie),
         .party = {.ItemDefaultMoves = sParty_Maggie},
+        .scaling = TRUE,
     },
 
     //route 1
@@ -39,6 +41,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Goblin1),
         .party = {.ItemDefaultMoves = sParty_Goblin1},
+        .scaling = FALSE,
     },
 	
     [TRAINER_GOBLIN_2_ROUTE1] =
@@ -53,6 +56,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Goblin2),
         .party = {.ItemDefaultMoves = sParty_Goblin2},
+        .scaling = TRUE,
     },
 
     [TRAINER_GOBLIN_3_ROUTE1] ={
@@ -66,6 +70,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Goblin3),
         .party = {.ItemDefaultMoves = sParty_Goblin3},
+        .scaling = TRUE,
     },
 	
 	[TRAINER_RSN_ROUTE1] =
@@ -80,6 +85,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Rsn_Route1),
         .party = {.ItemDefaultMoves = sParty_Rsn_Route1},
+        .scaling = TRUE,
     },
     //mill lane mill
     [TRAINER_MILL_LANE_1] = {
@@ -93,6 +99,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Mill_Lane_Mill_1),
         .party = {.ItemDefaultMoves = sParty_Mill_Lane_Mill_1},
+        .scaling = TRUE,
     },
 
     [TRAINER_MILL_LANE_2] = {
@@ -106,6 +113,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Mill_Lane_Mill_2),
         .party = {.ItemDefaultMoves = sParty_Mill_Lane_Mill_2},
+        .scaling = TRUE,
     },
 
     [TRAINER_MILL_LANE_3] = {
@@ -119,6 +127,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Mill_Lane_Mill_3),
         .party = {.ItemDefaultMoves = sParty_Mill_Lane_Mill_3},
+        .scaling = TRUE,
     },
 
     [TRAINER_MILL_LANE_4] = {
@@ -132,6 +141,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Mill_Lane_Mill_4),
         .party = {.ItemDefaultMoves = sParty_Mill_Lane_Mill_4},
+        .scaling = TRUE,
     },
     [TRAINER_FARMER_ROUTE1] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -144,6 +154,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Farmer_Route1),
         .party = {.ItemDefaultMoves = sParty_Farmer_Route1},
+        .scaling = TRUE,
     },
 
     //route 4
@@ -158,6 +169,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Mugger_Route4),
         .party = {.ItemDefaultMoves = sParty_Mugger_Route4},
+        .scaling = TRUE,
     },
     [TRAINER_FARMER_ROUTE4] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -170,6 +182,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Farmer_Route4),
         .party = {.ItemDefaultMoves = sParty_Farmer_Route4},
+        .scaling = TRUE,
 
     },
     [TRAINER_SCAMMER_ROUTE4] = {
@@ -183,6 +196,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Scammer_Route4),
         .party = {.ItemDefaultMoves = sParty_Scammer_Route4},
+        .scaling = TRUE,
 
     },
     //route 6
@@ -197,6 +211,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Mugger_Route6),
         .party = {.ItemDefaultMoves = sParty_Mugger_Route6},
+        .scaling = TRUE,
     },
     //route 12
     [TRAINER_GOBLIN_4_ROUTE12] = {
@@ -210,6 +225,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Goblin4),
         .party = {.ItemDefaultMoves = sParty_Goblin4},
+        .scaling = TRUE,
     },
 
     [TRAINER_GOBLIN_5_ROUTE12] = {
@@ -223,6 +239,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Goblin5),
         .party = {.ItemDefaultMoves = sParty_Goblin5},
+        .scaling = TRUE,
     },
 
     [TRAINER_GOBLIN_6_ROUTE12] = {
@@ -236,6 +253,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Goblin6),
         .party = {.ItemDefaultMoves = sParty_Goblin6},
+        .scaling = TRUE,
     },
 
     [TRAINER_GOBLIN_7_ROUTE12] = {
@@ -249,6 +267,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Goblin7),
         .party = {.ItemDefaultMoves = sParty_Goblin7},
+        .scaling = TRUE,
     },
 
      [TRAINER_RSN_ROUTE12] = {
@@ -262,6 +281,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Rsn_Route12),
         .party = {.ItemDefaultMoves = sParty_Rsn_Route12},
+        .scaling = TRUE,
     },
 
 
@@ -278,6 +298,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Lumbridge_Gym1),
         .party = {.ItemDefaultMoves = sParty_Lumbridge_Gym1},
+        .scaling = TRUE,
 
     },
     [TRAINER_LUMBRIDGE_GYM2] = {
@@ -291,7 +312,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Lumbridge_Gym2),
         .party = {.ItemDefaultMoves = sParty_Lumbridge_Gym2},
-
+        .scaling = TRUE,
     },
         [TRAINER_LUMBRIDGE_GYM3] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -304,7 +325,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Lumbridge_Gym3),
         .party = {.ItemDefaultMoves = sParty_Lumbridge_Gym3},
-
+        .scaling = TRUE,
     },
         [TRAINER_LUMBRIDGE_GYM4] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -317,7 +338,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Lumbridge_Gym4),
         .party = {.ItemDefaultMoves = sParty_Lumbridge_Gym4},
-
+        .scaling = TRUE,
     },
 
     [TRAINER_DUKE] = {
@@ -331,6 +352,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Duke),
         .party = {.ItemDefaultMoves = sParty_Duke},
+        .scaling = TRUE,
 
     },
     // lumbridge swamp
@@ -345,6 +367,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Rsn_Lum_Swamp),
         .party = {.ItemDefaultMoves = sParty_Rsn_Lum_Swamp},
+        .scaling = TRUE,
     },
     [TRAINER_MUGGER_LUM_SWAMP] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -357,6 +380,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Mugger_Lum_Swamp),
         .party = {.ItemDefaultMoves = sParty_Mugger_Lum_Swamp},
+        .scaling = TRUE,
     },
     [TRAINER_SKELETON_LUM_SWAMP] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -369,6 +393,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Skeleton_Lum_Swamp),
         .party = {.ItemDefaultMoves = sParty_Skeleton_Lum_Swamp},
+        .scaling = TRUE,
     },
     //MITHRILMAN
     [TRAINER_MITHRILMAN1] = {

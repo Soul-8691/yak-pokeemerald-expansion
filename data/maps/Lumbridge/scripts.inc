@@ -10,6 +10,7 @@ Lumbridge_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 CUPHOLDER_NPC::
 	lock
 	faceplayer
+
 	msgbox CUPHOLDER_NPC_Text_0
 	release
 	end
@@ -21,6 +22,7 @@ Lumbridge_SIGN::
 	msgbox Lumbridge_SIGN_Text_0
 	release
 	end
+
 
 
 Lumbridge_Phileas::
@@ -291,6 +293,7 @@ LUMBRIDGE_PLAYER_SOUTH_TRIGGER:
 LUMBRIDGE_GUARD_SOUTH_TRIGGER_2:
 	face_left
 	step_end
+
 
 MoveNPCsAfterEvents_Lumbridge::
 	goto_if_set FLAG_COOKS_ASSIST_STARTED, MoveNPCsAfterEvents_Lumbridge_1
@@ -640,3 +643,4 @@ Lumbridge_House_Roddeck_Text_2:
 	.string "I wish I knew that before Sottlepot\n"
 	.string "went on a rampage killing Sir Vant and\l"
 	.string "an adventurer..$"
+

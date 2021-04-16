@@ -111,7 +111,7 @@ script Mithrilman_LUMBRIDGE1{
 	faceplayer
     playbgm (MUS_ENCOUNTER_MAY, 1)
 	msgbox(format("Helloust there knave, thee be a challenger of the duke thine can tell.\pWhomst am I?\pLook upon me in awe knave, for thine amst the greatest of all challengers of the PokeScapian realm.\pThine's a Mithrilman.\pMorest fabled thanst the Ironmen and faster than the Adamantmen.\pThe Mithrilman is a challenge upon the very spirit ofst PokeScape itself.\pAs thy predecessor inst this realm."))
-    applymovement((2), Movement_Mithrilman_Glory)
+
     trainerbattle_single(TRAINER_MITHRILMAN1,format("Why doesnt thine show ye, knave, howst a true master battles."),format("..."),Mithrilman_LUMBRIDGE2)
     release
 }

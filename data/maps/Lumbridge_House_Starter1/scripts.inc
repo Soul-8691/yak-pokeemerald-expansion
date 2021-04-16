@@ -15,10 +15,13 @@ Explorer_Jack_1::
 Explorer_Jack_1_1:
 	lockall
 	setvar VAR_POKESCAPE_STARTER_HOUSE_STATE, 1
+	playse SE_PIN
 	applymovement 1, Movement_Explorer_Jack_1
 	waitmovement 0
-	msgbox Explorer_Jack_1_Text_0
+	namebox Explorer_Jack_1_Text_0
+	msgbox Explorer_Jack_1_Text_1
 	goto SetClock
+	hidenamebox
 	release
 	end
 
@@ -33,6 +36,7 @@ SetClock::
 
 
 Explorer_Jack_2::
+	namebox Explorer_Jack_1_Text_0
 	gettime
 	compare VAR_0x8000, 7
 	goto_if_lt Explorer_Jack_2_2
@@ -44,6 +48,7 @@ Explorer_Jack_2::
 Explorer_Jack_2_1:
 	msgbox Explorer_Jack_2_Text_3
 	closemessage
+	hidenamebox
 	applymovement 1, Movement_Explorer_Jack_2
 	waitmovement 0
 	setflag FLAG_RECEIVED_RUNNING_SHOES
@@ -80,12 +85,17 @@ Movement_Explorer_Jack_2:
 Explorer_Jack_3::
 	lock
 	faceplayer
+	namebox Explorer_Jack_1_Text_0
 	msgbox Explorer_Jack_3_Text_0
+	hidenamebox
 	release
 	end
 
 
 Explorer_Jack_1_Text_0:
+	.string "Explorer Jack$"
+
+Explorer_Jack_1_Text_1:
 	.string "You're awake!\p"
 	.string "Do you know what time it is?$"
 

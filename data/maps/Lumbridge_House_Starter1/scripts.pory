@@ -9,10 +9,13 @@ script Explorer_Jack_1
 	if (!flag(FLAG_SET_WALL_CLOCK)){
 		lockall
 		setvar(VAR_POKESCAPE_STARTER_HOUSE_STATE, 1)
+		playse(SE_PIN)
 		applymovement(1, Movement_Explorer_Jack_1)
 		waitmovement (0)
+		namebox ("Explorer Jack")
 		msgbox(format("You're awake!\pDo you know what time it is?"))
 		goto (SetClock)
+		hidenamebox
 		release
 		end
 	}
@@ -32,6 +35,7 @@ script SetClock
 }
 
 script Explorer_Jack_2 {
+	namebox ("Explorer Jack")
     gettime
     if (var(VAR_0x8000) < 7 || var(VAR_0x8000) >= 21) {
         msgbox(format("Are you sure you don't want to go back to bed?"))
@@ -42,6 +46,7 @@ script Explorer_Jack_2 {
     }
 	msgbox(format("Anyhow, I've got some news for you.\pApparently a famous researcher is currently visiting the Duke in Lumbridge Castle and I heard he is giving out Monsters to anyone who can help him with a quest!\pI think you should go pay him a visit seeing as you've always had a fondness for adventures."))
 	closemessage
+	hidenamebox
 	applymovement(1, Movement_Explorer_Jack_2)
 	waitmovement (0)
 	setflag (FLAG_RECEIVED_RUNNING_SHOES)
@@ -69,10 +74,14 @@ movement Movement_Explorer_Jack_2
 script Explorer_Jack_3 {
 	lock
 	faceplayer
+	namebox ("Explorer Jack")
 	msgbox(format("You should make your way to Lumbridge Castle."))
+	hidenamebox
 	release
 	end
 }
+
+
 
 
 

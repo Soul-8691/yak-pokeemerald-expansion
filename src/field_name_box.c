@@ -24,12 +24,13 @@ static void LoadNameboxSprite2(s8 x, s8 y);
 static void LoadNameboxSpriteSmall(s8 x, s8 y);
 static void AddTextPrinterForName();
 static void ClearNameboxTiles();
-static void CheckNameLength(u8 string);
+static void CheckNameLength();
 
 static EWRAM_DATA u8 sNameboxWindowId = 0;
 static EWRAM_DATA u8 sNameboxGfxIdLeft = 0;
 static EWRAM_DATA u8 sNameboxGfxIdRight = 0;
 static EWRAM_DATA u8 sNameboxGfxIdSmall = 0;
+static EWRAM_DATA u8 useLargeBox = 0;
 
 
 static const u32 sNamebox_Left_Gfx[] = INCBIN_U32("graphics/text_window/name_box_left.4bpp.lz");
@@ -131,6 +132,7 @@ void ShowFieldName(const u8 *str) {
             ClearNamebox();
     LoadNameboxWindow(&sNamebox_WindowTemplate);
     StringExpandPlaceholders(gStringVar3, str);
+    CheckNameLength();
     AddTextPrinterForName();
     CreateTask_DisplayNamebox();
 }
@@ -145,8 +147,19 @@ void ClearNamebox() {
     ClearNameboxTiles();
     RemoveWindow(sNameboxWindowId);
     sNameboxWindowId = 0;
-    DestroySpriteAndFreeResources(&gSprites[sNameboxGfxIdLeft]);
-    DestroySpriteAndFreeResources(&gSprites[sNameboxGfxIdRight]);
+
+    
+    if (sNameboxGfxIdSmall == 0){
+        DestroySpriteAndFreeResources(&gSprites[sNameboxGfxIdLeft]);
+        DestroySpriteAndFreeResources(&gSprites[sNameboxGfxIdRight]);
+        sNameboxGfxIdLeft = 0;
+        sNameboxGfxIdRight = 0;
+    }
+    else {
+        DestroySpriteAndFreeResources(&gSprites[sNameboxGfxIdSmall]);
+        sNameboxGfxIdSmall = 0;
+    }
+    
 }
 
 
@@ -164,8 +177,13 @@ static void Task_DisplayNamebox(u8 taskId) {
         gTasks[taskId].tTimer--;
     else{
         LoadNameboxTilemap();
-    
+
+        if (useLargeBox == 1){
         LoadNameboxSprite(32, 104);
+        }
+        else {
+        LoadNameboxSpriteSmall(32,104);
+        }
 
         DestroyTask(taskId);
     }
@@ -185,16 +203,16 @@ static void LoadNameboxTilemap() {
 }
 
 static void LoadNameboxSprite(s8 x, s8 y) {
-    u8 spriteId;
-    LoadCompressedSpriteSheet(&sSpriteSheet_Namebox_Left);
-    LoadSpritePalette(&sSpritePalette_Namebox);
-    spriteId = CreateSprite(&sSpriteTemplate_Namebox_Left, x, y, 0);
-    if (sNameboxGfxIdLeft == MAX_SPRITES)
-        return;
-    else
-        sNameboxGfxIdLeft = spriteId;
+        u8 spriteId;
+        LoadCompressedSpriteSheet(&sSpriteSheet_Namebox_Left);
+        LoadSpritePalette(&sSpritePalette_Namebox);
+        spriteId = CreateSprite(&sSpriteTemplate_Namebox_Left, x, y, 0);
+        if (sNameboxGfxIdLeft == MAX_SPRITES)
+            return;
+        else
+            sNameboxGfxIdLeft = spriteId;
     
-    LoadNameboxSprite2(96, 104);
+        LoadNameboxSprite2(96, 104);
 }
 
 static void LoadNameboxSprite2(s8 x, s8 y)
@@ -230,7 +248,7 @@ static void AddTextPrinterForName() {
     printer.currentChar = gStringVar3;
     printer.windowId = sNameboxWindowId;
     printer.fontId = 1;
-    printer.x = 0; 
+    printer.x = 9; 
     printer.y = 0;
     printer.currentX = printer.x;
     printer.currentY = printer.y;
@@ -250,3 +268,14 @@ static void ClearNameboxTiles(){
     CopyWindowToVram(sNameboxWindowId, 3);
 }
 
+
+
+
+static void CheckNameLength(){
+    if (StringLength(gStringVar3) > 6){
+        useLargeBox = 1;
+    }
+    else {
+        useLargeBox = 0;
+    }
+}

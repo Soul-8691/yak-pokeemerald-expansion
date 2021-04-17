@@ -66,7 +66,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_cow",
       "x": 34,
-      "y": 30,
+      "y": 33,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 4,
@@ -78,8 +78,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_cow",
-      "x": 30,
-      "y": 32,
+      "x": 31,
+      "y": 38,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 4,
@@ -105,7 +105,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_goblin_1",
       "x": 27,
-      "y": 51,
+      "y": 48,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -208,8 +208,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_goblin_1",
-      "x": 24,
-      "y": 5,
+      "x": 27,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
       "movement_range_x": 0,
@@ -247,10 +247,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_farmer_male",
-      "x": 35,
-      "y": 2,
+      "x": 31,
+      "y": 3,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -338,8 +338,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_farmer_female",
-      "x": 29,
-      "y": 29,
+      "x": 28,
+      "y": 28,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -352,7 +352,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_cow",
       "x": 27,
-      "y": 29,
+      "y": 28,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,

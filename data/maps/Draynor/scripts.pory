@@ -1,0 +1,100 @@
+mapscripts Draynor_MapScripts {
+    
+}
+
+
+script NPC_PIG
+{
+	lock
+	faceplayer
+    playmoncry(SPECIES_PIG, 0)
+	msgbox(format("OINK!"))
+    waitmoncry
+	release
+	end
+}
+
+
+script Draynor_Diango{
+	lock
+	faceplayer
+    namebox("Diango")
+	msgbox(format("Howdy!"))
+    hidenamebox
+    release
+	end
+}
+
+script Draynor_Miss_Schism{
+	lock
+	faceplayer
+    namebox("Miss Schism")
+	msgbox(format("Hello."))
+    hidenamebox
+    release
+	end
+}
+
+script Draynor_Oliva{
+	lock
+	faceplayer
+    namebox("Oliva")
+	msgbox(format("The other day a stranger dressed in blue and yellow gave me a kitten."))
+    hidenamebox
+    release
+	end
+}
+
+script Draynor_Martin{
+	lock
+	faceplayer
+    namebox("Martin")
+	msgbox(format("Sorry, I'm a bit too busy to talk.\pSomeone nicked my cabbage."))
+    hidenamebox
+    release
+	end
+}
+
+script Draynor_Guard1{
+	lock
+	faceplayer
+    namebox("Guard")
+	msgbox(format("I've got my eye on you, don't cause any trouble or else."))
+    hidenamebox
+    release
+	end
+}
+
+script Draynor_Guard2{
+	lock
+	faceplayer
+    namebox("Guard")
+	msgbox(format("Don't cause any trouble."))
+    hidenamebox
+    release
+	end
+}
+
+script Draynor_Guard3{
+	lock
+	faceplayer
+    namebox("Guard")
+	msgbox(format("Ow..\pI fell out of this tree."))
+    hidenamebox
+    release
+	end
+}
+
+
+
+
+//INDOORS
+script Draynor_Morgan{
+	lock
+	faceplayer
+    namebox("Morgan")
+	msgbox(format("There's a Vampyre in Draynor Mannor but no one believes me.."))
+    hidenamebox
+    release
+	end
+}

@@ -6,11 +6,10 @@ script Millie_Miller{
     lock
     faceplayer
     namebox ("Millie Miller")
-    checkitem(ITEM_FLOUR_POT, >1)
-	if (var(VAR_RESULT) && !flag(FLAG_COOKS_ASSIST_FINISHED)){
+	checktrainerflag(TRAINER_MILLIE_MILLER_MILLLANEMILL)
+        if (var(VAR_RESULT) == FALSE){
         msgbox(format("Welcome to Mill Lane Mill!\pI heard that you were after some of our flour.\pTehehehehe.\pI can give you some if you want.."))
         trainerbattle_single(TRAINER_MILLIE_MILLER_MILLLANEMILL,format("But you'll have to battle me for it.\pTeheehehe!"),format("I was so close!"),GiveQuestWheat)
-        hidenamebox
         release
         end
     }

@@ -6,10 +6,9 @@ Millie_Miller::
 	lock
 	faceplayer
 	namebox Millie_Miller_Text_0
-	checkitem ITEM_FLOUR_POT, 0
-	compare VAR_RESULT, 0
-	goto_if_ne Millie_Miller_3
-Millie_Miller_2:
+	checktrainerflag TRAINER_MILLIE_MILLER_MILLLANEMILL
+	compare VAR_RESULT, FALSE
+	goto_if_eq Millie_Miller_1
 	msgbox Millie_Miller_Text_4
 	pokemart MillLaneMillFlourShop
 	hidenamebox
@@ -19,13 +18,8 @@ Millie_Miller_2:
 Millie_Miller_1:
 	msgbox Millie_Miller_Text_1
 	trainerbattle_single TRAINER_MILLIE_MILLER_MILLLANEMILL, Millie_Miller_Text_2, Millie_Miller_Text_3, GiveQuestWheat
-	hidenamebox
 	release
 	end
-
-Millie_Miller_3:
-	goto_if_set FLAG_COOKS_ASSIST_STARTED, Millie_Miller_1
-	goto Millie_Miller_2
 
 
 GiveQuestWheat::

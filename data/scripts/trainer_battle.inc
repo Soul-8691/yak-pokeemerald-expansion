@@ -112,6 +112,7 @@ EventScript_ShowTrainerIntroMsg:: @ 827143C
 	goto EventScript_DoTrainerBattle
 
 EventScript_DoTrainerBattle:: @ 8271454
+	hidenamebox
 	trainerbattlebegin
 	@ Below battle mode check only needed in FRLG
 	specialvar VAR_RESULT, GetTrainerBattleMode

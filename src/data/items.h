@@ -6280,7 +6280,7 @@ const struct Item gItems[] =
     {
         .name = _("POUCH"),
         .itemId = ITEM_BRONZE_POUCH,
-        .price = 200,
+        .price = 50,
         .description = sBronzePouchDesc,
         .pocket = POCKET_POKE_BALLS,
         .type = 3,
@@ -7182,7 +7182,7 @@ const struct Item gItems[] =
     {
         .name = _("EGG"),
         .itemId = ITEM_EGG,
-        .price = 0,
+        .price = 20,
         .description = sCupholderDesc,
         .pocket = POCKET_ITEMS,
         .type = 2,
@@ -7194,7 +7194,7 @@ const struct Item gItems[] =
     {
         .name = _("EMPTY BUCKET"),
         .itemId = ITEM_EMPTY_BUCKET,
-        .price = 300,
+        .price = 200,
         .description = sCupholderDesc,
         .pocket = POCKET_ITEMS,
         .type = 2,
@@ -7240,7 +7240,7 @@ const struct Item gItems[] =
     {
         .name = _("EMPTY POT"),
         .itemId = ITEM_EMPTY_POT,
-        .price = 0,
+        .price = 100,
         .description = sCupholderDesc,
         .pocket = POCKET_ITEMS,
         .type = 2,

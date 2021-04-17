@@ -27,8 +27,7 @@ const struct Trainer gTrainers[] = {
         .party = {.ItemDefaultMoves = sParty_Maggie},
         .scaling = TRUE,
     },
-
-    //route 1
+//-------------ROUTE 1--------------------------------------------------------------------------------------------------------
      [TRAINER_GOBLIN_1_ROUTE1] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -39,8 +38,8 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
-        .partySize = ARRAY_COUNT(sParty_Goblin1),
-        .party = {.ItemDefaultMoves = sParty_Goblin1},
+        .partySize = ARRAY_COUNT(sParty_Goblin1_Route1),
+        .party = {.ItemDefaultMoves = sParty_Goblin1_Route1},
         .scaling = FALSE,
     },
 	
@@ -54,9 +53,24 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
-        .partySize = ARRAY_COUNT(sParty_Goblin2),
-        .party = {.ItemDefaultMoves = sParty_Goblin2},
-        .scaling = TRUE,
+        .partySize = ARRAY_COUNT(sParty_Goblin2_Route1),
+        .party = {.ItemDefaultMoves = sParty_Goblin2_Route1},
+        .scaling = FALSE,
+    },
+
+	[TRAINER_RSN_ROUTE1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_NOOB,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = TRAINER_PIC_noob_default,
+        .trainerName = _("RSN"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_Trainer1_Route1),
+        .party = {.ItemDefaultMoves = sParty_Trainer1_Route1},
+        .scaling = FALSE,
     },
 
     [TRAINER_GOBLIN_3_ROUTE1] ={
@@ -70,39 +84,39 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Goblin3),
         .party = {.ItemDefaultMoves = sParty_Goblin3},
-        .scaling = TRUE,
+        .scaling = FALSE,
     },
 	
-	[TRAINER_RSN_ROUTE1] =
-    {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
-        .trainerClass = TRAINER_CLASS_NOOB,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_noob_default,
-        .trainerName = _("BOB"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
-        .partySize = ARRAY_COUNT(sParty_Rsn_Route1),
-        .party = {.ItemDefaultMoves = sParty_Rsn_Route1},
-        .scaling = TRUE,
-    },
-    //mill lane mill
-    [TRAINER_MILL_LANE_1] = {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
-        .trainerClass = TRAINER_CLASS_MILLER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_miller,
-        .trainerName = _("ABIGAIL"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
-        .partySize = ARRAY_COUNT(sParty_Mill_Lane_Mill_1),
-        .party = {.ItemDefaultMoves = sParty_Mill_Lane_Mill_1},
-        .scaling = TRUE,
-    },
 
-    [TRAINER_MILL_LANE_2] = {
+//----------------------------------------------------------------------------------------------------------------------
+//MILL LANE MILL----------------------------------------------------------------------------------------------------------------------
+    [TRAINER_TRAINER1_MILLLANEMILL] = {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_HUNTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_hunter_f,
+        .trainerName = _("RSN"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_TRAINER1_MILLLANEMILL),
+        .party = {.ItemDefaultMoves = sParty_TRAINER1_MILLLANEMILL},
+        .scaling = FALSE,
+    },
+    [TRAINER_TRAINER2_MILLLANEMILL] = {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_FARMER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_farmer,
+        .trainerName = _("RSN"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_TRAINER2_MILLLANEMILL),
+        .party = {.ItemDefaultMoves = sParty_TRAINER2_MILLLANEMILL},
+        .scaling = FALSE,
+    },
+    [TRAINER_TRAINER3_MILLLANEMILL] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_MILLER,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
@@ -111,12 +125,11 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
-        .partySize = ARRAY_COUNT(sParty_Mill_Lane_Mill_2),
-        .party = {.ItemDefaultMoves = sParty_Mill_Lane_Mill_2},
-        .scaling = TRUE,
+        .partySize = ARRAY_COUNT(sParty_TRAINER3_MILLLANEMILL),
+        .party = {.ItemDefaultMoves = sParty_TRAINER3_MILLLANEMILL},
+        .scaling = FALSE,
     },
-
-    [TRAINER_MILL_LANE_3] = {
+    [TRAINER_TRAINER4_MILLLANEMILL] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_MILLER,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
@@ -125,12 +138,11 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
-        .partySize = ARRAY_COUNT(sParty_Mill_Lane_Mill_3),
-        .party = {.ItemDefaultMoves = sParty_Mill_Lane_Mill_3},
-        .scaling = TRUE,
+        .partySize = ARRAY_COUNT(sParty_TRAINER4_MILLLANEMILL),
+        .party = {.ItemDefaultMoves = sParty_TRAINER4_MILLLANEMILL},
+        .scaling = FALSE,
     },
-
-    [TRAINER_MILL_LANE_4] = {
+    [TRAINER_MILLIE_MILLER_MILLLANEMILL] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_MILLER,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
@@ -139,10 +151,12 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
-        .partySize = ARRAY_COUNT(sParty_Mill_Lane_Mill_4),
-        .party = {.ItemDefaultMoves = sParty_Mill_Lane_Mill_4},
-        .scaling = TRUE,
+        .partySize = ARRAY_COUNT(sParty_MILLIE_MILLER_MILLLANEMILL),
+        .party = {.ItemDefaultMoves = sParty_MILLIE_MILLER_MILLLANEMILL},
+        .scaling = FALSE,
     },
+//----------------------------------------------------------------------------------------------------------------------
+
     [TRAINER_FARMER_ROUTE1] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_FARMER,
@@ -407,6 +421,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_MITHRILMAN1),
         .party = {.ItemDefaultMoves = sParty_MITHRILMAN1},
+        .scaling = FALSE,
     },
     [TRAINER_MITHRILMAN2] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -419,6 +434,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_MITHRILMAN2),
         .party = {.ItemDefaultMoves = sParty_MITHRILMAN2},
+        .scaling = FALSE,
     },
     [TRAINER_MITHRILMAN3] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -431,6 +447,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_MITHRILMAN3),
         .party = {.ItemDefaultMoves = sParty_MITHRILMAN3},
+        .scaling = FALSE,
     },
     [TRAINER_MITHRILMAN4] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -443,6 +460,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_MITHRILMAN4),
         .party = {.ItemDefaultMoves = sParty_MITHRILMAN4},
+        .scaling = FALSE,
     },
     [TRAINER_MITHRILMAN5] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -455,6 +473,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_MITHRILMAN5),
         .party = {.ItemDefaultMoves = sParty_MITHRILMAN5},
+        .scaling = FALSE,
     },
     [TRAINER_MITHRILMAN6] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -467,6 +486,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_MITHRILMAN6),
         .party = {.ItemDefaultMoves = sParty_MITHRILMAN6},
+        .scaling = FALSE,
     },
     [TRAINER_MITHRILMAN7] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -479,6 +499,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_MITHRILMAN7),
         .party = {.ItemDefaultMoves = sParty_MITHRILMAN7},
+        .scaling = FALSE,
     },
     [TRAINER_MITHRILMAN8] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -491,6 +512,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_MITHRILMAN8),
         .party = {.ItemDefaultMoves = sParty_MITHRILMAN8},
+        .scaling = FALSE,
     },
     [TRAINER_MITHRILMAN9] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -503,6 +525,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_MITHRILMAN9),
         .party = {.ItemDefaultMoves = sParty_MITHRILMAN9},
+        .scaling = FALSE,
     },
     [TRAINER_MITHRILMAN10] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -515,5 +538,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_MITHRILMAN10),
         .party = {.ItemDefaultMoves = sParty_MITHRILMAN10},
+        .scaling = FALSE,
     },
+
 };

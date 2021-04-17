@@ -10,10 +10,10 @@
 #define TRAINER_FARMER_ROUTE1                 5
 #define TRAINER_RSN_ROUTE1					  6
 //mill lane mill
-#define TRAINER_MILL_LANE_1                   7
-#define TRAINER_MILL_LANE_2                   8
-#define TRAINER_MILL_LANE_3                   9
-#define TRAINER_MILL_LANE_4                   10
+#define TRAINER_TRAINER2_MILLLANEMILL                   7
+#define TRAINER_TRAINER3_MILLLANEMILL                   8
+#define TRAINER_TRAINER4_MILLLANEMILL                   9
+#define TRAINER_MILLIE_MILLER_MILLLANEMILL                   10
 //route 12
 #define TRAINER_GOBLIN_4_ROUTE12              11
 #define TRAINER_GOBLIN_5_ROUTE12              12
@@ -50,6 +50,10 @@
 #define TRAINER_MITHRILMAN8                      35
 #define TRAINER_MITHRILMAN9                      36
 #define TRAINER_MITHRILMAN10                     37
+
+#define TRAINER_TRAINER1_MILLLANEMILL            38
+
+
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space

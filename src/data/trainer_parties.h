@@ -13,22 +13,37 @@ static const struct TrainerMonItemDefaultMoves sParty_Maggie[] = {
     .heldItem = ITEM_FOCUS_BAND
     }
 };
-
+//----------------------------------------------------------------------------------------------------------------------
 //route 1
-static const struct TrainerMonItemDefaultMoves sParty_Goblin1[] = {
+static const struct TrainerMonItemDefaultMoves sParty_Goblin1_Route1[] = {
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 2,
     .species = SPECIES_SPIDERLING,
     .heldItem = ITEM_NONE
     }
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_Goblin2[] = {
+static const struct TrainerMonItemDefaultMoves sParty_Goblin2_Route1[] = {
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 3,
     .species = SPECIES_RAT_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_Trainer1_Route1[] = {
+    {
+    .iv = 0,
+    .lvl = 3,
+    .species = SPECIES_CHICK,
+    .heldItem = ITEM_NONE
+    },
+	{
+    .iv = 0,
+    .lvl = 4,
+    .species = SPECIES_LAMB,
     .heldItem = ITEM_NONE
     }
 };
@@ -48,20 +63,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Goblin3[] = {
     }
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_Rsn_Route1[] = {
-    {
-    .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_RAT_NORMAL_FORM,
-    .heldItem = ITEM_NONE
-    },
-	{
-    .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_CHICK,
-    .heldItem = ITEM_NONE
-    }
-};
+
 
 static const struct TrainerMonItemDefaultMoves sParty_Farmer_Route1[] = {
     {
@@ -77,42 +79,51 @@ static const struct TrainerMonItemDefaultMoves sParty_Farmer_Route1[] = {
     .heldItem = ITEM_NONE
     }
 };
-
+//----------------------------------------------------------------------------------------------------------------------
 //mill lane mill
-static const struct TrainerMonItemDefaultMoves sParty_Mill_Lane_Mill_1[] = {
+static const struct TrainerMonItemDefaultMoves sParty_TRAINER1_MILLLANEMILL[] = {
     {
     .iv = 0,
     .lvl = 5,
-    .species = SPECIES_CHICK,
-    .heldItem = ITEM_NONE
-    }
-};
-
-static const struct TrainerMonItemDefaultMoves sParty_Mill_Lane_Mill_2[] = {
-    {
-    .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_CALF,
-    .heldItem = ITEM_NONE
-    }
-};
-
-static const struct TrainerMonItemDefaultMoves sParty_Mill_Lane_Mill_3[] = {
-    {
-    .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_LAMB,
+    .species = SPECIES_KEBBIT,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
     .lvl = 5,
+    .species = SPECIES_KEBBIT,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_TRAINER2_MILLLANEMILL[] = {
+    {
+    .iv = 0,
+    .lvl = 6,
+    .species = SPECIES_CHICK,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_TRAINER3_MILLLANEMILL[] = {
+    {
+    .iv = 0,
+    .lvl = 6,
+    .species = SPECIES_CALF,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_TRAINER4_MILLLANEMILL[] = {
+    {
+    .iv = 0,
+    .lvl = 6,
     .species = SPECIES_BABY_YAK,
     .heldItem = ITEM_NONE
     }
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_Mill_Lane_Mill_4[] = {
+static const struct TrainerMonItemDefaultMoves sParty_MILLIE_MILLER_MILLLANEMILL[] = {
     {
     .iv = 0,
     .lvl = 5,

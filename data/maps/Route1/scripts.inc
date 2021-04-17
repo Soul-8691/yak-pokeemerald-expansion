@@ -17,6 +17,91 @@ NPC_SHEEP::
 	end
 
 
+NPC_COW::
+	lock
+	faceplayer
+	playmoncry SPECIES_MILTANK, 0
+	msgbox NPC_COW_Text_0
+	waitmoncry
+	release
+	end
+
+
+SIGN_ROUTE1_1::
+	lock
+	msgbox SIGN_ROUTE1_1_Text_0
+	release
+	end
+
+
+SIGN_ROUTE1_2::
+	lock
+	msgbox SIGN_ROUTE1_2_Text_0
+	release
+	end
+
+
+SIGN_ROUTE1_3::
+	lock
+	msgbox SIGN_ROUTE1_3_Text_0
+	release
+	end
+
+
+Route1FarmerBlocking::
+	lock
+	faceplayer
+	goto_if_unset FLAG_BADGE01_GET, Route1FarmerBlocking_2
+	msgbox Route1FarmerBlocking_Text_1
+Route1FarmerBlocking_1:
+	release
+	return
+
+Route1FarmerBlocking_2:
+	msgbox Route1FarmerBlocking_Text_0
+	goto Route1FarmerBlocking_1
+
+
+TryMoveCowBlockersRoute1::
+	goto_if_set FLAG_BADGE01_GET, TryMoveCowBlockersRoute1_1
+	return
+
+TryMoveCowBlockersRoute1_1:
+	setobjectxyperm 4, 42, 9
+	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 12, 38, 9
+	setobjectxyperm 13, 36, 11
+	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_DOWN
+	return
+
+
+Wartfoot_Route1_Battle::
+	trainerbattle_single TRAINER_GOBLIN_1_ROUTE1, Wartfoot_Route1_Battle_Text_0, Wartfoot_Route1_Battle_Text_1
+	namebox Wartfoot_Route1_Battle_Text_2
+	msgbox Wartfoot_Route1_Battle_Text_3
+	hidenamebox
+	release
+	end
+
+
+Frogface_Route1_Battle::
+	trainerbattle_single TRAINER_GOBLIN_2_ROUTE1, Frogface_Route1_Battle_Text_0, Frogface_Route1_Battle_Text_1
+	namebox Frogface_Route1_Battle_Text_2
+	msgbox Frogface_Route1_Battle_Text_3
+	hidenamebox
+	release
+	end
+
+
+Trainer1_Route1_Battle::
+	trainerbattle_single TRAINER_RSN_ROUTE1, Trainer1_Route1_Battle_Text_0, Trainer1_Route1_Battle_Text_1
+	namebox Trainer1_Route1_Battle_Text_2
+	msgbox Trainer1_Route1_Battle_Text_3
+	hidenamebox
+	release
+	end
+
+
 ChickenBattleScript1::
 	lock
 	faceplayer
@@ -69,32 +154,9 @@ EvilChickenBattleScript::
 	return
 
 
-WartfootBattle::
-	trainerbattle_single TRAINER_GOBLIN_1_ROUTE1, WartfootBattle_Text_0, WartfootBattle_Text_1
-	namebox WartfootBattle_Text_2
-	msgbox WartfootBattle_Text_1
-	hidenamebox
-	release
-	return
-
-
-FrogfaceBattle::
-	trainerbattle_single TRAINER_GOBLIN_2_ROUTE1, FrogfaceBattle_Text_0, FrogfaceBattle_Text_1
-	msgbox FrogfaceBattle_Text_2
-	release
-	return
-
-
 MudbeardBattle::
 	trainerbattle_single TRAINER_GOBLIN_3_ROUTE1, MudbeardBattle_Text_0, MudbeardBattle_Text_1
 	msgbox MudbeardBattle_Text_2
-	release
-	return
-
-
-RsnBattle::
-	trainerbattle_single TRAINER_RSN_ROUTE1, RsnBattle_Text_0, RsnBattle_Text_1
-	msgbox RsnBattle_Text_2
 	release
 	return
 
@@ -124,35 +186,69 @@ GenericCowMoo::
 	return
 
 
-Route1FarmerBlocking::
-	lock
-	faceplayer
-	goto_if_unset FLAG_BADGE01_GET, Route1FarmerBlocking_2
-	msgbox Route1FarmerBlocking_Text_1
-Route1FarmerBlocking_1:
-	release
-	return
-
-Route1FarmerBlocking_2:
-	msgbox Route1FarmerBlocking_Text_0
-	goto Route1FarmerBlocking_1
-
-
-TryMoveCowBlockersRoute1::
-	goto_if_set FLAG_BADGE01_GET, TryMoveCowBlockersRoute1_1
-	return
-
-TryMoveCowBlockersRoute1_1:
-	setobjectxyperm 4, 42, 9
-	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 12, 38, 9
-	setobjectxyperm 13, 36, 11
-	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_DOWN
-	return
-
-
 NPC_SHEEP_Text_0:
 	.string "BAAA.$"
+
+NPC_COW_Text_0:
+	.string "MOOO!$"
+
+SIGN_ROUTE1_1_Text_0:
+	.string "Fred's Farm.$"
+
+SIGN_ROUTE1_2_Text_0:
+	.string "NORTH to MILL LANE MILL\p"
+	.string "WEST to DRAYNOR\p"
+	.string "EAST to LUMBRIDGE$"
+
+SIGN_ROUTE1_3_Text_0:
+	.string "NORTH to DRAYNOR MANOR\p"
+	.string "WEST to FALADOR\p"
+	.string "EAST to LUMBRIDGE\p"
+	.string "SOUTH to DRAYNOR$"
+
+Route1FarmerBlocking_Text_0:
+	.string "I can't seem to control these dang Cows!$"
+
+Route1FarmerBlocking_Text_1:
+	.string "I finally got my Cows out of the way.$"
+
+Wartfoot_Route1_Battle_Text_0:
+	.string "Brown armour best!$"
+
+Wartfoot_Route1_Battle_Text_1:
+	.string "Um.. My brown armour in the wash.$"
+
+Wartfoot_Route1_Battle_Text_2:
+	.string "WartFoot$"
+
+Wartfoot_Route1_Battle_Text_3:
+	.string "Me like brown armour, but now it dirty.$"
+
+Frogface_Route1_Battle_Text_0:
+	.string "You ugly!$"
+
+Frogface_Route1_Battle_Text_1:
+	.string "You still ugly!$"
+
+Frogface_Route1_Battle_Text_2:
+	.string "FrogFace$"
+
+Frogface_Route1_Battle_Text_3:
+	.string "You really, really ugly!$"
+
+Trainer1_Route1_Battle_Text_0:
+	.string "You look like a noob!$"
+
+Trainer1_Route1_Battle_Text_1:
+	.string "Maybe I'm the noob..$"
+
+Trainer1_Route1_Battle_Text_2:
+	.string "RSN$"
+
+Trainer1_Route1_Battle_Text_3:
+	.string "The mill is up ahead.\p"
+	.string "I heard you can get some good flour\n"
+	.string "there.$"
 
 ChickenBattleScript1_Text_0:
 	.string "BWAK!$"
@@ -160,24 +256,6 @@ ChickenBattleScript1_Text_0:
 EvilChickenBattleScript_Text_0:
 	.string "BWAWWWK!\p"
 	.string "BEGONE {PLAYER}!$"
-
-WartfootBattle_Text_0:
-	.string "Brown armor best!$"
-
-WartfootBattle_Text_1:
-	.string "Um.. my brown armor in the wash$"
-
-WartfootBattle_Text_2:
-	.string "WartFoot$"
-
-FrogfaceBattle_Text_0:
-	.string "You ugly!$"
-
-FrogfaceBattle_Text_1:
-	.string "You still ugly!$"
-
-FrogfaceBattle_Text_2:
-	.string "you really really ugly$"
 
 MudbeardBattle_Text_0:
 	.string "Go away smelly human!$"
@@ -187,16 +265,6 @@ MudbeardBattle_Text_1:
 
 MudbeardBattle_Text_2:
 	.string "Smelly human!$"
-
-RsnBattle_Text_0:
-	.string "You look like a noob!$"
-
-RsnBattle_Text_1:
-	.string "Maybe I'm the noob..$"
-
-RsnBattle_Text_2:
-	.string "The mill is up ahead. I heard you can get\n"
-	.string "some good wheat there.$"
 
 Route1FarmerBattle_Text_0:
 	.string "Cor blimey what are ye doing on me\n"
@@ -213,9 +281,3 @@ Route1Woman_Text_0:
 
 GenericCowMoo_Text_0:
 	.string "MOOO$"
-
-Route1FarmerBlocking_Text_0:
-	.string "I can't seem to control these dang cows!$"
-
-Route1FarmerBlocking_Text_1:
-	.string "I finally got my cows out of the way.$"

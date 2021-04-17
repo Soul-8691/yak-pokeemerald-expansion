@@ -2,34 +2,71 @@ Mill_Lane_Mill_3_MapScripts::
 	.byte 0
 
 
-FarmerBattle4::
-	trainerbattle_single TRAINER_MILL_LANE_4, MillyIntro, FarmerBattle4_Text_0, GiveQuestWheat
-	msgbox FarmerBattle4_Text_1
+Millie_Miller::
+	lock
+	faceplayer
+	namebox Millie_Miller_Text_0
+	checkitem ITEM_FLOUR_POT, 0
+	compare VAR_RESULT, 0
+	goto_if_ne Millie_Miller_3
+Millie_Miller_2:
+	msgbox Millie_Miller_Text_4
 	pokemart MillLaneMillFlourShop
+	hidenamebox
 	release
-	return
+	end
+
+Millie_Miller_1:
+	msgbox Millie_Miller_Text_1
+	trainerbattle_single TRAINER_MILLIE_MILLER_MILLLANEMILL, Millie_Miller_Text_2, Millie_Miller_Text_3, GiveQuestWheat
+	hidenamebox
+	release
+	end
+
+Millie_Miller_3:
+	goto_if_set FLAG_COOKS_ASSIST_STARTED, Millie_Miller_1
+	goto Millie_Miller_2
 
 
 GiveQuestWheat::
+	lock
+	faceplayer
+	namebox Millie_Miller_Text_0
 	msgbox GiveQuestWheat_Text_0
 	giveitem ITEM_FLOUR_POT
 	msgbox GiveQuestWheat_Text_1
+	hidenamebox
 	release
-	return
+	end
 
 
     .align 2
 MillLaneMillFlourShop:
 	.2byte ITEM_FLOUR_POT
+    .2byte ITEM_WHEAT
 	.2byte ITEM_NONE
 
     release
     end
 
-FarmerBattle4_Text_0:
-	.string " I was so close!$"
+Millie_Miller_Text_0:
+	.string "Millie Miller$"
 
-FarmerBattle4_Text_1:
+Millie_Miller_Text_1:
+	.string "Welcome to Mill Lane Mill!\p"
+	.string "I heard that you were after some of our\n"
+	.string "flour.\p"
+	.string "Tehehehehe.\p"
+	.string "I can give you some if you want..$"
+
+Millie_Miller_Text_2:
+	.string "But you'll have to battle me for it.\p"
+	.string "Teheehehe!$"
+
+Millie_Miller_Text_3:
+	.string "I was so close!$"
+
+Millie_Miller_Text_4:
 	.string "Would you like to buy some flour?$"
 
 GiveQuestWheat_Text_0:
@@ -37,12 +74,6 @@ GiveQuestWheat_Text_0:
 
 GiveQuestWheat_Text_1:
 	.string "If you run out you may get some more\n"
-	.string "from me anytime you wish. Although it\l"
-	.string "will come at a cost. Tehehehe!$"
-
-MillyIntro::
-	.string "Welcome to Mill Lane Mill! I heard that\n"
-	.string "you were after some of our flour.\l"
-	.string "Tehehehehe. I can give you some if you\l"
-	.string "want. But you'll have to battle me for\l"
-	.string "it. Teheehehe!$"
+	.string "from me anytime you wish.\p"
+	.string "Although it will come at a cost.\p"
+	.string "Tehehehe!$"

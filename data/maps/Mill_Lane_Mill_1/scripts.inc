@@ -7,28 +7,35 @@ MillLaneGreeter::
 	faceplayer
 	msgbox MillLaneGreeter_Text_0
 	release
-	return
+	end
 
 
-FarmerBattle1::
-	trainerbattle_single TRAINER_MILL_LANE_1, FarmerBattle1_Text_0, FarmerBattle1_Text_1
-	msgbox FarmerBattle1_Text_2
+Trainer2_MillLaneMill_Battle::
+	trainerbattle_single TRAINER_TRAINER2_MILLLANEMILL, Trainer2_MillLaneMill_Battle_Text_0, Trainer2_MillLaneMill_Battle_Text_1
+	namebox Trainer2_MillLaneMill_Battle_Text_2
+	msgbox Trainer2_MillLaneMill_Battle_Text_3
+	hidenamebox
 	release
-	return
+	end
 
 
 MillLaneGreeter_Text_0:
-	.string "Welcome to Mill Lane Mill! We have the\n"
-	.string "best flour this side of the river lum!$"
+	.string "Welcome to Mill Lane Mill!\p"
+	.string "We have the best flour this side of the\n"
+	.string "River Lum!$"
 
-FarmerBattle1_Text_0:
+Trainer2_MillLaneMill_Battle_Text_0:
 	.string "If you want to get to the top you will\n"
-	.string "need to get past the mill three! Be\l"
-	.string "warned I'm the second strongest of us!$"
+	.string "need to get past the mill three!\p"
+	.string "Be warned I'm the second strongest of\n"
+	.string "us!$"
 
-FarmerBattle1_Text_1:
+Trainer2_MillLaneMill_Battle_Text_1:
 	.string "You will never reach the top!$"
 
-FarmerBattle1_Text_2:
+Trainer2_MillLaneMill_Battle_Text_2:
+	.string "RSN$"
+
+Trainer2_MillLaneMill_Battle_Text_3:
 	.string "You may have beaten me but you'll never\n"
 	.string "make it to the top!$"

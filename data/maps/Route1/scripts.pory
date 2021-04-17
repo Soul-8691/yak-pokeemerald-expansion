@@ -15,6 +15,118 @@ script NPC_SHEEP
 	end
 }
 
+script NPC_COW
+{
+	lock
+	faceplayer
+    playmoncry(SPECIES_MILTANK, 0)
+	msgbox(format("MOOO!"))
+    waitmoncry
+	release
+	end
+}
+
+script SIGN_ROUTE1_1
+{
+	lock
+	msgbox(format("Fred's Farm."))
+	release
+	end
+}
+
+script SIGN_ROUTE1_2
+{
+	lock
+	msgbox(format("NORTH to MILL LANE MILL\pWEST to DRAYNOR\pEAST to LUMBRIDGE"))
+	release
+	end
+}
+
+script SIGN_ROUTE1_3
+{
+	lock
+	msgbox(format("NORTH to DRAYNOR MANOR\pWEST to FALADOR\pEAST to LUMBRIDGE\pSOUTH to DRAYNOR"))
+	release
+	end
+}
+
+script Route1FarmerBlocking{
+    lock 
+    faceplayer
+    if (!flag(FLAG_BADGE01_GET)){
+        msgbox("I can't seem to control these dang Cows!")
+    }
+    else{
+        msgbox("I finally got my Cows out of the way.")
+    }
+    release
+}
+
+script TryMoveCowBlockersRoute1{
+    if (flag(FLAG_BADGE01_GET)){
+        setobjectxyperm(4, 42, 9)
+        setobjectmovementtype(4,MOVEMENT_TYPE_FACE_DOWN)
+
+        setobjectxyperm(12, 38, 9)
+
+        setobjectxyperm(13, 36, 11)
+        setobjectmovementtype(13,MOVEMENT_TYPE_FACE_DOWN)
+    }
+}
+
+
+
+
+
+
+
+
+
+//TRAINER BATTLES-----------------------------------------
+
+script Wartfoot_Route1_Battle
+{
+    trainerbattle_single(TRAINER_GOBLIN_1_ROUTE1, "Brown armour best!","Um.. My brown armour in the wash.")
+    namebox ("WartFoot")
+    msgbox("Me like brown armour, but now it dirty.")
+    hidenamebox
+    release
+    end
+}
+
+script Frogface_Route1_Battle
+{
+    trainerbattle_single(TRAINER_GOBLIN_2_ROUTE1, "You ugly!","You still ugly!")
+    namebox ("FrogFace")
+    msgbox("You really, really ugly!")
+    hidenamebox
+    release
+    end
+}
+
+script Trainer1_Route1_Battle
+{
+    trainerbattle_single(TRAINER_RSN_ROUTE1, "You look like a noob!","Maybe I'm the noob..")
+    namebox ("RSN")
+    msgbox(format("The mill is up ahead.\pI heard you can get some good flour there."))
+    hidenamebox
+    release
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -70,19 +182,9 @@ script EvilChickenBattleScript{
 
 }
 
-script WartfootBattle{
-    trainerbattle_single(TRAINER_GOBLIN_1_ROUTE1, "Brown armor best!","Um.. my brown armor in the wash")
-    namebox ("WartFoot")
-    msgbox("Um.. my brown armor in the wash")
-    hidenamebox
-    release
-}
 
-script FrogfaceBattle{
-        trainerbattle_single(TRAINER_GOBLIN_2_ROUTE1, "You ugly!","You still ugly!")
-        msgbox("you really really ugly")
-        release
-}
+
+
 
 script MudbeardBattle{
     trainerbattle_single(TRAINER_GOBLIN_3_ROUTE1,"Go away smelly human!","Leave me alone!" )
@@ -91,12 +193,7 @@ script MudbeardBattle{
     
 }
 
-script RsnBattle{
-    trainerbattle_single(TRAINER_RSN_ROUTE1, "You look like a noob!","Maybe I'm the noob..")
-    msgbox(format("The mill is up ahead. I heard you can get some good wheat there."))
-    release
 
-}
 
 script Route1FarmerBattle{
     trainerbattle_single(TRAINER_FARMER_ROUTE1,format("Cor blimey what are ye doing on me lands!"),format("Its not really my lands yet."))
@@ -119,28 +216,5 @@ script GenericCowMoo{
     release
 }
 
-script Route1FarmerBlocking{
-    lock 
-    faceplayer
-    if (!flag(FLAG_BADGE01_GET)){
-        msgbox("I can't seem to control these dang cows!")
-    }
-    else{
-        msgbox("I finally got my cows out of the way.")
-    }
-    release
-}
 
-
-script TryMoveCowBlockersRoute1{
-    if (flag(FLAG_BADGE01_GET)){
-        setobjectxyperm(4, 42, 9)
-        setobjectmovementtype(4,MOVEMENT_TYPE_FACE_DOWN)
-
-        setobjectxyperm(12, 38, 9)
-
-        setobjectxyperm(13, 36, 11)
-        setobjectmovementtype(13,MOVEMENT_TYPE_FACE_DOWN)
-    }
-}
 

@@ -3,9 +3,58 @@ mapscripts Mill_Lane_Mill_MapScripts {
 }
 
 
-script MillLaneNPC1{
+script SIGN_MILL_LANE_MILL
+{
+	lock
+	msgbox(format("Mill Lane Mill.\pThe finest flour in all of Gielinor."))
+	release
+	end
+}
+
+
+script NPC1_MILL_LANE_MILL{
     lock
     faceplayer
-    msgbox(format("This is the windmill, at the top farmers insert wheat to create flour"))
+    msgbox(format("This is the Mill Lane Mill.\pThe Miller family has produced flour for generations!"))
     release
+    end
+}
+
+
+script BEEFY_BILL_MILL_LANE_MILL {
+    lock
+    faceplayer
+    namebox ("William Whitebred")
+    msgbox(format("Welcome to Beefy Bill's Supplies!\pCare to take a look at my stock?"))
+    waitmessage
+    pokemart (GeneralStoreBeefyBill)
+    msgbox("Thank you, come again!")
+    release
+}
+
+raw `
+    .align 2
+GeneralStoreBeefyBill:
+    .2byte ITEM_EMPTY_BUCKET
+    .2byte ITEM_EMPTY_POT
+    .2byte ITEM_REDBERRY
+    .2byte ITEM_WHEAT
+    .2byte ITEM_WATER_BUCKET
+    .2byte ITEM_NONE
+    release
+    end
+
+`
+
+
+//TRAINER BATTLES-----------------------------------------
+
+script Trainer1_MillLaneMill_Battle
+{
+    trainerbattle_double(TRAINER_TRAINER1_MILLLANEMILL, format("Have you seen any Kebbits around here?"),format("I need to get a higher hunting level.."),format("I would love to have a double battle with you."))
+    namebox ("RSN")
+    msgbox(format("I've been trying to track down Kebbits for my collection."))
+    hidenamebox
+    release
+    end
 }

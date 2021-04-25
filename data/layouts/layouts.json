@@ -5650,6 +5650,56 @@
       "secondary_tileset": "gTileset_PokeScape_Church",
       "border_filepath": "data/layouts/Lumbridge_Church/border.bin",
       "blockdata_filepath": "data/layouts/Lumbridge_Church/map.bin"
+    },
+    {
+      "id": "LAYOUT_WIZARDS_TOWER",
+      "name": "WizardsTower_Layout",
+      "width": 42,
+      "height": 34,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Draynor",
+      "border_filepath": "data/layouts/WizardsTower/border.bin",
+      "blockdata_filepath": "data/layouts/WizardsTower/map.bin"
+    },
+    {
+      "id": "LAYOUT_WIZARDS_TOWER_B1F",
+      "name": "WizardsTowerB1F_Layout",
+      "width": 30,
+      "height": 21,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Wizards_Tower",
+      "border_filepath": "data/layouts/WizardsTowerB1F/border.bin",
+      "blockdata_filepath": "data/layouts/WizardsTowerB1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_WIZARDS_TOWER_1F",
+      "name": "Wizards_Tower_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Wizards_Tower",
+      "border_filepath": "data/layouts/Wizards_Tower_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Wizards_Tower_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_WIZARDS_TOWER_2F",
+      "name": "Wizards_Tower_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Wizards_Tower",
+      "border_filepath": "data/layouts/Wizards_Tower_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Wizards_Tower_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_WIZARDS_TOWER_3F",
+      "name": "Wizards_Tower_3F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Wizards_Tower",
+      "border_filepath": "data/layouts/Wizards_Tower_3F/border.bin",
+      "blockdata_filepath": "data/layouts/Wizards_Tower_3F/map.bin"
     }
   ]
 }

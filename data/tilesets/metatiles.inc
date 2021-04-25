@@ -666,3 +666,10 @@ gMetatiles_Karamja::
 	.align 1
 gMetatileAttributes_Karamja::
 	.incbin "data/tilesets/secondary/karamja/metatile_attributes.bin"
+	.align 1
+gMetatiles_Wizards_Tower::
+	.incbin "data/tilesets/secondary/wizards_tower/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Wizards_Tower::
+	.incbin "data/tilesets/secondary/wizards_tower/metatile_attributes.bin"

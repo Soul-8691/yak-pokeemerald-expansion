@@ -659,7 +659,8 @@
     "Lumbridge_Swamp",
     "Mill_Lane_Mill",
     "Draynor_Manor",
-    "MudskipperPoint"
+    "MudskipperPoint",
+    "WizardsTower"
   ],
   "gMapGroup35": [
     "Route1",
@@ -803,6 +804,10 @@
     "Route1_House_1",
     "Mill_Lane_Mill_1",
     "Mill_Lane_Mill_2",
-    "Mill_Lane_Mill_3"
+    "Mill_Lane_Mill_3",
+    "WizardsTowerB1F",
+    "Wizards_Tower_1F",
+    "Wizards_Tower_2F",
+    "Wizards_Tower_3F"
   ]
 }

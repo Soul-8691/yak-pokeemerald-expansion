@@ -2030,3 +2030,23 @@ gTilesetPalettes_Karamja::
 	.align 2
 gTilesetTiles_Karamja::
 	.incbin "data/tilesets/secondary/karamja/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Wizards_Tower::
+	.incbin "data/tilesets/secondary/wizards_tower/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/wizards_tower/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/wizards_tower/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/wizards_tower/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/wizards_tower/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/wizards_tower/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/wizards_tower/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/wizards_tower/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/wizards_tower/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/wizards_tower/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/wizards_tower/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/wizards_tower/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/wizards_tower/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Wizards_Tower::
+	.incbin "data/tilesets/secondary/wizards_tower/tiles.4bpp.lz"

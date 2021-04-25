@@ -1301,3 +1301,13 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Lumbridge_House_3_2F/scripts.inc"
 
 	.include "data/maps/Lumbridge_Church/scripts.inc"
+
+	.include "data/maps/WizardsTower/scripts.inc"
+
+	.include "data/maps/WizardsTowerB1F/scripts.inc"
+
+	.include "data/maps/Wizards_Tower_1F/scripts.inc"
+
+	.include "data/maps/Wizards_Tower_2F/scripts.inc"
+
+	.include "data/maps/Wizards_Tower_3F/scripts.inc"

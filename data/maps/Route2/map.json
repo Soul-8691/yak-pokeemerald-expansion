@@ -27,6 +27,11 @@
       "direction": "left",
       "offset": -26,
       "map": "MAP_PORT_SARIM"
+    },
+    {
+      "direction": "down",
+      "offset": 7,
+      "map": "MAP_WIZARDS_TOWER"
     }
   ],
   "object_events": [

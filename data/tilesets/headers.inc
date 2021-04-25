@@ -997,3 +997,14 @@ gTileset_Karamja::
 	.4byte gMetatiles_Karamja
 	.4byte gMetatileAttributes_Karamja
 	.4byte NULL
+
+	.align 2
+gTileset_Wizards_Tower::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Wizards_Tower
+	.4byte gTilesetPalettes_Wizards_Tower
+	.4byte gMetatiles_Wizards_Tower
+	.4byte gMetatileAttributes_Wizards_Tower
+	.4byte NULL

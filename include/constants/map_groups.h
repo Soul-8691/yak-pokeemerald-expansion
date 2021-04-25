@@ -1,10 +1,6 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
-//
-// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
-//
-
 // Map Group 0
 #define MAP_PETALBURG_CITY      (0 | (0 << 8))
 #define MAP_SLATEPORT_CITY      (1 | (0 << 8))
@@ -612,6 +608,7 @@
 #define MAP_MILL_LANE_MILL    (16 | (34 << 8))
 #define MAP_DRAYNOR_MANOR     (17 | (34 << 8))
 #define MAP_MUDSKIPPER_POINT  (18 | (34 << 8))
+#define MAP_WIZARDS_TOWER     (19 | (34 << 8))
 
 // Map Group 35
 #define MAP_ROUTE1  (0 | (35 << 8))
@@ -748,6 +745,10 @@
 #define MAP_MILL_LANE_MILL_1  (2 | (50 << 8))
 #define MAP_MILL_LANE_MILL_2  (3 | (50 << 8))
 #define MAP_MILL_LANE_MILL_3  (4 | (50 << 8))
+#define MAP_WIZARDS_TOWER_B1F (5 | (50 << 8))
+#define MAP_WIZARDS_TOWER_1F  (6 | (50 << 8))
+#define MAP_WIZARDS_TOWER_2F  (7 | (50 << 8))
+#define MAP_WIZARDS_TOWER_3F  (8 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

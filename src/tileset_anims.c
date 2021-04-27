@@ -29,6 +29,7 @@ static void TilesetAnim_Building(u16);
 //PokeScape//---------------
 static void TilesetAnim_PokeScapeOutdoors(u16);
 static void TilesetAnim_Lumbridge(u16);
+static void TilesetAnim_wizards_tower(u16);
 //PokeScape//---------------
 
 static void TilesetAnim_Rustboro(u16);
@@ -82,6 +83,7 @@ static void QueueAnimTiles_EliteFour_WallLights(u16);
 //PokeScape//---------------
 static void QueueAnimTiles_PokeScapeOutdoors_Water(u16);
 static void QueueAnimTiles_Lumbridge_Fountain(u16);
+static void QueueAnimTiles_Portal(u16);
 //PokeScape//---------------
 
 
@@ -108,11 +110,11 @@ const u16 *const gTilesetAnims_PokeScapeOutdoors_Water[] = {
     gTilesetAnims_PokeScapeOutdoors_Water_Frame7
 };
 
+
 const u16 gTilesetAnims_Lumbridge_Fountain_Frame0[] = INCBIN_U16("data/tilesets/secondary/Lumbridge/anim/fountain/fountain0.4bpp");
 const u16 gTilesetAnims_Lumbridge_Fountain_Frame1[] = INCBIN_U16("data/tilesets/secondary/Lumbridge/anim/fountain/fountain1.4bpp");
 const u16 gTilesetAnims_Lumbridge_Fountain_Frame2[] = INCBIN_U16("data/tilesets/secondary/Lumbridge/anim/fountain/fountain2.4bpp");
 const u16 gTilesetAnims_Lumbridge_Fountain_Frame3[] = INCBIN_U16("data/tilesets/secondary/Lumbridge/anim/fountain/fountain3.4bpp");
-
 
 const u16 *const gTilesetAnims_Lumbridge_Fountain[] = {
     gTilesetAnims_Lumbridge_Fountain_Frame0,
@@ -120,6 +122,27 @@ const u16 *const gTilesetAnims_Lumbridge_Fountain[] = {
     gTilesetAnims_Lumbridge_Fountain_Frame2,
     gTilesetAnims_Lumbridge_Fountain_Frame3
 };
+
+
+const u16 gTilesetAnims_Portal_Frame0[] = INCBIN_U16("data/tilesets/secondary/wizards_tower/anim/portal/portal0.4bpp");
+const u16 gTilesetAnims_Portal_Frame1[] = INCBIN_U16("data/tilesets/secondary/wizards_tower/anim/portal/portal1.4bpp");
+const u16 gTilesetAnims_Portal_Frame2[] = INCBIN_U16("data/tilesets/secondary/wizards_tower/anim/portal/portal2.4bpp");
+const u16 gTilesetAnims_Portal_Frame3[] = INCBIN_U16("data/tilesets/secondary/wizards_tower/anim/portal/portal3.4bpp");
+
+const u16 *const gTilesetAnims_Portal[] = {
+    gTilesetAnims_Portal_Frame0,
+    gTilesetAnims_Portal_Frame1,
+    gTilesetAnims_Portal_Frame2,
+    gTilesetAnims_Portal_Frame3
+};
+
+
+
+
+
+
+
+
 //PokeScape//---------------
 
 
@@ -683,6 +706,13 @@ void InitTilesetAnim_Lumbridge(void)
     sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
     sSecondaryTilesetAnimCallback = TilesetAnim_Lumbridge;
 }
+
+void InitTilesetAnim_wizards_tower(void)
+{
+    sSecondaryTilesetAnimCounter = 0;
+    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCallback = TilesetAnim_wizards_tower;
+}
 //PokeScape//---------------
 
 
@@ -741,6 +771,14 @@ static void TilesetAnim_Lumbridge(u16 timer)
         QueueAnimTiles_Lumbridge_Fountain(timer >> 4);
 
 }
+
+static void TilesetAnim_wizards_tower(u16 timer)
+{
+
+    if (timer % 16 == 0)
+        QueueAnimTiles_Portal(timer >> 4);
+
+}
 //PokeScape//---------------
 
 
@@ -755,6 +793,12 @@ static void QueueAnimTiles_Lumbridge_Fountain(u16 timer)
 {
     u16 i = timer % 4; 
     AppendTilesetAnimToBuffer(gTilesetAnims_Lumbridge_Fountain[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(800)), 0x200);
+}
+
+static void QueueAnimTiles_Portal(u16 timer)
+{
+    u16 i = timer % 4; 
+    AppendTilesetAnimToBuffer(gTilesetAnims_Portal[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(0x3EC)), 128);
 }
 //PokeScape//---------------
 

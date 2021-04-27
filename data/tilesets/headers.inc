@@ -1007,4 +1007,4 @@ gTileset_Wizards_Tower::
 	.4byte gTilesetPalettes_Wizards_Tower
 	.4byte gMetatiles_Wizards_Tower
 	.4byte gMetatileAttributes_Wizards_Tower
-	.4byte NULL
+	.4byte InitTilesetAnim_wizards_tower

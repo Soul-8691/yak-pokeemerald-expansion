@@ -69,15 +69,15 @@
   ],
   "warp_events": [
     {
-      "x": 13,
-      "y": 12,
+      "x": 15,
+      "y": 13,
       "elevation": 0,
       "dest_map": "MAP_WIZARDS_TOWER_3F",
       "dest_warp_id": 0
     },
     {
-      "x": 15,
-      "y": 12,
+      "x": 13,
+      "y": 13,
       "elevation": 0,
       "dest_map": "MAP_WIZARDS_TOWER_1F",
       "dest_warp_id": 2

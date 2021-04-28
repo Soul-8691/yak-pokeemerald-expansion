@@ -1007,4 +1007,15 @@ gTileset_Wizards_Tower::
 	.4byte gTilesetPalettes_Wizards_Tower
 	.4byte gMetatiles_Wizards_Tower
 	.4byte gMetatileAttributes_Wizards_Tower
-	.4byte InitTilesetAnim_wizards_tower
+	.4byte InitTilesetAnim_Wizards_Tower
+
+	.align 2
+gTileset_DraynorManor::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_DraynorManor
+	.4byte gTilesetPalettes_DraynorManor
+	.4byte gMetatiles_DraynorManor
+	.4byte gMetatileAttributes_DraynorManor
+	.4byte NULL

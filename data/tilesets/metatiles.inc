@@ -673,3 +673,10 @@ gMetatiles_Wizards_Tower::
 	.align 1
 gMetatileAttributes_Wizards_Tower::
 	.incbin "data/tilesets/secondary/wizards_tower/metatile_attributes.bin"
+	.align 1
+gMetatiles_DraynorManor::
+	.incbin "data/tilesets/secondary/draynormanor/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_DraynorManor::
+	.incbin "data/tilesets/secondary/draynormanor/metatile_attributes.bin"

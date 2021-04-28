@@ -2050,3 +2050,23 @@ gTilesetPalettes_Wizards_Tower::
 	.align 2
 gTilesetTiles_Wizards_Tower::
 	.incbin "data/tilesets/secondary/wizards_tower/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_DraynorManor::
+	.incbin "data/tilesets/secondary/draynormanor/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/draynormanor/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/draynormanor/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/draynormanor/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/draynormanor/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/draynormanor/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/draynormanor/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/draynormanor/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/draynormanor/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/draynormanor/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/draynormanor/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/draynormanor/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/draynormanor/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_DraynorManor::
+	.incbin "data/tilesets/secondary/draynormanor/tiles.4bpp.lz"

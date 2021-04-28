@@ -22,7 +22,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_wizard_male",
-      "x": 8,
+      "x": 17,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -35,7 +35,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_wizard_female",
-      "x": 14,
+      "x": 23,
       "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -74,8 +74,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ham_member_male",
-      "x": 25,
-      "y": 12,
+      "x": 10,
+      "y": 13,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -87,7 +87,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ariane",
-      "x": 20,
+      "x": 19,
       "y": 21,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -97,11 +97,37 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "HAM_EVENT_Ariane1",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_mercher",
+      "x": 9,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_bob",
+      "x": 9,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 14,
+      "x": 23,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_WIZARDS_TOWER_1F",
@@ -111,7 +137,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 24,
+      "x": 9,
       "y": 15,
       "elevation": 0,
       "var": "VAR_TEMP_0",
@@ -120,7 +146,7 @@
     },
     {
       "type": "trigger",
-      "x": 25,
+      "x": 10,
       "y": 15,
       "elevation": 0,
       "var": "VAR_TEMP_0",
@@ -129,7 +155,7 @@
     },
     {
       "type": "trigger",
-      "x": 26,
+      "x": 11,
       "y": 15,
       "elevation": 0,
       "var": "VAR_TEMP_0",

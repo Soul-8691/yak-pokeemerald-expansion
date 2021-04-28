@@ -1311,3 +1311,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Wizards_Tower_2F/scripts.inc"
 
 	.include "data/maps/Wizards_Tower_3F/scripts.inc"
+
+	.include "data/maps/Wizards_Tower_Attic/scripts.inc"
+
+	.include "data/maps/Wizards_Tower_DiningHall/scripts.inc"

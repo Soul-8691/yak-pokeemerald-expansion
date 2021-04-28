@@ -84,6 +84,7 @@ static void QueueAnimTiles_EliteFour_WallLights(u16);
 static void QueueAnimTiles_PokeScapeOutdoors_Water(u16);
 static void QueueAnimTiles_Lumbridge_Fountain(u16);
 static void QueueAnimTiles_Wizards_Tower_Torch(u16);
+static void QueueAnimTiles_Wizards_Tower_Portal(u16);
 //PokeScape//---------------
 
 
@@ -137,6 +138,17 @@ const u16 *const gTilesetAnims_Wizards_Tower_Torch[] = {
     gTilesetAnims_Wizards_Tower_Torch_Frame3
 };
 
+const u16 gTilesetAnims_Wizards_Tower_Portal_Frame0[] = INCBIN_U16("data/tilesets/secondary/wizards_tower/anim/portal/portal0.4bpp");
+const u16 gTilesetAnims_Wizards_Tower_Portal_Frame1[] = INCBIN_U16("data/tilesets/secondary/wizards_tower/anim/portal/portal1.4bpp");
+const u16 gTilesetAnims_Wizards_Tower_Portal_Frame2[] = INCBIN_U16("data/tilesets/secondary/wizards_tower/anim/portal/portal2.4bpp");
+const u16 gTilesetAnims_Wizards_Tower_Portal_Frame3[] = INCBIN_U16("data/tilesets/secondary/wizards_tower/anim/portal/portal3.4bpp");
+
+const u16 *const gTilesetAnims_Wizards_Tower_Portal[] = {
+    gTilesetAnims_Wizards_Tower_Portal_Frame0,
+    gTilesetAnims_Wizards_Tower_Portal_Frame1,
+    gTilesetAnims_Wizards_Tower_Portal_Frame2,
+    gTilesetAnims_Wizards_Tower_Portal_Frame3
+};
 
 
 
@@ -708,7 +720,7 @@ void InitTilesetAnim_Lumbridge(void)
 void InitTilesetAnim_Wizards_Tower(void)
 {
     sSecondaryTilesetAnimCounter = 0;
-    sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
+    sSecondaryTilesetAnimCounterMax = 256;
     sSecondaryTilesetAnimCallback = TilesetAnim_Wizards_Tower;
 }
 //PokeScape//---------------
@@ -778,6 +790,8 @@ static void TilesetAnim_Wizards_Tower(u16 timer)
 
     if (timer % 16 == 0)
         QueueAnimTiles_Wizards_Tower_Torch(timer >> 4);
+    if (timer % 16 == 1)
+        QueueAnimTiles_Wizards_Tower_Portal(timer >> 4);
 
 }
 
@@ -801,6 +815,12 @@ static void QueueAnimTiles_Wizards_Tower_Torch(u16 timer)
 {
     u16 i = timer % 4; 
     AppendTilesetAnimToBuffer(gTilesetAnims_Wizards_Tower_Torch[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(1000)), 0x20);
+}
+
+static void QueueAnimTiles_Wizards_Tower_Portal(u16 timer)
+{
+    u16 i = timer % 4; 
+    AppendTilesetAnimToBuffer(gTilesetAnims_Wizards_Tower_Portal[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(1004)), 0x80);
 }
 
 //PokeScape//---------------

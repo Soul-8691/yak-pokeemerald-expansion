@@ -5700,6 +5700,26 @@
       "secondary_tileset": "gTileset_Wizards_Tower",
       "border_filepath": "data/layouts/Wizards_Tower_3F/border.bin",
       "blockdata_filepath": "data/layouts/Wizards_Tower_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_WIZARDS_TOWER_ATTIC",
+      "name": "Wizards_Tower_Attic_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Wizards_Tower",
+      "border_filepath": "data/layouts/Wizards_Tower_Attic/border.bin",
+      "blockdata_filepath": "data/layouts/Wizards_Tower_Attic/map.bin"
+    },
+    {
+      "id": "LAYOUT_WIZARDS_TOWER_DINING_HALL",
+      "name": "Wizards_Tower_DiningHall_Layout",
+      "width": 40,
+      "height": 25,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Wizards_Tower",
+      "border_filepath": "data/layouts/Wizards_Tower_DiningHall/border.bin",
+      "blockdata_filepath": "data/layouts/Wizards_Tower_DiningHall/map.bin"
     }
   ]
 }

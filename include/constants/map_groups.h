@@ -744,15 +744,17 @@
 #define MAP_TZHAAR_FIGHT_CAVES (1 | (49 << 8))
 
 // Map Group 50
-#define MAP_ROUTE1_HOUSE_FRED (0 | (50 << 8))
-#define MAP_ROUTE1_HOUSE_1    (1 | (50 << 8))
-#define MAP_MILL_LANE_MILL_1  (2 | (50 << 8))
-#define MAP_MILL_LANE_MILL_2  (3 | (50 << 8))
-#define MAP_MILL_LANE_MILL_3  (4 | (50 << 8))
-#define MAP_WIZARDS_TOWER_B1F (5 | (50 << 8))
-#define MAP_WIZARDS_TOWER_1F  (6 | (50 << 8))
-#define MAP_WIZARDS_TOWER_2F  (7 | (50 << 8))
-#define MAP_WIZARDS_TOWER_3F  (8 | (50 << 8))
+#define MAP_ROUTE1_HOUSE_FRED         (0 | (50 << 8))
+#define MAP_ROUTE1_HOUSE_1            (1 | (50 << 8))
+#define MAP_MILL_LANE_MILL_1          (2 | (50 << 8))
+#define MAP_MILL_LANE_MILL_2          (3 | (50 << 8))
+#define MAP_MILL_LANE_MILL_3          (4 | (50 << 8))
+#define MAP_WIZARDS_TOWER_B1F         (5 | (50 << 8))
+#define MAP_WIZARDS_TOWER_1F          (6 | (50 << 8))
+#define MAP_WIZARDS_TOWER_2F          (7 | (50 << 8))
+#define MAP_WIZARDS_TOWER_3F          (8 | (50 << 8))
+#define MAP_WIZARDS_TOWER_ATTIC       (9 | (50 << 8))
+#define MAP_WIZARDS_TOWER_DINING_HALL (10 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

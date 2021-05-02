@@ -4677,7 +4677,7 @@
       "width": 32,
       "height": 42,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_DraynorManor",
       "border_filepath": "data/layouts/Draynor_Manor/border.bin",
       "blockdata_filepath": "data/layouts/Draynor_Manor/map.bin"
     },
@@ -5720,6 +5720,26 @@
       "secondary_tileset": "gTileset_Wizards_Tower",
       "border_filepath": "data/layouts/Wizards_Tower_DiningHall/border.bin",
       "blockdata_filepath": "data/layouts/Wizards_Tower_DiningHall/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_MANOR_1F",
+      "name": "Draynor_Manor_1F_Layout",
+      "width": 46,
+      "height": 24,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_DraynorManor",
+      "border_filepath": "data/layouts/Draynor_Manor_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_Manor_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_MANOR_2F",
+      "name": "Draynor_Manor_2F_Layout",
+      "width": 46,
+      "height": 24,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_DraynorManor",
+      "border_filepath": "data/layouts/Draynor_Manor_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_Manor_2F/map.bin"
     }
   ]
 }

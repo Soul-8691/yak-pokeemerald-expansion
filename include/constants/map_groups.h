@@ -1,10 +1,6 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
-//
-// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
-//
-
 // Map Group 0
 #define MAP_PETALBURG_CITY      (0 | (0 << 8))
 #define MAP_SLATEPORT_CITY      (1 | (0 << 8))
@@ -755,6 +751,8 @@
 #define MAP_WIZARDS_TOWER_3F          (8 | (50 << 8))
 #define MAP_WIZARDS_TOWER_ATTIC       (9 | (50 << 8))
 #define MAP_WIZARDS_TOWER_DINING_HALL (10 | (50 << 8))
+#define MAP_DRAYNOR_MANOR_1F          (11 | (50 << 8))
+#define MAP_DRAYNOR_MANOR_2F          (12 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

@@ -1,14 +1,14 @@
 {
-  "id": "MAP_DRAYNOR_MANOR_2F",
-  "name": "Draynor_Manor_2F",
-  "layout": "LAYOUT_DRAYNOR_MANOR_2F",
+  "id": "MAP_DRAYNOR_MANOR_3F",
+  "name": "Draynor_Manor_3F",
+  "layout": "LAYOUT_DRAYNOR_MANOR_3F",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": false,
-  "allow_escaping": true,
+  "allow_escaping": false,
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
@@ -18,18 +18,11 @@
   ],
   "warp_events": [
     {
-      "x": 26,
-      "y": 13,
+      "x": 1,
+      "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_DRAYNOR_MANOR_1F",
-      "dest_warp_id": 4
-    },
-    {
-      "x": 21,
-      "y": 12,
-      "elevation": 0,
-      "dest_map": "MAP_DRAYNOR_MANOR_3F",
-      "dest_warp_id": 0
+      "dest_map": "MAP_DRAYNOR_MANOR_2F",
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [

@@ -5740,6 +5740,36 @@
       "secondary_tileset": "gTileset_DraynorManor",
       "border_filepath": "data/layouts/Draynor_Manor_2F/border.bin",
       "blockdata_filepath": "data/layouts/Draynor_Manor_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_MANOR_3F",
+      "name": "Draynor_Manor_3F_Layout",
+      "width": 12,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_DraynorManor",
+      "border_filepath": "data/layouts/Draynor_Manor_3F/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_Manor_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_MANOR_B1F",
+      "name": "Draynor_Manor_B1F_Layout",
+      "width": 26,
+      "height": 26,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_DraynorManor",
+      "border_filepath": "data/layouts/Draynor_Manor_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_Manor_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_MANOR_CRYPT",
+      "name": "Draynor_Manor_Crypt_Layout",
+      "width": 10,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_DraynorManor",
+      "border_filepath": "data/layouts/Draynor_Manor_Crypt/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_Manor_Crypt/map.bin"
     }
   ]
 }

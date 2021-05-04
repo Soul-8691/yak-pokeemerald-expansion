@@ -753,6 +753,9 @@
 #define MAP_WIZARDS_TOWER_DINING_HALL (10 | (50 << 8))
 #define MAP_DRAYNOR_MANOR_1F          (11 | (50 << 8))
 #define MAP_DRAYNOR_MANOR_2F          (12 | (50 << 8))
+#define MAP_DRAYNOR_MANOR_3F          (13 | (50 << 8))
+#define MAP_DRAYNOR_MANOR_B1F         (14 | (50 << 8))
+#define MAP_DRAYNOR_MANOR_CRYPT       (15 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

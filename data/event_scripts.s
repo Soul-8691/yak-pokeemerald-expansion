@@ -1319,3 +1319,9 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Draynor_Manor_1F/scripts.inc"
 
 	.include "data/maps/Draynor_Manor_2F/scripts.inc"
+
+	.include "data/maps/Draynor_Manor_3F/scripts.inc"
+
+	.include "data/maps/Draynor_Manor_B1F/scripts.inc"
+
+	.include "data/maps/Draynor_Manor_Crypt/scripts.inc"

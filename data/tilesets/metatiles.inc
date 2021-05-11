@@ -680,3 +680,10 @@ gMetatiles_DraynorManor::
 	.align 1
 gMetatileAttributes_DraynorManor::
 	.incbin "data/tilesets/secondary/draynormanor/metatile_attributes.bin"
+	.align 1
+gMetatiles_QueenBlackDragon::
+	.incbin "data/tilesets/secondary/queenblackdragon/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_QueenBlackDragon::
+	.incbin "data/tilesets/secondary/queenblackdragon/metatile_attributes.bin"

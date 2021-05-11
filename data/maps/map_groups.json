@@ -714,7 +714,11 @@
     "Kalphite_Caves_B3F",
     "Kalphite_Caves_B4F",
     "Giant_Mole_Cave",
-    "Dwarven_Mine_B1F"
+    "Dwarven_Mine_B1F",
+    "KingBlackDragon_Lair",
+    "KingBlackDragon_B1F",
+    "KingBlackDragon_B2F",
+    "QueenBlackDragon_Lair"
   ],
   "gMapGroup37": [
     "Tutorial_Island_Lab_Up",
@@ -745,7 +749,10 @@
     "Lumbridge_Church"
   ],
   "gMapGroup39": [
-
+    "Draynor_House_Morgan_1F",
+    "Draynor_House_Morgan_2F",
+    "Draynor_House_WoM_1F",
+    "Draynor_House_WoM_2F"
   ],
   "gMapGroup40": [
 

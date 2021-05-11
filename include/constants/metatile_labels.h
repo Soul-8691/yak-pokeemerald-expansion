@@ -421,6 +421,13 @@
 #define METATILE_PokemonCenter_Floor_ShadowTop           0x21E
 #define METATILE_PokemonCenter_Floor_ShadowTop_Alt       0x2DC
 
+// gTileset_QueenBlackDragon
+#define METATILE_QueenBlackDragon_QBDlair_Tile0  0x289
+#define METATILE_QueenBlackDragon_QBDlair_Tile1  0x28A
+#define METATILE_QueenBlackDragon_QBDlair_Tile2  0x28B
+#define METATILE_QueenBlackDragon_QBDlair_Tile3  0x28C
+#define METATILE_QueenBlackDragon_QBDlair_Tile4  0x28D
+
 // gTileset_RS
 #define METATILE_RS_MossdeepGym_RedArrow_Down   0x205
 #define METATILE_RS_MossdeepGym_RedArrow_Left   0x20C

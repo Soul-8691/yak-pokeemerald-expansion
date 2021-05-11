@@ -5770,6 +5770,86 @@
       "secondary_tileset": "gTileset_DraynorManor",
       "border_filepath": "data/layouts/Draynor_Manor_Crypt/border.bin",
       "blockdata_filepath": "data/layouts/Draynor_Manor_Crypt/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_HOUSE_MORGAN_1F",
+      "name": "Draynor_House_Morgan_1F_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Draynor_House_Morgan_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_House_Morgan_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_HOUSE_MORGAN_2F",
+      "name": "Draynor_House_Morgan_2F_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Draynor_House_Morgan_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_House_Morgan_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_HOUSE_WO_M_1F",
+      "name": "Draynor_House_WoM_1F_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Wizards_Tower",
+      "border_filepath": "data/layouts/Draynor_House_WoM_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_House_WoM_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_HOUSE_WO_M_2F",
+      "name": "Draynor_House_WoM_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Wizards_Tower",
+      "border_filepath": "data/layouts/Draynor_House_WoM_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_House_WoM_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_KING_BLACK_DRAGON_LAIR",
+      "name": "KingBlackDragon_Lair_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/KingBlackDragon_Lair/border.bin",
+      "blockdata_filepath": "data/layouts/KingBlackDragon_Lair/map.bin"
+    },
+    {
+      "id": "LAYOUT_KING_BLACK_DRAGON_B1F",
+      "name": "KingBlackDragon_B1F_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/KingBlackDragon_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/KingBlackDragon_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_KING_BLACK_DRAGON_B2F",
+      "name": "KingBlackDragon_B2F_Layout",
+      "width": 40,
+      "height": 28,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/KingBlackDragon_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/KingBlackDragon_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_QUEEN_BLACK_DRAGON_LAIR",
+      "name": "QueenBlackDragon_Lair_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_QueenBlackDragon",
+      "border_filepath": "data/layouts/QueenBlackDragon_Lair/border.bin",
+      "blockdata_filepath": "data/layouts/QueenBlackDragon_Lair/map.bin"
     }
   ]
 }

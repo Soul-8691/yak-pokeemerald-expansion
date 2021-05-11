@@ -1325,3 +1325,19 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Draynor_Manor_B1F/scripts.inc"
 
 	.include "data/maps/Draynor_Manor_Crypt/scripts.inc"
+
+	.include "data/maps/Draynor_House_Morgan_1F/scripts.inc"
+
+	.include "data/maps/Draynor_House_Morgan_2F/scripts.inc"
+
+	.include "data/maps/Draynor_House_WoM_1F/scripts.inc"
+
+	.include "data/maps/Draynor_House_WoM_2F/scripts.inc"
+
+	.include "data/maps/KingBlackDragon_Lair/scripts.inc"
+
+	.include "data/maps/KingBlackDragon_B1F/scripts.inc"
+
+	.include "data/maps/KingBlackDragon_B2F/scripts.inc"
+
+	.include "data/maps/QueenBlackDragon_Lair/scripts.inc"

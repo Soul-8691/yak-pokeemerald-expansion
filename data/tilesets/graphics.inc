@@ -2070,3 +2070,23 @@ gTilesetPalettes_DraynorManor::
 	.align 2
 gTilesetTiles_DraynorManor::
 	.incbin "data/tilesets/secondary/draynormanor/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_QueenBlackDragon::
+	.incbin "data/tilesets/secondary/queenblackdragon/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/queenblackdragon/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/queenblackdragon/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/queenblackdragon/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/queenblackdragon/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/queenblackdragon/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/queenblackdragon/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/queenblackdragon/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/queenblackdragon/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/queenblackdragon/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/queenblackdragon/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/queenblackdragon/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/queenblackdragon/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_QueenBlackDragon::
+	.incbin "data/tilesets/secondary/queenblackdragon/tiles.4bpp.lz"

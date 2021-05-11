@@ -1019,3 +1019,14 @@ gTileset_DraynorManor::
 	.4byte gMetatiles_DraynorManor
 	.4byte gMetatileAttributes_DraynorManor
 	.4byte NULL
+
+	.align 2
+gTileset_QueenBlackDragon::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_QueenBlackDragon
+	.4byte gTilesetPalettes_QueenBlackDragon
+	.4byte gMetatiles_QueenBlackDragon
+	.4byte gMetatileAttributes_QueenBlackDragon
+	.4byte NULL

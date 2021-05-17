@@ -718,7 +718,8 @@
     "KingBlackDragon_Lair",
     "KingBlackDragon_B1F",
     "KingBlackDragon_B2F",
-    "QueenBlackDragon_Lair"
+    "QueenBlackDragon_Lair",
+    "Lumbridge_Swamp_Caves"
   ],
   "gMapGroup37": [
     "Tutorial_Island_Lab_Up",
@@ -755,13 +756,20 @@
     "Draynor_House_WoM_2F"
   ],
   "gMapGroup40": [
-
+    "PortSarim_Pub_1F",
+    "PortSarim_Pub_2F"
   ],
   "gMapGroup41": [
 
   ],
   "gMapGroup42": [
-
+    "Falador_Hairdressers",
+    "Falador_Hairdressers_2F",
+    "Falador_Castleyard",
+    "Falador_Bank_West_1F",
+    "Falador_GemShop",
+    "Falador_Pub_1F",
+    "Falador_Pub_2F"
   ],
   "gMapGroup43": [
     "Varrock_Thessalia_Shop",
@@ -778,7 +786,9 @@
     "Varrock_Weapon_Shop",
     "Varrock_Weapon_Shop_Up",
     "Varrock_Bank_West",
-    "Varrock_Bank_West_B1F"
+    "Varrock_Bank_West_B1F",
+    "Varrock_Pub_1F",
+    "Varrock_Pub_2F"
   ],
   "gMapGroup44": [
 
@@ -804,7 +814,8 @@
   ],
   "gMapGroup49": [
     "Tzhaar_1F",
-    "Tzhaar_FightCaves"
+    "Tzhaar_FightCaves",
+    "Tzhaar_Caves_1"
   ],
   "gMapGroup50": [
     "Route1_House_Fred",
@@ -822,6 +833,13 @@
     "Draynor_Manor_2F",
     "Draynor_Manor_3F",
     "Draynor_Manor_B1F",
-    "Draynor_Manor_Crypt"
+    "Draynor_Manor_Crypt",
+    "JollyBoar_Pub_1F",
+    "JollyBoar_Pub_2F",
+    "Yanille_Pub_1F",
+    "Yanille_Pub_2F",
+    "PoisonArrow_Pub_1F",
+    "FlyingHorse_Pub_1F",
+    "FlyingHorse_Pub_2F"
   ]
 }

@@ -44,3 +44,31 @@ script Lumbridge_Church_NPC3
 }	
 
 
+
+
+
+
+
+script Pub_Mod_Dolan
+{
+	lock
+	faceplayer
+    random(2)
+        switch (var(VAR_RESULT)) {
+            case 0: 
+				namebox ("Mod Dolan")
+				msgbox(format("..hic..\p...Have you seen my duck?\p..hic..\p..\pNo, no my duck is yellow and he squeaks.\p..hic.."))
+				hidenamebox
+				release
+				end
+            case 1: 
+				namebox ("Mod Dolan")
+				msgbox(format("..hic..\p...The Ruby Ring!\p..hic..\p..Rainbows you wear around your neck!\p..hic..\pWhere is my duck?\p..hic.."))
+				hidenamebox
+				release
+				end
+			
+        }
+	release
+	end
+}

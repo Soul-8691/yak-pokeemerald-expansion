@@ -2090,3 +2090,43 @@ gTilesetPalettes_QueenBlackDragon::
 	.align 2
 gTilesetTiles_QueenBlackDragon::
 	.incbin "data/tilesets/secondary/queenblackdragon/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Pub::
+	.incbin "data/tilesets/secondary/pub/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/pub/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/pub/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/pub/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/pub/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/pub/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/pub/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/pub/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/pub/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/pub/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/pub/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/pub/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/pub/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Pub::
+	.incbin "data/tilesets/secondary/pub/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Lumbridge_Swamp_Caves::
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Lumbridge_Swamp_Caves::
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/tiles.4bpp.lz"

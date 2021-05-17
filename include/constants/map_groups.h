@@ -1,10 +1,6 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
-//
-// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
-//
-
 // Map Group 0
 #define MAP_PETALBURG_CITY      (0 | (0 << 8))
 #define MAP_SLATEPORT_CITY      (1 | (0 << 8))
@@ -671,6 +667,7 @@
 #define MAP_KING_BLACK_DRAGON_B1F   (12 | (36 << 8))
 #define MAP_KING_BLACK_DRAGON_B2F   (13 | (36 << 8))
 #define MAP_QUEEN_BLACK_DRAGON_LAIR (14 | (36 << 8))
+#define MAP_LUMBRIDGE_SWAMP_CAVES   (15 | (36 << 8))
 
 // Map Group 37
 #define MAP_TUTORIAL_ISLAND_LAB_UP   (0 | (37 << 8))
@@ -707,10 +704,19 @@
 #define MAP_DRAYNOR_HOUSE_WO_M_2F   (3 | (39 << 8))
 
 // Map Group 40
+#define MAP_PORT_SARIM_PUB_1F (0 | (40 << 8))
+#define MAP_PORT_SARIM_PUB_2F (1 | (40 << 8))
 
 // Map Group 41
 
 // Map Group 42
+#define MAP_FALADOR_HAIRDRESSERS    (0 | (42 << 8))
+#define MAP_FALADOR_HAIRDRESSERS_2F (1 | (42 << 8))
+#define MAP_FALADOR_CASTLEYARD      (2 | (42 << 8))
+#define MAP_FALADOR_BANK_WEST_1F    (3 | (42 << 8))
+#define MAP_FALADOR_GEM_SHOP        (4 | (42 << 8))
+#define MAP_FALADOR_PUB_1F          (5 | (42 << 8))
+#define MAP_FALADOR_PUB_2F          (6 | (42 << 8))
 
 // Map Group 43
 #define MAP_VARROCK_THESSALIA_SHOP    (0 | (43 << 8))
@@ -728,6 +734,8 @@
 #define MAP_VARROCK_WEAPON_SHOP_UP    (12 | (43 << 8))
 #define MAP_VARROCK_BANK_WEST         (13 | (43 << 8))
 #define MAP_VARROCK_BANK_WEST_B1F     (14 | (43 << 8))
+#define MAP_VARROCK_PUB_1F            (15 | (43 << 8))
+#define MAP_VARROCK_PUB_2F            (16 | (43 << 8))
 
 // Map Group 44
 
@@ -750,6 +758,7 @@
 // Map Group 49
 #define MAP_TZHAAR_1F          (0 | (49 << 8))
 #define MAP_TZHAAR_FIGHT_CAVES (1 | (49 << 8))
+#define MAP_TZHAAR_CAVES_1     (2 | (49 << 8))
 
 // Map Group 50
 #define MAP_ROUTE1_HOUSE_FRED         (0 | (50 << 8))
@@ -768,6 +777,13 @@
 #define MAP_DRAYNOR_MANOR_3F          (13 | (50 << 8))
 #define MAP_DRAYNOR_MANOR_B1F         (14 | (50 << 8))
 #define MAP_DRAYNOR_MANOR_CRYPT       (15 | (50 << 8))
+#define MAP_JOLLY_BOAR_PUB_1F         (16 | (50 << 8))
+#define MAP_JOLLY_BOAR_PUB_2F         (17 | (50 << 8))
+#define MAP_YANILLE_PUB_1F            (18 | (50 << 8))
+#define MAP_YANILLE_PUB_2F            (19 | (50 << 8))
+#define MAP_POISON_ARROW_PUB_1F       (20 | (50 << 8))
+#define MAP_FLYING_HORSE_PUB_1F       (21 | (50 << 8))
+#define MAP_FLYING_HORSE_PUB_2F       (22 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

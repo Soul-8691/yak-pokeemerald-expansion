@@ -687,3 +687,17 @@ gMetatiles_QueenBlackDragon::
 	.align 1
 gMetatileAttributes_QueenBlackDragon::
 	.incbin "data/tilesets/secondary/queenblackdragon/metatile_attributes.bin"
+	.align 1
+gMetatiles_Pub::
+	.incbin "data/tilesets/secondary/pub/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Pub::
+	.incbin "data/tilesets/secondary/pub/metatile_attributes.bin"
+	.align 1
+gMetatiles_Lumbridge_Swamp_Caves::
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Lumbridge_Swamp_Caves::
+	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/metatile_attributes.bin"

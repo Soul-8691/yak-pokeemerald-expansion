@@ -2,7 +2,7 @@
   "id": "MAP_FALADOR",
   "name": "Falador",
   "layout": "LAYOUT_FALADOR",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_POKESCAPE_FALADOR",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -289,7 +289,48 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 12,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_FALADOR_CASTLEYARD",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 17,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_FALADOR_PUB_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 5,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_FALADOR_PUB_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 6,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_VARROCK_PUB_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 7,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_JOLLY_BOAR_PUB_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 8,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_DWARVEN_MINE_B1F",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 

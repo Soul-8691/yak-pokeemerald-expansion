@@ -5524,8 +5524,8 @@
     {
       "id": "LAYOUT_DWARVEN_MINE_B1F",
       "name": "Dwarven_Mine_B1F_Layout",
-      "width": 75,
-      "height": 95,
+      "width": 70,
+      "height": 76,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Dwarven_Mine_B1F/border.bin",
@@ -5850,6 +5850,206 @@
       "secondary_tileset": "gTileset_QueenBlackDragon",
       "border_filepath": "data/layouts/QueenBlackDragon_Lair/border.bin",
       "blockdata_filepath": "data/layouts/QueenBlackDragon_Lair/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_HAIRDRESSERS",
+      "name": "Falador_Hairdressers_Layout",
+      "width": 10,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Falador_Hairdressers/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_Hairdressers/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_HAIRDRESSERS_2F",
+      "name": "Falador_Hairdressers_2F_Layout",
+      "width": 6,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Falador_Hairdressers_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_Hairdressers_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_CASTLEYARD",
+      "name": "Falador_Castleyard_Layout",
+      "width": 50,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/Falador_Castleyard/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_Castleyard/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_BANK_WEST_1F",
+      "name": "Falador_Bank_West_1F_Layout",
+      "width": 10,
+      "height": 18,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Falador_Bank_West_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_Bank_West_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_GEM_SHOP",
+      "name": "Falador_GemShop_Layout",
+      "width": 6,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Falador_GemShop/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_GemShop/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_PUB_1F",
+      "name": "Falador_Pub_1F_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Pub",
+      "border_filepath": "data/layouts/Falador_Pub_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_Pub_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_PUB_2F",
+      "name": "Falador_Pub_2F_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Pub",
+      "border_filepath": "data/layouts/Falador_Pub_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_Pub_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_PUB_1F",
+      "name": "Varrock_Pub_1F_Layout",
+      "width": 12,
+      "height": 26,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Pub",
+      "border_filepath": "data/layouts/Varrock_Pub_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Pub_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_PUB_2F",
+      "name": "Varrock_Pub_2F_Layout",
+      "width": 12,
+      "height": 26,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Pub",
+      "border_filepath": "data/layouts/Varrock_Pub_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Pub_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOLLY_BOAR_PUB_1F",
+      "name": "JollyBoar_Pub_1F_Layout",
+      "width": 20,
+      "height": 26,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Pub",
+      "border_filepath": "data/layouts/JollyBoar_Pub_1F/border.bin",
+      "blockdata_filepath": "data/layouts/JollyBoar_Pub_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_JOLLY_BOAR_PUB_2F",
+      "name": "JollyBoar_Pub_2F_Layout",
+      "width": 20,
+      "height": 26,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Pub",
+      "border_filepath": "data/layouts/JollyBoar_Pub_2F/border.bin",
+      "blockdata_filepath": "data/layouts/JollyBoar_Pub_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_YANILLE_PUB_1F",
+      "name": "Yanille_Pub_1F_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Pub",
+      "border_filepath": "data/layouts/Yanille_Pub_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Yanille_Pub_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_YANILLE_PUB_2F",
+      "name": "Yanille_Pub_2F_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Pub",
+      "border_filepath": "data/layouts/Yanille_Pub_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Yanille_Pub_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TZHAAR_CAVES_1",
+      "name": "Tzhaar_Caves_1_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Wizards_Tower",
+      "border_filepath": "data/layouts/Tzhaar_Caves_1/border.bin",
+      "blockdata_filepath": "data/layouts/Tzhaar_Caves_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_PUB_1F",
+      "name": "PortSarim_Pub_1F_Layout",
+      "width": 8,
+      "height": 16,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Pub",
+      "border_filepath": "data/layouts/PortSarim_Pub_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_Pub_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_PUB_2F",
+      "name": "PortSarim_Pub_2F_Layout",
+      "width": 10,
+      "height": 16,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Pub",
+      "border_filepath": "data/layouts/PortSarim_Pub_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_Pub_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_POISON_ARROW_PUB_1F",
+      "name": "PoisonArrow_Pub_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Pub",
+      "border_filepath": "data/layouts/PoisonArrow_Pub_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PoisonArrow_Pub_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLYING_HORSE_PUB_1F",
+      "name": "FlyingHorse_Pub_1F_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Pub",
+      "border_filepath": "data/layouts/FlyingHorse_Pub_1F/border.bin",
+      "blockdata_filepath": "data/layouts/FlyingHorse_Pub_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLYING_HORSE_PUB_2F",
+      "name": "FlyingHorse_Pub_2F_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Pub",
+      "border_filepath": "data/layouts/FlyingHorse_Pub_2F/border.bin",
+      "blockdata_filepath": "data/layouts/FlyingHorse_Pub_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_SWAMP_CAVES",
+      "name": "Lumbridge_Swamp_Caves_Layout",
+      "width": 94,
+      "height": 60,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Lumbridge_Swamp_Caves/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Swamp_Caves/map.bin"
     }
   ]
 }

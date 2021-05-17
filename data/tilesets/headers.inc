@@ -1030,3 +1030,25 @@ gTileset_QueenBlackDragon::
 	.4byte gMetatiles_QueenBlackDragon
 	.4byte gMetatileAttributes_QueenBlackDragon
 	.4byte NULL
+
+	.align 2
+gTileset_Pub::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Pub
+	.4byte gTilesetPalettes_Pub
+	.4byte gMetatiles_Pub
+	.4byte gMetatileAttributes_Pub
+	.4byte NULL
+
+	.align 2
+gTileset_Lumbridge_Swamp_Caves::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Lumbridge_Swamp_Caves
+	.4byte gTilesetPalettes_Lumbridge_Swamp_Caves
+	.4byte gMetatiles_Lumbridge_Swamp_Caves
+	.4byte gMetatileAttributes_Lumbridge_Swamp_Caves
+	.4byte NULL

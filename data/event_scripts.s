@@ -1341,3 +1341,43 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/KingBlackDragon_B2F/scripts.inc"
 
 	.include "data/maps/QueenBlackDragon_Lair/scripts.inc"
+
+	.include "data/maps/Falador_Hairdressers/scripts.inc"
+
+	.include "data/maps/Falador_Hairdressers_2F/scripts.inc"
+
+	.include "data/maps/Falador_Castleyard/scripts.inc"
+
+	.include "data/maps/Falador_Bank_West_1F/scripts.inc"
+
+	.include "data/maps/Falador_GemShop/scripts.inc"
+
+	.include "data/maps/Falador_Pub_1F/scripts.inc"
+
+	.include "data/maps/Falador_Pub_2F/scripts.inc"
+
+	.include "data/maps/Varrock_Pub_1F/scripts.inc"
+
+	.include "data/maps/Varrock_Pub_2F/scripts.inc"
+
+	.include "data/maps/JollyBoar_Pub_1F/scripts.inc"
+
+	.include "data/maps/JollyBoar_Pub_2F/scripts.inc"
+
+	.include "data/maps/Yanille_Pub_1F/scripts.inc"
+
+	.include "data/maps/Yanille_Pub_2F/scripts.inc"
+
+	.include "data/maps/Tzhaar_Caves_1/scripts.inc"
+
+	.include "data/maps/PortSarim_Pub_1F/scripts.inc"
+
+	.include "data/maps/PortSarim_Pub_2F/scripts.inc"
+
+	.include "data/maps/PoisonArrow_Pub_1F/scripts.inc"
+
+	.include "data/maps/FlyingHorse_Pub_1F/scripts.inc"
+
+	.include "data/maps/FlyingHorse_Pub_2F/scripts.inc"
+
+	.include "data/maps/Lumbridge_Swamp_Caves/scripts.inc"

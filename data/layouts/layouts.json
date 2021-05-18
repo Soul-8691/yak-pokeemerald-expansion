@@ -6044,12 +6044,22 @@
     {
       "id": "LAYOUT_LUMBRIDGE_SWAMP_CAVES",
       "name": "Lumbridge_Swamp_Caves_Layout",
-      "width": 94,
+      "width": 96,
       "height": 60,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
       "border_filepath": "data/layouts/Lumbridge_Swamp_Caves/border.bin",
       "blockdata_filepath": "data/layouts/Lumbridge_Swamp_Caves/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_SWAMP_CAVES_JUNA",
+      "name": "Lumbridge_Swamp_Caves_Juna_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Lumbridge_Swamp_Caves_Juna/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Swamp_Caves_Juna/map.bin"
     }
   ]
 }

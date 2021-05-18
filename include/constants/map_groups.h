@@ -1,6 +1,10 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
+//
+// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
+//
+
 // Map Group 0
 #define MAP_PETALBURG_CITY      (0 | (0 << 8))
 #define MAP_SLATEPORT_CITY      (1 | (0 << 8))
@@ -652,22 +656,23 @@
 #define MAP_ROUTE39 (38 | (35 << 8))
 
 // Map Group 36
-#define MAP_TUTORIAL_ISLAND_CAVE    (0 | (36 << 8))
-#define MAP_LUMBRIDGE_FOREST        (1 | (36 << 8))
-#define MAP_UNDERWATER_LUMBRIDGE    (2 | (36 << 8))
-#define MAP_AL_KHARID_MINES_B1F     (3 | (36 << 8))
-#define MAP_AL_KHARID_MINES_B2F     (4 | (36 << 8))
-#define MAP_KALPHITE_CAVES_B1F      (5 | (36 << 8))
-#define MAP_KALPHITE_CAVES_B2F      (6 | (36 << 8))
-#define MAP_KALPHITE_CAVES_B3F      (7 | (36 << 8))
-#define MAP_KALPHITE_CAVES_B4F      (8 | (36 << 8))
-#define MAP_GIANT_MOLE_CAVE         (9 | (36 << 8))
-#define MAP_DWARVEN_MINE_B1F        (10 | (36 << 8))
-#define MAP_KING_BLACK_DRAGON_LAIR  (11 | (36 << 8))
-#define MAP_KING_BLACK_DRAGON_B1F   (12 | (36 << 8))
-#define MAP_KING_BLACK_DRAGON_B2F   (13 | (36 << 8))
-#define MAP_QUEEN_BLACK_DRAGON_LAIR (14 | (36 << 8))
-#define MAP_LUMBRIDGE_SWAMP_CAVES   (15 | (36 << 8))
+#define MAP_TUTORIAL_ISLAND_CAVE       (0 | (36 << 8))
+#define MAP_LUMBRIDGE_FOREST           (1 | (36 << 8))
+#define MAP_UNDERWATER_LUMBRIDGE       (2 | (36 << 8))
+#define MAP_AL_KHARID_MINES_B1F        (3 | (36 << 8))
+#define MAP_AL_KHARID_MINES_B2F        (4 | (36 << 8))
+#define MAP_KALPHITE_CAVES_B1F         (5 | (36 << 8))
+#define MAP_KALPHITE_CAVES_B2F         (6 | (36 << 8))
+#define MAP_KALPHITE_CAVES_B3F         (7 | (36 << 8))
+#define MAP_KALPHITE_CAVES_B4F         (8 | (36 << 8))
+#define MAP_GIANT_MOLE_CAVE            (9 | (36 << 8))
+#define MAP_DWARVEN_MINE_B1F           (10 | (36 << 8))
+#define MAP_KING_BLACK_DRAGON_LAIR     (11 | (36 << 8))
+#define MAP_KING_BLACK_DRAGON_B1F      (12 | (36 << 8))
+#define MAP_KING_BLACK_DRAGON_B2F      (13 | (36 << 8))
+#define MAP_QUEEN_BLACK_DRAGON_LAIR    (14 | (36 << 8))
+#define MAP_LUMBRIDGE_SWAMP_CAVES      (15 | (36 << 8))
+#define MAP_LUMBRIDGE_SWAMP_CAVES_JUNA (16 | (36 << 8))
 
 // Map Group 37
 #define MAP_TUTORIAL_ISLAND_LAB_UP   (0 | (37 << 8))

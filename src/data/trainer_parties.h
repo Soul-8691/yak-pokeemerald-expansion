@@ -151,17 +151,9 @@ static const struct TrainerMonItemDefaultMoves sParty_Goblin4[] = {
     {
     .iv = 0,
     .lvl = 5,
-    .species = SPECIES_GOBLINFISH,
+    .species = SPECIES_GNOMEY,
     .heldItem = ITEM_NONE
     },
-    {
-    .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_RAT_NORMAL_FORM,
-    .heldItem = ITEM_NONE
-    },
-    
-
 };
 
 static const struct TrainerMonItemDefaultMoves sParty_Goblin5[] = {

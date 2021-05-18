@@ -1381,3 +1381,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/FlyingHorse_Pub_2F/scripts.inc"
 
 	.include "data/maps/Lumbridge_Swamp_Caves/scripts.inc"
+
+	.include "data/maps/Lumbridge_Swamp_Caves_Juna/scripts.inc"

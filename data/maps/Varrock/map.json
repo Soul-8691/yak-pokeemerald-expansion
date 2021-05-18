@@ -424,10 +424,10 @@
       "dest_warp_id": 1
     },
     {
-      "x": 45,
-      "y": 25,
+      "x": 30,
+      "y": 32,
       "elevation": 0,
-      "dest_map": "MAP_VARROCK",
+      "dest_map": "MAP_VARROCK_PUB_1F",
       "dest_warp_id": 0
     },
     {

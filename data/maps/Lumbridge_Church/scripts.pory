@@ -72,3 +72,138 @@ script Pub_Mod_Dolan
 	release
 	end
 }
+
+
+
+
+script GoldenGnome
+{
+	lock
+	faceplayer
+	msgbox(format("Hey you!\pSomebody dropped this, it's a little broken, but you can have it."))
+	givemon (SPECIES_GNOMEY,5, ITEM_NONE)
+	msgbox(format("Would you like to give your monster a nickname?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT) == NO){
+		release
+		}
+		else{
+		setvar (VAR_0x8004, 0)
+		call (Common_EventScript_NameReceivedPartyMon)
+		}
+	msgbox(format("OBTAINED A GOLDEN GNOME."))	
+	trainerbattle_single(TRAINER_GOBLIN_4_ROUTE12, format("Also want to battle my non-broken one?!"),format("Human strong. This now Goblin and human home."))
+	release
+	end
+}	
+
+
+
+
+script GnomeBoi_Kevin
+{
+	lock
+	faceplayer
+	msgbox("Hi Boss! What can I do for ya?")
+	release
+	multichoicedefault (1, 0, MULTI_CHEAT_MENU, 0, 0)
+	switch (var(VAR_RESULT))
+	{
+		case 0:
+			msgbox("What runes would you like?")
+			waitmessage
+			//pokemart (Cheat_Menu_Shop_Evolution)
+			release
+		case 1:
+			msgbox("What pouches would you like?")
+			waitmessage
+			//pokemart (Cheat_Menu_Shop_Pouches)
+			release
+		case 2:
+			msgbox("Look at my wares!")
+			waitmessage
+			//pokemart (Cheat_Menu_Shop_TM)
+			release
+
+		case 3:
+			msgbox("Look at my junk!")
+			waitmessage
+			//pokemart (Cheat_Menu_Shop_Misc)
+			release
+		
+		case 4:
+			msgbox("These might be important!")
+			giveitem (ITEM_TERRORBIRD_POUCH)
+			giveitem (ITEM_PICKAXE)
+			giveitem (ITEM_BOAT)
+			giveitem (ITEM_AXE)
+			giveitem (ITEM_STRENGTHITEM)
+			giveitem (ITEM_DIVEITEM)
+			giveitem (ITEM_SPADE)
+			giveitem (ITEM_FLYITEM)
+			giveitem (ITEM_LANTERN)
+			giveitem (ITEM_WATERFALLITEM)
+			giveitem (ITEM_SMALL_NET)
+			giveitem (ITEM_LARGE_NET)
+			giveitem (ITEM_DRAGON_NET)
+			giveitem (ITEM_MAP)
+			release
+		case 5:
+			msgbox("Get money!")
+			addmoney (250000, 0)
+			release
+		case 6:
+			msgbox ("Heres some candy!")
+			additem (ITEM_PURPLE_SWEETS, 100)
+			release
+		case 7:
+			release
+		
+	}
+	msgbox ("Smell ya later!")
+	release
+	end
+}
+
+
+
+
+
+
+
+
+
+
+
+script LumbridgeSwampCaves_WallBeasts
+{
+	lockall
+	msgbox(format("Something jumps out of the wall towards you!"))
+    random(3)
+        switch (var(VAR_RESULT)) {
+            case 0: 
+				//namebox("0")
+				msgbox(format("A wild Monster attacked!"))
+				special(RockSmashWildEncounter)
+				release
+				//hidenamebox
+				end
+			case 1: 
+				//namebox("1")
+				msgbox(format("A hand swipes at you!"))
+				setwildbattle(SPECIES_HAND_CREEPING_FORM, 10, ITEM_NONE)
+				dowildbattle
+				//hidenamebox
+				release
+				end
+			case 2: 
+				//namebox("2")
+				msgbox(format("You found an item!"))
+				release
+				//hidenamebox
+				end
+        }
+	release
+	end
+}
+
+

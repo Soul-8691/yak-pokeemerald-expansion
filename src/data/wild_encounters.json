@@ -11397,6 +11397,36 @@
               }
             ]
           },
+          "water_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CRAYFISH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_COD"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_FROG_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_FROGSPAWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GIANT_FROG_NORMAL_FORM"
+              }
+            ]
+          },
           "wheat_mons": {
             "encounter_rate": 50,
             "mons": [
@@ -11459,36 +11489,6 @@
                 "min_level": 2,
                 "max_level": 10,
                 "species": "SPECIES_IMPLING_BABY_FORM"
-              }
-            ]
-          },
-          "water_mons": {
-            "encounter_rate": 0,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CRAYFISH"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_COD"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FROG_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FROGSPAWN"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_GIANT_FROG_NORMAL_FORM"
               }
             ]
           }
@@ -14220,6 +14220,36 @@
               }
             ]
           },
+          "rock_smash_mons": {
+            "encounter_rate": 180,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_SWAMP_FORM"
+              }
+            ]
+          },
           "fishing_mons": {
             "encounter_rate": 30,
             "mons": [
@@ -14302,36 +14332,6 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_GOBLINFISH"
-              }
-            ]
-          },
-          "rock_smash_mons": {
-            "encounter_rate": 180,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PET_ROCK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PET_ROCK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_SWAMP_FORM"
               }
             ]
           }

@@ -17,6 +17,11 @@
       "direction": "up",
       "offset": -7,
       "map": "MAP_ROUTE2"
+    },
+    {
+      "direction": "down",
+      "offset": -10,
+      "map": "MAP_TUTORIAL_ISLAND"
     }
   ],
   "object_events": [

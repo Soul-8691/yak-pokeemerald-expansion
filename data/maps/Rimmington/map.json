@@ -31,7 +31,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_RED",
+      "graphics_id": "OBJ_EVENT_GFX_zezima",
       "x": 22,
       "y": 5,
       "elevation": 3,
@@ -44,7 +44,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DRAKE",
+      "graphics_id": "OBJ_EVENT_GFX_gnome_child",
       "x": 22,
       "y": 6,
       "elevation": 3,
@@ -57,7 +57,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_COOK",
+      "graphics_id": "OBJ_EVENT_GFX_bob",
       "x": 23,
       "y": 6,
       "elevation": 3,
@@ -70,7 +70,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LUCY",
+      "graphics_id": "OBJ_EVENT_GFX_hyper_stan",
       "x": 27,
       "y": 6,
       "elevation": 3,
@@ -83,7 +83,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_TUCKER",
+      "graphics_id": "OBJ_EVENT_GFX_demonheadge",
       "x": 28,
       "y": 6,
       "elevation": 3,
@@ -96,7 +96,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "graphics_id": "OBJ_EVENT_GFX_woman_1",
       "x": 28,
       "y": 10,
       "elevation": 3,
@@ -109,7 +109,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CONTEST_JUDGE",
+      "graphics_id": "OBJ_EVENT_GFX_man_1",
       "x": 24,
       "y": 17,
       "elevation": 3,
@@ -122,7 +122,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_sailor",
       "x": 38,
       "y": 20,
       "elevation": 3,
@@ -135,7 +135,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WINGULL",
+      "graphics_id": "OBJ_EVENT_GFX_seagull",
       "x": 20,
       "y": 15,
       "elevation": 3,
@@ -148,7 +148,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WINGULL",
+      "graphics_id": "OBJ_EVENT_GFX_seagull",
       "x": 35,
       "y": 16,
       "elevation": 3,
@@ -161,9 +161,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DUSCLOPS",
-      "x": 48,
-      "y": 15,
+      "graphics_id": "OBJ_EVENT_GFX_imp",
+      "x": 49,
+      "y": 24,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 44,
@@ -172,10 +172,155 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_man_1",
+      "x": 11,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_man_1",
+      "x": 10,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_man_1",
+      "x": 11,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_boaty",
+      "x": 24,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_mercher",
+      "x": 32,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_pker",
+      "x": 17,
+      "y": 17,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 16,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_raven",
+      "x": 39,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
-
+    {
+      "x": 36,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_RIMMINGTON",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 29,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_RIMMINGTON",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 20,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_RIMMINGTON",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 13,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_RIMMINGTON",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 36,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_RIMMINGTON",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 37,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_RIMMINGTON",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 
@@ -195,6 +340,14 @@
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "NULL"
     }
   ]

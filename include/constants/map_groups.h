@@ -1,10 +1,6 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
-//
-// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
-//
-
 // Map Group 0
 #define MAP_PETALBURG_CITY      (0 | (0 << 8))
 #define MAP_SLATEPORT_CITY      (1 | (0 << 8))
@@ -673,6 +669,8 @@
 #define MAP_QUEEN_BLACK_DRAGON_LAIR    (14 | (36 << 8))
 #define MAP_LUMBRIDGE_SWAMP_CAVES      (15 | (36 << 8))
 #define MAP_LUMBRIDGE_SWAMP_CAVES_JUNA (16 | (36 << 8))
+#define MAP_DWARVEN_MINE_B2F           (17 | (36 << 8))
+#define MAP_VORAGO_CAVERN              (18 | (36 << 8))
 
 // Map Group 37
 #define MAP_TUTORIAL_ISLAND_LAB_UP   (0 | (37 << 8))

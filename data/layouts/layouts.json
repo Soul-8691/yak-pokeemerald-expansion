@@ -6060,6 +6060,26 @@
       "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
       "border_filepath": "data/layouts/Lumbridge_Swamp_Caves_Juna/border.bin",
       "blockdata_filepath": "data/layouts/Lumbridge_Swamp_Caves_Juna/map.bin"
+    },
+    {
+      "id": "LAYOUT_DWARVEN_MINE_B2F",
+      "name": "Dwarven_Mine_B2F_Layout",
+      "width": 48,
+      "height": 48,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Dwarven_Mine_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/Dwarven_Mine_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_VORAGO_CAVERN",
+      "name": "Vorago_Cavern_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Vorago_Cavern/border.bin",
+      "blockdata_filepath": "data/layouts/Vorago_Cavern/map.bin"
     }
   ]
 }

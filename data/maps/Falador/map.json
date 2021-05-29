@@ -325,11 +325,11 @@
       "dest_warp_id": 0
     },
     {
-      "x": 8,
-      "y": 34,
+      "x": 79,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_DWARVEN_MINE_B1F",
-      "dest_warp_id": 0
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [

@@ -1383,3 +1383,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Lumbridge_Swamp_Caves/scripts.inc"
 
 	.include "data/maps/Lumbridge_Swamp_Caves_Juna/scripts.inc"
+
+	.include "data/maps/Dwarven_Mine_B2F/scripts.inc"
+
+	.include "data/maps/Vorago_Cavern/scripts.inc"

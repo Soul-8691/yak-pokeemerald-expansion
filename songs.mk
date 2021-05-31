@@ -1261,49 +1261,58 @@ $(MID_SUBDIR)/se_m_leer.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G128 -V110 -P4
 
 $(MID_SUBDIR)/se_dex_search.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G127 -v100 -P5
-	
-$(MID_SUBDIR)/mus_pokescape_encounter_pker.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
-	
-$(MID_SUBDIR)/mus_pokescape_route_asgarnia.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
-	
-$(MID_SUBDIR)/mus_pokescape_wizards_tower.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
-	
-$(MID_SUBDIR)/mus_pokescape_port_sarim.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100	
-	
-$(MID_SUBDIR)/mus_pokescape_falador.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
-	
-$(MID_SUBDIR)/mus_pokescape_forest.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
-	
-$(MID_SUBDIR)/mus_pokescape_cave.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
+	$(MID) $< $@ -E -R$(STD_REVERB) -G127 -V100 -P5
 	
 $(MID_SUBDIR)/mus_pokescape_bank.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
-	
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/mus_pokescape_cave.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/mus_pokescape_draynor_woods.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/mus_pokescape_encounter_pker.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/mus_pokescape_falador.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
 $(MID_SUBDIR)/mus_pokescape_general_store.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
-	
-$(MID_SUBDIR)/mus_pokescape_surfing.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
-	
-$(MID_SUBDIR)/mus_pokescape_terrorbird.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
-	
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/mus_pokescape_lumbridge.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/mus_pokescape_port_sarim.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
 $(MID_SUBDIR)/mus_pokescape_quest_complete.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G192 -V100 -P1	
-	
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/mus_pokescape_route_asgarnia.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
 $(MID_SUBDIR)/mus_pokescape_route_beginning.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100		
-	
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/mus_pokescape_surfing.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/mus_pokescape_terrorbird.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/mus_pokescape_victory_road.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
 $(MID_SUBDIR)/mus_pokescape_vs_monster.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100 -P1
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/mus_pokescape_vs_orchy.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
 $(MID_SUBDIR)/mus_pokescape_vs_trainer.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100 -P1
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/mus_pokescape_wizards_tower.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100

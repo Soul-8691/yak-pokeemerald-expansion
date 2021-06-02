@@ -2,7 +2,7 @@
   "id": "MAP_LUMBRIDGE",
   "name": "Lumbridge",
   "layout": "LAYOUT_LUMBRIDGE",
-  "music": "MUS_POKESCAPE_PORT_SARIM",
+  "music": "MUS_PS_LUMBRIDGE",
   "region_map_section": "MAPSEC_MISTHALIN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

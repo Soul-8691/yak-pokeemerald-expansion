@@ -2,7 +2,7 @@
   "id": "MAP_LUMBRIDGE_CASTLE_4",
   "name": "Lumbridge_Castle_4",
   "layout": "LAYOUT_LUMBRIDGE_CASTLE_4",
-  "music": "MUS_POKESCAPE_WIZARDS_TOWER",
+  "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

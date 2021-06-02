@@ -2,7 +2,7 @@
   "id": "MAP_FALADOR_HAIRDRESSERS",
   "name": "Falador_Hairdressers",
   "layout": "LAYOUT_FALADOR_HAIRDRESSERS",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_FALADOR",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

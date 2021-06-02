@@ -2,7 +2,7 @@
   "id": "MAP_WIZARDS_TOWER_ATTIC",
   "name": "Wizards_Tower_Attic",
   "layout": "LAYOUT_WIZARDS_TOWER_ATTIC",
-  "music": "MUS_CAVE_OF_ORIGIN",
+  "music": "MUS_PS_WIZARDS_TOWER",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": true,
   "weather": "WEATHER_SHADE",

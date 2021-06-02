@@ -2,7 +2,7 @@
   "id": "MAP_LUMBRIDGE_BANK",
   "name": "Lumbridge_Bank",
   "layout": "LAYOUT_LUMBRIDGE_BANK",
-  "music": "MUS_POKESCAPE_BANK",
+  "music": "MUS_PS_BANK",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

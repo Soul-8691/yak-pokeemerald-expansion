@@ -1263,56 +1263,195 @@ $(MID_SUBDIR)/se_m_leer.s: %.s: %.mid
 $(MID_SUBDIR)/se_dex_search.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G127 -V100 -P5
 	
-$(MID_SUBDIR)/mus_pokescape_bank.s: %.s: %.mid
+
+
+
+$(MID_SUBDIR)/MUS_PS_TITLESCREEN.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_cave.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_BANK.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_draynor_woods.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_GENERAL_STORE.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_encounter_pker.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_PUB.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_falador.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_CHURCH.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_general_store.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_GYM.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_lumbridge.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_FOREST_F2P.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_port_sarim.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_FOREST_P2P.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_quest_complete.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_CAVE_F2P.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_route_asgarnia.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_CAVE_P2P.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_route_beginning.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_SURFING.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_surfing.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_TERRORBIRD.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_terrorbird.s: %.s: %.mid
+
+$(MID_SUBDIR)/MUS_PS_LUMBRIDGE.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_victory_road.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_DRAYNOR.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_vs_monster.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_WIZARDS_TOWER.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_vs_orchy.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_PORT_SARIM.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_vs_trainer.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_RIMMINGTON.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-$(MID_SUBDIR)/mus_pokescape_wizards_tower.s: %.s: %.mid
+$(MID_SUBDIR)/MUS_PS_FALADOR.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_VARROCK.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ALKHARID.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_MUSA_POINT.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_TZHAAR.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_BARBARIAN_VILLAGE.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_EDGEVILLE.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+
+$(MID_SUBDIR)/MUS_PS_ROUTE_LUMBRIDGE.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ROUTE_PORT_SARIM.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ROUTE_RIMMINGTON.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ROUTE_ASGARNIA.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ROUTE_MISTHALIN.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ROUTE_DESERT.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ROUTE_KARAMJA.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ROUTE_WILDERNESS.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_VICTORY_ROAD.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+
+$(MID_SUBDIR)/MUS_PS_VS_WILD_F2P.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_VS_WILD_P2P.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_VS_TRAINER_F2P.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_VS_TRAINER_P2P.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_VS_GYM.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_VS_HAM.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_VS_KNIGHTS.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_VS_ELITE4.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_VS_LEGENDARY.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_VS_CHAOS_ELEMENTAL.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_VS_POKESCAPERS.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_VS_DEMONHEADGE.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_VS_ORCHY.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+
+$(MID_SUBDIR)/MUS_PS_ENCOUNTER_NOOB.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ENCOUNTER_SKILLER.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ENCOUNTER_PKER.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ENCOUNTER_KNIGHTS.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ENCOUNTER_HAM.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ENCOUNTER_GYM.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ENCOUNTER_LEGENDARY.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ENCOUNTER_SPECIAL.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+$(MID_SUBDIR)/MUS_PS_ENCOUNTER_MITHRILMAN.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+
+$(MID_SUBDIR)/MUS_PS_QUEST_COMPLETE.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

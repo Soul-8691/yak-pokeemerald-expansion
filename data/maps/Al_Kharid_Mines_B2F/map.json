@@ -2,7 +2,7 @@
   "id": "MAP_AL_KHARID_MINES_B2F",
   "name": "Al_Kharid_Mines_B2F",
   "layout": "LAYOUT_AL_KHARID_MINES_B2F",
-  "music": "MUS_POKESCAPE_CAVE",
+  "music": "MUS_PS_CAVE_F2P",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": true,
   "weather": "WEATHER_NONE",

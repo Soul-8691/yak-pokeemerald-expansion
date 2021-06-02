@@ -2,7 +2,7 @@
   "id": "MAP_WIZARDS_TOWER_DINING_HALL",
   "name": "Wizards_Tower_DiningHall",
   "layout": "LAYOUT_WIZARDS_TOWER_DINING_HALL",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_WIZARDS_TOWER",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

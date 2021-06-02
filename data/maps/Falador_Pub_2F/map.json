@@ -2,7 +2,7 @@
   "id": "MAP_FALADOR_PUB_2F",
   "name": "Falador_Pub_2F",
   "layout": "LAYOUT_FALADOR_PUB_2F",
-  "music": "MUS_POKESCAPE_PORT_SARIM",
+  "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

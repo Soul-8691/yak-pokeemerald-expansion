@@ -611,24 +611,88 @@ gSongTable:: @ 86B49F0
 	song ph_nurse_blend, 2, 2
 	song ph_nurse_held, 2, 2
 	song ph_nurse_solo, 2, 2
-	song mus_pokescape_bank, 0, 0
-	song mus_pokescape_cave, 0, 0
-	song mus_pokescape_draynor_woods, 0, 0
-	song mus_pokescape_encounter_pker, 0, 0
-	song mus_pokescape_falador, 0, 0
-	song mus_pokescape_general_store, 0, 0
-	song mus_pokescape_lumbridge, 0, 0
-	song mus_pokescape_port_sarim, 0, 0
-	song mus_pokescape_quest_complete, 0, 0
-	song mus_pokescape_route_asgarnia, 0, 0
-	song mus_pokescape_route_beginning, 0, 0
-	song mus_pokescape_surfing, 0, 0
-	song mus_pokescape_terrorbird, 0, 0
-	song mus_pokescape_victory_road, 0, 0
-	song mus_pokescape_vs_monster, 0, 0
-	song mus_pokescape_vs_orchy, 0, 0
-	song mus_pokescape_vs_trainer, 0, 0
-	song mus_pokescape_wizards_tower, 0, 0
+
+
+	song	MUS_PS_TITLESCREEN	, 0, 0
+	song	MUS_PS_BANK	, 0, 0
+	song	MUS_PS_GENERAL_STORE	, 0, 0
+	song	MUS_PS_PUB	, 0, 0
+	song	MUS_PS_CHURCH	, 0, 0
+	song	MUS_PS_GYM	, 0, 0
+	song	MUS_PS_FOREST_F2P	, 0, 0
+	song	MUS_PS_FOREST_P2P	, 0, 0
+	song	MUS_PS_CAVE_F2P	, 0, 0
+	song	MUS_PS_CAVE_P2P	, 0, 0
+	song	MUS_PS_SURFING	, 0, 0
+	song	MUS_PS_TERRORBIRD	, 0, 0
+			
+	song	MUS_PS_LUMBRIDGE	, 0, 0
+	song	MUS_PS_DRAYNOR	, 0, 0
+	song	MUS_PS_WIZARDS_TOWER	, 0, 0
+	song	MUS_PS_PORT_SARIM	, 0, 0
+	song	MUS_PS_RIMMINGTON	, 0, 0
+	song	MUS_PS_FALADOR	, 0, 0
+	song	MUS_PS_VARROCK	, 0, 0
+	song	MUS_PS_ALKHARID	, 0, 0
+	song	MUS_PS_MUSA_POINT	, 0, 0
+	song	MUS_PS_TZHAAR	, 0, 0
+	song	MUS_PS_BARBARIAN_VILLAGE	, 0, 0
+	song	MUS_PS_EDGEVILLE	, 0, 0
+			
+	song	MUS_PS_ROUTE_LUMBRIDGE	, 0, 0
+	song	MUS_PS_ROUTE_PORT_SARIM	, 0, 0
+	song	MUS_PS_ROUTE_RIMMINGTON	, 0, 0
+	song	MUS_PS_ROUTE_ASGARNIA	, 0, 0
+	song	MUS_PS_ROUTE_MISTHALIN	, 0, 0
+	song	MUS_PS_ROUTE_DESERT	, 0, 0
+	song	MUS_PS_ROUTE_KARAMJA	, 0, 0
+	song	MUS_PS_ROUTE_WILDERNESS	, 0, 0
+	song	MUS_PS_VICTORY_ROAD	, 0, 0
+			
+	song	MUS_PS_VS_WILD_F2P	, 0, 0
+	song	MUS_PS_VS_WILD_P2P	, 0, 0
+	song	MUS_PS_VS_TRAINER_F2P	, 0, 0
+	song	MUS_PS_VS_TRAINER_P2P	, 0, 0
+	song	MUS_PS_VS_GYM	, 0, 0
+	song	MUS_PS_VS_HAM	, 0, 0
+	song	MUS_PS_VS_KNIGHTS	, 0, 0
+	song	MUS_PS_VS_ELITE4	, 0, 0
+	song	MUS_PS_VS_LEGENDARY	, 0, 0
+	song	MUS_PS_VS_CHAOS_ELEMENTAL	, 0, 0
+	song	MUS_PS_VS_POKESCAPERS	, 0, 0
+	song	MUS_PS_VS_DEMONHEADGE	, 0, 0
+	song	MUS_PS_VS_ORCHY	, 0, 0
+			
+	song	MUS_PS_ENCOUNTER_NOOB	, 0, 0
+	song	MUS_PS_ENCOUNTER_SKILLER	, 0, 0
+	song	MUS_PS_ENCOUNTER_PKER	, 0, 0
+	song	MUS_PS_ENCOUNTER_KNIGHTS	, 0, 0
+	song	MUS_PS_ENCOUNTER_HAM	, 0, 0
+	song	MUS_PS_ENCOUNTER_GYM	, 0, 0
+	song	MUS_PS_ENCOUNTER_LEGENDARY	, 0, 0
+	song	MUS_PS_ENCOUNTER_SPECIAL	, 0, 0
+	song	MUS_PS_ENCOUNTER_MITHRILMAN	, 0, 0
+			
+	song	MUS_PS_QUEST_COMPLETE	, 0, 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	.align 2
 dummy_song_header: @ 86B5D00

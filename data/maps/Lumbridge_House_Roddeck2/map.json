@@ -2,7 +2,7 @@
   "id": "MAP_LUMBRIDGE_HOUSE_RODDECK2",
   "name": "Lumbridge_House_Roddeck2",
   "layout": "LAYOUT_LUMBRIDGE_HOUSE_RODDECK2",
-  "music": "MUS_POKESCAPE_PORT_SARIM",
+  "music": "MUS_PS_LUMBRIDGE",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

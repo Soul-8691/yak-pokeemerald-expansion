@@ -1387,3 +1387,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Dwarven_Mine_B2F/scripts.inc"
 
 	.include "data/maps/Vorago_Cavern/scripts.inc"
+
+	.include "data/maps/Chaos_Tunnels_B1F/scripts.inc"

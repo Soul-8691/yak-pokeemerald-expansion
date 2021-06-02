@@ -2,7 +2,7 @@
   "id": "MAP_LUMBRIDGE_SWAMP",
   "name": "Lumbridge_Swamp",
   "layout": "LAYOUT_LUMBRIDGE_SWAMP",
-  "music": "MUS_RG_VIRIDIAN_FOREST",
+  "music": "MUS_PS_FOREST_F2P",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

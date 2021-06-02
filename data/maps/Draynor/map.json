@@ -2,7 +2,7 @@
   "id": "MAP_DRAYNOR",
   "name": "Draynor",
   "layout": "LAYOUT_DRAYNOR",
-  "music": "MUS_POKESCAPE_SURFING",
+  "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

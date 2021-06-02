@@ -2,7 +2,7 @@
   "id": "MAP_LUMBRIDGE_SWAMP_CAVES_JUNA",
   "name": "Lumbridge_Swamp_Caves_Juna",
   "layout": "LAYOUT_LUMBRIDGE_SWAMP_CAVES_JUNA",
-  "music": "MUS_POKESCAPE_CAVE",
+  "music": "MUS_PS_CAVE_F2P",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -2,7 +2,7 @@
   "id": "MAP_LUMBRIDGE_HOUSE_BOBS_AXES1",
   "name": "Lumbridge_House_BobsAxes1",
   "layout": "LAYOUT_LUMBRIDGE_HOUSE_BOBSAXES1",
-  "music": "MUS_POKESCAPE_PORT_SARIM",
+  "music": "MUS_PS_LUMBRIDGE",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

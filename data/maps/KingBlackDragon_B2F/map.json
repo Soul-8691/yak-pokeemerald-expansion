@@ -2,7 +2,7 @@
   "id": "MAP_KING_BLACK_DRAGON_B2F",
   "name": "KingBlackDragon_B2F",
   "layout": "LAYOUT_KING_BLACK_DRAGON_B2F",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_CAVE_F2P",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

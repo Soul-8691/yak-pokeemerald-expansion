@@ -5025,7 +5025,7 @@
       "id": "LAYOUT_EDGEVILLE",
       "name": "Edgeville_Layout",
       "width": 44,
-      "height": 44,
+      "height": 50,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Varrock",
       "border_filepath": "data/layouts/Edgeville/border.bin",
@@ -6080,6 +6080,16 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Vorago_Cavern/border.bin",
       "blockdata_filepath": "data/layouts/Vorago_Cavern/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAOS_TUNNELS_B1F",
+      "name": "Chaos_Tunnels_B1F_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Chaos_Tunnels_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/Chaos_Tunnels_B1F/map.bin"
     }
   ]
 }

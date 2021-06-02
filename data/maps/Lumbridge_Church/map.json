@@ -2,7 +2,7 @@
   "id": "MAP_LUMBRIDGE_CHURCH",
   "name": "Lumbridge_Church",
   "layout": "LAYOUT_LUMBRIDGE_CHURCH",
-  "music": "MUS_POKESCAPE_BANK",
+  "music": "MUS_PS_BANK",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

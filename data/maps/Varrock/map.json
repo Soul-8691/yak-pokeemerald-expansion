@@ -2,7 +2,7 @@
   "id": "MAP_VARROCK",
   "name": "Varrock",
   "layout": "LAYOUT_VARROCK",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_VARROCK",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

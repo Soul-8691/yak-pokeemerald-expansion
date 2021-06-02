@@ -2,7 +2,7 @@
   "id": "MAP_LUMBRIDGE_FOREST",
   "name": "Lumbridge_Forest",
   "layout": "LAYOUT_LUMBRIDGE_FOREST",
-  "music": "MUS_POKESCAPE_FOREST",
+  "music": "MUS_PS_FOREST_F2P",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",

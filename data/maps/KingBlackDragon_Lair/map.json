@@ -2,7 +2,7 @@
   "id": "MAP_KING_BLACK_DRAGON_LAIR",
   "name": "KingBlackDragon_Lair",
   "layout": "LAYOUT_KING_BLACK_DRAGON_LAIR",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_CAVE_F2P",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

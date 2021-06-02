@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE38",
   "name": "Route38",
   "layout": "LAYOUT_ROUTE38",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_VS_HAM",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

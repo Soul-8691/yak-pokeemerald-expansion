@@ -175,15 +175,6 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "Tutorial_PondGirlCheck"
-    },
-    {
-      "type": "trigger",
-      "x": 33,
-      "y": 39,
-      "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "DoTutorialBattle"
     }
   ],
   "bg_events": [

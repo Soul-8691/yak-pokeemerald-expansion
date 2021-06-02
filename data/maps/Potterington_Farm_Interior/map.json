@@ -2,7 +2,7 @@
   "id": "MAP_POTTERINGTON_FARM_INTERIOR",
   "name": "Potterington_Farm_Interior",
   "layout": "LAYOUT_POTTERINGTON_FARM_INTERIOR",
-  "music": "MUS_POKESCAPE_ROUTE_ASGARNIA",
+  "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

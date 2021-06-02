@@ -2,7 +2,7 @@
   "id": "MAP_WIZARDS_TOWER_B1F",
   "name": "WizardsTowerB1F",
   "layout": "LAYOUT_WIZARDS_TOWER_B1F",
-  "music": "MUS_POKESCAPE_WIZARDS_TOWER",
+  "music": "MUS_PS_WIZARDS_TOWER",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

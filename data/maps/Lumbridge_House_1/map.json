@@ -2,7 +2,7 @@
   "id": "MAP_LUMBRIDGE_HOUSE_1",
   "name": "Lumbridge_House_1",
   "layout": "LAYOUT_LUMBRIDGE_HOUSE_1",
-  "music": "MUS_POKESCAPE_PORT_SARIM",
+  "music": "MUS_PS_LUMBRIDGE",
   "region_map_section": "MAPSEC_SOOTOPOLIS_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

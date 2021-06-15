@@ -15,6 +15,22 @@ CUPHOLDER_NPC::
 	end
 
 
+LOCKED_DOOR::
+	lock
+	faceplayer
+	msgbox LOCKED_DOOR_Text_0
+	release
+	end
+
+
+COOKING_RANGE::
+	lock
+	faceplayer
+	msgbox COOKING_RANGE_Text_0
+	release
+	end
+
+
 Lumbridge_SIGN::
 	lock
 	faceplayer
@@ -152,6 +168,38 @@ Lumbridge_EVENT_NPC1_2:
 	lock
 	faceplayer
 	msgbox Lumbridge_EVENT_NPC1_Text_0
+	release
+	end
+
+
+Lumbridge_EVENT_NPC2::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_EVENT_NPC2_2
+	lock
+	faceplayer
+	msgbox Lumbridge_EVENT_NPC2_Text_1
+	release
+	end
+
+Lumbridge_EVENT_NPC2_2:
+	lock
+	faceplayer
+	msgbox Lumbridge_EVENT_NPC2_Text_0
+	release
+	end
+
+
+Lumbridge_EVENT_NPC3::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_EVENT_NPC3_2
+	lock
+	faceplayer
+	msgbox Lumbridge_EVENT_NPC3_Text_1
+	release
+	end
+
+Lumbridge_EVENT_NPC3_2:
+	lock
+	faceplayer
+	msgbox Lumbridge_EVENT_NPC3_Text_0
 	release
 	end
 
@@ -331,23 +379,19 @@ MoveNPCsAfterEvents_Lumbridge::
 MoveNPCsAfterEvents_Lumbridge_1:
 	setobjectxyperm 12, 37, 34
 	setobjectmovementtype 12, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 13, 10, 5
-	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
 	setobjectxyperm 14, 41, 20
 	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 25, 35, 5
+	setobjectxyperm 25, 38, 4
 	setobjectmovementtype 25, MOVEMENT_TYPE_WANDER_AROUND
-	setobjectxyperm 3, 11, 5
+	setobjectxyperm 3, 3, 3
 	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm 13, 2, 3
+	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm 23, 17, 11
+	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 11, 50, 21
+	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_DOWN
 	return
-
-
-Lumbridge_Bridge_NPC1::
-	lock
-	faceplayer
-	msgbox Lumbridge_Bridge_NPC1_Text_0
-	release
-	end
 
 
 Lumbridge_House_NPC1::
@@ -418,6 +462,22 @@ Lumbridge_House_NPC4::
 	end
 
 
+Lumbridge_House_NPC5::
+	lock
+	faceplayer
+	msgbox Lumbridge_House_NPC5_Text_0
+	release
+	end
+
+
+Lumbridge_House_NPC6::
+	lock
+	faceplayer
+	msgbox Lumbridge_House_NPC6_Text_0
+	release
+	end
+
+
 Lumbridge_GeneralStore_MOD_ASH::
 	lock
 	faceplayer
@@ -461,6 +521,12 @@ Lumbridge_House_Roddeck_2:
 CUPHOLDER_NPC_Text_0:
 	.string "I am currently a Cupholder with no\n"
 	.string "dialog.$"
+
+LOCKED_DOOR_Text_0:
+	.string "It is securely locked.$"
+
+COOKING_RANGE_Text_0:
+	.string "Ideal for cooking on.$"
 
 Lumbridge_SIGN_Text_0:
 	.string "Welcome to Lumbridge.\p"
@@ -576,6 +642,24 @@ Lumbridge_EVENT_NPC1_Text_1:
 	.string "sort of fish can be caught in the River\l"
 	.string "Lum.$"
 
+Lumbridge_EVENT_NPC2_Text_0:
+	.string "I really want to meet this professor\n"
+	.string "guy!$"
+
+Lumbridge_EVENT_NPC2_Text_1:
+	.string "I caught myself an Impling!\p"
+	.string "I found it in the wheat fields north of\n"
+	.string "here.$"
+
+Lumbridge_EVENT_NPC3_Text_0:
+	.string "I'm interested in the MvM\n"
+	.string "Championships!$"
+
+Lumbridge_EVENT_NPC3_Text_1:
+	.string "People just run trough this area.\p"
+	.string "They should call it run by the bridge\n"
+	.string "instead of Lumbridge.$"
+
 Lumbridge_Guard_NORTH_Text_0:
 	.string "Pazel$"
 
@@ -602,11 +686,6 @@ Lumbridge_Guard_SOUTH_Text_1:
 	.string "It's quite dangerous even with a\n"
 	.string "monster to protect you.\p"
 	.string "So be careful.$"
-
-Lumbridge_Bridge_NPC1_Text_0:
-	.string "People just run trough this area.\p"
-	.string "They should call it run by the bridge\n"
-	.string "instead of Lumbridge.$"
 
 Lumbridge_House_NPC1_Text_0:
 	.string "The forge broke, so I've sent for a\n"
@@ -656,6 +735,15 @@ Lumbridge_House_NPC3_Text_0:
 Lumbridge_House_NPC4_Text_0:
 	.string "Some monster evolve differently\n"
 	.string "depending on which evolution method.$"
+
+Lumbridge_House_NPC5_Text_0:
+	.string "Luckily monsters only faint.\p"
+	.string "Otherwise we would be overstocked with\n"
+	.string "funeral services.$"
+
+Lumbridge_House_NPC6_Text_0:
+	.string "If you cant rest in a bank try a bed.\p"
+	.string "Some beds are very inviting.$"
 
 Lumbridge_GeneralStore_MOD_ASH_Text_0:
 	.string "Mod Ash$"

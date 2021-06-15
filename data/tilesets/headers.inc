@@ -1052,3 +1052,14 @@ gTileset_Lumbridge_Swamp_Caves::
 	.4byte gMetatiles_Lumbridge_Swamp_Caves
 	.4byte gMetatileAttributes_Lumbridge_Swamp_Caves
 	.4byte NULL
+
+	.align 2
+gTileset_Abyss::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Abyss
+	.4byte gTilesetPalettes_Abyss
+	.4byte gMetatiles_Abyss
+	.4byte gMetatileAttributes_Abyss
+	.4byte NULL

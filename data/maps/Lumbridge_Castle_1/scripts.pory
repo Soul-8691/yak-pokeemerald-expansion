@@ -7,17 +7,88 @@ mapscripts Lumbridge_Castle_1_MapScripts {
 
 
 
-script Lumbridge_Castle_Hans{
+script Lumbridge_Castle_Hans
+{
 	lock
 	faceplayer
+	namebox ("Hans")
 	msgbox(format("I've been patrolling this castle for years!\pI've seen many things in my life time."))
-    release
+	hidenamebox
+	release
 	end
 }
 
 
 
 
+
+script Lumbridge_Castle_NPC1
+{
+	lock
+	faceplayer
+	//namebox ("???")
+	msgbox(format("There is no way to avoid combat in a battle.\pBut you can run from wild battles."))
+	//hidenamebox
+	release
+	end
+}
+
+script Lumbridge_Castle_NPC2
+{
+	lock
+	faceplayer
+	//namebox ("???")
+	msgbox(format("You need money for more pouches?\pSorry I am not doubling money."))
+	//hidenamebox
+	release
+	end
+}
+
+script Lumbridge_Castle_NPC3
+{
+	lock
+	faceplayer
+	//namebox ("???")
+	msgbox(format("The Duke holds power over Lumbridge.\pBut personally I dont think he is that good of a ruler."))
+	//hidenamebox
+	release
+	end
+}
+
+script Lumbridge_Castle_NPC4
+{
+	lock
+	faceplayer
+	//namebox ("???")
+	msgbox(format("The best way to find your enemies type is to just use moves.\pIdentify their weakness!"))
+	//hidenamebox
+	release
+	end
+}
+
+
+script Lumbridge_Castle_NPC5
+{
+	lock
+	faceplayer
+	//namebox ("???")
+	msgbox(format("I need flour from the mill but it is such a long trip."))
+	//hidenamebox
+	release
+	end
+}
+
+
+script Lumbridge_Castle_NPC6
+{
+	lock
+	faceplayer
+	//namebox ("???")
+	msgbox(format("The Duke is sort of like the regional champion around here.\pBetter stay on his good side."))
+	//hidenamebox
+	release
+	end
+}
 
 
 

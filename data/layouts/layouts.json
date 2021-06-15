@@ -6090,6 +6090,26 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Chaos_Tunnels_B1F/border.bin",
       "blockdata_filepath": "data/layouts/Chaos_Tunnels_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ABYSSAL_REALM_1",
+      "name": "Abyssal_Realm_1_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Abyss",
+      "border_filepath": "data/layouts/Abyssal_Realm_1/border.bin",
+      "blockdata_filepath": "data/layouts/Abyssal_Realm_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ABYSSAL_REALM_2",
+      "name": "Abyssal_Realm_2_Layout",
+      "width": 30,
+      "height": 26,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Abyss",
+      "border_filepath": "data/layouts/Abyssal_Realm_2/border.bin",
+      "blockdata_filepath": "data/layouts/Abyssal_Realm_2/map.bin"
     }
   ]
 }

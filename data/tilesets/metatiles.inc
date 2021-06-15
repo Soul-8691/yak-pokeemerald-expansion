@@ -701,3 +701,10 @@ gMetatiles_Lumbridge_Swamp_Caves::
 	.align 1
 gMetatileAttributes_Lumbridge_Swamp_Caves::
 	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/metatile_attributes.bin"
+	.align 1
+gMetatiles_Abyss::
+	.incbin "data/tilesets/secondary/abyss/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Abyss::
+	.incbin "data/tilesets/secondary/abyss/metatile_attributes.bin"

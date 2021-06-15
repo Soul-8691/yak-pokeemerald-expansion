@@ -5,7 +5,57 @@ Lumbridge_Castle_1_MapScripts::
 Lumbridge_Castle_Hans::
 	lock
 	faceplayer
-	msgbox Lumbridge_Castle_Hans_Text_0
+	namebox Lumbridge_Castle_Hans_Text_0
+	msgbox Lumbridge_Castle_Hans_Text_1
+	hidenamebox
+	release
+	end
+
+
+Lumbridge_Castle_NPC1::
+	lock
+	faceplayer
+	msgbox Lumbridge_Castle_NPC1_Text_0
+	release
+	end
+
+
+Lumbridge_Castle_NPC2::
+	lock
+	faceplayer
+	msgbox Lumbridge_Castle_NPC2_Text_0
+	release
+	end
+
+
+Lumbridge_Castle_NPC3::
+	lock
+	faceplayer
+	msgbox Lumbridge_Castle_NPC3_Text_0
+	release
+	end
+
+
+Lumbridge_Castle_NPC4::
+	lock
+	faceplayer
+	msgbox Lumbridge_Castle_NPC4_Text_0
+	release
+	end
+
+
+Lumbridge_Castle_NPC5::
+	lock
+	faceplayer
+	msgbox Lumbridge_Castle_NPC5_Text_0
+	release
+	end
+
+
+Lumbridge_Castle_NPC6::
+	lock
+	faceplayer
+	msgbox Lumbridge_Castle_NPC6_Text_0
 	release
 	end
 
@@ -66,9 +116,40 @@ LumbridgeGym4::
 
 
 Lumbridge_Castle_Hans_Text_0:
+	.string "Hans$"
+
+Lumbridge_Castle_Hans_Text_1:
 	.string "I've been patrolling this castle for\n"
 	.string "years!\p"
 	.string "I've seen many things in my life time.$"
+
+Lumbridge_Castle_NPC1_Text_0:
+	.string "There is no way to avoid combat in a\n"
+	.string "battle.\p"
+	.string "But you can run from wild battles.$"
+
+Lumbridge_Castle_NPC2_Text_0:
+	.string "You need money for more pouches?\p"
+	.string "Sorry I am not doubling money.$"
+
+Lumbridge_Castle_NPC3_Text_0:
+	.string "The Duke holds power over Lumbridge.\p"
+	.string "But personally I dont think he is that\n"
+	.string "good of a ruler.$"
+
+Lumbridge_Castle_NPC4_Text_0:
+	.string "The best way to find your enemies type\n"
+	.string "is to just use moves.\p"
+	.string "Identify their weakness!$"
+
+Lumbridge_Castle_NPC5_Text_0:
+	.string "I need flour from the mill but it is such\n"
+	.string "a long trip.$"
+
+Lumbridge_Castle_NPC6_Text_0:
+	.string "The Duke is sort of like the regional\n"
+	.string "champion around here.\p"
+	.string "Better stay on his good side.$"
 
 Hans_Text_0:
 	.string "Cupholder$"

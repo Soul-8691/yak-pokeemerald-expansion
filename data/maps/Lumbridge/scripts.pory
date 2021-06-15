@@ -13,6 +13,24 @@ script CUPHOLDER_NPC
 	end
 }	
 
+script LOCKED_DOOR
+{
+	lock
+	faceplayer
+	msgbox(format("It is securely locked."))
+	release
+	end
+}
+
+script COOKING_RANGE
+{
+	lock
+	faceplayer
+	msgbox(format("Ideal for cooking on."))
+	release
+	end
+}
+
 script Lumbridge_SIGN
 {
 	lock
@@ -169,6 +187,43 @@ script Lumbridge_EVENT_NPC1
 	release
 	end
 }
+
+script Lumbridge_EVENT_NPC2
+{
+	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+	lock
+	faceplayer
+	msgbox(format("I really want to meet this professor guy!"))
+	release
+	end
+	}
+	lock
+	faceplayer
+	msgbox(format("I caught myself an Impling!\pI found it in the wheat fields north of here."))
+	release
+	end
+}
+
+script Lumbridge_EVENT_NPC3
+{
+	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+	lock
+	faceplayer
+	msgbox(format("I'm interested in the MvM Championships!"))
+	release
+	end
+	}
+	lock
+	faceplayer
+	msgbox(format("People just run trough this area.\pThey should call it run by the bridge instead of Lumbridge."))
+	release
+	end
+}
+
+
+
+
+
 
 //Guardsman Pazel
 script Lumbridge_Guard_NORTH 
@@ -342,17 +397,24 @@ script MoveNPCsAfterEvents_Lumbridge{
         setobjectxyperm(12, 37, 34)
         setobjectmovementtype(12,MOVEMENT_TYPE_FACE_DOWN)
 
-        setobjectxyperm(13, 10, 5)
-        setobjectmovementtype(13,MOVEMENT_TYPE_FACE_RIGHT)
-
         setobjectxyperm(14, 41, 20)
         setobjectmovementtype(14,MOVEMENT_TYPE_FACE_DOWN)
 
-		setobjectxyperm(25, 35, 5)
+		setobjectxyperm(25, 38, 4)
         setobjectmovementtype(25,MOVEMENT_TYPE_WANDER_AROUND)
 
-		setobjectxyperm(3, 11, 5)
+		setobjectxyperm(3, 3, 3)
         setobjectmovementtype(3,MOVEMENT_TYPE_FACE_LEFT)
+
+		setobjectxyperm(13, 2, 3)
+        setobjectmovementtype(13,MOVEMENT_TYPE_FACE_RIGHT)
+
+		setobjectxyperm(23, 17, 11)
+        setobjectmovementtype(13,MOVEMENT_TYPE_FACE_DOWN)
+
+		setobjectxyperm(11, 50, 21)
+        setobjectmovementtype(13,MOVEMENT_TYPE_FACE_DOWN)
+
     }
 }
 //--EVENT---------------------------------------------------------------------------------------
@@ -374,14 +436,7 @@ script MoveNPCsAfterEvents_Lumbridge{
 
 
 
-script Lumbridge_Bridge_NPC1
-{
-	lock
-	faceplayer
-	msgbox(format("People just run trough this area.\pThey should call it run by the bridge instead of Lumbridge."))
-	release
-	end
-}
+
 
 
 //LUMBRIDGE HOUSES---------------------------------
@@ -467,7 +522,27 @@ script Lumbridge_House_NPC4
 }	
 
 
+script Lumbridge_House_NPC5
+{
+	lock
+	faceplayer
+	//namebox ("???")
+	msgbox(format("Luckily monsters only faint.\pOtherwise we would be overstocked with funeral services."))
+	//hidenamebox
+	release
+	end
+}
 
+script Lumbridge_House_NPC6
+{
+	lock
+	faceplayer
+	//namebox ("???")
+	msgbox(format("If you cant rest in a bank try a bed.\pSome beds are very inviting."))
+	//hidenamebox
+	release
+	end
+}
 
 
 

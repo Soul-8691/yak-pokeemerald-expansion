@@ -34,7 +34,9 @@ The_Needle_Clock::
 	compare VAR_POKESCAPE_STARTER_HOUSE_STATE, 1
 	goto_if_eq The_Needle_Clock_2
 The_Needle_Clock_1:
-	msgbox The_Needle_Clock_Text_3
+	compare VAR_POKESCAPE_STARTER_HOUSE_STATE, 0
+	goto_if_eq The_Needle_Clock_5
+The_Needle_Clock_4:
 	release
 	end
 
@@ -43,11 +45,16 @@ The_Needle_Clock_2:
 	msgbox The_Needle_Clock_Text_0
 	msgbox The_Needle_Clock_Text_1, MSGBOX_YESNO
 	compare VAR_RESULT, 1
-	goto_if_eq The_Needle_Clock_4
+	goto_if_eq The_Needle_Clock_7
 	msgbox The_Needle_Clock_Text_2
 	goto The_Needle_Clock_1
 
-The_Needle_Clock_4:
+The_Needle_Clock_5:
+	lock
+	msgbox The_Needle_Clock_Text_3
+	goto The_Needle_Clock_4
+
+The_Needle_Clock_7:
 	clearflag FLAG_SET_WALL_CLOCK
 	goto Set_The_Needle_Clock
 	goto The_Needle_Clock_1

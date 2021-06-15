@@ -40,7 +40,10 @@ script The_Needle_Clock
         msgbox(format("You decided to not touch the clock."))
         }
     }
+    if (var(VAR_POKESCAPE_STARTER_HOUSE_STATE)==0){
+    lock
 	msgbox(format("It's a grandfather clock."))
+    }
 	release
     end
 }

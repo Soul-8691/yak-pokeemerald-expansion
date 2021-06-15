@@ -20,19 +20,19 @@ script Lumbridge_Castle_GUARD{
 script Lumbridge_Castle_HALLWAY_GUARD{
 	lock
 	faceplayer
-	msgbox(format("I'm sorry but this hallway is off limits.\pI'm surpirsed you are talking to be to be honest.\pNo one ever uses this hallway."))
+	msgbox(format("I'm sorry but this hallway is off limits.\pI'm surpirsed you are talking to me to be honest.\pNo one ever uses this hallway."))
 	release
 	end
 }
 script Lumbridge_Castle_HALLWAY_TRIGGER{
 	lock
 	PlaySE(SE_PIN)
-	applymovement(13, Movement_Lumbridge_Castle_HALLWAY_TRIGGER1)
+	applymovement(3, Movement_Lumbridge_Castle_HALLWAY_TRIGGER1)
 	waitmovement(0)
-	msgbox(format("I'm sorry but this hallway is off limits.\pI'm surpirsed you are talking to be to be honest.\pNo one ever uses this hallway."))
+	msgbox(format("I'm sorry but this hallway is off limits."))
 	waitmessage 
 	applymovement(OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_HALLWAY_TRIGGER2)
-    applymovement(13, Movement_Lumbridge_Castle_HALLWAY_TRIGGER3)
+    applymovement(3, Movement_Lumbridge_Castle_HALLWAY_TRIGGER3)
     waitmovement(0)
     release
     end
@@ -48,6 +48,34 @@ movement Movement_Lumbridge_Castle_HALLWAY_TRIGGER3{
 	face_left
 }
 //-----------------------------------------------------------------------
+script Lumbridge_Castle_COOKS_TRIGGER{
+	if(!flag(FLAG_COOKS_ASSIST_STARTED)){
+		lock
+		PlaySE(SE_PIN)
+		applymovement(OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_COOKS_TRIGGER1)
+		waitmovement(0)
+		msgbox(format("REEEEEEEEEEE!"))
+		waitmessage 
+		msgbox(format("You hear a loud noise coming from the kitchen."))
+		waitmessage 
+		applymovement(OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_COOKS_TRIGGER2)
+		waitmovement(0)
+		release
+		end
+	}
+	else{
+		release
+		end
+	}
+}
+
+movement Movement_Lumbridge_Castle_COOKS_TRIGGER1{
+	emote_exclamation_mark
+}
+
+movement Movement_Lumbridge_Castle_COOKS_TRIGGER2{
+	walk_up
+}
 
 
 //-----------------------------------------------------------------------
@@ -662,13 +690,3 @@ text CookItemsListSecond{
 
 
 
-//CASTLE NPCS OUTSIDE ------------------------------------------------------
-
-script Lumbridge_Castle_NPC1
-{
-	lock
-	faceplayer
-	msgbox(format("The Duke is sort of like the regional champion around here.\pBetter stay on his good side."))
-	release
-	end
-}	

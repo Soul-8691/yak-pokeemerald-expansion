@@ -26,12 +26,12 @@ Lumbridge_Castle_HALLWAY_GUARD::
 Lumbridge_Castle_HALLWAY_TRIGGER::
 	lock
 	PlaySE SE_PIN
-	applymovement 13, Movement_Lumbridge_Castle_HALLWAY_TRIGGER1
+	applymovement 3, Movement_Lumbridge_Castle_HALLWAY_TRIGGER1
 	waitmovement 0
-	msgbox Lumbridge_Castle_HALLWAY_GUARD_Text_0
+	msgbox Lumbridge_Castle_HALLWAY_TRIGGER_Text_0
 	waitmessage
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_HALLWAY_TRIGGER2
-	applymovement 13, Movement_Lumbridge_Castle_HALLWAY_TRIGGER3
+	applymovement 3, Movement_Lumbridge_Castle_HALLWAY_TRIGGER3
 	waitmovement 0
 	release
 	end
@@ -48,6 +48,34 @@ Movement_Lumbridge_Castle_HALLWAY_TRIGGER2:
 
 Movement_Lumbridge_Castle_HALLWAY_TRIGGER3:
 	face_left
+	step_end
+
+Lumbridge_Castle_COOKS_TRIGGER::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Castle_COOKS_TRIGGER_1
+	release
+	end
+
+Lumbridge_Castle_COOKS_TRIGGER_1:
+	lock
+	PlaySE SE_PIN
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_COOKS_TRIGGER1
+	waitmovement 0
+	msgbox Lumbridge_Castle_COOKS_TRIGGER_Text_0
+	waitmessage
+	msgbox Lumbridge_Castle_COOKS_TRIGGER_Text_1
+	waitmessage
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_COOKS_TRIGGER2
+	waitmovement 0
+	release
+	end
+
+
+Movement_Lumbridge_Castle_COOKS_TRIGGER1:
+	emote_exclamation_mark
+	step_end
+
+Movement_Lumbridge_Castle_COOKS_TRIGGER2:
+	walk_up
 	step_end
 
 Lumbridge_Castle_Introduction::
@@ -724,23 +752,25 @@ ReturnToCook:
 	walk_right
 	step_end
 
-Lumbridge_Castle_NPC1::
-	lock
-	faceplayer
-	msgbox Lumbridge_Castle_NPC1_Text_0
-	release
-	end
-
-
 Lumbridge_Castle_GUARD_Text_0:
 	.string "I'm on guard duty.\p"
 	.string "Please do not cause any problems.$"
 
 Lumbridge_Castle_HALLWAY_GUARD_Text_0:
 	.string "I'm sorry but this hallway is off limits.\p"
-	.string "I'm surpirsed you are talking to be to\n"
+	.string "I'm surpirsed you are talking to me to\n"
 	.string "be honest.\p"
 	.string "No one ever uses this hallway.$"
+
+Lumbridge_Castle_HALLWAY_TRIGGER_Text_0:
+	.string "I'm sorry but this hallway is off limits.$"
+
+Lumbridge_Castle_COOKS_TRIGGER_Text_0:
+	.string "REEEEEEEEEEE!$"
+
+Lumbridge_Castle_COOKS_TRIGGER_Text_1:
+	.string "You hear a loud noise coming from the\n"
+	.string "kitchen.$"
 
 Lumbridge_Castle_Introduction_Text_0:
 	.string "Hans$"
@@ -946,11 +976,6 @@ CookCake_Text_4:
 
 CheckCookFinished_Text_0:
 	.string "Hey come here!$"
-
-Lumbridge_Castle_NPC1_Text_0:
-	.string "The Duke is sort of like the regional\n"
-	.string "champion around here.\p"
-	.string "Better stay on his good side.$"
 
 CookAssistStartTextFirst::
 	.string "Oh dear.. What am I to do.. I'm in a\n"

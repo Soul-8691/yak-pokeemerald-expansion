@@ -676,6 +676,8 @@
 #define MAP_DWARVEN_MINE_B2F           (17 | (36 << 8))
 #define MAP_VORAGO_CAVERN              (18 | (36 << 8))
 #define MAP_CHAOS_TUNNELS_B1F          (19 | (36 << 8))
+#define MAP_ABYSSAL_REALM_1            (20 | (36 << 8))
+#define MAP_ABYSSAL_REALM_2            (21 | (36 << 8))
 
 // Map Group 37
 #define MAP_TUTORIAL_ISLAND_LAB_UP   (0 | (37 << 8))

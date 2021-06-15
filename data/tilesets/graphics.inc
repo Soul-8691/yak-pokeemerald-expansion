@@ -2130,3 +2130,23 @@ gTilesetPalettes_Lumbridge_Swamp_Caves::
 	.align 2
 gTilesetTiles_Lumbridge_Swamp_Caves::
 	.incbin "data/tilesets/secondary/lumbridge_swamp_caves/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Abyss::
+	.incbin "data/tilesets/secondary/abyss/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/abyss/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/abyss/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/abyss/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/abyss/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/abyss/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/abyss/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/abyss/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/abyss/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/abyss/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/abyss/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/abyss/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/abyss/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Abyss::
+	.incbin "data/tilesets/secondary/abyss/tiles.4bpp.lz"

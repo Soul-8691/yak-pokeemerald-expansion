@@ -1,7 +1,7 @@
 {
-  "id": "MAP_ROUTE41",
-  "name": "Route41",
-  "layout": "LAYOUT_ROUTE41",
+  "id": "MAP_ROUTE42",
+  "name": "Route42",
+  "layout": "LAYOUT_ROUTE42",
   "music": "MUS_PS_VICTORY_ROAD",
   "region_map_section": "MAPSEC_WILDERNESS",
   "requires_flash": false,
@@ -14,23 +14,23 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
-      "offset": 5,
-      "map": "MAP_ROUTE42"
+      "direction": "right",
+      "offset": -5,
+      "map": "MAP_ROUTE41"
     },
     {
-      "direction": "down",
-      "offset": -44,
-      "map": "MAP_ROUTE31"
+      "direction": "left",
+      "offset": 0,
+      "map": "MAP_ROUTE43"
     }
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 17,
-      "y": 19,
+      "graphics_id": "OBJ_EVENT_GFX_pker",
+      "x": 7,
+      "y": 4,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -39,35 +39,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 4,
-      "y": 18,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 18,
-      "y": 12,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_skeleton_1",
-      "x": 9,
-      "y": 24,
+      "graphics_id": "OBJ_EVENT_GFX_pker",
+      "x": 3,
+      "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -78,11 +52,24 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_bot_dragon",
+      "graphics_id": "OBJ_EVENT_GFX_skeleton_2",
       "x": 16,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_skeleton_1",
+      "x": 11,
       "y": 8,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -91,21 +78,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_bot_dragon",
-      "x": 15,
-      "y": 12,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_bot_dragon",
-      "x": 7,
+      "graphics_id": "OBJ_EVENT_GFX_skeleton_2",
+      "x": 13,
       "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
@@ -117,11 +91,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_bot_dragon",
-      "x": 10,
-      "y": 6,
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 8,
+      "y": 2,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -131,20 +105,7 @@
     }
   ],
   "warp_events": [
-    {
-      "x": 10,
-      "y": 32,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE31",
-      "dest_warp_id": 1
-    },
-    {
-      "x": 11,
-      "y": 32,
-      "elevation": 0,
-      "dest_map": "MAP_ROUTE31",
-      "dest_warp_id": 2
-    }
+
   ],
   "coord_events": [
 

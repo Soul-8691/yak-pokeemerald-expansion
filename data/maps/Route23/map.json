@@ -42,7 +42,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_barbarian_male",
-      "x": 44,
+      "x": 43,
       "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -55,7 +55,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_barbarian_female",
-      "x": 36,
+      "x": 35,
       "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -68,7 +68,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_barbarian_female",
-      "x": 37,
+      "x": 38,
       "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -81,21 +81,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_dwarf_1",
-      "x": 25,
-      "y": 12,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_sudo_bash",
-      "x": 10,
-      "y": 10,
+      "x": 28,
+      "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -106,11 +93,24 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_sudo_bash",
-      "x": 33,
-      "y": 8,
+      "graphics_id": "OBJ_EVENT_GFX_pvmer",
+      "x": 10,
+      "y": 10,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_barbarian_male",
+      "x": 30,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",

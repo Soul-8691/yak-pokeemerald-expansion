@@ -6125,11 +6125,31 @@
       "id": "LAYOUT_ROUTE41",
       "name": "Route41_Layout",
       "width": 20,
-      "height": 30,
+      "height": 36,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Route41/border.bin",
       "blockdata_filepath": "data/layouts/Route41/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE42",
+      "name": "Route42_Layout",
+      "width": 22,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Wilderness",
+      "border_filepath": "data/layouts/Route42/border.bin",
+      "blockdata_filepath": "data/layouts/Route42/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE43",
+      "name": "Route43_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Wilderness",
+      "border_filepath": "data/layouts/Route43/border.bin",
+      "blockdata_filepath": "data/layouts/Route43/map.bin"
     }
   ]
 }

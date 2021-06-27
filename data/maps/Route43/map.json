@@ -1,8 +1,8 @@
 {
-  "id": "MAP_ROUTE25",
-  "name": "Route25",
-  "layout": "LAYOUT_ROUTE25",
-  "music": "MUS_PS_ROUTE_ASGARNIA",
+  "id": "MAP_ROUTE43",
+  "name": "Route43",
+  "layout": "LAYOUT_ROUTE43",
+  "music": "MUS_PS_VICTORY_ROAD",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -14,36 +14,16 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
-      "offset": -26,
-      "map": "MAP_ROUTE23"
-    },
-    {
       "direction": "right",
-      "offset": 6,
-      "map": "MAP_BARBARIAN_VILLAGE"
-    },
-    {
-      "direction": "left",
       "offset": 0,
-      "map": "MAP_DWARVEN_MINES"
-    },
-    {
-      "direction": "up",
-      "offset": 0,
-      "map": "MAP_ROUTE27"
-    },
-    {
-      "direction": "left",
-      "offset": -38,
-      "map": "MAP_ROUTE26"
+      "map": "MAP_ROUTE42"
     }
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_barbarian_male",
-      "x": 6,
-      "y": 15,
+      "graphics_id": "OBJ_EVENT_GFX_skeleton_1",
+      "x": 8,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
       "movement_range_x": 0,
@@ -54,9 +34,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_monk",
-      "x": 8,
-      "y": 4,
+      "graphics_id": "OBJ_EVENT_GFX_skeleton_1",
+      "x": 14,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
@@ -67,9 +47,35 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_skiller_1",
-      "x": 15,
-      "y": 9,
+      "graphics_id": "OBJ_EVENT_GFX_dark_wizard",
+      "x": 3,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 11,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_skeleton_1",
+      "x": 14,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
       "movement_range_x": 0,
@@ -80,24 +86,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 11,
-      "y": 16,
+      "graphics_id": "OBJ_EVENT_GFX_skeleton_1",
+      "x": 8,
+      "y": 11,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 11,
-      "y": 17,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",

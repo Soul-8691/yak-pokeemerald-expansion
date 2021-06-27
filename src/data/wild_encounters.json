@@ -11332,6 +11332,71 @@
         {
           "map": "MAP_ROUTE1",
           "base_label": "gRoute10",
+          "wheat_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_LAMB"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_CHICK"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_PIGLET"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_LAMB"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_LAMB"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_PIGLET"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_CHICK"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_IMPLING_BABY_FORM"
+              },
+              {
+                "min_level": 2,
+                "max_level": 10,
+                "species": "SPECIES_IMPLING_BABY_FORM"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 0,
             "mons": [
@@ -11424,71 +11489,6 @@
                 "min_level": 2,
                 "max_level": 5,
                 "species": "SPECIES_PENGLING"
-              }
-            ]
-          },
-          "wheat_mons": {
-            "encounter_rate": 50,
-            "mons": [
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_LAMB"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_SPIDERLING"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_CHICK"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_PIGLET"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_LAMB"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_LAMB"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_PIGLET"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_CHICK"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_IMPLING_BABY_FORM"
-              },
-              {
-                "min_level": 2,
-                "max_level": 10,
-                "species": "SPECIES_IMPLING_BABY_FORM"
               }
             ]
           }
@@ -13405,71 +13405,6 @@
         {
           "map": "MAP_MILL_LANE_MILL",
           "base_label": "gMill_Lane_Mill0",
-          "land_mons": {
-            "encounter_rate": 40,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_LAMB"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_RAT_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CROW"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHICK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHICK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SPIDERLING"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DUCKLING"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_IMP"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BABY_YAK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BABY_YAK"
-              }
-            ]
-          },
           "wheat_mons": {
             "encounter_rate": 40,
             "mons": [
@@ -13527,6 +13462,71 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_PENGLING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BABY_YAK"
+              }
+            ]
+          },
+          "land_mons": {
+            "encounter_rate": 40,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_LAMB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_RAT_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHICK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHICK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DUCKLING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BABY_YAK"
               },
               {
                 "min_level": 5,
@@ -14240,36 +14240,6 @@
               }
             ]
           },
-          "rock_smash_mons": {
-            "encounter_rate": 180,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PET_ROCK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PET_ROCK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_SWAMP_FORM"
-              }
-            ]
-          },
           "land_mons": {
             "encounter_rate": 10,
             "mons": [
@@ -14334,41 +14304,41 @@
                 "species": "SPECIES_STRYKEWYRM_MINI_FORM"
               }
             ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 180,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_SWAMP_FORM"
+              }
+            ]
           }
         },
         {
           "map": "MAP_DWARVEN_MINE_B1F",
           "base_label": "gDwarven_Mine_B1F0",
-          "rock_smash_mons": {
-            "encounter_rate": 0,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          },
           "land_mons": {
             "encounter_rate": 10,
             "mons": [
@@ -14431,6 +14401,174 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_SCORPION_PIT_FORM"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ROUTE41",
+          "base_label": "gRoute410",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAGONLING_GREEN_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAGONLING_GREEN_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAGON_GREEN_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAGON_BRUTAL_GREEN_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HAND_SKELETAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAGON_GREEN_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAGONLING_GREEN_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAGON_GREEN_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAGON_GREEN_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAGON_BRUTAL_GREEN_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAGON_THREEHEADED_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMPLING_DRAGON_FORM"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ROUTE42",
+          "base_label": "gRoute420",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BLOODVELD_RS3_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHINCHOMPA_GOLD_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DAGANNOTH_GUARDIAN_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GIANT_RAT_HELL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GROWLER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HONEY_BADGER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MONKEY_KARAMJA_BABY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MINSTRLWEB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ZARAVEN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_RAT_FUNGAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGICARPET"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GANODERMIC_BEAST"
               }
             ]
           }

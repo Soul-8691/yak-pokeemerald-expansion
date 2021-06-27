@@ -17,6 +17,11 @@
       "direction": "down",
       "offset": 0,
       "map": "MAP_ROUTE30"
+    },
+    {
+      "direction": "up",
+      "offset": 44,
+      "map": "MAP_ROUTE41"
     }
   ],
   "object_events": [
@@ -217,7 +222,27 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 2,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE31",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 44,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE41",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 45,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE41",
+      "dest_warp_id": 1
+    }
   ],
   "coord_events": [
 

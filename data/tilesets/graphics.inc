@@ -2150,3 +2150,43 @@ gTilesetPalettes_Abyss::
 	.align 2
 gTilesetTiles_Abyss::
 	.incbin "data/tilesets/secondary/abyss/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_GoblinVillage::
+	.incbin "data/tilesets/secondary/goblinvillage/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/goblinvillage/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/goblinvillage/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/goblinvillage/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/goblinvillage/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/goblinvillage/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/goblinvillage/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/goblinvillage/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/goblinvillage/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/goblinvillage/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/goblinvillage/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/goblinvillage/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/goblinvillage/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_GoblinVillage::
+	.incbin "data/tilesets/secondary/goblinvillage/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Wilderness::
+	.incbin "data/tilesets/secondary/wilderness/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/wilderness/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/wilderness/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/wilderness/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/wilderness/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/wilderness/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/wilderness/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/wilderness/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/wilderness/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/wilderness/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/wilderness/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/wilderness/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/wilderness/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Wilderness::
+	.incbin "data/tilesets/secondary/wilderness/tiles.4bpp.lz"

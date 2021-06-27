@@ -1063,3 +1063,25 @@ gTileset_Abyss::
 	.4byte gMetatiles_Abyss
 	.4byte gMetatileAttributes_Abyss
 	.4byte NULL
+
+	.align 2
+gTileset_GoblinVillage::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_GoblinVillage
+	.4byte gTilesetPalettes_GoblinVillage
+	.4byte gMetatiles_GoblinVillage
+	.4byte gMetatileAttributes_GoblinVillage
+	.4byte NULL
+
+	.align 2
+gTileset_Wilderness::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Wilderness
+	.4byte gTilesetPalettes_Wilderness
+	.4byte gMetatiles_Wilderness
+	.4byte gMetatileAttributes_Wilderness
+	.4byte NULL

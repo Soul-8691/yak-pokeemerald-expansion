@@ -4977,7 +4977,7 @@
       "width": 44,
       "height": 38,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Falador",
+      "secondary_tileset": "gTileset_GoblinVillage",
       "border_filepath": "data/layouts/GoblinVillage/border.bin",
       "blockdata_filepath": "data/layouts/GoblinVillage/map.bin"
     },
@@ -5075,9 +5075,9 @@
       "id": "LAYOUT_ROUTE31",
       "name": "Route31_Layout",
       "width": 50,
-      "height": 24,
+      "height": 26,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Falador",
+      "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Route31/border.bin",
       "blockdata_filepath": "data/layouts/Route31/map.bin"
     },
@@ -6110,6 +6110,26 @@
       "secondary_tileset": "gTileset_Abyss",
       "border_filepath": "data/layouts/Abyssal_Realm_2/border.bin",
       "blockdata_filepath": "data/layouts/Abyssal_Realm_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE40",
+      "name": "Route40_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/Route40/border.bin",
+      "blockdata_filepath": "data/layouts/Route40/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE41",
+      "name": "Route41_Layout",
+      "width": 20,
+      "height": 30,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Wilderness",
+      "border_filepath": "data/layouts/Route41/border.bin",
+      "blockdata_filepath": "data/layouts/Route41/map.bin"
     }
   ]
 }

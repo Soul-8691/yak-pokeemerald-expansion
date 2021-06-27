@@ -1,4 +1,16 @@
 mapscripts Mill_Lane_Mill_MapScripts {
+
+    MAP_SCRIPT_ON_TRANSITION{
+    clearflag(FLAG_ITEM_REPEATABLE_ITEM_1)
+    clearflag(FLAG_ITEM_REPEATABLE_ITEM_2)
+    clearflag(FLAG_ITEM_REPEATABLE_ITEM_3)
+    clearflag(FLAG_ITEM_REPEATABLE_ITEM_4)
+    clearflag(FLAG_ITEM_REPEATABLE_ITEM_5)
+    clearflag(FLAG_ITEM_REPEATABLE_ITEM_6)
+    clearflag(FLAG_ITEM_REPEATABLE_ITEM_7)
+    clearflag(FLAG_ITEM_REPEATABLE_ITEM_8)
+    clearflag(FLAG_ITEM_REPEATABLE_ITEM_9)
+    } 
     
 }
 
@@ -27,9 +39,11 @@ script BEEFY_BILL_MILL_LANE_MILL {
     namebox ("William Whitebred")
     msgbox(format("Welcome to Beefy Bill's Supplies!\pCare to take a look at my stock?"))
     waitmessage
+    hidenamebox
     pokemart (GeneralStoreBeefyBill)
     msgbox("Thank you, come again!")
     release
+    end
 }
 
 raw `
@@ -46,6 +60,19 @@ GeneralStoreBeefyBill:
 
 `
 
+script GNOME_MILL_LANE_MILL{
+    lock
+    faceplayer
+    namebox ("Avlafrim")
+    msgbox(format("Have you ever wish to fly of to the faroff locations of Pokescape?\pMeet new challenges and Monsters?\pHere is where I put my gnomecopter, but it needs repair.\pI need T.R.A.S.H. and then I can bring you to some places where I can land with my copter."))
+    msgbox(format("T.R.A.S.H. is the next generation of lightweight ropes.\pTriple Redundant Aero Super Hawser.\pHowever I am unsure where to get these.\pI am unused to Human Lands and as my Terrorbird broke a leg going back to the Grand Tree would take me forever!\pContinue your adventure and you might find T.R.A.S.H. on your path."))
+    hidenamebox
+    release
+    end
+}
+
+
+
 
 //TRAINER BATTLES-----------------------------------------
 
@@ -58,3 +85,107 @@ script Trainer1_MillLaneMill_Battle
     release
     end
 }
+
+
+
+script MillLaneMill_Item_PURPLE_SWEETS
+{
+    finditem(ITEM_PURPLE_SWEETS)
+    end
+}
+
+
+
+
+
+script MillLaneMill_Item_WHEAT1{
+    msgbox(format("You search the sack...\p..."))
+	if(!flag(FLAG_ITEM_REPEATABLE_ITEM_1)){
+		lock
+		giveitem(ITEM_WHEAT)
+        setflag(FLAG_ITEM_REPEATABLE_ITEM_1)
+		release
+		end
+	}
+	else{
+        msgbox(format("The sack is empty."))
+		release
+		end
+	}
+}
+
+
+script MillLaneMill_Item_WHEAT2{
+    msgbox(format("You search the sack...\p..."))
+	if(!flag(FLAG_ITEM_REPEATABLE_ITEM_2)){
+		lock
+		giveitem(ITEM_WHEAT)
+        setflag(FLAG_ITEM_REPEATABLE_ITEM_2)
+		release
+		end
+	}
+	else{
+        msgbox(format("The sack is empty."))
+		release
+		end
+	}
+}
+
+
+script MillLaneMill_Item_WHEAT3{
+    msgbox(format("You search the sack...\p..."))
+	if(!flag(FLAG_ITEM_REPEATABLE_ITEM_3)){
+		lock
+		giveitem(ITEM_WHEAT)
+        setflag(FLAG_ITEM_REPEATABLE_ITEM_3)
+		release
+		end
+	}
+	else{
+        msgbox(format("The sack is empty."))
+		release
+		end
+	}
+}
+
+
+script MillLaneMill_Item_WHEAT4{
+    msgbox(format("You search the sack...\p..."))
+	if(!flag(FLAG_ITEM_REPEATABLE_ITEM_4)){
+		lock
+		giveitem(ITEM_WHEAT)
+        setflag(FLAG_ITEM_REPEATABLE_ITEM_4)
+		release
+		end
+	}
+	else{
+        msgbox(format("The sack is empty."))
+		release
+		end
+	}
+}
+
+
+script MillLaneMill_Item_WHEAT5{
+    msgbox(format("You search the sack...\p..."))
+	if(!flag(FLAG_ITEM_REPEATABLE_ITEM_5)){
+		lock
+		giveitem(ITEM_WHEAT)
+        setflag(FLAG_ITEM_REPEATABLE_ITEM_5)
+		release
+		end
+	}
+	else{
+        msgbox(format("The sack is empty."))
+		release
+		end
+	}
+}
+
+
+
+
+
+
+
+			

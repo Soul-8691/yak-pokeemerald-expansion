@@ -708,3 +708,17 @@ gMetatiles_Abyss::
 	.align 1
 gMetatileAttributes_Abyss::
 	.incbin "data/tilesets/secondary/abyss/metatile_attributes.bin"
+	.align 1
+gMetatiles_GoblinVillage::
+	.incbin "data/tilesets/secondary/goblinvillage/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_GoblinVillage::
+	.incbin "data/tilesets/secondary/goblinvillage/metatile_attributes.bin"
+	.align 1
+gMetatiles_Wilderness::
+	.incbin "data/tilesets/secondary/wilderness/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Wilderness::
+	.incbin "data/tilesets/secondary/wilderness/metatile_attributes.bin"

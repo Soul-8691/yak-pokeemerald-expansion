@@ -654,6 +654,8 @@
 #define MAP_ROUTE37 (36 | (35 << 8))
 #define MAP_ROUTE38 (37 | (35 << 8))
 #define MAP_ROUTE39 (38 | (35 << 8))
+#define MAP_ROUTE40 (39 | (35 << 8))
+#define MAP_ROUTE41 (40 | (35 << 8))
 
 // Map Group 36
 #define MAP_TUTORIAL_ISLAND_CAVE       (0 | (36 << 8))

@@ -1393,3 +1393,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Abyssal_Realm_1/scripts.inc"
 
 	.include "data/maps/Abyssal_Realm_2/scripts.inc"
+
+	.include "data/maps/Route40/scripts.inc"
+
+	.include "data/maps/Route41/scripts.inc"

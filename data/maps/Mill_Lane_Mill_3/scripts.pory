@@ -10,6 +10,7 @@ script Millie_Miller{
         if (var(VAR_RESULT) == FALSE){
         msgbox(format("Welcome to Mill Lane Mill!\pI heard that you were after some of our flour.\pTehehehehe.\pI can give you some if you want.."))
         trainerbattle_single(TRAINER_MILLIE_MILLER_MILLLANEMILL,format("But you'll have to battle me for it.\pTeheehehe!"),format("I was so close!"),GiveQuestWheat)
+        hidenamebox
         release
         end
     }
@@ -52,4 +53,15 @@ MillLaneMillFlourShop:
     end
 
 `
+
+
+
+script MillLaneMill_Item_FLOUR_POT
+{
+    finditem(ITEM_FLOUR_POT)
+    end
+}
+
+
+
 

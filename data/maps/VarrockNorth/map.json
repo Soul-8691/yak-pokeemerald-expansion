@@ -2,7 +2,7 @@
   "id": "MAP_VARROCK_NORTH",
   "name": "VarrockNorth",
   "layout": "LAYOUT_VARROCK_NORTH",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_ROUTE_MISTHALIN",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

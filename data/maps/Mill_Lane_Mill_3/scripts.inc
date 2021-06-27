@@ -18,6 +18,7 @@ Millie_Miller::
 Millie_Miller_1:
 	msgbox Millie_Miller_Text_1
 	trainerbattle_single TRAINER_MILLIE_MILLER_MILLLANEMILL, Millie_Miller_Text_2, Millie_Miller_Text_3, GiveQuestWheat
+	hidenamebox
 	release
 	end
 
@@ -42,6 +43,11 @@ MillLaneMillFlourShop:
 
     release
     end
+
+MillLaneMill_Item_FLOUR_POT::
+	finditem ITEM_FLOUR_POT
+	end
+
 
 Millie_Miller_Text_0:
 	.string "Millie Miller$"

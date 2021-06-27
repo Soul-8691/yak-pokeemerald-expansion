@@ -32,6 +32,11 @@
       "direction": "up",
       "offset": 0,
       "map": "MAP_DWARVEN_MINES"
+    },
+    {
+      "direction": "down",
+      "offset": 44,
+      "map": "MAP_ROUTE40"
     }
   ],
   "object_events": [

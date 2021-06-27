@@ -11362,71 +11362,6 @@
               }
             ]
           },
-          "wheat_mons": {
-            "encounter_rate": 50,
-            "mons": [
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_LAMB"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_SPIDERLING"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_CHICK"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_PIGLET"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_LAMB"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_LAMB"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_PIGLET"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_CHICK"
-              },
-              {
-                "min_level": 2,
-                "max_level": 5,
-                "species": "SPECIES_IMPLING_BABY_FORM"
-              },
-              {
-                "min_level": 2,
-                "max_level": 10,
-                "species": "SPECIES_IMPLING_BABY_FORM"
-              }
-            ]
-          },
           "land_mons": {
             "encounter_rate": 20,
             "mons": [
@@ -11489,6 +11424,71 @@
                 "min_level": 2,
                 "max_level": 5,
                 "species": "SPECIES_PENGLING"
+              }
+            ]
+          },
+          "wheat_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_LAMB"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_CHICK"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_PIGLET"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_LAMB"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_LAMB"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_PIGLET"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_CHICK"
+              },
+              {
+                "min_level": 2,
+                "max_level": 5,
+                "species": "SPECIES_IMPLING_BABY_FORM"
+              },
+              {
+                "min_level": 2,
+                "max_level": 10,
+                "species": "SPECIES_IMPLING_BABY_FORM"
               }
             ]
           }
@@ -13405,71 +13405,6 @@
         {
           "map": "MAP_MILL_LANE_MILL",
           "base_label": "gMill_Lane_Mill0",
-          "wheat_mons": {
-            "encounter_rate": 40,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CALF"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_LAMB"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHICK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SPIDERLING"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_IMPLING_BABY_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_IMPLING_BABY_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_LAMB"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHICK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SPIDERLING"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PENGLING"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BABY_YAK"
-              }
-            ]
-          },
           "land_mons": {
             "encounter_rate": 40,
             "mons": [
@@ -13527,6 +13462,71 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_BABY_YAK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BABY_YAK"
+              }
+            ]
+          },
+          "wheat_mons": {
+            "encounter_rate": 40,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CALF"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_LAMB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHICK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMPLING_BABY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMPLING_BABY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_LAMB"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CHICK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SPIDERLING"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PENGLING"
               },
               {
                 "min_level": 5,
@@ -14210,36 +14210,6 @@
               }
             ]
           },
-          "rock_smash_mons": {
-            "encounter_rate": 180,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PET_ROCK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PET_ROCK"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_ROCK_CRAB_SWAMP_FORM"
-              }
-            ]
-          },
           "water_mons": {
             "encounter_rate": 4,
             "mons": [
@@ -14267,6 +14237,36 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_GOBLINFISH"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 180,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_SWAMP_FORM"
               }
             ]
           },

@@ -9,7 +9,7 @@ script NPC_SHEEP
 	lock
 	faceplayer
     playmoncry(SPECIES_MAREEP, 0)
-	msgbox(format("BAAA."))
+	msgbox(format("BAAA!"))
     waitmoncry
 	release
 	end
@@ -75,7 +75,14 @@ script TryMoveCowBlockersRoute1{
 }
 
 
-
+script THEIF_ROUTE_1
+{
+	lock
+    faceplayer
+	msgbox(format("Nothing to see here kid.\pSHOOO!"))
+	release
+	end
+}
 
 
 

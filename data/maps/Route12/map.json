@@ -92,9 +92,9 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_goblin_1",
       "x": 27,
-      "y": 56,
+      "y": 59,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -117,8 +117,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_goblin_1",
-      "x": 22,
-      "y": 45,
+      "x": 21,
+      "y": 46,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -130,8 +130,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_goblin_1",
-      "x": 24,
-      "y": 32,
+      "x": 25,
+      "y": 31,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
@@ -143,7 +143,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_chicken",
-      "x": 16,
+      "x": 18,
       "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -196,7 +196,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_farmer_male",
       "x": 16,
-      "y": 7,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -208,8 +208,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_goblin_1",
-      "x": 27,
-      "y": 6,
+      "x": 26,
+      "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
       "movement_range_x": 0,
@@ -221,8 +221,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_sheep",
-      "x": 32,
-      "y": 2,
+      "x": 33,
+      "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -338,7 +338,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_farmer_female",
-      "x": 28,
+      "x": 29,
       "y": 28,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -351,7 +351,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_cow",
-      "x": 27,
+      "x": 28,
       "y": 28,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -361,15 +361,127 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MilkCow",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 13,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 35,
+      "y": 43,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 35,
+      "y": 17,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 36,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 10,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 34,
+      "y": 60,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_imp",
+      "x": 20,
+      "y": 58,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
-
+    {
+      "x": 13,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE1_HOUSE_1",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 42,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LOCKED_DOOR"
+    },
+    {
+      "type": "sign",
+      "x": 30,
+      "y": 52,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    }
   ]
 }

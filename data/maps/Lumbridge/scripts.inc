@@ -388,9 +388,9 @@ MoveNPCsAfterEvents_Lumbridge_1:
 	setobjectxyperm 13, 2, 3
 	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
 	setobjectxyperm 23, 17, 11
-	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_DOWN
+	setobjectmovementtype 23, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 11, 50, 21
-	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_DOWN
+	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
 	return
 
 

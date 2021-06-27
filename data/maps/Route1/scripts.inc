@@ -75,6 +75,14 @@ TryMoveCowBlockersRoute1_1:
 	return
 
 
+THEIF_ROUTE_1::
+	lock
+	faceplayer
+	msgbox THEIF_ROUTE_1_Text_0
+	release
+	end
+
+
 Wartfoot_Route1_Battle::
 	trainerbattle_single TRAINER_GOBLIN_1_ROUTE1, Wartfoot_Route1_Battle_Text_0, Wartfoot_Route1_Battle_Text_1
 	namebox Wartfoot_Route1_Battle_Text_2
@@ -187,7 +195,7 @@ GenericCowMoo::
 
 
 NPC_SHEEP_Text_0:
-	.string "BAAA.$"
+	.string "BAAA!$"
 
 NPC_COW_Text_0:
 	.string "MOOO!$"
@@ -211,6 +219,10 @@ Route1FarmerBlocking_Text_0:
 
 Route1FarmerBlocking_Text_1:
 	.string "I finally got my Cows out of the way.$"
+
+THEIF_ROUTE_1_Text_0:
+	.string "Nothing to see here kid.\p"
+	.string "SHOOO!$"
 
 Wartfoot_Route1_Battle_Text_0:
 	.string "Brown armour best!$"

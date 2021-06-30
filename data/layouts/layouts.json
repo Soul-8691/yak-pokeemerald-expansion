@@ -4894,7 +4894,7 @@
     {
       "id": "LAYOUT_ROUTE18",
       "name": "Route18_Layout",
-      "width": 38,
+      "width": 36,
       "height": 28,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Varrock",
@@ -4904,7 +4904,7 @@
     {
       "id": "LAYOUT_ROUTE19",
       "name": "Route19_Layout",
-      "width": 28,
+      "width": 26,
       "height": 18,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Windmill",
@@ -4914,17 +4914,17 @@
     {
       "id": "LAYOUT_ROUTE20",
       "name": "Route20_Layout",
-      "width": 26,
+      "width": 28,
       "height": 64,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Draynor",
+      "secondary_tileset": "gTileset_Barbarian_Village",
       "border_filepath": "data/layouts/Route20/border.bin",
       "blockdata_filepath": "data/layouts/Route20/map.bin"
     },
     {
       "id": "LAYOUT_ROUTE21",
       "name": "Route21_Layout",
-      "width": 38,
+      "width": 36,
       "height": 18,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Varrock",
@@ -4947,7 +4947,7 @@
       "width": 28,
       "height": 42,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Lumbridge",
+      "secondary_tileset": "gTileset_Barbarian_Village",
       "border_filepath": "data/layouts/BarbarianVillage/border.bin",
       "blockdata_filepath": "data/layouts/BarbarianVillage/map.bin"
     },
@@ -4957,7 +4957,7 @@
       "width": 52,
       "height": 26,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Varrock",
+      "secondary_tileset": "gTileset_Barbarian_Village",
       "border_filepath": "data/layouts/Route23/border.bin",
       "blockdata_filepath": "data/layouts/Route23/map.bin"
     },
@@ -5177,7 +5177,7 @@
       "width": 40,
       "height": 42,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Draynor",
+      "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/Route38/border.bin",
       "blockdata_filepath": "data/layouts/Route38/map.bin"
     },

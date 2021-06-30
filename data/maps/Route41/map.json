@@ -79,8 +79,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_bot_dragon",
-      "x": 16,
-      "y": 8,
+      "x": 17,
+      "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
@@ -119,7 +119,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_bot_dragon",
       "x": 10,
-      "y": 6,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 0,

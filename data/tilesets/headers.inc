@@ -1085,3 +1085,14 @@ gTileset_Wilderness::
 	.4byte gMetatiles_Wilderness
 	.4byte gMetatileAttributes_Wilderness
 	.4byte NULL
+
+	.align 2
+gTileset_Barbarian_Village::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Barbarian_Village
+	.4byte gTilesetPalettes_Barbarian_Village
+	.4byte gMetatiles_Barbarian_Village
+	.4byte gMetatileAttributes_Barbarian_Village
+	.4byte NULL

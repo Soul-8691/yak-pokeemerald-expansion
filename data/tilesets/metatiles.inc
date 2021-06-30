@@ -722,3 +722,10 @@ gMetatiles_Wilderness::
 	.align 1
 gMetatileAttributes_Wilderness::
 	.incbin "data/tilesets/secondary/wilderness/metatile_attributes.bin"
+	.align 1
+gMetatiles_Barbarian_Village::
+	.incbin "data/tilesets/secondary/barbarian_village/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Barbarian_Village::
+	.incbin "data/tilesets/secondary/barbarian_village/metatile_attributes.bin"

@@ -6150,6 +6150,16 @@
       "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Route43/border.bin",
       "blockdata_filepath": "data/layouts/Route43/map.bin"
+    },
+    {
+      "id": "LAYOUT_RELLEKKA",
+      "name": "Rellekka_Layout",
+      "width": 70,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Barbarian_Village",
+      "border_filepath": "data/layouts/Rellekka/border.bin",
+      "blockdata_filepath": "data/layouts/Rellekka/map.bin"
     }
   ]
 }

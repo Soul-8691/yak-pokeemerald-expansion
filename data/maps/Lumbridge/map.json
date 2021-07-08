@@ -42,10 +42,10 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_farmer_female",
-      "x": 14,
-      "y": 13,
+      "x": 6,
+      "y": 12,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -55,10 +55,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_woman_1",
-      "x": 15,
+      "x": 6,
       "y": 13,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -82,7 +82,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_bob",
       "x": 32,
-      "y": 18,
+      "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
@@ -107,10 +107,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ironman",
-      "x": 29,
-      "y": 10,
+      "x": 22,
+      "y": 13,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -121,7 +121,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_dark_wizard",
       "x": 29,
-      "y": 22,
+      "y": 23,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -132,9 +132,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_bot_dragon",
-      "x": 38,
-      "y": 16,
+      "graphics_id": "OBJ_EVENT_GFX_bob",
+      "x": 40,
+      "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_RIGHT",
       "movement_range_x": 0,
@@ -172,8 +172,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_man_1",
-      "x": 34,
-      "y": 27,
+      "x": 28,
+      "y": 28,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -186,7 +186,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_guard_1",
       "x": 35,
-      "y": 34,
+      "y": 33,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 9,
@@ -211,7 +211,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_guard_1",
-      "x": 43,
+      "x": 44,
       "y": 22,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -224,8 +224,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_rat",
-      "x": 24,
-      "y": 37,
+      "x": 23,
+      "y": 38,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 9,
@@ -237,8 +237,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_raven",
-      "x": 49,
-      "y": 39,
+      "x": 48,
+      "y": 38,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -264,7 +264,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_raven",
       "x": 46,
-      "y": 32,
+      "y": 31,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -276,7 +276,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_rat",
-      "x": 29,
+      "x": 27,
       "y": 39,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -289,8 +289,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_imp",
-      "x": 37,
-      "y": 9,
+      "x": 39,
+      "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 33,
@@ -302,8 +302,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 46,
-      "y": 28,
+      "x": 48,
+      "y": 29,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -328,7 +328,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_farmer_male",
-      "x": 32,
+      "x": 29,
       "y": 26,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -341,8 +341,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_skiller_1",
-      "x": 33,
-      "y": 31,
+      "x": 32,
+      "y": 33,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 0,
@@ -364,33 +364,46 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Lumbridge_EVENT_NPC1",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 33,
+      "y": 45,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 8,
+      "x": 12,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_STARTER1",
       "dest_warp_id": 1
     },
     {
-      "x": 28,
-      "y": 34,
+      "x": 27,
+      "y": 35,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_1",
       "dest_warp_id": 1
     },
     {
-      "x": 35,
+      "x": 36,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_RODDECK1",
       "dest_warp_id": 0
     },
     {
-      "x": 5,
-      "y": 12,
+      "x": 9,
+      "y": 13,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_STARTER2",
       "dest_warp_id": 1
@@ -403,22 +416,22 @@
       "dest_warp_id": 0
     },
     {
-      "x": 31,
-      "y": 34,
+      "x": 30,
+      "y": 35,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_BOBS_AXES1",
       "dest_warp_id": 0
     },
     {
-      "x": 33,
-      "y": 37,
+      "x": 31,
+      "y": 40,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_3",
       "dest_warp_id": 0
     },
     {
-      "x": 34,
-      "y": 37,
+      "x": 7,
+      "y": 33,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_3",
       "dest_warp_id": 0
@@ -484,21 +497,28 @@
     {
       "type": "weather",
       "x": 42,
-      "y": 43,
+      "y": 51,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
     },
     {
       "type": "weather",
       "x": 43,
-      "y": 43,
+      "y": 51,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
     },
     {
       "type": "weather",
-      "x": 36,
-      "y": 36,
+      "x": 35,
+      "y": 35,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_SUNNY"
+    },
+    {
+      "type": "weather",
+      "x": 35,
+      "y": 34,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
@@ -507,19 +527,12 @@
       "x": 36,
       "y": 35,
       "elevation": 0,
-      "weather": "COORD_EVENT_WEATHER_SUNNY"
-    },
-    {
-      "type": "weather",
-      "x": 37,
-      "y": 36,
-      "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
     },
     {
       "type": "weather",
-      "x": 37,
-      "y": 35,
+      "x": 36,
+      "y": 34,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
     },
@@ -543,7 +556,7 @@
     },
     {
       "type": "trigger",
-      "x": 43,
+      "x": 44,
       "y": 21,
       "elevation": 0,
       "var": "VAR_TEMP_0",
@@ -552,7 +565,7 @@
     },
     {
       "type": "trigger",
-      "x": 43,
+      "x": 44,
       "y": 23,
       "elevation": 0,
       "var": "VAR_TEMP_0",
@@ -562,7 +575,7 @@
     {
       "type": "trigger",
       "x": 35,
-      "y": 35,
+      "y": 34,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
@@ -571,7 +584,7 @@
     {
       "type": "trigger",
       "x": 35,
-      "y": 36,
+      "y": 35,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",

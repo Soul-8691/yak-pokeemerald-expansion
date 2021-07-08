@@ -4415,7 +4415,7 @@
       "id": "LAYOUT_LUMBRIDGE",
       "name": "Lumbridge_Layout",
       "width": 62,
-      "height": 44,
+      "height": 52,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Lumbridge",
       "border_filepath": "data/layouts/Lumbridge/border.bin",
@@ -4427,7 +4427,7 @@
       "width": 80,
       "height": 34,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Windmill",
+      "secondary_tileset": "gTileset_Lumbridge",
       "border_filepath": "data/layouts/Route1/border.bin",
       "blockdata_filepath": "data/layouts/Route1/map.bin"
     },

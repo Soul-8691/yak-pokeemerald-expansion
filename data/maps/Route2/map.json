@@ -19,11 +19,6 @@
       "map": "MAP_DRAYNOR"
     },
     {
-      "direction": "right",
-      "offset": 6,
-      "map": "MAP_LUMBRIDGE_SWAMP"
-    },
-    {
       "direction": "left",
       "offset": -26,
       "map": "MAP_PORT_SARIM"

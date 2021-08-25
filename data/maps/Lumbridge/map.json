@@ -465,7 +465,7 @@
       "dest_warp_id": 9
     },
     {
-      "x": 28,
+      "x": 29,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_4",
@@ -489,7 +489,7 @@
       "x": 42,
       "y": 29,
       "elevation": 0,
-      "dest_map": "MAP_VARROCK_PUB_1F",
+      "dest_map": "MAP_LUMBRIDGE_CHURCH",
       "dest_warp_id": 0
     }
   ],

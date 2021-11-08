@@ -112,8 +112,12 @@
 #define FLAG_UNUSED_0x04E    0x4E // Unused Flag
 #define FLAG_UNUSED_0x04F    0x4F // Unused Flag
 
+
+//POKESCAPE STORYLINE FLAGS
+#define FLAG_EVENT_PORTSARIM_HAM_BOAT  0x50    //FLAG_HIDE_RAYQUAZA_SKY_TOWER_SUMMIT
+
+
 // Scripts
-#define FLAG_HIDE_RAYQUAZA_SKY_TOWER_SUMMIT  0x50
 #define FLAG_SET_WALL_CLOCK                  0x51
 #define FLAG_RESCUED_BIRCH                   0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS       0x53

@@ -1,0 +1,178 @@
+mapscripts Port_Sarim_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION{
+    }
+} 
+
+
+
+//HAM EVENT
+script Port_Sarim_HAM_EVENT_TRIGGER{
+	if (!flag(FLAG_EVENT_PORTSARIM_HAM_BOAT)){
+		lock
+        //---MOVE CAMERA OVER TO HAM---
+        delay(60)
+        special(SpawnCameraObject) 
+        //---------------------------------------------------------CHECK PLAYER POSITION--------Apply movement based on position---------------------------------
+        applymovement(OBJ_EVENT_ID_CAMERA, PORTSARIM_HAM_CAMERA_1)
+        delay(40)
+        playbgm (MUS_ENCOUNTER_AQUA, 1)
+        waitmovement(0)
+        special(RemoveCameraObject) 
+        delay(60)
+        //------------------------------
+		PlaySE(SE_PIN)
+		applymovement(25, PORTSARIM_HAM_LEADER_1)
+		namebox ("H.A.M Leader")
+		msgbox(format("It's about time you got here rookie!\pWhat took you so long!\pDo you have the package?!"))
+        waitmovement(0)
+		waitmessage 
+		hidenamebox
+        applymovement(21, PORTSARIM_HAM_MEMBER_2)
+        namebox ("H.A.M Member")
+		msgbox(format("Sorry Leader!\pI lost the goods...\p Some pesky adventurers-"))
+        waitmovement(0)
+        waitmessage 
+		hidenamebox
+        applymovement(25, PORTSARIM_HAM_LEADER_3)
+        namebox ("H.A.M Leader")
+		msgbox(format("YOU WHAT?!\p I DON'T WANT TO HEAR IT!\pWe are already behind schedule so we will have to talk about this later!"))
+		waitmovement(0)
+        waitmessage 
+		hidenamebox
+        namebox ("H.A.M Member")
+		msgbox(format("..."))
+        waitmessage 
+		hidenamebox
+        namebox ("H.A.M Leader")
+		msgbox(format("Alright grunts!\pWe are moving out to Karamja for our next mission!\pEveryone on the ship!"))
+		waitmessage 
+		hidenamebox
+        closemessage
+		applymovement(25, PORTSARIM_HAM_LEADER_4)
+        waitmovement(0)
+        fadescreen(FADE_TO_BLACK)
+        removeobject(21)
+        removeobject(22)
+        removeobject(23)
+        removeobject(24)
+        removeobject(25)
+        removeobject(26)
+        setflag(FLAG_EVENT_PORTSARIM_HAM_BOAT)
+        fadescreen(FADE_FROM_BLACK)
+        applymovement(27, PORTSARIM_HAM_BOAT)
+        waitmovement(0)
+        removeobject(27)
+        //---MOVE CAMERA BACK FROM HAM---
+        delay(10)
+        savebgm(MUS_DUMMY)
+	    fadedefaultbgm
+        special(SpawnCameraObject) 
+        //---------------------------------------------------------CHECK PLAYER POSITION--------Apply movement based on position---------------------------------
+        applymovement(OBJ_EVENT_ID_CAMERA, PORTSARIM_HAM_CAMERA_2)
+        waitmovement(0)
+        special(RemoveCameraObject) 
+        delay(20)
+        //------------------------------
+        
+        release
+        end
+	}
+	release
+    end
+}
+movement PORTSARIM_HAM_LEADER_1{
+	emote_exclamation_mark
+    delay_8
+    walk_in_place_left
+    walk_in_place_left
+}
+movement PORTSARIM_HAM_MEMBER_2{
+    jump_in_place_right
+    jump_in_place_right
+    delay_4
+	walk_in_place_right
+}
+movement PORTSARIM_HAM_LEADER_3{
+	jump_in_place_left
+}
+movement PORTSARIM_HAM_LEADER_4{
+	face_down
+}
+movement PORTSARIM_HAM_BOAT{
+	walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+}
+
+movement PORTSARIM_HAM_CAMERA_1{
+    walk_slow_right
+    walk_slow_diag_southeast
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+	step_end
+}
+movement PORTSARIM_HAM_CAMERA_2{
+    walk_slow_left
+    walk_slow_left
+    walk_slow_left
+    walk_slow_left
+    walk_slow_left
+    walk_slow_diag_northwest
+    walk_slow_left
+	step_end
+}
+
+
+
+
+
+script NPC_PORTSARIM_MONK_1
+{
+	lock
+	faceplayer
+    namebox ("Monk")
+	msgbox(format("Those disrepectful scrubs stole me ship.\pAtleast they didn't steal me Peeko."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_SEAGULL_PEEKO
+{
+	lock
+	faceplayer
+    namebox ("Peeko")
+	msgbox(format("AVAARST'YEE'DAWGZ!\pHAVEEATMEEE!"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+script NPC_FLAGRESETER
+{
+	lock
+	faceplayer
+    playmoncry(SPECIES_MAREEP, 0)
+    clearflag(FLAG_EVENT_PORTSARIM_HAM_BOAT)
+	msgbox(format("Your flag is now reset!"))
+    waitmoncry
+    waitmessage
+	release
+	end
+}
+
+
+

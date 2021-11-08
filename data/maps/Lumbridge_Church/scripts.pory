@@ -154,6 +154,7 @@ script GnomeBoi_Kevin
 		case 6:
 			msgbox ("Heres some candy!")
 			additem (ITEM_PURPLE_SWEETS, 100)
+			additem (ITEM_FRAGMENT_OF_JAS, 5)
 			release
 		case 7:
 			release

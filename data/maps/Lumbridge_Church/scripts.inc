@@ -152,6 +152,7 @@ GnomeBoi_Kevin_8:
 GnomeBoi_Kevin_9:
 	msgbox GnomeBoi_Kevin_Text_7
 	additem ITEM_PURPLE_SWEETS, 100
+	additem ITEM_FRAGMENT_OF_JAS, 5
 	release
 	goto GnomeBoi_Kevin_1
 

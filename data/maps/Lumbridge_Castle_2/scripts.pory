@@ -85,6 +85,61 @@ script Lumbridge_Castle_Introduction
 	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
 	lockall
 	setvar(VAR_POKESCAPE_LUMBRIDGE_CASTLE_STATE, 1)
+	getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+	if (var(VAR_TEMP_1) == 17){
+		goto (LeftDoorScript)
+	} else {
+		goto (RightDoorScript)
+	}
+
+}
+	release
+	end
+}
+
+script LeftDoorScript
+{
+	applymovement(9, Movement_Duke)
+	applymovement(10, Movement_Hans_5)
+	waitmovement (0)
+	playse(SE_PIN)
+	applymovement(10, Movement_Hans_2)
+	waitmovement (0)
+	namebox ("Hans")
+	msgbox(format("Hello there!\pMy name is Hans.\pYou are...?"))
+	applymovement(OBJ_EVENT_ID_PLAYER, Movement_PLAYER_1)
+	waitmovement (0)
+	msgbox(format("...\pNice to meet you {PLAYER}.\pYou must be here to see the researcher?\pWe've had a few others come see him today too.\pFollow me."))
+	waitmessage
+	hidenamebox
+	closemessage
+	applymovement(10, Movement_Hans_6)
+	applymovement(OBJ_EVENT_ID_PLAYER, Movement_PLAYER_3)
+	waitmovement (0)
+	applymovement(4, Movement_NORMALTREE_1)
+	waitmovement (0)
+//SECTION 2
+	namebox ("Hans")
+	msgbox(format("Sorry to interrupt but this is {PLAYER}.\pThey are interested in your quest Professor."))
+	hidenamebox
+	applymovement(4, Movement_NORMALTREE_2)
+	waitmovement (0)
+	namebox ("Prof. Normal Tree")
+	msgbox(format("Nice.\pI am Professor Normal Tree.\pI am in need of assistants to help me in my research, as you would know this world is full to the brim with all sorts of monsters.\pWhat I would like assistance with is filling this BESTIARY with as much data as possible.\pOf course I wouldn't ask you to do it for free, I'll be giving you one of 3 rare monsters to take with you on your journey."))
+	msgbox(format("Would you like to accept my Quest?"), MSGBOX_YESNO)
+	while (var(VAR_RESULT) != 1) {
+        msgbox(format("Noob.\p...How about now?"), MSGBOX_YESNO)	
+	}
+		msgbox(format("Nice.\pPlease choose from one of these 3 monsters on the table."))
+		hidenamebox
+	release
+	end
+}
+
+
+script RightDoorScript 
+	{
+
 	applymovement(9, Movement_Duke)
 	applymovement(10, Movement_Hans_1)
 	waitmovement (0)
@@ -118,9 +173,6 @@ script Lumbridge_Castle_Introduction
 	}
 		msgbox(format("Nice.\pPlease choose from one of these 3 monsters on the table."))
 		hidenamebox
-	release
-	end
-	}
 	release
 	end
 }
@@ -238,6 +290,8 @@ movement Movement_Hans_2
 	delay_16
 	walk_down
 }
+
+
 movement Movement_PLAYER_1
 {
 	walk_in_place_up * 2
@@ -251,6 +305,24 @@ movement Movement_Hans_3
 	walk_up * 4
 	walk_left
 }
+
+movement Movement_Hans_5
+{
+	walk_down * 5
+	walk_left * 5
+}
+
+movement Movement_Hans_6
+{
+	walk_up
+	walk_right * 5
+	walk_up * 5
+	walk_right * 2
+	walk_up * 4
+	walk_left
+}
+
+
 movement Movement_PLAYER_2
 {
 	walk_up * 2
@@ -261,6 +333,19 @@ movement Movement_PLAYER_2
 	walk_left * 2
 	face_up
 }
+
+movement Movement_PLAYER_3
+{
+	walk_up * 2
+	walk_right * 5
+	walk_up * 5
+	walk_right * 2
+	walk_up * 3
+	walk_left * 2
+	face_up
+}
+
+
 movement Movement_NORMALTREE_1
 {
 	face_right

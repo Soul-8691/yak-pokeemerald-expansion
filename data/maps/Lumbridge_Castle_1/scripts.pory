@@ -1,10 +1,22 @@
 mapscripts Lumbridge_Castle_1_MapScripts {
-    
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:TryHideHans
 }
 
 
 
 
+
+script TryHideHans {
+	map_script_2 (VAR_TEMP_1, 0, HideHans2)
+}
+
+script HideHans2{
+	if (!flag(FLAG_COOKS_ASSIST_STARTED))
+	{
+		removeobject(9)
+		setflag(FLAG_TEMP_1)
+	}
+}
 
 
 script Lumbridge_Castle_Hans

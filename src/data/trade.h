@@ -981,21 +981,21 @@ static const union AffineAnimCmd *const gSpriteAffineAnimTable_8338ECC[] =
 //if .moves starts with 0(MOVE_NONE) then assigns random level up moves
 static const struct InGameTrade sIngameTrades[] =
 {
-    [INGAME_TRADE_BABY_YAK] = 
+    [INGAME_TRADE_RED_DRAGON] = 
     {
-        .nickname = _("Clarabelle"),
-        .species = SPECIES_BABY_YAK,
+        .nickname = _("Sottlepot"),
+        .species = SPECIES_DRAGON_RED_FORM,
         .ivs = {4, 5, 4, 5, 4, 4},
         .abilityNum = 0, 
         .otId = 33158,
-        .moves = {MOVE_NONE, 0, 0, 0},
+        .moves = {MOVE_YAWN, 0, 0, 0},
         .personality = 0x00,
         .heldItem = ITEM_NONE, 
         .mailNum = -1,
-        .otName = _("TED"), 
+        .otName = _("RODDECK"), 
         .otGender = MALE, 
-        .sheen = 10,
-        .requestedSpecies = SPECIES_SHEEP_WHITE_FORM
+        .sheen = 0,
+        .requestedSpecies = SPECIES_DRAGONLING_GREEN_FORM
     },
     [INGAME_TRADE_KING_RAT] = 
     {

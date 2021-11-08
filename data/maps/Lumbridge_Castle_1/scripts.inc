@@ -1,5 +1,21 @@
 Lumbridge_Castle_1_MapScripts::
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, TryHideHans
 	.byte 0
+
+
+TryHideHans::
+	map_script_2 VAR_TEMP_1, 0, HideHans2
+	return
+
+
+HideHans2::
+	goto_if_unset FLAG_COOKS_ASSIST_STARTED, HideHans2_1
+	return
+
+HideHans2_1:
+	removeobject 9
+	setflag FLAG_TEMP_1
+	return
 
 
 Lumbridge_Castle_Hans::

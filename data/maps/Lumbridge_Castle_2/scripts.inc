@@ -80,23 +80,77 @@ Movement_Lumbridge_Castle_COOKS_TRIGGER2:
 
 Lumbridge_Castle_Introduction::
 	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Castle_Introduction_2
+Lumbridge_Castle_Introduction_1:
 	release
 	end
 
 Lumbridge_Castle_Introduction_2:
 	lockall
 	setvar VAR_POKESCAPE_LUMBRIDGE_CASTLE_STATE, 1
+	getplayerxy VAR_TEMP_1, VAR_TEMP_2
+	compare VAR_TEMP_1, 17
+	goto_if_eq Lumbridge_Castle_Introduction_4
+	goto RightDoorScript
+	goto Lumbridge_Castle_Introduction_1
+
+Lumbridge_Castle_Introduction_4:
+	goto LeftDoorScript
+	goto Lumbridge_Castle_Introduction_1
+
+
+LeftDoorScript::
+	applymovement 9, Movement_Duke
+	applymovement 10, Movement_Hans_5
+	waitmovement 0
+	playse SE_PIN
+	applymovement 10, Movement_Hans_2
+	waitmovement 0
+	namebox LeftDoorScript_Text_0
+	msgbox LeftDoorScript_Text_1
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_PLAYER_1
+	waitmovement 0
+	msgbox LeftDoorScript_Text_2
+	waitmessage
+	hidenamebox
+	closemessage
+	applymovement 10, Movement_Hans_6
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_PLAYER_3
+	waitmovement 0
+	applymovement 4, Movement_NORMALTREE_1
+	waitmovement 0
+	namebox LeftDoorScript_Text_0
+	msgbox LeftDoorScript_Text_3
+	hidenamebox
+	applymovement 4, Movement_NORMALTREE_2
+	waitmovement 0
+	namebox LeftDoorScript_Text_4
+	msgbox LeftDoorScript_Text_5
+	msgbox LeftDoorScript_Text_6, MSGBOX_YESNO
+LeftDoorScript_2:
+	compare VAR_RESULT, 1
+	goto_if_ne LeftDoorScript_3
+	msgbox LeftDoorScript_Text_8
+	hidenamebox
+	release
+	end
+
+LeftDoorScript_3:
+	msgbox LeftDoorScript_Text_7, MSGBOX_YESNO
+	goto LeftDoorScript_2
+
+
+RightDoorScript::
 	applymovement 9, Movement_Duke
 	applymovement 10, Movement_Hans_1
 	waitmovement 0
 	playse SE_PIN
 	applymovement 10, Movement_Hans_2
 	waitmovement 0
-	namebox Lumbridge_Castle_Introduction_Text_0
-	msgbox Lumbridge_Castle_Introduction_Text_1
+	namebox LeftDoorScript_Text_0
+	msgbox LeftDoorScript_Text_1
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PLAYER_1
 	waitmovement 0
-	msgbox Lumbridge_Castle_Introduction_Text_2
+	msgbox LeftDoorScript_Text_2
 	waitmessage
 	hidenamebox
 	closemessage
@@ -105,25 +159,25 @@ Lumbridge_Castle_Introduction_2:
 	waitmovement 0
 	applymovement 4, Movement_NORMALTREE_1
 	waitmovement 0
-	namebox Lumbridge_Castle_Introduction_Text_0
-	msgbox Lumbridge_Castle_Introduction_Text_3
+	namebox LeftDoorScript_Text_0
+	msgbox LeftDoorScript_Text_3
 	hidenamebox
 	applymovement 4, Movement_NORMALTREE_2
 	waitmovement 0
-	namebox Lumbridge_Castle_Introduction_Text_4
-	msgbox Lumbridge_Castle_Introduction_Text_5
-	msgbox Lumbridge_Castle_Introduction_Text_6, MSGBOX_YESNO
-Lumbridge_Castle_Introduction_5:
+	namebox LeftDoorScript_Text_4
+	msgbox LeftDoorScript_Text_5
+	msgbox LeftDoorScript_Text_6, MSGBOX_YESNO
+RightDoorScript_2:
 	compare VAR_RESULT, 1
-	goto_if_ne Lumbridge_Castle_Introduction_6
-	msgbox Lumbridge_Castle_Introduction_Text_8
+	goto_if_ne RightDoorScript_3
+	msgbox LeftDoorScript_Text_8
 	hidenamebox
 	release
 	end
 
-Lumbridge_Castle_Introduction_6:
-	msgbox Lumbridge_Castle_Introduction_Text_7, MSGBOX_YESNO
-	goto Lumbridge_Castle_Introduction_5
+RightDoorScript_3:
+	msgbox LeftDoorScript_Text_7, MSGBOX_YESNO
+	goto RightDoorScript_2
 
 
 Lumbridge_Castle_Professor_Normal_Tree_1::
@@ -131,13 +185,13 @@ Lumbridge_Castle_Professor_Normal_Tree_1::
 	goto_if_set FLAG_STARTER2, Lumbridge_Castle_Professor_Normal_Tree_1_3
 	goto_if_set FLAG_STARTER3, Lumbridge_Castle_Professor_Normal_Tree_1_4
 Lumbridge_Castle_Professor_Normal_Tree_1_1:
-	namebox Lumbridge_Castle_Introduction_Text_4
+	namebox LeftDoorScript_Text_4
 	msgbox Lumbridge_Castle_Professor_Normal_Tree_1_Text_0
 	hidenamebox
 	playfanfare MUS_OBTAIN_ITEM
 	msgbox Lumbridge_Castle_Professor_Normal_Tree_1_Text_1
 	waitfanfare
-	namebox Lumbridge_Castle_Introduction_Text_4
+	namebox LeftDoorScript_Text_4
 	msgbox Lumbridge_Castle_Professor_Normal_Tree_1_Text_2
 	waitmessage
 	hidenamebox
@@ -168,7 +222,7 @@ Lumbridge_Castle_Professor_Normal_Tree_1_4:
 Lumbridge_Castle_Professor_Normal_Tree_2::
 	lock
 	faceplayer
-	namebox Lumbridge_Castle_Introduction_Text_4
+	namebox LeftDoorScript_Text_4
 	msgbox Lumbridge_Castle_Professor_Normal_Tree_2_Text_0
 	hidenamebox
 	release
@@ -178,7 +232,7 @@ Lumbridge_Castle_Professor_Normal_Tree_2::
 Lumbridge_Castle_Hans_0::
 	lock
 	faceplayer
-	namebox Lumbridge_Castle_Introduction_Text_0
+	namebox LeftDoorScript_Text_0
 	msgbox Lumbridge_Castle_Hans_0_Text_0
 	hidenamebox
 	release
@@ -188,7 +242,7 @@ Lumbridge_Castle_Hans_0::
 Lumbridge_Castle_Hans_1::
 	applymovement 10, Movement_Hans_4
 	waitmovement 0
-	namebox Lumbridge_Castle_Introduction_Text_0
+	namebox LeftDoorScript_Text_0
 	msgbox Lumbridge_Castle_Hans_1_Text_0
 	waitmessage
 	hidenamebox
@@ -211,7 +265,7 @@ Starter_TRIGGER::
 
 Starter_TRIGGER_1:
 	lock
-	namebox Lumbridge_Castle_Introduction_Text_4
+	namebox LeftDoorScript_Text_4
 	msgbox Lumbridge_Castle_Professor_Normal_Tree_2_Text_0
 	waitmessage
 	hidenamebox
@@ -291,9 +345,66 @@ Movement_Hans_3:
 	walk_left
 	step_end
 
+Movement_Hans_5:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+Movement_Hans_6:
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	step_end
+
 Movement_PLAYER_2:
 	walk_up
 	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	face_up
+	step_end
+
+Movement_PLAYER_3:
+	walk_up
+	walk_up
+	walk_right
 	walk_right
 	walk_right
 	walk_right
@@ -772,15 +883,15 @@ Lumbridge_Castle_COOKS_TRIGGER_Text_1:
 	.string "You hear a loud noise coming from the\n"
 	.string "kitchen.$"
 
-Lumbridge_Castle_Introduction_Text_0:
+LeftDoorScript_Text_0:
 	.string "Hans$"
 
-Lumbridge_Castle_Introduction_Text_1:
+LeftDoorScript_Text_1:
 	.string "Hello there!\p"
 	.string "My name is Hans.\p"
 	.string "You are...?$"
 
-Lumbridge_Castle_Introduction_Text_2:
+LeftDoorScript_Text_2:
 	.string "...\p"
 	.string "Nice to meet you {PLAYER}.\p"
 	.string "You must be here to see the\n"
@@ -789,16 +900,16 @@ Lumbridge_Castle_Introduction_Text_2:
 	.string "today too.\p"
 	.string "Follow me.$"
 
-Lumbridge_Castle_Introduction_Text_3:
+LeftDoorScript_Text_3:
 	.string "Sorry to interrupt but this is\n"
 	.string "{PLAYER}.\p"
 	.string "They are interested in your quest\n"
 	.string "Professor.$"
 
-Lumbridge_Castle_Introduction_Text_4:
+LeftDoorScript_Text_4:
 	.string "Prof. Normal Tree$"
 
-Lumbridge_Castle_Introduction_Text_5:
+LeftDoorScript_Text_5:
 	.string "Nice.\p"
 	.string "I am Professor Normal Tree.\p"
 	.string "I am in need of assistants to help me in\n"
@@ -813,14 +924,14 @@ Lumbridge_Castle_Introduction_Text_5:
 	.string "rare monsters to take with you on your\l"
 	.string "journey.$"
 
-Lumbridge_Castle_Introduction_Text_6:
+LeftDoorScript_Text_6:
 	.string "Would you like to accept my Quest?$"
 
-Lumbridge_Castle_Introduction_Text_7:
+LeftDoorScript_Text_7:
 	.string "Noob.\p"
 	.string "...How about now?$"
 
-Lumbridge_Castle_Introduction_Text_8:
+LeftDoorScript_Text_8:
 	.string "Nice.\p"
 	.string "Please choose from one of these 3\n"
 	.string "monsters on the table.$"

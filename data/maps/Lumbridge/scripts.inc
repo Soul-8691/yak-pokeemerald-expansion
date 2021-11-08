@@ -103,13 +103,26 @@ Lumbridge_HATIUS::
 
 
 Lumbridge_LACHTOPHER::
+	checkmoney 200, 0
+	compare VAR_RESULT, TRUE
+	goto_if_eq Lumbridge_LACHTOPHER_2
+	lock
+	faceplayer
+	namebox Lumbridge_LACHTOPHER_Text_0
+	msgbox Lumbridge_LACHTOPHER_Text_2
+	addmoney 200, 0
+	hidenamebox
+Lumbridge_LACHTOPHER_1:
+	release
+	end
+
+Lumbridge_LACHTOPHER_2:
 	lock
 	faceplayer
 	namebox Lumbridge_LACHTOPHER_Text_0
 	msgbox Lumbridge_LACHTOPHER_Text_1
 	hidenamebox
-	release
-	end
+	goto Lumbridge_LACHTOPHER_1
 
 
 Lumbridge_DOOMSAYER::
@@ -482,12 +495,30 @@ Lumbridge_GeneralStore_MOD_ASH::
 	lock
 	faceplayer
 	namebox Lumbridge_GeneralStore_MOD_ASH_Text_0
-	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_1
-	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_2
-	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_3
+	goto_if_unset FLAG_TEMP_1, Lumbridge_GeneralStore_MOD_ASH_2
 	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_4
 	hidenamebox
 	release
+	end
+
+Lumbridge_GeneralStore_MOD_ASH_2:
+	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_1
+	special ChoosePartyMon
+	waitstate
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+	compare VAR_RESULT, SPECIES_ROC
+	goto_if_eq Lumbridge_GeneralStore_MOD_ASH_4
+	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_3
+	release
+	hidenamebox
+	end
+
+Lumbridge_GeneralStore_MOD_ASH_4:
+	msgbox Lumbridge_GeneralStore_MOD_ASH_Text_2
+	giveitem ITEM_EMPTY_BUCKET
+	setflag FLAG_TEMP_1
+	release
+	hidenamebox
 	end
 
 
@@ -499,11 +530,19 @@ Lumbridge_GeneralStore_FANFIC::
 	end
 
 
+GiveDragon::
+	givemon SPECIES_DRAGONLING_GREEN_FORM, 5, ITEM_NONE
+	return
+
+
 Lumbridge_House_Roddeck::
 	goto_if_set FLAG_COOKS_ASSIST_STARTED, Lumbridge_House_Roddeck_2
+	lock
+	faceplayer
 	namebox Lumbridge_House_Roddeck_Text_0
-	msgbox Lumbridge_House_Roddeck_Text_3
+	msgbox Lumbridge_House_Roddeck_Text_6
 	hidenamebox
+Lumbridge_House_Roddeck_1:
 	release
 	end
 
@@ -511,11 +550,49 @@ Lumbridge_House_Roddeck_2:
 	lock
 	faceplayer
 	namebox Lumbridge_House_Roddeck_Text_0
-	msgbox Lumbridge_House_Roddeck_Text_1
-	msgbox Lumbridge_House_Roddeck_Text_2
+	goto_if_unset FLAG_LUMBRIDGE_TRADE_1, Lumbridge_House_Roddeck_6
+	msgbox Lumbridge_House_Roddeck_Text_5
+Lumbridge_House_Roddeck_5:
 	hidenamebox
-	release
-	end
+	goto Lumbridge_House_Roddeck_1
+
+Lumbridge_House_Roddeck_6:
+	setvar VAR_0x8008, INGAME_TRADE_RED_DRAGON
+	copyvar VAR_0x8004, VAR_0x8008
+	specialvar VAR_RESULT, GetInGameTradeSpeciesInfo
+	copyvar VAR_0x8009, VAR_RESULT
+	msgbox Lumbridge_House_Roddeck_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne Lumbridge_House_Roddeck_9
+	msgbox Lumbridge_House_Roddeck_Text_4
+	goto Lumbridge_House_Roddeck_5
+
+Lumbridge_House_Roddeck_9:
+	special ChoosePartyMon
+	waitstate
+	copyvar VAR_0x800A, VAR_0x8004
+	compare VAR_0x8004, 255
+	goto_if_ne Lumbridge_House_Roddeck_12
+	goto Lumbridge_House_Roddeck_5
+
+Lumbridge_House_Roddeck_12:
+	copyvar VAR_0x8005, VAR_0x800A
+	specialvar VAR_RESULT, GetTradeSpecies
+	copyvar VAR_0x800B, VAR_RESULT
+	compare VAR_RESULT, VAR_0x8009
+	goto_if_eq Lumbridge_House_Roddeck_14
+	msgbox Lumbridge_House_Roddeck_Text_3
+	goto Lumbridge_House_Roddeck_5
+
+Lumbridge_House_Roddeck_14:
+	copyvar VAR_0x8004, VAR_0x8008
+	copyvar VAR_0x8005, VAR_0x800A
+	special CreateInGameTradePokemon
+	special DoInGameTradeScene
+	waitstate
+	msgbox Lumbridge_House_Roddeck_Text_2
+	setflag FLAG_LUMBRIDGE_TRADE_1
+	goto Lumbridge_House_Roddeck_5
 
 
 CUPHOLDER_NPC_Text_0:
@@ -597,6 +674,10 @@ Lumbridge_LACHTOPHER_Text_0:
 
 Lumbridge_LACHTOPHER_Text_1:
 	.string "Free st00f pl0x!$"
+
+Lumbridge_LACHTOPHER_Text_2:
+	.string "Wow! You're even more broke than me!\n"
+	.string "Here's some money noob.$"
 
 Lumbridge_DOOMSAYER_Text_0:
 	.string "Doomsayer$"
@@ -766,9 +847,6 @@ Lumbridge_GeneralStore_MOD_ASH_Text_1:
 	.string "help inspire me?$"
 
 Lumbridge_GeneralStore_MOD_ASH_Text_2:
-	.string "No, I don't think that would work..$"
-
-Lumbridge_GeneralStore_MOD_ASH_Text_3:
 	.string "Yes!\p"
 	.string "That's it!\p"
 	.string "I'll have the player face off against a\n"
@@ -776,6 +854,9 @@ Lumbridge_GeneralStore_MOD_ASH_Text_3:
 	.string "Thank you for giving me the inspiration\n"
 	.string "I need to finish my story!\p"
 	.string "Please take this!$"
+
+Lumbridge_GeneralStore_MOD_ASH_Text_3:
+	.string "No, I don't think that would work..$"
 
 Lumbridge_GeneralStore_MOD_ASH_Text_4:
 	.string "Once again, thank you for helping me.\p"
@@ -795,17 +876,23 @@ Lumbridge_House_Roddeck_Text_0:
 	.string "Roddeck$"
 
 Lumbridge_House_Roddeck_Text_1:
-	.string "Hello adventurer!\p"
-	.string "Do you happen to have a Green\n"
-	.string "Dragonling?\p"
-	.string "Would you be willing to trade it for my\n"
-	.string "Red Dragon?$"
+	.string "Would you like to trade me your\n"
+	.string "{STR_VAR_1} for my {STR_VAR_2}?$"
 
 Lumbridge_House_Roddeck_Text_2:
 	.string "Please take care of Sottlepot, he is a\n"
 	.string "good boy.$"
 
 Lumbridge_House_Roddeck_Text_3:
+	.string "Sorry that's not what I want.$"
+
+Lumbridge_House_Roddeck_Text_4:
+	.string "Well come back if you change your mind.$"
+
+Lumbridge_House_Roddeck_Text_5:
+	.string "How is Sottlepot doing?$"
+
+Lumbridge_House_Roddeck_Text_6:
 	.string "Did you know the more Badges you have\n"
 	.string "the easier it is to control Monsters\l"
 	.string "obtained in a trade?\p"

@@ -113,13 +113,21 @@ script Mithrilman_LUMBRIDGE1{
 	lock
 	faceplayer
     playbgm (MUS_ENCOUNTER_MAY, 1)
-    namebox ("???")
-	msgbox(format("Helloust there knave, thee be a challenger of the duke thine can tell.\pWhomst am I?\pLook upon me in awe knave, for thine amst the greatest of all challengers of the PokeScapian realm.\pThine's a Mithrilman."))
-    namebox ("Mithrilman")
-    msgbox(format("Morest fabled thanst the Ironmen and faster than the Adamantmen.\pThe Mithrilman is a challenge upon the very spirit ofst PokeScape itself.\pAs thy predecessor inst this realm.")) 
-    trainerbattle_single(TRAINER_MITHRILMAN1,format("Why doesnt thine show ye, knave, howst a true master battles."),format("..."),Mithrilman_LUMBRIDGE2)
-    hidenamebox
-    release
+    if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+        namebox ("???")
+        msgbox(format("I douth believe the cook seeks assistance. You should go check with him."))
+        hidenamebox
+        release
+    }
+    else {
+        namebox ("???")
+        msgbox(format("Helloust there knave, thee be a challenger of the duke thine can tell.\pWhomst am I?\pLook upon me in awe knave, for thine amst the greatest of all challengers of the PokeScapian realm.\pThine's a Mithrilman."))
+        namebox ("Mithrilman")
+        msgbox(format("Morest fabled thanst the Ironmen and faster than the Adamantmen.\pThe Mithrilman is a challenge upon the very spirit ofst PokeScape itself.\pAs thy predecessor inst this realm.")) 
+        trainerbattle_single(TRAINER_MITHRILMAN1,format("Why doesnt thine show ye, knave, howst a true master battles."),format("..."),Mithrilman_LUMBRIDGE2)
+        hidenamebox
+        release
+    }
 }
 script Mithrilman_LUMBRIDGE2{  
     lock

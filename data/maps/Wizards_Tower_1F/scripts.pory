@@ -1,79 +1,226 @@
+const OBJ_EVENT_ID_SEDRIDOR = 9
+const OBJ_EVENT_ID_HAMGrunt = 8
+const OBJ_EVENT_ID_ARIANE = 7
+
 mapscripts Wizards_Tower_1F_MapScripts{
-	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:WizardsTowerHideChecks
+	MAP_SCRIPT_ON_TRANSITION {
+    goto(WizardsTower_STATE)
+    }
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_POKESCAPE_WIZARDS_TOWER_STATE, 0: HAM_EVENT_WizardsTower
+		VAR_POKESCAPE_WIZARDS_TOWER_STATE, 0: HAM_EVENT_WizardsTower_1
     ]
 
 }
 
 
-script WizardsTowerHideChecks{
-	map_script_2 (VAR_TEMP_1, 0, TryHideAriel)
+script WizardsTower_STATE{
+	switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+		case 0: 
+			//HIDE SEDRIDOR
+			setflag(FLAG_TEMP_1)
+			release
+			end
+    	case 1: 
+		case 2: 
+		case 3: 
+		case 4: 
+		case 5:
+			//MOVE WIZARD
+			setobjectxyperm(4,8,14)
+			setobjectmovementtype(4,MOVEMENT_TYPE_FACE_DOWN)
+			//MOVE SEDRIDOR
+			setobjectxyperm(OBJ_EVENT_ID_SEDRIDOR,8,15)
+			setobjectmovementtype(OBJ_EVENT_ID_SEDRIDOR,MOVEMENT_TYPE_FACE_UP)
+			//REMOVE ARIANE
+			removeobject (OBJ_EVENT_ID_ARIANE)
+			//REMOVE H.A.M
+			removeobject (OBJ_EVENT_ID_HAMGrunt)
+
+			setflag(FLAG_TEMP_2)
+		case 6: 
+		case 7: 
+		case 8: 
+		case 9: 
+			//MOVE WIZARD
+			setobjectxyperm(4,5,14)
+			setobjectmovementtype(4,MOVEMENT_TYPE_WANDER_AROUND)
+			removeobject (OBJ_EVENT_ID_SEDRIDOR)
+			removeobject (OBJ_EVENT_ID_ARIANE)
+			removeobject (OBJ_EVENT_ID_HAMGrunt)
+			setflag(FLAG_TEMP_1)
+			setflag(FLAG_TEMP_2)
+			release
+			end
+
+		}
 }
 
-script TryHideAriel{
-	if (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE) == 0){
-		hideobjectat(9,MAP_WIZARDS_TOWER_1F)
-	}
-	if (!(var(VAR_POKESCAPE_WIZARDS_TOWER_STATE) == 0)){
-		setobjectxy(4,4,14)
-		setobjectxy(9,8,13)
-		removeobject (7)
-		setflag(FLAG_TEMP_1)
-		removeobject(8)
-		setflag(FLAG_TEMP_2)
+
+
+//SEDRIDOR
+script WizardsTower_SEDRIDOR{
+	switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+		case 0: 
+			lock
+			faceplayer
+			namebox ("Sedridor")
+			msgbox(format("CUPHOLDER"))
+			hidenamebox
+			release
+			end
+		case 1: 
+		case 2: 
+		case 3: 
+		case 4: 
+		case 5: 
+		case 6: 
+		case 7: 
+		case 8: 
+		case 9: 
+			lock
+			faceplayer
+			namebox ("Sedridor")
+			msgbox(format("Could you please go after Ariane."))
+			hidenamebox
+			release
+			end
 	}
 }
 
-script HAM_EVENT_WizardsTower
-{
-hideobjectat (9, MAP_WIZARDS_TOWER_1F)
-if (flag(FLAG_COOKS_ASSIST_STARTED)){
+
+//Wizard
+script WizardsTower_Wizard{
+	switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+		case 0: 
+			lock
+			faceplayer
+			namebox ("Sedridor")
+			msgbox(format("CUPHOLDER"))
+			hidenamebox
+			release
+			end
+		case 1: 
+		case 2: 
+		case 3: 
+		case 4: 
+		case 5: 
+		case 6: 
+		case 7: 
+		case 8: 
+			lock
+			faceplayer
+			namebox ("Wizard")
+			msgbox(format("Why would that pink hooded guy steal our reasearch papers on the abyss?"))
+			hidenamebox
+			release
+			end
+		case 9: 
+			lock
+			faceplayer
+			namebox ("Wizard")
+			msgbox(format("Thank you for helping out earlier."))
+			hidenamebox
+			release
+			end
+	}
+}
+
+
+script WizardsTower_EVENT_TRIGGER{
+	switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+		case 0: 
+		case 1: 
+		case 2: 
+		case 3: 
+		case 4: 
+		case 5: 
+		case 6: 
+		case 7: 
+		case 8: 
+			lock
+			applymovement(4, Movement_Wizard_WizardsTower4)
+			waitmovement(0)
+			namebox ("Wizard")
+			msgbox(format("Sorry, but the library is off limits for the time being."))
+			closemessage
+			hidenamebox
+			applymovement(OBJ_EVENT_ID_PLAYER, Movement_Player_WizardsTower4)
+			waitmovement(0)
+			release
+			end
+		case 9: 
+			release
+			end
+	}
+}
+
+
+
+script HAM_EVENT_WizardsTower_1{
 	lockall
-	setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 1)
+	playbgm (MUS_ENCOUNTER_AQUA, 1)
 	namebox ("???")
 	msgbox(format("Someone stop him!"))
 	waitmessage
 	hidenamebox
 	closemessage
-	applymovement(8, Movement_HAM_Member_WizardsTower1)
+	applymovement(OBJ_EVENT_ID_HAMGrunt, Movement_HAM_Member_WizardsTower1)
 	waitmovement (0)
+	playSE(SE_WALL_HIT)
     applymovement(OBJ_EVENT_ID_PLAYER, Movement_Player_WizardsTower1)
-	applymovement(8, Movement_HAM_Member_WizardsTower2)
-	applymovement(7, Movement_Araine_WizardsTower1)
+	applymovement(OBJ_EVENT_ID_HAMGrunt, Movement_HAM_Member_WizardsTower2)
+	applymovement(OBJ_EVENT_ID_ARIANE, Movement_Araine_WizardsTower1)
 	waitmovement (0)
-	removeobject(8)
-	removeobject(7)
+	removeobject(OBJ_EVENT_ID_HAMGrunt)
+	removeobject(OBJ_EVENT_ID_ARIANE)
 
 	namebox ("???")
 	msgbox(format("What's all that racket?!"))
 	waitmessage
 	hidenamebox
 	closemessage
-
-	showobjectat (9, MAP_WIZARDS_TOWER_1F)
+	clearflag(FLAG_TEMP_1)
+	addobject(OBJ_EVENT_ID_SEDRIDOR)
+	showobjectat (OBJ_EVENT_ID_SEDRIDOR, MAP_WIZARDS_TOWER_1F)
 	applymovement(4, Movement_Wizard_WizardsTower1)
-	applymovement(9, Movement_Sedridor_WizardsTower1)
-	waitmovement (0)
-
+	applymovement(OBJ_EVENT_ID_SEDRIDOR, Movement_Sedridor_WizardsTower1)
+	waitmovement (4)
+	applymovement(OBJ_EVENT_ID_SEDRIDOR, Movement_Sedridor_WizardsTower2)
 	namebox ("Wizard")
 	msgbox(format("Sedridor, sir.\pA cloaked man just ran off with a bunch of our research papers!\pAriane just gave chase to him!"))
 	hidenamebox
 	namebox ("Sedridor")
 	msgbox(format("She what!?\pOh the silly girl, I hope she doesn't cause any trouble.."))
 	hidenamebox
-	
+	closemessage
 
+
+	applymovement(OBJ_EVENT_ID_PLAYER, Movement_Player_WizardsTower2)
+	waitmovement (0)
+	playse(SE_PIN)
+	applymovement(OBJ_EVENT_ID_SEDRIDOR, Movement_Sedridor_WizardsTower3)
+	
+	delay(16)
+	namebox ("Sedridor")
+	msgbox(format("Who are you?"))
+	hidenamebox
+	closemessage
+	applymovement(OBJ_EVENT_ID_PLAYER, Movement_Player_WizardsTower3)
+	waitmovement (0)
+	namebox ("Sedridor")
+	msgbox(format("Ah {PLAYER}, I wish we met under better circumstances but could I ask you go after Ariane incase she gets into trouble."))
+	hidenamebox
+	closemessage
+	savebgm(MUS_DUMMY)
+	fadedefaultbgm
+	setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 1)
     release
 	end
 }
-}
 
 
 
-
-
-
+//MOVEMENTS FOR EVENT
 
 movement Movement_HAM_Member_WizardsTower1
 {
@@ -95,13 +242,13 @@ movement Movement_Araine_WizardsTower1
 {
 	walk_fast_down * 5
 	walk_fast_right
-	walk_fast_down * 3
+	walk_fast_down * 2
 	set_invisible
 }
 
 movement Movement_HAM_Member_WizardsTower2
 {
-	walk_fast_down * 2
+	walk_fast_down * 1
 	set_invisible
 }
 
@@ -109,25 +256,76 @@ movement Movement_Sedridor_WizardsTower1
 {
 	set_visible
 	walk_down * 2
-	walk_left * 5
+	walk_left * 4
 	
 }
 
 movement Movement_Wizard_WizardsTower1
 {
-	walk_down * 4
+	walk_down * 3
 	delay_16
 	face_left
 	delay_8
 	face_right
 	delay_8
 	walk_down
-	face_right
+	delay_4
+	walk_right *2
+	face_down
+}
+
+movement Movement_Sedridor_WizardsTower2
+{
+	face_up
+}
+
+movement Movement_Sedridor_WizardsTower3
+{
+	emote_exclamation_mark
+	face_player
 }
 
 movement Movement_Hide_Sedridor{
 	set_invisible
 }
+
+movement Movement_Player_WizardsTower2{
+	walk_up
+	walk_right
+}
+
+movement Movement_Player_WizardsTower3{
+	walk_in_place_right * 3
+}
+
+
+movement Movement_Player_WizardsTower4{
+	walk_down
+}
+
+movement Movement_Wizard_WizardsTower4
+{
+	face_up
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 script HAM_EVENT_Ariane1
 {
@@ -142,8 +340,61 @@ script HAM_EVENT_Ariane1
 }
 
 
+	script VAR_CHECKER{
+	switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+		case 0: 
+			msgbox(format("0"))
+			setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 1)
+			release
+			end
+		case 1: 
+			msgbox(format("1"))
+			setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 2)
+			release
+			end
+		case 2: 
+			msgbox(format("2"))
+			setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 3)
+			release
+			end
+		case 3: 
+			msgbox(format("3"))
+			setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 4)
+			release
+			end
+		case 4: 
+			msgbox(format("4"))
+			setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 5)
+			release
+			end
+		case 5: 
+			msgbox(format("5"))
+			setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 6)
+			release
+			end
+		case 6: 
+			msgbox(format("6"))
+			setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 7)
+			release
+			end
+		case 7: 
+			msgbox(format("7"))
+			setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 8)
+			release
+			end
+		case 8: 
+			msgbox(format("8"))
+			setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 9)
+			release
+			end
+	}
+	release
+	end
+}
 
-//	playse(SE_PIN)
 
 
-    
+
+
+
+

@@ -1,54 +1,84 @@
+const OBJ_EVENT_ID_ARIANE = 6
+
 mapscripts WizardsTower_MapScripts{
-    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:TryHideNpcs_WizardTower_Exterior
-    MAP_SCRIPT_ON_TRANSITION:TryHideNpcs_WizardTower_Exterior_2
-}
-
-script TryHideNpcs_WizardTower_Exterior{
-	map_script_2 (VAR_TEMP_1, 0, TryHideNpcs_WizardTower_Exterior_2)
-}
-
-script TryHideNpcs_WizardTower_Exterior_2{
-    if (!(var(VAR_POKESCAPE_WIZARDS_TOWER_STATE) == 1)){
-        removeobject(5)
-        setflag(FLAG_TEMP_2)
-        removeobject(6)
-        setflag(FLAG_TEMP_1)
+    MAP_SCRIPT_ON_TRANSITION {
+        goto(WizardsTower_Outdoors_STATE)
+        }
     }
-}
 
-script ArianeChaseHamEvent1{
+
+    script WizardsTower_Outdoors_STATE{
+        switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+            case 0: 
+                //HIDE NPCS
+                setflag(FLAG_TEMP_1)
+                setflag(FLAG_TEMP_2)
+                release
+                end
+            case 1: 
+                //SHOW ARIANE
+                clearflag(FLAG_TEMP_1)
+                addobject(OBJ_EVENT_ID_ARIANE)
+                //HIDE NPCS
+                setflag(FLAG_TEMP_2)
+                release
+                end
+            case 2: 
+                //HIDE ARIANE
+                setflag(FLAG_TEMP_1)
+                //SHOW NPCS
+                clearflag(FLAG_TEMP_2)
+                addobject(9)
+                addobject(5)
+                release
+                end
+            case 3: 
+            case 4: 
+            case 5:
+            case 6: 
+            case 7: 
+            case 8: 
+            case 9: 
+                setflag(FLAG_TEMP_1)
+                setflag(FLAG_TEMP_2)
+                release
+                end
+            }
+    }
+
+
+
+script HAM_EVENT_WizardsTower_2{
     lockall
-    applymovement (6, ArianeRunAfterHam1)
+    applymovement (OBJ_EVENT_ID_ARIANE, MOVEMENT_HAM_ARIANE_1)
     waitmovement(0)
     namebox("Ariane")
-    msgbox(format("Hurry we have to catch the thief!"))
+    msgbox(format("Which way did he go..."))
+    closemessage
     hidenamebox
-    release
-    applymovement(6, ArianeRunAfterHam2)
-    setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 2)
-}
-
-script ArianeChaseHamEvent2{
-    lockall
-    applymovement (6, ArianeRunAfterHam3)
+    playse(SE_PIN)
+    applymovement(OBJ_EVENT_ID_ARIANE, MOVEMENT_HAM_ARIANE_2)
     waitmovement(0)
-    namebox("Ariane")
-    msgbox(format("Hurry we have to catch the thief!"))
-    hidenamebox
-    release
-    applymovement(6, ArianeRunAfterHam4)
+    removeobject(OBJ_EVENT_ID_ARIANE)
+    setflag(FLAG_TEMP_1)
     setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 2)
-
+    clearflag(FLAG_TEMP_2)
+    addobject(9)
+    addobject(5)
+    release
+    end
 }
 
 
-script ArianeChaseHamEvent3{
+script HAM_EVENT_WizardsTower_3{
     lockall
+    playbgm (MUS_ENCOUNTER_MAGMA, 1)
     namebox("Ariane")
     msgbox(format("Stop right there theif!"))
     hidenamebox
     release
     lockall
+    playSE(SE_PIN)
     applymovement(5,HamMemberSuprised)
     namebox("H.A.M. member")
     msgbox(format("You'll never catch me!"))
@@ -59,17 +89,23 @@ script ArianeChaseHamEvent3{
     waitmovement(0)
     removeobject(5)
     setflag(FLAG_TEMP_2)
-    applymovement (6,ArianeRunAfterHam5)
+    playSE(SE_LEDGE)
+    applymovement (9,ArianeRunAfterHam5)
+    delay(16)
+    playSE(SE_LEDGE)
+    applymovement (9,ArianeRunAfterHam5)
     namebox("Ariane")
-    msgbox(format("Quick! We have to chase after him!"))
+    msgbox(format("Get back here!"))
     hidenamebox
     release
     lockall
-    applymovement(6, ArianeRunAfterHam6)
+    applymovement(9, ArianeRunAfterHam6)
     waitmovement(0)
-    removeobject(6)
+    removeobject(9)
     setflag(FLAG_TEMP_1)
     setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 3)
+    savebgm(MUS_DUMMY)
+	fadedefaultbgm
     release
 }
 
@@ -94,6 +130,44 @@ script ChaseAfterHamMemberPlayerTrigger2{
 }
 
 
+
+
+
+
+movement MOVEMENT_HAM_ARIANE_1{
+    face_left
+    delay_8
+    face_down
+    delay_8
+    face_left
+    delay_8
+    face_down
+    delay_8
+    face_left
+    delay_8
+    face_down
+}
+
+movement MOVEMENT_HAM_ARIANE_2{
+    emote_exclamation_mark
+    face_left
+    delay_16
+    delay_4
+    walk_fast_left * 9
+    walk_fast_up * 7
+}
+
+
+
+
+
+
+
+
+
+
+
+
 movement ChaseHamMember{
     walk_down
 }
@@ -102,36 +176,9 @@ movement ChaseHamMember2{
     walk_up
 }
 
-movement ArianeRunAfterHam1{
-    face_left
-    face_right
-    face_down
-    face_up
-    emote_exclamation_mark
-    walk_up
-}
 
-movement ArianeRunAfterHam2{
-    walk_down
-    walk_fast_left * 9
-    walk_fast_up * 7
-}
 
-movement ArianeRunAfterHam3{
-    face_left
-    face_right
-    face_down
-    face_up
-    emote_exclamation_mark
-    walk_right
-    walk_up
-}
 
-movement ArianeRunAfterHam4{
-    walk_down
-    walk_fast_left * 10
-    walk_fast_up * 7
-}
 
 movement HamMemberSuprised{
     emote_exclamation_mark
@@ -144,7 +191,7 @@ movement HamMemberRuns{
 }
 
 movement ArianeRunAfterHam5{
-    face_down
+    jump_in_place_up
 }
 
 movement ArianeRunAfterHam6 {

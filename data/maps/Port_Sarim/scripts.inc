@@ -203,7 +203,7 @@ NPC_PORTSARIM_MONK_1_Text_1:
 	.string "Atleast they didn't steal me Peeko.$"
 
 NPC_PORTSARIM_SEAGULL_PEEKO_Text_0:
-	.string "PEEKO$"
+	.string "Peeko$"
 
 NPC_PORTSARIM_SEAGULL_PEEKO_Text_1:
 	.string "AVAARST'YEE'DAWGZ!\p"

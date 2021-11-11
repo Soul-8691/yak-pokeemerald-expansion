@@ -530,11 +530,6 @@ Lumbridge_GeneralStore_FANFIC::
 	end
 
 
-GiveDragon::
-	givemon SPECIES_DRAGONLING_GREEN_FORM, 5, ITEM_NONE
-	return
-
-
 Lumbridge_House_Roddeck::
 	goto_if_set FLAG_COOKS_ASSIST_STARTED, Lumbridge_House_Roddeck_2
 	lock

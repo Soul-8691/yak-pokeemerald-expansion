@@ -311,7 +311,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_TEMP_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_bob",
@@ -392,7 +392,33 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 30,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "5",
+      "script": "ArianeChaseHamEvent6"
+    },
+    {
+      "type": "trigger",
+      "x": 36,
+      "y": 30,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "5",
+      "script": "ArianeChaseHamEvent6"
+    },
+    {
+      "type": "trigger",
+      "x": 35,
+      "y": 30,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "5",
+      "script": "ArianeChaseHamEvent6"
+    }
   ],
   "bg_events": [
 

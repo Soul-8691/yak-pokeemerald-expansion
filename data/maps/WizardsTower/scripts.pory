@@ -1,0 +1,153 @@
+mapscripts WizardsTower_MapScripts{
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:TryHideNpcs_WizardTower_Exterior
+    MAP_SCRIPT_ON_TRANSITION:TryHideNpcs_WizardTower_Exterior_2
+}
+
+script TryHideNpcs_WizardTower_Exterior{
+	map_script_2 (VAR_TEMP_1, 0, TryHideNpcs_WizardTower_Exterior_2)
+}
+
+script TryHideNpcs_WizardTower_Exterior_2{
+    if (!(var(VAR_POKESCAPE_WIZARDS_TOWER_STATE) == 1)){
+        removeobject(5)
+        setflag(FLAG_TEMP_2)
+        removeobject(6)
+        setflag(FLAG_TEMP_1)
+    }
+}
+
+script ArianeChaseHamEvent1{
+    lockall
+    applymovement (6, ArianeRunAfterHam1)
+    waitmovement(0)
+    namebox("Ariane")
+    msgbox(format("Hurry we have to catch the thief!"))
+    hidenamebox
+    release
+    applymovement(6, ArianeRunAfterHam2)
+    setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 2)
+}
+
+script ArianeChaseHamEvent2{
+    lockall
+    applymovement (6, ArianeRunAfterHam3)
+    waitmovement(0)
+    namebox("Ariane")
+    msgbox(format("Hurry we have to catch the thief!"))
+    hidenamebox
+    release
+    applymovement(6, ArianeRunAfterHam4)
+    setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 2)
+
+}
+
+
+script ArianeChaseHamEvent3{
+    lockall
+    namebox("Ariane")
+    msgbox(format("Stop right there theif!"))
+    hidenamebox
+    release
+    lockall
+    applymovement(5,HamMemberSuprised)
+    namebox("H.A.M. member")
+    msgbox(format("You'll never catch me!"))
+    hidenamebox
+    release
+    lockall
+    applymovement(5,HamMemberRuns)
+    waitmovement(0)
+    removeobject(5)
+    setflag(FLAG_TEMP_2)
+    applymovement (6,ArianeRunAfterHam5)
+    namebox("Ariane")
+    msgbox(format("Quick! We have to chase after him!"))
+    hidenamebox
+    release
+    lockall
+    applymovement(6, ArianeRunAfterHam6)
+    waitmovement(0)
+    removeobject(6)
+    setflag(FLAG_TEMP_1)
+    setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 3)
+    release
+}
+
+
+
+
+
+script ChaseAfterHamMemberPlayerTrigger{
+    lockall
+    msgbox("I should help Ariane..")
+    applymovement(OBJ_EVENT_ID_PLAYER, ChaseHamMember)
+    waitmovement (0)
+    release
+}
+
+script ChaseAfterHamMemberPlayerTrigger2{
+    lockall
+    msgbox("I should help Ariane..")
+    applymovement(OBJ_EVENT_ID_PLAYER, ChaseHamMember2)
+    waitmovement (0)
+    release
+}
+
+
+movement ChaseHamMember{
+    walk_down
+}
+
+movement ChaseHamMember2{
+    walk_up
+}
+
+movement ArianeRunAfterHam1{
+    face_left
+    face_right
+    face_down
+    face_up
+    emote_exclamation_mark
+    walk_up
+}
+
+movement ArianeRunAfterHam2{
+    walk_down
+    walk_fast_left * 9
+    walk_fast_up * 7
+}
+
+movement ArianeRunAfterHam3{
+    face_left
+    face_right
+    face_down
+    face_up
+    emote_exclamation_mark
+    walk_right
+    walk_up
+}
+
+movement ArianeRunAfterHam4{
+    walk_down
+    walk_fast_left * 10
+    walk_fast_up * 7
+}
+
+movement HamMemberSuprised{
+    emote_exclamation_mark
+    jump_in_place_down
+}
+
+movement HamMemberRuns{
+    walk_fast_up * 7
+    set_invisible
+}
+
+movement ArianeRunAfterHam5{
+    face_down
+}
+
+movement ArianeRunAfterHam6 {
+    walk_fast_up * 7
+    set_invisible
+}

@@ -1,8 +1,63 @@
 mapscripts Route1_MapScripts {
-    MAP_SCRIPT_ON_TRANSITION{
-    goto(TryMoveCowBlockersRoute1)
-    }
+    MAP_SCRIPT_ON_TRANSITION:TryMoveNpcsRoute1
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:Route1WarpCheck
 } 
+
+
+script Route1WarpCheck{
+    map_script_2 (VAR_TEMP_1, 0, TryMoveNpcsRoute1)
+}
+
+script ArianeChaseHamEvent7{
+    lockall
+    namebox("H.A.M. member")
+    msgbox(format("Get out of my way! you're blocking the path!"))
+    hidenamebox
+    namebox("Ernest")
+    msgbox(format("I'm so glad im not a chicken anymore.. that was cluckin scary."))
+    hidenamebox
+    namebox("Veronica")
+    msgbox(format("Lets just avoid that creepy manor from now on."))
+    hidenamebox
+    msgbox(format("Kissing noises"))
+    namebox("H.A.M. member")
+    msgbox(format("I SAID GET OUT OF THE WAY!!"))
+    hidenamebox
+    release
+    lockall
+    applymovement(23, HamMemberRuns3)
+    waitmovement(0)
+    applymovement(5, ErnestShoved)
+    waitmovement(0)
+    namebox("Ernest")
+    msgbox("Well that was uncalled for!")
+    hidenamebox
+    release
+    lockall
+    applymovement(5,ErnestMoveBack)
+    namebox("Ariane")
+    msgbox(format("Stop theif! There is nowhere left for you to run!"))
+    hidenamebox
+    namebox("H.A.M. member")
+    msgbox(format("UGH! This dumb couple keeps blocking my way.. but there is still the manor!"))
+    hidenamebox
+    release
+    lockall
+    applymovement(23, HamMemberRuns4)
+    waitmovement(0)
+    applymovement(22, ArianeRunAfterHam11)
+    waitmovement(0)
+    removeobject(23)
+    setflag(FLAG_TEMP_4)
+    removeobject(22)
+    setflag(FLAG_TEMP_5)
+    setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 7)
+
+
+
+}
+
+
 
 script NPC_SHEEP
 {
@@ -62,7 +117,7 @@ script Route1FarmerBlocking{
     release
 }
 
-script TryMoveCowBlockersRoute1{
+script TryMoveNpcsRoute1{
     if (flag(FLAG_BADGE01_GET)){
         setobjectxyperm(4, 42, 9)
         setobjectmovementtype(4,MOVEMENT_TYPE_FACE_DOWN)
@@ -71,6 +126,12 @@ script TryMoveCowBlockersRoute1{
 
         setobjectxyperm(13, 36, 11)
         setobjectmovementtype(13,MOVEMENT_TYPE_FACE_DOWN)
+    }
+    if (!(var(VAR_POKESCAPE_WIZARDS_TOWER_STATE) == 6)){
+        removeobject(22)
+        setflag(FLAG_TEMP_5)
+        removeobject(23)
+        setflag(FLAG_TEMP_4)
     }
 }
 
@@ -121,9 +182,38 @@ script Trainer1_Route1_Battle
     end
 }
 
+movement HamMemberRuns3{
+    walk_fast_left
+}
+
+movement ErnestShoved{
+    slide_left
+    face_right
+}
+
+movement ErnestMoveBack{
+    walk_right
+    face_up
+}
+
+movement HamMemberRuns4{
+  walk_fast_right * 2
+    walk_fast_up * 5
+   // walk_fast_left * 3
+   // walk_fast_up * 5
+    //walk_fast_left * 1
+    //walk_fast_up * 9  
+}
 
 
-
+movement ArianeRunAfterHam11 {
+    walk_fast_left
+    walk_fast_up * 5
+   // walk_fast_left * 3
+   // walk_fast_up * 5
+   // walk_fast_left * 1
+    //walk_fast_up * 9 
+}
 
 
 

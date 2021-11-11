@@ -1,9 +1,58 @@
 Route1_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, Route1_MapScripts_MAP_SCRIPT_ON_TRANSITION
+	map_script MAP_SCRIPT_ON_TRANSITION, TryMoveNpcsRoute1
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, Route1WarpCheck
 	.byte 0
 
-Route1_MapScripts_MAP_SCRIPT_ON_TRANSITION:
-	goto TryMoveCowBlockersRoute1
+
+Route1WarpCheck::
+	map_script_2 VAR_TEMP_1, 0, TryMoveNpcsRoute1
+	return
+
+
+ArianeChaseHamEvent7::
+	lockall
+	namebox ArianeChaseHamEvent7_Text_0
+	msgbox ArianeChaseHamEvent7_Text_1
+	hidenamebox
+	namebox ArianeChaseHamEvent7_Text_2
+	msgbox ArianeChaseHamEvent7_Text_3
+	hidenamebox
+	namebox ArianeChaseHamEvent7_Text_4
+	msgbox ArianeChaseHamEvent7_Text_5
+	hidenamebox
+	msgbox ArianeChaseHamEvent7_Text_6
+	namebox ArianeChaseHamEvent7_Text_0
+	msgbox ArianeChaseHamEvent7_Text_7
+	hidenamebox
+	release
+	lockall
+	applymovement 23, HamMemberRuns3
+	waitmovement 0
+	applymovement 5, ErnestShoved
+	waitmovement 0
+	namebox ArianeChaseHamEvent7_Text_2
+	msgbox ArianeChaseHamEvent7_Text_8
+	hidenamebox
+	release
+	lockall
+	applymovement 5, ErnestMoveBack
+	namebox ArianeChaseHamEvent7_Text_9
+	msgbox ArianeChaseHamEvent7_Text_10
+	hidenamebox
+	namebox ArianeChaseHamEvent7_Text_0
+	msgbox ArianeChaseHamEvent7_Text_11
+	hidenamebox
+	release
+	lockall
+	applymovement 23, HamMemberRuns4
+	waitmovement 0
+	applymovement 22, ArianeRunAfterHam11
+	waitmovement 0
+	removeobject 23
+	setflag FLAG_TEMP_4
+	removeobject 22
+	setflag FLAG_TEMP_5
+	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 7
 	return
 
 
@@ -62,16 +111,26 @@ Route1FarmerBlocking_2:
 	goto Route1FarmerBlocking_1
 
 
-TryMoveCowBlockersRoute1::
-	goto_if_set FLAG_BADGE01_GET, TryMoveCowBlockersRoute1_1
+TryMoveNpcsRoute1::
+	goto_if_set FLAG_BADGE01_GET, TryMoveNpcsRoute1_2
+TryMoveNpcsRoute1_1:
+	compare VAR_POKESCAPE_WIZARDS_TOWER_STATE, 6
+	goto_if_ne TryMoveNpcsRoute1_4
 	return
 
-TryMoveCowBlockersRoute1_1:
+TryMoveNpcsRoute1_2:
 	setobjectxyperm 4, 42, 9
 	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 12, 38, 9
 	setobjectxyperm 13, 36, 11
 	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_DOWN
+	goto TryMoveNpcsRoute1_1
+
+TryMoveNpcsRoute1_4:
+	removeobject 22
+	setflag FLAG_TEMP_5
+	removeobject 23
+	setflag FLAG_TEMP_4
 	return
 
 
@@ -109,6 +168,39 @@ Trainer1_Route1_Battle::
 	release
 	end
 
+
+HamMemberRuns3:
+	walk_fast_left
+	step_end
+
+ErnestShoved:
+	slide_left
+	face_right
+	step_end
+
+ErnestMoveBack:
+	walk_right
+	face_up
+	step_end
+
+HamMemberRuns4:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
+
+ArianeRunAfterHam11:
+	walk_fast_left
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
 
 ChickenBattleScript1::
 	lock
@@ -193,6 +285,47 @@ GenericCowMoo::
 	release
 	return
 
+
+ArianeChaseHamEvent7_Text_0:
+	.string "H.A.M. member$"
+
+ArianeChaseHamEvent7_Text_1:
+	.string "Get out of my way! you're blocking the\n"
+	.string "path!$"
+
+ArianeChaseHamEvent7_Text_2:
+	.string "Ernest$"
+
+ArianeChaseHamEvent7_Text_3:
+	.string "I'm so glad im not a chicken anymore..\n"
+	.string "that was cluckin scary.$"
+
+ArianeChaseHamEvent7_Text_4:
+	.string "Veronica$"
+
+ArianeChaseHamEvent7_Text_5:
+	.string "Lets just avoid that creepy manor from\n"
+	.string "now on.$"
+
+ArianeChaseHamEvent7_Text_6:
+	.string "Kissing noises$"
+
+ArianeChaseHamEvent7_Text_7:
+	.string "I SAID GET OUT OF THE WAY!!$"
+
+ArianeChaseHamEvent7_Text_8:
+	.string "Well that was uncalled for!$"
+
+ArianeChaseHamEvent7_Text_9:
+	.string "Ariane$"
+
+ArianeChaseHamEvent7_Text_10:
+	.string "Stop theif! There is nowhere left for\n"
+	.string "you to run!$"
+
+ArianeChaseHamEvent7_Text_11:
+	.string "UGH! This dumb couple keeps blocking my\n"
+	.string "way.. but there is still the manor!$"
 
 NPC_SHEEP_Text_0:
 	.string "BAAA!$"

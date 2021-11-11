@@ -1,6 +1,41 @@
-mapscripts Draynor_Manor_MapScripts {}
+mapscripts Draynor_Manor_MapScripts {
+	MAP_SCRIPT_ON_TRANSITION:TryHideDraynorManorNpcs
+	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:DraynorManorWarpCheck
+}
 
 
+
+script DraynorManorWarpCheck{
+	map_script_2 (VAR_TEMP_2, 0, TryHideDraynorManorNpcs)
+
+}
+
+script TryHideDraynorManorNpcs{
+	if(!(var(VAR_POKESCAPE_WIZARDS_TOWER_STATE) == 7)){
+		removeobject(1)
+		setflag(FLAG_TEMP_1)
+	}
+}
+
+script ArianeChaseHamEvent8{
+	lockall
+	namebox("Ariane")
+	msgbox(format("He went in here! Quick lets follow him!"))
+	hidenamebox
+	release
+	lockall
+	applymovement(1, ArianeRunAfterHam12)
+	waitmovement(0)
+	opendoor(14,17)
+	waitdooranim
+	applymovement(1,ArianeRunAfterHam12)
+	closedoor(14,17)
+	waitdooranim
+	removeobject(1)
+	setflag(FLAG_TEMP_1)
+	setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,8)
+
+}
 
 script DeadTree1 {
 
@@ -64,4 +99,9 @@ script DeadTree3 {
 		setvar(VAR_TEMP_3, 1)
 		release
 		}
+}
+
+
+movement ArianeRunAfterHam12{
+	walk_fast_up
 }

@@ -1,6 +1,35 @@
 mapscripts Draynor_MapScripts {
-    
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:DraynorWarpCheck
+	MAP_SCRIPT_ON_TRANSITION:DraynorHideNpcs
 }
+
+script DraynorWarpCheck{
+	map_script_2 (VAR_TEMP_1, 0, DraynorHideNpcs)
+}
+
+script DraynorHideNpcs{
+	if (!(var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)==5)){
+		removeobject(21)
+		setflag(FLAG_TEMP_1)
+	}
+}
+
+script ArianeChaseHamEvent6{
+	lockall
+	applymovement(21,ArianeRunAfterHam9)
+	waitmovement(0)
+	namebox("Ariane")
+	msgbox(format("I'm not sure which way he went.. We should split up. I'll check the market. You go north to the crossroads. We will definetly catch him!"))
+	hidenamebox
+	release
+	lockall
+	applymovement(21,ArianeRunAfterHam10)
+	waitmovement(0)
+	removeobject(21)
+	setflag(FLAG_TEMP_1)
+	setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 6)
+}
+
 
 
 script NPC_PIG
@@ -97,4 +126,15 @@ script Draynor_Morgan{
     hidenamebox
     release
 	end
+}
+
+movement ArianeRunAfterHam9{
+	face_left
+	face_right
+	face_down
+}
+
+movement ArianeRunAfterHam10{
+	walk_fast_up
+	walk_fast_left *8
 }

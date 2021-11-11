@@ -1,5 +1,43 @@
 Draynor_Manor_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, TryHideDraynorManorNpcs
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, DraynorManorWarpCheck
 	.byte 0
+
+
+DraynorManorWarpCheck::
+	map_script_2 VAR_TEMP_2, 0, TryHideDraynorManorNpcs
+	return
+
+
+TryHideDraynorManorNpcs::
+	compare VAR_POKESCAPE_WIZARDS_TOWER_STATE, 7
+	goto_if_ne TryHideDraynorManorNpcs_1
+	return
+
+TryHideDraynorManorNpcs_1:
+	removeobject 1
+	setflag FLAG_TEMP_1
+	return
+
+
+ArianeChaseHamEvent8::
+	lockall
+	namebox ArianeChaseHamEvent8_Text_0
+	msgbox ArianeChaseHamEvent8_Text_1
+	hidenamebox
+	release
+	lockall
+	applymovement 1, ArianeRunAfterHam12
+	waitmovement 0
+	opendoor 14, 17
+	waitdooranim
+	applymovement 1, ArianeRunAfterHam12
+	closedoor 14, 17
+	waitdooranim
+	removeobject 1
+	setflag FLAG_TEMP_1
+	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 8
+	return
 
 
 DeadTree1::
@@ -60,6 +98,16 @@ DeadTree3::
 DeadTree3_1:
 	return
 
+
+ArianeRunAfterHam12:
+	walk_fast_up
+	step_end
+
+ArianeChaseHamEvent8_Text_0:
+	.string "Ariane$"
+
+ArianeChaseHamEvent8_Text_1:
+	.string "He went in here! Quick lets follow him!$"
 
 DeadTree1_Text_0:
 	.string "The Tree attacked!$"

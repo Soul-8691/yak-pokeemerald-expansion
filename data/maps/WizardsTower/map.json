@@ -88,7 +88,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_TEMP_2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ariane",
@@ -101,7 +101,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "HAM_EVENT_Ariane1",
-      "flag": "0"
+      "flag": "FLAG_TEMP_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_mercher",
@@ -142,30 +142,103 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 9,
-      "y": 15,
+      "x": 19,
+      "y": 19,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "1",
+      "script": "ArianeChaseHamEvent1"
     },
     {
       "type": "trigger",
-      "x": 10,
-      "y": 15,
+      "x": 20,
+      "y": 19,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "1",
+      "script": "ArianeChaseHamEvent2"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "2",
+      "script": "ChaseAfterHamMemberPlayerTrigger",
+      "": ""
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "2",
+      "script": "ChaseAfterHamMemberPlayerTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "2",
+      "script": "ArianeChaseHamEvent3"
     },
     {
       "type": "trigger",
       "x": 11,
-      "y": 15,
+      "y": 16,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "2",
+      "script": "ArianeChaseHamEvent3"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "2",
+      "script": "ArianeChaseHamEvent3"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "2",
+      "script": "ArianeChaseHamEvent3"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "2",
+      "script": "ArianeChaseHamEvent3"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "2",
+      "script": "ChaseAfterHamMemberPlayerTrigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "2",
+      "script": "ChaseAfterHamMemberPlayerTrigger2"
     }
   ],
   "bg_events": [

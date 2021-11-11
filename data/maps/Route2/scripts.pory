@@ -1,0 +1,96 @@
+mapscripts Route2_MapScripts{
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:Route2WarpCheck
+    MAP_SCRIPT_ON_TRANSITION:TryHideRoute2Npc
+}
+
+
+script Route2WarpCheck{
+    map_script_2 (VAR_TEMP_1, 0, TryHideRoute2Npc)
+}
+
+script TryHideRoute2Npc{
+    if (!(var(VAR_POKESCAPE_WIZARDS_TOWER_STATE) == 3)){
+        removeobject(2)
+        setflag(FLAG_TEMP_2)
+        removeobject(3)
+        setflag(FLAG_TEMP_1)
+    }
+    if (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE ) > 3){
+        setobjectxyperm(1,35,14)
+    }
+}
+
+
+
+script ArianeChaseHamEvent5{
+    lockall
+    namebox("H.A.M. member")
+    msgbox(format("Get out of my way you noob!"))
+    hidenamebox
+    release
+    lockall
+    applymovement(2,HamMemberShove)
+    waitmovement(0)
+    applymovement (1,HighwaymanShoved)
+    waitmovement(0)
+    namebox("Highwayman")
+    msgbox(format("Stand and deliver!"))
+    hidenamebox
+    release
+    lockall
+    applymovement(2,HamMemberSuprised2)
+    namebox("H.A.M. member")
+    msgbox(format("You again? Stop following me!"))
+    hidenamebox
+    namebox("Ariane")
+    msgbox(format("Return the research you stole!"))
+    hidenamebox
+    release
+    lockall
+    applymovement(2,HamMemberRuns2)
+    waitmovement(0)
+    applymovement(3,ArianeRunAfterHam8)
+    waitmovement(0)
+    removeobject(2)
+    setflag(FLAG_TEMP_2)
+    removeobject(3)
+    setflag(FLAG_TEMP_1)
+    setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 5)
+
+}
+
+script ArianeChaseHamEvent4{
+    lockall
+    applymovement(3,ArianeRunAfterHam7)
+    waitmovement(0)
+    release
+    setvar (VAR_POKESCAPE_WIZARDS_TOWER_STATE, 4)
+}
+
+movement ArianeRunAfterHam7{
+    walk_fast_up * 6
+}
+
+movement HamMemberShove{
+    walk_fast_right
+}
+
+movement HighwaymanShoved{
+    slide_right
+}
+
+movement HamMemberSuprised2{
+    jump_in_place_down
+    emote_exclamation_mark
+
+}
+
+movement HamMemberRuns2{
+    walk_fast_left *4
+    walk_fast_up *3
+}
+
+movement ArianeRunAfterHam8{
+     walk_fast_left *5
+    walk_fast_up *6
+}

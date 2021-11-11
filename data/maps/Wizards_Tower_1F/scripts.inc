@@ -1,4 +1,5 @@
 Wizards_Tower_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, WizardsTowerHideChecks
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Wizards_Tower_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
@@ -7,7 +8,35 @@ Wizards_Tower_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 	.2byte 0
 
 
+WizardsTowerHideChecks::
+	map_script_2 VAR_TEMP_1, 0, TryHideAriel
+	return
+
+
+TryHideAriel::
+	compare VAR_POKESCAPE_WIZARDS_TOWER_STATE, 0
+	goto_if_eq TryHideAriel_2
+TryHideAriel_1:
+	compare VAR_POKESCAPE_WIZARDS_TOWER_STATE, 0
+	goto_if_ne TryHideAriel_4
+	return
+
+TryHideAriel_2:
+	hideobjectat 9, MAP_WIZARDS_TOWER_1F
+	goto TryHideAriel_1
+
+TryHideAriel_4:
+	setobjectxy 4, 4, 14
+	setobjectxy 9, 8, 13
+	removeobject 7
+	setflag FLAG_TEMP_1
+	removeobject 8
+	setflag FLAG_TEMP_2
+	return
+
+
 HAM_EVENT_WizardsTower::
+	hideobjectat 9, MAP_WIZARDS_TOWER_1F
 	goto_if_set FLAG_COOKS_ASSIST_STARTED, HAM_EVENT_WizardsTower_1
 	return
 
@@ -32,6 +61,7 @@ HAM_EVENT_WizardsTower_1:
 	waitmessage
 	hidenamebox
 	closemessage
+	showobjectat 9, MAP_WIZARDS_TOWER_1F
 	applymovement 4, Movement_Wizard_WizardsTower1
 	applymovement 9, Movement_Sedridor_WizardsTower1
 	waitmovement 0
@@ -85,7 +115,6 @@ Movement_Sedridor_WizardsTower1:
 	set_visible
 	walk_down
 	walk_down
-	walk_down
 	walk_left
 	walk_left
 	walk_left
@@ -105,6 +134,10 @@ Movement_Wizard_WizardsTower1:
 	delay_8
 	walk_down
 	face_right
+	step_end
+
+Movement_Hide_Sedridor:
+	set_invisible
 	step_end
 
 HAM_EVENT_Ariane1::

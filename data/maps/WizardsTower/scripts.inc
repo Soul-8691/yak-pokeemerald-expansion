@@ -206,7 +206,6 @@ ArianeRunAfterHam6:
 
 NPC_WIZARDSTOWER_SleepingWizard::
 	lock
-	faceplayer
 	msgbox NPC_WIZARDSTOWER_SleepingWizard_Text_0
 	waitmessage
 	hidenamebox

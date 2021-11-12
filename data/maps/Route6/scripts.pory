@@ -4,6 +4,22 @@ mapscripts Route6_MapScripts {
 
 script MuggerBattleRoute6{
     trainerbattle_single(TRAINER_MUGGER_ROUTE6, format("Your money or your life!"),format("Okay I guess you can keep both.."))
+    namebox ("Mugger")
     msgbox(format("Shoo you're making it hard for me to mug people."))
+    hidenamebox
     release
+    end
 }
+
+
+script TRAINER_ROUTE6_GUARD_1
+{
+    trainerbattle_single(TRAINER_MUGGER_ROUTE6, format("Welcome to Falador, I greet you with a battle!"),format("Welcome and goodbye."))
+    namebox ("Guard")
+    msgbox(format("Enjoy your stay, and do not get in trouble."))
+	hidenamebox
+    release
+	end
+}
+
+

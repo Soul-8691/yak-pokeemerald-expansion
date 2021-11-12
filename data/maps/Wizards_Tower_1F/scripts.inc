@@ -43,7 +43,7 @@ WizardsTower_STATE_3:
 
 WizardsTower_STATE_4:
 	setobjectxyperm 4, 5, 14
-	setobjectmovementtype 4, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectmovementtype 4, MOVEMENT_TYPE_LOOK_AROUND
 	removeobject 9
 	removeobject 7
 	removeobject 8

@@ -1,0 +1,333 @@
+
+mapscripts Falador_MapScripts{
+	MAP_SCRIPT_ON_TRANSITION {
+    
+    }
+    MAP_SCRIPT_ON_FRAME_TABLE [
+		
+    ]
+
+}
+
+
+
+
+
+//OUTDOORS
+script NPC_FALADOR_NPC_1
+{
+	lock
+	faceplayer
+    namebox ("RSN")
+	msgbox(format("Have you heard about the Mining & Smithing rework?"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+script NPC_FALADOR_GUARD_1
+{
+	lock
+	faceplayer
+    namebox ("Guard")
+	msgbox(format("I am so thankful I was assigned to guard the south gate!\pI heard that the north gate guys don't even last half a day."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+script NPC_FALADOR_GUARD_2
+{
+	lock
+	faceplayer
+    namebox ("Guard")
+	msgbox(format("Stop right there you criminal scum.\p...\pI am very sorry about that.\pI really needed to catch a criminal for a promotion.\pIf you see a criminal please send them my way."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_GUARD_3
+{
+	lock
+	faceplayer
+    namebox ("Guard")
+	msgbox(format("Stand and deliver!\pWait, that is the wrong line.\pSorry, I am new to this job."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_NPC_2
+{
+	lock
+	faceplayer
+    namebox ("RSN")
+	msgbox(format("You should always stock up on items to heal your party.\pCakes and beer are a safe bet."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_NPC_3
+{
+	lock
+	faceplayer
+    namebox ("RSN")
+	msgbox(format("I used an air rune on my frog, and it evolved differently from what I thought it would.\pMaybe there are more of these types of evolutions out there?"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_NPC_4
+{
+	lock
+	faceplayer
+    namebox ("RSN")
+	msgbox(format("Gnome cocktails are very useful. They increase your monsters stats."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+
+
+
+
+
+
+
+//INDOORS
+script NPC_FALADOR_ESTATE_AGENT
+{
+	lock
+	faceplayer
+    namebox ("Estate Agent")
+	msgbox(format("Hello, it would appear that you are looking for a house? I am most sorry but there is no menagerie big enough to fit your needs. I will get in touch with you if the situation changes."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_WORKMAN
+{
+	lock
+	faceplayer
+    namebox ("Workman")
+	msgbox(format(" I wish my useless apprentice would hurry up and finish our order for Varrock."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_APPRENTICE
+{
+	lock
+	faceplayer
+    namebox ("Apprentice workman")
+	msgbox(format("Ayyee!\pAfter I finished making this chair it came to life!\pI do not suppose you want to buy it from me, do you? I need to cover the cost of materials and I do not think a living chair will make our client happy…"))
+    msgbox(format("Urk! No problem, who would want a living chair anyway."))
+    msgbox(format("Thank you so much! Let me just calculate the total…  … … Alright! So that comes to 5000gp. Is this okay with you?"))
+    msgbox(format("Sorry, but I cannot go any lower than that."))
+    msgbox(format("Thank you! You are a lifesaver! "))
+    msgbox(format("….Uh.. You do not have enough money."))
+    msgbox(format("HOW!? I accidentally made another living chair!"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_HAIRDRESSER
+{
+	lock
+	faceplayer
+    namebox ("Hairdresser")
+	msgbox(format("You want a haircut? Well, first you will have to battle me."))
+    msgbox(format("Oh no, my chinchompas!"))
+    msgbox(format("Seems I get to cut it out."))
+    msgbox(format("Why would you faint all my chinchompas. Now who will run the wheel to make the sign outside spin.\pMy business is ruined!"))
+    msgbox(format("Take this, and never return. Please. For the good of my business."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_CASSIE
+{
+	lock
+	faceplayer
+    namebox ("Cassie")
+	msgbox(format("Sorry, I just sold my quota of shields for today. You cannot let monsters equip shields anyway."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+script NPC_FALADOR_NPC_9
+{
+	lock
+	faceplayer
+    namebox ("")
+	msgbox(format("Did you know part of the Dwarven Mines are right underneath us! It is scary just thinking about it."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_NPC_10
+{
+	lock
+	faceplayer
+    namebox ("")
+	msgbox(format("Is it still there?! I do not want to leave my house unless it is gone! What? It is just a spiderling? I do not believe you, it is a monster! Stop trying to trick me!"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADOR_MYSTERIOUS_OLD_MAN
+{
+	lock
+	faceplayer
+    namebox ("Mysterious Old Man")
+	msgbox(format("Oh hello again {PLAYER}. I am here to visit Falador in attempt to open these strange cubes. Here you have one"))
+    msgbox(format(" If you figure out how to open it please get in contact with me again."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+
+//FALADOR PARK
+script NPC_FALADOR_SirTiffyCachien
+{
+	lock
+	faceplayer
+    namebox ("Sir Tiffy Cachien")
+	msgbox(format("I enjoy spending my time here at the park sitting on this bench."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+script NPC_FALADOR_HESKEL
+{
+	lock
+	faceplayer
+    namebox ("Heskel")
+	msgbox(format("I wish someone would take over for me, it has been days since I had my last break."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+script NPC_FALADOR_NPC_5
+{
+	lock
+	faceplayer
+    namebox ("Gardener")
+	msgbox(format("It is really hard tending to these gardens. My farming level is way too low."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+script NPC_FALADOR_NPC_6
+{
+	lock
+	faceplayer
+    namebox ("Garden Supplier")
+	msgbox(format("If you are here to buy bagged trees to sell them for a higher price, I regret to inform you that I have increased the prices."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+script NPC_FALADOR_Wyson
+{
+	lock
+	faceplayer
+    namebox ("Wyson")
+	msgbox(format("I heard some rumours about a giant mole living somewhere in this area, and that interacting with an object would get you to it. I am too scared to find out how though."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+
+script NPC_FALADOR_MOD_TIMBO
+{
+    trainerbattle_single(TRAINER_MUGGER_ROUTE6, format("Oh no, you caught me!!\pI was planning to chop down this tree but it appears I must chop you down first!"),format("You saw nothing!"))
+    namebox ("Mod Timbo")
+    msgbox(format("Despite winning the battle Timbo appears to have chopped down the tree anyway.\pThere is something next to the stump. Looks like he dropped it in a rush."))
+	giveitem(ITEM_TINDERBOX, 1)
+    hidenamebox
+    release
+	end
+}
+
+
+
+
+
+
+script NPC_FALADOR_NPC_8
+{
+	lock
+	faceplayer
+    namebox ("")
+	msgbox(format(""))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+script NPC_FALADOR_NPC_7
+{
+	lock
+	faceplayer
+    namebox ("Gardener")
+	msgbox(format("Maybe they will one day rework farming. A man can dream."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}

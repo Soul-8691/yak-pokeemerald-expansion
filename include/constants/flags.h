@@ -51,7 +51,6 @@
 #define FLAG_EVILCHICKEN_HIDE    	0x23 // Unused Flag
 #define FLAG_EVILCHICKEN_DEFEATED   0x24 // Unused Flag
 
-
 //POKESCAPE START FLAGS
 #define FLAG_MEMBERSHIP         0x25 // Unused Flag
 #define FLAG_STARTER1           0x26 // Unused Flag
@@ -64,17 +63,13 @@
 #define FLAG_KALPHITE_KING_DEFEATED    	0x2A // Unused Flag
 #define FLAG_KALPHITE_QUEEN_DEFEATED    0x2B // Unused Flag
 
-
 //pokescape flag
 #define FLAG_DISABLE_RUN    0x2C // Unused Flag
-
-
 
 //cooks assistant/gym 1
 #define FLAG_COOKS_ASSIST_STARTED    0x2D // Unused Flag
 #define FLAG_COOKS_ASSIST_FINISHED   0x2E // Unused Flag
 #define FLAG_DUKE_TALKED    0x2F // Unused Flag
-
 
 //trade flags
 #define FLAG_LUMBRIDGE_TRADE_1    0x30 // Unused Flag
@@ -112,14 +107,20 @@
 #define FLAG_UNUSED_0x04E    0x4E // Unused Flag
 #define FLAG_UNUSED_0x04F    0x4F // Unused Flag
 
-
 //POKESCAPE STORYLINE FLAGS
-#define FLAG_EVENT_PORTSARIM_HAM_BOAT  0x50    //FLAG_HIDE_RAYQUAZA_SKY_TOWER_SUMMIT
+#define FLAG_EVENT_PORTSARIM_HAM_BOAT       0x50    //FLAG_HIDE_RAYQUAZA_SKY_TOWER_SUMMIT
+#define FLAG_SET_WALL_CLOCK                 0x51
+#define FLAG_RECEIVED_SPLITBARK             0x52
+
+
+
+
+
 
 
 // Scripts
-#define FLAG_SET_WALL_CLOCK                  0x51
-#define FLAG_RESCUED_BIRCH                   0x52
+
+
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS       0x53
 
 #define FLAG_UNUSED_0x054                    0x54  // Unused Flag

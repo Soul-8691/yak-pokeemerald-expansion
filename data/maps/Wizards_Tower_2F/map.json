@@ -24,11 +24,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_WIZARDSTOWER_Traiborn",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_wizard_male",
+      "graphics_id": "OBJ_EVENT_GFX_wizard_female",
       "x": 3,
       "y": 5,
       "elevation": 3,
@@ -37,11 +37,11 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_WIZARDSTOWER_Jalarast",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_wizard_female",
+      "graphics_id": "OBJ_EVENT_GFX_wizard_male",
       "x": 10,
       "y": 4,
       "elevation": 3,
@@ -50,7 +50,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_WIZARDSTOWER_Isidor",
       "flag": "0"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_WIZARDSTOWER_RuneGuardian",
       "flag": "0"
     }
   ],

@@ -198,3 +198,87 @@ movement ArianeRunAfterHam6 {
     walk_fast_up * 7
     set_invisible
 }
+
+
+
+
+
+
+
+
+
+
+
+
+script NPC_WIZARDSTOWER_SleepingWizard
+{
+	lock
+	msgbox(format("...\l......\pThey seem to be asleep."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+script NPC_WIZARDSTOWER_Myrtle
+{
+	lock
+	faceplayer
+    namebox ("Myrtle")
+	msgbox(format("I love water types!\lBut I hate getting wet..."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+script NPC_WIZARDSTOWER_NoobshowNPCs
+{
+	lock
+    applymovement(7, MOVEMENT_WIZARDSTOWER_NPC1)
+    waitmovement (0)
+    namebox ("Man 1")
+	msgbox(format("Hmm sorry, what is that?\pI could not hear you because I was totin my staff along this shiny Wizards' Tower road."))
+    waitmessage
+    hidenamebox
+    applymovement(8, MOVEMENT_WIZARDSTOWER_NPC2)
+    waitmovement (0)
+    namebox ("Man 2")
+	msgbox(format("Have you seen a road with so much dust and sand?"))
+    waitmessage
+    hidenamebox
+    applymovement(7, MOVEMENT_WIZARDSTOWER_NPC3)
+    waitmovement (0)
+    namebox ("Man 1")
+	msgbox(format("Listen noob, I have traveled every road in this here land."))
+    waitmessage
+    hidenamebox
+    applymovement(7, MOVEMENT_WIZARDSTOWER_NPC4)
+    waitmovement (0)
+	release
+	end
+}
+
+movement MOVEMENT_WIZARDSTOWER_NPC1
+{
+	face_down
+}
+
+movement MOVEMENT_WIZARDSTOWER_NPC2
+{
+	walk_in_place_up * 2
+}
+
+movement MOVEMENT_WIZARDSTOWER_NPC3
+{
+	walk_in_place_down * 2
+}
+
+movement MOVEMENT_WIZARDSTOWER_NPC4
+{
+	face_left
+}

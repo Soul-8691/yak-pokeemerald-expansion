@@ -204,6 +204,71 @@ ArianeRunAfterHam6:
 	set_invisible
 	step_end
 
+NPC_WIZARDSTOWER_SleepingWizard::
+	lock
+	faceplayer
+	msgbox NPC_WIZARDSTOWER_SleepingWizard_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Myrtle::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_Myrtle_Text_0
+	msgbox NPC_WIZARDSTOWER_Myrtle_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_NoobshowNPCs::
+	lock
+	applymovement 7, MOVEMENT_WIZARDSTOWER_NPC1
+	waitmovement 0
+	namebox NPC_WIZARDSTOWER_NoobshowNPCs_Text_0
+	msgbox NPC_WIZARDSTOWER_NoobshowNPCs_Text_1
+	waitmessage
+	hidenamebox
+	applymovement 8, MOVEMENT_WIZARDSTOWER_NPC2
+	waitmovement 0
+	namebox NPC_WIZARDSTOWER_NoobshowNPCs_Text_2
+	msgbox NPC_WIZARDSTOWER_NoobshowNPCs_Text_3
+	waitmessage
+	hidenamebox
+	applymovement 7, MOVEMENT_WIZARDSTOWER_NPC3
+	waitmovement 0
+	namebox NPC_WIZARDSTOWER_NoobshowNPCs_Text_0
+	msgbox NPC_WIZARDSTOWER_NoobshowNPCs_Text_4
+	waitmessage
+	hidenamebox
+	applymovement 7, MOVEMENT_WIZARDSTOWER_NPC4
+	waitmovement 0
+	release
+	end
+
+
+MOVEMENT_WIZARDSTOWER_NPC1:
+	face_down
+	step_end
+
+MOVEMENT_WIZARDSTOWER_NPC2:
+	walk_in_place_up
+	walk_in_place_up
+	step_end
+
+MOVEMENT_WIZARDSTOWER_NPC3:
+	walk_in_place_down
+	walk_in_place_down
+	step_end
+
+MOVEMENT_WIZARDSTOWER_NPC4:
+	face_left
+	step_end
+
 HAM_EVENT_WizardsTower_2_Text_0:
 	.string "Ariane$"
 
@@ -224,3 +289,35 @@ HAM_EVENT_WizardsTower_3_Text_3:
 
 ChaseAfterHamMemberPlayerTrigger_Text_0:
 	.string "I should help Ariane..$"
+
+NPC_WIZARDSTOWER_SleepingWizard_Text_0:
+	.string "...\l"
+	.string "......\p"
+	.string "They seem to be asleep.$"
+
+NPC_WIZARDSTOWER_Myrtle_Text_0:
+	.string "Myrtle$"
+
+NPC_WIZARDSTOWER_Myrtle_Text_1:
+	.string "I love water types!\l"
+	.string "But I hate getting wet...$"
+
+NPC_WIZARDSTOWER_NoobshowNPCs_Text_0:
+	.string "Man 1$"
+
+NPC_WIZARDSTOWER_NoobshowNPCs_Text_1:
+	.string "Hmm sorry, what is that?\p"
+	.string "I could not hear you because I was\n"
+	.string "totin my staff along this shiny\l"
+	.string "Wizards' Tower road.$"
+
+NPC_WIZARDSTOWER_NoobshowNPCs_Text_2:
+	.string "Man 2$"
+
+NPC_WIZARDSTOWER_NoobshowNPCs_Text_3:
+	.string "Have you seen a road with so much dust\n"
+	.string "and sand?$"
+
+NPC_WIZARDSTOWER_NoobshowNPCs_Text_4:
+	.string "Listen noob, I have traveled every road\n"
+	.string "in this here land.$"

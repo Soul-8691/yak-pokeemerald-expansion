@@ -43,7 +43,7 @@ script WizardsTower_STATE{
 		case 9: 
 			//MOVE WIZARD
 			setobjectxyperm(4,5,14)
-			setobjectmovementtype(4,MOVEMENT_TYPE_WANDER_AROUND)
+			setobjectmovementtype(4,MOVEMENT_TYPE_LOOK_AROUND)
 			removeobject (OBJ_EVENT_ID_SEDRIDOR)
 			removeobject (OBJ_EVENT_ID_ARIANE)
 			removeobject (OBJ_EVENT_ID_HAMGrunt)
@@ -88,13 +88,13 @@ script WizardsTower_SEDRIDOR{
 }
 
 
-//Wizard
+//Wizard Finix
 script WizardsTower_Wizard{
 	switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
 		case 0: 
 			lock
 			faceplayer
-			namebox ("Sedridor")
+			namebox ("Finix")
 			msgbox(format("CUPHOLDER"))
 			hidenamebox
 			release
@@ -109,7 +109,7 @@ script WizardsTower_Wizard{
 		case 8: 
 			lock
 			faceplayer
-			namebox ("Wizard")
+			namebox ("Finix")
 			msgbox(format("Why would that pink hooded guy steal our reasearch papers on the abyss?"))
 			hidenamebox
 			release
@@ -117,7 +117,7 @@ script WizardsTower_Wizard{
 		case 9: 
 			lock
 			faceplayer
-			namebox ("Wizard")
+			namebox ("Finix")
 			msgbox(format("Thank you for helping out earlier."))
 			hidenamebox
 			release
@@ -307,6 +307,223 @@ movement Movement_Wizard_WizardsTower4
 {
 	face_up
 }
+
+
+
+
+
+
+
+script NPC_WIZARDSTOWER_Valina
+{
+	lock
+	faceplayer
+    namebox ("Valina")
+	msgbox(format("Hello.\lWelcome to the Wizards Tower."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_Traiborn
+{
+	lock
+	faceplayer
+    namebox ("Traiborn")
+	msgbox(format("Hey you there!\pHave you seen the Thingummyut?"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_Jalarast
+{
+	lock
+	faceplayer
+    namebox ("Jalarast")
+	if (!flag(FLAG_RECEIVED_SPLITBARK)){
+		msgbox(format("Here you should have this!"))
+		giveitem (ITEM_SPLITBARK, 1)
+		waitmessage
+		closemessage
+		setflag(FLAG_RECEIVED_SPLITBARK)
+		}
+	msgbox(format("Splitbark has amazing Magical properties!\pIt can enhance a Psychic Type's power."))
+	waitmessage
+	hidenamebox
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_Mizog
+{
+	lock
+	faceplayer
+    namebox ("Mizog")
+	msgbox(format("Hi there, I am a Beadromancer.\pI study the power of Magical beads."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_Taloram
+{
+	lock
+	
+    namebox ("Taloram")
+	msgbox(format("Oi Melville, let us mess with Mizog, I caught a ton of Imps earlier and they are itching for a battle."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_Melville_Grayzag
+{
+	lock
+	
+    namebox ("Melville Grayzag")
+	msgbox(format("Heck yeah!\pMy Imp just evolved into a Lesser Demon."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_Borann
+{
+	lock
+	faceplayer
+    namebox ("Borann")
+	msgbox(format("Please be quiet in the Library."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_Isidor
+{
+	lock
+	faceplayer
+    namebox ("Isidor")
+	msgbox(format("I have been working on a new kind of teleportation Magic.\pSurprisingly it works!"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_Ellaron
+{
+	lock
+	faceplayer
+    namebox ("Ellaron")
+	msgbox(format("CAN A WIZARD NOT GET SOME PEACE AND QUIET AROUND HERE! GO AWAY!"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_Onglewip
+{
+	lock
+	faceplayer
+    namebox ("Prof. Onglewip")
+	msgbox(format("Hello human.\pI am here to study what type of Magic the Human Wizards here use in battle."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+//LOCATED IN CHRISTMAS AREA
+script NPC_WIZARDSTOWER_Sinterklaas
+{
+	lock
+	faceplayer
+    namebox ("Sinterklaas")
+	msgbox(format("How did you get in here?!"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_Sioncorn
+{
+	lock
+	faceplayer
+    namebox ("Sioncorn")
+	msgbox(format("Have you seen my Tinsel Snake around here?"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_Rick
+{
+	lock
+	faceplayer
+    namebox ("Rick")
+	msgbox(format("I've recently started to study the evolution of certain Monsters because I nearly lost my head with my previous research."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_SnowImp
+{
+	lock
+	faceplayer
+    namebox ("Snow Imp")
+	msgbox(format("Kekeke!"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+script NPC_WIZARDSTOWER_Rinsit
+{
+	lock
+	faceplayer
+    namebox ("Rinsit")
+	msgbox(format("Sometimes when I'm around a pile of Elemental Runes, I feel like I am being watched."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_RuneGuardian
+{
+	lock
+	faceplayer
+	playmoncry(SPECIES_UNOWN, 0)
+    namebox ("Rune Guardian")
+	msgbox(format("Btttz, btzz!"))
+	waitmoncry
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+
+
+
+
+
 
 
 

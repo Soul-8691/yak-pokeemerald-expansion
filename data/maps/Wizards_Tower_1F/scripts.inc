@@ -103,7 +103,7 @@ WizardsTower_Wizard::
 WizardsTower_Wizard_2:
 	lock
 	faceplayer
-	namebox WizardsTower_SEDRIDOR_Text_0
+	namebox WizardsTower_Wizard_Text_0
 	msgbox WizardsTower_SEDRIDOR_Text_1
 	hidenamebox
 	release
@@ -146,8 +146,8 @@ WizardsTower_EVENT_TRIGGER_2:
 	lock
 	applymovement 4, Movement_Wizard_WizardsTower4
 	waitmovement 0
-	namebox WizardsTower_Wizard_Text_0
-	msgbox WizardsTower_EVENT_TRIGGER_Text_0
+	namebox WizardsTower_EVENT_TRIGGER_Text_0
+	msgbox WizardsTower_EVENT_TRIGGER_Text_1
 	closemessage
 	hidenamebox
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_Player_WizardsTower4
@@ -189,7 +189,7 @@ HAM_EVENT_WizardsTower_1::
 	applymovement 9, Movement_Sedridor_WizardsTower1
 	waitmovement 4
 	applymovement 9, Movement_Sedridor_WizardsTower2
-	namebox WizardsTower_Wizard_Text_0
+	namebox WizardsTower_EVENT_TRIGGER_Text_0
 	msgbox HAM_EVENT_WizardsTower_1_Text_3
 	hidenamebox
 	namebox WizardsTower_SEDRIDOR_Text_0
@@ -310,6 +310,192 @@ Movement_Wizard_WizardsTower4:
 	face_up
 	step_end
 
+NPC_WIZARDSTOWER_Valina::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_Valina_Text_0
+	msgbox NPC_WIZARDSTOWER_Valina_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Traiborn::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_Traiborn_Text_0
+	msgbox NPC_WIZARDSTOWER_Traiborn_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Jalarast::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_Jalarast_Text_0
+	goto_if_unset FLAG_RECEIVED_SPLITBARK, NPC_WIZARDSTOWER_Jalarast_2
+NPC_WIZARDSTOWER_Jalarast_1:
+	msgbox NPC_WIZARDSTOWER_Jalarast_Text_2
+	waitmessage
+	hidenamebox
+	release
+	end
+
+NPC_WIZARDSTOWER_Jalarast_2:
+	msgbox NPC_WIZARDSTOWER_Jalarast_Text_1
+	giveitem ITEM_SPLITBARK, 1
+	waitmessage
+	closemessage
+	setflag FLAG_RECEIVED_SPLITBARK
+	goto NPC_WIZARDSTOWER_Jalarast_1
+
+
+NPC_WIZARDSTOWER_Mizog::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_Mizog_Text_0
+	msgbox NPC_WIZARDSTOWER_Mizog_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Taloram::
+	lock
+	namebox NPC_WIZARDSTOWER_Taloram_Text_0
+	msgbox NPC_WIZARDSTOWER_Taloram_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Melville_Grayzag::
+	lock
+	namebox NPC_WIZARDSTOWER_Melville_Grayzag_Text_0
+	msgbox NPC_WIZARDSTOWER_Melville_Grayzag_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Borann::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_Borann_Text_0
+	msgbox NPC_WIZARDSTOWER_Borann_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Isidor::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_Isidor_Text_0
+	msgbox NPC_WIZARDSTOWER_Isidor_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Ellaron::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_Ellaron_Text_0
+	msgbox NPC_WIZARDSTOWER_Ellaron_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Onglewip::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_Onglewip_Text_0
+	msgbox NPC_WIZARDSTOWER_Onglewip_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Sinterklaas::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_Sinterklaas_Text_0
+	msgbox NPC_WIZARDSTOWER_Sinterklaas_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Sioncorn::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_Sioncorn_Text_0
+	msgbox NPC_WIZARDSTOWER_Sioncorn_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Rick::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_Rick_Text_0
+	msgbox NPC_WIZARDSTOWER_Rick_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_SnowImp::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_SnowImp_Text_0
+	msgbox NPC_WIZARDSTOWER_SnowImp_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Rinsit::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_Rinsit_Text_0
+	msgbox NPC_WIZARDSTOWER_Rinsit_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_WIZARDSTOWER_RuneGuardian::
+	lock
+	faceplayer
+	playmoncry SPECIES_UNOWN, 0
+	namebox NPC_WIZARDSTOWER_RuneGuardian_Text_0
+	msgbox NPC_WIZARDSTOWER_RuneGuardian_Text_1
+	waitmoncry
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
 HAM_EVENT_Ariane1::
 	lock
 	namebox HAM_EVENT_Ariane1_Text_0
@@ -398,7 +584,7 @@ WizardsTower_SEDRIDOR_Text_2:
 	.string "Could you please go after Ariane.$"
 
 WizardsTower_Wizard_Text_0:
-	.string "Wizard$"
+	.string "Finix$"
 
 WizardsTower_Wizard_Text_1:
 	.string "Why would that pink hooded guy steal\n"
@@ -408,6 +594,9 @@ WizardsTower_Wizard_Text_2:
 	.string "Thank you for helping out earlier.$"
 
 WizardsTower_EVENT_TRIGGER_Text_0:
+	.string "Wizard$"
+
+WizardsTower_EVENT_TRIGGER_Text_1:
 	.string "Sorry, but the library is off limits for\n"
 	.string "the time being.$"
 
@@ -439,6 +628,125 @@ HAM_EVENT_WizardsTower_1_Text_6:
 	.string "better circumstances but could I ask\l"
 	.string "you go after Ariane incase she gets\l"
 	.string "into trouble.$"
+
+NPC_WIZARDSTOWER_Valina_Text_0:
+	.string "Valina$"
+
+NPC_WIZARDSTOWER_Valina_Text_1:
+	.string "Hello.\l"
+	.string "Welcome to the Wizards Tower.$"
+
+NPC_WIZARDSTOWER_Traiborn_Text_0:
+	.string "Traiborn$"
+
+NPC_WIZARDSTOWER_Traiborn_Text_1:
+	.string "Hey you there!\p"
+	.string "Have you seen the Thingummyut?$"
+
+NPC_WIZARDSTOWER_Jalarast_Text_0:
+	.string "Jalarast$"
+
+NPC_WIZARDSTOWER_Jalarast_Text_1:
+	.string "Here you should have this!$"
+
+NPC_WIZARDSTOWER_Jalarast_Text_2:
+	.string "Splitbark has amazing Magical\n"
+	.string "properties!\p"
+	.string "It can enhance a Psychic Type's power.$"
+
+NPC_WIZARDSTOWER_Mizog_Text_0:
+	.string "Mizog$"
+
+NPC_WIZARDSTOWER_Mizog_Text_1:
+	.string "Hi there, I am a Beadromancer.\p"
+	.string "I study the power of Magical beads.$"
+
+NPC_WIZARDSTOWER_Taloram_Text_0:
+	.string "Taloram$"
+
+NPC_WIZARDSTOWER_Taloram_Text_1:
+	.string "Oi Melville, let us mess with Mizog, I\n"
+	.string "caught a ton of Imps earlier and they\l"
+	.string "are itching for a battle.$"
+
+NPC_WIZARDSTOWER_Melville_Grayzag_Text_0:
+	.string "Melville Grayzag$"
+
+NPC_WIZARDSTOWER_Melville_Grayzag_Text_1:
+	.string "Heck yeah!\p"
+	.string "My Imp just evolved into a Lesser\n"
+	.string "Demon.$"
+
+NPC_WIZARDSTOWER_Borann_Text_0:
+	.string "Borann$"
+
+NPC_WIZARDSTOWER_Borann_Text_1:
+	.string "Please be quiet in the Library.$"
+
+NPC_WIZARDSTOWER_Isidor_Text_0:
+	.string "Isidor$"
+
+NPC_WIZARDSTOWER_Isidor_Text_1:
+	.string "I have been working on a new kind of\n"
+	.string "teleportation Magic.\p"
+	.string "Surprisingly it works!$"
+
+NPC_WIZARDSTOWER_Ellaron_Text_0:
+	.string "Ellaron$"
+
+NPC_WIZARDSTOWER_Ellaron_Text_1:
+	.string "CAN A WIZARD NOT GET SOME PEACE AND\n"
+	.string "QUIET AROUND HERE! GO AWAY!$"
+
+NPC_WIZARDSTOWER_Onglewip_Text_0:
+	.string "Prof. Onglewip$"
+
+NPC_WIZARDSTOWER_Onglewip_Text_1:
+	.string "Hello human.\p"
+	.string "I am here to study what type of Magic\n"
+	.string "the Human Wizards here use in battle.$"
+
+NPC_WIZARDSTOWER_Sinterklaas_Text_0:
+	.string "Sinterklaas$"
+
+NPC_WIZARDSTOWER_Sinterklaas_Text_1:
+	.string "How did you get in here?!$"
+
+NPC_WIZARDSTOWER_Sioncorn_Text_0:
+	.string "Sioncorn$"
+
+NPC_WIZARDSTOWER_Sioncorn_Text_1:
+	.string "Have you seen my Tinsel Snake around\n"
+	.string "here?$"
+
+NPC_WIZARDSTOWER_Rick_Text_0:
+	.string "Rick$"
+
+NPC_WIZARDSTOWER_Rick_Text_1:
+	.string "I've recently started to study the\n"
+	.string "evolution of certain Monsters because\l"
+	.string "I nearly lost my head with my previous\l"
+	.string "research.$"
+
+NPC_WIZARDSTOWER_SnowImp_Text_0:
+	.string "Snow Imp$"
+
+NPC_WIZARDSTOWER_SnowImp_Text_1:
+	.string "Kekeke!$"
+
+NPC_WIZARDSTOWER_Rinsit_Text_0:
+	.string "Rinsit$"
+
+NPC_WIZARDSTOWER_Rinsit_Text_1:
+	.string "Sometimes when I'm around a pile of\n"
+	.string "Elemental Runes, I feel like I am being\l"
+	.string "watched.$"
+
+NPC_WIZARDSTOWER_RuneGuardian_Text_0:
+	.string "Rune Guardian$"
+
+NPC_WIZARDSTOWER_RuneGuardian_Text_1:
+	.string "Btttz, btzz!$"
 
 HAM_EVENT_Ariane1_Text_0:
 	.string "Ariane$"

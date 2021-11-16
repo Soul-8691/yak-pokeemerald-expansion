@@ -9205,6 +9205,8 @@ u16 GetBattleBGM(void)
 
         switch (trainerClass)
         {
+        case TRAINER_CLASS_HAM_GRUNT:
+            return MUS_PS_VS_HAM;   //POKESCAPE
         case TRAINER_CLASS_AQUA_LEADER:
         case TRAINER_CLASS_MAGMA_LEADER:
             return MUS_VS_AQUA_MAGMA_LEADER;
@@ -9214,9 +9216,9 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_MAGMA_ADMIN:
             return MUS_VS_AQUA_MAGMA;
         case TRAINER_CLASS_LEADER:
-            return MUS_VS_GYM_LEADER;
+            return MUS_PS_VS_GYM;   //POKESCAPE
         case TRAINER_CLASS_CHAMPION:
-            return MUS_VS_CHAMPION;
+            return MUS_VS_CHAMPION; //POKESCAPE
         case TRAINER_CLASS_PKMN_TRAINER_3:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return MUS_VS_RIVAL;
@@ -9234,12 +9236,14 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
         default:
-            return MUS_VS_TRAINER;
+            return MUS_PS_VS_TRAINER_F2P; //POKESCAPE
         }
     }
     else
-        return MUS_VS_WILD;
+        return MUS_PS_VS_WILD_F2P;  //POKESCAPE
 }
+
+
 
 void PlayBattleBGM(void)
 {

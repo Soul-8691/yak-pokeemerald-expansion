@@ -33,7 +33,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_mugger",
       "x": 34,
-      "y": 14,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -216,10 +216,17 @@
   "warp_events": [
     {
       "x": 34,
-      "y": 13,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_FOREST",
       "dest_warp_id": 1
+    },
+    {
+      "x": 35,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_LUMBRIDGE_FOREST",
+      "dest_warp_id": 4
     }
   ],
   "coord_events": [

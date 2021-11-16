@@ -17,7 +17,7 @@ Port_Sarim_HAM_EVENT_TRIGGER_2:
 	special SpawnCameraObject
 	applymovement OBJ_EVENT_ID_CAMERA, PORTSARIM_HAM_CAMERA_1
 	delay 40
-	playbgm MUS_ENCOUNTER_AQUA, 1
+	playbgm MUS_PS_ENCOUNTER_HAM, 1
 	waitmovement 0
 	special RemoveCameraObject
 	delay 60

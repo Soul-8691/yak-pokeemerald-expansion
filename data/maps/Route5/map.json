@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE5",
   "name": "Route5",
   "layout": "LAYOUT_ROUTE5",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_VS_ELITE4",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

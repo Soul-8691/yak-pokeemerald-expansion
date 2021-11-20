@@ -120,16 +120,20 @@ script Lumbridge_LACHTOPHER
 		namebox ("Lachtopher")
 		msgbox(format("Free st00f pl0x!"))
 		hidenamebox
-	} else {
+		release
+		end
+		} 
+		else 
+		{
 		lock
 		faceplayer
 		namebox("Lachtopher")
-		msgbox(format("Wow! You're even more broke than me! Here's some money noob."))
+		msgbox(format("Wow!\pYou're even more broke than me!\pHere's some money noob."))
 		addmoney (200, 0)
 		hidenamebox
+		release
+		end
 	}
-
-
 	release
 	end
 }
@@ -171,7 +175,7 @@ script Lumbridge_IMP
 //--EVENT---------------------------------------------------------------------------------------
 script Lumbridge_BANKER
 {
-	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 	lock
 	faceplayer
 	msgbox(format("I'm waiting for my BF to finish work."))
@@ -181,13 +185,19 @@ script Lumbridge_BANKER
 	lock
 	faceplayer
 	msgbox(format("A few years ago we were in a bidding war with a fisherman.\pHe wanted to put a fishing shop here instead of a bank.\pWe polled it to the community and we won by 75% of votes."))
+	applymovement(3, MOVEMENT_LUMBRIDGE_BANKER_FEMALE)
+    waitmovement(0)
 	release
 	end
 }
 
+movement MOVEMENT_LUMBRIDGE_BANKER_FEMALE{
+	face_left
+}
+
 script Lumbridge_EVENT_NPC1
 {
-	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 	lock
 	faceplayer
 	msgbox(format("Woowee!\pSo this is Lumbridge Castle.\pI'm too afraid to walk through the gates."))
@@ -203,7 +213,7 @@ script Lumbridge_EVENT_NPC1
 
 script Lumbridge_EVENT_NPC2
 {
-	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 	lock
 	faceplayer
 	msgbox(format("I really want to meet this professor guy!"))
@@ -219,7 +229,7 @@ script Lumbridge_EVENT_NPC2
 
 script Lumbridge_EVENT_NPC3
 {
-	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 	lock
 	faceplayer
 	msgbox(format("I'm interested in the MvM Championships!"))
@@ -241,7 +251,7 @@ script Lumbridge_EVENT_NPC3
 //Guardsman Pazel
 script Lumbridge_Guard_NORTH 
 {
-	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 		lock
 		faceplayer
 		namebox ("Pazel")
@@ -267,7 +277,7 @@ movement MOVEMENT_LUMBRIDGE_GUARD_NORTH{
 //Guardsman DeShawn
 script Lumbridge_Guard_EAST
 {
-	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 		lock
 		faceplayer
 		namebox ("DeShawn")
@@ -288,7 +298,7 @@ script Lumbridge_Guard_EAST
 //Guardsman Peale
 script Lumbridge_Guard_SOUTH
 {
-	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 		lock
 		faceplayer
 		namebox ("Peale")
@@ -308,7 +318,7 @@ script Lumbridge_Guard_SOUTH
 
 //Guardsman Pazel
 script Lumbridge_Guard_NORTH_TRIGGER{
-	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 		lock
 		PlaySE(SE_PIN)
 		applymovement(13, LUMBRIDGE_GUARD_NORTH_TRIGGER_1)
@@ -339,7 +349,7 @@ movement LUMBRIDGE_GUARD_NORTH_TRIGGER_2{
 
 //Guardsman DeShawn
 script Lumbridge_Guard_EAST_TRIGGER{
-	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 		lock
 		PlaySE(SE_PIN)
 		applymovement(14, LUMBRIDGE_GUARD_EAST_TRIGGER_1)
@@ -370,7 +380,7 @@ movement LUMBRIDGE_GUARD_EAST_TRIGGER_2{
 
 //Guardsman Peale
 script Lumbridge_Guard_SOUTH_TRIGGER{
-	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 		lock
 		PlaySE(SE_PIN)
 		applymovement(12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_1)
@@ -406,8 +416,8 @@ movement LUMBRIDGE_GUARD_SOUTH_TRIGGER_2{
 
 
 script MoveNPCsAfterEvents_Lumbridge{
-    if (flag(FLAG_COOKS_ASSIST_STARTED)){
-        setobjectxyperm(12, 37, 34)
+    if(!(var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)) {
+        setobjectxyperm(12, 37, 33)
         setobjectmovementtype(12,MOVEMENT_TYPE_FACE_DOWN)
 
         setobjectxyperm(14, 41, 20)
@@ -422,8 +432,8 @@ script MoveNPCsAfterEvents_Lumbridge{
 		setobjectxyperm(13, 2, 3)
         setobjectmovementtype(13,MOVEMENT_TYPE_FACE_RIGHT)
 
-		setobjectxyperm(23, 17, 11)
-        setobjectmovementtype(23,MOVEMENT_TYPE_FACE_DOWN)
+		setobjectxyperm(23, 33, 11)
+        setobjectmovementtype(23,MOVEMENT_TYPE_WANDER_AROUND)
 
 		setobjectxyperm(11, 50, 21)
         setobjectmovementtype(11,MOVEMENT_TYPE_FACE_DOWN)
@@ -612,7 +622,7 @@ script Lumbridge_House_Roddeck
 {
 
 	
-	if (flag(FLAG_COOKS_ASSIST_STARTED)){
+	if(!(var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)) {
 		lock
 		faceplayer
 		namebox ("Roddeck")

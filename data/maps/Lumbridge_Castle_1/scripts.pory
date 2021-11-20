@@ -11,12 +11,12 @@ script TryHideHans {
 }
 
 script HideHans2{
-	if (!flag(FLAG_COOKS_ASSIST_STARTED))
-	{
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)) {
 		removeobject(9)
 		setflag(FLAG_TEMP_1)
 	}
 }
+
 
 
 script Lumbridge_Castle_Hans

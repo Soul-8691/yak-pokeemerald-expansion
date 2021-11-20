@@ -74,11 +74,20 @@ movement Movement_Explorer_Jack_2
 script Explorer_Jack_3 {
 	lock
 	faceplayer
-	namebox ("Explorer Jack")
-	msgbox(format("You should make your way to Lumbridge Castle."))
-	hidenamebox
-	release
-	end
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
+		namebox ("Explorer Jack")
+		msgbox(format("You should make your way to Lumbridge Castle."))
+		hidenamebox
+		release
+		end
+	}
+	else {
+		namebox ("Explorer Jack")
+		msgbox(format("Wow!\pThe researcher gave you a monster and you've been invited to participate in the MvM Championships?!\pHow Lucky!"))
+		hidenamebox
+		release
+		end
+	}
 }
 
 

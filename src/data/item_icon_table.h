@@ -611,7 +611,12 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_SICKLE] = {gItemIcon_sickle, gItemIconPalette_sickle},
     [ITEM_SNELM] = {gItemIcon_snelm, gItemIconPalette_snelm},
     [ITEM_SOCK] = {gItemIcon_sock, gItemIconPalette_sock},
+    //QUEST --Cooks assistant
     [ITEM_SPECIAL_CAKE] = {gItemIcon_special_cake, gItemIconPalette_special_cake},
+    [ITEM_SUPER_LARGE_EGG] = {gItemIcon_Egg, gItemIconPalette_Egg},
+    [ITEM_TOP_QUALITY_MILK] = {gItemIcon_MilkBucket, gItemIconPalette_MilkBucket},
+    [ITEM_EXTRA_FINE_FLOUR] = {gItemIcon_FlourPot, gItemIconPalette_FlourPot},
+    //-----
     [ITEM_SPIRITSHIELD] = {gItemIcon_spiritShield, gItemIconPalette_spiritShield},
     [ITEM_SPOTTEDCAPE] = {gItemIcon_spottedCape, gItemIconPalette_spottedCape},
     [ITEM_STAFF_OF_EARTH] = {gItemIcon_staff_of_earth, gItemIconPalette_staff_of_earth},

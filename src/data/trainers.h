@@ -366,7 +366,7 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Duke),
         .party = {.ItemDefaultMoves = sParty_Duke},
-        .scaling = TRUE,
+        .scaling = FALSE,
 
     },
     // lumbridge swamp

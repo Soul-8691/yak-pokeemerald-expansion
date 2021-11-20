@@ -58,13 +58,23 @@ script ArianeChaseHamEvent7{
 }
 
 
+script NPC_RAT
+{
+	lock
+	faceplayer
+    playmoncry(SPECIES_RATTATA, 0)
+	msgbox(format("SKREEK!"))
+    waitmoncry
+	release
+	end
+}
 
 script NPC_SHEEP
 {
 	lock
 	faceplayer
     playmoncry(SPECIES_MAREEP, 0)
-	msgbox(format("BAAA!"))
+	msgbox(format("Baaa!"))
     waitmoncry
 	release
 	end
@@ -75,7 +85,7 @@ script NPC_COW
 	lock
 	faceplayer
     playmoncry(SPECIES_MILTANK, 0)
-	msgbox(format("MOOO!"))
+	msgbox(format("Mooo!"))
     waitmoncry
 	release
 	end
@@ -109,10 +119,10 @@ script Route1FarmerBlocking{
     lock 
     faceplayer
     if (!flag(FLAG_BADGE01_GET)){
-        msgbox("I can't seem to control these dang Cows!")
+        msgbox(format("Some Goblins scared my cows out of their pens.\pNow I'm struggling to get them back in!"))
     }
     else{
-        msgbox("I finally got my Cows out of the way.")
+        msgbox(format("I finally got my Cows out of the way."))
     }
     release
 }
@@ -298,6 +308,9 @@ script Route1FarmerBattle{
     release
 }
 
+
+
+
 script Route1Man{
     msgbox("Isn't my GF great?")
     release
@@ -308,10 +321,7 @@ script Route1Woman{
     release
 }
 
-script GenericCowMoo{
-    msgbox("MOOO")
-    release
-}
+
 
 
 

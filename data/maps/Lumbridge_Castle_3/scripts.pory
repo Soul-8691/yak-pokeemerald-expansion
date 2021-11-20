@@ -1,45 +1,200 @@
-mapscripts Lumbridge_Castle_3_MapScripts {
-    MAP_SCRIPT_ON_TRANSITION{
-        goto (TryMoveGuardLumbridgeCastle3)
+const OBJ_EVENT_ID_DUKE = 1
+
+
+mapscripts Lumbridge_Castle_3_MapScripts{
+	MAP_SCRIPT_ON_LOAD {
+    goto(LUMBRIDGE_GYM_STATE)
     }
 }
 
-script DukeFirstEncounter{
+
+script LUMBRIDGE_GYM_STATE{
+	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+		case 4:
+			//HIDE DUKE
+            removeobject (OBJ_EVENT_ID_DUKE)
+			setflag(FLAG_TEMP_1)
+
+            //MOVE GUARD 1
+			setobjectxyperm(4,5,4)
+			setobjectmovementtype(4,MOVEMENT_TYPE_FACE_DOWN)
+
+            //MOVE CRATES   1
+			setmetatile(3, 7, 1, 0)
+			setmetatile(4, 7, 1, 0)
+			setmetatile(5, 7, 1, 0)
+			setmetatile(5, 6, 1, 0)
+            //HIDE CRATES   1
+            setmetatile(2, 6, 17, 1)
+			setmetatile(2, 7, 17, 1)
+			setmetatile(7, 4, 26, 1)
+			setmetatile(8, 4, 26, 1)
+
+			special(DrawWholeMapView) 
+
+			release
+			end
+
+		case 5:
+            
+            //MOVE GUARD 1
+			setobjectxyperm(4,5,4)
+			setobjectmovementtype(4,MOVEMENT_TYPE_FACE_DOWN)
+            //MOVE GUARD 2
+			setobjectxyperm(2,18,4)
+			setobjectmovementtype(2,MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT)
+
+            //MOVE CRATES   1
+			setmetatile(3, 7, 1, 0)
+			setmetatile(4, 7, 1, 0)
+			setmetatile(5, 7, 1, 0)
+			setmetatile(5, 6, 1, 0)
+            //HIDE CRATES   1
+            setmetatile(2, 6, 17, 1)
+			setmetatile(2, 7, 17, 1)
+			setmetatile(7, 4, 26, 1)
+			setmetatile(8, 4, 26, 1)
+            
+            //HIDE CRATES   2
+			setmetatile(31, 5, 2, 0)
+			setmetatile(32, 5, 2, 0)
+			setmetatile(31, 6, 1, 0)
+			setmetatile(30, 6, 2, 0)
+            //MOVE CRATES   2
+            setmetatile(33, 8, 17, 1)
+			setmetatile(33, 7, 18, 1)
+			setmetatile(29, 4, 17, 1)
+			setmetatile(28, 4, 26, 1)
+
+			special(DrawWholeMapView) 
+
+            release
+            end
+
+		case 6: 
+		case 7: 
+		case 8: 
+		case 9: 
+			release
+			end
+
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script NPC_DUKE_1{
     lock
     faceplayer
+    namebox("Duke Horacio")
     if (!flag(FLAG_BADGE01_GET)){
-        msgbox(format("Hi there! I'm Duke Horacio, lord of castle lumbridge. If you wish to challenge me to a battle you will have to reach the top of the castle."))
+        msgbox(format("Hi there!\pI'm Duke Horacio, lord of castle Lumbridge.\pI heard from my cook that you wish to challenge me to a battle!\pVery well, you will have to reach the top of the castle.\pI shall be waiting!"))
+        closemessage
+        hidenamebox
         fadescreen(FADE_TO_BLACK)
         removeobject(1)
+        setflag(FLAG_TEMP_1)
+        setvar(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 4)
         fadescreen(FADE_FROM_BLACK)
+        goto(LUMBRIDGE_GYM_STATE)
+        release
+        end
     }
     else {
-        msgbox("You fought well earlier!\n I look forward to a rematch.")
+        msgbox(format("You fought well earlier!\n I look forward to a rematch."))
+        hidenamebox
+        release
+        end
     }
     release
+    end
 }
 
-script TryMoveGuardLumbridgeCastle3{
-    if (flag(FLAG_BADGE01_GET)){
-        setobjectxyperm(2, 27, 4)
-        setobjectmovementtype(2,MOVEMENT_TYPE_FACE_DOWN)
-        clearflag (FLAG_DUKE_TALKED)
-    }
-}
 
-script LumbridgeCastleGuard{
-    if (!flag(FLAG_BADGE01_GET)){
-        msgbox(format("This hallway is off limits. You'll have to find another way up."))
-    }
-    else {
-        msgbox(format("Welcome to castle Lumbridge. Mind yourself."))
-    }
-    release
-}
-
-script SigmundMessage{
+script LUMBRIDGE_GYM_GUARD_1 {
     lock
     faceplayer
-    msgbox("I think you're looking for the Duke.\n He's in the next room.")
+    namebox("Guard")
+    switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+		case 3: 
+            msgbox(format("Sorry, this hallway is off limits until I sort out this mess."))
+            hidenamebox
+            release
+            end
+        case 4:
+            msgbox(format("Good luck with your gym challenge!"))
+            hidenamebox
+            release
+            end
+        case 5:
+            msgbox(format("Welcome to Lumbridge Castle.\pMind yourself."))
+            hidenamebox
+            release
+            end
+    }
+    hidenamebox
     release
+    end
 }
+
+
+script LUMBRIDGE_GYM_GUARD_2 {
+    lock
+    faceplayer
+    namebox("Guard")
+    switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+		case 3: 
+        case 4:
+            msgbox(format("Sorry, this hallway is off limits until I sort out this mess."))
+            hidenamebox
+            release
+            end
+        case 5:
+            msgbox(format("Welcome to Lumbridge Castle."))
+            hidenamebox
+            release
+            end
+    }
+    hidenamebox
+    release
+    end
+}
+
+
+//---------------------------------------
+
+
+
+
+
+
+
+script LUMBRIDGE_GYM_SIGMUND {
+    lock
+    faceplayer
+    namebox("Sigmund")
+    msgbox(format("I think you're looking for the Duke.\pHe's in the next room."))
+    hidenamebox
+    release
+    end
+}
+

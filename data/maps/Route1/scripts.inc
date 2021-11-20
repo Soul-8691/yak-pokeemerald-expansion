@@ -56,6 +56,16 @@ ArianeChaseHamEvent7::
 	return
 
 
+NPC_RAT::
+	lock
+	faceplayer
+	playmoncry SPECIES_RATTATA, 0
+	msgbox NPC_RAT_Text_0
+	waitmoncry
+	release
+	end
+
+
 NPC_SHEEP::
 	lock
 	faceplayer
@@ -280,12 +290,6 @@ Route1Woman::
 	return
 
 
-GenericCowMoo::
-	msgbox GenericCowMoo_Text_0
-	release
-	return
-
-
 ArianeChaseHamEvent7_Text_0:
 	.string "H.A.M. member$"
 
@@ -327,11 +331,14 @@ ArianeChaseHamEvent7_Text_11:
 	.string "UGH! This dumb couple keeps blocking my\n"
 	.string "way.. but there is still the manor!$"
 
+NPC_RAT_Text_0:
+	.string "SKREEK!$"
+
 NPC_SHEEP_Text_0:
-	.string "BAAA!$"
+	.string "Baaa!$"
 
 NPC_COW_Text_0:
-	.string "MOOO!$"
+	.string "Mooo!$"
 
 SIGN_ROUTE1_1_Text_0:
 	.string "Fred's Farm.$"
@@ -348,7 +355,9 @@ SIGN_ROUTE1_3_Text_0:
 	.string "SOUTH to DRAYNOR$"
 
 Route1FarmerBlocking_Text_0:
-	.string "I can't seem to control these dang Cows!$"
+	.string "Some Goblins scared my cows out of\n"
+	.string "their pens.\p"
+	.string "Now I'm struggling to get them back in!$"
 
 Route1FarmerBlocking_Text_1:
 	.string "I finally got my Cows out of the way.$"
@@ -423,6 +432,3 @@ Route1Man_Text_0:
 
 Route1Woman_Text_0:
 	.string "I'm actually a guy.$"
-
-GenericCowMoo_Text_0:
-	.string "MOOO$"

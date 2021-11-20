@@ -12,15 +12,200 @@ mapscripts Route12_MapScripts{
 	}
 }
 
-script Cannot_Pass
-{
-	lockall
-	msgbox("You shall not pass!")
-	applymovement (OBJ_EVENT_ID_PLAYER,Cannot_Pass_Move)
-	waitmovement (0)
-	release
 
+
+
+//----------------------------------------------------------------------------
+
+script Gillie_Groats{
+    if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 1)){
+        checkitem (ITEM_TOP_QUALITY_MILK,1)
+	    if (!var(VAR_RESULT)){
+            lock
+            faceplayer
+            namebox ("Gillie Groats")
+            msgbox(format("Hello and welcome to the Groat's Milk Farm!\pWhat can I do for you?"))
+			applymovement(23, ROUTE12_GILLIEGROATS_1)
+			waitmovement(0)
+			msgbox(format("What's that?\nThe cook needs some milk?\pI'll give you some for free this time but next time you'll have to buy some."))
+			giveitem(ITEM_TOP_QUALITY_MILK)
+            hidenamebox
+			msgbox(format("Say hello to the cook for me!"))
+            release
+            end
+        }
+        else {
+            lock
+            faceplayer
+            msgbox(format("Hello and welcome to the Groat's Milk Farm!\pWould you like to buy some Milk?"))
+            pokemart(GroatsShop)
+            release
+            end
+        }
+    }
+    else {
+        lock
+        faceplayer
+        msgbox(format("Hello and welcome to the Groat's Milk Farm!\pWould you like to buy some Milk?"))
+        pokemart(GroatsShop)
+        release
+        end
+    }
 }
+
+movement ROUTE12_GILLIEGROATS_1
+{
+	emote_question_mark
+}
+
+
+raw `
+
+    .align 2
+GroatsShop:
+	.2byte ITEM_MILK_BUCKET
+    .2byte ITEM_EMPTY_BUCKET
+	.2byte ITEM_NONE
+
+    release
+    end
+
+`
+
+//----------------------------------------------------------------------------
+
+
+script NPC_DAIRYCOW{
+	lock
+	faceplayer
+	playmoncry(SPECIES_MILTANK, 0)
+	namebox("Dairy Cow")
+	msgbox(format("Mooo!"))
+	hidenamebox
+	msgbox(format("Would you like to milk the cow?"), MSGBOX_YESNO)
+	if (var(VAR_RESULT)){
+		checkitem(ITEM_EMPTY_BUCKET, 1)
+		if (var(VAR_RESULT)){
+			msgbox(format("You squeeze some milk into your empty bucket."))
+			removeitem (ITEM_EMPTY_BUCKET, 1)
+			giveitem (ITEM_MILK_BUCKET, 1)
+			release
+			end
+		}
+		else{
+			msgbox(format("You squeeze the milk into your imaginary bucket.\p...\pNothing interesting happened."))
+			release
+			end
+		}
+	}
+	hidenamebox
+	release
+	end
+	}
+
+//---------------------------------------------
+
+
+script NPC_LUMBRIDGE_CHICKEN{
+
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 1)){
+        checkitem (ITEM_SUPER_LARGE_EGG,1)
+	    if (!var(VAR_RESULT)){
+			lock
+			faceplayer
+			namebox("Chicken")
+			playmoncry(SPECIES_TORCHIC, 0)
+			msgbox(format("Bwak Bwak!"))
+			waitmoncry
+			hidenamebox
+			msgbox(format("You get into a staring contest with the chicken.."))
+			msgbox(format("{PAUSE 15}… {PAUSE 15}… {PAUSE 15}… {PAUSE 15}{PLAY_SE SE_PIN}!"))
+			closemessage
+			playmoncry(SPECIES_TORCHIC, 0)
+			waitmoncry
+			msgbox(format("The chicken laid an egg!"))
+			giveitem(ITEM_SUPER_LARGE_EGG)
+			release
+			end
+		}
+		else {
+            lock
+            faceplayer
+            namebox("Chicken")
+			playmoncry(SPECIES_TORCHIC, 0)
+			msgbox(format("Bwwaak!"))
+			waitmoncry
+			hidenamebox
+            release
+            end
+        }
+    }
+    else {
+        lock
+        faceplayer
+        namebox("Chicken")
+		playmoncry(SPECIES_TORCHIC, 0)
+		msgbox(format("Bwwaak!"))
+		waitmoncry
+		hidenamebox
+        release
+        end
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script SIGN_ROUTE12
+{
+	lock
+	msgbox(format("NORTH to VARROCK\pWEST to LUMBRIDGE\pEAST to AL KHAIRD"))
+	release
+	end
+}
+
+
+script BLOCK_Route12_Farmer
+{
+	lock
+	faceplayer
+	msgbox(format("Urgh, I wish the goblins would stop messing with my sheep!"))
+	release
+	end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 script Cow_Battle
 {
@@ -65,38 +250,38 @@ script ChickenBattle{
 }
 
 script GoblinBattle4{
-	trainerbattle_single(TRAINER_GOBLIN_4_ROUTE12, "This place goblin place. Human go home.",format("Human strong. This now Goblin and human home."))
-	msgbox(format("Human strong. This now Goblin and human home."))
+	trainerbattle_single(TRAINER_GOBLIN_4_ROUTE12, "This place goblin place.\nHuman go home.",format("Human strong.\nThis now Goblin and human home."))
+	msgbox(format("Human strong.\nThis now Goblin and human home."))
 	release
 }
 
 script GoblinBattle5{
-	trainerbattle_single(TRAINER_GOBLIN_5_ROUTE12, format("Human weak. Feethands show why."),format("Feethands weak. Human show Feethands why."))
-	msgbox(format("Feethands weak. Human show Feethands why."))
+	trainerbattle_single(TRAINER_GOBLIN_5_ROUTE12, format("Human weak.\nFeethands show why."),format("Feethands weak.\nHuman show Feethands why."))
+	msgbox(format("Feethands weak.\nHuman show Feethands why."))
 	release
 }
 
 script GoblinBattle6{
-	trainerbattle_single(TRAINER_GOBLIN_6_ROUTE12, format("Human homes makes for weak monster. See strong monster here."),format("Strong monsters in human homes it seems."))
+	trainerbattle_single(TRAINER_GOBLIN_6_ROUTE12, format("Human homes makes for weak monster.\pSee strong monster here."),format("Strong monsters in human homes it seems."))
 	msgbox(format("Strong monsters in human homes it seems."))
 	release
 }
 
 script GoblinBattle7{
-	trainerbattle_single(TRAINER_GOBLIN_7_ROUTE12, format("Big high war god say human go home."),format("Big high war god calls for rematch. Later. Much later."))
-	msgbox(format("Big high war god calls for rematch. Later. Much later."))
+	trainerbattle_single(TRAINER_GOBLIN_7_ROUTE12, format("Big high war god say human go home."),format("Big high war god calls for rematch.\pLater...\nMuch later..."))
+	msgbox(format("Big high war god calls for rematch.\pLater...\nMuch later..."))
 	release
 }
 
 script RsnBattleRoute12{
-	trainerbattle_single(TRAINER_RSN_ROUTE12, format("You look like a noob, even I could beat you!"),format("Well drat. Maybe I should've looked for rarer monsters around here first."))
-	msgbox(format("Well drat. Maybe I should've looked for rarer monsters around here first."))
+	trainerbattle_single(TRAINER_RSN_ROUTE12, format("You look like a noob, even I could beat you!"),format("Well drat.\pMaybe I should've looked for rarer monsters around here first."))
+	msgbox(format("Well drat.\pMaybe I should've looked for rarer monsters around here first."))
 	release
 }
 
 
 script Route12CookingGoblin{
-	msgbox("Go away human. Goblin cooking.")
+	msgbox("Go away human.\pGoblin cooking.")
 	release
 }
 
@@ -108,25 +293,25 @@ script Route12Farmer{
 
 script Route12MilkLady{
 	faceplayer
-	msgbox(format("If you need milk feel free to milk the cows. Make sure you have an empty bucket!"))
+	msgbox(format("If you need milk feel free to milk the cows.\pMake sure you have an empty bucket!"))
 	release
 }
 
-script MilkCow{
-	msgbox("MOOOO")
-	checkitem(ITEM_EMPTY_BUCKET, 1)
-	if (var(VAR_RESULT)){
-		removeitem (ITEM_EMPTY_BUCKET, 1)
-		giveitem (ITEM_MILK_BUCKET, 1)
-	}
-	else{
-		msgbox(format("If I had an empty bucket I could milk this cow."))
-	}
-	release
-}
 
-movement Cannot_Pass_Move
-{
-	walk_left
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

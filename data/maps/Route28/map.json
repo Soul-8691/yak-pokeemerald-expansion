@@ -40,7 +40,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "BLOCK_Alkharid_Guards",
       "flag": "0"
     },
     {
@@ -53,7 +53,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "BLOCK_Alkharid_Guards",
       "flag": "0"
     },
     {
@@ -167,12 +167,12 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 6,
-      "y": 24,
+      "x": 7,
+      "y": 23,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "Cannot_Pass"
+      "script": "BLOCK_ALKHAIRD_GATE"
     },
     {
       "type": "trigger",
@@ -181,7 +181,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "Cannot_Pass"
+      "script": "BLOCK_ALKHAIRD_GATE"
     }
   ],
   "bg_events": [

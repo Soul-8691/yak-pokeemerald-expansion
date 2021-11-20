@@ -1,23 +1,56 @@
-mapscripts Lumbridge_Castle_4_MapScripts {
-    
+const OBJ_EVENT_ID_DUKE = 1
+
+
+mapscripts Lumbridge_Castle_4_MapScripts{
+
 }
 
-script GymBattle1{
+
+
+
+
+
+script GYMLEADER_DUKE{
     lock
     faceplayer
-    msgbox("So you've made it to the top!\nCongratulations!")
-    trainerbattle_single(TRAINER_DUKE,format("You wish to challenge me to a battle?\nSo be it!\lMay the best trainer win!"),"You beat me.. Congratulations!",GymBattle1Won)
+    namebox("Duke Horacio")
+    msgbox(format("So you've made it to the top!\nCongratulations!\pYou wish to challenge me to a battle?\nSo be it!\lMay the best trainer win!"))
+    hidenamebox
+    trainerbattle_no_intro(TRAINER_DUKE, msgbox(format("You beat me.. Congratulations!")))
+    goto(GYMLEADER_DUKE_BATTLEWON)
+    release
+    end
 }
+    
 
-script GymBattle1Won{
-    msgbox(format("Congratulations! You've managed to defeat me. Here is your official GYM BADGE, you've definitely earned it."))
-    msgbox("OBTAINED THE LUMBRIDGE BADGE!")
-    msgbox(format("Here is my favorite move. Hopefully it will help you on your journey"))
+ script GYMLEADER_DUKE_BATTLEWON{   
+    lock
+    faceplayer
+    namebox("Duke Horacio")
+    msgbox(format("Congratulations!\nYou've managed to defeat me.\pHere is your official GYM BADGE, you've definitely earned it."))
+    hidenamebox
+    playfanfare(MUS_OBTAIN_BADGE)
+    msgbox(format("{PLAYER} received the Lumbridge BADGE from Duke Horacio."))
+    waitfanfare
+    waitmessage
+    namebox("Duke Horacio")
+    msgbox(format("Also have this, it is my favourite move."))
+    hidenamebox
     giveitem (ITEM_TM08, 1)
-    msgbox(format("I suppose you'll be heading to the next gym, correct? Then you'd be wanting to go to Falador. Might I suggest first stopping off at the Wizards' Tower and doing some training with Archmage Sedridor. Best of luck adventurer! The Wizards' Tower is south of Draynor Village. Give Archmage Sedridor my regards."))
+    compare(VAR_RESULT, FALSE)
+	goto_if_eq(Common_EventScript_ShowBagIsFull)
+    namebox("Duke Horacio")
+    msgbox(format("That move is called Slack off, which is exactly what I love to do on my days off.\pHopefully it will help you on your journey."))
+    msgbox(format("Also, I suppose you'll be heading to the next gym, correct?\pThen you would be wanting to go to Falador.\pMight I suggest first stopping off at the Wizards Tower, south of Draynor and doing some training with the Wizards?\pBest of luck adventurer!"))
+    closemessage
+    hidenamebox
     fadescreen(FADE_TO_BLACK)
-    removeobject(1)
-    settrainerflag(TRAINER_LUMBRIDGE_GYM4)
+    removeobject(OBJ_EVENT_ID_DUKE)
+    setflag(FLAG_BADGE01_GET)
+    setvar(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 5)
     fadescreen(FADE_FROM_BLACK)
     release
-}
+    end
+ }
+
+

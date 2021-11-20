@@ -3,19 +3,30 @@ Mill_Lane_Mill_3_MapScripts::
 
 
 Millie_Miller::
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 1
+	goto_if_eq Millie_Miller_1
 	lock
 	faceplayer
-	namebox Millie_Miller_Text_0
-	checktrainerflag TRAINER_MILLIE_MILLER_MILLLANEMILL
-	compare VAR_RESULT, FALSE
-	goto_if_eq Millie_Miller_1
 	msgbox Millie_Miller_Text_4
 	pokemart MillLaneMillFlourShop
-	hidenamebox
 	release
 	end
 
 Millie_Miller_1:
+	checkitem ITEM_EXTRA_FINE_FLOUR, 1
+	compare VAR_RESULT, 0
+	goto_if_eq Millie_Miller_4
+	lock
+	faceplayer
+	msgbox Millie_Miller_Text_4
+	pokemart MillLaneMillFlourShop
+	release
+	end
+
+Millie_Miller_4:
+	lock
+	faceplayer
+	namebox Millie_Miller_Text_0
 	msgbox Millie_Miller_Text_1
 	trainerbattle_single TRAINER_MILLIE_MILLER_MILLLANEMILL, Millie_Miller_Text_2, Millie_Miller_Text_3, GiveQuestWheat
 	hidenamebox
@@ -28,7 +39,7 @@ GiveQuestWheat::
 	faceplayer
 	namebox Millie_Miller_Text_0
 	msgbox GiveQuestWheat_Text_0
-	giveitem ITEM_FLOUR_POT
+	giveitem ITEM_EXTRA_FINE_FLOUR
 	msgbox GiveQuestWheat_Text_1
 	hidenamebox
 	release
@@ -38,6 +49,7 @@ GiveQuestWheat::
     .align 2
 MillLaneMillFlourShop:
 	.2byte ITEM_FLOUR_POT
+    .2byte ITEM_EMPTY_POT
     .2byte ITEM_WHEAT
 	.2byte ITEM_NONE
 
@@ -67,10 +79,11 @@ Millie_Miller_Text_3:
 	.string "I was so close!$"
 
 Millie_Miller_Text_4:
+	.string "Welcome to Mill Lane Mill!\p"
 	.string "Would you like to buy some flour?$"
 
 GiveQuestWheat_Text_0:
-	.string "Congratulations! Here is the flour.$"
+	.string "Congratulations!\nHere is the flour.$"
 
 GiveQuestWheat_Text_1:
 	.string "If you run out you may get some more\n"

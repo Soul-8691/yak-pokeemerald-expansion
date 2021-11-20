@@ -6766,7 +6766,7 @@ const struct Item gItems[] =
 
     [ITEM_MAP] =
     {
-        .name = _("Map"),
+        .name = _("NEWCOMER MAP"),
         .itemId = ITEM_MAP,
         .price = 0,
         .description = sCupholderDesc,
@@ -6804,15 +6804,15 @@ const struct Item gItems[] =
     },
     [ITEM_SPECIAL_CAKE] =
     {
-        .name = _("BIRTHDAY CAKE"),
+        .name = _("SPECIAL CAKE"),
         .itemId = ITEM_SPECIAL_CAKE,
-        .price = 200,
-        .description = sElementalPouchDesc,
+        .price = 0,
+        .description = sSpecialCakeDesc,
+        .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
-        .type = 3,
-        .battleUsage = 2,
+        .type = 4,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = 3,
+        .secondaryId = 0,
     },
     [ITEM_STAKE] =
     {
@@ -7847,4 +7847,42 @@ const struct Item gItems[] =
         .battleUseFunc = ItemUseInBattle_Medicine,
         .secondaryId = 0,
     },
+    [ITEM_SUPER_LARGE_EGG] =
+    {
+        .name = _("EGG"),
+        .itemId = ITEM_SUPER_LARGE_EGG,
+        .price = 0,
+        .description = sSuperLargeEggDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    [ITEM_TOP_QUALITY_MILK] =
+    {
+        .name = _("MILK"),
+        .itemId = ITEM_TOP_QUALITY_MILK,
+        .price = 0,
+        .description = sTopQualityMilkDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    [ITEM_EXTRA_FINE_FLOUR] =
+    {
+        .name = _("FLOUR"),
+        .itemId = ITEM_EXTRA_FINE_FLOUR,
+        .price = 0,
+        .description = sExtraFineFlourDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+
+    
 };

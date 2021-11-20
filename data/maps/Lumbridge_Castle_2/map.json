@@ -2,7 +2,7 @@
   "id": "MAP_LUMBRIDGE_CASTLE_2",
   "name": "Lumbridge_Castle_2",
   "layout": "LAYOUT_LUMBRIDGE_CASTLE_2",
-  "music": "MUS_PS_GYM",
+  "music": "MUS_PS_LUMBRIDGE",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LumbridgeCastleCook",
+      "script": "QUEST_Cooks_Assistant_STATE",
       "flag": "0"
     },
     {
@@ -176,7 +176,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "CheckCookFinished"
+      "script": "QUEST_TRIGGER_BLOCK_COOKSASSISTANT"
     },
     {
       "type": "trigger",
@@ -274,7 +274,7 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "CookCake"
+      "script": "QUEST_COOKING_RANGE_COOKSASSISTANT"
     },
     {
       "type": "sign",
@@ -282,7 +282,15 @@
       "y": 3,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "CookCake"
+      "script": "QUEST_COOKING_RANGE_COOKSASSISTANT"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Lumbridge_Bookshelf"
     }
   ]
 }

@@ -60,16 +60,16 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_monk",
-      "x": 11,
-      "y": 18,
+      "graphics_id": "OBJ_EVENT_GFX_ham_member_female",
+      "x": 33,
+      "y": 8,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "BLOCK_LumbridgeSwamp_HAM",
       "flag": "0"
     },
     {
@@ -108,7 +108,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LumSwampRat",
+      "script": "NPC_RAT",
       "flag": "0"
     },
     {
@@ -121,7 +121,20 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LumSwampRat",
+      "script": "NPC_RAT",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ham_member_male",
+      "x": 34,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "BLOCK_LumbridgeSwamp_HAM",
       "flag": "0"
     }
   ],

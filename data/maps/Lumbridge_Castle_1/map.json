@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_pker",
-      "x": 14,
+      "x": 15,
       "y": 29,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_mercher",
-      "x": 13,
+      "x": 12,
       "y": 23,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -43,7 +43,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_woman_1",
       "x": 29,
-      "y": 27,
+      "y": 26,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -55,7 +55,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_farmer_female",
-      "x": 14,
+      "x": 13,
       "y": 23,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -121,7 +121,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_hans",
       "x": 18,
-      "y": 25,
+      "y": 26,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -134,11 +134,11 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_skiller_1",
       "x": 11,
-      "y": 23,
+      "y": 25,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Lumbridge_Castle_NPC1",
@@ -146,8 +146,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_farmer_male",
-      "x": 28,
-      "y": 23,
+      "x": 27,
+      "y": 29,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,

@@ -85,6 +85,15 @@ Movement_Explorer_Jack_2:
 Explorer_Jack_3::
 	lock
 	faceplayer
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Explorer_Jack_3_1
+	namebox Explorer_Jack_1_Text_0
+	msgbox Explorer_Jack_3_Text_1
+	hidenamebox
+	release
+	end
+
+Explorer_Jack_3_1:
 	namebox Explorer_Jack_1_Text_0
 	msgbox Explorer_Jack_3_Text_0
 	hidenamebox
@@ -124,3 +133,10 @@ Explorer_Jack_2_Text_3:
 Explorer_Jack_3_Text_0:
 	.string "You should make your way to Lumbridge\n"
 	.string "Castle.$"
+
+Explorer_Jack_3_Text_1:
+	.string "Wow!\p"
+	.string "The researcher gave you a monster and\n"
+	.string "you've been invited to participate in\l"
+	.string "the MvM Championships?!\p"
+	.string "How Lucky!$"

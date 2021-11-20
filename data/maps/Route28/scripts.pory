@@ -1,0 +1,46 @@
+
+mapscripts Route28_MapScripts{
+
+}
+
+
+
+script BLOCK_ALKHAIRD_GATE
+{
+	lockall
+	applymovement (1,BLOCK_ALKHAIRD_GATE_1)
+	applymovement (2,BLOCK_ALKHAIRD_GATE_2)
+	waitmovement (0)
+	msgbox(format("Halt!\pOnly those whom possess the Al-Khaird Badge may enter!"))
+	closemessage
+	applymovement (OBJ_EVENT_ID_PLAYER,BLOCK_ALKHAIRD_GATE_3)
+	waitmovement (0)
+	release
+	end
+}
+
+movement BLOCK_ALKHAIRD_GATE_1
+{
+	face_down
+
+}
+movement BLOCK_ALKHAIRD_GATE_2
+{
+	face_up
+
+}
+movement BLOCK_ALKHAIRD_GATE_3
+{
+	walk_left
+
+}
+
+
+script BLOCK_Alkharid_Guards
+{
+	lock
+	faceplayer
+	msgbox(format("Halt!\pOnly those whom possess the Al-Khaird Badge may enter!"))
+	release
+	end
+}

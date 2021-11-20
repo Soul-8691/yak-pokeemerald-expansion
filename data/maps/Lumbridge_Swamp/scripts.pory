@@ -1,6 +1,54 @@
 mapscripts Lumbridge_Swamp_MapScripts {
 } 
 
+
+
+script BLOCK_LumbridgeSwamp_HAM
+{
+	lock
+    applymovement(9, MOVEMENT_LUMBRIDGESWAMP_PINKMAN)
+    namebox ("Pink Man")
+	msgbox(format("Oh come on!\pNewcommer map, more like trash map!"))
+    hidenamebox
+    waitmovement(0)
+    applymovement(4, MOVEMENT_LUMBRIDGESWAMP_PINKGIRL_1)
+    namebox ("Pink Girl")
+	msgbox(format("You are looking at it upside down.\pSee the hideout should be right through here."))
+    waitmovement(0)
+	hidenamebox
+    namebox ("Pink Man")
+	msgbox(format("....."))
+	hidenamebox
+    applymovement(4, MOVEMENT_LUMBRIDGESWAMP_PINKGIRL_2)
+    waitmovement(0)
+	release
+	end
+}
+
+
+movement MOVEMENT_LUMBRIDGESWAMP_PINKMAN{
+    walk_in_place_fast_up *3
+}
+
+movement MOVEMENT_LUMBRIDGESWAMP_PINKGIRL_1{
+	face_right
+}
+
+movement MOVEMENT_LUMBRIDGESWAMP_PINKGIRL_2{
+	face_up
+}
+
+
+
+
+
+
+
+
+
+
+
+
 script LumSwampRsnBattle{
     trainerbattle_single(TRAINER_RSN_LUM_SWAMP, "You look like a noob!","Maybe I'm the noob..")
     msgbox(format("The mill is up ahead. I heard you can get some good wheat there."))

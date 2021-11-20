@@ -1683,3 +1683,23 @@ static const u8 sElementalPouchDesc[] = _(
 static const u8 sCupholderDesc[] = _(
     "This is a Cupholder.");
 
+static const u8 sSpecialCakeDesc[] = _(
+    "A delicious looking\n"
+    "Cake.\n"
+    "(Cooks Assistant)");
+
+static const u8 sSuperLargeEggDesc[] = _(
+    "A super large egg.\n"
+    "\n"
+    "(Cooks Assistant)");
+
+static const u8 sTopQualityMilkDesc[] = _(
+    "Some top quality\n"
+    "milk.\n"
+    "(Cooks Assistant)");
+
+static const u8 sExtraFineFlourDesc[] = _(
+    "Some extra fine\n"
+    "flour.\n"
+    "(Cooks Assistant)");
+

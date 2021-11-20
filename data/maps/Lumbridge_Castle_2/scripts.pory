@@ -1,3 +1,5 @@
+const OBJ_EVENT_ID_COOK = 1
+
 mapscripts Lumbridge_Castle_2_MapScripts{
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_POKESCAPE_LUMBRIDGE_CASTLE_STATE, 0: Lumbridge_Castle_Introduction
@@ -5,6 +7,17 @@ mapscripts Lumbridge_Castle_2_MapScripts{
 
 }
 
+
+
+
+
+script Lumbridge_Bookshelf
+{
+	lock
+	msgbox(format("There is a Book with the title Adamantman Guide.\pInside the pages are torn and graffitied with the words Adamantmen are noobs."))
+	release
+	end
+}
 
 
 
@@ -48,8 +61,10 @@ movement Movement_Lumbridge_Castle_HALLWAY_TRIGGER3{
 	face_left
 }
 //-----------------------------------------------------------------------
+
+
 script Lumbridge_Castle_COOKS_TRIGGER{
-	if(!flag(FLAG_COOKS_ASSIST_STARTED)){
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 		lock
 		PlaySE(SE_PIN)
 		applymovement(OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_COOKS_TRIGGER1)
@@ -82,7 +97,7 @@ movement Movement_Lumbridge_Castle_COOKS_TRIGGER2{
 script Lumbridge_Castle_Introduction
 {
 //SECTION 1
-	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 	lockall
 	setvar(VAR_POKESCAPE_LUMBRIDGE_CASTLE_STATE, 1)
 	getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
@@ -191,13 +206,13 @@ script Lumbridge_Castle_Professor_Normal_Tree_1{
 			waitmovement(0)
 		}
 		namebox ("Prof. Normal Tree")
-		msgbox(format("Nice.\pPlease take this BEASTIARY."))
+		msgbox(format("Nice.\pPlease take this BESTIARY."))
 		hidenamebox
 		playfanfare(MUS_OBTAIN_ITEM)
-		msgbox(format("Obtained the BEASTIARY."))
+		msgbox(format("Obtained the BESTIARY."))
 		waitfanfare
 		namebox ("Prof. Normal Tree")
-		msgbox(format("I've got to head to Kandarin now, I look forward to seeing how much of the BEASTIARY you've filled out the next we meet.\pUntil then...\lNice."))
+		msgbox(format("I've got to head to Kandarin now, I look forward to seeing how much of the BESTIARY you've filled out the next we meet.\pUntil then...\lNice."))
 		waitmessage
 		hidenamebox
 		closemessage
@@ -252,7 +267,7 @@ script Starter_TRIGGER{
 	if(!flag(FLAG_SYS_POKEMON_GET)){
 		lock
 		namebox ("Prof. Normal Tree")
-		msgbox(format("Please choose from one of these 3 monsters on the table."))
+		msgbox(format("Don't leave!\pPlease choose from one of these 3 monsters on the table."))
 		waitmessage
 		hidenamebox
 		closemessage
@@ -378,7 +393,7 @@ movement Movement_Starter3
 script Pouch_Starter1 {
 	lock
 	if ((flag(FLAG_STARTER2)) || flag(FLAG_STARTER3)){
-		msgbox("You have already chosen!")
+		msgbox("You have already chosen!\pNo need to be greedy!")
 		release
 	}	
 	else{
@@ -442,7 +457,7 @@ script Pouch_Starter1 {
 script Pouch_Starter2 {
 	lock
 	if ((flag(FLAG_STARTER1)) || flag(FLAG_STARTER3)){
-		msgbox("You have already chosen!")
+		msgbox("You have already chosen!\pNo need to be greedy!")
 		release	
 	}
 	else{
@@ -504,7 +519,7 @@ script Pouch_Starter2 {
 script Pouch_Starter3 {
 	lock
 	if ((flag(FLAG_STARTER1)) || flag(FLAG_STARTER2)){
-		msgbox("You have already chosen!")
+		msgbox("You have already chosen!\pNo need to be greedy!")
 		release		
 	}	
 	else{
@@ -585,109 +600,322 @@ script Pouch_Starter3 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		
 
 
 //-------------COOKS ASSISTANT----------------------------------------------------------
-script LumbridgeCastleCook{
+
+script QUEST_Cooks_Assistant_STATE{
 	lock
 	faceplayer
-	checkitem(ITEM_CAKE, 1)
-	if (var(VAR_RESULT) && !flag(FLAG_COOKS_ASSIST_FINISHED)){
-		removeitem (ITEM_CAKE, 1)
-		msgbox(format("I am saved! Thank you so much!\pFeel free to use my Range anytime."))
-		msgbox(format(" Oh? What's that?\n You wanted to challenge the Duke to a Gym Battle?\p Why didn't you say so!\n Go straight up those stairs.\n I'll let him know you're coming."))
-		setflag(FLAG_COOKS_ASSIST_FINISHED)
-		release
-	}
+	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+		case 0: 
+			namebox ("Cook")
+			msgbox(format("Oh dear..\pWhat am I to do..\nI'm in a terrible, terrible mess!\pI should be making a cake for the Duke but I forgot to get the ingredients!"))
+			msgbox(format("Can you please help me?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT)){
+				msgbox(format("Oh, thank you, thank you!\pI need an egg, some milk, and some flour.\pFor the eggs you should check out the chicken farms, around Lumbridge.\pYou can get some milk from the Cow Field, east of Lumbridge.\pYou should ask someone at the Windmill if they can give you some flour, north of Lumbridge."))
+				msgbox(format("Oh..\nBefore you go."))
+				giveitem (ITEM_MAP)
+				msgbox(format("Hopefully that map will help you if you get lost."))
+				setvar(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 1)
+				hidenamebox
+				release
+				end
+			}
+			else {
+				namebox ("Cook")
+				msgbox(format("Fine!\pI always knew you adventurer types were callous beasts!\pGo on your merry way."))
+				hidenamebox
+				release
+				end
+			}
 
-	if (!flag(FLAG_COOKS_ASSIST_STARTED)){
-		msgbox(CookAssistStartTextFirst)
-		msgbox(CookAssistStartTextSecond)
-		msgbox("Can you please help me?", MSGBOX_YESNO)
-		if (var(VAR_RESULT)){
-			msgbox("Oh, thank you, thank you!")
-			msgbox(CookItemsListFirst)
-			msgbox(CookItemsListSecond)
-			msgbox("oh.. before you go.")
-			giveitem (ITEM_MAP)
-			msgbox(format("Hopefully that map will help you if you get lost."))
-			setflag(FLAG_COOKS_ASSIST_STARTED)
-			release
-		}
-		else{
-			msgbox(format("Fine! I always knew you adventurer types were callous beasts! Go on your merry way."))
-			release
-		}
-	}
 
-	elif (flag(FLAG_COOKS_ASSIST_STARTED) && !flag(FLAG_COOKS_ASSIST_FINISHED)){
-		msgbox(format("Do you need help with finding the ingredients?"), MSGBOX_YESNO)
-		if (var(VAR_RESULT)){
-			msgbox("I need an egg, some milk, and some flour.")
-			checkitem (ITEM_EGG,1)
+
+
+    	case 1: 
+			namebox ("Cook")
+			msgbox(format("Do you have the ingredients?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT)){
+				msgbox(format("Let me check..."))
+				call(CooksAssistant_Check_EGG)
+				call(CooksAssistant_Check_MILK)
+				call(CooksAssistant_Check_FLOUR)
+				msgbox(format("It looks like you have everything!\p...\pThis is a bit awkward but could you also bake the cake?\pI forgot how...\pPlease use the range over there!"))
+				setvar(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 2)
+				hidenamebox
+				release
+				end
+			}
+			else {
+				msgbox(format("Please Hurry.."))
+				hidenamebox
+				release
+				end
+			}
+
+
+
+
+		case 2: 
+			checkitem(ITEM_SPECIAL_CAKE, 1)
 			if (!var(VAR_RESULT)){
-				msgbox(format("You should visit the farm north of here for an egg."))
+				namebox ("Cook")
+				msgbox(format("What you don't know how to bake a cake either?!\pTry throwing all of the ingredents on the range and see what happens."))
+				hidenamebox
+				release
+				end
 			}
-			else{
-				checkitem (ITEM_MILK_BUCKET,1)
-				if (var(VAR_RESULT)){
-					checkitem (ITEM_FLOUR_POT, 1)
-					if(var(VAR_RESULT)){
-						msgbox(format("It looks like you have everything!\p Could you also make the cake?\n I forgot how.\p Use the range over there!"))
-						release
-					}
-				}
+			else {
+				msgbox(format("{PLAYER} handed the SPECIAL CAKE to the Cook."))
+				removeitem (ITEM_SPECIAL_CAKE, 1)
+				namebox ("Cook")
+				msgbox(format("I am saved!\nThank you so much!\pFeel free to use my range anytime!"))
+				playse(SE_PIN)
+				applymovement(OBJ_EVENT_ID_COOK,COOK_COOKSASSISTANT_1)
+				waitmovement(0)
+				msgbox(format("Oh?\nWhat's that?\pYou wanted to challenge the Duke to a Gym Battle?\pWhy didn't you say so!\pGo straight up those stairs.\n I'll let him know you're coming."))
+				setvar(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 3)
+				hidenamebox
+				release
+				end
 			}
-			checkitem(ITEM_MILK_BUCKET,1)
-			if(!var(VAR_RESULT)){
-				msgbox(format("You can get some milk from the Cow Field, east of Lumbridge."))
-			}
-			checkitem(ITEM_FLOUR_POT,1)
-			if(!var(VAR_RESULT)){
-				msgbox(format("You should ask someone at the Windmill if they can give you some flour."))
-			}
-			release	
-		}
-		else {
-			msgbox("Great! Please hurry!")
-			release
-		}
-	}
-	else{
-		msgbox("Thanks again for all the help!")
-		release
-	}
 
+		case 3: 
+			namebox ("Cook")
+			msgbox(format("Just head up those stairs, you'll find the Duke up there."))
+			hidenamebox
+			release
+			end
+		case 4: 
+		case 5:
+		namebox ("Cook")
+			msgbox(format("Thank you for all of your help earlier!"))
+			hidenamebox
+			release
+			end
+
+
+	}
 }
 
-script FillBucketWater{
-	checkitem (ITEM_EMPTY_BUCKET, 1)
-	if (var(VAR_RESULT)){
-		removeitem (ITEM_EMPTY_BUCKET, 1)
-		giveitem (ITEM_WATER_BUCKET, 1)
+movement COOK_COOKSASSISTANT_1 {
+	emote_question_mark
+}
+//---------------------------------------------------------------------------------
+
+
+script CooksAssistant_Check_MILK {
+	checkitem (ITEM_TOP_QUALITY_MILK,1)
+	if (!var(VAR_RESULT)){
+		msgbox(format("You don't have any milk.\pYou can get some milk from the Cow Field, east of Lumbridge."))
+		hidenamebox
+		//goto(SCRIPT_CooksAssistant_DoYouNeedHelp)
 		release
+		end
 	}
 	else {
-		msgbox("Running water - A nice feature!")
-		release
+		msgbox(format("You have the milk!"))
+		return
 	}
 }
+
+script CooksAssistant_Check_FLOUR {
+	checkitem (ITEM_EXTRA_FINE_FLOUR,1)
+	if (!var(VAR_RESULT)){
+		msgbox(format("You don't have any flour.\pYou should ask someone at the Windmill if they can give you some flour, north of Lumbridge."))
+		hidenamebox
+		//goto(SCRIPT_CooksAssistant_DoYouNeedHelp)
+		release
+		end
+	}
+	else {
+		msgbox(format("You have the flour!"))
+		return
+	}
+}
+
+script CooksAssistant_Check_EGG {
+	checkitem (ITEM_SUPER_LARGE_EGG,1)
+	if (!var(VAR_RESULT)){
+		msgbox(format("You don't have any eggs.\pYou check out the chicken farms, around Lumbridge."))
+		hidenamebox
+		//goto(SCRIPT_CooksAssistant_DoYouNeedHelp)
+		release
+		end
+	}
+	else {
+		msgbox(format("You have the egg!"))
+		return
+	}
+}
+
+
+//---------------------------------------------------------------------------------
+
+script QUEST_TRIGGER_BLOCK_COOKSASSISTANT{
+	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+		case 0: 
+		case 1: 
+		case 2: 
+			lock
+			playSE(SE_PIN)
+			applymovement(OBJ_EVENT_ID_COOK, BLOCK_COOKSASSISTANT_1)
+			waitmovement(0)
+			msgbox(format("Hey you!\nCome here!"))
+			closemessage
+			applymovement(OBJ_EVENT_ID_PLAYER,BLOCK_COOKSASSISTANT_2)
+			waitmovement(0)
+			release
+			end
+		case 3: 
+		case 4: 
+		case 5: 
+			release
+			end
+	}
+}
+
+
+
+movement BLOCK_COOKSASSISTANT_1 {
+	emote_exclamation_mark
+	jump_in_place_left
+}
+movement BLOCK_COOKSASSISTANT_2 {
+	walk_right * 2
+	walk_down * 2
+	walk_right * 3
+
+}
+
+//---------------------------------------------------------------------------------
+
+
+
+script QUEST_COOKING_RANGE_COOKSASSISTANT{
+	lock
+	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+		case 0: 
+		case 1: 
+			lock
+			delay_16
+			playSE(SE_PIN)
+			applymovement(OBJ_EVENT_ID_COOK, COOK_COOKSASSISTANT_2)
+			waitmovement(0)
+			namebox("Cook")
+			msgbox(format("Hey don't use my range without asking first!"))
+			hidenamebox
+			release
+			end
+
+		case 2: 
+			checkitem (ITEM_SPECIAL_CAKE,1)
+			if (!var(VAR_RESULT)){
+				msgbox(format("Would you like to bake a cake?"), MSGBOX_YESNO)
+				if (var(VAR_RESULT)){
+					call(CooksAssistant_RANGE_Check_EGG)
+					call(CooksAssistant_RANGE_Check_MILK)
+					call(CooksAssistant_RANGE_Check_FLOUR)
+					removeitem(ITEM_SUPER_LARGE_EGG)
+					removeitem(ITEM_TOP_QUALITY_MILK)
+					removeitem(ITEM_EXTRA_FINE_FLOUR)
+					msgbox(format("...\pUnsure on how to bake a cake you throw all the ingredients at the range.")) 
+					msgbox(format("{PAUSE 32}1, {PAUSE 15}2, and{PAUSE 15}… {PAUSE 15}… {PAUSE 15}… {PAUSE 15}{PLAY_SE SE_BALL_BOUNCE_1}Poof!\pYou bake a cake!"))
+					giveitem(ITEM_SPECIAL_CAKE, 1)
+					release
+					end
+				}
+				else {
+					msgbox(format("You decided that your Cooking level was too low to complete this task."))
+					release
+					end
+				}
+			}
+			else {
+				msgbox(format("You have already baked the cake."))
+				release
+				end
+			}
+
+		case 3: 
+		case 4: 
+		case 5: 
+			msgbox(format("EVENT DONE! GO TO NORMAL RANGE COOKING."))
+			release
+			end
+	}
+}
+
+
+movement COOK_COOKSASSISTANT_2 {
+	emote_exclamation_mark
+	jump_in_place_up
+}
+
+
+
+script CooksAssistant_RANGE_Check_MILK {
+	checkitem (ITEM_TOP_QUALITY_MILK,1)
+	if (!var(VAR_RESULT)){
+		msgbox(format("You don't have any milk."))
+		release
+		end
+	}
+	else {
+		return
+	}
+}
+
+script CooksAssistant_RANGE_Check_FLOUR {
+	checkitem (ITEM_EXTRA_FINE_FLOUR,1)
+	if (!var(VAR_RESULT)){
+		msgbox(format("You don't have any flour."))
+		release
+		end
+	}
+	else {
+		return
+	}
+}
+
+script CooksAssistant_RANGE_Check_EGG {
+	checkitem (ITEM_SUPER_LARGE_EGG,1)
+	if (!var(VAR_RESULT)){
+		msgbox(format("You don't have any eggs."))
+		release
+		end
+	}
+	else {
+		return
+	}
+}
+
+
+//----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 script CookCake{
 	lock
@@ -723,47 +951,38 @@ script CookCake{
 	release
 }
 
-script CheckCookFinished{
-	if (!flag(FLAG_COOKS_ASSIST_FINISHED)){
-		lock
-		applymovement(1, CookAlert)
-		waitmovement(0)
-		msgbox(format("Hey come here!"))
+
+
+
+
+
+
+
+
+
+script FillBucketWater{
+	checkitem (ITEM_EMPTY_BUCKET, 1)
+	if (var(VAR_RESULT)){
+		removeitem (ITEM_EMPTY_BUCKET, 1)
+		giveitem (ITEM_WATER_BUCKET, 1)
 		release
-		applymovement(OBJ_EVENT_ID_PLAYER,ReturnToCook)
-		waitmovement(0)
 	}
-	release
+	else {
+		msgbox("Running water - A nice feature!")
+		release
+	}
 }
 
 
 
-movement CookAlert {
-	jump_in_place_left
-	emote_exclamation_mark
-}
-movement ReturnToCook {
-	walk_right*2
-	walk_down*2
-	walk_right*2
-
-}
-
-text CookAssistStartTextFirst{
-	format("Oh dear.. What am I to do.. I'm in a terrible, terrible mess!")
-}
-text CookAssistStartTextSecond{
-	format("I should be making a cake for the Duke but I forgot to get the ingredients!")
-}
 
 
-text CookItemsListFirst{
-	format("I need an egg, some milk and some flour. You should go visit the farm north of here for an egg.")
-}
 
-text CookItemsListSecond{
-	format("You can get some milk from the Cow Field, east of Lumbridge. You should ask someone at the Windmill if they can give you some flour.")
-}
+
+
+
+
+
 //-----------------------------------------------------------------------
 
 

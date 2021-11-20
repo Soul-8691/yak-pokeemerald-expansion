@@ -112,7 +112,9 @@ Lumbridge_LACHTOPHER::
 	msgbox Lumbridge_LACHTOPHER_Text_2
 	addmoney 200, 0
 	hidenamebox
-Lumbridge_LACHTOPHER_1:
+	release
+	end
+
 	release
 	end
 
@@ -122,7 +124,8 @@ Lumbridge_LACHTOPHER_2:
 	namebox Lumbridge_LACHTOPHER_Text_0
 	msgbox Lumbridge_LACHTOPHER_Text_1
 	hidenamebox
-	goto Lumbridge_LACHTOPHER_1
+	release
+	end
 
 
 Lumbridge_DOOMSAYER::
@@ -154,10 +157,13 @@ Lumbridge_IMP::
 
 
 Lumbridge_BANKER::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_BANKER_2
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_BANKER_2
 	lock
 	faceplayer
 	msgbox Lumbridge_BANKER_Text_1
+	applymovement 3, MOVEMENT_LUMBRIDGE_BANKER_FEMALE
+	waitmovement 0
 	release
 	end
 
@@ -169,8 +175,13 @@ Lumbridge_BANKER_2:
 	end
 
 
+MOVEMENT_LUMBRIDGE_BANKER_FEMALE:
+	face_left
+	step_end
+
 Lumbridge_EVENT_NPC1::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_EVENT_NPC1_2
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_EVENT_NPC1_2
 	lock
 	faceplayer
 	msgbox Lumbridge_EVENT_NPC1_Text_1
@@ -186,7 +197,8 @@ Lumbridge_EVENT_NPC1_2:
 
 
 Lumbridge_EVENT_NPC2::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_EVENT_NPC2_2
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_EVENT_NPC2_2
 	lock
 	faceplayer
 	msgbox Lumbridge_EVENT_NPC2_Text_1
@@ -202,7 +214,8 @@ Lumbridge_EVENT_NPC2_2:
 
 
 Lumbridge_EVENT_NPC3::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_EVENT_NPC3_2
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_EVENT_NPC3_2
 	lock
 	faceplayer
 	msgbox Lumbridge_EVENT_NPC3_Text_1
@@ -218,7 +231,8 @@ Lumbridge_EVENT_NPC3_2:
 
 
 Lumbridge_Guard_NORTH::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_NORTH_2
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_Guard_NORTH_2
 	lock
 	faceplayer
 	namebox Lumbridge_Guard_NORTH_Text_0
@@ -244,7 +258,8 @@ MOVEMENT_LUMBRIDGE_GUARD_NORTH:
 	step_end
 
 Lumbridge_Guard_EAST::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_EAST_2
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_Guard_EAST_2
 	lock
 	faceplayer
 	namebox Lumbridge_Guard_EAST_Text_0
@@ -264,7 +279,8 @@ Lumbridge_Guard_EAST_2:
 
 
 Lumbridge_Guard_SOUTH::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_SOUTH_2
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_Guard_SOUTH_2
 	lock
 	faceplayer
 	namebox Lumbridge_Guard_SOUTH_Text_0
@@ -284,7 +300,8 @@ Lumbridge_Guard_SOUTH_2:
 
 
 Lumbridge_Guard_NORTH_TRIGGER::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_NORTH_TRIGGER_2
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_Guard_NORTH_TRIGGER_2
 	release
 	end
 
@@ -318,7 +335,8 @@ LUMBRIDGE_GUARD_NORTH_TRIGGER_2:
 	step_end
 
 Lumbridge_Guard_EAST_TRIGGER::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_EAST_TRIGGER_2
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_Guard_EAST_TRIGGER_2
 	release
 	end
 
@@ -352,7 +370,8 @@ LUMBRIDGE_GUARD_EAST_TRIGGER_2:
 	step_end
 
 Lumbridge_Guard_SOUTH_TRIGGER::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Guard_SOUTH_TRIGGER_2
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_Guard_SOUTH_TRIGGER_2
 	release
 	end
 
@@ -386,11 +405,12 @@ LUMBRIDGE_GUARD_SOUTH_TRIGGER_2:
 	step_end
 
 MoveNPCsAfterEvents_Lumbridge::
-	goto_if_set FLAG_COOKS_ASSIST_STARTED, MoveNPCsAfterEvents_Lumbridge_1
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_ne MoveNPCsAfterEvents_Lumbridge_1
 	return
 
 MoveNPCsAfterEvents_Lumbridge_1:
-	setobjectxyperm 12, 37, 34
+	setobjectxyperm 12, 37, 33
 	setobjectmovementtype 12, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 14, 41, 20
 	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
@@ -400,8 +420,8 @@ MoveNPCsAfterEvents_Lumbridge_1:
 	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
 	setobjectxyperm 13, 2, 3
 	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm 23, 17, 11
-	setobjectmovementtype 23, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 23, 33, 11
+	setobjectmovementtype 23, MOVEMENT_TYPE_WANDER_AROUND
 	setobjectxyperm 11, 50, 21
 	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
 	return
@@ -531,7 +551,8 @@ Lumbridge_GeneralStore_FANFIC::
 
 
 Lumbridge_House_Roddeck::
-	goto_if_set FLAG_COOKS_ASSIST_STARTED, Lumbridge_House_Roddeck_2
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_ne Lumbridge_House_Roddeck_2
 	lock
 	faceplayer
 	namebox Lumbridge_House_Roddeck_Text_0
@@ -671,7 +692,8 @@ Lumbridge_LACHTOPHER_Text_1:
 	.string "Free st00f pl0x!$"
 
 Lumbridge_LACHTOPHER_Text_2:
-	.string "Wow! You're even more broke than me!\n"
+	.string "Wow!\p"
+	.string "You're even more broke than me!\p"
 	.string "Here's some money noob.$"
 
 Lumbridge_DOOMSAYER_Text_0:

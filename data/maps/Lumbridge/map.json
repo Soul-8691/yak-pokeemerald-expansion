@@ -224,15 +224,15 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_rat",
-      "x": 23,
-      "y": 38,
+      "x": 24,
+      "y": 39,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 9,
       "movement_range_y": 9,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_RAT",
       "flag": "0"
     },
     {
@@ -276,15 +276,15 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_rat",
-      "x": 27,
-      "y": 39,
+      "x": 33,
+      "y": 42,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 9,
       "movement_range_y": 9,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_RAT",
       "flag": "0"
     },
     {
@@ -332,8 +332,8 @@
       "y": 26,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Lumbridge_EVENT_NPC2",
@@ -403,7 +403,7 @@
     },
     {
       "x": 9,
-      "y": 13,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_STARTER2",
       "dest_warp_id": 1
@@ -497,14 +497,14 @@
     {
       "type": "weather",
       "x": 42,
-      "y": 51,
+      "y": 44,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
     },
     {
       "type": "weather",
       "x": 43,
-      "y": 51,
+      "y": 44,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
     },
@@ -584,11 +584,39 @@
     {
       "type": "trigger",
       "x": 35,
-      "y": 35,
+      "y": 36,
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "Lumbridge_Guard_SOUTH_TRIGGER"
+    },
+    {
+      "type": "weather",
+      "x": 42,
+      "y": 51,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_SHADE"
+    },
+    {
+      "type": "weather",
+      "x": 43,
+      "y": 51,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_SHADE"
+    },
+    {
+      "type": "weather",
+      "x": 39,
+      "y": 46,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_SUNNY"
+    },
+    {
+      "type": "weather",
+      "x": 39,
+      "y": 47,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_SUNNY"
     }
   ],
   "bg_events": [

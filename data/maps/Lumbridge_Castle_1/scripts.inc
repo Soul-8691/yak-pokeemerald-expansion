@@ -9,7 +9,8 @@ TryHideHans::
 
 
 HideHans2::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, HideHans2_1
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq HideHans2_1
 	return
 
 HideHans2_1:

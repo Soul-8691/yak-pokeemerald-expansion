@@ -332,25 +332,19 @@ static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym4[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Duke[] = {
     {
     .iv = 0,
-    .lvl = 12,
-    .species = SPECIES_PUPPY_PUP_FORM,
-    .heldItem = ITEM_NONE
-    },
-    {
-    .iv = 0,
-    .lvl = 12,
+    .lvl = 8,
     .species = SPECIES_BABY_YAK,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 13,
-    .species = SPECIES_LAMB,
+    .lvl = 8,
+    .species = SPECIES_PUPPY_PUP_FORM,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 15,
+    .lvl = 10,
     .species = SPECIES_ROOSTER_NORMAL_FORM,
     .heldItem = ITEM_NONE
     },

@@ -7,6 +7,13 @@ Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 	.2byte 0
 
 
+Lumbridge_Bookshelf::
+	lock
+	msgbox Lumbridge_Bookshelf_Text_0
+	release
+	end
+
+
 Lumbridge_Castle_GUARD::
 	lock
 	faceplayer
@@ -51,7 +58,8 @@ Movement_Lumbridge_Castle_HALLWAY_TRIGGER3:
 	step_end
 
 Lumbridge_Castle_COOKS_TRIGGER::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Castle_COOKS_TRIGGER_1
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_Castle_COOKS_TRIGGER_1
 	release
 	end
 
@@ -79,7 +87,8 @@ Movement_Lumbridge_Castle_COOKS_TRIGGER2:
 	step_end
 
 Lumbridge_Castle_Introduction::
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, Lumbridge_Castle_Introduction_2
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_Castle_Introduction_2
 Lumbridge_Castle_Introduction_1:
 	release
 	end
@@ -266,7 +275,7 @@ Starter_TRIGGER::
 Starter_TRIGGER_1:
 	lock
 	namebox LeftDoorScript_Text_4
-	msgbox Lumbridge_Castle_Professor_Normal_Tree_2_Text_0
+	msgbox Starter_TRIGGER_Text_0
 	waitmessage
 	hidenamebox
 	closemessage
@@ -673,107 +682,326 @@ Pouch_Starter3_21:
 	goto Pouch_Starter3_20
 
 
-LumbridgeCastleCook::
+QUEST_Cooks_Assistant_STATE::
 	lock
 	faceplayer
-	checkitem ITEM_CAKE, 1
-	compare VAR_RESULT, 0
-	goto_if_ne LumbridgeCastleCook_3
-LumbridgeCastleCook_1:
-	goto_if_unset FLAG_COOKS_ASSIST_STARTED, LumbridgeCastleCook_6
-	goto_if_set FLAG_COOKS_ASSIST_STARTED, LumbridgeCastleCook_9
-LumbridgeCastleCook_8:
-	msgbox LumbridgeCastleCook_Text_14
-	release
+	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
+	case 0, QUEST_Cooks_Assistant_STATE_2
+	case 1, QUEST_Cooks_Assistant_STATE_3
+	case 2, QUEST_Cooks_Assistant_STATE_4
+	case 3, QUEST_Cooks_Assistant_STATE_5
+	case 4, QUEST_Cooks_Assistant_STATE_6
+	case 5, QUEST_Cooks_Assistant_STATE_6
 	return
 
-LumbridgeCastleCook_2:
-	removeitem ITEM_CAKE, 1
-	msgbox LumbridgeCastleCook_Text_0
-	msgbox LumbridgeCastleCook_Text_1
-	setflag FLAG_COOKS_ASSIST_FINISHED
-	release
-	goto LumbridgeCastleCook_1
-
-LumbridgeCastleCook_3:
-	goto_if_unset FLAG_COOKS_ASSIST_FINISHED, LumbridgeCastleCook_2
-	goto LumbridgeCastleCook_1
-
-LumbridgeCastleCook_6:
-	msgbox CookAssistStartTextFirst
-	msgbox CookAssistStartTextSecond
-	msgbox LumbridgeCastleCook_Text_2, MSGBOX_YESNO
+QUEST_Cooks_Assistant_STATE_2:
+	namebox QUEST_Cooks_Assistant_STATE_Text_0
+	msgbox QUEST_Cooks_Assistant_STATE_Text_1
+	msgbox QUEST_Cooks_Assistant_STATE_Text_2, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_ne LumbridgeCastleCook_13
-	msgbox LumbridgeCastleCook_Text_6
+	goto_if_ne QUEST_Cooks_Assistant_STATE_7
+	namebox QUEST_Cooks_Assistant_STATE_Text_0
+	msgbox QUEST_Cooks_Assistant_STATE_Text_6
+	hidenamebox
 	release
-	return
+	end
 
-LumbridgeCastleCook_7:
-	msgbox LumbridgeCastleCook_Text_7, MSGBOX_YESNO
+QUEST_Cooks_Assistant_STATE_3:
+	namebox QUEST_Cooks_Assistant_STATE_Text_0
+	msgbox QUEST_Cooks_Assistant_STATE_Text_7, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_ne LumbridgeCastleCook_16
-	msgbox LumbridgeCastleCook_Text_13
+	goto_if_ne QUEST_Cooks_Assistant_STATE_10
+	msgbox QUEST_Cooks_Assistant_STATE_Text_10
+	hidenamebox
 	release
-	return
+	end
 
-LumbridgeCastleCook_9:
-	goto_if_unset FLAG_COOKS_ASSIST_FINISHED, LumbridgeCastleCook_7
-	goto LumbridgeCastleCook_8
+QUEST_Cooks_Assistant_STATE_4:
+	checkitem ITEM_SPECIAL_CAKE, 1
+	compare VAR_RESULT, 0
+	goto_if_eq QUEST_Cooks_Assistant_STATE_13
+	msgbox QUEST_Cooks_Assistant_STATE_Text_12
+	removeitem ITEM_SPECIAL_CAKE, 1
+	namebox QUEST_Cooks_Assistant_STATE_Text_0
+	msgbox QUEST_Cooks_Assistant_STATE_Text_13
+	playse SE_PIN
+	applymovement 1, COOK_COOKSASSISTANT_1
+	waitmovement 0
+	msgbox QUEST_Cooks_Assistant_STATE_Text_14
+	setvar VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 3
+	hidenamebox
+	release
+	end
 
-LumbridgeCastleCook_13:
-	msgbox LumbridgeCastleCook_Text_3
-	msgbox CookItemsListFirst
-	msgbox CookItemsListSecond
-	msgbox LumbridgeCastleCook_Text_4
+QUEST_Cooks_Assistant_STATE_5:
+	namebox QUEST_Cooks_Assistant_STATE_Text_0
+	msgbox QUEST_Cooks_Assistant_STATE_Text_15
+	hidenamebox
+	release
+	end
+
+QUEST_Cooks_Assistant_STATE_6:
+	namebox QUEST_Cooks_Assistant_STATE_Text_0
+	msgbox QUEST_Cooks_Assistant_STATE_Text_16
+	hidenamebox
+	release
+	end
+
+QUEST_Cooks_Assistant_STATE_7:
+	msgbox QUEST_Cooks_Assistant_STATE_Text_3
+	msgbox QUEST_Cooks_Assistant_STATE_Text_4
 	giveitem ITEM_MAP
-	msgbox LumbridgeCastleCook_Text_5
-	setflag FLAG_COOKS_ASSIST_STARTED
+	msgbox QUEST_Cooks_Assistant_STATE_Text_5
+	setvar VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 1
+	hidenamebox
+	release
+	end
+
+QUEST_Cooks_Assistant_STATE_10:
+	msgbox QUEST_Cooks_Assistant_STATE_Text_8
+	call CooksAssistant_Check_EGG
+	call CooksAssistant_Check_MILK
+	call CooksAssistant_Check_FLOUR
+	msgbox QUEST_Cooks_Assistant_STATE_Text_9
+	setvar VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 2
+	hidenamebox
+	release
+	end
+
+QUEST_Cooks_Assistant_STATE_13:
+	namebox QUEST_Cooks_Assistant_STATE_Text_0
+	msgbox QUEST_Cooks_Assistant_STATE_Text_11
+	hidenamebox
+	release
+	end
+
+
+COOK_COOKSASSISTANT_1:
+	emote_question_mark
+	step_end
+
+CooksAssistant_Check_MILK::
+	checkitem ITEM_TOP_QUALITY_MILK, 1
+	compare VAR_RESULT, 0
+	goto_if_eq CooksAssistant_Check_MILK_1
+	msgbox CooksAssistant_Check_MILK_Text_1
+	return
+
+CooksAssistant_Check_MILK_1:
+	msgbox CooksAssistant_Check_MILK_Text_0
+	hidenamebox
+	release
+	end
+
+
+CooksAssistant_Check_FLOUR::
+	checkitem ITEM_EXTRA_FINE_FLOUR, 1
+	compare VAR_RESULT, 0
+	goto_if_eq CooksAssistant_Check_FLOUR_1
+	msgbox CooksAssistant_Check_FLOUR_Text_1
+	return
+
+CooksAssistant_Check_FLOUR_1:
+	msgbox CooksAssistant_Check_FLOUR_Text_0
+	hidenamebox
+	release
+	end
+
+
+CooksAssistant_Check_EGG::
+	checkitem ITEM_SUPER_LARGE_EGG, 1
+	compare VAR_RESULT, 0
+	goto_if_eq CooksAssistant_Check_EGG_1
+	msgbox CooksAssistant_Check_EGG_Text_1
+	return
+
+CooksAssistant_Check_EGG_1:
+	msgbox CooksAssistant_Check_EGG_Text_0
+	hidenamebox
+	release
+	end
+
+
+QUEST_TRIGGER_BLOCK_COOKSASSISTANT::
+	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
+	case 0, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_2
+	case 1, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_2
+	case 2, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_2
+	case 3, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_3
+	case 4, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_3
+	case 5, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_3
+	return
+
+QUEST_TRIGGER_BLOCK_COOKSASSISTANT_2:
+	lock
+	playSE SE_PIN
+	applymovement 1, BLOCK_COOKSASSISTANT_1
+	waitmovement 0
+	msgbox QUEST_TRIGGER_BLOCK_COOKSASSISTANT_Text_0
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, BLOCK_COOKSASSISTANT_2
+	waitmovement 0
+	release
+	end
+
+QUEST_TRIGGER_BLOCK_COOKSASSISTANT_3:
+	release
+	end
+
+
+BLOCK_COOKSASSISTANT_1:
+	emote_exclamation_mark
+	jump_in_place_left
+	step_end
+
+BLOCK_COOKSASSISTANT_2:
+	walk_right
+	walk_right
+	walk_down
+	walk_down
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+QUEST_COOKING_RANGE_COOKSASSISTANT::
+	lock
+	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
+	case 0, QUEST_COOKING_RANGE_COOKSASSISTANT_2
+	case 1, QUEST_COOKING_RANGE_COOKSASSISTANT_2
+	case 2, QUEST_COOKING_RANGE_COOKSASSISTANT_3
+	case 3, QUEST_COOKING_RANGE_COOKSASSISTANT_4
+	case 4, QUEST_COOKING_RANGE_COOKSASSISTANT_4
+	case 5, QUEST_COOKING_RANGE_COOKSASSISTANT_4
+	return
+
+QUEST_COOKING_RANGE_COOKSASSISTANT_2:
+	lock
+	delay_16
+	playSE SE_PIN
+	applymovement 1, COOK_COOKSASSISTANT_2
+	waitmovement 0
+	namebox QUEST_Cooks_Assistant_STATE_Text_0
+	msgbox QUEST_COOKING_RANGE_COOKSASSISTANT_Text_0
+	hidenamebox
+	release
+	end
+
+QUEST_COOKING_RANGE_COOKSASSISTANT_3:
+	checkitem ITEM_SPECIAL_CAKE, 1
+	compare VAR_RESULT, 0
+	goto_if_eq QUEST_COOKING_RANGE_COOKSASSISTANT_5
+	msgbox QUEST_COOKING_RANGE_COOKSASSISTANT_Text_5
+	release
+	end
+
+QUEST_COOKING_RANGE_COOKSASSISTANT_4:
+	msgbox QUEST_COOKING_RANGE_COOKSASSISTANT_Text_6
+	release
+	end
+
+QUEST_COOKING_RANGE_COOKSASSISTANT_5:
+	msgbox QUEST_COOKING_RANGE_COOKSASSISTANT_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne QUEST_COOKING_RANGE_COOKSASSISTANT_8
+	msgbox QUEST_COOKING_RANGE_COOKSASSISTANT_Text_4
+	release
+	end
+
+QUEST_COOKING_RANGE_COOKSASSISTANT_8:
+	call CooksAssistant_RANGE_Check_EGG
+	call CooksAssistant_RANGE_Check_MILK
+	call CooksAssistant_RANGE_Check_FLOUR
+	removeitem ITEM_SUPER_LARGE_EGG
+	removeitem ITEM_TOP_QUALITY_MILK
+	removeitem ITEM_EXTRA_FINE_FLOUR
+	msgbox QUEST_COOKING_RANGE_COOKSASSISTANT_Text_2
+	msgbox QUEST_COOKING_RANGE_COOKSASSISTANT_Text_3
+	giveitem ITEM_SPECIAL_CAKE, 1
+	release
+	end
+
+
+COOK_COOKSASSISTANT_2:
+	emote_exclamation_mark
+	jump_in_place_up
+	step_end
+
+CooksAssistant_RANGE_Check_MILK::
+	checkitem ITEM_TOP_QUALITY_MILK, 1
+	compare VAR_RESULT, 0
+	goto_if_eq CooksAssistant_RANGE_Check_MILK_1
+	return
+
+CooksAssistant_RANGE_Check_MILK_1:
+	msgbox CooksAssistant_RANGE_Check_MILK_Text_0
+	release
+	end
+
+
+CooksAssistant_RANGE_Check_FLOUR::
+	checkitem ITEM_EXTRA_FINE_FLOUR, 1
+	compare VAR_RESULT, 0
+	goto_if_eq CooksAssistant_RANGE_Check_FLOUR_1
+	return
+
+CooksAssistant_RANGE_Check_FLOUR_1:
+	msgbox CooksAssistant_RANGE_Check_FLOUR_Text_0
+	release
+	end
+
+
+CooksAssistant_RANGE_Check_EGG::
+	checkitem ITEM_SUPER_LARGE_EGG, 1
+	compare VAR_RESULT, 0
+	goto_if_eq CooksAssistant_RANGE_Check_EGG_1
+	return
+
+CooksAssistant_RANGE_Check_EGG_1:
+	msgbox CooksAssistant_RANGE_Check_EGG_Text_0
+	release
+	end
+
+
+CookCake::
+	lock
+	msgbox QUEST_COOKING_RANGE_COOKSASSISTANT_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne CookCake_2
+CookCake_1:
 	release
 	return
 
-LumbridgeCastleCook_16:
-	msgbox LumbridgeCastleCook_Text_8
+CookCake_2:
 	checkitem ITEM_EGG, 1
 	compare VAR_RESULT, 0
-	goto_if_eq LumbridgeCastleCook_20
+	goto_if_ne CookCake_4
+	msgbox CookCake_Text_3
+	goto CookCake_1
+
+CookCake_4:
 	checkitem ITEM_MILK_BUCKET, 1
 	compare VAR_RESULT, 0
-	goto_if_ne LumbridgeCastleCook_26
-LumbridgeCastleCook_19:
-	checkitem ITEM_MILK_BUCKET, 1
-	compare VAR_RESULT, 0
-	goto_if_eq LumbridgeCastleCook_24
-LumbridgeCastleCook_23:
+	goto_if_ne CookCake_7
+	msgbox CookCake_Text_2
+	goto CookCake_1
+
+CookCake_7:
 	checkitem ITEM_FLOUR_POT, 1
 	compare VAR_RESULT, 0
-	goto_if_eq LumbridgeCastleCook_29
-LumbridgeCastleCook_28:
-	release
-	return
+	goto_if_ne CookCake_10
+	msgbox CookCake_Text_1
+	goto CookCake_1
 
-LumbridgeCastleCook_20:
-	msgbox LumbridgeCastleCook_Text_9
-	goto LumbridgeCastleCook_19
-
-LumbridgeCastleCook_24:
-	msgbox LumbridgeCastleCook_Text_11
-	goto LumbridgeCastleCook_23
-
-LumbridgeCastleCook_26:
-	checkitem ITEM_FLOUR_POT, 1
-	compare VAR_RESULT, 0
-	goto_if_ne LumbridgeCastleCook_31
-	goto LumbridgeCastleCook_19
-
-LumbridgeCastleCook_29:
-	msgbox LumbridgeCastleCook_Text_12
-	goto LumbridgeCastleCook_28
-
-LumbridgeCastleCook_31:
-	msgbox LumbridgeCastleCook_Text_10
-	release
-	goto LumbridgeCastleCook_19
+CookCake_10:
+	removeitem ITEM_EGG, 1
+	removeitem ITEM_MILK_BUCKET, 1
+	removeitem ITEM_FLOUR_POT, 1
+	additem ITEM_EMPTY_BUCKET, 1
+	additem ITEM_EMPTY_POT, 1
+	additem ITEM_CAKE, 1
+	msgbox CookCake_Text_0
+	goto CookCake_1
 
 
 FillBucketWater::
@@ -791,77 +1019,12 @@ FillBucketWater_1:
 	return
 
 
-CookCake::
-	lock
-	msgbox CookCake_Text_0, MSGBOX_YESNO
-	compare VAR_RESULT, 0
-	goto_if_ne CookCake_2
-CookCake_1:
-	release
-	return
-
-CookCake_2:
-	checkitem ITEM_EGG, 1
-	compare VAR_RESULT, 0
-	goto_if_ne CookCake_4
-	msgbox CookCake_Text_4
-	goto CookCake_1
-
-CookCake_4:
-	checkitem ITEM_MILK_BUCKET, 1
-	compare VAR_RESULT, 0
-	goto_if_ne CookCake_7
-	msgbox CookCake_Text_3
-	goto CookCake_1
-
-CookCake_7:
-	checkitem ITEM_FLOUR_POT, 1
-	compare VAR_RESULT, 0
-	goto_if_ne CookCake_10
-	msgbox CookCake_Text_2
-	goto CookCake_1
-
-CookCake_10:
-	removeitem ITEM_EGG, 1
-	removeitem ITEM_MILK_BUCKET, 1
-	removeitem ITEM_FLOUR_POT, 1
-	additem ITEM_EMPTY_BUCKET, 1
-	additem ITEM_EMPTY_POT, 1
-	additem ITEM_CAKE, 1
-	msgbox CookCake_Text_1
-	goto CookCake_1
-
-
-CheckCookFinished::
-	goto_if_unset FLAG_COOKS_ASSIST_FINISHED, CheckCookFinished_2
-CheckCookFinished_1:
-	release
-	return
-
-CheckCookFinished_2:
-	lock
-	applymovement 1, CookAlert
-	waitmovement 0
-	msgbox CheckCookFinished_Text_0
-	release
-	applymovement OBJ_EVENT_ID_PLAYER, ReturnToCook
-	waitmovement 0
-	goto CheckCookFinished_1
-
-
-CookAlert:
-	jump_in_place_left
-	emote_exclamation_mark
-	step_end
-
-ReturnToCook:
-	walk_right
-	walk_right
-	walk_down
-	walk_down
-	walk_right
-	walk_right
-	step_end
+Lumbridge_Bookshelf_Text_0:
+	.string "There is a Book with the title\n"
+	.string "Adamantman Guide.\p"
+	.string "Inside the pages are torn and\n"
+	.string "graffitied with the words Adamantmen\l"
+	.string "are noobs.$"
 
 Lumbridge_Castle_GUARD_Text_0:
 	.string "I'm on guard duty.\p"
@@ -938,16 +1101,16 @@ LeftDoorScript_Text_8:
 
 Lumbridge_Castle_Professor_Normal_Tree_1_Text_0:
 	.string "Nice.\p"
-	.string "Please take this BEASTIARY.$"
+	.string "Please take this BESTIARY.$"
 
 Lumbridge_Castle_Professor_Normal_Tree_1_Text_1:
-	.string "Obtained the BEASTIARY.$"
+	.string "Obtained the BESTIARY.$"
 
 Lumbridge_Castle_Professor_Normal_Tree_1_Text_2:
 	.string "I've got to head to Kandarin now, I look\n"
 	.string "forward to seeing how much of the\l"
-	.string "BEASTIARY you've filled out the next\l"
-	.string "we meet.\p"
+	.string "BESTIARY you've filled out the next we\l"
+	.string "meet.\p"
 	.string "Until then...\l"
 	.string "Nice.$"
 
@@ -977,8 +1140,13 @@ Lumbridge_Castle_Hans_1_Text_0:
 	.string "{PLAYER}, I'm sure I'll see you\l"
 	.string "around.$"
 
+Starter_TRIGGER_Text_0:
+	.string "Don't leave!\p"
+	.string "Please choose from one of these 3\n"
+	.string "monsters on the table.$"
+
 Pouch_Starter1_Text_0:
-	.string "You have already chosen!$"
+	.string "You have already chosen!\pNo need to be greedy!$"
 
 Pouch_Starter1_Text_1:
 	.string "This is a Guthling.$"
@@ -1006,103 +1174,168 @@ Pouch_Starter3_Text_0:
 Pouch_Starter3_Text_1:
 	.string "This is an Tumekling.$"
 
-LumbridgeCastleCook_Text_0:
-	.string "I am saved! Thank you so much!\p"
-	.string "Feel free to use my Range anytime.$"
+QUEST_Cooks_Assistant_STATE_Text_0:
+	.string "Cook$"
 
-LumbridgeCastleCook_Text_1:
-	.string "Oh? What's that?\n"
-	.string "You wanted to challenge the Duke to a\l"
-	.string "Gym Battle?\p"
-	.string "Why didn't you say so!\n"
-	.string "Go straight up those stairs.\n"
-	.string "I'll let him know you're coming.$"
-
-LumbridgeCastleCook_Text_2:
-	.string "Can you please help me?$"
-
-LumbridgeCastleCook_Text_3:
-	.string "Oh, thank you, thank you!$"
-
-LumbridgeCastleCook_Text_4:
-	.string "oh.. before you go.$"
-
-LumbridgeCastleCook_Text_5:
-	.string "Hopefully that map will help you if you\n"
-	.string "get lost.$"
-
-LumbridgeCastleCook_Text_6:
-	.string "Fine! I always knew you adventurer\n"
-	.string "types were callous beasts! Go on your\l"
-	.string "merry way.$"
-
-LumbridgeCastleCook_Text_7:
-	.string "Do you need help with finding the\n"
-	.string "ingredients?$"
-
-LumbridgeCastleCook_Text_8:
-	.string "I need an egg, some milk, and some flour.$"
-
-LumbridgeCastleCook_Text_9:
-	.string "You should visit the farm north of here\n"
-	.string "for an egg.$"
-
-LumbridgeCastleCook_Text_10:
-	.string "It looks like you have everything!\p"
-	.string "Could you also make the cake?\n"
-	.string "I forgot how.\p"
-	.string "Use the range over there!$"
-
-LumbridgeCastleCook_Text_11:
-	.string "You can get some milk from the Cow\n"
-	.string "Field, east of Lumbridge.$"
-
-LumbridgeCastleCook_Text_12:
-	.string "You should ask someone at the Windmill\n"
-	.string "if they can give you some flour.$"
-
-LumbridgeCastleCook_Text_13:
-	.string "Great! Please hurry!$"
-
-LumbridgeCastleCook_Text_14:
-	.string "Thanks again for all the help!$"
-
-FillBucketWater_Text_0:
-	.string "Running water - A nice feature!$"
-
-CookCake_Text_0:
-	.string "Would you like to bake a cake?$"
-
-CookCake_Text_1:
-	.string "You bake a cake.$"
-
-CookCake_Text_2:
-	.string "You don't have any flour!$"
-
-CookCake_Text_3:
-	.string "You don't have any milk!$"
-
-CookCake_Text_4:
-	.string "You don't have any eggs!$"
-
-CheckCookFinished_Text_0:
-	.string "Hey come here!$"
-
-CookAssistStartTextFirst::
-	.string "Oh dear.. What am I to do.. I'm in a\n"
-	.string "terrible, terrible mess!$"
-
-CookAssistStartTextSecond::
+QUEST_Cooks_Assistant_STATE_Text_1:
+	.string "Oh dear..\p"
+	.string "What am I to do..\n"
+	.string "I'm in a terrible, terrible mess!\p"
 	.string "I should be making a cake for the Duke\n"
 	.string "but I forgot to get the ingredients!$"
 
-CookItemsListFirst::
-	.string "I need an egg, some milk and some flour.\n"
-	.string "You should go visit the farm north of\l"
-	.string "here for an egg.$"
+QUEST_Cooks_Assistant_STATE_Text_2:
+	.string "Can you please help me?$"
 
-CookItemsListSecond::
+QUEST_Cooks_Assistant_STATE_Text_3:
+	.string "Oh, thank you, thank you!\p"
+	.string "I need an egg, some milk, and some flour.\p"
+	.string "For the eggs you should check out the\n"
+	.string "chicken farms, around Lumbridge.\p"
 	.string "You can get some milk from the Cow\n"
-	.string "Field, east of Lumbridge. You should\l"
-	.string "ask someone at the Windmill if they can\l"
-	.string "give you some flour.$"
+	.string "Field, east of Lumbridge.\p"
+	.string "You should ask someone at the Windmill\n"
+	.string "if they can give you some flour, north\l"
+	.string "of Lumbridge.$"
+
+QUEST_Cooks_Assistant_STATE_Text_4:
+	.string "Oh..\n"
+	.string "Before you go.$"
+
+QUEST_Cooks_Assistant_STATE_Text_5:
+	.string "Hopefully that map will help you if you\n"
+	.string "get lost.$"
+
+QUEST_Cooks_Assistant_STATE_Text_6:
+	.string "Fine!\p"
+	.string "I always knew you adventurer types\n"
+	.string "were callous beasts!\p"
+	.string "Go on your merry way.$"
+
+QUEST_Cooks_Assistant_STATE_Text_7:
+	.string "Do you have the ingredients?$"
+
+QUEST_Cooks_Assistant_STATE_Text_8:
+	.string "Let me check...$"
+
+QUEST_Cooks_Assistant_STATE_Text_9:
+	.string "It looks like you have everything!\p"
+	.string "...\p"
+	.string "This is a bit awkward but could you also\n"
+	.string "bake the cake?\p"
+	.string "I forgot how...\p"
+	.string "Please use the range over there!$"
+
+QUEST_Cooks_Assistant_STATE_Text_10:
+	.string "Please Hurry..$"
+
+QUEST_Cooks_Assistant_STATE_Text_11:
+	.string "What you don't know how to bake a cake\n"
+	.string "either?!\p"
+	.string "Try throwing all of the ingredents on\n"
+	.string "the range and see what happens.$"
+
+QUEST_Cooks_Assistant_STATE_Text_12:
+	.string "{PLAYER} handed the SPECIAL CAKE to\n"
+	.string "the Cook.$"
+
+QUEST_Cooks_Assistant_STATE_Text_13:
+	.string "I am saved!\n"
+	.string "Thank you so much!\p"
+	.string "Feel free to use my range anytime!$"
+
+QUEST_Cooks_Assistant_STATE_Text_14:
+	.string "Oh?\n"
+	.string "What's that?\p"
+	.string "You wanted to challenge the Duke to a\n"
+	.string "Gym Battle?\p"
+	.string "Why didn't you say so!\p"
+	.string "Go straight up those stairs.\n"
+	.string "I'll let him know you're coming.$"
+
+QUEST_Cooks_Assistant_STATE_Text_15:
+	.string "Just head up those stairs, you'll find\n"
+	.string "the Duke up there.$"
+
+QUEST_Cooks_Assistant_STATE_Text_16:
+	.string "Thank you for all of your help earlier!$"
+
+CooksAssistant_Check_MILK_Text_0:
+	.string "You don't have any milk.\p"
+	.string "You can get some milk from the Cow\n"
+	.string "Field, east of Lumbridge.$"
+
+CooksAssistant_Check_MILK_Text_1:
+	.string "You have the milk!$"
+
+CooksAssistant_Check_FLOUR_Text_0:
+	.string "You don't have any flour.\p"
+	.string "You should ask someone at the Windmill\n"
+	.string "if they can give you some flour, north\l"
+	.string "of Lumbridge.$"
+
+CooksAssistant_Check_FLOUR_Text_1:
+	.string "You have the flour!$"
+
+CooksAssistant_Check_EGG_Text_0:
+	.string "You don't have any eggs.\p"
+	.string "You check out the chicken farms,\n"
+	.string "around Lumbridge.$"
+
+CooksAssistant_Check_EGG_Text_1:
+	.string "You have the egg!$"
+
+QUEST_TRIGGER_BLOCK_COOKSASSISTANT_Text_0:
+	.string "Hey you!\n"
+	.string "Come here!$"
+
+QUEST_COOKING_RANGE_COOKSASSISTANT_Text_0:
+	.string "Hey don't use my range without asking\n"
+	.string "first!$"
+
+QUEST_COOKING_RANGE_COOKSASSISTANT_Text_1:
+	.string "Would you like to bake a cake?$"
+
+QUEST_COOKING_RANGE_COOKSASSISTANT_Text_2:
+	.string "...\p"
+	.string "Unsure on how to bake a cake you throw\n"
+	.string "all the ingredients at the range.$"
+
+QUEST_COOKING_RANGE_COOKSASSISTANT_Text_3:
+	.string "{PAUSE 32}1, {PAUSE 15}2, and{PAUSE 15}… {PAUSE 15}… {PAUSE 15}… {PAUSE 15}{PLAY_SE SE_BALL_BOUNCE_1}Poof!\p"
+	.string "You bake a cake!$"
+
+QUEST_COOKING_RANGE_COOKSASSISTANT_Text_4:
+	.string "You decided that your Cooking level was\n"
+	.string "too low to complete this task.$"
+
+QUEST_COOKING_RANGE_COOKSASSISTANT_Text_5:
+	.string "You have already baked the cake.$"
+
+QUEST_COOKING_RANGE_COOKSASSISTANT_Text_6:
+	.string "EVENT DONE! GO TO NORMAL RANGE\n"
+	.string "COOKING.$"
+
+CooksAssistant_RANGE_Check_MILK_Text_0:
+	.string "You don't have any milk.$"
+
+CooksAssistant_RANGE_Check_FLOUR_Text_0:
+	.string "You don't have any flour.$"
+
+CooksAssistant_RANGE_Check_EGG_Text_0:
+	.string "You don't have any eggs.$"
+
+CookCake_Text_0:
+	.string "You bake a cake.$"
+
+CookCake_Text_1:
+	.string "You don't have any flour!$"
+
+CookCake_Text_2:
+	.string "You don't have any milk!$"
+
+CookCake_Text_3:
+	.string "You don't have any eggs!$"
+
+FillBucketWater_Text_0:
+	.string "Running water - A nice feature!$"

@@ -896,7 +896,7 @@ QUEST_COOKING_RANGE_COOKSASSISTANT_3:
 	end
 
 QUEST_COOKING_RANGE_COOKSASSISTANT_4:
-	msgbox QUEST_COOKING_RANGE_COOKSASSISTANT_Text_6
+	goto COOKING_RANGE
 	release
 	end
 
@@ -961,47 +961,6 @@ CooksAssistant_RANGE_Check_EGG_1:
 	msgbox CooksAssistant_RANGE_Check_EGG_Text_0
 	release
 	end
-
-
-CookCake::
-	lock
-	msgbox QUEST_COOKING_RANGE_COOKSASSISTANT_Text_1, MSGBOX_YESNO
-	compare VAR_RESULT, 0
-	goto_if_ne CookCake_2
-CookCake_1:
-	release
-	return
-
-CookCake_2:
-	checkitem ITEM_EGG, 1
-	compare VAR_RESULT, 0
-	goto_if_ne CookCake_4
-	msgbox CookCake_Text_3
-	goto CookCake_1
-
-CookCake_4:
-	checkitem ITEM_MILK_BUCKET, 1
-	compare VAR_RESULT, 0
-	goto_if_ne CookCake_7
-	msgbox CookCake_Text_2
-	goto CookCake_1
-
-CookCake_7:
-	checkitem ITEM_FLOUR_POT, 1
-	compare VAR_RESULT, 0
-	goto_if_ne CookCake_10
-	msgbox CookCake_Text_1
-	goto CookCake_1
-
-CookCake_10:
-	removeitem ITEM_EGG, 1
-	removeitem ITEM_MILK_BUCKET, 1
-	removeitem ITEM_FLOUR_POT, 1
-	additem ITEM_EMPTY_BUCKET, 1
-	additem ITEM_EMPTY_POT, 1
-	additem ITEM_CAKE, 1
-	msgbox CookCake_Text_0
-	goto CookCake_1
 
 
 FillBucketWater::
@@ -1312,10 +1271,6 @@ QUEST_COOKING_RANGE_COOKSASSISTANT_Text_4:
 QUEST_COOKING_RANGE_COOKSASSISTANT_Text_5:
 	.string "You have already baked the cake.$"
 
-QUEST_COOKING_RANGE_COOKSASSISTANT_Text_6:
-	.string "EVENT DONE! GO TO NORMAL RANGE\n"
-	.string "COOKING.$"
-
 CooksAssistant_RANGE_Check_MILK_Text_0:
 	.string "You don't have any milk.$"
 
@@ -1324,18 +1279,6 @@ CooksAssistant_RANGE_Check_FLOUR_Text_0:
 
 CooksAssistant_RANGE_Check_EGG_Text_0:
 	.string "You don't have any eggs.$"
-
-CookCake_Text_0:
-	.string "You bake a cake.$"
-
-CookCake_Text_1:
-	.string "You don't have any flour!$"
-
-CookCake_Text_2:
-	.string "You don't have any milk!$"
-
-CookCake_Text_3:
-	.string "You don't have any eggs!$"
 
 FillBucketWater_Text_0:
 	.string "Running water - A nice feature!$"

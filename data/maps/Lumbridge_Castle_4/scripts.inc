@@ -36,12 +36,21 @@ GYMLEADER_DUKE_BATTLEWON::
 	closemessage
 	hidenamebox
 	fadescreen FADE_TO_BLACK
+	call SetGymTrainers_LUMBRIDGE
 	removeobject 1
 	setflag FLAG_BADGE01_GET
 	setvar VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 5
 	fadescreen FADE_FROM_BLACK
 	release
 	end
+
+
+SetGymTrainers_LUMBRIDGE::
+	settrainerflag TRAINER_LUMBRIDGE_GYM1
+	settrainerflag TRAINER_LUMBRIDGE_GYM2
+	settrainerflag TRAINER_LUMBRIDGE_GYM3
+	settrainerflag TRAINER_LUMBRIDGE_GYM4
+	return
 
 
 GYMLEADER_DUKE_Text_0:

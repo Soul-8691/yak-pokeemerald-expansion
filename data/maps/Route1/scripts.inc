@@ -4,56 +4,42 @@ Route1_MapScripts::
 	.byte 0
 
 
+TryMoveNpcsRoute1::
+	goto_if_set FLAG_BADGE01_GET, TryMoveNpcsRoute1_2
+TryMoveNpcsRoute1_1:
+	compare VAR_POKESCAPE_WIZARDS_TOWER_STATE, 6
+	goto_if_ne TryMoveNpcsRoute1_4
+	return
+
+TryMoveNpcsRoute1_2:
+	setobjectxyperm 4, 42, 10
+	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 12, 37, 12
+	setobjectxyperm 13, 43, 12
+	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_DOWN
+	goto TryMoveNpcsRoute1_1
+
+TryMoveNpcsRoute1_4:
+	removeobject 22
+	setflag FLAG_TEMP_5
+	removeobject 23
+	setflag FLAG_TEMP_4
+	return
+
+
 Route1WarpCheck::
 	map_script_2 VAR_TEMP_1, 0, TryMoveNpcsRoute1
 	return
 
 
-ArianeChaseHamEvent7::
-	lockall
-	namebox ArianeChaseHamEvent7_Text_0
-	msgbox ArianeChaseHamEvent7_Text_1
-	hidenamebox
-	namebox ArianeChaseHamEvent7_Text_2
-	msgbox ArianeChaseHamEvent7_Text_3
-	hidenamebox
-	namebox ArianeChaseHamEvent7_Text_4
-	msgbox ArianeChaseHamEvent7_Text_5
-	hidenamebox
-	msgbox ArianeChaseHamEvent7_Text_6
-	namebox ArianeChaseHamEvent7_Text_0
-	msgbox ArianeChaseHamEvent7_Text_7
-	hidenamebox
+NPC_DUCK::
+	lock
+	faceplayer
+	playmoncry SPECIES_PSYDUCK, 0
+	msgbox NPC_DUCK_Text_0
+	waitmoncry
 	release
-	lockall
-	applymovement 23, HamMemberRuns3
-	waitmovement 0
-	applymovement 5, ErnestShoved
-	waitmovement 0
-	namebox ArianeChaseHamEvent7_Text_2
-	msgbox ArianeChaseHamEvent7_Text_8
-	hidenamebox
-	release
-	lockall
-	applymovement 5, ErnestMoveBack
-	namebox ArianeChaseHamEvent7_Text_9
-	msgbox ArianeChaseHamEvent7_Text_10
-	hidenamebox
-	namebox ArianeChaseHamEvent7_Text_0
-	msgbox ArianeChaseHamEvent7_Text_11
-	hidenamebox
-	release
-	lockall
-	applymovement 23, HamMemberRuns4
-	waitmovement 0
-	applymovement 22, ArianeRunAfterHam11
-	waitmovement 0
-	removeobject 23
-	setflag FLAG_TEMP_4
-	removeobject 22
-	setflag FLAG_TEMP_5
-	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 7
-	return
+	end
 
 
 NPC_RAT::
@@ -107,41 +93,39 @@ SIGN_ROUTE1_3::
 	end
 
 
-Route1FarmerBlocking::
+NPC_FISHERMAN_1::
 	lock
 	faceplayer
-	goto_if_unset FLAG_BADGE01_GET, Route1FarmerBlocking_2
-	msgbox Route1FarmerBlocking_Text_1
-Route1FarmerBlocking_1:
+	msgbox NPC_FISHERMAN_1_Text_0
+	checkitem ITEM_SMALL_NET, 1
+	compare VAR_RESULT, 0
+	goto_if_eq NPC_FISHERMAN_1_2
 	release
-	return
+	end
 
-Route1FarmerBlocking_2:
-	msgbox Route1FarmerBlocking_Text_0
-	goto Route1FarmerBlocking_1
+	release
+	end
+
+NPC_FISHERMAN_1_2:
+	msgbox NPC_FISHERMAN_1_Text_1
+	giveitem ITEM_SMALL_NET
+	msgbox NPC_FISHERMAN_1_Text_2
+	release
+	end
 
 
-TryMoveNpcsRoute1::
-	goto_if_set FLAG_BADGE01_GET, TryMoveNpcsRoute1_2
-TryMoveNpcsRoute1_1:
-	compare VAR_POKESCAPE_WIZARDS_TOWER_STATE, 6
-	goto_if_ne TryMoveNpcsRoute1_4
-	return
+BLOCK_ROUTE1_FARMER::
+	lock
+	faceplayer
+	goto_if_unset FLAG_BADGE01_GET, BLOCK_ROUTE1_FARMER_2
+	msgbox BLOCK_ROUTE1_FARMER_Text_1
+BLOCK_ROUTE1_FARMER_1:
+	release
+	end
 
-TryMoveNpcsRoute1_2:
-	setobjectxyperm 4, 42, 9
-	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 12, 38, 9
-	setobjectxyperm 13, 36, 11
-	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_DOWN
-	goto TryMoveNpcsRoute1_1
-
-TryMoveNpcsRoute1_4:
-	removeobject 22
-	setflag FLAG_TEMP_5
-	removeobject 23
-	setflag FLAG_TEMP_4
-	return
+BLOCK_ROUTE1_FARMER_2:
+	msgbox BLOCK_ROUTE1_FARMER_Text_0
+	goto BLOCK_ROUTE1_FARMER_1
 
 
 THEIF_ROUTE_1::
@@ -179,38 +163,19 @@ Trainer1_Route1_Battle::
 	end
 
 
-HamMemberRuns3:
-	walk_fast_left
-	step_end
+MudbeardBattle::
+	trainerbattle_single TRAINER_GOBLIN_3_ROUTE1, MudbeardBattle_Text_0, MudbeardBattle_Text_1
+	msgbox MudbeardBattle_Text_2
+	release
+	return
 
-ErnestShoved:
-	slide_left
-	face_right
-	step_end
 
-ErnestMoveBack:
-	walk_right
-	face_up
-	step_end
+Route1FarmerBattle::
+	trainerbattle_single TRAINER_FARMER_ROUTE1, Route1FarmerBattle_Text_0, Route1FarmerBattle_Text_1
+	msgbox Route1FarmerBattle_Text_1
+	release
+	return
 
-HamMemberRuns4:
-	walk_fast_right
-	walk_fast_right
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	step_end
-
-ArianeRunAfterHam11:
-	walk_fast_left
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	step_end
 
 ChickenBattleScript1::
 	lock
@@ -264,20 +229,6 @@ EvilChickenBattleScript::
 	return
 
 
-MudbeardBattle::
-	trainerbattle_single TRAINER_GOBLIN_3_ROUTE1, MudbeardBattle_Text_0, MudbeardBattle_Text_1
-	msgbox MudbeardBattle_Text_2
-	release
-	return
-
-
-Route1FarmerBattle::
-	trainerbattle_single TRAINER_FARMER_ROUTE1, Route1FarmerBattle_Text_0, Route1FarmerBattle_Text_1
-	msgbox Route1FarmerBattle_Text_1
-	release
-	return
-
-
 Route1Man::
 	msgbox Route1Man_Text_0
 	release
@@ -290,46 +241,88 @@ Route1Woman::
 	return
 
 
-ArianeChaseHamEvent7_Text_0:
-	.string "H.A.M. member$"
+ArianeChaseHamEvent7::
+	lockall
+	namebox ArianeChaseHamEvent7_Text_0
+	msgbox ArianeChaseHamEvent7_Text_1
+	hidenamebox
+	namebox ArianeChaseHamEvent7_Text_2
+	msgbox ArianeChaseHamEvent7_Text_3
+	hidenamebox
+	namebox ArianeChaseHamEvent7_Text_4
+	msgbox ArianeChaseHamEvent7_Text_5
+	hidenamebox
+	msgbox ArianeChaseHamEvent7_Text_6
+	namebox ArianeChaseHamEvent7_Text_0
+	msgbox ArianeChaseHamEvent7_Text_7
+	hidenamebox
+	release
+	lockall
+	applymovement 23, HamMemberRuns3
+	waitmovement 0
+	applymovement 5, ErnestShoved
+	waitmovement 0
+	namebox ArianeChaseHamEvent7_Text_2
+	msgbox ArianeChaseHamEvent7_Text_8
+	hidenamebox
+	release
+	lockall
+	applymovement 5, ErnestMoveBack
+	namebox ArianeChaseHamEvent7_Text_9
+	msgbox ArianeChaseHamEvent7_Text_10
+	hidenamebox
+	namebox ArianeChaseHamEvent7_Text_0
+	msgbox ArianeChaseHamEvent7_Text_11
+	hidenamebox
+	release
+	lockall
+	applymovement 23, HamMemberRuns4
+	waitmovement 0
+	applymovement 22, ArianeRunAfterHam11
+	waitmovement 0
+	removeobject 23
+	setflag FLAG_TEMP_4
+	removeobject 22
+	setflag FLAG_TEMP_5
+	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 7
+	return
 
-ArianeChaseHamEvent7_Text_1:
-	.string "Get out of my way! you're blocking the\n"
-	.string "path!$"
 
-ArianeChaseHamEvent7_Text_2:
-	.string "Ernest$"
+HamMemberRuns3:
+	walk_fast_left
+	step_end
 
-ArianeChaseHamEvent7_Text_3:
-	.string "I'm so glad im not a chicken anymore..\n"
-	.string "that was cluckin scary.$"
+ErnestShoved:
+	slide_left
+	face_right
+	step_end
 
-ArianeChaseHamEvent7_Text_4:
-	.string "Veronica$"
+ErnestMoveBack:
+	walk_right
+	face_up
+	step_end
 
-ArianeChaseHamEvent7_Text_5:
-	.string "Lets just avoid that creepy manor from\n"
-	.string "now on.$"
+HamMemberRuns4:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
 
-ArianeChaseHamEvent7_Text_6:
-	.string "Kissing noises$"
+ArianeRunAfterHam11:
+	walk_fast_left
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
 
-ArianeChaseHamEvent7_Text_7:
-	.string "I SAID GET OUT OF THE WAY!!$"
-
-ArianeChaseHamEvent7_Text_8:
-	.string "Well that was uncalled for!$"
-
-ArianeChaseHamEvent7_Text_9:
-	.string "Ariane$"
-
-ArianeChaseHamEvent7_Text_10:
-	.string "Stop theif! There is nowhere left for\n"
-	.string "you to run!$"
-
-ArianeChaseHamEvent7_Text_11:
-	.string "UGH! This dumb couple keeps blocking my\n"
-	.string "way.. but there is still the manor!$"
+NPC_DUCK_Text_0:
+	.string "Quack!$"
 
 NPC_RAT_Text_0:
 	.string "SKREEK!$"
@@ -354,12 +347,29 @@ SIGN_ROUTE1_3_Text_0:
 	.string "EAST to LUMBRIDGE\p"
 	.string "SOUTH to DRAYNOR$"
 
-Route1FarmerBlocking_Text_0:
+NPC_FISHERMAN_1_Text_0:
+	.string "I love to fish in this pond.\p"
+	.string "It is so peaceful, with the ducks that\n"
+	.string "keep me company.\p"
+	.string "I cannot imagine anything bad to\n"
+	.string "happen here.$"
+
+NPC_FISHERMAN_1_Text_1:
+	.string "You seem like someone who would also\n"
+	.string "enjoy fishing in this pond.\p"
+	.string "Here take this!$"
+
+NPC_FISHERMAN_1_Text_2:
+	.string "It is only a small net but I'm sure there\n"
+	.string "are plenty of things you could fish up\l"
+	.string "with it!$"
+
+BLOCK_ROUTE1_FARMER_Text_0:
 	.string "Some Goblins scared my cows out of\n"
 	.string "their pens.\p"
 	.string "Now I'm struggling to get them back in!$"
 
-Route1FarmerBlocking_Text_1:
+BLOCK_ROUTE1_FARMER_Text_1:
 	.string "I finally got my Cows out of the way.$"
 
 THEIF_ROUTE_1_Text_0:
@@ -404,13 +414,6 @@ Trainer1_Route1_Battle_Text_3:
 	.string "I heard you can get some good flour\n"
 	.string "there.$"
 
-ChickenBattleScript1_Text_0:
-	.string "BWAK!$"
-
-EvilChickenBattleScript_Text_0:
-	.string "BWAWWWK!\p"
-	.string "BEGONE {PLAYER}!$"
-
 MudbeardBattle_Text_0:
 	.string "Go away smelly human!$"
 
@@ -427,8 +430,56 @@ Route1FarmerBattle_Text_0:
 Route1FarmerBattle_Text_1:
 	.string "Its not really my lands yet.$"
 
+ChickenBattleScript1_Text_0:
+	.string "BWAK!$"
+
+EvilChickenBattleScript_Text_0:
+	.string "BWAWWWK!\p"
+	.string "BEGONE {PLAYER}!$"
+
 Route1Man_Text_0:
 	.string "Isn't my GF great?$"
 
 Route1Woman_Text_0:
 	.string "I'm actually a guy.$"
+
+ArianeChaseHamEvent7_Text_0:
+	.string "H.A.M. member$"
+
+ArianeChaseHamEvent7_Text_1:
+	.string "Get out of my way! you're blocking the\n"
+	.string "path!$"
+
+ArianeChaseHamEvent7_Text_2:
+	.string "Ernest$"
+
+ArianeChaseHamEvent7_Text_3:
+	.string "I'm so glad im not a chicken anymore..\n"
+	.string "that was cluckin scary.$"
+
+ArianeChaseHamEvent7_Text_4:
+	.string "Veronica$"
+
+ArianeChaseHamEvent7_Text_5:
+	.string "Lets just avoid that creepy manor from\n"
+	.string "now on.$"
+
+ArianeChaseHamEvent7_Text_6:
+	.string "Kissing noises$"
+
+ArianeChaseHamEvent7_Text_7:
+	.string "I SAID GET OUT OF THE WAY!!$"
+
+ArianeChaseHamEvent7_Text_8:
+	.string "Well that was uncalled for!$"
+
+ArianeChaseHamEvent7_Text_9:
+	.string "Ariane$"
+
+ArianeChaseHamEvent7_Text_10:
+	.string "Stop theif! There is nowhere left for\n"
+	.string "you to run!$"
+
+ArianeChaseHamEvent7_Text_11:
+	.string "UGH! This dumb couple keeps blocking my\n"
+	.string "way.. but there is still the manor!$"

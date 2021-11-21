@@ -133,26 +133,89 @@ script ImpBattleLumbridge{
     release
 }
 
-script LumbridgeGym1{
-    trainerbattle_single(TRAINER_LUMBRIDGE_GYM1, format("You think you're ready to face the duke? You're not!"),format("You are ready to face the duke after all it seems.") )
-    msgbox(format("You fought well. I should train harder."))
-    release
+
+
+
+
+
+
+
+
+
+
+
+
+
+script LUMBRIDGE_GYM_TRAINER_1 {
+	trainerbattle_single(TRAINER_LUMBRIDGE_GYM1, format("You think you are ready to face the Duke?\pWell I do not think so!"),format("You are ready to face the duke after all it seems.") )
+    switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+		case 4: 
+			lock
+			faceplayer
+			msgbox(format("You fought well.\pI should train harder."))
+			release
+			end
+        case 5:
+			lock
+			faceplayer
+            msgbox(format("I cannot believe you beat the Duke as well!\pYou are like a champion in the making!"))
+            release
+			end
+	}
 }
 
-script LumbridgeGym2{
-    trainerbattle_single(TRAINER_LUMBRIDGE_GYM2, format("Feast your eyes upon my evolved monster!"),format("Maybe I should have evolved it differently with a rune after all.") )
-    msgbox(format("Next time I'll use a rune."))
-    release
+
+script LUMBRIDGE_GYM_TRAINER_2 {
+	trainerbattle_single(TRAINER_LUMBRIDGE_GYM2, format("Feast your eyes upon my evolved monster!"),format("Maybe I should have evolved it differently with a rune after all.") )
+    switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+		case 4: 
+			lock
+			faceplayer
+			msgbox(format("Next time I'll use a rune."))
+			release
+			end
+        case 5:
+			lock
+			faceplayer
+            msgbox(format("CUPHOLDER"))
+            release
+			end
+	}
 }
 
-script LumbridgeGym3{
-    trainerbattle_single(TRAINER_LUMBRIDGE_GYM3, format("The Duke of Lumbridge is the strongest man this side of the Lum. "),format("Then again this side of the Lum is pretty big."))
-    msgbox(format("Maybe I should train on the other side of the river."))
-    release
+
+script LUMBRIDGE_GYM_TRAINER_3 {
+	trainerbattle_single(TRAINER_LUMBRIDGE_GYM3, format("The Duke of Lumbridge is the strongest man this side of the Lum."),format("Then again this side of the Lum is pretty big."))
+    switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+		case 4: 
+			lock
+			faceplayer
+			msgbox(format("Maybe I should train on the other side of the river."))
+			release
+			end
+        case 5:
+			lock
+			faceplayer
+            msgbox(format("CUPHOLDER"))
+            release
+			end
+	}
 }
 
-script LumbridgeGym4{
-    trainerbattle_single(TRAINER_LUMBRIDGE_GYM4, format("Ready to face the Duke himself? Let us check."),format("Sure. You pass. Barely.") )
-    msgbox(format("It was a close fight."))
-    release
+script LUMBRIDGE_GYM_TRAINER_4 {
+	trainerbattle_single(TRAINER_LUMBRIDGE_GYM4, format("Ready to face the Duke himself? Let us check."),format("Sure. You pass. Barely.") )
+    switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+		case 4: 
+			lock
+			faceplayer
+			msgbox(format("It was a close fight."))
+			release
+			end
+        case 5:
+			lock
+			faceplayer
+            msgbox(format("CUPHOLDER"))
+            release
+			end
+	}
 }

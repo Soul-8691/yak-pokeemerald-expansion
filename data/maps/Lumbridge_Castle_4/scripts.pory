@@ -45,6 +45,7 @@ script GYMLEADER_DUKE{
     closemessage
     hidenamebox
     fadescreen(FADE_TO_BLACK)
+    call(SetGymTrainers_LUMBRIDGE)
     removeobject(OBJ_EVENT_ID_DUKE)
     setflag(FLAG_BADGE01_GET)
     setvar(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 5)
@@ -54,3 +55,10 @@ script GYMLEADER_DUKE{
  }
 
 
+script SetGymTrainers_LUMBRIDGE {   
+    settrainerflag(TRAINER_LUMBRIDGE_GYM1)
+    settrainerflag(TRAINER_LUMBRIDGE_GYM2)
+    settrainerflag(TRAINER_LUMBRIDGE_GYM3)
+    settrainerflag(TRAINER_LUMBRIDGE_GYM4)
+    return
+}

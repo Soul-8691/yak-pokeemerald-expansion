@@ -842,7 +842,7 @@ script QUEST_COOKING_RANGE_COOKSASSISTANT{
 		case 3: 
 		case 4: 
 		case 5: 
-			msgbox(format("EVENT DONE! GO TO NORMAL RANGE COOKING."))
+			goto(COOKING_RANGE)
 			release
 			end
 	}
@@ -913,43 +913,6 @@ script CooksAssistant_RANGE_Check_EGG {
 
 
 
-
-
-
-
-script CookCake{
-	lock
-	msgbox("Would you like to bake a cake?", MSGBOX_YESNO)
-	if (var(VAR_RESULT)){
-		checkitem (ITEM_EGG, 1)
-		if (var(VAR_RESULT)){
-			checkitem (ITEM_MILK_BUCKET, 1)
-			if(var(VAR_RESULT)){
-				checkitem (ITEM_FLOUR_POT,1)
-				if(var(VAR_RESULT)){
-					removeitem(ITEM_EGG, 1)
-					removeitem(ITEM_MILK_BUCKET,1)
-					removeitem(ITEM_FLOUR_POT, 1)
-					additem(ITEM_EMPTY_BUCKET, 1)
-					additem(ITEM_EMPTY_POT, 1)
-					additem(ITEM_CAKE, 1)
-					msgbox("You bake a cake.")
-				}
-				else{
-					msgbox("You don't have any flour!")
-				}
-			}
-			else{
-				msgbox("You don't have any milk!")
-			}
-		}
-		else{
-			msgbox("You don't have any eggs!")
-		}
-	}
-
-	release
-}
 
 
 

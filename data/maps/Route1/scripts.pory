@@ -4,59 +4,59 @@ mapscripts Route1_MapScripts {
 } 
 
 
+
+
+
+
+script TryMoveNpcsRoute1{
+    if (flag(FLAG_BADGE01_GET)){
+        setobjectxyperm(4, 42, 10)
+        setobjectmovementtype(4,MOVEMENT_TYPE_FACE_DOWN)
+
+        setobjectxyperm(12, 37, 12)
+
+        setobjectxyperm(13, 43, 12)
+        setobjectmovementtype(13,MOVEMENT_TYPE_FACE_DOWN)
+    }
+    if (!(var(VAR_POKESCAPE_WIZARDS_TOWER_STATE) == 6)){
+        removeobject(22)
+        setflag(FLAG_TEMP_5)
+        removeobject(23)
+        setflag(FLAG_TEMP_4)
+    }
+}
+
 script Route1WarpCheck{
     map_script_2 (VAR_TEMP_1, 0, TryMoveNpcsRoute1)
 }
 
-script ArianeChaseHamEvent7{
-    lockall
-    namebox("H.A.M. member")
-    msgbox(format("Get out of my way! you're blocking the path!"))
-    hidenamebox
-    namebox("Ernest")
-    msgbox(format("I'm so glad im not a chicken anymore.. that was cluckin scary."))
-    hidenamebox
-    namebox("Veronica")
-    msgbox(format("Lets just avoid that creepy manor from now on."))
-    hidenamebox
-    msgbox(format("Kissing noises"))
-    namebox("H.A.M. member")
-    msgbox(format("I SAID GET OUT OF THE WAY!!"))
-    hidenamebox
-    release
-    lockall
-    applymovement(23, HamMemberRuns3)
-    waitmovement(0)
-    applymovement(5, ErnestShoved)
-    waitmovement(0)
-    namebox("Ernest")
-    msgbox("Well that was uncalled for!")
-    hidenamebox
-    release
-    lockall
-    applymovement(5,ErnestMoveBack)
-    namebox("Ariane")
-    msgbox(format("Stop theif! There is nowhere left for you to run!"))
-    hidenamebox
-    namebox("H.A.M. member")
-    msgbox(format("UGH! This dumb couple keeps blocking my way.. but there is still the manor!"))
-    hidenamebox
-    release
-    lockall
-    applymovement(23, HamMemberRuns4)
-    waitmovement(0)
-    applymovement(22, ArianeRunAfterHam11)
-    waitmovement(0)
-    removeobject(23)
-    setflag(FLAG_TEMP_4)
-    removeobject(22)
-    setflag(FLAG_TEMP_5)
-    setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 7)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script NPC_DUCK
+{
+	lock
+	faceplayer
+    playmoncry(SPECIES_PSYDUCK, 0)
+	msgbox(format("Quack!"))
+    waitmoncry
+	release
+	end
 }
-
 
 script NPC_RAT
 {
@@ -115,7 +115,31 @@ script SIGN_ROUTE1_3
 	end
 }
 
-script Route1FarmerBlocking{
+
+script NPC_FISHERMAN_1
+{
+	lock
+	faceplayer
+	msgbox(format("I love to fish in this pond.\pIt is so peaceful, with the ducks that keep me company.\pI cannot imagine anything bad to happen here."))
+    checkitem(ITEM_SMALL_NET, 1)
+        if (!var(VAR_RESULT)){
+            msgbox(format("You seem like someone who would also enjoy fishing in this pond.\pHere take this!"))
+            giveitem(ITEM_SMALL_NET)
+            msgbox(format("It is only a small net but I'm sure there are plenty of things you could fish up with it!"))
+            release
+            end
+        }
+        else {
+            release
+            end
+        }
+	release
+	end
+}
+
+
+
+script BLOCK_ROUTE1_FARMER {
     lock 
     faceplayer
     if (!flag(FLAG_BADGE01_GET)){
@@ -125,26 +149,8 @@ script Route1FarmerBlocking{
         msgbox(format("I finally got my Cows out of the way."))
     }
     release
+    end
 }
-
-script TryMoveNpcsRoute1{
-    if (flag(FLAG_BADGE01_GET)){
-        setobjectxyperm(4, 42, 9)
-        setobjectmovementtype(4,MOVEMENT_TYPE_FACE_DOWN)
-
-        setobjectxyperm(12, 38, 9)
-
-        setobjectxyperm(13, 36, 11)
-        setobjectmovementtype(13,MOVEMENT_TYPE_FACE_DOWN)
-    }
-    if (!(var(VAR_POKESCAPE_WIZARDS_TOWER_STATE) == 6)){
-        removeobject(22)
-        setflag(FLAG_TEMP_5)
-        removeobject(23)
-        setflag(FLAG_TEMP_4)
-    }
-}
-
 
 script THEIF_ROUTE_1
 {
@@ -154,6 +160,15 @@ script THEIF_ROUTE_1
 	release
 	end
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -192,37 +207,17 @@ script Trainer1_Route1_Battle
     end
 }
 
-movement HamMemberRuns3{
-    walk_fast_left
+script MudbeardBattle{
+    trainerbattle_single(TRAINER_GOBLIN_3_ROUTE1,"Go away smelly human!","Leave me alone!" )
+    msgbox("Smelly human!")
+    release
+    
 }
 
-movement ErnestShoved{
-    slide_left
-    face_right
-}
-
-movement ErnestMoveBack{
-    walk_right
-    face_up
-}
-
-movement HamMemberRuns4{
-  walk_fast_right * 2
-    walk_fast_up * 5
-   // walk_fast_left * 3
-   // walk_fast_up * 5
-    //walk_fast_left * 1
-    //walk_fast_up * 9  
-}
-
-
-movement ArianeRunAfterHam11 {
-    walk_fast_left
-    walk_fast_up * 5
-   // walk_fast_left * 3
-   // walk_fast_up * 5
-   // walk_fast_left * 1
-    //walk_fast_up * 9 
+script Route1FarmerBattle{
+    trainerbattle_single(TRAINER_FARMER_ROUTE1,format("Cor blimey what are ye doing on me lands!"),format("Its not really my lands yet."))
+    msgbox("Its not really my lands yet.")
+    release
 }
 
 
@@ -293,20 +288,7 @@ script EvilChickenBattleScript{
 
 
 
-script MudbeardBattle{
-    trainerbattle_single(TRAINER_GOBLIN_3_ROUTE1,"Go away smelly human!","Leave me alone!" )
-    msgbox("Smelly human!")
-    release
-    
-}
 
-
-
-script Route1FarmerBattle{
-    trainerbattle_single(TRAINER_FARMER_ROUTE1,format("Cor blimey what are ye doing on me lands!"),format("Its not really my lands yet."))
-    msgbox("Its not really my lands yet.")
-    release
-}
 
 
 
@@ -325,3 +307,89 @@ script Route1Woman{
 
 
 
+
+
+
+
+script ArianeChaseHamEvent7{
+    lockall
+    namebox("H.A.M. member")
+    msgbox(format("Get out of my way! you're blocking the path!"))
+    hidenamebox
+    namebox("Ernest")
+    msgbox(format("I'm so glad im not a chicken anymore.. that was cluckin scary."))
+    hidenamebox
+    namebox("Veronica")
+    msgbox(format("Lets just avoid that creepy manor from now on."))
+    hidenamebox
+    msgbox(format("Kissing noises"))
+    namebox("H.A.M. member")
+    msgbox(format("I SAID GET OUT OF THE WAY!!"))
+    hidenamebox
+    release
+    lockall
+    applymovement(23, HamMemberRuns3)
+    waitmovement(0)
+    applymovement(5, ErnestShoved)
+    waitmovement(0)
+    namebox("Ernest")
+    msgbox("Well that was uncalled for!")
+    hidenamebox
+    release
+    lockall
+    applymovement(5,ErnestMoveBack)
+    namebox("Ariane")
+    msgbox(format("Stop theif! There is nowhere left for you to run!"))
+    hidenamebox
+    namebox("H.A.M. member")
+    msgbox(format("UGH! This dumb couple keeps blocking my way.. but there is still the manor!"))
+    hidenamebox
+    release
+    lockall
+    applymovement(23, HamMemberRuns4)
+    waitmovement(0)
+    applymovement(22, ArianeRunAfterHam11)
+    waitmovement(0)
+    removeobject(23)
+    setflag(FLAG_TEMP_4)
+    removeobject(22)
+    setflag(FLAG_TEMP_5)
+    setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 7)
+
+
+
+}
+
+
+movement HamMemberRuns3{
+    walk_fast_left
+}
+
+movement ErnestShoved{
+    slide_left
+    face_right
+}
+
+movement ErnestMoveBack{
+    walk_right
+    face_up
+}
+
+movement HamMemberRuns4{
+  walk_fast_right * 2
+    walk_fast_up * 5
+   // walk_fast_left * 3
+   // walk_fast_up * 5
+    //walk_fast_left * 1
+    //walk_fast_up * 9  
+}
+
+
+movement ArianeRunAfterHam11 {
+    walk_fast_left
+    walk_fast_up * 5
+   // walk_fast_left * 3
+   // walk_fast_up * 5
+   // walk_fast_left * 1
+    //walk_fast_up * 9 
+}

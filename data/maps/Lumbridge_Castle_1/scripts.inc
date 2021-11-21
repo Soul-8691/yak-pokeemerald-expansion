@@ -104,32 +104,92 @@ ImpBattleLumbridge::
 	return
 
 
-LumbridgeGym1::
-	trainerbattle_single TRAINER_LUMBRIDGE_GYM1, LumbridgeGym1_Text_0, LumbridgeGym1_Text_1
-	msgbox LumbridgeGym1_Text_2
-	release
+LUMBRIDGE_GYM_TRAINER_1::
+	trainerbattle_single TRAINER_LUMBRIDGE_GYM1, LUMBRIDGE_GYM_TRAINER_1_Text_0, LUMBRIDGE_GYM_TRAINER_1_Text_1
+	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
+	case 4, LUMBRIDGE_GYM_TRAINER_1_2
+	case 5, LUMBRIDGE_GYM_TRAINER_1_3
 	return
 
-
-LumbridgeGym2::
-	trainerbattle_single TRAINER_LUMBRIDGE_GYM2, LumbridgeGym2_Text_0, LumbridgeGym2_Text_1
-	msgbox LumbridgeGym2_Text_2
+LUMBRIDGE_GYM_TRAINER_1_2:
+	lock
+	faceplayer
+	msgbox LUMBRIDGE_GYM_TRAINER_1_Text_2
 	release
+	end
+
+LUMBRIDGE_GYM_TRAINER_1_3:
+	lock
+	faceplayer
+	msgbox LUMBRIDGE_GYM_TRAINER_1_Text_3
+	release
+	end
+
+
+LUMBRIDGE_GYM_TRAINER_2::
+	trainerbattle_single TRAINER_LUMBRIDGE_GYM2, LUMBRIDGE_GYM_TRAINER_2_Text_0, LUMBRIDGE_GYM_TRAINER_2_Text_1
+	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
+	case 4, LUMBRIDGE_GYM_TRAINER_2_2
+	case 5, LUMBRIDGE_GYM_TRAINER_2_3
 	return
 
-
-LumbridgeGym3::
-	trainerbattle_single TRAINER_LUMBRIDGE_GYM3, LumbridgeGym3_Text_0, LumbridgeGym3_Text_1
-	msgbox LumbridgeGym3_Text_2
+LUMBRIDGE_GYM_TRAINER_2_2:
+	lock
+	faceplayer
+	msgbox LUMBRIDGE_GYM_TRAINER_2_Text_2
 	release
+	end
+
+LUMBRIDGE_GYM_TRAINER_2_3:
+	lock
+	faceplayer
+	msgbox LUMBRIDGE_GYM_TRAINER_2_Text_3
+	release
+	end
+
+
+LUMBRIDGE_GYM_TRAINER_3::
+	trainerbattle_single TRAINER_LUMBRIDGE_GYM3, LUMBRIDGE_GYM_TRAINER_3_Text_0, LUMBRIDGE_GYM_TRAINER_3_Text_1
+	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
+	case 4, LUMBRIDGE_GYM_TRAINER_3_2
+	case 5, LUMBRIDGE_GYM_TRAINER_3_3
 	return
 
-
-LumbridgeGym4::
-	trainerbattle_single TRAINER_LUMBRIDGE_GYM4, LumbridgeGym4_Text_0, LumbridgeGym4_Text_1
-	msgbox LumbridgeGym4_Text_2
+LUMBRIDGE_GYM_TRAINER_3_2:
+	lock
+	faceplayer
+	msgbox LUMBRIDGE_GYM_TRAINER_3_Text_2
 	release
+	end
+
+LUMBRIDGE_GYM_TRAINER_3_3:
+	lock
+	faceplayer
+	msgbox LUMBRIDGE_GYM_TRAINER_2_Text_3
+	release
+	end
+
+
+LUMBRIDGE_GYM_TRAINER_4::
+	trainerbattle_single TRAINER_LUMBRIDGE_GYM4, LUMBRIDGE_GYM_TRAINER_4_Text_0, LUMBRIDGE_GYM_TRAINER_4_Text_1
+	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
+	case 4, LUMBRIDGE_GYM_TRAINER_4_2
+	case 5, LUMBRIDGE_GYM_TRAINER_4_3
 	return
+
+LUMBRIDGE_GYM_TRAINER_4_2:
+	lock
+	faceplayer
+	msgbox LUMBRIDGE_GYM_TRAINER_4_Text_2
+	release
+	end
+
+LUMBRIDGE_GYM_TRAINER_4_3:
+	lock
+	faceplayer
+	msgbox LUMBRIDGE_GYM_TRAINER_2_Text_3
+	release
+	end
 
 
 Lumbridge_Castle_Hans_Text_0:
@@ -180,46 +240,56 @@ Woman1LumbridgeCastle_Text_0:
 ImpBattleLumbridge_Text_0:
 	.string "EEEEE$"
 
-LumbridgeGym1_Text_0:
-	.string "You think you're ready to face the\n"
-	.string "duke? You're not!$"
+LUMBRIDGE_GYM_TRAINER_1_Text_0:
+	.string "You think you are ready to face the\n"
+	.string "Duke?\p"
+	.string "Well I do not think so!$"
 
-LumbridgeGym1_Text_1:
+LUMBRIDGE_GYM_TRAINER_1_Text_1:
 	.string "You are ready to face the duke after\n"
 	.string "all it seems.$"
 
-LumbridgeGym1_Text_2:
-	.string "You fought well. I should train harder.$"
+LUMBRIDGE_GYM_TRAINER_1_Text_2:
+	.string "You fought well.\p"
+	.string "I should train harder.$"
 
-LumbridgeGym2_Text_0:
+LUMBRIDGE_GYM_TRAINER_1_Text_3:
+	.string "I cannot believe you beat the Duke as\n"
+	.string "well!\p"
+	.string "You are like a champion in the making!$"
+
+LUMBRIDGE_GYM_TRAINER_2_Text_0:
 	.string "Feast your eyes upon my evolved\n"
 	.string "monster!$"
 
-LumbridgeGym2_Text_1:
+LUMBRIDGE_GYM_TRAINER_2_Text_1:
 	.string "Maybe I should have evolved it\n"
 	.string "differently with a rune after all.$"
 
-LumbridgeGym2_Text_2:
+LUMBRIDGE_GYM_TRAINER_2_Text_2:
 	.string "Next time I'll use a rune.$"
 
-LumbridgeGym3_Text_0:
+LUMBRIDGE_GYM_TRAINER_2_Text_3:
+	.string "CUPHOLDER$"
+
+LUMBRIDGE_GYM_TRAINER_3_Text_0:
 	.string "The Duke of Lumbridge is the strongest\n"
 	.string "man this side of the Lum.$"
 
-LumbridgeGym3_Text_1:
+LUMBRIDGE_GYM_TRAINER_3_Text_1:
 	.string "Then again this side of the Lum is\n"
 	.string "pretty big.$"
 
-LumbridgeGym3_Text_2:
+LUMBRIDGE_GYM_TRAINER_3_Text_2:
 	.string "Maybe I should train on the other side\n"
 	.string "of the river.$"
 
-LumbridgeGym4_Text_0:
+LUMBRIDGE_GYM_TRAINER_4_Text_0:
 	.string "Ready to face the Duke himself? Let us\n"
 	.string "check.$"
 
-LumbridgeGym4_Text_1:
+LUMBRIDGE_GYM_TRAINER_4_Text_1:
 	.string "Sure. You pass. Barely.$"
 
-LumbridgeGym4_Text_2:
+LUMBRIDGE_GYM_TRAINER_4_Text_2:
 	.string "It was a close fight.$"

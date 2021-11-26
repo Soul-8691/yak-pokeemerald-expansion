@@ -72,7 +72,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_wizard_male",
       "x": 26,
-      "y": 41,
+      "y": 40,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,

@@ -6,7 +6,7 @@ PetalburgCity_WallysHouse_MapScripts:: @ 8204229
 	.byte 0
 
 PetalburgCity_WallysHouse_OnWarp: @ 8204234
-	map_script_2 VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_WallysHouse_EventScript_PlayerWallysDadFaceEachOther
+	map_script_2 VAR_POKESCAPE_RIMMINGTON_STATE, 4, PetalburgCity_WallysHouse_EventScript_PlayerWallysDadFaceEachOther
 	.2byte 0
 
 PetalburgCity_WallysHouse_EventScript_PlayerWallysDadFaceEachOther:: @ 820423E
@@ -15,7 +15,7 @@ PetalburgCity_WallysHouse_EventScript_PlayerWallysDadFaceEachOther:: @ 820423E
 	end
 
 PetalburgCity_WallysHouse_OnFrame: @ 8204247
-	map_script_2 VAR_PETALBURG_CITY_STATE, 4, PetalburgCity_WallysHouse_EventScript_GiveHM03Surf
+	map_script_2 VAR_POKESCAPE_RIMMINGTON_STATE, 4, PetalburgCity_WallysHouse_EventScript_GiveHM03Surf
 	.2byte 0
 
 PetalburgCity_WallysHouse_EventScript_GiveHM03Surf:: @ 8204251
@@ -24,7 +24,7 @@ PetalburgCity_WallysHouse_EventScript_GiveHM03Surf:: @ 8204251
 	giveitem ITEM_HM03
 	setflag FLAG_RECEIVED_HM03
 	msgbox PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces, MSGBOX_DEFAULT
-	setvar VAR_PETALBURG_CITY_STATE, 5
+	setvar VAR_POKESCAPE_RIMMINGTON_STATE, 5
 	releaseall
 	end
 

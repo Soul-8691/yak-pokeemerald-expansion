@@ -1,96 +1,216 @@
 mapscripts Route2_MapScripts{
-    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:Route2WarpCheck
-    MAP_SCRIPT_ON_TRANSITION:TryHideRoute2Npc
+    MAP_SCRIPT_ON_LOAD {
+        goto(WizardsTower_Route2_STATE)
+        }
+    
 }
 
 
-script Route2WarpCheck{
-    map_script_2 (VAR_TEMP_1, 0, TryHideRoute2Npc)
-}
 
-script TryHideRoute2Npc{
-    if (!(var(VAR_POKESCAPE_WIZARDS_TOWER_STATE) == 3)){
-        removeobject(2)
-        setflag(FLAG_TEMP_2)
-        removeobject(3)
-        setflag(FLAG_TEMP_1)
+
+
+script WizardsTower_Route2_STATE{
+        switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+            case 0: 
+            case 1: 
+            case 2: 
+                //HIDE NPCS
+                setflag(FLAG_TEMP_1)
+                removeobject(2)
+                removeobject(3)
+                release
+                end
+            case 3: 
+                //SHOW NPCs EVENT
+                clearflag(FLAG_TEMP_1)
+                addobject(2)
+                addobject(3)
+                release
+                end
+            case 4: 
+                //HIDE NPCs
+                setflag(FLAG_TEMP_1)
+                removeobject(2)
+                removeobject(3)
+                release
+                end
+            case 5:
+            case 6: 
+            case 7: 
+            case 8: 
+            case 9: 
+                setflag(FLAG_TEMP_1)
+                setflag(FLAG_TEMP_2)
+                removeobject(1)
+                removeobject(2)
+                removeobject(3)
+                release
+                end
+            }
     }
-    if (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE ) > 3){
-        setobjectxyperm(1,35,14)
-    }
-}
 
 
 
-script ArianeChaseHamEvent5{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-----------------------------------------------------------
+
+script HAM_EVENT_WizardsTower_4{
     lockall
-    namebox("H.A.M. member")
-    msgbox(format("Get out of my way you noob!"))
+    namebox("Ariane")
+    msgbox(format("I wonder if he went this way?"))
+    closemessage
     hidenamebox
     release
+    end
+}
+
+
+
+script HAM_EVENT_Route2_MAIN_1{
     lockall
-    applymovement(2,HamMemberShove)
+    playbgm (MUS_PS_ENCOUNTER_HAM, 1)
+    applymovement(2, HAM_Movement5_1)
+    namebox("H.A.M. member")
+    msgbox(format("Move!\nGet out of my way!"))
+    hidenamebox
+    closemessage
     waitmovement(0)
-    applymovement (1,HighwaymanShoved)
-    waitmovement(0)
+    applymovement(1, HAM_Movement5_7)
     namebox("Highwayman")
     msgbox(format("Stand and deliver!"))
     hidenamebox
-    release
-    lockall
-    applymovement(2,HamMemberSuprised2)
+    closemessage
+    waitmovement(0)
+    playse(SE_WALL_HIT)
+    applymovement(1, HAM_Movement5_2)
+    applymovement(2, HAM_Movement5_3)
+    waitmovement(0)
     namebox("H.A.M. member")
-    msgbox(format("You again? Stop following me!"))
+    msgbox(format("Ayyyyeeeeek!"))
     hidenamebox
-    namebox("Ariane")
-    msgbox(format("Return the research you stole!"))
-    hidenamebox
-    release
-    lockall
-    applymovement(2,HamMemberRuns2)
+    closemessage
+    applymovement(2, HAM_Movement5_4)
+    delay(16)
+    applymovement(1, HAM_Movement5_8)
+    playse(SE_PIN)
+    applymovement(3, HAM_Movement5_5)
     waitmovement(0)
-    applymovement(3,ArianeRunAfterHam8)
-    waitmovement(0)
+    return
+}
+
+script HAM_EVENT_Route2_MAIN_2{
     removeobject(2)
-    setflag(FLAG_TEMP_2)
     removeobject(3)
     setflag(FLAG_TEMP_1)
-    setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 5)
-
-}
-
-script ArianeChaseHamEvent4{
-    lockall
-    applymovement(3,ArianeRunAfterHam7)
-    waitmovement(0)
+    setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 4)
+    savebgm(MUS_DUMMY)
+	fadedefaultbgm
     release
-    setvar (VAR_POKESCAPE_WIZARDS_TOWER_STATE, 4)
+    end
 }
 
-movement ArianeRunAfterHam7{
-    walk_fast_up * 6
+
+script HAM_EVENT_Route2_TRIGGER_1{
+    call(HAM_EVENT_Route2_MAIN_1)
+    namebox("Ariane")
+    msgbox(format("There you are!"))
+    hidenamebox
+    closemessage
+    applymovement(3, HAM_Movement5_6)
+    waitmovement(0)
+    goto(HAM_EVENT_Route2_MAIN_2)
 }
 
-movement HamMemberShove{
-    walk_fast_right
+script HAM_EVENT_Route2_TRIGGER_2{
+    call(HAM_EVENT_Route2_MAIN_1)
+    namebox("Ariane")
+    msgbox(format("There you are!"))
+    hidenamebox
+    closemessage
+    applymovement(3, HAM_Movement5_9)
+    waitmovement(0)
+    goto(HAM_EVENT_Route2_MAIN_2)
 }
 
-movement HighwaymanShoved{
-    slide_right
+
+
+movement HAM_Movement5_1{
+    walk_in_place_fast_right * 3
 }
 
-movement HamMemberSuprised2{
-    jump_in_place_down
+movement HAM_Movement5_2{
+    walk_fast_left
+}
+
+movement HAM_Movement5_3{
+    slide_left
+    jump_special_left
+    face_right
+}
+
+movement HAM_Movement5_4{
+    walk_fastest_left * 1
+    walk_fastest_up * 7
+}
+
+movement HAM_Movement5_5{
     emote_exclamation_mark
-
+    face_right
 }
 
-movement HamMemberRuns2{
-    walk_fast_left *4
-    walk_fast_up *3
+movement HAM_Movement5_6{
+    walk_fast_right * 2
+    walk_fast_up * 10
 }
 
-movement ArianeRunAfterHam8{
-     walk_fast_left *5
-    walk_fast_up *6
+movement HAM_Movement5_7{
+    walk_in_place_fast_left * 3
+}
+
+movement HAM_Movement5_8{
+    walk_slow_right * 1
+    face_left
+}
+    
+movement HAM_Movement5_9{
+    walk_fast_right * 1
+    walk_fast_up * 10
+}
+
+//-----------------------------------------------------------
+
+
+script BLOCK_ROUTE2_Highwayman
+{
+
+	if (!flag(FLAG_TEMP_2)){
+        lock
+        namebox ("Highwayman")
+		msgbox(format("Stand and deliver!"))
+		closemessage
+        hidenamebox
+        playse(SE_WALL_HIT)
+        applymovement(1, HAM_Movement5_2)
+        applymovement(OBJ_EVENT_ID_PLAYER, HAM_Movement5_3)
+        waitmovement(0)
+        applymovement(1, HAM_Movement5_8)
+        waitmovement(0)
+        release
+        end
+    }
+
+
 }

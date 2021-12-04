@@ -72,7 +72,7 @@ script HAM_EVENT_WizardsTower_2{
 
 script HAM_EVENT_WizardsTower_3{
     lockall
-    playbgm (MUS_ENCOUNTER_MAGMA, 1)
+    playbgm (MUS_PS_ENCOUNTER_HAM, 1)
     namebox("Ariane")
     msgbox(format("Stop right there theif!"))
     hidenamebox
@@ -113,21 +113,6 @@ script HAM_EVENT_WizardsTower_3{
 
 
 
-script ChaseAfterHamMemberPlayerTrigger{
-    lockall
-    msgbox("I should help Ariane..")
-    applymovement(OBJ_EVENT_ID_PLAYER, ChaseHamMember)
-    waitmovement (0)
-    release
-}
-
-script ChaseAfterHamMemberPlayerTrigger2{
-    lockall
-    msgbox("I should help Ariane..")
-    applymovement(OBJ_EVENT_ID_PLAYER, ChaseHamMember2)
-    waitmovement (0)
-    release
-}
 
 
 
@@ -135,48 +120,28 @@ script ChaseAfterHamMemberPlayerTrigger2{
 
 
 movement MOVEMENT_HAM_ARIANE_1{
-    face_left
+    face_right
     delay_8
     face_down
     delay_8
-    face_left
+    face_right
     delay_8
     face_down
     delay_8
-    face_left
+    face_right
     delay_8
     face_down
 }
 
 movement MOVEMENT_HAM_ARIANE_2{
     emote_exclamation_mark
-    face_left
+    face_right
     delay_16
     delay_4
-    walk_fast_left * 9
-    walk_fast_up * 7
+    walk_fast_right * 3
+    walk_fast_up * 4
+    walk_fast_right * 5
 }
-
-
-
-
-
-
-
-
-
-
-
-
-movement ChaseHamMember{
-    walk_down
-}
-
-movement ChaseHamMember2{
-    walk_up
-}
-
-
 
 
 

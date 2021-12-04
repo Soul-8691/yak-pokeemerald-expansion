@@ -146,8 +146,8 @@ WizardsTower_EVENT_TRIGGER_2:
 	lock
 	applymovement 4, Movement_Wizard_WizardsTower4
 	waitmovement 0
-	namebox WizardsTower_EVENT_TRIGGER_Text_0
-	msgbox WizardsTower_EVENT_TRIGGER_Text_1
+	namebox WizardsTower_Wizard_Text_0
+	msgbox WizardsTower_EVENT_TRIGGER_Text_0
 	closemessage
 	hidenamebox
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_Player_WizardsTower4
@@ -162,7 +162,7 @@ WizardsTower_EVENT_TRIGGER_3:
 
 HAM_EVENT_WizardsTower_1::
 	lockall
-	playbgm MUS_ENCOUNTER_AQUA, 1
+	playbgm MUS_PS_ENCOUNTER_HAM, 1
 	namebox HAM_EVENT_WizardsTower_1_Text_0
 	msgbox HAM_EVENT_WizardsTower_1_Text_1
 	waitmessage
@@ -189,7 +189,7 @@ HAM_EVENT_WizardsTower_1::
 	applymovement 9, Movement_Sedridor_WizardsTower1
 	waitmovement 4
 	applymovement 9, Movement_Sedridor_WizardsTower2
-	namebox WizardsTower_EVENT_TRIGGER_Text_0
+	namebox WizardsTower_Wizard_Text_0
 	msgbox HAM_EVENT_WizardsTower_1_Text_3
 	hidenamebox
 	namebox WizardsTower_SEDRIDOR_Text_0
@@ -496,6 +496,74 @@ NPC_WIZARDSTOWER_RuneGuardian::
 	end
 
 
+NPC_WIZARDSTOWER_PulseCore::
+	goto_if_unset FLAG_RECEIVED_PULSECORE, NPC_WIZARDSTOWER_PulseCore_1
+	lock
+	delay 16
+	playse SE_PIN
+	applymovement 2 rinsit_1
+	waitmovement 0
+	namebox NPC_WIZARDSTOWER_Rinsit_Text_0
+	msgbox NPC_WIZARDSTOWER_PulseCore_Text_7
+	waitmessage
+	hidenamebox
+	release
+	end
+
+NPC_WIZARDSTOWER_PulseCore_1:
+	lock
+	msgbox NPC_WIZARDSTOWER_PulseCore_Text_0
+	playse SE_PIN
+	applymovement 2 rinsit_1
+	waitmovement 0
+	namebox NPC_WIZARDSTOWER_Rinsit_Text_0
+	checkplayergender
+	compare VAR_RESULT, MALE
+	goto_if_eq NPC_WIZARDSTOWER_PulseCore_5
+	msgbox NPC_WIZARDSTOWER_PulseCore_Text_2
+NPC_WIZARDSTOWER_PulseCore_4:
+	applymovement OBJ_EVENT_ID_PLAYER, rinsit_4
+	waitmovement 0
+	msgbox NPC_WIZARDSTOWER_PulseCore_Text_3
+	applymovement 2 rinsit_2
+	waitmovement 0
+	msgbox NPC_WIZARDSTOWER_PulseCore_Text_4
+	applymovement 2 rinsit_3
+	waitmovement 0
+	msgbox NPC_WIZARDSTOWER_PulseCore_Text_5
+	hidenamebox
+	giveitem ITEM_PULSE_CORE, 1
+	namebox NPC_WIZARDSTOWER_Rinsit_Text_0
+	msgbox NPC_WIZARDSTOWER_PulseCore_Text_6
+	waitmessage
+	hidenamebox
+	setflag FLAG_RECEIVED_PULSECORE
+	release
+	end
+
+NPC_WIZARDSTOWER_PulseCore_5:
+	msgbox NPC_WIZARDSTOWER_PulseCore_Text_1
+	goto NPC_WIZARDSTOWER_PulseCore_4
+
+
+rinsit_1:
+	emote_exclamation_mark
+	delay_8
+	face_player
+	step_end
+
+rinsit_2:
+	face_up
+	step_end
+
+rinsit_3:
+	face_player
+	step_end
+
+rinsit_4:
+	face_left
+	step_end
+
 HAM_EVENT_Ariane1::
 	lock
 	namebox HAM_EVENT_Ariane1_Text_0
@@ -594,9 +662,6 @@ WizardsTower_Wizard_Text_2:
 	.string "Thank you for helping out earlier.$"
 
 WizardsTower_EVENT_TRIGGER_Text_0:
-	.string "Wizard$"
-
-WizardsTower_EVENT_TRIGGER_Text_1:
 	.string "Sorry, but the library is off limits for\n"
 	.string "the time being.$"
 
@@ -747,6 +812,41 @@ NPC_WIZARDSTOWER_RuneGuardian_Text_0:
 
 NPC_WIZARDSTOWER_RuneGuardian_Text_1:
 	.string "Btttz, btzz!$"
+
+NPC_WIZARDSTOWER_PulseCore_Text_0:
+	.string "You find {PAUSE 15}…{PAUSE 15}… a bunch of rocks?$"
+
+NPC_WIZARDSTOWER_PulseCore_Text_1:
+	.string "Not just any rocks my boy they are\n"
+	.string "Elemental Runes!$"
+
+NPC_WIZARDSTOWER_PulseCore_Text_2:
+	.string "Not just any rocks my gal they are\n"
+	.string "Runes!$"
+
+NPC_WIZARDSTOWER_PulseCore_Text_3:
+	.string "Oh?{PAUSE 15}\n"
+	.string "What is that shiny rock?\p"
+	.string "Wait a minute, that is not suppose to be\n"
+	.string "in there let me see.$"
+
+NPC_WIZARDSTOWER_PulseCore_Text_4:
+	.string "{PAUSE 15}…{PAUSE 15}…{PAUSE 15}…\p"
+	.string "Ah... this is a Pulse Core.$"
+
+NPC_WIZARDSTOWER_PulseCore_Text_5:
+	.string "Here you can have it.$"
+
+NPC_WIZARDSTOWER_PulseCore_Text_6:
+	.string "A Pulse Core will help your monsters\n"
+	.string "gain a little bit of extra experience\l"
+	.string "after battles.\p"
+	.string "I am sure you will find a use for it.$"
+
+NPC_WIZARDSTOWER_PulseCore_Text_7:
+	.string "Hey!\p"
+	.string "Don't touch my bag of rocks!\p"
+	.string "I mean Runes, not rocks!$"
 
 HAM_EVENT_Ariane1_Text_0:
 	.string "Ariane$"

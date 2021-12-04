@@ -356,6 +356,8 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_tzhaar_2;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KalphiteKing;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KalphiteQueen;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KalphiteWorker;
+//POKESCAPE 2
+
 
 //mining
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CopperOre;

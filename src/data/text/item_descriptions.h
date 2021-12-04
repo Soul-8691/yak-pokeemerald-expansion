@@ -1591,94 +1591,94 @@ static const u8 sFragmentOfJasDesc[] = _(
 
 //pokescape pouches
 static const u8 sNormalPouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "The most basic tool\n"
+    "for catching\n"
+    "MONSTERS.");
 	
 static const u8 sBronzePouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "The tool made from\n"
+    "Bronze for catching\n"
+    "MONSTERS.");
 	
 static const u8 sIronPouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "The tool made from\n"
+    "Iron for catching\n"
+    "MONSTERS.");
 	
 static const u8 sSteelPouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "The tool made from\n"
+    "Steel for catching\n"
+    "MONSTERS.");
 	
 static const u8 sBlackPouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "The Kinshra designed\n"
+    "this tool for\n"
+    "catching MONSTERS.");
 	
 static const u8 sMithrilPouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "The tool made from\n"
+    "Mithril for catching\n"
+    "MONSTERS.");
 	
 static const u8 sAdamantPouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "The tool made from\n"
+    "Adamant for\n"
+    "catching MONSTERS.");
 	
 static const u8 sRunePouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "The tool made from\n"
+    "Runite for catching\n"
+    "MONSTERS.");
 	
 static const u8 sDragonPouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "The best tool\n"
+    "for catching\n"
+    "MONSTERS.");
 	
 static const u8 sCrystalPouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "The tool made from\n"
+    "Crystal for catching\n"
+    "Legendary MONSTERS.");
 
 static const u8 sSplitbarkPouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "The worst tool\n"
+    "for catching\n"
+    "MONSTERS.");
 	
 static const u8 sDragonbanePouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "The tool made from\n"
+    "Bane for catching\n"
+    "Dragon-Types.");
 	
 static const u8 sAugmentedPouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "A tool invented\n"
+    "for catching Electric\n"
+    "and Steel-Types.");
 	
 static const u8 sMysticPouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "A mysterious tool\n"
+    "for catching\n"
+    "Fairy-Types.");
 	
 static const u8 sBarrowsPouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "A cursed tool\n"
+    "for catching\n"
+    "MONSTERS.");
 	
 static const u8 sGranitePouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "A granite tool\n"
+    "for catching\n"
+    "Heavy MONSTERS.");
 	
 static const u8 sAncientPouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "An ancient tool\n"
+    "designed for catching\n"
+    "Demonic MONSTERS.");
 	
 static const u8 sElementalPouchDesc[] = _(
-    "A tool used for\n"
-    "catching wild\n"
-    "POKéMON.");
+    "A tool for \n"
+    "catching Elemental\n"
+    "MONSTERS.");
 	
 static const u8 sCupholderDesc[] = _(
     "This is a Cupholder.");
@@ -1703,3 +1703,381 @@ static const u8 sExtraFineFlourDesc[] = _(
     "flour.\n"
     "(Cooks Assistant)");
 
+static const u8 sBreadDesc[] = _(
+    "A piece of bread.\n"
+    "\n"
+    "Restores 20HP.");
+
+static const u8 sCakeDesc[] = _(
+    "A whole cake.\n"
+    "\n"
+    "Restores 100HP.");
+
+static const u8 sChocolateCakeDesc[] = _(
+    "An edible piece of\n"
+    "happiness.\n"
+    "Restores 200HP.");
+
+
+
+
+static const u8 sChocolateSundayDesc[] = _(
+    "A gnome cocktail\n"
+    "that cures poison.");
+
+static const u8 sBlueberrySpecialDesc[] = _(
+    "A gnome cocktail\n"
+    "healing all status\n"
+    "ailments.");
+
+static const u8 sDrunkDragonDesc[] = _(
+    "A gnome cocktail\n"
+    "that heals burns.");
+
+static const u8 sFruitBlastDesc[] = _(
+    "A gnome cocktail\n"
+    "that cures\n"
+    "paralysis.");
+
+static const u8 sPineapplePunchDesc[] = _(
+    "A gnome cocktail\n"
+    "that awakens\n"
+    "MONSTERS.");
+
+static const u8 sPurpleSweetsDesc[] = _(
+    "Raises the level\n"
+    "of a MONSTERS by\n"
+    "one.");
+
+static const u8 sCabbageDesc[] = _(
+    "Herald of the Brassica.\n"
+    "Revives your MONSTERS.");
+
+static const u8 sAppleDesc[] = _(
+    "This is a Cupholder.");
+
+static const u8 sBananaDesc[] = _(
+    "This is a Cupholder.");
+
+static const u8 sCadavaberryDesc[] = _(
+    "This is a Cupholder.");
+
+static const u8 sCoconutDesc[] = _(
+    "This is a Cupholder.");
+
+
+
+
+
+
+static const u8 s10thSigilDesc[] = _(
+    "The sigil of\n"
+    "the squad.\n"
+    "Flinches enemies.");
+
+static const u8 sAbyssalWhipDesc[] = _(
+    "Makes monsters\n"
+    "stronger but locks\n"
+    "moves used.");
+
+static const u8 sArmahelmDesc[] = _(
+    "Increases damage\n"
+    "of flying type\n"
+    "moves.");
+
+static const u8 sBloodFuryDesc[] = _(
+    "Heals monsters\n"
+    "based on damage\n"
+    "Dealt.");
+
+static const u8 sBlueBoaterDesc[] = _(
+    "The best hat.\n"
+    "Do not wear this!");
+
+static const u8 sBoneXBowDesc[] = _(
+    "Increases the\n"
+    "accuracy of\n"
+    "monsters.");
+
+static const u8 sBronzeHelmDesc[] = _(
+    "Helm to protect\n"
+    "noobs and unevolved\n"
+    "monsters.");
+
+static const u8 sDagonHaiHatDesc[] = _(
+    "Extends the\n"
+    "Duration of\n"
+    "Terrains used.");
+
+static const u8 sEyePatchDesc[] = _(
+    "Increases the\n"
+    "power of Dark\n"
+    "type moves.");
+
+static const u8 sDragonClawDesc[] = _(
+    "Gives a chance\n"
+    "to strike first\n"
+    "in battle.");
+
+static const u8 sDragonDaggerPoisonDesc[] = _(
+    "Increases the\n"
+    "power of Poison\n"
+    "type moves.");
+
+static const u8 sDragonScimitarDesc[] = _(
+    "Increases the\n"
+    "power of Dragon\n"
+    "type moves.");
+  
+static const u8 sDruidPouchDesc[] = _(
+    "Increases the\n"
+    "power of Grass\n"
+    "type moves.");
+   
+static const u8 sEffigyDesc[] = _(
+    "Powers monster up\n"
+    "if hit by super\n"
+    "effective moves.");
+   
+static const u8 sElementalShieldDesc[] = _(
+    "Increases defence\n"
+    "But locks monsters\n"
+    "out of status moves.");
+  
+static const u8 sFighterBootsDesc[] = _(
+    "Increases the\n"
+    "power of Fighting\n"
+    "type moves.");
+   
+static const u8 sFighterTorsoDesc[] = _(
+    "Decreases speed\n"
+    "but increases EV\n"
+    "gained in battle.");
+    
+static const u8 sFireCapeDesc[] = _(
+    "a cape of lava\n"
+    "burning the user\n"
+    "when worn.");
+   
+static const u8 sGhostSpeakDesc[] = _(
+    "Increases the\n"
+    "power of Ghost\n"
+    "type moves.");
+
+    
+static const u8 sGodSwordDesc[] = _(
+    "The godsword\n"
+    "coveted by all.\n"
+    "Heals the user.");
+
+static const u8 sGnomeGogglesDesc[] = _(
+    "Increases Special\n"
+    "attacks but locks\n"
+    "the users moves.");
+ 
+static const u8 sGnomScarfDesc[] = _(
+    "Increases Speed\n"
+    "but locks the users\n"
+    "moves.");
+ 
+static const u8 sGodRabbitFootDesc[] = _(
+    "The Rabbit foot\n"
+    "blessed by gods.\n"
+    "Coveted by birds.");
+   
+static const u8 sGuthanSpearDesc[] = _(
+    "Increases the\n"
+    "health regained\n"
+    "from drain moves.");
+ 
+static const u8 sGraniteMaulDesc[] = _(
+    "Increases the\n"
+    "power of Rock\n"
+    "type moves.");
+   
+static const u8 sHolyWrenchDesc[] = _(
+    "Increases the\n"
+    "power of Electric\n"
+    "type moves.");
+ 
+static const u8 sInfinityBootsDesc[] = _(
+    "Increases the\n"
+    "power of Fairy\n"
+    "type moves.");
+  
+        
+static const u8 sIronmanHelmetDesc[] = _(
+    "Increases the\n"
+    "power of Steel\n"
+    "type moves.");
+    
+static const u8 sGnomeBallDesc[] = _(
+    "Increases the\n"
+    "happiness of its\n"
+    "holder.");
+   
+static const u8 sKerisDesc[] = _(
+    "Increases the\n"
+    "power of Bug\n"
+    "type moves.");
+    
+static const u8 sKrakenTentaclePouchDesc[] = _(
+    "Applies poison\n"
+    "To the monsters\n"
+    "moves.");
+  
+static const u8 sLinzaHammerDesc[] = _(
+    "Bulks up a\n"
+    "monster to hit\n"
+    "back when hit.");
+  
+static const u8 sRabbitFootDesc[] = _(
+    "Foot of a rabbit.\n"
+    "Very lucky. Not so\n"
+    "much for trees.");
+    
+static const u8 sOrbOfOcullusDesc[] = _(
+    "Increases the\n"
+    "Crit chance of\n"
+    "moves.");
+
+static const u8 sOverloadhDesc[] = _(
+    "Increases the\n"
+    "power of moves\n"
+    "but drains life.");
+    
+static const u8 sPrismaticShardDesc[] = _(
+    "Increases the\n"
+    "experience gained\n"
+    "in battle.");
+
+static const u8 sPulseCoreDesc[] = _(
+    "Shares experience\n"
+    "between your\n"
+    "monsters.");
+  
+static const u8 sRingOfLifeDesc[] = _(
+    "Ejects the user\n"
+    "out of battle\n"
+    "when in danger.");
+   
+static const u8 sRingOfWealthDesc[] = _(
+    "Makes people\n"
+    "genereous after\n"
+    "battle.");
+  
+static const u8 sRockCakeDesc[] = _(
+    "Invites the holder\n"
+    "to eat it.\n"
+    "Hurts the user.");
+  
+static const u8 sSaraBrewDesc[] = _(
+    "Heals the user\n"
+    "at the end of\n"
+    "each turn.");
+    
+static const u8 sSilverSickleDesc[] = _(
+    "Repels wild\n"
+    "monsters from\n"
+    "encountering you.");
+   
+static const u8 sSnelmDesc[] = _(
+    "The best fashion\n"
+    "you can ever\n"
+    "adorn yourself with.");
+   
+static const u8 sSpiritShieldDesc[] = _(
+    "a shield from the\n"
+    "spirit realm\n"
+    "that protects you.");
+   
+static const u8 sSpottedCapeDesc[] = _(
+    "Makes the user\n"
+    "fast enough to\n"
+    "always escape.");
+
+
+
+
+static const u8 sEarthStaffDesc[] = _(
+    "Increases the\n"
+    "power of Ground\n"
+    "type moves.");
+
+ 
+static const u8 sTinderboxDesc[] = _(
+    "Increases the\n"
+    "power of Fire\n"
+    "type moves.");
+
+   
+static const u8 sTomeOfFrostDesc[] = _(
+    "Increases the\n"
+    "power of Ice\n"
+    "type moves.");
+
+static const u8 sWaterskinDesc[] = _(
+    "Increases the\n"
+    "power of Water\n"
+    "type moves.");
+
+static const u8 sWizardHatDesc[] = _(
+    "Increases the\n"
+    "power of Psychic\n"
+    "type moves.");
+
+    
+static const u8 sBallOfWoolDesc[] = _(
+    "Increases the\n"
+    "power of Normal\n"
+    "type moves.");
+
+  static const u8 sVeracFlailDesc[] = _(
+    "Decreases the PP\n"
+    "of enemies\n"
+    "upon impact.");
+
+static const u8 sDharokaxeDesc[] = _(
+    "Deals more damage\n"
+    "based on the HP\n"
+    "of the enemy.");
+
+static const u8 sKarilXBowDesc[] = _(
+    "Decreases the\n"
+    "stats of foe\n"
+    "upon impact.");
+
+static const u8 sahrimStaffDesc[] = _(
+    "Decreases the\n"
+    "stats of foes\n"
+    "hit.");
+
+static const u8 sToragHammerDesc[] = _(
+    "Lowers the speed\n"
+    "of foes hit\n"
+    "on contact.");
+
+static const u8 sAkriaeMaceDesc[] = _(
+    "Increases your\n"
+    "PP in battle\n"
+    "with foes.");
+
+static const u8 sDFSDesc[] = _(
+    "Decreases damage\n"
+    "from Dragon\n"
+    "type moves.");
+
+static const u8 sPhoenixNeckDesc[] = _(
+    "Holds the user\n"
+    "alive on fatal\n"
+    "impact.");
+
+static const u8 sMithrilScimitarDesc[] = _(
+    "Increases the\n"
+    "power of unevolved\n"
+    "monsters.");
+
+static const u8 sSnowGlobeDesc[] = _(
+    "Extends the\n"
+    "Duration of\n"
+    "Weather.");

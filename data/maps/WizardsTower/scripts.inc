@@ -72,7 +72,7 @@ HAM_EVENT_WizardsTower_2::
 
 HAM_EVENT_WizardsTower_3::
 	lockall
-	playbgm MUS_ENCOUNTER_MAGMA, 1
+	playbgm MUS_PS_ENCOUNTER_HAM, 1
 	namebox HAM_EVENT_WizardsTower_2_Text_0
 	msgbox HAM_EVENT_WizardsTower_3_Text_0
 	hidenamebox
@@ -110,67 +110,37 @@ HAM_EVENT_WizardsTower_3::
 	return
 
 
-ChaseAfterHamMemberPlayerTrigger::
-	lockall
-	msgbox ChaseAfterHamMemberPlayerTrigger_Text_0
-	applymovement OBJ_EVENT_ID_PLAYER, ChaseHamMember
-	waitmovement 0
-	release
-	return
-
-
-ChaseAfterHamMemberPlayerTrigger2::
-	lockall
-	msgbox ChaseAfterHamMemberPlayerTrigger_Text_0
-	applymovement OBJ_EVENT_ID_PLAYER, ChaseHamMember2
-	waitmovement 0
-	release
-	return
-
-
 MOVEMENT_HAM_ARIANE_1:
-	face_left
+	face_right
 	delay_8
 	face_down
 	delay_8
-	face_left
+	face_right
 	delay_8
 	face_down
 	delay_8
-	face_left
+	face_right
 	delay_8
 	face_down
 	step_end
 
 MOVEMENT_HAM_ARIANE_2:
 	emote_exclamation_mark
-	face_left
+	face_right
 	delay_16
 	delay_4
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
 	walk_fast_up
 	walk_fast_up
 	walk_fast_up
 	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	step_end
-
-ChaseHamMember:
-	walk_down
-	step_end
-
-ChaseHamMember2:
-	walk_up
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
 	step_end
 
 HamMemberSuprised:
@@ -285,9 +255,6 @@ HAM_EVENT_WizardsTower_3_Text_2:
 
 HAM_EVENT_WizardsTower_3_Text_3:
 	.string "Get back here!$"
-
-ChaseAfterHamMemberPlayerTrigger_Text_0:
-	.string "I should help Ariane..$"
 
 NPC_WIZARDSTOWER_SleepingWizard_Text_0:
 	.string "...\l"

@@ -1403,3 +1403,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Route43/scripts.inc"
 
 	.include "data/maps/Rellekka/scripts.inc"
+
+	.include "data/maps/HAM_Hideout_B1F/scripts.inc"
+
+	.include "data/maps/HAM_Hideout_B2F/scripts.inc"

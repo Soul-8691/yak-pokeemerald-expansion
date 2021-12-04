@@ -1,4 +1,8 @@
 mapscripts Route1_MapScripts {
+
+    MAP_SCRIPT_ON_LOAD {
+        goto(WizardsTower_Route1_STATE)
+        }
     MAP_SCRIPT_ON_TRANSITION:TryMoveNpcsRoute1
     MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:Route1WarpCheck
 } 
@@ -293,21 +297,264 @@ script EvilChickenBattleScript{
 
 
 
-script Route1Man{
-    msgbox("Isn't my GF great?")
-    release
+
+
+
+
+
+
+
+script ErnestAndVeronica {
+    switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+            case 0: 
+            case 1: 
+            case 2: 
+			case 3: 
+            case 4:
+                //applymovement(32, HAM_Movement7_7)
+                playmoncry(SPECIES_TORCHIC, 0)
+                namebox("Ernest")
+                msgbox(format("Bwak bwak bwwwaaaakk!"))
+                hidenamebox
+                waitmoncry
+                waitmovement(0)
+                applymovement(6, HAM_Movement7_6)
+                namebox("Veronica")
+                msgbox(format("What do you mean a scientist turned you into a chicken!?\pYou were meant to get directions!"))
+                hidenamebox
+                waitmovement(0)
+                //applymovement(32, HAM_Movement7_7)
+                playmoncry(SPECIES_TORCHIC, 0)
+                namebox("Ernest")
+                msgbox(format("Bwakbawk."))
+                waitmoncry
+                playmoncry(SPECIES_TORCHIC, 0)
+                msgbox(format("Bwak bwakbwak!"))
+                hidenamebox
+                waitmoncry
+                waitmovement(0)
+                applymovement(6, HAM_Movement7_6)
+                namebox("Veronica")
+                msgbox(format("Well go get him to change you back!\pI don't want to be engaged to a chicken!\pThat's just fowl..."))
+                hidenamebox
+                waitmovement(0)
+                //applymovement(32, HAM_Movement7_7)
+                playmoncry(SPECIES_COMBUSKEN, 0)
+                namebox("Ernest")
+                msgbox(format("Bwak..."))
+                hidenamebox
+                waitmoncry
+                closemessage
+                waitmovement(0)
+                release
+                end
+            case 5:
+            case 6: 
+            case 7: 
+            case 8: 
+            case 9: 
+                namebox("Ernest")
+                msgbox(format("CUPHOLDER"))
+                hidenamebox
+                namebox("Veronica")
+                msgbox(format("CUPHOLDER"))
+                hidenamebox
+                release
+                end
+    }
 }
 
-script Route1Woman{
-    msgbox("I'm actually a guy.")
+
+
+
+
+
+
+
+
+
+
+
+
+script WizardsTower_Route1_STATE{
+        switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+            case 0: 
+            case 1: 
+            case 2: 
+			case 3: 
+            case 4:
+                //HIDE NPCS
+                removeobject(22) //ariane
+				removeobject(23) //HAM
+                removeobject(5) //ernest
+                setflag(FLAG_TEMP_1)
+				setflag(FLAG_TEMP_2)
+                setflag(FLAG_TEMP_4)
+                release
+                end
+            case 5:
+                //SHOW NPCs EVENT
+                clearflag(FLAG_TEMP_2)
+                clearflag(FLAG_TEMP_4)
+				addobject(23) //HAM
+                addobject(5) //ernest
+                removeobject(32) //ernest chicken
+                removeobject(22) //ariane
+                setflag(FLAG_TEMP_1)
+                setflag(FLAG_TEMP_3)
+                release
+                end
+			case 6: 
+            case 7: 
+            case 8: 
+            case 9: 
+                //HIDE NPCs
+                setflag(FLAG_TEMP_1)
+				setflag(FLAG_TEMP_2)
+                setflag(FLAG_TEMP_3)
+                removeobject(22)
+				removeobject(23)
+                removeobject(32) //ernest chicken
+                release
+                end
+            }
+    }
+
+
+
+
+script HAM_EVENT_Route1_MAIN_1{
+    lockall
+    playbgm (MUS_PS_ENCOUNTER_HAM, 1)
+    applymovement(23, HAM_Movement7_1)
+    namebox("H.A.M. member")
+    msgbox(format("Get out of my way!\pI need to get to Port Sarim!"))
+    hidenamebox
+    closemessage
+    waitmovement(0)
+    applymovement(5, HAM_Movement7_7)
+    namebox("Ernest")
+    msgbox(format("I'm so glad im not a chicken anymore..\pThat was cluckin' scary!"))
+    hidenamebox
+    waitmovement(0)
+    applymovement(6, HAM_Movement7_6)
+    namebox("Veronica")
+    msgbox(format("Lets just avoid that creepy Manor from now on."))
+    hidenamebox
+    waitmovement(0)
+    applymovement(23, HAM_Movement7_1)
+    namebox("H.A.M. member")
+    msgbox(format("Urgh!\pWhy does everyone insist on getting in my way!"))
+    hidenamebox
+    closemessage
+    waitmovement(0)
+    return
+}
+
+
+script HAM_EVENT_Route1_TRIGGER_1 {
+    call(HAM_EVENT_Route1_MAIN_1)
+    clearflag(FLAG_TEMP_2)
+    addobject(22)
+    applymovement(22, HAM_Movement7_2)
+    waitmovement(0)
+    namebox("Ariane")
+    msgbox(format("Stop theif!\pThere is nowhere left for you to run!"))
+    hidenamebox
+    call(HAM_EVENT_Route1_MAIN_2)
+    applymovement(22, HAM_Movement7_4)
+    waitmovement(0)
+    goto(HAM_EVENT_Route1_MAIN_3)
+}
+
+script HAM_EVENT_Route1_TRIGGER_2 {
+    call(HAM_EVENT_Route1_MAIN_1)
+    clearflag(FLAG_TEMP_2)
+    addobject(22)
+    applymovement(22, HAM_Movement7_8)
+    waitmovement(0)
+    namebox("Ariane")
+    msgbox(format("Stop theif!\pThere is nowhere left for you to run!"))
+    hidenamebox
+    call(HAM_EVENT_Route1_MAIN_2)
+    applymovement(22, HAM_Movement7_9)
+    waitmovement(0)
+    goto(HAM_EVENT_Route1_MAIN_3)
+}
+
+
+script HAM_EVENT_Route1_MAIN_2{
+    applymovement(23, HAM_Movement7_5)
+    waitmovement(0)
+    namebox("H.A.M. member")
+    msgbox(format("Urrrrgh!\pYou are persistent!\pLeave me alone!"))
+    hidenamebox
+    closemessage
+    applymovement(23, HAM_Movement7_3)
+    delay(16)
+    return
+}
+
+    
+script HAM_EVENT_Route1_MAIN_3{
+    setflag(FLAG_TEMP_1)
+	setflag(FLAG_TEMP_2)
+    removeobject(22)
+	removeobject(23)
+    setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 6)    
+    savebgm(MUS_DUMMY)
+	fadedefaultbgm
     release
+    end
 }
 
 
 
 
+movement HAM_Movement7_1 {
+    walk_in_place_left * 3
+    
+}
+
+movement HAM_Movement7_2 {
+    walk_fast_up * 9
+    face_left
+}
+
+movement HAM_Movement7_8 {
+    walk_left
+    walk_fast_up * 9
+    face_left
+}
+
+movement HAM_Movement7_3 {
+    walk_fast_right
+    walk_fast_up * 10
+}
+        
+movement HAM_Movement7_4 {
+    walk_fast_left * 2
+    walk_fast_up * 10
+}
+
+movement HAM_Movement7_9 {
+    walk_fast_left * 1
+    walk_fast_up * 10
+}
+
+movement HAM_Movement7_5 {
+    face_right
+}
 
 
+movement HAM_Movement7_6 {
+    walk_in_place_up * 3
+}
+
+movement HAM_Movement7_7 {
+    walk_in_place_down * 3
+    
+}
 
 
 

@@ -1,40 +1,100 @@
 Draynor_MapScripts::
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, DraynorWarpCheck
-	map_script MAP_SCRIPT_ON_TRANSITION, DraynorHideNpcs
+	map_script MAP_SCRIPT_ON_LOAD, Draynor_MapScripts_MAP_SCRIPT_ON_LOAD
 	.byte 0
 
-
-DraynorWarpCheck::
-	map_script_2 VAR_TEMP_1, 0, DraynorHideNpcs
+Draynor_MapScripts_MAP_SCRIPT_ON_LOAD:
+	goto WizardsTower_Draynor_STATE
 	return
 
 
-DraynorHideNpcs::
-	compare VAR_POKESCAPE_WIZARDS_TOWER_STATE, 5
-	goto_if_ne DraynorHideNpcs_1
+WizardsTower_Draynor_STATE::
+	switch VAR_POKESCAPE_WIZARDS_TOWER_STATE
+	case 0, WizardsTower_Draynor_STATE_2
+	case 1, WizardsTower_Draynor_STATE_2
+	case 2, WizardsTower_Draynor_STATE_2
+	case 3, WizardsTower_Draynor_STATE_2
+	case 4, WizardsTower_Draynor_STATE_3
+	case 5, WizardsTower_Draynor_STATE_4
+	case 6, WizardsTower_Draynor_STATE_4
+	case 7, WizardsTower_Draynor_STATE_4
+	case 8, WizardsTower_Draynor_STATE_4
+	case 9, WizardsTower_Draynor_STATE_4
 	return
 
-DraynorHideNpcs_1:
+WizardsTower_Draynor_STATE_2:
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	removeobject 21
+	removeobject 24
+	release
+	end
+
+WizardsTower_Draynor_STATE_3:
+	clearflag FLAG_TEMP_1
+	clearflag FLAG_TEMP_2
+	addobject 21
+	addobject 24
+	release
+	end
+
+WizardsTower_Draynor_STATE_4:
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	removeobject 21
+	removeobject 24
+	release
+	end
+
+
+HAM_EVENT_Draynor::
+	lockall
+	applymovement 21, HAM_Movement6_1
+	namebox HAM_EVENT_Draynor_Text_0
+	msgbox HAM_EVENT_Draynor_Text_1
+	waitmovement 0
+	hidenamebox
+	closemessage
+	applymovement 21, HAM_Movement6_2
+	waitmovement 0
 	removeobject 21
 	setflag FLAG_TEMP_1
-	return
+	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 5
+	release
+	end
 
 
-ArianeChaseHamEvent6::
-	lockall
-	applymovement 21, ArianeRunAfterHam9
-	waitmovement 0
-	namebox ArianeChaseHamEvent6_Text_0
-	msgbox ArianeChaseHamEvent6_Text_1
+HAM_Movement6_1:
+	face_up
+	delay_16
+	face_left
+	delay_16
+	face_right
+	delay_16
+	face_left
+	delay_16
+	step_end
+
+HAM_Movement6_2:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+Draynor_Ariane::
+	lock
+	namebox HAM_EVENT_Draynor_Text_0
+	msgbox Draynor_Ariane_Text_0
 	hidenamebox
 	release
-	lockall
-	applymovement 21, ArianeRunAfterHam10
-	waitmovement 0
-	removeobject 21
-	setflag FLAG_TEMP_1
-	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 6
-	return
+	end
 
 
 NPC_PIG::
@@ -127,32 +187,16 @@ Draynor_Morgan::
 	end
 
 
-ArianeRunAfterHam9:
-	face_left
-	face_right
-	face_down
-	step_end
-
-ArianeRunAfterHam10:
-	walk_fast_up
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	walk_fast_left
-	step_end
-
-ArianeChaseHamEvent6_Text_0:
+HAM_EVENT_Draynor_Text_0:
 	.string "Ariane$"
 
-ArianeChaseHamEvent6_Text_1:
-	.string "I'm not sure which way he went.. We\n"
-	.string "should split up. I'll check the market.\l"
-	.string "You go north to the crossroads. We will\l"
-	.string "definetly catch him!$"
+HAM_EVENT_Draynor_Text_1:
+	.string "I'm not sure which way he went...\p"
+	.string "Maybe the market..$"
+
+Draynor_Ariane_Text_0:
+	.string "He doesn't seem to be here...\p"
+	.string "I hope he didn't leave town..$"
 
 NPC_PIG_Text_0:
 	.string "OINK!$"

@@ -1,7 +1,12 @@
 Route1_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, Route1_MapScripts_MAP_SCRIPT_ON_LOAD
 	map_script MAP_SCRIPT_ON_TRANSITION, TryMoveNpcsRoute1
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, Route1WarpCheck
 	.byte 0
+
+Route1_MapScripts_MAP_SCRIPT_ON_LOAD:
+	goto WizardsTower_Route1_STATE
+	return
 
 
 TryMoveNpcsRoute1::
@@ -229,32 +234,304 @@ EvilChickenBattleScript::
 	return
 
 
-Route1Man::
-	msgbox Route1Man_Text_0
+ErnestAndVeronica::
+	switch VAR_POKESCAPE_WIZARDS_TOWER_STATE
+	case 0, ErnestAndVeronica_2
+	case 1, ErnestAndVeronica_2
+	case 2, ErnestAndVeronica_2
+	case 3, ErnestAndVeronica_2
+	case 4, ErnestAndVeronica_2
+	case 5, ErnestAndVeronica_3
+	case 6, ErnestAndVeronica_3
+	case 7, ErnestAndVeronica_3
+	case 8, ErnestAndVeronica_3
+	case 9, ErnestAndVeronica_3
+	return
+
+ErnestAndVeronica_2:
+	playmoncry SPECIES_TORCHIC, 0
+	namebox ErnestAndVeronica_Text_0
+	msgbox ErnestAndVeronica_Text_1
+	hidenamebox
+	waitmoncry
+	waitmovement 0
+	applymovement 6, HAM_Movement7_6
+	namebox ErnestAndVeronica_Text_2
+	msgbox ErnestAndVeronica_Text_3
+	hidenamebox
+	waitmovement 0
+	playmoncry SPECIES_TORCHIC, 0
+	namebox ErnestAndVeronica_Text_0
+	msgbox ErnestAndVeronica_Text_4
+	waitmoncry
+	playmoncry SPECIES_TORCHIC, 0
+	msgbox ErnestAndVeronica_Text_5
+	hidenamebox
+	waitmoncry
+	waitmovement 0
+	applymovement 6, HAM_Movement7_6
+	namebox ErnestAndVeronica_Text_2
+	msgbox ErnestAndVeronica_Text_6
+	hidenamebox
+	waitmovement 0
+	playmoncry SPECIES_COMBUSKEN, 0
+	namebox ErnestAndVeronica_Text_0
+	msgbox ErnestAndVeronica_Text_7
+	hidenamebox
+	waitmoncry
+	closemessage
+	waitmovement 0
 	release
+	end
+
+ErnestAndVeronica_3:
+	namebox ErnestAndVeronica_Text_0
+	msgbox ErnestAndVeronica_Text_8
+	hidenamebox
+	namebox ErnestAndVeronica_Text_2
+	msgbox ErnestAndVeronica_Text_8
+	hidenamebox
+	release
+	end
+
+
+WizardsTower_Route1_STATE::
+	switch VAR_POKESCAPE_WIZARDS_TOWER_STATE
+	case 0, WizardsTower_Route1_STATE_2
+	case 1, WizardsTower_Route1_STATE_2
+	case 2, WizardsTower_Route1_STATE_2
+	case 3, WizardsTower_Route1_STATE_2
+	case 4, WizardsTower_Route1_STATE_2
+	case 5, WizardsTower_Route1_STATE_3
+	case 6, WizardsTower_Route1_STATE_4
+	case 7, WizardsTower_Route1_STATE_4
+	case 8, WizardsTower_Route1_STATE_4
+	case 9, WizardsTower_Route1_STATE_4
+	return
+
+WizardsTower_Route1_STATE_2:
+	removeobject 22
+	removeobject 23
+	removeobject 5
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	setflag FLAG_TEMP_4
+	release
+	end
+
+WizardsTower_Route1_STATE_3:
+	clearflag FLAG_TEMP_2
+	clearflag FLAG_TEMP_4
+	addobject 23
+	addobject 5
+	removeobject 32
+	removeobject 22
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_3
+	release
+	end
+
+WizardsTower_Route1_STATE_4:
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	setflag FLAG_TEMP_3
+	removeobject 22
+	removeobject 23
+	removeobject 32
+	release
+	end
+
+
+HAM_EVENT_Route1_MAIN_1::
+	lockall
+	playbgm MUS_PS_ENCOUNTER_HAM, 1
+	applymovement 23, HAM_Movement7_1
+	namebox HAM_EVENT_Route1_MAIN_1_Text_0
+	msgbox HAM_EVENT_Route1_MAIN_1_Text_1
+	hidenamebox
+	closemessage
+	waitmovement 0
+	applymovement 5, HAM_Movement7_7
+	namebox ErnestAndVeronica_Text_0
+	msgbox HAM_EVENT_Route1_MAIN_1_Text_2
+	hidenamebox
+	waitmovement 0
+	applymovement 6, HAM_Movement7_6
+	namebox ErnestAndVeronica_Text_2
+	msgbox HAM_EVENT_Route1_MAIN_1_Text_3
+	hidenamebox
+	waitmovement 0
+	applymovement 23, HAM_Movement7_1
+	namebox HAM_EVENT_Route1_MAIN_1_Text_0
+	msgbox HAM_EVENT_Route1_MAIN_1_Text_4
+	hidenamebox
+	closemessage
+	waitmovement 0
 	return
 
 
-Route1Woman::
-	msgbox Route1Woman_Text_0
-	release
+HAM_EVENT_Route1_TRIGGER_1::
+	call HAM_EVENT_Route1_MAIN_1
+	clearflag FLAG_TEMP_2
+	addobject 22
+	applymovement 22, HAM_Movement7_2
+	waitmovement 0
+	namebox HAM_EVENT_Route1_TRIGGER_1_Text_0
+	msgbox HAM_EVENT_Route1_TRIGGER_1_Text_1
+	hidenamebox
+	call HAM_EVENT_Route1_MAIN_2
+	applymovement 22, HAM_Movement7_4
+	waitmovement 0
+	goto HAM_EVENT_Route1_MAIN_3
 	return
 
+
+HAM_EVENT_Route1_TRIGGER_2::
+	call HAM_EVENT_Route1_MAIN_1
+	clearflag FLAG_TEMP_2
+	addobject 22
+	applymovement 22, HAM_Movement7_8
+	waitmovement 0
+	namebox HAM_EVENT_Route1_TRIGGER_1_Text_0
+	msgbox HAM_EVENT_Route1_TRIGGER_1_Text_1
+	hidenamebox
+	call HAM_EVENT_Route1_MAIN_2
+	applymovement 22, HAM_Movement7_9
+	waitmovement 0
+	goto HAM_EVENT_Route1_MAIN_3
+	return
+
+
+HAM_EVENT_Route1_MAIN_2::
+	applymovement 23, HAM_Movement7_5
+	waitmovement 0
+	namebox HAM_EVENT_Route1_MAIN_1_Text_0
+	msgbox HAM_EVENT_Route1_MAIN_2_Text_0
+	hidenamebox
+	closemessage
+	applymovement 23, HAM_Movement7_3
+	delay 16
+	return
+
+
+HAM_EVENT_Route1_MAIN_3::
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	removeobject 22
+	removeobject 23
+	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 6
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	release
+	end
+
+
+HAM_Movement7_1:
+	walk_in_place_left
+	walk_in_place_left
+	walk_in_place_left
+	step_end
+
+HAM_Movement7_2:
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	face_left
+	step_end
+
+HAM_Movement7_8:
+	walk_left
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	face_left
+	step_end
+
+HAM_Movement7_3:
+	walk_fast_right
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
+
+HAM_Movement7_4:
+	walk_fast_left
+	walk_fast_left
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
+
+HAM_Movement7_9:
+	walk_fast_left
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
+
+HAM_Movement7_5:
+	face_right
+	step_end
+
+HAM_Movement7_6:
+	walk_in_place_up
+	walk_in_place_up
+	walk_in_place_up
+	step_end
+
+HAM_Movement7_7:
+	walk_in_place_down
+	walk_in_place_down
+	walk_in_place_down
+	step_end
 
 ArianeChaseHamEvent7::
 	lockall
-	namebox ArianeChaseHamEvent7_Text_0
+	namebox HAM_EVENT_Route1_MAIN_1_Text_0
+	msgbox ArianeChaseHamEvent7_Text_0
+	hidenamebox
+	namebox ErnestAndVeronica_Text_0
 	msgbox ArianeChaseHamEvent7_Text_1
 	hidenamebox
-	namebox ArianeChaseHamEvent7_Text_2
+	namebox ErnestAndVeronica_Text_2
+	msgbox ArianeChaseHamEvent7_Text_2
+	hidenamebox
 	msgbox ArianeChaseHamEvent7_Text_3
-	hidenamebox
-	namebox ArianeChaseHamEvent7_Text_4
-	msgbox ArianeChaseHamEvent7_Text_5
-	hidenamebox
-	msgbox ArianeChaseHamEvent7_Text_6
-	namebox ArianeChaseHamEvent7_Text_0
-	msgbox ArianeChaseHamEvent7_Text_7
+	namebox HAM_EVENT_Route1_MAIN_1_Text_0
+	msgbox ArianeChaseHamEvent7_Text_4
 	hidenamebox
 	release
 	lockall
@@ -262,17 +539,17 @@ ArianeChaseHamEvent7::
 	waitmovement 0
 	applymovement 5, ErnestShoved
 	waitmovement 0
-	namebox ArianeChaseHamEvent7_Text_2
-	msgbox ArianeChaseHamEvent7_Text_8
+	namebox ErnestAndVeronica_Text_0
+	msgbox ArianeChaseHamEvent7_Text_5
 	hidenamebox
 	release
 	lockall
 	applymovement 5, ErnestMoveBack
-	namebox ArianeChaseHamEvent7_Text_9
-	msgbox ArianeChaseHamEvent7_Text_10
+	namebox HAM_EVENT_Route1_TRIGGER_1_Text_0
+	msgbox ArianeChaseHamEvent7_Text_6
 	hidenamebox
-	namebox ArianeChaseHamEvent7_Text_0
-	msgbox ArianeChaseHamEvent7_Text_11
+	namebox HAM_EVENT_Route1_MAIN_1_Text_0
+	msgbox ArianeChaseHamEvent7_Text_7
 	hidenamebox
 	release
 	lockall
@@ -437,49 +714,95 @@ EvilChickenBattleScript_Text_0:
 	.string "BWAWWWK!\p"
 	.string "BEGONE {PLAYER}!$"
 
-Route1Man_Text_0:
-	.string "Isn't my GF great?$"
+ErnestAndVeronica_Text_0:
+	.string "Ernest$"
 
-Route1Woman_Text_0:
-	.string "I'm actually a guy.$"
+ErnestAndVeronica_Text_1:
+	.string "Bwak bwak bwwwaaaakk!$"
 
-ArianeChaseHamEvent7_Text_0:
+ErnestAndVeronica_Text_2:
+	.string "Veronica$"
+
+ErnestAndVeronica_Text_3:
+	.string "What do you mean a scientist turned you\n"
+	.string "into a chicken!?\p"
+	.string "You were meant to get directions!$"
+
+ErnestAndVeronica_Text_4:
+	.string "Bwakbawk.$"
+
+ErnestAndVeronica_Text_5:
+	.string "Bwak bwakbwak!$"
+
+ErnestAndVeronica_Text_6:
+	.string "Well go get him to change you back!\p"
+	.string "I don't want to be engaged to a\n"
+	.string "chicken!\p"
+	.string "That's just fowl...$"
+
+ErnestAndVeronica_Text_7:
+	.string "Bwak...$"
+
+ErnestAndVeronica_Text_8:
+	.string "CUPHOLDER$"
+
+HAM_EVENT_Route1_MAIN_1_Text_0:
 	.string "H.A.M. member$"
 
-ArianeChaseHamEvent7_Text_1:
+HAM_EVENT_Route1_MAIN_1_Text_1:
+	.string "Get out of my way!\p"
+	.string "I need to get to Port Sarim!$"
+
+HAM_EVENT_Route1_MAIN_1_Text_2:
+	.string "I'm so glad im not a chicken anymore..\p"
+	.string "That was cluckin' scary!$"
+
+HAM_EVENT_Route1_MAIN_1_Text_3:
+	.string "Lets just avoid that creepy Manor from\n"
+	.string "now on.$"
+
+HAM_EVENT_Route1_MAIN_1_Text_4:
+	.string "Urgh!\p"
+	.string "Why does everyone insist on getting in\n"
+	.string "my way!$"
+
+HAM_EVENT_Route1_TRIGGER_1_Text_0:
+	.string "Ariane$"
+
+HAM_EVENT_Route1_TRIGGER_1_Text_1:
+	.string "Stop theif!\p"
+	.string "There is nowhere left for you to run!$"
+
+HAM_EVENT_Route1_MAIN_2_Text_0:
+	.string "Urrrrgh!\p"
+	.string "You are persistent!\p"
+	.string "Leave me alone!$"
+
+ArianeChaseHamEvent7_Text_0:
 	.string "Get out of my way! you're blocking the\n"
 	.string "path!$"
 
-ArianeChaseHamEvent7_Text_2:
-	.string "Ernest$"
-
-ArianeChaseHamEvent7_Text_3:
+ArianeChaseHamEvent7_Text_1:
 	.string "I'm so glad im not a chicken anymore..\n"
 	.string "that was cluckin scary.$"
 
-ArianeChaseHamEvent7_Text_4:
-	.string "Veronica$"
-
-ArianeChaseHamEvent7_Text_5:
+ArianeChaseHamEvent7_Text_2:
 	.string "Lets just avoid that creepy manor from\n"
 	.string "now on.$"
 
-ArianeChaseHamEvent7_Text_6:
+ArianeChaseHamEvent7_Text_3:
 	.string "Kissing noises$"
 
-ArianeChaseHamEvent7_Text_7:
+ArianeChaseHamEvent7_Text_4:
 	.string "I SAID GET OUT OF THE WAY!!$"
 
-ArianeChaseHamEvent7_Text_8:
+ArianeChaseHamEvent7_Text_5:
 	.string "Well that was uncalled for!$"
 
-ArianeChaseHamEvent7_Text_9:
-	.string "Ariane$"
-
-ArianeChaseHamEvent7_Text_10:
+ArianeChaseHamEvent7_Text_6:
 	.string "Stop theif! There is nowhere left for\n"
 	.string "you to run!$"
 
-ArianeChaseHamEvent7_Text_11:
+ArianeChaseHamEvent7_Text_7:
 	.string "UGH! This dumb couple keeps blocking my\n"
 	.string "way.. but there is still the manor!$"

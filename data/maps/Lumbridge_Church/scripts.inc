@@ -80,6 +80,36 @@ GoldenGnome_2:
 	goto GoldenGnome_1
 
 
+LumbridgeSwampCaves_WallBeasts::
+	lockall
+	msgbox LumbridgeSwampCaves_WallBeasts_Text_0
+	random 3
+	switch VAR_RESULT
+	case 0, LumbridgeSwampCaves_WallBeasts_3
+	case 1, LumbridgeSwampCaves_WallBeasts_4
+	case 2, LumbridgeSwampCaves_WallBeasts_5
+	release
+	end
+
+LumbridgeSwampCaves_WallBeasts_3:
+	msgbox LumbridgeSwampCaves_WallBeasts_Text_1
+	special RockSmashWildEncounter
+	release
+	end
+
+LumbridgeSwampCaves_WallBeasts_4:
+	msgbox LumbridgeSwampCaves_WallBeasts_Text_2
+	setwildbattle SPECIES_HAND_CREEPING_FORM, 10, ITEM_NONE
+	dowildbattle
+	release
+	end
+
+LumbridgeSwampCaves_WallBeasts_5:
+	msgbox LumbridgeSwampCaves_WallBeasts_Text_3
+	release
+	end
+
+
 GnomeBoi_Kevin::
 	lock
 	faceplayer
@@ -103,24 +133,28 @@ GnomeBoi_Kevin_1:
 GnomeBoi_Kevin_3:
 	msgbox GnomeBoi_Kevin_Text_1
 	waitmessage
+	pokemart Cheat_Menu_Shop_Evolution
 	release
-	goto GnomeBoi_Kevin_1
+	end
 
 GnomeBoi_Kevin_4:
 	msgbox GnomeBoi_Kevin_Text_2
 	waitmessage
+	pokemart Cheat_Menu_Shop_Pouches
 	release
-	goto GnomeBoi_Kevin_1
+	end
 
 GnomeBoi_Kevin_5:
 	msgbox GnomeBoi_Kevin_Text_3
 	waitmessage
+	pokemart Cheat_Menu_Shop_Medicine
 	release
 	goto GnomeBoi_Kevin_1
 
 GnomeBoi_Kevin_6:
 	msgbox GnomeBoi_Kevin_Text_4
 	waitmessage
+	pokemart Cheat_Menu_Shop_Misc
 	release
 	goto GnomeBoi_Kevin_1
 
@@ -151,6 +185,7 @@ GnomeBoi_Kevin_8:
 
 GnomeBoi_Kevin_9:
 	msgbox GnomeBoi_Kevin_Text_7
+	additem ITEM_PULSE_CORE, 1
 	additem ITEM_PURPLE_SWEETS, 100
 	additem ITEM_FRAGMENT_OF_JAS, 5
 	release
@@ -161,35 +196,184 @@ GnomeBoi_Kevin_10:
 	goto GnomeBoi_Kevin_1
 
 
-LumbridgeSwampCaves_WallBeasts::
-	lockall
-	msgbox LumbridgeSwampCaves_WallBeasts_Text_0
-	random 3
-	switch VAR_RESULT
-	case 0, LumbridgeSwampCaves_WallBeasts_3
-	case 1, LumbridgeSwampCaves_WallBeasts_4
-	case 2, LumbridgeSwampCaves_WallBeasts_5
-	release
-	end
+    .align 2
+Cheat_Menu_Shop_Pouches:
+	.2byte ITEM_NORMAL_POUCH
+    .2byte ITEM_BRONZE_POUCH
+    .2byte ITEM_IRON_POUCH
+	.2byte ITEM_STEEL_POUCH
+	.2byte ITEM_MITHRIL_POUCH
+	.2byte ITEM_ADAMANT_POUCH
+    .2byte ITEM_RUNE_POUCH
+	.2byte ITEM_DRAGON_POUCH
+	.2byte ITEM_CRYSTAL_POUCH
+	.2byte ITEM_BLACK_POUCH
+	.2byte ITEM_MYSTIC_POUCH
+	.2byte ITEM_ANCIENT_POUCH
+	.2byte ITEM_BARROWS_POUCH
+	.2byte ITEM_GRANITE_POUCH
+	.2byte ITEM_AUGMENTED_POUCH
+	.2byte ITEM_SPLITBARK_POUCH
+	.2byte ITEM_ELEMENTAL_POUCH
+	.2byte ITEM_DRAGONBANE_POUCH
+    .2byte ITEM_NONE
+    release
+    end
 
-LumbridgeSwampCaves_WallBeasts_3:
-	msgbox LumbridgeSwampCaves_WallBeasts_Text_1
-	special RockSmashWildEncounter
-	release
-	end
+    .align 2
+Cheat_Menu_Shop_Evolution:
+    .2byte ITEM_AIR_RUNE 
+    .2byte ITEM_WATER_RUNE 
+    .2byte ITEM_EARTH_RUNE 
+    .2byte ITEM_FIRE_RUNE 
+    .2byte ITEM_MIND_RUNE 
+    .2byte ITEM_BODY_RUNE 
+    .2byte ITEM_LAW_RUNE 
+    .2byte ITEM_NATURE_RUNE 
+    .2byte ITEM_CHAOS_RUNE 
+    .2byte ITEM_COSMIC_RUNE 
+    .2byte ITEM_BLOOD_RUNE 
+    .2byte ITEM_SOUL_RUNE 
+    .2byte ITEM_DEATH_RUNE 
+    .2byte ITEM_MUD_RUNE 
+    .2byte ITEM_MIST_RUNE 
+    .2byte ITEM_LAVA_RUNE 
+    .2byte ITEM_DUST_RUNE 
+    .2byte ITEM_ASTRAL_RUNE 
+    .2byte ITEM_LIFE_RUNE 
+    .2byte ITEM_SPIRIT_CHARM 
+    .2byte ITEM_LEGENDARY_ITEM 
+    .2byte ITEM_BAD_EGG 
+    .2byte ITEM_DAGANNOTH_EGG_SHELL 
+    .2byte ITEM_DAGANNOTH_SCALE 
+    .2byte ITEM_NUMBLING_ROOT 
+    .2byte ITEM_ROTTEN_POTATO 
+    .2byte ITEM_SHRIVELLED_DAGANNOTH_CLAW 
+    .2byte ITEM_SOCK 
+    .2byte ITEM_TEAR_OF_GUTHIX 
+    .2byte ITEM_RED_SCALE 
+    .2byte ITEM_GREEN_SCALE 
+    .2byte ITEM_BLUE_SCALE 
+    .2byte ITEM_BLACK_SCALE 
+    .2byte ITEM_FRAGMENT_OF_JAS 
+    .2byte ITEM_NONE
+    release
+    end
 
-LumbridgeSwampCaves_WallBeasts_4:
-	msgbox LumbridgeSwampCaves_WallBeasts_Text_2
-	setwildbattle SPECIES_HAND_CREEPING_FORM, 10, ITEM_NONE
-	dowildbattle
-	release
-	end
+    .align 2
+Cheat_Menu_Shop_Medicine:
+    
+    .2byte ITEM_BREAD 
+	.2byte ITEM_CHOCOLATE_CAKE 
 
-LumbridgeSwampCaves_WallBeasts_5:
-	msgbox LumbridgeSwampCaves_WallBeasts_Text_3
-	release
-	end
+	.2byte ITEM_BLUEBERRY_SPECIAL 
+    .2byte ITEM_CHOCOLATE_SUNDAY  //Antidote
+    .2byte ITEM_DRUNK_DRAGON 
+    .2byte ITEM_FRUIT_BLAST 
+    .2byte ITEM_PINEAPPLE_PUNCH 
+//    .2byte ITEM_WIZARDS_BLIZZARD
 
+    .2byte ITEM_POTION_ATT 
+    .2byte ITEM_POTION_DEF 
+    .2byte ITEM_POTION_HP 
+    .2byte ITEM_POTION_SPATT 
+    .2byte ITEM_POTION_SPDEF
+    .2byte ITEM_POTION_SPEED
+
+    .2byte ITEM_PRAYER_POTION
+    .2byte ITEM_SUPER_PRAYER_POTION //MAX-ELIXER
+
+	.2byte ITEM_PURPLE_SWEETS
+
+	.2byte ITEM_STAT_BEER //PP-UP
+	.2byte ITEM_STAT_MOONLIGHT_MEAD //PP-MAX
+
+	.2byte ITEM_LAMP_ATT 
+    .2byte ITEM_LAMP_DEF 
+    .2byte ITEM_LAMP_HP 
+    .2byte ITEM_LAMP_SPATT 
+    .2byte ITEM_LAMP_SPDEF 
+    .2byte ITEM_LAMP_SPEED 
+
+
+    .2byte ITEM_NONE
+    release
+    end
+
+    .align 2
+Cheat_Menu_Shop_Misc:
+
+    .2byte ITEM_10TH_SQUAD_SIGIL
+    .2byte ITEM_ABYSSAL_WHIP
+    .2byte ITEM_ARMA_HELM
+    .2byte ITEM_BLOODFURY
+    .2byte ITEM_BLUEBOATER
+    .2byte ITEM_BONECROSSBOW
+    .2byte ITEM_BRONZEHELMET
+    .2byte ITEM_DAGONHAIHAT
+    .2byte ITEM_DOUBLE_EYEPATCH
+    .2byte ITEM_DRAGON_CLAWS
+    .2byte ITEM_DRAGON_DAGGER_POISON
+    .2byte ITEM_DRAGON_SCIMITAR
+    .2byte ITEM_DRUID_POUCH
+    .2byte ITEM_EFFIGY
+    .2byte ITEM_ELEMENTAL_SHIELD
+    .2byte ITEM_FIGHTER_BOOTS
+    .2byte ITEM_FIGHTER_TORSO
+    .2byte ITEM_FIRECAPE
+    .2byte ITEM_GHOSTSPEAK_AMULET
+    .2byte ITEM_GODSWORD
+    .2byte ITEM_GNOMEGOGGLES
+    .2byte ITEM_GNOMESCARF
+    .2byte ITEM_GODRABBITFOOT
+    .2byte ITEM_GUTHANSPEAR
+    .2byte ITEM_GRANITE_MAUL
+    .2byte ITEM_HOLY_WRENCH
+    .2byte ITEM_INFINITY_BOOTS
+    .2byte ITEM_IRONMAN_HELMET
+    .2byte ITEM_ITEM_GNOMEBALL
+    .2byte ITEM_KERIS
+    .2byte ITEM_KRAKEN_TENTACLE
+    .2byte ITEM_LINZAHAMMER
+    .2byte ITEM_LUCKYRABBITFOOT
+    .2byte ITEM_ORB_OF_OCULUS
+    .2byte ITEM_OVERLOAD
+    .2byte ITEM_PRISMATIC_STAR
+
+
+    .2byte ITEM_PULSE_CORE
+    .2byte ITEM_RING_OF_LIFE
+    .2byte ITEM_RING_OF_WEALTH
+    .2byte ITEM_ROCKCAKE
+    .2byte ITEM_SARADOMIN_BREW
+    .2byte ITEM_SICKLE
+    .2byte ITEM_SNELM
+    .2byte ITEM_SPIRITSHIELD
+    .2byte ITEM_SPOTTEDCAPE
+
+
+
+
+    .2byte ITEM_STAFF_OF_EARTH
+    .2byte ITEM_TINDERBOX
+    .2byte ITEM_TOME_OF_FROST
+    .2byte ITEM_WATERSKIN
+    .2byte ITEM_WIZARDS_HAT
+    .2byte ITEM_WOOLBALL
+    .2byte ITEM_VERACFLAIL
+    .2byte ITEM_DHAROKAXE
+    .2byte ITEM_KARILCROSSBOW
+    .2byte ITEM_AHRIMSTAFF
+    .2byte ITEM_TORAGHAMMER
+    .2byte ITEM_AKRISAEMACE
+    .2byte ITEM_DFS
+    .2byte ITEM_PHOENIX_NECKLACE
+    .2byte ITEM_MITHRIL_SCIMITAR
+    .2byte ITEM_SNOW_GLOBE
+
+    .2byte ITEM_NONE
+    release
+    end
 
 Lumbridge_Church_Father_Aereck_Text_0:
 	.string "Monsters dont really die.\p"
@@ -248,6 +432,19 @@ GoldenGnome_Text_4:
 	.string "Human strong. This now Goblin and human\n"
 	.string "home.$"
 
+LumbridgeSwampCaves_WallBeasts_Text_0:
+	.string "Something jumps out of the wall towards\n"
+	.string "you!$"
+
+LumbridgeSwampCaves_WallBeasts_Text_1:
+	.string "A wild Monster attacked!$"
+
+LumbridgeSwampCaves_WallBeasts_Text_2:
+	.string "A hand swipes at you!$"
+
+LumbridgeSwampCaves_WallBeasts_Text_3:
+	.string "You found an item!$"
+
 GnomeBoi_Kevin_Text_0:
 	.string "Hi Boss! What can I do for ya?$"
 
@@ -274,16 +471,3 @@ GnomeBoi_Kevin_Text_7:
 
 GnomeBoi_Kevin_Text_8:
 	.string "Smell ya later!$"
-
-LumbridgeSwampCaves_WallBeasts_Text_0:
-	.string "Something jumps out of the wall towards\n"
-	.string "you!$"
-
-LumbridgeSwampCaves_WallBeasts_Text_1:
-	.string "A wild Monster attacked!$"
-
-LumbridgeSwampCaves_WallBeasts_Text_2:
-	.string "A hand swipes at you!$"
-
-LumbridgeSwampCaves_WallBeasts_Text_3:
-	.string "You found an item!$"

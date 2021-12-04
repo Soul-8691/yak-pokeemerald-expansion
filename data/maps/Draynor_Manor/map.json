@@ -35,12 +35,12 @@
       "x": 14,
       "y": 19,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "HAM_EVENT_DraynorManor_Ariane",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -104,6 +104,20 @@
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_MANOR_B1F",
       "dest_warp_id": 1
+    },
+    {
+      "x": 20,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_DRAYNOR_MANOR_1F",
+      "dest_warp_id": 2
+    },
+    {
+      "x": 20,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_DRAYNOR_MANOR_1F",
+      "dest_warp_id": 2
     }
   ],
   "coord_events": [
@@ -158,8 +172,8 @@
       "y": 20,
       "elevation": 0,
       "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
-      "var_value": "7",
-      "script": "ArianeChaseHamEvent8"
+      "var_value": "6",
+      "script": "HAM_EVENT_DraynorManor_TRIGGER_2"
     },
     {
       "type": "trigger",
@@ -167,8 +181,8 @@
       "y": 20,
       "elevation": 0,
       "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
-      "var_value": "7",
-      "script": "ArianeChaseHamEvent8"
+      "var_value": "6",
+      "script": "HAM_EVENT_DraynorManor_TRIGGER_1"
     }
   ],
   "bg_events": [

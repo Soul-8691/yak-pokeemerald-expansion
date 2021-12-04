@@ -140,7 +140,7 @@ script WizardsTower_EVENT_TRIGGER{
 			lock
 			applymovement(4, Movement_Wizard_WizardsTower4)
 			waitmovement(0)
-			namebox ("Wizard")
+			namebox ("Finix")
 			msgbox(format("Sorry, but the library is off limits for the time being."))
 			closemessage
 			hidenamebox
@@ -158,7 +158,7 @@ script WizardsTower_EVENT_TRIGGER{
 
 script HAM_EVENT_WizardsTower_1{
 	lockall
-	playbgm (MUS_ENCOUNTER_AQUA, 1)
+	playbgm (MUS_PS_ENCOUNTER_HAM, 1)
 	namebox ("???")
 	msgbox(format("Someone stop him!"))
 	waitmessage
@@ -186,7 +186,7 @@ script HAM_EVENT_WizardsTower_1{
 	applymovement(OBJ_EVENT_ID_SEDRIDOR, Movement_Sedridor_WizardsTower1)
 	waitmovement (4)
 	applymovement(OBJ_EVENT_ID_SEDRIDOR, Movement_Sedridor_WizardsTower2)
-	namebox ("Wizard")
+	namebox ("Finix")
 	msgbox(format("Sedridor, sir.\pA cloaked man just ran off with a bunch of our research papers!\pAriane just gave chase to him!"))
 	hidenamebox
 	namebox ("Sedridor")
@@ -518,11 +518,81 @@ script NPC_WIZARDSTOWER_RuneGuardian
 }
 
 
+script NPC_WIZARDSTOWER_PulseCore
+{
+	if (!flag(FLAG_RECEIVED_PULSECORE)){
+
+		lock
+
+		msgbox(format("You find {PAUSE 15}…{PAUSE 15}… a bunch of rocks?"))
+		playse(SE_PIN)
+		applymovement(2 rinsit_1)
+		waitmovement(0)
+		namebox ("Rinsit")
 
 
+		checkplayergender
+		if (var(VAR_RESULT) == MALE) {
+			msgbox(format("Not just any rocks my boy they are Elemental Runes!"))
+		} else {
+			msgbox(format("Not just any rocks my gal they are Runes!"))
+		}
+
+		applymovement(OBJ_EVENT_ID_PLAYER, rinsit_4)
+		waitmovement(0)
 
 
+		msgbox(format("Oh?{PAUSE 15}\nWhat is that shiny rock?\pWait a minute, that is not suppose to be in there let me see."))
+		applymovement(2 rinsit_2)
+		waitmovement(0)
+		msgbox(format("{PAUSE 15}…{PAUSE 15}…{PAUSE 15}…\pAh... this is a Pulse Core."))
+		applymovement(2 rinsit_3)
+		waitmovement(0)
+		msgbox(format("Here you can have it."))
+		hidenamebox
+		giveitem(ITEM_PULSE_CORE, 1)
+		namebox ("Rinsit")
+		msgbox(format("A Pulse Core will help your monsters gain a little bit of extra experience after battles.\pI am sure you will find a use for it."))
+		waitmessage
+		hidenamebox
+		setflag(FLAG_RECEIVED_PULSECORE)
+		release
+		end
+	}
+	else {
+		lock
+		delay(16)
+		playse(SE_PIN)
+		applymovement(2 rinsit_1)
+		waitmovement(0)
+		namebox ("Rinsit")
+		msgbox(format("Hey!\pDon't touch my bag of rocks!\pI mean Runes, not rocks!"))
+		waitmessage
+		hidenamebox
+		release
+		end
+	}
+}
 
+	
+
+movement rinsit_1 {
+	emote_exclamation_mark
+	delay_8
+	face_player
+}
+
+movement rinsit_2 {
+	face_up
+}
+
+movement rinsit_3 {
+	face_player
+}
+
+movement rinsit_4 {
+	face_left
+}
 
 
 

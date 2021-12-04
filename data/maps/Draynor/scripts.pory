@@ -1,34 +1,103 @@
 mapscripts Draynor_MapScripts {
-    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:DraynorWarpCheck
-	MAP_SCRIPT_ON_TRANSITION:DraynorHideNpcs
+    MAP_SCRIPT_ON_LOAD {
+        goto(WizardsTower_Draynor_STATE)
+        }
 }
 
-script DraynorWarpCheck{
-	map_script_2 (VAR_TEMP_1, 0, DraynorHideNpcs)
-}
 
-script DraynorHideNpcs{
-	if (!(var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)==5)){
-		removeobject(21)
-		setflag(FLAG_TEMP_1)
-	}
-}
 
-script ArianeChaseHamEvent6{
-	lockall
-	applymovement(21,ArianeRunAfterHam9)
+script WizardsTower_Draynor_STATE{
+        switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+            case 0: 
+            case 1: 
+            case 2: 
+			case 3: 
+                //HIDE NPCS
+                setflag(FLAG_TEMP_1)
+				setflag(FLAG_TEMP_2)
+                removeobject(21)
+				removeobject(24)
+                release
+                end
+            case 4:
+                //SHOW NPCs EVENT
+                clearflag(FLAG_TEMP_1)
+				clearflag(FLAG_TEMP_2)
+                addobject(21)
+				addobject(24)
+                release
+                end
+            case 5:
+			case 6: 
+            case 7: 
+            case 8: 
+            case 9: 
+                //HIDE NPCs
+                setflag(FLAG_TEMP_1)
+				setflag(FLAG_TEMP_2)
+                removeobject(21)
+				removeobject(24)
+                release
+                end
+            }
+    }
+
+
+
+
+
+
+
+
+script HAM_EVENT_Draynor{
+    lockall
+    applymovement(21, HAM_Movement6_1)
+    namebox("Ariane")
+    msgbox(format("I'm not sure which way he went...\pMaybe the market.."))
 	waitmovement(0)
-	namebox("Ariane")
-	msgbox(format("I'm not sure which way he went.. We should split up. I'll check the market. You go north to the crossroads. We will definetly catch him!"))
-	hidenamebox
-	release
-	lockall
-	applymovement(21,ArianeRunAfterHam10)
-	waitmovement(0)
+    hidenamebox
+    closemessage
+	applymovement(21, HAM_Movement6_2)
+    waitmovement(0)
 	removeobject(21)
 	setflag(FLAG_TEMP_1)
-	setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 6)
+	setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 5)
+	release
+	end
 }
+
+movement HAM_Movement6_1{
+    face_up
+	delay_16
+	face_left
+	delay_16
+	face_right
+	delay_16
+	face_left
+	delay_16
+}
+
+movement HAM_Movement6_2{
+    walk_left * 11
+}
+
+script Draynor_Ariane{
+	lock
+    namebox("Ariane")
+	msgbox(format("He doesn't seem to be here...\pI hope he didn't leave town.."))
+    hidenamebox
+    release
+	end
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -128,13 +197,3 @@ script Draynor_Morgan{
 	end
 }
 
-movement ArianeRunAfterHam9{
-	face_left
-	face_right
-	face_down
-}
-
-movement ArianeRunAfterHam10{
-	walk_fast_up
-	walk_fast_left *8
-}

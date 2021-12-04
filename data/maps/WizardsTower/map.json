@@ -14,20 +14,20 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
-      "offset": -7,
-      "map": "MAP_ROUTE2"
-    },
-    {
       "direction": "down",
       "offset": -10,
       "map": "MAP_TUTORIAL_ISLAND"
+    },
+    {
+      "direction": "up",
+      "offset": 4,
+      "map": "MAP_ROUTE2"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_wizard_male",
-      "x": 16,
+      "x": 6,
       "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -40,7 +40,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_wizard_female",
-      "x": 23,
+      "x": 13,
       "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -53,8 +53,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_fairy_1",
-      "x": 8,
-      "y": 26,
+      "x": 19,
+      "y": 28,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -79,8 +79,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ham_member_male",
-      "x": 10,
-      "y": 11,
+      "x": 26,
+      "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -95,7 +95,7 @@
       "x": 19,
       "y": 21,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -104,9 +104,9 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_mercher",
-      "x": 9,
-      "y": 7,
+      "graphics_id": "OBJ_EVENT_GFX_maggie",
+      "x": 25,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -118,8 +118,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_bob",
-      "x": 9,
-      "y": 8,
+      "x": 25,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -131,8 +131,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ariane",
-      "x": 10,
-      "y": 13,
+      "x": 26,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -145,7 +145,7 @@
   ],
   "warp_events": [
     {
-      "x": 23,
+      "x": 13,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_WIZARDS_TOWER_1F",
@@ -155,8 +155,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 19,
-      "y": 19,
+      "x": 16,
+      "y": 21,
       "elevation": 0,
       "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
       "var_value": "1",
@@ -164,8 +164,8 @@
     },
     {
       "type": "trigger",
-      "x": 20,
-      "y": 19,
+      "x": 16,
+      "y": 20,
       "elevation": 0,
       "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
       "var_value": "1",
@@ -173,8 +173,8 @@
     },
     {
       "type": "trigger",
-      "x": 11,
-      "y": 14,
+      "x": 27,
+      "y": 12,
       "elevation": 0,
       "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
       "var_value": "2",
@@ -182,8 +182,8 @@
     },
     {
       "type": "trigger",
-      "x": 10,
-      "y": 14,
+      "x": 26,
+      "y": 12,
       "elevation": 0,
       "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
       "var_value": "2",
@@ -191,12 +191,21 @@
     },
     {
       "type": "trigger",
-      "x": 9,
-      "y": 14,
+      "x": 25,
+      "y": 12,
       "elevation": 0,
       "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
       "var_value": "2",
       "script": "HAM_EVENT_WizardsTower_3"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 22,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "1",
+      "script": "HAM_EVENT_WizardsTower_2"
     }
   ],
   "bg_events": [

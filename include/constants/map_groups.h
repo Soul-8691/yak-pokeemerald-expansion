@@ -801,6 +801,7 @@
 #define MAP_FLYING_HORSE_PUB_2F       (22 | (50 << 8))
 #define MAP_HAM_HIDEOUT_B1F           (23 | (50 << 8))
 #define MAP_HAM_HIDEOUT_B2F           (24 | (50 << 8))
+#define MAP_MODERATOR_LOBBY           (25 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

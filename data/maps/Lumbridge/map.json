@@ -480,9 +480,9 @@
     },
     {
       "x": 16,
-      "y": 7,
+      "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_YANILLE",
+      "dest_map": "MAP_MODERATOR_LOBBY",
       "dest_warp_id": 0
     },
     {
@@ -638,14 +638,6 @@
     },
     {
       "type": "sign",
-      "x": 38,
-      "y": 39,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "NULL"
-    },
-    {
-      "type": "sign",
       "x": 40,
       "y": 20,
       "elevation": 0,
@@ -654,11 +646,19 @@
     },
     {
       "type": "sign",
-      "x": 16,
+      "x": 17,
       "y": 8,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "LOCKED_DOOR"
+    },
+    {
+      "type": "hidden_item",
+      "x": 38,
+      "y": 39,
+      "elevation": 3,
+      "item": "ITEM_BLUEBERRY_SPECIAL",
+      "flag": "FLAG_TEMP_2"
     }
   ]
 }

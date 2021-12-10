@@ -67,12 +67,7 @@ script LumSwampMuggerBattle{
     release
 }
 
-script LumSwampCaveWarning{
-    lock
-    faceplayer
-    msgbox(format("I wouldn't go down there without a light. It's dangerous!"))
-    release
-}
+
 
 script LumSwampRat{
     lock
@@ -84,4 +79,33 @@ script LumSwampRat{
 script LumSwampSign{
     msgbox(format("WARNING: Goblins below!"), MSGBOX_SIGN)
     release
+}
+
+
+
+
+
+
+
+
+
+script LUMBRIDGESWAMP_CANDLESELLER
+{
+	lock
+	faceplayer
+	msgbox(format("I wouldn't go down there without a light source.\pIt's dangerous!"))
+    checkitem(ITEM_LANTERN, 1)
+        if (!var(VAR_RESULT)){
+            msgbox(format("Look.. If you are serious about going down there, take this."))
+            giveitem(ITEM_LANTERN)
+            msgbox(format("Be careful down there."))
+            release
+            end
+        }
+        else {
+            release
+            end
+        }
+	release
+	end
 }

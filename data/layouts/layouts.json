@@ -6180,6 +6180,16 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/HAM_Hideout_B2F/border.bin",
       "blockdata_filepath": "data/layouts/HAM_Hideout_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MODERATOR_LOBBY",
+      "name": "Moderator_Lobby_Layout",
+      "width": 11,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Moderator_Lobby/border.bin",
+      "blockdata_filepath": "data/layouts/Moderator_Lobby/map.bin"
     }
   ]
 }

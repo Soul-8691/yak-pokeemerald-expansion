@@ -1407,3 +1407,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/HAM_Hideout_B1F/scripts.inc"
 
 	.include "data/maps/HAM_Hideout_B2F/scripts.inc"
+
+	.include "data/maps/Moderator_Lobby/scripts.inc"

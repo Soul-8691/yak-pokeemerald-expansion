@@ -87,7 +87,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LumSwampCaveWarning",
+      "script": "LUMBRIDGESWAMP_CANDLESELLER",
       "flag": "0"
     },
     {
@@ -156,7 +156,7 @@
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_FOREST",
-      "dest_warp_id": 2
+      "dest_warp_id": 5
     },
     {
       "x": 29,

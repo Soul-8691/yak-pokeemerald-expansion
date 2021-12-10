@@ -58,14 +58,6 @@ LumSwampMuggerBattle::
 	return
 
 
-LumSwampCaveWarning::
-	lock
-	faceplayer
-	msgbox LumSwampCaveWarning_Text_0
-	release
-	return
-
-
 LumSwampRat::
 	lock
 	faceplayer
@@ -78,6 +70,27 @@ LumSwampSign::
 	msgbox LumSwampSign_Text_0, MSGBOX_SIGN
 	release
 	return
+
+
+LUMBRIDGESWAMP_CANDLESELLER::
+	lock
+	faceplayer
+	msgbox LUMBRIDGESWAMP_CANDLESELLER_Text_0
+	checkitem ITEM_LANTERN, 1
+	compare VAR_RESULT, 0
+	goto_if_eq LUMBRIDGESWAMP_CANDLESELLER_2
+	release
+	end
+
+	release
+	end
+
+LUMBRIDGESWAMP_CANDLESELLER_2:
+	msgbox LUMBRIDGESWAMP_CANDLESELLER_Text_1
+	giveitem ITEM_LANTERN
+	msgbox LUMBRIDGESWAMP_CANDLESELLER_Text_2
+	release
+	end
 
 
 BLOCK_LumbridgeSwamp_HAM_Text_0:
@@ -108,12 +121,20 @@ LumSwampRsnBattle_Text_2:
 	.string "The mill is up ahead. I heard you can get\n"
 	.string "some good wheat there.$"
 
-LumSwampCaveWarning_Text_0:
-	.string "I wouldn't go down there without a\n"
-	.string "light. It's dangerous!$"
-
 LumSwampRat_Text_0:
 	.string "REEEEEE!$"
 
 LumSwampSign_Text_0:
 	.string "WARNING: Goblins below!$"
+
+LUMBRIDGESWAMP_CANDLESELLER_Text_0:
+	.string "I wouldn't go down there without a light\n"
+	.string "source.\p"
+	.string "It's dangerous!$"
+
+LUMBRIDGESWAMP_CANDLESELLER_Text_1:
+	.string "Look.. If you are serious about going\n"
+	.string "down there, take this.$"
+
+LUMBRIDGESWAMP_CANDLESELLER_Text_2:
+	.string "Be careful down there.$"

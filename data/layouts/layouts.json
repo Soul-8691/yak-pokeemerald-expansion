@@ -6190,6 +6190,36 @@
       "secondary_tileset": "gTileset_Bank",
       "border_filepath": "data/layouts/Moderator_Lobby/border.bin",
       "blockdata_filepath": "data/layouts/Moderator_Lobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_KARAMJA_VOLCANO_B1F",
+      "name": "KaramjaVolcano_B1F_Layout",
+      "width": 30,
+      "height": 24,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/KaramjaVolcano_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/KaramjaVolcano_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_KARAMJA_VOLCANO_B2F",
+      "name": "KaramjaVolcano_B2F_Layout",
+      "width": 32,
+      "height": 36,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/KaramjaVolcano_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/KaramjaVolcano_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_KARAMJA_VOLCANO_B3F",
+      "name": "KaramjaVolcano_B3F_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/KaramjaVolcano_B3F/border.bin",
+      "blockdata_filepath": "data/layouts/KaramjaVolcano_B3F/map.bin"
     }
   ]
 }

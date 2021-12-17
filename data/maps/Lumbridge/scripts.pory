@@ -298,22 +298,28 @@ script Lumbridge_Guard_EAST
 //Guardsman Peale
 script Lumbridge_Guard_SOUTH
 {
-	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
-		lock
-		faceplayer
-		namebox ("Peale")
-		msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't an adventurer."))
-		hidenamebox
-		release
-		end
+	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+            case 0: 
+            case 1: 
+            case 2: 
+			case 3: 
+            case 4:
+				lock
+				faceplayer
+				namebox ("Peale")
+				msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't an adventurer."))
+				hidenamebox
+				release
+				end
+			case 5:
+				lock
+				faceplayer
+				namebox ("Peale")
+				msgbox(format("It's quite dangerous even with a monster to protect you.\pSo be careful."))
+				hidenamebox
+				release
+				end
 	}
-	lock
-	faceplayer
-	namebox ("Peale")
-	msgbox(format("It's quite dangerous even with a monster to protect you.\pSo be careful."))
-	hidenamebox
-	release
-	end
 }
 
 //Guardsman Pazel
@@ -380,24 +386,31 @@ movement LUMBRIDGE_GUARD_EAST_TRIGGER_2{
 
 //Guardsman Peale
 script Lumbridge_Guard_SOUTH_TRIGGER{
-	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
-		lock
-		PlaySE(SE_PIN)
-		applymovement(12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_1)
-		waitmovement(0)
-		namebox ("Peale")
-		msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't an adventurer."))
-		waitmessage 
-		hidenamebox
-		applymovement(OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_SOUTH_TRIGGER)
-        applymovement(12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_2)
-        waitmovement(0)
-        release
-        end
+	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+            case 0: 
+            case 1: 
+            case 2: 
+			case 3: 
+            case 4:
+				lock
+				PlaySE(SE_PIN)
+				applymovement(12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_1)
+				waitmovement(0)
+				namebox ("Peale")
+				msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't an adventurer."))
+				waitmessage 
+				hidenamebox
+				applymovement(OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_SOUTH_TRIGGER)
+				applymovement(12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_2)
+				waitmovement(0)
+				release
+				end
+			case 5:
+				release
+				end
 	}
-	release
-    end
 }
+
 movement LUMBRIDGE_GUARD_SOUTH_TRIGGER_1{
 	emote_exclamation_mark
     face_player
@@ -416,30 +429,62 @@ movement LUMBRIDGE_GUARD_SOUTH_TRIGGER_2{
 
 
 script MoveNPCsAfterEvents_Lumbridge{
-    if(!(var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)) {
-        setobjectxyperm(12, 37, 33)
-        setobjectmovementtype(12,MOVEMENT_TYPE_FACE_DOWN)
+        switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+            case 0: 
+				release
+				end
+            case 1: 
+            case 2: 
+			case 3: 
+            case 4:
+				setobjectxyperm(14, 41, 20)
+				setobjectmovementtype(14,MOVEMENT_TYPE_FACE_DOWN)
 
-        setobjectxyperm(14, 41, 20)
-        setobjectmovementtype(14,MOVEMENT_TYPE_FACE_DOWN)
+				setobjectxyperm(25, 38, 4)
+				setobjectmovementtype(25,MOVEMENT_TYPE_WANDER_AROUND)
 
-		setobjectxyperm(25, 38, 4)
-        setobjectmovementtype(25,MOVEMENT_TYPE_WANDER_AROUND)
+				setobjectxyperm(3, 3, 3)
+				setobjectmovementtype(3,MOVEMENT_TYPE_FACE_LEFT)
 
-		setobjectxyperm(3, 3, 3)
-        setobjectmovementtype(3,MOVEMENT_TYPE_FACE_LEFT)
+				setobjectxyperm(13, 2, 3)
+				setobjectmovementtype(13,MOVEMENT_TYPE_FACE_RIGHT)
 
-		setobjectxyperm(13, 2, 3)
-        setobjectmovementtype(13,MOVEMENT_TYPE_FACE_RIGHT)
+				setobjectxyperm(23, 33, 11)
+				setobjectmovementtype(23,MOVEMENT_TYPE_WANDER_AROUND)
 
-		setobjectxyperm(23, 33, 11)
-        setobjectmovementtype(23,MOVEMENT_TYPE_WANDER_AROUND)
+				setobjectxyperm(11, 50, 21)
+				setobjectmovementtype(11,MOVEMENT_TYPE_FACE_DOWN)
+			case 5:
+				setobjectxyperm(14, 41, 20)
+				setobjectmovementtype(14,MOVEMENT_TYPE_FACE_DOWN)
 
-		setobjectxyperm(11, 50, 21)
-        setobjectmovementtype(11,MOVEMENT_TYPE_FACE_DOWN)
+				setobjectxyperm(25, 38, 4)
+				setobjectmovementtype(25,MOVEMENT_TYPE_WANDER_AROUND)
 
-    }
+				setobjectxyperm(3, 3, 3)
+				setobjectmovementtype(3,MOVEMENT_TYPE_FACE_LEFT)
+
+				setobjectxyperm(13, 2, 3)
+				setobjectmovementtype(13,MOVEMENT_TYPE_FACE_RIGHT)
+
+				setobjectxyperm(23, 33, 11)
+				setobjectmovementtype(23,MOVEMENT_TYPE_WANDER_AROUND)
+
+				setobjectxyperm(11, 50, 21)
+				setobjectmovementtype(11,MOVEMENT_TYPE_FACE_DOWN)
+
+				setobjectxyperm(12, 37, 33)
+        		setobjectmovementtype(12,MOVEMENT_TYPE_FACE_DOWN)
+			case 6: 
+            case 7: 
+                release
+                end
+            }
 }
+        
+
+        
+
 //--EVENT---------------------------------------------------------------------------------------
 
 

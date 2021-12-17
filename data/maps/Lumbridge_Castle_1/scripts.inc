@@ -259,15 +259,14 @@ LUMBRIDGE_GYM_TRAINER_1_Text_3:
 	.string "You are like a champion in the making!$"
 
 LUMBRIDGE_GYM_TRAINER_2_Text_0:
-	.string "Feast your eyes upon my evolved\n"
-	.string "monster!$"
+	.string "Feast your eyes upon pure cuteness!$"
 
 LUMBRIDGE_GYM_TRAINER_2_Text_1:
-	.string "Maybe I should have evolved it\n"
-	.string "differently with a rune after all.$"
+	.string "I may have lost but have you ever seen\n"
+	.string "something so cute?$"
 
 LUMBRIDGE_GYM_TRAINER_2_Text_2:
-	.string "Next time I'll use a rune.$"
+	.string "Do you agree on how cute my rabbit is?$"
 
 LUMBRIDGE_GYM_TRAINER_2_Text_3:
 	.string "CUPHOLDER$"

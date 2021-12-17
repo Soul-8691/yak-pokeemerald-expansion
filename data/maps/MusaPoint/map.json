@@ -21,11 +21,6 @@
     {
       "direction": "left",
       "offset": 0,
-      "map": "MAP_ROUTE33"
-    },
-    {
-      "direction": "left",
-      "offset": 0,
       "map": "MAP_ROUTE39"
     }
   ],
@@ -175,7 +170,20 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 3,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_LUMBRIDGE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 25,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_MUSA_POINT",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 

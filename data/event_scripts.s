@@ -1409,3 +1409,9 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/HAM_Hideout_B2F/scripts.inc"
 
 	.include "data/maps/Moderator_Lobby/scripts.inc"
+
+	.include "data/maps/KaramjaVolcano_B1F/scripts.inc"
+
+	.include "data/maps/KaramjaVolcano_B2F/scripts.inc"
+
+	.include "data/maps/KaramjaVolcano_B3F/scripts.inc"

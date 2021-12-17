@@ -74,7 +74,7 @@
 //trade flags
 #define FLAG_LUMBRIDGE_TRADE_1    0x30 // Unused Flag
 #define FLAG_RECEIVED_PULSECORE   0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
+#define FLAG_ELVARG          0x32 // Unused Flag
 #define FLAG_UNUSED_0x033    0x33 // Unused Flag
 #define FLAG_UNUSED_0x034    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag

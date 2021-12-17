@@ -1,0 +1,33 @@
+mapscripts KaramjaVolcano_B2F_MapScripts {
+
+    MAP_SCRIPT_ON_LOAD {
+        goto(KaramjaVolcano_STATE2)
+        }
+
+}
+
+
+
+
+
+
+
+script KaramjaVolcano_STATE2{
+        switch (var(VAR_POKESCAPE_KARAMJAVOLCANO_STATE)){ 
+            case 0: 
+                playbgm (MUS_PS_ENCOUNTER_HAM, 1)
+                release
+                end
+            case 1: 
+                playbgm (MUS_PS_ENCOUNTER_HAM, 1)
+                release
+                end
+            case 2: 
+                setflag(FLAG_TEMP_1)
+                removeobject(2)
+                removeobject(3)
+                removeobject(4)
+                release
+                end
+            }
+    }

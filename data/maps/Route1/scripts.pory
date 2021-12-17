@@ -224,7 +224,12 @@ script Route1FarmerBattle{
     release
 }
 
-
+script FeetfingersBattle{
+    trainerbattle_single(TRAINER_GOBLIN_4_ROUTE1,"Me Feetfingers who you?","Feetfingers, impressed!")
+    msgbox("Friend of Feetfingers?")
+    release
+    end
+}
 
 
 

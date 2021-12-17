@@ -52,7 +52,16 @@
 #define TRAINER_MITHRILMAN10                     37
 
 #define TRAINER_TRAINER1_MILLLANEMILL            38
-
+#define TRAINER_KARAMJAVOLCANO_HAM_ADMIN_PATTY        39
+#define TRAINER_KARAMJAVOLCANO_HAM_GRUNT_1        40
+#define TRAINER_KARAMJAVOLCANO_HAM_GRUNT_2      41 
+#define TRAINER_KARAMJAVOLCANO_HAM_GRUNT_3      42
+#define TRAINER_KARAMJAVOLCANO_HAM_GRUNT_4      43
+#define TRAINER_KARAMJAVOLCANO_HAM_GRUNT_5      44
+#define TRAINER_KARAMJAVOLCANO_HAM_GRUNT_6      45
+#define TRAINER_KARAMJAVOLCANO_SKELETON_1      46
+#define TRAINER_DRAYNOR_MANOR_COUNT_DRAYNOR      47
+#define TRAINER_GOBLIN_4_ROUTE1               48
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

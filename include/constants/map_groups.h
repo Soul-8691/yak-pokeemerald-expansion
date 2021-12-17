@@ -1,10 +1,6 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
-//
-// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
-//
-
 // Map Group 0
 #define MAP_PETALBURG_CITY      (0 | (0 << 8))
 #define MAP_SLATEPORT_CITY      (1 | (0 << 8))
@@ -682,6 +678,9 @@
 #define MAP_CHAOS_TUNNELS_B1F          (19 | (36 << 8))
 #define MAP_ABYSSAL_REALM_1            (20 | (36 << 8))
 #define MAP_ABYSSAL_REALM_2            (21 | (36 << 8))
+#define MAP_KARAMJA_VOLCANO_B1F        (22 | (36 << 8))
+#define MAP_KARAMJA_VOLCANO_B2F        (23 | (36 << 8))
+#define MAP_KARAMJA_VOLCANO_B3F        (24 | (36 << 8))
 
 // Map Group 37
 #define MAP_TUTORIAL_ISLAND_LAB_UP   (0 | (37 << 8))

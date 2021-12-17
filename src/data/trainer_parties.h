@@ -51,13 +51,13 @@ static const struct TrainerMonItemDefaultMoves sParty_Trainer1_Route1[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Goblin3[] = {
     {
     .iv = 0,
-    .lvl = 15,
+    .lvl = 9,
     .species = SPECIES_FROG_NORMAL_FORM,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 15,
+    .lvl = 9,
     .species = SPECIES_EEL_SLIMY_FORM,
     .heldItem = ITEM_NONE
     }
@@ -68,8 +68,29 @@ static const struct TrainerMonItemDefaultMoves sParty_Goblin3[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Farmer_Route1[] = {
     {
     .iv = 0,
-    .lvl = 15,
-    .species = SPECIES_COW,
+    .lvl = 10,
+    .species = SPECIES_CALF,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 11,
+    .species = SPECIES_CALF,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE1_Goblin4[] = {
+    {
+    .iv = 0,
+    .lvl = 11,
+    .species = SPECIES_SPIDERLING,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_FROG_NORMAL_FORM,
     .heldItem = ITEM_NONE
     }
 };
@@ -165,7 +186,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Goblin4[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Goblin5[] = {
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 3,
     .species = SPECIES_FROGSPAWN,
     .heldItem = ITEM_NONE
     }
@@ -174,7 +195,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Goblin5[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Goblin6[] = {
     {
     .iv = 0,
-    .lvl = 6,
+    .lvl = 4,
     .species = SPECIES_EEL_SLIMY_FORM,
     .heldItem = ITEM_NONE
     }
@@ -299,7 +320,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym1[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym2[] = {
     {
     .iv = 0,
-    .lvl = 13,
+    .lvl = 10,
     .species = SPECIES_RABBIT,
     .heldItem = ITEM_NONE
     }
@@ -308,8 +329,14 @@ static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym2[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym3[] = {
     {
     .iv = 0,
-    .lvl = 12,
-    .species = SPECIES_CHICKEN_NORMAL_FORM,
+    .lvl = 11,
+    .species = SPECIES_PUPPY_PUP_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 9,
+    .species = SPECIES_KITTEN,
     .heldItem = ITEM_NONE
     }
 };
@@ -317,7 +344,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym3[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym4[] = {
     {
     .iv = 0,
-    .lvl = 13,
+    .lvl = 11,
     .species = SPECIES_BABY_YAK,
     .heldItem = ITEM_NONE
     }
@@ -329,18 +356,21 @@ static const struct TrainerMonItemDefaultMoves sParty_Duke[] = {
     .lvl = 11,
     .species = SPECIES_BABY_YAK,
     .heldItem = ITEM_NONE
+    //.moves = {MOVE_SLACK_OFF, MOVE_ABSORB, MOVE_TACKLE, MOVE_GROWL}
     },
     {
     .iv = 0,
     .lvl = 11,
-    .species = SPECIES_PUPPY_PUP_FORM,
+    .species = SPECIES_PUPPY_MUTT_FORM,
     .heldItem = ITEM_NONE
+    //.moves = {MOVE_SLACK_OFF, MOVE_HOWL, MOVE_TACKLE, MOVE_GROWL}
     },
     {
     .iv = 0,
     .lvl = 13,
     .species = SPECIES_ROOSTER_NORMAL_FORM,
     .heldItem = ITEM_NONE
+    //.moves = {MOVE_TACKLE, MOVE_HOWL, MOVE_FEATHER_DANCE, MOVE_NONE}
     },
 };
     //lumbridge swamp
@@ -702,4 +732,194 @@ static const struct TrainerMonItemDefaultMoves sParty_MITHRILMAN10[] = {
     .species = SPECIES_JADE_VINE,
     .heldItem = ITEM_NONE
     },
+};
+
+//KARAMJA VOLCANO-------------
+static const struct TrainerMonItemDefaultMoves sParty_KaramjaVolcano_HAM_ADMIN_PATTY[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_SNAKE_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_SPIDER_DEADLYRED_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_GRENWALL,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_SEAGULL_KOPPENPLOPPEN_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_SCORPION_POISON_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_KaramjaVolcano_HAM_GRUNT_1[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_PIG,
+    .heldItem = ITEM_NONE
+    //.moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_SPIDER_JUNGLE_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_KaramjaVolcano_HAM_GRUNT_2[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_RAT_HELL_FORM,
+    .heldItem = ITEM_NONE
+    //.moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_SPIDER_GIANT_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_CHICKEN_DIVING_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_KaramjaVolcano_HAM_GRUNT_3[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_CAT_OVERGROWN_FORM,
+    .heldItem = ITEM_NONE
+    //.moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_PIG,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_BROAV,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_KaramjaVolcano_HAM_GRUNT_4[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_GIANT_RAT_CRYPT_FORM,
+    .heldItem = ITEM_NONE
+    //.moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_GIANT_FROG_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_KaramjaVolcano_HAM_GRUNT_5[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_TURKEY_FEMALE_FORM,
+    .heldItem = ITEM_NONE
+    //.moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_CHICKEN_KARAMJA_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_KaramjaVolcano_HAM_GRUNT_6[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_SPIDER_JUNGLE_FORM,
+    .heldItem = ITEM_NONE
+    //.moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_SPIDER_HUGE_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_SPIDER_GIANT_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+
+static const struct TrainerMonItemDefaultMoves sParty_KaramjaVolcano_SKELETON_1[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_MONKEY_ZOMBIE_FORM,
+    .heldItem = ITEM_NONE
+    //.moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_SPIKES, MOVE_STEEL_WING}
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_HAND_CRAWLING_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+
+static const struct TrainerMonItemDefaultMoves sParty_DRAYNOR_MANOR_COUNT_DRAYNOR[] = {
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_SPIDERLING,
+    .heldItem = ITEM_NONE
+    //.moves = {MOVE_STICKY_WEB, MOVE_SPIDER_WEB, MOVE_BUG_BITE, MOVE_NONE}
+    },
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_BLOODVELD,
+    .heldItem = ITEM_NONE
+    //.moves = {MOVE_LEECH_LIFE, MOVE_MEGA_DRAIN, MOVE_WORK_UP, MOVE_NONE}
+    },
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_VAMPYREBAT,
+    .heldItem = ITEM_NONE
+    //.moves = {MOVE_LEECH_LIFE, MOVE_BITE, MOVE_POISON_FANG, MOVE_TAILWIND}
+    }
 };

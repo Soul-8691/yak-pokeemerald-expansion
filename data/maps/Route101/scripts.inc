@@ -11,12 +11,12 @@ Route101_OnTransition: @ 81EBCC5
 	end
 
 Route101_OnFrame: @ 81EBCCB
-	map_script_2 VAR_ROUTE101_STATE, 0, Route101_EventScript_HideMapNamePopup
+	map_script_2 VAR_POKESCAPE_KARAMJAVOLCANO_STATE, 0, Route101_EventScript_HideMapNamePopup
 	.2byte 0
 
 Route101_EventScript_HideMapNamePopup:: @ 81EBCD5
 	setflag FLAG_HIDE_MAP_NAME_POPUP
-	setvar VAR_ROUTE101_STATE, 1
+	setvar VAR_POKESCAPE_KARAMJAVOLCANO_STATE, 1
 	end
 
 Route101_EventScript_StartBirchRescue:: @ 81EBCDE
@@ -40,7 +40,7 @@ Route101_EventScript_StartBirchRescue:: @ 81EBCDE
 	waitmovement 0
 	msgbox Route101_Text_PleaseHelp, MSGBOX_DEFAULT
 	closemessage
-	setvar VAR_ROUTE101_STATE, 2
+	setvar VAR_POKESCAPE_KARAMJAVOLCANO_STATE, 2
 	releaseall
 	end
 
@@ -238,7 +238,7 @@ Route101_EventScript_BirchsBag:: @ 81EBE16
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH
 	setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG
 	setvar VAR_BIRCH_LAB_STATE, 2
-	setvar VAR_ROUTE101_STATE, 3
+	setvar VAR_POKESCAPE_KARAMJAVOLCANO_STATE, 3
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
 	checkplayergender
 	compare VAR_RESULT, MALE

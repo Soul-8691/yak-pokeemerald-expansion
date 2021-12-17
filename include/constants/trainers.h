@@ -525,6 +525,7 @@
 #define TRAINER_ENCOUNTER_MUSIC_RICH        13 // Rich Boys and Gentlemen
 //POKESCAPE
 #define TRAINER_ENCOUNTER_PKER				14
+#define TRAINER_ENCOUNTER_HAM				15 //HAM GRUNTS
 
 #define F_TRAINER_FEMALE (1 << 7)
 

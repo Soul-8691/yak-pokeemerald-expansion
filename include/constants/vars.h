@@ -96,7 +96,7 @@
 #define VAR_POKELOT_PRIZE_PLACE              0x404D
 #define VAR_POKESCAPE_STARTER_HOUSE_STATE    0x404E // POKESCAPE Unused Var
 #define VAR_LOTAD_SIZE_RECORD                0x404F
-#define VAR_LITTLEROOT_TOWN_STATE            0x4050
+#define VAR_POKESCAPE_MUSIC_STATE            0x4050
 #define VAR_OLDALE_TOWN_STATE                0x4051
 #define VAR_POKESCAPE_LUMBRIDGE_CASTLE_STATE 0x4052 // POKESCAPE Unused Var
 #define VAR_LAVARIDGE_TOWN_STATE             0x4053
@@ -112,7 +112,7 @@
 #define VAR_MOSSDEEP_CITY_STATE              0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE            0x405E
 #define VAR_EVER_GRANDE_CITY_STATE           0x405F // Unused Var
-#define VAR_ROUTE101_STATE                   0x4060
+#define VAR_POKESCAPE_KARAMJAVOLCANO_STATE                   0x4060
 #define VAR_ROUTE102_STATE                   0x4061 // Unused Var
 #define VAR_ROUTE103_STATE                   0x4062 // Unused Var
 #define VAR_ROUTE104_STATE                   0x4063

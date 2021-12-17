@@ -279,21 +279,29 @@ Lumbridge_Guard_EAST_2:
 
 
 Lumbridge_Guard_SOUTH::
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
-	goto_if_eq Lumbridge_Guard_SOUTH_2
-	lock
-	faceplayer
-	namebox Lumbridge_Guard_SOUTH_Text_0
-	msgbox Lumbridge_Guard_SOUTH_Text_1
-	hidenamebox
-	release
-	end
+	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
+	case 0, Lumbridge_Guard_SOUTH_2
+	case 1, Lumbridge_Guard_SOUTH_2
+	case 2, Lumbridge_Guard_SOUTH_2
+	case 3, Lumbridge_Guard_SOUTH_2
+	case 4, Lumbridge_Guard_SOUTH_2
+	case 5, Lumbridge_Guard_SOUTH_3
+	return
 
 Lumbridge_Guard_SOUTH_2:
 	lock
 	faceplayer
 	namebox Lumbridge_Guard_SOUTH_Text_0
 	msgbox Lumbridge_Guard_NORTH_Text_1
+	hidenamebox
+	release
+	end
+
+Lumbridge_Guard_SOUTH_3:
+	lock
+	faceplayer
+	namebox Lumbridge_Guard_SOUTH_Text_0
+	msgbox Lumbridge_Guard_SOUTH_Text_1
 	hidenamebox
 	release
 	end
@@ -370,10 +378,14 @@ LUMBRIDGE_GUARD_EAST_TRIGGER_2:
 	step_end
 
 Lumbridge_Guard_SOUTH_TRIGGER::
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
-	goto_if_eq Lumbridge_Guard_SOUTH_TRIGGER_2
-	release
-	end
+	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
+	case 0, Lumbridge_Guard_SOUTH_TRIGGER_2
+	case 1, Lumbridge_Guard_SOUTH_TRIGGER_2
+	case 2, Lumbridge_Guard_SOUTH_TRIGGER_2
+	case 3, Lumbridge_Guard_SOUTH_TRIGGER_2
+	case 4, Lumbridge_Guard_SOUTH_TRIGGER_2
+	case 5, Lumbridge_Guard_SOUTH_TRIGGER_3
+	return
 
 Lumbridge_Guard_SOUTH_TRIGGER_2:
 	lock
@@ -387,6 +399,10 @@ Lumbridge_Guard_SOUTH_TRIGGER_2:
 	applymovement OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_SOUTH_TRIGGER
 	applymovement 12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_2
 	waitmovement 0
+	release
+	end
+
+Lumbridge_Guard_SOUTH_TRIGGER_3:
 	release
 	end
 
@@ -405,13 +421,22 @@ LUMBRIDGE_GUARD_SOUTH_TRIGGER_2:
 	step_end
 
 MoveNPCsAfterEvents_Lumbridge::
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
-	goto_if_ne MoveNPCsAfterEvents_Lumbridge_1
+	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
+	case 0, MoveNPCsAfterEvents_Lumbridge_2
+	case 1, MoveNPCsAfterEvents_Lumbridge_3
+	case 2, MoveNPCsAfterEvents_Lumbridge_3
+	case 3, MoveNPCsAfterEvents_Lumbridge_3
+	case 4, MoveNPCsAfterEvents_Lumbridge_3
+	case 5, MoveNPCsAfterEvents_Lumbridge_4
+	case 6, MoveNPCsAfterEvents_Lumbridge_5
+	case 7, MoveNPCsAfterEvents_Lumbridge_5
 	return
 
-MoveNPCsAfterEvents_Lumbridge_1:
-	setobjectxyperm 12, 37, 33
-	setobjectmovementtype 12, MOVEMENT_TYPE_FACE_DOWN
+MoveNPCsAfterEvents_Lumbridge_2:
+	release
+	end
+
+MoveNPCsAfterEvents_Lumbridge_3:
 	setobjectxyperm 14, 41, 20
 	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 25, 38, 4
@@ -425,6 +450,27 @@ MoveNPCsAfterEvents_Lumbridge_1:
 	setobjectxyperm 11, 50, 21
 	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
 	return
+
+MoveNPCsAfterEvents_Lumbridge_4:
+	setobjectxyperm 14, 41, 20
+	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 25, 38, 4
+	setobjectmovementtype 25, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 3, 3, 3
+	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm 13, 2, 3
+	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm 23, 33, 11
+	setobjectmovementtype 23, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 11, 50, 21
+	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 12, 37, 33
+	setobjectmovementtype 12, MOVEMENT_TYPE_FACE_DOWN
+	return
+
+MoveNPCsAfterEvents_Lumbridge_5:
+	release
+	end
 
 
 Lumbridge_House_NPC1::

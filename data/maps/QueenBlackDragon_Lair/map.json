@@ -85,8 +85,8 @@
       "x": 9,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_LUMBRIDGE_CHURCH",
-      "dest_warp_id": 0
+      "dest_map": "MAP_KARAMJA_VOLCANO_B3F",
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [

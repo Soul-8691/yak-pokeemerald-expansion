@@ -182,6 +182,13 @@ Route1FarmerBattle::
 	return
 
 
+FeetfingersBattle::
+	trainerbattle_single TRAINER_GOBLIN_4_ROUTE1, FeetfingersBattle_Text_0, FeetfingersBattle_Text_1
+	msgbox FeetfingersBattle_Text_2
+	release
+	end
+
+
 ChickenBattleScript1::
 	lock
 	faceplayer
@@ -706,6 +713,15 @@ Route1FarmerBattle_Text_0:
 
 Route1FarmerBattle_Text_1:
 	.string "Its not really my lands yet.$"
+
+FeetfingersBattle_Text_0:
+	.string "Me Feetfingers who you?$"
+
+FeetfingersBattle_Text_1:
+	.string "Feetfingers, impressed!$"
+
+FeetfingersBattle_Text_2:
+	.string "Friend of Feetfingers?$"
 
 ChickenBattleScript1_Text_0:
 	.string "BWAK!$"

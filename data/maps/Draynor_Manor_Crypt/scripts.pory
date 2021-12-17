@@ -1,0 +1,56 @@
+mapscripts Draynor_Manor_Crypt_MapScripts {
+
+	MAP_SCRIPT_ON_LOAD {
+        goto(WizardsTower_DraynorManor_Crypt_STATE)
+        }
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_POKESCAPE_KARAMJAVOLCANO_STATE, 7: EVENT_HAM_DRAYNORMANOR_CRYPT
+    ]
+}
+
+
+
+script WizardsTower_DraynorManor_Crypt_STATE{
+        switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+            case 0: 
+            case 1: 
+            case 2: 
+			case 3: 
+            case 4:
+			case 5:
+			case 6: 
+            case 7: 
+                release
+                end
+            case 8: 
+            case 9: 
+                //HIDE NPCs
+                removeobject(2) //HAM
+                setflag(FLAG_TEMP_1)
+                release
+                end  
+            }
+    }
+
+
+
+
+script EVENT_HAM_DRAYNORMANOR_CRYPT{
+    lock
+	namebox("H.A.M GRUNT")
+    msgbox(format("YO SHIT ITS A VAMPYRE"))
+    hidenamebox
+	closemessage
+
+    namebox("COUNT DRAYNOR")
+    msgbox(format("YO SHIT ITS PINK MAN!\pI'm going to smack the shit out of you!"))
+    hidenamebox
+	closemessage
+	trainerbattle_single(TRAINER_DRAYNOR_MANOR_COUNT_DRAYNOR, format("LEME SUCC"),format("YOU SUCC ME DRY"))
+    msgbox(format("OH NO! I AM DEAD!"))
+    setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,8)
+
+    release
+    end
+}

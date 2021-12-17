@@ -87,6 +87,19 @@ const struct Trainer gTrainers[] = {
         .scaling = FALSE,
     },
 	
+    [TRAINER_GOBLIN_4_ROUTE1] ={
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_GOBLIN,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = TRAINER_PIC_goblin,
+        .trainerName = _("FEETFINGERS"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE1_Goblin4),
+        .party = {.ItemDefaultMoves = sParty_ROUTE1_Goblin4},
+        .scaling = FALSE,
+    },
 
 //----------------------------------------------------------------------------------------------------------------------
 //MILL LANE MILL----------------------------------------------------------------------------------------------------------------------
@@ -540,5 +553,168 @@ const struct Trainer gTrainers[] = {
         .party = {.ItemDefaultMoves = sParty_MITHRILMAN10},
         .scaling = FALSE,
     },
+
+//----------------------------------------------------------------------------------------------------------------------
+
+    [TRAINER_KARAMJAVOLCANO_HAM_ADMIN_PATTY] = {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_HAM_BOSS,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_HAM,
+        .trainerPic = TRAINER_PIC_ham_grunt_f,
+        .trainerName = _("PATTY"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_KaramjaVolcano_HAM_ADMIN_PATTY),
+        .party = {.ItemDefaultMoves = sParty_KaramjaVolcano_HAM_ADMIN_PATTY},
+        .scaling = FALSE,
+    },
+
+
+    [TRAINER_KARAMJAVOLCANO_HAM_GRUNT_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_HAM_GRUNT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_HAM,
+        .trainerPic = TRAINER_PIC_ham_grunt_f,
+        .trainerName = _("GRUNT"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_KaramjaVolcano_HAM_GRUNT_1),
+        .party = {.ItemDefaultMoves = sParty_KaramjaVolcano_HAM_GRUNT_1},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_KARAMJAVOLCANO_HAM_GRUNT_2] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_HAM_GRUNT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_HAM,
+        .trainerPic = TRAINER_PIC_ham_grunt_f,
+        .trainerName = _("GRUNT"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_KaramjaVolcano_HAM_GRUNT_2),
+        .party = {.ItemDefaultMoves = sParty_KaramjaVolcano_HAM_GRUNT_2},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_KARAMJAVOLCANO_HAM_GRUNT_3] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_HAM_GRUNT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_HAM,
+        .trainerPic = TRAINER_PIC_ham_grunt_f,
+        .trainerName = _("GRUNT"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_KaramjaVolcano_HAM_GRUNT_3),
+        .party = {.ItemDefaultMoves = sParty_KaramjaVolcano_HAM_GRUNT_3},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_KARAMJAVOLCANO_HAM_GRUNT_4] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_HAM_GRUNT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_HAM,
+        .trainerPic = TRAINER_PIC_ham_grunt_f,
+        .trainerName = _("GRUNT"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_KaramjaVolcano_HAM_GRUNT_4),
+        .party = {.ItemDefaultMoves = sParty_KaramjaVolcano_HAM_GRUNT_4},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_KARAMJAVOLCANO_HAM_GRUNT_5] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_HAM_GRUNT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_HAM,
+        .trainerPic = TRAINER_PIC_ham_grunt_f,
+        .trainerName = _("GRUNT"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_KaramjaVolcano_HAM_GRUNT_5),
+        .party = {.ItemDefaultMoves = sParty_KaramjaVolcano_HAM_GRUNT_5},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_KARAMJAVOLCANO_HAM_GRUNT_6] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_HAM_GRUNT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_HAM,
+        .trainerPic = TRAINER_PIC_ham_grunt_f,
+        .trainerName = _("GRUNT"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_KaramjaVolcano_HAM_GRUNT_6),
+        .party = {.ItemDefaultMoves = sParty_KaramjaVolcano_HAM_GRUNT_6},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_KARAMJAVOLCANO_SKELETON_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("Humurus"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_KaramjaVolcano_SKELETON_1),
+        .party = {.ItemDefaultMoves = sParty_KaramjaVolcano_SKELETON_1},
+        .scaling = FALSE,
+    },
+
+//-------------------------------------
+    [TRAINER_DRAYNOR_MANOR_COUNT_DRAYNOR] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_COUNT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_count_draynor,
+        .trainerName = _("DRAYNOR"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_DRAYNOR_MANOR_COUNT_DRAYNOR),
+        .party = {.ItemDefaultMoves = sParty_DRAYNOR_MANOR_COUNT_DRAYNOR},
+        .scaling = FALSE,
+    },
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 };

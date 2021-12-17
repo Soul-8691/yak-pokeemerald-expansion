@@ -5,6 +5,8 @@ QueenBlackDragon_Lair_MapScripts::
 QBD_Battle_QBD::
 	lock
 	faceplayer
+	applymovement 1, QUEENBLACK_DRAGON_MOVEMENT
+	waitmovement 0
 	waitse
 	delay 20
 	playse SE_THUNDERSTORM_STOP
@@ -44,6 +46,17 @@ QBD_Battle_QBD::
 	setflag FLAG_CAUGHT_LUGIA
 	release
 	end
+
+QUEENBLACK_DRAGON_MOVEMENT:
+	init_affine_anim
+	walk_down_start_affine
+	delay_16
+	delay_16
+	walk_down_affine
+	delay_16
+	delay_16
+	walk_down_affine
+	step_end
 
 QBDLAIR_1::
 	switch VAR_POKESCAPE_STARTER_HOUSE_STATE

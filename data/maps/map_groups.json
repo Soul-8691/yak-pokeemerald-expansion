@@ -729,7 +729,10 @@
     "Vorago_Cavern",
     "Chaos_Tunnels_B1F",
     "Abyssal_Realm_1",
-    "Abyssal_Realm_2"
+    "Abyssal_Realm_2",
+    "KaramjaVolcano_B1F",
+    "KaramjaVolcano_B2F",
+    "KaramjaVolcano_B3F"
   ],
   "gMapGroup37": [
     "Tutorial_Island_Lab_Up",

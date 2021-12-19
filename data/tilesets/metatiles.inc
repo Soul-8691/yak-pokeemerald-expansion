@@ -729,3 +729,10 @@ gMetatiles_Barbarian_Village::
 	.align 1
 gMetatileAttributes_Barbarian_Village::
 	.incbin "data/tilesets/secondary/barbarian_village/metatile_attributes.bin"
+	.align 1
+gMetatiles_PokeScape_Sewers::
+	.incbin "data/tilesets/secondary/pokescape_sewers/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_PokeScape_Sewers::
+	.incbin "data/tilesets/secondary/pokescape_sewers/metatile_attributes.bin"

@@ -1415,3 +1415,15 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/KaramjaVolcano_B2F/scripts.inc"
 
 	.include "data/maps/KaramjaVolcano_B3F/scripts.inc"
+
+	.include "data/maps/Draynor_Bank/scripts.inc"
+
+	.include "data/maps/Falador_Bank_East/scripts.inc"
+
+	.include "data/maps/Draynor_Sewers_1/scripts.inc"
+
+	.include "data/maps/Draynor_Sewers_2/scripts.inc"
+
+	.include "data/maps/Draynor_Sewers_3/scripts.inc"
+
+	.include "data/maps/Draynor_Sewers_4/scripts.inc"

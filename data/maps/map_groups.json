@@ -766,7 +766,12 @@
     "Draynor_House_Morgan_1F",
     "Draynor_House_Morgan_2F",
     "Draynor_House_WoM_1F",
-    "Draynor_House_WoM_2F"
+    "Draynor_House_WoM_2F",
+    "Draynor_Bank",
+    "Draynor_Sewers_1",
+    "Draynor_Sewers_2",
+    "Draynor_Sewers_3",
+    "Draynor_Sewers_4"
   ],
   "gMapGroup40": [
     "PortSarim_Pub_1F",
@@ -782,7 +787,8 @@
     "Falador_Bank_West_1F",
     "Falador_GemShop",
     "Falador_Pub_1F",
-    "Falador_Pub_2F"
+    "Falador_Pub_2F",
+    "Falador_Bank_East"
   ],
   "gMapGroup43": [
     "Varrock_Thessalia_Shop",

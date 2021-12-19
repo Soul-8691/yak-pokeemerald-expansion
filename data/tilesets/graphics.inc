@@ -2210,3 +2210,23 @@ gTilesetPalettes_Barbarian_Village::
 	.align 2
 gTilesetTiles_Barbarian_Village::
 	.incbin "data/tilesets/secondary/barbarian_village/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_PokeScape_Sewers::
+	.incbin "data/tilesets/secondary/pokescape_sewers/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_sewers/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_sewers/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_sewers/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_sewers/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_sewers/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_sewers/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_sewers/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_sewers/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_sewers/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_sewers/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_sewers/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_sewers/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_PokeScape_Sewers::
+	.incbin "data/tilesets/secondary/pokescape_sewers/tiles.4bpp.lz"

@@ -148,10 +148,16 @@ Draynor_Martin::
 
 
 Draynor_Guard1::
-	lock
-	faceplayer
 	namebox Draynor_Guard1_Text_0
 	msgbox Draynor_Guard1_Text_1
+	hidenamebox
+	release
+	end
+
+
+Draynor_Coolmom227::
+	namebox Draynor_Coolmom227_Text_0
+	msgbox Draynor_Coolmom227_Text_1
 	hidenamebox
 	release
 	end
@@ -231,8 +237,14 @@ Draynor_Guard1_Text_0:
 	.string "Guard$"
 
 Draynor_Guard1_Text_1:
-	.string "I've got my eye on you, don't cause any\n"
-	.string "trouble or else.$"
+	.string "Hey!\n"
+	.string "Get your hands off there!$"
+
+Draynor_Coolmom227_Text_0:
+	.string "Cool Mom227$"
+
+Draynor_Coolmom227_Text_1:
+	.string "...$"
 
 Draynor_Guard2_Text_0:
 	.string "Don't cause any trouble.$"

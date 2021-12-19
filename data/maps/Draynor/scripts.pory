@@ -154,10 +154,16 @@ script Draynor_Martin{
 }
 
 script Draynor_Guard1{
-	lock
-	faceplayer
     namebox("Guard")
-	msgbox(format("I've got my eye on you, don't cause any trouble or else."))
+	msgbox(format("Hey!\nGet your hands off there!"))
+    hidenamebox
+    release
+	end
+}
+
+script Draynor_Coolmom227{
+    namebox("Cool Mom227")
+	msgbox(format("..."))
     hidenamebox
     release
 	end

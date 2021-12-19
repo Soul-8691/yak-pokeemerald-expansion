@@ -715,6 +715,11 @@
 #define MAP_DRAYNOR_HOUSE_MORGAN_2F (1 | (39 << 8))
 #define MAP_DRAYNOR_HOUSE_WO_M_1F   (2 | (39 << 8))
 #define MAP_DRAYNOR_HOUSE_WO_M_2F   (3 | (39 << 8))
+#define MAP_DRAYNOR_BANK            (4 | (39 << 8))
+#define MAP_DRAYNOR_SEWERS_1        (5 | (39 << 8))
+#define MAP_DRAYNOR_SEWERS_2        (6 | (39 << 8))
+#define MAP_DRAYNOR_SEWERS_3        (7 | (39 << 8))
+#define MAP_DRAYNOR_SEWERS_4        (8 | (39 << 8))
 
 // Map Group 40
 #define MAP_PORT_SARIM_PUB_1F (0 | (40 << 8))
@@ -730,6 +735,7 @@
 #define MAP_FALADOR_GEM_SHOP        (4 | (42 << 8))
 #define MAP_FALADOR_PUB_1F          (5 | (42 << 8))
 #define MAP_FALADOR_PUB_2F          (6 | (42 << 8))
+#define MAP_FALADOR_BANK_EAST       (7 | (42 << 8))
 
 // Map Group 43
 #define MAP_VARROCK_THESSALIA_SHOP    (0 | (43 << 8))

@@ -1096,3 +1096,14 @@ gTileset_Barbarian_Village::
 	.4byte gMetatiles_Barbarian_Village
 	.4byte gMetatileAttributes_Barbarian_Village
 	.4byte NULL
+
+	.align 2
+gTileset_PokeScape_Sewers::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_PokeScape_Sewers
+	.4byte gTilesetPalettes_PokeScape_Sewers
+	.4byte gMetatiles_PokeScape_Sewers
+	.4byte gMetatileAttributes_PokeScape_Sewers
+	.4byte NULL

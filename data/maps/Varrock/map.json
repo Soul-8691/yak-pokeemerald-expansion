@@ -485,6 +485,13 @@
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
       "dest_warp_id": 0
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_VARROCK_BANK_WEST",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

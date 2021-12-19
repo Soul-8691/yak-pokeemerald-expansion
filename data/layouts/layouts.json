@@ -5174,7 +5174,7 @@
     {
       "id": "LAYOUT_ROUTE38",
       "name": "Route38_Layout",
-      "width": 40,
+      "width": 42,
       "height": 42,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Mauville",
@@ -6220,6 +6220,66 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/KaramjaVolcano_B3F/border.bin",
       "blockdata_filepath": "data/layouts/KaramjaVolcano_B3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_BANK",
+      "name": "Draynor_Bank_Layout",
+      "width": 10,
+      "height": 16,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Draynor_Bank/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_Bank/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_BANK_EAST",
+      "name": "Falador_Bank_East_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Falador_Bank_East/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_Bank_East/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_SEWERS_1",
+      "name": "Draynor_Sewers_1_Layout",
+      "width": 36,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Sewers",
+      "border_filepath": "data/layouts/Draynor_Sewers_1/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_Sewers_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_SEWERS_2",
+      "name": "Draynor_Sewers_2_Layout",
+      "width": 20,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Sewers",
+      "border_filepath": "data/layouts/Draynor_Sewers_2/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_Sewers_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_SEWERS_3",
+      "name": "Draynor_Sewers_3_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Sewers",
+      "border_filepath": "data/layouts/Draynor_Sewers_3/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_Sewers_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_SEWERS_4",
+      "name": "Draynor_Sewers_4_Layout",
+      "width": 28,
+      "height": 22,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Sewers",
+      "border_filepath": "data/layouts/Draynor_Sewers_4/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_Sewers_4/map.bin"
     }
   ]
 }

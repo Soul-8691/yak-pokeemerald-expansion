@@ -196,7 +196,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 48,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_QUEEN_BLACK_DRAGON_LAIR",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 

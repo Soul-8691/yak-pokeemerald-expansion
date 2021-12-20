@@ -807,7 +807,9 @@
     "Varrock_Bank_West",
     "Varrock_Bank_West_B1F",
     "Varrock_Pub_1F",
-    "Varrock_Pub_2F"
+    "Varrock_Pub_2F",
+    "Varrock_Sewers_1F",
+    "Varrock_Sewers_2F"
   ],
   "gMapGroup44": [
 
@@ -863,6 +865,7 @@
     "FlyingHorse_Pub_2F",
     "HAM_Hideout_B1F",
     "HAM_Hideout_B2F",
-    "Moderator_Lobby"
+    "Moderator_Lobby",
+    "Poison_Waste_Sewers_1F"
   ]
 }

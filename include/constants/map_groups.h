@@ -1,6 +1,10 @@
 #ifndef GUARD_CONSTANTS_MAP_GROUPS_H
 #define GUARD_CONSTANTS_MAP_GROUPS_H
 
+//
+// DO NOT MODIFY THIS FILE! It is auto-generated from data/maps/map_groups.json
+//
+
 // Map Group 0
 #define MAP_PETALBURG_CITY      (0 | (0 << 8))
 #define MAP_SLATEPORT_CITY      (1 | (0 << 8))
@@ -755,6 +759,8 @@
 #define MAP_VARROCK_BANK_WEST_B1F     (14 | (43 << 8))
 #define MAP_VARROCK_PUB_1F            (15 | (43 << 8))
 #define MAP_VARROCK_PUB_2F            (16 | (43 << 8))
+#define MAP_VARROCK_SEWERS_1F         (17 | (43 << 8))
+#define MAP_VARROCK_SEWERS_2F         (18 | (43 << 8))
 
 // Map Group 44
 
@@ -807,6 +813,7 @@
 #define MAP_HAM_HIDEOUT_B1F           (23 | (50 << 8))
 #define MAP_HAM_HIDEOUT_B2F           (24 | (50 << 8))
 #define MAP_MODERATOR_LOBBY           (25 | (50 << 8))
+#define MAP_POISON_WASTE_SEWERS_1F    (26 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

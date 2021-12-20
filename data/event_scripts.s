@@ -1427,3 +1427,9 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Draynor_Sewers_3/scripts.inc"
 
 	.include "data/maps/Draynor_Sewers_4/scripts.inc"
+
+	.include "data/maps/Poison_Waste_Sewers_1F/scripts.inc"
+
+	.include "data/maps/Varrock_Sewers_1F/scripts.inc"
+
+	.include "data/maps/Varrock_Sewers_2F/scripts.inc"

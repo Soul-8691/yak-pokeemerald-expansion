@@ -5855,7 +5855,7 @@
       "id": "LAYOUT_FALADOR_HAIRDRESSERS",
       "name": "Falador_Hairdressers_Layout",
       "width": 10,
-      "height": 14,
+      "height": 16,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Falador_Hairdressers/border.bin",
@@ -6280,6 +6280,36 @@
       "secondary_tileset": "gTileset_PokeScape_Sewers",
       "border_filepath": "data/layouts/Draynor_Sewers_4/border.bin",
       "blockdata_filepath": "data/layouts/Draynor_Sewers_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_POISON_WASTE_SEWERS_1F",
+      "name": "Poison_Waste_Sewers_1F_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Sewers",
+      "border_filepath": "data/layouts/Poison_Waste_Sewers_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Poison_Waste_Sewers_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_SEWERS_1F",
+      "name": "Varrock_Sewers_1F_Layout",
+      "width": 40,
+      "height": 42,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Sewers",
+      "border_filepath": "data/layouts/Varrock_Sewers_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Sewers_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_SEWERS_2F",
+      "name": "Varrock_Sewers_2F_Layout",
+      "width": 46,
+      "height": 32,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Sewers",
+      "border_filepath": "data/layouts/Varrock_Sewers_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Sewers_2F/map.bin"
     }
   ]
 }

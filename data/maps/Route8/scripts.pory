@@ -1,0 +1,46 @@
+mapscripts Route8_MapScripts {
+}
+
+
+
+script ABYSSALRIFT_Route8_ENTER{
+msgbox(format("There is a rift in space.\pWould you like to enter it?"), MSGBOX_YESNO)
+				if (var(VAR_RESULT)){
+                    msgbox(format("As you step into the rift the world around you starts to shimmer."))
+                    warp (MAP_ABYSSAL_REALM_2,0,0,0)
+                    closemessage
+                    release
+                    end
+                }
+                closemessage
+                release
+                end
+}
+
+
+script ABYSSALRIFT_Route8_RETURN{
+msgbox(format("There is a rift in space.\pWould you like to enter it?"), MSGBOX_YESNO)
+				if (var(VAR_RESULT)){
+                    msgbox(format("As you step into the rift the world around you starts to shimmer."))
+                    warp (MAP_ROUTE8,0,0,0)
+                    closemessage
+                    release
+                    end
+                }
+                closemessage
+                release
+                end
+}
+
+script ABYSSALRIFT_Route8_SudoBash{
+                    msgbox(format("001000101001010101001\p0101010010101\p010101010010101010\p010101010\p0101010\n01001\n0101010\p2349812649632946317824024\p42069"))
+                    closemessage
+                    release
+                    end
+
+}
+
+
+
+
+

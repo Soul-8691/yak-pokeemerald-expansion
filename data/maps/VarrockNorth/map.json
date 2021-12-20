@@ -206,7 +206,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 49,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_VARROCK_SEWERS_1F",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 

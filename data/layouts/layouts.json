@@ -4635,7 +4635,7 @@
       "id": "LAYOUT_ROUTE4",
       "name": "Route4_Layout",
       "width": 34,
-      "height": 22,
+      "height": 30,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Windmill",
       "border_filepath": "data/layouts/Route4/border.bin",
@@ -6310,6 +6310,16 @@
       "secondary_tileset": "gTileset_PokeScape_Sewers",
       "border_filepath": "data/layouts/Varrock_Sewers_2F/border.bin",
       "blockdata_filepath": "data/layouts/Varrock_Sewers_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SINKHOLE_1",
+      "name": "Sinkhole_1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Sinkhole_1/border.bin",
+      "blockdata_filepath": "data/layouts/Sinkhole_1/map.bin"
     }
   ]
 }

@@ -605,6 +605,33 @@ ArianeRunAfterHam11:
 	walk_fast_up
 	step_end
 
+BATTLE_AREA_TRAINER_1::
+	trainerbattle_single TRAINER_KARAMJAVOLCANO_HAM_GRUNT_1, BATTLE_AREA_TRAINER_1_Text_0, BATTLE_AREA_TRAINER_1_Text_1
+	namebox BATTLE_AREA_TRAINER_1_Text_2
+	msgbox BATTLE_AREA_TRAINER_1_Text_3
+	hidenamebox
+	release
+	end
+
+
+BATTLE_AREA_TRAINER_2::
+	trainerbattle_single TRAINER_KARAMJAVOLCANO_HAM_GRUNT_1, BATTLE_AREA_TRAINER_2_Text_0, BATTLE_AREA_TRAINER_2_Text_1
+	namebox BATTLE_AREA_TRAINER_1_Text_2
+	msgbox BATTLE_AREA_TRAINER_2_Text_2
+	hidenamebox
+	release
+	end
+
+
+BATTLE_AREA_TRAINER_3::
+	trainerbattle_single TRAINER_KARAMJAVOLCANO_HAM_GRUNT_1, BATTLE_AREA_TRAINER_3_Text_0, BATTLE_AREA_TRAINER_3_Text_1
+	namebox BATTLE_AREA_TRAINER_1_Text_2
+	msgbox BATTLE_AREA_TRAINER_3_Text_2
+	hidenamebox
+	release
+	end
+
+
 NPC_DUCK_Text_0:
 	.string "Quack!$"
 
@@ -822,3 +849,38 @@ ArianeChaseHamEvent7_Text_6:
 ArianeChaseHamEvent7_Text_7:
 	.string "UGH! This dumb couple keeps blocking my\n"
 	.string "way.. but there is still the manor!$"
+
+BATTLE_AREA_TRAINER_1_Text_0:
+	.string "Cor Blimey what are ye doin in me\n"
+	.string "pockets!$"
+
+BATTLE_AREA_TRAINER_1_Text_1:
+	.string "Oh, ye werent a pickpocket.$"
+
+BATTLE_AREA_TRAINER_1_Text_2:
+	.string "TRAINER$"
+
+BATTLE_AREA_TRAINER_1_Text_3:
+	.string "Sorry about the misunderstandin chap.$"
+
+BATTLE_AREA_TRAINER_2_Text_0:
+	.string "These are my wheat fields and if your\n"
+	.string "about to rample them then go on the\l"
+	.string "neighbors plot!$"
+
+BATTLE_AREA_TRAINER_2_Text_1:
+	.string "Wheat a twist!$"
+
+BATTLE_AREA_TRAINER_2_Text_2:
+	.string "Just this once I will look the other way,\n"
+	.string "but be nice to my crops.$"
+
+BATTLE_AREA_TRAINER_3_Text_0:
+	.string "Human not understand glory of big high\n"
+	.string "war god. Me show you!$"
+
+BATTLE_AREA_TRAINER_3_Text_1:
+	.string "Now human understands.$"
+
+BATTLE_AREA_TRAINER_3_Text_2:
+	.string "Big high war god is god of goblins.$"

@@ -645,3 +645,50 @@ movement ArianeRunAfterHam11 {
    // walk_fast_left * 1
     //walk_fast_up * 9 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+script BATTLE_AREA_TRAINER_1
+{
+    trainerbattle_single(TRAINER_KARAMJAVOLCANO_HAM_GRUNT_1, format("Cor Blimey what are ye doin in me pockets!"),format("Oh, ye werent a pickpocket."))
+    namebox ("TRAINER")
+    msgbox(format("Sorry about the misunderstandin chap."))
+    hidenamebox
+    release
+    end
+}
+
+
+
+script BATTLE_AREA_TRAINER_2
+{
+    trainerbattle_single(TRAINER_KARAMJAVOLCANO_HAM_GRUNT_1, format("These are my wheat fields and if your about to rample them then go on the neighbors plot!"),format("Wheat a twist!"))
+    namebox ("TRAINER")
+    msgbox(format("Just this once I will look the other way, but be nice to my crops."))
+    hidenamebox
+    release
+    end
+}
+
+
+
+script BATTLE_AREA_TRAINER_3
+{
+    trainerbattle_single(TRAINER_KARAMJAVOLCANO_HAM_GRUNT_1, format("Human not understand glory of big high war god. Me show you!"),format("Now human understands."))
+    namebox ("TRAINER")
+    msgbox(format("Big high war god is god of goblins."))
+    hidenamebox
+    release
+    end
+}
+

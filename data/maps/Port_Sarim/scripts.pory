@@ -133,34 +133,6 @@ movement PORTSARIM_HAM_CAMERA_2{
 
 
 
-
-
-script NPC_PORTSARIM_MONK_1
-{
-	lock
-	faceplayer
-    namebox ("Monk")
-	msgbox(format("Those disrepectful scrubs stole me ship.\pAtleast they didn't steal me Peeko."))
-    waitmessage
-    hidenamebox
-	release
-	end
-}
-
-script NPC_PORTSARIM_SEAGULL_PEEKO
-{
-	lock
-	faceplayer
-    namebox ("Peeko")
-	msgbox(format("AVAARST'YEE'DAWGZ!\pHAVEEATMEEE!"))
-    waitmessage
-    hidenamebox
-	release
-	end
-}
-
-
-
 script NPC_FLAGRESETER
 {
 	lock
@@ -176,3 +148,315 @@ script NPC_FLAGRESETER
 
 
 
+
+
+
+
+
+
+script NPC_SEAGULL
+{
+	lock
+	faceplayer
+    playmoncry(SPECIES_WINGULL, 0)
+	msgbox(format("Gull!"))
+    waitmoncry
+	release
+	end
+}
+
+
+script NPC_PORTSARIM_BETTY
+{
+	lock
+	faceplayer
+    namebox ("Betty")
+	msgbox(format("Welcome to Betty's Magic Emporium!\pIf you are here to make a potion for a witch, I believe you know your way out.\pBye!"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_BRAIN
+{
+	lock
+	faceplayer
+    namebox ("Brian")
+	msgbox(format("Hi there, welcome to Brian's Battleaxe Bazaar.\pIf you see Jimmy the Chisel please tell him to get back here.\pI cannot open the shop without him."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_CAPTIAN_TOBIAS
+{
+	lock
+	faceplayer
+    namebox ("Tobias")
+	msgbox(format("Hi, there do you want to board the boat to Musa Point, Karamja?\pIt only costs 30."))
+
+    msgbox(format("Suit yourself."))
+
+    msgbox(format("Oh you do not seem to have enough gp."))
+
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_CREWMAN_1
+{
+	lock
+	faceplayer
+    //namebox ("NAME")
+	msgbox(format("These ships go to just about any port.\pThere are a lot of exotic monsters out there so make sure to use our services."))
+    waitmessage
+    //hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_CREWMAN_2
+{
+	lock
+	faceplayer
+    //namebox ("NAME")
+	msgbox(format("If you go to Musa Point, say hi to Stephanie for me.\pI love her tattoos."))
+    waitmessage
+    //hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_GERRANT
+{
+	lock
+	faceplayer
+    namebox ("Gerrant")
+	msgbox(format("Being in the fish selling business has made me gain weight over the years.\pOh did you wish to buy something?"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_GRUM
+{
+	lock
+	faceplayer
+    namebox ("Grum")
+	msgbox(format("Do you want some of these gems?\pThey are truely outrageous.\pProbably out of your price range."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_KLARENSE
+{
+	lock
+	faceplayer
+    namebox ("Klarense")
+	msgbox(format("This ship will set sail to only the most dangerous locations.\pBut the time is not right just yet."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_LORRIS
+{
+	lock
+	faceplayer
+    namebox ("Lorris")
+	msgbox(format("People always say Thresnor and I look the same, but we are completely different."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_NPC_1
+{
+	lock
+	faceplayer
+    //namebox ("NAME")
+	msgbox(format("Sailing will never happen, get over it."))
+    waitmessage
+    //hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_MONK_2
+{
+	lock
+	faceplayer
+    namebox ("Monk")
+	msgbox(format("Sorry, but you cannot enter Entrana while you have those despicable creatures with you."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_NPC_2
+{
+	lock
+	faceplayer
+    //namebox ("NAME")
+	msgbox(format("Did you know that water type moves are twice as strong in the rain, but fire type moves damage are halved?"))
+    waitmessage
+    //hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_NPC_3
+{
+	lock
+	faceplayer
+    //namebox ("NAME")
+	msgbox(format("I have that shanty stuck in my head."))
+    waitmessage
+    //hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_NPC_4
+{
+	lock
+	faceplayer
+    //namebox ("NAME")
+	msgbox(format("Here in Port Sarim we mostly just see seagulls.\pI hope you like them."))
+    waitmessage
+    //hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_NPC_5
+{
+	lock
+	faceplayer
+    //namebox ("NAME")
+	msgbox(format("I wish I had my own port, maybe a player owned port?"))
+    waitmessage
+    //hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_SIGNPOST
+{
+	lock
+	faceplayer
+    //namebox ("NAME")
+	msgbox(format("Welcome to Port Sarim.\p...\pThere is something scribbled on the sign.\pSea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2.\pSea Shanty 2."))
+    waitmessage
+    //hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_REDBEARD_FRANK
+{
+	lock
+	faceplayer
+    namebox ("REDBEARD FRANK")
+	msgbox(format("Do you have any Karamjan rum?\pNo?\pShame."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_NPC_6
+{
+	lock
+	faceplayer
+    //namebox ("NAME")
+	msgbox(format("Sea Shanty 2 is the best song right?"))
+    msgbox(format("Damn right!"))
+    msgbox(format("WOT!?\p...\p...\pREEEEEEEE!"))
+    waitmessage
+    //hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_VOID_SQUIRE
+{
+	lock
+	faceplayer
+    namebox ("Void Squire")
+	msgbox(format("I am very sorry, but the Void Knights told me not to speak to strangers."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_THE_FACE
+{
+	lock
+	faceplayer
+    namebox ("The Face")
+	msgbox(format("Welcome to the Rat Pits.\pWe do not have any fights going on at this moment.\pBut if you want to raise a strong cat, remember that there are multiple ways to evolve a kitten."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_THRESNOR
+{
+	lock
+	faceplayer
+    namebox ("Thresnor")
+	msgbox(format("People always say Lorris and I look the same, but we are completely different."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_TRADER_STAN
+{
+	lock
+	faceplayer
+    namebox ("Trader Stan")
+	msgbox(format("Sorry, this ship is not ready to set sail anytime soon.\pMy cousin still needs to hand over some supplies."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_NPC_7
+{
+	lock
+	faceplayer
+    namebox ("NAME")
+	msgbox(format("Do you happen to know what to do with a drunken sailor?\pAsking for a friend."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_WYDIN
+{
+	lock
+	faceplayer
+    namebox ("Wydin")
+	msgbox(format("If you are here with a mithril arrow, soft clay and a chisel, I suggest you leave before I call the guards."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}

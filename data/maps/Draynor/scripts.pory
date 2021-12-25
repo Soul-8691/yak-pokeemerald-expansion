@@ -189,6 +189,14 @@ script Draynor_Guard3{
 	end
 }
 
+script Draynor_FORTUNATO{
+    namebox("Fortunato")
+	msgbox(format("Can I interest you in something to drink?"))
+    hidenamebox
+    release
+	end
+}
+
 
 
 
@@ -198,8 +206,24 @@ script Draynor_Morgan{
 	faceplayer
     namebox("Morgan")
 	msgbox(format("There's a Vampyre in Draynor Mannor but no one believes me.."))
+    msgbox(format("What is that?!\pYou defeated the Vampyre in a battle?\pWell thanks for that, please accept this as a gift."))
+    msgbox(format("Thank you again."))
     hidenamebox
     release
 	end
 }
+
+script Draynor_TREEGUY{
+	lock
+	faceplayer
+    namebox("GUARD")
+	msgbox(format("Ooooch!\pOof!\pOuch!"))
+    msgbox(format("Ow!\pThat really hurt!\pHey what is the big idea!\pI was trying to catch a red coloured Ravenling, but you scared it away!\p...\pSigh...\pOh well, I guess I should better get back to work.."))
+    hidenamebox
+    release
+	end
+}
+
+
+
 

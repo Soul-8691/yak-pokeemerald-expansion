@@ -183,11 +183,32 @@ Draynor_Guard3::
 	end
 
 
+Draynor_FORTUNATO::
+	namebox Draynor_FORTUNATO_Text_0
+	msgbox Draynor_FORTUNATO_Text_1
+	hidenamebox
+	release
+	end
+
+
 Draynor_Morgan::
 	lock
 	faceplayer
 	namebox Draynor_Morgan_Text_0
 	msgbox Draynor_Morgan_Text_1
+	msgbox Draynor_Morgan_Text_2
+	msgbox Draynor_Morgan_Text_3
+	hidenamebox
+	release
+	end
+
+
+Draynor_TREEGUY::
+	lock
+	faceplayer
+	namebox Draynor_TREEGUY_Text_0
+	msgbox Draynor_TREEGUY_Text_1
+	msgbox Draynor_TREEGUY_Text_2
 	hidenamebox
 	release
 	end
@@ -253,9 +274,44 @@ Draynor_Guard3_Text_0:
 	.string "Ow..\p"
 	.string "I fell out of this tree.$"
 
+Draynor_FORTUNATO_Text_0:
+	.string "Fortunato$"
+
+Draynor_FORTUNATO_Text_1:
+	.string "Can I interest you in something to\n"
+	.string "drink?$"
+
 Draynor_Morgan_Text_0:
 	.string "Morgan$"
 
 Draynor_Morgan_Text_1:
 	.string "There's a Vampyre in Draynor Mannor but\n"
 	.string "no one believes me..$"
+
+Draynor_Morgan_Text_2:
+	.string "What is that?!\p"
+	.string "You defeated the Vampyre in a battle?\p"
+	.string "Well thanks for that, please accept\n"
+	.string "this as a gift.$"
+
+Draynor_Morgan_Text_3:
+	.string "Thank you again.$"
+
+Draynor_TREEGUY_Text_0:
+	.string "GUARD$"
+
+Draynor_TREEGUY_Text_1:
+	.string "Ooooch!\p"
+	.string "Oof!\p"
+	.string "Ouch!$"
+
+Draynor_TREEGUY_Text_2:
+	.string "Ow!\p"
+	.string "That really hurt!\p"
+	.string "Hey what is the big idea!\p"
+	.string "I was trying to catch a red coloured\n"
+	.string "Ravenling, but you scared it away!\p"
+	.string "...\p"
+	.string "Sigh...\p"
+	.string "Oh well, I guess I should better get\n"
+	.string "back to work..$"

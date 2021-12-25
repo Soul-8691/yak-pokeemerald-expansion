@@ -978,6 +978,17 @@ FillBucketWater_1:
 	return
 
 
+NPC_LUMBRIDGE_HARLAN::
+	lock
+	faceplayer
+	namebox NPC_LUMBRIDGE_HARLAN_Text_0
+	msgbox NPC_LUMBRIDGE_HARLAN_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
 Lumbridge_Bookshelf_Text_0:
 	.string "There is a Book with the title\n"
 	.string "Adamantman Guide.\p"
@@ -1282,3 +1293,13 @@ CooksAssistant_RANGE_Check_EGG_Text_0:
 
 FillBucketWater_Text_0:
 	.string "Running water - A nice feature!$"
+
+NPC_LUMBRIDGE_HARLAN_Text_0:
+	.string "Harlan$"
+
+NPC_LUMBRIDGE_HARLAN_Text_1:
+	.string "The best offense is a great defence!\p"
+	.string "You should focus on defensive moves\n"
+	.string "such as Barrier and Protect.\p"
+	.string "This strategy has helped me get to\n"
+	.string "where I am today.$"

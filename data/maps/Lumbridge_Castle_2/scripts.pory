@@ -941,7 +941,17 @@ script FillBucketWater{
 
 
 
-
+script NPC_LUMBRIDGE_HARLAN
+{
+	lock
+	faceplayer
+    namebox ("Harlan")
+	msgbox(format("The best offense is a great defence!\pYou should focus on defensive moves such as Barrier and Protect.\pThis strategy has helped me get to where I am today."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
 
 
 

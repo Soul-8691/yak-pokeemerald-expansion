@@ -50,7 +50,7 @@
       "movement_range_y": 22,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_PORTSARIM_NPC_4",
       "flag": "0"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NPC_FLAGRESETER",
+      "script": "NPC_PORTSARIM_NPC_6",
       "flag": "0"
     },
     {
@@ -76,7 +76,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_PORTSARIM_THRESNOR",
       "flag": "0"
     },
     {
@@ -115,7 +115,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NPC_PORTSARIM_MONK_1",
+      "script": "NPC_PORTSARIM_MONK_2",
       "flag": "0"
     },
     {
@@ -128,7 +128,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NPC_PORTSARIM_SEAGULL_PEEKO",
+      "script": "NPC_SEAGULL",
       "flag": "0"
     },
     {
@@ -141,7 +141,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_PORTSARIM_REDBEARD_FRANK",
       "flag": "0"
     },
     {
@@ -154,7 +154,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_PORTSARIM_THE_FACE",
       "flag": "0"
     },
     {
@@ -167,7 +167,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_PORTSARIM_LORRIS",
       "flag": "0"
     },
     {
@@ -180,7 +180,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_PORTSARIM_CAPTIAN_TOBIAS",
       "flag": "0"
     },
     {
@@ -193,7 +193,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_SEAGULL",
       "flag": "0"
     },
     {
@@ -206,12 +206,12 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_PORTSARIM_VOID_SQUIRE",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_sailor",
-      "x": 28,
+      "x": 26,
       "y": 40,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -219,7 +219,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_PORTSARIM_CREWMAN_2",
       "flag": "0"
     },
     {
@@ -232,7 +232,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_PORTSARIM_CREWMAN_1",
       "flag": "0"
     },
     {
@@ -245,7 +245,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_PORTSARIM_TRADER_STAN",
       "flag": "0"
     },
     {
@@ -258,7 +258,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_SEAGULL",
       "flag": "0"
     },
     {
@@ -271,7 +271,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_SEAGULL",
       "flag": "0"
     },
     {
@@ -455,10 +455,97 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_man_1",
+      "x": 29,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NPC_PORTSARIM_NPC_7",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_woman_1",
+      "x": 19,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NPC_PORTSARIM_NPC_5",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_man_1",
+      "x": 14,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NPC_PORTSARIM_NPC_4",
+      "flag": "0"
     }
   ],
   "warp_events": [
-
+    {
+      "x": 6,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_PORT_SARIM",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 16,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_PORT_SARIM",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 5,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_PORT_SARIM",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 13,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_PORT_SARIM",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 7,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_PORT_SARIM",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 4,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_PORT_SARIM",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 9,
+      "y": 43,
+      "elevation": 0,
+      "dest_map": "MAP_PORT_SARIM",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
     {
@@ -500,15 +587,15 @@
     },
     {
       "type": "hidden_item",
-      "x": 37,
-      "y": 34,
+      "x": 35,
+      "y": 35,
       "elevation": 3,
       "item": "ITEM_MASTER_BALL",
       "flag": "FLAG_TEMP_1"
     },
     {
       "type": "hidden_item",
-      "x": 11,
+      "x": 13,
       "y": 45,
       "elevation": 3,
       "item": "ITEM_MASTER_BALL",
@@ -520,7 +607,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
-      "script": "NULL"
+      "script": "NPC_PORTSARIM_SIGNPOST"
     }
   ]
 }

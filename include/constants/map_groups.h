@@ -814,6 +814,7 @@
 #define MAP_HAM_HIDEOUT_B2F           (24 | (50 << 8))
 #define MAP_MODERATOR_LOBBY           (25 | (50 << 8))
 #define MAP_POISON_WASTE_SEWERS_1F    (26 | (50 << 8))
+#define MAP_SINKHOLE_1                (27 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

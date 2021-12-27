@@ -43,8 +43,8 @@
   ],
   "warp_events": [
     {
-      "x": 5,
-      "y": 2,
+      "x": 4,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_1",
       "dest_warp_id": 0

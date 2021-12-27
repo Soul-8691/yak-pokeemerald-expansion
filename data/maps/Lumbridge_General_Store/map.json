@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_general_store_clerk",
       "x": 5,
-      "y": 3,
+      "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,

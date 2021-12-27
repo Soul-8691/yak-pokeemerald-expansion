@@ -498,7 +498,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_demonheadge",
       "x": 13,
-      "y": 23,
+      "y": 22,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -640,6 +640,13 @@
       "elevation": 0,
       "dest_map": "MAP_FALADOR",
       "dest_warp_id": 5
+    },
+    {
+      "x": 14,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_DWARVEN_MINE_B2F",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

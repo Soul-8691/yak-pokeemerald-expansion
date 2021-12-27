@@ -86,35 +86,49 @@
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_FALADOR",
-      "dest_warp_id": 0
+      "dest_warp_id": 14
     },
     {
       "x": 10,
       "y": 24,
       "elevation": 0,
-      "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 2
+      "dest_map": "MAP_RELLEKKA",
+      "dest_warp_id": 0
     },
     {
       "x": 14,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_ABYSSAL_REALM_1",
+      "dest_map": "MAP_TUTORIAL_ISLAND",
       "dest_warp_id": 1
     },
     {
-      "x": 16,
-      "y": 3,
+      "x": 22,
+      "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 4
+      "dest_map": "MAP_TZHAAR_1F",
+      "dest_warp_id": 3
     },
     {
       "x": 8,
       "y": 24,
       "elevation": 0,
-      "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 3
+      "dest_map": "MAP_LUMBRIDGE",
+      "dest_warp_id": 14
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_YANILLE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_MUSA_POINT",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

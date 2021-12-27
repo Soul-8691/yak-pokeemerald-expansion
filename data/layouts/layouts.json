@@ -4527,7 +4527,7 @@
       "width": 10,
       "height": 9,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Lumbridge_General_Store/border.bin",
       "blockdata_filepath": "data/layouts/Lumbridge_General_Store/map.bin"
     },
@@ -4595,7 +4595,7 @@
       "id": "LAYOUT_LUMBRIDGE_HOUSE_3",
       "name": "Lumbridge_House_3_Layout",
       "width": 10,
-      "height": 6,
+      "height": 8,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Lumbridge_House_3/border.bin",

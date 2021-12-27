@@ -189,14 +189,14 @@
       "x": 8,
       "y": 23,
       "elevation": 0,
-      "dest_map": "MAP_FALADOR",
-      "dest_warp_id": 2
+      "dest_map": "MAP_ROUTE30",
+      "dest_warp_id": 0
     },
     {
       "x": 9,
       "y": 23,
       "elevation": 0,
-      "dest_map": "MAP_JOLLY_BOAR_PUB_1F",
+      "dest_map": "MAP_ROUTE30",
       "dest_warp_id": 0
     },
     {

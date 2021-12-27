@@ -111,8 +111,8 @@
       "x": 27,
       "y": 17,
       "elevation": 0,
-      "dest_map": "MAP_TUTORIAL_ISLAND_LAB_DOWN",
-      "dest_warp_id": 0
+      "dest_map": "MAP_ABYSSAL_REALM_1",
+      "dest_warp_id": 2
     },
     {
       "x": 43,

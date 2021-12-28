@@ -310,8 +310,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "ITEM_CUPHOLDER",
-      "flag": "0"
+      "script": "ITEM_LUMBRIDGE_STEEL_POUCH",
+      "flag": "FLAG_ITEM_LUMBRIDGE_STEEL_POUCH"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -323,8 +323,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "ITEM_CUPHOLDER",
-      "flag": "0"
+      "script": "ITEM_LUMBRIDGE_DRUNK_DRAGON",
+      "flag": "FLAG_ITEM_LUMBRIDGE_DRUNK_DRAGON"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_farmer_male",
@@ -626,7 +626,7 @@
       "y": 17,
       "elevation": 3,
       "item": "ITEM_CABBAGE",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_LUMBRIDGE_CABBAGE"
     },
     {
       "type": "sign",
@@ -657,8 +657,8 @@
       "x": 38,
       "y": 39,
       "elevation": 3,
-      "item": "ITEM_BLUEBERRY_SPECIAL",
-      "flag": "FLAG_TEMP_2"
+      "item": "ITEM_STAT_BEER",
+      "flag": "FLAG_HIDDEN_ITEM_LUMBRIDGE_BEER"
     }
   ]
 }

@@ -50,8 +50,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "ITEM_CUPHOLDER",
-      "flag": "0"
+      "script": "ITEM_MILLLANEMILL_TM05",
+      "flag": "FLAG_ITEM_MILLLANEMILL_TM05"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -63,8 +63,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MillLaneMill_Item_PURPLE_SWEETS",
-      "flag": "FLAG_ITEM_MillLaneMill_PURPLE_SWEETS"
+      "script": "ITEM_MILLLANEMILL_MITHRIL_POUCH",
+      "flag": "FLAG_ITEM_MILLLANEMILL_MITHRIL_POUCH"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_sheep",

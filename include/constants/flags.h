@@ -569,8 +569,9 @@
 //POKESCAPE HIDDEN ITEMS
 #define FLAG_HIDDEN_ITEM_LUMBRIDGE_ITEM_1                      (FLAG_HIDDEN_ITEMS_START + 0x01)
 #define FLAG_HIDDEN_ITEM_LUMBRIDGE_ITEM_2                     (FLAG_HIDDEN_ITEMS_START + 0x08)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_GREEN_SHARD          (FLAG_HIDDEN_ITEMS_START + 0x09)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_124_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x0A)
+#define FLAG_HIDDEN_ITEM_LUMBRIDGE_BEER         (FLAG_HIDDEN_ITEMS_START + 0x09)
+#define FLAG_HIDDEN_ITEM_LUMBRIDGE_CABBAGE              (FLAG_HIDDEN_ITEMS_START + 0x0A)
+
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x0B)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_HEART_SCALE_1        (FLAG_HIDDEN_ITEMS_START + 0x0D)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_124_CALCIUM              (FLAG_HIDDEN_ITEMS_START + 0x24)
@@ -1097,33 +1098,34 @@
 #define FLAG_ITEM_REPEATABLE_ITEM_9                                    0x3F9
 #define FLAG_ITEM_REPEATABLE_ITEM_10                                     0x3FA
 
-#define FLAG_ITEM_ROUTE_116_ETHER                                   0x3FB
-#define FLAG_ITEM_ROUTE_116_REPEL                                   0x3FC
-#define FLAG_ITEM_ROUTE_116_HP_UP                                   0x3FD
-#define FLAG_ITEM_ROUTE_117_GREAT_BALL                              0x3FE
-#define FLAG_ITEM_ROUTE_117_REVIVE                                  0x3FF
-#define FLAG_ITEM_ROUTE_119_SUPER_REPEL                             0x400
-#define FLAG_ITEM_ROUTE_119_ZINC                                    0x401
-#define FLAG_ITEM_ROUTE_119_ELIXIR_1                                0x402
-#define FLAG_ITEM_ROUTE_119_LEAF_STONE                              0x403
-#define FLAG_ITEM_ROUTE_119_RARE_CANDY                              0x404
-#define FLAG_ITEM_ROUTE_119_HYPER_POTION_1                          0x405
-#define FLAG_ITEM_ROUTE_120_NUGGET                                  0x406
-#define FLAG_ITEM_ROUTE_120_FULL_HEAL                               0x407
-#define FLAG_ITEM_ROUTE_123_CALCIUM                                 0x408
-#define FLAG_ITEM_ROUTE_123_RARE_CANDY                              0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag
-#define FLAG_ITEM_ROUTE_127_ZINC                                    0x40A
-#define FLAG_ITEM_ROUTE_127_CARBOS                                  0x40B
-#define FLAG_ITEM_ROUTE_132_RARE_CANDY                              0x40C
-#define FLAG_ITEM_ROUTE_133_BIG_PEARL                               0x40D
-#define FLAG_ITEM_ROUTE_133_STAR_PIECE                              0x40E
-#define FLAG_ITEM_PETALBURG_CITY_MAX_REVIVE                         0x40F
-#define FLAG_ITEM_PETALBURG_CITY_ETHER                              0x410
-#define FLAG_ITEM_RUSTBORO_CITY_X_DEFEND                            0x411
-#define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0x412
-#define FLAG_ITEM_MOSSDEEP_CITY_NET_BALL                            0x413
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_23                          0x414
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL                      0x415
+#define FLAG_ITEM_LUMBRIDGE_BREAD_1                                   0x3FB
+#define FLAG_ITEM_LUMBRIDGE_STEEL_POUCH                               0x3FC
+#define FLAG_ITEM_LUMBRIDGE_DRUNK_DRAGON                               0x3FD
+#define FLAG_ITEM_LUMBRIDGE_BREAD_2                             0x3FE
+#define FLAG_ITEM_ROUTE1_BALL_OF_WOOL                                0x3FF
+#define FLAG_ITEM_LUMBRIDGE_CAKE                            0x400
+#define FLAG_ITEM_ROUTE1_DEATH_RUNE                                    0x401
+#define FLAG_ITEM_ROUTE1_BREAD                               0x402
+#define FLAG_ITEM_ROUTE1_CHOCOLATE_SUNDAY                             0x403
+#define FLAG_ITEM_MILLLANEMILL_TM05                            0x404
+#define FLAG_ITEM_MILLLANEMILL_MITHRIL_POUCH                          0x405
+#define FLAG_ITEM_DRAYNORMANOR_CAKE                                 0x406
+#define FLAG_ITEM_DRAYNORMANOR_CABBAGE                              0x407
+#define FLAG_ITEM_DRAYNOR_DEFENCE_POTION                               0x408
+#define FLAG_ITEM_DRAYNORSEWERS_TM50                             0x409 // Unused Flag, leftover from R/S. In Emerald this is a hidden item and uses a different flag
+#define FLAG_ITEM_DRAYNORSEWERS_BEER                                  0x40A
+#define FLAG_ITEM_ROUTE2_MAGIC_POTION                               0x40B
+#define FLAG_ITEM_ROUTE2_RUNE_POUCH                             0x40C
+#define FLAG_ITEM_WIZARDSTOWER_WIZARDS_HAT                              0x40D
+#define FLAG_ITEM_WIZARDSTOWER_AIR_RUNE                             0x40E
+#define FLAG_ITEM_WIZARDSTOWER_WATER_RUNE                        0x40F
+#define FLAG_ITEM_WIZARDSTOWER_EARTH_RUNE                            0x410
+#define FLAG_ITEM_WIZARDSTOWER_FIRE_RUNE                            0x411
+#define FLAG_ITEM_ROUTE12_BREAD                          0x412
+#define FLAG_ITEM_ROUTE12_WIZARDS_BLIZZARD                            0x413
+#define FLAG_ITEM_ROUTE12_CABBAGE                         0x414
+#define FLAG_ITEM_ROUTE12_ATTACK_POTION                      0x415
+
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0x416
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0x417
 #define FLAG_ITEM_RUSTURF_TUNNEL_POKE_BALL                          0x418

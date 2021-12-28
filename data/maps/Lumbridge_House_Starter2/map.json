@@ -37,8 +37,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "ITEM_CUPHOLDER",
-      "flag": "0"
+      "script": "ITEM_LUMBRIDGE_BREAD_1",
+      "flag": "FLAG_ITEM_LUMBRIDGE_BREAD_1"
     }
   ],
   "warp_events": [

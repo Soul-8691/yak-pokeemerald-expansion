@@ -14,10 +14,10 @@ WizardsTower_Route2_STATE::
 	case 2, WizardsTower_Route2_STATE_2
 	case 3, WizardsTower_Route2_STATE_3
 	case 4, WizardsTower_Route2_STATE_4
-	case 5, WizardsTower_Route2_STATE_5
-	case 6, WizardsTower_Route2_STATE_5
-	case 7, WizardsTower_Route2_STATE_5
-	case 8, WizardsTower_Route2_STATE_5
+	case 5, WizardsTower_Route2_STATE_4
+	case 6, WizardsTower_Route2_STATE_4
+	case 7, WizardsTower_Route2_STATE_4
+	case 8, WizardsTower_Route2_STATE_4
 	case 9, WizardsTower_Route2_STATE_5
 	return
 
@@ -221,6 +221,70 @@ BLOCK_ROUTE2_Highwayman_1:
 	end
 
 
+NPC_ROUTE2_Wizard::
+	faceplayer
+	msgbox NPC_ROUTE2_Wizard_Text_0
+	hidenamebox
+	release
+	end
+
+
+BATTLE_ROUTE2_Trainer_1::
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_1, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_0
+	msgbox BATTLE_ROUTE2_Trainer_1_Text_0
+	hidenamebox
+	release
+	end
+
+
+BATTLE_ROUTE2_Trainer_2::
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_2, BATTLE_ROUTE2_Trainer_2_Text_0, BATTLE_ROUTE2_Trainer_2_Text_1
+	msgbox BATTLE_ROUTE2_Trainer_2_Text_2
+	hidenamebox
+	release
+	end
+
+
+BATTLE_ROUTE2_Trainer_3::
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_3, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_0
+	msgbox BATTLE_ROUTE2_Trainer_1_Text_0
+	hidenamebox
+	release
+	end
+
+
+BATTLE_ROUTE2_Trainer_4::
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_4, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_0
+	msgbox BATTLE_ROUTE2_Trainer_1_Text_0
+	hidenamebox
+	release
+	end
+
+
+BATTLE_ROUTE2_Trainer_5::
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_5, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_0
+	msgbox BATTLE_ROUTE2_Trainer_1_Text_0
+	hidenamebox
+	release
+	end
+
+
+BATTLE_ROUTE2_Trainer_6::
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_6, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_0
+	msgbox BATTLE_ROUTE2_Trainer_1_Text_0
+	hidenamebox
+	release
+	end
+
+
+BATTLE_ROUTE2_Trainer_7::
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_7, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_0
+	msgbox BATTLE_ROUTE2_Trainer_1_Text_0
+	hidenamebox
+	release
+	end
+
+
 HAM_EVENT_WizardsTower_4_Text_0:
 	.string "Ariane$"
 
@@ -245,3 +309,23 @@ HAM_EVENT_Route2_MAIN_1_Text_4:
 
 HAM_EVENT_Route2_TRIGGER_1_Text_0:
 	.string "There you are!$"
+
+NPC_ROUTE2_Wizard_Text_0:
+	.string "They say that there are hidden floors\n"
+	.string "within the Wizards' Tower.\p"
+	.string "I've never found them though.$"
+
+BATTLE_ROUTE2_Trainer_1_Text_0:
+	.string "$"
+
+BATTLE_ROUTE2_Trainer_2_Text_0:
+	.string "Passing this bridge gets you to the\n"
+	.string "wizard tower.$"
+
+BATTLE_ROUTE2_Trainer_2_Text_1:
+	.string "Wizards use runes to conjure magic.$"
+
+BATTLE_ROUTE2_Trainer_2_Text_2:
+	.string "Runes are marvellous.\p"
+	.string "Using them on monsters might make them\n"
+	.string "evolve!$"

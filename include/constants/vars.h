@@ -104,7 +104,7 @@
 #define VAR_POKESCAPE_WIZARDS_TOWER_STATE            0x4055 // Unused Var
 #define VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE            0x4056 // Unused Var
 #define VAR_POKESCAPE_RIMMINGTON_STATE                 0x4057
-#define VAR_SLATEPORT_CITY_STATE             0x4058
+#define VAR_POKESCAPE_DRAYNOR_GUARD_STATE             0x4058
 #define VAR_MAUVILLE_CITY_STATE              0x4059 // Unused Var
 #define VAR_RUSTBORO_CITY_STATE              0x405A
 #define VAR_FORTREE_CITY_STATE               0x405B // Unused Var

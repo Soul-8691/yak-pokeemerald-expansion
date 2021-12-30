@@ -3,8 +3,9 @@ Draynor_MapScripts::
 	.byte 0
 
 Draynor_MapScripts_MAP_SCRIPT_ON_LOAD:
-	goto WizardsTower_Draynor_STATE
-	return
+	call WizardsTower_Draynor_STATE
+	call DRAYNOR_GUARD_STATE
+	end
 
 
 WizardsTower_Draynor_STATE::
@@ -27,7 +28,7 @@ WizardsTower_Draynor_STATE_2:
 	removeobject 21
 	removeobject 24
 	release
-	end
+	return
 
 WizardsTower_Draynor_STATE_3:
 	clearflag FLAG_TEMP_1
@@ -35,7 +36,7 @@ WizardsTower_Draynor_STATE_3:
 	addobject 21
 	addobject 24
 	release
-	end
+	return
 
 WizardsTower_Draynor_STATE_4:
 	setflag FLAG_TEMP_1
@@ -43,7 +44,27 @@ WizardsTower_Draynor_STATE_4:
 	removeobject 21
 	removeobject 24
 	release
-	end
+	return
+
+
+DRAYNOR_GUARD_STATE::
+	switch VAR_POKESCAPE_DRAYNOR_GUARD_STATE
+	case 0, DRAYNOR_GUARD_STATE_2
+	case 1, DRAYNOR_GUARD_STATE_3
+	return
+
+DRAYNOR_GUARD_STATE_2:
+	setflag FLAG_TEMP_3
+	removeobject 19
+	release
+	return
+
+DRAYNOR_GUARD_STATE_3:
+	clearflag FLAG_TEMP_3
+	addobject 19
+	setobjectxyperm 19, 17, 31
+	release
+	return
 
 
 HAM_EVENT_Draynor::
@@ -191,6 +212,29 @@ Draynor_FORTUNATO::
 	end
 
 
+Generalstore_Draynor_Clerk::
+	lock
+	faceplayer
+	msgbox Generalstore_Draynor_Clerk_Text_0
+	waitmessage
+	pokemart GeneralStoreDraynor
+	msgbox Generalstore_Draynor_Clerk_Text_1
+	release
+	return
+
+
+    .align 2
+GeneralStoreDraynor:
+    .2byte ITEM_EMPTY_BUCKET
+    .2byte ITEM_EMPTY_POT
+    .2byte ITEM_BRONZE_POUCH
+    .2byte ITEM_IRON_POUCH
+    .2byte ITEM_EGG
+    .2byte ITEM_POTATO
+    .2byte ITEM_NONE
+    release
+    end
+
 Draynor_Morgan::
 	lock
 	faceplayer
@@ -203,16 +247,49 @@ Draynor_Morgan::
 	end
 
 
-Draynor_TREEGUY::
+Draynor_TREE::
+	compare VAR_POKESCAPE_DRAYNOR_GUARD_STATE, 0
+	goto_if_eq Draynor_TREE_1
+	end
+
+Draynor_TREE_1:
 	lock
-	faceplayer
-	namebox Draynor_TREEGUY_Text_0
-	msgbox Draynor_TREEGUY_Text_1
-	msgbox Draynor_TREEGUY_Text_2
+	namebox Draynor_TREE_Text_0
+	msgbox Draynor_TREE_Text_1
 	hidenamebox
+	addobject 19
+	playse SE_LEDGE
+	applymovement 19, Movement_DraynorGuardTree_1
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_DraynorGuardTree_2
+	waitmovement 0
+	namebox Draynor_Guard1_Text_0
+	msgbox Draynor_TREE_Text_2
+	hidenamebox
+	closemessage
+	applymovement 19, Movement_DraynorGuardTree_3
+	waitmovement 0
+	setvar VAR_POKESCAPE_DRAYNOR_GUARD_STATE, 1
 	release
 	end
 
+
+Movement_DraynorGuardTree_1:
+	jump_special_down
+	step_end
+
+Movement_DraynorGuardTree_2:
+	lock_facing_direction
+	walk_fast_down
+	unlock_facing_direction
+	step_end
+
+Movement_DraynorGuardTree_3:
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	face_down
+	step_end
 
 HAM_EVENT_Draynor_Text_0:
 	.string "Ariane$"
@@ -271,8 +348,8 @@ Draynor_Guard2_Text_0:
 	.string "Don't cause any trouble.$"
 
 Draynor_Guard3_Text_0:
-	.string "Ow..\p"
-	.string "I fell out of this tree.$"
+	.string "What do you want now?\p"
+	.string "Can you not see I am working?$"
 
 Draynor_FORTUNATO_Text_0:
 	.string "Fortunato$"
@@ -280,6 +357,13 @@ Draynor_FORTUNATO_Text_0:
 Draynor_FORTUNATO_Text_1:
 	.string "Can I interest you in something to\n"
 	.string "drink?$"
+
+Generalstore_Draynor_Clerk_Text_0:
+	.string "Welcome to the Drayor Markets!\p"
+	.string "How may I help you?$"
+
+Generalstore_Draynor_Clerk_Text_1:
+	.string "Thank you, come again!$"
 
 Draynor_Morgan_Text_0:
 	.string "Morgan$"
@@ -297,15 +381,15 @@ Draynor_Morgan_Text_2:
 Draynor_Morgan_Text_3:
 	.string "Thank you again.$"
 
-Draynor_TREEGUY_Text_0:
-	.string "GUARD$"
+Draynor_TREE_Text_0:
+	.string "???$"
 
-Draynor_TREEGUY_Text_1:
+Draynor_TREE_Text_1:
 	.string "Ooooch!\p"
 	.string "Oof!\p"
 	.string "Ouch!$"
 
-Draynor_TREEGUY_Text_2:
+Draynor_TREE_Text_2:
 	.string "Ow!\p"
 	.string "That really hurt!\p"
 	.string "Hey what is the big idea!\p"

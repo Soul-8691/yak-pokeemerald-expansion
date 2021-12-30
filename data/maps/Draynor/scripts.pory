@@ -1,6 +1,10 @@
+const OBJ_EVENT_ID_DRAYNORGUARD = 19
+
 mapscripts Draynor_MapScripts {
     MAP_SCRIPT_ON_LOAD {
-        goto(WizardsTower_Draynor_STATE)
+        call(WizardsTower_Draynor_STATE)
+        call(DRAYNOR_GUARD_STATE)
+        end
         }
 }
 
@@ -18,7 +22,7 @@ script WizardsTower_Draynor_STATE{
                 removeobject(21)
 				removeobject(24)
                 release
-                end
+                return
             case 4:
                 //SHOW NPCs EVENT
                 clearflag(FLAG_TEMP_1)
@@ -26,7 +30,7 @@ script WizardsTower_Draynor_STATE{
                 addobject(21)
 				addobject(24)
                 release
-                end
+                return
             case 5:
 			case 6: 
             case 7: 
@@ -38,10 +42,27 @@ script WizardsTower_Draynor_STATE{
                 removeobject(21)
 				removeobject(24)
                 release
-                end
+                return
             }
     }
 
+script DRAYNOR_GUARD_STATE{
+        switch (var(VAR_POKESCAPE_DRAYNOR_GUARD_STATE)){ 
+            case 0: 
+                //HIDE NPCS
+                setflag(FLAG_TEMP_3)
+				removeobject(OBJ_EVENT_ID_DRAYNORGUARD)
+                release
+                return
+            case 1: 
+                //SHOW NPCs EVENT
+                clearflag(FLAG_TEMP_3)
+				addobject(OBJ_EVENT_ID_DRAYNORGUARD)
+                setobjectxyperm(OBJ_EVENT_ID_DRAYNORGUARD,17,31)
+                release
+                return
+            }
+    }
 
 
 
@@ -183,7 +204,7 @@ script Draynor_Guard3{
 	lock
 	faceplayer
     namebox("Guard")
-	msgbox(format("Ow..\pI fell out of this tree."))
+	msgbox(format("What do you want now?\pCan you not see I am working?"))
     hidenamebox
     release
 	end
@@ -196,6 +217,46 @@ script Draynor_FORTUNATO{
     release
 	end
 }
+
+
+
+script Generalstore_Draynor_Clerk {
+    lock
+    faceplayer
+    msgbox(format("Welcome to the Drayor Markets!\pHow may I help you?"))
+    waitmessage
+    pokemart (GeneralStoreDraynor)
+    msgbox("Thank you, come again!")
+    release
+}
+
+
+raw `
+    .align 2
+GeneralStoreDraynor:
+    .2byte ITEM_EMPTY_BUCKET
+    .2byte ITEM_EMPTY_POT
+    .2byte ITEM_BRONZE_POUCH
+    .2byte ITEM_IRON_POUCH
+    .2byte ITEM_EGG
+    .2byte ITEM_POTATO
+    .2byte ITEM_NONE
+    release
+    end
+
+`
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -213,16 +274,59 @@ script Draynor_Morgan{
 	end
 }
 
-script Draynor_TREEGUY{
-	lock
-	faceplayer
-    namebox("GUARD")
+script Draynor_TREE{
+    if (var(VAR_POKESCAPE_DRAYNOR_GUARD_STATE)==0){
+    lock
+    namebox("???")
 	msgbox(format("Ooooch!\pOof!\pOuch!"))
+    hidenamebox
+    addobject(OBJ_EVENT_ID_DRAYNORGUARD)
+    playse(SE_LEDGE)
+    applymovement(OBJ_EVENT_ID_DRAYNORGUARD, Movement_DraynorGuardTree_1)
+    applymovement(OBJ_EVENT_ID_PLAYER, Movement_DraynorGuardTree_2)
+    waitmovement(0)
+    namebox("Guard")
     msgbox(format("Ow!\pThat really hurt!\pHey what is the big idea!\pI was trying to catch a red coloured Ravenling, but you scared it away!\p...\pSigh...\pOh well, I guess I should better get back to work.."))
     hidenamebox
+    closemessage
+    applymovement(OBJ_EVENT_ID_DRAYNORGUARD, Movement_DraynorGuardTree_3)
+    waitmovement(0)
+    setvar(VAR_POKESCAPE_DRAYNOR_GUARD_STATE, 1)
     release
 	end
+    }
+    else
+    {
+        end
+    }
 }
+
+movement Movement_DraynorGuardTree_1
+{
+	jump_special_down
+}   
+
+movement Movement_DraynorGuardTree_2
+{
+    lock_facing_direction
+	walk_fast_down
+    unlock_facing_direction
+}  
+
+movement Movement_DraynorGuardTree_3
+{
+	walk_right *2
+    walk_up * 2
+    face_down
+}   
+
+
+
+
+    
+	
+    
+
 
 
 

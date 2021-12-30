@@ -312,8 +312,8 @@ WizardsTower_Route1_STATE::
 	case 5, WizardsTower_Route1_STATE_3
 	case 6, WizardsTower_Route1_STATE_4
 	case 7, WizardsTower_Route1_STATE_4
-	case 8, WizardsTower_Route1_STATE_4
-	case 9, WizardsTower_Route1_STATE_4
+	case 8, WizardsTower_Route1_STATE_5
+	case 9, WizardsTower_Route1_STATE_5
 	return
 
 WizardsTower_Route1_STATE_2:
@@ -345,6 +345,22 @@ WizardsTower_Route1_STATE_4:
 	removeobject 22
 	removeobject 23
 	removeobject 32
+	clearflag FLAG_TEMP_4
+	addobject 5
+	release
+	end
+
+WizardsTower_Route1_STATE_5:
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	setflag FLAG_TEMP_3
+	clearflag FLAG_TEMP_4
+	addobject 5
+	removeobject 22
+	removeobject 23
+	removeobject 32
+	setobjectxyperm 5, 10, 12
+	setobjectxyperm 6, 10, 13
 	release
 	end
 
@@ -386,6 +402,7 @@ HAM_EVENT_Route1_TRIGGER_1::
 	namebox HAM_EVENT_Route1_TRIGGER_1_Text_0
 	msgbox HAM_EVENT_Route1_TRIGGER_1_Text_1
 	hidenamebox
+	closemessage
 	call HAM_EVENT_Route1_MAIN_2
 	applymovement 22, HAM_Movement7_4
 	waitmovement 0
@@ -402,6 +419,7 @@ HAM_EVENT_Route1_TRIGGER_2::
 	namebox HAM_EVENT_Route1_TRIGGER_1_Text_0
 	msgbox HAM_EVENT_Route1_TRIGGER_1_Text_1
 	hidenamebox
+	closemessage
 	call HAM_EVENT_Route1_MAIN_2
 	applymovement 22, HAM_Movement7_9
 	waitmovement 0

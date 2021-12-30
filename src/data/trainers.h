@@ -692,7 +692,112 @@ const struct Trainer gTrainers[] = {
         .scaling = FALSE,
     },
 
+//-----------ROUTE 2
 
+    [TRAINER_ROUTE2_TRAINER_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SKILLER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_skiller,
+        .trainerName = _("RSN"),
+        .items = {ITEM_BREAD, ITEM_BREAD, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE2_TRAINER_1),
+        .party = {.ItemDefaultMoves = sParty_ROUTE2_TRAINER_1},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_ROUTE2_TRAINER_2] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_WIZARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_wizard_m,
+        .trainerName = _("RSN"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE2_TRAINER_2),
+        .party = {.ItemDefaultMoves = sParty_ROUTE2_TRAINER_2},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_ROUTE2_TRAINER_3] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_WIZARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_wizard_m,
+        .trainerName = _("DARK"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE2_TRAINER_3),
+        .party = {.ItemDefaultMoves = sParty_ROUTE2_TRAINER_3},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_ROUTE2_TRAINER_4] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_WIZARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_wizard_m,
+        .trainerName = _("DARK"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE2_TRAINER_4),
+        .party = {.ItemDefaultMoves = sParty_ROUTE2_TRAINER_4},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_ROUTE2_TRAINER_5] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_FISHER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_fisher,
+        .trainerName = _("RSN"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE2_TRAINER_5),
+        .party = {.ItemDefaultMoves = sParty_ROUTE2_TRAINER_5},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_ROUTE2_TRAINER_6] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_FISHER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_fisher,
+        .trainerName = _("RSN"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE2_TRAINER_6),
+        .party = {.ItemDefaultMoves = sParty_ROUTE2_TRAINER_6},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_ROUTE2_TRAINER_7] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_BOT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_bot_woodcutting,
+        .trainerName = _("WOODCUTTING"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE2_TRAINER_7),
+        .party = {.ItemDefaultMoves = sParty_ROUTE2_TRAINER_7},
+        .scaling = FALSE,
+    },
 
 
     

@@ -202,18 +202,21 @@ NPC_WIZARDSTOWER_NoobshowNPCs::
 	msgbox NPC_WIZARDSTOWER_NoobshowNPCs_Text_1
 	waitmessage
 	hidenamebox
+	closemessage
 	applymovement 8, MOVEMENT_WIZARDSTOWER_NPC2
 	waitmovement 0
 	namebox NPC_WIZARDSTOWER_NoobshowNPCs_Text_2
 	msgbox NPC_WIZARDSTOWER_NoobshowNPCs_Text_3
 	waitmessage
 	hidenamebox
+	closemessage
 	applymovement 7, MOVEMENT_WIZARDSTOWER_NPC3
 	waitmovement 0
 	namebox NPC_WIZARDSTOWER_NoobshowNPCs_Text_0
 	msgbox NPC_WIZARDSTOWER_NoobshowNPCs_Text_4
 	waitmessage
 	hidenamebox
+	closemessage
 	applymovement 7, MOVEMENT_WIZARDSTOWER_NPC4
 	waitmovement 0
 	release

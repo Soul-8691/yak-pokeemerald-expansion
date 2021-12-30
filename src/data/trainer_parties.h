@@ -923,3 +923,117 @@ static const struct TrainerMonItemDefaultMoves sParty_DRAYNOR_MANOR_COUNT_DRAYNO
     //.moves = {MOVE_LEECH_LIFE, MOVE_BITE, MOVE_POISON_FANG, MOVE_TAILWIND}
     }
 };
+
+
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_SQUIRREL,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_IMPLING_BABY_FORM,
+    .heldItem = ITEM_NONE
+    },
+
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_PURE,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_PURE,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_FROGEEL,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_FROGEEL,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_4[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_FROGEEL,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_FROGEEL,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_5[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_FROGEEL,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_FROGEEL,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_6[] = {
+    {
+    .iv = 0,
+    .lvl = 10,
+    .species = SPECIES_CRAYFISH,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 10,
+    .species = SPECIES_CRAYFISH,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 10,
+    .species = SPECIES_SHRIMP,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_7[] = {
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_DEAD_TREE,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_DEAD_TREE,
+    .heldItem = ITEM_NONE
+    }
+};

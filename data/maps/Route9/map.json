@@ -22,6 +22,11 @@
       "direction": "down",
       "offset": 0,
       "map": "MAP_RIMMINGTON"
+    },
+    {
+      "direction": "right",
+      "offset": 18,
+      "map": "MAP_ROUTE10"
     }
   ],
   "object_events": [

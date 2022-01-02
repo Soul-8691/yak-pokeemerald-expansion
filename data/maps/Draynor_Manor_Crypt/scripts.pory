@@ -1,3 +1,6 @@
+const COUNTDRAYNOR_ID = 1
+const HAMGRUNT_ID = 2
+
 mapscripts Draynor_Manor_Crypt_MapScripts {
 
 	MAP_SCRIPT_ON_LOAD {
@@ -5,7 +8,7 @@ mapscripts Draynor_Manor_Crypt_MapScripts {
         }
 
     MAP_SCRIPT_ON_FRAME_TABLE [
-		VAR_POKESCAPE_KARAMJAVOLCANO_STATE, 7: EVENT_HAM_DRAYNORMANOR_CRYPT
+		VAR_POKESCAPE_WIZARDS_TOWER_STATE, 7: EVENT_HAM_DRAYNORMANOR_CRYPT
     ]
 }
 
@@ -26,8 +29,10 @@ script WizardsTower_DraynorManor_Crypt_STATE{
             case 8: 
             case 9: 
                 //HIDE NPCs
-                removeobject(2) //HAM
+                removeobject(HAMGRUNT_ID) //HAM
+                removeobject(COUNTDRAYNOR_ID)
                 setflag(FLAG_TEMP_1)
+                setflag(FLAG_TEMP_2)
                 release
                 end  
             }
@@ -38,19 +43,162 @@ script WizardsTower_DraynorManor_Crypt_STATE{
 
 script EVENT_HAM_DRAYNORMANOR_CRYPT{
     lock
-	namebox("H.A.M GRUNT")
-    msgbox(format("YO SHIT ITS A VAMPYRE"))
-    hidenamebox
-	closemessage
-
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_DraynorManorCrypt_PLAYER_1)
+    waitmovement(0)
     namebox("COUNT DRAYNOR")
-    msgbox(format("YO SHIT ITS PINK MAN!\pI'm going to smack the shit out of you!"))
+    msgbox(format("You dare enter my home and cause a racket!?\pI will not tolerate this!"))
     hidenamebox
 	closemessage
-	trainerbattle_single(TRAINER_DRAYNOR_MANOR_COUNT_DRAYNOR, format("LEME SUCC"),format("YOU SUCC ME DRY"))
-    msgbox(format("OH NO! I AM DEAD!"))
+    applymovement(COUNTDRAYNOR_ID, MOVEMENT_DraynorManorCrypt_COUNT_1)
+    playse(SE_WALL_HIT)
+    applymovement(HAMGRUNT_ID, MOVEMENT_DraynorManorCrypt_HAM_1)
+    waitmovement(0)
+	namebox("H.A.M GRUNT")
+    msgbox(format("Urgh…"))
+    hidenamebox
+	closemessage
+    namebox("COUNT DRAYNOR")
+    msgbox(format("I'm not done with you yet!"))
+    hidenamebox
+    closemessage
+    applymovement(HAMGRUNT_ID, MOVEMENT_DraynorManorCrypt_HAM_2)
+    
+    applymovement(COUNTDRAYNOR_ID, MOVEMENT_DraynorManorCrypt_COUNT_2)
+    delay(6)
+    waitmovement(COUNTDRAYNOR_ID)
+    waitmovement(HAMGRUNT_ID)
+    applymovement(COUNTDRAYNOR_ID, MOVEMENT_DraynorManorCrypt_COUNT_3)
+    playse(SE_WALL_HIT)
+    applymovement(HAMGRUNT_ID, MOVEMENT_DraynorManorCrypt_HAM_3)
+    waitmovement(HAMGRUNT_ID)
+    namebox("COUNT DRAYNOR")
+    msgbox(format("…"))
+    hidenamebox
+	closemessage
+    applymovement(COUNTDRAYNOR_ID, MOVEMENT_DraynorManorCrypt_COUNT_4)
+    waitmovement(0)
+    delay(16)
+    
+    namebox("COUNT DRAYNOR")
+    msgbox(format("Another one!\pI guess I will have to deal with you aswell!"))
+    hidenamebox
+	closemessage
+    applymovement(HAMGRUNT_ID, MOVEMENT_DraynorManorCrypt_HAM_4)
+    trainerbattle_no_intro(TRAINER_DRAYNOR_MANOR_COUNT_DRAYNOR, msgbox(format("Urgh!\nRight through the heart!")))
+    setflag(FLAG_TEMP_1)
+    removeobject(HAMGRUNT_ID)
+    namebox("COUNT DRAYNOR")
+    msgbox(format("…{PAUSE 15}\pYou may be the victor, but I still have strength left in me!\p…{PAUSE 15} …{PAUSE 15}\pOh, you are here to capture the pink man?"))
+    closemessage
+    hidenamebox
+    applymovement(COUNTDRAYNOR_ID, MOVEMENT_DraynorManorCrypt_COUNT_5)
+    waitmovement(0)
+    namebox("COUNT DRAYNOR")
+    msgbox(format("Hmmm.. The pink man seems to have fled during our battle.\pSorry about that, I wouldn't think he has gotten that far.\pI'm going back to bed, please don't disturb me again."))
+    closemessage
+    hidenamebox
+    applymovement(COUNTDRAYNOR_ID, MOVEMENT_DraynorManorCrypt_COUNT_6)
+    delay(16)
+    fadescreen(FADE_TO_BLACK)
+    removeobject(COUNTDRAYNOR_ID)
+    setflag(FLAG_TEMP_2)
+    waitmovement(0)
+    delay(16)
+    fadescreen(FADE_FROM_BLACK)
     setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,8)
 
     release
     end
+}
+
+
+
+script NPC_DraynorManor_RESETEVENT{
+    lock
+	faceplayer
+    setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,7)
+    msgbox(format("VAR SET TO 7"))
+    hidenamebox
+	closemessage
+	release
+	end
+}
+
+
+
+
+
+movement MOVEMENT_DraynorManorCrypt_PLAYER_1 {
+    walk_slow_left
+    walk_slow_up
+}
+
+movement MOVEMENT_DraynorManorCrypt_COUNT_1 {
+    walk_in_place_fast_down
+}
+
+movement MOVEMENT_DraynorManorCrypt_HAM_1 {
+    lock_facing_direction
+    walk_fastest_down
+    unlock_facing_direction
+}
+
+movement MOVEMENT_DraynorManorCrypt_HAM_2 {
+    face_right
+    lock_facing_direction
+    walk_slow_left
+    unlock_facing_direction
+}
+
+movement MOVEMENT_DraynorManorCrypt_COUNT_2 {
+    walk_down * 2
+    delay_2
+    face_left
+}
+
+movement MOVEMENT_DraynorManorCrypt_HAM_3 {
+    lock_facing_direction
+    walk_fastest_left *2
+    unlock_facing_direction
+    
+}
+movement MOVEMENT_DraynorManorCrypt_COUNT_3 {
+    walk_in_place_fast_left
+}
+
+movement MOVEMENT_DraynorManorCrypt_COUNT_4 {
+    face_player
+}
+
+movement MOVEMENT_DraynorManorCrypt_COUNT_5 {
+    face_left
+    delay_16 * 3
+    face_player
+}
+
+movement MOVEMENT_DraynorManorCrypt_COUNT_6 {
+    walk_slow_up * 4
+}
+
+movement MOVEMENT_DraynorManorCrypt_HAM_4 {
+    walk_slow_down 
+    walk_slow_right
+    walk_slow_down
+    walk_slow_right
+    
+    walk_down
+    set_invisible
+    walk_slow_right * 2
+    
+}
+
+
+script NPC_DraynorManor_CountCoffin{
+    lock
+	faceplayer
+    msgbox(format("Shhh…{PAUSE 15} The Count is sleeping."))
+    hidenamebox
+	closemessage
+	release
+	end
 }

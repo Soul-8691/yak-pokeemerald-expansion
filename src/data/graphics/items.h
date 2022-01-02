@@ -1449,9 +1449,44 @@ const u32 gItemIconPalette_RockTM[] = INCBIN_U32("graphics/items/pokescape_icon_
 const u32 gItemIconPalette_SteelTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/steeltm.gbapal.lz");
 const u32 gItemIconPalette_WaterTM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/watertm.gbapal.lz");
 
+//ERNEST QUEST -----
+const u32 gItemIcon_FishFood[] = INCBIN_U32("graphics/items/pokescape_icons/FishFood.4bpp.lz");
+const u32 gItemIconPalette_FishFood[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/FishFood.gbapal.lz");
 
+const u32 gItemIcon_FishFoodPoisoned[] = INCBIN_U32("graphics/items/pokescape_icons/FishFoodPoisoned.4bpp.lz");
+const u32 gItemIconPalette_FishFoodPoisoned[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/FishFoodPoisoned.gbapal.lz");
 
+const u32 gItemIcon_OilCan[] = INCBIN_U32("graphics/items/pokescape_icons/OilCan.4bpp.lz");
+const u32 gItemIconPalette_OilCan[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/OilCan.gbapal.lz");
 
+const u32 gItemIcon_PressureGauge[] = INCBIN_U32("graphics/items/pokescape_icons/PressureGauge.4bpp.lz");
+const u32 gItemIconPalette_PressureGauge[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/PressureGauge.gbapal.lz");
+
+const u32 gItemIcon_RubberTube[] = INCBIN_U32("graphics/items/pokescape_icons/RubberTube.4bpp.lz");
+const u32 gItemIconPalette_RubberTube[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/RubberTube.gbapal.lz");
+
+const u32 gItemIcon_MagicalCage[] = INCBIN_U32("graphics/items/pokescape_icons/MagicalCage.4bpp.lz");
+const u32 gItemIconPalette_MagicalCage[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/MagicalCage.gbapal.lz");
+//-------
+//TREASURES----
+const u32 gItemIcon_Flax[] = INCBIN_U32("graphics/items/pokescape_icons/Flax.4bpp.lz");
+const u32 gItemIconPalette_Flax[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/Flax.gbapal.lz");
+
+const u32 gItemIcon_SpiritShard[] = INCBIN_U32("graphics/items/pokescape_icons/SpiritShard.4bpp.lz");
+const u32 gItemIconPalette_SpiritShard[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/SpiritShard.gbapal.lz");
+
+const u32 gItemIcon_MintCake[] = INCBIN_U32("graphics/items/pokescape_icons/MintCake.4bpp.lz");
+const u32 gItemIconPalette_MintCake[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/MintCake.gbapal.lz");
+
+const u32 gItemIcon_HweenMask[] = INCBIN_U32("graphics/items/pokescape_icons/HweenMask.4bpp.lz");
+const u32 gItemIconPalette_HweenMask[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/HweenMask.gbapal.lz");
+
+const u32 gItemIcon_SantaHat[] = INCBIN_U32("graphics/items/pokescape_icons/SantaHat.4bpp.lz");
+const u32 gItemIconPalette_SantaHat[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/SantaHat.gbapal.lz");
+
+const u32 gItemIcon_PartyHat[] = INCBIN_U32("graphics/items/pokescape_icons/PartyHat.4bpp.lz");
+const u32 gItemIconPalette_PartyHat[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/PartyHat.gbapal.lz");
+//------
 
 
 

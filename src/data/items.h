@@ -7847,6 +7847,7 @@ const struct Item gItems[] =
         .battleUseFunc = ItemUseInBattle_Medicine,
         .secondaryId = 0,
     },
+    //COOKS ASSISTANT - QUEST
     [ITEM_SUPER_LARGE_EGG] =
     {
         .name = _("EGG"),
@@ -7883,6 +7884,151 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 0,
     },
+    //ERNEST QUEST
+    [ITEM_FISH_FOOD] =
+    {
+        .name = _("FISH FOOD"),
+        .itemId = ITEM_FISH_FOOD,
+        .price = 0,
+        .description = sFishFoodDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    [ITEM_FISH_FOOD_POISONED] =
+    {
+        .name = _("FISH FOOD P++"),
+        .itemId = ITEM_FISH_FOOD_POISONED,
+        .price = 0,
+        .description = sFishFoodPoisonedDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    [ITEM_OIL_CAN] =
+    {
+        .name = _("OIL CAN"),
+        .itemId = ITEM_OIL_CAN,
+        .price = 0,
+        .description = sOilCanDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    [ITEM_PRESSURE_GAUGE] =
+    {
+        .name = _("GAUGE"),
+        .itemId = ITEM_PRESSURE_GAUGE,
+        .price = 0,
+        .description = sPressureGaugeDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    [ITEM_RUBBER_TUBE] =
+    {
+        .name = _("RUBBER TUBE"),
+        .itemId = ITEM_RUBBER_TUBE,
+        .price = 0,
+        .description = sRubberTubeDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    [ITEM_MAGICAL_CAGE] =
+    {
+        .name = _("MAGICAL CAGE"),
+        .itemId = ITEM_MAGICAL_CAGE,
+        .price = 0,
+        .description = sMagicalCageDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    //TREASURES
 
+    [ITEM_FLAX] =
+    {
+        .name = _("FLAX"),
+        .itemId = ITEM_FLAX,
+        .price = 500,
+        .description = sFlaxDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+
+    [ITEM_SPIRIT_SHARD] =
+    {
+        .name = _("SPIRIT SHARD"),
+        .itemId = ITEM_SPIRIT_SHARD,
+        .price = 2500,
+        .description = sSpiritShardDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+
+    [ITEM_MINT_CAKE] =
+    {
+        .name = _("MINT CAKE"),
+        .itemId = ITEM_MINT_CAKE,
+        .price = 5000,
+        .description = sMintCakeDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+
+    [ITEM_HWEEN_MASK] =
+    {
+        .name = _("HWEEN MASK"),
+        .itemId = ITEM_HWEEN_MASK,
+        .price = 10000,
+        .description = sHweenMaskDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+
+    [ITEM_SANTA_HAT] =
+    {
+        .name = _("SANTA HAT"),
+        .itemId = ITEM_SANTA_HAT,
+        .price = 15000,
+        .description = sSantaHatDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+
+    [ITEM_PARTY_HAT] =
+    {
+        .name = _("PARTY HAT"),
+        .itemId = ITEM_PARTY_HAT,
+        .price = 24147,  //REFERENCE MAX CASH - 2,147,483,647
+        .description = sPartyHatDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
     
 };

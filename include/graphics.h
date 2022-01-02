@@ -9838,6 +9838,39 @@ extern const u32 gItemIconPalette_mithrilScimitar[];
 extern const u32 gItemIcon_snowGlobe[];
 extern const u32 gItemIconPalette_snowGlobe[];
 
+//ERNEST QUEST----
+extern const u32 gItemIcon_FishFood[];
+extern const u32 gItemIconPalette_FishFood[];
+extern const u32 gItemIcon_FishFoodPoisoned[];
+extern const u32 gItemIconPalette_FishFoodPoisoned[];
+extern const u32 gItemIcon_OilCan[];
+extern const u32 gItemIconPalette_OilCan[];
+extern const u32 gItemIcon_PressureGauge[];
+extern const u32 gItemIconPalette_PressureGauge[];
+extern const u32 gItemIcon_RubberTube[];
+extern const u32 gItemIconPalette_RubberTube[];
+extern const u32 gItemIcon_MagicalCage[];
+extern const u32 gItemIconPalette_MagicalCage[];
+//-----
+//----TREASURES
+extern const u32 gItemIcon_Flax[];
+extern const u32 gItemIconPalette_Flax[];
+
+extern const u32 gItemIcon_SpiritShard[];
+extern const u32 gItemIconPalette_SpiritShard[];
+
+extern const u32 gItemIcon_MintCake[];
+extern const u32 gItemIconPalette_MintCake[];
+
+extern const u32 gItemIcon_HweenMask[];
+extern const u32 gItemIconPalette_HweenMask[];
+
+extern const u32 gItemIcon_SantaHat[];
+extern const u32 gItemIconPalette_SantaHat[];
+
+extern const u32 gItemIcon_PartyHat[];
+extern const u32 gItemIconPalette_PartyHat[];
+//------
 
 // pokescape crops
 extern const u32 gBerryPic_Cabbage[];

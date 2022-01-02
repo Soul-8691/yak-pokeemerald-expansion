@@ -616,7 +616,21 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_SUPER_LARGE_EGG] = {gItemIcon_Egg, gItemIconPalette_Egg},
     [ITEM_TOP_QUALITY_MILK] = {gItemIcon_MilkBucket, gItemIconPalette_MilkBucket},
     [ITEM_EXTRA_FINE_FLOUR] = {gItemIcon_FlourPot, gItemIconPalette_FlourPot},
-    //-----
+    //-----ERNEST QUEST
+    [ITEM_FISH_FOOD] = {gItemIcon_FishFood, gItemIconPalette_FishFood},
+    [ITEM_FISH_FOOD_POISONED] = {gItemIcon_FishFoodPoisoned, gItemIconPalette_FishFoodPoisoned},
+    [ITEM_OIL_CAN] = {gItemIcon_OilCan, gItemIconPalette_OilCan},
+    [ITEM_PRESSURE_GAUGE] = {gItemIcon_PressureGauge, gItemIconPalette_PressureGauge},
+    [ITEM_RUBBER_TUBE] = {gItemIcon_RubberTube, gItemIconPalette_RubberTube},
+    [ITEM_MAGICAL_CAGE] = {gItemIcon_MagicalCage, gItemIconPalette_MagicalCage},
+    //-------TREASURES
+    [ITEM_FLAX] = {gItemIcon_Flax, gItemIconPalette_Flax},
+    [ITEM_SPIRIT_SHARD] = {gItemIcon_SpiritShard, gItemIconPalette_SpiritShard},
+    [ITEM_MINT_CAKE] = {gItemIcon_MintCake, gItemIconPalette_MintCake},
+    [ITEM_HWEEN_MASK] = {gItemIcon_HweenMask, gItemIconPalette_HweenMask},
+    [ITEM_SANTA_HAT] = {gItemIcon_SantaHat, gItemIconPalette_SantaHat},
+    [ITEM_PARTY_HAT] = {gItemIcon_PartyHat, gItemIconPalette_PartyHat},
+    //--------
     [ITEM_SPIRITSHIELD] = {gItemIcon_spiritShield, gItemIconPalette_spiritShield},
     [ITEM_SPOTTEDCAPE] = {gItemIcon_spottedCape, gItemIconPalette_spottedCape},
     [ITEM_STAFF_OF_EARTH] = {gItemIcon_staff_of_earth, gItemIconPalette_staff_of_earth},

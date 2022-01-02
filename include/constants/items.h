@@ -740,9 +740,23 @@
 #define ITEM_TOP_QUALITY_MILK 617
 #define ITEM_EXTRA_FINE_FLOUR 618
 #define ITEM_SPECIAL_CAKE 619
-//---------
+//--------- Ernest Quest
+#define ITEM_FISH_FOOD              620
+#define ITEM_FISH_FOOD_POISONED     621
+#define ITEM_OIL_CAN                622
+#define ITEM_PRESSURE_GAUGE         623
+#define ITEM_RUBBER_TUBE            624
+#define ITEM_MAGICAL_CAGE           625
+//-------TREASURES
+#define ITEM_FLAX                   626
+#define ITEM_SPIRIT_SHARD           627
+#define ITEM_MINT_CAKE              628
+#define ITEM_HWEEN_MASK             629
+#define ITEM_SANTA_HAT              630
+#define ITEM_PARTY_HAT              631
 
-#define ITEMS_COUNT 620
+
+#define ITEMS_COUNT 632
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 #define FIRST_BERRY_INDEX             ITEM_CHERI_BERRY

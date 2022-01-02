@@ -1680,14 +1680,11 @@ static const u8 sElementalPouchDesc[] = _(
     "catching Elemental\n"
     "MONSTERS.");
 	
-static const u8 sCupholderDesc[] = _(
-    "This is a Cupholder.");
 
-static const u8 sSpecialCakeDesc[] = _(
-    "A delicious looking\n"
-    "Cake.\n"
-    "(Cooks Assistant)");
 
+
+
+//COOKS ASSISTANT QUEST ----
 static const u8 sSuperLargeEggDesc[] = _(
     "A super large egg.\n"
     "\n"
@@ -1702,6 +1699,47 @@ static const u8 sExtraFineFlourDesc[] = _(
     "Some extra fine\n"
     "flour.\n"
     "(Cooks Assistant)");
+
+static const u8 sSpecialCakeDesc[] = _(
+    "A delicious looking\n"
+    "Cake.\n"
+    "(Cooks Assistant)");
+
+//ERNEST QUEST---
+static const u8 sFishFoodDesc[] = _(
+    "A Cupholder\n"
+    "\n"
+    "(Ernest Quest)");
+
+static const u8 sFishFoodPoisonedDesc[] = _(
+    "A Cupholder\n"
+    "\n"
+    "(Ernest Quest)");
+
+static const u8 sOilCanDesc[] = _(
+    "A Cupholder\n"
+    "\n"
+    "(Ernest Quest)");
+
+static const u8 sPressureGaugeDesc[] = _(
+    "A Cupholder\n"
+    "\n"
+    "(Ernest Quest)");
+
+static const u8 sRubberTubeDesc[] = _(
+    "A Cupholder\n"
+    "\n"
+    "(Ernest Quest)");
+
+static const u8 sMagicalCageDesc[] = _(
+    "A Cupholder\n"
+    "\n"
+    "(Ernest Quest)");
+
+
+
+
+
 
 static const u8 sBreadDesc[] = _(
     "A piece of bread.\n"
@@ -2081,3 +2119,42 @@ static const u8 sSnowGlobeDesc[] = _(
     "Extends the\n"
     "Duration of\n"
     "Weather.");
+
+//TREASURES------
+
+static const u8 sFlaxDesc[] = _(
+    "A flexible plant\n"
+    "that would sell\n"
+    "at a cheap price.");
+
+static const u8 sSpiritShardDesc[] = _(
+    "Shard of an obelisk\n"
+    "that would sell\n"
+    "at a cheap price.");
+
+static const u8 sMintCakeDesc[] = _(
+    "An strange cake\n"
+    "that would sell\n"
+    "at a cheap price.");
+
+static const u8 sHweenMaskDesc[] = _(
+    "2Spooky4Me!\n"
+    "Can be sold at\n"
+    "a high price.");
+
+static const u8 sSantaHatDesc[] = _(
+    "Ho, ho, ho!\n"
+    "Can be sold at\n"
+    "a high price.");
+
+static const u8 sPartyHatDesc[] = _(
+    "A paper hat.\n"
+    "Can be sold at\n"
+    "a high price.");
+
+//-----------
+
+
+
+static const u8 sCupholderDesc[] = _(
+    "This is a Cupholder.");

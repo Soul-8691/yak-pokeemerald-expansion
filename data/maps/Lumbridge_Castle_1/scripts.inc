@@ -1,6 +1,11 @@
 Lumbridge_Castle_1_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, Lumbridge_Castle_1_MapScripts_MAP_SCRIPT_ON_LOAD
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, TryHideHans
 	.byte 0
+
+Lumbridge_Castle_1_MapScripts_MAP_SCRIPT_ON_LOAD:
+	call LUMBRIDGE_GYM_MUSIC
+	return
 
 
 TryHideHans::
@@ -165,7 +170,7 @@ LUMBRIDGE_GYM_TRAINER_3_2:
 LUMBRIDGE_GYM_TRAINER_3_3:
 	lock
 	faceplayer
-	msgbox LUMBRIDGE_GYM_TRAINER_2_Text_3
+	msgbox LUMBRIDGE_GYM_TRAINER_3_Text_3
 	release
 	end
 
@@ -187,7 +192,7 @@ LUMBRIDGE_GYM_TRAINER_4_2:
 LUMBRIDGE_GYM_TRAINER_4_3:
 	lock
 	faceplayer
-	msgbox LUMBRIDGE_GYM_TRAINER_2_Text_3
+	msgbox LUMBRIDGE_GYM_TRAINER_4_Text_3
 	release
 	end
 
@@ -269,7 +274,8 @@ LUMBRIDGE_GYM_TRAINER_2_Text_2:
 	.string "Do you agree on how cute my rabbit is?$"
 
 LUMBRIDGE_GYM_TRAINER_2_Text_3:
-	.string "CUPHOLDER$"
+	.string "You have some pretty cute monsters,\n"
+	.string "but my rabbit is cuter!$"
 
 LUMBRIDGE_GYM_TRAINER_3_Text_0:
 	.string "The Duke of Lumbridge is the strongest\n"
@@ -283,6 +289,11 @@ LUMBRIDGE_GYM_TRAINER_3_Text_2:
 	.string "Maybe I should train on the other side\n"
 	.string "of the river.$"
 
+LUMBRIDGE_GYM_TRAINER_3_Text_3:
+	.string "Oh wow!\n"
+	.string "Where do you train?\p"
+	.string "Maybe I should train there!$"
+
 LUMBRIDGE_GYM_TRAINER_4_Text_0:
 	.string "Ready to face the Duke himself? Let us\n"
 	.string "check.$"
@@ -292,3 +303,7 @@ LUMBRIDGE_GYM_TRAINER_4_Text_1:
 
 LUMBRIDGE_GYM_TRAINER_4_Text_2:
 	.string "It was a close fight.$"
+
+LUMBRIDGE_GYM_TRAINER_4_Text_3:
+	.string "I guess you were ready to face the\n"
+	.string "duke.$"

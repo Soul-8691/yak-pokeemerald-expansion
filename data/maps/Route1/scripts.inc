@@ -40,9 +40,11 @@ Route1WarpCheck::
 NPC_DUCK::
 	lock
 	faceplayer
+	namebox NPC_DUCK_Text_0
 	playmoncry SPECIES_PSYDUCK, 0
-	msgbox NPC_DUCK_Text_0
+	msgbox NPC_DUCK_Text_1
 	waitmoncry
+	hidenamebox
 	release
 	end
 
@@ -50,9 +52,11 @@ NPC_DUCK::
 NPC_RAT::
 	lock
 	faceplayer
+	namebox NPC_RAT_Text_0
 	playmoncry SPECIES_RATTATA, 0
-	msgbox NPC_RAT_Text_0
+	msgbox NPC_RAT_Text_1
 	waitmoncry
+	hidenamebox
 	release
 	end
 
@@ -60,9 +64,11 @@ NPC_RAT::
 NPC_SHEEP::
 	lock
 	faceplayer
+	namebox NPC_SHEEP_Text_0
 	playmoncry SPECIES_MAREEP, 0
-	msgbox NPC_SHEEP_Text_0
+	msgbox NPC_SHEEP_Text_1
 	waitmoncry
+	hidenamebox
 	release
 	end
 
@@ -70,9 +76,11 @@ NPC_SHEEP::
 NPC_COW::
 	lock
 	faceplayer
+	namebox NPC_COW_Text_0
 	playmoncry SPECIES_MILTANK, 0
-	msgbox NPC_COW_Text_0
+	msgbox NPC_COW_Text_1
 	waitmoncry
+	hidenamebox
 	release
 	end
 
@@ -122,15 +130,23 @@ NPC_FISHERMAN_1_2:
 BLOCK_ROUTE1_FARMER::
 	lock
 	faceplayer
+	namebox BLOCK_ROUTE1_FARMER_Text_0
 	goto_if_unset FLAG_BADGE01_GET, BLOCK_ROUTE1_FARMER_2
-	msgbox BLOCK_ROUTE1_FARMER_Text_1
-BLOCK_ROUTE1_FARMER_1:
+	msgbox BLOCK_ROUTE1_FARMER_Text_2
+	hidenamebox
+	closemessage
+	release
+	end
+
 	release
 	end
 
 BLOCK_ROUTE1_FARMER_2:
-	msgbox BLOCK_ROUTE1_FARMER_Text_0
-	goto BLOCK_ROUTE1_FARMER_1
+	msgbox BLOCK_ROUTE1_FARMER_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
 
 
 THEIF_ROUTE_1::
@@ -163,6 +179,7 @@ Trainer1_Route1_Battle::
 	trainerbattle_single TRAINER_RSN_ROUTE1, Trainer1_Route1_Battle_Text_0, Trainer1_Route1_Battle_Text_1
 	namebox Trainer1_Route1_Battle_Text_2
 	msgbox Trainer1_Route1_Battle_Text_3
+	closemessage
 	hidenamebox
 	release
 	end
@@ -170,7 +187,10 @@ Trainer1_Route1_Battle::
 
 MudbeardBattle::
 	trainerbattle_single TRAINER_GOBLIN_3_ROUTE1, MudbeardBattle_Text_0, MudbeardBattle_Text_1
-	msgbox MudbeardBattle_Text_2
+	namebox MudbeardBattle_Text_2
+	msgbox MudbeardBattle_Text_3
+	closemessage
+	hidenamebox
 	release
 	return
 
@@ -251,21 +271,23 @@ ErnestAndVeronica::
 	case 5, ErnestAndVeronica_3
 	case 6, ErnestAndVeronica_3
 	case 7, ErnestAndVeronica_3
-	case 8, ErnestAndVeronica_3
-	case 9, ErnestAndVeronica_3
+	case 8, ErnestAndVeronica_4
+	case 9, ErnestAndVeronica_4
 	return
 
 ErnestAndVeronica_2:
 	playmoncry SPECIES_TORCHIC, 0
 	namebox ErnestAndVeronica_Text_0
 	msgbox ErnestAndVeronica_Text_1
-	hidenamebox
 	waitmoncry
+	hidenamebox
+	closemessage
 	waitmovement 0
 	applymovement 6, HAM_Movement7_6
 	namebox ErnestAndVeronica_Text_2
 	msgbox ErnestAndVeronica_Text_3
 	hidenamebox
+	closemessage
 	waitmovement 0
 	playmoncry SPECIES_TORCHIC, 0
 	namebox ErnestAndVeronica_Text_0
@@ -273,19 +295,21 @@ ErnestAndVeronica_2:
 	waitmoncry
 	playmoncry SPECIES_TORCHIC, 0
 	msgbox ErnestAndVeronica_Text_5
-	hidenamebox
 	waitmoncry
+	hidenamebox
+	closemessage
 	waitmovement 0
 	applymovement 6, HAM_Movement7_6
 	namebox ErnestAndVeronica_Text_2
 	msgbox ErnestAndVeronica_Text_6
 	hidenamebox
+	closemessage
 	waitmovement 0
 	playmoncry SPECIES_COMBUSKEN, 0
 	namebox ErnestAndVeronica_Text_0
 	msgbox ErnestAndVeronica_Text_7
-	hidenamebox
 	waitmoncry
+	hidenamebox
 	closemessage
 	waitmovement 0
 	release
@@ -295,9 +319,23 @@ ErnestAndVeronica_3:
 	namebox ErnestAndVeronica_Text_0
 	msgbox ErnestAndVeronica_Text_8
 	hidenamebox
+	closemessage
 	namebox ErnestAndVeronica_Text_2
-	msgbox ErnestAndVeronica_Text_8
+	msgbox ErnestAndVeronica_Text_9
 	hidenamebox
+	closemessage
+	release
+	end
+
+ErnestAndVeronica_4:
+	namebox ErnestAndVeronica_Text_2
+	msgbox ErnestAndVeronica_Text_10
+	hidenamebox
+	closemessage
+	namebox ErnestAndVeronica_Text_0
+	msgbox ErnestAndVeronica_Text_11
+	hidenamebox
+	closemessage
 	release
 	end
 
@@ -651,15 +689,27 @@ BATTLE_AREA_TRAINER_3::
 
 
 NPC_DUCK_Text_0:
+	.string "Duck$"
+
+NPC_DUCK_Text_1:
 	.string "Quack!$"
 
 NPC_RAT_Text_0:
+	.string "Rat$"
+
+NPC_RAT_Text_1:
 	.string "SKREEK!$"
 
 NPC_SHEEP_Text_0:
+	.string "Sheep$"
+
+NPC_SHEEP_Text_1:
 	.string "Baaa!$"
 
 NPC_COW_Text_0:
+	.string "Cow$"
+
+NPC_COW_Text_1:
 	.string "Mooo!$"
 
 SIGN_ROUTE1_1_Text_0:
@@ -694,11 +744,14 @@ NPC_FISHERMAN_1_Text_2:
 	.string "with it!$"
 
 BLOCK_ROUTE1_FARMER_Text_0:
+	.string "Farmer$"
+
+BLOCK_ROUTE1_FARMER_Text_1:
 	.string "Some Goblins scared my cows out of\n"
 	.string "their pens.\p"
 	.string "Now I'm struggling to get them back in!$"
 
-BLOCK_ROUTE1_FARMER_Text_1:
+BLOCK_ROUTE1_FARMER_Text_2:
 	.string "I finally got my Cows out of the way.$"
 
 THEIF_ROUTE_1_Text_0:
@@ -736,7 +789,7 @@ Trainer1_Route1_Battle_Text_1:
 	.string "Maybe I'm the noob..$"
 
 Trainer1_Route1_Battle_Text_2:
-	.string "RSN$"
+	.string "CUPHOLDER$"
 
 Trainer1_Route1_Battle_Text_3:
 	.string "The mill is up ahead.\p"
@@ -750,6 +803,9 @@ MudbeardBattle_Text_1:
 	.string "Leave me alone!$"
 
 MudbeardBattle_Text_2:
+	.string "Mudbeard$"
+
+MudbeardBattle_Text_3:
 	.string "Smelly human!$"
 
 Route1FarmerBattle_Text_0:
@@ -805,7 +861,20 @@ ErnestAndVeronica_Text_7:
 	.string "Bwak...$"
 
 ErnestAndVeronica_Text_8:
-	.string "CUPHOLDER$"
+	.string "Professor Oddenstein made me human\n"
+	.string "again!$"
+
+ErnestAndVeronica_Text_9:
+	.string "I think I liked you better when you were\n"
+	.string "a chicken.$"
+
+ErnestAndVeronica_Text_10:
+	.string "Did you ever end up getting some\n"
+	.string "directions?$"
+
+ErnestAndVeronica_Text_11:
+	.string "Oh no!\p"
+	.string "I completely forgot!$"
 
 HAM_EVENT_Route1_MAIN_1_Text_0:
 	.string "H.A.M. member$"

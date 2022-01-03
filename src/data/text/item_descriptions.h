@@ -1739,7 +1739,7 @@ static const u8 sMagicalCageDesc[] = _(
 
 
 
-
+//POKESCAPE HP HEALING
 
 static const u8 sBreadDesc[] = _(
     "A piece of bread.\n"
@@ -1757,7 +1757,7 @@ static const u8 sChocolateCakeDesc[] = _(
     "Restores 200HP.");
 
 
-
+//POKESCAPE STATUS HEALING
 
 static const u8 sChocolateSundayDesc[] = _(
     "A gnome cocktail\n"
@@ -1782,10 +1782,22 @@ static const u8 sPineapplePunchDesc[] = _(
     "that awakens\n"
     "MONSTERS.");
 
+static const u8 sWizardsBlizzardDesc[] = _(
+    "A gnome cocktail\n"
+    "that Defrosts\n"
+    "MONSTERS.");
+
+
+//POKESCAPE STAT BOOSTING 
+
 static const u8 sPurpleSweetsDesc[] = _(
     "Raises the level\n"
     "of a MONSTERS by\n"
     "one.");
+
+
+
+//POKESCAPE FARMING ITEMS
 
 static const u8 sCabbageDesc[] = _(
     "Herald of the Brassica.\n"
@@ -1806,7 +1818,7 @@ static const u8 sCoconutDesc[] = _(
 
 
 
-
+//POKESCAPE SPECIAL ITEMS
 
 static const u8 s10thSigilDesc[] = _(
     "The sigil of\n"
@@ -2119,6 +2131,16 @@ static const u8 sSnowGlobeDesc[] = _(
     "Extends the\n"
     "Duration of\n"
     "Weather.");
+
+static const u8 sNewcomerMapDesc[] = _(
+    "A map of Pokescape.\n"
+    "\n"
+    "(DO NOT USE)");
+
+static const u8 sLanternDesc[] = _(
+    "Used in caves and\n"
+    "dark places.\n"
+    "");
 
 //TREASURES------
 

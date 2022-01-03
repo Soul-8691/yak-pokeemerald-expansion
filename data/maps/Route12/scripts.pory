@@ -28,17 +28,23 @@ script Gillie_Groats{
 			applymovement(23, ROUTE12_GILLIEGROATS_1)
 			waitmovement(0)
 			msgbox(format("What's that?\nThe cook needs some milk?\pI'll give you some for free this time but next time you'll have to buy some."))
+			hidenamebox
+			closemessage
 			giveitem(ITEM_TOP_QUALITY_MILK)
-            hidenamebox
+            namebox ("Gillie Groats")
 			msgbox(format("Say hello to the cook for me!"))
+			hidenamebox
+			closemessage
             release
             end
         }
         else {
             lock
             faceplayer
+			namebox ("Gillie Groats")
             msgbox(format("Hello and welcome to the Groat's Milk Farm!\pWould you like to buy some Milk?"))
             pokemart(GroatsShop)
+			hidenamebox
             release
             end
         }
@@ -46,8 +52,10 @@ script Gillie_Groats{
     else {
         lock
         faceplayer
+		namebox ("Gillie Groats")
         msgbox(format("Hello and welcome to the Groat's Milk Farm!\pWould you like to buy some Milk?"))
         pokemart(GroatsShop)
+		hidenamebox
         release
         end
     }
@@ -118,7 +126,7 @@ script NPC_LUMBRIDGE_CHICKEN{
 			msgbox(format("Bwak Bwak!"))
 			waitmoncry
 			hidenamebox
-			msgbox(format("You get into a staring contest with the chicken.."))
+			msgbox(format("You get into a staring contest with the chicken…"))
 			msgbox(format("{PAUSE 15}… {PAUSE 15}… {PAUSE 15}… {PAUSE 15}{PLAY_SE SE_PIN}!"))
 			closemessage
 			playmoncry(SPECIES_TORCHIC, 0)
@@ -172,19 +180,18 @@ script NPC_LUMBRIDGE_CHICKEN{
 
 script SIGN_ROUTE12
 {
-	lock
 	msgbox(format("NORTH to VARROCK\pWEST to LUMBRIDGE\pEAST to AL KHAIRD"))
-	release
 	end
 }
 
 
 script BLOCK_Route12_Farmer
 {
-	lock
 	faceplayer
+	namebox("Farmer")
 	msgbox(format("Urgh, I wish the goblins would stop messing with my sheep!"))
-	release
+	hidenamebox
+	closemessage
 	end
 }
 
@@ -251,62 +258,121 @@ script ChickenBattle{
 
 script GoblinBattle4{
 	trainerbattle_single(TRAINER_GOBLIN_4_ROUTE12, "This place goblin place.\nHuman go home.",format("Human strong.\nThis now Goblin and human home."))
-	msgbox(format("Human strong.\nThis now Goblin and human home."))
-	release
+	namebox("Wormtongue")
+	msgbox(format("Human strong.\nThis now goblin and human home."))
+	hidenamebox
+	closemessage
+	end
 }
 
 script GoblinBattle5{
 	trainerbattle_single(TRAINER_GOBLIN_5_ROUTE12, format("Human weak.\nFeethands show why."),format("Feethands weak.\nHuman show Feethands why."))
+	namebox("Feethands")
 	msgbox(format("Feethands weak.\nHuman show Feethands why."))
-	release
+	hidenamebox
+	closemessage
+	end
 }
 
 script GoblinBattle6{
 	trainerbattle_single(TRAINER_GOBLIN_6_ROUTE12, format("Human homes makes for weak monster.\pSee strong monster here."),format("Strong monsters in human homes it seems."))
+	namebox("Eyemonger")
 	msgbox(format("Strong monsters in human homes it seems."))
-	release
+	hidenamebox
+	closemessage
+	end
 }
 
-script GoblinBattle7{
+script BATTLE_ROUTE12_SMELLYBACK{
 	trainerbattle_single(TRAINER_GOBLIN_7_ROUTE12, format("Big high war god say human go home."),format("Big high war god calls for rematch.\pLater...\nMuch later..."))
+	namebox("Smellyback")
 	msgbox(format("Big high war god calls for rematch.\pLater...\nMuch later..."))
-	release
+	hidenamebox
+	closemessage
+	end
 }
 
-script RsnBattleRoute12{
+script BATTLE_ROUTE12_TRAINER_1{
 	trainerbattle_single(TRAINER_RSN_ROUTE12, format("You look like a noob, even I could beat you!"),format("Well drat.\pMaybe I should've looked for rarer monsters around here first."))
+	namebox("CUPHOLDER")
 	msgbox(format("Well drat.\pMaybe I should've looked for rarer monsters around here first."))
-	release
+	hidenamebox
+	closemessage
+	end
 }
 
 
-script Route12CookingGoblin{
-	msgbox("Go away human.\pGoblin cooking.")
-	release
-}
 
-script Route12Farmer{
+
+
+
+
+
+script NPC_ROUTE12_Goblin_1{
+    lock
 	faceplayer
-	msgbox(format("Here you can plant crops and harvest them later!"))
+	namebox("Goblin")
+    msgbox(format("Go away human.\pGoblin cooking."))
+    hidenamebox
+	closemessage
 	release
+	end
 }
 
-script Route12MilkLady{
+script NPC_ROUTE12_Farmer{
+    lock
 	faceplayer
-	msgbox(format("If you need milk feel free to milk the cows.\pMake sure you have an empty bucket!"))
+	namebox("Farmer")
+    msgbox(format("Did you know that you can plant crops and harvest them later."))
+    hidenamebox
+	closemessage
 	release
+	end
 }
 
+script NPC_ROUTE12_Seth_Groats{
+    lock
+	faceplayer
+	namebox("Seth Groats")
+    msgbox(format("Who are you and what are you doing in my house!?\pGet out and take those disgusting monsters with you!"))
+    hidenamebox
+	closemessage
+	release
+	end
+}
 
+script NPC_DOG
+{
+	lock
+	faceplayer
+    playmoncry(SPECIES_GROWLITHE, 0)
+	msgbox(format("WOOF!"))
+    waitmoncry
+	release
+	end
+}
 
+script NPC_ROUTE12_Fisherman{
+    lock
+	faceplayer
+	namebox("Fisherman")
+    msgbox(format("We once had a wooden bridge here, but some firemakers burnt it down…"))
+    hidenamebox
+	closemessage
+	release
+	end
+}
 
-
-
-
-
-
-
-
+script NPC_ROUTE12_Goblin_2{
+    lock
+	faceplayer
+	namebox("Goblin")
+    msgbox(format("Me fishing."))
+    hidenamebox
+	closemessage
+	release
+	end
+}
 
 
 

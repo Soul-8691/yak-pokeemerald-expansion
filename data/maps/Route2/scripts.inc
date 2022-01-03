@@ -45,6 +45,7 @@ WizardsTower_Route2_STATE_4:
 WizardsTower_Route2_STATE_5:
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
+	setvar VAR_TEMP_2, 1
 	removeobject 1
 	removeobject 2
 	removeobject 3
@@ -202,10 +203,6 @@ HAM_Movement5_9:
 	step_end
 
 BLOCK_ROUTE2_Highwayman::
-	goto_if_unset FLAG_TEMP_2, BLOCK_ROUTE2_Highwayman_1
-	return
-
-BLOCK_ROUTE2_Highwayman_1:
 	lock
 	namebox HAM_EVENT_Route2_MAIN_1_Text_2
 	msgbox HAM_EVENT_Route2_MAIN_1_Text_3
@@ -230,8 +227,8 @@ NPC_ROUTE2_Wizard::
 
 
 BATTLE_ROUTE2_Trainer_1::
-	trainerbattle_single TRAINER_ROUTE2_TRAINER_1, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_0
-	msgbox BATTLE_ROUTE2_Trainer_1_Text_0
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_1, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_1
+	msgbox BATTLE_ROUTE2_Trainer_1_Text_1
 	hidenamebox
 	release
 	end
@@ -246,40 +243,50 @@ BATTLE_ROUTE2_Trainer_2::
 
 
 BATTLE_ROUTE2_Trainer_3::
-	trainerbattle_single TRAINER_ROUTE2_TRAINER_3, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_0
-	msgbox BATTLE_ROUTE2_Trainer_1_Text_0
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_3, BATTLE_ROUTE2_Trainer_3_Text_0, BATTLE_ROUTE2_Trainer_3_Text_1
+	msgbox BATTLE_ROUTE2_Trainer_3_Text_1
 	hidenamebox
 	release
 	end
 
 
 BATTLE_ROUTE2_Trainer_4::
-	trainerbattle_single TRAINER_ROUTE2_TRAINER_4, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_0
-	msgbox BATTLE_ROUTE2_Trainer_1_Text_0
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_4, BATTLE_ROUTE2_Trainer_4_Text_0, BATTLE_ROUTE2_Trainer_4_Text_1
+	msgbox BATTLE_ROUTE2_Trainer_4_Text_1
 	hidenamebox
 	release
 	end
 
 
 BATTLE_ROUTE2_Trainer_5::
-	trainerbattle_single TRAINER_ROUTE2_TRAINER_5, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_0
-	msgbox BATTLE_ROUTE2_Trainer_1_Text_0
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_5, BATTLE_ROUTE2_Trainer_5_Text_0, BATTLE_ROUTE2_Trainer_5_Text_0
+	msgbox BATTLE_ROUTE2_Trainer_5_Text_0
 	hidenamebox
 	release
 	end
 
 
 BATTLE_ROUTE2_Trainer_6::
-	trainerbattle_single TRAINER_ROUTE2_TRAINER_6, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_0
-	msgbox BATTLE_ROUTE2_Trainer_1_Text_0
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_6, BATTLE_ROUTE2_Trainer_5_Text_0, BATTLE_ROUTE2_Trainer_5_Text_0
+	msgbox BATTLE_ROUTE2_Trainer_5_Text_0
 	hidenamebox
 	release
 	end
 
 
 BATTLE_ROUTE2_Trainer_7::
-	trainerbattle_single TRAINER_ROUTE2_TRAINER_7, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_0
-	msgbox BATTLE_ROUTE2_Trainer_1_Text_0
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_7, BATTLE_ROUTE2_Trainer_5_Text_0, BATTLE_ROUTE2_Trainer_5_Text_0
+	msgbox BATTLE_ROUTE2_Trainer_5_Text_0
+	hidenamebox
+	release
+	end
+
+
+NPC_ROUTE2_BLACK_KNIGHT::
+	lockall
+	namebox NPC_ROUTE2_BLACK_KNIGHT_Text_0
+	msgbox NPC_ROUTE2_BLACK_KNIGHT_Text_1
+	closemessage
 	hidenamebox
 	release
 	end
@@ -316,7 +323,12 @@ NPC_ROUTE2_Wizard_Text_0:
 	.string "I've never found them though.$"
 
 BATTLE_ROUTE2_Trainer_1_Text_0:
-	.string "$"
+	.string "Do you know the way to Draynor village\n"
+	.string "by any chance?$"
+
+BATTLE_ROUTE2_Trainer_1_Text_1:
+	.string "Wrong direction?\p"
+	.string "Ive followed the W for south all day!$"
 
 BATTLE_ROUTE2_Trainer_2_Text_0:
 	.string "Passing this bridge gets you to the\n"
@@ -329,3 +341,29 @@ BATTLE_ROUTE2_Trainer_2_Text_2:
 	.string "Runes are marvellous.\p"
 	.string "Using them on monsters might make them\n"
 	.string "evolve!$"
+
+BATTLE_ROUTE2_Trainer_3_Text_0:
+	.string "A game is not a good game without a\n"
+	.string "fishing minigame$"
+
+BATTLE_ROUTE2_Trainer_3_Text_1:
+	.string "Now you too can enjoy the joy of\n"
+	.string "fishing.$"
+
+BATTLE_ROUTE2_Trainer_4_Text_0:
+	.string "Noobs fear me, fish fear me, pkers turns\n"
+	.string "their eyes away from me as I walk.$"
+
+BATTLE_ROUTE2_Trainer_4_Text_1:
+	.string "No fish dare make a sound in my\n"
+	.string "presence.\p"
+	.string "I walk alone on this barren earth.$"
+
+BATTLE_ROUTE2_Trainer_5_Text_0:
+	.string "$"
+
+NPC_ROUTE2_BLACK_KNIGHT_Text_0:
+	.string "Black Knight$"
+
+NPC_ROUTE2_BLACK_KNIGHT_Text_1:
+	.string "For the Kinshra!$"

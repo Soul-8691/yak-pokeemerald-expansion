@@ -2,15 +2,30 @@ const OBJ_EVENT_ID_DUKE = 1
 
 
 mapscripts Lumbridge_Castle_3_MapScripts{
+
+
+
 	MAP_SCRIPT_ON_LOAD {
-    goto(LUMBRIDGE_GYM_STATE)
+        call(LUMBRIDGE_GYM_MUSIC)
+        goto(LUMBRIDGE_GYM_STATE)
     }
 }
 
+script LUMBRIDGE_GYM_MUSIC{
+	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+		case 4:
+            playbgm(MUS_PS_GYM, 1)
+			return
+		case 5:
+			return
+            
+	}
+}
 
 script LUMBRIDGE_GYM_STATE{
 	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
 		case 4:
+            
 			//HIDE DUKE
             removeobject (OBJ_EVENT_ID_DUKE)
 			setflag(FLAG_TEMP_1)
@@ -100,8 +115,6 @@ script LUMBRIDGE_GYM_STATE{
 
 
 
-
-
 script NPC_DUKE_1{
     lock
     faceplayer
@@ -115,6 +128,7 @@ script NPC_DUKE_1{
         setflag(FLAG_TEMP_1)
         setvar(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 4)
         fadescreen(FADE_FROM_BLACK)
+        call(LUMBRIDGE_GYM_MUSIC)
         goto(LUMBRIDGE_GYM_STATE)
         release
         end
@@ -184,7 +198,11 @@ script LUMBRIDGE_GYM_GUARD_2 {
 
 
 
-
+script EVENTSCRIPT_LUMBRIDGECASTLE_DIARY{
+    msgbox(format("It's the Duke's Diary.\pBetter not read it."))
+	closemessage
+	end
+}
 
 
 

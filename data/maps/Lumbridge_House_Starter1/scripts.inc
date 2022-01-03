@@ -236,6 +236,16 @@ ITEM_ROUTE12_ATTACK_POTION::
 	end
 
 
+ITEM_ROUTE12_EGG::
+	finditem ITEM_EGG
+	end
+
+
+ITEM_ROUTE12_PRAYER_POTION::
+	finditem ITEM_PRAYER_POTION
+	end
+
+
 Explorer_Jack_1_Text_0:
 	.string "Explorer Jack$"
 

@@ -3,6 +3,9 @@ const OBJ_EVENT_ID_DUKE = 1
 
 mapscripts Lumbridge_Castle_4_MapScripts{
 
+    MAP_SCRIPT_ON_LOAD {
+        call(LUMBRIDGE_GYM_MUSIC)
+    }
 }
 
 

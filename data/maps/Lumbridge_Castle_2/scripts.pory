@@ -19,6 +19,13 @@ script Lumbridge_Bookshelf
 	end
 }
 
+script Lumbridge_Bookshelf_2
+{
+	lock
+	msgbox(format("There is a Book about MvM Championships.\pMvM also known as Monster VS Monster.\pAdventurers gather from all around the world to battle it out atop the Wilderness Volcano to see who is the strongest of them all."))
+	release
+	end
+}
 
 
 //-----------------------------------------------------------------------
@@ -73,6 +80,7 @@ script Lumbridge_Castle_COOKS_TRIGGER{
 		waitmessage 
 		msgbox(format("You hear a loud noise coming from the kitchen."))
 		waitmessage 
+		closemessage
 		applymovement(OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_COOKS_TRIGGER2)
 		waitmovement(0)
 		release
@@ -212,7 +220,7 @@ script Lumbridge_Castle_Professor_Normal_Tree_1{
 		msgbox(format("Obtained the BESTIARY."))
 		waitfanfare
 		namebox ("Prof. Normal Tree")
-		msgbox(format("I've got to head to Kandarin now, I look forward to seeing how much of the BESTIARY you've filled out the next we meet.\pUntil then...\lNice."))
+		msgbox(format("I've got to head to Kandarin now, I look forward to seeing how much of the BESTIARY you've filled out the next we meet.\pUntil then...\lFarewell."))
 		waitmessage
 		hidenamebox
 		closemessage
@@ -248,8 +256,14 @@ script Lumbridge_Castle_Hans_1{
 	applymovement(10, Movement_Hans_4)
 	waitmovement(0)
 	namebox ("Hans")
-	msgbox(format("{PLAYER}, before you go have you heard of the MvM championships?\pMvM, which stands for Monster VS Monster, is where trainers compete against eachother in battle by using their monsters to fight for them.\pIf you wish to participate in the MvM Championships you must defeat 8 leaders from around Gielinor and make your way to the Wilderness Volcano.\pThe Duke is one of these 8 Leaders.\pIf you are interested you should pay him a visit.\pAnyway, all the best on your adventure {PLAYER}, I'm sure I'll see you around."))
+	msgbox(format("{PLAYER}, before you go have you heard of the MvM championships?\pMvM, which stands for Monster VS Monster, is where trainers compete against eachother in battle by using their monsters to fight for them.\pIf you wish to participate in the MvM Championships you must defeat 8 leaders from around Gielinor and make your way to the Wilderness Volcano.\pThe Duke is one of these 8 Leaders.\pIf you are interested you should pay him a visit."))
+	msgbox(format("Oh, before I forget take these."))
 	waitmessage
+	hidenamebox
+	closemessage
+	giveitem(ITEM_NORMAL_POUCH, 10)
+	namebox ("Hans")
+	msgbox(format("These are Pouches, you can capture monsters with them.\pAnyway, all the best on your adventure {PLAYER}, I'm sure I'll see you around."))
 	hidenamebox
 	closemessage
 	fadescreen (FADE_TO_BLACK)
@@ -763,8 +777,10 @@ script QUEST_TRIGGER_BLOCK_COOKSASSISTANT{
 			playSE(SE_PIN)
 			applymovement(OBJ_EVENT_ID_COOK, BLOCK_COOKSASSISTANT_1)
 			waitmovement(0)
-			msgbox(format("Hey you!\nCome here!"))
+			namebox("Cook")
+			msgbox(format("Hey you there!\nCome here for a minute."))
 			closemessage
+			hidenamebox
 			applymovement(OBJ_EVENT_ID_PLAYER,BLOCK_COOKSASSISTANT_2)
 			waitmovement(0)
 			release

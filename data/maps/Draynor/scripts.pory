@@ -211,6 +211,7 @@ script Draynor_Guard3{
 }
 
 script Draynor_FORTUNATO{
+    faceplayer
     namebox("Fortunato")
 	msgbox(format("Can I interest you in something to drink?"))
     hidenamebox
@@ -246,33 +247,6 @@ GeneralStoreDraynor:
 
 `
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//INDOORS
-script Draynor_Morgan{
-	lock
-	faceplayer
-    namebox("Morgan")
-	msgbox(format("There's a Vampyre in Draynor Mannor but no one believes me.."))
-    msgbox(format("What is that?!\pYou defeated the Vampyre in a battle?\pWell thanks for that, please accept this as a gift."))
-    msgbox(format("Thank you again."))
-    hidenamebox
-    release
-	end
-}
 
 script Draynor_TREE{
     if (var(VAR_POKESCAPE_DRAYNOR_GUARD_STATE)==0){
@@ -319,6 +293,76 @@ movement Movement_DraynorGuardTree_3
     walk_up * 2
     face_down
 }   
+
+
+
+
+
+script NPC_Draynor_Woman_1{
+	lock
+	faceplayer
+    namebox("Woman")
+	msgbox(format("If you follow this road south, it will lead you to the Wizards' Tower.\pMake sure to be all healed up before trekking there."))
+    hidenamebox
+    release
+	end
+}
+
+
+
+
+
+
+
+
+
+
+//INDOORS
+script Draynor_Morgan{
+	lock
+	faceplayer
+    namebox("Morgan")
+	msgbox(format("There's a Vampyre in Draynor Mannor but no one believes me.."))
+    msgbox(format("What is that?!\pYou defeated the Vampyre in a battle?\pWell thanks for that, please accept this as a gift."))
+    msgbox(format("Thank you again."))
+    hidenamebox
+    release
+	end
+}
+
+script NPC_Draynor_Morgans_Wife{
+	lock
+	faceplayer
+    namebox("Morgans Wife")
+	msgbox(format("All my husband thinks of is slaying vampyres these days…\pBut I think he is trying to slay our marriage instead."))
+    hidenamebox
+    release
+	end
+}
+
+script NPC_Draynor_Mugger{
+	lock
+	faceplayer
+    namebox("Mugger")
+	msgbox(format("Draynor village is the town of farmers and vampyres.\pI am not sure why I decided to be a mugger here but its a job somebody has to take."))
+    hidenamebox
+    release
+	end
+}
+
+
+
+
+
+script NPC_Draynor_WiseOldMan{
+	lock
+	faceplayer
+    namebox("Wise Old Man")
+	msgbox(format("…"))
+    hidenamebox
+    release
+	end
+}
 
 
 

@@ -60,7 +60,10 @@ Lumbridge_Saraowl::
 Lumbridge_GENERALSTORE_CLERK::
 	lock
 	faceplayer
-	msgbox Lumbridge_GENERALSTORE_CLERK_Text_0
+	namebox Lumbridge_GENERALSTORE_CLERK_Text_0
+	msgbox Lumbridge_GENERALSTORE_CLERK_Text_1
+	hidenamebox
+	closemessage
 	release
 	end
 
@@ -292,7 +295,7 @@ Lumbridge_Guard_SOUTH_2:
 	lock
 	faceplayer
 	namebox Lumbridge_Guard_SOUTH_Text_0
-	msgbox Lumbridge_Guard_NORTH_Text_1
+	msgbox Lumbridge_Guard_SOUTH_Text_1
 	hidenamebox
 	release
 	end
@@ -301,7 +304,7 @@ Lumbridge_Guard_SOUTH_3:
 	lock
 	faceplayer
 	namebox Lumbridge_Guard_SOUTH_Text_0
-	msgbox Lumbridge_Guard_SOUTH_Text_1
+	msgbox Lumbridge_Guard_SOUTH_Text_2
 	hidenamebox
 	release
 	end
@@ -393,7 +396,7 @@ Lumbridge_Guard_SOUTH_TRIGGER_2:
 	applymovement 12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_1
 	waitmovement 0
 	namebox Lumbridge_Guard_SOUTH_Text_0
-	msgbox Lumbridge_Guard_NORTH_Text_1
+	msgbox Lumbridge_Guard_SOUTH_Text_1
 	waitmessage
 	hidenamebox
 	applymovement OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_SOUTH_TRIGGER
@@ -428,8 +431,6 @@ MoveNPCsAfterEvents_Lumbridge::
 	case 3, MoveNPCsAfterEvents_Lumbridge_3
 	case 4, MoveNPCsAfterEvents_Lumbridge_3
 	case 5, MoveNPCsAfterEvents_Lumbridge_4
-	case 6, MoveNPCsAfterEvents_Lumbridge_5
-	case 7, MoveNPCsAfterEvents_Lumbridge_5
 	return
 
 MoveNPCsAfterEvents_Lumbridge_2:
@@ -449,6 +450,10 @@ MoveNPCsAfterEvents_Lumbridge_3:
 	setobjectmovementtype 23, MOVEMENT_TYPE_WANDER_AROUND
 	setobjectxyperm 11, 50, 21
 	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 1, 6, 12
+	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 2, 6, 13
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
 	return
 
 MoveNPCsAfterEvents_Lumbridge_4:
@@ -466,11 +471,11 @@ MoveNPCsAfterEvents_Lumbridge_4:
 	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 12, 37, 33
 	setobjectmovementtype 12, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 1, 6, 12
+	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 2, 6, 13
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
 	return
-
-MoveNPCsAfterEvents_Lumbridge_5:
-	release
-	end
 
 
 Lumbridge_House_NPC1::
@@ -682,6 +687,9 @@ Lumbridge_Saraowl_Text_0:
 	.string "Hoo Hoo!$"
 
 Lumbridge_GENERALSTORE_CLERK_Text_0:
+	.string "Store Assistant$"
+
+Lumbridge_GENERALSTORE_CLERK_Text_1:
 	.string "Hello there and welcome to the General\n"
 	.string "Store.\p"
 	.string "What is the General Store you ask?\p"
@@ -827,6 +835,13 @@ Lumbridge_Guard_SOUTH_Text_0:
 	.string "Peale$"
 
 Lumbridge_Guard_SOUTH_Text_1:
+	.string "I'm sorry, but it's really dangerous out\n"
+	.string "there for anyone who isn't a strong\l"
+	.string "adventurer.\p"
+	.string "If you could show me a badge from the\n"
+	.string "Duke I will then allow you to pass.$"
+
+Lumbridge_Guard_SOUTH_Text_2:
 	.string "It's quite dangerous even with a\n"
 	.string "monster to protect you.\p"
 	.string "So be careful.$"
@@ -956,8 +971,8 @@ Lumbridge_House_Roddeck_Text_5:
 	.string "How is Sottlepot doing?$"
 
 Lumbridge_House_Roddeck_Text_6:
-	.string "Did you know the more Badges you have\n"
-	.string "the easier it is to control Monsters\l"
+	.string "Did you know the more badges you have\n"
+	.string "the easier it is to control monsters\l"
 	.string "obtained in a trade?\p"
 	.string "I wish I knew that before Sottlepot\n"
 	.string "went on a rampage killing Sir Vant and\l"

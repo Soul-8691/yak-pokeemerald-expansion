@@ -1,5 +1,10 @@
 Lumbridge_Castle_4_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, Lumbridge_Castle_4_MapScripts_MAP_SCRIPT_ON_LOAD
 	.byte 0
+
+Lumbridge_Castle_4_MapScripts_MAP_SCRIPT_ON_LOAD:
+	call LUMBRIDGE_GYM_MUSIC
+	return
 
 
 GYMLEADER_DUKE::

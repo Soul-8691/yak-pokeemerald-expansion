@@ -3,7 +3,22 @@ Lumbridge_Castle_3_MapScripts::
 	.byte 0
 
 Lumbridge_Castle_3_MapScripts_MAP_SCRIPT_ON_LOAD:
+	call LUMBRIDGE_GYM_MUSIC
 	goto LUMBRIDGE_GYM_STATE
+	return
+
+
+LUMBRIDGE_GYM_MUSIC::
+	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
+	case 4, LUMBRIDGE_GYM_MUSIC_2
+	case 5, LUMBRIDGE_GYM_MUSIC_3
+	return
+
+LUMBRIDGE_GYM_MUSIC_2:
+	playbgm MUS_PS_GYM, 1
+	return
+
+LUMBRIDGE_GYM_MUSIC_3:
 	return
 
 
@@ -86,6 +101,7 @@ NPC_DUKE_1_2:
 	setflag FLAG_TEMP_1
 	setvar VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 4
 	fadescreen FADE_FROM_BLACK
+	call LUMBRIDGE_GYM_MUSIC
 	goto LUMBRIDGE_GYM_STATE
 	release
 	end
@@ -147,6 +163,12 @@ LUMBRIDGE_GYM_GUARD_2_4:
 	end
 
 
+EVENTSCRIPT_LUMBRIDGECASTLE_DIARY::
+	msgbox EVENTSCRIPT_LUMBRIDGECASTLE_DIARY_Text_0
+	closemessage
+	end
+
+
 LUMBRIDGE_GYM_SIGMUND::
 	lock
 	faceplayer
@@ -190,6 +212,10 @@ LUMBRIDGE_GYM_GUARD_1_Text_3:
 
 LUMBRIDGE_GYM_GUARD_2_Text_0:
 	.string "Welcome to Lumbridge Castle.$"
+
+EVENTSCRIPT_LUMBRIDGECASTLE_DIARY_Text_0:
+	.string "It's the Duke's Diary.\p"
+	.string "Better not read it.$"
 
 LUMBRIDGE_GYM_SIGMUND_Text_0:
 	.string "Sigmund$"

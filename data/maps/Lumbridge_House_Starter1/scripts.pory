@@ -263,7 +263,16 @@ script ITEM_ROUTE12_ATTACK_POTION
     end
 }
 
+script ITEM_ROUTE12_EGG
+{
+    finditem(ITEM_EGG)
+    end
+}
 
-
+script ITEM_ROUTE12_PRAYER_POTION
+{
+    finditem(ITEM_PRAYER_POTION)
+    end
+}
 
 

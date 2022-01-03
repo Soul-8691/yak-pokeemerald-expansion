@@ -187,17 +187,7 @@ script NPC_WIZARDSTOWER_SleepingWizard
 
 
 
-script NPC_WIZARDSTOWER_Myrtle
-{
-	lock
-	faceplayer
-    namebox ("Myrtle")
-	msgbox(format("I love water types!\lBut I hate getting wet..."))
-    waitmessage
-    hidenamebox
-	release
-	end
-}
+
 
 
 
@@ -250,3 +240,63 @@ movement MOVEMENT_WIZARDSTOWER_NPC4
 {
 	face_left
 }
+
+
+
+
+
+
+
+
+//-------- TRAINERS
+
+script BATTLE_WizardsTower_Trainer_1
+{
+    trainerbattle_single(TRAINER_ROUTE2_TRAINER_5, format("Magic has an inherent advantage over melee!"),format("You seem to have an inherent advantage over me."))
+    //namebox ("CUPHOLDER")
+    msgbox(format("You seem to have an inherent advantage over me."))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_WizardsTower_Trainer_2
+{
+    trainerbattle_single(TRAINER_ROUTE2_TRAINER_5, format("Welcome to the wizard tower, now face my magic!"),format("Hope you enjoy your stay."))
+    //namebox ("CUPHOLDER")
+    msgbox(format("Hope you enjoy your stay."))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_WizardsTower_Trainer_3
+{
+    trainerbattle_single(TRAINER_ROUTE2_TRAINER_5, format("With the power of runes, humans can use magic."),format("Maybe our runes pales in comparison to your monsters."))
+    //namebox ("CUPHOLDER")
+    msgbox(format("Maybe our runes pales in comparison to your monsters."))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_WizardsTower_Trainer_4
+{
+    trainerbattle_single(TRAINER_ROUTE2_TRAINER_5, format("Hey you watch this!"),format("Took me years to learn magic, but after all these years im not sure if it was worth the time."))
+    //namebox ("CUPHOLDER")
+    msgbox(format("Took me years to learn magic, but after all these years im not sure if it was worth the time."))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_WizardsTower_Myrtle
+{
+    trainerbattle_single(TRAINER_ROUTE2_TRAINER_5, format("I love water types!"),format("But I hate getting wet..."))
+    namebox ("Myrtle")
+    msgbox(format("Water type monsters amaze me, but I cannot stand getting wet."))
+    hidenamebox
+    release
+    end
+}
+

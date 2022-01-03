@@ -6684,10 +6684,10 @@ const struct Item gItems[] =
 	
     [ITEM_LANTERN] =
     {
-        .name = _("Lantern"),
+        .name = _("LANTERN"),
         .itemId = ITEM_LANTERN,
-        .price = 200,
-        .description = sElementalPouchDesc,
+        .price = 0,
+        .description = sLanternDesc,
         .pocket = POCKET_KEY_ITEMS,
         .type = 3,
         .battleUsage = 2,
@@ -6769,7 +6769,7 @@ const struct Item gItems[] =
         .name = _("NEWCOMER MAP"),
         .itemId = ITEM_MAP,
         .price = 0,
-        .description = sCupholderDesc,
+        .description = sNewcomerMapDesc,
         .importance = 1,
         .unk19 = 1,
         .pocket = POCKET_KEY_ITEMS,
@@ -7264,6 +7264,7 @@ const struct Item gItems[] =
         .name = _("CAKE"),
         .itemId = ITEM_CAKE,
         .price = 0,
+        .holdEffectParam = 50,
         .description = sCakeDesc,
         .pocket = POCKET_ITEMS,
         .type = 2,
@@ -7275,6 +7276,7 @@ const struct Item gItems[] =
         .name = _("BREAD"),
         .itemId = ITEM_BREAD,
         .price = 0,
+        .holdEffectParam = 20,
         .description = sBreadDesc,
         .pocket = POCKET_ITEMS,
         .type = 2,
@@ -7286,30 +7288,21 @@ const struct Item gItems[] =
         .name = _("CHOC CAKE"),
         .itemId = ITEM_CHOCOLATE_CAKE,
         .price = 0,
+        .holdEffectParam = 150,
         .description = sChocolateCakeDesc,
         .pocket = POCKET_ITEMS,
         .type = 2,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 2,
     },
-    [ITEM_CHOCOLATE_SUNDAY] =
-    {
-        .name = _("CHOC SUNDAY"),
-        .itemId = ITEM_CHOCOLATE_SUNDAY,
-        .price = 0,
-        .description = sChocolateSundayDesc,
-        .pocket = POCKET_ITEMS,
-        .type = 2,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = 2,
-    },
+    
 
     //pokescape medicine
     [ITEM_BLUEBERRY_SPECIAL] =
     {
         .name = _("BLUEBERRY SP"),
         .itemId = ITEM_BLUEBERRY_SPECIAL,
-        .price = 200,
+        .price = 500,
         .description = sBlueberrySpecialDesc,
         .pocket = POCKET_ITEMS,
         .type = 1,
@@ -7318,11 +7311,22 @@ const struct Item gItems[] =
         .battleUseFunc = ItemUseInBattle_Medicine,
         .secondaryId = 0,
     },
+    [ITEM_CHOCOLATE_SUNDAY] =
+    {
+        .name = _("CHOC SUNDAY"),
+        .itemId = ITEM_CHOCOLATE_SUNDAY,
+        .price = 250,
+        .description = sChocolateSundayDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
     [ITEM_DRUNK_DRAGON] =
     {
         .name = _("DRUNK DRAGON"),
         .itemId = ITEM_DRUNK_DRAGON,
-        .price = 200,
+        .price = 250,
         .description = sDrunkDragonDesc,
         .pocket = POCKET_ITEMS,
         .type = 1,
@@ -7335,7 +7339,7 @@ const struct Item gItems[] =
     {
         .name = _("FRUIT BLAST"),
         .itemId = ITEM_FRUIT_BLAST,
-        .price = 200,
+        .price = 250,
         .description = sFruitBlastDesc,
         .pocket = POCKET_ITEMS,
         .type = 1,
@@ -7348,8 +7352,21 @@ const struct Item gItems[] =
     {
         .name = _("P.APPLE PUNCH"),
         .itemId = ITEM_PINEAPPLE_PUNCH,
-        .price = 200,
+        .price = 250,
         .description = sPineapplePunchDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = 1,
+        .battleUseFunc = ItemUseInBattle_Medicine,
+        .secondaryId = 0,
+    },
+    [ITEM_WIZARDS_BLIZZARD] =
+    {
+        .name = _("WIZZ BLIZZ"),
+        .itemId = ITEM_WIZARDS_BLIZZARD,
+        .price = 250,
+        .description = sWizardsBlizzardDesc,
         .pocket = POCKET_ITEMS,
         .type = 1,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,

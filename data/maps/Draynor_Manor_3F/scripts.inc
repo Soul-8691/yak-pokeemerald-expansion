@@ -560,7 +560,7 @@ NPC_DraynorManor_Fisherman_Text_0:
 
 NPC_DraynorManor_Fisherman_Text_1:
 	.string "Rumours say there is a rare fish called\n"
-	.string "'piranha' in this fountain$"
+	.string "piranha in this fountain.$"
 
 NPC_DraynorManor_Fisherman_Text_2:
 	.string "Hey that fish food looks ominous.\p"

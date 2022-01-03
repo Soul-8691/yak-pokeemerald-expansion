@@ -14,6 +14,13 @@ Lumbridge_Bookshelf::
 	end
 
 
+Lumbridge_Bookshelf_2::
+	lock
+	msgbox Lumbridge_Bookshelf_2_Text_0
+	release
+	end
+
+
 Lumbridge_Castle_GUARD::
 	lock
 	faceplayer
@@ -72,6 +79,7 @@ Lumbridge_Castle_COOKS_TRIGGER_1:
 	waitmessage
 	msgbox Lumbridge_Castle_COOKS_TRIGGER_Text_1
 	waitmessage
+	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_COOKS_TRIGGER2
 	waitmovement 0
 	release
@@ -253,7 +261,13 @@ Lumbridge_Castle_Hans_1::
 	waitmovement 0
 	namebox LeftDoorScript_Text_0
 	msgbox Lumbridge_Castle_Hans_1_Text_0
+	msgbox Lumbridge_Castle_Hans_1_Text_1
 	waitmessage
+	hidenamebox
+	closemessage
+	giveitem ITEM_NORMAL_POUCH, 10
+	namebox LeftDoorScript_Text_0
+	msgbox Lumbridge_Castle_Hans_1_Text_2
 	hidenamebox
 	closemessage
 	fadescreen FADE_TO_BLACK
@@ -837,8 +851,10 @@ QUEST_TRIGGER_BLOCK_COOKSASSISTANT_2:
 	playSE SE_PIN
 	applymovement 1, BLOCK_COOKSASSISTANT_1
 	waitmovement 0
+	namebox QUEST_Cooks_Assistant_STATE_Text_0
 	msgbox QUEST_TRIGGER_BLOCK_COOKSASSISTANT_Text_0
 	closemessage
+	hidenamebox
 	applymovement OBJ_EVENT_ID_PLAYER, BLOCK_COOKSASSISTANT_2
 	waitmovement 0
 	release
@@ -996,6 +1012,15 @@ Lumbridge_Bookshelf_Text_0:
 	.string "graffitied with the words Adamantmen\l"
 	.string "are noobs.$"
 
+Lumbridge_Bookshelf_2_Text_0:
+	.string "There is a Book about MvM\n"
+	.string "Championships.\p"
+	.string "MvM also known as Monster VS Monster.\p"
+	.string "Adventurers gather from all around the\n"
+	.string "world to battle it out atop the\l"
+	.string "Wilderness Volcano to see who is the\l"
+	.string "strongest of them all.$"
+
 Lumbridge_Castle_GUARD_Text_0:
 	.string "I'm on guard duty.\p"
 	.string "Please do not cause any problems.$"
@@ -1082,7 +1107,7 @@ Lumbridge_Castle_Professor_Normal_Tree_1_Text_2:
 	.string "BESTIARY you've filled out the next we\l"
 	.string "meet.\p"
 	.string "Until then...\l"
-	.string "Nice.$"
+	.string "Farewell.$"
 
 Lumbridge_Castle_Professor_Normal_Tree_2_Text_0:
 	.string "Please choose from one of these 3\n"
@@ -1105,7 +1130,14 @@ Lumbridge_Castle_Hans_1_Text_0:
 	.string "your way to the Wilderness Volcano.\p"
 	.string "The Duke is one of these 8 Leaders.\p"
 	.string "If you are interested you should pay\n"
-	.string "him a visit.\p"
+	.string "him a visit.$"
+
+Lumbridge_Castle_Hans_1_Text_1:
+	.string "Oh, before I forget take these.$"
+
+Lumbridge_Castle_Hans_1_Text_2:
+	.string "These are Pouches, you can capture\n"
+	.string "monsters with them.\p"
 	.string "Anyway, all the best on your adventure\n"
 	.string "{PLAYER}, I'm sure I'll see you\l"
 	.string "around.$"
@@ -1256,8 +1288,8 @@ CooksAssistant_Check_EGG_Text_1:
 	.string "You have the egg!$"
 
 QUEST_TRIGGER_BLOCK_COOKSASSISTANT_Text_0:
-	.string "Hey you!\n"
-	.string "Come here!$"
+	.string "Hey you there!\n"
+	.string "Come here for a minute.$"
 
 QUEST_COOKING_RANGE_COOKSASSISTANT_Text_0:
 	.string "Hey don't use my range without asking\n"

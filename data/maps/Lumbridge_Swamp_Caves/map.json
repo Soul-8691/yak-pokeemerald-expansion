@@ -347,7 +347,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_9",
       "var_value": "0",
-      "script": "DeadTree2"
+      "script": "LumbridgeSwampCaves_WallBeasts"
     },
     {
       "type": "trigger",
@@ -356,7 +356,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_A",
       "var_value": "0",
-      "script": "DeadTree2"
+      "script": "LumbridgeSwampCaves_WallBeasts"
     },
     {
       "type": "trigger",
@@ -365,7 +365,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_B",
       "var_value": "0",
-      "script": "DeadTree2"
+      "script": "LumbridgeSwampCaves_WallBeasts"
     },
     {
       "type": "trigger",
@@ -374,7 +374,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_C",
       "var_value": "0",
-      "script": "DeadTree2"
+      "script": "LumbridgeSwampCaves_WallBeasts"
     }
   ],
   "bg_events": [

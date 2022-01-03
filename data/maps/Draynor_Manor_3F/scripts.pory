@@ -361,7 +361,7 @@ script NPC_DraynorManor_Fisherman{
     {
         switch (var(VAR_POKESCAPE_ERNEST_QUEST_STATE)){ 
 		case 0: 
-			msgbox(format("Rumours say there is a rare fish called 'piranha' in this fountain"))
+			msgbox(format("Rumours say there is a rare fish called piranha in this fountain."))
 			hidenamebox
             closemessage
 			release

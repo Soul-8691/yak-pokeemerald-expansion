@@ -43,6 +43,7 @@ EVENT_HAM_DRAYNORMANOR_CRYPT::
 	lock
 	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_DraynorManorCrypt_PLAYER_1
 	waitmovement 0
+	playbgm MUS_PS_ENCOUNTER_HAM, 1
 	namebox EVENT_HAM_DRAYNORMANOR_CRYPT_Text_0
 	msgbox EVENT_HAM_DRAYNORMANOR_CRYPT_Text_1
 	hidenamebox
@@ -98,6 +99,8 @@ EVENT_HAM_DRAYNORMANOR_CRYPT::
 	fadescreen FADE_TO_BLACK
 	removeobject 1
 	setflag FLAG_TEMP_2
+	savebgm MUS_DUMMY
+	fadedefaultbgm
 	waitmovement 0
 	delay 16
 	fadescreen FADE_FROM_BLACK

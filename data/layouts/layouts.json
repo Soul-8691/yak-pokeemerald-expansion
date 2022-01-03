@@ -5185,7 +5185,7 @@
       "id": "LAYOUT_ROUTE1_HOUSE_1",
       "name": "Route1_House_1_Layout",
       "width": 10,
-      "height": 12,
+      "height": 14,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Route1_House_1/border.bin",

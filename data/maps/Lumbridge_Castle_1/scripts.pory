@@ -1,6 +1,32 @@
 mapscripts Lumbridge_Castle_1_MapScripts {
+
+	MAP_SCRIPT_ON_LOAD {
+        call(LUMBRIDGE_GYM_MUSIC)
+    }
     MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:TryHideHans
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -177,7 +203,7 @@ script LUMBRIDGE_GYM_TRAINER_2 {
         case 5:
 			lock
 			faceplayer
-            msgbox(format("CUPHOLDER"))
+            msgbox(format("You have some pretty cute monsters, but my rabbit is cuter!"))
             release
 			end
 	}
@@ -196,7 +222,7 @@ script LUMBRIDGE_GYM_TRAINER_3 {
         case 5:
 			lock
 			faceplayer
-            msgbox(format("CUPHOLDER"))
+            msgbox(format("Oh wow!\nWhere do you train?\pMaybe I should train there!"))
             release
 			end
 	}
@@ -214,7 +240,7 @@ script LUMBRIDGE_GYM_TRAINER_4 {
         case 5:
 			lock
 			faceplayer
-            msgbox(format("CUPHOLDER"))
+            msgbox(format("I guess you were ready to face the duke."))
             release
 			end
 	}

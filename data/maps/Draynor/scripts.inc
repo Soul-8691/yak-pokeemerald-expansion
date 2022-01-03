@@ -205,6 +205,7 @@ Draynor_Guard3::
 
 
 Draynor_FORTUNATO::
+	faceplayer
 	namebox Draynor_FORTUNATO_Text_0
 	msgbox Draynor_FORTUNATO_Text_1
 	hidenamebox
@@ -234,18 +235,6 @@ GeneralStoreDraynor:
     .2byte ITEM_NONE
     release
     end
-
-Draynor_Morgan::
-	lock
-	faceplayer
-	namebox Draynor_Morgan_Text_0
-	msgbox Draynor_Morgan_Text_1
-	msgbox Draynor_Morgan_Text_2
-	msgbox Draynor_Morgan_Text_3
-	hidenamebox
-	release
-	end
-
 
 Draynor_TREE::
 	compare VAR_POKESCAPE_DRAYNOR_GUARD_STATE, 0
@@ -290,6 +279,58 @@ Movement_DraynorGuardTree_3:
 	walk_up
 	face_down
 	step_end
+
+NPC_Draynor_Woman_1::
+	lock
+	faceplayer
+	namebox NPC_Draynor_Woman_1_Text_0
+	msgbox NPC_Draynor_Woman_1_Text_1
+	hidenamebox
+	release
+	end
+
+
+Draynor_Morgan::
+	lock
+	faceplayer
+	namebox Draynor_Morgan_Text_0
+	msgbox Draynor_Morgan_Text_1
+	msgbox Draynor_Morgan_Text_2
+	msgbox Draynor_Morgan_Text_3
+	hidenamebox
+	release
+	end
+
+
+NPC_Draynor_Morgans_Wife::
+	lock
+	faceplayer
+	namebox NPC_Draynor_Morgans_Wife_Text_0
+	msgbox NPC_Draynor_Morgans_Wife_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_Draynor_Mugger::
+	lock
+	faceplayer
+	namebox NPC_Draynor_Mugger_Text_0
+	msgbox NPC_Draynor_Mugger_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_Draynor_WiseOldMan::
+	lock
+	faceplayer
+	namebox NPC_Draynor_WiseOldMan_Text_0
+	msgbox NPC_Draynor_WiseOldMan_Text_1
+	hidenamebox
+	release
+	end
+
 
 HAM_EVENT_Draynor_Text_0:
 	.string "Ariane$"
@@ -365,22 +406,6 @@ Generalstore_Draynor_Clerk_Text_0:
 Generalstore_Draynor_Clerk_Text_1:
 	.string "Thank you, come again!$"
 
-Draynor_Morgan_Text_0:
-	.string "Morgan$"
-
-Draynor_Morgan_Text_1:
-	.string "There's a Vampyre in Draynor Mannor but\n"
-	.string "no one believes me..$"
-
-Draynor_Morgan_Text_2:
-	.string "What is that?!\p"
-	.string "You defeated the Vampyre in a battle?\p"
-	.string "Well thanks for that, please accept\n"
-	.string "this as a gift.$"
-
-Draynor_Morgan_Text_3:
-	.string "Thank you again.$"
-
 Draynor_TREE_Text_0:
 	.string "???$"
 
@@ -399,3 +424,53 @@ Draynor_TREE_Text_2:
 	.string "Sigh...\p"
 	.string "Oh well, I guess I should better get\n"
 	.string "back to work..$"
+
+NPC_Draynor_Woman_1_Text_0:
+	.string "Woman$"
+
+NPC_Draynor_Woman_1_Text_1:
+	.string "If you follow this road south, it will\n"
+	.string "lead you to the Wizards' Tower.\p"
+	.string "Make sure to be all healed up before\n"
+	.string "trekking there.$"
+
+Draynor_Morgan_Text_0:
+	.string "Morgan$"
+
+Draynor_Morgan_Text_1:
+	.string "There's a Vampyre in Draynor Mannor but\n"
+	.string "no one believes me..$"
+
+Draynor_Morgan_Text_2:
+	.string "What is that?!\p"
+	.string "You defeated the Vampyre in a battle?\p"
+	.string "Well thanks for that, please accept\n"
+	.string "this as a gift.$"
+
+Draynor_Morgan_Text_3:
+	.string "Thank you again.$"
+
+NPC_Draynor_Morgans_Wife_Text_0:
+	.string "Morgans Wife$"
+
+NPC_Draynor_Morgans_Wife_Text_1:
+	.string "All my husband thinks of is slaying\n"
+	.string "vampyres these days…\p"
+	.string "But I think he is trying to slay our\n"
+	.string "marriage instead.$"
+
+NPC_Draynor_Mugger_Text_0:
+	.string "Mugger$"
+
+NPC_Draynor_Mugger_Text_1:
+	.string "Draynor village is the town of farmers\n"
+	.string "and vampyres.\p"
+	.string "I am not sure why I decided to be a\n"
+	.string "mugger here but its a job somebody has\l"
+	.string "to take.$"
+
+NPC_Draynor_WiseOldMan_Text_0:
+	.string "Wise Old Man$"
+
+NPC_Draynor_WiseOldMan_Text_1:
+	.string "…$"

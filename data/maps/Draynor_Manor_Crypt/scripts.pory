@@ -45,6 +45,7 @@ script EVENT_HAM_DRAYNORMANOR_CRYPT{
     lock
     applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_DraynorManorCrypt_PLAYER_1)
     waitmovement(0)
+    playbgm (MUS_PS_ENCOUNTER_HAM, 1)
     namebox("COUNT DRAYNOR")
     msgbox(format("You dare enter my home and cause a racket!?\pI will not tolerate this!"))
     hidenamebox
@@ -102,7 +103,10 @@ script EVENT_HAM_DRAYNORMANOR_CRYPT{
     fadescreen(FADE_TO_BLACK)
     removeobject(COUNTDRAYNOR_ID)
     setflag(FLAG_TEMP_2)
+    savebgm(MUS_DUMMY)
+	fadedefaultbgm
     waitmovement(0)
+    
     delay(16)
     fadescreen(FADE_FROM_BLACK)
     setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE,8)

@@ -55,9 +55,11 @@ script NPC_DUCK
 {
 	lock
 	faceplayer
+    namebox ("Duck")
     playmoncry(SPECIES_PSYDUCK, 0)
 	msgbox(format("Quack!"))
     waitmoncry
+    hidenamebox
 	release
 	end
 }
@@ -66,9 +68,11 @@ script NPC_RAT
 {
 	lock
 	faceplayer
+    namebox ("Rat")
     playmoncry(SPECIES_RATTATA, 0)
 	msgbox(format("SKREEK!"))
     waitmoncry
+    hidenamebox
 	release
 	end
 }
@@ -77,9 +81,11 @@ script NPC_SHEEP
 {
 	lock
 	faceplayer
+    namebox ("Sheep")
     playmoncry(SPECIES_MAREEP, 0)
 	msgbox(format("Baaa!"))
     waitmoncry
+    hidenamebox
 	release
 	end
 }
@@ -88,9 +94,11 @@ script NPC_COW
 {
 	lock
 	faceplayer
+    namebox ("Cow")
     playmoncry(SPECIES_MILTANK, 0)
 	msgbox(format("Mooo!"))
     waitmoncry
+    hidenamebox
 	release
 	end
 }
@@ -146,11 +154,20 @@ script NPC_FISHERMAN_1
 script BLOCK_ROUTE1_FARMER {
     lock 
     faceplayer
+    namebox("Farmer")
     if (!flag(FLAG_BADGE01_GET)){
         msgbox(format("Some Goblins scared my cows out of their pens.\pNow I'm struggling to get them back in!"))
+        hidenamebox
+        closemessage
+        release
+        end
     }
     else{
         msgbox(format("I finally got my Cows out of the way."))
+        hidenamebox
+        closemessage
+        release
+        end
     }
     release
     end
@@ -204,8 +221,9 @@ script Frogface_Route1_Battle
 script Trainer1_Route1_Battle
 {
     trainerbattle_single(TRAINER_RSN_ROUTE1, "You look like a noob!","Maybe I'm the noob..")
-    namebox ("RSN")
+    namebox ("CUPHOLDER")
     msgbox(format("The mill is up ahead.\pI heard you can get some good flour there."))
+    closemessage
     hidenamebox
     release
     end
@@ -213,7 +231,10 @@ script Trainer1_Route1_Battle
 
 script MudbeardBattle{
     trainerbattle_single(TRAINER_GOBLIN_3_ROUTE1,"Go away smelly human!","Leave me alone!" )
+    namebox ("Mudbeard")
     msgbox("Smelly human!")
+    closemessage
+    hidenamebox
     release
     
 }
@@ -308,7 +329,7 @@ script EvilChickenBattleScript{
 
 
 
-
+//ADD OPTIONAL SCRIPT LATER SHOWING ERNEST AN ERNEST CHICKEN. HIS SON!
 script ErnestAndVeronica {
     switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
             case 0: 
@@ -320,13 +341,15 @@ script ErnestAndVeronica {
                 playmoncry(SPECIES_TORCHIC, 0)
                 namebox("Ernest")
                 msgbox(format("Bwak bwak bwwwaaaakk!"))
-                hidenamebox
                 waitmoncry
+                hidenamebox
+                closemessage
                 waitmovement(0)
                 applymovement(6, HAM_Movement7_6)
                 namebox("Veronica")
                 msgbox(format("What do you mean a scientist turned you into a chicken!?\pYou were meant to get directions!"))
                 hidenamebox
+                closemessage
                 waitmovement(0)
                 //applymovement(32, HAM_Movement7_7)
                 playmoncry(SPECIES_TORCHIC, 0)
@@ -335,20 +358,22 @@ script ErnestAndVeronica {
                 waitmoncry
                 playmoncry(SPECIES_TORCHIC, 0)
                 msgbox(format("Bwak bwakbwak!"))
-                hidenamebox
                 waitmoncry
+                hidenamebox
+                closemessage
                 waitmovement(0)
                 applymovement(6, HAM_Movement7_6)
                 namebox("Veronica")
                 msgbox(format("Well go get him to change you back!\pI don't want to be engaged to a chicken!\pThat's just fowl..."))
                 hidenamebox
+                closemessage
                 waitmovement(0)
                 //applymovement(32, HAM_Movement7_7)
                 playmoncry(SPECIES_COMBUSKEN, 0)
                 namebox("Ernest")
                 msgbox(format("Bwak..."))
-                hidenamebox
                 waitmoncry
+                hidenamebox
                 closemessage
                 waitmovement(0)
                 release
@@ -356,14 +381,26 @@ script ErnestAndVeronica {
             case 5:
             case 6: 
             case 7: 
+                namebox("Ernest")
+                msgbox(format("Professor Oddenstein made me human again!"))
+                hidenamebox
+                closemessage
+                namebox("Veronica")
+                msgbox(format("I think I liked you better when you were a chicken."))
+                hidenamebox
+                closemessage
+                release
+                end
             case 8: 
             case 9: 
-                namebox("Ernest")
-                msgbox(format("CUPHOLDER"))
-                hidenamebox
                 namebox("Veronica")
-                msgbox(format("CUPHOLDER"))
+                msgbox(format("Did you ever end up getting some directions?"))
                 hidenamebox
+                closemessage
+                namebox("Ernest")
+                msgbox(format("Oh no!\pI completely forgot!"))
+                hidenamebox
+                closemessage
                 release
                 end
     }

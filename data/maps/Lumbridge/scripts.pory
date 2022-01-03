@@ -64,7 +64,10 @@ script Lumbridge_GENERALSTORE_CLERK
 {
 	lock
 	faceplayer
+	namebox("Store Assistant")
 	msgbox(format("Hello there and welcome to the General Store.\pWhat is the General Store you ask?\pYou did not ask?\pWell, I will tell you anyway because I like your face!\pThe general store is where we sell items TO YOU for a small insignificant fee.\pYou are about to go on an adventure?\pWell you better get to the General Store to buy Buckets and other items that will help you out!\pAt the General Store!"))
+	hidenamebox
+	closemessage
 	release
 	end
 }
@@ -307,7 +310,7 @@ script Lumbridge_Guard_SOUTH
 				lock
 				faceplayer
 				namebox ("Peale")
-				msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't an adventurer."))
+				msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't a strong adventurer.\pIf you could show me a badge from the Duke I will then allow you to pass."))
 				hidenamebox
 				release
 				end
@@ -397,7 +400,7 @@ script Lumbridge_Guard_SOUTH_TRIGGER{
 				applymovement(12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_1)
 				waitmovement(0)
 				namebox ("Peale")
-				msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't an adventurer."))
+				msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't a strong adventurer.\pIf you could show me a badge from the Duke I will then allow you to pass."))
 				waitmessage 
 				hidenamebox
 				applymovement(OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_SOUTH_TRIGGER)
@@ -454,6 +457,12 @@ script MoveNPCsAfterEvents_Lumbridge{
 
 				setobjectxyperm(11, 50, 21)
 				setobjectmovementtype(11,MOVEMENT_TYPE_FACE_DOWN)
+
+				setobjectxyperm(1, 6, 12)
+				setobjectmovementtype(14,MOVEMENT_TYPE_FACE_DOWN)
+
+				setobjectxyperm(2, 6, 13)
+				setobjectmovementtype(2,MOVEMENT_TYPE_FACE_UP)
 			case 5:
 				setobjectxyperm(14, 41, 20)
 				setobjectmovementtype(14,MOVEMENT_TYPE_FACE_DOWN)
@@ -475,10 +484,13 @@ script MoveNPCsAfterEvents_Lumbridge{
 
 				setobjectxyperm(12, 37, 33)
         		setobjectmovementtype(12,MOVEMENT_TYPE_FACE_DOWN)
-			case 6: 
-            case 7: 
-                release
-                end
+
+				setobjectxyperm(1, 6, 12)
+				setobjectmovementtype(14,MOVEMENT_TYPE_FACE_DOWN)
+
+				setobjectxyperm(2, 6, 13)
+				setobjectmovementtype(2,MOVEMENT_TYPE_FACE_UP)
+
             }
 }
         
@@ -713,7 +725,7 @@ script Lumbridge_House_Roddeck
 		lock
 		faceplayer
 		namebox ("Roddeck")
-		msgbox(format("Did you know the more Badges you have the easier it is to control Monsters obtained in a trade?\pI wish I knew that before Sottlepot went on a rampage killing Sir Vant and an adventurer.."))
+		msgbox(format("Did you know the more badges you have the easier it is to control monsters obtained in a trade?\pI wish I knew that before Sottlepot went on a rampage killing Sir Vant and an adventurer.."))
 		hidenamebox
 	}
 

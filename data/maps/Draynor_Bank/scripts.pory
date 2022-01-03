@@ -1,0 +1,57 @@
+mapscripts Draynor_Bank_MapScripts {
+  
+  
+}
+
+
+
+
+
+script NPC_DraynorBank_Qutiedoll{
+	lock
+    namebox("Qutiedoll")
+	msgbox(format("How do you get behind the bank booth?"))
+    hidenamebox
+    release
+	end
+}
+
+script NPC_DraynorBank_Purepker895{
+	lock
+	faceplayer
+    namebox("Purepker895")
+	msgbox(format("…"))
+    hidenamebox
+    release
+	end
+}
+
+script NPC_DraynorBank_1337sp34kr{
+	lock
+	faceplayer
+    namebox("1337sp34kr")
+	msgbox(format("S331ing N4ts!"))
+    hidenamebox
+    release
+	end
+}
+
+script NPC_DraynorBank_Elfinlocks{
+	lock
+	faceplayer
+    namebox("Elfinlocks")
+	msgbox(format("Buying 2k nats, no noob offers!"))
+    hidenamebox
+    release
+	end
+}
+
+script NPC_DraynorBank_PilloryGuard{
+	lock
+	faceplayer
+    namebox("Pillory Guard")
+	msgbox(format("You would be best to watch yourself.\pOtherwise you're in for da cage!"))
+    hidenamebox
+    release
+	end
+}

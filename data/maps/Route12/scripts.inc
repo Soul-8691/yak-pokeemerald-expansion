@@ -11,8 +11,10 @@ Gillie_Groats::
 	goto_if_eq Gillie_Groats_1
 	lock
 	faceplayer
+	namebox Gillie_Groats_Text_0
 	msgbox Gillie_Groats_Text_4
 	pokemart GroatsShop
+	hidenamebox
 	release
 	end
 
@@ -22,8 +24,10 @@ Gillie_Groats_1:
 	goto_if_eq Gillie_Groats_4
 	lock
 	faceplayer
+	namebox Gillie_Groats_Text_0
 	msgbox Gillie_Groats_Text_4
 	pokemart GroatsShop
+	hidenamebox
 	release
 	end
 
@@ -35,9 +39,13 @@ Gillie_Groats_4:
 	applymovement 23, ROUTE12_GILLIEGROATS_1
 	waitmovement 0
 	msgbox Gillie_Groats_Text_2
-	giveitem ITEM_TOP_QUALITY_MILK
 	hidenamebox
+	closemessage
+	giveitem ITEM_TOP_QUALITY_MILK
+	namebox Gillie_Groats_Text_0
 	msgbox Gillie_Groats_Text_3
+	hidenamebox
+	closemessage
 	release
 	end
 
@@ -132,17 +140,16 @@ NPC_LUMBRIDGE_CHICKEN_4:
 
 
 SIGN_ROUTE12::
-	lock
 	msgbox SIGN_ROUTE12_Text_0
-	release
 	end
 
 
 BLOCK_Route12_Farmer::
-	lock
 	faceplayer
-	msgbox BLOCK_Route12_Farmer_Text_0
-	release
+	namebox BLOCK_Route12_Farmer_Text_0
+	msgbox BLOCK_Route12_Farmer_Text_1
+	hidenamebox
+	closemessage
 	end
 
 
@@ -198,57 +205,112 @@ ChickenBattle_1:
 
 GoblinBattle4::
 	trainerbattle_single TRAINER_GOBLIN_4_ROUTE12, GoblinBattle4_Text_0, GoblinBattle4_Text_1
-	msgbox GoblinBattle4_Text_1
-	release
-	return
+	namebox GoblinBattle4_Text_2
+	msgbox GoblinBattle4_Text_3
+	hidenamebox
+	closemessage
+	end
 
 
 GoblinBattle5::
 	trainerbattle_single TRAINER_GOBLIN_5_ROUTE12, GoblinBattle5_Text_0, GoblinBattle5_Text_1
+	namebox GoblinBattle5_Text_2
 	msgbox GoblinBattle5_Text_1
-	release
-	return
+	hidenamebox
+	closemessage
+	end
 
 
 GoblinBattle6::
 	trainerbattle_single TRAINER_GOBLIN_6_ROUTE12, GoblinBattle6_Text_0, GoblinBattle6_Text_1
+	namebox GoblinBattle6_Text_2
 	msgbox GoblinBattle6_Text_1
-	release
-	return
+	hidenamebox
+	closemessage
+	end
 
 
-GoblinBattle7::
-	trainerbattle_single TRAINER_GOBLIN_7_ROUTE12, GoblinBattle7_Text_0, GoblinBattle7_Text_1
-	msgbox GoblinBattle7_Text_1
-	release
-	return
+BATTLE_ROUTE12_SMELLYBACK::
+	trainerbattle_single TRAINER_GOBLIN_7_ROUTE12, BATTLE_ROUTE12_SMELLYBACK_Text_0, BATTLE_ROUTE12_SMELLYBACK_Text_1
+	namebox BATTLE_ROUTE12_SMELLYBACK_Text_2
+	msgbox BATTLE_ROUTE12_SMELLYBACK_Text_1
+	hidenamebox
+	closemessage
+	end
 
 
-RsnBattleRoute12::
-	trainerbattle_single TRAINER_RSN_ROUTE12, RsnBattleRoute12_Text_0, RsnBattleRoute12_Text_1
-	msgbox RsnBattleRoute12_Text_1
-	release
-	return
+BATTLE_ROUTE12_TRAINER_1::
+	trainerbattle_single TRAINER_RSN_ROUTE12, BATTLE_ROUTE12_TRAINER_1_Text_0, BATTLE_ROUTE12_TRAINER_1_Text_1
+	namebox BATTLE_ROUTE12_TRAINER_1_Text_2
+	msgbox BATTLE_ROUTE12_TRAINER_1_Text_1
+	hidenamebox
+	closemessage
+	end
 
 
-Route12CookingGoblin::
-	msgbox Route12CookingGoblin_Text_0
-	release
-	return
-
-
-Route12Farmer::
+NPC_ROUTE12_Goblin_1::
+	lock
 	faceplayer
-	msgbox Route12Farmer_Text_0
+	namebox NPC_ROUTE12_Goblin_1_Text_0
+	msgbox NPC_ROUTE12_Goblin_1_Text_1
+	hidenamebox
+	closemessage
 	release
-	return
+	end
 
 
-Route12MilkLady::
+NPC_ROUTE12_Farmer::
+	lock
 	faceplayer
-	msgbox Route12MilkLady_Text_0
+	namebox BLOCK_Route12_Farmer_Text_0
+	msgbox NPC_ROUTE12_Farmer_Text_0
+	hidenamebox
+	closemessage
 	release
-	return
+	end
+
+
+NPC_ROUTE12_Seth_Groats::
+	lock
+	faceplayer
+	namebox NPC_ROUTE12_Seth_Groats_Text_0
+	msgbox NPC_ROUTE12_Seth_Groats_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+NPC_DOG::
+	lock
+	faceplayer
+	playmoncry SPECIES_GROWLITHE, 0
+	msgbox NPC_DOG_Text_0
+	waitmoncry
+	release
+	end
+
+
+NPC_ROUTE12_Fisherman::
+	lock
+	faceplayer
+	namebox NPC_ROUTE12_Fisherman_Text_0
+	msgbox NPC_ROUTE12_Fisherman_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+NPC_ROUTE12_Goblin_2::
+	lock
+	faceplayer
+	namebox NPC_ROUTE12_Goblin_1_Text_0
+	msgbox NPC_ROUTE12_Goblin_2_Text_0
+	hidenamebox
+	closemessage
+	release
+	end
 
 
 Gillie_Groats_Text_0:
@@ -300,7 +362,7 @@ NPC_LUMBRIDGE_CHICKEN_Text_1:
 
 NPC_LUMBRIDGE_CHICKEN_Text_2:
 	.string "You get into a staring contest with the\n"
-	.string "chicken..$"
+	.string "chicken…$"
 
 NPC_LUMBRIDGE_CHICKEN_Text_3:
 	.string "{PAUSE 15}… {PAUSE 15}… {PAUSE 15}… {PAUSE 15}{PLAY_SE SE_PIN}!$"
@@ -317,6 +379,9 @@ SIGN_ROUTE12_Text_0:
 	.string "EAST to AL KHAIRD$"
 
 BLOCK_Route12_Farmer_Text_0:
+	.string "Farmer$"
+
+BLOCK_Route12_Farmer_Text_1:
 	.string "Urgh, I wish the goblins would stop\n"
 	.string "messing with my sheep!$"
 
@@ -337,6 +402,13 @@ GoblinBattle4_Text_1:
 	.string "Human strong.\n"
 	.string "This now Goblin and human home.$"
 
+GoblinBattle4_Text_2:
+	.string "Wormtongue$"
+
+GoblinBattle4_Text_3:
+	.string "Human strong.\n"
+	.string "This now goblin and human home.$"
+
 GoblinBattle5_Text_0:
 	.string "Human weak.\n"
 	.string "Feethands show why.$"
@@ -344,6 +416,9 @@ GoblinBattle5_Text_0:
 GoblinBattle5_Text_1:
 	.string "Feethands weak.\n"
 	.string "Human show Feethands why.$"
+
+GoblinBattle5_Text_2:
+	.string "Feethands$"
 
 GoblinBattle6_Text_0:
 	.string "Human homes makes for weak monster.\p"
@@ -353,31 +428,61 @@ GoblinBattle6_Text_1:
 	.string "Strong monsters in human homes it\n"
 	.string "seems.$"
 
-GoblinBattle7_Text_0:
+GoblinBattle6_Text_2:
+	.string "Eyemonger$"
+
+BATTLE_ROUTE12_SMELLYBACK_Text_0:
 	.string "Big high war god say human go home.$"
 
-GoblinBattle7_Text_1:
+BATTLE_ROUTE12_SMELLYBACK_Text_1:
 	.string "Big high war god calls for rematch.\p"
 	.string "Later...\n"
 	.string "Much later...$"
 
-RsnBattleRoute12_Text_0:
+BATTLE_ROUTE12_SMELLYBACK_Text_2:
+	.string "Smellyback$"
+
+BATTLE_ROUTE12_TRAINER_1_Text_0:
 	.string "You look like a noob, even I could beat\n"
 	.string "you!$"
 
-RsnBattleRoute12_Text_1:
+BATTLE_ROUTE12_TRAINER_1_Text_1:
 	.string "Well drat.\p"
 	.string "Maybe I should've looked for rarer\n"
 	.string "monsters around here first.$"
 
-Route12CookingGoblin_Text_0:
-	.string "Go away human.\pGoblin cooking.$"
+BATTLE_ROUTE12_TRAINER_1_Text_2:
+	.string "CUPHOLDER$"
 
-Route12Farmer_Text_0:
-	.string "Here you can plant crops and harvest\n"
-	.string "them later!$"
+NPC_ROUTE12_Goblin_1_Text_0:
+	.string "Goblin$"
 
-Route12MilkLady_Text_0:
-	.string "If you need milk feel free to milk the\n"
-	.string "cows.\p"
-	.string "Make sure you have an empty bucket!$"
+NPC_ROUTE12_Goblin_1_Text_1:
+	.string "Go away human.\p"
+	.string "Goblin cooking.$"
+
+NPC_ROUTE12_Farmer_Text_0:
+	.string "Did you know that you can plant crops\n"
+	.string "and harvest them later.$"
+
+NPC_ROUTE12_Seth_Groats_Text_0:
+	.string "Seth Groats$"
+
+NPC_ROUTE12_Seth_Groats_Text_1:
+	.string "Who are you and what are you doing in my\n"
+	.string "house!?\p"
+	.string "Get out and take those disgusting\n"
+	.string "monsters with you!$"
+
+NPC_DOG_Text_0:
+	.string "WOOF!$"
+
+NPC_ROUTE12_Fisherman_Text_0:
+	.string "Fisherman$"
+
+NPC_ROUTE12_Fisherman_Text_1:
+	.string "We once had a wooden bridge here, but\n"
+	.string "some firemakers burnt it down…$"
+
+NPC_ROUTE12_Goblin_2_Text_0:
+	.string "Me fishing.$"

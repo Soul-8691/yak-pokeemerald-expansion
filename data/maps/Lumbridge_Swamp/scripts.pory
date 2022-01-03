@@ -8,7 +8,7 @@ script BLOCK_LumbridgeSwamp_HAM
 	lock
     applymovement(9, MOVEMENT_LUMBRIDGESWAMP_PINKMAN)
     namebox ("Pink Man")
-	msgbox(format("Oh come on!\pNewcommer map, more like trash map!"))
+	msgbox(format("Oh come on!\pNewcomer map, more like trash map!"))
     hidenamebox
     waitmovement(0)
     applymovement(4, MOVEMENT_LUMBRIDGESWAMP_PINKGIRL_1)
@@ -17,7 +17,7 @@ script BLOCK_LumbridgeSwamp_HAM
     waitmovement(0)
 	hidenamebox
     namebox ("Pink Man")
-	msgbox(format("....."))
+	msgbox(format("…"))
 	hidenamebox
     applymovement(4, MOVEMENT_LUMBRIDGESWAMP_PINKGIRL_2)
     waitmovement(0)
@@ -44,37 +44,46 @@ movement MOVEMENT_LUMBRIDGESWAMP_PINKGIRL_2{
 
 
 
-
-
-
-
-
-script LumSwampRsnBattle{
-    trainerbattle_single(TRAINER_RSN_LUM_SWAMP, "You look like a noob!","Maybe I'm the noob..")
-    msgbox(format("The mill is up ahead. I heard you can get some good wheat there."))
-    release
-}
-
-script LumSwampSkeletonBattle{
-    trainerbattle_single(TRAINER_SKELETON_LUM_SWAMP, "You look like a noob!","Maybe I'm the noob..")
-    msgbox(format("The mill is up ahead. I heard you can get some good wheat there."))
-    release
-}
-
-script LumSwampMuggerBattle{
-    trainerbattle_single(TRAINER_MUGGER_LUM_SWAMP, "You look like a noob!","Maybe I'm the noob..")
-    msgbox(format("The mill is up ahead. I heard you can get some good wheat there."))
-    release
+script BATTLE_LumbridgeSwamp_TRAINER_1{
+	trainerbattle_single(TRAINER_RSN_LUM_SWAMP, format("This is me swamp!"),format("Get out of me swamp!"))
+	namebox("Slimethighs")
+	msgbox(format("Me do not like you."))
+	hidenamebox
+	closemessage
+	end
 }
 
 
-
-script LumSwampRat{
-    lock
-    faceplayer
-    msgbox("REEEEEE!")
-    release
+script BATTLE_LumbridgeSwamp_TRAINER_2{
+	trainerbattle_single(TRAINER_SKELETON_LUM_SWAMP, format("Rattle, rattle!"),format("Rattle…"))
+	namebox("Brittlebones")
+	msgbox(format("Rattle…"))
+	hidenamebox
+	closemessage
+	end
 }
+
+
+script BATTLE_LumbridgeSwamp_TRAINER_3{
+	trainerbattle_single(TRAINER_MUGGER_LUM_SWAMP, format("Stay still and nobody gets hurt!"),format("My feelings got hurt by your victory."))
+	namebox("CUPHOLDER")
+	msgbox(format("My feelings got hurt by your victory."))
+	hidenamebox
+	closemessage
+	end
+}
+
+script BATTLE_LumbridgeSwamp_TRAINER_4{
+	trainerbattle_single(TRAINER_LUM_SWAMP_GRASSTEETH, format("Did pink humans say to find me?"),format("Pink humans chase relentless.\pMe scared."))
+	namebox("Grassteeth")
+	msgbox(format("Pink humans chase relentless.\pMe scared."))
+	hidenamebox
+	closemessage
+	end
+}
+
+
+
 
 script LumSwampSign{
     msgbox(format("WARNING: Goblins below!"), MSGBOX_SIGN)
@@ -96,16 +105,19 @@ script LUMBRIDGESWAMP_CANDLESELLER
 	msgbox(format("I wouldn't go down there without a light source.\pIt's dangerous!"))
     checkitem(ITEM_LANTERN, 1)
         if (!var(VAR_RESULT)){
-            msgbox(format("Look.. If you are serious about going down there, take this."))
+            msgbox(format("But…{PAUSE 15}…{PAUSE 15}…\pIf you are serious about going down there, take this."))
             giveitem(ITEM_LANTERN)
             msgbox(format("Be careful down there."))
+            closemessage
             release
             end
         }
         else {
+            closemessage
             release
             end
         }
+    closemessage
 	release
 	end
 }

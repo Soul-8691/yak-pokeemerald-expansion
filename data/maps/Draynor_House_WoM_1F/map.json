@@ -2,7 +2,7 @@
   "id": "MAP_DRAYNOR_HOUSE_WO_M_1F",
   "name": "Draynor_House_WoM_1F",
   "layout": "LAYOUT_DRAYNOR_HOUSE_WO_M_1F",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_DRAYNOR",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_Draynor_WiseOldMan",
       "flag": "0"
     }
   ],

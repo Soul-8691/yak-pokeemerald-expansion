@@ -6711,10 +6711,10 @@ const struct Item gItems[] =
 	
     [ITEM_SMALL_NET] =
     {
-        .name = _("Small Net"),
+        .name = _("SMALL NET"),
         .itemId = ITEM_SMALL_NET,
         .price = 0,
-        .description = sOldRodDesc,
+        .description = sSmallNetDesc,
         .importance = 1,
         .unk19 = 1,
         .pocket = POCKET_KEY_ITEMS,
@@ -6723,12 +6723,12 @@ const struct Item gItems[] =
         .secondaryId = OLD_ROD,
     },
 	
-    [ITEM_LARGE_NET] =
+    [ITEM_BIG_NET] =
     {
-        .name = _("Large Net"),
-        .itemId = ITEM_LARGE_NET,
+        .name = _("BIG NET"),
+        .itemId = ITEM_BIG_NET,
         .price = 0,
-        .description = sGoodRodDesc,
+        .description = sBigNetDesc,
         .importance = 1,
         .unk19 = 1,
         .pocket = POCKET_KEY_ITEMS,
@@ -6739,10 +6739,10 @@ const struct Item gItems[] =
 	
     [ITEM_DRAGON_NET] =
     {
-        .name = _("Dragon Net"),
+        .name = _("DRAGON NET"),
         .itemId = ITEM_DRAGON_NET,
         .price = 0,
-        .description = sSuperRodDesc,
+        .description = sDragonNetDesc,
         .importance = 1,
         .unk19 = 1,
         .pocket = POCKET_KEY_ITEMS,

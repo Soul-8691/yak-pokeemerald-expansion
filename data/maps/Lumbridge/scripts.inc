@@ -767,9 +767,8 @@ Lumbridge_IRONMAN_PAUL_Text_1:
 	.string "I wonder when he'll come home.$"
 
 Lumbridge_IMP_Text_0:
-	.string "You found an Imp!\p"
-	.string "COR'BLIMEY MATE!\l"
-	.string "It tried to steal your pouches.$"
+	.string "-CUPHOLDER-\p"
+	.string "-IMP CATCHER QUEST-$"
 
 Lumbridge_BANKER_Text_0:
 	.string "I'm waiting for my BF to finish work.$"

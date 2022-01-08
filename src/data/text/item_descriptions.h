@@ -2142,6 +2142,21 @@ static const u8 sLanternDesc[] = _(
     "dark places.\n"
     "");
 
+static const u8 sSmallNetDesc[] = _(
+    "Use by any body of\n"
+    "water to fish for\n"
+    "wild MONSTERS.");
+
+static const u8 sBigNetDesc[] = _(
+    "A decent fishing\n"
+    "net for catching\n"
+    "wild MONSTERS.");
+
+static const u8 sDragonNetDesc[] = _(
+    "The best fishing\n"
+    "net for catching\n"
+    "wild MONSTERS.");
+
 //TREASURES------
 
 static const u8 sFlaxDesc[] = _(
@@ -2175,6 +2190,7 @@ static const u8 sPartyHatDesc[] = _(
     "a high price.");
 
 //-----------
+
 
 
 

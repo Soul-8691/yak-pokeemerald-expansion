@@ -181,6 +181,7 @@ script NPC_LUMBRIDGE_CHICKEN{
 script SIGN_ROUTE12
 {
 	msgbox(format("NORTH to VARROCK\pWEST to LUMBRIDGE\pEAST to AL KHAIRD"))
+	closemessage
 	end
 }
 

@@ -141,6 +141,7 @@ NPC_LUMBRIDGE_CHICKEN_4:
 
 SIGN_ROUTE12::
 	msgbox SIGN_ROUTE12_Text_0
+	closemessage
 	end
 
 

@@ -35,7 +35,7 @@ Text_DEFEAT_Maggie:
 
 Scripts_DEFEATED_Maggie:
 	msgbox Text_DIALOG_2_Maggie, MSGBOX_NPC
-	giveitem ITEM_RARE_CANDY, 1
+	giveitem ITEM_PURPLE_SWEETS, 1
 	msgbox Text_DIALOG_3_Maggie, MSGBOX_NPC	
 	release
 	end
@@ -133,4 +133,4 @@ Script_Skiller_Trainer::
 	end
 
 Text_Skiller_Trainer:
-	.string "Let's Battle!$"
+	.string "Beyond this point I\ndon't know what will happen!$"

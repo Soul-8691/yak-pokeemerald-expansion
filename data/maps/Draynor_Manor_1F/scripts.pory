@@ -193,12 +193,54 @@ script NPC_DraynorManor_Ava{
     lock
 	faceplayer
 	namebox("Ava")
-    msgbox(format("CUPHOLDER"))
-    hidenamebox
-	closemessage
-	release
-	end
+    random(5)
+        switch (var(VAR_RESULT)) { 
+        case 0: 
+            msgbox(format("I think the walls are watching me…"))
+            hidenamebox
+            closemessage
+            release
+            end
+
+        case 1: 
+            msgbox(format("Who through it was a good idea to put piranhas in the fountain…\pit's no where near big enough!"))
+            hidenamebox
+            closemessage
+            release
+            end
+
+        case 2: 
+            msgbox(format("If you see any animated chairs…\pI assure you, it was not my fault."))
+            hidenamebox
+            closemessage
+            release
+            end
+
+        case 3: 
+            msgbox(format("I'm overjoyed with my new mattress!\pIt almost feels like I'm being consumed by a fluffy…{PAUSE 15}{PAUSE 15} undead…{PAUSE 15}{PAUSE 15} zombie…{PAUSE 15} chicken…?"))
+            hidenamebox
+            closemessage
+            release
+            end
+            
+        case 4: 
+            msgbox(format("If only there were more trainers gullible enough to travel across the land searching far and wide for my…{PAUSE 15}{PAUSE 15} questionable research."))
+            hidenamebox
+            closemessage
+            release
+            end
+
+        case 5: 
+            msgbox(format("EEK!\nA HUMAN…!\p…Sorry…{PAUSE 15} I have spent way too much time here, I'm not used to seeing corporeal beings."))
+            hidenamebox
+            closemessage
+            release
+            end
+
+        }
+    
 }
+
 
 script NPC_DraynorManor_Witch{
     lock
@@ -221,15 +263,26 @@ script NPC_DraynorManor_Chair{
 	end
 }
 
+script NPC_DraynorManor_Skeleton_1{
+    lock
+	faceplayer
+    namebox("Skeleton")
+    msgbox(format("I would really like to play the piano.\pBut I have nobody to play with."))
+    hidenamebox
+	closemessage
+	release
+	end
+}
+
 
 //TRAINERS-------------------------
 
 
 script BATTLE_DRAYNORMANOR_Trainer_1
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_4, format(""),format(""))
-    //namebox ("CUPHOLDER")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_DRAYNOR_MANOR_SKELETON_1, format("The skeleton stares deep into your eyes before it challenges you to a battle."),format("The skeleton stares intently into your eyes but refuses to move."))
+    //namebox ("Vertebrae")
+    msgbox(format("The skeleton stares intently into your eyes but refuses to move."))
     hidenamebox
     release
     end
@@ -237,9 +290,9 @@ script BATTLE_DRAYNORMANOR_Trainer_1
 
 script BATTLE_DRAYNORMANOR_Trainer_2
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_4, format(""),format(""))
-    namebox ("BoneyMcBoneFace")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_DRAYNOR_MANOR_SKELETON_2, format("Do not steal the Rubber Tube!"),format("Oh you want to return it?"))
+    namebox ("McBoneFace")
+    msgbox(format("You are going to return the Rubber Tube to Oddenstein?\pSure go for it."))
     hidenamebox
     release
     end
@@ -247,9 +300,59 @@ script BATTLE_DRAYNORMANOR_Trainer_2
 
 script BATTLE_DRAYNORMANOR_Trainer_3
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_4, format(""),format(""))
+    trainerbattle_single(TRAINER_DRAYNOR_MANOR_TRAINER_3, format("Fear me and my monsters!"),format("Ahhh!\pI fear you and your monsters!"))
+    namebox ("Dark Wizard")
+    msgbox(format("Ahhh!\pI fear you and your monsters!"))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_DRAYNORMANOR_Trainer_4
+{
+    trainerbattle_single(TRAINER_DRAYNOR_MANOR_SKELETON_4, format("Boo!"),format("The skeleton is giggling at your previous reaction."))
+    //namebox ("Tibia")
+    msgbox(format("The skeleton is giggling at your previous reaction."))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_DRAYNORMANOR_Trainer_5
+{
+    trainerbattle_single(TRAINER_DRAYNOR_MANOR_SKELETON_5, format("The skeleton strikes a menacing pose."),format("The skeleton stands perfectly still in a menacing pose."))
+    //namebox ("Sternum")
+    msgbox(format("The skeleton stands perfectly still in a menacing pose."))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_DRAYNORMANOR_Trainer_6
+{
+    trainerbattle_single(TRAINER_DRAYNOR_MANOR_SKELETON_6, format("The skeleton looks like it forgot what it was about to say."),format("The skeleton remembered, but the chance to say it is lost."))
     //namebox ("CUPHOLDER")
-    msgbox(format(""))
+    msgbox(format("The skeleton remembered, but the chance to say it is lost."))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_DRAYNORMANOR_Trainer_7
+{
+    trainerbattle_single(TRAINER_DRAYNOR_MANOR_SKELETON_7, format("The skeleton loses an arm walking towards you."),format("The skeleton is franticly looking for his arm."))
+    //namebox ("CUPHOLDER")
+    msgbox(format("The skeleton is franticly looking for his arm."))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_DRAYNORMANOR_Trainer_8
+{
+    trainerbattle_single(TRAINER_DRAYNOR_MANOR_SKELETON_8, format("…"),format("…………Hi."))
+    //namebox ("CUPHOLDER")
+    msgbox(format("………………Hi."))
     hidenamebox
     release
     end

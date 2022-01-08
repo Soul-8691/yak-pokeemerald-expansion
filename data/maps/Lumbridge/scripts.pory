@@ -169,7 +169,7 @@ script Lumbridge_IMP
 {
 	lock
 	faceplayer
-	msgbox(format("You found an Imp!\pCOR'BLIMEY MATE!\lIt tried to steal your pouches."))
+	msgbox(format("-CUPHOLDER-\p-IMP CATCHER QUEST-"))
 	release
 	end
 }

@@ -171,7 +171,7 @@ GnomeBoi_Kevin_7:
 	giveitem ITEM_LANTERN
 	giveitem ITEM_WATERFALLITEM
 	giveitem ITEM_SMALL_NET
-	giveitem ITEM_LARGE_NET
+	giveitem ITEM_BIG_NET
 	giveitem ITEM_DRAGON_NET
 	giveitem ITEM_MAP
 	release

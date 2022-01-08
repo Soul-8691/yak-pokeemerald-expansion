@@ -2,7 +2,7 @@
   "id": "MAP_DRAYNOR_MANOR_3F",
   "name": "Draynor_Manor_3F",
   "layout": "LAYOUT_DRAYNOR_MANOR_3F",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_FOREST_F2P",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

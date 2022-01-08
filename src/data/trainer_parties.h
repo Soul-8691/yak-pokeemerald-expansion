@@ -2,13 +2,13 @@
 static const struct TrainerMonItemDefaultMoves sParty_Maggie[] = {
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 20,
     .species = SPECIES_CAT_PURPLE_FORM,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 25,
     .species = SPECIES_SKELETALOX_FEMALE_FORM,
     .heldItem = ITEM_FOCUS_BAND
     }
@@ -242,13 +242,13 @@ static const struct TrainerMonItemDefaultMoves sParty_Rsn_Route12[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Mugger_Route4[] = {
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 18,
     .species = SPECIES_RAT_CRYPT_FORM,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 18,
     .species = SPECIES_BAT,
     .heldItem = ITEM_NONE
     }
@@ -257,13 +257,13 @@ static const struct TrainerMonItemDefaultMoves sParty_Mugger_Route4[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Scammer_Route4[] = {
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 20,
     .species = SPECIES_CABBAGE,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 19,
     .species = SPECIES_IMPLING_BABY_FORM,
     .heldItem = ITEM_NONE
     }
@@ -272,13 +272,13 @@ static const struct TrainerMonItemDefaultMoves sParty_Scammer_Route4[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Farmer_Route4[] = {
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 20,
     .species = SPECIES_BABY_YAK,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 20,
     .species = SPECIES_PUPPY_PUP_FORM,
     .heldItem = ITEM_NONE
     }
@@ -289,13 +289,13 @@ static const struct TrainerMonItemDefaultMoves sParty_Farmer_Route4[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Mugger_Route6[] = {
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 20,
     .species = SPECIES_RAT_NORMAL_FORM,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 20,
     .species = SPECIES_SNAKE_NORMAL_FORM,
     .heldItem = ITEM_NONE
     }
@@ -918,21 +918,21 @@ static const struct TrainerMonItemDefaultMoves sParty_KaramjaVolcano_SKELETON_1[
 static const struct TrainerMonItemDefaultMoves sParty_DRAYNOR_MANOR_COUNT_DRAYNOR[] = {
     {
     .iv = 0,
-    .lvl = 15,
+    .lvl = 19,
     .species = SPECIES_SPIDERLING,
     .heldItem = ITEM_NONE
     //.moves = {MOVE_STICKY_WEB, MOVE_SPIDER_WEB, MOVE_BUG_BITE, MOVE_NONE}
     },
     {
     .iv = 0,
-    .lvl = 15,
+    .lvl = 20,
     .species = SPECIES_BLOODVELD,
     .heldItem = ITEM_NONE
     //.moves = {MOVE_LEECH_LIFE, MOVE_MEGA_DRAIN, MOVE_WORK_UP, MOVE_NONE}
     },
     {
     .iv = 0,
-    .lvl = 15,
+    .lvl = 16,
     .species = SPECIES_VAMPYREBAT,
     .heldItem = ITEM_NONE
     //.moves = {MOVE_LEECH_LIFE, MOVE_BITE, MOVE_POISON_FANG, MOVE_TAILWIND}
@@ -944,7 +944,7 @@ static const struct TrainerMonItemDefaultMoves sParty_DRAYNOR_MANOR_COUNT_DRAYNO
 static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_1[] = {
     {
     .iv = 0,
-    .lvl = 12,
+    .lvl = 11,
     .species = SPECIES_SQUIRREL,
     .heldItem = ITEM_NONE
     },
@@ -960,13 +960,13 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_1[] = {
 static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_2[] = {
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 11,
     .species = SPECIES_PURE,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 12,
     .species = SPECIES_PURE,
     .heldItem = ITEM_NONE
     }
@@ -975,14 +975,20 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_2[] = {
 static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_3[] = {
     {
     .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_FROGEEL,
+    .lvl = 12,
+    .species = SPECIES_SARDINE,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_FROGEEL,
+    .lvl = 11,
+    .species = SPECIES_SARDINE,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_SARDINE,
     .heldItem = ITEM_NONE
     }
 };
@@ -990,14 +996,20 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_3[] = {
 static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_4[] = {
     {
     .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_FROGEEL,
+    .lvl = 12,
+    .species = SPECIES_SHRIMP,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 5,
-    .species = SPECIES_FROGEEL,
+    .lvl = 13,
+    .species = SPECIES_CRAYFISH,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 12,
+    .species = SPECIES_SHRIMP,
     .heldItem = ITEM_NONE
     }
 };
@@ -1006,13 +1018,13 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_5[] = {
     {
     .iv = 0,
     .lvl = 5,
-    .species = SPECIES_FROGEEL,
+    .species = SPECIES_RAT_NORMAL_FORM,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
     .lvl = 5,
-    .species = SPECIES_FROGEEL,
+    .species = SPECIES_IMP,
     .heldItem = ITEM_NONE
     }
 };
@@ -1020,20 +1032,14 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_5[] = {
 static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_6[] = {
     {
     .iv = 0,
-    .lvl = 10,
-    .species = SPECIES_CRAYFISH,
+    .lvl = 12,
+    .species = SPECIES_IMP,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 10,
-    .species = SPECIES_CRAYFISH,
-    .heldItem = ITEM_NONE
-    },
-    {
-    .iv = 0,
-    .lvl = 10,
-    .species = SPECIES_SHRIMP,
+    .lvl = 11,
+    .species = SPECIES_RACOON,
     .heldItem = ITEM_NONE
     }
 };
@@ -1041,14 +1047,166 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_6[] = {
 static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_7[] = {
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 11,
     .species = SPECIES_DEAD_TREE,
+    .heldItem = ITEM_NONE
+    }
+};
+
+//---WIZARDS TOWER
+
+static const struct TrainerMonItemDefaultMoves sParty_WIZARDSTOWER_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_PURE,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_WIZARDSTOWER_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_PURE,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_WIZARDSTOWER_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_PURE,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_WIZARDSTOWER_TRAINER_4[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_PURE,
+    .heldItem = ITEM_NONE
+    }
+};
+
+
+static const struct TrainerMonItemDefaultMoves sParty_WIZARDSTOWER_TRAINER_MYRTLE[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_RAINBOW,
+    .heldItem = ITEM_NONE
+    }
+};
+
+//draYNOR MANOR
+
+static const struct TrainerMonItemDefaultMoves sParty_DRAYNOR_MANOR_SKELETON_1[] = {
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_DRAGONKITE,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 14,
+    .species = SPECIES_TOY_SOLDIER,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_TOY_MOUSE,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_DRAYNOR_MANOR_SKELETON_2[] = {
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_SPROUTLING_WINTER_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 16,
     .species = SPECIES_DEAD_TREE,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_DRAYNOR_MANOR_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_BAT,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_RACOON,
+    .heldItem = ITEM_NONE
+    },
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_DRAYNOR_MANOR_SKELETON_4[] = {
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_BAT,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_HAND_CREEPING_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_DRAYNOR_MANOR_SKELETON_5[] = {
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_SPIDER_GIANT_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_DRAYNOR_MANOR_SKELETON_6[] = {
+    {
+    .iv = 0,
+    .lvl = 17,
+    .species = SPECIES_BLOODVELD,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_DRAYNOR_MANOR_SKELETON_7[] = {
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_EEL_SLIMY_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_DRAYNOR_MANOR_SKELETON_8[] = {
+    {
+    .iv = 0,
+    .lvl = 17,
+    .species = SPECIES_WOLF_JUVENILE_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_HAND_CREEPING_FORM,
     .heldItem = ITEM_NONE
     }
 };

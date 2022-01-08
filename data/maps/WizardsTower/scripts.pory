@@ -252,7 +252,7 @@ movement MOVEMENT_WIZARDSTOWER_NPC4
 
 script BATTLE_WizardsTower_Trainer_1
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_5, format("Magic has an inherent advantage over melee!"),format("You seem to have an inherent advantage over me."))
+    trainerbattle_single(TRAINER_WIZARDSTOWER_TRAINER_1, format("Magic has an inherent advantage over melee!"),format("You seem to have an inherent advantage over me."))
     //namebox ("CUPHOLDER")
     msgbox(format("You seem to have an inherent advantage over me."))
     hidenamebox
@@ -262,7 +262,7 @@ script BATTLE_WizardsTower_Trainer_1
 
 script BATTLE_WizardsTower_Trainer_2
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_5, format("Welcome to the wizard tower, now face my magic!"),format("Hope you enjoy your stay."))
+    trainerbattle_single(TRAINER_WIZARDSTOWER_TRAINER_2, format("Welcome to the wizard tower, now face my magic!"),format("Hope you enjoy your stay."))
     //namebox ("CUPHOLDER")
     msgbox(format("Hope you enjoy your stay."))
     hidenamebox
@@ -272,7 +272,7 @@ script BATTLE_WizardsTower_Trainer_2
 
 script BATTLE_WizardsTower_Trainer_3
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_5, format("With the power of runes, humans can use magic."),format("Maybe our runes pales in comparison to your monsters."))
+    trainerbattle_single(TRAINER_WIZARDSTOWER_TRAINER_3, format("With the power of runes, humans can use magic."),format("Maybe our runes pales in comparison to your monsters."))
     //namebox ("CUPHOLDER")
     msgbox(format("Maybe our runes pales in comparison to your monsters."))
     hidenamebox
@@ -282,7 +282,7 @@ script BATTLE_WizardsTower_Trainer_3
 
 script BATTLE_WizardsTower_Trainer_4
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_5, format("Hey you watch this!"),format("Took me years to learn magic, but after all these years im not sure if it was worth the time."))
+    trainerbattle_single(TRAINER_WIZARDSTOWER_TRAINER_4, format("Hey you watch this!"),format("Took me years to learn magic, but after all these years im not sure if it was worth the time."))
     //namebox ("CUPHOLDER")
     msgbox(format("Took me years to learn magic, but after all these years im not sure if it was worth the time."))
     hidenamebox
@@ -292,7 +292,7 @@ script BATTLE_WizardsTower_Trainer_4
 
 script BATTLE_WizardsTower_Myrtle
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_5, format("I love water types!"),format("But I hate getting wet..."))
+    trainerbattle_single(TRAINER_WIZARDSTOWER_TRAINER_MYRTLE, format("I love water types!"),format("But I hate getting wet..."))
     namebox ("Myrtle")
     msgbox(format("Water type monsters amaze me, but I cannot stand getting wet."))
     hidenamebox

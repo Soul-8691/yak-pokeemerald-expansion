@@ -2,7 +2,7 @@
   "id": "MAP_DRAYNOR_SEWERS_2",
   "name": "Draynor_Sewers_2",
   "layout": "LAYOUT_DRAYNOR_SEWERS_2",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_CAVE_F2P",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -689,7 +689,7 @@ const struct Trainer gTrainers[] = {
         .scaling = FALSE,
     },
 
-//-------------------------------------
+//------------------------------------- DRAYNOR MANOR
     [TRAINER_DRAYNOR_MANOR_COUNT_DRAYNOR] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -705,6 +705,126 @@ const struct Trainer gTrainers[] = {
         .scaling = FALSE,
     },
 
+    [TRAINER_DRAYNOR_MANOR_SKELETON_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("VERTEBRAE"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_DRAYNOR_MANOR_SKELETON_1),
+        .party = {.ItemDefaultMoves = sParty_DRAYNOR_MANOR_SKELETON_1},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_DRAYNOR_MANOR_SKELETON_2] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("MCBONEFACE"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_DRAYNOR_MANOR_SKELETON_2),
+        .party = {.ItemDefaultMoves = sParty_DRAYNOR_MANOR_SKELETON_2},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_DRAYNOR_MANOR_TRAINER_3] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_WIZARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_wizard_m,
+        .trainerName = _("DARK"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_DRAYNOR_MANOR_TRAINER_3),
+        .party = {.ItemDefaultMoves = sParty_DRAYNOR_MANOR_TRAINER_3},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_DRAYNOR_MANOR_SKELETON_4] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("TIBIA"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_DRAYNOR_MANOR_SKELETON_4),
+        .party = {.ItemDefaultMoves = sParty_DRAYNOR_MANOR_SKELETON_4},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_DRAYNOR_MANOR_SKELETON_5] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("STERNUM"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_DRAYNOR_MANOR_SKELETON_5),
+        .party = {.ItemDefaultMoves = sParty_DRAYNOR_MANOR_SKELETON_5},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_DRAYNOR_MANOR_SKELETON_6] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("COLLAR"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_DRAYNOR_MANOR_SKELETON_6),
+        .party = {.ItemDefaultMoves = sParty_DRAYNOR_MANOR_SKELETON_6},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_DRAYNOR_MANOR_SKELETON_7] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("PELVIS"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_DRAYNOR_MANOR_SKELETON_7),
+        .party = {.ItemDefaultMoves = sParty_DRAYNOR_MANOR_SKELETON_7},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_DRAYNOR_MANOR_SKELETON_8] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("RIBS"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_DRAYNOR_MANOR_SKELETON_8),
+        .party = {.ItemDefaultMoves = sParty_DRAYNOR_MANOR_SKELETON_8},
+        .scaling = FALSE,
+    },
+
 //-----------ROUTE 2
 
     [TRAINER_ROUTE2_TRAINER_1] =
@@ -713,7 +833,7 @@ const struct Trainer gTrainers[] = {
         .trainerClass = TRAINER_CLASS_SKILLER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
         .trainerPic = TRAINER_PIC_skiller,
-        .trainerName = _("RSN"),
+        .trainerName = _("How2type"),
         .items = {ITEM_BREAD, ITEM_BREAD, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
@@ -728,7 +848,7 @@ const struct Trainer gTrainers[] = {
         .trainerClass = TRAINER_CLASS_WIZARD,
         .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
         .trainerPic = TRAINER_PIC_wizard_m,
-        .trainerName = _("RSN"),
+        .trainerName = _("CUPHOLDER"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
@@ -740,10 +860,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE2_TRAINER_3] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
-        .trainerClass = TRAINER_CLASS_WIZARD,
+        .trainerClass = TRAINER_CLASS_FISHER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
-        .trainerPic = TRAINER_PIC_wizard_m,
-        .trainerName = _("DARK"),
+        .trainerPic = TRAINER_PIC_fisher,
+        .trainerName = _("CakeBaws"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
@@ -755,10 +875,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE2_TRAINER_4] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
-        .trainerClass = TRAINER_CLASS_WIZARD,
+        .trainerClass = TRAINER_CLASS_FISHER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
-        .trainerPic = TRAINER_PIC_wizard_m,
-        .trainerName = _("DARK"),
+        .trainerPic = TRAINER_PIC_fisher,
+        .trainerName = _("SlimyTem"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
@@ -770,10 +890,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE2_TRAINER_5] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
-        .trainerClass = TRAINER_CLASS_FISHER,
+        .trainerClass = TRAINER_CLASS_WIZARD,
         .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
-        .trainerPic = TRAINER_PIC_fisher,
-        .trainerName = _("RSN"),
+        .trainerPic = TRAINER_PIC_wizard_m,
+        .trainerName = _("DARK"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
@@ -785,10 +905,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE2_TRAINER_6] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
-        .trainerClass = TRAINER_CLASS_FISHER,
+        .trainerClass = TRAINER_CLASS_WIZARD,
         .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
-        .trainerPic = TRAINER_PIC_fisher,
-        .trainerName = _("RSN"),
+        .trainerPic = TRAINER_PIC_wizard_m,
+        .trainerName = _("DARK"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
@@ -812,8 +932,82 @@ const struct Trainer gTrainers[] = {
         .scaling = FALSE,
     },
 
+//--- WIZARDS TOWER
 
+        [TRAINER_WIZARDSTOWER_TRAINER_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_WIZARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_wizard_m,
+        .trainerName = _("RSN"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_WIZARDSTOWER_TRAINER_1),
+        .party = {.ItemDefaultMoves = sParty_WIZARDSTOWER_TRAINER_1},
+        .scaling = FALSE,
+    },
+
+        [TRAINER_WIZARDSTOWER_TRAINER_2] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_WIZARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_wizard_m,
+        .trainerName = _("RSN"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_WIZARDSTOWER_TRAINER_2),
+        .party = {.ItemDefaultMoves = sParty_WIZARDSTOWER_TRAINER_2},
+        .scaling = FALSE,
+    },
+
+        [TRAINER_WIZARDSTOWER_TRAINER_3] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_WIZARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_wizard_m,
+        .trainerName = _("RSN"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_WIZARDSTOWER_TRAINER_3),
+        .party = {.ItemDefaultMoves = sParty_WIZARDSTOWER_TRAINER_3},
+        .scaling = FALSE,
+    },
+
+        [TRAINER_WIZARDSTOWER_TRAINER_4] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_WIZARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_wizard_m,
+        .trainerName = _("RSN"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_WIZARDSTOWER_TRAINER_4),
+        .party = {.ItemDefaultMoves = sParty_WIZARDSTOWER_TRAINER_4},
+        .scaling = FALSE,
+    },
     
+        [TRAINER_WIZARDSTOWER_TRAINER_MYRTLE] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_WIZARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_wizard_f,
+        .trainerName = _("MYRTLE"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_WIZARDSTOWER_TRAINER_MYRTLE),
+        .party = {.ItemDefaultMoves = sParty_WIZARDSTOWER_TRAINER_MYRTLE},
+        .scaling = FALSE,
+    },
 
 
 

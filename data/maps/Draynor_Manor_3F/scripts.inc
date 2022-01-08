@@ -465,9 +465,8 @@ NPC_DraynorManor_Oddenstein_Text_4:
 	.string "fountain.$"
 
 NPC_DraynorManor_Oddenstein_Text_5:
-	.string "As I recall BoneyMcBoneFace borrowed\n"
-	.string "the Rubber Tube, he should be in his\l"
-	.string "room.$"
+	.string "As I recall McBoneFace borrowed the\n"
+	.string "Rubber Tube, he should be in his room.$"
 
 NPC_DraynorManor_Oddenstein_Text_6:
 	.string "Alright off you go my assistant!\p"
@@ -548,8 +547,7 @@ CooksAssistant_Check_PressureGauge_Text_1:
 
 CooksAssistant_Check_RubberTube_Text_0:
 	.string "You don't have the Rubber Tube.\p"
-	.string "As I recall BoneyMcBoneFace borrowed\n"
-	.string "it last.$"
+	.string "As I recall McBoneFace borrowed it last.$"
 
 CooksAssistant_Check_RubberTube_Text_1:
 	.string "You have the Rubber Tube!$"

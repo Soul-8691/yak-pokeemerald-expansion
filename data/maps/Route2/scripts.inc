@@ -228,6 +228,7 @@ NPC_ROUTE2_Wizard::
 
 BATTLE_ROUTE2_Trainer_1::
 	trainerbattle_single TRAINER_ROUTE2_TRAINER_1, BATTLE_ROUTE2_Trainer_1_Text_0, BATTLE_ROUTE2_Trainer_1_Text_1
+	namebox BATTLE_ROUTE2_Trainer_1_Text_2
 	msgbox BATTLE_ROUTE2_Trainer_1_Text_1
 	hidenamebox
 	release
@@ -244,6 +245,7 @@ BATTLE_ROUTE2_Trainer_2::
 
 BATTLE_ROUTE2_Trainer_3::
 	trainerbattle_single TRAINER_ROUTE2_TRAINER_3, BATTLE_ROUTE2_Trainer_3_Text_0, BATTLE_ROUTE2_Trainer_3_Text_1
+	namebox BATTLE_ROUTE2_Trainer_3_Text_2
 	msgbox BATTLE_ROUTE2_Trainer_3_Text_1
 	hidenamebox
 	release
@@ -252,6 +254,7 @@ BATTLE_ROUTE2_Trainer_3::
 
 BATTLE_ROUTE2_Trainer_4::
 	trainerbattle_single TRAINER_ROUTE2_TRAINER_4, BATTLE_ROUTE2_Trainer_4_Text_0, BATTLE_ROUTE2_Trainer_4_Text_1
+	namebox BATTLE_ROUTE2_Trainer_4_Text_2
 	msgbox BATTLE_ROUTE2_Trainer_4_Text_1
 	hidenamebox
 	release
@@ -259,31 +262,36 @@ BATTLE_ROUTE2_Trainer_4::
 
 
 BATTLE_ROUTE2_Trainer_5::
-	trainerbattle_single TRAINER_ROUTE2_TRAINER_5, BATTLE_ROUTE2_Trainer_5_Text_0, BATTLE_ROUTE2_Trainer_5_Text_0
-	msgbox BATTLE_ROUTE2_Trainer_5_Text_0
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_5, BATTLE_ROUTE2_Trainer_5_Text_0, BATTLE_ROUTE2_Trainer_5_Text_1
+	namebox BATTLE_ROUTE2_Trainer_5_Text_2
+	msgbox BATTLE_ROUTE2_Trainer_5_Text_3
 	hidenamebox
 	release
 	end
 
 
 BATTLE_ROUTE2_Trainer_6::
-	trainerbattle_single TRAINER_ROUTE2_TRAINER_6, BATTLE_ROUTE2_Trainer_5_Text_0, BATTLE_ROUTE2_Trainer_5_Text_0
-	msgbox BATTLE_ROUTE2_Trainer_5_Text_0
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_6, BATTLE_ROUTE2_Trainer_6_Text_0, BATTLE_ROUTE2_Trainer_6_Text_1
+	namebox BATTLE_ROUTE2_Trainer_5_Text_2
+	msgbox BATTLE_ROUTE2_Trainer_6_Text_2
 	hidenamebox
 	release
 	end
 
 
 BATTLE_ROUTE2_Trainer_7::
-	trainerbattle_single TRAINER_ROUTE2_TRAINER_7, BATTLE_ROUTE2_Trainer_5_Text_0, BATTLE_ROUTE2_Trainer_5_Text_0
-	msgbox BATTLE_ROUTE2_Trainer_5_Text_0
+	trainerbattle_single TRAINER_ROUTE2_TRAINER_7, BATTLE_ROUTE2_Trainer_7_Text_0, BATTLE_ROUTE2_Trainer_7_Text_0
+	namebox BATTLE_ROUTE2_Trainer_7_Text_1
+	msgbox BATTLE_ROUTE2_Trainer_7_Text_0
 	hidenamebox
+	closemessage
 	release
 	end
 
 
 NPC_ROUTE2_BLACK_KNIGHT::
-	lockall
+	lock
+	faceplayer
 	namebox NPC_ROUTE2_BLACK_KNIGHT_Text_0
 	msgbox NPC_ROUTE2_BLACK_KNIGHT_Text_1
 	closemessage
@@ -330,6 +338,9 @@ BATTLE_ROUTE2_Trainer_1_Text_1:
 	.string "Wrong direction?\p"
 	.string "Ive followed the W for south all day!$"
 
+BATTLE_ROUTE2_Trainer_1_Text_2:
+	.string "How2type$"
+
 BATTLE_ROUTE2_Trainer_2_Text_0:
 	.string "Passing this bridge gets you to the\n"
 	.string "wizard tower.$"
@@ -344,11 +355,14 @@ BATTLE_ROUTE2_Trainer_2_Text_2:
 
 BATTLE_ROUTE2_Trainer_3_Text_0:
 	.string "A game is not a good game without a\n"
-	.string "fishing minigame$"
+	.string "fishing minigame.$"
 
 BATTLE_ROUTE2_Trainer_3_Text_1:
 	.string "Now you too can enjoy the joy of\n"
 	.string "fishing.$"
+
+BATTLE_ROUTE2_Trainer_3_Text_2:
+	.string "Cakebaws$"
 
 BATTLE_ROUTE2_Trainer_4_Text_0:
 	.string "Noobs fear me, fish fear me, pkers turns\n"
@@ -359,8 +373,44 @@ BATTLE_ROUTE2_Trainer_4_Text_1:
 	.string "presence.\p"
 	.string "I walk alone on this barren earth.$"
 
+BATTLE_ROUTE2_Trainer_4_Text_2:
+	.string "SlimyTem$"
+
 BATTLE_ROUTE2_Trainer_5_Text_0:
-	.string "$"
+	.string "You don't look very strong, this battle\n"
+	.string "will be over in an instant!$"
+
+BATTLE_ROUTE2_Trainer_5_Text_1:
+	.string "Impossible!\p"
+	.string "I was sure you were weak...\p"
+	.string "Wait, does this mean I'm weaker than\n"
+	.string "you?!$"
+
+BATTLE_ROUTE2_Trainer_5_Text_2:
+	.string "Dark Wizard$"
+
+BATTLE_ROUTE2_Trainer_5_Text_3:
+	.string "Ugh.... how!?\p"
+	.string "Was my foresight wrong...?\p"
+	.string "No, it can't be...$"
+
+BATTLE_ROUTE2_Trainer_6_Text_0:
+	.string "Let's just get this over with…$"
+
+BATTLE_ROUTE2_Trainer_6_Text_1:
+	.string "What a surprise, I lost.\p"
+	.string "Who would have guessed…$"
+
+BATTLE_ROUTE2_Trainer_6_Text_2:
+	.string "I suppose it's not all bad.\p"
+	.string "At least you must feel better about\n"
+	.string "yourself… right?$"
+
+BATTLE_ROUTE2_Trainer_7_Text_0:
+	.string "…$"
+
+BATTLE_ROUTE2_Trainer_7_Text_1:
+	.string "Bot$"
 
 NPC_ROUTE2_BLACK_KNIGHT_Text_0:
 	.string "Black Knight$"

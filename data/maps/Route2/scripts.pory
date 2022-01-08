@@ -226,7 +226,7 @@ script NPC_ROUTE2_Wizard
 script BATTLE_ROUTE2_Trainer_1
 {
     trainerbattle_single(TRAINER_ROUTE2_TRAINER_1, format("Do you know the way to Draynor village by any chance?"),format("Wrong direction?\pIve followed the W for south all day!"))
-    //namebox ("How2type")
+    namebox ("How2type")
     msgbox(format("Wrong direction?\pIve followed the W for south all day!"))
     hidenamebox
     release
@@ -245,8 +245,8 @@ script BATTLE_ROUTE2_Trainer_2
 
 script BATTLE_ROUTE2_Trainer_3
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_3, format("A game is not a good game without a fishing minigame"),format("Now you too can enjoy the joy of fishing."))
-    //namebox ("Cakebaws")
+    trainerbattle_single(TRAINER_ROUTE2_TRAINER_3, format("A game is not a good game without a fishing minigame."),format("Now you too can enjoy the joy of fishing."))
+    namebox ("Cakebaws")
     msgbox(format("Now you too can enjoy the joy of fishing."))
     hidenamebox
     release
@@ -256,7 +256,7 @@ script BATTLE_ROUTE2_Trainer_3
 script BATTLE_ROUTE2_Trainer_4
 {
     trainerbattle_single(TRAINER_ROUTE2_TRAINER_4, format("Noobs fear me, fish fear me, pkers turns their eyes away from me as I walk."),format("No fish dare make a sound in my presence.\pI walk alone on this barren earth."))
-    //namebox ("SlimyTem")
+    namebox ("SlimyTem")
     msgbox(format("No fish dare make a sound in my presence.\pI walk alone on this barren earth."))
     hidenamebox
     release
@@ -265,9 +265,9 @@ script BATTLE_ROUTE2_Trainer_4
 
 script BATTLE_ROUTE2_Trainer_5
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_5, format(""),format(""))
-    //namebox ("CUPHOLDER")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE2_TRAINER_5, format("You don't look very strong, this battle will be over in an instant!"),format("Impossible!\pI was sure you were weak...\pWait, does this mean I'm weaker than you?!"))
+    namebox ("Dark Wizard")
+    msgbox(format("Ugh.... how!?\pWas my foresight wrong...?\pNo, it can't be..."))
     hidenamebox
     release
     end
@@ -275,9 +275,9 @@ script BATTLE_ROUTE2_Trainer_5
 
 script BATTLE_ROUTE2_Trainer_6
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_6, format(""),format(""))
-    //namebox ("CUPHOLDER")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE2_TRAINER_6, format("Let's just get this over with…"),format("What a surprise, I lost.\pWho would have guessed…"))
+    namebox ("Dark Wizard")
+    msgbox(format("I suppose it's not all bad.\pAt least you must feel better about yourself… right?"))
     hidenamebox
     release
     end
@@ -285,10 +285,11 @@ script BATTLE_ROUTE2_Trainer_6
 
 script BATTLE_ROUTE2_Trainer_7
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_7, format(""),format(""))
-    //namebox ("CUPHOLDER")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE2_TRAINER_7, format("…"),format("…"))
+    namebox ("Bot")
+    msgbox(format("…"))
     hidenamebox
+    closemessage
     release
     end
 }
@@ -296,7 +297,8 @@ script BATTLE_ROUTE2_Trainer_7
 
 
 script NPC_ROUTE2_BLACK_KNIGHT{
-    lockall
+    lock
+    faceplayer
     namebox("Black Knight")
     msgbox(format("For the Kinshra!"))
     closemessage

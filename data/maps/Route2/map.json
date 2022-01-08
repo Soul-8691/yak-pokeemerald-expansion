@@ -110,7 +110,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_ROUTE2_BLACK_KNIGHT",
       "flag": "0"
     },
     {
@@ -123,20 +123,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "BATTLE_ROUTE2_Trainer_4",
+      "script": "BATTLE_ROUTE2_Trainer_6",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_dark_wizard",
-      "x": 13,
-      "y": 13,
+      "x": 12,
+      "y": 17,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_UP_LEFT_DOWN",
+      "movement_range_x": 3,
+      "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "BATTLE_ROUTE2_Trainer_3",
+      "script": "BATTLE_ROUTE2_Trainer_5",
       "flag": "0"
     },
     {
@@ -149,7 +149,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "BATTLE_ROUTE2_Trainer_6",
+      "script": "BATTLE_ROUTE2_Trainer_4",
       "flag": "0"
     },
     {
@@ -162,7 +162,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "BATTLE_ROUTE2_Trainer_5",
+      "script": "BATTLE_ROUTE2_Trainer_3",
       "flag": "0"
     },
     {
@@ -190,19 +190,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ITEM_ROUTE2_MAGIC_POTION",
       "flag": "FLAG_ITEM_ROUTE2_MAGIC_POTION"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 11,
-      "y": 17,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",

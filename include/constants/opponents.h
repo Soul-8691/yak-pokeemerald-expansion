@@ -69,7 +69,23 @@
 #define TRAINER_ROUTE2_TRAINER_5               54
 #define TRAINER_ROUTE2_TRAINER_6               55
 #define TRAINER_ROUTE2_TRAINER_7               56
-#define TRAINER_LUM_SWAMP_GRASSTEETH               57
+#define TRAINER_LUM_SWAMP_GRASSTEETH                 57
+#define TRAINER_WIZARDSTOWER_TRAINER_1               58
+#define TRAINER_WIZARDSTOWER_TRAINER_2               59
+#define TRAINER_WIZARDSTOWER_TRAINER_3               60
+#define TRAINER_WIZARDSTOWER_TRAINER_4               61
+#define TRAINER_WIZARDSTOWER_TRAINER_MYRTLE          62
+#define TRAINER_DRAYNOR_MANOR_SKELETON_1          63
+#define TRAINER_DRAYNOR_MANOR_SKELETON_2          64
+#define TRAINER_DRAYNOR_MANOR_TRAINER_3          65
+#define TRAINER_DRAYNOR_MANOR_SKELETON_4          66
+#define TRAINER_DRAYNOR_MANOR_SKELETON_5          67
+#define TRAINER_DRAYNOR_MANOR_SKELETON_6          68
+#define TRAINER_DRAYNOR_MANOR_SKELETON_7          69
+#define TRAINER_DRAYNOR_MANOR_SKELETON_8          70
+
+
+
 
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows

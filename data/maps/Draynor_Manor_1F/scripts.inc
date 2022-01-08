@@ -148,7 +148,53 @@ NPC_DraynorManor_Ava::
 	lock
 	faceplayer
 	namebox NPC_DraynorManor_Ava_Text_0
+	random 5
+	switch VAR_RESULT
+	case 0, NPC_DraynorManor_Ava_2
+	case 1, NPC_DraynorManor_Ava_3
+	case 2, NPC_DraynorManor_Ava_4
+	case 3, NPC_DraynorManor_Ava_5
+	case 4, NPC_DraynorManor_Ava_6
+	case 5, NPC_DraynorManor_Ava_7
+	return
+
+NPC_DraynorManor_Ava_2:
 	msgbox NPC_DraynorManor_Ava_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_DraynorManor_Ava_3:
+	msgbox NPC_DraynorManor_Ava_Text_2
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_DraynorManor_Ava_4:
+	msgbox NPC_DraynorManor_Ava_Text_3
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_DraynorManor_Ava_5:
+	msgbox NPC_DraynorManor_Ava_Text_4
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_DraynorManor_Ava_6:
+	msgbox NPC_DraynorManor_Ava_Text_5
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_DraynorManor_Ava_7:
+	msgbox NPC_DraynorManor_Ava_Text_6
 	hidenamebox
 	closemessage
 	release
@@ -176,26 +222,78 @@ NPC_DraynorManor_Chair::
 	end
 
 
+NPC_DraynorManor_Skeleton_1::
+	lock
+	faceplayer
+	namebox NPC_DraynorManor_Skeleton_1_Text_0
+	msgbox NPC_DraynorManor_Skeleton_1_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
 BATTLE_DRAYNORMANOR_Trainer_1::
-	trainerbattle_single TRAINER_ROUTE2_TRAINER_4, BATTLE_DRAYNORMANOR_Trainer_1_Text_0, BATTLE_DRAYNORMANOR_Trainer_1_Text_0
-	msgbox BATTLE_DRAYNORMANOR_Trainer_1_Text_0
+	trainerbattle_single TRAINER_DRAYNOR_MANOR_SKELETON_1, BATTLE_DRAYNORMANOR_Trainer_1_Text_0, BATTLE_DRAYNORMANOR_Trainer_1_Text_1
+	msgbox BATTLE_DRAYNORMANOR_Trainer_1_Text_1
 	hidenamebox
 	release
 	end
 
 
 BATTLE_DRAYNORMANOR_Trainer_2::
-	trainerbattle_single TRAINER_ROUTE2_TRAINER_4, BATTLE_DRAYNORMANOR_Trainer_1_Text_0, BATTLE_DRAYNORMANOR_Trainer_1_Text_0
-	namebox BATTLE_DRAYNORMANOR_Trainer_2_Text_0
-	msgbox BATTLE_DRAYNORMANOR_Trainer_1_Text_0
+	trainerbattle_single TRAINER_DRAYNOR_MANOR_SKELETON_2, BATTLE_DRAYNORMANOR_Trainer_2_Text_0, BATTLE_DRAYNORMANOR_Trainer_2_Text_1
+	namebox BATTLE_DRAYNORMANOR_Trainer_2_Text_2
+	msgbox BATTLE_DRAYNORMANOR_Trainer_2_Text_3
 	hidenamebox
 	release
 	end
 
 
 BATTLE_DRAYNORMANOR_Trainer_3::
-	trainerbattle_single TRAINER_ROUTE2_TRAINER_4, BATTLE_DRAYNORMANOR_Trainer_1_Text_0, BATTLE_DRAYNORMANOR_Trainer_1_Text_0
-	msgbox BATTLE_DRAYNORMANOR_Trainer_1_Text_0
+	trainerbattle_single TRAINER_DRAYNOR_MANOR_TRAINER_3, BATTLE_DRAYNORMANOR_Trainer_3_Text_0, BATTLE_DRAYNORMANOR_Trainer_3_Text_1
+	namebox BATTLE_DRAYNORMANOR_Trainer_3_Text_2
+	msgbox BATTLE_DRAYNORMANOR_Trainer_3_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_DRAYNORMANOR_Trainer_4::
+	trainerbattle_single TRAINER_DRAYNOR_MANOR_SKELETON_4, BATTLE_DRAYNORMANOR_Trainer_4_Text_0, BATTLE_DRAYNORMANOR_Trainer_4_Text_1
+	msgbox BATTLE_DRAYNORMANOR_Trainer_4_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_DRAYNORMANOR_Trainer_5::
+	trainerbattle_single TRAINER_DRAYNOR_MANOR_SKELETON_5, BATTLE_DRAYNORMANOR_Trainer_5_Text_0, BATTLE_DRAYNORMANOR_Trainer_5_Text_1
+	msgbox BATTLE_DRAYNORMANOR_Trainer_5_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_DRAYNORMANOR_Trainer_6::
+	trainerbattle_single TRAINER_DRAYNOR_MANOR_SKELETON_6, BATTLE_DRAYNORMANOR_Trainer_6_Text_0, BATTLE_DRAYNORMANOR_Trainer_6_Text_1
+	msgbox BATTLE_DRAYNORMANOR_Trainer_6_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_DRAYNORMANOR_Trainer_7::
+	trainerbattle_single TRAINER_DRAYNOR_MANOR_SKELETON_7, BATTLE_DRAYNORMANOR_Trainer_7_Text_0, BATTLE_DRAYNORMANOR_Trainer_7_Text_1
+	msgbox BATTLE_DRAYNORMANOR_Trainer_7_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_DRAYNORMANOR_Trainer_8::
+	trainerbattle_single TRAINER_DRAYNOR_MANOR_SKELETON_8, BATTLE_DRAYNORMANOR_Trainer_8_Text_0, BATTLE_DRAYNORMANOR_Trainer_8_Text_1
+	msgbox BATTLE_DRAYNORMANOR_Trainer_8_Text_2
 	hidenamebox
 	release
 	end
@@ -211,7 +309,35 @@ NPC_DraynorManor_Ava_Text_0:
 	.string "Ava$"
 
 NPC_DraynorManor_Ava_Text_1:
-	.string "CUPHOLDER$"
+	.string "I think the walls are watching me…$"
+
+NPC_DraynorManor_Ava_Text_2:
+	.string "Who through it was a good idea to put\n"
+	.string "piranhas in the fountain…\p"
+	.string "it's no where near big enough!$"
+
+NPC_DraynorManor_Ava_Text_3:
+	.string "If you see any animated chairs…\p"
+	.string "I assure you, it was not my fault.$"
+
+NPC_DraynorManor_Ava_Text_4:
+	.string "I'm overjoyed with my new mattress!\p"
+	.string "It almost feels like I'm being consumed\n"
+	.string "by a fluffy…{PAUSE 15}{PAUSE 15} undead…{PAUSE 15}{PAUSE 15} zombie…{PAUSE 15}\l"
+	.string "chicken…?$"
+
+NPC_DraynorManor_Ava_Text_5:
+	.string "If only there were more trainers\n"
+	.string "gullible enough to travel across the\l"
+	.string "land searching far and wide for my…{PAUSE 15}{PAUSE 15}\l"
+	.string "questionable research.$"
+
+NPC_DraynorManor_Ava_Text_6:
+	.string "EEK!\n"
+	.string "A HUMAN…!\p"
+	.string "…Sorry…{PAUSE 15} I have spent way too much time\n"
+	.string "here, I'm not used to seeing corporeal\l"
+	.string "beings.$"
 
 NPC_DraynorManor_Witch_Text_0:
 	.string "Witch$"
@@ -225,8 +351,81 @@ NPC_DraynorManor_Witch_Text_1:
 NPC_DraynorManor_Chair_Text_0:
 	.string "It's a chair.$"
 
+NPC_DraynorManor_Skeleton_1_Text_0:
+	.string "Skeleton$"
+
+NPC_DraynorManor_Skeleton_1_Text_1:
+	.string "I would really like to play the piano.\p"
+	.string "But I have nobody to play with.$"
+
 BATTLE_DRAYNORMANOR_Trainer_1_Text_0:
-	.string "$"
+	.string "The skeleton stares deep into your\n"
+	.string "eyes before it challenges you to a\l"
+	.string "battle.$"
+
+BATTLE_DRAYNORMANOR_Trainer_1_Text_1:
+	.string "The skeleton stares intently into your\n"
+	.string "eyes but refuses to move.$"
 
 BATTLE_DRAYNORMANOR_Trainer_2_Text_0:
-	.string "BoneyMcBoneFace$"
+	.string "Do not steal the Rubber Tube!$"
+
+BATTLE_DRAYNORMANOR_Trainer_2_Text_1:
+	.string "Oh you want to return it?$"
+
+BATTLE_DRAYNORMANOR_Trainer_2_Text_2:
+	.string "McBoneFace$"
+
+BATTLE_DRAYNORMANOR_Trainer_2_Text_3:
+	.string "You are going to return the Rubber Tube\n"
+	.string "to Oddenstein?\p"
+	.string "Sure go for it.$"
+
+BATTLE_DRAYNORMANOR_Trainer_3_Text_0:
+	.string "Fear me and my monsters!$"
+
+BATTLE_DRAYNORMANOR_Trainer_3_Text_1:
+	.string "Ahhh!\p"
+	.string "I fear you and your monsters!$"
+
+BATTLE_DRAYNORMANOR_Trainer_3_Text_2:
+	.string "Dark Wizard$"
+
+BATTLE_DRAYNORMANOR_Trainer_4_Text_0:
+	.string "Boo!$"
+
+BATTLE_DRAYNORMANOR_Trainer_4_Text_1:
+	.string "The skeleton is giggling at your\n"
+	.string "previous reaction.$"
+
+BATTLE_DRAYNORMANOR_Trainer_5_Text_0:
+	.string "The skeleton strikes a menacing pose.$"
+
+BATTLE_DRAYNORMANOR_Trainer_5_Text_1:
+	.string "The skeleton stands perfectly still in\n"
+	.string "a menacing pose.$"
+
+BATTLE_DRAYNORMANOR_Trainer_6_Text_0:
+	.string "The skeleton looks like it forgot what\n"
+	.string "it was about to say.$"
+
+BATTLE_DRAYNORMANOR_Trainer_6_Text_1:
+	.string "The skeleton remembered, but the\n"
+	.string "chance to say it is lost.$"
+
+BATTLE_DRAYNORMANOR_Trainer_7_Text_0:
+	.string "The skeleton loses an arm walking\n"
+	.string "towards you.$"
+
+BATTLE_DRAYNORMANOR_Trainer_7_Text_1:
+	.string "The skeleton is franticly looking for\n"
+	.string "his arm.$"
+
+BATTLE_DRAYNORMANOR_Trainer_8_Text_0:
+	.string "…$"
+
+BATTLE_DRAYNORMANOR_Trainer_8_Text_1:
+	.string "…………Hi.$"
+
+BATTLE_DRAYNORMANOR_Trainer_8_Text_2:
+	.string "………………Hi.$"

@@ -183,17 +183,6 @@ NPC_WIZARDSTOWER_SleepingWizard::
 	end
 
 
-NPC_WIZARDSTOWER_Myrtle::
-	lock
-	faceplayer
-	namebox NPC_WIZARDSTOWER_Myrtle_Text_0
-	msgbox NPC_WIZARDSTOWER_Myrtle_Text_1
-	waitmessage
-	hidenamebox
-	release
-	end
-
-
 NPC_WIZARDSTOWER_NoobshowNPCs::
 	lock
 	applymovement 7, MOVEMENT_WIZARDSTOWER_NPC1
@@ -241,6 +230,47 @@ MOVEMENT_WIZARDSTOWER_NPC4:
 	face_left
 	step_end
 
+BATTLE_WizardsTower_Trainer_1::
+	trainerbattle_single TRAINER_WIZARDSTOWER_TRAINER_1, BATTLE_WizardsTower_Trainer_1_Text_0, BATTLE_WizardsTower_Trainer_1_Text_1
+	msgbox BATTLE_WizardsTower_Trainer_1_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_WizardsTower_Trainer_2::
+	trainerbattle_single TRAINER_WIZARDSTOWER_TRAINER_2, BATTLE_WizardsTower_Trainer_2_Text_0, BATTLE_WizardsTower_Trainer_2_Text_1
+	msgbox BATTLE_WizardsTower_Trainer_2_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_WizardsTower_Trainer_3::
+	trainerbattle_single TRAINER_WIZARDSTOWER_TRAINER_3, BATTLE_WizardsTower_Trainer_3_Text_0, BATTLE_WizardsTower_Trainer_3_Text_1
+	msgbox BATTLE_WizardsTower_Trainer_3_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_WizardsTower_Trainer_4::
+	trainerbattle_single TRAINER_WIZARDSTOWER_TRAINER_4, BATTLE_WizardsTower_Trainer_4_Text_0, BATTLE_WizardsTower_Trainer_4_Text_1
+	msgbox BATTLE_WizardsTower_Trainer_4_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_WizardsTower_Myrtle::
+	trainerbattle_single TRAINER_WIZARDSTOWER_TRAINER_MYRTLE, BATTLE_WizardsTower_Myrtle_Text_0, BATTLE_WizardsTower_Myrtle_Text_1
+	namebox BATTLE_WizardsTower_Myrtle_Text_2
+	msgbox BATTLE_WizardsTower_Myrtle_Text_3
+	hidenamebox
+	release
+	end
+
+
 HAM_EVENT_WizardsTower_2_Text_0:
 	.string "Ariane$"
 
@@ -264,13 +294,6 @@ NPC_WIZARDSTOWER_SleepingWizard_Text_0:
 	.string "......\p"
 	.string "They seem to be asleep.$"
 
-NPC_WIZARDSTOWER_Myrtle_Text_0:
-	.string "Myrtle$"
-
-NPC_WIZARDSTOWER_Myrtle_Text_1:
-	.string "I love water types!\l"
-	.string "But I hate getting wet...$"
-
 NPC_WIZARDSTOWER_NoobshowNPCs_Text_0:
 	.string "Man 1$"
 
@@ -290,3 +313,47 @@ NPC_WIZARDSTOWER_NoobshowNPCs_Text_3:
 NPC_WIZARDSTOWER_NoobshowNPCs_Text_4:
 	.string "Listen noob, I have traveled every road\n"
 	.string "in this here land.$"
+
+BATTLE_WizardsTower_Trainer_1_Text_0:
+	.string "Magic has an inherent advantage over\n"
+	.string "melee!$"
+
+BATTLE_WizardsTower_Trainer_1_Text_1:
+	.string "You seem to have an inherent advantage\n"
+	.string "over me.$"
+
+BATTLE_WizardsTower_Trainer_2_Text_0:
+	.string "Welcome to the wizard tower, now face\n"
+	.string "my magic!$"
+
+BATTLE_WizardsTower_Trainer_2_Text_1:
+	.string "Hope you enjoy your stay.$"
+
+BATTLE_WizardsTower_Trainer_3_Text_0:
+	.string "With the power of runes, humans can use\n"
+	.string "magic.$"
+
+BATTLE_WizardsTower_Trainer_3_Text_1:
+	.string "Maybe our runes pales in comparison to\n"
+	.string "your monsters.$"
+
+BATTLE_WizardsTower_Trainer_4_Text_0:
+	.string "Hey you watch this!$"
+
+BATTLE_WizardsTower_Trainer_4_Text_1:
+	.string "Took me years to learn magic, but after\n"
+	.string "all these years im not sure if it was\l"
+	.string "worth the time.$"
+
+BATTLE_WizardsTower_Myrtle_Text_0:
+	.string "I love water types!$"
+
+BATTLE_WizardsTower_Myrtle_Text_1:
+	.string "But I hate getting wet...$"
+
+BATTLE_WizardsTower_Myrtle_Text_2:
+	.string "Myrtle$"
+
+BATTLE_WizardsTower_Myrtle_Text_3:
+	.string "Water type monsters amaze me, but I\n"
+	.string "cannot stand getting wet.$"

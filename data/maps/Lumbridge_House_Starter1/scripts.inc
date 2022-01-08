@@ -246,6 +246,11 @@ ITEM_ROUTE12_PRAYER_POTION::
 	end
 
 
+ITEM_DRAYNORMANOR_TM43_PSYCHO_CUT::
+	finditem ITEM_TM43_PSYCHO_CUT
+	end
+
+
 Explorer_Jack_1_Text_0:
 	.string "Explorer Jack$"
 

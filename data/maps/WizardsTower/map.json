@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_wizard_male",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 6,
       "y": 12,
       "elevation": 3,
@@ -39,7 +39,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_wizard_female",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 18,
       "y": 19,
       "elevation": 3,
@@ -65,7 +65,7 @@
       "flag": "FLAG_TEMP_6"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_rune_guardian",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 35,
       "y": 21,
       "elevation": 3,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ham_member_male",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 26,
       "y": 9,
       "elevation": 3,
@@ -91,7 +91,7 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ariane",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 19,
       "y": 21,
       "elevation": 3,
@@ -104,7 +104,7 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_maggie",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 25,
       "y": 5,
       "elevation": 3,
@@ -117,7 +117,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_bob",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 25,
       "y": 6,
       "elevation": 3,
@@ -130,7 +130,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ariane",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 26,
       "y": 10,
       "elevation": 3,
@@ -156,7 +156,7 @@
       "flag": "FLAG_TEMP_5"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_wizard_male",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 24,
       "y": 15,
       "elevation": 3,

@@ -31,7 +31,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_wendy",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 8,
       "y": 5,
       "elevation": 3,
@@ -44,7 +44,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_maggie",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 11,
       "y": 4,
       "elevation": 3,
@@ -57,7 +57,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_skeleton_ox_m",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 13,
       "y": 6,
       "elevation": 3,
@@ -70,7 +70,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_demonheadge",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 10,
       "y": 11,
       "elevation": 3,
@@ -83,7 +83,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_skeleton_ox_f",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 9,
       "y": 8,
       "elevation": 3,

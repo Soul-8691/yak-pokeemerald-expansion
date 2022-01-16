@@ -15,7 +15,7 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_barbarian_male",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 2,
       "y": 9,
       "elevation": 3,
@@ -28,7 +28,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_pirate_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 4,
       "y": 11,
       "elevation": 3,
@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_dwarf_3",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 5,
       "y": 9,
       "elevation": 3,
@@ -54,7 +54,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_pirate_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 2,
       "y": 10,
       "elevation": 3,
@@ -67,7 +67,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_sailor",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 3,
       "y": 7,
       "elevation": 3,
@@ -80,7 +80,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_general_store_clerk",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 2,
       "y": 5,
       "elevation": 3,
@@ -93,7 +93,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_monk",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 3,
       "y": 11,
       "elevation": 3,

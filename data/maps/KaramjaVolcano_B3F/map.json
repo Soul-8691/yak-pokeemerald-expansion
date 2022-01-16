@@ -28,7 +28,7 @@
       "flag": "FLAG_TEMP_3"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ham_member_female",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 19,
       "y": 15,
       "elevation": 3,
@@ -41,7 +41,7 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ham_member_male",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 19,
       "y": 14,
       "elevation": 3,
@@ -54,7 +54,7 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_dark_wizard",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 22,
       "y": 17,
       "elevation": 3,
@@ -67,7 +67,7 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_dark_wizard",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 24,
       "y": 15,
       "elevation": 3,
@@ -80,7 +80,7 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_dark_wizard",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 22,
       "y": 12,
       "elevation": 3,
@@ -93,7 +93,7 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ham_member_female",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 7,
       "y": 27,
       "elevation": 3,
@@ -106,7 +106,7 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ham_member_male",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 10,
       "y": 22,
       "elevation": 3,
@@ -119,7 +119,7 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_skeleton_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 9,
       "y": 5,
       "elevation": 3,
@@ -197,7 +197,7 @@
       "flag": "FLAG_TEMP_B"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ham_member_male",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 14,
       "y": 14,
       "elevation": 3,
@@ -210,7 +210,7 @@
       "flag": "FLAG_TEMP_4"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ham_member_male",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 14,
       "y": 15,
       "elevation": 3,
@@ -223,7 +223,7 @@
       "flag": "FLAG_TEMP_4"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_KALPHITE_KING",
+      "graphics_id": "OBJ_EVENT_GFX_ELVARG",
       "x": 23,
       "y": 14,
       "elevation": 3,

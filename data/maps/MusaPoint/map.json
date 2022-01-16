@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_fisherman",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 6,
       "y": 5,
       "elevation": 3,
@@ -39,7 +39,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_fisherman",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 16,
       "y": 10,
       "elevation": 3,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_bob",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 16,
       "y": 8,
       "elevation": 3,
@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_bob",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 17,
       "y": 9,
       "elevation": 3,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_bob",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 17,
       "y": 8,
       "elevation": 3,
@@ -91,7 +91,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_sailor",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 41,
       "y": 27,
       "elevation": 3,
@@ -104,7 +104,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_sailor",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 39,
       "y": 21,
       "elevation": 3,
@@ -117,7 +117,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_pirate_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 31,
       "y": 24,
       "elevation": 3,
@@ -130,7 +130,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_pirate_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 24,
       "y": 27,
       "elevation": 3,
@@ -143,7 +143,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_fisherman",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 9,
       "y": 24,
       "elevation": 3,
@@ -156,7 +156,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_sudo_bash",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 16,
       "y": 22,
       "elevation": 3,

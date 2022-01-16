@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_theif",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 4,
       "y": 3,
       "elevation": 3,
@@ -39,7 +39,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_theif",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 6,
       "y": 15,
       "elevation": 3,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_rat",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 29,
       "y": 6,
       "elevation": 3,
@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_rat",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 14,
       "y": 7,
       "elevation": 3,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_rat",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 30,
       "y": 14,
       "elevation": 3,
@@ -91,7 +91,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_pker",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 20,
       "y": 14,
       "elevation": 3,
@@ -104,7 +104,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_mercher",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 20,
       "y": 17,
       "elevation": 3,
@@ -117,7 +117,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_bob",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 21,
       "y": 16,
       "elevation": 3,
@@ -156,7 +156,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_pker",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 27,
       "y": 9,
       "elevation": 3,
@@ -169,7 +169,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_skiller_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 22,
       "y": 11,
       "elevation": 3,
@@ -195,7 +195,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_theif",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 39,
       "y": 8,
       "elevation": 3,
@@ -208,7 +208,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_pker",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 46,
       "y": 15,
       "elevation": 3,

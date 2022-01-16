@@ -31,7 +31,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_farmer_male",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 19,
       "y": 16,
       "elevation": 3,
@@ -44,7 +44,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_farmer_female",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 7,
       "y": 17,
       "elevation": 3,
@@ -57,7 +57,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_mugger",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 24,
       "y": 23,
       "elevation": 3,
@@ -70,7 +70,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_theif",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 15,
       "y": 3,
       "elevation": 3,
@@ -83,7 +83,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_sandy",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 7,
       "y": 13,
       "elevation": 3,
@@ -96,7 +96,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_terrorbird_2",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 20,
       "y": 13,
       "elevation": 3,
@@ -109,7 +109,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_saraling",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 9,
       "y": 14,
       "elevation": 3,
@@ -122,7 +122,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_farmer_male",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 10,
       "y": 25,
       "elevation": 3,

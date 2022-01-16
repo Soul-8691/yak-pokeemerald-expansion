@@ -69,7 +69,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_man_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 22,
       "y": 42,
       "elevation": 3,
@@ -82,7 +82,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_woman_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 23,
       "y": 42,
       "elevation": 3,
@@ -95,7 +95,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_white_knight_male",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 11,
       "y": 34,
       "elevation": 3,
@@ -108,7 +108,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_bob",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 8,
       "y": 27,
       "elevation": 3,
@@ -121,7 +121,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_mugger",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 38,
       "y": 39,
       "elevation": 3,
@@ -134,7 +134,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_goblin_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 18,
       "y": 15,
       "elevation": 3,
@@ -147,7 +147,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_goblin_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 24,
       "y": 13,
       "elevation": 3,
@@ -173,7 +173,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_goblin_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 17,
       "y": 7,
       "elevation": 3,
@@ -186,7 +186,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_skiller_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 14,
       "y": 48,
       "elevation": 3,
@@ -238,7 +238,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_guard_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 6,
       "y": 24,
       "elevation": 3,

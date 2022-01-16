@@ -36,7 +36,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_dwarf_2",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 1,
       "y": 24,
       "elevation": 3,
@@ -49,7 +49,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_black_knight_male",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 6,
       "y": 19,
       "elevation": 3,
@@ -62,7 +62,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_monk",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 18,
       "y": 19,
       "elevation": 3,
@@ -75,7 +75,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_monk",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 19,
       "y": 19,
       "elevation": 3,
@@ -88,7 +88,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_mugger",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 14,
       "y": 28,
       "elevation": 3,
@@ -101,7 +101,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_skiller_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 28,
       "y": 31,
       "elevation": 3,

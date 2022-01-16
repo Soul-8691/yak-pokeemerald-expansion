@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_sudo_bash",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 9,
       "y": 25,
       "elevation": 3,
@@ -39,7 +39,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_sudo_bash",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 22,
       "y": 23,
       "elevation": 3,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_sudo_bash",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 33,
       "y": 21,
       "elevation": 3,
@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_skeleton_1",
+      "graphics_id": "OBJ_EVENT_GFX_NOOB",
       "x": 31,
       "y": 14,
       "elevation": 3,

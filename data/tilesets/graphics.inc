@@ -2230,3 +2230,23 @@ gTilesetPalettes_PokeScape_Sewers::
 	.align 2
 gTilesetTiles_PokeScape_Sewers::
 	.incbin "data/tilesets/secondary/pokescape_sewers/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Mazcab::
+	.incbin "data/tilesets/secondary/mazcab/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/mazcab/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/mazcab/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/mazcab/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/mazcab/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/mazcab/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/mazcab/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/mazcab/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/mazcab/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/mazcab/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/mazcab/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/mazcab/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/mazcab/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Mazcab::
+	.incbin "data/tilesets/secondary/mazcab/tiles.4bpp.lz"

@@ -1107,3 +1107,14 @@ gTileset_PokeScape_Sewers::
 	.4byte gMetatiles_PokeScape_Sewers
 	.4byte gMetatileAttributes_PokeScape_Sewers
 	.4byte NULL
+
+	.align 2
+gTileset_Mazcab::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Mazcab
+	.4byte gTilesetPalettes_Mazcab
+	.4byte gMetatiles_Mazcab
+	.4byte gMetatileAttributes_Mazcab
+	.4byte NULL

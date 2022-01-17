@@ -736,3 +736,10 @@ gMetatiles_PokeScape_Sewers::
 	.align 1
 gMetatileAttributes_PokeScape_Sewers::
 	.incbin "data/tilesets/secondary/pokescape_sewers/metatile_attributes.bin"
+	.align 1
+gMetatiles_Mazcab::
+	.incbin "data/tilesets/secondary/mazcab/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Mazcab::
+	.incbin "data/tilesets/secondary/mazcab/metatile_attributes.bin"

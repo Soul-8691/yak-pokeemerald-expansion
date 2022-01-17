@@ -1435,3 +1435,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Varrock_Sewers_2F/scripts.inc"
 
 	.include "data/maps/Sinkhole_1/scripts.inc"
+
+	.include "data/maps/Mazcab_Otot/scripts.inc"

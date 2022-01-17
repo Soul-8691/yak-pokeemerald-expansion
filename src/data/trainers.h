@@ -1011,6 +1011,24 @@ const struct Trainer gTrainers[] = {
 
 
 
+    //ROUTE 3
+
+    [TRAINER_ROUTE3_TRAINER_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SKILLER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_skiller,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE3_TRAINER_1),
+        .party = {.ItemDefaultMoves = sParty_ROUTE3_TRAINER_1},
+        .scaling = FALSE,
+    },
+
+
 
 
 

@@ -630,6 +630,9 @@ const u32 gObjectEventPic_Miner[] = INCBIN_U32("graphics/object_events/pics/poke
 const u32 gObjectEventPic_Smith[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Smith.4bpp");
 const u32 gObjectEventPic_Dog_Sleep[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Dog_Sleep.4bpp");
 
+const u32 gObjectEventPic_Juna[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Juna.4bpp");
+const u32 gObjectEventPic_Abyss_Portal[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Abyss_Portal.4bpp");
+const u32 gObjectEventPic_Chair[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Chair.4bpp");
 
 //POKESCAPE PALETTES
 const u16 gObjectEventPalette_Skeleton_1[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Skeleton_1.gbapal");
@@ -841,6 +844,16 @@ const u16 gObjectEventPalette_Suomi[] = INCBIN_U16("graphics/object_events/pics/
 const u16 gObjectEventPalette_Zezima[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Zezima.gbapal");
 
 
+const u16 gObjectEventPalette_Abyssal_Demon[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Abyssal_Demon.gbapal");
+const u16 gObjectEventPalette_Chaos_Elemental[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Chaos_Elemental.gbapal");
+const u16 gObjectEventPalette_Miner[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Miner.gbapal");
+const u16 gObjectEventPalette_Smith[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Smith.gbapal");
+const u16 gObjectEventPalette_Dog_Sleep[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Dog_Sleep.gbapal");
+
+
+const u16 gObjectEventPalette_Juna[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Juna.gbapal");
+const u16 gObjectEventPalette_Abyss_Portal[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Abyss_Portal.gbapal");
+const u16 gObjectEventPalette_Chair[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Chair.gbapal");
 
 
 

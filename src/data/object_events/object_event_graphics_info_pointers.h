@@ -458,6 +458,10 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chaos_Elemental;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Miner;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Smith;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Sleep;
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juna;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Abyss_Portal;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chair;
 //ORES
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CopperOre;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TinOre;
@@ -926,6 +930,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MINER] =                    &gObjectEventGraphicsInfo_Miner,
     [OBJ_EVENT_GFX_SMITH] =                    &gObjectEventGraphicsInfo_Smith,
     [OBJ_EVENT_GFX_DOG_SLEEP] =                    &gObjectEventGraphicsInfo_Dog_Sleep,
+    [OBJ_EVENT_GFX_JUNA] =                    &gObjectEventGraphicsInfo_Juna,
+    [OBJ_EVENT_GFX_ABYSS_PORTAL] =                    &gObjectEventGraphicsInfo_Abyss_Portal,
+    [OBJ_EVENT_GFX_CHAIR] =                    &gObjectEventGraphicsInfo_Chair,
 
 
 //ORES 

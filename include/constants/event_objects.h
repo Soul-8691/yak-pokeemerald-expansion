@@ -466,7 +466,11 @@
 #define OBJ_EVENT_GFX_SMITH				        452
 #define OBJ_EVENT_GFX_DOG_SLEEP				    453
 
-#define NUM_OBJ_EVENT_GFX                        454
+#define OBJ_EVENT_GFX_JUNA			            454
+#define OBJ_EVENT_GFX_ABYSS_PORTAL				455
+#define OBJ_EVENT_GFX_CHAIR				        456
+
+#define NUM_OBJ_EVENT_GFX                        457
 
 
 // These are dynamic object gfx ids.

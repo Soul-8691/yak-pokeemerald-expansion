@@ -3525,15 +3525,15 @@ const struct SpriteFrameImage gObjectEventPicTable_Demonheadge[] = {
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_Prezleek[] = {
-    overworld_frame(gObjectEventPicTable_Prezleek, 2, 4, 0),
-    overworld_frame(gObjectEventPicTable_Prezleek, 2, 4, 1),
-    overworld_frame(gObjectEventPicTable_Prezleek, 2, 4, 2),
-    overworld_frame(gObjectEventPicTable_Prezleek, 2, 4, 3),
-    overworld_frame(gObjectEventPicTable_Prezleek, 2, 4, 4),
-    overworld_frame(gObjectEventPicTable_Prezleek, 2, 4, 5),
-    overworld_frame(gObjectEventPicTable_Prezleek, 2, 4, 6),
-    overworld_frame(gObjectEventPicTable_Prezleek, 2, 4, 7),
-    overworld_frame(gObjectEventPicTable_Prezleek, 2, 4, 8),
+    overworld_frame(gObjectEventPic_Prezleek, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Prezleek, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Prezleek, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Prezleek, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Prezleek, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Prezleek, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Prezleek, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Prezleek, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Prezleek, 2, 4, 8),
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_LukienLight[] = {
@@ -3949,12 +3949,15 @@ const struct SpriteFrameImage gObjectEventPicTable_Cow_Dairy[] = {
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_Chicken[] = {
-    overworld_frame(gObjectEventPic_Chicken, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Chicken, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Chicken, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Chicken, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Chicken, 4, 4, 4),
-    overworld_frame(gObjectEventPic_Chicken, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Chicken, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Chicken, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Chicken, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Chicken, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Chicken, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Chicken, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Chicken, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Chicken, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Chicken, 2, 4, 8),
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_Evil_Chicken[] = {
@@ -4094,6 +4097,9 @@ const struct SpriteFrameImage gObjectEventPicTable_Sheep[] = {
     overworld_frame(gObjectEventPic_Sheep, 2, 2, 3),
     overworld_frame(gObjectEventPic_Sheep, 2, 2, 4),
     overworld_frame(gObjectEventPic_Sheep, 2, 2, 5),
+    overworld_frame(gObjectEventPic_Sheep, 2, 2, 6),
+    overworld_frame(gObjectEventPic_Sheep, 2, 2, 7),
+    overworld_frame(gObjectEventPic_Sheep, 2, 2, 8),
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_Saraling[] = {
@@ -4397,6 +4403,7 @@ const struct SpriteFrameImage gObjectEventPicTable_Abyssal_Demon[] = {
 const struct SpriteFrameImage gObjectEventPicTable_Chaos_Elemental[] = {
     overworld_frame(gObjectEventPic_Chaos_Elemental, 4, 4, 0),
     overworld_frame(gObjectEventPic_Chaos_Elemental, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Chaos_Elemental, 4, 4, 2),
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_Miner[] = {
@@ -4427,6 +4434,46 @@ const struct SpriteFrameImage gObjectEventPicTable_Dog_Sleep[] = {
     overworld_frame(gObjectEventPic_Dog_Sleep, 4, 4, 0),
     overworld_frame(gObjectEventPic_Dog_Sleep, 4, 4, 1),
 };
+
+const struct SpriteFrameImage gObjectEventPicTable_Juna[] = {
+    overworld_frame(gObjectEventPic_Juna, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Juna, 4, 4, 1),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_Abyss_Portal[] = {
+    overworld_frame(gObjectEventPic_Abyss_Portal, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Abyss_Portal, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Abyss_Portal, 4, 4, 2),
+};
+
+const struct SpriteFrameImage gObjectEventPicTable_Chair[] = {
+    overworld_frame(gObjectEventPic_Chair, 2, 2, 0),
+    overworld_frame(gObjectEventPic_Chair, 2, 2, 1),
+    overworld_frame(gObjectEventPic_Chair, 2, 2, 2),
+    overworld_frame(gObjectEventPic_Chair, 2, 2, 3),
+    overworld_frame(gObjectEventPic_Chair, 2, 2, 4),
+    overworld_frame(gObjectEventPic_Chair, 2, 2, 5),
+    overworld_frame(gObjectEventPic_Chair, 2, 2, 6),
+    overworld_frame(gObjectEventPic_Chair, 2, 2, 7),
+    overworld_frame(gObjectEventPic_Chair, 2, 2, 8),
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //mining

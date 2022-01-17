@@ -44,3 +44,35 @@ script ABYSSALRIFT_Route8_SudoBash{
 
 
 
+
+
+
+
+script ABYSSALRIFT_Mazcab_ENTER{
+msgbox(format("There is a rift in space.\pWould you like to enter it?"), MSGBOX_YESNO)
+				if (var(VAR_RESULT)){
+                    msgbox(format("As you step into the rift the world around you starts to shimmer."))
+                    warp (MAP_MAZCAB_OTOT,0,0,0)
+                    closemessage
+                    release
+                    end
+                }
+                closemessage
+                release
+                end
+}
+
+
+script ABYSSALRIFT_Mazcab_RETURN{
+msgbox(format("There is a rift in space.\pWould you like to enter it?"), MSGBOX_YESNO)
+				if (var(VAR_RESULT)){
+                    msgbox(format("As you step into the rift the world around you starts to shimmer."))
+                    warp (MAP_ROUTE4,1,0,0)
+                    closemessage
+                    release
+                    end
+                }
+                closemessage
+                release
+                end
+}

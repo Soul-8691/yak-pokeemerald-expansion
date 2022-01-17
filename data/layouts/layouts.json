@@ -6320,6 +6320,16 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Sinkhole_1/border.bin",
       "blockdata_filepath": "data/layouts/Sinkhole_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAZCAB_OTOT",
+      "name": "Mazcab_Otot_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_GoblinVillage",
+      "border_filepath": "data/layouts/Mazcab_Otot/border.bin",
+      "blockdata_filepath": "data/layouts/Mazcab_Otot/map.bin"
     }
   ]
 }

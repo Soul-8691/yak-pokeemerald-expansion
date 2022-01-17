@@ -83,6 +83,7 @@
 #define TRAINER_DRAYNOR_MANOR_SKELETON_6          68
 #define TRAINER_DRAYNOR_MANOR_SKELETON_7          69
 #define TRAINER_DRAYNOR_MANOR_SKELETON_8          70
+#define TRAINER_ROUTE3_TRAINER_1                  71
 
 
 

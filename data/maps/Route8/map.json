@@ -67,7 +67,7 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_TRUCK",
+      "graphics_id": "OBJ_EVENT_GFX_ABYSS_PORTAL",
       "x": 42,
       "y": 18,
       "elevation": 3,
@@ -197,7 +197,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_COW",
       "x": 21,
       "y": 28,
       "elevation": 3,
@@ -210,7 +210,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_COW",
       "x": 25,
       "y": 29,
       "elevation": 3,

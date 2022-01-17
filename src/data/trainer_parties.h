@@ -1210,3 +1210,20 @@ static const struct TrainerMonItemDefaultMoves sParty_DRAYNOR_MANOR_SKELETON_8[]
     .heldItem = ITEM_NONE
     }
 };
+
+//ROUTE 3
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE3_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 17,
+    .species = SPECIES_FROGEEL,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_FROGEEL,
+    .heldItem = ITEM_NONE
+    }
+};

@@ -660,6 +660,10 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_SMITH 0x1253
 #define OBJ_EVENT_PAL_DOG_SLEEP 0x1254
 
+#define OBJ_EVENT_PAL_JUNA 0x1255
+#define OBJ_EVENT_PAL_ABYSS_PORTAL 0x1256
+#define OBJ_EVENT_PAL_CHAIR 0x1257
+
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/field_effects/field_effect_object_template_pointers.h"
@@ -914,6 +918,15 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Boaty, OBJ_EVENT_PAL_BOATY},
     {gObjectEventPalette_Suomi, OBJ_EVENT_PAL_SUOMI},
     {gObjectEventPalette_Zezima, OBJ_EVENT_PAL_ZEZIMA},	
+
+    {gObjectEventPalette_Abyssal_Demon, OBJ_EVENT_PAL_ABYSSAL_DEMON},	
+    {gObjectEventPalette_Chaos_Elemental, OBJ_EVENT_PAL_CHAOS_ELEMENTAL},	
+    {gObjectEventPalette_Miner, OBJ_EVENT_PAL_MINER},	
+    {gObjectEventPalette_Smith, OBJ_EVENT_PAL_SMITH},	
+    {gObjectEventPalette_Dog_Sleep, OBJ_EVENT_PAL_DOG_SLEEP},	
+    {gObjectEventPalette_Juna, OBJ_EVENT_PAL_ABYSS_PORTAL},	
+    {gObjectEventPalette_Abyss_Portal, OBJ_EVENT_PAL_ABYSS_PORTAL},	
+    {gObjectEventPalette_Chair, OBJ_EVENT_PAL_CHAIR},	
 //OTHER    
 	{gObjectEventPalette_OrePal, OBJ_EVENT_PAL_ORE_PAL},
 	{gObjectEventPalette_OrePal2, OBJ_EVENT_PAL_ORE_PAL2},

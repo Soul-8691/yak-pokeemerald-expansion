@@ -1430,4 +1430,11 @@ $(OBJEVENTGFXDIR)/pokescape_overworlds/Tzhaar_4.4bpp: %.4bpp: %.png
 
 
 
+$(OBJEVENTGFXDIR)/pokescape_overworlds/Juna.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(OBJEVENTGFXDIR)/pokescape_overworlds/Abyss_Portal.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokescape_overworlds/Chair.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2

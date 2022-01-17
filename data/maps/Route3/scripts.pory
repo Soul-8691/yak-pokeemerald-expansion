@@ -1,21 +1,35 @@
-Route3_MapScripts::
-	.byte 0
+mapscripts Route3_MapScripts{
+    
+}
 
 
-BATTLE_ROUTE3_Trainer_1::
-	trainerbattle_single TRAINER_ROUTE3_TRAINER_1, BATTLE_ROUTE3_Trainer_1_Text_0, BATTLE_ROUTE3_Trainer_1_Text_0
-	msgbox BATTLE_ROUTE3_Trainer_1_Text_0
-	hidenamebox
-	release
-	end
 
 
-Script_Cauldron::
-	msgbox Script_Cauldron_Text_0
-	closemessage
-	release
-	end
 
+
+script BATTLE_ROUTE3_Trainer_1
+{
+    trainerbattle_single(TRAINER_ROUTE3_TRAINER_1, format(""),format(""))
+    //namebox ("CUPHOLDER")
+    msgbox(format(""))
+    hidenamebox
+    release
+    end
+}
+
+
+script Script_Cauldron
+{
+    msgbox(format("Something smells...{PAUSE 15}{PAUSE 15}{PAUSE 15} \nInteresting."))
+    closemessage
+    release
+    end
+}
+
+
+
+
+raw `
 
 Script_Maggie_1::
     lock
@@ -118,9 +132,10 @@ Script_SkeletalOx::
 Text_SkeletalOx:
 	.string "Baroo!$"
 
-BATTLE_ROUTE3_Trainer_1_Text_0:
-	.string "$"
 
-Script_Cauldron_Text_0:
-	.string "Something smells...{PAUSE 15}{PAUSE 15}{PAUSE 15}\n"
-	.string "Interesting.$"
+
+
+
+
+
+`

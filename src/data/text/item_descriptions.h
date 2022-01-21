@@ -2190,6 +2190,10 @@ static const u8 sPartyHatDesc[] = _(
     "a high price.");
 
 //-----------
+static const u8 sSplitbarkDesc[] = _(
+    "A hold item that\n"
+    "boosts PSYCHIC-\n"
+    "type moves.");
 
 
 

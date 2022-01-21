@@ -5766,7 +5766,7 @@
       "name": "Draynor_Manor_Crypt_Layout",
       "width": 10,
       "height": 14,
-      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_DraynorManor",
       "border_filepath": "data/layouts/Draynor_Manor_Crypt/border.bin",
       "blockdata_filepath": "data/layouts/Draynor_Manor_Crypt/map.bin"
@@ -5794,10 +5794,10 @@
     {
       "id": "LAYOUT_DRAYNOR_HOUSE_WO_M_1F",
       "name": "Draynor_House_WoM_1F_Layout",
-      "width": 12,
+      "width": 10,
       "height": 10,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_Wizards_Tower",
+      "secondary_tileset": "gTileset_DraynorManor",
       "border_filepath": "data/layouts/Draynor_House_WoM_1F/border.bin",
       "blockdata_filepath": "data/layouts/Draynor_House_WoM_1F/map.bin"
     },
@@ -5807,7 +5807,7 @@
       "width": 10,
       "height": 10,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_Wizards_Tower",
+      "secondary_tileset": "gTileset_DraynorManor",
       "border_filepath": "data/layouts/Draynor_House_WoM_2F/border.bin",
       "blockdata_filepath": "data/layouts/Draynor_House_WoM_2F/map.bin"
     },
@@ -6330,6 +6330,16 @@
       "secondary_tileset": "gTileset_Mazcab",
       "border_filepath": "data/layouts/Mazcab_Otot/border.bin",
       "blockdata_filepath": "data/layouts/Mazcab_Otot/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_CASTLE_BASEMENT",
+      "name": "Lumbridge_Castle_Basement_Layout",
+      "width": 18,
+      "height": 16,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Wizards_Tower",
+      "border_filepath": "data/layouts/Lumbridge_Castle_Basement/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Castle_Basement/map.bin"
     }
   ]
 }

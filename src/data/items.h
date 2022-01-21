@@ -7153,10 +7153,10 @@ const struct Item gItems[] =
 	
     [ITEM_SPLITBARK] =
     {
-        .name = _("Splitbark"),
+        .name = _("SPLITBARK"),
         .itemId = ITEM_SPLITBARK,
         .price = 0,
-        .description = sCupholderDesc,
+        .description = sSplitbarkDesc,
         .pocket = POCKET_ITEMS,
         .type = 2,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

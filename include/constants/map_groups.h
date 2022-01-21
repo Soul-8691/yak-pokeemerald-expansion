@@ -713,6 +713,7 @@
 #define MAP_POTTERINGTON_FARM_INTERIOR (17 | (38 << 8))
 #define MAP_LUMBRIDGE_HOUSE_3_2F       (18 | (38 << 8))
 #define MAP_LUMBRIDGE_CHURCH           (19 | (38 << 8))
+#define MAP_LUMBRIDGE_CASTLE_BASEMENT  (20 | (38 << 8))
 
 // Map Group 39
 #define MAP_DRAYNOR_HOUSE_MORGAN_1F (0 | (39 << 8))

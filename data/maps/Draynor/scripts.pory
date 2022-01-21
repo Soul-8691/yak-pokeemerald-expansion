@@ -308,7 +308,15 @@ script NPC_Draynor_Woman_1{
 	end
 }
 
-
+script NPC_Draynor_Noob_WillowTree{
+	lock
+	faceplayer
+    namebox("Noob")
+	msgbox(format("The dark wizards told me they were thrown out of the Wizards' Tower for being Zamorakians and now I cannot play by the willow trees."))
+    hidenamebox
+    release
+	end
+}
 
 
 
@@ -370,8 +378,4 @@ script NPC_Draynor_WiseOldMan{
     
 	
     
-
-
-
-
 

@@ -42,10 +42,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GNOME_CHILD",
-      "x": 5,
-      "y": 3,
+      "x": 7,
+      "y": 7,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -54,7 +54,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ARIANE",
+      "graphics_id": "OBJ_EVENT_GFX_WIZARD_M",
       "x": 6,
       "y": 10,
       "elevation": 3,
@@ -93,7 +93,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WIZARD_M",
+      "graphics_id": "OBJ_EVENT_GFX_ARIANE",
       "x": 6,
       "y": 9,
       "elevation": 3,
@@ -173,7 +173,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "NPC_WIZARDSTOWER_Book_2"
     },
     {
       "type": "sign",
@@ -181,7 +181,7 @@
       "y": 5,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "NPC_WIZARDSTOWER_Book_3"
     },
     {
       "type": "sign",
@@ -189,7 +189,15 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "NPC_WIZARDSTOWER_Book_1"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NPC_WIZARDSTOWER_Book_4"
     }
   ]
 }

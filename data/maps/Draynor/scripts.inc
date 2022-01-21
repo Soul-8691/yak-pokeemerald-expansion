@@ -290,6 +290,16 @@ NPC_Draynor_Woman_1::
 	end
 
 
+NPC_Draynor_Noob_WillowTree::
+	lock
+	faceplayer
+	namebox NPC_Draynor_Noob_WillowTree_Text_0
+	msgbox NPC_Draynor_Noob_WillowTree_Text_1
+	hidenamebox
+	release
+	end
+
+
 Draynor_Morgan::
 	lock
 	faceplayer
@@ -433,6 +443,15 @@ NPC_Draynor_Woman_1_Text_1:
 	.string "lead you to the Wizards' Tower.\p"
 	.string "Make sure to be all healed up before\n"
 	.string "trekking there.$"
+
+NPC_Draynor_Noob_WillowTree_Text_0:
+	.string "Noob$"
+
+NPC_Draynor_Noob_WillowTree_Text_1:
+	.string "The dark wizards told me they were\n"
+	.string "thrown out of the Wizards' Tower for\l"
+	.string "being Zamorakians and now I cannot\l"
+	.string "play by the willow trees.$"
 
 Draynor_Morgan_Text_0:
 	.string "Morgan$"

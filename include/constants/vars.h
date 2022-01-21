@@ -115,7 +115,7 @@
 #define VAR_POKESCAPE_KARAMJAVOLCANO_STATE                   0x4060
 #define VAR_POKESCAPE_DRAYNORMANOR_LEVER_STATE                   0x4061 // Unused Var
 #define VAR_POKESCAPE_ERNEST_QUEST_STATE                   0x4062 // Unused Var
-#define VAR_ROUTE104_STATE                   0x4063
+#define VAR_POKESCAPE_LESSERDEMON_STATE                   0x4063
 #define VAR_ROUTE105_STATE                   0x4064 // Unused Var
 #define VAR_ROUTE106_STATE                   0x4065 // Unused Var
 #define VAR_ROUTE107_STATE                   0x4066 // Unused Var

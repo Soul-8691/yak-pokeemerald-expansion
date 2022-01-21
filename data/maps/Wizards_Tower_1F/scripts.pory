@@ -311,7 +311,58 @@ movement Movement_Wizard_WizardsTower4
 
 
 
+script NPC_WIZARDSTOWER_Book_1
+{
+	msgbox(format("There are books filled with all sorts of knowledge!"))
+    closemessage
+	release
+	end
+}
 
+script NPC_WIZARDSTOWER_Book_2
+{
+	msgbox(format("Pouches and Monsters, can you catch em all?\pWhat an interesting read.'"))
+    closemessage
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_Book_3
+{
+	msgbox(format("There are lots of books."))
+    closemessage
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_Book_4
+{
+	msgbox(format("The book is titled Other Worlds & Realms.\pIt seems interesting."))
+    closemessage
+	release
+	end
+}
+
+script NPC_WIZARDSTOWER_Book_5
+{
+	msgbox(format("These notes about the Lumbridge Catacombs.\p…{PAUSE 15} …{PAUSE 15}\pThe monsters located in the catacombs have become far too dangerous so I would highly advice closing the catacombs to the public for the forseeable future. - Ilona."))
+    closemessage
+	release
+	end
+}
+
+
+script NPC_WIZARDSTOWER_Skeleton
+{
+	lock
+	faceplayer
+    namebox ("Skeleton")
+	msgbox(format("Did you come from Lumbridge?\pMy friend lives there!"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
 
 
 script NPC_WIZARDSTOWER_Valina
@@ -342,14 +393,16 @@ script NPC_WIZARDSTOWER_Jalarast
 {
 	lock
 	faceplayer
-    namebox ("Jalarast")
 	if (!flag(FLAG_RECEIVED_SPLITBARK)){
+		namebox ("Jalarast")
 		msgbox(format("Here you should have this!"))
+		hidenamebox
 		giveitem (ITEM_SPLITBARK, 1)
 		waitmessage
 		closemessage
 		setflag(FLAG_RECEIVED_SPLITBARK)
 		}
+	namebox ("Jalarast")
 	msgbox(format("Splitbark has amazing Magical properties!\pIt can enhance a Psychic Type's power."))
 	waitmessage
 	hidenamebox
@@ -611,9 +664,6 @@ movement rinsit_4 {
 
 
 
-
-
-
 script HAM_EVENT_Ariane1
 {
 
@@ -678,6 +728,16 @@ script HAM_EVENT_Ariane1
 	release
 	end
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

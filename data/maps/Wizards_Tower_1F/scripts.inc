@@ -310,6 +310,52 @@ Movement_Wizard_WizardsTower4:
 	face_up
 	step_end
 
+NPC_WIZARDSTOWER_Book_1::
+	msgbox NPC_WIZARDSTOWER_Book_1_Text_0
+	closemessage
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Book_2::
+	msgbox NPC_WIZARDSTOWER_Book_2_Text_0
+	closemessage
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Book_3::
+	msgbox NPC_WIZARDSTOWER_Book_3_Text_0
+	closemessage
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Book_4::
+	msgbox NPC_WIZARDSTOWER_Book_4_Text_0
+	closemessage
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Book_5::
+	msgbox NPC_WIZARDSTOWER_Book_5_Text_0
+	closemessage
+	release
+	end
+
+
+NPC_WIZARDSTOWER_Skeleton::
+	lock
+	faceplayer
+	namebox NPC_WIZARDSTOWER_Skeleton_Text_0
+	msgbox NPC_WIZARDSTOWER_Skeleton_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
 NPC_WIZARDSTOWER_Valina::
 	lock
 	faceplayer
@@ -335,9 +381,9 @@ NPC_WIZARDSTOWER_Traiborn::
 NPC_WIZARDSTOWER_Jalarast::
 	lock
 	faceplayer
-	namebox NPC_WIZARDSTOWER_Jalarast_Text_0
 	goto_if_unset FLAG_RECEIVED_SPLITBARK, NPC_WIZARDSTOWER_Jalarast_2
 NPC_WIZARDSTOWER_Jalarast_1:
+	namebox NPC_WIZARDSTOWER_Jalarast_Text_0
 	msgbox NPC_WIZARDSTOWER_Jalarast_Text_2
 	waitmessage
 	hidenamebox
@@ -345,7 +391,9 @@ NPC_WIZARDSTOWER_Jalarast_1:
 	end
 
 NPC_WIZARDSTOWER_Jalarast_2:
+	namebox NPC_WIZARDSTOWER_Jalarast_Text_0
 	msgbox NPC_WIZARDSTOWER_Jalarast_Text_1
+	hidenamebox
 	giveitem ITEM_SPLITBARK, 1
 	waitmessage
 	closemessage
@@ -693,6 +741,40 @@ HAM_EVENT_WizardsTower_1_Text_6:
 	.string "better circumstances but could I ask\l"
 	.string "you go after Ariane incase she gets\l"
 	.string "into trouble.$"
+
+NPC_WIZARDSTOWER_Book_1_Text_0:
+	.string "There are books filled with all sorts of\n"
+	.string "knowledge!$"
+
+NPC_WIZARDSTOWER_Book_2_Text_0:
+	.string "Pouches and Monsters, can you catch em\n"
+	.string "all?\p"
+	.string "What an interesting read.'$"
+
+NPC_WIZARDSTOWER_Book_3_Text_0:
+	.string "There are lots of books.$"
+
+NPC_WIZARDSTOWER_Book_4_Text_0:
+	.string "The book is titled Other Worlds &\n"
+	.string "Realms.\p"
+	.string "It seems interesting.$"
+
+NPC_WIZARDSTOWER_Book_5_Text_0:
+	.string "These notes about the Lumbridge\n"
+	.string "Catacombs.\p"
+	.string "…{PAUSE 15} …{PAUSE 15}\p"
+	.string "The monsters located in the catacombs\n"
+	.string "have become far too dangerous so I\l"
+	.string "would highly advice closing the\l"
+	.string "catacombs to the public for the\l"
+	.string "forseeable future. - Ilona.$"
+
+NPC_WIZARDSTOWER_Skeleton_Text_0:
+	.string "Skeleton$"
+
+NPC_WIZARDSTOWER_Skeleton_Text_1:
+	.string "Did you come from Lumbridge?\p"
+	.string "My friend lives there!$"
 
 NPC_WIZARDSTOWER_Valina_Text_0:
 	.string "Valina$"

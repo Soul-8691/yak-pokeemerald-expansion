@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GYMLEADER_WISE_OLD_MAN",
       "x": 2,
-      "y": 3,
+      "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -37,8 +37,8 @@
       "dest_warp_id": 1
     },
     {
-      "x": 9,
-      "y": 8,
+      "x": 7,
+      "y": 7,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_HOUSE_WO_M_2F",
       "dest_warp_id": 0

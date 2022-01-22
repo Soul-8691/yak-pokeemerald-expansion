@@ -1905,7 +1905,7 @@ static const u8 sFighterTorsoDesc[] = _(
     "gained in battle.");
     
 static const u8 sFireCapeDesc[] = _(
-    "a cape of lava\n"
+    "A cape of lava\n"
     "burning the user\n"
     "when worn.");
    

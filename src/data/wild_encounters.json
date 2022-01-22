@@ -16592,64 +16592,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_STALKER"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_BEHEMOTH_NORMAL_FORM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_STALKER_SENTINEL_FORM"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_ICEFIEND"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SNEAKRPEEP"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_WARPED_BAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BULWARK_BEAST"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_ICEFIEND"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BEHEMOTH_GLUTTONOUS_FORM"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SPIDER_HUGE_FORM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BEHEMOTH_ADOLSCENT_FORM"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_WARPED_BAT"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BEHEMOTH_RUNEBOUND_FORM"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_BEHEMOTH_NORMAL_FORM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_BALANCEELE"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_ICEFIEND"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SOULSEEKER"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SPOOKAXE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_WORLD_GORGER"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_BEHEMOTH_NORMAL_FORM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_SHADOW_FORGER"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_JADINKO"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_DEMON_PUMMELER_FORM"
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_SPIDER_NIGHT_FORM"
               }
             ]
           },

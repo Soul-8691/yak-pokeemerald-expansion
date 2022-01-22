@@ -2250,3 +2250,23 @@ gTilesetPalettes_Mazcab::
 	.align 2
 gTilesetTiles_Mazcab::
 	.incbin "data/tilesets/secondary/mazcab/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Dungeoneering::
+	.incbin "data/tilesets/secondary/dungeoneering/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/dungeoneering/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/dungeoneering/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/dungeoneering/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/dungeoneering/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/dungeoneering/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/dungeoneering/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/dungeoneering/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/dungeoneering/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/dungeoneering/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/dungeoneering/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/dungeoneering/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/dungeoneering/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Dungeoneering::
+	.incbin "data/tilesets/secondary/dungeoneering/tiles.4bpp.lz"

@@ -6314,10 +6314,10 @@
     {
       "id": "LAYOUT_SINKHOLE_1",
       "name": "Sinkhole_1_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "width": 44,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Sinkhole_1/border.bin",
       "blockdata_filepath": "data/layouts/Sinkhole_1/map.bin"
     },
@@ -6340,6 +6340,56 @@
       "secondary_tileset": "gTileset_Wizards_Tower",
       "border_filepath": "data/layouts/Lumbridge_Castle_Basement/border.bin",
       "blockdata_filepath": "data/layouts/Lumbridge_Castle_Basement/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_SWAMP_HOUSE_FATHER_URHNEY",
+      "name": "Lumbridge_Swamp_House_FatherUrhney_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Lumbridge_Swamp_House_FatherUrhney/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Swamp_House_FatherUrhney/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_SWAMP_SHACK",
+      "name": "Lumbridge_Swamp_Shack_Layout",
+      "width": 6,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Lumbridge_Swamp_Shack/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Swamp_Shack/map.bin"
+    },
+    {
+      "id": "LAYOUT_SINKHOLE_2",
+      "name": "Sinkhole_2_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Sinkhole_2/border.bin",
+      "blockdata_filepath": "data/layouts/Sinkhole_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_SINKHOLE_3",
+      "name": "Sinkhole_3_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Sinkhole_3/border.bin",
+      "blockdata_filepath": "data/layouts/Sinkhole_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_SINKHOLE_4",
+      "name": "Sinkhole_4_Layout",
+      "width": 44,
+      "height": 44,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Sinkhole_4/border.bin",
+      "blockdata_filepath": "data/layouts/Sinkhole_4/map.bin"
     }
   ]
 }

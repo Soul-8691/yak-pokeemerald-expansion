@@ -1439,3 +1439,13 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Mazcab_Otot/scripts.inc"
 
 	.include "data/maps/Lumbridge_Castle_Basement/scripts.inc"
+
+	.include "data/maps/Lumbridge_Swamp_House_FatherUrhney/scripts.inc"
+
+	.include "data/maps/Lumbridge_Swamp_Shack/scripts.inc"
+
+	.include "data/maps/Sinkhole_2/scripts.inc"
+
+	.include "data/maps/Sinkhole_3/scripts.inc"
+
+	.include "data/maps/Sinkhole_4/scripts.inc"

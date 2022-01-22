@@ -743,3 +743,10 @@ gMetatiles_Mazcab::
 	.align 1
 gMetatileAttributes_Mazcab::
 	.incbin "data/tilesets/secondary/mazcab/metatile_attributes.bin"
+	.align 1
+gMetatiles_Dungeoneering::
+	.incbin "data/tilesets/secondary/dungeoneering/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Dungeoneering::
+	.incbin "data/tilesets/secondary/dungeoneering/metatile_attributes.bin"

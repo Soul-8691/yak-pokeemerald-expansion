@@ -1118,3 +1118,14 @@ gTileset_Mazcab::
 	.4byte gMetatiles_Mazcab
 	.4byte gMetatileAttributes_Mazcab
 	.4byte NULL
+
+	.align 2
+gTileset_Dungeoneering::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Dungeoneering
+	.4byte gTilesetPalettes_Dungeoneering
+	.4byte gMetatiles_Dungeoneering
+	.4byte gMetatileAttributes_Dungeoneering
+	.4byte NULL

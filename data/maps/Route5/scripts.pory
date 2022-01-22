@@ -1,0 +1,11 @@
+mapscripts Route5_MapScripts {
+
+}
+
+
+
+script BATTLE_ROUTE5_CAPTAINTOCK{
+    trainerbattle_single(TRAINER_MUGGER_ROUTE4, "Avast ye landlubber!\pPort Sarim be forward!",format("Arrr… Hang the Jib…"))
+    msgbox(format("Me hearties be at thee pub.\pMe hasn't enough doubloons after thee battle with ye to join them thour."))
+    release
+}

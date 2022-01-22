@@ -15,7 +15,7 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_SKELETON_2",
       "x": 26,
       "y": 14,
       "elevation": 3,
@@ -28,7 +28,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_F",
       "x": 18,
       "y": 16,
       "elevation": 3,
@@ -41,7 +41,7 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_M",
       "x": 11,
       "y": 11,
       "elevation": 3,
@@ -54,7 +54,7 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_M",
       "x": 5,
       "y": 7,
       "elevation": 3,
@@ -67,7 +67,7 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_IMP",
       "x": 6,
       "y": 23,
       "elevation": 3,
@@ -80,7 +80,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_IMP",
       "x": 13,
       "y": 27,
       "elevation": 3,
@@ -93,7 +93,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
       "x": 19,
       "y": 28,
       "elevation": 3,

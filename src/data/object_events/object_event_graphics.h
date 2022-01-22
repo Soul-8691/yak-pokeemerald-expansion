@@ -608,6 +608,8 @@ const u32 gObjectEventPic_Slime[] = INCBIN_U32("graphics/object_events/pics/poke
 const u32 gObjectEventPic_Raven[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Raven.4bpp");
 const u32 gObjectEventPic_Seagull[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Seagull.4bpp");
 const u32 gObjectEventPic_Strykewyrm_Sandy[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Strykewyrm_Sandy.4bpp");
+const u32 gObjectEventPic_Strykewyrm_Freezy[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Strykewyrm_Freezy.4bpp");
+const u32 gObjectEventPic_Strykewyrm_Leafy[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Strykewyrm_Leafy.4bpp");
 const u32 gObjectEventPic_Unicorn_White[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Unicorn_White.4bpp");
 const u32 gObjectEventPic_Unicorn_Black[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Unicorn_Black.4bpp");
 
@@ -827,6 +829,8 @@ const u16 gObjectEventPalette_Slime[] = INCBIN_U16("graphics/object_events/pics/
 const u16 gObjectEventPalette_Raven[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Raven.gbapal");
 const u16 gObjectEventPalette_Seagull[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Seagull.gbapal");
 const u16 gObjectEventPalette_Strykewyrm_Sandy[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Strykewyrm_Sandy.gbapal");
+const u16 gObjectEventPalette_Strykewyrm_Freezy[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Strykewyrm_Freezy.gbapal");
+const u16 gObjectEventPalette_Strykewyrm_Leafy[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Strykewyrm_Leafy.gbapal");
 const u16 gObjectEventPalette_Unicorn_White[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Unicorn_White.gbapal");
 const u16 gObjectEventPalette_Unicorn_Black[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Unicorn_Black.gbapal");
 

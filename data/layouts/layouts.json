@@ -5984,8 +5984,8 @@
     {
       "id": "LAYOUT_TZHAAR_CAVES_1",
       "name": "Tzhaar_Caves_1_Layout",
-      "width": 60,
-      "height": 60,
+      "width": 10,
+      "height": 10,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Wizards_Tower",
       "border_filepath": "data/layouts/Tzhaar_Caves_1/border.bin",

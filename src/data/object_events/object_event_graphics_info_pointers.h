@@ -437,8 +437,11 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Slime;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Raven;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Seagull;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Strykewyrm_Sandy;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Strykewyrm_Freezy;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Strykewyrm_Leafy;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Unicorn_White;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Unicorn_Black;
+
 //GYMLEADERS
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GymLeader_Duke_Horacio;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GymLeader_Sir_Amik_Varze;
@@ -908,6 +911,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_RAVEN] =                    &gObjectEventGraphicsInfo_Raven,
     [OBJ_EVENT_GFX_SEAGULL] =                    &gObjectEventGraphicsInfo_Seagull,
     [OBJ_EVENT_GFX_STRYKEWYRM_SANDY] =                    &gObjectEventGraphicsInfo_Strykewyrm_Sandy,
+    [OBJ_EVENT_GFX_STRYKEWYRM_FREEZY] =                    &gObjectEventGraphicsInfo_Strykewyrm_Freezy,
+    [OBJ_EVENT_GFX_STRYKEWYRM_LEAFY] =                    &gObjectEventGraphicsInfo_Strykewyrm_Leafy,
     [OBJ_EVENT_GFX_UNICORN_WHITE] =                    &gObjectEventGraphicsInfo_Unicorn_White,
     [OBJ_EVENT_GFX_UNICORN_BLACK] =                    &gObjectEventGraphicsInfo_Unicorn_Black,
 //GYMLEADERS

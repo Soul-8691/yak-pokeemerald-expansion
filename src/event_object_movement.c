@@ -663,6 +663,8 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_JUNA 0x1255
 #define OBJ_EVENT_PAL_ABYSS_PORTAL 0x1256
 #define OBJ_EVENT_PAL_CHAIR 0x1257
+#define OBJ_EVENT_PAL_STRYKEWYRM_FREEZY 0x1258
+#define OBJ_EVENT_PAL_STRYKEWYRM_LEAFY 0x1259
 
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
@@ -903,6 +905,8 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Raven, OBJ_EVENT_PAL_RAVEN},
     {gObjectEventPalette_Seagull, OBJ_EVENT_PAL_SEAGULL},
     {gObjectEventPalette_Strykewyrm_Sandy, OBJ_EVENT_PAL_STRYKEWYRM_SANDY},
+    {gObjectEventPalette_Strykewyrm_Freezy, OBJ_EVENT_PAL_STRYKEWYRM_FREEZY},
+    {gObjectEventPalette_Strykewyrm_Leafy, OBJ_EVENT_PAL_STRYKEWYRM_LEAFY},
     {gObjectEventPalette_Unicorn_White, OBJ_EVENT_PAL_UNICORN_WHITE},
     {gObjectEventPalette_Unicorn_Black, OBJ_EVENT_PAL_UNICORN_BLACK},
 //GYMLEADERS

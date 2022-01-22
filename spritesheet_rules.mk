@@ -1309,10 +1309,10 @@ $(OBJEVENTGFXDIR)/pokescape_overworlds/Guthraptor.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokescape_overworlds/Skeletal_Ox_M.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokescape_overworlds/Skeletal_Ox_F.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
+	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokescape_overworlds/Terrorbird_1.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
@@ -1348,6 +1348,12 @@ $(OBJEVENTGFXDIR)/pokescape_overworlds/Seagull.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(OBJEVENTGFXDIR)/pokescape_overworlds/Strykewyrm_Sandy.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokescape_overworlds/Strykewyrm_Freezy.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokescape_overworlds/Strykewyrm_Leafy.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokescape_overworlds/Unicorn_White.4bpp: %.4bpp: %.png

@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_KALPHITE_QUEEN",
+      "graphics_id": "OBJ_EVENT_GFX_ABYSS_PORTAL",
       "x": 14,
       "y": 17,
       "elevation": 3,
@@ -54,7 +54,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
       "x": 14,
       "y": 19,
       "elevation": 3,
@@ -128,6 +128,13 @@
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_MUSA_POINT",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 18,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_MODERATOR_LOBBY",
       "dest_warp_id": 0
     }
   ],

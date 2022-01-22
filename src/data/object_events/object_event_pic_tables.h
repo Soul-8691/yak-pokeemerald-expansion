@@ -4109,12 +4109,15 @@ const struct SpriteFrameImage gObjectEventPicTable_Sheep[] = {
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_Saraling[] = {
-    overworld_frame(gObjectEventPic_Saraling, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Saraling, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Saraling, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Saraling, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Saraling, 4, 4, 4),
-    overworld_frame(gObjectEventPic_Saraling, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Saraling, 2, 2, 0),
+    overworld_frame(gObjectEventPic_Saraling, 2, 2, 1),
+    overworld_frame(gObjectEventPic_Saraling, 2, 2, 2),
+    overworld_frame(gObjectEventPic_Saraling, 2, 2, 3),
+    overworld_frame(gObjectEventPic_Saraling, 2, 2, 4),
+    overworld_frame(gObjectEventPic_Saraling, 2, 2, 5),
+    overworld_frame(gObjectEventPic_Saraling, 2, 2, 6),
+    overworld_frame(gObjectEventPic_Saraling, 2, 2, 7),
+    overworld_frame(gObjectEventPic_Saraling, 2, 2, 8),
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_Saraowl[] = {
@@ -4237,13 +4240,42 @@ const struct SpriteFrameImage gObjectEventPicTable_Seagull[] = {
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_Strykewyrm_Sandy[] = {
-    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 4, 4, 4),
-    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Strykewyrm_Sandy, 2, 4, 8),
 };
+
+const struct SpriteFrameImage gObjectEventPicTable_Strykewyrm_Freezy[] = {
+    overworld_frame(gObjectEventPic_Strykewyrm_Freezy, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Strykewyrm_Freezy, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Strykewyrm_Freezy, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Strykewyrm_Freezy, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Strykewyrm_Freezy, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Strykewyrm_Freezy, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Strykewyrm_Freezy, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Strykewyrm_Freezy, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Strykewyrm_Freezy, 2, 4, 8),
+};
+
+
+const struct SpriteFrameImage gObjectEventPicTable_Strykewyrm_Leafy[] = {
+    overworld_frame(gObjectEventPic_Strykewyrm_Leafy, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Strykewyrm_Leafy, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Strykewyrm_Leafy, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Strykewyrm_Leafy, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Strykewyrm_Leafy, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Strykewyrm_Leafy, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Strykewyrm_Leafy, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Strykewyrm_Leafy, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Strykewyrm_Leafy, 2, 4, 8),
+};
+
 
 const struct SpriteFrameImage gObjectEventPicTable_Unicorn_White[] = {
     overworld_frame(gObjectEventPic_Unicorn_White, 4, 4, 0),

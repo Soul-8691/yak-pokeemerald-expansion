@@ -301,7 +301,7 @@ movement Movement_DraynorGuardTree_3
 script NPC_Draynor_Woman_1{
 	lock
 	faceplayer
-    namebox("Woman")
+    namebox("Quester")
 	msgbox(format("If you follow this road south, it will lead you to the Wizards' Tower.\pMake sure to be all healed up before trekking there."))
     hidenamebox
     release

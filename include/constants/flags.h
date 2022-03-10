@@ -1131,10 +1131,9 @@
 #define FLAG_ITEM_DRAYNORMANOR_RUBBERTUBE                          0x418
 #define FLAG_ITEM_ROUTE12_EGG                          0x419
 #define FLAG_ITEM_ROUTE12_PRAYER_POTION                       0x41A
-
 #define FLAG_ITEM_DRAYNORMANOR_TM43_PSYCHO_CUT                        0x41B
+#define FLAG_ITEM_ROUTE1_CHOC_SUNDAY                                    0x41C
 
-#define FLAG_ITEM_MT_PYRE_5F_LAX_INCENSE                            0x41C
 #define FLAG_ITEM_GRANITE_CAVE_B2F_REPEL                            0x41D
 #define FLAG_ITEM_GRANITE_CAVE_B2F_RARE_CANDY                       0x41E
 #define FLAG_ITEM_PETALBURG_WOODS_X_ATTACK                          0x41F

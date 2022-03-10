@@ -1,5 +1,8 @@
+const OBJ_EVENT_ID_DAYCAREWATCHER = 2
+
 mapscripts Route4_MapScripts {
-    MAP_SCRIPT_ON_TRANSITION{
+    MAP_SCRIPT_ON_TRANSITION {
+        call(POTTERINGTON_FARM_OUTDOOR_STATE)
         goto (TryMoveDaycareMan)
     }
 }
@@ -29,9 +32,125 @@ script Route4Sign{
 
 script TryMoveDaycareMan{
     if (flag(FLAG_PENDING_DAYCARE_EGG)){
-        setobjectxyperm(1,17,17)
+        setobjectxyperm(1,19,17)
     }
     else{
-        setobjectxyperm(1,19,8)
+        setobjectxyperm(1,19,16)
     }
+}
+
+
+
+
+
+
+
+script ROUTE4_TRIGGER1_DaycareWatcher 
+{
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_ROUTE4_PLAYER3)
+    waitmovement (0)
+    call(ROUTE4_TRIGGER_DaycareWatcher_PART1)
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_ROUTE4_PLAYER1)
+    waitmovement (0)
+    call(ROUTE4_TRIGGER_DaycareWatcher_PART2)
+}
+
+script ROUTE4_TRIGGER2_DaycareWatcher 
+{
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_ROUTE4_PLAYER3)
+    waitmovement (0)
+    call(ROUTE4_TRIGGER_DaycareWatcher_PART1)
+    applymovement(OBJ_EVENT_ID_PLAYER, MOVEMENT_ROUTE4_PLAYER2)
+    waitmovement (0)
+    call(ROUTE4_TRIGGER_DaycareWatcher_PART2)
+}
+
+script ROUTE4_TRIGGER_DaycareWatcher_PART1 
+{
+    namebox ("Farmer")
+    msgbox(format("Hiya Adventurer!\lCould you follow me?\pI want to show you something."))
+    closemessage
+    hidenamebox
+    //PLAY MUSIC
+    applymovement(OBJ_EVENT_ID_DAYCAREWATCHER, MOVEMENT_ROUTE4_DaycareWatcher1)
+    return
+}
+
+script ROUTE4_TRIGGER_DaycareWatcher_PART2 
+{
+    delay(8)
+    namebox ("Farmer")
+    msgbox(format("This place is called Potterington Farm!\pThey look after your Monsters and help them grow while you are away.\pI also heard that they have set up special breeding pens for certain monsters.\pYou should and inquire about it if it is something that intrests you!\pAnyway that is all I wanted to show you.\pBYYYYYYYYEEEE!"))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_DAYCAREWATCHER, MOVEMENT_ROUTE4_DaycareWatcher2)
+    waitmovement (0)
+    //END MUSIC
+    setobjectxyperm(OBJ_EVENT_ID_DAYCAREWATCHER,8,17)
+    setvar(VAR_POKESCAPE_POTTERINGTON_FARM_STATE, 1)
+    release
+    end
+}
+
+
+
+movement MOVEMENT_ROUTE4_DaycareWatcher1
+{
+    walk_up * 6
+    walk_left * 2
+    delay_8
+    face_right
+}   
+
+movement MOVEMENT_ROUTE4_DaycareWatcher2
+{
+    walk_left * 5
+    walk_up * 1
+    walk_left * 2
+    walk_up * 1
+    delay_8
+    face_down
+}   
+
+movement MOVEMENT_ROUTE4_PLAYER1
+{
+    walk_up * 7
+    walk_left * 1
+}   
+
+movement MOVEMENT_ROUTE4_PLAYER2
+{
+    walk_up * 8
+    walk_left * 1
+}   
+
+movement MOVEMENT_ROUTE4_PLAYER3
+{
+    face_up
+}   
+
+script ROUTE4_DaycareWatcher 
+{
+    faceplayer
+    namebox ("Farmer")
+    msgbox(format("I really enjoy just sitting here and seeing what type of Monsters the next adventurer will bring."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+
+script POTTERINGTON_FARM_OUTDOOR_STATE{
+        switch (var(VAR_POKESCAPE_POTTERINGTON_FARM_STATE)){ 
+            case 0: 
+                return
+            case 1: 
+                setobjectxyperm(OBJ_EVENT_ID_DAYCAREWATCHER,8,17)
+                return
+
+
+        }
 }

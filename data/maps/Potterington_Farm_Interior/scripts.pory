@@ -1,0 +1,160 @@
+mapscripts Potterington_Farm_Interior_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(POTTERINGTON_FARM_STATE)
+
+    }
+}
+
+
+script POTTERINGTON_FARM_STATE{
+        switch (var(VAR_POKESCAPE_POTTERINGTON_FARM_STATE)){ 
+            case 0: 
+                return
+            case 1: 
+                //HELLO LET ME TUTORIAL YOU!
+                return
+            case 2: 
+                //CHECK IF FLAG IS DONE
+                //IF FLAG YES SPAWN NPC?
+
+        }
+}
+
+
+
+script POTTERINGTON_FARM_Lassy 
+{
+    //PLAYSOUND
+    namebox ("Lassy")
+    msgbox(format("WUFF!"))
+    //WAITSOUND
+    closemessage
+    hidenamebox
+    //GIVE EGG
+    release
+    end
+}
+
+
+
+script POTTERINGTON_FARM_Zamorak 
+{
+    faceplayer
+    namebox ("Zamorak")
+    msgbox(format("I am a cupholder."))
+    closemessage
+    hidenamebox
+    //GIVE EGG
+    release
+    end
+}
+
+script POTTERINGTON_FARM_Saradomin 
+{
+    faceplayer
+    namebox ("Saradomin")
+    msgbox(format("I am a cupholder."))
+    closemessage
+    hidenamebox
+    //GIVE EGG
+    release
+    end
+}
+
+script POTTERINGTON_FARM_Guthix
+{
+    faceplayer
+    namebox ("Guthix")
+    msgbox(format("I am a cupholder."))
+    closemessage
+    hidenamebox
+    //GIVE EGG
+    release
+    end
+}
+
+script POTTERINGTON_FARM_Gonthorian
+{
+    faceplayer
+    namebox ("Gonthorian")
+    msgbox(format("I am a cupholder."))
+    closemessage
+    hidenamebox
+    //GIVE EGG
+    release
+    end
+}
+
+script POTTERINGTON_FARM_Zezima
+{
+    faceplayer
+    namebox ("Zezima")
+    msgbox(format("I am a cupholder."))
+    closemessage
+    hidenamebox
+    //GIVE EGG
+    release
+    end
+}
+
+
+script POTTERINGTON_FARM_Prezleek
+{
+    faceplayer
+    namebox ("Prezleek")
+    msgbox(format("I am a cupholder."))
+    closemessage
+    hidenamebox
+    //GIVE EGG
+    release
+    end
+}
+script POTTERINGTON_FARM_Baroo
+{
+    faceplayer
+    namebox ("Baroo")
+    //PLAY SOUND
+    msgbox(format("Baroo, baroo!"))
+    //WAITSOUND
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+script POTTERINGTON_FARM_Demonheadge
+{
+    faceplayer
+    namebox ("Demonheadge")
+    msgbox(format("I am a cupholder."))
+    closemessage
+    hidenamebox
+    //GIVE EGG
+    release
+    end
+}
+
+script POTTERINGTON_FARM_HyperStan
+{
+    faceplayer
+    namebox ("Hyper Stan")
+    msgbox(format("I am a cupholder."))
+    closemessage
+    hidenamebox
+    //GIVE EGG
+    release
+    end
+}
+
+script POTTERINGTON_FARM_JagexMod
+{
+    faceplayer
+    namebox ("Mod ???")
+    msgbox(format("I am a cupholder."))
+    closemessage
+    hidenamebox
+    //GIVE EGG
+    release
+    end
+}

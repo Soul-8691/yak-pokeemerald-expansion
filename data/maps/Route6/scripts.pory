@@ -23,3 +23,69 @@ script TRAINER_ROUTE6_GUARD_1
 }
 
 
+const OBJ_EVENT_ID_MUGGER = 5
+const OBJ_EVENT_ID_RAT = 7
+const OBJ_EVENT_ID_GUARD = 4
+const OBJ_EVENT_ID_UNICORN = 6
+
+
+script ROUTE6_BLOCK_FaladorGuard
+{
+
+    applymovement(OBJ_EVENT_ID_MUGGER, MOVEMENT_ROUTE6_MUGGER)
+    waitmovement (0)
+    namebox ("Mugger")
+    msgbox(format("Heh, I bet you won't even last 30 seconds against my Rat!"))
+    closemessage
+    hidenamebox
+
+    applymovement(OBJ_EVENT_ID_RAT, MOVEMENT_ROUTE6_RAT)
+    waitmovement (0)
+    playmoncry(SPECIES_RATTATA, 0)
+    namebox ("Rat")
+    msgbox(format("Squeeek!"))
+    waitmoncry
+    closemessage
+    hidenamebox
+
+    applymovement(OBJ_EVENT_ID_GUARD, MOVEMENT_ROUTE6_GUARD)
+    waitmovement (0)
+    namebox ("Guard")
+    msgbox(format("You will not enter Falador for as long as I am here you disgusting mugger!"))
+    closemessage
+    hidenamebox
+
+    applymovement(OBJ_EVENT_ID_UNICORN, MOVEMENT_ROUTE6_UNICORN)
+    waitmovement (0)
+    playmoncry(SPECIES_LOTAD, 0)
+    namebox ("Unicorn")
+    msgbox(format("Neeeigh!"))
+    waitmoncry
+    closemessage
+    hidenamebox
+
+    release
+    end
+}
+
+
+
+movement MOVEMENT_ROUTE6_MUGGER
+{
+    walk_in_place_right * 3
+}  
+
+movement MOVEMENT_ROUTE6_RAT
+{
+    walk_in_place_right * 3
+}  
+
+movement MOVEMENT_ROUTE6_GUARD
+{
+    walk_in_place_left * 3
+}  
+
+movement MOVEMENT_ROUTE6_UNICORN
+{
+    walk_in_place_left * 3
+}  

@@ -203,7 +203,7 @@ script NPC_DraynorManor_Ava{
             end
 
         case 1: 
-            msgbox(format("Who through it was a good idea to put piranhas in the fountain…\pit's no where near big enough!"))
+            msgbox(format("Who thought it was a good idea to put piranhas in the fountain…\pIt is no where near big enough!"))
             hidenamebox
             closemessage
             release
@@ -224,7 +224,7 @@ script NPC_DraynorManor_Ava{
             end
             
         case 4: 
-            msgbox(format("If only there were more trainers gullible enough to travel across the land searching far and wide for my…{PAUSE 15}{PAUSE 15} questionable research."))
+            msgbox(format("If only there were more trainers gullible enough to travel across the land searching far and wide for my questionable research."))
             hidenamebox
             closemessage
             release

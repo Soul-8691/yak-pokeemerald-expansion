@@ -195,11 +195,21 @@ script NPC_PORTSARIM_CAPTIAN_TOBIAS
 	lock
 	faceplayer
     namebox ("Tobias")
-	msgbox(format("Hi, there do you want to board the boat to Musa Point, Karamja?\pIt only costs 30."))
-
-    msgbox(format("Suit yourself."))
-
-    msgbox(format("Oh you do not seem to have enough gp."))
+    //FLAG - IF YOU CANNOT SAIL YET
+    msgbox(format("Sorry but our boat has popped a leak.\pIt will be some time before it is repaired.\pYou should go visit the Party Room in Falador or something while you are waiting."))
+	//FLAG AFTER YOU UNLOCK ABILITY TO SAIL
+    msgbox(format("Is your name PLAYER?\pI have received word that you are participating in the MvM Championships, is this correct?\pUsually our services cost 30gp but we have a deal with the Championship League that allows all participants to travel for free!\pSo…{PAUSE 15}…  Ahem!"))
+    //FLAG - NORMAL CODE
+    msgbox(format("Hi, there would you like to board the boat to Musa Point, Karamja?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)==1)
+    {
+        msgbox(format("All aboard!\lWe set sail for Karamja!"))
+        warp (MAP_MUSA_POINT,2,0,0)
+    }
+    else
+    {
+        msgbox(format("Suit yourself."))
+    }
 
     waitmessage
     hidenamebox
@@ -287,6 +297,18 @@ script NPC_PORTSARIM_NPC_1
 	msgbox(format("Sailing will never happen, get over it."))
     waitmessage
     //hidenamebox
+	release
+	end
+}
+
+script NPC_PORTSARIM_MONK_1
+{
+	lock
+	faceplayer
+    namebox ("Monk")
+	msgbox(format("I cannot believe they nicked out ship..."))
+    waitmessage
+    hidenamebox
 	release
 	end
 }

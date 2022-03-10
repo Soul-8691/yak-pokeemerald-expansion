@@ -3,8 +3,9 @@ Route3_MapScripts::
 
 
 BATTLE_ROUTE3_Trainer_1::
-	trainerbattle_single TRAINER_ROUTE3_TRAINER_1, BATTLE_ROUTE3_Trainer_1_Text_0, BATTLE_ROUTE3_Trainer_1_Text_0
-	msgbox BATTLE_ROUTE3_Trainer_1_Text_0
+	trainerbattle_single TRAINER_ROUTE3_TRAINER_1, BATTLE_ROUTE3_Trainer_1_Text_0, BATTLE_ROUTE3_Trainer_1_Text_1
+	namebox BATTLE_ROUTE3_Trainer_1_Text_2
+	msgbox BATTLE_ROUTE3_Trainer_1_Text_3
 	hidenamebox
 	release
 	end
@@ -119,8 +120,20 @@ Text_SkeletalOx:
 	.string "Baroo!$"
 
 BATTLE_ROUTE3_Trainer_1_Text_0:
-	.string "$"
+	.string "I am not really a fan of MvM but I will\n"
+	.string "give it a shot!$"
+
+BATTLE_ROUTE3_Trainer_1_Text_1:
+	.string "Yeah, I still don't like MvM.$"
+
+BATTLE_ROUTE3_Trainer_1_Text_2:
+	.string "CUPHOLDER$"
+
+BATTLE_ROUTE3_Trainer_1_Text_3:
+	.string "I think I'll stick to skilling with my\n"
+	.string "partners instead of trying out for the\l"
+	.string "MvM championships.$"
 
 Script_Cauldron_Text_0:
-	.string "Something smells...{PAUSE 15}{PAUSE 15}{PAUSE 15}\n"
+	.string "Something smells…{PAUSE 15}{PAUSE 15}{PAUSE 15}\n"
 	.string "Interesting.$"

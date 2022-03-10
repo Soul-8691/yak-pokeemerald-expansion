@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE5",
   "name": "Route5",
   "layout": "LAYOUT_ROUTE5",
-  "music": "MUS_PS_VS_ELITE4",
+  "music": "MUS_PS_ROUTE_RIMMINGTON",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -87,9 +87,9 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
       "movement_range_x": 3,
       "movement_range_y": 3,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "BATTLE_ROUTE5_WOODCUTTER",
       "flag": "0"
     }
   ],

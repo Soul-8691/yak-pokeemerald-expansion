@@ -196,21 +196,21 @@ script NPC_WIZARDSTOWER_NoobshowNPCs
 	lock
     applymovement(7, MOVEMENT_WIZARDSTOWER_NPC1)
     waitmovement (0)
-    namebox ("Man 1")
+    namebox ("Traveller")
 	msgbox(format("Hmm sorry, what is that?\pI could not hear you because I was totin my staff along this shiny Wizards' Tower road."))
     waitmessage
     hidenamebox
     closemessage
     applymovement(8, MOVEMENT_WIZARDSTOWER_NPC2)
     waitmovement (0)
-    namebox ("Man 2")
+    namebox ("Noob")
 	msgbox(format("Have you seen a road with so much dust and sand?"))
     waitmessage
     hidenamebox
     closemessage
     applymovement(7, MOVEMENT_WIZARDSTOWER_NPC3)
     waitmovement (0)
-    namebox ("Man 1")
+    namebox ("Traveller")
 	msgbox(format("Listen noob, I have traveled every road in this here land."))
     waitmessage
     hidenamebox

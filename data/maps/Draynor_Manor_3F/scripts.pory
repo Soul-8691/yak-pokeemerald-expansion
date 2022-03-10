@@ -19,7 +19,9 @@ script NPC_DraynorManor_Chicken{
     lock
 	faceplayer
 	namebox("Chicken")
+	playmoncry(SPECIES_TORCHIC, 0)
     msgbox(format("BWawkrk!"))
+	waitmoncry
     hidenamebox
 	closemessage
     namebox("Prof.Oddenstein")

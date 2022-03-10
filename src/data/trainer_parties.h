@@ -1217,13 +1217,46 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE3_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 17,
-    .species = SPECIES_FROGEEL,
+    .species = SPECIES_PAWYA,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_FROGEEL,
+    .species = SPECIES_PHEASANT,
+    .heldItem = ITEM_NONE
+    }
+};
+
+
+
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE5_CAPTIANTOCK[] = {
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_BASS,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_SEERFISH,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE5_WOODCUTTER[] = {
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_BEAVER,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_PLANT_STRANGE_FORM,
     .heldItem = ITEM_NONE
     }
 };

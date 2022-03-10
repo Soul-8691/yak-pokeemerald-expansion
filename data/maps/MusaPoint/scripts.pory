@@ -1,0 +1,41 @@
+mapscripts MusaPoint_MapScripts {
+
+}
+
+
+
+script NPC_MUSAPOINT_SAILOR
+{
+	lock
+	faceplayer
+    namebox ("SAILOR")
+    msgbox(format("Hi, there would you like to board the boat to Port Sarim?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)==1)
+    {
+        msgbox(format("All aboard!\lWe set sail for Port Sarim!"))
+        warp (MAP_PORT_SARIM,8,0,0)
+    }
+    else
+    {
+        msgbox(format("Suit yourself."))
+    }
+
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+script NPC_LegendArts
+{
+	lock
+	faceplayer
+    namebox ("LEGEND ARTS")
+	msgbox(format("What…{PAUSE 15}{PAUSE 15}…{PAUSE 15}{PAUSE 15}…\nHow did I get here?"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}

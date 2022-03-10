@@ -179,11 +179,20 @@ NPC_PORTSARIM_CAPTIAN_TOBIAS::
 	namebox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_0
 	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_1
 	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_2
-	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_3
+	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_3, MSGBOX_YESNO
+	compare VAR_RESULT, 1
+	goto_if_eq NPC_PORTSARIM_CAPTIAN_TOBIAS_2
+	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_5
+NPC_PORTSARIM_CAPTIAN_TOBIAS_1:
 	waitmessage
 	hidenamebox
 	release
 	end
+
+NPC_PORTSARIM_CAPTIAN_TOBIAS_2:
+	msgbox NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_4
+	warp MAP_MUSA_POINT, 2, 0, 0
+	goto NPC_PORTSARIM_CAPTIAN_TOBIAS_1
 
 
 NPC_PORTSARIM_CREWMAN_1::
@@ -257,11 +266,22 @@ NPC_PORTSARIM_NPC_1::
 	end
 
 
+NPC_PORTSARIM_MONK_1::
+	lock
+	faceplayer
+	namebox NPC_PORTSARIM_MONK_1_Text_0
+	msgbox NPC_PORTSARIM_MONK_1_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
 NPC_PORTSARIM_MONK_2::
 	lock
 	faceplayer
-	namebox NPC_PORTSARIM_MONK_2_Text_0
-	msgbox NPC_PORTSARIM_MONK_2_Text_1
+	namebox NPC_PORTSARIM_MONK_1_Text_0
+	msgbox NPC_PORTSARIM_MONK_2_Text_0
 	waitmessage
 	hidenamebox
 	release
@@ -461,15 +481,34 @@ NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_0:
 	.string "Tobias$"
 
 NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_1:
-	.string "Hi, there do you want to board the boat\n"
-	.string "to Musa Point, Karamja?\p"
-	.string "It only costs 30.$"
+	.string "Sorry but our boat has popped a leak.\p"
+	.string "It will be some time before it is\n"
+	.string "repaired.\p"
+	.string "You should go visit the Party Room in\n"
+	.string "Falador or something while you are\l"
+	.string "waiting.$"
 
 NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_2:
-	.string "Suit yourself.$"
+	.string "Is your name PLAYER?\p"
+	.string "I have received word that you are\n"
+	.string "participating in the MvM\l"
+	.string "Championships, is this correct?\p"
+	.string "Usually our services cost 30gp but we\n"
+	.string "have a deal with the Championship\l"
+	.string "League that allows all participants to\l"
+	.string "travel for free!\p"
+	.string "So…{PAUSE 15}… Ahem!$"
 
 NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_3:
-	.string "Oh you do not seem to have enough gp.$"
+	.string "Hi, there would you like to board the\n"
+	.string "boat to Musa Point, Karamja?$"
+
+NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_4:
+	.string "All aboard!\l"
+	.string "We set sail for Karamja!$"
+
+NPC_PORTSARIM_CAPTIAN_TOBIAS_Text_5:
+	.string "Suit yourself.$"
 
 NPC_PORTSARIM_CREWMAN_1_Text_0:
 	.string "These ships go to just about any port.\p"
@@ -516,10 +555,13 @@ NPC_PORTSARIM_LORRIS_Text_1:
 NPC_PORTSARIM_NPC_1_Text_0:
 	.string "Sailing will never happen, get over it.$"
 
-NPC_PORTSARIM_MONK_2_Text_0:
+NPC_PORTSARIM_MONK_1_Text_0:
 	.string "Monk$"
 
-NPC_PORTSARIM_MONK_2_Text_1:
+NPC_PORTSARIM_MONK_1_Text_1:
+	.string "I cannot believe they nicked out ship...$"
+
+NPC_PORTSARIM_MONK_2_Text_0:
 	.string "Sorry, but you cannot enter Entrana\n"
 	.string "while you have those despicable\l"
 	.string "creatures with you.$"

@@ -51,7 +51,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_COW",
       "x": 28,
       "y": 22,
       "elevation": 3,
@@ -64,7 +64,7 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_COW",
       "x": 34,
       "y": 33,
       "elevation": 3,
@@ -77,7 +77,7 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_COW",
       "x": 31,
       "y": 38,
       "elevation": 3,
@@ -90,7 +90,7 @@
       "flag": "FLAG_TEMP_3"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_GOBLIN_1",
       "x": 27,
       "y": 59,
       "elevation": 3,
@@ -103,7 +103,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_GOBLIN_1",
       "x": 27,
       "y": 48,
       "elevation": 3,
@@ -116,7 +116,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_GOBLIN_2",
       "x": 21,
       "y": 46,
       "elevation": 3,
@@ -129,7 +129,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_GOBLIN_2",
       "x": 25,
       "y": 31,
       "elevation": 3,
@@ -142,7 +142,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_CHICKEN",
       "x": 18,
       "y": 15,
       "elevation": 3,
@@ -155,7 +155,7 @@
       "flag": "FLAG_TEMP_4"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_CHICKEN",
       "x": 15,
       "y": 16,
       "elevation": 3,
@@ -168,7 +168,7 @@
       "flag": "FLAG_TEMP_6"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_CHICKEN",
       "x": 17,
       "y": 17,
       "elevation": 3,
@@ -194,7 +194,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_FARMER_M",
       "x": 16,
       "y": 7,
       "elevation": 3,
@@ -207,7 +207,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_GOBLIN_2",
       "x": 26,
       "y": 3,
       "elevation": 3,
@@ -220,7 +220,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_SHEEP",
       "x": 32,
       "y": 2,
       "elevation": 3,
@@ -233,7 +233,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_SHEEP",
       "x": 32,
       "y": 3,
       "elevation": 3,
@@ -246,7 +246,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_FARMER_M",
       "x": 31,
       "y": 3,
       "elevation": 3,
@@ -285,7 +285,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_FARMER_F",
       "x": 29,
       "y": 28,
       "elevation": 3,
@@ -298,7 +298,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_COW_DAIRY",
       "x": 28,
       "y": 28,
       "elevation": 3,
@@ -311,7 +311,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
       "x": 13,
       "y": 15,
       "elevation": 3,
@@ -324,7 +324,7 @@
       "flag": "FLAG_ITEM_ROUTE12_EGG"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
       "x": 35,
       "y": 43,
       "elevation": 3,
@@ -337,7 +337,7 @@
       "flag": "FLAG_ITEM_ROUTE12_WIZARDS_BLIZZARD"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
       "x": 35,
       "y": 18,
       "elevation": 3,
@@ -350,7 +350,7 @@
       "flag": "FLAG_ITEM_ROUTE12_ATTACK_POTION"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
       "x": 36,
       "y": 13,
       "elevation": 3,
@@ -363,7 +363,7 @@
       "flag": "FLAG_ITEM_ROUTE12_CABBAGE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
       "x": 34,
       "y": 60,
       "elevation": 3,
@@ -376,7 +376,7 @@
       "flag": "FLAG_ITEM_ROUTE12_BREAD"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_IMP",
       "x": 20,
       "y": 58,
       "elevation": 3,
@@ -389,7 +389,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
       "x": 15,
       "y": 33,
       "elevation": 3,
@@ -402,7 +402,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_GOBLIN_2",
       "x": 14,
       "y": 37,
       "elevation": 3,

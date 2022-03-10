@@ -436,7 +436,7 @@ Draynor_TREE_Text_2:
 	.string "back to work..$"
 
 NPC_Draynor_Woman_1_Text_0:
-	.string "Woman$"
+	.string "Quester$"
 
 NPC_Draynor_Woman_1_Text_1:
 	.string "If you follow this road south, it will\n"

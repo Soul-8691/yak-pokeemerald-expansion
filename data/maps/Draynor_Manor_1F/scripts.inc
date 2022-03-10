@@ -312,9 +312,9 @@ NPC_DraynorManor_Ava_Text_1:
 	.string "I think the walls are watching me…$"
 
 NPC_DraynorManor_Ava_Text_2:
-	.string "Who through it was a good idea to put\n"
+	.string "Who thought it was a good idea to put\n"
 	.string "piranhas in the fountain…\p"
-	.string "it's no where near big enough!$"
+	.string "It is no where near big enough!$"
 
 NPC_DraynorManor_Ava_Text_3:
 	.string "If you see any animated chairs…\p"
@@ -329,7 +329,7 @@ NPC_DraynorManor_Ava_Text_4:
 NPC_DraynorManor_Ava_Text_5:
 	.string "If only there were more trainers\n"
 	.string "gullible enough to travel across the\l"
-	.string "land searching far and wide for my…{PAUSE 15}{PAUSE 15}\l"
+	.string "land searching far and wide for my\l"
 	.string "questionable research.$"
 
 NPC_DraynorManor_Ava_Text_6:

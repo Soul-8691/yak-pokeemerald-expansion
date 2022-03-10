@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE4",
   "name": "Route4",
   "layout": "LAYOUT_ROUTE4",
-  "music": "MUS_PS_VS_KNIGHTS",
+  "music": "MUS_PS_ROUTE_MISTHALIN",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -45,15 +45,15 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FARMER_F",
-      "x": 7,
-      "y": 17,
+      "x": 17,
+      "y": 25,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route117_PokemonDayCare_EventScript_DaycareWoman",
+      "script": "ROUTE4_DaycareWatcher",
       "flag": "0"
     },
     {
@@ -71,7 +71,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_THEIF",
-      "x": 15,
+      "x": 18,
       "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -198,6 +198,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
+      "x": 14,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -217,7 +230,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_POTTERINGTON_FARM_STATE",
+      "var_value": "0",
+      "script": "ROUTE4_TRIGGER1_DaycareWatcher"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 27,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_POTTERINGTON_FARM_STATE",
+      "var_value": "0",
+      "script": "ROUTE4_TRIGGER2_DaycareWatcher"
+    }
   ],
   "bg_events": [
     {

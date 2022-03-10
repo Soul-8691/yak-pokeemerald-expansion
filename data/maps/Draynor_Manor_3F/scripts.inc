@@ -6,7 +6,9 @@ NPC_DraynorManor_Chicken::
 	lock
 	faceplayer
 	namebox NPC_DraynorManor_Chicken_Text_0
+	playmoncry SPECIES_TORCHIC, 0
 	msgbox NPC_DraynorManor_Chicken_Text_1
+	waitmoncry
 	hidenamebox
 	closemessage
 	namebox NPC_DraynorManor_Chicken_Text_2

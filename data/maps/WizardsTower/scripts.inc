@@ -295,7 +295,7 @@ NPC_WIZARDSTOWER_SleepingWizard_Text_0:
 	.string "They seem to be asleep.$"
 
 NPC_WIZARDSTOWER_NoobshowNPCs_Text_0:
-	.string "Man 1$"
+	.string "Traveller$"
 
 NPC_WIZARDSTOWER_NoobshowNPCs_Text_1:
 	.string "Hmm sorry, what is that?\p"
@@ -304,7 +304,7 @@ NPC_WIZARDSTOWER_NoobshowNPCs_Text_1:
 	.string "Wizards' Tower road.$"
 
 NPC_WIZARDSTOWER_NoobshowNPCs_Text_2:
-	.string "Man 2$"
+	.string "Noob$"
 
 NPC_WIZARDSTOWER_NoobshowNPCs_Text_3:
 	.string "Have you seen a road with so much dust\n"

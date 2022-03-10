@@ -1028,9 +1028,36 @@ const struct Trainer gTrainers[] = {
         .scaling = FALSE,
     },
 
+    //ROUTE 5
+    [TRAINER_ROUTE5_CAPTAINTOCK] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_PIRATE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_pirate,
+        .trainerName = _("CPT. TOCK"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE5_CAPTIANTOCK),
+        .party = {.ItemDefaultMoves = sParty_ROUTE5_CAPTIANTOCK},
+        .scaling = FALSE,
+    },
 
-
-
+    [TRAINER_ROUTE5_WOODCUTTER] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_WOODCUTTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_woodcutter,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE5_WOODCUTTER),
+        .party = {.ItemDefaultMoves = sParty_ROUTE5_WOODCUTTER},
+        .scaling = FALSE,
+    },
 
 
 

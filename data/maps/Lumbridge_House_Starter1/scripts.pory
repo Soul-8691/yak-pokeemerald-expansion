@@ -145,6 +145,12 @@ script ITEM_ROUTE1_DEATH_RUNE
     end
 }
 
+script ITEM_ROUTE1_CHOC_SUNDAY
+{
+    finditem(ITEM_CHOCOLATE_SUNDAY)
+    end
+}
+
 script ITEM_ROUTE1_BREAD
 {
     finditem(ITEM_BREAD)

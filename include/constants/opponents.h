@@ -87,8 +87,11 @@
 //ROUTE 5
 #define TRAINER_ROUTE5_CAPTAINTOCK                72
 #define TRAINER_ROUTE5_WOODCUTTER                 73
-
-
+//ROUTE10
+#define TRAINER_ROUTE10_MONK                    74
+#define TRAINER_ROUTE10_GOBLIN_1                75
+#define TRAINER_ROUTE10_GOBLIN_2                76
+//
 
 
 

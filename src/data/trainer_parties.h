@@ -1260,3 +1260,64 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE5_WOODCUTTER[] = {
     .heldItem = ITEM_NONE
     }
 };
+
+//ROUTE10
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE10_MONK[] = {
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_RABBIT,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_UNICORN_WHITE_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_UNICORN_WHITE_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE10_GOBLIN_1[] = {
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_SPIDER_GIANT_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_GIANT_RAT_BLESSED_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE10_GOBLIN_2[] = {
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_GIANT_RAT_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_SPIDER_HUGE_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_GIANT_RAT_DUNGEON_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+
+

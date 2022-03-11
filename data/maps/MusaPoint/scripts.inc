@@ -51,5 +51,5 @@ NPC_LegendArts_Text_0:
 	.string "LEGEND ARTS$"
 
 NPC_LegendArts_Text_1:
-	.string "What…{PAUSE 15}{PAUSE 15}…{PAUSE 15}{PAUSE 15}…\l"
+	.string "What…{PAUSE 15}{PAUSE 15}…{PAUSE 15}{PAUSE 15}…\n"
 	.string "How did I get here?$"

@@ -1059,6 +1059,50 @@ const struct Trainer gTrainers[] = {
         .scaling = FALSE,
     },
 
+    [TRAINER_ROUTE10_MONK] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_MONK,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_monk,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE10_MONK),
+        .party = {.ItemDefaultMoves = sParty_ROUTE10_MONK},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_ROUTE10_GOBLIN_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_GOBLIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_goblin,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE10_GOBLIN_1),
+        .party = {.ItemDefaultMoves = sParty_ROUTE10_GOBLIN_1},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_ROUTE10_GOBLIN_2] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_GOBLIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_goblin,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE10_GOBLIN_2),
+        .party = {.ItemDefaultMoves = sParty_ROUTE10_GOBLIN_2},
+        .scaling = FALSE,
+    },
 
 
 

@@ -129,7 +129,7 @@ ROUTE10_Pirate_Text_1:
 	.string "It feels like only yeesterrdey.$"
 
 ROUTE10_DragonBot_Text_0:
-	.string "1337AFK3R69$"
+	.string "L337AFK3R69$"
 
 ROUTE10_DragonBot_Text_1:
 	.string "Urgh I went afk for 5 minutes!\p"

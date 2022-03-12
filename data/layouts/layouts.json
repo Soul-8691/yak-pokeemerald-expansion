@@ -6390,6 +6390,96 @@
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Sinkhole_4/border.bin",
       "blockdata_filepath": "data/layouts/Sinkhole_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_BETTYS_EMPORIUM",
+      "name": "PortSarim_BettysEmporium_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/PortSarim_BettysEmporium/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_BettysEmporium/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_GENERAL_STORE_1F",
+      "name": "PortSarim_GeneralStore_1F_Layout",
+      "width": 10,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/PortSarim_GeneralStore_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_GeneralStore_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_GENERAL_STORE_2F",
+      "name": "PortSarim_GeneralStore_2F_Layout",
+      "width": 10,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_PokeScape_Church",
+      "border_filepath": "data/layouts/PortSarim_GeneralStore_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_GeneralStore_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_FISHING_STORE",
+      "name": "PortSarim_FishingStore_Layout",
+      "width": 10,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/PortSarim_FishingStore/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_FishingStore/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_JEWELRY_STORE",
+      "name": "PortSarim_JewelryStore_Layout",
+      "width": 8,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_PokeScape_Church",
+      "border_filepath": "data/layouts/PortSarim_JewelryStore/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_JewelryStore/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_JEWELRY_STORE_2F",
+      "name": "PortSarim_JewelryStore_2F_Layout",
+      "width": 8,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_PokeScape_Church",
+      "border_filepath": "data/layouts/PortSarim_JewelryStore_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_JewelryStore_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_BRIANS_BAZAAR_1F",
+      "name": "PortSarim_BriansBazaar_1F_Layout",
+      "width": 10,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Wizards_Tower",
+      "border_filepath": "data/layouts/PortSarim_BriansBazaar_1F/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_BriansBazaar_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_BRIANS_BAZAAR_2F",
+      "name": "PortSarim_BriansBazaar_2F_Layout",
+      "width": 10,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Wizards_Tower",
+      "border_filepath": "data/layouts/PortSarim_BriansBazaar_2F/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_BriansBazaar_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_BANK",
+      "name": "PortSarim_Bank_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/PortSarim_Bank/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_Bank/map.bin"
     }
   ]
 }

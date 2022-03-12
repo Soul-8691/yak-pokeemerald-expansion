@@ -1449,3 +1449,21 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Sinkhole_3/scripts.inc"
 
 	.include "data/maps/Sinkhole_4/scripts.inc"
+
+	.include "data/maps/PortSarim_BettysEmporium/scripts.inc"
+
+	.include "data/maps/PortSarim_GeneralStore_1F/scripts.inc"
+
+	.include "data/maps/PortSarim_GeneralStore_2F/scripts.inc"
+
+	.include "data/maps/PortSarim_FishingStore/scripts.inc"
+
+	.include "data/maps/PortSarim_JewelryStore/scripts.inc"
+
+	.include "data/maps/PortSarim_JewelryStore_2F/scripts.inc"
+
+	.include "data/maps/PortSarim_BriansBazaar_1F/scripts.inc"
+
+	.include "data/maps/PortSarim_BriansBazaar_2F/scripts.inc"
+
+	.include "data/maps/PortSarim_Bank/scripts.inc"

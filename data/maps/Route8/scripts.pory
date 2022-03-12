@@ -3,6 +3,148 @@ mapscripts Route8_MapScripts {
 
 
 
+
+//NPCS
+
+script ROUTE8_MAN
+{
+    faceplayer
+    namebox ("Man")
+    msgbox(format("This is my secret pathway how did you find it?"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script ROUTE8_MINER_3
+{
+    faceplayer
+    namebox ("MINER")
+    msgbox(format("I wish they had a Bank here.\pI have to make a trip all the way to Falador if I want to heal my monsters."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+
+//ITEMS
+
+script ITEM_ROUTE10_CUPHOLDER_1
+{
+    finditem(ITEM_CABBAGE)
+    end
+}
+
+script ITEM_ROUTE10_CUPHOLDER_2
+{
+    finditem(ITEM_CABBAGE)
+    end
+}
+
+script ITEM_ROUTE10_CUPHOLDER_3
+{
+    finditem(ITEM_CABBAGE)
+    end
+}
+
+
+
+
+
+//BATTLE TRAINERS
+
+script BATTLE_ROUTE8_THEIF{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format("Stand and deliver!"),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE8_NOOB{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format("Sit and be lazy!"),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE8_DnD{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format("Have you seen any penguins around here?"),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE8_MINER_1{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format("Do you know the way to the crafting guild?"),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE8_WOODCUTTER{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format(""),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE8_MINER_2{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format(""),format(""))
+    msgbox(format(""))
+    release
+}
+
+// BATTLE WIZARDS
+script BATTLE_ROUTE8_WIZARD_AIR{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format("I am number 1"),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE8_WIZARD_WATER{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format("I am number 2"),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE8_WIZARD_EARTH{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format("I am number 3"),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE8_WIZARD_FIRE{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format("I am number 4"),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format("I will turn you into a mushroom!"),format(""))
+    msgbox(format("tAKE THIS SANTA HAT BRO. Or secetures special items etc."))
+    release
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 script ABYSSALRIFT_Route8_ENTER{
 msgbox(format("There is a rift in space.\pWould you like to enter it?"), MSGBOX_YESNO)
 				if (var(VAR_RESULT)){
@@ -127,3 +269,8 @@ msgbox(format("Would you like to leave this realm?"), MSGBOX_YESNO)
                 release
                 end
 }
+
+
+
+
+

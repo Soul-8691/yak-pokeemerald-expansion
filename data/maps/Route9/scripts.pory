@@ -1,0 +1,103 @@
+mapscripts Route9_MapScripts {
+}
+
+
+
+
+//NPCS
+
+script ROUTE9_RAPTOR
+{
+    faceplayer
+    namebox ("RAPTOR")
+    msgbox(format("Beware!\pA massive Dragon lurks within the depths of these caves."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+//ITEMS
+
+script ITEM_ROUTE9_CUPHOLDER_1
+{
+    finditem(ITEM_CABBAGE)
+    end
+}
+
+script ITEM_ROUTE9_CUPHOLDER_2
+{
+    finditem(ITEM_CABBAGE)
+    end
+}
+
+script ITEM_ROUTE9_CUPHOLDER_3
+{
+    finditem(ITEM_CABBAGE)
+    end
+}
+
+
+
+
+
+
+
+//BATTLE
+
+script BATTLE_ROUTE9_GUTHIX_WIZARD{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format("For Guthix!"),format("FOR GUUUUTTTHHIIXXX!"))
+    msgbox(format("Wait… Are you telling me Guthix does not want me jumping out of nowhere to scare people who are about to pick up treasure?"))
+    release
+}
+
+
+script BATTLE_ROUTE9_MINER_1{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format("This is Hobgoblin beach!\pNo humans allowed!"),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE9_MINER_2{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format(""),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE9_GOBLIN_1{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format(""),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE9_GOBLIN_2{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format(""),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE9_GOBLIN_3{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format(""),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE9_GOBLIN_4{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format(""),format(""))
+    msgbox(format(""))
+    release
+}
+
+script BATTLE_ROUTE9_MUGGER{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format("I bet you are one of those noobs going to those house parties.\pThis will be easy!"),format(""))
+    msgbox(format("So much traffic comes through here when there is a house party on.\pI can loot so much stuff from the noobs."))
+    release
+}
+
+script BATTLE_ROUTE9_CHEF{
+    trainerbattle_single(TRAINER_ROUTE10_MONK, format("They say there is a massive slime monster living in Rimmington Well."),format("Have you ever wondered how slimes breed?"))
+    msgbox(format("Slimes are pretty neat, I use them in my cooking sometimes."))
+    release
+}

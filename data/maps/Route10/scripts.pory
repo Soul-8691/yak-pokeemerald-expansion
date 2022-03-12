@@ -20,7 +20,7 @@ script ROUTE10_Pirate
 script ROUTE10_DragonBot
 {
     faceplayer
-    namebox ("1337AFK3R69")
+    namebox ("L337AFK3R69")
     msgbox(format("Urgh I went afk for 5 minutes!\pWhen I came back a Goblin had PKed me!"))
     closemessage
     hidenamebox

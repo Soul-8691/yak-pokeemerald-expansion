@@ -727,8 +727,17 @@
 #define MAP_DRAYNOR_SEWERS_4        (8 | (39 << 8))
 
 // Map Group 40
-#define MAP_PORT_SARIM_PUB_1F (0 | (40 << 8))
-#define MAP_PORT_SARIM_PUB_2F (1 | (40 << 8))
+#define MAP_PORT_SARIM_PUB_1F           (0 | (40 << 8))
+#define MAP_PORT_SARIM_PUB_2F           (1 | (40 << 8))
+#define MAP_PORT_SARIM_BETTYS_EMPORIUM  (2 | (40 << 8))
+#define MAP_PORT_SARIM_GENERAL_STORE_1F (3 | (40 << 8))
+#define MAP_PORT_SARIM_GENERAL_STORE_2F (4 | (40 << 8))
+#define MAP_PORT_SARIM_FISHING_STORE    (5 | (40 << 8))
+#define MAP_PORT_SARIM_JEWELRY_STORE    (6 | (40 << 8))
+#define MAP_PORT_SARIM_JEWELRY_STORE_2F (7 | (40 << 8))
+#define MAP_PORT_SARIM_BRIANS_BAZAAR_1F (8 | (40 << 8))
+#define MAP_PORT_SARIM_BRIANS_BAZAAR_2F (9 | (40 << 8))
+#define MAP_PORT_SARIM_BANK             (10 | (40 << 8))
 
 // Map Group 41
 

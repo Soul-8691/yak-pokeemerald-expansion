@@ -776,7 +776,16 @@
   ],
   "gMapGroup40": [
     "PortSarim_Pub_1F",
-    "PortSarim_Pub_2F"
+    "PortSarim_Pub_2F",
+    "PortSarim_BettysEmporium",
+    "PortSarim_GeneralStore_1F",
+    "PortSarim_GeneralStore_2F",
+    "PortSarim_FishingStore",
+    "PortSarim_JewelryStore",
+    "PortSarim_JewelryStore_2F",
+    "PortSarim_BriansBazaar_1F",
+    "PortSarim_BriansBazaar_2F",
+    "PortSarim_Bank"
   ],
   "gMapGroup41": [
 

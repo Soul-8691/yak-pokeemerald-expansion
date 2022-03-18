@@ -659,7 +659,6 @@ static const union AnimCmd *const sAnims_noob_rune[] ={
     sAnim_GeneralFrame0,
 };
 
-
 static const union AnimCmd *const sAnims_pirate[] ={
     sAnim_GeneralFrame0,
 };
@@ -755,6 +754,69 @@ static const union AnimCmd *const sAnims_firemaking[] ={
 static const union AnimCmd *const sAnims_pk_duo[] ={
     sAnim_GeneralFrame0,
 };
+
+static const union AnimCmd *const sAnims_Archaeologist[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_rsmv_duo[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_rsmv_m[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_ahrim_osrs[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_dharok_osrs[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_torag_osrs[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_karil_osrs[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_guthan_osrs[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_verac_osrs[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_wizard_dark[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_divination[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_gertude[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_graceful[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_guard_draynor[] ={
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_quester[] ={
+    sAnim_GeneralFrame0,
+};
+
+
+
 
 
 const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
@@ -949,5 +1011,19 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
 	[TRAINER_PIC_lukien] = sAnims_lukien,
 	[TRAINER_PIC_firemaking] = sAnims_firemaking,
 	[TRAINER_PIC_pk_duo] = sAnims_pk_duo,
-	
+    [TRAINER_PIC_Archaeologist] = sAnims_Archaeologist,
+    [TRAINER_PIC_rsmv_duo] = sAnims_rsmv_duo,
+    [TRAINER_PIC_rsmv_m] = sAnims_rsmv_m,
+    [TRAINER_PIC_ahrim_osrs] = sAnims_ahrim_osrs,
+    [TRAINER_PIC_dharok_osrs] = sAnims_dharok_osrs,
+    [TRAINER_PIC_torag_osrs] = sAnims_torag_osrs,
+    [TRAINER_PIC_karil_osrs] = sAnims_karil_osrs,
+    [TRAINER_PIC_guthan_osrs] = sAnims_guthan_osrs,
+    [TRAINER_PIC_verac_osrs] = sAnims_verac_osrs,
+    [TRAINER_PIC_wizard_dark] = sAnims_wizard_dark,
+    [TRAINER_PIC_divination] = sAnims_divination,
+    [TRAINER_PIC_gertude] = sAnims_gertude,
+    [TRAINER_PIC_graceful] = sAnims_graceful,
+    [TRAINER_PIC_guard_draynor] = sAnims_guard_draynor,
+    [TRAINER_PIC_quester] = sAnims_quester,
 };

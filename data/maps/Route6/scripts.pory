@@ -1,14 +1,54 @@
+const OBJ_EVENT_ID_MUGGER = 5
+const OBJ_EVENT_ID_RAT = 7
+const OBJ_EVENT_ID_GUARD = 4
+const OBJ_EVENT_ID_UNICORN = 6
+
+
 mapscripts Route6_MapScripts {
-    
+    MAP_SCRIPT_ON_TRANSITION {
+    goto(FALADORSOUTH_STATE)
+    }
 }
 
 
 
 
-const OBJ_EVENT_ID_MUGGER = 5
-const OBJ_EVENT_ID_RAT = 7
-const OBJ_EVENT_ID_GUARD = 4
-const OBJ_EVENT_ID_UNICORN = 6
+script FALADORSOUTH_STATE{
+	switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
+        //HAM EVENT PORT SARIM - FALADOR SOUTH GATE ADD NPCS
+		case 0: 
+            removeobject(2)
+            setflag(FLAG_TEMP_1)
+
+            clearflag(FLAG_TEMP_2)
+            addobject(OBJ_EVENT_ID_MUGGER)
+            addobject(OBJ_EVENT_ID_RAT)
+            addobject(OBJ_EVENT_ID_GUARD)
+            addobject(OBJ_EVENT_ID_UNICORN)
+            
+            end
+
+        //HAM EVENT PORT SARIM - ENDS - FALADOR SOUTH GATE REMOVE NPCS
+        case 1:
+            addobject(2)
+            clearflag(FLAG_TEMP_1)
+            
+            removeobject(OBJ_EVENT_ID_MUGGER)
+            removeobject(OBJ_EVENT_ID_RAT)
+            removeobject(OBJ_EVENT_ID_GUARD)
+            removeobject(OBJ_EVENT_ID_UNICORN)
+            setflag(FLAG_TEMP_2)
+            end
+    }
+}
+
+
+
+
+
+
+
+
 
 
 script ROUTE6_BLOCK_FaladorGuard

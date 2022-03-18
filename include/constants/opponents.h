@@ -91,7 +91,34 @@
 #define TRAINER_ROUTE10_MONK                    74
 #define TRAINER_ROUTE10_GOBLIN_1                75
 #define TRAINER_ROUTE10_GOBLIN_2                76
-//
+//ROUTE8
+#define TRAINER_ROUTE8_THEIF                    77
+#define TRAINER_ROUTE8_NOOB                    78
+#define TRAINER_ROUTE8_DnD                    79
+#define TRAINER_ROUTE8_MINER_1                    80
+#define TRAINER_ROUTE8_WOODCUTTER                    81
+#define TRAINER_ROUTE8_MINER_2                    82
+#define TRAINER_ROUTE8_WIZARD_AIR                    83
+#define TRAINER_ROUTE8_WIZARD_WATER                    84
+#define TRAINER_ROUTE8_WIZARD_EARTH                    85
+#define TRAINER_ROUTE8_WIZARD_FIRE                    86
+#define TRAINER_ROUTE8_WIZARD_MALIGNIUS_MORTIFER                    87
+//ROUTE 9
+#define TRAINER_ROUTE9_GOBLIN_1                    88
+#define TRAINER_ROUTE9_GOBLIN_2                    89
+#define TRAINER_ROUTE9_GOBLIN_3                    90
+#define TRAINER_ROUTE9_GOBLIN_4                    91
+#define TRAINER_ROUTE9_CHEF                   92
+#define TRAINER_ROUTE9_MUGGER                   93
+#define TRAINER_ROUTE9_GUTHIX_WIZARD                   94
+#define TRAINER_ROUTE9_MINER_1                   95
+#define TRAINER_ROUTE9_MINER_2                   96
+//route12
+#define TRAINER_ROUTE11_QUESTER                   97
+#define TRAINER_ROUTE11_PIRATE                   98
+#define TRAINER_ROUTE11_SAILOR                   99
+#define TRAINER_ROUTE11_PvMer                   100
+#define TRAINER_ROUTE11_GRACEFUL                   101
 
 
 

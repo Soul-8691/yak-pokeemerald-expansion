@@ -2,6 +2,12 @@ Route8_MapScripts::
 	.byte 0
 
 
+ROUTE8_SIGNPOST::
+	msgbox ROUTE8_SIGNPOST_Text_0
+	closemessage
+	end
+
+
 ROUTE8_MAN::
 	faceplayer
 	namebox ROUTE8_MAN_Text_0
@@ -22,94 +28,94 @@ ROUTE8_MINER_3::
 	end
 
 
-ITEM_ROUTE10_CUPHOLDER_1::
-	finditem ITEM_CABBAGE
+ITEM_ROUTE8_ITEM_MITHRIL_POUCH::
+	finditem ITEM_MITHRIL_POUCH
 	end
 
 
-ITEM_ROUTE10_CUPHOLDER_2::
-	finditem ITEM_CABBAGE
+ITEM_ROUTE8_ITEM_FLAX::
+	finditem ITEM_FLAX
 	end
 
 
-ITEM_ROUTE10_CUPHOLDER_3::
-	finditem ITEM_CABBAGE
+ITEM_ROUTE8_ITEM_PRAYER_POTION::
+	finditem ITEM_PRAYER_POTION
 	end
 
 
 BATTLE_ROUTE8_THEIF::
-	trainerbattle_single TRAINER_ROUTE10_MONK, BATTLE_ROUTE8_THEIF_Text_0, BATTLE_ROUTE8_THEIF_Text_1
+	trainerbattle_single TRAINER_ROUTE8_THEIF, BATTLE_ROUTE8_THEIF_Text_0, BATTLE_ROUTE8_THEIF_Text_1
 	msgbox BATTLE_ROUTE8_THEIF_Text_1
 	release
 	return
 
 
 BATTLE_ROUTE8_NOOB::
-	trainerbattle_single TRAINER_ROUTE10_MONK, BATTLE_ROUTE8_NOOB_Text_0, BATTLE_ROUTE8_THEIF_Text_1
-	msgbox BATTLE_ROUTE8_THEIF_Text_1
+	trainerbattle_single TRAINER_ROUTE8_NOOB, BATTLE_ROUTE8_NOOB_Text_0, BATTLE_ROUTE8_NOOB_Text_1
+	msgbox BATTLE_ROUTE8_NOOB_Text_2
 	release
 	return
 
 
 BATTLE_ROUTE8_DnD::
-	trainerbattle_single TRAINER_ROUTE10_MONK, BATTLE_ROUTE8_DnD_Text_0, BATTLE_ROUTE8_THEIF_Text_1
-	msgbox BATTLE_ROUTE8_THEIF_Text_1
+	trainerbattle_single TRAINER_ROUTE8_DnD, BATTLE_ROUTE8_DnD_Text_0, BATTLE_ROUTE8_DnD_Text_1
+	msgbox BATTLE_ROUTE8_DnD_Text_2
 	release
 	return
 
 
 BATTLE_ROUTE8_MINER_1::
-	trainerbattle_single TRAINER_ROUTE10_MONK, BATTLE_ROUTE8_MINER_1_Text_0, BATTLE_ROUTE8_THEIF_Text_1
-	msgbox BATTLE_ROUTE8_THEIF_Text_1
+	trainerbattle_single TRAINER_ROUTE8_MINER_1, BATTLE_ROUTE8_MINER_1_Text_0, BATTLE_ROUTE8_MINER_1_Text_1
+	msgbox BATTLE_ROUTE8_MINER_1_Text_2
 	release
 	return
 
 
 BATTLE_ROUTE8_WOODCUTTER::
-	trainerbattle_single TRAINER_ROUTE10_MONK, BATTLE_ROUTE8_THEIF_Text_1, BATTLE_ROUTE8_THEIF_Text_1
-	msgbox BATTLE_ROUTE8_THEIF_Text_1
+	trainerbattle_single TRAINER_ROUTE8_WOODCUTTER, BATTLE_ROUTE8_WOODCUTTER_Text_0, BATTLE_ROUTE8_WOODCUTTER_Text_1
+	msgbox BATTLE_ROUTE8_WOODCUTTER_Text_2
 	release
 	return
 
 
 BATTLE_ROUTE8_MINER_2::
-	trainerbattle_single TRAINER_ROUTE10_MONK, BATTLE_ROUTE8_THEIF_Text_1, BATTLE_ROUTE8_THEIF_Text_1
-	msgbox BATTLE_ROUTE8_THEIF_Text_1
+	trainerbattle_single TRAINER_ROUTE8_MINER_2, BATTLE_ROUTE8_MINER_2_Text_0, BATTLE_ROUTE8_MINER_2_Text_1
+	msgbox BATTLE_ROUTE8_MINER_2_Text_1
 	release
 	return
 
 
 BATTLE_ROUTE8_WIZARD_AIR::
-	trainerbattle_single TRAINER_ROUTE10_MONK, BATTLE_ROUTE8_WIZARD_AIR_Text_0, BATTLE_ROUTE8_THEIF_Text_1
-	msgbox BATTLE_ROUTE8_THEIF_Text_1
+	trainerbattle_single TRAINER_ROUTE8_WIZARD_AIR, BATTLE_ROUTE8_WIZARD_AIR_Text_0, BATTLE_ROUTE8_WIZARD_AIR_Text_1
+	msgbox BATTLE_ROUTE8_WIZARD_AIR_Text_2
 	release
 	return
 
 
 BATTLE_ROUTE8_WIZARD_WATER::
-	trainerbattle_single TRAINER_ROUTE10_MONK, BATTLE_ROUTE8_WIZARD_WATER_Text_0, BATTLE_ROUTE8_THEIF_Text_1
-	msgbox BATTLE_ROUTE8_THEIF_Text_1
+	trainerbattle_single TRAINER_ROUTE8_WIZARD_WATER, BATTLE_ROUTE8_WIZARD_WATER_Text_0, BATTLE_ROUTE8_WIZARD_WATER_Text_1
+	msgbox BATTLE_ROUTE8_WIZARD_WATER_Text_2
 	release
 	return
 
 
 BATTLE_ROUTE8_WIZARD_EARTH::
-	trainerbattle_single TRAINER_ROUTE10_MONK, BATTLE_ROUTE8_WIZARD_EARTH_Text_0, BATTLE_ROUTE8_THEIF_Text_1
-	msgbox BATTLE_ROUTE8_THEIF_Text_1
+	trainerbattle_single TRAINER_ROUTE8_WIZARD_EARTH, BATTLE_ROUTE8_WIZARD_EARTH_Text_0, BATTLE_ROUTE8_WIZARD_EARTH_Text_1
+	msgbox BATTLE_ROUTE8_WIZARD_EARTH_Text_2
 	release
 	return
 
 
 BATTLE_ROUTE8_WIZARD_FIRE::
-	trainerbattle_single TRAINER_ROUTE10_MONK, BATTLE_ROUTE8_WIZARD_FIRE_Text_0, BATTLE_ROUTE8_THEIF_Text_1
-	msgbox BATTLE_ROUTE8_THEIF_Text_1
+	trainerbattle_single TRAINER_ROUTE8_WIZARD_FIRE, BATTLE_ROUTE8_WIZARD_FIRE_Text_0, BATTLE_ROUTE8_WIZARD_FIRE_Text_1
+	msgbox BATTLE_ROUTE8_WIZARD_FIRE_Text_2
 	release
 	return
 
 
 BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER::
-	trainerbattle_single TRAINER_ROUTE10_MONK, BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_0, BATTLE_ROUTE8_THEIF_Text_1
-	msgbox BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_1
+	trainerbattle_single TRAINER_ROUTE8_WIZARD_MALIGNIUS_MORTIFER, BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_0, BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_1
+	msgbox BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_2
 	release
 	return
 
@@ -228,6 +234,11 @@ ALTAR_WATER_RETURN_2:
 	end
 
 
+ROUTE8_SIGNPOST_Text_0:
+	.string "WEST to Crafting Guild.\p"
+	.string "SOUTH to Rimmington.\p"
+	.string "EAST to FALADOR.$"
+
 ROUTE8_MAN_Text_0:
 	.string "Man$"
 
@@ -244,40 +255,136 @@ ROUTE8_MINER_3_Text_1:
 	.string "Falador if I want to heal my monsters.$"
 
 BATTLE_ROUTE8_THEIF_Text_0:
-	.string "Stand and deliver!$"
+	.string "Hi there, you wouldn't want some very\n"
+	.string "rare a expensive charcoal would you?$"
 
 BATTLE_ROUTE8_THEIF_Text_1:
-	.string "$"
+	.string "You could have just said no…$"
 
 BATTLE_ROUTE8_NOOB_Text_0:
-	.string "Sit and be lazy!$"
+	.string "LOL!\n"
+	.string "I'll pwn you noob!$"
+
+BATTLE_ROUTE8_NOOB_Text_1:
+	.string "CH00B!$"
+
+BATTLE_ROUTE8_NOOB_Text_2:
+	.string "Ch00b!$"
 
 BATTLE_ROUTE8_DnD_Text_0:
 	.string "Have you seen any penguins around\n"
 	.string "here?$"
 
+BATTLE_ROUTE8_DnD_Text_1:
+	.string "No?\n"
+	.string "Aww I need to find 2 more this week.$"
+
+BATTLE_ROUTE8_DnD_Text_2:
+	.string "If you see any penguins let me know!$"
+
 BATTLE_ROUTE8_MINER_1_Text_0:
 	.string "Do you know the way to the crafting\n"
 	.string "guild?$"
 
+BATTLE_ROUTE8_MINER_1_Text_1:
+	.string "I heard the crafting guild has a good\n"
+	.string "ore deposit.$"
+
+BATTLE_ROUTE8_MINER_1_Text_2:
+	.string "I want to mine some silver ore at the\n"
+	.string "crafting guild.$"
+
+BATTLE_ROUTE8_WOODCUTTER_Text_0:
+	.string "The trick to woodcutting is like any\n"
+	.string "slayer task, the gear!$"
+
+BATTLE_ROUTE8_WOODCUTTER_Text_1:
+	.string "I should invest in better gear…$"
+
+BATTLE_ROUTE8_WOODCUTTER_Text_2:
+	.string "I should invest in better gear.$"
+
+BATTLE_ROUTE8_MINER_2_Text_0:
+	.string "Dig a dig a- oh hello there.$"
+
+BATTLE_ROUTE8_MINER_2_Text_1:
+	.string "Please move away, this rock is mine.$"
+
 BATTLE_ROUTE8_WIZARD_AIR_Text_0:
-	.string "I am number 1$"
+	.string "Stop right there!\p"
+	.string "If you wish to see Mr.Mortifer you will\n"
+	.string "have to defeat the 4 elemental battle\l"
+	.string "kings!\p"
+	.string "Sadly this is as far as you will go!$"
+
+BATTLE_ROUTE8_WIZARD_AIR_Text_1:
+	.string "I may have lost, but you won't get much\n"
+	.string "further!$"
+
+BATTLE_ROUTE8_WIZARD_AIR_Text_2:
+	.string "I lost to you, but I won't next time.$"
 
 BATTLE_ROUTE8_WIZARD_WATER_Text_0:
-	.string "I am number 2$"
+	.string "You are a thousand years away from\n"
+	.string "facing Mr.Mortifer!$"
+
+BATTLE_ROUTE8_WIZARD_WATER_Text_1:
+	.string "You just got lucky that is all…$"
+
+BATTLE_ROUTE8_WIZARD_WATER_Text_2:
+	.string "Water-types are superior.$"
 
 BATTLE_ROUTE8_WIZARD_EARTH_Text_0:
-	.string "I am number 3$"
+	.string "All the other elemental battle kings\n"
+	.string "opted to have demons on their teams.\p"
+	.string "I have decided to take a different\n"
+	.string "approach.\p"
+	.string "How well do you think you can hold up?!$"
+
+BATTLE_ROUTE8_WIZARD_EARTH_Text_1:
+	.string "How could I have lost!\p"
+	.string "Maybe I should look into getting a\n"
+	.string "Sandfiend.$"
+
+BATTLE_ROUTE8_WIZARD_EARTH_Text_2:
+	.string "Maybe I should look into getting a\n"
+	.string "Sandfiend.$"
 
 BATTLE_ROUTE8_WIZARD_FIRE_Text_0:
-	.string "I am number 4$"
+	.string "I am who stands between you and\n"
+	.string "Mr.Mortifer!\p"
+	.string "There is no way you are getting past me!$"
+
+BATTLE_ROUTE8_WIZARD_FIRE_Text_1:
+	.string "Nooo!\p"
+	.string "I don't want to be turned into a\n"
+	.string "mushroom!$"
+
+BATTLE_ROUTE8_WIZARD_FIRE_Text_2:
+	.string "Noo!\p"
+	.string "Please Mr.Mortifer don't turn me into a\n"
+	.string "mushroom again!$"
 
 BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_0:
-	.string "I will turn you into a mushroom!$"
+	.string "Impressive…\p"
+	.string "You got past the 4 elemental lame\n"
+	.string "wizards.\p"
+	.string "I'll have you know my skill is on a\n"
+	.string "completely different level to them.\p"
+	.string "I hope you are prepared for I will turn\n"
+	.string "you into a mushroom, and then maybe\l"
+	.string "have mushroom soup for dinner!$"
 
 BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_1:
-	.string "tAKE THIS SANTA HAT BRO. Or secetures\n"
-	.string "special items etc.$"
+	.string "Impossible!$"
+
+BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_2:
+	.string "Impossible!\p"
+	.string "I have never lost a battle before.\p"
+	.string "You are strong adventurer, I will give\n"
+	.string "you that…\p"
+	.string "Here as a reward for defeating me take\n"
+	.string "this.$"
 
 ABYSSALRIFT_Route8_ENTER_Text_0:
 	.string "There is a rift in space.\p"

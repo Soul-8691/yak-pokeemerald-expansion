@@ -47,6 +47,10 @@ Rimmington_STATE_2:
 	setobjectmovementtype 23, MOVEMENT_TYPE_JOG_IN_PLACE_LEFT
 	setobjectxyperm 7, 27, 8
 	setobjectmovementtype 7, MOVEMENT_TYPE_LOOK_AROUND
+	removeobject 10
+	setobjectxyperm 21, 37, 17
+	setobjectmovementtype 21, MOVEMENT_TYPE_LOOK_AROUND
+	setflag FLAG_TEMP_2
 	release
 	end
 
@@ -63,6 +67,8 @@ Rimmington_STATE_3:
 	removeobject 25
 	removeobject 23
 	setflag FLAG_TEMP_1
+	setobjectxyperm 27, 21, 7
+	setobjectmovementtype 27, MOVEMENT_TYPE_LOOK_AROUND
 	release
 	end
 
@@ -106,8 +112,23 @@ NPC_RIMMINGTON_FANBOYNOOB_4::
 
 
 NPC_RIMMINGTON_RSMVer_1::
+	switch VAR_POKESCAPE_RIMMINGTON_STATE
+	case 0, NPC_RIMMINGTON_RSMVer_1_2
+	case 1, NPC_RIMMINGTON_RSMVer_1_3
+	return
+
+NPC_RIMMINGTON_RSMVer_1_2:
 	namebox NPC_RIMMINGTON_RSMVer_1_Text_0
 	msgbox NPC_RIMMINGTON_RSMVer_1_Text_1
+	hidenamebox
+	release
+	end
+
+NPC_RIMMINGTON_RSMVer_1_3:
+	lock
+	faceplayer
+	namebox NPC_RIMMINGTON_RSMVer_1_Text_0
+	msgbox NPC_RIMMINGTON_RSMVer_1_Text_2
 	hidenamebox
 	release
 	end
@@ -161,6 +182,110 @@ NPC_RIMMINGTON_Tehnoobshow::
 	msgbox NPC_RIMMINGTON_Zezima_Text_1
 	hidenamebox
 	release
+	end
+
+
+NPC_RIMMINGTON_CustomsOfficer::
+	namebox NPC_RIMMINGTON_CustomsOfficer_Text_0
+	msgbox NPC_RIMMINGTON_CustomsOfficer_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_RIMMINGTON_JagexMod::
+	lock
+	faceplayer
+	namebox NPC_RIMMINGTON_JagexMod_Text_0
+	msgbox NPC_RIMMINGTON_JagexMod_Text_1
+	hidenamebox
+	closemessage
+	fadescreen FADE_TO_BLACK
+	removeobject 10
+	setflag FLAG_TEMP_2
+	delay 8
+	fadescreen FADE_FROM_BLACK
+	namebox NPC_RIMMINGTON_JagexMod_Text_0
+	msgbox NPC_RIMMINGTON_JagexMod_Text_2
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+NPC_RIMMINGTON_PETER::
+	lock
+	faceplayer
+	namebox NPC_RIMMINGTON_PETER_Text_0
+	msgbox NPC_RIMMINGTON_PETER_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_RIMMINGTON_GnomeBoiKevin::
+	lock
+	faceplayer
+	namebox NPC_RIMMINGTON_GnomeBoiKevin_Text_0
+	msgbox NPC_RIMMINGTON_GnomeBoiKevin_Text_1
+	hidenamebox
+	giveitem ITEM_TERRORBIRD_POUCH
+	namebox NPC_RIMMINGTON_GnomeBoiKevin_Text_0
+	msgbox NPC_RIMMINGTON_GnomeBoiKevin_Text_2
+	hidenamebox
+	release
+	end
+
+
+NPC_TERRORBIRD::
+	lock
+	faceplayer
+	playmoncry SPECIES_WINGULL, 0
+	msgbox NPC_TERRORBIRD_Text_0
+	waitmoncry
+	release
+	end
+
+
+NPC_RIMMINGTON_WELL::
+	msgbox NPC_RIMMINGTON_WELL_Text_0
+	checkitem ITEM_LANTERN, 1
+	compare VAR_RESULT, 0
+	goto_if_ne NPC_RIMMINGTON_WELL_2
+	closemessage
+	release
+	end
+
+	closemessage
+	release
+	end
+
+NPC_RIMMINGTON_WELL_2:
+	msgbox NPC_RIMMINGTON_WELL_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne NPC_RIMMINGTON_WELL_6
+	release
+	end
+
+NPC_RIMMINGTON_WELL_6:
+	msgbox NPC_RIMMINGTON_WELL_Text_2
+	warp MAP_MAZCAB_OTOT, 0, 0, 0
+	closemessage
+	release
+	end
+
+
+NPC_RIMMINGTON_HOUSE_PORTAL::
+	msgbox NPC_RIMMINGTON_HOUSE_PORTAL_Text_0
+	msgbox NPC_RIMMINGTON_HOUSE_PORTAL_Text_1
+	closemessage
+	release
+	end
+
+
+RIMMINGTON_SIGNPOST_HOUSEPORTAL::
+	msgbox RIMMINGTON_SIGNPOST_HOUSEPORTAL_Text_0
+	closemessage
 	end
 
 
@@ -478,6 +603,9 @@ NPC_RIMMINGTON_RSMVer_1_Text_0:
 NPC_RIMMINGTON_RSMVer_1_Text_1:
 	.string "What should our next RSMV be about?$"
 
+NPC_RIMMINGTON_RSMVer_1_Text_2:
+	.string "Does anyone have an open altar?$"
+
 NPC_RIMMINGTON_RSMVer_2_Text_0:
 	.string "House parties are hype!!$"
 
@@ -509,6 +637,80 @@ NPC_RIMMINGTON_NPC_2_Text_0:
 
 NPC_RIMMINGTON_Tehnoobshow_Text_0:
 	.string "Tehnoobshow$"
+
+NPC_RIMMINGTON_CustomsOfficer_Text_0:
+	.string "OFFICER$"
+
+NPC_RIMMINGTON_CustomsOfficer_Text_1:
+	.string "Behave yourself otherwise I will take\n"
+	.string "you to Rock Island Prison.\p"
+	.string "You don't want to go to Rock Island\n"
+	.string "Prison.$"
+
+NPC_RIMMINGTON_JagexMod_Text_0:
+	.string "Mod ???$"
+
+NPC_RIMMINGTON_JagexMod_Text_1:
+	.string "I am a ninja!\p"
+	.string "Now you see me.$"
+
+NPC_RIMMINGTON_JagexMod_Text_2:
+	.string "Now you don't…$"
+
+NPC_RIMMINGTON_PETER_Text_0:
+	.string "PETER$"
+
+NPC_RIMMINGTON_PETER_Text_1:
+	.string "There are a lot of slushing noises\n"
+	.string "coming from the bottom of this well.\p"
+	.string "Someone should take a look.$"
+
+NPC_RIMMINGTON_GnomeBoiKevin_Text_0:
+	.string "Kevin$"
+
+NPC_RIMMINGTON_GnomeBoiKevin_Text_1:
+	.string "Hiya!\p"
+	.string "I am Little GnomeBoi Kevin!\p"
+	.string "You look exhausted, where did you come\n"
+	.string "from?\p"
+	.string "…{PAUSE 15}… LUMBRIDGE!?\p"
+	.string "This will not do!\p"
+	.string "Here take this!$"
+
+NPC_RIMMINGTON_GnomeBoiKevin_Text_2:
+	.string "You can use that pouch to summon a\n"
+	.string "lightning blue fast Terrorbird!\p"
+	.string "…{PAUSE 15}…{PAUSE 15} NO!\p"
+	.string "Don't use it in battle.\n"
+	.string "You ride it!\p"
+	.string "It will help you travel the land of\n"
+	.string "Gilenor.\p"
+	.string "It is my gift to you.\p"
+	.string "All I ask in return is for you to treat it\n"
+	.string "well.$"
+
+NPC_TERRORBIRD_Text_0:
+	.string "SKREEEE!$"
+
+NPC_RIMMINGTON_WELL_Text_0:
+	.string "It is a well.\p"
+	.string "It looks really dark down there.$"
+
+NPC_RIMMINGTON_WELL_Text_1:
+	.string "Would you like to climb into the well?$"
+
+NPC_RIMMINGTON_WELL_Text_2:
+	.string "You climb down the well.$"
+
+NPC_RIMMINGTON_HOUSE_PORTAL_Text_0:
+	.string "It is the House Portal!$"
+
+NPC_RIMMINGTON_HOUSE_PORTAL_Text_1:
+	.string "It doesn't look like there are any\n"
+	.string "partys on right now…$"
+
+RIMMINGTON_SIGNPOST_HOUSEPORTAL_Text_0:
+	.string "Rimmington House Portal.$"
 
 NPC_SETVAR_RIMMINGTON_Text_0:
 	.string "RIMMINGTON VAR$"

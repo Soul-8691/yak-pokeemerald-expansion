@@ -396,6 +396,22 @@ const u32 gTrainerFrontPic_cook_fm_duo[] = INCBIN_U32("graphics/trainers/pokesca
 const u32 gTrainerFrontPic_lukien[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/POKESCAPER/lukien.4bpp.lz");
 const u32 gTrainerFrontPic_firemaking[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/firemaking.4bpp.lz");
 const u32 gTrainerFrontPic_pk_duo[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/pk_duo.4bpp.lz");
+const u32 gTrainerFrontPic_Archaeologist[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/Archaeologist.4bpp.lz");
+const u32 gTrainerFrontPic_rsmv_duo[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/rsmv_duo.4bpp.lz");
+const u32 gTrainerFrontPic_rsmv_m[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/rsmv_m.4bpp.lz");
+const u32 gTrainerFrontPic_ahrim_osrs[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/ahrim_osrs.4bpp.lz");
+const u32 gTrainerFrontPic_dharok_osrs[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/dharok_osrs.4bpp.lz");
+const u32 gTrainerFrontPic_torag_osrs[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/torag_osrs.4bpp.lz");
+const u32 gTrainerFrontPic_karil_osrs[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/karil_osrs.4bpp.lz");
+const u32 gTrainerFrontPic_guthan_osrs[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/guthan_osrs.4bpp.lz");
+const u32 gTrainerFrontPic_verac_osrs[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/verac_osrs.4bpp.lz");
+const u32 gTrainerFrontPic_wizard_dark[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/wizard_dark.4bpp.lz");
+const u32 gTrainerFrontPic_divination[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/divination.4bpp.lz");
+const u32 gTrainerFrontPic_gertude[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/gertude.4bpp.lz");
+const u32 gTrainerFrontPic_graceful[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/graceful.4bpp.lz");
+const u32 gTrainerFrontPic_guard_draynor[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/guard_draynor.4bpp.lz");
+const u32 gTrainerFrontPic_quester[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/quester.4bpp.lz");
+
 
 //POKESCAPE PALETTES
 const u32 gTrainerPalette_a_nub_tot[] = INCBIN_U32("graphics/trainers/pokescape/palettes/a_nub_tot.gbapal.lz");
@@ -497,7 +513,21 @@ const u32 gTrainerPalette_cook_fm_duo[] = INCBIN_U32("graphics/trainers/pokescap
 const u32 gTrainerPalette_lukien[] = INCBIN_U32("graphics/trainers/pokescape/palettes/lukien.gbapal.lz");
 const u32 gTrainerPalette_firemaking[] = INCBIN_U32("graphics/trainers/pokescape/palettes/firemaking.gbapal.lz");
 const u32 gTrainerPalette_pk_duo[] = INCBIN_U32("graphics/trainers/pokescape/palettes/pk_duo.gbapal.lz");
-
+const u32 gTrainerPalette_Archaeologist[] = INCBIN_U32("graphics/trainers/pokescape/palettes/Archaeologist.gbapal.lz");
+const u32 gTrainerPalette_rsmv_duo[] = INCBIN_U32("graphics/trainers/pokescape/palettes/rsmv_duo.gbapal.lz");
+const u32 gTrainerPalette_rsmv_m[] = INCBIN_U32("graphics/trainers/pokescape/palettes/rsmv_m.gbapal.lz");
+const u32 gTrainerPalette_ahrim_osrs[] = INCBIN_U32("graphics/trainers/pokescape/palettes/ahrim_osrs.gbapal.lz");
+const u32 gTrainerPalette_dharok_osrs[] = INCBIN_U32("graphics/trainers/pokescape/palettes/dharok_osrs.gbapal.lz");
+const u32 gTrainerPalette_torag_osrs[] = INCBIN_U32("graphics/trainers/pokescape/palettes/torag_osrs.gbapal.lz");
+const u32 gTrainerPalette_karil_osrs[] = INCBIN_U32("graphics/trainers/pokescape/palettes/karil_osrs.gbapal.lz");
+const u32 gTrainerPalette_guthan_osrs[] = INCBIN_U32("graphics/trainers/pokescape/palettes/guthan_osrs.gbapal.lz");
+const u32 gTrainerPalette_verac_osrs[] = INCBIN_U32("graphics/trainers/pokescape/palettes/verac_osrs.gbapal.lz");
+const u32 gTrainerPalette_wizard_dark[] = INCBIN_U32("graphics/trainers/pokescape/palettes/wizard_dark.gbapal.lz");
+const u32 gTrainerPalette_divination[] = INCBIN_U32("graphics/trainers/pokescape/palettes/divination.gbapal.lz");
+const u32 gTrainerPalette_gertude[] = INCBIN_U32("graphics/trainers/pokescape/palettes/gertude.gbapal.lz");
+const u32 gTrainerPalette_graceful[] = INCBIN_U32("graphics/trainers/pokescape/palettes/graceful.gbapal.lz");
+const u32 gTrainerPalette_guard_draynor[] = INCBIN_U32("graphics/trainers/pokescape/palettes/guard_draynor.gbapal.lz");
+const u32 gTrainerPalette_quester[] = INCBIN_U32("graphics/trainers/pokescape/palettes/quester.gbapal.lz");
 
 
 

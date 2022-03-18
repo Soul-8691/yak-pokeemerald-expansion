@@ -4,6 +4,17 @@ mapscripts Route8_MapScripts {
 
 
 
+
+
+script ROUTE8_SIGNPOST
+{
+    msgbox(format("WEST to Crafting Guild.\pSOUTH to Rimmington.\pEAST to FALADOR."))
+    closemessage
+    end
+}
+
+
+
 //NPCS
 
 script ROUTE8_MAN
@@ -33,21 +44,21 @@ script ROUTE8_MINER_3
 
 //ITEMS
 
-script ITEM_ROUTE10_CUPHOLDER_1
+script ITEM_ROUTE8_ITEM_MITHRIL_POUCH
 {
-    finditem(ITEM_CABBAGE)
+    finditem(ITEM_MITHRIL_POUCH)
     end
 }
 
-script ITEM_ROUTE10_CUPHOLDER_2
+script ITEM_ROUTE8_ITEM_FLAX
 {
-    finditem(ITEM_CABBAGE)
+    finditem(ITEM_FLAX)
     end
 }
 
-script ITEM_ROUTE10_CUPHOLDER_3
+script ITEM_ROUTE8_ITEM_PRAYER_POTION
 {
-    finditem(ITEM_CABBAGE)
+    finditem(ITEM_PRAYER_POTION)
     end
 }
 
@@ -58,69 +69,69 @@ script ITEM_ROUTE10_CUPHOLDER_3
 //BATTLE TRAINERS
 
 script BATTLE_ROUTE8_THEIF{
-    trainerbattle_single(TRAINER_ROUTE10_MONK, format("Stand and deliver!"),format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE8_THEIF, format("Hi there, you wouldn't want some very rare a expensive charcoal would you?"),format("You could have just said no…"))
+    msgbox(format("You could have just said no…"))
     release
 }
 
 script BATTLE_ROUTE8_NOOB{
-    trainerbattle_single(TRAINER_ROUTE10_MONK, format("Sit and be lazy!"),format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE8_NOOB, format("LOL!\nI'll pwn you noob!"),format("CH00B!"))
+    msgbox(format("Ch00b!"))
     release
 }
 
 script BATTLE_ROUTE8_DnD{
-    trainerbattle_single(TRAINER_ROUTE10_MONK, format("Have you seen any penguins around here?"),format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE8_DnD, format("Have you seen any penguins around here?"),format("No?\nAww I need to find 2 more this week."))
+    msgbox(format("If you see any penguins let me know!"))
     release
 }
 
 script BATTLE_ROUTE8_MINER_1{
-    trainerbattle_single(TRAINER_ROUTE10_MONK, format("Do you know the way to the crafting guild?"),format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE8_MINER_1, format("Do you know the way to the crafting guild?"),format("I heard the crafting guild has a good ore deposit."))
+    msgbox(format("I want to mine some silver ore at the crafting guild."))
     release
 }
 
 script BATTLE_ROUTE8_WOODCUTTER{
-    trainerbattle_single(TRAINER_ROUTE10_MONK, format(""),format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE8_WOODCUTTER, format("The trick to woodcutting is like any slayer task, the gear!"),format("I should invest in better gear…"))
+    msgbox(format("I should invest in better gear."))
     release
 }
 
 script BATTLE_ROUTE8_MINER_2{
-    trainerbattle_single(TRAINER_ROUTE10_MONK, format(""),format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE8_MINER_2, format("Dig a dig a- oh hello there."),format("Please move away, this rock is mine."))
+    msgbox(format("Please move away, this rock is mine."))
     release
 }
 
 // BATTLE WIZARDS
 script BATTLE_ROUTE8_WIZARD_AIR{
-    trainerbattle_single(TRAINER_ROUTE10_MONK, format("I am number 1"),format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE8_WIZARD_AIR, format("Stop right there!\pIf you wish to see Mr.Mortifer you will have to defeat the 4 elemental battle kings!\pSadly this is as far as you will go!"),format("I may have lost, but you won't get much further!"))
+    msgbox(format("I lost to you, but I won't next time."))
     release
 }
 
 script BATTLE_ROUTE8_WIZARD_WATER{
-    trainerbattle_single(TRAINER_ROUTE10_MONK, format("I am number 2"),format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE8_WIZARD_WATER, format("You are a thousand years away from facing Mr.Mortifer!"),format("You just got lucky that is all…"))
+    msgbox(format("Water-types are superior."))
     release
 }
 
 script BATTLE_ROUTE8_WIZARD_EARTH{
-    trainerbattle_single(TRAINER_ROUTE10_MONK, format("I am number 3"),format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE8_WIZARD_EARTH, format("All the other elemental battle kings opted to have demons on their teams.\pI have decided to take a different approach.\pHow well do you think you can hold up?!"),format("How could I have lost!\pMaybe I should look into getting a Sandfiend."))
+    msgbox(format("Maybe I should look into getting a Sandfiend."))
     release
 }
 
 script BATTLE_ROUTE8_WIZARD_FIRE{
-    trainerbattle_single(TRAINER_ROUTE10_MONK, format("I am number 4"),format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE8_WIZARD_FIRE, format("I am who stands between you and Mr.Mortifer!\pThere is no way you are getting past me!"),format("Nooo!\pI don't want to be turned into a mushroom!"))
+    msgbox(format("Noo!\pPlease Mr.Mortifer don't turn me into a mushroom again!"))
     release
 }
 
 script BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER{
-    trainerbattle_single(TRAINER_ROUTE10_MONK, format("I will turn you into a mushroom!"),format(""))
-    msgbox(format("tAKE THIS SANTA HAT BRO. Or secetures special items etc."))
+    trainerbattle_single(TRAINER_ROUTE8_WIZARD_MALIGNIUS_MORTIFER, format("Impressive…\pYou got past the 4 elemental lame wizards.\pI'll have you know my skill is on a completely different level to them.\pI hope you are prepared for I will turn you into a mushroom, and then maybe have mushroom soup for dinner!"),format("Impossible!"))
+    msgbox(format("Impossible!\pI have never lost a battle before.\pYou are strong adventurer, I will give you that…\pHere as a reward for defeating me take this."))
     release
 }
 

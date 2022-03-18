@@ -7,6 +7,17 @@ mapscripts Route3_MapScripts{
 
 
 
+//ITEMS
+
+script ITEM_ROUTE3_BREAD
+{
+    finditem(ITEM_BREAD)
+    end
+}
+
+
+
+
 script BATTLE_ROUTE3_Trainer_1
 {
     trainerbattle_single(TRAINER_ROUTE3_TRAINER_1, format("I am not really a fan of MvM but I will give it a shot!"),format("Yeah, I still don't like MvM."))

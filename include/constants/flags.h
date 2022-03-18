@@ -575,10 +575,10 @@
 #define FLAG_HIDDEN_ITEM_DRAYNORMANOR_ITEM_PURPLE_SWEETS        (FLAG_HIDDEN_ITEMS_START + 0x0D)
 #define FLAG_HIDDEN_ITEM_ROUTE10_MINT_CAKE             (FLAG_HIDDEN_ITEMS_START + 0x24)
 #define FLAG_HIDDEN_ITEM_ROUTE10_LAMP_SPDEF            (FLAG_HIDDEN_ITEMS_START + 0x26)
+#define FLAG_HIDDEN_ITEM_PORTSARIM_WATER_RUNE         (FLAG_HIDDEN_ITEMS_START + 0x0E)
+#define FLAG_HIDDEN_ITEM_PORTSARIM_LAMP_SPEED           (FLAG_HIDDEN_ITEMS_START + 0x0F)
+#define FLAG_HIDDEN_ITEM_PORTSARIM_FLAX            (FLAG_HIDDEN_ITEMS_START + 0x10)
 
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x0E)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_ULTRA_BALL           (FLAG_HIDDEN_ITEMS_START + 0x0F)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_STARDUST             (FLAG_HIDDEN_ITEMS_START + 0x10)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x11)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON                 (FLAG_HIDDEN_ITEMS_START + 0x13)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD         (FLAG_HIDDEN_ITEMS_START + 0x12)
@@ -1097,7 +1097,7 @@
 #define FLAG_ITEM_REPEATABLE_ITEM_8                            0x3F8
 #define FLAG_ITEM_REPEATABLE_ITEM_9                                    0x3F9
 #define FLAG_ITEM_REPEATABLE_ITEM_10                                     0x3FA
-
+//POKESCAPE ITEMS
 #define FLAG_ITEM_LUMBRIDGE_BREAD_1                                   0x3FB
 #define FLAG_ITEM_LUMBRIDGE_STEEL_POUCH                               0x3FC
 #define FLAG_ITEM_LUMBRIDGE_DRUNK_DRAGON                               0x3FD
@@ -1132,22 +1132,22 @@
 #define FLAG_ITEM_ROUTE12_PRAYER_POTION                       0x41A
 #define FLAG_ITEM_DRAYNORMANOR_TM43_PSYCHO_CUT                        0x41B
 #define FLAG_ITEM_ROUTE1_CHOC_SUNDAY                                    0x41C
-
 #define FLAG_ITEM_ROUTE10_TM38                            0x41D
 #define FLAG_ITEM_ROUTE10_PINEAPPLE_PUNCH                       0x41E
+#define FLAG_ITEM_ROUTE3_BREAD                          0x41F
+#define FLAG_ITEM_WIZARDSTOWER_AIR_RUNE_2                        0x420
+#define FLAG_ITEM_ROUTE4_FLAX                             0x421
+#define FLAG_ITEM_PORTSARIM_BLUEBERRY_SPECIAL                            0x422
+#define FLAG_ITEM_PORTSARIM_ITEM_FRUIT_BLAST                    0x423
+#define FLAG_ITEM_PORTSARIM_ITEM_SPIRIT_SHARD                  0x424
+#define FLAG_ITEM_ROUTE9_TM54_MUD_BOMB                  0x425
+#define FLAG_ITEM_ROUTE9_MUD_RUNE                    0x426
+#define FLAG_ITEM_ROUTE9_CABBAGE                  0x427
+#define FLAG_ITEM_ROUTE8_ITEM_MITHRIL_POUCH                   0x428
+#define FLAG_ITEM_ROUTE8_ITEM_FLAX                   0x429
+#define FLAG_ITEM_ROUTE8_ITEM_PRAYER_POTION                           0x42A
 
-#define FLAG_ITEM_PETALBURG_WOODS_X_ATTACK                          0x41F
-#define FLAG_ITEM_PETALBURG_WOODS_GREAT_BALL                        0x420
-#define FLAG_ITEM_ROUTE_104_POKE_BALL                               0x421
-#define FLAG_ITEM_PETALBURG_WOODS_ETHER                             0x422
-#define FLAG_ITEM_MAGMA_HIDEOUT_3F_3R_ECAPE_ROPE                    0x423
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_1_ORANGE_MAIL                  0x424
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_HARBOR_MAIL                  0x425
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL                    0x426
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL                  0x427
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_WOOD_MAIL                    0x428
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_4_MECH_MAIL                    0x429
-#define FLAG_ITEM_ROUTE_124_YELLOW_SHARD                            0x42A
+
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_6_GLITTER_MAIL                 0x42B
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_7_TROPIC_MAIL                  0x42C
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_8_BEAD_MAIL                    0x42D

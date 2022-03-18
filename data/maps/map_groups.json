@@ -732,7 +732,10 @@
     "Abyssal_Realm_2",
     "KaramjaVolcano_B1F",
     "KaramjaVolcano_B2F",
-    "KaramjaVolcano_B3F"
+    "KaramjaVolcano_B3F",
+    "AsgarnianDungeon_B1F",
+    "AsgarnianDungeon_B2F",
+    "AsgarnianDungeon_B3F"
   ],
   "gMapGroup37": [
     "Tutorial_Island_Lab_Up",

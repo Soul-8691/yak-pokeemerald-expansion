@@ -170,8 +170,8 @@ MuggerBattleRoute4_Text_0:
 	.string "Stand and deliver!$"
 
 MuggerBattleRoute4_Text_1:
-	.string "People seem very afraid of me. Maybe\n"
-	.string "it's the way I say hello?$"
+	.string "People seem very afraid of me.\p"
+	.string "Maybe it's the way I say hello?$"
 
 ScammerBattleRoute4_Text_0:
 	.string "Psst.. Want to buy some cabbage?$"
@@ -191,9 +191,9 @@ FarmerBattleRoute4_Text_1:
 	.string "monsters!$"
 
 FarmerBattleRoute4_Text_2:
-	.string "Have you checked out the farm? It's a\n"
-	.string "great place to raise monsters of your\l"
-	.string "own!$"
+	.string "Have you checked out the farm?\p"
+	.string "It's a great place to raise monsters of\n"
+	.string "your own!$"
 
 Route4Sign_Text_0:
 	.string "Potterington Farm$"

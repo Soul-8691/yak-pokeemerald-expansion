@@ -6394,8 +6394,8 @@
     {
       "id": "LAYOUT_PORT_SARIM_BETTYS_EMPORIUM",
       "name": "PortSarim_BettysEmporium_Layout",
-      "width": 60,
-      "height": 60,
+      "width": 8,
+      "height": 10,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/PortSarim_BettysEmporium/border.bin",
@@ -6480,6 +6480,36 @@
       "secondary_tileset": "gTileset_Bank",
       "border_filepath": "data/layouts/PortSarim_Bank/border.bin",
       "blockdata_filepath": "data/layouts/PortSarim_Bank/map.bin"
+    },
+    {
+      "id": "LAYOUT_ASGARNIAN_DUNGEON_B1F",
+      "name": "AsgarnianDungeon_B1F_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/AsgarnianDungeon_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/AsgarnianDungeon_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ASGARNIAN_DUNGEON_B2F",
+      "name": "AsgarnianDungeon_B2F_Layout",
+      "width": 16,
+      "height": 18,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/AsgarnianDungeon_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/AsgarnianDungeon_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ASGARNIAN_DUNGEON_B3F",
+      "name": "AsgarnianDungeon_B3F_Layout",
+      "width": 30,
+      "height": 26,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/AsgarnianDungeon_B3F/border.bin",
+      "blockdata_filepath": "data/layouts/AsgarnianDungeon_B3F/map.bin"
     }
   ]
 }

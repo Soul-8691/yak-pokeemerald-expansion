@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE8",
   "name": "Route8",
   "layout": "LAYOUT_ROUTE8",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_ROUTE120",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -114,7 +114,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "2",
+      "trainer_sight_or_berry_tree_id": "3",
       "script": "BATTLE_ROUTE8_WOODCUTTER",
       "flag": "0"
     },
@@ -139,8 +139,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
       "script": "BATTLE_ROUTE8_MINER_2",
       "flag": "0"
     },
@@ -152,8 +152,8 @@
       "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
       "movement_range_x": 4,
       "movement_range_y": 4,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "BATTLE_ROUTE8_DnD",
       "flag": "0"
     },
@@ -175,11 +175,11 @@
       "x": 67,
       "y": 21,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
       "script": "BATTLE_ROUTE8_WIZARD_FIRE",
       "flag": "0"
     },
@@ -230,8 +230,8 @@
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
       "script": "BATTLE_ROUTE8_WIZARD_WATER",
       "flag": "0"
     },
@@ -243,8 +243,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
       "script": "BATTLE_ROUTE8_WIZARD_AIR",
       "flag": "0"
     },
@@ -256,8 +256,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
       "script": "BATTLE_ROUTE8_WIZARD_EARTH",
       "flag": "0"
     },
@@ -297,8 +297,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "ITEM_ROUTE10_CUPHOLDER_3",
-      "flag": "0"
+      "script": "ITEM_ROUTE8_ITEM_PRAYER_POTION",
+      "flag": "FLAG_ITEM_ROUTE8_ITEM_PRAYER_POTION"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MINER",
@@ -323,8 +323,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "ITEM_ROUTE10_CUPHOLDER_2",
-      "flag": "0"
+      "script": "ITEM_ROUTE8_ITEM_MITHRIL_POUCH",
+      "flag": "FLAG_ITEM_ROUTE8_ITEM_MITHRIL_POUCH"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
@@ -336,8 +336,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "ITEM_ROUTE10_CUPHOLDER_1",
-      "flag": "0"
+      "script": "ITEM_ROUTE8_ITEM_FLAX",
+      "flag": "FLAG_ITEM_ROUTE8_ITEM_FLAX"
     }
   ],
   "warp_events": [
@@ -367,6 +367,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 57,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "ROUTE8_SIGNPOST"
+    }
   ]
 }

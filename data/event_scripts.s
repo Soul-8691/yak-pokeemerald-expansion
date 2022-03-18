@@ -1467,3 +1467,9 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/PortSarim_BriansBazaar_2F/scripts.inc"
 
 	.include "data/maps/PortSarim_Bank/scripts.inc"
+
+	.include "data/maps/AsgarnianDungeon_B1F/scripts.inc"
+
+	.include "data/maps/AsgarnianDungeon_B2F/scripts.inc"
+
+	.include "data/maps/AsgarnianDungeon_B3F/scripts.inc"

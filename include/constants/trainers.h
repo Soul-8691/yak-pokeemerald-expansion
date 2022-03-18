@@ -208,6 +208,24 @@
 #define TRAINER_PIC_firemaking				187
 #define TRAINER_PIC_pk_duo					188
 
+#define TRAINER_PIC_Archaeologist			189
+#define TRAINER_PIC_rsmv_duo			    190
+#define TRAINER_PIC_rsmv_m			        191
+
+#define TRAINER_PIC_ahrim_osrs			        192
+#define TRAINER_PIC_dharok_osrs			        193
+#define TRAINER_PIC_torag_osrs			        194
+#define TRAINER_PIC_karil_osrs			        195
+#define TRAINER_PIC_guthan_osrs			        196
+#define TRAINER_PIC_verac_osrs			        197
+#define TRAINER_PIC_wizard_dark			        198
+#define TRAINER_PIC_divination			        199
+#define TRAINER_PIC_gertude			            200
+#define TRAINER_PIC_graceful			        201
+#define TRAINER_PIC_guard_draynor			    202
+#define TRAINER_PIC_quester			            203
+//#define TRAINER_PIC_			        204
+
 
 
 
@@ -508,6 +526,8 @@
 #define TRAINER_CLASS_PLAYER			0x77
 #define TRAINER_CLASS_BARROWS_BROTHER	0x78
 #define TRAINER_CLASS_LEGEND			0x79
+#define TRAINER_CLASS_CHEF			    0x7a
+#define TRAINER_CLASS_AGILE			    0x7b
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

@@ -1,5 +1,37 @@
 Route6_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route6_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+Route6_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	goto FALADORSOUTH_STATE
+	return
+
+
+FALADORSOUTH_STATE::
+	switch VAR_POKESCAPE_FALADOR_STATE
+	case 0, FALADORSOUTH_STATE_2
+	case 1, FALADORSOUTH_STATE_3
+	return
+
+FALADORSOUTH_STATE_2:
+	removeobject 2
+	setflag FLAG_TEMP_1
+	clearflag FLAG_TEMP_2
+	addobject 5
+	addobject 7
+	addobject 4
+	addobject 6
+	end
+
+FALADORSOUTH_STATE_3:
+	addobject 2
+	clearflag FLAG_TEMP_1
+	removeobject 5
+	removeobject 7
+	removeobject 4
+	removeobject 6
+	setflag FLAG_TEMP_2
+	end
 
 
 ROUTE6_BLOCK_FaladorGuard::

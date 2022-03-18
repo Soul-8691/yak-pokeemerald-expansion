@@ -2,6 +2,11 @@ Route3_MapScripts::
 	.byte 0
 
 
+ITEM_ROUTE3_BREAD::
+	finditem ITEM_BREAD
+	end
+
+
 BATTLE_ROUTE3_Trainer_1::
 	trainerbattle_single TRAINER_ROUTE3_TRAINER_1, BATTLE_ROUTE3_Trainer_1_Text_0, BATTLE_ROUTE3_Trainer_1_Text_1
 	namebox BATTLE_ROUTE3_Trainer_1_Text_2

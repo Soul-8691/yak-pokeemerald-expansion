@@ -19,6 +19,7 @@ mapscripts Rimmington_MapScripts{
 script Rimmington_STATE{
 	switch (var(VAR_POKESCAPE_RIMMINGTON_STATE)){ 
 		case 0: 
+            //NPCS House Portal
             playbgm(MUS_RG_GAME_CORNER, 1)
 
 			setobjectxyperm(OBJ_EVENT_ID_ZEZIMA,22,5)
@@ -39,7 +40,7 @@ script Rimmington_STATE{
             setobjectxyperm(24,21,5)
 			setobjectmovementtype(24,MOVEMENT_TYPE_JOG_IN_PLACE_RIGHT)
 
-            setobjectxyperm(27,19,7)
+            setobjectxyperm(27,19,7) //RSMVer_M
 			setobjectmovementtype(27,MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT)
 
             setobjectxyperm(20,20,7)
@@ -57,8 +58,15 @@ script Rimmington_STATE{
             setobjectxyperm(7,27,8)
 			setobjectmovementtype(7,MOVEMENT_TYPE_LOOK_AROUND)
 
+            //NPCs around town.
+            removeobject (10) //HIDEJMOD
+            //SEAGULL
+            setobjectxyperm(21,37,17)
+			setobjectmovementtype(21,MOVEMENT_TYPE_LOOK_AROUND)
+            setflag(FLAG_TEMP_2)
             release
             end
+
     	case 1: 
             //HIDE HOUSE PARTIES
             removeobject (OBJ_EVENT_ID_ZEZIMA)
@@ -73,6 +81,10 @@ script Rimmington_STATE{
             removeobject (25)
             removeobject (23)
             setflag(FLAG_TEMP_1)
+
+            setobjectxyperm(27,21,7) //RSMVer_M
+			setobjectmovementtype(27,MOVEMENT_TYPE_LOOK_AROUND)
+
             release
             end
             
@@ -130,19 +142,26 @@ script NPC_RIMMINGTON_FANBOYNOOB_4{
     end
 }
 
-
-
-
-
-
-
 script NPC_RIMMINGTON_RSMVer_1{
+    switch (var(VAR_POKESCAPE_RIMMINGTON_STATE)){ 
+        
+		case 0: 
+            namebox("RSMVer")
+            msgbox(format("What should our next RSMV be about?"))
+            hidenamebox
+            release
+            end
+        case 1:
+            lock
+            faceplayer
+            namebox("RSMVer")
+            msgbox(format("Does anyone have an open altar?"))
+            hidenamebox
+            release
+            end
+    }
     
-    namebox("RSMVer")
-    msgbox(format("What should our next RSMV be about?"))
-    hidenamebox
-    release
-    end
+    
 }
 
 script NPC_RIMMINGTON_RSMVer_2{
@@ -203,7 +222,139 @@ script NPC_RIMMINGTON_Tehnoobshow{
 }
 
 
+script NPC_RIMMINGTON_CustomsOfficer{
+    
+    namebox("OFFICER")
+    msgbox(format("Behave yourself otherwise I will take you to Rock Island Prison.\pYou don't want to go to Rock Island Prison."))
+    hidenamebox
+    release
+    end
+}
 
+script NPC_RIMMINGTON_JagexMod{
+    lock
+    faceplayer
+    namebox("Mod ???")
+    msgbox(format("I am a ninja!\pNow you see me."))
+    hidenamebox
+    closemessage
+    fadescreen(FADE_TO_BLACK)
+    removeobject (10) //HIDEJMOD
+    setflag(FLAG_TEMP_2)
+    delay(8)
+    fadescreen(FADE_FROM_BLACK)
+    namebox("Mod ???")
+    msgbox(format("Now you don't…"))
+    hidenamebox
+    closemessage
+    release
+    end
+}
+
+script NPC_RIMMINGTON_PETER{
+    lock
+    faceplayer
+    namebox("PETER")
+    msgbox(format("There are a lot of slushing noises coming from the bottom of this well.\pSomeone should take a look."))
+    hidenamebox
+    release
+    end
+}
+
+
+
+
+
+
+script NPC_RIMMINGTON_GnomeBoiKevin{
+    lock
+    faceplayer
+    namebox("Kevin")
+    msgbox(format("Hiya!\pI am Little GnomeBoi Kevin!\pYou look exhausted, where did you come from?\p…{PAUSE 15}… LUMBRIDGE!?\pThis will not do!\pHere take this!"))
+    hidenamebox
+    giveitem (ITEM_TERRORBIRD_POUCH)
+    namebox("Kevin")
+    msgbox(format("You can use that pouch to summon a lightning blue fast Terrorbird!\p…{PAUSE 15}…{PAUSE 15} NO!\pDon't use it in battle.\nYou ride it!\pIt will help you travel the land of Gilenor.\pIt is my gift to you.\pAll I ask in return is for you to treat it well."))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_TERRORBIRD
+{
+	lock
+	faceplayer
+    playmoncry(SPECIES_WINGULL, 0)
+	msgbox(format("SKREEEE!"))
+    waitmoncry
+	release
+	end
+}
+
+
+
+script NPC_RIMMINGTON_WELL{
+
+    msgbox(format("It is a well.\pIt looks really dark down there."))
+
+    checkitem(ITEM_LANTERN, 1)
+        if (var(VAR_RESULT)){
+            msgbox(format("Would you like to climb into the well?"), MSGBOX_YESNO)
+                if (var(VAR_RESULT)){
+                    msgbox(format("You climb down the well."))
+                    warp (MAP_MAZCAB_OTOT,0,0,0)
+                    closemessage
+                    release
+                    end
+                }
+                release
+                end
+        }
+        else {
+            //msgbox(format("You don't have a lantern."))
+            closemessage
+            release
+            end
+        }
+    closemessage
+    release
+    end
+}
+
+
+script NPC_RIMMINGTON_HOUSE_PORTAL{
+
+    msgbox(format("It is the House Portal!"))
+    msgbox(format("It doesn't look like there are any partys on right now…"))
+    //msgbox(format("Would you like to visit someones house?"), MSGBOX_YESNO)
+     //           if (var(VAR_RESULT)){
+     //               msgbox(format("There is no place like home!"))
+     //               warp (MAP_MAZCAB_OTOT,0,0,0)
+    //                closemessage
+    //                release
+    //                end
+    //            }
+    //            release
+    //            end
+    //    }
+    //    else {
+            //msgbox(format("You don't have a lantern."))
+    //        closemessage
+    //        release
+     //       end
+    //    }
+    closemessage
+    release
+    end
+}
+
+
+script RIMMINGTON_SIGNPOST_HOUSEPORTAL
+{
+	msgbox(format("Rimmington House Portal."))
+	closemessage
+	end
+}
 
 
 

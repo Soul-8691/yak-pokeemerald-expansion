@@ -3,19 +3,63 @@ Port_Sarim_MapScripts::
 	.byte 0
 
 Port_Sarim_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	goto PORTSARIM_STATE
 	return
 
 
-Port_Sarim_HAM_EVENT_TRIGGER::
-	goto_if_unset FLAG_EVENT_PORTSARIM_HAM_BOAT, Port_Sarim_HAM_EVENT_TRIGGER_2
+PORTSARIM_STATE::
+	switch VAR_POKESCAPE_FALADOR_STATE
+	case 0, PORTSARIM_STATE_2
+	case 1, PORTSARIM_STATE_3
+	return
+
+PORTSARIM_STATE_2:
+	end
+
+PORTSARIM_STATE_3:
+	removeobject 21
+	removeobject 22
+	removeobject 23
+	removeobject 24
+	removeobject 25
+	removeobject 26
+	removeobject 27
+	setflag FLAG_EVENT_PORTSARIM_HAM_BOAT
+	end
+
+
+PORTSARIM_HAM_EVENT_TRIGGER1::
+	call PORTSARIM_HAM_EVENT_PART1
+	applymovement OBJ_EVENT_ID_CAMERA, PORTSARIM_HAM_CAMERA_1
+	call PORTSARIM_HAM_EVENT_PART2
+	applymovement OBJ_EVENT_ID_CAMERA, PORTSARIM_HAM_CAMERA_2
+	waitmovement 0
+	special RemoveCameraObject
+	delay 20
 	release
 	end
 
-Port_Sarim_HAM_EVENT_TRIGGER_2:
+
+PORTSARIM_HAM_EVENT_TRIGGER2::
+	call PORTSARIM_HAM_EVENT_PART1
+	applymovement OBJ_EVENT_ID_CAMERA, PORTSARIM_HAM_CAMERA_3
+	call PORTSARIM_HAM_EVENT_PART2
+	applymovement OBJ_EVENT_ID_CAMERA, PORTSARIM_HAM_CAMERA_4
+	waitmovement 0
+	special RemoveCameraObject
+	delay 20
+	release
+	end
+
+
+PORTSARIM_HAM_EVENT_PART1::
 	lock
 	delay 60
 	special SpawnCameraObject
-	applymovement OBJ_EVENT_ID_CAMERA, PORTSARIM_HAM_CAMERA_1
+	return
+
+
+PORTSARIM_HAM_EVENT_PART2::
 	delay 40
 	playbgm MUS_PS_ENCOUNTER_HAM, 1
 	waitmovement 0
@@ -23,29 +67,29 @@ Port_Sarim_HAM_EVENT_TRIGGER_2:
 	delay 60
 	PlaySE SE_PIN
 	applymovement 25, PORTSARIM_HAM_LEADER_1
-	namebox Port_Sarim_HAM_EVENT_TRIGGER_Text_0
-	msgbox Port_Sarim_HAM_EVENT_TRIGGER_Text_1
+	namebox PORTSARIM_HAM_EVENT_PART2_Text_0
+	msgbox PORTSARIM_HAM_EVENT_PART2_Text_1
 	waitmovement 0
 	waitmessage
 	hidenamebox
 	applymovement 21, PORTSARIM_HAM_MEMBER_2
-	namebox Port_Sarim_HAM_EVENT_TRIGGER_Text_2
-	msgbox Port_Sarim_HAM_EVENT_TRIGGER_Text_3
+	namebox PORTSARIM_HAM_EVENT_PART2_Text_2
+	msgbox PORTSARIM_HAM_EVENT_PART2_Text_3
 	waitmovement 0
 	waitmessage
 	hidenamebox
 	applymovement 25, PORTSARIM_HAM_LEADER_3
-	namebox Port_Sarim_HAM_EVENT_TRIGGER_Text_0
-	msgbox Port_Sarim_HAM_EVENT_TRIGGER_Text_4
+	namebox PORTSARIM_HAM_EVENT_PART2_Text_0
+	msgbox PORTSARIM_HAM_EVENT_PART2_Text_4
 	waitmovement 0
 	waitmessage
 	hidenamebox
-	namebox Port_Sarim_HAM_EVENT_TRIGGER_Text_2
-	msgbox Port_Sarim_HAM_EVENT_TRIGGER_Text_5
+	namebox PORTSARIM_HAM_EVENT_PART2_Text_2
+	msgbox PORTSARIM_HAM_EVENT_PART2_Text_5
 	waitmessage
 	hidenamebox
-	namebox Port_Sarim_HAM_EVENT_TRIGGER_Text_0
-	msgbox Port_Sarim_HAM_EVENT_TRIGGER_Text_6
+	namebox PORTSARIM_HAM_EVENT_PART2_Text_0
+	msgbox PORTSARIM_HAM_EVENT_PART2_Text_6
 	waitmessage
 	hidenamebox
 	closemessage
@@ -59,6 +103,7 @@ Port_Sarim_HAM_EVENT_TRIGGER_2:
 	removeobject 25
 	removeobject 26
 	setflag FLAG_EVENT_PORTSARIM_HAM_BOAT
+	setvar VAR_POKESCAPE_FALADOR_STATE, 1
 	fadescreen FADE_FROM_BLACK
 	applymovement 27, PORTSARIM_HAM_BOAT
 	waitmovement 0
@@ -67,12 +112,7 @@ Port_Sarim_HAM_EVENT_TRIGGER_2:
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	special SpawnCameraObject
-	applymovement OBJ_EVENT_ID_CAMERA, PORTSARIM_HAM_CAMERA_2
-	waitmovement 0
-	special RemoveCameraObject
-	delay 20
-	release
-	end
+	return
 
 
 PORTSARIM_HAM_LEADER_1:
@@ -129,6 +169,22 @@ PORTSARIM_HAM_CAMERA_2:
 	walk_slow_left
 	step_end
 
+PORTSARIM_HAM_CAMERA_3:
+	walk_slow_diag_southeast
+	walk_slow_diag_southeast
+	walk_slow_diag_southeast
+	walk_slow_right
+	walk_slow_right
+	step_end
+
+PORTSARIM_HAM_CAMERA_4:
+	walk_slow_diag_northwest
+	walk_slow_diag_northwest
+	walk_slow_diag_northwest
+	walk_slow_left
+	walk_slow_left
+	step_end
+
 NPC_FLAGRESETER::
 	lock
 	faceplayer
@@ -162,11 +218,11 @@ NPC_PORTSARIM_BETTY::
 	end
 
 
-NPC_PORTSARIM_BRAIN::
+NPC_PORTSARIM_BRIAN::
 	lock
 	faceplayer
-	namebox NPC_PORTSARIM_BRAIN_Text_0
-	msgbox NPC_PORTSARIM_BRAIN_Text_1
+	namebox NPC_PORTSARIM_BRIAN_Text_0
+	msgbox NPC_PORTSARIM_BRIAN_Text_1
 	waitmessage
 	hidenamebox
 	release
@@ -209,17 +265,6 @@ NPC_PORTSARIM_CREWMAN_2::
 	faceplayer
 	msgbox NPC_PORTSARIM_CREWMAN_2_Text_0
 	waitmessage
-	release
-	end
-
-
-NPC_PORTSARIM_GERRANT::
-	lock
-	faceplayer
-	namebox NPC_PORTSARIM_GERRANT_Text_0
-	msgbox NPC_PORTSARIM_GERRANT_Text_1
-	waitmessage
-	hidenamebox
 	release
 	end
 
@@ -421,32 +466,122 @@ NPC_PORTSARIM_WYDIN::
 	end
 
 
-Port_Sarim_HAM_EVENT_TRIGGER_Text_0:
+NPC_PORTSARIM_GENERALSTORE_CUSTOMER_1::
+	lock
+	faceplayer
+	namebox NPC_PORTSARIM_GENERALSTORE_CUSTOMER_1_Text_0
+	msgbox NPC_PORTSARIM_GENERALSTORE_CUSTOMER_1_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_PORTSARIM_GENERALSTORE_CUSTOMER_2::
+	lock
+	faceplayer
+	namebox NPC_PORTSARIM_GENERALSTORE_CUSTOMER_1_Text_0
+	msgbox NPC_PORTSARIM_GENERALSTORE_CUSTOMER_2_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_PORTSARIM_GERRANT::
+	lock
+	faceplayer
+	namebox NPC_PORTSARIM_GERRANT_Text_0
+	checkitem ITEM_BIG_NET, 1
+	compare VAR_RESULT, 0
+	goto_if_eq NPC_PORTSARIM_GERRANT_2
+	msgbox NPC_PORTSARIM_GERRANT_Text_3
+	closemessage
+	hidenamebox
+	release
+	end
+
+	release
+	end
+
+NPC_PORTSARIM_GERRANT_2:
+	msgbox NPC_PORTSARIM_GERRANT_Text_1
+	closemessage
+	hidenamebox
+	giveitem ITEM_BIG_NET
+	namebox NPC_PORTSARIM_GERRANT_Text_0
+	msgbox NPC_PORTSARIM_GERRANT_Text_2
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_PORTSARIM_FISHING_CUSTOMER::
+	lock
+	faceplayer
+	namebox NPC_PORTSARIM_GENERALSTORE_CUSTOMER_1_Text_0
+	msgbox NPC_PORTSARIM_FISHING_CUSTOMER_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+Generalstore_PortSarim_Clerk::
+	lock
+	faceplayer
+	namebox Generalstore_PortSarim_Clerk_Text_0
+	msgbox Generalstore_PortSarim_Clerk_Text_1
+	waitmessage
+	hidenamebox
+	pokemart GeneralStorePortSarim
+	msgbox Generalstore_PortSarim_Clerk_Text_2
+	release
+	return
+
+
+    .align 2
+GeneralStorePortSarim:
+    .2byte ITEM_EMPTY_BUCKET
+    .2byte ITEM_EMPTY_POT
+    .2byte ITEM_BRONZE_POUCH
+    .2byte ITEM_IRON_POUCH
+    .2byte ITEM_STEEL_POUCH
+    .2byte ITEM_EGG
+    .2byte ITEM_POTATO
+    .2byte ITEM_BREAD
+    .2byte ITEM_CAKE
+    .2byte ITEM_NONE
+    release
+    end
+
+PORTSARIM_HAM_EVENT_PART2_Text_0:
 	.string "H.A.M Leader$"
 
-Port_Sarim_HAM_EVENT_TRIGGER_Text_1:
+PORTSARIM_HAM_EVENT_PART2_Text_1:
 	.string "It's about time you got here rookie!\p"
 	.string "What took you so long!\p"
 	.string "Do you have the package?!$"
 
-Port_Sarim_HAM_EVENT_TRIGGER_Text_2:
+PORTSARIM_HAM_EVENT_PART2_Text_2:
 	.string "H.A.M Member$"
 
-Port_Sarim_HAM_EVENT_TRIGGER_Text_3:
+PORTSARIM_HAM_EVENT_PART2_Text_3:
 	.string "Sorry Leader!\p"
 	.string "I lost the goods...\p"
 	.string "Some pesky adventurers-$"
 
-Port_Sarim_HAM_EVENT_TRIGGER_Text_4:
+PORTSARIM_HAM_EVENT_PART2_Text_4:
 	.string "YOU WHAT?!\p"
 	.string "I DON'T WANT TO HEAR IT!\p"
 	.string "We are already behind schedule so we\n"
 	.string "will have to talk about this later!$"
 
-Port_Sarim_HAM_EVENT_TRIGGER_Text_5:
+PORTSARIM_HAM_EVENT_PART2_Text_5:
 	.string "...$"
 
-Port_Sarim_HAM_EVENT_TRIGGER_Text_6:
+PORTSARIM_HAM_EVENT_PART2_Text_6:
 	.string "Alright grunts!\p"
 	.string "We are moving out to Karamja for our\n"
 	.string "next mission!\p"
@@ -467,10 +602,10 @@ NPC_PORTSARIM_BETTY_Text_1:
 	.string "witch, I believe you know your way out.\p"
 	.string "Bye!$"
 
-NPC_PORTSARIM_BRAIN_Text_0:
+NPC_PORTSARIM_BRIAN_Text_0:
 	.string "Brian$"
 
-NPC_PORTSARIM_BRAIN_Text_1:
+NPC_PORTSARIM_BRIAN_Text_1:
 	.string "Hi there, welcome to Brian's Battleaxe\n"
 	.string "Bazaar.\p"
 	.string "If you see Jimmy the Chisel please tell\n"
@@ -519,14 +654,6 @@ NPC_PORTSARIM_CREWMAN_2_Text_0:
 	.string "If you go to Musa Point, say hi to\n"
 	.string "Stephanie for me.\p"
 	.string "I love her tattoos.$"
-
-NPC_PORTSARIM_GERRANT_Text_0:
-	.string "Gerrant$"
-
-NPC_PORTSARIM_GERRANT_Text_1:
-	.string "Being in the fish selling business has\n"
-	.string "made me gain weight over the years.\p"
-	.string "Oh did you wish to buy something?$"
 
 NPC_PORTSARIM_GRUM_Text_0:
 	.string "Grum$"
@@ -662,3 +789,63 @@ NPC_PORTSARIM_WYDIN_Text_1:
 	.string "If you are here with a mithril arrow,\n"
 	.string "soft clay and a chisel, I suggest you\l"
 	.string "leave before I call the guards.$"
+
+NPC_PORTSARIM_GENERALSTORE_CUSTOMER_1_Text_0:
+	.string "CUSTOMER$"
+
+NPC_PORTSARIM_GENERALSTORE_CUSTOMER_1_Text_1:
+	.string "It is good to see that Wydin finally\n"
+	.string "hired an assistant to run the store.\p"
+	.string "He has been struggling on his own for\n"
+	.string "awhile now.$"
+
+NPC_PORTSARIM_GENERALSTORE_CUSTOMER_2_Text_0:
+	.string "Me like this store!\p"
+	.string "Mr.W allows me to buy bread to feed me\n"
+	.string "family.$"
+
+NPC_PORTSARIM_GERRANT_Text_0:
+	.string "Gerrant$"
+
+NPC_PORTSARIM_GERRANT_Text_1:
+	.string "THAT IS IT!\p"
+	.string "THAT SHINE IN YOUR EYES!\p"
+	.string "You understand the beauty of fishing\n"
+	.string "don't you?!\p"
+	.string "Here take this!$"
+
+NPC_PORTSARIM_GERRANT_Text_2:
+	.string "This fishing net will allow you to catch\n"
+	.string "those big suckers!\p"
+	.string "Don't worry I won't charge you anything\n"
+	.string "for it!\p"
+	.string "Now off with you!\p"
+	.string "Much fishing awaits in your future!$"
+
+NPC_PORTSARIM_GERRANT_Text_3:
+	.string "Being in the fish selling business has\n"
+	.string "made me gain weight over the years.\p"
+	.string "Oh did you wish to buy something?$"
+
+NPC_PORTSARIM_FISHING_CUSTOMER_Text_0:
+	.string "Psst… {PAUSE 15}Yeah, you.\p"
+	.string "I will let you in on a little secret…\p"
+	.string "…{PAUSE 15}…{PAUSE 15}\n"
+	.string "…{PAUSE 15}…{PAUSE 15}\p"
+	.string "They say that if you stay in the same\n"
+	.string "location and catch a whole heap of fish\l"
+	.string "that it is very common that you might\l"
+	.string "find a super rare coloured fish!\p"
+	.string "…{PAUSE 15}…{PAUSE 15}\n"
+	.string "This stays between us.$"
+
+Generalstore_PortSarim_Clerk_Text_0:
+	.string "ASSISTANT$"
+
+Generalstore_PortSarim_Clerk_Text_1:
+	.string "Welcome to the Port Sarim General\n"
+	.string "Store.\p"
+	.string "How may I help you?$"
+
+Generalstore_PortSarim_Clerk_Text_2:
+	.string "Thank you, come again!$"

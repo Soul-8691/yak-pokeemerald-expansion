@@ -5317,7 +5317,7 @@ const struct Item gItems[] =
     },
     [ITEM_GHOSTSPEAK_AMULET] =
     {
-        .name = _("GHOSTSPEAKER"),
+        .name = _("GHOSTSPEAK"),
         .itemId = ITEM_GHOSTSPEAK_AMULET,
         .price = 100,
         .holdEffect = HOLD_EFFECT_GHOST_POWER,

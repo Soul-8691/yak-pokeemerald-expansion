@@ -118,7 +118,7 @@
 #define VAR_POKESCAPE_LESSERDEMON_STATE                   0x4063
 #define VAR_POKESCAPE_POTTERINGTON_FARM_STATE             0x4064 // Unused Var
 #define VAR_POKESCAPE_FALADOR_STATE                   0x4065 // Unused Var
-#define VAR_ROUTE107_STATE                   0x4066 // Unused Var
+#define VAR_POKESCAPE_MODTIMBO_STATE                   0x4066 // Unused Var
 #define VAR_ROUTE108_STATE                   0x4067 // Unused Var
 #define VAR_ROUTE109_STATE                   0x4068 // Unused Var
 #define VAR_ROUTE110_STATE                   0x4069

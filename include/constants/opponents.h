@@ -119,8 +119,17 @@
 #define TRAINER_ROUTE11_SAILOR                   99
 #define TRAINER_ROUTE11_PvMer                   100
 #define TRAINER_ROUTE11_GRACEFUL                   101
+//FALADOR
+#define TRAINER_FALADOR_MODTIMBO                   102
+//LUMBRIDGE SWAMP CAVES
+#define TRAINER_LUMBRIDGESWAMPCAVE_FISHERMAN_1                  103
+#define TRAINER_LUMBRIDGESWAMPCAVE_SKELETON_1                  104
+#define TRAINER_LUMBRIDGESWAMPCAVE_PVMER_1                   105
+//DRAYNOR SEWERS
+#define TRAINER_DRAYNORSEWERS_SKELETON_1                   106
+#define TRAINER_DRAYNORSEWERS_SKELETON_2                   107
 
-
+#define TRAINER_ROUTE6_FIREMAKER                   108
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

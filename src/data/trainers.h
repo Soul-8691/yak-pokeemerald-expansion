@@ -738,10 +738,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_DRAYNOR_MANOR_TRAINER_3] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
-        .trainerClass = TRAINER_CLASS_WIZARD,
+        .trainerClass = TRAINER_CLASS_DARK,
         .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
         .trainerPic = TRAINER_PIC_wizard_dark,
-        .trainerName = _("DARK"),
+        .trainerName = _("WIZARD"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
@@ -890,10 +890,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE2_TRAINER_5] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
-        .trainerClass = TRAINER_CLASS_WIZARD,
+        .trainerClass = TRAINER_CLASS_DARK,
         .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
         .trainerPic = TRAINER_PIC_wizard_dark,
-        .trainerName = _("DARK"),
+        .trainerName = _("WIZARD"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
@@ -905,10 +905,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE2_TRAINER_6] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
-        .trainerClass = TRAINER_CLASS_WIZARD,
+        .trainerClass = TRAINER_CLASS_DARK,
         .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
         .trainerPic = TRAINER_PIC_wizard_dark,
-        .trainerName = _("DARK"),
+        .trainerName = _("WIZARD"),
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
@@ -1481,13 +1481,111 @@ const struct Trainer gTrainers[] = {
         .scaling = FALSE,
     },
 
+//FALADOR
+    [TRAINER_FALADOR_MODTIMBO] = {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_JMOD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_HAM,
+        .trainerPic = TRAINER_PIC_jmod_m,
+        .trainerName = _("TIMBO"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_FALADOR_MODTIMBO),
+        .party = {.ItemDefaultMoves = sParty_FALADOR_MODTIMBO},
+        .scaling = FALSE,
+    },
 
+//LUMBRIDGE SWAMP CAVES
+    [TRAINER_LUMBRIDGESWAMPCAVE_FISHERMAN_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_FISHER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_fisher,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_LUMBRIDGESWAMPCAVE_FISHERMAN_1),
+        .party = {.ItemDefaultMoves = sParty_LUMBRIDGESWAMPCAVE_FISHERMAN_1},
+        .scaling = FALSE,
+    },
 
+    [TRAINER_LUMBRIDGESWAMPCAVE_SKELETON_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_LUMBRIDGESWAMPCAVE_SKELETON_1),
+        .party = {.ItemDefaultMoves = sParty_LUMBRIDGESWAMPCAVE_SKELETON_1},
+        .scaling = FALSE,
+    },
 
+    [TRAINER_LUMBRIDGESWAMPCAVE_PVMER_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SLAYER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_slayer,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_LUMBRIDGESWAMPCAVE_PVMER_1),
+        .party = {.ItemDefaultMoves = sParty_LUMBRIDGESWAMPCAVE_PVMER_1},
+        .scaling = FALSE,
+    },
 
+    [TRAINER_DRAYNORSEWERS_SKELETON_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_DRAYNORSEWERS_SKELETON_1),
+        .party = {.ItemDefaultMoves = sParty_DRAYNORSEWERS_SKELETON_1},
+        .scaling = FALSE,
+    },
 
+    [TRAINER_DRAYNORSEWERS_SKELETON_2] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SKELETON,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_skeleton,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_DRAYNORSEWERS_SKELETON_2),
+        .party = {.ItemDefaultMoves = sParty_DRAYNORSEWERS_SKELETON_2},
+        .scaling = FALSE,
+    },
 
-
+    [TRAINER_ROUTE6_FIREMAKER] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_FIREMAKER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_firemaking,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE6_FIREMAKER),
+        .party = {.ItemDefaultMoves = sParty_ROUTE6_FIREMAKER},
+        .scaling = FALSE,
+    },
 
 
 

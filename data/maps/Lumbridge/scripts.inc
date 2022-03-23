@@ -79,7 +79,6 @@ Lumbridge_FAYETH::
 
 
 Lumbridge_BOT::
-	lock
 	msgbox Lumbridge_BOT_Text_0
 	release
 	end
@@ -440,18 +439,18 @@ MoveNPCsAfterEvents_Lumbridge_2:
 MoveNPCsAfterEvents_Lumbridge_3:
 	setobjectxyperm 14, 41, 20
 	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 25, 38, 4
-	setobjectmovementtype 25, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 24, 38, 4
+	setobjectmovementtype 24, MOVEMENT_TYPE_WANDER_AROUND
 	setobjectxyperm 3, 3, 3
 	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
 	setobjectxyperm 13, 2, 3
 	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm 23, 33, 11
-	setobjectmovementtype 23, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 22, 33, 11
+	setobjectmovementtype 22, MOVEMENT_TYPE_WANDER_AROUND
 	setobjectxyperm 11, 50, 21
 	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 1, 6, 12
-	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
+	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 2, 6, 13
 	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
 	return
@@ -459,20 +458,20 @@ MoveNPCsAfterEvents_Lumbridge_3:
 MoveNPCsAfterEvents_Lumbridge_4:
 	setobjectxyperm 14, 41, 20
 	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 25, 38, 4
-	setobjectmovementtype 25, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 24, 38, 4
+	setobjectmovementtype 24, MOVEMENT_TYPE_WANDER_AROUND
 	setobjectxyperm 3, 3, 3
 	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
 	setobjectxyperm 13, 2, 3
 	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm 23, 33, 11
-	setobjectmovementtype 23, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 22, 33, 11
+	setobjectmovementtype 22, MOVEMENT_TYPE_WANDER_AROUND
 	setobjectxyperm 11, 50, 21
 	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 12, 37, 33
 	setobjectmovementtype 12, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 1, 6, 12
-	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
+	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 2, 6, 13
 	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
 	return

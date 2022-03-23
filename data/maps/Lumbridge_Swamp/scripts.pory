@@ -121,3 +121,56 @@ script LUMBRIDGESWAMP_CANDLESELLER
 	release
 	end
 }
+
+
+script LUMBRIDGESWAMP_FAIRY
+{
+	namebox ("Fairy")
+	msgbox(format("Wh-what!?\pThere is no secret passage to Zanaris here, no way!"))
+	hidenamebox
+	closemessage
+	release
+	end
+}
+
+
+script LUMBRIDGESWAMP_Urhney
+{
+	lock
+	faceplayer
+    checkitem(ITEM_GHOSTSPEAK_AMULET, 1)
+        if (!var(VAR_RESULT)){
+			namebox ("Father Urhney")
+            msgbox(format("Urgh, I wish you adventurers would stop barging into my house like this all the time.\pSay no more, this is what you want isn't it?"))
+			hidenamebox
+			closemessage
+            giveitem(ITEM_GHOSTSPEAK_AMULET)
+			namebox ("Father Urhney")
+            msgbox(format("Now go away and let me meditate in peace!"))
+			hidenamebox
+            closemessage
+            release
+            end
+        }
+        else {
+			namebox ("Father Urhney")
+			msgbox(format("Go away I already gave you that Ghostspeak amulet!\pLet me meditate in peace!"))
+            closemessage
+			hidenamebox
+            release
+            end
+        }
+    closemessage
+	release
+	end
+}
+
+
+script LUMBRIDGESWAMP_BOOK
+{
+	msgbox(format("The book is titled,\n101 Ways to successfully Meditate.\pStep 1, Live far away from civilation.\pStep 2, make sure it is far enough away that adventurers don't light fires at your windows."))
+	hidenamebox
+	closemessage
+	release
+	end
+}

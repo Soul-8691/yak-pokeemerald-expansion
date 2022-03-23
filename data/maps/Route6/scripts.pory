@@ -119,8 +119,8 @@ movement MOVEMENT_ROUTE6_UNICORN
 //BATTLE TRAINERS
 
 script BATTLE_ROUTE6_FIREMAKER{
-    trainerbattle_single(TRAINER_ROUTE10_MONK, format(""),format(""))
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE6_FIREMAKER, format("Hey get out of my way, im making bonfires here!"),format("Burned to a crisp.\pI hope you levelled up…"))
+    msgbox(format("Burned to a crisp.\pI hope you levelled up…"))
     release
 }
 

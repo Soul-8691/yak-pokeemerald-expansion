@@ -92,8 +92,8 @@ MOVEMENT_ROUTE6_UNICORN:
 	step_end
 
 BATTLE_ROUTE6_FIREMAKER::
-	trainerbattle_single TRAINER_ROUTE10_MONK, BATTLE_ROUTE6_FIREMAKER_Text_0, BATTLE_ROUTE6_FIREMAKER_Text_0
-	msgbox BATTLE_ROUTE6_FIREMAKER_Text_0
+	trainerbattle_single TRAINER_ROUTE6_FIREMAKER, BATTLE_ROUTE6_FIREMAKER_Text_0, BATTLE_ROUTE6_FIREMAKER_Text_1
+	msgbox BATTLE_ROUTE6_FIREMAKER_Text_1
 	release
 	return
 
@@ -143,7 +143,12 @@ ROUTE6_BLOCK_FaladorGuard_Text_7:
 	.string "Neeeigh!$"
 
 BATTLE_ROUTE6_FIREMAKER_Text_0:
-	.string "$"
+	.string "Hey get out of my way, im making\n"
+	.string "bonfires here!$"
+
+BATTLE_ROUTE6_FIREMAKER_Text_1:
+	.string "Burned to a crisp.\p"
+	.string "I hope you levelled up…$"
 
 BATTLE_ROUTE6_MUGGER_Text_0:
 	.string "Your money or your life!$"

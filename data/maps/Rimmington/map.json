@@ -393,6 +393,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RSMVER_M",
+      "x": 43,
+      "y": 29,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_RSMVER_F",
+      "x": 42,
+      "y": 29,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -400,49 +426,49 @@
       "x": 36,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_RIMMINGTON",
+      "dest_map": "MAP_RIMMINGTON_BANK",
       "dest_warp_id": 0
     },
     {
       "x": 29,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_RIMMINGTON",
+      "dest_map": "MAP_RIMMINGTON_FLETCHING_HOUSE",
       "dest_warp_id": 0
     },
     {
       "x": 20,
       "y": 18,
       "elevation": 0,
-      "dest_map": "MAP_RIMMINGTON",
+      "dest_map": "MAP_RIMMINGTON_CRAFTING_HOUSE",
       "dest_warp_id": 0
     },
     {
       "x": 13,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_RIMMINGTON",
+      "dest_map": "MAP_RIMMINGTON_LAB",
       "dest_warp_id": 0
     },
     {
       "x": 37,
       "y": 12,
       "elevation": 0,
-      "dest_map": "MAP_RIMMINGTON",
+      "dest_map": "MAP_RIMMINGTON_HETTYS_HOUSE",
       "dest_warp_id": 0
     },
     {
       "x": 37,
       "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_RIMMINGTON",
+      "dest_map": "MAP_RIMMINGTON_HOUSE_1F",
       "dest_warp_id": 0
     },
     {
       "x": 22,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_RIMMINGTON",
+      "dest_map": "MAP_RIMMINGTON_GENERAL_STORE_1F",
       "dest_warp_id": 0
     },
     {

@@ -528,6 +528,7 @@
 #define TRAINER_CLASS_LEGEND			0x79
 #define TRAINER_CLASS_CHEF			    0x7a
 #define TRAINER_CLASS_AGILE			    0x7b
+#define TRAINER_CLASS_DARK			    0x7c
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

@@ -80,36 +80,6 @@ GoldenGnome_2:
 	goto GoldenGnome_1
 
 
-LumbridgeSwampCaves_WallBeasts::
-	lockall
-	msgbox LumbridgeSwampCaves_WallBeasts_Text_0
-	random 3
-	switch VAR_RESULT
-	case 0, LumbridgeSwampCaves_WallBeasts_3
-	case 1, LumbridgeSwampCaves_WallBeasts_4
-	case 2, LumbridgeSwampCaves_WallBeasts_5
-	release
-	end
-
-LumbridgeSwampCaves_WallBeasts_3:
-	msgbox LumbridgeSwampCaves_WallBeasts_Text_1
-	special RockSmashWildEncounter
-	release
-	end
-
-LumbridgeSwampCaves_WallBeasts_4:
-	msgbox LumbridgeSwampCaves_WallBeasts_Text_2
-	setwildbattle SPECIES_HAND_CREEPING_FORM, 10, ITEM_NONE
-	dowildbattle
-	release
-	end
-
-LumbridgeSwampCaves_WallBeasts_5:
-	msgbox LumbridgeSwampCaves_WallBeasts_Text_3
-	release
-	end
-
-
 GnomeBoi_Kevin::
 	lock
 	faceplayer
@@ -431,19 +401,6 @@ GoldenGnome_Text_3:
 GoldenGnome_Text_4:
 	.string "Human strong. This now Goblin and human\n"
 	.string "home.$"
-
-LumbridgeSwampCaves_WallBeasts_Text_0:
-	.string "Something jumps out of the wall towards\n"
-	.string "you!$"
-
-LumbridgeSwampCaves_WallBeasts_Text_1:
-	.string "A wild Monster attacked!$"
-
-LumbridgeSwampCaves_WallBeasts_Text_2:
-	.string "A hand swipes at you!$"
-
-LumbridgeSwampCaves_WallBeasts_Text_3:
-	.string "You found an item!$"
 
 GnomeBoi_Kevin_Text_0:
 	.string "Hi Boss! What can I do for ya?$"

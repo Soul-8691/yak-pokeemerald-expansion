@@ -380,7 +380,7 @@ ENCOUNTER_DeadTree::
 	waitmovement 0
 	msgbox ENCOUNTER_DeadTree_Text_0
 	closemessage
-	setwildbattle SPECIES_DEAD_TREE, 5, ITEM_NONE
+	setwildbattle SPECIES_DEAD_TREE, 15, ITEM_NONE
 	dowildbattle
 	return
 

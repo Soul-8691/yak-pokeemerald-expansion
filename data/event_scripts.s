@@ -1473,3 +1473,37 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/AsgarnianDungeon_B2F/scripts.inc"
 
 	.include "data/maps/AsgarnianDungeon_B3F/scripts.inc"
+
+	.include "data/maps/Rimmington_House_1F/scripts.inc"
+
+	.include "data/maps/Rimmington_House_2F/scripts.inc"
+
+	.include "data/maps/Rimmington_Hettys_House/scripts.inc"
+
+	.include "data/maps/Rimmington_Crafting_House/scripts.inc"
+
+	.include "data/maps/Rimmington_Fletching_House/scripts.inc"
+
+	.include "data/maps/Rimmington_GeneralStore_1F/scripts.inc"
+
+	.include "data/maps/Rimmington_GeneralStore_2F/scripts.inc"
+
+	.include "data/maps/Rimmington_Lab/scripts.inc"
+
+	.include "data/maps/Rimmington_Bank/scripts.inc"
+
+	.include "data/maps/Route8_MakeoverMage/scripts.inc"
+
+	.include "data/maps/Route8_CraftingGuild/scripts.inc"
+
+	.include "data/maps/Falador_GeneralStore_1F/scripts.inc"
+
+	.include "data/maps/Falador_GeneralStore_2F/scripts.inc"
+
+	.include "data/maps/Falador_Workshop/scripts.inc"
+
+	.include "data/maps/Falador_Workshop_2F/scripts.inc"
+
+	.include "data/maps/Falador_House1_1F/scripts.inc"
+
+	.include "data/maps/Falador_House1_2F/scripts.inc"

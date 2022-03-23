@@ -791,7 +791,17 @@
     "PortSarim_Bank"
   ],
   "gMapGroup41": [
-
+    "Rimmington_House_1F",
+    "Rimmington_House_2F",
+    "Rimmington_Hettys_House",
+    "Rimmington_Crafting_House",
+    "Rimmington_Fletching_House",
+    "Rimmington_GeneralStore_1F",
+    "Rimmington_GeneralStore_2F",
+    "Rimmington_Lab",
+    "Rimmington_Bank",
+    "Route8_MakeoverMage",
+    "Route8_CraftingGuild"
   ],
   "gMapGroup42": [
     "Falador_Hairdressers",
@@ -801,7 +811,13 @@
     "Falador_GemShop",
     "Falador_Pub_1F",
     "Falador_Pub_2F",
-    "Falador_Bank_East"
+    "Falador_Bank_East",
+    "Falador_GeneralStore_1F",
+    "Falador_GeneralStore_2F",
+    "Falador_Workshop",
+    "Falador_Workshop_2F",
+    "Falador_House1_1F",
+    "Falador_House1_2F"
   ],
   "gMapGroup43": [
     "Varrock_Thessalia_Shop",

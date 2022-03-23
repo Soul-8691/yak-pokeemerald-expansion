@@ -1,0 +1,124 @@
+mapscripts Lumbridge_Swamp_Caves_MapScripts {
+
+}
+
+
+
+
+
+
+
+
+script LumbridgeSwampCaves_WallBeasts
+{
+	lockall
+	msgbox(format("Something jumps out of the wall towards you!"))
+    random(3)
+        switch (var(VAR_RESULT)) {
+            case 0: 
+				//namebox("0")
+				msgbox(format("A wild Monster attacked!"))
+				special(RockSmashWildEncounter)
+				release
+				//hidenamebox
+				end
+			case 1: 
+				//namebox("1")
+				msgbox(format("A hand swipes at you!"))
+				setwildbattle(SPECIES_HAND_CREEPING_FORM, 10, ITEM_NONE)
+				dowildbattle
+				//hidenamebox
+				release
+				end
+			case 2: 
+				//namebox("1")
+				msgbox(format("A creature jumps out at you!"))
+				setwildbattle(SPECIES_FLEDGLING, 10, ITEM_NONE)
+				dowildbattle
+				//hidenamebox
+				release
+				end
+        }
+	release
+	end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ITEMS
+
+script ITEM_LUMBRIDGESWAMPCAVE_ITEM_1
+{
+    finditem(ITEM_TM21_TOXIC)
+    end
+}
+
+script ITEM_LUMBRIDGESWAMPCAVE_ITEM_2
+{
+    finditem(ITEM_SPIRIT_SHARD)
+    end
+}
+
+script ITEM_LUMBRIDGESWAMPCAVE_ITEM_3
+{
+    finditem(ITEM_SPIRIT_SHARD)
+    end
+}
+
+script ITEM_LUMBRIDGESWAMPCAVE_ITEM_4
+{
+    finditem(ITEM_SPIRIT_SHARD)
+    end
+}
+
+script ITEM_LUMBRIDGESWAMPCAVE_ITEM_5
+{
+    finditem(ITEM_SPIRIT_SHARD)
+    end
+}
+
+script ITEM_LUMBRIDGESWAMPCAVE_ITEM_6
+{
+    finditem(ITEM_SPIRIT_SHARD)
+    end
+}
+
+
+
+//BATTLES
+//Low levels
+script BATTLE_LUMBRIDGESWAMPCAVE_FISHERMAN_1{
+    trainerbattle_single(TRAINER_LUMBRIDGESWAMPCAVE_FISHERMAN_1, format("Im collecting frogspawn, dont bother me."),format("I hear somewhere in Kandarin theres a tower.\pIf you bring it a slimy eel and frog legs it will create a legendary monster."))
+    msgbox(format("I hear somewhere in Kandarin theres a tower.\pIf you bring it a slimy eel and frog legs it will create a legendary monster."))
+    release
+    end
+}
+
+script BATTLE_LUMBRIDGESWAMPCAVE_SKELETON_1{
+    trainerbattle_single(TRAINER_LUMBRIDGESWAMPCAVE_SKELETON_1, format("The skeleton tries to shoo you away."),format("Chitter, chitter."))
+    msgbox(format("It looks like the skeleton thinks you are smart for bringing a lantern rather than a naked candle."))
+    release
+    end
+}
+
+script BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1{
+    trainerbattle_single(TRAINER_LUMBRIDGESWAMPCAVE_PVMER_1, format("Show me the way to the slayer tower noob!"),format("Oh it is in Morytania.\pThis explains a lot."))
+    msgbox(format("Oh it is in Morytania.\pThis explains a lot."))
+    release
+    end
+}
+//MID levels

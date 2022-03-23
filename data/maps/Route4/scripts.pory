@@ -154,3 +154,17 @@ script POTTERINGTON_FARM_OUTDOOR_STATE{
 
         }
 }
+
+
+
+
+script ROUTE4_PatchFarmer
+{
+    faceplayer
+    namebox ("Farmer")
+    msgbox(format("Did you know you can plant crops in farming patches?"))
+    closemessage
+    hidenamebox
+    release
+    end
+}

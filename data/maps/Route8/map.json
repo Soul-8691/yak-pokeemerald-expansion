@@ -350,16 +350,16 @@
     },
     {
       "x": 22,
-      "y": 6,
+      "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE8",
+      "dest_map": "MAP_ROUTE8_MAKEOVER_MAGE",
       "dest_warp_id": 0
     },
     {
-      "x": 23,
-      "y": 20,
+      "x": 24,
+      "y": 21,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE8",
+      "dest_map": "MAP_ROUTE8_CRAFTING_GUILD",
       "dest_warp_id": 0
     }
   ],

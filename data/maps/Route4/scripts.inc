@@ -166,6 +166,16 @@ POTTERINGTON_FARM_OUTDOOR_STATE_3:
 	return
 
 
+ROUTE4_PatchFarmer::
+	faceplayer
+	namebox ROUTE4_TRIGGER_DaycareWatcher_PART1_Text_0
+	msgbox ROUTE4_PatchFarmer_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 MuggerBattleRoute4_Text_0:
 	.string "Stand and deliver!$"
 
@@ -222,3 +232,7 @@ ROUTE4_DaycareWatcher_Text_0:
 	.string "I really enjoy just sitting here and\n"
 	.string "seeing what type of Monsters the next\l"
 	.string "adventurer will bring.$"
+
+ROUTE4_PatchFarmer_Text_0:
+	.string "Did you know you can plant crops in\n"
+	.string "farming patches?$"

@@ -519,7 +519,7 @@ Text_WantToSmash: @ 829083A
 
 Text_CantSmash: @ 829087F
 	.string "It's a rugged rock.\n"
-	.string "I need more xp to mine it.$"
+	.string "If I had a pickaxe I could mine it.$"
 
 EventScript_StrengthBoulder:: @ 82908BA
 	lockall

@@ -107,11 +107,11 @@
 #define FLAG_UNUSED_0x04E    0x4E // Unused Flag
 #define FLAG_UNUSED_0x04F    0x4F // Unused Flag
 
-//POKESCAPE STORYLINE FLAGS
+//POKESCAPE FLAGS
 #define FLAG_EVENT_PORTSARIM_HAM_BOAT       0x50    //FLAG_HIDE_RAYQUAZA_SKY_TOWER_SUMMIT
 #define FLAG_SET_WALL_CLOCK                 0x51
 #define FLAG_RECEIVED_SPLITBARK             0x52
-
+#define FLAG_MOD_TIMBO                      0x53    //REMOVE THIS ONE!
 
 
 
@@ -121,7 +121,7 @@
 // Scripts
 
 
-#define FLAG_LEGENDARIES_IN_SOOTOPOLIS       0x53
+
 
 #define FLAG_UNUSED_0x054                    0x54  // Unused Flag
 #define FLAG_UNUSED_0x055                    0x55  // Unused Flag
@@ -1146,15 +1146,15 @@
 #define FLAG_ITEM_ROUTE8_ITEM_MITHRIL_POUCH                   0x428
 #define FLAG_ITEM_ROUTE8_ITEM_FLAX                   0x429
 #define FLAG_ITEM_ROUTE8_ITEM_PRAYER_POTION                           0x42A
+#define FLAG_ITEM_LUMBRIDGESWAMP_ITEM_SPIRIT_SHARD                 0x42B
+#define FLAG_ITEM_LUMBRIDGESWAMPCAVE_ITEM_1                  0x42C
+#define FLAG_ITEM_LUMBRIDGESWAMPCAVE_ITEM_2                    0x42D
+#define FLAG_ITEM_LUMBRIDGESWAMPCAVE_ITEM_3                             0x42E
+#define FLAG_ITEM_LUMBRIDGESWAMPCAVE_ITEM_4                       0x42F
+#define FLAG_ITEM_LUMBRIDGESWAMPCAVE_ITEM_5                        0x430
+#define FLAG_ITEM_LUMBRIDGESWAMPCAVE_ITEM_6                       0x431
 
 
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_6_GLITTER_MAIL                 0x42B
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_7_TROPIC_MAIL                  0x42C
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_8_BEAD_MAIL                    0x42D
-#define FLAG_ITEM_JAGGED_PASS_BURN_HEAL                             0x42E
-#define FLAG_ITEM_AQUA_HIDEOUT_B1F_MAX_ELIXIR                       0x42F
-#define FLAG_ITEM_AQUA_HIDEOUT_B2F_NEST_BALL                        0x430
-#define FLAG_ITEM_MT_PYRE_EXTERIOR_MAX_POTION                       0x431
 #define FLAG_ITEM_MT_PYRE_EXTERIOR_TM_48                            0x432
 #define FLAG_ITEM_NEW_MAUVILLE_ULTRA_BALL                           0x433
 #define FLAG_ITEM_NEW_MAUVILLE_ESCAPE_ROPE                          0x434

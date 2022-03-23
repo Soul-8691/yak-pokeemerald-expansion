@@ -103,6 +103,54 @@ LUMBRIDGESWAMP_CANDLESELLER_2:
 	end
 
 
+LUMBRIDGESWAMP_FAIRY::
+	namebox LUMBRIDGESWAMP_FAIRY_Text_0
+	msgbox LUMBRIDGESWAMP_FAIRY_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+LUMBRIDGESWAMP_Urhney::
+	lock
+	faceplayer
+	checkitem ITEM_GHOSTSPEAK_AMULET, 1
+	compare VAR_RESULT, 0
+	goto_if_eq LUMBRIDGESWAMP_Urhney_2
+	namebox LUMBRIDGESWAMP_Urhney_Text_0
+	msgbox LUMBRIDGESWAMP_Urhney_Text_3
+	closemessage
+	hidenamebox
+	release
+	end
+
+	closemessage
+	release
+	end
+
+LUMBRIDGESWAMP_Urhney_2:
+	namebox LUMBRIDGESWAMP_Urhney_Text_0
+	msgbox LUMBRIDGESWAMP_Urhney_Text_1
+	hidenamebox
+	closemessage
+	giveitem ITEM_GHOSTSPEAK_AMULET
+	namebox LUMBRIDGESWAMP_Urhney_Text_0
+	msgbox LUMBRIDGESWAMP_Urhney_Text_2
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+LUMBRIDGESWAMP_BOOK::
+	msgbox LUMBRIDGESWAMP_BOOK_Text_0
+	hidenamebox
+	closemessage
+	release
+	end
+
+
 BLOCK_LumbridgeSwamp_HAM_Text_0:
 	.string "Pink Man$"
 
@@ -176,3 +224,38 @@ LUMBRIDGESWAMP_CANDLESELLER_Text_1:
 
 LUMBRIDGESWAMP_CANDLESELLER_Text_2:
 	.string "Be careful down there.$"
+
+LUMBRIDGESWAMP_FAIRY_Text_0:
+	.string "Fairy$"
+
+LUMBRIDGESWAMP_FAIRY_Text_1:
+	.string "Wh-what!?\p"
+	.string "There is no secret passage to Zanaris\n"
+	.string "here, no way!$"
+
+LUMBRIDGESWAMP_Urhney_Text_0:
+	.string "Father Urhney$"
+
+LUMBRIDGESWAMP_Urhney_Text_1:
+	.string "Urgh, I wish you adventurers would stop\n"
+	.string "barging into my house like this all the\l"
+	.string "time.\p"
+	.string "Say no more, this is what you want isn't\n"
+	.string "it?$"
+
+LUMBRIDGESWAMP_Urhney_Text_2:
+	.string "Now go away and let me meditate in\n"
+	.string "peace!$"
+
+LUMBRIDGESWAMP_Urhney_Text_3:
+	.string "Go away I already gave you that\n"
+	.string "Ghostspeak amulet!\p"
+	.string "Let me meditate in peace!$"
+
+LUMBRIDGESWAMP_BOOK_Text_0:
+	.string "The book is titled,\n"
+	.string "101 Ways to successfully Meditate.\p"
+	.string "Step 1, Live far away from civilation.\p"
+	.string "Step 2, make sure it is far enough away\n"
+	.string "that adventurers don't light fires at\l"
+	.string "your windows.$"

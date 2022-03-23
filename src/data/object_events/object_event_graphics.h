@@ -860,7 +860,7 @@ const u16 gObjectEventPalette_Abyss_Portal[] = INCBIN_U16("graphics/object_event
 const u16 gObjectEventPalette_Chair[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Chair.gbapal");
 
 
-
+const u16 gObjectEventPalette_GhostDisguise[] = INCBIN_U16("graphics/field_effects/pics/GhostDisguise.gbapal");
 
 
 

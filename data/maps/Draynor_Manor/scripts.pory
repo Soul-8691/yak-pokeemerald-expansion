@@ -444,7 +444,7 @@ script ENCOUNTER_DeadTree {
 		waitmovement(0)		
 		msgbox ("The tree attacked!")
 		closemessage
-		setwildbattle (SPECIES_DEAD_TREE, 5, ITEM_NONE)
+		setwildbattle (SPECIES_DEAD_TREE, 15, ITEM_NONE)
 		dowildbattle
 		return
 }

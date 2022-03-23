@@ -666,6 +666,8 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_STRYKEWYRM_FREEZY 0x1258
 #define OBJ_EVENT_PAL_STRYKEWYRM_LEAFY 0x1259
 
+#define OBJ_EVENT_PAL_TreeDisguise 0x125A
+
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/field_effects/field_effect_object_template_pointers.h"
@@ -936,6 +938,8 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
 	{gObjectEventPalette_OrePal2, OBJ_EVENT_PAL_ORE_PAL2},
 	{gObjectEventPalette_CabbageCrop, OBJ_EVENT_PAL_CABBAGE_CROP},
     {gObjectEventPalette_Protaganist, OBJ_EVENT_PAL_PROTAGANIST},
+
+    {gObjectEventPalette_GhostDisguise, OBJ_EVENT_PAL_TreeDisguise},	
 
     {NULL,                  0x0000},
 };

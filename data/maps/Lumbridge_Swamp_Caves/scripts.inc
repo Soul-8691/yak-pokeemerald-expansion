@@ -1,2 +1,128 @@
 Lumbridge_Swamp_Caves_MapScripts::
 	.byte 0
+
+
+LumbridgeSwampCaves_WallBeasts::
+	lockall
+	msgbox LumbridgeSwampCaves_WallBeasts_Text_0
+	random 3
+	switch VAR_RESULT
+	case 0, LumbridgeSwampCaves_WallBeasts_3
+	case 1, LumbridgeSwampCaves_WallBeasts_4
+	case 2, LumbridgeSwampCaves_WallBeasts_5
+	release
+	end
+
+LumbridgeSwampCaves_WallBeasts_3:
+	msgbox LumbridgeSwampCaves_WallBeasts_Text_1
+	special RockSmashWildEncounter
+	release
+	end
+
+LumbridgeSwampCaves_WallBeasts_4:
+	msgbox LumbridgeSwampCaves_WallBeasts_Text_2
+	setwildbattle SPECIES_HAND_CREEPING_FORM, 10, ITEM_NONE
+	dowildbattle
+	release
+	end
+
+LumbridgeSwampCaves_WallBeasts_5:
+	msgbox LumbridgeSwampCaves_WallBeasts_Text_3
+	setwildbattle SPECIES_FLEDGLING, 10, ITEM_NONE
+	dowildbattle
+	release
+	end
+
+
+ITEM_LUMBRIDGESWAMPCAVE_ITEM_1::
+	finditem ITEM_TM21_TOXIC
+	end
+
+
+ITEM_LUMBRIDGESWAMPCAVE_ITEM_2::
+	finditem ITEM_SPIRIT_SHARD
+	end
+
+
+ITEM_LUMBRIDGESWAMPCAVE_ITEM_3::
+	finditem ITEM_SPIRIT_SHARD
+	end
+
+
+ITEM_LUMBRIDGESWAMPCAVE_ITEM_4::
+	finditem ITEM_SPIRIT_SHARD
+	end
+
+
+ITEM_LUMBRIDGESWAMPCAVE_ITEM_5::
+	finditem ITEM_SPIRIT_SHARD
+	end
+
+
+ITEM_LUMBRIDGESWAMPCAVE_ITEM_6::
+	finditem ITEM_SPIRIT_SHARD
+	end
+
+
+BATTLE_LUMBRIDGESWAMPCAVE_FISHERMAN_1::
+	trainerbattle_single TRAINER_LUMBRIDGESWAMPCAVE_FISHERMAN_1, BATTLE_LUMBRIDGESWAMPCAVE_FISHERMAN_1_Text_0, BATTLE_LUMBRIDGESWAMPCAVE_FISHERMAN_1_Text_1
+	msgbox BATTLE_LUMBRIDGESWAMPCAVE_FISHERMAN_1_Text_1
+	release
+	end
+
+
+BATTLE_LUMBRIDGESWAMPCAVE_SKELETON_1::
+	trainerbattle_single TRAINER_LUMBRIDGESWAMPCAVE_SKELETON_1, BATTLE_LUMBRIDGESWAMPCAVE_SKELETON_1_Text_0, BATTLE_LUMBRIDGESWAMPCAVE_SKELETON_1_Text_1
+	msgbox BATTLE_LUMBRIDGESWAMPCAVE_SKELETON_1_Text_2
+	release
+	end
+
+
+BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1::
+	trainerbattle_single TRAINER_LUMBRIDGESWAMPCAVE_PVMER_1, BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1_Text_0, BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1_Text_1
+	msgbox BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1_Text_1
+	release
+	end
+
+
+LumbridgeSwampCaves_WallBeasts_Text_0:
+	.string "Something jumps out of the wall towards\n"
+	.string "you!$"
+
+LumbridgeSwampCaves_WallBeasts_Text_1:
+	.string "A wild Monster attacked!$"
+
+LumbridgeSwampCaves_WallBeasts_Text_2:
+	.string "A hand swipes at you!$"
+
+LumbridgeSwampCaves_WallBeasts_Text_3:
+	.string "A creature jumps out at you!$"
+
+BATTLE_LUMBRIDGESWAMPCAVE_FISHERMAN_1_Text_0:
+	.string "Im collecting frogspawn, dont bother\n"
+	.string "me.$"
+
+BATTLE_LUMBRIDGESWAMPCAVE_FISHERMAN_1_Text_1:
+	.string "I hear somewhere in Kandarin theres a\n"
+	.string "tower.\p"
+	.string "If you bring it a slimy eel and frog legs\n"
+	.string "it will create a legendary monster.$"
+
+BATTLE_LUMBRIDGESWAMPCAVE_SKELETON_1_Text_0:
+	.string "The skeleton tries to shoo you away.$"
+
+BATTLE_LUMBRIDGESWAMPCAVE_SKELETON_1_Text_1:
+	.string "Chitter, chitter.$"
+
+BATTLE_LUMBRIDGESWAMPCAVE_SKELETON_1_Text_2:
+	.string "It looks like the skeleton thinks you\n"
+	.string "are smart for bringing a lantern rather\l"
+	.string "than a naked candle.$"
+
+BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1_Text_0:
+	.string "Show me the way to the slayer tower\n"
+	.string "noob!$"
+
+BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1_Text_1:
+	.string "Oh it is in Morytania.\p"
+	.string "This explains a lot.$"

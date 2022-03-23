@@ -301,12 +301,32 @@ NPC_Draynor_Noob_WillowTree::
 
 
 Draynor_Morgan::
+	switch VAR_POKESCAPE_WIZARDS_TOWER_STATE
+	case 0, Draynor_Morgan_2
+	case 1, Draynor_Morgan_2
+	case 2, Draynor_Morgan_2
+	case 3, Draynor_Morgan_2
+	case 4, Draynor_Morgan_2
+	case 5, Draynor_Morgan_2
+	case 6, Draynor_Morgan_2
+	case 7, Draynor_Morgan_2
+	case 8, Draynor_Morgan_3
+	return
+
+Draynor_Morgan_2:
 	lock
 	faceplayer
 	namebox Draynor_Morgan_Text_0
 	msgbox Draynor_Morgan_Text_1
+	hidenamebox
+	release
+	end
+
+Draynor_Morgan_3:
+	lock
+	faceplayer
+	namebox Draynor_Morgan_Text_0
 	msgbox Draynor_Morgan_Text_2
-	msgbox Draynor_Morgan_Text_3
 	hidenamebox
 	release
 	end
@@ -463,11 +483,7 @@ Draynor_Morgan_Text_1:
 Draynor_Morgan_Text_2:
 	.string "What is that?!\p"
 	.string "You defeated the Vampyre in a battle?\p"
-	.string "Well thanks for that, please accept\n"
-	.string "this as a gift.$"
-
-Draynor_Morgan_Text_3:
-	.string "Thank you again.$"
+	.string "Well thanks for that!$"
 
 NPC_Draynor_Morgans_Wife_Text_0:
 	.string "Morgans Wife$"

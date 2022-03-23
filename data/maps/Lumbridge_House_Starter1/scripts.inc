@@ -281,6 +281,11 @@ ITEM_PORTSARIM_ITEM_SPIRIT_SHARD::
 	end
 
 
+ITEM_LUMBRIDGESWAMP_ITEM_SPIRIT_SHARD::
+	finditem ITEM_SPIRIT_SHARD
+	end
+
+
 Explorer_Jack_1_Text_0:
 	.string "Explorer Jack$"
 

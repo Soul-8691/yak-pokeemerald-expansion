@@ -1783,3 +1783,141 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE11_GRACEFUL[] = {
     .heldItem = ITEM_NONE
     }
 };
+
+static const struct TrainerMonItemDefaultMoves sParty_FALADOR_MODTIMBO[] = {
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_DEAD_TREE,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_EXORAXE,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_SPORAXE,
+    .heldItem = ITEM_NONE
+    }
+};
+
+//LUMBRIDGE SWAMP CAVES
+static const struct TrainerMonItemDefaultMoves sParty_LUMBRIDGESWAMPCAVE_FISHERMAN_1[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_FROGSPAWN,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_EEL_SLIMY_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_LUMBRIDGESWAMPCAVE_SKELETON_1[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_HAND_CREEPING_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 14,
+    .species = SPECIES_BAT,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_BAT,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_LUMBRIDGESWAMPCAVE_PVMER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_TUROTH,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_KURASK,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_CRAWLER_CAVE_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+//DRAYNOR SEWERS
+static const struct TrainerMonItemDefaultMoves sParty_DRAYNORSEWERS_SKELETON_1[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_BAT,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_BAT_BOX_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+static const struct TrainerMonItemDefaultMoves sParty_DRAYNORSEWERS_SKELETON_2[] = {
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_SPIDERLING,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_BAT,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_SPIDER_GIANT_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE6_FIREMAKER[] = {
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_SALAMANDER_GREEN_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_IMP,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_IMP,
+    .heldItem = ITEM_NONE
+    }
+};
+
+

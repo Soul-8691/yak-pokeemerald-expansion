@@ -327,15 +327,32 @@ script NPC_Draynor_Noob_WillowTree{
 
 //INDOORS
 script Draynor_Morgan{
-	lock
-	faceplayer
-    namebox("Morgan")
-	msgbox(format("There's a Vampyre in Draynor Mannor but no one believes me.."))
-    msgbox(format("What is that?!\pYou defeated the Vampyre in a battle?\pWell thanks for that, please accept this as a gift."))
-    msgbox(format("Thank you again."))
-    hidenamebox
-    release
-	end
+    switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+        case 0: 
+        case 1: 
+        case 2: 
+        case 3: 
+        case 4: 
+        case 5: 
+        case 6: 
+        case 7: 
+            lock
+	        faceplayer
+            namebox("Morgan")
+            msgbox(format("There's a Vampyre in Draynor Mannor but no one believes me.."))
+            hidenamebox
+            release
+            end
+
+        case 8:
+            lock
+	        faceplayer
+            namebox("Morgan")
+            msgbox(format("What is that?!\pYou defeated the Vampyre in a battle?\pWell thanks for that!"))
+            hidenamebox
+            release
+            end
+    }
 }
 
 script NPC_Draynor_Morgans_Wife{

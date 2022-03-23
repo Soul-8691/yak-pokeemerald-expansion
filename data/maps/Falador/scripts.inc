@@ -1,20 +1,36 @@
 Falador_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, Falador_MapScripts_MAP_SCRIPT_ON_TRANSITION
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, Falador_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
+	map_script MAP_SCRIPT_ON_LOAD, Falador_MapScripts_MAP_SCRIPT_ON_LOAD
 	.byte 0
 
-Falador_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+Falador_MapScripts_MAP_SCRIPT_ON_LOAD:
+	call MODTIMBO_STATE
 	return
 
-Falador_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-	.2byte 0
+
+MODTIMBO_STATE::
+	switch VAR_POKESCAPE_MODTIMBO_STATE
+	case 0, MODTIMBO_STATE_2
+	case 1, MODTIMBO_STATE_3
+	return
+
+MODTIMBO_STATE_2:
+	removeobject 5
+	setflag FLAG_MOD_TIMBO
+	return
+
+MODTIMBO_STATE_3:
+	setmetatile 44, 5, 593, 1
+	setmetatile 44, 6, 15, 1
+	special DrawWholeMapView
+	removeobject 5
+	setflag FLAG_MOD_TIMBO
+	return
 
 
 NPC_FALADOR_NPC_1::
 	lock
 	faceplayer
-	namebox NPC_FALADOR_NPC_1_Text_0
-	msgbox NPC_FALADOR_NPC_1_Text_1
+	msgbox NPC_FALADOR_NPC_1_Text_0
 	waitmessage
 	hidenamebox
 	release
@@ -57,7 +73,6 @@ NPC_FALADOR_GUARD_3::
 NPC_FALADOR_NPC_2::
 	lock
 	faceplayer
-	namebox NPC_FALADOR_NPC_1_Text_0
 	msgbox NPC_FALADOR_NPC_2_Text_0
 	waitmessage
 	hidenamebox
@@ -68,7 +83,6 @@ NPC_FALADOR_NPC_2::
 NPC_FALADOR_NPC_3::
 	lock
 	faceplayer
-	namebox NPC_FALADOR_NPC_1_Text_0
 	msgbox NPC_FALADOR_NPC_3_Text_0
 	waitmessage
 	hidenamebox
@@ -79,8 +93,161 @@ NPC_FALADOR_NPC_3::
 NPC_FALADOR_NPC_4::
 	lock
 	faceplayer
-	namebox NPC_FALADOR_NPC_1_Text_0
 	msgbox NPC_FALADOR_NPC_4_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_GUARD_4::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_GUARD_1_Text_0
+	msgbox NPC_FALADOR_GUARD_4_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_GUARD_5::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_GUARD_1_Text_0
+	msgbox NPC_FALADOR_GUARD_5_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_GUARD_6::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_GUARD_1_Text_0
+	msgbox NPC_FALADOR_GUARD_6_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_GUARD_7::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_GUARD_1_Text_0
+	msgbox NPC_FALADOR_GUARD_5_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_WHITEKNIGHT_1::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
+	msgbox NPC_FALADOR_WHITEKNIGHT_1_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_WHITEKNIGHT_2::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
+	msgbox NPC_FALADOR_WHITEKNIGHT_2_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_WHITEKNIGHT_3::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
+	msgbox NPC_FALADOR_WHITEKNIGHT_3_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_NPC_11::
+	lock
+	faceplayer
+	msgbox NPC_FALADOR_NPC_11_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_NPC_12::
+	lock
+	faceplayer
+	msgbox NPC_FALADOR_NPC_12_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_MINER_1::
+	faceplayer
+	msgbox NPC_FALADOR_MINER_1_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_MINER_2::
+	lock
+	faceplayer
+	msgbox NPC_FALADOR_MINER_2_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_DWARF_1::
+	faceplayer
+	msgbox NPC_FALADOR_DWARF_1_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_DWARF_2::
+	faceplayer
+	msgbox NPC_FALADOR_DWARF_2_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_SMITHER::
+	lock
+	faceplayer
+	msgbox NPC_FALADOR_SMITHER_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_WOODCUTTER::
+	lock
+	faceplayer
+	msgbox NPC_FALADOR_WOODCUTTER_Text_0
 	waitmessage
 	hidenamebox
 	release
@@ -141,6 +308,27 @@ NPC_FALADOR_HAIRDRESSER::
 	end
 
 
+NPC_FALADOR_HAIRDRESSER_NPC::
+	lock
+	faceplayer
+	msgbox NPC_FALADOR_HAIRDRESSER_NPC_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_HAIRDRESSER_SUOMI::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_HAIRDRESSER_SUOMI_Text_0
+	msgbox NPC_FALADOR_HAIRDRESSER_SUOMI_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
 NPC_FALADOR_CASSIE::
 	lock
 	faceplayer
@@ -152,22 +340,11 @@ NPC_FALADOR_CASSIE::
 	end
 
 
-NPC_FALADOR_NPC_9::
-	lock
-	faceplayer
-	namebox NPC_FALADOR_NPC_9_Text_0
-	msgbox NPC_FALADOR_NPC_9_Text_1
-	waitmessage
-	hidenamebox
-	release
-	end
-
-
 NPC_FALADOR_NPC_10::
 	lock
 	faceplayer
-	namebox NPC_FALADOR_NPC_9_Text_0
-	msgbox NPC_FALADOR_NPC_10_Text_0
+	namebox NPC_FALADOR_NPC_10_Text_0
+	msgbox NPC_FALADOR_NPC_10_Text_1
 	waitmessage
 	hidenamebox
 	release
@@ -241,21 +418,60 @@ NPC_FALADOR_Wyson::
 	end
 
 
-NPC_FALADOR_MOD_TIMBO::
-	trainerbattle_single TRAINER_MUGGER_ROUTE6, NPC_FALADOR_MOD_TIMBO_Text_0, NPC_FALADOR_MOD_TIMBO_Text_1
-	namebox NPC_FALADOR_MOD_TIMBO_Text_2
-	msgbox NPC_FALADOR_MOD_TIMBO_Text_3
-	giveitem ITEM_TINDERBOX, 1
+Falador_TREE::
+	switch VAR_POKESCAPE_MODTIMBO_STATE
+	case 0, Falador_TREE_2
+	case 1, Falador_TREE_3
+	return
+
+Falador_TREE_2:
+	lock
+	clearflag FLAG_MOD_TIMBO
+	addobject 5
+	playse SE_LEDGE
+	applymovement 5, Movement_FaladorTree_1
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_FaladorTree_2
+	waitmovement 0
+	namebox Falador_TREE_Text_0
+	msgbox Falador_TREE_Text_1
 	hidenamebox
+	closemessage
+	trainerbattle_no_intro TRAINER_FALADOR_MODTIMBO, Falador_TREE_Text_2
+	fadescreen FADE_TO_BLACK
+	setmetatile 44, 5, 593, 1
+	setmetatile 44, 6, 15, 1
+	special DrawWholeMapView
+	removeobject 5
+	setflag FLAG_MOD_TIMBO
+	fadescreen FADE_FROM_BLACK
+	msgbox Falador_TREE_Text_3
+	giveitem ITEM_TINDERBOX, 1
+	setvar VAR_POKESCAPE_MODTIMBO_STATE, 1
 	release
 	end
 
+Falador_TREE_3:
+	msgbox Falador_TREE_Text_4
+	closemessage
+	end
+
+
+Movement_FaladorTree_1:
+	jump_special_down
+	step_end
+
+Movement_FaladorTree_2:
+	lock_facing_direction
+	walk_fast_down
+	unlock_facing_direction
+	face_up
+	step_end
 
 NPC_FALADOR_NPC_8::
 	lock
 	faceplayer
-	namebox NPC_FALADOR_NPC_9_Text_0
-	msgbox NPC_FALADOR_NPC_9_Text_0
+	namebox NPC_FALADOR_NPC_10_Text_0
+	msgbox NPC_FALADOR_NPC_10_Text_0
 	waitmessage
 	hidenamebox
 	release
@@ -273,10 +489,100 @@ NPC_FALADOR_NPC_7::
 	end
 
 
-NPC_FALADOR_NPC_1_Text_0:
-	.string "RSN$"
+NPC_FALADOR_GENERALSTORE_NPC::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_GUARD_1_Text_0
+	msgbox NPC_FALADOR_GENERALSTORE_NPC_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
 
-NPC_FALADOR_NPC_1_Text_1:
+
+NPC_FALADOR_BANK_NPC_1::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_GUARD_1_Text_0
+	msgbox NPC_FALADOR_BANK_NPC_1_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_GEMSTORE_NPC_1::
+	lock
+	faceplayer
+	msgbox NPC_FALADOR_GEMSTORE_NPC_1_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_GEMSTORE_OWNER::
+	lock
+	faceplayer
+	msgbox NPC_FALADOR_GEMSTORE_OWNER_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_BANK_NPC_2::
+	lock
+	faceplayer
+	msgbox NPC_FALADOR_BANK_NPC_2_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_BANK_NPC_3::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_WHITEKNIGHT_1_Text_0
+	msgbox NPC_FALADOR_BANK_NPC_3_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_HOUSE_NPC_1::
+	lock
+	faceplayer
+	msgbox NPC_FALADOR_HOUSE_NPC_1_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_HOUSE_NPC_2::
+	lock
+	faceplayer
+	msgbox NPC_FALADOR_HOUSE_NPC_2_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_NPC_9::
+	lock
+	faceplayer
+	msgbox NPC_FALADOR_NPC_9_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_NPC_1_Text_0:
 	.string "Have you heard about the Mining &\n"
 	.string "Smithing rework?$"
 
@@ -316,8 +622,80 @@ NPC_FALADOR_NPC_3_Text_0:
 	.string "evolutions out there?$"
 
 NPC_FALADOR_NPC_4_Text_0:
-	.string "Gnome cocktails are very useful. They\n"
-	.string "increase your monsters stats.$"
+	.string "Gnome cocktails are very useful.\p"
+	.string "They increase your monsters stats.$"
+
+NPC_FALADOR_GUARD_4_Text_0:
+	.string "Falador is a nice city, the white\n"
+	.string "knights keeps us safe.\p"
+	.string "Stay vigilant adventurer.$"
+
+NPC_FALADOR_GUARD_5_Text_0:
+	.string "CUPHOLDER$"
+
+NPC_FALADOR_GUARD_6_Text_0:
+	.string "This statue shows our god of choice.\p"
+	.string "Saradomin the god of wisdom.\p"
+	.string "Please do show your respect.$"
+
+NPC_FALADOR_WHITEKNIGHT_1_Text_0:
+	.string "White Knight$"
+
+NPC_FALADOR_WHITEKNIGHT_1_Text_1:
+	.string "South from here is the Falador castle\n"
+	.string "home to the White Knights.\p"
+	.string "Are you interested in signing up?$"
+
+NPC_FALADOR_WHITEKNIGHT_2_Text_0:
+	.string "Past this bridge is Falador Castle!\p"
+	.string "Which is also the gym location for the\n"
+	.string "MvM Championships.$"
+
+NPC_FALADOR_WHITEKNIGHT_3_Text_0:
+	.string "Sir Amik Varze is our towns gym leader.$"
+
+NPC_FALADOR_NPC_11_Text_0:
+	.string "After I finish work today I might walk\n"
+	.string "around Falador Park.$"
+
+NPC_FALADOR_NPC_12_Text_0:
+	.string "Oh don't mind me.\p"
+	.string "I'm just training my Firemaking skill.$"
+
+NPC_FALADOR_MINER_1_Text_0:
+	.string "I am mining coal to get enough money\n"
+	.string "for a better pickaxe.\p"
+	.string "Then I can mine coal faster to get an\n"
+	.string "even better pickaxe.$"
+
+NPC_FALADOR_MINER_2_Text_0:
+	.string "This is so much work, but someone has to\n"
+	.string "do it otherwise we will never see it\l"
+	.string "finished.$"
+
+NPC_FALADOR_DWARF_1_Text_0:
+	.string "If you are wanting to access the\n"
+	.string "Dwarven Mines.\p"
+	.string "You can do so by entering the building\n"
+	.string "next door to the Party Room, north of\l"
+	.string "here.$"
+
+NPC_FALADOR_DWARF_2_Text_0:
+	.string "Sorry to inconvenience you but the\n"
+	.string "entrance to the underground mines is\l"
+	.string "currently unavailable due to the\l"
+	.string "rework.$"
+
+NPC_FALADOR_SMITHER_Text_0:
+	.string "We are currently in the middle of\n"
+	.string "expanding the Mining Guild.\p"
+	.string "We are also going to be clearing this\n"
+	.string "plot of land to put a Smithing Guild\l"
+	.string "here.$"
+
+NPC_FALADOR_WOODCUTTER_Text_0:
+	.string "Chop, chop, chop!\p"
+	.string "Goodbye trees, hello Smithing Guild!$"
 
 NPC_FALADOR_ESTATE_AGENT_Text_0:
 	.string "Estate Agent$"
@@ -396,6 +774,20 @@ NPC_FALADOR_HAIRDRESSER_Text_5:
 	.string "Take this, and never return. Please. For\n"
 	.string "the good of my business.$"
 
+NPC_FALADOR_HAIRDRESSER_NPC_Text_0:
+	.string "Today im really feeling the dragoon\n"
+	.string "hairstyle.\p"
+	.string "It will fix my love life for sure.$"
+
+NPC_FALADOR_HAIRDRESSER_SUOMI_Text_0:
+	.string "SUOMI$"
+
+NPC_FALADOR_HAIRDRESSER_SUOMI_Text_1:
+	.string "What, do you think this is my natural\n"
+	.string "hair colour?\p"
+	.string "I have to dye my hair every few weeks\n"
+	.string "to keep it this purple.$"
+
 NPC_FALADOR_CASSIE_Text_0:
 	.string "Cassie$"
 
@@ -404,15 +796,10 @@ NPC_FALADOR_CASSIE_Text_1:
 	.string "for today. You cannot let monsters\l"
 	.string "equip shields anyway.$"
 
-NPC_FALADOR_NPC_9_Text_0:
+NPC_FALADOR_NPC_10_Text_0:
 	.string "$"
 
-NPC_FALADOR_NPC_9_Text_1:
-	.string "Did you know part of the Dwarven Mines\n"
-	.string "are right underneath us! It is scary\l"
-	.string "just thinking about it.$"
-
-NPC_FALADOR_NPC_10_Text_0:
+NPC_FALADOR_NPC_10_Text_1:
 	.string "Is it still there?! I do not want to\n"
 	.string "leave my house unless it is gone! What?\l"
 	.string "It is just a spiderling? I do not\l"
@@ -473,25 +860,78 @@ NPC_FALADOR_Wyson_Text_1:
 	.string "you to it. I am too scared to find out\l"
 	.string "how though.$"
 
-NPC_FALADOR_MOD_TIMBO_Text_0:
+Falador_TREE_Text_0:
+	.string "Mod Timbo$"
+
+Falador_TREE_Text_1:
 	.string "Oh no, you caught me!!\p"
 	.string "I was planning to chop down this tree\n"
 	.string "but it appears I must chop you down\l"
 	.string "first!$"
 
-NPC_FALADOR_MOD_TIMBO_Text_1:
+Falador_TREE_Text_2:
 	.string "You saw nothing!$"
 
-NPC_FALADOR_MOD_TIMBO_Text_2:
-	.string "Mod Timbo$"
-
-NPC_FALADOR_MOD_TIMBO_Text_3:
+Falador_TREE_Text_3:
 	.string "Despite winning the battle Timbo\n"
 	.string "appears to have chopped down the tree\l"
 	.string "anyway.\p"
-	.string "There is something next to the stump.\n"
+	.string "There is something next to the stump.\p"
 	.string "Looks like he dropped it in a rush.$"
+
+Falador_TREE_Text_4:
+	.string "TIIIIMBOOOOOOOOO!$"
 
 NPC_FALADOR_NPC_7_Text_0:
 	.string "Maybe they will one day rework farming.\n"
 	.string "A man can dream.$"
+
+NPC_FALADOR_GENERALSTORE_NPC_Text_0:
+	.string "Even if your monsters get stronger, it\n"
+	.string "never hurts to have some healing items\l"
+	.string "ready for when you are in a pinch.$"
+
+NPC_FALADOR_BANK_NPC_1_Text_0:
+	.string "You can only carry six monsters.\p"
+	.string "Make sure to cover all your bases with\n"
+	.string "those six.$"
+
+NPC_FALADOR_GEMSTORE_NPC_1_Text_0:
+	.string "They say the gems from this store\n"
+	.string "comes all the way from Shilo Village.\p"
+	.string "Thats all the way over in Karamja!$"
+
+NPC_FALADOR_GEMSTORE_OWNER_Text_0:
+	.string "Welcome!\p"
+	.string "I am very sorry but the shipment of\n"
+	.string "gems is still on hold and there is\l"
+	.string "nothing else I can sell you.\p"
+	.string "Please come again another time.$"
+
+NPC_FALADOR_BANK_NPC_2_Text_0:
+	.string "I got wiped out by Sir Amik.\p"
+	.string "Guess my monsters just werent strong\n"
+	.string "enough.$"
+
+NPC_FALADOR_BANK_NPC_3_Text_0:
+	.string "Back in the day a lot of people crowded\n"
+	.string "up here and in the park yelling\l"
+	.string "colourful words and screaming at each\l"
+	.string "other to get attention.\p"
+	.string "I really miss it.$"
+
+NPC_FALADOR_HOUSE_NPC_1_Text_0:
+	.string "Dinner will be ready soon, will you be\n"
+	.string "joining us?$"
+
+NPC_FALADOR_HOUSE_NPC_2_Text_0:
+	.string "I don't know you but I am telling you,\n"
+	.string "run!\p"
+	.string "It is too late for me but you can still\n"
+	.string "run before the dinner is ready!\p"
+	.string "Help…$"
+
+NPC_FALADOR_NPC_9_Text_0:
+	.string "Did you know part of the Dwarven Mines\n"
+	.string "are right underneath us!\p"
+	.string "It is scary just thinking about it.$"

@@ -78,7 +78,7 @@ const u8 gTrainerClassNames[][13] = {
 	[TRAINER_CLASS_WIZARD] = _("WIZARD"),
 	[TRAINER_CLASS_WITCH] = _("WITCH"),
 	[TRAINER_CLASS_GUARD] = _("GUARD"),
-	[TRAINER_CLASS_JMOD] = _("JMOD"),
+	[TRAINER_CLASS_JMOD] = _("MOD"),
 	[TRAINER_CLASS_BOT] = _("BOT"),
 	[TRAINER_CLASS_NOOB] = _("NOOB"),
 	[TRAINER_CLASS_MERCHER] = _("MERCHER"),
@@ -124,4 +124,5 @@ const u8 gTrainerClassNames[][13] = {
 	[TRAINER_CLASS_LEGEND] = _("LEGEND"),
     [TRAINER_CLASS_CHEF] = _("CHEF"),
     [TRAINER_CLASS_AGILE] = _("AGILE"),
+    [TRAINER_CLASS_DARK] = _("DARK"),
 };

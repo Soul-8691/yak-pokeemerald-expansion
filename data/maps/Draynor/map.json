@@ -3,7 +3,7 @@
   "name": "Draynor",
   "layout": "LAYOUT_DRAYNOR",
   "music": "MUS_PS_ROUTE_LUMBRIDGE",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_DRAYNOR",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_TOWN",

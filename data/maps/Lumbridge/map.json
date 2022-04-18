@@ -3,7 +3,7 @@
   "name": "Lumbridge",
   "layout": "LAYOUT_LUMBRIDGE",
   "music": "MUS_PS_LUMBRIDGE",
-  "region_map_section": "MAPSEC_MISTHALIN",
+  "region_map_section": "MAPSEC_LUMBRIDGE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_CITY",

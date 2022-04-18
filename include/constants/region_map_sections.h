@@ -102,6 +102,7 @@
 #define MAPSEC_SAFFRON_CITY                 0x62
 #define MAPSEC_ROUTE_4_FLYDUP               0x63
 #define MAPSEC_ROUTE_10_FLYDUP              0x64
+
 #define MAPSEC_ROUTE_1                      0x65
 #define MAPSEC_ROUTE_2                      0x66
 #define MAPSEC_ROUTE_3                      0x67
@@ -127,6 +128,7 @@
 #define MAPSEC_ROUTE_23                     0x7B
 #define MAPSEC_ROUTE_24                     0x7C
 #define MAPSEC_ROUTE_25                     0x7D
+
 #define MAPSEC_VIRIDIAN_FOREST              0x7E
 #define MAPSEC_MT_MOON                      0x7F
 #define MAPSEC_S_S_ANNE                     0x80
@@ -214,9 +216,77 @@
 #define MAPSEC_ALTERING_CAVE                0xD2
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
-#define MAPSEC_NONE                         0xD5
 
-//POKESCAPE
+//pokescape
+//CITY
+#define MAPSEC_TUTORIAL_ISLAND              0xD6
+#define MAPSEC_LUMBRIDGE                  0xD7
+#define MAPSEC_DRAYNOR                 0xD8
+#define MAPSEC_PORT_SARIM               0xD9
+#define MAPSEC_RIMMINGTON               0xDA
+#define MAPSEC_FALADOR              0xDB
+#define MAPSEC_VARROCK              0xDC
+#define MAPSEC_BARBARIAN_VILLAGE              0xDD
+#define MAPSEC_GOBLIN_VILLAGE               0xDE
+#define MAPSEC_DWARVEN_MINES                0xDF
+#define MAPSEC_EDGEVILLE                0xE1
+#define MAPSEC_ALKHARID                 0xE2
+#define MAPSEC_MUSA_POINT               0xE3
+#define MAPSEC_TAVERLEY                0xE4
+
+#define MAPSEC_LUMBRIDGE_SWAMP              0xE5
+#define MAPSEC_MILL_LANE_MILL             0xE6
+#define MAPSEC_DRAYNOR_MANOR                    0xE7
+#define MAPSEC_MUDSKIPPER_POINT                   0xE8
+#define MAPSEC_WIZARDS_TOWER                    0xE9
+/*
+#define MAPSEC_ROUTE_1                    0xEA
+#define MAPSEC_ROUTE_2                    0xEB
+#define MAPSEC_ROUTE_3                    0xEC
+#define MAPSEC_ROUTE_4                    0xED
+#define MAPSEC_ROUTE_5                    0xEE
+#define MAPSEC_ROUTE_6                    0xEF
+#define MAPSEC_ROUTE_7                    0xF1
+#define MAPSEC_ROUTE_8                    0xF2
+#define MAPSEC_ROUTE_9                    0xF3
+#define MAPSEC_ROUTE_10                    0xF4
+#define MAPSEC_ROUTE_11                    0xF5
+#define MAPSEC_ROUTE_12                    0xF6
+#define MAPSEC_ROUTE_13                    0xF7
+#define MAPSEC_ROUTE_14                    0xF8
+#define MAPSEC_ROUTE_15                    0xF9
+#define MAPSEC_ROUTE_16                    0xFA
+#define MAPSEC_ROUTE_17                    0xFB
+#define MAPSEC_ROUTE_18                    0xFC
+#define MAPSEC_ROUTE_19                    0x25
+#define MAPSEC_ROUTE_20                    0x26
+#define MAPSEC_ROUTE_21                    0x27
+#define MAPSEC_ROUTE_22                    0x28
+#define MAPSEC_ROUTE_23                    0x29
+#define MAPSEC_ROUTE_24                    0x2A
+#define MAPSEC_ROUTE_25                    0x2B
+*/
+#define MAPSEC_ROUTE_26                    0xEA
+#define MAPSEC_ROUTE_27                    0xEB
+#define MAPSEC_ROUTE_28                    0xEC
+#define MAPSEC_ROUTE_29                    0xED
+#define MAPSEC_ROUTE_30                    0xEE
+#define MAPSEC_ROUTE_31                    0xEF
+#define MAPSEC_ROUTE_32               0xF1
+#define MAPSEC_ROUTE_33               0xF2
+#define MAPSEC_ROUTE_34               0xF3
+#define MAPSEC_ROUTE_35               0xF4
+#define MAPSEC_ROUTE_36        0xF5
+#define MAPSEC_ROUTE_37                 0xF6
+#define MAPSEC_ROUTE_38                   0xF7
+#define MAPSEC_ROUTE_39                  0xF8
+#define MAPSEC_ROUTE_40              0xF9
+#define MAPSEC_ROUTE_41              0xFA
+/*
+#define MAPSEC_ROUTE_42               0xFB
+#define MAPSEC_ROUTE_43               0xFC
+*/
+
 #define MAPSEC_MISTHALIN					0xD6
 #define MAPSEC_KHARIDIAN_DESERT				0xD7
 #define MAPSEC_ASGARNIA						0xD8
@@ -225,10 +295,11 @@
 #define MAPSEC_KANDARIN						0xDB
 #define MAPSEC_KARAMJA						0xDC
 #define MAPSEC_MORYTANIA					0xDD
-#define MAPSEC_WILDERNESS					0xDE
-#define MAPSEC_ENDMAPSEC                    0xDF			
+#define MAPSEC_WILDERNESS					0xDE		
 
 
+#define MAPSEC_NONE                         0xFB
+#define MAPSEC_ENDMAPSEC                0xFC
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

@@ -81,7 +81,7 @@ script EVENT_HAM_DRAYNORMANOR_CRYPT{
     delay(16)
     
     namebox("COUNT DRAYNOR")
-    msgbox(format("Another one!\pI guess I will have to deal with you aswell!"))
+    msgbox(format("Another one!\pI guess I will have to deal with you as well!"))
     hidenamebox
 	closemessage
     applymovement(HAMGRUNT_ID, MOVEMENT_DraynorManorCrypt_HAM_4)
@@ -95,7 +95,7 @@ script EVENT_HAM_DRAYNORMANOR_CRYPT{
     applymovement(COUNTDRAYNOR_ID, MOVEMENT_DraynorManorCrypt_COUNT_5)
     waitmovement(0)
     namebox("COUNT DRAYNOR")
-    msgbox(format("Hmmm.. The pink man seems to have fled during our battle.\pSorry about that, I wouldn't think he has gotten that far.\pI'm going back to bed, please don't disturb me again."))
+    msgbox(format("Hmmm… The pink man seems to have fled during our battle.\pSorry about that, I wouldn't think he has gotten that far.\pI'm going back to bed, please don't disturb me again."))
     closemessage
     hidenamebox
     applymovement(COUNTDRAYNOR_ID, MOVEMENT_DraynorManorCrypt_COUNT_6)

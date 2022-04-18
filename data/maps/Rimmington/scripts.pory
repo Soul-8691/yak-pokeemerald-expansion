@@ -223,7 +223,8 @@ script NPC_RIMMINGTON_Tehnoobshow{
 
 
 script NPC_RIMMINGTON_CustomsOfficer{
-    
+    lock
+    faceplayer
     namebox("OFFICER")
     msgbox(format("Behave yourself otherwise I will take you to Rock Island Prison.\pYou don't want to go to Rock Island Prison."))
     hidenamebox

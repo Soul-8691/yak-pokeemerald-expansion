@@ -528,6 +528,16 @@ NPC_PORTSARIM_FISHING_CUSTOMER::
 	end
 
 
+NPC_PORTSARIM_BANK_NPC::
+	lock
+	faceplayer
+	msgbox NPC_PORTSARIM_BANK_NPC_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
 Generalstore_PortSarim_Clerk::
 	lock
 	faceplayer
@@ -838,6 +848,15 @@ NPC_PORTSARIM_FISHING_CUSTOMER_Text_0:
 	.string "find a super rare coloured fish!\p"
 	.string "…{PAUSE 15}…{PAUSE 15}\n"
 	.string "This stays between us.$"
+
+NPC_PORTSARIM_BANK_NPC_Text_0:
+	.string "Ye will never believe me lad.\p"
+	.string "I raised six seagulls.\n"
+	.string "Six!\p"
+	.string "Thats more than three!\p"
+	.string "Every one of them wee flying rats\n"
+	.string "evolved to a different beastie.\p"
+	.string "What in tarnation is this sorcery lad?$"
 
 Generalstore_PortSarim_Clerk_Text_0:
 	.string "ASSISTANT$"

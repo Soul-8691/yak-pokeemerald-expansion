@@ -222,8 +222,8 @@ EVENT_HAM_DRAYNORMANOR_CRYPT_Text_5:
 
 EVENT_HAM_DRAYNORMANOR_CRYPT_Text_6:
 	.string "Another one!\p"
-	.string "I guess I will have to deal with you\n"
-	.string "aswell!$"
+	.string "I guess I will have to deal with you as\n"
+	.string "well!$"
 
 EVENT_HAM_DRAYNORMANOR_CRYPT_Text_7:
 	.string "Urgh!\n"
@@ -238,7 +238,7 @@ EVENT_HAM_DRAYNORMANOR_CRYPT_Text_8:
 	.string "man?$"
 
 EVENT_HAM_DRAYNORMANOR_CRYPT_Text_9:
-	.string "Hmmm.. The pink man seems to have fled\n"
+	.string "Hmmm… The pink man seems to have fled\n"
 	.string "during our battle.\p"
 	.string "Sorry about that, I wouldn't think he\n"
 	.string "has gotten that far.\p"

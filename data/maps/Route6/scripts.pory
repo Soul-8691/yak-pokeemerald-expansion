@@ -134,9 +134,9 @@ script BATTLE_ROUTE6_MUGGER{
 }
 
 
-script TRAINER_ROUTE6_GUARD_1
+script BATTLE_ROUTE6_GUARD_1
 {
-    trainerbattle_single(TRAINER_MUGGER_ROUTE6, format("Welcome to Falador, I greet you with a battle!"),format("Welcome and goodbye."))
+    trainerbattle_single(TRAINER_ROUTE6_GUARD_1, format("Welcome to Falador, I greet you with a battle!"),format("Welcome and goodbye."))
     namebox ("Guard")
     msgbox(format("Enjoy your stay, and do not get in trouble."))
 	hidenamebox

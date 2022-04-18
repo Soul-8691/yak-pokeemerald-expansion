@@ -900,7 +900,7 @@ HAM_EVENT_Route1_TRIGGER_1_Text_0:
 	.string "Ariane$"
 
 HAM_EVENT_Route1_TRIGGER_1_Text_1:
-	.string "Stop theif!\p"
+	.string "Stop thief!\p"
 	.string "There is nowhere left for you to run!$"
 
 HAM_EVENT_Route1_MAIN_2_Text_0:
@@ -930,12 +930,12 @@ ArianeChaseHamEvent7_Text_5:
 	.string "Well that was uncalled for!$"
 
 ArianeChaseHamEvent7_Text_6:
-	.string "Stop theif! There is nowhere left for\n"
+	.string "Stop thief! There is nowhere left for\n"
 	.string "you to run!$"
 
 ArianeChaseHamEvent7_Text_7:
 	.string "UGH! This dumb couple keeps blocking my\n"
-	.string "way.. but there is still the manor!$"
+	.string "way… but there is still the manor!$"
 
 BATTLE_AREA_TRAINER_1_Text_0:
 	.string "Cor Blimey what are ye doin in me\n"

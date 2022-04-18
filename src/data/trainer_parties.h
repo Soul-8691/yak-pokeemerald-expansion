@@ -1919,5 +1919,200 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE6_FIREMAKER[] = {
     .heldItem = ITEM_NONE
     }
 };
+//ASGARN DUNGEON
 
+static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_MUGGER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_FERRET,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_FERRET,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_RACOON,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PIRATE_1[] = {
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_CRAB_GREY_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_SHRIMP,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_SHRIMP,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_MACKEREL,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PIRATE_2[] = {
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_FROGEEL,  //replace with BOVIMASTYX
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PIRATE_3[] = {
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_SEAGULL_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_COD,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_KARAMBWAN,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_PENGUIN,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PIRATE_4[] = {
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_SEAGULL_STEVEN_FORM,  //replace with BOVIMASTYX
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_GOBLIN_1[] = {
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_KEBBIT,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_KEBBIT_POLAR_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_SPIDER_HUGE_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_GOBLIN_2[] = {
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_SEAGULL_NORMAL_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_SCORPION_PIT_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_QUESTER [] = {
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_BEAVER,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_RUNE,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_FERRET,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PVM_1[] = {
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_SALAMANDER_ORANGE_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_TUROTH,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_DRAGON_RED_FORM,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PVM_2[] = {
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_HAND_CRAWLING_FORM,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_DUST_DEVIL,
+    .heldItem = ITEM_NONE
+    }
+};
+
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE6_GUARD_1[] = {
+    {
+    .iv = 0,
+    .lvl = 19,
+    .species = SPECIES_LABRADOR,
+    .heldItem = ITEM_NONE
+    }
+};
 

@@ -55,3 +55,14 @@ script NPC_DraynorBank_PilloryGuard{
     release
 	end
 }
+
+//LUMBRIDGE BANK
+script NPC_LumbridgeBank_NPC1{
+	lock
+	faceplayer
+    //namebox("Pillory Guard")
+	msgbox(format("The Lumbridge Bank used to be on top of the Lumbridge Castle, but it was difficult to get there.\pDuke Horacio however started a Gym there and moved the Bank to a more convenient location."))
+    hidenamebox
+    release
+	end
+}

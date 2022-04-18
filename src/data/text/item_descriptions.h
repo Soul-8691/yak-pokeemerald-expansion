@@ -1800,8 +1800,9 @@ static const u8 sPurpleSweetsDesc[] = _(
 //POKESCAPE FARMING ITEMS
 
 static const u8 sCabbageDesc[] = _(
-    "Herald of the Brassica.\n"
-    "Revives your MONSTERS.");
+    "Herald of the \n"
+    "Brassica. Heals a\n"
+    "paralyzed MONSTER.");
 
 static const u8 sAppleDesc[] = _(
     "This is a Cupholder.");

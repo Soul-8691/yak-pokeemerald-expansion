@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
-      "script": "TRAINER_ROUTE6_GUARD_1",
+      "script": "BATTLE_ROUTE6_GUARD_1",
       "flag": "FLAG_TEMP_1"
     },
     {

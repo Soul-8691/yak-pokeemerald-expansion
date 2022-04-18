@@ -110,7 +110,7 @@ script WizardsTower_Wizard{
 			lock
 			faceplayer
 			namebox ("Finix")
-			msgbox(format("Why would that pink hooded guy steal our reasearch papers on the abyss?"))
+			msgbox(format("Why would that pink hooded guy steal our research papers on the abyss?"))
 			hidenamebox
 			release
 			end

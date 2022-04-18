@@ -704,7 +704,7 @@ WizardsTower_Wizard_Text_0:
 
 WizardsTower_Wizard_Text_1:
 	.string "Why would that pink hooded guy steal\n"
-	.string "our reasearch papers on the abyss?$"
+	.string "our research papers on the abyss?$"
 
 WizardsTower_Wizard_Text_2:
 	.string "Thank you for helping out earlier.$"

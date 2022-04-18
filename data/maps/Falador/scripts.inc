@@ -137,7 +137,7 @@ NPC_FALADOR_GUARD_7::
 	lock
 	faceplayer
 	namebox NPC_FALADOR_GUARD_1_Text_0
-	msgbox NPC_FALADOR_GUARD_5_Text_0
+	msgbox NPC_FALADOR_GUARD_7_Text_0
 	waitmessage
 	hidenamebox
 	release
@@ -631,12 +631,21 @@ NPC_FALADOR_GUARD_4_Text_0:
 	.string "Stay vigilant adventurer.$"
 
 NPC_FALADOR_GUARD_5_Text_0:
-	.string "CUPHOLDER$"
+	.string "While most guards prefer to use a sword\n"
+	.string "or monster to keep order in Falador, I\l"
+	.string "prefer my crossbow.\p"
+	.string "That way people if people attack me\n"
+	.string "from behind a obstacle I do not have to\l"
+	.string "stand still and accept my fate.$"
 
 NPC_FALADOR_GUARD_6_Text_0:
 	.string "This statue shows our god of choice.\p"
 	.string "Saradomin the god of wisdom.\p"
 	.string "Please do show your respect.$"
+
+NPC_FALADOR_GUARD_7_Text_0:
+	.string "The guard looks nervous, you wonder\n"
+	.string "why…$"
 
 NPC_FALADOR_WHITEKNIGHT_1_Text_0:
 	.string "White Knight$"

@@ -462,7 +462,7 @@ NPC_DraynorManor_Oddenstein_Text_3:
 	.string "basement.$"
 
 NPC_DraynorManor_Oddenstein_Text_4:
-	.string "I beleive the last place I saw the\n"
+	.string "I believe the last place I saw the\n"
 	.string "Pressure Gauge was outside in the\l"
 	.string "fountain.$"
 
@@ -541,7 +541,7 @@ CooksAssistant_Check_OilCan_Text_1:
 
 CooksAssistant_Check_PressureGauge_Text_0:
 	.string "You don't have the Pressure Gauge.\p"
-	.string "I beleive the last place I saw that was\n"
+	.string "I believe the last place I saw that was\n"
 	.string "outside in the fountain.$"
 
 CooksAssistant_Check_PressureGauge_Text_1:

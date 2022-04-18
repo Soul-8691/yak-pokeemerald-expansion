@@ -1586,6 +1586,175 @@ const struct Trainer gTrainers[] = {
         .party = {.ItemDefaultMoves = sParty_ROUTE6_FIREMAKER},
         .scaling = FALSE,
     },
+//ASGANIRNA DUNGEON
+    [TRAINER_AsgarnianDungeon_MUGGER_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_MUGGER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_mugger,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_AsgarnianDungeon_MUGGER_1),
+        .party = {.ItemDefaultMoves = sParty_AsgarnianDungeon_MUGGER_1},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_AsgarnianDungeon_PIRATE_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_PIRATE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_pirate,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_AsgarnianDungeon_PIRATE_1),
+        .party = {.ItemDefaultMoves = sParty_AsgarnianDungeon_PIRATE_1},
+        .scaling = FALSE,
+    },
+    
+    [TRAINER_AsgarnianDungeon_PIRATE_2] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_PIRATE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_pirate,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_AsgarnianDungeon_PIRATE_2),
+        .party = {.ItemDefaultMoves = sParty_AsgarnianDungeon_PIRATE_2},
+        .scaling = FALSE,
+    },
+    
+    [TRAINER_AsgarnianDungeon_PIRATE_3] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_PIRATE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_pirate,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_AsgarnianDungeon_PIRATE_3),
+        .party = {.ItemDefaultMoves = sParty_AsgarnianDungeon_PIRATE_3},
+        .scaling = FALSE,
+    },
+    
+    [TRAINER_AsgarnianDungeon_PIRATE_4] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_PIRATE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_pirate,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_AsgarnianDungeon_PIRATE_4),
+        .party = {.ItemDefaultMoves = sParty_AsgarnianDungeon_PIRATE_4},
+        .scaling = FALSE,
+    },
+    
+    [TRAINER_AsgarnianDungeon_GOBLIN_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_GOBLIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_goblin,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_AsgarnianDungeon_GOBLIN_1),
+        .party = {.ItemDefaultMoves = sParty_AsgarnianDungeon_GOBLIN_1},
+        .scaling = FALSE,
+    },
+    
+    [TRAINER_AsgarnianDungeon_GOBLIN_2] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_GOBLIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_goblin,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_AsgarnianDungeon_GOBLIN_2),
+        .party = {.ItemDefaultMoves = sParty_AsgarnianDungeon_GOBLIN_2},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_AsgarnianDungeon_QUESTER] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_QUESTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_quester,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_AsgarnianDungeon_QUESTER),
+        .party = {.ItemDefaultMoves = sParty_AsgarnianDungeon_QUESTER},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_AsgarnianDungeon_PVM_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SLAYER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_slayer,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_AsgarnianDungeon_PVM_1),
+        .party = {.ItemDefaultMoves = sParty_AsgarnianDungeon_PVM_1},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_AsgarnianDungeon_PVM_2] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_SLAYER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_slayer,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_AsgarnianDungeon_PVM_2),
+        .party = {.ItemDefaultMoves = sParty_AsgarnianDungeon_PVM_2},
+        .scaling = FALSE,
+    },
+
+    [TRAINER_ROUTE6_GUARD_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_PKER,
+        .trainerPic = TRAINER_PIC_guard_falador,
+        .trainerName = _("CUPHOLDER"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE6_GUARD_1),
+        .party = {.ItemDefaultMoves = sParty_ROUTE6_GUARD_1},
+        .scaling = FALSE,
+    },
+
+
+
+
 
 
 

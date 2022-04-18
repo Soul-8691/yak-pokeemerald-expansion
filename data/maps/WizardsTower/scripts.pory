@@ -74,7 +74,7 @@ script HAM_EVENT_WizardsTower_3{
     lockall
     playbgm (MUS_PS_ENCOUNTER_HAM, 1)
     namebox("Ariane")
-    msgbox(format("Stop right there theif!"))
+    msgbox(format("Stop right there thief!"))
     hidenamebox
     release
     lockall

@@ -225,9 +225,9 @@ script NPC_ROUTE2_Wizard
 
 script BATTLE_ROUTE2_Trainer_1
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_1, format("Do you know the way to Draynor village by any chance?"),format("Wrong direction?\pIve followed the W for south all day!"))
+    trainerbattle_single(TRAINER_ROUTE2_TRAINER_1, format("Do you know the way to Draynor village by any chance?"),format("Wrong direction?\pI've followed the W for south all day!"))
     namebox ("How2type")
-    msgbox(format("Wrong direction?\pIve followed the W for south all day!"))
+    msgbox(format("Wrong direction?\pI've followed the W for south all day!"))
     hidenamebox
     release
     end

@@ -149,7 +149,7 @@ script NPC_FALADOR_GUARD_5
 	lock
 	faceplayer
     namebox ("Guard")
-	msgbox(format("CUPHOLDER"))
+	msgbox(format("While most guards prefer to use a sword or monster to keep order in Falador, I prefer my crossbow.\pThat way people if people attack me from behind a obstacle I do not have to stand still and accept my fate."))
     waitmessage
     hidenamebox
 	release
@@ -173,7 +173,7 @@ script NPC_FALADOR_GUARD_7
 	lock
 	faceplayer
     namebox ("Guard")
-	msgbox(format("CUPHOLDER"))
+	msgbox(format("The guard looks nervous, you wonder why…"))
     waitmessage
     hidenamebox
 	release

@@ -1363,7 +1363,7 @@ $(OBJEVENTGFXDIR)/pokescape_overworlds/Unicorn_Black.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 
-$(OBJEVENTGFXDIR)/pokescape_overworlds/Gymleader_Duke_Horacio.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokescape_overworlds/GymLeader_Duke_Horacio.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokescape_overworlds/GymLeader_Sir_Amik_Varze.4bpp: %.4bpp: %.png

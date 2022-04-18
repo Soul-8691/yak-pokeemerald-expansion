@@ -1,0 +1,14 @@
+mapscripts PortSarim_Pub_1F_MapScripts {
+}
+
+
+
+script NPC_PortSarimPub_Pirate_1{
+	lock
+	faceplayer
+    namebox("PIRATE")
+	msgbox(format("The customs officer confiscates all Karamja Rum.\pShe is the reason the Rum is always gone."))
+    hidenamebox
+    release
+	end
+}

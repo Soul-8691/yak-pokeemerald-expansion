@@ -128,8 +128,22 @@
 //DRAYNOR SEWERS
 #define TRAINER_DRAYNORSEWERS_SKELETON_1                   106
 #define TRAINER_DRAYNORSEWERS_SKELETON_2                   107
-
 #define TRAINER_ROUTE6_FIREMAKER                   108
+//ASGANIA DUNGEON
+#define TRAINER_AsgarnianDungeon_MUGGER_1                   109
+#define TRAINER_AsgarnianDungeon_PIRATE_1                   110
+#define TRAINER_AsgarnianDungeon_PIRATE_2                   111
+#define TRAINER_AsgarnianDungeon_PIRATE_3                   112
+#define TRAINER_AsgarnianDungeon_PIRATE_4                   113
+#define TRAINER_AsgarnianDungeon_GOBLIN_1                   114
+#define TRAINER_AsgarnianDungeon_GOBLIN_2                   115
+#define TRAINER_AsgarnianDungeon_QUESTER                   116
+#define TRAINER_AsgarnianDungeon_PVM_1                   117
+#define TRAINER_AsgarnianDungeon_PVM_2                   118
+
+#define TRAINER_ROUTE6_GUARD_1                   119
+
+
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

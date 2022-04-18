@@ -278,7 +278,7 @@ HAM_EVENT_WizardsTower_2_Text_1:
 	.string "Which way did he go...$"
 
 HAM_EVENT_WizardsTower_3_Text_0:
-	.string "Stop right there theif!$"
+	.string "Stop right there thief!$"
 
 HAM_EVENT_WizardsTower_3_Text_1:
 	.string "H.A.M. member$"

@@ -578,10 +578,10 @@
 #define FLAG_HIDDEN_ITEM_PORTSARIM_WATER_RUNE         (FLAG_HIDDEN_ITEMS_START + 0x0E)
 #define FLAG_HIDDEN_ITEM_PORTSARIM_LAMP_SPEED           (FLAG_HIDDEN_ITEMS_START + 0x0F)
 #define FLAG_HIDDEN_ITEM_PORTSARIM_FLAX            (FLAG_HIDDEN_ITEMS_START + 0x10)
+#define FLAG_HIDDEN_ITEM_AsgarnianDungeon_1                  (FLAG_HIDDEN_ITEMS_START + 0x11)
+#define FLAG_HIDDEN_ITEM_AsgarnianDungeon_2                  (FLAG_HIDDEN_ITEMS_START + 0x13)
+#define FLAG_HIDDEN_ITEM_AsgarnianDungeon_3                  (FLAG_HIDDEN_ITEMS_START + 0x12)
 
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x11)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON                 (FLAG_HIDDEN_ITEMS_START + 0x13)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_YELLOW_SHARD         (FLAG_HIDDEN_ITEMS_START + 0x12)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x14)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD           (FLAG_HIDDEN_ITEMS_START + 0x0C)
 #define FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE           (FLAG_HIDDEN_ITEMS_START + 0x15)
@@ -1153,13 +1153,12 @@
 #define FLAG_ITEM_LUMBRIDGESWAMPCAVE_ITEM_4                       0x42F
 #define FLAG_ITEM_LUMBRIDGESWAMPCAVE_ITEM_5                        0x430
 #define FLAG_ITEM_LUMBRIDGESWAMPCAVE_ITEM_6                       0x431
+#define FLAG_ITEM_AsgarnianDungeon_1                    0x432
+#define FLAG_ITEM_AsgarnianDungeon_2                    0x433
+#define FLAG_ITEM_AsgarnianDungeon_3                    0x434
+#define FLAG_ITEM_AsgarnianDungeon_4                    0x435
+#define FLAG_ITEM_AsgarnianDungeon_5                    0x436
 
-
-#define FLAG_ITEM_MT_PYRE_EXTERIOR_TM_48                            0x432
-#define FLAG_ITEM_NEW_MAUVILLE_ULTRA_BALL                           0x433
-#define FLAG_ITEM_NEW_MAUVILLE_ESCAPE_ROPE                          0x434
-#define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_6_LUXURY_BALL    0x435
-#define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_4_SCANNER        0x436
 #define FLAG_ITEM_SCORCHED_SLAB_TM_11                               0x437
 #define FLAG_ITEM_METEOR_FALLS_B1F_2R_TM_02                         0x438
 #define FLAG_ITEM_SHOAL_CAVE_ENTRANCE_BIG_PEARL                     0x439

@@ -336,7 +336,7 @@ BATTLE_ROUTE2_Trainer_1_Text_0:
 
 BATTLE_ROUTE2_Trainer_1_Text_1:
 	.string "Wrong direction?\p"
-	.string "Ive followed the W for south all day!$"
+	.string "I've followed the W for south all day!$"
 
 BATTLE_ROUTE2_Trainer_1_Text_2:
 	.string "How2type$"

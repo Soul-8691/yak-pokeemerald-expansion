@@ -3977,6 +3977,9 @@ const struct SpriteFrameImage gObjectEventPicTable_Imp[] = {
     overworld_frame(gObjectEventPic_Imp, 2, 2, 3),
     overworld_frame(gObjectEventPic_Imp, 2, 2, 4),
     overworld_frame(gObjectEventPic_Imp, 2, 2, 5),
+    overworld_frame(gObjectEventPic_Imp, 2, 2, 6),
+    overworld_frame(gObjectEventPic_Imp, 2, 2, 7),
+    overworld_frame(gObjectEventPic_Imp, 2, 2, 8),
 };
 
 
@@ -3987,6 +3990,9 @@ const struct SpriteFrameImage gObjectEventPicTable_Imp_Snow[] = {
     overworld_frame(gObjectEventPic_Imp_Snow, 2, 2, 3),
     overworld_frame(gObjectEventPic_Imp_Snow, 2, 2, 4),
     overworld_frame(gObjectEventPic_Imp_Snow, 2, 2, 5),
+    overworld_frame(gObjectEventPic_Imp_Snow, 2, 2, 6),
+    overworld_frame(gObjectEventPic_Imp_Snow, 2, 2, 7),
+    overworld_frame(gObjectEventPic_Imp_Snow, 2, 2, 8),
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_Kalphite_King[] = {
@@ -4228,6 +4234,9 @@ const struct SpriteFrameImage gObjectEventPicTable_Raven[] = {
     overworld_frame(gObjectEventPic_Raven, 2, 2, 3),
     overworld_frame(gObjectEventPic_Raven, 2, 2, 4),
     overworld_frame(gObjectEventPic_Raven, 2, 2, 5),
+    overworld_frame(gObjectEventPic_Raven, 2, 2, 6),
+    overworld_frame(gObjectEventPic_Raven, 2, 2, 7),
+    overworld_frame(gObjectEventPic_Raven, 2, 2, 8),
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_Seagull[] = {
@@ -4237,6 +4246,9 @@ const struct SpriteFrameImage gObjectEventPicTable_Seagull[] = {
     overworld_frame(gObjectEventPic_Seagull, 2, 2, 3),
     overworld_frame(gObjectEventPic_Seagull, 2, 2, 4),
     overworld_frame(gObjectEventPic_Seagull, 2, 2, 5),
+    overworld_frame(gObjectEventPic_Seagull, 2, 2, 6),
+    overworld_frame(gObjectEventPic_Seagull, 2, 2, 7),
+    overworld_frame(gObjectEventPic_Seagull, 2, 2, 8),
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_Strykewyrm_Sandy[] = {

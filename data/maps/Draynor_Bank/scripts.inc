@@ -51,6 +51,15 @@ NPC_DraynorBank_PilloryGuard::
 	end
 
 
+NPC_LumbridgeBank_NPC1::
+	lock
+	faceplayer
+	msgbox NPC_LumbridgeBank_NPC1_Text_0
+	hidenamebox
+	release
+	end
+
+
 NPC_DraynorBank_Qutiedoll_Text_0:
 	.string "Qutiedoll$"
 
@@ -81,3 +90,11 @@ NPC_DraynorBank_PilloryGuard_Text_0:
 NPC_DraynorBank_PilloryGuard_Text_1:
 	.string "You would be best to watch yourself.\p"
 	.string "Otherwise you're in for da cage!$"
+
+NPC_LumbridgeBank_NPC1_Text_0:
+	.string "The Lumbridge Bank used to be on top of\n"
+	.string "the Lumbridge Castle, but it was\l"
+	.string "difficult to get there.\p"
+	.string "Duke Horacio however started a Gym\n"
+	.string "there and moved the Bank to a more\l"
+	.string "convenient location.$"

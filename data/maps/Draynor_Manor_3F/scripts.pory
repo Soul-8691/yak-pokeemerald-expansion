@@ -191,7 +191,7 @@ script NPC_DraynorManor_Oddenstein{
 			if (var(VAR_RESULT)){
 				msgbox(format("I need a few items for my experiment to succeed can you go get me them?\pI need a Oil Can, Pressure Gauge and Rubber Tube."))
                 msgbox(format("The Oil Can should be somewhere in the basement."))
-                msgbox(format("I beleive the last place I saw the Pressure Gauge was outside in the fountain."))
+                msgbox(format("I believe the last place I saw the Pressure Gauge was outside in the fountain."))
                 msgbox(format("As I recall McBoneFace borrowed the Rubber Tube, he should be in his room."))
                 msgbox(format("Alright off you go my assistant!\pI cannot do this experiment without those items!"))
 				setvar(VAR_POKESCAPE_ERNEST_QUEST_STATE, 1)
@@ -315,7 +315,7 @@ script CooksAssistant_Check_OilCan {
 script CooksAssistant_Check_PressureGauge {
 	checkitem (ITEM_PRESSURE_GAUGE,1)
 	if (!var(VAR_RESULT)){
-		msgbox(format("You don't have the Pressure Gauge.\pI beleive the last place I saw that was outside in the fountain."))
+		msgbox(format("You don't have the Pressure Gauge.\pI believe the last place I saw that was outside in the fountain."))
 		hidenamebox
 		closemessage
 		release

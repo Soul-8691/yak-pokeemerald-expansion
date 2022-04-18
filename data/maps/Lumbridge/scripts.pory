@@ -85,7 +85,7 @@ script Lumbridge_FAYETH
 
 script Lumbridge_BOT
 {
-	msgbox(format("...\p...\p...\p...\pThere is no response."))
+	msgbox(format("….\p….\p….\p….\pThere is no response."))
 	release
 	end
 }
@@ -106,7 +106,7 @@ script Lumbridge_HATIUS
 	lock
 	faceplayer
 	namebox ("Hatius")
-	msgbox(format("There were some muggers in the alley eyeing off my 3rd armour.\pSo I've had to change into a more casual look.\pBut now the Goblins are eyeing me, I cannot win."))
+	msgbox(format("There were some muggers in the alley eyeing off my 3rd age armour.\pSo I've had to change into a more casual look.\pBut now the Goblins are eyeing me, I cannot win."))
 	hidenamebox
 	release
 	end
@@ -569,7 +569,7 @@ script Lumbridge_House_BobsGirl
 {
 	lock
 	faceplayer
-	msgbox(format("Hey, are you the contractor we hired to fix our bed?\p...\lNo?\pWhy are you in our house?"))
+	msgbox(format("Hey, are you the contractor we hired to fix our bed?\p….\lNo?\pWhy are you in our house?"))
 	release
 	end
 }	
@@ -641,7 +641,7 @@ script Lumbridge_GeneralStore_MOD_ASH
 	faceplayer
 	namebox ("Mod Ash")
 	if (!flag(FLAG_TEMP_1)){
-		msgbox(format("WOAH!\pI didn't see you there, I almost spilt my drink.\pI'm just writing out some dialog for my new fanfic.\pI call it MY ARM'S BIG ADVENTURE!\p...\pWhat?\lIt is a great name.\pAlthough I'm a bit stuck, I've made the adventuer in this story fight a giant bird but I'm not sure what the bird should look like.\p Do you have any monsters that might help inspire me?"))
+		msgbox(format("WOAH!\pI didn't see you there, I almost spilt my drink.\pI'm just writing out some dialog for my new fanfic.\pI call it MY ARM'S BIG ADVENTURE!\p….\pWhat?\lIt is a great name.\pAlthough I'm a bit stuck, I've made the adventuer in this story fight a giant bird but I'm not sure what the bird should look like.\p Do you have any monsters that might help inspire me?"))
 		special (ChoosePartyMon)
 		waitstate
 		specialvar (VAR_RESULT, ScriptGetPartyMonSpecies)
@@ -653,14 +653,14 @@ script Lumbridge_GeneralStore_MOD_ASH
 			hidenamebox
 			end
 		} else {
-			msgbox(format("No, I don't think that would work.."))
+			msgbox(format("No, I don't think that would work…"))
 			release
 			hidenamebox
 			end
 
 		}
 	}
-	msgbox(format("Once again, thank you for helping me.\pWhat is that?\pYou would like to read my fanfic?\pSorry it's not finished yet, you'll have to wait.\p...\pHow long?\pSoon TM."))
+	msgbox(format("Once again, thank you for helping me.\pWhat is that?\pYou would like to read my fanfic?\pSorry it's not finished yet, you'll have to wait.\p….\pHow long?\pSoon TM."))
 	hidenamebox
 	release
 	end
@@ -729,7 +729,7 @@ script Lumbridge_House_Roddeck
 		lock
 		faceplayer
 		namebox ("Roddeck")
-		msgbox(format("Did you know the more badges you have the easier it is to control monsters obtained in a trade?\pI wish I knew that before Sottlepot went on a rampage killing Sir Vant and an adventurer.."))
+		msgbox(format("Did you know the more badges you have the easier it is to control monsters obtained in a trade?\pI wish I knew that before Sottlepot went on a rampage killing Sir Vant and an adventurer…"))
 		hidenamebox
 	}
 

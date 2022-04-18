@@ -712,10 +712,10 @@ Lumbridge_FAYETH_Text_1:
 	.string "above zero.$"
 
 Lumbridge_BOT_Text_0:
-	.string "...\p"
-	.string "...\p"
-	.string "...\p"
-	.string "...\p"
+	.string "….\p"
+	.string "….\p"
+	.string "….\p"
+	.string "….\p"
 	.string "There is no response.$"
 
 Lumbridge_DONIE_Text_0:
@@ -732,7 +732,7 @@ Lumbridge_HATIUS_Text_0:
 
 Lumbridge_HATIUS_Text_1:
 	.string "There were some muggers in the alley\n"
-	.string "eyeing off my 3rd armour.\p"
+	.string "eyeing off my 3rd age armour.\p"
 	.string "So I've had to change into a more casual\n"
 	.string "look.\p"
 	.string "But now the Goblins are eyeing me, I\n"
@@ -871,7 +871,7 @@ Lumbridge_House_BobsAxes_Text_1:
 Lumbridge_House_BobsGirl_Text_0:
 	.string "Hey, are you the contractor we hired to\n"
 	.string "fix our bed?\p"
-	.string "...\l"
+	.string "….\l"
 	.string "No?\p"
 	.string "Why are you in our house?$"
 
@@ -912,7 +912,7 @@ Lumbridge_GeneralStore_MOD_ASH_Text_1:
 	.string "I'm just writing out some dialog for my\n"
 	.string "new fanfic.\p"
 	.string "I call it MY ARM'S BIG ADVENTURE!\p"
-	.string "...\p"
+	.string "….\p"
 	.string "What?\l"
 	.string "It is a great name.\p"
 	.string "Although I'm a bit stuck, I've made the\n"
@@ -932,7 +932,7 @@ Lumbridge_GeneralStore_MOD_ASH_Text_2:
 	.string "Please take this!$"
 
 Lumbridge_GeneralStore_MOD_ASH_Text_3:
-	.string "No, I don't think that would work..$"
+	.string "No, I don't think that would work…$"
 
 Lumbridge_GeneralStore_MOD_ASH_Text_4:
 	.string "Once again, thank you for helping me.\p"
@@ -940,7 +940,7 @@ Lumbridge_GeneralStore_MOD_ASH_Text_4:
 	.string "You would like to read my fanfic?\p"
 	.string "Sorry it's not finished yet, you'll have\n"
 	.string "to wait.\p"
-	.string "...\p"
+	.string "….\p"
 	.string "How long?\p"
 	.string "Soon TM.$"
 
@@ -974,4 +974,4 @@ Lumbridge_House_Roddeck_Text_6:
 	.string "obtained in a trade?\p"
 	.string "I wish I knew that before Sottlepot\n"
 	.string "went on a rampage killing Sir Vant and\l"
-	.string "an adventurer..$"
+	.string "an adventurer…$"

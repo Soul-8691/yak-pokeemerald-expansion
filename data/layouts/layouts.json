@@ -6507,7 +6507,7 @@
       "width": 30,
       "height": 26,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
       "border_filepath": "data/layouts/AsgarnianDungeon_B3F/border.bin",
       "blockdata_filepath": "data/layouts/AsgarnianDungeon_B3F/map.bin"
     },

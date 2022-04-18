@@ -107,10 +107,10 @@ BATTLE_ROUTE6_MUGGER::
 	end
 
 
-TRAINER_ROUTE6_GUARD_1::
-	trainerbattle_single TRAINER_MUGGER_ROUTE6, TRAINER_ROUTE6_GUARD_1_Text_0, TRAINER_ROUTE6_GUARD_1_Text_1
+BATTLE_ROUTE6_GUARD_1::
+	trainerbattle_single TRAINER_ROUTE6_GUARD_1, BATTLE_ROUTE6_GUARD_1_Text_0, BATTLE_ROUTE6_GUARD_1_Text_1
 	namebox ROUTE6_BLOCK_FaladorGuard_Text_4
-	msgbox TRAINER_ROUTE6_GUARD_1_Text_2
+	msgbox BATTLE_ROUTE6_GUARD_1_Text_2
 	hidenamebox
 	release
 	end
@@ -160,13 +160,13 @@ BATTLE_ROUTE6_MUGGER_Text_2:
 	.string "Shoo you're making it hard for me to mug\n"
 	.string "people.$"
 
-TRAINER_ROUTE6_GUARD_1_Text_0:
+BATTLE_ROUTE6_GUARD_1_Text_0:
 	.string "Welcome to Falador, I greet you with a\n"
 	.string "battle!$"
 
-TRAINER_ROUTE6_GUARD_1_Text_1:
+BATTLE_ROUTE6_GUARD_1_Text_1:
 	.string "Welcome and goodbye.$"
 
-TRAINER_ROUTE6_GUARD_1_Text_2:
+BATTLE_ROUTE6_GUARD_1_Text_2:
 	.string "Enjoy your stay, and do not get in\n"
 	.string "trouble.$"

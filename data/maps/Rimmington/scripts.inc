@@ -186,6 +186,8 @@ NPC_RIMMINGTON_Tehnoobshow::
 
 
 NPC_RIMMINGTON_CustomsOfficer::
+	lock
+	faceplayer
 	namebox NPC_RIMMINGTON_CustomsOfficer_Text_0
 	msgbox NPC_RIMMINGTON_CustomsOfficer_Text_1
 	hidenamebox

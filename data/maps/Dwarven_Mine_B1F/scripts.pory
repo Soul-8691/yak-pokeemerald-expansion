@@ -1,0 +1,321 @@
+const OBJ_EVENT_ID_QUEST_KNIGHT = 39
+const OBJ_EVENT_ID_QUEST_BLACKKNIGHT = 51
+const OBJ_EVENT_ID_QUEST_OWEN = 32
+const OBJ_EVENT_ID_QUEST_HAM_1 = 40
+const OBJ_EVENT_ID_QUEST_HAM_2 = 33
+
+
+mapscripts Dwarven_Mine_B1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+    goto(DWARVENMINES_QUEST_STATE)
+    }
+}
+
+script DWARVENMINES_QUEST_STATE{
+	switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
+		case 0:
+		case 1: 
+		case 2:
+            removeobject(OBJ_EVENT_ID_QUEST_BLACKKNIGHT)
+			setflag(FLAG_TEMP_2)
+			return
+        case 3:
+        case 4:    
+        case 5:
+            removeobject(OBJ_EVENT_ID_QUEST_KNIGHT)
+            removeobject(OBJ_EVENT_ID_QUEST_BLACKKNIGHT)
+            removeobject(OBJ_EVENT_ID_QUEST_OWEN)
+            removeobject(OBJ_EVENT_ID_QUEST_HAM_1)
+            removeobject(OBJ_EVENT_ID_QUEST_HAM_2)
+            setflag(FLAG_TEMP_1)
+			setflag(FLAG_TEMP_2)
+			return
+	}
+}
+
+
+
+
+script NPC_FALADORCASTLE_QUEST_PART_3_1
+{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_0_1)
+    waitmovement(0)
+    goto(NPC_FALADORCASTLE_QUEST_PART_3)
+}
+script NPC_FALADORCASTLE_QUEST_PART_3_2
+{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_0_2)
+    waitmovement(0)
+    goto(NPC_FALADORCASTLE_QUEST_PART_3)
+}
+script NPC_FALADORCASTLE_QUEST_PART_3_3
+{
+    lock
+    applymovement(OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_0_3)
+    waitmovement(0)
+    goto(NPC_FALADORCASTLE_QUEST_PART_3)
+}
+
+
+
+
+script NPC_FALADORCASTLE_QUEST_PART_3
+{
+    namebox ("SIR THEO")
+	msgbox(format("Those men went that way. They have cornered themselves."))
+    closemessage
+    hidenamebox
+    namebox ("SIR OWEN")
+	msgbox(format("Let's go get them!"))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_QUEST_KNIGHT, DWARVENMINES_MOVEMENT_1)
+    playse(SE_PIN)
+    waitmovement(0)
+    namebox ("SIR THEO")
+	msgbox(format("Wait sir, we have an issue."))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_2)
+    waitmovement(0)
+    namebox ("SIR OWEN")
+	msgbox(format("Are you an MvM challenger perhaps?\pFantastic!\pCould I please ask of you to assist us with some backup in case things get a bit ugly?\pYou see we are about to apprehend some suspicious men that have been causing a disturbance in the mines."))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_QUEST_KNIGHT, DWARVENMINES_MOVEMENT_6)
+    waitmovement(0)
+    namebox ("SIR THEO")
+	msgbox(format("Sir, if we don't act now they will get away."))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_7)
+    waitmovement(0)
+    namebox ("SIR OWEN")
+	msgbox(format("Right you are Theo, with us challenger!"))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_QUEST_KNIGHT, DWARVENMINES_MOVEMENT_4)
+    applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_3)
+    applymovement(OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_5)
+    waitmovement(0)
+
+    namebox ("SIR OWEN")
+	msgbox(format("HALT!\lYou have no where to go!"))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_QUEST_HAM_1, DWARVENMINES_MOVEMENT_2)
+    applymovement(OBJ_EVENT_ID_QUEST_HAM_2, DWARVENMINES_MOVEMENT_2)
+    waitmovement(0)
+    namebox ("H.A.M Member")
+	msgbox(format("Keke you stole our line."))
+    closemessage
+    hidenamebox
+
+    addobject(OBJ_EVENT_ID_QUEST_BLACKKNIGHT)
+    clearflag(FLAG_TEMP_2)
+    applymovement(OBJ_EVENT_ID_QUEST_BLACKKNIGHT, DWARVENMINES_MOVEMENT_8)
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_7)
+    applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_7)
+    waitmovement(0)
+    namebox ("SIR OWEN")
+	msgbox(format("What is this!?\pThe Black Knights?!"))
+    closemessage
+    hidenamebox
+    namebox ("BLACK KNIGHT")
+	msgbox(format("Time to get rid of you white knights once and for all!"))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_2)
+    applymovement(OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_9)
+    waitmovement(0)
+    namebox ("SIR OWEN")
+	msgbox(format("Looks like we are in a tight spot.\pTheo, challenger, I trust you know what to do."))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_7)
+    applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_9)
+    waitmovement(0)
+    namebox ("BLACK KNIGHT")
+	msgbox(format("For the Kinshra!"))
+    closemessage
+    hidenamebox
+    trainerbattle_no_intro(TRAINER_DWARVENMINES_BLACKKNIGHT, msgbox(format("Blasted White Knights!")))
+    namebox ("H.A.M Member")
+	msgbox(format("So strong…"))
+    closemessage
+    hidenamebox
+    namebox ("BLACK KNIGHT")
+	msgbox(format("No matter grunts, we have already won."))
+    closemessage
+    hidenamebox
+    applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_2)
+    waitmovement(0)
+    namebox ("SIR OWEN")
+	msgbox(format("What do you mean you have already won?"))
+    closemessage
+    hidenamebox
+    namebox ("BLACK KNIGHT")
+	msgbox(format("Kahaha!\lThis was but a mere distraction!\pOur agent would have escaped with the goods by now."))
+    closemessage
+    hidenamebox
+    namebox ("SIR OWEN")
+	msgbox(format("I'll be bringing you three in for questioning.\pThanks for your assistance challenger.\pI will be seeing you at the castle."))
+    closemessage
+    hidenamebox
+
+    fadescreen(FADE_TO_BLACK)
+    setflag(FLAG_TEMP_1)
+    setflag(FLAG_TEMP_2)
+    removeobject(OBJ_EVENT_ID_QUEST_HAM_1)
+    removeobject(OBJ_EVENT_ID_QUEST_HAM_2)
+    removeobject(OBJ_EVENT_ID_QUEST_KNIGHT)
+    removeobject(OBJ_EVENT_ID_QUEST_BLACKKNIGHT)
+    removeobject(OBJ_EVENT_ID_QUEST_OWEN)
+    setvar(VAR_POKESCAPE_FALADOR_STATE, 3)
+    fadescreen(FADE_FROM_BLACK)
+	release
+	end
+}
+
+
+movement DWARVENMINES_MOVEMENT_0_1{
+    walk_up
+    walk_right
+    face_up
+}
+movement DWARVENMINES_MOVEMENT_0_2{
+    walk_up
+    walk_right * 2
+    face_up
+}
+movement DWARVENMINES_MOVEMENT_0_3{
+    walk_up
+    face_up
+}
+movement DWARVENMINES_MOVEMENT_1{
+    emote_exclamation_mark
+    face_down
+}
+movement DWARVENMINES_MOVEMENT_2{
+    face_down
+}
+movement DWARVENMINES_MOVEMENT_3{
+    walk_up * 2
+    walk_right * 2
+    walk_up * 2
+    walk_right * 3
+    walk_up * 1
+    walk_right * 4
+    walk_up * 2
+}
+movement DWARVENMINES_MOVEMENT_4{
+    walk_right
+    walk_up * 2
+    walk_right * 2
+    walk_up * 2
+    walk_right * 3
+    walk_up
+    walk_right * 5
+    walk_up *2
+}
+movement DWARVENMINES_MOVEMENT_5{
+    delay_8 * 2
+    walk_up
+    walk_up * 2
+    walk_right * 2
+    walk_up * 2
+    walk_right * 3
+    walk_up
+    walk_right * 4
+    walk_up
+
+}
+movement DWARVENMINES_MOVEMENT_6{
+    face_right
+}
+movement DWARVENMINES_MOVEMENT_7{
+    face_left
+}
+movement DWARVENMINES_MOVEMENT_8{
+    walk_fast_up * 2
+    walk_fast_right * 2
+    walk_fast_up * 2
+    walk_fast_right * 2
+    walk_fast_up * 1
+    walk_fast_right * 3
+    walk_fast_up
+    walk_fast_right
+    
+}
+movement DWARVENMINES_MOVEMENT_9{
+    face_up
+}
+
+
+
+
+//BATLES
+
+script BATTLE_DWARVENMINES_SKILLER
+{
+    trainerbattle_single(TRAINER_DWARVENMINES_SKILLER, format("Please dont approach me.\pI have a terrible bodyguard and I am not afraid to use it!"),format("Hired help is all a skiller can rely on against level 16 scorpions."))
+    namebox ("Treet0ps")
+    msgbox(format("Hired help is all a skiller can rely on against level 16 scorpions."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_DWARVENMINES_MINER
+{
+    trainerbattle_single(TRAINER_DWARVENMINES_MINER, format("All I can find is coal around here.\pDo you know where there is any runite?"),format("Mining Guild?\lDo I need to pay them?"))
+    namebox ("D33pD1v3")
+    msgbox(format("Mining Guild?\lDo I need to pay them?"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_DWARVENMINES_DWARF_1
+{
+    trainerbattle_single(TRAINER_DWARVENMINES_DWARF_1, format("Someone took my lunch.\pNow I am angry!"),format("To subside my anger I need to eat.\pBut there is nothing left."))
+    namebox ("Sverre")
+    msgbox(format("To subside my anger I need to eat.\pBut there is nothing left."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_DWARVENMINES_DWARF_2
+{
+    trainerbattle_single(TRAINER_DWARVENMINES_DWARF_2, format("Stop, you are trespassing on dwarven land!"),format("Theres no respect for racially established borders for you adventurers."))
+    namebox ("Steinar")
+    msgbox(format("Theres no respect for racially established borders for you adventurers."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_DWARVENMINES_DWARF_3
+{
+    trainerbattle_single(TRAINER_DWARVENMINES_DWARF_3, format("They say deep down under this mountain the rocks move.\pLets fight to that."),format("Maybe the ones who told the story were just drunks?"))
+    namebox ("Valdemar")
+    msgbox(format("Maybe the ones who told the story were just drunks?"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_DWARVENMINES_DWARF_4
+{
+    trainerbattle_single(TRAINER_DWARVENMINES_DWARF_4, format("I come from the deepest part of this mountain.\pThe things I have seen would shock you!"),format("The rocks… they moves.\pThey moved!"))
+    namebox ("Drobak")
+    msgbox(format("The rocks… they moves.\pThey moved!"))
+	hidenamebox
+    release
+	end
+}
+

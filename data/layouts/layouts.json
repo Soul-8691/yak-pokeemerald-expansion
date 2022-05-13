@@ -5027,7 +5027,7 @@
       "width": 44,
       "height": 50,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Varrock",
+      "secondary_tileset": "gTileset_Barbarian_Village",
       "border_filepath": "data/layouts/Edgeville/border.bin",
       "blockdata_filepath": "data/layouts/Edgeville/map.bin"
     },
@@ -6680,6 +6680,36 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Falador_House1_2F/border.bin",
       "blockdata_filepath": "data/layouts/Falador_House1_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE44",
+      "name": "Route44_Layout",
+      "width": 26,
+      "height": 28,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Wilderness",
+      "border_filepath": "data/layouts/Route44/border.bin",
+      "blockdata_filepath": "data/layouts/Route44/map.bin"
+    },
+    {
+      "id": "LAYOUT_WILDERNESS_VOLCANO_LOBBY",
+      "name": "Wilderness_Volcano_Lobby_Layout",
+      "width": 26,
+      "height": 26,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Wilderness",
+      "border_filepath": "data/layouts/Wilderness_Volcano_Lobby/border.bin",
+      "blockdata_filepath": "data/layouts/Wilderness_Volcano_Lobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_CASTLE_1F",
+      "name": "Falador_Castle_1F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Falador_Castle_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_Castle_1F/map.bin"
     }
   ]
 }

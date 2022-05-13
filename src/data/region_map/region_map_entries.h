@@ -205,6 +205,7 @@ static const u8 sMapName_Rimmington[] = _("RIMMINGTON");
 static const u8 sMapName_PortSarim[] = _("PORT SARIM");
 static const u8 sMapName_DraynorManor[] = _("DRAYNOR MANOR");
 static const u8 sMapName_MillLaneMill[] = _("MILL LANE MILL");
+static const u8 sMapName_MusaPoint[] = _("KARAMJA");
 
 const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_ABANDONED_SHIP]             = {6, 14, 1, 1, sMapName_AbandonedShip},
@@ -280,6 +281,7 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_MT_EMBER]                   = {0, 0, 1, 1, sMapName_MtEmber},
     [MAPSEC_MT_MOON]                    = {0, 0, 1, 1, sMapName_MtMoon},
     [MAPSEC_MT_PYRE]                    = {16, 4, 1, 1, sMapName_MtPyre},
+    [MAPSEC_MUSA_POINT]                 = {0, 14, 1, 1, sMapName_MusaPoint},
     [MAPSEC_NAVEL_ROCK]                 = {0, 0, 1, 1, sMapName_NavelRock},
     [MAPSEC_NAVEL_ROCK_FRLG]            = {0, 0, 1, 1, sMapName_NavelRock},
     [MAPSEC_NEW_MAUVILLE]               = {8, 7, 1, 1, sMapName_NewMauville},

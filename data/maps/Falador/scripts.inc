@@ -3,6 +3,7 @@ Falador_MapScripts::
 	.byte 0
 
 Falador_MapScripts_MAP_SCRIPT_ON_LOAD:
+	call FALADOR_QUEST_STATE
 	call MODTIMBO_STATE
 	return
 
@@ -298,11 +299,13 @@ NPC_FALADOR_HAIRDRESSER::
 	faceplayer
 	namebox NPC_FALADOR_HAIRDRESSER_Text_0
 	msgbox NPC_FALADOR_HAIRDRESSER_Text_1
-	msgbox NPC_FALADOR_HAIRDRESSER_Text_2
+	closemessage
+	hidenamebox
+	trainerbattle_no_intro TRAINER_FALADOR_HAIRDRESSER, NPC_FALADOR_HAIRDRESSER_Text_2
+	namebox NPC_FALADOR_HAIRDRESSER_Text_0
 	msgbox NPC_FALADOR_HAIRDRESSER_Text_3
 	msgbox NPC_FALADOR_HAIRDRESSER_Text_4
-	msgbox NPC_FALADOR_HAIRDRESSER_Text_5
-	waitmessage
+	closemessage
 	hidenamebox
 	release
 	end
@@ -582,6 +585,126 @@ NPC_FALADOR_NPC_9::
 	end
 
 
+FALADOR_QUEST_STATE::
+	switch VAR_POKESCAPE_FALADOR_STATE
+	case 0, FALADOR_QUEST_STATE_2
+	case 1, FALADOR_QUEST_STATE_2
+	case 2, FALADOR_QUEST_STATE_3
+	case 3, FALADOR_QUEST_STATE_3
+	case 4, FALADOR_QUEST_STATE_3
+	case 5, FALADOR_QUEST_STATE_4
+	return
+
+FALADOR_QUEST_STATE_2:
+	return
+
+FALADOR_QUEST_STATE_3:
+	removeobject 40
+	setflag FLAG_TEMP_1
+	return
+
+FALADOR_QUEST_STATE_4:
+	removeobject 40
+	setflag FLAG_TEMP_1
+	removeobject 37
+	removeobject 38
+	removeobject 39
+	removeobject 27
+	setflag FLAG_TEMP_2
+	return
+
+
+NPC_FALADOR_BLOCK_GUARD_1::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_BLOCK_GUARD_1_Text_0
+	msgbox NPC_FALADOR_BLOCK_GUARD_1_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_BLOCK_GUARD_2::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_BLOCK_GUARD_1_Text_0
+	msgbox NPC_FALADOR_BLOCK_GUARD_2_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_BLOCK_MERCHANT::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_BLOCK_MERCHANT_Text_0
+	msgbox NPC_FALADOR_BLOCK_MERCHANT_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_BLOCK_KNIGHT::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_BLOCK_KNIGHT_Text_0
+	msgbox NPC_FALADOR_BLOCK_KNIGHT_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+FALADOR_QUEST_STATE_CHANGER::
+	switch VAR_POKESCAPE_FALADOR_STATE
+	case 0, FALADOR_QUEST_STATE_CHANGER_2
+	case 1, FALADOR_QUEST_STATE_CHANGER_3
+	case 2, FALADOR_QUEST_STATE_CHANGER_4
+	case 3, FALADOR_QUEST_STATE_CHANGER_5
+	case 4, FALADOR_QUEST_STATE_CHANGER_6
+	case 5, FALADOR_QUEST_STATE_CHANGER_7
+	return
+
+FALADOR_QUEST_STATE_CHANGER_2:
+	msgbox FALADOR_QUEST_STATE_CHANGER_Text_0
+	setvar VAR_POKESCAPE_FALADOR_STATE, 1
+	closemessage
+	return
+
+FALADOR_QUEST_STATE_CHANGER_3:
+	msgbox FALADOR_QUEST_STATE_CHANGER_Text_1
+	setvar VAR_POKESCAPE_FALADOR_STATE, 2
+	closemessage
+	return
+
+FALADOR_QUEST_STATE_CHANGER_4:
+	msgbox FALADOR_QUEST_STATE_CHANGER_Text_2
+	setvar VAR_POKESCAPE_FALADOR_STATE, 3
+	closemessage
+	return
+
+FALADOR_QUEST_STATE_CHANGER_5:
+	msgbox FALADOR_QUEST_STATE_CHANGER_Text_3
+	setvar VAR_POKESCAPE_FALADOR_STATE, 4
+	closemessage
+	return
+
+FALADOR_QUEST_STATE_CHANGER_6:
+	msgbox FALADOR_QUEST_STATE_CHANGER_Text_4
+	setvar VAR_POKESCAPE_FALADOR_STATE, 5
+	closemessage
+	return
+
+FALADOR_QUEST_STATE_CHANGER_7:
+	msgbox FALADOR_QUEST_STATE_CHANGER_Text_5
+	setvar VAR_POKESCAPE_FALADOR_STATE, 0
+	closemessage
+	return
+
+
 NPC_FALADOR_NPC_1_Text_0:
 	.string "Have you heard about the Mining &\n"
 	.string "Smithing rework?$"
@@ -771,17 +894,15 @@ NPC_FALADOR_HAIRDRESSER_Text_2:
 	.string "Oh no, my chinchompas!$"
 
 NPC_FALADOR_HAIRDRESSER_Text_3:
-	.string "Seems I get to cut it out.$"
-
-NPC_FALADOR_HAIRDRESSER_Text_4:
-	.string "Why would you faint all my chinchompas.\n"
-	.string "Now who will run the wheel to make the\l"
+	.string "Why would you faint all my chinchompas.\p"
+	.string "Now who will run the wheel to make the\n"
 	.string "sign outside spin.\p"
 	.string "My business is ruined!$"
 
-NPC_FALADOR_HAIRDRESSER_Text_5:
-	.string "Take this, and never return. Please. For\n"
-	.string "the good of my business.$"
+NPC_FALADOR_HAIRDRESSER_Text_4:
+	.string "Take this, and never return.\p"
+	.string "Please.\p"
+	.string "For the good of my business.$"
 
 NPC_FALADOR_HAIRDRESSER_NPC_Text_0:
 	.string "Today im really feeling the dragoon\n"
@@ -944,3 +1065,52 @@ NPC_FALADOR_NPC_9_Text_0:
 	.string "Did you know part of the Dwarven Mines\n"
 	.string "are right underneath us!\p"
 	.string "It is scary just thinking about it.$"
+
+NPC_FALADOR_BLOCK_GUARD_1_Text_0:
+	.string "GUARD$"
+
+NPC_FALADOR_BLOCK_GUARD_1_Text_1:
+	.string "We've been informed that this shipment\n"
+	.string "may contain Karmajan Rum.\p"
+	.string "You should inform Sir Amik Varze right\n"
+	.string "away!$"
+
+NPC_FALADOR_BLOCK_GUARD_2_Text_0:
+	.string "Please stand back while we search\n"
+	.string "these wares.\p"
+	.string "While waiting you should visit the White\n"
+	.string "Knights Castle.$"
+
+NPC_FALADOR_BLOCK_MERCHANT_Text_0:
+	.string "MERCHANT$"
+
+NPC_FALADOR_BLOCK_MERCHANT_Text_1:
+	.string "Why did that guy have to say I was\n"
+	.string "carrying suspicious goods…$"
+
+NPC_FALADOR_BLOCK_KNIGHT_Text_0:
+	.string "KNIGHT$"
+
+NPC_FALADOR_BLOCK_KNIGHT_Text_1:
+	.string "There have been reports of a\n"
+	.string "distrubance in these mines.\p"
+	.string "No one may enter until the White\n"
+	.string "Knights arrive.$"
+
+FALADOR_QUEST_STATE_CHANGER_Text_0:
+	.string "FALADORSTATE isnow 1$"
+
+FALADOR_QUEST_STATE_CHANGER_Text_1:
+	.string "FALADORSTATE isnow 2$"
+
+FALADOR_QUEST_STATE_CHANGER_Text_2:
+	.string "FALADORSTATE isnow 3$"
+
+FALADOR_QUEST_STATE_CHANGER_Text_3:
+	.string "FALADORSTATE isnow 4$"
+
+FALADOR_QUEST_STATE_CHANGER_Text_4:
+	.string "FALADORSTATE isnow 5$"
+
+FALADOR_QUEST_STATE_CHANGER_Text_5:
+	.string "FALADORSTATE isnow 0$"

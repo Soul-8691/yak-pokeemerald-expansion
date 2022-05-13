@@ -140,10 +140,23 @@
 #define TRAINER_AsgarnianDungeon_QUESTER                   116
 #define TRAINER_AsgarnianDungeon_PVM_1                   117
 #define TRAINER_AsgarnianDungeon_PVM_2                   118
+#define TRAINER_ROUTE6_GUARD_1               119
 
-#define TRAINER_ROUTE6_GUARD_1                   119
-
-
+#define TRAINER_DWARVENMINES_BLACKKNIGHT     120
+//FALADOR GYM
+#define TRAINER_FALADOR_GYM_1                121
+#define TRAINER_FALADOR_GYM_2                122
+#define TRAINER_FALADOR_GYM_3                123
+#define TRAINER_FALADOR_GYM_4                124
+#define TRAINER_FALADOR_GYM_AMIKVARZE        125
+#define TRAINER_FALADOR_HAIRDRESSER        126
+//DWARVEN MINES
+#define TRAINER_DWARVENMINES_SKILLER     127
+#define TRAINER_DWARVENMINES_MINER     128
+#define TRAINER_DWARVENMINES_DWARF_1     129
+#define TRAINER_DWARVENMINES_DWARF_2     130
+#define TRAINER_DWARVENMINES_DWARF_3     131
+#define TRAINER_DWARVENMINES_DWARF_4     132
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

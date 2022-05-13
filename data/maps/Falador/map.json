@@ -121,7 +121,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_FALADOR",
       "x": 23,
-      "y": 7,
+      "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -380,16 +380,16 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PKER",
-      "x": 35,
-      "y": 6,
+      "x": 22,
+      "y": 1,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_TEMP_2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
@@ -507,6 +507,58 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GUARD_FALADOR",
+      "x": 25,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NPC_FALADOR_BLOCK_GUARD_1",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GUARD_FALADOR",
+      "x": 26,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NPC_FALADOR_BLOCK_GUARD_2",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GENERAL_STORE_CLERK",
+      "x": 23,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NPC_FALADOR_BLOCK_MERCHANT",
+      "flag": "FLAG_TEMP_2"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_KNIGHT_WHITE_F",
+      "x": 79,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NPC_FALADOR_BLOCK_KNIGHT",
+      "flag": "FLAG_TEMP_1"
     }
   ],
   "warp_events": [
@@ -568,7 +620,7 @@
     },
     {
       "x": 25,
-      "y": 24,
+      "y": 26,
       "elevation": 0,
       "dest_map": "MAP_FALADOR_CASTLEYARD",
       "dest_warp_id": 2
@@ -589,7 +641,7 @@
     },
     {
       "x": 24,
-      "y": 24,
+      "y": 26,
       "elevation": 0,
       "dest_map": "MAP_FALADOR_CASTLEYARD",
       "dest_warp_id": 1
@@ -627,7 +679,7 @@
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_FALADOR",
-      "dest_warp_id": 0
+      "dest_warp_id": 16
     },
     {
       "x": 69,
@@ -669,7 +721,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "FALADOR_QUEST_STATE_CHANGER"
     },
     {
       "type": "sign",

@@ -1,8 +1,14 @@
 const OBJ_EVENT_ID_MODTIMBO = 5
+const OBJ_EVENT_ID_BLOCK_GUARD_1 = 37
+const OBJ_EVENT_ID_BLOCK_GUARD_2 = 38
+const OBJ_EVENT_ID_BLOCK_MERCHANT = 39
+const OBJ_EVENT_ID_BLOCK_KNIGHT = 40
+const OBJ_EVENT_ID_BLOCK_durial321 = 27
 
 mapscripts Falador_MapScripts {
     MAP_SCRIPT_ON_LOAD { //ON LOAD FOR MAP TILES
-    call(MODTIMBO_STATE)
+    call(FALADOR_QUEST_STATE)
+	call(MODTIMBO_STATE)
     }
 } 
 
@@ -390,11 +396,13 @@ script NPC_FALADOR_HAIRDRESSER
 	faceplayer
     namebox ("Hairdresser")
 	msgbox(format("You want a haircut? Well, first you will have to battle me."))
-    msgbox(format("Oh no, my chinchompas!"))
-    msgbox(format("Seems I get to cut it out."))
-    msgbox(format("Why would you faint all my chinchompas. Now who will run the wheel to make the sign outside spin.\pMy business is ruined!"))
-    msgbox(format("Take this, and never return. Please. For the good of my business."))
-    waitmessage
+	closemessage
+	hidenamebox
+	trainerbattle_no_intro(TRAINER_FALADOR_HAIRDRESSER, msgbox(format("Oh no, my chinchompas!")))
+	namebox ("Hairdresser")
+    msgbox(format("Why would you faint all my chinchompas.\pNow who will run the wheel to make the sign outside spin.\pMy business is ruined!"))
+    msgbox(format("Take this, and never return.\pPlease.\pFor the good of my business."))
+    closemessage
     hidenamebox
 	release
 	end
@@ -770,4 +778,139 @@ script NPC_FALADOR_NPC_9
     hidenamebox
 	release
 	end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//--------------------
+//Story
+//---------------
+
+
+
+script FALADOR_QUEST_STATE{
+	switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
+		case 0:
+		case 1: 
+			return
+		case 2:
+		case 3:  
+		case 4: //REMOVE DWARVEN MINES BLOCKADE 
+            removeobject(OBJ_EVENT_ID_BLOCK_KNIGHT)
+			setflag(FLAG_TEMP_1)
+			return
+
+		case 5: //REMOVE DWARVEN MINES BLOCKADE 
+            removeobject(OBJ_EVENT_ID_BLOCK_KNIGHT)
+			setflag(FLAG_TEMP_1)
+			removeobject(OBJ_EVENT_ID_BLOCK_GUARD_1)
+			removeobject(OBJ_EVENT_ID_BLOCK_GUARD_2)
+			removeobject(OBJ_EVENT_ID_BLOCK_MERCHANT)
+			removeobject(OBJ_EVENT_ID_BLOCK_durial321)
+			setflag(FLAG_TEMP_2)
+			return
+	}
+
+}
+
+script NPC_FALADOR_BLOCK_GUARD_1
+{
+	lock
+	faceplayer
+    namebox ("GUARD")
+	msgbox(format("We've been informed that this shipment may contain Karmajan Rum.\pYou should inform Sir Amik Varze right away!"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+script NPC_FALADOR_BLOCK_GUARD_2
+{
+	lock
+	faceplayer
+    namebox ("GUARD")
+	msgbox(format("Please stand back while we search these wares.\pWhile waiting you should visit the White Knights Castle."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+script NPC_FALADOR_BLOCK_MERCHANT
+{
+	lock
+	faceplayer
+    namebox ("MERCHANT")
+	msgbox(format("Why did that guy have to say I was carrying suspicious goods…"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+script NPC_FALADOR_BLOCK_KNIGHT
+{
+	lock
+	faceplayer
+    namebox ("KNIGHT")
+	msgbox(format("There have been reports of a distrubance in these mines.\pNo one may enter until the White Knights arrive."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+script FALADOR_QUEST_STATE_CHANGER{
+	switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
+		case 0:
+			msgbox(format("FALADORSTATE isnow 1"))
+			setvar(VAR_POKESCAPE_FALADOR_STATE, 1)
+			closemessage
+			return
+		case 1: 
+			msgbox(format("FALADORSTATE isnow 2"))
+			setvar(VAR_POKESCAPE_FALADOR_STATE, 2)
+			closemessage
+			return
+		case 2:
+			msgbox(format("FALADORSTATE isnow 3"))
+            setvar(VAR_POKESCAPE_FALADOR_STATE, 3)
+			closemessage
+			return
+        case 3:
+			msgbox(format("FALADORSTATE isnow 4"))
+			setvar(VAR_POKESCAPE_FALADOR_STATE, 4)
+			closemessage
+			return
+        case 4:    
+			msgbox(format("FALADORSTATE isnow 5"))
+			setvar(VAR_POKESCAPE_FALADOR_STATE, 5)
+			closemessage
+			return
+        case 5:
+			msgbox(format("FALADORSTATE isnow 0"))
+            setvar(VAR_POKESCAPE_FALADOR_STATE, 0)
+			closemessage
+			return
+	}
 }

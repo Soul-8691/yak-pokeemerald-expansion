@@ -660,7 +660,8 @@
     "Mill_Lane_Mill",
     "Draynor_Manor",
     "MudskipperPoint",
-    "WizardsTower"
+    "WizardsTower",
+    "Wilderness_Volcano_Lobby"
   ],
   "gMapGroup35": [
     "Route1",
@@ -705,7 +706,8 @@
     "Route40",
     "Route41",
     "Route42",
-    "Route43"
+    "Route43",
+    "Route44"
   ],
   "gMapGroup36": [
     "Tutorial_Island_Cave",
@@ -817,7 +819,8 @@
     "Falador_Workshop",
     "Falador_Workshop_2F",
     "Falador_House1_1F",
-    "Falador_House1_2F"
+    "Falador_House1_2F",
+    "Falador_Castle_1F"
   ],
   "gMapGroup43": [
     "Varrock_Thessalia_Shop",

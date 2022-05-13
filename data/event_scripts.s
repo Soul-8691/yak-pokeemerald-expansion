@@ -1507,3 +1507,9 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Falador_House1_1F/scripts.inc"
 
 	.include "data/maps/Falador_House1_2F/scripts.inc"
+
+	.include "data/maps/Route44/scripts.inc"
+
+	.include "data/maps/Wilderness_Volcano_Lobby/scripts.inc"
+
+	.include "data/maps/Falador_Castle_1F/scripts.inc"

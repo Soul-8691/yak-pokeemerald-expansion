@@ -36,7 +36,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_DWARF_3",
       "x": 1,
       "y": 24,
       "elevation": 3,
@@ -49,7 +49,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_KNIGHT_BLACK_F",
       "x": 6,
       "y": 19,
       "elevation": 3,
@@ -62,7 +62,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_MONK_1",
       "x": 18,
       "y": 19,
       "elevation": 3,
@@ -75,7 +75,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_MONK_1",
       "x": 19,
       "y": 19,
       "elevation": 3,
@@ -88,7 +88,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_WOODCUTTER",
       "x": 14,
       "y": 28,
       "elevation": 3,
@@ -101,7 +101,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_MUGGER",
       "x": 28,
       "y": 31,
       "elevation": 3,
@@ -121,6 +121,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    }
   ]
 }

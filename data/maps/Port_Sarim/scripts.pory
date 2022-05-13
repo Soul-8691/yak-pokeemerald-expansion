@@ -21,6 +21,10 @@ script PORTSARIM_STATE{
 
         //HAM EVENT PORT SARIM - ENDS - FALADOR BLOCKADE LEAVES (Add switch to Route script)
         case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
             removeobject(21)
             removeobject(22)
             removeobject(23)

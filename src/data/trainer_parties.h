@@ -1,16 +1,14 @@
 
-static const struct TrainerMonItemDefaultMoves sParty_Maggie[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Maggie[] = {
     {
     .iv = 0,
     .lvl = 20,
     .species = SPECIES_CAT_PURPLE_FORM,
-    .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
     .lvl = 25,
     .species = SPECIES_SKELETALOX_FEMALE_FORM,
-    .heldItem = ITEM_FOCUS_BAND
     }
 };
 
@@ -30,18 +28,16 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Goblin2_Route1[] = {
     }
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_Trainer1_Route1[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Trainer1_Route1[] = {
     {
     .iv = 0,
     .lvl = 3,
     .species = SPECIES_CHICK,
-    .heldItem = ITEM_NONE
     },
-	{
+    {
     .iv = 0,
     .lvl = 4,
     .species = SPECIES_LAMB,
-    .heldItem = ITEM_NONE
     }
 };
 
@@ -58,18 +54,16 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Goblin3[] = {
     }
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_Farmer_Route1[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Farmer_Route1[] = {
     {
     .iv = 0,
     .lvl = 9,
     .species = SPECIES_CALF,
-    .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
     .lvl = 10,
     .species = SPECIES_CALF,
-    .heldItem = ITEM_NONE
     }
 };
 

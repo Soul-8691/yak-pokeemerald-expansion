@@ -1420,10 +1420,10 @@ void SetUpTrainerEncounterMusic(void)
         case TRAINER_ENCOUNTER_MUSIC_RICH:
             music = MUS_ENCOUNTER_RICH;
             break;
-        case TRAINER_ENCOUNTER_PKER:
+        case TRAINER_ENCOUNTER_MUSIC_PKER:
             music = MUS_PS_ENCOUNTER_PKER;
             break;
-        case TRAINER_ENCOUNTER_HAM:
+        case TRAINER_ENCOUNTER_MUSIC_HAM:
             music = MUS_PS_ENCOUNTER_HAM;
             break;
         default:

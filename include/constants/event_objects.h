@@ -465,14 +465,33 @@
 #define OBJ_EVENT_GFX_MINER				        451
 #define OBJ_EVENT_GFX_SMITH				        452
 #define OBJ_EVENT_GFX_DOG_SLEEP				    453
-
 #define OBJ_EVENT_GFX_JUNA			            454
 #define OBJ_EVENT_GFX_ABYSS_PORTAL				455
 #define OBJ_EVENT_GFX_CHAIR				        456
 #define OBJ_EVENT_GFX_STRYKEWYRM_FREEZY		    457
 #define OBJ_EVENT_GFX_STRYKEWYRM_LEAFY		    458
 
-#define NUM_OBJ_EVENT_GFX                        459
+#define OBJ_EVENT_GFX_CAT_BLACK		            459
+#define OBJ_EVENT_GFX_CAT_WHITE		            460
+#define OBJ_EVENT_GFX_CAT_BROWN		            461
+#define OBJ_EVENT_GFX_CAT_HELL		            462/*
+#define OBJ_EVENT_GFX_CAT_BLACKWHITE		    463
+#define OBJ_EVENT_GFX_CAT_CLOCKWORK		        464
+#define OBJ_EVENT_GFX_CAT_BROWNWHITE	    	465
+#define OBJ_EVENT_GFX_CAT_PURPLE	        	466*/
+#define OBJ_EVENT_GFX_ARCHAEOLOGIST	        	467
+#define OBJ_EVENT_GFX_DIVINER		            468
+#define OBJ_EVENT_GFX_DURIAL321		            469/*
+#define OBJ_EVENT_GFX_SARADOMIN_OWL	        	470
+#define OBJ_EVENT_GFX_ZAMORAK_HAWK	        	471
+#define OBJ_EVENT_GFX_GUTHIX_RAPTOR		        472
+#define OBJ_EVENT_GFX_DOG_STRAY	            	473
+#define OBJ_EVENT_GFX_DOG_LABRADOR	        	474
+#define OBJ_EVENT_GFX_DOG_GUARD		            475
+#define OBJ_EVENT_GFX_DOG_CORGI		            476
+#define OBJ_EVENT_GFX_DOG_DALMATIAN	        	477
+*/
+#define NUM_OBJ_EVENT_GFX                        478
 
 
 // These are dynamic object gfx ids.

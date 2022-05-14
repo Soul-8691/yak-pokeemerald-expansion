@@ -653,21 +653,38 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_ORE_PAL 0x124D
 #define OBJ_EVENT_PAL_ORE_PAL2 0x124E
 #define OBJ_EVENT_PAL_CABBAGE_CROP 0x124F
-
 #define OBJ_EVENT_PAL_ABYSSAL_DEMON 0x1250
 #define OBJ_EVENT_PAL_CHAOS_ELEMENTAL 0x1251
 #define OBJ_EVENT_PAL_MINER 0x1252
 #define OBJ_EVENT_PAL_SMITH 0x1253
 #define OBJ_EVENT_PAL_DOG_SLEEP 0x1254
-
 #define OBJ_EVENT_PAL_JUNA 0x1255
 #define OBJ_EVENT_PAL_ABYSS_PORTAL 0x1256
 #define OBJ_EVENT_PAL_CHAIR 0x1257
 #define OBJ_EVENT_PAL_STRYKEWYRM_FREEZY 0x1258
 #define OBJ_EVENT_PAL_STRYKEWYRM_LEAFY 0x1259
-
 #define OBJ_EVENT_PAL_TreeDisguise 0x125A
 
+#define OBJ_EVENT_PAL_CAT_BLACK			0x125B
+#define OBJ_EVENT_PAL_CAT_WHITE			0x125C
+#define OBJ_EVENT_PAL_CAT_BROWN			0x125D
+#define OBJ_EVENT_PAL_CAT_HELL			0x125E/*
+#define OBJ_EVENT_PAL_CAT_BLACKWHITE	0x125F
+#define OBJ_EVENT_PAL_CAT_CLOCKWORK		0x1260
+#define OBJ_EVENT_PAL_CAT_BROWNWHITE	0x1261
+#define OBJ_EVENT_PAL_CAT_PURPLE		0x1262*/
+#define OBJ_EVENT_PAL_ARCHAEOLOGIST		0x1263
+#define OBJ_EVENT_PAL_DIVINER			0x1264
+#define OBJ_EVENT_PAL_DURIAL321			0x1265/*
+#define OBJ_EVENT_PAL_SARADOMIN_OWL		0x1266
+#define OBJ_EVENT_PAL_ZAMORAK_HAWK		0x1267
+#define OBJ_EVENT_PAL_GUTHIX_RAPTOR		0x1268
+#define OBJ_EVENT_PAL_DOG_STRAY			0x1269
+#define OBJ_EVENT_PAL_DOG_LABRADOR		0x126A
+#define OBJ_EVENT_PAL_DOG_GUARD			0x126B
+#define OBJ_EVENT_PAL_DOG_CORGI			0x126C
+#define OBJ_EVENT_PAL_DOG_DALMATIAN		0x126D
+*/
 #define OBJ_EVENT_PAL_TAG_NONE 0x11FF
 
 #include "data/field_effects/field_effect_object_template_pointers.h"
@@ -930,9 +947,30 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Miner, OBJ_EVENT_PAL_MINER},	
     {gObjectEventPalette_Smith, OBJ_EVENT_PAL_SMITH},	
     {gObjectEventPalette_Dog_Sleep, OBJ_EVENT_PAL_DOG_SLEEP},	
-    {gObjectEventPalette_Juna, OBJ_EVENT_PAL_ABYSS_PORTAL},	
+    {gObjectEventPalette_Juna, OBJ_EVENT_PAL_JUNA},	
     {gObjectEventPalette_Abyss_Portal, OBJ_EVENT_PAL_ABYSS_PORTAL},	
     {gObjectEventPalette_Chair, OBJ_EVENT_PAL_CHAIR},	
+
+    {gObjectEventPalette_Cat_Black, OBJ_EVENT_PAL_CAT_BLACK},
+    {gObjectEventPalette_Cat_White, OBJ_EVENT_PAL_CAT_WHITE},
+    {gObjectEventPalette_Cat_Brown, OBJ_EVENT_PAL_CAT_BROWN},
+    {gObjectEventPalette_Cat_Hell, OBJ_EVENT_PAL_CAT_HELL},/*
+    {gObjectEventPalette_Cat_BlackWhite, OBJ_EVENT_PAL_CAT_BLACKWHITE},
+    {gObjectEventPalette_Cat_Clockwork, OBJ_EVENT_PAL_CAT_CLOCKWORK},
+    {gObjectEventPalette_Cat_BrownWhite, OBJ_EVENT_PAL_CAT_BROWNWHITE},
+    {gObjectEventPalette_Cat_Purple, OBJ_EVENT_PAL_CAT_PURPLE},*/
+    {gObjectEventPalette_Archaeologist, OBJ_EVENT_PAL_ARCHAEOLOGIST},
+    {gObjectEventPalette_Diviner, OBJ_EVENT_PAL_DIVINER},
+    {gObjectEventPalette_Durial321, OBJ_EVENT_PAL_DURIAL321},/*
+    {gObjectEventPalette_Saradomin_Owl, OBJ_EVENT_PAL_SARADOMIN_OWL},
+    {gObjectEventPalette_Zamorak_Hawk, OBJ_EVENT_PAL_ZAMORAK_HAWK},
+    {gObjectEventPalette_Guthix_Raptor, OBJ_EVENT_PAL_GUTHIX_RAPTOR},
+    {gObjectEventPalette_Dog_Stray, OBJ_EVENT_PAL_DOG_STRAY},
+    {gObjectEventPalette_Dog_Labrador, OBJ_EVENT_PAL_DOG_LABRADOR},
+    {gObjectEventPalette_Dog_Guard, OBJ_EVENT_PAL_DOG_GUARD},
+    {gObjectEventPalette_Dog_Corgi, OBJ_EVENT_PAL_DOG_CORGI},
+    {gObjectEventPalette_Dog_Dalmatian, OBJ_EVENT_PAL_DOG_DALMATIAN},
+    */
 //OTHER    
 	{gObjectEventPalette_OrePal, OBJ_EVENT_PAL_ORE_PAL},
 	{gObjectEventPalette_OrePal2, OBJ_EVENT_PAL_ORE_PAL2},

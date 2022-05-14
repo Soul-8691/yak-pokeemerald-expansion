@@ -25,37 +25,34 @@ const struct Trainer gTrainers[] = {
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Maggie),
         .party = {.ItemDefaultMoves = sParty_Maggie},
-        .scaling = FALSE,
     },
-//-------------ROUTE 1--------------------------------------------------------------------------------------------------------
-     [TRAINER_GOBLIN_1_ROUTE1] =
+
+    [TRAINER_GOBLIN_1_ROUTE1] =
     {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_GOBLIN,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
         .trainerPic = TRAINER_PIC_goblin,
         .trainerName = _("WARTFOOT"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Goblin1_Route1),
-        .party = {.ItemDefaultMoves = sParty_Goblin1_Route1},
-        .scaling = FALSE,
+        .party = {.NoItemDefaultMoves = sParty_Goblin1_Route1},
     },
-	
+
     [TRAINER_GOBLIN_2_ROUTE1] =
     {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_GOBLIN,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
         .trainerPic = TRAINER_PIC_goblin,
         .trainerName = _("FROGFACE"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Goblin2_Route1),
-        .party = {.ItemDefaultMoves = sParty_Goblin2_Route1},
-        .scaling = FALSE,
+        .party = {.NoItemDefaultMoves = sParty_Goblin2_Route1},
     },
 
 	[TRAINER_RSN_ROUTE1] =
@@ -73,20 +70,20 @@ const struct Trainer gTrainers[] = {
         .scaling = FALSE,
     },
 
-    [TRAINER_GOBLIN_3_ROUTE1] ={
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+    [TRAINER_GOBLIN_3_ROUTE1] =
+    {
+        .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_GOBLIN,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
         .trainerPic = TRAINER_PIC_goblin,
         .trainerName = _("MUDBEARD"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Goblin3),
-        .party = {.ItemDefaultMoves = sParty_Goblin3},
-        .scaling = FALSE,
+        .party = {.NoItemDefaultMoves = sParty_Goblin3},
     },
-	
+
     [TRAINER_GOBLIN_4_ROUTE1] ={
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_GOBLIN,
@@ -1859,79 +1856,74 @@ const struct Trainer gTrainers[] = {
         .scaling = FALSE,
     },
 
-    [TRAINER_FALADOR_GYM_2] = {
+    [TRAINER_FALADOR_GYM_2] =
+    {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_white_knight_m,
         .trainerName = _("KNIGHT"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_FALADOR_GYM_2),
         .party = {.ItemDefaultMoves = sParty_FALADOR_GYM_2},
-        .scaling = FALSE,
     },
 
-    [TRAINER_FALADOR_GYM_3] = {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+    [TRAINER_FALADOR_GYM_3] =
+    {
+        .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_white_knight_m,
         .trainerName = _("KNIGHT"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_FALADOR_GYM_3),
-        .party = {.ItemDefaultMoves = sParty_FALADOR_GYM_3},
-        .scaling = FALSE,
+        .party = {.NoItemDefaultMoves = sParty_FALADOR_GYM_3},
     },
 
-    [TRAINER_FALADOR_GYM_4] = {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+    [TRAINER_FALADOR_GYM_4] =
+    {
+        .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_white_knight_m,
         .trainerName = _("KNIGHT"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_FALADOR_GYM_4),
-        .party = {.ItemDefaultMoves = sParty_FALADOR_GYM_4},
-        .scaling = FALSE,
+        .party = {.NoItemDefaultMoves = sParty_FALADOR_GYM_4},
     },
 
-//RAZOR SHELL
-    [TRAINER_FALADOR_GYM_AMIKVARZE] = {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+    [TRAINER_FALADOR_GYM_AMIKVARZE] =
+    {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_sir_amik_varze,
         .trainerName = _("AMIK VARZE"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_FALADOR_GYM_AMIKVARZE),
-        .party = {.ItemDefaultMoves = sParty_FALADOR_GYM_AMIKVARZE},
-        .scaling = FALSE,
+        .party = {.NoItemCustomMoves = sParty_FALADOR_GYM_AMIKVARZE},
     },
 
-    [TRAINER_FALADOR_HAIRDRESSER] = {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+    [TRAINER_FALADOR_HAIRDRESSER] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_hairdresser,
         .trainerName = _("Hairdresser"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_FALADOR_HAIRDRESSER),
-        .party = {.ItemDefaultMoves = sParty_FALADOR_HAIRDRESSER},
-        .scaling = FALSE,
+        .party = {.ItemCustomMoves = sParty_FALADOR_HAIRDRESSER},
     },
-
-
-
-
 
 };

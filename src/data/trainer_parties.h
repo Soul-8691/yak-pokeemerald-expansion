@@ -13,23 +13,20 @@ static const struct TrainerMonItemDefaultMoves sParty_Maggie[] = {
     .heldItem = ITEM_FOCUS_BAND
     }
 };
-//----------------------------------------------------------------------------------------------------------------------
-//route 1
-static const struct TrainerMonItemDefaultMoves sParty_Goblin1_Route1[] = {
+
+static const struct TrainerMonNoItemDefaultMoves sParty_Goblin1_Route1[] = {
     {
     .iv = 0,
     .lvl = 3,
     .species = SPECIES_RAT_NORMAL_FORM,
-    .heldItem = ITEM_NONE
     }
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_Goblin2_Route1[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Goblin2_Route1[] = {
     {
     .iv = 0,
     .lvl = 3,
     .species = SPECIES_SPIDERLING,
-    .heldItem = ITEM_NONE
     }
 };
 
@@ -48,22 +45,18 @@ static const struct TrainerMonItemDefaultMoves sParty_Trainer1_Route1[] = {
     }
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_Goblin3[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Goblin3[] = {
     {
     .iv = 0,
     .lvl = 10,
     .species = SPECIES_FROG_NORMAL_FORM,
-    .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
     .lvl = 9,
     .species = SPECIES_EEL_SLIMY_FORM,
-    .heldItem = ITEM_NONE
     }
 };
-
-
 
 static const struct TrainerMonItemDefaultMoves sParty_Farmer_Route1[] = {
     {
@@ -94,7 +87,7 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE1_Goblin4[] = {
     .heldItem = ITEM_NONE
     }
 };
-//----------------------------------------------------------------------------------------------------------------------
+
 //mill lane mill
 static const struct TrainerMonItemDefaultMoves sParty_TRAINER1_MILLLANEMILL[] = {
     {
@@ -2256,79 +2249,76 @@ static const struct TrainerMonItemDefaultMoves sParty_FALADOR_GYM_2[] = {
     },
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_FALADOR_GYM_3[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_FALADOR_GYM_3[] = {
     {
     .iv = 0,
     .lvl = 25,
     .species = SPECIES_SPIDINE,
-    .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
     .lvl = 25,
     .species = SPECIES_HEIM_CRAB,
-    .heldItem = ITEM_NONE
     }
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_FALADOR_GYM_4[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_FALADOR_GYM_4[] = {
     {
     .iv = 0,
     .lvl = 25,
     .species = SPECIES_CHICKEN_DIVING_FORM,
-    .heldItem = ITEM_NONE
     }
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_FALADOR_GYM_AMIKVARZE[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_FALADOR_GYM_AMIKVARZE[] = {
     {
     .iv = 0,
     .lvl = 30,
     .species = SPECIES_BELTFISH,
-    .heldItem = ITEM_NONE
-    //.moves = {MOVE_AQUA_JET, MOVE_WRAP, MOVE_WATER_PULSE, MOVE_CHARGE_BEAM}
+    .moves = {MOVE_AQUA_JET, MOVE_WRAP, MOVE_WATER_PULSE, MOVE_CHARGE_BEAM}
     },
     {
     .iv = 0,
     .lvl = 30,
     .species = SPECIES_CRAB_RUMPUMPED_FORM,
-    .heldItem = ITEM_NONE
-    //.moves = {MOVE_RAZOR_SHELL, MOVE_ROCKSMASH, MOVE_SLAM, MOVE_NONE}
+    .moves = {MOVE_RAZOR_SHELL, MOVE_ROCK_SMASH, MOVE_SLAM, MOVE_NONE}
     },
     {
     .iv = 0,
     .lvl = 30,
     .species = SPECIES_SWAN,
-    .heldItem = ITEM_NONE
-    //.moves = {MOVE_BITE, MOVE_HOWL, MOVE_BUBBLE, MOVE_MUD_SPORT}
+    .moves = {MOVE_BITE, MOVE_HOWL, MOVE_BUBBLE, MOVE_MUD_SPORT}
     }
-
-    
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_FALADOR_HAIRDRESSER[] = {
+static const struct TrainerMonItemCustomMoves sParty_FALADOR_HAIRDRESSER[] = {
     {
     .iv = 0,
     .lvl = 20,
     .species = SPECIES_CHINCHOMPA_GREY_FORM,
-    .heldItem = ITEM_NONE
+    .heldItem = ITEM_COSMIC_RUNE,
+    .moves = {MOVE_POUND, MOVE_GUTHIX_CLAWS, MOVE_PAY_DAY, MOVE_NONE}
     },
     {
     .iv = 0,
     .lvl = 20,
     .species = SPECIES_CHINCHOMPA_GREY_FORM,
-    .heldItem = ITEM_NONE
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_COMET_PUNCH, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     },
     {
     .iv = 0,
     .lvl = 20,
     .species = SPECIES_CHINCHOMPA_RED_FORM,
-    .heldItem = ITEM_NONE
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_FIRE_PUNCH, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     },
     {
     .iv = 0,
     .lvl = 20,
     .species = SPECIES_CHINCHOMPA_GOLD_FORM,
-    .heldItem = ITEM_NONE
-    },
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_SAND_ATTACK, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    }
 };
+

@@ -14142,7 +14142,7 @@
           "map": "MAP_WIZARDS_TOWER_ATTIC",
           "base_label": "gWizards_Tower_Attic0",
           "land_mons": {
-            "encounter_rate": 10,
+            "encounter_rate": 5,
             "mons": [
               {
                 "min_level": 5,

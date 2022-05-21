@@ -1,0 +1,10 @@
+mapscripts Rimmington_Bank_MapScripts {
+    MAP_SCRIPT_ON_LOAD { //ON LOAD FOR MAP TILES
+    call(Rimmington_Bank_OnTransition)
+    }
+} 
+
+script Rimmington_Bank_OnTransition {
+    setrespawn(HEAL_LOCATION_RIMMINGTON)
+    return
+}

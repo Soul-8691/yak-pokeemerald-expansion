@@ -3,7 +3,7 @@
   "name": "Draynor_House_WoM_1F",
   "layout": "LAYOUT_DRAYNOR_HOUSE_WO_M_1F",
   "music": "MUS_PS_DRAYNOR",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_DRAYNOR",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

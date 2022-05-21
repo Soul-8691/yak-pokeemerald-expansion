@@ -712,10 +712,10 @@ Lumbridge_FAYETH_Text_1:
 	.string "above zero.$"
 
 Lumbridge_BOT_Text_0:
-	.string "….\p"
-	.string "….\p"
-	.string "….\p"
-	.string "….\p"
+	.string "…\p"
+	.string "…\p"
+	.string "…\p"
+	.string "…\p"
 	.string "There is no response.$"
 
 Lumbridge_DONIE_Text_0:

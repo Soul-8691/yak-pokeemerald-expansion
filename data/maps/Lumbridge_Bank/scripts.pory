@@ -1,0 +1,60 @@
+
+
+mapscripts Lumbridge_Bank_MapScripts {
+    MAP_SCRIPT_ON_LOAD { //ON LOAD FOR MAP TILES
+    call(Lumbridge_Bank_OnTransition)
+    }
+} 
+
+
+
+script Lumbridge_Bank_OnTransition {
+    setrespawn(HEAL_LOCATION_LUMBRIDGE)
+    return
+}
+
+
+script BANK_EventScript_Banker {
+    setvar(VAR_0x800B, LOCALID_NURSE)
+    lock
+	faceplayer
+    namebox ("Banker")
+	msgbox(format("Welcome to the Bank of PokeScape."))
+	
+    msgbox(format("Would you like to heal your MONSTERs?"), MSGBOX_YESNO)
+	while (var(VAR_RESULT) != 1) {
+        msgbox(format("Very well, come again soon."))	
+        hidenamebox
+        release
+        end
+	}
+    msgbox(format("Your MONSTERs are all healed!"))
+    special(HealPlayerParty)
+    hidenamebox
+	release
+	end
+}
+
+
+script BANK_EventScript_PC {
+    lock
+	faceplayer
+    namebox ("Banker")
+	msgbox(format("Would you like to access your Bank Account?"), MSGBOX_YESNO)
+	while (var(VAR_RESULT) != 1) {
+        msgbox(format("Very well, come again soon."))	
+        hidenamebox
+        release
+        end
+	}
+    hidenamebox
+	special(ShowPokemonStorageSystemPC)
+	waitstate
+    namebox ("Banker")
+	msgbox(format("Thank you for using the Bank of PokeScape."))
+    hidenamebox
+	release
+	end
+}
+
+

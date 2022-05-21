@@ -271,7 +271,7 @@ script ITEM_ROUTE12_ATTACK_POTION
 
 script ITEM_ROUTE12_EGG
 {
-    finditem(ITEM_EGG)
+    finditem(ITEM_CHOCOLATE_SUNDAY)
     end
 }
 

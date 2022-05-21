@@ -3,7 +3,7 @@
   "name": "WizardsTower",
   "layout": "LAYOUT_WIZARDS_TOWER",
   "music": "MUS_PS_WIZARDS_TOWER",
-  "region_map_section": "MAPSEC_MISTHALIN",
+  "region_map_section": "MAPSEC_WIZARDS_TOWER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",

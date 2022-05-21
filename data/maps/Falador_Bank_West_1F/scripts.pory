@@ -1,0 +1,10 @@
+mapscripts Falador_Bank_West_1F_MapScripts {
+    MAP_SCRIPT_ON_LOAD { //ON LOAD FOR MAP TILES
+    call(Falador_Bank_OnTransition)
+    }
+} 
+
+script Falador_Bank_OnTransition {
+    setrespawn(HEAL_LOCATION_FALADOR)
+    return
+}

@@ -467,8 +467,8 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chair;
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_Black;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_White;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_Brown;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_Hell;/*
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_Brown;/*
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_Hell;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_BlackWhite;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_Clockwork;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_BrownWhite;
@@ -961,8 +961,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 
     [OBJ_EVENT_GFX_CAT_BLACK] =                    &gObjectEventGraphicsInfo_Cat_Black,
     [OBJ_EVENT_GFX_CAT_WHITE] =                    &gObjectEventGraphicsInfo_Cat_White,
-    [OBJ_EVENT_GFX_CAT_BROWN] =                    &gObjectEventGraphicsInfo_Cat_Brown,
-    [OBJ_EVENT_GFX_CAT_HELL] =                    &gObjectEventGraphicsInfo_Cat_Hell,/*
+    [OBJ_EVENT_GFX_CAT_BROWN] =                    &gObjectEventGraphicsInfo_Cat_Brown,/*
+    [OBJ_EVENT_GFX_CAT_HELL] =                    &gObjectEventGraphicsInfo_Cat_Hell,
     [OBJ_EVENT_GFX_CAT_BLACKWHITE] =                    &gObjectEventGraphicsInfo_Cat_BlackWhite,
     [OBJ_EVENT_GFX_CAT_CLOCKWORK] =                    &gObjectEventGraphicsInfo_Cat_Clockwork,
     [OBJ_EVENT_GFX_CAT_BROWNWHITE] =                    &gObjectEventGraphicsInfo_Cat_BrownWhite,

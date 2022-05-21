@@ -1,5 +1,15 @@
 Draynor_Bank_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, Draynor_Bank_MapScripts_MAP_SCRIPT_ON_LOAD
 	.byte 0
+
+Draynor_Bank_MapScripts_MAP_SCRIPT_ON_LOAD:
+	call Draynor_Bank_OnTransition
+	return
+
+
+Draynor_Bank_OnTransition::
+	setrespawn HEAL_LOCATION_DRAYNOR
+	return
 
 
 NPC_DraynorBank_Qutiedoll::

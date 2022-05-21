@@ -3,7 +3,7 @@
   "name": "Draynor_Sewers_3",
   "layout": "LAYOUT_DRAYNOR_SEWERS_3",
   "music": "MUS_PS_CAVE_F2P",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_DRAYNOR",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

@@ -85,7 +85,7 @@ script Lumbridge_FAYETH
 
 script Lumbridge_BOT
 {
-	msgbox(format("….\p….\p….\p….\pThere is no response."))
+	msgbox(format("…\p…\p…\p…\pThere is no response."))
 	release
 	end
 }

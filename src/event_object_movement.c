@@ -663,12 +663,12 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_CHAIR 0x1257
 #define OBJ_EVENT_PAL_STRYKEWYRM_FREEZY 0x1258
 #define OBJ_EVENT_PAL_STRYKEWYRM_LEAFY 0x1259
-#define OBJ_EVENT_PAL_TreeDisguise 0x125A
+#define OBJ_EVENT_PAL_GhostDisguise 0x125A
 
 #define OBJ_EVENT_PAL_CAT_BLACK			0x125B
 #define OBJ_EVENT_PAL_CAT_WHITE			0x125C
-#define OBJ_EVENT_PAL_CAT_BROWN			0x125D
-#define OBJ_EVENT_PAL_CAT_HELL			0x125E/*
+#define OBJ_EVENT_PAL_CAT_BROWN			0x125D/*
+#define OBJ_EVENT_PAL_CAT_HELL			0x125E
 #define OBJ_EVENT_PAL_CAT_BLACKWHITE	0x125F
 #define OBJ_EVENT_PAL_CAT_CLOCKWORK		0x1260
 #define OBJ_EVENT_PAL_CAT_BROWNWHITE	0x1261
@@ -685,7 +685,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_DOG_CORGI			0x126C
 #define OBJ_EVENT_PAL_DOG_DALMATIAN		0x126D
 */
-#define OBJ_EVENT_PAL_TAG_NONE 0x11FF
+#define OBJ_EVENT_PAL_TAG_NONE 0x12FF
 
 #include "data/field_effects/field_effect_object_template_pointers.h"
 #include "data/object_events/object_event_pic_tables.h"
@@ -953,8 +953,8 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
 
     {gObjectEventPalette_Cat_Black, OBJ_EVENT_PAL_CAT_BLACK},
     {gObjectEventPalette_Cat_White, OBJ_EVENT_PAL_CAT_WHITE},
-    {gObjectEventPalette_Cat_Brown, OBJ_EVENT_PAL_CAT_BROWN},
-    {gObjectEventPalette_Cat_Hell, OBJ_EVENT_PAL_CAT_HELL},/*
+    {gObjectEventPalette_Cat_Brown, OBJ_EVENT_PAL_CAT_BROWN},/*
+    {gObjectEventPalette_Cat_Hell, OBJ_EVENT_PAL_CAT_HELL},
     {gObjectEventPalette_Cat_BlackWhite, OBJ_EVENT_PAL_CAT_BLACKWHITE},
     {gObjectEventPalette_Cat_Clockwork, OBJ_EVENT_PAL_CAT_CLOCKWORK},
     {gObjectEventPalette_Cat_BrownWhite, OBJ_EVENT_PAL_CAT_BROWNWHITE},
@@ -977,7 +977,7 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
 	{gObjectEventPalette_CabbageCrop, OBJ_EVENT_PAL_CABBAGE_CROP},
     {gObjectEventPalette_Protaganist, OBJ_EVENT_PAL_PROTAGANIST},
 
-    {gObjectEventPalette_GhostDisguise, OBJ_EVENT_PAL_TreeDisguise},	
+    {gObjectEventPalette_GhostDisguise, OBJ_EVENT_PAL_GhostDisguise},	
 
     {NULL,                  0x0000},
 };

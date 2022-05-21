@@ -73,7 +73,6 @@ ENCOUNTER_LESSERDEMON_2:
 	setflag FLAG_TEMP_A
 	removeobject 1
 	fadescreen FADE_FROM_BLACK
-	msgbox ENCOUNTER_LESSERDEMON_Text_1
 	closemessage
 	end
 
@@ -83,7 +82,6 @@ ENCOUNTER_LESSERDEMON_3:
 	setflag FLAG_TEMP_A
 	removeobject 1
 	fadescreen FADE_FROM_BLACK
-	msgbox ENCOUNTER_LESSERDEMON_Text_2
 	closemessage
 	end
 
@@ -105,9 +103,3 @@ NPC_WIZARDSTOWER_LESSERDEMON_GATE_Text_3:
 
 ENCOUNTER_LESSERDEMON_Text_0:
 	.string "GWARAKU!$"
-
-ENCOUNTER_LESSERDEMON_Text_1:
-	.string "You have defeated me!$"
-
-ENCOUNTER_LESSERDEMON_Text_2:
-	.string "You have caught me!$"

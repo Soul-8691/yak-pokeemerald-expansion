@@ -3,7 +3,7 @@
   "name": "Draynor_Manor_Crypt",
   "layout": "LAYOUT_DRAYNOR_MANOR_CRYPT",
   "music": "MUS_PS_FOREST_F2P",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_DRAYNOR_MANOR",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_INDOOR",

@@ -1,9 +1,15 @@
 mapscripts Draynor_Bank_MapScripts {
-  
-  
+    MAP_SCRIPT_ON_LOAD { //ON LOAD FOR MAP TILES
+    call(Draynor_Bank_OnTransition)
+    }
+} 
+
+
+
+script Draynor_Bank_OnTransition {
+    setrespawn(HEAL_LOCATION_DRAYNOR)
+    return
 }
-
-
 
 
 

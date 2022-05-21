@@ -1,0 +1,10 @@
+mapscripts PortSarim_Bank_MapScripts {
+    MAP_SCRIPT_ON_LOAD { //ON LOAD FOR MAP TILES
+    call(PortSarim_Bank_OnTransition)
+    }
+} 
+
+script PortSarim_Bank_OnTransition {
+    setrespawn(HEAL_LOCATION_PORT_SARIM)
+    return
+}

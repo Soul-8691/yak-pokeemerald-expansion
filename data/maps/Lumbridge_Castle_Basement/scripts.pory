@@ -1,0 +1,40 @@
+
+mapscripts Lumbridge_Castle_Basement_MapScripts {
+
+} 
+
+
+
+script NPC_FROGEEL
+{
+	lock
+	faceplayer
+    namebox ("FROGEEL")
+	msgbox(format("AAAAAAAAAAAA!"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_LumbridgeBasement_Demonheadge
+{
+	lock
+	faceplayer
+    namebox ("Demonheadge")
+	msgbox(format("Hi there, I hope you enjoy playing PokeScape."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_LumbridgeBasement_Item
+{
+	lock
+	faceplayer
+	msgbox(format("Demonheadge seems to be using this pouch to store future content."))
+    waitmessage
+	release
+	end
+}

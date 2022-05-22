@@ -323,14 +323,15 @@ script NPC_ORCHY_MusicPlayer
     faceplayer
     namebox ("Orchy")
     msgbox(format("Hey!\pIt is me Runescape Reorchestrated, you can call me Orchy for short.\pI am here today to help you test some music."))
-    hidenamebox
-    msgbox(format("Would you like to listen to some music?"), MSGBOX_YESNO)
+    msgbox(format("vsBATTLE, YES. ENCOUNTER, NO."), MSGBOX_YESNO)
 		if (var(VAR_RESULT)){
+            hidenamebox
 			goto(PokeScapeSongList_VSBattles)
 			release
 			end
 		}
 		else {
+            hidenamebox
             goto(PokeScapeSongList_ENCOUNTERS)
 			release
 			end
@@ -399,8 +400,24 @@ script PokeScapeSongList_VSBattles{
             case 7: 
                 namebox ("7")
                 playbgm (MUS_PS_VS_HAM, 1)
-                setvar(VAR_POKESCAPE_MUSIC_STATE, 0)
+                setvar(VAR_POKESCAPE_MUSIC_STATE, 8)
                 msgbox(format("NOW PLAYING: VS HAM"))
+                hidenamebox
+                release
+                end
+            case 8: 
+                namebox ("8")
+                playbgm (MUS_PS_VS_LEGENDARY, 1)
+                setvar(VAR_POKESCAPE_MUSIC_STATE, 9)
+                msgbox(format("NOW PLAYING: VS LEGENDARY"))
+                hidenamebox
+                release
+                end
+            case 9: 
+                namebox ("9")
+                playbgm (MUS_PS_VS_POKESCAPERS, 1)
+                setvar(VAR_POKESCAPE_MUSIC_STATE, 0)
+                msgbox(format("NOW PLAYING: VS POKESCAPERS"))
                 hidenamebox
                 release
                 end

@@ -204,15 +204,16 @@ NPC_ORCHY_MusicPlayer::
 	faceplayer
 	namebox NPC_ORCHY_MusicPlayer_Text_0
 	msgbox NPC_ORCHY_MusicPlayer_Text_1
-	hidenamebox
 	msgbox NPC_ORCHY_MusicPlayer_Text_2, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_ne NPC_ORCHY_MusicPlayer_1
+	hidenamebox
 	goto PokeScapeSongList_ENCOUNTERS
 	release
 	end
 
 NPC_ORCHY_MusicPlayer_1:
+	hidenamebox
 	goto PokeScapeSongList_VSBattles
 	release
 	end
@@ -228,6 +229,8 @@ PokeScapeSongList_VSBattles::
 	case 5, PokeScapeSongList_VSBattles_7
 	case 6, PokeScapeSongList_VSBattles_8
 	case 7, PokeScapeSongList_VSBattles_9
+	case 8, PokeScapeSongList_VSBattles_10
+	case 9, PokeScapeSongList_VSBattles_11
 	return
 
 PokeScapeSongList_VSBattles_2:
@@ -296,8 +299,26 @@ PokeScapeSongList_VSBattles_8:
 PokeScapeSongList_VSBattles_9:
 	namebox PokeScapeSongList_VSBattles_Text_14
 	playbgm MUS_PS_VS_HAM, 1
-	setvar VAR_POKESCAPE_MUSIC_STATE, 0
+	setvar VAR_POKESCAPE_MUSIC_STATE, 8
 	msgbox PokeScapeSongList_VSBattles_Text_15
+	hidenamebox
+	release
+	end
+
+PokeScapeSongList_VSBattles_10:
+	namebox PokeScapeSongList_VSBattles_Text_16
+	playbgm MUS_PS_VS_LEGENDARY, 1
+	setvar VAR_POKESCAPE_MUSIC_STATE, 9
+	msgbox PokeScapeSongList_VSBattles_Text_17
+	hidenamebox
+	release
+	end
+
+PokeScapeSongList_VSBattles_11:
+	namebox PokeScapeSongList_VSBattles_Text_18
+	playbgm MUS_PS_VS_POKESCAPERS, 1
+	setvar VAR_POKESCAPE_MUSIC_STATE, 0
+	msgbox PokeScapeSongList_VSBattles_Text_19
 	hidenamebox
 	release
 	end
@@ -502,7 +523,7 @@ NPC_ORCHY_MusicPlayer_Text_1:
 	.string "music.$"
 
 NPC_ORCHY_MusicPlayer_Text_2:
-	.string "Would you like to listen to some music?$"
+	.string "vsBATTLE, YES. ENCOUNTER, NO.$"
 
 PokeScapeSongList_VSBattles_Text_0:
 	.string "0$"
@@ -551,6 +572,18 @@ PokeScapeSongList_VSBattles_Text_14:
 
 PokeScapeSongList_VSBattles_Text_15:
 	.string "NOW PLAYING: VS HAM$"
+
+PokeScapeSongList_VSBattles_Text_16:
+	.string "8$"
+
+PokeScapeSongList_VSBattles_Text_17:
+	.string "NOW PLAYING: VS LEGENDARY$"
+
+PokeScapeSongList_VSBattles_Text_18:
+	.string "9$"
+
+PokeScapeSongList_VSBattles_Text_19:
+	.string "NOW PLAYING: VS POKESCAPERS$"
 
 PokeScapeSongList_ENCOUNTERS_Text_0:
 	.string "NOW PLAYING: ENCOUNTER HAM$"

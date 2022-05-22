@@ -1677,24 +1677,21 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE11_QUESTER[] = {
     }
 };
 
-static const struct TrainerMonItemDefaultMoves sParty_ROUTE11_SAILOR[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE11_SAILOR[] = {
     {
     .iv = 0,
     .lvl = 16,
     .species = SPECIES_SEAGULL_NORMAL_FORM,
-    .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
     .lvl = 14,
     .species = SPECIES_PELICAN,
-    .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
     .lvl = 16,
     .species = SPECIES_SEAGULL_NORMAL_FORM,
-    .heldItem = ITEM_NONE
     }
 };
 
@@ -1744,6 +1741,7 @@ static const struct TrainerMonItemDefaultMoves sParty_FALADOR_MODTIMBO[] = {
     .heldItem = ITEM_NONE
     }
 };
+
 
 //LUMBRIDGE SWAMP CAVES
 static const struct TrainerMonItemDefaultMoves sParty_LUMBRIDGESWAMPCAVE_FISHERMAN_1[] = {
@@ -1864,19 +1862,19 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE6_FIREMAKER[] = {
 static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_MUGGER_1[] = {
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 15,
     .species = SPECIES_FERRET,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 16,
     .species = SPECIES_FERRET,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 15,
     .species = SPECIES_RACOON,
     .heldItem = ITEM_NONE
     }
@@ -1885,25 +1883,25 @@ static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_MUGGER_1[
 static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PIRATE_1[] = {
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 15,
     .species = SPECIES_CRAB_GREY_FORM,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 18,
     .species = SPECIES_SHRIMP,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 17,
     .species = SPECIES_SHRIMP,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 15,
     .species = SPECIES_MACKEREL,
     .heldItem = ITEM_NONE
     }
@@ -1912,7 +1910,7 @@ static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PIRATE_1[
 static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PIRATE_2[] = {
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 20,
     .species = SPECIES_FROGEEL,  //replace with BOVIMASTYX
     .heldItem = ITEM_NONE
     }
@@ -1921,25 +1919,25 @@ static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PIRATE_2[
 static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PIRATE_3[] = {
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 15,
     .species = SPECIES_SEAGULL_NORMAL_FORM,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 14,
     .species = SPECIES_COD,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 14,
     .species = SPECIES_KARAMBWAN,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 14,
     .species = SPECIES_PENGUIN,
     .heldItem = ITEM_NONE
     }
@@ -1948,7 +1946,7 @@ static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PIRATE_3[
 static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PIRATE_4[] = {
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 16,
     .species = SPECIES_SEAGULL_STEVEN_FORM,  //replace with BOVIMASTYX
     .heldItem = ITEM_NONE
     }
@@ -1957,19 +1955,19 @@ static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PIRATE_4[
 static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_GOBLIN_1[] = {
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 18,
     .species = SPECIES_KEBBIT,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 17,
     .species = SPECIES_KEBBIT_POLAR_FORM,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 17,
     .species = SPECIES_SPIDER_HUGE_FORM,
     .heldItem = ITEM_NONE
     }
@@ -1978,13 +1976,13 @@ static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_GOBLIN_1[
 static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_GOBLIN_2[] = {
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 17,
     .species = SPECIES_SEAGULL_NORMAL_FORM,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 17,
     .species = SPECIES_SCORPION_PIT_FORM,
     .heldItem = ITEM_NONE
     }
@@ -1993,19 +1991,19 @@ static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_GOBLIN_2[
 static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_QUESTER [] = {
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 17,
     .species = SPECIES_BEAVER,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 18,
     .species = SPECIES_RUNE,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 17,
     .species = SPECIES_FERRET,
     .heldItem = ITEM_NONE
     }
@@ -2014,20 +2012,20 @@ static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_QUESTER [
 static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PVM_1[] = {
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 17,
     .species = SPECIES_SALAMANDER_ORANGE_FORM,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 18,
     .species = SPECIES_TUROTH,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 20,
-    .species = SPECIES_DRAGON_RED_FORM,
+    .lvl = 17,
+    .species = SPECIES_DRAGONLING_RED_FORM,
     .heldItem = ITEM_NONE
     }
 };
@@ -2035,13 +2033,13 @@ static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PVM_1[] =
 static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PVM_2[] = {
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 18,
     .species = SPECIES_HAND_CRAWLING_FORM,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 17,
     .species = SPECIES_DUST_DEVIL,
     .heldItem = ITEM_NONE
     }
@@ -2050,7 +2048,7 @@ static const struct TrainerMonItemDefaultMoves sParty_AsgarnianDungeon_PVM_2[] =
 static const struct TrainerMonItemDefaultMoves sParty_ROUTE6_GUARD_1[] = {
     {
     .iv = 0,
-    .lvl = 23,
+    .lvl = 19,
     .species = SPECIES_LABRADOR,
     .heldItem = ITEM_NONE
     }

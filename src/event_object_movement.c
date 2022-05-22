@@ -441,9 +441,11 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_34 0x1123
 
 //POKESCAPE
+/*
 #define OBJ_EVENT_PAL_SKELETON_1 0x1124
 #define OBJ_EVENT_PAL_SKELETON_2 0x1125
 #define OBJ_EVENT_PAL_SKELETON_3 0x1126
+*/
 #define OBJ_EVENT_PAL_DWARF_1 0x1127
 #define OBJ_EVENT_PAL_DWARF_2 0x1128
 #define OBJ_EVENT_PAL_DWARF_3 0x1129
@@ -469,19 +471,23 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_GOBLIN_2 0x113D
 #define OBJ_EVENT_PAL_GOBLIN_GENERALBENTNOZE 0x113E
 #define OBJ_EVENT_PAL_GOBLIN_GENERALWARTFACE 0x113F
+/*
 #define OBJ_EVENT_PAL_GOEBIE_1 0x1140
 #define OBJ_EVENT_PAL_GOEBIE_2 0x1141
 #define OBJ_EVENT_PAL_GOEBIE_3 0x1142
 #define OBJ_EVENT_PAL_GOEBIE_4 0x1143
 #define OBJ_EVENT_PAL_GOEBIE_5 0x1144
 #define OBJ_EVENT_PAL_GOEBIE_6 0x1145
+*/
 #define OBJ_EVENT_PAL_PIRATE_1 0x1146
 #define OBJ_EVENT_PAL_PIRATE_2 0x1147
 #define OBJ_EVENT_PAL_PIRATE_3 0x1148
+/*
 #define OBJ_EVENT_PAL_BARBARIAN_FEMALE_1 0x1149
 #define OBJ_EVENT_PAL_BARBARIAN_FEMALE_2 0x114A
 #define OBJ_EVENT_PAL_BARBARIAN_MALE_1 0x114B
 #define OBJ_EVENT_PAL_BARBARIAN_MALE_2 0x114C
+*/
 #define OBJ_EVENT_PAL_TZHAAR_GA_AL 0x114D
 #define OBJ_EVENT_PAL_TZHAAR_1 0x114E
 #define OBJ_EVENT_PAL_TZHAAR_2 0x114F
@@ -572,9 +578,11 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_STRAVEN 0x1201
 #define OBJ_EVENT_PAL_EXPLORER_JACK 0x1202
 #define OBJ_EVENT_PAL_FORTUNATO 0x1203
+/*
 #define OBJ_EVENT_PAL_SARADOMIN 0x1204
 #define OBJ_EVENT_PAL_ZAMORAK 0x1205
 #define OBJ_EVENT_PAL_GUTHIX 0x1206
+*/
 #define OBJ_EVENT_PAL_AVA 0x1207
 #define OBJ_EVENT_PAL_RELDO 0x1208
 #define OBJ_EVENT_PAL_MAX 0x1209
@@ -616,11 +624,13 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_RAT 0x122B
 #define OBJ_EVENT_PAL_RUNE_GUARDIAN 0x122C
 #define OBJ_EVENT_PAL_SHEEP 0x122D
-#define OBJ_EVENT_PAL_SARALING 0x122E
+//#define OBJ_EVENT_PAL_SARALING 0x122E
 #define OBJ_EVENT_PAL_SARAOWL 0x122F
 #define OBJ_EVENT_PAL_GUTHRAPTOR 0x1230
+/*
 #define OBJ_EVENT_PAL_SKELETAL_OX_M 0x1231
 #define OBJ_EVENT_PAL_SKELETAL_OX_F 0x1232
+*/
 #define OBJ_EVENT_PAL_TERRORBIRD_1 0x1233
 #define OBJ_EVENT_PAL_TERRORBIRD_2 0x1234
 #define OBJ_EVENT_PAL_TZTOK_JAD 0x1235
@@ -664,10 +674,10 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_STRYKEWYRM_FREEZY 0x1258
 #define OBJ_EVENT_PAL_STRYKEWYRM_LEAFY 0x1259
 #define OBJ_EVENT_PAL_GhostDisguise 0x125A
-
+/*
 #define OBJ_EVENT_PAL_CAT_BLACK			0x125B
 #define OBJ_EVENT_PAL_CAT_WHITE			0x125C
-#define OBJ_EVENT_PAL_CAT_BROWN			0x125D/*
+#define OBJ_EVENT_PAL_CAT_BROWN			0x125D
 #define OBJ_EVENT_PAL_CAT_HELL			0x125E
 #define OBJ_EVENT_PAL_CAT_BLACKWHITE	0x125F
 #define OBJ_EVENT_PAL_CAT_CLOCKWORK		0x1260
@@ -685,6 +695,21 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_DOG_CORGI			0x126C
 #define OBJ_EVENT_PAL_DOG_DALMATIAN		0x126D
 */
+
+#define OBJ_EVENT_PAL_SKELETAL			0x125B
+#define OBJ_EVENT_PAL_CATS			    0x125C
+#define OBJ_EVENT_PAL_DOGS			    0x125D
+#define OBJ_EVENT_PAL_BARBARIANS		0x125E
+#define OBJ_EVENT_PAL_GOEBIES			0x125F
+#define OBJ_EVENT_PAL_ZAMORAK			0x1260
+#define OBJ_EVENT_PAL_SARADOMIN			0x1261
+#define OBJ_EVENT_PAL_GUTHIX			0x1262
+/*
+#define OBJ_EVENT_PAL_GOBLINS			0x125B
+#define OBJ_EVENT_PAL_BARROWS			0x125B
+#define OBJ_EVENT_PAL_GUARDS			0x125B
+*/
+
 #define OBJ_EVENT_PAL_TAG_NONE 0x12FF
 
 #include "data/field_effects/field_effect_object_template_pointers.h"
@@ -732,9 +757,11 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette33, OBJ_EVENT_PAL_TAG_33},
     {gObjectEventPalette34, OBJ_EVENT_PAL_TAG_34},
 //POKESCAPE
+/*
     {gObjectEventPalette_Skeleton_1, OBJ_EVENT_PAL_SKELETON_1},
     {gObjectEventPalette_Skeleton_2, OBJ_EVENT_PAL_SKELETON_2},
     {gObjectEventPalette_Skeleton_3, OBJ_EVENT_PAL_SKELETON_3},
+    */
     {gObjectEventPalette_Dwarf_1, OBJ_EVENT_PAL_DWARF_1},
     {gObjectEventPalette_Dwarf_2, OBJ_EVENT_PAL_DWARF_2},
     {gObjectEventPalette_Dwarf_3, OBJ_EVENT_PAL_DWARF_3},
@@ -760,19 +787,23 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Goblin_2, OBJ_EVENT_PAL_GOBLIN_2},
     {gObjectEventPalette_Goblin_GeneralBentnoze, OBJ_EVENT_PAL_GOBLIN_GENERALBENTNOZE},
     {gObjectEventPalette_Goblin_GeneralWartface, OBJ_EVENT_PAL_GOBLIN_GENERALWARTFACE},
+    /*
     {gObjectEventPalette_Goebie_1, OBJ_EVENT_PAL_GOEBIE_1},
     {gObjectEventPalette_Goebie_2, OBJ_EVENT_PAL_GOEBIE_2},
     {gObjectEventPalette_Goebie_3, OBJ_EVENT_PAL_GOEBIE_3},
     {gObjectEventPalette_Goebie_4, OBJ_EVENT_PAL_GOEBIE_4},
     {gObjectEventPalette_Goebie_5, OBJ_EVENT_PAL_GOEBIE_5},
     {gObjectEventPalette_Goebie_6, OBJ_EVENT_PAL_GOEBIE_6},
+    */
     {gObjectEventPalette_Pirate_1, OBJ_EVENT_PAL_PIRATE_1},
     {gObjectEventPalette_Pirate_2, OBJ_EVENT_PAL_PIRATE_2},
     {gObjectEventPalette_Pirate_3, OBJ_EVENT_PAL_PIRATE_3},
+    /*
     {gObjectEventPalette_Barbarian_Female_1, OBJ_EVENT_PAL_BARBARIAN_FEMALE_1},
     {gObjectEventPalette_Barbarian_Female_2, OBJ_EVENT_PAL_BARBARIAN_FEMALE_2},
     {gObjectEventPalette_Barbarian_Male_1, OBJ_EVENT_PAL_BARBARIAN_MALE_1},
     {gObjectEventPalette_Barbarian_Male_2, OBJ_EVENT_PAL_BARBARIAN_MALE_2},
+    */
     {gObjectEventPalette_Tzhaar_Ga_al, OBJ_EVENT_PAL_TZHAAR_GA_AL},
     {gObjectEventPalette_Tzhaar_1, OBJ_EVENT_PAL_TZHAAR_1},
     {gObjectEventPalette_Tzhaar_2, OBJ_EVENT_PAL_TZHAAR_2},
@@ -863,9 +894,11 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Straven, OBJ_EVENT_PAL_STRAVEN},
     {gObjectEventPalette_Explorer_Jack, OBJ_EVENT_PAL_EXPLORER_JACK},
     {gObjectEventPalette_Fortunato, OBJ_EVENT_PAL_FORTUNATO},
+    /*
     {gObjectEventPalette_Saradomin, OBJ_EVENT_PAL_SARADOMIN},
     {gObjectEventPalette_Zamorak, OBJ_EVENT_PAL_ZAMORAK},
     {gObjectEventPalette_Guthix, OBJ_EVENT_PAL_GUTHIX},
+    */
     {gObjectEventPalette_Ava, OBJ_EVENT_PAL_AVA},
     {gObjectEventPalette_Reldo, OBJ_EVENT_PAL_RELDO},
     {gObjectEventPalette_Max, OBJ_EVENT_PAL_MAX},
@@ -907,11 +940,13 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Rat, OBJ_EVENT_PAL_RAT},
     {gObjectEventPalette_Rune_Guardian, OBJ_EVENT_PAL_RUNE_GUARDIAN},
     {gObjectEventPalette_Sheep, OBJ_EVENT_PAL_SHEEP},
-    {gObjectEventPalette_Saraling, OBJ_EVENT_PAL_SARALING},
+    //{gObjectEventPalette_Saraling, OBJ_EVENT_PAL_SARALING},
     {gObjectEventPalette_Saraowl, OBJ_EVENT_PAL_SARAOWL},
     {gObjectEventPalette_Guthraptor, OBJ_EVENT_PAL_GUTHRAPTOR},
+    /*
     {gObjectEventPalette_Skeletal_Ox_M, OBJ_EVENT_PAL_SKELETAL_OX_M},
     {gObjectEventPalette_Skeletal_Ox_F, OBJ_EVENT_PAL_SKELETAL_OX_F},
+    */
     {gObjectEventPalette_Terrorbird_1, OBJ_EVENT_PAL_TERRORBIRD_1},
     {gObjectEventPalette_Terrorbird_2, OBJ_EVENT_PAL_TERRORBIRD_2},
     {gObjectEventPalette_TzTok_Jad, OBJ_EVENT_PAL_TZTOK_JAD},
@@ -950,10 +985,10 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Juna, OBJ_EVENT_PAL_JUNA},	
     {gObjectEventPalette_Abyss_Portal, OBJ_EVENT_PAL_ABYSS_PORTAL},	
     {gObjectEventPalette_Chair, OBJ_EVENT_PAL_CHAIR},	
-
+/*
     {gObjectEventPalette_Cat_Black, OBJ_EVENT_PAL_CAT_BLACK},
     {gObjectEventPalette_Cat_White, OBJ_EVENT_PAL_CAT_WHITE},
-    {gObjectEventPalette_Cat_Brown, OBJ_EVENT_PAL_CAT_BROWN},/*
+    {gObjectEventPalette_Cat_Brown, OBJ_EVENT_PAL_CAT_BROWN},
     {gObjectEventPalette_Cat_Hell, OBJ_EVENT_PAL_CAT_HELL},
     {gObjectEventPalette_Cat_BlackWhite, OBJ_EVENT_PAL_CAT_BLACKWHITE},
     {gObjectEventPalette_Cat_Clockwork, OBJ_EVENT_PAL_CAT_CLOCKWORK},
@@ -976,8 +1011,23 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
 	{gObjectEventPalette_OrePal2, OBJ_EVENT_PAL_ORE_PAL2},
 	{gObjectEventPalette_CabbageCrop, OBJ_EVENT_PAL_CABBAGE_CROP},
     {gObjectEventPalette_Protaganist, OBJ_EVENT_PAL_PROTAGANIST},
-
     {gObjectEventPalette_GhostDisguise, OBJ_EVENT_PAL_GhostDisguise},	
+
+
+    {gObjectEventPalette_SKELETAL, OBJ_EVENT_PAL_SKELETAL},
+    {gObjectEventPalette_CATS, OBJ_EVENT_PAL_CATS},
+    {gObjectEventPalette_DOGS, OBJ_EVENT_PAL_DOGS},
+    {gObjectEventPalette_BARBARIANS, OBJ_EVENT_PAL_BARBARIANS},
+    {gObjectEventPalette_GOEBIES, OBJ_EVENT_PAL_GOEBIES},
+    {gObjectEventPalette_ZAMORAK, OBJ_EVENT_PAL_ZAMORAK},
+    {gObjectEventPalette_SARADOMIN, OBJ_EVENT_PAL_SARADOMIN},
+    {gObjectEventPalette_GUTHIX, OBJ_EVENT_PAL_GUTHIX},
+    
+    /*
+    {gObjectEventPalette_GOBLINS, OBJ_EVENT_PAL_GOBLINS},
+    {gObjectEventPalette_BARROWS, OBJ_EVENT_PAL_BARROWS},
+    {gObjectEventPalette_GUARDS, OBJ_EVENT_PAL_GUARDS},
+    */
 
     {NULL,                  0x0000},
 };

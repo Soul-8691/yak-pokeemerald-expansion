@@ -13,6 +13,7 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = NULL},
         .scaling = FALSE, 
     },
+
     [TRAINER_MAGGIE] =
     {
         .partyFlags = 0,
@@ -20,7 +21,7 @@ const struct Trainer gTrainers[] = {
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_PKER,
         .trainerPic = TRAINER_PIC_maggie,
         .trainerName = _("MAGGIE"),
-        .items = {ITEM_POTION, ITEM_POTION, ITEM_NONE, ITEM_NONE},
+        .items = {ITEM_BREAD, ITEM_BREAD, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Maggie),
@@ -193,20 +194,20 @@ const struct Trainer gTrainers[] = {
         .party = {.ItemDefaultMoves = sParty_Mugger_Route4},
         .scaling = FALSE,
     },
-    [TRAINER_FARMER_ROUTE4] = {
+    [TRAINER_FARMER_ROUTE4] =
+    {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_FARMER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
         .trainerPic = TRAINER_PIC_farmer,
         .trainerName = _("LEEROY"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Farmer_Route4),
         .party = {.ItemDefaultMoves = sParty_Farmer_Route4},
-        .scaling = FALSE,
-
     },
+
     [TRAINER_SCAMMER_ROUTE4] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_SCAMMER,
@@ -222,32 +223,32 @@ const struct Trainer gTrainers[] = {
 
     },
     //route 6
-    [TRAINER_MUGGER_ROUTE6] = {
+    [TRAINER_MUGGER_ROUTE6] =
+    {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_MUGGER,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
         .trainerPic = TRAINER_PIC_mugger,
         .trainerName = _("LEO"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Mugger_Route6),
         .party = {.ItemDefaultMoves = sParty_Mugger_Route6},
-        .scaling = FALSE,
     },
-    //route 12
-    [TRAINER_GOBLIN_4_ROUTE12] = {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+
+    [TRAINER_GOBLIN_4_ROUTE12] =
+    {
+        .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_GOBLIN,
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
         .trainerPic = TRAINER_PIC_goblin,
         .trainerName = _("WORMTONGUE"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Goblin4),
-        .party = {.ItemDefaultMoves = sParty_Goblin4},
-        .scaling = FALSE,
+        .party = {.NoItemDefaultMoves = sParty_Goblin4},
     },
 
     [TRAINER_GOBLIN_5_ROUTE12] = {
@@ -363,21 +364,20 @@ const struct Trainer gTrainers[] = {
         .scaling = FALSE,
     },
 
-    [TRAINER_DUKE] = {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+    [TRAINER_DUKE] =
+    {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
         .trainerClass = TRAINER_CLASS_LEADER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_duke_horacio,
         .trainerName = _("HORACIO"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {ITEM_BREAD, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_Duke),
-        .party = {.ItemDefaultMoves = sParty_Duke},
-        .scaling = FALSE,
-
+        .party = {.NoItemCustomMoves = sParty_Duke},
     },
-    // lumbridge swamp
+
      [TRAINER_RSN_LUM_SWAMP] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_GOBLIN,
@@ -1010,33 +1010,30 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_ROUTE3_TRAINER_1] =
     {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_SKILLER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
         .trainerPic = TRAINER_PIC_skiller,
         .trainerName = _("IpwnSkills"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_ROUTE3_TRAINER_1),
-        .party = {.ItemDefaultMoves = sParty_ROUTE3_TRAINER_1},
-        .scaling = FALSE,
+        .party = {.NoItemDefaultMoves = sParty_ROUTE3_TRAINER_1},
     },
 
-    //ROUTE 5
     [TRAINER_ROUTE5_CAPTAINTOCK] =
     {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_PIRATE,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
         .trainerPic = TRAINER_PIC_pirate,
         .trainerName = _("CPT. TOCK"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_ROUTE5_CAPTIANTOCK),
-        .party = {.ItemDefaultMoves = sParty_ROUTE5_CAPTIANTOCK},
-        .scaling = FALSE,
+        .party = {.NoItemDefaultMoves = sParty_ROUTE5_CAPTIANTOCK},
     },
 
     [TRAINER_ROUTE5_WOODCUTTER] =
@@ -1045,43 +1042,40 @@ const struct Trainer gTrainers[] = {
         .trainerClass = TRAINER_CLASS_WOODCUTTER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
         .trainerPic = TRAINER_PIC_woodcutter,
-        .trainerName = _("CUPHOLDER"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .trainerName = _("CHOPSALOT"),
+        .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_ROUTE5_WOODCUTTER),
         .party = {.ItemDefaultMoves = sParty_ROUTE5_WOODCUTTER},
-        .scaling = FALSE,
     },
 
     [TRAINER_ROUTE10_MONK] =
     {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_MONK,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
         .trainerPic = TRAINER_PIC_monk,
         .trainerName = _("CUPHOLDER"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_ROUTE10_MONK),
-        .party = {.ItemDefaultMoves = sParty_ROUTE10_MONK},
-        .scaling = FALSE,
+        .party = {.NoItemDefaultMoves = sParty_ROUTE10_MONK},
     },
 
     [TRAINER_ROUTE10_GOBLIN_1] =
     {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_GOBLIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
         .trainerPic = TRAINER_PIC_goblin,
-        .trainerName = _("CUPHOLDER"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .trainerName = _("FEETSTOMPER"),
+        .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_ROUTE10_GOBLIN_1),
-        .party = {.ItemDefaultMoves = sParty_ROUTE10_GOBLIN_1},
-        .scaling = FALSE,
+        .party = {.NoItemDefaultMoves = sParty_ROUTE10_GOBLIN_1},
     },
 
     [TRAINER_ROUTE10_GOBLIN_2] =
@@ -1090,15 +1084,14 @@ const struct Trainer gTrainers[] = {
         .trainerClass = TRAINER_CLASS_GOBLIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
         .trainerPic = TRAINER_PIC_goblin,
-        .trainerName = _("CUPHOLDER"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .trainerName = _("WINDBURSTER"),
+        .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_ROUTE10_GOBLIN_2),
         .party = {.ItemDefaultMoves = sParty_ROUTE10_GOBLIN_2},
-        .scaling = FALSE,
     },
-    //ROUTE 8
+
     [TRAINER_ROUTE8_THEIF] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
@@ -1403,32 +1396,30 @@ const struct Trainer gTrainers[] = {
     
     [TRAINER_ROUTE11_QUESTER] =
     {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_QUESTER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
         .trainerPic = TRAINER_PIC_quester,
         .trainerName = _("CUPHOLDER"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_ROUTE11_QUESTER),
-        .party = {.ItemDefaultMoves = sParty_ROUTE11_QUESTER},
-        .scaling = FALSE,
+        .party = {.NoItemDefaultMoves = sParty_ROUTE11_QUESTER},
     },
 
     [TRAINER_ROUTE11_PIRATE] =
     {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_PIRATE,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
         .trainerPic = TRAINER_PIC_pirate,
         .trainerName = _("CUPHOLDER"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_ROUTE11_PIRATE),
-        .party = {.ItemDefaultMoves = sParty_ROUTE11_PIRATE},
-        .scaling = FALSE,
+        .party = {.NoItemDefaultMoves = sParty_ROUTE11_PIRATE},
     },
 
     [TRAINER_ROUTE11_SAILOR] =
@@ -1438,45 +1429,41 @@ const struct Trainer gTrainers[] = {
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
         .trainerPic = TRAINER_PIC_sailor,
         .trainerName = _("CUPHOLDER"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_ROUTE11_SAILOR),
         .party = {.ItemDefaultMoves = sParty_ROUTE11_SAILOR},
-        .scaling = FALSE,
     },
 
     [TRAINER_ROUTE11_PvMer] =
     {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_SLAYER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
         .trainerPic = TRAINER_PIC_slayer,
         .trainerName = _("CUPHOLDER"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_ROUTE11_PvMer),
-        .party = {.ItemDefaultMoves = sParty_ROUTE11_PvMer},
-        .scaling = FALSE,
+        .party = {.NoItemDefaultMoves = sParty_ROUTE11_PvMer},
     },
 
     [TRAINER_ROUTE11_GRACEFUL] =
     {
-        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_AGILE,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
         .trainerPic = TRAINER_PIC_graceful,
-        .trainerName = _("CUPHOLDER"),
-        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .trainerName = _("ERKEE"),
+        .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_ROUTE11_GRACEFUL),
-        .party = {.ItemDefaultMoves = sParty_ROUTE11_GRACEFUL},
-        .scaling = FALSE,
+        .party = {.NoItemDefaultMoves = sParty_ROUTE11_GRACEFUL},
     },
 
-//FALADOR
     [TRAINER_FALADOR_MODTIMBO] = {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_JMOD,

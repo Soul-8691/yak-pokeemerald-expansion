@@ -4555,7 +4555,7 @@ const struct SpriteFrameImage gObjectEventPicTable_Cat_Hell[] = {
     overworld_frame(gObjectEventPic_Cat_Hell, 2, 2, 7),
     overworld_frame(gObjectEventPic_Cat_Hell, 2, 2, 8),
 };
-/*
+
 const struct SpriteFrameImage gObjectEventPicTable_Cat_BlackWhite[] = {
     overworld_frame(gObjectEventPic_Cat_BlackWhite, 2, 2, 0),
     overworld_frame(gObjectEventPic_Cat_BlackWhite, 2, 2, 1),
@@ -4602,8 +4602,8 @@ const struct SpriteFrameImage gObjectEventPicTable_Cat_Purple[] = {
     overworld_frame(gObjectEventPic_Cat_Purple, 2, 2, 6),
     overworld_frame(gObjectEventPic_Cat_Purple, 2, 2, 7),
     overworld_frame(gObjectEventPic_Cat_Purple, 2, 2, 8),
-};*/
-/*
+};
+
 const struct SpriteFrameImage gObjectEventPicTable_Saradomin_Owl[] = {
     overworld_frame(gObjectEventPic_Saradomin_Owl, 4, 4, 0),
     overworld_frame(gObjectEventPic_Saradomin_Owl, 4, 4, 1),
@@ -4699,7 +4699,7 @@ const struct SpriteFrameImage gObjectEventPicTable_Dog_Dalmatian[] = {
     overworld_frame(gObjectEventPic_Dog_Dalmatian, 4, 4, 7),
     overworld_frame(gObjectEventPic_Dog_Dalmatian, 4, 4, 8),
 };
-*/
+
 const struct SpriteFrameImage gObjectEventPicTable_Archaeologist[] = {
     overworld_frame(gObjectEventPic_Archaeologist, 2, 4, 0),
     overworld_frame(gObjectEventPic_Archaeologist, 2, 4, 1),

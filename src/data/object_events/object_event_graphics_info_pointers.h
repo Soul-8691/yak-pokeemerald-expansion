@@ -464,18 +464,18 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Sleep;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juna;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Abyss_Portal;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Chair;
-
+//unsure if need or not need these
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_Black;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_White;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_Brown;/*
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_Brown;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_Hell;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_BlackWhite;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_Clockwork;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_BrownWhite;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_Purple;*/
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cat_Purple;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Archaeologist;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Diviner;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Durial321;/*
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Durial321;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Saradomin_Owl;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zamorak_Hawk;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Guthix_Raptor;
@@ -484,7 +484,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Labrador;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Guard;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Corgi;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Dalmatian;
-*/
+
 //ORES
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CopperOre;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TinOre;
@@ -961,15 +961,15 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
 
     [OBJ_EVENT_GFX_CAT_BLACK] =                    &gObjectEventGraphicsInfo_Cat_Black,
     [OBJ_EVENT_GFX_CAT_WHITE] =                    &gObjectEventGraphicsInfo_Cat_White,
-    [OBJ_EVENT_GFX_CAT_BROWN] =                    &gObjectEventGraphicsInfo_Cat_Brown,/*
+    [OBJ_EVENT_GFX_CAT_BROWN] =                    &gObjectEventGraphicsInfo_Cat_Brown,
     [OBJ_EVENT_GFX_CAT_HELL] =                    &gObjectEventGraphicsInfo_Cat_Hell,
     [OBJ_EVENT_GFX_CAT_BLACKWHITE] =                    &gObjectEventGraphicsInfo_Cat_BlackWhite,
     [OBJ_EVENT_GFX_CAT_CLOCKWORK] =                    &gObjectEventGraphicsInfo_Cat_Clockwork,
     [OBJ_EVENT_GFX_CAT_BROWNWHITE] =                    &gObjectEventGraphicsInfo_Cat_BrownWhite,
-    [OBJ_EVENT_GFX_CAT_PURPLE] =                    &gObjectEventGraphicsInfo_Cat_Purple,*/
+    [OBJ_EVENT_GFX_CAT_PURPLE] =                    &gObjectEventGraphicsInfo_Cat_Purple,
     [OBJ_EVENT_GFX_ARCHAEOLOGIST] =                    &gObjectEventGraphicsInfo_Archaeologist,
     [OBJ_EVENT_GFX_DIVINER] =                    &gObjectEventGraphicsInfo_Diviner,
-    [OBJ_EVENT_GFX_DURIAL321] =                    &gObjectEventGraphicsInfo_Durial321,/*
+    [OBJ_EVENT_GFX_DURIAL321] =                    &gObjectEventGraphicsInfo_Durial321,
     [OBJ_EVENT_GFX_SARADOMIN_OWL] =                    &gObjectEventGraphicsInfo_Saradomin_Owl,
     [OBJ_EVENT_GFX_ZAMORAK_HAWK] =                    &gObjectEventGraphicsInfo_Zamorak_Hawk,
     [OBJ_EVENT_GFX_GUTHIX_RAPTOR] =                    &gObjectEventGraphicsInfo_Guthix_Raptor,
@@ -978,7 +978,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DOG_GUARD] =                    &gObjectEventGraphicsInfo_Dog_Guard,
     [OBJ_EVENT_GFX_DOG_CORGI] =                    &gObjectEventGraphicsInfo_Dog_Corgi,
     [OBJ_EVENT_GFX_DOG_DALMATIAN] =                    &gObjectEventGraphicsInfo_Dog_Dalmatian,
-*/
+
 
 //ORES 
 	[OBJ_EVENT_GFX_COPPER_ORE] =          		    &gObjectEventGraphicsInfo_CopperOre,

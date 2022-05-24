@@ -1554,18 +1554,17 @@ static const u8 sOldSeaMapDesc[] = _(
 //POKESCAPE
 static const u8 sAirRuneDesc[] = _(
     "Makes certain\n"
-    "species of POKéMON\n"
+    "species of MONSTERs\n"
     "evolve.");
 
 static const u8 sEvoItemDesc[] = _(
     "Makes certain\n"
-    "species of POKéMON\n"
+    "species of MONSTERs\n"
     "evolve.");
-	
 	
 static const u8 sEvoLegendaryItemDesc[] = _(
     "Makes Legendary\n"
-    "species of POKéMON\n"
+    "species of MONSTERs\n"
     "evolve.");	
 	
 static const u8 sRedScaleDesc[] = _(
@@ -1584,9 +1583,10 @@ static const u8 sBlackScaleDesc[] = _(
     "A scale obtained\n"
 	"from a Black Dragon.");		
 	
-	
 static const u8 sFragmentOfJasDesc[] = _(
-    "MEGA EVOLUTION");	
+    "Allows specific\n"
+    "MONSTERS to\n"
+    "Mega Evolve.");
 
 
 //pokescape pouches
@@ -1707,33 +1707,33 @@ static const u8 sSpecialCakeDesc[] = _(
 
 //ERNEST QUEST---
 static const u8 sFishFoodDesc[] = _(
-    "A Cupholder\n"
-    "\n"
+    "Could use some\n"
+    "poison.\n"
     "(Ernest Quest)");
 
 static const u8 sFishFoodPoisonedDesc[] = _(
-    "A Cupholder\n"
-    "\n"
+    "Use with a fountain\n"
+    "you monster.\n"
     "(Ernest Quest)");
 
 static const u8 sOilCanDesc[] = _(
-    "A Cupholder\n"
-    "\n"
+    "Give this to\n"
+    "Prof. Oddenstein.\n"
     "(Ernest Quest)");
 
 static const u8 sPressureGaugeDesc[] = _(
-    "A Cupholder\n"
-    "\n"
+    "Give this to\n"
+    "Prof. Oddenstein.\n"
     "(Ernest Quest)");
 
 static const u8 sRubberTubeDesc[] = _(
-    "A Cupholder\n"
-    "\n"
+    "Give this to\n"
+    "Prof. Oddenstein.\n"
     "(Ernest Quest)");
 
 static const u8 sMagicalCageDesc[] = _(
-    "A Cupholder\n"
-    "\n"
+    "Useful to keep\n"
+    "dead things in.\n"
     "(Ernest Quest)");
 
 
@@ -2137,10 +2137,55 @@ static const u8 sNewcomerMapDesc[] = _(
     "A map of Pokescape.\n"
     "\n"
     "(DO NOT USE)");
+//KEY ITEMS  HMS
+static const u8 sPickaxeDesc[] = _(
+    "Used to mine rocks.\n"
+    "\n"
+    "");
+
+static const u8 sBoatDesc[] = _(
+    "Used to sail the\n"
+    "oceans of Gielinor.\n"
+    "");
+
+static const u8 sDragonAxeDesc[] = _(
+    "Used to cut down.\n"
+    "Trees.\n"
+    "");
+
+static const u8 sBattleaxeDesc[] = _(
+    "Used to move\n"
+    "boulders.\n"
+    "");
+
+static const u8 sDivingGearDesc[] = _(
+    "Used to dive under\n"
+    "the ocean.\n"
+    "");
+
+static const u8 sSpadeDesc[] = _(
+    "Used to escape\n"
+    "dungeons.\n"
+    "");
+
+static const u8 sTeleportsDesc[] = _(
+    "Used to teleport\n"
+    "around Gielinor.\n"
+    "");
+
+static const u8 sGrappleDesc[] = _(
+    "Used to climb\n"
+    "waterfalls and\n"
+    "cliffs.");
 
 static const u8 sLanternDesc[] = _(
     "Used in caves and\n"
     "dark places.\n"
+    "");
+
+static const u8 sTerrorbirdDesc[] = _(
+    "Summon a Terrorbird\n"
+    "to ride.\n"
     "");
 
 static const u8 sSmallNetDesc[] = _(

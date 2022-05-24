@@ -39,7 +39,7 @@ script GYMLEADER_DUKE{
     namebox("Duke Horacio")
     msgbox(format("Also have this, it is my favourite move."))
     hidenamebox
-    giveitem (ITEM_TM08, 1)
+    giveitem (ITEM_TM36, 1)
     compare(VAR_RESULT, FALSE)
 	goto_if_eq(Common_EventScript_ShowBagIsFull)
     namebox("Duke Horacio")

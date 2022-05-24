@@ -55,7 +55,7 @@ script NPC_DUCK
 {
 	lock
 	faceplayer
-    namebox ("Duck")
+    namebox ("DUCK")
     playmoncry(SPECIES_PSYDUCK, 0)
 	msgbox(format("Quack!"))
     waitmoncry
@@ -68,7 +68,7 @@ script NPC_RAT
 {
 	lock
 	faceplayer
-    namebox ("Rat")
+    namebox ("RAT")
     playmoncry(SPECIES_RATTATA, 0)
 	msgbox(format("SKREEK!"))
     waitmoncry
@@ -81,7 +81,7 @@ script NPC_SHEEP
 {
 	lock
 	faceplayer
-    namebox ("Sheep")
+    namebox ("SHEEP")
     playmoncry(SPECIES_MAREEP, 0)
 	msgbox(format("Baaa!"))
     waitmoncry
@@ -94,9 +94,22 @@ script NPC_COW
 {
 	lock
 	faceplayer
-    namebox ("Cow")
+    namebox ("COW")
     playmoncry(SPECIES_MILTANK, 0)
 	msgbox(format("Mooo!"))
+    waitmoncry
+    hidenamebox
+	release
+	end
+}
+
+script NPC_CAT
+{
+	lock
+	faceplayer
+    namebox ("CAT")
+    playmoncry(SPECIES_MEOWTH, 0)
+	msgbox(format("Meeeooww…"))
     waitmoncry
     hidenamebox
 	release

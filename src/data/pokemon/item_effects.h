@@ -517,6 +517,10 @@ const u8 gItemEffect_Bread[7] = {
     [4] = ITEM4_HEAL_HP,
     [6] = 20,
 };
+const u8 gItemEffect_Cake[7] = {
+    [4] = ITEM4_HEAL_HP,
+    [6] = 50,
+};
 const u8 gItemEffect_ChocolateCake[7] = {
     [3] = ITEM3_STATUS_ALL,
     [4] = ITEM4_HEAL_HP,
@@ -744,6 +748,7 @@ const u8 *const gItemEffectTable[] =
 	[ITEM_TEAR_OF_GUTHIX - ITEM_POTION] = gItemEffect_TearOfGuthix,
     [ITEM_BLUEBERRY_SPECIAL - ITEM_POTION] = gItemEffect_BlueberrySpecial,
     [ITEM_BREAD - ITEM_POTION] = gItemEffect_Bread,
+    [ITEM_CAKE - ITEM_POTION] = gItemEffect_Cake,
     [ITEM_CHOCOLATE_CAKE- ITEM_POTION] = gItemEffect_ChocolateCake,
     [ITEM_CHOCOLATE_SUNDAY- ITEM_POTION] = gItemEffect_ChocolateSunday,
     [ITEM_LAMP_ATT- ITEM_POTION] = gItemEffect_AttackLamp,
@@ -755,6 +760,7 @@ const u8 *const gItemEffectTable[] =
     [ITEM_DRUNK_DRAGON- ITEM_POTION] = gItemEffect_DrunkDragon,
     [ITEM_FRUIT_BLAST- ITEM_POTION] = gItemEffect_FruitBlast,
     [ITEM_PINEAPPLE_PUNCH- ITEM_POTION] = gItemEffect_PineapplePunch,
+    [ITEM_POTION_HP - ITEM_POTION] = gItemEffect_XAccuracy,
     [ITEM_POTION_ATT- ITEM_POTION] = gItemEffect_AttackPotion,
     [ITEM_POTION_DEF- ITEM_POTION] = gItemEffect_DefencePotion,
     [ITEM_POTION_SPATT- ITEM_POTION] = gItemEffect_MagicPotion,

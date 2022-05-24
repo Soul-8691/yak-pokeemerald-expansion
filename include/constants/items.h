@@ -755,8 +755,10 @@
 #define ITEM_SANTA_HAT              630
 #define ITEM_PARTY_HAT              631
 
+#define ITEM_YAK_POUCH              632
 
-#define ITEMS_COUNT 632
+
+#define ITEMS_COUNT 633
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 #define FIRST_BERRY_INDEX             ITEM_CHERI_BERRY

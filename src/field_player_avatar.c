@@ -1731,6 +1731,7 @@ static void Task_WaitStopSurfing(u8 taskId)
 
 static bool8 (*const sFishingStateFuncs[])(struct Task *) =
 {
+     // VANILLA FISHING
     Fishing_Init,
     Fishing_GetRodOut,
     Fishing_WaitBeforeDots, 
@@ -1747,6 +1748,7 @@ static bool8 (*const sFishingStateFuncs[])(struct Task *) =
     Fishing_NoMon,          // FISHING_SHOW_RESULT
     Fishing_PutRodAway,
     Fishing_EndNoMon,
+    
 };
 
 void StartFishing(u8 rod)
@@ -1824,7 +1826,8 @@ static bool8 Fishing_InitDots(struct Task *task)
         task->tDotsRequired = 10;
     return TRUE;
 }
-
+/*
+//VANILLA SHOWDOTS
 static bool8 Fishing_ShowDots(struct Task *task)
 {
     const u8 dot[] = _("·");
@@ -1858,6 +1861,32 @@ static bool8 Fishing_ShowDots(struct Task *task)
         }
         return FALSE;
     }
+}
+*/
+
+static bool8 Fishing_ShowDots(struct Task *task)
+{
+    const u8 dot[] = _("·");
+
+    AlignFishingAnimationFrames();
+    task->tFrameCounter++;
+        if (task->tFrameCounter >= 20)
+        {
+            task->tFrameCounter = 0;
+            if (task->tNumDots >= task->tDotsRequired)
+            {
+                task->tStep++;
+                if (task->tRoundsPlayed != 0)
+                    task->tStep++;
+                task->tRoundsPlayed++;
+            }
+            else
+            {
+                AddTextPrinterParameterized(0, 1, dot, task->tNumDots * 8, 1, 0, NULL);
+                task->tNumDots++;
+            }
+        }
+        return FALSE;
 }
 
 static bool8 Fishing_CheckForBite(struct Task *task)
@@ -1897,13 +1926,21 @@ static bool8 Fishing_CheckForBite(struct Task *task)
     }
     return TRUE;
 }
-
+/*
+//VANILLA GOTBITE
 static bool8 Fishing_GotBite(struct Task *task)
 {
     AlignFishingAnimationFrames();
     AddTextPrinterParameterized(0, 1, gText_OhABite, 0, 17, 0, NULL);
     task->tStep++;
     task->tFrameCounter = 0;
+    return FALSE;
+}
+*/
+
+static bool8 Fishing_GotBite(struct Task *task)
+{
+    task->tStep += 3;
     return FALSE;
 }
 

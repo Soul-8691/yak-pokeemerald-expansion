@@ -478,6 +478,7 @@ const u32 *const gItemIconTable[][2] =
 	[ITEM_BIG_NET] = {gItemIcon_LargeNet, gItemIconPalette_LargeNet},
 	[ITEM_DRAGON_NET] = {gItemIcon_DragonNet, gItemIconPalette_DragonNet},
 	[ITEM_TERRORBIRD_POUCH] = {gItemIcon_TerrorbirdPouch, gItemIconPalette_TerrorbirdPouch},
+    [ITEM_YAK_POUCH] = {gItemIcon_TerrorbirdPouch, gItemIconPalette_TerrorbirdPouch},
 	[ITEM_MAP] = {gItemIcon_Map, gItemIconPalette_Map},
 	//pokescape crafting items
 	//pouches

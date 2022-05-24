@@ -85,6 +85,18 @@ NPC_COW::
 	end
 
 
+NPC_CAT::
+	lock
+	faceplayer
+	namebox NPC_CAT_Text_0
+	playmoncry SPECIES_MEOWTH, 0
+	msgbox NPC_CAT_Text_1
+	waitmoncry
+	hidenamebox
+	release
+	end
+
+
 SIGN_ROUTE1_1::
 	lock
 	msgbox SIGN_ROUTE1_1_Text_0
@@ -689,28 +701,34 @@ BATTLE_AREA_TRAINER_3::
 
 
 NPC_DUCK_Text_0:
-	.string "Duck$"
+	.string "DUCK$"
 
 NPC_DUCK_Text_1:
 	.string "Quack!$"
 
 NPC_RAT_Text_0:
-	.string "Rat$"
+	.string "RAT$"
 
 NPC_RAT_Text_1:
 	.string "SKREEK!$"
 
 NPC_SHEEP_Text_0:
-	.string "Sheep$"
+	.string "SHEEP$"
 
 NPC_SHEEP_Text_1:
 	.string "Baaa!$"
 
 NPC_COW_Text_0:
-	.string "Cow$"
+	.string "COW$"
 
 NPC_COW_Text_1:
 	.string "Mooo!$"
+
+NPC_CAT_Text_0:
+	.string "CAT$"
+
+NPC_CAT_Text_1:
+	.string "Meeeooww…$"
 
 SIGN_ROUTE1_1_Text_0:
 	.string "Fred's Farm.$"

@@ -32,7 +32,7 @@ GYMLEADER_DUKE_BATTLEWON::
 	namebox GYMLEADER_DUKE_Text_0
 	msgbox GYMLEADER_DUKE_BATTLEWON_Text_2
 	hidenamebox
-	giveitem ITEM_TM08, 1
+	giveitem ITEM_TM36, 1
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	namebox GYMLEADER_DUKE_Text_0

@@ -130,7 +130,11 @@ GnomeBoi_Kevin_6:
 
 GnomeBoi_Kevin_7:
 	msgbox GnomeBoi_Kevin_Text_5
+	giveitem ITEM_SMALL_NET
+	giveitem ITEM_BIG_NET
+	giveitem ITEM_DRAGON_NET
 	giveitem ITEM_TERRORBIRD_POUCH
+	giveitem ITEM_YAK_POUCH
 	giveitem ITEM_PICKAXE
 	giveitem ITEM_BOAT
 	giveitem ITEM_AXE
@@ -140,10 +144,8 @@ GnomeBoi_Kevin_7:
 	giveitem ITEM_FLYITEM
 	giveitem ITEM_LANTERN
 	giveitem ITEM_WATERFALLITEM
-	giveitem ITEM_SMALL_NET
-	giveitem ITEM_BIG_NET
-	giveitem ITEM_DRAGON_NET
 	giveitem ITEM_MAP
+	giveitem ITEM_ITEMFINDER
 	release
 	goto GnomeBoi_Kevin_1
 
@@ -155,7 +157,7 @@ GnomeBoi_Kevin_8:
 
 GnomeBoi_Kevin_9:
 	msgbox GnomeBoi_Kevin_Text_7
-	additem ITEM_PULSE_CORE, 1
+	additem ITEM_PULSE_CORE, 6
 	additem ITEM_PURPLE_SWEETS, 100
 	additem ITEM_FRAGMENT_OF_JAS, 5
 	release
@@ -233,7 +235,9 @@ Cheat_Menu_Shop_Evolution:
     .align 2
 Cheat_Menu_Shop_Medicine:
     
+    
     .2byte ITEM_BREAD 
+    .2byte ITEM_CAKE 
 	.2byte ITEM_CHOCOLATE_CAKE 
 
 	.2byte ITEM_BLUEBERRY_SPECIAL 
@@ -241,12 +245,12 @@ Cheat_Menu_Shop_Medicine:
     .2byte ITEM_DRUNK_DRAGON 
     .2byte ITEM_FRUIT_BLAST 
     .2byte ITEM_PINEAPPLE_PUNCH 
-//    .2byte ITEM_WIZARDS_BLIZZARD
+    .2byte ITEM_WIZARDS_BLIZZARD
 
+    .2byte ITEM_POTION_HP 
     .2byte ITEM_POTION_ATT 
     .2byte ITEM_POTION_DEF 
-    .2byte ITEM_POTION_HP 
-    .2byte ITEM_POTION_SPATT 
+    .2byte ITEM_POTION_SPATT
     .2byte ITEM_POTION_SPDEF
     .2byte ITEM_POTION_SPEED
 
@@ -273,6 +277,7 @@ Cheat_Menu_Shop_Medicine:
     .align 2
 Cheat_Menu_Shop_Misc:
 
+    .2byte ITEM_PULSE_CORE
     .2byte ITEM_10TH_SQUAD_SIGIL
     .2byte ITEM_ABYSSAL_WHIP
     .2byte ITEM_ARMA_HELM
@@ -309,9 +314,6 @@ Cheat_Menu_Shop_Misc:
     .2byte ITEM_ORB_OF_OCULUS
     .2byte ITEM_OVERLOAD
     .2byte ITEM_PRISMATIC_STAR
-
-
-    .2byte ITEM_PULSE_CORE
     .2byte ITEM_RING_OF_LIFE
     .2byte ITEM_RING_OF_WEALTH
     .2byte ITEM_ROCKCAKE
@@ -320,10 +322,6 @@ Cheat_Menu_Shop_Misc:
     .2byte ITEM_SNELM
     .2byte ITEM_SPIRITSHIELD
     .2byte ITEM_SPOTTEDCAPE
-
-
-
-
     .2byte ITEM_STAFF_OF_EARTH
     .2byte ITEM_TINDERBOX
     .2byte ITEM_TOME_OF_FROST
@@ -340,6 +338,15 @@ Cheat_Menu_Shop_Misc:
     .2byte ITEM_PHOENIX_NECKLACE
     .2byte ITEM_MITHRIL_SCIMITAR
     .2byte ITEM_SNOW_GLOBE
+//QUEST STUFF TEST ICONS
+    .2byte ITEM_FISH_FOOD
+    .2byte ITEM_FISH_FOOD_POISONED
+    .2byte ITEM_OIL_CAN
+    .2byte ITEM_PRESSURE_GAUGE
+    .2byte ITEM_RUBBER_TUBE
+    .2byte ITEM_MAGICAL_CAGE
+
+
 
     .2byte ITEM_NONE
     release

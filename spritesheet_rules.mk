@@ -770,6 +770,9 @@ $(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_male/surfing.4bpp: %.4bpp: %.
 	
 $(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_male/terrorbird.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_male/yak.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
 	
 $(OBJEVENTGFXDIR)/pokescape_overworlds/protaganist_male/underwater.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4	

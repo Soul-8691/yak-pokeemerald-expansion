@@ -1,3 +1,10 @@
+const OBJ_EVENT_ID_FAYETH = 1
+const OBJ_EVENT_ID_DONIE = 2
+const OBJ_EVENT_ID_BANKERGF = 3
+const OBJ_EVENT_ID_FISHERMAN = 23
+const OBJ_EVENT_ID_FARMER = 21
+const OBJ_EVENT_ID_BRIDGEMAN = 11
+
 mapscripts Lumbridge_MapScripts{
 	    MAP_SCRIPT_ON_TRANSITION{
     goto(MoveNPCsAfterEvents_Lumbridge)
@@ -426,12 +433,7 @@ movement LUMBRIDGE_GUARD_SOUTH_TRIGGER_2{
 
 
 
-const OBJ_EVENT_ID_FAYETH = 1
-const OBJ_EVENT_ID_DONIE = 2
-const OBJ_EVENT_ID_BANKERGF = 3
-const OBJ_EVENT_ID_FISHERMAN = 24
-const OBJ_EVENT_ID_FARMER = 22
-const OBJ_EVENT_ID_BRIDGEMAN = 11
+
 
 
 

@@ -241,7 +241,7 @@ script NPC_RIMMINGTON_JagexMod{
     closemessage
     fadescreen(FADE_TO_BLACK)
     removeobject (10) //HIDEJMOD
-    setflag(FLAG_TEMP_2)
+    setflag(FLAG_TEMP_A)
     delay(8)
     fadescreen(FADE_FROM_BLACK)
     namebox("Mod ???")

@@ -204,7 +204,7 @@ NPC_RIMMINGTON_JagexMod::
 	closemessage
 	fadescreen FADE_TO_BLACK
 	removeobject 10
-	setflag FLAG_TEMP_2
+	setflag FLAG_TEMP_A
 	delay 8
 	fadescreen FADE_FROM_BLACK
 	namebox NPC_RIMMINGTON_JagexMod_Text_0

@@ -249,11 +249,11 @@ NPC_TERRORBIRD::
 	end
 
 
-NPC_RIMMINGTON_WELL::
-	msgbox NPC_RIMMINGTON_WELL_Text_0
+RIMMINGTON_WELL::
+	msgbox RIMMINGTON_WELL_Text_0
 	checkitem ITEM_LANTERN, 1
 	compare VAR_RESULT, 0
-	goto_if_ne NPC_RIMMINGTON_WELL_2
+	goto_if_ne RIMMINGTON_WELL_2
 	closemessage
 	release
 	end
@@ -262,31 +262,63 @@ NPC_RIMMINGTON_WELL::
 	release
 	end
 
-NPC_RIMMINGTON_WELL_2:
-	msgbox NPC_RIMMINGTON_WELL_Text_1, MSGBOX_YESNO
+RIMMINGTON_WELL_2:
+	msgbox RIMMINGTON_WELL_Text_1, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_ne NPC_RIMMINGTON_WELL_6
+	goto_if_ne RIMMINGTON_WELL_6
 	release
 	end
 
-NPC_RIMMINGTON_WELL_6:
-	msgbox NPC_RIMMINGTON_WELL_Text_2
+RIMMINGTON_WELL_6:
+	msgbox RIMMINGTON_WELL_Text_2
 	warp MAP_MAZCAB_OTOT, 0, 0, 0
 	closemessage
 	release
 	end
 
 
-NPC_RIMMINGTON_HOUSE_PORTAL::
-	msgbox NPC_RIMMINGTON_HOUSE_PORTAL_Text_0
-	msgbox NPC_RIMMINGTON_HOUSE_PORTAL_Text_1
-	closemessage
+RIMMINGTON_HOUSE_PORTAL::
+	msgbox RIMMINGTON_HOUSE_PORTAL_Text_0
+	multichoicedefault 1, 0, MULTI_POH, 0, 0
+	switch VAR_RESULT
+	case 0, RIMMINGTON_HOUSE_PORTAL_3
+	case 1, RIMMINGTON_HOUSE_PORTAL_4
+	case 2, RIMMINGTON_HOUSE_PORTAL_5
+	case 3, RIMMINGTON_HOUSE_PORTAL_6
+	case 4, RIMMINGTON_HOUSE_PORTAL_7
+RIMMINGTON_HOUSE_PORTAL_1:
 	release
 	end
+
+RIMMINGTON_HOUSE_PORTAL_3:
+	msgbox RIMMINGTON_HOUSE_PORTAL_Text_1
+	goto RIMMINGTON_HOUSE_PORTAL_1
+
+RIMMINGTON_HOUSE_PORTAL_4:
+	msgbox RIMMINGTON_HOUSE_PORTAL_Text_2
+	goto RIMMINGTON_HOUSE_PORTAL_1
+
+RIMMINGTON_HOUSE_PORTAL_5:
+	msgbox RIMMINGTON_HOUSE_PORTAL_Text_3
+	goto RIMMINGTON_HOUSE_PORTAL_1
+
+RIMMINGTON_HOUSE_PORTAL_6:
+	msgbox RIMMINGTON_HOUSE_PORTAL_Text_4
+	goto RIMMINGTON_HOUSE_PORTAL_1
+
+RIMMINGTON_HOUSE_PORTAL_7:
+	msgbox RIMMINGTON_HOUSE_PORTAL_Text_5
+	goto RIMMINGTON_HOUSE_PORTAL_1
 
 
 RIMMINGTON_SIGNPOST_HOUSEPORTAL::
 	msgbox RIMMINGTON_SIGNPOST_HOUSEPORTAL_Text_0
+	closemessage
+	end
+
+
+RIMMINGTON_SIGNPOST_RIMMINGTON::
+	msgbox RIMMINGTON_SIGNPOST_RIMMINGTON_Text_0
 	closemessage
 	end
 
@@ -694,25 +726,41 @@ NPC_RIMMINGTON_GnomeBoiKevin_Text_2:
 NPC_TERRORBIRD_Text_0:
 	.string "SKREEEE!$"
 
-NPC_RIMMINGTON_WELL_Text_0:
+RIMMINGTON_WELL_Text_0:
 	.string "It is a well.\p"
 	.string "It looks really dark down there.$"
 
-NPC_RIMMINGTON_WELL_Text_1:
+RIMMINGTON_WELL_Text_1:
 	.string "Would you like to climb into the well?$"
 
-NPC_RIMMINGTON_WELL_Text_2:
+RIMMINGTON_WELL_Text_2:
 	.string "You climb down the well.$"
 
-NPC_RIMMINGTON_HOUSE_PORTAL_Text_0:
-	.string "It is the House Portal!$"
+RIMMINGTON_HOUSE_PORTAL_Text_0:
+	.string "It is a House Portal.\p"
+	.string "Which house would you like to go to?$"
 
-NPC_RIMMINGTON_HOUSE_PORTAL_Text_1:
-	.string "It doesn't look like there are any\n"
-	.string "partys on right now…$"
+RIMMINGTON_HOUSE_PORTAL_Text_1:
+	.string "Going to your house.$"
+
+RIMMINGTON_HOUSE_PORTAL_Text_2:
+	.string "Going to Cursed You's House.$"
+
+RIMMINGTON_HOUSE_PORTAL_Text_3:
+	.string "Going to FaladorEvent House.$"
+
+RIMMINGTON_HOUSE_PORTAL_Text_4:
+	.string "Thoks house is located in Relleka.$"
+
+RIMMINGTON_HOUSE_PORTAL_Text_5:
+	.string "You have no friends.$"
 
 RIMMINGTON_SIGNPOST_HOUSEPORTAL_Text_0:
 	.string "Rimmington House Portal.$"
+
+RIMMINGTON_SIGNPOST_RIMMINGTON_Text_0:
+	.string "Rimmington, known for it's famous house\n"
+	.string "parties.$"
 
 NPC_SETVAR_RIMMINGTON_Text_0:
 	.string "RIMMINGTON VAR$"

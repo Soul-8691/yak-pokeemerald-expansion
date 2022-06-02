@@ -130,6 +130,7 @@
 //pokescape starter menus
 #define MULTI_STARTER_FREE				   117
 #define MULTI_STARTER_MEMBER			   118
+#define MULTI_POH                          119
 
 
 // Lilycove SS Tidal Multichoice Selections

@@ -159,9 +159,7 @@ script NPC_RIMMINGTON_RSMVer_1{
             hidenamebox
             release
             end
-    }
-    
-    
+    }  
 }
 
 script NPC_RIMMINGTON_RSMVer_2{
@@ -262,11 +260,6 @@ script NPC_RIMMINGTON_PETER{
     end
 }
 
-
-
-
-
-
 script NPC_RIMMINGTON_GnomeBoiKevin{
     lock
     faceplayer
@@ -293,11 +286,9 @@ script NPC_TERRORBIRD
 }
 
 
-
-script NPC_RIMMINGTON_WELL{
-
+//SIGNPOSTS
+script RIMMINGTON_WELL {
     msgbox(format("It is a well.\pIt looks really dark down there."))
-
     checkitem(ITEM_LANTERN, 1)
         if (var(VAR_RESULT)){
             msgbox(format("Would you like to climb into the well?"), MSGBOX_YESNO)
@@ -322,32 +313,33 @@ script NPC_RIMMINGTON_WELL{
     end
 }
 
+script RIMMINGTON_HOUSE_PORTAL{
 
-script NPC_RIMMINGTON_HOUSE_PORTAL{
-
-    msgbox(format("It is the House Portal!"))
-    msgbox(format("It doesn't look like there are any partys on right now…"))
-    //msgbox(format("Would you like to visit someones house?"), MSGBOX_YESNO)
-     //           if (var(VAR_RESULT)){
-     //               msgbox(format("There is no place like home!"))
-     //               warp (MAP_MAZCAB_OTOT,0,0,0)
-    //                closemessage
-    //                release
-    //                end
-    //            }
-    //            release
-    //            end
-    //    }
-    //    else {
-            //msgbox(format("You don't have a lantern."))
-    //        closemessage
-    //        release
-     //       end
-    //    }
-    closemessage
+    msgbox(format("It is a House Portal.\pWhich house would you like to go to?"))
+    multichoicedefault (1, 0, MULTI_POH, 0, 0)
+    switch (var(VAR_RESULT))
+    {
+        case 0:
+            msgbox(format("Going to your house."))
+            //goto (SecretBase_EventScript_CheckEntrance_POH)            
+        case 1:
+            msgbox(format("Going to Cursed You's House."))
+            //warp (MAP_RIMMINGTON_POH,0,0,0)
+            end
+        case 2:
+            msgbox(format("Going to FaladorEvent House."))
+        case 3:
+            //compare (VAR_0x8007, SECRET_BASE_YELLOW_CAVE)
+            //goto_if_eq (Thok_house)
+            msgbox(format("Thoks house is located in Relleka."))
+        case 4:
+            msgbox(format("You have no friends."))
+    }
     release
     end
 }
+
+
 
 
 script RIMMINGTON_SIGNPOST_HOUSEPORTAL
@@ -357,6 +349,12 @@ script RIMMINGTON_SIGNPOST_HOUSEPORTAL
 	end
 }
 
+script RIMMINGTON_SIGNPOST_RIMMINGTON
+{
+	msgbox(format("Rimmington, known for it's famous house parties."))
+	closemessage
+	end
+}
 
 
 

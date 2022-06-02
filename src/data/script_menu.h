@@ -829,6 +829,16 @@ static const struct MenuAction MultichoiceList_StarterMember[] =
 	{gText_TumeklingStarter},
 };
 
+static const struct MenuAction MultichoiceList_POH[] =
+{
+    {gText_POH_HOME},
+    {gText_POH_HOUSE_1},
+    {gText_POH_HOUSE_2},
+    {gText_POH_HOUSE_3},
+    {gText_POH_HOUSE_4},
+    {gText_Exit},
+    
+};
 
 static const struct MenuAction MultichoiceList_Exit[] =
 {
@@ -964,7 +974,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
 	[MULTI_CHEAT_MENU]				   = MULTICHOICE(MultichoiceList_CheatMenu),
 	[MULTI_STARTER_FREE]			   = MULTICHOICE(MultichoiceList_StarterFree),
 	[MULTI_STARTER_MEMBER]			   = MULTICHOICE(MultichoiceList_StarterMember),
-	
+    [MULTI_POH]			               = MULTICHOICE(MultichoiceList_POH),
 	
 };
 

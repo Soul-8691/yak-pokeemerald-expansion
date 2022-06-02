@@ -1861,6 +1861,12 @@ const u8 gText_SaralingStarter[] =_("Saraling");
 const u8 gText_ArmalingStarter[] =_("Armaling");
 const u8 gText_UngodlingStarter[] =_("Ungodling");
 const u8 gText_TumeklingStarter[] =_("Tumekling");
+//POH
+const u8 gText_POH_HOME[] =_("Your House.");
+const u8 gText_POH_HOUSE_1[] =_("Cursed You's House");
+const u8 gText_POH_HOUSE_2[] =_("Player's House");
+const u8 gText_POH_HOUSE_3[] =_("Player's House");
+const u8 gText_POH_HOUSE_4[] =_("A friend's House");
 
 //misc
 const u8 gText_NextMenu[] =_("Next");

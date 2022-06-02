@@ -3024,6 +3024,12 @@ extern const u8 gText_SaralingStarter[];
 extern const u8 gText_ArmalingStarter[];
 extern const u8 gText_UngodlingStarter[];
 extern const u8 gText_TumeklingStarter[];
+//POH
+extern const u8 gText_POH_HOME[];
+extern const u8 gText_POH_HOUSE_1[];
+extern const u8 gText_POH_HOUSE_2[];
+extern const u8 gText_POH_HOUSE_3[];
+extern const u8 gText_POH_HOUSE_4[];
 
 
 //pokescape cheat menu

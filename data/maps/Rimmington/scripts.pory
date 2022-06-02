@@ -324,7 +324,7 @@ script RIMMINGTON_HOUSE_PORTAL{
             //goto (SecretBase_EventScript_CheckEntrance_POH)            
         case 1:
             msgbox(format("Going to Cursed You's House."))
-            //warp (MAP_RIMMINGTON_POH,0,0,0)
+            warp (MAP_POH_1,0,0,0)
             end
         case 2:
             msgbox(format("Going to FaladorEvent House."))
@@ -647,14 +647,164 @@ movement MOVE_HYPERSTAN_1 {
 
 
 
+//Inside POH
+script POH_HOUSE_PORTAL{
+
+    msgbox(format("Now leaving the house."))
+    warp (MAP_RIMMINGTON,8,0,0)
+    release
+    end
+}
+
+
+//ARIZRAIN
+script NPC_POH_ARIZRAIN{
+    lock
+    faceplayer
+    namebox("ARIZRAIN")
+    msgbox(format("I enjoy making RSMVs."))
+    hidenamebox
+    release
+    end
+}
+//SKYTHEKID
+script NPC_POH_SKYTHEKID{
+    lock
+    faceplayer
+    namebox("SKYTHEKID")
+    msgbox(format("Awhwahegl."))
+    hidenamebox
+    msgbox(format("He seems to be making weird noises and pulling faces."))
+    release
+    end
+}
+//CHISZLE
+script NPC_POH_CHISZLE{
+    lock
+    faceplayer
+    namebox("CHISZLE")
+    msgbox(format("Yo mamma so fwat that she bigger than an elder god."))
+    hidenamebox
+    release
+    end
+}
+//BUMBUM007
+script NPC_POH_BUMBUM007{
+    lock
+    faceplayer
+    namebox("BUMBUM007")
+    msgbox(format("Have you seen Runway2020?\pI need him for the next runefactor."))
+    hidenamebox
+    release
+    end
+}
+//TEHNOOBSHOW
+script NPC_POH_TEHNOOBSHOW{
+    lock
+    faceplayer
+    namebox("TEHNOOBSHOW")
+    msgbox(format("So for the next episode I need you to……"))
+    hidenamebox
+    release
+    end
+}
+//GONTHORIAN
+script NPC_POH_GONTHORIAN{
+    lock
+    faceplayer
+    namebox("GONTHORIAN")
+    msgbox(format("I like goldfish crackers."))
+    hidenamebox
+    release
+    end
+}
+//ZEZIMA
+script NPC_POH_ZEZIMA{
+    lock
+    faceplayer
+    namebox("ZEZIMA")
+    msgbox(format("…"))
+    hidenamebox
+    release
+    end
+}
+//EXCL
+script NPC_POH_EXCL{
+    lock
+    faceplayer
+    namebox("EXCL")
+    msgbox(format("Quest capes are too hard to maintain…\pI need a new outfit."))
+    hidenamebox
+    release
+    end
+}
 
 
 
+//CURSED YOU
+script NPC_POH_CURSEDYOU{
+    lock
+    faceplayer
+    namebox("CURSED YOU")
+    msgbox(format("Wow there are way too many of you!\pI might have to start kicking people from my house soon."))
+    hidenamebox
+    release
+    end
+}
 
+//MONK
+script NPC_POH_MONK{
+    lock
+    faceplayer
+    namebox("MONK")
+    msgbox(format("5036\p5037\p5038\pHow many more Dragon Bones til level 99…"))
+    hidenamebox
+    release
+    end
+}
 
+//FIREMAKER
+script NPC_POH_FIREMAKER{
+    lock
+    faceplayer
+    namebox("FIREMAKER")
+    msgbox(format("I am getting payed 25k an hour!\pThis is great money!"))
+    hidenamebox
+    release
+    end
+}
 
+//BUTLER
+script NPC_POH_BUTLER{
+    lock
+    faceplayer
+    namebox("BUTLER")
+    msgbox(format("I don't think I am getting paid nearly enough to serve all of these people."))
+    hidenamebox
+    release
+    end
+}
 
+//JMOD
+script NPC_POH_JMOD{
+    lock
+    faceplayer
+    namebox("MOD ???")
+    msgbox(format("I heard that there was something sketchy that might be going down soon, so I am on the look out."))
+    hidenamebox
+    release
+    end
+}
 
-
-
-
+//RAPTOR
+script NPC_POH_RAPTOR{
+    lock
+    faceplayer
+    namebox("RAPTOR")
+    msgbox(format("Hey you came!\pHere I have something for you!"))
+    giveitem(ITEM_PICKAXE, 1)
+    msgbox(format("With this you can mine rocks."))
+    hidenamebox
+    release
+    end
+}

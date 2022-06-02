@@ -6710,6 +6710,26 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Falador_Castle_1F/border.bin",
       "blockdata_filepath": "data/layouts/Falador_Castle_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_POH_1",
+      "name": "POH_1_Layout",
+      "width": 26,
+      "height": 26,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Rimmington",
+      "border_filepath": "data/layouts/POH_1/border.bin",
+      "blockdata_filepath": "data/layouts/POH_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_POH_1_INSIDE",
+      "name": "POH_1_Inside_Layout",
+      "width": 38,
+      "height": 24,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/POH_1_Inside/border.bin",
+      "blockdata_filepath": "data/layouts/POH_1_Inside/map.bin"
     }
   ]
 }

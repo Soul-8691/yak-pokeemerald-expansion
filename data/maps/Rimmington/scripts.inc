@@ -296,7 +296,8 @@ RIMMINGTON_HOUSE_PORTAL_3:
 
 RIMMINGTON_HOUSE_PORTAL_4:
 	msgbox RIMMINGTON_HOUSE_PORTAL_Text_2
-	goto RIMMINGTON_HOUSE_PORTAL_1
+	warp MAP_POH_1, 0, 0, 0
+	end
 
 RIMMINGTON_HOUSE_PORTAL_5:
 	msgbox RIMMINGTON_HOUSE_PORTAL_Text_3
@@ -600,6 +601,156 @@ MOVE_HYPERSTAN_1:
 	walk_in_place_left
 	step_end
 
+POH_HOUSE_PORTAL::
+	msgbox POH_HOUSE_PORTAL_Text_0
+	warp MAP_RIMMINGTON, 8, 0, 0
+	release
+	end
+
+
+NPC_POH_ARIZRAIN::
+	lock
+	faceplayer
+	namebox NPC_POH_ARIZRAIN_Text_0
+	msgbox NPC_POH_ARIZRAIN_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_POH_SKYTHEKID::
+	lock
+	faceplayer
+	namebox NPC_POH_SKYTHEKID_Text_0
+	msgbox NPC_POH_SKYTHEKID_Text_1
+	hidenamebox
+	msgbox NPC_POH_SKYTHEKID_Text_2
+	release
+	end
+
+
+NPC_POH_CHISZLE::
+	lock
+	faceplayer
+	namebox NPC_POH_CHISZLE_Text_0
+	msgbox NPC_POH_CHISZLE_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_POH_BUMBUM007::
+	lock
+	faceplayer
+	namebox NPC_POH_BUMBUM007_Text_0
+	msgbox NPC_POH_BUMBUM007_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_POH_TEHNOOBSHOW::
+	lock
+	faceplayer
+	namebox NPC_POH_TEHNOOBSHOW_Text_0
+	msgbox NPC_POH_TEHNOOBSHOW_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_POH_GONTHORIAN::
+	lock
+	faceplayer
+	namebox NPC_POH_GONTHORIAN_Text_0
+	msgbox NPC_POH_GONTHORIAN_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_POH_ZEZIMA::
+	lock
+	faceplayer
+	namebox NPC_POH_ZEZIMA_Text_0
+	msgbox NPC_POH_ZEZIMA_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_POH_EXCL::
+	lock
+	faceplayer
+	namebox NPC_POH_EXCL_Text_0
+	msgbox NPC_POH_EXCL_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_POH_CURSEDYOU::
+	lock
+	faceplayer
+	namebox NPC_POH_CURSEDYOU_Text_0
+	msgbox NPC_POH_CURSEDYOU_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_POH_MONK::
+	lock
+	faceplayer
+	namebox NPC_POH_MONK_Text_0
+	msgbox NPC_POH_MONK_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_POH_FIREMAKER::
+	lock
+	faceplayer
+	namebox NPC_POH_FIREMAKER_Text_0
+	msgbox NPC_POH_FIREMAKER_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_POH_BUTLER::
+	lock
+	faceplayer
+	namebox NPC_POH_BUTLER_Text_0
+	msgbox NPC_POH_BUTLER_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_POH_JMOD::
+	lock
+	faceplayer
+	namebox NPC_POH_JMOD_Text_0
+	msgbox NPC_POH_JMOD_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_POH_RAPTOR::
+	lock
+	faceplayer
+	namebox NPC_POH_RAPTOR_Text_0
+	msgbox NPC_POH_RAPTOR_Text_1
+	giveitem ITEM_PICKAXE, 1
+	msgbox NPC_POH_RAPTOR_Text_2
+	hidenamebox
+	release
+	end
+
+
 NPC_RIMMINGTON_FANBOYNOOB_1_Text_0:
 	.string "FAN NOOB$"
 
@@ -889,3 +1040,111 @@ NPC_RIMMINGTON_DemonAndStan_Text_33:
 
 NPC_RIMMINGTON_DemonAndStan_Text_34:
 	.string "Nice hat!$"
+
+POH_HOUSE_PORTAL_Text_0:
+	.string "Now leaving the house.$"
+
+NPC_POH_ARIZRAIN_Text_0:
+	.string "ARIZRAIN$"
+
+NPC_POH_ARIZRAIN_Text_1:
+	.string "I enjoy making RSMVs.$"
+
+NPC_POH_SKYTHEKID_Text_0:
+	.string "SKYTHEKID$"
+
+NPC_POH_SKYTHEKID_Text_1:
+	.string "Awhwahegl.$"
+
+NPC_POH_SKYTHEKID_Text_2:
+	.string "He seems to be making weird noises and\n"
+	.string "pulling faces.$"
+
+NPC_POH_CHISZLE_Text_0:
+	.string "CHISZLE$"
+
+NPC_POH_CHISZLE_Text_1:
+	.string "Yo mamma so fwat that she bigger than\n"
+	.string "an elder god.$"
+
+NPC_POH_BUMBUM007_Text_0:
+	.string "BUMBUM007$"
+
+NPC_POH_BUMBUM007_Text_1:
+	.string "Have you seen Runway2020?\p"
+	.string "I need him for the next runefactor.$"
+
+NPC_POH_TEHNOOBSHOW_Text_0:
+	.string "TEHNOOBSHOW$"
+
+NPC_POH_TEHNOOBSHOW_Text_1:
+	.string "So for the next episode I need you to……$"
+
+NPC_POH_GONTHORIAN_Text_0:
+	.string "GONTHORIAN$"
+
+NPC_POH_GONTHORIAN_Text_1:
+	.string "I like goldfish crackers.$"
+
+NPC_POH_ZEZIMA_Text_0:
+	.string "ZEZIMA$"
+
+NPC_POH_ZEZIMA_Text_1:
+	.string "…$"
+
+NPC_POH_EXCL_Text_0:
+	.string "EXCL$"
+
+NPC_POH_EXCL_Text_1:
+	.string "Quest capes are too hard to maintain…\p"
+	.string "I need a new outfit.$"
+
+NPC_POH_CURSEDYOU_Text_0:
+	.string "CURSED YOU$"
+
+NPC_POH_CURSEDYOU_Text_1:
+	.string "Wow there are way too many of you!\p"
+	.string "I might have to start kicking people\n"
+	.string "from my house soon.$"
+
+NPC_POH_MONK_Text_0:
+	.string "MONK$"
+
+NPC_POH_MONK_Text_1:
+	.string "5036\p"
+	.string "5037\p"
+	.string "5038\p"
+	.string "How many more Dragon Bones til level\n"
+	.string "99…$"
+
+NPC_POH_FIREMAKER_Text_0:
+	.string "FIREMAKER$"
+
+NPC_POH_FIREMAKER_Text_1:
+	.string "I am getting payed 25k an hour!\p"
+	.string "This is great money!$"
+
+NPC_POH_BUTLER_Text_0:
+	.string "BUTLER$"
+
+NPC_POH_BUTLER_Text_1:
+	.string "I don't think I am getting paid nearly\n"
+	.string "enough to serve all of these people.$"
+
+NPC_POH_JMOD_Text_0:
+	.string "MOD ???$"
+
+NPC_POH_JMOD_Text_1:
+	.string "I heard that there was something\n"
+	.string "sketchy that might be going down soon,\l"
+	.string "so I am on the look out.$"
+
+NPC_POH_RAPTOR_Text_0:
+	.string "RAPTOR$"
+
+NPC_POH_RAPTOR_Text_1:
+	.string "Hey you came!\p"
+	.string "Here I have something for you!$"
+
+NPC_POH_RAPTOR_Text_2:
+	.string "With this you can mine rocks.$"

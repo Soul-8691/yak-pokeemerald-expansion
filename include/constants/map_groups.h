@@ -854,6 +854,8 @@
 #define MAP_SINKHOLE_2                          (31 | (50 << 8))
 #define MAP_SINKHOLE_3                          (32 | (50 << 8))
 #define MAP_SINKHOLE_4                          (33 | (50 << 8))
+#define MAP_POH_1                               (34 | (50 << 8))
+#define MAP_POH_1_INSIDE                        (35 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

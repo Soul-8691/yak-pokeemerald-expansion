@@ -6730,6 +6730,26 @@
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/POH_1_Inside/border.bin",
       "blockdata_filepath": "data/layouts/POH_1_Inside/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_CASTLE_2F",
+      "name": "Falador_Castle_2F_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Falador_Castle_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_Castle_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_CASTLE_3F",
+      "name": "Falador_Castle_3F_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Falador_Castle_3F/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_Castle_3F/map.bin"
     }
   ]
 }

@@ -1,0 +1,70 @@
+mapscripts Route24_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+
+    }
+}
+
+
+
+script BATTLE_ROUTE24_MUGGER{
+    trainerbattle_single(TRAINER_ROUTE24_MUGGER, format("Deliver and stand!"),format("Sorry I mixed that up, could you please be robbed again?\pNo?\pOk then…"))
+    namebox ("MUGGER")
+    msgbox(format("Sorry I mixed that up, could you please be robbed again?\pNo?\pOk then…"))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_ROUTE24_WOODCUTTER_1{
+    trainerbattle_single(TRAINER_ROUTE24_WOODCUTTER_1, format("Woodcutting is more than just cutting trees, here let me show you."),format("If I lose a battle and nobody is here.\pDo I still get xp?"))
+    namebox ("MUGGER")
+    msgbox(format("If I lose a battle and nobody is here.\pDo I still get xp?"))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_ROUTE24_WOODCUTTER_2{
+    trainerbattle_single(TRAINER_ROUTE24_WOODCUTTER_2, format("To chop down trees you need a hatchet like mine."),format("I bet you dont even have over 20 Woodcutting."))
+    namebox ("MUGGER")
+    msgbox(format("I bet you dont even have over 20 Woodcutting."))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_ROUTE24_GOBLIN_1{
+    trainerbattle_single(TRAINER_ROUTE24_GOBLIN_1, format(""),format(""))
+    namebox ("MUGGER")
+    msgbox(format(""))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_ROUTE24_GOBLIN_2{
+    trainerbattle_single(TRAINER_ROUTE24_GOBLIN_2, format(""),format(""))
+    namebox ("MUGGER")
+    msgbox(format(""))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_ROUTE24_GOBLIN_3{
+    trainerbattle_single(TRAINER_ROUTE24_GOBLIN_3, format(""),format(""))
+    namebox ("MUGGER")
+    msgbox(format(""))
+    hidenamebox
+    release
+    end
+}
+
+script BATTLE_ROUTE24_GOBLIN_4{
+    trainerbattle_single(TRAINER_ROUTE24_GOBLIN_4, format(""),format(""))
+    namebox ("MUGGER")
+    msgbox(format(""))
+    hidenamebox
+    release
+    end
+}

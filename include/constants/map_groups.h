@@ -773,6 +773,8 @@
 #define MAP_FALADOR_HOUSE1_1F        (12 | (42 << 8))
 #define MAP_FALADOR_HOUSE1_2F        (13 | (42 << 8))
 #define MAP_FALADOR_CASTLE_1F        (14 | (42 << 8))
+#define MAP_FALADOR_CASTLE_2F        (15 | (42 << 8))
+#define MAP_FALADOR_CASTLE_3F        (16 | (42 << 8))
 
 // Map Group 43
 #define MAP_VARROCK_THESSALIA_SHOP    (0 | (43 << 8))

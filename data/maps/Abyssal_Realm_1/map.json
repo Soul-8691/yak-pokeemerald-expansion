@@ -243,8 +243,8 @@
       "x": 41,
       "y": 27,
       "elevation": 0,
-      "dest_map": "MAP_LUMBRIDGE",
-      "dest_warp_id": 14
+      "dest_map": "MAP_LUMBRIDGE_CASTLE_BASEMENT",
+      "dest_warp_id": 1
     },
     {
       "x": 7,

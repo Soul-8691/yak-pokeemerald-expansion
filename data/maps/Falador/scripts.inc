@@ -611,6 +611,10 @@ FALADOR_QUEST_STATE_4:
 	removeobject 39
 	removeobject 27
 	setflag FLAG_TEMP_2
+	setmetatile 24, 3, 201, 0
+	setmetatile 24, 4, 201, 0
+	setmetatile 25, 3, 201, 0
+	special DrawWholeMapView
 	return
 
 

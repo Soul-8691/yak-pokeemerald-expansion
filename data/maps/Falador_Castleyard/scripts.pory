@@ -328,6 +328,63 @@ script NPC_FALADORCASTLE_GYM_TRAINER_4 {
 }
 //Sir AMIK VARZE
 script NPC_FALADORCASTLE_GYM_SIRAMIKVARZE {
-	trainerbattle_single(TRAINER_FALADOR_GYM_AMIKVARZE, format("You made it to me."),format("I lost lol") )
-    setvar(VAR_POKESCAPE_FALADOR_STATE, 5)
+    lock
+    faceplayer
+    namebox("Sir Amik Varze")
+    if (!flag(FLAG_BADGE02_GET)){
+        msgbox(format("Well done getting here, as promised here is your battle."))
+        hidenamebox
+        trainerbattle_no_intro(TRAINER_FALADOR_GYM_AMIKVARZE, msgbox(format("You beat me.. Congratulations!")))
+        msgbox(format("I am impressed!\pHave this badge."))
+        playfanfare(MUS_OBTAIN_BADGE)
+        msgbox(format("{PLAYER} received the Falador BADGE from Sir Amik Varze."))
+        waitfanfare
+        waitmessage
+        msgbox(format("Also have this, it is my favourite move."))
+        hidenamebox
+        giveitem (ITEM_TM07, 1)
+        compare(VAR_RESULT, FALSE)
+        goto_if_eq(Common_EventScript_ShowBagIsFull)
+        namebox("Sir Amik Varze")
+        msgbox(format("That move is called Razor Shell, it is a very sharp move.\pHopefully it will help you on your journey."))
+        setvar(VAR_POKESCAPE_FALADOR_STATE, 5)
+        setflag(FLAG_BADGE02_GET)
+        hidenamebox
+        release
+        end
+    }
+    msgbox(format("I reccomend you make your way to Al Khaird or Varrock for your next challenge."))
+    hidenamebox
+    release
+    end
+}
+
+
+
+
+
+//ROUTE 23
+script NPC_ROUTE23_DWARF_ROCKS
+{
+	lock
+	faceplayer
+    namebox ("DWARF")
+	msgbox(format("If only those goblins did not steal our pickaxe supplies.\pThen I could easily clear this rockslide."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+//GOBLIN VILLAGE
+script NPC_GOBLINVILLAGE_PICKAXE
+{
+	lock
+	faceplayer
+    namebox ("GOBLIN")
+	msgbox(format("Me like red pickaxe!\pNo, me like green pickaxe!\pHuman which Pickaxe is better?"))
+    giveitem(ITEM_PICKAXE, 1)
+    closemessage
+    hidenamebox
+	release
+	end
 }

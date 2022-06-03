@@ -2267,3 +2267,58 @@ static const struct TrainerMonItemCustomMoves sParty_FALADOR_HAIRDRESSER[] = {
     }
 };
 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_MUGGER[] = {
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_SPIDINE,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_WOODCUTTER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_SPIDINE,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_WOODCUTTER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_SPIDINE,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_GOBLIN_1[] = {
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_SPIDINE,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_GOBLIN_2[] = {
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_SPIDINE,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_GOBLIN_3[] = {
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_SPIDINE,
+    },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_GOBLIN_4[] = {
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_SPIDINE,
+    },
+};

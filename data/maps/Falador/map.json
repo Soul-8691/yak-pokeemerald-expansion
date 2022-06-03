@@ -674,8 +674,8 @@
       "dest_warp_id": 13
     },
     {
-      "x": 68,
-      "y": 11,
+      "x": 71,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
       "dest_warp_id": 0
@@ -695,8 +695,8 @@
       "dest_warp_id": 16
     },
     {
-      "x": 69,
-      "y": 11,
+      "x": 70,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_FALADOR",
       "dest_warp_id": 17

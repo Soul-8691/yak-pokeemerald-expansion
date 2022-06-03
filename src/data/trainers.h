@@ -1906,4 +1906,101 @@ const struct Trainer gTrainers[] = {
         .party = {.ItemCustomMoves = sParty_FALADOR_HAIRDRESSER},
     },
 
+    [TRAINER_ROUTE24_MUGGER] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_white_knight_m,
+        .trainerName = _("KNIGHT"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE24_MUGGER),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE24_MUGGER},
+    },
+
+    [TRAINER_ROUTE24_WOODCUTTER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_white_knight_m,
+        .trainerName = _("KNIGHT"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE24_WOODCUTTER_1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE24_WOODCUTTER_1},
+    },
+
+    [TRAINER_ROUTE24_WOODCUTTER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_white_knight_m,
+        .trainerName = _("KNIGHT"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE24_WOODCUTTER_2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE24_WOODCUTTER_2},
+    },
+
+    [TRAINER_ROUTE24_GOBLIN_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_white_knight_m,
+        .trainerName = _("KNIGHT"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE24_GOBLIN_1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE24_GOBLIN_1},
+    },
+
+    [TRAINER_ROUTE24_GOBLIN_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_white_knight_m,
+        .trainerName = _("KNIGHT"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE24_GOBLIN_2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE24_GOBLIN_2},
+    },
+
+    [TRAINER_ROUTE24_GOBLIN_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_white_knight_m,
+        .trainerName = _("KNIGHT"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE24_GOBLIN_3),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE24_GOBLIN_3},
+    },
+
+    [TRAINER_ROUTE24_GOBLIN_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = TRAINER_PIC_white_knight_m,
+        .trainerName = _("KNIGHT"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE24_GOBLIN_4),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE24_GOBLIN_4},
+    },
 };

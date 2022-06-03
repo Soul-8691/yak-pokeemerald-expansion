@@ -1517,3 +1517,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/POH_1/scripts.inc"
 
 	.include "data/maps/POH_1_Inside/scripts.inc"
+
+	.include "data/maps/Falador_Castle_2F/scripts.inc"
+
+	.include "data/maps/Falador_Castle_3F/scripts.inc"

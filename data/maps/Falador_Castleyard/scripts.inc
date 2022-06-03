@@ -343,9 +343,59 @@ NPC_FALADORCASTLE_GYM_TRAINER_4_3:
 
 
 NPC_FALADORCASTLE_GYM_SIRAMIKVARZE::
-	trainerbattle_single TRAINER_FALADOR_GYM_AMIKVARZE, NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_0, NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_1
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_0
+	goto_if_unset FLAG_BADGE02_GET, NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_2
+	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_7
+	hidenamebox
+	release
+	end
+
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_2:
+	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_1
+	hidenamebox
+	trainerbattle_no_intro TRAINER_FALADOR_GYM_AMIKVARZE, NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_2
+	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_3
+	playfanfare MUS_OBTAIN_BADGE
+	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_4
+	waitfanfare
+	waitmessage
+	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_5
+	hidenamebox
+	giveitem ITEM_TM07, 1
+	compare VAR_RESULT, FALSE
+	goto_if_eq Common_EventScript_ShowBagIsFull
+	namebox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_0
+	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_6
 	setvar VAR_POKESCAPE_FALADOR_STATE, 5
-	return
+	setflag FLAG_BADGE02_GET
+	hidenamebox
+	release
+	end
+
+
+NPC_ROUTE23_DWARF_ROCKS::
+	lock
+	faceplayer
+	namebox NPC_ROUTE23_DWARF_ROCKS_Text_0
+	msgbox NPC_ROUTE23_DWARF_ROCKS_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_GOBLINVILLAGE_PICKAXE::
+	lock
+	faceplayer
+	namebox NPC_GOBLINVILLAGE_PICKAXE_Text_0
+	msgbox NPC_GOBLINVILLAGE_PICKAXE_Text_1
+	giveitem ITEM_PICKAXE, 1
+	closemessage
+	hidenamebox
+	release
+	end
 
 
 NPC_FALADORCASTLE_QUEST_PART_1_Text_0:
@@ -473,7 +523,50 @@ NPC_FALADORCASTLE_GYM_TRAINER_4_Text_2:
 	.string "Sir Loin$"
 
 NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_0:
-	.string "You made it to me.$"
+	.string "Sir Amik Varze$"
 
 NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_1:
-	.string "I lost lol$"
+	.string "Well done getting here, as promised here\n"
+	.string "is your battle.$"
+
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_2:
+	.string "You beat me.. Congratulations!$"
+
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_3:
+	.string "I am impressed!\p"
+	.string "Have this badge.$"
+
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_4:
+	.string "{PLAYER} received the Falador BADGE\n"
+	.string "from Sir Amik Varze.$"
+
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_5:
+	.string "Also have this, it is my favourite move.$"
+
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_6:
+	.string "That move is called Razor Shell, it is a\n"
+	.string "very sharp move.\p"
+	.string "Hopefully it will help you on your\n"
+	.string "journey.$"
+
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_7:
+	.string "I reccomend you make your way to Al\n"
+	.string "Khaird or Varrock for your next\l"
+	.string "challenge.$"
+
+NPC_ROUTE23_DWARF_ROCKS_Text_0:
+	.string "DWARF$"
+
+NPC_ROUTE23_DWARF_ROCKS_Text_1:
+	.string "If only those goblins did not steal our\n"
+	.string "pickaxe supplies.\p"
+	.string "Then I could easily clear this\n"
+	.string "rockslide.$"
+
+NPC_GOBLINVILLAGE_PICKAXE_Text_0:
+	.string "GOBLIN$"
+
+NPC_GOBLINVILLAGE_PICKAXE_Text_1:
+	.string "Me like red pickaxe!\p"
+	.string "No, me like green pickaxe!\p"
+	.string "Human which Pickaxe is better?$"

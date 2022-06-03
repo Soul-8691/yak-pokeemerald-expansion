@@ -44,7 +44,15 @@ NPC_LumbridgeBasement_Demonheadge_Text_0:
 
 NPC_LumbridgeBasement_Demonheadge_Text_1:
 	.string "Hi there, I hope you enjoy playing\n"
-	.string "PokeScape.$"
+	.string "PokeScape.\p"
+	.string "Just so you know this portal leads to\n"
+	.string "my beta testing area.\p"
+	.string "So please do not go here unless you\n"
+	.string "have finished playing the beta and\l"
+	.string "want to mess around with some buggy\l"
+	.string "mess, cheat, etc.\p"
+	.string "I do highly reccomend you play through\n"
+	.string "the beta once first.$"
 
 NPC_LumbridgeBasement_Item_Text_0:
 	.string "Demonheadge seems to be using this\n"

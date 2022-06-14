@@ -255,7 +255,6 @@ script NPC_DraynorManor_Witch{
 
 script NPC_DraynorManor_Chair{
     lock
-	faceplayer
     msgbox(format("It's a chair."))
     hidenamebox
 	closemessage

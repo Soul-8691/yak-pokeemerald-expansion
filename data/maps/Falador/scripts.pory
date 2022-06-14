@@ -376,7 +376,7 @@ script NPC_FALADOR_APPRENTICE
 {
 	lock
 	faceplayer
-    namebox ("Apprentice workman")
+    namebox ("Apprentice")
 	msgbox(format("Ayyee!\pAfter I finished making this chair it came to life!\pI do not suppose you want to buy it from me, do you? I need to cover the cost of materials and I do not think a living chair will make our client happy…"))
     msgbox(format("Urk! No problem, who would want a living chair anyway."))
     msgbox(format("Thank you so much! Let me just calculate the total…  … … Alright! So that comes to 5000gp. Is this okay with you?"))

@@ -220,25 +220,24 @@
 //pokescape
 //CITY
 #define MAPSEC_TUTORIAL_ISLAND              0xD6
-#define MAPSEC_LUMBRIDGE                  0xD7
-#define MAPSEC_DRAYNOR                 0xD8
-#define MAPSEC_PORT_SARIM               0xD9
-#define MAPSEC_RIMMINGTON               0xDA
-#define MAPSEC_FALADOR              0xDB
-#define MAPSEC_VARROCK              0xDC
-#define MAPSEC_BARBARIAN_VILLAGE              0xDD
+#define MAPSEC_LUMBRIDGE                    0xD7
+#define MAPSEC_DRAYNOR                      0xD8
+#define MAPSEC_PORT_SARIM                   0xD9
+#define MAPSEC_RIMMINGTON                   0xDA
+#define MAPSEC_FALADOR                      0xDB
+#define MAPSEC_VARROCK                      0xDC
+#define MAPSEC_BARBARIAN_VILLAGE            0xDD
 #define MAPSEC_GOBLIN_VILLAGE               0xDE
 #define MAPSEC_DWARVEN_MINES                0xDF
-#define MAPSEC_EDGEVILLE                0xE1
-#define MAPSEC_ALKHARID                 0xE2
-#define MAPSEC_MUSA_POINT               0xE3
-#define MAPSEC_TAVERLEY                0xE4
-
+#define MAPSEC_EDGEVILLE                    0xE1
+#define MAPSEC_ALKHARID                     0xE2
+#define MAPSEC_MUSA_POINT                   0xE3
+#define MAPSEC_TAVERLEY                     0xE4
 #define MAPSEC_LUMBRIDGE_SWAMP              0xE5
-#define MAPSEC_MILL_LANE_MILL             0xE6
-#define MAPSEC_DRAYNOR_MANOR                    0xE7
-#define MAPSEC_MUDSKIPPER_POINT                   0xE8
-#define MAPSEC_WIZARDS_TOWER                    0xE9
+#define MAPSEC_MILL_LANE_MILL               0xE6
+#define MAPSEC_DRAYNOR_MANOR                0xE7
+#define MAPSEC_MUDSKIPPER_POINT             0xE8
+#define MAPSEC_WIZARDS_TOWER                0xE9
 /*
 #define MAPSEC_ROUTE_1                    0xEA
 #define MAPSEC_ROUTE_2                    0xEB
@@ -287,15 +286,15 @@
 #define MAPSEC_ROUTE_43               0xFC
 */
 
-#define MAPSEC_MISTHALIN					0xD6
-#define MAPSEC_KHARIDIAN_DESERT				0xD7
-#define MAPSEC_ASGARNIA						0xD8
-#define MAPSEC_FELDIP_HILLS					0xD9
-#define MAPSEC_FREMENNIK_PROVINCE			0xDA
-#define MAPSEC_KANDARIN						0xDB
-#define MAPSEC_KARAMJA						0xDC
-#define MAPSEC_MORYTANIA					0xDD
-#define MAPSEC_WILDERNESS					0xDE		
+#define MAPSEC_MISTHALIN					0xFA
+#define MAPSEC_KHARIDIAN_DESERT				0xFA
+#define MAPSEC_ASGARNIA						0xFA
+#define MAPSEC_FELDIP_HILLS					0xFA
+#define MAPSEC_FREMENNIK_PROVINCE			0xFA
+#define MAPSEC_KANDARIN						0xFA
+#define MAPSEC_KARAMJA						0xFA
+#define MAPSEC_MORYTANIA					0xFA
+#define MAPSEC_WILDERNESS					0xFA		
 
 
 #define MAPSEC_NONE                         0xFB
@@ -310,3 +309,70 @@
 #define KANTO_MAPSEC_COUNT (KANTO_MAPSEC_END - KANTO_MAPSEC_START + 1)
 
 #endif //GUARD_REGIONMAPSEC_H
+
+
+
+/*
+#define	MAPSEC_TUTORIAL_ISLAND	0x00
+#define	MAPSEC_LUMBRIDGE	0x01
+#define	MAPSEC_DRAYNOR	0x02
+#define	MAPSEC_PORT_SARIM	0x03
+#define	MAPSEC_RIMMINGTON	0x04
+#define	MAPSEC_FALADOR	0x05
+#define	MAPSEC_VARROCK	0x06
+#define	MAPSEC_BARBARIAN_VILLAGE	0x07
+#define	MAPSEC_GOBLIN_VILLAGE	0x08
+#define	MAPSEC_DWARVEN_MINES	0x09
+#define	MAPSEC_EDGEVILLE	0x0A
+#define	MAPSEC_ALKHARID	0x0B
+#define	MAPSEC_MUSA_POINT	0x0C
+#define	MAPSEC_TAVERLEY	0x0D
+#define	MAPSEC_LUMBRIDGE_SWAMP	0x0E
+#define	MAPSEC_MILL_LANE_MILL	0x0F
+#define	MAPSEC_DRAYNOR_MANOR	0x10
+#define	MAPSEC_MUDSKIPPER_POINT	0x11
+#define	MAPSEC_WIZARDS_TOWER	0x12
+#define	MAPSEC_ROUTE_1	0x13
+#define	MAPSEC_ROUTE_2	0x14
+#define	MAPSEC_ROUTE_3	0x15
+#define	MAPSEC_ROUTE_4	0x16
+#define	MAPSEC_ROUTE_5	0x17
+#define	MAPSEC_ROUTE_6	0x18
+#define	MAPSEC_ROUTE_7	0x19
+#define	MAPSEC_ROUTE_8	0x1A
+#define	MAPSEC_ROUTE_9	0x1B
+#define	MAPSEC_ROUTE_10	0x1C
+#define	MAPSEC_ROUTE_11	0x1D
+#define	MAPSEC_ROUTE_12	0x1E
+#define	MAPSEC_ROUTE_13	0x1F
+#define	MAPSEC_ROUTE_14	0x20
+#define	MAPSEC_ROUTE_15	0x21
+#define	MAPSEC_ROUTE_16	0x22
+#define	MAPSEC_ROUTE_17	0x23
+#define	MAPSEC_ROUTE_18	0x24
+#define	MAPSEC_ROUTE_19	0x25
+#define	MAPSEC_ROUTE_20	0x26
+#define	MAPSEC_ROUTE_21	0x27
+#define	MAPSEC_ROUTE_22	0x28
+#define	MAPSEC_ROUTE_23	0x29
+#define	MAPSEC_ROUTE_24	0x2A
+#define	MAPSEC_ROUTE_25	0x2B
+#define	MAPSEC_ROUTE_26	0x2C
+#define	MAPSEC_ROUTE_27	0x2D
+#define	MAPSEC_ROUTE_28	0x2E
+#define	MAPSEC_ROUTE_29	0x2F
+#define	MAPSEC_ROUTE_30	0x30
+#define	MAPSEC_ROUTE_31	0x31
+#define	MAPSEC_ROUTE_32	0x32
+#define	MAPSEC_ROUTE_33	0x33
+#define	MAPSEC_ROUTE_34	0x34
+#define	MAPSEC_ROUTE_35	0x35
+#define	MAPSEC_ROUTE_36	0x36
+#define	MAPSEC_ROUTE_37	0x37
+#define	MAPSEC_ROUTE_38	0x38
+#define	MAPSEC_ROUTE_39	0x39
+#define	MAPSEC_ROUTE_40	0x3A
+#define	MAPSEC_ROUTE_41	0x3B
+#define	MAPSEC_ROUTE_42	0x3C
+#define	MAPSEC_ROUTE_43	0x3D
+*/

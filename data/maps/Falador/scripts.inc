@@ -881,7 +881,7 @@ NPC_FALADOR_WORKMAN_Text_1:
 	.string "Varrock.$"
 
 NPC_FALADOR_APPRENTICE_Text_0:
-	.string "Apprentice workman$"
+	.string "Apprentice$"
 
 NPC_FALADOR_APPRENTICE_Text_1:
 	.string "Ayyee!\p"

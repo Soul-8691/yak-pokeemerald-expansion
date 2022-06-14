@@ -214,7 +214,6 @@ NPC_DraynorManor_Witch::
 
 NPC_DraynorManor_Chair::
 	lock
-	faceplayer
 	msgbox NPC_DraynorManor_Chair_Text_0
 	hidenamebox
 	closemessage

@@ -1001,8 +1001,8 @@ NPC_FALADOR_NPC_5_Text_0:
 
 NPC_FALADOR_NPC_5_Text_1:
 	.string "It is really hard tending to these\n"
-	.string "gardens. My farming level is way too\l"
-	.string "low.$"
+	.string "gardens.\p"
+	.string "My farming level is way too low.$"
 
 NPC_FALADOR_NPC_6_Text_0:
 	.string "Garden Supplier$"

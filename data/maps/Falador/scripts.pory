@@ -508,7 +508,7 @@ script NPC_FALADOR_NPC_5
 	lock
 	faceplayer
     namebox ("Gardener")
-	msgbox(format("It is really hard tending to these gardens. My farming level is way too low."))
+	msgbox(format("It is really hard tending to these gardens.\pMy farming level is way too low."))
     waitmessage
     hidenamebox
 	release

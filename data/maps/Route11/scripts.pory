@@ -38,3 +38,92 @@ script BATTLE_ROUTE11_GRACEFUL{
     msgbox(format("Excuse me I have a lot of agility training to do."))
     release
 }
+
+
+
+
+
+//ITEMS
+
+script ITEM_ROUTE11_ITEM_1
+{
+    finditem(ITEM_POTION_ATT)
+    end
+}
+
+script ITEM_ROUTE11_ITEM_2
+{
+    finditem(ITEM_MITHRIL_POUCH)
+    end
+}
+
+script ITEM_ROUTE11_ITEM_3
+{
+    finditem(ITEM_CRYSTAL_POUCH)
+    end
+}
+
+script ITEM_ROUTE11_ITEM_4
+{
+    finditem(ITEM_TM54)
+    end
+}
+
+script ITEM_ROUTE11_ITEM_5
+{
+    finditem(ITEM_WATER_RUNE)
+    end
+}
+
+
+
+
+//MUDSKIPPER POINT
+
+script NPC_MUDSKIPPERPOINT_NPC_1 { 
+	lock
+	faceplayer
+    namebox("QUESTER")
+	msgbox(format("I heard you could get Yellow Flippers from the Mogres.\pDo you think they would give me a pair if I ask nicely?"))
+    hidenamebox
+    release
+	end
+}
+
+script NPC_MUDSKIPPERPOINT_FAIRY { 
+	lock
+	faceplayer
+    namebox("FAIRY")
+	msgbox(format("I am not sure why, but our Fairy Ring network seems to be down."))
+    hidenamebox
+    release
+	end
+}
+
+script BATTLE_MUDSKIPPERPOINT_SLAYER{
+    trainerbattle_single(TRAINER_ROUTE11_GRACEFUL, format("No!\pI left my explosive potions at the bank!"),format("This is such an xp waste!"))
+    msgbox(format("How am I meant to challenge the Morges to a battle without explosive potions and a full team of fainted monsters."))
+    release
+}
+
+script BATTLE_MUDSKIPPERPOINT_FISHER_1{
+    trainerbattle_single(TRAINER_ROUTE11_GRACEFUL, format("Oh!\pLooks like I have snagged a big one in my net!"),format("Aww it got away…"))
+    msgbox(format("I heard that there was some sort of device that allows you to dive under the water.\pWhat I'd give to see how the Mudskippers live!"))
+    release
+}
+
+script BATTLE_MUDSKIPPERPOINT_FISHER_2{
+    trainerbattle_single(TRAINER_ROUTE11_GRACEFUL, format("Do you know why they call this place Mudskipper Point?"),format("I am serious, why do they call this place Mudskipper Point?"))
+    msgbox(format("Oh now I get it.\pIt is because of all the Mudskippers right?"))
+    release
+}
+
+
+
+
+
+
+
+
+
+

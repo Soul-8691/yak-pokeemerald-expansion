@@ -11,12 +11,13 @@ KaramjaVolcano_STATE3::
 	switch VAR_POKESCAPE_KARAMJAVOLCANO_STATE
 	case 0, KaramjaVolcano_STATE3_2
 	case 1, KaramjaVolcano_STATE3_2
-	case 2, KaramjaVolcano_STATE3_3
-	case 3, KaramjaVolcano_STATE3_4
+	case 2, KaramjaVolcano_STATE3_2
+	case 3, KaramjaVolcano_STATE3_3
 	case 4, KaramjaVolcano_STATE3_4
 	case 5, KaramjaVolcano_STATE3_4
 	case 6, KaramjaVolcano_STATE3_4
 	case 7, KaramjaVolcano_STATE3_4
+	case 8, KaramjaVolcano_STATE3_4
 	return
 
 KaramjaVolcano_STATE3_2:
@@ -254,7 +255,7 @@ NPC_KaramjaVolcano_HAM_EVENT1::
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
 	setflag FLAG_TEMP_4
-	setvar VAR_POKESCAPE_KARAMJAVOLCANO_STATE, 2
+	setvar VAR_POKESCAPE_KARAMJAVOLCANO_STATE, 3
 	removeobject 1
 	removeobject 2
 	removeobject 3

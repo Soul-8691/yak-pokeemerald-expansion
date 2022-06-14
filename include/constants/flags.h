@@ -1158,12 +1158,12 @@
 #define FLAG_ITEM_AsgarnianDungeon_3                    0x434
 #define FLAG_ITEM_AsgarnianDungeon_4                    0x435
 #define FLAG_ITEM_AsgarnianDungeon_5                    0x436
+#define FLAG_ITEM_ROUTE11_ITEM_1                               0x437
+#define FLAG_ITEM_ROUTE11_ITEM_2                         0x438
+#define FLAG_ITEM_ROUTE11_ITEM_3                     0x439
+#define FLAG_ITEM_ROUTE11_ITEM_4                  0x43A
+#define FLAG_ITEM_ROUTE11_ITEM_5                   0x43B
 
-#define FLAG_ITEM_SCORCHED_SLAB_TM_11                               0x437
-#define FLAG_ITEM_METEOR_FALLS_B1F_2R_TM_02                         0x438
-#define FLAG_ITEM_SHOAL_CAVE_ENTRANCE_BIG_PEARL                     0x439
-#define FLAG_ITEM_SHOAL_CAVE_INNER_ROOM_RARE_CANDY                  0x43A
-#define FLAG_ITEM_SHOAL_CAVE_STAIRS_ROOM_ICE_HEAL                   0x43B
 #define FLAG_ITEM_VICTORY_ROAD_1F_MAX_ELIXIR                        0x43C
 #define FLAG_ITEM_VICTORY_ROAD_1F_PP_UP                             0x43D
 #define FLAG_ITEM_VICTORY_ROAD_B1F_TM_29                            0x43E
@@ -1622,12 +1622,12 @@
 #define FLAG_UNUSED_0x933                           (DAILY_FLAGS_START + 0x13) // Unused Flag
 #define FLAG_DAILY_APPRENTICE_LEAVES                (DAILY_FLAGS_START + 0x14)
 
-#define FLAG_UNUSED_0x935                           (DAILY_FLAGS_START + 0x15) // Unused Flag
-#define FLAG_UNUSED_0x936                           (DAILY_FLAGS_START + 0x16) // Unused Flag
-#define FLAG_UNUSED_0x937                           (DAILY_FLAGS_START + 0x17) // Unused Flag
-#define FLAG_UNUSED_0x938                           (DAILY_FLAGS_START + 0x18) // Unused Flag
-#define FLAG_UNUSED_0x939                           (DAILY_FLAGS_START + 0x19) // Unused Flag
-#define FLAG_UNUSED_0x93A                           (DAILY_FLAGS_START + 0x1A) // Unused Flag
+#define FLAG_UNUSED_0x935                           (DAILY_FLAGS_START + 0x15) // PUB TRAINER 1
+#define FLAG_UNUSED_0x936                           (DAILY_FLAGS_START + 0x16) // PUB TRAINER 2
+#define FLAG_UNUSED_0x937                           (DAILY_FLAGS_START + 0x17) // PUB TRAINER 3
+#define FLAG_UNUSED_0x938                           (DAILY_FLAGS_START + 0x18) // PUB TRAINER 4
+#define FLAG_UNUSED_0x939                           (DAILY_FLAGS_START + 0x19) // PUB TRAINER 5
+#define FLAG_UNUSED_0x93A                           (DAILY_FLAGS_START + 0x1A) // PUB TRAINER 6
 #define FLAG_UNUSED_0x93B                           (DAILY_FLAGS_START + 0x1B) // Unused Flag
 #define FLAG_UNUSED_0x93C                           (DAILY_FLAGS_START + 0x1C) // Unused Flag
 #define FLAG_UNUSED_0x93D                           (DAILY_FLAGS_START + 0x1D) // Unused Flag

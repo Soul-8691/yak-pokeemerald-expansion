@@ -790,7 +790,8 @@
     "PortSarim_JewelryStore_2F",
     "PortSarim_BriansBazaar_1F",
     "PortSarim_BriansBazaar_2F",
-    "PortSarim_Bank"
+    "PortSarim_Bank",
+    "PortSarim_Church"
   ],
   "gMapGroup41": [
     "Rimmington_House_1F",
@@ -909,6 +910,10 @@
     "Sinkhole_3",
     "Sinkhole_4",
     "POH_1",
-    "POH_1_Inside"
+    "POH_1_Inside",
+    "Rimmington_Mines",
+    "Rimmington_Mines_B2F",
+    "Rimmington_Mines_B3F",
+    "Rimmington_Mines_B1F"
   ]
 }

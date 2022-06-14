@@ -142,8 +142,10 @@ Mithrilman_FALADOR1::
 	lock
 	faceplayer
 	playbgm MUS_ENCOUNTER_MAY, 1
+	namebox Mithrilman_LUMBRIDGE1_Text_3
 	msgbox Mithrilman_FALADOR1_Text_0
-	trainerbattle_single TRAINER_MITHRILMAN2, Mithrilman_FALADOR1_Text_1, Mithrilman_LUMBRIDGE1_Text_5, Mithrilman_FALADOR2
+	trainerbattle_no_intro TRAINER_MITHRILMAN2, Mithrilman_LUMBRIDGE1_Text_5
+	goto Mithrilman_FALADOR2
 	return
 
 
@@ -154,7 +156,7 @@ Mithrilman_FALADOR2::
 	waitmessage
 	closemessage
 	fadescreen FADE_TO_BLACK
-	removeobject 2
+	removeobject 23
 	fadescreen FADE_FROM_BLACK
 	setflag FLAG_MITHRILMAN2
 	clearflag FLAG_MITHRILMAN3
@@ -453,9 +455,7 @@ Mithrilman_FALADOR1_Text_0:
 	.string "the sword and pens be made from\l"
 	.string "feathers.\p"
 	.string "So who else than the duck wouldst be\n"
-	.string "mightyer than the sword?$"
-
-Mithrilman_FALADOR1_Text_1:
+	.string "mightyer than the sword?\p"
 	.string "Why donst thine show ye, knave, the\n"
 	.string "power of onst without a sword?$"
 

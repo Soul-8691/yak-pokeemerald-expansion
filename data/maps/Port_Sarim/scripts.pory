@@ -262,22 +262,28 @@ script NPC_PORTSARIM_CAPTIAN_TOBIAS
 	lock
 	faceplayer
     namebox ("Tobias")
-    //FLAG - IF YOU CANNOT SAIL YET
-    msgbox(format("Sorry but our boat has popped a leak.\pIt will be some time before it is repaired.\pYou should go visit the Party Room in Falador or something while you are waiting."))
-	//FLAG AFTER YOU UNLOCK ABILITY TO SAIL
-    msgbox(format("Is your name PLAYER?\pI have received word that you are participating in the MvM Championships, is this correct?\pUsually our services cost 30gp but we have a deal with the Championship League that allows all participants to travel for free!\pSo…{PAUSE 15}…  Ahem!"))
-    //FLAG - NORMAL CODE
+    if (flag(FLAG_BADGE02_GET) == false) 
+	{
+        msgbox(format("Sorry but our boat has popped a leak.\pIt will be some time before it is repaired.\pYou should go visit the Party Room in Falador or something while you are waiting."))
+        hidenamebox
+        release
+        end
+    }
+    if(var(VAR_POKESCAPE_KARAMJAVOLCANO_STATE)==0) {
+        msgbox(format("Is your name PLAYER?\pI have received word that you are participating in the MvM Championships, is this correct?\pUsually our services cost 30gp but we have a deal with the Championship League that allows all participants to travel for free!\pSo…{PAUSE 15}…  Ahem!"))
+    }
     msgbox(format("Hi, there would you like to board the boat to Musa Point, Karamja?"), MSGBOX_YESNO)
     if (var(VAR_RESULT)==1)
     {
         msgbox(format("All aboard!\lWe set sail for Karamja!"))
+        waitmessage
+        hidenamebox
         warp (MAP_MUSA_POINT,2,0,0)
     }
     else
     {
         msgbox(format("Suit yourself."))
     }
-
     waitmessage
     hidenamebox
 	release
@@ -458,9 +464,15 @@ script NPC_PORTSARIM_NPC_6
 	lock
 	faceplayer
     //namebox ("NAME")
-	msgbox(format("Sea Shanty 2 is the best song right?"))
-    msgbox(format("Damn right!"))
-    msgbox(format("WOT!?\p...\p...\pREEEEEEEE!"))
+    msgbox(format("Sea Shanty 2 is the best song right?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT))
+        {
+            msgbox(format("Damn right!"))
+        }
+        else 
+        {
+            msgbox(format("WOT!?\p...\p...\pREEEEEEEE!"))
+        }
     waitmessage
     //hidenamebox
 	release
@@ -644,13 +656,9 @@ script Generalstore_PortSarim_Clerk {
 raw `
     .align 2
 GeneralStorePortSarim:
-    .2byte ITEM_EMPTY_BUCKET
-    .2byte ITEM_EMPTY_POT
     .2byte ITEM_BRONZE_POUCH
     .2byte ITEM_IRON_POUCH
     .2byte ITEM_STEEL_POUCH
-    .2byte ITEM_EGG
-    .2byte ITEM_POTATO
     .2byte ITEM_BREAD
     .2byte ITEM_CAKE
     .2byte ITEM_NONE

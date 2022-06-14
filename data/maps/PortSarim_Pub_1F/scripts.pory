@@ -3,11 +3,139 @@ mapscripts PortSarim_Pub_1F_MapScripts {
 
 
 
-script NPC_PortSarimPub_Pirate_1{
+script NPC_PortSarimPub_BARTENDER { 
+	lock
+	faceplayer
+    namebox("BARTENDER")
+	msgbox(format("Here at the Battle Pub, adventurers can challenge each other to battles.\pThe loser must pay for their meals.\pI would say that it is making me profit, but the amount of damage that they cause makes me break about even."))
+    hidenamebox
+    release
+	end
+}
+
+script NPC_PortSarimPub_NPC_1 { 
+	lock
+	faceplayer
+    namebox("SAILOR")
+	msgbox(format("There is an unspoken rule where you can only battle the same person once per day.\pI heard this rule came about after too many drunks lost all of their gold peices."))
+    hidenamebox
+    release
+	end
+}
+
+script NPC_PortSarimPub_NPC_2 { 
+	lock
+	faceplayer
+    namebox("PIRATE")
+	msgbox(format("I heard that far off to the east they hold contests to show off the beauty of monsters instead of battling with them.\pDisgusting!"))
+    hidenamebox
+    release
+	end
+}
+
+script NPC_PortSarimPub_Pirate_1 { // PUB TRAINER 1
 	lock
 	faceplayer
     namebox("PIRATE")
 	msgbox(format("The customs officer confiscates all Karamja Rum.\pShe is the reason the Rum is always gone."))
+	if (flag(FLAG_UNUSED_0x935) == false) 
+	{
+		msgbox(format("Do you wish to challenge them to a battle?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT))
+			{
+				hidenamebox
+				setflag(FLAG_UNUSED_0x935)
+				trainerbattle_no_intro(TRAINER_ROUTE24_WOODCUTTER_2, msgbox(format("…")))
+			}
+	}
+    hidenamebox
+    release
+	end
+}
+
+
+script NPC_PortSarimPub_Pirate_2 {	// PUB TRAINER 2
+	lock
+	faceplayer
+    namebox("PIRATE")
+	msgbox(format("AYE!\pThis is Port Sarim's Battle Pub."))
+	if (flag(FLAG_UNUSED_0x936) == false) 
+	{
+		msgbox(format("Do you wish to challenge them to a battle?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT))
+			{
+				hidenamebox
+				setflag(FLAG_UNUSED_0x936)
+				trainerbattle_no_intro(TRAINER_ROUTE24_WOODCUTTER_2, msgbox(format("…")))
+			}
+	}
+    hidenamebox
+    release
+	end
+}
+
+script NPC_PortSarimPub_Dwarf {	// PUB TRAINER 3
+	lock
+	faceplayer
+    namebox("DWARF")
+	msgbox(format("Outrageous!\pThe barmaid does not want to sell me drinks because I am a miner!"))
+	if (flag(FLAG_UNUSED_0x937) == false) 
+	{
+		msgbox(format("Do you wish to challenge them to a battle?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT))
+			{
+				hidenamebox
+				setflag(FLAG_UNUSED_0x937)
+				trainerbattle_no_intro(TRAINER_ROUTE24_WOODCUTTER_2, msgbox(format("…")))
+			}
+	}
+    hidenamebox
+    release
+	end
+}
+
+
+
+
+
+
+
+
+//PUBCRAWL
+script NPC_PortSarimPub_PUBCRAWL { 
+	lock
+	faceplayer
+    namebox("BARBARIAN")
+	msgbox(format("Are you here for the Pubcrawl challenge?\pNo?\pIf you are interested in signing up you should go to Barbarian Village and talk to our champion about it."))
+    hidenamebox
+    release
+	end
+}
+
+
+
+
+
+
+
+
+
+//PORT SARIM CHURCH
+script NPC_PortSarim_Church_Monk_1 { 
+	lock
+	faceplayer
+    namebox("MONK")
+	msgbox(format("The other night I saw a drunk throwing things into the ocean.\pHe was shouting something about Mudskippers.\pI don't even know what a Mudskipper is."))
+    hidenamebox
+    release
+	end
+}
+
+script NPC_PortSarim_Church_Monk_2 { 
+	lock
+	faceplayer
+    namebox("MONK")
+	msgbox(format("Not many people visit our Church out here.\pI don't think many people know of its existance."))
     hidenamebox
     release
 	end

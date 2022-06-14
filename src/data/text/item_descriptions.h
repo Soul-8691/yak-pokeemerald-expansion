@@ -1749,12 +1749,12 @@ static const u8 sBreadDesc[] = _(
 static const u8 sCakeDesc[] = _(
     "A whole cake.\n"
     "\n"
-    "Restores 100HP.");
+    "Restores 50HP.");
 
 static const u8 sChocolateCakeDesc[] = _(
     "An edible piece of\n"
     "happiness.\n"
-    "Restores 200HP.");
+    "Restores 150HP.");
 
 
 //POKESCAPE STATUS HEALING

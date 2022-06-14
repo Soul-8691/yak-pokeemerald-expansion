@@ -1521,3 +1521,13 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Falador_Castle_2F/scripts.inc"
 
 	.include "data/maps/Falador_Castle_3F/scripts.inc"
+
+	.include "data/maps/PortSarim_Church/scripts.inc"
+
+	.include "data/maps/Rimmington_Mines/scripts.inc"
+
+	.include "data/maps/Rimmington_Mines_B2F/scripts.inc"
+
+	.include "data/maps/Rimmington_Mines_B3F/scripts.inc"
+
+	.include "data/maps/Rimmington_Mines_B1F/scripts.inc"

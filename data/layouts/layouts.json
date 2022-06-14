@@ -6750,6 +6750,56 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Falador_Castle_3F/border.bin",
       "blockdata_filepath": "data/layouts/Falador_Castle_3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PORT_SARIM_CHURCH",
+      "name": "PortSarim_Church_Layout",
+      "width": 8,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_PokeScape_Church",
+      "border_filepath": "data/layouts/PortSarim_Church/border.bin",
+      "blockdata_filepath": "data/layouts/PortSarim_Church/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIMMINGTON_MINES",
+      "name": "Rimmington_Mines_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Rimmington_Mines/border.bin",
+      "blockdata_filepath": "data/layouts/Rimmington_Mines/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIMMINGTON_MINES_B2F",
+      "name": "Rimmington_Mines_B2F_Layout",
+      "width": 20,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Rimmington_Mines_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/Rimmington_Mines_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIMMINGTON_MINES_B3F",
+      "name": "Rimmington_Mines_B3F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Rimmington_Mines_B3F/border.bin",
+      "blockdata_filepath": "data/layouts/Rimmington_Mines_B3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_RIMMINGTON_MINES_B1F",
+      "name": "Rimmington_Mines_B1F_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Rimmington_Mines_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/Rimmington_Mines_B1F/map.bin"
     }
   ]
 }

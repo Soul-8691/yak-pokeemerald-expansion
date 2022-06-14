@@ -1909,10 +1909,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE24_MUGGER] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_white_knight_m,
-        .trainerName = _("KNIGHT"),
+        .trainerClass = TRAINER_CLASS_MUGGER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_mugger,
+        .trainerName = _("RSN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
@@ -1923,10 +1923,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE24_WOODCUTTER_1] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_white_knight_m,
-        .trainerName = _("KNIGHT"),
+        .trainerClass = TRAINER_CLASS_WOODCUTTER,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_woodcutter,
+        .trainerName = _("RSN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
@@ -1937,10 +1937,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE24_WOODCUTTER_2] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_white_knight_m,
-        .trainerName = _("KNIGHT"),
+        .trainerClass = TRAINER_CLASS_WOODCUTTER,
+        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_woodcutter,
+        .trainerName = _("RSN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
@@ -1951,10 +1951,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE24_GOBLIN_1] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_white_knight_m,
-        .trainerName = _("KNIGHT"),
+        .trainerClass = TRAINER_CLASS_GOBLIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_goblin,
+        .trainerName = _("RSN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
@@ -1965,10 +1965,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE24_GOBLIN_2] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_white_knight_m,
-        .trainerName = _("KNIGHT"),
+        .trainerClass = TRAINER_CLASS_GOBLIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_goblin,
+        .trainerName = _("RSN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
@@ -1979,10 +1979,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE24_GOBLIN_3] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_white_knight_m,
-        .trainerName = _("KNIGHT"),
+        .trainerClass = TRAINER_CLASS_GOBLIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_goblin,
+        .trainerName = _("RSN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
@@ -1993,14 +1993,15 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE24_GOBLIN_4] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_WHITE_KNIGHT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_white_knight_m,
-        .trainerName = _("KNIGHT"),
+        .trainerClass = TRAINER_CLASS_GOBLIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_goblin,
+        .trainerName = _("RSN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_ROUTE24_GOBLIN_4),
         .party = {.NoItemDefaultMoves = sParty_ROUTE24_GOBLIN_4},
     },
+
 };

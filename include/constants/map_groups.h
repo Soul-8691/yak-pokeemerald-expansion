@@ -743,6 +743,7 @@
 #define MAP_PORT_SARIM_BRIANS_BAZAAR_1F (8 | (40 << 8))
 #define MAP_PORT_SARIM_BRIANS_BAZAAR_2F (9 | (40 << 8))
 #define MAP_PORT_SARIM_BANK             (10 | (40 << 8))
+#define MAP_PORT_SARIM_CHURCH           (11 | (40 << 8))
 
 // Map Group 41
 #define MAP_RIMMINGTON_HOUSE_1F         (0 | (41 << 8))
@@ -858,6 +859,10 @@
 #define MAP_SINKHOLE_4                          (33 | (50 << 8))
 #define MAP_POH_1                               (34 | (50 << 8))
 #define MAP_POH_1_INSIDE                        (35 | (50 << 8))
+#define MAP_RIMMINGTON_MINES                    (36 | (50 << 8))
+#define MAP_RIMMINGTON_MINES_B2F                (37 | (50 << 8))
+#define MAP_RIMMINGTON_MINES_B3F                (38 | (50 << 8))
+#define MAP_RIMMINGTON_MINES_B1F                (39 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

@@ -534,7 +534,7 @@ script NPC_FALADOR_Wyson
 	lock
 	faceplayer
     namebox ("Wyson")
-	msgbox(format("I heard some rumours about a giant mole living somewhere in this area, and that interacting with an object would get you to it. I am too scared to find out how though."))
+	msgbox(format("I heard some rumours about a giant mole living somewhere in this area, and that interacting with an object would get you to it.\pI am too scared to find out how though."))
     waitmessage
     hidenamebox
 	release
@@ -757,7 +757,37 @@ script NPC_FALADOR_HOUSE_NPC_2
 
 
 
+script Generalstore_FALADOR_Clerk {
+    lock
+    faceplayer
+    namebox ("CLERK")
+    msgbox(format("Welcome to the Falador General Store.\pHow may I help you?"))
+    waitmessage
+    hidenamebox
+    pokemart (GeneralStoreFalador)
+    msgbox("Thank you, come again!")
+    release
+}
 
+
+raw `
+    .align 2
+GeneralStoreFalador:
+    .2byte ITEM_BRONZE_POUCH
+    .2byte ITEM_IRON_POUCH
+    .2byte ITEM_STEEL_POUCH
+    .2byte ITEM_BREAD
+    .2byte ITEM_CAKE
+	.2byte ITEM_WIZARDS_BLIZZARD
+	.2byte ITEM_CHOCOLATE_SUNDAY
+	.2byte ITEM_DRUNK_DRAGON
+	.2byte ITEM_FRUIT_BLAST
+	.2byte ITEM_PINEAPPLE_PUNCH
+    .2byte ITEM_NONE
+    release
+    end
+
+`
 
 
 

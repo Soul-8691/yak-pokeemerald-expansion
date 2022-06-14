@@ -16,6 +16,7 @@ script KaramjaVolcano_STATE3{
         switch (var(VAR_POKESCAPE_KARAMJAVOLCANO_STATE)){ 
             case 0: 
             case 1: 
+            case 2: 
                 setflag(FLAG_ELVARG)
                 setflag(FLAG_TEMP_4)
                 setflag(FLAG_TEMP_5)
@@ -25,7 +26,7 @@ script KaramjaVolcano_STATE3{
                 playbgm (MUS_PS_ENCOUNTER_HAM, 1)
                 release
                 end
-            case 2: 
+            case 3: 
                 setflag(FLAG_TEMP_1)
                 setflag(FLAG_TEMP_2)
                 setflag(FLAG_TEMP_3)
@@ -45,11 +46,11 @@ script KaramjaVolcano_STATE3{
                 setobjectxyperm(18,10,31)
 				release
                 end
-			case 3: 
-            case 4:
-			case 5:
-			case 6: 
-            case 7: 
+			case 4: 
+            case 5:
+			case 6:
+			case 7: 
+            case 8: 
                 release
                 end
             }
@@ -264,7 +265,7 @@ script NPC_KaramjaVolcano_HAM_EVENT1
     setflag(FLAG_TEMP_1)
     setflag(FLAG_TEMP_2)
     setflag(FLAG_TEMP_4)
-    setvar(VAR_POKESCAPE_KARAMJAVOLCANO_STATE, 2)
+    setvar(VAR_POKESCAPE_KARAMJAVOLCANO_STATE, 3)
     removeobject(1)
     removeobject(2)
     removeobject(3)

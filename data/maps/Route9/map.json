@@ -374,8 +374,8 @@
       "x": 48,
       "y": 15,
       "elevation": 0,
-      "dest_map": "MAP_QUEEN_BLACK_DRAGON_LAIR",
-      "dest_warp_id": 0
+      "dest_map": "MAP_RIMMINGTON_MINES",
+      "dest_warp_id": 2
     },
     {
       "x": 15,

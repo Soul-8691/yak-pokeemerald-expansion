@@ -15,8 +15,9 @@ KaramjaVolcano_B1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 KaramjaVolcano_STATE1::
 	switch VAR_POKESCAPE_KARAMJAVOLCANO_STATE
 	case 0, KaramjaVolcano_STATE1_2
-	case 1, KaramjaVolcano_STATE1_3
-	case 2, KaramjaVolcano_STATE1_4
+	case 1, KaramjaVolcano_STATE1_2
+	case 2, KaramjaVolcano_STATE1_3
+	case 3, KaramjaVolcano_STATE1_4
 	return
 
 KaramjaVolcano_STATE1_2:
@@ -57,7 +58,7 @@ EVENT_KaramjaVolcano_HAM_EnterVolcano::
 	closemessage
 	applymovement 6, HAM_KaramjaVolcano_3
 	waitmovement 0
-	setvar VAR_POKESCAPE_KARAMJAVOLCANO_STATE, 1
+	setvar VAR_POKESCAPE_KARAMJAVOLCANO_STATE, 2
 	setflag FLAG_TEMP_1
 	removeobject 6
 	release

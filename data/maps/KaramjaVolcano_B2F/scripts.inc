@@ -10,8 +10,9 @@ KaramjaVolcano_B2F_MapScripts_MAP_SCRIPT_ON_LOAD:
 KaramjaVolcano_STATE2::
 	switch VAR_POKESCAPE_KARAMJAVOLCANO_STATE
 	case 0, KaramjaVolcano_STATE2_2
-	case 1, KaramjaVolcano_STATE2_3
-	case 2, KaramjaVolcano_STATE2_4
+	case 1, KaramjaVolcano_STATE2_2
+	case 2, KaramjaVolcano_STATE2_3
+	case 3, KaramjaVolcano_STATE2_4
 	return
 
 KaramjaVolcano_STATE2_2:

@@ -236,15 +236,21 @@ static const u8 sMapName_TutorialIsland[] = _("TUTORIAL ISLAND");
 static const u8 sMapName_LumbridgeForest[] = _("LUMBRIDGE FOREST");
 static const u8 sMapName_KaramjaVolcano[] = _("KARAMJA VOLCANO");
 static const u8 sMapName_AsgarnianDungeon[] = _("ASGARNIAN DUNGEON");
+static const u8 sMapName_DungeonSinkhole[] = _("DUNGEON SINKHOLE");
+static const u8 sMapName_RimmingtonMines[] = _("RIMMINGTON MINES");
+static const u8 sMapName_Abyss[] = _("ABYSS");
 
 const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_ABANDONED_SHIP]             = {6, 14, 1, 1, sMapName_AbandonedShip},
+    [MAPSEC_ABYSS]                      = {19, 0, 1, 1, sMapName_Abyss},
     [MAPSEC_ALKHARID]                   = {23, 12, 2, 2, sMapName_Alkharid},
     [MAPSEC_ALTERING_CAVE]              = {6, 8, 1, 1, sMapName_AlteringCave},
     [MAPSEC_ARTISAN_CAVE]               = {22, 12, 1, 1, sMapName_ArtisanCave},
+    [MAPSEC_ASGARNIAN_DUNGEON]          = {10, 13, 1, 1, sMapName_AsgarnianDungeon},
     [MAPSEC_BARBARIAN_VILLAGE]          = {15, 3, 1, 1, sMapName_BarbarianVillage},
     [MAPSEC_DRAYNOR]                    = {14, 10, 1, 1, sMapName_Draynor},
     [MAPSEC_DRAYNOR_MANOR]              = {14, 6, 1, 1, sMapName_DraynorManor},
+    [MAPSEC_DUNGEON_SINKHOLE]           = {19, 0, 1, 1, sMapName_DungeonSinkhole},
     [MAPSEC_DWARVEN_MINES]              = {12, 2, 1, 1, sMapName_DwarvenMines},
     [MAPSEC_DYNAMIC]                    = {0, 0, 1, 1, sMapName_None},
     [MAPSEC_EDGEVILLE]                  = {14, 0, 1, 1, sMapName_Edgeville},
@@ -261,6 +267,7 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_MUSA_POINT]                 = {5, 14, 1, 1, sMapName_MusaPoint},
     [MAPSEC_PORT_SARIM]                 = {11, 11, 1, 2, sMapName_PortSarim},
     [MAPSEC_RIMMINGTON]                 = {7, 11, 1, 1, sMapName_Rimmington},
+    [MAPSEC_RIMMINGTON_MINES]           = {8, 10, 1, 1, sMapName_RimmingtonMines},
     [MAPSEC_ROUTE_1]                    = {14, 8, 5, 1, sMapName_Route1},
     [MAPSEC_ROUTE_10]                   = {10, 12, 1, 1, sMapName_Route10},
     [MAPSEC_ROUTE_101]                  = {4, 10, 1, 1, sMapName_Route101},
@@ -343,8 +350,6 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_VARROCK]                    = {20, 2, 3, 3, sMapName_Varrock},
     [MAPSEC_WILDERNESS]                 = {17, 0, 4, 1, sMapName_Wilderness},
     [MAPSEC_WIZARDS_TOWER]              = {14, 14, 1, 1, sMapName_WizardsTower},
-    [MAPSEC_ASGARNIAN_DUNGEON]           = {10, 13, 1, 1, sMapName_AsgarnianDungeon},
-    
 };
 
 #endif // GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H

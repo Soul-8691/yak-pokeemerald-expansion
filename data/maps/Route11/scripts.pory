@@ -105,18 +105,21 @@ script BATTLE_MUDSKIPPERPOINT_SLAYER{
     msgbox(format("How am I meant to challenge the Morges to a battle without explosive potions and a full team of fainted monsters."))
     release
 }
+//Team: Shrimp. Rainbow fish Mudskiiper
 
 script BATTLE_MUDSKIPPERPOINT_FISHER_1{
     trainerbattle_single(TRAINER_ROUTE11_GRACEFUL, format("Oh!\pLooks like I have snagged a big one in my net!"),format("Aww it got away…"))
     msgbox(format("I heard that there was some sort of device that allows you to dive under the water.\pWhat I'd give to see how the Mudskippers live!"))
     release
 }
+// Flatfish, Short finned eel, Cod
 
 script BATTLE_MUDSKIPPERPOINT_FISHER_2{
     trainerbattle_single(TRAINER_ROUTE11_GRACEFUL, format("Do you know why they call this place Mudskipper Point?"),format("I am serious, why do they call this place Mudskipper Point?"))
     msgbox(format("Oh now I get it.\pIt is because of all the Mudskippers right?"))
     release
 }
+//Chinchompa, Chinchompa ,Turoth
 
 
 

@@ -3,7 +3,7 @@
   "name": "Varrock_Sewers_1F",
   "layout": "LAYOUT_VARROCK_SEWERS_1F",
   "music": "MUS_PS_CAVE_F2P",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_VARROCK",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

@@ -3,7 +3,7 @@
   "name": "Falador_Bank_West_1F",
   "layout": "LAYOUT_FALADOR_BANK_WEST_1F",
   "music": "MUS_PS_BANK",
-  "region_map_section": "MAPSEC_FALLARBOR_TOWN",
+  "region_map_section": "MAPSEC_FALADOR",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

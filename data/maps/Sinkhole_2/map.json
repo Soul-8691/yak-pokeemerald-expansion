@@ -3,7 +3,7 @@
   "name": "Sinkhole_2",
   "layout": "LAYOUT_SINKHOLE_2",
   "music": "MUS_PS_VICTORY_ROAD",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_DUNGEON_SINKHOLE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

@@ -3,7 +3,7 @@
   "name": "Rimmington_Mines",
   "layout": "LAYOUT_RIMMINGTON_MINES",
   "music": "MUS_PS_CAVE_F2P",
-  "region_map_section": "MAPSEC_RIMMINGTON",
+  "region_map_section": "MAPSEC_RIMMINGTON_MINES",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

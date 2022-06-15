@@ -233,6 +233,9 @@ static const u8 sMapName_ROUTE41[] = _("ROUTE 41");
 static const u8 sMapName_LumbridgeSwamp[] = _("LUMBRIDGE SWAMP");
 static const u8 sMapName_Wilderness[] = _("WILDERNESS");
 static const u8 sMapName_TutorialIsland[] = _("TUTORIAL ISLAND");
+static const u8 sMapName_LumbridgeForest[] = _("LUMBRIDGE FOREST");
+static const u8 sMapName_KaramjaVolcano[] = _("KARAMJA VOLCANO");
+static const u8 sMapName_AsgarnianDungeon[] = _("ASGARNIAN DUNGEON");
 
 const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_ABANDONED_SHIP]             = {6, 14, 1, 1, sMapName_AbandonedShip},
@@ -247,8 +250,10 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_EDGEVILLE]                  = {14, 0, 1, 1, sMapName_Edgeville},
     [MAPSEC_FALADOR]                    = {10, 5, 2, 2, sMapName_Falador},
     [MAPSEC_GOBLIN_VILLAGE]             = {10, 0, 1, 1, sMapName_GoblinVillage},
+    [MAPSEC_KARAMJA_VOLCANO]            = {2, 13, 1, 1, sMapName_KaramjaVolcano},
     [MAPSEC_LITTLEROOT_TOWN]            = {0, 0, 1, 1, sMapName_LittlerootTown},
     [MAPSEC_LUMBRIDGE]                  = {17, 9, 2, 2, sMapName_Lumbridge},
+    [MAPSEC_LUMBRIDGE_FOREST]           = {15, 9, 2, 2, sMapName_LumbridgeForest},
     [MAPSEC_LUMBRIDGE_SWAMP]            = {16, 11, 3, 2, sMapName_LumbridgeSwamp},
     [MAPSEC_MILL_LANE_MILL]             = {16, 7, 1, 1, sMapName_MillLaneMill},
     [MAPSEC_MISTHALIN]                  = {8, 4, 1, 1, sMapName_Misthalin},
@@ -338,6 +343,8 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_VARROCK]                    = {20, 2, 3, 3, sMapName_Varrock},
     [MAPSEC_WILDERNESS]                 = {17, 0, 4, 1, sMapName_Wilderness},
     [MAPSEC_WIZARDS_TOWER]              = {14, 14, 1, 1, sMapName_WizardsTower},
+    [MAPSEC_ASGARNIAN_DUNGEON]           = {10, 13, 1, 1, sMapName_AsgarnianDungeon},
+    
 };
 
 #endif // GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H

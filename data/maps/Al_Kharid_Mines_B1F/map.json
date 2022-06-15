@@ -3,7 +3,7 @@
   "name": "Al_Kharid_Mines_B1F",
   "layout": "LAYOUT_AL_KHARID_MINES_B1F",
   "music": "MUS_PS_CAVE_F2P",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_ROUTE_29",
   "requires_flash": true,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

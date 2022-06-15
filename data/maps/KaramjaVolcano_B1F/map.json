@@ -3,7 +3,7 @@
   "name": "KaramjaVolcano_B1F",
   "layout": "LAYOUT_KARAMJA_VOLCANO_B1F",
   "music": "MUS_PS_CAVE_F2P",
-  "region_map_section": "MAPSEC_KARAMJA",
+  "region_map_section": "MAPSEC_KARAMJA_VOLCANO",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

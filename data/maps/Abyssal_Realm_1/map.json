@@ -3,7 +3,7 @@
   "name": "Abyssal_Realm_1",
   "layout": "LAYOUT_ABYSSAL_REALM_1",
   "music": "MUS_PS_VICTORY_ROAD",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_SPECIAL_AREA",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

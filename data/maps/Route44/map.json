@@ -3,7 +3,7 @@
   "name": "Route44",
   "layout": "LAYOUT_ROUTE44",
   "music": "MUS_PS_ROUTE_WILDERNESS",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_WILDERNESS",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_WILDERNESS",

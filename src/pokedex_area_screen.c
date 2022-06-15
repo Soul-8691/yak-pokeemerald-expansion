@@ -357,6 +357,7 @@ static void FindMapsWithMon(u16 species)
                 switch (sFeebasData[i][1])
                 {
                     case MAP_GROUP_OVERWORLD_MONS:
+                    case MAP_GROUP_OVERWORLD_MONS_1:
                         SetAreaHasMon(sFeebasData[i][1], sFeebasData[i][2]);
                         break;
                     case MAP_GROUP_SPECIAL_MONS_1:
@@ -374,6 +375,7 @@ static void FindMapsWithMon(u16 species)
                 switch (gWildMonHeaders[i].mapGroup)
                 {
                     case MAP_GROUP_OVERWORLD_MONS:
+                    case MAP_GROUP_OVERWORLD_MONS_1:
                         SetAreaHasMon(gWildMonHeaders[i].mapGroup, gWildMonHeaders[i].mapNum);
                         break;
                     case MAP_GROUP_SPECIAL_MONS_1:
@@ -468,6 +470,8 @@ static bool8 MapHasMon(const struct WildPokemonHeader *info, u16 species)
     if (MonListHasMon(info->fishingMonsInfo, species, 12))
         return TRUE;
     if (MonListHasMon(info->rockSmashMonsInfo, species, 5))
+        return TRUE;
+    if (MonListHasMon(info->wheatMonsInfo, species, 5))
         return TRUE;
     return FALSE;
 }

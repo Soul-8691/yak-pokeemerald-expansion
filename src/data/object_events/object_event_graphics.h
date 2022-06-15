@@ -55,7 +55,7 @@ const u16 gObjectEventPaletteNull27[16] = {};
 const u16 gObjectEventPaletteNull28[16] = {};
 const u16 gObjectEventPaletteNull29[16] = {};
 //const u32 gObjectEventPic_MayMachBike[] = INCBIN_U32("graphics/object_events/pics/people/may/mach_bike.4bpp");
-const u32 gObjectEventPic_MayAcroBike[] = INCBIN_U32("graphics/object_events/pics/people/may/acro_bike.4bpp");
+//const u32 gObjectEventPic_MayAcroBike[] = INCBIN_U32("graphics/object_events/pics/people/may/acro_bike.4bpp");
 //const u32 gObjectEventPic_MaySurfing[] = INCBIN_U32("graphics/object_events/pics/people/may/surfing.4bpp");
 const u32 gObjectEventPic_MayFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/may/field_move.4bpp");
 //const u32 gObjectEventPic_MayFishing[] = INCBIN_U32("graphics/object_events/pics/people/may/fishing.4bpp");
@@ -390,11 +390,13 @@ const u32 gObjectEventPic_MayRunning[] = INCBIN_U32("graphics/object_events/pics
 const u32 gObjectEventPic_MayFishing[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_female/fishing.4bpp");
 const u32 gObjectEventPic_MaySurfing[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_female/surfing.4bpp");
 const u32 gObjectEventPic_MayMachBike[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_female/terrorbird.4bpp");
+const u32 gObjectEventPic_MayAcroBike[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_female/yak.4bpp");
 const u32 gObjectEventPic_MayUnderwater[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_female/underwater.4bpp");
+//const u32 gObjectEventPic_BrendanFieldMove[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/protaganist_male/field_move.4bpp");
 
 
 
-//mining
+//MINING ORES
 const u32 gObjectEventPic_CopperOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/copper_ore.4bpp");
 const u32 gObjectEventPic_TinOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/tin_ore.4bpp");
 const u32 gObjectEventPic_IronOre[] = INCBIN_U32("graphics/object_events/pics/pokescape_mining/iron_ore.4bpp");
@@ -409,7 +411,7 @@ const u32 gObjectEventPic_BaneOre[] = INCBIN_U32("graphics/object_events/pics/po
 const u16 gObjectEventPalette_OrePal[] = INCBIN_U16("graphics/object_events/pics/pokescape_mining/ore_pal1.gbapal");
 const u16 gObjectEventPalette_OrePal2[] = INCBIN_U16("graphics/object_events/pics/pokescape_mining/ore_pal2.gbapal");
 
-//farming
+//FARMING CROPS
 const u32 gObjectEventPic_CabbageCrop[] = INCBIN_U32("graphics/object_events/pics/berry_trees/cabbage_crop.4bpp");
 const u16 gObjectEventPalette_CabbageCrop[] = INCBIN_U16("graphics/object_events/palettes/cabbage_crop.gbapal");
 

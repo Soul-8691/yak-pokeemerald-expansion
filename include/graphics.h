@@ -9387,6 +9387,8 @@ extern const u32 gItemIcon_DragonNet[];
 extern const u32 gItemIconPalette_DragonNet[];
 extern const u32 gItemIcon_TerrorbirdPouch[];
 extern const u32 gItemIconPalette_TerrorbirdPouch[];
+extern const u32 gItemIcon_YakPouch[];
+extern const u32 gItemIconPalette_YakPouch[];
 
 extern const u32 gItemIcon_Map[];
 extern const u32 gItemIconPalette_Map[];

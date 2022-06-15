@@ -3,7 +3,7 @@
   "name": "Wilderness_Volcano_Lobby",
   "layout": "LAYOUT_WILDERNESS_VOLCANO_LOBBY",
   "music": "MUS_PS_VICTORY_ROAD",
-  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "region_map_section": "MAPSEC_WILDERNESS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_WILDERNESS",

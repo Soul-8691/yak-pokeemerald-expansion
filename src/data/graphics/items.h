@@ -914,6 +914,9 @@ const u32 gItemIconPalette_DragonNet[] = INCBIN_U32("graphics/items/pokescape_ic
 const u32 gItemIcon_TerrorbirdPouch[] = INCBIN_U32("graphics/items/pokescape_icons/terrorbird_pouch.4bpp.lz");
 const u32 gItemIconPalette_TerrorbirdPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/terrorbird_pouch.gbapal.lz");
 
+const u32 gItemIcon_YakPouch[] = INCBIN_U32("graphics/items/pokescape_icons/yak_pouch.4bpp.lz");
+const u32 gItemIconPalette_YakPouch[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/yak_pouch.gbapal.lz");
+
 const u32 gItemIcon_Map[] = INCBIN_U32("graphics/items/pokescape_icons/map.4bpp.lz");
 const u32 gItemIconPalette_Map[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/map.gbapal.lz");
 

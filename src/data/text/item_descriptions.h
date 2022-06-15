@@ -2134,9 +2134,9 @@ static const u8 sSnowGlobeDesc[] = _(
     "Weather.");
 
 static const u8 sNewcomerMapDesc[] = _(
-    "A map of Pokescape.\n"
+    "A map of PokeScape.\n"
     "\n"
-    "(DO NOT USE)");
+    "");
 //KEY ITEMS  HMS
 static const u8 sPickaxeDesc[] = _(
     "Used to mine rocks.\n"
@@ -2187,6 +2187,12 @@ static const u8 sTerrorbirdDesc[] = _(
     "Summon a Terrorbird\n"
     "to ride.\n"
     "");
+
+static const u8 sYakDesc[] = _(
+    "Summon a Yak\n"
+    "to ride.\n"
+    "");
+
 
 static const u8 sSmallNetDesc[] = _(
     "Use by any body of\n"

@@ -750,3 +750,10 @@ gMetatiles_Dungeoneering::
 	.align 1
 gMetatileAttributes_Dungeoneering::
 	.incbin "data/tilesets/secondary/dungeoneering/metatile_attributes.bin"
+	.align 1
+gMetatiles_PokeScape_HAM::
+	.incbin "data/tilesets/secondary/pokescape_ham/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_PokeScape_HAM::
+	.incbin "data/tilesets/secondary/pokescape_ham/metatile_attributes.bin"

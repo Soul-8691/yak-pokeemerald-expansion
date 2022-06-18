@@ -2270,3 +2270,23 @@ gTilesetPalettes_Dungeoneering::
 	.align 2
 gTilesetTiles_Dungeoneering::
 	.incbin "data/tilesets/secondary/dungeoneering/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_PokeScape_HAM::
+	.incbin "data/tilesets/secondary/pokescape_ham/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_ham/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_ham/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_ham/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_ham/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_ham/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_ham/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_ham/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_ham/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_ham/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_ham/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_ham/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/pokescape_ham/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_PokeScape_HAM::
+	.incbin "data/tilesets/secondary/pokescape_ham/tiles.4bpp.lz"

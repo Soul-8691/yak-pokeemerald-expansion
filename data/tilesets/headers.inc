@@ -1129,3 +1129,14 @@ gTileset_Dungeoneering::
 	.4byte gMetatiles_Dungeoneering
 	.4byte gMetatileAttributes_Dungeoneering
 	.4byte NULL
+
+	.align 2
+gTileset_PokeScape_HAM::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_PokeScape_HAM
+	.4byte gTilesetPalettes_PokeScape_HAM
+	.4byte gMetatiles_PokeScape_HAM
+	.4byte gMetatileAttributes_PokeScape_HAM
+	.4byte NULL

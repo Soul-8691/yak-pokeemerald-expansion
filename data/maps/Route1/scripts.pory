@@ -350,21 +350,21 @@ script ErnestAndVeronica {
             case 2: 
 			case 3: 
             case 4:
-                //applymovement(32, HAM_Movement7_7)
+                
                 playmoncry(SPECIES_TORCHIC, 0)
                 namebox("Ernest")
                 msgbox(format("Bwak bwak bwwwaaaakk!"))
                 waitmoncry
                 hidenamebox
                 closemessage
-                waitmovement(0)
+                
                 applymovement(6, HAM_Movement7_6)
                 namebox("Veronica")
                 msgbox(format("What do you mean a scientist turned you into a chicken!?\pYou were meant to get directions!"))
                 hidenamebox
                 closemessage
                 waitmovement(0)
-                //applymovement(32, HAM_Movement7_7)
+                
                 playmoncry(SPECIES_TORCHIC, 0)
                 namebox("Ernest")
                 msgbox(format("Bwakbawk."))
@@ -374,21 +374,21 @@ script ErnestAndVeronica {
                 waitmoncry
                 hidenamebox
                 closemessage
-                waitmovement(0)
+                
                 applymovement(6, HAM_Movement7_6)
                 namebox("Veronica")
                 msgbox(format("Well go get him to change you back!\pI don't want to be engaged to a chicken!\pThat's just fowl..."))
                 hidenamebox
                 closemessage
                 waitmovement(0)
-                //applymovement(32, HAM_Movement7_7)
+                
                 playmoncry(SPECIES_COMBUSKEN, 0)
                 namebox("Ernest")
                 msgbox(format("Bwak..."))
                 waitmoncry
                 hidenamebox
                 closemessage
-                waitmovement(0)
+                
                 release
                 end
             case 5:

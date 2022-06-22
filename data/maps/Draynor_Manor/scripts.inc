@@ -29,7 +29,6 @@ WizardsTower_DraynorManor_STATE::
 WizardsTower_DraynorManor_STATE_2:
 	removeobject 1
 	setflag FLAG_TEMP_1
-	setvar VAR_TEMP_0, 1
 	release
 	end
 

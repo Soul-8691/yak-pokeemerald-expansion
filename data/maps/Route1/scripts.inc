@@ -294,7 +294,6 @@ ErnestAndVeronica_2:
 	waitmoncry
 	hidenamebox
 	closemessage
-	waitmovement 0
 	applymovement 6, HAM_Movement7_6
 	namebox ErnestAndVeronica_Text_2
 	msgbox ErnestAndVeronica_Text_3
@@ -310,7 +309,6 @@ ErnestAndVeronica_2:
 	waitmoncry
 	hidenamebox
 	closemessage
-	waitmovement 0
 	applymovement 6, HAM_Movement7_6
 	namebox ErnestAndVeronica_Text_2
 	msgbox ErnestAndVeronica_Text_6
@@ -323,7 +321,6 @@ ErnestAndVeronica_2:
 	waitmoncry
 	hidenamebox
 	closemessage
-	waitmovement 0
 	release
 	end
 

@@ -186,8 +186,8 @@
       "x": 14,
       "y": 26,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "1",
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "0",
       "script": "BLOCK_DraynorManor_Trees"
     },
     {
@@ -195,8 +195,8 @@
       "x": 15,
       "y": 26,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
-      "var_value": "1",
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "0",
       "script": "BLOCK_DraynorManor_Trees"
     },
     {

@@ -33,7 +33,7 @@ script WizardsTower_DraynorManor_STATE{
                 //HIDE NPCS
                 removeobject(1) //ariane
                 setflag(FLAG_TEMP_1)
-				setvar(VAR_TEMP_0, 1)
+				//setvar(VAR_TEMP_0, 1)
                 release
                 end  
 			case 6: 

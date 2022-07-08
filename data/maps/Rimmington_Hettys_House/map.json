@@ -2,7 +2,7 @@
   "id": "MAP_RIMMINGTON_HETTYS_HOUSE",
   "name": "Rimmington_Hettys_House",
   "layout": "LAYOUT_RIMMINGTON_HETTYS_HOUSE",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_LUMBRIDGE",
   "region_map_section": "MAPSEC_RIMMINGTON",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_RIMMINGTON_NPC_16",
       "flag": "0"
     }
   ],

@@ -1,4 +1,3 @@
-
 const OBJ_EVENT_ID_ZEZIMA = 1
 const OBJ_EVENT_ID_BOATY = 2
 const OBJ_EVENT_ID_DEMONHEADGE = 5
@@ -12,15 +11,11 @@ mapscripts Rimmington_MapScripts{
 }
 
 
-
-
-
-
 script Rimmington_STATE{
 	switch (var(VAR_POKESCAPE_RIMMINGTON_STATE)){ 
 		case 0: 
             //NPCS House Portal
-            playbgm(MUS_RG_GAME_CORNER, 1)
+            //playbgm(MUS_RG_GAME_CORNER, 1)
 
 			setobjectxyperm(OBJ_EVENT_ID_ZEZIMA,22,5)
 			setobjectmovementtype(OBJ_EVENT_ID_ZEZIMA,MOVEMENT_TYPE_FACE_UP)
@@ -66,7 +61,6 @@ script Rimmington_STATE{
             setflag(FLAG_TEMP_2)
             release
             end
-
     	case 1: 
             //HIDE HOUSE PARTIES
             removeobject (OBJ_EVENT_ID_ZEZIMA)
@@ -81,13 +75,10 @@ script Rimmington_STATE{
             removeobject (25)
             removeobject (23)
             setflag(FLAG_TEMP_1)
-
             setobjectxyperm(27,21,7) //RSMVer_M
 			setobjectmovementtype(27,MOVEMENT_TYPE_LOOK_AROUND)
-
             release
-            end
-            
+            end           
 		case 2: 
 		case 3: 
 		case 4: 
@@ -95,17 +86,340 @@ script Rimmington_STATE{
 		case 6: 
 		case 7: 
 		case 8: 
-		case 9: 
-		
+		case 9: 		
 			release
 			end
-
 		}
+}
+
+
+//ITEMS
+//HIDDEN ITEMS:
+script ITEM_RIMMINGTON_4
+{
+    finditem(ITEM_LAMP_SPATT)
+    end
+}
+
+script ITEM_RIMMINGTON_5
+{
+    finditem(ITEM_LAMP_SPATT)
+    end
+}
+
+
+
+//RIMMINGTON TOWN
+script NPC_RIMMINGTON_CustomsOfficer{
+    lock
+    faceplayer
+    namebox("OFFICER")
+    msgbox(format("Behave yourself otherwise I will take you to Rock Island Prison.\pYou don't want to go to Rock Island Prison."))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_JagexMod{
+    lock
+    faceplayer
+    namebox("Mod ???")
+    msgbox(format("I am a ninja!\pNow you see me."))
+    hidenamebox
+    closemessage
+    fadescreen(FADE_TO_BLACK)
+    removeobject (10) //HIDEJMOD
+    setflag(FLAG_TEMP_A)
+    delay(8)
+    fadescreen(FADE_FROM_BLACK)
+    namebox("Mod ???")
+    msgbox(format("Now you don't…"))
+    hidenamebox
+    closemessage
+    release
+    end
+}
+
+script NPC_RIMMINGTON_PETER{
+    lock
+    faceplayer
+    namebox("PETER")
+    msgbox(format("There are a lot of slushing noises coming from the bottom of that well.\pSomeone should take a look."))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_GnomeBoiKevin{
+    lock
+    faceplayer
+    namebox("Kevin")
+    msgbox(format("Hiya!\pI am Little GnomeBoi Kevin!\pYou look exhausted, where did you come from?\p…{PAUSE 15}… LUMBRIDGE!?\pThis will not do!\pHere take this!"))
+    hidenamebox
+    giveitem (ITEM_TERRORBIRD_POUCH)
+    namebox("Kevin")
+    msgbox(format("You can use that pouch to summon a lightning blue fast Terrorbird!\p…{PAUSE 15}…{PAUSE 15} NO!\pDon't use it in battle.\nYou ride it!\pIt will help you travel the land of Gilenor.\pIt is my gift to you.\pAll I ask in return is for you to treat it well."))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_TERRORBIRD
+{
+	lock
+	faceplayer
+    playmoncry(SPECIES_WINGULL, 0)
+	msgbox(format("SKREEEE!"))
+    waitmoncry
+	release
+	end
+}
+
+script NPC_RIMMINGTON_NPC_8{
+    lock
+    faceplayer
+    namebox("Taria")
+    msgbox(format("Have you heard the rumours of a really strong monster in the Rimmington Mines?"))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_NPC_9{
+    lock
+    faceplayer
+    namebox("CUPHOLDER")
+    msgbox(format("CUPHOLDER"))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_NPC_10{
+    lock
+    faceplayer
+    namebox("CUPHOLDER")
+    msgbox(format("CUPHOLDER"))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_NPC_11{
+    lock
+    faceplayer
+    namebox("CUPHOLDER")
+    msgbox(format("CUPHOLDER"))
+    hidenamebox
+    release
+    end
+}
+//Show skippy a mudskipper?
+script NPC_RIMMINGTON_NPC_SKIPPY{
+    lock
+    faceplayer
+    namebox("SKIPPY")
+    msgbox(format("The Mudskippers!"))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_NPC_16{
+    lock
+    faceplayer
+    namebox("HETTY")
+    msgbox(format("Newts?\pNo I don't have any why do you ask?"))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_NPC_17{
+    lock
+    faceplayer
+    namebox("CUPHOLDER")
+    msgbox(format("CUPHOLDER"))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_NPC_18{
+    lock
+    faceplayer
+    namebox("CUPHOLDER")
+    msgbox(format("CUPHOLDER"))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_NPC_19{
+    lock
+    faceplayer
+    namebox("CUPHOLDER")
+    msgbox(format("CUPHOLDER"))
+    hidenamebox
+    release
+    end
+}
+
+//SHOP
+script NPC_RIMMINGTON_NPC_12{
+    lock
+    faceplayer
+    namebox("CUPHOLDER")
+    msgbox(format("If you ever need anything unnoted I am your guy!"))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_NPC_13{
+    lock
+    faceplayer
+    namebox("ASSISTANT")
+    msgbox(format("Oh no!\pWe have almost run out of our supply of bread for this month!"))
+    hidenamebox
+    release
+    end
+}
+
+script Generalstore_RIMMINGTON_Clerk {
+    lock
+    faceplayer
+    namebox ("CLERK")
+    msgbox(format("Welcome to the Rimmington General Store.\pHow may I help you?"))
+    waitmessage
+    hidenamebox
+    pokemart (GeneralStoreRimmington)
+    msgbox("Thank you, come again!")
+    release
+}
+
+raw `
+    .align 2
+GeneralStoreRimmington:
+    .2byte ITEM_BRONZE_POUCH
+    .2byte ITEM_IRON_POUCH
+    .2byte ITEM_BREAD
+    .2byte ITEM_CAKE
+	.2byte ITEM_WIZARDS_BLIZZARD
+	.2byte ITEM_CHOCOLATE_SUNDAY
+	.2byte ITEM_DRUNK_DRAGON
+	.2byte ITEM_FRUIT_BLAST
+	.2byte ITEM_PINEAPPLE_PUNCH
+    .2byte ITEM_NONE
+    release
+    end
+`
+
+
+
+
+
+
+//SIGNPOSTS
+script RIMMINGTON_WELL {
+    msgbox(format("It is a well.\pIt looks really dark down there."))
+    checkitem(ITEM_LANTERN, 1)
+        if (var(VAR_RESULT)){
+            msgbox(format("Would you like to climb into the well?"), MSGBOX_YESNO)
+                if (var(VAR_RESULT)){
+                    msgbox(format("You climb down the well."))
+                    warp (MAP_RIMMINGTON_MINES_B2F,0,0,0)
+                    closemessage
+                    release
+                    end
+                }
+                release
+                end
+        }
+        else {
+            //msgbox(format("You don't have a lantern."))
+            closemessage
+            release
+            end
+        }
+    closemessage
+    release
+    end
+}
+
+script RIMMINGTON_HOUSE_PORTAL{
+
+    msgbox(format("It is a House Portal.\pWhich house would you like to go to?"))
+    multichoicedefault (1, 0, MULTI_POH, 0, 0)
+    switch (var(VAR_RESULT))
+    {
+        case 0:
+            msgbox(format("Going to your house."))
+            //goto (SecretBase_EventScript_CheckEntrance_POH)            
+        case 1:
+            msgbox(format("Going to Cursed You's House."))
+            warp (MAP_POH_1,0,0,0)
+            end
+        case 2:
+            msgbox(format("Going to FaladorEvent House."))
+        case 3:
+            //compare (VAR_0x8007, SECRET_BASE_YELLOW_CAVE)
+            //goto_if_eq (Thok_house)
+            msgbox(format("Thoks house is located in Relleka."))
+        case 4:
+            msgbox(format("You have no friends."))
+    }
+    release
+    end
+}
+
+script RIMMINGTON_SIGNPOST_HOUSEPORTAL
+{
+	msgbox(format("Rimmington House Portal."))
+	closemessage
+	end
+}
+
+script RIMMINGTON_SIGNPOST_RIMMINGTON
+{
+	msgbox(format("Rimmington, known for it's famous house parties."))
+	closemessage
+	end
 }
 
 
 
 
+
+
+
+
+
+script NPC_SETVAR_RIMMINGTON{
+    lock
+    faceplayer
+    namebox("RIMMINGTON VAR")
+    if((var(VAR_POKESCAPE_RIMMINGTON_STATE) == 0)){
+        msgbox(format("THE VAR IS NOW SET TO 1\p  {PK}{SUPER_ER} {UP_ARROW}{SUPER_E}{SUPER_RE}⋯…♂♂▶{TALL_PLUS}⋯ー。{UNK_SPACER}"))
+        setvar(VAR_POKESCAPE_RIMMINGTON_STATE, 1)
+        hidenamebox
+        release
+        end
+    }
+    else {
+        msgbox(format("THE VAR IS NOW SET TO 0"))
+        setvar(VAR_POKESCAPE_RIMMINGTON_STATE, 0)
+        hidenamebox
+        release
+        end
+
+    }
+}
+
+
+
+
+//HOUSE PARTY LINE ------------------------------------------
 script NPC_RIMMINGTON_FANBOYNOOB_1{
     
     namebox("FAN NOOB")
@@ -189,7 +503,6 @@ script NPC_RIMMINGTON_Boaty{
     end
 }
 
-
 script NPC_RIMMINGTON_NPC_1{
     lock
     faceplayer
@@ -209,7 +522,6 @@ script NPC_RIMMINGTON_NPC_2{
     end
 }
 
-
 script NPC_RIMMINGTON_Tehnoobshow{
     
     namebox("Tehnoobshow")
@@ -217,172 +529,6 @@ script NPC_RIMMINGTON_Tehnoobshow{
     hidenamebox
     release
     end
-}
-
-
-script NPC_RIMMINGTON_CustomsOfficer{
-    lock
-    faceplayer
-    namebox("OFFICER")
-    msgbox(format("Behave yourself otherwise I will take you to Rock Island Prison.\pYou don't want to go to Rock Island Prison."))
-    hidenamebox
-    release
-    end
-}
-
-script NPC_RIMMINGTON_JagexMod{
-    lock
-    faceplayer
-    namebox("Mod ???")
-    msgbox(format("I am a ninja!\pNow you see me."))
-    hidenamebox
-    closemessage
-    fadescreen(FADE_TO_BLACK)
-    removeobject (10) //HIDEJMOD
-    setflag(FLAG_TEMP_A)
-    delay(8)
-    fadescreen(FADE_FROM_BLACK)
-    namebox("Mod ???")
-    msgbox(format("Now you don't…"))
-    hidenamebox
-    closemessage
-    release
-    end
-}
-
-script NPC_RIMMINGTON_PETER{
-    lock
-    faceplayer
-    namebox("PETER")
-    msgbox(format("There are a lot of slushing noises coming from the bottom of this well.\pSomeone should take a look."))
-    hidenamebox
-    release
-    end
-}
-
-script NPC_RIMMINGTON_GnomeBoiKevin{
-    lock
-    faceplayer
-    namebox("Kevin")
-    msgbox(format("Hiya!\pI am Little GnomeBoi Kevin!\pYou look exhausted, where did you come from?\p…{PAUSE 15}… LUMBRIDGE!?\pThis will not do!\pHere take this!"))
-    hidenamebox
-    giveitem (ITEM_TERRORBIRD_POUCH)
-    namebox("Kevin")
-    msgbox(format("You can use that pouch to summon a lightning blue fast Terrorbird!\p…{PAUSE 15}…{PAUSE 15} NO!\pDon't use it in battle.\nYou ride it!\pIt will help you travel the land of Gilenor.\pIt is my gift to you.\pAll I ask in return is for you to treat it well."))
-    hidenamebox
-    release
-    end
-}
-
-script NPC_TERRORBIRD
-{
-	lock
-	faceplayer
-    playmoncry(SPECIES_WINGULL, 0)
-	msgbox(format("SKREEEE!"))
-    waitmoncry
-	release
-	end
-}
-
-
-//SIGNPOSTS
-script RIMMINGTON_WELL {
-    msgbox(format("It is a well.\pIt looks really dark down there."))
-    checkitem(ITEM_LANTERN, 1)
-        if (var(VAR_RESULT)){
-            msgbox(format("Would you like to climb into the well?"), MSGBOX_YESNO)
-                if (var(VAR_RESULT)){
-                    msgbox(format("You climb down the well."))
-                    warp (MAP_MAZCAB_OTOT,0,0,0)
-                    closemessage
-                    release
-                    end
-                }
-                release
-                end
-        }
-        else {
-            //msgbox(format("You don't have a lantern."))
-            closemessage
-            release
-            end
-        }
-    closemessage
-    release
-    end
-}
-
-script RIMMINGTON_HOUSE_PORTAL{
-
-    msgbox(format("It is a House Portal.\pWhich house would you like to go to?"))
-    multichoicedefault (1, 0, MULTI_POH, 0, 0)
-    switch (var(VAR_RESULT))
-    {
-        case 0:
-            msgbox(format("Going to your house."))
-            //goto (SecretBase_EventScript_CheckEntrance_POH)            
-        case 1:
-            msgbox(format("Going to Cursed You's House."))
-            warp (MAP_POH_1,0,0,0)
-            end
-        case 2:
-            msgbox(format("Going to FaladorEvent House."))
-        case 3:
-            //compare (VAR_0x8007, SECRET_BASE_YELLOW_CAVE)
-            //goto_if_eq (Thok_house)
-            msgbox(format("Thoks house is located in Relleka."))
-        case 4:
-            msgbox(format("You have no friends."))
-    }
-    release
-    end
-}
-
-
-
-
-script RIMMINGTON_SIGNPOST_HOUSEPORTAL
-{
-	msgbox(format("Rimmington House Portal."))
-	closemessage
-	end
-}
-
-script RIMMINGTON_SIGNPOST_RIMMINGTON
-{
-	msgbox(format("Rimmington, known for it's famous house parties."))
-	closemessage
-	end
-}
-
-
-
-
-
-
-
-
-
-script NPC_SETVAR_RIMMINGTON{
-    lock
-    faceplayer
-    namebox("RIMMINGTON VAR")
-    if((var(VAR_POKESCAPE_RIMMINGTON_STATE) == 0)){
-        msgbox(format("THE VAR IS NOW SET TO 1\p  {PK}{SUPER_ER} {UP_ARROW}{SUPER_E}{SUPER_RE}⋯…♂♂▶{TALL_PLUS}⋯ー。{UNK_SPACER}"))
-        setvar(VAR_POKESCAPE_RIMMINGTON_STATE, 1)
-        hidenamebox
-        release
-        end
-    }
-    else {
-        msgbox(format("THE VAR IS NOW SET TO 0"))
-        setvar(VAR_POKESCAPE_RIMMINGTON_STATE, 0)
-        hidenamebox
-        release
-        end
-
-    }
 }
 
 
@@ -426,7 +572,6 @@ script NPC_RIMMINGTON_DemonAndStan{
                 hidenamebox
                 release
                 end
-        
             case 3: 
                 applymovement(OBJ_EVENT_ID_HYPERSTAN, MOVE_HYPERSTAN_1)
                 namebox("Hyper Stan")
@@ -439,7 +584,6 @@ script NPC_RIMMINGTON_DemonAndStan{
                 hidenamebox
                 release
                 end
-
             case 4: 
                 applymovement(OBJ_EVENT_ID_DEMONHEADGE, MOVE_DEMONHEADGE_1)
                 namebox("Demonheadge")
@@ -452,7 +596,6 @@ script NPC_RIMMINGTON_DemonAndStan{
                 hidenamebox
                 release
                 end
-
             case 5: 
                 applymovement(OBJ_EVENT_ID_DEMONHEADGE, MOVE_DEMONHEADGE_1)
                 namebox("Demonheadge")
@@ -465,8 +608,6 @@ script NPC_RIMMINGTON_DemonAndStan{
                 hidenamebox
                 release
                 end
-
-
             case 6: 
                 applymovement(OBJ_EVENT_ID_DEMONHEADGE, MOVE_DEMONHEADGE_1)
                 namebox("Demonheadge")
@@ -479,8 +620,6 @@ script NPC_RIMMINGTON_DemonAndStan{
                 hidenamebox
                 release
                 end
-
-
             case 7: 
                 applymovement(OBJ_EVENT_ID_HYPERSTAN, MOVE_HYPERSTAN_1)
                 namebox("Hyper Stan")
@@ -493,8 +632,6 @@ script NPC_RIMMINGTON_DemonAndStan{
                 hidenamebox
                 release
                 end
-
-
             case 8: 
                 applymovement(OBJ_EVENT_ID_DEMONHEADGE, MOVE_DEMONHEADGE_1)
                 namebox("Demonheadge")
@@ -507,8 +644,6 @@ script NPC_RIMMINGTON_DemonAndStan{
                 hidenamebox
                 release
                 end
-
-
             case 9: 
                 applymovement(OBJ_EVENT_ID_DEMONHEADGE, MOVE_DEMONHEADGE_1)
                 namebox("Demonheadge")
@@ -521,8 +656,6 @@ script NPC_RIMMINGTON_DemonAndStan{
                 hidenamebox
                 release
                 end
-
-
             case 10: 
                 applymovement(OBJ_EVENT_ID_DEMONHEADGE, MOVE_DEMONHEADGE_1)
                 namebox("Demonheadge")
@@ -535,8 +668,6 @@ script NPC_RIMMINGTON_DemonAndStan{
                 hidenamebox
                 release
                 end
-
-
             case 11: 
                 applymovement(OBJ_EVENT_ID_DEMONHEADGE, MOVE_DEMONHEADGE_1)
                 namebox("Demonheadge")
@@ -549,8 +680,6 @@ script NPC_RIMMINGTON_DemonAndStan{
                 hidenamebox
                 release
                 end
-
-
             case 12: 
                 applymovement(OBJ_EVENT_ID_HYPERSTAN, MOVE_HYPERSTAN_1)
                 namebox("Hyper Stan")
@@ -563,8 +692,6 @@ script NPC_RIMMINGTON_DemonAndStan{
                 hidenamebox
                 release
                 end
-
-
             case 13: 
                 applymovement(OBJ_EVENT_ID_HYPERSTAN, MOVE_HYPERSTAN_1)
                 namebox("Hyper Stan")
@@ -616,19 +743,10 @@ script NPC_RIMMINGTON_DemonAndStan{
                 hidenamebox
                 release
                 end
-
-
-
-
-
-
-			
         }
 	release
 	end
 }
-
-
 
 movement MOVE_DEMONHEADGE_1 {
     walk_in_place_right * 3
@@ -637,7 +755,7 @@ movement MOVE_DEMONHEADGE_1 {
 movement MOVE_HYPERSTAN_1 {
     walk_in_place_left * 3
 }
-
+//HOUSE PARTY LINE END ---------------------------
 
 
 
@@ -656,7 +774,6 @@ script POH_HOUSE_PORTAL{
     end
 }
 
-
 //ARIZRAIN
 script NPC_POH_ARIZRAIN{
     lock
@@ -667,6 +784,7 @@ script NPC_POH_ARIZRAIN{
     release
     end
 }
+
 //SKYTHEKID
 script NPC_POH_SKYTHEKID{
     lock
@@ -739,8 +857,6 @@ script NPC_POH_EXCL{
     end
 }
 
-
-
 //CURSED YOU
 script NPC_POH_CURSEDYOU{
     lock
@@ -808,3 +924,124 @@ script NPC_POH_RAPTOR{
     release
     end
 }
+
+
+
+
+
+
+
+
+
+//RIMMINGTON INDOORS
+
+//ITEMS
+//HIDDEN ITEMS: 
+
+script ITEM_RIMMINGTON_1
+{
+    finditem(ITEM_LAMP_SPATT)
+    end
+}
+
+script ITEM_RIMMINGTON_2
+{
+    finditem(ITEM_LAMP_SPATT)
+    end
+}
+
+script ITEM_RIMMINGTON_3
+{
+    finditem(ITEM_LAMP_SPATT)
+    end
+}
+
+//SCRIPTS
+
+script NPC_RIMMINGTON_NPC_14
+{
+    lock
+    faceplayer
+    namebox("CUPHOLDER")
+    msgbox(format("Why did we even move here, the neighbours are so noisy."))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_NPC_15
+{
+    lock
+    faceplayer
+    namebox("CUPHOLDER")
+    msgbox(format("CUPHOLDER"))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_NPC_3
+{
+    lock
+    faceplayer
+    namebox("CHEMIST")
+    msgbox(format("Welcome to my lab.\pDo you need any medicine?"))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_BONES
+{
+    lock
+    msgbox(format("Yuck!\pIt is a pile of Bones."))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_NPC_4
+{
+    lock
+    faceplayer
+    namebox("ROMMIK")
+    msgbox(format("Welcome to my clothing store.\pWould you like to change your outfit?"))
+    hidenamebox
+    release
+    end
+}
+script NPC_RIMMINGTON_NPC_5
+{
+    lock
+    faceplayer
+    namebox("CUPHOLDER")
+    msgbox(format("I want to buy a skillcape, but I appearntly don't have the level to wear it."))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_NPC_6
+{
+    lock
+    faceplayer
+    namebox("BRIAN")
+    msgbox(format("I'm all out of wood to fletch."))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_RIMMINGTON_NPC_7
+{
+    lock
+    faceplayer
+    namebox("OFFICER")
+    msgbox(format("Don't steal another adventurers monsters.\pOtherwise you will be shipped off to Rock Prison Island."))
+    hidenamebox
+    release
+    end
+}
+
+
+

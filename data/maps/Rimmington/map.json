@@ -2,7 +2,7 @@
   "id": "MAP_RIMMINGTON",
   "name": "Rimmington",
   "layout": "LAYOUT_RIMMINGTON",
-  "music": "MUS_PS_WIZARDS_TOWER",
+  "music": "MUS_PS_LUMBRIDGE",
   "region_map_section": "MAPSEC_RIMMINGTON",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -105,7 +105,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NPC_SETVAR_RIMMINGTON",
+      "script": "NPC_RIMMINGTON_NPC_8",
       "flag": "0"
     },
     {
@@ -170,7 +170,7 @@
       "movement_range_y": 44,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_RIMMINGTON_NPC_SKIPPY",
       "flag": "0"
     },
     {
@@ -183,7 +183,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_RIMMINGTON_NPC_18",
       "flag": "0"
     },
     {
@@ -196,7 +196,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_RIMMINGTON_NPC_17",
       "flag": "0"
     },
     {
@@ -209,7 +209,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_RIMMINGTON_NPC_19",
       "flag": "0"
     },
     {
@@ -228,7 +228,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_CHEF",
       "x": 33,
-      "y": 15,
+      "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -261,7 +261,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "ITEM_RIMMINGTON_5",
       "flag": "0"
     },
     {
@@ -313,7 +313,7 @@
       "movement_range_y": 5,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_RIMMINGTON_NPC_9",
       "flag": "0"
     },
     {
@@ -391,7 +391,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "ITEM_RIMMINGTON_4",
       "flag": "0"
     },
     {
@@ -404,7 +404,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_RIMMINGTON_NPC_11",
       "flag": "0"
     },
     {
@@ -417,7 +417,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_RIMMINGTON_NPC_10",
       "flag": "0"
     },
     {
@@ -488,7 +488,7 @@
       "x": 31,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_RIMMINGTON",
+      "dest_map": "MAP_RIMMINGTON_MINES_B2F",
       "dest_warp_id": 0
     },
     {
@@ -558,6 +558,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "RIMMINGTON_WELL"
+    },
+    {
+      "type": "sign",
+      "x": 27,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NPC_SETVAR_RIMMINGTON"
     }
   ]
 }

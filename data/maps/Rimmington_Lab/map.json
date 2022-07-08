@@ -2,7 +2,7 @@
   "id": "MAP_RIMMINGTON_LAB",
   "name": "Rimmington_Lab",
   "layout": "LAYOUT_RIMMINGTON_LAB",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_LUMBRIDGE",
   "region_map_section": "MAPSEC_RIMMINGTON",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -24,7 +24,7 @@
       "movement_range_y": 8,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_RIMMINGTON_NPC_3",
       "flag": "0"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "ITEM_RIMMINGTON_2",
       "flag": "0"
     },
     {
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_RIMMINGTON_BONES",
       "flag": "0"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "ITEM_RIMMINGTON_3",
       "flag": "0"
     }
   ],

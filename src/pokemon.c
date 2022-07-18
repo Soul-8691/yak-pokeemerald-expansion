@@ -9238,11 +9238,11 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
         default:
-            return MUS_PS_VS_TRAINER_F2P; //POKESCAPE
+            return MUS_PS_VS_TRAINER_P2P; //POKESCAPE
         }
     }
     else
-        return MUS_PS_VS_WILD_F2P;  //POKESCAPE
+        return MUS_PS_VS_WILD_P2P;  //POKESCAPE
 }
 
 

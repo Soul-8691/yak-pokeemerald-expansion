@@ -991,6 +991,16 @@ NPC_RIMMINGTON_NPC_7::
 	end
 
 
+NPC_Hanannie::
+	lock
+	faceplayer
+	namebox NPC_Hanannie_Text_0
+	msgbox NPC_Hanannie_Text_1
+	hidenamebox
+	release
+	end
+
+
 NPC_RIMMINGTON_CustomsOfficer_Text_0:
 	.string "OFFICER$"
 
@@ -1474,3 +1484,12 @@ NPC_RIMMINGTON_NPC_7_Text_0:
 	.string "monsters.\p"
 	.string "Otherwise you will be shipped off to\n"
 	.string "Rock Prison Island.$"
+
+NPC_Hanannie_Text_0:
+	.string "Hanannie$"
+
+NPC_Hanannie_Text_1:
+	.string "Hahahahahahahaa!!\p"
+	.string "Hello Chat!\p"
+	.string "Did you know Woodcutting is the best\n"
+	.string "skill ever?$"

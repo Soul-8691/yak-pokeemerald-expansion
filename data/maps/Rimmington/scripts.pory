@@ -1045,3 +1045,13 @@ script NPC_RIMMINGTON_NPC_7
 
 
 
+script NPC_Hanannie
+{
+    lock
+    faceplayer
+    namebox("Hanannie")
+    msgbox(format("Hahahahahahahaa!!\pHello Chat!\pDid you know Woodcutting is the best skill ever?"))
+    hidenamebox
+    release
+    end
+}

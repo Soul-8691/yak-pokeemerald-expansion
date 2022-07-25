@@ -185,7 +185,7 @@ ABYSSALRIFT_Mazcab_RETURN::
 
 ABYSSALRIFT_Mazcab_RETURN_2:
 	msgbox ABYSSALRIFT_Route8_ENTER_Text_1
-	warp MAP_ROUTE4, 1, 0, 0
+	warp MAP_ABYSSAL_REALM_1, 10, 0, 0
 	closemessage
 	release
 	end
@@ -409,7 +409,10 @@ ABYSSALRIFT_Mazcab_Shauny_Text_0:
 	.string "Shauny$"
 
 ABYSSALRIFT_Mazcab_Shauny_Text_1:
-	.string "It is not my Birthday!$"
+	.string "It is not my Birthday!\p"
+	.string "…\p"
+	.string "Oh wait, I am mistaken, today is indeed\n"
+	.string "my birthday.$"
 
 ALTAR_WATER_ENTER_Text_0:
 	.string "It is a mysterious Altar.$"

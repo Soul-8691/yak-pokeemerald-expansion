@@ -220,7 +220,7 @@ script ABYSSALRIFT_Mazcab_RETURN{
 msgbox(format("There is a rift in space.\pWould you like to enter it?"), MSGBOX_YESNO)
 				if (var(VAR_RESULT)){
                     msgbox(format("As you step into the rift the world around you starts to shimmer."))
-                    warp (MAP_ROUTE4,1,0,0)
+                    warp (MAP_ABYSSAL_REALM_1,10,0,0)
                     closemessage
                     release
                     end
@@ -234,7 +234,7 @@ msgbox(format("There is a rift in space.\pWould you like to enter it?"), MSGBOX_
 script ABYSSALRIFT_Mazcab_Shauny{
                     faceplayer
                     namebox("Shauny")
-                    msgbox(format("It is not my Birthday!"))
+                    msgbox(format("It is not my Birthday!\p…\pOh wait, I am mistaken, today is indeed my birthday."))
                     closemessage
                     hidenamebox
                     release

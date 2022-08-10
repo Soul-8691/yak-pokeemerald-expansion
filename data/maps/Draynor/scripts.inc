@@ -226,12 +226,14 @@ Generalstore_Draynor_Clerk::
 
     .align 2
 GeneralStoreDraynor:
-    .2byte ITEM_EMPTY_BUCKET
-    .2byte ITEM_EMPTY_POT
     .2byte ITEM_BRONZE_POUCH
     .2byte ITEM_IRON_POUCH
-    .2byte ITEM_EGG
-    .2byte ITEM_POTATO
+    .2byte ITEM_BREAD
+	.2byte ITEM_WIZARDS_BLIZZARD
+	.2byte ITEM_CHOCOLATE_SUNDAY
+	.2byte ITEM_DRUNK_DRAGON
+	.2byte ITEM_FRUIT_BLAST
+	.2byte ITEM_PINEAPPLE_PUNCH
     .2byte ITEM_NONE
     release
     end

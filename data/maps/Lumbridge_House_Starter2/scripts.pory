@@ -169,6 +169,7 @@ script Mithrilman_FALADOR1{
     playbgm (MUS_ENCOUNTER_MAY, 1)
     namebox ("Mithrilman")
     msgbox(format("West meet again knave, howst fares thoughst adventure?\pThine has already beaten the whitest of knights, and provenst that Mithrilmen are superior to those of the whitest armour.\pDo thoust wonder why thine am in the park?\pThine am contemplating catching a duck for thine arsenal.\pWord sayst the pen is mightiest than the sword and pens be made from feathers.\pSo who else than the duck wouldst be mightyer than the sword?\pWhy donst thine show ye, knave, the power of onst without a sword?"))
+    hidenamebox
     trainerbattle_no_intro(TRAINER_MITHRILMAN2,format("..."))
     goto(Mithrilman_FALADOR2)
 }

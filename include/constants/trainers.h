@@ -544,6 +544,9 @@
 #define TRAINER_ENCOUNTER_MUSIC_RICH        13 // Rich Boys and Gentlemen
 #define TRAINER_ENCOUNTER_MUSIC_PKER        14
 #define TRAINER_ENCOUNTER_MUSIC_HAM         15 //HAM GRUNTS
+#define TRAINER_ENCOUNTER_MUSIC_NOOB         16 //Happy noobs
+#define TRAINER_ENCOUNTER_MUSIC_CHOOB         17 //Scary choobs
+
 
 #define F_TRAINER_FEMALE (1 << 7)
 

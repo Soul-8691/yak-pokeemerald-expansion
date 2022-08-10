@@ -1,10 +1,15 @@
 Falador_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, Falador_MapScripts_MAP_SCRIPT_ON_LOAD
+	map_script MAP_SCRIPT_ON_TRANSITION, Falador_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
 
 Falador_MapScripts_MAP_SCRIPT_ON_LOAD:
 	call FALADOR_QUEST_STATE
 	call MODTIMBO_STATE
+	return
+
+Falador_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	call FALADOR_QUEST_STATE
 	return
 
 
@@ -26,6 +31,62 @@ MODTIMBO_STATE_3:
 	removeobject 5
 	setflag FLAG_MOD_TIMBO
 	return
+
+
+ITEM_FALADOR_1::
+	finditem ITEM_ADAMANT_POUCH
+	end
+
+
+ITEM_FALADOR_2::
+	finditem ITEM_TM26_KINGS_SHIELD
+	end
+
+
+FALADOR_SIGN::
+	lock
+	msgbox FALADOR_SIGN_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+FALADOR_MINES_SIGN::
+	lock
+	msgbox FALADOR_MINES_SIGN_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_STATUE::
+	lock
+	msgbox NPC_FALADOR_STATUE_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_STATUE_1::
+	lock
+	msgbox NPC_FALADOR_STATUE_1_Text_0
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADOR_DOG::
+	lock
+	namebox NPC_FALADOR_DOG_Text_0
+	msgbox NPC_FALADOR_DOG_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
 
 
 NPC_FALADOR_NPC_1::
@@ -633,17 +694,17 @@ FALADOR_QUEST_STATE_3:
 	return
 
 FALADOR_QUEST_STATE_4:
+	setflag FLAG_TEMP_2
+	setmetatile 24, 6, 609, 0
+	setmetatile 24, 7, 617, 0
+	setmetatile 25, 6, 609, 0
+	special DrawWholeMapView
 	removeobject 40
 	setflag FLAG_TEMP_1
 	removeobject 37
 	removeobject 38
 	removeobject 39
 	removeobject 27
-	setflag FLAG_TEMP_2
-	setmetatile 24, 3, 201, 0
-	setmetatile 24, 4, 201, 0
-	setmetatile 25, 3, 201, 0
-	special DrawWholeMapView
 	return
 
 
@@ -737,6 +798,27 @@ FALADOR_QUEST_STATE_CHANGER_7:
 	closemessage
 	return
 
+
+FALADOR_SIGN_Text_0:
+	.string "Falador, home of the White Knights.$"
+
+FALADOR_MINES_SIGN_Text_0:
+	.string "Dwarven Mines.$"
+
+NPC_FALADOR_STATUE_Text_0:
+	.string "It is a statue of Saradomin.$"
+
+NPC_FALADOR_STATUE_1_Text_0:
+	.string "It is a statue of Saradomin.\p"
+	.string "There appears to be some scribble on\n"
+	.string "the statue.\p"
+	.string "It reads, BOW TO THE GREAT ONE.$"
+
+NPC_FALADOR_DOG_Text_0:
+	.string "DALMATION$"
+
+NPC_FALADOR_DOG_Text_1:
+	.string "RUFF!$"
 
 NPC_FALADOR_NPC_1_Text_0:
 	.string "Have you heard about the Mining &\n"

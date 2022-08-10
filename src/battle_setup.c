@@ -1426,6 +1426,12 @@ void SetUpTrainerEncounterMusic(void)
         case TRAINER_ENCOUNTER_MUSIC_HAM:
             music = MUS_PS_ENCOUNTER_HAM;
             break;
+        case TRAINER_ENCOUNTER_MUSIC_NOOB:
+            music = MUS_PS_ENCOUNTER_NOOB;
+            break;
+        case TRAINER_ENCOUNTER_MUSIC_CHOOB:
+            music = MUS_PS_ENCOUNTER_GYM;
+            break;
         default:
             music = MUS_ENCOUNTER_SUSPICIOUS;
         }

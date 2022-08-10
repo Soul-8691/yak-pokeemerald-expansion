@@ -4,7 +4,13 @@ mapscripts Falador_Pub_1F_MapScripts{
 }
 
 
-
+//ITEMS---------------------------------
+//HIDDEN ITEMS:
+script ITEM_FALADORPUB_1
+{
+    finditem(ITEM_STAT_BEER)
+    end
+}
 
 
 script NPC_FALADORPUB_BARMAID_1

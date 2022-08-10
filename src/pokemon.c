@@ -9209,6 +9209,10 @@ u16 GetBattleBGM(void)
             return MUS_PS_VS_HAM;   //POKESCAPE
         case TRAINER_CLASS_HAM_BOSS:
             return MUS_PS_VS_HAM;   //POKESCAPE
+            case TRAINER_CLASS_BLACK_KNIGHT:
+            return MUS_PS_VS_KNIGHTS;   //POKESCAPE
+            case TRAINER_CLASS_WHITE_KNIGHT:
+            return MUS_PS_VS_KNIGHTS;   //POKESCAPE
         case TRAINER_CLASS_AQUA_LEADER:
         case TRAINER_CLASS_MAGMA_LEADER:
             return MUS_VS_AQUA_MAGMA_LEADER;

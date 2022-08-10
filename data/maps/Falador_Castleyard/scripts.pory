@@ -71,9 +71,21 @@ script NPC_FALADORCASTLE_QUEST_PART_1
 	msgbox(format("With me Theo."))
     closemessage
     hidenamebox
-    applymovement(OBJ_EVENT_ID_QUEST_OWEN, FALADORCASTLE_MOVEMENT_2)
-    applymovement(OBJ_EVENT_ID_QUEST_KNIGHT, FALADORCASTLE_MOVEMENT_3)
-    waitmovement(0)
+    //CHECK LOCATION
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+    if (var(VAR_TEMP_1) == 10){
+		applymovement(OBJ_EVENT_ID_QUEST_OWEN, FALADORCASTLE_MOVEMENT_2)
+        applymovement(OBJ_EVENT_ID_QUEST_KNIGHT, FALADORCASTLE_MOVEMENT_3)
+        waitmovement(0)
+	} else {
+		applymovement(OBJ_EVENT_ID_QUEST_OWEN, FALADORCASTLE_MOVEMENT_2)
+        applymovement(OBJ_EVENT_ID_QUEST_KNIGHT, FALADORCASTLE_MOVEMENT_3)
+        applymovement(OBJ_EVENT_ID_PLAYER, FALADORCASTLE_MOVEMENT_11)
+        waitmovement(0)
+	}
+
+
+
     removeobject(OBJ_EVENT_ID_QUEST_KNIGHT)
     removeobject(OBJ_EVENT_ID_QUEST_OWEN)
     setflag(FLAG_TEMP_1)
@@ -117,6 +129,11 @@ movement FALADORCASTLE_MOVEMENT_4{
 movement FALADORCASTLE_MOVEMENT_5{
     walk_up
 }
+movement FALADORCASTLE_MOVEMENT_11{
+    delay_8
+    lock_facing_direction
+    walk_left
+}
 
 script NPC_FALADORCASTLE_QUEST_PART_2
 {
@@ -145,14 +162,28 @@ script NPC_FALADORCASTLE_QUEST_AMIK_CHAT
 
 script NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT
 {
-	lock
-	faceplayer
-    namebox ("WHITE KNIGHT")
-	msgbox(format("Sorry but the castle is closed for all MvM Championship participants, until the disturbance within the Dwarven mines is resolved.\pWhich also means do not go poking around the mines in the north east of town, past the Party Room.\pWe don't want you getting in danger."))
+    switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
+		case 0:
+		case 1: 
+        case 2: 
+        case 3: 
+            lock
+            faceplayer
+            namebox ("WHITE KNIGHT")
+            msgbox(format("Sorry but the castle is closed for all MvM Championship participants, until the disturbance within the Dwarven mines is resolved.\pWhich also means do not go poking around the mines in the north east of town, past the Party Room.\pWe don't want you getting in danger."))
+        case 4: 
+        case 5: 
+            lock
+            faceplayer
+            namebox ("WHITE KNIGHT")
+            msgbox(format("Welcome to the Falador Castle!"))
+    }
     closemessage
     hidenamebox
-	release
-	end
+    release
+    end
+    
+	
 }
 
 
@@ -184,11 +215,11 @@ script NPC_FALADORCASTLE_QUEST_PART_4
     applymovement(OBJ_EVENT_ID_QUEST_OWEN, FALADORCASTLE_MOVEMENT_9) //Look at player.
     waitmovement(0)
     namebox ("SIR OWEN")
-	msgbox(format("Ah!\lNice timing, this is the challenger I spoke about."))
+	msgbox(format("Aha, nice timing!\pThis is the challenger I spoke about."))
     closemessage
     hidenamebox
     namebox ("SIR AMIK VARZE")
-	msgbox(format("I am grateful for your assistance within the mines. Have you considered joining the white knights?\pAh but I am getting ahead of myself, you mentioned you wished to challenge me to a battle.\pI know you've already proved yourself within the mines but one more challenge lays before you.\pMake it to the top of the castle, I shall be waiting.\pGood luck!"))
+	msgbox(format("I am grateful for your assistance within the mines.\pHave you considered joining the white knights?\pAh but I am getting ahead of myself, you mentioned you wished to challenge me to a battle.\pI know you've already proved yourself within the mines but one more challenge lays before you.\pMake it to the top of the castle, I shall be waiting.\pGood luck!"))
     closemessage
     hidenamebox
     applymovement(OBJ_EVENT_ID_QUEST_AMIK, FALADORCASTLE_MOVEMENT_10) // WALK AWAY
@@ -199,10 +230,14 @@ script NPC_FALADORCASTLE_QUEST_PART_4
 	msgbox(format("Good luck challenger and thank you again for your assistance."))
     closemessage
     hidenamebox
+    applymovement(OBJ_EVENT_ID_PLAYER, FALADORCASTLE_MOVEMENT_9) 
+    waitmovement(0)
     namebox ("SIR THEO")
 	msgbox(format("Thank you and I will see you soon!"))
     closemessage
     hidenamebox
+    applymovement(OBJ_EVENT_ID_PLAYER, FALADORCASTLE_MOVEMENT_12) 
+    waitmovement(0)
     applymovement(OBJ_EVENT_ID_QUEST_KNIGHT, FALADORCASTLE_MOVEMENT_10) // WALK AWAY
     applymovement(OBJ_EVENT_ID_QUEST_OWEN, FALADORCASTLE_MOVEMENT_10) // WALK AWAY
     waitmovement(0)
@@ -233,7 +268,9 @@ movement FALADORCASTLE_MOVEMENT_9{
 movement FALADORCASTLE_MOVEMENT_10{
     walk_down * 8
 }
-
+movement FALADORCASTLE_MOVEMENT_12{
+    face_down
+}
 //GYM BATLLES
 
 
@@ -243,13 +280,17 @@ script NPC_FALADORCASTLE_GYM_SIRTHEO {
 		case 4: 
 			lock
 			faceplayer
+            namebox("Sir Theo")
 			msgbox(format("Good luck navigating the castle."))
+            hidenamebox
 			release
 			end
         case 5:
 			lock
 			faceplayer
+            namebox("Sir Theo")
             msgbox(format("Look at you!\pHave you considered becoming a white knight like myself?"))
+            hidenamebox
             release
 			end
 	}
@@ -280,7 +321,7 @@ script NPC_FALADORCASTLE_GYM_TRAINER_2 {
 }
 //Sir Pryce
 script NPC_FALADORCASTLE_GYM_TRAINER_3 {
-	trainerbattle_single(TRAINER_FALADOR_GYM_3, format("Carefull where youre going there.\pYou wouldn't want to stumble into an ambush would you?"),format("Not on my watch.") )
+	trainerbattle_single(TRAINER_FALADOR_GYM_3, format("Careful where you are going there.\pYou would not want to stumble into an ambush would you?"),format("Not on my watch.") )
     switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
 		case 4: 
 			lock
@@ -353,14 +394,24 @@ script NPC_FALADORCASTLE_GYM_SIRAMIKVARZE {
         release
         end
     }
-    msgbox(format("I reccomend you make your way to Al Khaird or Varrock for your next challenge."))
+    msgbox(format("I recommend that you make your way to Al Khaird or Varrock for your next MvM gym challenge.\pUnless you would like to become a white knight instead?"))
     hidenamebox
     release
     end
 }
 
 
-
+script NPC_FALADORCASTLE_GYM_SIROWEN
+{
+	lock
+	faceplayer
+    namebox ("Sir Owen")
+	msgbox(format("Hello again, these guys won't talk.\pBut there does not seem to be anything stolen, so we aren't sure what they meant by distraction."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
 
 
 //ROUTE 23

@@ -165,6 +165,9 @@
 #define TRAINER_ROUTE24_GOBLIN_2     137
 #define TRAINER_ROUTE24_GOBLIN_3     138
 #define TRAINER_ROUTE24_GOBLIN_4     139
+#define TRAINER_MUDSKIPPERPOINT_SLAYER     140
+#define TRAINER_MUDSKIPPERPOINT_FISHERMAN_1     141
+#define TRAINER_MUDSKIPPERPOINT_FISHERMAN_2     142
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

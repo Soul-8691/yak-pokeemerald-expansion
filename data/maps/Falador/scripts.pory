@@ -10,6 +10,9 @@ mapscripts Falador_MapScripts {
     call(FALADOR_QUEST_STATE)
 	call(MODTIMBO_STATE)
     }
+	MAP_SCRIPT_ON_TRANSITION { //ON LOAD FOR MAP TILES
+    call(FALADOR_QUEST_STATE)
+    }
 } 
 
 
@@ -39,12 +42,70 @@ script MODTIMBO_STATE{
 
 
 
-
+//ITEMS---------------------------------
+//HIDDEN ITEMS:
+script ITEM_FALADOR_1
+{
+    finditem(ITEM_ADAMANT_POUCH)
+    end
+}
+script ITEM_FALADOR_2
+{
+    finditem(ITEM_TM26_KINGS_SHIELD)
+    end
+}
 
 
 
 
 //OUTDOORS
+script FALADOR_SIGN
+{
+	lock
+	msgbox(format("Falador, home of the White Knights."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+script FALADOR_MINES_SIGN
+{
+	lock
+	msgbox(format("Dwarven Mines."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+script NPC_FALADOR_STATUE
+{
+	lock
+	msgbox(format("It is a statue of Saradomin."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+script NPC_FALADOR_STATUE_1
+{
+	lock
+	msgbox(format("It is a statue of Saradomin.\pThere appears to be some scribble on the statue.\pIt reads, BOW TO THE GREAT ONE."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+script NPC_FALADOR_DOG
+{
+	lock
+	namebox ("DALMATION")
+	msgbox(format("RUFF!"))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
+
 script NPC_FALADOR_NPC_1
 {
 	lock
@@ -842,17 +903,17 @@ script FALADOR_QUEST_STATE{
 			return
 
 		case 5: //REMOVE DWARVEN MINES BLOCKADE 
-            removeobject(OBJ_EVENT_ID_BLOCK_KNIGHT)
+            setflag(FLAG_TEMP_2)
+			setmetatile(24, 6, 609, 0)
+			setmetatile(24, 7, 617, 0)
+			setmetatile(25, 6, 609, 0)
+			special(DrawWholeMapView) 
+			removeobject(OBJ_EVENT_ID_BLOCK_KNIGHT)
 			setflag(FLAG_TEMP_1)
 			removeobject(OBJ_EVENT_ID_BLOCK_GUARD_1)
 			removeobject(OBJ_EVENT_ID_BLOCK_GUARD_2)
 			removeobject(OBJ_EVENT_ID_BLOCK_MERCHANT)
 			removeobject(OBJ_EVENT_ID_BLOCK_durial321)
-			setflag(FLAG_TEMP_2)
-			setmetatile(24, 3, 201, 0)
-			setmetatile(24, 4, 201, 0)
-			setmetatile(25, 3, 201, 0)
-			special(DrawWholeMapView) 
 			return
 	}
 

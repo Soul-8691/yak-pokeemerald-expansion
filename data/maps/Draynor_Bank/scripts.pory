@@ -72,3 +72,23 @@ script NPC_LumbridgeBank_NPC1{
     release
 	end
 }
+
+script NPC_LumbridgeBank_NPC2{
+	lock
+	faceplayer
+    //namebox("Pillory Guard")
+	msgbox(format("Remember if your Monsters ever get poisoned you can feed them a Chocolate Sunday to make them feel better!\pWhat?\lDo not worry.\pChocolate is not poisonous to Monsters."))
+    hidenamebox
+    release
+	end
+}
+
+script NPC_LumbridgeBank_NPC3{
+	lock
+	faceplayer
+    //namebox("Pillory Guard")
+	msgbox(format("These bankers are great, you can heal your Monsters and store your items."))
+    hidenamebox
+    release
+	end
+}

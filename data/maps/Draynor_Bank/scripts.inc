@@ -70,6 +70,24 @@ NPC_LumbridgeBank_NPC1::
 	end
 
 
+NPC_LumbridgeBank_NPC2::
+	lock
+	faceplayer
+	msgbox NPC_LumbridgeBank_NPC2_Text_0
+	hidenamebox
+	release
+	end
+
+
+NPC_LumbridgeBank_NPC3::
+	lock
+	faceplayer
+	msgbox NPC_LumbridgeBank_NPC3_Text_0
+	hidenamebox
+	release
+	end
+
+
 NPC_DraynorBank_Qutiedoll_Text_0:
 	.string "Qutiedoll$"
 
@@ -108,3 +126,17 @@ NPC_LumbridgeBank_NPC1_Text_0:
 	.string "Duke Horacio however started a Gym\n"
 	.string "there and moved the Bank to a more\l"
 	.string "convenient location.$"
+
+NPC_LumbridgeBank_NPC2_Text_0:
+	.string "Remember if your Monsters ever get\n"
+	.string "poisoned you can feed them a\l"
+	.string "Chocolate Sunday to make them feel\l"
+	.string "better!\p"
+	.string "What?\l"
+	.string "Do not worry.\p"
+	.string "Chocolate is not poisonous to\n"
+	.string "Monsters.$"
+
+NPC_LumbridgeBank_NPC3_Text_0:
+	.string "These bankers are great, you can heal\n"
+	.string "your Monsters and store your items.$"

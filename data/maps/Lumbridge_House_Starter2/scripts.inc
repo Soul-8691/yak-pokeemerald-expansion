@@ -144,6 +144,7 @@ Mithrilman_FALADOR1::
 	playbgm MUS_ENCOUNTER_MAY, 1
 	namebox Mithrilman_LUMBRIDGE1_Text_3
 	msgbox Mithrilman_FALADOR1_Text_0
+	hidenamebox
 	trainerbattle_no_intro TRAINER_MITHRILMAN2, Mithrilman_LUMBRIDGE1_Text_5
 	goto Mithrilman_FALADOR2
 	return

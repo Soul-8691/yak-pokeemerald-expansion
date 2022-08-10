@@ -63,9 +63,14 @@ NPC_FALADORCASTLE_QUEST_PART_1::
 	msgbox NPC_FALADORCASTLE_QUEST_PART_1_Text_2
 	closemessage
 	hidenamebox
+	getplayerxy VAR_TEMP_1, VAR_TEMP_2
+	compare VAR_TEMP_1, 10
+	goto_if_eq NPC_FALADORCASTLE_QUEST_PART_1_2
 	applymovement 12, FALADORCASTLE_MOVEMENT_2
 	applymovement 1, FALADORCASTLE_MOVEMENT_3
+	applymovement OBJ_EVENT_ID_PLAYER, FALADORCASTLE_MOVEMENT_11
 	waitmovement 0
+NPC_FALADORCASTLE_QUEST_PART_1_1:
 	removeobject 1
 	removeobject 12
 	setflag FLAG_TEMP_1
@@ -81,6 +86,12 @@ NPC_FALADORCASTLE_QUEST_PART_1::
 	setvar VAR_POKESCAPE_FALADOR_STATE, 2
 	release
 	end
+
+NPC_FALADORCASTLE_QUEST_PART_1_2:
+	applymovement 12, FALADORCASTLE_MOVEMENT_2
+	applymovement 1, FALADORCASTLE_MOVEMENT_3
+	waitmovement 0
+	goto NPC_FALADORCASTLE_QUEST_PART_1_1
 
 
 FALADORCASTLE_MOVEMENT_1:
@@ -114,6 +125,12 @@ FALADORCASTLE_MOVEMENT_5:
 	walk_up
 	step_end
 
+FALADORCASTLE_MOVEMENT_11:
+	delay_8
+	lock_facing_direction
+	walk_left
+	step_end
+
 NPC_FALADORCASTLE_QUEST_PART_2::
 	lock
 	namebox NPC_FALADORCASTLE_QUEST_PART_1_Text_3
@@ -138,14 +155,32 @@ NPC_FALADORCASTLE_QUEST_AMIK_CHAT::
 
 
 NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT::
-	lock
-	faceplayer
-	namebox NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_Text_0
-	msgbox NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_Text_1
+	switch VAR_POKESCAPE_FALADOR_STATE
+	case 0, NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_3
+	case 1, NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_3
+	case 2, NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_3
+	case 3, NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_3
+	case 4, NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_4
+	case 5, NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_4
+NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_1:
 	closemessage
 	hidenamebox
 	release
 	end
+
+NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_3:
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_Text_0
+	msgbox NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_Text_1
+	goto NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_1
+
+NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_4:
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_Text_0
+	msgbox NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_Text_2
+	goto NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_1
 
 
 NPC_FALADORCASTLE_QUEST_PART_4_1::
@@ -187,10 +222,14 @@ NPC_FALADORCASTLE_QUEST_PART_4::
 	msgbox NPC_FALADORCASTLE_QUEST_PART_4_Text_3
 	closemessage
 	hidenamebox
+	applymovement OBJ_EVENT_ID_PLAYER, FALADORCASTLE_MOVEMENT_9
+	waitmovement 0
 	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_4
 	msgbox NPC_FALADORCASTLE_QUEST_PART_4_Text_5
 	closemessage
 	hidenamebox
+	applymovement OBJ_EVENT_ID_PLAYER, FALADORCASTLE_MOVEMENT_12
+	waitmovement 0
 	applymovement 1, FALADORCASTLE_MOVEMENT_10
 	applymovement 12, FALADORCASTLE_MOVEMENT_10
 	waitmovement 0
@@ -237,6 +276,10 @@ FALADORCASTLE_MOVEMENT_10:
 	walk_down
 	step_end
 
+FALADORCASTLE_MOVEMENT_12:
+	face_down
+	step_end
+
 NPC_FALADORCASTLE_GYM_SIRTHEO::
 	trainerbattle_single TRAINER_FALADOR_GYM_1, NPC_FALADORCASTLE_GYM_SIRTHEO_Text_0, NPC_FALADORCASTLE_GYM_SIRTHEO_Text_1
 	switch VAR_POKESCAPE_FALADOR_STATE
@@ -247,14 +290,18 @@ NPC_FALADORCASTLE_GYM_SIRTHEO::
 NPC_FALADORCASTLE_GYM_SIRTHEO_2:
 	lock
 	faceplayer
-	msgbox NPC_FALADORCASTLE_GYM_SIRTHEO_Text_2
+	namebox NPC_FALADORCASTLE_GYM_SIRTHEO_Text_2
+	msgbox NPC_FALADORCASTLE_GYM_SIRTHEO_Text_3
+	hidenamebox
 	release
 	end
 
 NPC_FALADORCASTLE_GYM_SIRTHEO_3:
 	lock
 	faceplayer
-	msgbox NPC_FALADORCASTLE_GYM_SIRTHEO_Text_3
+	namebox NPC_FALADORCASTLE_GYM_SIRTHEO_Text_2
+	msgbox NPC_FALADORCASTLE_GYM_SIRTHEO_Text_4
+	hidenamebox
 	release
 	end
 
@@ -375,6 +422,17 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_2:
 	end
 
 
+NPC_FALADORCASTLE_GYM_SIROWEN::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_GYM_SIROWEN_Text_0
+	msgbox NPC_FALADORCASTLE_GYM_SIROWEN_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 NPC_ROUTE23_DWARF_ROCKS::
 	lock
 	faceplayer
@@ -438,18 +496,21 @@ NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_Text_1:
 	.string "town, past the Party Room.\p"
 	.string "We don't want you getting in danger.$"
 
+NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_Text_2:
+	.string "Welcome to the Falador Castle!$"
+
 NPC_FALADORCASTLE_QUEST_PART_4_Text_0:
 	.string "Thank you for the report.$"
 
 NPC_FALADORCASTLE_QUEST_PART_4_Text_1:
-	.string "Ah!\l"
-	.string "Nice timing, this is the challenger I\l"
-	.string "spoke about.$"
+	.string "Aha, nice timing!\p"
+	.string "This is the challenger I spoke about.$"
 
 NPC_FALADORCASTLE_QUEST_PART_4_Text_2:
 	.string "I am grateful for your assistance\n"
-	.string "within the mines. Have you considered\l"
-	.string "joining the white knights?\p"
+	.string "within the mines.\p"
+	.string "Have you considered joining the white\n"
+	.string "knights?\p"
 	.string "Ah but I am getting ahead of myself,\n"
 	.string "you mentioned you wished to challenge\l"
 	.string "me to a battle.\p"
@@ -479,9 +540,12 @@ NPC_FALADORCASTLE_GYM_SIRTHEO_Text_1:
 	.string "As expected.$"
 
 NPC_FALADORCASTLE_GYM_SIRTHEO_Text_2:
-	.string "Good luck navigating the castle.$"
+	.string "Sir Theo$"
 
 NPC_FALADORCASTLE_GYM_SIRTHEO_Text_3:
+	.string "Good luck navigating the castle.$"
+
+NPC_FALADORCASTLE_GYM_SIRTHEO_Text_4:
 	.string "Look at you!\p"
 	.string "Have you considered becoming a white\n"
 	.string "knight like myself?$"
@@ -496,8 +560,8 @@ NPC_FALADORCASTLE_GYM_TRAINER_2_Text_2:
 	.string "Sir Emony$"
 
 NPC_FALADORCASTLE_GYM_TRAINER_3_Text_0:
-	.string "Carefull where youre going there.\p"
-	.string "You wouldn't want to stumble into an\n"
+	.string "Careful where you are going there.\p"
+	.string "You would not want to stumble into an\n"
 	.string "ambush would you?$"
 
 NPC_FALADORCASTLE_GYM_TRAINER_3_Text_1:
@@ -550,9 +614,20 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_6:
 	.string "journey.$"
 
 NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_7:
-	.string "I reccomend you make your way to Al\n"
-	.string "Khaird or Varrock for your next\l"
-	.string "challenge.$"
+	.string "I recommend that you make your way to\n"
+	.string "Al Khaird or Varrock for your next MvM\l"
+	.string "gym challenge.\p"
+	.string "Unless you would like to become a white\n"
+	.string "knight instead?$"
+
+NPC_FALADORCASTLE_GYM_SIROWEN_Text_0:
+	.string "Sir Owen$"
+
+NPC_FALADORCASTLE_GYM_SIROWEN_Text_1:
+	.string "Hello again, these guys won't talk.\p"
+	.string "But there does not seem to be anything\n"
+	.string "stolen, so we aren't sure what they\l"
+	.string "meant by distraction.$"
 
 NPC_ROUTE23_DWARF_ROCKS_Text_0:
 	.string "DWARF$"

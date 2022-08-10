@@ -2167,7 +2167,7 @@ static const struct TrainerMonItemDefaultMoves sParty_DWARVENMINES_DWARF_4[] = {
 static const struct TrainerMonItemDefaultMoves sParty_FALADOR_GYM_1[] = {
     {
     .iv = 0,
-    .lvl = 28,
+    .lvl = 23,
     .species = SPECIES_DALMATIAN,
     .heldItem = ITEM_NONE
     }
@@ -2188,7 +2188,7 @@ static const struct TrainerMonItemDefaultMoves sParty_FALADOR_GYM_2[] = {
     },
     {
     .iv = 0,
-    .lvl = 27,
+    .lvl = 26,
     .species = SPECIES_DUCK_NORMAL_FORM,
     .heldItem = ITEM_NONE
     },
@@ -2210,7 +2210,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_FALADOR_GYM_3[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_FALADOR_GYM_4[] = {
     {
     .iv = 0,
-    .lvl = 25,
+    .lvl = 20,
     .species = SPECIES_CHICKEN_DIVING_FORM,
     }
 };
@@ -2368,3 +2368,39 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_GOBLIN_4[] = {
     }
 };
 
+static const struct TrainerMonNoItemDefaultMoves sParty_MUDSKIPPERPOINT_SLAYER[] = {
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_BROAV,
+    },
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_PLATYPODE,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_MUDSKIPPERPOINT_FISHERMAN_1[] = {
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_BROAV,
+    },
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_PLATYPODE,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_MUDSKIPPERPOINT_FISHERMAN_2[] = {
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_BROAV,
+    },
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_PLATYPODE,
+    }
+};

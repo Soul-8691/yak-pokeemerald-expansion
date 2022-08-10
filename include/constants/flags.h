@@ -1164,17 +1164,18 @@
 #define FLAG_ITEM_ROUTE11_ITEM_4                  0x43A
 #define FLAG_ITEM_ROUTE11_ITEM_5                   0x43B
 
-#define FLAG_ITEM_VICTORY_ROAD_1F_MAX_ELIXIR                        0x43C
-#define FLAG_ITEM_VICTORY_ROAD_1F_PP_UP                             0x43D
-#define FLAG_ITEM_VICTORY_ROAD_B1F_TM_29                            0x43E
-#define FLAG_ITEM_VICTORY_ROAD_B1F_FULL_RESTORE                     0x43F
-#define FLAG_ITEM_VICTORY_ROAD_B2F_FULL_HEAL                        0x440
-#define FLAG_ITEM_MT_PYRE_6F_TM_30                                  0x441
-#define FLAG_ITEM_SEAFLOOR_CAVERN_ROOM_9_TM_26                      0x442
-#define FLAG_ITEM_FIERY_PATH_TM06                                   0x443 
-#define FLAG_ITEM_ROUTE_124_RED_SHARD                               0x444 
-#define FLAG_ITEM_ROUTE_124_BLUE_SHARD                              0x445 
-#define FLAG_ITEM_SAFARI_ZONE_NORTH_WEST_TM_22                      0x446 
+#define FLAG_ITEM_RIMMINGTON_1                        0x43C
+#define FLAG_ITEM_RIMMINGTON_2                             0x43D
+#define FLAG_ITEM_RIMMINGTON_3                            0x43E
+#define FLAG_ITEM_RIMMINGTON_4                     0x43F
+#define FLAG_ITEM_RIMMINGTON_5                        0x440
+#define FLAG_ITEM_DWARVENMINES_1                                  0x441
+#define FLAG_ITEM_DWARVENMINES_2                      0x442
+#define FLAG_ITEM_DWARVENMINES_3                                   0x443 
+#define FLAG_ITEM_FALADORPUB_1                               0x444 
+#define FLAG_ITEM_FALADOR_1                              0x445 
+#define FLAG_ITEM_FALADOR_2                      0x446 
+
 #define FLAG_ITEM_ABANDONED_SHIP_ROOMS_1F_HARBOR_MAIL               0x447 
 #define FLAG_ITEM_ABANDONED_SHIP_ROOMS_B1F_ESCAPE_ROPE              0x448 
 #define FLAG_ITEM_ABANDONED_SHIP_ROOMS_2_B1F_DIVE_BALL              0x449 

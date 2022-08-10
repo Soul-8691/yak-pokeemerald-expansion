@@ -403,14 +403,14 @@ script NPC_SETVAR_RIMMINGTON{
     faceplayer
     namebox("RIMMINGTON VAR")
     if((var(VAR_POKESCAPE_RIMMINGTON_STATE) == 0)){
-        msgbox(format("THE VAR IS NOW SET TO 1\p  {PK}{SUPER_ER} {UP_ARROW}{SUPER_E}{SUPER_RE}⋯…♂♂▶{TALL_PLUS}⋯ー。{UNK_SPACER}"))
+        msgbox(format("This is a test script for the Rimmington Event.\pTHE VAR IS NOW SET TO 1"))
         setvar(VAR_POKESCAPE_RIMMINGTON_STATE, 1)
         hidenamebox
         release
         end
     }
     else {
-        msgbox(format("THE VAR IS NOW SET TO 0"))
+        msgbox(format("This is a test script for the Rimmington Event.\pTHE VAR IS NOW SET TO 0"))
         setvar(VAR_POKESCAPE_RIMMINGTON_STATE, 0)
         hidenamebox
         release

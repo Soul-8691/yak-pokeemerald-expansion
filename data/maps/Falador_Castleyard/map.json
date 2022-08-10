@@ -37,7 +37,7 @@
       "movement_range_y": 5,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT",
       "flag": "0"
     },
     {
@@ -76,7 +76,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT",
       "flag": "0"
     },
     {
@@ -89,7 +89,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NPC_FALADORCASTLE_GYM_SIRTHEO",
+      "script": "NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT",
       "flag": "0"
     },
     {
@@ -102,7 +102,7 @@
       "movement_range_y": 6,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT",
       "flag": "0"
     },
     {
@@ -115,7 +115,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT",
       "flag": "0"
     },
     {
@@ -128,7 +128,7 @@
       "movement_range_y": 6,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT",
       "flag": "0"
     },
     {
@@ -180,7 +180,7 @@
       "movement_range_y": 5,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT",
       "flag": "0"
     }
   ],
@@ -250,7 +250,7 @@
       "elevation": 0,
       "var": "VAR_POKESCAPE_FALADOR_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT"
     },
     {
       "type": "trigger",

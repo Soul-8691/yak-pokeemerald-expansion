@@ -1145,10 +1145,13 @@ NPC_SETVAR_RIMMINGTON_Text_0:
 	.string "RIMMINGTON VAR$"
 
 NPC_SETVAR_RIMMINGTON_Text_1:
-	.string "THE VAR IS NOW SET TO 1\p"
-	.string "{PK}{SUPER_ER} {UP_ARROW}{SUPER_E}{SUPER_RE}⋯…♂♂▶{TALL_PLUS}⋯ー。{UNK_SPACER}$"
+	.string "This is a test script for the Rimmington\n"
+	.string "Event.\p"
+	.string "THE VAR IS NOW SET TO 1$"
 
 NPC_SETVAR_RIMMINGTON_Text_2:
+	.string "This is a test script for the Rimmington\n"
+	.string "Event.\p"
 	.string "THE VAR IS NOW SET TO 0$"
 
 NPC_RIMMINGTON_FANBOYNOOB_1_Text_0:

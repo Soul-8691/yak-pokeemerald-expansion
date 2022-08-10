@@ -33,6 +33,61 @@ DWARVENMINES_QUEST_STATE_3:
 	return
 
 
+NPC_SCORPION::
+	lock
+	faceplayer
+	namebox NPC_SCORPION_Text_0
+	playmoncry SPECIES_GLIGAR, 0
+	msgbox NPC_SCORPION_Text_1
+	waitmoncry
+	hidenamebox
+	release
+	end
+
+
+NPC_DWARVENMINES_DWARF_1::
+	lock
+	faceplayer
+	namebox NPC_DWARVENMINES_DWARF_1_Text_0
+	msgbox NPC_DWARVENMINES_DWARF_1_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_DWARVENMINES_DWARF_2::
+	lock
+	faceplayer
+	namebox NPC_DWARVENMINES_DWARF_1_Text_0
+	msgbox NPC_DWARVENMINES_DWARF_2_Text_0
+	hidenamebox
+	release
+	end
+
+
+NPC_DWARVENMINES_MINECART::
+	lock
+	msgbox NPC_DWARVENMINES_MINECART_Text_0
+	hidenamebox
+	release
+	end
+
+
+ITEM_DWARVENMINES_1::
+	finditem ITEM_ROCKCAKE
+	end
+
+
+ITEM_DWARVENMINES_2::
+	finditem ITEM_GRANITE_POUCH
+	end
+
+
+ITEM_DWARVENMINES_3::
+	finditem ITEM_EARTH_RUNE
+	end
+
+
 NPC_FALADORCASTLE_QUEST_PART_3_1::
 	lock
 	applymovement OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_0_1
@@ -95,6 +150,7 @@ NPC_FALADORCASTLE_QUEST_PART_3::
 	applymovement 32, DWARVENMINES_MOVEMENT_3
 	applymovement OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_5
 	waitmovement 0
+	playbgm MUS_PS_ENCOUNTER_HAM, 1
 	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_8
 	closemessage
@@ -158,6 +214,8 @@ NPC_FALADORCASTLE_QUEST_PART_3::
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_21
 	closemessage
 	hidenamebox
+	savebgm MUS_DUMMY
+	fadedefaultbgm
 	fadescreen FADE_TO_BLACK
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
@@ -342,6 +400,32 @@ BATTLE_DWARVENMINES_DWARF_4::
 	release
 	end
 
+
+NPC_SCORPION_Text_0:
+	.string "SCORPION$"
+
+NPC_SCORPION_Text_1:
+	.string "Snipersnip!$"
+
+NPC_DWARVENMINES_DWARF_1_Text_0:
+	.string "DWARF$"
+
+NPC_DWARVENMINES_DWARF_1_Text_1:
+	.string "Sorry we are currently undergoing a\n"
+	.string "Mining & Smithing rework.\p"
+	.string "Please come again later.$"
+
+NPC_DWARVENMINES_DWARF_2_Text_0:
+	.string "There has been a cave-in within the\n"
+	.string "Motherlode Mine, it might take us\l"
+	.string "awhile to clear it.\p"
+	.string "I feel for those poor adventurers\n"
+	.string "trapped inside when it clapsed though.$"
+
+NPC_DWARVENMINES_MINECART_Text_0:
+	.string "There seems to be nothing inside this\n"
+	.string "minecart apart from a very boring\l"
+	.string "looking scroll.$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_0:
 	.string "SIR THEO$"

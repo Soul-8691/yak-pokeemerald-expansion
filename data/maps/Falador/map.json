@@ -401,8 +401,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_FALADOR_2",
+      "flag": "FLAG_ITEM_FALADOR_2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
@@ -414,8 +414,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_FALADOR_1",
+      "flag": "FLAG_ITEM_FALADOR_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_FALADOR",
@@ -511,7 +511,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_FALADOR",
       "x": 25,
-      "y": 4,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -524,7 +524,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_FALADOR",
       "x": 26,
-      "y": 3,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -537,7 +537,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GENERAL_STORE_CLERK",
       "x": 23,
-      "y": 4,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -570,7 +570,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_FALADOR_DOG",
       "flag": "0"
     },
     {
@@ -702,7 +702,7 @@
     },
     {
       "x": 30,
-      "y": 9,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_FALADOR",
       "dest_warp_id": 16
@@ -716,7 +716,7 @@
     },
     {
       "x": 77,
-      "y": 23,
+      "y": 22,
       "elevation": 0,
       "dest_map": "MAP_FALADOR",
       "dest_warp_id": 19
@@ -747,7 +747,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "FALADOR_QUEST_STATE_CHANGER"
+      "script": "FALADOR_SIGN"
     },
     {
       "type": "sign",
@@ -755,7 +755,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "FALADOR_MINES_SIGN"
     },
     {
       "type": "sign",
@@ -763,7 +763,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "NPC_FALADOR_STATUE"
     },
     {
       "type": "sign",
@@ -771,7 +771,7 @@
       "y": 12,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "NPC_FALADOR_STATUE"
     },
     {
       "type": "sign",
@@ -796,6 +796,38 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "Falador_TREE"
+    },
+    {
+      "type": "sign",
+      "x": 24,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NPC_FALADOR_STATUE_1"
+    },
+    {
+      "type": "sign",
+      "x": 25,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NPC_FALADOR_STATUE"
+    },
+    {
+      "type": "sign",
+      "x": 30,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LOCKED_DOOR"
+    },
+    {
+      "type": "sign",
+      "x": 77,
+      "y": 23,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LOCKED_DOOR"
     }
   ]
 }

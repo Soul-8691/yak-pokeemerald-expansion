@@ -52,8 +52,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_GOBLIN_1",
-      "x": 59,
-      "y": 22,
+      "x": 31,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -78,8 +78,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 31,
-      "y": 5,
+      "x": 59,
+      "y": 22,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,

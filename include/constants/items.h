@@ -756,9 +756,12 @@
 #define ITEM_PARTY_HAT              631
 
 #define ITEM_YAK_POUCH              632
+#define ITEM_VANILLA_MILK           633
+#define ITEM_STRAWBERRY_MILK        634
+#define ITEM_CHOCOLATE_MILK         635
 
 
-#define ITEMS_COUNT 633
+#define ITEMS_COUNT 636
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 #define FIRST_BERRY_INDEX             ITEM_CHERI_BERRY

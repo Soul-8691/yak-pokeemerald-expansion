@@ -40,7 +40,7 @@ script Lumbridge_Castle_GUARD{
 script Lumbridge_Castle_HALLWAY_GUARD{
 	lock
 	faceplayer
-	msgbox(format("I'm sorry but this hallway is off limits.\pI'm surpirsed you are talking to me to be honest.\pNo one ever uses this hallway."))
+	msgbox(format("I'm sorry but this hallway is off limits.\pI am surprised you are talking to me to be honest.\pNo one ever uses this hallway."))
 	release
 	end
 }

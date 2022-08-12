@@ -285,3 +285,31 @@ msgbox(format("Would you like to leave this realm?"), MSGBOX_YESNO)
 
 
 
+//CRAFTING GUILD
+
+script CRAFTINGGUILD_MILKSELLER
+{
+    lock
+    faceplayer
+    msgbox(format("Why hello there, are you interested in some flavoured Milk?"))
+    pokemart(FlavouredMilkShop)
+    closemessage
+    release
+    end
+}
+
+
+raw `
+
+    .align 2
+FlavouredMilkShop:
+	.2byte ITEM_MILK_BUCKET
+    .2byte ITEM_VANILLA_MILK
+    .2byte ITEM_STRAWBERRY_MILK
+    .2byte ITEM_CHOCOLATE_MILK
+	.2byte ITEM_NONE
+
+    release
+    end
+
+`

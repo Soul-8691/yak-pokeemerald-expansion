@@ -510,6 +510,15 @@ const u8 gItemEffect_Sock[6] = {
 const u8 gItemEffect_TearOfGuthix[6] = {
     [4] = ITEM4_EVO_STONE,
 };
+const u8 gItemEffect_VanillaMilk[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+const u8 gItemEffect_StrawberryMilk[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
+const u8 gItemEffect_ChocolateMilk[6] = {
+    [4] = ITEM4_EVO_STONE,
+};
 const u8 gItemEffect_BlueberrySpecial[6] = {
     [3] = ITEM3_STATUS_ALL,
 };
@@ -772,6 +781,11 @@ const u8 *const gItemEffectTable[] =
     [ITEM_SUPER_PRAYER_POTION- ITEM_POTION] = gItemEffect_SuperPrayerPotion,
     [ITEM_WIZARDS_BLIZZARD- ITEM_POTION] = gItemEffect_WizardBlizzard,
     [ITEM_PURPLE_SWEETS - ITEM_POTION] = gItemEffect_RareCandy,
+    [ITEM_VANILLA_MILK - ITEM_POTION] = gItemEffect_VanillaMilk,
+    [ITEM_STRAWBERRY_MILK - ITEM_POTION] = gItemEffect_StrawberryMilk,
+    [ITEM_CHOCOLATE_MILK - ITEM_POTION] = gItemEffect_ChocolateMilk,
+
+
 
     
 

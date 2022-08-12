@@ -234,6 +234,27 @@ ALTAR_WATER_RETURN_2:
 	end
 
 
+CRAFTINGGUILD_MILKSELLER::
+	lock
+	faceplayer
+	msgbox CRAFTINGGUILD_MILKSELLER_Text_0
+	pokemart FlavouredMilkShop
+	closemessage
+	release
+	end
+
+
+    .align 2
+FlavouredMilkShop:
+	.2byte ITEM_MILK_BUCKET
+    .2byte ITEM_VANILLA_MILK
+    .2byte ITEM_STRAWBERRY_MILK
+    .2byte ITEM_CHOCOLATE_MILK
+	.2byte ITEM_NONE
+
+    release
+    end
+
 ROUTE8_SIGNPOST_Text_0:
 	.string "WEST to Crafting Guild.\p"
 	.string "SOUTH to Rimmington.\p"
@@ -432,3 +453,7 @@ ALTAR_WATER_RETURN_Text_0:
 ALTAR_WATER_RETURN_Text_1:
 	.string "As you step into the portal a mass of\n"
 	.string "energy surrounds you!$"
+
+CRAFTINGGUILD_MILKSELLER_Text_0:
+	.string "Why hello there, are you interested in\n"
+	.string "some flavoured Milk?$"

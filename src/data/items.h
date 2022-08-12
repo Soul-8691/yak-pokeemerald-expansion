@@ -6260,6 +6260,41 @@ const struct Item gItems[] =
         .secondaryId = 0,
     },	
 	
+    [ITEM_VANILLA_MILK] =    
+    {
+        .name = _("VANILLA MILK"),
+        .itemId = ITEM_VANILLA_MILK,
+        .price = 3000,
+        .description = sVanillaMilkDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },
+    
+    [ITEM_STRAWBERRY_MILK] =    
+    {
+        .name = _("S-BERRY MILK"),
+        .itemId = ITEM_STRAWBERRY_MILK,
+        .price = 3000,
+        .description = sStrawberryMilkDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },
+    
+    [ITEM_CHOCOLATE_MILK] =    
+    {
+        .name = _("CHOC MILK"),
+        .itemId = ITEM_CHOCOLATE_MILK,
+        .price = 3000,
+        .description = sChocolateMilkDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .secondaryId = 0,
+    },
 	
 	//pokescape pouches
 	
@@ -6278,7 +6313,7 @@ const struct Item gItems[] =
 	   
 	[ITEM_BRONZE_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("BRONZE .P"),
         .itemId = ITEM_BRONZE_POUCH,
         .price = 50,
         .description = sBronzePouchDesc,
@@ -6291,7 +6326,7 @@ const struct Item gItems[] =
 	
     [ITEM_IRON_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("IRON .P"),
         .itemId = ITEM_IRON_POUCH,
         .price = 100,
         .description = sIronPouchDesc,
@@ -6304,7 +6339,7 @@ const struct Item gItems[] =
 	
     [ITEM_STEEL_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("STEEL .P"),
         .itemId = ITEM_STEEL_POUCH,
         .price = 200,
         .description = sSteelPouchDesc,
@@ -6317,7 +6352,7 @@ const struct Item gItems[] =
 	
     [ITEM_BLACK_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("BLACK .P"),
         .itemId = ITEM_BLACK_POUCH,
         .price = 200,
         .description = sBlackPouchDesc,
@@ -6330,7 +6365,7 @@ const struct Item gItems[] =
 	
     [ITEM_MITHRIL_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("MITHRIL .P"),
         .itemId = ITEM_MITHRIL_POUCH,
         .price = 300,
         .description = sMithrilPouchDesc,
@@ -6343,7 +6378,7 @@ const struct Item gItems[] =
 	
     [ITEM_ADAMANT_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("ADAMANT .P"),
         .itemId = ITEM_ADAMANT_POUCH,
         .price = 600,
         .description = sAdamantPouchDesc,
@@ -6356,7 +6391,7 @@ const struct Item gItems[] =
 	
     [ITEM_RUNE_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("RUNE .P"),
         .itemId = ITEM_RUNE_POUCH,
         .price = 1200,
         .description = sRunePouchDesc,
@@ -6369,7 +6404,7 @@ const struct Item gItems[] =
 	
     [ITEM_DRAGON_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("DRAGON .P"),
         .itemId = ITEM_DRAGON_POUCH,
         .price = 200,
         .description = sDragonPouchDesc,
@@ -6382,7 +6417,7 @@ const struct Item gItems[] =
 	
     [ITEM_CRYSTAL_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("CRYSTAL .P"),
         .itemId = ITEM_CRYSTAL_POUCH,
         .price = 200,
         .description = sCrystalPouchDesc,
@@ -6396,7 +6431,7 @@ const struct Item gItems[] =
 	
     [ITEM_SPLITBARK_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("SPLITBARK .P"),
         .itemId = ITEM_SPLITBARK_POUCH,
         .price = 200,
         .description = sSplitbarkPouchDesc,
@@ -6410,7 +6445,7 @@ const struct Item gItems[] =
 	
     [ITEM_DRAGONBANE_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("BANITE .P"),
         .itemId = ITEM_DRAGONBANE_POUCH,
         .price = 200,
         .description = sDragonbanePouchDesc,
@@ -6424,7 +6459,7 @@ const struct Item gItems[] =
 	
     [ITEM_AUGMENTED_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("AUGMENTED .P"),
         .itemId = ITEM_AUGMENTED_POUCH,
         .price = 200,
         .description = sAugmentedPouchDesc,
@@ -6438,7 +6473,7 @@ const struct Item gItems[] =
 	
     [ITEM_MYSTIC_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("MYSTIC .P"),
         .itemId = ITEM_MYSTIC_POUCH,
         .price = 200,
         .description = sMysticPouchDesc,
@@ -6452,7 +6487,7 @@ const struct Item gItems[] =
 	
     [ITEM_BARROWS_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("BARROWS .P"),
         .itemId = ITEM_BARROWS_POUCH,
         .price = 200,
         .description = sBarrowsPouchDesc,
@@ -6466,7 +6501,7 @@ const struct Item gItems[] =
 	
     [ITEM_GRANITE_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("GRANITE .P"),
         .itemId = ITEM_GRANITE_POUCH,
         .price = 200,
         .description = sGranitePouchDesc,
@@ -6480,7 +6515,7 @@ const struct Item gItems[] =
 	
     [ITEM_ANCIENT_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("ANCIENT .P"),
         .itemId = ITEM_ANCIENT_POUCH,
         .price = 200,
         .description = sAncientPouchDesc,
@@ -6494,7 +6529,7 @@ const struct Item gItems[] =
 	
     [ITEM_ELEMENTAL_POUCH] =
     {
-        .name = _("POUCH"),
+        .name = _("ELEMENTAL .P"),
         .itemId = ITEM_ELEMENTAL_POUCH,
         .price = 200,
         .description = sElementalPouchDesc,
@@ -7225,17 +7260,16 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 2,
     },
-	
-    [ITEM_MILK_BUCKET] =
+    [ITEM_MILK_BUCKET] =    
     {
         .name = _("MILK BUCKET"),
         .itemId = ITEM_MILK_BUCKET,
-        .price = 0,
-        .description = sCupholderDesc,
-        .pocket = POCKET_BERRIES,
-        .type = 2,
+        .price = 500,
+        .description = sMilkBucketDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = 2,
+        .secondaryId = 0,
     },
     [ITEM_WHEAT] =
     {

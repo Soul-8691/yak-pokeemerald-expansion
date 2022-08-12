@@ -2047,9 +2047,6 @@ static const u8 sSpottedCapeDesc[] = _(
     "fast enough to\n"
     "always escape.");
 
-
-
-
 static const u8 sEarthStaffDesc[] = _(
     "Increases the\n"
     "power of Ground\n"
@@ -2193,7 +2190,6 @@ static const u8 sYakDesc[] = _(
     "to ride.\n"
     "");
 
-
 static const u8 sSmallNetDesc[] = _(
     "Use by any body of\n"
     "water to fish for\n"
@@ -2247,8 +2243,25 @@ static const u8 sSplitbarkDesc[] = _(
     "boosts PSYCHIC-\n"
     "type moves.");
 
+static const u8 sMilkBucketDesc[] = _(
+    "Used in as an\n"
+    "ingredient in \n"
+    "various foods.");
 
+static const u8 sVanillaMilkDesc[] = _(
+    "Makes certain\n"
+    "species of MONSTERs\n"
+    "evolve.");
 
+static const u8 sStrawberryMilkDesc[] = _(
+    "Makes certain\n"
+    "species of MONSTERs\n"
+    "evolve.");
+
+static const u8 sChocolateMilkDesc[] = _(
+    "Makes certain\n"
+    "species of MONSTERs\n"
+    "evolve.");
 
 static const u8 sCupholderDesc[] = _(
     "This is a Cupholder.");

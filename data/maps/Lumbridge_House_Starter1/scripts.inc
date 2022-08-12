@@ -298,7 +298,7 @@ Explorer_Jack_2_Text_0:
 	.string "to bed?$"
 
 Explorer_Jack_2_Text_1:
-	.string "I'm surprised you're up this early, you\n"
+	.string "I am surprised you're up this early, you\n"
 	.string "usually oversleep.$"
 
 Explorer_Jack_2_Text_2:

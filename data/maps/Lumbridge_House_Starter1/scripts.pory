@@ -40,7 +40,7 @@ script Explorer_Jack_2 {
     if (var(VAR_0x8000) < 7 || var(VAR_0x8000) >= 21) {
         msgbox(format("Are you sure you don't want to go back to bed?"))
     } elif (var(VAR_0x8000) < 12) {
-        msgbox(format("I'm surprised you're up this early, you usually oversleep."))
+        msgbox(format("I am surprised you're up this early, you usually oversleep."))
     } else {
         msgbox(format("It's about time you got up."))
     }

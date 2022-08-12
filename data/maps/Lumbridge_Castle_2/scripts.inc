@@ -1027,7 +1027,7 @@ Lumbridge_Castle_GUARD_Text_0:
 
 Lumbridge_Castle_HALLWAY_GUARD_Text_0:
 	.string "I'm sorry but this hallway is off limits.\p"
-	.string "I'm surpirsed you are talking to me to\n"
+	.string "I am surprised you are talking to me to\n"
 	.string "be honest.\p"
 	.string "No one ever uses this hallway.$"
 

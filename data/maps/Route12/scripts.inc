@@ -13,8 +13,8 @@ Gillie_Groats::
 	faceplayer
 	namebox Gillie_Groats_Text_0
 	msgbox Gillie_Groats_Text_4
-	pokemart GroatsShop
 	hidenamebox
+	pokemart GroatsShop
 	release
 	end
 
@@ -26,8 +26,8 @@ Gillie_Groats_1:
 	faceplayer
 	namebox Gillie_Groats_Text_0
 	msgbox Gillie_Groats_Text_4
-	pokemart GroatsShop
 	hidenamebox
+	pokemart GroatsShop
 	release
 	end
 

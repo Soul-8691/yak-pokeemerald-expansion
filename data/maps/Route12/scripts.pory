@@ -43,8 +43,8 @@ script Gillie_Groats{
             faceplayer
 			namebox ("Gillie Groats")
             msgbox(format("Hello and welcome to the Groat's Milk Farm!\pWould you like to buy some Milk?"))
-            pokemart(GroatsShop)
 			hidenamebox
+            pokemart(GroatsShop)
             release
             end
         }
@@ -54,8 +54,8 @@ script Gillie_Groats{
         faceplayer
 		namebox ("Gillie Groats")
         msgbox(format("Hello and welcome to the Groat's Milk Farm!\pWould you like to buy some Milk?"))
-        pokemart(GroatsShop)
 		hidenamebox
+        pokemart(GroatsShop)
         release
         end
     }

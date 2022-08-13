@@ -443,7 +443,7 @@ script NPC_FALADOR_APPRENTICE
     msgbox(format("Thank you so much! Let me just calculate the total…  … … Alright! So that comes to 5000gp. Is this okay with you?"))
     msgbox(format("Sorry, but I cannot go any lower than that."))
     msgbox(format("Thank you! You are a lifesaver! "))
-    msgbox(format("….Uh.. You do not have enough money."))
+    msgbox(format("…{PAUSE 32}…{PAUSE 32} Uh… {PAUSE 32}You do not have enough money."))
     msgbox(format("HOW!? I accidentally made another living chair!"))
     waitmessage
     hidenamebox

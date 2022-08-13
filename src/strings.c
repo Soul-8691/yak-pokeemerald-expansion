@@ -284,9 +284,9 @@ const u8 *const gReturnToXStringsTable2[] =
 
 const u8 gText_ReturnToVar1[] = _("Return to\n{STR_VAR_1}.");
 const u8 gText_ItemsPocket[] = _("ITEMS");
-const u8 gText_PokeBallsPocket[] = _("POKé BALLS");
+const u8 gText_PokeBallsPocket[] = _("POUCHES");
 const u8 gText_TMHMPocket[] = _("TMs & HMs");
-const u8 gText_BerriesPocket[] = _("BERRIES");
+const u8 gText_BerriesPocket[] = _("GOODIES");
 const u8 gText_KeyItemsPocket[] = _("KEY ITEMS");
 
 const u8 *const gPocketNamesStringsTable[] =
@@ -1867,6 +1867,16 @@ const u8 gText_POH_HOUSE_1[] =_("Cursed You's House");
 const u8 gText_POH_HOUSE_2[] =_("Player's House");
 const u8 gText_POH_HOUSE_3[] =_("Player's House");
 const u8 gText_POH_HOUSE_4[] =_("A friend's House");
+//Pickaxe
+const u8 gText_POH_RED[] =_("RED");
+const u8 gText_POH_GREEN[] =_("GREEN");
+const u8 gText_POH_BROWN[] =_("BROWN");
+const u8 gText_POH_GREY[] =_("GREY");
+const u8 gText_POH_WHITE[] =_("WHITE");
+const u8 gText_POH_BLUE[] =_("BLUE");
+const u8 gText_POH_CYAN[] =_("CYAN");
+const u8 gText_POH_BLACK[] =_("BLACK");
+
 
 //misc
 const u8 gText_NextMenu[] =_("Next");

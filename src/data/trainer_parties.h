@@ -2404,3 +2404,15 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MUDSKIPPERPOINT_FISHERMA
     .species = SPECIES_PLATYPODE,
     }
 };
+static const struct TrainerMonNoItemDefaultMoves sParty_Demonheadge[] = {
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_RAVEN_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 25,
+    .species = SPECIES_FROGEEL,
+    }
+};

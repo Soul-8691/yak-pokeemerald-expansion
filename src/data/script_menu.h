@@ -840,6 +840,20 @@ static const struct MenuAction MultichoiceList_POH[] =
     
 };
 
+static const struct MenuAction MultichoiceList_COLOUR_PICKAXE[] =
+{
+    {gText_POH_GREEN},
+    {gText_POH_RED},
+    {gText_POH_BROWN},
+    {gText_POH_GREY},
+    {gText_POH_WHITE},
+    {gText_POH_BLUE},
+    {gText_POH_CYAN},
+    {gText_POH_BLACK},
+    {gText_Exit},
+    
+};
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -975,6 +989,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
 	[MULTI_STARTER_FREE]			   = MULTICHOICE(MultichoiceList_StarterFree),
 	[MULTI_STARTER_MEMBER]			   = MULTICHOICE(MultichoiceList_StarterMember),
     [MULTI_POH]			               = MULTICHOICE(MultichoiceList_POH),
+    [MULTI_COLOUR_PICKAXE]			       = MULTICHOICE(MultichoiceList_COLOUR_PICKAXE),
+    
 	
 };
 

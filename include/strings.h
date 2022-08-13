@@ -3030,6 +3030,17 @@ extern const u8 gText_POH_HOUSE_1[];
 extern const u8 gText_POH_HOUSE_2[];
 extern const u8 gText_POH_HOUSE_3[];
 extern const u8 gText_POH_HOUSE_4[];
+//PICKAXE
+extern const u8 gText_POH_RED[];
+extern const u8 gText_POH_GREEN[];
+extern const u8 gText_POH_BROWN[];
+extern const u8 gText_POH_GREY[];
+extern const u8 gText_POH_WHITE[];
+extern const u8 gText_POH_BLUE[];
+extern const u8 gText_POH_CYAN[];
+extern const u8 gText_POH_BLACK[];
+
+
 
 
 //pokescape cheat menu

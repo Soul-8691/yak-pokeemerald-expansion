@@ -4975,7 +4975,7 @@
       "id": "LAYOUT_GOBLIN_VILLAGE",
       "name": "GoblinVillage_Layout",
       "width": 44,
-      "height": 38,
+      "height": 40,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_GoblinVillage",
       "border_filepath": "data/layouts/GoblinVillage/border.bin",
@@ -6800,6 +6800,26 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Rimmington_Mines_B1F/border.bin",
       "blockdata_filepath": "data/layouts/Rimmington_Mines_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_GOBLIN_VILLAGE_HOUSE_1",
+      "name": "GoblinVillage_House_1_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/GoblinVillage_House_1/border.bin",
+      "blockdata_filepath": "data/layouts/GoblinVillage_House_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GOBLIN_VILLAGE_HOUSE_2",
+      "name": "GoblinVillage_House_2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/GoblinVillage_House_2/border.bin",
+      "blockdata_filepath": "data/layouts/GoblinVillage_House_2/map.bin"
     }
   ]
 }

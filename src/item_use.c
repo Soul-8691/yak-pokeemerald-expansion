@@ -1251,7 +1251,61 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
     {
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
+            if(CheckBagHasItem(ITEM_PICKAXE, 1)) 
+            {
+                gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
+            }
+            else 
+            {
+                if(CheckBagHasItem(ITEM_ADAMANTPICKAXE, 1)) 
+                {
+                    gSaveBlock2Ptr->ItemArg = ITEM_ADAMANTPICKAXE;
+                }
+                else 
+                {
+                    if(CheckBagHasItem(ITEM_BRONZEPICKAXE, 1)) 
+                    {
+                        gSaveBlock2Ptr->ItemArg = ITEM_BRONZEPICKAXE;
+                    }
+                    else 
+                    {
+                        if(CheckBagHasItem(ITEM_IRONPICKAXE, 1)) 
+                        {
+                            gSaveBlock2Ptr->ItemArg = ITEM_IRONPICKAXE;
+                        }
+                        else 
+                        {
+                            if(CheckBagHasItem(ITEM_STEELPICKAXE, 1)) 
+                            {
+                                gSaveBlock2Ptr->ItemArg = ITEM_ADAMANTPICKAXE;
+                            }
+                            else 
+                            {
+                                if(CheckBagHasItem(ITEM_BLACKPICKAXE, 1)) 
+                                {
+                                    gSaveBlock2Ptr->ItemArg = ITEM_ADAMANTPICKAXE;
+                                }
+                                else 
+                                {
+                                    if(CheckBagHasItem(ITEM_MITHRILPICKAXE, 1)) 
+                                    {
+                                        gSaveBlock2Ptr->ItemArg = ITEM_MITHRILPICKAXE;
+                                    }
+                                    else 
+                                    {
+                                        if(CheckBagHasItem(ITEM_RUNEPICKAXE, 1)) 
+                                        {
+                                            gSaveBlock2Ptr->ItemArg = ITEM_RUNEPICKAXE;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+			
 			gFieldCallback = FieldCallback_RockSmash;
 			gBagMenu->exitCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);

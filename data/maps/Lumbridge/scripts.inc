@@ -883,7 +883,7 @@ Lumbridge_House_BobsAxes_Text_1:
 Lumbridge_House_BobsGirl_Text_0:
 	.string "Hey, are you the contractor we hired to\n"
 	.string "fix our bed?\p"
-	.string "….\l"
+	.string "…{PAUSE 32}\l"
 	.string "No?\p"
 	.string "Why are you in our house?$"
 
@@ -924,7 +924,7 @@ Lumbridge_GeneralStore_MOD_ASH_Text_1:
 	.string "I'm just writing out some dialog for my\n"
 	.string "new fanfic.\p"
 	.string "I call it MY ARM'S BIG ADVENTURE!\p"
-	.string "….\p"
+	.string "…\p"
 	.string "What?\l"
 	.string "It is a great name.\p"
 	.string "Although I'm a bit stuck, I've made the\n"
@@ -952,7 +952,7 @@ Lumbridge_GeneralStore_MOD_ASH_Text_4:
 	.string "You would like to read my fanfic?\p"
 	.string "Sorry it's not finished yet, you'll have\n"
 	.string "to wait.\p"
-	.string "….\p"
+	.string "…\p"
 	.string "How long?\p"
 	.string "Soon TM.$"
 

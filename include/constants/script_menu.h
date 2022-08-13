@@ -131,6 +131,7 @@
 #define MULTI_STARTER_FREE				   117
 #define MULTI_STARTER_MEMBER			   118
 #define MULTI_POH                          119
+#define MULTI_COLOUR_PICKAXE                     120
 
 
 // Lilycove SS Tidal Multichoice Selections

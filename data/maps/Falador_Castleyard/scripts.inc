@@ -444,18 +444,6 @@ NPC_ROUTE23_DWARF_ROCKS::
 	end
 
 
-NPC_GOBLINVILLAGE_PICKAXE::
-	lock
-	faceplayer
-	namebox NPC_GOBLINVILLAGE_PICKAXE_Text_0
-	msgbox NPC_GOBLINVILLAGE_PICKAXE_Text_1
-	giveitem ITEM_PICKAXE, 1
-	closemessage
-	hidenamebox
-	release
-	end
-
-
 NPC_FALADORCASTLE_QUEST_PART_1_Text_0:
 	.string "SIR OWEN$"
 
@@ -637,11 +625,3 @@ NPC_ROUTE23_DWARF_ROCKS_Text_1:
 	.string "pickaxe supplies.\p"
 	.string "Then I could easily clear this\n"
 	.string "rockslide.$"
-
-NPC_GOBLINVILLAGE_PICKAXE_Text_0:
-	.string "GOBLIN$"
-
-NPC_GOBLINVILLAGE_PICKAXE_Text_1:
-	.string "Me like red pickaxe!\p"
-	.string "No, me like green pickaxe!\p"
-	.string "Human which Pickaxe is better?$"

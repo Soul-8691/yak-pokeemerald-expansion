@@ -426,16 +426,4 @@ script NPC_ROUTE23_DWARF_ROCKS
 	release
 	end
 }
-//GOBLIN VILLAGE
-script NPC_GOBLINVILLAGE_PICKAXE
-{
-	lock
-	faceplayer
-    namebox ("GOBLIN")
-	msgbox(format("Me like red pickaxe!\pNo, me like green pickaxe!\pHuman which Pickaxe is better?"))
-    giveitem(ITEM_PICKAXE, 1)
-    closemessage
-    hidenamebox
-	release
-	end
-}
+

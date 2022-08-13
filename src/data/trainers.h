@@ -2044,5 +2044,18 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_MUDSKIPPERPOINT_FISHERMAN_2),
         .party = {.NoItemDefaultMoves = sParty_MUDSKIPPERPOINT_FISHERMAN_2},
     },
+    [TRAINER_DEMONHEADGE] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_demonheadge,
+        .trainerName = _("DEMONHEADGE"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_Demonheadge),
+        .party = {.NoItemDefaultMoves = sParty_Demonheadge},
+    },
 
 };

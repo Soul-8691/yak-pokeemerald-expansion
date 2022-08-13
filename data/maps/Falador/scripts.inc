@@ -992,7 +992,7 @@ NPC_FALADOR_APPRENTICE_Text_5:
 	.string "Thank you! You are a lifesaver!$"
 
 NPC_FALADOR_APPRENTICE_Text_6:
-	.string "….Uh.. You do not have enough money.$"
+	.string "…{PAUSE 32}…{PAUSE 32} Uh… {PAUSE 32}You do not have enough money.$"
 
 NPC_FALADOR_APPRENTICE_Text_7:
 	.string "HOW!? I accidentally made another\n"

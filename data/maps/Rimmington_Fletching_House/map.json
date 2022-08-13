@@ -2,7 +2,7 @@
   "id": "MAP_RIMMINGTON_FLETCHING_HOUSE",
   "name": "Rimmington_Fletching_House",
   "layout": "LAYOUT_RIMMINGTON_FLETCHING_HOUSE",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_LUMBRIDGE",
   "region_map_section": "MAPSEC_RIMMINGTON",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

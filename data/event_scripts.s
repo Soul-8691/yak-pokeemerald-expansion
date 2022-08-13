@@ -1531,3 +1531,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Rimmington_Mines_B3F/scripts.inc"
 
 	.include "data/maps/Rimmington_Mines_B1F/scripts.inc"
+
+	.include "data/maps/GoblinVillage_House_1/scripts.inc"
+
+	.include "data/maps/GoblinVillage_House_2/scripts.inc"

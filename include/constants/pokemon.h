@@ -91,6 +91,7 @@
 
 // Shiny odds
 #define SHINY_ODDS 8 // Actual probability is SHINY_ODDS/65536
+//#define SHINY_ODDS 65535 //65535 100% chance to find  | 128 for a 1/512 chance
 
 // Flags for Get(Box)MonData / Set(Box)MonData
 #define MON_DATA_PERSONALITY        0

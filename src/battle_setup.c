@@ -335,7 +335,14 @@ static void DoStandardWildBattle(bool32 isDouble)
         VarSet(VAR_TEMP_E, 0);
         gBattleTypeFlags |= BATTLE_TYPE_PYRAMID;
     }
-    CreateBattleStartTask(GetWildBattleTransition(), 0);
+    //POKESCAPE EDIT
+    if (IsMonShiny(&gEnemyParty[0])){
+        CreateBattleStartTask(B_TRANSITION_WHITEFADE, MUS_PS_VS_WILD_F2P);
+    }
+    else {
+        CreateBattleStartTask(GetWildBattleTransition(), 0);
+    }
+    //
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
     IncrementGameStat(GAME_STAT_WILD_BATTLES);
     IncrementDailyWildBattles();
@@ -439,6 +446,12 @@ void BattleSetup_StartLegendaryBattle(void)
     ScriptContext2_Enable();
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_LEGENDARY;
+
+    //POKESCAPE EDIT SEE IF SHINY
+    if (IsMonShiny(&gEnemyParty[0])){
+        CreateBattleStartTask(B_TRANSITION_GROUDON, MUS_VS_KYOGRE_GROUDON);
+    }
+     //   
 
     switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
     {
@@ -765,6 +778,10 @@ u8 GetTrainerBattleTransition(void)
         || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_AQUA_LEADER
         || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_AQUA_ADMIN)
         return B_TRANSITION_AQUA;
+
+    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_HAM_GRUNT
+        || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_HAM_BOSS)
+        return B_TRANSITION_HAM;
 
     if (gTrainers[gTrainerBattleOpponent_A].doubleBattle == TRUE)
         minPartyCount = 2; // double battles always at least have 2 pokemon.

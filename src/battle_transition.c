@@ -260,6 +260,10 @@ static bool8 TrainerPicCb_SetSlideOffsets(struct Sprite *sprite);
 static bool8 TrainerPicCb_Slide1(struct Sprite *sprite);
 static bool8 TrainerPicCb_Slide2(struct Sprite *sprite);
 static bool8 TrainerPicCb_Slide3(struct Sprite *sprite);
+//POKESCAPE
+static void Phase2Task_TeamHAM(u8 taskId);
+static bool8 Phase2_TeamHAM_Func1(struct Task *task);
+static bool8 Phase2_TeamHAM_Func2(struct Task *task);
 
 // iwram bss vars
 static s16 sUnusedRectangularSpiralVar;
@@ -311,6 +315,10 @@ static const u32 sFrontierSquares_EmptyBg_Tileset[] = INCBIN_U32("graphics/battl
 static const u32 sFrontierSquares_Shrink1_Tileset[] = INCBIN_U32("graphics/battle_transitions/frontier_square_3.4bpp.lz");
 static const u32 sFrontierSquares_Shrink2_Tileset[] = INCBIN_U32("graphics/battle_transitions/frontier_square_4.4bpp.lz");
 static const u32 sFrontierSquares_Tilemap[] = INCBIN_U32("graphics/battle_transitions/frontier_squares.bin");
+//POKESCAPE BATTLE TRANSITIONS
+static const u32 sTeamHAM_Palette[] = INCBIN_U32("graphics/battle_transitions/HAM_LOGO.gbapal");
+static const u32 sTeamHAM_Tileset[] = INCBIN_U32("graphics/battle_transitions/HAM_LOGO.4bpp.lz");
+static const u32 sTeamHAM_Tilemap[] = INCBIN_U32("graphics/battle_transitions/HAM_LOGO.bin.lz");
 
 static const TaskFunc sPhase1_Tasks[B_TRANSITION_COUNT] =
 {
@@ -361,6 +369,8 @@ static const TaskFunc sPhase2_Tasks[B_TRANSITION_COUNT] =
     [B_TRANSITION_FRONTIER_CIRCLES_CROSS_IN_SEQ] = Phase2Task_FrontierCirclesCrossInSeq,
     [B_TRANSITION_FRONTIER_CIRCLES_ASYMMETRIC_SPIRAL_IN_SEQ] = Phase2Task_FrontierCirclesAsymmetricSpiralInSeq,
     [B_TRANSITION_FRONTIER_CIRCLES_SYMMETRIC_SPIRAL_IN_SEQ] = Phase2Task_FrontierCirclesSymmetricSpiralInSeq,
+    //PokeScape
+    [B_TRANSITION_HAM] = Phase2Task_TeamHAM,
 };
 
 static const TransitionStateFunc sMainTransitionPhases[] =
@@ -462,6 +472,17 @@ static const TransitionStateFunc sPhase2_Kyogre_Funcs[] =
     Phase2_FramesCountdown,
     Phase2_WeatherDuo_Func6,
     Phase2_WeatherDuo_Func7
+};
+//POKESCAPE
+static const TransitionStateFunc sPhase2_TeamHAM_Funcs[] =
+{
+    Phase2_TeamHAM_Func1,
+    Phase2_TeamHAM_Func2,
+    Phase2_BigPokeball_Func3,
+    Phase2_BigPokeball_Func4,
+    Phase2_BigPokeball_Func5,
+    Phase2_FramesCountdown,
+    Phase2_BigPokeball_Func6
 };
 
 static const TransitionStateFunc sPhase2_PokeballsTrail_Funcs[] =
@@ -1238,6 +1259,11 @@ static void Phase2Task_Kyogre(u8 taskId)
 {
     while (sPhase2_Kyogre_Funcs[gTasks[taskId].tState](&gTasks[taskId]));
 }
+//POKESCAPE
+static void Phase2Task_TeamHAM(u8 taskId)
+{
+   while (sPhase2_TeamHAM_Funcs[gTasks[taskId].tState](&gTasks[taskId]));
+}
 
 static void sub_814669C(struct Task *task)
 {
@@ -1294,6 +1320,7 @@ static bool8 Phase2_Magma_Func1(struct Task *task)
     task->tState++;
     return FALSE;
 }
+
 
 static bool8 Phase2_Regi_Func1(struct Task *task)
 {
@@ -1451,6 +1478,34 @@ static bool8 Phase2_Kyogre_Func5(struct Task *task)
         task->tFrames = 30;
     }
 
+    return FALSE;
+}
+//POKESCAPE
+static bool8 Phase2_TeamHAM_Func1(struct Task *task)
+{
+    u16 *tilemap, *tileset;
+
+    task->tFrames = 60;
+    sub_814669C(task);
+    GetBg0TilesDst(&tilemap, &tileset);
+    CpuFill16(0, tilemap, 0x800);
+    LZ77UnCompVram(sTeamHAM_Tileset, tileset);
+    LoadPalette(sTeamHAM_Palette, 0xF0, 0x20);
+
+    task->tState++;
+    return FALSE;
+}
+
+
+static bool8 Phase2_TeamHAM_Func2(struct Task *task)
+{
+    u16 *tilemap, *tileset;
+
+    GetBg0TilesDst(&tilemap, &tileset);
+    LZ77UnCompVram(sTeamHAM_Tilemap, tilemap);
+    sub_8149F98(gScanlineEffectRegBuffers[0], 0, task->tData4, 132, task->tData5, 160);
+
+    task->tState++;
     return FALSE;
 }
 

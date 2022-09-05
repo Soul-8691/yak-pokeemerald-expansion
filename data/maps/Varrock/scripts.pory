@@ -1,0 +1,29 @@
+mapscripts Varrock_MapScripts {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//NPCS
+
+
+//an NPC that offer to trim a monster, and after you accept and give them one they just disappear
+script VARROCK_SCAMMER
+{
+    faceplayer
+    namebox ("SUS")
+    msgbox(format("Pssst, give me your monster, I'll trim it for you."))
+    closemessage
+    hidenamebox
+    release
+    end
+}

@@ -6,6 +6,28 @@ Route24_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	return
 
 
+ROUTE24_SIGNPOST::
+	msgbox ROUTE24_SIGNPOST_Text_0
+	closemessage
+	end
+
+
+ROUTE24_GOBLIN_SIGNPOST::
+	msgbox ROUTE24_GOBLIN_SIGNPOST_Text_0
+	closemessage
+	end
+
+
+NPC_ROUTE24_BLOCKADE_1::
+	lock
+	faceplayer
+	namebox NPC_ROUTE24_BLOCKADE_1_Text_0
+	msgbox NPC_ROUTE24_BLOCKADE_1_Text_1
+	hidenamebox
+	release
+	end
+
+
 BATTLE_ROUTE24_MUGGER::
 	trainerbattle_single TRAINER_ROUTE24_MUGGER, BATTLE_ROUTE24_MUGGER_Text_0, BATTLE_ROUTE24_MUGGER_Text_1
 	namebox BATTLE_ROUTE24_MUGGER_Text_2
@@ -17,7 +39,7 @@ BATTLE_ROUTE24_MUGGER::
 
 BATTLE_ROUTE24_WOODCUTTER_1::
 	trainerbattle_single TRAINER_ROUTE24_WOODCUTTER_1, BATTLE_ROUTE24_WOODCUTTER_1_Text_0, BATTLE_ROUTE24_WOODCUTTER_1_Text_1
-	namebox BATTLE_ROUTE24_MUGGER_Text_2
+	namebox BATTLE_ROUTE24_WOODCUTTER_1_Text_2
 	msgbox BATTLE_ROUTE24_WOODCUTTER_1_Text_1
 	hidenamebox
 	release
@@ -89,6 +111,25 @@ NPC_ROUTE24_NPC_2::
 	end
 
 
+ROUTE24_SIGNPOST_Text_0:
+	.string "East to Taverley.\p"
+	.string "North to Goblin Village\p"
+	.string "South to Falador.$"
+
+ROUTE24_GOBLIN_SIGNPOST_Text_0:
+	.string "Goblin Village.\p"
+	.string "Red Armour best!$"
+
+NPC_ROUTE24_BLOCKADE_1_Text_0:
+	.string "White Knight$"
+
+NPC_ROUTE24_BLOCKADE_1_Text_1:
+	.string "Sorry you need to be a member to access\n"
+	.string "past here.\p"
+	.string "What is a member?\p"
+	.string "A member is someone who has obtained\n"
+	.string "all of the badges in F2P.$"
+
 BATTLE_ROUTE24_MUGGER_Text_0:
 	.string "Deliver and stand!$"
 
@@ -108,6 +149,9 @@ BATTLE_ROUTE24_WOODCUTTER_1_Text_0:
 BATTLE_ROUTE24_WOODCUTTER_1_Text_1:
 	.string "If I lose a battle and nobody is here.\p"
 	.string "Do I still get xp?$"
+
+BATTLE_ROUTE24_WOODCUTTER_1_Text_2:
+	.string "Wilfred$"
 
 BATTLE_ROUTE24_WOODCUTTER_2_Text_0:
 	.string "To chop down trees you need a hatchet\n"

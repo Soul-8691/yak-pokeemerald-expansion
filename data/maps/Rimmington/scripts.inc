@@ -129,15 +129,29 @@ NPC_RIMMINGTON_PETER::
 NPC_RIMMINGTON_GnomeBoiKevin::
 	lock
 	faceplayer
+	checkitem ITEM_TERRORBIRD_POUCH, 1
+	compare ! VAR_RESULT, 0
+	goto_if_ne NPC_RIMMINGTON_GnomeBoiKevin_2
+	namebox NPC_RIMMINGTON_GnomeBoiKevin_Text_0
+	msgbox NPC_RIMMINGTON_GnomeBoiKevin_Text_3
+	closemessage
+	release
+	end
+
+NPC_RIMMINGTON_GnomeBoiKevin_1:
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_RIMMINGTON_GnomeBoiKevin_2:
 	namebox NPC_RIMMINGTON_GnomeBoiKevin_Text_0
 	msgbox NPC_RIMMINGTON_GnomeBoiKevin_Text_1
 	hidenamebox
 	giveitem ITEM_TERRORBIRD_POUCH
 	namebox NPC_RIMMINGTON_GnomeBoiKevin_Text_0
 	msgbox NPC_RIMMINGTON_GnomeBoiKevin_Text_2
-	hidenamebox
-	release
-	end
+	goto NPC_RIMMINGTON_GnomeBoiKevin_1
 
 
 NPC_TERRORBIRD::
@@ -164,7 +178,7 @@ NPC_RIMMINGTON_NPC_9::
 	lock
 	faceplayer
 	namebox NPC_RIMMINGTON_NPC_9_Text_0
-	msgbox NPC_RIMMINGTON_NPC_9_Text_0
+	msgbox NPC_RIMMINGTON_NPC_9_Text_1
 	hidenamebox
 	release
 	end
@@ -172,13 +186,40 @@ NPC_RIMMINGTON_NPC_9::
 
 NPC_RIMMINGTON_NPC_10::
 	lock
-	faceplayer
-	namebox NPC_RIMMINGTON_NPC_9_Text_0
-	msgbox NPC_RIMMINGTON_NPC_9_Text_0
+	applymovement 30, RIMMINGTON_ED8_FEMALE
+	waitmovement 0
+	namebox NPC_RIMMINGTON_NPC_10_Text_0
+	msgbox NPC_RIMMINGTON_NPC_10_Text_1
 	hidenamebox
+	closemessage
+	applymovement 29, RIMMINGTON_ED8_MALE
+	waitmovement 0
+	namebox NPC_RIMMINGTON_NPC_10_Text_0
+	msgbox NPC_RIMMINGTON_NPC_10_Text_2
+	hidenamebox
+	closemessage
+	applymovement 30, RIMMINGTON_ED8
+	applymovement 29, RIMMINGTON_ED8
+	waitmovement 0
 	release
 	end
 
+
+RIMMINGTON_ED8_FEMALE:
+	walk_in_place_right
+	walk_in_place_right
+	walk_in_place_right
+	step_end
+
+RIMMINGTON_ED8_MALE:
+	walk_in_place_left
+	walk_in_place_left
+	walk_in_place_left
+	step_end
+
+RIMMINGTON_ED8:
+	face_down
+	step_end
 
 NPC_RIMMINGTON_NPC_11::
 	lock
@@ -213,8 +254,8 @@ NPC_RIMMINGTON_NPC_16::
 NPC_RIMMINGTON_NPC_17::
 	lock
 	faceplayer
-	namebox NPC_RIMMINGTON_NPC_9_Text_0
-	msgbox NPC_RIMMINGTON_NPC_9_Text_0
+	namebox NPC_RIMMINGTON_NPC_17_Text_0
+	msgbox NPC_RIMMINGTON_NPC_17_Text_1
 	hidenamebox
 	release
 	end
@@ -223,8 +264,8 @@ NPC_RIMMINGTON_NPC_17::
 NPC_RIMMINGTON_NPC_18::
 	lock
 	faceplayer
-	namebox NPC_RIMMINGTON_NPC_9_Text_0
-	msgbox NPC_RIMMINGTON_NPC_9_Text_0
+	namebox NPC_RIMMINGTON_NPC_18_Text_0
+	msgbox NPC_RIMMINGTON_NPC_18_Text_1
 	hidenamebox
 	release
 	end
@@ -233,8 +274,8 @@ NPC_RIMMINGTON_NPC_18::
 NPC_RIMMINGTON_NPC_19::
 	lock
 	faceplayer
-	namebox NPC_RIMMINGTON_NPC_9_Text_0
-	msgbox NPC_RIMMINGTON_NPC_9_Text_0
+	namebox NPC_RIMMINGTON_NPC_19_Text_0
+	msgbox NPC_RIMMINGTON_NPC_19_Text_1
 	hidenamebox
 	release
 	end
@@ -919,8 +960,8 @@ ITEM_RIMMINGTON_3::
 NPC_RIMMINGTON_NPC_14::
 	lock
 	faceplayer
-	namebox NPC_RIMMINGTON_NPC_9_Text_0
-	msgbox NPC_RIMMINGTON_NPC_14_Text_0
+	namebox NPC_RIMMINGTON_NPC_14_Text_0
+	msgbox NPC_RIMMINGTON_NPC_14_Text_1
 	hidenamebox
 	release
 	end
@@ -929,8 +970,8 @@ NPC_RIMMINGTON_NPC_14::
 NPC_RIMMINGTON_NPC_15::
 	lock
 	faceplayer
-	namebox NPC_RIMMINGTON_NPC_9_Text_0
-	msgbox NPC_RIMMINGTON_NPC_9_Text_0
+	namebox NPC_RIMMINGTON_NPC_15_Text_0
+	msgbox NPC_RIMMINGTON_NPC_15_Text_1
 	hidenamebox
 	release
 	end
@@ -1050,10 +1091,14 @@ NPC_RIMMINGTON_GnomeBoiKevin_Text_2:
 	.string "Don't use it in battle.\n"
 	.string "You ride it!\p"
 	.string "It will help you travel the land of\n"
-	.string "Gilenor.\p"
+	.string "Gielinor.\p"
 	.string "It is my gift to you.\p"
 	.string "All I ask in return is for you to treat it\n"
 	.string "well.$"
+
+NPC_RIMMINGTON_GnomeBoiKevin_Text_3:
+	.string "Terrorbirds are great to get around\n"
+	.string "with!$"
 
 NPC_TERRORBIRD_Text_0:
 	.string "SKREEEE!$"
@@ -1069,6 +1114,23 @@ NPC_RIMMINGTON_NPC_8_Text_1:
 NPC_RIMMINGTON_NPC_9_Text_0:
 	.string "CUPHOLDER$"
 
+NPC_RIMMINGTON_NPC_9_Text_1:
+	.string "You can not always run from your\n"
+	.string "problems.\p"
+	.string "Running near others will make them spot\n"
+	.string "you easier.\p"
+	.string "Be careful if you do not want a fight.$"
+
+NPC_RIMMINGTON_NPC_10_Text_0:
+	.string "EDater$"
+
+NPC_RIMMINGTON_NPC_10_Text_1:
+	.string "Honey whats your favorite Elite\n"
+	.string "Dungeon?$"
+
+NPC_RIMMINGTON_NPC_10_Text_2:
+	.string "ED8.$"
+
 NPC_RIMMINGTON_NPC_SKIPPY_Text_0:
 	.string "SKIPPY$"
 
@@ -1081,6 +1143,27 @@ NPC_RIMMINGTON_NPC_16_Text_0:
 NPC_RIMMINGTON_NPC_16_Text_1:
 	.string "Newts?\p"
 	.string "No I don't have any why do you ask?$"
+
+NPC_RIMMINGTON_NPC_17_Text_0:
+	.string "Chancey$"
+
+NPC_RIMMINGTON_NPC_17_Text_1:
+	.string "Leave me alone, I am trying to gamble\n"
+	.string "with my buddies.\p"
+	.string "Talk to me in a members world.$"
+
+NPC_RIMMINGTON_NPC_18_Text_0:
+	.string "Hops$"
+
+NPC_RIMMINGTON_NPC_18_Text_1:
+	.string "It is a dreadful world we live in.$"
+
+NPC_RIMMINGTON_NPC_19_Text_0:
+	.string "Da Vinci$"
+
+NPC_RIMMINGTON_NPC_19_Text_1:
+	.string "The chemist is close by here.\p"
+	.string "Be careful or you might get blown up.$"
 
 NPC_RIMMINGTON_NPC_12_Text_0:
 	.string "If you ever need anything unnoted I am\n"
@@ -1453,8 +1536,18 @@ NPC_POH_RAPTOR_Text_2:
 	.string "With this you can mine rocks.$"
 
 NPC_RIMMINGTON_NPC_14_Text_0:
+	.string "Hengels$"
+
+NPC_RIMMINGTON_NPC_14_Text_1:
 	.string "Why did we even move here, the\n"
 	.string "neighbours are so noisy.$"
+
+NPC_RIMMINGTON_NPC_15_Text_0:
+	.string "Anja$"
+
+NPC_RIMMINGTON_NPC_15_Text_1:
+	.string "My husband loves fishing, that is why we\n"
+	.string "moved here from Falador.$"
 
 NPC_RIMMINGTON_NPC_3_Text_0:
 	.string "CHEMIST$"

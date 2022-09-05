@@ -562,6 +562,14 @@ NPC_PORTSARIM_BANK_NPC::
 	end
 
 
+NPC_PORTSARIM_BATTLEAXE_LOREBOOK::
+	lock
+	msgbox NPC_PORTSARIM_BATTLEAXE_LOREBOOK_Text_0
+	waitmessage
+	release
+	end
+
+
 Generalstore_PortSarim_Clerk::
 	lock
 	faceplayer
@@ -884,6 +892,11 @@ NPC_PORTSARIM_BANK_NPC_Text_0:
 	.string "Every one of them wee flying rats\n"
 	.string "evolved to a different beastie.\p"
 	.string "What in tarnation is this sorcery lad?$"
+
+NPC_PORTSARIM_BATTLEAXE_LOREBOOK_Text_0:
+	.string "It seems to be a Fan-fic about a man\n"
+	.string "who fell in love with his battleaxe.\p"
+	.string "You feel the sudden urge to leave.$"
 
 Generalstore_PortSarim_Clerk_Text_0:
 	.string "ASSISTANT$"

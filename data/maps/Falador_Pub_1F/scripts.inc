@@ -29,6 +29,16 @@ NPC_FALADORPUB_BARMAID_2::
 	end
 
 
+NPC_FALADORPUB_BARMAID_3::
+	lock
+	namebox NPC_FALADORPUB_BARMAID_3_Text_0
+	msgbox NPC_FALADORPUB_BARMAID_3_Text_1
+	waitmessage
+	hidenamebox
+	release
+	end
+
+
 NPC_FALADORPUB_NPC1::
 	lock
 	faceplayer
@@ -138,6 +148,13 @@ NPC_FALADORPUB_BARMAID_2_Text_0:
 NPC_FALADORPUB_BARMAID_2_Text_1:
 	.string "Sorry I will be right with you, I just\n"
 	.string "have to get these orders first!$"
+
+NPC_FALADORPUB_BARMAID_3_Text_0:
+	.string "Barmaid$"
+
+NPC_FALADORPUB_BARMAID_3_Text_1:
+	.string "Hufff Pufff…\p"
+	.string "Being Barmaid is hard work.$"
 
 NPC_FALADORPUB_NPC1_Text_0:
 	.string "Today was a rough day.\p"

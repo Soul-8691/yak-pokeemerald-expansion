@@ -37,6 +37,16 @@ script NPC_FALADORPUB_BARMAID_2
 	end
 }
 
+script NPC_FALADORPUB_BARMAID_3
+{
+	lock
+    namebox ("Barmaid")
+	msgbox(format("Hufff Pufff…\pBeing Barmaid is hard work."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}
 
 
 

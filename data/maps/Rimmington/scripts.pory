@@ -4,6 +4,9 @@ const OBJ_EVENT_ID_DEMONHEADGE = 5
 const OBJ_EVENT_ID_HYPERSTAN = 4
 const OBJ_EVENT_ID_TEHNOOBSHOW = 3
 
+const OBJ_EVENT_ID_ED8_Female = 30
+const OBJ_EVENT_ID_ED8_Male = 29
+
 mapscripts Rimmington_MapScripts{
 	MAP_SCRIPT_ON_TRANSITION {
     goto(Rimmington_STATE)
@@ -150,19 +153,42 @@ script NPC_RIMMINGTON_PETER{
     end
 }
 
-script NPC_RIMMINGTON_GnomeBoiKevin{
+
+
+
+script NPC_RIMMINGTON_GnomeBoiKevin {
     lock
     faceplayer
-    namebox("Kevin")
-    msgbox(format("Hiya!\pI am Little GnomeBoi Kevin!\pYou look exhausted, where did you come from?\p…{PAUSE 15}… LUMBRIDGE!?\pThis will not do!\pHere take this!"))
+    checkitem(ITEM_TERRORBIRD_POUCH, 1)
+        if (var(!VAR_RESULT)){
+            namebox("Kevin")
+            msgbox(format("Hiya!\pI am Little GnomeBoi Kevin!\pYou look exhausted, where did you come from?\p…{PAUSE 15}… LUMBRIDGE!?\pThis will not do!\pHere take this!"))
+            hidenamebox
+            giveitem (ITEM_TERRORBIRD_POUCH)
+            namebox("Kevin")
+            msgbox(format("You can use that pouch to summon a lightning blue fast Terrorbird!\p…{PAUSE 15}…{PAUSE 15} NO!\pDon't use it in battle.\nYou ride it!\pIt will help you travel the land of Gielinor.\pIt is my gift to you.\pAll I ask in return is for you to treat it well."))  
+        }
+        else {
+            namebox("Kevin")
+            msgbox(format("Terrorbirds are great to get around with!"))
+            closemessage
+            release
+            end
+        }
     hidenamebox
-    giveitem (ITEM_TERRORBIRD_POUCH)
-    namebox("Kevin")
-    msgbox(format("You can use that pouch to summon a lightning blue fast Terrorbird!\p…{PAUSE 15}…{PAUSE 15} NO!\pDon't use it in battle.\nYou ride it!\pIt will help you travel the land of Gilenor.\pIt is my gift to you.\pAll I ask in return is for you to treat it well."))
-    hidenamebox
+    closemessage
     release
     end
 }
+
+
+
+
+
+
+
+
+
 
 script NPC_TERRORBIRD
 {
@@ -189,20 +215,45 @@ script NPC_RIMMINGTON_NPC_9{
     lock
     faceplayer
     namebox("CUPHOLDER")
-    msgbox(format("CUPHOLDER"))
+    msgbox(format("You can not always run from your problems.\pRunning near others will make them spot you easier.\pBe careful if you do not want a fight."))
     hidenamebox
     release
     end
 }
 
+//30 f
+//29 m
 script NPC_RIMMINGTON_NPC_10{
     lock
-    faceplayer
-    namebox("CUPHOLDER")
-    msgbox(format("CUPHOLDER"))
+    applymovement(OBJ_EVENT_ID_ED8_Female, RIMMINGTON_ED8_FEMALE)
+    waitmovement(0)
+    namebox("EDater")
+    msgbox(format("Honey whats your favorite Elite Dungeon?"))
     hidenamebox
+    closemessage
+    applymovement(OBJ_EVENT_ID_ED8_Male, RIMMINGTON_ED8_MALE)
+    waitmovement(0)
+    namebox("EDater")
+    msgbox(format("ED8."))
+    hidenamebox
+    closemessage
+    applymovement(OBJ_EVENT_ID_ED8_Female, RIMMINGTON_ED8)
+    applymovement(OBJ_EVENT_ID_ED8_Male, RIMMINGTON_ED8)
+    waitmovement(0)
     release
     end
+}
+movement RIMMINGTON_ED8_FEMALE
+{
+    walk_in_place_right * 3
+}
+movement RIMMINGTON_ED8_MALE
+{
+    walk_in_place_left * 3
+}
+movement RIMMINGTON_ED8
+{
+    face_down
 }
 
 script NPC_RIMMINGTON_NPC_11{
@@ -238,8 +289,8 @@ script NPC_RIMMINGTON_NPC_16{
 script NPC_RIMMINGTON_NPC_17{
     lock
     faceplayer
-    namebox("CUPHOLDER")
-    msgbox(format("CUPHOLDER"))
+    namebox("Chancey")
+    msgbox(format("Leave me alone, I am trying to gamble with my buddies.\pTalk to me in a members world."))
     hidenamebox
     release
     end
@@ -248,8 +299,8 @@ script NPC_RIMMINGTON_NPC_17{
 script NPC_RIMMINGTON_NPC_18{
     lock
     faceplayer
-    namebox("CUPHOLDER")
-    msgbox(format("CUPHOLDER"))
+    namebox("Hops")
+    msgbox(format("It is a dreadful world we live in."))
     hidenamebox
     release
     end
@@ -258,8 +309,8 @@ script NPC_RIMMINGTON_NPC_18{
 script NPC_RIMMINGTON_NPC_19{
     lock
     faceplayer
-    namebox("CUPHOLDER")
-    msgbox(format("CUPHOLDER"))
+    namebox("Da Vinci")
+    msgbox(format("The chemist is close by here.\pBe careful or you might get blown up."))
     hidenamebox
     release
     end
@@ -965,7 +1016,7 @@ script NPC_RIMMINGTON_NPC_14
 {
     lock
     faceplayer
-    namebox("CUPHOLDER")
+    namebox("Hengels")
     msgbox(format("Why did we even move here, the neighbours are so noisy."))
     hidenamebox
     release
@@ -976,8 +1027,8 @@ script NPC_RIMMINGTON_NPC_15
 {
     lock
     faceplayer
-    namebox("CUPHOLDER")
-    msgbox(format("CUPHOLDER"))
+    namebox("Anja")
+    msgbox(format("My husband loves fishing, that is why we moved here from Falador."))
     hidenamebox
     release
     end

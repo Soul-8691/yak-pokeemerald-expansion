@@ -1,0 +1,17 @@
+mapscripts Route23_MapScripts {
+}
+
+
+
+
+script NPC_ROUTE23_BLOCKADE_DWARVES
+{
+	lock
+	faceplayer
+    namebox ("Dwarf")
+	msgbox(format("There has been a landslide on Ice Mountain, we are currently cleaning up.\pCome back later."))
+    waitmessage
+    hidenamebox
+	release
+	end
+}

@@ -154,7 +154,7 @@ NPC_PortSarimPub_NPC_1_Text_1:
 	.string "day.\p"
 	.string "I heard this rule came about after too\n"
 	.string "many drunks lost all of their gold\l"
-	.string "peices.$"
+	.string "pieces.$"
 
 NPC_PortSarimPub_NPC_2_Text_0:
 	.string "PIRATE$"

@@ -984,13 +984,13 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_4[] = {
 static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_5[] = {
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 13,
     .species = SPECIES_RAT_NORMAL_FORM,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 12,
     .species = SPECIES_IMP,
     .heldItem = ITEM_NONE
     }

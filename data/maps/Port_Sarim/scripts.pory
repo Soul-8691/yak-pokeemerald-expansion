@@ -632,6 +632,14 @@ script NPC_PORTSARIM_BANK_NPC
 	end
 }
 
+script NPC_PORTSARIM_BATTLEAXE_LOREBOOK
+{
+	lock
+	msgbox(format("It seems to be a Fan-fic about a man who fell in love with his battleaxe.\pYou feel the sudden urge to leave."))
+    waitmessage
+	release
+	end
+}
 
 
 

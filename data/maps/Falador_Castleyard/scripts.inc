@@ -433,11 +433,44 @@ NPC_FALADORCASTLE_GYM_SIROWEN::
 	end
 
 
+NPC_FALADORCASTLE_GYM_SirRentee::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_GYM_SirRentee_Text_0
+	msgbox NPC_FALADORCASTLE_GYM_SirRentee_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_GYM_Ambassador_Spanfipple::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_GYM_Ambassador_Spanfipple_Text_0
+	msgbox NPC_FALADORCASTLE_GYM_Ambassador_Spanfipple_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 NPC_ROUTE23_DWARF_ROCKS::
 	lock
 	faceplayer
 	namebox NPC_ROUTE23_DWARF_ROCKS_Text_0
 	msgbox NPC_ROUTE23_DWARF_ROCKS_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_ROUTE24_DORIC::
+	lock
+	faceplayer
+	namebox NPC_ROUTE24_DORIC_Text_0
+	msgbox NPC_ROUTE24_DORIC_Text_1
 	closemessage
 	hidenamebox
 	release
@@ -603,7 +636,7 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_6:
 
 NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_7:
 	.string "I recommend that you make your way to\n"
-	.string "Al Khaird or Varrock for your next MvM\l"
+	.string "Al Kharid or Varrock for your next MvM\l"
 	.string "gym challenge.\p"
 	.string "Unless you would like to become a white\n"
 	.string "knight instead?$"
@@ -617,6 +650,29 @@ NPC_FALADORCASTLE_GYM_SIROWEN_Text_1:
 	.string "stolen, so we aren't sure what they\l"
 	.string "meant by distraction.$"
 
+NPC_FALADORCASTLE_GYM_SirRentee_Text_0:
+	.string "Sir Rentee$"
+
+NPC_FALADORCASTLE_GYM_SirRentee_Text_1:
+	.string "I am the designer of all the Family\n"
+	.string "Crests.\p"
+	.string "I wanted to make a design for the Badge\n"
+	.string "of the Falador Gym too, but Sir Amik\l"
+	.string "prevered the design of some 'Stan'\l"
+	.string "fella over my design.\p"
+	.string "Sigh, guess I could not compete against\n"
+	.string "such artistic brilliance.$"
+
+NPC_FALADORCASTLE_GYM_Ambassador_Spanfipple_Text_0:
+	.string "Spanfipple$"
+
+NPC_FALADORCASTLE_GYM_Ambassador_Spanfipple_Text_1:
+	.string "Earlier I saw the new prisoners.\p"
+	.string "They must be bad people, but their Pink\n"
+	.string "outfits looked fabulous!\p"
+	.string "Much better than all this boring white\n"
+	.string "around here.$"
+
 NPC_ROUTE23_DWARF_ROCKS_Text_0:
 	.string "DWARF$"
 
@@ -625,3 +681,19 @@ NPC_ROUTE23_DWARF_ROCKS_Text_1:
 	.string "pickaxe supplies.\p"
 	.string "Then I could easily clear this\n"
 	.string "rockslide.$"
+
+NPC_ROUTE24_DORIC_Text_0:
+	.string "DORIC$"
+
+NPC_ROUTE24_DORIC_Text_1:
+	.string "Hello traveller, I was wondering if you\n"
+	.string "could get me some Iron ore.\p"
+	.string "You see, suddenly all ya human-folk are\n"
+	.string "obsessed with Ironman mode and I want\l"
+	.string "in.\p"
+	.string "What does that mean I have to get it\n"
+	.string "myself?\p"
+	.string "Nonsense!\p"
+	.string "Stop kidding around and get this old\n"
+	.string "dwarf some iron ore.\p"
+	.string "I will reward you of course!$"

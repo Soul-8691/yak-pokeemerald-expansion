@@ -17,7 +17,7 @@ script NPC_PortSarimPub_NPC_1 {
 	lock
 	faceplayer
     namebox("SAILOR")
-	msgbox(format("There is an unspoken rule where you can only battle the same person once per day.\pI heard this rule came about after too many drunks lost all of their gold peices."))
+	msgbox(format("There is an unspoken rule where you can only battle the same person once per day.\pI heard this rule came about after too many drunks lost all of their gold pieces."))
     hidenamebox
     release
 	end

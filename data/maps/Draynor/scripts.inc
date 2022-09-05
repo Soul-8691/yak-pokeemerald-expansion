@@ -479,8 +479,8 @@ Draynor_Morgan_Text_0:
 	.string "Morgan$"
 
 Draynor_Morgan_Text_1:
-	.string "There's a Vampyre in Draynor Mannor but\n"
-	.string "no one believes me..$"
+	.string "There's a Vampyre in Draynor Manor but\n"
+	.string "no one believes me…$"
 
 Draynor_Morgan_Text_2:
 	.string "What is that?!\p"

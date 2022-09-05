@@ -394,7 +394,7 @@ script NPC_FALADORCASTLE_GYM_SIRAMIKVARZE {
         release
         end
     }
-    msgbox(format("I recommend that you make your way to Al Khaird or Varrock for your next MvM gym challenge.\pUnless you would like to become a white knight instead?"))
+    msgbox(format("I recommend that you make your way to Al Kharid or Varrock for your next MvM gym challenge.\pUnless you would like to become a white knight instead?"))
     hidenamebox
     release
     end
@@ -413,6 +413,34 @@ script NPC_FALADORCASTLE_GYM_SIROWEN
 	end
 }
 
+script NPC_FALADORCASTLE_GYM_SirRentee
+{
+	lock
+	faceplayer
+    namebox ("Sir Rentee")
+	msgbox(format("I am the designer of all the Family Crests.\pI wanted to make a design for the Badge of the Falador Gym too, but Sir Amik prevered the design of some 'Stan' fella over my design.\pSigh, guess I could not compete against such artistic brilliance."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADORCASTLE_GYM_Ambassador_Spanfipple
+{
+	lock
+	faceplayer
+    namebox ("Spanfipple")
+	msgbox(format("Earlier I saw the new prisoners.\pThey must be bad people, but their Pink outfits looked fabulous!\pMuch better than all this boring white around here."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+
+
 
 //ROUTE 23
 script NPC_ROUTE23_DWARF_ROCKS
@@ -426,4 +454,19 @@ script NPC_ROUTE23_DWARF_ROCKS
 	release
 	end
 }
+
+//ROUTE 24
+
+script NPC_ROUTE24_DORIC
+{
+	lock
+	faceplayer
+    namebox ("DORIC")
+	msgbox(format("Hello traveller, I was wondering if you could get me some Iron ore.\pYou see, suddenly all ya human-folk are obsessed with Ironman mode and I want in.\pWhat does that mean I have to get it myself?\pNonsense!\pStop kidding around and get this old dwarf some iron ore.\pI will reward you of course!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
 

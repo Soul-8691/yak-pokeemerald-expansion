@@ -865,6 +865,7 @@
 #define MAP_RIMMINGTON_MINES_B1F                (39 | (50 << 8))
 #define MAP_GOBLIN_VILLAGE_HOUSE_1              (40 | (50 << 8))
 #define MAP_GOBLIN_VILLAGE_HOUSE_2              (41 | (50 << 8))
+#define MAP_DORICS_HUT                          (42 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

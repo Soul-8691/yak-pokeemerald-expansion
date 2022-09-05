@@ -341,7 +341,7 @@ script Draynor_Morgan{
             lock
 	        faceplayer
             namebox("Morgan")
-            msgbox(format("There's a Vampyre in Draynor Mannor but no one believes me.."))
+            msgbox(format("There's a Vampyre in Draynor Manor but no one believes me…"))
             hidenamebox
             release
             end

@@ -6117,7 +6117,7 @@
       "width": 16,
       "height": 12,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Falador",
+      "secondary_tileset": "gTileset_Barbarian_Village",
       "border_filepath": "data/layouts/Route40/border.bin",
       "blockdata_filepath": "data/layouts/Route40/map.bin"
     },
@@ -6820,6 +6820,16 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/GoblinVillage_House_2/border.bin",
       "blockdata_filepath": "data/layouts/GoblinVillage_House_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_DORICS_HUT",
+      "name": "Dorics_Hut_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Dorics_Hut/border.bin",
+      "blockdata_filepath": "data/layouts/Dorics_Hut/map.bin"
     }
   ]
 }

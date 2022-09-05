@@ -4,8 +4,51 @@ mapscripts Route24_MapScripts {
     }
 }
 
+//SIGNPOST
+script ROUTE24_SIGNPOST
+{
+	msgbox(format("East to Taverley.\pNorth to Goblin Village\pSouth to Falador."))
+	closemessage
+	end
+}
+script ROUTE24_GOBLIN_SIGNPOST
+{
+	msgbox(format("Goblin Village.\pRed Armour best!"))
+	closemessage
+	end
+}
+
+//NPC
+script NPC_ROUTE24_BLOCKADE_1
+{
+    lock
+    faceplayer
+    namebox("White Knight")
+    msgbox(format("Sorry you need to be a member to access past here.\pWhat is a member?\pA member is someone who has obtained all of the badges in F2P."))
+    hidenamebox
+    release
+    end
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//TRAINERS
 script BATTLE_ROUTE24_MUGGER{
     trainerbattle_single(TRAINER_ROUTE24_MUGGER, format("Deliver and stand!"),format("Sorry I mixed that up, could you please be robbed again?\pNo?\pOk then…"))
     namebox ("RSN")
@@ -17,7 +60,7 @@ script BATTLE_ROUTE24_MUGGER{
 
 script BATTLE_ROUTE24_WOODCUTTER_1{
     trainerbattle_single(TRAINER_ROUTE24_WOODCUTTER_1, format("Woodcutting is more than just cutting trees, here let me show you."),format("If I lose a battle and nobody is here.\pDo I still get xp?"))
-    namebox ("RSN")
+    namebox ("Wilfred")
     msgbox(format("If I lose a battle and nobody is here.\pDo I still get xp?"))
     hidenamebox
     release

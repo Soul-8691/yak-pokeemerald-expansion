@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE40",
   "name": "Route40",
   "layout": "LAYOUT_ROUTE40",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_ROUTE_ASGARNIA",
   "region_map_section": "MAPSEC_ROUTE_40",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
       "x": 0,
       "y": 10,
       "elevation": 3,
@@ -39,7 +39,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
       "x": 15,
       "y": 4,
       "elevation": 3,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
+      "graphics_id": "OBJ_EVENT_GFX_PHOENIX_EGG",
       "x": 6,
       "y": 7,
       "elevation": 3,

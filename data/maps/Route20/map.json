@@ -64,7 +64,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CAT_WHITE",
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
       "x": 9,
       "y": 30,
       "elevation": 3,
@@ -90,7 +90,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DIVINER",
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
       "x": 17,
       "y": 31,
       "elevation": 3,

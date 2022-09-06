@@ -2058,4 +2058,18 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_Demonheadge},
     },
 
+    [TRAINER_ROUTE40_DIVINER] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_DIVINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_divination,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE40_DIVINER),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE40_DIVINER},
+    },
+
 };

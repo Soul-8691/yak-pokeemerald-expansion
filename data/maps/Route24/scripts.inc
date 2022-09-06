@@ -111,6 +111,15 @@ NPC_ROUTE24_NPC_2::
 	end
 
 
+BATTLE_ROUTE40_DIVINER::
+	trainerbattle_single TRAINER_ROUTE40_DIVINER, BATTLE_ROUTE40_DIVINER_Text_0, BATTLE_ROUTE40_DIVINER_Text_1
+	namebox BATTLE_ROUTE40_DIVINER_Text_2
+	msgbox BATTLE_ROUTE40_DIVINER_Text_3
+	hidenamebox
+	release
+	end
+
+
 ROUTE24_SIGNPOST_Text_0:
 	.string "East to Taverley.\p"
 	.string "North to Goblin Village\p"
@@ -219,3 +228,19 @@ NPC_ROUTE24_NPC_2_Text_1:
 	.string "war over differing opinions.\p"
 	.string "I suggest you go east instead\n"
 	.string "adventurer.$"
+
+BATTLE_ROUTE40_DIVINER_Text_0:
+	.string "I feel a strange power emanating from\n"
+	.string "these rock formations.$"
+
+BATTLE_ROUTE40_DIVINER_Text_1:
+	.string "I feel it!\n"
+	.string "It makes me feel all tingly!$"
+
+BATTLE_ROUTE40_DIVINER_Text_2:
+	.string "DIVINER$"
+
+BATTLE_ROUTE40_DIVINER_Text_3:
+	.string "You feel it too don't you?\p"
+	.string "The strange power emanating from these\n"
+	.string "rocks.$"

@@ -2371,37 +2371,37 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_GOBLIN_4[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_MUDSKIPPERPOINT_SLAYER[] = {
     {
     .iv = 0,
-    .lvl = 25,
-    .species = SPECIES_BROAV,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
     },
     {
     .iv = 0,
-    .lvl = 25,
-    .species = SPECIES_PLATYPODE,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_MUDSKIPPERPOINT_FISHERMAN_1[] = {
     {
     .iv = 0,
-    .lvl = 25,
-    .species = SPECIES_BROAV,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
     },
     {
     .iv = 0,
-    .lvl = 25,
-    .species = SPECIES_PLATYPODE,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_MUDSKIPPERPOINT_FISHERMAN_2[] = {
     {
     .iv = 0,
-    .lvl = 25,
-    .species = SPECIES_BROAV,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
     },
     {
     .iv = 0,
-    .lvl = 25,
-    .species = SPECIES_PLATYPODE,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_Demonheadge[] = {
@@ -2416,3 +2416,18 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Demonheadge[] = {
     .species = SPECIES_FROGEEL,
     }
 };
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE40_DIVINER[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    },
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+
+
+

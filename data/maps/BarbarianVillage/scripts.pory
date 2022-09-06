@@ -1,0 +1,84 @@
+const OBJ_EVENT_ID_BARBARIAN_BLOCK_1 = 6
+const OBJ_EVENT_ID_BARBARIAN_BLOCK_2 = 7
+
+mapscripts BarbarianVillage_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+    goto(BarbarianVillage_STATE)
+    }
+}
+
+
+
+script BarbarianVillage_STATE{
+	switch (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE)){ 
+		case 0: 
+            //barb blocking
+            setobjectxyperm(OBJ_EVENT_ID_BARBARIAN_BLOCK_1,11,19)
+			setobjectmovementtype(OBJ_EVENT_ID_BARBARIAN_BLOCK_1,MOVEMENT_TYPE_FACE_DOWN)
+            setobjectxyperm(OBJ_EVENT_ID_BARBARIAN_BLOCK_2,12,19)
+			setobjectmovementtype(OBJ_EVENT_ID_BARBARIAN_BLOCK_2,MOVEMENT_TYPE_FACE_DOWN)
+            end
+
+        case 1:
+    }
+}
+
+
+
+
+//NPC
+script NPC_BARB_BLOCKADE_1
+{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 0){
+        msgbox(format("Only the strong may enter our longhall!\pCome back when you have proved yourself in battle."))
+        if (flag(FLAG_BADGE01_GET) && flag(FLAG_BADGE02_GET)){
+            msgbox(format("You have the Lumbridge Badge and Falador Badge!"))
+            hidenamebox
+            closemessage
+            //APPLY MOVEMENT
+            applymovement(OBJ_EVENT_ID_BARBARIAN_BLOCK_1, BARBARIANVILLAGE_BLOCK_1)
+            applymovement(OBJ_EVENT_ID_BARBARIAN_BLOCK_2, BARBARIANVILLAGE_BLOCK_2)
+            waitmovement(0)
+            namebox("Barbarian")
+            msgbox(format("You may enter!"))
+            hidenamebox
+            closemessage
+            setvar(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 1)
+            release
+            end
+        }
+    }
+    if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 1){
+        msgbox(format("You are very strong."))
+    }
+    hidenamebox
+    closemessage
+    release
+    end
+}
+
+movement BARBARIANVILLAGE_BLOCK_1 {
+    walk_left
+    face_down
+}
+movement BARBARIANVILLAGE_BLOCK_2 {
+    walk_right
+    face_down
+}
+
+
+
+
+script NPC_BARBARIANVILLAGE_DUNGEONGIRL
+{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    msgbox(format("Only once you have proved yourself a barbarian are you allowed to use our dungeon for training."))
+    hidenamebox
+    release
+    end
+}

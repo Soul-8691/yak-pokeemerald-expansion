@@ -48,6 +48,10 @@ script NPC_ROUTE24_BLOCKADE_1
 
 
 
+
+
+
+
 //TRAINERS
 script BATTLE_ROUTE24_MUGGER{
     trainerbattle_single(TRAINER_ROUTE24_MUGGER, format("Deliver and stand!"),format("Sorry I mixed that up, could you please be robbed again?\pNo?\pOk then…"))
@@ -113,6 +117,7 @@ script BATTLE_ROUTE24_GOBLIN_4{
 }
 
 
+//NPC
 script NPC_ROUTE24_NPC_1{
     lock
     faceplayer
@@ -133,3 +138,15 @@ script NPC_ROUTE24_NPC_2{
     end
 }
 
+
+
+
+//ROUTE 40
+script BATTLE_ROUTE40_DIVINER {
+    trainerbattle_single(TRAINER_ROUTE40_DIVINER, format("I feel a strange power emanating from these rock formations."),format("I feel it!\nIt makes me feel all tingly!"))
+    namebox ("DIVINER")
+    msgbox(format("You feel it too don't you?\pThe strange power emanating from these rocks."))
+    hidenamebox
+    release
+    end
+}

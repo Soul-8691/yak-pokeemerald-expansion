@@ -18605,6 +18605,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_ABYSSAL_REALM_1",
+          "base_label": "gAbyssal_Realm_10",
+          "land_mons": {
+            "encounter_rate": 100,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_AGRITHNANA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CORPOREAL_BEAST"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMPLING_EARTH_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PENANCE_SPAWN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GORILLA_ERUNI_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_VOID_DRONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_VOID_RAVAGER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ABBYSPECTR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMPLING_DRAGON_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMPLING_LUCKY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMPLING_LUCKY_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_IMPLING_LUCKY_FORM"
+              }
+            ]
+          }
         }
       ]
     },

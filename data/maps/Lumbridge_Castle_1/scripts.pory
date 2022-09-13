@@ -178,13 +178,17 @@ script LUMBRIDGE_GYM_TRAINER_1 {
 		case 4: 
 			lock
 			faceplayer
+			namebox("Anabell")
 			msgbox(format("You fought well.\pI should train harder."))
+			hidenamebox
 			release
 			end
         case 5:
 			lock
 			faceplayer
+			namebox("Anabell")
             msgbox(format("I cannot believe you beat the Duke as well!\pYou are like a champion in the making!"))
+			hidenamebox
             release
 			end
 	}
@@ -197,13 +201,17 @@ script LUMBRIDGE_GYM_TRAINER_2 {
 		case 4: 
 			lock
 			faceplayer
+			namebox("Gideon")
 			msgbox(format("Do you agree on how cute my rabbit is?"))
+			hidenamebox
 			release
 			end
         case 5:
 			lock
 			faceplayer
+			namebox("Gideon")
             msgbox(format("You have some pretty cute monsters, but my rabbit is cuter!"))
+			hidenamebox
             release
 			end
 	}
@@ -216,31 +224,39 @@ script LUMBRIDGE_GYM_TRAINER_3 {
 		case 4: 
 			lock
 			faceplayer
+			namebox("Jesse")
 			msgbox(format("Maybe I should train on the other side of the river."))
+			hidenamebox
 			release
 			end
         case 5:
 			lock
 			faceplayer
+			namebox("Jesse")
             msgbox(format("Oh wow!\nWhere do you train?\pMaybe I should train there!"))
+			hidenamebox
             release
 			end
 	}
 }
 
 script LUMBRIDGE_GYM_TRAINER_4 {
-	trainerbattle_single(TRAINER_LUMBRIDGE_GYM4, format("Ready to face the Duke himself? Let us check."),format("Sure. You pass. Barely.") )
+	trainerbattle_single(TRAINER_LUMBRIDGE_GYM4, format("Ready to face the Duke himself? Let us check."),format("Sure.\nYou barely pass. ") )
     switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
 		case 4: 
 			lock
 			faceplayer
+			namebox("Jericho")
 			msgbox(format("It was a close fight."))
+			hidenamebox
 			release
 			end
         case 5:
 			lock
 			faceplayer
+			namebox("Jericho")
             msgbox(format("I guess you were ready to face the duke."))
+			hidenamebox
             release
 			end
 	}

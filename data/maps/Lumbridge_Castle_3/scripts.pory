@@ -14,7 +14,11 @@ mapscripts Lumbridge_Castle_3_MapScripts{
 script LUMBRIDGE_GYM_MUSIC{
 	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
 		case 4:
+            #fadedefaultbgm
             playbgm(MUS_PS_GYM, 1)
+            //savebgm(MUS_PS_GYM)
+            //special(Overworld_PlaySpecialMapMusic)
+            
 			return
 		case 5:
 			return
@@ -128,6 +132,7 @@ script NPC_DUKE_1{
         setflag(FLAG_TEMP_1)
         setvar(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 4)
         fadescreen(FADE_FROM_BLACK)
+        //savebgm(MUS_PS_GYM)
         call(LUMBRIDGE_GYM_MUSIC)
         goto(LUMBRIDGE_GYM_STATE)
         release

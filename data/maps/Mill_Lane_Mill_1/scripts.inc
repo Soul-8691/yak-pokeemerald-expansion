@@ -34,7 +34,7 @@ Trainer2_MillLaneMill_Battle_Text_1:
 	.string "You will never reach the top!$"
 
 Trainer2_MillLaneMill_Battle_Text_2:
-	.string "RSN$"
+	.string "HOPS$"
 
 Trainer2_MillLaneMill_Battle_Text_3:
 	.string "You may have beaten me but you'll never\n"

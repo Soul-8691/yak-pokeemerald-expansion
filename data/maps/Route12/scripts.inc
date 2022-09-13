@@ -243,7 +243,7 @@ BATTLE_ROUTE12_SMELLYBACK::
 BATTLE_ROUTE12_TRAINER_1::
 	trainerbattle_single TRAINER_RSN_ROUTE12, BATTLE_ROUTE12_TRAINER_1_Text_0, BATTLE_ROUTE12_TRAINER_1_Text_1
 	namebox BATTLE_ROUTE12_TRAINER_1_Text_2
-	msgbox BATTLE_ROUTE12_TRAINER_1_Text_1
+	msgbox BATTLE_ROUTE12_TRAINER_1_Text_3
 	hidenamebox
 	closemessage
 	end
@@ -447,12 +447,15 @@ BATTLE_ROUTE12_TRAINER_1_Text_0:
 	.string "you!$"
 
 BATTLE_ROUTE12_TRAINER_1_Text_1:
-	.string "Well drat.\p"
-	.string "Maybe I should've looked for rarer\n"
-	.string "monsters around here first.$"
+	.string "I will have you know I went easy on you.\n"
+	.string "Just wait until you see my main.$"
 
 BATTLE_ROUTE12_TRAINER_1_Text_2:
-	.string "CUPHOLDER$"
+	.string "Naruto154$"
+
+BATTLE_ROUTE12_TRAINER_1_Text_3:
+	.string "I will have you know I went easy on you.\p"
+	.string "Just wait until you see my main.$"
 
 NPC_ROUTE12_Goblin_1_Text_0:
 	.string "Goblin$"

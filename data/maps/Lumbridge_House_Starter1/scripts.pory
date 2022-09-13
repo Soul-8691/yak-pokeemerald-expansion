@@ -141,7 +141,7 @@ script ITEM_LUMBRIDGE_CAKE
 
 script ITEM_ROUTE1_DEATH_RUNE
 {
-    finditem(ITEM_DEATH_RUNE)
+    finditem(ITEM_EARTH_RUNE)
     end
 }
 

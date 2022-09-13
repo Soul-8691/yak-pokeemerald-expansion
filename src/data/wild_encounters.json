@@ -11533,16 +11533,16 @@
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_CHICK"
-              },
-              {
-                "min_level": 1,
-                "max_level": 12,
                 "species": "SPECIES_IMPLING_BABY_FORM"
               },
               {
-                "min_level": 2,
+                "min_level": 1,
                 "max_level": 4,
+                "species": "SPECIES_IMPLING_BABY_FORM"
+              },
+              {
+                "min_level": 1,
+                "max_level": 5,
                 "species": "SPECIES_IMPLING_BABY_FORM"
               }
             ]
@@ -17793,12 +17793,12 @@
               {
                 "min_level": 16,
                 "max_level": 19,
-                "species": "SPECIES_CHINCHOMPA_GREY_FORM"
+                "species": "SPECIES_CHINCHOMPA_RED_BABY"
               },
               {
                 "min_level": 18,
                 "max_level": 21,
-                "species": "SPECIES_CHINCHOMPA_GREY_FORM"
+                "species": "SPECIES_CHINCHOMPA_GREY_BABY"
               },
               {
                 "min_level": 18,
@@ -17813,7 +17813,7 @@
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_BEAUTIFLY"
+                "species": "SPECIES_GUTHIXIAN_BUTTERFLY"
               },
               {
                 "min_level": 17,
@@ -18615,7 +18615,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_AGRITHNANA"
+                "species": "SPECIES_MUDSKIPPER"
               },
               {
                 "min_level": 5,
@@ -18625,52 +18625,52 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IMPLING_EARTH_FORM"
+                "species": "SPECIES_BOULDABASS"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_PENANCE_SPAWN"
+                "species": "SPECIES_PENANCE_RUNNER"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_GORILLA_ERUNI_FORM"
+                "species": "SPECIES_VOID_QUEEN"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VOID_DRONE"
+                "species": "SPECIES_BASSTOISE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VOID_RAVAGER"
+                "species": "SPECIES_DAGANNOTH_DAUGHTER"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ABBYSPECTR"
+                "species": "SPECIES_GEYSIR_TITAN"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IMPLING_DRAGON_FORM"
+                "species": "SPECIES_IRON_TITAN"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IMPLING_LUCKY_FORM"
+                "species": "SPECIES_STEEL_TITAN"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IMPLING_LUCKY_FORM"
+                "species": "SPECIES_SWAMP_TITAN"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IMPLING_LUCKY_FORM"
+                "species": "SPECIES_ABYSSAL_TITAN_FORM"
               }
             ]
           }

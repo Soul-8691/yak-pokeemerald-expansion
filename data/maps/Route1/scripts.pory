@@ -190,7 +190,22 @@ script THEIF_ROUTE_1
 {
 	lock
     faceplayer
+    namebox("Darren")
 	msgbox(format("Nothing to see here kid.\pSHOOO!"))
+    hidenamebox
+    closemessage
+	release
+	end
+}
+
+script ROUTE1_FarmerFred
+{
+	lock
+    faceplayer
+    namebox("Fred")
+	msgbox(format("Get off my farm!"))
+    hidenamebox
+    closemessage
 	release
 	end
 }
@@ -234,7 +249,7 @@ script Frogface_Route1_Battle
 script Trainer1_Route1_Battle
 {
     trainerbattle_single(TRAINER_RSN_ROUTE1, "You look like a noob!","Maybe I'm the noob..")
-    namebox ("CUPHOLDER")
+    namebox ("Bob")
     msgbox(format("The mill is up ahead.\pI heard you can get some good flour there."))
     closemessage
     hidenamebox
@@ -254,13 +269,17 @@ script MudbeardBattle{
 
 script Route1FarmerBattle{
     trainerbattle_single(TRAINER_FARMER_ROUTE1,format("Cor blimey what are ye doing on me lands!"),format("Its not really my lands yet."))
+    namebox ("John")
     msgbox("Its not really my lands yet.")
+    hidenamebox
     release
 }
 
 script FeetfingersBattle{
     trainerbattle_single(TRAINER_GOBLIN_4_ROUTE1,"Me Feetfingers who you?","Feetfingers, impressed!")
+    namebox ("Feetfingers")
     msgbox("Friend of Feetfingers?")
+    hidenamebox
     release
     end
 }

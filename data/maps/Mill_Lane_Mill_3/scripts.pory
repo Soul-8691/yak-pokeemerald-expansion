@@ -39,7 +39,9 @@ script GiveQuestWheat{
     faceplayer
     namebox ("Millie Miller")
     msgbox("Congratulations!\nHere is the flour.")
+    hidenamebox
     giveitem(ITEM_EXTRA_FINE_FLOUR)
+    namebox ("Millie Miller")
     msgbox(format("If you run out you may get some more from me anytime you wish.\pAlthough it will come at a cost.\pTehehehe!"))
     hidenamebox
     release

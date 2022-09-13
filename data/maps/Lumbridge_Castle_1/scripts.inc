@@ -119,14 +119,18 @@ LUMBRIDGE_GYM_TRAINER_1::
 LUMBRIDGE_GYM_TRAINER_1_2:
 	lock
 	faceplayer
-	msgbox LUMBRIDGE_GYM_TRAINER_1_Text_2
+	namebox LUMBRIDGE_GYM_TRAINER_1_Text_2
+	msgbox LUMBRIDGE_GYM_TRAINER_1_Text_3
+	hidenamebox
 	release
 	end
 
 LUMBRIDGE_GYM_TRAINER_1_3:
 	lock
 	faceplayer
-	msgbox LUMBRIDGE_GYM_TRAINER_1_Text_3
+	namebox LUMBRIDGE_GYM_TRAINER_1_Text_2
+	msgbox LUMBRIDGE_GYM_TRAINER_1_Text_4
+	hidenamebox
 	release
 	end
 
@@ -141,14 +145,18 @@ LUMBRIDGE_GYM_TRAINER_2::
 LUMBRIDGE_GYM_TRAINER_2_2:
 	lock
 	faceplayer
-	msgbox LUMBRIDGE_GYM_TRAINER_2_Text_2
+	namebox LUMBRIDGE_GYM_TRAINER_2_Text_2
+	msgbox LUMBRIDGE_GYM_TRAINER_2_Text_3
+	hidenamebox
 	release
 	end
 
 LUMBRIDGE_GYM_TRAINER_2_3:
 	lock
 	faceplayer
-	msgbox LUMBRIDGE_GYM_TRAINER_2_Text_3
+	namebox LUMBRIDGE_GYM_TRAINER_2_Text_2
+	msgbox LUMBRIDGE_GYM_TRAINER_2_Text_4
+	hidenamebox
 	release
 	end
 
@@ -163,14 +171,18 @@ LUMBRIDGE_GYM_TRAINER_3::
 LUMBRIDGE_GYM_TRAINER_3_2:
 	lock
 	faceplayer
-	msgbox LUMBRIDGE_GYM_TRAINER_3_Text_2
+	namebox LUMBRIDGE_GYM_TRAINER_3_Text_2
+	msgbox LUMBRIDGE_GYM_TRAINER_3_Text_3
+	hidenamebox
 	release
 	end
 
 LUMBRIDGE_GYM_TRAINER_3_3:
 	lock
 	faceplayer
-	msgbox LUMBRIDGE_GYM_TRAINER_3_Text_3
+	namebox LUMBRIDGE_GYM_TRAINER_3_Text_2
+	msgbox LUMBRIDGE_GYM_TRAINER_3_Text_4
+	hidenamebox
 	release
 	end
 
@@ -185,14 +197,18 @@ LUMBRIDGE_GYM_TRAINER_4::
 LUMBRIDGE_GYM_TRAINER_4_2:
 	lock
 	faceplayer
-	msgbox LUMBRIDGE_GYM_TRAINER_4_Text_2
+	namebox LUMBRIDGE_GYM_TRAINER_4_Text_2
+	msgbox LUMBRIDGE_GYM_TRAINER_4_Text_3
+	hidenamebox
 	release
 	end
 
 LUMBRIDGE_GYM_TRAINER_4_3:
 	lock
 	faceplayer
-	msgbox LUMBRIDGE_GYM_TRAINER_4_Text_3
+	namebox LUMBRIDGE_GYM_TRAINER_4_Text_2
+	msgbox LUMBRIDGE_GYM_TRAINER_4_Text_4
+	hidenamebox
 	release
 	end
 
@@ -255,10 +271,13 @@ LUMBRIDGE_GYM_TRAINER_1_Text_1:
 	.string "all it seems.$"
 
 LUMBRIDGE_GYM_TRAINER_1_Text_2:
+	.string "Anabell$"
+
+LUMBRIDGE_GYM_TRAINER_1_Text_3:
 	.string "You fought well.\p"
 	.string "I should train harder.$"
 
-LUMBRIDGE_GYM_TRAINER_1_Text_3:
+LUMBRIDGE_GYM_TRAINER_1_Text_4:
 	.string "I cannot believe you beat the Duke as\n"
 	.string "well!\p"
 	.string "You are like a champion in the making!$"
@@ -271,9 +290,12 @@ LUMBRIDGE_GYM_TRAINER_2_Text_1:
 	.string "something so cute?$"
 
 LUMBRIDGE_GYM_TRAINER_2_Text_2:
-	.string "Do you agree on how cute my rabbit is?$"
+	.string "Gideon$"
 
 LUMBRIDGE_GYM_TRAINER_2_Text_3:
+	.string "Do you agree on how cute my rabbit is?$"
+
+LUMBRIDGE_GYM_TRAINER_2_Text_4:
 	.string "You have some pretty cute monsters,\n"
 	.string "but my rabbit is cuter!$"
 
@@ -286,10 +308,13 @@ LUMBRIDGE_GYM_TRAINER_3_Text_1:
 	.string "pretty big.$"
 
 LUMBRIDGE_GYM_TRAINER_3_Text_2:
+	.string "Jesse$"
+
+LUMBRIDGE_GYM_TRAINER_3_Text_3:
 	.string "Maybe I should train on the other side\n"
 	.string "of the river.$"
 
-LUMBRIDGE_GYM_TRAINER_3_Text_3:
+LUMBRIDGE_GYM_TRAINER_3_Text_4:
 	.string "Oh wow!\n"
 	.string "Where do you train?\p"
 	.string "Maybe I should train there!$"
@@ -299,11 +324,15 @@ LUMBRIDGE_GYM_TRAINER_4_Text_0:
 	.string "check.$"
 
 LUMBRIDGE_GYM_TRAINER_4_Text_1:
-	.string "Sure. You pass. Barely.$"
+	.string "Sure.\n"
+	.string "You barely pass.$"
 
 LUMBRIDGE_GYM_TRAINER_4_Text_2:
-	.string "It was a close fight.$"
+	.string "Jericho$"
 
 LUMBRIDGE_GYM_TRAINER_4_Text_3:
+	.string "It was a close fight.$"
+
+LUMBRIDGE_GYM_TRAINER_4_Text_4:
 	.string "I guess you were ready to face the\n"
 	.string "duke.$"

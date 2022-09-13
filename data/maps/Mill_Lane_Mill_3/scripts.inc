@@ -39,7 +39,9 @@ GiveQuestWheat::
 	faceplayer
 	namebox Millie_Miller_Text_0
 	msgbox GiveQuestWheat_Text_0
+	hidenamebox
 	giveitem ITEM_EXTRA_FINE_FLOUR
+	namebox Millie_Miller_Text_0
 	msgbox GiveQuestWheat_Text_1
 	hidenamebox
 	release

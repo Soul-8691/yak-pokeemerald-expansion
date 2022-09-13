@@ -164,7 +164,21 @@ BLOCK_ROUTE1_FARMER_2:
 THEIF_ROUTE_1::
 	lock
 	faceplayer
-	msgbox THEIF_ROUTE_1_Text_0
+	namebox THEIF_ROUTE_1_Text_0
+	msgbox THEIF_ROUTE_1_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+ROUTE1_FarmerFred::
+	lock
+	faceplayer
+	namebox ROUTE1_FarmerFred_Text_0
+	msgbox ROUTE1_FarmerFred_Text_1
+	hidenamebox
+	closemessage
 	release
 	end
 
@@ -209,14 +223,18 @@ MudbeardBattle::
 
 Route1FarmerBattle::
 	trainerbattle_single TRAINER_FARMER_ROUTE1, Route1FarmerBattle_Text_0, Route1FarmerBattle_Text_1
+	namebox Route1FarmerBattle_Text_2
 	msgbox Route1FarmerBattle_Text_1
+	hidenamebox
 	release
 	return
 
 
 FeetfingersBattle::
 	trainerbattle_single TRAINER_GOBLIN_4_ROUTE1, FeetfingersBattle_Text_0, FeetfingersBattle_Text_1
-	msgbox FeetfingersBattle_Text_2
+	namebox FeetfingersBattle_Text_2
+	msgbox FeetfingersBattle_Text_3
+	hidenamebox
 	release
 	end
 
@@ -770,8 +788,17 @@ BLOCK_ROUTE1_FARMER_Text_2:
 	.string "I finally got my Cows out of the way.$"
 
 THEIF_ROUTE_1_Text_0:
+	.string "Darren$"
+
+THEIF_ROUTE_1_Text_1:
 	.string "Nothing to see here kid.\p"
 	.string "SHOOO!$"
+
+ROUTE1_FarmerFred_Text_0:
+	.string "Fred$"
+
+ROUTE1_FarmerFred_Text_1:
+	.string "Get off my farm!$"
 
 Wartfoot_Route1_Battle_Text_0:
 	.string "Brown armour best!$"
@@ -804,7 +831,7 @@ Trainer1_Route1_Battle_Text_1:
 	.string "Maybe I'm the noob..$"
 
 Trainer1_Route1_Battle_Text_2:
-	.string "CUPHOLDER$"
+	.string "Bob$"
 
 Trainer1_Route1_Battle_Text_3:
 	.string "The mill is up ahead.\p"
@@ -830,6 +857,9 @@ Route1FarmerBattle_Text_0:
 Route1FarmerBattle_Text_1:
 	.string "Its not really my lands yet.$"
 
+Route1FarmerBattle_Text_2:
+	.string "John$"
+
 FeetfingersBattle_Text_0:
 	.string "Me Feetfingers who you?$"
 
@@ -837,6 +867,9 @@ FeetfingersBattle_Text_1:
 	.string "Feetfingers, impressed!$"
 
 FeetfingersBattle_Text_2:
+	.string "Feetfingers$"
+
+FeetfingersBattle_Text_3:
 	.string "Friend of Feetfingers?$"
 
 ChickenBattleScript1_Text_0:

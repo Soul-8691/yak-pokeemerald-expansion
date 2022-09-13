@@ -25,10 +25,10 @@ GYMLEADER_DUKE_BATTLEWON::
 	namebox GYMLEADER_DUKE_Text_0
 	msgbox GYMLEADER_DUKE_BATTLEWON_Text_0
 	hidenamebox
-	playfanfare MUS_OBTAIN_BADGE
+	playfanfare MUS_PS_QUEST_COMPLETE
 	msgbox GYMLEADER_DUKE_BATTLEWON_Text_1
-	waitfanfare
 	waitmessage
+	waitfanfare
 	namebox GYMLEADER_DUKE_Text_0
 	msgbox GYMLEADER_DUKE_BATTLEWON_Text_2
 	hidenamebox
@@ -69,7 +69,8 @@ GYMLEADER_DUKE_Text_1:
 	.string "May the best trainer win!$"
 
 GYMLEADER_DUKE_Text_2:
-	.string "You beat me.. Congratulations!$"
+	.string "You beat me…\p"
+	.string "…Congratulations!$"
 
 GYMLEADER_DUKE_BATTLEWON_Text_0:
 	.string "Congratulations!\n"

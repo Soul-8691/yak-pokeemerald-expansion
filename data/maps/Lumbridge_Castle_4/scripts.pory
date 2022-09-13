@@ -19,7 +19,7 @@ script GYMLEADER_DUKE{
     namebox("Duke Horacio")
     msgbox(format("So you've made it to the top!\nCongratulations!\pYou wish to challenge me to a battle?\nSo be it!\lMay the best trainer win!"))
     hidenamebox
-    trainerbattle_no_intro(TRAINER_DUKE, msgbox(format("You beat me.. Congratulations!")))
+    trainerbattle_no_intro(TRAINER_DUKE, msgbox(format("You beat me…\p…Congratulations!")))
     goto(GYMLEADER_DUKE_BATTLEWON)
     release
     end
@@ -32,10 +32,10 @@ script GYMLEADER_DUKE{
     namebox("Duke Horacio")
     msgbox(format("Congratulations!\nYou've managed to defeat me.\pHere is your official GYM BADGE, you've definitely earned it."))
     hidenamebox
-    playfanfare(MUS_OBTAIN_BADGE)
+    playfanfare(MUS_PS_QUEST_COMPLETE)
     msgbox(format("{PLAYER} received the Lumbridge BADGE from Duke Horacio."))
-    waitfanfare
     waitmessage
+    waitfanfare
     namebox("Duke Horacio")
     msgbox(format("Also have this, it is my favourite move."))
     hidenamebox

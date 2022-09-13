@@ -1107,6 +1107,7 @@ u16 GetCurrLocationDefaultMusic(void)
         else
             return MUS_ROUTE119;
     }
+    
 }
 
 u16 GetWarpDestinationMusic(void)

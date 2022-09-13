@@ -471,8 +471,7 @@ NPC_PORTSARIM_TRADER_STAN::
 NPC_PORTSARIM_NPC_7::
 	lock
 	faceplayer
-	namebox NPC_PORTSARIM_NPC_7_Text_0
-	msgbox NPC_PORTSARIM_NPC_7_Text_1
+	msgbox NPC_PORTSARIM_NPC_7_Text_0
 	waitmessage
 	hidenamebox
 	release
@@ -789,8 +788,9 @@ NPC_PORTSARIM_VOID_SQUIRE_Text_0:
 	.string "Void Squire$"
 
 NPC_PORTSARIM_VOID_SQUIRE_Text_1:
-	.string "I am very sorry, but the Void Knights\n"
-	.string "told me not to speak to strangers.$"
+	.string "Sorry, to set sail to the outpost you\n"
+	.string "will need 4 badges.\p"
+	.string "Please come back when you have them.$"
 
 NPC_PORTSARIM_THE_FACE_Text_0:
 	.string "The Face$"
@@ -820,9 +820,6 @@ NPC_PORTSARIM_TRADER_STAN_Text_1:
 	.string "supplies.$"
 
 NPC_PORTSARIM_NPC_7_Text_0:
-	.string "NAME$"
-
-NPC_PORTSARIM_NPC_7_Text_1:
 	.string "Do you happen to know what to do with a\n"
 	.string "drunken sailor?\p"
 	.string "Asking for a friend.$"
@@ -836,7 +833,7 @@ NPC_PORTSARIM_WYDIN_Text_1:
 	.string "leave before I call the guards.$"
 
 NPC_PORTSARIM_GENERALSTORE_CUSTOMER_1_Text_0:
-	.string "CUSTOMER$"
+	.string "Customer$"
 
 NPC_PORTSARIM_GENERALSTORE_CUSTOMER_1_Text_1:
 	.string "It is good to see that Wydin finally\n"
@@ -899,7 +896,7 @@ NPC_PORTSARIM_BATTLEAXE_LOREBOOK_Text_0:
 	.string "You feel the sudden urge to leave.$"
 
 Generalstore_PortSarim_Clerk_Text_0:
-	.string "ASSISTANT$"
+	.string "Assistant$"
 
 Generalstore_PortSarim_Clerk_Text_1:
 	.string "Welcome to the Port Sarim General\n"

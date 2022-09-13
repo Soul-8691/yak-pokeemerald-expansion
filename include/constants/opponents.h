@@ -171,6 +171,10 @@
 #define TRAINER_DEMONHEADGE     143
 #define TRAINER_ROUTE40_DIVINER     144
 
+#define TRAINER_PUB_SARIM_1     145
+#define TRAINER_PUB_SARIM_2     146
+#define TRAINER_PUB_SARIM_3     147
+
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space

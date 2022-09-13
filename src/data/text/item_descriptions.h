@@ -1680,6 +1680,10 @@ static const u8 sElementalPouchDesc[] = _(
     "catching Elemental\n"
     "MONSTERS.");
 	
+static const u8 sTALISMANDesc[] = _(
+    "A mysterious Talisman\n"
+    "that is attracted\n"
+    "towards an altar.");
 
 
 

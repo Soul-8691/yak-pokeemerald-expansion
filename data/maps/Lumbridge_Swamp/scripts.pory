@@ -66,7 +66,7 @@ script BATTLE_LumbridgeSwamp_TRAINER_2{
 
 script BATTLE_LumbridgeSwamp_TRAINER_3{
 	trainerbattle_single(TRAINER_MUGGER_LUM_SWAMP, format("Stay still and nobody gets hurt!"),format("My feelings got hurt by your victory."))
-	namebox("CUPHOLDER")
+	namebox("Robin")
 	msgbox(format("My feelings got hurt by your victory."))
 	hidenamebox
 	closemessage
@@ -125,6 +125,8 @@ script LUMBRIDGESWAMP_CANDLESELLER
 
 script LUMBRIDGESWAMP_FAIRY
 {
+	lock
+	faceplayer
 	namebox ("Fairy")
 	msgbox(format("Wh-what!?\pThere is no secret passage to Zanaris here, no way!"))
 	hidenamebox

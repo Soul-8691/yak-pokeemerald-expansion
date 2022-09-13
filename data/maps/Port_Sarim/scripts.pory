@@ -484,7 +484,8 @@ script NPC_PORTSARIM_VOID_SQUIRE
 	lock
 	faceplayer
     namebox ("Void Squire")
-	msgbox(format("I am very sorry, but the Void Knights told me not to speak to strangers."))
+    msgbox(format("Sorry, to set sail to the outpost you will need 4 badges.\pPlease come back when you have them."))
+	//msgbox(format("I am very sorry, but the Void Knights told me not to speak to strangers."))
     waitmessage
     hidenamebox
 	release
@@ -531,7 +532,7 @@ script NPC_PORTSARIM_NPC_7
 {
 	lock
 	faceplayer
-    namebox ("NAME")
+    //namebox ("CUPHOLDER")
 	msgbox(format("Do you happen to know what to do with a drunken sailor?\pAsking for a friend."))
     waitmessage
     hidenamebox
@@ -555,7 +556,7 @@ script NPC_PORTSARIM_GENERALSTORE_CUSTOMER_1
 {
 	lock
 	faceplayer
-    namebox ("CUSTOMER")
+    namebox ("Customer")
 	msgbox(format("It is good to see that Wydin finally hired an assistant to run the store.\pHe has been struggling on his own for awhile now."))
     waitmessage
     hidenamebox
@@ -567,7 +568,7 @@ script NPC_PORTSARIM_GENERALSTORE_CUSTOMER_2
 {
 	lock
 	faceplayer
-    namebox ("CUSTOMER")
+    namebox ("Customer")
 	msgbox(format("Me like this store!\pMr.W allows me to buy bread to feed me family."))
     waitmessage
     hidenamebox
@@ -610,7 +611,7 @@ script NPC_PORTSARIM_FISHING_CUSTOMER
 {
 	lock
 	faceplayer
-    namebox ("CUSTOMER")
+    namebox ("Customer")
 	msgbox(format("Psst… {PAUSE 15}Yeah, you.\pI will let you in on a little secret…\p…{PAUSE 15}…{PAUSE 15}\n…{PAUSE 15}…{PAUSE 15}\pThey say that if you stay in the same location and catch a whole heap of fish that it is very common that you might find a super rare coloured fish!\p…{PAUSE 15}…{PAUSE 15}\nThis stays between us."))
     waitmessage
     hidenamebox
@@ -651,7 +652,7 @@ script NPC_PORTSARIM_BATTLEAXE_LOREBOOK
 script Generalstore_PortSarim_Clerk {
     lock
     faceplayer
-    namebox ("ASSISTANT")
+    namebox ("Assistant")
     msgbox(format("Welcome to the Port Sarim General Store.\pHow may I help you?"))
     waitmessage
     hidenamebox

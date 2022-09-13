@@ -208,11 +208,11 @@ Trainer1_MillLaneMill_Battle_Text_2:
 	.string "with you.$"
 
 Trainer1_MillLaneMill_Battle_Text_3:
-	.string "RSN$"
+	.string "Kebbie$"
 
 Trainer1_MillLaneMill_Battle_Text_4:
-	.string "I've been trying to track down Kebbits\n"
-	.string "for my collection.$"
+	.string "I have been trying to track down\n"
+	.string "Kebbits for my collection.$"
 
 MillLaneMill_Item_WHEAT1_Text_0:
 	.string "You search the sack...\p"

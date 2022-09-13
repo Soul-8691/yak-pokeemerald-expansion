@@ -2,7 +2,7 @@
   "id": "MAP_LUMBRIDGE_SWAMP_HOUSE_FATHER_URHNEY",
   "name": "Lumbridge_Swamp_House_FatherUrhney",
   "layout": "LAYOUT_LUMBRIDGE_SWAMP_HOUSE_FATHER_URHNEY",
-  "music": "MUS_PS_ROUTE_MISTHALIN",
+  "music": "MUS_PS_FOREST_F2P",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

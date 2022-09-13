@@ -12,37 +12,55 @@ mapscripts Lumbridge_Swamp_Caves_MapScripts {
 script LumbridgeSwampCaves_WallBeasts
 {
 	lockall
-	msgbox(format("Something jumps out of the wall towards you!"))
-    random(3)
+    applymovement(OBJ_EVENT_ID_PLAYER, Movement_WallBeast)
+    playSE(SE_LEDGE)
+    msgbox(format("Something jumps out of the wall towards you!"))
+    waitmovement(0)
+	
+    random(8)
         switch (var(VAR_RESULT)) {
             case 0: 
-				//namebox("0")
+            case 1: 
+            case 2: 
+            case 3: 
+            case 4: 
+				msgbox(format("A hand swipes at you!"))
+                closemessage
+				setwildbattle(SPECIES_WALL_BEAST, 10, ITEM_NONE)
+				dowildbattle
+				release
+				end
+            case 5: 
 				msgbox(format("A wild Monster attacked!"))
+                closemessage
 				special(RockSmashWildEncounter)
 				release
-				//hidenamebox
 				end
-			case 1: 
-				//namebox("1")
-				msgbox(format("A hand swipes at you!"))
-				setwildbattle(SPECIES_HAND_CREEPING_FORM, 10, ITEM_NONE)
-				dowildbattle
-				//hidenamebox
-				release
-				end
-			case 2: 
-				//namebox("1")
+			case 6: 
 				msgbox(format("A creature jumps out at you!"))
+                closemessage
 				setwildbattle(SPECIES_FLEDGLING, 10, ITEM_NONE)
 				dowildbattle
-				//hidenamebox
 				release
 				end
+            case 7: 
+            msgbox(format("A small hand falls out of the rubble!"))
+            closemessage
+            setwildbattle(SPECIES_HAND_CREEPING_FORM, 10, ITEM_NONE)
+            dowildbattle
+            release
+            end
+            
         }
 	release
 	end
 }
 
+movement Movement_WallBeast
+{
+    emote_exclamation_mark
+    jump_in_place_up
+}   
 
 
 
@@ -103,7 +121,9 @@ script ITEM_LUMBRIDGESWAMPCAVE_ITEM_6
 //Low levels
 script BATTLE_LUMBRIDGESWAMPCAVE_FISHERMAN_1{
     trainerbattle_single(TRAINER_LUMBRIDGESWAMPCAVE_FISHERMAN_1, format("Im collecting frogspawn, dont bother me."),format("I hear somewhere in Kandarin theres a tower.\pIf you bring it a slimy eel and frog legs it will create a legendary monster."))
+    //namebox("EELFROG330")
     msgbox(format("I hear somewhere in Kandarin theres a tower.\pIf you bring it a slimy eel and frog legs it will create a legendary monster."))
+    hidenamebox
     release
     end
 }
@@ -117,7 +137,9 @@ script BATTLE_LUMBRIDGESWAMPCAVE_SKELETON_1{
 
 script BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1{
     trainerbattle_single(TRAINER_LUMBRIDGESWAMPCAVE_PVMER_1, format("Show me the way to the slayer tower noob!"),format("Oh it is in Morytania.\pThis explains a lot."))
+    //namebox("B 0 0 M E R")
     msgbox(format("Oh it is in Morytania.\pThis explains a lot."))
+    hidenamebox
     release
     end
 }

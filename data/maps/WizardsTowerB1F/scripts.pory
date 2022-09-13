@@ -46,7 +46,7 @@ script WizardsTower_B1F_STATE{
 script NPC_WizardsTowerB1F_Ariane{
     faceplayer
     namebox("Ariane")
-    msgbox(format("I cannot believe that guy got away!"))
+    msgbox(format("I cannot believe that guy got away…"))
     closemessage
     hidenamebox
     release
@@ -54,11 +54,26 @@ script NPC_WizardsTowerB1F_Ariane{
 }
 
 script NPC_WizardsTowerB1F_Sedridor{
+    lock
     faceplayer
-    namebox("Ariane")
-    msgbox(format("Hello {PLAYER}, I heard from Ariane that you gave chase into Draynor Manor."))
-    closemessage
-    hidenamebox
-    release
-    end
+    namebox("Sedridor")
+    checkitem(ITEM_TALISMAN_AIR, 1)
+        if (!var(VAR_RESULT)){
+            msgbox(format("Hello {PLAYER}, I heard from Ariane that you gave chase into Draynor Manor.\pI would like you to have this."))
+            hidenamebox
+            giveitem(ITEM_TALISMAN_AIR)
+            namebox("Sedridor")
+            msgbox(format("I recieved this Talisman from the Duke of Lumbridge.\pAfter a bit of research I have come to the conclusion that it can be used on those mysterious altars.\pYou should go try it out."))
+            hidenamebox
+            closemessage
+            release
+            end
+        }
+        else {
+            msgbox(format("Hello {PLAYER}, have you visited those mysterious altars?"))
+            hidenamebox
+            closemessage
+            release
+            end
+        }
 }

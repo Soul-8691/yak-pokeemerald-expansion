@@ -38,6 +38,7 @@ script NPC_PortSarimPub_Pirate_1 { // PUB TRAINER 1
 	faceplayer
     namebox("PIRATE")
 	msgbox(format("The customs officer confiscates all Karamja Rum.\pShe is the reason the Rum is always gone."))
+	hidenamebox
 	if (flag(FLAG_UNUSED_0x935) == false) 
 	{
 		msgbox(format("Do you wish to challenge them to a battle?"), MSGBOX_YESNO)
@@ -45,7 +46,11 @@ script NPC_PortSarimPub_Pirate_1 { // PUB TRAINER 1
 			{
 				hidenamebox
 				setflag(FLAG_UNUSED_0x935)
-				trainerbattle_no_intro(TRAINER_ROUTE24_WOODCUTTER_2, msgbox(format("…")))
+				trainerbattle_no_intro(TRAINER_PUB_SARIM_1, msgbox(format("…")))
+				namebox("PIRATE")
+				msgbox(format("I guess I owe you this."))
+				hidenamebox
+				call(GIVE_RANDOM_ITEM)
 			}
 	}
     hidenamebox
@@ -59,6 +64,7 @@ script NPC_PortSarimPub_Pirate_2 {	// PUB TRAINER 2
 	faceplayer
     namebox("PIRATE")
 	msgbox(format("AYE!\pThis is Port Sarim's Battle Pub."))
+	hidenamebox
 	if (flag(FLAG_UNUSED_0x936) == false) 
 	{
 		msgbox(format("Do you wish to challenge them to a battle?"), MSGBOX_YESNO)
@@ -66,7 +72,11 @@ script NPC_PortSarimPub_Pirate_2 {	// PUB TRAINER 2
 			{
 				hidenamebox
 				setflag(FLAG_UNUSED_0x936)
-				trainerbattle_no_intro(TRAINER_ROUTE24_WOODCUTTER_2, msgbox(format("…")))
+				trainerbattle_no_intro(TRAINER_PUB_SARIM_2, msgbox(format("…")))
+				namebox("PIRATE")
+				msgbox(format("Yaarr, take this."))
+				hidenamebox
+				call(GIVE_RANDOM_ITEM)
 			}
 	}
     hidenamebox
@@ -79,6 +89,7 @@ script NPC_PortSarimPub_Dwarf {	// PUB TRAINER 3
 	faceplayer
     namebox("DWARF")
 	msgbox(format("Outrageous!\pThe barmaid does not want to sell me drinks because I am a miner!"))
+	hidenamebox
 	if (flag(FLAG_UNUSED_0x937) == false) 
 	{
 		msgbox(format("Do you wish to challenge them to a battle?"), MSGBOX_YESNO)
@@ -86,7 +97,11 @@ script NPC_PortSarimPub_Dwarf {	// PUB TRAINER 3
 			{
 				hidenamebox
 				setflag(FLAG_UNUSED_0x937)
-				trainerbattle_no_intro(TRAINER_ROUTE24_WOODCUTTER_2, msgbox(format("…")))
+				trainerbattle_no_intro(TRAINER_PUB_SARIM_3, msgbox(format("…")))
+				namebox("DWARF")
+				msgbox(format("This round is on me."))
+				hidenamebox
+				call(GIVE_RANDOM_ITEM)
 			}
 	}
     hidenamebox
@@ -139,4 +154,53 @@ script NPC_PortSarim_Church_Monk_2 {
     hidenamebox
     release
 	end
+}
+
+
+
+
+
+
+
+
+
+script GIVE_RANDOM_ITEM {
+	random(17) 
+	switch (var(VAR_RESULT)) { 
+            case 0: 
+				giveitem(ITEM_FLAX, 3)
+			case 1: 
+				giveitem(ITEM_SPIRIT_SHARD, 1)
+			case 2: 
+				giveitem(ITEM_PRAYER_POTION, 1)
+			case 3: 
+				giveitem(ITEM_LAMP_SPATT, 1)
+			case 4: 
+				giveitem(ITEM_STAT_BEER, 1)
+			case 5: 
+				giveitem(ITEM_STAT_BEER, 1)
+			case 6: 
+				giveitem(ITEM_PURPLE_SWEETS, 1)
+			case 7: 
+				giveitem(ITEM_CHOCOLATE_CAKE, 1)
+			case 8: 
+				giveitem(ITEM_MINT_CAKE, 1)
+			case 9: 
+				giveitem(ITEM_HWEEN_MASK, 1)
+			case 10: 
+				giveitem(ITEM_EMPTY_BUCKET, 1)
+			case 11: 
+				giveitem(ITEM_EMPTY_BUCKET, 1)
+			case 12: 
+				giveitem(ITEM_GRANITE_POUCH, 5)
+			case 13: 
+				giveitem(ITEM_BLACK_POUCH, 10)
+			case 14: 
+				giveitem(ITEM_NORMAL_POUCH, 20)
+			case 15: 
+				giveitem(ITEM_SPIRIT_CHARM, 1)
+			case 16: 
+				giveitem(ITEM_GODRABBITFOOT, 1)
+	}
+	return
 }

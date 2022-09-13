@@ -81,8 +81,8 @@ script GNOME_MILL_LANE_MILL{
 script Trainer1_MillLaneMill_Battle
 {
     trainerbattle_double(TRAINER_TRAINER1_MILLLANEMILL, format("Have you seen any Kebbits around here?"),format("I need to get a higher hunting level.."),format("I would love to have a double battle with you."))
-    namebox ("RSN")
-    msgbox(format("I've been trying to track down Kebbits for my collection."))
+    namebox ("Kebbie")
+    msgbox(format("I have been trying to track down Kebbits for my collection."))
     hidenamebox
     release
     end

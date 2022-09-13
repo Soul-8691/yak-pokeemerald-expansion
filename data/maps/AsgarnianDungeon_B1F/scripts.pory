@@ -64,7 +64,7 @@ script ITEM_AsgarnianDungeon_5
 script BATTLE_AsgarnianDungeon_MUGGER_1
 {
     trainerbattle_single(TRAINER_AsgarnianDungeon_MUGGER_1, format("No I will not return the gp I just pickpocketed from you."),format("Fine here, have your gp back."))
-    msgbox(format("Not people come down here due the dangerous monsters further in."))
+    msgbox(format("Not many people come down here due the dangerous monsters further in."))
 	hidenamebox
     release
 	end
@@ -108,9 +108,9 @@ script BATTLE_AsgarnianDungeon_PIRATE_4
 
 script BATTLE_AsgarnianDungeon_GOBLIN_1
 {
-    trainerbattle_single(TRAINER_AsgarnianDungeon_GOBLIN_1, format("Big high war god command Gruntknee recruit dragon from this cave."),format("Gruntknee not really up for this task.\pGruntknee wants home"))
+    trainerbattle_single(TRAINER_AsgarnianDungeon_GOBLIN_1, format("Big high war god command Gruntknee recruit dragon from this cave."),format("Gruntknee not really up for this task.\pGruntknee wants to go home."))
     namebox ("Gruntknee")
-    msgbox(format("Gruntknee not really up for this task.\pGruntknee wants home"))
+    msgbox(format("Gruntknee not really up for this task.\pGruntknee wants to go home."))
 	hidenamebox
     release
 	end

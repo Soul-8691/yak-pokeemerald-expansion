@@ -236,7 +236,7 @@ script BATTLE_ROUTE2_Trainer_1
 script BATTLE_ROUTE2_Trainer_2
 {
     trainerbattle_single(TRAINER_ROUTE2_TRAINER_2, format("Passing this bridge gets you to the wizard tower."),format("Wizards use runes to conjure magic."))
-    //namebox ("CUPHOLDER")
+    namebox ("Tam McGrubor")
     msgbox(format("Runes are marvellous.\pUsing them on monsters might make them evolve!"))
     hidenamebox
     release

@@ -240,6 +240,7 @@ BATTLE_WizardsTower_Trainer_1::
 
 BATTLE_WizardsTower_Trainer_2::
 	trainerbattle_single TRAINER_WIZARDSTOWER_TRAINER_2, BATTLE_WizardsTower_Trainer_2_Text_0, BATTLE_WizardsTower_Trainer_2_Text_1
+	namebox BATTLE_WizardsTower_Trainer_2_Text_2
 	msgbox BATTLE_WizardsTower_Trainer_2_Text_1
 	hidenamebox
 	release
@@ -328,6 +329,9 @@ BATTLE_WizardsTower_Trainer_2_Text_0:
 
 BATTLE_WizardsTower_Trainer_2_Text_1:
 	.string "Hope you enjoy your stay.$"
+
+BATTLE_WizardsTower_Trainer_2_Text_2:
+	.string "Goldberg$"
 
 BATTLE_WizardsTower_Trainer_3_Text_0:
 	.string "With the power of runes, humans can use\n"

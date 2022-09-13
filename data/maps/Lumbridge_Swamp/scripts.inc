@@ -104,6 +104,8 @@ LUMBRIDGESWAMP_CANDLESELLER_2:
 
 
 LUMBRIDGESWAMP_FAIRY::
+	lock
+	faceplayer
 	namebox LUMBRIDGESWAMP_FAIRY_Text_0
 	msgbox LUMBRIDGESWAMP_FAIRY_Text_1
 	hidenamebox
@@ -197,7 +199,7 @@ BATTLE_LumbridgeSwamp_TRAINER_3_Text_1:
 	.string "My feelings got hurt by your victory.$"
 
 BATTLE_LumbridgeSwamp_TRAINER_3_Text_2:
-	.string "CUPHOLDER$"
+	.string "Robin$"
 
 BATTLE_LumbridgeSwamp_TRAINER_4_Text_0:
 	.string "Did pink humans say to find me?$"

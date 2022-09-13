@@ -132,7 +132,7 @@ BATTLE_ROUTE3_Trainer_1_Text_1:
 	.string "Yeah, I still don't like MvM.$"
 
 BATTLE_ROUTE3_Trainer_1_Text_2:
-	.string "CUPHOLDER$"
+	.string "IPWNSKILLS$"
 
 BATTLE_ROUTE3_Trainer_1_Text_3:
 	.string "I think I'll stick to skilling with my\n"

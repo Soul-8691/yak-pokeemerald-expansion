@@ -237,7 +237,8 @@ BATTLE_ROUTE2_Trainer_1::
 
 BATTLE_ROUTE2_Trainer_2::
 	trainerbattle_single TRAINER_ROUTE2_TRAINER_2, BATTLE_ROUTE2_Trainer_2_Text_0, BATTLE_ROUTE2_Trainer_2_Text_1
-	msgbox BATTLE_ROUTE2_Trainer_2_Text_2
+	namebox BATTLE_ROUTE2_Trainer_2_Text_2
+	msgbox BATTLE_ROUTE2_Trainer_2_Text_3
 	hidenamebox
 	release
 	end
@@ -349,6 +350,9 @@ BATTLE_ROUTE2_Trainer_2_Text_1:
 	.string "Wizards use runes to conjure magic.$"
 
 BATTLE_ROUTE2_Trainer_2_Text_2:
+	.string "Tam McGrubor$"
+
+BATTLE_ROUTE2_Trainer_2_Text_3:
 	.string "Runes are marvellous.\p"
 	.string "Using them on monsters might make them\n"
 	.string "evolve!$"

@@ -949,13 +949,13 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE2_TRAINER_3[] = {
     {
     .iv = 0,
     .lvl = 11,
-    .species = SPECIES_SARDINE,
+    .species = SPECIES_ANCHOVY,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
     .lvl = 10,
-    .species = SPECIES_SARDINE,
+    .species = SPECIES_ANCHOVY,
     .heldItem = ITEM_NONE
     }
 };
@@ -2371,37 +2371,47 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_GOBLIN_4[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_MUDSKIPPERPOINT_SLAYER[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 17,
+    .species = SPECIES_TORTOISE_NORMAL_FORM,
     },
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 19,
+    .species = SPECIES_CRAB_DARK_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_MUDSKIPPERPOINT_FISHERMAN_1[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 18,
+    .species = SPECIES_MUDSKIPPER,
     },
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
-    }
+    .lvl = 17,
+    .species = SPECIES_MUDSKIPPER,
+    },
+    {
+    .iv = 0,
+    .lvl = 13,
+    .species = SPECIES_MUDSKIPPER,
+    },
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_MUDSKIPPERPOINT_FISHERMAN_2[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 18,
+    .species = SPECIES_CRAB_RUMPUMPED_FORM,
     },
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 18,
+    .species = SPECIES_CRAB_GREY_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_CRAB_RED_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_Demonheadge[] = {
@@ -2428,6 +2438,45 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE40_DIVINER[] = {
     .species = SPECIES_FROGEEL,
     }
 };
+static const struct TrainerMonNoItemDefaultMoves sParty_PUB_SARIM_1[] = {
+    {
+    .iv = 0,
+    .lvl = 19,
+    .species = SPECIES_SHARK_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_LOBSTER_NORMAL_FORM,
+    },
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_PUB_SARIM_2[] = {
+    {
+    .iv = 0,
+    .lvl = 19,
+    .species = SPECIES_MONKFISH_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 19,
+    .species = SPECIES_MONKFISH_FRESH_FORM,
+    },
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_PUB_SARIM_3[] = { 
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_CAVEFISH,
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_SCORPION_POISON_FORM,
+    }
+};
+
+
+
 
 
 

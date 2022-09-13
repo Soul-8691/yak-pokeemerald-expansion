@@ -135,7 +135,7 @@ BATTLE_AsgarnianDungeon_MUGGER_1_Text_1:
 	.string "Fine here, have your gp back.$"
 
 BATTLE_AsgarnianDungeon_MUGGER_1_Text_2:
-	.string "Not people come down here due the\n"
+	.string "Not many people come down here due the\n"
 	.string "dangerous monsters further in.$"
 
 BATTLE_AsgarnianDungeon_PIRATE_1_Text_0:
@@ -180,7 +180,7 @@ BATTLE_AsgarnianDungeon_GOBLIN_1_Text_0:
 
 BATTLE_AsgarnianDungeon_GOBLIN_1_Text_1:
 	.string "Gruntknee not really up for this task.\p"
-	.string "Gruntknee wants home$"
+	.string "Gruntknee wants to go home.$"
 
 BATTLE_AsgarnianDungeon_GOBLIN_1_Text_2:
 	.string "Gruntknee$"

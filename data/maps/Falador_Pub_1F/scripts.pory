@@ -113,7 +113,6 @@ script NPC_FALADORPUB_NPC5
 script NPC_FALADORPUB_NPC6
 {
 	lock
-	faceplayer
     namebox ("White Knight")
 	msgbox(format("You guys won't believe this!\pThe other day when I was surveying the park I saw a different coloured mole!\pSadly I ran out of pouches so I couldn't catch it…"))
     waitmessage

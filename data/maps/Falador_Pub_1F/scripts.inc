@@ -91,7 +91,6 @@ NPC_FALADORPUB_NPC5::
 
 NPC_FALADORPUB_NPC6::
 	lock
-	faceplayer
 	namebox NPC_FALADORPUB_NPC5_Text_0
 	msgbox NPC_FALADORPUB_NPC6_Text_0
 	waitmessage

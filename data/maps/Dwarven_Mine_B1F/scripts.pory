@@ -1,5 +1,6 @@
 const OBJ_EVENT_ID_QUEST_KNIGHT = 39
 const OBJ_EVENT_ID_QUEST_BLACKKNIGHT = 51
+const OBJ_EVENT_ID_QUEST_BLACKKNIGHT2 = 52
 const OBJ_EVENT_ID_QUEST_OWEN = 32
 const OBJ_EVENT_ID_QUEST_HAM_1 = 40
 const OBJ_EVENT_ID_QUEST_HAM_2 = 33
@@ -17,6 +18,7 @@ script DWARVENMINES_QUEST_STATE{
 		case 1: 
 		case 2:
             removeobject(OBJ_EVENT_ID_QUEST_BLACKKNIGHT)
+            removeobject(OBJ_EVENT_ID_QUEST_BLACKKNIGHT2)
 			setflag(FLAG_TEMP_2)
 			return
         case 3:
@@ -78,6 +80,17 @@ script NPC_DWARVENMINES_MINECART
 	release
 	end
 }
+
+script NPC_DWARVENMINES_DWARF_3
+{
+	lock
+	faceplayer
+    namebox ("DWARF")
+	msgbox(format("My job is to unload the ores from these carts and get them ready for transportation.\pIt can be a hard job when you are sorting through the ores only to find some Scoprions nibbling on Earth Runes."))
+    hidenamebox
+	release
+	end
+}
 //ITEMS---------------------------------
 //HIDDEN ITEMS:
 script ITEM_DWARVENMINES_1
@@ -124,37 +137,37 @@ script NPC_FALADORCASTLE_QUEST_PART_3_3
 
 script NPC_FALADORCASTLE_QUEST_PART_3
 {
-    namebox ("SIR THEO")
-	msgbox(format("Those men went that way. They have cornered themselves."))
+    namebox ("Sir Theodore")
+	msgbox(format("Those men went that way.\nThey have cornered themselves."))
     closemessage
     hidenamebox
-    namebox ("SIR OWEN")
-	msgbox(format("Let's go get them!"))
+    namebox ("Sir Owen")
+	msgbox(format("Great work Theodore, let's go get them!"))
     closemessage
     hidenamebox
     applymovement(OBJ_EVENT_ID_QUEST_KNIGHT, DWARVENMINES_MOVEMENT_1)
     playse(SE_PIN)
     waitmovement(0)
-    namebox ("SIR THEO")
+    namebox ("Sir Theodore")
 	msgbox(format("Wait sir, we have an issue."))
     closemessage
     hidenamebox
     applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_2)
     waitmovement(0)
-    namebox ("SIR OWEN")
+    namebox ("Sir Owen")
 	msgbox(format("Are you an MvM challenger perhaps?\pFantastic!\pCould I please ask of you to assist us with some backup in case things get a bit ugly?\pYou see we are about to apprehend some suspicious men that have been causing a disturbance in the mines."))
     closemessage
     hidenamebox
     applymovement(OBJ_EVENT_ID_QUEST_KNIGHT, DWARVENMINES_MOVEMENT_6)
     waitmovement(0)
-    namebox ("SIR THEO")
+    namebox ("Sir Theodore")
 	msgbox(format("Sir, if we don't act now they will get away."))
     closemessage
     hidenamebox
     applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_7)
     waitmovement(0)
-    namebox ("SIR OWEN")
-	msgbox(format("Right you are Theo, with us challenger!"))
+    namebox ("Sir Owen")
+	msgbox(format("Right you are Theodore, with us challenger!"))
     closemessage
     hidenamebox
     applymovement(OBJ_EVENT_ID_QUEST_KNIGHT, DWARVENMINES_MOVEMENT_4)
@@ -165,7 +178,7 @@ script NPC_FALADORCASTLE_QUEST_PART_3
     //PLAY MUSIC
     playbgm (MUS_PS_ENCOUNTER_HAM, 1)
 
-    namebox ("SIR OWEN")
+    namebox ("Sir Owen")
 	msgbox(format("HALT!\lYou have no where to go!"))
     closemessage
     hidenamebox
@@ -178,31 +191,33 @@ script NPC_FALADORCASTLE_QUEST_PART_3
     hidenamebox
 
     addobject(OBJ_EVENT_ID_QUEST_BLACKKNIGHT)
+    addobject(OBJ_EVENT_ID_QUEST_BLACKKNIGHT2)
     clearflag(FLAG_TEMP_2)
     applymovement(OBJ_EVENT_ID_QUEST_BLACKKNIGHT, DWARVENMINES_MOVEMENT_8)
+    applymovement(OBJ_EVENT_ID_QUEST_BLACKKNIGHT2, DWARVENMINES_MOVEMENT_10)
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_7)
     applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_7)
     waitmovement(0)
-    namebox ("SIR OWEN")
+    namebox ("Sir Owen")
 	msgbox(format("What is this!?\pThe Black Knights?!"))
     closemessage
     hidenamebox
-    namebox ("BLACK KNIGHT")
-	msgbox(format("Time to get rid of you white knights once and for all!"))
+    namebox ("Black Knight")
+	msgbox(format("Time to get rid of you pesky White Knights once and for all!"))
     closemessage
     hidenamebox
     applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_2)
     applymovement(OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_9)
     waitmovement(0)
-    namebox ("SIR OWEN")
-	msgbox(format("Looks like we are in a tight spot.\pTheo, challenger, I trust you know what to do."))
+    namebox ("Sir Owen")
+	msgbox(format("Looks like we are in a tight spot.\pI'll take these two.\pTheodore, Challenger, I trust you know what to do."))
     closemessage
     hidenamebox
     applymovement(OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_7)
     applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_9)
     waitmovement(0)
-    namebox ("BLACK KNIGHT")
+    namebox ("Black Knight")
 	msgbox(format("For the Kinshra!"))
     closemessage
     hidenamebox
@@ -211,22 +226,25 @@ script NPC_FALADORCASTLE_QUEST_PART_3
 	msgbox(format("So strong…"))
     closemessage
     hidenamebox
-    namebox ("BLACK KNIGHT")
+    namebox ("Black Knight")
 	msgbox(format("No matter grunts, we have already won."))
     closemessage
     hidenamebox
-    applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_2)
+    applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_7)
     waitmovement(0)
-    namebox ("SIR OWEN")
+    namebox ("Sir Owen")
 	msgbox(format("What do you mean you have already won?"))
     closemessage
     hidenamebox
-    namebox ("BLACK KNIGHT")
+    namebox ("Black Knight")
 	msgbox(format("Kahaha!\lThis was but a mere distraction!\pOur agent would have escaped with the goods by now."))
     closemessage
     hidenamebox
-    namebox ("SIR OWEN")
-	msgbox(format("I'll be bringing you three in for questioning.\pThanks for your assistance challenger.\pI will be seeing you at the castle."))
+    namebox ("Sir Owen")
+	msgbox(format("I will still be bringing you three in for questioning."))
+    applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_2)
+    waitmovement(0)
+    msgbox(format("Thank you for your assistance challenger.\pI will be seeing you at the castle."))
     closemessage
     hidenamebox
 
@@ -240,6 +258,7 @@ script NPC_FALADORCASTLE_QUEST_PART_3
     removeobject(OBJ_EVENT_ID_QUEST_HAM_2)
     removeobject(OBJ_EVENT_ID_QUEST_KNIGHT)
     removeobject(OBJ_EVENT_ID_QUEST_BLACKKNIGHT)
+    removeobject(OBJ_EVENT_ID_QUEST_BLACKKNIGHT2)
     removeobject(OBJ_EVENT_ID_QUEST_OWEN)
     setvar(VAR_POKESCAPE_FALADOR_STATE, 3)
     fadescreen(FADE_FROM_BLACK)
@@ -264,6 +283,7 @@ movement DWARVENMINES_MOVEMENT_0_3{
 }
 movement DWARVENMINES_MOVEMENT_1{
     emote_exclamation_mark
+    delay_16 * 2
     face_down
 }
 movement DWARVENMINES_MOVEMENT_2{
@@ -320,7 +340,18 @@ movement DWARVENMINES_MOVEMENT_8{
 movement DWARVENMINES_MOVEMENT_9{
     face_up
 }
-
+movement DWARVENMINES_MOVEMENT_10{
+    walk_fast_right
+    walk_fast_up
+    walk_fast_right * 2
+    walk_fast_up * 1
+    walk_fast_right
+    walk_fast_up
+    walk_fast_right * 4
+    walk_fast_up * 2
+    face_right
+    
+}
 
 
 

@@ -98,6 +98,7 @@ script NPC_FALADOR_STATUE_1
 script NPC_FALADOR_DOG
 {
 	lock
+	faceplayer
 	namebox ("DALMATION")
 	msgbox(format("RUFF!"))
     waitmessage
@@ -438,33 +439,165 @@ script NPC_FALADOR_APPRENTICE
 	lock
 	faceplayer
     namebox ("Apprentice")
-	msgbox(format("Ayyee!\pAfter I finished making this chair it came to life!\pI do not suppose you want to buy it from me, do you? I need to cover the cost of materials and I do not think a living chair will make our client happy…"))
-    msgbox(format("Urk! No problem, who would want a living chair anyway."))
-    msgbox(format("Thank you so much! Let me just calculate the total…  … … Alright! So that comes to 5000gp. Is this okay with you?"))
-    msgbox(format("Sorry, but I cannot go any lower than that."))
-    msgbox(format("Thank you! You are a lifesaver! "))
-    msgbox(format("…{PAUSE 32}…{PAUSE 32} Uh… {PAUSE 32}You do not have enough money."))
-    msgbox(format("HOW!? I accidentally made another living chair!"))
+	msgbox(format("Ayyee!\pAfter I finished making this chair it came to life!\pI do not suppose you want to buy it from me, do you?\pI need to cover the cost of materials and I do not think a living chair will make our client happy…"), MSGBOX_YESNO)
+		if (!var(VAR_RESULT))
+		{
+			goto(NPC_FALADOR_APPRENTICE_NO)
+		}
+		msgbox(format("Thank you so much!\pLet me just calculate the total…{PAUSE 15}…{PAUSE 15}…{PAUSE 15}Alright!\pSo that comes to 5000gp.\pIs this okay with you?"), MSGBOX_YESNO)
+			if (!var(VAR_RESULT))
+			{
+				goto(NPC_FALADOR_APPRENTICE_NO)
+			}
+			checkmoney(5000, 0)
+				if (!var(VAR_RESULT))
+				{
+					msgbox(format("…{PAUSE 32}…{PAUSE 32} Uh…\p{PAUSE 32}You do not have enough money."))
+					waitmessage
+					hidenamebox
+					release
+					end
+				}
+    			msgbox(format("Thank you! You are a lifesaver! "))
+				hidenamebox
+				call(GiveMon_FALADOR_ANICHAIR)
+				removemoney(5000, 0)
+    
+	namebox ("Apprentice")
+    msgbox(format("WHAT?!\pHOW!?\pI accidentally made another living chair!"))
     waitmessage
     hidenamebox
 	release
 	end
 }
 
+
+script NPC_FALADOR_APPRENTICE_NO
+{
+	msgbox(format("Urk!\pNo problem, who would want a living chair anyway."))
+	closemessage
+	hidenamebox
+	release
+	end
+}
+
+
+
+
+
+
+
+
+
+script GiveMon_FALADOR_ANICHAIR {
+    setvar(VAR_TEMP_1, SPECIES_ANICHAIR)
+    givemon (SPECIES_ANICHAIR, 20, ITEM_NONE)
+    compare(VAR_RESULT, 0)
+	goto_if_eq(GiveMon_FALADOR_SendParty_ANICHAIR)
+    compare(VAR_RESULT, 1)
+	goto_if_eq(GiveMon_FALADOR_SendPC_ANICHAIR)
+    goto(Common_EventScript_NoMoreRoomForPokemon)
+    end
+}
+
+script GiveMon_FALADOR_SendParty_ANICHAIR{
+	call(GiveMon_FALADOR_ReceivedFanfare_ANICHAIR)
+	msgbox(format("Would you like to give your monster a nickname?"), MSGBOX_YESNO)
+    compare(VAR_RESULT, NO)
+	goto_if_eq(GiveMon_FALADOR_Received_ANICHAIR)
+	call(Common_EventScript_GetGiftMonPartySlot)
+	call(Common_EventScript_NameReceivedPartyMon)
+	goto(GiveMon_FALADOR_Received_ANICHAIR)
+	end
+}
+
+script GiveMon_FALADOR_SendPC_ANICHAIR {
+	call(GiveMon_FALADOR_ReceivedFanfare_ANICHAIR)
+	msgbox(format("Would you like to give your monster a nickname?"), MSGBOX_YESNO)
+    compare(VAR_RESULT, NO)
+	goto_if_eq(GiveMon_FALADOR_TransferredToPC_ANICHAIR)
+	call (Common_EventScript_NameReceivedBoxMon)
+	goto (GiveMon_FALADOR_TransferredToPC_ANICHAIR)
+	end
+}
+
+script GiveMon_FALADOR_TransferredToPC_ANICHAIR{
+	call (Common_EventScript_TransferredToPC)
+	goto (GiveMon_FALADOR_Received_ANICHAIR)
+	end
+}
+
+script GiveMon_FALADOR_ReceivedFanfare_ANICHAIR{
+	bufferspeciesname(1, SPECIES_ANICHAIR)
+	//removeobject LOCALID_BELDUM_BALL
+    //setvar(VAR_POKESCAPE_ERNEST_QUEST_STATE, 3)
+	playfanfare (MUS_OBTAIN_ITEM)
+	msgbox(format("{PLAYER} obtained a {STR_VAR_2}."))
+	waitmessage
+	waitfanfare
+	bufferspeciesname(0, SPECIES_ANICHAIR)
+	return
+}
+
+script GiveMon_FALADOR_Received_ANICHAIR{
+    //msgbox(format("EVENT COMPLETE."))
+	releaseall
+	return
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 script NPC_FALADOR_HAIRDRESSER
 {
 	lock
 	faceplayer
     namebox ("Hairdresser")
-	msgbox(format("You want a haircut? Well, first you will have to battle me."))
+	checktrainerflag(TRAINER_FALADOR_HAIRDRESSER)
+		if (!var(VAR_RESULT))
+		{		
+			msgbox(format("You want a haircut?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT)){
+				msgbox(format("Well, first you will have to battle me."))
+				closemessage
+				hidenamebox
+				trainerbattle_no_intro(TRAINER_FALADOR_HAIRDRESSER, msgbox(format("Oh no, my chinchompas!")))
+				namebox ("Hairdresser")
+				msgbox(format("Why would you faint all my chinchompas.\pNow who will run the wheel to make the sign outside spin.\pMy business is ruined!"))
+				msgbox(format("Take this, and never return.\nAlso you get no haircut."))
+				hidenamebox
+				settrainerflag(TRAINER_FALADOR_HAIRDRESSER)
+				giveitem(ITEM_RING_OF_WEALTH, 1)
+				namebox ("Hairdresser")
+				msgbox(format("Please leave.\pFor the good of my business."))
+				closemessage
+				hidenamebox
+			}
+			else 
+			{
+				msgbox(format("Out of my way then, can you not see I have hair to cut?"))
+				closemessage
+				hidenamebox
+			}
+			release
+			end
+		}
+		else 
+		{
+			msgbox(format("What more do you want!\pGet out!"))
+		}
 	closemessage
 	hidenamebox
-	trainerbattle_no_intro(TRAINER_FALADOR_HAIRDRESSER, msgbox(format("Oh no, my chinchompas!")))
-	namebox ("Hairdresser")
-    msgbox(format("Why would you faint all my chinchompas.\pNow who will run the wheel to make the sign outside spin.\pMy business is ruined!"))
-    msgbox(format("Take this, and never return.\pPlease.\pFor the good of my business."))
-    closemessage
-    hidenamebox
 	release
 	end
 }
@@ -473,7 +606,7 @@ script NPC_FALADOR_HAIRDRESSER_NPC
 {
 	lock
 	faceplayer
-    //namebox ("Cassie")
+    //namebox ("")
 	msgbox(format("Today im really feeling the dragoon hairstyle.\pIt will fix my love life for sure."))
     waitmessage
     hidenamebox
@@ -957,7 +1090,7 @@ script NPC_FALADOR_BLOCK_KNIGHT
 	lock
 	faceplayer
     namebox ("KNIGHT")
-	msgbox(format("There have been reports of a distrubance in these mines.\pNo one may enter until the White Knights arrive."))
+	msgbox(format("There have been reports of a distrubance in these mines.\pSir Owen and Sir Theodore have both gone ahead to investigate."))
     waitmessage
     hidenamebox
 	release

@@ -9,18 +9,13 @@ Falador_Castleyard_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 
 FALADORCASTLE_QUEST_STATE::
 	switch VAR_POKESCAPE_FALADOR_STATE
-	case 0, FALADORCASTLE_QUEST_STATE_2
 	case 1, FALADORCASTLE_QUEST_STATE_2
-	case 2, FALADORCASTLE_QUEST_STATE_3
-	case 3, FALADORCASTLE_QUEST_STATE_4
-	case 4, FALADORCASTLE_QUEST_STATE_5
-	case 5, FALADORCASTLE_QUEST_STATE_5
+	case 3, FALADORCASTLE_QUEST_STATE_3
+	case 4, FALADORCASTLE_QUEST_STATE_4
+	case 5, FALADORCASTLE_QUEST_STATE_4
 	return
 
 FALADORCASTLE_QUEST_STATE_2:
-	return
-
-FALADORCASTLE_QUEST_STATE_3:
 	removeobject 1
 	removeobject 12
 	setflag FLAG_TEMP_1
@@ -32,7 +27,7 @@ FALADORCASTLE_QUEST_STATE_3:
 	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_UP
 	return
 
-FALADORCASTLE_QUEST_STATE_4:
+FALADORCASTLE_QUEST_STATE_3:
 	setobjectxyperm 11, 11, 14
 	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_UP
 	setobjectxyperm 12, 10, 13
@@ -41,7 +36,7 @@ FALADORCASTLE_QUEST_STATE_4:
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
 	return
 
-FALADORCASTLE_QUEST_STATE_5:
+FALADORCASTLE_QUEST_STATE_4:
 	removeobject 11
 	removeobject 12
 	removeobject 1
@@ -198,34 +193,33 @@ NPC_FALADORCASTLE_QUEST_PART_4_2::
 
 
 NPC_FALADORCASTLE_QUEST_PART_4::
-	lock
-	namebox NPC_FALADORCASTLE_QUEST_PART_1_Text_3
-	msgbox NPC_FALADORCASTLE_QUEST_PART_4_Text_0
+	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_0
+	msgbox NPC_FALADORCASTLE_QUEST_PART_4_Text_1
 	closemessage
 	hidenamebox
 	applymovement 1, FALADORCASTLE_MOVEMENT_8
 	applymovement 12, FALADORCASTLE_MOVEMENT_9
 	waitmovement 0
-	namebox NPC_FALADORCASTLE_QUEST_PART_1_Text_0
-	msgbox NPC_FALADORCASTLE_QUEST_PART_4_Text_1
+	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_2
+	msgbox NPC_FALADORCASTLE_QUEST_PART_4_Text_3
 	closemessage
 	hidenamebox
-	namebox NPC_FALADORCASTLE_QUEST_PART_1_Text_3
-	msgbox NPC_FALADORCASTLE_QUEST_PART_4_Text_2
+	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_0
+	msgbox NPC_FALADORCASTLE_QUEST_PART_4_Text_4
 	closemessage
 	hidenamebox
 	applymovement 11, FALADORCASTLE_MOVEMENT_10
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, FALADORCASTLE_MOVEMENT_8
 	waitmovement 0
-	namebox NPC_FALADORCASTLE_QUEST_PART_1_Text_0
-	msgbox NPC_FALADORCASTLE_QUEST_PART_4_Text_3
+	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_2
+	msgbox NPC_FALADORCASTLE_QUEST_PART_4_Text_5
 	closemessage
 	hidenamebox
 	applymovement OBJ_EVENT_ID_PLAYER, FALADORCASTLE_MOVEMENT_9
 	waitmovement 0
-	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_4
-	msgbox NPC_FALADORCASTLE_QUEST_PART_4_Text_5
+	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_6
+	msgbox NPC_FALADORCASTLE_QUEST_PART_4_Text_7
 	closemessage
 	hidenamebox
 	applymovement OBJ_EVENT_ID_PLAYER, FALADORCASTLE_MOVEMENT_12
@@ -246,13 +240,11 @@ NPC_FALADORCASTLE_QUEST_PART_4::
 
 FALADORCASTLE_MOVEMENT_6:
 	walk_down
-	walk_down
 	walk_right
 	walk_down
 	step_end
 
 FALADORCASTLE_MOVEMENT_7:
-	walk_down
 	walk_down
 	walk_down
 	step_end
@@ -392,29 +384,29 @@ NPC_FALADORCASTLE_GYM_TRAINER_4_3:
 NPC_FALADORCASTLE_GYM_SIRAMIKVARZE::
 	lock
 	faceplayer
-	namebox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_0
+	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_0
 	goto_if_unset FLAG_BADGE02_GET, NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_2
-	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_7
+	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_6
 	hidenamebox
 	release
 	end
 
 NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_2:
-	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_1
+	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_0
 	hidenamebox
-	trainerbattle_no_intro TRAINER_FALADOR_GYM_AMIKVARZE, NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_2
-	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_3
+	trainerbattle_no_intro TRAINER_FALADOR_GYM_AMIKVARZE, NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_1
+	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_2
 	playfanfare MUS_OBTAIN_BADGE
-	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_4
+	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_3
 	waitfanfare
 	waitmessage
-	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_5
+	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_4
 	hidenamebox
 	giveitem ITEM_TM07, 1
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
-	namebox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_0
-	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_6
+	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_0
+	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_5
 	setvar VAR_POKESCAPE_FALADOR_STATE, 5
 	setflag FLAG_BADGE02_GET
 	hidenamebox
@@ -425,8 +417,8 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_2:
 NPC_FALADORCASTLE_GYM_SIROWEN::
 	lock
 	faceplayer
-	namebox NPC_FALADORCASTLE_GYM_SIROWEN_Text_0
-	msgbox NPC_FALADORCASTLE_GYM_SIROWEN_Text_1
+	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_2
+	msgbox NPC_FALADORCASTLE_GYM_SIROWEN_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -521,13 +513,19 @@ NPC_FALADORCASTLE_QUEST_KNIGHT_CHAT_Text_2:
 	.string "Welcome to the Falador Castle!$"
 
 NPC_FALADORCASTLE_QUEST_PART_4_Text_0:
-	.string "Thank you for the report.$"
+	.string "Sir Amik Varze$"
 
 NPC_FALADORCASTLE_QUEST_PART_4_Text_1:
+	.string "Thank you for the report.$"
+
+NPC_FALADORCASTLE_QUEST_PART_4_Text_2:
+	.string "Sir Owen$"
+
+NPC_FALADORCASTLE_QUEST_PART_4_Text_3:
 	.string "Aha, nice timing!\p"
 	.string "This is the challenger I spoke about.$"
 
-NPC_FALADORCASTLE_QUEST_PART_4_Text_2:
+NPC_FALADORCASTLE_QUEST_PART_4_Text_4:
 	.string "I am grateful for your assistance\n"
 	.string "within the mines.\p"
 	.string "Have you considered joining the white\n"
@@ -542,14 +540,14 @@ NPC_FALADORCASTLE_QUEST_PART_4_Text_2:
 	.string "be waiting.\p"
 	.string "Good luck!$"
 
-NPC_FALADORCASTLE_QUEST_PART_4_Text_3:
+NPC_FALADORCASTLE_QUEST_PART_4_Text_5:
 	.string "Good luck challenger and thank you\n"
 	.string "again for your assistance.$"
 
-NPC_FALADORCASTLE_QUEST_PART_4_Text_4:
-	.string "SIR THEO$"
+NPC_FALADORCASTLE_QUEST_PART_4_Text_6:
+	.string "Sir Theodore$"
 
-NPC_FALADORCASTLE_QUEST_PART_4_Text_5:
+NPC_FALADORCASTLE_QUEST_PART_4_Text_7:
 	.string "Thank you and I will see you soon!$"
 
 NPC_FALADORCASTLE_GYM_SIRTHEO_Text_0:
@@ -608,33 +606,30 @@ NPC_FALADORCASTLE_GYM_TRAINER_4_Text_2:
 	.string "Sir Loin$"
 
 NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_0:
-	.string "Sir Amik Varze$"
-
-NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_1:
 	.string "Well done getting here, as promised here\n"
 	.string "is your battle.$"
 
-NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_2:
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_1:
 	.string "You beat me.. Congratulations!$"
 
-NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_3:
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_2:
 	.string "I am impressed!\p"
 	.string "Have this badge.$"
 
-NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_4:
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_3:
 	.string "{PLAYER} received the Falador BADGE\n"
 	.string "from Sir Amik Varze.$"
 
-NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_5:
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_4:
 	.string "Also have this, it is my favourite move.$"
 
-NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_6:
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_5:
 	.string "That move is called Razor Shell, it is a\n"
 	.string "very sharp move.\p"
 	.string "Hopefully it will help you on your\n"
 	.string "journey.$"
 
-NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_7:
+NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_6:
 	.string "I recommend that you make your way to\n"
 	.string "Al Kharid or Varrock for your next MvM\l"
 	.string "gym challenge.\p"
@@ -642,9 +637,6 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_7:
 	.string "knight instead?$"
 
 NPC_FALADORCASTLE_GYM_SIROWEN_Text_0:
-	.string "Sir Owen$"
-
-NPC_FALADORCASTLE_GYM_SIROWEN_Text_1:
 	.string "Hello again, these guys won't talk.\p"
 	.string "But there does not seem to be anything\n"
 	.string "stolen, so we aren't sure what they\l"

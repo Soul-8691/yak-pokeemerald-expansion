@@ -245,7 +245,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 10,
+      "x": 4,
       "y": 11,
       "elevation": 0,
       "var": "VAR_POKESCAPE_FALADOR_STATE",
@@ -254,8 +254,8 @@
     },
     {
       "type": "trigger",
-      "x": 11,
-      "y": 11,
+      "x": 4,
+      "y": 10,
       "elevation": 0,
       "var": "VAR_POKESCAPE_FALADOR_STATE",
       "var_value": "1",
@@ -263,26 +263,26 @@
     },
     {
       "type": "trigger",
-      "x": 10,
-      "y": 11,
-      "elevation": 0,
-      "var": "VAR_POKESCAPE_FALADOR_STATE",
-      "var_value": "2",
-      "script": "NPC_FALADORCASTLE_QUEST_PART_2"
-    },
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 11,
-      "elevation": 0,
-      "var": "VAR_POKESCAPE_FALADOR_STATE",
-      "var_value": "2",
-      "script": "NPC_FALADORCASTLE_QUEST_PART_2"
-    },
-    {
-      "type": "trigger",
-      "x": 10,
+      "x": 3,
       "y": 10,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_FALADOR_STATE",
+      "var_value": "2",
+      "script": "NPC_FALADORCASTLE_QUEST_PART_2"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_FALADOR_STATE",
+      "var_value": "2",
+      "script": "NPC_FALADORCASTLE_QUEST_PART_2"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 11,
       "elevation": 0,
       "var": "VAR_POKESCAPE_FALADOR_STATE",
       "var_value": "3",
@@ -291,7 +291,7 @@
     {
       "type": "trigger",
       "x": 11,
-      "y": 10,
+      "y": 11,
       "elevation": 0,
       "var": "VAR_POKESCAPE_FALADOR_STATE",
       "var_value": "3",

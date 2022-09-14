@@ -2240,31 +2240,45 @@ static const struct TrainerMonItemCustomMoves sParty_FALADOR_HAIRDRESSER[] = {
     {
     .iv = 0,
     .lvl = 20,
-    .species = SPECIES_CHINCHOMPA_GREY_FORM,
-    .heldItem = ITEM_COSMIC_RUNE,
-    .moves = {MOVE_POUND, MOVE_GUTHIX_CLAWS, MOVE_PAY_DAY, MOVE_NONE}
+    .species = SPECIES_CHINCHOMPA_BABY,
+    .heldItem = ITEM_OVERLOAD,
+    .moves = {MOVE_POUND, MOVE_EXPLOSION, MOVE_PAY_DAY, MOVE_NONE}
     },
     {
     .iv = 0,
     .lvl = 22,
     .species = SPECIES_CHINCHOMPA_GREY_FORM,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_COMET_PUNCH, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    .heldItem = ITEM_OVERLOAD,
+    .moves = {MOVE_EXPLOSION, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     },
     {
     .iv = 0,
     .lvl = 24,
     .species = SPECIES_CHINCHOMPA_RED_FORM,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_FIRE_PUNCH, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    .heldItem = ITEM_OVERLOAD,
+    .moves = {MOVE_EXPLOSION, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     },
     {
     .iv = 0,
     .lvl = 25,
-    .species = SPECIES_CHINCHOMPA_GOLD_FORM,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_SAND_ATTACK, MOVE_NONE, MOVE_NONE, MOVE_NONE}
-    }
+    .species = SPECIES_CHINCHOMPA_BLACK,
+    .heldItem = ITEM_OVERLOAD,
+    .moves = {MOVE_EXPLOSION, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_CHINCHOMPA_GIANT,
+    .heldItem = ITEM_OVERLOAD,
+    .moves = {MOVE_EXPLOSION, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_CHINCHOMPA_MECHANIZED,
+    .heldItem = ITEM_OVERLOAD,
+    .moves = {MOVE_EXPLOSION, MOVE_NONE, MOVE_NONE, MOVE_NONE}
+    },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_MUGGER[] = {

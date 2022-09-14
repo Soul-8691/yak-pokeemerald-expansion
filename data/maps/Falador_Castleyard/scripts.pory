@@ -15,11 +15,11 @@ mapscripts Falador_Castleyard_MapScripts {
 
 script FALADORCASTLE_QUEST_STATE{
 	switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
-		case 0:
-		case 1: 
-			return
+		//case 0:
+		//case 1: 
+			//return
 
-		case 2: //REMOVE KNIGHT AND OWEN WHEN THEY GO TO MINES.
+		case 1: //REMOVE KNIGHT AND OWEN WHEN THEY GO TO MINES.
             removeobject(OBJ_EVENT_ID_QUEST_KNIGHT)
 			removeobject(OBJ_EVENT_ID_QUEST_OWEN)
 			setflag(FLAG_TEMP_1)
@@ -57,7 +57,7 @@ script FALADORCASTLE_QUEST_STATE{
 }
 
 
-
+//IGNORE
 script NPC_FALADORCASTLE_QUEST_PART_1
 {
     lock
@@ -83,9 +83,6 @@ script NPC_FALADORCASTLE_QUEST_PART_1
         applymovement(OBJ_EVENT_ID_PLAYER, FALADORCASTLE_MOVEMENT_11)
         waitmovement(0)
 	}
-
-
-
     removeobject(OBJ_EVENT_ID_QUEST_KNIGHT)
     removeobject(OBJ_EVENT_ID_QUEST_OWEN)
     setflag(FLAG_TEMP_1)
@@ -206,19 +203,18 @@ script NPC_FALADORCASTLE_QUEST_PART_4_2
 }
 script NPC_FALADORCASTLE_QUEST_PART_4
 {
-    lock
-    namebox ("SIR AMIK VARZE")
+    namebox ("Sir Amik Varze")
 	msgbox(format("Thank you for the report."))
     closemessage
     hidenamebox
     applymovement(OBJ_EVENT_ID_QUEST_KNIGHT, FALADORCASTLE_MOVEMENT_8) //Look at player.
     applymovement(OBJ_EVENT_ID_QUEST_OWEN, FALADORCASTLE_MOVEMENT_9) //Look at player.
     waitmovement(0)
-    namebox ("SIR OWEN")
+    namebox ("Sir Owen")
 	msgbox(format("Aha, nice timing!\pThis is the challenger I spoke about."))
     closemessage
     hidenamebox
-    namebox ("SIR AMIK VARZE")
+    namebox ("Sir Amik Varze")
 	msgbox(format("I am grateful for your assistance within the mines.\pHave you considered joining the white knights?\pAh but I am getting ahead of myself, you mentioned you wished to challenge me to a battle.\pI know you've already proved yourself within the mines but one more challenge lays before you.\pMake it to the top of the castle, I shall be waiting.\pGood luck!"))
     closemessage
     hidenamebox
@@ -226,13 +222,13 @@ script NPC_FALADORCASTLE_QUEST_PART_4
     waitmovement(0)
     applymovement(OBJ_EVENT_ID_PLAYER, FALADORCASTLE_MOVEMENT_8) 
     waitmovement(0)
-    namebox ("SIR OWEN")
+    namebox ("Sir Owen")
 	msgbox(format("Good luck challenger and thank you again for your assistance."))
     closemessage
     hidenamebox
     applymovement(OBJ_EVENT_ID_PLAYER, FALADORCASTLE_MOVEMENT_9) 
     waitmovement(0)
-    namebox ("SIR THEO")
+    namebox ("Sir Theodore")
 	msgbox(format("Thank you and I will see you soon!"))
     closemessage
     hidenamebox
@@ -252,12 +248,12 @@ script NPC_FALADORCASTLE_QUEST_PART_4
 	end
 }
 movement FALADORCASTLE_MOVEMENT_6{
-    walk_down *2
+    walk_down
     walk_right
     walk_down
 }
 movement FALADORCASTLE_MOVEMENT_7{
-    walk_down * 3
+    walk_down * 2
 }
 movement FALADORCASTLE_MOVEMENT_8{
     face_left

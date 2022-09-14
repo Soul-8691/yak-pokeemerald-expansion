@@ -81,6 +81,7 @@ NPC_FALADOR_STATUE_1::
 
 NPC_FALADOR_DOG::
 	lock
+	faceplayer
 	namebox NPC_FALADOR_DOG_Text_0
 	msgbox NPC_FALADOR_DOG_Text_1
 	waitmessage
@@ -342,34 +343,145 @@ NPC_FALADOR_APPRENTICE::
 	lock
 	faceplayer
 	namebox NPC_FALADOR_APPRENTICE_Text_0
-	msgbox NPC_FALADOR_APPRENTICE_Text_1
-	msgbox NPC_FALADOR_APPRENTICE_Text_2
-	msgbox NPC_FALADOR_APPRENTICE_Text_3
+	msgbox NPC_FALADOR_APPRENTICE_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_eq NPC_FALADOR_APPRENTICE_2
+NPC_FALADOR_APPRENTICE_1:
+	msgbox NPC_FALADOR_APPRENTICE_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_eq NPC_FALADOR_APPRENTICE_5
+NPC_FALADOR_APPRENTICE_4:
+	checkmoney 5000, 0
+	compare VAR_RESULT, 0
+	goto_if_eq NPC_FALADOR_APPRENTICE_8
 	msgbox NPC_FALADOR_APPRENTICE_Text_4
+	hidenamebox
+	call GiveMon_FALADOR_ANICHAIR
+	removemoney 5000, 0
+	namebox NPC_FALADOR_APPRENTICE_Text_0
 	msgbox NPC_FALADOR_APPRENTICE_Text_5
-	msgbox NPC_FALADOR_APPRENTICE_Text_6
-	msgbox NPC_FALADOR_APPRENTICE_Text_7
+	waitmessage
+	hidenamebox
+	release
+	end
+
+NPC_FALADOR_APPRENTICE_2:
+	goto NPC_FALADOR_APPRENTICE_NO
+	goto NPC_FALADOR_APPRENTICE_1
+
+NPC_FALADOR_APPRENTICE_5:
+	goto NPC_FALADOR_APPRENTICE_NO
+	goto NPC_FALADOR_APPRENTICE_4
+
+NPC_FALADOR_APPRENTICE_8:
+	msgbox NPC_FALADOR_APPRENTICE_Text_3
 	waitmessage
 	hidenamebox
 	release
 	end
 
 
-NPC_FALADOR_HAIRDRESSER::
-	lock
-	faceplayer
-	namebox NPC_FALADOR_HAIRDRESSER_Text_0
-	msgbox NPC_FALADOR_HAIRDRESSER_Text_1
-	closemessage
-	hidenamebox
-	trainerbattle_no_intro TRAINER_FALADOR_HAIRDRESSER, NPC_FALADOR_HAIRDRESSER_Text_2
-	namebox NPC_FALADOR_HAIRDRESSER_Text_0
-	msgbox NPC_FALADOR_HAIRDRESSER_Text_3
-	msgbox NPC_FALADOR_HAIRDRESSER_Text_4
+NPC_FALADOR_APPRENTICE_NO::
+	msgbox NPC_FALADOR_APPRENTICE_NO_Text_0
 	closemessage
 	hidenamebox
 	release
 	end
+
+
+GiveMon_FALADOR_ANICHAIR::
+	setvar VAR_TEMP_1, SPECIES_ANICHAIR
+	givemon SPECIES_ANICHAIR, 20, ITEM_NONE
+	compare VAR_RESULT, 0
+	goto_if_eq GiveMon_FALADOR_SendParty_ANICHAIR
+	compare VAR_RESULT, 1
+	goto_if_eq GiveMon_FALADOR_SendPC_ANICHAIR
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+
+GiveMon_FALADOR_SendParty_ANICHAIR::
+	call GiveMon_FALADOR_ReceivedFanfare_ANICHAIR
+	msgbox GiveMon_FALADOR_SendParty_ANICHAIR_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq GiveMon_FALADOR_Received_ANICHAIR
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto GiveMon_FALADOR_Received_ANICHAIR
+	end
+
+
+GiveMon_FALADOR_SendPC_ANICHAIR::
+	call GiveMon_FALADOR_ReceivedFanfare_ANICHAIR
+	msgbox GiveMon_FALADOR_SendParty_ANICHAIR_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq GiveMon_FALADOR_TransferredToPC_ANICHAIR
+	call Common_EventScript_NameReceivedBoxMon
+	goto GiveMon_FALADOR_TransferredToPC_ANICHAIR
+	end
+
+
+GiveMon_FALADOR_TransferredToPC_ANICHAIR::
+	call Common_EventScript_TransferredToPC
+	goto GiveMon_FALADOR_Received_ANICHAIR
+	end
+
+
+GiveMon_FALADOR_ReceivedFanfare_ANICHAIR::
+	bufferspeciesname 1, SPECIES_ANICHAIR
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox GiveMon_FALADOR_ReceivedFanfare_ANICHAIR_Text_0
+	waitmessage
+	waitfanfare
+	bufferspeciesname 0, SPECIES_ANICHAIR
+	return
+
+
+GiveMon_FALADOR_Received_ANICHAIR::
+	releaseall
+	return
+
+
+NPC_FALADOR_HAIRDRESSER::
+	lock
+	faceplayer
+	namebox NPC_FALADOR_HAIRDRESSER_Text_0
+	checktrainerflag TRAINER_FALADOR_HAIRDRESSER
+	compare VAR_RESULT, 0
+	goto_if_eq NPC_FALADOR_HAIRDRESSER_2
+	msgbox NPC_FALADOR_HAIRDRESSER_Text_8
+	closemessage
+	hidenamebox
+	release
+	end
+
+NPC_FALADOR_HAIRDRESSER_2:
+	msgbox NPC_FALADOR_HAIRDRESSER_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne NPC_FALADOR_HAIRDRESSER_6
+	msgbox NPC_FALADOR_HAIRDRESSER_Text_7
+	closemessage
+	hidenamebox
+NPC_FALADOR_HAIRDRESSER_5:
+	release
+	end
+
+NPC_FALADOR_HAIRDRESSER_6:
+	msgbox NPC_FALADOR_HAIRDRESSER_Text_2
+	closemessage
+	hidenamebox
+	trainerbattle_no_intro TRAINER_FALADOR_HAIRDRESSER, NPC_FALADOR_HAIRDRESSER_Text_3
+	namebox NPC_FALADOR_HAIRDRESSER_Text_0
+	msgbox NPC_FALADOR_HAIRDRESSER_Text_4
+	msgbox NPC_FALADOR_HAIRDRESSER_Text_5
+	hidenamebox
+	settrainerflag TRAINER_FALADOR_HAIRDRESSER
+	giveitem ITEM_RING_OF_WEALTH, 1
+	namebox NPC_FALADOR_HAIRDRESSER_Text_0
+	msgbox NPC_FALADOR_HAIRDRESSER_Text_6
+	closemessage
+	hidenamebox
+	goto NPC_FALADOR_HAIRDRESSER_5
 
 
 NPC_FALADOR_HAIRDRESSER_NPC::
@@ -970,54 +1082,76 @@ NPC_FALADOR_APPRENTICE_Text_1:
 	.string "After I finished making this chair it\n"
 	.string "came to life!\p"
 	.string "I do not suppose you want to buy it\n"
-	.string "from me, do you? I need to cover the\l"
-	.string "cost of materials and I do not think a\l"
-	.string "living chair will make our client happy…$"
+	.string "from me, do you?\p"
+	.string "I need to cover the cost of materials\n"
+	.string "and I do not think a living chair will\l"
+	.string "make our client happy…$"
 
 NPC_FALADOR_APPRENTICE_Text_2:
-	.string "Urk! No problem, who would want a living\n"
-	.string "chair anyway.$"
+	.string "Thank you so much!\p"
+	.string "Let me just calculate the\n"
+	.string "total…{PAUSE 15}…{PAUSE 15}…{PAUSE 15}Alright!\p"
+	.string "So that comes to 5000gp.\p"
+	.string "Is this okay with you?$"
 
 NPC_FALADOR_APPRENTICE_Text_3:
-	.string "Thank you so much! Let me just\n"
-	.string "calculate the total… … … Alright! So\l"
-	.string "that comes to 5000gp. Is this okay\l"
-	.string "with you?$"
+	.string "…{PAUSE 32}…{PAUSE 32} Uh…\p"
+	.string "{PAUSE 32}You do not have enough money.$"
 
 NPC_FALADOR_APPRENTICE_Text_4:
-	.string "Sorry, but I cannot go any lower than\n"
-	.string "that.$"
-
-NPC_FALADOR_APPRENTICE_Text_5:
 	.string "Thank you! You are a lifesaver!$"
 
-NPC_FALADOR_APPRENTICE_Text_6:
-	.string "…{PAUSE 32}…{PAUSE 32} Uh… {PAUSE 32}You do not have enough money.$"
+NPC_FALADOR_APPRENTICE_Text_5:
+	.string "WHAT?!\p"
+	.string "HOW!?\p"
+	.string "I accidentally made another living\n"
+	.string "chair!$"
 
-NPC_FALADOR_APPRENTICE_Text_7:
-	.string "HOW!? I accidentally made another\n"
-	.string "living chair!$"
+NPC_FALADOR_APPRENTICE_NO_Text_0:
+	.string "Urk!\p"
+	.string "No problem, who would want a living chair\n"
+	.string "anyway.$"
+
+GiveMon_FALADOR_SendParty_ANICHAIR_Text_0:
+	.string "Would you like to give your monster a\n"
+	.string "nickname?$"
+
+GiveMon_FALADOR_ReceivedFanfare_ANICHAIR_Text_0:
+	.string "{PLAYER} obtained a {STR_VAR_2}.$"
 
 NPC_FALADOR_HAIRDRESSER_Text_0:
 	.string "Hairdresser$"
 
 NPC_FALADOR_HAIRDRESSER_Text_1:
-	.string "You want a haircut? Well, first you will\n"
-	.string "have to battle me.$"
+	.string "You want a haircut?$"
 
 NPC_FALADOR_HAIRDRESSER_Text_2:
-	.string "Oh no, my chinchompas!$"
+	.string "Well, first you will have to battle me.$"
 
 NPC_FALADOR_HAIRDRESSER_Text_3:
+	.string "Oh no, my chinchompas!$"
+
+NPC_FALADOR_HAIRDRESSER_Text_4:
 	.string "Why would you faint all my chinchompas.\p"
 	.string "Now who will run the wheel to make the\n"
 	.string "sign outside spin.\p"
 	.string "My business is ruined!$"
 
-NPC_FALADOR_HAIRDRESSER_Text_4:
-	.string "Take this, and never return.\p"
-	.string "Please.\p"
+NPC_FALADOR_HAIRDRESSER_Text_5:
+	.string "Take this, and never return.\n"
+	.string "Also you get no haircut.$"
+
+NPC_FALADOR_HAIRDRESSER_Text_6:
+	.string "Please leave.\p"
 	.string "For the good of my business.$"
+
+NPC_FALADOR_HAIRDRESSER_Text_7:
+	.string "Out of my way then, can you not see I\n"
+	.string "have hair to cut?$"
+
+NPC_FALADOR_HAIRDRESSER_Text_8:
+	.string "What more do you want!\p"
+	.string "Get out!$"
 
 NPC_FALADOR_HAIRDRESSER_NPC_Text_0:
 	.string "Today im really feeling the dragoon\n"
@@ -1219,8 +1353,8 @@ NPC_FALADOR_BLOCK_KNIGHT_Text_0:
 NPC_FALADOR_BLOCK_KNIGHT_Text_1:
 	.string "There have been reports of a\n"
 	.string "distrubance in these mines.\p"
-	.string "No one may enter until the White\n"
-	.string "Knights arrive.$"
+	.string "Sir Owen and Sir Theodore have both\n"
+	.string "gone ahead to investigate.$"
 
 FALADOR_QUEST_STATE_CHANGER_Text_0:
 	.string "FALADORSTATE isnow 1$"

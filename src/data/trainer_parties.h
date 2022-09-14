@@ -2474,6 +2474,47 @@ static const struct TrainerMonNoItemDefaultMoves sParty_PUB_SARIM_3[] = {
     .species = SPECIES_SCORPION_POISON_FORM,
     }
 };
+static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Miner[] = { 
+    {
+    .iv = 0,
+    .lvl = 23,
+    .species = SPECIES_SPOOKAXE,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Ironman[] = { 
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_WOLF_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_CRAB_GRANITE_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 17,
+    .species = SPECIES_ANIMOUR,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Slayer[] = { 
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_KURASK,
+    },
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_DARK_BEAST_PUP_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_TUROTH,
+    }
+};
 
 
 

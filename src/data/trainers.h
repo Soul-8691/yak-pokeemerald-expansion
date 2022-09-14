@@ -2114,6 +2114,50 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_PUB_SARIM_3},
     },
     
+    [TRAINER_RimmingtonMines_Miner] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_miner,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_RimmingtonMines_Miner),
+        .party = {.NoItemDefaultMoves = sParty_RimmingtonMines_Miner},
+    },
+    
+    [TRAINER_RimmingtonMines_Ironman] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_IRONMAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_ironman,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_RimmingtonMines_Ironman),
+        .party = {.NoItemDefaultMoves = sParty_RimmingtonMines_Ironman},
+    },
+    
+    [TRAINER_RimmingtonMines_Slayer] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SLAYER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_slayer,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_RimmingtonMines_Slayer),
+        .party = {.NoItemDefaultMoves = sParty_RimmingtonMines_Slayer},
+    },
+
+
+
 
 
 

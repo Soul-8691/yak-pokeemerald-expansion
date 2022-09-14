@@ -99,8 +99,9 @@ NPC_RIMMINGTON_CustomsOfficer::
 NPC_RIMMINGTON_JagexMod::
 	lock
 	faceplayer
-	namebox NPC_RIMMINGTON_JagexMod_Text_0
-	msgbox NPC_RIMMINGTON_JagexMod_Text_1
+	random 31
+	call NPC_RIMMINGTON_JagexMod_NAMES
+	msgbox NPC_RIMMINGTON_JagexMod_Text_0
 	hidenamebox
 	closemessage
 	fadescreen FADE_TO_BLACK
@@ -108,12 +109,173 @@ NPC_RIMMINGTON_JagexMod::
 	setflag FLAG_TEMP_A
 	delay 8
 	fadescreen FADE_FROM_BLACK
-	namebox NPC_RIMMINGTON_JagexMod_Text_0
-	msgbox NPC_RIMMINGTON_JagexMod_Text_2
+	call NPC_RIMMINGTON_JagexMod_NAMES
+	msgbox NPC_RIMMINGTON_JagexMod_Text_1
 	hidenamebox
 	closemessage
 	release
 	end
+
+
+NPC_RIMMINGTON_JagexMod_NAMES::
+	switch VAR_RESULT
+	case 0, NPC_RIMMINGTON_JagexMod_NAMES_3
+	case 1, NPC_RIMMINGTON_JagexMod_NAMES_4
+	case 2, NPC_RIMMINGTON_JagexMod_NAMES_5
+	case 3, NPC_RIMMINGTON_JagexMod_NAMES_6
+	case 4, NPC_RIMMINGTON_JagexMod_NAMES_7
+	case 5, NPC_RIMMINGTON_JagexMod_NAMES_8
+	case 6, NPC_RIMMINGTON_JagexMod_NAMES_9
+	case 7, NPC_RIMMINGTON_JagexMod_NAMES_10
+	case 8, NPC_RIMMINGTON_JagexMod_NAMES_11
+	case 9, NPC_RIMMINGTON_JagexMod_NAMES_12
+	case 10, NPC_RIMMINGTON_JagexMod_NAMES_13
+	case 11, NPC_RIMMINGTON_JagexMod_NAMES_14
+	case 12, NPC_RIMMINGTON_JagexMod_NAMES_15
+	case 13, NPC_RIMMINGTON_JagexMod_NAMES_16
+	case 14, NPC_RIMMINGTON_JagexMod_NAMES_17
+	case 15, NPC_RIMMINGTON_JagexMod_NAMES_18
+	case 16, NPC_RIMMINGTON_JagexMod_NAMES_19
+	case 17, NPC_RIMMINGTON_JagexMod_NAMES_20
+	case 18, NPC_RIMMINGTON_JagexMod_NAMES_21
+	case 19, NPC_RIMMINGTON_JagexMod_NAMES_22
+	case 20, NPC_RIMMINGTON_JagexMod_NAMES_23
+	case 21, NPC_RIMMINGTON_JagexMod_NAMES_24
+	case 22, NPC_RIMMINGTON_JagexMod_NAMES_25
+	case 23, NPC_RIMMINGTON_JagexMod_NAMES_26
+	case 24, NPC_RIMMINGTON_JagexMod_NAMES_27
+	case 25, NPC_RIMMINGTON_JagexMod_NAMES_28
+	case 26, NPC_RIMMINGTON_JagexMod_NAMES_29
+	case 27, NPC_RIMMINGTON_JagexMod_NAMES_30
+	case 28, NPC_RIMMINGTON_JagexMod_NAMES_31
+	case 29, NPC_RIMMINGTON_JagexMod_NAMES_32
+	case 30, NPC_RIMMINGTON_JagexMod_NAMES_33
+NPC_RIMMINGTON_JagexMod_NAMES_1:
+	return
+
+NPC_RIMMINGTON_JagexMod_NAMES_3:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_0
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_4:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_1
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_5:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_2
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_6:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_3
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_7:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_4
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_8:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_5
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_9:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_6
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_10:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_7
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_11:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_8
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_12:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_9
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_13:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_10
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_14:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_11
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_15:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_12
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_16:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_13
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_17:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_14
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_18:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_15
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_19:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_16
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_20:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_17
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_21:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_18
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_22:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_19
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_23:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_20
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_24:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_21
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_25:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_22
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_26:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_23
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_27:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_24
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_28:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_25
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_29:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_26
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_30:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_27
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_31:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_28
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_32:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_29
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
+
+NPC_RIMMINGTON_JagexMod_NAMES_33:
+	namebox NPC_RIMMINGTON_JagexMod_NAMES_Text_30
+	goto NPC_RIMMINGTON_JagexMod_NAMES_1
 
 
 NPC_RIMMINGTON_PETER::
@@ -130,14 +292,10 @@ NPC_RIMMINGTON_GnomeBoiKevin::
 	lock
 	faceplayer
 	checkitem ITEM_TERRORBIRD_POUCH, 1
-	compare ! VAR_RESULT, 0
-	goto_if_ne NPC_RIMMINGTON_GnomeBoiKevin_2
+	compare VAR_RESULT, 0
+	goto_if_eq NPC_RIMMINGTON_GnomeBoiKevin_2
 	namebox NPC_RIMMINGTON_GnomeBoiKevin_Text_0
 	msgbox NPC_RIMMINGTON_GnomeBoiKevin_Text_3
-	closemessage
-	release
-	end
-
 NPC_RIMMINGTON_GnomeBoiKevin_1:
 	hidenamebox
 	closemessage
@@ -177,8 +335,7 @@ NPC_RIMMINGTON_NPC_8::
 NPC_RIMMINGTON_NPC_9::
 	lock
 	faceplayer
-	namebox NPC_RIMMINGTON_NPC_9_Text_0
-	msgbox NPC_RIMMINGTON_NPC_9_Text_1
+	msgbox NPC_RIMMINGTON_NPC_9_Text_0
 	hidenamebox
 	release
 	end
@@ -224,8 +381,8 @@ RIMMINGTON_ED8:
 NPC_RIMMINGTON_NPC_11::
 	lock
 	faceplayer
-	namebox NPC_RIMMINGTON_NPC_9_Text_0
-	msgbox NPC_RIMMINGTON_NPC_9_Text_0
+	namebox NPC_RIMMINGTON_NPC_11_Text_0
+	msgbox NPC_RIMMINGTON_NPC_11_Text_0
 	hidenamebox
 	release
 	end
@@ -284,7 +441,6 @@ NPC_RIMMINGTON_NPC_19::
 NPC_RIMMINGTON_NPC_12::
 	lock
 	faceplayer
-	namebox NPC_RIMMINGTON_NPC_9_Text_0
 	msgbox NPC_RIMMINGTON_NPC_12_Text_0
 	hidenamebox
 	release
@@ -943,12 +1099,12 @@ NPC_POH_RAPTOR::
 
 
 ITEM_RIMMINGTON_1::
-	finditem ITEM_LAMP_SPATT
+	finditem ITEM_CAKE
 	end
 
 
 ITEM_RIMMINGTON_2::
-	finditem ITEM_LAMP_SPATT
+	finditem ITEM_POTION_SPEED
 	end
 
 
@@ -1008,7 +1164,7 @@ NPC_RIMMINGTON_NPC_4::
 NPC_RIMMINGTON_NPC_5::
 	lock
 	faceplayer
-	namebox NPC_RIMMINGTON_NPC_9_Text_0
+	namebox NPC_RIMMINGTON_NPC_11_Text_0
 	msgbox NPC_RIMMINGTON_NPC_5_Text_0
 	hidenamebox
 	release
@@ -1028,8 +1184,8 @@ NPC_RIMMINGTON_NPC_6::
 NPC_RIMMINGTON_NPC_7::
 	lock
 	faceplayer
-	namebox NPC_RIMMINGTON_CustomsOfficer_Text_0
-	msgbox NPC_RIMMINGTON_NPC_7_Text_0
+	namebox NPC_RIMMINGTON_NPC_7_Text_0
+	msgbox NPC_RIMMINGTON_NPC_7_Text_1
 	hidenamebox
 	release
 	end
@@ -1046,7 +1202,7 @@ NPC_Hanannie::
 
 
 NPC_RIMMINGTON_CustomsOfficer_Text_0:
-	.string "OFFICER$"
+	.string "Officer$"
 
 NPC_RIMMINGTON_CustomsOfficer_Text_1:
 	.string "Behave yourself otherwise I will take\n"
@@ -1055,17 +1211,107 @@ NPC_RIMMINGTON_CustomsOfficer_Text_1:
 	.string "Prison.$"
 
 NPC_RIMMINGTON_JagexMod_Text_0:
-	.string "Mod ???$"
-
-NPC_RIMMINGTON_JagexMod_Text_1:
 	.string "I am a ninja!\p"
 	.string "Now you see me.$"
 
-NPC_RIMMINGTON_JagexMod_Text_2:
+NPC_RIMMINGTON_JagexMod_Text_1:
 	.string "Now you don't…$"
 
+NPC_RIMMINGTON_JagexMod_NAMES_Text_0:
+	.string "Mod Dorn$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_1:
+	.string "Mod Abe$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_2:
+	.string "Mod AoB$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_3:
+	.string "Mod Breezy$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_4:
+	.string "Mod Canine$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_5:
+	.string "Mod Chaose$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_6:
+	.string "Mod Chaplain$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_7:
+	.string "Mod Doctor$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_8:
+	.string "Mod Edge$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_9:
+	.string "Mod Erator$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_10:
+	.string "Mod Frosch$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_11:
+	.string "Mod Halo$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_12:
+	.string "Mod Harrison$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_13:
+	.string "Mod Hing$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_14:
+	.string "Mod Hunter$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_15:
+	.string "Mod Iago$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_16:
+	.string "Mod Kalaya$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_17:
+	.string "Mod Kari$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_18:
+	.string "Mod Kelpie$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_19:
+	.string "Mod Kylar$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_20:
+	.string "Mod Lab$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_21:
+	.string "Mod Labcoat$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_22:
+	.string "Mod Liam$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_23:
+	.string "Mod Maylea$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_24:
+	.string "Mod Pi$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_25:
+	.string "Mod Ramen$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_26:
+	.string "Mod Ryan$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_27:
+	.string "Mod Shogun$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_28:
+	.string "Mod Stu$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_29:
+	.string "Mod Tomb$"
+
+NPC_RIMMINGTON_JagexMod_NAMES_Text_30:
+	.string "Mod Veda$"
+
 NPC_RIMMINGTON_PETER_Text_0:
-	.string "PETER$"
+	.string "Peter$"
 
 NPC_RIMMINGTON_PETER_Text_1:
 	.string "There are a lot of slushing noises\n"
@@ -1112,9 +1358,6 @@ NPC_RIMMINGTON_NPC_8_Text_1:
 	.string "Mines?$"
 
 NPC_RIMMINGTON_NPC_9_Text_0:
-	.string "CUPHOLDER$"
-
-NPC_RIMMINGTON_NPC_9_Text_1:
 	.string "You can not always run from your\n"
 	.string "problems.\p"
 	.string "Running near others will make them spot\n"
@@ -1131,14 +1374,17 @@ NPC_RIMMINGTON_NPC_10_Text_1:
 NPC_RIMMINGTON_NPC_10_Text_2:
 	.string "ED8.$"
 
+NPC_RIMMINGTON_NPC_11_Text_0:
+	.string "CUPHOLDER$"
+
 NPC_RIMMINGTON_NPC_SKIPPY_Text_0:
-	.string "SKIPPY$"
+	.string "Skippy$"
 
 NPC_RIMMINGTON_NPC_SKIPPY_Text_1:
 	.string "The Mudskippers!$"
 
 NPC_RIMMINGTON_NPC_16_Text_0:
-	.string "HETTY$"
+	.string "Hetty$"
 
 NPC_RIMMINGTON_NPC_16_Text_1:
 	.string "Newts?\p"
@@ -1170,7 +1416,7 @@ NPC_RIMMINGTON_NPC_12_Text_0:
 	.string "your guy!$"
 
 NPC_RIMMINGTON_NPC_13_Text_0:
-	.string "ASSISTANT$"
+	.string "Assistant$"
 
 NPC_RIMMINGTON_NPC_13_Text_1:
 	.string "Oh no!\p"
@@ -1178,7 +1424,7 @@ NPC_RIMMINGTON_NPC_13_Text_1:
 	.string "bread for this month!$"
 
 Generalstore_RIMMINGTON_Clerk_Text_0:
-	.string "CLERK$"
+	.string "Clerk$"
 
 Generalstore_RIMMINGTON_Clerk_Text_1:
 	.string "Welcome to the Rimmington General\n"
@@ -1518,7 +1764,7 @@ NPC_POH_BUTLER_Text_1:
 	.string "enough to serve all of these people.$"
 
 NPC_POH_JMOD_Text_0:
-	.string "MOD ???$"
+	.string "Mod Meadows$"
 
 NPC_POH_JMOD_Text_1:
 	.string "I heard that there was something\n"
@@ -1579,6 +1825,9 @@ NPC_RIMMINGTON_NPC_6_Text_1:
 	.string "I'm all out of wood to fletch.$"
 
 NPC_RIMMINGTON_NPC_7_Text_0:
+	.string "OFFICER$"
+
+NPC_RIMMINGTON_NPC_7_Text_1:
 	.string "Don't steal another adventurers\n"
 	.string "monsters.\p"
 	.string "Otherwise you will be shipped off to\n"

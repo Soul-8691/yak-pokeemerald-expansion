@@ -134,8 +134,88 @@ QBDLAIR_4::
 	end
 
 
+BATTLE_RimmingtonMines_Miner::
+	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_RimmingtonMines_Miner_Text_0, BATTLE_RimmingtonMines_Miner_Text_1
+	msgbox BATTLE_RimmingtonMines_Miner_Text_2
+	hidenamebox
+	release
+	end
+
+
+BATTLE_RimmingtonMines_Ironman::
+	trainerbattle_single TRAINER_RimmingtonMines_Ironman, BATTLE_RimmingtonMines_Ironman_Text_0, BATTLE_RimmingtonMines_Ironman_Text_1
+	msgbox BATTLE_RimmingtonMines_Ironman_Text_2
+	hidenamebox
+	release
+	end
+
+
+BATTLE_RimmingtonMines_Slayer::
+	trainerbattle_single TRAINER_RimmingtonMines_Slayer, BATTLE_RimmingtonMines_Slayer_Text_0, BATTLE_RimmingtonMines_Slayer_Text_1
+	msgbox BATTLE_RimmingtonMines_Slayer_Text_2
+	hidenamebox
+	release
+	end
+
+
+NPC_RimmingtonMines_WhiteKnight::
+	lock
+	faceplayer
+	namebox NPC_RimmingtonMines_WhiteKnight_Text_0
+	msgbox NPC_RimmingtonMines_WhiteKnight_Text_1
+	hidenamebox
+	release
+	end
+
+
 QBDLAIR_1_Text_0:
 	.string "You activate the pillar!$"
 
 QBDLAIR_1_Text_1:
 	.string "The pillar is already activated.$"
+
+BATTLE_RimmingtonMines_Miner_Text_0:
+	.string "Woah!\p"
+	.string "You startled me!$"
+
+BATTLE_RimmingtonMines_Miner_Text_1:
+	.string "I wasn't ready…$"
+
+BATTLE_RimmingtonMines_Miner_Text_2:
+	.string "Do you hear that faint singing in the\n"
+	.string "distance?\p"
+	.string "These caves creep me out.$"
+
+BATTLE_RimmingtonMines_Ironman_Text_0:
+	.string "I've come to do some extra training but\n"
+	.string "man these bugs are annoying!$"
+
+BATTLE_RimmingtonMines_Ironman_Text_1:
+	.string "At least I am not a Hardcore Ironman…$"
+
+BATTLE_RimmingtonMines_Ironman_Text_2:
+	.string "There a worms everywhere, yuck!\p"
+	.string "At least I can get some decent\n"
+	.string "experience from them.$"
+
+BATTLE_RimmingtonMines_Slayer_Text_0:
+	.string "Oooh, I just got assigned a new Slayer\n"
+	.string "task!\p"
+	.string "YOU.$"
+
+BATTLE_RimmingtonMines_Slayer_Text_1:
+	.string "Mercy!$"
+
+BATTLE_RimmingtonMines_Slayer_Text_2:
+	.string "Looks like my next task is to go to the\n"
+	.string "Bank…$"
+
+NPC_RimmingtonMines_WhiteKnight_Text_0:
+	.string "Sir Plyan$"
+
+NPC_RimmingtonMines_WhiteKnight_Text_1:
+	.string "Careful, it is dangerous deeper in.\p"
+	.string "Our party was attacked by these\n"
+	.string "massive Grotworm things.\p"
+	.string "I am on pack up duty, the rest of the\n"
+	.string "party has retreated outside.$"

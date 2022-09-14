@@ -204,3 +204,56 @@ script QBDLAIR_4 {
 //	special(DrawWholeMapView) 
 //	end
 //}
+
+
+
+
+
+
+
+
+
+
+
+//RIMMINGTON MINES
+
+script BATTLE_RimmingtonMines_Miner
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Woah!\pYou startled me!"),format("I wasn't ready…"))
+    //namebox ("")
+    msgbox(format("Do you hear that faint singing in the distance?\pThese caves creep me out."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_RimmingtonMines_Ironman
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Ironman, format("I've come to do some extra training but man these bugs are annoying!"),format("At least I am not a Hardcore Ironman…"))
+    //namebox ("")
+    msgbox(format("There a worms everywhere, yuck!\pAt least I can get some decent experience from them."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_RimmingtonMines_Slayer
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Slayer, format("Oooh, I just got assigned a new Slayer task!\pYOU."),format("Mercy!"))
+    //namebox ("")
+    msgbox(format("Looks like my next task is to go to the Bank…"))
+	hidenamebox
+    release
+	end
+}
+
+script NPC_RimmingtonMines_WhiteKnight
+{
+	lock
+    faceplayer
+    namebox("Sir Plyan")
+    msgbox(format("Careful, it is dangerous deeper in.\pOur party was attacked by these massive Grotworm things.\pI am on pack up duty, the rest of the party has retreated outside."))
+    hidenamebox
+    release
+    end
+}

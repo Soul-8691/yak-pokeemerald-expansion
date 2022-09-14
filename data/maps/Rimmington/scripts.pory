@@ -116,7 +116,7 @@ script ITEM_RIMMINGTON_5
 script NPC_RIMMINGTON_CustomsOfficer{
     lock
     faceplayer
-    namebox("OFFICER")
+    namebox("Officer")
     msgbox(format("Behave yourself otherwise I will take you to Rock Island Prison.\pYou don't want to go to Rock Island Prison."))
     hidenamebox
     release
@@ -126,7 +126,8 @@ script NPC_RIMMINGTON_CustomsOfficer{
 script NPC_RIMMINGTON_JagexMod{
     lock
     faceplayer
-    namebox("Mod ???")
+    random(31)
+    call(NPC_RIMMINGTON_JagexMod_NAMES)
     msgbox(format("I am a ninja!\pNow you see me."))
     hidenamebox
     closemessage
@@ -135,7 +136,7 @@ script NPC_RIMMINGTON_JagexMod{
     setflag(FLAG_TEMP_A)
     delay(8)
     fadescreen(FADE_FROM_BLACK)
-    namebox("Mod ???")
+    call(NPC_RIMMINGTON_JagexMod_NAMES)
     msgbox(format("Now you don't…"))
     hidenamebox
     closemessage
@@ -143,10 +144,87 @@ script NPC_RIMMINGTON_JagexMod{
     end
 }
 
+script NPC_RIMMINGTON_JagexMod_NAMES
+{
+    
+    switch (var(VAR_RESULT)) {
+        case 0: 
+            namebox("Mod Dorn")
+        case 1: 
+            namebox("Mod Abe")
+        case 2: 
+            namebox("Mod AoB")
+        case 3: 
+            namebox("Mod Breezy")
+        case 4: 
+            namebox("Mod Canine")
+        case 5: 
+            namebox("Mod Chaose")
+        case 6: 
+            namebox("Mod Chaplain")
+        case 7: 
+            namebox("Mod Doctor")
+        case 8: 
+            namebox("Mod Edge")
+        case 9: 
+            namebox("Mod Erator")
+        case 10: 
+            namebox("Mod Frosch")
+        case 11: 
+            namebox("Mod Halo")
+        case 12: 
+            namebox("Mod Harrison")
+        case 13: 
+            namebox("Mod Hing")
+        case 14: 
+            namebox("Mod Hunter")
+        case 15: 
+            namebox("Mod Iago")
+        case 16: 
+            namebox("Mod Kalaya")
+        case 17: 
+            namebox("Mod Kari")
+        case 18: 
+            namebox("Mod Kelpie")
+        case 19: 
+            namebox("Mod Kylar")
+        case 20: 
+            namebox("Mod Lab")
+        case 21: 
+            namebox("Mod Labcoat")
+        case 22: 
+            namebox("Mod Liam")
+        case 23: 
+            namebox("Mod Maylea")
+        case 24: 
+            namebox("Mod Pi")
+        case 25: 
+            namebox("Mod Ramen")
+        case 26: 
+            namebox("Mod Ryan")
+        case 27: 
+            namebox("Mod Shogun")
+        case 28: 
+            namebox("Mod Stu")
+        case 29: 
+            namebox("Mod Tomb")
+        case 30: 
+            namebox("Mod Veda")
+        
+        
+    }
+    return
+
+}
+
+
+
+
+
 script NPC_RIMMINGTON_PETER{
     lock
     faceplayer
-    namebox("PETER")
+    namebox("Peter")
     msgbox(format("There are a lot of slushing noises coming from the bottom of that well.\pSomeone should take a look."))
     hidenamebox
     release
@@ -159,22 +237,21 @@ script NPC_RIMMINGTON_PETER{
 script NPC_RIMMINGTON_GnomeBoiKevin {
     lock
     faceplayer
-    checkitem(ITEM_TERRORBIRD_POUCH, 1)
-        if (var(!VAR_RESULT)){
-            namebox("Kevin")
-            msgbox(format("Hiya!\pI am Little GnomeBoi Kevin!\pYou look exhausted, where did you come from?\p…{PAUSE 15}… LUMBRIDGE!?\pThis will not do!\pHere take this!"))
-            hidenamebox
-            giveitem (ITEM_TERRORBIRD_POUCH)
-            namebox("Kevin")
-            msgbox(format("You can use that pouch to summon a lightning blue fast Terrorbird!\p…{PAUSE 15}…{PAUSE 15} NO!\pDon't use it in battle.\nYou ride it!\pIt will help you travel the land of Gielinor.\pIt is my gift to you.\pAll I ask in return is for you to treat it well."))  
-        }
-        else {
-            namebox("Kevin")
-            msgbox(format("Terrorbirds are great to get around with!"))
-            closemessage
-            release
-            end
-        }
+    checkitem (ITEM_TERRORBIRD_POUCH, 1)
+	if (!var(VAR_RESULT))
+	{
+        namebox("Kevin")
+        msgbox(format("Hiya!\pI am Little GnomeBoi Kevin!\pYou look exhausted, where did you come from?\p…{PAUSE 15}… LUMBRIDGE!?\pThis will not do!\pHere take this!"))
+        hidenamebox
+        giveitem (ITEM_TERRORBIRD_POUCH)
+        namebox("Kevin")
+        msgbox(format("You can use that pouch to summon a lightning blue fast Terrorbird!\p…{PAUSE 15}…{PAUSE 15} NO!\pDon't use it in battle.\nYou ride it!\pIt will help you travel the land of Gielinor.\pIt is my gift to you.\pAll I ask in return is for you to treat it well."))  
+    }
+    else 
+    {
+        namebox("Kevin")
+        msgbox(format("Terrorbirds are great to get around with!"))
+    }
     hidenamebox
     closemessage
     release
@@ -214,7 +291,7 @@ script NPC_RIMMINGTON_NPC_8{
 script NPC_RIMMINGTON_NPC_9{
     lock
     faceplayer
-    namebox("CUPHOLDER")
+    //namebox("CUPHOLDER")
     msgbox(format("You can not always run from your problems.\pRunning near others will make them spot you easier.\pBe careful if you do not want a fight."))
     hidenamebox
     release
@@ -269,9 +346,10 @@ script NPC_RIMMINGTON_NPC_11{
 script NPC_RIMMINGTON_NPC_SKIPPY{
     lock
     faceplayer
-    namebox("SKIPPY")
+    namebox("Skippy")
     msgbox(format("The Mudskippers!"))
     hidenamebox
+    //Check player party for mudskippers
     release
     end
 }
@@ -279,7 +357,7 @@ script NPC_RIMMINGTON_NPC_SKIPPY{
 script NPC_RIMMINGTON_NPC_16{
     lock
     faceplayer
-    namebox("HETTY")
+    namebox("Hetty")
     msgbox(format("Newts?\pNo I don't have any why do you ask?"))
     hidenamebox
     release
@@ -320,7 +398,7 @@ script NPC_RIMMINGTON_NPC_19{
 script NPC_RIMMINGTON_NPC_12{
     lock
     faceplayer
-    namebox("CUPHOLDER")
+    //namebox("CUPHOLDER")
     msgbox(format("If you ever need anything unnoted I am your guy!"))
     hidenamebox
     release
@@ -330,7 +408,7 @@ script NPC_RIMMINGTON_NPC_12{
 script NPC_RIMMINGTON_NPC_13{
     lock
     faceplayer
-    namebox("ASSISTANT")
+    namebox("Assistant")
     msgbox(format("Oh no!\pWe have almost run out of our supply of bread for this month!"))
     hidenamebox
     release
@@ -340,7 +418,7 @@ script NPC_RIMMINGTON_NPC_13{
 script Generalstore_RIMMINGTON_Clerk {
     lock
     faceplayer
-    namebox ("CLERK")
+    namebox ("Clerk")
     msgbox(format("Welcome to the Rimmington General Store.\pHow may I help you?"))
     waitmessage
     hidenamebox
@@ -959,7 +1037,7 @@ script NPC_POH_BUTLER{
 script NPC_POH_JMOD{
     lock
     faceplayer
-    namebox("MOD ???")
+    namebox("Mod Meadows")
     msgbox(format("I heard that there was something sketchy that might be going down soon, so I am on the look out."))
     hidenamebox
     release
@@ -994,13 +1072,13 @@ script NPC_POH_RAPTOR{
 
 script ITEM_RIMMINGTON_1
 {
-    finditem(ITEM_LAMP_SPATT)
+    finditem(ITEM_CAKE)
     end
 }
 
 script ITEM_RIMMINGTON_2
 {
-    finditem(ITEM_LAMP_SPATT)
+    finditem(ITEM_POTION_SPEED)
     end
 }
 

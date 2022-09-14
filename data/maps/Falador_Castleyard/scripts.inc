@@ -23,8 +23,8 @@ FALADORCASTLE_QUEST_STATE_2:
 	setobjectmovementtype 11, MOVEMENT_TYPE_LOOK_AROUND
 	setobjectxyperm 3, 10, 11
 	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_UP
-	setobjectxyperm 4, 11, 11
-	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_UP
+	setobjectxyperm 13, 11, 11
+	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_UP
 	return
 
 FALADORCASTLE_QUEST_STATE_3:
@@ -282,8 +282,8 @@ NPC_FALADORCASTLE_GYM_SIRTHEO::
 NPC_FALADORCASTLE_GYM_SIRTHEO_2:
 	lock
 	faceplayer
-	namebox NPC_FALADORCASTLE_GYM_SIRTHEO_Text_2
-	msgbox NPC_FALADORCASTLE_GYM_SIRTHEO_Text_3
+	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_6
+	msgbox NPC_FALADORCASTLE_GYM_SIRTHEO_Text_2
 	hidenamebox
 	release
 	end
@@ -291,8 +291,8 @@ NPC_FALADORCASTLE_GYM_SIRTHEO_2:
 NPC_FALADORCASTLE_GYM_SIRTHEO_3:
 	lock
 	faceplayer
-	namebox NPC_FALADORCASTLE_GYM_SIRTHEO_Text_2
-	msgbox NPC_FALADORCASTLE_GYM_SIRTHEO_Text_4
+	namebox NPC_FALADORCASTLE_QUEST_PART_4_Text_6
+	msgbox NPC_FALADORCASTLE_GYM_SIRTHEO_Text_3
 	hidenamebox
 	release
 	end
@@ -309,7 +309,7 @@ NPC_FALADORCASTLE_GYM_TRAINER_2_2:
 	lock
 	faceplayer
 	namebox NPC_FALADORCASTLE_GYM_TRAINER_2_Text_2
-	msgbox NPC_FALADORCASTLE_GYM_TRAINER_2_Text_1
+	msgbox NPC_FALADORCASTLE_GYM_TRAINER_2_Text_3
 	hidenamebox
 	closemessage
 	release
@@ -319,7 +319,7 @@ NPC_FALADORCASTLE_GYM_TRAINER_2_3:
 	lock
 	faceplayer
 	namebox NPC_FALADORCASTLE_GYM_TRAINER_2_Text_2
-	msgbox NPC_FALADORCASTLE_GYM_TRAINER_2_Text_1
+	msgbox NPC_FALADORCASTLE_GYM_TRAINER_2_Text_4
 	hidenamebox
 	closemessage
 	end
@@ -447,6 +447,123 @@ NPC_FALADORCASTLE_GYM_Ambassador_Spanfipple::
 	end
 
 
+NPC_FALADORCASTLE_GYM_HAM::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_GYM_HAM_Text_0
+	msgbox NPC_FALADORCASTLE_GYM_HAM_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_GYM_BLACKKNIGHT::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_GYM_BLACKKNIGHT_Text_0
+	msgbox NPC_FALADORCASTLE_GYM_BLACKKNIGHT_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_WHITEKNIGHT_1::
+	switch VAR_POKESCAPE_FALADOR_STATE
+	case 4, NPC_FALADORCASTLE_WHITEKNIGHT_1_2
+	case 5, NPC_FALADORCASTLE_WHITEKNIGHT_1_3
+	return
+
+NPC_FALADORCASTLE_WHITEKNIGHT_1_2:
+	lock
+	faceplayer
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_1_Text_0
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_FALADORCASTLE_WHITEKNIGHT_1_3:
+	lock
+	faceplayer
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_1_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+NPC_FALADORCASTLE_WHITEKNIGHT_2::
+	switch VAR_POKESCAPE_FALADOR_STATE
+	case 4, NPC_FALADORCASTLE_WHITEKNIGHT_2_2
+	case 5, NPC_FALADORCASTLE_WHITEKNIGHT_2_3
+	return
+
+NPC_FALADORCASTLE_WHITEKNIGHT_2_2:
+	lock
+	faceplayer
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_2_Text_0
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_FALADORCASTLE_WHITEKNIGHT_2_3:
+	lock
+	faceplayer
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_2_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+NPC_FALADORCASTLE_WHITEKNIGHT_3::
+	switch VAR_POKESCAPE_FALADOR_STATE
+	case 4, NPC_FALADORCASTLE_WHITEKNIGHT_3_2
+	case 5, NPC_FALADORCASTLE_WHITEKNIGHT_3_3
+	return
+
+NPC_FALADORCASTLE_WHITEKNIGHT_3_2:
+	lock
+	faceplayer
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_0
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_FALADORCASTLE_WHITEKNIGHT_3_3:
+	lock
+	faceplayer
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+NPC_FALADORCASTLE_WHITEKNIGHT_4::
+	lock
+	faceplayer
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_4_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_WHITEKNIGHT_5::
+	lock
+	faceplayer
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_5_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 NPC_ROUTE23_DWARF_ROCKS::
 	lock
 	faceplayer
@@ -559,24 +676,32 @@ NPC_FALADORCASTLE_GYM_SIRTHEO_Text_1:
 	.string "As expected.$"
 
 NPC_FALADORCASTLE_GYM_SIRTHEO_Text_2:
-	.string "Sir Theo$"
-
-NPC_FALADORCASTLE_GYM_SIRTHEO_Text_3:
 	.string "Good luck navigating the castle.$"
 
-NPC_FALADORCASTLE_GYM_SIRTHEO_Text_4:
+NPC_FALADORCASTLE_GYM_SIRTHEO_Text_3:
 	.string "Look at you!\p"
-	.string "Have you considered becoming a white\n"
-	.string "knight like myself?$"
+	.string "Have you considered becoming a White\n"
+	.string "Knight like myself?$"
 
 NPC_FALADORCASTLE_GYM_TRAINER_2_Text_0:
-	.string "Quack!$"
+	.string "Stop right there!\p"
+	.string "Behold my ducks!$"
 
 NPC_FALADORCASTLE_GYM_TRAINER_2_Text_1:
 	.string "My dream is to one day be a duck.$"
 
 NPC_FALADORCASTLE_GYM_TRAINER_2_Text_2:
 	.string "Sir Emony$"
+
+NPC_FALADORCASTLE_GYM_TRAINER_2_Text_3:
+	.string "Sir Amik is just down this hallway.\p"
+	.string "But why go battle him when you can\n"
+	.string "battle me and my ducks again?$"
+
+NPC_FALADORCASTLE_GYM_TRAINER_2_Text_4:
+	.string "The other White Knights make fun of me\n"
+	.string "for having a full team of Ducks but you\l"
+	.string "have to admit they are pretty strong.$"
 
 NPC_FALADORCASTLE_GYM_TRAINER_3_Text_0:
 	.string "Careful where you are going there.\p"
@@ -596,7 +721,7 @@ NPC_FALADORCASTLE_GYM_TRAINER_3_Text_3:
 	.string "hangovers.$"
 
 NPC_FALADORCASTLE_GYM_TRAINER_4_Text_0:
-	.string "To get to Sir amik you will have to get\n"
+	.string "To get to Sir Amik you will have to get\n"
 	.string "through me!$"
 
 NPC_FALADORCASTLE_GYM_TRAINER_4_Text_1:
@@ -664,6 +789,56 @@ NPC_FALADORCASTLE_GYM_Ambassador_Spanfipple_Text_1:
 	.string "outfits looked fabulous!\p"
 	.string "Much better than all this boring white\n"
 	.string "around here.$"
+
+NPC_FALADORCASTLE_GYM_HAM_Text_0:
+	.string "H.A.M Member$"
+
+NPC_FALADORCASTLE_GYM_HAM_Text_1:
+	.string "We will not tell you anything!$"
+
+NPC_FALADORCASTLE_GYM_BLACKKNIGHT_Text_0:
+	.string "Black Knight$"
+
+NPC_FALADORCASTLE_GYM_BLACKKNIGHT_Text_1:
+	.string "Buzz off, you and those White Knights\n"
+	.string "make my blood boil.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_1_Text_0:
+	.string "If you are looking for Amik then you\n"
+	.string "should probably head back inside.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_1_Text_1:
+	.string "Those Black Knights really grind my\n"
+	.string "gears, one of these days we will rid\l"
+	.string "them.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_2_Text_0:
+	.string "Turn around, no Sir Amik this way.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_2_Text_1:
+	.string "We are the order for order.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_0:
+	.string "Hello my name is Sir Amik Varze.\p"
+	.string "Just kidding!\p"
+	.string "He is inside just down the corridor next\n"
+	.string "door to our torture chamber.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_3_Text_1:
+	.string "Our enemy are the Black Knights.\p"
+	.string "They call themselves Kinshra though.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_4_Text_0:
+	.string "There used to be a chicken on the\n"
+	.string "courtyard but some adventurer caught\l"
+	.string "it.\p"
+	.string "I kinda miss her.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_5_Text_0:
+	.string "Many of my fellow Knights somehow have\n"
+	.string "puns for their names.\p"
+	.string "However they are completely oblivious\n"
+	.string "to this.$"
 
 NPC_ROUTE23_DWARF_ROCKS_Text_0:
 	.string "DWARF$"

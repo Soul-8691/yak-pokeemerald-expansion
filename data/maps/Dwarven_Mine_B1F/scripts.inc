@@ -555,7 +555,7 @@ NPC_FALADORCASTLE_QUEST_PART_3_Text_20:
 	.string "goods by now.$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_21:
-	.string "I will still be bringing you three in for\n"
+	.string "I will still be bringing you four in for\n"
 	.string "questioning.$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_22:

@@ -241,7 +241,7 @@ script NPC_FALADORCASTLE_QUEST_PART_3
     closemessage
     hidenamebox
     namebox ("Sir Owen")
-	msgbox(format("I will still be bringing you three in for questioning."))
+	msgbox(format("I will still be bringing you four in for questioning."))
     applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_2)
     waitmovement(0)
     msgbox(format("Thank you for your assistance challenger.\pI will be seeing you at the castle."))

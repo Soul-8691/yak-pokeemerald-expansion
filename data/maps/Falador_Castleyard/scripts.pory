@@ -2,7 +2,7 @@ const OBJ_EVENT_ID_QUEST_AMIK = 11
 const OBJ_EVENT_ID_QUEST_KNIGHT = 1
 const OBJ_EVENT_ID_QUEST_OWEN = 12
 const OBJ_EVENT_ID_QUEST_KNIGHT_GUARD_1 = 3
-const OBJ_EVENT_ID_QUEST_KNIGHT_GUARD_2 = 4
+const OBJ_EVENT_ID_QUEST_KNIGHT_GUARD_2 = 13
 
 
 mapscripts Falador_Castleyard_MapScripts {
@@ -276,7 +276,7 @@ script NPC_FALADORCASTLE_GYM_SIRTHEO {
 		case 4: 
 			lock
 			faceplayer
-            namebox("Sir Theo")
+            namebox("Sir Theodore")
 			msgbox(format("Good luck navigating the castle."))
             hidenamebox
 			release
@@ -284,8 +284,8 @@ script NPC_FALADORCASTLE_GYM_SIRTHEO {
         case 5:
 			lock
 			faceplayer
-            namebox("Sir Theo")
-            msgbox(format("Look at you!\pHave you considered becoming a white knight like myself?"))
+            namebox("Sir Theodore")
+            msgbox(format("Look at you!\pHave you considered becoming a White Knight like myself?"))
             hidenamebox
             release
 			end
@@ -294,13 +294,13 @@ script NPC_FALADORCASTLE_GYM_SIRTHEO {
 
 //Sir Emony
 script NPC_FALADORCASTLE_GYM_TRAINER_2 {
-	trainerbattle_single(TRAINER_FALADOR_GYM_2, format("Quack!"),format("My dream is to one day be a duck.") )
+	trainerbattle_single(TRAINER_FALADOR_GYM_2, format("Stop right there!\pBehold my ducks!"),format("My dream is to one day be a duck.") )
     switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
 		case 4: 
 			lock
 			faceplayer
             namebox("Sir Emony")
-			msgbox(format("My dream is to one day be a duck."))
+			msgbox(format("Sir Amik is just down this hallway.\pBut why go battle him when you can battle me and my ducks again?"))
             hidenamebox
             closemessage
 			release
@@ -309,7 +309,7 @@ script NPC_FALADORCASTLE_GYM_TRAINER_2 {
 			lock
 			faceplayer
             namebox("Sir Emony")
-			msgbox(format("My dream is to one day be a duck."))
+			msgbox(format("The other White Knights make fun of me for having a full team of Ducks but you have to admit they are pretty strong."))
             hidenamebox
             closemessage
 			end
@@ -341,7 +341,7 @@ script NPC_FALADORCASTLE_GYM_TRAINER_3 {
 }
 //Sir Loin
 script NPC_FALADORCASTLE_GYM_TRAINER_4 {
-	trainerbattle_single(TRAINER_FALADOR_GYM_4, format("To get to Sir amik you will have to get through me!"),format("Guess I wasn't that hard to get past.") )
+	trainerbattle_single(TRAINER_FALADOR_GYM_4, format("To get to Sir Amik you will have to get through me!"),format("Guess I wasn't that hard to get past.") )
     switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
 		case 4: 
 			lock
@@ -432,6 +432,174 @@ script NPC_FALADORCASTLE_GYM_Ambassador_Spanfipple
 	release
 	end
 }
+
+script NPC_FALADORCASTLE_GYM_HAM
+{
+	lock
+	faceplayer
+    namebox ("H.A.M Member")
+	msgbox(format("We will not tell you anything!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADORCASTLE_GYM_BLACKKNIGHT
+{
+	lock
+	faceplayer
+    namebox ("Black Knight")
+	msgbox(format("Buzz off, you and those White Knights make my blood boil."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+
+
+script NPC_FALADORCASTLE_WHITEKNIGHT_1
+{
+	switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
+		case 4: 
+			lock
+			faceplayer
+			//namebox("Sir Loin")
+			msgbox(format("If you are looking for Amik then you should probably head back inside."))
+            hidenamebox
+            closemessage
+			release
+			end
+        case 5:
+			lock
+			faceplayer
+            //namebox("Sir Loin")
+			msgbox(format("Those Black Knights really grind my gears, one of these days we will rid them."))
+            hidenamebox
+            closemessage
+            release
+			end
+	}
+}
+
+script NPC_FALADORCASTLE_WHITEKNIGHT_2
+{
+	switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
+		case 4: 
+			lock
+			faceplayer
+			//namebox("Sir Loin")
+			msgbox(format("Turn around, no Sir Amik this way."))
+            hidenamebox
+            closemessage
+			release
+			end
+        case 5:
+			lock
+			faceplayer
+            //namebox("Sir Loin")
+			msgbox(format("We are the order for order."))
+            hidenamebox
+            closemessage
+            release
+			end
+	}
+}
+
+script NPC_FALADORCASTLE_WHITEKNIGHT_3
+{
+	switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
+		case 4: 
+			lock
+			faceplayer
+			//namebox("Sir Loin")
+			msgbox(format("Hello my name is Sir Amik Varze.\pJust kidding!\pHe is inside just down the corridor next door to our torture chamber."))
+            hidenamebox
+            closemessage
+			release
+			end
+        case 5:
+			lock
+			faceplayer
+            //namebox("Sir Loin")
+			msgbox(format("Our enemy are the Black Knights.\pThey call themselves Kinshra though."))
+            hidenamebox
+            closemessage
+            release
+			end
+	}
+}
+
+script NPC_FALADORCASTLE_WHITEKNIGHT_4
+{
+	lock
+	faceplayer
+	msgbox(format("There used to be a chicken on the courtyard but some adventurer caught it.\pI kinda miss her."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADORCASTLE_WHITEKNIGHT_5
+{
+	lock
+	faceplayer
+	msgbox(format("Many of my fellow Knights somehow have puns for their names.\pHowever they are completely oblivious to this."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADORCASTLE_WHITEKNIGHT_6
+{
+	lock
+	faceplayer
+	msgbox(format("Keeping this Castle clean is a lot of work…\pBut it is even harder navigating it."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

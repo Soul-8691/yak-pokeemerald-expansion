@@ -850,7 +850,7 @@ static const struct MenuAction MultichoiceList_COLOUR_PICKAXE[] =
     {gText_POH_BLUE},
     {gText_POH_CYAN},
     {gText_POH_BLACK},
-    {gText_Exit},
+    //{gText_Exit},
     
 };
 

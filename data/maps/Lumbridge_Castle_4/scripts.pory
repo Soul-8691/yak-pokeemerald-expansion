@@ -65,3 +65,4 @@ script SetGymTrainers_LUMBRIDGE {
     settrainerflag(TRAINER_LUMBRIDGE_GYM4)
     return
 }
+

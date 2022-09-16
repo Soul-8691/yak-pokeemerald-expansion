@@ -369,11 +369,11 @@ script NPC_FALADORCASTLE_GYM_SIRAMIKVARZE {
     faceplayer
     namebox("Sir Amik Varze")
     if (!flag(FLAG_BADGE02_GET)){
-        msgbox(format("Well done getting here, as promised here is your battle."))
+        msgbox(format("Well done getting here and once again, thank you for earlier within the mines.\pAnyway enough chatting as promised here is your battle."))
         hidenamebox
-        trainerbattle_no_intro(TRAINER_FALADOR_GYM_AMIKVARZE, msgbox(format("You beat me.. Congratulations!")))
-        msgbox(format("I am impressed!\pHave this badge."))
-        playfanfare(MUS_OBTAIN_BADGE)
+        trainerbattle_no_intro(TRAINER_FALADOR_GYM_AMIKVARZE, msgbox(format("Count me impressed, have you considered joining the White Knights?")))
+        msgbox(format("I am impressed!\pYou have shown me so much potential I must give you this badge."))
+        playfanfare(MUS_PS_QUEST_COMPLETE)
         msgbox(format("{PLAYER} received the Falador BADGE from Sir Amik Varze."))
         waitfanfare
         waitmessage
@@ -386,6 +386,7 @@ script NPC_FALADORCASTLE_GYM_SIRAMIKVARZE {
         msgbox(format("That move is called Razor Shell, it is a very sharp move.\pHopefully it will help you on your journey."))
         setvar(VAR_POKESCAPE_FALADOR_STATE, 5)
         setflag(FLAG_BADGE02_GET)
+        call(SetGymTrainers_FALADOR)
         hidenamebox
         release
         end
@@ -394,6 +395,16 @@ script NPC_FALADORCASTLE_GYM_SIRAMIKVARZE {
     hidenamebox
     release
     end
+}
+
+
+
+script SetGymTrainers_FALADOR {   
+    settrainerflag(TRAINER_FALADOR_GYM_1)
+    settrainerflag(TRAINER_FALADOR_GYM_2)
+    settrainerflag(TRAINER_FALADOR_GYM_3)
+    settrainerflag(TRAINER_FALADOR_GYM_4)
+    return
 }
 
 
@@ -566,6 +577,40 @@ script NPC_FALADORCASTLE_WHITEKNIGHT_6
 	end
 }
 
+script NPC_FALADORCASTLE_GUARD_1
+{
+	lock
+	faceplayer
+    namebox("Guard")
+	msgbox(format("Its a steep learning curve, but one day I will become a White Knight."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADORCASTLE_WHITEKNIGHT_7
+{
+	lock
+	faceplayer
+    namebox("White Knight")
+	msgbox(format("We trained this guard to be a White Knight wrong on purpose, as a joke."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_FALADORCASTLE_WHITEKNIGHT_8
+{
+	lock
+    namebox("White Knight")
+	msgbox(format("Want to come with me to the Rising Sun Inn after work?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
 
 
 

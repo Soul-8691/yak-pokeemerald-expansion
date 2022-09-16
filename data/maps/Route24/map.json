@@ -277,7 +277,7 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DEMONHEADGE",
+      "graphics_id": "OBJ_EVENT_GFX_KNIGHT_WHITE_F",
       "x": 2,
       "y": 49,
       "elevation": 3,
@@ -307,7 +307,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "BLOCK_ROUTE24_BLOCKADE_WHITEKNIGHT"
     },
     {
       "type": "trigger",
@@ -316,7 +316,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "BLOCK_ROUTE24_BLOCKADE_WHITEKNIGHT"
     },
     {
       "type": "trigger",
@@ -325,7 +325,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "BLOCK_ROUTE24_BLOCKADE_WHITEKNIGHT"
     },
     {
       "type": "trigger",
@@ -334,7 +334,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "BLOCK_ROUTE24_BLOCKADE_WHITEKNIGHT"
     },
     {
       "type": "trigger",
@@ -343,7 +343,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "BLOCK_ROUTE24_BLOCKADE_WHITEKNIGHT"
     },
     {
       "type": "trigger",
@@ -352,7 +352,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_0",
       "var_value": "0",
-      "script": "NULL"
+      "script": "BLOCK_ROUTE24_BLOCKADE_WHITEKNIGHT"
     }
   ],
   "bg_events": [

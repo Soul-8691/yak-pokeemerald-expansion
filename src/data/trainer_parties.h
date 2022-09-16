@@ -2069,6 +2069,20 @@ static const struct TrainerMonItemDefaultMoves sParty_DWARVENMINES_BLACKKNIGHT[]
     .heldItem = ITEM_NONE
     },
 };
+static const struct TrainerMonItemDefaultMoves sParty_DWARVENMINES_HAM[] = {
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_PIG,
+    .heldItem = ITEM_NONE
+    },
+    {
+    .iv = 0,
+    .lvl = 22,
+    .species = SPECIES_GIANT_BAT,
+    .heldItem = ITEM_NONE
+    },
+};
 
 static const struct TrainerMonItemDefaultMoves sParty_DWARVENMINES_SKILLER[] = {
     {
@@ -2312,12 +2326,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_WOODCUTTER_1[] =
     },
     {
     .iv = 0,
-    .lvl = 25,
+    .lvl = 26,
     .species = SPECIES_BEAVER,
     },
     {
     .iv = 0,
-    .lvl = 25,
+    .lvl = 24,
     .species = SPECIES_DEAD_TREE,
     }
 };
@@ -2333,8 +2347,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_WOODCUTTER_2[] =
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_GOBLIN_1[] = {
     {
     .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_SCORPION_GRAVE_FORM,
+    .lvl = 28,
+    .species = SPECIES_RAT_KING_FORM,
     }
 };
 

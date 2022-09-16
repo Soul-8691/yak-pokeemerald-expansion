@@ -200,34 +200,34 @@ NPC_FALADORCASTLE_QUEST_PART_3::
 	applymovement OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_7
 	applymovement 32, DWARVENMINES_MOVEMENT_9
 	waitmovement 0
-	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_12
-	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_15
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_15
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_16
 	closemessage
 	hidenamebox
-	trainerbattle_no_intro TRAINER_DWARVENMINES_BLACKKNIGHT, NPC_FALADORCASTLE_QUEST_PART_3_Text_16
-	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_9
-	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_17
-	closemessage
-	hidenamebox
-	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_12
+	trainerbattle_no_intro TRAINER_DWARVENMINES_HAM, NPC_FALADORCASTLE_QUEST_PART_3_Text_17
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_15
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_18
+	closemessage
+	hidenamebox
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_12
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_19
 	closemessage
 	hidenamebox
 	applymovement 32, DWARVENMINES_MOVEMENT_7
 	waitmovement 0
 	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
-	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_19
-	closemessage
-	hidenamebox
-	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_12
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_20
 	closemessage
 	hidenamebox
-	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_12
 	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_21
+	closemessage
+	hidenamebox
+	namebox NPC_FALADORCASTLE_QUEST_PART_3_Text_2
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_22
 	applymovement 32, DWARVENMINES_MOVEMENT_2
 	waitmovement 0
-	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_22
+	msgbox NPC_FALADORCASTLE_QUEST_PART_3_Text_23
 	closemessage
 	hidenamebox
 	savebgm MUS_DUMMY
@@ -534,31 +534,34 @@ NPC_FALADORCASTLE_QUEST_PART_3_Text_14:
 	.string "what to do.$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_15:
-	.string "For the Kinshra!$"
+	.string "H.A.M Grunt$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_16:
-	.string "Blasted White Knights!$"
+	.string "You stand no chance!$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_17:
-	.string "So strong…$"
+	.string "Blasted White Knights!$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_18:
-	.string "No matter grunts, we have already won.$"
+	.string "So strong…$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_19:
-	.string "What do you mean you have already won?$"
+	.string "No matter grunts, we have already won.$"
 
 NPC_FALADORCASTLE_QUEST_PART_3_Text_20:
+	.string "What do you mean you have already won?$"
+
+NPC_FALADORCASTLE_QUEST_PART_3_Text_21:
 	.string "Kahaha!\l"
 	.string "This was but a mere distraction!\p"
 	.string "Our agent would have escaped with the\n"
 	.string "goods by now.$"
 
-NPC_FALADORCASTLE_QUEST_PART_3_Text_21:
+NPC_FALADORCASTLE_QUEST_PART_3_Text_22:
 	.string "I will still be bringing you four in for\n"
 	.string "questioning.$"
 
-NPC_FALADORCASTLE_QUEST_PART_3_Text_22:
+NPC_FALADORCASTLE_QUEST_PART_3_Text_23:
 	.string "Thank you for your assistance\n"
 	.string "challenger.\p"
 	.string "I will be seeing you at the castle.$"

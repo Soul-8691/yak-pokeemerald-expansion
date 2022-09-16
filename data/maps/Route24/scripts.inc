@@ -28,6 +28,22 @@ NPC_ROUTE24_BLOCKADE_1::
 	end
 
 
+BLOCK_ROUTE24_BLOCKADE_WHITEKNIGHT::
+	lock
+	namebox NPC_ROUTE24_BLOCKADE_1_Text_0
+	msgbox NPC_ROUTE24_BLOCKADE_1_Text_1
+	closemessage
+	hidenamebox
+	applymovement OBJ_EVENT_ID_PLAYER, Blockmovement_WhiteKnight
+	waitmovement 0
+	release
+	end
+
+
+Blockmovement_WhiteKnight:
+	slide_right
+	step_end
+
 BATTLE_ROUTE24_MUGGER::
 	trainerbattle_single TRAINER_ROUTE24_MUGGER, BATTLE_ROUTE24_MUGGER_Text_0, BATTLE_ROUTE24_MUGGER_Text_1
 	namebox BATTLE_ROUTE24_MUGGER_Text_2
@@ -57,7 +73,6 @@ BATTLE_ROUTE24_WOODCUTTER_2::
 
 BATTLE_ROUTE24_GOBLIN_1::
 	trainerbattle_single TRAINER_ROUTE24_GOBLIN_1, BATTLE_ROUTE24_GOBLIN_1_Text_0, BATTLE_ROUTE24_GOBLIN_1_Text_1
-	namebox BATTLE_ROUTE24_MUGGER_Text_2
 	msgbox BATTLE_ROUTE24_GOBLIN_1_Text_1
 	hidenamebox
 	release

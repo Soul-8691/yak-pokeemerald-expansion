@@ -396,7 +396,7 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_2:
 	hidenamebox
 	trainerbattle_no_intro TRAINER_FALADOR_GYM_AMIKVARZE, NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_1
 	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_2
-	playfanfare MUS_OBTAIN_BADGE
+	playfanfare MUS_PS_QUEST_COMPLETE
 	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_3
 	waitfanfare
 	waitmessage
@@ -409,9 +409,18 @@ NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_2:
 	msgbox NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_5
 	setvar VAR_POKESCAPE_FALADOR_STATE, 5
 	setflag FLAG_BADGE02_GET
+	call SetGymTrainers_FALADOR
 	hidenamebox
 	release
 	end
+
+
+SetGymTrainers_FALADOR::
+	settrainerflag TRAINER_FALADOR_GYM_1
+	settrainerflag TRAINER_FALADOR_GYM_2
+	settrainerflag TRAINER_FALADOR_GYM_3
+	settrainerflag TRAINER_FALADOR_GYM_4
+	return
 
 
 NPC_FALADORCASTLE_GYM_SIROWEN::
@@ -558,6 +567,48 @@ NPC_FALADORCASTLE_WHITEKNIGHT_5::
 	lock
 	faceplayer
 	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_5_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_WHITEKNIGHT_6::
+	lock
+	faceplayer
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_6_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_GUARD_1::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_GUARD_1_Text_0
+	msgbox NPC_FALADORCASTLE_GUARD_1_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_WHITEKNIGHT_7::
+	lock
+	faceplayer
+	namebox NPC_FALADORCASTLE_WHITEKNIGHT_7_Text_0
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_7_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_FALADORCASTLE_WHITEKNIGHT_8::
+	lock
+	namebox NPC_FALADORCASTLE_WHITEKNIGHT_7_Text_0
+	msgbox NPC_FALADORCASTLE_WHITEKNIGHT_8_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -731,15 +782,19 @@ NPC_FALADORCASTLE_GYM_TRAINER_4_Text_2:
 	.string "Sir Loin$"
 
 NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_0:
-	.string "Well done getting here, as promised here\n"
-	.string "is your battle.$"
+	.string "Well done getting here and once again,\n"
+	.string "thank you for earlier within the mines.\p"
+	.string "Anyway enough chatting as promised\n"
+	.string "here is your battle.$"
 
 NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_1:
-	.string "You beat me.. Congratulations!$"
+	.string "Count me impressed, have you\n"
+	.string "considered joining the White Knights?$"
 
 NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_2:
 	.string "I am impressed!\p"
-	.string "Have this badge.$"
+	.string "You have shown me so much potential I\n"
+	.string "must give you this badge.$"
 
 NPC_FALADORCASTLE_GYM_SIRAMIKVARZE_Text_3:
 	.string "{PLAYER} received the Falador BADGE\n"
@@ -839,6 +894,29 @@ NPC_FALADORCASTLE_WHITEKNIGHT_5_Text_0:
 	.string "puns for their names.\p"
 	.string "However they are completely oblivious\n"
 	.string "to this.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_6_Text_0:
+	.string "Keeping this Castle clean is a lot of\n"
+	.string "work…\p"
+	.string "But it is even harder navigating it.$"
+
+NPC_FALADORCASTLE_GUARD_1_Text_0:
+	.string "Guard$"
+
+NPC_FALADORCASTLE_GUARD_1_Text_1:
+	.string "Its a steep learning curve, but one day\n"
+	.string "I will become a White Knight.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_7_Text_0:
+	.string "White Knight$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_7_Text_1:
+	.string "We trained this guard to be a White\n"
+	.string "Knight wrong on purpose, as a joke.$"
+
+NPC_FALADORCASTLE_WHITEKNIGHT_8_Text_0:
+	.string "Want to come with me to the Rising Sun\n"
+	.string "Inn after work?$"
 
 NPC_ROUTE23_DWARF_ROCKS_Text_0:
 	.string "DWARF$"

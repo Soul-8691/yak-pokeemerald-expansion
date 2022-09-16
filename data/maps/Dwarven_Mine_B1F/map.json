@@ -665,7 +665,7 @@
       "flag": "FLAG_TEMP_10"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_KNIGHT_BLACK_M",
+      "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_M",
       "x": 52,
       "y": 18,
       "elevation": 3,
@@ -678,7 +678,7 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_KNIGHT_BLACK_F",
+      "graphics_id": "OBJ_EVENT_GFX_KNIGHT_BLACK_M",
       "x": 52,
       "y": 16,
       "elevation": 3,
@@ -774,7 +774,7 @@
       "elevation": 0,
       "var": "VAR_POKESCAPE_FALADOR_STATE",
       "var_value": "1",
-      "script": ""
+      "script": "NPC_FALADORCASTLE_QUEST_PART_3_1"
     },
     {
       "type": "trigger",

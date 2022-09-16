@@ -30,6 +30,21 @@ script NPC_ROUTE24_BLOCKADE_1
     end
 }
 
+script BLOCK_ROUTE24_BLOCKADE_WHITEKNIGHT
+{
+        lock
+        namebox("White Knight")
+        msgbox(format("Sorry you need to be a member to access past here.\pWhat is a member?\pA member is someone who has obtained all of the badges in F2P."))
+		closemessage
+        hidenamebox
+        applymovement(OBJ_EVENT_ID_PLAYER, Blockmovement_WhiteKnight)
+        waitmovement(0)
+        release
+        end
+}
+movement Blockmovement_WhiteKnight{
+    slide_right
+}
 
 
 
@@ -82,7 +97,7 @@ script BATTLE_ROUTE24_WOODCUTTER_2{
 
 script BATTLE_ROUTE24_GOBLIN_1{
     trainerbattle_single(TRAINER_ROUTE24_GOBLIN_1, format("Prepare for battle human!"),format("Human prepare well."))
-    namebox ("RSN")
+    //namebox ("")
     msgbox(format("Human prepare well."))
     hidenamebox
     release

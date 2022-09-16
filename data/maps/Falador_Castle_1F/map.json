@@ -102,11 +102,11 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_FALADORCASTLE_WHITEKNIGHT_8",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_KNIGHT_BLACK_F",
+      "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_M",
       "x": 17,
       "y": 4,
       "elevation": 3,
@@ -115,7 +115,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NPC_FALADORCASTLE_GYM_BLACKKNIGHT",
+      "script": "NPC_FALADORCASTLE_GYM_HAM",
       "flag": "0"
     }
   ],

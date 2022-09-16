@@ -176,6 +176,7 @@
 #define TRAINER_RimmingtonMines_Miner     148
 #define TRAINER_RimmingtonMines_Ironman     149
 #define TRAINER_RimmingtonMines_Slayer     150
+#define TRAINER_DWARVENMINES_HAM    151
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

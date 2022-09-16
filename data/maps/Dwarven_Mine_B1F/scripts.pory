@@ -217,12 +217,12 @@ script NPC_FALADORCASTLE_QUEST_PART_3
     applymovement(OBJ_EVENT_ID_PLAYER, DWARVENMINES_MOVEMENT_7)
     applymovement(OBJ_EVENT_ID_QUEST_OWEN, DWARVENMINES_MOVEMENT_9)
     waitmovement(0)
-    namebox ("Black Knight")
-	msgbox(format("For the Kinshra!"))
+    namebox ("H.A.M Grunt")
+	msgbox(format("You stand no chance!"))
     closemessage
     hidenamebox
-    trainerbattle_no_intro(TRAINER_DWARVENMINES_BLACKKNIGHT, msgbox(format("Blasted White Knights!")))
-    namebox ("H.A.M Member")
+    trainerbattle_no_intro(TRAINER_DWARVENMINES_HAM, msgbox(format("Blasted White Knights!")))
+    namebox ("H.A.M Grunt")
 	msgbox(format("So strong…"))
     closemessage
     hidenamebox

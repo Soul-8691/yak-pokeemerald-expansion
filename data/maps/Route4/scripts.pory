@@ -79,8 +79,8 @@ script ROUTE4_TRIGGER_DaycareWatcher_PART1
 script ROUTE4_TRIGGER_DaycareWatcher_PART2 
 {
     delay(8)
-    namebox ("Farmer")
-    msgbox(format("This place is called Potterington Farm!\pThey look after your Monsters and help them grow while you are away.\pI also heard that they have set up special breeding pens for certain monsters.\pYou should and inquire about it if it is something that intrests you!\pAnyway that is all I wanted to show you.\pBYYYYYYYYEEEE!"))
+    namebox ("Niece Pott.")
+    msgbox(format("This place is called Potterington Farm!\pWe look after your Monsters and help them grow while you are away.\pWe have also set up special breeding pens for certain monsters.\pYou should and inquire about it if it is something that intrests you!\pAnyway that is all I wanted to show you.\pTake care!"))
     closemessage
     hidenamebox
     applymovement(OBJ_EVENT_ID_DAYCAREWATCHER, MOVEMENT_ROUTE4_DaycareWatcher2)
@@ -132,8 +132,18 @@ movement MOVEMENT_ROUTE4_PLAYER3
 script ROUTE4_DaycareWatcher 
 {
     faceplayer
-    namebox ("Farmer")
-    msgbox(format("I really enjoy just sitting here and seeing what type of Monsters the next adventurer will bring."))
+    namebox ("Niece Pott.")
+    random(3)
+        switch (var(VAR_RESULT)) {
+            case 0:
+                msgbox(format("Some people have been reporting different coloured monsters hatching from their eggs which are different from the parents."))
+            case 1:
+                msgbox(format("There have been rumours that multiple monsters have been breeding together and creating hybrids.\pBut I've yet to see any of these so called hybrids."))
+            case 2:
+                msgbox(format("I really enjoy just sitting here and seeing what type of Monsters the next adventurer will bring."))
+            case 3:
+                msgbox(format("Over time high achieving adventurers visit our little farm and hand out gifts.\pI wonder what makes them decide to visit our little farm."))
+        }
     closemessage
     hidenamebox
     release

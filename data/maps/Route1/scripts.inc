@@ -97,6 +97,16 @@ NPC_CAT::
 	end
 
 
+NPC_ABYSSALDEMON::
+	lock
+	faceplayer
+	namebox NPC_ABYSSALDEMON_Text_0
+	msgbox NPC_ABYSSALDEMON_Text_1
+	hidenamebox
+	release
+	end
+
+
 SIGN_ROUTE1_1::
 	lock
 	msgbox SIGN_ROUTE1_1_Text_0
@@ -744,6 +754,12 @@ NPC_CAT_Text_0:
 
 NPC_CAT_Text_1:
 	.string "Meeeooww…$"
+
+NPC_ABYSSALDEMON_Text_0:
+	.string "ABYSSAL DEMON$"
+
+NPC_ABYSSALDEMON_Text_1:
+	.string "Schttle, skrtch!$"
 
 SIGN_ROUTE1_1_Text_0:
 	.string "Fred's Farm.$"

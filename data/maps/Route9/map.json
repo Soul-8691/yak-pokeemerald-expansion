@@ -149,8 +149,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RAPTOR",
-      "x": 59,
-      "y": 5,
+      "x": 63,
+      "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -209,7 +209,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -230,10 +230,10 @@
       "x": 53,
       "y": 8,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_BURIED",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "BATTLE_ROUTE9_GUTHIX_WIZARD",
       "flag": "0"
@@ -248,7 +248,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_3"
     },
     {
@@ -261,7 +261,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_4"
     },
     {
@@ -274,7 +274,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_5"
     },
     {
@@ -287,7 +287,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_2"
     },
     {
@@ -300,7 +300,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_6"
     },
     {
@@ -313,7 +313,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_9"
     },
     {
@@ -326,7 +326,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
+      "script": "EventScript_New_RockSmash",
       "flag": "FLAG_TEMP_A"
     },
     {
@@ -395,7 +395,7 @@
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "ROUTE9_SIGNPOST"
+      "script": ""
     },
     {
       "type": "hidden_item",
@@ -403,7 +403,7 @@
       "y": 7,
       "elevation": 3,
       "item": "ITEM_GRANITE_POUCH",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE8_3"
     },
     {
       "type": "hidden_item",
@@ -411,7 +411,7 @@
       "y": 13,
       "elevation": 3,
       "item": "ITEM_LAMP_DEF",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE8_2"
     },
     {
       "type": "hidden_item",
@@ -419,7 +419,7 @@
       "y": 6,
       "elevation": 3,
       "item": "ITEM_SPIRIT_SHARD",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE8_4"
     },
     {
       "type": "hidden_item",
@@ -427,7 +427,7 @@
       "y": 12,
       "elevation": 3,
       "item": "ITEM_POTION_DEF",
-      "flag": "FLAG_TEMP_1"
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE8_1"
     },
     {
       "type": "sign",

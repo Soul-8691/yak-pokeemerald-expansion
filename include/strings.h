@@ -3040,7 +3040,8 @@ extern const u8 gText_POH_BLUE[];
 extern const u8 gText_POH_CYAN[];
 extern const u8 gText_POH_BLACK[];
 
-
+extern const u8 gText_PhoenixEgg_Clap[];
+extern const u8 gText_PhoenixEgg_Kick[];
 
 
 //pokescape cheat menu

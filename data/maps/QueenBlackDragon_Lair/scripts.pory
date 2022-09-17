@@ -210,7 +210,27 @@ script QBDLAIR_4 {
 
 
 
+//ITEMS
+//HIDDEN ITEMS: SPIRITSHARD, ITEM_PINEAPPLE_PUNCH
+//
 
+script ITEM_RimmingtonMines_1
+{
+    finditem(ITEM_EARTH_RUNE)
+    end
+}
+
+script ITEM_RimmingtonMines_2
+{
+    finditem(ITEM_EARTH_RUNE)
+    end
+}
+
+script ITEM_RimmingtonMines_3
+{
+    finditem(ITEM_TM33_DRAGON_BREATH)
+    end
+}
 
 
 
@@ -256,4 +276,37 @@ script NPC_RimmingtonMines_WhiteKnight
     hidenamebox
     release
     end
+}
+
+
+//B2F
+
+script BATTLE_RimmingtonMines_DRAGONBOT_1
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_DRAGONBOT_1, format("TARGET ACQUIRED!"),format("ERROR DETECTED!"))
+    namebox ("Bot")
+    msgbox(format("ERROR DETECTED!"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_RimmingtonMines_DRAGONBOT_2
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_DRAGONBOT_2, format("LOCATION UNKNOWN.\nRANDOM SCRIPT ACTIVATE."),format("TELEPORT INITIATE…"))
+    namebox ("Bot")
+    msgbox(format("TELEPORTATION FAILED."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_RimmingtonMines_Slayer_1
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Slayer_1, format("Die Bot!"),format("I cannot believe I just lost to a bot…"))
+    //namebox ("")
+    msgbox(format("Oh you are not a bot?\pI've been trying to get rid of these bots for the past few days, looks like they might be broken now though."))
+	hidenamebox
+    release
+	end
 }

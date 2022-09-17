@@ -134,6 +134,21 @@ QBDLAIR_4::
 	end
 
 
+ITEM_RimmingtonMines_1::
+	finditem ITEM_EARTH_RUNE
+	end
+
+
+ITEM_RimmingtonMines_2::
+	finditem ITEM_EARTH_RUNE
+	end
+
+
+ITEM_RimmingtonMines_3::
+	finditem ITEM_TM33_DRAGON_BREATH
+	end
+
+
 BATTLE_RimmingtonMines_Miner::
 	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_RimmingtonMines_Miner_Text_0, BATTLE_RimmingtonMines_Miner_Text_1
 	msgbox BATTLE_RimmingtonMines_Miner_Text_2
@@ -163,6 +178,32 @@ NPC_RimmingtonMines_WhiteKnight::
 	faceplayer
 	namebox NPC_RimmingtonMines_WhiteKnight_Text_0
 	msgbox NPC_RimmingtonMines_WhiteKnight_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_RimmingtonMines_DRAGONBOT_1::
+	trainerbattle_single TRAINER_RimmingtonMines_DRAGONBOT_1, BATTLE_RimmingtonMines_DRAGONBOT_1_Text_0, BATTLE_RimmingtonMines_DRAGONBOT_1_Text_1
+	namebox BATTLE_RimmingtonMines_DRAGONBOT_1_Text_2
+	msgbox BATTLE_RimmingtonMines_DRAGONBOT_1_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_RimmingtonMines_DRAGONBOT_2::
+	trainerbattle_single TRAINER_RimmingtonMines_DRAGONBOT_2, BATTLE_RimmingtonMines_DRAGONBOT_2_Text_0, BATTLE_RimmingtonMines_DRAGONBOT_2_Text_1
+	namebox BATTLE_RimmingtonMines_DRAGONBOT_1_Text_2
+	msgbox BATTLE_RimmingtonMines_DRAGONBOT_2_Text_2
+	hidenamebox
+	release
+	end
+
+
+BATTLE_RimmingtonMines_Slayer_1::
+	trainerbattle_single TRAINER_RimmingtonMines_Slayer_1, BATTLE_RimmingtonMines_Slayer_1_Text_0, BATTLE_RimmingtonMines_Slayer_1_Text_1
+	msgbox BATTLE_RimmingtonMines_Slayer_1_Text_2
 	hidenamebox
 	release
 	end
@@ -219,3 +260,34 @@ NPC_RimmingtonMines_WhiteKnight_Text_1:
 	.string "massive Grotworm things.\p"
 	.string "I am on pack up duty, the rest of the\n"
 	.string "party has retreated outside.$"
+
+BATTLE_RimmingtonMines_DRAGONBOT_1_Text_0:
+	.string "TARGET ACQUIRED!$"
+
+BATTLE_RimmingtonMines_DRAGONBOT_1_Text_1:
+	.string "ERROR DETECTED!$"
+
+BATTLE_RimmingtonMines_DRAGONBOT_1_Text_2:
+	.string "Bot$"
+
+BATTLE_RimmingtonMines_DRAGONBOT_2_Text_0:
+	.string "LOCATION UNKNOWN.\n"
+	.string "RANDOM SCRIPT ACTIVATE.$"
+
+BATTLE_RimmingtonMines_DRAGONBOT_2_Text_1:
+	.string "TELEPORT INITIATE…$"
+
+BATTLE_RimmingtonMines_DRAGONBOT_2_Text_2:
+	.string "TELEPORTATION FAILED.$"
+
+BATTLE_RimmingtonMines_Slayer_1_Text_0:
+	.string "Die Bot!$"
+
+BATTLE_RimmingtonMines_Slayer_1_Text_1:
+	.string "I cannot believe I just lost to a bot…$"
+
+BATTLE_RimmingtonMines_Slayer_1_Text_2:
+	.string "Oh you are not a bot?\p"
+	.string "I've been trying to get rid of these\n"
+	.string "bots for the past few days, looks like\l"
+	.string "they might be broken now though.$"

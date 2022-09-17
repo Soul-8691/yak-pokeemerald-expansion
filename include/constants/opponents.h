@@ -177,6 +177,20 @@
 #define TRAINER_RimmingtonMines_Ironman     149
 #define TRAINER_RimmingtonMines_Slayer     150
 #define TRAINER_DWARVENMINES_HAM    151
+//ROUTE23
+#define TRAINER_ROUTE23_TRAINER_1    152
+#define TRAINER_ROUTE23_TRAINER_2    153
+#define TRAINER_ROUTE23_TRAINER_3    154
+#define TRAINER_ROUTE23_TRAINER_4    155
+#define TRAINER_ROUTE23_TRAINER_COUPLE    156
+
+#define TRAINER_RimmingtonMines_Slayer_1    157
+#define TRAINER_RimmingtonMines_DRAGONBOT_1    158
+#define TRAINER_RimmingtonMines_DRAGONBOT_2    159
+
+
+
+
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

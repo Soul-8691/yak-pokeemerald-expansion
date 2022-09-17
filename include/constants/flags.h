@@ -75,8 +75,8 @@
 #define FLAG_LUMBRIDGE_TRADE_1    0x30 // Unused Flag
 #define FLAG_RECEIVED_PULSECORE   0x31 // Unused Flag
 #define FLAG_ELVARG          0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
+#define FLAG_RECEIVED_PHOENIX_EGG    0x33 // Unused Flag
+#define FLAG_RECEIVED_GUTHIX_EGG    0x34 // Unused Flag
 #define FLAG_UNUSED_0x035    0x35 // Unused Flag
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag
 #define FLAG_UNUSED_0x037    0x37 // Unused Flag
@@ -581,15 +581,16 @@
 #define FLAG_HIDDEN_ITEM_AsgarnianDungeon_1                  (FLAG_HIDDEN_ITEMS_START + 0x11)
 #define FLAG_HIDDEN_ITEM_AsgarnianDungeon_2                  (FLAG_HIDDEN_ITEMS_START + 0x13)
 #define FLAG_HIDDEN_ITEM_AsgarnianDungeon_3                  (FLAG_HIDDEN_ITEMS_START + 0x12)
+#define FLAG_HIDDEN_ITEM_GoblinVillage_1            (FLAG_HIDDEN_ITEMS_START + 0x14)
+#define FLAG_HIDDEN_ITEM_GoblinVillage_2           (FLAG_HIDDEN_ITEMS_START + 0x0C)
 
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_BIG_PEARL            (FLAG_HIDDEN_ITEMS_START + 0x14)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_126_BLUE_SHARD           (FLAG_HIDDEN_ITEMS_START + 0x0C)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_127_STAR_PIECE           (FLAG_HIDDEN_ITEMS_START + 0x15)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP                (FLAG_HIDDEN_ITEMS_START + 0x16)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_127_HEART_SCALE          (FLAG_HIDDEN_ITEMS_START + 0x17)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_127_RED_SHARD            (FLAG_HIDDEN_ITEMS_START + 0x18)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_128_PROTEIN              (FLAG_HIDDEN_ITEMS_START + 0x19)
-#define FLAG_HIDDEN_ITEM_UNDERWATER_128_PEARL                (FLAG_HIDDEN_ITEMS_START + 0x1A)
+#define FLAG_HIDDEN_FLAG_ITEM_RimmingtonMines_1           (FLAG_HIDDEN_ITEMS_START + 0x15)
+#define FLAG_HIDDEN_FLAG_ITEM_RimmingtonMines_2                (FLAG_HIDDEN_ITEMS_START + 0x16)
+#define FLAG_HIDDEN_ITEM_ROUTE8_1          (FLAG_HIDDEN_ITEMS_START + 0x17)
+#define FLAG_HIDDEN_ITEM_ROUTE8_2            (FLAG_HIDDEN_ITEMS_START + 0x18)
+#define FLAG_HIDDEN_ITEM_ROUTE8_3             (FLAG_HIDDEN_ITEMS_START + 0x19)
+#define FLAG_HIDDEN_ITEM_ROUTE8_4                (FLAG_HIDDEN_ITEMS_START + 0x1A)
+
 #define FLAG_HIDDEN_ITEM_FALLARBOR_TOWN_NUGGET               (FLAG_HIDDEN_ITEMS_START + 0x1C)
 #define FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_ICE_HEAL             (FLAG_HIDDEN_ITEMS_START + 0x00)
 #define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_1_KEY             (FLAG_HIDDEN_ITEMS_START + 0x1F)
@@ -1175,18 +1176,18 @@
 #define FLAG_ITEM_FALADORPUB_1                               0x444 
 #define FLAG_ITEM_FALADOR_1                              0x445 
 #define FLAG_ITEM_FALADOR_2                      0x446 
+#define FLAG_ITEM_GOBLIN_VILLAGE_1               0x447 
+#define FLAG_ITEM_GOBLIN_VILLAGE_2              0x448 
+#define FLAG_ITEM_GOBLIN_VILLAGE_3              0x449 
+#define FLAG_ITEM_GOBLIN_VILLAGE_4                    0x44A 
+#define FLAG_ITEM_ROUTE24_2                  0x44B 
+#define FLAG_ITEM_ROUTE24_3        0x44C 
+#define FLAG_ITEM_ROUTE24_4    0x44D 
+#define FLAG_ITEM_ROUTE24_1          0x44E 
+#define FLAG_ITEM_RimmingtonMines_1                                 0x44F
+#define FLAG_ITEM_RimmingtonMines_2                              0x450
+#define FLAG_ITEM_RimmingtonMines_3                            0x451
 
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_1F_HARBOR_MAIL               0x447 
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_B1F_ESCAPE_ROPE              0x448 
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_2_B1F_DIVE_BALL              0x449 
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_B1F_TM_13                    0x44A 
-#define FLAG_ITEM_ABANDONED_SHIP_ROOMS_2_1F_REVIVE                  0x44B 
-#define FLAG_ITEM_ABANDONED_SHIP_CAPTAINS_OFFICE_STORAGE_KEY        0x44C 
-#define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_3_WATER_STONE    0x44D 
-#define FLAG_ITEM_ABANDONED_SHIP_HIDDEN_FLOOR_ROOM_1_TM_18          0x44E 
-#define FLAG_ITEM_ROUTE_121_CARBOS                                  0x44F
-#define FLAG_ITEM_ROUTE_123_ULTRA_BALL                              0x450
-#define FLAG_ITEM_ROUTE_126_GREEN_SHARD                             0x451
 #define FLAG_ITEM_ROUTE_119_HYPER_POTION_2                          0x452
 #define FLAG_ITEM_ROUTE_120_HYPER_POTION                            0x453
 #define FLAG_ITEM_ROUTE_120_NEST_BALL                               0x454

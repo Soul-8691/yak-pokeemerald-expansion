@@ -311,6 +311,11 @@ Movement_InteractFACEDOWN:
 	delay_16
 	step_end
 
+Movement_InteractFACERIGHT:
+	face_right
+	delay_16
+	step_end
+
 Movement_Goblin_1:
 	delay_16
 	delay_16

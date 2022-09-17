@@ -1591,13 +1591,13 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE9_MUGGER[] = {
 static const struct TrainerMonItemDefaultMoves sParty_ROUTE9_GUTHIX_WIZARD[] = {
     {
     .iv = 0,
-    .lvl = 20,
+    .lvl = 29,
     .species = SPECIES_GUTHBIRD,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 22,
+    .lvl = 32,
     .species = SPECIES_SHEEPDOG,
     .heldItem = ITEM_NONE
     }
@@ -2298,18 +2298,18 @@ static const struct TrainerMonItemCustomMoves sParty_FALADOR_HAIRDRESSER[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE24_MUGGER[] = {
     {
     .iv = 0,
-    .lvl = 25,
+    .lvl = 23,
+    .species = SPECIES_SNAKE_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 26,
     .species = SPECIES_RACOON,
     },
     {
     .iv = 0,
-    .lvl = 25,
-    .species = SPECIES_RACOON,
-    },
-    {
-    .iv = 0,
-    .lvl = 25,
-    .species = SPECIES_RACOON,
+    .lvl = 24,
+    .species = SPECIES_SNAKE_POISON_FORM,
     },
     {
     .iv = 0,
@@ -2457,13 +2457,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Demonheadge[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE40_DIVINER[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 28,
+    .species = SPECIES_RUNE,
     },
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 29,
+    .species = SPECIES_GUTHIXIAN_BUTTERFLY,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_PUB_SARIM_1[] = {
@@ -2544,6 +2544,136 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Slayer[]
     }
 };
 
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_COUPLE[] = { 
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_BEAR_GRIZZLY_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_MINOTAUR_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_WOLF_FENRIS_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_WOLF_WHITE_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_1[] = { 
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_SCORPION_KING_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_CAVEFISH,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_2[] = { 
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_MINOTAUR_NORMAL_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_3[] = { 
+    {
+    .iv = 0,
+    .lvl = 26,
+    .species = SPECIES_BEAR_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 27,
+    .species = SPECIES_WOLF_NORMAL_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_4[] = { 
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    },
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    },
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+
+
+static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_DRAGONBOT_1[] = { 
+    {
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_DRAGONLING_BLACK_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_HATCHLING,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_DRAGONLING_BLACK_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_DRAGONBOT_2[] = { 
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_TUROTH,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_TUROTH,
+    },
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_HATCHLING,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_HATCHLING,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Slayer_1[] = { 
+    {
+    .iv = 0,
+    .lvl = 36,
+    .species = SPECIES_BUNYIP,
+    },
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_BUNYIP,
+    }
+};
 
 
 

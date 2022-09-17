@@ -76,8 +76,8 @@ ROUTE4_TRIGGER_DaycareWatcher_PART1::
 
 ROUTE4_TRIGGER_DaycareWatcher_PART2::
 	delay 8
-	namebox ROUTE4_TRIGGER_DaycareWatcher_PART1_Text_0
-	msgbox ROUTE4_TRIGGER_DaycareWatcher_PART2_Text_0
+	namebox ROUTE4_TRIGGER_DaycareWatcher_PART2_Text_0
+	msgbox ROUTE4_TRIGGER_DaycareWatcher_PART2_Text_1
 	closemessage
 	hidenamebox
 	applymovement 2, MOVEMENT_ROUTE4_DaycareWatcher2
@@ -144,12 +144,34 @@ MOVEMENT_ROUTE4_PLAYER3:
 
 ROUTE4_DaycareWatcher::
 	faceplayer
-	namebox ROUTE4_TRIGGER_DaycareWatcher_PART1_Text_0
-	msgbox ROUTE4_DaycareWatcher_Text_0
+	namebox ROUTE4_TRIGGER_DaycareWatcher_PART2_Text_0
+	random 3
+	switch VAR_RESULT
+	case 0, ROUTE4_DaycareWatcher_3
+	case 1, ROUTE4_DaycareWatcher_4
+	case 2, ROUTE4_DaycareWatcher_5
+	case 3, ROUTE4_DaycareWatcher_6
+ROUTE4_DaycareWatcher_1:
 	closemessage
 	hidenamebox
 	release
 	end
+
+ROUTE4_DaycareWatcher_3:
+	msgbox ROUTE4_DaycareWatcher_Text_0
+	goto ROUTE4_DaycareWatcher_1
+
+ROUTE4_DaycareWatcher_4:
+	msgbox ROUTE4_DaycareWatcher_Text_1
+	goto ROUTE4_DaycareWatcher_1
+
+ROUTE4_DaycareWatcher_5:
+	msgbox ROUTE4_DaycareWatcher_Text_2
+	goto ROUTE4_DaycareWatcher_1
+
+ROUTE4_DaycareWatcher_6:
+	msgbox ROUTE4_DaycareWatcher_Text_3
+	goto ROUTE4_DaycareWatcher_1
 
 
 POTTERINGTON_FARM_OUTDOOR_STATE::
@@ -217,21 +239,43 @@ ROUTE4_TRIGGER_DaycareWatcher_PART1_Text_1:
 	.string "I want to show you something.$"
 
 ROUTE4_TRIGGER_DaycareWatcher_PART2_Text_0:
+	.string "Niece Pott.$"
+
+ROUTE4_TRIGGER_DaycareWatcher_PART2_Text_1:
 	.string "This place is called Potterington Farm!\p"
-	.string "They look after your Monsters and help\n"
+	.string "We look after your Monsters and help\n"
 	.string "them grow while you are away.\p"
-	.string "I also heard that they have set up\n"
-	.string "special breeding pens for certain\l"
-	.string "monsters.\p"
+	.string "We have also set up special breeding\n"
+	.string "pens for certain monsters.\p"
 	.string "You should and inquire about it if it is\n"
 	.string "something that intrests you!\p"
 	.string "Anyway that is all I wanted to show you.\p"
-	.string "BYYYYYYYYEEEE!$"
+	.string "Take care!$"
 
 ROUTE4_DaycareWatcher_Text_0:
+	.string "Some people have been reporting\n"
+	.string "different coloured monsters hatching\l"
+	.string "from their eggs which are different\l"
+	.string "from the parents.$"
+
+ROUTE4_DaycareWatcher_Text_1:
+	.string "There have been rumours that multiple\n"
+	.string "monsters have been breeding together\l"
+	.string "and creating hybrids.\p"
+	.string "But I've yet to see any of these so\n"
+	.string "called hybrids.$"
+
+ROUTE4_DaycareWatcher_Text_2:
 	.string "I really enjoy just sitting here and\n"
 	.string "seeing what type of Monsters the next\l"
 	.string "adventurer will bring.$"
+
+ROUTE4_DaycareWatcher_Text_3:
+	.string "Over time high achieving adventurers\n"
+	.string "visit our little farm and hand out\l"
+	.string "gifts.\p"
+	.string "I wonder what makes them decide to\n"
+	.string "visit our little farm.$"
 
 ROUTE4_PatchFarmer_Text_0:
 	.string "Did you know you can plant crops in\n"

@@ -308,6 +308,10 @@ movement Movement_InteractFACEDOWN{
     face_down
     delay_16
 }
+movement Movement_InteractFACERIGHT{
+    face_right
+    delay_16
+}
 movement Movement_Goblin_1{
     delay_16 * 3 
     walk_up * 2

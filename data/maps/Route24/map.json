@@ -169,8 +169,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_ROUTE24_1",
+      "flag": "FLAG_ITEM_ROUTE24_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GOBLIN_2",
@@ -208,21 +208,21 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_ROUTE24_2",
+      "flag": "FLAG_ITEM_ROUTE24_2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 19,
-      "y": 20,
+      "x": 25,
+      "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_ROUTE24_3",
+      "flag": "FLAG_ITEM_ROUTE24_3"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
@@ -234,8 +234,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_ROUTE24_4",
+      "flag": "FLAG_ITEM_ROUTE24_4"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KNIGHT_WHITE_M",

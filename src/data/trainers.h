@@ -2168,8 +2168,117 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_RimmingtonMines_Slayer),
         .party = {.NoItemDefaultMoves = sParty_RimmingtonMines_Slayer},
     },
+    
+    [TRAINER_ROUTE23_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_DWARF,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_dwarf_m,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE23_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE23_TRAINER_1},
+    },
+    
+    [TRAINER_ROUTE23_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_BARBARIAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_barbarian_m,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE23_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE23_TRAINER_2},
+    },
+    
+    [TRAINER_ROUTE23_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_BARBARIAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_barbarian_f,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE23_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE23_TRAINER_3},
+    },
+    
+    [TRAINER_ROUTE23_TRAINER_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_PKer,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_pk_rusher,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE23_TRAINER_4),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE23_TRAINER_4},
+    },
+    
+    [TRAINER_ROUTE23_TRAINER_COUPLE] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_BARBARIAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_barbarian_duo,
+        .trainerName = _("SARA & TREV"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE23_TRAINER_COUPLE),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE23_TRAINER_COUPLE},
+    },
 
 
+     [TRAINER_RimmingtonMines_DRAGONBOT_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_BOT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_bot_dragon_slayer,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_RimmingtonMines_DRAGONBOT_1),
+        .party = {.NoItemDefaultMoves = sParty_RimmingtonMines_DRAGONBOT_1},
+    },
+     [TRAINER_RimmingtonMines_DRAGONBOT_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_BOT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_bot_dragon_slayer,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_RimmingtonMines_DRAGONBOT_2),
+        .party = {.NoItemDefaultMoves = sParty_RimmingtonMines_DRAGONBOT_2},
+    },
+     [TRAINER_RimmingtonMines_Slayer_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SLAYER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_slayer,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_RimmingtonMines_Slayer_1),
+        .party = {.NoItemDefaultMoves = sParty_RimmingtonMines_Slayer_1},
+    },
 
 
 

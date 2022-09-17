@@ -116,6 +116,19 @@ script NPC_CAT
 	end
 }
 
+script NPC_ABYSSALDEMON
+{
+	lock
+	faceplayer
+    namebox ("ABYSSAL DEMON")
+    //playmoncry(SPECIES_MAREEP, 0)
+	msgbox(format("Schttle, skrtch!"))
+    //waitmoncry
+    hidenamebox
+	release
+	end
+}
+
 script SIGN_ROUTE1_1
 {
 	lock

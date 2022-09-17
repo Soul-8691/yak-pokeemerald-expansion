@@ -57,7 +57,7 @@ script ITEM_ROUTE9_TM54_MUD_BOMB
 
 script BATTLE_ROUTE9_GUTHIX_WIZARD{
     trainerbattle_single(TRAINER_ROUTE9_GUTHIX_WIZARD, format("For Guthix!"),format("FOR GUUUUTTTHHIIXXX!"))
-    msgbox(format("Wait… Are you telling me Guthix does not want me jumping out of nowhere to scare people who are about to pick up treasure?"))
+    msgbox(format("Wait…{PAUSE 16}\nAre you telling me Guthix does not want me jumping out of nowhere to scare people who are about to pick up treasure?"))
     release
 }
 

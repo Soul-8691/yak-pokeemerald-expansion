@@ -46,7 +46,7 @@ script NPC_BARB_BLOCKADE_1
             msgbox(format("You may enter!"))
             hidenamebox
             closemessage
-            setvar(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 1)
+            //setvar(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 1)
             release
             end
         }

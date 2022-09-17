@@ -854,6 +854,13 @@ static const struct MenuAction MultichoiceList_COLOUR_PICKAXE[] =
     
 };
 
+static const struct MenuAction MultichoiceList_PHEONIXEGG[] =
+{
+    {gText_PhoenixEgg_Clap},
+    {gText_PhoenixEgg_Kick},
+};
+
+
 static const struct MenuAction MultichoiceList_Exit[] =
 {
     {gText_Exit},
@@ -989,7 +996,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
 	[MULTI_STARTER_FREE]			   = MULTICHOICE(MultichoiceList_StarterFree),
 	[MULTI_STARTER_MEMBER]			   = MULTICHOICE(MultichoiceList_StarterMember),
     [MULTI_POH]			               = MULTICHOICE(MultichoiceList_POH),
-    [MULTI_COLOUR_PICKAXE]			       = MULTICHOICE(MultichoiceList_COLOUR_PICKAXE),
+    [MULTI_COLOUR_PICKAXE]			   = MULTICHOICE(MultichoiceList_COLOUR_PICKAXE),
+    [MULTI_PHEONIXEGG]			       = MULTICHOICE(MultichoiceList_PHEONIXEGG),
     
 	
 };

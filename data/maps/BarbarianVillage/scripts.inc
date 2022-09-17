@@ -55,7 +55,6 @@ NPC_BARB_BLOCKADE_1_7:
 	msgbox NPC_BARB_BLOCKADE_1_Text_3
 	hidenamebox
 	closemessage
-	setvar VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 1
 	release
 	end
 

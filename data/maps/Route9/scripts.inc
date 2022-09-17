@@ -119,9 +119,10 @@ BATTLE_ROUTE9_GUTHIX_WIZARD_Text_1:
 	.string "FOR GUUUUTTTHHIIXXX!$"
 
 BATTLE_ROUTE9_GUTHIX_WIZARD_Text_2:
-	.string "Wait… Are you telling me Guthix does not\n"
-	.string "want me jumping out of nowhere to\l"
-	.string "scare people who are about to pick up\l"
+	.string "Wait…{PAUSE 16}\n"
+	.string "Are you telling me Guthix does not want\l"
+	.string "me jumping out of nowhere to scare\l"
+	.string "people who are about to pick up\l"
 	.string "treasure?$"
 
 BATTLE_ROUTE9_MINER_1_Text_0:

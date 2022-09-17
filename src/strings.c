@@ -529,7 +529,7 @@ const u8 gText_XNatureHatchedSomewhereAt[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1
 const u8 gText_OddEggFoundByCouple[] = _("An odd POKéMON EGG found\nby the DAY CARE couple.");
 const u8 gText_PeculiarEggNicePlace[] = _("A peculiar POKéMON EGG\nobtained at the nice place.");
 const u8 gText_PeculiarEggTrade[] = _("A peculiar POKéMON EGG\nobtained in a trade.");
-const u8 gText_EggFromHotSprings[] = _("A POKéMON EGG obtained\nat the hot springs.");
+const u8 gText_EggFromHotSprings[] = _("A strange MONSTER EGG \nwhat is inside it?");
 const u8 gText_EggFromTraveler[] = _("An odd POKéMON EGG\nobtained from a traveler.");
 const u8 gText_ApostropheSBase[] = _("'s BASE");
 const u8 gText_OkayToDeleteFromRegistry[] = _("Is it okay to delete {STR_VAR_1}\nfrom the REGISTRY?");
@@ -1876,6 +1876,10 @@ const u8 gText_POH_WHITE[] =_("WHITE");
 const u8 gText_POH_BLUE[] =_("BLUE");
 const u8 gText_POH_CYAN[] =_("CYAN");
 const u8 gText_POH_BLACK[] =_("BLACK");
+
+const u8 gText_PhoenixEgg_Clap[] =_("CLAP AT IT.");
+const u8 gText_PhoenixEgg_Kick[] =_("KICK IT!!!!");
+
 
 
 //misc

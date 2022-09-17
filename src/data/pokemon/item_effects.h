@@ -784,6 +784,7 @@ const u8 *const gItemEffectTable[] =
     [ITEM_VANILLA_MILK - ITEM_POTION] = gItemEffect_VanillaMilk,
     [ITEM_STRAWBERRY_MILK - ITEM_POTION] = gItemEffect_StrawberryMilk,
     [ITEM_CHOCOLATE_MILK - ITEM_POTION] = gItemEffect_ChocolateMilk,
+    [ITEM_CABBAGE - ITEM_POTION] = gItemEffect_Revive,
 
 
 

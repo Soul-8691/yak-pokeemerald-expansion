@@ -207,7 +207,7 @@
 //all berries currently just coded as cure paralysis. should probably code properly at some point.
 #define ITEM_APPLE 193
 #define ITEM_BANANNA 194
-#define ITEM_CABBAGE 195
+#define ITEM_CABBAGE1 195
 #define ITEM_CADAVABERRY 196
 #define ITEM_COCONUT 197
 #define ITEM_CORN 198
@@ -759,9 +759,10 @@
 #define ITEM_VANILLA_MILK           633
 #define ITEM_STRAWBERRY_MILK        634
 #define ITEM_CHOCOLATE_MILK         635
+#define ITEM_CABBAGE                636
 
 
-#define ITEMS_COUNT 636
+#define ITEMS_COUNT 637
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 #define FIRST_BERRY_INDEX             ITEM_CHERI_BERRY

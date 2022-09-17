@@ -114,7 +114,7 @@ static const u8 sFullHealDesc[] = _(
 
 static const u8 sReviveDesc[] = _(
     "Revives a fainted\n"
-    "POKéMON with half\n"
+    "MONSTER with half\n"
     "its HP.");
 
 static const u8 sMaxReviveDesc[] = _(

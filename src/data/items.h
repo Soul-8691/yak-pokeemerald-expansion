@@ -7010,7 +7010,7 @@ const struct Item gItems[] =
     {
         .name = _("Tin Ore"),
         .itemId = ITEM_TIN_ORE,
-        .price = 0,
+        .price = 200,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7022,7 +7022,7 @@ const struct Item gItems[] =
     {
         .name = _("Iron Ore"),
         .itemId = ITEM_IRON_ORE,
-        .price = 0,
+        .price = 200,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7034,7 +7034,7 @@ const struct Item gItems[] =
     {
         .name = _("Coal"),
         .itemId = ITEM_COAL_ORE,
-        .price = 0,
+        .price = 200,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7046,7 +7046,7 @@ const struct Item gItems[] =
     {
         .name = _("Mithril Ore"),
         .itemId = ITEM_MITHRIL_ORE,
-        .price = 0,
+        .price = 200,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7058,7 +7058,7 @@ const struct Item gItems[] =
     {
         .name = _("Adamant Ore"),
         .itemId = ITEM_ADAMANT_ORE,
-        .price = 0,
+        .price = 200,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7070,7 +7070,7 @@ const struct Item gItems[] =
     {
         .name = _("Rune Ore"),
         .itemId = ITEM_RUNE_ORE,
-        .price = 0,
+        .price = 200,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7082,7 +7082,7 @@ const struct Item gItems[] =
     {
         .name = _("Orikalkum Ore"),
         .itemId = ITEM_ORIKALKUM_ORE,
-        .price = 0,
+        .price = 200,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7094,7 +7094,7 @@ const struct Item gItems[] =
     {
         .name = _("Augmentor"),
         .itemId = ITEM_AUGMENTOR,
-        .price = 0,
+        .price = 200,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7106,7 +7106,7 @@ const struct Item gItems[] =
     {
         .name = _("Bane Ore"),
         .itemId = ITEM_BANE_ORE,
-        .price = 0,
+        .price = 200,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7118,7 +7118,7 @@ const struct Item gItems[] =
     {
         .name = _("Barrows Item"),
         .itemId = ITEM_BARROWS_ITEM,
-        .price = 0,
+        .price = 1000,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7130,7 +7130,7 @@ const struct Item gItems[] =
     {
         .name = _("Dark Mushroom"),
         .itemId = ITEM_BLACK_MUSHROOM,
-        .price = 0,
+        .price = 100,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7142,7 +7142,7 @@ const struct Item gItems[] =
     {
         .name = _("Crystal Shard"),
         .itemId = ITEM_CRYSTAL_SHARD,
-        .price = 0,
+        .price = 100,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7154,7 +7154,7 @@ const struct Item gItems[] =
     {
         .name = _("Elemental Ore"),
         .itemId = ITEM_ELEMENTAL_ORE,
-        .price = 0,
+        .price = 100,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7166,7 +7166,7 @@ const struct Item gItems[] =
     {
         .name = _("Granite"),
         .itemId = ITEM_GRANITE,
-        .price = 0,
+        .price = 100,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7178,7 +7178,7 @@ const struct Item gItems[] =
     {
         .name = _("Ancient Metal"),
         .itemId = ITEM_HELLFIRE_METAL,
-        .price = 0,
+        .price = 100,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7190,7 +7190,7 @@ const struct Item gItems[] =
     {
         .name = _("Mystic Cloth"),
         .itemId = ITEM_MYSTIC_CLOTH,
-        .price = 0,
+        .price = 1500,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7202,7 +7202,7 @@ const struct Item gItems[] =
     {
         .name = _("SPLITBARK"),
         .itemId = ITEM_SPLITBARK,
-        .price = 0,
+        .price = 1500,
         .description = sSplitbarkDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7213,7 +7213,7 @@ const struct Item gItems[] =
     {
         .name = _("RUNE ESSENCE"),
         .itemId = ITEM_RUNE_ESSENCE,
-        .price = 0,
+        .price = 100,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7253,7 +7253,7 @@ const struct Item gItems[] =
     {
         .name = _("WATER BUCKET"),
         .itemId = ITEM_WATER_BUCKET,
-        .price = 0,
+        .price = 100,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7275,7 +7275,7 @@ const struct Item gItems[] =
     {
         .name = _("WHEAT GRAIN"),
         .itemId = ITEM_WHEAT,
-        .price = 0,
+        .price = 50,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7297,7 +7297,7 @@ const struct Item gItems[] =
     {
         .name = _("POT OF FLOUR"),
         .itemId = ITEM_FLOUR_POT,
-        .price = 0,
+        .price = 100,
         .description = sCupholderDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
@@ -7637,10 +7637,10 @@ const struct Item gItems[] =
     },
 
     //pokescape crops
-	[ITEM_CABBAGE] =
+	[ITEM_CABBAGE1] =
     {
         .name = _("CABBAGE"),
-        .itemId = ITEM_CABBAGE,
+        .itemId = ITEM_CABBAGE1,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CURE_PAR,
         .description = sCabbageDesc,
@@ -8114,5 +8114,18 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 0,
     },
-    
+
+    [ITEM_CABBAGE] =
+    {
+        .name = _("CABBAGE"),
+        .itemId = ITEM_CABBAGE,
+        .price = 1500,
+        .description = sReviveDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = 1,
+        .battleUseFunc = ItemUseInBattle_Medicine,
+        .secondaryId = 0,
+    },
 };

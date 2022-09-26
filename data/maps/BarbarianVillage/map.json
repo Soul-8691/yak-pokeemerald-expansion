@@ -2,7 +2,7 @@
   "id": "MAP_BARBARIAN_VILLAGE",
   "name": "BarbarianVillage",
   "layout": "LAYOUT_BARBARIAN_VILLAGE",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_PS_BARBARIAN_VILLAGE",
   "region_map_section": "MAPSEC_BARBARIAN_VILLAGE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -180,7 +180,7 @@
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_BARBARIANVILLAGE_NPC1",
       "flag": "0"
     },
     {
@@ -271,7 +271,7 @@
       "y": 28,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "NPC_BARBARIANVILLAGE_SIGNPOST"
     }
   ]
 }

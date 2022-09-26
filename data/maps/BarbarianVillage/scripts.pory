@@ -82,3 +82,100 @@ script NPC_BARBARIANVILLAGE_DUNGEONGIRL
     release
     end
 }
+
+
+script NPC_BARBARIANVILLAGE_SIGNPOST
+{
+    lock
+    msgbox(format("Barbarian Village.\pAlso known as Gunnarsgrunn."))
+    release
+    end
+}
+
+
+script NPC_BARBARIANVILLAGE_NPC1
+{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    msgbox(format("Chieftain Gunthor is the strongest warrior of our village."))
+    hidenamebox
+    release
+    end
+}
+
+
+
+//ROUTE 20
+
+script NPC_ROUTE20_NPC1
+{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    msgbox(format("This is a popular spot for fly fishing.\pMany adventurers catch Trout and Salmon in our river."))
+    hidenamebox
+    release
+    end
+}
+
+
+script BATTLE_ROUTE20_FISHERMAN_1
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("If you look carefully in the water you can see a rainbow."),format("So these Rainbow Fish are why you can see a rainbow in the river."))
+    //namebox ("")
+    msgbox(format("So these Rainbow Fish are why you can see a rainbow in the river."))
+	hidenamebox
+    release
+	end
+}
+
+
+script BATTLE_ROUTE20_FISHERMAN_2
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("You just scared away my catch!"),format("I just ran out of feathers…"))
+    //namebox ("")
+    msgbox(format("Fly fishing is great!\pMuch better than regular net fishing."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE20_FISHERMAN_3
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format(""),format(""))
+    //namebox ("")
+    msgbox(format(""))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE20_SKILLER
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format(""),format(""))
+    //namebox ("")
+    msgbox(format(""))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE20_DUO_1
+{
+    trainerbattle_double(TRAINER_ROUTE23_TRAINER_COUPLE, format("Pass the Trout."),format("Oh no it burnt…"),format("We would love to have a double battle with you, but you don't have enough monsters."))
+    namebox ("Cook")
+    msgbox(format("Can someone light a fire for me?"))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE20_DUO_2
+{
+    trainerbattle_double(TRAINER_ROUTE23_TRAINER_COUPLE, format("Feel the burn!"),format("The fire went out of control…"),format("We would love to have a double battle with you, but you don't have enough monsters."))
+    namebox ("Firemaker")
+    msgbox(format("I have the most important job here."))
+	hidenamebox
+    release
+	end
+}

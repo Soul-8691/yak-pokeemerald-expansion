@@ -670,6 +670,9 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_PHOENIX_NECKLACE] = {gItemIcon_phoenixNecklace, gItemIconPalette_phoenixNecklace},
     [ITEM_MITHRIL_SCIMITAR] = {gItemIcon_mithrilScimitar, gItemIconPalette_mithrilScimitar},
     [ITEM_SNOW_GLOBE] = {gItemIcon_snowGlobe, gItemIconPalette_snowGlobe},
+    [ITEM_REPEL_TEA_1] = {gItemIcon_REPEL_TEA_1, gItemIconPalette_REPEL_TEA_1},
+    [ITEM_REPEL_TEA_2] = {gItemIcon_REPEL_TEA_2, gItemIconPalette_REPEL_TEA_2},
+    [ITEM_REPEL_TEA_3] = {gItemIcon_REPEL_TEA_3, gItemIconPalette_REPEL_TEA_3},
     // Return to field arrow
     [ITEM_FIELD_ARROW] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };

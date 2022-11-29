@@ -11208,6 +11208,13 @@ extern const u32 gItemIconPalette_mithrilScimitar[];
 extern const u32 gItemIcon_snowGlobe[];
 extern const u32 gItemIconPalette_snowGlobe[];
 
+extern const u32 gItemIcon_REPEL_TEA_1[];
+extern const u32 gItemIconPalette_REPEL_TEA_1[];
+extern const u32 gItemIcon_REPEL_TEA_2[];
+extern const u32 gItemIconPalette_REPEL_TEA_2[];
+extern const u32 gItemIcon_REPEL_TEA_3[];
+extern const u32 gItemIconPalette_REPEL_TEA_3[];
+
 //ERNEST QUEST----
 extern const u32 gItemIcon_FishFood[];
 extern const u32 gItemIconPalette_FishFood[];

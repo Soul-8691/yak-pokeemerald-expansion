@@ -484,6 +484,9 @@ GeneralStoreRimmington:
 	.2byte ITEM_PINEAPPLE_PUNCH
     .2byte ITEM_EMPTY_BUCKET
     .2byte ITEM_EMPTY_POT
+    .2byte ITEM_REPEL_TEA_1
+    .2byte ITEM_REPEL_TEA_2
+    .2byte ITEM_REPEL_TEA_3
     .2byte ITEM_NONE
     release
     end

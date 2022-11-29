@@ -1430,6 +1430,15 @@ const u32 gItemIconPalette_mithrilScimitar[] = INCBIN_U32("graphics/items/pokesc
 const u32 gItemIcon_snowGlobe[] = INCBIN_U32("graphics/items/pokescape_icons/snow_globe.4bpp.lz");
 const u32 gItemIconPalette_snowGlobe[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/snow_globe.gbapal.lz");
 
+const u32 gItemIcon_REPEL_TEA_1[] = INCBIN_U32("graphics/items/pokescape_icons/tea_1.4bpp.lz");
+const u32 gItemIconPalette_REPEL_TEA_1[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/tea_1.gbapal.lz");
+
+const u32 gItemIcon_REPEL_TEA_2[] = INCBIN_U32("graphics/items/pokescape_icons/tea_2.4bpp.lz");
+const u32 gItemIconPalette_REPEL_TEA_2[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/tea_2.gbapal.lz");
+
+const u32 gItemIcon_REPEL_TEA_3[] = INCBIN_U32("graphics/items/pokescape_icons/tea_3.4bpp.lz");
+const u32 gItemIconPalette_REPEL_TEA_3[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/tea_3.gbapal.lz");
+
 //pokescape tms
 
 const u32 gItemIcon_TMScroll[] = INCBIN_U32("graphics/items/pokescape_icons/tmscroll.4bpp.lz");

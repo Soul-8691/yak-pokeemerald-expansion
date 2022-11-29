@@ -8128,4 +8128,43 @@ const struct Item gItems[] =
         .battleUseFunc = ItemUseInBattle_Medicine,
         .secondaryId = 0,
     },
+    //REPELS
+    [ITEM_REPEL_TEA_1] =
+    {
+        .name = _("TEA"),
+        .itemId = ITEM_REPEL_TEA_1,
+        .price = 350,
+        .holdEffectParam = 100,
+        .description = sRepelDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_Repel,
+        .secondaryId = 0,
+    },
+
+    [ITEM_REPEL_TEA_2] =
+    {
+        .name = _("SUPER TEA"),
+        .itemId = ITEM_REPEL_TEA_2,
+        .price = 800,
+        .holdEffectParam = 200,
+        .description = sSuperRepelDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_Repel,
+        .secondaryId = 0,
+    },
+
+    [ITEM_REPEL_TEA_3] =
+    {
+        .name = _("GUTHIX REST"),
+        .itemId = ITEM_REPEL_TEA_3,
+        .price = 1200,
+        .holdEffectParam = 250,
+        .description = sMaxRepelDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_Repel,
+        .secondaryId = 0,
+    },
 };

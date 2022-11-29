@@ -761,8 +761,11 @@
 #define ITEM_CHOCOLATE_MILK         635
 #define ITEM_CABBAGE                636
 
+#define ITEM_REPEL_TEA_1                  637
+#define ITEM_REPEL_TEA_2                  638
+#define ITEM_REPEL_TEA_3                  639
 
-#define ITEMS_COUNT 637
+#define ITEMS_COUNT 640
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 #define FIRST_BERRY_INDEX             ITEM_CHERI_BERRY

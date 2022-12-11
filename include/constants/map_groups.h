@@ -867,6 +867,8 @@
 #define MAP_GOBLIN_VILLAGE_HOUSE_2              (41 | (50 << 8))
 #define MAP_DORICS_HUT                          (42 | (50 << 8))
 #define MAP_GOBLIN_VILLAGE_HOUSE_3              (43 | (50 << 8))
+#define MAP_MINIGAME_1                          (44 | (50 << 8))
+#define MAP_MINIGAME_2                          (45 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

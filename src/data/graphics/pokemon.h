@@ -4722,6 +4722,20 @@ const u32 gMonShinyPalette_TzTok_Jad[] = INCBIN_U32("graphics/pokescape_monsters
 const u8 gMonIcon_TzTok_Jad[] = INCBIN_U8("graphics/pokescape_monsters/TzTok_Jad/icon.4bpp");
 const u8 gMonFootprint_TzTok_Jad[] = INCBIN_U8("graphics/pokescape_monsters/TzTok_Jad/footprint.1bpp");
 
+const u32 gMonStillFrontPic_TzTok_Jad_HD_Mega_Form[] = INCBIN_U32("graphics/pokescape_monsters/TzTok_Jad_HD_Mega_Form/front.4bpp.lz");
+const u32 gMonPalette_TzTok_Jad_HD_Mega_Form[] = INCBIN_U32("graphics/pokescape_monsters/TzTok_Jad_HD_Mega_Form/normal.gbapal.lz");
+const u32 gMonBackPic_TzTok_Jad_HD_Mega_Form[] = INCBIN_U32("graphics/pokescape_monsters/TzTok_Jad_HD_Mega_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_TzTok_Jad_HD_Mega_Form[] = INCBIN_U32("graphics/pokescape_monsters/TzTok_Jad_HD_Mega_Form/shiny.gbapal.lz");
+const u8 gMonIcon_TzTok_Jad_HD_Mega_Form[] = INCBIN_U8("graphics/pokescape_monsters/TzTok_Jad_HD_Mega_Form/icon.4bpp");
+const u8 gMonFootprint_TzTok_Jad_HD_Mega_Form[] = INCBIN_U8("graphics/pokescape_monsters/TzTok_Jad_HD_Mega_Form/footprint.1bpp");
+
+const u32 gMonStillFrontPic_TzTok_Jad_RS3_Mega_Form[] = INCBIN_U32("graphics/pokescape_monsters/TzTok_Jad_RS3_Mega_Form/front.4bpp.lz");
+const u32 gMonPalette_TzTok_Jad_RS3_Mega_Form[] = INCBIN_U32("graphics/pokescape_monsters/TzTok_Jad_RS3_Mega_Form/normal.gbapal.lz");
+const u32 gMonBackPic_TzTok_Jad_RS3_Mega_Form[] = INCBIN_U32("graphics/pokescape_monsters/TzTok_Jad_RS3_Mega_Form/back.4bpp.lz");
+const u32 gMonShinyPalette_TzTok_Jad_RS3_Mega_Form[] = INCBIN_U32("graphics/pokescape_monsters/TzTok_Jad_RS3_Mega_Form/shiny.gbapal.lz");
+const u8 gMonIcon_TzTok_Jad_RS3_Mega_Form[] = INCBIN_U8("graphics/pokescape_monsters/TzTok_Jad_RS3_Mega_Form/icon.4bpp");
+const u8 gMonFootprint_TzTok_Jad_RS3_Mega_Form[] = INCBIN_U8("graphics/pokescape_monsters/TzTok_Jad_RS3_Mega_Form/footprint.1bpp");
+
 const u32 gMonStillFrontPic_JalTok_Jad[] = INCBIN_U32("graphics/pokescape_monsters/JalTok_Jad/front.4bpp.lz");
 const u32 gMonPalette_JalTok_Jad[] = INCBIN_U32("graphics/pokescape_monsters/JalTok_Jad/normal.gbapal.lz");
 const u32 gMonBackPic_JalTok_Jad[] = INCBIN_U32("graphics/pokescape_monsters/JalTok_Jad/back.4bpp.lz");

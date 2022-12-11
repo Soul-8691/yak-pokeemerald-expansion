@@ -510,6 +510,115 @@ ELVARG_KaramjaVolcano::
 	end
 
 
+ENCOUNTER_LESSERDEMON_KARAMJA_1::
+	lock
+	faceplayer
+	namebox ENCOUNTER_LESSERDEMON_KARAMJA_1_Text_0
+	playmoncry SPECIES_EKANS, 0
+	msgbox ENCOUNTER_LESSERDEMON_KARAMJA_1_Text_1
+	waitmoncry
+	hidenamebox
+	closemessage
+	delay 1
+	setwildbattle SPECIES_DEMON_LESSER_OSRS_FORM, 15, ITEM_NONE
+	dowildbattle
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq ENCOUNTER_LESSERDEMON_KARAMJA_1_2
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq ENCOUNTER_LESSERDEMON_KARAMJA_1_3
+	end
+
+ENCOUNTER_LESSERDEMON_KARAMJA_1_2:
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_TEMP_A
+	removeobject 5
+	fadescreen FADE_FROM_BLACK
+	closemessage
+	end
+
+ENCOUNTER_LESSERDEMON_KARAMJA_1_3:
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_TEMP_A
+	removeobject 5
+	fadescreen FADE_FROM_BLACK
+	closemessage
+	end
+
+
+ENCOUNTER_LESSERDEMON_KARAMJA_2::
+	lock
+	faceplayer
+	namebox ENCOUNTER_LESSERDEMON_KARAMJA_1_Text_0
+	playmoncry SPECIES_EKANS, 0
+	msgbox ENCOUNTER_LESSERDEMON_KARAMJA_1_Text_1
+	waitmoncry
+	hidenamebox
+	closemessage
+	delay 1
+	setwildbattle SPECIES_DEMON_LESSER_OSRS_FORM, 15, ITEM_NONE
+	dowildbattle
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq ENCOUNTER_LESSERDEMON_KARAMJA_2_2
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq ENCOUNTER_LESSERDEMON_KARAMJA_2_3
+	end
+
+ENCOUNTER_LESSERDEMON_KARAMJA_2_2:
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_TEMP_B
+	removeobject 6
+	fadescreen FADE_FROM_BLACK
+	closemessage
+	end
+
+ENCOUNTER_LESSERDEMON_KARAMJA_2_3:
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_TEMP_B
+	removeobject 6
+	fadescreen FADE_FROM_BLACK
+	closemessage
+	end
+
+
+ENCOUNTER_JAD::
+	lock
+	namebox ENCOUNTER_JAD_Text_0
+	playmoncry SPECIES_EKANS, 0
+	msgbox ENCOUNTER_JAD_Text_1
+	waitmoncry
+	hidenamebox
+	closemessage
+	delay 1
+	setwildbattle SPECIES_TZTOK_JAD, 50, ITEM_FRAGMENT_OF_JAS
+	dowildbattle
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq ENCOUNTER_JAD_2
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq ENCOUNTER_JAD_3
+	end
+
+ENCOUNTER_JAD_2:
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_TEMP_1
+	removeobject 6
+	fadescreen FADE_FROM_BLACK
+	closemessage
+	end
+
+ENCOUNTER_JAD_3:
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_TEMP_1
+	removeobject 6
+	fadescreen FADE_FROM_BLACK
+	closemessage
+	end
+
+
+ITEM_MegaEvolutionJas::
+	finditem ITEM_FRAGMENT_OF_JAS
+	end
+
+
 NPC_KaramjaVolcano_HAM_EVENT1_Text_0:
 	.string "H.A.M Grunt$"
 
@@ -608,3 +717,15 @@ NPC_KaramjaVolcano_HAM_EVENT1_Text_19:
 NPC_KaramjaVolcano_HAM_EVENT1_Text_20:
 	.string "The cave starts to collapse around you.\p"
 	.string "You escape to safety.$"
+
+ENCOUNTER_LESSERDEMON_KARAMJA_1_Text_0:
+	.string "Lesser Demon$"
+
+ENCOUNTER_LESSERDEMON_KARAMJA_1_Text_1:
+	.string "GWARAKU!$"
+
+ENCOUNTER_JAD_Text_0:
+	.string "JAD$"
+
+ENCOUNTER_JAD_Text_1:
+	.string "TOKTOK RAAWOORR!$"

@@ -1332,7 +1332,8 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[] =
     SPECIES_SHINY_PAL(ZULRAH_MAGMA_FORM, gMonShinyPalette_Zulrah_Magma_Form),
     SPECIES_SHINY_PAL(ZULRAH_TANZANITE_FORM, gMonShinyPalette_Zulrah_Tanzanite_Form),
     SPECIES_SHINY_PAL(PIG_SUMMONING_FORM, gMonShinyPalette_Pig_Summoning_Form),
-
+    SPECIES_SHINY_PAL(TZTOK_JAD_HD_MEGA_FORM, gMonShinyPalette_TzTok_Jad_HD_Mega_Form),
+    SPECIES_SHINY_PAL(TZTOK_JAD_RS3_MEGA_FORM, gMonShinyPalette_TzTok_Jad_RS3_Mega_Form),
 
 
 

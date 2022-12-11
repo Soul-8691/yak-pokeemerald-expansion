@@ -1539,3 +1539,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Dorics_Hut/scripts.inc"
 
 	.include "data/maps/GoblinVillage_House_3/scripts.inc"
+
+	.include "data/maps/Minigame_1/scripts.inc"
+
+	.include "data/maps/Minigame_2/scripts.inc"

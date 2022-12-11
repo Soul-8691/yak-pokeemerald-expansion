@@ -6840,6 +6840,26 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/GoblinVillage_House_3/border.bin",
       "blockdata_filepath": "data/layouts/GoblinVillage_House_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_MINIGAME_1",
+      "name": "Minigame_1_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Karamja",
+      "border_filepath": "data/layouts/Minigame_1/border.bin",
+      "blockdata_filepath": "data/layouts/Minigame_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_MINIGAME_2",
+      "name": "Minigame_2_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Minigame_2/border.bin",
+      "blockdata_filepath": "data/layouts/Minigame_2/map.bin"
     }
   ]
 }

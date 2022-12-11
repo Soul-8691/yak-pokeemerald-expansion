@@ -6657,6 +6657,16 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
+	[SPECIES_TZTOK_JAD_HD_MEGA_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
+	[SPECIES_TZTOK_JAD_RS3_MEGA_FORM] =
+	{
+		.size = 0x0,
+		.y_offset = 0,
+	},
 
 
 

@@ -1335,7 +1335,8 @@ const struct CompressedSpriteSheet gMonStillFrontPicTable[] =
     SPECIES_SPRITE(ZULRAH_MAGMA_FORM, gMonStillFrontPic_Zulrah_Magma_Form),
     SPECIES_SPRITE(ZULRAH_TANZANITE_FORM, gMonStillFrontPic_Zulrah_Tanzanite_Form),
     SPECIES_SPRITE(PIG_SUMMONING_FORM, gMonStillFrontPic_Pig_Summoning_Form),
-
+    SPECIES_SPRITE(TZTOK_JAD_HD_MEGA_FORM, gMonStillFrontPic_TzTok_Jad_HD_Mega_Form),
+    SPECIES_SPRITE(TZTOK_JAD_RS3_MEGA_FORM, gMonStillFrontPic_TzTok_Jad_RS3_Mega_Form),
 
 
 

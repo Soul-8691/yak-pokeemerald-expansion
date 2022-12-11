@@ -28,7 +28,7 @@
       "flag": "FLAG_TEMP_3"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_M",
+      "graphics_id": "OBJ_EVENT_GFX_HAM_PATTY",
       "x": 19,
       "y": 15,
       "elevation": 3,
@@ -41,7 +41,7 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HAM_PATTY",
+      "graphics_id": "OBJ_EVENT_GFX_HAM_GRUNT_M",
       "x": 19,
       "y": 14,
       "elevation": 3,
@@ -294,20 +294,20 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 17,
+      "x": 16,
       "y": 15,
       "elevation": 0,
       "var": "VAR_POKESCAPE_KARAMJAVOLCANO_STATE",
-      "var_value": "1",
+      "var_value": "2",
       "script": "NPC_KaramjaVolcano_HAM_EVENT1"
     },
     {
       "type": "trigger",
-      "x": 17,
+      "x": 16,
       "y": 14,
       "elevation": 0,
       "var": "VAR_POKESCAPE_KARAMJAVOLCANO_STATE",
-      "var_value": "1",
+      "var_value": "2",
       "script": "NPC_KaramjaVolcano_HAM_EVENT1"
     }
   ],

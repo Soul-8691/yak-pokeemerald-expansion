@@ -1333,6 +1333,8 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_ZULRAH_MAGMA_FORM] = sZulrah_Magma_FormLevelUpLearnset,
     [SPECIES_ZULRAH_TANZANITE_FORM] = sZulrah_Tanzanite_FormLevelUpLearnset,
     [SPECIES_PIG_SUMMONING_FORM] = sPig_Summoning_FormLevelUpLearnset,
+    [SPECIES_TZTOK_JAD_HD_MEGA_FORM] = sTzTok_Jad_HD_Mega_FormLevelUpLearnset,
+    [SPECIES_TZTOK_JAD_RS3_MEGA_FORM] = sTzTok_Jad_RS3_Mega_FormLevelUpLearnset,
 
 
 

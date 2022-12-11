@@ -817,6 +817,23 @@ const u32 gItemIconPalette_GreenScale[] = INCBIN_U32("graphics/items/pokescape_i
 const u32 gItemIcon_FragmentOfJas[] = INCBIN_U32("graphics/items/pokescape_icons/fragment_of_jas.4bpp.lz");
 const u32 gItemIconPalette_FragmentOfJas[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fragment_of_jas.gbapal.lz");  
 
+const u32 gItemIcon_MEGASTONE_TZHAAR[] = INCBIN_U32("graphics/items/pokescape_icons/fragment_of_jas.4bpp.lz");
+const u32 gItemIconPalette_MEGASTONE_TZHAAR[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fragment_of_jas.gbapal.lz");  
+const u32 gItemIcon_MEGASTONE_TOKHAAR[] = INCBIN_U32("graphics/items/pokescape_icons/fragment_of_jas.4bpp.lz");
+const u32 gItemIconPalette_MEGASTONE_TOKHAAR[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fragment_of_jas.gbapal.lz");  
+const u32 gItemIcon_MEGASTONE_WARRIOR[] = INCBIN_U32("graphics/items/pokescape_icons/fragment_of_jas.4bpp.lz");
+const u32 gItemIconPalette_MEGASTONE_WARRIOR[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fragment_of_jas.gbapal.lz");  
+const u32 gItemIcon_MEGASTONE_SEER[] = INCBIN_U32("graphics/items/pokescape_icons/fragment_of_jas.4bpp.lz");
+const u32 gItemIconPalette_MEGASTONE_SEER[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fragment_of_jas.gbapal.lz");  
+const u32 gItemIcon_MEGASTONE_ARCHER[] = INCBIN_U32("graphics/items/pokescape_icons/fragment_of_jas.4bpp.lz");
+const u32 gItemIconPalette_MEGASTONE_ARCHER[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fragment_of_jas.gbapal.lz");  
+const u32 gItemIcon_MEGASTONE_CHAOS[] = INCBIN_U32("graphics/items/pokescape_icons/fragment_of_jas.4bpp.lz");
+const u32 gItemIconPalette_MEGASTONE_CHAOS[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fragment_of_jas.gbapal.lz");  
+const u32 gItemIcon_MEGASTONE_KALPHITE[] = INCBIN_U32("graphics/items/pokescape_icons/fragment_of_jas.4bpp.lz");
+const u32 gItemIconPalette_MEGASTONE_KALPHITE[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fragment_of_jas.gbapal.lz");  
+const u32 gItemIcon_MEGASTONE_BEAST[] = INCBIN_U32("graphics/items/pokescape_icons/fragment_of_jas.4bpp.lz");
+const u32 gItemIconPalette_MEGASTONE_BEAST[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/fragment_of_jas.gbapal.lz");  
+
 
 //pokescape pouches
 const u32 gItemIcon_NormalPouch[] = INCBIN_U32("graphics/items/pokescape_icons/normal_pouch.4bpp.lz");

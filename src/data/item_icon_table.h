@@ -673,6 +673,14 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_REPEL_TEA_1] = {gItemIcon_REPEL_TEA_1, gItemIconPalette_REPEL_TEA_1},
     [ITEM_REPEL_TEA_2] = {gItemIcon_REPEL_TEA_2, gItemIconPalette_REPEL_TEA_2},
     [ITEM_REPEL_TEA_3] = {gItemIcon_REPEL_TEA_3, gItemIconPalette_REPEL_TEA_3},
+    [ITEM_MEGASTONE_TZHAAR] = {gItemIcon_MEGASTONE_TZHAAR, gItemIconPalette_MEGASTONE_TZHAAR},	
+    [ITEM_MEGASTONE_TOKHAAR] = {gItemIcon_MEGASTONE_TOKHAAR, gItemIconPalette_MEGASTONE_TOKHAAR},	
+    [ITEM_MEGASTONE_WARRIOR] = {gItemIcon_MEGASTONE_WARRIOR, gItemIconPalette_MEGASTONE_WARRIOR},	
+    [ITEM_MEGASTONE_SEER] = {gItemIcon_MEGASTONE_SEER, gItemIconPalette_MEGASTONE_SEER},	
+    [ITEM_MEGASTONE_ARCHER] = {gItemIcon_MEGASTONE_ARCHER, gItemIconPalette_MEGASTONE_ARCHER},	
+    [ITEM_MEGASTONE_CHAOS] = {gItemIcon_MEGASTONE_CHAOS, gItemIconPalette_MEGASTONE_CHAOS},	
+    [ITEM_MEGASTONE_KALPHITE] = {gItemIcon_MEGASTONE_KALPHITE, gItemIconPalette_MEGASTONE_KALPHITE},	
+    [ITEM_MEGASTONE_BEAST] = {gItemIcon_MEGASTONE_BEAST, gItemIconPalette_MEGASTONE_BEAST},	
     // Return to field arrow
     [ITEM_FIELD_ARROW] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };

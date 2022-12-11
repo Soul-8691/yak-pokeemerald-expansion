@@ -6254,11 +6254,115 @@ const struct Item gItems[] =
         .price = 200,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sFragmentOfJasDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = 4,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 0,
     },	
+
+    [ITEM_MEGASTONE_TZHAAR] =
+    {
+        .name = _("TZHAAR FRAG"),
+        .itemId = ITEM_MEGASTONE_TZHAAR,
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = sFragmentOfJasDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    
+    [ITEM_MEGASTONE_TOKHAAR] =
+    {
+        .name = _("TOKHAAR FRAG"),
+        .itemId = ITEM_MEGASTONE_TOKHAAR,
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = sFragmentOfJasDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    
+    [ITEM_MEGASTONE_WARRIOR] =
+    {
+        .name = _("WARRIOR FRAG"),
+        .itemId = ITEM_MEGASTONE_WARRIOR,
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = sFragmentOfJasDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    
+    [ITEM_MEGASTONE_SEER] =
+    {
+        .name = _("SEER FRAG"),
+        .itemId = ITEM_MEGASTONE_SEER,
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = sFragmentOfJasDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    
+    [ITEM_MEGASTONE_ARCHER] =
+    {
+        .name = _("ARCHER FRAG"),
+        .itemId = ITEM_MEGASTONE_ARCHER,
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = sFragmentOfJasDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    
+    [ITEM_MEGASTONE_CHAOS] =
+    {
+        .name = _("CHAOS FRAG"),
+        .itemId = ITEM_MEGASTONE_CHAOS,
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = sFragmentOfJasDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    
+    [ITEM_MEGASTONE_KALPHITE] =
+    {
+        .name = _("KALPHITE FRAG"),
+        .itemId = ITEM_MEGASTONE_KALPHITE,
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = sFragmentOfJasDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
+    
+    [ITEM_MEGASTONE_BEAST] =
+    {
+        .name = _("BEAST FRAG"),
+        .itemId = ITEM_MEGASTONE_BEAST,
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = sFragmentOfJasDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 0,
+    },
 	
     [ITEM_VANILLA_MILK] =    
     {

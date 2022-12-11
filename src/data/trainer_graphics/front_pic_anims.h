@@ -815,6 +815,10 @@ static const union AnimCmd *const sAnims_quester[] ={
     sAnim_GeneralFrame0,
 };
 
+static const union AnimCmd *const sAnims_SoffanQuo[] ={
+    sAnim_GeneralFrame0,
+};
+
 
 
 
@@ -1026,4 +1030,5 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_graceful] = sAnims_graceful,
     [TRAINER_PIC_guard_draynor] = sAnims_guard_draynor,
     [TRAINER_PIC_quester] = sAnims_quester,
+    [TRAINER_PIC_SoffanQuo] = sAnims_SoffanQuo,
 };

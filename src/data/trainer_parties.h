@@ -2675,7 +2675,74 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Slayer_1
     }
 };
 
+static const struct TrainerMonNoItemDefaultMoves sParty_Varrock_Max[] = { 
+    {
+    .iv = 0,
+    .lvl = 76,
+    .species = SPECIES_MOSS_TITAN,
+    },
+    {
+    .iv = 0,
+    .lvl = 80,
+    .species = SPECIES_STEEL_TITAN,
+    },
+    {
+    .iv = 0,
+    .lvl = 44,
+    .species = SPECIES_GEYSIR_TITAN,
+    },
+    {
+    .iv = 0,
+    .lvl = 69,
+    .species = SPECIES_GOAT_PRIMORDIALCLAY_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 99,
+    .species = SPECIES_DEMON_TORMENTED_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 66,
+    .species = SPECIES_CROCODILE_MUTADILE_FORM,
+    }    
+};
 
+
+static const struct TrainerMonNoItemDefaultMoves sParty_Soffan_and_Quo[] = { 
+    
+    {
+    .iv = 0,
+    .lvl = 50,
+    .species = SPECIES_SMOKEDEVIL_NUCLEAR_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 50,
+    .species = SPECIES_DEMON_TSTANON_FORM, 
+    },
+    {
+    .iv = 0,
+    .lvl = 50,
+    .species = SPECIES_ZULRAH_TANZANITE_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 50,
+    .species = SPECIES_DAGANNOTH_KING_RANGE_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 50,
+    .species = SPECIES_TZKAL_ZUK,
+    },
+    {
+    .iv = 0,
+    .lvl = 50,
+    .species = SPECIES_CERBERUS, 
+    }
+    
+};
 
 
 

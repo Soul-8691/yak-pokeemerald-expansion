@@ -2279,7 +2279,33 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_RimmingtonMines_Slayer_1),
         .party = {.NoItemDefaultMoves = sParty_RimmingtonMines_Slayer_1},
     },
+    [TRAINER_Varrock_Max] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_SLAYER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_slayer,
+        .trainerName = _("Max"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_Varrock_Max),
+        .party = {.NoItemDefaultMoves = sParty_Varrock_Max},
+    },
 
+    [TRAINER_Soffan_and_Quo] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("SOFAN & QUO"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_Soffan_and_Quo),
+        .party = {.NoItemDefaultMoves = sParty_Soffan_and_Quo},
+    },
 
 
 

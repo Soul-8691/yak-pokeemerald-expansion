@@ -310,3 +310,31 @@ script BATTLE_RimmingtonMines_Slayer_1
     release
 	end
 }
+
+
+
+
+
+
+
+script BATTLE_Varrock_Max
+{
+    trainerbattle_single(TRAINER_Varrock_Max, format("…"),format("…"))
+    //namebox ("")
+    msgbox(format("…"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_Soffan_and_Quo
+{
+    trainerbattle_single(TRAINER_Soffan_and_Quo, format("…"),format("…"))
+    //namebox ("")
+    msgbox(format("…"))
+	hidenamebox
+    release
+	end
+}
+
+

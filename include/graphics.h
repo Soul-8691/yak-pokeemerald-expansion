@@ -9581,6 +9581,7 @@ extern const u32 gTrainerFrontPic_gertude[];
 extern const u32 gTrainerFrontPic_graceful[];
 extern const u32 gTrainerFrontPic_guard_draynor[];
 extern const u32 gTrainerFrontPic_quester[];
+extern const u32 gTrainerFrontPic_SoffanQuo[];
 
 extern const u32 gTrainerPalette_Hiker[];
 extern const u32 gTrainerPalette_AquaGruntM[];
@@ -9789,7 +9790,7 @@ extern const u32 gTrainerPalette_gertude[];
 extern const u32 gTrainerPalette_graceful[];
 extern const u32 gTrainerPalette_guard_draynor[];
 extern const u32 gTrainerPalette_quester[];
-
+extern const u32 gTrainerPalette_SoffanQuo[];
 
 extern const u8 gTrainerBackPic_protaganist_f[];
 extern const u8 gTrainerBackPic_protaganist_m[];
@@ -10709,8 +10710,26 @@ extern const u32 gItemIcon_BlackScale[];
 extern const u32 gItemIconPalette_BlackScale[];
 extern const u32 gItemIcon_GreenScale[];
 extern const u32 gItemIconPalette_GreenScale[];
+//MEGASTONES
 extern const u32 gItemIcon_FragmentOfJas[];
 extern const u32 gItemIconPalette_FragmentOfJas[];
+extern const u32 gItemIcon_MEGASTONE_TZHAAR[];
+extern const u32 gItemIconPalette_MEGASTONE_TZHAAR[];
+extern const u32 gItemIcon_MEGASTONE_TOKHAAR[];
+extern const u32 gItemIconPalette_MEGASTONE_TOKHAAR[];
+extern const u32 gItemIcon_MEGASTONE_WARRIOR[];
+extern const u32 gItemIconPalette_MEGASTONE_WARRIOR[];
+extern const u32 gItemIcon_MEGASTONE_SEER[];
+extern const u32 gItemIconPalette_MEGASTONE_SEER[];
+extern const u32 gItemIcon_MEGASTONE_ARCHER[];
+extern const u32 gItemIconPalette_MEGASTONE_ARCHER[];
+extern const u32 gItemIcon_MEGASTONE_CHAOS[];
+extern const u32 gItemIconPalette_MEGASTONE_CHAOS[];
+extern const u32 gItemIcon_MEGASTONE_KALPHITE[];
+extern const u32 gItemIconPalette_MEGASTONE_KALPHITE[];
+extern const u32 gItemIcon_MEGASTONE_BEAST[];
+extern const u32 gItemIconPalette_MEGASTONE_BEAST[];
+
 //pokescape key items
 extern const u32 gItemIcon_Pickaxe[];
 extern const u32 gItemIconPalette_Pickaxe[];

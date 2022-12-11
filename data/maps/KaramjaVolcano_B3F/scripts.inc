@@ -614,8 +614,13 @@ ENCOUNTER_JAD_3:
 	end
 
 
-ITEM_MegaEvolutionJas::
-	finditem ITEM_FRAGMENT_OF_JAS
+ITEM_MegaEvolution_TOKHAAR::
+	finditem ITEM_MEGASTONE_TOKHAAR
+	end
+
+
+ITEM_MegaEvolution_TZHAAR::
+	finditem ITEM_MEGASTONE_TZHAAR
 	end
 
 

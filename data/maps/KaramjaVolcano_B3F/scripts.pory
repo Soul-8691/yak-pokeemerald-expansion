@@ -627,8 +627,14 @@ script ENCOUNTER_JAD {
 }
 
 
-script ITEM_MegaEvolutionJas
+script ITEM_MegaEvolution_TOKHAAR
 {
-    finditem(ITEM_FRAGMENT_OF_JAS)
+    finditem(ITEM_MEGASTONE_TOKHAAR)
+    end
+}
+
+script ITEM_MegaEvolution_TZHAAR
+{
+    finditem(ITEM_MEGASTONE_TZHAAR)
     end
 }

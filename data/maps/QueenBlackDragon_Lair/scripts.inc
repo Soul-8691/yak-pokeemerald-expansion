@@ -209,6 +209,22 @@ BATTLE_RimmingtonMines_Slayer_1::
 	end
 
 
+BATTLE_Varrock_Max::
+	trainerbattle_single TRAINER_Varrock_Max, BATTLE_Varrock_Max_Text_0, BATTLE_Varrock_Max_Text_0
+	msgbox BATTLE_Varrock_Max_Text_0
+	hidenamebox
+	release
+	end
+
+
+BATTLE_Soffan_and_Quo::
+	trainerbattle_single TRAINER_Soffan_and_Quo, BATTLE_Varrock_Max_Text_0, BATTLE_Varrock_Max_Text_0
+	msgbox BATTLE_Varrock_Max_Text_0
+	hidenamebox
+	release
+	end
+
+
 QBDLAIR_1_Text_0:
 	.string "You activate the pillar!$"
 
@@ -291,3 +307,6 @@ BATTLE_RimmingtonMines_Slayer_1_Text_2:
 	.string "I've been trying to get rid of these\n"
 	.string "bots for the past few days, looks like\l"
 	.string "they might be broken now though.$"
+
+BATTLE_Varrock_Max_Text_0:
+	.string "…$"

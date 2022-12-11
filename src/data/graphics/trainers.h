@@ -411,7 +411,7 @@ const u32 gTrainerFrontPic_gertude[] = INCBIN_U32("graphics/trainers/pokescape/f
 const u32 gTrainerFrontPic_graceful[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/graceful.4bpp.lz");
 const u32 gTrainerFrontPic_guard_draynor[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/guard_draynor.4bpp.lz");
 const u32 gTrainerFrontPic_quester[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/TRAINER/quester.4bpp.lz");
-
+const u32 gTrainerFrontPic_SoffanQuo[] = INCBIN_U32("graphics/trainers/pokescape/front_pics/PLAYER/SoffanQuo.4bpp.lz");
 
 //POKESCAPE PALETTES
 const u32 gTrainerPalette_a_nub_tot[] = INCBIN_U32("graphics/trainers/pokescape/palettes/a_nub_tot.gbapal.lz");
@@ -528,6 +528,7 @@ const u32 gTrainerPalette_gertude[] = INCBIN_U32("graphics/trainers/pokescape/pa
 const u32 gTrainerPalette_graceful[] = INCBIN_U32("graphics/trainers/pokescape/palettes/graceful.gbapal.lz");
 const u32 gTrainerPalette_guard_draynor[] = INCBIN_U32("graphics/trainers/pokescape/palettes/guard_draynor.gbapal.lz");
 const u32 gTrainerPalette_quester[] = INCBIN_U32("graphics/trainers/pokescape/palettes/quester.gbapal.lz");
+const u32 gTrainerPalette_SoffanQuo[] = INCBIN_U32("graphics/trainers/pokescape/palettes/SoffanQuo.gbapal.lz");
 
 
 

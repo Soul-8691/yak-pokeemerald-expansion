@@ -222,6 +222,7 @@
 #define TRAINER_PIC_graceful                201
 #define TRAINER_PIC_guard_draynor                202
 #define TRAINER_PIC_quester                203
+#define TRAINER_PIC_SoffanQuo                204
 //#define TRAINER_PIC_			        204
 
 

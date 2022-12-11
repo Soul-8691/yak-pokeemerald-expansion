@@ -187,6 +187,8 @@
 #define TRAINER_RimmingtonMines_Slayer_1    157
 #define TRAINER_RimmingtonMines_DRAGONBOT_1    158
 #define TRAINER_RimmingtonMines_DRAGONBOT_2    159
+#define TRAINER_Varrock_Max    160
+#define TRAINER_Soffan_and_Quo    161
 
 
 

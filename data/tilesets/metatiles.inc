@@ -757,3 +757,10 @@ gMetatiles_PokeScape_HAM::
 	.align 1
 gMetatileAttributes_PokeScape_HAM::
 	.incbin "data/tilesets/secondary/pokescape_ham/metatile_attributes.bin"
+	.align 1
+gMetatiles_Edgeville::
+	.incbin "data/tilesets/secondary/edgeville/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Edgeville::
+	.incbin "data/tilesets/secondary/edgeville/metatile_attributes.bin"

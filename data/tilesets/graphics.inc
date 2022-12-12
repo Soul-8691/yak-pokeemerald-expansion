@@ -2290,3 +2290,23 @@ gTilesetPalettes_PokeScape_HAM::
 	.align 2
 gTilesetTiles_PokeScape_HAM::
 	.incbin "data/tilesets/secondary/pokescape_ham/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Edgeville::
+	.incbin "data/tilesets/secondary/edgeville/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/edgeville/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/edgeville/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/edgeville/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/edgeville/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/edgeville/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/edgeville/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/edgeville/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/edgeville/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/edgeville/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/edgeville/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/edgeville/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/edgeville/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Edgeville::
+	.incbin "data/tilesets/secondary/edgeville/tiles.4bpp.lz"

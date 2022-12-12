@@ -1140,3 +1140,14 @@ gTileset_PokeScape_HAM::
 	.4byte gMetatiles_PokeScape_HAM
 	.4byte gMetatileAttributes_PokeScape_HAM
 	.4byte NULL
+
+	.align 2
+gTileset_Edgeville::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Edgeville
+	.4byte gTilesetPalettes_Edgeville
+	.4byte gMetatiles_Edgeville
+	.4byte gMetatileAttributes_Edgeville
+	.4byte NULL

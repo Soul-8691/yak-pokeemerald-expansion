@@ -5017,7 +5017,7 @@
       "width": 38,
       "height": 38,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Varrock",
+      "secondary_tileset": "gTileset_Edgeville",
       "border_filepath": "data/layouts/Route27/border.bin",
       "blockdata_filepath": "data/layouts/Route27/map.bin"
     },
@@ -5027,7 +5027,7 @@
       "width": 44,
       "height": 50,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Barbarian_Village",
+      "secondary_tileset": "gTileset_Edgeville",
       "border_filepath": "data/layouts/Edgeville/border.bin",
       "blockdata_filepath": "data/layouts/Edgeville/map.bin"
     },

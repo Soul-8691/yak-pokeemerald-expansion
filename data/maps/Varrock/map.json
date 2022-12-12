@@ -61,16 +61,16 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 23,
-      "y": 10,
+      "graphics_id": "OBJ_EVENT_GFX_GUARD_VARROCK_1",
+      "x": 19,
+      "y": 13,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 3,
+      "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VARROCK_NPC_Guard1",
       "flag": "0"
     },
     {
@@ -113,8 +113,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 25,
+      "graphics_id": "OBJ_EVENT_GFX_GUARD_VARROCK_1",
+      "x": 26,
       "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -140,10 +140,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RSMVER_M",
-      "x": 23,
-      "y": 16,
+      "x": 25,
+      "y": 15,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -152,8 +152,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CAMERAMAN",
-      "x": 33,
+      "graphics_id": "OBJ_EVENT_GFX_FORTUNATO",
+      "x": 34,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
@@ -165,11 +165,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BARBARIAN_MALE_2",
-      "x": 31,
+      "graphics_id": "OBJ_EVENT_GFX_DIANGO",
+      "x": 33,
       "y": 10,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -191,7 +191,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_MUGGER",
       "x": 18,
       "y": 36,
       "elevation": 3,
@@ -205,19 +205,19 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_VARROCK_1",
-      "x": 5,
-      "y": 14,
+      "x": 4,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VARROCK_NPC_Guard2",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_GUARD_VARROCK_3",
       "x": 26,
       "y": 43,
       "elevation": 3,
@@ -231,15 +231,15 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FIREMAKER",
-      "x": 13,
+      "x": 11,
       "y": 11,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 9,
       "movement_range_y": 9,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VARROCK_NPC_Firemaker",
       "flag": "0"
     },
     {
@@ -257,15 +257,15 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 48,
+      "x": 46,
       "y": 29,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_RIGHT_AND_LEFT",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VARROCK_SCAMMER",
       "flag": "0"
     },
     {
@@ -283,10 +283,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 56,
+      "x": 57,
       "y": 20,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -295,11 +295,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 57,
+      "graphics_id": "OBJ_EVENT_GFX_DIVINER",
+      "x": 58,
       "y": 20,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -321,13 +321,13 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_SKILLER",
       "x": 26,
-      "y": 30,
+      "y": 29,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
+      "movement_range_x": 4,
+      "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
@@ -347,11 +347,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_GUARD_VARROCK_3",
       "x": 32,
       "y": 15,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -360,11 +360,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_DWARF_1",
       "x": 33,
       "y": 15,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -382,7 +382,7 @@
       "movement_range_y": 20,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_DOG",
       "flag": "0"
     }
   ],
@@ -458,8 +458,8 @@
       "dest_warp_id": 0
     },
     {
-      "x": 9,
-      "y": 26,
+      "x": 31,
+      "y": 32,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
       "dest_warp_id": 0
@@ -486,8 +486,8 @@
       "dest_warp_id": 0
     },
     {
-      "x": 16,
-      "y": 40,
+      "x": 28,
+      "y": 20,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
       "dest_warp_id": 0
@@ -511,6 +511,13 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "VARROCK_Gypsy_Aris_SIGNPOST"
+    }
   ]
 }

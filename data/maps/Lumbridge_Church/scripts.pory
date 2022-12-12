@@ -76,26 +76,6 @@ script Pub_Mod_Dolan
 
 
 
-script GoldenGnome
-{
-	lock
-	faceplayer
-	msgbox(format("Hey you!\pSomebody dropped this, it's a little broken, but you can have it."))
-	givemon (SPECIES_GNOMEY,5, ITEM_NONE)
-	msgbox(format("Would you like to give your monster a nickname?"), MSGBOX_YESNO)
-		if (var(VAR_RESULT) == NO){
-		release
-		}
-		else{
-		setvar (VAR_0x8004, 0)
-		call (Common_EventScript_NameReceivedPartyMon)
-		}
-	msgbox(format("OBTAINED A GOLDEN GNOME."))	
-	trainerbattle_single(TRAINER_GOBLIN_4_ROUTE12, format("Also want to battle my non-broken one?!"),format("Human strong. This now Goblin and human home."))
-	release
-	end
-}	
-
 
 
 

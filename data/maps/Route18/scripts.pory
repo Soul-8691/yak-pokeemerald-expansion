@@ -1,0 +1,104 @@
+mapscripts Route18_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+    }
+}
+
+
+
+//NPCS
+
+script NPC_ROUTE18_NPC1
+{
+    lock
+    faceplayer
+    namebox(".")
+    msgbox(format("."))
+    hidenamebox
+    release
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//BATTLES
+
+script BATTLE_ROUTE18_TRAINER1 // AGILITY
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Make this battle quick, I've got my dailies to do!"),format("Did I even get any experience from that?!"))
+    //namebox ("")
+    msgbox(format("Talk to me after I have finished my dailies."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE18_TRAINER2 //Canada Grrl
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("SPOTTED!"),format("Oh wait, you aren't a penguin."))
+    namebox ("Canada Grrl")
+    msgbox(format("I heard there was a Penguin in this area but all I see are cats.\pHave you seen any?"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE18_TRAINER3 //BOT
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("1001 OAK LOGS.\p1002 OAK LOGS.\p1003 OAK LOGS.\pINVENTORY FULL.\lPROCEEDING TO BANK.\pERROR PATH BLOCKED INITIATE ERROR HANDLING."),format("ERROR. ERROR. ERROR."))
+    //namebox ("")
+    msgbox(format("ERROR.\lERROR.\pPROCEEDING TO DROP LOGS TO FIX ERROR.\pERROR NO LOGS FOUND.\pPROCEEDING TO DROP LOGS TO FIX ERROR."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE18_TRAINER4 //WOODCUTTER
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("How do trees get online?"),format("They Log in!"))
+    //namebox ("")
+    msgbox(format("How do trees get online?\pThey log in!\p"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE18_TRAINER5 //WOODCUTTER
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Do yew think yew have what it takes to cut me down?!"),format("Now I am feeling all sappy."))
+    //namebox ("")
+    msgbox(format("If yew asked me if I thought you wood win, I wood not have believed it."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE18_TRAINER6 // GOBLIN
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("This is me neck of the woods!\pTurn back or face me!"),format("Me surrender!"))
+    //namebox ("")
+    msgbox(format("Me guess you can go through me neck of the woods.\pMe respect you strength."))
+	hidenamebox
+    release
+	end
+}
+
+
+script BATTLE_ROUTE18_TRAINER7 // GUARD
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Good of you to come through the east gate, you would by cruched by the south."),format("Maybe you can stand up against those Dark Wizards."))
+    //namebox ("")
+    msgbox(format("The Dark Wizards are a problem for years but we don't have enough funding to deal with them."))
+	hidenamebox
+    release
+	end
+}
+

@@ -1630,8 +1630,8 @@
 #define FLAG_UNUSED_0x938                           (DAILY_FLAGS_START + 0x18) // PUB TRAINER 4
 #define FLAG_UNUSED_0x939                           (DAILY_FLAGS_START + 0x19) // PUB TRAINER 5
 #define FLAG_UNUSED_0x93A                           (DAILY_FLAGS_START + 0x1A) // PUB TRAINER 6
-#define FLAG_UNUSED_0x93B                           (DAILY_FLAGS_START + 0x1B) // Unused Flag
-#define FLAG_UNUSED_0x93C                           (DAILY_FLAGS_START + 0x1C) // Unused Flag
+#define FLAG_UNUSED_0x93B                           (DAILY_FLAGS_START + 0x1B) // PUB TRAINER 7
+#define FLAG_UNUSED_0x93C                           (DAILY_FLAGS_START + 0x1C) // PUB TRAINER 8
 #define FLAG_UNUSED_0x93D                           (DAILY_FLAGS_START + 0x1D) // Unused Flag
 #define FLAG_UNUSED_0x93E                           (DAILY_FLAGS_START + 0x1E) // Unused Flag
 #define FLAG_UNUSED_0x93F                           (DAILY_FLAGS_START + 0x1F) // Unused Flag

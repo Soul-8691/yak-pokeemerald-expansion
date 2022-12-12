@@ -59,27 +59,6 @@ Pub_Mod_Dolan_4:
 	end
 
 
-GoldenGnome::
-	lock
-	faceplayer
-	msgbox GoldenGnome_Text_0
-	givemon SPECIES_GNOMEY, 5, ITEM_NONE
-	msgbox GoldenGnome_Text_1, MSGBOX_YESNO
-	compare VAR_RESULT, NO
-	goto_if_eq GoldenGnome_2
-	setvar VAR_0x8004, 0
-	call Common_EventScript_NameReceivedPartyMon
-GoldenGnome_1:
-	msgbox GoldenGnome_Text_2
-	trainerbattle_single TRAINER_GOBLIN_4_ROUTE12, GoldenGnome_Text_3, GoldenGnome_Text_4
-	release
-	end
-
-GoldenGnome_2:
-	release
-	goto GoldenGnome_1
-
-
 GnomeBoi_Kevin::
 	lock
 	faceplayer
@@ -388,26 +367,6 @@ Pub_Mod_Dolan_Text_2:
 	.string "..hic..\p"
 	.string "Where is my duck?\p"
 	.string "..hic..$"
-
-GoldenGnome_Text_0:
-	.string "Hey you!\p"
-	.string "Somebody dropped this, it's a little\n"
-	.string "broken, but you can have it.$"
-
-GoldenGnome_Text_1:
-	.string "Would you like to give your monster a\n"
-	.string "nickname?$"
-
-GoldenGnome_Text_2:
-	.string "OBTAINED A GOLDEN GNOME.$"
-
-GoldenGnome_Text_3:
-	.string "Also want to battle my non-broken\n"
-	.string "one?!$"
-
-GoldenGnome_Text_4:
-	.string "Human strong. This now Goblin and human\n"
-	.string "home.$"
 
 GnomeBoi_Kevin_Text_0:
 	.string "Hi Boss! What can I do for ya?$"

@@ -13,6 +13,14 @@ mapscripts Varrock_MapScripts {
 
 
 
+script VARROCK_Gypsy_Aris_SIGNPOST
+{
+    msgbox(format("My tent was destroyed by some adventurers having MvM battles in the square and is awaiting repair.\pI've moved to a small house in north Varrock for the time being.\l-Gypsy Aris."))
+    closemessage
+    release
+    end
+}
+
 //NPCS
 
 
@@ -20,8 +28,65 @@ mapscripts Varrock_MapScripts {
 script VARROCK_SCAMMER
 {
     faceplayer
-    namebox ("SUS")
+    namebox ("Suspicious Man")
     msgbox(format("Pssst, give me your monster, I'll trim it for you."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+script VARROCK_NPC_Trader1
+{
+    
+    //namebox ("")
+    msgbox(format("I heard you can trade your monsters with others at the Grand Exchange.\pIs that true?"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_Trader2
+{
+    
+    //namebox ("")
+    msgbox(format("You can trade monsters at Grand Exchange with others.\pThe only downside is that I've heard it is a hassle to set up a trade and you have to know people."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_Firemaker
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("A long line of fires is the best way to train the Firemaking skill."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+script VARROCK_NPC_Guard1
+{
+    faceplayer
+    namebox ("Guard")
+    msgbox(format("We had an incident the other month which was caused by an MvM battle getting out of hand.\pFor some reason an adventurer thought it would be a good idea to unleash a Dragon in the square.\pSo now we are on duty to make sure no more damages come to other buildings."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_Guard2
+{
+    faceplayer
+    namebox ("Guard")
+    msgbox(format("Welcome to Varrock.\pIf you are here to challenge the King to an MvM gym battle, then you can find him at the palace in the middle of town."))
     closemessage
     hidenamebox
     release

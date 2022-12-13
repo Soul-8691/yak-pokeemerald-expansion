@@ -340,7 +340,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hunter_M;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hunter_F;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Farmer_M;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Farmer_F;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rusher;
+//
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Noob;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Quester;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Jmod;
@@ -484,6 +484,8 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Labrador;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Guard;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Corgi;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Dalmatian;
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pker_Rusher;
 
 //ORES
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CopperOre;
@@ -834,7 +836,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_HUNTER_F] =                      &gObjectEventGraphicsInfo_Hunter_F,
     [OBJ_EVENT_GFX_FARMER_M] =                      &gObjectEventGraphicsInfo_Farmer_M,
     [OBJ_EVENT_GFX_FARMER_F] =                      &gObjectEventGraphicsInfo_Farmer_F,
-    [OBJ_EVENT_GFX_RUSHER] =                        &gObjectEventGraphicsInfo_Rusher,
+    //
     [OBJ_EVENT_GFX_NOOB] =                          &gObjectEventGraphicsInfo_Noob,
     [OBJ_EVENT_GFX_QUESTER] =                       &gObjectEventGraphicsInfo_Quester,
     [OBJ_EVENT_GFX_JMOD] =                          &gObjectEventGraphicsInfo_Jmod,
@@ -978,7 +980,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DOG_GUARD] =                    &gObjectEventGraphicsInfo_Dog_Guard,
     [OBJ_EVENT_GFX_DOG_CORGI] =                    &gObjectEventGraphicsInfo_Dog_Corgi,
     [OBJ_EVENT_GFX_DOG_DALMATIAN] =                    &gObjectEventGraphicsInfo_Dog_Dalmatian,
-
+    [OBJ_EVENT_GFX_PKER_RUSHER] =                    &gObjectEventGraphicsInfo_Pker_Rusher,
 
 //ORES 
 	[OBJ_EVENT_GFX_COPPER_ORE] =          		    &gObjectEventGraphicsInfo_CopperOre,

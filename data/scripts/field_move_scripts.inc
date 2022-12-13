@@ -515,7 +515,7 @@ EventScript_CancelSmash:: @ 8290837
 
 Text_WantToSmash: @ 829083A
 	.string "This rock appears to be breakable.\n"
-	.string "Would you like to use ROCK SMASH?$"
+	.string "Would you like to use the PICKAXE?$"
 
 Text_CantSmash: @ 829087F
 	.string "It's a rugged rock.\n"

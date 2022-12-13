@@ -542,7 +542,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_HUNTER_F 0x117F
 #define OBJ_EVENT_PAL_FARMER_M 0x1180
 #define OBJ_EVENT_PAL_FARMER_F 0x1181
-#define OBJ_EVENT_PAL_RUSHER 0x1182
+// 0x1182
 #define OBJ_EVENT_PAL_NOOB 0x1183
 #define OBJ_EVENT_PAL_QUESTER 0x1184
 #define OBJ_EVENT_PAL_JMOD 0x1185
@@ -631,8 +631,9 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_SKELETAL_OX_M 0x1231
 #define OBJ_EVENT_PAL_SKELETAL_OX_F 0x1232
 */
-#define OBJ_EVENT_PAL_TERRORBIRD_1 0x1233
-#define OBJ_EVENT_PAL_TERRORBIRD_2 0x1234
+#define OBJ_EVENT_PAL_TERRORBIRDS 0x1233
+#define OBJ_EVENT_PAL_PKER_RUSHER 0x1234
+//#define OBJ_EVENT_PAL_TERRORBIRD_2 0x1234
 #define OBJ_EVENT_PAL_TZTOK_JAD 0x1235
 #define OBJ_EVENT_PAL_MOLE_GIANT 0x1236
 #define OBJ_EVENT_PAL_MOLE_BABY 0x1237
@@ -709,6 +710,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_BARROWS			0x125B
 #define OBJ_EVENT_PAL_GUARDS			0x125B
 */
+//NOTE: APPEARNTLY 0x1263 causes palette issues. It might be the same further on. Then again it could have been because the Archaeolist was assigned that number first.
 
 #define OBJ_EVENT_PAL_TAG_NONE 0x12FF
 
@@ -858,7 +860,7 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Hunter_F, OBJ_EVENT_PAL_HUNTER_F},
     {gObjectEventPalette_Farmer_M, OBJ_EVENT_PAL_FARMER_M},
     {gObjectEventPalette_Farmer_F, OBJ_EVENT_PAL_FARMER_F},
-    {gObjectEventPalette_Rusher, OBJ_EVENT_PAL_RUSHER},
+    //
     {gObjectEventPalette_Noob, OBJ_EVENT_PAL_NOOB},
     {gObjectEventPalette_Quester, OBJ_EVENT_PAL_QUESTER},
     {gObjectEventPalette_Jmod, OBJ_EVENT_PAL_JMOD},
@@ -947,8 +949,8 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_Skeletal_Ox_M, OBJ_EVENT_PAL_SKELETAL_OX_M},
     {gObjectEventPalette_Skeletal_Ox_F, OBJ_EVENT_PAL_SKELETAL_OX_F},
     */
-    {gObjectEventPalette_Terrorbird_1, OBJ_EVENT_PAL_TERRORBIRD_1},
-    {gObjectEventPalette_Terrorbird_2, OBJ_EVENT_PAL_TERRORBIRD_2},
+    //{gObjectEventPalette_Terrorbird_1, OBJ_EVENT_PAL_TERRORBIRD_1},
+    //{gObjectEventPalette_Terrorbird_2, OBJ_EVENT_PAL_TERRORBIRD_2},
     {gObjectEventPalette_TzTok_Jad, OBJ_EVENT_PAL_TZTOK_JAD},
     {gObjectEventPalette_Mole_Giant, OBJ_EVENT_PAL_MOLE_GIANT},
     {gObjectEventPalette_Mole_Baby, OBJ_EVENT_PAL_MOLE_BABY},
@@ -1022,12 +1024,14 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_ZAMORAK, OBJ_EVENT_PAL_ZAMORAK},
     {gObjectEventPalette_SARADOMIN, OBJ_EVENT_PAL_SARADOMIN},
     {gObjectEventPalette_GUTHIX, OBJ_EVENT_PAL_GUTHIX},
+    {gObjectEventPalette_TERRORBIRDS, OBJ_EVENT_PAL_TERRORBIRDS},
     
     /*
     {gObjectEventPalette_GOBLINS, OBJ_EVENT_PAL_GOBLINS},
     {gObjectEventPalette_BARROWS, OBJ_EVENT_PAL_BARROWS},
     {gObjectEventPalette_GUARDS, OBJ_EVENT_PAL_GUARDS},
     */
+   {gObjectEventPalette_Pker_Rusher, OBJ_EVENT_PAL_PKER_RUSHER},
 
     {NULL,                  0x0000},
 };

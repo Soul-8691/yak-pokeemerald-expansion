@@ -3307,19 +3307,9 @@ const struct SpriteFrameImage gObjectEventPicTable_Farmer_F[] = {
     overworld_frame(gObjectEventPic_Farmer_F, 2, 4, 7),
     overworld_frame(gObjectEventPic_Farmer_F, 2, 4, 8),
 };
+/*
 
-const struct SpriteFrameImage gObjectEventPicTable_Rusher[] = {
-    overworld_frame(gObjectEventPicTable_Rusher, 2, 4, 0),
-    overworld_frame(gObjectEventPicTable_Rusher, 2, 4, 1),
-    overworld_frame(gObjectEventPicTable_Rusher, 2, 4, 2),
-    overworld_frame(gObjectEventPicTable_Rusher, 2, 4, 3),
-    overworld_frame(gObjectEventPicTable_Rusher, 2, 4, 4),
-    overworld_frame(gObjectEventPicTable_Rusher, 2, 4, 5),
-    overworld_frame(gObjectEventPicTable_Rusher, 2, 4, 6),
-    overworld_frame(gObjectEventPicTable_Rusher, 2, 4, 7),
-    overworld_frame(gObjectEventPicTable_Rusher, 2, 4, 8),
-};
-
+*/
 const struct SpriteFrameImage gObjectEventPicTable_Noob[] = {
     overworld_frame(gObjectEventPic_Noob, 2, 4, 0),
     overworld_frame(gObjectEventPic_Noob, 2, 4, 1),
@@ -4736,6 +4726,17 @@ const struct SpriteFrameImage gObjectEventPicTable_Durial321[] = {
     overworld_frame(gObjectEventPic_Durial321, 2, 4, 8),
 };
 
+const struct SpriteFrameImage gObjectEventPicTable_Pker_Rusher[] = {
+    overworld_frame(gObjectEventPic_Pker_Rusher, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Pker_Rusher, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Pker_Rusher, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Pker_Rusher, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Pker_Rusher, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Pker_Rusher, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Pker_Rusher, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Pker_Rusher, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Pker_Rusher, 2, 4, 8),
+};
 
 
 

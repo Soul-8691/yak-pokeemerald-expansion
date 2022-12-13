@@ -336,7 +336,7 @@
 #define OBJ_EVENT_GFX_HUNTER_F				    330
 #define OBJ_EVENT_GFX_FARMER_M				    331
 #define OBJ_EVENT_GFX_FARMER_F				    332
-#define OBJ_EVENT_GFX_RUSHER			    	333
+//			    	333
 #define OBJ_EVENT_GFX_NOOB				        334
 #define OBJ_EVENT_GFX_QUESTER				    335
 #define OBJ_EVENT_GFX_JMOD				        336
@@ -490,8 +490,9 @@
 #define OBJ_EVENT_GFX_DOG_GUARD		            475
 #define OBJ_EVENT_GFX_DOG_CORGI		            476
 #define OBJ_EVENT_GFX_DOG_DALMATIAN	        	477
+#define OBJ_EVENT_GFX_PKER_RUSHER				478
 
-#define NUM_OBJ_EVENT_GFX                        478
+#define NUM_OBJ_EVENT_GFX                        479
 
 
 // These are dynamic object gfx ids.

@@ -1082,9 +1082,6 @@ $(OBJEVENTGFXDIR)/pokescape_overworlds/Farmer_M.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokescape_overworlds/Farmer_F.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokescape_overworlds/Rusher.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 4
-
 $(OBJEVENTGFXDIR)/pokescape_overworlds/Noob.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
@@ -1502,3 +1499,6 @@ $(OBJEVENTGFXDIR)/pokescape_overworlds/Dog_Corgi.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokescape_overworlds/Dog_Dalmatian.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokescape_overworlds/Pker_Rusher.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4

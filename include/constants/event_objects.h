@@ -491,8 +491,9 @@
 #define OBJ_EVENT_GFX_DOG_CORGI		            476
 #define OBJ_EVENT_GFX_DOG_DALMATIAN	        	477
 #define OBJ_EVENT_GFX_PKER_RUSHER				478
+#define OBJ_EVENT_GFX_RUNE_ARMOUR				479
 
-#define NUM_OBJ_EVENT_GFX                        479
+#define NUM_OBJ_EVENT_GFX                        480
 
 
 // These are dynamic object gfx ids.

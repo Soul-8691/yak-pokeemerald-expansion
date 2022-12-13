@@ -705,6 +705,8 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_ZAMORAK			0x1260
 #define OBJ_EVENT_PAL_SARADOMIN			0x1261
 #define OBJ_EVENT_PAL_GUTHIX			0x1262
+#define OBJ_EVENT_PAL_KNIGHTS1			0x1266
+#define OBJ_EVENT_PAL_KNIGHTS2			0x1267
 /*
 #define OBJ_EVENT_PAL_GOBLINS			0x125B
 #define OBJ_EVENT_PAL_BARROWS			0x125B
@@ -1025,7 +1027,8 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_SARADOMIN, OBJ_EVENT_PAL_SARADOMIN},
     {gObjectEventPalette_GUTHIX, OBJ_EVENT_PAL_GUTHIX},
     {gObjectEventPalette_TERRORBIRDS, OBJ_EVENT_PAL_TERRORBIRDS},
-    
+    {gObjectEventPalette_KNIGHTS1, OBJ_EVENT_PAL_KNIGHTS1},
+    {gObjectEventPalette_KNIGHTS2, OBJ_EVENT_PAL_KNIGHTS2},
     /*
     {gObjectEventPalette_GOBLINS, OBJ_EVENT_PAL_GOBLINS},
     {gObjectEventPalette_BARROWS, OBJ_EVENT_PAL_BARROWS},

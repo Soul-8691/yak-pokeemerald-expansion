@@ -486,6 +486,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Corgi;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Dalmatian;
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pker_Rusher;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rune_Armour;
 
 //ORES
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CopperOre;
@@ -981,6 +982,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DOG_CORGI] =                    &gObjectEventGraphicsInfo_Dog_Corgi,
     [OBJ_EVENT_GFX_DOG_DALMATIAN] =                    &gObjectEventGraphicsInfo_Dog_Dalmatian,
     [OBJ_EVENT_GFX_PKER_RUSHER] =                    &gObjectEventGraphicsInfo_Pker_Rusher,
+    [OBJ_EVENT_GFX_RUNE_ARMOUR] =                    &gObjectEventGraphicsInfo_Rune_Armour,
 
 //ORES 
 	[OBJ_EVENT_GFX_COPPER_ORE] =          		    &gObjectEventGraphicsInfo_CopperOre,

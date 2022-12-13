@@ -2266,6 +2266,7 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_RimmingtonMines_DRAGONBOT_2),
         .party = {.NoItemDefaultMoves = sParty_RimmingtonMines_DRAGONBOT_2},
     },
+
      [TRAINER_RimmingtonMines_Slayer_1] =
     {
         .partyFlags = 0,
@@ -2279,6 +2280,7 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_RimmingtonMines_Slayer_1),
         .party = {.NoItemDefaultMoves = sParty_RimmingtonMines_Slayer_1},
     },
+
     [TRAINER_Varrock_Max] =
     {
         .partyFlags = 0,
@@ -2307,7 +2309,100 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_Soffan_and_Quo},
     },
 
-
+    //ROUTE 18
+    /*
+    [TRAINER_ROUTE18_TRAINER1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_AGILE,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_graceful,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE18_TRAINER1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE18_TRAINER1},
+    },
+    [TRAINER_ROUTE18_TRAINER2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_DnDer,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_canada_grrl,
+        .trainerName = _("Canada Grrl"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE18_TRAINER2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE18_TRAINER2},
+    },
+    [TRAINER_ROUTE18_TRAINER3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_WOODCUTTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_woodcutter,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE18_TRAINER3),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE18_TRAINER3},
+    },
+    [TRAINER_ROUTE18_TRAINER4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_WOODCUTTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_woodcutter,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE18_TRAINER4),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE18_TRAINER4},
+    },
+    [TRAINER_ROUTE18_TRAINER5] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_BOT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_noob_default,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE18_TRAINER5),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE18_TRAINER5},
+    },
+    [TRAINER_ROUTE18_TRAINER6] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_guard_varrock,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE18_TRAINER6),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE18_TRAINER6},
+    },
+    [TRAINER_ROUTE18_TRAINER7] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GOBLIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_goblin,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE18_TRAINER7),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE18_TRAINER7},
+    },
+*/
 
 
 };

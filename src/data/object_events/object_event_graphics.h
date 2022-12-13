@@ -655,6 +655,7 @@ const u32 gObjectEventPic_Dog_Guard[] = INCBIN_U32("graphics/object_events/pics/
 const u32 gObjectEventPic_Dog_Corgi[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Dog_Corgi.4bpp");
 const u32 gObjectEventPic_Dog_Dalmatian[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Dog_Dalmatian.4bpp");
 const u32 gObjectEventPic_Pker_Rusher[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Pker_Rusher.4bpp");
+const u32 gObjectEventPic_Rune_Armour[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Rune_Armour.4bpp");
 //POKESCAPE PALETTES
 /*
 const u16 gObjectEventPalette_Skeleton_1[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Skeleton_1.gbapal");
@@ -907,6 +908,9 @@ const u16 gObjectEventPalette_ZAMORAK[] = INCBIN_U16("graphics/object_events/pal
 const u16 gObjectEventPalette_SARADOMIN[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/Saradomin.gbapal");
 const u16 gObjectEventPalette_GUTHIX[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/Guthix.gbapal");
 const u16 gObjectEventPalette_TERRORBIRDS[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/Terrorbirds.gbapal");
+const u16 gObjectEventPalette_KNIGHTS1[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/Knights1.gbapal");
+const u16 gObjectEventPalette_KNIGHTS2[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/Knights2.gbapal");
+
 
 const u16 gObjectEventPalette_Pker_Rusher[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/Pker_Rusher.gbapal");
 /*

@@ -210,16 +210,23 @@ BATTLE_RimmingtonMines_Slayer_1::
 
 
 BATTLE_Varrock_Max::
-	trainerbattle_single TRAINER_Varrock_Max, BATTLE_Varrock_Max_Text_0, BATTLE_Varrock_Max_Text_0
-	msgbox BATTLE_Varrock_Max_Text_0
+	namebox BATTLE_Varrock_Max_Text_0
+	msgbox BATTLE_Varrock_Max_Text_1
+	hidenamebox
+	release
+	end
+
+
+NPC_Varrock_MaxRock::
+	msgbox NPC_Varrock_MaxRock_Text_0
 	hidenamebox
 	release
 	end
 
 
 BATTLE_Soffan_and_Quo::
-	trainerbattle_single TRAINER_Soffan_and_Quo, BATTLE_Varrock_Max_Text_0, BATTLE_Varrock_Max_Text_0
-	msgbox BATTLE_Varrock_Max_Text_0
+	trainerbattle_single TRAINER_Soffan_and_Quo, BATTLE_Soffan_and_Quo_Text_0, BATTLE_Soffan_and_Quo_Text_0
+	msgbox BATTLE_Soffan_and_Quo_Text_0
 	hidenamebox
 	release
 	end
@@ -309,4 +316,15 @@ BATTLE_RimmingtonMines_Slayer_1_Text_2:
 	.string "they might be broken now though.$"
 
 BATTLE_Varrock_Max_Text_0:
+	.string "Max$"
+
+BATTLE_Varrock_Max_Text_1:
+	.string "Come back and talk to me once you have\n"
+	.string "achieved something great.$"
+
+NPC_Varrock_MaxRock_Text_0:
+	.string "It is a massive rock!\p"
+	.string "It appears to be alive.$"
+
+BATTLE_Soffan_and_Quo_Text_0:
 	.string "…$"

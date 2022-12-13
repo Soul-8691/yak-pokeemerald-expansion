@@ -59,7 +59,7 @@ MillLaneMillFlourShop:
     end
 
 MillLaneMill_Item_FLOUR_POT::
-	finditem ITEM_FLOUR_POT
+	finditem ITEM_BREAD
 	end
 
 

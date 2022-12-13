@@ -319,9 +319,22 @@ script BATTLE_RimmingtonMines_Slayer_1
 
 script BATTLE_Varrock_Max
 {
-    trainerbattle_single(TRAINER_Varrock_Max, format("…"),format("…"))
-    //namebox ("")
-    msgbox(format("…"))
+	namebox ("Max")
+    msgbox(format("Come back and talk to me once you have achieved something great."))
+    //trainerbattle_single(TRAINER_Varrock_Max, format("…"),format("…"))
+    //namebox ("Max")
+    //msgbox(format("…"))
+	hidenamebox
+    release
+	end
+}
+
+script NPC_Varrock_MaxRock
+{
+    msgbox(format("It is a massive rock!\pIt appears to be alive."))
+    //trainerbattle_single(TRAINER_Varrock_Max, format("…"),format("…"))
+    //namebox ("Max")
+    //msgbox(format("…"))
 	hidenamebox
     release
 	end

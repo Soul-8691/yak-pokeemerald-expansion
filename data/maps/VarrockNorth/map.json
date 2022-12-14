@@ -399,15 +399,15 @@
       "x": 27,
       "y": 15,
       "elevation": 0,
-      "dest_map": "MAP_VARROCK_NORTH",
+      "dest_map": "MAP_VARROCK_PALACE_1F",
       "dest_warp_id": "0"
     },
     {
       "x": 28,
       "y": 15,
       "elevation": 0,
-      "dest_map": "MAP_VARROCK_NORTH",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_VARROCK_PALACE_1F",
+      "dest_warp_id": "1"
     },
     {
       "x": 49,

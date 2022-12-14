@@ -14,29 +14,29 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_LUMBRIDGE_SWAMP",
       "offset": -22,
-      "map": "MAP_LUMBRIDGE_SWAMP"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE12",
       "offset": -32,
-      "map": "MAP_ROUTE12"
+      "direction": "right"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE1",
       "offset": -38,
-      "map": "MAP_ROUTE1"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE14",
       "offset": 42,
-      "map": "MAP_ROUTE14"
+      "direction": "up"
     },
     {
-      "direction": "dive",
+      "map": "MAP_UNDERWATER_LUMBRIDGE",
       "offset": 0,
-      "map": "MAP_UNDERWATER_LUMBRIDGE"
+      "direction": "dive"
     }
   ],
   "object_events": [
@@ -372,112 +372,112 @@
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_STARTER1",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 27,
       "y": 35,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_1",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 36,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_RODDECK1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 9,
       "y": 12,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_STARTER2",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 21,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_GENERAL_STORE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 30,
       "y": 35,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_BOBS_AXES1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 31,
       "y": 40,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_3",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 33,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_3",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_BANK",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 26,
       "y": 26,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_CASTLE_1",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 26,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_CASTLE_1",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 26,
       "y": 28,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_CASTLE_1",
-      "dest_warp_id": 9
+      "dest_warp_id": "9"
     },
     {
       "x": 29,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_HOUSE_4",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 41,
       "y": 29,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_CHURCH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 16,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 4
+      "dest_warp_id": "4"
     },
     {
       "x": 42,
       "y": 29,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_CHURCH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

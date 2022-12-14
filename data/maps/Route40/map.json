@@ -14,14 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_ROUTE23",
       "offset": -44,
-      "map": "MAP_ROUTE23"
+      "direction": "up"
     },
     {
-      "direction": "up",
+      "map": "MAP_BARBARIAN_VILLAGE",
       "offset": 8,
-      "map": "MAP_BARBARIAN_VILLAGE"
+      "direction": "up"
     }
   ],
   "object_events": [

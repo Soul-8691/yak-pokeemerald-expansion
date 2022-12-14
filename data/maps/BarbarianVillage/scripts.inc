@@ -29,7 +29,7 @@ NPC_BARB_BLOCKADE_1::
 NPC_BARB_BLOCKADE_1_1:
 	compare VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 1
 	goto_if_eq NPC_BARB_BLOCKADE_1_5
-NPC_BARB_BLOCKADE_1_4:
+	msgbox NPC_BARB_BLOCKADE_1_Text_5
 	hidenamebox
 	closemessage
 	release
@@ -37,12 +37,13 @@ NPC_BARB_BLOCKADE_1_4:
 
 NPC_BARB_BLOCKADE_1_2:
 	msgbox NPC_BARB_BLOCKADE_1_Text_1
-	goto_if_set FLAG_BADGE01_GET, NPC_BARB_BLOCKADE_1_8
+	goto_if_set FLAG_BADGE01_GET, NPC_BARB_BLOCKADE_1_9
 	goto NPC_BARB_BLOCKADE_1_1
 
 NPC_BARB_BLOCKADE_1_5:
 	msgbox NPC_BARB_BLOCKADE_1_Text_4
-	goto NPC_BARB_BLOCKADE_1_4
+	release
+	end
 
 NPC_BARB_BLOCKADE_1_7:
 	msgbox NPC_BARB_BLOCKADE_1_Text_2
@@ -59,7 +60,15 @@ NPC_BARB_BLOCKADE_1_7:
 	end
 
 NPC_BARB_BLOCKADE_1_8:
-	goto_if_set FLAG_BADGE02_GET, NPC_BARB_BLOCKADE_1_7
+	goto_if_set FLAG_BADGE03_GET, NPC_BARB_BLOCKADE_1_12
+	goto NPC_BARB_BLOCKADE_1_1
+
+NPC_BARB_BLOCKADE_1_9:
+	goto_if_set FLAG_BADGE02_GET, NPC_BARB_BLOCKADE_1_8
+	goto NPC_BARB_BLOCKADE_1_1
+
+NPC_BARB_BLOCKADE_1_12:
+	goto_if_set FLAG_BADGE04_GET, NPC_BARB_BLOCKADE_1_7
 	goto NPC_BARB_BLOCKADE_1_1
 
 
@@ -165,18 +174,24 @@ NPC_BARB_BLOCKADE_1_Text_0:
 
 NPC_BARB_BLOCKADE_1_Text_1:
 	.string "Only the strong may enter our longhall!\p"
-	.string "Come back when you have proved\n"
-	.string "yourself in battle.$"
+	.string "You should probably have at least four\n"
+	.string "badges before attempting.$"
 
 NPC_BARB_BLOCKADE_1_Text_2:
-	.string "You have the Lumbridge Badge and\n"
-	.string "Falador Badge!$"
+	.string "Oorgh!!\p"
+	.string "Impressive you have at least four\n"
+	.string "badges.$"
 
 NPC_BARB_BLOCKADE_1_Text_3:
 	.string "You may enter!$"
 
 NPC_BARB_BLOCKADE_1_Text_4:
 	.string "You are very strong.$"
+
+NPC_BARB_BLOCKADE_1_Text_5:
+	.string "You may still attempt the gym challenge\n"
+	.string "if you wish but be warned we will not go\l"
+	.string "easy on you.$"
 
 NPC_BARBARIANVILLAGE_DUNGEONGIRL_Text_0:
 	.string "Only once you have proved yourself a\n"

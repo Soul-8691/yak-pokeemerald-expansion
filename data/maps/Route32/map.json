@@ -14,29 +14,29 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "right",
+      "map": "MAP_ROUTE32",
       "offset": 0,
-      "map": "MAP_ROUTE32"
+      "direction": "right"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE32",
       "offset": 0,
-      "map": "MAP_ROUTE32"
+      "direction": "left"
     },
     {
-      "direction": "left",
+      "map": "MAP_MUSA_POINT",
       "offset": -12,
-      "map": "MAP_MUSA_POINT"
+      "direction": "left"
     },
     {
-      "direction": "right",
+      "map": "MAP_MUDSKIPPER_POINT",
       "offset": 0,
-      "map": "MAP_MUDSKIPPER_POINT"
+      "direction": "right"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE11",
       "offset": 56,
-      "map": "MAP_ROUTE11"
+      "direction": "up"
     }
   ],
   "object_events": [

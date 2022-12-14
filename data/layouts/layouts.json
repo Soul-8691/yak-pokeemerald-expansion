@@ -6874,8 +6874,8 @@
     {
       "id": "LAYOUT_VARROCK_PALACE_2F",
       "name": "Varrock_Palace_2F_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 30,
+      "height": 40,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Varrock_Palace_2F/border.bin",

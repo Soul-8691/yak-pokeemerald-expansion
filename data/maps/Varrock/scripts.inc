@@ -152,6 +152,25 @@ VARROCK_NPC_MAN_2::
 	end
 
 
+VARROCK_NPC_Halen::
+	faceplayer
+	namebox VARROCK_NPC_Halen_Text_0
+	msgbox VARROCK_NPC_Halen_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_Halen2::
+	faceplayer
+	msgbox VARROCK_NPC_Halen2_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 VARROCK_NPC_Apothecary::
 	lock
 	faceplayer
@@ -234,6 +253,25 @@ BATTLE_Soffan_and_Quo::
 	trainerbattle_single TRAINER_Soffan_and_Quo, BATTLE_Soffan_and_Quo_Text_0, BATTLE_Soffan_and_Quo_Text_0
 	msgbox BATTLE_Soffan_and_Quo_Text_0
 	hidenamebox
+	release
+	end
+
+
+NPC_VANNAKA::
+	faceplayer
+	namebox NPC_VANNAKA_Text_0
+	msgbox NPC_VANNAKA_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_SLAYERMASTERLIST::
+	msgbox NPC_SLAYERMASTERLIST_Text_0
+	msgbox NPC_SLAYERMASTERLIST_Text_1
+	msgbox NPC_SLAYERMASTERLIST_Text_2
+	closemessage
 	release
 	end
 
@@ -356,6 +394,15 @@ VARROCK_NPC_MAN_2_Text_0:
 	.string "Next time you are at a store you should\n"
 	.string "pick some up, they can come in handy.$"
 
+VARROCK_NPC_Halen_Text_0:
+	.string "Haig Halen$"
+
+VARROCK_NPC_Halen_Text_1:
+	.string "Very sorry, but we are closed right now.$"
+
+VARROCK_NPC_Halen2_Text_0:
+	.string "Honestly I think this is a joke.$"
+
 VARROCK_NPC_Apothecary_Text_0:
 	.string "Apothecary$"
 
@@ -401,3 +448,32 @@ NPC_Varrock_MaxRock_Text_0:
 
 BATTLE_Soffan_and_Quo_Text_0:
 	.string "…$"
+
+NPC_VANNAKA_Text_0:
+	.string "Vannaka$"
+
+NPC_VANNAKA_Text_1:
+	.string "My name is Vannaka I have the honour of\n"
+	.string "being a Gym Leader for the MvM\l"
+	.string "Championships and I am also apart of\l"
+	.string "Slayer Masters.$"
+
+NPC_SLAYERMASTERLIST_Text_0:
+	.string "It is a list containing all of the Slayer\n"
+	.string "Masters.$"
+
+NPC_SLAYERMASTERLIST_Text_1:
+	.string "Vannaka - Arrav Badge.\p"
+	.string "Turael - Keiper Badge.\p"
+	.string "Duradel - Bwana Badge.\p"
+	.string "Chaeldar - Grisial Badge.\p"
+	.string "Mazchna - Sanguine Badge.\p"
+	.string "Krystilla - Forinthry Badge.\p"
+	.string "Nieve - Umesco Badge.\p"
+	.string "Konar - Kaal Badge.$"
+
+NPC_SLAYERMASTERLIST_Text_2:
+	.string "After obtaining all Slayer Master\n"
+	.string "Badges you will then be eligible to\l"
+	.string "participate in the… …\p"
+	.string "The page is torn.$"

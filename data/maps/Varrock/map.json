@@ -403,7 +403,7 @@
       "x": 21,
       "y": 33,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -560,7 +560,7 @@
     },
     {
       "x": 51,
-      "y": 29,
+      "y": 28,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
       "dest_warp_id": "0"
@@ -609,14 +609,14 @@
     },
     {
       "x": 9,
-      "y": 26,
+      "y": 25,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
       "dest_warp_id": "0"
     },
     {
       "x": 46,
-      "y": 33,
+      "y": 32,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
       "dest_warp_id": "0"
@@ -637,7 +637,7 @@
     },
     {
       "x": 40,
-      "y": 9,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_VARROCK",
       "dest_warp_id": "0"
@@ -653,15 +653,15 @@
       "x": 57,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_VARROCK",
+      "dest_map": "MAP_VARROCK_MUSEUM",
       "dest_warp_id": "0"
     },
     {
       "x": 58,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_VARROCK",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_VARROCK_MUSEUM",
+      "dest_warp_id": "1"
     },
     {
       "x": 54,

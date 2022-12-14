@@ -194,7 +194,27 @@ script VARROCK_NPC_MAN_2
 }
 
 
+script VARROCK_NPC_Halen
+{
+    faceplayer
+    namebox ("Haig Halen")
+    msgbox(format("Very sorry, but we are closed right now."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
 
+script VARROCK_NPC_Halen2
+{
+    faceplayer
+    //namebox ("Haig Halen")
+    msgbox(format("Honestly I think this is a joke."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
 
 
 
@@ -356,3 +376,26 @@ script BATTLE_Soffan_and_Quo
 	end
 }
 
+
+
+
+script NPC_VANNAKA
+{
+    faceplayer
+    namebox ("Vannaka")
+    msgbox(format("My name is Vannaka I have the honour of being a Gym Leader for the MvM Championships and I am also apart of Slayer Masters."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script NPC_SLAYERMASTERLIST
+{
+    msgbox(format("It is a list containing all of the Slayer Masters."))
+    msgbox(format("Vannaka - Arrav Badge.\pTurael - Keiper Badge.\pDuradel - Bwana Badge.\pChaeldar - Grisial Badge.\pMazchna - Sanguine Badge.\pKrystilla - Forinthry Badge.\pNieve - Umesco Badge.\pKonar - Kaal Badge."))
+    msgbox(format("After obtaining all Slayer Master Badges you will then be eligible to participate in the… …\pThe page is torn."))
+    closemessage
+    release
+    end
+}

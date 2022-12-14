@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_ROUTE27",
       "offset": 6,
-      "map": "MAP_ROUTE27"
+      "direction": "left"
     },
     {
-      "direction": "down",
+      "map": "MAP_BARBARIAN_VILLAGE",
       "offset": -12,
-      "map": "MAP_BARBARIAN_VILLAGE"
+      "direction": "down"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE20",
       "offset": 16,
-      "map": "MAP_ROUTE20"
+      "direction": "down"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE19",
       "offset": 44,
-      "map": "MAP_ROUTE19"
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -164,6 +164,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
+      "x": 16,
+      "y": 30,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NPC_SLAYERMASTERLIST",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -172,7 +185,7 @@
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_SINKHOLE_3",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

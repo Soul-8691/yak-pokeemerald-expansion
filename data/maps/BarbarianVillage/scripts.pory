@@ -33,9 +33,11 @@ script NPC_BARB_BLOCKADE_1
     faceplayer
     namebox("Barbarian")
     if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 0){
-        msgbox(format("Only the strong may enter our longhall!\pCome back when you have proved yourself in battle."))
-        if (flag(FLAG_BADGE01_GET) && flag(FLAG_BADGE02_GET)){
-            msgbox(format("You have the Lumbridge Badge and Falador Badge!"))
+        //msgbox(format("Only the strong may enter our longhall!\pCome back when you have proved yourself in battle."))
+        msgbox(format("Only the strong may enter our longhall!\pYou should probably have at least four badges before attempting."))
+        if (flag(FLAG_BADGE01_GET) && flag(FLAG_BADGE02_GET) && flag(FLAG_BADGE03_GET) && flag(FLAG_BADGE04_GET)){
+            //msgbox(format("You have the Lumbridge Badge and Falador Badge!"))
+            msgbox(format("Oorgh!!\pImpressive you have at least four badges."))
             hidenamebox
             closemessage
             //APPLY MOVEMENT
@@ -53,7 +55,10 @@ script NPC_BARB_BLOCKADE_1
     }
     if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 1){
         msgbox(format("You are very strong."))
+        release
+        end
     }
+    msgbox(format("You may still attempt the gym challenge if you wish but be warned we will not go easy on you."))
     hidenamebox
     closemessage
     release

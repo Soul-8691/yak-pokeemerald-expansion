@@ -92,3 +92,267 @@ script VARROCK_NPC_Guard2
     release
     end
 }
+
+script VARROCK_CLEANER
+{
+    faceplayer
+    namebox ("Cleaner")
+    msgbox(format("Sweeping the streets is hard work but someone needs to keep this town clean."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_Guard3
+{
+    faceplayer
+    namebox ("Guard")
+    msgbox(format("I sure could use a cup of tea…"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_Archaeologist
+{
+    faceplayer
+    namebox ("Archaeologist")
+    msgbox(format("I recently excavated a relic which appears to be from a long lost city.\pWe put it on display in the museum."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_Quester
+{
+    faceplayer
+    namebox ("Quester")
+    msgbox(format("I wanted to go on a quest but was told I did not have enough Kudos.\pI do not get it, do they want help or not?"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_Willough
+{
+    faceplayer
+    namebox ("Willough")
+    msgbox(format("Our mum sent us to town to tell Fluffs to come home but now she is stuck up on the castle wall and refuses to come down."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_Shilop
+{
+    faceplayer
+    namebox ("Shilop")
+    msgbox(format("Here kitty, kitty!\pFluffs come down lets go home!"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_Baraek
+{
+    faceplayer
+    namebox ("Baraek")
+    msgbox(format("I am selling newspapers 50GP each.\pAre you interested in one?"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_MAN_1
+{
+    faceplayer
+    //namebox ("Baraek")
+    msgbox(format("Some monsters can evolve if they are in different areas of the Gielinor.\pWe call them regional variants.\pAn example would be the Chickens we have here in Varrock differ greatly compared to those in Lumbridge and Karamja."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+script VARROCK_NPC_MAN_2
+{
+    faceplayer
+    //namebox ("Baraek")
+    msgbox(format("You know how adventurers use potions to help boost their stats while fighting?\pWell the same can be done with monsters!\pNext time you are at a store you should pick some up, they can come in handy."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script VARROCK_NPC_Apothecary {
+    lock
+    faceplayer
+    namebox ("Apothecary")
+    msgbox(format("Welcome to my Potion store!\pHow may I help you?"))
+    waitmessage
+    hidenamebox
+    pokemart (ApothecaryVarrock)
+    msgbox("Thank you, come again!")
+    release
+    end
+}
+raw `
+    .align 2
+ApothecaryVarrock:
+    .2byte ITEM_POTION_HP
+    .2byte ITEM_POTION_ATT
+    .2byte ITEM_POTION_DEF
+    .2byte ITEM_POTION_SPATT
+	.2byte ITEM_POTION_SPDEF
+	.2byte ITEM_POTION_SPEED
+    .2byte ITEM_NONE
+    release
+    end
+
+`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ROUTE38
+script NPC_VARROCKGUARD_BLOCKADE_1
+{
+    lock
+    faceplayer
+    namebox("Guard")
+    //if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 0){
+        msgbox(format("Sorry, by order of the King only those who have obtained the Varrock Badge may pass here."))
+        if (flag(FLAG_BADGE03_GET)){
+            msgbox(format("You have the Varrock Badge!\pYou may pass, but be cautious.\pDangerous Monsters lurk beyond here."))
+            hidenamebox
+            closemessage
+            //APPLY MOVEMENT
+            //applymovement(OBJ_EVENT_ID_BARBARIAN_BLOCK_1, BARBARIANVILLAGE_BLOCK_1)
+            //waitmovement(0)
+            //setvar(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 1)
+            release
+            end
+        }
+    //}
+    //if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 1){
+    //    msgbox(format("Be cautious adventurer."))
+    //}
+    hidenamebox
+    closemessage
+    release
+    end
+}
+
+script NPC_ARCHAEOLOGIST_BLOCKADE_1
+{
+    lock
+    faceplayer
+    namebox("Archaeologist")
+    //if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 0){
+        msgbox(format("Stop!\pPlease wait awhile, we recently uncovered some mysterious ruins within our digsite.\pWe are in the middle of excervating them and cannot risk being disterbed."))
+        if (flag(FLAG_BADGE07_GET)){
+            msgbox(format("You should see it!\pThe city of senstinstin has been found!"))
+            hidenamebox
+            closemessage
+            //APPLY MOVEMENT
+            //applymovement(OBJ_EVENT_ID_BARBARIAN_BLOCK_1, BARBARIANVILLAGE_BLOCK_1)
+            //waitmovement(0)
+            //setvar(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 1)
+            release
+            end
+        }
+    //}
+    //if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 1){
+    //    msgbox(format("Be cautious adventurer."))
+    //}
+    hidenamebox
+    closemessage
+    release
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+script BATTLE_Varrock_Max
+{
+	namebox ("Max")
+    msgbox(format("Come back and talk to me once you have achieved something great."))
+    //trainerbattle_single(TRAINER_Varrock_Max, format("…"),format("…"))
+    //namebox ("Max")
+    //msgbox(format("…"))
+	hidenamebox
+    release
+	end
+}
+
+script NPC_Varrock_MaxRock
+{
+    msgbox(format("It is a massive rock!\pIt appears to be alive."))
+    //trainerbattle_single(TRAINER_Varrock_Max, format("…"),format("…"))
+    //namebox ("Max")
+    //msgbox(format("…"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_Soffan_and_Quo
+{
+    trainerbattle_single(TRAINER_Soffan_and_Quo, format("…"),format("…"))
+    //namebox ("")
+    msgbox(format("…"))
+	hidenamebox
+    release
+	end
+}
+

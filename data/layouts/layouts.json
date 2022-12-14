@@ -5174,10 +5174,10 @@
     {
       "id": "LAYOUT_ROUTE38",
       "name": "Route38_Layout",
-      "width": 42,
+      "width": 60,
       "height": 42,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Mauville",
+      "secondary_tileset": "gTileset_Lumbridge",
       "border_filepath": "data/layouts/Route38/border.bin",
       "blockdata_filepath": "data/layouts/Route38/map.bin"
     },
@@ -6860,6 +6860,46 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Minigame_2/border.bin",
       "blockdata_filepath": "data/layouts/Minigame_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_PALACE_1F",
+      "name": "Varrock_Palace_1F_Layout",
+      "width": 30,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_Palace_1F/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Palace_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_PALACE_2F",
+      "name": "Varrock_Palace_2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_Palace_2F/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Palace_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_MUSEUM",
+      "name": "Varrock_Museum_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_Museum/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Museum/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE45",
+      "name": "Route45_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp",
+      "border_filepath": "data/layouts/Route45/border.bin",
+      "blockdata_filepath": "data/layouts/Route45/map.bin"
     }
   ]
 }

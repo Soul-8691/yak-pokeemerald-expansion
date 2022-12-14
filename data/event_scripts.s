@@ -1543,3 +1543,11 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Minigame_1/scripts.inc"
 
 	.include "data/maps/Minigame_2/scripts.inc"
+
+	.include "data/maps/Varrock_Palace_1F/scripts.inc"
+
+	.include "data/maps/Varrock_Palace_2F/scripts.inc"
+
+	.include "data/maps/Varrock_Museum/scripts.inc"
+
+	.include "data/maps/Route45/scripts.inc"

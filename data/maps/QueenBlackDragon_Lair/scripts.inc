@@ -209,29 +209,6 @@ BATTLE_RimmingtonMines_Slayer_1::
 	end
 
 
-BATTLE_Varrock_Max::
-	namebox BATTLE_Varrock_Max_Text_0
-	msgbox BATTLE_Varrock_Max_Text_1
-	hidenamebox
-	release
-	end
-
-
-NPC_Varrock_MaxRock::
-	msgbox NPC_Varrock_MaxRock_Text_0
-	hidenamebox
-	release
-	end
-
-
-BATTLE_Soffan_and_Quo::
-	trainerbattle_single TRAINER_Soffan_and_Quo, BATTLE_Soffan_and_Quo_Text_0, BATTLE_Soffan_and_Quo_Text_0
-	msgbox BATTLE_Soffan_and_Quo_Text_0
-	hidenamebox
-	release
-	end
-
-
 QBDLAIR_1_Text_0:
 	.string "You activate the pillar!$"
 
@@ -314,17 +291,3 @@ BATTLE_RimmingtonMines_Slayer_1_Text_2:
 	.string "I've been trying to get rid of these\n"
 	.string "bots for the past few days, looks like\l"
 	.string "they might be broken now though.$"
-
-BATTLE_Varrock_Max_Text_0:
-	.string "Max$"
-
-BATTLE_Varrock_Max_Text_1:
-	.string "Come back and talk to me once you have\n"
-	.string "achieved something great.$"
-
-NPC_Varrock_MaxRock_Text_0:
-	.string "It is a massive rock!\p"
-	.string "It appears to be alive.$"
-
-BATTLE_Soffan_and_Quo_Text_0:
-	.string "…$"

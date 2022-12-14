@@ -2,7 +2,7 @@
   "id": "MAP_VARROCK_NORTH",
   "name": "VarrockNorth",
   "layout": "LAYOUT_VARROCK_NORTH",
-  "music": "MUS_PS_ROUTE_MISTHALIN",
+  "music": "MUS_PS_VARROCK",
   "region_map_section": "MAPSEC_VARROCK",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_VARROCK",
       "offset": 0,
-      "map": "MAP_VARROCK"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE17",
       "offset": 16,
-      "map": "MAP_ROUTE17"
+      "direction": "right"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE16",
       "offset": 40,
-      "map": "MAP_ROUTE16"
+      "direction": "right"
     },
     {
-      "direction": "up",
+      "map": "MAP_ROUTE30",
       "offset": 42,
-      "map": "MAP_ROUTE30"
+      "direction": "up"
     }
   ],
   "object_events": [
@@ -393,56 +393,56 @@
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_SEWERS_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 27,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_NORTH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 28,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_NORTH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 49,
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_NORTH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 49,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_NORTH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 50,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_NORTH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 59,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_NORTH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 60,
       "y": 13,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_NORTH",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -707,7 +707,8 @@
     "Route41",
     "Route42",
     "Route43",
-    "Route44"
+    "Route44",
+    "Route45"
   ],
   "gMapGroup36": [
     "Tutorial_Island_Cave",
@@ -844,7 +845,10 @@
     "Varrock_Pub_1F",
     "Varrock_Pub_2F",
     "Varrock_Sewers_1F",
-    "Varrock_Sewers_2F"
+    "Varrock_Sewers_2F",
+    "Varrock_Palace_1F",
+    "Varrock_Palace_2F",
+    "Varrock_Museum"
   ],
   "gMapGroup44": [
 

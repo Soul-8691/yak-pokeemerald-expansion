@@ -27,7 +27,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 4,
+      "x": 8,
       "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -40,7 +40,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 6,
+      "x": 10,
       "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -52,8 +52,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 29,
+      "graphics_id": "OBJ_EVENT_GFX_SKELETON_3",
+      "x": 33,
       "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -66,7 +66,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 14,
+      "x": 18,
       "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -79,7 +79,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 30,
+      "x": 34,
       "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -92,7 +92,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PKER",
-      "x": 20,
+      "x": 24,
       "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -105,7 +105,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MERCHER",
-      "x": 20,
+      "x": 24,
       "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -118,7 +118,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_THEIF",
-      "x": 21,
+      "x": 25,
       "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -131,7 +131,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 20,
+      "x": 24,
       "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -144,7 +144,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 34,
+      "x": 38,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -157,7 +157,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 27,
+      "x": 31,
       "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -170,7 +170,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SKILLER",
-      "x": 22,
+      "x": 26,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
@@ -183,7 +183,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 47,
+      "x": 51,
       "y": 13,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -196,7 +196,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 39,
+      "x": 43,
       "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -208,8 +208,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
-      "x": 46,
+      "graphics_id": "OBJ_EVENT_GFX_SKELETON_1",
+      "x": 50,
       "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -223,21 +223,21 @@
   ],
   "warp_events": [
     {
-      "x": 2,
+      "x": 6,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_ROUTE31",
       "dest_warp_id": 0
     },
     {
-      "x": 44,
+      "x": 48,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_ROUTE41",
       "dest_warp_id": 0
     },
     {
-      "x": 45,
+      "x": 49,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_ROUTE41",

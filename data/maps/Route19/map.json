@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE18",
+      "direction": "down",
       "offset": 0,
-      "direction": "down"
+      "map": "MAP_ROUTE18"
     },
     {
-      "map": "MAP_ROUTE20",
+      "direction": "left",
       "offset": 0,
-      "direction": "left"
+      "map": "MAP_ROUTE20"
     },
     {
-      "map": "MAP_EDGEVILLE",
+      "direction": "up",
       "offset": -44,
-      "direction": "up"
+      "map": "MAP_EDGEVILLE"
     }
   ],
   "object_events": [
@@ -89,21 +89,21 @@
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_ROUTE19",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 16,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_ROUTE19",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 17,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_ROUTE19",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

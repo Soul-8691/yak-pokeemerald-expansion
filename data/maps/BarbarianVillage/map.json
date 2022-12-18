@@ -14,29 +14,29 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE20",
+      "direction": "right",
       "offset": 0,
-      "direction": "right"
+      "map": "MAP_ROUTE20"
     },
     {
-      "map": "MAP_ROUTE23",
+      "direction": "left",
       "offset": 16,
-      "direction": "left"
+      "map": "MAP_ROUTE23"
     },
     {
-      "map": "MAP_ROUTE25",
+      "direction": "left",
       "offset": -6,
-      "direction": "left"
+      "map": "MAP_ROUTE25"
     },
     {
-      "map": "MAP_EDGEVILLE",
+      "direction": "up",
       "offset": 12,
-      "direction": "up"
+      "map": "MAP_EDGEVILLE"
     },
     {
-      "map": "MAP_ROUTE40",
+      "direction": "down",
       "offset": -8,
-      "direction": "down"
+      "map": "MAP_ROUTE40"
     }
   ],
   "object_events": [
@@ -76,7 +76,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_BARBARIANVILLAGE_NPC2",
       "flag": "0"
     },
     {
@@ -89,7 +89,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_BARBARIANVILLAGE_NPC3",
       "flag": "0"
     },
     {
@@ -102,7 +102,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_BARBARIANVILLAGE_NPC4",
       "flag": "0"
     },
     {
@@ -154,7 +154,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_BARBARIANVILLAGE_NPC5",
       "flag": "0"
     },
     {
@@ -198,10 +198,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BANKER_M",
-      "x": 10,
-      "y": 25,
+      "x": 27,
+      "y": 41,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -215,50 +215,50 @@
       "x": 11,
       "y": 17,
       "elevation": 0,
-      "dest_map": "MAP_BARBARIAN_VILLAGE",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_BARBARIAN_VILLAGE_GYM_HALL",
+      "dest_warp_id": 0
     },
     {
       "x": 12,
       "y": 17,
       "elevation": 0,
-      "dest_map": "MAP_BARBARIAN_VILLAGE",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_BARBARIAN_VILLAGE_GYM_HALL",
+      "dest_warp_id": 1
     },
     {
       "x": 7,
-      "y": 25,
+      "y": 24,
       "elevation": 0,
       "dest_map": "MAP_BARBARIAN_VILLAGE",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 16,
-      "y": 25,
+      "y": 24,
       "elevation": 0,
       "dest_map": "MAP_BARBARIAN_VILLAGE",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 6,
-      "y": 33,
+      "y": 32,
       "elevation": 0,
       "dest_map": "MAP_BARBARIAN_VILLAGE",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 17,
-      "y": 34,
+      "y": 33,
       "elevation": 0,
       "dest_map": "MAP_BARBARIAN_VILLAGE",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 12,
       "y": 29,
       "elevation": 0,
       "dest_map": "MAP_BARBARIAN_VILLAGE",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

@@ -20,45 +20,74 @@ script BarbarianVillage_STATE{
             end
 
         case 1:
+        case 2:
+        case 3:
+            setobjectxyperm(2,13,27)
+			setobjectmovementtype(2,MOVEMENT_TYPE_FACE_UP)
+            end
     }
 }
 
 
 
-
+//msgbox(format("Only the strong may enter our longhall!\pCome back when you have proved yourself in battle."))
 //NPC
 script NPC_BARB_BLOCKADE_1
 {
     lock
     faceplayer
     namebox("Barbarian")
-    if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 0){
-        //msgbox(format("Only the strong may enter our longhall!\pCome back when you have proved yourself in battle."))
-        msgbox(format("Only the strong may enter our longhall!\pYou should probably have at least four badges before attempting."))
-        if (flag(FLAG_BADGE01_GET) && flag(FLAG_BADGE02_GET) && flag(FLAG_BADGE03_GET) && flag(FLAG_BADGE04_GET)){
-            //msgbox(format("You have the Lumbridge Badge and Falador Badge!"))
-            msgbox(format("Oorgh!!\pImpressive you have at least four badges."))
+    if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 0)
+    {
+        msgbox(format("Only the strong may enter our longhall!\pYou should probably leave if you know what is good for you."))
+        if (flag(FLAG_BADGE01_GET) && flag(FLAG_BADGE02_GET) && flag(FLAG_BADGE03_GET) && flag(FLAG_BADGE04_GET) && flag(FLAG_BADGE05_GET))
+        {
+            msgbox(format("Ohhoho!!\pImpressive you have at least four Badges.\pYou may pass, we shall watch your battle and cheer for your victory!"))
+            hidenamebox
+            closemessage
+        }
+        else
+        {
+            hidenamebox
+            closemessage
+            msgbox(format("WARNING - It is recommended that you have at least 5 Gym Badges before proceeding.\pAre you sure you would like to enter the Gym?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT)){
+                namebox ("Barbarian")
+                msgbox(format("Ohho, so this challenger thinks they have what it takes to beat our Chieftain?\pThis will be entertaining to watch, very well.\pYou may pass."))
+            }
+            else
+            {
+                namebox ("Barbarian")
+                msgbox(format("Come back when you are stronger!"))
+                hidenamebox
+                closemessage
+                release
+                end
+            }
+        }
             hidenamebox
             closemessage
             //APPLY MOVEMENT
             applymovement(OBJ_EVENT_ID_BARBARIAN_BLOCK_1, BARBARIANVILLAGE_BLOCK_1)
             applymovement(OBJ_EVENT_ID_BARBARIAN_BLOCK_2, BARBARIANVILLAGE_BLOCK_2)
             waitmovement(0)
-            namebox("Barbarian")
-            msgbox(format("You may enter!"))
-            hidenamebox
-            closemessage
-            //setvar(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 1)
+            setvar(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 1)
             release
             end
-        }
     }
-    if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 1){
-        msgbox(format("You are very strong."))
-        release
-        end
+
+    if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 1)
+    {
+        msgbox(format("Good luck on your gym challenge."))
     }
-    msgbox(format("You may still attempt the gym challenge if you wish but be warned we will not go easy on you."))
+    if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 2)
+    {
+        msgbox(format("We knew you would be struggling but good luck on your gym challenge."))
+    }
+    if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 3)
+    {
+        msgbox(format("You defeated our Chieftain!\pWe are impressed, well done!"))
+    }
     hidenamebox
     closemessage
     release
@@ -77,12 +106,56 @@ movement BARBARIANVILLAGE_BLOCK_2 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 script NPC_BARBARIANVILLAGE_DUNGEONGIRL
 {
     lock
     faceplayer
-    namebox("Barbarian")
-    msgbox(format("Only once you have proved yourself a barbarian are you allowed to use our dungeon for training."))
+    namebox("Litara")
+    if (flag(FLAG_BADGE06_GET)) 
+    {
+        msgbox(format("You have proved yourself a barbarian in name and spirit!\pI grant you access to use our stronghold for training.\pThe monsters found within are very strong, so have fun training!"))
+    }
+    else
+    {
+        msgbox(format("Only once you have proved yourself a barbarian are you allowed to use our dungeon for training."))
+    }
     hidenamebox
     release
     end
@@ -103,12 +176,55 @@ script NPC_BARBARIANVILLAGE_NPC1
     lock
     faceplayer
     namebox("Barbarian")
-    msgbox(format("Chieftain Gunthor is the strongest warrior of our village."))
+    msgbox(format("Chieftain Gunthor is the strongest warrior of our village and also the 6th strongest MvM Gym Leader."))
     hidenamebox
     release
     end
 }
 
+script NPC_BARBARIANVILLAGE_NPC2
+{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    msgbox(format("Finally after all the training my Monster learnt a new move.\pThe crazy thing is that it evolved right after!"))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_BARBARIANVILLAGE_NPC3
+{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    msgbox(format("We don't need no Banks to heal our Monsters in our Village.\pThat is the path of a weakling."))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_BARBARIANVILLAGE_NPC4
+{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    msgbox(format("My father is the Chieftain of this village and also a Gym Leader.\pI feel like I have a lot to live up to."))
+    hidenamebox
+    release
+    end
+}
+
+script NPC_BARBARIANVILLAGE_NPC5
+{
+    lock
+    faceplayer
+    namebox("Dwarf")
+    msgbox(format("There is a girl I like, but I do not know if she would like me.\pI do not know what to do so I will stay here picking each petal of this flower until fate decides for me."))
+    hidenamebox
+    release
+    end
+}
 
 
 //ROUTE 20
@@ -184,3 +300,18 @@ script BATTLE_ROUTE20_DUO_2
     release
 	end
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

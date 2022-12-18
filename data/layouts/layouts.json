@@ -6920,6 +6920,16 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Varrock_GeneralStore/border.bin",
       "blockdata_filepath": "data/layouts/Varrock_GeneralStore/map.bin"
+    },
+    {
+      "id": "LAYOUT_BARBARIAN_VILLAGE_GYM_HALL",
+      "name": "BarbarianVillage_GymHall_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_PokeScape_HAM",
+      "border_filepath": "data/layouts/BarbarianVillage_GymHall/border.bin",
+      "blockdata_filepath": "data/layouts/BarbarianVillage_GymHall/map.bin"
     }
   ]
 }

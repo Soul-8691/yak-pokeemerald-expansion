@@ -1555,3 +1555,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Varrock_Gertrude_House/scripts.inc"
 
 	.include "data/maps/Varrock_GeneralStore/scripts.inc"
+
+	.include "data/maps/BarbarianVillage_GymHall/scripts.inc"

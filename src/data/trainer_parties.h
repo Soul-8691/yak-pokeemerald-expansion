@@ -345,7 +345,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Duke[] = {
     },
     {
     .iv = 0,
-    .lvl = 13,
+    .lvl = 10,
     .species = SPECIES_ROOSTER_NORMAL_FORM,
     .moves = {MOVE_SLACK_OFF, MOVE_TACKLE, MOVE_FEATHER_DANCE, MOVE_PECK}
     }

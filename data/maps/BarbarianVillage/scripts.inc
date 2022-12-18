@@ -10,6 +10,9 @@ BarbarianVillage_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 BarbarianVillage_STATE::
 	switch VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE
 	case 0, BarbarianVillage_STATE_2
+	case 1, BarbarianVillage_STATE_3
+	case 2, BarbarianVillage_STATE_3
+	case 3, BarbarianVillage_STATE_3
 	return
 
 BarbarianVillage_STATE_2:
@@ -19,6 +22,11 @@ BarbarianVillage_STATE_2:
 	setobjectmovementtype 7, MOVEMENT_TYPE_FACE_DOWN
 	end
 
+BarbarianVillage_STATE_3:
+	setobjectxyperm 2, 13, 27
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
+	end
+
 
 NPC_BARB_BLOCKADE_1::
 	lock
@@ -26,10 +34,15 @@ NPC_BARB_BLOCKADE_1::
 	namebox NPC_BARB_BLOCKADE_1_Text_0
 	compare VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 0
 	goto_if_eq NPC_BARB_BLOCKADE_1_2
-NPC_BARB_BLOCKADE_1_1:
 	compare VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 1
 	goto_if_eq NPC_BARB_BLOCKADE_1_5
-	msgbox NPC_BARB_BLOCKADE_1_Text_5
+NPC_BARB_BLOCKADE_1_4:
+	compare VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 2
+	goto_if_eq NPC_BARB_BLOCKADE_1_20
+NPC_BARB_BLOCKADE_1_19:
+	compare VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 3
+	goto_if_eq NPC_BARB_BLOCKADE_1_26
+NPC_BARB_BLOCKADE_1_25:
 	hidenamebox
 	closemessage
 	release
@@ -37,39 +50,68 @@ NPC_BARB_BLOCKADE_1_1:
 
 NPC_BARB_BLOCKADE_1_2:
 	msgbox NPC_BARB_BLOCKADE_1_Text_1
-	goto_if_set FLAG_BADGE01_GET, NPC_BARB_BLOCKADE_1_9
-	goto NPC_BARB_BLOCKADE_1_1
-
-NPC_BARB_BLOCKADE_1_5:
-	msgbox NPC_BARB_BLOCKADE_1_Text_4
+	goto_if_set FLAG_BADGE01_GET, NPC_BARB_BLOCKADE_1_11
+NPC_BARB_BLOCKADE_1_9:
+	hidenamebox
+	closemessage
+	msgbox NPC_BARB_BLOCKADE_1_Text_3, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne NPC_BARB_BLOCKADE_1_22
+	namebox NPC_BARB_BLOCKADE_1_Text_0
+	msgbox NPC_BARB_BLOCKADE_1_Text_5
+	hidenamebox
+	closemessage
 	release
 	end
 
+NPC_BARB_BLOCKADE_1_5:
+	msgbox NPC_BARB_BLOCKADE_1_Text_6
+	goto NPC_BARB_BLOCKADE_1_4
+
 NPC_BARB_BLOCKADE_1_7:
-	msgbox NPC_BARB_BLOCKADE_1_Text_2
 	hidenamebox
 	closemessage
 	applymovement 6, BARBARIANVILLAGE_BLOCK_1
 	applymovement 7, BARBARIANVILLAGE_BLOCK_2
 	waitmovement 0
-	namebox NPC_BARB_BLOCKADE_1_Text_0
-	msgbox NPC_BARB_BLOCKADE_1_Text_3
-	hidenamebox
-	closemessage
+	setvar VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 1
 	release
 	end
 
 NPC_BARB_BLOCKADE_1_8:
-	goto_if_set FLAG_BADGE03_GET, NPC_BARB_BLOCKADE_1_12
-	goto NPC_BARB_BLOCKADE_1_1
+	msgbox NPC_BARB_BLOCKADE_1_Text_2
+	hidenamebox
+	closemessage
+	goto NPC_BARB_BLOCKADE_1_7
 
-NPC_BARB_BLOCKADE_1_9:
-	goto_if_set FLAG_BADGE02_GET, NPC_BARB_BLOCKADE_1_8
-	goto NPC_BARB_BLOCKADE_1_1
+NPC_BARB_BLOCKADE_1_10:
+	goto_if_set FLAG_BADGE03_GET, NPC_BARB_BLOCKADE_1_15
+	goto NPC_BARB_BLOCKADE_1_9
 
-NPC_BARB_BLOCKADE_1_12:
-	goto_if_set FLAG_BADGE04_GET, NPC_BARB_BLOCKADE_1_7
-	goto NPC_BARB_BLOCKADE_1_1
+NPC_BARB_BLOCKADE_1_11:
+	goto_if_set FLAG_BADGE02_GET, NPC_BARB_BLOCKADE_1_10
+	goto NPC_BARB_BLOCKADE_1_9
+
+NPC_BARB_BLOCKADE_1_14:
+	goto_if_set FLAG_BADGE05_GET, NPC_BARB_BLOCKADE_1_8
+	goto NPC_BARB_BLOCKADE_1_9
+
+NPC_BARB_BLOCKADE_1_15:
+	goto_if_set FLAG_BADGE04_GET, NPC_BARB_BLOCKADE_1_14
+	goto NPC_BARB_BLOCKADE_1_9
+
+NPC_BARB_BLOCKADE_1_20:
+	msgbox NPC_BARB_BLOCKADE_1_Text_7
+	goto NPC_BARB_BLOCKADE_1_19
+
+NPC_BARB_BLOCKADE_1_22:
+	namebox NPC_BARB_BLOCKADE_1_Text_0
+	msgbox NPC_BARB_BLOCKADE_1_Text_4
+	goto NPC_BARB_BLOCKADE_1_7
+
+NPC_BARB_BLOCKADE_1_26:
+	msgbox NPC_BARB_BLOCKADE_1_Text_8
+	goto NPC_BARB_BLOCKADE_1_25
 
 
 BARBARIANVILLAGE_BLOCK_1:
@@ -85,11 +127,17 @@ BARBARIANVILLAGE_BLOCK_2:
 NPC_BARBARIANVILLAGE_DUNGEONGIRL::
 	lock
 	faceplayer
-	namebox NPC_BARB_BLOCKADE_1_Text_0
-	msgbox NPC_BARBARIANVILLAGE_DUNGEONGIRL_Text_0
+	namebox NPC_BARBARIANVILLAGE_DUNGEONGIRL_Text_0
+	goto_if_set FLAG_BADGE06_GET, NPC_BARBARIANVILLAGE_DUNGEONGIRL_2
+	msgbox NPC_BARBARIANVILLAGE_DUNGEONGIRL_Text_2
+NPC_BARBARIANVILLAGE_DUNGEONGIRL_1:
 	hidenamebox
 	release
 	end
+
+NPC_BARBARIANVILLAGE_DUNGEONGIRL_2:
+	msgbox NPC_BARBARIANVILLAGE_DUNGEONGIRL_Text_1
+	goto NPC_BARBARIANVILLAGE_DUNGEONGIRL_1
 
 
 NPC_BARBARIANVILLAGE_SIGNPOST::
@@ -104,6 +152,46 @@ NPC_BARBARIANVILLAGE_NPC1::
 	faceplayer
 	namebox NPC_BARB_BLOCKADE_1_Text_0
 	msgbox NPC_BARBARIANVILLAGE_NPC1_Text_0
+	hidenamebox
+	release
+	end
+
+
+NPC_BARBARIANVILLAGE_NPC2::
+	lock
+	faceplayer
+	namebox NPC_BARB_BLOCKADE_1_Text_0
+	msgbox NPC_BARBARIANVILLAGE_NPC2_Text_0
+	hidenamebox
+	release
+	end
+
+
+NPC_BARBARIANVILLAGE_NPC3::
+	lock
+	faceplayer
+	namebox NPC_BARB_BLOCKADE_1_Text_0
+	msgbox NPC_BARBARIANVILLAGE_NPC3_Text_0
+	hidenamebox
+	release
+	end
+
+
+NPC_BARBARIANVILLAGE_NPC4::
+	lock
+	faceplayer
+	namebox NPC_BARB_BLOCKADE_1_Text_0
+	msgbox NPC_BARBARIANVILLAGE_NPC4_Text_0
+	hidenamebox
+	release
+	end
+
+
+NPC_BARBARIANVILLAGE_NPC5::
+	lock
+	faceplayer
+	namebox NPC_BARBARIANVILLAGE_NPC5_Text_0
+	msgbox NPC_BARBARIANVILLAGE_NPC5_Text_1
 	hidenamebox
 	release
 	end
@@ -174,26 +262,57 @@ NPC_BARB_BLOCKADE_1_Text_0:
 
 NPC_BARB_BLOCKADE_1_Text_1:
 	.string "Only the strong may enter our longhall!\p"
-	.string "You should probably have at least four\n"
-	.string "badges before attempting.$"
+	.string "You should probably leave if you know\n"
+	.string "what is good for you.$"
 
 NPC_BARB_BLOCKADE_1_Text_2:
-	.string "Oorgh!!\p"
+	.string "Ohhoho!!\p"
 	.string "Impressive you have at least four\n"
-	.string "badges.$"
+	.string "Badges.\p"
+	.string "You may pass, we shall watch your\n"
+	.string "battle and cheer for your victory!$"
 
 NPC_BARB_BLOCKADE_1_Text_3:
-	.string "You may enter!$"
+	.string "WARNING - It is recommended that you\n"
+	.string "have at least 5 Gym Badges before\l"
+	.string "proceeding.\p"
+	.string "Are you sure you would like to enter the\n"
+	.string "Gym?$"
 
 NPC_BARB_BLOCKADE_1_Text_4:
-	.string "You are very strong.$"
+	.string "Ohho, so this challenger thinks they\n"
+	.string "have what it takes to beat our\l"
+	.string "Chieftain?\p"
+	.string "This will be entertaining to watch, very\n"
+	.string "well.\p"
+	.string "You may pass.$"
 
 NPC_BARB_BLOCKADE_1_Text_5:
-	.string "You may still attempt the gym challenge\n"
-	.string "if you wish but be warned we will not go\l"
-	.string "easy on you.$"
+	.string "Come back when you are stronger!$"
+
+NPC_BARB_BLOCKADE_1_Text_6:
+	.string "Good luck on your gym challenge.$"
+
+NPC_BARB_BLOCKADE_1_Text_7:
+	.string "We knew you would be struggling but\n"
+	.string "good luck on your gym challenge.$"
+
+NPC_BARB_BLOCKADE_1_Text_8:
+	.string "You defeated our Chieftain!\p"
+	.string "We are impressed, well done!$"
 
 NPC_BARBARIANVILLAGE_DUNGEONGIRL_Text_0:
+	.string "Litara$"
+
+NPC_BARBARIANVILLAGE_DUNGEONGIRL_Text_1:
+	.string "You have proved yourself a barbarian in\n"
+	.string "name and spirit!\p"
+	.string "I grant you access to use our\n"
+	.string "stronghold for training.\p"
+	.string "The monsters found within are very\n"
+	.string "strong, so have fun training!$"
+
+NPC_BARBARIANVILLAGE_DUNGEONGIRL_Text_2:
 	.string "Only once you have proved yourself a\n"
 	.string "barbarian are you allowed to use our\l"
 	.string "dungeon for training.$"
@@ -204,7 +323,34 @@ NPC_BARBARIANVILLAGE_SIGNPOST_Text_0:
 
 NPC_BARBARIANVILLAGE_NPC1_Text_0:
 	.string "Chieftain Gunthor is the strongest\n"
-	.string "warrior of our village.$"
+	.string "warrior of our village and also the 6th\l"
+	.string "strongest MvM Gym Leader.$"
+
+NPC_BARBARIANVILLAGE_NPC2_Text_0:
+	.string "Finally after all the training my\n"
+	.string "Monster learnt a new move.\p"
+	.string "The crazy thing is that it evolved right\n"
+	.string "after!$"
+
+NPC_BARBARIANVILLAGE_NPC3_Text_0:
+	.string "We don't need no Banks to heal our\n"
+	.string "Monsters in our Village.\p"
+	.string "That is the path of a weakling.$"
+
+NPC_BARBARIANVILLAGE_NPC4_Text_0:
+	.string "My father is the Chieftain of this\n"
+	.string "village and also a Gym Leader.\p"
+	.string "I feel like I have a lot to live up to.$"
+
+NPC_BARBARIANVILLAGE_NPC5_Text_0:
+	.string "Dwarf$"
+
+NPC_BARBARIANVILLAGE_NPC5_Text_1:
+	.string "There is a girl I like, but I do not know\n"
+	.string "if she would like me.\p"
+	.string "I do not know what to do so I will stay\n"
+	.string "here picking each petal of this flower\l"
+	.string "until fate decides for me.$"
 
 NPC_ROUTE20_NPC1_Text_0:
 	.string "This is a popular spot for fly fishing.\p"

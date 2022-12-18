@@ -805,6 +805,7 @@
 #define MAP_VARROCK_GENERAL_STORE     (23 | (43 << 8))
 
 // Map Group 44
+#define MAP_BARBARIAN_VILLAGE_GYM_HALL (0 | (44 << 8))
 
 // Map Group 45
 

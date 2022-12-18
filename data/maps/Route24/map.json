@@ -14,44 +14,44 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_FALADOR",
+      "direction": "down",
       "offset": 0,
-      "direction": "down"
+      "map": "MAP_FALADOR"
     },
     {
-      "map": "MAP_ROUTE23",
+      "direction": "right",
       "offset": 22,
-      "direction": "right"
+      "map": "MAP_ROUTE23"
     },
     {
-      "map": "MAP_GOBLIN_VILLAGE",
+      "direction": "up",
       "offset": 0,
-      "direction": "up"
+      "map": "MAP_GOBLIN_VILLAGE"
     },
     {
-      "map": "MAP_DWARVEN_MINES",
+      "direction": "right",
       "offset": 0,
-      "direction": "right"
+      "map": "MAP_DWARVEN_MINES"
     },
     {
-      "map": "MAP_ROUTE26",
+      "direction": "up",
       "offset": 44,
-      "direction": "up"
+      "map": "MAP_ROUTE26"
     },
     {
-      "map": "MAP_ROUTE35",
+      "direction": "left",
       "offset": 48,
-      "direction": "left"
+      "map": "MAP_ROUTE35"
     },
     {
-      "map": "MAP_ROUTE36",
+      "direction": "left",
       "offset": 26,
-      "direction": "left"
+      "map": "MAP_ROUTE36"
     },
     {
-      "map": "MAP_ROUTE37",
+      "direction": "left",
       "offset": 2,
-      "direction": "left"
+      "map": "MAP_ROUTE37"
     }
   ],
   "object_events": [
@@ -296,7 +296,7 @@
       "y": 23,
       "elevation": 0,
       "dest_map": "MAP_DORICS_HUT",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

@@ -14,29 +14,29 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE15",
+      "direction": "down",
       "offset": 0,
-      "direction": "down"
+      "map": "MAP_ROUTE15"
     },
     {
-      "map": "MAP_ROUTE17",
+      "direction": "up",
       "offset": 0,
-      "direction": "up"
+      "map": "MAP_ROUTE17"
     },
     {
-      "map": "MAP_VARROCK",
+      "direction": "left",
       "offset": -2,
-      "direction": "left"
+      "map": "MAP_VARROCK"
     },
     {
-      "map": "MAP_VARROCK_NORTH",
+      "direction": "left",
       "offset": -40,
-      "direction": "left"
+      "map": "MAP_VARROCK_NORTH"
     },
     {
-      "map": "MAP_ROUTE38",
+      "direction": "right",
       "offset": -34,
-      "direction": "right"
+      "map": "MAP_ROUTE38"
     }
   ],
   "object_events": [
@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "BATTLE_ROUTE16_TRAINER_1",
       "flag": "0"
     },
     {
@@ -115,7 +115,7 @@
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "BATTLE_ROUTE16_TRAINER_2",
       "flag": "0"
     },
     {

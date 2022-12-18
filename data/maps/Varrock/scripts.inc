@@ -2,6 +2,13 @@ Varrock_MapScripts::
 	.byte 0
 
 
+VARROCK_SIGNPOST::
+	msgbox VARROCK_SIGNPOST_Text_0
+	closemessage
+	release
+	end
+
+
 VARROCK_Gypsy_Aris_SIGNPOST::
 	msgbox VARROCK_Gypsy_Aris_SIGNPOST_Text_0
 	closemessage
@@ -13,6 +20,25 @@ VARROCK_SCAMMER::
 	faceplayer
 	namebox VARROCK_SCAMMER_Text_0
 	msgbox VARROCK_SCAMMER_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_GUARD_0::
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox VARROCK_NPC_GUARD_0_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_RUNEARMOUR::
+	faceplayer
+	msgbox VARROCK_NPC_RUNEARMOUR_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -46,8 +72,8 @@ VARROCK_NPC_Firemaker::
 
 VARROCK_NPC_Guard1::
 	faceplayer
-	namebox VARROCK_NPC_Guard1_Text_0
-	msgbox VARROCK_NPC_Guard1_Text_1
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox VARROCK_NPC_Guard1_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -56,7 +82,7 @@ VARROCK_NPC_Guard1::
 
 VARROCK_NPC_Guard2::
 	faceplayer
-	namebox VARROCK_NPC_Guard1_Text_0
+	namebox VARROCK_NPC_GUARD_0_Text_0
 	msgbox VARROCK_NPC_Guard2_Text_0
 	closemessage
 	hidenamebox
@@ -76,7 +102,7 @@ VARROCK_CLEANER::
 
 VARROCK_NPC_Guard3::
 	faceplayer
-	namebox VARROCK_NPC_Guard1_Text_0
+	namebox VARROCK_NPC_GUARD_0_Text_0
 	msgbox VARROCK_NPC_Guard3_Text_0
 	closemessage
 	hidenamebox
@@ -171,6 +197,147 @@ VARROCK_NPC_Halen2::
 	end
 
 
+VARROCK_NPC_BronzeGuy::
+	faceplayer
+	msgbox VARROCK_NPC_BronzeGuy_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_Guard_5::
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox VARROCK_NPC_Guard_5_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_Guard_6::
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox VARROCK_NPC_Guard_6_Text_0
+	namebox VARROCK_NPC_Guard_6_Text_1
+	msgbox VARROCK_NPC_Guard_6_Text_2
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox VARROCK_NPC_Guard_6_Text_3
+	namebox VARROCK_NPC_Guard_6_Text_1
+	msgbox VARROCK_NPC_Guard_6_Text_4
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox VARROCK_NPC_Guard_6_Text_5
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_Ranger::
+	faceplayer
+	namebox VARROCK_NPC_Ranger_Text_0
+	msgbox VARROCK_NPC_Ranger_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_THUG_1::
+	faceplayer
+	msgbox VARROCK_NPC_THUG_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_THUG_2::
+	faceplayer
+	msgbox VARROCK_NPC_THUG_2_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_THUG_3::
+	faceplayer
+	msgbox VARROCK_NPC_THUG_3_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_NOOB_1::
+	faceplayer
+	msgbox VARROCK_NPC_NOOB_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_PRIEST::
+	faceplayer
+	msgbox VARROCK_NPC_PRIEST_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_GUARD_7::
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox VARROCK_NPC_GUARD_7_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_10::
+	faceplayer
+	msgbox VARROCK_NPC_10_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_11::
+	faceplayer
+	msgbox VARROCK_NPC_11_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_TeaSalesman::
+	lock
+	faceplayer
+	namebox VARROCK_NPC_TeaSalesman_Text_0
+	msgbox VARROCK_NPC_TeaSalesman_Text_1
+	waitmessage
+	hidenamebox
+	pokemart TeaSalesmanVarrock
+	msgbox VARROCK_NPC_TeaSalesman_Text_2
+	release
+	end
+
+
+    .align 2
+TeaSalesmanVarrock:
+    .2byte ITEM_REPEL_TEA_1
+    .2byte ITEM_REPEL_TEA_2
+    .2byte ITEM_REPEL_TEA_3
+    .2byte ITEM_NONE
+    release
+    end
+
 VARROCK_NPC_Apothecary::
 	lock
 	faceplayer
@@ -179,7 +346,7 @@ VARROCK_NPC_Apothecary::
 	waitmessage
 	hidenamebox
 	pokemart ApothecaryVarrock
-	msgbox VARROCK_NPC_Apothecary_Text_2
+	msgbox VARROCK_NPC_TeaSalesman_Text_2
 	release
 	end
 
@@ -199,7 +366,7 @@ ApothecaryVarrock:
 NPC_VARROCKGUARD_BLOCKADE_1::
 	lock
 	faceplayer
-	namebox VARROCK_NPC_Guard1_Text_0
+	namebox VARROCK_NPC_GUARD_0_Text_0
 	msgbox NPC_VARROCKGUARD_BLOCKADE_1_Text_0
 	goto_if_set FLAG_BADGE03_GET, NPC_VARROCKGUARD_BLOCKADE_1_2
 	hidenamebox
@@ -276,6 +443,88 @@ NPC_SLAYERMASTERLIST::
 	end
 
 
+BATTLE_VARROCK_GYM_TRAINER_1::
+	trainerbattle_single TRAINER_FALADOR_GYM_1, BATTLE_VARROCK_GYM_TRAINER_1_Text_0, BATTLE_VARROCK_GYM_TRAINER_1_Text_1
+	switch VAR_POKESCAPE_FALADOR_STATE
+	case 4, BATTLE_VARROCK_GYM_TRAINER_1_2
+	case 5, BATTLE_VARROCK_GYM_TRAINER_1_3
+	return
+
+BATTLE_VARROCK_GYM_TRAINER_1_2:
+	lock
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox BATTLE_VARROCK_GYM_TRAINER_1_Text_2
+	hidenamebox
+	release
+	end
+
+BATTLE_VARROCK_GYM_TRAINER_1_3:
+	lock
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox BATTLE_VARROCK_GYM_TRAINER_1_Text_2
+	hidenamebox
+	release
+	end
+
+
+BATTLE_VARROCK_GYM_TRAINER_2::
+	trainerbattle_single TRAINER_FALADOR_GYM_1, BATTLE_VARROCK_GYM_TRAINER_2_Text_0, BATTLE_VARROCK_GYM_TRAINER_2_Text_1
+	switch VAR_POKESCAPE_FALADOR_STATE
+	case 4, BATTLE_VARROCK_GYM_TRAINER_2_2
+	case 5, BATTLE_VARROCK_GYM_TRAINER_2_3
+	return
+
+BATTLE_VARROCK_GYM_TRAINER_2_2:
+	lock
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox BATTLE_VARROCK_GYM_TRAINER_2_Text_1
+	hidenamebox
+	release
+	end
+
+BATTLE_VARROCK_GYM_TRAINER_2_3:
+	lock
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox BATTLE_VARROCK_GYM_TRAINER_2_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_VARROCK_GYM_TRAINER_3::
+	trainerbattle_single TRAINER_FALADOR_GYM_1, BATTLE_VARROCK_GYM_TRAINER_3_Text_0, BATTLE_VARROCK_GYM_TRAINER_3_Text_1
+	switch VAR_POKESCAPE_FALADOR_STATE
+	case 4, BATTLE_VARROCK_GYM_TRAINER_3_2
+	case 5, BATTLE_VARROCK_GYM_TRAINER_3_3
+	return
+
+BATTLE_VARROCK_GYM_TRAINER_3_2:
+	lock
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox BATTLE_VARROCK_GYM_TRAINER_3_Text_2
+	hidenamebox
+	release
+	end
+
+BATTLE_VARROCK_GYM_TRAINER_3_3:
+	lock
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox BATTLE_VARROCK_GYM_TRAINER_3_Text_2
+	hidenamebox
+	release
+	end
+
+
+VARROCK_SIGNPOST_Text_0:
+	.string "Varrock, the trade centre of the\n"
+	.string "Gielinor.$"
+
 VARROCK_Gypsy_Aris_SIGNPOST_Text_0:
 	.string "My tent was destroyed by some\n"
 	.string "adventurers having MvM battles in the\l"
@@ -290,6 +539,20 @@ VARROCK_SCAMMER_Text_0:
 VARROCK_SCAMMER_Text_1:
 	.string "Pssst, give me your monster, I'll trim it\n"
 	.string "for you.$"
+
+VARROCK_NPC_GUARD_0_Text_0:
+	.string "Guard$"
+
+VARROCK_NPC_GUARD_0_Text_1:
+	.string "Are you here to challenge the king to an\n"
+	.string "MvM battle?\p"
+	.string "Keep going north from here you will find\n"
+	.string "him in the Palace.$"
+
+VARROCK_NPC_RUNEARMOUR_Text_0:
+	.string "I am thinking about getting a new\n"
+	.string "sword, but they do not seem to be\l"
+	.string "selling any Rune items.$"
 
 VARROCK_NPC_Trader1_Text_0:
 	.string "I heard you can trade your monsters\n"
@@ -308,9 +571,6 @@ VARROCK_NPC_Firemaker_Text_0:
 	.string "train the Firemaking skill.$"
 
 VARROCK_NPC_Guard1_Text_0:
-	.string "Guard$"
-
-VARROCK_NPC_Guard1_Text_1:
 	.string "We had an incident the other month\n"
 	.string "which was caused by an MvM battle\l"
 	.string "getting out of hand.\p"
@@ -403,15 +663,106 @@ VARROCK_NPC_Halen_Text_1:
 VARROCK_NPC_Halen2_Text_0:
 	.string "Honestly I think this is a joke.$"
 
+VARROCK_NPC_BronzeGuy_Text_0:
+	.string "There are Pigeons everywhere here.\p"
+	.string "Surely they must be useful for\n"
+	.string "something right?$"
+
+VARROCK_NPC_Guard_5_Text_0:
+	.string "The southern trail holds a lot of\n"
+	.string "danger.\p"
+	.string "Please be careful of bears and other\n"
+	.string "perils.$"
+
+VARROCK_NPC_Guard_6_Text_0:
+	.string "Yes the castle is to the north.$"
+
+VARROCK_NPC_Guard_6_Text_1:
+	.string "Dwarf$"
+
+VARROCK_NPC_Guard_6_Text_2:
+	.string "And the kart system goes to the\n"
+	.string "castle?$"
+
+VARROCK_NPC_Guard_6_Text_3:
+	.string "No, it goes to the Grand Exchange.$"
+
+VARROCK_NPC_Guard_6_Text_4:
+	.string "Ok but where is the castle then?$"
+
+VARROCK_NPC_Guard_6_Text_5:
+	.string "Ugh…$"
+
+VARROCK_NPC_Ranger_Text_0:
+	.string "Ranger$"
+
+VARROCK_NPC_Ranger_Text_1:
+	.string "Sometimes the best teacher is defeat.\p"
+	.string "If you lose a battle think about how to\n"
+	.string "change your team to adapt to the\l"
+	.string "opponents strategy.$"
+
+VARROCK_NPC_THUG_1_Text_0:
+	.string "You are in the wrong neighborhood.\p"
+	.string "Get out before I make you stand and\n"
+	.string "deliver.$"
+
+VARROCK_NPC_THUG_2_Text_0:
+	.string "The criminal justice system is balanced\n"
+	.string "on a knives edge, we thugs bring the\l"
+	.string "knives and the guards gets us on the\l"
+	.string "edge of the city.$"
+
+VARROCK_NPC_THUG_3_Text_0:
+	.string "Once I get these lobsters all burnt and\n"
+	.string "good, the Grand Exchange wont know\l"
+	.string "what hit them.$"
+
+VARROCK_NPC_NOOB_1_Text_0:
+	.string "I am meeting a friend up north past the\n"
+	.string "border, he told me to bring my best\l"
+	.string "items and money so they could see\l"
+	.string "them.$"
+
+VARROCK_NPC_PRIEST_Text_0:
+	.string "Would you like to partake in the\n"
+	.string "ceremony?$"
+
+VARROCK_NPC_GUARD_7_Text_0:
+	.string "Past this is the Wilderness, it is a\n"
+	.string "lawless place and I can not in good\l"
+	.string "conscience allow you to go there\l"
+	.string "without a stern warning. Be careful.$"
+
+VARROCK_NPC_10_Text_0:
+	.string "They say the king is a surprisingly\n"
+	.string "strong monster trainer.\p"
+	.string "But his wife prefers tending to her\n"
+	.string "garden than indulging in his hobby.$"
+
+VARROCK_NPC_11_Text_0:
+	.string "Dont dig for treasure chests, you have\n"
+	.string "been warned.$"
+
+VARROCK_NPC_TeaSalesman_Text_0:
+	.string "Tea Salesman$"
+
+VARROCK_NPC_TeaSalesman_Text_1:
+	.string "Selling Tea is my passion.\p"
+	.string "Follow your passion and life will reward\n"
+	.string "you.\p"
+	.string "Anyway, are you in need of some high\n"
+	.string "qualitea?$"
+
+VARROCK_NPC_TeaSalesman_Text_2:
+	.string "Thank you, come again!$"
+
 VARROCK_NPC_Apothecary_Text_0:
 	.string "Apothecary$"
 
 VARROCK_NPC_Apothecary_Text_1:
 	.string "Welcome to my Potion store!\p"
 	.string "How may I help you?$"
-
-VARROCK_NPC_Apothecary_Text_2:
-	.string "Thank you, come again!$"
 
 NPC_VARROCKGUARD_BLOCKADE_1_Text_0:
 	.string "Sorry, by order of the King only those\n"
@@ -477,3 +828,33 @@ NPC_SLAYERMASTERLIST_Text_2:
 	.string "Badges you will then be eligible to\l"
 	.string "participate in the… …\p"
 	.string "The page is torn.$"
+
+BATTLE_VARROCK_GYM_TRAINER_1_Text_0:
+	.string "Hey you!\n"
+	.string "Do not trespass!$"
+
+BATTLE_VARROCK_GYM_TRAINER_1_Text_1:
+	.string "Consider that a warning!$"
+
+BATTLE_VARROCK_GYM_TRAINER_1_Text_2:
+	.string "Do not trespass!$"
+
+BATTLE_VARROCK_GYM_TRAINER_2_Text_0:
+	.string "You look shady.$"
+
+BATTLE_VARROCK_GYM_TRAINER_2_Text_1:
+	.string "You may pass shady person.$"
+
+BATTLE_VARROCK_GYM_TRAINER_3_Text_0:
+	.string "The king said he did not want visitors\n"
+	.string "today.$"
+
+BATTLE_VARROCK_GYM_TRAINER_3_Text_1:
+	.string "You do not care what the king wants at\n"
+	.string "all, do you?$"
+
+BATTLE_VARROCK_GYM_TRAINER_3_Text_2:
+	.string "The king said he did not want visitors\n"
+	.string "today.\p"
+	.string "You do not care what the king wants at\n"
+	.string "all, do you?$"

@@ -1,0 +1,115 @@
+mapscripts Route15_MapScripts {
+}
+
+
+
+
+
+
+
+
+
+script ROUTE15_SIGNPOST
+{
+    msgbox(format("NORTH - VARROCK.\lSOUTH - AL KHARID.\lEAST - DIGSITE."))
+    closemessage
+    release
+    end
+}
+
+//NPC
+
+script ROUTE15_NPC_UNICORN
+{
+    
+    namebox ("Unicorn")
+    msgbox(format("NEEEIGGH!"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script ROUTE15_NPC_MINER
+{
+    
+    namebox ("Miner")
+    msgbox(format("I am going to craft so many Pouches with these ores!"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script ROUTE15_NPC_NOOB
+{
+    
+    namebox ("Noob")
+    msgbox(format(""))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+//BATTLES
+
+script BATTLE_ROUTE15_TRAINER_1 
+{ //Penguin spy (rock) ,War tortoise 
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("We mine all day, time for a break."),format("I lost a lot of exp on that break.\pI may never recover from this loss."))
+    namebox ("MINER")
+    msgbox(format("I lost a lot of exp on that break.\pI may never recover from this loss."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE15_TRAINER_2
+{ //Pickaxe. Nature impling.
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("You better be worth my time interrupting me like this."),format("I guess you were partly worth it."))
+    namebox ("MINER")
+    msgbox(format("I guess you were partly worth it."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE15_TRAINER_3
+{ //Brine rat. pet rock. Cavefish.
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("It might not be ambitious, but I'd really like to reach mining level 9 by the week."),format("I am never going to make it…"))
+    namebox ("MINER")
+    msgbox(format("I am never going to make it…"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE15_TRAINER_4
+{ //Sheephound (border collie) . Birds nest. Dancing doll
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("I chop down trees, I eat my lunch, I like to battle strangers!"),format("On wednesday I go shopping, just like my dear papa!"))
+    namebox ("WC")
+    msgbox(format("On Wednesday I go shopping, just like my dear papa!"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE15_TRAINER_5
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("I hear the digsite is nearby, but only members are allowed to excavate it."),format(""))
+    namebox ("RANGER")
+    msgbox(format(""))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE15_TRAINER_6
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format(""),format(""))
+    namebox ("WC")
+    msgbox(format(""))
+	hidenamebox
+    release
+	end
+}

@@ -73,6 +73,34 @@ BATTLE_ROUTE18_TRAINER7::
 	end
 
 
+NPC_ROUTE19_BRASS_KEY::
+	msgbox NPC_ROUTE19_BRASS_KEY_Text_0
+	release
+	end
+
+
+NPC_ROUTE19_GOBLIN_1::
+	faceplayer
+	msgbox NPC_ROUTE19_GOBLIN_1_Text_0
+	release
+	end
+
+
+NPC_ROUTE19_GOBLIN_2::
+	faceplayer
+	msgbox NPC_ROUTE19_GOBLIN_2_Text_0
+	release
+	end
+
+
+BATTLE_ROUTE19_TRAINER1::
+	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE19_TRAINER1_Text_0, BATTLE_ROUTE19_TRAINER1_Text_1
+	msgbox BATTLE_ROUTE19_TRAINER1_Text_2
+	hidenamebox
+	release
+	end
+
+
 NPC_ROUTE18_NPC1_Text_0:
 	.string ".$"
 
@@ -168,3 +196,30 @@ BATTLE_ROUTE18_TRAINER7_Text_2:
 	.string "The Dark Wizards are a problem for\n"
 	.string "years but we don't have enough funding\l"
 	.string "to deal with them.$"
+
+NPC_ROUTE19_BRASS_KEY_Text_0:
+	.string "The door is locked with what looks like\n"
+	.string "a brass padlock.$"
+
+NPC_ROUTE19_GOBLIN_1_Text_0:
+	.string "Me left key inside house.\p"
+	.string "Now me locked out of house.$"
+
+NPC_ROUTE19_GOBLIN_2_Text_0:
+	.string "We must go to Ghost Town and ask Hob\n"
+	.string "cousins for spare key.$"
+
+BATTLE_ROUTE19_TRAINER1_Text_0:
+	.string "I hope you brought a chefs hat,\n"
+	.string "because you are not getting in without\l"
+	.string "one.$"
+
+BATTLE_ROUTE19_TRAINER1_Text_1:
+	.string "No, you cannot have mine.$"
+
+BATTLE_ROUTE19_TRAINER1_Text_2:
+	.string "To access the Cooking Guild you will\n"
+	.string "need either a chefs hat or be a maxed\l"
+	.string "out your Cooking skill.\p"
+	.string "You look like you have neither of those\n"
+	.string "so bad luck for you.$"

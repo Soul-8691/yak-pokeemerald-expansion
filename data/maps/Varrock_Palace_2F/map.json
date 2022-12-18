@@ -61,9 +61,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "BATTLE_VARROCK_GYM_TRAINER_2",
       "flag": "0"
     },
     {
@@ -229,21 +229,14 @@
       "y": 28,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_PALACE_1F",
-      "dest_warp_id": "2"
+      "dest_warp_id": 2
     },
     {
       "x": 2,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_PALACE_1F",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 21,
-      "y": 25,
-      "elevation": 0,
-      "dest_map": "MAP_VARROCK_PALACE_2F",
-      "dest_warp_id": "0"
+      "dest_warp_id": 3
     }
   ],
   "coord_events": [

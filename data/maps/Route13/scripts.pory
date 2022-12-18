@@ -1,0 +1,209 @@
+mapscripts Route13_MapScripts {
+}
+
+
+
+
+
+
+
+
+
+
+//NPC
+
+script VARROCK_NPC_RATBURGUS
+{
+    faceplayer
+    //namebox ("RATBURGUS")
+    msgbox(format("CUPHOLDER"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script ROUTE14_QUESTER
+{
+    faceplayer
+    //namebox ("Quester")
+    msgbox(format("This is the champions guild.\pMake yourself worthy and you may one day become a member."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+//BATTLES
+
+script BATTLE_ROUTE13_DARKWIZARD_1 
+{ //Raven. Mohawk raven-
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Beware the might of Zamorak!"),format("Praise lord Zamorak!"))
+    namebox ("DARK WIZARD")
+    msgbox(format("Praise lord Zamorak!"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE13_DARKWIZARD_2 
+{ //Lesser demon. lesser tongue demon
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Circle is taken, get lost kid."),format("And let that be a warning."))
+    namebox ("DARK WIZARD")
+    msgbox(format("And let that be a warning."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE13_DARKWIZARD_3 
+{ //Lesser demon (osrs) Lesser demon (black) Impx2
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("For the glory of Delrith!"),format("Just wait until we have the might of Delrith on our side."))
+    namebox ("DARK WIZARD")
+    msgbox(format("Just wait until we have the might of Delrith on our side."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE13_DARKWIZARD_4 
+{ //eam: Greater demon (rs3)
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Step one: Aquire circle.\pCheck.\pStep two: Summon demon…\pHmmm…\pHey, you! youre not supposed to be here!"),format("At least I know step 4 is to worship the demon."))
+    namebox ("DARK WIZARD")
+    msgbox(format("Atleast I know step 4 is to worship the demon."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE13_DARKWIZARD_5 
+{ //Team: Imp, Black demon (winged), Spooky raven.
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format(""),format(""))
+    namebox ("DARK WIZARD")
+    msgbox(format(""))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE13_TRAINER_1 
+{ //Chicken x6 (do some different formes maybe, but no full evos)
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Which way is Varrock?\pTell me or I will pwn you!"),format("Its south?\pThanks bud!"))
+    namebox ("NOOB")
+    msgbox(format("Its south?\pThanks bud!"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE13_TRAINER_2 
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format(""),format(""))
+    namebox ("AGILE")
+    msgbox(format("Beware on the road to Varrock.\pSome shady people have started residing in the old ruins near the gates."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE13_TRAINER_3 
+{ //Willford- Goblinfish x2
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Go fish, get lost."),format("No seriously.\pGet lost and try fishing."))
+    namebox ("Willford")
+    msgbox(format("No seriously.\pGet lost and try fishing."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE13_TRAINER_4 
+{ //overgrown cat. Flying kite. Ernest. Young impling
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("The guide tells me to fight you, lets do this!"),format("Says nothing in the guide on how to beat you or how to cope with my loss.\pDo I just wing it then?"))
+    namebox ("QUESTER")
+    msgbox(format("Says nothing in the guide on how to beat you or how to cope with my loss.\pDo I just wing it then?"))
+	hidenamebox
+    release
+	end
+}
+
+
+script BATTLE_ROUTE14_TRAINER_1
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Dont disturb me!"),format("You woke my pet rock up…"))
+    namebox ("MINER")
+    msgbox(format("You woke my pet rock up…"))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE14_TRAINER_2
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("This spot is taken, leave!"),format("Well I guess we can share a little bit…"))
+    namebox ("MINER")
+    msgbox(format("Well I guess we can share a little bit…"))
+	hidenamebox
+    release
+	end
+}
+
+
+
+
+
+
+//ROUTE16
+script BATTLE_ROUTE16_TRAINER_1
+{//Dead tree, Tree ent
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Stop right there timbering scum."),format("The sawmill is up north, but all I hear when I go there is meowing."))
+    namebox ("WC")
+    msgbox(format("The sawmill is up north, but all I hear when I go there is meowing."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE16_TRAINER_2
+{//Giant rat x3 Grizzly bear
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Watch out for the dangers of Eastern Mishtalin!"),format("Beware of bears and giant rats out there stranger."))
+    namebox ("GUARD")
+    msgbox(format("Beware of bears and giant rats out there stranger."))
+	hidenamebox
+    release
+	end
+}
+
+
+
+//ROUTE17
+script BATTLE_ROUTE17_TRAINER_1
+{//Bat. Dobbin. butterfly. clowckwork cat.
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("To get to Morytania I need to get past those blasted bats…\pNow if I only- WAH!"),format("You scared me there.\pI thought you were a bat."))
+    namebox ("SKILLER")
+    msgbox(format("You scared me there.\pI thought you were a bat."))
+	hidenamebox
+    release
+	end
+}
+
+script BATTLE_ROUTE17_TRAINER_2
+{//Posessed axe, sporaxe. marionette.
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Stop!\pYour woodcutting level is too low to enter the lumberyard."),format("I think you levelled up after out fight.\pYou may pass."))
+    namebox ("WC")
+    msgbox(format("I think you levelled up after out fight.\pYou may pass."))
+	hidenamebox
+    release
+	end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

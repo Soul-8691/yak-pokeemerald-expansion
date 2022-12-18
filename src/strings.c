@@ -575,7 +575,7 @@ const u8 gText_Tristan[] = _("TRISTAN");
 const u8 gText_Philip[] = _("PHILIP");
 const u8 gText_Dennis[] = _("DENNIS");
 const u8 gText_Roberto[] = _("ROBERTO");
-const u8 gText_TurnOff[] = _("TURN OFF");
+const u8 gText_TurnOff[] = _("EXIT");
 const u8 gText_Decoration[] = _("DECORATION");
 const u8 gText_ItemStorage[] = _("ITEM STORAGE");
 const u8 gText_Mailbox[] = _("MAILBOX");
@@ -583,7 +583,7 @@ const u8 gText_DepositItem[] = _("DEPOSIT ITEM");
 const u8 gText_WithdrawItem[] = _("WITHDRAW ITEM");
 const u8 gText_TossItem[] = _("TOSS ITEM");
 const u8 gText_StoreItemsInPC[] = _("Store items in the PC.");
-const u8 gText_TakeOutItemsFromPC[] = _("Take out items from the PC.");
+const u8 gText_TakeOutItemsFromPC[] = _("Take out items from the BANK.");
 const u8 gText_ThrowAwayItemsInPC[] = _("Throw away items stored in the PC.");
 const u8 gText_NoItems[] = _("There are no items.{PAUSE_UNTIL_PRESS}");
 const u8 gText_NoRoomInBag[] = _("There is no more\nroom in the BAG.");
@@ -1880,7 +1880,9 @@ const u8 gText_POH_BLACK[] =_("BLACK");
 const u8 gText_PhoenixEgg_Clap[] =_("CLAP AT IT.");
 const u8 gText_PhoenixEgg_Kick[] =_("KICK IT!!!!");
 
-
+const u8 gText_BANK_HEAL[] =_("HEAL MONSTERS");
+const u8 gText_BANK_STORE_MONSTERS[] =_("STORE MONSTERS");
+const u8 gText_BANK_STORE_ITEMS[] =_("STORE ITEMS");
 
 //misc
 const u8 gText_NextMenu[] =_("Next");

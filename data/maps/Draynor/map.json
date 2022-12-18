@@ -14,29 +14,29 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE1",
+      "direction": "up",
       "offset": 22,
-      "direction": "up"
+      "map": "MAP_ROUTE1"
     },
     {
-      "map": "MAP_ROUTE2",
+      "direction": "down",
       "offset": 0,
-      "direction": "down"
+      "map": "MAP_ROUTE2"
     },
     {
-      "map": "MAP_ROUTE3",
+      "direction": "up",
       "offset": 0,
-      "direction": "up"
+      "map": "MAP_ROUTE3"
     },
     {
-      "map": "MAP_ROUTE5",
+      "direction": "left",
       "offset": 0,
-      "direction": "left"
+      "map": "MAP_ROUTE5"
     },
     {
-      "map": "MAP_PORT_SARIM",
+      "direction": "left",
       "offset": 12,
-      "direction": "left"
+      "map": "MAP_PORT_SARIM"
     }
   ],
   "object_events": [
@@ -372,49 +372,49 @@
       "y": 32,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_BANK",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 24,
       "y": 26,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_HOUSE_WO_M_1F",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 26,
       "y": 17,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 31,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_HOUSE_MORGAN_1F",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 19,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR",
-      "dest_warp_id": "4"
+      "dest_warp_id": 0
     },
     {
       "x": 27,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR",
-      "dest_warp_id": "5"
+      "dest_warp_id": 0
     },
     {
       "x": 22,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_DRAYNOR_SEWERS_1",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

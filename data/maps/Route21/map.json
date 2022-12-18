@@ -14,34 +14,34 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE20",
+      "direction": "left",
       "offset": -46,
-      "direction": "left"
+      "map": "MAP_ROUTE20"
     },
     {
-      "map": "MAP_MILL_LANE_MILL",
+      "direction": "down",
       "offset": -26,
-      "direction": "down"
+      "map": "MAP_MILL_LANE_MILL"
     },
     {
-      "map": "MAP_ROUTE18",
+      "direction": "up",
       "offset": 0,
-      "direction": "up"
+      "map": "MAP_ROUTE18"
     },
     {
-      "map": "MAP_ROUTE14",
+      "direction": "right",
       "offset": 18,
-      "direction": "right"
+      "map": "MAP_ROUTE14"
     },
     {
-      "map": "MAP_ROUTE22",
+      "direction": "down",
       "offset": 6,
-      "direction": "down"
+      "map": "MAP_ROUTE22"
     },
     {
-      "map": "MAP_VARROCK",
+      "direction": "right",
       "offset": -32,
-      "direction": "right"
+      "map": "MAP_VARROCK"
     }
   ],
   "object_events": [

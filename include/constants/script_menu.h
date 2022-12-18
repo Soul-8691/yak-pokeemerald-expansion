@@ -133,6 +133,7 @@
 #define MULTI_POH                          119
 #define MULTI_COLOUR_PICKAXE               120
 #define MULTI_PHEONIXEGG                   121
+#define MULTI_BANKOPTIONS                  122
 
 
 // Lilycove SS Tidal Multichoice Selections

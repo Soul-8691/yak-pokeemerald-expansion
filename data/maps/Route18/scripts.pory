@@ -29,6 +29,7 @@ script NPC_ROUTE18_NPC1
 
 
 
+
 //BATTLES
 
 script BATTLE_ROUTE18_TRAINER1 // AGILITY
@@ -102,3 +103,44 @@ script BATTLE_ROUTE18_TRAINER7 // GUARD
 	end
 }
 
+
+
+
+
+
+
+
+
+
+//ROUTE 19
+script NPC_ROUTE19_BRASS_KEY
+{
+    msgbox(format("The door is locked with what looks like a brass padlock."))
+    release
+    end
+}
+script NPC_ROUTE19_GOBLIN_1
+{
+    faceplayer
+    msgbox(format("Me left key inside house.\pNow me locked out of house."))
+    release
+    end
+}
+script NPC_ROUTE19_GOBLIN_2
+{
+    faceplayer
+    msgbox(format("We must go to Ghost Town and ask Hob cousins for spare key."))
+    release
+    end
+}
+
+
+script BATTLE_ROUTE19_TRAINER1 // GUARD
+{
+    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("I hope you brought a chefs hat, because you are not getting in without one."),format("No, you cannot have mine."))
+    //namebox ("")
+    msgbox(format("To access the Cooking Guild you will need either a chefs hat or be a maxed out your Cooking skill.\pYou look like you have neither of those so bad luck for you."))
+	hidenamebox
+    release
+	end
+}

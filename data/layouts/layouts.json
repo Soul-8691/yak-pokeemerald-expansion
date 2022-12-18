@@ -5074,7 +5074,7 @@
     {
       "id": "LAYOUT_ROUTE31",
       "name": "Route31_Layout",
-      "width": 50,
+      "width": 54,
       "height": 26,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Wilderness",
@@ -6900,6 +6900,26 @@
       "secondary_tileset": "gTileset_Lumbridge_Swamp",
       "border_filepath": "data/layouts/Route45/border.bin",
       "blockdata_filepath": "data/layouts/Route45/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_GERTRUDE_HOUSE",
+      "name": "Varrock_Gertrude_House_Layout",
+      "width": 12,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_Gertrude_House/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Gertrude_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_GENERAL_STORE",
+      "name": "Varrock_GeneralStore_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_GeneralStore/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_GeneralStore/map.bin"
     }
   ]
 }

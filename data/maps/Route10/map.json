@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_PORT_SARIM",
+      "direction": "right",
       "offset": -10,
-      "direction": "right"
+      "map": "MAP_PORT_SARIM"
     },
     {
-      "map": "MAP_RIMMINGTON",
+      "direction": "left",
       "offset": 12,
-      "direction": "left"
+      "map": "MAP_RIMMINGTON"
     },
     {
-      "map": "MAP_ROUTE11",
+      "direction": "down",
       "offset": 0,
-      "direction": "down"
+      "map": "MAP_ROUTE11"
     },
     {
-      "map": "MAP_ROUTE9",
+      "direction": "left",
       "offset": -18,
-      "direction": "left"
+      "map": "MAP_ROUTE9"
     }
   ],
   "object_events": [
@@ -172,21 +172,21 @@
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM_CHURCH",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 6,
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_PORT_SARIM_CHURCH",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 4,
       "y": 4,
       "elevation": 0,
       "dest_map": "MAP_RIMMINGTON_MINES",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

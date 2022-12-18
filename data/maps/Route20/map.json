@@ -14,39 +14,39 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE19",
+      "direction": "right",
       "offset": 0,
-      "direction": "right"
+      "map": "MAP_ROUTE19"
     },
     {
-      "map": "MAP_ROUTE18",
+      "direction": "right",
       "offset": 18,
-      "direction": "right"
+      "map": "MAP_ROUTE18"
     },
     {
-      "map": "MAP_MILL_LANE_MILL",
+      "direction": "down",
       "offset": 0,
-      "direction": "down"
+      "map": "MAP_MILL_LANE_MILL"
     },
     {
-      "map": "MAP_DRAYNOR_MANOR",
+      "direction": "left",
       "offset": 54,
-      "direction": "left"
+      "map": "MAP_DRAYNOR_MANOR"
     },
     {
-      "map": "MAP_ROUTE21",
+      "direction": "right",
       "offset": 46,
-      "direction": "right"
+      "map": "MAP_ROUTE21"
     },
     {
-      "map": "MAP_BARBARIAN_VILLAGE",
+      "direction": "left",
       "offset": 0,
-      "direction": "left"
+      "map": "MAP_BARBARIAN_VILLAGE"
     },
     {
-      "map": "MAP_EDGEVILLE",
+      "direction": "up",
       "offset": -16,
-      "direction": "up"
+      "map": "MAP_EDGEVILLE"
     }
   ],
   "object_events": [

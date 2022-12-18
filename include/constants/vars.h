@@ -121,7 +121,7 @@
 #define VAR_POKESCAPE_MODTIMBO_STATE                   0x4066 // Unused Var
 #define VAR_GIANTMOLE_STATE                   0x4067 // Unused Var
 #define VAR_GOBLINVILLAGE_STATE                   0x4068 // Unused Var
-#define VAR_ROUTE110_STATE                   0x4069
+#define VAR_WILDERNESS_BLOCK_STATE                   0x4069
 #define VAR_ROUTE111_STATE                   0x406A // Unused Var
 #define VAR_ROUTE112_STATE                   0x406B // Unused Var
 #define VAR_ROUTE113_STATE                   0x406C // Unused Var

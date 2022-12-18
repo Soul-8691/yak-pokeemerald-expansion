@@ -20,8 +20,8 @@ EventScript_AccessPC:: @ 8271DBC
 	case 0, EventScript_AccessPokemonStorage
 	case 1, EventScript_AccessPlayersPC
 	case 2, EventScript_AccessHallOfFame
-	case 3, EventScript_TurnOffPC
-	case MULTI_B_PRESSED, EventScript_TurnOffPC
+	case 3, BANK_ExitBank
+	case MULTI_B_PRESSED, BANK_ExitBank
 	end
 
 EventScript_AccessPlayersPC:: @ 8271DF9
@@ -29,7 +29,7 @@ EventScript_AccessPlayersPC:: @ 8271DF9
 	msgbox gText_AccessedPlayersPC, MSGBOX_DEFAULT
 	special PlayerPC
 	waitstate
-	goto EventScript_PCMainMenu
+	goto BANK_OPTIONS
 	end
 
 EventScript_AccessPokemonStorage:: @ 8271E0E
@@ -39,7 +39,7 @@ EventScript_AccessPokemonStorage:: @ 8271E0E
 	msgbox gText_StorageSystemOpened, MSGBOX_DEFAULT
 	special ShowPokemonStorageSystemPC
 	waitstate
-	goto EventScript_PCMainMenu
+	goto BANK_OPTIONS
 	end
 
 EventScript_AccessSomeonesPC:: @ 8271E35

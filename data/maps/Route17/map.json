@@ -14,33 +14,33 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE16",
+      "direction": "down",
       "offset": 0,
-      "direction": "down"
+      "map": "MAP_ROUTE16"
     },
     {
-      "map": "MAP_VARROCK",
+      "direction": "left",
       "offset": 22,
-      "direction": "left"
+      "map": "MAP_VARROCK"
     },
     {
-      "map": "MAP_VARROCK_NORTH",
+      "direction": "left",
       "offset": -16,
-      "direction": "left"
+      "map": "MAP_VARROCK_NORTH"
     },
     {
-      "map": "MAP_ROUTE38",
+      "direction": "right",
       "offset": -10,
-      "direction": "right"
+      "map": "MAP_ROUTE38"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_VARROCK_3",
-      "x": 31,
-      "y": 20,
+      "x": 32,
+      "y": 19,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -50,15 +50,15 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SKILLER",
-      "x": 20,
-      "y": 21,
+      "x": 23,
+      "y": 20,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 4,
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "BATTLE_ROUTE17_TRAINER_1",
       "flag": "0"
     },
     {
@@ -77,9 +77,22 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_WOODCUTTER",
       "x": 13,
-      "y": 15,
+      "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "BATTLE_ROUTE17_TRAINER_2",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
+      "x": 2,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -89,12 +102,33 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 17,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE17",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 23,
+      "y": 14,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    }
   ]
 }

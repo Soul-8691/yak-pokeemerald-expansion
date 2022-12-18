@@ -3043,6 +3043,11 @@ extern const u8 gText_POH_BLACK[];
 extern const u8 gText_PhoenixEgg_Clap[];
 extern const u8 gText_PhoenixEgg_Kick[];
 
+extern const u8 gText_BANK_HEAL[];
+extern const u8 gText_BANK_STORE_MONSTERS[];
+extern const u8 gText_BANK_STORE_ITEMS[];
+
+
 
 //pokescape cheat menu
 extern const u8 gText_CheatEvolutionShop[];

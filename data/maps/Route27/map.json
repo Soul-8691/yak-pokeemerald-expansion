@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE25",
+      "direction": "down",
       "offset": 0,
-      "direction": "down"
+      "map": "MAP_ROUTE25"
     },
     {
-      "map": "MAP_ROUTE26",
+      "direction": "left",
       "offset": 0,
-      "direction": "left"
+      "map": "MAP_ROUTE26"
     },
     {
-      "map": "MAP_DWARVEN_MINES",
+      "direction": "down",
       "offset": -26,
-      "direction": "down"
+      "map": "MAP_DWARVEN_MINES"
     },
     {
-      "map": "MAP_EDGEVILLE",
+      "direction": "right",
       "offset": -6,
-      "direction": "right"
+      "map": "MAP_EDGEVILLE"
     }
   ],
   "object_events": [

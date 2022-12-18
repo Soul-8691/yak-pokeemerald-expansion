@@ -9,7 +9,13 @@ mapscripts Varrock_MapScripts {
 
 
 
-
+script VARROCK_SIGNPOST
+{
+    msgbox(format("Varrock, the trade centre of the Gielinor."))
+    closemessage
+    release
+    end
+}
 
 
 
@@ -36,6 +42,27 @@ script VARROCK_SCAMMER
     end
 }
 
+script VARROCK_NPC_GUARD_0
+{
+    faceplayer
+    namebox ("Guard")
+    msgbox(format("Are you here to challenge the king to an MvM battle?\pKeep going north from here you will find him in the Palace."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_RUNEARMOUR
+{
+    faceplayer
+    //namebox ("Guard")
+    msgbox(format("I am thinking about getting a new sword, but they do not seem to be selling any Rune items."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
 
 script VARROCK_NPC_Trader1
 {
@@ -216,12 +243,170 @@ script VARROCK_NPC_Halen2
     end
 }
 
+script VARROCK_NPC_BronzeGuy
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("There are Pigeons everywhere here.\pSurely they must be useful for something right?"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_Guard_5
+{
+    faceplayer
+    namebox ("Guard")
+    msgbox(format("The southern trail holds a lot of danger.\pPlease be careful of bears and other perils."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_Guard_6
+{
+    namebox ("Guard")
+    msgbox(format("Yes the castle is to the north."))
+    namebox ("Dwarf")
+    msgbox(format("And the kart system goes to the castle?"))
+    namebox ("Guard")
+    msgbox(format("No, it goes to the Grand Exchange."))
+    namebox ("Dwarf")
+    msgbox(format("Ok but where is the castle then?"))
+    namebox ("Guard")
+    msgbox(format("Ugh…"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_Ranger
+{
+    faceplayer
+    namebox ("Ranger")
+    msgbox(format("Sometimes the best teacher is defeat.\pIf you lose a battle think about how to change your team to adapt to the opponents strategy."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_THUG_1
+{
+    faceplayer
+    //namebox ("Ranger")
+    msgbox(format("You are in the wrong neighborhood.\pGet out before I make you stand and deliver."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_THUG_2
+{
+    faceplayer
+    //namebox ("Ranger")
+    msgbox(format("The criminal justice system is balanced on a knives edge, we thugs bring the knives and the guards gets us on the edge of the city."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_THUG_3
+{
+    faceplayer
+    //namebox ("Ranger")
+    msgbox(format("Once I get these lobsters all burnt and good, the Grand Exchange wont know what hit them."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_NOOB_1
+{
+    faceplayer
+    //namebox ("Ranger")
+    msgbox(format("I am meeting a friend up north past the border, he told me to bring my best items and money so they could see them."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_PRIEST
+{
+    faceplayer
+    //namebox ("Ranger")
+    msgbox(format("Would you like to partake in the ceremony?"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_GUARD_7
+{
+    faceplayer
+    namebox ("Guard")
+    msgbox(format("Past this is the Wilderness, it is a lawless place and I can not in good conscience allow you to go there without a stern warning. Be careful."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_10
+{
+    faceplayer
+    //namebox ("Guard")
+    msgbox(format("They say the king is a surprisingly strong monster trainer.\pBut his wife prefers tending to her garden than indulging in his hobby."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_11
+{
+    faceplayer
+    //namebox ("Guard")
+    msgbox(format("Dont dig for treasure chests, you have been warned."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
 
 
 
 
-
-
+script VARROCK_NPC_TeaSalesman {
+    lock
+    faceplayer
+    namebox ("Tea Salesman")
+    msgbox(format("Selling Tea is my passion.\pFollow your passion and life will reward you.\pAnyway, are you in need of some high qualitea?"))
+    waitmessage
+    hidenamebox
+    pokemart (TeaSalesmanVarrock)
+    msgbox("Thank you, come again!")
+    release
+    end
+}
+raw `
+    .align 2
+TeaSalesmanVarrock:
+    .2byte ITEM_REPEL_TEA_1
+    .2byte ITEM_REPEL_TEA_2
+    .2byte ITEM_REPEL_TEA_3
+    .2byte ITEM_NONE
+    release
+    end
+`
 
 
 
@@ -399,3 +584,89 @@ script NPC_SLAYERMASTERLIST
     release
     end
 }
+
+
+
+
+
+
+
+
+
+
+
+//VARROCK GYM
+
+
+script BATTLE_VARROCK_GYM_TRAINER_1 
+{ //Guard dog x2
+	trainerbattle_single(TRAINER_FALADOR_GYM_1, format("Hey you!\nDo not trespass!"),format("Consider that a warning!") )
+    switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
+		case 4: 
+			lock
+			faceplayer
+            namebox("Guard")
+			msgbox(format("Do not trespass!"))
+            hidenamebox
+			release
+			end
+        case 5:
+			lock
+			faceplayer
+            namebox("Guard")
+            msgbox(format("Do not trespass!"))
+            hidenamebox
+            release
+			end
+	}
+}
+
+script BATTLE_VARROCK_GYM_TRAINER_2
+{ //Guard dog, labrador
+	trainerbattle_single(TRAINER_FALADOR_GYM_1, format("You look shady."),format("You may pass shady person.") )
+    switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
+		case 4: 
+			lock
+			faceplayer
+            namebox("Guard")
+			msgbox(format("You may pass shady person."))
+            hidenamebox
+			release
+			end
+        case 5:
+			lock
+			faceplayer
+            namebox("Guard")
+            msgbox(format("You may pass shady person."))
+            hidenamebox
+            release
+			end
+	}
+}
+
+script BATTLE_VARROCK_GYM_TRAINER_3
+{ //Guard dog, kingly rat x2
+	trainerbattle_single(TRAINER_FALADOR_GYM_1, format("The king said he did not want visitors today."),format("You do not care what the king wants at all, do you?") )
+    switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
+		case 4: 
+			lock
+			faceplayer
+            namebox("Guard")
+			msgbox(format("The king said he did not want visitors today.\pYou do not care what the king wants at all, do you?"))
+            hidenamebox
+			release
+			end
+        case 5:
+			lock
+			faceplayer
+            namebox("Guard")
+            msgbox(format("The king said he did not want visitors today.\pYou do not care what the king wants at all, do you?"))
+            hidenamebox
+            release
+			end
+	}
+}
+
+
+
+

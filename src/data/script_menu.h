@@ -860,6 +860,15 @@ static const struct MenuAction MultichoiceList_PHEONIXEGG[] =
     {gText_PhoenixEgg_Kick},
 };
 
+static const struct MenuAction MultichoiceList_BANKOPTIONS[] =
+{
+    {gText_BANK_HEAL},
+    {gText_BANK_STORE_MONSTERS},
+    {gText_BANK_STORE_ITEMS},
+    {gText_Exit},
+};
+
+
 
 static const struct MenuAction MultichoiceList_Exit[] =
 {
@@ -998,7 +1007,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_POH]			               = MULTICHOICE(MultichoiceList_POH),
     [MULTI_COLOUR_PICKAXE]			   = MULTICHOICE(MultichoiceList_COLOUR_PICKAXE),
     [MULTI_PHEONIXEGG]			       = MULTICHOICE(MultichoiceList_PHEONIXEGG),
-    
+    [MULTI_BANKOPTIONS]				   = MULTICHOICE(MultichoiceList_BANKOPTIONS),
 	
 };
 

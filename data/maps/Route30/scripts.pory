@@ -1,0 +1,99 @@
+
+mapscripts Route30_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION{
+    call(MoveNPCsAfterEvents_WILDERNESS_BLOCK)
+    }
+}
+
+
+
+
+script WILDERNESS_SIGNPOST
+{
+    msgbox(format("DANGER!\pBeyond this point you are not safe.\pThere is a high chance that strong wild Monsters and Pkers will attack you."))
+    closemessage
+    release
+    end
+}
+
+
+script BLOCKADE_ROUTE30_WILDERNESS
+{
+    if (var(VAR_WILDERNESS_BLOCK_STATE) == 1) 
+        {
+            goto(BLOCKADE_ROUTE30_WILDERNESS_3)
+        }
+        else 
+        {
+            faceplayer
+            namebox ("Guard")
+            msgbox(format("Beyond here lies the Wilderness.\pIt is full of many dangerous monsters and people.\pThe king has posted us here to only allow those whomst have proved themselves able to defend themselves."))
+            closemessage
+            hidenamebox
+            call(BLOCKADE_ROUTE30_WILDERNESS_2)
+            closemessage
+            hidenamebox
+            release
+            end
+        }
+}
+
+
+script BLOCKADE_ROUTE30_WILDERNESS_2 {
+    if (flag(FLAG_BADGE01_GET) && flag(FLAG_BADGE02_GET) && flag(FLAG_BADGE03_GET) && flag(FLAG_BADGE04_GET) && flag(FLAG_BADGE05_GET) && flag(FLAG_BADGE06_GET) && flag(FLAG_BADGE07_GET) && flag(FLAG_BADGE08_GET)){
+            namebox ("Guard")
+            msgbox(format("Impressive!\pYou have all of the MvM Badges, you seem like you are well prepared to now face the Wilderness!\pGood luck on your MvM Championships Journey!"))
+    }
+    else
+    {
+        msgbox(format("WARNING - It is reccommended that you have at least 8 Gym Badges before proceeding.\pWould you like to pass and enter the Wilderness?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT)){
+                namebox ("Guard")
+                msgbox(format("You may pass but do not say we didn't warn you."))
+            }
+            else
+            {
+                namebox ("Guard")
+                msgbox(format("A wise choice, it can be very dangerous out there for those who are not prepared."))
+                return
+            }
+    }
+    fadescreen(FADE_TO_BLACK)
+    removeobject(6)
+    removeobject(7)
+    removeobject(8)
+    removeobject(9)
+    closemessage
+    hidenamebox
+    setflag(FLAG_TEMP_1)
+    setvar(VAR_WILDERNESS_BLOCK_STATE, 1)
+    fadescreen(FADE_FROM_BLACK)
+    return
+}
+
+
+script BLOCKADE_ROUTE30_WILDERNESS_3 {
+    faceplayer
+    namebox ("Guard")
+    msgbox(format("The Wilderness is a dangerous place.\pMake sure you are always cautious while traversing it."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+
+script MoveNPCsAfterEvents_WILDERNESS_BLOCK{
+        switch (var(VAR_WILDERNESS_BLOCK_STATE)){ 
+            case 0: 
+				return
+            case 1:
+				setobjectxyperm(6, 10, 2)
+				setobjectmovementtype(6, MOVEMENT_TYPE_FACE_DOWN)
+
+				setobjectxyperm(7, 11, 2)
+				setobjectmovementtype(7, MOVEMENT_TYPE_WANDER_AROUND)
+        }
+}

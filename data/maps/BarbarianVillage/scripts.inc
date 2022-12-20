@@ -12,7 +12,7 @@ BarbarianVillage_STATE::
 	case 0, BarbarianVillage_STATE_2
 	case 1, BarbarianVillage_STATE_3
 	case 2, BarbarianVillage_STATE_3
-	case 3, BarbarianVillage_STATE_3
+	case 3, BarbarianVillage_STATE_4
 	return
 
 BarbarianVillage_STATE_2:
@@ -23,6 +23,9 @@ BarbarianVillage_STATE_2:
 	end
 
 BarbarianVillage_STATE_3:
+	end
+
+BarbarianVillage_STATE_4:
 	setobjectxyperm 2, 13, 27
 	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
 	end
@@ -208,7 +211,7 @@ NPC_ROUTE20_NPC1::
 
 
 BATTLE_ROUTE20_FISHERMAN_1::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE20_FISHERMAN_1_Text_0, BATTLE_ROUTE20_FISHERMAN_1_Text_1
+	trainerbattle_single TRAINER_ROUTE20_TRAINER_1, BATTLE_ROUTE20_FISHERMAN_1_Text_0, BATTLE_ROUTE20_FISHERMAN_1_Text_1
 	msgbox BATTLE_ROUTE20_FISHERMAN_1_Text_1
 	hidenamebox
 	release
@@ -216,7 +219,7 @@ BATTLE_ROUTE20_FISHERMAN_1::
 
 
 BATTLE_ROUTE20_FISHERMAN_2::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE20_FISHERMAN_2_Text_0, BATTLE_ROUTE20_FISHERMAN_2_Text_1
+	trainerbattle_single TRAINER_ROUTE20_TRAINER_2, BATTLE_ROUTE20_FISHERMAN_2_Text_0, BATTLE_ROUTE20_FISHERMAN_2_Text_1
 	msgbox BATTLE_ROUTE20_FISHERMAN_2_Text_2
 	hidenamebox
 	release
@@ -224,23 +227,23 @@ BATTLE_ROUTE20_FISHERMAN_2::
 
 
 BATTLE_ROUTE20_FISHERMAN_3::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE20_FISHERMAN_3_Text_0, BATTLE_ROUTE20_FISHERMAN_3_Text_0
-	msgbox BATTLE_ROUTE20_FISHERMAN_3_Text_0
+	trainerbattle_single TRAINER_ROUTE20_TRAINER_3, BATTLE_ROUTE20_FISHERMAN_3_Text_0, BATTLE_ROUTE20_FISHERMAN_3_Text_1
+	msgbox BATTLE_ROUTE20_FISHERMAN_3_Text_2
 	hidenamebox
 	release
 	end
 
 
 BATTLE_ROUTE20_SKILLER::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE20_FISHERMAN_3_Text_0, BATTLE_ROUTE20_FISHERMAN_3_Text_0
-	msgbox BATTLE_ROUTE20_FISHERMAN_3_Text_0
+	trainerbattle_single TRAINER_ROUTE20_TRAINER_4, BATTLE_ROUTE20_SKILLER_Text_0, BATTLE_ROUTE20_SKILLER_Text_1
+	msgbox BATTLE_ROUTE20_SKILLER_Text_2
 	hidenamebox
 	release
 	end
 
 
 BATTLE_ROUTE20_DUO_1::
-	trainerbattle_double TRAINER_ROUTE23_TRAINER_COUPLE, BATTLE_ROUTE20_DUO_1_Text_0, BATTLE_ROUTE20_DUO_1_Text_1, BATTLE_ROUTE20_DUO_1_Text_2
+	trainerbattle_double TRAINER_ROUTE20_DUO, BATTLE_ROUTE20_DUO_1_Text_0, BATTLE_ROUTE20_DUO_1_Text_1, BATTLE_ROUTE20_DUO_1_Text_2
 	namebox BATTLE_ROUTE20_DUO_1_Text_3
 	msgbox BATTLE_ROUTE20_DUO_1_Text_4
 	hidenamebox
@@ -249,7 +252,7 @@ BATTLE_ROUTE20_DUO_1::
 
 
 BATTLE_ROUTE20_DUO_2::
-	trainerbattle_double TRAINER_ROUTE23_TRAINER_COUPLE, BATTLE_ROUTE20_DUO_2_Text_0, BATTLE_ROUTE20_DUO_2_Text_1, BATTLE_ROUTE20_DUO_1_Text_2
+	trainerbattle_double TRAINER_ROUTE20_DUO, BATTLE_ROUTE20_DUO_2_Text_0, BATTLE_ROUTE20_DUO_2_Text_1, BATTLE_ROUTE20_DUO_1_Text_2
 	namebox BATTLE_ROUTE20_DUO_2_Text_2
 	msgbox BATTLE_ROUTE20_DUO_2_Text_3
 	hidenamebox
@@ -376,7 +379,29 @@ BATTLE_ROUTE20_FISHERMAN_2_Text_2:
 	.string "Much better than regular net fishing.$"
 
 BATTLE_ROUTE20_FISHERMAN_3_Text_0:
-	.string "$"
+	.string "I caught these fishing in a dungeon.\p"
+	.string "I'd like to see how good they are in\n"
+	.string "battle!$"
+
+BATTLE_ROUTE20_FISHERMAN_3_Text_1:
+	.string "I may have lost but I now understand\n"
+	.string "the strength of these little guys.$"
+
+BATTLE_ROUTE20_FISHERMAN_3_Text_2:
+	.string "If you are interested where I got these\n"
+	.string "from you should take a visit to the\l"
+	.string "cavern by Mudskipper point.$"
+
+BATTLE_ROUTE20_SKILLER_Text_0:
+	.string "Fishing is great, I could do this all day.$"
+
+BATTLE_ROUTE20_SKILLER_Text_1:
+	.string "You should do some fishing too.$"
+
+BATTLE_ROUTE20_SKILLER_Text_2:
+	.string "You should do some fishing too.\p"
+	.string "You would never know what rare fish you\n"
+	.string "could find until you try.$"
 
 BATTLE_ROUTE20_DUO_1_Text_0:
 	.string "Pass the Trout.$"

@@ -882,7 +882,7 @@ void FishingWildEncounter(u8 rod)
 	
 	if (species == sLastFishingSpecies)
     {
-       if (gChainFishingStreak < 20)
+       if (gChainFishingStreak < 2)
            gChainFishingStreak++;
     }
     else

@@ -14,19 +14,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE12",
+      "direction": "left",
       "offset": -32,
-      "direction": "left"
+      "map": "MAP_ROUTE12"
     },
     {
-      "map": "MAP_AL_KHARID",
+      "direction": "down",
       "offset": -10,
-      "direction": "down"
+      "map": "MAP_AL_KHARID"
     },
     {
-      "map": "MAP_ROUTE29",
+      "direction": "up",
       "offset": 0,
-      "direction": "up"
+      "map": "MAP_ROUTE29"
     }
   ],
   "object_events": [
@@ -109,11 +109,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_ARCHAEOLOGIST",
       "x": 27,
       "y": 7,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -135,7 +135,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_PKER_RUSHER",
       "x": 29,
       "y": 22,
       "elevation": 3,

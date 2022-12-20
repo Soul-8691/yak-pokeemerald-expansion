@@ -255,6 +255,48 @@ FlavouredMilkShop:
     release
     end
 
+PEST_CONTROL_ENTER::
+	faceplayer
+	namebox PEST_CONTROL_ENTER_Text_0
+	msgbox PEST_CONTROL_ENTER_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne PEST_CONTROL_ENTER_2
+	hidenamebox
+	closemessage
+	release
+	end
+
+PEST_CONTROL_ENTER_2:
+	hidenamebox
+	closemessage
+	msgbox PEST_CONTROL_ENTER_Text_2
+	warp MAP_MINIGAME_1, 0, 0, 0
+	closemessage
+	release
+	end
+
+
+PEST_CONTROL_RETURN::
+	faceplayer
+	namebox PEST_CONTROL_ENTER_Text_0
+	msgbox PEST_CONTROL_RETURN_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne PEST_CONTROL_RETURN_2
+	hidenamebox
+	closemessage
+	release
+	end
+
+PEST_CONTROL_RETURN_2:
+	hidenamebox
+	closemessage
+	msgbox PEST_CONTROL_ENTER_Text_2
+	warp MAP_PORT_SARIM, 9, 0, 0
+	closemessage
+	release
+	end
+
+
 ROUTE8_SIGNPOST_Text_0:
 	.string "WEST to Crafting Guild.\p"
 	.string "SOUTH to Rimmington.\p"
@@ -457,3 +499,17 @@ ALTAR_WATER_RETURN_Text_1:
 CRAFTINGGUILD_MILKSELLER_Text_0:
 	.string "Why hello there, are you interested in\n"
 	.string "some flavoured Milk?$"
+
+PEST_CONTROL_ENTER_Text_0:
+	.string "Void Squire$"
+
+PEST_CONTROL_ENTER_Text_1:
+	.string "Would you like to set sail to the\n"
+	.string "Outpost?$"
+
+PEST_CONTROL_ENTER_Text_2:
+	.string "You board the ship.$"
+
+PEST_CONTROL_RETURN_Text_0:
+	.string "Would you like to return to the\n"
+	.string "mainland?$"

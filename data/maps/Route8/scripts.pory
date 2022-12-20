@@ -313,3 +313,70 @@ FlavouredMilkShop:
     end
 
 `
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script PEST_CONTROL_ENTER{
+    faceplayer
+    namebox("Void Squire")
+    msgbox(format("Would you like to set sail to the Outpost?"), MSGBOX_YESNO)
+				if (var(VAR_RESULT)){
+                    hidenamebox
+                    closemessage
+                    msgbox(format("You board the ship."))
+                    warp (MAP_MINIGAME_1,0,0,0)
+                    closemessage
+                    release
+                    end
+                }
+            hidenamebox
+            closemessage
+            release
+            end
+}
+
+
+script PEST_CONTROL_RETURN{
+    faceplayer
+    namebox("Void Squire")
+    msgbox(format("Would you like to return to the mainland?"), MSGBOX_YESNO)
+				if (var(VAR_RESULT)){
+                    hidenamebox
+                    closemessage
+                    msgbox(format("You board the ship."))
+                    warp (MAP_PORT_SARIM,9,0,0)
+                    closemessage
+                    release
+                    end
+                }
+            hidenamebox
+            closemessage
+            release
+            end
+}
+
+
+
+

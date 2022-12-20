@@ -572,6 +572,13 @@
       "elevation": 0,
       "dest_map": "MAP_MUSA_POINT",
       "dest_warp_id": 0
+    },
+    {
+      "x": 30,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_MINIGAME_1",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

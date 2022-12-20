@@ -38,7 +38,7 @@ script ROUTE14_QUESTER
 
 script BATTLE_ROUTE13_DARKWIZARD_1 
 { //Raven. Mohawk raven-
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Beware the might of Zamorak!"),format("Praise lord Zamorak!"))
+    trainerbattle_single(TRAINER_ROUTE13_TRAINER_1, format("Beware the might of Zamorak!"),format("Praise lord Zamorak!"))
     namebox ("DARK WIZARD")
     msgbox(format("Praise lord Zamorak!"))
 	hidenamebox
@@ -48,7 +48,7 @@ script BATTLE_ROUTE13_DARKWIZARD_1
 
 script BATTLE_ROUTE13_DARKWIZARD_2 
 { //Lesser demon. lesser tongue demon
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Circle is taken, get lost kid."),format("And let that be a warning."))
+    trainerbattle_single(TRAINER_ROUTE13_TRAINER_2, format("This circle is taken, get lost kid."),format("And let that be a warning."))
     namebox ("DARK WIZARD")
     msgbox(format("And let that be a warning."))
 	hidenamebox
@@ -58,7 +58,7 @@ script BATTLE_ROUTE13_DARKWIZARD_2
 
 script BATTLE_ROUTE13_DARKWIZARD_3 
 { //Lesser demon (osrs) Lesser demon (black) Impx2
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("For the glory of Delrith!"),format("Just wait until we have the might of Delrith on our side."))
+    trainerbattle_single(TRAINER_ROUTE13_TRAINER_3, format("For the glory of Delrith!"),format("Just wait until we have the might of Delrith on our side."))
     namebox ("DARK WIZARD")
     msgbox(format("Just wait until we have the might of Delrith on our side."))
 	hidenamebox
@@ -68,17 +68,17 @@ script BATTLE_ROUTE13_DARKWIZARD_3
 
 script BATTLE_ROUTE13_DARKWIZARD_4 
 { //eam: Greater demon (rs3)
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Step one: Aquire circle.\pCheck.\pStep two: Summon demon…\pHmmm…\pHey, you! youre not supposed to be here!"),format("At least I know step 4 is to worship the demon."))
+    trainerbattle_single(TRAINER_ROUTE13_TRAINER_4, format("Step one: Aquire the circle.\pCheck.\pStep two: Summon the Demon…\pHmmm…\pHey, you! You are not supposed to be here!"),format("At least I know step 4 is to worship the demon."))
     namebox ("DARK WIZARD")
-    msgbox(format("Atleast I know step 4 is to worship the demon."))
+    msgbox(format("At least I know step 4 is to worship the Demon."))
 	hidenamebox
     release
 	end
 }
 
-script BATTLE_ROUTE13_DARKWIZARD_5 
+script BATTLE_ROUTE13_DARKWIZARD_5  //FINAL WIZARD, EVENT WITH DELRITH?
 { //Team: Imp, Black demon (winged), Spooky raven.
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format(""),format(""))
+    trainerbattle_single(TRAINER_ROUTE13_TRAINER_5, format(""),format(""))
     namebox ("DARK WIZARD")
     msgbox(format(""))
 	hidenamebox
@@ -88,9 +88,9 @@ script BATTLE_ROUTE13_DARKWIZARD_5
 
 script BATTLE_ROUTE13_TRAINER_1 
 { //Chicken x6 (do some different formes maybe, but no full evos)
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Which way is Varrock?\pTell me or I will pwn you!"),format("Its south?\pThanks bud!"))
+    trainerbattle_single(TRAINER_ROUTE13_TRAINER_6, format("Where is Varok?"),format("Oh it is pronounced Varrock?"))
     namebox ("NOOB")
-    msgbox(format("Its south?\pThanks bud!"))
+    msgbox(format("Where is Varok?\pOh it is pronounced Varrock?\pThat explains why I couldn't find it on my Newcomer Map.\pThanks bud."))
 	hidenamebox
     release
 	end
@@ -98,9 +98,9 @@ script BATTLE_ROUTE13_TRAINER_1
 
 script BATTLE_ROUTE13_TRAINER_2 
 {
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format(""),format(""))
+    trainerbattle_single(TRAINER_ROUTE13_TRAINER_7, format("I am full of energy after jumping over that gate!"),format("I have run energy for days."))
     namebox ("AGILE")
-    msgbox(format("Beware on the road to Varrock.\pSome shady people have started residing in the old ruins near the gates."))
+    msgbox(format("Beware on the road to Varrock.\pSome shady people have started residing in the old ruins near the gates.\pYou may want to take the east path instead."))
 	hidenamebox
     release
 	end
@@ -108,7 +108,7 @@ script BATTLE_ROUTE13_TRAINER_2
 
 script BATTLE_ROUTE13_TRAINER_3 
 { //Willford- Goblinfish x2
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Go fish, get lost."),format("No seriously.\pGet lost and try fishing."))
+    trainerbattle_single(TRAINER_ROUTE13_TRAINER_8, format("Go fish, get lost."),format("No seriously.\pGet lost and try fishing."))
     namebox ("Willford")
     msgbox(format("No seriously.\pGet lost and try fishing."))
 	hidenamebox
@@ -118,7 +118,7 @@ script BATTLE_ROUTE13_TRAINER_3
 
 script BATTLE_ROUTE13_TRAINER_4 
 { //overgrown cat. Flying kite. Ernest. Young impling
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("The guide tells me to fight you, lets do this!"),format("Says nothing in the guide on how to beat you or how to cope with my loss.\pDo I just wing it then?"))
+    trainerbattle_single(TRAINER_ROUTE13_TRAINER_9, format("The guide tells me to fight you, lets do this!"),format("Says nothing in the guide on how to beat you or how to cope with my loss.\pDo I just wing it then?"))
     namebox ("QUESTER")
     msgbox(format("Says nothing in the guide on how to beat you or how to cope with my loss.\pDo I just wing it then?"))
 	hidenamebox
@@ -129,7 +129,7 @@ script BATTLE_ROUTE13_TRAINER_4
 
 script BATTLE_ROUTE14_TRAINER_1
 {
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Dont disturb me!"),format("You woke my pet rock up…"))
+    trainerbattle_single(TRAINER_ROUTE14_TRAINER_1, format("Dont disturb me!"),format("You woke my pet rock up…"))
     namebox ("MINER")
     msgbox(format("You woke my pet rock up…"))
 	hidenamebox
@@ -139,7 +139,7 @@ script BATTLE_ROUTE14_TRAINER_1
 
 script BATTLE_ROUTE14_TRAINER_2
 {
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("This spot is taken, leave!"),format("Well I guess we can share a little bit…"))
+    trainerbattle_single(TRAINER_ROUTE14_TRAINER_2, format("This spot is taken, leave!"),format("Well I guess we can share a little bit…"))
     namebox ("MINER")
     msgbox(format("Well I guess we can share a little bit…"))
 	hidenamebox

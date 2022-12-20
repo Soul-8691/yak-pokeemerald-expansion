@@ -1,0 +1,10 @@
+mapscripts Varrock_Bank_West_MapScripts {
+    MAP_SCRIPT_ON_LOAD { //ON LOAD FOR MAP TILES
+    call(VarrockWest_Bank_OnTransition)
+    }
+} 
+
+script VarrockWest_Bank_OnTransition {
+    setrespawn(HEAL_LOCATION_VARROCK)
+    return
+}

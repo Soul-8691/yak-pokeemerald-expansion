@@ -112,8 +112,8 @@
 #define FLAG_SET_WALL_CLOCK                 0x51
 #define FLAG_RECEIVED_SPLITBARK             0x52
 #define FLAG_MOD_TIMBO                      0x53    //REMOVE THIS ONE!
-
-
+#define FLAG_DUNGEONEERING_DOOR_ROUTE29     0x54  // FLAG_UNUSED_0x054 Unused Flag
+//#define FLAG_DUNGEONEERING_DOOR_AsgarnianDungeon_B3F         0x55  // FLAG_UNUSED_0x055 Unused Flag
 
 
 
@@ -123,8 +123,8 @@
 
 
 
-#define FLAG_UNUSED_0x054                    0x54  // Unused Flag
-#define FLAG_UNUSED_0x055                    0x55  // Unused Flag
+
+
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
 #define FLAG_MET_RIVAL_MOM                   0x57

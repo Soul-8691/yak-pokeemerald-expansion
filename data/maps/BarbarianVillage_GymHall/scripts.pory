@@ -6,10 +6,24 @@ const OBJ_EVENT_ID_MITHRILMAN = 11
 const OBJ_EVENT_ID_ATLAS = 6
 
 mapscripts BarbarianVillage_GymHall_MapScripts {
-    MAP_SCRIPT_ON_TRANSITION {
-    goto(BarbarianVillage_GYM_STATE)
+
+    MAP_SCRIPT_ON_TRANSITION 
+    {
+        call(BarbarianVillage_GYM_RESTART)
+        goto(BarbarianVillage_GYM_STATE)
     }
+    
 }
+
+script BarbarianVillage_GYM_RESTART 
+{
+    if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 2)
+    {
+        setvar(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 1)
+    }
+    return
+}
+
 
 script BarbarianVillage_GYM_STATE{
 	switch (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE)){ 
@@ -195,7 +209,20 @@ script BarbarianVillage_GYM_STATE{
 
 
 
-
+script NPC_BARBGYM_BARBARIAN_3
+{
+    if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 2)
+            { 
+                lock
+                faceplayer
+                namebox("Haakon")
+                msgbox(format("RAAAGGGGGUUHH!\pHello {PLAYER} it is good to see you again."))
+                hidenamebox
+                closemessage
+                release
+                end
+            }
+}
 
 
 
@@ -205,6 +232,7 @@ script BarbarianVillage_GYM_STATE{
 
 script NPC_BARBGYM_BARBARIAN_1
 {
+    
     lock
     faceplayer
     namebox("Haakon")
@@ -302,7 +330,7 @@ script NPC_BARBGYM_BARBARIAN_2
     applymovement(OBJ_EVENT_ID_ATLAS, Movement_WALKLEFT)
     applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKRIGHT)
     waitmovement(0)
-    trainerbattle_no_intro(TRAINER_DWARVENMINES_HAM, msgbox(format("Well done but it is still too early to celebrate there still remains three more battles.")))
+    trainerbattle_no_intro(TRAINER_BARBARIAN_GYM_TRAINER_1, msgbox(format("Well done but it is still too early to celebrate there still remains three more battles.")))
     namebox("Haakon")
     msgbox(format("And the winner is…{PAUSE 15}…{PAUSE 15}{PLAYER}!"))
     hidenamebox
@@ -330,7 +358,7 @@ script NPC_BARBGYM_BARBARIAN_2
     applymovement(OBJ_EVENT_ID_LITARA, Movement_WALKLEFT)
     applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKRIGHT)
     waitmovement(0)
-    trainerbattle_no_intro(TRAINER_DWARVENMINES_HAM, msgbox(format("If you win this I may allow you access to our stronghold.")))
+    trainerbattle_no_intro(TRAINER_BARBARIAN_GYM_TRAINER_2, msgbox(format("If you win this I may allow you access to our stronghold.")))
     namebox("Haakon")
     msgbox(format("And the winner is…{PAUSE 15}…{PAUSE 15}{PLAYER}!\pWow they are on fire!"))
     closemessage
@@ -374,7 +402,7 @@ script NPC_BARBGYM_BARBARIAN_2
     msgbox(format("YARRRRRGGGHHHH!"))
     hidenamebox
     closemessage
-    trainerbattle_no_intro(TRAINER_DWARVENMINES_HAM, msgbox(format("ARRGHH-HAHAHA!")))
+    trainerbattle_no_intro(TRAINER_BARBARIAN_GYM_TRAINER_3, msgbox(format("ARRGHH-HAHAHA!")))
     namebox("Haakon")
     msgbox(format("And the winner is…{PAUSE 15}…{PAUSE 15}{PLAYER}!"))
     hidenamebox
@@ -403,7 +431,7 @@ script NPC_BARBGYM_BARBARIAN_2
     msgbox(format("Lets not waste any more time chit chatting I am itching for this fight!"))
     closemessage
     hidenamebox
-    trainerbattle_no_intro(TRAINER_DUKE, msgbox(format("ARAGGHHHARH!\pBattles like this is what I live for and why I decided to become a Gym Leader!")))
+    trainerbattle_no_intro(TRAINER_BARBARIAN_GYM_GUNTHOR, msgbox(format("ARAGGHHHARH!\pBattles like this is what I live for and why I decided to become a Gym Leader!")))
     namebox("Haakon")
     msgbox(format("My brothers and sisters…{PAUSE 15} I cannot believe it!\pThe winner is…{PAUSE 15}…{PAUSE 15}…{PAUSE 15}{PLAYER}!!!!!!!!"))
     hidenamebox
@@ -432,6 +460,7 @@ script NPC_BARBGYM_BARBARIAN_2
     waitmessage
     waitfanfare
     playbgm(MUS_PS_BARBARIAN_VILLAGE, 0)
+    savebgm(MUS_PS_BARBARIAN_VILLAGE)
 
     applymovement(OBJ_EVENT_ID_HAAKON, Movement_WALKDOWN)
     waitmovement(0)

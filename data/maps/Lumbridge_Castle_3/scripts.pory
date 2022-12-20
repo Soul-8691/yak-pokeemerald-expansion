@@ -16,6 +16,7 @@ script LUMBRIDGE_GYM_MUSIC{
 		case 4:
             #fadedefaultbgm
             playbgm(MUS_PS_GYM, 1)
+            savebgm(MUS_PS_GYM)
             //savebgm(MUS_PS_GYM)
             //special(Overworld_PlaySpecialMapMusic)
             

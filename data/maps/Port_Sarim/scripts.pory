@@ -481,10 +481,13 @@ script NPC_PORTSARIM_NPC_6
 
 script NPC_PORTSARIM_VOID_SQUIRE
 {
-	lock
+    if (flag(FLAG_BADGE02_GET)) 
+    {
+        goto(PEST_CONTROL_ENTER)
+    }
 	faceplayer
     namebox ("Void Squire")
-    msgbox(format("Sorry, to set sail to the outpost you will need 4 badges.\pPlease come back when you have them."))
+    msgbox(format("Sorry, to set sail to the outpost you will need at least 3 badges.\pPlease come back when you have them."))
 	//msgbox(format("I am very sorry, but the Void Knights told me not to speak to strangers."))
     waitmessage
     hidenamebox

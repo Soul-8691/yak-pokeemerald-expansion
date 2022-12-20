@@ -425,7 +425,8 @@ NPC_PORTSARIM_NPC_6_2:
 
 
 NPC_PORTSARIM_VOID_SQUIRE::
-	lock
+	goto_if_set FLAG_BADGE02_GET, NPC_PORTSARIM_VOID_SQUIRE_2
+NPC_PORTSARIM_VOID_SQUIRE_1:
 	faceplayer
 	namebox NPC_PORTSARIM_VOID_SQUIRE_Text_0
 	msgbox NPC_PORTSARIM_VOID_SQUIRE_Text_1
@@ -433,6 +434,10 @@ NPC_PORTSARIM_VOID_SQUIRE::
 	hidenamebox
 	release
 	end
+
+NPC_PORTSARIM_VOID_SQUIRE_2:
+	goto PEST_CONTROL_ENTER
+	goto NPC_PORTSARIM_VOID_SQUIRE_1
 
 
 NPC_PORTSARIM_THE_FACE::
@@ -792,7 +797,7 @@ NPC_PORTSARIM_VOID_SQUIRE_Text_0:
 
 NPC_PORTSARIM_VOID_SQUIRE_Text_1:
 	.string "Sorry, to set sail to the outpost you\n"
-	.string "will need 4 badges.\p"
+	.string "will need at least 3 badges.\p"
 	.string "Please come back when you have them.$"
 
 NPC_PORTSARIM_THE_FACE_Text_0:

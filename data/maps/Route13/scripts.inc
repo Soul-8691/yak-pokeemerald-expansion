@@ -21,7 +21,7 @@ ROUTE14_QUESTER::
 
 
 BATTLE_ROUTE13_DARKWIZARD_1::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE13_DARKWIZARD_1_Text_0, BATTLE_ROUTE13_DARKWIZARD_1_Text_1
+	trainerbattle_single TRAINER_ROUTE13_TRAINER_1, BATTLE_ROUTE13_DARKWIZARD_1_Text_0, BATTLE_ROUTE13_DARKWIZARD_1_Text_1
 	namebox BATTLE_ROUTE13_DARKWIZARD_1_Text_2
 	msgbox BATTLE_ROUTE13_DARKWIZARD_1_Text_1
 	hidenamebox
@@ -30,7 +30,7 @@ BATTLE_ROUTE13_DARKWIZARD_1::
 
 
 BATTLE_ROUTE13_DARKWIZARD_2::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE13_DARKWIZARD_2_Text_0, BATTLE_ROUTE13_DARKWIZARD_2_Text_1
+	trainerbattle_single TRAINER_ROUTE13_TRAINER_2, BATTLE_ROUTE13_DARKWIZARD_2_Text_0, BATTLE_ROUTE13_DARKWIZARD_2_Text_1
 	namebox BATTLE_ROUTE13_DARKWIZARD_1_Text_2
 	msgbox BATTLE_ROUTE13_DARKWIZARD_2_Text_1
 	hidenamebox
@@ -39,7 +39,7 @@ BATTLE_ROUTE13_DARKWIZARD_2::
 
 
 BATTLE_ROUTE13_DARKWIZARD_3::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE13_DARKWIZARD_3_Text_0, BATTLE_ROUTE13_DARKWIZARD_3_Text_1
+	trainerbattle_single TRAINER_ROUTE13_TRAINER_3, BATTLE_ROUTE13_DARKWIZARD_3_Text_0, BATTLE_ROUTE13_DARKWIZARD_3_Text_1
 	namebox BATTLE_ROUTE13_DARKWIZARD_1_Text_2
 	msgbox BATTLE_ROUTE13_DARKWIZARD_3_Text_1
 	hidenamebox
@@ -48,7 +48,7 @@ BATTLE_ROUTE13_DARKWIZARD_3::
 
 
 BATTLE_ROUTE13_DARKWIZARD_4::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE13_DARKWIZARD_4_Text_0, BATTLE_ROUTE13_DARKWIZARD_4_Text_1
+	trainerbattle_single TRAINER_ROUTE13_TRAINER_4, BATTLE_ROUTE13_DARKWIZARD_4_Text_0, BATTLE_ROUTE13_DARKWIZARD_4_Text_1
 	namebox BATTLE_ROUTE13_DARKWIZARD_1_Text_2
 	msgbox BATTLE_ROUTE13_DARKWIZARD_4_Text_2
 	hidenamebox
@@ -57,7 +57,7 @@ BATTLE_ROUTE13_DARKWIZARD_4::
 
 
 BATTLE_ROUTE13_DARKWIZARD_5::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE13_DARKWIZARD_5_Text_0, BATTLE_ROUTE13_DARKWIZARD_5_Text_0
+	trainerbattle_single TRAINER_ROUTE13_TRAINER_5, BATTLE_ROUTE13_DARKWIZARD_5_Text_0, BATTLE_ROUTE13_DARKWIZARD_5_Text_0
 	namebox BATTLE_ROUTE13_DARKWIZARD_1_Text_2
 	msgbox BATTLE_ROUTE13_DARKWIZARD_5_Text_0
 	hidenamebox
@@ -66,25 +66,25 @@ BATTLE_ROUTE13_DARKWIZARD_5::
 
 
 BATTLE_ROUTE13_TRAINER_1::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE13_TRAINER_1_Text_0, BATTLE_ROUTE13_TRAINER_1_Text_1
+	trainerbattle_single TRAINER_ROUTE13_TRAINER_6, BATTLE_ROUTE13_TRAINER_1_Text_0, BATTLE_ROUTE13_TRAINER_1_Text_1
 	namebox BATTLE_ROUTE13_TRAINER_1_Text_2
-	msgbox BATTLE_ROUTE13_TRAINER_1_Text_1
+	msgbox BATTLE_ROUTE13_TRAINER_1_Text_3
 	hidenamebox
 	release
 	end
 
 
 BATTLE_ROUTE13_TRAINER_2::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE13_DARKWIZARD_5_Text_0, BATTLE_ROUTE13_DARKWIZARD_5_Text_0
-	namebox BATTLE_ROUTE13_TRAINER_2_Text_0
-	msgbox BATTLE_ROUTE13_TRAINER_2_Text_1
+	trainerbattle_single TRAINER_ROUTE13_TRAINER_7, BATTLE_ROUTE13_TRAINER_2_Text_0, BATTLE_ROUTE13_TRAINER_2_Text_1
+	namebox BATTLE_ROUTE13_TRAINER_2_Text_2
+	msgbox BATTLE_ROUTE13_TRAINER_2_Text_3
 	hidenamebox
 	release
 	end
 
 
 BATTLE_ROUTE13_TRAINER_3::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE13_TRAINER_3_Text_0, BATTLE_ROUTE13_TRAINER_3_Text_1
+	trainerbattle_single TRAINER_ROUTE13_TRAINER_8, BATTLE_ROUTE13_TRAINER_3_Text_0, BATTLE_ROUTE13_TRAINER_3_Text_1
 	namebox BATTLE_ROUTE13_TRAINER_3_Text_2
 	msgbox BATTLE_ROUTE13_TRAINER_3_Text_1
 	hidenamebox
@@ -93,7 +93,7 @@ BATTLE_ROUTE13_TRAINER_3::
 
 
 BATTLE_ROUTE13_TRAINER_4::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE13_TRAINER_4_Text_0, BATTLE_ROUTE13_TRAINER_4_Text_1
+	trainerbattle_single TRAINER_ROUTE13_TRAINER_9, BATTLE_ROUTE13_TRAINER_4_Text_0, BATTLE_ROUTE13_TRAINER_4_Text_1
 	namebox BATTLE_ROUTE13_TRAINER_4_Text_2
 	msgbox BATTLE_ROUTE13_TRAINER_4_Text_1
 	hidenamebox
@@ -102,7 +102,7 @@ BATTLE_ROUTE13_TRAINER_4::
 
 
 BATTLE_ROUTE14_TRAINER_1::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE14_TRAINER_1_Text_0, BATTLE_ROUTE14_TRAINER_1_Text_1
+	trainerbattle_single TRAINER_ROUTE14_TRAINER_1, BATTLE_ROUTE14_TRAINER_1_Text_0, BATTLE_ROUTE14_TRAINER_1_Text_1
 	namebox BATTLE_ROUTE14_TRAINER_1_Text_2
 	msgbox BATTLE_ROUTE14_TRAINER_1_Text_1
 	hidenamebox
@@ -111,7 +111,7 @@ BATTLE_ROUTE14_TRAINER_1::
 
 
 BATTLE_ROUTE14_TRAINER_2::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE14_TRAINER_2_Text_0, BATTLE_ROUTE14_TRAINER_2_Text_1
+	trainerbattle_single TRAINER_ROUTE14_TRAINER_2, BATTLE_ROUTE14_TRAINER_2_Text_0, BATTLE_ROUTE14_TRAINER_2_Text_1
 	namebox BATTLE_ROUTE14_TRAINER_1_Text_2
 	msgbox BATTLE_ROUTE14_TRAINER_2_Text_1
 	hidenamebox
@@ -173,7 +173,7 @@ BATTLE_ROUTE13_DARKWIZARD_1_Text_2:
 	.string "DARK WIZARD$"
 
 BATTLE_ROUTE13_DARKWIZARD_2_Text_0:
-	.string "Circle is taken, get lost kid.$"
+	.string "tHIS Circle is taken, get lost kid.$"
 
 BATTLE_ROUTE13_DARKWIZARD_2_Text_1:
 	.string "And let that be a warning.$"
@@ -186,11 +186,11 @@ BATTLE_ROUTE13_DARKWIZARD_3_Text_1:
 	.string "Delrith on our side.$"
 
 BATTLE_ROUTE13_DARKWIZARD_4_Text_0:
-	.string "Step one: Aquire circle.\p"
+	.string "Step one: Aquire the circle.\p"
 	.string "Check.\p"
-	.string "Step two: Summon demon…\p"
+	.string "Step two: Summon the Demon…\p"
 	.string "Hmmm…\p"
-	.string "Hey, you! youre not supposed to be\n"
+	.string "Hey, you! You are not supposed to be\n"
 	.string "here!$"
 
 BATTLE_ROUTE13_DARKWIZARD_4_Text_1:
@@ -198,31 +198,45 @@ BATTLE_ROUTE13_DARKWIZARD_4_Text_1:
 	.string "demon.$"
 
 BATTLE_ROUTE13_DARKWIZARD_4_Text_2:
-	.string "Atleast I know step 4 is to worship the\n"
-	.string "demon.$"
+	.string "At least I know step 4 is to worship the\n"
+	.string "Demon.$"
 
 BATTLE_ROUTE13_DARKWIZARD_5_Text_0:
 	.string "$"
 
 BATTLE_ROUTE13_TRAINER_1_Text_0:
-	.string "Which way is Varrock?\p"
-	.string "Tell me or I will pwn you!$"
+	.string "Where is Varok?$"
 
 BATTLE_ROUTE13_TRAINER_1_Text_1:
-	.string "Its south?\p"
-	.string "Thanks bud!$"
+	.string "Oh it is pronounced Varrock?$"
 
 BATTLE_ROUTE13_TRAINER_1_Text_2:
 	.string "NOOB$"
 
+BATTLE_ROUTE13_TRAINER_1_Text_3:
+	.string "Where is Varok?\p"
+	.string "Oh it is pronounced Varrock?\p"
+	.string "That explains why I couldn't find it on\n"
+	.string "my Newcomer Map.\p"
+	.string "Thanks bud.$"
+
 BATTLE_ROUTE13_TRAINER_2_Text_0:
-	.string "AGILE$"
+	.string "I am full of energy after jumping over\n"
+	.string "that gate!$"
 
 BATTLE_ROUTE13_TRAINER_2_Text_1:
+	.string "I have run energy for days.$"
+
+BATTLE_ROUTE13_TRAINER_2_Text_2:
+	.string "AGILE$"
+
+BATTLE_ROUTE13_TRAINER_2_Text_3:
 	.string "Beware on the road to Varrock.\p"
 	.string "Some shady people have started\n"
 	.string "residing in the old ruins near the\l"
-	.string "gates.$"
+	.string "gates.\p"
+	.string "You may want to take the east path\n"
+	.string "instead.$"
 
 BATTLE_ROUTE13_TRAINER_3_Text_0:
 	.string "Go fish, get lost.$"

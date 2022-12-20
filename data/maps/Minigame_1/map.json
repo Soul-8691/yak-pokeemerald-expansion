@@ -2,11 +2,11 @@
   "id": "MAP_MINIGAME_1",
   "name": "Minigame_1",
   "layout": "LAYOUT_MINIGAME_1",
-  "music": "MUS_PS_ENCOUNTER_LEGENDARY",
-  "region_map_section": "MAPSEC_TUTORIAL_ISLAND",
+  "music": "MUS_PS_WIZARDS_TOWER",
+  "region_map_section": "MAPSEC_ABYSS",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_UNKNOWN",
+  "weather": "WEATHER_RAIN_THUNDERSTORM",
+  "map_type": "MAP_TYPE_OCEAN_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -67,21 +67,27 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_KNIGHT_BLACK_M",
-      "x": 15,
-      "y": 14,
+      "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
+      "x": 14,
+      "y": 25,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "PEST_CONTROL_RETURN",
       "flag": "0"
     }
   ],
   "warp_events": [
-
+    {
+      "x": 15,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_PORT_SARIM",
+      "dest_warp_id": 9
+    }
   ],
   "coord_events": [
 

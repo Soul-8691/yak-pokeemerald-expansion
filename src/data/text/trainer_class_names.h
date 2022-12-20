@@ -94,7 +94,7 @@ const u8 gTrainerClassNames[][13] = {
 	[TRAINER_CLASS_VICTIM] = _("VICTIM"),
 	[TRAINER_CLASS_TRIBESMAN] = _("TRIBESMAN"),
 	[TRAINER_CLASS_RSMVer] = _("RSMVer"),
-	[TRAINER_CLASS_DnDer] = _("DnDer"),
+	[TRAINER_CLASS_DnDer] = _("D&D"),
 	[TRAINER_CLASS_QUESTER] = _("QUESTER"),
 	[TRAINER_CLASS_LOREHOUND] = _("LOREHOUND"),
 	[TRAINER_CLASS_VAMPYRE] = _("VAMPYRE"),
@@ -126,4 +126,5 @@ const u8 gTrainerClassNames[][13] = {
     [TRAINER_CLASS_AGILE] = _("AGILE"),
     [TRAINER_CLASS_DARK] = _("DARK"),
     [TRAINER_CLASS_DIVINER] = _("DIVINER"),
+    [TRAINER_CLASS_DUO] = _("DUO"),
 };

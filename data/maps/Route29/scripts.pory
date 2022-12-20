@@ -1,0 +1,45 @@
+
+mapscripts Route29_MapScripts 
+{
+    MAP_SCRIPT_ON_LOAD 
+    {
+        call(ROUTE29_DOOR)
+    }
+}
+
+script ROUTE29_DOOR
+{
+    if (flag(FLAG_DUNGEONEERING_DOOR_ROUTE29))
+    {
+        setmetatile(24, 11, 121, 0)
+        special(DrawWholeMapView) 
+    }
+}
+
+script DUNGEONEERING_DOOR_ROUTE29
+{
+    if (!flag(FLAG_DUNGEONEERING_DOOR_ROUTE29))
+    {
+        msgbox(format("It appears to be a mysterious door.\pWould you like to try and pry it open?"), MSGBOX_YESNO)
+        closemessage
+		if (var(VAR_RESULT))
+        {
+            playse(SE_SWITCH)
+            waitse
+            delay(30)
+            setmetatile(24, 11, 121, 0)
+            special(DrawWholeMapView) 
+            playse(SE_ICE_BREAK)
+            setflag(FLAG_DUNGEONEERING_DOOR_ROUTE29)
+            msgbox(format("The door opens."))
+            closemessage
+        }
+    }
+    else
+    {
+        msgbox(format("The door is already open."))
+        closemessage
+    } 
+    release
+    end
+}

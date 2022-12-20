@@ -3,6 +3,21 @@ Route12_MapScripts::
 	.byte 0
 
 Route12_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	call ROUTE12_STATE
+	return
+
+
+ROUTE12_STATE::
+	goto_if_set FLAG_BADGE02_GET, ROUTE12_STATE_1
+	return
+
+ROUTE12_STATE_1:
+	setobjectxyperm 16, 29, 9
+	setobjectmovementtype 16, MOVEMENT_TYPE_LOOK_AROUND
+	setobjectxyperm 14, 30, 14
+	setobjectmovementtype 14, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT
+	setobjectxyperm 15, 33, 8
+	setobjectmovementtype 15, MOVEMENT_TYPE_WANDER_AROUND
 	return
 
 
@@ -146,11 +161,24 @@ SIGN_ROUTE12::
 
 
 BLOCK_Route12_Farmer::
+	lock
 	faceplayer
 	namebox BLOCK_Route12_Farmer_Text_0
+	goto_if_unset FLAG_BADGE02_GET, BLOCK_Route12_Farmer_2
+	msgbox BLOCK_Route12_Farmer_Text_2
+	hidenamebox
+	closemessage
+	release
+	end
+
+	release
+	end
+
+BLOCK_Route12_Farmer_2:
 	msgbox BLOCK_Route12_Farmer_Text_1
 	hidenamebox
 	closemessage
+	release
 	end
 
 
@@ -385,6 +413,9 @@ BLOCK_Route12_Farmer_Text_0:
 BLOCK_Route12_Farmer_Text_1:
 	.string "Urgh, I wish the goblins would stop\n"
 	.string "messing with my sheep!$"
+
+BLOCK_Route12_Farmer_Text_2:
+	.string "I finally got my Sheep out of the way.$"
 
 Cow_Battle_Text_0:
 	.string "MOOOO$"

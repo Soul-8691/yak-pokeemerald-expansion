@@ -22,6 +22,23 @@
 #define TYPE_DRAGON           16
 #define TYPE_DARK             17
 #define TYPE_FAIRY            18
+/*
+#define TYPE_AIR              
+#define TYPE_MIND           
+#define TYPE_WATER            
+#define TYPE_EARTH            
+#define TYPE_FIRE            
+#define TYPE_BODY           
+#define TYPE_COSMIC                        
+#define TYPE_CHAOS            
+#define TYPE_NATURE            
+#define TYPE_LAW                
+#define TYPE_DEATH                            
+#define TYPE_ASTRAL              
+#define TYPE_BLOOD            
+#define TYPE_SOUL              
+*/
+
 #define NUMBER_OF_MON_TYPES   19
 
 // Pokemon egg groups

@@ -321,6 +321,23 @@ const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
     _("DRAGON"),
     _("DARK"),
     _("FAIRY"),
+    /*
+    _("AIR"),
+    _("MIND"),
+    _("WATER"),
+    _("EARTH"),
+    _("FIRE"),
+    _("BODY"),
+    _("COSMIC"),
+    _("CHAOS"),
+    _("NATURE"),
+    _("LAW"),
+    _("DEATH"),
+    _("ASTRAL"),
+    _("BLOOD"),
+    _("SOUL"),
+    */
+
 };
 
 // This is a factor in how much money you get for beating a trainer.

@@ -1651,6 +1651,22 @@ static const u8 sATypeMove_Table[][NUMBER_OF_MON_TYPES - 1] =
     [TYPE_DRAGON]   = _("a DRAGON move"),
     [TYPE_DARK]     = _("a DARK move"),
     [TYPE_FAIRY]    = _("a FAIRY move"),
+/*
+    [TYPE_AIR]    = _("a AIR move"),
+    [TYPE_MIND]    = _("a MIND move"),
+    [TYPE_WATER]    = _("a WATER move"),
+    [TYPE_EARTH]    = _("a EARTH move"),
+    [TYPE_FIRE]    = _("a FIRE move"),
+    [TYPE_BODY]    = _("a BODY move"),
+    [TYPE_COSMIC]    = _("a COSMIC move"),
+    [TYPE_CHAOS]    = _("a CHAOS move"),
+    [TYPE_NATURE]    = _("a NATURE move"),
+    [TYPE_LAW]    = _("a LAW move"),
+    [TYPE_DEATH]    = _("a DEATH move"),
+    [TYPE_ASTRAL]    = _("a ASTRAL move"),
+    [TYPE_BLOOD]    = _("a BLOOD move"),
+    [TYPE_SOUL]    = _("a SOUL move"),
+*/
 };
 
 const u8 gText_BattleTourney[] = _("BATTLE TOURNEY");

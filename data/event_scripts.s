@@ -1557,3 +1557,13 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Varrock_GeneralStore/scripts.inc"
 
 	.include "data/maps/BarbarianVillage_GymHall/scripts.inc"
+
+	.include "data/maps/Route46/scripts.inc"
+
+	.include "data/maps/Route70/scripts.inc"
+
+	.include "data/maps/Route47/scripts.inc"
+
+	.include "data/maps/WildernessVolcano_ChampionRoom/scripts.inc"
+
+	.include "data/maps/Polypore_Dungeon/scripts.inc"

@@ -155,8 +155,8 @@ script BATTLE_ROUTE14_TRAINER_2
 //ROUTE16
 script BATTLE_ROUTE16_TRAINER_1
 {//Dead tree, Tree ent
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Stop right there timbering scum."),format("The sawmill is up north, but all I hear when I go there is meowing."))
-    namebox ("WC")
+    trainerbattle_single(TRAINER_ROUTE16_TRAINER_1, format("Stop right there timbering scum."),format("The sawmill is up north, but all I hear when I go there is meowing."))
+    //namebox ("WC")
     msgbox(format("The sawmill is up north, but all I hear when I go there is meowing."))
 	hidenamebox
     release
@@ -164,9 +164,45 @@ script BATTLE_ROUTE16_TRAINER_1
 }
 script BATTLE_ROUTE16_TRAINER_2
 {//Giant rat x3 Grizzly bear
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Watch out for the dangers of Eastern Mishtalin!"),format("Beware of bears and giant rats out there stranger."))
-    namebox ("GUARD")
+    trainerbattle_single(TRAINER_ROUTE16_TRAINER_2, format("Watch out for the dangers of Eastern Mishtalin!"),format("Beware of bears and giant rats out there stranger."))
+    namebox ("Guard")
     msgbox(format("Beware of bears and giant rats out there stranger."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE16_TRAINER_3
+{//
+    trainerbattle_single(TRAINER_ROUTE16_TRAINER_3, format("You won't believe it!\pI just uncovered this rare amulet!"),format("Oh, it was a dud…"))
+    namebox ("Archaeologist")
+    msgbox(format("You can uncover all sorts of things at the digsite."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE16_TRAINER_4
+{//div
+    trainerbattle_single(TRAINER_ROUTE16_TRAINER_4, format("CUPHOLDER's the name.\pSpeed is my game."),format(""))
+    //namebox ("")
+    msgbox(format(""))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE16_TRAINER_5
+{//agility
+    trainerbattle_single(TRAINER_ROUTE16_TRAINER_5, format(""),format(""))
+    //namebox ("")
+    msgbox(format(""))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE16_TRAINER_6
+{//mug
+    trainerbattle_single(TRAINER_ROUTE16_TRAINER_6, format(""),format(""))
+    //namebox ("")
+    msgbox(format(""))
 	hidenamebox
     release
 	end
@@ -174,27 +210,42 @@ script BATTLE_ROUTE16_TRAINER_2
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //ROUTE17
+
 script BATTLE_ROUTE17_TRAINER_1
-{//Bat. Dobbin. butterfly. clowckwork cat.
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("To get to Morytania I need to get past those blasted bats…\pNow if I only- WAH!"),format("You scared me there.\pI thought you were a bat."))
-    namebox ("SKILLER")
-    msgbox(format("You scared me there.\pI thought you were a bat."))
+{//Posessed axe, sporaxe. marionette.
+    trainerbattle_single(TRAINER_ROUTE17_TRAINER_1, format("Stop!\pYour woodcutting level is too low to enter the lumberyard."),format("I think you levelled up after out fight.\pYou may pass."))
+    namebox ("Woodcutter")
+    msgbox(format("I think you levelled up after out fight.\nYou may pass."))
 	hidenamebox
     release
 	end
 }
 
 script BATTLE_ROUTE17_TRAINER_2
-{//Posessed axe, sporaxe. marionette.
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("Stop!\pYour woodcutting level is too low to enter the lumberyard."),format("I think you levelled up after out fight.\pYou may pass."))
-    namebox ("WC")
-    msgbox(format("I think you levelled up after out fight.\pYou may pass."))
+{//Bat. Dobbin. butterfly. clowckwork cat.
+    trainerbattle_single(TRAINER_ROUTE17_TRAINER_2, format("To get to Morytania I need to get past those blasted bats…\pNow if I only- WAH!"),format("You scared me there.\pI thought you were a bat."))
+    namebox ("Skiller")
+    msgbox(format("You scared me there.\pI thought you were a bat."))
 	hidenamebox
     release
 	end
 }
-
 
 
 

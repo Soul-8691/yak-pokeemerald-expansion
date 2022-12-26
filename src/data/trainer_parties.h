@@ -3252,3 +3252,140 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE14_TRAINER_2[] = {
     .species = SPECIES_ROCK_CRAB_NORMAL_FORM,
     }
 };
+
+//ROUTE16
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_1[] = {  
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_ENT,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_DEAD_TREE,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_2[] = {  
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_BEAR_GRIZZLY_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_GIANT_RAT_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_BEAR_CUB,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_GIANT_RAT_NORMAL_FORM,
+    }
+};
+
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_3[] = {  
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_TERRIER,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_COCKATRICE,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_BASILISK_BABY_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_4[] = {  
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_RUNE,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_UNICORN_WHITE_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_5[] = {  
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_KEBBIT_DARK_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_KEBBIT_SPOTTED_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_KEBBIT_DASHING_FORM,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_6[] = {  
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_GRIFOLAPINE,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_SNAKE_POISON_FORM,
+    }
+};
+//route17
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE17_TRAINER_1[] = {  
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_EXORAXE,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_MARIONETTE,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_SPORAXE,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE17_TRAINER_2[] = {  
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_DOBBIN,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_GIANT_BAT,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_CAT_CLOCKWORK_FORM,
+    }
+};

@@ -127,4 +127,5 @@ const u8 gTrainerClassNames[][13] = {
     [TRAINER_CLASS_DARK] = _("DARK"),
     [TRAINER_CLASS_DIVINER] = _("DIVINER"),
     [TRAINER_CLASS_DUO] = _("DUO"),
+    [TRAINER_CLASS_ARCHAEOLOGIST] = _("EXCAVATOR"),
 };

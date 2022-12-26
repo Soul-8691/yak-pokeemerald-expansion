@@ -661,6 +661,8 @@
 #define MAP_ROUTE43 (42 | (35 << 8))
 #define MAP_ROUTE44 (43 | (35 << 8))
 #define MAP_ROUTE45 (44 | (35 << 8))
+#define MAP_ROUTE46 (45 | (35 << 8))
+#define MAP_ROUTE47 (46 | (35 << 8))
 
 // gMapGroup36
 #define MAP_TUTORIAL_ISLAND_CAVE       (0 | (36 << 8))
@@ -823,6 +825,7 @@
 #define MAP_ROUTE54      (6 | (48 << 8))
 #define MAP_PORT_KHAZARD (7 | (48 << 8))
 #define MAP_RELLEKKA     (8 | (48 << 8))
+#define MAP_ROUTE70      (9 | (48 << 8))
 
 // gMapGroup49
 #define MAP_TZHAAR_1F          (0 | (49 << 8))
@@ -876,6 +879,8 @@
 #define MAP_GOBLIN_VILLAGE_HOUSE_3              (43 | (50 << 8))
 #define MAP_MINIGAME_1                          (44 | (50 << 8))
 #define MAP_MINIGAME_2                          (45 | (50 << 8))
+#define MAP_WILDERNESS_VOLCANO_CHAMPION_ROOM    (46 | (50 << 8))
+#define MAP_POLYPORE_DUNGEON                    (47 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

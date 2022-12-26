@@ -281,6 +281,43 @@ msgbox(format("Would you like to leave this realm?"), MSGBOX_YESNO)
                 end
 }
 
+script ALTAR_EARTH_ENTER{
+    msgbox(format("It is a mysterious Altar."))
+    checkitem (ITEM_TALISMAN_EARTH, 1)
+        if (var(VAR_RESULT))
+        {
+        msgbox(format("Would you like to use the Earth Talisman?"), MSGBOX_YESNO)
+                    if (var(VAR_RESULT)){
+                        msgbox(format("The EARTH TALISMAN begins to glow.\pA mass of energy suddenly surrounds you!"))
+                        warp (MAP_MAZCAB_OTOT,0,0,0)
+                        closemessage
+                        release
+                        end
+                    }
+                    closemessage
+                    release
+                    end
+        }
+    closemessage
+    release
+    end
+}
+
+
+script ALTAR_EARTH_RETURN{
+msgbox(format("Would you like to leave this realm?"), MSGBOX_YESNO)
+				if (var(VAR_RESULT)){
+                    msgbox(format("As you step into the portal a mass of energy surrounds you!"))
+                    warp (MAP_ROUTE17,1,0,0)
+                    closemessage
+                    release
+                    end
+                }
+                closemessage
+                release
+                end
+}
+
 
 
 

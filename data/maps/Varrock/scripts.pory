@@ -457,9 +457,21 @@ ApothecaryVarrock:
 
 
 
-
-
 //ROUTE38
+
+script TRIGGER_BLOCK_ROUTE38
+{
+        lock
+        namebox("Guard")
+        msgbox(format("Sorry, by order of the King only those who have obtained the Varrock Badge may pass here."))
+        closemessage
+        hidenamebox
+        applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKLEFT)
+        waitmovement(0)
+        release
+        end
+}
+
 script NPC_VARROCKGUARD_BLOCKADE_1
 {
     lock

@@ -120,8 +120,7 @@ BATTLE_ROUTE14_TRAINER_2::
 
 
 BATTLE_ROUTE16_TRAINER_1::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE16_TRAINER_1_Text_0, BATTLE_ROUTE16_TRAINER_1_Text_1
-	namebox BATTLE_ROUTE16_TRAINER_1_Text_2
+	trainerbattle_single TRAINER_ROUTE16_TRAINER_1, BATTLE_ROUTE16_TRAINER_1_Text_0, BATTLE_ROUTE16_TRAINER_1_Text_1
 	msgbox BATTLE_ROUTE16_TRAINER_1_Text_1
 	hidenamebox
 	release
@@ -129,7 +128,7 @@ BATTLE_ROUTE16_TRAINER_1::
 
 
 BATTLE_ROUTE16_TRAINER_2::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE16_TRAINER_2_Text_0, BATTLE_ROUTE16_TRAINER_2_Text_1
+	trainerbattle_single TRAINER_ROUTE16_TRAINER_2, BATTLE_ROUTE16_TRAINER_2_Text_0, BATTLE_ROUTE16_TRAINER_2_Text_1
 	namebox BATTLE_ROUTE16_TRAINER_2_Text_2
 	msgbox BATTLE_ROUTE16_TRAINER_2_Text_1
 	hidenamebox
@@ -137,18 +136,51 @@ BATTLE_ROUTE16_TRAINER_2::
 	end
 
 
+BATTLE_ROUTE16_TRAINER_3::
+	trainerbattle_single TRAINER_ROUTE16_TRAINER_3, BATTLE_ROUTE16_TRAINER_3_Text_0, BATTLE_ROUTE16_TRAINER_3_Text_1
+	namebox BATTLE_ROUTE16_TRAINER_3_Text_2
+	msgbox BATTLE_ROUTE16_TRAINER_3_Text_3
+	hidenamebox
+	release
+	end
+
+
+BATTLE_ROUTE16_TRAINER_4::
+	trainerbattle_single TRAINER_ROUTE16_TRAINER_4, BATTLE_ROUTE16_TRAINER_4_Text_0, BATTLE_ROUTE13_DARKWIZARD_5_Text_0
+	msgbox BATTLE_ROUTE13_DARKWIZARD_5_Text_0
+	hidenamebox
+	release
+	end
+
+
+BATTLE_ROUTE16_TRAINER_5::
+	trainerbattle_single TRAINER_ROUTE16_TRAINER_5, BATTLE_ROUTE13_DARKWIZARD_5_Text_0, BATTLE_ROUTE13_DARKWIZARD_5_Text_0
+	msgbox BATTLE_ROUTE13_DARKWIZARD_5_Text_0
+	hidenamebox
+	release
+	end
+
+
+BATTLE_ROUTE16_TRAINER_6::
+	trainerbattle_single TRAINER_ROUTE16_TRAINER_6, BATTLE_ROUTE13_DARKWIZARD_5_Text_0, BATTLE_ROUTE13_DARKWIZARD_5_Text_0
+	msgbox BATTLE_ROUTE13_DARKWIZARD_5_Text_0
+	hidenamebox
+	release
+	end
+
+
 BATTLE_ROUTE17_TRAINER_1::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE17_TRAINER_1_Text_0, BATTLE_ROUTE17_TRAINER_1_Text_1
+	trainerbattle_single TRAINER_ROUTE17_TRAINER_1, BATTLE_ROUTE17_TRAINER_1_Text_0, BATTLE_ROUTE17_TRAINER_1_Text_1
 	namebox BATTLE_ROUTE17_TRAINER_1_Text_2
-	msgbox BATTLE_ROUTE17_TRAINER_1_Text_1
+	msgbox BATTLE_ROUTE17_TRAINER_1_Text_3
 	hidenamebox
 	release
 	end
 
 
 BATTLE_ROUTE17_TRAINER_2::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE17_TRAINER_2_Text_0, BATTLE_ROUTE17_TRAINER_2_Text_1
-	namebox BATTLE_ROUTE16_TRAINER_1_Text_2
+	trainerbattle_single TRAINER_ROUTE17_TRAINER_2, BATTLE_ROUTE17_TRAINER_2_Text_0, BATTLE_ROUTE17_TRAINER_2_Text_1
+	namebox BATTLE_ROUTE17_TRAINER_2_Text_2
 	msgbox BATTLE_ROUTE17_TRAINER_2_Text_1
 	hidenamebox
 	release
@@ -173,7 +205,7 @@ BATTLE_ROUTE13_DARKWIZARD_1_Text_2:
 	.string "DARK WIZARD$"
 
 BATTLE_ROUTE13_DARKWIZARD_2_Text_0:
-	.string "tHIS Circle is taken, get lost kid.$"
+	.string "This circle is taken, get lost kid.$"
 
 BATTLE_ROUTE13_DARKWIZARD_2_Text_1:
 	.string "And let that be a warning.$"
@@ -282,9 +314,6 @@ BATTLE_ROUTE16_TRAINER_1_Text_1:
 	.string "The sawmill is up north, but all I hear\n"
 	.string "when I go there is meowing.$"
 
-BATTLE_ROUTE16_TRAINER_1_Text_2:
-	.string "WC$"
-
 BATTLE_ROUTE16_TRAINER_2_Text_0:
 	.string "Watch out for the dangers of Eastern\n"
 	.string "Mishtalin!$"
@@ -294,25 +323,50 @@ BATTLE_ROUTE16_TRAINER_2_Text_1:
 	.string "there stranger.$"
 
 BATTLE_ROUTE16_TRAINER_2_Text_2:
-	.string "GUARD$"
+	.string "Guard$"
+
+BATTLE_ROUTE16_TRAINER_3_Text_0:
+	.string "You won't believe it!\p"
+	.string "I just uncovered this rare amulet!$"
+
+BATTLE_ROUTE16_TRAINER_3_Text_1:
+	.string "Oh, it was a dud…$"
+
+BATTLE_ROUTE16_TRAINER_3_Text_2:
+	.string "Archaeologist$"
+
+BATTLE_ROUTE16_TRAINER_3_Text_3:
+	.string "You can uncover all sorts of things at\n"
+	.string "the digsite.$"
+
+BATTLE_ROUTE16_TRAINER_4_Text_0:
+	.string "CUPHOLDER's the name.\p"
+	.string "Speed is my game.$"
 
 BATTLE_ROUTE17_TRAINER_1_Text_0:
-	.string "To get to Morytania I need to get past\n"
-	.string "those blasted bats…\p"
-	.string "Now if I only- WAH!$"
-
-BATTLE_ROUTE17_TRAINER_1_Text_1:
-	.string "You scared me there.\p"
-	.string "I thought you were a bat.$"
-
-BATTLE_ROUTE17_TRAINER_1_Text_2:
-	.string "SKILLER$"
-
-BATTLE_ROUTE17_TRAINER_2_Text_0:
 	.string "Stop!\p"
 	.string "Your woodcutting level is too low to\n"
 	.string "enter the lumberyard.$"
 
-BATTLE_ROUTE17_TRAINER_2_Text_1:
+BATTLE_ROUTE17_TRAINER_1_Text_1:
 	.string "I think you levelled up after out fight.\p"
 	.string "You may pass.$"
+
+BATTLE_ROUTE17_TRAINER_1_Text_2:
+	.string "Woodcutter$"
+
+BATTLE_ROUTE17_TRAINER_1_Text_3:
+	.string "I think you levelled up after out fight.\n"
+	.string "You may pass.$"
+
+BATTLE_ROUTE17_TRAINER_2_Text_0:
+	.string "To get to Morytania I need to get past\n"
+	.string "those blasted bats…\p"
+	.string "Now if I only- WAH!$"
+
+BATTLE_ROUTE17_TRAINER_2_Text_1:
+	.string "You scared me there.\p"
+	.string "I thought you were a bat.$"
+
+BATTLE_ROUTE17_TRAINER_2_Text_2:
+	.string "Skiller$"

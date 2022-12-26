@@ -234,6 +234,47 @@ ALTAR_WATER_RETURN_2:
 	end
 
 
+ALTAR_EARTH_ENTER::
+	msgbox ALTAR_WATER_ENTER_Text_0
+	checkitem ITEM_TALISMAN_EARTH, 1
+	compare VAR_RESULT, 0
+	goto_if_ne ALTAR_EARTH_ENTER_2
+	closemessage
+	release
+	end
+
+ALTAR_EARTH_ENTER_2:
+	msgbox ALTAR_EARTH_ENTER_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne ALTAR_EARTH_ENTER_5
+	closemessage
+	release
+	end
+
+ALTAR_EARTH_ENTER_5:
+	msgbox ALTAR_EARTH_ENTER_Text_1
+	warp MAP_MAZCAB_OTOT, 0, 0, 0
+	closemessage
+	release
+	end
+
+
+ALTAR_EARTH_RETURN::
+	msgbox ALTAR_WATER_RETURN_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne ALTAR_EARTH_RETURN_2
+	closemessage
+	release
+	end
+
+ALTAR_EARTH_RETURN_2:
+	msgbox ALTAR_WATER_RETURN_Text_1
+	warp MAP_ROUTE17, 1, 0, 0
+	closemessage
+	release
+	end
+
+
 CRAFTINGGUILD_MILKSELLER::
 	lock
 	faceplayer
@@ -495,6 +536,15 @@ ALTAR_WATER_RETURN_Text_0:
 ALTAR_WATER_RETURN_Text_1:
 	.string "As you step into the portal a mass of\n"
 	.string "energy surrounds you!$"
+
+ALTAR_EARTH_ENTER_Text_0:
+	.string "Would you like to use the Earth\n"
+	.string "Talisman?$"
+
+ALTAR_EARTH_ENTER_Text_1:
+	.string "The EARTH TALISMAN begins to glow.\p"
+	.string "A mass of energy suddenly surrounds\n"
+	.string "you!$"
 
 CRAFTINGGUILD_MILKSELLER_Text_0:
 	.string "Why hello there, are you interested in\n"

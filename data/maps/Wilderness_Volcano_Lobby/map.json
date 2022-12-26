@@ -48,7 +48,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RAPTOR",
-      "x": 6,
+      "x": 5,
       "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -113,7 +113,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 6,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_WILDERNESS_VOLCANO_CHAMPION_ROOM",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 

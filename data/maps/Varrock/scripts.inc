@@ -363,11 +363,23 @@ ApothecaryVarrock:
     release
     end
 
+TRIGGER_BLOCK_ROUTE38::
+	lock
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox TRIGGER_BLOCK_ROUTE38_Text_0
+	closemessage
+	hidenamebox
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKLEFT
+	waitmovement 0
+	release
+	end
+
+
 NPC_VARROCKGUARD_BLOCKADE_1::
 	lock
 	faceplayer
 	namebox VARROCK_NPC_GUARD_0_Text_0
-	msgbox NPC_VARROCKGUARD_BLOCKADE_1_Text_0
+	msgbox TRIGGER_BLOCK_ROUTE38_Text_0
 	goto_if_set FLAG_BADGE03_GET, NPC_VARROCKGUARD_BLOCKADE_1_2
 	hidenamebox
 	closemessage
@@ -375,7 +387,7 @@ NPC_VARROCKGUARD_BLOCKADE_1::
 	end
 
 NPC_VARROCKGUARD_BLOCKADE_1_2:
-	msgbox NPC_VARROCKGUARD_BLOCKADE_1_Text_1
+	msgbox NPC_VARROCKGUARD_BLOCKADE_1_Text_0
 	hidenamebox
 	closemessage
 	release
@@ -764,12 +776,12 @@ VARROCK_NPC_Apothecary_Text_1:
 	.string "Welcome to my Potion store!\p"
 	.string "How may I help you?$"
 
-NPC_VARROCKGUARD_BLOCKADE_1_Text_0:
+TRIGGER_BLOCK_ROUTE38_Text_0:
 	.string "Sorry, by order of the King only those\n"
 	.string "who have obtained the Varrock Badge\l"
 	.string "may pass here.$"
 
-NPC_VARROCKGUARD_BLOCKADE_1_Text_1:
+NPC_VARROCKGUARD_BLOCKADE_1_Text_0:
 	.string "You have the Varrock Badge!\p"
 	.string "You may pass, but be cautious.\p"
 	.string "Dangerous Monsters lurk beyond here.$"

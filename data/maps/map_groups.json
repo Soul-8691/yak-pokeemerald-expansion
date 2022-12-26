@@ -708,7 +708,9 @@
     "Route42",
     "Route43",
     "Route44",
-    "Route45"
+    "Route45",
+    "Route46",
+    "Route47"
   ],
   "gMapGroup36": [
     "Tutorial_Island_Cave",
@@ -873,7 +875,8 @@
     "Route53",
     "Route54",
     "PortKhazard",
-    "Rellekka"
+    "Rellekka",
+    "Route70"
   ],
   "gMapGroup49": [
     "Tzhaar_1F",
@@ -926,6 +929,8 @@
     "Dorics_Hut",
     "GoblinVillage_House_3",
     "Minigame_1",
-    "Minigame_2"
+    "Minigame_2",
+    "WildernessVolcano_ChampionRoom",
+    "Polypore_Dungeon"
   ]
 }

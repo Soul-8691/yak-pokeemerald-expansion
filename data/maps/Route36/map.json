@@ -14,24 +14,24 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE35",
+      "direction": "down",
       "offset": -30,
-      "direction": "down"
+      "map": "MAP_ROUTE35"
     },
     {
-      "map": "MAP_ROUTE24",
+      "direction": "right",
       "offset": -26,
-      "direction": "right"
+      "map": "MAP_ROUTE24"
     },
     {
-      "map": "MAP_TAVERLEY",
+      "direction": "left",
       "offset": 0,
-      "direction": "left"
+      "map": "MAP_TAVERLEY"
     },
     {
-      "map": "MAP_ROUTE37",
+      "direction": "up",
       "offset": -30,
-      "direction": "up"
+      "map": "MAP_ROUTE37"
     }
   ],
   "object_events": [

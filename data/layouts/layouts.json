@@ -6930,6 +6930,56 @@
       "secondary_tileset": "gTileset_PokeScape_HAM",
       "border_filepath": "data/layouts/BarbarianVillage_GymHall/border.bin",
       "blockdata_filepath": "data/layouts/BarbarianVillage_GymHall/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE46",
+      "name": "Route46_Layout",
+      "width": 40,
+      "height": 38,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_AlKharid",
+      "border_filepath": "data/layouts/Route46/border.bin",
+      "blockdata_filepath": "data/layouts/Route46/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE70",
+      "name": "Route70_Layout",
+      "width": 30,
+      "height": 50,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp",
+      "border_filepath": "data/layouts/Route70/border.bin",
+      "blockdata_filepath": "data/layouts/Route70/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE47",
+      "name": "Route47_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Wilderness",
+      "border_filepath": "data/layouts/Route47/border.bin",
+      "blockdata_filepath": "data/layouts/Route47/map.bin"
+    },
+    {
+      "id": "LAYOUT_WILDERNESS_VOLCANO_CHAMPION_ROOM",
+      "name": "WildernessVolcano_ChampionRoom_Layout",
+      "width": 50,
+      "height": 50,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/WildernessVolcano_ChampionRoom/border.bin",
+      "blockdata_filepath": "data/layouts/WildernessVolcano_ChampionRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_POLYPORE_DUNGEON",
+      "name": "Polypore_Dungeon_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Polypore_Dungeon/border.bin",
+      "blockdata_filepath": "data/layouts/Polypore_Dungeon/map.bin"
     }
   ]
 }

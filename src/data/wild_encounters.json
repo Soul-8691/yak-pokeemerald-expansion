@@ -19864,6 +19864,174 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_POLYPORE_DUNGEON",
+          "base_label": "gPolypore_Dungeon0",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 40,
+                "max_level": 40,
+                "species": "SPECIES_RAT_FUNGAL_FORM"
+              },
+              {
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_RUNTSTABLE"
+              },
+              {
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_SPORAXE"
+              },
+              {
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_RUNTSTABLE"
+              },
+              {
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_GRIFOLAPINE"
+              },
+              {
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_GRIFOLAPINE"
+              },
+              {
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_RAT_FUNGAL_FORM"
+              },
+              {
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_GRIFOLAROO"
+              },
+              {
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_ZYGOMITE"
+              },
+              {
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_ZYGOMITE_DAEMONCAP_FORM"
+              },
+              {
+                "min_level": 30,
+                "max_level": 40,
+                "species": "SPECIES_ZYGOMITE_ANCIENT_FORM"
+              },
+              {
+                "min_level": 30,
+                "max_level": 50,
+                "species": "SPECIES_GANODERMIC_BEAST"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 0,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NONE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ROUTE17",
+          "base_label": "gRoute170",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 28,
+                "max_level": 34,
+                "species": "SPECIES_BEAVER"
+              },
+              {
+                "min_level": 28,
+                "max_level": 34,
+                "species": "SPECIES_DEAD_TREE"
+              },
+              {
+                "min_level": 28,
+                "max_level": 34,
+                "species": "SPECIES_BEAVER"
+              },
+              {
+                "min_level": 28,
+                "max_level": 34,
+                "species": "SPECIES_FERRET"
+              },
+              {
+                "min_level": 28,
+                "max_level": 38,
+                "species": "SPECIES_BEAVER"
+              },
+              {
+                "min_level": 28,
+                "max_level": 34,
+                "species": "SPECIES_KITTEN"
+              },
+              {
+                "min_level": 28,
+                "max_level": 34,
+                "species": "SPECIES_CAT_LAZY_FORM"
+              },
+              {
+                "min_level": 28,
+                "max_level": 34,
+                "species": "SPECIES_FERRET"
+              },
+              {
+                "min_level": 28,
+                "max_level": 34,
+                "species": "SPECIES_ROOSTER_VARROCK_FORM"
+              },
+              {
+                "min_level": 28,
+                "max_level": 34,
+                "species": "SPECIES_CHICKEN_VARROCK_FORM"
+              },
+              {
+                "min_level": 28,
+                "max_level": 34,
+                "species": "SPECIES_ORIGAMI_BALLOON"
+              },
+              {
+                "min_level": 28,
+                "max_level": 34,
+                "species": "SPECIES_MEERKATS"
+              }
+            ]
+          }
         }
       ]
     },

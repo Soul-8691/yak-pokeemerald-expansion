@@ -1889,3 +1889,30 @@ const u8 gText_NextMenu[] =_("Next");
 const u8 gText_YouAlreadyHaveThis[] =_("You already have this item.{PAUSE_UNTIL_PRESS}");
 const u8 gText_YouWantedThisTM[] =_("You want {STR_VAR_2}?\nThat will be ¥{STR_VAR_1}.");
 const u8 gText_NeedMoreBadges[] =_("You need more badges to do this.{PAUSE_UNTIL_PRESS}");
+
+
+const u8 gText_NewGame_Welcome[] =_("Welcome to the World of PokeScape.");
+const u8 gText_NewGame_Story_or_OpenWorld[] =_("Welcome to the World of PokeScape.\pThis game has the option of\ntwo play styles.\pYou can choose to play\nSTORY MODE or OPEN WORLD.");
+const u8 gText_NewGame_STORYMODE_info[] =_("Are you sure you would like to play\nSTORY MODE?");
+//"STORY MODE is a generic Pokemon story\nexperience that has a set path and\lcontains story elements such as\lSide Quests, Evil Teams and Unique\lCharacters, as you battle your way to\lbe the very best of the regional\lchampionships.\p
+const u8 gText_NewGame_OPENWORLD_info[] =_("WARNING\nThis is currently a work in progress.\pAre you sure you would like to play\nOPEN WORLD?");
+//OPEN WORLD is a mode where you can\nchoose any starting location you wish\land play through the game with\leverything scaled to your level.\pThe main goal of this mode is to explore\lwith a challenge and earn gym badges.\pThere is no story in this\lmode and it is only reccomended if you have already\lcompleted the story.
+
+const u8 gText_STORYMODE[] =_("STORY MODE");
+const u8 gText_OPENWORLD[] =_("OPEN WORLD");
+const u8 gText_F2P[] =_("FREE TO PLAY");
+const u8 gText_P2P[] =_("MEMBERS");
+
+const u8 gText_NewGame_F2PorP2P[] =_("Before we begin you must selection a\nregion to start in.\pDo you wish to start in F2P or P2P?");
+const u8 gText_NewGame_TownSelection[] =_("Choose your starting town.");
+const u8 gText_NewGame_Region_1[] =_("LUMBRIDGE");
+const u8 gText_NewGame_Region_2[] =_("FALADOR");
+const u8 gText_NewGame_Region_3[] =_("VARROCK");
+const u8 gText_NewGame_Region_4[] =_("RIMMINGTON");
+const u8 gText_NewGame_Region_5[] =_("YANNILE");
+const u8 gText_NewGame_Region_6[] =_("ARDOUNGE");
+const u8 gText_NewGame_Region_7[] =_("CATHERBY");
+const u8 gText_NewGame_Region_8[] =_("RELLEKKA");
+const u8 gText_NewGame_RegionChoosen[] =_("You have choosen to start in VARROCK.");
+
+const u8 gText_NewGame_appearance[] =_("Next your appearance…\p$");

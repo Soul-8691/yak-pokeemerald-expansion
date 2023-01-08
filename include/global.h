@@ -1,4 +1,4 @@
-#ifndef GUARD_GLOBAL_H
+#ifndef GUARD_GLOBAL_H 
 #define GUARD_GLOBAL_H
 
 #include <string.h>
@@ -488,6 +488,7 @@ struct SaveBlock2
     /*0x57C*/ struct RankingHall2P hallRecords2P[2][3]; // From record mixing.
     /*0x624*/ u16 contestLinkResults[CONTEST_CATEGORIES_COUNT][CONTESTANT_COUNT];
     /*0x64C*/ struct BattleFrontier frontier;
+             u8 regionLocation;
 	
 			  u16 ItemArg;
 }; // sizeof=0xF2C

@@ -352,6 +352,7 @@ extern const u8 gText_ContinueMenuPokedex[];
 extern const u8 gText_ContinueMenuBadges[];
 extern const u8 gText_BirchBoy[];
 extern const u8 gText_BirchGirl[];
+extern const u8 gText_Birch_RegionSelect[];
 
 /*
 extern const u8 gText_DefaultNameStu[];
@@ -3065,5 +3066,33 @@ extern const u8 gText_NextMenu[];
 extern const u8 gText_YouAlreadyHaveThis[];
 extern const u8 gText_YouWantedThisTM[];
 extern const u8 gText_NeedMoreBadges[];
+
+
+//POKESCAPE NEWGAME
+
+extern const u8 gText_NewGame_Welcome[];
+extern const u8 gText_NewGame_Story_or_OpenWorld[];
+extern const u8 gText_STORYMODE[];
+extern const u8 gText_OPENWORLD[];
+extern const u8 gText_NewGame_STORYMODE_info[];
+extern const u8 gText_NewGame_OPENWORLD_info[];
+extern const u8 gText_F2P[];
+extern const u8 gText_P2P[];
+
+
+extern const u8 gText_NewGame_F2PorP2P[];
+
+extern const u8 gText_NewGame_TownSelection[];
+
+extern const u8 gText_NewGame_Region_1[];
+extern const u8 gText_NewGame_Region_2[];
+extern const u8 gText_NewGame_Region_3[];
+extern const u8 gText_NewGame_Region_4[];
+extern const u8 gText_NewGame_Region_5[];
+extern const u8 gText_NewGame_Region_6[];
+extern const u8 gText_NewGame_Region_7[];
+extern const u8 gText_NewGame_Region_8[];
+extern const u8 gText_NewGame_appearance[];
+extern const u8 gText_NewGame_RegionChoosen[];
 
 #endif // GUARD_STRINGS_H

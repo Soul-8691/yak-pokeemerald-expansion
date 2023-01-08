@@ -37,6 +37,8 @@
 #include "title_screen.h"
 #include "window.h"
 #include "mystery_gift.h"
+#include "event_data.h"
+#include "constants/vars.h"
 
 /*
  * Main menu state machine
@@ -217,6 +219,38 @@ static void DrawMainMenuWindowBorder(const struct WindowTemplate*, u16);
 static void Task_HighlightSelectedMainMenuItem(u8);
 static void Task_NewGameBirchSpeech_WaitToShowGenderMenu(u8);
 static void Task_NewGameBirchSpeech_ChooseGender(u8);
+
+//PokeScape
+
+static void Task_NewGamePokeScape_Welcome(u8);
+static void Task_NewGamePokeScape_SelectGameMode(u8);
+static void Task_NewGamePokeScape_WaitToShowGAMEMODEMenu(u8);
+static void NewGamePokeScape_ShowGAMEMODEMenu(void);
+static void Task_NewGamePokeScape_ChooseGameMode(u8);
+static void Task_NewGamePokeScape_StoryMode(u8);
+static void Task_NewGamePokeScape_STORYMODE_YesNo(u8);
+static void Task_NewGamePokeScape_STORYMODE_YesNo_OPTIONS(u8);
+static void Task_NewGamePokeScape_OPENWORLD(u8);
+static void Task_NewGamePokeScape_OPENWORLD_YesNo(u8);
+static void Task_NewGamePokeScape_OPENWORLD_YesNo_OPTIONS(u8);
+
+static void Task_NewGamePokeScape_F2P_or_P2P(u8);
+static void Task_NewGamePokeScape_F2P_or_P2P_CHOICES(u8);
+static void Task_NewGamePokeScape_F2P_or_P2P_OPTIONS(u8);
+
+static void Task_NewGamePokeScape_StartingTown_F2P(u8);
+static void NewGamePokeScape_Show_StartingTown_F2P_Menu(void);
+static void Task_NewGamePokeScape_WaitToShow_StartingTown_F2P_Menu(u8);
+static void Task_NewGamePokeScape_Choose_StartingTown_F2P(u8);
+static void Task_NewGamePokeScape_StartingTown_P2P(u8);
+static void NewGamePokeScape_Show_StartingTown_P2P_Menu(void);
+static void Task_NewGamePokeScape_WaitToShow_StartingTown_P2P_Menu(u8);
+static void Task_NewGamePokeScape_Choose_StartingTown_P2P(u8);
+
+static void NewGamePokeScape_Show_F2P_or_P2P_Menu(void);
+static void Task_NewGamePokeScape_chooseAppearance(u8);
+
+
 static void NewGameBirchSpeech_ShowGenderMenu(void);
 static s8 NewGameBirchSpeech_ProcessGenderMenuInput(void);
 static void NewGameBirchSpeech_ClearGenderWindow(u8, u8);
@@ -404,8 +438,27 @@ static const struct WindowTemplate gNewGameBirchSpeechTextWindows[] =
         .paletteNum = 15,
         .baseBlock = 0x85
     },
+    {
+        .bg = 0,
+        .tilemapLeft = 3,
+        .tilemapTop = 2,
+        .width = 10,
+        .height = 8,
+        .paletteNum = 15,
+        .baseBlock = 0x6D
+    },
+    {
+        .bg = 0,
+        .tilemapLeft = 3,
+        .tilemapTop = 2,
+        .width = 10,
+        .height = 4,
+        .paletteNum = 15,
+        .baseBlock = 0x6D
+    },
     DUMMY_WIN_TEMPLATE
 };
+
 
 static const u16 sMainMenuBgPal[] = INCBIN_U16("graphics/misc/main_menu_bg.gbapal");
 static const u16 sMainMenuTextPal[] = INCBIN_U16("graphics/misc/main_menu_text.gbapal");
@@ -459,6 +512,30 @@ static const union AffineAnimCmd *const sSpriteAffineAnimTable_PlayerShrink[] =
 static const struct MenuAction sMenuActions_Gender[] = {
     {gText_BirchBoy, NULL},
     {gText_BirchGirl, NULL}
+};
+
+static const struct MenuAction sMenuActions_SelectMode[] = {
+    {gText_STORYMODE, NULL},
+    {gText_OPENWORLD, NULL}
+};
+
+static const struct MenuAction sMenuActions_F2P_or_P2P[] = {
+    {gText_F2P, NULL},
+    {gText_P2P, NULL}
+};
+
+static const struct MenuAction sMenuActions_StartingTowns_F2P[] = {
+    {gText_NewGame_Region_1, NULL}, //LUM
+    {gText_NewGame_Region_2, NULL}, //FALADOR
+    {gText_NewGame_Region_3, NULL}, //varrock
+    {gText_NewGame_Region_4, NULL} //RIMMINGTON
+};
+
+static const struct MenuAction sMenuActions_StartingTowns_P2P[] = {
+    {gText_NewGame_Region_5, NULL}, //YANNILE
+    {gText_NewGame_Region_6, NULL}, //ARDOUNGE
+    {gText_NewGame_Region_7, NULL}, //SEERS VILLAGE
+    {gText_NewGame_Region_8, NULL} //RELLEKA
 };
 
 static const u8 *const gMalePresetNames[] = {
@@ -1333,9 +1410,377 @@ static void Task_NewGameBirchSpeech_WaitToShowBirch(u8 taskId)
 	NewGameBirchSpeech_ShowDialogueWindow(0, 1);
     PutWindowTilemap(0);
     CopyWindowToVram(0, 2);
-	
-	gTasks[taskId].func = Task_NewGameBirchSpeech_BoyOrGirl;
+
+//POKESCAPE START
+
+    gTasks[taskId].func = Task_NewGamePokeScape_SelectGameMode; //GO TO WELCOME
+	//gTasks[taskId].func = Task_NewGameBirchSpeech_BoyOrGirl;
 }
+
+
+//WELCOME
+static void Task_NewGamePokeScape_Welcome(u8 taskId)
+{
+    /*
+    NewGameBirchSpeech_ClearWindow(0);
+    StringExpandPlaceholders(gStringVar4, gText_NewGame_Welcome); //WELCOME TO THE WORLD OF POKESCAPE.
+    AddTextPrinterForMessage(1);
+    */
+    gTasks[taskId].func = Task_NewGamePokeScape_SelectGameMode; //GO TO SELECT GAME MODE
+}
+
+//SELECT GAME MODE
+static void Task_NewGamePokeScape_SelectGameMode(u8 taskId)
+{
+    NewGameBirchSpeech_ClearWindow(0);
+    StringExpandPlaceholders(gStringVar4, gText_NewGame_Story_or_OpenWorld);
+    AddTextPrinterForMessage(1);
+    gTasks[taskId].func = Task_NewGamePokeScape_WaitToShowGAMEMODEMenu; //OPENS THE CHOICE OF STORY MODE OR OPEN WORLD
+}
+
+//OPENS THE CHOICE OF F2P or P2P.
+static void Task_NewGamePokeScape_WaitToShowGAMEMODEMenu(u8 taskId)
+{
+    if (!RunTextPrintersAndIsPrinter0Active())
+    {
+        NewGamePokeScape_ShowGAMEMODEMenu();
+        gTasks[taskId].func = Task_NewGamePokeScape_ChooseGameMode; //CHOOSE OPTION FOR GAME MODE
+    }
+}
+//SHOWS GAME MODE WINDOW OPTIONS
+static void NewGamePokeScape_ShowGAMEMODEMenu(void)
+{
+    DrawMainMenuWindowBorder(&gNewGameBirchSpeechTextWindows[4], 0xF3);
+    FillWindowPixelBuffer(4, PIXEL_FILL(1));
+    PrintMenuTable(4, 2, sMenuActions_SelectMode);
+    InitMenuInUpperLeftCornerPlaySoundWhenAPressed(4, 2, 0);
+    PutWindowTilemap(4);
+    CopyWindowToVram(4, 3);
+}
+
+//CHOOSE OPTION FOR GAME MODE
+static void Task_NewGamePokeScape_ChooseGameMode(u8 taskId)
+{
+    int GameMode = NewGameBirchSpeech_ProcessGenderMenuInput();
+
+    switch (GameMode)
+    {
+        case 0:
+            PlaySE(SE_SELECT);
+            //gSaveBlock2Ptr->regionLocation = 0;
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            gTasks[taskId].func = Task_NewGamePokeScape_StoryMode; //GO TO STORY MODE INFO
+            break;
+        case 1:
+            PlaySE(SE_SELECT);
+            //gSaveBlock2Ptr->regionLocation = 1;
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            gTasks[taskId].func = Task_NewGamePokeScape_OPENWORLD; //GO TO OPEN WORLD INFO
+            break;
+    }
+}
+//STORYMODE INFO CONFRIM
+static void Task_NewGamePokeScape_StoryMode(u8 taskId)
+{
+    NewGameBirchSpeech_ClearWindow(0);
+    StringExpandPlaceholders(gStringVar4, gText_NewGame_STORYMODE_info);
+    AddTextPrinterForMessage(1);
+    gTasks[taskId].func = Task_NewGamePokeScape_STORYMODE_YesNo; //DO YOU WISH TO CONFIRM?
+}
+//STORY MODE
+static void Task_NewGamePokeScape_STORYMODE_YesNo(u8 taskId)
+{
+    if (!RunTextPrintersAndIsPrinter0Active())
+    {
+        CreateYesNoMenuParameterized(2, 1, 0xF3, 0xDF, 2, 15);
+        gTasks[taskId].func = Task_NewGamePokeScape_STORYMODE_YesNo_OPTIONS;
+    }
+}
+//STORY MODE
+static void Task_NewGamePokeScape_STORYMODE_YesNo_OPTIONS(u8 taskId)
+{
+    switch (Menu_ProcessInputNoWrapClearOnChoose())
+    {
+        case 0:
+            PlaySE(SE_SELECT);
+            //gSaveBlock2Ptr->regionLocation = 0;  //set storymode
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_chooseAppearance;         //GO TO _________
+            break;
+        case -1:
+        case 1:
+            PlaySE(SE_SELECT);
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_SelectGameMode; //GO BACK TO CHOOSE GAME MODE
+    }
+}
+//OPENWORLD INFO CONFRIM
+static void Task_NewGamePokeScape_OPENWORLD(u8 taskId)
+{
+    NewGameBirchSpeech_ClearWindow(0);
+    StringExpandPlaceholders(gStringVar4, gText_NewGame_OPENWORLD_info);
+    AddTextPrinterForMessage(1);
+    gTasks[taskId].func = Task_NewGamePokeScape_OPENWORLD_YesNo; //DO YOU WISH TO CONFIRM?
+}
+//OPENWORLD MODE
+static void Task_NewGamePokeScape_OPENWORLD_YesNo(u8 taskId)
+{
+    if (!RunTextPrintersAndIsPrinter0Active())
+    {
+        CreateYesNoMenuParameterized(2, 1, 0xF3, 0xDF, 2, 15);
+        gTasks[taskId].func = Task_NewGamePokeScape_OPENWORLD_YesNo_OPTIONS;
+    }
+}
+//OPENWORLD MODE
+static void Task_NewGamePokeScape_OPENWORLD_YesNo_OPTIONS(u8 taskId)
+{
+    switch (Menu_ProcessInputNoWrapClearOnChoose())
+    {
+        case 0:
+            PlaySE(SE_SELECT);
+            //gSaveBlock2Ptr->regionLocation = 0;  //set OPENWORLD
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_F2P_or_P2P;     //GO TO _____
+            break;
+            break;
+        case -1:
+        case 1:
+            PlaySE(SE_SELECT);
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_SelectGameMode; //GO BACK TO CHOOSE GAME MODE
+    }
+}
+
+
+
+
+///OPEN WORLD PATH
+//ARE YOU FREE OR MEMBERS AREA.
+static void Task_NewGamePokeScape_F2P_or_P2P(u8 taskId)
+{
+    NewGameBirchSpeech_ClearWindow(0);
+    StringExpandPlaceholders(gStringVar4, gText_NewGame_F2PorP2P);
+    AddTextPrinterForMessage(1);
+    
+    gTasks[taskId].func = Task_NewGamePokeScape_F2P_or_P2P_CHOICES;
+}
+//FREE OR MEMBERS AREA.
+static void Task_NewGamePokeScape_F2P_or_P2P_CHOICES(u8 taskId)
+{
+    if (!RunTextPrintersAndIsPrinter0Active())
+    {
+        NewGamePokeScape_Show_F2P_or_P2P_Menu();
+        gTasks[taskId].func = Task_NewGamePokeScape_F2P_or_P2P_OPTIONS;
+    }
+}
+//FREE OR MEMBERS AREA.
+static void Task_NewGamePokeScape_F2P_or_P2P_OPTIONS(u8 taskId)
+{
+    switch (Menu_ProcessInputNoWrapClearOnChoose())
+    {
+        case 0:
+            PlaySE(SE_SELECT);
+            //gSaveBlock2Ptr->regionLocation = 0;  //set f2p area
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_StartingTown_F2P;     //GO TO F2P
+            break;
+        case 1:
+            PlaySE(SE_SELECT);
+            //gSaveBlock2Ptr->regionLocation = 0;  //set p2p area
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_StartingTown_P2P;     //GO TO p2p
+            break;
+    }
+}
+
+
+
+//PokeScape DRAW MENU 
+static void NewGamePokeScape_Show_F2P_or_P2P_Menu(void)
+{
+    DrawMainMenuWindowBorder(&gNewGameBirchSpeechTextWindows[4], 0xF3);
+    FillWindowPixelBuffer(4, PIXEL_FILL(1));
+    PrintMenuTable(4, 2, sMenuActions_F2P_or_P2P);
+    InitMenuInUpperLeftCornerPlaySoundWhenAPressed(4, 2, 0);
+    PutWindowTilemap(4);
+    CopyWindowToVram(4, 3);
+}
+static void NewGamePokeScape_Show_StartingTown_F2P_Menu(void)
+{
+    DrawMainMenuWindowBorder(&gNewGameBirchSpeechTextWindows[3], 0xF3);
+    FillWindowPixelBuffer(3, PIXEL_FILL(1));
+    PrintMenuTable(3, 4, sMenuActions_StartingTowns_F2P);
+    InitMenuInUpperLeftCornerPlaySoundWhenAPressed(3, 4, 0);
+    PutWindowTilemap(3);
+    CopyWindowToVram(3, 3);
+}
+static void NewGamePokeScape_Show_StartingTown_P2P_Menu(void)
+{
+    DrawMainMenuWindowBorder(&gNewGameBirchSpeechTextWindows[3], 0xF3);
+    FillWindowPixelBuffer(3, PIXEL_FILL(1));
+    PrintMenuTable(3, 4, sMenuActions_StartingTowns_P2P);
+    InitMenuInUpperLeftCornerPlaySoundWhenAPressed(3, 4, 0);
+    PutWindowTilemap(3);
+    CopyWindowToVram(3, 3);
+}
+
+
+///F2P
+//WHATS YOUR STARTING TOWN (F2P)
+static void Task_NewGamePokeScape_StartingTown_F2P(u8 taskId)
+{
+    NewGameBirchSpeech_ClearWindow(0);
+    StringExpandPlaceholders(gStringVar4, gText_NewGame_TownSelection);
+    AddTextPrinterForMessage(1);
+    
+    gTasks[taskId].func = Task_NewGamePokeScape_WaitToShow_StartingTown_F2P_Menu;
+}
+//SHOW STARTING TOWNS (F2P)
+static void Task_NewGamePokeScape_WaitToShow_StartingTown_F2P_Menu(u8 taskId)
+{
+    if (!RunTextPrintersAndIsPrinter0Active())
+    {
+        NewGamePokeScape_Show_StartingTown_F2P_Menu();
+        gTasks[taskId].func = Task_NewGamePokeScape_Choose_StartingTown_F2P;
+    }
+}
+//LIST OF STARTING TOWNS (F2P)
+static void Task_NewGamePokeScape_Choose_StartingTown_F2P(u8 taskId)
+{
+    int regionArea = NewGameBirchSpeech_ProcessGenderMenuInput();
+
+    switch (regionArea)
+    {
+        case 0:
+            PlaySE(SE_SELECT);
+            gSaveBlock2Ptr->regionLocation = 0;
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_chooseAppearance;
+            break;
+        case 1:
+            PlaySE(SE_SELECT);
+            gSaveBlock2Ptr->regionLocation = 1;
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_chooseAppearance;
+            break;
+        case 2:
+            PlaySE(SE_SELECT);
+            gSaveBlock2Ptr->regionLocation = 2;
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_chooseAppearance;
+            break;
+        case 3:
+            PlaySE(SE_SELECT);
+            gSaveBlock2Ptr->regionLocation = 3;
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_chooseAppearance;
+            break;
+        case -1:
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_F2P_or_P2P;
+    }
+}
+///P2P
+//WHATS YOUR STARTING TOWN (P2P)
+static void Task_NewGamePokeScape_StartingTown_P2P(u8 taskId)
+{
+    NewGameBirchSpeech_ClearWindow(0);
+    StringExpandPlaceholders(gStringVar4, gText_NewGame_TownSelection);
+    AddTextPrinterForMessage(1);
+    
+    gTasks[taskId].func = Task_NewGamePokeScape_WaitToShow_StartingTown_P2P_Menu;
+}
+//SHOW STARTING TOWNS (P2P)
+static void Task_NewGamePokeScape_WaitToShow_StartingTown_P2P_Menu(u8 taskId)
+{
+    if (!RunTextPrintersAndIsPrinter0Active())
+    {
+        NewGamePokeScape_Show_StartingTown_P2P_Menu();
+        gTasks[taskId].func = Task_NewGamePokeScape_Choose_StartingTown_P2P;
+    }
+}
+//LIST OF STARTING TOWNS (P2P)
+static void Task_NewGamePokeScape_Choose_StartingTown_P2P(u8 taskId)
+{
+    int regionArea = NewGameBirchSpeech_ProcessGenderMenuInput();
+
+    switch (regionArea)
+    {
+        case 0:
+            PlaySE(SE_SELECT);
+            gSaveBlock2Ptr->regionLocation = 4;
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_chooseAppearance;
+            break;
+        case 1:
+            PlaySE(SE_BREAKABLE_DOOR);
+            gSaveBlock2Ptr->regionLocation = 5;
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_chooseAppearance;
+            break;
+        case 2:
+            PlaySE(SE_APPLAUSE);
+            gSaveBlock2Ptr->regionLocation = 6;
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_chooseAppearance;
+            break;
+        case 3:
+            PlaySE(SE_ARENA_TIMEUP1);
+            gSaveBlock2Ptr->regionLocation = 7;
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_chooseAppearance;
+            break;
+        case -1:
+            NewGameBirchSpeech_ClearGenderWindow(3, 1);
+            FillWindowPixelBuffer(0, PIXEL_FILL(1));
+            gTasks[taskId].func = Task_NewGamePokeScape_F2P_or_P2P;
+    }
+}
+
+
+//THINGS LEFT TO DO FOR OPEN WORLD
+/*
+    - SET THE TIME
+    - GIVE MONS
+    - SET ALL STORY FLAGS
+    - ENABLE LEVEL SCALING
+*/
+
+
+
+
+
+//LAST THING APPEARANCE!
+static void Task_NewGamePokeScape_chooseAppearance(u8 taskId)
+{
+    NewGameBirchSpeech_ClearWindow(0);
+    StringExpandPlaceholders(gStringVar4, gText_NewGame_appearance);
+    AddTextPrinterForMessage(1);
+    
+    gTasks[taskId].tTimer = 64;
+    gTasks[taskId].func = Task_NewGameBirchSpeech_BoyOrGirl;
+    
+}
+
+
+
+
+
 
 static void Task_NewGameBirchSpeech_WaitForSpriteFadeInWelcome(u8 taskId)
 {
@@ -1509,6 +1954,7 @@ static void Task_NewGameBirchSpeech_WaitForPlayerFadeIn(u8 taskId)
 
 static void Task_NewGameBirchSpeech_BoyOrGirl(u8 taskId)
 {
+    
 	u8 spriteId = gTasks[taskId].tBrendanSpriteId;
     gSprites[spriteId].pos1.x = 180;
     gSprites[spriteId].pos1.y = 60;
@@ -1560,6 +2006,16 @@ static void Task_NewGameBirchSpeech_ChooseGender(u8 taskId)
         gTasks[taskId].func = Task_NewGameBirchSpeech_SlideOutOldGenderSprite;
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 static void Task_NewGameBirchSpeech_SlideOutOldGenderSprite(u8 taskId)
 {
@@ -2132,6 +2588,18 @@ static void NewGameBirchSpeech_ShowGenderMenu(void)
     PutWindowTilemap(1);
     CopyWindowToVram(1, 3);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 static s8 NewGameBirchSpeech_ProcessGenderMenuInput(void)
 {

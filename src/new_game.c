@@ -46,6 +46,8 @@
 #include "mevent.h"
 #include "union_room_chat.h"
 #include "constants/heal_locations.h"
+#include "event_data.h"
+#include "constants/vars.h"
 
 extern const u8 EventScript_ResetAllMapFlags[];
 
@@ -138,6 +140,41 @@ static void WarpToTutorialIsland(void)
     SetWarpDestination(MAP_GROUP(LUMBRIDGE_HOUSE_STARTER2), MAP_NUM(LUMBRIDGE_HOUSE_STARTER2), -1, 5, 5);
     WarpIntoMap();
 }
+static void WarpToFALADOR(void)
+{
+    SetWarpDestination(MAP_GROUP(FALADOR), MAP_NUM(FALADOR), 1, 5, 5);
+    WarpIntoMap();
+}
+static void WarpToVARROCK(void)
+{
+    SetWarpDestination(MAP_GROUP(VARROCK), MAP_NUM(VARROCK), 1, 5, 5);
+    WarpIntoMap();
+}
+static void WarpToRIMMINGTON(void)
+{
+    SetWarpDestination(MAP_GROUP(RIMMINGTON), MAP_NUM(RIMMINGTON), 1, 5, 5);
+    WarpIntoMap();
+}
+static void WarpToYANILLE(void)
+{
+    SetWarpDestination(MAP_GROUP(YANILLE), MAP_NUM(YANILLE), 1, 5, 5);
+    WarpIntoMap();
+}
+static void WarpToARDOUGNE(void)
+{
+    SetWarpDestination(MAP_GROUP(ARDOUGNE), MAP_NUM(ARDOUGNE), 1, 5, 5);
+    WarpIntoMap();
+}
+static void WarpToCATHERBY(void)
+{
+    SetWarpDestination(MAP_GROUP(RIMMINGTON), MAP_NUM(RIMMINGTON), 1, 5, 5);
+    WarpIntoMap();
+}
+static void WarpToRELLEKKA(void)
+{
+    SetWarpDestination(MAP_GROUP(RELLEKKA), MAP_NUM(RELLEKKA), 1, 5, 5);
+    WarpIntoMap();
+}
 
 void Sav2_ClearSetDefault(void)
 {
@@ -202,8 +239,6 @@ void NewGameInitData(void)
     ResetFanClub();
     ResetLotteryCorner();
     //WarpToTruck();
-	WarpToTutorialIsland();
-	SetLastHealLocationWarp(HEAL_LOCATION_LUMBRIDGE);
     ScriptContext2_RunNewScript(EventScript_ResetAllMapFlags);
     ResetMiniGamesResults();
     InitUnionRoomChatRegisteredTexts();
@@ -215,6 +250,51 @@ void NewGameInitData(void)
     WipeTrainerNameRecords();
     ResetTrainerHillResults();
     ResetContestLinkResults();
+
+    //POKESCAPE STARTING LOCATIONS
+    if (gSaveBlock2Ptr->regionLocation == 0)
+    {
+        WarpToTutorialIsland();
+	    SetLastHealLocationWarp(HEAL_LOCATION_LUMBRIDGE);
+    }
+    if (gSaveBlock2Ptr->regionLocation == 1)
+    {
+        WarpToFALADOR();
+	    SetLastHealLocationWarp(HEAL_LOCATION_FALADOR2);
+    }
+    if (gSaveBlock2Ptr->regionLocation == 2)
+    {
+        WarpToVARROCK();
+	    SetLastHealLocationWarp(HEAL_LOCATION_VARROCK2);
+    }
+    if (gSaveBlock2Ptr->regionLocation == 3)
+    {
+        WarpToRIMMINGTON();
+	    SetLastHealLocationWarp(HEAL_LOCATION_RIMMINGTON);
+    }
+    if (gSaveBlock2Ptr->regionLocation == 4)
+    {
+        WarpToYANILLE();
+	    SetLastHealLocationWarp(HEAL_LOCATION_YANILLE);
+    }
+    if (gSaveBlock2Ptr->regionLocation == 5)
+    {
+        WarpToARDOUGNE();
+	    SetLastHealLocationWarp(HEAL_LOCATION_ARDOUGNE);
+    }
+    if (gSaveBlock2Ptr->regionLocation == 6)
+    {
+        WarpToCATHERBY();
+	    SetLastHealLocationWarp(HEAL_LOCATION_MAZCAB_OTOT);
+    }
+    if (gSaveBlock2Ptr->regionLocation == 7)
+    {
+        WarpToRELLEKKA();
+	    SetLastHealLocationWarp(HEAL_LOCATION_RELLEKKA);
+    }
+        
+//
+
 }
 
 static void ResetMiniGamesResults(void)

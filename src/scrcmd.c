@@ -2349,3 +2349,9 @@ bool8 ScrCmd_hidenamebox(struct ScriptContext *ctx) {
         ClearNamebox();
     return FALSE;
 }
+
+bool8 ScrCmd_checkgamemode(struct ScriptContext *ctx)
+{
+    gSpecialVar_Result = gSaveBlock2Ptr->GameMode;
+    return FALSE;
+}

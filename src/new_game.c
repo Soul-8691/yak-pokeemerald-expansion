@@ -49,6 +49,7 @@
 #include "event_data.h"
 #include "constants/vars.h"
 
+
 extern const u8 EventScript_ResetAllMapFlags[];
 
 // this file's functions
@@ -135,23 +136,23 @@ static void WarpToTruck(void)
     WarpIntoMap();
 }
 
-static void WarpToTutorialIsland(void)
+static void WarpToLUMBRIDGE(void)
 {
     SetWarpDestination(MAP_GROUP(LUMBRIDGE_HOUSE_STARTER2), MAP_NUM(LUMBRIDGE_HOUSE_STARTER2), -1, 5, 5);
     WarpIntoMap();
 }
 static void WarpToFALADOR(void)
 {
-    SetWarpDestination(MAP_GROUP(FALADOR), MAP_NUM(FALADOR), 1, 5, 5);
+    SetWarpDestination(MAP_GROUP(STARTER_HOUSE_FALADOR), MAP_NUM(STARTER_HOUSE_FALADOR), -1, 3, 5);
     WarpIntoMap();
 }
 static void WarpToVARROCK(void)
 {
-    SetWarpDestination(MAP_GROUP(VARROCK), MAP_NUM(VARROCK), 1, 5, 5);
+    SetWarpDestination(MAP_GROUP(STARTER_HOUSE_VARROCK), MAP_NUM(STARTER_HOUSE_VARROCK), -1, 3, 5);
     WarpIntoMap();
 }
 static void WarpToRIMMINGTON(void)
-{
+{ //CHANGE TO ALKHAIRD
     SetWarpDestination(MAP_GROUP(RIMMINGTON), MAP_NUM(RIMMINGTON), 1, 5, 5);
     WarpIntoMap();
 }
@@ -254,7 +255,7 @@ void NewGameInitData(void)
     //POKESCAPE STARTING LOCATIONS
     if (gSaveBlock2Ptr->regionLocation == 0)
     {
-        WarpToTutorialIsland();
+        WarpToLUMBRIDGE();
 	    SetLastHealLocationWarp(HEAL_LOCATION_LUMBRIDGE);
     }
     if (gSaveBlock2Ptr->regionLocation == 1)
@@ -292,6 +293,9 @@ void NewGameInitData(void)
         WarpToRELLEKKA();
 	    SetLastHealLocationWarp(HEAL_LOCATION_RELLEKKA);
     }
+
+
+    
         
 //
 
@@ -304,3 +308,4 @@ static void ResetMiniGamesResults(void)
     ResetPokeJumpResults();
     CpuFill16(0, &gSaveBlock2Ptr->berryPick, sizeof(struct BerryPickingResults));
 }
+

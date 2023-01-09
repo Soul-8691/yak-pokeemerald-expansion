@@ -1567,3 +1567,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/WildernessVolcano_ChampionRoom/scripts.inc"
 
 	.include "data/maps/Polypore_Dungeon/scripts.inc"
+
+	.include "data/maps/Starter_House_Varrock/scripts.inc"
+
+	.include "data/maps/Starter_House_Falador/scripts.inc"

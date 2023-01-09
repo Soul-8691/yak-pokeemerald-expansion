@@ -1645,6 +1645,11 @@
 	.byte 0xe6
 	.endm
 
+	@ Checks the player's GAME MODE. If STORYMODE, then STORYMODE (0) is stored in VAR_RESULT. If OPENWORLD, then OPENWORLD (1) is stored in VAR_RESULT.
+	.macro checkgamemode
+	.byte 0xe7
+	.endm
+
 
 
 @ Supplementary

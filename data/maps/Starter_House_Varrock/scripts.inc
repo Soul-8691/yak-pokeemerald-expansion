@@ -1,0 +1,8 @@
+Starter_House_Varrock_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, Starter_House_Varrock_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
+	.byte 0
+
+Starter_House_Varrock_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
+	map_script_2 VAR_OPENWORLD_STATE, 0, GAMEMODE_CHECK_NEWGAME_ITEMS
+	.2byte 0
+

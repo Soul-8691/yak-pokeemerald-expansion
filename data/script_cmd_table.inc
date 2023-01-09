@@ -231,6 +231,7 @@ gScriptCmdTable:: @ 81DB67C
 	.4byte ScrCmd_giveshinymon				@ 0xe4
 	.4byte ScrCmd_namebox					@ 0xe5
 	.4byte ScrCmd_hidenamebox				@ 0xe6
+	.4byte ScrCmd_checkgamemode				@ 0xe7
 
 gScriptCmdTableEnd:: @ 81DBA08
 	.4byte ScrCmd_nop

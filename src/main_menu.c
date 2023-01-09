@@ -1467,13 +1467,13 @@ static void Task_NewGamePokeScape_ChooseGameMode(u8 taskId)
     {
         case 0:
             PlaySE(SE_SELECT);
-            //gSaveBlock2Ptr->regionLocation = 0;
+            //gSaveBlock2Ptr->GameMode = 0;
             NewGameBirchSpeech_ClearGenderWindow(3, 1);
             gTasks[taskId].func = Task_NewGamePokeScape_StoryMode; //GO TO STORY MODE INFO
             break;
         case 1:
             PlaySE(SE_SELECT);
-            //gSaveBlock2Ptr->regionLocation = 1;
+            //gSaveBlock2Ptr->GameMode = 1;
             NewGameBirchSpeech_ClearGenderWindow(3, 1);
             gTasks[taskId].func = Task_NewGamePokeScape_OPENWORLD; //GO TO OPEN WORLD INFO
             break;
@@ -1503,7 +1503,7 @@ static void Task_NewGamePokeScape_STORYMODE_YesNo_OPTIONS(u8 taskId)
     {
         case 0:
             PlaySE(SE_SELECT);
-            //gSaveBlock2Ptr->regionLocation = 0;  //set storymode
+            gSaveBlock2Ptr->GameMode = 0;  //set storymode
             NewGameBirchSpeech_ClearGenderWindow(3, 1);
             FillWindowPixelBuffer(0, PIXEL_FILL(1));
             gTasks[taskId].func = Task_NewGamePokeScape_chooseAppearance;         //GO TO _________
@@ -1540,7 +1540,7 @@ static void Task_NewGamePokeScape_OPENWORLD_YesNo_OPTIONS(u8 taskId)
     {
         case 0:
             PlaySE(SE_SELECT);
-            //gSaveBlock2Ptr->regionLocation = 0;  //set OPENWORLD
+            gSaveBlock2Ptr->GameMode = 1;  //set OPENWORLD
             NewGameBirchSpeech_ClearGenderWindow(3, 1);
             FillWindowPixelBuffer(0, PIXEL_FILL(1));
             gTasks[taskId].func = Task_NewGamePokeScape_F2P_or_P2P;     //GO TO _____

@@ -6980,6 +6980,26 @@
       "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
       "border_filepath": "data/layouts/Polypore_Dungeon/border.bin",
       "blockdata_filepath": "data/layouts/Polypore_Dungeon/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARTER_HOUSE_VARROCK",
+      "name": "Starter_House_Varrock_Layout",
+      "width": 8,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Starter_House_Varrock/border.bin",
+      "blockdata_filepath": "data/layouts/Starter_House_Varrock/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARTER_HOUSE_FALADOR",
+      "name": "Starter_House_Falador_Layout",
+      "width": 8,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Starter_House_Falador/border.bin",
+      "blockdata_filepath": "data/layouts/Starter_House_Falador/map.bin"
     }
   ]
 }

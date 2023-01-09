@@ -1,0 +1,5 @@
+mapscripts Starter_House_Falador_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_OPENWORLD_STATE, 0: GAMEMODE_CHECK_NEWGAME_ITEMS
+    ]
+}

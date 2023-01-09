@@ -1,5 +1,68 @@
 Lumbridge_House_Starter2_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, Lumbridge_House_Starter2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
+
+Lumbridge_House_Starter2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
+	map_script_2 VAR_OPENWORLD_STATE, 0, GAMEMODE_CHECK_NEWGAME_ITEMS
+	.2byte 0
+
+
+GAMEMODE_CHECK_NEWGAME_ITEMS::
+	checkgamemode
+	compare VAR_RESULT, 1
+	goto_if_eq GAMEMODE_CHECK_NEWGAME_ITEMS_1
+	return
+
+GAMEMODE_CHECK_NEWGAME_ITEMS_1:
+	compare VAR_OPENWORLD_STATE, 0
+	goto_if_eq GAMEMODE_CHECK_NEWGAME_ITEMS_3
+	return
+
+GAMEMODE_CHECK_NEWGAME_ITEMS_3:
+	lockall
+	msgbox GAMEMODE_CHECK_NEWGAME_ITEMS_Text_0
+	msgbox GAMEMODE_CHECK_NEWGAME_ITEMS_Text_1
+	closemessage
+	special StartWallClock
+	waitstate
+	msgbox GAMEMODE_CHECK_NEWGAME_ITEMS_Text_2
+	msgbox GAMEMODE_CHECK_NEWGAME_ITEMS_Text_3
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox GAMEMODE_CHECK_NEWGAME_ITEMS_Text_4
+	waitfanfare
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	special EnableNationalPokedex
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox GAMEMODE_CHECK_NEWGAME_ITEMS_Text_5
+	waitfanfare
+	additem ITEM_NORMAL_POUCH, 10
+	additem ITEM_MAP
+	additem ITEM_ITEMFINDER
+	additem ITEM_SMALL_NET
+	additem ITEM_BIG_NET
+	additem ITEM_DRAGON_NET
+	additem ITEM_TERRORBIRD_POUCH
+	additem ITEM_YAK_POUCH
+	additem ITEM_PICKAXE
+	additem ITEM_BOAT
+	additem ITEM_AXE
+	additem ITEM_STRENGTHITEM
+	additem ITEM_DIVEITEM
+	additem ITEM_SPADE
+	additem ITEM_FLYITEM
+	additem ITEM_LANTERN
+	additem ITEM_WATERFALLITEM
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_RECEIVED_RUNNING_SHOES
+	setflag FLAG_SYS_B_DASH
+	msgbox GAMEMODE_CHECK_NEWGAME_ITEMS_Text_6
+	special ChooseStarter
+	waitstate
+	setvar VAR_OPENWORLD_STATE, 1
+	closemessage
+	release
+	return
 
 
 Quackers::
@@ -367,6 +430,30 @@ Mithrilman_WILDERNESSVOLCANO2::
 	release
 	end
 
+
+GAMEMODE_CHECK_NEWGAME_ITEMS_Text_0:
+	.string "Welcome to PokeScape OPEN WORLD mode.$"
+
+GAMEMODE_CHECK_NEWGAME_ITEMS_Text_1:
+	.string "Please set the time.$"
+
+GAMEMODE_CHECK_NEWGAME_ITEMS_Text_2:
+	.string "It seems that Prof. Normal Tree has\n"
+	.string "left you a parcel.$"
+
+GAMEMODE_CHECK_NEWGAME_ITEMS_Text_3:
+	.string "Dear {PLAYER}, I hope these will be of\n"
+	.string "great use to you on your adventure.\l"
+	.string "- Prof. Normal Tree.$"
+
+GAMEMODE_CHECK_NEWGAME_ITEMS_Text_4:
+	.string "Obtained the BESTIARY.$"
+
+GAMEMODE_CHECK_NEWGAME_ITEMS_Text_5:
+	.string "Obtained a load of useful items.$"
+
+GAMEMODE_CHECK_NEWGAME_ITEMS_Text_6:
+	.string "Select a starting Monster.$"
 
 Quackers_Text_0:
 	.string "It's Quackers!\p"

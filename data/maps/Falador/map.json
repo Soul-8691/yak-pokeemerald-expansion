@@ -683,7 +683,7 @@
       "x": 69,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_FALADOR",
+      "dest_map": "MAP_STARTER_HOUSE_FALADOR",
       "dest_warp_id": 0
     },
     {

@@ -46,10 +46,12 @@
 #include "constants/items.h"
 #include "constants/layouts.h"
 #include "constants/moves.h"
+#include "constants/party_menu.h"
 #include "constants/songs.h"
 #include "constants/trainers.h"
 #include "constants/weather.h"
 #include "constants/region_map_sections.h"
+
 
 struct SpeciesItem
 {
@@ -10520,6 +10522,41 @@ u8 *sub_806F4F8(u8 id, u8 arg1)
 
     return structPtr->byteArrays[arg1];
 }
+
+//WILD POKEMON LEVEL SCALING - CURRENTLY USELESS
+u8 GetPartyMonCurvedLevel(void)
+{
+    u8 adjustedLevel, currentLevel, monCount, partyMon, badgeModifier, firstMon;
+    u16 i, totalLevel;
+
+
+//ADDS LEVELS BASED ON AMOUNT OF BADGES OBTAINED
+    for (i = FLAG_BADGE01_GET; i < FLAG_BADGE01_GET + NUM_BADGES; i++)
+    {
+        if (FlagGet(i))
+            badgeModifier += 10;
+    }
+    adjustedLevel = badgeModifier;
+   
+
+
+//IF PLAYER IS OVER LEVEL 10.    
+    /*
+    if (VarGet(VAR_ROUTE114_STATE) == 0)
+    {
+        adjustedLevel += 10;
+    }
+    */
+
+
+
+
+
+    //VarSet(VAR_ROUTE113_STATE, currentLevel);    //JUST TO CHECK VARIABLES
+    return adjustedLevel;
+}
+
+
 
 void MaxHpIV (void){
     u8 iv = 31;

@@ -533,6 +533,45 @@ BATTLE_VARROCK_GYM_TRAINER_3_3:
 	end
 
 
+STARTER_MON_SCRIPT::
+	faceplayer
+	buffernumberstring 0, VAR_LEVEL_SCALING_STATE
+	msgbox STARTER_MON_SCRIPT_Text_0
+	msgbox STARTER_MON_SCRIPT_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne STARTER_MON_SCRIPT_2
+STARTER_MON_SCRIPT_1:
+	release
+	end
+
+STARTER_MON_SCRIPT_2:
+	msgbox STARTER_MON_SCRIPT_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne STARTER_MON_SCRIPT_5
+	msgbox STARTER_MON_SCRIPT_Text_3, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne STARTER_MON_SCRIPT_8
+	msgbox STARTER_MON_SCRIPT_Text_4, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne STARTER_MON_SCRIPT_10
+	goto STARTER_MON_SCRIPT_1
+
+STARTER_MON_SCRIPT_5:
+	addvar VAR_LEVEL_SCALING_STATE, 1
+	closemessage
+	end
+
+STARTER_MON_SCRIPT_8:
+	subvar VAR_LEVEL_SCALING_STATE, 1
+	closemessage
+	end
+
+STARTER_MON_SCRIPT_10:
+	setvar VAR_LEVEL_SCALING_STATE, 0
+	closemessage
+	end
+
+
 VARROCK_SIGNPOST_Text_0:
 	.string "Varrock, the trade centre of the\n"
 	.string "Gielinor.$"
@@ -870,3 +909,21 @@ BATTLE_VARROCK_GYM_TRAINER_3_Text_2:
 	.string "today.\p"
 	.string "You do not care what the king wants at\n"
 	.string "all, do you?$"
+
+STARTER_MON_SCRIPT_Text_0:
+	.string "Level Scaling is: {STR_VAR_1}$"
+
+STARTER_MON_SCRIPT_Text_1:
+	.string "EDIT LEVEL SCALING?$"
+
+STARTER_MON_SCRIPT_Text_2:
+	.string "ADD +1\n"
+	.string "LEVEL SCALING?$"
+
+STARTER_MON_SCRIPT_Text_3:
+	.string "SUBTRACT -1\n"
+	.string "LEVEL SCALING?$"
+
+STARTER_MON_SCRIPT_Text_4:
+	.string "SET 0\n"
+	.string "LEVEL SCALING?$"

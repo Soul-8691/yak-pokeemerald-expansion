@@ -24,6 +24,7 @@
 #include "constants/layouts.h"
 #include "constants/maps.h"
 #include "constants/weather.h"
+#include "constants/vars.h"
 
 extern const u8 EventScript_RepelWoreOff[];
 
@@ -268,6 +269,8 @@ static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon)
     u8 max;
     u8 range;
     u8 rand;
+    u8 curvedLevel;
+    u8 curveAmount;
 
     // Make sure minimum level is less than maximum level
     if (wildPokemon->maxLevel >= wildPokemon->minLevel)
@@ -280,24 +283,142 @@ static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon)
         min = wildPokemon->maxLevel;
         max = wildPokemon->minLevel;
     }
-    range = max - min + 1;
-    rand = Random() % range;
 
-    // check ability for max level mon
-    if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG))
+//IF GAMEMODE IS OPENWORLD - SCALE THE LEVEL RANGES
+    if (gSaveBlock2Ptr->GameMode == 1)
     {
-        u8 ability = GetMonAbility(&gPlayerParty[0]);
-        if (ability == ABILITY_HUSTLE || ability == ABILITY_VITAL_SPIRIT || ability == ABILITY_PRESSURE)
-        {
-            if (Random() % 2 == 0)
-                return max;
+        //curvedLevel = GetPartyMonCurvedLevel(); //GRABS THE EXTRA LEVELS
 
-            if (rand != 0)
-                rand--;
+        //max = ((curvedLevel * 2) / 4);
+        //min = ((curvedLevel * 1) / 4);
+        //if (max < curvedLevel)
+            //curveAmount = (curvedLevel + max);
+            //curveAmount = (((2 * curvedLevel) + max) / 3) - max;
+ 
+        //range = max - min;// + 1;       set 50,   12.5min - 25max
+        //range = 10;
+        //rand = Random() % range;
+
+        //if (range < (curveAmount * 3) && (range != 0))
+        //    range = curveAmount / 3; 
+
+        
+        //return min + rand + curveAmount;
+        //VarSet(VAR_ROUTE113_STATE, rand);    //JUST TO CHECK VARIABLES
+        //return min + rand;
+
+
+//0 BADGES && Lower than LEVEL 10.
+        if (VarGet(VAR_LEVEL_SCALING_STATE) == 0) 
+        {
+            curvedLevel = 5;
+            min = 1;
+            max = 5;
         }
+//0 BADGES
+        if (VarGet(VAR_LEVEL_SCALING_STATE) == 1) 
+        {
+            curvedLevel = 10;
+            min = 5;
+            max = 12;
+        }
+//1 BADGE
+        if (VarGet(VAR_LEVEL_SCALING_STATE) == 2) 
+        {
+            curvedLevel = 15;
+            min = 14;
+            max = 20;
+        }
+//2 BADGE
+        if (VarGet(VAR_LEVEL_SCALING_STATE) == 3) 
+        {
+            curvedLevel = 20;
+            min = 14;
+            max = 20;
+        }
+//3 BADGE
+        if (VarGet(VAR_LEVEL_SCALING_STATE) == 4) 
+        {
+            curvedLevel = 25;
+            min = 14;
+            max = 20;
+        }
+//4 BADGE
+        if (VarGet(VAR_LEVEL_SCALING_STATE) == 5) 
+        {
+            curvedLevel = 30;
+            min = 14;
+            max = 20;
+        }
+//5 BADGE
+        if (VarGet(VAR_LEVEL_SCALING_STATE) == 6) 
+        {
+            curvedLevel = 35;
+            min = 14;
+            max = 20;
+        }     
+//6 BADGE
+        if (VarGet(VAR_LEVEL_SCALING_STATE) == 7) 
+        {
+            curvedLevel = 40;
+            min = 14;
+            max = 20;
+        }
+//7 BADGE
+        if (VarGet(VAR_LEVEL_SCALING_STATE) == 8) 
+        {
+            curvedLevel = 45;
+            min = 14;
+            max = 20;
+        }
+//8 BADGE
+        if (VarGet(VAR_LEVEL_SCALING_STATE) == 9) 
+        {
+            curvedLevel = 50;
+            min = 14;
+            max = 20;
+        }     
+//ELITE 4 / CHAMPION BEAT
+        if (VarGet(VAR_LEVEL_SCALING_STATE) >= 10) 
+        {
+            curvedLevel = 55;
+            min = 14;
+            max = 20;
+        }    
+        
+
+        range = max - min;
+        rand = Random() % range;
+        return curvedLevel; //min + rand;
+    }
+//IF GAMEMODE IS STORY MODE
+    else  
+    {
+
+        range = max - min + 1;
+        rand = Random() % range;
+
+        // check ability for max level mon
+        if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG))
+        {
+            u8 ability = GetMonAbility(&gPlayerParty[0]);
+            if (ability == ABILITY_HUSTLE || ability == ABILITY_VITAL_SPIRIT || ability == ABILITY_PRESSURE)
+            {
+                if (Random() % 2 == 0)
+                    return max;
+
+                if (rand != 0)
+                    rand--;
+            }
+        }
+
+        return min + rand;
+
+
     }
 
-    return min + rand;
+
+
 }
 
 static u16 GetCurrentMapWildMonHeaderId(void)
@@ -374,6 +495,24 @@ static u8 PickWildMonNature(void)
     return Random() % NUM_NATURES;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 static void CreateWildMon(u16 species, u8 level)
 {
     bool32 checkCuteCharm;
@@ -407,6 +546,21 @@ static void CreateWildMon(u16 species, u8 level)
 
         CreateMonWithGenderNatureLetter(&gEnemyParty[0], species, level, 32, gender, PickWildMonNature(), 0);
         return;
+    }
+
+//TESTING - EVOLVE MONS IN THE WILD AT CERTAIN LEVELS.
+    if (gSaveBlock2Ptr->GameMode == 1) //OPEN WORLD SCALING MODE
+    {
+        /* 
+        if (VarGet(VAR_LEVEL_SCALING_STATE) >= 1) //IF 1 or GREATER THAN 1
+        {
+            if(gEvolutionTable[species][0].param <= level) //LEVEL IS READY TO EVOLVE.
+            {
+                species = gEvolutionTable[species][0].targetSpecies;
+                level = 1;
+            }
+        }
+        */
     }
 
     CreateMonWithNature(&gEnemyParty[0], species, level, 32, PickWildMonNature());

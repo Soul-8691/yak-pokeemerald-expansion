@@ -478,6 +478,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ITEM_ROUTE1_CHOC_SUNDAY",
       "flag": "FLAG_ITEM_ROUTE1_CHOC_SUNDAY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ABYSSAL_DEMON",
+      "x": 54,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "STARTER_MON_SCRIPT",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -504,7 +517,7 @@
       "elevation": 0,
       "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
       "var_value": "5",
-      "script": "HAM_EVENT_Route1_TRIGGER_1"
+      "script": ""
     },
     {
       "type": "trigger",

@@ -425,4 +425,6 @@ void MaxDefIv(void);
 void MaxSpAtkIv(void);
 void MaxSpDefIv(void);
 void MaxSpeedIv(void);
+u8 GetPartyMonCurvedLevel(void);
+
 #endif // GUARD_POKEMON_H

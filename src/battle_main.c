@@ -1802,103 +1802,132 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
     u8 fixedIV;
     s32 i, j;
     u8 monsCount;
-	u16 dynamicLevel = 0;
-    bool16 Scaling = TRUE;
-
-// This is used to hold the level's of the player's strongest[1] and weakest[0] Pokemon
-u8 LevelSpread[] = {0, 0};
-	
-// This will be used when assigning the level of the opponent's Pokemon
-u16 PartyLevelAdjust;
+//LEVEL SCALING
+    u16 dynamicLevel = 0;
+    //min & max Levels to determine a range between.
+    u8 min;
+    u8 max;
+    u8 rand;
+    u8 PartyLevelRange;
     
-    // Change stuff like this to get the levels you want
-    static const u8 minDynamicLevel = 3;
-    static const u8 maxDynamicLevel = 98;
+    // This will be used when assigning the level of the opponent's Pokemon
+    u16 PartyLevelAdjust;
 
-    // Calculates Average of your party's levels
-    for(i = 0; i < PARTY_SIZE; i++)
+
+
+//0 BADGES && Lower than LEVEL 10.
+    if (VarGet(VAR_LEVEL_SCALING_STATE) == 0) 
     {
-        if(GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == SPECIES_NONE)
-        {
-            if(i != 0)
-		dynamicLevel /= i;
-            break;
-        }
-        dynamicLevel += GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
-	if(i == 0)
-	{
-	    LevelSpread[0], LevelSpread[1] = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
-	}
-	else
-	{
-	    u8 LevelCheck = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
-	    if(LevelCheck < LevelSpread[0])
-	        LevelSpread[0] = LevelCheck;
-	    else if(LevelCheck > LevelSpread[1])
-		LevelSpread[1] = LevelCheck;
-	}
+        //dynamicLevel = 5;
+        min = 3;
+        max = 8;
     }
+//0 BADGES
+    if (VarGet(VAR_LEVEL_SCALING_STATE) == 1) 
+    {
+        //dynamicLevel = 15;
+        min = 7;
+        max = 13;
+    }
+//1 BADGE
+    if (VarGet(VAR_LEVEL_SCALING_STATE) == 2) 
+    {
+        dynamicLevel = 22;
+        min = 18;
+        max = 25;
+    }
+//2 BADGE
+    if (VarGet(VAR_LEVEL_SCALING_STATE) == 3) 
+    {
+        dynamicLevel = 30;
+        min = 20;
+        max = 30;
+    }
+//3 BADGE
+    if (VarGet(VAR_LEVEL_SCALING_STATE) == 4) 
+    {
+        dynamicLevel = 35;
+        min = 25;
+        max = 35;
+    }
+//4 BADGE
+    if (VarGet(VAR_LEVEL_SCALING_STATE) == 5) 
+    {
+        dynamicLevel = 40;
+        min = 30;
+        max = 40;
+    }
+//5 BADGE
+    if (VarGet(VAR_LEVEL_SCALING_STATE) == 6) 
+    {
+        dynamicLevel = 45;
+        min = 35;
+        max = 45;
+    }     
+//6 BADGE
+    if (VarGet(VAR_LEVEL_SCALING_STATE) == 7) 
+    {
+        dynamicLevel = 50;
+        min = 40;
+        max = 50;
+    }
+//7 BADGE
+    if (VarGet(VAR_LEVEL_SCALING_STATE) == 8) 
+    {
+        dynamicLevel = 55;
+        min = 45;
+        max = 55;
+    }
+//8 BADGE
+    if (VarGet(VAR_LEVEL_SCALING_STATE) == 9) 
+    {
+        dynamicLevel = 60;
+        min = 50;
+        max = 60;
+    }     
+//ELITE 4 / CHAMPION BEAT
+    if (VarGet(VAR_LEVEL_SCALING_STATE) >= 10) 
+    {
+        dynamicLevel = 65;
+        min = 55;
+        max = 65;
+    }    
 
-    if (gTrainers[trainerNum].scaling == FALSE)
-        Scaling = FALSE;
-        
-    if(i == PARTY_SIZE)
-		dynamicLevel /= i;
-/* The following is used to account for a player having one or two very weak Pokemon
-	   along with some very strong Pokemon. It weights the averaged level more towards the
-	   player's strongest Pokemon
-	*/
-	
-	PartyLevelAdjust = LevelSpread[1] - LevelSpread[0];
-	
-	if(LevelSpread[1] - dynamicLevel < 10)
-	{
-		PartyLevelAdjust = 0;
-	}
-	else if(LevelSpread[1] - dynamicLevel < 20)
-	{
-		PartyLevelAdjust /= 10;
-	}
-	else if(LevelSpread[1] - dynamicLevel < 30)
-	{
-		PartyLevelAdjust /= 5;
-	}
-	else if(LevelSpread[1] - dynamicLevel < 40)
-	{
-		PartyLevelAdjust *= 3;
-		PartyLevelAdjust /= 10;
-	}
-	else if(LevelSpread[1] - dynamicLevel < 50)
-	{
-		PartyLevelAdjust *= 2;
-		PartyLevelAdjust /= 5;
-	}
-	else if(LevelSpread[1] - dynamicLevel < 60)
-	{
-		PartyLevelAdjust /= 2;
-	}
-	else if(LevelSpread[1] - dynamicLevel < 70)
-	{
-		PartyLevelAdjust *= 3;
-		PartyLevelAdjust /= 5;
-	}
-	else if(LevelSpread[1] - dynamicLevel < 80)
-	{
-		PartyLevelAdjust *= 7;
-		PartyLevelAdjust /= 10;
-	}
-	else if(LevelSpread[1] - dynamicLevel < 90)
-	{
-		PartyLevelAdjust *= 4;
-		PartyLevelAdjust /= 5;
-	}
-    //Handling values to be always be in the range,
-    // ( minDynamiclevel-levelDifference , maxDynamiclevel+levelDifference )
-    if(dynamicLevel < minDynamicLevel) dynamicLevel = minDynamicLevel;
-    else if(dynamicLevel > maxDynamicLevel) dynamicLevel = maxDynamicLevel;
-	
-	
-	
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     if (trainerNum == TRAINER_SECRET_BASE)
         return 0;
 
@@ -1911,8 +1940,8 @@ u16 PartyLevelAdjust;
 
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
         {
-            if (gTrainers[trainerNum].partySize > 3)
-                monsCount = 3;
+            if (gTrainers[trainerNum].partySize > PARTY_SIZE / 2)
+                monsCount = PARTY_SIZE / 2;
             else
                 monsCount = gTrainers[trainerNum].partySize;
         }
@@ -1923,32 +1952,18 @@ u16 PartyLevelAdjust;
 
         for (i = 0; i < monsCount; i++)
         {
-			int rand_diff = Random() % 5;
-			switch(rand_diff)
-			{
-				case 0:
-					rand_diff = 2;
-					break;
-				case 1:
-					rand_diff = 1;
-					break;
-				case 2:
-					rand_diff = 0;
-					break;
-				case 3:
-					rand_diff = 0;
-					break;
-				case 4:
-					rand_diff = 0;
-			}
-			dynamicLevel += rand_diff + PartyLevelAdjust - 2;
-			
+            //level scaling
+            PartyLevelRange = max - min;
+            rand = Random() % PartyLevelRange;
+            dynamicLevel = min + rand;
+            //
+
             if (gTrainers[trainerNum].doubleBattle == TRUE)
                 personalityValue = 0x80;
-            else if (gTrainers[trainerNum].encounterMusic_gender & 0x80)
-                personalityValue = 0x78;
+            else if (gTrainers[trainerNum].encounterMusic_gender & F_TRAINER_FEMALE)
+                personalityValue = 0x78; // Use personality more likely to result in a female Pokémon
             else
-                personalityValue = 0x88;
+                personalityValue = 0x88; // Use personality more likely to result in a male Pokémon
 
             for (j = 0; gTrainers[trainerNum].trainerName[j] != EOS; j++)
                 nameHash += gTrainers[trainerNum].trainerName[j];
@@ -1964,19 +1979,16 @@ u16 PartyLevelAdjust;
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * 31 / 255;
-				if (partyData[i].lvl >= dynamicLevel){
-				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+//IF GAMEMODE is OPENWORLD
+                if (gSaveBlock2Ptr->GameMode == 1)
+                {
+                    CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
-                else if (Scaling != TRUE){
-				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+//IF GAMEMODE is STORYMODE
+                else 
+                {
+                    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
-				else
-				{
-					if(HasLevelEvolution(partyData[i].species, dynamicLevel))
-						CreateMon(&party[i], HasLevelEvolution(partyData[i].species, dynamicLevel), dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
-					else
-						CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
-				}
                 break;
             }
             case F_TRAINER_PARTY_CUSTOM_MOVESET:
@@ -1988,20 +2000,17 @@ u16 PartyLevelAdjust;
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * 31 / 255;
-				if (partyData[i].lvl >= dynamicLevel){
-				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+//IF GAMEMODE is OPENWORLD
+                if (gSaveBlock2Ptr->GameMode == 1)
+                {
+                    CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
-                else if (Scaling != TRUE){
-				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+//IF GAMEMODE is STORYMODE
+                else 
+                {
+                    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
-				else
-				{
-					if(HasLevelEvolution(partyData[i].species, dynamicLevel))
-						CreateMon(&party[i], HasLevelEvolution(partyData[i].species, dynamicLevel), dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
-					else
-						CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
-				}
-				
+
                 for (j = 0; j < MAX_MON_MOVES; j++)
                 {
                     SetMonData(&party[i], MON_DATA_MOVE1 + j, &partyData[i].moves[j]);
@@ -2018,19 +2027,16 @@ u16 PartyLevelAdjust;
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * 31 / 255;
-				if (partyData[i].lvl >= dynamicLevel){
-				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+//IF GAMEMODE is OPENWORLD
+                if (gSaveBlock2Ptr->GameMode == 1)
+                {
+                    CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
-                else if (Scaling != TRUE){
-				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+//IF GAMEMODE is STORYMODE
+                else 
+                {
+                    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
-				else
-				{
-					if(HasLevelEvolution(partyData[i].species, dynamicLevel))
-						CreateMon(&party[i], HasLevelEvolution(partyData[i].species, dynamicLevel), dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
-					else
-						CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
-				}
 
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
                 break;
@@ -2044,19 +2050,16 @@ u16 PartyLevelAdjust;
 
                 personalityValue += nameHash << 8;
                 fixedIV = partyData[i].iv * 31 / 255;
-				if (partyData[i].lvl >= dynamicLevel){
-				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+//IF GAMEMODE is OPENWORLD
+                if (gSaveBlock2Ptr->GameMode == 1)
+                {
+                    CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
-                else if (Scaling != TRUE){
-				    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+//IF GAMEMODE is STORYMODE
+                else 
+                {
+                    CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
-				else
-				{
-					if(HasLevelEvolution(partyData[i].species, dynamicLevel))
-						CreateMon(&party[i], HasLevelEvolution(partyData[i].species, dynamicLevel), dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
-					else
-						CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
-				}
 
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
 
@@ -2068,7 +2071,6 @@ u16 PartyLevelAdjust;
                 break;
             }
             }
-			dynamicLevel -= rand_diff + PartyLevelAdjust;
         }
 
         gBattleTypeFlags |= gTrainers[trainerNum].doubleBattle;

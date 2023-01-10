@@ -307,7 +307,7 @@ static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon)
         //VarSet(VAR_ROUTE113_STATE, rand);    //JUST TO CHECK VARIABLES
         //return min + rand;
 
-
+//SWAP TO CASE?
 //0 BADGES && Lower than LEVEL 10.
         if (VarGet(VAR_LEVEL_SCALING_STATE) == 0) 
         {
@@ -347,49 +347,49 @@ static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon)
         if (VarGet(VAR_LEVEL_SCALING_STATE) == 5) 
         {
             curvedLevel = 30;
-            min = 14;
-            max = 20;
+            min = 20;
+            max = 30;
         }
 //5 BADGE
         if (VarGet(VAR_LEVEL_SCALING_STATE) == 6) 
         {
             curvedLevel = 35;
-            min = 14;
-            max = 20;
+            min = 25;
+            max = 35;
         }     
 //6 BADGE
         if (VarGet(VAR_LEVEL_SCALING_STATE) == 7) 
         {
             curvedLevel = 40;
-            min = 14;
-            max = 20;
+            min = 30;
+            max = 40;
         }
 //7 BADGE
         if (VarGet(VAR_LEVEL_SCALING_STATE) == 8) 
         {
             curvedLevel = 45;
-            min = 14;
-            max = 20;
+            min = 35;
+            max = 45;
         }
 //8 BADGE
         if (VarGet(VAR_LEVEL_SCALING_STATE) == 9) 
         {
             curvedLevel = 50;
-            min = 14;
-            max = 20;
+            min = 40;
+            max = 50;
         }     
 //ELITE 4 / CHAMPION BEAT
         if (VarGet(VAR_LEVEL_SCALING_STATE) >= 10) 
         {
             curvedLevel = 55;
-            min = 14;
-            max = 20;
+            min = 45;
+            max = 55;
         }    
         
 
         range = max - min;
         rand = Random() % range;
-        return curvedLevel; //min + rand;
+        return min + rand;//curvedLevel; //min + rand;
     }
 //IF GAMEMODE IS STORY MODE
     else  

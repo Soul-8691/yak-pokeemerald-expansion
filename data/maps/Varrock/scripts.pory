@@ -538,8 +538,6 @@ script NPC_ARCHAEOLOGIST_BLOCKADE_1
 
 
 
-
-
 script BATTLE_Varrock_Max
 {
 	namebox ("Max")
@@ -682,3 +680,51 @@ script BATTLE_VARROCK_GYM_TRAINER_3
 
 
 
+
+
+
+
+script STARTER_MON_SCRIPT
+{
+	faceplayer
+
+    //buffernumberstring(0, VAR_ROUTE113_STATE)
+    buffernumberstring(0, VAR_LEVEL_SCALING_STATE)
+    msgbox(format("Level Scaling is: {STR_VAR_1}" ))
+
+    msgbox(format("EDIT LEVEL SCALING?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT))
+    { 
+        msgbox(format("ADD +1\nLEVEL SCALING?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT))
+        { 
+            addvar(VAR_LEVEL_SCALING_STATE, 1)
+            closemessage
+            end
+        }
+
+        msgbox(format("SUBTRACT -1\nLEVEL SCALING?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT))
+        { 
+            subvar(VAR_LEVEL_SCALING_STATE, 1)
+            closemessage
+            end
+        }
+
+        msgbox(format("SET 0\nLEVEL SCALING?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT))
+        { 
+            setvar(VAR_LEVEL_SCALING_STATE, 0)
+            closemessage
+            end
+        }
+    }
+
+    //buffernumberstring(2,VAR_RESULT)
+    //setflag (FLAG_SYS_POKEMON_GET)
+    //special (ChooseStarter)
+    //waitstate
+
+    release
+	end
+}

@@ -24,7 +24,7 @@
 #include "constants/songs.h"
 #include "constants/rgb.h"
 
-#define STARTER_MON_COUNT   3
+#define STARTER_MON_COUNT   9
 
 // Position of the sprite of the selected starter Pokemon
 #define STARTER_PKMN_POS_X (DISPLAY_WIDTH / 2)
@@ -103,9 +103,17 @@ static const struct WindowTemplate sWindowTemplate_StarterLabel =
 
 static const u8 sPokeballCoords[STARTER_MON_COUNT][2] =
 {
-    {60, 64},
-    {120, 88},
-    {180, 64},
+    {24, 24},
+    {64, 24},
+    {104, 24},
+
+    {24, 64},
+    {64, 64},
+    {104, 64},
+
+    {24, 104},
+    {64, 104},
+    {104, 104},
 };
 
 static const u8 sStarterLabelCoords[STARTER_MON_COUNT][2] =
@@ -117,9 +125,15 @@ static const u8 sStarterLabelCoords[STARTER_MON_COUNT][2] =
 
 static const u16 sStarterMon[STARTER_MON_COUNT] =
 {
-    SPECIES_TREECKO,
-    SPECIES_TORCHIC,
-    SPECIES_MUDKIP,
+    SPECIES_GUTHLING,
+    SPECIES_ZAMLING,
+    SPECIES_SARALING,
+    SPECIES_SERELING,
+    SPECIES_ZAROLING,
+    SPECIES_TUMEKLING,
+    SPECIES_BANDLING,
+    SPECIES_ARMALING,
+    SPECIES_UNGODLING,
 };
 
 static const struct BgTemplate sBgTemplates[3] =
@@ -464,6 +478,30 @@ void CB2_ChooseStarter(void)
     spriteId = CreateSprite(&sSpriteTemplate_Pokeball, sPokeballCoords[2][0], sPokeballCoords[2][1], 2);
     gSprites[spriteId].sTaskId = taskId;
     gSprites[spriteId].sBallId = 2;
+//
+    spriteId = CreateSprite(&sSpriteTemplate_Pokeball, sPokeballCoords[3][0], sPokeballCoords[3][1], 2);
+    gSprites[spriteId].sTaskId = taskId;
+    gSprites[spriteId].sBallId = 0;
+
+    spriteId = CreateSprite(&sSpriteTemplate_Pokeball, sPokeballCoords[4][0], sPokeballCoords[4][1], 2);
+    gSprites[spriteId].sTaskId = taskId;
+    gSprites[spriteId].sBallId = 0;
+
+    spriteId = CreateSprite(&sSpriteTemplate_Pokeball, sPokeballCoords[5][0], sPokeballCoords[5][1], 2);
+    gSprites[spriteId].sTaskId = taskId;
+    gSprites[spriteId].sBallId = 0;
+//
+    spriteId = CreateSprite(&sSpriteTemplate_Pokeball, sPokeballCoords[6][0], sPokeballCoords[6][1], 2);
+    gSprites[spriteId].sTaskId = taskId;
+    gSprites[spriteId].sBallId = 0;
+
+    spriteId = CreateSprite(&sSpriteTemplate_Pokeball, sPokeballCoords[7][0], sPokeballCoords[7][1], 2);
+    gSprites[spriteId].sTaskId = taskId;
+    gSprites[spriteId].sBallId = 0;
+    
+    spriteId = CreateSprite(&sSpriteTemplate_Pokeball, sPokeballCoords[8][0], sPokeballCoords[8][1], 2);
+    gSprites[spriteId].sTaskId = taskId;
+    gSprites[spriteId].sBallId = 0;
 
     sStarterLabelWindowId = 0xFF;
 }
@@ -480,10 +518,10 @@ static void CB2_StarterChoose(void)
 static void Task_StarterChoose(u8 taskId)
 {
     CreateStarterPokemonLabel(gTasks[taskId].tStarterSelection);
-    DrawStdFrameWithCustomTileAndPalette(0, FALSE, 0x2A8, 0xD);
-    AddTextPrinterParameterized(0, 1, gText_BirchInTrouble, 0, 1, 0, NULL);
-    PutWindowTilemap(0);
-    ScheduleBgCopyTilemapToVram(0);
+    //DrawStdFrameWithCustomTileAndPalette(0, FALSE, 0x2A8, 0xD);
+    //AddTextPrinterParameterized(0, 1, gText_BirchInTrouble, 0, 1, 0, NULL); //DIALOGUE TEXT
+    //PutWindowTilemap(0);
+    //ScheduleBgCopyTilemapToVram(0);
     gTasks[taskId].func = Task_HandleStarterChooseInput;
 }
 

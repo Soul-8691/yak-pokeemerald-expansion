@@ -504,7 +504,7 @@
       "elevation": 0,
       "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
       "var_value": "5",
-      "script": ""
+      "script": "HAM_EVENT_Route1_TRIGGER_1"
     },
     {
       "type": "trigger",

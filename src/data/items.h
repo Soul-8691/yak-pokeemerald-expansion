@@ -7600,7 +7600,7 @@ const struct Item gItems[] =
     },
     [ITEM_LAMP_SPATT] =
     {
-        .name = _("MAGIC LAMP"),
+        .name = _("SP. ATK LAMP"),
         .itemId = ITEM_LAMP_SPATT,
         .price = 9800,
         .description = sCalciumDesc,
@@ -7611,7 +7611,7 @@ const struct Item gItems[] =
     },
     [ITEM_LAMP_SPDEF] =
     {
-        .name = _("SPDEF LAMP"),
+        .name = _("SP. DEF LAMP"),
         .itemId = ITEM_LAMP_SPDEF,
         .price = 9800,
         .description = sZincDesc,

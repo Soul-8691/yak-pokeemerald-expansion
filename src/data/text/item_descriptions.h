@@ -254,31 +254,31 @@ static const u8 sGreenShardDesc[] = _(
 // Vitamins
 static const u8 sHPUpDesc[] = _(
     "Raises the base HP\n"
-    "of one POKéMON.");
+    "of one MONSTER.");
 
 static const u8 sProteinDesc[] = _(
     "Raises the base\n"
     "ATTACK stat of one\n"
-    "POKéMON.");
+    "MONSTER.");
 
 static const u8 sIronDesc[] = _(
     "Raises the base\n"
     "DEFENSE stat of\n"
-    "one POKéMON.");
+    "one MONSTER.");
 
 static const u8 sCarbosDesc[] = _(
     "Raises the base\n"
     "SPEED stat of one\n"
-    "POKéMON.");
+    "MONSTER.");
 
 static const u8 sCalciumDesc[] = _(
     "Raises the base\n"
     "SP. ATK stat of one\n"
-    "POKéMON.");
+    "MONSTER.");
 
 static const u8 sRareCandyDesc[] = _(
     "Raises the level\n"
-    "of a POKéMON by\n"
+    "of a MONSTER by\n"
     "one.");
 
 static const u8 sPPUpDesc[] = _(
@@ -289,7 +289,7 @@ static const u8 sPPUpDesc[] = _(
 static const u8 sZincDesc[] = _(
     "Raises the base\n"
     "SP. DEF stat of one\n"
-    "POKéMON.");
+    "MONSTER.");
 
 static const u8 sPPMaxDesc[] = _(
     "Raises the PP of a\n"
@@ -2266,6 +2266,11 @@ static const u8 sChocolateMilkDesc[] = _(
     "Makes certain\n"
     "species of MONSTERs\n"
     "evolve.");
+
+static const u8 sSpeedLampDesc[] = _(
+    "A lamp left by a\n"
+    "Genie. Raises the\n"
+    "base SPEED stat.");
 
 static const u8 sCupholderDesc[] = _(
     "This is a Cupholder.");

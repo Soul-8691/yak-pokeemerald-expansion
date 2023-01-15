@@ -1,6 +1,6 @@
 mapscripts Lumbridge_House_Starter2_MapScripts {
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_OPENWORLD_STATE, 0: GAMEMODE_CHECK_NEWGAME_ITEMS
+        VAR_TEMP_A, 0: GAMEMODE_CHECK_NEWGAME_ITEMS
     ]
 }
 
@@ -50,15 +50,28 @@ script GAMEMODE_CHECK_NEWGAME_ITEMS
                 setflag (FLAG_RECEIVED_RUNNING_SHOES)
                 setflag (FLAG_SYS_B_DASH)
                 msgbox(format("Select a starting Monster.")) 
-                special (ChooseStarter)
-                waitstate
+                
                 setvar(VAR_OPENWORLD_STATE, 1)
                 closemessage
+                special (ChooseStarter)
+                waitstate
                 release
                 return
             }
+            else
+            {
+            setvar(VAR_TEMP_A, 1)
+            release
+            end 
+            }
 		}
-        
+        else
+        {
+            setvar(VAR_TEMP_A, 1)
+            release
+            end 
+        }
+       
 }
 
 

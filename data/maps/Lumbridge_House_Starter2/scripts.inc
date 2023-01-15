@@ -3,7 +3,7 @@ Lumbridge_House_Starter2_MapScripts::
 	.byte 0
 
 Lumbridge_House_Starter2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-	map_script_2 VAR_OPENWORLD_STATE, 0, GAMEMODE_CHECK_NEWGAME_ITEMS
+	map_script_2 VAR_TEMP_A, 0, GAMEMODE_CHECK_NEWGAME_ITEMS
 	.2byte 0
 
 
@@ -11,14 +11,18 @@ GAMEMODE_CHECK_NEWGAME_ITEMS::
 	checkgamemode
 	compare VAR_RESULT, 1
 	goto_if_eq GAMEMODE_CHECK_NEWGAME_ITEMS_1
-	return
+	setvar VAR_TEMP_A, 1
+	release
+	end
 
 GAMEMODE_CHECK_NEWGAME_ITEMS_1:
 	compare VAR_OPENWORLD_STATE, 0
-	goto_if_eq GAMEMODE_CHECK_NEWGAME_ITEMS_3
-	return
+	goto_if_eq GAMEMODE_CHECK_NEWGAME_ITEMS_4
+	setvar VAR_TEMP_A, 1
+	release
+	end
 
-GAMEMODE_CHECK_NEWGAME_ITEMS_3:
+GAMEMODE_CHECK_NEWGAME_ITEMS_4:
 	lockall
 	msgbox GAMEMODE_CHECK_NEWGAME_ITEMS_Text_0
 	msgbox GAMEMODE_CHECK_NEWGAME_ITEMS_Text_1
@@ -57,10 +61,10 @@ GAMEMODE_CHECK_NEWGAME_ITEMS_3:
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_SYS_B_DASH
 	msgbox GAMEMODE_CHECK_NEWGAME_ITEMS_Text_6
-	special ChooseStarter
-	waitstate
 	setvar VAR_OPENWORLD_STATE, 1
 	closemessage
+	special ChooseStarter
+	waitstate
 	release
 	return
 

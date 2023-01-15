@@ -320,7 +320,7 @@ script BATTLE_ROUTE12_SMELLYBACK{
 
 script BATTLE_ROUTE12_TRAINER_1{
 	trainerbattle_single(TRAINER_RSN_ROUTE12, format("You look like a noob, even I could beat you!"),format("I will have you know I went easy on you.\nJust wait until you see my main."))
-	namebox("Naruto154")
+	namebox("NotANoob37")
 	msgbox(format("I will have you know I went easy on you.\pJust wait until you see my main."))
 	hidenamebox
 	closemessage

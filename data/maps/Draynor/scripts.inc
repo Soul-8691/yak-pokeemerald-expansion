@@ -213,34 +213,6 @@ Draynor_FORTUNATO::
 	end
 
 
-Generalstore_Draynor_Clerk::
-	lock
-	faceplayer
-	msgbox Generalstore_Draynor_Clerk_Text_0
-	waitmessage
-	pokemart GeneralStoreDraynor
-	msgbox Generalstore_Draynor_Clerk_Text_1
-	release
-	return
-
-
-    .align 2
-GeneralStoreDraynor:
-    .2byte ITEM_BRONZE_POUCH
-    .2byte ITEM_IRON_POUCH
-    .2byte ITEM_BREAD
-	.2byte ITEM_WIZARDS_BLIZZARD
-	.2byte ITEM_CHOCOLATE_SUNDAY
-	.2byte ITEM_DRUNK_DRAGON
-	.2byte ITEM_FRUIT_BLAST
-	.2byte ITEM_PINEAPPLE_PUNCH
-    .2byte ITEM_REPEL_TEA_1
-    .2byte ITEM_REPEL_TEA_2
-    .2byte ITEM_REPEL_TEA_3
-    .2byte ITEM_NONE
-    release
-    end
-
 Draynor_TREE::
 	compare VAR_POKESCAPE_DRAYNOR_GUARD_STATE, 0
 	goto_if_eq Draynor_TREE_1
@@ -433,13 +405,6 @@ Draynor_FORTUNATO_Text_0:
 Draynor_FORTUNATO_Text_1:
 	.string "Can I interest you in something to\n"
 	.string "drink?$"
-
-Generalstore_Draynor_Clerk_Text_0:
-	.string "Welcome to the Drayor Markets!\p"
-	.string "How may I help you?$"
-
-Generalstore_Draynor_Clerk_Text_1:
-	.string "Thank you, come again!$"
 
 Draynor_TREE_Text_0:
 	.string "???$"

@@ -10824,6 +10824,54 @@ const struct PokedexEntry gPokedexEntries[] =
 	.trainerScale = 256 ,
 	.trainerOffset = 0 ,
 	},
+	
+	[NATIONAL_DEX_CRABLET_SECOND_FORM] =
+	{
+	.categoryName = _("Crabling"),
+	.height = 1.3,
+	.weight = 9.1,
+	.description = gCrablet_First_FormPokedexText,
+	.pokemonScale = 256 ,
+	.pokemonOffset = 0 ,
+	.trainerScale = 256 ,
+	.trainerOffset = 0 ,
+	},
+
+	[NATIONAL_DEX_CRABLET_THIRD_FORM] =
+	{
+	.categoryName = _("Crabling"),
+	.height = 1.3,
+	.weight = 9.1,
+	.description = gCrablet_First_FormPokedexText,
+	.pokemonScale = 256 ,
+	.pokemonOffset = 0 ,
+	.trainerScale = 256 ,
+	.trainerOffset = 0 ,
+	},
+
+	[NATIONAL_DEX_CRABLET_FORTH_FORM] =
+	{
+	.categoryName = _("Crabling"),
+	.height = 1.3,
+	.weight = 9.1,
+	.description = gCrablet_First_FormPokedexText,
+	.pokemonScale = 256 ,
+	.pokemonOffset = 0 ,
+	.trainerScale = 256 ,
+	.trainerOffset = 0 ,
+	},
+
+	[NATIONAL_DEX_CRABLET_FIFTH_FORM] =
+	{
+	.categoryName = _("Crabling"),
+	.height = 1.3,
+	.weight = 9.1,
+	.description = gCrablet_First_FormPokedexText,
+	.pokemonScale = 256 ,
+	.pokemonOffset = 0 ,
+	.trainerScale = 256 ,
+	.trainerOffset = 0 ,
+	},
 
 	[NATIONAL_DEX_LOBSTER_GOLDEN_FORM] =
 	{

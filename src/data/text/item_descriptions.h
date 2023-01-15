@@ -91,11 +91,11 @@ static const u8 sParalyzeHealDesc[] = _(
 static const u8 sFullRestoreDesc[] = _(
     "Fully restores the\n"
     "HP and status of a\n"
-    "POKéMON.");
+    "MONSTER.");
 
 static const u8 sMaxPotionDesc[] = _(
     "Fully restores the\n"
-    "HP of a POKéMON.");
+    "HP of a MONSTER.");
 
 static const u8 sHyperPotionDesc[] = _(
     "Restores the HP of\n"
@@ -119,7 +119,7 @@ static const u8 sReviveDesc[] = _(
 
 static const u8 sMaxReviveDesc[] = _(
     "Revives a fainted\n"
-    "POKéMON with all\n"
+    "MONSTER with all\n"
     "its HP.");
 
 static const u8 sFreshWaterDesc[] = _(
@@ -178,7 +178,7 @@ static const u8 sElixirDesc[] = _(
 
 static const u8 sMaxElixirDesc[] = _(
     "Fully restores the\n"
-    "PP of a POKéMON's\n"
+    "PP of a MONSTER's\n"
     "moves.");
 
 static const u8 sLavaCookieDesc[] = _(
@@ -2271,6 +2271,11 @@ static const u8 sSpeedLampDesc[] = _(
     "A lamp left by a\n"
     "Genie. Raises the\n"
     "base SPEED stat.");
+
+static const u8 sEmptyBucketDesc[] = _(
+    "An empty bucket.\n"
+    "Nothing interesting\n"
+    "happens.");
 
 static const u8 sCupholderDesc[] = _(
     "This is a Cupholder.");

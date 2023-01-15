@@ -7346,7 +7346,7 @@ const struct Item gItems[] =
         .name = _("EMPTY BUCKET"),
         .itemId = ITEM_EMPTY_BUCKET,
         .price = 200,
-        .description = sCupholderDesc,
+        .description = sEmptyBucketDesc,
         .pocket = POCKET_BERRIES,
         .type = 2,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
@@ -7741,10 +7741,10 @@ const struct Item gItems[] =
     },
 
     //pokescape crops
-	[ITEM_CABBAGE1] =
+	[ITEM_CABBAGE_FARMING] =
     {
         .name = _("CABBAGE"),
-        .itemId = ITEM_CABBAGE1,
+        .itemId = ITEM_CABBAGE_FARMING,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CURE_PAR,
         .description = sCabbageDesc,

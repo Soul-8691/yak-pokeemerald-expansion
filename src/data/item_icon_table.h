@@ -681,6 +681,7 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_MEGASTONE_CHAOS] = {gItemIcon_MEGASTONE_CHAOS, gItemIconPalette_MEGASTONE_CHAOS},	
     [ITEM_MEGASTONE_KALPHITE] = {gItemIcon_MEGASTONE_KALPHITE, gItemIconPalette_MEGASTONE_KALPHITE},	
     [ITEM_MEGASTONE_BEAST] = {gItemIcon_MEGASTONE_BEAST, gItemIconPalette_MEGASTONE_BEAST},	
+    [ITEM_CABBAGE_FARMING] = {gItemIcon_Cabbage, gItemIconPalette_Cabbage},
     // Return to field arrow
     [ITEM_FIELD_ARROW] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };

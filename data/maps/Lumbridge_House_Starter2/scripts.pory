@@ -8,9 +8,9 @@ mapscripts Lumbridge_House_Starter2_MapScripts {
 script GAMEMODE_CHECK_NEWGAME_ITEMS
 {
     checkgamemode
-        if (var(VAR_RESULT) == 1) 
+        if (var(VAR_RESULT) == 1) //if gamemode is OPEN WORLD
         {
-            if (var(VAR_OPENWORLD_STATE) == 0) 
+            if (var(VAR_OPENWORLD_STATE) == 0) //if beginning items HAVE NOT been recieved.
             {
                 lockall
                 msgbox(format("Welcome to PokeScape OPEN WORLD mode."))
@@ -58,20 +58,22 @@ script GAMEMODE_CHECK_NEWGAME_ITEMS
                 release
                 return
             }
-            else
+            else //if beginning items HAVE been recieved.
             {
             setvar(VAR_TEMP_A, 1)
             release
             end 
             }
 		}
-        else
+        else //if GAMEMODE is STORY MODE
         {
             setvar(VAR_TEMP_A, 1)
             release
             end 
         }
-       
+    setvar(VAR_TEMP_A, 1)
+    release
+    end
 }
 
 

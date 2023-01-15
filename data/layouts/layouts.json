@@ -7000,6 +7000,26 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Starter_House_Falador/border.bin",
       "blockdata_filepath": "data/layouts/Starter_House_Falador/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_AUBURY_STORE",
+      "name": "Varrock_Aubury_Store_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Varrock_Aubury_Store/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_Aubury_Store/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALADOR_MACE_STORE",
+      "name": "Falador_Mace_Store_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Falador_Mace_Store/border.bin",
+      "blockdata_filepath": "data/layouts/Falador_Mace_Store/map.bin"
     }
   ]
 }

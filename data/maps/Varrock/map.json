@@ -560,9 +560,9 @@
     },
     {
       "x": 51,
-      "y": 28,
+      "y": 29,
       "elevation": 0,
-      "dest_map": "MAP_VARROCK",
+      "dest_map": "MAP_VARROCK_AUBURY_STORE",
       "dest_warp_id": 0
     },
     {

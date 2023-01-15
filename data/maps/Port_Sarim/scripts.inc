@@ -218,6 +218,8 @@ NPC_PORTSARIM_BETTY::
 	msgbox NPC_PORTSARIM_BETTY_Text_1
 	waitmessage
 	hidenamebox
+	pokemart STORE_RuneStore_2
+	msgbox NPC_PORTSARIM_BETTY_Text_2
 	release
 	end
 
@@ -574,40 +576,6 @@ NPC_PORTSARIM_BATTLEAXE_LOREBOOK::
 	end
 
 
-Generalstore_PortSarim_Clerk::
-	lock
-	faceplayer
-	namebox Generalstore_PortSarim_Clerk_Text_0
-	msgbox Generalstore_PortSarim_Clerk_Text_1
-	waitmessage
-	hidenamebox
-	pokemart GeneralStorePortSarim
-	msgbox Generalstore_PortSarim_Clerk_Text_2
-	release
-	return
-
-
-    .align 2
-GeneralStorePortSarim:
-    .2byte ITEM_BRONZE_POUCH
-    .2byte ITEM_IRON_POUCH
-    .2byte ITEM_STEEL_POUCH
-    .2byte ITEM_BREAD
-    .2byte ITEM_CAKE
-	.2byte ITEM_WIZARDS_BLIZZARD
-	.2byte ITEM_CHOCOLATE_SUNDAY
-	.2byte ITEM_DRUNK_DRAGON
-	.2byte ITEM_FRUIT_BLAST
-	.2byte ITEM_PINEAPPLE_PUNCH
-    .2byte ITEM_EMPTY_BUCKET
-    .2byte ITEM_EMPTY_POT
-    .2byte ITEM_REPEL_TEA_1
-    .2byte ITEM_REPEL_TEA_2
-    .2byte ITEM_REPEL_TEA_3
-    .2byte ITEM_NONE
-    release
-    end
-
 PORTSARIM_HAM_EVENT_PART2_Text_0:
 	.string "H.A.M Leader$"
 
@@ -650,9 +618,10 @@ NPC_PORTSARIM_BETTY_Text_0:
 
 NPC_PORTSARIM_BETTY_Text_1:
 	.string "Welcome to Betty's Magic Emporium!\p"
-	.string "If you are here to make a potion for a\n"
-	.string "witch, I believe you know your way out.\p"
-	.string "Bye!$"
+	.string "How may I help you today?$"
+
+NPC_PORTSARIM_BETTY_Text_2:
+	.string "Thank you, come again!$"
 
 NPC_PORTSARIM_BRIAN_Text_0:
 	.string "Brian$"
@@ -902,14 +871,3 @@ NPC_PORTSARIM_BATTLEAXE_LOREBOOK_Text_0:
 	.string "It seems to be a Fan-fic about a man\n"
 	.string "who fell in love with his battleaxe.\p"
 	.string "You feel the sudden urge to leave.$"
-
-Generalstore_PortSarim_Clerk_Text_0:
-	.string "Assistant$"
-
-Generalstore_PortSarim_Clerk_Text_1:
-	.string "Welcome to the Port Sarim General\n"
-	.string "Store.\p"
-	.string "How may I help you?$"
-
-Generalstore_PortSarim_Clerk_Text_2:
-	.string "Thank you, come again!$"

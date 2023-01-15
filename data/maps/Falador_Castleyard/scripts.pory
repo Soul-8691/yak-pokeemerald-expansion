@@ -386,6 +386,7 @@ script NPC_FALADORCASTLE_GYM_SIRAMIKVARZE {
         msgbox(format("That move is called Razor Shell, it is a very sharp move.\pHopefully it will help you on your journey."))
         setvar(VAR_POKESCAPE_FALADOR_STATE, 5)
         setflag(FLAG_BADGE02_GET)
+        addvar(VAR_LEVEL_SCALING_STATE, 1) //INCREASES LEVEL SCALING & SHOPS
         call(SetGymTrainers_FALADOR)
         hidenamebox
         release

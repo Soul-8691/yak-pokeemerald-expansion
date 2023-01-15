@@ -238,9 +238,11 @@ script NPC_PORTSARIM_BETTY
 	lock
 	faceplayer
     namebox ("Betty")
-	msgbox(format("Welcome to Betty's Magic Emporium!\pIf you are here to make a potion for a witch, I believe you know your way out.\pBye!"))
+	msgbox(format("Welcome to Betty's Magic Emporium!\pHow may I help you today?"))//If you are here to make a potion for a witch, I believe you know your way out.\pBye!"))
     waitmessage
     hidenamebox
+    pokemart (STORE_RuneStore_2)
+    msgbox("Thank you, come again!")
 	release
 	end
 }
@@ -651,40 +653,3 @@ script NPC_PORTSARIM_BATTLEAXE_LOREBOOK
 
 
 
-
-script Generalstore_PortSarim_Clerk {
-    lock
-    faceplayer
-    namebox ("Assistant")
-    msgbox(format("Welcome to the Port Sarim General Store.\pHow may I help you?"))
-    waitmessage
-    hidenamebox
-    pokemart (GeneralStorePortSarim)
-    msgbox("Thank you, come again!")
-    release
-}
-
-
-raw `
-    .align 2
-GeneralStorePortSarim:
-    .2byte ITEM_BRONZE_POUCH
-    .2byte ITEM_IRON_POUCH
-    .2byte ITEM_STEEL_POUCH
-    .2byte ITEM_BREAD
-    .2byte ITEM_CAKE
-	.2byte ITEM_WIZARDS_BLIZZARD
-	.2byte ITEM_CHOCOLATE_SUNDAY
-	.2byte ITEM_DRUNK_DRAGON
-	.2byte ITEM_FRUIT_BLAST
-	.2byte ITEM_PINEAPPLE_PUNCH
-    .2byte ITEM_EMPTY_BUCKET
-    .2byte ITEM_EMPTY_POT
-    .2byte ITEM_REPEL_TEA_1
-    .2byte ITEM_REPEL_TEA_2
-    .2byte ITEM_REPEL_TEA_3
-    .2byte ITEM_NONE
-    release
-    end
-
-`

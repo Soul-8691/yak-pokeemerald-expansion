@@ -779,6 +779,7 @@
 #define MAP_FALADOR_CASTLE_1F        (14 | (42 << 8))
 #define MAP_FALADOR_CASTLE_2F        (15 | (42 << 8))
 #define MAP_FALADOR_CASTLE_3F        (16 | (42 << 8))
+#define MAP_FALADOR_MACE_STORE       (17 | (42 << 8))
 
 // Map Group 43
 #define MAP_VARROCK_THESSALIA_SHOP    (0 | (43 << 8))
@@ -805,6 +806,7 @@
 #define MAP_VARROCK_MUSEUM            (21 | (43 << 8))
 #define MAP_VARROCK_GERTRUDE_HOUSE    (22 | (43 << 8))
 #define MAP_VARROCK_GENERAL_STORE     (23 | (43 << 8))
+#define MAP_VARROCK_AUBURY_STORE      (24 | (43 << 8))
 
 // Map Group 44
 #define MAP_BARBARIAN_VILLAGE_GYM_HALL (0 | (44 << 8))

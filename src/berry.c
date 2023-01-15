@@ -894,7 +894,7 @@ const struct Berry gBerries[] =
         .smoothness = 40,
     },
 	
-    [ITEM_CABBAGE - FIRST_BERRY_INDEX] =
+    [ITEM_CABBAGE_FARMING - FIRST_BERRY_INDEX] =
     {
         .name = _("Cabbage"),
         .firmness = BERRY_FIRMNESS_UNKNOWN,

@@ -371,6 +371,7 @@ NPC_BARBGYM_BARBARIAN_2::
 	hidenamebox
 	fadescreen FADE_TO_BLACK
 	setflag FLAG_BADGE06_GET
+	addvar VAR_LEVEL_SCALING_STATE, 1
 	setvar VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 3
 	call BarbarianVillage_GYM_STATE
 	special RemoveCameraObject

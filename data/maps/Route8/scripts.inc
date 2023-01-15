@@ -114,10 +114,31 @@ BATTLE_ROUTE8_WIZARD_FIRE::
 
 
 BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER::
-	trainerbattle_single TRAINER_ROUTE8_WIZARD_MALIGNIUS_MORTIFER, BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_0, BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_1
-	msgbox BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_2
+	checktrainerflag TRAINER_ROUTE8_WIZARD_MALIGNIUS_MORTIFER
+	compare VAR_RESULT, 0
+	goto_if_eq BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_1
+	lock
+	faceplayer
+	namebox BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_2
+	msgbox BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_4
+	hidenamebox
+	closemessage
 	release
-	return
+	end
+
+BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_1:
+	trainerbattle_single TRAINER_ROUTE8_WIZARD_MALIGNIUS_MORTIFER, BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_0, BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_1
+	namebox BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_2
+	msgbox BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_3
+	hidenamebox
+	closemessage
+	giveitem ITEM_STAFF_OF_EARTH, 1
+	namebox BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_2
+	msgbox BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_4
+	hidenamebox
+	closemessage
+	release
+	end
 
 
 ABYSSALRIFT_Route8_ENTER::
@@ -483,12 +504,20 @@ BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_1:
 	.string "Impossible!$"
 
 BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_2:
+	.string "Malignius$"
+
+BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_3:
 	.string "Impossible!\p"
 	.string "I have never lost a battle before.\p"
 	.string "You are strong adventurer, I will give\n"
 	.string "you that…\p"
 	.string "Here as a reward for defeating me take\n"
 	.string "this.$"
+
+BATTLE_ROUTE8_WIZARD_MALIGNIUS_MORTIFER_Text_4:
+	.string "You can go away now.\p"
+	.string "If you do not I may have second\n"
+	.string "thoughts about having mushroom soup.$"
 
 ABYSSALRIFT_Route8_ENTER_Text_0:
 	.string "There is a rift in space.\p"

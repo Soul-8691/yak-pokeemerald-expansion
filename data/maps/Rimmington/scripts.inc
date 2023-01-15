@@ -457,40 +457,6 @@ NPC_RIMMINGTON_NPC_13::
 	end
 
 
-Generalstore_RIMMINGTON_Clerk::
-	lock
-	faceplayer
-	namebox Generalstore_RIMMINGTON_Clerk_Text_0
-	msgbox Generalstore_RIMMINGTON_Clerk_Text_1
-	waitmessage
-	hidenamebox
-	pokemart GeneralStoreRimmington
-	msgbox Generalstore_RIMMINGTON_Clerk_Text_2
-	release
-	return
-
-
-    .align 2
-GeneralStoreRimmington:
-    .2byte ITEM_BRONZE_POUCH
-    .2byte ITEM_IRON_POUCH
-    .2byte ITEM_STEEL_POUCH
-    .2byte ITEM_BREAD
-    .2byte ITEM_CAKE
-	.2byte ITEM_WIZARDS_BLIZZARD
-	.2byte ITEM_CHOCOLATE_SUNDAY
-	.2byte ITEM_DRUNK_DRAGON
-	.2byte ITEM_FRUIT_BLAST
-	.2byte ITEM_PINEAPPLE_PUNCH
-    .2byte ITEM_EMPTY_BUCKET
-    .2byte ITEM_EMPTY_POT
-    .2byte ITEM_REPEL_TEA_1
-    .2byte ITEM_REPEL_TEA_2
-    .2byte ITEM_REPEL_TEA_3
-    .2byte ITEM_NONE
-    release
-    end
-
 RIMMINGTON_WELL::
 	msgbox RIMMINGTON_WELL_Text_0
 	checkitem ITEM_LANTERN, 1
@@ -1425,17 +1391,6 @@ NPC_RIMMINGTON_NPC_13_Text_1:
 	.string "Oh no!\p"
 	.string "We have almost run out of our supply of\n"
 	.string "bread for this month!$"
-
-Generalstore_RIMMINGTON_Clerk_Text_0:
-	.string "Clerk$"
-
-Generalstore_RIMMINGTON_Clerk_Text_1:
-	.string "Welcome to the Rimmington General\n"
-	.string "Store.\p"
-	.string "How may I help you?$"
-
-Generalstore_RIMMINGTON_Clerk_Text_2:
-	.string "Thank you, come again!$"
 
 RIMMINGTON_WELL_Text_0:
 	.string "It is a well.\p"

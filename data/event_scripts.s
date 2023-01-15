@@ -1571,3 +1571,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Starter_House_Varrock/scripts.inc"
 
 	.include "data/maps/Starter_House_Falador/scripts.inc"
+
+	.include "data/maps/Varrock_Aubury_Store/scripts.inc"
+
+	.include "data/maps/Falador_Mace_Store/scripts.inc"

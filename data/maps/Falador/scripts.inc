@@ -748,38 +748,6 @@ NPC_FALADOR_HOUSE_NPC_2::
 	end
 
 
-Generalstore_FALADOR_Clerk::
-	lock
-	faceplayer
-	namebox Generalstore_FALADOR_Clerk_Text_0
-	msgbox Generalstore_FALADOR_Clerk_Text_1
-	waitmessage
-	hidenamebox
-	pokemart GeneralStoreFalador
-	msgbox Generalstore_FALADOR_Clerk_Text_2
-	release
-	return
-
-
-    .align 2
-GeneralStoreFalador:
-    .2byte ITEM_BRONZE_POUCH
-    .2byte ITEM_IRON_POUCH
-    .2byte ITEM_STEEL_POUCH
-    .2byte ITEM_BREAD
-    .2byte ITEM_CAKE
-	.2byte ITEM_WIZARDS_BLIZZARD
-	.2byte ITEM_CHOCOLATE_SUNDAY
-	.2byte ITEM_DRUNK_DRAGON
-	.2byte ITEM_FRUIT_BLAST
-	.2byte ITEM_PINEAPPLE_PUNCH
-	.2byte ITEM_REPEL_TEA_1
-    .2byte ITEM_REPEL_TEA_2
-    .2byte ITEM_REPEL_TEA_3
-    .2byte ITEM_NONE
-    release
-    end
-
 NPC_FALADOR_NPC_9::
 	lock
 	faceplayer
@@ -1312,16 +1280,6 @@ NPC_FALADOR_HOUSE_NPC_2_Text_0:
 	.string "It is too late for me but you can still\n"
 	.string "run before the dinner is ready!\p"
 	.string "Help…$"
-
-Generalstore_FALADOR_Clerk_Text_0:
-	.string "CLERK$"
-
-Generalstore_FALADOR_Clerk_Text_1:
-	.string "Welcome to the Falador General Store.\p"
-	.string "How may I help you?$"
-
-Generalstore_FALADOR_Clerk_Text_2:
-	.string "Thank you, come again!$"
 
 NPC_FALADOR_NPC_9_Text_0:
 	.string "Did you know part of the Dwarven Mines\n"

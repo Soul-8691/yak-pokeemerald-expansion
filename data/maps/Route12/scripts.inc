@@ -483,7 +483,7 @@ BATTLE_ROUTE12_TRAINER_1_Text_1:
 	.string "Just wait until you see my main.$"
 
 BATTLE_ROUTE12_TRAINER_1_Text_2:
-	.string "Naruto154$"
+	.string "NotANoob37$"
 
 BATTLE_ROUTE12_TRAINER_1_Text_3:
 	.string "I will have you know I went easy on you.\p"

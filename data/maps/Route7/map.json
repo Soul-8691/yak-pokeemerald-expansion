@@ -37,7 +37,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 35,
+      "x": 11,
       "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -50,7 +50,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 23,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE7",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 

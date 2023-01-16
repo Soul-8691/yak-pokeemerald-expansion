@@ -471,7 +471,6 @@ NPC_KaramjaVolcano_HAM_EVENT2::
 
 ELVARG_KaramjaVolcano::
 	lock
-	faceplayer
 	setvar VAR_0x8004, 0
 	setvar VAR_0x8005, 3
 	setvar VAR_0x8006, 8

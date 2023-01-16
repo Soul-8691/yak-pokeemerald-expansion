@@ -1151,3 +1151,14 @@ gTileset_Edgeville::
 	.4byte gMetatiles_Edgeville
 	.4byte gMetatileAttributes_Edgeville
 	.4byte NULL
+
+	.align 2
+gTileset_IndoorTowns2::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_IndoorTowns2
+	.4byte gTilesetPalettes_IndoorTowns2
+	.4byte gMetatiles_IndoorTowns2
+	.4byte gMetatileAttributes_IndoorTowns2
+	.4byte NULL

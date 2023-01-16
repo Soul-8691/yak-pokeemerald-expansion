@@ -2310,3 +2310,23 @@ gTilesetPalettes_Edgeville::
 	.align 2
 gTilesetTiles_Edgeville::
 	.incbin "data/tilesets/secondary/edgeville/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_IndoorTowns2::
+	.incbin "data/tilesets/secondary/indoortowns2/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/indoortowns2/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/indoortowns2/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/indoortowns2/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/indoortowns2/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/indoortowns2/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/indoortowns2/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/indoortowns2/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/indoortowns2/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/indoortowns2/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/indoortowns2/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/indoortowns2/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/indoortowns2/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_IndoorTowns2::
+	.incbin "data/tilesets/secondary/indoortowns2/tiles.4bpp.lz"

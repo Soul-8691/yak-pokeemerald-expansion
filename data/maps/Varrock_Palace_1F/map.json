@@ -29,10 +29,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HAIG_HALEN",
-      "x": 27,
+      "x": 26,
       "y": 32,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -42,7 +42,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_VARROCK_1",
-      "x": 18,
+      "x": 19,
       "y": 29,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -67,11 +67,11 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WIZARD_DARK",
+      "graphics_id": "OBJ_EVENT_GFX_WIZARD_M",
       "x": 17,
       "y": 4,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -156,19 +156,58 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GUARD_VARROCK_1",
+      "x": 9,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
+      "movement_range_x": 6,
+      "movement_range_y": 6,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MERCHER",
+      "x": 24,
+      "y": 20,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_DOG_GUARD",
+      "x": 7,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
       "x": 14,
-      "y": 34,
+      "y": 35,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_NORTH",
       "dest_warp_id": 1
     },
     {
       "x": 15,
-      "y": 34,
+      "y": 35,
       "elevation": 0,
       "dest_map": "MAP_VARROCK_NORTH",
       "dest_warp_id": 2
@@ -186,6 +225,20 @@
       "elevation": 0,
       "dest_map": "MAP_VARROCK_PALACE_2F",
       "dest_warp_id": 1
+    },
+    {
+      "x": 19,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_VARROCK_PALACE_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 19,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_VARROCK_PALACE_1F",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

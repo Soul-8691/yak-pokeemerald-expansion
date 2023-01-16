@@ -764,3 +764,10 @@ gMetatiles_Edgeville::
 	.align 1
 gMetatileAttributes_Edgeville::
 	.incbin "data/tilesets/secondary/edgeville/metatile_attributes.bin"
+	.align 1
+gMetatiles_IndoorTowns2::
+	.incbin "data/tilesets/secondary/indoortowns2/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_IndoorTowns2::
+	.incbin "data/tilesets/secondary/indoortowns2/metatile_attributes.bin"

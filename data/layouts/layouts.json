@@ -5567,7 +5567,7 @@
       "width": 68,
       "height": 56,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Lumbridge",
+      "secondary_tileset": "gTileset_Varrock",
       "border_filepath": "data/layouts/Ardougne/border.bin",
       "blockdata_filepath": "data/layouts/Ardougne/map.bin"
     },
@@ -6867,7 +6867,7 @@
       "width": 30,
       "height": 40,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_IndoorTowns1",
+      "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/Varrock_Palace_1F/border.bin",
       "blockdata_filepath": "data/layouts/Varrock_Palace_1F/map.bin"
     },
@@ -6877,7 +6877,7 @@
       "width": 30,
       "height": 40,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_IndoorTowns1",
+      "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/Varrock_Palace_2F/border.bin",
       "blockdata_filepath": "data/layouts/Varrock_Palace_2F/map.bin"
     },
@@ -7020,6 +7020,26 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Falador_Mace_Store/border.bin",
       "blockdata_filepath": "data/layouts/Falador_Mace_Store/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE55",
+      "name": "Route55_Layout",
+      "width": 40,
+      "height": 28,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Windmill",
+      "border_filepath": "data/layouts/Route55/border.bin",
+      "blockdata_filepath": "data/layouts/Route55/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE56",
+      "name": "Route56_Layout",
+      "width": 50,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Windmill",
+      "border_filepath": "data/layouts/Route56/border.bin",
+      "blockdata_filepath": "data/layouts/Route56/map.bin"
     }
   ]
 }

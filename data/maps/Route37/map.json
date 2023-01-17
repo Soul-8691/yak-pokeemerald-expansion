@@ -15,18 +15,18 @@
   "connections": [
     {
       "direction": "down",
-      "offset": 30,
-      "map": "MAP_ROUTE36"
+      "offset": 0,
+      "map": "MAP_TAVERLEY"
     },
     {
       "direction": "right",
-      "offset": -2,
+      "offset": 32,
       "map": "MAP_ROUTE24"
     },
     {
-      "direction": "down",
-      "offset": 0,
-      "map": "MAP_TAVERLEY"
+      "direction": "right",
+      "offset": -8,
+      "map": "MAP_GOBLIN_VILLAGE"
     }
   ],
   "object_events": [

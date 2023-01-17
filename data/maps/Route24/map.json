@@ -40,17 +40,17 @@
     },
     {
       "direction": "left",
-      "offset": 48,
+      "offset": 46,
       "map": "MAP_ROUTE35"
     },
     {
       "direction": "left",
-      "offset": 26,
-      "map": "MAP_ROUTE36"
+      "offset": 8,
+      "map": "MAP_TAVERLEY"
     },
     {
       "direction": "left",
-      "offset": 2,
+      "offset": -32,
       "map": "MAP_ROUTE37"
     }
   ],
@@ -239,8 +239,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_KNIGHT_WHITE_M",
-      "x": 4,
-      "y": 24,
+      "x": 5,
+      "y": 23,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,

@@ -870,9 +870,12 @@ static void CB2_GiveStarter(void)
     ScriptGiveMon(starterMon, 5, ITEM_NONE, 0, 0, 0);
     ResetTasks();
     //PlayBattleBGM();
+    SetMainCallback2(CB2_StartFirstBattle);
+    BeginNormalPaletteFade(0xFFFFFFFF, -1, 0, 0x10, 0);
+    //PlayBattleBGM();
     //SetMainCallback2(CB2_ReturnToField);
     //Overworld_ClearSavedMusic();
-    SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+    //SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
 
     //PlayBattleBGM();
     //SetMainCallback2(CB2_StartFirstBattle);
@@ -884,12 +887,14 @@ static void CB2_StartFirstBattle(void)
     UpdatePaletteFade();
     RunTasks();
 
-    if (IsBattleTransitionDone() == TRUE)
+    //if (IsBattleTransitionDone() == TRUE)
+    if (!gPaletteFade.active)
     {
         gBattleTypeFlags = BATTLE_TYPE_FIRST_BATTLE;
         gMain.savedCallback = CB2_EndFirstBattle;
         FreeAllWindowBuffers();
-        SetMainCallback2(CB2_InitBattle);
+        //SetMainCallback2(CB2_InitBattle);
+        SetMainCallback2(CB2_EndFirstBattle);
         RestartWildEncounterImmunitySteps();
         ClearPoisonStepCounter();
         IncrementGameStat(GAME_STAT_TOTAL_BATTLES);

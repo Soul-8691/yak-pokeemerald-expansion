@@ -8,7 +8,7 @@ Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	return
 
 Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-	map_script_2 VAR_POKESCAPE_LUMBRIDGE_CASTLE_STATE, 0, Lumbridge_Castle_Introduction
+	map_script_2 VAR_TEMP_A, 0, Lumbridge_Castle_Introduction
 	.2byte 0
 
 
@@ -71,7 +71,8 @@ Movement_Lumbridge_Castle_HALLWAY_TRIGGER3:
 
 Lumbridge_Castle_COOKS_TRIGGER::
 	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
-	goto_if_eq Lumbridge_Castle_COOKS_TRIGGER_1
+	goto_if_eq Lumbridge_Castle_COOKS_TRIGGER_3
+Lumbridge_Castle_COOKS_TRIGGER_2:
 	release
 	end
 
@@ -90,6 +91,11 @@ Lumbridge_Castle_COOKS_TRIGGER_1:
 	release
 	end
 
+Lumbridge_Castle_COOKS_TRIGGER_3:
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_Castle_COOKS_TRIGGER_1
+	goto Lumbridge_Castle_COOKS_TRIGGER_2
+
 
 Movement_Lumbridge_Castle_COOKS_TRIGGER1:
 	emote_exclamation_mark
@@ -101,21 +107,28 @@ Movement_Lumbridge_Castle_COOKS_TRIGGER2:
 
 Lumbridge_Castle_Introduction::
 	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
-	goto_if_eq Lumbridge_Castle_Introduction_2
+	goto_if_eq Lumbridge_Castle_Introduction_3
 Lumbridge_Castle_Introduction_1:
+	setvar VAR_TEMP_A, 1
 	release
 	end
 
 Lumbridge_Castle_Introduction_2:
 	lockall
+	setvar VAR_TEMP_A, 1
 	setvar VAR_POKESCAPE_LUMBRIDGE_CASTLE_STATE, 1
 	getplayerxy VAR_TEMP_1, VAR_TEMP_2
 	compare VAR_TEMP_1, 17
-	goto_if_eq Lumbridge_Castle_Introduction_4
+	goto_if_eq Lumbridge_Castle_Introduction_6
 	goto RightDoorScript
 	goto Lumbridge_Castle_Introduction_1
 
-Lumbridge_Castle_Introduction_4:
+Lumbridge_Castle_Introduction_3:
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_Castle_Introduction_2
+	goto Lumbridge_Castle_Introduction_1
+
+Lumbridge_Castle_Introduction_6:
 	goto LeftDoorScript
 	goto Lumbridge_Castle_Introduction_1
 

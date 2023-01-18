@@ -1,17 +1,109 @@
 Route1_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, Route1_MapScripts_MAP_SCRIPT_ON_LOAD
 	map_script MAP_SCRIPT_ON_TRANSITION, Route1_MapScripts_MAP_SCRIPT_ON_TRANSITION
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, Route1WarpCheck
 	.byte 0
 
 Route1_MapScripts_MAP_SCRIPT_ON_LOAD:
-	goto WizardsTower_Route1_STATE
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Route1_MapScripts_MAP_SCRIPT_ON_LOAD_1
+	return
+
+Route1_MapScripts_MAP_SCRIPT_ON_LOAD_1:
+	goto QUEST_STATE_WizardsTower_ROUTE1
 	return
 
 Route1_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 0
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Route1_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	call OPENWORLD_STATE_ROUTE1
+	return
+
+Route1_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 	call TryMoveNpcsRoute1
 	return
+
+
+OPENWORLD_STATE_ROUTE1::
+	setobjectxyperm 4, 42, 10
+	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 12, 37, 12
+	setobjectxyperm 13, 43, 12
+	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_DOWN
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	setflag FLAG_TEMP_3
+	clearflag FLAG_TEMP_4
+	addobject 5
+	removeobject 22
+	removeobject 23
+	removeobject 31
+	setobjectxyperm 5, 10, 12
+	setobjectxyperm 6, 10, 13
+	return
+
+
+QUEST_STATE_WizardsTower_ROUTE1::
+	switch VAR_POKESCAPE_WIZARDS_TOWER_STATE
+	case 0, QUEST_STATE_WizardsTower_ROUTE1_2
+	case 1, QUEST_STATE_WizardsTower_ROUTE1_2
+	case 2, QUEST_STATE_WizardsTower_ROUTE1_2
+	case 3, QUEST_STATE_WizardsTower_ROUTE1_2
+	case 4, QUEST_STATE_WizardsTower_ROUTE1_2
+	case 5, QUEST_STATE_WizardsTower_ROUTE1_3
+	case 6, QUEST_STATE_WizardsTower_ROUTE1_4
+	case 7, QUEST_STATE_WizardsTower_ROUTE1_4
+	case 8, QUEST_STATE_WizardsTower_ROUTE1_5
+	case 9, QUEST_STATE_WizardsTower_ROUTE1_5
+	return
+
+QUEST_STATE_WizardsTower_ROUTE1_2:
+	removeobject 22
+	removeobject 23
+	removeobject 5
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	setflag FLAG_TEMP_4
+	release
+	end
+
+QUEST_STATE_WizardsTower_ROUTE1_3:
+	clearflag FLAG_TEMP_2
+	clearflag FLAG_TEMP_4
+	addobject 23
+	addobject 5
+	removeobject 32
+	removeobject 22
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_3
+	release
+	end
+
+QUEST_STATE_WizardsTower_ROUTE1_4:
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	setflag FLAG_TEMP_3
+	removeobject 22
+	removeobject 23
+	removeobject 32
+	clearflag FLAG_TEMP_4
+	addobject 5
+	release
+	end
+
+QUEST_STATE_WizardsTower_ROUTE1_5:
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	setflag FLAG_TEMP_3
+	clearflag FLAG_TEMP_4
+	addobject 5
+	removeobject 22
+	removeobject 23
+	removeobject 32
+	setobjectxyperm 5, 10, 12
+	setobjectxyperm 6, 10, 13
+	release
+	end
 
 
 TryMoveNpcsRoute1::
@@ -308,20 +400,34 @@ EvilChickenBattleScript::
 
 
 ErnestAndVeronica::
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq ErnestAndVeronica_1
+	namebox ErnestAndVeronica_Text_2
+	msgbox ErnestAndVeronica_Text_12
+	hidenamebox
+	closemessage
+	namebox ErnestAndVeronica_Text_0
+	msgbox ErnestAndVeronica_Text_13
+	hidenamebox
+	closemessage
+	release
+	end
+
+ErnestAndVeronica_1:
 	switch VAR_POKESCAPE_WIZARDS_TOWER_STATE
-	case 0, ErnestAndVeronica_2
-	case 1, ErnestAndVeronica_2
-	case 2, ErnestAndVeronica_2
-	case 3, ErnestAndVeronica_2
-	case 4, ErnestAndVeronica_2
-	case 5, ErnestAndVeronica_3
-	case 6, ErnestAndVeronica_3
-	case 7, ErnestAndVeronica_3
-	case 8, ErnestAndVeronica_4
-	case 9, ErnestAndVeronica_4
+	case 0, ErnestAndVeronica_5
+	case 1, ErnestAndVeronica_5
+	case 2, ErnestAndVeronica_5
+	case 3, ErnestAndVeronica_5
+	case 4, ErnestAndVeronica_5
+	case 5, ErnestAndVeronica_6
+	case 6, ErnestAndVeronica_6
+	case 7, ErnestAndVeronica_6
+	case 8, ErnestAndVeronica_7
+	case 9, ErnestAndVeronica_7
 	return
 
-ErnestAndVeronica_2:
+ErnestAndVeronica_5:
 	playmoncry SPECIES_TORCHIC, 0
 	namebox ErnestAndVeronica_Text_0
 	msgbox ErnestAndVeronica_Text_1
@@ -358,7 +464,7 @@ ErnestAndVeronica_2:
 	release
 	end
 
-ErnestAndVeronica_3:
+ErnestAndVeronica_6:
 	namebox ErnestAndVeronica_Text_0
 	msgbox ErnestAndVeronica_Text_8
 	hidenamebox
@@ -370,7 +476,7 @@ ErnestAndVeronica_3:
 	release
 	end
 
-ErnestAndVeronica_4:
+ErnestAndVeronica_7:
 	namebox ErnestAndVeronica_Text_2
 	msgbox ErnestAndVeronica_Text_10
 	hidenamebox
@@ -379,69 +485,6 @@ ErnestAndVeronica_4:
 	msgbox ErnestAndVeronica_Text_11
 	hidenamebox
 	closemessage
-	release
-	end
-
-
-WizardsTower_Route1_STATE::
-	switch VAR_POKESCAPE_WIZARDS_TOWER_STATE
-	case 0, WizardsTower_Route1_STATE_2
-	case 1, WizardsTower_Route1_STATE_2
-	case 2, WizardsTower_Route1_STATE_2
-	case 3, WizardsTower_Route1_STATE_2
-	case 4, WizardsTower_Route1_STATE_2
-	case 5, WizardsTower_Route1_STATE_3
-	case 6, WizardsTower_Route1_STATE_4
-	case 7, WizardsTower_Route1_STATE_4
-	case 8, WizardsTower_Route1_STATE_5
-	case 9, WizardsTower_Route1_STATE_5
-	return
-
-WizardsTower_Route1_STATE_2:
-	removeobject 22
-	removeobject 23
-	removeobject 5
-	setflag FLAG_TEMP_1
-	setflag FLAG_TEMP_2
-	setflag FLAG_TEMP_4
-	release
-	end
-
-WizardsTower_Route1_STATE_3:
-	clearflag FLAG_TEMP_2
-	clearflag FLAG_TEMP_4
-	addobject 23
-	addobject 5
-	removeobject 32
-	removeobject 22
-	setflag FLAG_TEMP_1
-	setflag FLAG_TEMP_3
-	release
-	end
-
-WizardsTower_Route1_STATE_4:
-	setflag FLAG_TEMP_1
-	setflag FLAG_TEMP_2
-	setflag FLAG_TEMP_3
-	removeobject 22
-	removeobject 23
-	removeobject 32
-	clearflag FLAG_TEMP_4
-	addobject 5
-	release
-	end
-
-WizardsTower_Route1_STATE_5:
-	setflag FLAG_TEMP_1
-	setflag FLAG_TEMP_2
-	setflag FLAG_TEMP_3
-	clearflag FLAG_TEMP_4
-	addobject 5
-	removeobject 22
-	removeobject 23
-	removeobject 32
-	setobjectxyperm 5, 10, 12
-	setobjectxyperm 6, 10, 13
 	release
 	end
 
@@ -945,6 +988,14 @@ ErnestAndVeronica_Text_10:
 ErnestAndVeronica_Text_11:
 	.string "Oh no!\p"
 	.string "I completely forgot!$"
+
+ErnestAndVeronica_Text_12:
+	.string "I think we are lost, go to that mannor\n"
+	.string "and ask for directions?$"
+
+ErnestAndVeronica_Text_13:
+	.string "But it is scary!\p"
+	.string "I don't want to go.$"
 
 HAM_EVENT_Route1_MAIN_1_Text_0:
 	.string "H.A.M. member$"

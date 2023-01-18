@@ -5,13 +5,76 @@ const OBJ_EVENT_ID_FISHERMAN = 23
 const OBJ_EVENT_ID_FARMER = 21
 const OBJ_EVENT_ID_BRIDGEMAN = 11
 
-mapscripts Lumbridge_MapScripts{
+mapscripts Lumbridge_MapScripts {
 
 	MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 1) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
-        goto(MoveNPCsAfterEvents_Lumbridge)
+        
+		if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    	{
+            call(MoveNPCsAfterEvents_Lumbridge)
+    	}
+		else
+		{
+			call(OPENWORLD_STATE_LUMBRIDGE)
+		}
+		
     }
 }
+
+
+
+
+script OPENWORLD_STATE_LUMBRIDGE {
+		setobjectxyperm(14, 41, 20)
+		setobjectmovementtype(14,MOVEMENT_TYPE_FACE_DOWN)
+		setobjectxyperm(OBJ_EVENT_ID_FISHERMAN, 38, 4)
+		setobjectmovementtype(OBJ_EVENT_ID_FISHERMAN,MOVEMENT_TYPE_WANDER_AROUND)
+		setobjectxyperm(OBJ_EVENT_ID_BANKERGF, 3, 3)
+		setobjectmovementtype(OBJ_EVENT_ID_BANKERGF,MOVEMENT_TYPE_FACE_LEFT)
+		setobjectxyperm(13, 2, 3)
+		setobjectmovementtype(13,MOVEMENT_TYPE_FACE_RIGHT)
+		setobjectxyperm(OBJ_EVENT_ID_FARMER, 33, 11)
+		setobjectmovementtype(OBJ_EVENT_ID_FARMER,MOVEMENT_TYPE_WANDER_AROUND)
+		setobjectxyperm(OBJ_EVENT_ID_BRIDGEMAN, 50, 21)
+		setobjectmovementtype(OBJ_EVENT_ID_BRIDGEMAN,MOVEMENT_TYPE_FACE_DOWN)
+		setobjectxyperm(12, 37, 33)
+		setobjectmovementtype(12,MOVEMENT_TYPE_FACE_DOWN)
+		setobjectxyperm(OBJ_EVENT_ID_FAYETH, 6, 12)
+		setobjectmovementtype(OBJ_EVENT_ID_FAYETH,MOVEMENT_TYPE_FACE_DOWN)
+		setobjectxyperm(OBJ_EVENT_ID_DONIE, 6, 13)
+		setobjectmovementtype(OBJ_EVENT_ID_DONIE,MOVEMENT_TYPE_FACE_UP)
+		return
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 script CUPHOLDER_NPC
 {
@@ -186,13 +249,15 @@ script Lumbridge_IMP
 //--EVENT---------------------------------------------------------------------------------------
 script Lumbridge_BANKER
 {
-	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
+	if((var(VAR_POKESCAPE_GAMEMODE_STATE) == 0 && var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 	lock
 	faceplayer
 	msgbox(format("I'm waiting for my BF to finish work."))
 	release
 	end
 	}
+	
+
 	lock
 	faceplayer
 	msgbox(format("A few years ago we were in a bidding war with a fisherman.\pHe wanted to put a fishing shop here instead of a bank.\pWe polled it to the community and we won by 75% of votes."))
@@ -208,7 +273,7 @@ movement MOVEMENT_LUMBRIDGE_BANKER_FEMALE{
 
 script Lumbridge_EVENT_NPC1
 {
-	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
+	if((var(VAR_POKESCAPE_GAMEMODE_STATE) == 0 && var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 	lock
 	faceplayer
 	msgbox(format("Woowee!\pSo this is Lumbridge Castle.\pI'm too afraid to walk through the gates."))
@@ -224,7 +289,7 @@ script Lumbridge_EVENT_NPC1
 
 script Lumbridge_EVENT_NPC2
 {
-	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
+	if((var(VAR_POKESCAPE_GAMEMODE_STATE) == 0 && var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 	lock
 	faceplayer
 	msgbox(format("I really want to meet this professor guy!"))
@@ -240,7 +305,7 @@ script Lumbridge_EVENT_NPC2
 
 script Lumbridge_EVENT_NPC3
 {
-	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
+	if((var(VAR_POKESCAPE_GAMEMODE_STATE) == 0 && var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 	lock
 	faceplayer
 	msgbox(format("I'm interested in the MvM Championships!"))
@@ -269,7 +334,7 @@ script NPC_LumbridgeBridge
 //Guardsman Pazel
 script Lumbridge_Guard_NORTH 
 {
-	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
+	if((var(VAR_POKESCAPE_GAMEMODE_STATE) == 0 && var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 		lock
 		faceplayer
 		namebox ("Pazel")
@@ -295,7 +360,7 @@ movement MOVEMENT_LUMBRIDGE_GUARD_NORTH{
 //Guardsman DeShawn
 script Lumbridge_Guard_EAST
 {
-	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
+	if((var(VAR_POKESCAPE_GAMEMODE_STATE) == 0 && var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 		lock
 		faceplayer
 		namebox ("DeShawn")
@@ -316,33 +381,46 @@ script Lumbridge_Guard_EAST
 //Guardsman Peale
 script Lumbridge_Guard_SOUTH
 {
-	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
-            case 0: 
-            case 1: 
-            case 2: 
-			case 3: 
-            case 4:
-				lock
-				faceplayer
-				namebox ("Peale")
-				msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't a strong adventurer.\pIf you could show me a badge from the Duke I will then allow you to pass."))
-				hidenamebox
-				release
-				end
-			case 5:
-				lock
-				faceplayer
-				namebox ("Peale")
-				msgbox(format("It's quite dangerous even with a monster to protect you.\pSo be careful."))
-				hidenamebox
-				release
-				end
+	if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    {
+		switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+				case 0: 
+				case 1: 
+				case 2: 
+				case 3: 
+				case 4:
+					lock
+					faceplayer
+					namebox ("Peale")
+					msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't a strong adventurer.\pIf you could show me a badge from the Duke I will then allow you to pass."))
+					hidenamebox
+					release
+					end
+				case 5:
+					lock
+					faceplayer
+					namebox ("Peale")
+					msgbox(format("It's quite dangerous even with a monster to protect you.\pSo be careful."))
+					hidenamebox
+					release
+					end
+		}
+	}
+	else
+	{
+		lock
+		faceplayer
+		namebox ("Peale")
+		msgbox(format("It's quite dangerous even with a monster to protect you.\pSo be careful."))
+		hidenamebox
+		release
+		end
 	}
 }
 
 //Guardsman Pazel
 script Lumbridge_Guard_NORTH_TRIGGER{
-	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
+	if((var(VAR_POKESCAPE_GAMEMODE_STATE) == 0 && var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 		lock
 		PlaySE(SE_PIN)
 		applymovement(13, LUMBRIDGE_GUARD_NORTH_TRIGGER_1)
@@ -373,7 +451,7 @@ movement LUMBRIDGE_GUARD_NORTH_TRIGGER_2{
 
 //Guardsman DeShawn
 script Lumbridge_Guard_EAST_TRIGGER{
-	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
+	if((var(VAR_POKESCAPE_GAMEMODE_STATE) == 0 && var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
 		lock
 		PlaySE(SE_PIN)
 		applymovement(14, LUMBRIDGE_GUARD_EAST_TRIGGER_1)
@@ -404,28 +482,35 @@ movement LUMBRIDGE_GUARD_EAST_TRIGGER_2{
 
 //Guardsman Peale
 script Lumbridge_Guard_SOUTH_TRIGGER{
-	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
-            case 0: 
-            case 1: 
-            case 2: 
-			case 3: 
-            case 4:
-				lock
-				PlaySE(SE_PIN)
-				applymovement(12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_1)
-				waitmovement(0)
-				namebox ("Peale")
-				msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't a strong adventurer.\pIf you could show me a badge from the Duke I will then allow you to pass."))
-				waitmessage 
-				hidenamebox
-				applymovement(OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_SOUTH_TRIGGER)
-				applymovement(12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_2)
-				waitmovement(0)
-				release
-				end
-			case 5:
-				release
-				end
+	if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    {
+		switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
+				case 0: 
+				case 1: 
+				case 2: 
+				case 3: 
+				case 4:
+					lock
+					PlaySE(SE_PIN)
+					applymovement(12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_1)
+					waitmovement(0)
+					namebox ("Peale")
+					msgbox(format("I'm sorry, but it's really dangerous out there for anyone who isn't a strong adventurer.\pIf you could show me a badge from the Duke I will then allow you to pass."))
+					waitmessage 
+					hidenamebox
+					applymovement(OBJ_EVENT_ID_PLAYER, LUMBRIDGE_PLAYER_SOUTH_TRIGGER)
+					applymovement(12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_2)
+					waitmovement(0)
+					release
+					end
+				case 5:
+					release
+					end
+		}
+	}
+	else
+	{
+		release
 	}
 }
 
@@ -446,11 +531,10 @@ movement LUMBRIDGE_GUARD_SOUTH_TRIGGER_2{
 
 
 
-script MoveNPCsAfterEvents_Lumbridge{
+script MoveNPCsAfterEvents_Lumbridge {
         switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
             case 0: 
-				release
-				end
+				return
             case 1: 
             case 2: 
 			case 3: 
@@ -505,8 +589,8 @@ script MoveNPCsAfterEvents_Lumbridge{
 
 				setobjectxyperm(OBJ_EVENT_ID_DONIE, 6, 13)
 				setobjectmovementtype(OBJ_EVENT_ID_DONIE,MOVEMENT_TYPE_FACE_UP)
-
             }
+		return
 }
         
 

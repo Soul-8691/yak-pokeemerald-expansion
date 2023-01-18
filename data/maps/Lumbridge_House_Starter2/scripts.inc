@@ -1,32 +1,43 @@
 Lumbridge_House_Starter2_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, Lumbridge_House_Starter2_MapScripts_MAP_SCRIPT_ON_LOAD
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Lumbridge_House_Starter2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
+Lumbridge_House_Starter2_MapScripts_MAP_SCRIPT_ON_LOAD:
+	checkgamemode
+	compare VAR_RESULT, 0
+	goto_if_eq Lumbridge_House_Starter2_MapScripts_MAP_SCRIPT_ON_LOAD_2
+Lumbridge_House_Starter2_MapScripts_MAP_SCRIPT_ON_LOAD_1:
+	compare VAR_RESULT, 1
+	goto_if_eq Lumbridge_House_Starter2_MapScripts_MAP_SCRIPT_ON_LOAD_4
+	return
+
+Lumbridge_House_Starter2_MapScripts_MAP_SCRIPT_ON_LOAD_2:
+	setvar VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto Lumbridge_House_Starter2_MapScripts_MAP_SCRIPT_ON_LOAD_1
+
+Lumbridge_House_Starter2_MapScripts_MAP_SCRIPT_ON_LOAD_4:
+	setvar VAR_POKESCAPE_GAMEMODE_STATE, 1
+	return
+
 Lumbridge_House_Starter2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-	map_script_2 VAR_TEMP_A, 0, GAMEMODE_CHECK_NEWGAME_ITEMS
+	map_script_2 VAR_TEMP_0, 0, GAMEMODE_CHECK_NEWGAME_ITEMS
 	.2byte 0
 
 
 GAMEMODE_CHECK_NEWGAME_ITEMS::
-	checkgamemode
-	compare VAR_RESULT, 1
-	goto_if_eq GAMEMODE_CHECK_NEWGAME_ITEMS_2
-	setvar VAR_TEMP_A, 1
-	release
-	end
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 1
+	goto_if_eq GAMEMODE_CHECK_NEWGAME_ITEMS_1
+	setvar VAR_TEMP_0, 1
+	return
 
-	setvar VAR_TEMP_A, 1
-	release
-	end
-
-GAMEMODE_CHECK_NEWGAME_ITEMS_2:
+GAMEMODE_CHECK_NEWGAME_ITEMS_1:
 	compare VAR_OPENWORLD_STATE, 0
-	goto_if_eq GAMEMODE_CHECK_NEWGAME_ITEMS_5
-	setvar VAR_TEMP_A, 1
-	release
-	end
+	goto_if_eq GAMEMODE_CHECK_NEWGAME_ITEMS_4
+	setvar VAR_TEMP_0, 1
+	return
 
-GAMEMODE_CHECK_NEWGAME_ITEMS_5:
+GAMEMODE_CHECK_NEWGAME_ITEMS_4:
 	lockall
 	msgbox GAMEMODE_CHECK_NEWGAME_ITEMS_Text_0
 	msgbox GAMEMODE_CHECK_NEWGAME_ITEMS_Text_1
@@ -65,6 +76,7 @@ GAMEMODE_CHECK_NEWGAME_ITEMS_5:
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_SYS_B_DASH
 	msgbox GAMEMODE_CHECK_NEWGAME_ITEMS_Text_6
+	setvar VAR_TEMP_0, 1
 	setvar VAR_OPENWORLD_STATE, 1
 	closemessage
 	special ChooseStarter

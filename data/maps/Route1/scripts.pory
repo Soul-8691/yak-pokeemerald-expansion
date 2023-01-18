@@ -1,16 +1,116 @@
+const OBJ_EVENT_ID_ERNEST = 5
+const OBJ_EVENT_ID_VERONICA = 6
+const OBJ_EVENT_ID_ERNEST_CHICKEN = 31
+const OBJ_EVENT_ID_HAM = 23
+const OBJ_EVENT_ID_ARIANE = 22
+const OBJ_EVENT_ID_FARMER = 4
+const OBJ_EVENT_ID_COW_1 = 12
+const OBJ_EVENT_ID_COW_2 = 13
+
+
 mapscripts Route1_MapScripts {
     MAP_SCRIPT_ON_LOAD {
-        goto(WizardsTower_Route1_STATE)
-        }
+        if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    	{
+            goto(QUEST_STATE_WizardsTower_ROUTE1)
+    	}
+    }
+
     MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 0) //0-Nothing, 1-Varrock, 2-Morytania, 3-Members.
-        call(TryMoveNpcsRoute1)
+
+        if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    	{
+            call(TryMoveNpcsRoute1)
+    	}
+		else
+		{
+			call(OPENWORLD_STATE_ROUTE1)
+		}
     }
-    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:Route1WarpCheck
+
+    //MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:Route1WarpCheck 
 } 
 
 
+script OPENWORLD_STATE_ROUTE1 {
+		setobjectxyperm(OBJ_EVENT_ID_FARMER, 42, 10)
+        setobjectmovementtype(OBJ_EVENT_ID_FARMER,MOVEMENT_TYPE_FACE_DOWN)
+        setobjectxyperm(OBJ_EVENT_ID_COW_1, 37, 12)
+        setobjectxyperm(OBJ_EVENT_ID_COW_2, 43, 12)
+        setobjectmovementtype(OBJ_EVENT_ID_COW_2,MOVEMENT_TYPE_FACE_DOWN)
+        setflag(FLAG_TEMP_1)
+        setflag(FLAG_TEMP_2)
+        setflag(FLAG_TEMP_3)
+        clearflag(FLAG_TEMP_4)
+        addobject(OBJ_EVENT_ID_ERNEST)
+        removeobject(OBJ_EVENT_ID_ARIANE)
+        removeobject(OBJ_EVENT_ID_HAM)
+        removeobject(OBJ_EVENT_ID_ERNEST_CHICKEN) 
+        setobjectxyperm(OBJ_EVENT_ID_ERNEST,10,12)
+        setobjectxyperm(OBJ_EVENT_ID_VERONICA,10,13)
+		return
+}
 
+
+script QUEST_STATE_WizardsTower_ROUTE1{
+        switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+            case 0: 
+            case 1: 
+            case 2: 
+			case 3: 
+            case 4:
+                //HIDE NPCS
+                removeobject(22) //ariane
+				removeobject(23) //HAM
+                removeobject(5) //ernest
+                setflag(FLAG_TEMP_1)
+				setflag(FLAG_TEMP_2)
+                setflag(FLAG_TEMP_4)
+                release
+                end
+            case 5:
+                //SHOW NPCs EVENT
+                clearflag(FLAG_TEMP_2)
+                clearflag(FLAG_TEMP_4)
+				addobject(23) //HAM
+                addobject(5) //ernest
+                removeobject(32) //ernest chicken
+                removeobject(22) //ariane
+                setflag(FLAG_TEMP_1)
+                setflag(FLAG_TEMP_3)
+                release
+                end
+			case 6: 
+            case 7: 
+                //HIDE NPCs
+                setflag(FLAG_TEMP_1)
+				setflag(FLAG_TEMP_2)
+                setflag(FLAG_TEMP_3)
+                removeobject(22)
+				removeobject(23)
+                removeobject(32) //ernest chicken
+                clearflag(FLAG_TEMP_4) //ernest
+                addobject(5) //ernest
+                release
+                end
+            case 8: 
+            case 9: 
+                //HIDE NPCs
+                setflag(FLAG_TEMP_1)
+				setflag(FLAG_TEMP_2)
+                setflag(FLAG_TEMP_3)
+                clearflag(FLAG_TEMP_4)
+                addobject(5) //ernest
+                removeobject(22)
+				removeobject(23)
+                removeobject(32) //ernest chicken
+                setobjectxyperm(5,10,12)
+                setobjectxyperm(6,10,13)
+                release
+                end
+            }
+    }
 
 
 
@@ -32,6 +132,10 @@ script TryMoveNpcsRoute1{
     }
     return
 }
+
+
+
+
 
 script Route1WarpCheck{
     map_script_2 (VAR_TEMP_1, 0, TryMoveNpcsRoute1)
@@ -379,78 +483,94 @@ script EvilChickenBattleScript{
 
 //ADD OPTIONAL SCRIPT LATER SHOWING ERNEST AN ERNEST CHICKEN. HIS SON!
 script ErnestAndVeronica {
-    switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
-            case 0: 
-            case 1: 
-            case 2: 
-			case 3: 
-            case 4:
-                
-                playmoncry(SPECIES_TORCHIC, 0)
-                namebox("Ernest")
-                msgbox(format("Bwak bwak bwwwaaaakk!"))
-                waitmoncry
-                hidenamebox
-                closemessage
-                
-                applymovement(6, HAM_Movement7_6)
-                namebox("Veronica")
-                msgbox(format("What do you mean a scientist turned you into a chicken!?\pYou were meant to get directions!"))
-                hidenamebox
-                closemessage
-                waitmovement(0)
-                
-                playmoncry(SPECIES_TORCHIC, 0)
-                namebox("Ernest")
-                msgbox(format("Bwakbawk."))
-                waitmoncry
-                playmoncry(SPECIES_TORCHIC, 0)
-                msgbox(format("Bwak bwakbwak!"))
-                waitmoncry
-                hidenamebox
-                closemessage
-                
-                applymovement(6, HAM_Movement7_6)
-                namebox("Veronica")
-                msgbox(format("Well go get him to change you back!\pI don't want to be engaged to a chicken!\pThat's just fowl..."))
-                hidenamebox
-                closemessage
-                waitmovement(0)
-                
-                playmoncry(SPECIES_COMBUSKEN, 0)
-                namebox("Ernest")
-                msgbox(format("Bwak..."))
-                waitmoncry
-                hidenamebox
-                closemessage
-                
-                release
-                end
-            case 5:
-            case 6: 
-            case 7: 
-                namebox("Ernest")
-                msgbox(format("Professor Oddenstein made me human again!"))
-                hidenamebox
-                closemessage
-                namebox("Veronica")
-                msgbox(format("I think I liked you better when you were a chicken."))
-                hidenamebox
-                closemessage
-                release
-                end
-            case 8: 
-            case 9: 
-                namebox("Veronica")
-                msgbox(format("Did you ever end up getting some directions?"))
-                hidenamebox
-                closemessage
-                namebox("Ernest")
-                msgbox(format("Oh no!\pI completely forgot!"))
-                hidenamebox
-                closemessage
-                release
-                end
+    if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    {
+        switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+                case 0: 
+                case 1: 
+                case 2: 
+                case 3: 
+                case 4:
+                    
+                    playmoncry(SPECIES_TORCHIC, 0)
+                    namebox("Ernest")
+                    msgbox(format("Bwak bwak bwwwaaaakk!"))
+                    waitmoncry
+                    hidenamebox
+                    closemessage
+                    
+                    applymovement(6, HAM_Movement7_6)
+                    namebox("Veronica")
+                    msgbox(format("What do you mean a scientist turned you into a chicken!?\pYou were meant to get directions!"))
+                    hidenamebox
+                    closemessage
+                    waitmovement(0)
+                    
+                    playmoncry(SPECIES_TORCHIC, 0)
+                    namebox("Ernest")
+                    msgbox(format("Bwakbawk."))
+                    waitmoncry
+                    playmoncry(SPECIES_TORCHIC, 0)
+                    msgbox(format("Bwak bwakbwak!"))
+                    waitmoncry
+                    hidenamebox
+                    closemessage
+                    
+                    applymovement(6, HAM_Movement7_6)
+                    namebox("Veronica")
+                    msgbox(format("Well go get him to change you back!\pI don't want to be engaged to a chicken!\pThat's just fowl..."))
+                    hidenamebox
+                    closemessage
+                    waitmovement(0)
+                    
+                    playmoncry(SPECIES_COMBUSKEN, 0)
+                    namebox("Ernest")
+                    msgbox(format("Bwak..."))
+                    waitmoncry
+                    hidenamebox
+                    closemessage
+                    
+                    release
+                    end
+                case 5:
+                case 6: 
+                case 7: 
+                    namebox("Ernest")
+                    msgbox(format("Professor Oddenstein made me human again!"))
+                    hidenamebox
+                    closemessage
+                    namebox("Veronica")
+                    msgbox(format("I think I liked you better when you were a chicken."))
+                    hidenamebox
+                    closemessage
+                    release
+                    end
+                case 8: 
+                case 9: 
+                    namebox("Veronica")
+                    msgbox(format("Did you ever end up getting some directions?"))
+                    hidenamebox
+                    closemessage
+                    namebox("Ernest")
+                    msgbox(format("Oh no!\pI completely forgot!"))
+                    hidenamebox
+                    closemessage
+                    release
+                    end
+        }
+    }
+    else
+    {
+        namebox("Veronica")
+        msgbox(format("I think we are lost, go to that mannor and ask for directions?"))
+        hidenamebox
+        closemessage
+        namebox("Ernest")
+        msgbox(format("But it is scary!\pI don't want to go."))
+        hidenamebox
+        closemessage
+        release
+        end
     }
 }
 
@@ -466,64 +586,7 @@ script ErnestAndVeronica {
 
 
 
-script WizardsTower_Route1_STATE{
-        switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
-            case 0: 
-            case 1: 
-            case 2: 
-			case 3: 
-            case 4:
-                //HIDE NPCS
-                removeobject(22) //ariane
-				removeobject(23) //HAM
-                removeobject(5) //ernest
-                setflag(FLAG_TEMP_1)
-				setflag(FLAG_TEMP_2)
-                setflag(FLAG_TEMP_4)
-                release
-                end
-            case 5:
-                //SHOW NPCs EVENT
-                clearflag(FLAG_TEMP_2)
-                clearflag(FLAG_TEMP_4)
-				addobject(23) //HAM
-                addobject(5) //ernest
-                removeobject(32) //ernest chicken
-                removeobject(22) //ariane
-                setflag(FLAG_TEMP_1)
-                setflag(FLAG_TEMP_3)
-                release
-                end
-			case 6: 
-            case 7: 
-                //HIDE NPCs
-                setflag(FLAG_TEMP_1)
-				setflag(FLAG_TEMP_2)
-                setflag(FLAG_TEMP_3)
-                removeobject(22)
-				removeobject(23)
-                removeobject(32) //ernest chicken
-                clearflag(FLAG_TEMP_4) //ernest
-                addobject(5) //ernest
-                release
-                end
-            case 8: 
-            case 9: 
-                //HIDE NPCs
-                setflag(FLAG_TEMP_1)
-				setflag(FLAG_TEMP_2)
-                setflag(FLAG_TEMP_3)
-                clearflag(FLAG_TEMP_4)
-                addobject(5) //ernest
-                removeobject(22)
-				removeobject(23)
-                removeobject(32) //ernest chicken
-                setobjectxyperm(5,10,12)
-                setobjectxyperm(6,10,13)
-                release
-                end
-            }
-    }
+
 
 
 

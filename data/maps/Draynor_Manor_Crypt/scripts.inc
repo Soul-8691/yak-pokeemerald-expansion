@@ -5,16 +5,35 @@ Draynor_Manor_Crypt_MapScripts::
 	.byte 0
 
 Draynor_Manor_Crypt_MapScripts_MAP_SCRIPT_ON_LOAD:
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Draynor_Manor_Crypt_MapScripts_MAP_SCRIPT_ON_LOAD_1
+	return
+
+Draynor_Manor_Crypt_MapScripts_MAP_SCRIPT_ON_LOAD_1:
 	goto WizardsTower_DraynorManor_Crypt_STATE
 	return
 
 Draynor_Manor_Crypt_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 1
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 1
+	goto_if_eq Draynor_Manor_Crypt_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	return
+
+Draynor_Manor_Crypt_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+	call OPENWORLD_STATE_DRAYNORMANOR_CRYPT
 	return
 
 Draynor_Manor_Crypt_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-	map_script_2 VAR_POKESCAPE_WIZARDS_TOWER_STATE, 7, EVENT_HAM_DRAYNORMANOR_CRYPT
+	map_script_2 VAR_TEMP_0, 0, EVENT_HAM_DRAYNORMANOR_CRYPT
 	.2byte 0
+
+
+OPENWORLD_STATE_DRAYNORMANOR_CRYPT::
+	removeobject 2
+	removeobject 1
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	return
 
 
 WizardsTower_DraynorManor_Crypt_STATE::
@@ -45,6 +64,12 @@ WizardsTower_DraynorManor_Crypt_STATE_3:
 
 
 EVENT_HAM_DRAYNORMANOR_CRYPT::
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq EVENT_HAM_DRAYNORMANOR_CRYPT_1
+	setvar VAR_TEMP_0, 1
+	return
+
+EVENT_HAM_DRAYNORMANOR_CRYPT_1:
 	lock
 	applymovement OBJ_EVENT_ID_PLAYER, MOVEMENT_DraynorManorCrypt_PLAYER_1
 	waitmovement 0
@@ -110,6 +135,7 @@ EVENT_HAM_DRAYNORMANOR_CRYPT::
 	delay 16
 	fadescreen FADE_FROM_BLACK
 	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 8
+	setvar VAR_TEMP_0, 1
 	release
 	end
 

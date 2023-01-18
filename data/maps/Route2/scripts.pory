@@ -1,18 +1,37 @@
 mapscripts Route2_MapScripts{
     MAP_SCRIPT_ON_LOAD {
-        goto(WizardsTower_Route2_STATE)
-        }
+        if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    	{
+            goto(QUEST_STATE_WizardsTower_ROUTE2)
+    	}
+    }
     MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 1) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
+        if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    	{
+            
+    	}
+		else
+		{
+			call(OPENWORLD_STATE_ROUTE2)
+		}
     }
-    
+}
+
+
+script OPENWORLD_STATE_ROUTE2 {
+        setflag(FLAG_TEMP_1)
+        setflag(FLAG_TEMP_2) //HIDE MUGGER
+        setvar(VAR_TEMP_2, 1) //HIDE MUGGER TRIGGER
+        removeobject(1)
+        removeobject(2)
+        removeobject(3)
+		return
 }
 
 
 
-
-
-script WizardsTower_Route2_STATE{
+script QUEST_STATE_WizardsTower_ROUTE2{
         switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
             case 0: 
             case 1: 

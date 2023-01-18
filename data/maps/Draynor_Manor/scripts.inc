@@ -65,6 +65,13 @@ WizardsTower_DraynorManor_STATE_6:
 
 
 BLOCK_DraynorManor_Trees::
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq BLOCK_DraynorManor_Trees_1
+	setvar VAR_TEMP_B, 1
+	release
+	end
+
+BLOCK_DraynorManor_Trees_1:
 	lock
 	msgbox BLOCK_DraynorManor_Trees_Text_0
 	closemessage
@@ -73,6 +80,7 @@ BLOCK_DraynorManor_Trees::
 	waitmovement 0
 	msgbox BLOCK_DraynorManor_Trees_Text_1
 	closemessage
+	setvar VAR_TEMP_B, 1
 	release
 	end
 

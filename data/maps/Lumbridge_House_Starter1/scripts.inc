@@ -3,16 +3,24 @@ Lumbridge_House_Starter1_MapScripts::
 	.byte 0
 
 Lumbridge_House_Starter1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-	map_script_2 VAR_POKESCAPE_STARTER_HOUSE_STATE, 0, Explorer_Jack_1
+	map_script_2 VAR_TEMP_0, 0, Explorer_Jack_1
 	.2byte 0
 
 
 Explorer_Jack_1::
-	goto_if_unset FLAG_SET_WALL_CLOCK, Explorer_Jack_1_1
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Explorer_Jack_1_1
+	setvar VAR_TEMP_0, 1
+	release
+	return
+
+Explorer_Jack_1_1:
+	goto_if_unset FLAG_SET_WALL_CLOCK, Explorer_Jack_1_4
+	setvar VAR_TEMP_0, 1
 	release
 	end
 
-Explorer_Jack_1_1:
+Explorer_Jack_1_4:
 	lockall
 	setvar VAR_POKESCAPE_STARTER_HOUSE_STATE, 1
 	playse SE_PIN
@@ -22,6 +30,7 @@ Explorer_Jack_1_1:
 	msgbox Explorer_Jack_1_Text_1
 	goto SetClock
 	hidenamebox
+	setvar VAR_TEMP_0, 1
 	release
 	end
 
@@ -85,15 +94,24 @@ Movement_Explorer_Jack_2:
 Explorer_Jack_3::
 	lock
 	faceplayer
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
 	goto_if_eq Explorer_Jack_3_1
+	namebox Explorer_Jack_1_Text_0
+	msgbox Explorer_Jack_3_Text_2
+	hidenamebox
+	release
+	end
+
+Explorer_Jack_3_1:
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Explorer_Jack_3_4
 	namebox Explorer_Jack_1_Text_0
 	msgbox Explorer_Jack_3_Text_1
 	hidenamebox
 	release
 	end
 
-Explorer_Jack_3_1:
+Explorer_Jack_3_4:
 	namebox Explorer_Jack_1_Text_0
 	msgbox Explorer_Jack_3_Text_0
 	hidenamebox
@@ -325,3 +343,9 @@ Explorer_Jack_3_Text_1:
 	.string "you've been invited to participate in\l"
 	.string "the MvM Championships?!\p"
 	.string "How Lucky!$"
+
+Explorer_Jack_3_Text_2:
+	.string "Lumbridge Castle is where this towns\n"
+	.string "MvM Championships battle is held.\p"
+	.string "The current Leader of our town is Duke\n"
+	.string "Horacio.$"

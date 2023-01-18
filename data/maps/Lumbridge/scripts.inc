@@ -4,7 +4,35 @@ Lumbridge_MapScripts::
 
 Lumbridge_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 1
-	goto MoveNPCsAfterEvents_Lumbridge
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	call OPENWORLD_STATE_LUMBRIDGE
+	return
+
+Lumbridge_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+	call MoveNPCsAfterEvents_Lumbridge
+	return
+
+
+OPENWORLD_STATE_LUMBRIDGE::
+	setobjectxyperm 14, 41, 20
+	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 23, 38, 4
+	setobjectmovementtype 23, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 3, 3, 3
+	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm 13, 2, 3
+	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm 21, 33, 11
+	setobjectmovementtype 21, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 11, 50, 21
+	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 12, 37, 33
+	setobjectmovementtype 12, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 1, 6, 12
+	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 2, 6, 13
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
 	return
 
 
@@ -160,8 +188,9 @@ Lumbridge_IMP::
 
 
 Lumbridge_BANKER::
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
-	goto_if_eq Lumbridge_BANKER_2
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_BANKER_3
+Lumbridge_BANKER_1:
 	lock
 	faceplayer
 	msgbox Lumbridge_BANKER_Text_1
@@ -177,14 +206,20 @@ Lumbridge_BANKER_2:
 	release
 	end
 
+Lumbridge_BANKER_3:
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_BANKER_2
+	goto Lumbridge_BANKER_1
+
 
 MOVEMENT_LUMBRIDGE_BANKER_FEMALE:
 	face_left
 	step_end
 
 Lumbridge_EVENT_NPC1::
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
-	goto_if_eq Lumbridge_EVENT_NPC1_2
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_EVENT_NPC1_3
+Lumbridge_EVENT_NPC1_1:
 	lock
 	faceplayer
 	msgbox Lumbridge_EVENT_NPC1_Text_1
@@ -198,10 +233,16 @@ Lumbridge_EVENT_NPC1_2:
 	release
 	end
 
+Lumbridge_EVENT_NPC1_3:
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_EVENT_NPC1_2
+	goto Lumbridge_EVENT_NPC1_1
+
 
 Lumbridge_EVENT_NPC2::
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
-	goto_if_eq Lumbridge_EVENT_NPC2_2
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_EVENT_NPC2_3
+Lumbridge_EVENT_NPC2_1:
 	lock
 	faceplayer
 	msgbox Lumbridge_EVENT_NPC2_Text_1
@@ -215,10 +256,16 @@ Lumbridge_EVENT_NPC2_2:
 	release
 	end
 
+Lumbridge_EVENT_NPC2_3:
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_EVENT_NPC2_2
+	goto Lumbridge_EVENT_NPC2_1
+
 
 Lumbridge_EVENT_NPC3::
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
-	goto_if_eq Lumbridge_EVENT_NPC3_2
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_EVENT_NPC3_3
+Lumbridge_EVENT_NPC3_1:
 	lock
 	faceplayer
 	msgbox Lumbridge_EVENT_NPC3_Text_1
@@ -232,6 +279,11 @@ Lumbridge_EVENT_NPC3_2:
 	release
 	end
 
+Lumbridge_EVENT_NPC3_3:
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_EVENT_NPC3_2
+	goto Lumbridge_EVENT_NPC3_1
+
 
 NPC_LumbridgeBridge::
 	lock
@@ -242,8 +294,9 @@ NPC_LumbridgeBridge::
 
 
 Lumbridge_Guard_NORTH::
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
-	goto_if_eq Lumbridge_Guard_NORTH_2
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_Guard_NORTH_3
+Lumbridge_Guard_NORTH_1:
 	lock
 	faceplayer
 	namebox Lumbridge_Guard_NORTH_Text_0
@@ -263,14 +316,20 @@ Lumbridge_Guard_NORTH_2:
 	release
 	end
 
+Lumbridge_Guard_NORTH_3:
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_Guard_NORTH_2
+	goto Lumbridge_Guard_NORTH_1
+
 
 MOVEMENT_LUMBRIDGE_GUARD_NORTH:
 	face_right
 	step_end
 
 Lumbridge_Guard_EAST::
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
-	goto_if_eq Lumbridge_Guard_EAST_2
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_Guard_EAST_3
+Lumbridge_Guard_EAST_1:
 	lock
 	faceplayer
 	namebox Lumbridge_Guard_EAST_Text_0
@@ -288,18 +347,34 @@ Lumbridge_Guard_EAST_2:
 	release
 	end
 
+Lumbridge_Guard_EAST_3:
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_Guard_EAST_2
+	goto Lumbridge_Guard_EAST_1
+
 
 Lumbridge_Guard_SOUTH::
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_Guard_SOUTH_1
+	lock
+	faceplayer
+	namebox Lumbridge_Guard_SOUTH_Text_0
+	msgbox Lumbridge_Guard_SOUTH_Text_2
+	hidenamebox
+	release
+	end
+
+Lumbridge_Guard_SOUTH_1:
 	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
-	case 0, Lumbridge_Guard_SOUTH_2
-	case 1, Lumbridge_Guard_SOUTH_2
-	case 2, Lumbridge_Guard_SOUTH_2
-	case 3, Lumbridge_Guard_SOUTH_2
-	case 4, Lumbridge_Guard_SOUTH_2
-	case 5, Lumbridge_Guard_SOUTH_3
+	case 0, Lumbridge_Guard_SOUTH_5
+	case 1, Lumbridge_Guard_SOUTH_5
+	case 2, Lumbridge_Guard_SOUTH_5
+	case 3, Lumbridge_Guard_SOUTH_5
+	case 4, Lumbridge_Guard_SOUTH_5
+	case 5, Lumbridge_Guard_SOUTH_6
 	return
 
-Lumbridge_Guard_SOUTH_2:
+Lumbridge_Guard_SOUTH_5:
 	lock
 	faceplayer
 	namebox Lumbridge_Guard_SOUTH_Text_0
@@ -308,7 +383,7 @@ Lumbridge_Guard_SOUTH_2:
 	release
 	end
 
-Lumbridge_Guard_SOUTH_3:
+Lumbridge_Guard_SOUTH_6:
 	lock
 	faceplayer
 	namebox Lumbridge_Guard_SOUTH_Text_0
@@ -319,8 +394,9 @@ Lumbridge_Guard_SOUTH_3:
 
 
 Lumbridge_Guard_NORTH_TRIGGER::
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
-	goto_if_eq Lumbridge_Guard_NORTH_TRIGGER_2
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_Guard_NORTH_TRIGGER_3
+Lumbridge_Guard_NORTH_TRIGGER_1:
 	release
 	end
 
@@ -339,6 +415,11 @@ Lumbridge_Guard_NORTH_TRIGGER_2:
 	release
 	end
 
+Lumbridge_Guard_NORTH_TRIGGER_3:
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_Guard_NORTH_TRIGGER_2
+	goto Lumbridge_Guard_NORTH_TRIGGER_1
+
 
 LUMBRIDGE_GUARD_NORTH_TRIGGER_1:
 	emote_exclamation_mark
@@ -354,8 +435,9 @@ LUMBRIDGE_GUARD_NORTH_TRIGGER_2:
 	step_end
 
 Lumbridge_Guard_EAST_TRIGGER::
-	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
-	goto_if_eq Lumbridge_Guard_EAST_TRIGGER_2
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_Guard_EAST_TRIGGER_3
+Lumbridge_Guard_EAST_TRIGGER_1:
 	release
 	end
 
@@ -374,6 +456,11 @@ Lumbridge_Guard_EAST_TRIGGER_2:
 	release
 	end
 
+Lumbridge_Guard_EAST_TRIGGER_3:
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_Guard_EAST_TRIGGER_2
+	goto Lumbridge_Guard_EAST_TRIGGER_1
+
 
 LUMBRIDGE_GUARD_EAST_TRIGGER_1:
 	emote_exclamation_mark
@@ -389,16 +476,22 @@ LUMBRIDGE_GUARD_EAST_TRIGGER_2:
 	step_end
 
 Lumbridge_Guard_SOUTH_TRIGGER::
-	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
-	case 0, Lumbridge_Guard_SOUTH_TRIGGER_2
-	case 1, Lumbridge_Guard_SOUTH_TRIGGER_2
-	case 2, Lumbridge_Guard_SOUTH_TRIGGER_2
-	case 3, Lumbridge_Guard_SOUTH_TRIGGER_2
-	case 4, Lumbridge_Guard_SOUTH_TRIGGER_2
-	case 5, Lumbridge_Guard_SOUTH_TRIGGER_3
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_Guard_SOUTH_TRIGGER_1
+	release
 	return
 
-Lumbridge_Guard_SOUTH_TRIGGER_2:
+Lumbridge_Guard_SOUTH_TRIGGER_1:
+	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
+	case 0, Lumbridge_Guard_SOUTH_TRIGGER_5
+	case 1, Lumbridge_Guard_SOUTH_TRIGGER_5
+	case 2, Lumbridge_Guard_SOUTH_TRIGGER_5
+	case 3, Lumbridge_Guard_SOUTH_TRIGGER_5
+	case 4, Lumbridge_Guard_SOUTH_TRIGGER_5
+	case 5, Lumbridge_Guard_SOUTH_TRIGGER_6
+	return
+
+Lumbridge_Guard_SOUTH_TRIGGER_5:
 	lock
 	PlaySE SE_PIN
 	applymovement 12, LUMBRIDGE_GUARD_SOUTH_TRIGGER_1
@@ -413,7 +506,7 @@ Lumbridge_Guard_SOUTH_TRIGGER_2:
 	release
 	end
 
-Lumbridge_Guard_SOUTH_TRIGGER_3:
+Lumbridge_Guard_SOUTH_TRIGGER_6:
 	release
 	end
 
@@ -433,19 +526,19 @@ LUMBRIDGE_GUARD_SOUTH_TRIGGER_2:
 
 MoveNPCsAfterEvents_Lumbridge::
 	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
-	case 0, MoveNPCsAfterEvents_Lumbridge_2
-	case 1, MoveNPCsAfterEvents_Lumbridge_3
-	case 2, MoveNPCsAfterEvents_Lumbridge_3
-	case 3, MoveNPCsAfterEvents_Lumbridge_3
-	case 4, MoveNPCsAfterEvents_Lumbridge_3
-	case 5, MoveNPCsAfterEvents_Lumbridge_4
+	case 0, MoveNPCsAfterEvents_Lumbridge_3
+	case 1, MoveNPCsAfterEvents_Lumbridge_4
+	case 2, MoveNPCsAfterEvents_Lumbridge_4
+	case 3, MoveNPCsAfterEvents_Lumbridge_4
+	case 4, MoveNPCsAfterEvents_Lumbridge_4
+	case 5, MoveNPCsAfterEvents_Lumbridge_5
+MoveNPCsAfterEvents_Lumbridge_1:
 	return
 
-MoveNPCsAfterEvents_Lumbridge_2:
-	release
-	end
-
 MoveNPCsAfterEvents_Lumbridge_3:
+	return
+
+MoveNPCsAfterEvents_Lumbridge_4:
 	setobjectxyperm 14, 41, 20
 	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 23, 38, 4
@@ -462,9 +555,9 @@ MoveNPCsAfterEvents_Lumbridge_3:
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 2, 6, 13
 	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
-	return
+	goto MoveNPCsAfterEvents_Lumbridge_1
 
-MoveNPCsAfterEvents_Lumbridge_4:
+MoveNPCsAfterEvents_Lumbridge_5:
 	setobjectxyperm 14, 41, 20
 	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 23, 38, 4
@@ -483,7 +576,7 @@ MoveNPCsAfterEvents_Lumbridge_4:
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 2, 6, 13
 	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
-	return
+	goto MoveNPCsAfterEvents_Lumbridge_1
 
 
 Lumbridge_House_NPC1::

@@ -1,79 +1,87 @@
 mapscripts Lumbridge_House_Starter2_MapScripts {
-    MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_TEMP_A, 0: GAMEMODE_CHECK_NEWGAME_ITEMS
+
+    MAP_SCRIPT_ON_LOAD 
+    {
+        checkgamemode
+        if (var(VAR_RESULT) == 0)
+        {
+            setvar(VAR_POKESCAPE_GAMEMODE_STATE, 0) //SETS STORY MODE.
+        }
+        if (var(VAR_RESULT) == 1)
+        {
+            setvar(VAR_POKESCAPE_GAMEMODE_STATE, 1) //SETS OPEN WORLD MODE.
+        }
+    }
+
+    MAP_SCRIPT_ON_FRAME_TABLE 
+    [
+        VAR_TEMP_0, 0: GAMEMODE_CHECK_NEWGAME_ITEMS
     ]
 }
 
 
 script GAMEMODE_CHECK_NEWGAME_ITEMS
 {
-    checkgamemode
-        if (var(VAR_RESULT) == 1) //if gamemode is OPEN WORLD
+    if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 1) //if OPENWORLD
+    {
+        if (var(VAR_OPENWORLD_STATE) == 0) //if beginning items HAVE NOT been recieved.
         {
-            if (var(VAR_OPENWORLD_STATE) == 0) //if beginning items HAVE NOT been recieved.
-            {
-                lockall
-                msgbox(format("Welcome to PokeScape OPEN WORLD mode."))
-                msgbox(format("Please set the time."))
-                closemessage
-                special (StartWallClock)
-                waitstate
-                msgbox(format("It seems that Prof. Normal Tree has left you a parcel."))
-                msgbox(format("Dear {PLAYER}, I hope these will be of great use to you on your adventure.\l- Prof. Normal Tree."))
-                playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("Obtained the BESTIARY."))
-                waitfanfare
-                setflag (FLAG_SYS_POKEDEX_GET)
-                setflag (FLAG_SYS_NATIONAL_DEX)
-                special (EnableNationalPokedex)
-                playfanfare(MUS_OBTAIN_ITEM)
-                msgbox(format("Obtained a load of useful items."))
-                waitfanfare
-                additem (ITEM_NORMAL_POUCH, 10)
-                additem (ITEM_MAP)
-                additem (ITEM_ITEMFINDER)
-                additem (ITEM_SMALL_NET)
-                additem (ITEM_BIG_NET)
-                additem (ITEM_DRAGON_NET)
-                additem (ITEM_TERRORBIRD_POUCH)
-                additem (ITEM_YAK_POUCH)
-                additem (ITEM_PICKAXE)
-                additem (ITEM_BOAT)
-                additem (ITEM_AXE)
-                additem (ITEM_STRENGTHITEM)
-                additem (ITEM_DIVEITEM)
-                additem (ITEM_SPADE)
-                additem (ITEM_FLYITEM)
-                additem (ITEM_LANTERN)
-                additem (ITEM_WATERFALLITEM)
-                setflag (FLAG_SYS_POKEMON_GET)
-                setflag (FLAG_RECEIVED_RUNNING_SHOES)
-                setflag (FLAG_SYS_B_DASH)
-                msgbox(format("Select a starting Monster.")) 
-                
-                setvar(VAR_OPENWORLD_STATE, 1)
-                closemessage
-                special (ChooseStarter)
-                waitstate
-                release
-                return
-            }
-            else //if beginning items HAVE been recieved.
-            {
-            setvar(VAR_TEMP_A, 1)
+            lockall
+            //addvar(VAR_LEVEL_SCALING_STATE, 1) //TEMP
+            msgbox(format("Welcome to PokeScape OPEN WORLD mode."))
+            msgbox(format("Please set the time."))
+            closemessage
+            special (StartWallClock)
+            waitstate
+            msgbox(format("It seems that Prof. Normal Tree has left you a parcel."))
+            msgbox(format("Dear {PLAYER}, I hope these will be of great use to you on your adventure.\l- Prof. Normal Tree."))
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox(format("Obtained the BESTIARY."))
+            waitfanfare
+            setflag (FLAG_SYS_POKEDEX_GET)
+            setflag (FLAG_SYS_NATIONAL_DEX)
+            special (EnableNationalPokedex)
+            playfanfare(MUS_OBTAIN_ITEM)
+            msgbox(format("Obtained a load of useful items."))
+            waitfanfare
+            additem (ITEM_NORMAL_POUCH, 10)
+            additem (ITEM_MAP)
+            additem (ITEM_ITEMFINDER)
+            additem (ITEM_SMALL_NET)
+            additem (ITEM_BIG_NET)
+            additem (ITEM_DRAGON_NET)
+            additem (ITEM_TERRORBIRD_POUCH)
+            additem (ITEM_YAK_POUCH)
+            additem (ITEM_PICKAXE)
+            additem (ITEM_BOAT)
+            additem (ITEM_AXE)
+            additem (ITEM_STRENGTHITEM)
+            additem (ITEM_DIVEITEM)
+            additem (ITEM_SPADE)
+            additem (ITEM_FLYITEM)
+            additem (ITEM_LANTERN)
+            additem (ITEM_WATERFALLITEM)
+            setflag (FLAG_SYS_POKEMON_GET)
+            setflag (FLAG_RECEIVED_RUNNING_SHOES)
+            setflag (FLAG_SYS_B_DASH)
+            msgbox(format("Select a starting Monster.")) 
+            setvar(VAR_TEMP_0, 1)
+            setvar(VAR_OPENWORLD_STATE, 1)
+            closemessage
+            special (ChooseStarter)
+            waitstate
             release
-            end 
-            }
-		}
-        else //if GAMEMODE is STORY MODE
-        {
-            setvar(VAR_TEMP_A, 1)
-            release
-            end 
         }
-    setvar(VAR_TEMP_A, 1)
-    release
-    end
+        else
+        {
+        setvar(VAR_TEMP_0, 1) 
+        }
+    }
+    else
+    {
+        setvar(VAR_TEMP_0, 1) 
+    }
+    
 }
 
 

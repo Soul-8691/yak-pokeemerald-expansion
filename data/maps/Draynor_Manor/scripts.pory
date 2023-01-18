@@ -80,6 +80,8 @@ script WizardsTower_DraynorManor_STATE{
 
 script BLOCK_DraynorManor_Trees
 {
+	if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    {
         lock
 		msgbox(format("As you get close to the Manor some trees swipe at you!"))
 		closemessage
@@ -88,8 +90,16 @@ script BLOCK_DraynorManor_Trees
         waitmovement(0)
 		msgbox(format("The trees are not letting you pass."))
 		closemessage
+		setvar(VAR_TEMP_B, 1)
         release
         end
+	}
+	else
+	{
+		setvar(VAR_TEMP_B, 1)
+		release
+		end
+	}
 }
 
 

@@ -4,50 +4,71 @@ Route2_MapScripts::
 	.byte 0
 
 Route2_MapScripts_MAP_SCRIPT_ON_LOAD:
-	goto WizardsTower_Route2_STATE
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Route2_MapScripts_MAP_SCRIPT_ON_LOAD_1
+	return
+
+Route2_MapScripts_MAP_SCRIPT_ON_LOAD_1:
+	goto QUEST_STATE_WizardsTower_ROUTE2
 	return
 
 Route2_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 1
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Route2_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	call OPENWORLD_STATE_ROUTE2
+	return
+
+Route2_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 	return
 
 
-WizardsTower_Route2_STATE::
+OPENWORLD_STATE_ROUTE2::
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	setvar VAR_TEMP_2, 1
+	removeobject 1
+	removeobject 2
+	removeobject 3
+	return
+
+
+QUEST_STATE_WizardsTower_ROUTE2::
 	switch VAR_POKESCAPE_WIZARDS_TOWER_STATE
-	case 0, WizardsTower_Route2_STATE_2
-	case 1, WizardsTower_Route2_STATE_2
-	case 2, WizardsTower_Route2_STATE_2
-	case 3, WizardsTower_Route2_STATE_3
-	case 4, WizardsTower_Route2_STATE_4
-	case 5, WizardsTower_Route2_STATE_4
-	case 6, WizardsTower_Route2_STATE_4
-	case 7, WizardsTower_Route2_STATE_4
-	case 8, WizardsTower_Route2_STATE_4
-	case 9, WizardsTower_Route2_STATE_5
+	case 0, QUEST_STATE_WizardsTower_ROUTE2_2
+	case 1, QUEST_STATE_WizardsTower_ROUTE2_2
+	case 2, QUEST_STATE_WizardsTower_ROUTE2_2
+	case 3, QUEST_STATE_WizardsTower_ROUTE2_3
+	case 4, QUEST_STATE_WizardsTower_ROUTE2_4
+	case 5, QUEST_STATE_WizardsTower_ROUTE2_4
+	case 6, QUEST_STATE_WizardsTower_ROUTE2_4
+	case 7, QUEST_STATE_WizardsTower_ROUTE2_4
+	case 8, QUEST_STATE_WizardsTower_ROUTE2_4
+	case 9, QUEST_STATE_WizardsTower_ROUTE2_5
 	return
 
-WizardsTower_Route2_STATE_2:
+QUEST_STATE_WizardsTower_ROUTE2_2:
 	setflag FLAG_TEMP_1
 	removeobject 2
 	removeobject 3
 	release
 	end
 
-WizardsTower_Route2_STATE_3:
+QUEST_STATE_WizardsTower_ROUTE2_3:
 	clearflag FLAG_TEMP_1
 	addobject 2
 	addobject 3
 	release
 	end
 
-WizardsTower_Route2_STATE_4:
+QUEST_STATE_WizardsTower_ROUTE2_4:
 	setflag FLAG_TEMP_1
 	removeobject 2
 	removeobject 3
 	release
 	end
 
-WizardsTower_Route2_STATE_5:
+QUEST_STATE_WizardsTower_ROUTE2_5:
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
 	setvar VAR_TEMP_2, 1

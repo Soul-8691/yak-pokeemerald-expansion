@@ -5,12 +5,29 @@ Wizards_Tower_1F_MapScripts::
 
 Wizards_Tower_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 1
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Wizards_Tower_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	call OPENWORLD_STATE_WIZARDSTOWER_1F
+	return
+
+Wizards_Tower_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 	goto WizardsTower_STATE
 	return
 
 Wizards_Tower_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-	map_script_2 VAR_POKESCAPE_WIZARDS_TOWER_STATE, 0, HAM_EVENT_WizardsTower_1
+	map_script_2 VAR_TEMP_0, 0, HAM_EVENT_WizardsTower_1
 	.2byte 0
+
+
+OPENWORLD_STATE_WIZARDSTOWER_1F::
+	setobjectxyperm 4, 5, 14
+	setobjectmovementtype 4, MOVEMENT_TYPE_LOOK_AROUND
+	removeobject 9
+	removeobject 7
+	removeobject 8
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	return
 
 
 WizardsTower_STATE::
@@ -105,7 +122,7 @@ WizardsTower_Wizard_2:
 	lock
 	faceplayer
 	namebox WizardsTower_Wizard_Text_0
-	msgbox WizardsTower_SEDRIDOR_Text_1
+	msgbox WizardsTower_Wizard_Text_1
 	hidenamebox
 	release
 	end
@@ -114,7 +131,7 @@ WizardsTower_Wizard_3:
 	lock
 	faceplayer
 	namebox WizardsTower_Wizard_Text_0
-	msgbox WizardsTower_Wizard_Text_1
+	msgbox WizardsTower_Wizard_Text_2
 	hidenamebox
 	release
 	end
@@ -123,7 +140,7 @@ WizardsTower_Wizard_4:
 	lock
 	faceplayer
 	namebox WizardsTower_Wizard_Text_0
-	msgbox WizardsTower_Wizard_Text_2
+	msgbox WizardsTower_Wizard_Text_3
 	hidenamebox
 	release
 	end
@@ -162,6 +179,13 @@ WizardsTower_EVENT_TRIGGER_3:
 
 
 HAM_EVENT_WizardsTower_1::
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq HAM_EVENT_WizardsTower_1_1
+	setvar VAR_TEMP_0, 1
+	release
+	return
+
+HAM_EVENT_WizardsTower_1_1:
 	lockall
 	playbgm MUS_PS_ENCOUNTER_HAM, 1
 	namebox HAM_EVENT_WizardsTower_1_Text_0
@@ -215,6 +239,7 @@ HAM_EVENT_WizardsTower_1::
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 1
+	setvar VAR_TEMP_0, 1
 	release
 	end
 
@@ -704,10 +729,13 @@ WizardsTower_Wizard_Text_0:
 	.string "Finix$"
 
 WizardsTower_Wizard_Text_1:
+	.string "Hello and welcome to the Wizards Tower.$"
+
+WizardsTower_Wizard_Text_2:
 	.string "Why would that pink hooded guy steal\n"
 	.string "our research papers on the abyss?$"
 
-WizardsTower_Wizard_Text_2:
+WizardsTower_Wizard_Text_3:
 	.string "Thank you for helping out earlier.$"
 
 WizardsTower_EVENT_TRIGGER_Text_0:

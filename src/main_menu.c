@@ -852,6 +852,7 @@ static void Task_DisplayMainMenu(u8 taskId)
         // Note: If there is no save file, the save block is zeroed out,
         // so the default gender is MALE.
         if (gSaveBlock2Ptr->playerGender == MALE)
+        //if (gSaveBlock2Ptr->GameMode == 0)
         {
             palette = RGB(4, 16, 31);
             LoadPalette(&palette, 241, 2);
@@ -2641,8 +2642,23 @@ static void MainMenu_FormatSavegameText(void)
 
 static void MainMenu_FormatSavegamePlayer(void)
 {
+    const u8* stringgamemode = gText_CUPHOLDER;
+
+    if (gSaveBlock2Ptr->GameMode == 0)
+        {
+            stringgamemode = gText_STORYMODE;
+        }
+    if (gSaveBlock2Ptr->GameMode == 1)
+        {
+            stringgamemode = gText_OPENWORLD;
+        }
+    
+    StringExpandPlaceholders(gStringVar4, stringgamemode);
+    AddTextPrinterParameterized3(2, 1, 150, 0, sTextColor_MenuInfo, -1, gStringVar4);
+    
     StringExpandPlaceholders(gStringVar4, gText_ContinueMenuPlayer);
     AddTextPrinterParameterized3(2, 1, 0, 17, sTextColor_MenuInfo, -1, gStringVar4);
+    
     AddTextPrinterParameterized3(2, 1, GetStringRightAlignXOffset(1, gSaveBlock2Ptr->playerName, 100), 17, sTextColor_MenuInfo, -1, gSaveBlock2Ptr->playerName);
 }
 

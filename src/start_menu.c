@@ -1288,17 +1288,33 @@ static void ShowSaveInfoWindow(void)
     struct WindowTemplate saveInfoWindow = sSaveInfoWindowTemplate;
     u8 gender;
     u8 color;
+    //u8 gamemode;
     u32 xOffset;
     u32 yOffset;
+    const u8* stringgamemode = gText_CUPHOLDER;
+
+
+    if (gSaveBlock2Ptr->GameMode == 0)
+    {
+        stringgamemode = gText_STORYMODE;
+    }
+    if (gSaveBlock2Ptr->GameMode == 1)
+    {
+        stringgamemode = gText_OPENWORLD;
+    }
+
+
 
     if (!FlagGet(FLAG_SYS_POKEDEX_GET))
     {
         saveInfoWindow.height -= 2;
     }
 
+    saveInfoWindow.height += 2;
     sSaveInfoWindowId = AddWindow(&saveInfoWindow);
     DrawStdWindowFrame(sSaveInfoWindowId, FALSE);
 
+    //gamemode = gSaveBlock2Ptr->GameMode;
     gender = gSaveBlock2Ptr->playerGender;
     color = TEXT_COLOR_RED;  // Red when female, blue when male.
 
@@ -1342,6 +1358,20 @@ static void ShowSaveInfoWindow(void)
     BufferSaveMenuText(SAVE_MENU_PLAY_TIME, gStringVar4, TEXT_COLOR_DARK_GREY);
     xOffset = GetStringRightAlignXOffset(1, gStringVar4, 0x70);
     AddTextPrinterParameterized(sSaveInfoWindowId, 1, gStringVar4, xOffset, yOffset, 0xFF, NULL);
+
+    // Print GAME MODE
+    yOffset += 16;
+    AddTextPrinterParameterized(sSaveInfoWindowId, 1, gText_SavingGameMode, 0, yOffset, 0xFF, NULL); //gamemode:
+    BufferSaveMenuText(SAVE_MENU_PLAY_TIME, gStringVar4, TEXT_COLOR_DARK_GREY);
+    xOffset = GetStringRightAlignXOffset(1, stringgamemode, 0x70);
+    AddTextPrinterParameterized(sSaveInfoWindowId, 1, stringgamemode, xOffset, yOffset, 0xFF, NULL);
+
+    
+
+
+
+
+
 
     CopyWindowToVram(sSaveInfoWindowId, 2);
 }

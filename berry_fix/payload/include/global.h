@@ -832,10 +832,12 @@ struct SaveBlock2 /* 0x02024EA4 */
     u16 optionsBattleSceneOff:1;  // whether battle animations are disabled
     u16 regionMapZoom:1;          // whether the map is zoomed in
     /*0x18*/ struct Pokedex pokedex;
-    /*0x90*/ u8 filler_90[0x8];
+    /*0x90*/ u8 filler_90[0x7];
+    /**/     u8 GameMode; // 0 - Story, 1 - Open world
     /*0x98*/ struct Time localTimeOffset;
     /*0xA0*/ struct Time lastBerryTreeUpdate;
     /*0xA8*/ struct BattleTowerData battleTower;
+    
 };
 
 struct MapPosition

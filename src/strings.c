@@ -1642,10 +1642,11 @@ const u8 gText_AcceptThisPkmn[] = _("Accept this POKéMON?");
 const u8 gText_4Spaces[] = _("    "); // Unused
 const u8 gText_SamePkmnInPartyAlready[] = _("Same {PKMN} in party already.");
 const u8 gText_DecimalPoint[] = _(".");
-const u8 gText_SavingPlayer[] = _("PLAYER");
-const u8 gText_SavingBadges[] = _("BADGES");
-const u8 gText_SavingPokedex[] = _("BESTIARY");
-const u8 gText_SavingTime[] = _("TIME");
+const u8 gText_SavingPlayer[] = _("PLAYER:");
+const u8 gText_SavingBadges[] = _("BADGES:");
+const u8 gText_SavingPokedex[] = _("BESTIARY:");
+const u8 gText_SavingTime[] = _("TIME:");
+const u8 gText_SavingGameMode[] =_("MODE:");
 const u8 gText_WirelessCommStatus[] = _("Wireless Communication Status");
 const u8 gText_PeopleTrading[] = _("People trading:");
 const u8 gText_PeopleBattling[] = _("People battling:");
@@ -1898,6 +1899,9 @@ const u8 gText_NewGame_STORYMODE_info[] =_("Are you sure you would like to play\
 const u8 gText_NewGame_OPENWORLD_info[] =_("WARNING\nThis is currently a work in progress.\pAre you sure you would like to play\nOPEN WORLD?");
 //OPEN WORLD is a mode where you can\nchoose any starting location you wish\land play through the game with\leverything scaled to your level.\pThe main goal of this mode is to explore\lwith a challenge and earn gym badges.\pThere is no story in this\lmode and it is only reccomended if you have already\lcompleted the story.
 
+
+
+const u8 gText_CUPHOLDER[] =_("CUPHOLDER");
 const u8 gText_STORYMODE[] =_("STORY MODE");
 const u8 gText_OPENWORLD[] =_("OPEN WORLD");
 const u8 gText_F2P[] =_("FREE TO PLAY");

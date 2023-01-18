@@ -1,6 +1,11 @@
 Lumbridge_Castle_2_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
+
+Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 1
+	return
 
 Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 	map_script_2 VAR_POKESCAPE_LUMBRIDGE_CASTLE_STATE, 0, Lumbridge_Castle_Introduction

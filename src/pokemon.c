@@ -51,7 +51,7 @@
 #include "constants/trainers.h"
 #include "constants/weather.h"
 #include "constants/region_map_sections.h"
-
+#include "constants/vars.h"
 
 struct SpeciesItem
 {
@@ -8658,6 +8658,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
     u8 beauty = GetMonData(mon, MON_DATA_BEAUTY, 0);
     u16 upperPersonality = personality >> 16;
     u8 holdEffect;
+    int rand;
 
     if (heldItem == ITEM_ENIGMA_BERRY)
         holdEffect = gSaveBlock1Ptr->enigmaBerry.holdEffect;
@@ -8892,6 +8893,31 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
 				 		if (GetGenderFromSpeciesAndPersonality(species, personality) == MON_FEMALE)
 						targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
+
+
+            case EVO_VAR_MALE:
+                if(gEvolutionTable[species][i].param <= level)
+                    if (VarGet(VAR_EVOLUTION_MAP_STATE) == gEvolutionTable[species][i].param)
+                        if (GetGenderFromSpeciesAndPersonality(species, personality) == MON_MALE)
+                            targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+
+            case EVO_VAR_FEMALE:
+                if(gEvolutionTable[species][i].param <= level)
+                    if (VarGet(VAR_EVOLUTION_MAP_STATE) == gEvolutionTable[species][i].param)
+                        if (GetGenderFromSpeciesAndPersonality(species, personality) == MON_FEMALE)
+                            targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+
+            case EVO_VAR:
+                if(gEvolutionTable[species][i].param <= level)
+                    if (VarGet(VAR_EVOLUTION_MAP_STATE) == gEvolutionTable[species][i].param)
+                    targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                break;
+
+
+
+
 			case EVO_LEVEL_DAY:
 				RtcCalcLocalTime();
 					if(gEvolutionTable[species][i].param <= level)
@@ -8953,6 +8979,21 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 type, u16 evolutionItem)
                     if (GetMonData(mon, MON_DATA_DEF, 0) == GetMonData(mon, MON_DATA_SPEED, 0))
                         targetSpecies = gEvolutionTable[species][i].targetSpecies;
                 break;
+
+            
+            case EVO_LEVEL_RANDOM:
+                if (gEvolutionTable[species][i].param <= level)
+                    rand = Random() % 3;
+                    if (rand == 0)
+                        break;
+                    else if (rand == 1)
+                        break;
+                    else if (rand == 2)
+                        targetSpecies = gEvolutionTable[species][i].targetSpecies;
+                    else
+                        break;
+                break;
+                
 				
 				
 			case EVO_DEATH:

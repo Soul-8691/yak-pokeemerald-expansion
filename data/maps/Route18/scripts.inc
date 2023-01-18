@@ -3,6 +3,7 @@ Route18_MapScripts::
 	.byte 0
 
 Route18_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 1
 	return
 
 

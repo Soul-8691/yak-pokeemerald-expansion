@@ -1,5 +1,6 @@
 mapscripts Route18_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
+        setvar(VAR_EVOLUTION_MAP_STATE, 1) //0-Nothing, 1-Varrock, 2-Morytania, 3-Members.
     }
 }
 

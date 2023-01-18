@@ -1,5 +1,10 @@
 Route10_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route10_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+Route10_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 3
+	return
 
 
 ROUTE10_Pirate::

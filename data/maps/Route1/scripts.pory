@@ -1,9 +1,11 @@
 mapscripts Route1_MapScripts {
-
     MAP_SCRIPT_ON_LOAD {
         goto(WizardsTower_Route1_STATE)
         }
-    MAP_SCRIPT_ON_TRANSITION:TryMoveNpcsRoute1
+    MAP_SCRIPT_ON_TRANSITION {
+        setvar(VAR_EVOLUTION_MAP_STATE, 0) //0-Nothing, 1-Varrock, 2-Morytania, 3-Members.
+        call(TryMoveNpcsRoute1)
+    }
     MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:Route1WarpCheck
 } 
 
@@ -28,6 +30,7 @@ script TryMoveNpcsRoute1{
         removeobject(23)
         setflag(FLAG_TEMP_4)
     }
+    return
 }
 
 script Route1WarpCheck{

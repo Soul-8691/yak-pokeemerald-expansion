@@ -126,7 +126,7 @@
 #define VAR_OPENWORLD_STATE                   0x406B // Unused Var
 #define VAR_ROUTE113_STATE                   0x406C // Unused Var
 #define VAR_LEVEL_SCALING_STATE                   0x406D // Unused Var
-#define VAR_ROUTE115_STATE                   0x406E // Unused Var
+#define VAR_EVOLUTION_MAP_STATE                   0x406E // Unused Var
 #define VAR_ROUTE116_STATE                   0x406F
 #define VAR_ROUTE117_STATE                   0x4070 // Unused Var
 #define VAR_ROUTE118_STATE                   0x4071

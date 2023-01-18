@@ -650,6 +650,14 @@ const u8 gItemEffect_WizardBlizzard[6] = {
     [3] = ITEM3_FREEZE,
 };
 
+const u8 gItemEffect_FRIENDSHIP_BOOSTER[10] = {
+    [4] = ITEM4_EV_HP,
+    [5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = 0,
+    [7] = 20,
+    [8] = 50,
+    [9] = 20,
+};
 
 //end pokescape
 
@@ -785,7 +793,7 @@ const u8 *const gItemEffectTable[] =
     [ITEM_STRAWBERRY_MILK - ITEM_POTION] = gItemEffect_StrawberryMilk,
     [ITEM_CHOCOLATE_MILK - ITEM_POTION] = gItemEffect_ChocolateMilk,
     [ITEM_CABBAGE - ITEM_POTION] = gItemEffect_Revive,
-
+    [ITEM_FRIENDSHIP_BOOSTER - ITEM_POTION] = gItemEffect_FRIENDSHIP_BOOSTER,
 
 
     

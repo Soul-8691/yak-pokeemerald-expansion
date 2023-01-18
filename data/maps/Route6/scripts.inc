@@ -3,6 +3,7 @@ Route6_MapScripts::
 	.byte 0
 
 Route6_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 3
 	goto FALADORSOUTH_STATE
 	return
 

@@ -1,5 +1,10 @@
 MusaPoint_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, MusaPoint_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+MusaPoint_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 15
+	return
 
 
 NPC_MUSAPOINT_SAILOR::

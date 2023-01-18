@@ -368,9 +368,13 @@
 #define EVO_DEATH			    52		// pokemon evolves when fainted and gains a level
 #define EVO_ITEM_MALE			53		// pokemon evolves with item used on it if male
 #define EVO_ITEM_FEMALE			54		// pokemon evolves with item used on it if female
+#define EVO_LEVEL_RANDOM        55      //Evolves with at specific LEVEL and has a random 1/4 chance if it does evolve this level.
+#define EVO_VAR_MALE            56      //Evolves with MALE Gender on Specific Map.
+#define EVO_VAR_FEMALE          57      //Evolves with FEMALE Gender on Specific Map.
+#define EVO_VAR                 58
 
 
-#define EVOS_PER_MON 15
+#define EVOS_PER_MON 30 //was 15
 
 #define NUM_MALE_LINK_FACILITY_CLASSES   8
 #define NUM_FEMALE_LINK_FACILITY_CLASSES 8

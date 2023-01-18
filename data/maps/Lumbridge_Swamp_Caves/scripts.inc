@@ -1,5 +1,10 @@
 Lumbridge_Swamp_Caves_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Lumbridge_Swamp_Caves_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+Lumbridge_Swamp_Caves_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 8
+	return
 
 
 LumbridgeSwampCaves_WallBeasts::

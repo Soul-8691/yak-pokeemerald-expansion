@@ -3,6 +3,7 @@ Lumbridge_MapScripts::
 	.byte 0
 
 Lumbridge_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 1
 	goto MoveNPCsAfterEvents_Lumbridge
 	return
 

@@ -4,6 +4,7 @@ WizardsTower_MapScripts::
 
 WizardsTower_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	goto WizardsTower_Outdoors_STATE
+	setvar VAR_EVOLUTION_MAP_STATE, 1
 	return
 
 

@@ -1,7 +1,12 @@
 KaramjaVolcano_B1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, KaramjaVolcano_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	map_script MAP_SCRIPT_ON_LOAD, KaramjaVolcano_B1F_MapScripts_MAP_SCRIPT_ON_LOAD
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, KaramjaVolcano_B1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
+
+KaramjaVolcano_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 15
+	return
 
 KaramjaVolcano_B1F_MapScripts_MAP_SCRIPT_ON_LOAD:
 	goto KaramjaVolcano_STATE1

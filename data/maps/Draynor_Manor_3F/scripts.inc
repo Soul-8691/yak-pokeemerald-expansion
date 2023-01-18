@@ -1,5 +1,10 @@
 Draynor_Manor_3F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Draynor_Manor_3F_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+Draynor_Manor_3F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 1
+	return
 
 
 NPC_DraynorManor_Chicken::

@@ -1,10 +1,15 @@
 Draynor_Manor_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, Draynor_Manor_1F_MapScripts_MAP_SCRIPT_ON_LOAD
+	map_script MAP_SCRIPT_ON_TRANSITION, Draynor_Manor_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
 
 Draynor_Manor_1F_MapScripts_MAP_SCRIPT_ON_LOAD:
 	call DraynorManor_Lever_STATE
 	end
+
+Draynor_Manor_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 1
+	return
 
 
 DraynorManor_Lever_STATE::

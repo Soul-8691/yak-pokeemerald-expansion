@@ -1,6 +1,6 @@
 Route1_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, Route1_MapScripts_MAP_SCRIPT_ON_LOAD
-	map_script MAP_SCRIPT_ON_TRANSITION, TryMoveNpcsRoute1
+	map_script MAP_SCRIPT_ON_TRANSITION, Route1_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, Route1WarpCheck
 	.byte 0
 
@@ -8,12 +8,18 @@ Route1_MapScripts_MAP_SCRIPT_ON_LOAD:
 	goto WizardsTower_Route1_STATE
 	return
 
+Route1_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 0
+	call TryMoveNpcsRoute1
+	return
+
 
 TryMoveNpcsRoute1::
 	goto_if_set FLAG_BADGE01_GET, TryMoveNpcsRoute1_2
 TryMoveNpcsRoute1_1:
 	compare VAR_POKESCAPE_WIZARDS_TOWER_STATE, 6
-	goto_if_ne TryMoveNpcsRoute1_4
+	goto_if_ne TryMoveNpcsRoute1_5
+TryMoveNpcsRoute1_4:
 	return
 
 TryMoveNpcsRoute1_2:
@@ -24,12 +30,12 @@ TryMoveNpcsRoute1_2:
 	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_DOWN
 	goto TryMoveNpcsRoute1_1
 
-TryMoveNpcsRoute1_4:
+TryMoveNpcsRoute1_5:
 	removeobject 22
 	setflag FLAG_TEMP_5
 	removeobject 23
 	setflag FLAG_TEMP_4
-	return
+	goto TryMoveNpcsRoute1_4
 
 
 Route1WarpCheck::

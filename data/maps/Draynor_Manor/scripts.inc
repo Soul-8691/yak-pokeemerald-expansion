@@ -1,10 +1,15 @@
 Draynor_Manor_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, Draynor_Manor_MapScripts_MAP_SCRIPT_ON_LOAD
+	map_script MAP_SCRIPT_ON_TRANSITION, Draynor_Manor_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Draynor_Manor_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
 Draynor_Manor_MapScripts_MAP_SCRIPT_ON_LOAD:
 	call WizardsTower_DraynorManor_STATE
+	return
+
+Draynor_Manor_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 1
 	return
 
 Draynor_Manor_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:

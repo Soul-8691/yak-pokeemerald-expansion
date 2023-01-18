@@ -3,6 +3,7 @@ Route31_MapScripts::
 	.byte 0
 
 Route31_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 6
 	call WEATHER_CHANGE_ROUTE
 	return
 

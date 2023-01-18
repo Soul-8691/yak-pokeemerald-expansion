@@ -3,6 +3,7 @@ Route4_MapScripts::
 	.byte 0
 
 Route4_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 1
 	call POTTERINGTON_FARM_OUTDOOR_STATE
 	goto TryMoveDaycareMan
 	return

@@ -1,5 +1,10 @@
 Route11_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route11_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+Route11_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 5
+	return
 
 
 BATTLE_ROUTE11_QUESTER::

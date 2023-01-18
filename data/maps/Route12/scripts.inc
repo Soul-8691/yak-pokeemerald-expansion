@@ -3,6 +3,7 @@ Route12_MapScripts::
 	.byte 0
 
 Route12_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 1
 	call ROUTE12_STATE
 	return
 

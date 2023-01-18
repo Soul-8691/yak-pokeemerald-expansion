@@ -1,5 +1,10 @@
 Route23_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route23_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+Route23_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 3
+	return
 
 
 NPC_ROUTE23_BLOCKADE_DWARVES::

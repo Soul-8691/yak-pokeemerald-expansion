@@ -1,5 +1,10 @@
 Route3_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route3_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+Route3_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 1
+	return
 
 
 ITEM_ROUTE3_BREAD::

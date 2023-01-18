@@ -8271,4 +8271,16 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_Repel,
         .secondaryId = 0,
     },
+
+    [ITEM_FRIENDSHIP_BOOSTER] =
+    {
+        .name = _("FRIENDSHIP"),
+        .itemId = ITEM_FRIENDSHIP_BOOSTER,
+        .price = 20,
+        .description = sCupholderDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 1,
+        .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
+        .secondaryId = 0,
+    },
 };

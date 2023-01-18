@@ -1,9 +1,14 @@
 Route2_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, Route2_MapScripts_MAP_SCRIPT_ON_LOAD
+	map_script MAP_SCRIPT_ON_TRANSITION, Route2_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
 
 Route2_MapScripts_MAP_SCRIPT_ON_LOAD:
 	goto WizardsTower_Route2_STATE
+	return
+
+Route2_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 1
 	return
 
 

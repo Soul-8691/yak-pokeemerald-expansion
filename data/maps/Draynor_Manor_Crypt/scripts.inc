@@ -59,6 +59,7 @@ WizardsTower_DraynorManor_Crypt_STATE_3:
 	removeobject 1
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
+	setvar VAR_TEMP_0, 1
 	release
 	end
 

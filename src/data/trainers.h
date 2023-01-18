@@ -1454,7 +1454,7 @@ const struct Trainer gTrainers[] = {
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_AGILE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_SKILLER,
         .trainerPic = TRAINER_PIC_graceful,
         .trainerName = _("ERKEE"),
         .items = {},
@@ -2314,7 +2314,7 @@ const struct Trainer gTrainers[] = {
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_AGILE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_SKILLER,
         .trainerPic = TRAINER_PIC_graceful,
         .trainerName = _(""),
         .items = {},
@@ -2632,7 +2632,7 @@ const struct Trainer gTrainers[] = {
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_AGILE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_SKILLER,
         .trainerPic = TRAINER_PIC_graceful,
         .trainerName = _(""),
         .items = {},
@@ -2761,7 +2761,7 @@ const struct Trainer gTrainers[] = {
     {
         .partyFlags = 0,
         .trainerClass = TRAINER_CLASS_AGILE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_SKILLER,
         .trainerPic = TRAINER_PIC_graceful,
         .trainerName = _(""),
         .items = {},

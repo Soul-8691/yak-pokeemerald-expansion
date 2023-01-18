@@ -2,7 +2,18 @@ mapscripts Route12_MapScripts{
 	MAP_SCRIPT_ON_TRANSITION{
 		setvar(VAR_EVOLUTION_MAP_STATE, 1) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
 
-		call(ROUTE12_STATE)
+		if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    	{
+			call(ROUTE12_STATE)
+		}
+		else
+		{
+			call(OPENWORLD_STATE_ROUTE12)
+		}
+
+
+
+		
 		//call(WEATHER_CHANGE_ROUTE)
 		#random (100)
 		#if (var(VAR_RESULT) == 99)
@@ -16,6 +27,16 @@ mapscripts Route12_MapScripts{
 	}
 }
 
+
+script OPENWORLD_STATE_ROUTE12 {
+	setobjectxyperm(16,29,9)
+	setobjectmovementtype(16,MOVEMENT_TYPE_LOOK_AROUND)
+	setobjectxyperm(14,30,14)
+	setobjectmovementtype(14,MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT)
+	setobjectxyperm(15,33,8)
+	setobjectmovementtype(15,MOVEMENT_TYPE_WANDER_AROUND)
+	return
+}
 
 script ROUTE12_STATE{
 	if (flag(FLAG_BADGE02_GET)){
@@ -205,22 +226,33 @@ script BLOCK_Route12_Farmer {
     lock 
     faceplayer
     namebox("Farmer")
-    if (!flag(FLAG_BADGE02_GET)){
-        msgbox(format("Urgh, I wish the goblins would stop messing with my sheep!"))
-        hidenamebox
-        closemessage
-        release
-        end
-    }
-    else{
-        msgbox(format("I finally got my Sheep out of the way."))
-        hidenamebox
-        closemessage
-        release
-        end
-    }
-    release
-    end
+	if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    {
+		if (!flag(FLAG_BADGE02_GET)){
+			msgbox(format("Urgh, I wish the goblins would stop messing with my sheep!"))
+			hidenamebox
+			closemessage
+			release
+			end
+		}
+		else{
+			msgbox(format("I finally got my Sheep out of the way."))
+			hidenamebox
+			closemessage
+			release
+			end
+		}
+		release
+		end
+	}
+	else
+	{
+		msgbox(format("Goblins are very annoying.\pI can see them looking at my sheep."))
+		hidenamebox
+		closemessage
+		release
+		end
+	}
 }
 
 

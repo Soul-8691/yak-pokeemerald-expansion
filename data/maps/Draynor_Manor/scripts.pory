@@ -42,6 +42,7 @@ script WizardsTower_DraynorManor_STATE{
 			case 6: 
 				clearflag(FLAG_TEMP_1)
 				addobject(1) //ariane
+				setvar(VAR_TEMP_0, 1)
 				release
 				end
             case 7: 
@@ -50,6 +51,7 @@ script WizardsTower_DraynorManor_STATE{
 				//MOVE ARIANE
 				setobjectxyperm(1,16,36)
 				setobjectmovementtype(1,MOVEMENT_TYPE_FACE_UP)
+				setvar(VAR_TEMP_0, 1)
 				release
 				end
             case 8: 
@@ -57,10 +59,12 @@ script WizardsTower_DraynorManor_STATE{
 				addobject(1) //ariane
 				//MOVE ARIANE
 				setobjectxyperm(1,14,24)
+				setvar(VAR_TEMP_0, 1)
             case 9: 
                 //HIDE NPCs
                 removeobject(1) //ariane
                 setflag(FLAG_TEMP_1)
+				setvar(VAR_TEMP_0, 1)
                 release
                 end  
             }
@@ -90,13 +94,12 @@ script BLOCK_DraynorManor_Trees
         waitmovement(0)
 		msgbox(format("The trees are not letting you pass."))
 		closemessage
-		setvar(VAR_TEMP_B, 1)
         release
         end
 	}
 	else
 	{
-		setvar(VAR_TEMP_B, 1)
+		setvar(VAR_TEMP_1, 1)
 		release
 		end
 	}

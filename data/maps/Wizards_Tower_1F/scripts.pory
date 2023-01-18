@@ -16,7 +16,7 @@ mapscripts Wizards_Tower_1F_MapScripts{
     }
     MAP_SCRIPT_ON_FRAME_TABLE [
 		//VAR_POKESCAPE_WIZARDS_TOWER_STATE, 0: HAM_EVENT_WizardsTower_1
-		VAR_TEMP_0, 0: HAM_EVENT_WizardsTower_1
+		VAR_TEMP_B, 0: HAM_EVENT_WizardsTower_1
     ]
 
 }
@@ -58,6 +58,7 @@ script WizardsTower_STATE{
 			removeobject (OBJ_EVENT_ID_HAMGrunt)
 
 			setflag(FLAG_TEMP_2)
+			setvar(VAR_TEMP_B, 1)
 		case 6: 
 		case 7: 
 		case 8: 
@@ -70,6 +71,7 @@ script WizardsTower_STATE{
 			removeobject (OBJ_EVENT_ID_HAMGrunt)
 			setflag(FLAG_TEMP_1)
 			setflag(FLAG_TEMP_2)
+			setvar(VAR_TEMP_B, 1)
 			release
 			end
 
@@ -237,13 +239,13 @@ script HAM_EVENT_WizardsTower_1 {
 		savebgm(MUS_DUMMY)
 		fadedefaultbgm
 		setvar(VAR_POKESCAPE_WIZARDS_TOWER_STATE, 1)
-		setvar(VAR_TEMP_0, 1)
+		setvar(VAR_TEMP_B, 1)
 		release
 		end
 	}
 	else
 	{
-		setvar(VAR_TEMP_0, 1) 
+		setvar(VAR_TEMP_B, 1) 
         release
 	}
 }

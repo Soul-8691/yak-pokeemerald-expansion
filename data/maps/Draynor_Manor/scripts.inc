@@ -40,6 +40,7 @@ WizardsTower_DraynorManor_STATE_2:
 WizardsTower_DraynorManor_STATE_3:
 	clearflag FLAG_TEMP_1
 	addobject 1
+	setvar VAR_TEMP_0, 1
 	release
 	end
 
@@ -48,6 +49,7 @@ WizardsTower_DraynorManor_STATE_4:
 	addobject 1
 	setobjectxyperm 1, 16, 36
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_UP
+	setvar VAR_TEMP_0, 1
 	release
 	end
 
@@ -55,11 +57,13 @@ WizardsTower_DraynorManor_STATE_5:
 	clearflag FLAG_TEMP_1
 	addobject 1
 	setobjectxyperm 1, 14, 24
+	setvar VAR_TEMP_0, 1
 	return
 
 WizardsTower_DraynorManor_STATE_6:
 	removeobject 1
 	setflag FLAG_TEMP_1
+	setvar VAR_TEMP_0, 1
 	release
 	end
 
@@ -67,7 +71,7 @@ WizardsTower_DraynorManor_STATE_6:
 BLOCK_DraynorManor_Trees::
 	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
 	goto_if_eq BLOCK_DraynorManor_Trees_1
-	setvar VAR_TEMP_B, 1
+	setvar VAR_TEMP_1, 1
 	release
 	end
 
@@ -80,7 +84,6 @@ BLOCK_DraynorManor_Trees_1:
 	waitmovement 0
 	msgbox BLOCK_DraynorManor_Trees_Text_1
 	closemessage
-	setvar VAR_TEMP_B, 1
 	release
 	end
 

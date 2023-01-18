@@ -7,13 +7,47 @@ const OBJ_EVENT_ID_BLOCK_durial321 = 27
 
 mapscripts Falador_MapScripts {
     MAP_SCRIPT_ON_LOAD { //ON LOAD FOR MAP TILES
-    call(FALADOR_QUEST_STATE)
+	if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    {
+    	call(FALADOR_QUEST_STATE)
+	}
+	else 
+	{
+		call(OPENWORLD_STATE_FALADOR)
+	}
 	call(MODTIMBO_STATE)
-    }
+	}
+
 	MAP_SCRIPT_ON_TRANSITION { //ON LOAD FOR MAP TILES
-    call(FALADOR_QUEST_STATE)
+    if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    {
+    	call(FALADOR_QUEST_STATE)
+	}
+	else 
+	{
+		call(OPENWORLD_STATE_FALADOR)
+	}
+
     }
 } 
+
+
+script OPENWORLD_STATE_FALADOR {
+        setflag(FLAG_TEMP_2)
+		setmetatile(24, 6, 609, 0)
+		setmetatile(24, 7, 617, 0)
+		setmetatile(25, 6, 609, 0)
+		special(DrawWholeMapView) 
+		removeobject(OBJ_EVENT_ID_BLOCK_KNIGHT)
+		setflag(FLAG_TEMP_1)
+		removeobject(OBJ_EVENT_ID_BLOCK_GUARD_1)
+		removeobject(OBJ_EVENT_ID_BLOCK_GUARD_2)
+		removeobject(OBJ_EVENT_ID_BLOCK_MERCHANT)
+		removeobject(OBJ_EVENT_ID_BLOCK_durial321)
+		return
+}
+
+
 
 
 
@@ -563,39 +597,38 @@ script NPC_FALADOR_HAIRDRESSER
 	lock
 	faceplayer
     namebox ("Hairdresser")
-	checktrainerflag(TRAINER_FALADOR_HAIRDRESSER)
-		if (!var(VAR_RESULT))
-		{		
-			msgbox(format("You want a haircut?"), MSGBOX_YESNO)
-			if (var(VAR_RESULT)){
-				msgbox(format("Well, first you will have to battle me."))
-				closemessage
-				hidenamebox
-				trainerbattle_no_intro(TRAINER_FALADOR_HAIRDRESSER, msgbox(format("Oh no, my chinchompas!")))
-				namebox ("Hairdresser")
-				msgbox(format("Why would you faint all my chinchompas.\pNow who will run the wheel to make the sign outside spin.\pMy business is ruined!"))
-				msgbox(format("Take this, and never return.\nAlso you get no haircut."))
-				hidenamebox
-				settrainerflag(TRAINER_FALADOR_HAIRDRESSER)
-				giveitem(ITEM_RING_OF_WEALTH, 1)
-				namebox ("Hairdresser")
-				msgbox(format("Please leave.\pFor the good of my business."))
-				closemessage
-				hidenamebox
-			}
-			else 
-			{
-				msgbox(format("Out of my way then, can you not see I have hair to cut?"))
-				closemessage
-				hidenamebox
-			}
-			release
-			end
+	if (!flag(FLAG_HAIRDRESSER))
+	{		
+		msgbox(format("You want a haircut?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT)){
+			msgbox(format("Well, first you will have to battle me."))
+			closemessage
+			hidenamebox
+			trainerbattle_no_intro(TRAINER_FALADOR_HAIRDRESSER, msgbox(format("Oh no, my chinchompas!")))
+			namebox ("Hairdresser")
+			msgbox(format("Why would you faint all my chinchompas.\pNow who will run the wheel to make the sign outside spin.\pMy business is ruined!"))
+			msgbox(format("Take this, and never return.\nAlso you get no haircut."))
+			hidenamebox
+			setflag(FLAG_HAIRDRESSER)
+			giveitem(ITEM_RING_OF_WEALTH, 1)
+			namebox ("Hairdresser")
+			msgbox(format("Please leave.\pFor the good of my business."))
+			closemessage
+			hidenamebox
 		}
 		else 
 		{
-			msgbox(format("What more do you want!\pGet out!"))
+			msgbox(format("Out of my way then, can you not see I have hair to cut?"))
+			closemessage
+			hidenamebox
 		}
+		release
+		end
+	}
+	else 
+	{
+		msgbox(format("What more do you want!\pGet out!"))
+	}
 	closemessage
 	hidenamebox
 	release
@@ -617,7 +650,7 @@ script NPC_FALADOR_HAIRDRESSER_NPC
 script NPC_FALADOR_HAIRDRESSER_SUOMI
 {
 	lock
-	faceplayer
+	//faceplayer
     namebox ("SUOMI")
 	msgbox(format("What, do you think this is my natural hair colour?\pI have to dye my hair every few weeks to keep it this purple."))
     waitmessage

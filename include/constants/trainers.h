@@ -550,6 +550,7 @@
 #define TRAINER_ENCOUNTER_MUSIC_HAM         15 //HAM GRUNTS
 #define TRAINER_ENCOUNTER_MUSIC_NOOB         16 //Happy noobs
 #define TRAINER_ENCOUNTER_MUSIC_CHOOB         17 //Scary choobs
+#define TRAINER_ENCOUNTER_SKILLER           18
 
 
 #define F_TRAINER_FEMALE (1 << 7)

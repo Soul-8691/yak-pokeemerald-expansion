@@ -4,12 +4,40 @@ Falador_MapScripts::
 	.byte 0
 
 Falador_MapScripts_MAP_SCRIPT_ON_LOAD:
-	call FALADOR_QUEST_STATE
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Falador_MapScripts_MAP_SCRIPT_ON_LOAD_2
+	call OPENWORLD_STATE_FALADOR
+Falador_MapScripts_MAP_SCRIPT_ON_LOAD_1:
 	call MODTIMBO_STATE
 	return
 
-Falador_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+Falador_MapScripts_MAP_SCRIPT_ON_LOAD_2:
 	call FALADOR_QUEST_STATE
+	goto Falador_MapScripts_MAP_SCRIPT_ON_LOAD_1
+
+Falador_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Falador_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	call OPENWORLD_STATE_FALADOR
+	return
+
+Falador_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+	call FALADOR_QUEST_STATE
+	return
+
+
+OPENWORLD_STATE_FALADOR::
+	setflag FLAG_TEMP_2
+	setmetatile 24, 6, 609, 0
+	setmetatile 24, 7, 617, 0
+	setmetatile 25, 6, 609, 0
+	special DrawWholeMapView
+	removeobject 40
+	setflag FLAG_TEMP_1
+	removeobject 37
+	removeobject 38
+	removeobject 39
+	removeobject 27
 	return
 
 
@@ -446,9 +474,7 @@ NPC_FALADOR_HAIRDRESSER::
 	lock
 	faceplayer
 	namebox NPC_FALADOR_HAIRDRESSER_Text_0
-	checktrainerflag TRAINER_FALADOR_HAIRDRESSER
-	compare VAR_RESULT, 0
-	goto_if_eq NPC_FALADOR_HAIRDRESSER_2
+	goto_if_unset FLAG_HAIRDRESSER, NPC_FALADOR_HAIRDRESSER_2
 	msgbox NPC_FALADOR_HAIRDRESSER_Text_8
 	closemessage
 	hidenamebox
@@ -475,7 +501,7 @@ NPC_FALADOR_HAIRDRESSER_6:
 	msgbox NPC_FALADOR_HAIRDRESSER_Text_4
 	msgbox NPC_FALADOR_HAIRDRESSER_Text_5
 	hidenamebox
-	settrainerflag TRAINER_FALADOR_HAIRDRESSER
+	setflag FLAG_HAIRDRESSER
 	giveitem ITEM_RING_OF_WEALTH, 1
 	namebox NPC_FALADOR_HAIRDRESSER_Text_0
 	msgbox NPC_FALADOR_HAIRDRESSER_Text_6
@@ -496,7 +522,6 @@ NPC_FALADOR_HAIRDRESSER_NPC::
 
 NPC_FALADOR_HAIRDRESSER_SUOMI::
 	lock
-	faceplayer
 	namebox NPC_FALADOR_HAIRDRESSER_SUOMI_Text_0
 	msgbox NPC_FALADOR_HAIRDRESSER_SUOMI_Text_1
 	waitmessage

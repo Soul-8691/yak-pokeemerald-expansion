@@ -369,6 +369,13 @@ ApothecaryVarrock:
     end
 
 TRIGGER_BLOCK_ROUTE38::
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq TRIGGER_BLOCK_ROUTE38_1
+	setvar VAR_TEMP_0, 1
+	release
+	return
+
+TRIGGER_BLOCK_ROUTE38_1:
 	lock
 	namebox VARROCK_NPC_GUARD_0_Text_0
 	msgbox TRIGGER_BLOCK_ROUTE38_Text_0
@@ -376,6 +383,7 @@ TRIGGER_BLOCK_ROUTE38::
 	hidenamebox
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKLEFT
 	waitmovement 0
+	setvar VAR_TEMP_0, 1
 	release
 	end
 

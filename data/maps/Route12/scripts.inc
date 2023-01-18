@@ -4,7 +4,23 @@ Route12_MapScripts::
 
 Route12_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 1
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Route12_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	call OPENWORLD_STATE_ROUTE12
+	return
+
+Route12_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 	call ROUTE12_STATE
+	return
+
+
+OPENWORLD_STATE_ROUTE12::
+	setobjectxyperm 16, 29, 9
+	setobjectmovementtype 16, MOVEMENT_TYPE_LOOK_AROUND
+	setobjectxyperm 14, 30, 14
+	setobjectmovementtype 14, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT
+	setobjectxyperm 15, 33, 8
+	setobjectmovementtype 15, MOVEMENT_TYPE_WANDER_AROUND
 	return
 
 
@@ -165,7 +181,16 @@ BLOCK_Route12_Farmer::
 	lock
 	faceplayer
 	namebox BLOCK_Route12_Farmer_Text_0
-	goto_if_unset FLAG_BADGE02_GET, BLOCK_Route12_Farmer_2
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq BLOCK_Route12_Farmer_1
+	msgbox BLOCK_Route12_Farmer_Text_3
+	hidenamebox
+	closemessage
+	release
+	end
+
+BLOCK_Route12_Farmer_1:
+	goto_if_unset FLAG_BADGE02_GET, BLOCK_Route12_Farmer_5
 	msgbox BLOCK_Route12_Farmer_Text_2
 	hidenamebox
 	closemessage
@@ -175,7 +200,7 @@ BLOCK_Route12_Farmer::
 	release
 	end
 
-BLOCK_Route12_Farmer_2:
+BLOCK_Route12_Farmer_5:
 	msgbox BLOCK_Route12_Farmer_Text_1
 	hidenamebox
 	closemessage
@@ -417,6 +442,10 @@ BLOCK_Route12_Farmer_Text_1:
 
 BLOCK_Route12_Farmer_Text_2:
 	.string "I finally got my Sheep out of the way.$"
+
+BLOCK_Route12_Farmer_Text_3:
+	.string "Goblins are very annoying.\p"
+	.string "I can see them looking at my sheep.$"
 
 Cow_Battle_Text_0:
 	.string "MOOOO$"

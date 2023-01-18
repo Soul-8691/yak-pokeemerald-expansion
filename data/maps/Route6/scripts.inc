@@ -4,7 +4,24 @@ Route6_MapScripts::
 
 Route6_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 3
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Route6_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	call OPENWORLD_STATE_ROUTE6
+	return
+
+Route6_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 	goto FALADORSOUTH_STATE
+	return
+
+
+OPENWORLD_STATE_ROUTE6::
+	addobject 2
+	clearflag FLAG_TEMP_1
+	removeobject 5
+	removeobject 7
+	removeobject 4
+	removeobject 6
+	setflag FLAG_TEMP_2
 	return
 
 

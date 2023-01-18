@@ -15,7 +15,7 @@ Wizards_Tower_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 	return
 
 Wizards_Tower_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-	map_script_2 VAR_TEMP_0, 0, HAM_EVENT_WizardsTower_1
+	map_script_2 VAR_TEMP_B, 0, HAM_EVENT_WizardsTower_1
 	.2byte 0
 
 
@@ -57,6 +57,7 @@ WizardsTower_STATE_3:
 	removeobject 7
 	removeobject 8
 	setflag FLAG_TEMP_2
+	setvar VAR_TEMP_B, 1
 	return
 
 WizardsTower_STATE_4:
@@ -67,6 +68,7 @@ WizardsTower_STATE_4:
 	removeobject 8
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
+	setvar VAR_TEMP_B, 1
 	release
 	end
 
@@ -181,7 +183,7 @@ WizardsTower_EVENT_TRIGGER_3:
 HAM_EVENT_WizardsTower_1::
 	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
 	goto_if_eq HAM_EVENT_WizardsTower_1_1
-	setvar VAR_TEMP_0, 1
+	setvar VAR_TEMP_B, 1
 	release
 	return
 
@@ -239,7 +241,7 @@ HAM_EVENT_WizardsTower_1_1:
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	setvar VAR_POKESCAPE_WIZARDS_TOWER_STATE, 1
-	setvar VAR_TEMP_0, 1
+	setvar VAR_TEMP_B, 1
 	release
 	end
 

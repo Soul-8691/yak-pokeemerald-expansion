@@ -78,8 +78,8 @@ script BATTLE_ROUTE24_MUGGER{
 }
 
 script BATTLE_ROUTE24_WOODCUTTER_1{
-    trainerbattle_single(TRAINER_ROUTE24_WOODCUTTER_1, format("Woodcutting is more than just cutting trees, here let me show you."),format("If I lose a battle and nobody is here.\pDo I still get xp?"))
-    namebox ("Wilfred")
+    trainerbattle_single(TRAINER_NYCHANNEL, format("Woodcutting is more than just cutting trees, here let me show you."),format("If I lose a battle and nobody is here.\pDo I still get xp?"))
+    namebox ("NyChannel")
     msgbox(format("If I lose a battle and nobody is here.\pDo I still get xp?"))
     hidenamebox
     release

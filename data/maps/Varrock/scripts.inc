@@ -585,6 +585,140 @@ STARTER_MON_SCRIPT_10:
 	end
 
 
+NPC_VARROCK_GERTRUDE::
+	lock
+	faceplayer
+	namebox NPC_VARROCK_GERTRUDE_Text_0
+	goto_if_unset FLAG_RECIEVED_KITTEN, NPC_VARROCK_GERTRUDE_2
+	msgbox NPC_VARROCK_GERTRUDE_Text_8
+NPC_VARROCK_GERTRUDE_1:
+	closemessage
+	hidenamebox
+	release
+	end
+
+NPC_VARROCK_GERTRUDE_2:
+	msgbox NPC_VARROCK_GERTRUDE_Text_1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne NPC_VARROCK_GERTRUDE_5
+	msgbox NPC_VARROCK_GERTRUDE_Text_7
+	goto NPC_VARROCK_GERTRUDE_1
+
+NPC_VARROCK_GERTRUDE_5:
+	msgbox NPC_VARROCK_GERTRUDE_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne NPC_VARROCK_GERTRUDE_8
+	msgbox NPC_VARROCK_GERTRUDE_Text_6
+	goto NPC_VARROCK_GERTRUDE_1
+
+NPC_VARROCK_GERTRUDE_8:
+	trainerbattle_no_intro TRAINER_GERTRUDE, NPC_VARROCK_GERTRUDE_Text_3
+	msgbox NPC_VARROCK_GERTRUDE_Text_4
+	call GiveMon_VARROCK_KITTEN
+	setflag FLAG_RECIEVED_KITTEN
+	msgbox NPC_VARROCK_GERTRUDE_Text_5
+	goto NPC_VARROCK_GERTRUDE_1
+
+
+NPC_VARROCK_PHILOP::
+	lock
+	faceplayer
+	namebox NPC_VARROCK_PHILOP_Text_0
+	msgbox NPC_VARROCK_PHILOP_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_VARROCK_KANEL::
+	lock
+	faceplayer
+	namebox NPC_VARROCK_KANEL_Text_0
+	msgbox NPC_VARROCK_KANEL_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_VARROCK_CAT_INFO::
+	msgbox NPC_VARROCK_CAT_INFO_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne NPC_VARROCK_CAT_INFO_2
+NPC_VARROCK_CAT_INFO_1:
+	closemessage
+	release
+	end
+
+NPC_VARROCK_CAT_INFO_2:
+	msgbox NPC_VARROCK_CAT_INFO_Text_1
+	goto NPC_VARROCK_CAT_INFO_1
+
+
+NPC_ROUTE18_MAN::
+	lock
+	faceplayer
+	msgbox NPC_ROUTE18_MAN_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+GiveMon_VARROCK_KITTEN::
+	setvar VAR_TEMP_1, SPECIES_KITTEN
+	giveshinymon SPECIES_KITTEN, 10, ITEM_WOOLBALL, 0
+	compare VAR_RESULT, 0
+	goto_if_eq GiveMon_VARROCK_SendParty_KITTEN
+	compare VAR_RESULT, 1
+	goto_if_eq GiveMon_VARROCK_SendPC_KITTEN
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+
+GiveMon_VARROCK_SendParty_KITTEN::
+	call GiveMon_VARROCK_ReceivedFanfare_KITTEN
+	msgbox GiveMon_VARROCK_SendParty_KITTEN_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq GiveMon_VARROCK_Received_KITTEN
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto GiveMon_VARROCK_Received_KITTEN
+	end
+
+
+GiveMon_VARROCK_SendPC_KITTEN::
+	call GiveMon_VARROCK_ReceivedFanfare_KITTEN
+	msgbox GiveMon_VARROCK_SendParty_KITTEN_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq GiveMon_VARROCK_TransferredToPC_KITTEN
+	call Common_EventScript_NameReceivedBoxMon
+	goto GiveMon_VARROCK_TransferredToPC_KITTEN
+	end
+
+
+GiveMon_VARROCK_TransferredToPC_KITTEN::
+	call Common_EventScript_TransferredToPC
+	goto GiveMon_VARROCK_Received_KITTEN
+	end
+
+
+GiveMon_VARROCK_ReceivedFanfare_KITTEN::
+	bufferspeciesname 1, SPECIES_KITTEN
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox GiveMon_VARROCK_ReceivedFanfare_KITTEN_Text_0
+	waitmessage
+	waitfanfare
+	bufferspeciesname 0, SPECIES_KITTEN
+	return
+
+
+GiveMon_VARROCK_Received_KITTEN::
+	releaseall
+	return
+
+
 VARROCK_SIGNPOST_Text_0:
 	.string "Varrock, the trade centre of the\n"
 	.string "Gielinor.$"
@@ -940,3 +1074,84 @@ STARTER_MON_SCRIPT_Text_3:
 STARTER_MON_SCRIPT_Text_4:
 	.string "SET 0\n"
 	.string "LEVEL SCALING?$"
+
+NPC_VARROCK_GERTRUDE_Text_0:
+	.string "Gertrude$"
+
+NPC_VARROCK_GERTRUDE_Text_1:
+	.string "Oh hello there sweety.\p"
+	.string "Would you be interested in a kitten?$"
+
+NPC_VARROCK_GERTRUDE_Text_2:
+	.string "Well I cannot just give you one.\p"
+	.string "I need to make sure you are a\n"
+	.string "responsible pet owner first.\p"
+	.string "Is it alright if I test you?$"
+
+NPC_VARROCK_GERTRUDE_Text_3:
+	.string "You have beaten my bitty kitties!$"
+
+NPC_VARROCK_GERTRUDE_Text_4:
+	.string "You pass the test with flying colours.\p"
+	.string "Here I would like you to have this kitty.$"
+
+NPC_VARROCK_GERTRUDE_Text_5:
+	.string "Please look after it.$"
+
+NPC_VARROCK_GERTRUDE_Text_6:
+	.string "Come back if you change your mind.$"
+
+NPC_VARROCK_GERTRUDE_Text_7:
+	.string "Oh, but they are really cute.$"
+
+NPC_VARROCK_GERTRUDE_Text_8:
+	.string "How is that Kitten I gave you going?\p"
+	.string "I hope it is well.$"
+
+NPC_VARROCK_PHILOP_Text_0:
+	.string "Philop$"
+
+NPC_VARROCK_PHILOP_Text_1:
+	.string "Mum says that Fluffs is her favourite\n"
+	.string "of all the kitties.$"
+
+NPC_VARROCK_KANEL_Text_0:
+	.string "Kanel$"
+
+NPC_VARROCK_KANEL_Text_1:
+	.string "Meow.$"
+
+NPC_VARROCK_CAT_INFO_Text_0:
+	.string "It is a Bookcase filled with tons of\n"
+	.string "information about cats.\p"
+	.string "Would you like to read it?$"
+
+NPC_VARROCK_CAT_INFO_Text_1:
+	.string "It is commonly known that a Kitten can\n"
+	.string "evolve into a Cat at level 20.\p"
+	.string "But a Cat can evolve into many other\n"
+	.string "forms from there.\p"
+	.string "Some cats can evolve from having\n"
+	.string "specific types of monsters in the\l"
+	.string "party, such as PSYCHIC types & some\l"
+	.string "rats.\p"
+	.string "Other cats can evolve by using a\n"
+	.string "certain Rune on them.\p"
+	.string "But don't let them REST all the time\n"
+	.string "otherwise they may get lazy.\p"
+	.string "And even the closest of bonds may\n"
+	.string "cause a cat to get a bit too overgrown.$"
+
+NPC_ROUTE18_MAN_Text_0:
+	.string "Over the road here is Gertrudes house.\p"
+	.string "If you like cats then I think you should\n"
+	.string "pay her a visit.\p"
+	.string "If I was not busy sitting on this bench\n"
+	.string "I would pay her a visit myself.$"
+
+GiveMon_VARROCK_SendParty_KITTEN_Text_0:
+	.string "Would you like to give your monster a\n"
+	.string "nickname?$"
+
+GiveMon_VARROCK_ReceivedFanfare_KITTEN_Text_0:
+	.string "{PLAYER} obtained a {STR_VAR_2}.$"

@@ -2812,5 +2812,48 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_ROUTE17_TRAINER_2),
         .party = {.NoItemDefaultMoves = sParty_ROUTE17_TRAINER_2},
     },
+    
+    [TRAINER_PREZLEEK] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_PLAYER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_prezleek,
+        .trainerName = _("Prezleek"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_Prezleek),
+        .party = {.NoItemDefaultMoves = sParty_Prezleek},
+    },
+
+    [TRAINER_NYCHANNEL] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_WOODCUTTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_woodcutter,
+        .trainerName = _("NYCHANNEL"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_NYCHANNEL),
+        .party = {.NoItemDefaultMoves = sParty_NYCHANNEL},
+    },
+
+    [TRAINER_GERTRUDE] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_LADY,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_gertrude,
+        .trainerName = _("GERTRUDE"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_GERTRUDE),
+        .party = {.NoItemDefaultMoves = sParty_GERTRUDE},
+    },
+
 
 };

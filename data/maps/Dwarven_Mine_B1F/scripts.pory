@@ -8,8 +8,26 @@ const OBJ_EVENT_ID_QUEST_HAM_2 = 33
 
 mapscripts Dwarven_Mine_B1F_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
-    goto(DWARVENMINES_QUEST_STATE)
+        if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    	{
+            goto(DWARVENMINES_QUEST_STATE)
+    	}
+		else
+		{
+			call(OPENWORLD_STATE_DWARVENMINES)
+		}
     }
+}
+
+script OPENWORLD_STATE_DWARVENMINES {
+		removeobject(OBJ_EVENT_ID_QUEST_KNIGHT)
+        removeobject(OBJ_EVENT_ID_QUEST_BLACKKNIGHT)
+        removeobject(OBJ_EVENT_ID_QUEST_OWEN)
+        removeobject(OBJ_EVENT_ID_QUEST_HAM_1)
+        removeobject(OBJ_EVENT_ID_QUEST_HAM_2)
+        setflag(FLAG_TEMP_1)
+        setflag(FLAG_TEMP_2)
+		return
 }
 
 script DWARVENMINES_QUEST_STATE{

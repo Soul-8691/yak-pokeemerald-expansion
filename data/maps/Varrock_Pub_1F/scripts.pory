@@ -1,8 +1,56 @@
 mapscripts Varrock_Pub_1F_MapScripts {
-    MAP_SCRIPT_ON_TRANSITION {
+    MAP_SCRIPT_ON_TRANSITION { 
+        call(PUB_EVENT_STATE)   
     }
 }
 
+
+
+script PUB_EVENT_STATE {
+
+    random(3)
+        switch (var(VAR_RESULT)) 
+        {
+            case 0:
+                addobject(13)
+                addobject(14)
+                addobject(15)
+                addobject(16)
+                addobject(17)
+                addobject(18)
+                addobject(19)
+                addobject(20)
+                clearflag(FLAG_TEMP_2)
+                removeobject(2)
+                removeobject(9)
+                removeobject(7)
+                removeobject(8)
+                removeobject(6)
+                removeobject(11)
+                setflag(FLAG_TEMP_1)
+                return
+            case 1:
+            case 2:
+                removeobject(13)
+                removeobject(14)
+                removeobject(15)
+                removeobject(16)
+                removeobject(17)
+                removeobject(18)
+                removeobject(19)
+                removeobject(20)
+                setflag(FLAG_TEMP_2)
+                addobject(2)
+                addobject(9)
+                addobject(7)
+                addobject(8)
+                addobject(6)
+                addobject(11)
+                clearflag(FLAG_TEMP_1)
+                return
+        }
+	
+}
 
 
 //NPCS.
@@ -24,7 +72,7 @@ script NPC_VarrockPub_NPC1
     lock
     faceplayer
     //namebox(".")
-    msgbox(format("Did you know that many players have named themselves after Pokemons?\pThere are famous players such as Evil Lucario, CUPHOLDER and CUPHOLDER.\pMany people agree that a Pokemon RSN is awesome, if you wanna see some, seek out u/Zarmos on Reddit, who took screenshots of over 380 Pokemon RSNs!\pThough it did take him almost 2 years to capture them all!"))
+    msgbox(format("Did you know that many players have named themselves after Pokemons?\pThere is one player named Evil Lucario who is really good at PvM.\pMany people agree that a Pokemon RSN is awesome, if you wanna see some, seek out u/Zarmos on Reddit, who took screenshots of over 380 Pokemon RSNs!\pThough it did take him almost 2 years to capture them all!"))
     //msgbox(format("Woops I am talking to much, here is a <Item> to make up for it!"))
     hidenamebox
     release
@@ -130,7 +178,7 @@ script NPC_VarrockPub_NPC9
     lock
     faceplayer
     namebox("Man")
-    msgbox(format("…"))
+    msgbox(format("Sometimes strange things happen within this pub.\pPeople start uncontrollably talking about a forth wall breaking things.\pHeck the other day the bartender was going on about some sort of computer game."))
     hidenamebox
     release
     end
@@ -266,4 +314,115 @@ script GiveMon_Received_GOLDENGNOME{
     //msgbox(format("EVENT COMPLETE."))
 	releaseall
 	return
+}
+
+
+
+
+
+
+script BATTLE_Prezleek
+{
+    lock
+    faceplayer
+    namebox ("Prezleek")
+    msgbox(format("…"))
+	hidenamebox
+    closemessage
+    namebox ("Baroo")
+    msgbox(format("Baroo? Baroo?"))
+	hidenamebox
+    closemessage
+    trainerbattle_single(TRAINER_PREZLEEK, format("…"),format("…"))
+    namebox ("Prezleek")
+    msgbox(format("…"))
+	hidenamebox
+    closemessage
+    release
+	end
+}
+
+
+script RAC_Spriggan
+{
+    lock
+    faceplayer
+    namebox ("Spriggan")
+    msgbox(format("Hello."))
+    hidenamebox
+    closemessage
+    release
+	end	
+}
+
+script RAC_Enkoro
+{
+    lock
+    faceplayer
+    namebox ("Enkoro")
+    msgbox(format("Hello."))
+    hidenamebox
+    closemessage
+    release
+	end	
+}
+
+script RAC_LegendArts
+{
+    lock
+    faceplayer
+    namebox ("LegendArts")
+    msgbox(format("Hello."))
+    hidenamebox
+    closemessage
+    release
+	end	
+}
+
+script RAC_Theo
+{
+    lock
+    faceplayer
+    namebox ("Theo")
+    msgbox(format("Hello."))
+    hidenamebox
+    closemessage
+    release
+	end	
+}
+
+script RAC_NYChannel
+{
+    lock
+    faceplayer
+    namebox ("NYChannel")
+    msgbox(format("Hello."))
+    hidenamebox
+    closemessage
+    release
+	end	
+}
+
+script RAC_Jaxyys
+{
+    lock
+    faceplayer
+    namebox ("Jaxyys")
+    msgbox(format("Hello."))
+    hidenamebox
+    closemessage
+    release
+	end	
+}
+
+script RAC_Snow
+{
+    lock
+    faceplayer
+    namebox ("Seakara")
+    msgbox(format("Hello."))
+    hidenamebox
+    closemessage
+    release
+	end	
 }

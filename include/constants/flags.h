@@ -77,7 +77,7 @@
 #define FLAG_ELVARG          0x32 // Unused Flag
 #define FLAG_RECEIVED_PHOENIX_EGG    0x33 // Unused Flag
 #define FLAG_RECEIVED_GUTHIX_EGG    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
+#define FLAG_RECIEVED_KITTEN    0x35 // Unused Flag
 #define FLAG_UNUSED_0x036    0x36 // Unused Flag
 #define FLAG_UNUSED_0x037    0x37 // Unused Flag
 #define FLAG_UNUSED_0x038    0x38 // Unused Flag

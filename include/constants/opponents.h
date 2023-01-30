@@ -258,6 +258,9 @@
 #define TRAINER_ROUTE18_TRAINER_7         216
 #define TRAINER_ROUTE19_TRAINER_1         217
 #define TRAINER_ROUTE13_TRAINER_9         218
+#define TRAINER_PREZLEEK                219
+#define TRAINER_NYCHANNEL               220
+#define TRAINER_GERTRUDE               221
 
 
 

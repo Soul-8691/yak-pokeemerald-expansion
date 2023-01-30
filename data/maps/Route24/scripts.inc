@@ -55,7 +55,7 @@ BATTLE_ROUTE24_MUGGER::
 
 
 BATTLE_ROUTE24_WOODCUTTER_1::
-	trainerbattle_single TRAINER_ROUTE24_WOODCUTTER_1, BATTLE_ROUTE24_WOODCUTTER_1_Text_0, BATTLE_ROUTE24_WOODCUTTER_1_Text_1
+	trainerbattle_single TRAINER_NYCHANNEL, BATTLE_ROUTE24_WOODCUTTER_1_Text_0, BATTLE_ROUTE24_WOODCUTTER_1_Text_1
 	namebox BATTLE_ROUTE24_WOODCUTTER_1_Text_2
 	msgbox BATTLE_ROUTE24_WOODCUTTER_1_Text_1
 	hidenamebox
@@ -176,7 +176,7 @@ BATTLE_ROUTE24_WOODCUTTER_1_Text_1:
 	.string "Do I still get xp?$"
 
 BATTLE_ROUTE24_WOODCUTTER_1_Text_2:
-	.string "Wilfred$"
+	.string "NyChannel$"
 
 BATTLE_ROUTE24_WOODCUTTER_2_Text_0:
 	.string "To chop down trees you need a hatchet\n"

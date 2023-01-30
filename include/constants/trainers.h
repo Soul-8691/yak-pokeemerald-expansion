@@ -218,7 +218,7 @@
 #define TRAINER_PIC_verac_osrs                197
 #define TRAINER_PIC_wizard_dark                198
 #define TRAINER_PIC_divination                199
-#define TRAINER_PIC_gertude                200
+#define TRAINER_PIC_gertrude                200
 #define TRAINER_PIC_graceful                201
 #define TRAINER_PIC_guard_draynor                202
 #define TRAINER_PIC_quester                203

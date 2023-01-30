@@ -370,7 +370,10 @@ Pub_Mod_Dolan_Text_2:
 	.string "..hic..$"
 
 GnomeBoi_Kevin_Text_0:
-	.string "Hi Boss! What can I do for ya?$"
+	.string "Hi Boss!\p"
+	.string "I am here for all of your cheating\n"
+	.string "needs.\p"
+	.string "What can I do for ya?$"
 
 GnomeBoi_Kevin_Text_1:
 	.string "What runes would you like?$"

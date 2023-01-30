@@ -19,11 +19,6 @@
       "map": "MAP_ROUTE52"
     },
     {
-      "direction": "up",
-      "offset": 46,
-      "map": "MAP_ROUTE54"
-    },
-    {
       "direction": "down",
       "offset": -18,
       "map": "MAP_YANILLE"

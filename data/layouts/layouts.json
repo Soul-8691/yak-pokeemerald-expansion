@@ -5557,7 +5557,7 @@
       "width": 68,
       "height": 30,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Varrock",
+      "secondary_tileset": "gTileset_Yanille",
       "border_filepath": "data/layouts/Yanille/border.bin",
       "blockdata_filepath": "data/layouts/Yanille/map.bin"
     },
@@ -5597,7 +5597,7 @@
       "width": 24,
       "height": 52,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Varrock",
+      "secondary_tileset": "gTileset_Yanille",
       "border_filepath": "data/layouts/Route52/border.bin",
       "blockdata_filepath": "data/layouts/Route52/map.bin"
     },
@@ -5607,7 +5607,7 @@
       "width": 50,
       "height": 16,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Varrock",
+      "secondary_tileset": "gTileset_Yanille",
       "border_filepath": "data/layouts/Route53/border.bin",
       "blockdata_filepath": "data/layouts/Route53/map.bin"
     },
@@ -5617,7 +5617,7 @@
       "width": 12,
       "height": 20,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Yanille",
       "border_filepath": "data/layouts/Route54/border.bin",
       "blockdata_filepath": "data/layouts/Route54/map.bin"
     },
@@ -5627,7 +5627,7 @@
       "width": 40,
       "height": 20,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Yanille",
       "border_filepath": "data/layouts/PortKhazard/border.bin",
       "blockdata_filepath": "data/layouts/PortKhazard/map.bin"
     },
@@ -6744,7 +6744,7 @@
     {
       "id": "LAYOUT_FALADOR_CASTLE_3F",
       "name": "Falador_Castle_3F_Layout",
-      "width": 14,
+      "width": 28,
       "height": 14,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
@@ -7040,6 +7040,16 @@
       "secondary_tileset": "gTileset_Windmill",
       "border_filepath": "data/layouts/Route56/border.bin",
       "blockdata_filepath": "data/layouts/Route56/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARTER_HOUSE_YANILLE",
+      "name": "Starter_House_Yanille_Layout",
+      "width": 8,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Starter_House_Yanille/border.bin",
+      "blockdata_filepath": "data/layouts/Starter_House_Yanille/map.bin"
     }
   ]
 }

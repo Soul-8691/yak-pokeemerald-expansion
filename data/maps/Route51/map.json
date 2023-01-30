@@ -27,11 +27,6 @@
       "direction": "down",
       "offset": 0,
       "map": "MAP_ROUTE54"
-    },
-    {
-      "direction": "down",
-      "offset": 12,
-      "map": "MAP_PORT_KHAZARD"
     }
   ],
   "object_events": [

@@ -106,7 +106,7 @@ script GnomeBoi_Kevin
 {
 	lock
 	faceplayer
-	msgbox("Hi Boss! What can I do for ya?")
+	msgbox(format("Hi Boss!\pI am here for all of your cheating needs.\pWhat can I do for ya?"))
 	release
 	multichoicedefault (1, 0, MULTI_CHEAT_MENU, 0, 0)
 	switch (var(VAR_RESULT))

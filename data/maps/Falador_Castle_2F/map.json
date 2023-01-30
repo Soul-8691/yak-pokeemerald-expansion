@@ -175,6 +175,13 @@
       "elevation": 0,
       "dest_map": "MAP_FALADOR_CASTLE_3F",
       "dest_warp_id": 0
+    },
+    {
+      "x": 11,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_FALADOR_CASTLE_3F",
+      "dest_warp_id": 3
     }
   ],
   "coord_events": [

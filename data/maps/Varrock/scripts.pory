@@ -585,7 +585,6 @@ script BATTLE_Soffan_and_Quo
 
 
 
-
 script NPC_VANNAKA
 {
     faceplayer
@@ -740,4 +739,170 @@ script STARTER_MON_SCRIPT
     release
 	end
 }
+
+
+
+
+
+
+
+
+
+//GERTRUDE's House
+script NPC_VARROCK_GERTRUDE
+{
+    lock
+    faceplayer
+    namebox ("Gertrude")
+    if (!flag(FLAG_RECIEVED_KITTEN)) 
+    {
+        msgbox(format("Oh hello there sweety.\pWould you be interested in a kitten?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT))
+        { 
+            msgbox(format("Well I cannot just give you one.\pI need to make sure you are a responsible pet owner first.\pIs it alright if I test you?"), MSGBOX_YESNO)
+            if (var(VAR_RESULT))
+            { 
+                trainerbattle_no_intro(TRAINER_GERTRUDE, msgbox(format("You have beaten my bitty kitties!")))
+                msgbox(format("You pass the test with flying colours.\pHere I would like you to have this kitty."))
+                call(GiveMon_VARROCK_KITTEN)
+                setflag(FLAG_RECIEVED_KITTEN)
+                msgbox(format("Please look after it."))
+            }
+            else
+            {
+                msgbox(format("Come back if you change your mind."))
+            }
+        }
+        else
+        {
+            msgbox(format("Oh, but they are really cute."))
+        }
+    }
+    else
+    {
+        msgbox(format("How is that Kitten I gave you going?\pI hope it is well."))
+    }
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_VARROCK_PHILOP
+{
+    lock
+    faceplayer
+    namebox ("Philop")
+	msgbox(format("Mum says that Fluffs is her favourite of all the kitties."))
+    //msgbox(format("I don't want this kitten.\pI want a grown up one.\pDo you have a big grown up Kitty you would like to trade for this Kitten?"), MSGBOX_YESNO)
+    //    if (var(VAR_RESULT))
+     //   { 
+     //   }
+
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script NPC_VARROCK_KANEL
+{
+    lock
+    faceplayer
+    namebox ("Kanel")
+	msgbox(format("Meow."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+
+script NPC_VARROCK_CAT_INFO
+{
+
+	msgbox(format("It is a Bookcase filled with tons of information about cats.\pWould you like to read it?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT))
+        { 
+            msgbox(format("It is commonly known that a Kitten can evolve into a Cat at level 20.\pBut a Cat can evolve into many other forms from there.\pSome cats can evolve from having specific types of monsters in the party, such as PSYCHIC types & some rats.\pOther cats can evolve by using a certain Rune on them.\pBut don't let them REST all the time otherwise they may get lazy.\pAnd even the closest of bonds may cause a cat to get a bit too overgrown."))
+        }
+    closemessage
+	release
+	end
+}
+
+
+script NPC_ROUTE18_MAN
+{
+    lock
+    faceplayer
+	msgbox(format("Over the road here is Gertrudes house.\pIf you like cats then I think you should pay her a visit.\pIf I was not busy sitting on this bench I would pay her a visit myself."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+
+
+
+script GiveMon_VARROCK_KITTEN {
+    setvar(VAR_TEMP_1, SPECIES_KITTEN)
+    giveshinymon (SPECIES_KITTEN, 10, ITEM_WOOLBALL, 0)
+    compare(VAR_RESULT, 0)
+	goto_if_eq(GiveMon_VARROCK_SendParty_KITTEN)
+    compare(VAR_RESULT, 1)
+	goto_if_eq(GiveMon_VARROCK_SendPC_KITTEN)
+    goto(Common_EventScript_NoMoreRoomForPokemon)
+    end
+}
+
+script GiveMon_VARROCK_SendParty_KITTEN{
+	call(GiveMon_VARROCK_ReceivedFanfare_KITTEN)
+	msgbox(format("Would you like to give your monster a nickname?"), MSGBOX_YESNO)
+    compare(VAR_RESULT, NO)
+	goto_if_eq(GiveMon_VARROCK_Received_KITTEN)
+	call(Common_EventScript_GetGiftMonPartySlot)
+	call(Common_EventScript_NameReceivedPartyMon)
+	goto(GiveMon_VARROCK_Received_KITTEN)
+	end
+}
+
+script GiveMon_VARROCK_SendPC_KITTEN {
+	call(GiveMon_VARROCK_ReceivedFanfare_KITTEN)
+	msgbox(format("Would you like to give your monster a nickname?"), MSGBOX_YESNO)
+    compare(VAR_RESULT, NO)
+	goto_if_eq(GiveMon_VARROCK_TransferredToPC_KITTEN)
+	call (Common_EventScript_NameReceivedBoxMon)
+	goto (GiveMon_VARROCK_TransferredToPC_KITTEN)
+	end
+}
+
+script GiveMon_VARROCK_TransferredToPC_KITTEN{
+	call (Common_EventScript_TransferredToPC)
+	goto (GiveMon_VARROCK_Received_KITTEN)
+	end
+}
+
+script GiveMon_VARROCK_ReceivedFanfare_KITTEN{
+	bufferspeciesname(1, SPECIES_KITTEN)
+	//removeobject LOCALID_BELDUM_BALL
+    //setvar(VAR_POKESCAPE_ERNEST_QUEST_STATE, 3)
+	playfanfare (MUS_OBTAIN_ITEM)
+	msgbox(format("{PLAYER} obtained a {STR_VAR_2}."))
+	waitmessage
+	waitfanfare
+	bufferspeciesname(0, SPECIES_KITTEN)
+	return
+}
+
+script GiveMon_VARROCK_Received_KITTEN{
+    //msgbox(format("EVENT COMPLETE."))
+	releaseall
+	return
+}
+
+
 

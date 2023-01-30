@@ -9577,7 +9577,7 @@ extern const u32 gTrainerFrontPic_guthan_osrs[];
 extern const u32 gTrainerFrontPic_verac_osrs[];
 extern const u32 gTrainerFrontPic_wizard_dark[];
 extern const u32 gTrainerFrontPic_divination[];
-extern const u32 gTrainerFrontPic_gertude[];
+extern const u32 gTrainerFrontPic_gertrude[];
 extern const u32 gTrainerFrontPic_graceful[];
 extern const u32 gTrainerFrontPic_guard_draynor[];
 extern const u32 gTrainerFrontPic_quester[];
@@ -9786,7 +9786,7 @@ extern const u32 gTrainerPalette_guthan_osrs[];
 extern const u32 gTrainerPalette_verac_osrs[];
 extern const u32 gTrainerPalette_wizard_dark[];
 extern const u32 gTrainerPalette_divination[];
-extern const u32 gTrainerPalette_gertude[];
+extern const u32 gTrainerPalette_gertrude[];
 extern const u32 gTrainerPalette_graceful[];
 extern const u32 gTrainerPalette_guard_draynor[];
 extern const u32 gTrainerPalette_quester[];
@@ -10031,6 +10031,19 @@ extern const u32 gBattleTerrainTilemap_Wheat[];
 extern const u32 gBattleTerrainAnimTiles_Wheat[];
 extern const u32 gBattleTerrainAnimTilemap_Wheat[];
 extern const u32 gBattleTerrainPalette_Wheat[];
+
+extern const u32 gBattleTerrainTiles_POKESCAPE_BARROWS[];
+extern const u32 gBattleTerrainTilemap_POKESCAPE_BARROWS[];
+extern const u32 gBattleTerrainAnimTiles_POKESCAPE_BARROWS[];
+extern const u32 gBattleTerrainAnimTilemap_POKESCAPE_BARROWS[];
+extern const u32 gBattleTerrainPalette_POKESCAPE_BARROWS[];
+
+extern const u32 gBattleTerrainTiles_POKESCAPE_GRASS[];
+extern const u32 gBattleTerrainTilemap_POKESCAPE_GRASS[];
+extern const u32 gBattleTerrainAnimTiles_POKESCAPE_GRASS[];
+extern const u32 gBattleTerrainAnimTilemap_POKESCAPE_GRASS[];
+extern const u32 gBattleTerrainPalette_POKESCAPE_GRASS[];
+
 
 
 // pokedex

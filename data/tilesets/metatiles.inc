@@ -771,3 +771,10 @@ gMetatiles_IndoorTowns2::
 	.align 1
 gMetatileAttributes_IndoorTowns2::
 	.incbin "data/tilesets/secondary/indoortowns2/metatile_attributes.bin"
+	.align 1
+gMetatiles_Yanille::
+	.incbin "data/tilesets/secondary/yanille/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Yanille::
+	.incbin "data/tilesets/secondary/yanille/metatile_attributes.bin"

@@ -578,8 +578,8 @@ u8 BattleSetup_GetTerrainId(void)
     PlayerGetDestCoords(&x, &y);
     tileBehavior = MapGridGetMetatileBehaviorAt(x, y);
 
-//    if (MetatileBehavior_IsTallGrass(tileBehavior))
-//        return BATTLE_TERRAIN_GRASS;
+    //if (MetatileBehavior_IsTallGrass(tileBehavior))
+    //    return BATTLE_TERRAIN_GRASS;
     if (MetatileBehavior_IsLongGrass(tileBehavior))
         return BATTLE_TERRAIN_LONG_GRASS;
     if (MetatileBehavior_IsSandOrDeepSand(tileBehavior))
@@ -611,6 +611,9 @@ u8 BattleSetup_GetTerrainId(void)
 	case MAP_TYPE_WILDERNESS:
 		if (MetatileBehavior_IsTallGrass(tileBehavior))
 			return BATTLE_TERRAIN_WILDERNESS;
+    case MAP_TYPE_BARROWS:
+		if (MetatileBehavior_IsTallGrass(tileBehavior))
+			return BATTLE_TERRAIN_POKESCAPE_BARROWS;
 	case MAP_TYPE_ROUTE:
 		if (MetatileBehavior_IsTallGrass(tileBehavior))
 			return BATTLE_TERRAIN_GRASS;

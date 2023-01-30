@@ -887,6 +887,7 @@
 #define MAP_POLYPORE_DUNGEON                    (47 | (50 << 8))
 #define MAP_STARTER_HOUSE_VARROCK               (48 | (50 << 8))
 #define MAP_STARTER_HOUSE_FALADOR               (49 | (50 << 8))
+#define MAP_STARTER_HOUSE_YANILLE               (50 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

@@ -3,6 +3,54 @@ Varrock_Pub_1F_MapScripts::
 	.byte 0
 
 Varrock_Pub_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	call PUB_EVENT_STATE
+	return
+
+
+PUB_EVENT_STATE::
+	random 3
+	switch VAR_RESULT
+	case 0, PUB_EVENT_STATE_2
+	case 1, PUB_EVENT_STATE_3
+	case 2, PUB_EVENT_STATE_3
+	return
+
+PUB_EVENT_STATE_2:
+	addobject 13
+	addobject 14
+	addobject 15
+	addobject 16
+	addobject 17
+	addobject 18
+	addobject 19
+	addobject 20
+	clearflag FLAG_TEMP_2
+	removeobject 2
+	removeobject 9
+	removeobject 7
+	removeobject 8
+	removeobject 6
+	removeobject 11
+	setflag FLAG_TEMP_1
+	return
+
+PUB_EVENT_STATE_3:
+	removeobject 13
+	removeobject 14
+	removeobject 15
+	removeobject 16
+	removeobject 17
+	removeobject 18
+	removeobject 19
+	removeobject 20
+	setflag FLAG_TEMP_2
+	addobject 2
+	addobject 9
+	addobject 7
+	addobject 8
+	addobject 6
+	addobject 11
+	clearflag FLAG_TEMP_1
 	return
 
 
@@ -135,7 +183,7 @@ NPC_VarrockPub_NPC9::
 	lock
 	faceplayer
 	namebox NPC_VarrockPub_NPC8_Text_0
-	msgbox NPC_VarrockPub_NPC8_Text_1
+	msgbox NPC_VarrockPub_NPC9_Text_0
 	hidenamebox
 	release
 	end
@@ -262,6 +310,103 @@ GiveMon_Received_GOLDENGNOME::
 	return
 
 
+BATTLE_Prezleek::
+	lock
+	faceplayer
+	namebox BATTLE_Prezleek_Text_0
+	msgbox NPC_VarrockPub_NPC8_Text_1
+	hidenamebox
+	closemessage
+	namebox BATTLE_Prezleek_Text_1
+	msgbox BATTLE_Prezleek_Text_2
+	hidenamebox
+	closemessage
+	trainerbattle_single TRAINER_PREZLEEK, NPC_VarrockPub_NPC8_Text_1, NPC_VarrockPub_NPC8_Text_1
+	namebox BATTLE_Prezleek_Text_0
+	msgbox NPC_VarrockPub_NPC8_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+RAC_Spriggan::
+	lock
+	faceplayer
+	namebox RAC_Spriggan_Text_0
+	msgbox RAC_Spriggan_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+RAC_Enkoro::
+	lock
+	faceplayer
+	namebox RAC_Enkoro_Text_0
+	msgbox RAC_Spriggan_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+RAC_LegendArts::
+	lock
+	faceplayer
+	namebox RAC_LegendArts_Text_0
+	msgbox RAC_Spriggan_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+RAC_Theo::
+	lock
+	faceplayer
+	namebox RAC_Theo_Text_0
+	msgbox RAC_Spriggan_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+RAC_NYChannel::
+	lock
+	faceplayer
+	namebox RAC_NYChannel_Text_0
+	msgbox RAC_Spriggan_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+RAC_Jaxyys::
+	lock
+	faceplayer
+	namebox RAC_Jaxyys_Text_0
+	msgbox RAC_Spriggan_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
+RAC_Snow::
+	lock
+	faceplayer
+	namebox RAC_Snow_Text_0
+	msgbox RAC_Spriggan_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+
 NPC_VarrockPub_BARBARIAN_Text_0:
 	.string "Barbarian$"
 
@@ -271,8 +416,8 @@ NPC_VarrockPub_BARBARIAN_Text_1:
 NPC_VarrockPub_NPC1_Text_0:
 	.string "Did you know that many players have\n"
 	.string "named themselves after Pokemons?\p"
-	.string "There are famous players such as Evil\n"
-	.string "Lucario, CUPHOLDER and CUPHOLDER.\p"
+	.string "There is one player named Evil Lucario\n"
+	.string "who is really good at PvM.\p"
 	.string "Many people agree that a Pokemon RSN is\n"
 	.string "awesome, if you wanna see some, seek\l"
 	.string "out u/Zarmos on Reddit, who took\l"
@@ -361,6 +506,15 @@ NPC_VarrockPub_NPC8_Text_0:
 NPC_VarrockPub_NPC8_Text_1:
 	.string "…$"
 
+NPC_VarrockPub_NPC9_Text_0:
+	.string "Sometimes strange things happen within\n"
+	.string "this pub.\p"
+	.string "People start uncontrollably talking\n"
+	.string "about a forth wall breaking things.\p"
+	.string "Heck the other day the bartender was\n"
+	.string "going on about some sort of computer\l"
+	.string "game.$"
+
 NPC_VarrockPub_Trainer_1_Text_0:
 	.string "Jonny$"
 
@@ -401,3 +555,36 @@ GiveMon_SendParty_GOLDENGNOME_Text_0:
 
 GiveMon_ReceivedFanfare_GOLDENGNOME_Text_0:
 	.string "{PLAYER} obtained a {STR_VAR_2}.$"
+
+BATTLE_Prezleek_Text_0:
+	.string "Prezleek$"
+
+BATTLE_Prezleek_Text_1:
+	.string "Baroo$"
+
+BATTLE_Prezleek_Text_2:
+	.string "Baroo? Baroo?$"
+
+RAC_Spriggan_Text_0:
+	.string "Spriggan$"
+
+RAC_Spriggan_Text_1:
+	.string "Hello.$"
+
+RAC_Enkoro_Text_0:
+	.string "Enkoro$"
+
+RAC_LegendArts_Text_0:
+	.string "LegendArts$"
+
+RAC_Theo_Text_0:
+	.string "Theo$"
+
+RAC_NYChannel_Text_0:
+	.string "NYChannel$"
+
+RAC_Jaxyys_Text_0:
+	.string "Jaxyys$"
+
+RAC_Snow_Text_0:
+	.string "Seakara$"

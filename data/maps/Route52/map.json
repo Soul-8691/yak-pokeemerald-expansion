@@ -25,18 +25,18 @@
     },
     {
       "direction": "up",
-      "offset": -4,
+      "offset": 0,
       "map": "MAP_ROUTE54"
     },
     {
       "direction": "up",
-      "offset": 8,
+      "offset": 12,
       "map": "MAP_PORT_KHAZARD"
     }
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_NOOB",
+      "graphics_id": "OBJ_EVENT_GFX_HUNTER_F",
       "x": 7,
       "y": 23,
       "elevation": 3,
@@ -114,7 +114,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
       "x": 15,
       "y": 46,
       "elevation": 3,

@@ -3,7 +3,24 @@ Dwarven_Mine_B1F_MapScripts::
 	.byte 0
 
 Dwarven_Mine_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Dwarven_Mine_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	call OPENWORLD_STATE_DWARVENMINES
+	return
+
+Dwarven_Mine_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 	goto DWARVENMINES_QUEST_STATE
+	return
+
+
+OPENWORLD_STATE_DWARVENMINES::
+	removeobject 39
+	removeobject 51
+	removeobject 32
+	removeobject 40
+	removeobject 33
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
 	return
 
 

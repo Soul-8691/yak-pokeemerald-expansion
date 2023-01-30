@@ -158,7 +158,7 @@ static void WarpToRIMMINGTON(void)
 }
 static void WarpToYANILLE(void)
 {
-    SetWarpDestination(MAP_GROUP(YANILLE), MAP_NUM(YANILLE), 1, 5, 5);
+    SetWarpDestination(MAP_GROUP(STARTER_HOUSE_YANILLE), MAP_NUM(STARTER_HOUSE_YANILLE), 1, 5, 5);
     WarpIntoMap();
 }
 static void WarpToARDOUGNE(void)

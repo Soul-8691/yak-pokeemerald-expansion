@@ -1579,3 +1579,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Route55/scripts.inc"
 
 	.include "data/maps/Route56/scripts.inc"
+
+	.include "data/maps/Starter_House_Yanille/scripts.inc"

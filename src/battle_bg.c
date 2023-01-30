@@ -707,6 +707,28 @@ static const struct BattleBackground gBattleTerrainTable[] =
         .entryTilemap = gBattleTerrainAnimTilemap_Wheat,
         .palette = gBattleTerrainPalette_Wheat,
     },
+
+    [BATTLE_TERRAIN_POKESCAPE_BARROWS] =
+    {
+        .tileset = gBattleTerrainTiles_POKESCAPE_BARROWS,
+        .tilemap = gBattleTerrainTilemap_POKESCAPE_BARROWS,
+        .entryTileset = gBattleTerrainAnimTiles_POKESCAPE_BARROWS,
+        .entryTilemap = gBattleTerrainAnimTilemap_POKESCAPE_BARROWS,
+        .palette = gBattleTerrainPalette_POKESCAPE_BARROWS,
+    },
+
+    [BATTLE_TERRAIN_POKESCAPE_GRASS] =
+    {
+        .tileset = gBattleTerrainTiles_POKESCAPE_GRASS,
+        .tilemap = gBattleTerrainTilemap_POKESCAPE_GRASS,
+        .entryTileset = gBattleTerrainAnimTiles_POKESCAPE_GRASS,
+        .entryTilemap = gBattleTerrainAnimTilemap_POKESCAPE_GRASS,
+        .palette = gBattleTerrainPalette_POKESCAPE_GRASS,
+    },
+
+    
+
+    
 };
 
 static void sub_8035648(void);

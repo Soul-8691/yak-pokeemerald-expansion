@@ -799,7 +799,7 @@ static const union AnimCmd *const sAnims_divination[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_gertude[] ={
+static const union AnimCmd *const sAnims_gertrude[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -1026,7 +1026,7 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_verac_osrs] = sAnims_verac_osrs,
     [TRAINER_PIC_wizard_dark] = sAnims_wizard_dark,
     [TRAINER_PIC_divination] = sAnims_divination,
-    [TRAINER_PIC_gertude] = sAnims_gertude,
+    [TRAINER_PIC_gertrude] = sAnims_gertrude,
     [TRAINER_PIC_graceful] = sAnims_graceful,
     [TRAINER_PIC_guard_draynor] = sAnims_guard_draynor,
     [TRAINER_PIC_quester] = sAnims_quester,

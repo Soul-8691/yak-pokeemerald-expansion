@@ -2203,13 +2203,7 @@ static const struct TrainerMonItemDefaultMoves sParty_FALADOR_GYM_2[] = {
     .lvl = 24,
     .species = SPECIES_DUCK_NORMAL_FORM,
     .heldItem = ITEM_NONE
-    },
-    {
-    .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_DUCK_NORMAL_FORM,
-    .heldItem = ITEM_NONE
-    },
+    }
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_FALADOR_GYM_3[] = {
@@ -3389,3 +3383,63 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE17_TRAINER_2[] = {
     .species = SPECIES_CAT_CLOCKWORK_FORM,
     }
 };
+
+static const struct TrainerMonNoItemDefaultMoves sParty_Prezleek[] = {  
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_YAK_PACK_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_MONTY,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_NYCHANNEL[] = {  
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_DEAD_TREE,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_PIKE,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_BEAR_CUB,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_GERTRUDE[] = {  
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_KITTEN,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_CAT_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_CAT_OVERGROWN_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_CAT_LAZY_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_CAT_WILY_FORM,
+    },
+};
+

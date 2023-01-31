@@ -693,6 +693,8 @@
 #define MAP_ASGARNIAN_DUNGEON_B1F      (25 | (36 << 8))
 #define MAP_ASGARNIAN_DUNGEON_B2F      (26 | (36 << 8))
 #define MAP_ASGARNIAN_DUNGEON_B3F      (27 | (36 << 8))
+#define MAP_WILDERNESS_FOREST          (28 | (36 << 8))
+#define MAP_CALLISTO_LAIR              (29 | (36 << 8))
 
 // Map Group 37
 #define MAP_TUTORIAL_ISLAND_LAB_UP   (0 | (37 << 8))

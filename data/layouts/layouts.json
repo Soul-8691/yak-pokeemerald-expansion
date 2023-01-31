@@ -7050,6 +7050,26 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Starter_House_Yanille/border.bin",
       "blockdata_filepath": "data/layouts/Starter_House_Yanille/map.bin"
+    },
+    {
+      "id": "LAYOUT_WILDERNESS_FOREST",
+      "name": "Wilderness_Forest_Layout",
+      "width": 20,
+      "height": 30,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Wilderness",
+      "border_filepath": "data/layouts/Wilderness_Forest/border.bin",
+      "blockdata_filepath": "data/layouts/Wilderness_Forest/map.bin"
+    },
+    {
+      "id": "LAYOUT_CALLISTO_LAIR",
+      "name": "Callisto_Lair_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Callisto_Lair/border.bin",
+      "blockdata_filepath": "data/layouts/Callisto_Lair/map.bin"
     }
   ]
 }

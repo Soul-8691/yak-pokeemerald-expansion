@@ -740,7 +740,9 @@
     "KaramjaVolcano_B3F",
     "AsgarnianDungeon_B1F",
     "AsgarnianDungeon_B2F",
-    "AsgarnianDungeon_B3F"
+    "AsgarnianDungeon_B3F",
+    "Wilderness_Forest",
+    "Callisto_Lair"
   ],
   "gMapGroup37": [
     "Tutorial_Island_Lab_Up",

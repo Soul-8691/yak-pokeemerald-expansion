@@ -3443,3 +3443,28 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GERTRUDE[] = {
     },
 };
 
+
+static const struct TrainerMonNoItemDefaultMoves sParty_SINKHOLE_NPC_FORGOTTENWARRIOR_1[] = {  
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_WEBSNIPPER,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_BEHEMOTH_ADOLSCENT_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_STALKER,
+    }
+};
+
+
+
+
+
+
+

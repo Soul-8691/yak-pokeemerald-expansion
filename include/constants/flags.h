@@ -1189,9 +1189,9 @@
 #define FLAG_ITEM_RimmingtonMines_3                            0x451
 
 #define FLAG_ITEM_ROUTE_119_HYPER_POTION_2                          0x452
-#define FLAG_ITEM_ROUTE_120_HYPER_POTION                            0x453
-#define FLAG_ITEM_ROUTE_120_NEST_BALL                               0x454
-#define FLAG_ITEM_ROUTE_123_ELIXIR                                  0x455
+#define FLAG_ITEM_SINKHOLE_1                            0x453
+#define FLAG_ITEM_SINKHOLE_2                               0x454
+#define FLAG_ITEM_SINKHOLE_3                                  0x455
 #define FLAG_ITEM_NEW_MAUVILLE_THUNDER_STONE                        0x456
 #define FLAG_ITEM_FIERY_PATH_FIRE_STONE                             0x457
 #define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_TM_07                         0x458

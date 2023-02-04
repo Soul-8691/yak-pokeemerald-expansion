@@ -262,6 +262,7 @@
 #define TRAINER_NYCHANNEL               220
 #define TRAINER_GERTRUDE               221
 
+#define TRAINER_SINKHOLE_NPC_FORGOTTENWARRIOR_1 225
 
 
 

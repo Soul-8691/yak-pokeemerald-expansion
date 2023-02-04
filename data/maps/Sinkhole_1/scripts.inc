@@ -18,7 +18,7 @@ ITEM_SINKHOLE_2::
 
 
 ITEM_SINKHOLE_3::
-	finditem ITEM_SPIRIT_CHARM
+	finditem ITEM_SPIRIT_SHARD
 	end
 
 

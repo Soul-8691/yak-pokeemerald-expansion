@@ -105,6 +105,32 @@ Movement_Lumbridge_Castle_COOKS_TRIGGER2:
 	walk_up
 	step_end
 
+Lumbridge_Castle_COOKS_TRIGGER_celler::
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Lumbridge_Castle_COOKS_TRIGGER_celler_3
+Lumbridge_Castle_COOKS_TRIGGER_celler_2:
+	release
+	end
+
+Lumbridge_Castle_COOKS_TRIGGER_celler_1:
+	lock
+	PlaySE SE_PIN
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_COOKS_TRIGGER1
+	waitmovement 0
+	msgbox Lumbridge_Castle_COOKS_TRIGGER_celler_Text_0
+	waitmessage
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKLEFT
+	waitmovement 0
+	release
+	end
+
+Lumbridge_Castle_COOKS_TRIGGER_celler_3:
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_Castle_COOKS_TRIGGER_celler_1
+	goto Lumbridge_Castle_COOKS_TRIGGER_celler_2
+
+
 Lumbridge_Castle_Introduction::
 	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
 	goto_if_eq Lumbridge_Castle_Introduction_3
@@ -1058,6 +1084,10 @@ Lumbridge_Castle_COOKS_TRIGGER_Text_0:
 Lumbridge_Castle_COOKS_TRIGGER_Text_1:
 	.string "You hear a loud noise coming from the\n"
 	.string "kitchen.$"
+
+Lumbridge_Castle_COOKS_TRIGGER_celler_Text_0:
+	.string "Wait!\p"
+	.string "Come talk to me.$"
 
 LeftDoorScript_Text_0:
 	.string "Hans$"

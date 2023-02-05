@@ -2882,4 +2882,19 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_LUMBRIDGEFOREST_BOT1},
     },
 
+    [TRAINER_SINKHOLE_NPC_FORGOTTENWARRIOR_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_DARK,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_wizard_dark,
+        .trainerName = _("WARRIOR"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_SINKHOLE_NPC_FORGOTTENWARRIOR_1),
+        .party = {.NoItemDefaultMoves = sParty_SINKHOLE_NPC_FORGOTTENWARRIOR_1},
+    },
+
+
 };

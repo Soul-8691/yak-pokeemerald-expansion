@@ -276,6 +276,24 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "Lumbridge_Castle_COOKS_TRIGGER"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Lumbridge_Castle_COOKS_TRIGGER_celler"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Lumbridge_Castle_COOKS_TRIGGER_celler"
     }
   ],
   "bg_events": [

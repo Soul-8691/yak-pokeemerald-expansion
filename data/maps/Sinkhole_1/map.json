@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SINKHOLE_NPC_FORGOTTENWARRIOR_2",
       "flag": "0"
     },
     {
@@ -37,7 +37,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SINKHOLE_NPC_TRADER",
       "flag": "0"
     },
     {
@@ -50,8 +50,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_SINKHOLE_1",
+      "flag": "FLAG_ITEM_SINKHOLE_1"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_COW_DAIRY",
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_COW",
       "flag": "0"
     },
     {
@@ -76,8 +76,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_SINKHOLE_2",
+      "flag": "FLAG_ITEM_SINKHOLE_2"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
@@ -89,20 +89,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_SINKHOLE_3",
+      "flag": "FLAG_ITEM_SINKHOLE_3"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_IRONMAN",
-      "x": 37,
+      "x": 41,
       "y": 26,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_DOWN_AND_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 3,
       "movement_range_y": 3,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "BATTLE_SINKHOLE_NPC_FORGOTTENWARRIOR_1",
       "flag": "0"
     },
     {
@@ -115,7 +115,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "SINKHOLE_NPC_FORGOTTENWARRIOR_1",
       "flag": "0"
     }
   ],
@@ -227,7 +227,7 @@
     },
     {
       "x": 21,
-      "y": 2,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_SINKHOLE_2",
       "dest_warp_id": 0

@@ -4336,8 +4336,8 @@ static void KeepMoveSelectorVisible(u8 firstSpriteId)
 
 static void BufferStat(u8 *dst, s8 natureMod, u32 stat, u32 strId, u32 n)
 {
-    static const u8 sTextNatureDown[] = _("{COLOR}{08}");
-    static const u8 sTextNatureUp[] = _("{COLOR}{05}");
+    static const u8 sTextNatureDown[] = _("{COLOR}{05}"); //red
+    static const u8 sTextNatureUp[] = _("{COLOR}{08}"); //blue
     static const u8 sTextNatureNeutral[] = _("{COLOR}{01}");
     u8 *txtPtr;
 

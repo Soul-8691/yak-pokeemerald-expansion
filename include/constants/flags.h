@@ -1188,7 +1188,8 @@
 #define FLAG_ITEM_RimmingtonMines_2                              0x450
 #define FLAG_ITEM_RimmingtonMines_3                            0x451
 
-#define FLAG_ITEM_ROUTE_119_HYPER_POTION_2                          0x452
+#define FLAG_ITEM_LUMBRIDGEFOREST_1                          0x452
+
 #define FLAG_ITEM_ROUTE_120_HYPER_POTION                            0x453
 #define FLAG_ITEM_ROUTE_120_NEST_BALL                               0x454
 #define FLAG_ITEM_ROUTE_123_ELIXIR                                  0x455

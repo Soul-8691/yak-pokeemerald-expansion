@@ -377,7 +377,9 @@ script NPC_DraynorManor_Fisherman{
             closemessage
 			release
 			end
-        case 2: 
+        case 2:
+		case 3:
+		case 4: 
 			msgbox(format("The piranhas went extinct…"))
 			hidenamebox
             closemessage

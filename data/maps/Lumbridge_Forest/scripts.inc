@@ -1,2 +1,88 @@
 Lumbridge_Forest_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Lumbridge_Forest_MapScripts_MAP_SCRIPT_ON_TRANSITION
 	.byte 0
+
+Lumbridge_Forest_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 6
+	return
+
+
+LUMBRIDGEFOREST_NPC_BOT1::
+	msgbox LUMBRIDGEFOREST_NPC_BOT1_Text_0
+	closemessage
+	release
+	end
+
+
+LUMBRIDGEFOREST_NPC_BOT2::
+	msgbox LUMBRIDGEFOREST_NPC_BOT2_Text_0
+	closemessage
+	release
+	end
+
+
+LUMBRIDGEFOREST_NPC_WOODCUTTER::
+	faceplayer
+	msgbox LUMBRIDGEFOREST_NPC_WOODCUTTER_Text_0
+	closemessage
+	release
+	end
+
+
+BATTLE_LUMBRIDGEFOREST_BOT1::
+	trainerbattle_single TRAINER_LUMBRIDGEFOREST_BOT1, BATTLE_LUMBRIDGEFOREST_BOT1_Text_0, BATTLE_LUMBRIDGEFOREST_BOT1_Text_1
+	namebox BATTLE_LUMBRIDGEFOREST_BOT1_Text_2
+	msgbox BATTLE_LUMBRIDGEFOREST_BOT1_Text_1
+	hidenamebox
+	release
+	end
+
+
+BATTLE_LUMBRIDGEFOREST_WOODCUTTER1::
+	trainerbattle_single TRAINER_LUMBRIDGEFOREST_WOODCUTTER1, BATTLE_LUMBRIDGEFOREST_WOODCUTTER1_Text_0, BATTLE_LUMBRIDGEFOREST_WOODCUTTER1_Text_1
+	namebox BATTLE_LUMBRIDGEFOREST_WOODCUTTER1_Text_2
+	msgbox BATTLE_LUMBRIDGEFOREST_WOODCUTTER1_Text_3
+	hidenamebox
+	release
+	end
+
+
+ITEM_LUMBRIDGEFOREST_TM49_SNARL::
+	finditem ITEM_TM49_SNARL
+	end
+
+
+LUMBRIDGEFOREST_NPC_BOT1_Text_0:
+	.string "BEEP BOOP.$"
+
+LUMBRIDGEFOREST_NPC_BOT2_Text_0:
+	.string "CHOP, CHOP, CHOP.$"
+
+LUMBRIDGEFOREST_NPC_WOODCUTTER_Text_0:
+	.string "These bots are so annoying.$"
+
+BATTLE_LUMBRIDGEFOREST_BOT1_Text_0:
+	.string "ALERT!\p"
+	.string "INTERACTION DETECTED.\p"
+	.string "RESPONSE ACTIVATED.\p"
+	.string "HELLO, I AM NOT A BOT.$"
+
+BATTLE_LUMBRIDGEFOREST_BOT1_Text_1:
+	.string "HELLO, I AM NOT A BOT.$"
+
+BATTLE_LUMBRIDGEFOREST_BOT1_Text_2:
+	.string "BOT$"
+
+BATTLE_LUMBRIDGEFOREST_WOODCUTTER1_Text_0:
+	.string "OMG LUL, guess what?\p"
+	.string "These woods belong to me!$"
+
+BATTLE_LUMBRIDGEFOREST_WOODCUTTER1_Text_1:
+	.string "JK, I'll share.$"
+
+BATTLE_LUMBRIDGEFOREST_WOODCUTTER1_Text_2:
+	.string "WOODCUTTER$"
+
+BATTLE_LUMBRIDGEFOREST_WOODCUTTER1_Text_3:
+	.string "Like ROFLMAO you are stronk.\p"
+	.string "You sure cut me down to size, OMGEALUL!$"

@@ -375,6 +375,7 @@ enum
     WALLPAPER_FOREST,
     WALLPAPER_CITY,
     WALLPAPER_DESERT,
+    WALLPAPER_POKESCAPE_1,
     WALLPAPER_SAVANNA,
     WALLPAPER_CRAG,
     WALLPAPER_VOLCANO,
@@ -389,6 +390,7 @@ enum
     WALLPAPER_MACHINE,
     WALLPAPER_PLAIN,
     WALLPAPER_FRIENDS, // The one received as a gift from Walda's parents.
+    
     WALLPAPER_COUNT
 };
 
@@ -1216,11 +1218,23 @@ static const u16 gWallpaperPalettes_Plain[][16] =
 static const u32 gWallpaperTiles_Plain[] = INCBIN_U32("graphics/pokemon_storage/plain.4bpp.lz");
 static const u32 gWallpaperTilemap_Plain[] = INCBIN_U32("graphics/pokemon_storage/plain.bin.lz");
 
+//PokeScape
+static const u16 gWallpaperPalettes_PokeScape_1[][16] =
+{
+    INCBIN_U16("graphics/pokemon_storage/PokeScape_1_frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/PokeScape_1_bg.gbapal"),
+};
+static const u32 gWallpaperTiles_PokeScape_1[] = INCBIN_U32("graphics/pokemon_storage/PokeScape_1.4bpp.lz");
+static const u32 gWallpaperTilemap_PokeScape_1[] = INCBIN_U32("graphics/pokemon_storage/PokeScape_1.bin.lz");
+
+
 // 12x18 tilemap
 static const u32 gUnknown_085773C4[] = INCBIN_U32("graphics/unused/tilemap_5773C4.bin");
 
+// Shadow color, text color (sBoxTitleColors)
 static const u16 gUnknown_08577574[][2] =
 {
+    {0x1CE7, 0x7FFF},
     {0x1CE7, 0x7FFF},
     {0x1CE7, 0x7FFF},
     {0x1CE7, 0x7FFF},
@@ -1247,6 +1261,7 @@ static const struct WallpaperTable gWallpaperTable[] =
     [WALLPAPER_FOREST] = WALLPAPER_ENTRY(Forest),
     [WALLPAPER_CITY] = WALLPAPER_ENTRY(City),
     [WALLPAPER_DESERT] = WALLPAPER_ENTRY(Desert),
+    [WALLPAPER_POKESCAPE_1] = WALLPAPER_ENTRY(PokeScape_1),
     [WALLPAPER_SAVANNA] = WALLPAPER_ENTRY(Savanna),
     [WALLPAPER_CRAG] = WALLPAPER_ENTRY(Crag),
     [WALLPAPER_VOLCANO] = WALLPAPER_ENTRY(Volcano),
@@ -1260,6 +1275,7 @@ static const struct WallpaperTable gWallpaperTable[] =
     [WALLPAPER_POKECENTER] = WALLPAPER_ENTRY(Pokecenter),
     [WALLPAPER_MACHINE] = WALLPAPER_ENTRY(Machine),
     [WALLPAPER_PLAIN] = WALLPAPER_ENTRY(Plain),
+    
 };
 
 static const u8 gPCGfx_Arrow[] = INCBIN_U8("graphics/pokemon_storage/arrow.4bpp");
@@ -7853,6 +7869,7 @@ static const u8 *const gUnknown_0857BA80[] =
     gPCText_Forest,
     gPCText_City,
     gPCText_Desert,
+    gPCText_PokeScape_1,
     gPCText_Savanna,
     gPCText_Crag,
     gPCText_Volcano,
@@ -7866,6 +7883,7 @@ static const u8 *const gUnknown_0857BA80[] =
     gPCText_Pokecenter,
     gPCText_Machine,
     gPCText_Simple,
+    
 };
 
 static void SetMenuText(u8 textId)

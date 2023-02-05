@@ -1585,3 +1585,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Wilderness_Forest/scripts.inc"
 
 	.include "data/maps/Callisto_Lair/scripts.inc"
+
+	.include "data/maps/BarbarianVillage_House_1/scripts.inc"
+
+	.include "data/maps/BarbarianVillage_House_2/scripts.inc"

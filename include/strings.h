@@ -2035,6 +2035,7 @@ extern const u8 gPCText_Scenery2[];
 extern const u8 gPCText_Scenery3[];
 extern const u8 gPCText_Etcetera[];
 extern const u8 gPCText_Friends[];
+extern const u8 gPCText_PokeScape_1[];
 extern const u8 gPCText_Forest[];
 extern const u8 gPCText_City[];
 extern const u8 gPCText_Desert[];

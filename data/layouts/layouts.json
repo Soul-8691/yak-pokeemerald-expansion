@@ -4987,7 +4987,7 @@
       "width": 26,
       "height": 22,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Varrock",
+      "secondary_tileset": "gTileset_Barbarian_Village",
       "border_filepath": "data/layouts/Route25/border.bin",
       "blockdata_filepath": "data/layouts/Route25/map.bin"
     },
@@ -7070,6 +7070,26 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Callisto_Lair/border.bin",
       "blockdata_filepath": "data/layouts/Callisto_Lair/map.bin"
+    },
+    {
+      "id": "LAYOUT_BARBARIAN_VILLAGE_HOUSE_1",
+      "name": "BarbarianVillage_House_1_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/BarbarianVillage_House_1/border.bin",
+      "blockdata_filepath": "data/layouts/BarbarianVillage_House_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_BARBARIAN_VILLAGE_HOUSE_2",
+      "name": "BarbarianVillage_House_2_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/BarbarianVillage_House_2/border.bin",
+      "blockdata_filepath": "data/layouts/BarbarianVillage_House_2/map.bin"
     }
   ]
 }

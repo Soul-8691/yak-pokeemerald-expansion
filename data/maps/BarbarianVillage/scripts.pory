@@ -306,10 +306,32 @@ script BATTLE_ROUTE20_DUO_2
 
 
 
+//INDOORS
 
+script NPC_BARBARIANVILLAGE_NPC6
+{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    msgbox(format("I make all the clothes for out village.\pBut don't tell anyone that I get my supplies from Thessalia in Varrock."))
+    hidenamebox
+    release
+    end
+}
 
-
-
+script SHOP_HELMET_BARBARIANVILLAGE
+{
+	lock
+	faceplayer
+    namebox ("Peska")
+	msgbox(format("Welcome to my Helmet shop.\pCan I intrest you in anything?"))
+    waitmessage
+    hidenamebox
+    pokemart (STORE_Helmet)
+    msgbox("Thank you, come again!")
+	release
+	end
+}
 
 
 

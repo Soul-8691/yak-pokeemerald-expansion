@@ -3440,6 +3440,26 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GERTRUDE[] = {
     .iv = 0,
     .lvl = 31,
     .species = SPECIES_CAT_WILY_FORM,
-    },
+    }
 };
 
+static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_BOT1[] = {  
+    {
+    .iv = 0,
+    .lvl = 19,
+    .species = SPECIES_BALLOON_GOAT,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_WOODCUTTER1[] = {  
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_PLANT_STRANGER_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 21,
+    .species = SPECIES_CHOMPY,
+    }
+};

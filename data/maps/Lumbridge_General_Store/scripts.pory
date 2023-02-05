@@ -289,6 +289,17 @@ STORE_Prayer:
     release
     end
 `
+//HELMET STORE
+raw `
+    .align 2
+STORE_Helmet:
+    .2byte ITEM_BRONZEHELMET
+    .2byte ITEM_IRONMAN_HELMET
+    .2byte ITEM_ARMA_HELM
+    .2byte ITEM_NONE
+    release
+    end
+`
 //Farming Supplies
 raw `
     .align 2

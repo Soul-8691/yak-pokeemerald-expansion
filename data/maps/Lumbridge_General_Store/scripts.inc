@@ -271,6 +271,15 @@ STORE_Prayer:
     end
 
     .align 2
+STORE_Helmet:
+    .2byte ITEM_BRONZEHELMET
+    .2byte ITEM_IRONMAN_HELMET
+    .2byte ITEM_ARMA_HELM
+    .2byte ITEM_NONE
+    release
+    end
+
+    .align 2
 STORE_FarmingSupplies:
     .2byte ITEM_CABBAGE_FARMING
     .2byte ITEM_APPLE

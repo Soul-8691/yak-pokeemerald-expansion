@@ -349,6 +349,8 @@ NPC_DraynorManor_Fisherman::
 	case 0, NPC_DraynorManor_Fisherman_5
 	case 1, NPC_DraynorManor_Fisherman_6
 	case 2, NPC_DraynorManor_Fisherman_7
+	case 3, NPC_DraynorManor_Fisherman_7
+	case 4, NPC_DraynorManor_Fisherman_7
 	return
 
 NPC_DraynorManor_Fisherman_1:

@@ -260,6 +260,29 @@ BATTLE_ROUTE20_DUO_2::
 	end
 
 
+NPC_BARBARIANVILLAGE_NPC6::
+	lock
+	faceplayer
+	namebox NPC_BARB_BLOCKADE_1_Text_0
+	msgbox NPC_BARBARIANVILLAGE_NPC6_Text_0
+	hidenamebox
+	release
+	end
+
+
+SHOP_HELMET_BARBARIANVILLAGE::
+	lock
+	faceplayer
+	namebox SHOP_HELMET_BARBARIANVILLAGE_Text_0
+	msgbox SHOP_HELMET_BARBARIANVILLAGE_Text_1
+	waitmessage
+	hidenamebox
+	pokemart STORE_Helmet
+	msgbox SHOP_HELMET_BARBARIANVILLAGE_Text_2
+	release
+	end
+
+
 NPC_BARB_BLOCKADE_1_Text_0:
 	.string "Barbarian$"
 
@@ -431,3 +454,18 @@ BATTLE_ROUTE20_DUO_2_Text_2:
 
 BATTLE_ROUTE20_DUO_2_Text_3:
 	.string "I have the most important job here.$"
+
+NPC_BARBARIANVILLAGE_NPC6_Text_0:
+	.string "I make all the clothes for out village.\p"
+	.string "But don't tell anyone that I get my\n"
+	.string "supplies from Thessalia in Varrock.$"
+
+SHOP_HELMET_BARBARIANVILLAGE_Text_0:
+	.string "Peska$"
+
+SHOP_HELMET_BARBARIANVILLAGE_Text_1:
+	.string "Welcome to my Helmet shop.\p"
+	.string "Can I intrest you in anything?$"
+
+SHOP_HELMET_BARBARIANVILLAGE_Text_2:
+	.string "Thank you, come again!$"

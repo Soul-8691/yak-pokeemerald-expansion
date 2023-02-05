@@ -5113,7 +5113,7 @@ const struct Item gItems[] =
     {
         .name = _("ARMA HELM"),
         .itemId = ITEM_ARMA_HELM,
-        .price = 100,
+        .price = 9800,
         .holdEffect = HOLD_EFFECT_FLYING_POWER,
         .holdEffectParam = 20,
         .description = sArmahelmDesc,
@@ -5168,7 +5168,7 @@ const struct Item gItems[] =
     {
         .name = _("BRONZE HELM"),
         .itemId = ITEM_BRONZEHELMET,
-        .price = 200,
+        .price = 9800,
         .holdEffect = HOLD_EFFECT_EVIOLITE,
         .description = sBronzeHelmDesc,
         .pocket = POCKET_ITEMS,
@@ -5433,7 +5433,7 @@ const struct Item gItems[] =
     {
         .name = _("IRONMAN HELM"),
         .itemId = ITEM_IRONMAN_HELMET,
-        .price = 100,
+        .price = 9800,
         .holdEffect = HOLD_EFFECT_STEEL_POWER,
         .holdEffectParam = 20,
         .description = sIronmanHelmetDesc,

@@ -2854,6 +2854,32 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_GERTRUDE),
         .party = {.NoItemDefaultMoves = sParty_GERTRUDE},
     },
-
+//LUMBRIDGE FOREST
+    [TRAINER_LUMBRIDGEFOREST_WOODCUTTER1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_WOODCUTTER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_woodcutter,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_LUMBRIDGEFOREST_WOODCUTTER1),
+        .party = {.NoItemDefaultMoves = sParty_LUMBRIDGEFOREST_WOODCUTTER1},
+    },
+    [TRAINER_LUMBRIDGEFOREST_BOT1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_BOT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_noob_default,
+        .trainerName = _("WOODCUTTING"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_LUMBRIDGEFOREST_BOT1),
+        .party = {.NoItemDefaultMoves = sParty_LUMBRIDGEFOREST_BOT1},
+    },
 
 };

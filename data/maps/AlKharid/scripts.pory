@@ -1,0 +1,174 @@
+
+
+mapscripts AlKharid_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setvar(VAR_EVOLUTION_MAP_STATE, 11) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
+    }
+}
+
+
+
+
+
+
+//NPCS
+script ALKHARID_NPC_1
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_2
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_3
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_4
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_5
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_6
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_7
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_8
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_9
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_10
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_11
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_12
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_13
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_14
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_15
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script ALKHARID_NPC_16
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}

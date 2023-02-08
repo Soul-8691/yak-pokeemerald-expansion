@@ -1,6 +1,9 @@
 
 mapscripts Route29_MapScripts 
 {
+    MAP_SCRIPT_ON_TRANSITION {
+        setvar(VAR_EVOLUTION_MAP_STATE, 11) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
+    }
     MAP_SCRIPT_ON_LOAD 
     {
         call(ROUTE29_DOOR)
@@ -42,4 +45,55 @@ script DUNGEONEERING_DOOR_ROUTE29
     } 
     release
     end
+}
+
+
+
+
+
+//trainer battles
+script BATTLE_ROUTE29_TRAINER_1
+{ //
+    trainerbattle_single(TRAINER_ROUTE29_TRAINER_1, format(""),format(""))
+    //namebox ("")
+    msgbox(format(""))
+	//hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE29_TRAINER_2
+{ //
+    trainerbattle_single(TRAINER_ROUTE29_TRAINER_2, format(""),format(""))
+    //namebox ("")
+    msgbox(format(""))
+	//hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE29_TRAINER_3
+{ //
+    trainerbattle_single(TRAINER_ROUTE29_TRAINER_3, format(""),format(""))
+    //namebox ("")
+    msgbox(format(""))
+	//hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE29_TRAINER_4
+{ //
+    trainerbattle_single(TRAINER_ROUTE29_TRAINER_4, format(""),format(""))
+    //namebox ("")
+    msgbox(format(""))
+	//hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE29_TRAINER_5
+{ //
+    trainerbattle_single(TRAINER_ROUTE29_TRAINER_5, format(""),format(""))
+    //namebox ("")
+    msgbox(format(""))
+	//hidenamebox
+    release
+	end
 }

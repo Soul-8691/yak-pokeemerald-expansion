@@ -3482,8 +3482,78 @@ static const struct TrainerMonNoItemDefaultMoves sParty_SINKHOLE_NPC_FORGOTTENWA
     }
 };
 
-
-
+//Route28
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_2[] = {  
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_THINGUMWUT,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_3[] = {  
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_THINGUMWUT,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_1[] = {  
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_THINGUMWUT,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_4[] = {  
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_THINGUMWUT,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_5[] = {  
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_THINGUMWUT,
+    }
+};
+//Route29
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_1[] = {  
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_THINGUMWUT,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_2[] = {  
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_THINGUMWUT,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_3[] = {  
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_THINGUMWUT,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_4[] = {  
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_THINGUMWUT,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_5[] = {  
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_THINGUMWUT,
+    }
+};
 
 
 

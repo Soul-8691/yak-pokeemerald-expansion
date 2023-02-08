@@ -6887,7 +6887,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_IndoorTowns1",
+      "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/Varrock_Museum/border.bin",
       "blockdata_filepath": "data/layouts/Varrock_Museum/map.bin"
     },

@@ -236,6 +236,19 @@ script NPC_ABYSSALDEMON
 	end
 }
 
+script NPC_CAMEL
+{
+	lock
+	faceplayer
+    namebox ("CAMEL")
+    playmoncry(SPECIES_MILTANK, 0)
+	msgbox(format("The Camel spits at you."))
+    waitmoncry
+    hidenamebox
+	release
+	end
+}
+
 script SIGN_ROUTE1_1
 {
 	lock

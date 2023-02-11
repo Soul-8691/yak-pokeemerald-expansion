@@ -205,6 +205,18 @@ NPC_ABYSSALDEMON::
 	end
 
 
+NPC_CAMEL::
+	lock
+	faceplayer
+	namebox NPC_CAMEL_Text_0
+	playmoncry SPECIES_MILTANK, 0
+	msgbox NPC_CAMEL_Text_1
+	waitmoncry
+	hidenamebox
+	release
+	end
+
+
 SIGN_ROUTE1_1::
 	lock
 	msgbox SIGN_ROUTE1_1_Text_0
@@ -809,6 +821,12 @@ NPC_ABYSSALDEMON_Text_0:
 
 NPC_ABYSSALDEMON_Text_1:
 	.string "Schttle, skrtch!$"
+
+NPC_CAMEL_Text_0:
+	.string "CAMEL$"
+
+NPC_CAMEL_Text_1:
+	.string "The Camel spits at you.$"
 
 SIGN_ROUTE1_1_Text_0:
 	.string "Fred's Farm.$"

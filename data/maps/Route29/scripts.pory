@@ -53,47 +53,51 @@ script DUNGEONEERING_DOOR_ROUTE29
 
 //trainer battles
 script BATTLE_ROUTE29_TRAINER_1
-{ //
-    trainerbattle_single(TRAINER_ROUTE29_TRAINER_1, format(""),format(""))
-    //namebox ("")
-    msgbox(format(""))
+{ //Dreadnip x2
+    trainerbattle_single(TRAINER_ROUTE29_TRAINER_1, format("Tell me where the Strykewyrms are!\pNow!"),format("Keep your secrets then, noob."))
+    //namebox ("Slayer")
+    msgbox(format("I've been looking for the Strykewyrms for hours.\pI was told they were found in the caves and desert but I have yet to come across any."))
 	//hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE29_TRAINER_2
-{ //
-    trainerbattle_single(TRAINER_ROUTE29_TRAINER_2, format(""),format(""))
-    //namebox ("")
-    msgbox(format(""))
+{ //Desert sole , Heim lobster
+    trainerbattle_single(TRAINER_ROUTE29_TRAINER_2, format("Minerals are truly fascinating dont you think?"),format("Keep your strong monsters.\pI will keep to my minerals."))
+    //namebox ("Miner")
+    msgbox(format("Keep your strong monsters.\pI will keep to my minerals."))
 	//hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE29_TRAINER_3
-{ //
-    trainerbattle_single(TRAINER_ROUTE29_TRAINER_3, format(""),format(""))
-    //namebox ("")
-    msgbox(format(""))
+{ //Rock strange form
+    trainerbattle_single(TRAINER_ROUTE29_TRAINER_3, format("I am examining this place for ancient relics.\pDo not disturb me!"),format("What do you mean the Digsite is north?"))
+    //namebox ("Archaeologist")
+    msgbox(format("What do you mean the Digsite is north?"))
 	//hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE29_TRAINER_4
-{ //
-    trainerbattle_single(TRAINER_ROUTE29_TRAINER_4, format(""),format(""))
-    //namebox ("")
-    msgbox(format(""))
+{ //Mystery chicken, Shrimp, Varrock chicken
+    trainerbattle_single(TRAINER_ROUTE29_TRAINER_4, format("I am getting real close to Falador.\pGet out of my way!"),format("I will keep going south.\pEventually I will find Falador."))
+    //namebox ("Noob")
+    msgbox(format("I will keep going south.\pEventually I will find Falador."))
 	//hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE29_TRAINER_5
-{ //
-    trainerbattle_single(TRAINER_ROUTE29_TRAINER_5, format(""),format(""))
-    //namebox ("")
-    msgbox(format(""))
-	//hidenamebox
+{ //Monkey x2, Poison scorpion, Pit scorpion
+    trainerbattle_single(TRAINER_ROUTE29_TRAINER_5, format("Brother there is an enemy opposing us.\pBrother we must approach this enemy!\pNo brother it is opposing us, Attack!"),format("Bro: Brother we lost! How could this be?!\pBrother: Shut up."))
+    namebox ("Bro")
+    msgbox(format("Brother we lost! How could this be?!"))
+	hidenamebox
+    namebox ("Brother")
+    msgbox(format("Shut up Bro."))
+	hidenamebox
     release
 	end
 }
+

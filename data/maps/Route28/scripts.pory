@@ -1,3 +1,5 @@
+const ALKAHRID_GUARD_1_ID = 1
+const ALKAHRID_GUARD_2_ID = 2
 
 mapscripts Route28_MapScripts{
 	MAP_SCRIPT_ON_TRANSITION {
@@ -11,8 +13,8 @@ mapscripts Route28_MapScripts{
 script BLOCK_ALKHAIRD_GATE
 {
 	lockall
-	applymovement (1,BLOCK_ALKHAIRD_GATE_1)
-	applymovement (2,BLOCK_ALKHAIRD_GATE_2)
+	applymovement (ALKAHRID_GUARD_1_ID,BLOCK_ALKHAIRD_GATE_1)
+	applymovement (ALKAHRID_GUARD_2_ID,BLOCK_ALKHAIRD_GATE_2)
 	waitmovement (0)
 	msgbox(format("Halt!\pOnly those whom possess the Al-Khaird Badge may enter!"))
 	closemessage
@@ -53,46 +55,46 @@ script BLOCK_Alkharid_Guards
 
 //trainer battles
 script BATTLE_ROUTE28_TRAINER_1
-{ //
-    trainerbattle_single(TRAINER_ROUTE28_TRAINER_1, format(""),format(""))
-    //namebox ("")
-    msgbox(format(""))
+{ // x2 gecko, giant rat.
+    trainerbattle_single(TRAINER_ROUTE28_TRAINER_1, format("They assigned me to this boring post on the outskirts of town.\pCan you entertain me?"),format("Thank you for the fight.\pI have grown bored of battles now though."))
+    //namebox ("Guard")
+    msgbox(format("Thank you for the fight.\pI have grown bored of battles now though."))
 	//hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE28_TRAINER_2
-{ //
-    trainerbattle_single(TRAINER_ROUTE28_TRAINER_2, format(""),format(""))
-    //namebox ("")
-    msgbox(format(""))
+{ //animated armor, Dobbin, Ungodbird
+    trainerbattle_single(TRAINER_ROUTE28_TRAINER_2, format("Hey you!\pYou look worse of than me.\pLets fight."),format("This makes no sense I have better armour than you."))
+    //namebox ("Bronze Noob")
+    msgbox(format("My friend is looking for Falador.\pHave you seen him?"))
 	//hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE28_TRAINER_3
-{ //
-    trainerbattle_single(TRAINER_ROUTE28_TRAINER_3, format(""),format(""))
-    //namebox ("")
-    msgbox(format(""))
+{ //Ninja monkey
+    trainerbattle_single(TRAINER_ROUTE28_TRAINER_3, format("Al Kharid is past here, allow me to test you."),format("Fine, you pass the test."))
+    //namebox ("Guard")
+    msgbox(format("Do not give my brothers any trouble while visting Al Kharid."))
 	//hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE28_TRAINER_4
-{ //
-    trainerbattle_single(TRAINER_ROUTE28_TRAINER_4, format(""),format(""))
-    //namebox ("")
-    msgbox(format(""))
+{ //Bloated frog, Night spider
+    trainerbattle_single(TRAINER_ROUTE28_TRAINER_4, format("Have you seen any ruins around these parts?"),format("You could have just said no…"))
+    //namebox ("Archeaologist")
+    msgbox(format("Oh the pile of rocks over there are the ruins I have been looking for!\pI heard that they were magical in some way."))
 	//hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE28_TRAINER_5
-{ //
-    trainerbattle_single(TRAINER_ROUTE28_TRAINER_5, format(""),format(""))
-    //namebox ("")
-    msgbox(format(""))
+{ //mole thing from pest control, Spidine, Ninja monkey
+    trainerbattle_single(TRAINER_ROUTE28_TRAINER_5, format("Hey lets have a quick duel!"),format("Wow, when I said lets have a quick duel I didn't expect it to be that quick."))
+    //namebox ("Rusher")
+    msgbox(format("Wow, when I said lets have a quick duel I didn't expect it to be that quick."))
 	//hidenamebox
     release
 	end

@@ -2901,10 +2901,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE28_TRAINER_1] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_DARK,
+        .trainerClass = TRAINER_CLASS_GUARD,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
-        .trainerPic = TRAINER_PIC_wizard_dark,
-        .trainerName = _(""),
+        .trainerPic = TRAINER_PIC_guard_alkhaird,
+        .trainerName = _("AL KHARID"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
@@ -2914,9 +2914,9 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE28_TRAINER_2] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_DARK,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
-        .trainerPic = TRAINER_PIC_wizard_dark,
+        .trainerClass = TRAINER_CLASS_NOOB,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_lukien,
         .trainerName = _(""),
         .items = {},
         .doubleBattle = FALSE,
@@ -2927,10 +2927,10 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE28_TRAINER_3] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_DARK,
+        .trainerClass = TRAINER_CLASS_GUARD,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
-        .trainerPic = TRAINER_PIC_wizard_dark,
-        .trainerName = _(""),
+        .trainerPic = TRAINER_PIC_guard_alkhaird,
+        .trainerName = _("AL KHARID"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
@@ -2940,9 +2940,9 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE28_TRAINER_4] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_DARK,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
-        .trainerPic = TRAINER_PIC_wizard_dark,
+        .trainerClass = TRAINER_CLASS_ARCHAEOLOGIST,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_SKILLER,
+        .trainerPic = TRAINER_PIC_Archaeologist,
         .trainerName = _(""),
         .items = {},
         .doubleBattle = FALSE,
@@ -2953,9 +2953,9 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE28_TRAINER_5] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_DARK,
+        .trainerClass = TRAINER_CLASS_PKer,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
-        .trainerPic = TRAINER_PIC_wizard_dark,
+        .trainerPic = TRAINER_PIC_pk_rusher,
         .trainerName = _(""),
         .items = {},
         .doubleBattle = FALSE,
@@ -2967,9 +2967,9 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE29_TRAINER_1] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_DARK,
+        .trainerClass = TRAINER_CLASS_SLAYER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
-        .trainerPic = TRAINER_PIC_wizard_dark,
+        .trainerPic = TRAINER_PIC_slayer,
         .trainerName = _(""),
         .items = {},
         .doubleBattle = FALSE,
@@ -2980,9 +2980,9 @@ const struct Trainer gTrainers[] = {
     [TRAINER_ROUTE29_TRAINER_2] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_DARK,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
-        .trainerPic = TRAINER_PIC_wizard_dark,
+        .trainerClass = TRAINER_CLASS_MINER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_miner,
         .trainerName = _(""),
         .items = {},
         .doubleBattle = FALSE,
@@ -2990,25 +2990,12 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_ROUTE29_TRAINER_2),
         .party = {.NoItemDefaultMoves = sParty_ROUTE29_TRAINER_2},
     },
-    [TRAINER_ROUTE29_TRAINER_3] =
-    {
-        .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_DARK,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
-        .trainerPic = TRAINER_PIC_wizard_dark,
-        .trainerName = _(""),
-        .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_ROUTE29_TRAINER_3),
-        .party = {.NoItemDefaultMoves = sParty_ROUTE29_TRAINER_3},
-    },
     [TRAINER_ROUTE29_TRAINER_4] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_DARK,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
-        .trainerPic = TRAINER_PIC_wizard_dark,
+        .trainerClass = TRAINER_CLASS_NOOB,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_noob_default,
         .trainerName = _(""),
         .items = {},
         .doubleBattle = FALSE,
@@ -3016,15 +3003,28 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_ROUTE29_TRAINER_4),
         .party = {.NoItemDefaultMoves = sParty_ROUTE29_TRAINER_4},
     },
-    [TRAINER_ROUTE29_TRAINER_5] =
+    [TRAINER_ROUTE29_TRAINER_3] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_DARK,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
-        .trainerPic = TRAINER_PIC_wizard_dark,
+        .trainerClass = TRAINER_CLASS_ARCHAEOLOGIST,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_SKILLER,
+        .trainerPic = TRAINER_PIC_Archaeologist,
         .trainerName = _(""),
         .items = {},
         .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE29_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE29_TRAINER_3},
+    },
+    [TRAINER_ROUTE29_TRAINER_5] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_guard_alkhaird_duo,
+        .trainerName = _("Brothers"),
+        .items = {},
+        .doubleBattle = TRUE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
         .partySize = ARRAY_COUNT(sParty_ROUTE29_TRAINER_5),
         .party = {.NoItemDefaultMoves = sParty_ROUTE29_TRAINER_5},

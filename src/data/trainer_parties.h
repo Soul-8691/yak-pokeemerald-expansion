@@ -3483,75 +3483,140 @@ static const struct TrainerMonNoItemDefaultMoves sParty_SINKHOLE_NPC_FORGOTTENWA
 };
 
 //Route28
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_1[] = {  
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_GECKO,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_SALAMANDER_ORANGE_FORM,
+    }
+};
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_2[] = {  
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_THINGUMWUT,
+    .lvl = 30,
+    .species = SPECIES_DESERTSOLE,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_ANCHOVY,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_CHICKEN_VARROCK_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_3[] = {  
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_THINGUMWUT,
-    }
-};
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_1[] = {  
-    {
-    .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_THINGUMWUT,
+    .lvl = 30,
+    .species = SPECIES_MONKEY_NINJA_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_4[] = {  
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_THINGUMWUT,
-    }
+    .lvl = 30,
+    .species = SPECIES_FROG_BLOATED_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_SPIDER_TEMPLE_FORM,
+    },
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_5[] = {  
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_THINGUMWUT,
+    .lvl = 30,
+    .species = SPECIES_VOID_RAVAGER,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_PENANCE_FIGHTER,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_GOLEM_TITAN,
     }
 };
 //Route29
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_1[] = {  
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_THINGUMWUT,
+    .lvl = 30,
+    .species = SPECIES_DREADNIP,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_DREADNIP,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_2[] = {  
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_THINGUMWUT,
-    }
+    .lvl = 30,
+    .species = SPECIES_GOAT_DESERT_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_DESERTWYRM,
+    },
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_3[] = {  
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_THINGUMWUT,
+    .lvl = 30,
+    .species = SPECIES_ROCK_STRANGE_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_4[] = {  
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_THINGUMWUT,
+    .lvl = 30,
+    .species = SPECIES_DESERTSOLE,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_SHRIMP,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_CHICKEN_VARROCK_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_5[] = {  
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_THINGUMWUT,
+    .lvl = 30,
+    .species = SPECIES_MONKEY_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_MONKEY_HARMLESS_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_SCORPION_PIT_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_SCORPION_POISON_FORM,
     }
 };
 

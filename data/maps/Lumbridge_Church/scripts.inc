@@ -284,7 +284,7 @@ Cheat_Menu_Shop_Misc:
     .2byte ITEM_GUTHANSPEAR
     .2byte ITEM_GRANITE_MAUL
     .2byte ITEM_HOLY_WRENCH
-    .2byte ITEM_INFINITY_BOOTS
+    .2byte ITEM_FANCY_BOOTS
     .2byte ITEM_IRONMAN_HELMET
     .2byte ITEM_ITEM_GNOMEBALL
     .2byte ITEM_KERIS

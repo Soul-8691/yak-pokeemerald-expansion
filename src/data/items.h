@@ -5416,10 +5416,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 0,
     },
-    [ITEM_INFINITY_BOOTS] =
+    [ITEM_FANCY_BOOTS] =
     {
-        .name = _("RAINBOW BOOTS"),
-        .itemId = ITEM_INFINITY_BOOTS,
+        .name = _("FANCY BOOTS"),
+        .itemId = ITEM_FANCY_BOOTS,
         .price = 100,
         .holdEffect = HOLD_EFFECT_FAIRY_POWER,
         .holdEffectParam = 20,
@@ -5790,7 +5790,7 @@ const struct Item gItems[] =
     },
     [ITEM_AKRISAEMACE] =
     {
-        .name = _("AKRISAE"),
+        .name = _("AKRISAE MACE"),
         .itemId = ITEM_AKRISAEMACE,
         .holdEffect = HOLD_EFFECT_PRESSURE,
         .price = 0,

@@ -1843,7 +1843,7 @@ static const u8 sArmahelmDesc[] = _(
 static const u8 sBloodFuryDesc[] = _(
     "Heals monsters\n"
     "based on damage\n"
-    "Dealt.");
+    "dealt.");
 
 static const u8 sBlueBoaterDesc[] = _(
     "The best hat.\n"
@@ -2042,7 +2042,7 @@ static const u8 sSnelmDesc[] = _(
     "adorn yourself with.");
    
 static const u8 sSpiritShieldDesc[] = _(
-    "a shield from the\n"
+    "A shield from the\n"
     "spirit realm\n"
     "that protects you.");
    
@@ -2131,8 +2131,8 @@ static const u8 sMithrilScimitarDesc[] = _(
 
 static const u8 sSnowGlobeDesc[] = _(
     "Extends the\n"
-    "Duration of\n"
-    "Weather.");
+    "duration of\n"
+    "weather.");
 
 static const u8 sNewcomerMapDesc[] = _(
     "A map of PokeScape.\n"

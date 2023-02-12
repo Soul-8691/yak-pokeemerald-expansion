@@ -7090,6 +7090,46 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/BarbarianVillage_House_2/border.bin",
       "blockdata_filepath": "data/layouts/BarbarianVillage_House_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_BARB_STRONGHOLD_B1F",
+      "name": "Barb_Stronghold_B1F_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Barb_Stronghold_B1F/border.bin",
+      "blockdata_filepath": "data/layouts/Barb_Stronghold_B1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_BARB_STRONGHOLD_B2F",
+      "name": "Barb_Stronghold_B2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Barb_Stronghold_B2F/border.bin",
+      "blockdata_filepath": "data/layouts/Barb_Stronghold_B2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_BARB_STRONGHOLD_B3F",
+      "name": "Barb_Stronghold_B3F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Barb_Stronghold_B3F/border.bin",
+      "blockdata_filepath": "data/layouts/Barb_Stronghold_B3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_BARB_STRONGHOLD_B4F",
+      "name": "Barb_Stronghold_B4F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_SecretBaseRedCave",
+      "border_filepath": "data/layouts/Barb_Stronghold_B4F/border.bin",
+      "blockdata_filepath": "data/layouts/Barb_Stronghold_B4F/map.bin"
     }
   ]
 }

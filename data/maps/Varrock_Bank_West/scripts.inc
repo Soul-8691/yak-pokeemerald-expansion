@@ -194,6 +194,21 @@ QUEST_DROPPARTY_NPCS_BORED_6:
 	goto QUEST_DROPPARTY_NPCS_BORED_1
 
 
+BARBSTRONGHOLD_RIVAL_BOOT_CHOICE::
+	faceplayer
+	namebox BARBSTRONGHOLD_RIVAL_BOOT_CHOICE_Text_0
+	msgbox BARBSTRONGHOLD_RIVAL_BOOT_CHOICE_Text_1
+	closemessage
+	hidenamebox
+	msgbox BARBSTRONGHOLD_RIVAL_BOOT_CHOICE_Text_2
+	msgbox BARBSTRONGHOLD_RIVAL_BOOT_CHOICE_Text_3
+	msgbox BARBSTRONGHOLD_RIVAL_BOOT_CHOICE_Text_4
+	giveitem ITEM_INFINITY_BOOTS, 1
+	msgbox BARBSTRONGHOLD_RIVAL_BOOT_CHOICE_Text_5
+	release
+	end
+
+
 VARROCKBANKWEST_NPC_NPC1_Text_0:
 	.string "Can't you see I am busy High-Alching,\n"
 	.string "what do you want!$"
@@ -295,3 +310,35 @@ QUEST_DROPPARTY_NPCS_BORED_Text_2:
 
 QUEST_DROPPARTY_NPCS_BORED_Text_3:
 	.string "LOL he is going to the Wildy.$"
+
+BARBSTRONGHOLD_RIVAL_BOOT_CHOICE_Text_0:
+	.string "RIVAL$"
+
+BARBSTRONGHOLD_RIVAL_BOOT_CHOICE_Text_1:
+	.string "Fancy seeing you here {PLAYER}.\p"
+	.string "There are two boots here and it says we\n"
+	.string "can only take one.\p"
+	.string "I am so indecisive I don't know what one\n"
+	.string "to pick…\p"
+	.string "Oh I know!\p"
+	.string "I'll get you to pick.\p"
+	.string "I will take whichever one you don't\n"
+	.string "choose.$"
+
+BARBSTRONGHOLD_RIVAL_BOOT_CHOICE_Text_2:
+	.string "Nice choice!\p"
+	.string "Then I will select these ones!$"
+
+BARBSTRONGHOLD_RIVAL_BOOT_CHOICE_Text_3:
+	.string "RIVAL OBTAINED FANCY BOOTS.$"
+
+BARBSTRONGHOLD_RIVAL_BOOT_CHOICE_Text_4:
+	.string "…{PAUSE 16}… Actually…\p"
+	.string "I kind of don't want these anymore.\p"
+	.string "Here you can take them!$"
+
+BARBSTRONGHOLD_RIVAL_BOOT_CHOICE_Text_5:
+	.string "Don't worry I doubt this counts as you\n"
+	.string "taking both boots since I took it\l"
+	.string "first.\p"
+	.string "Enjoy, I'll see you around!$"

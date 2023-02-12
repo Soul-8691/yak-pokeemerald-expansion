@@ -227,3 +227,36 @@ script QUEST_DROPPARTY_NPCS_BORED
     release
     end
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script BARBSTRONGHOLD_RIVAL_BOOT_CHOICE
+{
+    faceplayer
+    namebox ("RIVAL")
+    msgbox(format("Fancy seeing you here {PLAYER}.\pThere are two boots here and it says we can only take one.\pI am so indecisive I don't know what one to pick…\pOh I know!\pI'll get you to pick.\pI will take whichever one you don't choose."))
+    closemessage
+    hidenamebox
+    msgbox(format("Nice choice!\pThen I will select these ones!"))
+    msgbox(format("RIVAL OBTAINED FANCY BOOTS."))
+    msgbox(format("…{PAUSE 16}… Actually…\pI kind of don't want these anymore.\pHere you can take them!"))
+    giveitem(ITEM_INFINITY_BOOTS, 1)
+    msgbox(format("Don't worry I doubt this counts as you taking both boots since I took it first.\pEnjoy, I'll see you around!"))
+    //apply movement walks to ladder.
+    //set flags
+    release
+    end
+}

@@ -1589,3 +1589,11 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/BarbarianVillage_House_1/scripts.inc"
 
 	.include "data/maps/BarbarianVillage_House_2/scripts.inc"
+
+	.include "data/maps/Barb_Stronghold_B1F/scripts.inc"
+
+	.include "data/maps/Barb_Stronghold_B2F/scripts.inc"
+
+	.include "data/maps/Barb_Stronghold_B3F/scripts.inc"
+
+	.include "data/maps/Barb_Stronghold_B4F/scripts.inc"

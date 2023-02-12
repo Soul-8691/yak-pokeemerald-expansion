@@ -5851,6 +5851,22 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 2,
     },
+/*
+    [ITEM_BINDING_BAND] = //TEMP ITEM BINDING BAND
+        {
+        .name = _("BINDING BAND"),
+        .itemId = ITEM_SNOW_GLOBE,
+        .holdEffect = HOLD_EFFECT_BINDING_BAND,
+        .price = 0,
+        .description = sSnowGlobeDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 2,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .secondaryId = 2,
+    },
+*/
+
+    
     //end pokescape hold items
 
 	// Pokescape Evolution items

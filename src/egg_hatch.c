@@ -861,7 +861,7 @@ static void CreateEggShardSprite(u8 x, u8 y, s16 data1, s16 data2, s16 data3, u8
 
 static void EggHatchPrintMessage(u8 windowId, u8* string, u8 x, u8 y, u8 speed)
 {
-    FillWindowPixelBuffer(windowId, PIXEL_FILL(15));
+    FillWindowPixelBuffer(windowId, PIXEL_FILL(1)); //Changes fill window for hatch from egg message.
     sEggHatchData->textColor[0] = 0;
     sEggHatchData->textColor[1] = 5;
     sEggHatchData->textColor[2] = 6;

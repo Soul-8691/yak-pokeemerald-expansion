@@ -440,7 +440,7 @@ static const struct WindowTemplate sDoWhatWithMonMsgWindowTemplate =
     .tilemapTop = 17,
     .width = 16,
     .height = 2,
-    .paletteNum = 15,
+    .paletteNum = 15, //changes text and fill colours 
     .baseBlock = 0x279,
 };
 

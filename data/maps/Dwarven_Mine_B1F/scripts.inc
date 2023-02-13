@@ -3,6 +3,7 @@ Dwarven_Mine_B1F_MapScripts::
 	.byte 0
 
 Dwarven_Mine_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
+	setvar VAR_EVOLUTION_MAP_STATE, 43
 	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
 	goto_if_eq Dwarven_Mine_B1F_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
 	call OPENWORLD_STATE_DWARVENMINES

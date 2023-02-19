@@ -5044,7 +5044,7 @@
     {
       "id": "LAYOUT_AL_KHARID",
       "name": "AlKharid_Layout",
-      "width": 58,
+      "width": 60,
       "height": 43,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_AlKharid",
@@ -5587,7 +5587,7 @@
       "width": 46,
       "height": 36,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Yanille",
       "border_filepath": "data/layouts/Route51/border.bin",
       "blockdata_filepath": "data/layouts/Route51/map.bin"
     },

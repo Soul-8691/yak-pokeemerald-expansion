@@ -176,12 +176,83 @@
       "elevation": 0,
       "dest_map": "MAP_ABYSSAL_REALM_1",
       "dest_warp_id": 5
+    },
+    {
+      "x": 60,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_YANILLE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 16,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_YANILLE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 29,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_YANILLE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 18,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_YANILLE_PUB_1F",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 25,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_YANILLE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 49,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_YANILLE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 46,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_YANILLE",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 47,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_YANILLE",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 64,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    },
+    {
+      "type": "hidden_item",
+      "x": 42,
+      "y": 15,
+      "elevation": 3,
+      "item": "ITEM_STAFF_OF_EARTH",
+      "flag": "FLAG_TEMP_1"
+    }
   ]
 }

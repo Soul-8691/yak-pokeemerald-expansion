@@ -5114,10 +5114,10 @@
     {
       "id": "LAYOUT_ROUTE33",
       "name": "Route33_Layout",
-      "width": 50,
-      "height": 50,
+      "width": 40,
+      "height": 24,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_GoblinVillage",
       "border_filepath": "data/layouts/Route33/border.bin",
       "blockdata_filepath": "data/layouts/Route33/map.bin"
     },

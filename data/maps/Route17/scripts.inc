@@ -6,3 +6,13 @@ Route17_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 16
 	return
 
+
+SIGNPOST_LUMBERYARD::
+	msgbox SIGNPOST_LUMBERYARD_Text_0
+	closemessage
+	release
+	end
+
+
+SIGNPOST_LUMBERYARD_Text_0:
+	.string "VARROCK LUMBERYARD.$"

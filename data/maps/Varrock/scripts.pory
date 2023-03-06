@@ -385,7 +385,73 @@ script VARROCK_NPC_11
     end
 }
 
+script VARROCK_NPC_12
+{
+    faceplayer
+    //namebox ("Skiller")
+    msgbox(format("CUPHOLDER"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
 
+script VARROCK_NPC_13
+{
+    faceplayer
+    namebox ("Charlie")
+    msgbox(format("CUPHOLDER"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_14
+{
+    faceplayer
+    namebox ("Guard")
+    msgbox(format("CUPHOLDER"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+script VARROCK_NPC_Romeo
+{
+    faceplayer
+    namebox ("Romeo")
+    msgbox(format("Juliet, where art thou!"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+script VARROCKSTORE_NPC_1
+{
+    faceplayer
+    //namebox ("Guard")
+    msgbox(format("CUPHOLDER"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCKSTORE_NPC_2
+{
+    faceplayer
+    //namebox ("Guard")
+    msgbox(format("CUPHOLDER"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
 
 
 script VARROCK_NPC_TeaSalesman {
@@ -473,7 +539,7 @@ script TRIGGER_BLOCK_ROUTE38
         hidenamebox
         applymovement(OBJ_EVENT_ID_PLAYER, Movement_WALKLEFT)
         waitmovement(0)
-        setvar(VAR_TEMP_0, 1) 
+        setvar(VAR_TEMP_0, 1) //Dont need this.
         release
         end
     }
@@ -616,77 +682,6 @@ script NPC_SLAYERMASTERLIST
 
 
 
-//VARROCK GYM
-
-
-script BATTLE_VARROCK_GYM_TRAINER_1 
-{ //Guard dog x2
-	trainerbattle_single(TRAINER_FALADOR_GYM_1, format("Hey you!\nDo not trespass!"),format("Consider that a warning!") )
-    switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
-		case 4: 
-			lock
-			faceplayer
-            namebox("Guard")
-			msgbox(format("Do not trespass!"))
-            hidenamebox
-			release
-			end
-        case 5:
-			lock
-			faceplayer
-            namebox("Guard")
-            msgbox(format("Do not trespass!"))
-            hidenamebox
-            release
-			end
-	}
-}
-
-script BATTLE_VARROCK_GYM_TRAINER_2
-{ //Guard dog, labrador
-	trainerbattle_single(TRAINER_FALADOR_GYM_1, format("You look shady."),format("You may pass shady person.") )
-    switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
-		case 4: 
-			lock
-			faceplayer
-            namebox("Guard")
-			msgbox(format("You may pass shady person."))
-            hidenamebox
-			release
-			end
-        case 5:
-			lock
-			faceplayer
-            namebox("Guard")
-            msgbox(format("You may pass shady person."))
-            hidenamebox
-            release
-			end
-	}
-}
-
-script BATTLE_VARROCK_GYM_TRAINER_3
-{ //Guard dog, kingly rat x2
-	trainerbattle_single(TRAINER_FALADOR_GYM_1, format("The king said he did not want visitors today."),format("You do not care what the king wants at all, do you?") )
-    switch (var(VAR_POKESCAPE_FALADOR_STATE)){ 
-		case 4: 
-			lock
-			faceplayer
-            namebox("Guard")
-			msgbox(format("The king said he did not want visitors today.\pYou do not care what the king wants at all, do you?"))
-            hidenamebox
-			release
-			end
-        case 5:
-			lock
-			faceplayer
-            namebox("Guard")
-            msgbox(format("The king said he did not want visitors today.\pYou do not care what the king wants at all, do you?"))
-            hidenamebox
-            release
-			end
-	}
-}
 
 
 

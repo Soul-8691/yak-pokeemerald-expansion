@@ -7152,8 +7152,8 @@ const u8 gChinchompa_BabyPokedexText[] = _(
 
 
 const u8 gChinchompa_Grey_BabyPokedexText[] = _(
-"A grey chinchompa that will explode when\n"
-"exposed to blunt force trauma.");
+"A baby grey chinchompa that will explode\n"
+"when exposed to blunt force trauma.");
 
 
 const u8 gChinchompa_Red_BabyPokedexText[] = _(

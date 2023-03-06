@@ -4051,6 +4051,9 @@ const struct SpriteFrameImage gObjectEventPicTable_Penguin_Rock[] = {
     overworld_frame(gObjectEventPic_Penguin_Rock, 2, 2, 3),
     overworld_frame(gObjectEventPic_Penguin_Rock, 2, 2, 4),
     overworld_frame(gObjectEventPic_Penguin_Rock, 2, 2, 5),
+    overworld_frame(gObjectEventPic_Penguin_Rock, 2, 2, 6),
+    overworld_frame(gObjectEventPic_Penguin_Rock, 2, 2, 7),
+    overworld_frame(gObjectEventPic_Penguin_Rock, 2, 2, 8),
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_Queen_Black_Dragon[] = {

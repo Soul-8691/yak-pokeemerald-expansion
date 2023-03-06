@@ -321,6 +321,63 @@ VARROCK_NPC_11::
 	end
 
 
+VARROCK_NPC_12::
+	faceplayer
+	msgbox VARROCK_NPC_12_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_13::
+	faceplayer
+	namebox VARROCK_NPC_13_Text_0
+	msgbox VARROCK_NPC_12_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_14::
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox VARROCK_NPC_12_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_Romeo::
+	faceplayer
+	namebox VARROCK_NPC_Romeo_Text_0
+	msgbox VARROCK_NPC_Romeo_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCKSTORE_NPC_1::
+	faceplayer
+	msgbox VARROCK_NPC_12_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCKSTORE_NPC_2::
+	faceplayer
+	msgbox VARROCK_NPC_12_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 VARROCK_NPC_TeaSalesman::
 	lock
 	faceplayer
@@ -464,84 +521,6 @@ NPC_SLAYERMASTERLIST::
 	msgbox NPC_SLAYERMASTERLIST_Text_1
 	msgbox NPC_SLAYERMASTERLIST_Text_2
 	closemessage
-	release
-	end
-
-
-BATTLE_VARROCK_GYM_TRAINER_1::
-	trainerbattle_single TRAINER_FALADOR_GYM_1, BATTLE_VARROCK_GYM_TRAINER_1_Text_0, BATTLE_VARROCK_GYM_TRAINER_1_Text_1
-	switch VAR_POKESCAPE_FALADOR_STATE
-	case 4, BATTLE_VARROCK_GYM_TRAINER_1_2
-	case 5, BATTLE_VARROCK_GYM_TRAINER_1_3
-	return
-
-BATTLE_VARROCK_GYM_TRAINER_1_2:
-	lock
-	faceplayer
-	namebox VARROCK_NPC_GUARD_0_Text_0
-	msgbox BATTLE_VARROCK_GYM_TRAINER_1_Text_2
-	hidenamebox
-	release
-	end
-
-BATTLE_VARROCK_GYM_TRAINER_1_3:
-	lock
-	faceplayer
-	namebox VARROCK_NPC_GUARD_0_Text_0
-	msgbox BATTLE_VARROCK_GYM_TRAINER_1_Text_2
-	hidenamebox
-	release
-	end
-
-
-BATTLE_VARROCK_GYM_TRAINER_2::
-	trainerbattle_single TRAINER_FALADOR_GYM_1, BATTLE_VARROCK_GYM_TRAINER_2_Text_0, BATTLE_VARROCK_GYM_TRAINER_2_Text_1
-	switch VAR_POKESCAPE_FALADOR_STATE
-	case 4, BATTLE_VARROCK_GYM_TRAINER_2_2
-	case 5, BATTLE_VARROCK_GYM_TRAINER_2_3
-	return
-
-BATTLE_VARROCK_GYM_TRAINER_2_2:
-	lock
-	faceplayer
-	namebox VARROCK_NPC_GUARD_0_Text_0
-	msgbox BATTLE_VARROCK_GYM_TRAINER_2_Text_1
-	hidenamebox
-	release
-	end
-
-BATTLE_VARROCK_GYM_TRAINER_2_3:
-	lock
-	faceplayer
-	namebox VARROCK_NPC_GUARD_0_Text_0
-	msgbox BATTLE_VARROCK_GYM_TRAINER_2_Text_1
-	hidenamebox
-	release
-	end
-
-
-BATTLE_VARROCK_GYM_TRAINER_3::
-	trainerbattle_single TRAINER_FALADOR_GYM_1, BATTLE_VARROCK_GYM_TRAINER_3_Text_0, BATTLE_VARROCK_GYM_TRAINER_3_Text_1
-	switch VAR_POKESCAPE_FALADOR_STATE
-	case 4, BATTLE_VARROCK_GYM_TRAINER_3_2
-	case 5, BATTLE_VARROCK_GYM_TRAINER_3_3
-	return
-
-BATTLE_VARROCK_GYM_TRAINER_3_2:
-	lock
-	faceplayer
-	namebox VARROCK_NPC_GUARD_0_Text_0
-	msgbox BATTLE_VARROCK_GYM_TRAINER_3_Text_2
-	hidenamebox
-	release
-	end
-
-BATTLE_VARROCK_GYM_TRAINER_3_3:
-	lock
-	faceplayer
-	namebox VARROCK_NPC_GUARD_0_Text_0
-	msgbox BATTLE_VARROCK_GYM_TRAINER_3_Text_2
-	hidenamebox
 	release
 	end
 
@@ -942,6 +921,18 @@ VARROCK_NPC_11_Text_0:
 	.string "Dont dig for treasure chests, you have\n"
 	.string "been warned.$"
 
+VARROCK_NPC_12_Text_0:
+	.string "CUPHOLDER$"
+
+VARROCK_NPC_13_Text_0:
+	.string "Charlie$"
+
+VARROCK_NPC_Romeo_Text_0:
+	.string "Romeo$"
+
+VARROCK_NPC_Romeo_Text_1:
+	.string "Juliet, where art thou!$"
+
 VARROCK_NPC_TeaSalesman_Text_0:
 	.string "Tea Salesman$"
 
@@ -1026,36 +1017,6 @@ NPC_SLAYERMASTERLIST_Text_2:
 	.string "Badges you will then be eligible to\l"
 	.string "participate in the… …\p"
 	.string "The page is torn.$"
-
-BATTLE_VARROCK_GYM_TRAINER_1_Text_0:
-	.string "Hey you!\n"
-	.string "Do not trespass!$"
-
-BATTLE_VARROCK_GYM_TRAINER_1_Text_1:
-	.string "Consider that a warning!$"
-
-BATTLE_VARROCK_GYM_TRAINER_1_Text_2:
-	.string "Do not trespass!$"
-
-BATTLE_VARROCK_GYM_TRAINER_2_Text_0:
-	.string "You look shady.$"
-
-BATTLE_VARROCK_GYM_TRAINER_2_Text_1:
-	.string "You may pass shady person.$"
-
-BATTLE_VARROCK_GYM_TRAINER_3_Text_0:
-	.string "The king said he did not want visitors\n"
-	.string "today.$"
-
-BATTLE_VARROCK_GYM_TRAINER_3_Text_1:
-	.string "You do not care what the king wants at\n"
-	.string "all, do you?$"
-
-BATTLE_VARROCK_GYM_TRAINER_3_Text_2:
-	.string "The king said he did not want visitors\n"
-	.string "today.\p"
-	.string "You do not care what the king wants at\n"
-	.string "all, do you?$"
 
 STARTER_MON_SCRIPT_Text_0:
 	.string "Level Scaling is: {STR_VAR_1}$"

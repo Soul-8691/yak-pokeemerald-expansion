@@ -2,7 +2,7 @@
   "id": "MAP_GOBLIN_VILLAGE",
   "name": "GoblinVillage",
   "layout": "LAYOUT_GOBLIN_VILLAGE",
-  "music": "MUS_PS_ROUTE_MISTHALIN",
+  "music": "MUS_PS_BARBARIAN_VILLAGE",
   "region_map_section": "MAPSEC_GOBLIN_VILLAGE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -32,13 +32,18 @@
       "direction": "left",
       "offset": 8,
       "map": "MAP_ROUTE37"
+    },
+    {
+      "direction": "up",
+      "offset": 2,
+      "map": "MAP_ROUTE33"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_GOBLIN_2",
-      "x": 31,
-      "y": 6,
+      "x": 30,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -180,8 +185,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 6,
-      "y": 11,
+      "x": 35,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -206,8 +211,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
-      "x": 27,
-      "y": 17,
+      "x": 31,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,

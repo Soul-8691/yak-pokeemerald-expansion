@@ -3619,7 +3619,92 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_5[] = {
     .species = SPECIES_SCORPION_POISON_FORM,
     }
 };
+//Route33
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE33_GOBLIN1[] = {  
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_CHICKEN_BANDOSIAN_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 23,
+    .species = SPECIES_BANDLING,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE33_GOBLIN2[] = {  
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_GOAT_CLAY_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 22,
+    .species = SPECIES_GOAT_MOUNTAIN_FORM,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE33_ZAMORAK1[] = {  
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_ZAMATRICE,
+    }
+};
 
-
-
+//VARROCK GYM
+static const struct TrainerMonNoItemCustomMoves sParty_VARROCK_GYM_KINGROALD[] = {
+    {
+    .iv = 0,
+    .lvl = 38,
+    .species = SPECIES_RAT_KING_FORM,
+    .moves = {MOVE_DRAINING_KISS, MOVE_ROCK_SMASH, MOVE_SLAM, MOVE_NONE}
+    },
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_IMPLING_KINGLY_FORM,
+    .moves = {MOVE_DRAINING_KISS, MOVE_WRAP, MOVE_WATER_PULSE, MOVE_CHARGE_BEAM}
+    },
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_GIANT_FROG_ROYAL_FORM,
+    .moves = {MOVE_DRAINING_KISS, MOVE_HOWL, MOVE_BUBBLE, MOVE_MUD_SPORT}
+    },
+    {
+    .iv = 0,
+    .lvl = 37,
+    .species = SPECIES_KURASK,
+    .moves = {MOVE_DRAINING_KISS, MOVE_HOWL, MOVE_BUBBLE, MOVE_MUD_SPORT}
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_1[] = {  
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_ZAMATRICE,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_2[] = {  
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_ZAMATRICE,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_3[] = {  
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_ZAMATRICE,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_4[] = {  
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_ZAMATRICE,
+    }
+};
 

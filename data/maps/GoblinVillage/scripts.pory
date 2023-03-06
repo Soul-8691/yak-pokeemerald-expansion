@@ -1,6 +1,8 @@
 
 mapscripts GoblinVillage_MapScripts {
-    
+    MAP_SCRIPT_ON_TRANSITION {
+        setvar(VAR_EVOLUTION_MAP_STATE, 14) 
+    }
 }
 
 //GOBLIN VILLAGE

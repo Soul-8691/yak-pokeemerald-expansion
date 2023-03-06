@@ -244,6 +244,23 @@ script NPC_DraynorManor_Ava{
     
 }
 
+script NPC_DraynorManor_Quester{
+    lock
+	faceplayer
+	//namebox("Quester")
+    if (var(VAR_POKESCAPE_DRAYNORMANOR_LEVER_STATE) == 1) 
+    {
+        msgbox(format("Did you find the hidden switch?\pWhere was it?!"))
+    }
+    else
+    {
+        msgbox(format("I heard there was a hidden switch somewhere in this room but I am yet to find it."))
+    }
+    //hidenamebox
+	closemessage
+	release
+	end
+}
 
 script NPC_DraynorManor_Witch{
     lock

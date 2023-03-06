@@ -78,10 +78,10 @@
 #define FLAG_RECEIVED_PHOENIX_EGG    0x33 // Unused Flag
 #define FLAG_RECEIVED_GUTHIX_EGG    0x34 // Unused Flag
 #define FLAG_RECIEVED_KITTEN    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
+#define FLAG_VARROCKGYM_BOOK_1    0x36 // Unused Flag
+#define FLAG_VARROCKGYM_BOOK_2    0x37 // Unused Flag
+#define FLAG_VARROCKGYM_BOOK_3    0x38 // Unused Flag
+#define FLAG_VARROCKGYM_BOOK_4    0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
@@ -583,21 +583,23 @@
 #define FLAG_HIDDEN_ITEM_AsgarnianDungeon_3                  (FLAG_HIDDEN_ITEMS_START + 0x12)
 #define FLAG_HIDDEN_ITEM_GoblinVillage_1            (FLAG_HIDDEN_ITEMS_START + 0x14)
 #define FLAG_HIDDEN_ITEM_GoblinVillage_2           (FLAG_HIDDEN_ITEMS_START + 0x0C)
-
 #define FLAG_HIDDEN_FLAG_ITEM_RimmingtonMines_1           (FLAG_HIDDEN_ITEMS_START + 0x15)
 #define FLAG_HIDDEN_FLAG_ITEM_RimmingtonMines_2                (FLAG_HIDDEN_ITEMS_START + 0x16)
 #define FLAG_HIDDEN_ITEM_ROUTE8_1          (FLAG_HIDDEN_ITEMS_START + 0x17)
 #define FLAG_HIDDEN_ITEM_ROUTE8_2            (FLAG_HIDDEN_ITEMS_START + 0x18)
 #define FLAG_HIDDEN_ITEM_ROUTE8_3             (FLAG_HIDDEN_ITEMS_START + 0x19)
 #define FLAG_HIDDEN_ITEM_ROUTE8_4                (FLAG_HIDDEN_ITEMS_START + 0x1A)
+#define FLAG_HIDDEN_ITEM_ROUTE29_1               (FLAG_HIDDEN_ITEMS_START + 0x1C)
+#define FLAG_HIDDEN_ITEM_ROUTE29_2             (FLAG_HIDDEN_ITEMS_START + 0x00)
 
-#define FLAG_HIDDEN_ITEM_FALLARBOR_TOWN_NUGGET               (FLAG_HIDDEN_ITEMS_START + 0x1C)
-#define FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_ICE_HEAL             (FLAG_HIDDEN_ITEMS_START + 0x00)
+//LeAVE THESE KEYS 
 #define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_1_KEY             (FLAG_HIDDEN_ITEMS_START + 0x1F)
 #define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_2_KEY             (FLAG_HIDDEN_ITEMS_START + 0x20)
 #define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_4_KEY             (FLAG_HIDDEN_ITEMS_START + 0x21)
 #define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_6_KEY             (FLAG_HIDDEN_ITEMS_START + 0x22)
-#define FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_CALCIUM            (FLAG_HIDDEN_ITEMS_START + 0x65)
+//
+#define FLAG_HIDDEN_ITEM_ROUTE29_3            (FLAG_HIDDEN_ITEMS_START + 0x65)
+
 #define FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_ZINC               (FLAG_HIDDEN_ITEMS_START + 0x66)
 #define FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_PROTEIN            (FLAG_HIDDEN_ITEMS_START + 0x67)
 #define FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_IRON               (FLAG_HIDDEN_ITEMS_START + 0x68)
@@ -1192,23 +1194,24 @@
 #define FLAG_ITEM_SINKHOLE_2                               0x454
 #define FLAG_ITEM_SINKHOLE_3                                  0x455
 
-#define FLAG_ITEM_NEW_MAUVILLE_THUNDER_STONE                        0x456
-#define FLAG_ITEM_FIERY_PATH_FIRE_STONE                             0x457
-#define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_TM_07                         0x458
-#define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_NEVER_MELT_ICE                0x459
-#define FLAG_ITEM_ROUTE_103_GUARD_SPEC                              0x45A
-#define FLAG_ITEM_ROUTE_104_X_ACCURACY                              0x45B
-#define FLAG_ITEM_MAUVILLE_CITY_X_SPEED                             0x45C
-#define FLAG_ITEM_PETALBURD_WOODS_PARALYZE_HEAL                     0x45D
-#define FLAG_ITEM_ROUTE_115_GREAT_BALL                              0x45E
-#define FLAG_ITEM_SAFARI_ZONE_NORTH_CALCIUM                         0x45F
-#define FLAG_ITEM_MT_PYRE_3F_SUPER_REPEL                            0x460
-#define FLAG_ITEM_ROUTE_118_HYPER_POTION                            0x461
-#define FLAG_ITEM_NEW_MAUVILLE_FULL_HEAL                            0x462
-#define FLAG_ITEM_NEW_MAUVILLE_PARALYZE_HEAL                        0x463
-#define FLAG_ITEM_AQUA_HIDEOUT_B1F_MASTER_BALL                      0x464
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MASTER_BALL                 0x465 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MAX_ELIXIR                  0x466 // Unused Flag, leftover from the Ruby Magma hideout
+#define FLAG_ITEM_ROUTE16_1                        0x456
+#define FLAG_ITEM_ROUTE16_2                             0x457
+#define FLAG_ITEM_ROUTE17_1                         0x458
+#define FLAG_ITEM_ROUTE15_1                0x459
+#define FLAG_ITEM_ROUTE15_2                              0x45A
+#define FLAG_ITEM_ROUTE15_3                              0x45B
+#define FLAG_ITEM_ROUTE15_4                             0x45C
+#define FLAG_ITEM_ROUTE13_1                     0x45D
+#define FLAG_ITEM_ROUTE13_2                              0x45E
+#define FLAG_ITEM_ROUTE13_3                         0x45F
+#define FLAG_ITEM_ROUTE14_1                            0x460
+#define FLAG_ITEM_ROUTE29_1                            0x461
+#define FLAG_ITEM_ROUTE29_2                            0x462
+#define FLAG_ITEM_ROUTE28_1                        0x463
+#define FLAG_ITEM_ROUTE28_2                      0x464
+#define FLAG_ITEM_ALKHARID_1                 0x465 // Unused Flag, leftover from the Ruby Magma hideout
+#define FLAG_ITEM_ROUTE33_1                  0x466 // Unused Flag, leftover from the Ruby Magma hideout
+
 #define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B2F_NEST_BALL                   0x467 // Unused Flag, leftover from the Ruby Magma hideout
 #define FLAG_UNUSED_0x468                                           0x468 // Unused Flag
 #define FLAG_ITEM_MT_PYRE_2F_ULTRA_BALL                             0x469

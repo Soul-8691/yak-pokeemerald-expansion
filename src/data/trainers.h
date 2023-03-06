@@ -3029,8 +3029,115 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_ROUTE29_TRAINER_5),
         .party = {.NoItemDefaultMoves = sParty_ROUTE29_TRAINER_5},
     },
+    //ROUTE33
+    [TRAINER_ROUTE33_GOBLIN1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GOBLIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_goblin,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE33_GOBLIN1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE33_GOBLIN1},
+    },
+    [TRAINER_ROUTE33_GOBLIN2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GOBLIN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_goblin,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE33_GOBLIN2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE33_GOBLIN2},
+    },
+    [TRAINER_ROUTE33_ZAMORAK1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
+        .trainerClass = TRAINER_CLASS_DARK,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_wizard_dark,
+        .trainerName = _("WIZARD"),
+        .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE33_ZAMORAK1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE33_ZAMORAK1},
+        .scaling = FALSE,
+    },
 
+//VARROCK GYM
+    [TRAINER_VARROCK_GYM_KINGROALD] =
+    {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_king_roald,
+        .trainerName = _("KING ROALD"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_GYM_KINGROALD),
+        .party = {.NoItemCustomMoves = sParty_VARROCK_GYM_KINGROALD},
+    },
 
+    [TRAINER_VARROCK_GYM_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_guard_varrock,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_GYM_1),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_GYM_1},
+    },
+    [TRAINER_VARROCK_GYM_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_guard_varrock,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_GYM_2),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_GYM_2},
+    },
+    [TRAINER_VARROCK_GYM_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_guard_varrock,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_GYM_3),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_GYM_3},
+    },
+    [TRAINER_VARROCK_GYM_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_MONK,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_NOOB,
+        .trainerPic = TRAINER_PIC_monk,
+        .trainerName = _(""),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_VARROCK_GYM_4),
+        .party = {.NoItemDefaultMoves = sParty_VARROCK_GYM_4},
+    },
 
 
 

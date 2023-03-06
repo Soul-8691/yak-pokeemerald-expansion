@@ -4,7 +4,56 @@ Route18_MapScripts::
 
 Route18_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 1
+	call SPECIAL_PENGUIN_EVENT
 	return
+
+
+SPECIAL_PENGUIN_EVENT::
+	random 20
+	switch VAR_RESULT
+	case 19, SPECIAL_PENGUIN_EVENT_3
+	case 20, SPECIAL_PENGUIN_EVENT_4
+SPECIAL_PENGUIN_EVENT_1:
+	return
+
+SPECIAL_PENGUIN_EVENT_3:
+	clearflag FLAG_TEMP_8
+	clearflag FLAG_TEMP_9
+	addobject 10
+	addobject 16
+	playbgm MUS_PS_TERRORBIRD, 0
+	savebgm MUS_PS_TERRORBIRD
+	goto SPECIAL_PENGUIN_EVENT_1
+
+SPECIAL_PENGUIN_EVENT_4:
+	setflag FLAG_TEMP_8
+	setflag FLAG_TEMP_9
+	removeobject 10
+	removeobject 16
+	goto SPECIAL_PENGUIN_EVENT_1
+
+
+ENCOUNTER_PENGUIN_BUSH::
+	lock
+	faceplayer
+	namebox ENCOUNTER_PENGUIN_BUSH_Text_0
+	playmoncry SPECIES_PIDGEY, 0
+	msgbox ENCOUNTER_PENGUIN_BUSH_Text_1
+	waitmoncry
+	hidenamebox
+	closemessage
+	delay 1
+	setwildbattle SPECIES_PENGUIN_DISGUISE_BUSH_FORM, 15, ITEM_NONE
+	dowildbattle
+	fadescreen FADE_TO_BLACK
+	setflag FLAG_TEMP_8
+	setflag FLAG_TEMP_9
+	removeobject 10
+	removeobject 16
+	fadedefaultbgm
+	fadescreen FADE_FROM_BLACK
+	closemessage
+	end
 
 
 NPC_ROUTE18_NPC1::
@@ -101,6 +150,12 @@ BATTLE_ROUTE19_TRAINER1::
 	release
 	end
 
+
+ENCOUNTER_PENGUIN_BUSH_Text_0:
+	.string "Penguin$"
+
+ENCOUNTER_PENGUIN_BUSH_Text_1:
+	.string "Noot! Noot!$"
 
 NPC_ROUTE18_NPC1_Text_0:
 	.string ".$"

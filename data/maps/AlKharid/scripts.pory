@@ -9,14 +9,20 @@ mapscripts AlKharid_MapScripts {
 
 
 
-
+script ALKHARID_GNOMEGLIDER
+{
+    msgbox(format("It is a Gnome Glider."))
+    closemessage
+    release
+    end
+}
 
 //NPCS
 script ALKHARID_NPC_1
 {
     faceplayer
     //namebox ("")
-    msgbox(format(""))
+    msgbox(format("The Gnome Glider is currently undergoing maintenance.\pPlease come back later."))
     closemessage
     //hidenamebox
     release
@@ -25,10 +31,10 @@ script ALKHARID_NPC_1
 script ALKHARID_NPC_2
 {
     faceplayer
-    //namebox ("")
-    msgbox(format(""))
+    namebox ("Ali")
+    msgbox(format("Browse my Wares."))
     closemessage
-    //hidenamebox
+    hidenamebox
     release
     end
 }

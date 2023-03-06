@@ -163,7 +163,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "BATTLE_ROUTE18_TRAINER2",
-      "flag": "0"
+      "flag": "FLAG_TEMP_8"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAT_BLACK",
@@ -219,7 +219,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 33,
+      "x": 32,
       "y": -5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -229,6 +229,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PENGUIN_ROCK",
+      "x": 9,
+      "y": 23,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 22,
+      "movement_range_y": 22,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ENCOUNTER_PENGUIN_BUSH",
+      "flag": "FLAG_TEMP_9"
     }
   ],
   "warp_events": [

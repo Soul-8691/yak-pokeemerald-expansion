@@ -206,6 +206,22 @@ NPC_DraynorManor_Ava_7:
 	end
 
 
+NPC_DraynorManor_Quester::
+	lock
+	faceplayer
+	compare VAR_POKESCAPE_DRAYNORMANOR_LEVER_STATE, 1
+	goto_if_eq NPC_DraynorManor_Quester_2
+	msgbox NPC_DraynorManor_Quester_Text_1
+NPC_DraynorManor_Quester_1:
+	closemessage
+	release
+	end
+
+NPC_DraynorManor_Quester_2:
+	msgbox NPC_DraynorManor_Quester_Text_0
+	goto NPC_DraynorManor_Quester_1
+
+
 NPC_DraynorManor_Witch::
 	lock
 	faceplayer
@@ -342,6 +358,15 @@ NPC_DraynorManor_Ava_Text_6:
 	.string "…Sorry…{PAUSE 15} I have spent way too much time\n"
 	.string "here, I'm not used to seeing corporeal\l"
 	.string "beings.$"
+
+NPC_DraynorManor_Quester_Text_0:
+	.string "Did you find the hidden switch?\p"
+	.string "Where was it?!$"
+
+NPC_DraynorManor_Quester_Text_1:
+	.string "I heard there was a hidden switch\n"
+	.string "somewhere in this room but I am yet to\l"
+	.string "find it.$"
 
 NPC_DraynorManor_Witch_Text_0:
 	.string "Witch$"

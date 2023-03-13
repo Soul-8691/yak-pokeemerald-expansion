@@ -218,24 +218,22 @@ CableClub_EventScript_PlayerExitUnionRoom:: @ 8276D84
 	setvar VAR_CABLE_CLUB_STATE, 0
 	compare VAR_0x8007, 0
 	goto_if_eq CableClub_EventScript_PlayerExitLinkRoom
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerFaceAttendantRight
-	waitmovement 0
-	applymovement VAR_0x8007, Movement_AttendantFaceLeft
-	waitmovement 0
 	call CableClub_EventScript_TrainerCardDataOverwritten
 	return
 
 CableClub_EventScript_TrainerCardDataOverwritten:: @ 8276DAE
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerExitLinkRoom
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerFaceAttendantRight
+	waitmovement 0
+	applymovement VAR_0x8007, Movement_AttendantFaceLeft
+	waitmovement 0
 	message CableClub_Text_TrainerCardDataOverwritten
 	waitmessage
 	playse SE_PIN
 	delay 60
 	message CableClub_Text_HopeToSeeYouAgain
 	waitmessage
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerExitLinkRoom
-	waitmovement 0
-	applymovement VAR_0x8007, Movement_AttendantFaceDown
-	waitmovement 0
 	return
 
 CableClub_EventScript_PlayerExitLinkRoom:: @ 8276DD5
@@ -666,6 +664,9 @@ Movement_AttendantFaceLeft: @ 827734D
 Movement_PlayerExitLinkRoom: @ 827734F
 	walk_down
 	walk_down
+	delay_16
+	walk_down
+	walk_down
 	step_end
 
 @ Functionally unused
@@ -676,7 +677,8 @@ Movement_PlayerApproachLinkRoomRight: @ 8277352
 	step_end
 
 Movement_PlayerApproachLinkRoomLeft: @ 8277356
-	walk_left
+	walk_up
+	walk_up
 	walk_up
 	walk_up
 	step_end
@@ -1332,13 +1334,13 @@ CableClub_EventScript_CloseUnionRoomBarrier:: @ 8277BD1
 	return
 
 CableClub_EventScript_OpenDirectCornerBarrier:: @ 8277BE4
-	setmetatile 9, 2, METATILE_PokemonCenter_Floor_ShadowTop_Alt, 0
-	setmetatile 9, 3, METATILE_PokemonCenter_Floor_Plain_Alt, 0
+	setmetatile 10, 3, 579, 1
+	setmetatile 10, 4, 579, 1
 	return
 
 CableClub_EventScript_CloseDirectCornerBarrier:: @ 8277BF7
-	setmetatile 9, 2, METATILE_PokemonCenter_Floor_ShadowTop, 1
-	setmetatile 9, 3, METATILE_PokemonCenter_CounterBarrier, 1
+	setmetatile 10, 3, 750, 1
+	setmetatile 10, 4, 758, 1
 	return
 
 EventScript_OpenMossdeepGameCornerBarrier:: @ 8277C0A

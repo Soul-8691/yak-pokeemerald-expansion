@@ -9,7 +9,8 @@ Route13_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 
 VARROCK_NPC_RATBURGUS::
 	faceplayer
-	msgbox VARROCK_NPC_RATBURGUS_Text_0
+	namebox VARROCK_NPC_RATBURGUS_Text_0
+	msgbox VARROCK_NPC_RATBURGUS_Text_1
 	closemessage
 	hidenamebox
 	release
@@ -151,7 +152,7 @@ BATTLE_ROUTE16_TRAINER_3::
 
 
 BATTLE_ROUTE16_TRAINER_4::
-	trainerbattle_single TRAINER_ROUTE16_TRAINER_4, BATTLE_ROUTE16_TRAINER_4_Text_0, BATTLE_ROUTE13_DARKWIZARD_5_Text_0
+	trainerbattle_single TRAINER_ROUTE16_TRAINER_4, BATTLE_ROUTE13_DARKWIZARD_5_Text_0, BATTLE_ROUTE13_DARKWIZARD_5_Text_0
 	msgbox BATTLE_ROUTE13_DARKWIZARD_5_Text_0
 	hidenamebox
 	release
@@ -159,16 +160,36 @@ BATTLE_ROUTE16_TRAINER_4::
 
 
 BATTLE_ROUTE16_TRAINER_5::
-	trainerbattle_single TRAINER_ROUTE16_TRAINER_5, BATTLE_ROUTE13_DARKWIZARD_5_Text_0, BATTLE_ROUTE13_DARKWIZARD_5_Text_0
-	msgbox BATTLE_ROUTE13_DARKWIZARD_5_Text_0
+	trainerbattle_single TRAINER_ROUTE16_TRAINER_5, BATTLE_ROUTE16_TRAINER_5_Text_0, BATTLE_ROUTE16_TRAINER_5_Text_1
+	msgbox BATTLE_ROUTE16_TRAINER_5_Text_2
 	hidenamebox
 	release
 	end
 
 
 BATTLE_ROUTE16_TRAINER_6::
-	trainerbattle_single TRAINER_ROUTE16_TRAINER_6, BATTLE_ROUTE13_DARKWIZARD_5_Text_0, BATTLE_ROUTE13_DARKWIZARD_5_Text_0
-	msgbox BATTLE_ROUTE13_DARKWIZARD_5_Text_0
+	trainerbattle_single TRAINER_ROUTE16_TRAINER_6, BATTLE_ROUTE16_TRAINER_6_Text_0, BATTLE_ROUTE16_TRAINER_6_Text_1
+	msgbox BATTLE_ROUTE16_TRAINER_6_Text_2
+	hidenamebox
+	release
+	end
+
+
+ROUTE16_NPC_GUARD_2::
+	faceplayer
+	namebox BATTLE_ROUTE16_TRAINER_2_Text_2
+	msgbox ROUTE16_NPC_GUARD_2_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+ROUTE17_NPC_ARCH::
+	faceplayer
+	namebox BATTLE_ROUTE16_TRAINER_3_Text_2
+	msgbox ROUTE17_NPC_ARCH_Text_0
+	closemessage
 	hidenamebox
 	release
 	end
@@ -193,7 +214,14 @@ BATTLE_ROUTE17_TRAINER_2::
 
 
 VARROCK_NPC_RATBURGUS_Text_0:
-	.string "CUPHOLDER$"
+	.string "Ratburgus$"
+
+VARROCK_NPC_RATBURGUS_Text_1:
+	.string "I got mugged and lost all of my\n"
+	.string "important papers.\p"
+	.string "It will be okay though, I sent an\n"
+	.string "adventurer out on a quest to retrieve\l"
+	.string "them.$"
 
 ROUTE14_QUESTER_Text_0:
 	.string "This is the champions guild.\p"
@@ -344,9 +372,36 @@ BATTLE_ROUTE16_TRAINER_3_Text_3:
 	.string "You can uncover all sorts of things at\n"
 	.string "the digsite.$"
 
-BATTLE_ROUTE16_TRAINER_4_Text_0:
-	.string "CUPHOLDER's the name.\p"
-	.string "Speed is my game.$"
+BATTLE_ROUTE16_TRAINER_5_Text_0:
+	.string "You should join me in my daily agility\n"
+	.string "training!$"
+
+BATTLE_ROUTE16_TRAINER_5_Text_1:
+	.string "What do you mean I won't gain any xp\n"
+	.string "running around without a Silverhawk?$"
+
+BATTLE_ROUTE16_TRAINER_5_Text_2:
+	.string "I train here every day, you should train\n"
+	.string "with me again sometime.$"
+
+BATTLE_ROUTE16_TRAINER_6_Text_0:
+	.string "Where do you think you are going!$"
+
+BATTLE_ROUTE16_TRAINER_6_Text_1:
+	.string "Stand and Del-$"
+
+BATTLE_ROUTE16_TRAINER_6_Text_2:
+	.string "I'm sorry, please don't hurt me!\p"
+	.string "I promise I will change my ways.$"
+
+ROUTE16_NPC_GUARD_2_Text_0:
+	.string "Do not to cause trouble for the workmen\n"
+	.string "who make the trek from the Digsite.$"
+
+ROUTE17_NPC_ARCH_Text_0:
+	.string "This statue just collapsed and\n"
+	.string "revealed a cavern.\p"
+	.string "I must investegate this.$"
 
 BATTLE_ROUTE17_TRAINER_1_Text_0:
 	.string "Stop!\p"

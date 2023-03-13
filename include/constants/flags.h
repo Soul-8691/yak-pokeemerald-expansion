@@ -1211,8 +1211,8 @@
 #define FLAG_ITEM_ROUTE28_2                      0x464
 #define FLAG_ITEM_ALKHARID_1                 0x465 // Unused Flag, leftover from the Ruby Magma hideout
 #define FLAG_ITEM_ROUTE33_1                  0x466 // Unused Flag, leftover from the Ruby Magma hideout
+#define FLAG_ITEM_ROUTE19_1                   0x467 // Unused Flag, leftover from the Ruby Magma hideout
 
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B2F_NEST_BALL                   0x467 // Unused Flag, leftover from the Ruby Magma hideout
 #define FLAG_UNUSED_0x468                                           0x468 // Unused Flag
 #define FLAG_ITEM_MT_PYRE_2F_ULTRA_BALL                             0x469
 #define FLAG_ITEM_MT_PYRE_4F_SEA_INCENSE                            0x46A
@@ -1635,7 +1635,8 @@
 #define FLAG_UNUSED_0x93A                           (DAILY_FLAGS_START + 0x1A) // PUB TRAINER 6
 #define FLAG_UNUSED_0x93B                           (DAILY_FLAGS_START + 0x1B) // PUB TRAINER 7
 #define FLAG_UNUSED_0x93C                           (DAILY_FLAGS_START + 0x1C) // PUB TRAINER 8
-#define FLAG_UNUSED_0x93D                           (DAILY_FLAGS_START + 0x1D) // Unused Flag
+#define FLAG_UNUSED_0x93D                           (DAILY_FLAGS_START + 0x1D) // NIGHTMARERH GOODIE BAG
+
 #define FLAG_UNUSED_0x93E                           (DAILY_FLAGS_START + 0x1E) // Unused Flag
 #define FLAG_UNUSED_0x93F                           (DAILY_FLAGS_START + 0x1F) // Unused Flag
 #define FLAG_UNUSED_0x940                           (DAILY_FLAGS_START + 0x20) // Unused Flag

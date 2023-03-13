@@ -32,6 +32,11 @@
       "direction": "up",
       "offset": 42,
       "map": "MAP_ROUTE30"
+    },
+    {
+      "direction": "left",
+      "offset": 0,
+      "map": "MAP_GRAND_EXCHANGE"
     }
   ],
   "object_events": [
@@ -45,7 +50,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VARROCK_NPC_PALACE_GUARD_4",
       "flag": "0"
     },
     {
@@ -58,7 +63,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VARROCK_NPC_PALACE_GUARD_3",
       "flag": "0"
     },
     {
@@ -71,20 +76,20 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VARROCK_NPC_PALACE_GUARD_2",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_GUARD_VARROCK_2",
+      "graphics_id": "OBJ_EVENT_GFX_GUARD_VARROCK_1",
       "x": 19,
       "y": 19,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "VARROCK_NPC_PALACE_GUARD_1",
       "flag": "0"
     },
     {
@@ -128,8 +133,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOODCUTTER",
-      "x": 11,
-      "y": 24,
+      "x": 29,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -141,15 +146,15 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_VARROCK_3",
-      "x": 1,
-      "y": 9,
+      "x": 3,
+      "y": 8,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "GE_GUARD_BLOCK",
       "flag": "0"
     },
     {
@@ -227,7 +232,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "NPC_GOODIEBAG",
       "flag": "0"
     },
     {
@@ -451,16 +456,16 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 20,
-      "y": 21,
+      "x": 21,
+      "y": 8,
       "elevation": 3,
       "item": "ITEM_MASTER_BALL",
       "flag": "FLAG_UNUSED_0x29F"
     },
     {
       "type": "sign",
-      "x": 3,
-      "y": 8,
+      "x": 1,
+      "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "NULL"
@@ -479,7 +484,7 @@
       "y": 28,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "VARROCKGYM_SIGNPOST"
     }
   ]
 }

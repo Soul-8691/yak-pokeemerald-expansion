@@ -86,3 +86,8 @@ ITEM_ALKHARID_1::
 	finditem ITEM_LAMP_SPDEF
 	end
 
+
+ITEM_ROUTE19_1::
+	finditem ITEM_ADAMANT_POUCH
+	end
+

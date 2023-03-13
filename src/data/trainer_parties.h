@@ -3253,7 +3253,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 34,
-    .species = SPECIES_ENT,
+    .species = SPECIES_SPROUTLING_SPRING_FORM,
     },
     {
     .iv = 0,
@@ -3656,55 +3656,144 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE33_ZAMORAK1[] = {
 static const struct TrainerMonNoItemCustomMoves sParty_VARROCK_GYM_KINGROALD[] = {
     {
     .iv = 0,
-    .lvl = 38,
+    .lvl = 42,
+    .species = SPECIES_RABBIT,
+    .moves = {MOVE_DRAINING_KISS, MOVE_BOUNCE, MOVE_HI_JUMP_KICK, MOVE_RETURN}
+    },
+    {
+    .iv = 0,
+    .lvl = 42,
     .species = SPECIES_RAT_KING_FORM,
-    .moves = {MOVE_DRAINING_KISS, MOVE_ROCK_SMASH, MOVE_SLAM, MOVE_NONE}
+    .moves = {MOVE_DRAINING_KISS, MOVE_VENGEANCE, MOVE_BULK_UP, MOVE_DIG}
     },
     {
     .iv = 0,
-    .lvl = 35,
+    .lvl = 40,
     .species = SPECIES_IMPLING_KINGLY_FORM,
-    .moves = {MOVE_DRAINING_KISS, MOVE_WRAP, MOVE_WATER_PULSE, MOVE_CHARGE_BEAM}
+    .moves = {MOVE_DRAINING_KISS, MOVE_U_TURN, MOVE_SNARL, MOVE_EMBARGO}
     },
     {
     .iv = 0,
-    .lvl = 35,
+    .lvl = 41,
     .species = SPECIES_GIANT_FROG_ROYAL_FORM,
-    .moves = {MOVE_DRAINING_KISS, MOVE_HOWL, MOVE_BUBBLE, MOVE_MUD_SPORT}
+    .moves = {MOVE_DRAINING_KISS, MOVE_BOUNCE, MOVE_MUD_BOMB, MOVE_BUBBLE_BEAM}
     },
-    {
-    .iv = 0,
-    .lvl = 37,
-    .species = SPECIES_KURASK,
-    .moves = {MOVE_DRAINING_KISS, MOVE_HOWL, MOVE_BUBBLE, MOVE_MUD_SPORT}
-    }
+    
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_1[] = {  
     {
     .iv = 0,
-    .lvl = 24,
-    .species = SPECIES_ZAMATRICE,
+    .lvl = 35,
+    .species = SPECIES_BEAR_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_COW,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_2[] = {  
     {
     .iv = 0,
-    .lvl = 24,
-    .species = SPECIES_ZAMATRICE,
+    .lvl = 36,
+    .species = SPECIES_RABBIT,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_TOOTHS,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_3[] = {  
     {
     .iv = 0,
-    .lvl = 24,
-    .species = SPECIES_ZAMATRICE,
+    .lvl = 34,
+    .species = SPECIES_UNICORN_WHITE_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 38,
+    .species = SPECIES_FOAL,
+    },
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_PENANCE_SPAWN,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_4[] = {  
     {
     .iv = 0,
-    .lvl = 24,
-    .species = SPECIES_ZAMATRICE,
+    .lvl = 37,
+    .species = SPECIES_EEL_SALVE_FORM,
+    }
+};
+//ROUTE 15
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_1[] = {  
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_GOAT_CLAY_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_ROCK_CRAB_AMMONITE_FORM,
+    },
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_2[] = {  
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_PET_ROCK,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_GOLEM_TITAN,
+    },
+    {
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_PET_ROCK,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_3[] = {  
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_ROCK_STRANGE_FORM,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_4[] = {  
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_ZYGOMITE,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_CABBAGE,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_5[] = {  
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_SALMON_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_COCKROACH_SOLDIER,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_6[] = {  
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_BEAVER,
     }
 };
 

@@ -24,7 +24,8 @@ script ROUTE15_SIGNPOST
 
 script ROUTE15_NPC_UNICORN
 {
-    
+    lock
+    faceplayer
     namebox ("Unicorn")
     msgbox(format("NEEEIGGH!"))
     closemessage
@@ -35,7 +36,8 @@ script ROUTE15_NPC_UNICORN
 
 script ROUTE15_NPC_MINER
 {
-    
+    lock
+    faceplayer
     namebox ("Miner")
     msgbox(format("I am going to craft so many Pouches with these ores!"))
     closemessage
@@ -46,9 +48,10 @@ script ROUTE15_NPC_MINER
 
 script ROUTE15_NPC_NOOB
 {
-    
+    lock
+    faceplayer
     namebox ("Noob")
-    msgbox(format(""))
+    msgbox(format("My Pickaxe head just flew off.\pHave you seen it anywhere?"))
     closemessage
     hidenamebox
     release
@@ -59,8 +62,8 @@ script ROUTE15_NPC_NOOB
 
 script BATTLE_ROUTE15_TRAINER_1 
 { //Penguin spy (rock) ,War tortoise 
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("We mine all day, time for a break."),format("I lost a lot of exp on that break.\pI may never recover from this loss."))
-    namebox ("MINER")
+    trainerbattle_single(TRAINER_ROUTE15_TRAINER_1, format("We mine all day, time for a break."),format("I lost a lot of exp on that break.\pI may never recover from this loss."))
+    namebox ("Miner")
     msgbox(format("I lost a lot of exp on that break.\pI may never recover from this loss."))
 	hidenamebox
     release
@@ -69,8 +72,8 @@ script BATTLE_ROUTE15_TRAINER_1
 
 script BATTLE_ROUTE15_TRAINER_2
 { //Pickaxe. Nature impling.
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("You better be worth my time interrupting me like this."),format("I guess you were partly worth it."))
-    namebox ("MINER")
+    trainerbattle_single(TRAINER_ROUTE15_TRAINER_2, format("You better be worth my time interrupting me like this."),format("I guess you were partly worth it."))
+    namebox ("Miner")
     msgbox(format("I guess you were partly worth it."))
 	hidenamebox
     release
@@ -79,8 +82,8 @@ script BATTLE_ROUTE15_TRAINER_2
 
 script BATTLE_ROUTE15_TRAINER_3
 { //Brine rat. pet rock. Cavefish.
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("It might not be ambitious, but I'd really like to reach mining level 9 by the week."),format("I am never going to make it…"))
-    namebox ("MINER")
+    trainerbattle_single(TRAINER_ROUTE15_TRAINER_3, format("It might not be ambitious, but I'd really like to reach mining level 9 by the week."),format("I am never going to make it…"))
+    namebox ("Miner")
     msgbox(format("I am never going to make it…"))
 	hidenamebox
     release
@@ -89,8 +92,8 @@ script BATTLE_ROUTE15_TRAINER_3
 
 script BATTLE_ROUTE15_TRAINER_4
 { //Sheephound (border collie) . Birds nest. Dancing doll
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("I chop down trees, I eat my lunch, I like to battle strangers!"),format("On wednesday I go shopping, just like my dear papa!"))
-    namebox ("WC")
+    trainerbattle_single(TRAINER_ROUTE15_TRAINER_4, format("I chop down trees, I eat my lunch, I like to battle strangers!"),format("On wednesday I go shopping, just like my dear papa!"))
+    namebox ("Woodcutter")
     msgbox(format("On Wednesday I go shopping, just like my dear papa!"))
 	hidenamebox
     release
@@ -99,9 +102,9 @@ script BATTLE_ROUTE15_TRAINER_4
 
 script BATTLE_ROUTE15_TRAINER_5
 {
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format("I hear the digsite is nearby, but only members are allowed to excavate it."),format(""))
-    namebox ("RANGER")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE15_TRAINER_5, format("I tried Mining but everyone kept stealing my ore so I am going to try some MvM battles instead!"),format("Looks like I am no good at this either…"))
+    namebox ("Noob")
+    msgbox(format("Seems like I am no good at Mining or MvM battles.\pMaybe I'll try Questing, I doubt I could go wrong with that."))
 	hidenamebox
     release
 	end
@@ -109,10 +112,12 @@ script BATTLE_ROUTE15_TRAINER_5
 
 script BATTLE_ROUTE15_TRAINER_6
 {
-    trainerbattle_single(TRAINER_RimmingtonMines_Miner, format(""),format(""))
-    namebox ("WC")
-    msgbox(format(""))
+    trainerbattle_single(TRAINER_ROUTE15_TRAINER_6, format("My Woodcutting level is 14.\pWhat is yours?"),format("My Beaver?\pI found him was level 3."))
+    namebox ("Woodcutter")
+    msgbox(format("My Beaver?\pI found him was level 3."))
 	hidenamebox
     release
 	end
 }
+
+//I hear the digsite is nearby, but only members are allowed to excavate it.

@@ -10,8 +10,6 @@ mapscripts Varrock_MapScripts {
 
 
 
-
-
 script VARROCK_SIGNPOST
 {
     msgbox(format("Varrock, the trade centre of the Gielinor."))
@@ -19,7 +17,13 @@ script VARROCK_SIGNPOST
     release
     end
 }
-
+script VARROCKGYM_SIGNPOST
+{
+    msgbox(format("Varrock Gym."))
+    closemessage
+    release
+    end
+}
 
 
 script VARROCK_Gypsy_Aris_SIGNPOST
@@ -388,8 +392,8 @@ script VARROCK_NPC_11
 script VARROCK_NPC_12
 {
     faceplayer
-    //namebox ("Skiller")
-    msgbox(format("CUPHOLDER"))
+    namebox ("Skiller")
+    msgbox(format("I should stop by Aubury's Rune Shop and grab some Runes to evolve my Monsters."))
     closemessage
     hidenamebox
     release
@@ -400,7 +404,7 @@ script VARROCK_NPC_13
 {
     faceplayer
     namebox ("Charlie")
-    msgbox(format("CUPHOLDER"))
+    msgbox(format("Life is hard.\pSpare some cash?"))
     closemessage
     hidenamebox
     release
@@ -411,7 +415,7 @@ script VARROCK_NPC_14
 {
     faceplayer
     namebox ("Guard")
-    msgbox(format("CUPHOLDER"))
+    msgbox(format("Purple Sweets are really yum!\pI know it is a waste eating them myself but I cannot help it."))
     closemessage
     hidenamebox
     release
@@ -434,8 +438,8 @@ script VARROCK_NPC_Romeo
 script VARROCKSTORE_NPC_1
 {
     faceplayer
-    //namebox ("Guard")
-    msgbox(format("CUPHOLDER"))
+    namebox ("Noob")
+    msgbox(format("I probably should buy one of each Cocktail.\pThat way I can heal any status effects."))
     closemessage
     hidenamebox
     release
@@ -445,13 +449,129 @@ script VARROCKSTORE_NPC_1
 script VARROCKSTORE_NPC_2
 {
     faceplayer
-    //namebox ("Guard")
-    msgbox(format("CUPHOLDER"))
+    namebox ("Man")
+    //msgbox(format("Bronze, Iron, Steel, Adamant, Rune.\pThere are so many pouches to choose from.\pEach better than the previous."))
+    msgbox(format("When catching monsters some pouches are better than others.\pFor example a Mystic Pouch works really well on Fairy-Type Monsters."))
     closemessage
     hidenamebox
     release
     end
 }
+
+
+script VARROCK_NPC_PALACE_GUARD_1
+{
+    faceplayer
+    namebox ("Guard")
+    msgbox(format("Our king specialises in Fairy-Type monsters.\pBut don't tell anyone I told you that."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_PALACE_GUARD_2
+{
+    faceplayer
+    namebox ("Guard")
+    msgbox(format("There are hidden items all over the place.\pI should really invest in an ItemFinder set."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_PALACE_GUARD_3
+{
+    faceplayer
+    namebox ("Guard")
+    msgbox(format("King Roald is one of the MvM Leaders.\pYou can find him in the Castle."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_PALACE_GUARD_4
+{
+    faceplayer
+    namebox ("Guard")
+    msgbox(format("Be careful not to let your monsters faint.\pI heard horror stories about some monsters evolving into undead versions of themselves."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_Thessalia
+{
+    faceplayer
+    namebox ("Thessalia")
+    msgbox(format("Hello, I can change your outfit for you.\pBut you will have to come back later."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_ThessaliaGrandma
+{
+    faceplayer
+    //namebox ("Grandma")
+    msgbox(format("Zzz…"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_SWORDSHOP_1
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("Sorry, all of my Weapons are out of stock at the moment."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_SWORDSHOP_2
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("I came to buy a Dragon Scimitar to power up my Monsters Dragon-Type moves.\pBut they don't have any in stock."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_SWORDSHOP_3
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("Did you know a Mithril Scimitar boosts the Attack stat for monsters that are not yet evolved."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script VARROCK_NPC_SWORDSHOP_4
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format("Today is my day off."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+
 
 
 script VARROCK_NPC_TeaSalesman {
@@ -898,6 +1018,119 @@ script GiveMon_VARROCK_Received_KITTEN{
 	releaseall
 	return
 }
+
+
+
+
+
+
+
+
+
+//GOODIE BAG
+script NPC_GOODIEBAG //1 / 28 chance
+{ 
+	lock
+	faceplayer
+    namebox("NightmareRH")
+	msgbox(format("Hooba, Hubba, Hubba!"))
+	if (flag(FLAG_UNUSED_0x93D) == false) 
+	{
+        msgbox(format("Oh my goodness!\nIt's time for a new daily giveaway!"))
+		msgbox(format("Would you like a Goodie from the Goodie bag!?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT))
+			{
+				setflag(FLAG_UNUSED_0x93D)
+				msgbox(format("Hooba, hooba hoo!\pThis goodie is for hooba you!"))
+				hidenamebox
+				call(GIVE_RANDOM_ITEM_28)
+			}
+        else
+        {
+            msgbox(format("Don't be a bunghole.\pJust take the Goodies."))
+            hidenamebox
+            closemessage
+            release
+            end
+        }
+	}
+    else
+    {
+        msgbox(format("I have already given you a Goodie today."))
+    }
+    msgbox(format("You should come back tomorrow for another Goodie."))
+    hidenamebox
+    closemessage
+    release
+	end
+}
+
+script GIVE_RANDOM_ITEM_28 {
+	random(28) 
+	switch (var(VAR_RESULT)) { 
+            case 0: 
+				giveitem(ITEM_FLAX, 6)
+			case 1: 
+				giveitem(ITEM_SPIRIT_SHARD, 2)
+			case 2: 
+				giveitem(ITEM_PRAYER_POTION, 1)
+			case 3: 
+				giveitem(ITEM_LAMP_SPATT, 1)
+			case 4: 
+				giveitem(ITEM_STAT_BEER, 1)
+			case 5: 
+				giveitem(ITEM_CRYSTAL_POUCH, 1)
+			case 6: 
+				giveitem(ITEM_PURPLE_SWEETS, 1)
+			case 7: 
+				giveitem(ITEM_CHOCOLATE_CAKE, 1)
+			case 8: 
+				giveitem(ITEM_MINT_CAKE, 1)
+			case 9: 
+				giveitem(ITEM_HWEEN_MASK, 1)
+			case 10: 
+				giveitem(ITEM_EMPTY_BUCKET, 1)
+			case 11: 
+				giveitem(ITEM_DRAGON_SCIMITAR, 1)
+			case 12: 
+				giveitem(ITEM_ELEMENTAL_POUCH, 5)
+			case 13: 
+				giveitem(ITEM_BLACK_POUCH, 15)
+			case 14: 
+				giveitem(ITEM_NORMAL_POUCH, 20)
+			case 15: 
+				giveitem(ITEM_SPIRIT_CHARM, 1)
+			case 16: 
+				giveitem(ITEM_GODRABBITFOOT, 1)
+            case 17: 
+				giveitem(ITEM_CABBAGE, 1)
+            case 18: 
+				giveitem(ITEM_PURPLE_SWEETS, 5)
+            case 19: 
+				giveitem(ITEM_CABBAGE, 1)
+            case 20: 
+				giveitem(ITEM_PARTY_HAT, 1)
+            case 21: 
+				giveitem(ITEM_GODSWORD, 1)
+            case 22: 
+				giveitem(ITEM_CABBAGE, 1)
+            case 23: 
+				giveitem(ITEM_DRAGON_POUCH, 1)
+            case 24: 
+				giveitem(ITEM_GRANITE_MAUL, 1)
+            case 25: 
+				giveitem(ITEM_DRAGON_CLAWS, 1)
+            case 26: 
+				giveitem(ITEM_BREAD, 1)
+            case 27: 
+				giveitem(ITEM_CABBAGE, 5)
+	}
+	return
+}
+
+
+
+
 
 
 

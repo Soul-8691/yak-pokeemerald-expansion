@@ -15,6 +15,8 @@ ROUTE15_SIGNPOST::
 
 
 ROUTE15_NPC_UNICORN::
+	lock
+	faceplayer
 	namebox ROUTE15_NPC_UNICORN_Text_0
 	msgbox ROUTE15_NPC_UNICORN_Text_1
 	closemessage
@@ -24,6 +26,8 @@ ROUTE15_NPC_UNICORN::
 
 
 ROUTE15_NPC_MINER::
+	lock
+	faceplayer
 	namebox ROUTE15_NPC_MINER_Text_0
 	msgbox ROUTE15_NPC_MINER_Text_1
 	closemessage
@@ -33,6 +37,8 @@ ROUTE15_NPC_MINER::
 
 
 ROUTE15_NPC_NOOB::
+	lock
+	faceplayer
 	namebox ROUTE15_NPC_NOOB_Text_0
 	msgbox ROUTE15_NPC_NOOB_Text_1
 	closemessage
@@ -42,8 +48,8 @@ ROUTE15_NPC_NOOB::
 
 
 BATTLE_ROUTE15_TRAINER_1::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE15_TRAINER_1_Text_0, BATTLE_ROUTE15_TRAINER_1_Text_1
-	namebox BATTLE_ROUTE15_TRAINER_1_Text_2
+	trainerbattle_single TRAINER_ROUTE15_TRAINER_1, BATTLE_ROUTE15_TRAINER_1_Text_0, BATTLE_ROUTE15_TRAINER_1_Text_1
+	namebox ROUTE15_NPC_MINER_Text_0
 	msgbox BATTLE_ROUTE15_TRAINER_1_Text_1
 	hidenamebox
 	release
@@ -51,8 +57,8 @@ BATTLE_ROUTE15_TRAINER_1::
 
 
 BATTLE_ROUTE15_TRAINER_2::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE15_TRAINER_2_Text_0, BATTLE_ROUTE15_TRAINER_2_Text_1
-	namebox BATTLE_ROUTE15_TRAINER_1_Text_2
+	trainerbattle_single TRAINER_ROUTE15_TRAINER_2, BATTLE_ROUTE15_TRAINER_2_Text_0, BATTLE_ROUTE15_TRAINER_2_Text_1
+	namebox ROUTE15_NPC_MINER_Text_0
 	msgbox BATTLE_ROUTE15_TRAINER_2_Text_1
 	hidenamebox
 	release
@@ -60,8 +66,8 @@ BATTLE_ROUTE15_TRAINER_2::
 
 
 BATTLE_ROUTE15_TRAINER_3::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE15_TRAINER_3_Text_0, BATTLE_ROUTE15_TRAINER_3_Text_1
-	namebox BATTLE_ROUTE15_TRAINER_1_Text_2
+	trainerbattle_single TRAINER_ROUTE15_TRAINER_3, BATTLE_ROUTE15_TRAINER_3_Text_0, BATTLE_ROUTE15_TRAINER_3_Text_1
+	namebox ROUTE15_NPC_MINER_Text_0
 	msgbox BATTLE_ROUTE15_TRAINER_3_Text_1
 	hidenamebox
 	release
@@ -69,7 +75,7 @@ BATTLE_ROUTE15_TRAINER_3::
 
 
 BATTLE_ROUTE15_TRAINER_4::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE15_TRAINER_4_Text_0, BATTLE_ROUTE15_TRAINER_4_Text_1
+	trainerbattle_single TRAINER_ROUTE15_TRAINER_4, BATTLE_ROUTE15_TRAINER_4_Text_0, BATTLE_ROUTE15_TRAINER_4_Text_1
 	namebox BATTLE_ROUTE15_TRAINER_4_Text_2
 	msgbox BATTLE_ROUTE15_TRAINER_4_Text_3
 	hidenamebox
@@ -78,18 +84,18 @@ BATTLE_ROUTE15_TRAINER_4::
 
 
 BATTLE_ROUTE15_TRAINER_5::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, BATTLE_ROUTE15_TRAINER_5_Text_0, ROUTE15_NPC_NOOB_Text_1
-	namebox BATTLE_ROUTE15_TRAINER_5_Text_1
-	msgbox ROUTE15_NPC_NOOB_Text_1
+	trainerbattle_single TRAINER_ROUTE15_TRAINER_5, BATTLE_ROUTE15_TRAINER_5_Text_0, BATTLE_ROUTE15_TRAINER_5_Text_1
+	namebox ROUTE15_NPC_NOOB_Text_0
+	msgbox BATTLE_ROUTE15_TRAINER_5_Text_2
 	hidenamebox
 	release
 	end
 
 
 BATTLE_ROUTE15_TRAINER_6::
-	trainerbattle_single TRAINER_RimmingtonMines_Miner, ROUTE15_NPC_NOOB_Text_1, ROUTE15_NPC_NOOB_Text_1
+	trainerbattle_single TRAINER_ROUTE15_TRAINER_6, BATTLE_ROUTE15_TRAINER_6_Text_0, BATTLE_ROUTE15_TRAINER_6_Text_1
 	namebox BATTLE_ROUTE15_TRAINER_4_Text_2
-	msgbox ROUTE15_NPC_NOOB_Text_1
+	msgbox BATTLE_ROUTE15_TRAINER_6_Text_1
 	hidenamebox
 	release
 	end
@@ -117,7 +123,8 @@ ROUTE15_NPC_NOOB_Text_0:
 	.string "Noob$"
 
 ROUTE15_NPC_NOOB_Text_1:
-	.string "$"
+	.string "My Pickaxe head just flew off.\p"
+	.string "Have you seen it anywhere?$"
 
 BATTLE_ROUTE15_TRAINER_1_Text_0:
 	.string "We mine all day, time for a break.$"
@@ -125,9 +132,6 @@ BATTLE_ROUTE15_TRAINER_1_Text_0:
 BATTLE_ROUTE15_TRAINER_1_Text_1:
 	.string "I lost a lot of exp on that break.\p"
 	.string "I may never recover from this loss.$"
-
-BATTLE_ROUTE15_TRAINER_1_Text_2:
-	.string "MINER$"
 
 BATTLE_ROUTE15_TRAINER_2_Text_0:
 	.string "You better be worth my time\n"
@@ -153,15 +157,30 @@ BATTLE_ROUTE15_TRAINER_4_Text_1:
 	.string "my dear papa!$"
 
 BATTLE_ROUTE15_TRAINER_4_Text_2:
-	.string "WC$"
+	.string "Woodcutter$"
 
 BATTLE_ROUTE15_TRAINER_4_Text_3:
 	.string "On Wednesday I go shopping, just like\n"
 	.string "my dear papa!$"
 
 BATTLE_ROUTE15_TRAINER_5_Text_0:
-	.string "I hear the digsite is nearby, but only\n"
-	.string "members are allowed to excavate it.$"
+	.string "I tried Mining but everyone kept\n"
+	.string "stealing my ore so I am going to try\l"
+	.string "some MvM battles instead!$"
 
 BATTLE_ROUTE15_TRAINER_5_Text_1:
-	.string "RANGER$"
+	.string "Looks like I am no good at this either…$"
+
+BATTLE_ROUTE15_TRAINER_5_Text_2:
+	.string "Seems like I am no good at Mining or MvM\n"
+	.string "battles.\p"
+	.string "Maybe I'll try Questing, I doubt I could\n"
+	.string "go wrong with that.$"
+
+BATTLE_ROUTE15_TRAINER_6_Text_0:
+	.string "My Woodcutting level is 14.\p"
+	.string "What is yours?$"
+
+BATTLE_ROUTE15_TRAINER_6_Text_1:
+	.string "My Beaver?\p"
+	.string "I found him was level 3.$"

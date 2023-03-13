@@ -18,8 +18,8 @@ mapscripts Route13_MapScripts {
 script VARROCK_NPC_RATBURGUS
 {
     faceplayer
-    //namebox ("RATBURGUS")
-    msgbox(format("CUPHOLDER"))
+    namebox ("Ratburgus")
+    msgbox(format("I got mugged and lost all of my important papers.\pIt will be okay though, I sent an adventurer out on a quest to retrieve them."))
     closemessage
     hidenamebox
     release
@@ -185,7 +185,7 @@ script BATTLE_ROUTE16_TRAINER_3
 }
 script BATTLE_ROUTE16_TRAINER_4
 {//div
-    trainerbattle_single(TRAINER_ROUTE16_TRAINER_4, format("CUPHOLDER's the name.\pSpeed is my game."),format(""))
+    trainerbattle_single(TRAINER_ROUTE16_TRAINER_4, format(""),format(""))
     //namebox ("")
     msgbox(format(""))
 	hidenamebox
@@ -194,24 +194,43 @@ script BATTLE_ROUTE16_TRAINER_4
 }
 script BATTLE_ROUTE16_TRAINER_5
 {//agility
-    trainerbattle_single(TRAINER_ROUTE16_TRAINER_5, format(""),format(""))
+    trainerbattle_single(TRAINER_ROUTE16_TRAINER_5, format("You should join me in my daily agility training!"),format("What do you mean I won't gain any xp running around without a Silverhawk?"))
     //namebox ("")
-    msgbox(format(""))
+    msgbox(format("I train here every day, you should train with me again sometime."))
 	hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE16_TRAINER_6
 {//mug
-    trainerbattle_single(TRAINER_ROUTE16_TRAINER_6, format(""),format(""))
+    trainerbattle_single(TRAINER_ROUTE16_TRAINER_6, format("Where do you think you are going!"),format("Stand and Del-"))
     //namebox ("")
-    msgbox(format(""))
+    msgbox(format("I'm sorry, please don't hurt me!\pI promise I will change my ways."))
 	hidenamebox
     release
 	end
 }
 
-
+script ROUTE16_NPC_GUARD_2
+{
+    faceplayer
+    namebox ("Guard")
+    msgbox(format("Do not to cause trouble for the workmen who make the trek from the Digsite."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+script ROUTE17_NPC_ARCH
+{
+    faceplayer
+    namebox ("Archaeologist")
+    msgbox(format("This statue just collapsed and revealed a cavern.\pI must investegate this."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
 
 
 

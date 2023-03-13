@@ -119,3 +119,13 @@ script ITEM_ALKHARID_1
     finditem(ITEM_LAMP_SPDEF)
     end
 }
+
+
+//ITEMS ROUTE19
+//HIDDEN ITEMS: 
+//
+script ITEM_ROUTE19_1
+{
+    finditem(ITEM_ADAMANT_POUCH)
+    end
+}

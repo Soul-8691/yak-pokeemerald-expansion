@@ -616,8 +616,8 @@
       "name": "PokemonCenter_2F_Layout",
       "width": 14,
       "height": 10,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonCenter",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Wizards_Tower",
       "border_filepath": "data/layouts/PokemonCenter_2F/border.bin",
       "blockdata_filepath": "data/layouts/PokemonCenter_2F/map.bin"
     },
@@ -7130,6 +7130,16 @@
       "secondary_tileset": "gTileset_SecretBaseRedCave",
       "border_filepath": "data/layouts/Barb_Stronghold_B4F/border.bin",
       "blockdata_filepath": "data/layouts/Barb_Stronghold_B4F/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRAND_EXCHANGE",
+      "name": "GrandExchange_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Varrock",
+      "border_filepath": "data/layouts/GrandExchange/border.bin",
+      "blockdata_filepath": "data/layouts/GrandExchange/map.bin"
     }
   ]
 }

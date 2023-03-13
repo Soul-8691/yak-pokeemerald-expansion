@@ -14,6 +14,13 @@ VARROCK_SIGNPOST::
 	end
 
 
+VARROCKGYM_SIGNPOST::
+	msgbox VARROCKGYM_SIGNPOST_Text_0
+	closemessage
+	release
+	end
+
+
 VARROCK_Gypsy_Aris_SIGNPOST::
 	msgbox VARROCK_Gypsy_Aris_SIGNPOST_Text_0
 	closemessage
@@ -323,7 +330,8 @@ VARROCK_NPC_11::
 
 VARROCK_NPC_12::
 	faceplayer
-	msgbox VARROCK_NPC_12_Text_0
+	namebox VARROCK_NPC_12_Text_0
+	msgbox VARROCK_NPC_12_Text_1
 	closemessage
 	hidenamebox
 	release
@@ -333,7 +341,7 @@ VARROCK_NPC_12::
 VARROCK_NPC_13::
 	faceplayer
 	namebox VARROCK_NPC_13_Text_0
-	msgbox VARROCK_NPC_12_Text_0
+	msgbox VARROCK_NPC_13_Text_1
 	closemessage
 	hidenamebox
 	release
@@ -343,7 +351,7 @@ VARROCK_NPC_13::
 VARROCK_NPC_14::
 	faceplayer
 	namebox VARROCK_NPC_GUARD_0_Text_0
-	msgbox VARROCK_NPC_12_Text_0
+	msgbox VARROCK_NPC_14_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -362,7 +370,8 @@ VARROCK_NPC_Romeo::
 
 VARROCKSTORE_NPC_1::
 	faceplayer
-	msgbox VARROCK_NPC_12_Text_0
+	namebox VARROCKSTORE_NPC_1_Text_0
+	msgbox VARROCKSTORE_NPC_1_Text_1
 	closemessage
 	hidenamebox
 	release
@@ -371,7 +380,103 @@ VARROCKSTORE_NPC_1::
 
 VARROCKSTORE_NPC_2::
 	faceplayer
-	msgbox VARROCK_NPC_12_Text_0
+	namebox VARROCKSTORE_NPC_2_Text_0
+	msgbox VARROCKSTORE_NPC_2_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_PALACE_GUARD_1::
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox VARROCK_NPC_PALACE_GUARD_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_PALACE_GUARD_2::
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox VARROCK_NPC_PALACE_GUARD_2_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_PALACE_GUARD_3::
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox VARROCK_NPC_PALACE_GUARD_3_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_PALACE_GUARD_4::
+	faceplayer
+	namebox VARROCK_NPC_GUARD_0_Text_0
+	msgbox VARROCK_NPC_PALACE_GUARD_4_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_Thessalia::
+	faceplayer
+	namebox VARROCK_NPC_Thessalia_Text_0
+	msgbox VARROCK_NPC_Thessalia_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_ThessaliaGrandma::
+	faceplayer
+	msgbox VARROCK_NPC_ThessaliaGrandma_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_SWORDSHOP_1::
+	faceplayer
+	msgbox VARROCK_NPC_SWORDSHOP_1_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_SWORDSHOP_2::
+	faceplayer
+	msgbox VARROCK_NPC_SWORDSHOP_2_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_SWORDSHOP_3::
+	faceplayer
+	msgbox VARROCK_NPC_SWORDSHOP_3_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+VARROCK_NPC_SWORDSHOP_4::
+	faceplayer
+	msgbox VARROCK_NPC_SWORDSHOP_4_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -698,9 +803,192 @@ GiveMon_VARROCK_Received_KITTEN::
 	return
 
 
+NPC_GOODIEBAG::
+	lock
+	faceplayer
+	namebox NPC_GOODIEBAG_Text_0
+	msgbox NPC_GOODIEBAG_Text_1
+	goto_if_unset FLAG_UNUSED_0x93D, NPC_GOODIEBAG_2
+	msgbox NPC_GOODIEBAG_Text_6
+NPC_GOODIEBAG_1:
+	msgbox NPC_GOODIEBAG_Text_7
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_GOODIEBAG_2:
+	msgbox NPC_GOODIEBAG_Text_2
+	msgbox NPC_GOODIEBAG_Text_3, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne NPC_GOODIEBAG_5
+	msgbox NPC_GOODIEBAG_Text_5
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_GOODIEBAG_5:
+	setflag FLAG_UNUSED_0x93D
+	msgbox NPC_GOODIEBAG_Text_4
+	hidenamebox
+	call GIVE_RANDOM_ITEM_28
+	goto NPC_GOODIEBAG_1
+
+
+GIVE_RANDOM_ITEM_28::
+	random 28
+	switch VAR_RESULT
+	case 0, GIVE_RANDOM_ITEM_28_3
+	case 1, GIVE_RANDOM_ITEM_28_4
+	case 2, GIVE_RANDOM_ITEM_28_5
+	case 3, GIVE_RANDOM_ITEM_28_6
+	case 4, GIVE_RANDOM_ITEM_28_7
+	case 5, GIVE_RANDOM_ITEM_28_8
+	case 6, GIVE_RANDOM_ITEM_28_9
+	case 7, GIVE_RANDOM_ITEM_28_10
+	case 8, GIVE_RANDOM_ITEM_28_11
+	case 9, GIVE_RANDOM_ITEM_28_12
+	case 10, GIVE_RANDOM_ITEM_28_13
+	case 11, GIVE_RANDOM_ITEM_28_14
+	case 12, GIVE_RANDOM_ITEM_28_15
+	case 13, GIVE_RANDOM_ITEM_28_16
+	case 14, GIVE_RANDOM_ITEM_28_17
+	case 15, GIVE_RANDOM_ITEM_28_18
+	case 16, GIVE_RANDOM_ITEM_28_19
+	case 17, GIVE_RANDOM_ITEM_28_20
+	case 18, GIVE_RANDOM_ITEM_28_21
+	case 19, GIVE_RANDOM_ITEM_28_22
+	case 20, GIVE_RANDOM_ITEM_28_23
+	case 21, GIVE_RANDOM_ITEM_28_24
+	case 22, GIVE_RANDOM_ITEM_28_25
+	case 23, GIVE_RANDOM_ITEM_28_26
+	case 24, GIVE_RANDOM_ITEM_28_27
+	case 25, GIVE_RANDOM_ITEM_28_28
+	case 26, GIVE_RANDOM_ITEM_28_29
+	case 27, GIVE_RANDOM_ITEM_28_30
+GIVE_RANDOM_ITEM_28_1:
+	return
+
+GIVE_RANDOM_ITEM_28_3:
+	giveitem ITEM_FLAX, 6
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_4:
+	giveitem ITEM_SPIRIT_SHARD, 2
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_5:
+	giveitem ITEM_PRAYER_POTION, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_6:
+	giveitem ITEM_LAMP_SPATT, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_7:
+	giveitem ITEM_STAT_BEER, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_8:
+	giveitem ITEM_CRYSTAL_POUCH, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_9:
+	giveitem ITEM_PURPLE_SWEETS, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_10:
+	giveitem ITEM_CHOCOLATE_CAKE, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_11:
+	giveitem ITEM_MINT_CAKE, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_12:
+	giveitem ITEM_HWEEN_MASK, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_13:
+	giveitem ITEM_EMPTY_BUCKET, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_14:
+	giveitem ITEM_DRAGON_SCIMITAR, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_15:
+	giveitem ITEM_ELEMENTAL_POUCH, 5
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_16:
+	giveitem ITEM_BLACK_POUCH, 15
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_17:
+	giveitem ITEM_NORMAL_POUCH, 20
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_18:
+	giveitem ITEM_SPIRIT_CHARM, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_19:
+	giveitem ITEM_GODRABBITFOOT, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_20:
+	giveitem ITEM_CABBAGE, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_21:
+	giveitem ITEM_PURPLE_SWEETS, 5
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_22:
+	giveitem ITEM_CABBAGE, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_23:
+	giveitem ITEM_PARTY_HAT, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_24:
+	giveitem ITEM_GODSWORD, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_25:
+	giveitem ITEM_CABBAGE, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_26:
+	giveitem ITEM_DRAGON_POUCH, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_27:
+	giveitem ITEM_GRANITE_MAUL, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_28:
+	giveitem ITEM_DRAGON_CLAWS, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_29:
+	giveitem ITEM_BREAD, 1
+	goto GIVE_RANDOM_ITEM_28_1
+
+GIVE_RANDOM_ITEM_28_30:
+	giveitem ITEM_CABBAGE, 5
+	goto GIVE_RANDOM_ITEM_28_1
+
+
 VARROCK_SIGNPOST_Text_0:
 	.string "Varrock, the trade centre of the\n"
 	.string "Gielinor.$"
+
+VARROCKGYM_SIGNPOST_Text_0:
+	.string "Varrock Gym.$"
 
 VARROCK_Gypsy_Aris_SIGNPOST_Text_0:
 	.string "My tent was destroyed by some\n"
@@ -922,16 +1210,96 @@ VARROCK_NPC_11_Text_0:
 	.string "been warned.$"
 
 VARROCK_NPC_12_Text_0:
-	.string "CUPHOLDER$"
+	.string "Skiller$"
+
+VARROCK_NPC_12_Text_1:
+	.string "I should stop by Aubury's Rune Shop and\n"
+	.string "grab some Runes to evolve my Monsters.$"
 
 VARROCK_NPC_13_Text_0:
 	.string "Charlie$"
+
+VARROCK_NPC_13_Text_1:
+	.string "Life is hard.\p"
+	.string "Spare some cash?$"
+
+VARROCK_NPC_14_Text_0:
+	.string "Purple Sweets are really yum!\p"
+	.string "I know it is a waste eating them myself\n"
+	.string "but I cannot help it.$"
 
 VARROCK_NPC_Romeo_Text_0:
 	.string "Romeo$"
 
 VARROCK_NPC_Romeo_Text_1:
 	.string "Juliet, where art thou!$"
+
+VARROCKSTORE_NPC_1_Text_0:
+	.string "Noob$"
+
+VARROCKSTORE_NPC_1_Text_1:
+	.string "I probably should buy one of each\n"
+	.string "Cocktail.\p"
+	.string "That way I can heal any status effects.$"
+
+VARROCKSTORE_NPC_2_Text_0:
+	.string "Man$"
+
+VARROCKSTORE_NPC_2_Text_1:
+	.string "When catching monsters some pouches\n"
+	.string "are better than others.\p"
+	.string "For example a Mystic Pouch works really\n"
+	.string "well on Fairy-Type Monsters.$"
+
+VARROCK_NPC_PALACE_GUARD_1_Text_0:
+	.string "Our king specialises in Fairy-Type\n"
+	.string "monsters.\p"
+	.string "But don't tell anyone I told you that.$"
+
+VARROCK_NPC_PALACE_GUARD_2_Text_0:
+	.string "There are hidden items all over the\n"
+	.string "place.\p"
+	.string "I should really invest in an ItemFinder\n"
+	.string "set.$"
+
+VARROCK_NPC_PALACE_GUARD_3_Text_0:
+	.string "King Roald is one of the MvM Leaders.\p"
+	.string "You can find him in the Castle.$"
+
+VARROCK_NPC_PALACE_GUARD_4_Text_0:
+	.string "Be careful not to let your monsters\n"
+	.string "faint.\p"
+	.string "I heard horror stories about some\n"
+	.string "monsters evolving into undead\l"
+	.string "versions of themselves.$"
+
+VARROCK_NPC_Thessalia_Text_0:
+	.string "Thessalia$"
+
+VARROCK_NPC_Thessalia_Text_1:
+	.string "Hello, I can change your outfit for you.\p"
+	.string "But you will have to come back later.$"
+
+VARROCK_NPC_ThessaliaGrandma_Text_0:
+	.string "Zzz…$"
+
+VARROCK_NPC_SWORDSHOP_1_Text_0:
+	.string "Sorry, all of my Weapons are out of\n"
+	.string "stock at the moment.$"
+
+VARROCK_NPC_SWORDSHOP_2_Text_0:
+	.string "I came to buy a Dragon Scimitar to\n"
+	.string "power up my Monsters Dragon-Type\l"
+	.string "moves.\p"
+	.string "But they don't have any in stock.$"
+
+VARROCK_NPC_SWORDSHOP_3_Text_0:
+	.string "Did you know a Mithril Scimitar boosts\n"
+	.string "the Attack stat for monsters that are\l"
+	.string "not yet evolved.$"
+
+VARROCK_NPC_SWORDSHOP_4_Text_0:
+	.string "Today is my day off.$"
 
 VARROCK_NPC_TeaSalesman_Text_0:
 	.string "Tea Salesman$"
@@ -1116,3 +1484,33 @@ GiveMon_VARROCK_SendParty_KITTEN_Text_0:
 
 GiveMon_VARROCK_ReceivedFanfare_KITTEN_Text_0:
 	.string "{PLAYER} obtained a {STR_VAR_2}.$"
+
+NPC_GOODIEBAG_Text_0:
+	.string "NightmareRH$"
+
+NPC_GOODIEBAG_Text_1:
+	.string "Hooba, Hubba, Hubba!$"
+
+NPC_GOODIEBAG_Text_2:
+	.string "Oh my goodness!\n"
+	.string "It's time for a new daily giveaway!$"
+
+NPC_GOODIEBAG_Text_3:
+	.string "Would you like a Goodie from the Goodie\n"
+	.string "bag!?$"
+
+NPC_GOODIEBAG_Text_4:
+	.string "Hooba, hooba hoo!\p"
+	.string "This goodie is for hooba you!$"
+
+NPC_GOODIEBAG_Text_5:
+	.string "Don't be a bunghole.\p"
+	.string "Just take the Goodies.$"
+
+NPC_GOODIEBAG_Text_6:
+	.string "I have already given you a Goodie\n"
+	.string "today.$"
+
+NPC_GOODIEBAG_Text_7:
+	.string "You should come back tomorrow for\n"
+	.string "another Goodie.$"

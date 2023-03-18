@@ -14,18 +14,37 @@ script SPECIAL_PENGUIN_EVENT
 	random(20)
 
 	switch (var(VAR_RESULT)) { 
-            case 19: 
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+            case 11:
+            case 12:
+            case 13:
+            case 14:
+            case 15:
+            case 16:
+            case 17:
+            case 18: 
+				setflag(FLAG_TEMP_8)
+				setflag(FLAG_TEMP_9)
+                removeobject(OBJ_EVENT_ID_PENGUIN_DND)
+				removeobject(OBJ_EVENT_ID_PENGUIN)
+            case 19:
 				clearflag(FLAG_TEMP_8)
 				clearflag(FLAG_TEMP_9)
                 addobject(OBJ_EVENT_ID_PENGUIN_DND)
 				addobject(OBJ_EVENT_ID_PENGUIN)
 				playbgm(MUS_PS_TERRORBIRD, 0)
 				savebgm(MUS_PS_TERRORBIRD)
-            case 20: 
-				setflag(FLAG_TEMP_8)
-				setflag(FLAG_TEMP_9)
-                removeobject(OBJ_EVENT_ID_PENGUIN_DND)
-				removeobject(OBJ_EVENT_ID_PENGUIN)
+            
 	}
 	return
 }

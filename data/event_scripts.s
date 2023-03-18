@@ -1599,3 +1599,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Barb_Stronghold_B4F/scripts.inc"
 
 	.include "data/maps/GrandExchange/scripts.inc"
+
+	.include "data/maps/Alkharid_Gym_1F_R1/scripts.inc"

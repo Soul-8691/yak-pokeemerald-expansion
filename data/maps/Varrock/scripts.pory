@@ -738,6 +738,8 @@ script NPC_ARCHAEOLOGIST_BLOCKADE_1
 
 script BATTLE_Varrock_Max
 {
+    lock
+    faceplayer
 	namebox ("Max")
     msgbox(format("Come back and talk to me once you have achieved something great."))
     //trainerbattle_single(TRAINER_Varrock_Max, format("…"),format("…"))

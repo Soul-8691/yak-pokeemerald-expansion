@@ -817,6 +817,7 @@
 #define MAP_BARBARIAN_VILLAGE_HOUSE_2  (2 | (44 << 8))
 
 // Map Group 45
+#define MAP_ALKHARID_GYM_1F_R1 (0 | (45 << 8))
 
 // Map Group 46
 

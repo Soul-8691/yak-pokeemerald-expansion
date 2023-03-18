@@ -589,6 +589,8 @@ NPC_ARCHAEOLOGIST_BLOCKADE_1_2:
 
 
 BATTLE_Varrock_Max::
+	lock
+	faceplayer
 	namebox BATTLE_Varrock_Max_Text_0
 	msgbox BATTLE_Varrock_Max_Text_1
 	hidenamebox

@@ -240,7 +240,7 @@
       "x": 30,
       "y": 28,
       "elevation": 0,
-      "dest_map": "MAP_AL_KHARID",
+      "dest_map": "MAP_ALKHARID_GYM_1F_R1",
       "dest_warp_id": 0
     },
     {
@@ -268,7 +268,7 @@
       "x": 31,
       "y": 28,
       "elevation": 0,
-      "dest_map": "MAP_AL_KHARID",
+      "dest_map": "MAP_ALKHARID_GYM_1F_R1",
       "dest_warp_id": 0
     },
     {

@@ -152,13 +152,20 @@ const u16 gBattleFrontierHeldItems[] =
 
 const u8 gTowerMaleFacilityClasses[30] =
 {
-    FACILITY_CLASS_RUIN_MANIAC,
-    FACILITY_CLASS_TUBER_M,
-    FACILITY_CLASS_COOLTRAINER_M,
-    FACILITY_CLASS_RICH_BOY,
-    FACILITY_CLASS_POKEMANIAC,
-    FACILITY_CLASS_SWIMMER_M,
-    FACILITY_CLASS_BLACK_BELT,
+    FACILITY_CLASS_JMOD_M,
+    FACILITY_CLASS_BRONZE_MAN,
+    FACILITY_CLASS_IRONMAN,
+    FACILITY_CLASS_MITHRIL_MAN,
+    FACILITY_CLASS_RUNE_MAN,
+    FACILITY_CLASS_DEMONHEADGE,
+    FACILITY_CLASS_HYPERSTAN,
+    //FACILITY_CLASS_RUIN_MANIAC,
+    //FACILITY_CLASS_TUBER_M,
+    //FACILITY_CLASS_COOLTRAINER_M,
+    //FACILITY_CLASS_RICH_BOY,
+    //FACILITY_CLASS_POKEMANIAC,
+    //FACILITY_CLASS_SWIMMER_M,
+    //FACILITY_CLASS_BLACK_BELT,
     FACILITY_CLASS_GUITARIST,
     FACILITY_CLASS_KINDLER,
     FACILITY_CLASS_CAMPER,
@@ -186,7 +193,8 @@ const u8 gTowerMaleFacilityClasses[30] =
 
 const u8 gTowerFemaleFacilityClasses[20] =
 {
-    FACILITY_CLASS_AROMA_LADY,
+    FACILITY_CLASS_JMOD_F,
+    //FACILITY_CLASS_AROMA_LADY,
     FACILITY_CLASS_TUBER_F,
     FACILITY_CLASS_COOLTRAINER_F,
     FACILITY_CLASS_HEX_MANIAC,
@@ -210,6 +218,7 @@ const u8 gTowerFemaleFacilityClasses[20] =
 
 const u8 gTowerMaleTrainerGfxIds[30] =
 {
+    //OBJ_EVENT_GFX_JMOD,
     OBJ_EVENT_GFX_HIKER,
     OBJ_EVENT_GFX_TUBER_M,
     OBJ_EVENT_GFX_MAN_3,
@@ -738,7 +747,8 @@ struct
     {FACILITY_CLASS_SWIMMER_F,             sPartnerTextsSwimmerF},
     {FACILITY_CLASS_SWIMMING_TRIATHLETE_M, sPartnerTextsSwimmingTriathleteM},
     {FACILITY_CLASS_SWIMMING_TRIATHLETE_F, sPartnerTextsSwimmingTriathleteF},
-    {FACILITY_CLASS_SWIMMER_M,             sPartnerTextsSwimmerM}
+    {FACILITY_CLASS_SWIMMER_M,             sPartnerTextsSwimmerM},
+    {FACILITY_CLASS_JMOD_M,           sPartnerTextsRuinManiac}
 };
 
 static const u8 *const *const sPartnerApprenticeTextTables[NUM_APPRENTICES] =
@@ -854,6 +864,7 @@ static const u8 sBattleTowerPartySizes2[] =
 // Trainers are scaled by difficulty, so higher trainer IDs have better teams
 static const u16 sFrontierTrainerIdRanges[][2] =
 {
+    
     {FRONTIER_TRAINER_BRADY,   FRONTIER_TRAINER_JILL},   //   0 -  99
     {FRONTIER_TRAINER_TREVIN,  FRONTIER_TRAINER_CHLOE},  //  80 - 119
     {FRONTIER_TRAINER_ERIK,    FRONTIER_TRAINER_SOFIA},  // 100 - 139
@@ -862,10 +873,12 @@ static const u16 sFrontierTrainerIdRanges[][2] =
     {FRONTIER_TRAINER_ZACHERY, FRONTIER_TRAINER_LAMAR},  // 160 - 199
     {FRONTIER_TRAINER_HANK,    FRONTIER_TRAINER_TESS},   // 180 - 219
     {FRONTIER_TRAINER_JAXON,   FRONTIER_TRAINER_GRETEL}, // 200 - 299
+    
 };
 
 static const u16 sFrontierTrainerIdRangesHard[][2] =
 {
+    
     {FRONTIER_TRAINER_ERIK,    FRONTIER_TRAINER_CHLOE},  // 100 - 119
     {FRONTIER_TRAINER_NORTON,  FRONTIER_TRAINER_SOFIA},  // 120 - 139
     {FRONTIER_TRAINER_BRADEN,  FRONTIER_TRAINER_JAZLYN}, // 140 - 159
@@ -874,7 +887,22 @@ static const u16 sFrontierTrainerIdRangesHard[][2] =
     {FRONTIER_TRAINER_JAXON,   FRONTIER_TRAINER_TESS},   // 200 - 219
     {FRONTIER_TRAINER_LEON,    FRONTIER_TRAINER_RAUL},   // 220 - 239
     {FRONTIER_TRAINER_JAXON,   FRONTIER_TRAINER_GRETEL}, // 200 - 299
+    
 };
+
+static const u16 sFrontierTrainerIdRangesPokeScape[][2] =
+{
+    
+    //{FRONTIER_TRAINER_PS_EASTY,    FRONTIER_TRAINER_PS_ALLSTAR},  // 300 - 30?
+    //{FRONTIER_TRAINER_PS_SPYRO,    FRONTIER_TRAINER_PS_ASH},  // 300 - 30?
+    {FRONTIER_TRAINER_PS_EASTY,    FRONTIER_TRAINER_PS_BRONZEMAN_1},  // 300 - 30?
+
+};
+static const u16 sFrontierTrainerIdRangesPokeScapeHard[][2] =
+{
+    {FRONTIER_TRAINER_PS_SPYRO,    FRONTIER_TRAINER_PS_ASH},  // 300 - 30?
+};
+
 
 // Trainer IDs? Don't make sense as part of previous array, min/max relationship reversed and never accessed
 static const u16 sUnused_085DFA1A[][2] =
@@ -1114,20 +1142,20 @@ u16 GetRandomScaledFrontierTrainerId(u8 challengeNum, u8 battleNum)
         if (battleNum == 6)
         {
             // The last battle in each challenge has a jump in difficulty, pulls from a table with higher ranges
-            trainerId = (sFrontierTrainerIdRangesHard[challengeNum][1] - sFrontierTrainerIdRangesHard[challengeNum][0]) + 1;
-            trainerId = sFrontierTrainerIdRangesHard[challengeNum][0] + (Random() % trainerId);
+            trainerId = (sFrontierTrainerIdRangesPokeScapeHard[challengeNum][1] - sFrontierTrainerIdRangesPokeScapeHard[challengeNum][0]) + 1;
+            trainerId = sFrontierTrainerIdRangesPokeScapeHard[challengeNum][0] + (Random() % trainerId);
         }
         else
         {
-            trainerId = (sFrontierTrainerIdRanges[challengeNum][1] - sFrontierTrainerIdRanges[challengeNum][0]) + 1;
-            trainerId = sFrontierTrainerIdRanges[challengeNum][0] + (Random() % trainerId);
+            trainerId = (sFrontierTrainerIdRangesPokeScape[challengeNum][1] - sFrontierTrainerIdRangesPokeScape[challengeNum][0]) + 1;
+            trainerId = sFrontierTrainerIdRangesPokeScape[challengeNum][0] + (Random() % trainerId);
         }
     }
     else
     {
         // After challenge 7, trainer IDs always come from the last, hardest range, which is the same for both trainer ID tables
-        trainerId = (sFrontierTrainerIdRanges[7][1] - sFrontierTrainerIdRanges[7][0]) + 1;
-        trainerId = sFrontierTrainerIdRanges[7][0] + (Random() % trainerId);
+        trainerId = (sFrontierTrainerIdRangesPokeScape[7][1] - sFrontierTrainerIdRangesPokeScape[7][0]) + 1;
+        trainerId = sFrontierTrainerIdRangesPokeScape[7][0] + (Random() % trainerId);
     }
 
     return trainerId;
@@ -1698,7 +1726,7 @@ static void FillTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount)
     while (i != monCount)
     {
         u16 monId = monSet[Random() % bfMonCount];
-        if ((level == 50 || level == 20) && monId > FRONTIER_MONS_HIGH_TIER)
+        if ((level == 50 || level == 20) && monId > FRONTIER_MONS_POKESCAPE_END)
             continue;
 
         // Ensure this pokemon species isn't a duplicate.
@@ -1810,7 +1838,7 @@ u16 GetRandomFrontierMonFromSet(u16 trainerId)
     do
     {
         monId = monSet[Random() % numMons];
-    } while((level == 50 || level == 20) && monId > FRONTIER_MONS_HIGH_TIER);
+    } while((level == 50 || level == 20) && monId > FRONTIER_MONS_POKESCAPE_END);
 
     return monId;
 }

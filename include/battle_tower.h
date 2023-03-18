@@ -33,7 +33,7 @@ struct FacilityMon
     u8 nature;
 };
 
-extern const u8 gTowerMaleFacilityClasses[30];
+extern const u8 gTowerMaleFacilityClasses[30]; //edit for PokeScape
 extern const u8 gTowerMaleTrainerGfxIds[30];
 extern const u8 gTowerFemaleFacilityClasses[20];
 extern const u8 gTowerFemaleTrainerGfxIds[20];

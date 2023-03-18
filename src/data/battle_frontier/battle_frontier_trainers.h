@@ -1,5 +1,114 @@
 const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COUNT] =
 {
+    [FRONTIER_TRAINER_PS_EASTY] = {
+        .facilityClass = FACILITY_CLASS_JMOD_M,
+        .trainerName = _("EASTY"),
+        .speechBefore = {EC_WORD_I_AM, EC_WORD_NEVER, EC_WORD_GOING, EC_WORD_TO, EC_WORD_LOSE, EC_WORD_EXCL},
+        .speechWin = {EC_WORD_I_AM, EC_WORD_STRONG, EC_WORD_AREN_T, EC_WORD_I, EC_WORD_QUES, 0xFFFF},
+        .speechLose = {EC_WORD_WHAT, EC_WORD_QUES, 0xFFFF, EC_WORD_BUT, EC_WORD_HOW, EC_WORD_QUES},
+        .monSet = gBattleFrontierTrainerMons_Jagex
+    },
+    [FRONTIER_TRAINER_PS_CHAOSE] = {
+        .facilityClass = FACILITY_CLASS_JMOD_M,
+        .trainerName = _("CHAOSE"),
+        .speechBefore = {EC_WORD_LET_S, EC_WORD_BATTLE, EC_WORD_GWAHAHAHA, EC_WORD_YEEHAW_EXCL, 0xFFFF, 0xFFFF},
+        .speechWin = {EC_WORD_A, EC_WORD_WIN, EC_WORD_IS, EC_WORD_JUST, EC_WORD_AWESOME, 0xFFFF},
+        .speechLose = {EC_WORD_DARN, EC_WORD_ELLIPSIS, EC_WORD_LOSING, EC_WORD_IS, EC_WORD_VERY, EC_WORD_SAD},
+        .monSet = gBattleFrontierTrainerMons_Jagex
+    },
+    [FRONTIER_TRAINER_PS_DEG] = {
+        .facilityClass = FACILITY_CLASS_JMOD_M,
+        .trainerName = _("DEG"),
+        .speechBefore = {EC_WORD_LET_S, EC_WORD_BATTLE, EC_WORD_GWAHAHAHA, EC_WORD_YEEHAW_EXCL, 0xFFFF, 0xFFFF},
+        .speechWin = {EC_WORD_A, EC_WORD_WIN, EC_WORD_IS, EC_WORD_JUST, EC_WORD_AWESOME, 0xFFFF},
+        .speechLose = {EC_WORD_DARN, EC_WORD_ELLIPSIS, EC_WORD_LOSING, EC_WORD_IS, EC_WORD_VERY, EC_WORD_SAD},
+        .monSet = gBattleFrontierTrainerMons_Jagex
+    },
+    [FRONTIER_TRAINER_PS_ALLSTAR] = {
+        .facilityClass = FACILITY_CLASS_JMOD_M,
+        .trainerName = _("ALLSTAR"),
+        .speechBefore = {EC_WORD_LET_S, EC_WORD_BATTLE, EC_WORD_GWAHAHAHA, EC_WORD_YEEHAW_EXCL, 0xFFFF, 0xFFFF},
+        .speechWin = {EC_WORD_A, EC_WORD_WIN, EC_WORD_IS, EC_WORD_JUST, EC_WORD_AWESOME, 0xFFFF},
+        .speechLose = {EC_WORD_DARN, EC_WORD_ELLIPSIS, EC_WORD_LOSING, EC_WORD_IS, EC_WORD_VERY, EC_WORD_SAD},
+        .monSet = gBattleFrontierTrainerMons_Jagex
+    },
+    [FRONTIER_TRAINER_PS_SPYRO] = {
+        .facilityClass = FACILITY_CLASS_JMOD_M,
+        .trainerName = _("SPYRO"),
+        .speechBefore = {EC_WORD_LET_S, EC_WORD_BATTLE, EC_WORD_GWAHAHAHA, EC_WORD_YEEHAW_EXCL, 0xFFFF, 0xFFFF},
+        .speechWin = {EC_WORD_A, EC_WORD_WIN, EC_WORD_IS, EC_WORD_JUST, EC_WORD_AWESOME, 0xFFFF},
+        .speechLose = {EC_WORD_DARN, EC_WORD_ELLIPSIS, EC_WORD_LOSING, EC_WORD_IS, EC_WORD_VERY, EC_WORD_SAD},
+        .monSet = gBattleFrontierTrainerMons_Jagex
+    },
+    [FRONTIER_TRAINER_PS_STU] = {
+        .facilityClass = FACILITY_CLASS_JMOD_M,
+        .trainerName = _("STU"),
+        .speechBefore = {EC_WORD_LET_S, EC_WORD_BATTLE, EC_WORD_GWAHAHAHA, EC_WORD_YEEHAW_EXCL, 0xFFFF, 0xFFFF},
+        .speechWin = {EC_WORD_A, EC_WORD_WIN, EC_WORD_IS, EC_WORD_JUST, EC_WORD_AWESOME, 0xFFFF},
+        .speechLose = {EC_WORD_DARN, EC_WORD_ELLIPSIS, EC_WORD_LOSING, EC_WORD_IS, EC_WORD_VERY, EC_WORD_SAD},
+        .monSet = gBattleFrontierTrainerMons_Jagex
+    },
+    [FRONTIER_TRAINER_PS_BREEZY] = {
+        .facilityClass = FACILITY_CLASS_JMOD_M,
+        .trainerName = _("BREEZY"),
+        .speechBefore = {EC_WORD_LET_S, EC_WORD_BATTLE, EC_WORD_GWAHAHAHA, EC_WORD_YEEHAW_EXCL, 0xFFFF, 0xFFFF},
+        .speechWin = {EC_WORD_A, EC_WORD_WIN, EC_WORD_IS, EC_WORD_JUST, EC_WORD_AWESOME, 0xFFFF},
+        .speechLose = {EC_WORD_DARN, EC_WORD_ELLIPSIS, EC_WORD_LOSING, EC_WORD_IS, EC_WORD_VERY, EC_WORD_SAD},
+        .monSet = gBattleFrontierTrainerMons_Jagex
+    },
+    [FRONTIER_TRAINER_PS_ASH] = {
+        .facilityClass = FACILITY_CLASS_JMOD_M,
+        .trainerName = _("ASH"),
+        .speechBefore = {EC_WORD_LET_S, EC_WORD_BATTLE, EC_WORD_GWAHAHAHA, EC_WORD_YEEHAW_EXCL, 0xFFFF, 0xFFFF},
+        .speechWin = {EC_WORD_A, EC_WORD_WIN, EC_WORD_IS, EC_WORD_JUST, EC_WORD_AWESOME, 0xFFFF},
+        .speechLose = {EC_WORD_DARN, EC_WORD_ELLIPSIS, EC_WORD_LOSING, EC_WORD_IS, EC_WORD_VERY, EC_WORD_SAD},
+        .monSet = gBattleFrontierTrainerMons_Jagex
+    },
+
+    [FRONTIER_TRAINER_PS_DEMONHEADGE] = {
+        .facilityClass = FACILITY_CLASS_DEMONHEADGE,
+        .trainerName = _("DEMON"),
+        .speechBefore = {EC_WORD_LET_S, EC_WORD_BATTLE, EC_WORD_GWAHAHAHA, EC_WORD_YEEHAW_EXCL, 0xFFFF, 0xFFFF},
+        .speechWin = {EC_WORD_A, EC_WORD_WIN, EC_WORD_IS, EC_WORD_JUST, EC_WORD_AWESOME, 0xFFFF},
+        .speechLose = {EC_WORD_DARN, EC_WORD_ELLIPSIS, EC_WORD_LOSING, EC_WORD_IS, EC_WORD_VERY, EC_WORD_SAD},
+        .monSet = gBattleFrontierTrainerMons_Jagex
+    },
+    [FRONTIER_TRAINER_PS_HYPERSTAN] = {
+        .facilityClass = FACILITY_CLASS_HYPERSTAN,
+        .trainerName = _("STAN"),
+        .speechBefore = {EC_WORD_LET_S, EC_WORD_BATTLE, EC_WORD_GWAHAHAHA, EC_WORD_YEEHAW_EXCL, 0xFFFF, 0xFFFF},
+        .speechWin = {EC_WORD_A, EC_WORD_WIN, EC_WORD_IS, EC_WORD_JUST, EC_WORD_AWESOME, 0xFFFF},
+        .speechLose = {EC_WORD_DARN, EC_WORD_ELLIPSIS, EC_WORD_LOSING, EC_WORD_IS, EC_WORD_VERY, EC_WORD_SAD},
+        .monSet = gBattleFrontierTrainerMons_Jagex
+    },
+    [FRONTIER_TRAINER_PS_BRONZEMAN_1] = {
+        .facilityClass = FACILITY_CLASS_BRONZE_MAN,
+        .trainerName = _("LOPEND"),
+        .speechBefore = {EC_WORD_LET_S, EC_WORD_BATTLE, EC_WORD_GWAHAHAHA, EC_WORD_YEEHAW_EXCL, 0xFFFF, 0xFFFF},
+        .speechWin = {EC_WORD_A, EC_WORD_WIN, EC_WORD_IS, EC_WORD_JUST, EC_WORD_AWESOME, 0xFFFF},
+        .speechLose = {EC_WORD_DARN, EC_WORD_ELLIPSIS, EC_WORD_LOSING, EC_WORD_IS, EC_WORD_VERY, EC_WORD_SAD},
+        .monSet = gBattleFrontierTrainerMons_Jagex
+    },
+    [FRONTIER_TRAINER_PS_IRONMAN_1] = {
+        .facilityClass = FACILITY_CLASS_IRONMAN,
+        .trainerName = _("BRETT"),
+        .speechBefore = {EC_WORD_LET_S, EC_WORD_BATTLE, EC_WORD_GWAHAHAHA, EC_WORD_YEEHAW_EXCL, 0xFFFF, 0xFFFF},
+        .speechWin = {EC_WORD_A, EC_WORD_WIN, EC_WORD_IS, EC_WORD_JUST, EC_WORD_AWESOME, 0xFFFF},
+        .speechLose = {EC_WORD_DARN, EC_WORD_ELLIPSIS, EC_WORD_LOSING, EC_WORD_IS, EC_WORD_VERY, EC_WORD_SAD},
+        .monSet = gBattleFrontierTrainerMons_Jagex
+    },
+    [FRONTIER_TRAINER_PS_MITHRILMAN] = {
+        .facilityClass = FACILITY_CLASS_MITHRIL_MAN,
+        .trainerName = _(""),
+        .speechBefore = {EC_WORD_LET_S, EC_WORD_BATTLE, EC_WORD_GWAHAHAHA, EC_WORD_YEEHAW_EXCL, 0xFFFF, 0xFFFF},
+        .speechWin = {EC_WORD_A, EC_WORD_WIN, EC_WORD_IS, EC_WORD_JUST, EC_WORD_AWESOME, 0xFFFF},
+        .speechLose = {EC_WORD_DARN, EC_WORD_ELLIPSIS, EC_WORD_LOSING, EC_WORD_IS, EC_WORD_VERY, EC_WORD_SAD},
+        .monSet = gBattleFrontierTrainerMons_Jagex
+    },
+
+
+
+    /*
     [FRONTIER_TRAINER_BRADY] = {
         .facilityClass = FACILITY_CLASS_YOUNGSTER,
         .trainerName = _("BRADY"),
@@ -2400,4 +2509,5 @@ const struct BattleFrontierTrainer gBattleFrontierTrainers[FRONTIER_TRAINERS_COU
         .speechLose = {EC_WORD_IT_S, EC_WORD_HARD, EC_WORD_TO, EC_WORD_BELIEVE, EC_WORD_BUT, EC_WORD_CONGRATS},
         .monSet = gBattleFrontierTrainerMons_Gretel
     }
+    */
 };

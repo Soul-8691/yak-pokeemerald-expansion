@@ -1223,7 +1223,7 @@ VARROCK_GYM_KINGROALD_Text_1:
 	.string "…{PAUSE 15}…{PAUSE 15}…{PAUSE 15}\p"
 	.string "Oh right, so you are one of those MvM\n"
 	.string "Challengers.\p"
-	.string "I don't know while I even have this role.\p"
+	.string "I don't know why I even have this role.\p"
 	.string "Very well, lets get this out of the way,\n"
 	.string "show me what you can do.$"
 

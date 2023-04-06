@@ -40867,7 +40867,7 @@ const struct BaseStats gBaseStats[] =
 		.noFlip = TRUE,
 	},
 
-	[SPECIES_ABYSSAL_DEEPSEA_LURKER] =
+	[SPECIES_ABYSSAL_DEEPSEA_LEECH] =
 	{
 		.baseHP = 89,
 		.baseAttack = 89,

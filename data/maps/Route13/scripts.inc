@@ -349,7 +349,7 @@ BATTLE_ROUTE16_TRAINER_1_Text_1:
 
 BATTLE_ROUTE16_TRAINER_2_Text_0:
 	.string "Watch out for the dangers of Eastern\n"
-	.string "Mishtalin!$"
+	.string "Misthalin!$"
 
 BATTLE_ROUTE16_TRAINER_2_Text_1:
 	.string "Beware of bears and giant rats out\n"

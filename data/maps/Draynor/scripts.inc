@@ -132,10 +132,27 @@ Draynor_Diango::
 	lock
 	faceplayer
 	namebox Draynor_Diango_Text_0
-	msgbox Draynor_Diango_Text_1
+	random 3
+	switch VAR_RESULT
+	case 0, Draynor_Diango_3
+	case 1, Draynor_Diango_4
+	case 2, Draynor_Diango_5
+Draynor_Diango_1:
 	hidenamebox
 	release
 	end
+
+Draynor_Diango_3:
+	msgbox Draynor_Diango_Text_1
+	goto Draynor_Diango_1
+
+Draynor_Diango_4:
+	msgbox Draynor_Diango_Text_2
+	goto Draynor_Diango_1
+
+Draynor_Diango_5:
+	msgbox Draynor_Diango_Text_3
+	goto Draynor_Diango_1
 
 
 Draynor_Miss_Schism::
@@ -357,7 +374,20 @@ Draynor_Diango_Text_0:
 	.string "Diango$"
 
 Draynor_Diango_Text_1:
-	.string "Howdy!$"
+	.string "Howdy!\p"
+	.string "Have you seen my holiday items?\p"
+	.string "Look at this toy horsey!\p"
+	.string "Hi-ho Silver, and away!$"
+
+Draynor_Diango_Text_2:
+	.string "Howdy!\p"
+	.string "Look at this cool spinning plate I have!\p"
+	.string "Oh dear, I dropped it.$"
+
+Draynor_Diango_Text_3:
+	.string "Howdy!\p"
+	.string "Do you like my rubber chicken?\p"
+	.string "Whack!$"
 
 Draynor_Miss_Schism_Text_0:
 	.string "Miss Schism$"

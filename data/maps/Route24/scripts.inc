@@ -229,7 +229,7 @@ NPC_ROUTE24_NPC_1_Text_0:
 
 NPC_ROUTE24_NPC_1_Text_1:
 	.string "Due east is Varrock, the capital of\n"
-	.string "Mishtalin.\p"
+	.string "Misthalin.\p"
 	.string "On the way there you can meet some\n"
 	.string "unfriendly dwarves and barbarians but\l"
 	.string "dont let them ruin your day.$"

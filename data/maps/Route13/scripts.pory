@@ -167,7 +167,7 @@ script BATTLE_ROUTE16_TRAINER_1
 }
 script BATTLE_ROUTE16_TRAINER_2
 {//Giant rat x3 Grizzly bear
-    trainerbattle_single(TRAINER_ROUTE16_TRAINER_2, format("Watch out for the dangers of Eastern Mishtalin!"),format("Beware of bears and giant rats out there stranger."))
+    trainerbattle_single(TRAINER_ROUTE16_TRAINER_2, format("Watch out for the dangers of Eastern Misthalin!"),format("Beware of bears and giant rats out there stranger."))
     namebox ("Guard")
     msgbox(format("Beware of bears and giant rats out there stranger."))
 	hidenamebox

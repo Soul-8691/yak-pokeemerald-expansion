@@ -1,7 +1,10 @@
 mapscripts Port_Sarim_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
     goto(PORTSARIM_STATE)
+    
     }
+    
+    
 } 
 
 
@@ -33,7 +36,7 @@ script PORTSARIM_STATE{
             removeobject(26)
             removeobject(27)
             setflag(FLAG_EVENT_PORTSARIM_HAM_BOAT)
-            end
+            return
     }
 }
 

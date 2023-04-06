@@ -5565,7 +5565,7 @@ const struct Item gItems[] =
     },
     [ITEM_RING_OF_WEALTH] =
     {
-        .name = _("WEATH RING"),
+        .name = _("RING O WEALTH"),
         .itemId = ITEM_RING_OF_WEALTH,
         .price = 100,
         .holdEffect = HOLD_EFFECT_DOUBLE_PRIZE,

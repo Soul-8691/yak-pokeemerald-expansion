@@ -8936,12 +8936,12 @@ const u32 gMonShinyPalette_Abyssal_DeepSea_Walker[] = INCBIN_U32("graphics/pokes
 const u8 gMonIcon_Abyssal_DeepSea_Walker[] = INCBIN_U8("graphics/pokescape_monsters/Abyssal_DeepSea_Walker/icon.4bpp");
 const u8 gMonFootprint_Abyssal_DeepSea_Walker[] = INCBIN_U8("graphics/pokescape_monsters/Abyssal_DeepSea_Walker/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Abyssal_DeepSea_Lurker[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_DeepSea_Lurker/front.4bpp.lz");
-const u32 gMonPalette_Abyssal_DeepSea_Lurker[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_DeepSea_Lurker/normal.gbapal.lz");
-const u32 gMonBackPic_Abyssal_DeepSea_Lurker[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_DeepSea_Lurker/back.4bpp.lz");
-const u32 gMonShinyPalette_Abyssal_DeepSea_Lurker[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_DeepSea_Lurker/shiny.gbapal.lz");
-const u8 gMonIcon_Abyssal_DeepSea_Lurker[] = INCBIN_U8("graphics/pokescape_monsters/Abyssal_DeepSea_Lurker/icon.4bpp");
-const u8 gMonFootprint_Abyssal_DeepSea_Lurker[] = INCBIN_U8("graphics/pokescape_monsters/Abyssal_DeepSea_Lurker/footprint.1bpp");
+const u32 gMonStillFrontPic_Abyssal_DeepSea_Leech[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_DeepSea_Leech/front.4bpp.lz");
+const u32 gMonPalette_Abyssal_DeepSea_Leech[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_DeepSea_Leech/normal.gbapal.lz");
+const u32 gMonBackPic_Abyssal_DeepSea_Leech[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_DeepSea_Leech/back.4bpp.lz");
+const u32 gMonShinyPalette_Abyssal_DeepSea_Leech[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_DeepSea_Leech/shiny.gbapal.lz");
+const u8 gMonIcon_Abyssal_DeepSea_Leech[] = INCBIN_U8("graphics/pokescape_monsters/Abyssal_DeepSea_Leech/icon.4bpp");
+const u8 gMonFootprint_Abyssal_DeepSea_Leech[] = INCBIN_U8("graphics/pokescape_monsters/Abyssal_DeepSea_Leech/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Abyssal_DeepSea_Guardian[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_DeepSea_Guardian/front.4bpp.lz");
 const u32 gMonPalette_Abyssal_DeepSea_Guardian[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_DeepSea_Guardian/normal.gbapal.lz");

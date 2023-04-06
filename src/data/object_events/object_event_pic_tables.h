@@ -4349,15 +4349,15 @@ const struct SpriteFrameImage gObjectEventPicTable_GymLeader_King_Roald[] = {
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_GymLeader_TokhaarHok[] = {
-    overworld_frame(gObjectEventPic_GymLeader_TokhaarHok, 2, 4, 0),
-    overworld_frame(gObjectEventPic_GymLeader_TokhaarHok, 2, 4, 1),
-    overworld_frame(gObjectEventPic_GymLeader_TokhaarHok, 2, 4, 2),
-    overworld_frame(gObjectEventPic_GymLeader_TokhaarHok, 2, 4, 3),
-    overworld_frame(gObjectEventPic_GymLeader_TokhaarHok, 2, 4, 4),
-    overworld_frame(gObjectEventPic_GymLeader_TokhaarHok, 2, 4, 5),
-    overworld_frame(gObjectEventPic_GymLeader_TokhaarHok, 2, 4, 6),
-    overworld_frame(gObjectEventPic_GymLeader_TokhaarHok, 2, 4, 7),
-    overworld_frame(gObjectEventPic_GymLeader_TokhaarHok, 2, 4, 8),
+    obj_frame_tiles(gObjectEventPic_GymLeader_TokhaarHok),
+    obj_frame_tiles(gObjectEventPic_GymLeader_TokhaarHok),
+    obj_frame_tiles(gObjectEventPic_GymLeader_TokhaarHok),
+    obj_frame_tiles(gObjectEventPic_GymLeader_TokhaarHok),
+    obj_frame_tiles(gObjectEventPic_GymLeader_TokhaarHok),
+    obj_frame_tiles(gObjectEventPic_GymLeader_TokhaarHok),
+    obj_frame_tiles(gObjectEventPic_GymLeader_TokhaarHok),
+    obj_frame_tiles(gObjectEventPic_GymLeader_TokhaarHok),
+    obj_frame_tiles(gObjectEventPic_GymLeader_TokhaarHok),
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_GymLeader_Gunthor[] = {

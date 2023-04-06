@@ -29,7 +29,7 @@ PORTSARIM_STATE_3:
 	removeobject 26
 	removeobject 27
 	setflag FLAG_EVENT_PORTSARIM_HAM_BOAT
-	end
+	return
 
 
 PORTSARIM_HAM_EVENT_TRIGGER1::

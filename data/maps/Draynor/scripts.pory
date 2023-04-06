@@ -134,11 +134,19 @@ script NPC_PIG
 }
 
 
-script Draynor_Diango{
+script Draynor_Diango {
 	lock
 	faceplayer
     namebox("Diango")
-	msgbox(format("Howdy!"))
+    random(3)
+        switch (var(VAR_RESULT)) {
+            case 0: 
+                msgbox(format("Howdy!\pHave you seen my holiday items?\pLook at this toy horsey!\pHi-ho Silver, and away!"))
+            case 1:
+                msgbox(format("Howdy!\pLook at this cool spinning plate I have!\pOh dear, I dropped it."))
+            case 2:
+                msgbox(format("Howdy!\pDo you like my rubber chicken?\pWhack!"))
+        }
     hidenamebox
     release
 	end

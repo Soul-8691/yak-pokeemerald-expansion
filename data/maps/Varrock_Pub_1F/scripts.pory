@@ -2,6 +2,9 @@ mapscripts Varrock_Pub_1F_MapScripts {
     MAP_SCRIPT_ON_TRANSITION { 
         call(PUB_EVENT_STATE)   
     }
+    MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_POKESCAPE_GOLDENGNOMES, 15: GOLDENGNOME_EVENT_END
+    ]
 }
 
 

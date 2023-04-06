@@ -1909,6 +1909,13 @@ bool8 ScrCmd_dowildbattle(struct ScriptContext *ctx)
     return TRUE;
 }
 
+bool8 ScrCmd_dowildbattleNoCatch(struct ScriptContext *ctx)
+{
+    BattleSetup_StartScriptedWildBattleNoCatch();
+    ScriptContext1_Stop();
+    return TRUE;
+}
+
 bool8 ScrCmd_pokemart(struct ScriptContext *ctx)
 {
     const void *ptr = (void *)ScriptReadWord(ctx);

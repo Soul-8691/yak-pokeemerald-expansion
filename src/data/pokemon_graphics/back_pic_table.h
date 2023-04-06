@@ -1300,7 +1300,7 @@ const struct CompressedSpriteSheet gMonBackPicTable[] =
 	SPECIES_SPRITE(LOBSTROCITY, gMonBackPic_Lobstrocity),
 	SPECIES_SPRITE(SALAMANDER_YELLOW_FORM, gMonBackPic_Salamander_Yellow_Form),
 	SPECIES_SPRITE(ABYSSAL_DEEPSEA_WALKER, gMonBackPic_Abyssal_DeepSea_Walker),
-	SPECIES_SPRITE(ABYSSAL_DEEPSEA_LURKER, gMonBackPic_Abyssal_DeepSea_Lurker),
+	SPECIES_SPRITE(ABYSSAL_DEEPSEA_LEECH, gMonBackPic_Abyssal_DeepSea_Leech),
 	SPECIES_SPRITE(ABYSSAL_DEEPSEA_GUARDIAN, gMonBackPic_Abyssal_DeepSea_Guardian),
 	SPECIES_SPRITE(KIPPLE_NANO, gMonBackPic_Kipple_Nano),
 	SPECIES_SPRITE(CORAL_GUARDIAN, gMonBackPic_Coral_Guardian),

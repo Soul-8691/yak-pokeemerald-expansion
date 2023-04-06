@@ -767,7 +767,7 @@ script VARROCK_GYM_KINGROALD {
     namebox("King Roald")
     if (!flag(FLAG_BADGE03_GET)){
 
-        msgbox(format("Oh what is it now?\pWho are you?\nWhat do you want?\pCan you not see I am busy?\p…{PAUSE 15}…{PAUSE 15}…{PAUSE 15}\pOh right, so you are one of those MvM Challengers.\pI don't know while I even have this role.\pVery well, lets get this out of the way, show me what you can do."))
+        msgbox(format("Oh what is it now?\pWho are you?\nWhat do you want?\pCan you not see I am busy?\p…{PAUSE 15}…{PAUSE 15}…{PAUSE 15}\pOh right, so you are one of those MvM Challengers.\pI don't know why I even have this role.\pVery well, lets get this out of the way, show me what you can do."))
         hidenamebox
         trainerbattle_no_intro(TRAINER_VARROCK_GYM_KINGROALD, msgbox(format("That was a very enjoyable battle!")))
         namebox("King Roald")

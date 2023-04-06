@@ -833,7 +833,7 @@ NPC_WIZARDSTOWER_Jalarast_Text_2:
 	.string "It can enhance a Psychic Type's power.$"
 
 NPC_WIZARDSTOWER_Mizog_Text_0:
-	.string "Mizog$"
+	.string "Mizgog$"
 
 NPC_WIZARDSTOWER_Mizog_Text_1:
 	.string "Hi there, I am a Beadromancer.\p"

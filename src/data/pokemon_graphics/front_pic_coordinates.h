@@ -6497,7 +6497,7 @@ const struct MonCoords gMonFrontPicCoords[] =
 		.size = 0x0,
 		.y_offset = 0,
 	},
-	[SPECIES_ABYSSAL_DEEPSEA_LURKER] =
+	[SPECIES_ABYSSAL_DEEPSEA_LEECH] =
 	{
 		.size = 0x0,
 		.y_offset = 0,

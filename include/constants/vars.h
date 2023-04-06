@@ -130,8 +130,8 @@
 #define VAR_ROUTE116_STATE                   0x406F
 #define VAR_POKESCAPE_GAMEMODE_STATE                   0x4070 // Unused Var
 #define VAR_POKESCAPE_VARROCK_GYM_QUEST                   0x4071
-#define VAR_ROUTE119_STATE                   0x4072
-#define VAR_ROUTE120_STATE                   0x4073 // Unused Var
+#define VAR_POKESCAPE_TZHAAR_GYM_QUEST                   0x4072
+#define VAR_POKESCAPE_GOLDENGNOMES                   0x4073 // Unused Var
 #define VAR_ROUTE121_STATE                   0x4074
 #define VAR_ROUTE122_STATE                   0x4075 // Unused Var
 #define VAR_ROUTE123_STATE                   0x4076 // Unused Var

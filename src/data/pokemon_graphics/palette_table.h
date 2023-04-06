@@ -1300,7 +1300,7 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     SPECIES_PAL(LOBSTROCITY, gMonPalette_Lobstrocity),
     SPECIES_PAL(SALAMANDER_YELLOW_FORM, gMonPalette_Salamander_Yellow_Form),
     SPECIES_PAL(ABYSSAL_DEEPSEA_WALKER, gMonPalette_Abyssal_DeepSea_Walker),
-    SPECIES_PAL(ABYSSAL_DEEPSEA_LURKER, gMonPalette_Abyssal_DeepSea_Lurker),
+    SPECIES_PAL(ABYSSAL_DEEPSEA_LEECH, gMonPalette_Abyssal_DeepSea_Leech),
     SPECIES_PAL(ABYSSAL_DEEPSEA_GUARDIAN, gMonPalette_Abyssal_DeepSea_Guardian),
     SPECIES_PAL(KIPPLE_NANO, gMonPalette_Kipple_Nano),
     SPECIES_PAL(CORAL_GUARDIAN, gMonPalette_Coral_Guardian),

@@ -3162,7 +3162,7 @@ const u8 gMagpiePokedexText[] = _(
 
 const u8 gChinchompa_Grey_FormPokedexText[] = _(
 "Capable of running great lengths. All\n"
-"barbers in Mishtalin uses them as energy.");
+"barbers in Misthalin uses them as energy.");
 
 
 const u8 gChinchompa_Red_FormPokedexText[] = _(
@@ -7275,7 +7275,7 @@ const u8 gAbyssal_DeepSea_WalkerPokedexText[] = _(
 "creatures adapted to water.");
 
 
-const u8 gAbyssal_DeepSea_LurkerPokedexText[] = _(
+const u8 gAbyssal_DeepSea_LeechPokedexText[] = _(
 "In the depths of the sea, these beings\n"
 "lurks everywhere.");
 

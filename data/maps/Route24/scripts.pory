@@ -137,7 +137,7 @@ script NPC_ROUTE24_NPC_1{
     lock
     faceplayer
     namebox ("MAN")
-    msgbox(format("Due east is Varrock, the capital of Mishtalin.\pOn the way there you can meet some unfriendly dwarves and barbarians but dont let them ruin your day."))
+    msgbox(format("Due east is Varrock, the capital of Misthalin.\pOn the way there you can meet some unfriendly dwarves and barbarians but dont let them ruin your day."))
     hidenamebox
     release
     end

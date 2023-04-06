@@ -15205,12 +15205,12 @@ const struct PokedexEntry gPokedexEntries[] =
 	.trainerOffset = 0 ,
 	},
 
-	[NATIONAL_DEX_ABYSSAL_DEEPSEA_LURKER] =
+	[NATIONAL_DEX_ABYSSAL_DEEPSEA_LEECH] =
 	{
 	.categoryName = _("Sea"),
 	.height = 0,
 	.weight = 0,
-	.description = gAbyssal_DeepSea_LurkerPokedexText,
+	.description = gAbyssal_DeepSea_LeechPokedexText,
 	.pokemonScale = 256 ,
 	.pokemonOffset = 0 ,
 	.trainerScale = 256 ,

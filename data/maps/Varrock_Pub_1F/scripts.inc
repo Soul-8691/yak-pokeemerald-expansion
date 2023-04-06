@@ -1,10 +1,15 @@
 Varrock_Pub_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Varrock_Pub_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, Varrock_Pub_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
 Varrock_Pub_1F_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	call PUB_EVENT_STATE
 	return
+
+Varrock_Pub_1F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
+	map_script_2 VAR_POKESCAPE_GOLDENGNOMES, 15, GOLDENGNOME_EVENT_END
+	.2byte 0
 
 
 PUB_EVENT_STATE::

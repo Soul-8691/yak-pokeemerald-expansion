@@ -446,7 +446,7 @@ script NPC_WIZARDSTOWER_Mizog
 {
 	lock
 	faceplayer
-    namebox ("Mizog")
+    namebox ("Mizgog")
 	msgbox(format("Hi there, I am a Beadromancer.\pI study the power of Magical beads."))
     waitmessage
     hidenamebox

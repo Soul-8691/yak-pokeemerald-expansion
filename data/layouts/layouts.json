@@ -7104,30 +7104,30 @@
     {
       "id": "LAYOUT_BARB_STRONGHOLD_B2F",
       "name": "Barb_Stronghold_B2F_Layout",
-      "width": 20,
+      "width": 30,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Barb_Stronghold_B2F/border.bin",
       "blockdata_filepath": "data/layouts/Barb_Stronghold_B2F/map.bin"
     },
     {
       "id": "LAYOUT_BARB_STRONGHOLD_B3F",
       "name": "Barb_Stronghold_B3F_Layout",
-      "width": 20,
+      "width": 30,
       "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
       "border_filepath": "data/layouts/Barb_Stronghold_B3F/border.bin",
       "blockdata_filepath": "data/layouts/Barb_Stronghold_B3F/map.bin"
     },
     {
       "id": "LAYOUT_BARB_STRONGHOLD_B4F",
       "name": "Barb_Stronghold_B4F_Layout",
-      "width": 20,
+      "width": 30,
       "height": 20,
-      "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_SecretBaseRedCave",
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
       "border_filepath": "data/layouts/Barb_Stronghold_B4F/border.bin",
       "blockdata_filepath": "data/layouts/Barb_Stronghold_B4F/map.bin"
     },
@@ -7145,11 +7145,21 @@
       "id": "LAYOUT_ALKHARID_GYM_1F_R1",
       "name": "Alkharid_Gym_1F_R1_Layout",
       "width": 20,
-      "height": 36,
+      "height": 40,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Alkharid_Gym_1F_R1/border.bin",
       "blockdata_filepath": "data/layouts/Alkharid_Gym_1F_R1/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRIMHAVEN",
+      "name": "Brimhaven_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Karamja",
+      "border_filepath": "data/layouts/Brimhaven/border.bin",
+      "blockdata_filepath": "data/layouts/Brimhaven/map.bin"
     }
   ]
 }

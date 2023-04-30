@@ -10,9 +10,27 @@ mapscripts Lumbridge_Castle_2_MapScripts{
     ]
 	MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 1) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT,
-    }
+    
+	if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 1) //if OPEN WORLD
+    	{
+            call(OPENWORLD_STATE_HIDESTARTERS) // Hide starter mon pouches
+    	}
+	}
 
 }
+
+
+script OPENWORLD_STATE_HIDESTARTERS {
+        removeobject(5) 
+        removeobject(6)
+		removeobject(7)
+        setflag(FLAG_STARTER1)
+        setflag(FLAG_STARTER2)
+		setflag(FLAG_STARTER3)
+		return
+}
+
+
 
 
 
@@ -441,7 +459,7 @@ script Pouch_Starter1 {
 		if (!flag(FLAG_MEMBERSHIP)) {
 			lock
 			showmonpic (SPECIES_GUTHLING, 10, 3)
-			msgbox("This is a Guthling.")
+			msgbox("This is a GRASS type Monster.\nThe Bird of Balance, GUTHLING.")
 			msgbox(format("Would you like this monster as your starter?"), MSGBOX_YESNO)
 				if (var(VAR_RESULT) == NO){
 					hidemonpic
@@ -505,7 +523,7 @@ script Pouch_Starter2 {
 		if (!flag(FLAG_MEMBERSHIP)) {
 			lock
 			showmonpic (SPECIES_ZAMLING, 10, 3)
-			msgbox("This is a Zamling.")
+			msgbox("This is a FIRE type Monster.\nThe Bird of Chaos, ZAMLING.")
 			msgbox(format("Would you like this monster as your starter?"), MSGBOX_YESNO)
 				if (var(VAR_RESULT) == NO){
 					hidemonpic
@@ -567,7 +585,7 @@ script Pouch_Starter3 {
 		if (!flag(FLAG_MEMBERSHIP)) {
 			lock
 			showmonpic (SPECIES_SARALING, 10, 3)
-			msgbox("This is a Saraling.")
+			msgbox("This is a WATER type Monster.\nThe Bird of Order, SARALING.")
 			msgbox(format("Would you like this monster as your starter?"), MSGBOX_YESNO)
 				if (var(VAR_RESULT) == NO){
 					hidemonpic

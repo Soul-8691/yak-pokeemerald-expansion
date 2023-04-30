@@ -1022,7 +1022,7 @@ Lumbridge_GeneralStore_MOD_ASH_Text_1:
 	.string "What?\l"
 	.string "It is a great name.\p"
 	.string "Although I'm a bit stuck, I've made the\n"
-	.string "adventuer in this story fight a giant\l"
+	.string "adventurer in this story fight a giant\l"
 	.string "bird but I'm not sure what the bird\l"
 	.string "should look like.\p"
 	.string "Do you have any monsters that might\n"

@@ -736,7 +736,7 @@ script Lumbridge_GeneralStore_MOD_ASH
 	faceplayer
 	namebox ("Mod Ash")
 	if (!flag(FLAG_TEMP_1)){
-		msgbox(format("WOAH!\pI didn't see you there, I almost spilt my drink.\pI'm just writing out some dialog for my new fanfic.\pI call it MY ARM'S BIG ADVENTURE!\p…\pWhat?\lIt is a great name.\pAlthough I'm a bit stuck, I've made the adventuer in this story fight a giant bird but I'm not sure what the bird should look like.\p Do you have any monsters that might help inspire me?"))
+		msgbox(format("WOAH!\pI didn't see you there, I almost spilt my drink.\pI'm just writing out some dialog for my new fanfic.\pI call it MY ARM'S BIG ADVENTURE!\p…\pWhat?\lIt is a great name.\pAlthough I'm a bit stuck, I've made the adventurer in this story fight a giant bird but I'm not sure what the bird should look like.\p Do you have any monsters that might help inspire me?"))
 		special (ChoosePartyMon)
 		waitstate
 		specialvar (VAR_RESULT, ScriptGetPartyMonSpecies)

@@ -362,6 +362,22 @@ script NPC_DraynorManor_Fisherman{
 		release
 		end
     }
+	checkitem (ITEM_FISH_FOOD_POISONED,1)
+	if (var(VAR_RESULT)){
+		msgbox(format("Hey, that fish food looks ominous.\pWhat are you planning to do?\p…{PAUSE 15}Murder the fish?"))
+		hidenamebox
+		closemessage
+		release
+		end
+    }
+	checkitem (ITEM_FISH_FOOD,1)
+	if (var(VAR_RESULT)){
+		msgbox(format("Where did you get that fish food from?\pHopefully you didn't get it from the Kitchen, theres a bunch of poisons in there."))
+		hidenamebox
+		closemessage
+		release
+		end
+    }
     else
     {
         switch (var(VAR_POKESCAPE_ERNEST_QUEST_STATE)){ 
@@ -372,7 +388,7 @@ script NPC_DraynorManor_Fisherman{
 			release
 			end
         case 1: 
-			msgbox(format("Hey that fish food looks ominous.\pWhat are you planning to do?\p…{PAUSE 15}Murder the fish?"))
+			msgbox(format("The fish are looking a bit hungry."))
 			hidenamebox
             closemessage
 			release

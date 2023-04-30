@@ -178,3 +178,248 @@ script ALKHARID_NPC_16
     release
     end
 }
+
+
+
+
+
+
+
+const OBJ_EVENT_ID_PRINCEALI = 7
+
+const OBJ_EVENT_ID_GUARD_A_1 = 1
+const OBJ_EVENT_ID_GUARD_A_2 = 8
+
+const OBJ_EVENT_ID_GUARD_B_1 = 5
+const OBJ_EVENT_ID_GUARD_B_2 = 2
+
+const OBJ_EVENT_ID_GUARD_C_1 = 4
+const OBJ_EVENT_ID_GUARD_C_2 = 3
+
+const OBJ_EVENT_ID_GUARD_D_1 = 6
+const OBJ_EVENT_ID_GUARD_D_2_PRINCEALI = 9
+
+
+
+script ALKHARID_GYM_STATE{
+	switch (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE)){ 
+		case 0: 
+        case 5: 
+            setobjectxy(OBJ_EVENT_ID_PLAYER,9,32)
+			setobjectmovementtype(OBJ_EVENT_ID_PLAYER,MOVEMENT_TYPE_FACE_UP)
+
+            setobjectxy(OBJ_EVENT_ID_PRINCEALI,9,31)
+			setobjectmovementtype(OBJ_EVENT_ID_PRINCEALI,MOVEMENT_TYPE_FACE_DOWN)
+
+            setobjectxy(OBJ_EVENT_ID_GUARD_A_1,7,31)
+			setobjectmovementtype(OBJ_EVENT_ID_GUARD_A_1,MOVEMENT_TYPE_FACE_DOWN)
+            setobjectxy(OBJ_EVENT_ID_GUARD_A_2,8,31)
+			setobjectmovementtype(OBJ_EVENT_ID_GUARD_A_2,MOVEMENT_TYPE_FACE_DOWN)
+            setobjectxy(OBJ_EVENT_ID_GUARD_B_1,9,31)
+			setobjectmovementtype(OBJ_EVENT_ID_GUARD_B_1,MOVEMENT_TYPE_FACE_DOWN)
+            setobjectxy(OBJ_EVENT_ID_GUARD_B_2,10,31)
+			setobjectmovementtype(OBJ_EVENT_ID_GUARD_B_2,MOVEMENT_TYPE_FACE_DOWN)
+            setobjectxy(OBJ_EVENT_ID_GUARD_C_1,11,31)
+			setobjectmovementtype(OBJ_EVENT_ID_GUARD_C_1,MOVEMENT_TYPE_FACE_DOWN)
+            setobjectxy(OBJ_EVENT_ID_GUARD_D_1,12,31)
+			setobjectmovementtype(OBJ_EVENT_ID_GUARD_D_1,MOVEMENT_TYPE_FACE_DOWN)
+
+            
+
+        case 10:
+            removeobject(OBJ_EVENT_ID_PRINCEALI)
+            addobject(OBJ_EVENT_ID_GUARD_D_2_PRINCEALI)
+            setobjectxy(OBJ_EVENT_ID_GUARD_D_2_PRINCEALI,9,31)
+			setobjectmovementtype(OBJ_EVENT_ID_GUARD_D_2_PRINCEALI,MOVEMENT_TYPE_FACE_DOWN)
+
+        case 15:
+            
+            setobjectxyperm(OBJ_EVENT_ID_GUARD_A_1,1,31)
+			setobjectmovementtype(OBJ_EVENT_ID_GUARD_A_1,MOVEMENT_TYPE_FACE_DOWN)
+            setobjectxyperm(OBJ_EVENT_ID_GUARD_A_2,1,31)
+			setobjectmovementtype(OBJ_EVENT_ID_GUARD_A_2,MOVEMENT_TYPE_FACE_DOWN)
+            setobjectxyperm(OBJ_EVENT_ID_GUARD_B_1,1,31)
+			setobjectmovementtype(OBJ_EVENT_ID_GUARD_B_1,MOVEMENT_TYPE_FACE_DOWN)
+            setobjectxyperm(OBJ_EVENT_ID_GUARD_B_2,1,31)
+			setobjectmovementtype(OBJ_EVENT_ID_GUARD_B_2,MOVEMENT_TYPE_FACE_DOWN)
+            setobjectxyperm(OBJ_EVENT_ID_GUARD_C_1,1,31)
+			setobjectmovementtype(OBJ_EVENT_ID_GUARD_C_1,MOVEMENT_TYPE_FACE_DOWN)
+            setobjectxyperm(OBJ_EVENT_ID_GUARD_D_1,1,31)
+			setobjectmovementtype(OBJ_EVENT_ID_GUARD_D_1,MOVEMENT_TYPE_FACE_DOWN)
+
+            
+    }
+    return
+}
+
+
+
+
+
+
+
+
+
+
+
+script QUEST_ALKHARID_GYM_1
+{
+    namebox("Advisor")
+    msgbox(format("Welcome to the Al-Kharid Gym.\pWould you like to start your Gym Challenge?"), MSGBOX_YESNO)
+    if (!var(VAR_RESULT))
+    { 
+        msgbox(format("Come back when you are ready to challenge the Al-Kharid Gym."))
+        closemessage
+        hidenamebox
+        return
+    }
+    msgbox(format("Very well, let us prepare your challenge."))
+    closemessage
+    hidenamebox
+
+    setvar(VAR_POKESCAPE_ALKHARID_GYM_QUEST, 5)
+    fadescreen(FADE_TO_BLACK)
+    call(ALKHARID_GYM_STATE)
+    fadescreen(FADE_FROM_BLACK)
+
+
+    namebox("Prince Ali")
+    msgbox(format("This challenge is simple.\pAll you must do is find me and challenge me to a battle.\pSounds too easy right?\pBut once I put this disguise on…"))
+    closemessage
+    hidenamebox
+
+    setvar(VAR_POKESCAPE_ALKHARID_GYM_QUEST, 10)
+    setflag(FLAG_TEMP_A) // Hides prince.
+    clearflag(FLAG_TEMP_B) //shows prince disguise
+    fadescreen(FADE_TO_BLACK)
+    call(ALKHARID_GYM_STATE)
+    fadescreen(FADE_FROM_BLACK)
+
+    namebox("Prince Ali")
+    msgbox(format("This suddenly got a lot harder didn't it?\pI will be somewhere around the Palace.\pGood luck!"))
+    closemessage
+    hidenamebox
+
+    setvar(VAR_POKESCAPE_ALKHARID_GYM_QUEST, 15)
+    fadescreen(FADE_TO_BLACK)
+    //call(ALKHARID_GYM_STATE)
+    fadescreen(FADE_FROM_BLACK)
+
+    
+    return
+}
+
+
+
+
+
+
+
+
+
+//Prince Ali
+script ALKHARID_GYM_ALI {
+    lock
+    faceplayer
+    namebox("Prince Ali")
+    if (!flag(FLAG_BADGE04_GET)){
+
+        msgbox(format("Welcome to the Al Kharid Gym."))
+        hidenamebox
+        trainerbattle_no_intro(TRAINER_VARROCK_GYM_KINGROALD, msgbox(format("That was a very enjoyable battle!")))
+        namebox("Prince Ali")
+        msgbox(format("Have this Badge."))
+        hidenamebox
+        playfanfare(MUS_PS_QUEST_COMPLETE)
+        msgbox(format("{PLAYER} received the Varrock BADGE from Prince Ali."))
+        waitfanfare
+        waitmessage
+        namebox("Prince Ali")
+        msgbox(format("Also have this Scroll."))
+        hidenamebox
+        giveitem (ITEM_TM20, 1)
+        compare(VAR_RESULT, FALSE)
+        goto_if_eq(Common_EventScript_ShowBagIsFull)
+        playbgm(MUS_PS_VARROCK, 0)
+        savebgm(MUS_PS_VARROCK)
+        namebox("Prince Ali")
+        msgbox(format("That move is called CUPHOLDER."))
+        setvar(VAR_POKESCAPE_VARROCK_GYM_QUEST, 26)
+        setflag(FLAG_BADGE04_GET)
+        addvar(VAR_LEVEL_SCALING_STATE, 1) //INCREASES LEVEL SCALING & SHOPS
+        call(SetGymTrainers_VARROCK)
+        hidenamebox
+        release
+        end
+    }
+    if (flag(FLAG_BADGE04_GET)){
+        msgbox(format("You seem like you would be strong enough to take on the Barbarians, maybe you should head there next for your MvM gym challenge."))
+    }
+    else
+    {
+        msgbox(format("You should go pester the Prince in Al Kharid for your next MvM gym challenge."))
+    }
+    hidenamebox
+    release
+    end
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//move re learner wip
+script MOVERELEARNER_NPC
+{
+    faceplayer
+    //namebox ("")
+
+    msgbox(format("Would you like re-learn a move that you've forgotten?"), MSGBOX_YESNO)
+		if (var(VAR_RESULT)){
+			msgbox(format("Please select a Monster you wish to relearn a move with."))
+	        special (ChooseMonForMoveRelearner)
+	        waitstate
+            special (IsSelectedMonEgg)
+            compare (VAR_RESULT, TRUE)
+            goto_if_eq (FallarborTown_MoveRelearnersHouse_EventScript_CantTeachEgg)
+            compare (VAR_0x8005, 0)
+            goto_if_eq (FallarborTown_MoveRelearnersHouse_EventScript_NoMoveToTeachMon)
+            goto (FallarborTown_MoveRelearnersHouse_EventScript_ChooseMove)
+            closemessage
+			end
+		}
+		else {
+            closemessage
+			end
+		}
+
+    //hidenamebox
+    release
+    end
+}
+
+
+

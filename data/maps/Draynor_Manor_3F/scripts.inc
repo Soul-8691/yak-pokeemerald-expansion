@@ -344,16 +344,22 @@ NPC_DraynorManor_Fisherman::
 	faceplayer
 	checkitem ITEM_PRESSURE_GAUGE, 1
 	compare VAR_RESULT, 0
-	goto_if_ne NPC_DraynorManor_Fisherman_1
+	goto_if_ne NPC_DraynorManor_Fisherman_2
+	checkitem ITEM_FISH_FOOD_POISONED, 1
+	compare VAR_RESULT, 0
+	goto_if_ne NPC_DraynorManor_Fisherman_5
+	checkitem ITEM_FISH_FOOD, 1
+	compare VAR_RESULT, 0
+	goto_if_ne NPC_DraynorManor_Fisherman_7
 	switch VAR_POKESCAPE_ERNEST_QUEST_STATE
-	case 0, NPC_DraynorManor_Fisherman_5
-	case 1, NPC_DraynorManor_Fisherman_6
-	case 2, NPC_DraynorManor_Fisherman_7
-	case 3, NPC_DraynorManor_Fisherman_7
-	case 4, NPC_DraynorManor_Fisherman_7
+	case 0, NPC_DraynorManor_Fisherman_11
+	case 1, NPC_DraynorManor_Fisherman_12
+	case 2, NPC_DraynorManor_Fisherman_13
+	case 3, NPC_DraynorManor_Fisherman_13
+	case 4, NPC_DraynorManor_Fisherman_13
 	return
 
-NPC_DraynorManor_Fisherman_1:
+NPC_DraynorManor_Fisherman_2:
 	msgbox NPC_DraynorManor_Fisherman_Text_0
 	hidenamebox
 	closemessage
@@ -367,15 +373,29 @@ NPC_DraynorManor_Fisherman_5:
 	release
 	end
 
-NPC_DraynorManor_Fisherman_6:
+NPC_DraynorManor_Fisherman_7:
 	msgbox NPC_DraynorManor_Fisherman_Text_2
 	hidenamebox
 	closemessage
 	release
 	end
 
-NPC_DraynorManor_Fisherman_7:
+NPC_DraynorManor_Fisherman_11:
 	msgbox NPC_DraynorManor_Fisherman_Text_3
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_DraynorManor_Fisherman_12:
+	msgbox NPC_DraynorManor_Fisherman_Text_4
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_DraynorManor_Fisherman_13:
+	msgbox NPC_DraynorManor_Fisherman_Text_5
 	hidenamebox
 	closemessage
 	release
@@ -566,13 +586,22 @@ NPC_DraynorManor_Fisherman_Text_0:
 	.string "I just wanted to fish for piranhas.$"
 
 NPC_DraynorManor_Fisherman_Text_1:
-	.string "Rumours say there is a rare fish called\n"
-	.string "piranha in this fountain.$"
-
-NPC_DraynorManor_Fisherman_Text_2:
-	.string "Hey that fish food looks ominous.\p"
+	.string "Hey, that fish food looks ominous.\p"
 	.string "What are you planning to do?\p"
 	.string "…{PAUSE 15}Murder the fish?$"
 
+NPC_DraynorManor_Fisherman_Text_2:
+	.string "Where did you get that fish food from?\p"
+	.string "Hopefully you didn't get it from the\n"
+	.string "Kitchen, theres a bunch of poisons in\l"
+	.string "there.$"
+
 NPC_DraynorManor_Fisherman_Text_3:
+	.string "Rumours say there is a rare fish called\n"
+	.string "piranha in this fountain.$"
+
+NPC_DraynorManor_Fisherman_Text_4:
+	.string "The fish are looking a bit hungry.$"
+
+NPC_DraynorManor_Fisherman_Text_5:
 	.string "The piranhas went extinct…$"

@@ -5,11 +5,27 @@ Lumbridge_Castle_2_MapScripts::
 
 Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 1
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 1
+	goto_if_eq Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	return
+
+Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+	call OPENWORLD_STATE_HIDESTARTERS
 	return
 
 Lumbridge_Castle_2_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 	map_script_2 VAR_TEMP_A, 0, Lumbridge_Castle_Introduction
 	.2byte 0
+
+
+OPENWORLD_STATE_HIDESTARTERS::
+	removeobject 5
+	removeobject 6
+	removeobject 7
+	setflag FLAG_STARTER1
+	setflag FLAG_STARTER2
+	setflag FLAG_STARTER3
+	return
 
 
 Lumbridge_Bookshelf::
@@ -1199,7 +1215,7 @@ Pouch_Starter1_Text_0:
 	.string "You have already chosen!\pNo need to be greedy!$"
 
 Pouch_Starter1_Text_1:
-	.string "This is a Guthling.$"
+	.string "This is a GRASS type Monster.\nThe Bird of Balance, GUTHLING.$"
 
 Pouch_Starter1_Text_2:
 	.string "Would you like this monster as your\n"
@@ -1213,13 +1229,13 @@ Pouch_Starter1_Text_4:
 	.string "This is an Armaling.$"
 
 Pouch_Starter2_Text_0:
-	.string "This is a Zamling.$"
+	.string "This is a FIRE type Monster.\nThe Bird of Chaos, ZAMLING.$"
 
 Pouch_Starter2_Text_1:
 	.string "This is an Ungodling.$"
 
 Pouch_Starter3_Text_0:
-	.string "This is a Saraling.$"
+	.string "This is a WATER type Monster.\nThe Bird of Order, SARALING.$"
 
 Pouch_Starter3_Text_1:
 	.string "This is an Tumekling.$"

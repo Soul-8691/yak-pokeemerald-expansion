@@ -1,10 +1,26 @@
 mapscripts Lumbridge_Swamp_MapScripts {
 	MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 1) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
-    }
+		if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+			{
+				if (flag(FLAG_BADGE01_GET)){
+				call(LUMBRIDGE_SWAMP_STATE)
+				}
+			}
+			else
+			{
+				call(LUMBRIDGE_SWAMP_STATE)
+			}
+	}
 } 
 
-
+script LUMBRIDGE_SWAMP_STATE{
+	removeobject(4)
+	setflag(FLAG_TEMP_5)
+	removeobject(8)
+	setflag(FLAG_TEMP_5)
+    return
+}
 
 script BLOCK_LumbridgeSwamp_HAM
 {

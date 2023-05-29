@@ -7332,13 +7332,14 @@ const struct Item gItems[] =
     [ITEM_RUNE_ESSENCE] =
     {
         .name = _("RUNE ESSENCE"),
-        .itemId = ITEM_RUNE_ESSENCE,
-        .price = 100,
-        .description = sCupholderDesc,
-        .pocket = POCKET_BERRIES,
-        .type = 2,
+        .itemId = ITEM_EVERSTONE,
+        .price = 200,
+        .holdEffect = HOLD_EFFECT_PREVENT_EVOLVE,
+        .description = sEverstoneDesc,
+        .pocket = POCKET_ITEMS,
+        .type = 4,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .secondaryId = 2,
+        .secondaryId = 0,
     },
 
 

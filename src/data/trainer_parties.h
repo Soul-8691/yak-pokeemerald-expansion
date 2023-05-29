@@ -3451,6 +3451,36 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_BOT1[] =
     }
 };
 
+
+static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_TRAINER_1[] = {  
+    {
+    .iv = 0,
+    .lvl = 19,
+    .species = SPECIES_SCORPION_PIT_FORM,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_TRAINER_2[] = {  
+    {
+    .iv = 0,
+    .lvl = 19,
+    .species = SPECIES_EEL_DUSK_FORM,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_TRAINER_3[] = {  
+    {
+    .iv = 0,
+    .lvl = 20,
+    .species = SPECIES_JADINKO,
+    },
+    {
+    .iv = 0,
+    .lvl = 17,
+    .species = SPECIES_CHICKEN_WAR_FORM,
+    },
+};
+
+
+
 static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_WOODCUTTER1[] = {  
     {
     .iv = 0,

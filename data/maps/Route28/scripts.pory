@@ -77,6 +77,15 @@ script BLOCK_Alkharid_Guards
 }
 
 
+script BLOCK_DEMO_END
+{
+	lockall
+	msgbox(format("POKESCAPE MESSAGE - PAST THIS POINT IS ALL UNFINISHED CONTENT!\pThank you for playing PokeScape!\pIf you wish to proceed be cautious as all content is not yet finished."))
+	closemessage
+	release
+	end
+}
+
 
 
 //trainer battles

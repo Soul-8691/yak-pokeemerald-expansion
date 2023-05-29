@@ -13244,7 +13244,7 @@
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
+                "species": "SPECIES_SPIDER_GIANT_FORM"
               },
               {
                 "min_level": 15,
@@ -13254,7 +13254,7 @@
               {
                 "min_level": 15,
                 "max_level": 30,
-                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
+                "species": "SPECIES_SPIDERLING"
               },
               {
                 "min_level": 15,
@@ -13274,7 +13274,7 @@
               {
                 "min_level": 20,
                 "max_level": 30,
-                "species": "SPECIES_ZYGOMITE"
+                "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
               },
               {
                 "min_level": 10,
@@ -13284,7 +13284,7 @@
               {
                 "min_level": 20,
                 "max_level": 28,
-                "species": "SPECIES_PENGUIN_DISGUISE_BUSH_FORM"
+                "species": "SPECIES_SALAMANDER_GREEN_FORM"
               },
               {
                 "min_level": 18,
@@ -13294,7 +13294,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_PLANT_STRANGER_FORM"
+                "species": "SPECIES_PAWYA"
               }
             ]
           }

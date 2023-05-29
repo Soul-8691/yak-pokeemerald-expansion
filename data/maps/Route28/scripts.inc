@@ -64,6 +64,14 @@ BLOCK_Alkharid_Guards::
 	end
 
 
+BLOCK_DEMO_END::
+	lockall
+	msgbox BLOCK_DEMO_END_Text_0
+	closemessage
+	release
+	end
+
+
 BATTLE_ROUTE28_TRAINER_1::
 	trainerbattle_single TRAINER_ROUTE28_TRAINER_1, BATTLE_ROUTE28_TRAINER_1_Text_0, BATTLE_ROUTE28_TRAINER_1_Text_1
 	msgbox BATTLE_ROUTE28_TRAINER_1_Text_1
@@ -109,6 +117,13 @@ BLOCK_ALKHAIRD_GATE_Text_0:
 	.string "Halt!\p"
 	.string "Only those whom possess the Al-Khaird\n"
 	.string "Badge may enter!$"
+
+BLOCK_DEMO_END_Text_0:
+	.string "POKESCAPE MESSAGE - PAST THIS POINT\n"
+	.string "IS ALL UNFINISHED CONTENT!\p"
+	.string "Thank you for playing PokeScape!\p"
+	.string "If you wish to proceed be cautious as\n"
+	.string "all content is not yet finished.$"
 
 BATTLE_ROUTE28_TRAINER_1_Text_0:
 	.string "They assigned me to this boring post on\n"

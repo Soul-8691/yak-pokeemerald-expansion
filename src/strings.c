@@ -1850,7 +1850,7 @@ const u8 gText_ElementalPouch[] =_("Elemental Pouch");
 //cheat menu
 const u8 gText_CheatEvolutionShop[] =_("Evolution Items");
 const u8 gText_CheatPouchShop[] = _("Pouch Items");
-const u8 gText_AddCash[] = _("Fuck Bitches");
+const u8 gText_AddCash[] = _("Give Money");
 const u8 gText_AddCandy[] = _("Get Candies");
 const u8 gText_AddKeyItems[] = _("Get Key Items");
 const u8 gText_CheatTMShop[] = _("TM's");

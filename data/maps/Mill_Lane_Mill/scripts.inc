@@ -202,7 +202,7 @@ Trainer1_MillLaneMill_Battle_Text_0:
 	.string "Have you seen any Kebbits around here?$"
 
 Trainer1_MillLaneMill_Battle_Text_1:
-	.string "I need to get a higher hunting level..$"
+	.string "I need to get a higher hunting level…$"
 
 Trainer1_MillLaneMill_Battle_Text_2:
 	.string "I would love to have a double battle\n"
@@ -216,8 +216,8 @@ Trainer1_MillLaneMill_Battle_Text_4:
 	.string "Kebbits for my collection.$"
 
 MillLaneMill_Item_WHEAT1_Text_0:
-	.string "You search the sack...\p"
-	.string "...$"
+	.string "You search the sack…\p"
+	.string "…$"
 
 MillLaneMill_Item_WHEAT1_Text_1:
 	.string "The sack is empty.$"

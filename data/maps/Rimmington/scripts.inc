@@ -989,7 +989,7 @@ NPC_POH_ZEZIMA::
 	lock
 	faceplayer
 	namebox NPC_POH_ZEZIMA_Text_0
-	msgbox NPC_POH_ZEZIMA_Text_1
+	msgbox NPC_RIMMINGTON_Zezima_Text_1
 	hidenamebox
 	release
 	end
@@ -1488,7 +1488,7 @@ NPC_RIMMINGTON_Zezima_Text_0:
 	.string "Zezima$"
 
 NPC_RIMMINGTON_Zezima_Text_1:
-	.string "...$"
+	.string "…$"
 
 NPC_RIMMINGTON_Boaty_Text_0:
 	.string "Boaty$"
@@ -1547,7 +1547,7 @@ NPC_RIMMINGTON_DemonAndStan_Text_9:
 
 NPC_RIMMINGTON_DemonAndStan_Text_10:
 	.string "Ok so tell me again the steps for the\n"
-	.string "plan to kidnap zezimas cat..$"
+	.string "plan to kidnap zezimas cat…$"
 
 NPC_RIMMINGTON_DemonAndStan_Text_11:
 	.string "SHHHHH people are listening!$"
@@ -1557,7 +1557,7 @@ NPC_RIMMINGTON_DemonAndStan_Text_12:
 	.string "celebrity!$"
 
 NPC_RIMMINGTON_DemonAndStan_Text_13:
-	.string "Mickey we dont even qualify as celery..$"
+	.string "Mickey we dont even qualify as celery…$"
 
 NPC_RIMMINGTON_DemonAndStan_Text_14:
 	.string "Follow me on Twitter!$"
@@ -1610,7 +1610,7 @@ NPC_RIMMINGTON_DemonAndStan_Text_28:
 
 NPC_RIMMINGTON_DemonAndStan_Text_29:
 	.string "You are antagonising the world again\n"
-	.string "Stan..$"
+	.string "Stan…$"
 
 NPC_RIMMINGTON_DemonAndStan_Text_30:
 	.string "Hey Stan, when do you think we should\n"
@@ -1678,9 +1678,6 @@ NPC_POH_GONTHORIAN_Text_1:
 
 NPC_POH_ZEZIMA_Text_0:
 	.string "ZEZIMA$"
-
-NPC_POH_ZEZIMA_Text_1:
-	.string "…$"
 
 NPC_POH_EXCL_Text_0:
 	.string "EXCL$"

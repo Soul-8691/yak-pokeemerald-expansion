@@ -130,7 +130,7 @@ ROUTE10_Pirate_Text_0:
 ROUTE10_Pirate_Text_1:
 	.string "Arrrr…\p"
 	.string "Me best matey Polly past away a few\n"
-	.string "yeeyarrs ago..\p"
+	.string "yeeyarrs ago…\p"
 	.string "It feels like only yeesterrdey.$"
 
 ROUTE10_DragonBot_Text_0:
@@ -159,7 +159,7 @@ ROUTE10_WhiteKnight_1_Text_1:
 	.string "armour!$"
 
 ROUTE10_WhiteKnight_2_Text_0:
-	.string "All of my monsters fainted..\p"
+	.string "All of my monsters fainted…\p"
 	.string "I need to recover for a bit.$"
 
 BATTLE_ROUTE10_MONK_Text_0:

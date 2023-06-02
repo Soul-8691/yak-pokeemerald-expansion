@@ -140,7 +140,7 @@ script NPC_DAIRYCOW{
 			end
 		}
 		else{
-			msgbox(format("You squeeze the milk into your imaginary bucket.\p...\pNothing interesting happened."))
+			msgbox(format("You squeeze the milk into your imaginary bucket.\p…\pNothing interesting happened."))
 			release
 			end
 		}
@@ -346,9 +346,9 @@ script GoblinBattle6{
 }
 
 script BATTLE_ROUTE12_SMELLYBACK{
-	trainerbattle_single(TRAINER_GOBLIN_7_ROUTE12, format("Big high war god say human go home."),format("Big high war god calls for rematch.\pLater...\nMuch later..."))
+	trainerbattle_single(TRAINER_GOBLIN_7_ROUTE12, format("Big high war god say human go home."),format("Big high war god calls for rematch.\pLater…\nMuch later…"))
 	namebox("Smellyback")
-	msgbox(format("Big high war god calls for rematch.\pLater...\nMuch later..."))
+	msgbox(format("Big high war god calls for rematch.\pLater…\nMuch later…"))
 	hidenamebox
 	closemessage
 	end

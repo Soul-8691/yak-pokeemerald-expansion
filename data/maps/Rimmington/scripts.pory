@@ -589,7 +589,7 @@ script NPC_RIMMINGTON_RSMVer_2{
 script NPC_RIMMINGTON_Zezima{
     
     namebox("Zezima")
-    msgbox(format("..."))
+    msgbox(format("…"))
     hidenamebox
     release
     end
@@ -626,7 +626,7 @@ script NPC_RIMMINGTON_NPC_2{
 script NPC_RIMMINGTON_Tehnoobshow{
     
     namebox("Tehnoobshow")
-    msgbox(format("..."))
+    msgbox(format("…"))
     hidenamebox
     release
     end
@@ -688,7 +688,7 @@ script NPC_RIMMINGTON_DemonAndStan{
             case 4: 
                 applymovement(OBJ_EVENT_ID_DEMONHEADGE, MOVE_DEMONHEADGE_1)
                 namebox("Demonheadge")
-                msgbox(format("Ok so tell me again the steps for the plan to kidnap zezimas cat.."))
+                msgbox(format("Ok so tell me again the steps for the plan to kidnap zezimas cat…"))
                 waitmovement(0)
                 applymovement(OBJ_EVENT_ID_HYPERSTAN, MOVE_HYPERSTAN_1)
                 namebox("Hyper Stan")
@@ -704,7 +704,7 @@ script NPC_RIMMINGTON_DemonAndStan{
                 waitmovement(0)
                 applymovement(OBJ_EVENT_ID_HYPERSTAN, MOVE_HYPERSTAN_1)
                 namebox("Hyper Stan")
-                msgbox(format("Mickey we dont even qualify as celery.."))
+                msgbox(format("Mickey we dont even qualify as celery…"))
                 waitmovement(0)
                 hidenamebox
                 release
@@ -800,7 +800,7 @@ script NPC_RIMMINGTON_DemonAndStan{
                 waitmovement(0)
                 applymovement(OBJ_EVENT_ID_DEMONHEADGE, MOVE_DEMONHEADGE_1)
                 namebox("Demonheadge")
-                msgbox(format("You are antagonising the world again Stan.."))
+                msgbox(format("You are antagonising the world again Stan…"))
                 waitmovement(0)
                 hidenamebox
                 release

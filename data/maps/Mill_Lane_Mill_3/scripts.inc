@@ -71,7 +71,7 @@ Millie_Miller_Text_1:
 	.string "I heard that you were after some of our\n"
 	.string "flour.\p"
 	.string "Tehehehehe.\p"
-	.string "I can give you some if you want..$"
+	.string "I can give you some if you want…$"
 
 Millie_Miller_Text_2:
 	.string "But you'll have to battle me for it.\p"

@@ -13,7 +13,7 @@ script ROUTE10_Pirate
 {
     faceplayer
     namebox ("PIRATE")
-    msgbox(format("Arrrr…\pMe best matey Polly past away a few yeeyarrs ago..\pIt feels like only yeesterrdey."))
+    msgbox(format("Arrrr…\pMe best matey Polly past away a few yeeyarrs ago…\pIt feels like only yeesterrdey."))
     closemessage
     hidenamebox
     release
@@ -57,7 +57,7 @@ script ROUTE10_WhiteKnight_2
 {
     faceplayer
     namebox ("White Knight")
-    msgbox(format("All of my monsters fainted..\pI need to recover for a bit."))
+    msgbox(format("All of my monsters fainted…\pI need to recover for a bit."))
     closemessage
     hidenamebox
     release

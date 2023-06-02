@@ -469,7 +469,7 @@ ratbattle_Text_1:
 KevinItemsTest_Text_0:
 	.string "Here take these!\p"
 	.string "Why do I have this rotten potato?\n"
-	.string "No reason..$"
+	.string "No reason…$"
 
 CraftPouchStart_Text_0:
 	.string "Hi there!\pWould you like to craft a pouch?$"

@@ -350,7 +350,7 @@ NPC_Draynor_WiseOldMan::
 	lock
 	faceplayer
 	namebox NPC_Draynor_WiseOldMan_Text_0
-	msgbox NPC_Draynor_WiseOldMan_Text_1
+	msgbox Draynor_Coolmom227_Text_1
 	hidenamebox
 	release
 	end
@@ -360,12 +360,12 @@ HAM_EVENT_Draynor_Text_0:
 	.string "Ariane$"
 
 HAM_EVENT_Draynor_Text_1:
-	.string "I'm not sure which way he went...\p"
-	.string "Maybe the market..$"
+	.string "I'm not sure which way he went…\p"
+	.string "Maybe the market…$"
 
 Draynor_Ariane_Text_0:
-	.string "He doesn't seem to be here...\p"
-	.string "I hope he didn't leave town..$"
+	.string "He doesn't seem to be here…\p"
+	.string "I hope he didn't leave town…$"
 
 NPC_PIG_Text_0:
 	.string "OINK!$"
@@ -420,7 +420,7 @@ Draynor_Coolmom227_Text_0:
 	.string "Cool Mom227$"
 
 Draynor_Coolmom227_Text_1:
-	.string "...$"
+	.string "…$"
 
 Draynor_Guard2_Text_0:
 	.string "Don't cause any trouble.$"
@@ -450,10 +450,10 @@ Draynor_TREE_Text_2:
 	.string "Hey what is the big idea!\p"
 	.string "I was trying to catch a red coloured\n"
 	.string "Ravenling, but you scared it away!\p"
-	.string "...\p"
-	.string "Sigh...\p"
+	.string "…\p"
+	.string "Sigh…\p"
 	.string "Oh well, I guess I should better get\n"
-	.string "back to work..$"
+	.string "back to work…$"
 
 NPC_Draynor_Woman_1_Text_0:
 	.string "Quester$"
@@ -506,6 +506,3 @@ NPC_Draynor_Mugger_Text_1:
 
 NPC_Draynor_WiseOldMan_Text_0:
 	.string "Wise Old Man$"
-
-NPC_Draynor_WiseOldMan_Text_1:
-	.string "…$"

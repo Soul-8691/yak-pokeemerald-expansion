@@ -156,7 +156,7 @@ script BATTLE_ROUTE6_FIREMAKER{
 }
 
 script BATTLE_ROUTE6_MUGGER{
-    trainerbattle_single(TRAINER_MUGGER_ROUTE6, format("Your money or your life!"),format("Okay I guess you can keep both.."))
+    trainerbattle_single(TRAINER_MUGGER_ROUTE6, format("Your money or your life!"),format("Okay I guess you can keep both…"))
     namebox ("Mugger")
     msgbox(format("Shoo you're making it hard for me to mug people."))
     hidenamebox

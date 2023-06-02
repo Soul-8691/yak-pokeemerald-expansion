@@ -247,7 +247,7 @@ script Mithrilman_LUMBRIDGE1{
         namebox ("Mithrilman")
         msgbox(format("Morest fabled thanst the Ironmen and faster than the Adamantmen.\pThe Mithrilman is a challenge upon the very spirit ofst PokeScape itself.\pAs thy predecessor inst this realm.\pWhy doesnt thine show ye, knave, howst a true master battles.")) 
         hidenamebox
-        trainerbattle_no_intro(TRAINER_MITHRILMAN1,format("..."))
+        trainerbattle_no_intro(TRAINER_MITHRILMAN1,format("…"))
         goto(Mithrilman_LUMBRIDGE2)
         release
         end
@@ -287,7 +287,7 @@ script Mithrilman_FALADOR1{
     namebox ("Mithrilman")
     msgbox(format("West meet again knave, howst fares thoughst adventure?\pThine has already beaten the whitest of knights, and provenst that Mithrilmen are superior to those of the whitest armour.\pDo thoust wonder why thine am in the park?\pThine am contemplating catching a duck for thine arsenal.\pWord sayst the pen is mightiest than the sword and pens be made from feathers.\pSo who else than the duck wouldst be mightyer than the sword?\pWhy donst thine show ye, knave, the power of onst without a sword?"))
     hidenamebox
-    trainerbattle_no_intro(TRAINER_MITHRILMAN2,format("..."))
+    trainerbattle_no_intro(TRAINER_MITHRILMAN2,format("…"))
     goto(Mithrilman_FALADOR2)
 }
 script Mithrilman_FALADOR2{  
@@ -318,7 +318,7 @@ script Mithrilman_VARROCK1{
 	faceplayer
     playbgm (MUS_ENCOUNTER_MAY, 1)
     msgbox(format("We meet again knave.\pHow farest thee battle?\pThine?\pThine has bartered with the skin pelter of Varrockia.\pThine wouldst need a bear skin.\pBut alas, clause 73 of the Mithrilmen states thine is not to use money to gainst relics.\pThust thine simply did not pay the pelter.\pThoust seems eager for a rematch?"))
-    trainerbattle_single(TRAINER_MITHRILMAN3,format("Alas knave, there is no ducks to save thee this time."),format("..."),Mithrilman_VARROCK2)
+    trainerbattle_single(TRAINER_MITHRILMAN3,format("Alas knave, there is no ducks to save thee this time."),format("…"),Mithrilman_VARROCK2)
 }
 script Mithrilman_VARROCK2{  
     lock
@@ -345,7 +345,7 @@ script Mithrilman_ALKHARID1{
 	faceplayer
     playbgm (MUS_ENCOUNTER_MAY, 1)
     msgbox(format("Greetings knave, these lands be scorchest of themst all.\pThine battlest so far has been harsher than before.\pBut fear not, a Mithrilman never bends.\pAdamantmen may falter, for they do not posesst the speed of a Mithrilman.\pThus they succumb to the heat of the desert.\pThus Mithrilmen shalt be known as the superior challenge!"))
-    trainerbattle_single(TRAINER_MITHRILMAN4,format("Yee seem tired knave, wouldst a battle fire yee up?"),format("..."),Mithrilman_ALKHARID2)
+    trainerbattle_single(TRAINER_MITHRILMAN4,format("Yee seem tired knave, wouldst a battle fire yee up?"),format("…"),Mithrilman_ALKHARID2)
 }
 script Mithrilman_ALKHARID2{  
     lock
@@ -378,7 +378,7 @@ script Mithrilman_TZHAAR1{
 	faceplayer
     playbgm (MUS_ENCOUNTER_MAY, 1)
     msgbox(format("Fromst the scorching heats of the dunes to a pleasant vaction I see knave.\pGreetings.\pThoust must be here to battle the Tzhaar?\pAllow thine to grant yee some knowledge as thoust superior in battle provesst.\pFirst of thoust shouldn't use iron inside a volcano.\pIt would smelts and yee would end in malfigured armour.\pNot for the goodst of thoust body.\pHmm?\pThine has already challenged the Tzhaar?"))
-    trainerbattle_single(TRAINER_MITHRILMAN5,format("Well yee should show thine your provess then, beware, for the heat of this battle will be nothing like the volcano!"),format("..."),Mithrilman_TZHAAR2)
+    trainerbattle_single(TRAINER_MITHRILMAN5,format("Well yee should show thine your provess then, beware, for the heat of this battle will be nothing like the volcano!"),format("…"),Mithrilman_TZHAAR2)
 }
 script Mithrilman_TZHAAR2{  
     lock
@@ -406,12 +406,12 @@ script Mithrilman_DRAYNOR1{
 	faceplayer
     playbgm (MUS_ENCOUNTER_MAY, 1)
     msgbox(format("Wiseness is a praise upon us all.\pAnd thine has battlest the wisest of them all.\pDizzy himself, the wisest old man.\pGlory upon thine as thine am the strongest.\pIs that envy I spy upon yee knave?\pDoest not fear, for thine has granted yee the blessing of my visit.\pThe wisest got this 8 times and by the last the victory was mine by default beforest the battle birthed."))
-    trainerbattle_single(TRAINER_MITHRILMAN6,format("Would thoust challenge a man as awingst as me?"),format("..."),Mithrilman_DRAYNOR2)
+    trainerbattle_single(TRAINER_MITHRILMAN6,format("Would thoust challenge a man as awingst as me?"),format("…"),Mithrilman_DRAYNOR2)
 }
 script Mithrilman_DRAYNOR2{  
     lock
     faceplayer  
-    msgbox(format("Thoust does cheat?\pThoust must.\pThine cannot lose, for thine is a Mithrilman.\pGlory be upon thine.\pKnave, I leave yee be for now.\pNowst is notst the moment.\pNowst is...\pFare thee decently knave."))
+    msgbox(format("Thoust does cheat?\pThoust must.\pThine cannot lose, for thine is a Mithrilman.\pGlory be upon thine.\pKnave, I leave yee be for now.\pNowst is notst the moment.\pNowst is…\pFare thee decently knave."))
     waitmessage
 	closemessage
 	fadescreen (FADE_TO_BLACK)
@@ -434,7 +434,7 @@ script Mithrilman_EDGEVILLE1{
 	    faceplayer
         playbgm (MUS_ENCOUNTER_MAY, 1)
         msgbox(format("Thoust contemplatest going downst there?\pKnave yee humour thine so well.\pA Mithrilman as thine would never flaunt thine strength.\pBut yee go on, yee do thoust best.\pA Mithrilman doest notst belittle thine inferior.\pBut thine shall commence a parry.\pForst the last battle between thine and yee left thine in a bitter mood."))
-        trainerbattle_single(TRAINER_MITHRILMAN7,format("Thine shall have vengeance."),format("..."),Mithrilman_EDGEVILLE2)
+        trainerbattle_single(TRAINER_MITHRILMAN7,format("Thine shall have vengeance."),format("…"),Mithrilman_EDGEVILLE2)
         }
     else {
         lock
@@ -447,7 +447,7 @@ script Mithrilman_EDGEVILLE1{
 script Mithrilman_EDGEVILLE2{  
     lock
     faceplayer  
-    msgbox(format("...\p......\pThoust wouldnst mind leaving thine be for a bit?\pThine needs to think forst a bit."))
+    msgbox(format("…\p……\pThoust wouldnst mind leaving thine be for a bit?\pThine needs to think forst a bit."))
     waitmessage
 	closemessage
     setflag (FLAG_MITHRILMAN7)
@@ -468,12 +468,12 @@ script Mithrilman_WILDERNESS1{
 	faceplayer
     playbgm (MUS_ENCOUNTER_MAY, 1)
     msgbox(format("Greetings knave.\pDoust thoust know of Ironmen?\pIronmen favour themselves to be a solitary existence.\pThey embark on a quest uninvolved by others.\pSolitary beingst.\pWhere doest this leave thine the Mithrilman?\pMithrilmen are alone, scorned, hated and resentedst.\pIf Ironmen are alone, Mithrilmen are singular.\pAs thee solitary existence that is Mithril.\pThine must no longer holdst back.\pKnave, this endst now."))
-    trainerbattle_single(TRAINER_MITHRILMAN8,format("Thine have beatenst the 8 strongest of this realm and thine shall now smite yee as the non Mithrilman thoust are."),format("..."),Mithrilman_WILDERNESS2)
+    trainerbattle_single(TRAINER_MITHRILMAN8,format("Thine have beatenst the 8 strongest of this realm and thine shall now smite yee as the non Mithrilman thoust are."),format("…"),Mithrilman_WILDERNESS2)
 }
 script Mithrilman_WILDERNESS2{  
     lock
     faceplayer  
-    msgbox(format("Mithrilmen are solitary.\pThine is singular.\pAlone, scorned.\pYet yee fight me once and once again knave.\pKnave, state thoust name..\p...\p{PLAYER}\pThine shall remember."))
+    msgbox(format("Mithrilmen are solitary.\pThine is singular.\pAlone, scorned.\pYet yee fight me once and once again knave.\pKnave, state thoust name…\p…\p{PLAYER}\pThine shall remember."))
     waitmessage
 	closemessage
 	fadescreen (FADE_TO_BLACK)
@@ -495,21 +495,21 @@ script Mithrilman_WILDERNESSVOLCANO1{
 	lock
 	faceplayer
     playbgm (MUS_ENCOUNTER_MAY, 1)
-    msgbox(format("Knave...\p{PLAYER}\pThine can see thoust travel is embarking an end.\pThine has not been fair to yee.\pYee have fought me headst on for every proclamation thine has given, yet has never truly acceptedst the defeat.\pThine is sorry.\p{PLAYER}, thine wish to proclaim a rivalry, not for the glory of Mithrilmen, but as equals.\pWould yee accept?"), MSGBOX_YESNO)
+    msgbox(format("Knave…\p{PLAYER}\pThine can see thoust travel is embarking an end.\pThine has not been fair to yee.\pYee have fought me headst on for every proclamation thine has given, yet has never truly acceptedst the defeat.\pThine is sorry.\p{PLAYER}, thine wish to proclaim a rivalry, not for the glory of Mithrilmen, but as equals.\pWould yee accept?"), MSGBOX_YESNO)
 	while (var(VAR_RESULT) != 1) {
-        msgbox(format(".....\pDecisions thine has made leaves yee resentful.\pThine understand.\pBest of glory onwards."))
+        msgbox(format("…\pDecisions thine has made leaves yee resentful.\pThine understand.\pBest of glory onwards."))
         savebgm(MUS_DUMMY)
 	    fadedefaultbgm
         release
         end	
 	}
-		msgbox(format(".....\pThine is still nost the greatest of Mithrilmen.\pBut thoust are nost the greatest of champions yet either.\p{PLAYER}"))
-        trainerbattle_single(TRAINER_MITHRILMAN9,format("Let usts mark this day by blood and sword."),format("..."),Mithrilman_WILDERNESSVOLCANO2)
+		msgbox(format("…\pThine is still nost the greatest of Mithrilmen.\pBut thoust are nost the greatest of champions yet either.\p{PLAYER}"))
+        trainerbattle_single(TRAINER_MITHRILMAN9,format("Let usts mark this day by blood and sword."),format("…"),Mithrilman_WILDERNESSVOLCANO2)
 }
 script Mithrilman_WILDERNESSVOLCANO2{  
     lock
     faceplayer  
-    msgbox(format("Ahahaha\lHah...\pRefreshment, thine feels refreshment.\pThine could not win, but Mithrilmen never gives up, no matter the challengst.\p{PLAYER}, fare yee well and bests of luck in thousts ordeals.\pThine shall cheer for yee victory."))
+    msgbox(format("Ahahaha\lHah…\pRefreshment, thine feels refreshment.\pThine could not win, but Mithrilmen never gives up, no matter the challengst.\p{PLAYER}, fare yee well and bests of luck in thousts ordeals.\pThine shall cheer for yee victory."))
     waitmessage
 	closemessage
 	fadescreen (FADE_TO_BLACK)

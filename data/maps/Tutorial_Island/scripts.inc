@@ -119,14 +119,14 @@ Tutorial_PondGirl_Text_0:
 	.string "help me get it back?$"
 
 Tutorial_PondGirl_Text_1:
-	.string "You dig around in the pond for a moment.\p ...$"
+	.string "You dig around in the pond for a moment.\p…$"
 
 Tutorial_PondGirl_Text_2:
 	.string "You feel an item at the bottom of the\n"
 	.string "pond$"
 
 Tutorial_PondGirl_Text_3:
-	.string "Thats not my net.. mine was a lot bigger.\n"
+	.string "Thats not my net… mine was a lot bigger.\n"
 	.string "Oh well you can keep it.$"
 
 Tutorial_PondGirl_Text_4:

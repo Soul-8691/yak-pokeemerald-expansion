@@ -495,7 +495,7 @@ BATTLE_KaramjaVolcano_HAM_6_Text_0:
 	.string "monster killer!$"
 
 BATTLE_KaramjaVolcano_HAM_6_Text_1:
-	.string "Wait.. Won't it kill us too?$"
+	.string "Wait… Won't it kill us too?$"
 
 BATTLE_KaramjaVolcano_HAM_6_Text_2:
 	.string "Nope!\n"

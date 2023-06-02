@@ -74,7 +74,7 @@ script HAM_EVENT_Draynor{
     lockall
     applymovement(21, HAM_Movement6_1)
     namebox("Ariane")
-    msgbox(format("I'm not sure which way he went...\pMaybe the market.."))
+    msgbox(format("I'm not sure which way he went…\pMaybe the market…"))
 	waitmovement(0)
     hidenamebox
     closemessage
@@ -105,7 +105,7 @@ movement HAM_Movement6_2{
 script Draynor_Ariane{
 	lock
     namebox("Ariane")
-	msgbox(format("He doesn't seem to be here...\pI hope he didn't leave town.."))
+	msgbox(format("He doesn't seem to be here…\pI hope he didn't leave town…"))
     hidenamebox
     release
 	end
@@ -192,7 +192,7 @@ script Draynor_Guard1{
 
 script Draynor_Coolmom227{
     namebox("Cool Mom227")
-	msgbox(format("..."))
+	msgbox(format("…"))
     hidenamebox
     release
 	end
@@ -243,7 +243,7 @@ script Draynor_TREE{
     applymovement(OBJ_EVENT_ID_PLAYER, Movement_DraynorGuardTree_2)
     waitmovement(0)
     namebox("Guard")
-    msgbox(format("Ow!\pThat really hurt!\pHey what is the big idea!\pI was trying to catch a red coloured Ravenling, but you scared it away!\p...\pSigh...\pOh well, I guess I should better get back to work.."))
+    msgbox(format("Ow!\pThat really hurt!\pHey what is the big idea!\pI was trying to catch a red coloured Ravenling, but you scared it away!\p…\pSigh…\pOh well, I guess I should better get back to work…"))
     hidenamebox
     closemessage
     applymovement(OBJ_EVENT_ID_DRAYNORGUARD, Movement_DraynorGuardTree_3)

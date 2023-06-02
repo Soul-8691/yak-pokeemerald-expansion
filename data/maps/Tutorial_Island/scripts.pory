@@ -51,11 +51,11 @@ script Tutorial_PondGirl{
 	{
 		msgbox(format("I dropped my net in the pond! Can you help me get it back?"))
 		applymovement(OBJ_EVENT_ID_PLAYER, Tutorial_FacePond)
-		msgbox("You dig around in the pond for a moment.\p ...")
+		msgbox("You dig around in the pond for a moment.\p…")
 		delay (15)
 		msgbox(format("You feel an item at the bottom of the pond"))
 		giveitem (ITEM_SMALL_NET, 1)
-		msgbox(format("Thats not my net.. mine was a lot bigger.  Oh well you can keep it."))
+		msgbox(format("Thats not my net… mine was a lot bigger.  Oh well you can keep it."))
 		release
 	}
 	else

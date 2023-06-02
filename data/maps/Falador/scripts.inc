@@ -943,7 +943,7 @@ NPC_FALADOR_GUARD_1_Text_1:
 
 NPC_FALADOR_GUARD_2_Text_0:
 	.string "Stop right there you criminal scum.\p"
-	.string "...\p"
+	.string "…\p"
 	.string "I am very sorry about that.\p"
 	.string "I really needed to catch a criminal for\n"
 	.string "a promotion.\p"

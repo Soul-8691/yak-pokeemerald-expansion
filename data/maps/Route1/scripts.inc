@@ -887,7 +887,7 @@ Wartfoot_Route1_Battle_Text_0:
 	.string "Brown armour best!$"
 
 Wartfoot_Route1_Battle_Text_1:
-	.string "Um.. My brown armour in the wash.$"
+	.string "Um… My brown armour in the wash.$"
 
 Wartfoot_Route1_Battle_Text_2:
 	.string "WartFoot$"
@@ -911,7 +911,7 @@ Trainer1_Route1_Battle_Text_0:
 	.string "You look like a noob!$"
 
 Trainer1_Route1_Battle_Text_1:
-	.string "Maybe I'm the noob..$"
+	.string "Maybe I'm the noob…$"
 
 Trainer1_Route1_Battle_Text_2:
 	.string "Bob$"
@@ -986,10 +986,10 @@ ErnestAndVeronica_Text_6:
 	.string "Well go get him to change you back!\p"
 	.string "I don't want to be engaged to a\n"
 	.string "chicken!\p"
-	.string "That's just fowl...$"
+	.string "That's just fowl…$"
 
 ErnestAndVeronica_Text_7:
-	.string "Bwak...$"
+	.string "Bwak…$"
 
 ErnestAndVeronica_Text_8:
 	.string "Professor Oddenstein made me human\n"
@@ -1023,7 +1023,7 @@ HAM_EVENT_Route1_MAIN_1_Text_1:
 	.string "I need to get to Port Sarim!$"
 
 HAM_EVENT_Route1_MAIN_1_Text_2:
-	.string "I'm so glad im not a chicken anymore..\p"
+	.string "I'm so glad im not a chicken anymore…\p"
 	.string "That was cluckin' scary!$"
 
 HAM_EVENT_Route1_MAIN_1_Text_3:
@@ -1052,7 +1052,7 @@ ArianeChaseHamEvent7_Text_0:
 	.string "path!$"
 
 ArianeChaseHamEvent7_Text_1:
-	.string "I'm so glad im not a chicken anymore..\n"
+	.string "I'm so glad im not a chicken anymore…\n"
 	.string "that was cluckin scary.$"
 
 ArianeChaseHamEvent7_Text_2:

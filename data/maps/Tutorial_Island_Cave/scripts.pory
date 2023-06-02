@@ -45,7 +45,7 @@ script KevinItemsTest{
 	giveitem (ITEM_NORMAL_POUCH, 10)
 	giveitem (ITEM_RARE_CANDY, 10)
 	giveitem (ITEM_ELEMENTAL_POUCH, 1)
-	msgbox(format("Here take these!\pWhy do I have this rotten potato?\n No reason.."))
+	msgbox(format("Here take these!\pWhy do I have this rotten potato?\n No reason…"))
 	release
 }
 

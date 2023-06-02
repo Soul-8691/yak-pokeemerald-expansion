@@ -412,7 +412,7 @@ BATTLE_ROUTE2_Trainer_5_Text_0:
 
 BATTLE_ROUTE2_Trainer_5_Text_1:
 	.string "Impossible!\p"
-	.string "I was sure you were weak...\p"
+	.string "I was sure you were weak…\p"
 	.string "Wait, does this mean I'm weaker than\n"
 	.string "you?!$"
 
@@ -420,9 +420,9 @@ BATTLE_ROUTE2_Trainer_5_Text_2:
 	.string "Dark Wizard$"
 
 BATTLE_ROUTE2_Trainer_5_Text_3:
-	.string "Ugh.... how!?\p"
-	.string "Was my foresight wrong...?\p"
-	.string "No, it can't be...$"
+	.string "Ugh… how!?\p"
+	.string "Was my foresight wrong…?\p"
+	.string "No, it can't be…$"
 
 BATTLE_ROUTE2_Trainer_6_Text_0:
 	.string "Let's just get this over with…$"

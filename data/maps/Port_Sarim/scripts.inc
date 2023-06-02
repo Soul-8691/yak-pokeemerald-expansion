@@ -589,7 +589,7 @@ PORTSARIM_HAM_EVENT_PART2_Text_2:
 
 PORTSARIM_HAM_EVENT_PART2_Text_3:
 	.string "Sorry Leader!\p"
-	.string "I lost the goods...\p"
+	.string "I lost the goods…\p"
 	.string "Some pesky adventurers-$"
 
 PORTSARIM_HAM_EVENT_PART2_Text_4:
@@ -599,7 +599,7 @@ PORTSARIM_HAM_EVENT_PART2_Text_4:
 	.string "will have to talk about this later!$"
 
 PORTSARIM_HAM_EVENT_PART2_Text_5:
-	.string "...$"
+	.string "…$"
 
 PORTSARIM_HAM_EVENT_PART2_Text_6:
 	.string "Alright grunts!\p"
@@ -707,7 +707,7 @@ NPC_PORTSARIM_MONK_1_Text_0:
 	.string "Monk$"
 
 NPC_PORTSARIM_MONK_1_Text_1:
-	.string "I cannot believe they nicked out ship...$"
+	.string "I cannot believe they nicked out ship…$"
 
 NPC_PORTSARIM_MONK_2_Text_0:
 	.string "Sorry, but you cannot enter Entrana\n"
@@ -733,7 +733,7 @@ NPC_PORTSARIM_NPC_5_Text_0:
 
 NPC_PORTSARIM_SIGNPOST_Text_0:
 	.string "Welcome to Port Sarim.\p"
-	.string "...\p"
+	.string "…\p"
 	.string "There is something scribbled on the\n"
 	.string "sign.\p"
 	.string "Sea Shanty 2, Sea Shanty 2, Sea Shanty\n"
@@ -757,8 +757,8 @@ NPC_PORTSARIM_NPC_6_Text_1:
 
 NPC_PORTSARIM_NPC_6_Text_2:
 	.string "WOT!?\p"
-	.string "...\p"
-	.string "...\p"
+	.string "…\p"
+	.string "…\p"
 	.string "REEEEEEEE!$"
 
 NPC_PORTSARIM_VOID_SQUIRE_Text_0:

@@ -234,7 +234,7 @@ script BATTLE_KaramjaVolcano_HAM_5
 
 script BATTLE_KaramjaVolcano_HAM_6
 {
-    trainerbattle_single(TRAINER_KARAMJAVOLCANO_HAM_GRUNT_6, format("Nothing will stop us!\pThis volcano is about to become a monster killer!"),format("Wait.. Won't it kill us too?"))
+    trainerbattle_single(TRAINER_KARAMJAVOLCANO_HAM_GRUNT_6, format("Nothing will stop us!\pThis volcano is about to become a monster killer!"),format("Wait… Won't it kill us too?"))
     namebox ("H.A.M Grunt")
     msgbox(format("Nope!\nI don't like this plan anymore!\pI'm out of here!"))
     hidenamebox

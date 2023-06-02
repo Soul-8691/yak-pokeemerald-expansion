@@ -78,9 +78,9 @@ script NPC_KaramjaVolcano_HAM_EVENT1
     waitmovement(0)
     namebox ("H.A.M Leader")
     msgbox(format("So you are the one who interrupted our mission to retrieve the abyssal research notes.\pNo matter, our plans were only set back slightly!\pWe still were able to obtain the information we needed.\pAnyway since you made it this far, you won't be getting out of here in one piece so I may as well tell you.\pYou may be wondering why we are all the way in the middle of this volcano?\pSimple, we plan to trigger an eruption wiping out all of these disgusting monsters and now you alongside with it."))
-    msgbox(format("Ha, you think you can stop us..\pThis will be entertaining."))
+    msgbox(format("Ha, you think you can stop us…\pThis will be entertaining."))
     hidenamebox
-    trainerbattle_no_intro(TRAINER_KARAMJAVOLCANO_HAM_ADMIN_PATTY, msgbox(format("What?\nHow can this happen...")))
+    trainerbattle_no_intro(TRAINER_KARAMJAVOLCANO_HAM_ADMIN_PATTY, msgbox(format("What?\nHow can this happen…")))
     namebox ("H.A.M Leader")
     msgbox(format("I don't know how you are so strong but it does not matter, you are too late!\pWatch as we get rid of every monster on this forsaken island!"))
     hidenamebox
@@ -118,7 +118,7 @@ script NPC_KaramjaVolcano_HAM_EVENT1
     delay(60)
     applymovement(3, HAM_EVENT_KaramjaVolcano_5)
     namebox ("H.A.M Grunt")
-    msgbox(format("LEADER!\pSomething is wrong!\pThe rift.. It is out of control!"))
+    msgbox(format("LEADER!\pSomething is wrong!\pThe rift… It is out of control!"))
     waitmovement(0)
     applymovement(2, HAM_EVENT_KaramjaVolcano_5)
     namebox ("H.A.M Leader")
@@ -164,7 +164,7 @@ script NPC_KaramjaVolcano_HAM_EVENT1
     applymovement(2, HAM_EVENT_KaramjaVolcano_11)
     waitmovement(0)
     namebox ("H.A.M ADMIN")
-    msgbox(format("NOO!!!\pThe calculations were meant to be correct!\pIt seems more research is still needed..."))
+    msgbox(format("NOO!!!\pThe calculations were meant to be correct!\pIt seems more research is still needed…"))
     hidenamebox
     closemessage
     delay(60)
@@ -213,7 +213,7 @@ script NPC_KaramjaVolcano_HAM_EVENT1
     delay(60)
     waitmovement(0)
     namebox ("H.A.M Leader")
-    msgbox(format("What was that?!\pThat wasn't the rift.."))
+    msgbox(format("What was that?!\pThat wasn't the rift…"))
     hidenamebox
     closemessage
     clearflag(FLAG_TEMP_4)

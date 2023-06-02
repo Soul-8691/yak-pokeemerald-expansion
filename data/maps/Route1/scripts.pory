@@ -361,7 +361,7 @@ script ROUTE1_FarmerFred
 
 script Wartfoot_Route1_Battle
 {
-    trainerbattle_single(TRAINER_GOBLIN_1_ROUTE1, "Brown armour best!","Um.. My brown armour in the wash.")
+    trainerbattle_single(TRAINER_GOBLIN_1_ROUTE1, "Brown armour best!","Um… My brown armour in the wash.")
     namebox ("WartFoot")
     msgbox("Me like brown armour, but now it dirty.")
     hidenamebox
@@ -381,7 +381,7 @@ script Frogface_Route1_Battle
 
 script Trainer1_Route1_Battle
 {
-    trainerbattle_single(TRAINER_RSN_ROUTE1, "You look like a noob!","Maybe I'm the noob..")
+    trainerbattle_single(TRAINER_RSN_ROUTE1, "You look like a noob!","Maybe I'm the noob…")
     namebox ("Bob")
     msgbox(format("The mill is up ahead.\pI heard you can get some good flour there."))
     closemessage
@@ -531,14 +531,14 @@ script ErnestAndVeronica {
                     
                     applymovement(6, HAM_Movement7_6)
                     namebox("Veronica")
-                    msgbox(format("Well go get him to change you back!\pI don't want to be engaged to a chicken!\pThat's just fowl..."))
+                    msgbox(format("Well go get him to change you back!\pI don't want to be engaged to a chicken!\pThat's just fowl…"))
                     hidenamebox
                     closemessage
                     waitmovement(0)
                     
                     playmoncry(SPECIES_COMBUSKEN, 0)
                     namebox("Ernest")
-                    msgbox(format("Bwak..."))
+                    msgbox(format("Bwak…"))
                     waitmoncry
                     hidenamebox
                     closemessage
@@ -615,7 +615,7 @@ script HAM_EVENT_Route1_MAIN_1{
     waitmovement(0)
     applymovement(5, HAM_Movement7_7)
     namebox("Ernest")
-    msgbox(format("I'm so glad im not a chicken anymore..\pThat was cluckin' scary!"))
+    msgbox(format("I'm so glad im not a chicken anymore…\pThat was cluckin' scary!"))
     hidenamebox
     waitmovement(0)
     applymovement(6, HAM_Movement7_6)
@@ -747,7 +747,7 @@ script ArianeChaseHamEvent7{
     msgbox(format("Get out of my way! you're blocking the path!"))
     hidenamebox
     namebox("Ernest")
-    msgbox(format("I'm so glad im not a chicken anymore.. that was cluckin scary."))
+    msgbox(format("I'm so glad im not a chicken anymore… that was cluckin scary."))
     hidenamebox
     namebox("Veronica")
     msgbox(format("Lets just avoid that creepy manor from now on."))

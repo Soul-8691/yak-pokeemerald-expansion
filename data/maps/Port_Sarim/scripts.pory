@@ -92,7 +92,7 @@ script PORTSARIM_HAM_EVENT_PART2 {
     hidenamebox
     applymovement(21, PORTSARIM_HAM_MEMBER_2)
     namebox ("H.A.M Member")
-    msgbox(format("Sorry Leader!\pI lost the goods...\p Some pesky adventurers-"))
+    msgbox(format("Sorry Leader!\pI lost the goods…\p Some pesky adventurers-"))
     waitmovement(0)
     waitmessage 
     hidenamebox
@@ -103,7 +103,7 @@ script PORTSARIM_HAM_EVENT_PART2 {
     waitmessage 
     hidenamebox
     namebox ("H.A.M Member")
-    msgbox(format("..."))
+    msgbox(format("…"))
     waitmessage 
     hidenamebox
     namebox ("H.A.M Leader")
@@ -373,7 +373,7 @@ script NPC_PORTSARIM_MONK_1
 	lock
 	faceplayer
     namebox ("Monk")
-	msgbox(format("I cannot believe they nicked out ship..."))
+	msgbox(format("I cannot believe they nicked out ship…"))
     waitmessage
     hidenamebox
 	release
@@ -445,7 +445,7 @@ script NPC_PORTSARIM_SIGNPOST
 	lock
 	faceplayer
     //namebox ("NAME")
-	msgbox(format("Welcome to Port Sarim.\p...\pThere is something scribbled on the sign.\pSea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2.\pSea Shanty 2."))
+	msgbox(format("Welcome to Port Sarim.\p…\pThere is something scribbled on the sign.\pSea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2, Sea Shanty 2.\pSea Shanty 2."))
     waitmessage
     //hidenamebox
 	release
@@ -476,7 +476,7 @@ script NPC_PORTSARIM_NPC_6
         }
         else 
         {
-            msgbox(format("WOT!?\p...\p...\pREEEEEEEE!"))
+            msgbox(format("WOT!?\p…\p…\pREEEEEEEE!"))
         }
     waitmessage
     //hidenamebox

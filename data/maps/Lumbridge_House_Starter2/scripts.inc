@@ -533,7 +533,7 @@ Mithrilman_LUMBRIDGE1_Text_4:
 	.string "a true master battles.$"
 
 Mithrilman_LUMBRIDGE1_Text_5:
-	.string "...$"
+	.string "…$"
 
 Mithrilman_LUMBRIDGE2_Text_0:
 	.string "Ahaa, it would seemst that thine\n"
@@ -697,7 +697,7 @@ Mithrilman_DRAYNOR2_Text_0:
 	.string "Glory be upon thine.\p"
 	.string "Knave, I leave yee be for now.\p"
 	.string "Nowst is notst the moment.\p"
-	.string "Nowst is...\p"
+	.string "Nowst is…\p"
 	.string "Fare thee decently knave.$"
 
 Mithrilman_EDGEVILLE1_Text_0:
@@ -720,8 +720,8 @@ Mithrilman_EDGEVILLE1_Text_2:
 	.string "Thine wishes to be alones.$"
 
 Mithrilman_EDGEVILLE2_Text_0:
-	.string "...\p"
-	.string "......\p"
+	.string "…\p"
+	.string "……\p"
 	.string "Thoust wouldnst mind leaving thine be\n"
 	.string "for a bit?\p"
 	.string "Thine needs to think forst a bit.$"
@@ -756,13 +756,13 @@ Mithrilman_WILDERNESS2_Text_0:
 	.string "Alone, scorned.\p"
 	.string "Yet yee fight me once and once again\n"
 	.string "knave.\p"
-	.string "Knave, state thoust name..\p"
-	.string "...\p"
+	.string "Knave, state thoust name…\p"
+	.string "…\p"
 	.string "{PLAYER}\p"
 	.string "Thine shall remember.$"
 
 Mithrilman_WILDERNESSVOLCANO1_Text_0:
-	.string "Knave...\p"
+	.string "Knave…\p"
 	.string "{PLAYER}\p"
 	.string "Thine can see thoust travel is\n"
 	.string "embarking an end.\p"
@@ -777,14 +777,14 @@ Mithrilman_WILDERNESSVOLCANO1_Text_0:
 	.string "Would yee accept?$"
 
 Mithrilman_WILDERNESSVOLCANO1_Text_1:
-	.string ".....\p"
+	.string "…\p"
 	.string "Decisions thine has made leaves yee\n"
 	.string "resentful.\p"
 	.string "Thine understand.\p"
 	.string "Best of glory onwards.$"
 
 Mithrilman_WILDERNESSVOLCANO1_Text_2:
-	.string ".....\p"
+	.string "…\p"
 	.string "Thine is still nost the greatest of\n"
 	.string "Mithrilmen.\p"
 	.string "But thoust are nost the greatest of\n"
@@ -797,7 +797,7 @@ Mithrilman_WILDERNESSVOLCANO1_Text_3:
 
 Mithrilman_WILDERNESSVOLCANO2_Text_0:
 	.string "Ahahaha\l"
-	.string "Hah...\p"
+	.string "Hah…\p"
 	.string "Refreshment, thine feels refreshment.\p"
 	.string "Thine could not win, but Mithrilmen\n"
 	.string "never gives up, no matter the\l"

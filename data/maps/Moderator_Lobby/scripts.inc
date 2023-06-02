@@ -118,7 +118,7 @@ ModeratorLobby_JMOD_4_Text_1:
 	.string "My camels shall help me win this!\p"
 	.string "We have a secret weapon!\p"
 	.string "Ugthanki dung!\p"
-	.string "Wait... now it isn't a secret..$"
+	.string "Wait…. now it isn't a secret…$"
 
 ModeratorLobby_JMOD_5_Text_0:
 	.string "Mod Daze$"
@@ -129,7 +129,7 @@ ModeratorLobby_JMOD_5_Text_1:
 	.string "become the champion!$"
 
 ModeratorLobby_JMOD_5_Text_2:
-	.string "Wait... Why didn't that work?\p"
+	.string "Wait… Why didn't that work?\p"
 	.string "Where is the potato!$"
 
 ModeratorLobby_JMOD_6_Text_0:

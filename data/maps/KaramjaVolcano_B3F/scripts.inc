@@ -657,12 +657,12 @@ NPC_KaramjaVolcano_HAM_EVENT1_Text_3:
 	.string "monsters and now you alongside with it.$"
 
 NPC_KaramjaVolcano_HAM_EVENT1_Text_4:
-	.string "Ha, you think you can stop us..\p"
+	.string "Ha, you think you can stop us…\p"
 	.string "This will be entertaining.$"
 
 NPC_KaramjaVolcano_HAM_EVENT1_Text_5:
 	.string "What?\n"
-	.string "How can this happen...$"
+	.string "How can this happen…$"
 
 NPC_KaramjaVolcano_HAM_EVENT1_Text_6:
 	.string "I don't know how you are so strong but\n"
@@ -673,7 +673,7 @@ NPC_KaramjaVolcano_HAM_EVENT1_Text_6:
 NPC_KaramjaVolcano_HAM_EVENT1_Text_7:
 	.string "LEADER!\p"
 	.string "Something is wrong!\p"
-	.string "The rift.. It is out of control!$"
+	.string "The rift… It is out of control!$"
 
 NPC_KaramjaVolcano_HAM_EVENT1_Text_8:
 	.string "Fix it then!$"
@@ -691,11 +691,11 @@ NPC_KaramjaVolcano_HAM_EVENT1_Text_12:
 	.string "NOO!!!\p"
 	.string "The calculations were meant to be\n"
 	.string "correct!\p"
-	.string "It seems more research is still needed...$"
+	.string "It seems more research is still needed…$"
 
 NPC_KaramjaVolcano_HAM_EVENT1_Text_13:
 	.string "What was that?!\p"
-	.string "That wasn't the rift..$"
+	.string "That wasn't the rift…$"
 
 NPC_KaramjaVolcano_HAM_EVENT1_Text_14:
 	.string "Leader we have to go!\p"

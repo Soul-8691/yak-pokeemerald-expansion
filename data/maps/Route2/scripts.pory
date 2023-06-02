@@ -287,9 +287,9 @@ script BATTLE_ROUTE2_Trainer_4
 
 script BATTLE_ROUTE2_Trainer_5
 {
-    trainerbattle_single(TRAINER_ROUTE2_TRAINER_5, format("You don't look very strong, this battle will be over in an instant!"),format("Impossible!\pI was sure you were weak...\pWait, does this mean I'm weaker than you?!"))
+    trainerbattle_single(TRAINER_ROUTE2_TRAINER_5, format("You don't look very strong, this battle will be over in an instant!"),format("Impossible!\pI was sure you were weak…\pWait, does this mean I'm weaker than you?!"))
     namebox ("Dark Wizard")
-    msgbox(format("Ugh.... how!?\pWas my foresight wrong...?\pNo, it can't be..."))
+    msgbox(format("Ugh… how!?\pWas my foresight wrong…?\pNo, it can't be…"))
     hidenamebox
     release
     end

@@ -762,7 +762,7 @@ HAM_EVENT_WizardsTower_1_Text_3:
 HAM_EVENT_WizardsTower_1_Text_4:
 	.string "She what!?\p"
 	.string "Oh the silly girl, I hope she doesn't\n"
-	.string "cause any trouble..$"
+	.string "cause any trouble…$"
 
 HAM_EVENT_WizardsTower_1_Text_5:
 	.string "Who are you?$"
@@ -945,7 +945,7 @@ NPC_WIZARDSTOWER_PulseCore_Text_3:
 
 NPC_WIZARDSTOWER_PulseCore_Text_4:
 	.string "{PAUSE 15}…{PAUSE 15}…{PAUSE 15}…\p"
-	.string "Ah... this is a Pulse Core.$"
+	.string "Ah… this is a Pulse Core.$"
 
 NPC_WIZARDSTOWER_PulseCore_Text_5:
 	.string "Here you can have it.$"

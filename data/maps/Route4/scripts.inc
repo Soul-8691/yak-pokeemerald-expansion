@@ -207,10 +207,10 @@ MuggerBattleRoute4_Text_1:
 	.string "Maybe it's the way I say hello?$"
 
 ScammerBattleRoute4_Text_0:
-	.string "Psst.. Want to buy some cabbage?$"
+	.string "Psst… Want to buy some cabbage?$"
 
 ScammerBattleRoute4_Text_1:
-	.string "A no would have been fine..$"
+	.string "A no would have been fine…$"
 
 ScammerBattleRoute4_Text_2:
 	.string "Selling rare black lobster!$"

@@ -84,7 +84,7 @@ script GNOME_MILL_LANE_MILL{
 
 script Trainer1_MillLaneMill_Battle
 {
-    trainerbattle_double(TRAINER_TRAINER1_MILLLANEMILL, format("Have you seen any Kebbits around here?"),format("I need to get a higher hunting level.."),format("I would love to have a double battle with you."))
+    trainerbattle_double(TRAINER_TRAINER1_MILLLANEMILL, format("Have you seen any Kebbits around here?"),format("I need to get a higher hunting level…"),format("I would love to have a double battle with you."))
     namebox ("Kebbie")
     msgbox(format("I have been trying to track down Kebbits for my collection."))
     hidenamebox
@@ -105,7 +105,7 @@ script MillLaneMill_Item_PURPLE_SWEETS
 
 
 script MillLaneMill_Item_WHEAT1{
-    msgbox(format("You search the sack...\p..."))
+    msgbox(format("You search the sack…\p…"))
 	if(!flag(FLAG_ITEM_REPEATABLE_ITEM_1)){
 		lock
 		giveitem(ITEM_WHEAT)
@@ -122,7 +122,7 @@ script MillLaneMill_Item_WHEAT1{
 
 
 script MillLaneMill_Item_WHEAT2{
-    msgbox(format("You search the sack...\p..."))
+    msgbox(format("You search the sack…\p…"))
 	if(!flag(FLAG_ITEM_REPEATABLE_ITEM_2)){
 		lock
 		giveitem(ITEM_WHEAT)
@@ -139,7 +139,7 @@ script MillLaneMill_Item_WHEAT2{
 
 
 script MillLaneMill_Item_WHEAT3{
-    msgbox(format("You search the sack...\p..."))
+    msgbox(format("You search the sack…\p…"))
 	if(!flag(FLAG_ITEM_REPEATABLE_ITEM_3)){
 		lock
 		giveitem(ITEM_WHEAT)
@@ -156,7 +156,7 @@ script MillLaneMill_Item_WHEAT3{
 
 
 script MillLaneMill_Item_WHEAT4{
-    msgbox(format("You search the sack...\p..."))
+    msgbox(format("You search the sack…\p…"))
 	if(!flag(FLAG_ITEM_REPEATABLE_ITEM_4)){
 		lock
 		giveitem(ITEM_WHEAT)
@@ -173,7 +173,7 @@ script MillLaneMill_Item_WHEAT4{
 
 
 script MillLaneMill_Item_WHEAT5{
-    msgbox(format("You search the sack...\p..."))
+    msgbox(format("You search the sack…\p…"))
 	if(!flag(FLAG_ITEM_REPEATABLE_ITEM_5)){
 		lock
 		giveitem(ITEM_WHEAT)

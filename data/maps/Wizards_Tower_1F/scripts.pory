@@ -215,7 +215,7 @@ script HAM_EVENT_WizardsTower_1 {
 		msgbox(format("Sedridor, sir.\pA cloaked man just ran off with a bunch of our research papers!\pAriane just gave chase to him!"))
 		hidenamebox
 		namebox ("Sedridor")
-		msgbox(format("She what!?\pOh the silly girl, I hope she doesn't cause any trouble.."))
+		msgbox(format("She what!?\pOh the silly girl, I hope she doesn't cause any trouble…"))
 		hidenamebox
 		closemessage
 
@@ -630,7 +630,7 @@ script NPC_WIZARDSTOWER_PulseCore
 		msgbox(format("Oh?{PAUSE 15}\nWhat is that shiny rock?\pWait a minute, that is not suppose to be in there let me see."))
 		applymovement(2 rinsit_2)
 		waitmovement(0)
-		msgbox(format("{PAUSE 15}…{PAUSE 15}…{PAUSE 15}…\pAh... this is a Pulse Core."))
+		msgbox(format("{PAUSE 15}…{PAUSE 15}…{PAUSE 15}…\pAh… this is a Pulse Core."))
 		applymovement(2 rinsit_3)
 		waitmovement(0)
 		msgbox(format("Here you can have it."))

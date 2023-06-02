@@ -176,7 +176,7 @@ BATTLE_ROUTE6_MUGGER_Text_0:
 	.string "Your money or your life!$"
 
 BATTLE_ROUTE6_MUGGER_Text_1:
-	.string "Okay I guess you can keep both..$"
+	.string "Okay I guess you can keep both…$"
 
 BATTLE_ROUTE6_MUGGER_Text_2:
 	.string "Shoo you're making it hard for me to mug\n"

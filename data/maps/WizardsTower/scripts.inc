@@ -277,7 +277,7 @@ HAM_EVENT_WizardsTower_2_Text_0:
 	.string "Ariane$"
 
 HAM_EVENT_WizardsTower_2_Text_1:
-	.string "Which way did he go...$"
+	.string "Which way did he go…$"
 
 HAM_EVENT_WizardsTower_3_Text_0:
 	.string "Stop right there thief!$"
@@ -292,8 +292,8 @@ HAM_EVENT_WizardsTower_3_Text_3:
 	.string "Get back here!$"
 
 NPC_WIZARDSTOWER_SleepingWizard_Text_0:
-	.string "...\l"
-	.string "......\p"
+	.string "…\l"
+	.string "………\p"
 	.string "They seem to be asleep.$"
 
 NPC_WIZARDSTOWER_NoobshowNPCs_Text_0:
@@ -354,7 +354,7 @@ BATTLE_WizardsTower_Myrtle_Text_0:
 	.string "I love water types!$"
 
 BATTLE_WizardsTower_Myrtle_Text_1:
-	.string "But I hate getting wet...$"
+	.string "But I hate getting wet…$"
 
 BATTLE_WizardsTower_Myrtle_Text_2:
 	.string "Myrtle$"

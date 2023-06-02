@@ -15,7 +15,7 @@ script MuggerBattleRoute4{
 }
 
 script ScammerBattleRoute4{
-    trainerbattle_single(TRAINER_SCAMMER_ROUTE4, format("Psst.. Want to buy some cabbage?"),format("A no would have been fine.."))
+    trainerbattle_single(TRAINER_SCAMMER_ROUTE4, format("Psst… Want to buy some cabbage?"),format("A no would have been fine…"))
     msgbox(format("Selling rare black lobster!"))
     release
 }

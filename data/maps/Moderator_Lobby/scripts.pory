@@ -59,7 +59,7 @@ script ModeratorLobby_JMOD_4
 	lock
 	faceplayer
     namebox("Mod Camel")
-	msgbox(format("My camels shall help me win this!\pWe have a secret weapon!\pUgthanki dung!\pWait... now it isn't a secret.."))
+	msgbox(format("My camels shall help me win this!\pWe have a secret weapon!\pUgthanki dung!\pWait…. now it isn't a secret…"))
     hidenamebox
 	release
 	end
@@ -74,7 +74,7 @@ script ModeratorLobby_JMOD_5
     hidenamebox
     giveitem(ITEM_ROTTEN_POTATO, 1)
     namebox("Mod Daze")
-    msgbox(format("Wait... Why didn't that work?\pWhere is the potato!"))
+    msgbox(format("Wait… Why didn't that work?\pWhere is the potato!"))
     hidenamebox
 	release
 	end

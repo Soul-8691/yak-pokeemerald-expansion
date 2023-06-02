@@ -406,7 +406,7 @@ NPC_DAIRYCOW_Text_3:
 NPC_DAIRYCOW_Text_4:
 	.string "You squeeze the milk into your\n"
 	.string "imaginary bucket.\p"
-	.string "...\p"
+	.string "…\p"
 	.string "Nothing interesting happened.$"
 
 NPC_LUMBRIDGE_CHICKEN_Text_0:
@@ -498,8 +498,8 @@ BATTLE_ROUTE12_SMELLYBACK_Text_0:
 
 BATTLE_ROUTE12_SMELLYBACK_Text_1:
 	.string "Big high war god calls for rematch.\p"
-	.string "Later...\n"
-	.string "Much later...$"
+	.string "Later…\n"
+	.string "Much later…$"
 
 BATTLE_ROUTE12_SMELLYBACK_Text_2:
 	.string "Smellyback$"

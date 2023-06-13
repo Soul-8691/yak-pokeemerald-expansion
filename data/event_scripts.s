@@ -1603,3 +1603,7 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Alkharid_Gym_1F_R1/scripts.inc"
 
 	.include "data/maps/Brimhaven/scripts.inc"
+
+	.include "data/maps/Alkharid_Gym_1F_R2/scripts.inc"
+
+	.include "data/maps/Alkharid_Gym_1F_R3/scripts.inc"

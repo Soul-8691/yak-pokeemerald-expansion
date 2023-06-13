@@ -1,8 +1,8 @@
 {
-  "id": "MAP_ALKHARID_GYM_1F_R1",
-  "name": "Alkharid_Gym_1F_R1",
-  "layout": "LAYOUT_ALKHARID_GYM_1F_R1",
-  "music": "MUS_GYM",
+  "id": "MAP_ALKHARID_GYM_1F_R3",
+  "name": "Alkharid_Gym_1F_R3",
+  "layout": "LAYOUT_ALKHARID_GYM_1F_R3",
+  "music": "MUS_PS_GYM",
   "region_map_section": "MAPSEC_ALKHARID",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_ALKHAIRD",
-      "x": 6,
+      "x": 4,
       "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -29,38 +29,38 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_ALKHAIRD",
-      "x": 2,
-      "y": 2,
+      "x": 1,
+      "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "GYM_NPC_3",
+      "script": "GYM_NPC_1",
       "flag": "FLAG_TEMP_5"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_ALKHAIRD",
       "x": 10,
-      "y": 2,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "GYM_NPC_4",
+      "script": "GYM_NPC_2",
       "flag": "FLAG_TEMP_5"
     }
   ],
   "warp_events": [
     {
-      "x": 6,
+      "x": 4,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID",
-      "dest_warp_id": 5
+      "dest_warp_id": 3
     }
   ],
   "coord_events": [

@@ -3258,6 +3258,59 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = sParty_ROUTE15_TRAINER_6},
     },
 
+//Alkharid Gym
+    [TRAINER_ALKHARID_GYM_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_guard_alkhaird_duo,
+        .trainerName = _("Brothers"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE29_TRAINER_5),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE29_TRAINER_5},
+    },
+    [TRAINER_ALKHARID_GYM_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_guard_alkhaird_duo,
+        .trainerName = _("Brothers"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE29_TRAINER_5),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE29_TRAINER_5},
+    },
+    [TRAINER_ALKHARID_GYM_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_guard_alkhaird_duo,
+        .trainerName = _("Brothers"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE29_TRAINER_5),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE29_TRAINER_5},
+    },
+    [TRAINER_ALKHARID_GYM_TRAINER_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_GUARD,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_guard_alkhaird_duo,
+        .trainerName = _("Brothers"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE29_TRAINER_5),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE29_TRAINER_5},
+    },
 
 
 

@@ -1,0 +1,190 @@
+
+
+mapscripts Alkharid_Gym_1F_R3_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setvar(VAR_EVOLUTION_MAP_STATE, 11) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
+        call(ALKHARID_GYM_ROOMS_STATE)
+    }
+}
+
+
+
+
+
+
+
+
+
+script ALKHARID_GYM_ROOMS_STATE{
+	switch (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)){ 
+		case 0: 
+            removeobject(1) // extra guard
+            setflag(FLAG_TEMP_6)
+        case 5: 
+            removeobject(1) // extra guard
+            setflag(FLAG_TEMP_6)   
+        case 10:
+            removeobject(1) // extra guard
+            setflag(FLAG_TEMP_6)
+        case 15:
+            removeobject(1) // extra guard
+            setflag(FLAG_TEMP_6)
+        case 20:
+            removeobject(1) // extra guard
+            setflag(FLAG_TEMP_6)
+    }
+    return
+}
+
+
+
+
+
+
+
+//NPCS
+
+
+script GYM_NPC_1
+{
+    lock
+    faceplayer
+    checktrainerflag(TRAINER_ALKHARID_GYM_TRAINER_1) 
+    if (var(VAR_RESULT))
+		{	
+            if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==15) { //If Gym Challenge.
+                call(CHECK_IF_ALI)
+                if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==20) {
+                    msgbox(format("Guards help me as I make my escape!"))
+                    hidenamebox
+                    closemessage
+                    applymovement(VAR_LAST_TALKED, Movement_AlkharidGym_TELEPORT)
+                    delay(30)
+                    removeobject(VAR_LAST_TALKED)
+                    addobject(1) // extra guard
+                    clearflag(FLAG_TEMP_6)
+                    applymovement(3, Movement_AlkharidGym_NPC_1)
+                    applymovement(1, Movement_AlkharidGym_NPC_1_Ali)
+                    delay(60)
+                    namebox("Warrior")
+                    msgbox(format("Brother, I will help thee with this infidel!"))
+                    hidenamebox
+                    closemessage
+                    trainerbattle_no_intro(TRAINER_ALKHARID_GYM_TRAINER_1, format("Consider that a warning!") )
+                    release
+                    end
+                }
+                applymovement(3, Movement_AlkharidGym_NPC_1)
+                waitmovement(0)
+                //msgbox(format("Brother, I will help thee with this infidel!"))
+                trainerbattle_single(TRAINER_ALKHARID_GYM_TRAINER_1, format("Brother, I will help thee with this infidel!"),format("Consider that a warning!") )
+                //apply movement, hide npcs or make non talkable.
+                //removeobject(1)
+                //removeobject(2)
+                //setflag(FLAG_TEMP_5)
+                release
+                end
+            }
+        }
+    if (flag(FLAG_BADGE04_GET)) { //If Gym badge is obtained.
+        msgbox(format("Hello congrats on beating the gym."))
+    }
+    if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==0) { // If Gym challenge hasnt been started.
+        msgbox(format("Hello."))
+    }
+    else {
+        msgbox(format("We use our lives to protect our prince."))
+    }
+    release
+    end
+}
+
+movement Movement_AlkharidGym_NPC_1
+{
+    walk_fastest_up
+    walk_fastest_left * 8
+} 
+movement Movement_AlkharidGym_NPC_1_Ali
+{
+    walk_fastest_up * 1
+    walk_fastest_left * 3
+    face_player
+} 
+movement Movement_AlkharidGym_NPC_2
+{
+    walk_fastest_down
+    walk_fastest_right * 8
+} 
+movement Movement_AlkharidGym_NPC_2_Ali
+{
+    walk_fast_up * 1
+    walk_fast_right * 3
+    walk_fast_up * 1
+    walk_fast_right * 1
+    face_player
+} 
+movement Movement_AlkharidGym_TELEPORT
+{
+    fly_up
+    //fly_down
+    //figure_8
+    //levitate
+    //ride_water_current_up
+} 
+
+
+
+
+script GYM_NPC_2
+{
+    lock
+    faceplayer
+    checktrainerflag(TRAINER_ALKHARID_GYM_TRAINER_1) 
+    if (var(VAR_RESULT))
+		{	
+            if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==15) { //If Gym Challenge.
+                call(CHECK_IF_ALI)
+                if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==20) {
+                    msgbox(format("Guards help me as I make my escape!"))
+                    hidenamebox
+                    closemessage
+                    applymovement(VAR_LAST_TALKED, Movement_AlkharidGym_TELEPORT)
+                    delay(30)
+                    removeobject(VAR_LAST_TALKED)
+                    addobject(1) // extra guard
+                    clearflag(FLAG_TEMP_6)
+                    applymovement(2, Movement_AlkharidGym_NPC_2)
+                    applymovement(1, Movement_AlkharidGym_NPC_2_Ali)
+                    delay(60)
+                    namebox("Warrior")
+                    msgbox(format("Brother, I will help thee with this infidel!"))
+                    hidenamebox
+                    closemessage
+                    trainerbattle_no_intro(TRAINER_ALKHARID_GYM_TRAINER_1, format("Consider that a warning!") )
+                    release
+                    end
+                }
+                applymovement(2, Movement_AlkharidGym_NPC_2)
+                waitmovement(0)
+                //msgbox(format("Brother, I will help thee with this infidel!"))
+                trainerbattle_single(TRAINER_ALKHARID_GYM_TRAINER_1, format("Brother, I will help thee with this infidel!"),format("Consider that a warning!") )
+                //apply movement, hide npcs or make non talkable.
+                //removeobject(1)
+                //removeobject(2)
+                //setflag(FLAG_TEMP_5)
+                release
+                end
+            }
+        }
+    if (flag(FLAG_BADGE04_GET)) { //If Gym badge is obtained.
+        msgbox(format("Hello congrats on beating the gym."))
+    }
+    if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==0) { // If Gym challenge hasnt been started.
+        msgbox(format("Hello."))
+    }
+    else {
+        msgbox(format("Do not mistake us for the Prince."))
+    }
+    release
+    end
+}

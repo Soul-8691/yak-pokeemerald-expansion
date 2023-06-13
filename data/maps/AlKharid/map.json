@@ -240,14 +240,14 @@
       "x": 30,
       "y": 28,
       "elevation": 0,
-      "dest_map": "MAP_ALKHARID_GYM_1F_R1",
-      "dest_warp_id": 0
+      "dest_map": "MAP_ALKHARID_GYM_1F_R2",
+      "dest_warp_id": 1
     },
     {
       "x": 33,
       "y": 25,
       "elevation": 0,
-      "dest_map": "MAP_ALKHARID_GYM_1F_R1",
+      "dest_map": "MAP_ALKHARID_GYM_1F_R3",
       "dest_warp_id": 0
     },
     {
@@ -268,14 +268,14 @@
       "x": 31,
       "y": 28,
       "elevation": 0,
-      "dest_map": "MAP_ALKHARID_GYM_1F_R1",
+      "dest_map": "MAP_ALKHARID_GYM_1F_R2",
       "dest_warp_id": 0
     },
     {
       "x": 33,
       "y": 26,
       "elevation": 0,
-      "dest_map": "MAP_ALKHARID_GYM_1F_R1",
+      "dest_map": "MAP_ALKHARID_GYM_1F_R3",
       "dest_warp_id": 0
     },
     {

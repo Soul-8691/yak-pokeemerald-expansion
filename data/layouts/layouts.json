@@ -7144,8 +7144,8 @@
     {
       "id": "LAYOUT_ALKHARID_GYM_1F_R1",
       "name": "Alkharid_Gym_1F_R1_Layout",
-      "width": 20,
-      "height": 40,
+      "width": 12,
+      "height": 8,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Alkharid_Gym_1F_R1/border.bin",
@@ -7160,6 +7160,26 @@
       "secondary_tileset": "gTileset_Karamja",
       "border_filepath": "data/layouts/Brimhaven/border.bin",
       "blockdata_filepath": "data/layouts/Brimhaven/map.bin"
+    },
+    {
+      "id": "LAYOUT_ALKHARID_GYM_1F_R2",
+      "name": "Alkharid_Gym_1F_R2_Layout",
+      "width": 20,
+      "height": 14,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Alkharid_Gym_1F_R2/border.bin",
+      "blockdata_filepath": "data/layouts/Alkharid_Gym_1F_R2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ALKHARID_GYM_1F_R3",
+      "name": "Alkharid_Gym_1F_R3_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Alkharid_Gym_1F_R3/border.bin",
+      "blockdata_filepath": "data/layouts/Alkharid_Gym_1F_R3/map.bin"
     }
   ]
 }

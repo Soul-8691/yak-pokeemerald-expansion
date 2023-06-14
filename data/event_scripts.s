@@ -1607,3 +1607,27 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Alkharid_Gym_1F_R2/scripts.inc"
 
 	.include "data/maps/Alkharid_Gym_1F_R3/scripts.inc"
+
+	.include "data/maps/SeersVillage/scripts.inc"
+
+	.include "data/maps/Route57/scripts.inc"
+
+	.include "data/maps/Camelot/scripts.inc"
+
+	.include "data/maps/Route58/scripts.inc"
+
+	.include "data/maps/Catherby/scripts.inc"
+
+	.include "data/maps/Route59/scripts.inc"
+
+	.include "data/maps/Air_Altar/scripts.inc"
+
+	.include "data/maps/Mind_Altar/scripts.inc"
+
+	.include "data/maps/Water_Altar/scripts.inc"
+
+	.include "data/maps/Fire_Altar/scripts.inc"
+
+	.include "data/maps/Earth_Altar/scripts.inc"
+
+	.include "data/maps/Body_Altar/scripts.inc"

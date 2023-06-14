@@ -30,12 +30,12 @@
     },
     {
       "direction": "left",
-      "offset": 24,
+      "offset": 28,
       "map": "MAP_ROUTE34"
     },
     {
       "direction": "left",
-      "offset": -8,
+      "offset": -10,
       "map": "MAP_ROUTE35"
     }
   ],

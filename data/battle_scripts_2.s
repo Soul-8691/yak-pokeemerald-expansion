@@ -41,7 +41,7 @@ gBattlescriptsForBallThrow:: @ 82DBD08
 	.4byte BattleScript_BallThrow		 @ ITEM_DRAGONBANE_POUCH
 	.4byte BattleScript_BallThrow		 @ ITEM_AUGMENTED_POUCH
 	.4byte BattleScript_BallThrow		 @ ITEM_MYSTIC_POUCH
-	.4byte BattleScript_BallThrow		 @ ITEM_BARROWS_POUCH
+	.4byte BattleScript_SafariBallThrow	 @ ITEM_BARROWS_POUCH
 	.4byte BattleScript_BallThrow		 @ ITEM_GRANITE_POUCH
 	.4byte BattleScript_BallThrow		 @ ITEM_ANCIENT_POUCH
 	.4byte BattleScript_BallThrow		 @ ITEM_ELEMENTAL_POUCH
@@ -82,7 +82,7 @@ BattleScript_SafariBallThrow::
 
 BattleScript_SuccessBallThrow::
 	setbyte sMON_CAUGHT, TRUE
-	jumpifhalfword CMP_EQUAL, gLastUsedItem, ITEM_SAFARI_BALL, BattleScript_PrintCaughtMonInfo
+	jumpifhalfword CMP_EQUAL, gLastUsedItem, ITEM_BARROWS_POUCH, BattleScript_PrintCaughtMonInfo
 	incrementgamestat GAME_STAT_POKEMON_CAPTURES
 BattleScript_PrintCaughtMonInfo::
 	printstring STRINGID_GOTCHAPKMNCAUGHT

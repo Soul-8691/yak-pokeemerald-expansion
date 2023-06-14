@@ -15,8 +15,8 @@
   "connections": [
     {
       "direction": "right",
-      "offset": 12,
-      "map": "MAP_ROUTE32"
+      "offset": 16,
+      "map": "MAP_MUDSKIPPER_POINT"
     },
     {
       "direction": "left",

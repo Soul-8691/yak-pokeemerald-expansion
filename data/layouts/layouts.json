@@ -5084,7 +5084,7 @@
     {
       "id": "LAYOUT_MUDSKIPPER_POINT",
       "name": "MudskipperPoint_Layout",
-      "width": 42,
+      "width": 48,
       "height": 34,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Karamja",
@@ -5094,7 +5094,7 @@
     {
       "id": "LAYOUT_ROUTE32",
       "name": "Route32_Layout",
-      "width": 56,
+      "width": 40,
       "height": 30,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Karamja",
@@ -5104,7 +5104,7 @@
     {
       "id": "LAYOUT_MUSA_POINT",
       "name": "MusaPoint_Layout",
-      "width": 46,
+      "width": 52,
       "height": 50,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Karamja",
@@ -5125,9 +5125,9 @@
       "id": "LAYOUT_ROUTE34",
       "name": "Route34_Layout",
       "width": 42,
-      "height": 34,
+      "height": 30,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Falador",
+      "secondary_tileset": "gTileset_Yanille",
       "border_filepath": "data/layouts/Route34/border.bin",
       "blockdata_filepath": "data/layouts/Route34/map.bin"
     },
@@ -7035,7 +7035,7 @@
       "id": "LAYOUT_ROUTE56",
       "name": "Route56_Layout",
       "width": 50,
-      "height": 40,
+      "height": 46,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Windmill",
       "border_filepath": "data/layouts/Route56/border.bin",
@@ -7180,6 +7180,126 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Alkharid_Gym_1F_R3/border.bin",
       "blockdata_filepath": "data/layouts/Alkharid_Gym_1F_R3/map.bin"
+    },
+    {
+      "id": "LAYOUT_SEERS_VILLAGE",
+      "name": "SeersVillage_Layout",
+      "width": 38,
+      "height": 32,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/SeersVillage/border.bin",
+      "blockdata_filepath": "data/layouts/SeersVillage/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE57",
+      "name": "Route57_Layout",
+      "width": 38,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/Route57/border.bin",
+      "blockdata_filepath": "data/layouts/Route57/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAMELOT",
+      "name": "Camelot_Layout",
+      "width": 22,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/Camelot/border.bin",
+      "blockdata_filepath": "data/layouts/Camelot/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE58",
+      "name": "Route58_Layout",
+      "width": 22,
+      "height": 36,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/Route58/border.bin",
+      "blockdata_filepath": "data/layouts/Route58/map.bin"
+    },
+    {
+      "id": "LAYOUT_CATHERBY",
+      "name": "Catherby_Layout",
+      "width": 32,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Catherby/border.bin",
+      "blockdata_filepath": "data/layouts/Catherby/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE59",
+      "name": "Route59_Layout",
+      "width": 26,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route59/border.bin",
+      "blockdata_filepath": "data/layouts/Route59/map.bin"
+    },
+    {
+      "id": "LAYOUT_AIR_ALTAR",
+      "name": "Air_Altar_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/Air_Altar/border.bin",
+      "blockdata_filepath": "data/layouts/Air_Altar/map.bin"
+    },
+    {
+      "id": "LAYOUT_MIND_ALTAR",
+      "name": "Mind_Altar_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/Mind_Altar/border.bin",
+      "blockdata_filepath": "data/layouts/Mind_Altar/map.bin"
+    },
+    {
+      "id": "LAYOUT_WATER_ALTAR",
+      "name": "Water_Altar_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/Water_Altar/border.bin",
+      "blockdata_filepath": "data/layouts/Water_Altar/map.bin"
+    },
+    {
+      "id": "LAYOUT_FIRE_ALTAR",
+      "name": "Fire_Altar_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/Fire_Altar/border.bin",
+      "blockdata_filepath": "data/layouts/Fire_Altar/map.bin"
+    },
+    {
+      "id": "LAYOUT_EARTH_ALTAR",
+      "name": "Earth_Altar_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/Earth_Altar/border.bin",
+      "blockdata_filepath": "data/layouts/Earth_Altar/map.bin"
+    },
+    {
+      "id": "LAYOUT_BODY_ALTAR",
+      "name": "Body_Altar_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Falador",
+      "border_filepath": "data/layouts/Body_Altar/border.bin",
+      "blockdata_filepath": "data/layouts/Body_Altar/map.bin"
     }
   ]
 }

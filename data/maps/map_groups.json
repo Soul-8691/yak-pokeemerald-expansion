@@ -743,7 +743,13 @@
     "AsgarnianDungeon_B2F",
     "AsgarnianDungeon_B3F",
     "Wilderness_Forest",
-    "Callisto_Lair"
+    "Callisto_Lair",
+    "Air_Altar",
+    "Mind_Altar",
+    "Water_Altar",
+    "Fire_Altar",
+    "Earth_Altar",
+    "Body_Altar"
   ],
   "gMapGroup37": [
     "Tutorial_Island_Lab_Up",
@@ -888,7 +894,13 @@
     "Route70",
     "Route55",
     "Route56",
-    "Brimhaven"
+    "Brimhaven",
+    "SeersVillage",
+    "Route57",
+    "Camelot",
+    "Route58",
+    "Catherby",
+    "Route59"
   ],
   "gMapGroup49": [
     "Tzhaar_1F",

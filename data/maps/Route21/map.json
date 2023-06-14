@@ -20,7 +20,7 @@
     },
     {
       "direction": "down",
-      "offset": -26,
+      "offset": -28,
       "map": "MAP_MILL_LANE_MILL"
     },
     {
@@ -35,7 +35,7 @@
     },
     {
       "direction": "down",
-      "offset": 6,
+      "offset": 4,
       "map": "MAP_ROUTE22"
     },
     {

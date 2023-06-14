@@ -20,7 +20,7 @@
     },
     {
       "direction": "right",
-      "offset": 8,
+      "offset": 10,
       "map": "MAP_FALADOR"
     },
     {
@@ -32,6 +32,11 @@
       "direction": "up",
       "offset": 0,
       "map": "MAP_TAVERLEY"
+    },
+    {
+      "direction": "left",
+      "offset": -28,
+      "map": "MAP_ROUTE59"
     }
   ],
   "object_events": [

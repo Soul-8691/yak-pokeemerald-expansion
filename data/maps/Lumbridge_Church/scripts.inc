@@ -125,6 +125,7 @@ GnomeBoi_Kevin_7:
 	giveitem ITEM_WATERFALLITEM
 	giveitem ITEM_MAP
 	giveitem ITEM_ITEMFINDER
+	giveitem ITEM_POKEBLOCK_CASE
 	release
 	goto GnomeBoi_Kevin_1
 
@@ -256,6 +257,9 @@ Cheat_Menu_Shop_Medicine:
 
     .align 2
 Cheat_Menu_Shop_Misc:
+
+    .2byte ITEM_TALISMAN_AIR
+    .2byte ITEM_TALISMAN_FIRE
 
     .2byte ITEM_PULSE_CORE
     .2byte ITEM_10TH_SQUAD_SIGIL

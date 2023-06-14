@@ -11760,7 +11760,7 @@ static void Cmd_handleballthrow(void)
 			case ITEM_NORMAL_POUCH:
 			case ITEM_IRON_POUCH:
 			case ITEM_BARROWS_POUCH:
-				ballMultiplier = 10;
+				ballMultiplier = 20;
 				break;
 			
 			case ITEM_STEEL_POUCH:

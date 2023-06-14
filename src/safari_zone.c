@@ -57,8 +57,8 @@ void EnterSafariMode(void)
     IncrementGameStat(GAME_STAT_ENTERED_SAFARI_ZONE);
     SetSafariZoneFlag();
     ClearAllPokeblockFeeders();
-    gNumSafariBalls = 30;
-    sSafariZoneStepCounter = 500;
+    gNumSafariBalls = 5;
+    sSafariZoneStepCounter = 50;
     sSafariZoneCaughtMons = 0;
     sSafariZonePkblkUses = 0;
 }
@@ -87,6 +87,15 @@ bool8 SafariZoneTakeStep(void)
         return TRUE;
     }
     return FALSE;
+}
+
+void SafariModeRestartSteps(void)
+{
+    sSafariZoneStepCounter = 50;
+}
+void SafariModeIncreasePouches(void)
+{
+    gNumSafariBalls = gNumSafariBalls+5;
 }
 
 void SafariZoneRetirePrompt(void)

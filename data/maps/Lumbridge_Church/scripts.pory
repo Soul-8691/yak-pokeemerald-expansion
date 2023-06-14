@@ -153,6 +153,7 @@ script GnomeBoi_Kevin
 			giveitem (ITEM_WATERFALLITEM)
 			giveitem (ITEM_MAP)
             giveitem (ITEM_ITEMFINDER)
+            giveitem (ITEM_POKEBLOCK_CASE) //Safari Zone?
 			release
 		case 5:
 			msgbox("Get money!")
@@ -297,6 +298,9 @@ Cheat_Menu_Shop_Medicine:
 raw `
     .align 2
 Cheat_Menu_Shop_Misc:
+
+    .2byte ITEM_TALISMAN_AIR
+    .2byte ITEM_TALISMAN_FIRE
 
     .2byte ITEM_PULSE_CORE
     .2byte ITEM_10TH_SQUAD_SIGIL

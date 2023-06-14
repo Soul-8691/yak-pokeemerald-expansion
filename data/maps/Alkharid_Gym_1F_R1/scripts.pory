@@ -147,3 +147,133 @@ movement Movement_AlkharidGym_NPC_4_Ali
     walk_fast_right * 3
     face_player
 } 
+
+
+
+
+
+
+
+
+
+
+
+script SAFARI_ZONE_WIZARD
+{
+    lock
+    faceplayer
+    namebox("Dark Wizard")
+    msgbox(format("Welcome to the Abyss.\pI wish you wouldn't bother me.\pBut seeing as you are here…\pCare to play a little game?"), MSGBOX_YESNO)
+    if (!var(VAR_RESULT))
+    { 
+        msgbox(format("Come back if you change your mind."))
+        closemessage
+        hidenamebox
+        release
+        end
+    }
+    msgbox(format("Would you like some info?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT))
+    { 
+       msgbox(format("I will teleport you to different Altars across the world.\pI would like you to capture some creatures so I can discover more about the Abyss.\pBut considering how unstable the Abyss is I can only keep you in each plane of existance for a certain amount of time.\pProably about 100 steps."))
+    }
+    special (EnterSafariMode)
+    msgbox(format("I will now Teleport you.\pSenventior disthine molenko!"))
+    closemessage
+    hidenamebox
+    setvar (VAR_SAFARI_ZONE_STATE, 0) //Tells the game which altar you are at. (0 means no altar.)
+    goto (SAFARI_ZONE_WIZARD_TELEPORT)
+    release
+    end
+}
+
+script SAFARI_ZONE_WIZARD_TELEPORT
+{	
+    addvar (VAR_SAFARI_ZONE_STATE, 1)
+    
+    //switch (var(VAR_RESULT))
+    //{
+    //    case ITEM_TALISMAN_AIR:
+    //        msgbox(format("You have AIR."))
+    //    case ITEM_TALISMAN_FIRE:
+    //        msgbox(format("You have FIRE."))
+    //}
+
+    special (SafariModeRestartSteps)
+    //special (SafariModeRestartStepsExtra)
+    goto (SAFARI_ZONE_ALTAR_STATE)
+}
+
+script SAFARI_ZONE_WIZARD_NEXT_ROUND
+{
+    lockall
+	playse (SE_DING_DONG)
+    if (var(VAR_SAFARI_ZONE_STATE)==6) { //-1
+        msgbox(format("Time's up!\pYou are being teleported back to the Abyss."))
+    }
+    else
+    {
+        msgbox(format("Time's up!\pYou are being teleported to the next Altar…"))
+    }
+    waitmessage
+	waitbuttonpress
+	releaseall
+    goto (SAFARI_ZONE_WIZARD_TELEPORT)
+}
+
+
+
+
+script SAFARI_ZONE_ALTAR_STATE{
+    applymovement(OBJ_EVENT_ID_PLAYER, Movement_Altar_TELEPORT)
+    waitmovement(0)
+	switch (var(VAR_SAFARI_ZONE_STATE)){ 
+		case 0: 
+            msgbox(format("ERROR, You are currently not able to teleport to any Altar."))
+        case 1: 
+            warp (MAP_AIR_ALTAR,0,0,0)
+        case 2: 
+            warp (MAP_MIND_ALTAR,0,0,0)
+        case 3:
+            warp (MAP_WATER_ALTAR,0,0,0)
+        case 4:
+            warp (MAP_EARTH_ALTAR,0,0,0)
+        case 5:
+            warp (MAP_FIRE_ALTAR,0,0,0)
+        case 6:
+            warp (MAP_BODY_ALTAR,0,0,0)
+        case 7: //GAME OVER
+            setvar (VAR_SAFARI_ZONE_STATE, 0) //Set it to 8 and then add a forced map script talk obtain to welcome you back. Maybe giving you some stats.
+            special (ExitSafariMode)
+            warp (MAP_ABYSSAL_REALM_1,11,0,0)
+    }
+    release
+    end
+}    
+
+movement Movement_Altar_TELEPORT
+{
+    fly_up
+} 
+
+
+//You will only be able to take "50" steps before my magic will wear off and you will be teleported to the next Altar.
+//I will give you 5 "Elemental Pouches". //gNumSafariBalls
+//You can obtain more Pouches by collecting the pouches scattered around the Altars.
+//If you run out of Pouches trying to catch Monsters you will be returned to the Abyss.
+
+//Pouches only appear if Safari zone is active.  Set Temp 1 otherwise.
+//Exit portal only appears if Safari Zone is not active. Maptile edit.
+
+
+script ITEM_SAFARI_ZONE_POUCH
+{
+    playse (MUS_OBTAIN_ITEM)
+    removeobject (VAR_LAST_TALKED)
+    msgbox(format("You found extra Pouches!"))
+    delay(60)
+    closemessage
+    special (SafariModeIncreasePouches)
+    //waitfanfare
+    end
+}

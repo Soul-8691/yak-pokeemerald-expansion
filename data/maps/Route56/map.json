@@ -17,6 +17,11 @@
       "direction": "down",
       "offset": -10,
       "map": "MAP_ROUTE55"
+    },
+    {
+      "direction": "right",
+      "offset": -20,
+      "map": "MAP_SEERS_VILLAGE"
     }
   ],
   "object_events": [

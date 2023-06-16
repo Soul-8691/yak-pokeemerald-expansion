@@ -281,11 +281,11 @@ BLOCK_ROUTE1_FARMER_2:
 	end
 
 
-THEIF_ROUTE_1::
+THIEF_ROUTE_1::
 	lock
 	faceplayer
-	namebox THEIF_ROUTE_1_Text_0
-	msgbox THEIF_ROUTE_1_Text_1
+	namebox THIEF_ROUTE_1_Text_0
+	msgbox THIEF_ROUTE_1_Text_1
 	hidenamebox
 	closemessage
 	release
@@ -870,10 +870,10 @@ BLOCK_ROUTE1_FARMER_Text_1:
 BLOCK_ROUTE1_FARMER_Text_2:
 	.string "I finally got my Cows out of the way.$"
 
-THEIF_ROUTE_1_Text_0:
+THIEF_ROUTE_1_Text_0:
 	.string "Darren$"
 
-THEIF_ROUTE_1_Text_1:
+THIEF_ROUTE_1_Text_1:
 	.string "Nothing to see here kid.\p"
 	.string "SHOOO!$"
 

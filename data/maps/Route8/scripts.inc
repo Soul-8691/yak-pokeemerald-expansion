@@ -43,9 +43,9 @@ ITEM_ROUTE8_ITEM_PRAYER_POTION::
 	end
 
 
-BATTLE_ROUTE8_THEIF::
-	trainerbattle_single TRAINER_ROUTE8_THEIF, BATTLE_ROUTE8_THEIF_Text_0, BATTLE_ROUTE8_THEIF_Text_1
-	msgbox BATTLE_ROUTE8_THEIF_Text_1
+BATTLE_ROUTE8_THIEF::
+	trainerbattle_single TRAINER_ROUTE8_THIEF, BATTLE_ROUTE8_THIEF_Text_0, BATTLE_ROUTE8_THIEF_Text_1
+	msgbox BATTLE_ROUTE8_THIEF_Text_1
 	release
 	return
 
@@ -379,11 +379,11 @@ ROUTE8_MINER_3_Text_1:
 	.string "I have to make a trip all the way to\n"
 	.string "Falador if I want to heal my monsters.$"
 
-BATTLE_ROUTE8_THEIF_Text_0:
+BATTLE_ROUTE8_THIEF_Text_0:
 	.string "Hi there, you wouldn't want some very\n"
 	.string "rare a expensive charcoal would you?$"
 
-BATTLE_ROUTE8_THEIF_Text_1:
+BATTLE_ROUTE8_THIEF_Text_1:
 	.string "You could have just said no…$"
 
 BATTLE_ROUTE8_NOOB_Text_0:

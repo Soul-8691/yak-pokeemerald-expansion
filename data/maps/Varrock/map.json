@@ -256,7 +256,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_THEIF",
+      "graphics_id": "OBJ_EVENT_GFX_THIEF",
       "x": 46,
       "y": 29,
       "elevation": 3,
@@ -490,7 +490,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_THEIF",
+      "graphics_id": "OBJ_EVENT_GFX_THIEF",
       "x": 51,
       "y": 40,
       "elevation": 3,

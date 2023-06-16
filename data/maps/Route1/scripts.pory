@@ -319,7 +319,7 @@ script BLOCK_ROUTE1_FARMER {
     end
 }
 
-script THEIF_ROUTE_1
+script THIEF_ROUTE_1
 {
 	lock
     faceplayer

@@ -2,7 +2,7 @@
   "id": "MAP_AL_KHARID",
   "name": "AlKharid",
   "layout": "LAYOUT_AL_KHARID",
-  "music": "MUS_B_PYRAMID",
+  "music": "MUS_PS_ALKHARID",
   "region_map_section": "MAPSEC_ALKHARID",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",

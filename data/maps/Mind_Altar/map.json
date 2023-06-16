@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 16,
+      "x": 15,
       "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -43,15 +43,15 @@
   ],
   "warp_events": [
     {
-      "x": 9,
-      "y": 11,
+      "x": 10,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_MIND_ALTAR",
       "dest_warp_id": 0
     },
     {
-      "x": 9,
-      "y": 5,
+      "x": 6,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_MIND_ALTAR",
       "dest_warp_id": 0

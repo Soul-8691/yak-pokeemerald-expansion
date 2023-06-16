@@ -7247,7 +7247,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Falador",
+      "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Air_Altar/border.bin",
       "blockdata_filepath": "data/layouts/Air_Altar/map.bin"
     },
@@ -7257,7 +7257,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Falador",
+      "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Mind_Altar/border.bin",
       "blockdata_filepath": "data/layouts/Mind_Altar/map.bin"
     },
@@ -7267,7 +7267,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Falador",
+      "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Water_Altar/border.bin",
       "blockdata_filepath": "data/layouts/Water_Altar/map.bin"
     },
@@ -7277,7 +7277,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Falador",
+      "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Fire_Altar/border.bin",
       "blockdata_filepath": "data/layouts/Fire_Altar/map.bin"
     },
@@ -7287,7 +7287,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Falador",
+      "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Earth_Altar/border.bin",
       "blockdata_filepath": "data/layouts/Earth_Altar/map.bin"
     },
@@ -7297,7 +7297,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Falador",
+      "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Body_Altar/border.bin",
       "blockdata_filepath": "data/layouts/Body_Altar/map.bin"
     }

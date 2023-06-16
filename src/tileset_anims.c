@@ -132,10 +132,10 @@ const u16 *const gTilesetAnims_PokeScapeOutdoors_WaterRocks[] = {
     gTilesetAnims_PokeScapeOutdoors_WaterRocks_Frame7
 };
 
-const u16 gTilesetAnims_Lumbridge_Fountain_Frame0[] = INCBIN_U16("data/tilesets/secondary/Lumbridge/anim/fountain/fountain0.4bpp");
-const u16 gTilesetAnims_Lumbridge_Fountain_Frame1[] = INCBIN_U16("data/tilesets/secondary/Lumbridge/anim/fountain/fountain1.4bpp");
-const u16 gTilesetAnims_Lumbridge_Fountain_Frame2[] = INCBIN_U16("data/tilesets/secondary/Lumbridge/anim/fountain/fountain2.4bpp");
-const u16 gTilesetAnims_Lumbridge_Fountain_Frame3[] = INCBIN_U16("data/tilesets/secondary/Lumbridge/anim/fountain/fountain3.4bpp");
+const u16 gTilesetAnims_Lumbridge_Fountain_Frame0[] = INCBIN_U16("data/tilesets/secondary/lumbridge/anim/fountain/fountain0.4bpp");
+const u16 gTilesetAnims_Lumbridge_Fountain_Frame1[] = INCBIN_U16("data/tilesets/secondary/lumbridge/anim/fountain/fountain1.4bpp");
+const u16 gTilesetAnims_Lumbridge_Fountain_Frame2[] = INCBIN_U16("data/tilesets/secondary/lumbridge/anim/fountain/fountain2.4bpp");
+const u16 gTilesetAnims_Lumbridge_Fountain_Frame3[] = INCBIN_U16("data/tilesets/secondary/lumbridge/anim/fountain/fountain3.4bpp");
 
 const u16 *const gTilesetAnims_Lumbridge_Fountain[] = {
     gTilesetAnims_Lumbridge_Fountain_Frame0,

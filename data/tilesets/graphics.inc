@@ -1752,23 +1752,23 @@ gTilesetTiles_PokeScapeOutdoors::
 
 	.align 2
 gTilesetPalettes_Lumbridge::
-	.incbin "data/tilesets/secondary/Lumbridge/palettes/00.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge/palettes/01.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge/palettes/02.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge/palettes/03.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge/palettes/04.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge/palettes/05.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge/palettes/06.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge/palettes/07.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge/palettes/08.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge/palettes/09.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge/palettes/10.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge/palettes/11.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge/palettes/12.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge/palettes/12.gbapal"
 
 	.align 2
 gTilesetTiles_Lumbridge::
-	.incbin "data/tilesets/secondary/Lumbridge/tiles.4bpp.lz"
+	.incbin "data/tilesets/secondary/lumbridge/tiles.4bpp.lz"
 
 	.align 2
 gTilesetPalettes_PokeScapeIndoors::
@@ -1792,23 +1792,23 @@ gTilesetTiles_PokeScapeIndoors::
 
 	.align 2
 gTilesetPalettes_Lumbridge_Swamp::
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/00.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/01.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/02.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/03.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/04.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/05.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/06.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/07.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/08.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/09.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/10.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/11.gbapal"
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/palettes/12.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/palettes/12.gbapal"
 
 	.align 2
 gTilesetTiles_Lumbridge_Swamp::
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/tiles.4bpp.lz"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/tiles.4bpp.lz"
 	
 
 	.align 2

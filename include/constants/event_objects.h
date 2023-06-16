@@ -343,7 +343,7 @@
 #define OBJ_EVENT_GFX_DND				        337
 #define OBJ_EVENT_GFX_BOT_DRAGON				338
 #define OBJ_EVENT_GFX_MUGGER				    339
-#define OBJ_EVENT_GFX_THEIF				        340
+#define OBJ_EVENT_GFX_THIEF				        340
 #define OBJ_EVENT_GFX_BARMAID				    341
 #define OBJ_EVENT_GFX_PKER				        342
 #define OBJ_EVENT_GFX_PVMER				        343

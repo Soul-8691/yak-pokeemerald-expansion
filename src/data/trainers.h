@@ -1092,7 +1092,7 @@ const struct Trainer gTrainers[] = {
         .party = {.ItemDefaultMoves = sParty_ROUTE10_GOBLIN_2},
     },
 
-    [TRAINER_ROUTE8_THEIF] =
+    [TRAINER_ROUTE8_THIEF] =
     {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_SCAMMER,
@@ -1102,8 +1102,8 @@ const struct Trainer gTrainers[] = {
         .items = {ITEM_NONE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
-        .partySize = ARRAY_COUNT(sParty_ROUTE8_THEIF),
-        .party = {.ItemDefaultMoves = sParty_ROUTE8_THEIF},
+        .partySize = ARRAY_COUNT(sParty_ROUTE8_THIEF),
+        .party = {.ItemDefaultMoves = sParty_ROUTE8_THIEF},
         .scaling = FALSE,
     },
 

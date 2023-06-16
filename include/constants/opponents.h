@@ -92,7 +92,7 @@
 #define TRAINER_ROUTE10_GOBLIN_1                75
 #define TRAINER_ROUTE10_GOBLIN_2                76
 //ROUTE8
-#define TRAINER_ROUTE8_THEIF                    77
+#define TRAINER_ROUTE8_THIEF                    77
 #define TRAINER_ROUTE8_NOOB                    78
 #define TRAINER_ROUTE8_DnD                    79
 #define TRAINER_ROUTE8_MINER_1                    80

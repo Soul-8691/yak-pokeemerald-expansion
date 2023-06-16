@@ -1273,7 +1273,7 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE10_GOBLIN_2[] = {
     .heldItem = ITEM_NONE}
     };
 
-static const struct TrainerMonItemDefaultMoves sParty_ROUTE8_THEIF[] = {
+static const struct TrainerMonItemDefaultMoves sParty_ROUTE8_THIEF[] = {
     {
     .iv = 0,
     .lvl = 19,

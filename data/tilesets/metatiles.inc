@@ -584,11 +584,11 @@ gMetatileAttributes_PokeScapeIndoors::
 	.align 1
 	
 gMetatiles_Lumbridge_Swamp::
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/metatiles.bin"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/metatiles.bin"
 	.align 1
 	
 gMetatileAttributes_Lumbridge_Swamp::
-	.incbin "data/tilesets/secondary/Lumbridge_Swamp/metatile_attributes.bin"
+	.incbin "data/tilesets/secondary/lumbridge_swamp/metatile_attributes.bin"
 	.align 1
 gMetatiles_Windmill::
 	.incbin "data/tilesets/secondary/windmill/metatiles.bin"

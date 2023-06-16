@@ -347,7 +347,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Jmod;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DnD;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bot_Dragon;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mugger;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Theif;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Thief;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BarMaid;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pker;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pvmer;
@@ -844,7 +844,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DND] =                           &gObjectEventGraphicsInfo_DnD,
     [OBJ_EVENT_GFX_BOT_DRAGON] =                    &gObjectEventGraphicsInfo_Bot_Dragon,
     [OBJ_EVENT_GFX_MUGGER] =                        &gObjectEventGraphicsInfo_Mugger,
-    [OBJ_EVENT_GFX_THEIF] =                         &gObjectEventGraphicsInfo_Theif,
+    [OBJ_EVENT_GFX_THIEF] =                         &gObjectEventGraphicsInfo_Thief,
     [OBJ_EVENT_GFX_BARMAID] =                       &gObjectEventGraphicsInfo_BarMaid,
     [OBJ_EVENT_GFX_PKER] =                          &gObjectEventGraphicsInfo_Pker,
     [OBJ_EVENT_GFX_PVMER] =                         &gObjectEventGraphicsInfo_Pvmer,

@@ -3382,16 +3382,16 @@ const struct SpriteFrameImage gObjectEventPicTable_Mugger[] = {
     overworld_frame(gObjectEventPic_Mugger, 2, 4, 8),
 };
 
-const struct SpriteFrameImage gObjectEventPicTable_Theif[] = {
-    overworld_frame(gObjectEventPic_Theif, 2, 4, 0),
-    overworld_frame(gObjectEventPic_Theif, 2, 4, 1),
-    overworld_frame(gObjectEventPic_Theif, 2, 4, 2),
-    overworld_frame(gObjectEventPic_Theif, 2, 4, 3),
-    overworld_frame(gObjectEventPic_Theif, 2, 4, 4),
-    overworld_frame(gObjectEventPic_Theif, 2, 4, 5),
-    overworld_frame(gObjectEventPic_Theif, 2, 4, 6),
-    overworld_frame(gObjectEventPic_Theif, 2, 4, 7),
-    overworld_frame(gObjectEventPic_Theif, 2, 4, 8),
+const struct SpriteFrameImage gObjectEventPicTable_Thief[] = {
+    overworld_frame(gObjectEventPic_Thief, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Thief, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Thief, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Thief, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Thief, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Thief, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Thief, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Thief, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Thief, 2, 4, 8),
 };
 
 const struct SpriteFrameImage gObjectEventPicTable_BarMaid[] = {

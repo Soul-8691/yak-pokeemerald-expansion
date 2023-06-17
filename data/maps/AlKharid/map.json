@@ -22,6 +22,11 @@
       "direction": "up",
       "offset": 10,
       "map": "MAP_ROUTE28"
+    },
+    {
+      "direction": "down",
+      "offset": 20,
+      "map": "MAP_SHANTAY_PASS"
     }
   ],
   "object_events": [
@@ -106,7 +111,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_CAMEL",
       "x": 20,
-      "y": 26,
+      "y": 33,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 3,
@@ -226,7 +231,7 @@
       "x": 16,
       "y": 28,
       "elevation": 0,
-      "dest_map": "MAP_AL_KHARID",
+      "dest_map": "MAP_AL_KHARID_BANK",
       "dest_warp_id": 0
     },
     {
@@ -282,14 +287,14 @@
       "x": 18,
       "y": 19,
       "elevation": 0,
-      "dest_map": "MAP_AL_KHARID",
-      "dest_warp_id": 0
+      "dest_map": "MAP_ABYSSAL_REALM_1",
+      "dest_warp_id": 12
     },
     {
       "x": 17,
       "y": 12,
       "elevation": 0,
-      "dest_map": "MAP_AL_KHARID",
+      "dest_map": "MAP_AL_KHARID_HOUSE_1",
       "dest_warp_id": 0
     },
     {

@@ -7147,7 +7147,7 @@
       "width": 12,
       "height": 8,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_IndoorTowns1",
+      "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/Alkharid_Gym_1F_R1/border.bin",
       "blockdata_filepath": "data/layouts/Alkharid_Gym_1F_R1/map.bin"
     },
@@ -7167,7 +7167,7 @@
       "width": 20,
       "height": 14,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_IndoorTowns1",
+      "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/Alkharid_Gym_1F_R2/border.bin",
       "blockdata_filepath": "data/layouts/Alkharid_Gym_1F_R2/map.bin"
     },
@@ -7177,7 +7177,7 @@
       "width": 12,
       "height": 8,
       "primary_tileset": "gTileset_PokeScapeIndoors",
-      "secondary_tileset": "gTileset_IndoorTowns1",
+      "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/Alkharid_Gym_1F_R3/border.bin",
       "blockdata_filepath": "data/layouts/Alkharid_Gym_1F_R3/map.bin"
     },
@@ -7300,6 +7300,36 @@
       "secondary_tileset": "gTileset_Wilderness",
       "border_filepath": "data/layouts/Body_Altar/border.bin",
       "blockdata_filepath": "data/layouts/Body_Altar/map.bin"
+    },
+    {
+      "id": "LAYOUT_AL_KHARID_HOUSE_1",
+      "name": "AlKharid_House_1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/AlKharid_House_1/border.bin",
+      "blockdata_filepath": "data/layouts/AlKharid_House_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_AL_KHARID_BANK",
+      "name": "AlKharid_Bank_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/AlKharid_Bank/border.bin",
+      "blockdata_filepath": "data/layouts/AlKharid_Bank/map.bin"
+    },
+    {
+      "id": "LAYOUT_SHANTAY_PASS",
+      "name": "Shantay_Pass_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_AlKharid",
+      "border_filepath": "data/layouts/Shantay_Pass/border.bin",
+      "blockdata_filepath": "data/layouts/Shantay_Pass/map.bin"
     }
   ]
 }

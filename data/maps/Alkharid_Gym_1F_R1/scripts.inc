@@ -4,7 +4,7 @@ Alkharid_Gym_1F_R1_MapScripts::
 
 Alkharid_Gym_1F_R1_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 11
-	call ALKHARID_GYM_STATE
+	call ALKHARID_GYM_ROOMS_STATE
 	return
 
 

@@ -1,59 +1,52 @@
 {
-  "id": "MAP_BODY_ALTAR",
-  "name": "Body_Altar",
-  "layout": "LAYOUT_BODY_ALTAR",
-  "music": "MUS_ABANDONED_SHIP",
-  "region_map_section": "MAPSEC_ABYSS",
+  "id": "MAP_AL_KHARID_BANK",
+  "name": "AlKharid_Bank",
+  "layout": "LAYOUT_AL_KHARID_BANK",
+  "music": "MUS_PS_BANK",
+  "region_map_section": "MAPSEC_ALKHARID",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_UNKNOWN",
-  "allow_cycling": true,
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
   "allow_escaping": false,
-  "allow_running": true,
-  "show_map_name": true,
+  "allow_running": false,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 5,
-      "y": 3,
+      "graphics_id": "OBJ_EVENT_GFX_BANKER_M",
+      "x": 4,
+      "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "ITEM_SAFARI_ZONE_POUCH",
-      "flag": "FLAG_TEMP_1"
+      "script": "BANK_EventScript_Banker",
+      "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 15,
-      "y": 13,
+      "graphics_id": "OBJ_EVENT_GFX_BANKER_M",
+      "x": 3,
+      "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "ITEM_SAFARI_ZONE_POUCH",
-      "flag": "FLAG_TEMP_1"
+      "script": "BANK_EventScript_Banker",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 10,
-      "y": 12,
+      "x": 3,
+      "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_BODY_ALTAR",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 6,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_BODY_ALTAR",
+      "dest_map": "MAP_AL_KHARID",
       "dest_warp_id": 0
     }
   ],

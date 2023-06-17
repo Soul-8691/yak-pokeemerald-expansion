@@ -71,6 +71,10 @@ script GYM_NPC_1
                     hidenamebox
                     closemessage
                     trainerbattle_no_intro(TRAINER_ALKHARID_GYM_TRAINER_1, format("Consider that a warning!") )
+                    if (var(VAR_RESULT) == B_OUTCOME_LOST) { //
+                        setvar(VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0)
+                        end
+                    }
                     release
                     end
                 }
@@ -102,18 +106,18 @@ script GYM_NPC_1
 movement Movement_AlkharidGym_NPC_1
 {
     walk_fastest_up
-    walk_fastest_left * 8
+    walk_fastest_left * 7
 } 
 movement Movement_AlkharidGym_NPC_1_Ali
 {
     walk_fastest_up * 1
-    walk_fastest_left * 3
+    walk_fastest_left * 2
     face_player
 } 
 movement Movement_AlkharidGym_NPC_2
 {
     walk_fastest_down
-    walk_fastest_right * 8
+    walk_fastest_right * 7
 } 
 movement Movement_AlkharidGym_NPC_2_Ali
 {

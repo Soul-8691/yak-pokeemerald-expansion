@@ -1631,3 +1631,9 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/Earth_Altar/scripts.inc"
 
 	.include "data/maps/Body_Altar/scripts.inc"
+
+	.include "data/maps/AlKharid_House_1/scripts.inc"
+
+	.include "data/maps/AlKharid_Bank/scripts.inc"
+
+	.include "data/maps/Shantay_Pass/scripts.inc"

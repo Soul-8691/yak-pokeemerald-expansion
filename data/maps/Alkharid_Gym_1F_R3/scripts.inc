@@ -100,13 +100,18 @@ GYM_NPC_1_14:
 	hidenamebox
 	closemessage
 	trainerbattle_no_intro TRAINER_ALKHARID_GYM_TRAINER_1, GYM_NPC_1_Text_3
+	compare VAR_RESULT, B_OUTCOME_LOST
+	goto_if_eq GYM_NPC_1_17
 	release
+	end
+
+GYM_NPC_1_17:
+	setvar VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0
 	end
 
 
 Movement_AlkharidGym_NPC_1:
 	walk_fastest_up
-	walk_fastest_left
 	walk_fastest_left
 	walk_fastest_left
 	walk_fastest_left
@@ -120,13 +125,11 @@ Movement_AlkharidGym_NPC_1_Ali:
 	walk_fastest_up
 	walk_fastest_left
 	walk_fastest_left
-	walk_fastest_left
 	face_player
 	step_end
 
 Movement_AlkharidGym_NPC_2:
 	walk_fastest_down
-	walk_fastest_right
 	walk_fastest_right
 	walk_fastest_right
 	walk_fastest_right

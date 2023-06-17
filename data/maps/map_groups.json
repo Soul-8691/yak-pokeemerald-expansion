@@ -749,7 +749,8 @@
     "Water_Altar",
     "Fire_Altar",
     "Earth_Altar",
-    "Body_Altar"
+    "Body_Altar",
+    "Shantay_Pass"
   ],
   "gMapGroup37": [
     "Tutorial_Island_Lab_Up",
@@ -873,7 +874,9 @@
   "gMapGroup45": [
     "Alkharid_Gym_1F_R1",
     "Alkharid_Gym_1F_R2",
-    "Alkharid_Gym_1F_R3"
+    "Alkharid_Gym_1F_R3",
+    "AlKharid_House_1",
+    "AlKharid_Bank"
   ],
   "gMapGroup46": [
 

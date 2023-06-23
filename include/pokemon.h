@@ -12,9 +12,9 @@ struct PokemonSubstruct0
     u16 heldItem;
     u32 experience;
     u8 ppBonuses;
-	u8 pokeball:5;
     u8 friendship;
-    u16 filler;
+    u8 pokeball:5;
+    u8 filler;
 };
 
 struct PokemonSubstruct1

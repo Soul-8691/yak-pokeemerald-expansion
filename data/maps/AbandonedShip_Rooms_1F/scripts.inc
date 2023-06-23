@@ -1,3 +1,3 @@
-AbandonedShip_Rooms_1F_MapScripts:: @ 8237A92
+AbandonedShip_Rooms_1F_MapScripts::
 	.byte 0
 

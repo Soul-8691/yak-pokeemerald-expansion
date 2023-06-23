@@ -1,3 +1,3 @@
-AquaHideout_1F_MapScripts:: @ 8233493
+AquaHideout_1F_MapScripts::
 	.byte 0
 

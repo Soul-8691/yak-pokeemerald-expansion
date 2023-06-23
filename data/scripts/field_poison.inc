@@ -1,14 +1,13 @@
-EventScript_FieldPoison:: @ 82736BC
+EventScript_FieldPoison::
 	lockall
 	special TryFieldPoisonWhiteOut
 	waitstate
-	compare VAR_RESULT, FLDPSN_WHITEOUT
-	goto_if_eq EventScript_FieldWhiteOut
-	compare VAR_RESULT, FLDPSN_FRONTIER_WHITEOUT
+	goto_if_eq VAR_RESULT, FLDPSN_WHITEOUT, EventScript_FieldWhiteOut
+	goto_if_eq VAR_RESULT, FLDPSN_FRONTIER_WHITEOUT, EventScript_FrontierFieldWhiteOut
 	releaseall
 	end
 
-EventScript_FieldWhiteOut:: @ 82736D9
+EventScript_FieldWhiteOut::
 	message gText_PlayerWhitedOut
 	waitmessage
 	waitbuttonpress
@@ -20,7 +19,7 @@ EventScript_FieldWhiteOut:: @ 82736D9
 	waitstate
 	end
 
-EventScript_SetRespawnLavaridgePkmnCenter:: @ 82736F4
+EventScript_SetRespawnLavaridgePkmnCenter::
 	setrespawn HEAL_LOCATION_LAVARIDGE_TOWN
 	return
 

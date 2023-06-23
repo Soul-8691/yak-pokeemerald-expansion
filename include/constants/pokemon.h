@@ -23,20 +23,20 @@
 #define TYPE_DARK             17
 #define TYPE_FAIRY            18
 /*
-#define TYPE_AIR              
-#define TYPE_MIND           
-#define TYPE_WATER            
-#define TYPE_EARTH            
-#define TYPE_FIRE            
-#define TYPE_BODY           
-#define TYPE_COSMIC                        
-#define TYPE_CHAOS            
-#define TYPE_NATURE            
-#define TYPE_LAW                
-#define TYPE_DEATH                            
-#define TYPE_ASTRAL              
-#define TYPE_BLOOD            
-#define TYPE_SOUL              
+#define TYPE_AIR    0
+#define TYPE_MIND   1
+#define TYPE_WATER  2
+#define TYPE_EARTH  3
+#define TYPE_FIRE   4
+#define TYPE_BODY   5
+#define TYPE_COSMIC 6
+#define TYPE_CHAOS  7
+#define TYPE_NATURE 8
+#define TYPE_LAW    9
+#define TYPE_DEATH  10
+#define TYPE_ASTRAL 11
+#define TYPE_BLOOD  12
+#define TYPE_SOUL   13
 */
 
 #define NUMBER_OF_MON_TYPES   19
@@ -97,11 +97,13 @@
 #define STAT_SPEED   3
 #define STAT_SPATK   4
 #define STAT_SPDEF   5
+#define NUM_STATS    6
+
 #define STAT_ACC     6 // Only in battles.
 #define STAT_EVASION 7 // Only in battles.
 
-#define NUM_NATURE_STATS NUM_STATS - 1 // excludes HP
-#define NUM_BATTLE_STATS NUM_STATS + 2 // includes Accuracy and Evasion
+#define NUM_NATURE_STATS (NUM_STATS - 1) // excludes HP
+#define NUM_BATTLE_STATS (NUM_STATS + 2) // includes Accuracy and Evasion
 
 #define MIN_STAT_STAGE     0
 #define DEFAULT_STAT_STAGE 6
@@ -111,7 +113,7 @@
 //#define SHINY_ODDS 8 // Actual probability is SHINY_ODDS/65536
 //#define SHINY_ODDS 65535 //65535 100% chance to find  | 128 for a 1/512 chance
 //#define SHINY_ODDS 255 // 1/257 CHANCE TO FIND A SHINY. (Divide 65535 by SHINY_ODDS)
-#define SHINY_ODDS 128 
+#define SHINY_ODDS 128
 
 // Flags for Get(Box)MonData / Set(Box)MonData
 #define MON_DATA_PERSONALITY        0
@@ -186,15 +188,15 @@
 #define MON_DATA_VICTORY_RIBBON    69
 #define MON_DATA_ARTIST_RIBBON     70
 #define MON_DATA_EFFORT_RIBBON     71
-#define MON_DATA_GIFT_RIBBON_1     72
-#define MON_DATA_GIFT_RIBBON_2     73
-#define MON_DATA_GIFT_RIBBON_3     74
-#define MON_DATA_GIFT_RIBBON_4     75
-#define MON_DATA_GIFT_RIBBON_5     76
-#define MON_DATA_GIFT_RIBBON_6     77
-#define MON_DATA_GIFT_RIBBON_7     78
-#define MON_DATA_FATEFUL_ENCOUNTER 79
-#define MON_DATA_OBEDIENCE         80
+#define MON_DATA_MARINE_RIBBON     72
+#define MON_DATA_LAND_RIBBON       73
+#define MON_DATA_SKY_RIBBON        74
+#define MON_DATA_COUNTRY_RIBBON    75
+#define MON_DATA_NATIONAL_RIBBON   76
+#define MON_DATA_EARTH_RIBBON      77
+#define MON_DATA_WORLD_RIBBON      78
+#define MON_DATA_UNUSED_RIBBONS    79
+#define MON_DATA_EVENT_LEGAL       80
 #define MON_DATA_KNOWN_MOVES       81
 #define MON_DATA_RIBBON_COUNT      82
 #define MON_DATA_RIBBONS           83
@@ -203,6 +205,55 @@
 #define MON_DATA_SPEED2            86
 #define MON_DATA_SPATK2            87
 #define MON_DATA_SPDEF2            88
+
+// Ribbon IDs used by TV and Pokénav
+#define CHAMPION_RIBBON       0
+#define COOL_RIBBON_NORMAL    1
+#define COOL_RIBBON_SUPER     2
+#define COOL_RIBBON_HYPER     3
+#define COOL_RIBBON_MASTER    4
+#define BEAUTY_RIBBON_NORMAL  5
+#define BEAUTY_RIBBON_SUPER   6
+#define BEAUTY_RIBBON_HYPER   7
+#define BEAUTY_RIBBON_MASTER  8
+#define CUTE_RIBBON_NORMAL    9
+#define CUTE_RIBBON_SUPER    10
+#define CUTE_RIBBON_HYPER    11
+#define CUTE_RIBBON_MASTER   12
+#define SMART_RIBBON_NORMAL  13
+#define SMART_RIBBON_SUPER   14
+#define SMART_RIBBON_HYPER   15
+#define SMART_RIBBON_MASTER  16
+#define TOUGH_RIBBON_NORMAL  17
+#define TOUGH_RIBBON_SUPER   18
+#define TOUGH_RIBBON_HYPER   19
+#define TOUGH_RIBBON_MASTER  20
+#define WINNING_RIBBON       21
+#define VICTORY_RIBBON       22
+#define ARTIST_RIBBON        23
+#define EFFORT_RIBBON        24
+#define MARINE_RIBBON        25
+#define LAND_RIBBON          26
+#define SKY_RIBBON           27
+#define COUNTRY_RIBBON       28
+#define NATIONAL_RIBBON      29
+#define EARTH_RIBBON         30
+#define WORLD_RIBBON         31
+
+#define FIRST_GIFT_RIBBON MARINE_RIBBON
+#define LAST_GIFT_RIBBON  WORLD_RIBBON
+#define NUM_GIFT_RIBBONS  (1 + LAST_GIFT_RIBBON - FIRST_GIFT_RIBBON)
+
+// The above gift ribbons (Marine - World) are
+// special distribution ribbons that correspond to
+// 1 bit each in the Pokémon struct. Gen 4 hard-codes
+// each of these to the given name. In Gen 3 they're
+// used to get an index into giftRibbons in the save block,
+// which can have a value 0-64 (0 is 'no ribbon') that
+// corresponds to one of the special ribbons listed
+// in gGiftRibbonDescriptionPointers. Most of these were
+// never distributed
+#define MAX_GIFT_RIBBON 64
 
 #define MIN_LEVEL 1
 #define MAX_LEVEL 100
@@ -244,7 +295,9 @@
 #define FRIENDSHIP_EVENT_FAINT_FIELD_PSN  7
 #define FRIENDSHIP_EVENT_FAINT_LARGE      8 // If opponent was >= 30 levels higher. See AdjustFriendshipOnBattleFaint
 
-#define MAX_FRIENDSHIP  0xFF
+#define MAX_FRIENDSHIP  255
+#define MAX_SHEEN       255
+#define MAX_CONDITION   255
 
 #define STATUS_PRIMARY_NONE      0
 #define STATUS_PRIMARY_POISON    1
@@ -255,37 +308,42 @@
 #define STATUS_PRIMARY_POKERUS   6
 #define STATUS_PRIMARY_FAINTED   7
 
+#define MAX_PER_STAT_IVS 31
+#define MAX_IV_MASK 31
+#define USE_RANDOM_IVS (MAX_PER_STAT_IVS + 1)
 #define MAX_PER_STAT_EVS 252
 #define MAX_TOTAL_EVS 510
 #define EV_ITEM_RAISE_LIMIT 252
 
-#define UNOWN_FORM_COUNT 28
-
 // Battle move flags
-#define FLAG_MAKES_CONTACT          (1 << 0)
-#define FLAG_PROTECT_AFFECTED       (1 << 1)
-#define FLAG_MAGICCOAT_AFFECTED     (1 << 2)
-#define FLAG_SNATCH_AFFECTED        (1 << 3)
-#define FLAG_MIRROR_MOVE_AFFECTED   (1 << 4)
-#define FLAG_KINGSROCK_AFFECTED     (1 << 5)
-#define FLAG_HIGH_CRIT              (1 << 6)
-#define FLAG_RECKLESS_BOOST         (1 << 7)
-#define FLAG_IRON_FIST_BOOST        (1 << 8)
-#define FLAG_SHEER_FORCE_BOOST      (1 << 9)
-#define FLAG_STRONG_JAW_BOOST       (1 << 10)
-#define FLAG_MEGA_LAUNCHER_BOOST    (1 << 11)
-#define FLAG_STAT_STAGES_IGNORED    (1 << 12)
-#define FLAG_DMG_MINIMIZE           (1 << 13)
-#define FLAG_DMG_UNDERGROUND        (1 << 14)
-#define FLAG_DMG_UNDERWATER         (1 << 15)
-#define FLAG_SOUND                  (1 << 16)
-#define FLAG_BALLISTIC              (1 << 17)
-#define FLAG_PROTECTION_MOVE        (1 << 18)
-#define FLAG_POWDER                 (1 << 19)
-#define FLAG_TARGET_ABILITY_IGNORED (1 << 20)
-#define FLAG_DANCE                  (1 << 21)
-#define FLAG_DMG_IN_AIR             (1 << 22) // X2 dmg on air, always hits target on air
-#define FLAG_HIT_IN_AIR             (1 << 23) // dmg is normal, always hits target on air
+#define FLAG_MAKES_CONTACT                        (1 << 0)
+#define FLAG_PROTECT_AFFECTED                     (1 << 1)
+#define FLAG_MAGIC_COAT_AFFECTED                  (1 << 2)
+#define FLAG_SNATCH_AFFECTED                      (1 << 3)
+#define FLAG_MIRROR_MOVE_AFFECTED                 (1 << 4)
+#define FLAG_KINGS_ROCK_AFFECTED                  (1 << 5)
+#define FLAG_HIGH_CRIT                            (1 << 6)
+#define FLAG_RECKLESS_BOOST                       (1 << 7)
+#define FLAG_IRON_FIST_BOOST                      (1 << 8)
+#define FLAG_SHEER_FORCE_BOOST                    (1 << 9)
+#define FLAG_STRONG_JAW_BOOST                     (1 << 10)
+#define FLAG_MEGA_LAUNCHER_BOOST                  (1 << 11)
+#define FLAG_STAT_STAGES_IGNORED                  (1 << 12)
+#define FLAG_DMG_MINIMIZE                         (1 << 13)
+#define FLAG_DMG_UNDERGROUND                      (1 << 14)
+#define FLAG_DMG_UNDERWATER                       (1 << 15)
+#define FLAG_SOUND                                (1 << 16)
+#define FLAG_BALLISTIC                            (1 << 17)
+#define FLAG_PROTECTION_MOVE                      (1 << 18)
+#define FLAG_POWDER                               (1 << 19)
+#define FLAG_TARGET_ABILITY_IGNORED               (1 << 20)
+#define FLAG_DANCE                                (1 << 21)
+#define FLAG_DMG_2X_IN_AIR                        (1 << 22) // If target is in the air, can hit and deal double damage.
+#define FLAG_DMG_IN_AIR                           (1 << 23) // If target is in the air, can hit.
+#define FLAG_DMG_UNGROUNDED_IGNORE_TYPE_IF_FLYING (1 << 24) // Makes a Ground type move do 1x damage to flying and levitating targets
+#define FLAG_THAW_USER                            (1 << 25)
+#define FLAG_HIT_IN_SUBSTITUTE                    (1 << 26) // Hyperspace Fury
+#define FLAG_TWO_STRIKES                          (1 << 27) // A move with this flag will strike twice, and may apply its effect on each hit
 
 // Split defines.
 #define SPLIT_PHYSICAL  0x0
@@ -316,6 +374,8 @@
 
 // Evolution types
 #define EVO_MEGA_EVOLUTION   0xffff // Not an actual evolution, used to temporarily mega evolve in battle.
+#define EVO_MOVE_MEGA_EVOLUTION           0xfffe // Mega Evolution that checks for a move instead of held item.
+#define EVO_PRIMAL_REVERSION              0xfffd // Not an actual evolution, used to undergo primal reversion in battle.
 #define EVO_FRIENDSHIP       1      // Pokémon levels up with friendship ≥ 220
 #define EVO_FRIENDSHIP_DAY   2      // Pokémon levels up during the day with friendship ≥ 220
 #define EVO_FRIENDSHIP_NIGHT 3      // Pokémon levels up at night with friendship ≥ 220
@@ -337,7 +397,7 @@
 #define EVO_FEMALE_DEATH	 19		// Pokemon levels up while fainted and is female
 #define EVO_HOLD_ITEM		 20		// Pokemon levels up while holding specified item
 #define EVO_SPECIFIC_MAP     21		// Pokemon levels up in a specific map
-#define	EVO_MOVE			 22		// Pokemon levels up with a specific known move
+#define EVO_MOVE			 22		// Pokemon levels up with a specific known move
 #define EVO_MOVE_TYPE		 23		// Pokemon levels up while knowing a move of given type
 #define EVO_STATUS_LEVEL	 24	 	// Pokemon levels up while being status'd
 #define EVO_SPECIFIC_MON	 25		//Pokemon levels up with a specific mon in the party
@@ -374,11 +434,42 @@
 #define EVO_VAR_MALE            56      //Evolves with MALE Gender on Specific Map.
 #define EVO_VAR_FEMALE          57      //Evolves with FEMALE Gender on Specific Map.
 #define EVO_VAR                 58
+#define EVO_LEVEL_DUSK          59     // Pokémon reaches the specified level, is dusk (5-6 P.M)
+#define EVO_ITEM_HOLD_DAY       60     // Pokémon levels up, holds specified item at day
+#define EVO_ITEM_HOLD_NIGHT     61     // Pokémon levels up, holds specified item at night
+#define EVO_TRADE_SPECIFIC_MON  62     // Pokémon is traded for a specified Pokémon
+#define EVO_LEVEL_NATURE_AMPED            63     // Pokémon reaches the specified level, it has a Hardy, Brave, Adamant, Naughty, Docile, Impish, Lax, Hasty, Jolly, Naive, Rash, Sassy, or Quirky nature.
+#define EVO_LEVEL_NATURE_LOW_KEY          64     // Pokémon reaches the specified level, it has a Lonely, Bold, Relaxed, Timid, Serious, Modest, Mild, Quiet, Bashful, Calm, Gentle, or Careful nature.
+#define EVO_CRITICAL_HITS       65     // Pokémon performs specified number of critical hits in one battle
+#define EVO_SCRIPT_TRIGGER_DMG  66     // Pokémon has specified HP below max, then player interacts trigger
+#define EVO_DARK_SCROLL         67     // interacts with Scroll of Darkness
+#define EVO_WATER_SCROLL        68     // interacts with Scroll of Waters
+
 
 
 #define EVOS_PER_MON 30 //was 15
 
+// Evolution 'modes,' for GetEvolutionTargetSpecies
+#define EVO_MODE_NORMAL            0
+#define EVO_MODE_TRADE             1
+#define EVO_MODE_ITEM_USE          2
+#define EVO_MODE_ITEM_CHECK        3 // If an Everstone is being held, still want to show that the stone *could* be used on that Pokémon to evolve
+#define EVO_MODE_BATTLE_SPECIAL    4
+#define EVO_MODE_OVERWORLD_SPECIAL 5
+
 #define NUM_MALE_LINK_FACILITY_CLASSES   8
 #define NUM_FEMALE_LINK_FACILITY_CLASSES 8
+
+#define MON_PIC_WIDTH 64
+#define MON_PIC_HEIGHT 64
+#define MON_PIC_SIZE (MON_PIC_WIDTH * MON_PIC_HEIGHT / 2)
+
+#define BATTLE_ALIVE_EXCEPT_ACTIVE  0
+#define BATTLE_ALIVE_ATK_SIDE       1
+#define BATTLE_ALIVE_DEF_SIDE       2
+
+#define SKIP_FRONT_ANIM (1 << 7)
+
+#define NUM_ABILITY_SLOTS 2
 
 #endif // GUARD_CONSTANTS_POKEMON_H

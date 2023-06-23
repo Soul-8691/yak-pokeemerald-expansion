@@ -1,6 +1,2 @@
-
-
-DewfordTown_MapScripts:: @ 81E9507
+DewfordTown_MapScripts::
 	.byte 0
-
-

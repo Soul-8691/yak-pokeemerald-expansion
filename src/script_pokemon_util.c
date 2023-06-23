@@ -22,7 +22,6 @@
 #include "string_util.h"
 #include "tv.h"
 #include "constants/items.h"
-#include "constants/tv.h"
 #include "constants/battle_frontier.h"
 
 static void CB2_ReturnFromChooseHalfParty(void);
@@ -74,11 +73,11 @@ u8 ScriptGiveMon(u16 species, u8 level, u16 item, u32 unused1, u32 unused2, u8 u
         }
         while (unused1 != GetNatureFromPersonality(personality));
 
-        CreateMon(&mon, species, level, 32, 1, personality, OT_ID_PLAYER_ID, 0);
+        CreateMon(&mon, species, level, USE_RANDOM_IVS, TRUE, personality, OT_ID_PLAYER_ID, 0);
     }
 
     else{
-        CreateMon(&mon, species, level, 32, 0, 0, OT_ID_PLAYER_ID, 0);
+        CreateMon(&mon, species, level, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
     }
     heldItem[0] = item;
     heldItem[1] = item >> 8;
@@ -125,17 +124,18 @@ u8 ScriptGiveShinyMon(u16 species, u8 level, u16 item, u32 nature, u32 unused2, 
     }
 
 
-    CreateMon(&mon, species, level, 32, 1, personality, OT_ID_PLAYER_ID, 0);
+    CreateMon(&mon, species, level, USE_RANDOM_IVS, TRUE, personality, OT_ID_PLAYER_ID, 0);
     heldItem[0] = item;
     heldItem[1] = item >> 8;
     SetMonData(&mon, MON_DATA_HELD_ITEM, heldItem);
     sentToPc = GiveMonToPlayer(&mon);
     nationalDexNum = SpeciesToNationalPokedexNum(species);
 
+    // Don't set Pokédex flag for MON_CANT_GIVE
     switch(sentToPc)
     {
-    case 0:
-    case 1:
+    case MON_GIVEN_TO_PARTY:
+    case MON_GIVEN_TO_PC:
         GetSetPokedexFlag(nationalDexNum, FLAG_SET_SEEN);
         GetSetPokedexFlag(nationalDexNum, FLAG_SET_CAUGHT);
         break;
@@ -198,7 +198,7 @@ void CreateScriptedWildMon(u16 species, u8 level, u16 item)
     u8 heldItem[2];
 
     ZeroEnemyPartyMons();
-    CreateMon(&gEnemyParty[0], species, level, 32, 0, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&gEnemyParty[0], species, level, USE_RANDOM_IVS, 0, 0, OT_ID_PLAYER_ID, 0);
     if (item)
     {
         heldItem[0] = item;
@@ -206,10 +206,38 @@ void CreateScriptedWildMon(u16 species, u8 level, u16 item)
         SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, heldItem);
     }
 }
+void CreateScriptedDoubleWildMon(u16 species1, u8 level1, u16 item1, u16 species2, u8 level2, u16 item2)
+{
+    u8 heldItem1[2];
+    u8 heldItem2[2];
+
+    ZeroEnemyPartyMons();
+
+    CreateMon(&gEnemyParty[0], species1, level1, 32, 0, 0, OT_ID_PLAYER_ID, 0);
+    if (item1)
+    {
+        heldItem1[0] = item1;
+        heldItem1[1] = item1 >> 8;
+        SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, heldItem1);
+    }
+
+    CreateMon(&gEnemyParty[3], species2, level2, 32, 0, 0, OT_ID_PLAYER_ID, 0);
+    if (item2)
+    {
+        heldItem2[0] = item2;
+        heldItem2[1] = item2 >> 8;
+        SetMonData(&gEnemyParty[3], MON_DATA_HELD_ITEM, heldItem2);
+    }
+}
 
 void ScriptSetMonMoveSlot(u8 monIndex, u16 move, u8 slot)
 {
+// Allows monIndex to go out of bounds of gPlayerParty. Doesn't occur in vanilla
+#ifdef BUGFIX
+    if (monIndex >= PARTY_SIZE)
+#else
     if (monIndex > PARTY_SIZE)
+#endif
         monIndex = gPlayerPartyCount - 1;
 
     SetMonMoveSlot(&gPlayerParty[monIndex], move, slot);

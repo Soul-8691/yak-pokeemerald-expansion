@@ -1,4 +1,4 @@
-AbandonedShip_HiddenFloorCorridors_MapScripts:: @ 823896C
+AbandonedShip_HiddenFloorCorridors_MapScripts::
 	.byte 0
 
 

@@ -1,5 +1,3 @@
-
-
-BattleFrontier_BattlePyramidTop_MapScripts:: @ 82550A
+BattleFrontier_BattlePyramidTop_MapScripts::
 	.byte 0
 

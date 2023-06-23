@@ -1,4 +1,2 @@
-BattleFrontier_BattlePyramidFloor_MapScripts:: @ 8252A33
+BattleFrontier_BattlePyramidFloor_MapScripts::
 	.byte 0
-
-

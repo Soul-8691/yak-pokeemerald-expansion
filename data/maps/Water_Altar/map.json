@@ -16,8 +16,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 9,
-      "y": 3,
+      "x": 17,
+      "y": 0,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 14,
+      "x": 2,
       "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -43,15 +43,15 @@
   ],
   "warp_events": [
     {
-      "x": 9,
-      "y": 12,
+      "x": 10,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_WATER_ALTAR",
       "dest_warp_id": 0
     },
     {
-      "x": 6,
-      "y": 12,
+      "x": 7,
+      "y": 14,
       "elevation": 0,
       "dest_map": "MAP_WATER_ALTAR",
       "dest_warp_id": 0

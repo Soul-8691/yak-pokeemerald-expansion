@@ -3827,3 +3827,30 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_6[] = {
     }
 };
 
+//ALKHARID GYM
+static const struct TrainerMonNoItemCustomMoves sParty_ALKHARID_GYM_PRINCE_ALI[] = {
+    {
+    .iv = 0,
+    .lvl = 42,
+    .species = SPECIES_UGHTANKI,
+    .moves = {MOVE_POWER_GEM, MOVE_BOUNCE, MOVE_HI_JUMP_KICK, MOVE_RETURN}
+    },
+    {
+    .iv = 0,
+    .lvl = 42,
+    .species = SPECIES_SCORPION_KING_FORM,
+    .moves = {MOVE_POWER_GEM, MOVE_VENGEANCE, MOVE_BULK_UP, MOVE_DIG}
+    },
+    {
+    .iv = 0,
+    .lvl = 40,
+    .species = SPECIES_VULTURE,
+    .moves = {MOVE_POWER_GEM, MOVE_U_TURN, MOVE_SNARL, MOVE_EMBARGO}
+    },
+    {
+    .iv = 0,
+    .lvl = 41,
+    .species = SPECIES_WOLF_DESERT_FORM,
+    .moves = {MOVE_POWER_GEM, MOVE_BOUNCE, MOVE_MUD_BOMB, MOVE_BUBBLE_BEAM}
+    }  
+};

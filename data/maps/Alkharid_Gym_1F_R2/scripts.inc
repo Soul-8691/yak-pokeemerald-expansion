@@ -14,6 +14,7 @@ ALKHARID_GYM_STATE::
 	case 5, ALKHARID_GYM_STATE_4
 	case 10, ALKHARID_GYM_STATE_5
 	case 15, ALKHARID_GYM_STATE_6
+	case 20, ALKHARID_GYM_STATE_7
 ALKHARID_GYM_STATE_1:
 	return
 
@@ -29,8 +30,14 @@ ALKHARID_GYM_STATE_4:
 	addobject 5
 	setobjectxy 1, 10, 7
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_LOCK_WALK_DOWN_4
+	waitmovement 0
+	setobjectxy 2, 11, 9
 	addobject 7
 	addobject 8
+	removeobject 9
+	removeobject 10
+	setflag FLAG_TEMP_5
 	goto ALKHARID_GYM_STATE_1
 
 ALKHARID_GYM_STATE_5:
@@ -38,11 +45,29 @@ ALKHARID_GYM_STATE_5:
 	setflag FLAG_TEMP_A
 	addobject 6
 	clearflag FLAG_TEMP_B
+	removeobject 9
+	removeobject 10
+	setflag FLAG_TEMP_5
 	goto ALKHARID_GYM_STATE_1
 
 ALKHARID_GYM_STATE_6:
+	setobjectxy 2, 11, 5
+	addobject 9
+	addobject 10
+	clearflag FLAG_TEMP_5
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_A
+	setflag FLAG_TEMP_B
+	removeobject 3
+	removeobject 4
+	removeobject 5
+	removeobject 6
+	removeobject 7
+	removeobject 8
+	goto ALKHARID_GYM_STATE_1
+
+ALKHARID_GYM_STATE_7:
+	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_B
 	removeobject 3
 	removeobject 4
@@ -78,6 +103,9 @@ QUEST_ALKHARID_GYM_1::
 	msgbox QUEST_ALKHARID_GYM_1_Text_4
 	closemessage
 	hidenamebox
+	applymovement 1, Movement_WALKDOWN
+	waitmovement 0
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 	namebox QUEST_ALKHARID_GYM_1_Text_5
 	msgbox QUEST_ALKHARID_GYM_1_Text_6
 	closemessage
@@ -90,6 +118,9 @@ QUEST_ALKHARID_GYM_1::
 	msgbox QUEST_ALKHARID_GYM_1_Text_7
 	closemessage
 	hidenamebox
+	applymovement 6, Movement_LOCK_WALK_UP
+	waitmovement 0
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_EAST
 	namebox QUEST_ALKHARID_GYM_1_Text_0
 	msgbox QUEST_ALKHARID_GYM_1_Text_8
 	closemessage
@@ -97,6 +128,7 @@ QUEST_ALKHARID_GYM_1::
 	setvar VAR_POKESCAPE_ALKHARID_GYM_QUEST, 15
 	fadescreen FADE_TO_BLACK
 	call ALKHARID_GYM_STATE
+	delay 60
 	fadescreen FADE_FROM_BLACK
 	addvar VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 4
 	return
@@ -109,6 +141,21 @@ QUEST_ALKHARID_GYM_1_2:
 	waitmovement 0
 	return
 
+
+Movement_LOCK_WALK_UP:
+	lock_facing_direction
+	walk_up
+	unlock_facing_direction
+	step_end
+
+Movement_LOCK_WALK_DOWN_4:
+	lock_facing_direction
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	unlock_facing_direction
+	step_end
 
 NPC_ALKHARID_OSMAN::
 	lock
@@ -147,7 +194,7 @@ ALKHARID_GYM_ALI_4:
 ALKHARID_GYM_ALI_2:
 	msgbox ALKHARID_GYM_ALI_Text_0
 	hidenamebox
-	trainerbattle_no_intro TRAINER_VARROCK_GYM_KINGROALD, ALKHARID_GYM_ALI_Text_1
+	trainerbattle_no_intro TRAINER_ALKHARID_GYM_PRINCE_ALI, ALKHARID_GYM_ALI_Text_1
 	namebox QUEST_ALKHARID_GYM_1_Text_5
 	msgbox ALKHARID_GYM_ALI_Text_2
 	hidenamebox
@@ -158,7 +205,7 @@ ALKHARID_GYM_ALI_2:
 	namebox QUEST_ALKHARID_GYM_1_Text_5
 	msgbox ALKHARID_GYM_ALI_Text_4
 	hidenamebox
-	giveitem ITEM_TM20, 1
+	giveitem ITEM_TM48, 1
 	compare VAR_RESULT, FALSE
 	goto_if_eq Common_EventScript_ShowBagIsFull
 	playbgm MUS_PS_VARROCK, 0
@@ -321,8 +368,7 @@ QUEST_ALKHARID_GYM_1_Text_6:
 QUEST_ALKHARID_GYM_1_Text_7:
 	.string "This suddenly got a lot harder didn't\n"
 	.string "it?\p"
-	.string "I will be somewhere around the Palace.\p"
-	.string "Good luck!$"
+	.string "I will be somewhere around the Palace.$"
 
 QUEST_ALKHARID_GYM_1_Text_8:
 	.string "Good luck with your challenge, if you\n"
@@ -355,7 +401,9 @@ ALKHARID_GYM_ALI_Text_4:
 	.string "Also have this Scroll.$"
 
 ALKHARID_GYM_ALI_Text_5:
-	.string "That move is called CUPHOLDER.$"
+	.string "That move is called Power Gem.\p"
+	.string "It sparkles just as all our precious\n"
+	.string "Gems around the palace do.$"
 
 ALKHARID_GYM_ALI_Text_6:
 	.string "You seem like you would be strong\n"

@@ -43,14 +43,28 @@ script ALKHARID_GYM_STATE{
             addobject(5)
             setobjectxy(OBJ_EVENT_ID_PRINCEALI,10,7)
 			setobjectmovementtype(OBJ_EVENT_ID_PRINCEALI,MOVEMENT_TYPE_FACE_DOWN)
+            applymovement(OBJ_EVENT_ID_PLAYER, Movement_LOCK_WALK_DOWN_4)
+            waitmovement(0)
+            //setobjectxy(OBJ_EVENT_ID_PLAYER,9,9)
+            setobjectxy(OBJ_EVENT_ID_OSMAN,11,9)
             addobject(7)
             addobject(8)
+            removeobject(9)
+            removeobject(10)
+            setflag(FLAG_TEMP_5)
         case 10:
             removeobject(OBJ_EVENT_ID_PRINCEALI)
             setflag(FLAG_TEMP_A) // Hides prince.
             addobject(OBJ_EVENT_ID_PRINCEALI_DISGUISE)
             clearflag(FLAG_TEMP_B) //shows prince disguise
+            removeobject(9)
+            removeobject(10)
+            setflag(FLAG_TEMP_5)
         case 15:
+            setobjectxy(OBJ_EVENT_ID_OSMAN,11,5)
+            addobject(9)
+            addobject(10)
+            clearflag(FLAG_TEMP_5)
             setflag(FLAG_TEMP_1)
             setflag(FLAG_TEMP_A)
             setflag(FLAG_TEMP_B)
@@ -60,6 +74,16 @@ script ALKHARID_GYM_STATE{
             removeobject(OBJ_EVENT_ID_PRINCEALI_DISGUISE)
             removeobject(7)
             removeobject(8)
+        case 20:
+            setflag(FLAG_TEMP_1)
+            setflag(FLAG_TEMP_B)
+            removeobject(3)
+            removeobject(4)
+            removeobject(5)
+            removeobject(OBJ_EVENT_ID_PRINCEALI_DISGUISE)
+            removeobject(7)
+            removeobject(8)
+            
     }
     return
 }
@@ -101,6 +125,10 @@ script QUEST_ALKHARID_GYM_1
     msgbox(format("This challenge is simple.\pAll you must do is find our Prince and challenge him to a battle."))
     closemessage
     hidenamebox
+
+    applymovement(OBJ_EVENT_ID_PRINCEALI, Movement_WALKDOWN)
+    waitmovement(0)
+    turnobject (OBJ_EVENT_ID_PLAYER, DIR_NORTH)
     namebox("Prince Ali")
     msgbox(format("Sounds too easy right?\pBut once I put this disguise on…"))
     closemessage
@@ -111,9 +139,13 @@ script QUEST_ALKHARID_GYM_1
     fadescreen(FADE_FROM_BLACK)
 
     namebox("Prince Ali")
-    msgbox(format("This suddenly got a lot harder didn't it?\pI will be somewhere around the Palace.\pGood luck!"))
+    msgbox(format("This suddenly got a lot harder didn't it?\pI will be somewhere around the Palace."))
     closemessage
     hidenamebox
+    applymovement(OBJ_EVENT_ID_PRINCEALI_DISGUISE, Movement_LOCK_WALK_UP)
+    waitmovement(0)
+
+    turnobject (OBJ_EVENT_ID_PLAYER, DIR_EAST)
     namebox("Osman")
     msgbox(format("Good luck with your challenge, if you need any assistance feel free to ask me."))
     closemessage
@@ -121,10 +153,26 @@ script QUEST_ALKHARID_GYM_1
     setvar(VAR_POKESCAPE_ALKHARID_GYM_QUEST, 15)
     fadescreen(FADE_TO_BLACK)
     call(ALKHARID_GYM_STATE)
+    delay(60)
     fadescreen(FADE_FROM_BLACK)
     addvar(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 4)
     return
 }
+
+movement Movement_LOCK_WALK_UP
+{
+    lock_facing_direction
+    walk_up
+    unlock_facing_direction
+} 
+
+movement Movement_LOCK_WALK_DOWN_4
+{
+    lock_facing_direction
+    walk_down * 4
+    unlock_facing_direction
+} 
+
 
 
 //Osman
@@ -157,7 +205,7 @@ script ALKHARID_GYM_ALI {
 
         msgbox(format("Welcome to the Al Kharid Gym."))
         hidenamebox
-        trainerbattle_no_intro(TRAINER_VARROCK_GYM_KINGROALD, msgbox(format("That was a very enjoyable battle!")))
+        trainerbattle_no_intro(TRAINER_ALKHARID_GYM_PRINCE_ALI, msgbox(format("That was a very enjoyable battle!")))
         namebox("Prince Ali")
         msgbox(format("Have this Badge."))
         hidenamebox
@@ -168,13 +216,13 @@ script ALKHARID_GYM_ALI {
         namebox("Prince Ali")
         msgbox(format("Also have this Scroll."))
         hidenamebox
-        giveitem (ITEM_TM20, 1)
+        giveitem (ITEM_TM48, 1) //Power Gem.
         compare(VAR_RESULT, FALSE)
         goto_if_eq(Common_EventScript_ShowBagIsFull)
         playbgm(MUS_PS_VARROCK, 0)
         savebgm(MUS_PS_VARROCK)
         namebox("Prince Ali")
-        msgbox(format("That move is called CUPHOLDER."))
+        msgbox(format("That move is called Power Gem.\pIt sparkles just as all our precious Gems around the palace do."))
         setvar(VAR_POKESCAPE_VARROCK_GYM_QUEST, 26)
         setflag(FLAG_BADGE04_GET)
         addvar(VAR_LEVEL_SCALING_STATE, 1) //INCREASES LEVEL SCALING & SHOPS

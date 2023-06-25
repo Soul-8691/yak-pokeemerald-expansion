@@ -34,7 +34,7 @@ voicegroup193:: @ 86B429D
 	voice_directsound 60, 0, DirectSoundWaveData_sd90_special_scream_drive, 255, 0, 255, 195  @ 86981C8 //Guitar Harmonics
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_fretless_bass, 255, 253, 0, 149  @ 8675E84 //Fretless Bass
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_fingered_bass, 255, 250, 0, 149  @ 867CCE8 //Fingered Bass
-	voice_directsound 60, 0, DirectSoundWaveData_88D6978, 255, 0, 206, 204  @ 86A01C0 //Picked Bass
+	voice_directsound 60, 0, DirectSoundWaveData_unknown_18, 255, 0, 206, 204  @ 86A01C0 //Picked Bass
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_fretless_bass, 255, 253, 0, 149  @ 8675E84 //Fretless Bass
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_slap_bass, 255, 235, 128, 115  @ 8675EB4 //Slap Bass 1
 	voice_directsound 60, 0, DirectSoundWaveData_unused_sc88pro_unison_slap, 255, 165, 180, 216  @ 869A004 //Slap Bass 2
@@ -125,6 +125,6 @@ voicegroup193:: @ 86B429D
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_bubbles, 255, 0, 255, 127  @ 8684F5C //Seashore Bubbles
 	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_wind, 255, 0, 255, 127  @ 869D7FC //Wind
 	voice_directsound 60, 0, DirectSoundWaveData_register_noise, 255, 0, 255, 76  @ 86A01B4 //Cash Register Noise
-	voice_directsound 60, 0, DirectSoundWaveData_872762C, 255, 0, 255, 127  @ 869D76C //Truck Ride
-	voice_directsound 60, 0, DirectSoundWaveData_873ECD8, 255, 255, 255, 127  @ 8694058 //Applause
-	voice_directsound 60, 0, DirectSoundWaveData_8725A2C, 255, 0, 255, 165  @ 869D754 //Gunshot
+	voice_directsound 60, 0, DirectSoundWaveData_unknown_2, 255, 0, 255, 127  @ 869D76C //Truck Ride
+	voice_directsound 60, 0, DirectSoundWaveData_unknown_10, 255, 255, 255, 127  @ 8694058 //Applause
+	voice_directsound 60, 0, DirectSoundWaveData_unknown_1, 255, 0, 255, 165  @ 869D754 //Gunshot

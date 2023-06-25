@@ -174,7 +174,7 @@ HAM_HIDEOUT_GOLDENGNOME_EVENT::
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	setvar VAR_POKESCAPE_GOLDENGNOMES, 15
-	warpsootopolislegend MAP_VARROCK_PUB_1F, 255, 2, 20
+	warpwhitefade MAP_VARROCK_PUB_1F, 255, 2, 20
 	release
 	end
 
@@ -397,7 +397,7 @@ GOLDENGNOME_EVENT_START_4:
 	setvar VAR_POKESCAPE_GOLDENGNOMES, 5
 	msgbox GOLDENGNOME_EVENT_START_Text_1
 	waitmessage
-	warpsootopolislegend MAP_HAM_HIDEOUT_B1F, 255, 17, 23
+	warpwhitefade MAP_HAM_HIDEOUT_B1F, 255, 17, 23
 	end
 
 

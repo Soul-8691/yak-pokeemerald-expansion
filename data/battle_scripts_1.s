@@ -367,7 +367,6 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectGeomancy                @ EFFECT_GEOMANCY
 	.4byte BattleScript_EffectFairyLock               @ EFFECT_FAIRY_LOCK
 	.4byte BattleScript_EffectAllySwitch              @ EFFECT_ALLY_SWITCH
-	.4byte BattleScript_EffectSleepHit
 	.4byte BattleScript_EffectInverseBattle
 	.4byte BattleScript_EffectSliceDice
 	.4byte BattleScript_EffectSaradominStrike
@@ -8039,7 +8038,7 @@ BattleScript_AvernicActivates::
 	statbuffchange MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN, NULL
 	setgraphicalstatchangevalues
 	playanimation BS_ABILITY_BATTLER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
-	printstring STRINGID_PKMNSSTATCHANGED3
+	printstring STRINGID_ATTACKERSSTATFELL
 	waitmessage 0x40
 	return
 

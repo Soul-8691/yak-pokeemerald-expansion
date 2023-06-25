@@ -173,14 +173,14 @@ HAM_Movement5_3:
 	step_end
 
 HAM_Movement5_4:
-	walk_fastest_left
-	walk_fastest_up
-	walk_fastest_up
-	walk_fastest_up
-	walk_fastest_up
-	walk_fastest_up
-	walk_fastest_up
-	walk_fastest_up
+	walk_faster_left
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
 	step_end
 
 HAM_Movement5_5:

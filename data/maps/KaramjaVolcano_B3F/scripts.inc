@@ -340,15 +340,15 @@ KARAMJAVOLCANO_HAM_CAMERA_1:
 	step_end
 
 KARAMJAVOLCANO_HAM_CAMERA_2:
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_right
-	walk_fastest_down
-	walk_fastest_right
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_right
+	walk_faster_down
+	walk_faster_right
 	step_end
 
 HAM_EVENT_KaramjaVolcano_5:

@@ -438,13 +438,13 @@ static const struct TrainerMonItemDefaultMoves sParty_MITHRILMAN1[] = {
 static const struct TrainerMonItemDefaultMoves sParty_MITHRILMAN2[] = {
     {
     .iv = 0,
-    .lvl = 16,
+    .lvl = 22,
     .species = SPECIES_ZAROBIRD,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 15,
+    .lvl = 22,
     .species = SPECIES_DUCK_NORMAL_FORM,
     .heldItem = ITEM_NONE
     },

@@ -664,6 +664,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_ORE_PAL 0x124D
 #define OBJ_EVENT_PAL_ORE_PAL2 0x124E
 #define OBJ_EVENT_PAL_CABBAGE_CROP 0x124F
+
 #define OBJ_EVENT_PAL_ABYSSAL_DEMON 0x1250
 #define OBJ_EVENT_PAL_CHAOS_ELEMENTAL 0x1251
 #define OBJ_EVENT_PAL_MINER 0x1252
@@ -707,6 +708,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_GUTHIX			0x1262
 #define OBJ_EVENT_PAL_KNIGHTS1			0x1266
 #define OBJ_EVENT_PAL_KNIGHTS2			0x1267
+#define OBJ_EVENT_PAL_HAM			    0x1268
 /*
 #define OBJ_EVENT_PAL_GOBLINS			0x125B
 #define OBJ_EVENT_PAL_BARROWS			0x125B
@@ -1029,6 +1031,8 @@ const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPalette_TERRORBIRDS, OBJ_EVENT_PAL_TERRORBIRDS},
     {gObjectEventPalette_KNIGHTS1, OBJ_EVENT_PAL_KNIGHTS1},
     {gObjectEventPalette_KNIGHTS2, OBJ_EVENT_PAL_KNIGHTS2},
+    {gObjectEventPalette_HAM, OBJ_EVENT_PAL_HAM},
+    
     /*
     {gObjectEventPalette_GOBLINS, OBJ_EVENT_PAL_GOBLINS},
     {gObjectEventPalette_BARROWS, OBJ_EVENT_PAL_BARROWS},

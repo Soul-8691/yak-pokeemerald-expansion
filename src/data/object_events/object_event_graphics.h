@@ -910,6 +910,7 @@ const u16 gObjectEventPalette_GUTHIX[] = INCBIN_U16("graphics/object_events/pale
 const u16 gObjectEventPalette_TERRORBIRDS[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/Terrorbirds.gbapal");
 const u16 gObjectEventPalette_KNIGHTS1[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/Knights1.gbapal");
 const u16 gObjectEventPalette_KNIGHTS2[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/Knights2.gbapal");
+const u16 gObjectEventPalette_HAM[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/HAM.gbapal");
 
 
 const u16 gObjectEventPalette_Pker_Rusher[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/Pker_Rusher.gbapal");

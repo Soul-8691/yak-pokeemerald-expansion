@@ -916,6 +916,7 @@
 #define MAP_BARB_STRONGHOLD_B2F                 (52 | (50 << 8))
 #define MAP_BARB_STRONGHOLD_B3F                 (53 | (50 << 8))
 #define MAP_BARB_STRONGHOLD_B4F                 (54 | (50 << 8))
+#define MAP_BARROWS                             (55 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

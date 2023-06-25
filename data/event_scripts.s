@@ -1637,3 +1637,5 @@ Common_EventScript_LegendaryFlewAway:: @ 8273776
 	.include "data/maps/AlKharid_Bank/scripts.inc"
 
 	.include "data/maps/Shantay_Pass/scripts.inc"
+
+	.include "data/maps/Barrows/scripts.inc"

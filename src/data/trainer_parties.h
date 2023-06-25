@@ -3854,3 +3854,32 @@ static const struct TrainerMonNoItemCustomMoves sParty_ALKHARID_GYM_PRINCE_ALI[]
     .moves = {MOVE_POWER_GEM, MOVE_BOUNCE, MOVE_MUD_BOMB, MOVE_BUBBLE_BEAM}
     }  
 };
+
+
+//BARROWS
+static const struct TrainerMonNoItemCustomMoves sParty_BARROWS_GUTHAN[] = {
+    {
+    .iv = 0,
+    .lvl = 42,
+    .species = SPECIES_TERROR_DOG,
+    .moves = {MOVE_POWER_GEM, MOVE_BOUNCE, MOVE_HI_JUMP_KICK, MOVE_RETURN}
+    },
+    {
+    .iv = 0,
+    .lvl = 42,
+    .species = SPECIES_TERROR_DOG,
+    .moves = {MOVE_POWER_GEM, MOVE_VENGEANCE, MOVE_BULK_UP, MOVE_DIG}
+    },
+    {
+    .iv = 0,
+    .lvl = 40,
+    .species = SPECIES_TERROR_DOG,
+    .moves = {MOVE_POWER_GEM, MOVE_U_TURN, MOVE_SNARL, MOVE_EMBARGO}
+    },
+    {
+    .iv = 0,
+    .lvl = 41,
+    .species = SPECIES_TERROR_DOG,
+    .moves = {MOVE_POWER_GEM, MOVE_BOUNCE, MOVE_MUD_BOMB, MOVE_BUBBLE_BEAM}
+    }  
+};

@@ -338,6 +338,18 @@ ClearGymTrainers_ALKHARID::
 	return
 
 
+BARROWS_GUTHAN::
+	lock
+	faceplayer
+	namebox BARROWS_GUTHAN_Text_0
+	msgbox BARROWS_GUTHAN_Text_1
+	hidenamebox
+	closemessage
+	trainerbattle_no_intro TRAINER_BARROWS_GUTHAN, ALKHARID_GYM_ALI_Text_1
+	release
+	end
+
+
 QUEST_ALKHARID_GYM_1_Text_0:
 	.string "Osman$"
 
@@ -461,3 +473,10 @@ CHECK_IF_ALI_Text_4:
 
 CHECK_IF_ALI_Text_5:
 	.string "Are you asking for a fight?$"
+
+BARROWS_GUTHAN_Text_0:
+	.string "Guthan$"
+
+BARROWS_GUTHAN_Text_1:
+	.string "I am known simple as Guthan.\p"
+	.string "Face me if you dare!$"

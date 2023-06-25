@@ -3324,6 +3324,19 @@ const struct Trainer gTrainers[] = {
         .partySize = ARRAY_COUNT(sParty_ALKHARID_GYM_PRINCE_ALI),
         .party = {.NoItemCustomMoves = sParty_ALKHARID_GYM_PRINCE_ALI},
     },
+    [TRAINER_BARROWS_GUTHAN] =
+    {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
+        .trainerClass = TRAINER_CLASS_BARROWS_BROTHER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_guthan_osrs,
+        .trainerName = _("GUTHAN"),
+        .items = {ITEM_CHOCOLATE_CAKE, ITEM_CHOCOLATE_CAKE, ITEM_POTION_SPDEF, ITEM_BLUEBERRY_SPECIAL},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_PREFER_STRONGEST_MOVE | AI_SCRIPT_HP_AWARE | AI_SCRIPT_CHECK_BAD_MOVE,
+        .partySize = ARRAY_COUNT(sParty_BARROWS_GUTHAN),
+        .party = {.NoItemCustomMoves = sParty_BARROWS_GUTHAN},
+    },
 
 
 

@@ -7330,6 +7330,16 @@
       "secondary_tileset": "gTileset_AlKharid",
       "border_filepath": "data/layouts/Shantay_Pass/border.bin",
       "blockdata_filepath": "data/layouts/Shantay_Pass/map.bin"
+    },
+    {
+      "id": "LAYOUT_BARROWS",
+      "name": "Barrows_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp",
+      "border_filepath": "data/layouts/Barrows/border.bin",
+      "blockdata_filepath": "data/layouts/Barrows/map.bin"
     }
   ]
 }

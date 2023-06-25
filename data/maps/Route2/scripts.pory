@@ -185,8 +185,8 @@ movement HAM_Movement5_3{
 }
 
 movement HAM_Movement5_4{
-    walk_fastest_left * 1
-    walk_fastest_up * 7
+    walk_faster_left * 1
+    walk_faster_up * 7
 }
 
 movement HAM_Movement5_5{

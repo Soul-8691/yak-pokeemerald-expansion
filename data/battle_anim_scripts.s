@@ -13389,7 +13389,7 @@ Move_ICE_BARRAGE:
 	loadspritegfx ANIM_TAG_SMALL_BUBBLES
 	loadspritegfx ANIM_TAG_WATER_IMPACT
 	monbg ANIM_DEF_PARTNER
-	monbgprio_28 ANIM_TARGET
+	splitbgprio ANIM_TARGET
 	setalpha 12, 8
 	createsprite gWaterGunProjectileSpriteTemplate, ANIM_ATTACKER, 2, 20, 0, 0, 0, 40, -25
 	waitforvisualfinish
@@ -13406,7 +13406,7 @@ Move_BLOOD_BARRAGE:
 	loadspritegfx ANIM_TAG_BLOOD_BUBBLE
 	loadspritegfx ANIM_TAG_BLOOD_BARRAGE_PARTICLES
 	monbg ANIM_DEF_PARTNER
-	monbgprio_28 ANIM_TARGET
+	splitbgprio ANIM_TARGET
 	setalpha 12, 8
 	createsprite gBloodBarrageProjectileSpriteTemplate, ANIM_ATTACKER, 2, 20, 0, 0, 0, 40, -25
 	waitforvisualfinish
@@ -13429,7 +13429,7 @@ Move_BLOOD_BARRAGE:
 Move_VENGEANCE:
 	loadspritegfx ANIM_TAG_VENGEANCE
 	monbg ANIM_TARGET
-	monbgprio_29
+	splitbgprio_all
 	launchtask AnimTask_ShakeMon 0x5 0x5 ANIM_TARGET 0x2 0x0 0x25 0x1
 	playsewithpan SE_M_NIGHTMARE, SOUND_PAN_TARGET
 	delay 0x20
@@ -13442,7 +13442,7 @@ Move_ARMADYL_STORM:
 	loadspritegfx ANIM_TAG_GUST
 	loadspritegfx ANIM_TAG_IMPACT
 	monbg ANIM_DEF_PARTNER
-	monbgprio_28 ANIM_TARGET
+	splitbgprio ANIM_TARGET
 	setalpha 12, 8
 	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
 	createvisualtask AnimTask_TranslateMonElliptical, 2, 0, 12, 4, 1, 4

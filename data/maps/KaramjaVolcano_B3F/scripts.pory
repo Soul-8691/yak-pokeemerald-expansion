@@ -342,10 +342,10 @@ movement KARAMJAVOLCANO_HAM_CAMERA_1{
 }
 
 movement KARAMJAVOLCANO_HAM_CAMERA_2{
-    walk_fastest_left * 6
-    walk_fastest_right
-    walk_fastest_down
-    walk_fastest_right
+    walk_faster_left * 6
+    walk_faster_right
+    walk_faster_down
+    walk_faster_right
 	step_end
 }
 

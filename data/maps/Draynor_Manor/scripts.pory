@@ -313,8 +313,8 @@ movement Ariane_DraynorManor_2{
 
 movement Ariane_DraynorManor_3{
 	walk_fast_down * 12
-	walk_fastest_down * 6
-	walk_fastest_right * 2
+	walk_faster_down * 6
+	walk_faster_right * 2
 }
 
 movement Ariane_DraynorManor_4{

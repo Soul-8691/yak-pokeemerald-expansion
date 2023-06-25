@@ -9911,7 +9911,7 @@ BattleScript_SliceDicePrintStrings::
 
 BattleScript_SliceDiceEnd::
 	seteffectwithchance
-	tryfaintmon BS_TARGET, FALSE, NULL
+	tryfaintmon BS_TARGET
 	moveendfrom MOVEEND_UPDATE_LAST_MOVES
 	end
 
@@ -9934,7 +9934,7 @@ BattleScript_EffectSaradominStrike::
 	waitmessage 0x40
 	resultmessage
 	waitmessage 0x40
-	tryfaintmon BS_TARGET, FALSE, NULL
+	tryfaintmon BS_TARGET
 	tryspiteppreduce BattleScript_MoveEnd
 	printstring STRINGID_PKMNREDUCEDPP
 	goto BattleScript_MoveEnd
@@ -9967,7 +9967,7 @@ BattleScript_EffectSandstormHit::
 	waitmessage 0x40
 	resultmessage
 	waitmessage 0x40
-	tryfaintmon BS_TARGET, FALSE, NULL
+	tryfaintmon BS_TARGET
 	setsandstorm
 	printfromtable gMoveWeatherChangeStringIds
 	waitmessage 0x40
@@ -10001,7 +10001,7 @@ BattleScript_EffectHealBlockHit:
 	sethealblock BattleScript_ButItFailed
 	printstring STRINGID_PKMNPREVENTEDFROMHEALING
 	waitmessage 0x40
-	tryfaintmon BS_TARGET, FALSE, NULL
+	tryfaintmon BS_TARGET
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectAuroraVeilHit:
@@ -10023,7 +10023,7 @@ BattleScript_EffectAuroraVeilHit:
 	waitmessage 0x40
 	resultmessage
 	waitmessage 0x40
-	tryfaintmon BS_TARGET, FALSE, NULL
+	tryfaintmon BS_TARGET
 	setauroraveil BS_ATTACKER
 	printfromtable gReflectLightScreenSafeguardStringIds
 	waitmessage 0x40

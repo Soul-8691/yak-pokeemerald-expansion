@@ -120,21 +120,21 @@ script GYM_NPC_4
 
 movement Movement_AlkharidGym_NPC_3
 {
-    walk_fastest_down *2
-    walk_fastest_left * 8
+    walk_faster_down *2
+    walk_faster_left * 8
     face_player
 } 
 movement Movement_AlkharidGym_NPC_3_Ali
 {
-    walk_fastest_up * 2
-    walk_fastest_left * 3
+    walk_faster_up * 2
+    walk_faster_left * 3
     face_player
 } 
 movement Movement_AlkharidGym_NPC_4
 {
-    walk_fastest_down *2
-    walk_fastest_right * 8
-    walk_fastest_up
+    walk_faster_down *2
+    walk_faster_right * 8
+    walk_faster_up
     face_player
 } 
 movement Movement_AlkharidGym_NPC_4_Ali

@@ -163,7 +163,7 @@ MOVEMENT_DraynorManorCrypt_COUNT_1:
 
 MOVEMENT_DraynorManorCrypt_HAM_1:
 	lock_facing_direction
-	walk_fastest_down
+	walk_faster_down
 	unlock_facing_direction
 	step_end
 
@@ -183,8 +183,8 @@ MOVEMENT_DraynorManorCrypt_COUNT_2:
 
 MOVEMENT_DraynorManorCrypt_HAM_3:
 	lock_facing_direction
-	walk_fastest_left
-	walk_fastest_left
+	walk_faster_left
+	walk_faster_left
 	unlock_facing_direction
 	step_end
 

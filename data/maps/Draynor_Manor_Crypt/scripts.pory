@@ -170,7 +170,7 @@ movement MOVEMENT_DraynorManorCrypt_COUNT_1 {
 
 movement MOVEMENT_DraynorManorCrypt_HAM_1 {
     lock_facing_direction
-    walk_fastest_down
+    walk_faster_down
     unlock_facing_direction
 }
 
@@ -189,7 +189,7 @@ movement MOVEMENT_DraynorManorCrypt_COUNT_2 {
 
 movement MOVEMENT_DraynorManorCrypt_HAM_3 {
     lock_facing_direction
-    walk_fastest_left *2
+    walk_faster_left *2
     unlock_facing_direction
     
 }

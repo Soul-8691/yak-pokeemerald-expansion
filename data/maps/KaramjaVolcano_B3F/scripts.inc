@@ -340,15 +340,15 @@ KARAMJAVOLCANO_HAM_CAMERA_1:
 	step_end
 
 KARAMJAVOLCANO_HAM_CAMERA_2:
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_right
-	walk_fastest_down
-	walk_fastest_right
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_right
+	walk_faster_down
+	walk_faster_right
 	step_end
 
 HAM_EVENT_KaramjaVolcano_5:
@@ -504,7 +504,7 @@ ELVARG_KaramjaVolcano::
 	setvar VAR_0x8004, SPECIES_ELVARG
 	setvar VAR_0x8005, 40 @ level
 	setvar VAR_0x8006, ITEM_NONE
-	special CreateObedientEnemyMon
+	special CreateEventLegalEnemyMon
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	waitstate

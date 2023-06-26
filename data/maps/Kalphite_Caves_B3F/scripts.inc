@@ -42,4 +42,4 @@ KalphiteWorker_Script::
 	end
 	
 	Text_KalphiteWorker:
-	.string "Screech!$"	
+	.string "Screech!$"

@@ -397,7 +397,12 @@
 #define ANIM_TAG_BLOOD_BUBBLE               (ANIM_SPRITES_START + 385)
 #define ANIM_TAG_BLOOD_BARRAGE_PARTICLES    (ANIM_SPRITES_START + 386)
 #define ANIM_TAG_VENGEANCE                  (ANIM_SPRITES_START + 387)
-#define ANIM_TAG_TELEGRAB                   (ANIM_SPRITES_START + 388)                 
+#define ANIM_TAG_TELEGRAB                   (ANIM_SPRITES_START + 388)
+#define ANIM_TAG_ALPHA_SYMBOL               (ANIM_SPRITES_START + 389)
+#define ANIM_TAG_OMEGA_SYMBOL               (ANIM_SPRITES_START + 390)
+#define ANIM_TAG_PRIMAL_PARTICLES           (ANIM_SPRITES_START + 391)
+#define ANIM_TAG_STEEL_BEAM                 (ANIM_SPRITES_START + 392)
+#define ANIM_TAG_POLTERGEIST                (ANIM_SPRITES_START + 393)
 
 // battlers
 #define ANIM_ATTACKER    0
@@ -420,7 +425,7 @@
 #define SOUND_PAN_TARGET    63
 
 // move background ids
-#define BG_DARK_ 0 // the same as BG_DARK but is unused
+#define BG_NONE 0 // the same as BG_DARK but is unused
 #define BG_DARK 1
 #define BG_GHOST 2
 #define BG_PSYCHIC 3
@@ -444,9 +449,9 @@
 #define BG_FISSURE 21
 #define BG_BUG_OPPONENT 22
 #define BG_BUG_PLAYER 23
-#define BG_SOLARBEAM_OPPONENT 24
-#define BG_SOLARBEAM_PLAYER 25
-#define BG_SOLARBEAM_CONTESTS 26
+#define BG_SOLAR_BEAM_OPPONENT 24
+#define BG_SOLAR_BEAM_PLAYER 25
+#define BG_SOLAR_BEAM_CONTESTS 26
 #define BG_MAGMA_STORM 27
 #define BG_GIGA_IMPACT_OPPONENT 28
 #define BG_GIGA_IMPACT_PLAYER 29
@@ -456,107 +461,116 @@
 #define BG_SPACIAL_REND_ON_OPPONENT 33
 #define BG_SPACIAL_REND_ON_PLAYER 34
 #define BG_DARK_VOID 35
+#define BG_WATER 36
+#define BG_NIGHTMARE 37
+#define BG_LEAF_STORM 38
+#define BG_FIRE 39
+#define BG_FIRE_2 40
+#define BG_WATER_2 41
+#define BG_POISON 42
+#define BG_AEROBLAST 43
+#define BG_HURRICANE 44
+#define BG_ELECTRIC_TERRAIN 45
+#define BG_GRASSY_TERRAIN 46
+#define BG_MISTY_TERRAIN 47
+#define BG_PSYCHIC_TERRAIN 48
+#define BG_FOCUS_BLAST 49
+#define BG_GUNK_SHOT 50
+#define BG_HYDRO_CANNON 51
+#define BG_WONDER_ROOM 52
+#define BG_MAGIC_ROOM 53
+#define BG_HYPERSPACE_FURY 54
+#define BG_BOLT_STRIKE 55
+#define BG_ZMOVE_ACTIVATE 56
+#define BG_TECTONIC_RAGE 57
+#define BG_BLUE_SKY_DAY 58
+#define BG_BLUE_SKY_AFTERNOON 59
+#define BG_BLUE_SKY_NIGHT 60
+#define BG_ZMOVE_MOUNTAIN 61
+#define BG_NEVERENDING_NIGHTMARE 62
+#define BG_WATER_PULSE 63
+#define BG_INFERNO_OVERDRIVE 64
+#define BG_BLOOM_DOOM 65
+#define BG_SHATTERED_PSYCHE 66
+#define BG_TWINKLE_TACKLE 67
+#define BG_BLACKHOLE_ECLIPSE 68
+#define BG_SOULSTEALING_7STAR_STRIKE 69
+#define BG_MALICIOUS_MOONSAULT 70
+#define BG_CLANGOROUS_SOULBLAZE 71
+#define BG_SNUGGLE_FOREVER 72
+#define BG_MAX_LIGHTNING 73
+#define BG_GARBAGE_FALLS 74
+#define BG_HYPER_BEAM 75
+#define BG_DYNAMAX_CANNON 76
+#define BG_AURA_SPHERE 77
+#define BG_STEEL_BEAM_OPPONENT 78
+#define BG_STEEL_BEAM_PLAYER 79
 
-#define BG_WATER                                36
-#define BG_NIGHTMARE                            37
-#define BG_LEAF_STORM                           38
-#define BG_FIRE                                 39
-#define BG_FIRE_2                               40
-#define BG_WATER_2                              41
-#define BG_POISON                               42
-#define BG_AEROBLAST                            43
-#define BG_HIGH_SPEED                           44  //hurricane, close combat
-#define BG_ELECTRIC_TERRAIN                     45
-#define BG_GRASSY_TERRAIN                       46
-#define BG_MISTY_TERRAIN                        47
-#define BG_PSYCHIC_TERRAIN                      48
-#define BG_FOCUS_BLAST                          49
-#define BG_GUNK_SHOT                            50
-#define BG_HYDRO_CANNON                         51
-#define BG_WONDER_ROOM                          52
-#define BG_MAGIC_ROOM                           53
-#define BG_HYPERSPACE_FURY                      54
-#define BG_BOLT_STRIKE                          55
-#define BG_ZMOVE_ACTIVATE                       56
-#define BG_TECTONIC_RAGE                        57
-#define BG_BLUE_SKY_DAY                         58
-#define BG_BLUE_SKY_AFTERNOON                   59
-#define BG_BLUE_SKY_NIGHT                       60
-#define BG_ZMOVE_MOUNTAIN                       61
-#define BG_NEVERENDING_NIGHTMARE                62
-#define BG_WATER_PULSE                          63
-#define BG_INFERNO_OVERDRIVE                    64
-#define BG_BLOOM_DOOM                           65
-#define BG_SHATTERED_PSYCHE                     66
-#define BG_TWINKLE_TACKLE                       67
-#define BG_BLACKHOLE_ECLIPSE                    68
-#define BG_SOULSTEALING_7STAR_STRIKE            69
-#define BG_MALICIOUS_MOONSAULT                  70
-#define BG_CLANGOROUS_SOULBLAZE                 71
-#define BG_SNUGGLE_FOREVER                      72
-#define BG_MAX_LIGHTNING                        73
-#define BG_GARBAGE_FALLS                        74
-#define BG_HYPER_BEAM                           75
-#define BG_DYNAMAX_CANNON                       76
-#define BG_AURA_SPHERE                          77
+// table ids for general animations (gBattleAnims_General)
+#define B_ANIM_CASTFORM_CHANGE          0
+#define B_ANIM_STATS_CHANGE             1
+#define B_ANIM_SUBSTITUTE_FADE          2
+#define B_ANIM_SUBSTITUTE_APPEAR        3
+#define B_ANIM_POKEBLOCK_THROW          4
+#define B_ANIM_ITEM_KNOCKOFF            5
+#define B_ANIM_TURN_TRAP                6
+#define B_ANIM_HELD_ITEM_EFFECT         7
+#define B_ANIM_SMOKEBALL_ESCAPE         8
+#define B_ANIM_HANGED_ON                9
+#define B_ANIM_RAIN_CONTINUES           10
+#define B_ANIM_SUN_CONTINUES            11
+#define B_ANIM_SANDSTORM_CONTINUES      12
+#define B_ANIM_HAIL_CONTINUES           13
+#define B_ANIM_LEECH_SEED_DRAIN         14
+#define B_ANIM_MON_HIT                  15
+#define B_ANIM_ITEM_STEAL               16
+#define B_ANIM_SNATCH_MOVE              17
+#define B_ANIM_FUTURE_SIGHT_HIT         18
+#define B_ANIM_DOOM_DESIRE_HIT          19
+#define B_ANIM_FOCUS_PUNCH_SETUP        20
+#define B_ANIM_INGRAIN_HEAL             21
+#define B_ANIM_WISH_HEAL                22
+#define B_ANIM_MEGA_EVOLUTION           23
+#define B_ANIM_ILLUSION_OFF             24
+#define B_ANIM_FORM_CHANGE              25
+#define B_ANIM_SLIDE_OFFSCREEN          26 // for Emergency Exit
+#define B_ANIM_RESTORE_BG               27 // for Terrain Endings
+#define B_ANIM_TOTEM_FLARE              28 // Totem boosts aura flare
+#define B_ANIM_GULP_MISSILE             29
+#define B_ANIM_STRONG_WINDS             30
+#define B_ANIM_PRIMAL_REVERSION         31
+#define B_ANIM_AQUA_RING_HEAL           32
+#define B_ANIM_BEAK_BLAST_SETUP         33
+#define B_ANIM_SHELL_TRAP_SETUP         34
+#define B_ANIM_ZMOVE_ACTIVATE           35 // Using Z Moves
 
-// table ids for general animations
-#define B_ANIM_CASTFORM_CHANGE          0x0
-#define B_ANIM_STATS_CHANGE             0x1
-#define B_ANIM_SUBSTITUTE_FADE          0x2
-#define B_ANIM_SUBSTITUTE_APPEAR        0x3
-#define B_ANIM_POKEBLOCK_THROW          0x4
-#define B_ANIM_ITEM_KNOCKOFF            0x5
-#define B_ANIM_TURN_TRAP                0x6
-#define B_ANIM_HELD_ITEM_EFFECT         0x7
-#define B_ANIM_SMOKEBALL_ESCAPE         0x8
-#define B_ANIM_HANGED_ON                0x9
-#define B_ANIM_RAIN_CONTINUES           0xA
-#define B_ANIM_SUN_CONTINUES            0xB
-#define B_ANIM_SANDSTORM_CONTINUES      0xC
-#define B_ANIM_HAIL_CONTINUES           0xD
-#define B_ANIM_LEECH_SEED_DRAIN         0xE
-#define B_ANIM_MON_HIT                  0xF
-#define B_ANIM_ITEM_STEAL               0x10
-#define B_ANIM_SNATCH_MOVE              0x11
-#define B_ANIM_FUTURE_SIGHT_HIT         0x12
-#define B_ANIM_DOOM_DESIRE_HIT          0x13
-#define B_ANIM_FOCUS_PUNCH_SETUP        0x14
-#define B_ANIM_INGRAIN_HEAL             0x15
-#define B_ANIM_WISH_HEAL                0x16
-#define B_ANIM_MEGA_EVOLUTION           0x17
-#define B_ANIM_TERRAIN_MISTY            0x18
-#define B_ANIM_TERRAIN_GRASSY           0x19
-#define B_ANIM_TERRAIN_ELECTRIC         0x1A
-#define B_ANIM_TERRAIN_PSYCHIC          0x1B
-#define B_ANIM_ILLUSION_OFF             0x1C
-#define B_ANIM_FORM_CHANGE              0x1D
-#define B_ANIM_SLIDE_OFFSCREEN          0x1E // for Emergency Exit
+// special animations table (gBattleAnims_Special)
+#define B_ANIM_LVL_UP                   0
+#define B_ANIM_SWITCH_OUT_PLAYER_MON    1
+#define B_ANIM_SWITCH_OUT_OPPONENT_MON  2
+#define B_ANIM_BALL_THROW               3
+#define B_ANIM_BALL_THROW_WITH_TRAINER  4
+#define B_ANIM_SUBSTITUTE_TO_MON        5
+#define B_ANIM_MON_TO_SUBSTITUTE        6
+#define B_ANIM_CRITICAL_CAPTURE_THROW   7
 
-// special animations table
-#define B_ANIM_LVL_UP                   0x0
-#define B_ANIM_SWITCH_OUT_PLAYER_MON    0x1
-#define B_ANIM_SWITCH_OUT_OPPONENT_MON  0x2
-#define B_ANIM_BALL_THROW               0x3
-#define B_ANIM_BALL_THROW_WITH_TRAINER  0x4
-#define B_ANIM_SUBSTITUTE_TO_MON        0x5
-#define B_ANIM_MON_TO_SUBSTITUTE        0x6
-#define B_ANIM_CRITICAL_CAPTURE_THROW   0x7
-
-// status animation table
-#define B_ANIM_STATUS_PSN               0x0
-#define B_ANIM_STATUS_CONFUSION         0x1
-#define B_ANIM_STATUS_BRN               0x2
-#define B_ANIM_STATUS_INFATUATION       0x3
-#define B_ANIM_STATUS_SLP               0x4
-#define B_ANIM_STATUS_PRZ               0x5
-#define B_ANIM_STATUS_FRZ               0x6
-#define B_ANIM_STATUS_CURSED            0x7
-#define B_ANIM_STATUS_NIGHTMARE         0x8
-#define B_ANIM_STATUS_WRAPPED           0x9 // does not actually exist
+// status animation table (gBattleAnims_StatusConditions)
+#define B_ANIM_STATUS_PSN               0
+#define B_ANIM_STATUS_CONFUSION         1
+#define B_ANIM_STATUS_BRN               2
+#define B_ANIM_STATUS_INFATUATION       3
+#define B_ANIM_STATUS_SLP               4
+#define B_ANIM_STATUS_PRZ               5
+#define B_ANIM_STATUS_FRZ               6
+#define B_ANIM_STATUS_CURSED            7
+#define B_ANIM_STATUS_NIGHTMARE         8
+#define B_ANIM_STATUS_WRAPPED           9 // does not actually exist
 
 // Tasks with return values often assign them to gBattleAnimArgs[7].
 #define ARG_RET_ID 7
+
+// For createsprite macro to use internally
+#define ANIMSPRITE_IS_TARGET (1 << 7)
 
 // Trapping Wrap-like moves end turn animation.
 #define TRAP_ANIM_BIND 0
@@ -565,6 +579,9 @@
 #define TRAP_ANIM_WHIRLPOOL 2
 #define TRAP_ANIM_CLAMP 3
 #define TRAP_ANIM_SAND_TOMB 4
+#define TRAP_ANIM_MAGMA_STORM 5
+#define TRAP_ANIM_INFESTATION 6
+#define TRAP_ANIM_SNAP_TRAP 7
 
 // Weather defines for battle animation scripts.
 #define ANIM_WEATHER_NONE 0
@@ -572,34 +589,6 @@
 #define ANIM_WEATHER_RAIN 2
 #define ANIM_WEATHER_SANDSTORM 3
 #define ANIM_WEATHER_HAIL 4
-
-// Battle mon back animations.
-#define BACK_ANIM_NONE                         0x00
-#define BACK_ANIM_H_SLIDE_QUICK                0x01
-#define BACK_ANIM_H_SLIDE                      0x02
-#define BACK_ANIM_H_SLIDE_WITH_V_COMPRESS_1    0x03
-#define BACK_ANIM_H_SLIDE_WITH_V_COMPRESS_2    0x04
-#define BACK_ANIM_SHRINK_GROW_1                0x05
-#define BACK_ANIM_GROW_1                       0x06
-#define BACK_ANIM_CIRCLE_MOVE_COUNTERCLOCKWISE 0x07
-#define BACK_ANIM_HORIZONTAL_SHAKE             0x08
-#define BACK_ANIM_VERTICAL_SHAKE               0x09
-#define BACK_ANIM_V_SHAKE_WITH_H_SLIDE         0x0a
-#define BACK_ANIM_VERTICAL_STRETCH             0x0b
-#define BACK_ANIM_HORIZONTAL_STRETCH           0x0c
-#define BACK_ANIM_GROW_2                       0x0d
-#define BACK_ANIM_V_SHAKE_WITH_PAUSE           0x0e
-#define BACK_ANIM_CIRCLE_MOVE_CLOCKWISE        0x0f
-#define BACK_ANIM_CONCAVE_DOWN_ARC_SWAY_SMALL  0x10
-#define BACK_ANIM_CONCAVE_DOWN_ARC_SWAY_LARGE  0x11
-#define BACK_ANIM_CONCAVE_UP_ARC_SWAY_LARGE    0x12
-#define BACK_ANIM_DIP_RIGHT_SIDE               0x13
-#define BACK_ANIM_SHRINK_GROW_2                0x14
-#define BACK_ANIM_JOLT_RIGHT                   0x15
-#define BACK_ANIM_FLASH_YELLOW_WITH_SHAKE      0x16
-#define BACK_ANIM_FADE_RED_WITH_SHAKE          0x17
-#define BACK_ANIM_FADE_GREEN_WITH_SHAKE        0x18
-#define BACK_ANIM_FADE_BLUE_WITH_SHAKE         0x19
 
 // mon pal blend
 #define ANIM_PAL_BG             0x1
@@ -620,10 +609,32 @@
 #define ANIM_RIGHT_FIST  0
 #define ANIM_LEFT_FIST   2
 
+// fist/chop frames
+#define ANIM_FIST_1  0
+#define ANIM_FOOT_1  1
+#define ANIM_FOOT_2  2
+#define ANIM_CHOP    3
+
 // surf wave palettes
 #define ANIM_SURF_PAL_SURF           0
 #define ANIM_SURF_PAL_MUDDY_WATER    1
 #define ANIM_SURF_PAL_SLUDGE_WAVE    2
+
+// Flags given to various functions to indicate which palettes to consider.
+// Handled by UnpackSelectedBattlePalettes
+#define F_PAL_BG          (1 << 0)
+#define F_PAL_ATTACKER    (1 << 1)
+#define F_PAL_TARGET      (1 << 2)
+#define F_PAL_ATK_PARTNER (1 << 3)
+#define F_PAL_DEF_PARTNER (1 << 4)
+#define F_PAL_ANIM_1      (1 << 5) // Palette set for GetBattleAnimBg1Data/GetBgDataForTransform. Only used (ineffectually?) by Aromatherapy.
+#define F_PAL_ANIM_2      (1 << 6) // Palette set for GetBattleAnimBgData/GetBgDataForTransform. Unused.
+#define F_PAL_ATK_SIDE    (F_PAL_ATTACKER | F_PAL_ATK_PARTNER)
+#define F_PAL_DEF_SIDE    (F_PAL_TARGET | F_PAL_DEF_PARTNER)
+#define F_PAL_BATTLERS    (F_PAL_ATK_SIDE | F_PAL_DEF_SIDE)
+// The below are only used by AnimTask_BlendBattleAnimPal to get battler sprite palettes by position rather than by role.
+// It's redundant with F_PAL_BATTLERS, because they're only ever used together to refer to all the battlers at once.
+#define F_PAL_BATTLERS_2  (1 << 7 | 1 << 8 | 1 << 9 | 1 << 10)
 
 
 #endif // GUARD_CONSTANTS_BATTLE_ANIM_H

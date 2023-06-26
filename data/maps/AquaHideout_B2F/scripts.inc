@@ -1,5 +1,3 @@
-
-
-AquaHideout_B2F_MapScripts:: @ 8233DCF
+AquaHideout_B2F_MapScripts::
 	.byte 0
 

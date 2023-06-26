@@ -1,3 +1,3 @@
-AbandonedShip_Corridors_B1F_MapScripts:: @ 8237D84
+AbandonedShip_Corridors_B1F_MapScripts::
 	.byte 0
 

@@ -166,7 +166,7 @@ string generate_map_events_text(Json map_data) {
         for (unsigned int i = 0; i < map_data["object_events"].array_items().size(); i++) {
             auto obj_event = map_data["object_events"].array_items()[i];
             text << "\tobject_event " << i + 1 << ", "
-                 << obj_event["graphics_id"].string_value() << ", 0, "
+                 << obj_event["graphics_id"].string_value() << ", "
                  << obj_event["x"].int_value() << ", "
                  << obj_event["y"].int_value() << ", "
                  << obj_event["elevation"].int_value() << ", "
@@ -230,7 +230,7 @@ string generate_map_events_text(Json map_data) {
         text << bgs_label << ":\n";
         for (auto &bg_event : map_data["bg_events"].array_items()) {
             if (bg_event["type"] == "sign") {
-                text << "\tbg_event "
+                text << "\tbg_sign_event "
                      << bg_event["x"].int_value() << ", "
                      << bg_event["y"].int_value() << ", "
                      << bg_event["elevation"].int_value() << ", "
@@ -395,7 +395,7 @@ string generate_map_constants_text(string groups_filepath, Json groups_data) {
     int group_num = 0;
 
     for (auto &group : groups_data["group_order"].array_items()) {
-        text << "// Map Group " << group_num << "\n";
+        text << "// " << group.string_value() << "\n";
         vector<Json> map_ids;
         size_t max_length = 0;
 

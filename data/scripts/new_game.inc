@@ -1,4 +1,4 @@
-EventScript_ResetAllBerries:: @ 827149D
+EventScript_ResetAllBerries:: @ 827149Df
 
 	@ Route 102
 	setberrytree BERRY_TREE_ROUTE_102_PECHA, ITEM_TO_BERRY(ITEM_PECHA_BERRY), BERRY_STAGE_BERRIES

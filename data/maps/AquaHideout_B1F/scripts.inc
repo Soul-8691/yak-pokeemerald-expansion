@@ -1,4 +1,4 @@
-AquaHideout_B1F_MapScripts:: @ 82339A7
+AquaHideout_B1F_MapScripts::
 
 	.byte 0
 

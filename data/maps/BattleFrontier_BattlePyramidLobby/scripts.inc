@@ -1,5 +1,4 @@
-
-BattleFrontier_BattlePyramidLobby_MapScripts:: @ 8250716
+BattleFrontier_BattlePyramidLobby_MapScripts::
 
 	.byte 0
 

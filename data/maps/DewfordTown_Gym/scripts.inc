@@ -1,3 +1,3 @@
-DewfordTown_Gym_MapScripts:: @ 81FC63C
+DewfordTown_Gym_MapScripts::
 	.byte 0
 

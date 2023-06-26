@@ -111,32 +111,32 @@ GYM_NPC_1_17:
 
 
 Movement_AlkharidGym_NPC_1:
-	walk_fastest_up
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_left
-	walk_fastest_left
+	walk_faster_up
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
+	walk_faster_left
 	step_end
 
 Movement_AlkharidGym_NPC_1_Ali:
-	walk_fastest_up
-	walk_fastest_left
-	walk_fastest_left
+	walk_faster_up
+	walk_faster_left
+	walk_faster_left
 	face_player
 	step_end
 
 Movement_AlkharidGym_NPC_2:
-	walk_fastest_down
-	walk_fastest_right
-	walk_fastest_right
-	walk_fastest_right
-	walk_fastest_right
-	walk_fastest_right
-	walk_fastest_right
-	walk_fastest_right
+	walk_faster_down
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
 	step_end
 
 Movement_AlkharidGym_NPC_2_Ali:

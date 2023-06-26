@@ -377,7 +377,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Duke[] = {
     .lvl = 11,
     .species = SPECIES_FROG_NORMAL_FORM,
     .heldItem = ITEM_NONE
-    },   
+    },
 };
 
 static const struct TrainerMonItemDefaultMoves sParty_Mugger_Lum_Swamp[] = {
@@ -398,7 +398,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Mugger_Lum_Swamp[] = {
     .lvl = 10,
     .species = SPECIES_RAT_NORMAL_FORM,
     .heldItem = ITEM_NONE
-    }   
+    }
 };
 
 static const struct TrainerMonItemDefaultMoves sParty_Skeleton_Lum_Swamp[] = {
@@ -407,7 +407,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Skeleton_Lum_Swamp[] = {
     .lvl = 12,
     .species = SPECIES_HAND_CREEPING_FORM,
     .heldItem = ITEM_NONE
-    } 
+    }
 };
 
 static const struct TrainerMonItemDefaultMoves sParty_Lum_Swamp_GrassTeeth[] = {
@@ -422,7 +422,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Lum_Swamp_GrassTeeth[] = {
     .lvl = 12,
     .species = SPECIES_RAT_NORMAL_FORM,
     .heldItem = ITEM_NONE
-    }  
+    }
 };
 
 //MITHRILMAN------------------------------------------------------------------------------------------
@@ -1334,8 +1334,8 @@ static const struct TrainerMonItemDefaultMoves sParty_ROUTE8_DnD[] = {
     .species = SPECIES_PENGUIN_DISGUISE_BUSH_FORM,
     .heldItem = ITEM_NONE
     }
-    
-    
+
+
 };
 
 static const struct TrainerMonItemDefaultMoves sParty_ROUTE8_MINER_1[] = {
@@ -2123,7 +2123,7 @@ static const struct TrainerMonItemDefaultMoves sParty_DWARVENMINES_DWARF_1[] = {
     .species = SPECIES_TORTOISE_NORMAL_FORM,
     .heldItem = ITEM_NONE
     }
-    
+
 };
 static const struct TrainerMonItemDefaultMoves sParty_DWARVENMINES_DWARF_2[] = {
     {
@@ -2488,7 +2488,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_PUB_SARIM_2[] = {
     .species = SPECIES_MONKFISH_FRESH_FORM,
     },
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_PUB_SARIM_3[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_PUB_SARIM_3[] = {
     {
     .iv = 0,
     .lvl = 20,
@@ -2500,14 +2500,14 @@ static const struct TrainerMonNoItemDefaultMoves sParty_PUB_SARIM_3[] = {
     .species = SPECIES_SCORPION_POISON_FORM,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Miner[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Miner[] = {
     {
     .iv = 0,
     .lvl = 23,
     .species = SPECIES_SPOOKAXE,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Ironman[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Ironman[] = {
     {
     .iv = 0,
     .lvl = 18,
@@ -2524,7 +2524,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Ironman[
     .species = SPECIES_ANIMOUR,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Slayer[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Slayer[] = {
     {
     .iv = 0,
     .lvl = 20,
@@ -2543,7 +2543,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Slayer[]
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_COUPLE[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_COUPLE[] = {
     {
     .iv = 0,
     .lvl = 26,
@@ -2566,7 +2566,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_COUPLE[]
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_1[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 24,
@@ -2579,7 +2579,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_1[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_2[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_2[] = {
     {
     .iv = 0,
     .lvl = 28,
@@ -2587,7 +2587,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_2[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_3[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_3[] = {
     {
     .iv = 0,
     .lvl = 26,
@@ -2600,7 +2600,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_3[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_4[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_4[] = {
     {
     .iv = 0,
     .lvl = 1,
@@ -2619,7 +2619,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE23_TRAINER_4[] = {
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_DRAGONBOT_1[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_DRAGONBOT_1[] = {
     {
     .iv = 0,
     .lvl = 31,
@@ -2637,7 +2637,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_DRAGONBO
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_DRAGONBOT_2[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_DRAGONBOT_2[] = {
     {
     .iv = 0,
     .lvl = 32,
@@ -2660,7 +2660,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_DRAGONBO
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Slayer_1[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Slayer_1[] = {
     {
     .iv = 0,
     .lvl = 36,
@@ -2673,7 +2673,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_RimmingtonMines_Slayer_1
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Varrock_Max[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_Varrock_Max[] = {
     {
     .iv = 0,
     .lvl = 76,
@@ -2703,12 +2703,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Varrock_Max[] = {
     .iv = 0,
     .lvl = 66,
     .species = SPECIES_CROCODILE_MUTADILE_FORM,
-    }    
+    }
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Soffan_and_Quo[] = { 
-    
+static const struct TrainerMonNoItemDefaultMoves sParty_Soffan_and_Quo[] = {
+
     {
     .iv = 0,
     .lvl = 50,
@@ -2717,7 +2717,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Soffan_and_Quo[] = {
     {
     .iv = 0,
     .lvl = 50,
-    .species = SPECIES_DEMON_TSTANON_FORM, 
+    .species = SPECIES_DEMON_TSTANON_FORM,
     },
     {
     .iv = 0,
@@ -2737,15 +2737,15 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Soffan_and_Quo[] = {
     {
     .iv = 0,
     .lvl = 50,
-    .species = SPECIES_CERBERUS, 
+    .species = SPECIES_CERBERUS,
     }
-    
+
 };
 
 
 //ROUTE18
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER1[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER1[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -2758,7 +2758,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER1[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER2[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER2[] = {
     {
     .iv = 0,
     .lvl = 33,
@@ -2791,7 +2791,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER2[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER3[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER3[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -2799,7 +2799,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER3[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER4[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER4[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -2812,7 +2812,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER4[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER5[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER5[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -2825,7 +2825,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER5[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER6[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER6[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -2838,7 +2838,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER6[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER7[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER7[] = {
     {
     .iv = 0,
     .lvl = 32,
@@ -2853,7 +2853,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE18_TRAINER7[] = {
 
 //ROUTE20
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_TRAINER_1[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 32,
@@ -2871,7 +2871,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_TRAINER_1[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_TRAINER_2[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_TRAINER_2[] = {
     {
     .iv = 0,
     .lvl = 30,
@@ -2899,7 +2899,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_TRAINER_2[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_TRAINER_3[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_TRAINER_3[] = {
     {
     .iv = 0,
     .lvl = 32,
@@ -2917,7 +2917,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_TRAINER_3[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_TRAINER_4[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_TRAINER_4[] = {
     {
     .iv = 0,
     .lvl = 30,
@@ -2940,7 +2940,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_TRAINER_4[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_DUO[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_DUO[] = {
     {
     .iv = 0,
     .lvl = 32,
@@ -2963,7 +2963,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE20_DUO[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE19_TRAINER_1[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE19_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 32,
@@ -2977,7 +2977,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE19_TRAINER_1[] = {
 };
 //BARBARIAN GYM
 
-static const struct TrainerMonNoItemDefaultMoves sParty_BARBARIAN_GYM_TRAINER_1[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_BARBARIAN_GYM_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 45,
@@ -2995,7 +2995,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_BARBARIAN_GYM_TRAINER_1[
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_BARBARIAN_GYM_TRAINER_2[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_BARBARIAN_GYM_TRAINER_2[] = {
     {
     .iv = 0,
     .lvl = 46,
@@ -3013,7 +3013,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_BARBARIAN_GYM_TRAINER_2[
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_BARBARIAN_GYM_TRAINER_3[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_BARBARIAN_GYM_TRAINER_3[] = {
     {
     .iv = 0,
     .lvl = 46,
@@ -3060,7 +3060,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_BARBARIAN_GYM_GUNTHOR[] =
     .lvl = 47,
     .species = SPECIES_SOURHOG,
     .moves = {MOVE_PAIN_SPLIT, MOVE_SUPERPOWER, MOVE_ODOR_SLEUTH, MOVE_BULK_UP}
-    }, 
+    },
     {
     .iv = 0,
     .lvl = 52,
@@ -3072,7 +3072,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_BARBARIAN_GYM_GUNTHOR[] =
 //ROUTE13
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_1[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 31,
@@ -3095,7 +3095,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_1[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_2[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_2[] = {
     {
     .iv = 0,
     .lvl = 33,
@@ -3108,7 +3108,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_2[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_3[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_3[] = {
     {
     .iv = 0,
     .lvl = 32,
@@ -3126,7 +3126,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_3[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_4[] = { 
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_4[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -3152,7 +3152,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_5[] = { 
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_6[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_6[] = {
     {
     .iv = 0,
     .lvl = 30,
@@ -3175,7 +3175,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_6[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_7[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_7[] = {
     {
     .iv = 0,
     .lvl = 32,
@@ -3188,7 +3188,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_7[] = {
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_8[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_8[] = {
     {
     .iv = 0,
     .lvl = 32,
@@ -3196,7 +3196,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_8[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_9[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_9[] = {
     {
     .iv = 0,
     .lvl = 32,
@@ -3220,7 +3220,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE13_TRAINER_9[] = {
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE14_TRAINER_1[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE14_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 33,
@@ -3234,7 +3234,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE14_TRAINER_1[] = {
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE14_TRAINER_2[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE14_TRAINER_2[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -3249,7 +3249,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE14_TRAINER_2[] = {
 
 //ROUTE16
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_1[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -3262,7 +3262,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_1[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_2[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_2[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -3286,7 +3286,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_2[] = {
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_3[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_3[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -3304,7 +3304,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_3[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_4[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_4[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -3317,7 +3317,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_4[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_5[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_5[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -3335,7 +3335,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_5[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_6[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_6[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -3348,7 +3348,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE16_TRAINER_6[] = {
     }
 };
 //route17
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE17_TRAINER_1[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE17_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -3366,7 +3366,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE17_TRAINER_1[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE17_TRAINER_2[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE17_TRAINER_2[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -3384,7 +3384,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE17_TRAINER_2[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Prezleek[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_Prezleek[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -3397,7 +3397,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Prezleek[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_NYCHANNEL[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_NYCHANNEL[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -3415,7 +3415,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_NYCHANNEL[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GERTRUDE[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_GERTRUDE[] = {
     {
     .iv = 0,
     .lvl = 30,
@@ -3443,7 +3443,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GERTRUDE[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_BOT1[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_BOT1[] = {
     {
     .iv = 0,
     .lvl = 19,
@@ -3452,21 +3452,21 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_BOT1[] =
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_TRAINER_1[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 19,
     .species = SPECIES_SCORPION_PIT_FORM,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_TRAINER_2[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_TRAINER_2[] = {
     {
     .iv = 0,
     .lvl = 19,
     .species = SPECIES_EEL_DUSK_FORM,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_TRAINER_3[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_TRAINER_3[] = {
     {
     .iv = 0,
     .lvl = 20,
@@ -3481,7 +3481,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_TRAINER_
 
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_WOODCUTTER1[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_WOODCUTTER1[] = {
     {
     .iv = 0,
     .lvl = 18,
@@ -3494,7 +3494,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_WOODCUTT
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_SINKHOLE_NPC_FORGOTTENWARRIOR_1[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_SINKHOLE_NPC_FORGOTTENWARRIOR_1[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -3513,7 +3513,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_SINKHOLE_NPC_FORGOTTENWA
 };
 
 //Route28
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_1[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 30,
@@ -3525,7 +3525,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_1[] = {
     .species = SPECIES_SALAMANDER_ORANGE_FORM,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_2[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_2[] = {
     {
     .iv = 0,
     .lvl = 30,
@@ -3542,14 +3542,14 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_2[] = {
     .species = SPECIES_CHICKEN_VARROCK_FORM,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_3[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_3[] = {
     {
     .iv = 0,
     .lvl = 30,
     .species = SPECIES_MONKEY_NINJA_FORM,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_4[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_4[] = {
     {
     .iv = 0,
     .lvl = 30,
@@ -3561,7 +3561,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_4[] = {
     .species = SPECIES_SPIDER_TEMPLE_FORM,
     },
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_5[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_5[] = {
     {
     .iv = 0,
     .lvl = 30,
@@ -3579,7 +3579,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE28_TRAINER_5[] = {
     }
 };
 //Route29
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_1[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 30,
@@ -3591,7 +3591,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_1[] = {
     .species = SPECIES_DREADNIP,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_2[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_2[] = {
     {
     .iv = 0,
     .lvl = 30,
@@ -3603,14 +3603,14 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_2[] = {
     .species = SPECIES_DESERTWYRM,
     },
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_3[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_3[] = {
     {
     .iv = 0,
     .lvl = 30,
     .species = SPECIES_ROCK_STRANGE_FORM,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_4[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_4[] = {
     {
     .iv = 0,
     .lvl = 30,
@@ -3627,7 +3627,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_4[] = {
     .species = SPECIES_CHICKEN_VARROCK_FORM,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_5[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_5[] = {
     {
     .iv = 0,
     .lvl = 30,
@@ -3650,7 +3650,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE29_TRAINER_5[] = {
     }
 };
 //Route33
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE33_GOBLIN1[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE33_GOBLIN1[] = {
     {
     .iv = 0,
     .lvl = 24,
@@ -3662,7 +3662,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE33_GOBLIN1[] = {
     .species = SPECIES_BANDLING,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE33_GOBLIN2[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE33_GOBLIN2[] = {
     {
     .iv = 0,
     .lvl = 24,
@@ -3674,7 +3674,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE33_GOBLIN2[] = {
     .species = SPECIES_GOAT_MOUNTAIN_FORM,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE33_ZAMORAK1[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE33_ZAMORAK1[] = {
     {
     .iv = 0,
     .lvl = 24,
@@ -3688,7 +3688,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_VARROCK_GYM_KINGROALD[] =
     .iv = 0,
     .lvl = 42,
     .species = SPECIES_RABBIT,
-    .moves = {MOVE_DRAINING_KISS, MOVE_BOUNCE, MOVE_HI_JUMP_KICK, MOVE_RETURN}
+    .moves = {MOVE_DRAINING_KISS, MOVE_BOUNCE, MOVE_HIGH_JUMP_KICK, MOVE_RETURN}
     },
     {
     .iv = 0,
@@ -3708,9 +3708,9 @@ static const struct TrainerMonNoItemCustomMoves sParty_VARROCK_GYM_KINGROALD[] =
     .species = SPECIES_GIANT_FROG_ROYAL_FORM,
     .moves = {MOVE_DRAINING_KISS, MOVE_BOUNCE, MOVE_MUD_BOMB, MOVE_BUBBLE_BEAM}
     },
-    
+
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_1[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_1[] = {
     {
     .iv = 0,
     .lvl = 35,
@@ -3722,7 +3722,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_1[] = {
     .species = SPECIES_COW,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_2[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_2[] = {
     {
     .iv = 0,
     .lvl = 36,
@@ -3734,7 +3734,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_2[] = {
     .species = SPECIES_TOOTHS,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_3[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_3[] = {
     {
     .iv = 0,
     .lvl = 34,
@@ -3751,7 +3751,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_3[] = {
     .species = SPECIES_PENANCE_SPAWN,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_4[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_4[] = {
     {
     .iv = 0,
     .lvl = 37,
@@ -3759,7 +3759,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_4[] = {
     }
 };
 //ROUTE 15
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_1[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_1[] = {
     {
     .iv = 0,
     .lvl = 32,
@@ -3771,7 +3771,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_1[] = {
     .species = SPECIES_ROCK_CRAB_AMMONITE_FORM,
     },
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_2[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_2[] = {
     {
     .iv = 0,
     .lvl = 33,
@@ -3788,14 +3788,14 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_2[] = {
     .species = SPECIES_PET_ROCK,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_3[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_3[] = {
     {
     .iv = 0,
     .lvl = 34,
     .species = SPECIES_ROCK_STRANGE_FORM,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_4[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_4[] = {
     {
     .iv = 0,
     .lvl = 32,
@@ -3807,7 +3807,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_4[] = {
     .species = SPECIES_CABBAGE,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_5[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_5[] = {
     {
     .iv = 0,
     .lvl = 33,
@@ -3819,7 +3819,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_5[] = {
     .species = SPECIES_COCKROACH_SOLDIER,
     }
 };
-static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_6[] = {  
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_6[] = {
     {
     .iv = 0,
     .lvl = 34,

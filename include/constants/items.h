@@ -36,7 +36,10 @@
 #define ITEM_GRANITE_POUCH 28
 #define ITEM_ANCIENT_POUCH 29
 #define ITEM_ELEMENTAL_POUCH 30
-
+// Note: If moving ball IDs around, updating FIRST_BALL/LAST_BALL is not sufficient
+//       Several places expect the ball IDs to be first and contiguous (e.g. gBattlescriptsForBallThrow and MON_DATA_POKEBALL)
+//       If adding new balls, it's easiest to insert them after the last ball and increment the below IDs (and removing ITEM_034 for example)
+#define FIRST_BALL ITEM_NORMAL_POUCH
 #define LAST_BALL ITEM_ELEMENTAL_POUCH
 
 #define ITEM_POTION 31
@@ -147,6 +150,8 @@
 #define ITEM_076 136
 #define ITEM_077 137
 #define ITEM_078 138
+
+// Mails
 #define ITEM_ORANGE_MAIL 139
 #define ITEM_HARBOR_MAIL 140
 #define ITEM_GLITTER_MAIL 141
@@ -160,7 +165,9 @@
 #define ITEM_FAB_MAIL 149
 #define ITEM_RETRO_MAIL 150
 
+#define FIRST_MAIL_INDEX ITEM_ORANGE_MAIL
 
+//Berries
 #define ITEM_CHERI_BERRY 151
 #define ITEM_CHESTO_BERRY 152
 #define ITEM_PECHA_BERRY 153
@@ -227,10 +234,16 @@
 #define ITEM_WATERMELON 212
 #define ITEM_WHITEBERRY 213
 
-//
 #define ITEM_ENIGMA_BERRY 214
 
 
+#define FIRST_BERRY_INDEX ITEM_CHERI_BERRY
+#define LAST_BERRY_INDEX  ITEM_ENIGMA_BERRY
+
+#define MAX_BERRY_INDEX ITEM_ENIGMA_BERRY
+
+
+// Battle Held items
 #define ITEM_0B0 215
 #define ITEM_0B1 216
 #define ITEM_0B2 217
@@ -309,11 +322,15 @@
 #define ITEM_0FB 290
 #define ITEM_0FC 291
 #define ITEM_0FD 292
+
+// Contest held items
 #define ITEM_RED_SCARF 293
 #define ITEM_BLUE_SCARF 294
 #define ITEM_PINK_SCARF 295
 #define ITEM_GREEN_SCARF 296
 #define ITEM_YELLOW_SCARF 297
+
+// Key Items
 #define ITEM_MACH_BIKE 298
 #define ITEM_COIN_CASE 299
 #define ITEM_ITEMFINDER 300
@@ -344,6 +361,8 @@
 #define ITEM_ROOT_FOSSIL 325
 #define ITEM_CLAW_FOSSIL 326
 #define ITEM_DEVON_SCOPE 327
+
+// TMs/HMs
 #define ITEM_TM01 328
 #define ITEM_TM02 329
 #define ITEM_TM03 330
@@ -496,9 +515,11 @@
 #define ITEM_HM07_WATERFALL ITEM_HM07
 #define ITEM_HM08_DIVE ITEM_HM08
 
-
+// Unknown
 #define ITEM_15B 402
 #define ITEM_15C 403
+
+// FireRed/LeafGreen
 #define ITEM_OAKS_PARCEL 404
 #define ITEM_POKE_FLUTE 405
 #define ITEM_SECRET_KEY 406
@@ -525,6 +546,8 @@
 #define ITEM_POWDER_JAR 427
 #define ITEM_RUBY 428
 #define ITEM_SAPPHIRE 429
+
+// Emerald
 #define ITEM_MAGMA_EMBLEM 430
 #define ITEM_OLD_SEA_MAP 431
 
@@ -734,7 +757,7 @@
 #define ITEM_PHOENIX_NECKLACE 613
 #define ITEM_MITHRIL_SCIMITAR 614
 #define ITEM_SNOW_GLOBE 615
-//QUEST 
+//QUEST
 //--------- Cooks Assistant
 #define ITEM_SUPER_LARGE_EGG 616
 #define ITEM_TOP_QUALITY_MILK 617
@@ -778,10 +801,9 @@
 #define ITEM_FRIENDSHIP_BOOSTER 648
 
 #define ITEMS_COUNT 649
+// Last available item ID due to ITEM_EXPANSION (see battle_config.h)
+// #define ITEM_ID_LIMIT 964
 #define ITEM_FIELD_ARROW ITEMS_COUNT
-
-#define FIRST_BERRY_INDEX             ITEM_CHERI_BERRY
-#define LAST_BERRY_INDEX              ITEM_ENIGMA_BERRY
 
 // Range of berries given out by various NPCS
 #define FIRST_BERRY_MASTER_BERRY      ITEM_POMEG_BERRY
@@ -801,7 +823,9 @@
 #define NUM_ROUTE_114_MAN_BERRIES         (LAST_ROUTE_114_MAN_BERRY - FIRST_ROUTE_114_MAN_BERRY + 1)
 #define NUM_ROUTE_114_MAN_BERRIES_SKIPPED (FIRST_ROUTE_114_MAN_BERRY - FIRST_BERRY_INDEX)
 
-#define ITEM_TO_BERRY(itemId)(((itemId - FIRST_BERRY_INDEX) + 1))
+#define ITEM_TO_BERRY(itemId)(((itemId) - FIRST_BERRY_INDEX) + 1)
+#define ITEM_TO_MAIL(itemId)((itemId) - FIRST_MAIL_INDEX)
+#define MAIL_NONE 0xFF
 
 #define NUM_TECHNICAL_MACHINES 66
 #define NUM_HIDDEN_MACHINES     8
@@ -818,6 +842,21 @@
 #define OLD_ROD   0
 #define GOOD_ROD  1
 #define SUPER_ROD 2
+
+// Secondary IDs for bikes
+#define MACH_BIKE 0
+#define ACRO_BIKE 1
+
+// Item type IDs (used to determine the exit callback)
+#define ITEM_USE_MAIL        0
+#define ITEM_USE_PARTY_MENU  1
+#define ITEM_USE_FIELD       2
+#define ITEM_USE_PBLOCK_CASE 3
+#define ITEM_USE_BAG_MENU    4 // No exit callback, stays in bag menu
+
+// Item battle usage IDs (only checked to see if nonzero)
+#define ITEM_B_USE_MEDICINE 1
+#define ITEM_B_USE_OTHER    2
 
 // Check if the item is one that can be used on a Pokemon.
 #define ITEM_HAS_EFFECT(item) (((item) >= ITEM_POTION && (item) <= LAST_BERRY_INDEX) || ((item) >= ITEM_AIR_RUNE && (item) < ITEMS_COUNT))

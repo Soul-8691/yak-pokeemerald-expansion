@@ -64,34 +64,34 @@ extern const u8 EventScript_SmashBane[];
 
 
 
-static void SetUpItemUseCallback(u8 taskId);
+static void SetUpItemUseCallback(u8);
 static void FieldCB_UseItemOnField(void);
-static void Task_CallItemUseOnFieldCallback(u8 taskId);
-static void Task_UseItemfinder(u8 taskId);
-static void Task_CloseItemfinderMessage(u8 taskId);
-static void Task_HiddenItemNearby(u8 taskId);
-static void Task_StandingOnHiddenItem(u8 taskId);
+static void Task_CallItemUseOnFieldCallback(u8);
+static void Task_UseItemfinder(u8);
+static void Task_CloseItemfinderMessage(u8);
+static void Task_HiddenItemNearby(u8);
+static void Task_StandingOnHiddenItem(u8);
 static bool8 ItemfinderCheckForHiddenItems(const struct MapEvents *, u8);
-static u8 GetDirectionToHiddenItem(s16 distanceX, s16 distanceY);
-static void PlayerFaceHiddenItem(u8 a);
-static void CheckForHiddenItemsInMapConnection(u8 taskId);
-static void sub_80FDC00(u8 taskId);
-static void ItemUseOnFieldCB_Bike(u8 taskId);
+static u8 GetDirectionToHiddenItem(s16, s16);
+static void PlayerFaceHiddenItem(u8);
+static void CheckForHiddenItemsInMapConnection(u8);
+static void Task_OpenRegisteredPokeblockCase(u8);
+static void ItemUseOnFieldCB_Bike(u8);
 static void ItemUseOnFieldCB_Rod(u8);
 static void ItemUseOnFieldCB_Itemfinder(u8);
-static void ItemUseOnFieldCB_Berry(u8 taskId);
-static void ItemUseOnFieldCB_WailmerPailBerry(u8 taskId);
-static void ItemUseOnFieldCB_WailmerPailSudowoodo(u8 taskId);
+static void ItemUseOnFieldCB_Berry(u8);
+static void ItemUseOnFieldCB_WailmerPailBerry(u8);
+static void ItemUseOnFieldCB_WailmerPailSudowoodo(u8);
 static bool8 TryToWaterSudowoodo(void);
-static void BootUpSoundTMHM(u8 taskId);
-static void Task_ShowTMHMContainedMessage(u8 taskId);
-static void UseTMHMYesNo(u8 taskId);
-static void UseTMHM(u8 taskId);
-static void Task_StartUseRepel(u8 taskId);
-static void Task_UseRepel(u8 taskId);
-static void Task_CloseCantUseKeyItemMessage(u8 taskId);
-static void SetDistanceOfClosestHiddenItem(u8 taskId, s16 x, s16 y);
-static void CB2_OpenPokeblockCaseOnField(void);
+static void BootUpSoundTMHM(u8);
+static void Task_ShowTMHMContainedMessage(u8);
+static void UseTMHMYesNo(u8);
+static void UseTMHM(u8);
+static void Task_StartUseRepel(u8);
+static void Task_UseRepel(u8);
+static void Task_CloseCantUseKeyItemMessage(u8);
+static void SetDistanceOfClosestHiddenItem(u8, s16, s16);
+static void CB2_OpenPokeblockFromBag(void);
 void DoFlyItem (u8 taskId, TaskFunc task);
 void SetUpFlyUseCallback(u8 taskId);
 
@@ -101,13 +101,13 @@ EWRAM_DATA static void(*sItemUseOnFieldCB)(u8 taskId) = NULL;
 // Below is set TRUE by UseRegisteredKeyItemOnField
 #define tUsingRegisteredKeyItem  data[3]
 
-// .rodata
-
+// UB here if an item with type ITEM_USE_MAIL or ITEM_USE_BAG_MENU uses SetUpItemUseCallback
+// Never occurs in vanilla, but can occur with improperly created items
 static const MainCallback sItemUseCallbacks[] =
 {
-    CB2_ShowPartyMenuForItemUse,
-    CB2_ReturnToField,
-    NULL,
+    [ITEM_USE_PARTY_MENU - 1]  = CB2_ShowPartyMenuForItemUse,
+    [ITEM_USE_FIELD - 1]       = CB2_ReturnToField,
+    [ITEM_USE_PBLOCK_CASE - 1] = NULL,
 };
 
 static const u8 sClockwiseDirections[] = {DIR_NORTH, DIR_EAST, DIR_SOUTH, DIR_WEST};
@@ -115,27 +115,26 @@ static const u8 sClockwiseDirections[] = {DIR_NORTH, DIR_EAST, DIR_SOUTH, DIR_WE
 static const struct YesNoFuncTable sUseTMHMYesNoFuncTable =
 {
     .yesFunc = UseTMHM,
-    .noFunc = BagMenu_InitListsMenu,
+    .noFunc = CloseItemMessage,
 };
 
-// .text
-
+#define tEnigmaBerryType data[4]
 static void SetUpItemUseCallback(u8 taskId)
 {
     u8 type;
     if (gSpecialVar_ItemId == ITEM_ENIGMA_BERRY)
-        type = gTasks[taskId].data[4] - 1;
+        type = gTasks[taskId].tEnigmaBerryType - 1;
     else
         type = ItemId_GetType(gSpecialVar_ItemId) - 1;
     if (!InBattlePyramid())
     {
-        gBagMenu->exitCallback = sItemUseCallbacks[type];
+        gBagMenu->newScreenCallback = sItemUseCallbacks[type];
         Task_FadeAndCloseBagMenu(taskId);
     }
     else
     {
-        gPyramidBagResources->callback2 = sItemUseCallbacks[type];
-        CloseBattlePyramidBagAndSetCallback(taskId);
+        gPyramidBagMenu->newScreenCallback = sItemUseCallbacks[type];
+        CloseBattlePyramidBag(taskId);
     }
 }
 
@@ -168,7 +167,7 @@ static void DisplayCannotUseItemMessage(u8 taskId, bool8 isUsingRegisteredKeyIte
     if (!isUsingRegisteredKeyItemOnField)
     {
         if (!InBattlePyramid())
-            DisplayItemMessage(taskId, 1, gStringVar4, BagMenu_InitListsMenu);
+            DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
         else
             DisplayItemMessageInBattlePyramid(taskId, gText_DadsAdvice, Task_CloseBattlePyramidBagMessage);
     }
@@ -212,14 +211,14 @@ u8 CheckIfItemIsTMHMOrEvolutionStone(u16 itemId)
 // Mail in the bag menu can't have a message but it can be checked (view the mail background, no message)
 static void CB2_CheckMail(void)
 {
-    struct MailStruct mail;
+    struct Mail mail;
     mail.itemId = gSpecialVar_ItemId;
     ReadMail(&mail, CB2_ReturnToBagMenuPocket, 0);
 }
 
 void ItemUseOutOfBattle_Mail(u8 taskId)
 {
-    gBagMenu->exitCallback = CB2_CheckMail;
+    gBagMenu->newScreenCallback = CB2_CheckMail;
     Task_FadeAndCloseBagMenu(taskId);
 }
 
@@ -247,9 +246,9 @@ void ItemUseOutOfBattle_Bike(u8 taskId)
 
 static void ItemUseOnFieldCB_Bike(u8 taskId)
 {
-    if (!ItemId_GetSecondaryId(gSpecialVar_ItemId))
+    if (ItemId_GetSecondaryId(gSpecialVar_ItemId) == MACH_BIKE)
         GetOnOffBike(PLAYER_AVATAR_FLAG_MACH_BIKE);
-    else
+    else // ACRO_BIKE
         GetOnOffBike(PLAYER_AVATAR_FLAG_ACRO_BIKE);
     ScriptUnfreezeObjectEvents();
     ScriptContext2_Disable();
@@ -279,7 +278,7 @@ static bool32 CanFish(void)
     {
         if (MetatileBehavior_IsSurfableWaterOrUnderwater(tileBehavior) && !MapGridIsImpassableAt(x, y))
             return TRUE;
-        if (MetatileBehavior_8089510(tileBehavior) == TRUE)
+        if (MetatileBehavior_IsBridgeOverWaterNoEdge(tileBehavior) == TRUE)
             return TRUE;
     }
 
@@ -383,12 +382,14 @@ static bool8 ItemfinderCheckForHiddenItems(const struct MapEvents *events, u8 ta
         // Check if there are any hidden items on the current map that haven't been picked up
         if (events->bgEvents[i].kind == BG_EVENT_HIDDEN_ITEM && !FlagGet(events->bgEvents[i].bgUnion.hiddenItem.hiddenItemId + FLAG_HIDDEN_ITEMS_START))
         {
-            itemX = (u16)events->bgEvents[i].x + 7;
+            itemX = (u16)events->bgEvents[i].x + MAP_OFFSET;
             distanceX = itemX - playerX;
-            itemY = (u16)events->bgEvents[i].y + 7;
+            itemY = (u16)events->bgEvents[i].y + MAP_OFFSET;
             distanceY = itemY - playerY;
 
-            if ((u16)(distanceX + 7) < 15 && (distanceY >= -5) && (distanceY < 6))
+            // Player can see 7 metatiles on either side horizontally
+            // and 5 metatiles on either side vertically
+            if (distanceX >= -7 && distanceX <= 7 && distanceY >= -5 && distanceY <= 5)
                 SetDistanceOfClosestHiddenItem(taskId, distanceX, distanceY);
         }
     }
@@ -431,28 +432,28 @@ static bool8 IsHiddenItemPresentInConnection(struct MapConnection *connection, i
     switch (connection->direction)
     {
     // same weird temp variable behavior seen in IsHiddenItemPresentAtCoords
-    case 2:
-        localOffset = connection->offset + 7;
+    case CONNECTION_NORTH:
+        localOffset = connection->offset + MAP_OFFSET;
         localX = x - localOffset;
-        localLength = mapHeader->mapLayout->height - 7;
+        localLength = mapHeader->mapLayout->height - MAP_OFFSET;
         localY = localLength + y; // additions are reversed for some reason
         break;
-    case 1:
-        localOffset = connection->offset + 7;
+    case CONNECTION_SOUTH:
+        localOffset = connection->offset + MAP_OFFSET;
         localX = x - localOffset;
-        localLength = gMapHeader.mapLayout->height + 7;
+        localLength = gMapHeader.mapLayout->height + MAP_OFFSET;
         localY = y - localLength;
         break;
-    case 3:
-        localLength = mapHeader->mapLayout->width - 7;
+    case CONNECTION_WEST:
+        localLength = mapHeader->mapLayout->width - MAP_OFFSET;
         localX = localLength + x; // additions are reversed for some reason
-        localOffset = connection->offset + 7;
+        localOffset = connection->offset + MAP_OFFSET;
         localY = y - localOffset;
         break;
-    case 4:
-        localLength = gMapHeader.mapLayout->width + 7;
+    case CONNECTION_EAST:
+        localLength = gMapHeader.mapLayout->width + MAP_OFFSET;
         localX = x - localLength;
-        localOffset = connection->offset + 7;
+        localOffset = connection->offset + MAP_OFFSET;
         localY = y - localOffset;
         break;
     default:
@@ -465,14 +466,16 @@ static void CheckForHiddenItemsInMapConnection(u8 taskId)
 {
     s16 playerX, playerY;
     s16 x, y;
-    s16 width = gMapHeader.mapLayout->width + 7;
-    s16 height = gMapHeader.mapLayout->height + 7;
+    s16 width = gMapHeader.mapLayout->width + MAP_OFFSET;
+    s16 height = gMapHeader.mapLayout->height + MAP_OFFSET;
 
-    s16 var1 = 7;
-    s16 var2 = 7;
+    s16 var1 = MAP_OFFSET;
+    s16 var2 = MAP_OFFSET;
 
     PlayerGetDestCoords(&playerX, &playerY);
 
+    // Player can see 7 metatiles on either side horizontally
+    // and 5 metatiles on either side vertically
     for (x = playerX - 7; x <= playerX + 7; x++)
     {
         for (y = playerY - 5; y <= playerY + 5; y++)
@@ -638,29 +641,29 @@ static void Task_StandingOnHiddenItem(u8 taskId)
 
 void ItemUseOutOfBattle_PokeblockCase(u8 taskId)
 {
-    if (MenuHelpers_LinkSomething() == TRUE) // link func
+    if (MenuHelpers_IsLinkActive() == TRUE)
     {
         DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
     }
     else if (gTasks[taskId].tUsingRegisteredKeyItem != TRUE)
     {
-        gBagMenu->exitCallback = CB2_OpenPokeblockCaseOnField;
+        gBagMenu->newScreenCallback = CB2_OpenPokeblockFromBag;
         Task_FadeAndCloseBagMenu(taskId);
     }
     else
     {
-        gFieldCallback = sub_80AF6D4;
+        gFieldCallback = FieldCB_ReturnToFieldNoScript;
         FadeScreen(FADE_TO_BLACK, 0);
-        gTasks[taskId].func = sub_80FDC00;
+        gTasks[taskId].func = Task_OpenRegisteredPokeblockCase;
     }
 }
 
-static void CB2_OpenPokeblockCaseOnField(void)
+static void CB2_OpenPokeblockFromBag(void)
 {
     OpenPokeblockCase(PBLOCK_CASE_FIELD, CB2_ReturnToBagMenuPocket);
 }
 
-static void sub_80FDC00(u8 taskId)
+static void Task_OpenRegisteredPokeblockCase(u8 taskId)
 {
     if (!gPaletteFade.active)
     {
@@ -677,7 +680,7 @@ void ItemUseOutOfBattle_CoinCase(u8 taskId)
 
     if (!gTasks[taskId].tUsingRegisteredKeyItem)
     {
-        DisplayItemMessage(taskId, 1, gStringVar4, BagMenu_InitListsMenu);
+        DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
     }
     else
     {
@@ -692,7 +695,7 @@ void ItemUseOutOfBattle_PowderJar(u8 taskId)
 
     if (!gTasks[taskId].tUsingRegisteredKeyItem)
     {
-        DisplayItemMessage(taskId, 1, gStringVar4, BagMenu_InitListsMenu);
+        DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
     }
     else
     {
@@ -706,7 +709,7 @@ void ItemUseOutOfBattle_Berry(u8 taskId)
     {
         sItemUseOnFieldCB = ItemUseOnFieldCB_Berry;
         gFieldCallback = FieldCB_UseItemOnField;
-        gBagMenu->exitCallback = CB2_ReturnToField;
+        gBagMenu->newScreenCallback = CB2_ReturnToField;
         Task_FadeAndCloseBagMenu(taskId);
     }
     else
@@ -750,12 +753,12 @@ static void ItemUseOnFieldCB_WailmerPailBerry(u8 taskId)
 
 static bool8 TryToWaterSudowoodo(void)
 {
-    s16 x, y;
-    u8 z;
+    u16 x, y;
+    u8 elevation;
     u8 objId;
     GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
-    z = PlayerGetZCoord();
-    objId = GetObjectEventIdByXYZ(x, y, z);
+    elevation = PlayerGetElevation();
+    objId = GetObjectEventIdByPosition(x, y, elevation);
     if (objId == OBJECT_EVENTS_COUNT || gObjectEvents[objId].graphicsId != OBJ_EVENT_GFX_SUDOWOODO)
         return FALSE;
     else
@@ -808,9 +811,9 @@ void ItemUseOutOfBattle_RareCandy(u8 taskId)
 void ItemUseOutOfBattle_TMHM(u8 taskId)
 {
     if (gSpecialVar_ItemId >= ITEM_HM01_CUT)
-        DisplayItemMessage(taskId, 1, gText_BootedUpHM, BootUpSoundTMHM); // HM
+        DisplayItemMessage(taskId, FONT_NORMAL, gText_BootedUpHM, BootUpSoundTMHM); // HM
     else
-        DisplayItemMessage(taskId, 1, gText_BootedUpTM, BootUpSoundTMHM); // TM
+        DisplayItemMessage(taskId, FONT_NORMAL, gText_BootedUpTM, BootUpSoundTMHM); // TM
 }
 
 static void BootUpSoundTMHM(u8 taskId)
@@ -825,13 +828,13 @@ static void Task_ShowTMHMContainedMessage(u8 taskId)
     {
         StringCopy(gStringVar1, gMoveNames[ItemIdToBattleMoveId(gSpecialVar_ItemId)]);
         StringExpandPlaceholders(gStringVar4, gText_TMHMContainedVar1);
-        DisplayItemMessage(taskId, 1, gStringVar4, UseTMHMYesNo);
+        DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, UseTMHMYesNo);
     }
 }
 
 static void UseTMHMYesNo(u8 taskId)
 {
-    BagMenu_YesNo(taskId, 6, &sUseTMHMYesNoFuncTable);
+    BagMenu_YesNo(taskId, ITEMWIN_YESNO_HIGH, &sUseTMHMYesNoFuncTable);
 }
 
 static void UseTMHM(u8 taskId)
@@ -848,12 +851,12 @@ static void RemoveUsedItem(void)
     if (!InBattlePyramid())
     {
         UpdatePocketItemList(ItemId_GetPocket(gSpecialVar_ItemId));
-        SetInitialScrollAndCursorPositions(ItemId_GetPocket(gSpecialVar_ItemId));
+        UpdatePocketListPosition(ItemId_GetPocket(gSpecialVar_ItemId));
     }
     else
     {
-        sub_81C5924();
-        sub_81C59BC();
+        UpdatePyramidBagList();
+        UpdatePyramidBagCursorPos();
     }
 }
 
@@ -862,7 +865,7 @@ void ItemUseOutOfBattle_Repel(u8 taskId)
     if (VarGet(VAR_REPEL_STEP_COUNT) == 0)
         gTasks[taskId].func = Task_StartUseRepel;
     else if (!InBattlePyramid())
-        DisplayItemMessage(taskId, 1, gText_RepelEffectsLingered, BagMenu_InitListsMenu);
+        DisplayItemMessage(taskId, FONT_NORMAL, gText_RepelEffectsLingered, CloseItemMessage);
     else
         DisplayItemMessageInBattlePyramid(taskId, gText_RepelEffectsLingered, Task_CloseBattlePyramidBagMessage);
 }
@@ -886,7 +889,7 @@ static void Task_UseRepel(u8 taskId)
         VarSet(VAR_REPEL_STEP_COUNT, ItemId_GetHoldEffectParam(gSpecialVar_ItemId));
         RemoveUsedItem();
         if (!InBattlePyramid())
-            DisplayItemMessage(taskId, 1, gStringVar4, BagMenu_InitListsMenu);
+            DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
         else
             DisplayItemMessageInBattlePyramid(taskId, gStringVar4, Task_CloseBattlePyramidBagMessage);
     }
@@ -898,7 +901,7 @@ static void Task_UsedBlackWhiteFlute(u8 taskId)
     {
         PlaySE(SE_GLASS_FLUTE);
         if (!InBattlePyramid())
-            DisplayItemMessage(taskId, 1, gStringVar4, BagMenu_InitListsMenu);
+            DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
         else
             DisplayItemMessageInBattlePyramid(taskId, gStringVar4, Task_CloseBattlePyramidBagMessage);
     }
@@ -940,7 +943,7 @@ static void ItemUseOnFieldCB_EscapeRope(u8 taskId)
 
 bool8 CanUseDigOrEscapeRopeOnCurMap(void)
 {
-    if (gMapHeader.flags & MAP_ALLOW_ESCAPING)
+    if (gMapHeader.allowEscaping)
         return TRUE;
     else
         return FALSE;
@@ -965,42 +968,60 @@ void ItemUseOutOfBattle_EvolutionStone(u8 taskId)
     SetUpItemUseCallback(taskId);
 }
 
-void ItemUseInBattle_PokeBall(u8 taskId)
+static u32 GetBallThrowableState(void)
 {
     if (IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT))
-        && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT))) // There are two present pokemon.
-    {
-        static const u8 textCantThrowPokeBall[] = _("Cannot throw a ball!\nThere are two pokemon out there!\p");
+     && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT)))
+        return BALL_THROW_UNABLE_TWO_MONS;
+    else if (IsPlayerPartyAndPokemonStorageFull() == TRUE)
+        return BALL_THROW_UNABLE_NO_ROOM;
+#if B_SEMI_INVULNERABLE_CATCH >= GEN_4
+    else if (gStatuses3[GetCatchingBattler()] & STATUS3_SEMI_INVULNERABLE)
+        return BALL_THROW_UNABLE_SEMI_INVULNERABLE;
+#endif
 
-        if (!InBattlePyramid())
-            DisplayItemMessage(taskId, 1, textCantThrowPokeBall, BagMenu_InitListsMenu);
-        else
-            DisplayItemMessageInBattlePyramid(taskId, textCantThrowPokeBall, Task_CloseBattlePyramidBagMessage);
-    }
-    else if (gBattlerInMenuId == GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT)
-             && IsBattlerAlive(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))) // Attempting to throw a ball with the second pokemon while both are alive.
-    {
-        static const u8 textCantThrowPokeBall[] = _("Cannot throw a ball!\p");
+    return BALL_THROW_ABLE;
+}
 
-        if (!InBattlePyramid())
-            DisplayItemMessage(taskId, 1, textCantThrowPokeBall, BagMenu_InitListsMenu);
-        else
-            DisplayItemMessageInBattlePyramid(taskId, textCantThrowPokeBall, Task_CloseBattlePyramidBagMessage);
-    }
-    else if (IsPlayerPartyAndPokemonStorageFull() == FALSE) // have room for mon?
+bool32 CanThrowBall(void)
+{
+    return (GetBallThrowableState() == BALL_THROW_ABLE);
+}
+
+static const u8 sText_CantThrowPokeBall_TwoMons[] = _("Cannot throw a ball!\nThere are two Pokémon out there!\p");
+static const u8 sText_CantThrowPokeBall_SemiInvulnerable[] = _("Cannot throw a ball!\nThere's no Pokémon in sight!\p");
+void ItemUseInBattle_PokeBall(u8 taskId)
+{
+    switch (GetBallThrowableState())
     {
+    case BALL_THROW_ABLE:
+    default:
         RemoveBagItem(gSpecialVar_ItemId, 1);
         if (!InBattlePyramid())
             Task_FadeAndCloseBagMenu(taskId);
         else
-            CloseBattlePyramidBagAndSetCallback(taskId);
-    }
-    else
-    {
+            CloseBattlePyramidBag(taskId);
+        break;
+    case BALL_THROW_UNABLE_TWO_MONS:
         if (!InBattlePyramid())
-            DisplayItemMessage(taskId, 1, gText_BoxFull, BagMenu_InitListsMenu);
+            DisplayItemMessage(taskId, FONT_NORMAL, sText_CantThrowPokeBall_TwoMons, CloseItemMessage);
+        else
+            DisplayItemMessageInBattlePyramid(taskId, sText_CantThrowPokeBall_TwoMons, Task_CloseBattlePyramidBagMessage);
+        break;
+    case BALL_THROW_UNABLE_NO_ROOM:
+        if (!InBattlePyramid())
+            DisplayItemMessage(taskId, FONT_NORMAL, gText_BoxFull, CloseItemMessage);
         else
             DisplayItemMessageInBattlePyramid(taskId, gText_BoxFull, Task_CloseBattlePyramidBagMessage);
+        break;
+    #if B_SEMI_INVULNERABLE_CATCH >= GEN_4
+    case BALL_THROW_UNABLE_SEMI_INVULNERABLE:
+        if (!InBattlePyramid())
+            DisplayItemMessage(taskId, FONT_NORMAL, sText_CantThrowPokeBall_SemiInvulnerable, CloseItemMessage);
+        else
+            DisplayItemMessageInBattlePyramid(taskId, sText_CantThrowPokeBall_SemiInvulnerable, Task_CloseBattlePyramidBagMessage);
+        break;
+    #endif
     }
 }
 
@@ -1011,7 +1032,7 @@ static void Task_CloseStatIncreaseMessage(u8 taskId)
         if (!InBattlePyramid())
             Task_FadeAndCloseBagMenu(taskId);
         else
-            CloseBattlePyramidBagAndSetCallback(taskId);
+            CloseBattlePyramidBag(taskId);
     }
 }
 
@@ -1022,7 +1043,7 @@ static void Task_UseStatIncreaseItem(u8 taskId)
         PlaySE(SE_USE_ITEM);
         RemoveBagItem(gSpecialVar_ItemId, 1);
         if (!InBattlePyramid())
-            DisplayItemMessage(taskId, 1, UseStatIncreaseItem(gSpecialVar_ItemId), Task_CloseStatIncreaseMessage);
+            DisplayItemMessage(taskId, FONT_NORMAL, UseStatIncreaseItem(gSpecialVar_ItemId), Task_CloseStatIncreaseMessage);
         else
             DisplayItemMessageInBattlePyramid(taskId, UseStatIncreaseItem(gSpecialVar_ItemId), Task_CloseStatIncreaseMessage);
     }
@@ -1036,7 +1057,7 @@ void ItemUseInBattle_StatIncrease(u8 taskId)
     if (ExecuteTableBasedItemEffect(&gPlayerParty[partyId], gSpecialVar_ItemId, partyId, 0) != FALSE)
     {
         if (!InBattlePyramid())
-            DisplayItemMessage(taskId, 1, gText_WontHaveEffect, BagMenu_InitListsMenu);
+            DisplayItemMessage(taskId, FONT_NORMAL, gText_WontHaveEffect, CloseItemMessage);
         else
             DisplayItemMessageInBattlePyramid(taskId, gText_WontHaveEffect, Task_CloseBattlePyramidBagMessage);
     }
@@ -1051,13 +1072,13 @@ static void ItemUseInBattle_ShowPartyMenu(u8 taskId)
 {
     if (!InBattlePyramid())
     {
-        gBagMenu->exitCallback = ChooseMonForInBattleItem;
+        gBagMenu->newScreenCallback = ChooseMonForInBattleItem;
         Task_FadeAndCloseBagMenu(taskId);
     }
     else
     {
-        gPyramidBagResources->callback2 = ChooseMonForInBattleItem;
-        CloseBattlePyramidBagAndSetCallback(taskId);
+        gPyramidBagMenu->newScreenCallback = ChooseMonForInBattleItem;
+        CloseBattlePyramidBag(taskId);
     }
 }
 
@@ -1088,9 +1109,9 @@ void ItemUseInBattle_Escape(u8 taskId)
     {
         RemoveUsedItem();
         if (!InBattlePyramid())
-            DisplayItemMessage(taskId, 1, gStringVar4, Task_FadeAndCloseBagMenu);
+            DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, Task_FadeAndCloseBagMenu);
         else
-            DisplayItemMessageInBattlePyramid(taskId, gStringVar4, CloseBattlePyramidBagAndSetCallback);
+            DisplayItemMessageInBattlePyramid(taskId, gStringVar4, CloseBattlePyramidBag);
     }
     else
     {
@@ -1115,28 +1136,28 @@ void ItemUseOutOfBattle_EnigmaBerry(u8 taskId)
     case ITEM_EFFECT_SPDEF_EV:
     case ITEM_EFFECT_SPEED_EV:
     case ITEM_EFFECT_DEF_EV:
-        gTasks[taskId].data[4] = 1;
+        gTasks[taskId].tEnigmaBerryType = ITEM_USE_PARTY_MENU;
         ItemUseOutOfBattle_Medicine(taskId);
         break;
     case ITEM_EFFECT_SACRED_ASH:
-        gTasks[taskId].data[4] = 1;
+        gTasks[taskId].tEnigmaBerryType = ITEM_USE_PARTY_MENU;
         ItemUseOutOfBattle_SacredAsh(taskId);
         break;
     case ITEM_EFFECT_RAISE_LEVEL:
-        gTasks[taskId].data[4] = 1;
+        gTasks[taskId].tEnigmaBerryType = ITEM_USE_PARTY_MENU;
         ItemUseOutOfBattle_RareCandy(taskId);
         break;
     case ITEM_EFFECT_PP_UP:
     case ITEM_EFFECT_PP_MAX:
-        gTasks[taskId].data[4] = 1;
+        gTasks[taskId].tEnigmaBerryType = ITEM_USE_PARTY_MENU;
         ItemUseOutOfBattle_PPUp(taskId);
         break;
     case ITEM_EFFECT_HEAL_PP:
-        gTasks[taskId].data[4] = 1;
+        gTasks[taskId].tEnigmaBerryType = ITEM_USE_PARTY_MENU;
         ItemUseOutOfBattle_PPRecovery(taskId);
         break;
     default:
-        gTasks[taskId].data[4] = 4;
+        gTasks[taskId].tEnigmaBerryType = ITEM_USE_BAG_MENU;
         ItemUseOutOfBattle_CannotUse(taskId);
         break;
     }
@@ -1246,54 +1267,54 @@ static void FieldCallback_BaneSmash(void)
 
 void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 {
-    
+
 	if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_BREAKABLE_ROCK) == TRUE)
     {
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
-            if(CheckBagHasItem(ITEM_PICKAXE, 1)) 
+            if(CheckBagHasItem(ITEM_PICKAXE, 1))
             {
                 gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
             }
-            else 
+            else
             {
-                if(CheckBagHasItem(ITEM_ADAMANTPICKAXE, 1)) 
+                if(CheckBagHasItem(ITEM_ADAMANTPICKAXE, 1))
                 {
                     gSaveBlock2Ptr->ItemArg = ITEM_ADAMANTPICKAXE;
                 }
-                else 
+                else
                 {
-                    if(CheckBagHasItem(ITEM_BRONZEPICKAXE, 1)) 
+                    if(CheckBagHasItem(ITEM_BRONZEPICKAXE, 1))
                     {
                         gSaveBlock2Ptr->ItemArg = ITEM_BRONZEPICKAXE;
                     }
-                    else 
+                    else
                     {
-                        if(CheckBagHasItem(ITEM_IRONPICKAXE, 1)) 
+                        if(CheckBagHasItem(ITEM_IRONPICKAXE, 1))
                         {
                             gSaveBlock2Ptr->ItemArg = ITEM_IRONPICKAXE;
                         }
-                        else 
+                        else
                         {
-                            if(CheckBagHasItem(ITEM_STEELPICKAXE, 1)) 
+                            if(CheckBagHasItem(ITEM_STEELPICKAXE, 1))
                             {
                                 gSaveBlock2Ptr->ItemArg = ITEM_ADAMANTPICKAXE;
                             }
-                            else 
+                            else
                             {
-                                if(CheckBagHasItem(ITEM_BLACKPICKAXE, 1)) 
+                                if(CheckBagHasItem(ITEM_BLACKPICKAXE, 1))
                                 {
                                     gSaveBlock2Ptr->ItemArg = ITEM_ADAMANTPICKAXE;
                                 }
-                                else 
+                                else
                                 {
-                                    if(CheckBagHasItem(ITEM_MITHRILPICKAXE, 1)) 
+                                    if(CheckBagHasItem(ITEM_MITHRILPICKAXE, 1))
                                     {
                                         gSaveBlock2Ptr->ItemArg = ITEM_MITHRILPICKAXE;
                                     }
-                                    else 
+                                    else
                                     {
-                                        if(CheckBagHasItem(ITEM_RUNEPICKAXE, 1)) 
+                                        if(CheckBagHasItem(ITEM_RUNEPICKAXE, 1))
                                         {
                                             gSaveBlock2Ptr->ItemArg = ITEM_RUNEPICKAXE;
                                         }
@@ -1304,10 +1325,10 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
                     }
                 }
             }
-            
-			
+
+
 			gFieldCallback = FieldCallback_RockSmash;
-			gBagMenu->exitCallback = CB2_ReturnToField;
+			gBagMenu->newScreenCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
 		}
 		else
@@ -1324,7 +1345,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
             {
                 gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
                 gFieldCallback = FieldCallback_CopperSmash;
-                gBagMenu->exitCallback = CB2_ReturnToField;
+                gBagMenu->newScreenCallback = CB2_ReturnToField;
                 Task_FadeAndCloseBagMenu(taskId);
             }
             else
@@ -1344,7 +1365,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 		{
 			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_TinSmash;
-			gBagMenu->exitCallback = CB2_ReturnToField;
+			gBagMenu->newScreenCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
 		}
 		else
@@ -1360,7 +1381,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 		{
 			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_IronSmash;
-			gBagMenu->exitCallback = CB2_ReturnToField;
+			gBagMenu->newScreenCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
 		}
 		else
@@ -1376,7 +1397,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 		{
 			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_CoalSmash;
-			gBagMenu->exitCallback = CB2_ReturnToField;
+			gBagMenu->newScreenCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
 		}
 		else
@@ -1392,7 +1413,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 		{
 			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_MithrilSmash;
-			gBagMenu->exitCallback = CB2_ReturnToField;
+			gBagMenu->newScreenCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
 		}
 		else
@@ -1408,7 +1429,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 		{
 			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_AdamantSmash;
-			gBagMenu->exitCallback = CB2_ReturnToField;
+			gBagMenu->newScreenCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
 		}
 		else
@@ -1424,7 +1445,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 		{
 			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_RuneSmash;
-			gBagMenu->exitCallback = CB2_ReturnToField;
+			gBagMenu->newScreenCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
 		}
 		else
@@ -1440,7 +1461,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 		{
 			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_OrikalkumSmash;
-			gBagMenu->exitCallback = CB2_ReturnToField;
+			gBagMenu->newScreenCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
 		}
 		else
@@ -1456,7 +1477,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 		{
 			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_ElementalSmash;
-			gBagMenu->exitCallback = CB2_ReturnToField;
+			gBagMenu->newScreenCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
 		}
 		else
@@ -1472,7 +1493,7 @@ void ItemUseOutOfBattle_Pickaxe(u8 taskId)
 		{
 			gSaveBlock2Ptr->ItemArg = ITEM_PICKAXE;
 			gFieldCallback = FieldCallback_BaneSmash;
-			gBagMenu->exitCallback = CB2_ReturnToField;
+			gBagMenu->newScreenCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
 		}
 		else
@@ -1500,7 +1521,7 @@ void ItemUseOutOfBattle_Boat(u8 taskId)
 		{
 			gSaveBlock2Ptr->ItemArg = ITEM_BOAT;
 			gFieldCallback = FieldCallback_Surf;
-			gBagMenu->exitCallback = CB2_ReturnToField;
+			gBagMenu->newScreenCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
 		}
 		else
@@ -1508,10 +1529,10 @@ void ItemUseOutOfBattle_Boat(u8 taskId)
 			//PlaySE(SE_W088);
 			ScriptContext1_SetupScript(EventScript_UseSurf);
 			DestroyTask(taskId);
-		
+
 		}
 	}
-	else	
+	else
 		DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
 }
 
@@ -1529,7 +1550,7 @@ void ItemUseOutOfBattle_Axe(u8 taskId)
 		{
 			gSaveBlock2Ptr->ItemArg = ITEM_AXE;
 			gFieldCallback = FieldCallback_Cut;
-			gBagMenu->exitCallback = CB2_ReturnToField;
+			gBagMenu->newScreenCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
 		}
 		else
@@ -1537,10 +1558,10 @@ void ItemUseOutOfBattle_Axe(u8 taskId)
 			//PlaySE(SE_W088);
 			ScriptContext1_SetupScript(EventScript_UseCut);
 			DestroyTask(taskId);
-		
+
 		}
 	}
-	else	
+	else
 		DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
 }
 
@@ -1556,7 +1577,7 @@ void ItemUseOutOfBattle_StrengthItem(u8 taskId)
 		{
 			gSaveBlock2Ptr->ItemArg = ITEM_STRENGTHITEM;
 			gFieldCallback = FieldCallback_Strength;
-			gBagMenu->exitCallback = CB2_ReturnToField;
+			gBagMenu->newScreenCallback = CB2_ReturnToField;
 			Task_FadeAndCloseBagMenu(taskId);
 		}
 		else
@@ -1564,7 +1585,7 @@ void ItemUseOutOfBattle_StrengthItem(u8 taskId)
 			//PlaySE(SE_W088);
 			ScriptContext1_SetupScript(EventScript_UseStrength);
 			DestroyTask(taskId);
-		
+
 		}
 }
 
@@ -1578,7 +1599,7 @@ void ItemUseOutOfBattle_DiveItem(u8 taskId)
 {
 	struct MapPosition mapPosition;
     PlayerGetDestCoords(&mapPosition.x, &mapPosition.y);
-	
+
 	if (gMapHeader.mapType == MAP_TYPE_UNDERWATER && !MetatileBehavior_IsUnableToEmerge(gObjectEvents[gPlayerAvatar.objectEventId].currentMetatileBehavior))
     {
         if (SetDiveWarpEmerge(mapPosition.x - 7, mapPosition.y - 7))
@@ -1587,7 +1608,7 @@ void ItemUseOutOfBattle_DiveItem(u8 taskId)
 			{
 				gSaveBlock2Ptr->ItemArg = ITEM_DIVEITEM;
 				gFieldCallback = FieldCallback_Dive;
-				gBagMenu->exitCallback = CB2_ReturnToField;
+				gBagMenu->newScreenCallback = CB2_ReturnToField;
 				Task_FadeAndCloseBagMenu(taskId);
 			}
 			else
@@ -1595,7 +1616,7 @@ void ItemUseOutOfBattle_DiveItem(u8 taskId)
 				//PlaySE(SE_W088);
 				ScriptContext1_SetupScript(EventScript_UseDive);
 				DestroyTask(taskId);
-		
+
 			}
         }
     }
@@ -1607,7 +1628,7 @@ void ItemUseOutOfBattle_DiveItem(u8 taskId)
 			{
 				gSaveBlock2Ptr->ItemArg = ITEM_DIVEITEM;
 				gFieldCallback = FieldCallback_Dive;
-				gBagMenu->exitCallback = CB2_ReturnToField;
+				gBagMenu->newScreenCallback = CB2_ReturnToField;
 				Task_FadeAndCloseBagMenu(taskId);
 			}
 			else
@@ -1615,7 +1636,7 @@ void ItemUseOutOfBattle_DiveItem(u8 taskId)
 				//PlaySE(SE_W088);
 				ScriptContext1_SetupScript(EventScript_UseDive);
 				DestroyTask(taskId);
-		
+
 			}
         }
     }
@@ -1623,7 +1644,7 @@ void ItemUseOutOfBattle_DiveItem(u8 taskId)
 	{
 		DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
 	}
-	
+
 }
 
 
@@ -1645,20 +1666,20 @@ void ItemUseOutOfBattle_Spade(u8 taskId)
 			{
 				gSaveBlock2Ptr->ItemArg = ITEM_SPADE;
 				gFieldCallback = FieldCallback_Dig;
-				gBagMenu->exitCallback = CB2_ReturnToField;
+				gBagMenu->newScreenCallback = CB2_ReturnToField;
 				Task_FadeAndCloseBagMenu(taskId);
 			}
 			else
 			{
                 gSaveBlock2Ptr->ItemArg = ITEM_SPADE;
 				gFieldCallback = FieldCallback_Dig;
-				gBagMenu->exitCallback = CB2_ReturnToField;
+				gBagMenu->newScreenCallback = CB2_ReturnToField;
 				Task_FadeAndCloseBagMenu(taskId);
                 /*
 				//PlaySE(SE_W088);
 				FldEff_UseDig();
 				DestroyTask(taskId);*/
-		
+
 			}
 	}
 	else
@@ -1681,19 +1702,19 @@ void ItemUseOutOfBattle_Lantern(u8 taskId)
 			{
 				gSaveBlock2Ptr->ItemArg = ITEM_LANTERN;
 				gFieldCallback = FieldCallback_Flash;
-				gBagMenu->exitCallback = CB2_ReturnToField;
+				gBagMenu->newScreenCallback = CB2_ReturnToField;
 				Task_FadeAndCloseBagMenu(taskId);
 			}
 			else
 			{
                 gSaveBlock2Ptr->ItemArg = ITEM_LANTERN;
 				gFieldCallback = FieldCallback_Flash;
-				gBagMenu->exitCallback = CB2_ReturnToField;
+				gBagMenu->newScreenCallback = CB2_ReturnToField;
 				Task_FadeAndCloseBagMenu(taskId);
 				/*PlaySE(SE_APPLAUSE);
 				FldEff_UseFlash();
 				DestroyTask(taskId);*/
-		
+
 			}
 	}
 	else
@@ -1708,21 +1729,21 @@ void ItemUseOutOfBattle_Lantern(u8 taskId)
 static void FieldCallback_Fly(void)
 {
 	FadeInFromBlack();
-	
+
 	gItemUseCB = DoFlyItem;
-	
+
 
 }
 
 void ItemUseOutOfBattle_FlyItem(u8 taskId)
 {
 	if (SetUpFieldMove_Fly())
-	
+
 		if(!gTasks[taskId].tUsingRegisteredKeyItem)
 		{
 			//gSaveBlock2Ptr->ItemArg = 30;
 			//gFieldCallback = FieldCallback_Fly;
-			//gBagMenu->exitCallback = CB2_ReturnToField;
+			//gBagMenu->newScreenCallback = CB2_ReturnToField;
 			//Task_FadeAndCloseBagMenu(taskId);
 			gItemUseCB = DoFlyItem;
 			SetUpFlyUseCallback(taskId);
@@ -1748,15 +1769,15 @@ void DoFlyItem(u8 taskId, TaskFunc task)
 void SetUpFlyUseCallback(u8 taskId)
 {
 	gSaveBlock2Ptr->ItemArg = ITEM_FLYITEM;
-	gBagMenu->exitCallback = CB2_OpenFlyMap;
+	gBagMenu->newScreenCallback = CB2_OpenFlyMap;
 	Task_FadeAndCloseBagMenu(taskId);
-	
+
 }
 
 extern void  CB2_FieldShowRegionMap(void);
 
 void ItemUseOutOfBattle_Map(u8 taskId){
-    gBagMenu->exitCallback = CB2_FieldShowRegionMap;
+    gBagMenu->newScreenCallback = CB2_FieldShowRegionMap;
 	Task_FadeAndCloseBagMenu(taskId);
 }
 

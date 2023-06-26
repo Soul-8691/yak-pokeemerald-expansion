@@ -4018,7 +4018,7 @@ u8 IsRunningFromBattleImpossible(void)
     }
 	if (FlagGet(FLAG_DISABLE_RUN))
 	{
-		gBattleCommunication[MULTISTRING_CHOOSER] = 5;
+		gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CANT_RUN_FROM_RAT;
         return 1;
 	}
 
@@ -4426,8 +4426,6 @@ static void HandleTurnActionSelectionState(void)
 						gHitMarker |= HITMARKER_RUN;
 						gBattleCommunication[gActiveBattler]++;
 					}
-                    gHitMarker |= HITMARKER_RUN;
-                    gBattleCommunication[gActiveBattler]++;
                     break;
                 case B_ACTION_SAFARI_WATCH_CAREFULLY:
                     gBattleCommunication[gActiveBattler]++;

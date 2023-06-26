@@ -3833,7 +3833,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_ALKHARID_GYM_PRINCE_ALI[]
     .iv = 0,
     .lvl = 42,
     .species = SPECIES_UGHTANKI,
-    .moves = {MOVE_POWER_GEM, MOVE_BOUNCE, MOVE_HI_JUMP_KICK, MOVE_RETURN}
+    .moves = {MOVE_POWER_GEM, MOVE_BOUNCE, MOVE_HIGH_JUMP_KICK, MOVE_RETURN}
     },
     {
     .iv = 0,
@@ -3862,7 +3862,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_BARROWS_GUTHAN[] = {
     .iv = 0,
     .lvl = 42,
     .species = SPECIES_TERROR_DOG,
-    .moves = {MOVE_POWER_GEM, MOVE_BOUNCE, MOVE_HI_JUMP_KICK, MOVE_RETURN}
+    .moves = {MOVE_POWER_GEM, MOVE_BOUNCE, MOVE_HIGH_JUMP_KICK, MOVE_RETURN}
     },
     {
     .iv = 0,

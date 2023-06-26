@@ -764,7 +764,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_HAM_SIGMUND_1] =                 &gObjectEventGraphicsInfo_HAM_Sigmund_1,
     [OBJ_EVENT_GFX_HAM_SIGMUND_2] =                 &gObjectEventGraphicsInfo_HAM_Sigmund_2,
     [OBJ_EVENT_GFX_HAM_PATTY] =                     &gObjectEventGraphicsInfo_HAM_Patty,
-    [OBJ_EVENT_GFX_HAM_BABE] =                     &gObjectEventGraphicsInfo_HAM_Babe,
+    [OBJ_EVENT_GFX_HAM_BABE] =                      &gObjectEventGraphicsInfo_HAM_Babe,
     [OBJ_EVENT_GFX_HAM_DEACON] =                    &gObjectEventGraphicsInfo_HAM_Deacon,
     [OBJ_EVENT_GFX_HAM_GRUNT_M] =                   &gObjectEventGraphicsInfo_HAM_Grunt_M,
     [OBJ_EVENT_GFX_HAM_GRUNT_F] =                   &gObjectEventGraphicsInfo_HAM_Grunt_F,

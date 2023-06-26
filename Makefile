@@ -438,7 +438,7 @@ $(ROM): $(ELF)
 	$(FIX) $@ -p --silent
 
 $(BPS): $(ROM)
-	$(FLIPS) --create --exact --bps-delta $(BASE_NAME) $(ROM) $(BPS)
+	$(FLIPS) --create --exact --bps-delta $(BASE_NAME) $(ROM) patch/$(BPS)
 
 
 modern: all

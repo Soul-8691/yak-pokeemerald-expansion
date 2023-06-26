@@ -63,14 +63,17 @@ else
   CPP := $(PREFIX)cpp
 endif
 
-ROM_NAME := pokeemerald.gba
+BASE_NAME := pokeemerald.gba
+ROM_NAME := pokescape.gba
 ELF_NAME := $(ROM_NAME:.gba=.elf)
 MAP_NAME := $(ROM_NAME:.gba=.map)
+BPS_NAME := $(ROM_NAME:.gba=.bps)
 OBJ_DIR_NAME := build/emerald
 
-MODERN_ROM_NAME := pokeemerald_modern.gba
+MODERN_ROM_NAME := pokescape_modern.gba
 MODERN_ELF_NAME := $(MODERN_ROM_NAME:.gba=.elf)
 MODERN_MAP_NAME := $(MODERN_ROM_NAME:.gba=.map)
+MODERN_BPS_NAME := $(MODERN_ROM_NAME:.gba=.bps)
 MODERN_OBJ_DIR_NAME := build/modern
 
 SHELL := /bin/bash -o pipefail
@@ -79,6 +82,7 @@ SHELL := /bin/bash -o pipefail
 ELF = $(ROM:.gba=.elf)
 MAP = $(ROM:.gba=.map)
 SYM = $(ROM:.gba=.sym)
+BPS = $(ROM:.gba=.bps)
 
 C_SUBDIR = src
 GFLIB_SUBDIR = gflib
@@ -134,10 +138,11 @@ FIX := tools/gbafix/gbafix$(EXE)
 MAPJSON := tools/mapjson/mapjson$(EXE)
 JSONPROC := tools/jsonproc/jsonproc$(EXE)
 SCRIPT := tools/poryscript/poryscript$(EXE)
+FLIPS := tools/floating/flips$(EXE)
 
 PERL := perl
 
-TOOLDIRS := $(filter-out tools/agbcc tools/binutils tools/poryscript,$(wildcard tools/*))
+TOOLDIRS := $(filter-out tools/agbcc tools/binutils tools/poryscript tools/floating,$(wildcard tools/*))
 TOOLBASE = $(TOOLDIRS:tools/%=%)
 TOOLS = $(foreach tool,$(TOOLBASE),tools/$(tool)/$(tool)$(EXE))
 
@@ -215,7 +220,7 @@ endif
 
 AUTO_GEN_TARGETS :=
 
-all: rom
+all: bps
 
 tools: $(TOOLDIRS)
 
@@ -228,6 +233,8 @@ rom: $(ROM)
 ifeq ($(COMPARE),1)
 	@$(SHA1) rom.sha1
 endif
+
+bps: $(BPS)
 
 # For contributors to make sure a change didn't affect the contents of the ROM.
 compare: all
@@ -252,11 +259,11 @@ mostlyclean: tidynonmodern tidymodern
 tidy: tidynonmodern tidymodern
 
 tidynonmodern:
-	rm -f $(ROM_NAME) $(ELF_NAME) $(MAP_NAME)
+	rm -f $(ROM_NAME) $(ELF_NAME) $(MAP_NAME) $(BPS_NAME)
 	rm -rf $(OBJ_DIR_NAME)
 
 tidymodern:
-	rm -f $(MODERN_ROM_NAME) $(MODERN_ELF_NAME) $(MODERN_MAP_NAME)
+	rm -f $(MODERN_ROM_NAME) $(MODERN_ELF_NAME) $(MODERN_MAP_NAME) $(MODERN_BPS_NAME)
 	rm -rf $(MODERN_OBJ_DIR_NAME)
 
 ifneq ($(MODERN),0)
@@ -429,6 +436,10 @@ $(ELF): $(OBJ_DIR)/ld_script.ld $(OBJS) libagbsyscall
 $(ROM): $(ELF)
 	$(OBJCOPY) -O binary $< $@
 	$(FIX) $@ -p --silent
+
+$(BPS): $(ROM)
+	$(FLIPS) --create --exact --bps-delta $(BASE_NAME) $(ROM) $(BPS)
+
 
 modern: all
 

@@ -5007,7 +5007,7 @@
       "width": 26,
       "height": 38,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Barbarian_Village",
+      "secondary_tileset": "gTileset_Ice_Mountain",
       "border_filepath": "data/layouts/Route26/border.bin",
       "blockdata_filepath": "data/layouts/Route26/map.bin"
     },

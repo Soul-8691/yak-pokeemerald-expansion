@@ -778,3 +778,11 @@ gMetatiles_Yanille::
 	.align 1
 gMetatileAttributes_Yanille::
 	.incbin "data/tilesets/secondary/yanille/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_Ice_Mountain::
+	.incbin "data/tilesets/secondary/ice_mountain/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_Ice_Mountain::
+	.incbin "data/tilesets/secondary/ice_mountain/metatile_attributes.bin"

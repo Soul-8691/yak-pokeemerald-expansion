@@ -1173,3 +1173,14 @@ gTileset_Yanille::
 	.4byte gMetatiles_Yanille
 	.4byte gMetatileAttributes_Yanille
 	.4byte NULL
+
+	.align 2
+gTileset_Ice_Mountain::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_Ice_Mountain
+	.4byte gTilesetPalettes_Ice_Mountain
+	.4byte gMetatiles_Ice_Mountain
+	.4byte gMetatileAttributes_Ice_Mountain
+	.4byte NULL

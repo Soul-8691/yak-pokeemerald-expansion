@@ -2350,3 +2350,23 @@ gTilesetPalettes_Yanille::
 	.align 2
 gTilesetTiles_Yanille::
 	.incbin "data/tilesets/secondary/yanille/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_Ice_Mountain::
+	.incbin "data/tilesets/secondary/ice_mountain/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/ice_mountain/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/ice_mountain/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/ice_mountain/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/ice_mountain/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/ice_mountain/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/ice_mountain/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/ice_mountain/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/ice_mountain/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/ice_mountain/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/ice_mountain/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/ice_mountain/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/ice_mountain/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_Ice_Mountain::
+	.incbin "data/tilesets/secondary/ice_mountain/tiles.4bpp.lz"

@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE28",
   "name": "Route28",
   "layout": "LAYOUT_ROUTE28",
-  "music": "MUS_PS_ALKHARID",
+  "music": "MUS_PS_ROUTE_DESERT",
   "region_map_section": "MAPSEC_ROUTE_28",
   "requires_flash": false,
   "weather": "WEATHER_SANDSTORM",

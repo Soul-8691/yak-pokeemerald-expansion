@@ -36,31 +36,40 @@ script ENCOUNTER_PENGUIN_CACTUS {
 
 
 
+script TRIGGER_ALKHAIRD_GATE
+{
+	if (!flag(FLAG_BADGE05_GET))
+        {
+			goto(BLOCK_ALKHAIRD_GATE)
+        }
+	end
+}
+
 script BLOCK_ALKHAIRD_GATE
 {
 	lockall
-	applymovement (ALKAHRID_GUARD_1_ID,BLOCK_ALKHAIRD_GATE_1)
-	applymovement (ALKAHRID_GUARD_2_ID,BLOCK_ALKHAIRD_GATE_2)
+	applymovement (ALKAHRID_GUARD_1_ID,movement_BLOCK_ALKHAIRD_GATE_1)
+	applymovement (ALKAHRID_GUARD_2_ID,movement_BLOCK_ALKHAIRD_GATE_2)
 	waitmovement (0)
 	msgbox(format("Halt!\pOnly those whom possess the Al-Khaird Badge may enter!"))
 	closemessage
-	applymovement (OBJ_EVENT_ID_PLAYER,BLOCK_ALKHAIRD_GATE_3)
+	applymovement (OBJ_EVENT_ID_PLAYER,movement_BLOCK_ALKHAIRD_GATE_3)
 	waitmovement (0)
 	release
 	end
 }
 
-movement BLOCK_ALKHAIRD_GATE_1
+movement movement_BLOCK_ALKHAIRD_GATE_1
 {
 	face_down
 
 }
-movement BLOCK_ALKHAIRD_GATE_2
+movement movement_BLOCK_ALKHAIRD_GATE_2
 {
 	face_up
 
 }
-movement BLOCK_ALKHAIRD_GATE_3
+movement movement_BLOCK_ALKHAIRD_GATE_3
 {
 	walk_left
 
@@ -71,7 +80,12 @@ script BLOCK_Alkharid_Guards
 {
 	lock
 	faceplayer
-	msgbox(format("Halt!\pOnly those whom possess the Al-Khaird Badge may enter!"))
+	if (!flag(FLAG_BADGE05_GET))
+        {
+			goto(BLOCK_ALKHAIRD_GATE)
+        }
+	msgbox(format("That is the Al-Kharid Badge!\pYou may pass."))
+	closemessage
 	release
 	end
 }

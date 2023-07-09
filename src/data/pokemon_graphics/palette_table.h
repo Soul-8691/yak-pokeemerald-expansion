@@ -1334,7 +1334,7 @@ const struct CompressedSpritePalette gMonPaletteTable[] =
     SPECIES_PAL(PIG_SUMMONING_FORM, gMonPalette_Pig_Summoning_Form),
     SPECIES_PAL(TZTOK_JAD_HD_MEGA_FORM, gMonPalette_TzTok_Jad_HD_Mega_Form),
     SPECIES_PAL(TZTOK_JAD_RS3_MEGA_FORM, gMonPalette_TzTok_Jad_RS3_Mega_Form),
-
+    SPECIES_PAL(ABYSSAL_GUARDIAN, gMonPalette_Abyssal_Guardian),
 
 
 

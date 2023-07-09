@@ -15589,7 +15589,34 @@ const struct PokedexEntry gPokedexEntries[] =
 	.trainerOffset = 0 ,
 	},
 
+	[NATIONAL_DEX_ABYSSAL_GUARDIAN] =
+	{
+	.categoryName = _("Abyss"),
+	.height = 0,
+	.weight = 0,
+	.description = gAbyssal_GuardianPokedexText,
+	.pokemonScale = 256 ,
+	.pokemonOffset = 0 ,
+	.trainerScale = 256 ,
+	.trainerOffset = 0 ,
+	},
 
+
+
+
+
+
+	[NATIONAL_DEX_END] =
+	{
+	.categoryName = _("NA"),
+	.height = 0,
+	.weight = 0,
+	.description = gAbyssal_GuardianPokedexText,
+	.pokemonScale = 256 ,
+	.pokemonOffset = 0 ,
+	.trainerScale = 256 ,
+	.trainerOffset = 0 ,
+	},
 
 
 	

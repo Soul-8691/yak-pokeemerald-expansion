@@ -41913,6 +41913,38 @@ const struct BaseStats gBaseStats[] =
 		.bodyColor = BODY_COLOR_BLACK,
 		.noFlip = TRUE,
 	},
+
+    [SPECIES_ABYSSAL_GUARDIAN] =
+	{
+		.baseHP = 61,
+		.baseAttack = 83,
+		.baseDefense = 61,
+		.baseSpAttack = 83,
+		.baseSpDefense = 83,
+		.baseSpeed = 61,
+		.type1 = TYPE_PSYCHIC,
+		.type2 = TYPE_WATER,
+		.catchRate = 130,
+		.expYield = 83,
+		.evYield_HP = 0,
+		.evYield_Attack = 2,
+		.evYield_Defense = 0,
+		.evYield_SpAttack = 0,
+		.evYield_SpDefense = 0,
+		.evYield_Speed = 0,
+		.itemCommon = ITEM_NONE,
+		.itemRare = ITEM_NONE,
+		.genderRatio = PERCENT_FEMALE(50),
+		.eggCycles = 15,
+		.friendship = 70,
+		.growthRate = GROWTH_MEDIUM_SLOW,
+		.eggGroup1 = EGG_GROUP_BUG,
+		.eggGroup2 = EGG_GROUP_AMORPHOUS,
+		.abilities = {ABILITY_ABYSSAL, ABILITY_LIQUID_OOZE},
+		.safariZoneFleeRate = 0,
+		.bodyColor = BODY_COLOR_BLACK,
+		.noFlip = TRUE,
+	},
 	
 	
 	

@@ -9160,7 +9160,12 @@ const u32 gMonShinyPalette_Pig_Summoning_Form[] = INCBIN_U32("graphics/pokescape
 const u8 gMonIcon_Pig_Summoning_Form[] = INCBIN_U8("graphics/pokescape_monsters/Pig_Summoning_Form/icon.4bpp");
 const u8 gMonFootprint_Pig_Summoning_Form[] = INCBIN_U8("graphics/pokescape_monsters/Pig_Summoning_Form/footprint.1bpp");
 
-
+const u32 gMonStillFrontPic_Abyssal_Guardian[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_Guardian/front.4bpp.lz");
+const u32 gMonPalette_Abyssal_Guardian[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_Guardian/normal.gbapal.lz");
+const u32 gMonBackPic_Abyssal_Guardian[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_Guardian/back.4bpp.lz");
+const u32 gMonShinyPalette_Abyssal_Guardian[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_Guardian/shiny.gbapal.lz");
+const u8 gMonIcon_Abyssal_Guardian[] = INCBIN_U8("graphics/pokescape_monsters/Abyssal_Guardian/icon.4bpp");
+const u8 gMonFootprint_Abyssal_Guardian[] = INCBIN_U8("graphics/pokescape_monsters/Abyssal_Guardian/footprint.1bpp");
 
 
 

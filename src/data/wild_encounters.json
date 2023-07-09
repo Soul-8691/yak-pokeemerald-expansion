@@ -16779,12 +16779,32 @@
               {
                 "min_level": 8,
                 "max_level": 15,
-                "species": "SPECIES_ABYSSALING"
+                "species": "SPECIES_ABYSSAL_LEECH_FORM"
               },
               {
                 "min_level": 8,
                 "max_level": 15,
                 "species": "SPECIES_ABYSSALING"
+              },
+              {
+                "min_level": 8,
+                "max_level": 15,
+                "species": "SPECIES_ABYSSAL_LEECH_FORM"
+              },
+              {
+                "min_level": 8,
+                "max_level": 15,
+                "species": "SPECIES_ABYSSAL_LEECH_FORM"
+              },
+              {
+                "min_level": 8,
+                "max_level": 15,
+                "species": "SPECIES_ABYSSALING"
+              },
+              {
+                "min_level": 8,
+                "max_level": 15,
+                "species": "SPECIES_ABYSSAL_LEECH_FORM"
               },
               {
                 "min_level": 8,
@@ -16794,12 +16814,12 @@
               {
                 "min_level": 8,
                 "max_level": 15,
-                "species": "SPECIES_ABYSSAL_LEECH_FORM"
+                "species": "SPECIES_ABYSSAL_WALKER_FORM"
               },
               {
                 "min_level": 8,
                 "max_level": 15,
-                "species": "SPECIES_ABYSSAL_LEECH_FORM"
+                "species": "SPECIES_ABYSSAL_WALKER_FORM"
               },
               {
                 "min_level": 8,
@@ -16809,27 +16829,7 @@
               {
                 "min_level": 8,
                 "max_level": 15,
-                "species": "SPECIES_ABYSSAL_LEECH_FORM"
-              },
-              {
-                "min_level": 8,
-                "max_level": 15,
-                "species": "SPECIES_ABYSSAL_WALKER_FORM"
-              },
-              {
-                "min_level": 8,
-                "max_level": 15,
-                "species": "SPECIES_ABYSSAL_LEECH_FORM"
-              },
-              {
-                "min_level": 8,
-                "max_level": 15,
-                "species": "SPECIES_ABYSSAL_WALKER_FORM"
-              },
-              {
-                "min_level": 8,
-                "max_level": 15,
-                "species": "SPECIES_ABYSSAL_DEMON_FORM"
+                "species": "SPECIES_ABYSSAL_MINION_FORM"
               }
             ]
           }
@@ -18491,32 +18491,32 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_MUDSKIPPER"
+                "species": "SPECIES_ABYSSAL_GUARDIAN"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CORPOREAL_BEAST"
+                "species": "SPECIES_ABYSSAL_DEEPSEA_GUARDIAN"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BOULDABASS"
+                "species": "SPECIES_ABYSSAL_DEEPSEA_LEECH"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_PENANCE_RUNNER"
+                "species": "SPECIES_ABYSSAL_DEEPSEA_WALKER"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VOID_QUEEN"
+                "species": "SPECIES_SLIME_KING"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BASSTOISE"
+                "species": "SPECIES_SLIME_LILGLOOP"
               },
               {
                 "min_level": 5,

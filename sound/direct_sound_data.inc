@@ -5622,6 +5622,11 @@ Cry_TzTok_Jad_HD_Mega_Form::
 Cry_TzTok_Jad_RS3_Mega_Form::
 	.incbin "sound/direct_sound_samples/cries/chimecho.bin"
 
+	.align 2
+Cry_Abyssal_Guardian::
+	.incbin "sound/direct_sound_samples/cries/chimecho.bin"
+
+
 
 	.align 2
 DirectSoundWaveData_register_noise::

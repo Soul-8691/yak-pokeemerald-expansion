@@ -9243,6 +9243,13 @@ extern const u32 gMonShinyPalette_Pig_Summoning_Form[];
 extern const u32 gMonStillFrontPic_Pig_Summoning_Form[];
 extern const u8 gMonIcon_Pig_Summoning_Form[];
 extern const u8 gMonFootprint_Pig_Summoning_Form[];
+extern const u32 gMonFrontPic_Abyssal_Guardian[];
+extern const u32 gMonPalette_Abyssal_Guardian[];
+extern const u32 gMonBackPic_Abyssal_Guardian[];
+extern const u32 gMonShinyPalette_Abyssal_Guardian[];
+extern const u32 gMonStillFrontPic_Abyssal_Guardian[];
+extern const u8 gMonIcon_Abyssal_Guardian[];
+extern const u8 gMonFootprint_Abyssal_Guardian[];
 
 //POKESCAPE END
 extern const u32 gMonPic_Egg[];

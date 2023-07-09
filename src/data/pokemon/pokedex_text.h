@@ -7454,4 +7454,6 @@ const u8 gPig_Summoning_FormPokedexText[] = _(
 "A pig from the spirit realm summoned to\n"
 "Gielinor to help its summoner.");
 
+const u8 gAbyssal_GuardianPokedexText[] = _(
+"Nothing interesting happens.");
 

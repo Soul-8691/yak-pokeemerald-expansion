@@ -1314,7 +1314,7 @@ const u32 gMonFrontPic_Zulrah_Serpentine_Form[] = INCBIN_U32("graphics/pokescape
 const u32 gMonFrontPic_Zulrah_Magma_Form[] = INCBIN_U32("graphics/pokescape_monsters/Zulrah_Magma_Form/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Zulrah_Tanzanite_Form[] = INCBIN_U32("graphics/pokescape_monsters/Zulrah_Tanzanite_Form/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Pig_Summoning_Form[] = INCBIN_U32("graphics/pokescape_monsters/Pig_Summoning_Form/anim_front.4bpp.lz");
-
+const u32 gMonFrontPic_Abyssal_Guardian[] = INCBIN_U32("graphics/pokescape_monsters/Abyssal_Guardian/anim_front.4bpp.lz");
 //POKESCAPE END
 
 const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.lz");

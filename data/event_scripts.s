@@ -1635,3 +1635,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Shantay_Pass/scripts.inc"
 
 	.include "data/maps/Barrows/scripts.inc"
+
+	.include "data/maps/Neitiznot/scripts.inc"
+
+	.include "data/maps/Jatizso/scripts.inc"
+
+	.include "data/maps/Draynor_House_Aggie/scripts.inc"

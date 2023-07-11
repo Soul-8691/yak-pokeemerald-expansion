@@ -7340,6 +7340,36 @@
       "secondary_tileset": "gTileset_Lumbridge_Swamp",
       "border_filepath": "data/layouts/Barrows/border.bin",
       "blockdata_filepath": "data/layouts/Barrows/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEITIZNOT",
+      "name": "Neitiznot_Layout",
+      "width": 60,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Barbarian_Village",
+      "border_filepath": "data/layouts/Neitiznot/border.bin",
+      "blockdata_filepath": "data/layouts/Neitiznot/map.bin"
+    },
+    {
+      "id": "LAYOUT_JATIZSO",
+      "name": "Jatizso_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Barbarian_Village",
+      "border_filepath": "data/layouts/Jatizso/border.bin",
+      "blockdata_filepath": "data/layouts/Jatizso/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAYNOR_HOUSE_AGGIE",
+      "name": "Draynor_House_Aggie_Layout",
+      "width": 12,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/Draynor_House_Aggie/border.bin",
+      "blockdata_filepath": "data/layouts/Draynor_House_Aggie/map.bin"
     }
   ]
 }

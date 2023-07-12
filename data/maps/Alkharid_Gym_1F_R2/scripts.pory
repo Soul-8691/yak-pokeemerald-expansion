@@ -209,7 +209,7 @@ script ALKHARID_GYM_ALI {
         namebox("Prince Ali")
         msgbox(format("Have this Badge."))
         hidenamebox
-        playfanfare(MUS_PS_QUEST_COMPLETE)
+        playfanfare(MUS_PS_QUEST_COMPLETE) //MUS_OBTAIN_BADGE MUS_PS_QUEST_COMPLETE
         msgbox(format("{PLAYER} received the Varrock BADGE from Prince Ali."))
         waitfanfare
         waitmessage
@@ -250,7 +250,28 @@ script ALKHARID_GYM_ALI {
 
 
 
+script ALKHARID_MUSIC_TEST {
+    lock
+    faceplayer
+//cry
+    playmoncry(SPECIES_FROGEEL, 0)
+	msgbox(format("AAAAAA!"))
+    waitmoncry
 
+    playmoncry(SPECIES_BANDLING, 0)
+	msgbox(format("AAAAAA!!!"))
+    waitmoncry
+
+//fanfare
+    //msgbox(format("Fanfare!"))
+    //playfanfare(MUS_PS_QUEST_COMPLETE) 
+    //msgbox(format("playing OBTAIN BADGE"))
+    //waitfanfare
+    //waitmessage
+
+    release
+    end
+}
 
 
 

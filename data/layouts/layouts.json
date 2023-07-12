@@ -7364,8 +7364,8 @@
     {
       "id": "LAYOUT_DRAYNOR_HOUSE_AGGIE",
       "name": "Draynor_House_Aggie_Layout",
-      "width": 12,
-      "height": 12,
+      "width": 8,
+      "height": 8,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Draynor_House_Aggie/border.bin",

@@ -2277,5 +2277,351 @@ static const u8 sEmptyBucketDesc[] = _(
     "Nothing interesting\n"
     "happens.");
 
+
+//START -- SCROLLS
+static const u8 sScroll_01_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Sunny Day)");
+
+static const u8 sScroll_02_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Rain Dance)");
+
+static const u8 sScroll_03_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Hail)");
+
+static const u8 sScroll_04_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Sandstorm)");
+
+static const u8 sScroll_05_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Tailwind)");
+
+static const u8 sScroll_06_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Nitro Charge)");
+
+static const u8 sScroll_07_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Razor Shell)");
+
+static const u8 sScroll_08_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Solar Blade)");
+
+static const u8 sScroll_09_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Grass Terrain)");
+
+static const u8 sScroll_10_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Electric Terrain)");
+
+static const u8 sScroll_11_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Psychic Terrain)");
+
+static const u8 sScroll_12_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Misty Terrain)");
+
+static const u8 sScroll_13_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Brine)");
+
+static const u8 sScroll_14_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Energy Ball)");
+
+static const u8 sScroll_15_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Lava Plume)");
+
+static const u8 sScroll_16_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Hurricane)");
+
+static const u8 sScroll_17_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Aerial Ace)");
+
+static const u8 sScroll_18_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "()");
+
+static const u8 sScroll_19_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Volt Tackle)");
+
+static const u8 sScroll_20_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Draining Kiss)");
+
+static const u8 sScroll_21_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Toxic)");
+
+static const u8 sScroll_22_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Shadow Bone)");
+
+static const u8 sScroll_23_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Baneful Bunker)");
+
+static const u8 sScroll_24_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(U-Turn)");
+
+static const u8 sScroll_25_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Guillotine)");
+
+static const u8 sScroll_26_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Kings Shield)");
+
+static const u8 sScroll_27_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Sacred Sword)");
+
+static const u8 sScroll_28_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Swords Dance)");
+
+static const u8 sScroll_29_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Secret Sword)");
+
+static const u8 sScroll_30_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Return)");
+
+static const u8 sScroll_31_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Frustration)");
+
+static const u8 sScroll_32_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(False Swipe)");
+
+static const u8 sScroll_33_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Dragonbreath)");
+
+static const u8 sScroll_34_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Dragon Hammer)");
+
+static const u8 sScroll_35_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Leech Life)");
+
+static const u8 sScroll_36_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Slack Off)");
+
+static const u8 sScroll_37_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Thousand Arrows)");
+
+static const u8 sScroll_38_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Rock Tomb)");
+
+static const u8 sScroll_39_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Revelation Dance)");
+
+static const u8 sScroll_40_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Volt Switch)");
+
+static const u8 sScroll_41_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Flash Cannon)");
+
+static const u8 sScroll_42_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Pollen Puff)");
+
+static const u8 sScroll_43_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Psycho Cut)");
+
+static const u8 sScroll_44_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Play Rough)");
+
+static const u8 sScroll_45_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Spectral Theif)");
+
+static const u8 sScroll_46_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Dragon Tail)");
+
+static const u8 sScroll_47_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Lunar Dance)");
+
+static const u8 sScroll_48_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Power Gem)");
+
+static const u8 sScroll_49_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Snarl)");
+
+static const u8 sScroll_50_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Poison Jab)");
+
+static const u8 sScroll_51_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Icicle Crash)");
+
+static const u8 sScroll_52_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "()");
+
+static const u8 sScroll_53_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Ice Beam)");
+
+static const u8 sScroll_54_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Mud Bomb)");
+
+static const u8 sScroll_55_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Hex)");
+
+static const u8 sScroll_56_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Switcheroo)");
+
+static const u8 sScroll_57_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Psyshock)");
+
+static const u8 sScroll_58_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Sludge Wave)");
+
+static const u8 sScroll_59_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Spikes)");
+
+static const u8 sScroll_60_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Bulk Up)");
+
+static const u8 sScroll_61_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Pay Day)");
+
+static const u8 sScroll_62_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Defog)");
+
+static const u8 sScroll_63_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Trick or Treat)");
+
+static const u8 sScroll_64_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Revenge)");
+
+static const u8 sScroll_65_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Ice Hammer)");
+
+static const u8 sScroll_66_Desc[] = _(
+    "This Scroll\n"
+    "contains the move:\n"
+    "(Brutal Swing)");
+
+
+
+
+
+
+
+
+//END -- SCROLLS
+
+
+
+
 static const u8 sCupholderDesc[] = _(
     "This is a Cupholder.");
+
+

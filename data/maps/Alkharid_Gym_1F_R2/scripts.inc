@@ -225,6 +225,19 @@ ALKHARID_GYM_ALI_5:
 	goto ALKHARID_GYM_ALI_4
 
 
+ALKHARID_MUSIC_TEST::
+	lock
+	faceplayer
+	playmoncry SPECIES_FROGEEL, 0
+	msgbox ALKHARID_MUSIC_TEST_Text_0
+	waitmoncry
+	playmoncry SPECIES_BANDLING, 0
+	msgbox ALKHARID_MUSIC_TEST_Text_1
+	waitmoncry
+	release
+	end
+
+
 MOVERELEARNER_NPC::
 	faceplayer
 	msgbox MOVERELEARNER_NPC_Text_0, MSGBOX_YESNO
@@ -426,6 +439,12 @@ ALKHARID_GYM_ALI_Text_6:
 ALKHARID_GYM_ALI_Text_7:
 	.string "You should go pester the Prince in Al\n"
 	.string "Kharid for your next MvM gym challenge.$"
+
+ALKHARID_MUSIC_TEST_Text_0:
+	.string "AAAAAA!$"
+
+ALKHARID_MUSIC_TEST_Text_1:
+	.string "AAAAAA!!!$"
 
 MOVERELEARNER_NPC_Text_0:
 	.string "Would you like re-learn a move that\n"

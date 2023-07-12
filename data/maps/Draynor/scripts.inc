@@ -230,6 +230,27 @@ Draynor_FORTUNATO::
 	end
 
 
+Draynor_AGGIE::
+	lock
+	faceplayer
+	namebox Draynor_AGGIE_Text_0
+	goto_if_unset FLAG_RECEIVED_TM63, Draynor_AGGIE_2
+	msgbox Draynor_AGGIE_Text_4
+	hidenamebox
+	release
+	end
+
+Draynor_AGGIE_2:
+	msgbox Draynor_AGGIE_Text_1
+	msgbox Draynor_AGGIE_Text_2
+	giveitem ITEM_TM63, 1
+	msgbox Draynor_AGGIE_Text_3
+	setflag FLAG_RECEIVED_TM63
+	hidenamebox
+	release
+	end
+
+
 Draynor_TREE::
 	compare VAR_POKESCAPE_DRAYNOR_GUARD_STATE, 0
 	goto_if_eq Draynor_TREE_1
@@ -393,7 +414,14 @@ Draynor_Miss_Schism_Text_0:
 	.string "Miss Schism$"
 
 Draynor_Miss_Schism_Text_1:
-	.string "Hello.$"
+	.string "Hello, I hear a lot of gossip and\n"
+	.string "rumours.\p"
+	.string "For example did you know if you use\n"
+	.string "flavoured milk on a Cow it may evolve\l"
+	.string "into another Cow.\p"
+	.string "Furthermore, if that Cow learns a move\n"
+	.string "that spins around really fast it can\l"
+	.string "evolve even further!$"
 
 Draynor_Oliva_Text_0:
 	.string "Oliva$"
@@ -435,6 +463,27 @@ Draynor_FORTUNATO_Text_0:
 Draynor_FORTUNATO_Text_1:
 	.string "Can I interest you in something to\n"
 	.string "drink?$"
+
+Draynor_AGGIE_Text_0:
+	.string "Aggie$"
+
+Draynor_AGGIE_Text_1:
+	.string "Would you be interested in any dyes?$"
+
+Draynor_AGGIE_Text_2:
+	.string "Oh you are one of those adventuers\n"
+	.string "that fight with Monsters.\p"
+	.string "Here I might have something to help\n"
+	.string "with that.$"
+
+Draynor_AGGIE_Text_3:
+	.string "Who ever is hit by that move will be\n"
+	.string "turned into a Ghost-type.$"
+
+Draynor_AGGIE_Text_4:
+	.string "I usually help adventurers dye their\n"
+	.string "items but for you hopefully that move\l"
+	.string "will come in handy instead.$"
 
 Draynor_TREE_Text_0:
 	.string "???$"

@@ -1856,6 +1856,7 @@ const u8 gText_AddCash[] = _("Give Money");
 const u8 gText_AddCandy[] = _("Get Candies");
 const u8 gText_AddKeyItems[] = _("Get Key Items");
 const u8 gText_CheatTMShop[] = _("TM's");
+const u8 gText_CheatStatShop[] = _("Stat Items");
 const u8 gText_CheatMiscShop[] = _("Misc Items");
 // choose starter menu
 const u8 gText_GuthlingStarter[] = _("Guthling");

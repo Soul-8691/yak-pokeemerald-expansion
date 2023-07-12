@@ -71,17 +71,17 @@
 #define FLAG_COOKS_ASSIST_FINISHED   0x2E // Unused Flag
 #define FLAG_DUKE_TALKED    0x2F // Unused Flag
 
-//trade flags
+//START -- TRADE FLAGS
 #define FLAG_LUMBRIDGE_TRADE_1    0x30 // Unused Flag
-#define FLAG_RECEIVED_PULSECORE   0x31 // Unused Flag
-#define FLAG_ELVARG          0x32 // Unused Flag
-#define FLAG_RECEIVED_PHOENIX_EGG    0x33 // Unused Flag
-#define FLAG_RECEIVED_GUTHIX_EGG    0x34 // Unused Flag
-#define FLAG_RECIEVED_KITTEN    0x35 // Unused Flag
-#define FLAG_VARROCKGYM_BOOK_1    0x36 // Unused Flag
-#define FLAG_VARROCKGYM_BOOK_2    0x37 // Unused Flag
-#define FLAG_VARROCKGYM_BOOK_3    0x38 // Unused Flag
-#define FLAG_VARROCKGYM_BOOK_4    0x39 // Unused Flag
+#define FLAG_UNUSED_31   0x31 // Unused Flag
+#define FLAG_UNUSED_32          0x32 // Unused Flag
+#define FLAG_UNUSED_33    0x33 // Unused Flag
+#define FLAG_UNUSED_34    0x34 // Unused Flag
+#define FLAG_UNUSED_35    0x35 // Unused Flag
+#define FLAG_UNUSED_36    0x36 // Unused Flag
+#define FLAG_UNUSED_37    0x37 // Unused Flag
+#define FLAG_UNUSED_38    0x38 // Unused Flag
+#define FLAG_UNUSED_39    0x39 // Unused Flag
 #define FLAG_UNUSED_0x03A    0x3A // Unused Flag
 #define FLAG_UNUSED_0x03B    0x3B // Unused Flag
 #define FLAG_UNUSED_0x03C    0x3C // Unused Flag
@@ -89,7 +89,7 @@
 #define FLAG_UNUSED_0x03E    0x3E // Unused Flag
 #define FLAG_UNUSED_0x03F    0x3F // Unused Flag
 #define FLAG_UNUSED_0x040    0x40 // Unused Flag
-
+//END -- TRADE FLAGS
 
 #define FLAG_MITHRILMAN1    0x41 // Unused Flag
 #define FLAG_MITHRILMAN2    0x42 // Unused Flag
@@ -107,16 +107,24 @@
 #define FLAG_UNUSED_0x04E    0x4E // Unused Flag
 #define FLAG_GOLDENGNOME    0x4F // Unused Flag
 
-//POKESCAPE FLAGS
-#define FLAG_EVENT_PORTSARIM_HAM_BOAT       0x50    //FLAG_HIDE_RAYQUAZA_SKY_TOWER_SUMMIT
+//START -- POKESCAPE SCRIPT FLAGS
+#define FLAG_EVENT_PORTSARIM_HAM_BOAT       0x50
 #define FLAG_SET_WALL_CLOCK                 0x51
 #define FLAG_RECEIVED_SPLITBARK             0x52
 #define FLAG_MOD_TIMBO                      0x53    //REMOVE THIS ONE!
 #define FLAG_DUNGEONEERING_DOOR_ROUTE29     0x54  // FLAG_UNUSED_0x054 Unused Flag
 //#define FLAG_DUNGEONEERING_DOOR_AsgarnianDungeon_B3F         0x55  // FLAG_UNUSED_0x055 Unused Flag
 #define FLAG_HAIRDRESSER          0x56
-
-
+#define FLAG_RECEIVED_PULSECORE         0x68
+#define FLAG_ELVARG                     0x69
+#define FLAG_RECEIVED_PHOENIX_EGG       0x6A 
+#define FLAG_RECEIVED_GUTHIX_EGG        0x6B 
+#define FLAG_RECIEVED_KITTEN            0x6C 
+#define FLAG_VARROCKGYM_BOOK_1          0x6D 
+#define FLAG_VARROCKGYM_BOOK_2          0x6E
+#define FLAG_VARROCKGYM_BOOK_3          0x6F 
+#define FLAG_VARROCKGYM_BOOK_4          0x70
+#define FLAG_RECEIVED_TM63              0x71
 
 // Scripts
 
@@ -145,17 +153,7 @@
 #define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
 #define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 //
 
-#define FLAG_UNUSED_0x068                    0x68  // Unused Flag
 
-#define FLAG_OCEANIC_MUSEUM_MET_REPORTER     0x69
-#define FLAG_RECEIVED_HM04                   0x6A
-#define FLAG_RECEIVED_HM06                   0x6B
-#define FLAG_WHITEOUT_TO_LAVARIDGE           0x6C // Set after defeating Flannery, so the player cant white out from poison before receiving Go Goggles
-#define FLAG_RECEIVED_HM05                   0x6D
-#define FLAG_RECEIVED_HM02                   0x6E
-#define FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT  0x6F
-#define FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE  0x70
-#define FLAG_UNUSED_RS_LEGENDARY_BATTLE_DONE 0x71 // Unused Flag. Used in R/S to indicate whether player defeated or caught Groudon/Kyogre in Cave of Origin.
 #define FLAG_SCOTT_CALL_BATTLE_FRONTIER      0x72 // Used in order to activate a phone call from Scott, inviting the player to the SS Tidal.
 #define FLAG_RECEIVED_METEORITE              0x73
 #define FLAG_ADVENTURE_STARTED               0x74 // RECEIVED Pokédex.

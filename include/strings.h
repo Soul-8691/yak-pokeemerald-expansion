@@ -3094,6 +3094,7 @@ extern const u8 gText_AddCash[];
 extern const u8 gText_AddCandy[];
 extern const u8 gText_AddKeyItems[];
 extern const u8 gText_CheatTMShop[];
+extern const u8 gText_CheatStatShop[];
 extern const u8 gText_CheatMiscShop[];
 
 

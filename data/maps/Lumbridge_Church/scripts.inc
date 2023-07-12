@@ -74,8 +74,9 @@ GnomeBoi_Kevin::
 	case 5, GnomeBoi_Kevin_8
 	case 6, GnomeBoi_Kevin_9
 	case 7, GnomeBoi_Kevin_10
+	case 8, GnomeBoi_Kevin_11
 GnomeBoi_Kevin_1:
-	msgbox GnomeBoi_Kevin_Text_8
+	msgbox GnomeBoi_Kevin_Text_9
 	release
 	end
 
@@ -96,19 +97,26 @@ GnomeBoi_Kevin_4:
 GnomeBoi_Kevin_5:
 	msgbox GnomeBoi_Kevin_Text_3
 	waitmessage
-	pokemart Cheat_Menu_Shop_Medicine
+	pokemart Cheat_Menu_Shop_TM
 	release
 	goto GnomeBoi_Kevin_1
 
 GnomeBoi_Kevin_6:
 	msgbox GnomeBoi_Kevin_Text_4
 	waitmessage
-	pokemart Cheat_Menu_Shop_Misc
+	pokemart Cheat_Menu_Shop_Medicine
 	release
 	goto GnomeBoi_Kevin_1
 
 GnomeBoi_Kevin_7:
 	msgbox GnomeBoi_Kevin_Text_5
+	waitmessage
+	pokemart Cheat_Menu_Shop_Misc
+	release
+	goto GnomeBoi_Kevin_1
+
+GnomeBoi_Kevin_8:
+	msgbox GnomeBoi_Kevin_Text_6
 	giveitem ITEM_SMALL_NET
 	giveitem ITEM_BIG_NET
 	giveitem ITEM_DRAGON_NET
@@ -129,14 +137,14 @@ GnomeBoi_Kevin_7:
 	release
 	goto GnomeBoi_Kevin_1
 
-GnomeBoi_Kevin_8:
-	msgbox GnomeBoi_Kevin_Text_6
+GnomeBoi_Kevin_9:
+	msgbox GnomeBoi_Kevin_Text_7
 	addmoney 250000, 0
 	release
 	goto GnomeBoi_Kevin_1
 
-GnomeBoi_Kevin_9:
-	msgbox GnomeBoi_Kevin_Text_7
+GnomeBoi_Kevin_10:
+	msgbox GnomeBoi_Kevin_Text_8
 	additem ITEM_FRIENDSHIP_BOOSTER, 100
 	additem ITEM_PULSE_CORE, 6
 	additem ITEM_PURPLE_SWEETS, 100
@@ -144,7 +152,7 @@ GnomeBoi_Kevin_9:
 	release
 	goto GnomeBoi_Kevin_1
 
-GnomeBoi_Kevin_10:
+GnomeBoi_Kevin_11:
 	release
 	goto GnomeBoi_Kevin_1
 
@@ -250,6 +258,79 @@ Cheat_Menu_Shop_Medicine:
     .2byte ITEM_LAMP_SPDEF 
     .2byte ITEM_LAMP_SPEED 
 
+
+    .2byte ITEM_NONE
+    release
+    end
+
+    .align 2
+Cheat_Menu_Shop_TM:
+	.2byte ITEM_TM01
+    .2byte ITEM_TM02
+    .2byte ITEM_TM03
+    .2byte ITEM_TM04
+    .2byte ITEM_TM05
+    .2byte ITEM_TM06
+    .2byte ITEM_TM07
+    .2byte ITEM_TM08
+    .2byte ITEM_TM09
+    .2byte ITEM_TM10
+    .2byte ITEM_TM11
+    .2byte ITEM_TM12
+    .2byte ITEM_TM13
+    .2byte ITEM_TM14
+    .2byte ITEM_TM15
+    .2byte ITEM_TM16
+    .2byte ITEM_TM17
+    .2byte ITEM_TM18
+    .2byte ITEM_TM19
+    .2byte ITEM_TM20
+    .2byte ITEM_TM21
+    .2byte ITEM_TM22
+    .2byte ITEM_TM23
+    .2byte ITEM_TM24
+    .2byte ITEM_TM25
+    .2byte ITEM_TM26
+    .2byte ITEM_TM27
+    .2byte ITEM_TM28
+    .2byte ITEM_TM29
+    .2byte ITEM_TM30
+    .2byte ITEM_TM31
+    .2byte ITEM_TM32
+    .2byte ITEM_TM33
+    .2byte ITEM_TM34
+    .2byte ITEM_TM35
+    .2byte ITEM_TM36
+    .2byte ITEM_TM37
+    .2byte ITEM_TM38
+    .2byte ITEM_TM39
+    .2byte ITEM_TM40
+    .2byte ITEM_TM41
+    .2byte ITEM_TM42
+    .2byte ITEM_TM43
+    .2byte ITEM_TM44
+    .2byte ITEM_TM45
+    .2byte ITEM_TM46
+    .2byte ITEM_TM47
+    .2byte ITEM_TM48
+    .2byte ITEM_TM49
+    .2byte ITEM_TM50
+    .2byte ITEM_TM51
+    .2byte ITEM_TM52
+    .2byte ITEM_TM53
+    .2byte ITEM_TM54
+    .2byte ITEM_TM55
+    .2byte ITEM_TM56
+    .2byte ITEM_TM57
+    .2byte ITEM_TM58
+    .2byte ITEM_TM59
+    .2byte ITEM_TM60
+    .2byte ITEM_TM61
+    .2byte ITEM_TM62
+    .2byte ITEM_TM63
+    .2byte ITEM_TM64
+    .2byte ITEM_TM65
+    .2byte ITEM_TM66
 
     .2byte ITEM_NONE
     release
@@ -386,19 +467,22 @@ GnomeBoi_Kevin_Text_2:
 	.string "What pouches would you like?$"
 
 GnomeBoi_Kevin_Text_3:
-	.string "Look at my wares!$"
+	.string "Look at these Scrolls!$"
 
 GnomeBoi_Kevin_Text_4:
-	.string "Look at my junk!$"
+	.string "Look at my wares!$"
 
 GnomeBoi_Kevin_Text_5:
-	.string "These might be important!$"
+	.string "Look at my junk!$"
 
 GnomeBoi_Kevin_Text_6:
-	.string "Get money!$"
+	.string "These might be important!$"
 
 GnomeBoi_Kevin_Text_7:
-	.string "Heres some candy!$"
+	.string "Get money!$"
 
 GnomeBoi_Kevin_Text_8:
+	.string "Heres some candy!$"
+
+GnomeBoi_Kevin_Text_9:
 	.string "Smell ya later!$"

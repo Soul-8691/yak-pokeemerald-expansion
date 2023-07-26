@@ -48,6 +48,13 @@
       "elevation": 0,
       "dest_map": "MAP_FALADOR",
       "dest_warp_id": 13
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_ABYSSAL_REALM_1",
+      "dest_warp_id": 16
     }
   ],
   "coord_events": [
@@ -60,7 +67,7 @@
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "The_Needle_Clock"
     }
   ]
 }

@@ -7344,7 +7344,7 @@
     {
       "id": "LAYOUT_NEITIZNOT",
       "name": "Neitiznot_Layout",
-      "width": 60,
+      "width": 50,
       "height": 40,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Barbarian_Village",
@@ -7354,8 +7354,8 @@
     {
       "id": "LAYOUT_JATIZSO",
       "name": "Jatizso_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 50,
+      "height": 40,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Barbarian_Village",
       "border_filepath": "data/layouts/Jatizso/border.bin",

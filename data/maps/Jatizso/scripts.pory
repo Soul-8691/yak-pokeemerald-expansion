@@ -1,0 +1,400 @@
+mapscripts Jatizso_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        setvar(VAR_EVOLUTION_MAP_STATE, 11) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
+    }
+}
+
+
+
+
+script JATIZSO_INTERACT
+{
+    msgbox(format("It is a Gnome Glider."))
+    closemessage
+    release
+    end
+}
+
+//NPCS
+script JATIZSO_NPC_Lights
+{
+    lock
+    faceplayer
+    namebox ("Lights")
+    checktrainerflag(TRAINER_MITHRILMAN1) 
+    if (!var(VAR_RESULT))
+		{	
+            msgbox(format("Psst…\pPhantom and I are about to pull off a once in a lifetime heist.\pAnd you are in our way!"))
+            closemessage
+            hidenamebox
+            trainerbattle_no_intro(TRAINER_MITHRILMAN1,format("…"))
+        }
+    msgbox(format("By any chance could I persuade you into not telling the guards?"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+script JATIZSO_NPC_JacksonOHare
+{
+    lock
+    faceplayer
+    namebox ("Jackson")
+    msgbox(format("I like it here on Jatizso, there are no rabbits in sight.\pI could never see myself staying with those rabbit infested Neitiznots!"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+script JATIZSO_NPC_BonBun
+{
+	lock
+    namebox ("Bon-Bun")
+    playmoncry(SPECIES_SHELLDER, 0)
+	msgbox(format("BOOOOON!"))
+    waitmoncry
+    hidenamebox
+    //jackson face bon-bun
+    namebox ("Jackson")
+    msgbox(format("Bon-Bun… I do wish you would stop calling me Jackie."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+script JATIZSO_NPC_Tazim
+{
+    lock
+    faceplayer
+    namebox ("Elizabeth")
+    msgbox(format("Stay back!\pI want no part of this, my adventuring days are over!\pJust leave me and Snaily alone!"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+script JATIZSO_NPC_Snail
+{
+	lock
+    faceplayer
+    namebox ("Snaily")
+    playmoncry(SPECIES_SHELLDER, 0)
+	msgbox(format("SLURRP!"))
+    waitmoncry
+    hidenamebox
+    msgbox(format("It seems to be very defensive of Elizabeth."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+
+script JATIZSO_NPC_Nicki
+{
+    lock
+    faceplayer
+    namebox ("Morgan")
+
+    random(4)
+        switch (var(VAR_RESULT)) { 
+        case 0: 
+            msgbox(format("STUPID NEITZNOTS!"))
+        case 1: 
+            msgbox(format("DRAGONS R HOT!"))
+        case 2: 
+            msgbox(format("COME OVER HERE!\pI WILL MESS YOU UP!"))
+        case 3: 
+            msgbox(format("STUPID YAK LOVERS!"))
+            faceplayer
+            msgbox(format("Actually, we all really like Yaks but don't tell them that."))
+            //face right.
+        }
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+script JATIZSO_NPC_AeternusLux
+{
+    lock
+    faceplayer
+    namebox ("Lux")
+    msgbox(format("I enjoy staring out into the sea.\pIt reminds me of Boni.\pOH WHY!\pWhy did the Art Fight have to be held on Jatizso and not the Arc!"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+script JATIZSO_NPC_Willoway
+{
+    lock
+    //SHOW SILSKE
+    //FACE SILSKE (!)
+    //HIDE SILSKE
+    msgbox(format("…\pYou know I saw you right?"))
+    faceplayer
+    namebox ("Fay")
+    msgbox(format("…\pHe won't leave me alone."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+script JATIZSO_NPC_Casilliio
+{
+    lock
+    faceplayer
+    namebox ("Cass")
+    msgbox(format("I heard the king was over taxing his people so I came to educate him."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+script JATIZSO_NPC_Pop
+{
+	lock
+    namebox ("Pop")
+    playmoncry(SPECIES_SHELLDER, 0)
+	msgbox(format("PAWEEEW!"))
+    waitmoncry
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+script JATIZSO_NPC_Mothy
+{
+    lock
+    faceplayer
+    namebox ("Evelynn")
+    msgbox(format("BUZZ OFF!\pI do not care if you are a Neitiznot or a Jatizso.\pYou all disgust me the same.\pNOW SCRAM!"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+script JATIZSO_NPC_Cici
+{
+    lock
+    faceplayer
+    namebox ("Magnolia")
+    msgbox(format("Morgan please stop yelling at the Neitiznots.\pIt is not helping anyone."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+script JATIZSO_NPC_taffingspy
+{
+    lock
+    faceplayer
+    namebox ("Florin")
+    msgbox(format("I would challenge you to a battle but I do not want Kitty to be hurt anymore than she has."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+script JATIZSO_NPC_Kitty
+{
+	lock
+    namebox ("Kitty")
+    playmoncry(SPECIES_MEOWTH, 0)
+	msgbox(format("Meowar!"))
+    waitmoncry
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+
+
+script JATIZSO_NPC_Elej 
+{
+    lock
+    faceplayer
+    namebox ("Elej")
+    msgbox(format("Do you think this picture best shows off Jatizso in all of its glory?\pI want to send it to the Neitiznots as a peace offering."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+//Looks at painting on the wall
+script JATIZSO_NPC_ModDragon 
+{
+    lock
+    namebox ("Madame Dragon")
+    msgbox(format("Wow, Eterna has really outdone herself with this piece.\pIt is so tasteful!"))
+    closemessage
+    hidenamebox
+    namebox ("Bats")
+    msgbox(format("I agree, it is just so…{PAUSE 15} TASTEFUL!"))
+    closemessage
+    namebox ("Madame Dragon")
+    msgbox(format("We should send her some wine."))
+    closemessage
+    namebox ("Bats")
+    msgbox(format("That wine better be…{PAUSE 15} TASTEFUL!"))
+    closemessage
+    hidenamebox
+    namebox ("Madame Dragon")
+    msgbox(format("Of course, it will be as tasteful as this painting!"))
+    closemessage
+    hidenamebox
+    namebox ("Bats")
+    msgbox(format("…{PAUSE 15} TASTY!"))
+    closemessage
+    hidenamebox
+    namebox ("Madame Dragon")
+    msgbox(format("Bats do me a solid and fly over to Neitiznot to drop it off to her."))
+    closemessage
+    hidenamebox
+    namebox ("Bats")
+    msgbox(format("…{PAUSE 15} I can not do that.\pThe Art Fight rules prevents that."))
+    closemessage
+    hidenamebox
+    namebox ("Madame Dragon")
+    msgbox(format("How can we give her this tasteful wine then?"))
+    closemessage
+    hidenamebox
+    namebox ("Bats")
+    msgbox(format("…{PAUSE 15} We would require one that is not a Neitiznot nor a Jatizso."))
+    closemessage
+    hidenamebox
+    //FACEPLAYER
+    namebox ("Madame Dragon")
+    msgbox(format("Stranger, you seem to have overheard our entire conversation.\pCan you please deliver this to Eterna on Neitiznot for us?"))
+    closemessage
+    hidenamebox
+    //GIVE ITEM
+    namebox ("Madame Dragon")
+    msgbox(format("Thank you stranger."))
+    closemessage
+    hidenamebox
+    namebox ("Bats")
+    msgbox(format("…{PAUSE 15} THANK YOU."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+script JATIZSO_NPC_Hakazin
+{
+    lock
+    namebox ("Laith")
+    msgbox(format("The king wants us to fortify the boarders from the Neitiznots."))
+    closemessage
+    hidenamebox
+    namebox ("Alexandra")
+    msgbox(format("What would that even entail?"))
+    closemessage
+    hidenamebox
+    namebox ("Laith")
+    msgbox(format("I am not sure, last time it was throwing more salt into the water."))
+    closemessage
+    hidenamebox
+    namebox ("Alexandra")
+    msgbox(format("…\pI remember that."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+script JATIZSO_NPC_Dewydd 
+{
+    lock
+    faceplayer
+    namebox ("Dewydd")
+    msgbox(format("Don't mind me.\pI am just trying to create a spell to turn all the Neitiznots into Yaks."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+script JATIZSO_NPC_Charmchi 
+{
+    lock
+    faceplayer
+    namebox ("Charm")
+    msgbox(format("Can you go ask the king when we can go fight those Neitiznots?\pI am itchin for a fight!"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+script JATIZSO_NPC_Tifa
+{
+    lock
+    faceplayer
+    namebox ("Charm")
+    msgbox(format("Unless we are going into battle can you please leave me alone.\pUnless you would like to be friends?\pJK! HAHA! FORGET I SAID ANYTHING!"))
+    closemessage
+    hidenamebox
+    release
+    end
+}
+
+
+
+script JATIZSO_NPC_Moggies
+{
+	lock
+    namebox ("Moggies")
+    playmoncry(SPECIES_TORCHIC, 0)
+	msgbox(format("BWAK!"))
+    waitmoncry
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+script JATIZSO_NPC_Rallis
+{
+    lock
+    faceplayer
+    namebox ("Rallis")
+    msgbox(format("Hey did you pass Relleka on your way here?\pDo you think on your way back you could tell Olaf to come for a visit?"))
+    closemessage
+    hidenamebox
+    release
+    end
+}

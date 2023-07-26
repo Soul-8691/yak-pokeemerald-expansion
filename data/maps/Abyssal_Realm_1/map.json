@@ -322,6 +322,41 @@
       "elevation": 0,
       "dest_map": "MAP_BARROWS",
       "dest_warp_id": 0
+    },
+    {
+      "x": 58,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_STARTER_HOUSE_FALADOR",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 60,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_STARTER_HOUSE_VARROCK",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 62,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_STARTER_HOUSE_YANILLE",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 45,
+      "y": 49,
+      "elevation": 0,
+      "dest_map": "MAP_JATIZSO",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 47,
+      "y": 49,
+      "elevation": 0,
+      "dest_map": "MAP_NEITIZNOT",
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [

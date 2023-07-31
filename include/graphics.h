@@ -11299,6 +11299,9 @@ extern const u32 gItemIconPalette_SantaHat[];
 
 extern const u32 gItemIcon_PartyHat[];
 extern const u32 gItemIconPalette_PartyHat[];
+
+extern const u32 gItemIcon_FrogeelBurger[];
+extern const u32 gItemIconPalette_FrogeelBurger[];
 //------
 
 // pokescape crops

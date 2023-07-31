@@ -2618,7 +2618,10 @@ static const u8 sScroll_66_Desc[] = _(
 
 //END -- SCROLLS
 
-
+static const u8 sFrogeelBurgerDesc[] = _(
+    "A Fresh burger\n"
+    "made from Frogeels.\n"
+    "Tastes like AAAAA!");
 
 
 static const u8 sCupholderDesc[] = _(

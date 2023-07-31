@@ -1641,3 +1641,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Jatizso/scripts.inc"
 
 	.include "data/maps/Draynor_House_Aggie/scripts.inc"
+
+	.include "data/maps/Jatizso_House_1/scripts.inc"
+
+	.include "data/maps/Jatizso_House_2/scripts.inc"
+
+	.include "data/maps/Jatizso_House_3/scripts.inc"
+
+	.include "data/maps/Jatizso_Cave/scripts.inc"

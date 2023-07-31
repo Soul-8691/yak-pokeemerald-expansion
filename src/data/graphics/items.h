@@ -1456,6 +1456,8 @@ const u32 gItemIconPalette_REPEL_TEA_2[] = INCBIN_U32("graphics/items/pokescape_
 const u32 gItemIcon_REPEL_TEA_3[] = INCBIN_U32("graphics/items/pokescape_icons/tea_3.4bpp.lz");
 const u32 gItemIconPalette_REPEL_TEA_3[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/tea_3.gbapal.lz");
 
+const u32 gItemIcon_FrogeelBurger[] = INCBIN_U32("graphics/items/pokescape_icons/FrogeelBurger.4bpp.lz");
+const u32 gItemIconPalette_FrogeelBurger[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/FrogeelBurger.gbapal.lz");
 //pokescape tms
 
 const u32 gItemIcon_TMScroll[] = INCBIN_U32("graphics/items/pokescape_icons/tmscroll.4bpp.lz");

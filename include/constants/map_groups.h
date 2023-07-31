@@ -920,6 +920,10 @@
 #define MAP_BARB_STRONGHOLD_B3F                 (53 | (50 << 8))
 #define MAP_BARB_STRONGHOLD_B4F                 (54 | (50 << 8))
 #define MAP_BARROWS                             (55 | (50 << 8))
+#define MAP_JATIZSO_HOUSE_1                     (56 | (50 << 8))
+#define MAP_JATIZSO_HOUSE_2                     (57 | (50 << 8))
+#define MAP_JATIZSO_HOUSE_3                     (58 | (50 << 8))
+#define MAP_JATIZSO_CAVE                        (59 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

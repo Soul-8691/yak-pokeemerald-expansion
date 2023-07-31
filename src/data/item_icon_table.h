@@ -683,6 +683,7 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_MEGASTONE_BEAST] = {gItemIcon_MEGASTONE_BEAST, gItemIconPalette_MEGASTONE_BEAST},	
     [ITEM_CABBAGE_FARMING] = {gItemIcon_Cabbage, gItemIconPalette_Cabbage},
     [ITEM_FRIENDSHIP_BOOSTER] = {gItemIcon_Cabbage, gItemIconPalette_Cabbage},
+    [ITEM_FROGEEL_BURGER] = {gItemIcon_FrogeelBurger, gItemIconPalette_FrogeelBurger},
 
 
     

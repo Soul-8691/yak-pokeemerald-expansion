@@ -7708,6 +7708,18 @@ const struct Item gItems[] =
         .battleUsage = ITEM_B_USE_MEDICINE,
         .battleUseFunc = ItemUseInBattle_Medicine,
     },
+    [ITEM_FROGEEL_BURGER] =
+    {
+        .name = _("F.BURGER"),
+        .itemId = ITEM_CABBAGE,
+        .price = 1500,
+        .description = sFrogeelBurgerDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = ITEM_B_USE_MEDICINE,
+        .battleUseFunc = ItemUseInBattle_Medicine,
+    },
     //REPELS
     [ITEM_REPEL_TEA_1] =
     {

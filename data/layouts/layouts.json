@@ -6155,7 +6155,7 @@
       "id": "LAYOUT_RELLEKKA",
       "name": "Rellekka_Layout",
       "width": 70,
-      "height": 40,
+      "height": 46,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Barbarian_Village",
       "border_filepath": "data/layouts/Rellekka/border.bin",
@@ -7345,7 +7345,7 @@
       "id": "LAYOUT_NEITIZNOT",
       "name": "Neitiznot_Layout",
       "width": 50,
-      "height": 40,
+      "height": 36,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Barbarian_Village",
       "border_filepath": "data/layouts/Neitiznot/border.bin",
@@ -7370,6 +7370,46 @@
       "secondary_tileset": "gTileset_IndoorTowns1",
       "border_filepath": "data/layouts/Draynor_House_Aggie/border.bin",
       "blockdata_filepath": "data/layouts/Draynor_House_Aggie/map.bin"
+    },
+    {
+      "id": "LAYOUT_JATIZSO_HOUSE_1",
+      "name": "Jatizso_House_1_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/Jatizso_House_1/border.bin",
+      "blockdata_filepath": "data/layouts/Jatizso_House_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_JATIZSO_HOUSE_2",
+      "name": "Jatizso_House_2_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/Jatizso_House_2/border.bin",
+      "blockdata_filepath": "data/layouts/Jatizso_House_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_JATIZSO_HOUSE_3",
+      "name": "Jatizso_House_3_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/Jatizso_House_3/border.bin",
+      "blockdata_filepath": "data/layouts/Jatizso_House_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_JATIZSO_CAVE",
+      "name": "Jatizso_Cave_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Jatizso_Cave/border.bin",
+      "blockdata_filepath": "data/layouts/Jatizso_Cave/map.bin"
     }
   ]
 }

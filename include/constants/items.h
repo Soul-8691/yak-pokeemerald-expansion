@@ -799,8 +799,9 @@
 #define ITEM_MEGASTONE_BEAST 647
 
 #define ITEM_FRIENDSHIP_BOOSTER 648
+#define ITEM_FROGEEL_BURGER 649
 
-#define ITEMS_COUNT 649
+#define ITEMS_COUNT 650
 // Last available item ID due to ITEM_EXPANSION (see battle_config.h)
 // #define ITEM_ID_LIMIT 964
 #define ITEM_FIELD_ARROW ITEMS_COUNT

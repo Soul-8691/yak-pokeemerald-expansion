@@ -657,6 +657,26 @@ const u32 gObjectEventPic_Dog_Corgi[] = INCBIN_U32("graphics/object_events/pics/
 const u32 gObjectEventPic_Dog_Dalmatian[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Dog_Dalmatian.4bpp");
 const u32 gObjectEventPic_Pker_Rusher[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Pker_Rusher.4bpp");
 const u32 gObjectEventPic_Rune_Armour[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Rune_Armour.4bpp");
+const u32 gObjectEventPic_Smuggler[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/Smuggler.4bpp");
+const u32 gObjectEventPic_RAC_BATS[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/RAC_BATS.4bpp");
+const u32 gObjectEventPic_RAC_DRAGON[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/RAC_DRAGON.4bpp");
+const u32 gObjectEventPic_RAC_ELEJ[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/RAC_ELEJ.4bpp");
+const u32 gObjectEventPic_RAC_JACKIE[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/RAC_JACKIE.4bpp");
+const u32 gObjectEventPic_RAC_BONBUN[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/RAC_BONBUN.4bpp");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //POKESCAPE PALETTES
 /*
 const u16 gObjectEventPalette_Skeleton_1[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Skeleton_1.gbapal");
@@ -923,6 +943,13 @@ const u16 gObjectEventPalette_BARROWS[] = INCBIN_U16("graphics/object_events/pal
 const u16 gObjectEventPalette_GOBLINS[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/Goblins.gbapal");
 */
 //const u16 gObjectEventPalette_Pker_Rusher[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Pker_Rusher.gbapal");
+
+const u16 gObjectEventPalette_Smuggler[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/Smuggler.gbapal");
+const u16 gObjectEventPalette_RAC_BATS[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/RAC_BATS.gbapal");
+const u16 gObjectEventPalette_RAC_DRAGON[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/RAC_DRAGON.gbapal");
+const u16 gObjectEventPalette_RAC_ELEJ[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/RAC_ELEJ.gbapal");
+const u16 gObjectEventPalette_RAC_JACKIE[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/RAC_JACKIE.gbapal");
+const u16 gObjectEventPalette_RAC_BONBUN[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/RAC_BONBUN.gbapal");
 
 
 

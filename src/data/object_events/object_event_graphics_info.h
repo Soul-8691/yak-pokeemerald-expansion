@@ -569,3 +569,13 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pker_Rusher = {TAG
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rune_Armour = {TAG_NONE, OBJ_EVENT_PAL_KNIGHTS1, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, sOamTables_16x32, sAnimTable_Standard, sPicTable_Rune_Armour, gDummySpriteAffineAnimTable};
 
 
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Smuggler = {TAG_NONE, OBJ_EVENT_PAL_SMUGGLER, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, sOamTables_16x32, sAnimTable_Standard, sPicTable_Smuggler, gDummySpriteAffineAnimTable};
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_BATS = {TAG_NONE, OBJ_EVENT_PAL_RAC_BATS, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, sOamTables_16x32, sAnimTable_Standard, sPicTable_RAC_BATS, gDummySpriteAffineAnimTable};
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_DRAGON = {TAG_NONE, OBJ_EVENT_PAL_RAC_DRAGON, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, sOamTables_16x32, sAnimTable_Standard, sPicTable_RAC_DRAGON, gDummySpriteAffineAnimTable};
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_ELEJ = {TAG_NONE, OBJ_EVENT_PAL_RAC_ELEJ, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, sOamTables_16x32, sAnimTable_Standard, sPicTable_RAC_ELEJ, gDummySpriteAffineAnimTable};
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_JACKIE = {TAG_NONE, OBJ_EVENT_PAL_RAC_JACKIE, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, sOamTables_16x32, sAnimTable_Standard, sPicTable_RAC_JACKIE, gDummySpriteAffineAnimTable};
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_BONBUN = {TAG_NONE, OBJ_EVENT_PAL_RAC_BONBUN, OBJ_EVENT_PAL_TAG_NONE, 128, 16, 16, 2, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x16, sOamTables_16x16, sAnimTable_Standard, sPicTable_RAC_BONBUN, gDummySpriteAffineAnimTable};
+
+
+
+

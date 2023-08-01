@@ -86,7 +86,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_RSMVER_M",
+      "graphics_id": "OBJ_EVENT_GFX_RAC_JACKIE",
       "x": 18,
       "y": 19,
       "elevation": 3,
@@ -99,7 +99,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_COAL_ORE",
+      "graphics_id": "OBJ_EVENT_GFX_RAC_BONBUN",
       "x": 17,
       "y": 19,
       "elevation": 3,
@@ -268,7 +268,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CAMERAMAN",
+      "graphics_id": "OBJ_EVENT_GFX_RAC_ELEJ",
       "x": 25,
       "y": 28,
       "elevation": 3,
@@ -411,7 +411,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DRUID_2",
+      "graphics_id": "OBJ_EVENT_GFX_SMUGGLER",
       "x": 25,
       "y": 24,
       "elevation": 3,

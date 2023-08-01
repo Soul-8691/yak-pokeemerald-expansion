@@ -718,6 +718,28 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_BARROWS			0x125B
 #define OBJ_EVENT_PAL_GUARDS			0x125B
 */
+
+
+#define OBJ_EVENT_PAL_SMUGGLER			0x126A
+//RAC
+#define OBJ_EVENT_PAL_RAC_BATS			0x126B
+#define OBJ_EVENT_PAL_RAC_DRAGON		0x126C
+#define OBJ_EVENT_PAL_RAC_ELEJ			0x126D
+#define OBJ_EVENT_PAL_RAC_JACKIE		0x126E
+#define OBJ_EVENT_PAL_RAC_BONBUN		0x126F
+
+
+
+
+
+
+
+
+
+
+
+
+
 //NOTE: APPEARNTLY 0x1263 causes palette issues. It might be the same further on. Then again it could have been because the Archaeolist was assigned that number first.
 
 #define OBJ_EVENT_PAL_TAG_NONE 0x12FF
@@ -1044,6 +1066,13 @@ static const struct SpritePalette sObjectEventSpritePalettes[0xFF] = {
     {gObjectEventPalette_GUARDS, OBJ_EVENT_PAL_GUARDS},
     */
    {gObjectEventPalette_Pker_Rusher, OBJ_EVENT_PAL_PKER_RUSHER},
+
+   {gObjectEventPalette_Smuggler, OBJ_EVENT_PAL_SMUGGLER},
+   {gObjectEventPalette_RAC_BATS, OBJ_EVENT_PAL_RAC_BATS},
+   {gObjectEventPalette_RAC_DRAGON, OBJ_EVENT_PAL_RAC_DRAGON},
+   {gObjectEventPalette_RAC_ELEJ, OBJ_EVENT_PAL_RAC_ELEJ},
+   {gObjectEventPalette_RAC_JACKIE, OBJ_EVENT_PAL_RAC_JACKIE},
+   {gObjectEventPalette_RAC_BONBUN, OBJ_EVENT_PAL_RAC_BONBUN},
 
     {},
 };

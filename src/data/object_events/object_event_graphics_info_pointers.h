@@ -489,6 +489,13 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Dalmatian;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pker_Rusher;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rune_Armour;
 
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Smuggler;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_BATS;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_DRAGON;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_ELEJ;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_JACKIE;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_BONBUN;
+
 //ORES
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CopperOre;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TinOre;
@@ -985,6 +992,12 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DOG_DALMATIAN] =                    &gObjectEventGraphicsInfo_Dog_Dalmatian,
     [OBJ_EVENT_GFX_PKER_RUSHER] =                    &gObjectEventGraphicsInfo_Pker_Rusher,
     [OBJ_EVENT_GFX_RUNE_ARMOUR] =                    &gObjectEventGraphicsInfo_Rune_Armour,
+    [OBJ_EVENT_GFX_SMUGGLER] =                       &gObjectEventGraphicsInfo_Smuggler,
+    [OBJ_EVENT_GFX_RAC_BATS] =                       &gObjectEventGraphicsInfo_RAC_BATS,
+    [OBJ_EVENT_GFX_RAC_DRAGON] =                       &gObjectEventGraphicsInfo_RAC_DRAGON,
+    [OBJ_EVENT_GFX_RAC_ELEJ] =                       &gObjectEventGraphicsInfo_RAC_ELEJ,
+    [OBJ_EVENT_GFX_RAC_JACKIE] =                       &gObjectEventGraphicsInfo_RAC_JACKIE,
+    [OBJ_EVENT_GFX_RAC_BONBUN] =                       &gObjectEventGraphicsInfo_RAC_BONBUN,
 
 //ORES 
 	[OBJ_EVENT_GFX_COPPER_ORE] =          		    &gObjectEventGraphicsInfo_CopperOre,

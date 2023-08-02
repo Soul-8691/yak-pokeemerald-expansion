@@ -204,8 +204,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_JIGGLYPUFF_DOLL",
-      "x": 41,
-      "y": 16,
+      "x": 45,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,

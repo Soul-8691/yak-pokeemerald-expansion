@@ -71,6 +71,31 @@ GiveMon_Yak_5:
 	goto GiveMon_Yak_4
 
 
+Quest_Start::
+	subquestmenu QUEST_MENU_CHECK_COMPLETE, QUEST_1, SUB_QUEST_3
+	end
+
+
+Unlock_Quest_Menu::
+	setflag FLAG_SYS_QUEST_MENU_GET
+	end
+
+
+Quest_Test::
+	setflag FLAG_SYS_QUEST_MENU_GET
+	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_1
+	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_1
+	msgbox GiveMon_Yak_Text_0
+	closemessage
+	goto_if_eq VAR_RESULT, TRUE, CelebrateEndgame
+	end
+
+
+CelebrateEndgame::
+	special DoDomeConfetti
+	return
+
+
 GiveMon_Yak_Text_0:
 	.string "Inside this Pouch is a YAK.$"
 

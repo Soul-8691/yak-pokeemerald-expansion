@@ -48,6 +48,7 @@
 #include "constants/heal_locations.h"
 #include "event_data.h"
 #include "constants/vars.h"
+#include "quests.h"
 
 
 extern const u8 EventScript_ResetAllMapFlags[];
@@ -249,6 +250,7 @@ void NewGameInitData(void)
     WipeTrainerNameRecords();
     ResetTrainerHillResults();
     ResetContestLinkResults();
+    QuestMenu_ResetMenuSaveData();
 
     //POKESCAPE STARTING LOCATIONS
     if (gSaveBlock2Ptr->regionLocation == 0)

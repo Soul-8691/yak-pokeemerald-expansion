@@ -60,3 +60,34 @@ script GiveMon_Yak {
         }
 }
 
+
+
+
+script Quest_Start {
+    //startquest (QUEST_1)
+    //questmenu (QUEST_MENU_UNLOCK_QUEST, QUEST_1)
+    //questmenu (QUEST_MENU_SET_ACTIVE, QUEST_1)
+    //subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_1, SUB_QUEST_1)
+    subquestmenu (QUEST_MENU_CHECK_COMPLETE, QUEST_1, SUB_QUEST_3)
+    end
+}
+script Unlock_Quest_Menu {
+    setflag(FLAG_SYS_QUEST_MENU_GET)
+    end
+}
+
+
+script Quest_Test {
+    setflag (FLAG_SYS_QUEST_MENU_GET)
+    questmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_1)
+    questmenu (QUEST_MENU_CHECK_COMPLETE, QUEST_1)
+    msgbox("Inside this Pouch is a YAK.")
+    closemessage
+    goto_if_eq (VAR_RESULT, TRUE, CelebrateEndgame)
+    end
+}
+
+script CelebrateEndgame {
+    special (DoDomeConfetti)
+    return
+}

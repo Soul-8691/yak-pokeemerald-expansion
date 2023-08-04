@@ -233,6 +233,9 @@ gScriptCmdTable::
 	.4byte ScrCmd_hidenamebox				@ 0xe6
 	.4byte ScrCmd_checkgamemode				@ 0xe7
 	.4byte ScrCmd_dowildbattleNoCatch       @ 0xe8
+	.4byte ScrCmd_questmenu                 @ 0xe9
+    .4byte ScrCmd_subquestmenu              @ 0xea
+    .4byte ScrCmd_returnqueststate          @ 0xeb
 
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop

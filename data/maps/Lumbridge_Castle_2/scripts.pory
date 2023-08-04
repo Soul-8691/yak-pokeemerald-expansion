@@ -109,28 +109,9 @@ script Lumbridge_Castle_COOKS_TRIGGER{
 		closemessage
 		applymovement(OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_COOKS_TRIGGER2)
 		waitmovement(0)
-		release
-		end
 	}
-	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 1 && var(VAR_POKESCAPE_GAMEMODE_STATE) == 0 && flag(FLAG_MITHRILMAN1) == FALSE)){
-		lock
-		PlaySE(SE_PIN)
-		applymovement(OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_COOKS_TRIGGER1)
-		waitmovement(0)
-		msgbox(format("Wait player lets battle!"))
-		waitmessage 
-		msgbox(format(""))
-		waitmessage 
-		closemessage
-		applymovement(OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_COOKS_TRIGGER2)
-		waitmovement(0)
-		release
-		end
-	}
-	else{
-		release
-		end
-	}
+	release
+	end
 }
 
 movement Movement_Lumbridge_Castle_COOKS_TRIGGER1{
@@ -1037,72 +1018,86 @@ script NPC_LUMBRIDGE_HARLAN
 
 
 
-
-
-
-
-
-
-
+//MITHRILMAN ENCOUNTER 1--------
+script Mithrilman_LUMBRIDGE {
+	lock
+	faceplayer
+	goto(Mithrilman_LUMBRIDGE_STATE_2)
+	release
+	end
+}
 
 script Mithrilman_LUMBRIDGE_TRIGGER {
+	if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 1 && var(VAR_POKESCAPE_GAMEMODE_STATE) == 0 && flag(FLAG_MITHRILMAN1) == FALSE)){
+		goto(Mithrilman_LUMBRIDGE_STATE_1)
+	}
+	else {
+		release
+		end
+	}
+}
+
+script Mithrilman_LUMBRIDGE_STATE_1 {
         lock
 		PlaySE(SE_PIN)
-		applymovement(OBJ_EVENT_ID_MITHRILMAN, Movement_Lumbridge_Castle_COOKS_TRIGGER1)
+		applymovement(OBJ_EVENT_ID_MITHRILMAN, Movement_MithrilmanSpotted)
 		waitmovement(0)
+		delay(60)
         getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
-        if (var(VAR_TEMP_1) == 17){
-            goto (Mithrilman_LeftDoorScript)
+        if (var(VAR_TEMP_2) == 13){
+            applymovement(OBJ_EVENT_ID_MITHRILMAN, Movement_InteractFACEDOWN)
+			waitmovement (OBJ_EVENT_ID_MITHRILMAN)
+			applymovement(OBJ_EVENT_ID_PLAYER, Movement_InteractFACEUP)
+			waitmovement (0)
+			goto(Mithrilman_LUMBRIDGE_STATE_2)
+        }
+		if (var(VAR_TEMP_2) == 14){
+            applymovement(OBJ_EVENT_ID_MITHRILMAN, Movement_WalkDown1)
+			waitmovement (OBJ_EVENT_ID_MITHRILMAN)
+			applymovement(OBJ_EVENT_ID_PLAYER, Movement_InteractFACEUP)
+			waitmovement (0)
+			goto(Mithrilman_LUMBRIDGE_STATE_2)
         } else {
-            goto (Mithrilman_RightDoorScript)
+            applymovement(OBJ_EVENT_ID_MITHRILMAN, Movement_WalkDown2)
+			waitmovement (OBJ_EVENT_ID_MITHRILMAN)
+			applymovement(OBJ_EVENT_ID_PLAYER, Movement_InteractFACEUP)
+			waitmovement (0)
+			goto(Mithrilman_LUMBRIDGE_STATE_2)
         }
 		release
 		end
 }
-script Mithrilman_LeftDoorScript
+movement Movement_WalkDown1
 {
-    applymovement(10, Movement_Mithrilman_LeftDoor)
-	waitmovement (0)
-    goto(Mithrilman_LUMBRIDGE1)
-    release
-    end
+	walk_down * 1
 }
-script Mithrilman_RightDoorScript
-{
-    applymovement(10, Movement_Mithrilman_RightDoor)
-	waitmovement (0)
-    goto(Mithrilman_LUMBRIDGE1)
-    release
-    end
-}
-movement Movement_Mithrilman_LeftDoor
+movement Movement_WalkDown2
 {
 	walk_down * 2
-	walk_left * 1
 }
-movement Movement_Mithrilman_RightDoor
+movement Movement_WalkDown3
 {
-	walk_down * 2
-	walk_left * 2
+	walk_down * 3
+}
+movement Movement_MithrilmanSpotted
+{
+	emote_exclamation_mark
+	face_player
 }
 
-
-
-
-
-//MITHRILMAN ENCOUNTER 1--------
-script Mithrilman_LUMBRIDGE1{
-	lock
-	faceplayer
+script Mithrilman_LUMBRIDGE_STATE_2{
     playbgm (MUS_ENCOUNTER_MAY, 1)
     if((var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE) == 0)){
+		applymovement(OBJ_EVENT_ID_MITHRILMAN, Movement_InteractFACEPLAYER)
+	    waitmovement(0)
         namebox ("???")
         msgbox(format("I douth believe the cook seeks assistance.\pYou should go check with him."))
-        hidenamebox
-        applymovement(2, Movement_Mithrilman_Lumbridge1)
-	    waitmovement(0)
         savebgm(MUS_DUMMY)
 	    fadedefaultbgm
+		hidenamebox
+		closemessage
+		applymovement(OBJ_EVENT_ID_MITHRILMAN, Movement_InteractFACEUP)
+	    waitmovement(0)
         release
         end
     }
@@ -1113,12 +1108,12 @@ script Mithrilman_LUMBRIDGE1{
         msgbox(format("Morest fabled thanst the Ironmen and faster than the Adamantmen.\pThe Mithrilman is a challenge upon the very spirit ofst PokeScape itself.\pAs thy predecessor inst this realm.\pWhy doesnt thine show ye, knave, howst a true master battles.")) 
         hidenamebox
         trainerbattle_no_intro(TRAINER_MITHRILMAN1,format("…"))
-        goto(Mithrilman_LUMBRIDGE2)
+        goto(Mithrilman_LUMBRIDGE_STATE_3)
         release
         end
     }
 }
-script Mithrilman_LUMBRIDGE2{  
+script Mithrilman_LUMBRIDGE_STATE_3{  
     lock
     faceplayer  
     namebox ("Mithrilman")
@@ -1137,8 +1132,4 @@ script Mithrilman_LUMBRIDGE2{
     end
 }
 
-movement Movement_Mithrilman_Lumbridge1
-{
-	face_up
-}
 //-----------------------------

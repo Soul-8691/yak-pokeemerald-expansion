@@ -37,7 +37,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Mithrilman_LUMBRIDGE1",
+      "script": "Mithrilman_LUMBRIDGE",
       "flag": "FLAG_MITHRILMAN1 "
     },
     {
@@ -294,6 +294,33 @@
       "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "Lumbridge_Castle_COOKS_TRIGGER_celler"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Mithrilman_LUMBRIDGE_TRIGGER"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Mithrilman_LUMBRIDGE_TRIGGER"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Mithrilman_LUMBRIDGE_TRIGGER"
     }
   ],
   "bg_events": [

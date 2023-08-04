@@ -178,6 +178,7 @@ LUMBRIDGESWAMP_BOOK::
 
 
 EventScript_RestBed::
+	lock
 	msgbox EventScript_RestBed_Text_0, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_ne EventScript_RestBed_2
@@ -187,6 +188,7 @@ EventScript_RestBed_1:
 
 EventScript_RestBed_2:
 	fadescreen FADE_TO_BLACK
+	closemessage
 	playfanfare MUS_HEAL
 	waitfanfare
 	special HealPlayerParty

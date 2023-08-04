@@ -523,6 +523,24 @@
       "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
       "var_value": "5",
       "script": "HAM_EVENT_Route1_TRIGGER_1"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "5",
+      "script": "HAM_EVENT_Route1_TRIGGER_2"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_POKESCAPE_WIZARDS_TOWER_STATE",
+      "var_value": "5",
+      "script": "HAM_EVENT_Route1_TRIGGER_2"
     }
   ],
   "bg_events": [

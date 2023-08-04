@@ -198,10 +198,12 @@ script LUMBRIDGESWAMP_BOOK
 
 script EventScript_RestBed
 {
+	lock
 	msgbox(format("Would you like to take a rest?"), MSGBOX_YESNO)
     if (var(VAR_RESULT))
     { 
 		fadescreen(FADE_TO_BLACK)
+		closemessage
 		playfanfare (MUS_HEAL)
 		waitfanfare
 		special(HealPlayerParty)

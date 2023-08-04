@@ -36,39 +36,49 @@ OPENWORLD_STATE_ROUTE2::
 QUEST_STATE_WizardsTower_ROUTE2::
 	switch VAR_POKESCAPE_WIZARDS_TOWER_STATE
 	case 0, QUEST_STATE_WizardsTower_ROUTE2_2
-	case 1, QUEST_STATE_WizardsTower_ROUTE2_2
-	case 2, QUEST_STATE_WizardsTower_ROUTE2_2
-	case 3, QUEST_STATE_WizardsTower_ROUTE2_3
-	case 4, QUEST_STATE_WizardsTower_ROUTE2_4
-	case 5, QUEST_STATE_WizardsTower_ROUTE2_4
-	case 6, QUEST_STATE_WizardsTower_ROUTE2_4
-	case 7, QUEST_STATE_WizardsTower_ROUTE2_4
-	case 8, QUEST_STATE_WizardsTower_ROUTE2_4
-	case 9, QUEST_STATE_WizardsTower_ROUTE2_5
+	case 1, QUEST_STATE_WizardsTower_ROUTE2_3
+	case 2, QUEST_STATE_WizardsTower_ROUTE2_3
+	case 3, QUEST_STATE_WizardsTower_ROUTE2_4
+	case 4, QUEST_STATE_WizardsTower_ROUTE2_5
+	case 5, QUEST_STATE_WizardsTower_ROUTE2_5
+	case 6, QUEST_STATE_WizardsTower_ROUTE2_5
+	case 7, QUEST_STATE_WizardsTower_ROUTE2_5
+	case 8, QUEST_STATE_WizardsTower_ROUTE2_5
+	case 9, QUEST_STATE_WizardsTower_ROUTE2_6
 	return
 
 QUEST_STATE_WizardsTower_ROUTE2_2:
 	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	setvar VAR_TEMP_2, 1
+	removeobject 1
 	removeobject 2
 	removeobject 3
 	release
 	end
 
 QUEST_STATE_WizardsTower_ROUTE2_3:
-	clearflag FLAG_TEMP_1
-	addobject 2
-	addobject 3
-	release
-	end
-
-QUEST_STATE_WizardsTower_ROUTE2_4:
 	setflag FLAG_TEMP_1
 	removeobject 2
 	removeobject 3
 	release
 	end
 
+QUEST_STATE_WizardsTower_ROUTE2_4:
+	clearflag FLAG_TEMP_1
+	addobject 2
+	addobject 3
+	release
+	end
+
 QUEST_STATE_WizardsTower_ROUTE2_5:
+	setflag FLAG_TEMP_1
+	removeobject 2
+	removeobject 3
+	release
+	end
+
+QUEST_STATE_WizardsTower_ROUTE2_6:
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
 	setvar VAR_TEMP_2, 1

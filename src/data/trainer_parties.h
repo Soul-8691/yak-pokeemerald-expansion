@@ -15,7 +15,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Maggie[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Goblin1_Route1[] = {
     {
     .iv = 0,
-    .lvl = 3,
+    .lvl = 4,
     .species = SPECIES_RAT_NORMAL_FORM,
     }
 };
@@ -23,7 +23,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Goblin1_Route1[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_Goblin2_Route1[] = {
     {
     .iv = 0,
-    .lvl = 3,
+    .lvl = 4,
     .species = SPECIES_SPIDERLING,
     }
 };
@@ -33,11 +33,6 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Trainer1_Route1[] = {
     .iv = 0,
     .lvl = 3,
     .species = SPECIES_CHICK,
-    },
-    {
-    .iv = 0,
-    .lvl = 4,
-    .species = SPECIES_LAMB,
     }
 };
 
@@ -101,7 +96,7 @@ static const struct TrainerMonItemDefaultMoves sParty_TRAINER1_MILLLANEMILL[] = 
 static const struct TrainerMonItemDefaultMoves sParty_TRAINER2_MILLLANEMILL[] = {
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 3,
     .species = SPECIES_PIGLET,
     .heldItem = ITEM_NONE
     }
@@ -125,13 +120,13 @@ static const struct TrainerMonItemDefaultMoves sParty_TRAINER3_MILLLANEMILL[] = 
 static const struct TrainerMonItemDefaultMoves sParty_TRAINER4_MILLLANEMILL[] = {
     {
     .iv = 0,
-    .lvl = 6,
+    .lvl = 4,
     .species = SPECIES_BABY_YAK,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 4,
+    .lvl = 5,
     .species = SPECIES_CROW,
     .heldItem = ITEM_NONE
     }
@@ -140,13 +135,13 @@ static const struct TrainerMonItemDefaultMoves sParty_TRAINER4_MILLLANEMILL[] = 
 static const struct TrainerMonItemDefaultMoves sParty_MILLIE_MILLER_MILLLANEMILL[] = {
     {
     .iv = 0,
-    .lvl = 6,
+    .lvl = 4,
     .species = SPECIES_PIGLET,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 8,
+    .lvl = 5,
     .species = SPECIES_CALF,
     .heldItem = ITEM_NONE
     },
@@ -287,13 +282,13 @@ static const struct TrainerMonItemDefaultMoves sParty_Mugger_Route6[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym1[] = {
     {
     .iv = 0,
-    .lvl = 8,
+    .lvl = 6,
     .species = SPECIES_LAMB,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 8,
+    .lvl = 7,
     .species = SPECIES_LAMB,
     .heldItem = ITEM_NONE
     }
@@ -302,7 +297,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym1[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym2[] = {
     {
     .iv = 0,
-    .lvl = 9,
+    .lvl = 7,
     .species = SPECIES_RABBIT,
     .heldItem = ITEM_NONE
     }
@@ -311,13 +306,13 @@ static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym2[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym3[] = {
     {
     .iv = 0,
-    .lvl = 9,
+    .lvl = 7,
     .species = SPECIES_PUPPY_PUP_FORM,
     .heldItem = ITEM_NONE
     },
     {
     .iv = 0,
-    .lvl = 9,
+    .lvl = 7,
     .species = SPECIES_KITTEN,
     .heldItem = ITEM_NONE
     }
@@ -326,7 +321,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym3[] = {
 static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym4[] = {
     {
     .iv = 0,
-    .lvl = 9,
+    .lvl = 8,
     .species = SPECIES_BABY_YAK,
     .heldItem = ITEM_NONE
     }
@@ -335,19 +330,19 @@ static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym4[] = {
 static const struct TrainerMonNoItemCustomMoves sParty_Duke[] = {
     {
     .iv = 0,
-    .lvl = 11,
+    .lvl = 8,
     .species = SPECIES_BABY_YAK,
     .moves = {MOVE_SLACK_OFF, MOVE_ABSORB, MOVE_TACKLE, MOVE_GROWL}
     },
     {
     .iv = 0,
-    .lvl = 11,
+    .lvl = 10,
     .species = SPECIES_PUPPY_MUTT_FORM,
     .moves = {MOVE_SLACK_OFF, MOVE_TACKLE, MOVE_HOWL, MOVE_GROWL}
     },
     {
     .iv = 0,
-    .lvl = 10,
+    .lvl = 9,
     .species = SPECIES_ROOSTER_NORMAL_FORM,
     .moves = {MOVE_SLACK_OFF, MOVE_TACKLE, MOVE_FEATHER_DANCE, MOVE_PECK}
     }

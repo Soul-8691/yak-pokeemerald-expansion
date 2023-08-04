@@ -195,3 +195,20 @@ script LUMBRIDGESWAMP_BOOK
 	release
 	end
 }
+
+script EventScript_RestBed
+{
+	msgbox(format("Would you like to take a rest?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT))
+    { 
+		fadescreen(FADE_TO_BLACK)
+		playfanfare (MUS_HEAL)
+		waitfanfare
+		special(HealPlayerParty)
+		fadescreen(FADE_FROM_BLACK)
+		
+	}
+	
+	release
+	end
+}

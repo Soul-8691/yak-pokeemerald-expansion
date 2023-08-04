@@ -177,6 +177,23 @@ LUMBRIDGESWAMP_BOOK::
 	end
 
 
+EventScript_RestBed::
+	msgbox EventScript_RestBed_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne EventScript_RestBed_2
+EventScript_RestBed_1:
+	release
+	end
+
+EventScript_RestBed_2:
+	fadescreen FADE_TO_BLACK
+	playfanfare MUS_HEAL
+	waitfanfare
+	special HealPlayerParty
+	fadescreen FADE_FROM_BLACK
+	goto EventScript_RestBed_1
+
+
 BLOCK_LumbridgeSwamp_HAM_Text_0:
 	.string "Pink Man$"
 
@@ -285,3 +302,6 @@ LUMBRIDGESWAMP_BOOK_Text_0:
 	.string "Step 2, make sure it is far enough away\n"
 	.string "that adventurers don't light fires at\l"
 	.string "your windows.$"
+
+EventScript_RestBed_Text_0:
+	.string "Would you like to take a rest?$"

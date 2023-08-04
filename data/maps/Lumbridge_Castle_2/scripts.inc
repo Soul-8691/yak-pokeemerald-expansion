@@ -88,11 +88,14 @@ Movement_Lumbridge_Castle_HALLWAY_TRIGGER3:
 Lumbridge_Castle_COOKS_TRIGGER::
 	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
 	goto_if_eq Lumbridge_Castle_COOKS_TRIGGER_3
-Lumbridge_Castle_COOKS_TRIGGER_2:
+Lumbridge_Castle_COOKS_TRIGGER_1:
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 1
+	goto_if_eq Lumbridge_Castle_COOKS_TRIGGER_9
+Lumbridge_Castle_COOKS_TRIGGER_7:
 	release
 	end
 
-Lumbridge_Castle_COOKS_TRIGGER_1:
+Lumbridge_Castle_COOKS_TRIGGER_2:
 	lock
 	PlaySE SE_PIN
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_COOKS_TRIGGER1
@@ -109,8 +112,32 @@ Lumbridge_Castle_COOKS_TRIGGER_1:
 
 Lumbridge_Castle_COOKS_TRIGGER_3:
 	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
-	goto_if_eq Lumbridge_Castle_COOKS_TRIGGER_1
-	goto Lumbridge_Castle_COOKS_TRIGGER_2
+	goto_if_eq Lumbridge_Castle_COOKS_TRIGGER_2
+	goto Lumbridge_Castle_COOKS_TRIGGER_1
+
+Lumbridge_Castle_COOKS_TRIGGER_6:
+	lock
+	PlaySE SE_PIN
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_COOKS_TRIGGER1
+	waitmovement 0
+	msgbox Lumbridge_Castle_COOKS_TRIGGER_Text_2
+	waitmessage
+	msgbox Lumbridge_Castle_COOKS_TRIGGER_Text_3
+	waitmessage
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_Lumbridge_Castle_COOKS_TRIGGER2
+	waitmovement 0
+	release
+	end
+
+Lumbridge_Castle_COOKS_TRIGGER_8:
+	goto_if_unset FLAG_MITHRILMAN1, Lumbridge_Castle_COOKS_TRIGGER_6
+	goto Lumbridge_Castle_COOKS_TRIGGER_7
+
+Lumbridge_Castle_COOKS_TRIGGER_9:
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_Castle_COOKS_TRIGGER_8
+	goto Lumbridge_Castle_COOKS_TRIGGER_7
 
 
 Movement_Lumbridge_Castle_COOKS_TRIGGER1:
@@ -1065,6 +1092,104 @@ NPC_LUMBRIDGE_HARLAN::
 	end
 
 
+Mithrilman_LUMBRIDGE_TRIGGER::
+	lock
+	PlaySE SE_PIN
+	applymovement 2, Movement_Lumbridge_Castle_COOKS_TRIGGER1
+	waitmovement 0
+	getplayerxy VAR_TEMP_1, VAR_TEMP_2
+	compare VAR_TEMP_1, 17
+	goto_if_eq Mithrilman_LUMBRIDGE_TRIGGER_2
+	goto Mithrilman_RightDoorScript
+Mithrilman_LUMBRIDGE_TRIGGER_1:
+	release
+	end
+
+Mithrilman_LUMBRIDGE_TRIGGER_2:
+	goto Mithrilman_LeftDoorScript
+	goto Mithrilman_LUMBRIDGE_TRIGGER_1
+
+
+Mithrilman_LeftDoorScript::
+	applymovement 10, Movement_Mithrilman_LeftDoor
+	waitmovement 0
+	goto Mithrilman_LUMBRIDGE1
+	release
+	end
+
+
+Mithrilman_RightDoorScript::
+	applymovement 10, Movement_Mithrilman_RightDoor
+	waitmovement 0
+	goto Mithrilman_LUMBRIDGE1
+	release
+	end
+
+
+Movement_Mithrilman_LeftDoor:
+	walk_down
+	walk_down
+	walk_left
+	step_end
+
+Movement_Mithrilman_RightDoor:
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	step_end
+
+Mithrilman_LUMBRIDGE1::
+	lock
+	faceplayer
+	playbgm MUS_ENCOUNTER_MAY, 1
+	compare VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 0
+	goto_if_eq Mithrilman_LUMBRIDGE1_1
+	namebox Mithrilman_LUMBRIDGE1_Text_0
+	msgbox Mithrilman_LUMBRIDGE1_Text_2
+	namebox Mithrilman_LUMBRIDGE1_Text_3
+	msgbox Mithrilman_LUMBRIDGE1_Text_4
+	hidenamebox
+	trainerbattle_no_intro TRAINER_MITHRILMAN1, Mithrilman_LUMBRIDGE1_Text_5
+	goto Mithrilman_LUMBRIDGE2
+	release
+	end
+
+Mithrilman_LUMBRIDGE1_1:
+	namebox Mithrilman_LUMBRIDGE1_Text_0
+	msgbox Mithrilman_LUMBRIDGE1_Text_1
+	hidenamebox
+	applymovement 2, Movement_Mithrilman_Lumbridge1
+	waitmovement 0
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	release
+	end
+
+
+Mithrilman_LUMBRIDGE2::
+	lock
+	faceplayer
+	namebox Mithrilman_LUMBRIDGE1_Text_3
+	msgbox Mithrilman_LUMBRIDGE2_Text_0
+	waitmessage
+	hidenamebox
+	closemessage
+	fadescreen FADE_TO_BLACK
+	removeobject 2
+	fadescreen FADE_FROM_BLACK
+	setflag FLAG_MITHRILMAN1
+	clearflag FLAG_MITHRILMAN2
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	release
+	end
+
+
+Movement_Mithrilman_Lumbridge1:
+	face_up
+	step_end
+
 Lumbridge_Bookshelf_Text_0:
 	.string "There is a Book with the title\n"
 	.string "Adamantman Guide.\p"
@@ -1100,6 +1225,12 @@ Lumbridge_Castle_COOKS_TRIGGER_Text_0:
 Lumbridge_Castle_COOKS_TRIGGER_Text_1:
 	.string "You hear a loud noise coming from the\n"
 	.string "kitchen.$"
+
+Lumbridge_Castle_COOKS_TRIGGER_Text_2:
+	.string "Wait player lets battle!$"
+
+Lumbridge_Castle_COOKS_TRIGGER_Text_3:
+	.string "$"
 
 Lumbridge_Castle_COOKS_TRIGGER_celler_Text_0:
 	.string "Wait!\p"
@@ -1399,3 +1530,48 @@ NPC_LUMBRIDGE_HARLAN_Text_1:
 	.string "such as Barrier and Protect.\p"
 	.string "This strategy has helped me get to\n"
 	.string "where I am today.$"
+
+Mithrilman_LUMBRIDGE1_Text_0:
+	.string "???$"
+
+Mithrilman_LUMBRIDGE1_Text_1:
+	.string "I douth believe the cook seeks\n"
+	.string "assistance.\p"
+	.string "You should go check with him.$"
+
+Mithrilman_LUMBRIDGE1_Text_2:
+	.string "Helloust there knave, thee be a\n"
+	.string "challenger of the duke thine can tell.\p"
+	.string "Whomst am I?\p"
+	.string "Look upon me in awe knave, for thine\n"
+	.string "amst the greatest of all challengers\l"
+	.string "of the PokeScapian realm.\p"
+	.string "Thine's a Mithrilman.$"
+
+Mithrilman_LUMBRIDGE1_Text_3:
+	.string "Mithrilman$"
+
+Mithrilman_LUMBRIDGE1_Text_4:
+	.string "Morest fabled thanst the Ironmen and\n"
+	.string "faster than the Adamantmen.\p"
+	.string "The Mithrilman is a challenge upon the\n"
+	.string "very spirit ofst PokeScape itself.\p"
+	.string "As thy predecessor inst this realm.\p"
+	.string "Why doesnt thine show ye, knave, howst\n"
+	.string "a true master battles.$"
+
+Mithrilman_LUMBRIDGE1_Text_5:
+	.string "…$"
+
+Mithrilman_LUMBRIDGE2_Text_0:
+	.string "Ahaa, it would seemst that thine\n"
+	.string "monsters were weakened since the\l"
+	.string "Duke's ordeal.\p"
+	.string "Thine werest the luckiest, forst thine\n"
+	.string "have used all thine 200 cabbages on\l"
+	.string "that battle.\p"
+	.string "Thus leaving thine cabbage-less for\n"
+	.string "the battle with thee knave.\p"
+	.string "Yee be lucky knave, forst thine am a\n"
+	.string "Mithrilman and thine shalt return and\l"
+	.string "glory be rewon!$"

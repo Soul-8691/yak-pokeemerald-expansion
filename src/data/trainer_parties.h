@@ -3446,7 +3446,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GERTRUDE[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_BOT1[] = {
     {
     .iv = 0,
-    .lvl = 19,
+    .lvl = 11,
     .species = SPECIES_BALLOON_GOAT,
     }
 };
@@ -3455,27 +3455,27 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_BOT1[] =
 static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_TRAINER_1[] = {
     {
     .iv = 0,
-    .lvl = 19,
+    .lvl = 12,
     .species = SPECIES_SCORPION_PIT_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_TRAINER_2[] = {
     {
     .iv = 0,
-    .lvl = 19,
+    .lvl = 11,
     .species = SPECIES_EEL_DUSK_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_TRAINER_3[] = {
     {
     .iv = 0,
-    .lvl = 20,
-    .species = SPECIES_JADINKO,
+    .lvl = 11,
+    .species = SPECIES_CHICKEN_WAR_FORM,
     },
     {
     .iv = 0,
-    .lvl = 17,
-    .species = SPECIES_CHICKEN_WAR_FORM,
+    .lvl = 9,
+    .species = SPECIES_JADINKO,
     },
 };
 
@@ -3484,12 +3484,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_TRAINER_
 static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGEFOREST_WOODCUTTER1[] = {
     {
     .iv = 0,
-    .lvl = 18,
+    .lvl = 12,
     .species = SPECIES_PLANT_STRANGER_FORM,
     },
     {
     .iv = 0,
-    .lvl = 21,
+    .lvl = 11,
     .species = SPECIES_CHOMPY,
     }
 };

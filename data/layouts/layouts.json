@@ -7410,6 +7410,46 @@
       "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
       "border_filepath": "data/layouts/Jatizso_Cave/border.bin",
       "blockdata_filepath": "data/layouts/Jatizso_Cave/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE169",
+      "name": "Route169_Layout",
+      "width": 40,
+      "height": 32,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Barbarian_Village",
+      "border_filepath": "data/layouts/Route169/border.bin",
+      "blockdata_filepath": "data/layouts/Route169/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE170",
+      "name": "Route170_Layout",
+      "width": 50,
+      "height": 12,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Barbarian_Village",
+      "border_filepath": "data/layouts/Route170/border.bin",
+      "blockdata_filepath": "data/layouts/Route170/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE171",
+      "name": "Route171_Layout",
+      "width": 50,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Barbarian_Village",
+      "border_filepath": "data/layouts/Route171/border.bin",
+      "blockdata_filepath": "data/layouts/Route171/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE172",
+      "name": "Route172_Layout",
+      "width": 80,
+      "height": 16,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Barbarian_Village",
+      "border_filepath": "data/layouts/Route172/border.bin",
+      "blockdata_filepath": "data/layouts/Route172/map.bin"
     }
   ]
 }

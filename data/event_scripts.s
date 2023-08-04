@@ -1649,3 +1649,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Jatizso_House_3/scripts.inc"
 
 	.include "data/maps/Jatizso_Cave/scripts.inc"
+
+	.include "data/maps/Route169/scripts.inc"
+
+	.include "data/maps/Route170/scripts.inc"
+
+	.include "data/maps/Route171/scripts.inc"
+
+	.include "data/maps/Route172/scripts.inc"

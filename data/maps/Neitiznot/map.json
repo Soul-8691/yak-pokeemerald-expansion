@@ -17,6 +17,16 @@
       "direction": "right",
       "offset": 0,
       "map": "MAP_JATIZSO"
+    },
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_ROUTE170"
+    },
+    {
+      "direction": "right",
+      "offset": -32,
+      "map": "MAP_ROUTE169"
     }
   ],
   "object_events": [
@@ -179,7 +189,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL",
       "x": 11,
-      "y": 6,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,

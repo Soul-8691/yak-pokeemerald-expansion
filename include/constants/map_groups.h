@@ -857,6 +857,10 @@
 #define MAP_ROUTE59       (18 | (48 << 8))
 #define MAP_NEITIZNOT     (19 | (48 << 8))
 #define MAP_JATIZSO       (20 | (48 << 8))
+#define MAP_ROUTE169      (21 | (48 << 8))
+#define MAP_ROUTE170      (22 | (48 << 8))
+#define MAP_ROUTE171      (23 | (48 << 8))
+#define MAP_ROUTE172      (24 | (48 << 8))
 
 // gMapGroup_PokescapeIndoorTzhaar
 #define MAP_TZHAAR_1F          (0 | (49 << 8))

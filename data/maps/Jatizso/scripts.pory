@@ -619,7 +619,7 @@ script RAC_QUEST_START_P1
     hidenamebox
 
     msgbox(format("Choose a team.\n(You cannot change this later.)"))
-    multichoicedefault (1, 0, MULTI_BANKOPTIONS, 0, 0)
+    multichoicedefault (1, 0, MULTI_FREMMYTEAMS, 0, 1)
     switch (var(VAR_RESULT))
     {
         case 0:

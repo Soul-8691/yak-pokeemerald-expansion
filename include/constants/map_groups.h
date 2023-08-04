@@ -825,11 +825,12 @@
 #define MAP_BARBARIAN_VILLAGE_HOUSE_2  (2 | (44 << 8))
 
 // gMapGroup_PokescapeIndoorAlkharid
-#define MAP_ALKHARID_GYM_1F_R1 (0 | (45 << 8))
-#define MAP_ALKHARID_GYM_1F_R2 (1 | (45 << 8))
-#define MAP_ALKHARID_GYM_1F_R3 (2 | (45 << 8))
-#define MAP_AL_KHARID_HOUSE_1  (3 | (45 << 8))
-#define MAP_AL_KHARID_BANK     (4 | (45 << 8))
+#define MAP_ALKHARID_GYM_1F_R1      (0 | (45 << 8))
+#define MAP_ALKHARID_GYM_1F_R2      (1 | (45 << 8))
+#define MAP_ALKHARID_GYM_1F_R3      (2 | (45 << 8))
+#define MAP_AL_KHARID_HOUSE_1       (3 | (45 << 8))
+#define MAP_AL_KHARID_BANK          (4 | (45 << 8))
+#define MAP_STARTER_HOUSE_AL_KHARID (5 | (45 << 8))
 
 // gMapGroup46
 
@@ -928,6 +929,7 @@
 #define MAP_JATIZSO_HOUSE_2                     (57 | (50 << 8))
 #define MAP_JATIZSO_HOUSE_3                     (58 | (50 << 8))
 #define MAP_JATIZSO_CAVE                        (59 | (50 << 8))
+#define MAP_STARTER_HOUSE_RELLEKKA              (60 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

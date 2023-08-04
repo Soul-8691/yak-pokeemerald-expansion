@@ -877,7 +877,8 @@
     "Alkharid_Gym_1F_R2",
     "Alkharid_Gym_1F_R3",
     "AlKharid_House_1",
-    "AlKharid_Bank"
+    "AlKharid_Bank",
+    "Starter_House_AlKharid"
   ],
   "gMapGroup46": [
 
@@ -977,6 +978,7 @@
     "Jatizso_House_1",
     "Jatizso_House_2",
     "Jatizso_House_3",
-    "Jatizso_Cave"
+    "Jatizso_Cave",
+    "Starter_House_Rellekka"
   ]
 }

@@ -324,6 +324,13 @@
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID",
       "dest_warp_id": 0
+    },
+    {
+      "x": 13,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_STARTER_HOUSE_AL_KHARID",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

@@ -125,10 +125,10 @@
 #define FLAG_VARROCKGYM_BOOK_3          0x6F 
 #define FLAG_VARROCKGYM_BOOK_4          0x70
 #define FLAG_RECEIVED_TM63              0x71
-#define FLAG_EVENT_TEAM_JATIZSO      0x72 // Used in order to activate a phone call from Scott, inviting the player to the SS Tidal.
-#define FLAG_EVENT_TEAM_NEITIZNOT              0x73
+#define FLAG_EVENT_TEAM_JATIZSO         0x72 
+#define FLAG_EVENT_TEAM_NEITIZNOT       0x73
 // Scripts
-
+#define FLAG_RECEIVED_YAK            0x75 
 
 
 
@@ -155,7 +155,7 @@
 
 
 #define FLAG_ADVENTURE_STARTED               0x74 // RECEIVED Pokédex.
-#define FLAG_DEFEATED_MAGMA_SPACE_CENTER     0x75 // Set when Team Magma is defeated at Mossdeep's Space Center.
+
 #define FLAG_MET_HIDDEN_POWER_GIVER          0x76
 
 #define FLAG_CANCEL_BATTLE_ROOM_CHALLENGE    0x77

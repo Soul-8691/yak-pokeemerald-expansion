@@ -868,6 +868,11 @@ static const struct MenuAction MultichoiceList_BANKOPTIONS[] =
     {gText_BANK_STORE_ITEMS},
     {gText_Exit},
 };
+static const struct MenuAction MultichoiceList_FREMMYTEAMS[] =
+{
+    {gText_JATIZSO},
+    {gText_NEITIZNOT},
+};
 
 
 
@@ -1009,6 +1014,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_COLOUR_PICKAXE]			   = MULTICHOICE(MultichoiceList_COLOUR_PICKAXE),
     [MULTI_PHEONIXEGG]			       = MULTICHOICE(MultichoiceList_PHEONIXEGG),
     [MULTI_BANKOPTIONS]				   = MULTICHOICE(MultichoiceList_BANKOPTIONS),
+    [MULTI_FREMMYTEAMS]				   = MULTICHOICE(MultichoiceList_FREMMYTEAMS),
 	
 };
 

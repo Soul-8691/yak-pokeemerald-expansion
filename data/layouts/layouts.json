@@ -7450,6 +7450,26 @@
       "secondary_tileset": "gTileset_Barbarian_Village",
       "border_filepath": "data/layouts/Route172/border.bin",
       "blockdata_filepath": "data/layouts/Route172/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARTER_HOUSE_RELLEKKA",
+      "name": "Starter_House_Rellekka_Layout",
+      "width": 8,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/Starter_House_Rellekka/border.bin",
+      "blockdata_filepath": "data/layouts/Starter_House_Rellekka/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARTER_HOUSE_AL_KHARID",
+      "name": "Starter_House_AlKharid_Layout",
+      "width": 8,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/Starter_House_AlKharid/border.bin",
+      "blockdata_filepath": "data/layouts/Starter_House_AlKharid/map.bin"
     }
   ]
 }

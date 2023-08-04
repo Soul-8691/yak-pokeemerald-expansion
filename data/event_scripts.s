@@ -1657,3 +1657,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route171/scripts.inc"
 
 	.include "data/maps/Route172/scripts.inc"
+
+	.include "data/maps/Starter_House_Rellekka/scripts.inc"
+
+	.include "data/maps/Starter_House_AlKharid/scripts.inc"

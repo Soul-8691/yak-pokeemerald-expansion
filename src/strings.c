@@ -1889,6 +1889,9 @@ const u8 gText_BANK_HEAL[] =_("HEAL MONSTERS");
 const u8 gText_BANK_STORE_MONSTERS[] =_("STORE MONSTERS");
 const u8 gText_BANK_STORE_ITEMS[] =_("STORE ITEMS");
 
+const u8 gText_JATIZSO[] =_("JATIZSO");
+const u8 gText_NEITIZNOT[] =_("NEITIZNOT");
+
 //misc
 const u8 gText_NextMenu[] =_("Next");
 const u8 gText_YouAlreadyHaveThis[] =_("You already have this item.{PAUSE_UNTIL_PRESS}");

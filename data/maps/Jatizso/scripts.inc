@@ -603,7 +603,7 @@ RAC_QUEST_START_P1::
 	msgbox RAC_QUEST_START_P1_Text_2
 	hidenamebox
 	msgbox RAC_QUEST_START_P1_Text_3
-	multichoicedefault 1, 0, MULTI_BANKOPTIONS, 0, 0
+	multichoicedefault 1, 0, MULTI_FREMMYTEAMS, 0, 1
 	switch VAR_RESULT
 	case 0, RAC_QUEST_START_P1_3
 	case 1, RAC_QUEST_START_P1_4

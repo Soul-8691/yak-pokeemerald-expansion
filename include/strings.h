@@ -3085,6 +3085,8 @@ extern const u8 gText_BANK_HEAL[];
 extern const u8 gText_BANK_STORE_MONSTERS[];
 extern const u8 gText_BANK_STORE_ITEMS[];
 
+extern const u8 gText_JATIZSO[];
+extern const u8 gText_NEITIZNOT[];
 
 
 //pokescape cheat menu

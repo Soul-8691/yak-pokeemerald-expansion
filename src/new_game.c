@@ -149,9 +149,9 @@ static void WarpToVARROCK(void)
     SetWarpDestination(MAP_GROUP(STARTER_HOUSE_VARROCK), MAP_NUM(STARTER_HOUSE_VARROCK), -1, 3, 5);
     WarpIntoMap();
 }
-static void WarpToRIMMINGTON(void)
-{ //CHANGE TO ALKHAIRD
-    SetWarpDestination(MAP_GROUP(RIMMINGTON), MAP_NUM(RIMMINGTON), 1, 5, 5);
+static void WarpToALKHARID(void)
+{
+    SetWarpDestination(MAP_GROUP(STARTER_HOUSE_AL_KHARID), MAP_NUM(STARTER_HOUSE_AL_KHARID), 1, 5, 5);
     WarpIntoMap();
 }
 static void WarpToYANILLE(void)
@@ -171,7 +171,7 @@ static void WarpToCATHERBY(void)
 }
 static void WarpToRELLEKKA(void)
 {
-    SetWarpDestination(MAP_GROUP(RELLEKKA), MAP_NUM(RELLEKKA), 1, 5, 5);
+    SetWarpDestination(MAP_GROUP(STARTER_HOUSE_RELLEKKA), MAP_NUM(STARTER_HOUSE_RELLEKKA), 1, 5, 5);
     WarpIntoMap();
 }
 
@@ -268,8 +268,8 @@ void NewGameInitData(void)
     }
     if (gSaveBlock2Ptr->regionLocation == 3)
     {
-        WarpToRIMMINGTON();
-	    SetLastHealLocationWarp(HEAL_LOCATION_RIMMINGTON);
+        WarpToALKHARID();
+	    SetLastHealLocationWarp(HEAL_LOCATION_AL_KHARID);
     }
     if (gSaveBlock2Ptr->regionLocation == 4)
     {

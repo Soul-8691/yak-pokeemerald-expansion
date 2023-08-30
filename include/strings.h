@@ -3144,7 +3144,7 @@ extern const u8 gText_QuestActive[];
 //names
 extern const u8 gText_SideQuestName_1[];
 extern const u8 gText_SideQuestName_2[];
-extern const u8 gText_SideQuestName_3[];
+extern const u8 gText_SideQuestName_Ernest[];
 extern const u8 gText_SideQuestName_4[];
 extern const u8 gText_SideQuestName_5[];
 extern const u8 gText_SideQuestName_6[];
@@ -3241,7 +3241,7 @@ extern const u8 gText_SideQuestDoneDesc_30[];
 extern const u8 gText_SideQuestMap1[];
 extern const u8 gText_SideQuestMap2[];
 extern const u8 gText_SideQuestMap3[];
-extern const u8 gText_SideQuestMap4[];
+extern const u8 gText_SideQuestMap_Draynor_Manor[];
 extern const u8 gText_SideQuestMap5[];
 extern const u8 gText_SideQuestMap6[];
 extern const u8 gText_SideQuestMap7[];
@@ -3281,9 +3281,10 @@ extern const u8 gText_SubQuest1_Name8[];
 extern const u8 gText_SubQuest1_Name9[];
 extern const u8 gText_SubQuest1_Name10[];
 
-extern const u8 gText_SubQuest2_Name1[];
-extern const u8 gText_SubQuest2_Name2[];
-extern const u8 gText_SubQuest2_Name3[];
+extern const u8 gText_SubQuest_Ernest_Name1[];
+extern const u8 gText_SubQuest_Ernest_Name2[];
+extern const u8 gText_SubQuest_Ernest_Name3[];
+
 extern const u8 gText_SubQuest2_Name4[];
 extern const u8 gText_SubQuest2_Name5[];
 extern const u8 gText_SubQuest2_Name6[];

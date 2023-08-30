@@ -1930,14 +1930,14 @@ const u8 gText_NewGame_appearance[] =_("Next your appearance…\p$");
 
 //// side quest data
 //generic strings
-const u8 gText_QuestAnnounce[] = _("The quest '{STR_VAR_1}'\nis now {STR_VAR_2}.");
+const u8 gText_QuestAnnounce[] = _("The quest '{STR_VAR_1}'\nhas now {STR_VAR_2}.");
 const u8 gText_QuestComplete[] =_("complete");
-const u8 gText_QuestActive[] =_("active");
+const u8 gText_QuestActive[] =_("started");
 
 //names
-const u8 gText_SideQuestName_1[] = _("Art Fight");
-const u8 gText_SideQuestName_2[] = _("Side Quest 2");
-const u8 gText_SideQuestName_3[] = _("Side Quest 3");
+const u8 gText_SideQuestName_1[] = _("Art Fight - (Team Jatizso)");
+const u8 gText_SideQuestName_2[] = _("Art Fight - (Team Neitiznot)");
+const u8 gText_SideQuestName_Ernest[] = _("Ernest the Chicken");
 const u8 gText_SideQuestName_4[] = _("Side Quest 4");
 const u8 gText_SideQuestName_5[] = _("Side Quest 5");
 const u8 gText_SideQuestName_6[] = _("Side Quest 6");
@@ -1967,7 +1967,7 @@ const u8 gText_SideQuestName_29[] = _("Side Quest 29");
 const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 
 //descriptions
-const u8 gText_SideQuestDesc_1[] = _("This is an Art Fight between\nNeitiznot and Jatizso.");
+const u8 gText_SideQuestDesc_1[] = _("An Art Fight between\nthe isles of Jatizso\nNeitiznot.");
 const u8 gText_SideQuestDesc_2[] = _("Description 2");
 const u8 gText_SideQuestDesc_3[] = _("Description 3");
 const u8 gText_SideQuestDesc_4[] = _("Description 4");
@@ -1999,7 +1999,7 @@ const u8 gText_SideQuestDesc_29[] = _("Description 29");
 const u8 gText_SideQuestDesc_30[] = _("Description 30");
 
 //completed quest description
-const u8 gText_SideQuestDoneDesc_1[] = _("Completed Quest 1");
+const u8 gText_SideQuestDoneDesc_1[] = _("You helped Elej take\nthe most perfect picture!");
 const u8 gText_SideQuestDoneDesc_2[] = _("Completed Quest 2");
 const u8 gText_SideQuestDoneDesc_3[] = _("Completed Quest 3");
 const u8 gText_SideQuestDoneDesc_4[] = _("Completed Quest 4");
@@ -2032,9 +2032,9 @@ const u8 gText_SideQuestDoneDesc_30[] = _("Completed Quest 30");
 
 //map
 const u8 gText_SideQuestMap1[] = _("Rellekka");
-const u8 gText_SideQuestMap2[] = _("Map 2");
-const u8 gText_SideQuestMap3[] = _("Map 3");
-const u8 gText_SideQuestMap4[] = _("Map 4");
+const u8 gText_SideQuestMap2[] = _("Jatizso");
+const u8 gText_SideQuestMap3[] = _("Neitiznot");
+const u8 gText_SideQuestMap_Draynor_Manor[] = _("Draynor Manor");
 const u8 gText_SideQuestMap5[] = _("Map 5");
 const u8 gText_SideQuestMap6[] = _("Map 6");
 const u8 gText_SideQuestMap7[] = _("Map 7");
@@ -2063,20 +2063,21 @@ const u8 gText_SideQuestMap29[] = _("Map 29");
 const u8 gText_SideQuestMap30[] = _("Map 30");
 
 //subquests
-const u8 gText_SubQuest1_Name1[] = _("Part 1");
-const u8 gText_SubQuest1_Name2[] = _("Part 2");
-const u8 gText_SubQuest1_Name3[] = _("Part 3");
-const u8 gText_SubQuest1_Name4[] = _("Part 4");
-const u8 gText_SubQuest1_Name5[] = _("Part 5");
-const u8 gText_SubQuest1_Name6[] = _("Part 6");
-const u8 gText_SubQuest1_Name7[] = _("Part 7");
-const u8 gText_SubQuest1_Name8[] = _("Part 8");
-const u8 gText_SubQuest1_Name9[] = _("Part 9");
-const u8 gText_SubQuest1_Name10[] = _("Part 10");
+const u8 gText_SubQuest1_Name1[] = _("Jatizso - Picture Perfect"); //Elej Quest
+const u8 gText_SubQuest1_Name2[] = _("Jatizso - Tasteful Painting");
+const u8 gText_SubQuest1_Name3[] = _("Jatizso - Haunting Rabbits");
+const u8 gText_SubQuest1_Name4[] = _("Jatizso - Yakfiltration");
+const u8 gText_SubQuest1_Name5[] = _("Jatizso - Part 5");
+const u8 gText_SubQuest1_Name6[] = _("Neitiznot - Part 6");
+const u8 gText_SubQuest1_Name7[] = _("Neitiznot - Part 7");
+const u8 gText_SubQuest1_Name8[] = _("Neitiznot - Part 8");
+const u8 gText_SubQuest1_Name9[] = _("Neitiznot - Part 9");
+const u8 gText_SubQuest1_Name10[] = _("Neitiznot - Part 10");
 
-const u8 gText_SubQuest2_Name1[] = _("Part 1");
-const u8 gText_SubQuest2_Name2[] = _("Part 2");
-const u8 gText_SubQuest2_Name3[] = _("Part 3");
+const u8 gText_SubQuest_Ernest_Name1[] = _("Oil Can");
+const u8 gText_SubQuest_Ernest_Name2[] = _("Rubber Tube");
+const u8 gText_SubQuest_Ernest_Name3[] = _("Pressure Gauge");
+
 const u8 gText_SubQuest2_Name4[] = _("Part 4");
 const u8 gText_SubQuest2_Name5[] = _("Part 5");
 const u8 gText_SubQuest2_Name6[] = _("Part 6");
@@ -2095,7 +2096,7 @@ const u8 gText_SubQuest2_Name18[] = _("Part 18");
 const u8 gText_SubQuest2_Name19[] = _("Part 19");
 const u8 gText_SubQuest2_Name20[] = _("Part 20");
 
-const u8 gText_SubQuest1_Desc1[] = _("Description Sub 1");
+const u8 gText_SubQuest1_Desc1[] = _("Assist Elej in a search around Jatizso\nfor the ideal photo spot.");
 const u8 gText_SubQuest1_Desc2[] = _("Description Sub 2");
 const u8 gText_SubQuest1_Desc3[] = _("Description Sub 3");
 const u8 gText_SubQuest1_Desc4[] = _("Description Sub 4");

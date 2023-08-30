@@ -33,12 +33,14 @@ ITEM_DRAYNORMANOR_FISHFOOD::
 ITEM_DRAYNORMANOR_OILCAN::
 	finditem ITEM_OIL_CAN
 	closemessage
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ERNEST_THE_CHICKEN, 0
 	end
 
 
 ITEM_DRAYNORMANOR_RUBBERTUBE::
 	finditem ITEM_RUBBER_TUBE
 	closemessage
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ERNEST_THE_CHICKEN, 1
 	end
 
 
@@ -85,6 +87,7 @@ SCRIPT_DraynorManor_Fountain_4:
 	removeitem ITEM_FISH_FOOD_POISONED
 	finditem ITEM_PRESSURE_GAUGE
 	closemessage
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ERNEST_THE_CHICKEN, 2
 	end
 
 
@@ -233,6 +236,7 @@ NPC_DraynorManor_Oddenstein_6:
 	end
 
 NPC_DraynorManor_Oddenstein_7:
+	startquest QUEST_ERNEST_THE_CHICKEN
 	msgbox NPC_DraynorManor_Oddenstein_Text_2
 	msgbox NPC_DraynorManor_Oddenstein_Text_3
 	msgbox NPC_DraynorManor_Oddenstein_Text_4

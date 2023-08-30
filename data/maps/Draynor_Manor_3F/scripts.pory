@@ -47,6 +47,7 @@ script ITEM_DRAYNORMANOR_OILCAN
 {
     finditem(ITEM_OIL_CAN)
     closemessage
+	subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ERNEST_THE_CHICKEN, 0)
     end
 }
 
@@ -54,6 +55,7 @@ script ITEM_DRAYNORMANOR_RUBBERTUBE
 {
     finditem(ITEM_RUBBER_TUBE)
     closemessage
+	subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ERNEST_THE_CHICKEN, 1)
     end
 }
 
@@ -91,6 +93,7 @@ script SCRIPT_DraynorManor_Fountain {
             removeitem(ITEM_FISH_FOOD_POISONED)
             finditem(ITEM_PRESSURE_GAUGE)
             closemessage
+			subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ERNEST_THE_CHICKEN, 2)
 			end
 		}
 		else {
@@ -192,6 +195,7 @@ script NPC_DraynorManor_Oddenstein{
 			msgbox(format("Hello there, you seem to be an adventurer.\pI have a new experiment!\pI want to bring something back to life!"))
             msgbox(format("Would you like to assist me?"), MSGBOX_YESNO)
 			if (var(VAR_RESULT)){
+				startquest (QUEST_ERNEST_THE_CHICKEN)
 				msgbox(format("I need a few items for my experiment to succeed can you go get me them?\pI need a Oil Can, Pressure Gauge and Rubber Tube."))
                 msgbox(format("The Oil Can should be somewhere in the basement."))
                 msgbox(format("I believe the last place I saw the Pressure Gauge was outside in the fountain."))

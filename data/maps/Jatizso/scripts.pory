@@ -595,6 +595,7 @@ script RAC_QUEST_START
     msgbox(format("They seem to be arguing over which island has the better artists.\pWould you like to start the Art Fight Quest?"), MSGBOX_YESNO)
     if (var(VAR_RESULT))
     { 
+        startquest (QUEST_ARTFIGHT_JATIZSO)
         goto(RAC_QUEST_START_P1)
     }
     msgbox(format("You decide to leave them to bicker amongst themselves."))
@@ -848,6 +849,20 @@ script RAC_QUEST_JATIZSO_ELEJ_P1
             hidenamebox
             setvar(VAR_POKESCAPE_RAC_QUEST_ELEJ, 5)
             call(JATIZSO_STATE)
+            startquest (QUEST_ARTFIGHT_NEITIZNOT)
+            //questmenu (QUEST_MENU_UNLOCK_QUEST, QUEST_RAC_PICTURE_PERFECT)
+            subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_JATIZSO, 0)
+            subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_JATIZSO, 1)
+            subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_JATIZSO, 2)
+            subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_JATIZSO, 3)
+            subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_JATIZSO, 4)
+            subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_JATIZSO, 5)
+            subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_NEITIZNOT, 6)
+            subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_NEITIZNOT, 7)
+            subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_NEITIZNOT, 8)
+            subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_NEITIZNOT, 9)
+            subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_NEITIZNOT, 10)
+
             msgbox(format("ELEJ Side Quest, Start!"))
             closemessage
         } 
@@ -884,6 +899,7 @@ script RAC_QUEST_JATIZSO_ELEJ_SPOT_1
         msgbox(format("Hmm… No I don't think this will do.\pLets keep looking!"))
         closemessage
         hidenamebox
+        //subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_RAC_PICTURE_PERFECT, 1)
     }
     closemessage
     end
@@ -930,8 +946,8 @@ script RAC_QUEST_JATIZSO_ELEJ_SPOT_3
 
         call(JATIZSO_STATE)
         addobject(ELEJ_ID)
-        setobjectxy(ELEJ_ID, 25, 4)
-        setobjectxyperm(ELEJ_ID, 25, 4)
+        setobjectxy(ELEJ_ID, 26, 3)
+        setobjectxyperm(ELEJ_ID, 26, 3)
         setobjectmovementtype(ELEJ_ID, MOVEMENT_TYPE_LOOK_AROUND)
         applymovement(ELEJ_ID, Movement_InteractFACEPLAYER)
         waitmovement(0)

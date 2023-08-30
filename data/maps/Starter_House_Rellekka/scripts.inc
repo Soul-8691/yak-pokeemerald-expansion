@@ -72,7 +72,7 @@ GiveMon_Yak_5:
 
 
 Quest_Start::
-	subquestmenu QUEST_MENU_CHECK_COMPLETE, QUEST_1, SUB_QUEST_3
+	startquest QUEST_ARTFIGHT_JATIZSO
 	end
 
 
@@ -83,8 +83,6 @@ Unlock_Quest_Menu::
 
 Quest_Test::
 	setflag FLAG_SYS_QUEST_MENU_GET
-	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_1
-	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_1
 	msgbox GiveMon_Yak_Text_0
 	closemessage
 	goto_if_eq VAR_RESULT, TRUE, CelebrateEndgame
@@ -94,6 +92,15 @@ Quest_Test::
 CelebrateEndgame::
 	special DoDomeConfetti
 	return
+
+
+Quest_Test_1::
+	startquest QUEST_ARTFIGHT_JATIZSO
+	end
+
+
+Quest_Test_2::
+	end
 
 
 GiveMon_Yak_Text_0:

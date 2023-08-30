@@ -64,11 +64,11 @@ script GiveMon_Yak {
 
 
 script Quest_Start {
-    //startquest (QUEST_1)
+    startquest (QUEST_ARTFIGHT_JATIZSO)
     //questmenu (QUEST_MENU_UNLOCK_QUEST, QUEST_1)
     //questmenu (QUEST_MENU_SET_ACTIVE, QUEST_1)
-    //subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_1, SUB_QUEST_1)
-    subquestmenu (QUEST_MENU_CHECK_COMPLETE, QUEST_1, SUB_QUEST_3)
+    //subquestmenu (QUEST_MENU_SET_ACTIVE , QUEST_ARTFIGHT, SUB_QUEST_PICTURE_PERFECT)
+    //subquestmenu (QUEST_MENU_CHECK_COMPLETE, QUEST_2, SUB_QUEST_3)
     end
 }
 script Unlock_Quest_Menu {
@@ -79,8 +79,8 @@ script Unlock_Quest_Menu {
 
 script Quest_Test {
     setflag (FLAG_SYS_QUEST_MENU_GET)
-    questmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_1)
-    questmenu (QUEST_MENU_CHECK_COMPLETE, QUEST_1)
+    //questmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_1)
+    //questmenu (QUEST_MENU_CHECK_COMPLETE, QUEST_1)
     msgbox("Inside this Pouch is a YAK.")
     closemessage
     goto_if_eq (VAR_RESULT, TRUE, CelebrateEndgame)
@@ -90,4 +90,19 @@ script Quest_Test {
 script CelebrateEndgame {
     special (DoDomeConfetti)
     return
+}
+
+
+
+
+script Quest_Test_1 {
+    startquest (QUEST_ARTFIGHT_JATIZSO)
+    end
+}
+script Quest_Test_2 {
+    //startquest (SUB_QUEST_PICTURE_PERFECT)
+    //subquestmenu (QUEST_MENU_SET_REWARD, QUEST_ARTFIGHT, SUB_QUEST_PICTURE_PERFECT)
+    //subquestmenu (QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT, SUB_QUEST_PICTURE_PERFECT)
+    //questmenu (QUEST_MENU_SET_REWARD, QUEST_ARTFIGHT )
+    end
 }

@@ -109,7 +109,7 @@
 #define VAR_POKESCAPE_RAC_QUEST_STATE              0x405A
 #define VAR_POKESCAPE_RAC_QUEST_ELEJ               0x405B // Unused Var
 #define VAR_POKESCAPE_RAC_QUEST_JAGEXMODS              0x405C // Unused Var
-#define VAR_MOSSDEEP_CITY_STATE              0x405D
+#define VAR_POKESCAPE_RAC_QUEST_RABBITS              0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE            0x405E
 #define VAR_EVER_GRANDE_CITY_STATE           0x405F // Unused Var
 #define VAR_POKESCAPE_KARAMJAVOLCANO_STATE                0x4060

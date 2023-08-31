@@ -314,17 +314,22 @@ JATIZSO_NPC_Elej_1:
 JATIZSO_NPC_Elej_8:
 	lock
 	faceplayer
-	namebox JATIZSO_NPC_Elej_Text_2
-	msgbox JATIZSO_NPC_Elej_Text_3
+	namebox JATIZSO_NPC_Elej_Text_0
+	msgbox JATIZSO_NPC_Elej_Text_2
 	closemessage
 	hidenamebox
 	release
 	end
 
 JATIZSO_NPC_Elej_2:
-	msgbox JATIZSO_NPC_Elej_Text_0
+	lock
+	faceplayer
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox JATIZSO_NPC_Elej_Text_1
-	goto JATIZSO_NPC_Elej_1
+	closemessage
+	hidenamebox
+	release
+	end
 
 JATIZSO_NPC_Elej_3:
 	compare VAR_POKESCAPE_RAC_QUEST_ELEJ, 25
@@ -480,6 +485,39 @@ JATIZSO_NPC_Jaxyys_8:
 	goto JATIZSO_NPC_Jaxyys_6
 
 
+JATIZSO_NPC_Enko::
+	compare VAR_POKESCAPE_RAC_QUEST_STATE, 15
+	goto_if_eq JATIZSO_NPC_Enko_3
+JATIZSO_NPC_Enko_1:
+	compare VAR_POKESCAPE_RAC_QUEST_STATE, 20
+	goto_if_eq JATIZSO_NPC_Enko_8
+JATIZSO_NPC_Enko_6:
+	lock
+	faceplayer
+	namebox JATIZSO_NPC_Enko_Text_0
+	msgbox JATIZSO_NPC_Jaxyys_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+JATIZSO_NPC_Enko_2:
+	goto RAC_QUEST_START_P3_JATIZSO_ENKO
+	goto JATIZSO_NPC_Enko_1
+
+JATIZSO_NPC_Enko_3:
+	goto_if_set FLAG_EVENT_TEAM_JATIZSO, JATIZSO_NPC_Enko_2
+	goto JATIZSO_NPC_Enko_1
+
+JATIZSO_NPC_Enko_7:
+	goto RAC_QUEST_START_P3_JATIZSO_ENKO_check
+	goto JATIZSO_NPC_Enko_6
+
+JATIZSO_NPC_Enko_8:
+	goto_if_set FLAG_EVENT_TEAM_JATIZSO, JATIZSO_NPC_Enko_7
+	goto JATIZSO_NPC_Enko_6
+
+
 JATIZSO_NPC_KING::
 	compare VAR_POKESCAPE_RAC_QUEST_STATE, 10
 	goto_if_eq JATIZSO_NPC_KING_3
@@ -502,88 +540,25 @@ JATIZSO_NPC_KING_3:
 	goto JATIZSO_NPC_KING_1
 
 
-RAC_QUEST_SAIL_MAN::
-	lock
-	compare VAR_POKESCAPE_RAC_QUEST_STATE, 0
-	goto_if_eq RAC_QUEST_SAIL_MAN_2
-RAC_QUEST_SAIL_MAN_1:
-	faceplayer
-	namebox RAC_QUEST_SAIL_MAN_Text_0
-	goto_if_set FLAG_EVENT_TEAM_NEITIZNOT, RAC_QUEST_SAIL_MAN_5
-	msgbox RAC_QUEST_SAIL_MAN_Text_2, MSGBOX_YESNO
-	compare VAR_RESULT, 0
-	goto_if_ne RAC_QUEST_SAIL_MAN_8
-RAC_QUEST_SAIL_MAN_7:
-	hidenamebox
-	release
-	end
-
-RAC_QUEST_SAIL_MAN_2:
-	goto RAC_QUEST_START
-	goto RAC_QUEST_SAIL_MAN_1
-
-RAC_QUEST_SAIL_MAN_5:
-	msgbox RAC_QUEST_SAIL_MAN_Text_1
-	hidenamebox
-	release
-	end
-
-RAC_QUEST_SAIL_MAN_8:
-	msgbox RAC_QUEST_SAIL_MAN_Text_3
-	closemessage
-	hidenamebox
-	call RAC_BOAT
-	warp MAP_JATIZSO, 0, 0, 0
-	goto RAC_QUEST_SAIL_MAN_7
-
-
-RAC_QUEST_SAIL_WOMAN::
-	lock
-	compare VAR_POKESCAPE_RAC_QUEST_STATE, 0
-	goto_if_eq RAC_QUEST_SAIL_WOMAN_2
-RAC_QUEST_SAIL_WOMAN_1:
-	faceplayer
-	namebox RAC_QUEST_SAIL_MAN_Text_0
-	goto_if_set FLAG_EVENT_TEAM_JATIZSO, RAC_QUEST_SAIL_WOMAN_5
-	msgbox RAC_QUEST_SAIL_WOMAN_Text_1, MSGBOX_YESNO
-	compare VAR_RESULT, 0
-	goto_if_ne RAC_QUEST_SAIL_WOMAN_8
-RAC_QUEST_SAIL_WOMAN_7:
-	hidenamebox
-	release
-	end
-
-RAC_QUEST_SAIL_WOMAN_2:
-	goto RAC_QUEST_START
-	goto RAC_QUEST_SAIL_WOMAN_1
-
-RAC_QUEST_SAIL_WOMAN_5:
-	msgbox RAC_QUEST_SAIL_WOMAN_Text_0
-	hidenamebox
-	release
-	end
-
-RAC_QUEST_SAIL_WOMAN_8:
-	msgbox RAC_QUEST_SAIL_MAN_Text_3
-	closemessage
-	hidenamebox
-	call RAC_BOAT
-	warp MAP_NEITIZNOT, 0, 0, 0
-	goto RAC_QUEST_SAIL_WOMAN_7
-
-
 RAC_QUEST_START::
 	lock
-	namebox RAC_QUEST_SAIL_MAN_Text_0
-	msgbox RAC_QUEST_START_Text_0
-	namebox RAC_QUEST_START_Text_1
-	msgbox RAC_QUEST_START_Text_2
+	applymovement 21, Movement_InteractRIGHT
+	waitmovement 0
+	namebox RAC_QUEST_START_Text_0
+	msgbox RAC_QUEST_START_Text_1
+	closemessage
 	hidenamebox
-	msgbox RAC_QUEST_START_Text_3, MSGBOX_YESNO
+	applymovement 20, Movement_InteractLEFT
+	waitmovement 0
+	namebox RAC_QUEST_START_Text_2
+	msgbox RAC_QUEST_START_Text_3
+	closemessage
+	hidenamebox
+	msgbox RAC_QUEST_START_Text_4, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_ne RAC_QUEST_START_2
 RAC_QUEST_START_1:
-	msgbox RAC_QUEST_START_Text_4
+	msgbox RAC_QUEST_START_Text_5
 	closemessage
 	release
 	end
@@ -596,12 +571,23 @@ RAC_QUEST_START_2:
 
 RAC_QUEST_START_P1::
 	lock
-	namebox RAC_QUEST_START_Text_1
+	applymovement 20, Movement_InteractFACEDOWN
+	waitmovement 0
+	namebox RAC_QUEST_START_Text_2
 	msgbox RAC_QUEST_START_P1_Text_0
-	namebox RAC_QUEST_SAIL_MAN_Text_0
+	closemessage
+	hidenamebox
+	applymovement 21, Movement_InteractRIGHT
+	waitmovement 0
+	namebox RAC_QUEST_START_Text_0
 	msgbox RAC_QUEST_START_P1_Text_1
-	namebox RAC_QUEST_START_Text_1
+	closemessage
+	hidenamebox
+	applymovement 20, Movement_InteractLEFT
+	waitmovement 0
+	namebox RAC_QUEST_START_Text_2
 	msgbox RAC_QUEST_START_P1_Text_2
+	closemessage
 	hidenamebox
 	msgbox RAC_QUEST_START_P1_Text_3
 	multichoicedefault 1, 0, MULTI_FREMMYTEAMS, 0, 1
@@ -615,16 +601,30 @@ RAC_QUEST_START_P1_1:
 	end
 
 RAC_QUEST_START_P1_3:
-	namebox RAC_QUEST_SAIL_MAN_Text_0
+	closemessage
+	applymovement 21, Movement_InteractRIGHT
+	waitmovement 0
+	namebox RAC_QUEST_START_Text_0
 	msgbox RAC_QUEST_START_P1_Text_4
+	applymovement 21, Movement_InteractFACEDOWN
+	waitmovement 0
+	msgbox RAC_QUEST_START_P1_Text_5
+	closemessage
 	hidenamebox
 	setflag FLAG_EVENT_TEAM_JATIZSO
 	setvar VAR_POKESCAPE_RAC_QUEST_STATE, 5
 	goto RAC_QUEST_START_P1_1
 
 RAC_QUEST_START_P1_4:
-	namebox RAC_QUEST_START_Text_1
-	msgbox RAC_QUEST_START_P1_Text_5
+	closemessage
+	applymovement 20, Movement_InteractLEFT
+	waitmovement 0
+	namebox RAC_QUEST_START_Text_2
+	msgbox RAC_QUEST_START_P1_Text_6
+	applymovement 20, Movement_InteractFACEDOWN
+	waitmovement 0
+	msgbox RAC_QUEST_START_P1_Text_7
+	closemessage
 	hidenamebox
 	setflag FLAG_EVENT_TEAM_NEITIZNOT
 	setvar VAR_POKESCAPE_RAC_QUEST_STATE, 5
@@ -637,7 +637,7 @@ RAC_QUEST_START_P1_5:
 
 RAC_QUEST_START_P2_NEITIZNOT::
 	lock
-	namebox RAC_QUEST_START_Text_1
+	namebox RAC_QUEST_START_Text_2
 	msgbox RAC_QUEST_START_P2_NEITIZNOT_Text_0
 	setvar VAR_POKESCAPE_RAC_QUEST_STATE, 10
 	hidenamebox
@@ -647,8 +647,11 @@ RAC_QUEST_START_P2_NEITIZNOT::
 
 
 RAC_QUEST_START_P2_JATIZSO::
+	applymovement 21, Movement_InteractFACELEFT
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_InteractFACERIGHT
+	waitmovement 0
 	lock
-	namebox RAC_QUEST_SAIL_MAN_Text_0
+	namebox RAC_QUEST_START_Text_0
 	msgbox RAC_QUEST_START_P2_JATIZSO_Text_0
 	setvar VAR_POKESCAPE_RAC_QUEST_STATE, 10
 	hidenamebox
@@ -685,6 +688,8 @@ RAC_QUEST_START_P3_JATIZSO_Jaxyys_check::
 	lock
 	faceplayer
 	namebox JATIZSO_NPC_Jaxyys_Text_0
+	msgbox RAC_QUEST_START_P3_JATIZSO_Jaxyys_check_Text_0
+	closemessage
 	compare VAR_POKESCAPE_RAC_QUEST_ELEJ, 25
 	goto_if_eq RAC_QUEST_START_P3_JATIZSO_Jaxyys_check_2
 	msgbox RAC_QUEST_START_P3_JATIZSO_Jaxyys_check_Text_1
@@ -694,32 +699,33 @@ RAC_QUEST_START_P3_JATIZSO_Jaxyys_check::
 	end
 
 RAC_QUEST_START_P3_JATIZSO_Jaxyys_check_2:
-	msgbox RAC_QUEST_START_P3_JATIZSO_Jaxyys_check_Text_0
 	closemessage
 	hidenamebox
 	release
 	end
 
 
-RAC_BOAT::
-	fadescreen FADE_TO_BLACK
-	fadescreen FADE_FROM_BLACK
-	applymovement 22, MOVEMENT_RAC_BOAT
-	waitmovement 0
-	removeobject 27
-	return
+RAC_QUEST_START_P3_JATIZSO_ENKO::
+	lock
+	faceplayer
+	namebox JATIZSO_NPC_Enko_Text_0
+	msgbox RAC_QUEST_START_P3_JATIZSO_ENKO_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
 
 
-MOVEMENT_RAC_BOAT:
-	walk_slow_left
-	walk_slow_left
-	walk_slow_left
-	walk_slow_left
-	walk_slow_left
-	walk_slow_left
-	walk_slow_left
-	walk_slow_left
-	step_end
+RAC_QUEST_START_P3_JATIZSO_ENKO_check::
+	lock
+	faceplayer
+	namebox JATIZSO_NPC_Enko_Text_0
+	msgbox RAC_QUEST_START_P3_JATIZSO_ENKO_check_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
 
 RAC_QUEST_JATIZSO_ELEJ_P1::
 	lock
@@ -744,14 +750,14 @@ RAC_QUEST_JATIZSO_ELEJ_P1_4:
 
 RAC_QUEST_JATIZSO_ELEJ_P1_5:
 	faceplayer
-	namebox JATIZSO_NPC_Elej_Text_2
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_P1_Text_0
 	closemessage
 	hidenamebox
 	goto RAC_QUEST_JATIZSO_ELEJ_P1_4
 
 RAC_QUEST_JATIZSO_ELEJ_P1_13:
-	namebox JATIZSO_NPC_Elej_Text_2
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_P1_Text_1
 	closemessage
 	hidenamebox
@@ -759,25 +765,25 @@ RAC_QUEST_JATIZSO_ELEJ_P1_13:
 	playse SE_PIN
 	waitmovement 0
 	faceplayer
-	namebox JATIZSO_NPC_Elej_Text_2
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_P1_Text_2
 	closemessage
 	hidenamebox
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_InteractUP
 	waitmovement 0
-	namebox JATIZSO_NPC_Elej_Text_2
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_P1_Text_3
 	closemessage
 	hidenamebox
 	applymovement 20, Movement_InteractFACEUP
 	waitmovement 0
 	delay 30
-	namebox JATIZSO_NPC_Elej_Text_2
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_P1_Text_4
 	closemessage
 	hidenamebox
 	faceplayer
-	namebox JATIZSO_NPC_Elej_Text_2
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_P1_Text_5, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_eq RAC_QUEST_JATIZSO_ELEJ_P1_16
@@ -786,26 +792,14 @@ RAC_QUEST_JATIZSO_ELEJ_P1_13:
 	hidenamebox
 	setvar VAR_POKESCAPE_RAC_QUEST_ELEJ, 5
 	call JATIZSO_STATE
-	startquest QUEST_ARTFIGHT_NEITIZNOT
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_JATIZSO, 0
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_JATIZSO, 1
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_JATIZSO, 2
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_JATIZSO, 3
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_JATIZSO, 4
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_JATIZSO, 5
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_NEITIZNOT, 6
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_NEITIZNOT, 7
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_NEITIZNOT, 8
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_NEITIZNOT, 9
-	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_NEITIZNOT, 10
-	msgbox RAC_QUEST_JATIZSO_ELEJ_P1_Text_8
-	closemessage
 	goto RAC_QUEST_JATIZSO_ELEJ_P1_1
 
 RAC_QUEST_JATIZSO_ELEJ_P1_16:
 	msgbox RAC_QUEST_JATIZSO_ELEJ_P1_Text_6
 	closemessage
 	hidenamebox
+	applymovement 20, Movement_InteractFACEUP
+	waitmovement 0
 	release
 	end
 
@@ -829,17 +823,18 @@ RAC_QUEST_JATIZSO_ELEJ_SPOT_1_2:
 	applymovement 20, Movement_InteractFACEPLAYER
 	waitmovement 0
 	fadescreen FADE_FROM_BLACK
-	namebox JATIZSO_NPC_Elej_Text_2
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_SPOT_1_Text_1
 	closemessage
 	hidenamebox
 	fadescreen FADE_TO_BLACK
 	playse SE_EGG_HATCH
 	fadescreen FADE_FROM_BLACK
-	namebox JATIZSO_NPC_Elej_Text_2
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_SPOT_1_Text_2
 	closemessage
 	hidenamebox
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_ARTFIGHT_JATIZSO, 0
 	goto RAC_QUEST_JATIZSO_ELEJ_SPOT_1_1
 
 
@@ -862,14 +857,14 @@ RAC_QUEST_JATIZSO_ELEJ_SPOT_2_2:
 	applymovement 20, Movement_InteractFACEPLAYER
 	waitmovement 0
 	fadescreen FADE_FROM_BLACK
-	namebox JATIZSO_NPC_Elej_Text_2
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_SPOT_1_Text_1
 	closemessage
 	hidenamebox
 	fadescreen FADE_TO_BLACK
 	playse SE_EGG_HATCH
 	fadescreen FADE_FROM_BLACK
-	namebox JATIZSO_NPC_Elej_Text_2
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_SPOT_1_Text_2
 	closemessage
 	hidenamebox
@@ -895,14 +890,14 @@ RAC_QUEST_JATIZSO_ELEJ_SPOT_3_2:
 	applymovement 20, Movement_InteractFACEPLAYER
 	waitmovement 0
 	fadescreen FADE_FROM_BLACK
-	namebox JATIZSO_NPC_Elej_Text_2
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_SPOT_1_Text_1
 	closemessage
 	hidenamebox
 	fadescreen FADE_TO_BLACK
 	playse SE_EGG_HATCH
 	fadescreen FADE_FROM_BLACK
-	namebox JATIZSO_NPC_Elej_Text_2
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_SPOT_1_Text_2
 	closemessage
 	hidenamebox
@@ -922,26 +917,28 @@ RAC_QUEST_JATIZSO_ELEJ_SPOT_4_2:
 	setvar VAR_POKESCAPE_RAC_QUEST_ELEJ, 25
 	call JATIZSO_STATE
 	addobject 20
-	setobjectxy 20, 12, 15
-	setobjectxyperm 20, 12, 15
+	setobjectxy 20, 12, 14
+	setobjectxyperm 20, 12, 14
 	setobjectmovementtype 20, MOVEMENT_TYPE_LOOK_AROUND
 	applymovement 20, Movement_InteractFACEPLAYER
 	waitmovement 0
 	fadescreen FADE_FROM_BLACK
-	namebox JATIZSO_NPC_Elej_Text_2
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_SPOT_1_Text_1
 	closemessage
 	hidenamebox
 	fadescreen FADE_TO_BLACK
 	playse SE_EGG_HATCH
 	fadescreen FADE_FROM_BLACK
-	namebox JATIZSO_NPC_Elej_Text_2
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_SPOT_4_Text_0
 	closemessage
 	hidenamebox
 	giveitem ITEM_TEAR_OF_GUTHIX, 1
+	namebox JATIZSO_NPC_Elej_Text_0
 	msgbox RAC_QUEST_JATIZSO_ELEJ_SPOT_4_Text_1
 	closemessage
+	hidenamebox
 	goto RAC_QUEST_JATIZSO_ELEJ_SPOT_4_1
 
 
@@ -1085,6 +1082,32 @@ RAC_QUEST_JATIZSO_JAGEX_P1_22:
 	end
 
 
+RAC_QUEST_SIGNPOST_RABBIT_CHECK::
+	buffernumberstring 0, VAR_POKESCAPE_RAC_QUEST_RABBITS
+	msgbox RAC_QUEST_SIGNPOST_RABBIT_CHECK_Text_0
+	release
+	end
+
+
+RAC_QUEST_JACKIE_RABBIT_CHECK::
+	compare VAR_POKESCAPE_RAC_QUEST_RABBITS, 5
+	goto_if_ge RAC_QUEST_JACKIE_RABBIT_CHECK_2
+RAC_QUEST_JACKIE_RABBIT_CHECK_1:
+	compare VAR_POKESCAPE_RAC_QUEST_RABBITS, 10
+	goto_if_ge RAC_QUEST_JACKIE_RABBIT_CHECK_5
+RAC_QUEST_JACKIE_RABBIT_CHECK_4:
+	return
+
+RAC_QUEST_JACKIE_RABBIT_CHECK_2:
+	buffernumberstring 0, VAR_POKESCAPE_RAC_QUEST_RABBITS
+	msgbox RAC_QUEST_JACKIE_RABBIT_CHECK_Text_0
+	goto RAC_QUEST_JACKIE_RABBIT_CHECK_1
+
+RAC_QUEST_JACKIE_RABBIT_CHECK_5:
+	msgbox RAC_QUEST_JACKIE_RABBIT_CHECK_Text_1
+	goto RAC_QUEST_JACKIE_RABBIT_CHECK_4
+
+
 RAC_QUEST_JATIZSO_JAGEX_P2::
 	compare VAR_POKESCAPE_RAC_QUEST_JAGEXMODS, 35
 	goto_if_eq RAC_QUEST_JATIZSO_JAGEX_P2_2
@@ -1116,6 +1139,7 @@ RAC_QUEST_JATIZSO_JAGEX_P2_2:
 	msgbox RAC_QUEST_JATIZSO_JAGEX_P2_Text_0
 	closemessage
 	hidenamebox
+	call RAC_QUEST_JACKIE_RABBIT_CHECK
 	release
 	end
 
@@ -1345,15 +1369,14 @@ JATIZSO_NPC_BonBun_Text_2:
 	.string "calling me Jackie.$"
 
 JATIZSO_NPC_Elej_Text_0:
-	.string "Quest Complete.$"
-
-JATIZSO_NPC_Elej_Text_1:
-	.string "Thank you again for all of your help!$"
-
-JATIZSO_NPC_Elej_Text_2:
 	.string "Elej$"
 
-JATIZSO_NPC_Elej_Text_3:
+JATIZSO_NPC_Elej_Text_1:
+	.string "Thank you again for all of your help!\p"
+	.string "I look forward to battling alongside\n"
+	.string "you in the Art Fight.$"
+
+JATIZSO_NPC_Elej_Text_2:
 	.string "Do you think this picture best shows\n"
 	.string "off Jatizso in all of its glory?\p"
 	.string "I want to send it to the Neitiznots as a\n"
@@ -1433,56 +1456,38 @@ JATIZSO_NPC_Jaxyys_Text_0:
 	.string "Jaxyys$"
 
 JATIZSO_NPC_Jaxyys_Text_1:
-	.string "Hello.$"
+	.string "Hello, you should speak to the King and\n"
+	.string "not me if you wish to have Honourable\l"
+	.string "Holmgang.$"
+
+JATIZSO_NPC_Enko_Text_0:
+	.string "Enko$"
 
 JATIZSO_NPC_KING_Text_0:
 	.string "KING$"
 
 JATIZSO_NPC_KING_Text_1:
-	.string "GO AWAY.$"
-
-RAC_QUEST_SAIL_MAN_Text_0:
-	.string "Man$"
-
-RAC_QUEST_SAIL_MAN_Text_1:
-	.string "Go away adventurer.\p"
-	.string "I have nothing to say to a filthy\n"
-	.string "Neitiznot.$"
-
-RAC_QUEST_SAIL_MAN_Text_2:
-	.string "Ah hello adventurer.\p"
-	.string "Would you like to board the boat to\n"
-	.string "Jatizso?$"
-
-RAC_QUEST_SAIL_MAN_Text_3:
-	.string "Very well, hop in!$"
-
-RAC_QUEST_SAIL_WOMAN_Text_0:
-	.string "Go away adventurer.\p"
-	.string "I have nothing to say to a filthy\n"
-	.string "Jatizso.$"
-
-RAC_QUEST_SAIL_WOMAN_Text_1:
-	.string "Ah hello adventurer.\p"
-	.string "Would you like to board the boat to\n"
-	.string "Neitiznot?$"
+	.string "GO AWAY!$"
 
 RAC_QUEST_START_Text_0:
-	.string "JATIZSO artists are better!$"
+	.string "Mord Gunnars$"
 
 RAC_QUEST_START_Text_1:
-	.string "Woman$"
+	.string "JJATIZSO artists are better!$"
 
 RAC_QUEST_START_Text_2:
-	.string "No NEITZNOT artists are better!!$"
+	.string "Maria Gunnars$"
 
 RAC_QUEST_START_Text_3:
+	.string "No NEITIZNOT artists are better!$"
+
+RAC_QUEST_START_Text_4:
 	.string "They seem to be arguing over which\n"
 	.string "island has the better artists.\p"
 	.string "Would you like to start the Art Fight\n"
 	.string "Quest?$"
 
-RAC_QUEST_START_Text_4:
+RAC_QUEST_START_Text_5:
 	.string "You decide to leave them to bicker\n"
 	.string "amongst themselves.$"
 
@@ -1502,74 +1507,113 @@ RAC_QUEST_START_P1_Text_3:
 	.string "(You cannot change this later.)$"
 
 RAC_QUEST_START_P1_Text_4:
-	.string "I told you JATIZSO artists are better!\p"
-	.string "Adventurer, allow me to take you to\n"
-	.string "Jatizso at any time!$"
+	.string "Ha! I told you JATIZSO artists were\n"
+	.string "better!$"
 
 RAC_QUEST_START_P1_Text_5:
-	.string "I told you NEITIZNOT artists are\n"
-	.string "better!\p"
-	.string "Adventurer, allow me to take you to\n"
-	.string "Neitiznot at any time!$"
+	.string "Adventurer, allow me to ferry you to\n"
+	.string "Jatizso any time.$"
+
+RAC_QUEST_START_P1_Text_6:
+	.string "Ha! I told you NEITIZNOT artists were\n"
+	.string "better!$"
+
+RAC_QUEST_START_P1_Text_7:
+	.string "Adventurer, allow me to ferry you to\n"
+	.string "Neitiznot at any time.$"
 
 RAC_QUEST_START_P2_NEITIZNOT_Text_0:
-	.string "Welcome to Neitiznot adventuerer.\p"
+	.string "Welcome to Neitiznot adventurer.\p"
 	.string "This land is full of amazing artists and\n"
 	.string "Yaks!\p"
-	.string "You should stop by the Longhall in the\n"
-	.string "town and tell our king how much you like\l"
-	.string "it here.\p"
-	.string "You may be able to become an Honorable\n"
-	.string "Holmgang!$"
+	.string "Stop by the Longhall in town and tell\n"
+	.string "our King how much you like Neitiznot\l"
+	.string "artists better than Jatizso!\p"
+	.string "If you are lucky you might even be able\n"
+	.string "to challenge the King to Honourable\l"
+	.string "Holmgang.\p"
+	.string "Which is just the way we say Gym Battle.\p"
+	.string "Enjoy exploring the Island of\n"
+	.string "Neitiznot.\p"
+	.string "Come speak to me again if you wish to\n"
+	.string "travel back to Rellekka.$"
 
 RAC_QUEST_START_P2_JATIZSO_Text_0:
-	.string "Welcome to Jatizso adventuerer.\p"
+	.string "Welcome to Jatizso adventurer.\p"
 	.string "This land is full of amazing artists and\n"
 	.string "Rock Crabs!\p"
-	.string "You should stop by the Longhall in the\n"
-	.string "town and tell our king how much you like\l"
-	.string "it here.\p"
-	.string "What is in this for you?\p"
-	.string "You could challange the King to\n"
-	.string "Honorable Holmgang!\p"
-	.string "It is just a fancy way to say challenge\n"
-	.string "him to an MvM Battle.$"
+	.string "Stop by the Longhall in town and tell\n"
+	.string "our King how much you like Jatizso\l"
+	.string "artists better than Neitiznot!\p"
+	.string "If you are lucky you might even be able\n"
+	.string "to challenge the King to Honourable\l"
+	.string "Holmgang.\p"
+	.string "Which is just the way we say Gym Battle.\p"
+	.string "Enjoy exploring the Island of Jatizso.\p"
+	.string "Come speak to me again if you wish to\n"
+	.string "travel back to Rellekka.$"
 
 RAC_QUEST_START_P3_JATIZSO_Text_0:
 	.string "King$"
 
 RAC_QUEST_START_P3_JATIZSO_Text_1:
-	.string "What's this?\p"
-	.string "You want to have a Honorable Holmgang\n"
-	.string "with me?\p"
-	.string "PAH! I don't even know who you are!\p"
-	.string "For all I know you could be a filthy\n"
-	.string "Neitiznot!\p"
-	.string "Before I even consider having an\n"
-	.string "Honorable Holmgang with you.\p"
-	.string "You must prove yourself!\p"
-	.string "How?\p"
-	.string "PAH, talk with Jaxyys, I don't have time\n"
-	.string "for this.$"
+	.string "How dare you approach me?!\p"
+	.string "What do you want?\p"
+	.string "…{PAUSE 15} …{PAUSE 15} …{PAUSE 15} …{PAUSE 15} …\p"
+	.string "I see, you desire to have Honourable\n"
+	.string "Holmgang with me?\p"
+	.string "PAH! I don’t even know who you are!\p"
+	.string "For all I know you could be a filthy Yak\n"
+	.string "lover from Neitiznot!\p"
+	.string "Anyway I am way too busy preparing for\n"
+	.string "a battle against Neitiznot.\p"
+	.string "I will not even consider your challenge\n"
+	.string "until the battle is won.\p"
+	.string "Since you are here, I shall recruit you!\p"
+	.string "Prove yourself and I might just\n"
+	.string "consider your challenge.\p"
+	.string "Go speak with Jaxyys and they will give\n"
+	.string "you more details.\p"
+	.string "Now go away.\n"
+	.string "I am done with you.$"
 
 RAC_QUEST_START_P3_JATIZSO_Jaxyys_Text_0:
-	.string "So you want to challenge the king to\n"
-	.string "Honorable Holmgang ay?\p"
-	.string "Well you should start by letting the\n"
-	.string "towns artists get to know you.\p"
-	.string "Go around town and ask the artists if\n"
-	.string "there is anything you can help with.\p"
-	.string "Come back and talk to me once you've\n"
-	.string "helped 5 Artists.$"
+	.string "So you are the new recruit!\p"
+	.string "Your first task is to ensure all the\n"
+	.string "other artists are ready for the battle\l"
+	.string "ahead.\p"
+	.string "Go around the Isle of Jatizso and speak\n"
+	.string "with each of them and make sure they\l"
+	.string "are ready to go.\p"
+	.string "If you have any questions feel free to\n"
+	.string "come back and speak with myself or\l"
+	.string "Enko.$"
 
 RAC_QUEST_START_P3_JATIZSO_Jaxyys_check_Text_0:
-	.string "You have helped 1 Artist so far.\p"
-	.string "You need to help 4 more.$"
+	.string "Hey recruit, have you ensured that all\n"
+	.string "the other artists are ready for the\l"
+	.string "battle ahead?$"
 
 RAC_QUEST_START_P3_JATIZSO_Jaxyys_check_Text_1:
-	.string "Remember you need to help 5 Artists\n"
-	.string "before I tell the King you've been\l"
-	.string "helpful.$"
+	.string "So it seems we are still waiting on “X”\n"
+	.string "amount of artists to confirm that they\l"
+	.string "are ready for the fight.\p"
+	.string "The artists are all around the island,\n"
+	.string "they may be inside of the buildings,\l"
+	.string "some of them might also have things\l"
+	.string "they need to do before joining.\p"
+	.string "If you could help them complete their\n"
+	.string "tasks that would be great.\p"
+	.string "Come back to me once everyone is ready.$"
+
+RAC_QUEST_START_P3_JATIZSO_ENKO_Text_0:
+	.string "I think Jaxyys would like to talk to\n"
+	.string "you.$"
+
+RAC_QUEST_START_P3_JATIZSO_ENKO_check_Text_0:
+	.string "Hello recruit, I can provide you some\n"
+	.string "hints for where people are located.\p"
+	.string "Would you like a hint?$"
 
 RAC_QUEST_JATIZSO_ELEJ_P1_Text_0:
 	.string "Rememeber we should be looking for a\n"
@@ -1577,9 +1621,9 @@ RAC_QUEST_JATIZSO_ELEJ_P1_Text_0:
 	.string "'shine'!$"
 
 RAC_QUEST_JATIZSO_ELEJ_P1_Text_1:
-	.string "Hmm…\p"
-	.string "HMMMMMMMM…\p"
-	.string "HHMMMMMMMMMMM…!\p"
+	.string "Hmm…{PAUSE 15}…{PAUSE 15}…\n"
+	.string "HMMMMMMMM…{PAUSE 15}…{PAUSE 15}…\p"
+	.string "HMMMMMMMMMMM…{PAUSE 15}…{PAUSE 15}…{PAUSE 15}…!\p"
 	.string "No this does not work!$"
 
 RAC_QUEST_JATIZSO_ELEJ_P1_Text_2:
@@ -1587,24 +1631,21 @@ RAC_QUEST_JATIZSO_ELEJ_P1_Text_2:
 	.string "What can I do for you?$"
 
 RAC_QUEST_JATIZSO_ELEJ_P1_Text_3:
-	.string "Do I have anything you can help me\n"
-	.string "with?\p"
-	.string "Actually I do!\p"
-	.string "You see I want to take the best picture\n"
-	.string "best shows off Jatizso in all of its\l"
-	.string "glory!\p"
-	.string "Then I want to send it to the\n"
-	.string "Neitiznots as a peace offering.$"
+	.string "The Art Fight?\p"
+	.string "I would love to join but I am actually\n"
+	.string "quite busy at the moment.\p"
+	.string "You see, I want to take the best\n"
+	.string "picture that shows off Jatizso in all\l"
+	.string "of its glory!$"
 
 RAC_QUEST_JATIZSO_ELEJ_P1_Text_4:
 	.string "…{PAUSE 16}…$"
 
 RAC_QUEST_JATIZSO_ELEJ_P1_Text_5:
-	.string "That's what I would like to do.\p"
-	.string "But I cannot seem to get this this shot\n"
+	.string "But I cannot seem to get this shot\n"
 	.string "right.\p"
 	.string "Do you think you could help me find an\n"
-	.string "ideal location?$"
+	.string "ideal location to take this picture?$"
 
 RAC_QUEST_JATIZSO_ELEJ_P1_Text_6:
 	.string "Sigh, perhaps another time…$"
@@ -1615,9 +1656,6 @@ RAC_QUEST_JATIZSO_ELEJ_P1_Text_7:
 	.string "looking for a location that helps make\l"
 	.string "Jatizso 'shine'!$"
 
-RAC_QUEST_JATIZSO_ELEJ_P1_Text_8:
-	.string "ELEJ Side Quest, Start!$"
-
 RAC_QUEST_JATIZSO_ELEJ_SPOT_1_Text_0:
 	.string "Call Elej over to investegate this\n"
 	.string "spot?$"
@@ -1627,17 +1665,21 @@ RAC_QUEST_JATIZSO_ELEJ_SPOT_1_Text_1:
 	.string "Lets try a picture here!$"
 
 RAC_QUEST_JATIZSO_ELEJ_SPOT_1_Text_2:
-	.string "Hmm… No I don't think this will do.\p"
+	.string "Hmm…\n"
+	.string "No I don't think this will do.\p"
 	.string "Lets keep looking!$"
 
 RAC_QUEST_JATIZSO_ELEJ_SPOT_4_Text_0:
 	.string "This is…\p"
 	.string "PERFECT!\p"
-	.string "Here take this to the King to so we can\n"
-	.string "send it to Neitiznot as a gift!$"
+	.string "With this done I can now participate in\n"
+	.string "the Art Fight!\p"
+	.string "Please take this as a gift for helping\n"
+	.string "me.$"
 
 RAC_QUEST_JATIZSO_ELEJ_SPOT_4_Text_1:
-	.string "ELEJ Side Quest, Complete!$"
+	.string "I look forward to battling alongside\n"
+	.string "you in the Art Fight.$"
 
 RAC_QUEST_JATIZSO_JAGEX_P1_Text_0:
 	.string "Thank you again. Quest is over.$"
@@ -1709,6 +1751,22 @@ RAC_QUEST_JATIZSO_JAGEX_P1_Text_16:
 	.string "Once more thing.\p"
 	.string "Be careful not to drink it.\p"
 	.string "It is not for you. or anyone else.$"
+
+RAC_QUEST_SIGNPOST_RABBIT_CHECK_Text_0:
+	.string "You have killed {STR_VAR_1} Rabbits.$"
+
+RAC_QUEST_JACKIE_RABBIT_CHECK_Text_0:
+	.string "WOAH!\p"
+	.string "You have defeated {STR_VAR_1}\n"
+	.string "Rabbits!\p"
+	.string "Consider me impressed!\p"
+	.string "You have fired me up!\p"
+	.string "I shall eagerly join the Art Fight in\n"
+	.string "hopes of defeating more Rabbits!$"
+
+RAC_QUEST_JACKIE_RABBIT_CHECK_Text_1:
+	.string "WOAH!\p"
+	.string "You have defeated so many rabbits!$"
 
 RAC_QUEST_JATIZSO_JAGEX_P2_Text_0:
 	.string "You haven't forgotten about our deal\n"

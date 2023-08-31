@@ -1662,3 +1662,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Starter_House_Rellekka/scripts.inc"
 
 	.include "data/maps/Starter_House_AlKharid/scripts.inc"
+
+	.include "data/maps/Jatizso_House_4/scripts.inc"
+
+	.include "data/maps/Jatizso_House_5/scripts.inc"
+
+	.include "data/maps/Jatizso_Bank/scripts.inc"

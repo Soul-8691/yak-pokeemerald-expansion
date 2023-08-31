@@ -31,7 +31,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_BARBARIAN_MALE_1",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
       "x": 32,
       "y": 37,
       "elevation": 3,
@@ -97,8 +97,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RAC_JACKIE",
-      "x": 18,
-      "y": 19,
+      "x": 46,
+      "y": 21,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -110,8 +110,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_RAC_BONBUN",
-      "x": 17,
-      "y": 19,
+      "x": 47,
+      "y": 21,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -175,8 +175,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_IRONMAN",
-      "x": 26,
-      "y": 15,
+      "x": 44,
+      "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -188,8 +188,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BARROWS_SILSKE",
-      "x": 27,
-      "y": 12,
+      "x": 43,
+      "y": 13,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -227,8 +227,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
-      "x": 34,
-      "y": 9,
+      "x": 47,
+      "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -253,8 +253,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 37,
-      "y": 24,
+      "x": 48,
+      "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -266,8 +266,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CAT_BLACK",
-      "x": 37,
-      "y": 25,
+      "x": 48,
+      "y": 20,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -449,7 +449,7 @@
   ],
   "warp_events": [
     {
-      "x": 30,
+      "x": 31,
       "y": 37,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
@@ -459,8 +459,8 @@
       "x": 35,
       "y": 23,
       "elevation": 0,
-      "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 19
+      "dest_map": "MAP_JATIZSO_BANK",
+      "dest_warp_id": 0
     },
     {
       "x": 26,
@@ -473,21 +473,21 @@
       "x": 27,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_JATIZSO_HOUSE_3",
+      "dest_map": "MAP_JATIZSO_HOUSE_5",
       "dest_warp_id": 0
     },
     {
       "x": 18,
       "y": 18,
       "elevation": 0,
-      "dest_map": "MAP_JATIZSO",
+      "dest_map": "MAP_JATIZSO_HOUSE_3",
       "dest_warp_id": 0
     },
     {
       "x": 30,
       "y": 13,
       "elevation": 0,
-      "dest_map": "MAP_JATIZSO",
+      "dest_map": "MAP_JATIZSO_HOUSE_4",
       "dest_warp_id": 0
     },
     {
@@ -505,8 +505,8 @@
       "dest_warp_id": 0
     },
     {
-      "x": 1,
-      "y": 20,
+      "x": 43,
+      "y": 18,
       "elevation": 0,
       "dest_map": "MAP_JATIZSO",
       "dest_warp_id": 9

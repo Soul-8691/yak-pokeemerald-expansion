@@ -930,6 +930,9 @@
 #define MAP_JATIZSO_HOUSE_3                     (58 | (50 << 8))
 #define MAP_JATIZSO_CAVE                        (59 | (50 << 8))
 #define MAP_STARTER_HOUSE_RELLEKKA              (60 | (50 << 8))
+#define MAP_JATIZSO_HOUSE_4                     (61 | (50 << 8))
+#define MAP_JATIZSO_HOUSE_5                     (62 | (50 << 8))
+#define MAP_JATIZSO_BANK                        (63 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

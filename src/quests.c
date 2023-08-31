@@ -254,7 +254,7 @@ static const struct SubQuest sSubQuestsArtFight_Jatizso[QUEST_ARTFIGHT_JATIZSO_S
 	      gText_SideQuestMap2,
 	      OBJ_EVENT_GFX_RAC_ELEJ,
 	      OBJECT,
-	      sText_Empty
+	      sText_Complete
 	),
 
 	sub_quest(
@@ -264,7 +264,7 @@ static const struct SubQuest sSubQuestsArtFight_Jatizso[QUEST_ARTFIGHT_JATIZSO_S
 	      gText_SideQuestMap2,
 	      OBJ_EVENT_GFX_RAC_DRAGON,
 	      OBJECT,
-	      sText_Empty
+	      sText_Complete
 	),
 
 	sub_quest(

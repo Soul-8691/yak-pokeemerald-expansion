@@ -7394,8 +7394,8 @@
     {
       "id": "LAYOUT_JATIZSO_HOUSE_3",
       "name": "Jatizso_House_3_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 8,
+      "height": 8,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/Jatizso_House_3/border.bin",
@@ -7470,6 +7470,36 @@
       "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/Starter_House_AlKharid/border.bin",
       "blockdata_filepath": "data/layouts/Starter_House_AlKharid/map.bin"
+    },
+    {
+      "id": "LAYOUT_JATIZSO_HOUSE_4",
+      "name": "Jatizso_House_4_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/Jatizso_House_4/border.bin",
+      "blockdata_filepath": "data/layouts/Jatizso_House_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_JATIZSO_HOUSE_5",
+      "name": "Jatizso_House_5_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns2",
+      "border_filepath": "data/layouts/Jatizso_House_5/border.bin",
+      "blockdata_filepath": "data/layouts/Jatizso_House_5/map.bin"
+    },
+    {
+      "id": "LAYOUT_JATIZSO_BANK",
+      "name": "Jatizso_Bank_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Jatizso_Bank/border.bin",
+      "blockdata_filepath": "data/layouts/Jatizso_Bank/map.bin"
     }
   ]
 }

@@ -126,6 +126,73 @@ RAC_QUEST_JATIZSO_JAGEX_P4_7:
 	end
 
 
+BATTLE_RAC_RABBIT::
+	lock
+	namebox BATTLE_RAC_RABBIT_Text_0
+	playmoncry SPECIES_EKANS, 0
+	msgbox BATTLE_RAC_RABBIT_Text_1
+	waitmoncry
+	hidenamebox
+	closemessage
+	delay 1
+	setwildbattle SPECIES_RABBIT, 30, ITEM_NONE
+	dowildbattle
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq BATTLE_RAC_RABBIT_2
+	compare VAR_RESULT, B_OUTCOME_CAUGHT
+	goto_if_eq BATTLE_RAC_RABBIT_3
+	compare VAR_RESULT, B_OUTCOME_LOST
+	goto_if_eq BATTLE_RAC_RABBIT_4
+	compare VAR_RESULT, B_OUTCOME_RAN
+	goto_if_eq BATTLE_RAC_RABBIT_5
+BATTLE_RAC_RABBIT_1:
+	end
+
+BATTLE_RAC_RABBIT_2:
+	fadescreen FADE_TO_BLACK
+	addvar VAR_POKESCAPE_RAC_QUEST_RABBITS, 1
+	removeobject VAR_LAST_TALKED
+	fadescreen FADE_FROM_BLACK
+	goto BATTLE_RAC_RABBIT_1
+
+BATTLE_RAC_RABBIT_3:
+	fadescreen FADE_TO_BLACK
+	addvar VAR_POKESCAPE_RAC_QUEST_RABBITS, 1
+	removeobject VAR_LAST_TALKED
+	fadescreen FADE_FROM_BLACK
+	goto BATTLE_RAC_RABBIT_1
+
+BATTLE_RAC_RABBIT_4:
+	fadescreen FADE_TO_BLACK
+	fadescreen FADE_FROM_BLACK
+	closemessage
+	end
+
+BATTLE_RAC_RABBIT_5:
+	namebox BATTLE_RAC_RABBIT_Text_0
+	playmoncry SPECIES_EKANS, 0
+	msgbox BATTLE_RAC_RABBIT_Text_2
+	closemessage
+	hidenamebox
+	msgbox BATTLE_RAC_RABBIT_Text_3
+	closemessage
+	setwildbattle SPECIES_RABBIT, 100, ITEM_NONE
+	dowildbattleNoCatch
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq BATTLE_RAC_RABBIT_10
+	goto BATTLE_RAC_RABBIT_1
+
+BATTLE_RAC_RABBIT_10:
+	fadescreen FADE_TO_BLACK
+	addvar VAR_POKESCAPE_RAC_QUEST_RABBITS, 1
+	removeobject VAR_LAST_TALKED
+	fadescreen FADE_FROM_BLACK
+	msgbox BATTLE_RAC_RABBIT_Text_4
+	closemessage
+	hidenamebox
+	goto BATTLE_RAC_RABBIT_1
+
+
 RAC_QUEST_NEITIZNOT_ENTRY_Text_0:
 	.string "Nelle$"
 
@@ -157,3 +224,23 @@ RAC_QUEST_JATIZSO_JAGEX_P4_Text_0:
 
 RAC_QUEST_JATIZSO_JAGEX_P4_Text_1:
 	.string "Who are you?$"
+
+BATTLE_RAC_RABBIT_Text_0:
+	.string "Rabbit$"
+
+BATTLE_RAC_RABBIT_Text_1:
+	.string "BUNNNIEEE!$"
+
+BATTLE_RAC_RABBIT_Text_2:
+	.string "BOOONNNEEEEYYY!!!!$"
+
+BATTLE_RAC_RABBIT_Text_3:
+	.string "The Rabbit seems to have become more\n"
+	.string "confident at it's skills.\p"
+	.string "It attacks again!$"
+
+BATTLE_RAC_RABBIT_Text_4:
+	.string "You somehow overcame that horrorfying\n"
+	.string "experience.\p"
+	.string "You now understand why Jackson\n"
+	.string "dislikes Rabbits.$"

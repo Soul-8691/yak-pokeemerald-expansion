@@ -722,14 +722,38 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 
 #define OBJ_EVENT_PAL_SMUGGLER			0x126A
 //RAC
+#define OBJ_EVENT_PAL_RAC_PALETTE_1			0x126B
+#define OBJ_EVENT_PAL_RAC_PALETTE_2			0x126C
+#define OBJ_EVENT_PAL_RAC_PALETTE_3			0x126D
+#define OBJ_EVENT_PAL_RAC_PALETTE_4			0x126E
+#define OBJ_EVENT_PAL_RAC_PALETTE_5			0x126F
+#define OBJ_EVENT_PAL_RAC_PALETTE_6			0x1270
+/*
 #define OBJ_EVENT_PAL_RAC_BATS			0x126B
 #define OBJ_EVENT_PAL_RAC_DRAGON		0x126C
 #define OBJ_EVENT_PAL_RAC_ELEJ			0x126D
 #define OBJ_EVENT_PAL_RAC_JACKIE		0x126E
 #define OBJ_EVENT_PAL_RAC_BONBUN		0x126F
-
-
-
+#define OBJ_EVENT_PAL_RAC_ALEXANDRA	    0x1270
+#define OBJ_EVENT_PAL_RAC_BLKWITCH	    0x1271
+#define OBJ_EVENT_PAL_RAC_CHARM	        0x1272
+#define OBJ_EVENT_PAL_RAC_CRESBOT	    0x1273
+#define OBJ_EVENT_PAL_RAC_DEWYDD	    0x1274
+#define OBJ_EVENT_PAL_RAC_ELIZABETH	    0x1275
+#define OBJ_EVENT_PAL_RAC_ENKO	        0x1276
+#define OBJ_EVENT_PAL_RAC_FAYDENE	    0x1277
+#define OBJ_EVENT_PAL_RAC_FLORIN	    0x1278
+#define OBJ_EVENT_PAL_RAC_ISOHEL	    0x1279
+#define OBJ_EVENT_PAL_RAC_JAXYYS	    0x127A
+#define OBJ_EVENT_PAL_RAC_KITTY	        0x127B
+#define OBJ_EVENT_PAL_RAC_MOGGIE	    0x127C
+#define OBJ_EVENT_PAL_RAC_NELLE	        0x127D
+#define OBJ_EVENT_PAL_RAC_PARRISH	    0x127E
+#define OBJ_EVENT_PAL_RAC_POPBUBBLE	    0x127F
+#define OBJ_EVENT_PAL_RAC_SNAILY	    0x1280
+#define OBJ_EVENT_PAL_RAC_TIFA	        0x1281
+#define OBJ_EVENT_PAL_RAC_WHISPER	    0x1282
+*/
 
 
 
@@ -1066,13 +1090,42 @@ static const struct SpritePalette sObjectEventSpritePalettes[0xFF] = {
     {gObjectEventPalette_GUARDS, OBJ_EVENT_PAL_GUARDS},
     */
    {gObjectEventPalette_Pker_Rusher, OBJ_EVENT_PAL_PKER_RUSHER},
-
    {gObjectEventPalette_Smuggler, OBJ_EVENT_PAL_SMUGGLER},
-   {gObjectEventPalette_RAC_BATS, OBJ_EVENT_PAL_RAC_BATS},
-   {gObjectEventPalette_RAC_DRAGON, OBJ_EVENT_PAL_RAC_DRAGON},
-   {gObjectEventPalette_RAC_ELEJ, OBJ_EVENT_PAL_RAC_ELEJ},
-   {gObjectEventPalette_RAC_JACKIE, OBJ_EVENT_PAL_RAC_JACKIE},
-   {gObjectEventPalette_RAC_BONBUN, OBJ_EVENT_PAL_RAC_BONBUN},
+   {gObjectEventPalette_RAC_PALETTE_1, OBJ_EVENT_PAL_RAC_PALETTE_1},
+    {gObjectEventPalette_RAC_PALETTE_2, OBJ_EVENT_PAL_RAC_PALETTE_2},
+    {gObjectEventPalette_RAC_PALETTE_3, OBJ_EVENT_PAL_RAC_PALETTE_3},
+    {gObjectEventPalette_RAC_PALETTE_4, OBJ_EVENT_PAL_RAC_PALETTE_4},
+    {gObjectEventPalette_RAC_PALETTE_5, OBJ_EVENT_PAL_RAC_PALETTE_5},
+    {gObjectEventPalette_RAC_PALETTE_6, OBJ_EVENT_PAL_RAC_PALETTE_6},
+    
+
+    
+    /*
+    {gObjectEventPalette_RAC_BATS, OBJ_EVENT_PAL_RAC_BATS},
+    {gObjectEventPalette_RAC_DRAGON, OBJ_EVENT_PAL_RAC_DRAGON},
+    {gObjectEventPalette_RAC_ELEJ, OBJ_EVENT_PAL_RAC_ELEJ},
+    {gObjectEventPalette_RAC_JACKIE, OBJ_EVENT_PAL_RAC_JACKIE},
+    {gObjectEventPalette_RAC_BONBUN, OBJ_EVENT_PAL_RAC_BONBUN},
+    {gObjectEventPalette_RAC_CHARM, OBJ_EVENT_PAL_RAC_CHARM},
+    {gObjectEventPalette_RAC_ALEXANDRA, OBJ_EVENT_PAL_RAC_ALEXANDRA},
+    {gObjectEventPalette_RAC_BLKWITCH, OBJ_EVENT_PAL_RAC_BLKWITCH},
+    {gObjectEventPalette_RAC_CRESBOT, OBJ_EVENT_PAL_RAC_CRESBOT},
+    {gObjectEventPalette_RAC_ELIZABETH, OBJ_EVENT_PAL_RAC_ELIZABETH},
+    {gObjectEventPalette_RAC_ENKO, OBJ_EVENT_PAL_RAC_ENKO},
+    {gObjectEventPalette_RAC_FAYDENE, OBJ_EVENT_PAL_RAC_FAYDENE},
+    {gObjectEventPalette_RAC_FLORIN, OBJ_EVENT_PAL_RAC_FLORIN},
+    {gObjectEventPalette_RAC_ISOHEL, OBJ_EVENT_PAL_RAC_ISOHEL},
+    {gObjectEventPalette_RAC_JAXYYS, OBJ_EVENT_PAL_RAC_JAXYYS},
+    {gObjectEventPalette_RAC_KITTY, OBJ_EVENT_PAL_RAC_KITTY},
+    {gObjectEventPalette_RAC_MOGGIE, OBJ_EVENT_PAL_RAC_MOGGIE},
+    {gObjectEventPalette_RAC_NELLE, OBJ_EVENT_PAL_RAC_NELLE},
+    {gObjectEventPalette_RAC_PARRISH, OBJ_EVENT_PAL_RAC_PARRISH},
+    {gObjectEventPalette_RAC_POPBUBBLE, OBJ_EVENT_PAL_RAC_POPBUBBLE},
+    {gObjectEventPalette_RAC_SNAILY, OBJ_EVENT_PAL_RAC_SNAILY},
+    {gObjectEventPalette_RAC_TIFA, OBJ_EVENT_PAL_RAC_TIFA},
+    {gObjectEventPalette_RAC_WHISPER, OBJ_EVENT_PAL_RAC_WHISPER},
+    {gObjectEventPalette_RAC_DEWYDD, OBJ_EVENT_PAL_RAC_DEWYDD},
+    */
 
     {},
 };

@@ -495,6 +495,25 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_DRAGON;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_ELEJ;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_JACKIE;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_BONBUN;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_ALEXANDRA;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_BLKWITCH;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_CHARM;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_CRESBOT;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_DEWYDD;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_ELIZABETH;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_ENKO;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_FAYDENE;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_FLORIN;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_ISOHEL;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_JAXYYS;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_KITTY;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_MOGGIE;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_NELLE;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_PARRISH;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_POPBUBBLE;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_SNAILY;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_TIFA;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_WHISPER;
 
 //ORES
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CopperOre;
@@ -998,6 +1017,25 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_RAC_ELEJ] =                       &gObjectEventGraphicsInfo_RAC_ELEJ,
     [OBJ_EVENT_GFX_RAC_JACKIE] =                       &gObjectEventGraphicsInfo_RAC_JACKIE,
     [OBJ_EVENT_GFX_RAC_BONBUN] =                       &gObjectEventGraphicsInfo_RAC_BONBUN,
+    [OBJ_EVENT_GFX_RAC_ALEXANDRA] =                       &gObjectEventGraphicsInfo_RAC_ALEXANDRA,
+    [OBJ_EVENT_GFX_RAC_BLKWITCH] =                       &gObjectEventGraphicsInfo_RAC_BLKWITCH,
+    [OBJ_EVENT_GFX_RAC_CHARM] =                       &gObjectEventGraphicsInfo_RAC_CHARM,
+    [OBJ_EVENT_GFX_RAC_CRESBOT] =                       &gObjectEventGraphicsInfo_RAC_CRESBOT,
+    [OBJ_EVENT_GFX_RAC_DEWYDD] =                       &gObjectEventGraphicsInfo_RAC_DEWYDD,
+    [OBJ_EVENT_GFX_RAC_ELIZABETH] =                       &gObjectEventGraphicsInfo_RAC_ELIZABETH,
+    [OBJ_EVENT_GFX_RAC_ENKO] =                       &gObjectEventGraphicsInfo_RAC_ENKO,
+    [OBJ_EVENT_GFX_RAC_FAYDENE] =                       &gObjectEventGraphicsInfo_RAC_FAYDENE,
+    [OBJ_EVENT_GFX_RAC_FLORIN] =                       &gObjectEventGraphicsInfo_RAC_FLORIN,
+    [OBJ_EVENT_GFX_RAC_ISOHEL] =                       &gObjectEventGraphicsInfo_RAC_ISOHEL,
+    [OBJ_EVENT_GFX_RAC_JAXYYS] =                       &gObjectEventGraphicsInfo_RAC_JAXYYS,
+    [OBJ_EVENT_GFX_RAC_KITTY] =                       &gObjectEventGraphicsInfo_RAC_KITTY,
+    [OBJ_EVENT_GFX_RAC_MOGGIE] =                       &gObjectEventGraphicsInfo_RAC_MOGGIE,
+    [OBJ_EVENT_GFX_RAC_NELLE] =                       &gObjectEventGraphicsInfo_RAC_NELLE,
+    [OBJ_EVENT_GFX_RAC_PARRISH] =                       &gObjectEventGraphicsInfo_RAC_PARRISH,
+    [OBJ_EVENT_GFX_RAC_POPBUBBLE] =                       &gObjectEventGraphicsInfo_RAC_POPBUBBLE,
+    [OBJ_EVENT_GFX_RAC_SNAILY] =                       &gObjectEventGraphicsInfo_RAC_SNAILY,
+    [OBJ_EVENT_GFX_RAC_TIFA] =                       &gObjectEventGraphicsInfo_RAC_TIFA,
+    [OBJ_EVENT_GFX_RAC_WHISPER] =                       &gObjectEventGraphicsInfo_RAC_WHISPER,
 
 //ORES 
 	[OBJ_EVENT_GFX_COPPER_ORE] =          		    &gObjectEventGraphicsInfo_CopperOre,

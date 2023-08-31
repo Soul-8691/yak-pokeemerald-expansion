@@ -501,6 +501,25 @@
 #define OBJ_EVENT_GFX_RAC_ELEJ				    484
 #define OBJ_EVENT_GFX_RAC_JACKIE				485
 #define OBJ_EVENT_GFX_RAC_BONBUN				486
+#define OBJ_EVENT_GFX_RAC_DEWYDD		        487
+#define OBJ_EVENT_GFX_RAC_ELIZABETH		        488
+#define OBJ_EVENT_GFX_RAC_ENKO		            489
+#define OBJ_EVENT_GFX_RAC_FAYDENE		        490
+#define OBJ_EVENT_GFX_RAC_FLORIN		        491
+#define OBJ_EVENT_GFX_RAC_ISOHEL		        492
+#define OBJ_EVENT_GFX_RAC_JAXYYS		        493
+#define OBJ_EVENT_GFX_RAC_MOGGIE		        494
+#define OBJ_EVENT_GFX_RAC_NELLE		            495
+#define OBJ_EVENT_GFX_RAC_PARRISH		        496
+#define OBJ_EVENT_GFX_RAC_TIFA		            497
+#define OBJ_EVENT_GFX_RAC_WHISPER		        498
+#define OBJ_EVENT_GFX_RAC_ALEXANDRA		        499
+#define OBJ_EVENT_GFX_RAC_BLKWITCH		        500
+#define OBJ_EVENT_GFX_RAC_CHARM		            501
+#define OBJ_EVENT_GFX_RAC_CRESBOT		        502
+#define OBJ_EVENT_GFX_RAC_SNAILY		        503
+#define OBJ_EVENT_GFX_RAC_KITTY		            504
+#define OBJ_EVENT_GFX_RAC_POPBUBBLE		        505
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
@@ -511,7 +530,7 @@
 // object graphics that can be removed. If more graphics are needed, anything that
 // stores graphics ids will need to be increased in size. See wiki entry below:
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
-#define NUM_OBJ_EVENT_GFX                        487
+#define NUM_OBJ_EVENT_GFX                        506
 
 
 // These are dynamic object gfx ids.

@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_RAC_FLORIN",
       "x": 6,
       "y": 6,
       "elevation": 3,
@@ -54,7 +54,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_CAT_BLACK",
+      "graphics_id": "OBJ_EVENT_GFX_RAC_KITTY",
       "x": 7,
       "y": 7,
       "elevation": 3,

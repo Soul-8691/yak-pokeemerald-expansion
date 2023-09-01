@@ -57,5 +57,71 @@ script WEATHER_CHANGE_ROUTE
 	return
 }
 
+script WEATHER_CHANGE_ROUTE_RAIN
+{
+	random(6)
+	switch (var(VAR_RESULT)) { 
+			case 0: 
+				return
+            case 1: 
+				setweather (WEATHER_RAIN)
+				doweather
+            case 2: 
+				setweather (WEATHER_DOWNPOUR)
+				doweather
+			case 4: 
+				return
+			case 5: 
+				return
+			case 6: 
+				return
+	}
+	return
+}
 
+script WEATHER_CHANGE_ROUTE_SAND
+{
+	random(15)
+	switch (var(VAR_RESULT)) { 
+			case 0: 
+				return
+            case 1: 
+				return
+            case 8: 
+				setweather (WEATHER_SUNNY)
+				doweather
+			case 12: 
+				setweather (WEATHER_SANDSTORM)
+				doweather
+			case 13: 
+				setweather (WEATHER_SANDSTORM)
+				doweather
+			case 14: 
+				setweather (WEATHER_DROUGHT)
+				doweather
+				
+	}
+	return
+}
 
+script WEATHER_CHANGE_ROUTE_SNOW
+{
+	random(6)
+	switch (var(VAR_RESULT)) { 
+			case 0: 
+				return
+            case 1: 
+				setweather (WEATHER_SNOW)
+				doweather
+            case 2: 
+				setweather (WEATHER_HAIL)
+				doweather
+			case 4: 
+				return
+			case 5: 
+				return
+			case 6: 
+				return
+	}
+	return
+}

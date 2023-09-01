@@ -2,7 +2,7 @@
   "id": "MAP_MUSA_POINT",
   "name": "MusaPoint",
   "layout": "LAYOUT_MUSA_POINT",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_DEWFORD",
   "region_map_section": "MAPSEC_MUSA_POINT",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

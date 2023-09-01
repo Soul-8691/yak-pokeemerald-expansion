@@ -5,6 +5,7 @@ Route29_MapScripts::
 
 Route29_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 11
+	call WEATHER_CHANGE_ROUTE_SAND
 	return
 
 Route29_MapScripts_MAP_SCRIPT_ON_LOAD:

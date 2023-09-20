@@ -5032,16 +5032,7 @@ const struct Item gItems[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
-    [ITEM_GODRABBITFOOT] =
-    {
-        .name = _("BLESSED FOOT"),
-        .itemId = ITEM_GODRABBITFOOT,
-        .price = 0,
-        .description = sGodRabbitFootDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_FIELD,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-    },
+    
     [ITEM_GUTHANSPEAR] =
     {
         .name = _("GUTHAN SPEAR"),
@@ -5153,6 +5144,16 @@ const struct Item gItems[] =
         .itemId = ITEM_LUCKYRABBITFOOT,
         .price = 0,
         .description = sRabbitFootDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_GODRABBITFOOT] =
+    {
+        .name = _("BLESSED FOOT"),
+        .itemId = ITEM_GODRABBITFOOT,
+        .price = 0,
+        .description = sGodRabbitFootDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

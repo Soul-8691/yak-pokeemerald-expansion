@@ -1935,10 +1935,7 @@ static const u8 sGnomScarfDesc[] = _(
     "but locks the users\n"
     "moves.");
  
-static const u8 sGodRabbitFootDesc[] = _(
-    "The Rabbit foot\n"
-    "blessed by gods.\n"
-    "Coveted by birds.");
+
    
 static const u8 sGuthanSpearDesc[] = _(
     "Increases the\n"
@@ -1987,10 +1984,21 @@ static const u8 sLinzaHammerDesc[] = _(
     "back when hit.");
   
 static const u8 sRabbitFootDesc[] = _(
-    "Foot of a rabbit.\n"
-    "Very lucky. Not so\n"
-    "much for trees.");
-    
+    //"Foot of a rabbit.\n"
+    //"Very lucky. Not so\n"
+    //"much for trees.");
+    "Made from Rabbits.\n"
+    "Loved by nesting\n"
+    "birds.");
+
+static const u8 sGodRabbitFootDesc[] = _(
+    //"The Rabbit foot\n"
+    //"blessed by gods.\n"
+    //"Coveted by birds.");
+    "This item is blessed.\n"
+    "Loved by nesting\n"
+    "god birds.");
+
 static const u8 sOrbOfOcullusDesc[] = _(
     "Increases the\n"
     "Crit chance of\n"

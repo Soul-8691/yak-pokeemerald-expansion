@@ -6052,7 +6052,7 @@ u8 GetSidewaysStairsCollision(struct ObjectEvent *objectEvent, u8 dir, u8 curren
         return collision;
 
     // cant descend stairs into water
-    if (MetatileBehavior_IsSurfableFishableWater(nextBehavior))
+    if (MetatileBehavior_IsSurfableWaterOrUnderwater(nextBehavior))
         return collision;
 
     if (MetatileBehavior_IsSidewaysStairsLeftSide(nextBehavior))

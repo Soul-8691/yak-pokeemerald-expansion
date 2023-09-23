@@ -135,7 +135,7 @@
 #define VAR_CALLISTO_STATE                   0x4074
 #define VAR_POKESCAPE_ALKHARID_GYM_QUEST                   0x4075 // Unused Var
 #define VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE                   0x4076 // Unused Var
-#define VAR_ROUTE124_STATE                   0x4077 // Unused Var
+#define VAR_GAMEMODE_MONSTERS_STATE                   0x4077 // Unused Var
 #define VAR_ROUTE125_STATE                   0x4078 // Unused Var
 #define VAR_ROUTE126_STATE                   0x4079 // Unused Var
 #define VAR_ROUTE127_STATE                   0x407A // Unused Var

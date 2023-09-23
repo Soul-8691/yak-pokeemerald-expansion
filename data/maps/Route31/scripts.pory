@@ -114,7 +114,7 @@ script WEATHER_CHANGE_ROUTE_SNOW
 				setweather (WEATHER_SNOW)
 				doweather
             case 2: 
-				setweather (WEATHER_HAIL)
+				setweather (WEATHER_SNOW)
 				doweather
 			case 4: 
 				return

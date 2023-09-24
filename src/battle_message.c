@@ -1932,9 +1932,9 @@ static const u8 sATypeMove_Table[NUMBER_OF_MON_TYPES][17] =
 /*
     [TYPE_AIR]    = _("a AIR move"),
     [TYPE_MIND]    = _("a MIND move"),
-    [TYPE_WATER]    = _("a WATER move"),
+    [TYPE_WATERPS]    = _("a WATER move"),
     [TYPE_EARTH]    = _("a EARTH move"),
-    [TYPE_FIRE]    = _("a FIRE move"),
+    [TYPE_FIREPS]    = _("a FIRE move"),
     [TYPE_BODY]    = _("a BODY move"),
     [TYPE_COSMIC]    = _("a COSMIC move"),
     [TYPE_CHAOS]    = _("a CHAOS move"),

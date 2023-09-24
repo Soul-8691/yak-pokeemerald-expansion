@@ -226,6 +226,10 @@ struct BaseStats
             u8 safariZoneFleeRate;
             u8 bodyColor : 7;
             u8 noFlip : 1;
+            /* GAMEMODE RUNE TYPES
+            u8 type3;
+            u8 type4;
+            */
 };
 
 #include "constants/battle_config.h"

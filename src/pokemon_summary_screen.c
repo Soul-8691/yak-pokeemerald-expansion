@@ -889,8 +889,56 @@ static const union AnimCmd sSpriteAnim_TypeFairy[] = {
     ANIMCMD_FRAME(TYPE_FAIRY * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
-//POKESCAPE TYPES
+//POKESCAPE TYPES 
 /*
+static const union AnimCmd sSpriteAnim_TypeAir[] = {
+    ANIMCMD_FRAME(TYPE_AIR * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeMind[] = {
+    ANIMCMD_FRAME(TYPE_MIND * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeWaterPS[] = {
+    ANIMCMD_FRAME(TYPE_WATERPS * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeEarth[] = {
+    ANIMCMD_FRAME(TYPE_EARTH * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeFirePS[] = {
+    ANIMCMD_FRAME(TYPE_FIREPS * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeBody[] = {
+    ANIMCMD_FRAME(TYPE_BODY * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeCosmic[] = {
+    ANIMCMD_FRAME(TYPE_COSMIC * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeChaos[] = {
+    ANIMCMD_FRAME(TYPE_CHAOS * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeNature[] = {
+    ANIMCMD_FRAME(TYPE_NATURE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeLaw[] = {
+    ANIMCMD_FRAME(TYPE_LAW * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeDeath[] = {
+    ANIMCMD_FRAME(TYPE_DEATH * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeAstral[] = {
+    ANIMCMD_FRAME(TYPE_ASTRAL * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
 static const union AnimCmd sSpriteAnim_TypeBlood[] = {
     ANIMCMD_FRAME(TYPE_BLOOD * 8, 0, FALSE, FALSE),
     ANIMCMD_END
@@ -940,7 +988,18 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
     sSpriteAnim_TypeDragon,
     sSpriteAnim_TypeDark,
     sSpriteAnim_TypeFairy,
-    /*
+/*
+    sSpriteAnim_TypeAir,
+    sSpriteAnim_TypeMind,
+    sSpriteAnim_TypeWaterPS,
+    sSpriteAnim_TypeEarth,
+    sSpriteAnim_TypeFirePS,
+    sSpriteAnim_TypeBody,
+    sSpriteAnim_TypeCosmic,
+    sSpriteAnim_TypeNature,
+    sSpriteAnim_TypeLaw,
+    sSpriteAnim_TypeDeath,
+    sSpriteAnim_TypeAstral,
     sSpriteAnim_TypeBlood,
     sSpriteAnim_TypeSoul,
     */
@@ -989,18 +1048,18 @@ static const u8 sMoveTypeToOamPaletteNum[NUMBER_OF_MON_TYPES + CONTEST_CATEGORIE
     [TYPE_DARK] = 13,
     [TYPE_FAIRY] = 14,
 /*
-    [TYPE_AIR] = 13,
+    [TYPE_AIR] = 14,
     [TYPE_MIND] = 13,
-    [TYPE_WATER] = 13,
+    [TYPE_WATERPS] = 14,
     [TYPE_EARTH] = 13,
-    [TYPE_FIRE] = 13,
-    [TYPE_BODY] = 13,
+    [TYPE_FIREPS] = 13,
+    [TYPE_BODY] = 15,
     [TYPE_COSMIC] = 13,
     [TYPE_CHAOS] = 13,
-    [TYPE_NATURE] = 13,
-    [TYPE_LAW] = 13,
+    [TYPE_NATURE] = 15,
+    [TYPE_LAW] = 15,
     [TYPE_DEATH] = 13,
-    [TYPE_ASTRAL] = 13,
+    [TYPE_ASTRAL] = 14,
     [TYPE_BLOOD] = 13,
     [TYPE_SOUL] = 14,
 */
@@ -4011,6 +4070,20 @@ static void SetMonTypeIcons(void)
         SetTypeSpritePosAndPal(TYPE_MYSTERY, 120, 48, SPRITE_ARR_ID_TYPE);
         SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 1, TRUE);
     }
+    /* // GAMEMODE RUNE TYPES
+    if (VarGet(VAR_GAMEMODE_MONSTERS_STATE) == 0) { //If Gamemode is set to Rune Types.
+        SetTypeSpritePosAndPal(gBaseStats[summary->species].type3, 120, 48, SPRITE_ARR_ID_TYPE);
+        if (gBaseStats[summary->species].type3 != gBaseStats[summary->species].type4)
+        {
+            SetTypeSpritePosAndPal(gBaseStats[summary->species].type4, 160, 48, SPRITE_ARR_ID_TYPE + 1);
+            SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 1, FALSE);
+        }
+        else
+        {
+            SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 1, TRUE);
+        }
+    }
+    */
     else
     {
         SetTypeSpritePosAndPal(gBaseStats[summary->species].type1, 120, 48, SPRITE_ARR_ID_TYPE);

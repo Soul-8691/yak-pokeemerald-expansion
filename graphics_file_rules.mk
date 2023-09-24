@@ -21,7 +21,7 @@ JPCONTESTGFXDIR := graphics/contest/japanese
 POKEDEXGFXDIR := graphics/pokedex
 STARTERGFXDIR := graphics/starter_choose
 
-types := normal fight flying poison ground rock bug ghost steel mystery fire water grass electric psychic ice dragon dark fairy #air mind water earth fire body cosmic chaos nature law death astral blood soul
+types := normal fight flying poison ground rock bug ghost steel mystery fire water grass electric psychic ice dragon dark fairy #air mind waterps earth fireps body cosmic chaos nature law death astral blood soul
 contest_types := cool beauty cute smart tough
 
 

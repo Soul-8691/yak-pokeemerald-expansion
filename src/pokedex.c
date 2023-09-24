@@ -1394,6 +1394,22 @@ static const struct SearchOptionText sDexSearchTypeOptions[NUMBER_OF_MON_TYPES +
     {gText_DexEmptyString, gTypeNames[TYPE_DRAGON]},
     {gText_DexEmptyString, gTypeNames[TYPE_DARK]},
     {gText_DexEmptyString, gTypeNames[TYPE_FAIRY]},
+/*
+    {gText_DexEmptyString, gTypeNames[TYPE_AIR]},
+    {gText_DexEmptyString, gTypeNames[TYPE_MIND]},
+    {gText_DexEmptyString, gTypeNames[TYPE_WATERPS]},
+    {gText_DexEmptyString, gTypeNames[TYPE_EARTH]},
+    {gText_DexEmptyString, gTypeNames[TYPE_FIREPS]},
+    {gText_DexEmptyString, gTypeNames[TYPE_BODY]},
+    {gText_DexEmptyString, gTypeNames[TYPE_COSMIC]},
+    {gText_DexEmptyString, gTypeNames[TYPE_CHAOS]},
+    {gText_DexEmptyString, gTypeNames[TYPE_NATURE]},
+    {gText_DexEmptyString, gTypeNames[TYPE_LAW]},
+    {gText_DexEmptyString, gTypeNames[TYPE_DEATH]},
+    {gText_DexEmptyString, gTypeNames[TYPE_ASTRAL]},
+    {gText_DexEmptyString, gTypeNames[TYPE_BLOOD]},
+    {gText_DexEmptyString, gTypeNames[TYPE_SOUL]},
+    */
     {},
 };
 
@@ -1429,6 +1445,22 @@ static const u8 sDexSearchTypeIds[NUMBER_OF_MON_TYPES] =
     TYPE_DRAGON,
     TYPE_DARK,
     TYPE_FAIRY,
+/*
+    TYPE_AIR,
+    TYPE_MIND,
+    TYPE_WATERPS,
+    TYPE_EARTH,
+    TYPE_FIREPS,
+    TYPE_BODY,
+    TYPE_COSMIC,
+    TYPE_CHAOS,
+    TYPE_NATURE,
+    TYPE_LAW,
+    TYPE_DEATH,
+    TYPE_ASTRAL,
+    TYPE_BLOOD,
+    TYPE_SOUL,
+    */
 };
 
 // Number pairs are the task data for tracking the cursor pos and scroll offset of each option list

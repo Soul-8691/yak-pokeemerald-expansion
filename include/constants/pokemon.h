@@ -23,23 +23,22 @@
 #define TYPE_DARK             17
 #define TYPE_FAIRY            18
 /*
-#define TYPE_AIR    0
-#define TYPE_MIND   1
-#define TYPE_WATER  2
-#define TYPE_EARTH  3
-#define TYPE_FIRE   4
-#define TYPE_BODY   5
-#define TYPE_COSMIC 6
-#define TYPE_CHAOS  7
-#define TYPE_NATURE 8
-#define TYPE_LAW    9
-#define TYPE_DEATH  10
-#define TYPE_ASTRAL 11
-#define TYPE_BLOOD  12
-#define TYPE_SOUL   13
+#define TYPE_AIR    19
+#define TYPE_MIND   20
+#define TYPE_WATERPS  21
+#define TYPE_EARTH  22
+#define TYPE_FIREPS   23
+#define TYPE_BODY   24
+#define TYPE_COSMIC 25
+#define TYPE_CHAOS  26
+#define TYPE_NATURE 27
+#define TYPE_LAW    28
+#define TYPE_DEATH  29
+#define TYPE_ASTRAL 30
+#define TYPE_BLOOD  31
+#define TYPE_SOUL   32
 */
-
-#define NUMBER_OF_MON_TYPES   19
+#define NUMBER_OF_MON_TYPES   19//33 //20 33
 
 // Pokemon egg groups
 #define EGG_GROUP_NONE          0

@@ -334,9 +334,9 @@ const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
     /*
     [TYPE_AIR] = _("Air"),
     [TYPE_MIND] = _("Mind"),
-    [TYPE_WATER] = _("Water"),
+    [TYPE_WATERPS] = _("Water"),
     [TYPE_EARTH] = _("Earth"),
-    [TYPE_FIRE] = _("Fire"),
+    [TYPE_FIREPS] = _("Fire"),
     [TYPE_BODY] = _("Body"),
     [TYPE_COSMIC] = _("Cosmic"),
     [TYPE_CHAOS] = _("Chaos"),

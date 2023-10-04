@@ -417,8 +417,32 @@ script PokeScapeSongList_VSBattles{
             case 9: 
                 namebox ("9")
                 playbgm (MUS_PS_VS_POKESCAPERS, 1)
-                setvar(VAR_POKESCAPE_MUSIC_STATE, 0)
+                setvar(VAR_POKESCAPE_MUSIC_STATE, 10)
                 msgbox(format("NOW PLAYING: VS POKESCAPERS"))
+                hidenamebox
+                release
+                end
+            case 10: 
+                namebox ("10")
+                playbgm (MUS_PS_VS_CHAOS_ELEMENTAL, 1)
+                setvar(VAR_POKESCAPE_MUSIC_STATE, 11)
+                msgbox(format("NOW PLAYING: VS CHAOS ELE"))
+                hidenamebox
+                release
+                end
+            case 11: 
+                namebox ("11")
+                playbgm (MUS_PS_TZHAAR, 1)
+                setvar(VAR_POKESCAPE_MUSIC_STATE, 12)
+                msgbox(format("NOW PLAYING: TERRIBLE CAVERNS"))
+                hidenamebox
+                release
+                end
+            case 12: 
+                namebox ("12")
+                playbgm (MUS_PS_RIMMINGTON, 1)
+                setvar(VAR_POKESCAPE_MUSIC_STATE, 0)
+                msgbox(format("NOW PLAYING: TERRIBLE CAVERNS"))
                 hidenamebox
                 release
                 end

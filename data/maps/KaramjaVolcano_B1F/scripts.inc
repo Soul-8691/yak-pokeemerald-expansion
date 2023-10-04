@@ -237,6 +237,9 @@ PokeScapeSongList_VSBattles::
 	case 7, PokeScapeSongList_VSBattles_9
 	case 8, PokeScapeSongList_VSBattles_10
 	case 9, PokeScapeSongList_VSBattles_11
+	case 10, PokeScapeSongList_VSBattles_12
+	case 11, PokeScapeSongList_VSBattles_13
+	case 12, PokeScapeSongList_VSBattles_14
 	return
 
 PokeScapeSongList_VSBattles_2:
@@ -323,8 +326,35 @@ PokeScapeSongList_VSBattles_10:
 PokeScapeSongList_VSBattles_11:
 	namebox PokeScapeSongList_VSBattles_Text_18
 	playbgm MUS_PS_VS_POKESCAPERS, 1
-	setvar VAR_POKESCAPE_MUSIC_STATE, 0
+	setvar VAR_POKESCAPE_MUSIC_STATE, 10
 	msgbox PokeScapeSongList_VSBattles_Text_19
+	hidenamebox
+	release
+	end
+
+PokeScapeSongList_VSBattles_12:
+	namebox PokeScapeSongList_VSBattles_Text_20
+	playbgm MUS_PS_VS_CHAOS_ELEMENTAL, 1
+	setvar VAR_POKESCAPE_MUSIC_STATE, 11
+	msgbox PokeScapeSongList_VSBattles_Text_21
+	hidenamebox
+	release
+	end
+
+PokeScapeSongList_VSBattles_13:
+	namebox PokeScapeSongList_VSBattles_Text_22
+	playbgm MUS_PS_TZHAAR, 1
+	setvar VAR_POKESCAPE_MUSIC_STATE, 12
+	msgbox PokeScapeSongList_VSBattles_Text_23
+	hidenamebox
+	release
+	end
+
+PokeScapeSongList_VSBattles_14:
+	namebox PokeScapeSongList_VSBattles_Text_24
+	playbgm MUS_PS_RIMMINGTON, 1
+	setvar VAR_POKESCAPE_MUSIC_STATE, 0
+	msgbox PokeScapeSongList_VSBattles_Text_23
 	hidenamebox
 	release
 	end
@@ -590,6 +620,21 @@ PokeScapeSongList_VSBattles_Text_18:
 
 PokeScapeSongList_VSBattles_Text_19:
 	.string "NOW PLAYING: VS POKESCAPERS$"
+
+PokeScapeSongList_VSBattles_Text_20:
+	.string "10$"
+
+PokeScapeSongList_VSBattles_Text_21:
+	.string "NOW PLAYING: VS CHAOS ELE$"
+
+PokeScapeSongList_VSBattles_Text_22:
+	.string "11$"
+
+PokeScapeSongList_VSBattles_Text_23:
+	.string "NOW PLAYING: TERRIBLE CAVERNS$"
+
+PokeScapeSongList_VSBattles_Text_24:
+	.string "12$"
 
 PokeScapeSongList_ENCOUNTERS_Text_0:
 	.string "NOW PLAYING: ENCOUNTER HAM$"

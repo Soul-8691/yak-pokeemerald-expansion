@@ -840,7 +840,7 @@ script EDIT_LEVEL_SCALING
 {
 	faceplayer
     //buffernumberstring(0, VAR_ROUTE113_STATE)
-    buffernumberstring(0, VAR_LEVEL_SCALING_STATE)
+    buffernumberstring(0, VAR_GAMEMODE_LEVEL_SCALING)
     msgbox(format("Level Scaling is: {STR_VAR_1}" ))
 
     msgbox(format("EDIT LEVEL SCALING?"), MSGBOX_YESNO)
@@ -849,7 +849,7 @@ script EDIT_LEVEL_SCALING
         msgbox(format("ADD +1\nLEVEL SCALING?"), MSGBOX_YESNO)
         if (var(VAR_RESULT))
         { 
-            addvar(VAR_LEVEL_SCALING_STATE, 1)
+            addvar(VAR_GAMEMODE_LEVEL_SCALING, 1)
             closemessage
             end
         }
@@ -857,7 +857,7 @@ script EDIT_LEVEL_SCALING
         msgbox(format("SUBTRACT -1\nLEVEL SCALING?"), MSGBOX_YESNO)
         if (var(VAR_RESULT))
         { 
-            subvar(VAR_LEVEL_SCALING_STATE, 1)
+            subvar(VAR_GAMEMODE_LEVEL_SCALING, 1)
             closemessage
             end
         }
@@ -865,7 +865,7 @@ script EDIT_LEVEL_SCALING
         msgbox(format("SET 0\nLEVEL SCALING?"), MSGBOX_YESNO)
         if (var(VAR_RESULT))
         { 
-            setvar(VAR_LEVEL_SCALING_STATE, 0)
+            setvar(VAR_GAMEMODE_LEVEL_SCALING, 0)
             closemessage
             end
         }

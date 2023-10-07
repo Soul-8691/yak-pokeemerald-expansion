@@ -225,7 +225,7 @@ script ALKHARID_GYM_ALI {
         msgbox(format("That move is called Power Gem.\pIt sparkles just as all our precious Gems around the palace do."))
         setvar(VAR_POKESCAPE_VARROCK_GYM_QUEST, 26)
         setflag(FLAG_BADGE04_GET)
-        addvar(VAR_LEVEL_SCALING_STATE, 1) //INCREASES LEVEL SCALING & SHOPS
+        addvar(VAR_GAMEMODE_LEVEL_SCALING, 1) //INCREASES LEVEL SCALING & SHOPS
         call(SetGymTrainers_VARROCK)
         hidenamebox
         release
@@ -448,6 +448,19 @@ script BARROWS_GUTHAN {
     faceplayer
     namebox("Guthan")
     msgbox(format("I am known simple as Guthan.\pFace me if you dare!"))
+    hidenamebox
+    closemessage
+    trainerbattle_no_intro(TRAINER_BARROWS_GUTHAN, msgbox(format("That was a very enjoyable battle!")))
+    release
+    end
+}
+
+
+script TEST_BATTLE {
+    lock
+    faceplayer
+    namebox("TEST")
+    msgbox(format("Face me if you dare!"))
     hidenamebox
     closemessage
     trainerbattle_no_intro(TRAINER_BARROWS_GUTHAN, msgbox(format("That was a very enjoyable battle!")))

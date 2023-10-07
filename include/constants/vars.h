@@ -123,9 +123,9 @@
 #define VAR_GOBLINVILLAGE_STATE                   0x4068 // Unused Var
 #define VAR_WILDERNESS_BLOCK_STATE                   0x4069
 #define VAR_DUNGEONEERING_DOOR_AsgarnianDungeon_STATE       0x406A // Unused Var
-#define VAR_OPENWORLD_STATE                   0x406B // Unused Var
+#define VAR_OPENWORLD_STATE                   0x406B ////Should remove and change this to a FLAG!!!
 #define VAR_ROUTE113_STATE                   0x406C // Unused Var
-#define VAR_LEVEL_SCALING_STATE                   0x406D // Unused Var
+#define VAR_GAMEMODE_LEVEL_SCALING                   0x406D // Unused Var
 #define VAR_EVOLUTION_MAP_STATE                   0x406E // Unused Var
 #define VAR_ROUTE116_STATE                   0x406F
 #define VAR_POKESCAPE_GAMEMODE_STATE                   0x4070 // Unused Var
@@ -136,7 +136,7 @@
 #define VAR_POKESCAPE_ALKHARID_GYM_QUEST                   0x4075 // Unused Var
 #define VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE                   0x4076 // Unused Var
 #define VAR_GAMEMODE_MONSTERS_STATE                   0x4077 // Unused Var
-#define VAR_ROUTE125_STATE                   0x4078 // Unused Var
+#define VAR_GAMEMODE_SCALE_EVOLUTION_STATE                   0x4078 // Unused Var
 #define VAR_ROUTE126_STATE                   0x4079 // Unused Var
 #define VAR_ROUTE127_STATE                   0x407A // Unused Var
 #define VAR_ROUTE128_STATE                   0x407B

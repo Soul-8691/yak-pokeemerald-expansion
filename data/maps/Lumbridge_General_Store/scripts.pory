@@ -2,7 +2,7 @@ mapscripts Lumbridge_General_Store_MapScripts {}
 
 script GeneralStoreShopScript {
     
-    switch (var(VAR_LEVEL_SCALING_STATE)){ 
+    switch (var(VAR_GAMEMODE_LEVEL_SCALING)){ 
 		case 0:
         case 1: 
             pokemart (STORE_GeneralStore_0) //0 BADGES

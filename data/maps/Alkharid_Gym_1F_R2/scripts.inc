@@ -214,7 +214,7 @@ ALKHARID_GYM_ALI_2:
 	msgbox ALKHARID_GYM_ALI_Text_5
 	setvar VAR_POKESCAPE_VARROCK_GYM_QUEST, 26
 	setflag FLAG_BADGE04_GET
-	addvar VAR_LEVEL_SCALING_STATE, 1
+	addvar VAR_GAMEMODE_LEVEL_SCALING, 1
 	call SetGymTrainers_VARROCK
 	hidenamebox
 	release
@@ -363,6 +363,18 @@ BARROWS_GUTHAN::
 	end
 
 
+TEST_BATTLE::
+	lock
+	faceplayer
+	namebox TEST_BATTLE_Text_0
+	msgbox TEST_BATTLE_Text_1
+	hidenamebox
+	closemessage
+	trainerbattle_no_intro TRAINER_BARROWS_GUTHAN, ALKHARID_GYM_ALI_Text_1
+	release
+	end
+
+
 QUEST_ALKHARID_GYM_1_Text_0:
 	.string "Osman$"
 
@@ -498,4 +510,10 @@ BARROWS_GUTHAN_Text_0:
 
 BARROWS_GUTHAN_Text_1:
 	.string "I am known simple as Guthan.\p"
+	.string "Face me if you dare!$"
+
+TEST_BATTLE_Text_0:
+	.string "TEST$"
+
+TEST_BATTLE_Text_1:
 	.string "Face me if you dare!$"

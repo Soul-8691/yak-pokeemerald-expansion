@@ -3,7 +3,7 @@ Lumbridge_General_Store_MapScripts::
 
 
 GeneralStoreShopScript::
-	switch VAR_LEVEL_SCALING_STATE
+	switch VAR_GAMEMODE_LEVEL_SCALING
 	case 0, GeneralStoreShopScript_2
 	case 1, GeneralStoreShopScript_2
 	case 2, GeneralStoreShopScript_3

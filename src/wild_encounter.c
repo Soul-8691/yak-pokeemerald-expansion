@@ -25,6 +25,8 @@
 #include "constants/weather.h"
 #include "constants/vars.h"
 
+extern struct Evolution gEvolutionTable[][EVOS_PER_MON];
+
 extern const u8 EventScript_RepelWoreOff[];
 
 #define MAX_ENCOUNTER_RATE 2880
@@ -346,77 +348,77 @@ static u8 ChooseWildMonLevel(const struct WildPokemon *wildPokemon)
 
 //SWAP TO CASE?
 //0 BADGES && Lower than LEVEL 10.
-        if (VarGet(VAR_LEVEL_SCALING_STATE) == 0)
+        if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 0)
         {
             curvedLevel = 5;
             min = 1;
             max = 5;
         }
 //0 BADGES
-        if (VarGet(VAR_LEVEL_SCALING_STATE) == 1)
+        if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 1)
         {
             curvedLevel = 10;
             min = 5;
             max = 12;
         }
 //1 BADGE
-        if (VarGet(VAR_LEVEL_SCALING_STATE) == 2)
+        if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 2)
         {
             curvedLevel = 15;
             min = 14;
             max = 20;
         }
 //2 BADGE
-        if (VarGet(VAR_LEVEL_SCALING_STATE) == 3)
+        if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 3)
         {
             curvedLevel = 20;
             min = 14;
             max = 20;
         }
 //3 BADGE
-        if (VarGet(VAR_LEVEL_SCALING_STATE) == 4)
+        if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 4)
         {
             curvedLevel = 25;
             min = 14;
             max = 20;
         }
 //4 BADGE
-        if (VarGet(VAR_LEVEL_SCALING_STATE) == 5)
+        if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 5)
         {
             curvedLevel = 30;
             min = 20;
             max = 30;
         }
 //5 BADGE
-        if (VarGet(VAR_LEVEL_SCALING_STATE) == 6)
+        if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 6)
         {
             curvedLevel = 35;
             min = 25;
             max = 35;
         }
 //6 BADGE
-        if (VarGet(VAR_LEVEL_SCALING_STATE) == 7)
+        if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 7)
         {
             curvedLevel = 40;
             min = 30;
             max = 40;
         }
 //7 BADGE
-        if (VarGet(VAR_LEVEL_SCALING_STATE) == 8)
+        if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 8)
         {
             curvedLevel = 45;
             min = 35;
             max = 45;
         }
 //8 BADGE
-        if (VarGet(VAR_LEVEL_SCALING_STATE) == 9)
+        if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 9)
         {
             curvedLevel = 50;
             min = 40;
             max = 50;
         }
 //ELITE 4 / CHAMPION BEAT
-        if (VarGet(VAR_LEVEL_SCALING_STATE) >= 10)
+        if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) >= 10)
         {
             curvedLevel = 55;
             min = 45;
@@ -567,23 +569,31 @@ static void CreateWildMon(u16 species, u8 level)
         return;
     }
 
-//TESTING - EVOLVE MONS IN THE WILD AT CERTAIN LEVELS.
-    if (gSaveBlock2Ptr->GameMode == 1) //OPEN WORLD SCALING MODE
+
+//EVOLVE MONS IN THE WILD AT CERTAIN LEVELS.
+//If GameMode is "OPEN WORLD" and "SCALE EVOLUTION" is true, then if mons meet evolution requirements they will evolve.
+    if (gSaveBlock2Ptr->GameMode == 1) //OPEN WORLD MODE
     {
-        /*
-        if (VarGet(VAR_LEVEL_SCALING_STATE) >= 1) //IF 1 or GREATER THAN 1
+        if (VarGet(VAR_GAMEMODE_SCALE_EVOLUTION_STATE) == 1)
         {
-            if(gEvolutionTable[species][0].param <= level) //LEVEL IS READY TO EVOLVE.
+                //Checks Evolution Level once.
+            if(gEvolutionTable[species][0].param && gEvolutionTable[species][0].param <= level)
             {
                 species = gEvolutionTable[species][0].targetSpecies;
-                level = 1;
+                //Checks Evolution Level twice.
+                if(gEvolutionTable[species][0].param && gEvolutionTable[species][0].param <= level)
+                {
+                    species = gEvolutionTable[species][0].targetSpecies;
+                }
             }
         }
-        */
+        
     }
 
     CreateMonWithNature(&gEnemyParty[0], species, level, USE_RANDOM_IVS, PickWildMonNature());
 }
+
+
 
 static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 area, u8 flags)
 {

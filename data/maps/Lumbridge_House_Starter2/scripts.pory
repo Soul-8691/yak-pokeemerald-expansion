@@ -27,7 +27,7 @@ script GAMEMODE_CHECK_NEWGAME_ITEMS
         if (var(VAR_OPENWORLD_STATE) == 0) //if beginning items HAVE NOT been recieved.
         {
             lockall
-            //addvar(VAR_LEVEL_SCALING_STATE, 1) //TEMP
+            //addvar(VAR_GAMEMODE_LEVEL_SCALING, 1) //TEMP
             msgbox(format("Welcome to PokeScape OPEN WORLD mode."))
             msgbox(format("Please set the time."))
             closemessage

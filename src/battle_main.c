@@ -1860,77 +1860,77 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 
 
 //0 BADGES && Lower than LEVEL 10.
-    if (VarGet(VAR_LEVEL_SCALING_STATE) == 0)
+    if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 0)
     {
         //dynamicLevel = 5;
         min = 3;
         max = 8;
     }
 //0 BADGES
-    if (VarGet(VAR_LEVEL_SCALING_STATE) == 1)
+    if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 1)
     {
         //dynamicLevel = 15;
         min = 7;
         max = 13;
     }
 //1 BADGE
-    if (VarGet(VAR_LEVEL_SCALING_STATE) == 2)
+    if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 2)
     {
         dynamicLevel = 22;
         min = 18;
         max = 25;
     }
 //2 BADGE
-    if (VarGet(VAR_LEVEL_SCALING_STATE) == 3)
+    if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 3)
     {
         dynamicLevel = 30;
         min = 20;
         max = 30;
     }
 //3 BADGE
-    if (VarGet(VAR_LEVEL_SCALING_STATE) == 4)
+    if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 4)
     {
         dynamicLevel = 35;
         min = 25;
         max = 35;
     }
 //4 BADGE
-    if (VarGet(VAR_LEVEL_SCALING_STATE) == 5)
+    if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 5)
     {
         dynamicLevel = 40;
         min = 30;
         max = 40;
     }
 //5 BADGE
-    if (VarGet(VAR_LEVEL_SCALING_STATE) == 6)
+    if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 6)
     {
         dynamicLevel = 45;
         min = 35;
         max = 45;
     }
 //6 BADGE
-    if (VarGet(VAR_LEVEL_SCALING_STATE) == 7)
+    if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 7)
     {
         dynamicLevel = 50;
         min = 40;
         max = 50;
     }
 //7 BADGE
-    if (VarGet(VAR_LEVEL_SCALING_STATE) == 8)
+    if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 8)
     {
         dynamicLevel = 55;
         min = 45;
         max = 55;
     }
 //8 BADGE
-    if (VarGet(VAR_LEVEL_SCALING_STATE) == 9)
+    if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) == 9)
     {
         dynamicLevel = 60;
         min = 50;
         max = 60;
     }
 //ELITE 4 / CHAMPION BEAT
-    if (VarGet(VAR_LEVEL_SCALING_STATE) >= 10)
+    if (VarGet(VAR_GAMEMODE_LEVEL_SCALING) >= 10)
     {
         dynamicLevel = 65;
         min = 55;
@@ -2047,7 +2047,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 //IF GAMEMODE is OPENWORLD
                 if (gSaveBlock2Ptr->GameMode == 1)
                 {
-                    CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    //CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    if(HasLevelEvolution(partyData[i].species, dynamicLevel))
+						CreateMon(&party[i], HasLevelEvolution(partyData[i].species, dynamicLevel), dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+					else
+						CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
 //IF GAMEMODE is STORYMODE
                 else
@@ -5672,6 +5676,7 @@ bool32 IsWildMonSmart(void)
 
 u16 HasLevelEvolution(u16 species, u8 level)
 {
+    //If level is equal or greater for evolution to happen.
 	if(gEvolutionTable[species][0].param && gEvolutionTable[species][0].param <= level)
 	{
 		if(HasLevelEvolution(gEvolutionTable[species][0].targetSpecies, level))
@@ -5681,3 +5686,5 @@ u16 HasLevelEvolution(u16 species, u8 level)
 	}
 	return 0;
 }
+
+

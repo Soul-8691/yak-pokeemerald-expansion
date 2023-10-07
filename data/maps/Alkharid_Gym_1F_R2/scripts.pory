@@ -296,7 +296,6 @@ script MOVERELEARNER_NPC
 {
     faceplayer
     //namebox ("")
-
     msgbox(format("Would you like re-learn a move that you've forgotten?"), MSGBOX_YESNO)
 		if (var(VAR_RESULT)){
 			msgbox(format("Please select a Monster you wish to relearn a move with."))

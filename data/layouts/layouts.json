@@ -7494,8 +7494,8 @@
     {
       "id": "LAYOUT_JATIZSO_BANK",
       "name": "Jatizso_Bank_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 10,
+      "height": 10,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Bank",
       "border_filepath": "data/layouts/Jatizso_Bank/border.bin",

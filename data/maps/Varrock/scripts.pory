@@ -836,11 +836,9 @@ script GAMEMODE_MONSTER_OR_POKEMON_SCRIPT
 
 
 
-
-script STARTER_MON_SCRIPT
+script EDIT_LEVEL_SCALING
 {
 	faceplayer
-
     //buffernumberstring(0, VAR_ROUTE113_STATE)
     buffernumberstring(0, VAR_LEVEL_SCALING_STATE)
     msgbox(format("Level Scaling is: {STR_VAR_1}" ))
@@ -872,12 +870,10 @@ script STARTER_MON_SCRIPT
             end
         }
     }
-
     //buffernumberstring(2,VAR_RESULT)
     //setflag (FLAG_SYS_POKEMON_GET)
     //special (ChooseStarter)
     //waitstate
-
     release
 	end
 }

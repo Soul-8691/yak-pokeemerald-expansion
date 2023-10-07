@@ -1500,6 +1500,7 @@ static void Task_NewGamePokeScape_STORYMODE_YesNo_OPTIONS(u8 taskId)
         case 0:
             PlaySE(SE_SELECT);
             gSaveBlock2Ptr->GameMode = 0;  //set storymode
+            gSaveBlock2Ptr->regionLocation = 0; //Sets Lumrbridge as the location
             NewGameBirchSpeech_ClearGenderWindow(3, 1);
             FillWindowPixelBuffer(0, PIXEL_FILL(1));
             gTasks[taskId].func = Task_NewGamePokeScape_chooseAppearance;         //GO TO _________

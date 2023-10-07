@@ -2026,7 +2026,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 //IF GAMEMODE is OPENWORLD
                 if (gSaveBlock2Ptr->GameMode == 1)
                 {
-                    CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    //CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    if(HasLevelEvolution(partyData[i].species, dynamicLevel))
+						CreateMon(&party[i], HasLevelEvolution(partyData[i].species, dynamicLevel), dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+					else
+						CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
 //IF GAMEMODE is STORYMODE
                 else
@@ -2078,7 +2082,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 //IF GAMEMODE is OPENWORLD
                 if (gSaveBlock2Ptr->GameMode == 1)
                 {
-                    CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    //CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    if(HasLevelEvolution(partyData[i].species, dynamicLevel))
+						CreateMon(&party[i], HasLevelEvolution(partyData[i].species, dynamicLevel), dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+					else
+						CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
 //IF GAMEMODE is STORYMODE
                 else
@@ -2101,7 +2109,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 //IF GAMEMODE is OPENWORLD
                 if (gSaveBlock2Ptr->GameMode == 1)
                 {
-                    CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    //CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    if(HasLevelEvolution(partyData[i].species, dynamicLevel))
+						CreateMon(&party[i], HasLevelEvolution(partyData[i].species, dynamicLevel), dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+					else
+						CreateMon(&party[i], partyData[i].species, dynamicLevel, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
 //IF GAMEMODE is STORYMODE
                 else
@@ -5677,7 +5689,7 @@ bool32 IsWildMonSmart(void)
 u16 HasLevelEvolution(u16 species, u8 level)
 {
     //If level is equal or greater for evolution to happen.
-	if(gEvolutionTable[species][0].param && gEvolutionTable[species][0].param <= level)
+	if(gEvolutionTable[species][0].param && gEvolutionTable[species][0].param <= level) //change to store in a var for multiple
 	{
 		if(HasLevelEvolution(gEvolutionTable[species][0].targetSpecies, level))
 			return HasLevelEvolution(gEvolutionTable[species][0].targetSpecies, level);

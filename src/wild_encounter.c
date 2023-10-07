@@ -574,7 +574,7 @@ static void CreateWildMon(u16 species, u8 level)
 //If GameMode is "OPEN WORLD" and "SCALE EVOLUTION" is true, then if mons meet evolution requirements they will evolve.
     if (gSaveBlock2Ptr->GameMode == 1) //OPEN WORLD MODE
     {
-        if (VarGet(VAR_GAMEMODE_SCALE_EVOLUTION_STATE) == 1)
+        if (FlagGet(FLAG_GAMEMODE_SCALE_EVOLUTION) == 1)
         {
                 //Checks Evolution Level once.
             if(gEvolutionTable[species][0].param && gEvolutionTable[species][0].param <= level)

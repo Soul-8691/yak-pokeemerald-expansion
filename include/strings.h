@@ -3335,4 +3335,18 @@ extern const u8 gText_SubQuest2_Desc18[];
 extern const u8 gText_SubQuest2_Desc19[];
 extern const u8 gText_SubQuest2_Desc20[];
 
+extern const u8 gText_FollowerOff[];
+extern const u8 gText_FollowerOn[];
+extern const u8 gText_DifficultyEasy[];
+extern const u8 gText_DifficultyNormal[];
+extern const u8 gText_DifficultyHard[];
+extern const u8 gText_SmallDot[];
+extern const u8 gText_LargeDot[];
+extern const u8 gText_PageNav[];
+extern const u8 gText_Follower[];
+extern const u8 gText_Difficulty[];
+extern const u8 gText_OpenWorldOptionsMenu[];
+
+
+
 #endif // GUARD_STRINGS_H

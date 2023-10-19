@@ -468,7 +468,7 @@ static u16 GetCurrentMapWildMonHeaderId(void)
             gWildMonHeaders[i].mapNum == gSaveBlock1Ptr->location.mapNum)
         {
         //gamemode: If Pokemon, 1; or Runescape Monsters, 0; are set to spawn.
-            if (VarGet(VAR_GAMEMODE_MONSTERS_STATE) == 1)
+            if (FlagGet(FLAG_GAMEMODE_MONSTER_SPAWN) == 1)
             {
                 i += 1; //add 1 to the encounter table to go to the next map table.
             }

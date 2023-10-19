@@ -810,22 +810,22 @@ script NPC_SLAYERMASTERLIST
 script GAMEMODE_MONSTER_OR_POKEMON_SCRIPT
 {
     faceplayer
-    buffernumberstring(0, VAR_GAMEMODE_MONSTERS_STATE)
-    msgbox(format("The var is currently: {STR_VAR_1}" ))
+    //buffernumberstring(0, FLAG_GAMEMODE_MONSTER_SPAWN)
+    //msgbox(format("The var is currently: {STR_VAR_1}" ))
     msgbox(format("EDIT GAMEMODE?"), MSGBOX_YESNO)
     if (var(VAR_RESULT))
     { 
         msgbox(format("SPAWN POKEMON?"), MSGBOX_YESNO)
         if (var(VAR_RESULT))
         { 
-            setvar(VAR_GAMEMODE_MONSTERS_STATE, 1)
+            setflag(FLAG_GAMEMODE_MONSTER_SPAWN)
             closemessage
             end
         }
         msgbox(format("SPAWN MONSTERS?"), MSGBOX_YESNO)
         if (var(VAR_RESULT))
         { 
-            setvar(VAR_GAMEMODE_MONSTERS_STATE, 0)
+            setflag(FLAG_GAMEMODE_MONSTER_SPAWN)
             closemessage
             end
         }

@@ -2140,3 +2140,6 @@ const u8 gText_DifficultyEasy[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}EASY");
 const u8 gText_DifficultyNormal[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}NORMAL");
 const u8 gText_DifficultyHard[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}HARD");
 const u8 gText_OpenWorldOptionsMenu[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}OPEN WORLD");
+const u8 gText_PkmnOrMons[] = _("SPAWN");
+const u8 gText_PokemonMode[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}POKEMON");
+const u8 gText_MonsterMode[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}MONSTER");

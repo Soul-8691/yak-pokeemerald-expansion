@@ -131,6 +131,7 @@
 #define FLAG_RECEIVED_YAK            0x75 
 
 #define FLAG_GAMEMODE_SCALE_EVOLUTION           0x96 
+#define FLAG_GAMEMODE_MONSTER_SPAWN                   0x79
 
  // Always set after new game, object it hides is added directly
 #define FLAG_MET_RIVAL_MOM                   0x57
@@ -160,7 +161,7 @@
 #define FLAG_CANCEL_BATTLE_ROOM_CHALLENGE    0x77
 
 #define FLAG_LANDMARK_MIRAGE_TOWER           0x78
-#define FLAG_RECEIVED_TM31                   0x79
+
 #define FLAG_RECEIVED_HM03                   0x7A
 #define FLAG_RECEIVED_HM08                   0x7B
 #define FLAG_REGISTER_RIVAL_POKENAV          0x7C

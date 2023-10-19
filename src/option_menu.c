@@ -30,6 +30,7 @@ enum
     TD_FRAMETYPE,
     TD_FOLLOWER,
     TD_DIFFICULTY,
+    TD_PKMNORMONS,
 };
 
 // Menu items Pg1
@@ -50,6 +51,7 @@ enum
     MENUITEM_OPENWORLDOPTIONS,
     MENUITEM_FOLLOWER,
     MENUITEM_DIFFICULTY,
+    MENUITEM_PKMNORMONS,
     MENUITEM_CANCEL_PG2,
     MENUITEM_COUNT_PG2,
 };
@@ -71,6 +73,8 @@ enum
 //Pg2
 #define YPOS_FOLLOWER        (MENUITEM_FOLLOWER * 16)
 #define YPOS_DIFFICULTY      (MENUITEM_DIFFICULTY * 16)
+#define YPOS_PKMNORMONS      (MENUITEM_PKMNORMONS * 16)
+
 
 #define PAGE_COUNT  2
 
@@ -90,6 +94,8 @@ static u8   Follower_ProcessInput(u8 selection);
 static void Follower_DrawChoices(u8 selection);
 static u8   Difficulty_ProcessInput(u8 selection);
 static void Difficulty_DrawChoices(u8 selection);
+static u8   PkmnOrMons_ProcessInput(u8 selection);
+static void PkmnOrMons_DrawChoices(u8 selection);
 static u8   BattleStyle_ProcessInput(u8 selection);
 static void BattleStyle_DrawChoices(u8 selection);
 static u8   Sound_ProcessInput(u8 selection);
@@ -125,6 +131,7 @@ static const u8 *const sOptionMenuItemsNames_Pg2[MENUITEM_COUNT_PG2] =
     [MENUITEM_OPENWORLDOPTIONS]      = gText_OpenWorldOptionsMenu,
     [MENUITEM_FOLLOWER]        = gText_Follower,
     [MENUITEM_DIFFICULTY]      = gText_Difficulty,
+    [MENUITEM_PKMNORMONS]      = gText_PkmnOrMons,
     [MENUITEM_CANCEL_PG2]      = gText_OptionMenuCancel,
 };
 
@@ -203,6 +210,8 @@ static void ReadAllCurrentSettings(u8 taskId)
     gTasks[taskId].data[TD_FRAMETYPE] = gSaveBlock2Ptr->optionsWindowFrameType;
     gTasks[taskId].data[TD_FOLLOWER] = FlagGet(FLAG_GAMEMODE_SCALE_EVOLUTION);
     gTasks[taskId].data[TD_DIFFICULTY] = VarGet(VAR_GAMEMODE_LEVEL_SCALING);
+    gTasks[taskId].data[TD_PKMNORMONS] = FlagGet(FLAG_GAMEMODE_MONSTER_SPAWN);
+    
 }
 
 static void DrawOptionsPg1(u8 taskId)
@@ -223,6 +232,7 @@ static void DrawOptionsPg2(u8 taskId)
     ReadAllCurrentSettings(taskId);
     Follower_DrawChoices(gTasks[taskId].data[TD_FOLLOWER]);
     Difficulty_DrawChoices(gTasks[taskId].data[TD_DIFFICULTY]);
+    PkmnOrMons_DrawChoices(gTasks[taskId].data[TD_PKMNORMONS]);    
     HighlightOptionMenuItem(gTasks[taskId].data[TD_MENUSELECTION]);
     CopyWindowToVram(WIN_OPTIONS, COPYWIN_FULL);
 }
@@ -524,7 +534,14 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
 
             if (previousOption != gTasks[taskId].data[TD_DIFFICULTY])
                 Difficulty_DrawChoices(gTasks[taskId].data[TD_DIFFICULTY]);
+        case MENUITEM_PKMNORMONS:
+            previousOption = gTasks[taskId].data[TD_PKMNORMONS];
+            gTasks[taskId].data[TD_PKMNORMONS] = PkmnOrMons_ProcessInput(gTasks[taskId].data[TD_PKMNORMONS]);
+
+            if (previousOption != gTasks[taskId].data[TD_PKMNORMONS])
+                PkmnOrMons_DrawChoices(gTasks[taskId].data[TD_PKMNORMONS]);
             break;
+            
         default:
             return;
         }
@@ -548,6 +565,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsWindowFrameType = gTasks[taskId].data[TD_FRAMETYPE];
     gTasks[taskId].data[TD_FOLLOWER] == 0 ? FlagClear(FLAG_GAMEMODE_SCALE_EVOLUTION) : FlagSet(FLAG_GAMEMODE_SCALE_EVOLUTION);
     VarSet(VAR_GAMEMODE_LEVEL_SCALING, gTasks[taskId].data[TD_DIFFICULTY]);
+    gTasks[taskId].data[TD_PKMNORMONS] == 0 ? FlagClear(FLAG_GAMEMODE_MONSTER_SPAWN) : FlagSet(FLAG_GAMEMODE_MONSTER_SPAWN);
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
     gTasks[taskId].func = Task_OptionMenuFadeOut;
 }
@@ -677,6 +695,27 @@ static void Follower_DrawChoices(u8 selection)
     DrawOptionMenuChoice(gText_FollowerOn, GetStringRightAlignXOffset(FONT_NORMAL, gText_FollowerOn, 198), YPOS_FOLLOWER, styles[1]);
 }
 
+static u8 PkmnOrMons_ProcessInput(u8 selection)
+{
+    if (JOY_NEW(DPAD_LEFT | DPAD_RIGHT))
+    {
+        selection ^= 1;
+        sArrowPressed = TRUE;
+    }
+
+    return selection;
+}
+
+static void PkmnOrMons_DrawChoices(u8 selection)
+{
+    u8 styles[2];
+    styles[0] = 0;
+    styles[1] = 0;
+    styles[selection] = 1;
+    DrawOptionMenuChoice(gText_MonsterMode, 104, YPOS_PKMNORMONS, styles[0]);
+    DrawOptionMenuChoice(gText_PokemonMode, GetStringRightAlignXOffset(FONT_NORMAL, gText_PokemonMode, 198), YPOS_PKMNORMONS, styles[1]);
+}
+
 static u8 Difficulty_ProcessInput(u8 selection)
 {
     if (JOY_NEW(DPAD_RIGHT))
@@ -735,6 +774,8 @@ static void Difficulty_DrawChoices(u8 selection)
 
     DrawOptionMenuChoice(gText_DifficultyHard, GetStringRightAlignXOffset(FONT_NORMAL, gText_DifficultyHard, 198), YPOS_DIFFICULTY, styles[2]);
 }
+
+
 
 static u8 BattleStyle_ProcessInput(u8 selection)
 {

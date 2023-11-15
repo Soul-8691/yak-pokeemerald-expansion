@@ -131,3 +131,17 @@ script ENCOUNTER_JAD_GYM {
 	}
 	end
 }
+
+
+
+
+//Mod Sarnie
+script BATTLE_MOD_SARNIE
+{
+    trainerbattle_single(TRAINER_MOD_SARNIE, format("I just got the Fire Cape!\pLet me try it out on you!"),format("Wow."))
+    namebox ("Mod Sarnie")
+    msgbox(format("You should try the special fight wave challenges.\pYou could get a Fire Cape like me."))
+	hidenamebox
+    release
+	end
+}

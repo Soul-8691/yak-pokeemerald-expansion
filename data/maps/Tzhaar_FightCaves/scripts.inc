@@ -139,6 +139,15 @@ ENCOUNTER_JAD_GYM_5:
 	end
 
 
+BATTLE_MOD_SARNIE::
+	trainerbattle_single TRAINER_MOD_SARNIE, BATTLE_MOD_SARNIE_Text_0, BATTLE_MOD_SARNIE_Text_1
+	namebox BATTLE_MOD_SARNIE_Text_2
+	msgbox BATTLE_MOD_SARNIE_Text_3
+	hidenamebox
+	release
+	end
+
+
 NPC_TZHAAR_GYM_TOKHAAR_Text_0:
 	.string "TokHaar$"
 
@@ -192,3 +201,18 @@ ENCOUNTER_JAD_GYM_Text_4:
 
 ENCOUNTER_JAD_GYM_Text_5:
 	.string "The cave has caved in.$"
+
+BATTLE_MOD_SARNIE_Text_0:
+	.string "I just got the Fire Cape!\p"
+	.string "Let me try it out on you!$"
+
+BATTLE_MOD_SARNIE_Text_1:
+	.string "Wow.$"
+
+BATTLE_MOD_SARNIE_Text_2:
+	.string "Mod Sarnie$"
+
+BATTLE_MOD_SARNIE_Text_3:
+	.string "You should try the special fight wave\n"
+	.string "challenges.\p"
+	.string "You could get a Fire Cape like me.$"

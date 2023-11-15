@@ -3878,3 +3878,30 @@ static const struct TrainerMonNoItemCustomMoves sParty_BARROWS_GUTHAN[] = {
     .moves = {MOVE_POWER_GEM, MOVE_BOUNCE, MOVE_MUD_BOMB, MOVE_BUBBLE_BEAM}
     }  
 };
+
+static const struct TrainerMonItemDefaultMoves sParty_MOD_SARNIE[] = {
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_ANGRY_RAT,
+    .heldItem = ITEM_FIRECAPE
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_ALBINO_RAT,
+    .heldItem = ITEM_FIRECAPE
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_GIANT_RAT_BLESSED_FORM,
+    .heldItem = ITEM_FIRECAPE
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_ENT,
+    .heldItem = ITEM_FIRECAPE
+    }
+};

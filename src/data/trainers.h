@@ -85,7 +85,8 @@ const struct Trainer gTrainers[] =
         .party = {.NoItemDefaultMoves = sParty_Goblin3},
     },
 
-    [TRAINER_GOBLIN_4_ROUTE1] ={
+    [TRAINER_GOBLIN_4_ROUTE1] = 
+    {
         .partyFlags = F_TRAINER_PARTY_HELD_ITEM,
         .trainerClass = TRAINER_CLASS_GOBLIN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
@@ -228,7 +229,6 @@ const struct Trainer gTrainers[] =
         .partySize = ARRAY_COUNT(sParty_Scammer_Route4),
         .party = {.ItemDefaultMoves = sParty_Scammer_Route4},
         .scaling = FALSE,
-
     },
     //route 6
     [TRAINER_MUGGER_ROUTE6] =

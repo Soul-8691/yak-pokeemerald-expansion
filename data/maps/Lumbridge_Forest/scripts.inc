@@ -4,6 +4,20 @@ Lumbridge_Forest_MapScripts::
 
 Lumbridge_Forest_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 6
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq Lumbridge_Forest_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	return
+
+Lumbridge_Forest_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
+	call LumForest_STATE
+	return
+
+
+LumForest_STATE::
+	setobjectxyperm 5, 32, 15
+	setobjectmovementtype 5, MOVEMENT_TYPE_FACE_DOWN
+	setobjectxyperm 4, 33, 15
+	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
 	return
 
 

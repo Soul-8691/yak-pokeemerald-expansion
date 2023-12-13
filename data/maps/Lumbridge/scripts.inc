@@ -15,24 +15,28 @@ Lumbridge_MapScripts_MAP_SCRIPT_ON_TRANSITION_1:
 
 
 OPENWORLD_STATE_LUMBRIDGE::
-	setobjectxyperm 14, 41, 20
+	setobjectxyperm 14, 43, 20
 	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 23, 38, 4
+	setobjectxyperm 23, 40, 4
 	setobjectmovementtype 23, MOVEMENT_TYPE_WANDER_AROUND
-	setobjectxyperm 3, 3, 3
+	setobjectxyperm 3, 13, 7
 	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
-	setobjectxyperm 13, 2, 3
+	setobjectxyperm 13, 12, 7
 	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm 21, 33, 11
+	setobjectxyperm 21, 35, 11
 	setobjectmovementtype 21, MOVEMENT_TYPE_WANDER_AROUND
-	setobjectxyperm 11, 50, 21
+	setobjectxyperm 11, 52, 21
 	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 12, 37, 33
+	setobjectxyperm 12, 39, 33
 	setobjectmovementtype 12, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 1, 6, 12
+	setobjectxyperm 1, 8, 12
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 2, 6, 13
+	setobjectxyperm 2, 8, 13
 	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
+	setobjectxyperm 15, 26, 39
+	setobjectmovementtype 15, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 18, 35, 42
+	setobjectmovementtype 18, MOVEMENT_TYPE_WANDER_AROUND
 	return
 
 
@@ -541,41 +545,45 @@ MoveNPCsAfterEvents_Lumbridge_3:
 MoveNPCsAfterEvents_Lumbridge_4:
 	setobjectxyperm 14, 41, 20
 	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 23, 38, 4
+	setobjectxyperm 23, 40, 4
 	setobjectmovementtype 23, MOVEMENT_TYPE_WANDER_AROUND
-	setobjectxyperm 3, 3, 3
+	setobjectxyperm 3, 13, 7
 	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
-	setobjectxyperm 13, 2, 3
+	setobjectxyperm 13, 12, 7
 	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm 21, 33, 11
+	setobjectxyperm 21, 35, 11
 	setobjectmovementtype 21, MOVEMENT_TYPE_WANDER_AROUND
-	setobjectxyperm 11, 50, 21
+	setobjectxyperm 11, 52, 21
 	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 1, 6, 12
+	setobjectxyperm 1, 8, 12
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 2, 6, 13
+	setobjectxyperm 2, 8, 13
 	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
 	goto MoveNPCsAfterEvents_Lumbridge_1
 
 MoveNPCsAfterEvents_Lumbridge_5:
-	setobjectxyperm 14, 41, 20
+	setobjectxyperm 14, 43, 20
 	setobjectmovementtype 14, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 23, 38, 4
+	setobjectxyperm 23, 40, 4
 	setobjectmovementtype 23, MOVEMENT_TYPE_WANDER_AROUND
-	setobjectxyperm 3, 3, 3
+	setobjectxyperm 3, 13, 7
 	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_LEFT
-	setobjectxyperm 13, 2, 3
+	setobjectxyperm 13, 12, 7
 	setobjectmovementtype 13, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm 21, 33, 11
+	setobjectxyperm 21, 35, 11
 	setobjectmovementtype 21, MOVEMENT_TYPE_WANDER_AROUND
-	setobjectxyperm 11, 50, 21
+	setobjectxyperm 11, 52, 21
 	setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 12, 37, 33
+	setobjectxyperm 12, 39, 33
 	setobjectmovementtype 12, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 1, 6, 12
+	setobjectxyperm 1, 8, 12
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 2, 6, 13
+	setobjectxyperm 2, 8, 13
 	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
+	setobjectxyperm 15, 26, 39
+	setobjectmovementtype 15, MOVEMENT_TYPE_WANDER_AROUND
+	setobjectxyperm 18, 35, 42
+	setobjectmovementtype 18, MOVEMENT_TYPE_WANDER_AROUND
 	goto MoveNPCsAfterEvents_Lumbridge_1
 
 

@@ -3,7 +3,27 @@
 mapscripts Lumbridge_Forest_MapScripts {
 MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 6) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
+        if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY
+    	{
+            call(LumForest_STATE)
+    	}
+		else
+		{
+			//call(OPENWORLD_STATE_LumForest)
+		}
     }
+}
+
+script LumForest_STATE{
+	//switch (var(VAR_POKESCAPE_WIZARDS_TOWER_STATE)){ 
+		//case 0: 
+            setobjectxyperm(5, 32, 15)
+            setobjectmovementtype(5,MOVEMENT_TYPE_FACE_DOWN)
+            setobjectxyperm(4, 33, 15)
+            setobjectmovementtype(4,MOVEMENT_TYPE_FACE_DOWN)
+
+			return
+    //}
 }
 
 

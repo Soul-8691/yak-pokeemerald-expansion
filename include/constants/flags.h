@@ -1210,8 +1210,8 @@
 #define FLAG_ITEM_ROUTE33_1                  0x466 // Unused Flag, leftover from the Ruby Magma hideout
 #define FLAG_ITEM_ROUTE19_1                   0x467 // Unused Flag, leftover from the Ruby Magma hideout
 #define FLAG_ITEM_LUMBRIDGEFOREST_2                                           0x468 // Unused Flag
-#define FLAG_UNUSED_0x468                                           0x468 // Unused Flag
-#define FLAG_ITEM_MT_PYRE_2F_ULTRA_BALL                             0x469
+#define FLAG_ITEM_PRISMATIC_STAR                                           0x468 // Unused Flag
+#define FLAG_ITEM_LUMBRIDGE_FOREST_CABBAGE                             0x469
 #define FLAG_ITEM_MT_PYRE_4F_SEA_INCENSE                            0x46A
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_WEST_MAX_REVIVE                 0x46B
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_NUGGET                           0x46C

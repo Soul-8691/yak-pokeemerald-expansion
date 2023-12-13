@@ -378,6 +378,13 @@
       "elevation": 0,
       "dest_map": "MAP_CORPOREAL_BEAST_LAIR",
       "dest_warp_id": 0
+    },
+    {
+      "x": 46,
+      "y": 58,
+      "elevation": 0,
+      "dest_map": "MAP_LUMBRIDGE_FOREST",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

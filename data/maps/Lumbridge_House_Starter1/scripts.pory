@@ -161,6 +161,12 @@ script ITEM_LUMBRIDGE_CAKE
     end
 }
 
+script ITEM_LUMBRIDGE_PRISMATIC_STAR
+{
+    finditem(ITEM_PRISMATIC_STAR)
+    end
+}
+
 script ITEM_ROUTE1_DEATH_RUNE
 {
     finditem(ITEM_EARTH_RUNE)
@@ -348,5 +354,11 @@ script ITEM_PORTSARIM_ITEM_SPIRIT_SHARD
 script ITEM_LUMBRIDGESWAMP_ITEM_SPIRIT_SHARD
 {
     finditem(ITEM_SPIRIT_SHARD)
+    end
+}
+
+script ITEM_LUMBRIDGE_FOREST_CABBAGE
+{
+    finditem(ITEM_CABBAGE)
     end
 }

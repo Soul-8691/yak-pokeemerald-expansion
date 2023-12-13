@@ -4414,7 +4414,7 @@
     {
       "id": "LAYOUT_LUMBRIDGE",
       "name": "Lumbridge_Layout",
-      "width": 62,
+      "width": 64,
       "height": 52,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Lumbridge",
@@ -5197,7 +5197,7 @@
       "width": 50,
       "height": 50,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
-      "secondary_tileset": "gTileset_Draynor",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp",
       "border_filepath": "data/layouts/Lumbridge_Forest/border.bin",
       "blockdata_filepath": "data/layouts/Lumbridge_Forest/map.bin"
     },
@@ -7504,7 +7504,7 @@
     {
       "id": "LAYOUT_CORPOREAL_BEAST_LAIR",
       "name": "Corporeal_Beast_Lair_Layout",
-      "width": 40,
+      "width": 46,
       "height": 20,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_PokeScape_Caves",

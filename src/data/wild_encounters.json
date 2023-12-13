@@ -13611,62 +13611,62 @@
             "mons": [
               {
                 "min_level": 7,
-                "max_level": 14,
+                "max_level": 11,
                 "species": "SPECIES_PLANT_STRANGE_FORM"
               },
               {
                 "min_level": 7,
-                "max_level": 14,
+                "max_level": 11,
                 "species": "SPECIES_SPIDER_GIANT_FORM"
               },
               {
                 "min_level": 7,
-                "max_level": 14,
+                "max_level": 11,
                 "species": "SPECIES_PLANT_STRANGE_FORM"
               },
               {
                 "min_level": 7,
-                "max_level": 14,
+                "max_level": 11,
                 "species": "SPECIES_SPIDERLING"
               },
               {
                 "min_level": 7,
-                "max_level": 14,
+                "max_level": 10,
                 "species": "SPECIES_ZYGOMITE"
               },
               {
                 "min_level": 7,
-                "max_level": 14,
+                "max_level": 12,
                 "species": "SPECIES_PLANT_STRANGE_FORM"
               },
               {
                 "min_level": 7,
-                "max_level": 14,
+                "max_level": 11,
                 "species": "SPECIES_CHOMPY"
               },
               {
                 "min_level": 7,
-                "max_level": 15,
+                "max_level": 12,
                 "species": "SPECIES_GIANT_RAT_NORMAL_FORM"
               },
               {
                 "min_level": 7,
-                "max_level": 15,
+                "max_level": 12,
                 "species": "SPECIES_CHOMPY"
               },
               {
                 "min_level": 7,
-                "max_level": 15,
+                "max_level": 12,
                 "species": "SPECIES_SALAMANDER_GREEN_FORM"
               },
               {
                 "min_level": 7,
-                "max_level": 15,
+                "max_level": 12,
                 "species": "SPECIES_JADINKO"
               },
               {
                 "min_level": 7,
-                "max_level": 15,
+                "max_level": 12,
                 "species": "SPECIES_PAWYA"
               }
             ]

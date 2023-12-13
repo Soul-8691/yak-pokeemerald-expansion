@@ -26,24 +26,28 @@ mapscripts Lumbridge_MapScripts {
 
 
 script OPENWORLD_STATE_LUMBRIDGE {
-		setobjectxyperm(14, 41, 20)
+		setobjectxyperm(14, 43, 20)
 		setobjectmovementtype(14,MOVEMENT_TYPE_FACE_DOWN)
-		setobjectxyperm(OBJ_EVENT_ID_FISHERMAN, 38, 4)
+		setobjectxyperm(OBJ_EVENT_ID_FISHERMAN, 40, 4)
 		setobjectmovementtype(OBJ_EVENT_ID_FISHERMAN,MOVEMENT_TYPE_WANDER_AROUND)
-		setobjectxyperm(OBJ_EVENT_ID_BANKERGF, 3, 3)
+		setobjectxyperm(OBJ_EVENT_ID_BANKERGF, 13, 7)
 		setobjectmovementtype(OBJ_EVENT_ID_BANKERGF,MOVEMENT_TYPE_FACE_LEFT)
-		setobjectxyperm(13, 2, 3)
+		setobjectxyperm(13, 12, 7)
 		setobjectmovementtype(13,MOVEMENT_TYPE_FACE_RIGHT)
-		setobjectxyperm(OBJ_EVENT_ID_FARMER, 33, 11)
+		setobjectxyperm(OBJ_EVENT_ID_FARMER, 35, 11)
 		setobjectmovementtype(OBJ_EVENT_ID_FARMER,MOVEMENT_TYPE_WANDER_AROUND)
-		setobjectxyperm(OBJ_EVENT_ID_BRIDGEMAN, 50, 21)
+		setobjectxyperm(OBJ_EVENT_ID_BRIDGEMAN, 52, 21)
 		setobjectmovementtype(OBJ_EVENT_ID_BRIDGEMAN,MOVEMENT_TYPE_FACE_DOWN)
-		setobjectxyperm(12, 37, 33)
+		setobjectxyperm(12, 39, 33)
 		setobjectmovementtype(12,MOVEMENT_TYPE_FACE_DOWN)
-		setobjectxyperm(OBJ_EVENT_ID_FAYETH, 6, 12)
+		setobjectxyperm(OBJ_EVENT_ID_FAYETH, 8, 12)
 		setobjectmovementtype(OBJ_EVENT_ID_FAYETH,MOVEMENT_TYPE_FACE_DOWN)
-		setobjectxyperm(OBJ_EVENT_ID_DONIE, 6, 13)
+		setobjectxyperm(OBJ_EVENT_ID_DONIE, 8, 13)
 		setobjectmovementtype(OBJ_EVENT_ID_DONIE,MOVEMENT_TYPE_FACE_UP)
+		setobjectxyperm(15, 26, 39)
+		setobjectmovementtype(15,MOVEMENT_TYPE_WANDER_AROUND)
+		setobjectxyperm(18, 35, 42)
+		setobjectmovementtype(18,MOVEMENT_TYPE_WANDER_AROUND)
 		return
 }
 
@@ -542,53 +546,59 @@ script MoveNPCsAfterEvents_Lumbridge {
 				setobjectxyperm(14, 41, 20)
 				setobjectmovementtype(14,MOVEMENT_TYPE_FACE_DOWN)
 
-				setobjectxyperm(OBJ_EVENT_ID_FISHERMAN, 38, 4)
+				setobjectxyperm(OBJ_EVENT_ID_FISHERMAN, 40, 4)
 				setobjectmovementtype(OBJ_EVENT_ID_FISHERMAN,MOVEMENT_TYPE_WANDER_AROUND)
 
-				setobjectxyperm(OBJ_EVENT_ID_BANKERGF, 3, 3)
+				setobjectxyperm(OBJ_EVENT_ID_BANKERGF, 13, 7)
 				setobjectmovementtype(OBJ_EVENT_ID_BANKERGF,MOVEMENT_TYPE_FACE_LEFT)
 
-				setobjectxyperm(13, 2, 3)
+				setobjectxyperm(13, 12, 7)
 				setobjectmovementtype(13,MOVEMENT_TYPE_FACE_RIGHT)
 
-				setobjectxyperm(OBJ_EVENT_ID_FARMER, 33, 11)
+				setobjectxyperm(OBJ_EVENT_ID_FARMER, 35, 11)
 				setobjectmovementtype(OBJ_EVENT_ID_FARMER,MOVEMENT_TYPE_WANDER_AROUND)
 
-				setobjectxyperm(OBJ_EVENT_ID_BRIDGEMAN, 50, 21)
+				setobjectxyperm(OBJ_EVENT_ID_BRIDGEMAN, 52, 21)
 				setobjectmovementtype(OBJ_EVENT_ID_BRIDGEMAN,MOVEMENT_TYPE_FACE_DOWN)
 
-				setobjectxyperm(OBJ_EVENT_ID_FAYETH, 6, 12)
+				setobjectxyperm(OBJ_EVENT_ID_FAYETH, 8, 12)
 				setobjectmovementtype(OBJ_EVENT_ID_FAYETH,MOVEMENT_TYPE_FACE_DOWN)
 
-				setobjectxyperm(OBJ_EVENT_ID_DONIE, 6, 13)
+				setobjectxyperm(OBJ_EVENT_ID_DONIE, 8, 13)
 				setobjectmovementtype(OBJ_EVENT_ID_DONIE,MOVEMENT_TYPE_FACE_UP)
+
 			case 5:
-				setobjectxyperm(14, 41, 20)
+				setobjectxyperm(14, 43, 20)
 				setobjectmovementtype(14,MOVEMENT_TYPE_FACE_DOWN)
 
-				setobjectxyperm(OBJ_EVENT_ID_FISHERMAN, 38, 4)
+				setobjectxyperm(OBJ_EVENT_ID_FISHERMAN, 40, 4)
 				setobjectmovementtype(OBJ_EVENT_ID_FISHERMAN,MOVEMENT_TYPE_WANDER_AROUND)
 
-				setobjectxyperm(OBJ_EVENT_ID_BANKERGF, 3, 3)
+				setobjectxyperm(OBJ_EVENT_ID_BANKERGF, 13, 7)
 				setobjectmovementtype(OBJ_EVENT_ID_BANKERGF,MOVEMENT_TYPE_FACE_LEFT)
 
-				setobjectxyperm(13, 2, 3)
+				setobjectxyperm(13, 12, 7)
 				setobjectmovementtype(13,MOVEMENT_TYPE_FACE_RIGHT)
 
-				setobjectxyperm(OBJ_EVENT_ID_FARMER, 33, 11)
+				setobjectxyperm(OBJ_EVENT_ID_FARMER, 35, 11)
 				setobjectmovementtype(OBJ_EVENT_ID_FARMER,MOVEMENT_TYPE_WANDER_AROUND)
 
-				setobjectxyperm(OBJ_EVENT_ID_BRIDGEMAN, 50, 21)
+				setobjectxyperm(OBJ_EVENT_ID_BRIDGEMAN, 52, 21)
 				setobjectmovementtype(OBJ_EVENT_ID_BRIDGEMAN,MOVEMENT_TYPE_FACE_DOWN)
 
-				setobjectxyperm(12, 37, 33)
+				setobjectxyperm(12, 39, 33)
         		setobjectmovementtype(12,MOVEMENT_TYPE_FACE_DOWN)
 
-				setobjectxyperm(OBJ_EVENT_ID_FAYETH, 6, 12)
+				setobjectxyperm(OBJ_EVENT_ID_FAYETH, 8, 12)
 				setobjectmovementtype(OBJ_EVENT_ID_FAYETH,MOVEMENT_TYPE_FACE_DOWN)
 
-				setobjectxyperm(OBJ_EVENT_ID_DONIE, 6, 13)
+				setobjectxyperm(OBJ_EVENT_ID_DONIE, 8, 13)
 				setobjectmovementtype(OBJ_EVENT_ID_DONIE,MOVEMENT_TYPE_FACE_UP)
+
+				setobjectxyperm(15, 26, 39)
+				setobjectmovementtype(15,MOVEMENT_TYPE_WANDER_AROUND)
+				setobjectxyperm(18, 35, 42)
+				setobjectmovementtype(18,MOVEMENT_TYPE_WANDER_AROUND)
             }
 		return
 }

@@ -1270,6 +1270,12 @@ $(OBJEVENTGFXDIR)/pokescape_overworlds/Kalphite_King.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokescape_overworlds/Kalphite_Queen.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(OBJEVENTGFXDIR)/pokescape_overworlds/Corp_Beast.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokescape_overworlds/Corp_Core.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4
+
 $(OBJEVENTGFXDIR)/pokescape_overworlds/Kalphite_Worker.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 

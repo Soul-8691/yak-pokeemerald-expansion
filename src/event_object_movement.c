@@ -720,6 +720,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 */
 
 
+
 #define OBJ_EVENT_PAL_SMUGGLER			0x126A
 //RAC
 #define OBJ_EVENT_PAL_RAC_PALETTE_1			0x126B
@@ -728,6 +729,8 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_RAC_PALETTE_4			0x126E
 #define OBJ_EVENT_PAL_RAC_PALETTE_5			0x126F
 #define OBJ_EVENT_PAL_RAC_PALETTE_6			0x1270
+
+#define OBJ_EVENT_PAL_CORP_BOSS			0x1271
 /*
 #define OBJ_EVENT_PAL_RAC_BATS			0x126B
 #define OBJ_EVENT_PAL_RAC_DRAGON		0x126C
@@ -1098,7 +1101,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[0xFF] = {
     {gObjectEventPalette_RAC_PALETTE_5, OBJ_EVENT_PAL_RAC_PALETTE_5},
     {gObjectEventPalette_RAC_PALETTE_6, OBJ_EVENT_PAL_RAC_PALETTE_6},
     
-
+    {gObjectEventPalette_CORP_BOSS, OBJ_EVENT_PAL_CORP_BOSS},
     
     /*
     {gObjectEventPalette_RAC_BATS, OBJ_EVENT_PAL_RAC_BATS},

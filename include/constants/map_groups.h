@@ -933,6 +933,7 @@
 #define MAP_JATIZSO_HOUSE_4                     (61 | (50 << 8))
 #define MAP_JATIZSO_HOUSE_5                     (62 | (50 << 8))
 #define MAP_JATIZSO_BANK                        (63 | (50 << 8))
+#define MAP_CORPOREAL_BEAST_LAIR                (64 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

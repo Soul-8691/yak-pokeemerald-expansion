@@ -489,6 +489,9 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Dalmatian;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pker_Rusher;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rune_Armour;
 
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Corp_Beast;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Corp_Core;
+
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Smuggler;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_BATS;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_DRAGON;
@@ -1036,6 +1039,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_RAC_SNAILY] =                       &gObjectEventGraphicsInfo_RAC_SNAILY,
     [OBJ_EVENT_GFX_RAC_TIFA] =                       &gObjectEventGraphicsInfo_RAC_TIFA,
     [OBJ_EVENT_GFX_RAC_WHISPER] =                       &gObjectEventGraphicsInfo_RAC_WHISPER,
+    [OBJ_EVENT_GFX_CORP_BEAST] =                    &gObjectEventGraphicsInfo_Corp_Beast,
+    [OBJ_EVENT_GFX_CORP_CORE] =                    &gObjectEventGraphicsInfo_Corp_Core,
 
 //ORES 
 	[OBJ_EVENT_GFX_COPPER_ORE] =          		    &gObjectEventGraphicsInfo_CopperOre,

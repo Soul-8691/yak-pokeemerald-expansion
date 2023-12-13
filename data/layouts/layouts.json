@@ -7500,6 +7500,16 @@
       "secondary_tileset": "gTileset_Bank",
       "border_filepath": "data/layouts/Jatizso_Bank/border.bin",
       "blockdata_filepath": "data/layouts/Jatizso_Bank/map.bin"
+    },
+    {
+      "id": "LAYOUT_CORPOREAL_BEAST_LAIR",
+      "name": "Corporeal_Beast_Lair_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_PokeScape_Caves",
+      "border_filepath": "data/layouts/Corporeal_Beast_Lair/border.bin",
+      "blockdata_filepath": "data/layouts/Corporeal_Beast_Lair/map.bin"
     }
   ]
 }

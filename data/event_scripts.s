@@ -1668,3 +1668,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Jatizso_House_5/scripts.inc"
 
 	.include "data/maps/Jatizso_Bank/scripts.inc"
+
+	.include "data/maps/Corporeal_Beast_Lair/scripts.inc"

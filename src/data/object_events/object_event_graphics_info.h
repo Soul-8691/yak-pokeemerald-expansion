@@ -268,7 +268,9 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kalphite_King = {T
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kalphite_Queen = {TAG_NONE, OBJ_EVENT_PAL_KALPHITE_QUEEN, OBJ_EVENT_PAL_TAG_NONE, 512, 32, 32, 5, SHADOW_SIZE_M, TRUE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_32x32, sOamTables_32x32, sAnimTable_Idle, sPicTable_Kalphite_Queen, gDummySpriteAffineAnimTable};
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kalphite_Worker = {TAG_NONE, OBJ_EVENT_PAL_KALPHITE_WORKER, OBJ_EVENT_PAL_TAG_NONE, 128, 16, 16, 2, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x16, sOamTables_16x16, sAnimTable_Standard, sPicTable_Kalphite_Worker, gDummySpriteAffineAnimTable};
 
-
+//Corp
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Corp_Beast = {TAG_NONE, OBJ_EVENT_PAL_CORP_BOSS, OBJ_EVENT_PAL_TAG_NONE, 512, 32, 32, 5, SHADOW_SIZE_M, TRUE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_32x32, sOamTables_32x32, sAnimTable_Idle, sPicTable_Corp_Beast, gDummySpriteAffineAnimTable};
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Corp_Core = {TAG_NONE, OBJ_EVENT_PAL_CORP_BOSS, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, sOamTables_16x32, sAnimTable_Standard, sPicTable_Corp_Core, gDummySpriteAffineAnimTable};
 
 
 

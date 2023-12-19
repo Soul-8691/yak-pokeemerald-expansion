@@ -4096,5 +4096,16 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MUSA_POINT_TRAINER_4[] =
     }
 };
 
-
+static const struct TrainerMonNoItemDefaultMoves sParty_SCAPEINK[] = {
+    {
+    .iv = 0,
+    .lvl = 44,
+    .species = SPECIES_HELLHOUND,
+    },
+    {
+    .iv = 0,
+    .lvl = 44,
+    .species = SPECIES_DARK_CORE,
+    },
+};
 

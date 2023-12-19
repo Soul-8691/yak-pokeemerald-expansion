@@ -3741,6 +3741,20 @@ const struct Trainer gTrainers[] =
         .partySize = ARRAY_COUNT(sParty_MUSA_POINT_TRAINER_4),
         .party = {.NoItemDefaultMoves = sParty_MUSA_POINT_TRAINER_4},
     },
+
+    [TRAINER_SCAPEINK] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_PKer,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_PKER,
+        .trainerPic = TRAINER_PIC_pk_rusher,
+        .trainerName = _("ScapeInk"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_SCAPEINK),
+        .party = {.NoItemDefaultMoves = sParty_SCAPEINK},
+    },
     
 
 

@@ -153,3 +153,26 @@ WEATHER_CHANGE_ROUTE_SNOW_7:
 WEATHER_CHANGE_ROUTE_SNOW_8:
 	return
 
+
+BATTLE_SCAPEINK::
+	trainerbattle_single TRAINER_SCAPEINK, BATTLE_SCAPEINK_Text_0, BATTLE_SCAPEINK_Text_1
+	namebox BATTLE_SCAPEINK_Text_2
+	msgbox BATTLE_SCAPEINK_Text_3
+	hidenamebox
+	release
+	end
+
+
+BATTLE_SCAPEINK_Text_0:
+	.string "Ha got you!\p"
+	.string "There is no where for you to run!$"
+
+BATTLE_SCAPEINK_Text_1:
+	.string "Oh no I dropped my dds.$"
+
+BATTLE_SCAPEINK_Text_2:
+	.string "ScapeInk$"
+
+BATTLE_SCAPEINK_Text_3:
+	.string "You were lucky this time, next time I\n"
+	.string "will get you for sure!$"

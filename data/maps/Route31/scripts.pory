@@ -125,3 +125,18 @@ script WEATHER_CHANGE_ROUTE_SNOW
 	}
 	return
 }
+
+
+
+
+
+//TRAINER
+script BATTLE_SCAPEINK
+{
+    trainerbattle_single(TRAINER_SCAPEINK, format("Ha got you!\pThere is no where for you to run!"),format("Oh no I dropped my dds."))
+    namebox ("ScapeInk")
+    msgbox(format("You were lucky this time, next time I will get you for sure!"))
+	hidenamebox
+    release
+	end
+}

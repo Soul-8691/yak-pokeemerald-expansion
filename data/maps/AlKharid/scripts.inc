@@ -144,6 +144,30 @@ ALKHARID_NPC_16::
 	end
 
 
+SHANTYPASS_NPC_1::
+	faceplayer
+	msgbox ALKHARID_NPC_3_Text_0
+	closemessage
+	release
+	end
+
+
+SHANTYPASS_NPC_2::
+	faceplayer
+	msgbox ALKHARID_NPC_3_Text_0
+	closemessage
+	release
+	end
+
+
+SHANTYPASS_NPC_3::
+	faceplayer
+	msgbox ALKHARID_NPC_3_Text_0
+	closemessage
+	release
+	end
+
+
 ALKHARID_GNOMEGLIDER_Text_0:
 	.string "It is a Gnome Glider.$"
 

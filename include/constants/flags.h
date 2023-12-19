@@ -596,13 +596,13 @@
 #define FLAG_HIDDEN_ITEM_ABANDONED_SHIP_RM_6_KEY             (FLAG_HIDDEN_ITEMS_START + 0x22)
 //
 #define FLAG_HIDDEN_ITEM_ROUTE29_3                           (FLAG_HIDDEN_ITEMS_START + 0x65)
+#define FLAG_HIDDEN_ITEM_MUSA_POINT_1               (FLAG_HIDDEN_ITEMS_START + 0x66)
+#define FLAG_HIDDEN_ITEM_MUSA_POINT_2            (FLAG_HIDDEN_ITEMS_START + 0x67)
+#define FLAG_HIDDEN_ITEM_MUSA_POINT_3               (FLAG_HIDDEN_ITEMS_START + 0x68)
+#define FLAG_HIDDEN_ITEM_MUSA_POINT_4        (FLAG_HIDDEN_ITEMS_START + 0x30)
+#define FLAG_HIDDEN_ITEM_KARAMJA_VOLCANO_1        (FLAG_HIDDEN_ITEMS_START + 0x31)
+#define FLAG_HIDDEN_ITEM_LUMBRIDGE_FOREST_1              (FLAG_HIDDEN_ITEMS_START + 0x4C)
 
-#define FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_ZINC               (FLAG_HIDDEN_ITEMS_START + 0x66)
-#define FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_PROTEIN            (FLAG_HIDDEN_ITEMS_START + 0x67)
-#define FLAG_HIDDEN_ITEM_ARTISAN_CAVE_B1F_IRON               (FLAG_HIDDEN_ITEMS_START + 0x68)
-#define FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_1        (FLAG_HIDDEN_ITEMS_START + 0x30)
-#define FLAG_HIDDEN_ITEM_GRANITE_CAVE_B2F_EVERSTONE_2        (FLAG_HIDDEN_ITEMS_START + 0x31)
-#define FLAG_HIDDEN_ITEM_JAGGED_PASS_GREAT_BALL              (FLAG_HIDDEN_ITEMS_START + 0x4C)
 #define FLAG_HIDDEN_ITEM_JAGGED_PASS_FULL_HEAL               (FLAG_HIDDEN_ITEMS_START + 0x4D)
 #define FLAG_HIDDEN_ITEM_LILYCOVE_CITY_HEART_SCALE           (FLAG_HIDDEN_ITEMS_START + 0x1B)
 #define FLAG_HIDDEN_ITEM_LILYCOVE_CITY_PP_UP                 (FLAG_HIDDEN_ITEMS_START + 0x2B)
@@ -1163,7 +1163,6 @@
 #define FLAG_ITEM_ROUTE11_ITEM_3                     0x439
 #define FLAG_ITEM_ROUTE11_ITEM_4                  0x43A
 #define FLAG_ITEM_ROUTE11_ITEM_5                   0x43B
-
 #define FLAG_ITEM_RIMMINGTON_1                        0x43C
 #define FLAG_ITEM_RIMMINGTON_2                             0x43D
 #define FLAG_ITEM_RIMMINGTON_3                            0x43E
@@ -1190,7 +1189,6 @@
 #define FLAG_ITEM_SINKHOLE_1                            0x453
 #define FLAG_ITEM_SINKHOLE_2                               0x454
 #define FLAG_ITEM_SINKHOLE_3                                  0x455
-
 #define FLAG_ITEM_ROUTE16_1                        0x456
 #define FLAG_ITEM_ROUTE16_2                             0x457
 #define FLAG_ITEM_ROUTE17_1                         0x458
@@ -1212,16 +1210,17 @@
 #define FLAG_ITEM_LUMBRIDGEFOREST_2                                           0x468 // Unused Flag
 #define FLAG_ITEM_PRISMATIC_STAR                                           0x468 // Unused Flag
 #define FLAG_ITEM_LUMBRIDGE_FOREST_CABBAGE                             0x469
-#define FLAG_ITEM_MT_PYRE_4F_SEA_INCENSE                            0x46A
-#define FLAG_ITEM_SAFARI_ZONE_SOUTH_WEST_MAX_REVIVE                 0x46B
-#define FLAG_ITEM_AQUA_HIDEOUT_B1F_NUGGET                           0x46C
-#define FLAG_ITEM_MOSSDEEP_STEVENS_HOUSE_HM08                       0x46D // Unused Flag, leftover from R/S. HM08 is given to the player directly in Emerald
-#define FLAG_ITEM_ROUTE_119_NUGGET                                  0x46E
-#define FLAG_ITEM_ROUTE_104_POTION                                  0x46F
-#define FLAG_UNUSED_0x470                                           0x470 // Unused Flag
-#define FLAG_ITEM_ROUTE_103_PP_UP                                   0x471
-#define FLAG_UNUSED_0x472                                           0x472 // Unused Flag
-#define FLAG_ITEM_ROUTE_108_STAR_PIECE                              0x473
+#define FLAG_ITEM_MUSA_POINT_1                                      0x46A
+#define FLAG_ITEM_ROUTE39_1                 0x46B
+#define FLAG_ITEM_ROUTE39_2                           0x46C
+#define FLAG_ITEM_ROUTE39_3                       0x46D // Unused Flag, leftover from R/S. HM08 is given to the player directly in Emerald
+#define FLAG_ITEM_ROUTE39_4                                  0x46E
+#define FLAG_ITEM_KARAMJA_VOLCANO_1                                  0x46F
+#define FLAG_ITEM_KARAMJA_VOLCANO_2                                           0x470 // Unused Flag
+#define FLAG_ITEM_KARAMJA_VOLCANO_3                                   0x471
+#define FLAG_ITEM_LUMBRIDGE_FOREST_3                                           0x472 // Unused Flag
+#define FLAG_ITEM_EDGEVILLE_1                              0x473
+
 #define FLAG_ITEM_ROUTE_109_POTION                                  0x474
 #define FLAG_ITEM_ROUTE_110_ELIXIR                                  0x475
 #define FLAG_ITEM_ROUTE_111_ELIXIR                                  0x476

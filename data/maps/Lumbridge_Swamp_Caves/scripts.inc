@@ -116,6 +116,33 @@ BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1::
 	end
 
 
+BATTLE_LUMBRIDGESWAMPCAVE_4::
+	trainerbattle_single TRAINER_LUMBRIDGESWAMPCAVE_4, BATTLE_LUMBRIDGESWAMPCAVE_4_Text_0, BATTLE_LUMBRIDGESWAMPCAVE_4_Text_1
+	namebox BATTLE_LUMBRIDGESWAMPCAVE_4_Text_2
+	msgbox BATTLE_LUMBRIDGESWAMPCAVE_4_Text_3
+	hidenamebox
+	release
+	end
+
+
+BATTLE_LUMBRIDGESWAMPCAVE_5::
+	trainerbattle_single TRAINER_LUMBRIDGESWAMPCAVE_5, BATTLE_LUMBRIDGESWAMPCAVE_4_Text_0, BATTLE_LUMBRIDGESWAMPCAVE_4_Text_1
+	namebox BATTLE_LUMBRIDGESWAMPCAVE_4_Text_2
+	msgbox BATTLE_LUMBRIDGESWAMPCAVE_4_Text_3
+	hidenamebox
+	release
+	end
+
+
+BATTLE_LUMBRIDGESWAMPCAVE_6::
+	trainerbattle_single TRAINER_LUMBRIDGESWAMPCAVE_6, BATTLE_LUMBRIDGESWAMPCAVE_4_Text_0, BATTLE_LUMBRIDGESWAMPCAVE_4_Text_1
+	namebox BATTLE_LUMBRIDGESWAMPCAVE_4_Text_2
+	msgbox BATTLE_LUMBRIDGESWAMPCAVE_4_Text_3
+	hidenamebox
+	release
+	end
+
+
 LumbridgeSwampCaves_WallBeasts_Text_0:
 	.string "Something jumps out of the wall towards\n"
 	.string "you!$"
@@ -160,3 +187,15 @@ BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1_Text_0:
 BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1_Text_1:
 	.string "Oh it is in Morytania.\p"
 	.string "This explains a lot.$"
+
+BATTLE_LUMBRIDGESWAMPCAVE_4_Text_0:
+	.string "Battle me, I am a Cupholder.$"
+
+BATTLE_LUMBRIDGESWAMPCAVE_4_Text_1:
+	.string "Cupholder has lost.$"
+
+BATTLE_LUMBRIDGESWAMPCAVE_4_Text_2:
+	.string "Cupholder$"
+
+BATTLE_LUMBRIDGESWAMPCAVE_4_Text_3:
+	.string "Hello, I am a Cupholder.$"

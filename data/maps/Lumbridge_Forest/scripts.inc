@@ -43,6 +43,72 @@ LUMBRIDGEFOREST_NPC_WOODCUTTER::
 	end
 
 
+NPC_LUMBRIDGE_FOREST_1::
+	lock
+	faceplayer
+	namebox NPC_LUMBRIDGE_FOREST_1_Text_0
+	msgbox NPC_LUMBRIDGE_FOREST_1_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_LUMBRIDGE_FOREST_2::
+	lock
+	faceplayer
+	namebox NPC_LUMBRIDGE_FOREST_1_Text_0
+	msgbox NPC_LUMBRIDGE_FOREST_1_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_LUMBRIDGE_FOREST_3::
+	lock
+	faceplayer
+	namebox NPC_LUMBRIDGE_FOREST_1_Text_0
+	msgbox NPC_LUMBRIDGE_FOREST_1_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_LUMBRIDGE_FOREST_4::
+	lock
+	faceplayer
+	namebox NPC_LUMBRIDGE_FOREST_1_Text_0
+	msgbox NPC_LUMBRIDGE_FOREST_1_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_LUMBRIDGE_FOREST_5::
+	lock
+	faceplayer
+	namebox NPC_LUMBRIDGE_FOREST_1_Text_0
+	msgbox NPC_LUMBRIDGE_FOREST_1_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_LUMBRIDGE_FOREST_6::
+	lock
+	faceplayer
+	namebox NPC_LUMBRIDGE_FOREST_1_Text_0
+	msgbox NPC_LUMBRIDGE_FOREST_1_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 BATTLE_LUMBRIDGEFOREST_BOT1::
 	trainerbattle_single TRAINER_LUMBRIDGEFOREST_BOT1, BATTLE_LUMBRIDGEFOREST_BOT1_Text_0, BATTLE_LUMBRIDGEFOREST_BOT1_Text_1
 	namebox BATTLE_LUMBRIDGEFOREST_BOT1_Text_2
@@ -98,6 +164,22 @@ ITEM_LUMBRIDGEFOREST_BREAD::
 	end
 
 
+ITEM_LUMBRIDGE_FOREST_3::
+	finditem ITEM_PURPLE_SWEETS
+	end
+
+
+NPC_LUMBRIDGE_FOREST_HAM_1::
+	lock
+	faceplayer
+	namebox NPC_LUMBRIDGE_FOREST_HAM_1_Text_0
+	msgbox NPC_LUMBRIDGE_FOREST_HAM_1_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 LUMBRIDGEFOREST_NPC_BOT1_Text_0:
 	.string "BEEP BOOP.$"
 
@@ -106,6 +188,12 @@ LUMBRIDGEFOREST_NPC_BOT2_Text_0:
 
 LUMBRIDGEFOREST_NPC_WOODCUTTER_Text_0:
 	.string "These bots are so annoying.$"
+
+NPC_LUMBRIDGE_FOREST_1_Text_0:
+	.string "Cupholder$"
+
+NPC_LUMBRIDGE_FOREST_1_Text_1:
+	.string "Hello, I am a Cupholder.$"
 
 BATTLE_LUMBRIDGEFOREST_BOT1_Text_0:
 	.string "ALERT!\p"
@@ -175,3 +263,9 @@ BATTLE_LUMBRIDGEFOREST_TRAINER_3_Text_2:
 	.string "Me hope no harm comes to it.\p"
 	.string "Me would be sad if big high war god were\n"
 	.string "to damage it and make a big dirt hole.$"
+
+NPC_LUMBRIDGE_FOREST_HAM_1_Text_0:
+	.string "H.A.M Member$"
+
+NPC_LUMBRIDGE_FOREST_HAM_1_Text_1:
+	.string "Go away.$"

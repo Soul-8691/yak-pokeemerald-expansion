@@ -3395,17 +3395,353 @@ const struct Trainer gTrainers[] =
 
 
 
+///ROUTE27
+    [TRAINER_ROUTE27_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE27_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE27_TRAINER_1},
+    },
+    [TRAINER_ROUTE27_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE27_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE27_TRAINER_2},
+    },
+    [TRAINER_ROUTE27_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE27_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE27_TRAINER_3},
+    },
+    [TRAINER_ROUTE27_TRAINER_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE27_TRAINER_4),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE27_TRAINER_4},
+    },
 
-
-
-
-
-
-
-
-
-
-
+    //route30
+    [TRAINER_ROUTE30_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE30_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE30_TRAINER_1},
+    },
+    [TRAINER_ROUTE30_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE30_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE30_TRAINER_2},
+    },
+    [TRAINER_ROUTE30_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE30_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE30_TRAINER_3},
+    },
+    [TRAINER_ROUTE30_TRAINER_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE30_TRAINER_4),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE30_TRAINER_4},
+    },
+    
+    //route25
+    [TRAINER_ROUTE25_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE25_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE25_TRAINER_1},
+    },
+    [TRAINER_ROUTE25_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE25_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE25_TRAINER_2},
+    },
+    [TRAINER_ROUTE25_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE25_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE25_TRAINER_3},
+    },
+//route39
+    [TRAINER_ROUTE39_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE39_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE39_TRAINER_1},
+    },
+    [TRAINER_ROUTE39_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE39_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE39_TRAINER_2},
+    },
+    [TRAINER_ROUTE39_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE39_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE39_TRAINER_3},
+    },
+    [TRAINER_ROUTE39_TRAINER_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE39_TRAINER_4),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE39_TRAINER_4},
+    },
+    [TRAINER_ROUTE39_TRAINER_5] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE39_TRAINER_5),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE39_TRAINER_5},
+    },
+    [TRAINER_ROUTE39_TRAINER_6] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE39_TRAINER_6),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE39_TRAINER_6},
+    },
+    [TRAINER_ROUTE39_TRAINER_7] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE39_TRAINER_7),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE39_TRAINER_7},
+    },
+    [TRAINER_ROUTE39_TRAINER_8] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_ROUTE39_TRAINER_8),
+        .party = {.NoItemDefaultMoves = sParty_ROUTE39_TRAINER_8},
+    },
+    //swamp cave
+    [TRAINER_LUMBRIDGESWAMPCAVE_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_LUMBRIDGESWAMPCAVE_4),
+        .party = {.NoItemDefaultMoves = sParty_LUMBRIDGESWAMPCAVE_4},
+    },
+    [TRAINER_LUMBRIDGESWAMPCAVE_5] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_LUMBRIDGESWAMPCAVE_5),
+        .party = {.NoItemDefaultMoves = sParty_LUMBRIDGESWAMPCAVE_5},
+    },
+    [TRAINER_LUMBRIDGESWAMPCAVE_6] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_LUMBRIDGESWAMPCAVE_6),
+        .party = {.NoItemDefaultMoves = sParty_LUMBRIDGESWAMPCAVE_6},
+    },
+    //musa point
+    [TRAINER_MUSA_POINT_TRAINER_1] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_MUSA_POINT_TRAINER_1),
+        .party = {.NoItemDefaultMoves = sParty_MUSA_POINT_TRAINER_1},
+    },
+    [TRAINER_MUSA_POINT_TRAINER_2] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_MUSA_POINT_TRAINER_2),
+        .party = {.NoItemDefaultMoves = sParty_MUSA_POINT_TRAINER_2},
+    },
+    [TRAINER_MUSA_POINT_TRAINER_3] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_MUSA_POINT_TRAINER_3),
+        .party = {.NoItemDefaultMoves = sParty_MUSA_POINT_TRAINER_3},
+    },
+    [TRAINER_MUSA_POINT_TRAINER_4] =
+    {
+        .partyFlags = 0,
+        .trainerClass = TRAINER_CLASS_POKESCAPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_SoffanQuo,
+        .trainerName = _("CUPHOLDER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_MUSA_POINT_TRAINER_4),
+        .party = {.NoItemDefaultMoves = sParty_MUSA_POINT_TRAINER_4},
+    },
+    
 
 
 

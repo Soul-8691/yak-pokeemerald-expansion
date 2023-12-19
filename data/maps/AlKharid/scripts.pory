@@ -183,3 +183,34 @@ script ALKHARID_NPC_16
 
 
 
+//NPCS SHANTYPASS
+script SHANTYPASS_NPC_1
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script SHANTYPASS_NPC_2
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}
+script SHANTYPASS_NPC_3
+{
+    faceplayer
+    //namebox ("")
+    msgbox(format(""))
+    closemessage
+    //hidenamebox
+    release
+    end
+}

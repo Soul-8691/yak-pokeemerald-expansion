@@ -1,0 +1,68 @@
+mapscripts Route27_MapScripts{
+	MAP_SCRIPT_ON_TRANSITION {
+        //setvar(VAR_EVOLUTION_MAP_STATE, 15) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
+	}
+}
+
+
+//NPCS
+script NPC_ROUTE27_1
+{
+	lock
+	faceplayer
+    namebox ("Monk")
+	msgbox(format("Sorry the chapel is off limits."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_ROUTE27_2
+{
+	lock
+	faceplayer
+    namebox ("Monk")
+	msgbox(format("Take your monsters and leave.\pYou may not enter."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+//TRAINERS
+script BATTLE_ROUTE27_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE27_TRAINER_1, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE27_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE27_TRAINER_2, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE27_TRAINER_3
+{
+    trainerbattle_single(TRAINER_ROUTE27_TRAINER_3, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE27_TRAINER_4
+{
+    trainerbattle_single(TRAINER_ROUTE27_TRAINER_4, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}

@@ -3905,3 +3905,196 @@ static const struct TrainerMonItemDefaultMoves sParty_MOD_SARNIE[] = {
     .heldItem = ITEM_FIRECAPE
     }
 };
+
+//ROUTE27
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE27_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE27_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE27_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE27_TRAINER_4[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+//ROUTE30
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE30_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE30_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE30_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE30_TRAINER_4[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+
+//route25
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE25_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE25_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE25_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+//route39
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_4[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_5[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_6[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_7[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_8[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+//swamp cave
+static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGESWAMPCAVE_4[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGESWAMPCAVE_5[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGESWAMPCAVE_6[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+//musa point
+static const struct TrainerMonNoItemDefaultMoves sParty_MUSA_POINT_TRAINER_1[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_MUSA_POINT_TRAINER_2[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_MUSA_POINT_TRAINER_3[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_MUSA_POINT_TRAINER_4[] = {
+    {
+    .iv = 0,
+    .lvl = 1,
+    .species = SPECIES_FROGEEL,
+    }
+};
+
+
+

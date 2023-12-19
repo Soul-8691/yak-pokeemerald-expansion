@@ -42,3 +42,144 @@ script NPC_LegendArts
 	release
 	end
 }
+
+
+
+
+
+//ITEMS
+script ITEM_MUSA_POINT_1
+{
+    finditem(ITEM_PURPLE_SWEETS)
+    end
+}
+
+
+//NPCS
+script NPC_MUSA_POINT_1
+{
+	lock
+	faceplayer
+    namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_MUSA_POINT_2
+{
+	lock
+	faceplayer
+    namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_MUSA_POINT_3
+{
+	lock
+	faceplayer
+    namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_MUSA_POINT_4
+{
+	lock
+	faceplayer
+    namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_MUSA_POINT_5
+{
+	lock
+	faceplayer
+    namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_MUSA_POINT_6
+{
+	lock
+	faceplayer
+    namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_MUSA_POINT_7
+{
+	lock
+	faceplayer
+    namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_MUSA_POINT_8
+{
+	lock
+	faceplayer
+    namebox ("Cupholder")
+	msgbox(format("Hello, I am a Cupholder."))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+
+
+//TRAINERS
+script BATTLE_MUSA_POINT_TRAINER_1
+{
+    trainerbattle_single(TRAINER_Soffan_and_Quo, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_MUSA_POINT_TRAINER_2
+{
+    trainerbattle_single(TRAINER_Soffan_and_Quo, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_MUSA_POINT_TRAINER_3
+{
+    trainerbattle_single(TRAINER_Soffan_and_Quo, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_MUSA_POINT_TRAINER_4
+{
+    trainerbattle_single(TRAINER_Soffan_and_Quo, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}

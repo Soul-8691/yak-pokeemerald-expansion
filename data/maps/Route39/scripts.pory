@@ -32,3 +32,107 @@ script ENCOUNTER_PENGUIN_CRATE {
     closemessage
     end
 }
+
+
+
+
+
+
+
+
+//ITEMS
+script ITEM_ROUTE39_1
+{
+    finditem(ITEM_PURPLE_SWEETS)
+    end
+}
+script ITEM_ROUTE39_2
+{
+    finditem(ITEM_PURPLE_SWEETS)
+    end
+}
+script ITEM_ROUTE39_3
+{
+    finditem(ITEM_PURPLE_SWEETS)
+    end
+}
+script ITEM_ROUTE39_4
+{
+    finditem(ITEM_PURPLE_SWEETS)
+    end
+}
+
+
+//TRAINERS
+script BATTLE_ROUTE39_TRAINER_1
+{
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_1, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE39_TRAINER_2
+{
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_2, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE39_TRAINER_3
+{
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_3, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE39_TRAINER_4
+{
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_4, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE39_TRAINER_5
+{
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_5, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE39_TRAINER_6
+{
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_6, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE39_TRAINER_7
+{
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_7, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_ROUTE39_TRAINER_8
+{
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_8, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}

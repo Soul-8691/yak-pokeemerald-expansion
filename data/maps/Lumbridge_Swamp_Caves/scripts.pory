@@ -146,3 +146,30 @@ script BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1{
     end
 }
 //MID levels
+script BATTLE_LUMBRIDGESWAMPCAVE_4
+{
+    trainerbattle_single(TRAINER_LUMBRIDGESWAMPCAVE_4, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_LUMBRIDGESWAMPCAVE_5
+{
+    trainerbattle_single(TRAINER_LUMBRIDGESWAMPCAVE_5, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}
+script BATTLE_LUMBRIDGESWAMPCAVE_6
+{
+    trainerbattle_single(TRAINER_LUMBRIDGESWAMPCAVE_6, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
+    namebox ("Cupholder")
+    msgbox(format("Hello, I am a Cupholder."))
+	hidenamebox
+    release
+	end
+}

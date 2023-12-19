@@ -35,3 +35,21 @@ script KaramjaVolcano_STATE2{
                 end
             }
     }
+
+
+    //ITEMS
+script ITEM_KARAMJA_VOLCANO_1
+{
+    finditem(ITEM_PURPLE_SWEETS)
+    end
+}
+script ITEM_KARAMJA_VOLCANO_2
+{
+    finditem(ITEM_PURPLE_SWEETS)
+    end
+}
+script ITEM_KARAMJA_VOLCANO_3
+{
+    finditem(ITEM_PURPLE_SWEETS)
+    end
+}

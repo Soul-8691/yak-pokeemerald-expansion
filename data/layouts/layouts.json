@@ -7135,7 +7135,7 @@
       "id": "LAYOUT_GRAND_EXCHANGE",
       "name": "GrandExchange_Layout",
       "width": 20,
-      "height": 20,
+      "height": 24,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Varrock",
       "border_filepath": "data/layouts/GrandExchange/border.bin",
@@ -7550,6 +7550,16 @@
       "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
       "border_filepath": "data/layouts/Lumbridge_Swamp_Caves_WGS_4/border.bin",
       "blockdata_filepath": "data/layouts/Lumbridge_Swamp_Caves_WGS_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_VARROCK_GRAND_EXCHANGE_PATH",
+      "name": "Varrock_GrandExchange_Path_Layout",
+      "width": 10,
+      "height": 18,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Varrock",
+      "border_filepath": "data/layouts/Varrock_GrandExchange_Path/border.bin",
+      "blockdata_filepath": "data/layouts/Varrock_GrandExchange_Path/map.bin"
     }
   ]
 }

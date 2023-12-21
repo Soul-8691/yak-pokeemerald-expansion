@@ -122,7 +122,7 @@
       "dest_warp_id": 0
     },
     {
-      "x": 48,
+      "x": 47,
       "y": 34,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE",
@@ -139,15 +139,15 @@
       "x": 20,
       "y": 11,
       "elevation": 0,
-      "dest_map": "MAP_TUTORIAL_ISLAND_SHOP",
-      "dest_warp_id": 0
+      "dest_map": "MAP_TUTORIAL_ISLAND",
+      "dest_warp_id": 6
     },
     {
       "x": 47,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_TUTORIAL_ISLAND_SHOP",
-      "dest_warp_id": 0
+      "dest_map": "MAP_TUTORIAL_ISLAND",
+      "dest_warp_id": 5
     },
     {
       "x": 42,

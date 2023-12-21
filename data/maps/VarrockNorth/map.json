@@ -37,6 +37,11 @@
       "direction": "left",
       "offset": 0,
       "map": "MAP_GRAND_EXCHANGE"
+    },
+    {
+      "direction": "left",
+      "offset": 24,
+      "map": "MAP_VARROCK_GRAND_EXCHANGE_PATH"
     }
   ],
   "object_events": [

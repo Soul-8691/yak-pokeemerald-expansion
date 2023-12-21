@@ -27,6 +27,11 @@
       "direction": "up",
       "offset": -44,
       "map": "MAP_EDGEVILLE"
+    },
+    {
+      "direction": "right",
+      "offset": 0,
+      "map": "MAP_VARROCK_GRAND_EXCHANGE_PATH"
     }
   ],
   "object_events": [

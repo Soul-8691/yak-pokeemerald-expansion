@@ -662,7 +662,8 @@
     "MudskipperPoint",
     "WizardsTower",
     "Wilderness_Volcano_Lobby",
-    "GrandExchange"
+    "GrandExchange",
+    "Varrock_GrandExchange_Path"
   ],
   "gMapGroup_PokescapeRoutes": [
     "Route1",

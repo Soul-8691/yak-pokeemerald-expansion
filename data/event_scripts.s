@@ -1678,3 +1678,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Lumbridge_Swamp_Caves_WGS_3/scripts.inc"
 
 	.include "data/maps/Lumbridge_Swamp_Caves_WGS_4/scripts.inc"
+
+	.include "data/maps/Varrock_GrandExchange_Path/scripts.inc"

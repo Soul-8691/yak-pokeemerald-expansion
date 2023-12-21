@@ -530,10 +530,14 @@ static void Task_OptionMenuProcessInput_Pg2(u8 taskId)
             break;
         case MENUITEM_DIFFICULTY:
             previousOption = gTasks[taskId].data[TD_DIFFICULTY];
-            gTasks[taskId].data[TD_DIFFICULTY] = Difficulty_ProcessInput(gTasks[taskId].data[TD_DIFFICULTY]);
+            gTasks[taskId].data[TD_DIFFICULTY] = FrameType_ProcessInput(gTasks[taskId].data[TD_DIFFICULTY]);
 
             if (previousOption != gTasks[taskId].data[TD_DIFFICULTY])
                 Difficulty_DrawChoices(gTasks[taskId].data[TD_DIFFICULTY]);
+            break;
+
+        
+
         case MENUITEM_PKMNORMONS:
             previousOption = gTasks[taskId].data[TD_PKMNORMONS];
             gTasks[taskId].data[TD_PKMNORMONS] = PkmnOrMons_ProcessInput(gTasks[taskId].data[TD_PKMNORMONS]);
@@ -741,7 +745,7 @@ static u8 Difficulty_ProcessInput(u8 selection)
     return selection;
 }
 
-static void Difficulty_DrawChoices(u8 selection)
+static void Difficulty2_DrawChoices(u8 selection)
 {
     u8 styles[3];
     /* FALSE = Have the middle text be exactly in between where the first text ends and second text begins.
@@ -774,6 +778,52 @@ static void Difficulty_DrawChoices(u8 selection)
 
     DrawOptionMenuChoice(gText_DifficultyHard, GetStringRightAlignXOffset(FONT_NORMAL, gText_DifficultyHard, 198), YPOS_DIFFICULTY, styles[2]);
 }
+
+
+
+static void Difficulty_DrawChoices(u8 selection)
+{
+    u8 text[16];
+    u8 n = selection + 1;
+    u16 i;
+
+    for (i = 0; gText_FrameTypeNumber[i] != EOS && i <= 5; i++)
+        text[i] = gText_FrameTypeNumber[i];
+
+    // Convert a number to decimal string
+    if (n / 10 != 0)
+    {
+        text[i] = n / 10 + CHAR_0;
+        i++;
+        text[i] = n % 10 + CHAR_0;
+        i++;
+    }
+    else
+    {
+        text[i] = n % 10 + CHAR_0;
+        i++;
+        text[i] = 0x77;
+        i++;
+    }
+
+    text[i] = EOS;
+
+    DrawOptionMenuChoice(gText_FrameType, 104, YPOS_DIFFICULTY, 0);
+    DrawOptionMenuChoice(text, 128, YPOS_DIFFICULTY, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

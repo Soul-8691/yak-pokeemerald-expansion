@@ -750,7 +750,11 @@
     "Fire_Altar",
     "Earth_Altar",
     "Body_Altar",
-    "Shantay_Pass"
+    "Shantay_Pass",
+    "Lumbridge_Swamp_Caves_WGS_1",
+    "Lumbridge_Swamp_Caves_WGS_2",
+    "Lumbridge_Swamp_Caves_WGS_3",
+    "Lumbridge_Swamp_Caves_WGS_4"
   ],
   "gMapGroup_PokescapeIndoorTutorialIsland": [
     "Tutorial_Island_Lab_Up",

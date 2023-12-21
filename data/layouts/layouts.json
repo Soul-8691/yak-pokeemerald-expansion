@@ -7510,6 +7510,46 @@
       "secondary_tileset": "gTileset_PokeScape_Caves",
       "border_filepath": "data/layouts/Corporeal_Beast_Lair/border.bin",
       "blockdata_filepath": "data/layouts/Corporeal_Beast_Lair/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_SWAMP_CAVES_WGS_1",
+      "name": "Lumbridge_Swamp_Caves_WGS_1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Lumbridge_Swamp_Caves_WGS_1/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Swamp_Caves_WGS_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_SWAMP_CAVES_WGS_2",
+      "name": "Lumbridge_Swamp_Caves_WGS_2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Lumbridge_Swamp_Caves_WGS_2/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Swamp_Caves_WGS_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_SWAMP_CAVES_WGS_3",
+      "name": "Lumbridge_Swamp_Caves_WGS_3_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Lumbridge_Swamp_Caves_WGS_3/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Swamp_Caves_WGS_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMBRIDGE_SWAMP_CAVES_WGS_4",
+      "name": "Lumbridge_Swamp_Caves_WGS_4_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Lumbridge_Swamp_Caves_WGS_4/border.bin",
+      "blockdata_filepath": "data/layouts/Lumbridge_Swamp_Caves_WGS_4/map.bin"
     }
   ]
 }

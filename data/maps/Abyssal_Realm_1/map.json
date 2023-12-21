@@ -385,6 +385,13 @@
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_FOREST",
       "dest_warp_id": 0
+    },
+    {
+      "x": 50,
+      "y": 58,
+      "elevation": 0,
+      "dest_map": "MAP_LUMBRIDGE_SWAMP_CAVES_JUNA",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

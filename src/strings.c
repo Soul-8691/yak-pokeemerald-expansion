@@ -1928,6 +1928,9 @@ const u8 gText_NewGame_RegionChoosen[] =_("You have choosen to start in VARROCK.
 
 const u8 gText_NewGame_appearance[] =_("Next your appearance…\p$");
 
+const u8 gText_PulseCoreOn[] = _("Exp is now being shared.\p");
+const u8 gText_PulseCoreOff[] = _("Exp is no longer being shared.\p");
+
 //// side quest data
 //generic strings
 const u8 gText_QuestAnnounce[] = _("The quest '{STR_VAR_1}'\nhas now {STR_VAR_2}.");

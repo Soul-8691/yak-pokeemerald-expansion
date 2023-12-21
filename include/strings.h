@@ -3349,6 +3349,7 @@ extern const u8 gText_OpenWorldOptionsMenu[];
 extern const u8 gText_PkmnOrMons[];
 extern const u8 gText_MonsterMode[];
 extern const u8 gText_PokemonMode[];
-
+extern const u8 gText_PulseCoreOn[];
+extern const u8 gText_PulseCoreOff[];
 
 #endif // GUARD_STRINGS_H

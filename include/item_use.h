@@ -34,6 +34,8 @@ void ItemUseOutOfBattle_Spade(u8);
 void ItemUseOutOfBattle_FlyItem(u8);
 void ItemUseOutOfBattle_Lantern(u8);
 void ItemUseOutOfBattle_Map(u8);
+void ItemUseOutOfBattle_Function(u8);
+
 
 
 //

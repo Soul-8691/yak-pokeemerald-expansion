@@ -244,6 +244,24 @@ void ItemUseOutOfBattle_Bike(u8 taskId)
     }
 }
 
+
+void ItemUseOutOfBattle_Function(u8 taskId) //This is used to change a Flag / Variable from the items menu.
+{
+	if (FlagGet(FLAG_EXP_ALL) == FALSE)
+    {
+        FlagSet(FLAG_EXP_ALL);
+        DisplayItemMessage(taskId, FONT_NORMAL, gText_PulseCoreOn, CloseItemMessage);
+    }
+    else if (FlagGet(FLAG_EXP_ALL) == TRUE)
+    {
+        FlagClear(FLAG_EXP_ALL);
+        DisplayItemMessage(taskId, FONT_NORMAL, gText_PulseCoreOff, CloseItemMessage);
+    }
+    else
+        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
+	
+}
+
 static void ItemUseOnFieldCB_Bike(u8 taskId)
 {
     if (ItemId_GetSecondaryId(gSpecialVar_ItemId) == MACH_BIKE)

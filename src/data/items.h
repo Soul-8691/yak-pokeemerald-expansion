@@ -5198,10 +5198,11 @@ const struct Item gItems[] =
         .price = 3000,
         .holdEffect = HOLD_EFFECT_EXP_SHARE,
         .description = sPulseCoreDesc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .fieldUseFunc = ItemUseOutOfBattle_Function,
     },
+
     [ITEM_RING_OF_LIFE] =
     {
         .name = _("RING OF LIFE"),
@@ -6414,7 +6415,7 @@ const struct Item gItems[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = 3,
         .battleUsage = ITEM_B_USE_OTHER,
-        .fieldUseFunc = ItemUseOutOfBattle_Lantern,
+        .fieldUseFunc = ItemUseOutOfBattle_Lantern, 
     },
 	
     [ITEM_WATERFALLITEM] =

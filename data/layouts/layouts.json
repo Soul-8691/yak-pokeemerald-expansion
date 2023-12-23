@@ -7560,6 +7560,16 @@
       "secondary_tileset": "gTileset_Varrock",
       "border_filepath": "data/layouts/Varrock_GrandExchange_Path/border.bin",
       "blockdata_filepath": "data/layouts/Varrock_GrandExchange_Path/map.bin"
+    },
+    {
+      "id": "LAYOUT_KOUREND_CATACOMBS_1",
+      "name": "Kourend_Catacombs_1_Layout",
+      "width": 50,
+      "height": 62,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Kourend_Catacombs_1/border.bin",
+      "blockdata_filepath": "data/layouts/Kourend_Catacombs_1/map.bin"
     }
   ]
 }

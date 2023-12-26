@@ -380,19 +380,7 @@ const struct Trainer gTrainers[] =
         .scaling = FALSE,
     },
 
-    [TRAINER_DUKE] =
-    {
-        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
-        .trainerPic = TRAINER_PIC_duke_horacio,
-        .trainerName = _("HORACIO"),
-        .items = {ITEM_BREAD, ITEM_NONE, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
-        .partySize = ARRAY_COUNT(sParty_Duke),
-        .party = {.NoItemCustomMoves = sParty_Duke},
-    },
+    
 
      [TRAINER_RSN_LUM_SWAMP] =
 	{
@@ -3754,6 +3742,25 @@ const struct Trainer gTrainers[] =
         .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
         .partySize = ARRAY_COUNT(sParty_SCAPEINK),
         .party = {.NoItemDefaultMoves = sParty_SCAPEINK},
+    },
+
+
+
+
+
+    //GYM LEADERS
+    [TRAINER_LEADER_DUKE_1] =
+    {
+        .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET,
+        .trainerClass = TRAINER_CLASS_LEADER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_CHOOB,
+        .trainerPic = TRAINER_PIC_duke_horacio,
+        .trainerName = _("HORACIO"),
+        .items = {ITEM_BREAD, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_HP_AWARE,
+        .partySize = ARRAY_COUNT(sParty_LEADER_DUKE_1),
+        .party = {.NoItemCustomMoves = sParty_LEADER_DUKE_1}, 
     },
     
 

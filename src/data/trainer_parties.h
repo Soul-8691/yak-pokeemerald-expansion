@@ -327,26 +327,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Lumbridge_Gym4[] = {
     }
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_Duke[] = {
-    {
-    .iv = 0,
-    .lvl = 8,
-    .species = SPECIES_BABY_YAK,
-    .moves = {MOVE_SLACK_OFF, MOVE_ABSORB, MOVE_TACKLE, MOVE_GROWL}
-    },
-    {
-    .iv = 0,
-    .lvl = 10,
-    .species = SPECIES_PUPPY_MUTT_FORM,
-    .moves = {MOVE_SLACK_OFF, MOVE_TACKLE, MOVE_HOWL, MOVE_GROWL}
-    },
-    {
-    .iv = 0,
-    .lvl = 9,
-    .species = SPECIES_ROOSTER_NORMAL_FORM,
-    .moves = {MOVE_SLACK_OFF, MOVE_TACKLE, MOVE_FEATHER_DANCE, MOVE_PECK}
-    }
-};
+
 
     static const struct TrainerMonItemDefaultMoves sParty_Rsn_Lum_Swamp[] = {
     {
@@ -2222,26 +2203,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_FALADOR_GYM_4[] = {
     }
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_FALADOR_GYM_AMIKVARZE[] = {
-    {
-    .iv = 0,
-    .lvl = 28,
-    .species = SPECIES_BELTFISH,
-    .moves = {MOVE_AQUA_JET, MOVE_WRAP, MOVE_WATER_PULSE, MOVE_CHARGE_BEAM}
-    },
-    {
-    .iv = 0,
-    .lvl = 32,
-    .species = SPECIES_CRAB_RUMPUMPED_FORM,
-    .moves = {MOVE_RAZOR_SHELL, MOVE_ROCK_SMASH, MOVE_SLAM, MOVE_NONE}
-    },
-    {
-    .iv = 0,
-    .lvl = 30,
-    .species = SPECIES_SWAN,
-    .moves = {MOVE_BITE, MOVE_HOWL, MOVE_BUBBLE, MOVE_MUD_SPORT}
-    }
-};
+
 
 static const struct TrainerMonItemCustomMoves sParty_FALADOR_HAIRDRESSER[] = {
     {
@@ -3031,38 +2993,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_BARBARIAN_GYM_TRAINER_3[
     }
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_BARBARIAN_GYM_GUNTHOR[] = {
-    {
-    .iv = 0,
-    .lvl = 48,
-    .species = SPECIES_UNICORN_BLACK_FORM,
-    .moves = {MOVE_HORN_ATTACK, MOVE_RAGE, MOVE_CLOSE_COMBAT, MOVE_BULK_UP}
-    },
-    {
-    .iv = 0,
-    .lvl = 48,
-    .species = SPECIES_ANGRY_RAT,
-    .moves = {MOVE_VENGEANCE, MOVE_POWER_TRIP, MOVE_HYPER_FANG, MOVE_BULK_UP}
-    },
-    {
-    .iv = 0,
-    .lvl = 49,
-    .species = SPECIES_CAT_WILY_FORM,
-    .moves = {MOVE_SLICE_DICE, MOVE_REVENGE, MOVE_FURY_SWIPES, MOVE_BULK_UP}
-    },
-    {
-    .iv = 0,
-    .lvl = 47,
-    .species = SPECIES_SOURHOG,
-    .moves = {MOVE_PAIN_SPLIT, MOVE_SUPERPOWER, MOVE_ODOR_SLEUTH, MOVE_BULK_UP}
-    },
-    {
-    .iv = 0,
-    .lvl = 52,
-    .species = SPECIES_BEAR_GRIZZLY_FORM,
-    .moves = {MOVE_SLICE_DICE, MOVE_THRASH, MOVE_REST, MOVE_BULK_UP}
-    }
-};
+
 
 //ROUTE13
 
@@ -3678,33 +3609,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE33_ZAMORAK1[] = {
 };
 
 //VARROCK GYM
-static const struct TrainerMonNoItemCustomMoves sParty_VARROCK_GYM_KINGROALD[] = {
-    {
-    .iv = 0,
-    .lvl = 42,
-    .species = SPECIES_RABBIT,
-    .moves = {MOVE_DRAINING_KISS, MOVE_BOUNCE, MOVE_HIGH_JUMP_KICK, MOVE_RETURN}
-    },
-    {
-    .iv = 0,
-    .lvl = 42,
-    .species = SPECIES_RAT_KING_FORM,
-    .moves = {MOVE_DRAINING_KISS, MOVE_VENGEANCE, MOVE_BULK_UP, MOVE_DIG}
-    },
-    {
-    .iv = 0,
-    .lvl = 40,
-    .species = SPECIES_IMPLING_KINGLY_FORM,
-    .moves = {MOVE_DRAINING_KISS, MOVE_U_TURN, MOVE_SNARL, MOVE_EMBARGO}
-    },
-    {
-    .iv = 0,
-    .lvl = 41,
-    .species = SPECIES_GIANT_FROG_ROYAL_FORM,
-    .moves = {MOVE_DRAINING_KISS, MOVE_BOUNCE, MOVE_MUD_BOMB, MOVE_BUBBLE_BEAM}
-    },
 
-};
 static const struct TrainerMonNoItemDefaultMoves sParty_VARROCK_GYM_1[] = {
     {
     .iv = 0,
@@ -3822,33 +3727,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE15_TRAINER_6[] = {
     }
 };
 
-//ALKHARID GYM
-static const struct TrainerMonNoItemCustomMoves sParty_ALKHARID_GYM_PRINCE_ALI[] = {
-    {
-    .iv = 0,
-    .lvl = 42,
-    .species = SPECIES_UGHTANKI,
-    .moves = {MOVE_POWER_GEM, MOVE_BOUNCE, MOVE_HIGH_JUMP_KICK, MOVE_RETURN}
-    },
-    {
-    .iv = 0,
-    .lvl = 42,
-    .species = SPECIES_SCORPION_KING_FORM,
-    .moves = {MOVE_POWER_GEM, MOVE_VENGEANCE, MOVE_BULK_UP, MOVE_DIG}
-    },
-    {
-    .iv = 0,
-    .lvl = 40,
-    .species = SPECIES_VULTURE,
-    .moves = {MOVE_POWER_GEM, MOVE_U_TURN, MOVE_SNARL, MOVE_EMBARGO}
-    },
-    {
-    .iv = 0,
-    .lvl = 41,
-    .species = SPECIES_WOLF_DESERT_FORM,
-    .moves = {MOVE_POWER_GEM, MOVE_BOUNCE, MOVE_MUD_BOMB, MOVE_BUBBLE_BEAM}
-    }  
-};
+
 
 
 //BARROWS
@@ -4109,3 +3988,257 @@ static const struct TrainerMonNoItemDefaultMoves sParty_SCAPEINK[] = {
     },
 };
 
+
+
+//GYM LEADERS
+
+//#GYM - Lumbridge - Duke Horacio          
+static const struct TrainerMonNoItemCustomMoves sParty_LEADER_DUKE_1[] = { //STORYMODE
+    {
+    .iv = 0,
+    .lvl = 8,
+    .species = SPECIES_BABY_YAK,
+    .moves = {MOVE_SLACK_OFF, MOVE_ABSORB, MOVE_TACKLE, MOVE_GROWL}
+    },
+    {
+    .iv = 0,
+    .lvl = 10,
+    .species = SPECIES_PUPPY_MUTT_FORM,
+    .moves = {MOVE_SLACK_OFF, MOVE_TACKLE, MOVE_HOWL, MOVE_GROWL}
+    },
+    {
+    .iv = 0,
+    .lvl = 9,
+    .species = SPECIES_ROOSTER_NORMAL_FORM,
+    .moves = {MOVE_SLACK_OFF, MOVE_TACKLE, MOVE_FEATHER_DANCE, MOVE_PECK}
+    }
+};/*
+static const struct TrainerMonNoItemCustomMoves sParty_LEADER_DUKE_2[] = {
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_ROOSTER_NORMAL_FORM,
+    .moves = {MOVE_SLACK_OFF, MOVE_TACKLE, MOVE_FEATHER_DANCE, MOVE_PECK}
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_SHEEPDOG,
+    .moves = {MOVE_SLACK_OFF, MOVE_TACKLE, MOVE_HOWL, MOVE_GROWL}
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_KEBBIT,
+    .moves = {MOVE_SLACK_OFF, MOVE_ABSORB, MOVE_TACKLE, MOVE_GROWL}
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_YAK_PACK_FORM,
+    .moves = {MOVE_SLACK_OFF, MOVE_ABSORB, MOVE_TACKLE, MOVE_GROWL}
+    }
+};
+static const struct TrainerMonNoItemCustomMoves sParty_LEADER_DUKE_FINAL[] = {
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_DREADFOWL,
+    .moves = {MOVE_SLACK_OFF, MOVE_ABSORB, MOVE_TACKLE, MOVE_GROWL}
+    },
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_SHEEPDOG,
+    .moves = {MOVE_SLACK_OFF, MOVE_ABSORB, MOVE_TACKLE, MOVE_GROWL}
+    },
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_CAT_PURPLE_FORM,
+    .moves = {MOVE_SLACK_OFF, MOVE_ABSORB, MOVE_TACKLE, MOVE_GROWL}
+    },
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_YAK_PACK_FORM,
+    .moves = {MOVE_SLACK_OFF, MOVE_ABSORB, MOVE_TACKLE, MOVE_GROWL}
+    },
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_KEBBIT_RAZOR_FORM,
+    .moves = {MOVE_SLACK_OFF, MOVE_ABSORB, MOVE_TACKLE, MOVE_GROWL}
+    },
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_RAM_GOLDEN_FORM,
+    .moves = {MOVE_SLACK_OFF, MOVE_ABSORB, MOVE_TACKLE, MOVE_GROWL}
+    }
+};
+*/
+
+//#GYM - Falador - Sir Amik Varze        
+static const struct TrainerMonNoItemCustomMoves sParty_FALADOR_GYM_AMIKVARZE[] = {
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_BELTFISH,
+    .moves = {MOVE_AQUA_JET, MOVE_WRAP, MOVE_WATER_PULSE, MOVE_CHARGE_BEAM}
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_CRAB_RUMPUMPED_FORM,
+    .moves = {MOVE_RAZOR_SHELL, MOVE_ROCK_SMASH, MOVE_SLAM, MOVE_NONE}
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_SWAN,
+    .moves = {MOVE_BITE, MOVE_HOWL, MOVE_BUBBLE, MOVE_MUD_SPORT}
+    }
+};/*
+static const struct TrainerMonNoItemCustomMoves sParty_LEADER_SIRAMIKVARZE_FINAL[] = {
+    {
+    .iv = 0,
+    .lvl = 28,
+    .species = SPECIES_BELTFISH,
+    .moves = {MOVE_AQUA_JET, MOVE_WRAP, MOVE_WATER_PULSE, MOVE_CHARGE_BEAM}
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_CRAB_RUMPUMPED_FORM,
+    .moves = {MOVE_RAZOR_SHELL, MOVE_ROCK_SMASH, MOVE_SLAM, MOVE_NONE}
+    },
+    {
+    .iv = 0,
+    .lvl = 30,
+    .species = SPECIES_SWAN,
+    .moves = {MOVE_BITE, MOVE_HOWL, MOVE_BUBBLE, MOVE_MUD_SPORT}
+    }
+};
+*/
+
+//#GYM - AlKharid - Prince Ali        
+static const struct TrainerMonNoItemCustomMoves sParty_ALKHARID_GYM_PRINCE_ALI[] = {
+    {
+    .iv = 0,
+    .lvl = 42,
+    .species = SPECIES_UGHTANKI,
+    .moves = {MOVE_POWER_GEM, MOVE_BOUNCE, MOVE_HIGH_JUMP_KICK, MOVE_RETURN}
+    },
+    {
+    .iv = 0,
+    .lvl = 42,
+    .species = SPECIES_SCORPION_KING_FORM,
+    .moves = {MOVE_POWER_GEM, MOVE_VENGEANCE, MOVE_BULK_UP, MOVE_DIG}
+    },
+    {
+    .iv = 0,
+    .lvl = 40,
+    .species = SPECIES_VULTURE,
+    .moves = {MOVE_POWER_GEM, MOVE_U_TURN, MOVE_SNARL, MOVE_EMBARGO}
+    },
+    {
+    .iv = 0,
+    .lvl = 41,
+    .species = SPECIES_WOLF_DESERT_FORM,
+    .moves = {MOVE_POWER_GEM, MOVE_BOUNCE, MOVE_MUD_BOMB, MOVE_BUBBLE_BEAM}
+    }  
+};
+
+
+//Gunthor        #GYM - Barbarian Village
+static const struct TrainerMonNoItemCustomMoves sParty_BARBARIAN_GYM_GUNTHOR[] = {
+    {
+    .iv = 0,
+    .lvl = 48,
+    .species = SPECIES_UNICORN_BLACK_FORM,
+    .moves = {MOVE_HORN_ATTACK, MOVE_RAGE, MOVE_CLOSE_COMBAT, MOVE_BULK_UP}
+    },
+    {
+    .iv = 0,
+    .lvl = 48,
+    .species = SPECIES_ANGRY_RAT,
+    .moves = {MOVE_VENGEANCE, MOVE_POWER_TRIP, MOVE_HYPER_FANG, MOVE_BULK_UP}
+    },
+    {
+    .iv = 0,
+    .lvl = 49,
+    .species = SPECIES_CAT_WILY_FORM,
+    .moves = {MOVE_SLICE_DICE, MOVE_REVENGE, MOVE_FURY_SWIPES, MOVE_BULK_UP}
+    },
+    {
+    .iv = 0,
+    .lvl = 47,
+    .species = SPECIES_SOURHOG,
+    .moves = {MOVE_PAIN_SPLIT, MOVE_SUPERPOWER, MOVE_ODOR_SLEUTH, MOVE_BULK_UP}
+    },
+    {
+    .iv = 0,
+    .lvl = 52,
+    .species = SPECIES_BEAR_GRIZZLY_FORM,
+    .moves = {MOVE_SLICE_DICE, MOVE_THRASH, MOVE_REST, MOVE_BULK_UP}
+    }
+};
+
+
+//#GYM - VARROCK - King Roald        
+static const struct TrainerMonNoItemCustomMoves sParty_VARROCK_GYM_KINGROALD[] = {
+    {
+    .iv = 0,
+    .lvl = 42,
+    .species = SPECIES_RABBIT,
+    .moves = {MOVE_DRAINING_KISS, MOVE_BOUNCE, MOVE_HIGH_JUMP_KICK, MOVE_RETURN}
+    },
+    {
+    .iv = 0,
+    .lvl = 42,
+    .species = SPECIES_RAT_KING_FORM,
+    .moves = {MOVE_DRAINING_KISS, MOVE_VENGEANCE, MOVE_BULK_UP, MOVE_DIG}
+    },
+    {
+    .iv = 0,
+    .lvl = 40,
+    .species = SPECIES_IMPLING_KINGLY_FORM,
+    .moves = {MOVE_DRAINING_KISS, MOVE_U_TURN, MOVE_SNARL, MOVE_EMBARGO}
+    },
+    {
+    .iv = 0,
+    .lvl = 41,
+    .species = SPECIES_GIANT_FROG_ROYAL_FORM,
+    .moves = {MOVE_DRAINING_KISS, MOVE_BOUNCE, MOVE_MUD_BOMB, MOVE_BUBBLE_BEAM}
+    }
+};
+/*
+//#GYM - KARAMJA - TokHaar
+static const struct TrainerMonNoItemCustomMoves sParty_LEADER_TOKHAAR_FINAL[] = {
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_NONE,
+    .moves = {MOVE_DRAINING_KISS, MOVE_BOUNCE, MOVE_HIGH_JUMP_KICK, MOVE_RETURN}
+    }
+};
+//#GYM - EDGEVILLE - Vannaka
+static const struct TrainerMonNoItemCustomMoves sParty_LEADER_VANNAKA_FINAL[] = {
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_NONE,
+    .moves = {MOVE_DRAINING_KISS, MOVE_BOUNCE, MOVE_HIGH_JUMP_KICK, MOVE_RETURN}
+    }
+};
+//#GYM - DRAYNOR - Wise Old Man
+static const struct TrainerMonNoItemCustomMoves sParty_LEADER_WISEOLDMAN_FINAL[] = {
+    {
+    .iv = 0,
+    .lvl = 100,
+    .species = SPECIES_NONE,
+    .moves = {MOVE_DRAINING_KISS, MOVE_BOUNCE, MOVE_HIGH_JUMP_KICK, MOVE_RETURN}
+    }
+};
+*/

@@ -208,34 +208,20 @@ script BarbarianVillage_GYM_STATE{
 
 
 
-
-script NPC_BARBGYM_BARBARIAN_3
-{
-    if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 2)
-            { 
-                lock
-                faceplayer
-                namebox("Haakon")
-                msgbox(format("RAAAGGGGGUUHH!\pHello {PLAYER} it is good to see you again."))
-                hidenamebox
-                closemessage
-                release
-                end
-            }
-}
-
-
-
-
-
-
-
 script NPC_BARBGYM_BARBARIAN_1
 {
     
     lock
     faceplayer
     namebox("Haakon")
+    if (flag(FLAG_BADGE06_GET) == TRUE) {
+        msgbox(format("Your battle was impressive!\pYou are now a honnorary Barbarian!\pYou should go see Litara about accessing our Stronghold."))
+        hidenamebox
+        closemessage
+        release
+        end
+    }
+    
     msgbox(format("Welcome to the Gym of Barbarian Village! Otherwise known as Gunnarsgrunn.\pHere we do things differently compared to other gyms.\pYou must battle in three back to back to back battles without breaks before being able to challenge our Gym Leader, Gunthor.\pAre you ready to start your gym challenge?!"), MSGBOX_YESNO)
 			if (var(VAR_RESULT))
             { 
@@ -274,11 +260,6 @@ script NPC_BARBGYM_BARBARIAN_1
     release
     end
 }
-
-
-
-
-
 
 script NPC_BARBGYM_BARBARIAN_2
 {
@@ -618,4 +599,87 @@ movement BARBARIAN_GYM_MOVEMENT_13{
 
 
 
+
+//NPC
+script BARBARIAN_GYM_NPC_1{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    msgbox(format("Give your monster a Beer and watch as it boosts the PP of moves."))
+    hidenamebox
+    release
+    end
+}
+script BARBARIAN_GYM_NPC_2{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    msgbox(format("The way you battle is cool!"))
+    hidenamebox
+    release
+    end
+}
+script BARBARIAN_GYM_NPC_3{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    msgbox(format("There are many strong monsters in our Stronghold."))
+    hidenamebox
+    release
+    end
+}
+script BARBARIAN_GYM_NPC_4{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    msgbox(format("There is a rumour of a fierce rainbow treasure deep within our Stronghold.\pI have no idea what it could be though."))
+    hidenamebox
+    release
+    end
+}
+script BARBARIAN_GYM_NPC_5{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    msgbox(format("While us Barbarians do not condone the use of Runes.\pIt can be argued whether they are allowed to evolve our monsters."))
+    hidenamebox
+    release
+    end
+}
+script BARBARIAN_GYM_NPC_6{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    msgbox(format("The move Brutal Swing is pretty brutal!"))
+    hidenamebox
+    release
+    end
+}
+script BARBARIAN_GYM_NPC_7{
+    lock
+    faceplayer
+    namebox("Barbarian")
+    msgbox(format("I can only make it to the 2nd level of the stronghold."))
+    hidenamebox
+    release
+    end
+}
+script BARBARIAN_GYM_NPC_GUNTHOR{
+    lock
+    faceplayer
+    namebox("Gunthor")
+    msgbox(format("RAAAGGGGGUUHH!\pHello {PLAYER}, I await our rematch!\pBut now is too soon.\pI expect you to be stronger when next week battle."))
+    hidenamebox
+    release
+    end
+}
+script BARBARIAN_GYM_NPC_ATLAS{
+    lock
+    faceplayer
+    namebox("Atlas")
+    msgbox(format("If you are up for a challenge you should enter our stronghold."))
+    hidenamebox
+    release
+    end
+}
 

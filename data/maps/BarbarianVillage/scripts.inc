@@ -1,51 +1,74 @@
 BarbarianVillage_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, BarbarianVillage_MapScripts_MAP_SCRIPT_ON_TRANSITION
+	map_script MAP_SCRIPT_ON_LOAD, BarbarianVillage_MapScripts_MAP_SCRIPT_ON_LOAD
 	.byte 0
 
-BarbarianVillage_MapScripts_MAP_SCRIPT_ON_TRANSITION:
-	goto BarbarianVillage_STATE
+BarbarianVillage_MapScripts_MAP_SCRIPT_ON_LOAD:
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq BarbarianVillage_MapScripts_MAP_SCRIPT_ON_LOAD_1
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 1
+	goto_if_eq BarbarianVillage_MapScripts_MAP_SCRIPT_ON_LOAD_2
+	return
+
+BarbarianVillage_MapScripts_MAP_SCRIPT_ON_LOAD_1:
+	call STORYMODE_STATE_BARBARIAN_VILLAGE
+	return
+
+BarbarianVillage_MapScripts_MAP_SCRIPT_ON_LOAD_2:
+	call OPENWORLDMODE_STATE_BARBARIAN_VILLAGE
 	return
 
 
-BarbarianVillage_STATE::
+STORYMODE_STATE_BARBARIAN_VILLAGE::
 	switch VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE
-	case 0, BarbarianVillage_STATE_2
-	case 1, BarbarianVillage_STATE_3
-	case 2, BarbarianVillage_STATE_3
-	case 3, BarbarianVillage_STATE_4
+	case 0, STORYMODE_STATE_BARBARIAN_VILLAGE_2
+	case 1, STORYMODE_STATE_BARBARIAN_VILLAGE_3
+	case 2, STORYMODE_STATE_BARBARIAN_VILLAGE_3
+	case 3, STORYMODE_STATE_BARBARIAN_VILLAGE_4
 	return
 
-BarbarianVillage_STATE_2:
+STORYMODE_STATE_BARBARIAN_VILLAGE_2:
 	setobjectxyperm 6, 11, 19
 	setobjectmovementtype 6, MOVEMENT_TYPE_FACE_DOWN
 	setobjectxyperm 7, 12, 19
 	setobjectmovementtype 7, MOVEMENT_TYPE_FACE_DOWN
-	end
+	return
 
-BarbarianVillage_STATE_3:
-	end
+STORYMODE_STATE_BARBARIAN_VILLAGE_3:
+	return
 
-BarbarianVillage_STATE_4:
+STORYMODE_STATE_BARBARIAN_VILLAGE_4:
 	setobjectxyperm 2, 13, 27
 	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
-	end
+	return
+
+
+OPENWORLDMODE_STATE_BARBARIAN_VILLAGE::
+	goto_if_set FLAG_BADGE06_GET, OPENWORLDMODE_STATE_BARBARIAN_VILLAGE_1
+	return
+
+OPENWORLDMODE_STATE_BARBARIAN_VILLAGE_1:
+	setobjectxyperm 2, 13, 27
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
+	return
 
 
 NPC_BARB_BLOCKADE_1::
 	lock
 	faceplayer
 	namebox NPC_BARB_BLOCKADE_1_Text_0
-	compare VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 0
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 1
 	goto_if_eq NPC_BARB_BLOCKADE_1_2
-	compare VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 1
+	compare VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 0
 	goto_if_eq NPC_BARB_BLOCKADE_1_5
-NPC_BARB_BLOCKADE_1_4:
+	compare VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 1
+	goto_if_eq NPC_BARB_BLOCKADE_1_8
+NPC_BARB_BLOCKADE_1_7:
 	compare VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 2
-	goto_if_eq NPC_BARB_BLOCKADE_1_20
-NPC_BARB_BLOCKADE_1_19:
+	goto_if_eq NPC_BARB_BLOCKADE_1_23
+NPC_BARB_BLOCKADE_1_22:
 	compare VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 3
-	goto_if_eq NPC_BARB_BLOCKADE_1_26
-NPC_BARB_BLOCKADE_1_25:
+	goto_if_eq NPC_BARB_BLOCKADE_1_29
+NPC_BARB_BLOCKADE_1_28:
 	hidenamebox
 	closemessage
 	release
@@ -53,25 +76,31 @@ NPC_BARB_BLOCKADE_1_25:
 
 NPC_BARB_BLOCKADE_1_2:
 	msgbox NPC_BARB_BLOCKADE_1_Text_1
-	goto_if_set FLAG_BADGE01_GET, NPC_BARB_BLOCKADE_1_11
-NPC_BARB_BLOCKADE_1_9:
+	hidenamebox
+	release
+	end
+
+NPC_BARB_BLOCKADE_1_5:
+	msgbox NPC_BARB_BLOCKADE_1_Text_2
+	goto_if_set FLAG_BADGE01_GET, NPC_BARB_BLOCKADE_1_14
+NPC_BARB_BLOCKADE_1_12:
 	hidenamebox
 	closemessage
-	msgbox NPC_BARB_BLOCKADE_1_Text_3, MSGBOX_YESNO
+	msgbox NPC_BARB_BLOCKADE_1_Text_4, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_ne NPC_BARB_BLOCKADE_1_22
+	goto_if_ne NPC_BARB_BLOCKADE_1_25
 	namebox NPC_BARB_BLOCKADE_1_Text_0
-	msgbox NPC_BARB_BLOCKADE_1_Text_5
+	msgbox NPC_BARB_BLOCKADE_1_Text_6
 	hidenamebox
 	closemessage
 	release
 	end
 
-NPC_BARB_BLOCKADE_1_5:
-	msgbox NPC_BARB_BLOCKADE_1_Text_6
-	goto NPC_BARB_BLOCKADE_1_4
+NPC_BARB_BLOCKADE_1_8:
+	msgbox NPC_BARB_BLOCKADE_1_Text_7
+	goto NPC_BARB_BLOCKADE_1_7
 
-NPC_BARB_BLOCKADE_1_7:
+NPC_BARB_BLOCKADE_1_10:
 	hidenamebox
 	closemessage
 	applymovement 6, BARBARIANVILLAGE_BLOCK_1
@@ -81,40 +110,40 @@ NPC_BARB_BLOCKADE_1_7:
 	release
 	end
 
-NPC_BARB_BLOCKADE_1_8:
-	msgbox NPC_BARB_BLOCKADE_1_Text_2
+NPC_BARB_BLOCKADE_1_11:
+	msgbox NPC_BARB_BLOCKADE_1_Text_3
 	hidenamebox
 	closemessage
-	goto NPC_BARB_BLOCKADE_1_7
+	goto NPC_BARB_BLOCKADE_1_10
 
-NPC_BARB_BLOCKADE_1_10:
-	goto_if_set FLAG_BADGE03_GET, NPC_BARB_BLOCKADE_1_15
-	goto NPC_BARB_BLOCKADE_1_9
-
-NPC_BARB_BLOCKADE_1_11:
-	goto_if_set FLAG_BADGE02_GET, NPC_BARB_BLOCKADE_1_10
-	goto NPC_BARB_BLOCKADE_1_9
+NPC_BARB_BLOCKADE_1_13:
+	goto_if_set FLAG_BADGE03_GET, NPC_BARB_BLOCKADE_1_18
+	goto NPC_BARB_BLOCKADE_1_12
 
 NPC_BARB_BLOCKADE_1_14:
-	goto_if_set FLAG_BADGE05_GET, NPC_BARB_BLOCKADE_1_8
-	goto NPC_BARB_BLOCKADE_1_9
+	goto_if_set FLAG_BADGE02_GET, NPC_BARB_BLOCKADE_1_13
+	goto NPC_BARB_BLOCKADE_1_12
 
-NPC_BARB_BLOCKADE_1_15:
-	goto_if_set FLAG_BADGE04_GET, NPC_BARB_BLOCKADE_1_14
-	goto NPC_BARB_BLOCKADE_1_9
+NPC_BARB_BLOCKADE_1_17:
+	goto_if_set FLAG_BADGE05_GET, NPC_BARB_BLOCKADE_1_11
+	goto NPC_BARB_BLOCKADE_1_12
 
-NPC_BARB_BLOCKADE_1_20:
-	msgbox NPC_BARB_BLOCKADE_1_Text_7
-	goto NPC_BARB_BLOCKADE_1_19
+NPC_BARB_BLOCKADE_1_18:
+	goto_if_set FLAG_BADGE04_GET, NPC_BARB_BLOCKADE_1_17
+	goto NPC_BARB_BLOCKADE_1_12
 
-NPC_BARB_BLOCKADE_1_22:
-	namebox NPC_BARB_BLOCKADE_1_Text_0
-	msgbox NPC_BARB_BLOCKADE_1_Text_4
-	goto NPC_BARB_BLOCKADE_1_7
-
-NPC_BARB_BLOCKADE_1_26:
+NPC_BARB_BLOCKADE_1_23:
 	msgbox NPC_BARB_BLOCKADE_1_Text_8
-	goto NPC_BARB_BLOCKADE_1_25
+	goto NPC_BARB_BLOCKADE_1_22
+
+NPC_BARB_BLOCKADE_1_25:
+	namebox NPC_BARB_BLOCKADE_1_Text_0
+	msgbox NPC_BARB_BLOCKADE_1_Text_5
+	goto NPC_BARB_BLOCKADE_1_10
+
+NPC_BARB_BLOCKADE_1_29:
+	msgbox NPC_BARB_BLOCKADE_1_Text_9
+	goto NPC_BARB_BLOCKADE_1_28
 
 
 BARBARIANVILLAGE_BLOCK_1:
@@ -287,25 +316,28 @@ NPC_BARB_BLOCKADE_1_Text_0:
 	.string "Barbarian$"
 
 NPC_BARB_BLOCKADE_1_Text_1:
+	.string "Our Chieftain is very strong.\p"
+	.string "Do not underestimate him!$"
+
+NPC_BARB_BLOCKADE_1_Text_2:
 	.string "Only the strong may enter our longhall!\p"
 	.string "You should probably leave if you know\n"
 	.string "what is good for you.$"
 
-NPC_BARB_BLOCKADE_1_Text_2:
+NPC_BARB_BLOCKADE_1_Text_3:
 	.string "Ohhoho!!\p"
 	.string "Impressive you have at least four\n"
 	.string "Badges.\p"
 	.string "You may pass, we shall watch your\n"
 	.string "battle and cheer for your victory!$"
 
-NPC_BARB_BLOCKADE_1_Text_3:
-	.string "WARNING - It is recommended that you\n"
-	.string "have at least 5 Gym Badges before\l"
-	.string "proceeding.\p"
-	.string "Are you sure you would like to enter the\n"
-	.string "Gym?$"
-
 NPC_BARB_BLOCKADE_1_Text_4:
+	.string "It is recommended that you have at\n"
+	.string "least 4 Gym Badges attempting our Gym.\p"
+	.string "Are you sure you would like to challenge\n"
+	.string "the Gym?$"
+
+NPC_BARB_BLOCKADE_1_Text_5:
 	.string "Ohho, so this challenger thinks they\n"
 	.string "have what it takes to beat our\l"
 	.string "Chieftain?\p"
@@ -313,17 +345,17 @@ NPC_BARB_BLOCKADE_1_Text_4:
 	.string "well.\p"
 	.string "You may pass.$"
 
-NPC_BARB_BLOCKADE_1_Text_5:
+NPC_BARB_BLOCKADE_1_Text_6:
 	.string "Come back when you are stronger!$"
 
-NPC_BARB_BLOCKADE_1_Text_6:
+NPC_BARB_BLOCKADE_1_Text_7:
 	.string "Good luck on your gym challenge.$"
 
-NPC_BARB_BLOCKADE_1_Text_7:
+NPC_BARB_BLOCKADE_1_Text_8:
 	.string "We knew you would be struggling but\n"
 	.string "good luck on your gym challenge.$"
 
-NPC_BARB_BLOCKADE_1_Text_8:
+NPC_BARB_BLOCKADE_1_Text_9:
 	.string "You defeated our Chieftain!\p"
 	.string "We are impressed, well done!$"
 

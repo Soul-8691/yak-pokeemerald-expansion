@@ -13,7 +13,7 @@ GYMLEADER_DUKE::
 	namebox GYMLEADER_DUKE_Text_0
 	msgbox GYMLEADER_DUKE_Text_1
 	hidenamebox
-	trainerbattle_no_intro TRAINER_DUKE, GYMLEADER_DUKE_Text_2
+	trainerbattle_no_intro TRAINER_LEADER_DUKE_1, GYMLEADER_DUKE_Text_2
 	goto GYMLEADER_DUKE_BATTLEWON
 	release
 	end

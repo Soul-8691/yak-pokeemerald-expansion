@@ -33,7 +33,7 @@
 #define TRAINER_LUMBRIDGE_GYM2                21
 #define TRAINER_LUMBRIDGE_GYM3                22
 #define TRAINER_LUMBRIDGE_GYM4                23
-#define TRAINER_DUKE                          24
+#define TRAINER_LEADER_DUKE_1                 24
 
 //lumbridge swamp
 #define TRAINER_MUGGER_LUM_SWAMP              25

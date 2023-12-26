@@ -154,38 +154,30 @@ BarbarianVillage_GYM_STATE_5:
 	return
 
 
-NPC_BARBGYM_BARBARIAN_3::
-	compare VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE, 2
-	goto_if_eq NPC_BARBGYM_BARBARIAN_3_1
-	return
-
-NPC_BARBGYM_BARBARIAN_3_1:
-	lock
-	faceplayer
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
-	msgbox NPC_BARBGYM_BARBARIAN_3_Text_1
-	hidenamebox
-	closemessage
-	release
-	end
-
-
 NPC_BARBGYM_BARBARIAN_1::
 	lock
 	faceplayer
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
-	msgbox NPC_BARBGYM_BARBARIAN_1_Text_0, MSGBOX_YESNO
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
+	goto_if_set FLAG_BADGE06_GET, NPC_BARBGYM_BARBARIAN_1_2
+	msgbox NPC_BARBGYM_BARBARIAN_1_Text_2, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_ne NPC_BARBGYM_BARBARIAN_1_2
-	msgbox NPC_BARBGYM_BARBARIAN_1_Text_2
+	goto_if_ne NPC_BARBGYM_BARBARIAN_1_5
+	msgbox NPC_BARBGYM_BARBARIAN_1_Text_4
 	hidenamebox
 	closemessage
-NPC_BARBGYM_BARBARIAN_1_1:
+NPC_BARBGYM_BARBARIAN_1_4:
 	release
 	end
 
 NPC_BARBGYM_BARBARIAN_1_2:
 	msgbox NPC_BARBGYM_BARBARIAN_1_Text_1
+	hidenamebox
+	closemessage
+	release
+	end
+
+NPC_BARBGYM_BARBARIAN_1_5:
+	msgbox NPC_BARBGYM_BARBARIAN_1_Text_3
 	hidenamebox
 	closemessage
 	applymovement 10, BARBARIAN_GYM_MOVEMENT_2
@@ -203,19 +195,19 @@ NPC_BARBGYM_BARBARIAN_1_2:
 	fadescreen FADE_FROM_BLACK
 	waitmovement 0
 	goto NPC_BARBGYM_BARBARIAN_2
-	goto NPC_BARBGYM_BARBARIAN_1_1
+	goto NPC_BARBGYM_BARBARIAN_1_4
 
 
 NPC_BARBGYM_BARBARIAN_2::
 	applymovement 10, BARBARIAN_GYM_MOVEMENT_4
 	waitmovement 0
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
 	msgbox NPC_BARBGYM_BARBARIAN_2_Text_0
 	hidenamebox
 	closemessage
 	playse SE_M_ENCORE2
 	call ContestHall_EventScript_VObjectAudienceLookAround
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
 	msgbox NPC_BARBGYM_BARBARIAN_2_Text_1
 	applymovement 10, Movement_WALKUP
 	waitmovement 0
@@ -228,7 +220,7 @@ NPC_BARBGYM_BARBARIAN_2::
 	call ContestHall_EventScript_VObjectAudienceLookAround
 	applymovement 10, Movement_FACERIGHT
 	waitmovement 0
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
 	msgbox NPC_BARBGYM_BARBARIAN_2_Text_3
 	applymovement 6, BARBARIAN_GYM_MOVEMENT_5
 	playse SE_LEDGE
@@ -250,7 +242,7 @@ NPC_BARBGYM_BARBARIAN_2::
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKRIGHT
 	waitmovement 0
 	trainerbattle_no_intro TRAINER_BARBARIAN_GYM_TRAINER_1, NPC_BARBGYM_BARBARIAN_2_Text_7
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
 	msgbox NPC_BARBGYM_BARBARIAN_2_Text_8
 	hidenamebox
 	closemessage
@@ -261,7 +253,7 @@ NPC_BARBGYM_BARBARIAN_2::
 	waitmovement 6
 	applymovement 10, BARBARIAN_GYM_MOVEMENT_7
 	waitmovement 0
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
 	msgbox NPC_BARBGYM_BARBARIAN_2_Text_9
 	hidenamebox
 	closemessage
@@ -276,7 +268,7 @@ NPC_BARBGYM_BARBARIAN_2::
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKRIGHT
 	waitmovement 0
 	trainerbattle_no_intro TRAINER_BARBARIAN_GYM_TRAINER_2, NPC_BARBGYM_BARBARIAN_2_Text_12
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
 	msgbox NPC_BARBGYM_BARBARIAN_2_Text_13
 	closemessage
 	hidenamebox
@@ -287,13 +279,13 @@ NPC_BARBGYM_BARBARIAN_2::
 	waitmovement 2
 	applymovement 10, BARBARIAN_GYM_MOVEMENT_7
 	waitmovement 0
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
 	msgbox NPC_BARBGYM_BARBARIAN_2_Text_14
 	hidenamebox
 	closemessage
 	playse SE_M_ENCORE2
 	call ContestHall_EventScript_VObjectAudienceLookAround
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
 	msgbox NPC_BARBGYM_BARBARIAN_2_Text_15
 	hidenamebox
 	closemessage
@@ -303,18 +295,18 @@ NPC_BARBGYM_BARBARIAN_2::
 	delay 15
 	applymovement 10, Movement_FACELEFT
 	waitmovement 0
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
 	msgbox NPC_BARBGYM_BARBARIAN_2_Text_17
 	hidenamebox
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_WALKRIGHT
 	waitmovement 0
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
 	msgbox NPC_BARBGYM_BARBARIAN_2_Text_18
 	hidenamebox
 	closemessage
 	trainerbattle_no_intro TRAINER_BARBARIAN_GYM_TRAINER_3, NPC_BARBGYM_BARBARIAN_2_Text_19
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
 	msgbox NPC_BARBGYM_BARBARIAN_2_Text_8
 	hidenamebox
 	closemessage
@@ -322,7 +314,7 @@ NPC_BARBGYM_BARBARIAN_2::
 	call ContestHall_EventScript_VObjectAudienceLookAround
 	applymovement 10, Movement_FACEDOWN
 	waitmovement 0
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
 	msgbox NPC_BARBGYM_BARBARIAN_2_Text_20
 	hidenamebox
 	closemessage
@@ -339,7 +331,7 @@ NPC_BARBGYM_BARBARIAN_2::
 	closemessage
 	hidenamebox
 	trainerbattle_no_intro TRAINER_BARBARIAN_GYM_GUNTHOR, NPC_BARBGYM_BARBARIAN_2_Text_25
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
 	msgbox NPC_BARBGYM_BARBARIAN_2_Text_26
 	hidenamebox
 	playse SE_M_ENCORE2
@@ -365,7 +357,7 @@ NPC_BARBGYM_BARBARIAN_2::
 	savebgm MUS_PS_BARBARIAN_VILLAGE
 	applymovement 10, Movement_WALKDOWN
 	waitmovement 0
-	namebox NPC_BARBGYM_BARBARIAN_3_Text_0
+	namebox NPC_BARBGYM_BARBARIAN_1_Text_0
 	msgbox NPC_BARBGYM_BARBARIAN_2_Text_30
 	closemessage
 	hidenamebox
@@ -522,15 +514,106 @@ BARBARIAN_GYM_MOVEMENT_13:
 	walk_slow_left
 	step_end
 
-NPC_BARBGYM_BARBARIAN_3_Text_0:
-	.string "Haakon$"
+BARBARIAN_GYM_NPC_1::
+	lock
+	faceplayer
+	namebox BARBARIAN_GYM_NPC_1_Text_0
+	msgbox BARBARIAN_GYM_NPC_1_Text_1
+	hidenamebox
+	release
+	end
 
-NPC_BARBGYM_BARBARIAN_3_Text_1:
-	.string "RAAAGGGGGUUHH!\p"
-	.string "Hello {PLAYER} it is good to see you\n"
-	.string "again.$"
+
+BARBARIAN_GYM_NPC_2::
+	lock
+	faceplayer
+	namebox BARBARIAN_GYM_NPC_1_Text_0
+	msgbox BARBARIAN_GYM_NPC_2_Text_0
+	hidenamebox
+	release
+	end
+
+
+BARBARIAN_GYM_NPC_3::
+	lock
+	faceplayer
+	namebox BARBARIAN_GYM_NPC_1_Text_0
+	msgbox BARBARIAN_GYM_NPC_3_Text_0
+	hidenamebox
+	release
+	end
+
+
+BARBARIAN_GYM_NPC_4::
+	lock
+	faceplayer
+	namebox BARBARIAN_GYM_NPC_1_Text_0
+	msgbox BARBARIAN_GYM_NPC_4_Text_0
+	hidenamebox
+	release
+	end
+
+
+BARBARIAN_GYM_NPC_5::
+	lock
+	faceplayer
+	namebox BARBARIAN_GYM_NPC_1_Text_0
+	msgbox BARBARIAN_GYM_NPC_5_Text_0
+	hidenamebox
+	release
+	end
+
+
+BARBARIAN_GYM_NPC_6::
+	lock
+	faceplayer
+	namebox BARBARIAN_GYM_NPC_1_Text_0
+	msgbox BARBARIAN_GYM_NPC_6_Text_0
+	hidenamebox
+	release
+	end
+
+
+BARBARIAN_GYM_NPC_7::
+	lock
+	faceplayer
+	namebox BARBARIAN_GYM_NPC_1_Text_0
+	msgbox BARBARIAN_GYM_NPC_7_Text_0
+	hidenamebox
+	release
+	end
+
+
+BARBARIAN_GYM_NPC_GUNTHOR::
+	lock
+	faceplayer
+	namebox NPC_BARBGYM_BARBARIAN_2_Text_22
+	msgbox BARBARIAN_GYM_NPC_GUNTHOR_Text_0
+	hidenamebox
+	release
+	end
+
+
+BARBARIAN_GYM_NPC_ATLAS::
+	lock
+	faceplayer
+	namebox NPC_BARBGYM_BARBARIAN_2_Text_5
+	msgbox BARBARIAN_GYM_NPC_ATLAS_Text_0
+	hidenamebox
+	release
+	end
+
 
 NPC_BARBGYM_BARBARIAN_1_Text_0:
+	.string "Haakon$"
+
+NPC_BARBGYM_BARBARIAN_1_Text_1:
+	.string "Your battle was impressive!\p"
+	.string "You are now a honnorary Barbarian!\p"
+	.string "You should go see Litara about\n"
+	.string "accessing our Stronghold.$"
+
+NPC_BARBGYM_BARBARIAN_1_Text_2:
 	.string "Welcome to the Gym of Barbarian Village!\n"
 	.string "Otherwise known as Gunnarsgrunn.\p"
 	.string "Here we do things differently compared\n"
@@ -542,11 +625,11 @@ NPC_BARBGYM_BARBARIAN_1_Text_0:
 	.string "Are you ready to start your gym\n"
 	.string "challenge?!$"
 
-NPC_BARBGYM_BARBARIAN_1_Text_1:
+NPC_BARBGYM_BARBARIAN_1_Text_3:
 	.string "Make your way up to the stands then\n"
 	.string "brave challenger!$"
 
-NPC_BARBGYM_BARBARIAN_1_Text_2:
+NPC_BARBGYM_BARBARIAN_1_Text_4:
 	.string "Come back when you think you are ready\n"
 	.string "to show us your skills.$"
 
@@ -687,3 +770,46 @@ NPC_BARBGYM_BARBARIAN_2_Text_30:
 	.string "Thank you all for coming today to see a\n"
 	.string "champ in the making!\p"
 	.string "Until next time!$"
+
+BARBARIAN_GYM_NPC_1_Text_0:
+	.string "Barbarian$"
+
+BARBARIAN_GYM_NPC_1_Text_1:
+	.string "Give your monster a Beer and watch as\n"
+	.string "it boosts the PP of moves.$"
+
+BARBARIAN_GYM_NPC_2_Text_0:
+	.string "The way you battle is cool!$"
+
+BARBARIAN_GYM_NPC_3_Text_0:
+	.string "There are many strong monsters in our\n"
+	.string "Stronghold.$"
+
+BARBARIAN_GYM_NPC_4_Text_0:
+	.string "There is a rumour of a fierce rainbow\n"
+	.string "treasure deep within our Stronghold.\p"
+	.string "I have no idea what it could be though.$"
+
+BARBARIAN_GYM_NPC_5_Text_0:
+	.string "While us Barbarians do not condone the\n"
+	.string "use of Runes.\p"
+	.string "It can be argued whether they are\n"
+	.string "allowed to evolve our monsters.$"
+
+BARBARIAN_GYM_NPC_6_Text_0:
+	.string "The move Brutal Swing is pretty brutal!$"
+
+BARBARIAN_GYM_NPC_7_Text_0:
+	.string "I can only make it to the 2nd level of\n"
+	.string "the stronghold.$"
+
+BARBARIAN_GYM_NPC_GUNTHOR_Text_0:
+	.string "RAAAGGGGGUUHH!\p"
+	.string "Hello {PLAYER}, I await our rematch!\p"
+	.string "But now is too soon.\p"
+	.string "I expect you to be stronger when next\n"
+	.string "week battle.$"
+
+BARBARIAN_GYM_NPC_ATLAS_Text_0:
+	.string "If you are up for a challenge you should\n"
+	.string "enter our stronghold.$"

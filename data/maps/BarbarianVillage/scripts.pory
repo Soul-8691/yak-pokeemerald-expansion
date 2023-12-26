@@ -2,42 +2,71 @@ const OBJ_EVENT_ID_BARBARIAN_BLOCK_1 = 6
 const OBJ_EVENT_ID_BARBARIAN_BLOCK_2 = 7
 
 mapscripts BarbarianVillage_MapScripts {
-    MAP_SCRIPT_ON_TRANSITION {
-    goto(BarbarianVillage_STATE)
+    MAP_SCRIPT_ON_LOAD {
+        if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY MODE
+    	{
+            call(STORYMODE_STATE_BARBARIAN_VILLAGE)
+    	}
+        elif (var(VAR_POKESCAPE_GAMEMODE_STATE) == 1) //if OPENWORLD MODE
+    	{
+            call(OPENWORLDMODE_STATE_BARBARIAN_VILLAGE)
+    	}
     }
 }
 
 
 
-script BarbarianVillage_STATE{
+
+
+script STORYMODE_STATE_BARBARIAN_VILLAGE {
 	switch (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE)){ 
 		case 0: 
-            //barb blocking
+            //Block the Gym entry until the gym is explained to the player.
             setobjectxyperm(OBJ_EVENT_ID_BARBARIAN_BLOCK_1,11,19)
 			setobjectmovementtype(OBJ_EVENT_ID_BARBARIAN_BLOCK_1,MOVEMENT_TYPE_FACE_DOWN)
             setobjectxyperm(OBJ_EVENT_ID_BARBARIAN_BLOCK_2,12,19)
 			setobjectmovementtype(OBJ_EVENT_ID_BARBARIAN_BLOCK_2,MOVEMENT_TYPE_FACE_DOWN)
-            end
-
+            return
         case 1:
         case 2:
-            end
+            return
         case 3:
+            //Allows access to the Stronghold.
             setobjectxyperm(2,13,27)
 			setobjectmovementtype(2,MOVEMENT_TYPE_FACE_UP)
-            end
+            return
     }
 }
+script OPENWORLDMODE_STATE_BARBARIAN_VILLAGE {
+    if (flag(FLAG_BADGE06_GET) == TRUE) {
+        //Allows access to the Stronghold.
+        setobjectxyperm(2,13,27)
+        setobjectmovementtype(2,MOVEMENT_TYPE_FACE_UP)
+        return
+    }
+}
+    
 
 
 
-//msgbox(format("Only the strong may enter our longhall!\pCome back when you have proved yourself in battle."))
+
+
+
+
+
+
 //NPC
 script NPC_BARB_BLOCKADE_1
 {
     lock
     faceplayer
     namebox("Barbarian")
+    if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 1) { //OPENWORLD MODE
+        msgbox(format("Our Chieftain is very strong.\pDo not underestimate him!"))
+        hidenamebox
+        release
+        end
+    }
     if (var(VAR_POKESCAPE_BARBARIAN_VILLAGE_STATE) == 0)
     {
         msgbox(format("Only the strong may enter our longhall!\pYou should probably leave if you know what is good for you."))
@@ -51,7 +80,7 @@ script NPC_BARB_BLOCKADE_1
         {
             hidenamebox
             closemessage
-            msgbox(format("WARNING - It is recommended that you have at least 5 Gym Badges before proceeding.\pAre you sure you would like to enter the Gym?"), MSGBOX_YESNO)
+            msgbox(format("It is recommended that you have at least 4 Gym Badges attempting our Gym.\pAre you sure you would like to challenge the Gym?"), MSGBOX_YESNO)
 			if (var(VAR_RESULT)){
                 namebox ("Barbarian")
                 msgbox(format("Ohho, so this challenger thinks they have what it takes to beat our Chieftain?\pThis will be entertaining to watch, very well.\pYou may pass."))
@@ -68,7 +97,6 @@ script NPC_BARB_BLOCKADE_1
         }
             hidenamebox
             closemessage
-            //APPLY MOVEMENT
             applymovement(OBJ_EVENT_ID_BARBARIAN_BLOCK_1, BARBARIANVILLAGE_BLOCK_1)
             applymovement(OBJ_EVENT_ID_BARBARIAN_BLOCK_2, BARBARIANVILLAGE_BLOCK_2)
             waitmovement(0)

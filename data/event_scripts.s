@@ -1682,3 +1682,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Varrock_GrandExchange_Path/scripts.inc"
 
 	.include "data/maps/Kourend_Catacombs_1/scripts.inc"
+
+	.include "data/maps/Alkharid_Gym_2F_R1/scripts.inc"

@@ -836,6 +836,7 @@
 #define MAP_AL_KHARID_HOUSE_1       (3 | (45 << 8))
 #define MAP_AL_KHARID_BANK          (4 | (45 << 8))
 #define MAP_STARTER_HOUSE_AL_KHARID (5 | (45 << 8))
+#define MAP_ALKHARID_GYM_2F_R1      (6 | (45 << 8))
 
 // gMapGroup46
 

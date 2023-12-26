@@ -180,14 +180,15 @@ script NPC_ALKHARID_OSMAN {
     lock
     faceplayer
     if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==0){
-    call(QUEST_ALKHARID_GYM_1)
+        call(QUEST_ALKHARID_GYM_1)
+        release
+        end
     }
-    if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==15){
+    if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==20){
         msgbox(format("I am quite the Master Spy at times.\pAlthough when spoken to while in disguise I sometimes give away my disguse by sneezing."))
     }
-    else
-    {
-        msgbox(format("Go do your Gym Challenge."))
+    if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==15){
+        msgbox(format("Do you need a hint?\pTry checking all the rooms of the palace.\pHe could be hiding in one of them."))
     }
     release
     end
@@ -329,6 +330,8 @@ script MOVERELEARNER_NPC
 
 script GYM_NPC_0
 {
+    lock
+    faceplayer
     msgbox(format("The prince has gone back to the throne room."))
     release
     end
@@ -393,19 +396,19 @@ script CHECK_IF_ALI
             case 1:
                 namebox("Warrior")
                 msgbox(format("You found me!\pYep, that's right, you found me.\pI am simply known as the Greatest Warrior of Alkharid or GWoA for short."))
-                subvar(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1) 
+                //subvar(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1) 
                 hidenamebox
                 closemessage
             case 2:
                 namebox("Warrior")
                 msgbox(format("Tomorrow I am going to show those pesky Merchants who owns this town."))
-                subvar(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1)
+                //subvar(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1)
                 hidenamebox
                 closemessage
             case 3:
                 namebox("Warrior")
                 msgbox(format("Are you asking for a fight?"))
-                subvar(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1) 
+                //subvar(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1) 
                 hidenamebox
                 closemessage
         }

@@ -162,21 +162,27 @@ NPC_ALKHARID_OSMAN::
 	faceplayer
 	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0
 	goto_if_eq NPC_ALKHARID_OSMAN_2
-NPC_ALKHARID_OSMAN_1:
-	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 15
+	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 20
 	goto_if_eq NPC_ALKHARID_OSMAN_5
-	msgbox NPC_ALKHARID_OSMAN_Text_1
 NPC_ALKHARID_OSMAN_4:
+	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 15
+	goto_if_eq NPC_ALKHARID_OSMAN_8
+NPC_ALKHARID_OSMAN_7:
 	release
 	end
 
 NPC_ALKHARID_OSMAN_2:
 	call QUEST_ALKHARID_GYM_1
-	goto NPC_ALKHARID_OSMAN_1
+	release
+	end
 
 NPC_ALKHARID_OSMAN_5:
 	msgbox NPC_ALKHARID_OSMAN_Text_0
 	goto NPC_ALKHARID_OSMAN_4
+
+NPC_ALKHARID_OSMAN_8:
+	msgbox NPC_ALKHARID_OSMAN_Text_1
+	goto NPC_ALKHARID_OSMAN_7
 
 
 ALKHARID_GYM_ALI::
@@ -264,6 +270,8 @@ MOVERELEARNER_NPC_2:
 
 
 GYM_NPC_0::
+	lock
+	faceplayer
 	msgbox GYM_NPC_0_Text_0
 	release
 	end
@@ -313,7 +321,6 @@ CHECK_IF_ALI_3:
 CHECK_IF_ALI_4:
 	namebox CHECK_IF_ALI_Text_0
 	msgbox CHECK_IF_ALI_Text_3
-	subvar VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1
 	hidenamebox
 	closemessage
 	goto CHECK_IF_ALI_1
@@ -321,7 +328,6 @@ CHECK_IF_ALI_4:
 CHECK_IF_ALI_5:
 	namebox CHECK_IF_ALI_Text_0
 	msgbox CHECK_IF_ALI_Text_4
-	subvar VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1
 	hidenamebox
 	closemessage
 	goto CHECK_IF_ALI_1
@@ -329,7 +335,6 @@ CHECK_IF_ALI_5:
 CHECK_IF_ALI_6:
 	namebox CHECK_IF_ALI_Text_0
 	msgbox CHECK_IF_ALI_Text_5
-	subvar VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1
 	hidenamebox
 	closemessage
 	goto CHECK_IF_ALI_1
@@ -419,7 +424,10 @@ NPC_ALKHARID_OSMAN_Text_0:
 	.string "disguse by sneezing.$"
 
 NPC_ALKHARID_OSMAN_Text_1:
-	.string "Go do your Gym Challenge.$"
+	.string "Do you need a hint?\p"
+	.string "Try checking all the rooms of the\n"
+	.string "palace.\p"
+	.string "He could be hiding in one of them.$"
 
 ALKHARID_GYM_ALI_Text_0:
 	.string "Welcome to the Al Kharid Gym.$"

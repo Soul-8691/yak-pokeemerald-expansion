@@ -133,10 +133,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GUARD_ALKHAIRD",
-      "x": 18,
-      "y": 8,
+      "x": 15,
+      "y": 6,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -159,6 +159,27 @@
       "elevation": 0,
       "dest_map": "MAP_AL_KHARID",
       "dest_warp_id": 6
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_ALKHARID_GYM_1F_R3",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 17,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_ALKHARID_GYM_1F_R1",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 18,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_ALKHARID_GYM_2F_R1",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

@@ -47,15 +47,13 @@ ALKHARID_GYM_ROOMS_STATE_7:
 GYM_NPC_1::
 	lock
 	faceplayer
-	checktrainerflag TRAINER_ALKHARID_GYM_TRAINER_1
-	compare VAR_RESULT, 0
-	goto_if_ne GYM_NPC_1_2
+	goto_if_unset FLAG_ALKHARIDGYM_1, GYM_NPC_1_2
 GYM_NPC_1_1:
 	goto_if_set FLAG_BADGE04_GET, GYM_NPC_1_5
 GYM_NPC_1_4:
 	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0
 	goto_if_eq GYM_NPC_1_10
-	msgbox GYM_NPC_1_Text_6
+	msgbox GYM_NPC_1_Text_8
 GYM_NPC_1_9:
 	release
 	end
@@ -66,7 +64,7 @@ GYM_NPC_1_2:
 	goto GYM_NPC_1_1
 
 GYM_NPC_1_5:
-	msgbox GYM_NPC_1_Text_4
+	msgbox GYM_NPC_1_Text_6
 	goto GYM_NPC_1_4
 
 GYM_NPC_1_7:
@@ -75,12 +73,23 @@ GYM_NPC_1_7:
 	goto_if_eq GYM_NPC_1_14
 	applymovement 3, Movement_AlkharidGym_NPC_1
 	waitmovement 0
-	trainerbattle_single TRAINER_ALKHARID_GYM_TRAINER_1, GYM_NPC_1_Text_2, GYM_NPC_1_Text_3
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACERIGHT
+	waitmovement 0
+	namebox GYM_NPC_1_Text_1
+	msgbox GYM_NPC_1_Text_2
+	hidenamebox
+	closemessage
+	trainerbattle_no_intro TRAINER_ALKHARID_GYM_TRAINER_1, GYM_NPC_1_Text_3
+	namebox GYM_NPC_1_Text_1
+	msgbox GYM_NPC_1_Text_5
+	closemessage
+	hidenamebox
+	setflag FLAG_ALKHARIDGYM_1
 	release
 	end
 
 GYM_NPC_1_10:
-	msgbox GYM_NPC_1_Text_5
+	msgbox GYM_NPC_1_Text_7
 	goto GYM_NPC_1_9
 
 GYM_NPC_1_14:
@@ -95,6 +104,8 @@ GYM_NPC_1_14:
 	applymovement 3, Movement_AlkharidGym_NPC_1
 	applymovement 1, Movement_AlkharidGym_NPC_1_Ali
 	delay 60
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACERIGHT
+	waitmovement 0
 	namebox GYM_NPC_1_Text_1
 	msgbox GYM_NPC_1_Text_2
 	hidenamebox
@@ -102,10 +113,102 @@ GYM_NPC_1_14:
 	trainerbattle_no_intro TRAINER_ALKHARID_GYM_TRAINER_1, GYM_NPC_1_Text_3
 	compare VAR_RESULT, B_OUTCOME_LOST
 	goto_if_eq GYM_NPC_1_17
+	msgbox GYM_NPC_1_Text_4
+	closemessage
+	hidenamebox
+	applymovement 1, Movement_WALKDOWN
+	waitmovement 0
+	applymovement 1, Movement_FACEUP
+	waitmovement 0
 	release
 	end
 
 GYM_NPC_1_17:
+	setvar VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0
+	end
+
+
+GYM_NPC_2::
+	lock
+	faceplayer
+	goto_if_unset FLAG_ALKHARIDGYM_1, GYM_NPC_2_2
+GYM_NPC_2_1:
+	goto_if_set FLAG_BADGE04_GET, GYM_NPC_2_5
+GYM_NPC_2_4:
+	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0
+	goto_if_eq GYM_NPC_2_10
+	msgbox GYM_NPC_1_Text_8
+GYM_NPC_2_9:
+	release
+	end
+
+GYM_NPC_2_2:
+	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 15
+	goto_if_eq GYM_NPC_2_7
+	goto GYM_NPC_2_1
+
+GYM_NPC_2_5:
+	msgbox GYM_NPC_1_Text_6
+	goto GYM_NPC_2_4
+
+GYM_NPC_2_7:
+	call CHECK_IF_ALI
+	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 20
+	goto_if_eq GYM_NPC_2_14
+	applymovement 2, Movement_AlkharidGym_NPC_2
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACELEFT
+	waitmovement 0
+	namebox GYM_NPC_1_Text_1
+	msgbox GYM_NPC_1_Text_2
+	hidenamebox
+	closemessage
+	trainerbattle_no_intro TRAINER_ALKHARID_GYM_TRAINER_1, GYM_NPC_1_Text_3
+	namebox GYM_NPC_1_Text_1
+	msgbox GYM_NPC_1_Text_5
+	closemessage
+	hidenamebox
+	setflag FLAG_ALKHARIDGYM_1
+	applymovement 2, Movement_AlkharidGym_moveafterbattle_1
+	waitmovement 0
+	release
+	end
+
+GYM_NPC_2_10:
+	msgbox GYM_NPC_2_Text_0
+	goto GYM_NPC_2_9
+
+GYM_NPC_2_14:
+	msgbox GYM_NPC_1_Text_0
+	hidenamebox
+	closemessage
+	applymovement VAR_LAST_TALKED, Movement_AlkharidGym_TELEPORT
+	delay 30
+	removeobject VAR_LAST_TALKED
+	addobject 1
+	clearflag FLAG_TEMP_6
+	applymovement 2, Movement_AlkharidGym_NPC_2
+	applymovement 1, Movement_AlkharidGym_NPC_2_Ali
+	delay 60
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACELEFT
+	waitmovement 0
+	namebox GYM_NPC_1_Text_1
+	msgbox GYM_NPC_1_Text_2
+	hidenamebox
+	closemessage
+	trainerbattle_no_intro TRAINER_ALKHARID_GYM_TRAINER_1, GYM_NPC_1_Text_3
+	compare VAR_RESULT, B_OUTCOME_LOST
+	goto_if_eq GYM_NPC_2_17
+	msgbox GYM_NPC_1_Text_4
+	closemessage
+	hidenamebox
+	applymovement 2, Movement_AlkharidGym_moveafterbattle_1
+	applymovement 1, Movement_AlkharidGym_moveafterbattle_2
+	waitmovement 0
+	release
+	end
+
+GYM_NPC_2_17:
 	setvar VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0
 	end
 
@@ -153,65 +256,17 @@ Movement_AlkharidGym_TELEPORT:
 	fly_up
 	step_end
 
-GYM_NPC_2::
-	lock
-	faceplayer
-	checktrainerflag TRAINER_ALKHARID_GYM_TRAINER_1
-	compare VAR_RESULT, 0
-	goto_if_ne GYM_NPC_2_2
-GYM_NPC_2_1:
-	goto_if_set FLAG_BADGE04_GET, GYM_NPC_2_5
-GYM_NPC_2_4:
-	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0
-	goto_if_eq GYM_NPC_2_10
-	msgbox GYM_NPC_2_Text_0
-GYM_NPC_2_9:
-	release
-	end
+Movement_AlkharidGym_moveafterbattle_1:
+	walk_left
+	walk_up
+	face_down
+	step_end
 
-GYM_NPC_2_2:
-	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 15
-	goto_if_eq GYM_NPC_2_7
-	goto GYM_NPC_2_1
-
-GYM_NPC_2_5:
-	msgbox GYM_NPC_1_Text_4
-	goto GYM_NPC_2_4
-
-GYM_NPC_2_7:
-	call CHECK_IF_ALI
-	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 20
-	goto_if_eq GYM_NPC_2_14
-	applymovement 2, Movement_AlkharidGym_NPC_2
-	waitmovement 0
-	trainerbattle_single TRAINER_ALKHARID_GYM_TRAINER_1, GYM_NPC_1_Text_2, GYM_NPC_1_Text_3
-	release
-	end
-
-GYM_NPC_2_10:
-	msgbox GYM_NPC_1_Text_5
-	goto GYM_NPC_2_9
-
-GYM_NPC_2_14:
-	msgbox GYM_NPC_1_Text_0
-	hidenamebox
-	closemessage
-	applymovement VAR_LAST_TALKED, Movement_AlkharidGym_TELEPORT
-	delay 30
-	removeobject VAR_LAST_TALKED
-	addobject 1
-	clearflag FLAG_TEMP_6
-	applymovement 2, Movement_AlkharidGym_NPC_2
-	applymovement 1, Movement_AlkharidGym_NPC_2_Ali
-	delay 60
-	namebox GYM_NPC_1_Text_1
-	msgbox GYM_NPC_1_Text_2
-	hidenamebox
-	closemessage
-	trainerbattle_no_intro TRAINER_ALKHARID_GYM_TRAINER_1, GYM_NPC_1_Text_3
-	release
-	end
-
+Movement_AlkharidGym_moveafterbattle_2:
+	walk_left
+	walk_down
+	face_up
+	step_end
 
 GYM_NPC_1_Text_0:
 	.string "Guards help me as I make my escape!$"
@@ -227,13 +282,23 @@ GYM_NPC_1_Text_3:
 	.string "Consider that a warning!$"
 
 GYM_NPC_1_Text_4:
-	.string "Hello congrats on beating the gym.$"
+	.string "You have defeated us!\p"
+	.string "But the Prince has made his escape so\n"
+	.string "we have done our jobs.$"
 
 GYM_NPC_1_Text_5:
-	.string "Hello.$"
+	.string "You have defeated us!\p"
+	.string "But the Prince is still somewhere\n"
+	.string "around the Palace.$"
 
 GYM_NPC_1_Text_6:
+	.string "Hello congrats on beating the gym.$"
+
+GYM_NPC_1_Text_7:
+	.string "Hello.$"
+
+GYM_NPC_1_Text_8:
 	.string "We use our lives to protect our prince.$"
 
 GYM_NPC_2_Text_0:
-	.string "Do not mistake us for the Prince.$"
+	.string "Hello this is the gym.$"

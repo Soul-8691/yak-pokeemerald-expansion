@@ -11,15 +11,13 @@ Alkharid_Gym_1F_R1_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 GYM_NPC_3::
 	lock
 	faceplayer
-	checktrainerflag TRAINER_ALKHARID_GYM_TRAINER_2
-	compare VAR_RESULT, 0
-	goto_if_ne GYM_NPC_3_2
+	goto_if_unset FLAG_ALKHARIDGYM_2, GYM_NPC_3_2
 GYM_NPC_3_1:
 	goto_if_set FLAG_BADGE04_GET, GYM_NPC_3_5
 GYM_NPC_3_4:
 	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0
 	goto_if_eq GYM_NPC_3_10
-	msgbox GYM_NPC_3_Text_6
+	msgbox GYM_NPC_3_Text_8
 GYM_NPC_3_9:
 	release
 	end
@@ -30,7 +28,7 @@ GYM_NPC_3_2:
 	goto GYM_NPC_3_1
 
 GYM_NPC_3_5:
-	msgbox GYM_NPC_3_Text_4
+	msgbox GYM_NPC_3_Text_6
 	goto GYM_NPC_3_4
 
 GYM_NPC_3_7:
@@ -39,12 +37,27 @@ GYM_NPC_3_7:
 	goto_if_eq GYM_NPC_3_14
 	applymovement 3, Movement_AlkharidGym_NPC_3
 	waitmovement 0
-	trainerbattle_single TRAINER_ALKHARID_GYM_TRAINER_2, GYM_NPC_3_Text_2, GYM_NPC_3_Text_3
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACEDOWN
+	waitmovement 0
+	namebox GYM_NPC_3_Text_1
+	msgbox GYM_NPC_3_Text_2
+	hidenamebox
+	closemessage
+	trainerbattle_no_intro TRAINER_ALKHARID_GYM_TRAINER_2, GYM_NPC_3_Text_3
+	namebox GYM_NPC_3_Text_1
+	msgbox GYM_NPC_3_Text_5
+	closemessage
+	hidenamebox
+	setflag FLAG_ALKHARIDGYM_2
+	applymovement 3, Movement_WALKDOWN
+	waitmovement 0
+	applymovement 3, Movement_FACEUP
+	waitmovement 0
 	release
 	end
 
 GYM_NPC_3_10:
-	msgbox GYM_NPC_3_Text_5
+	msgbox GYM_NPC_3_Text_7
 	goto GYM_NPC_3_9
 
 GYM_NPC_3_14:
@@ -59,27 +72,40 @@ GYM_NPC_3_14:
 	applymovement 3, Movement_AlkharidGym_NPC_3
 	applymovement 1, Movement_AlkharidGym_NPC_3_Ali
 	delay 60
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACEDOWN
+	waitmovement 0
 	namebox GYM_NPC_3_Text_1
 	msgbox GYM_NPC_3_Text_2
 	hidenamebox
 	closemessage
 	trainerbattle_no_intro TRAINER_ALKHARID_GYM_TRAINER_2, GYM_NPC_3_Text_3
+	compare VAR_RESULT, B_OUTCOME_LOST
+	goto_if_eq GYM_NPC_3_17
+	msgbox GYM_NPC_3_Text_4
+	closemessage
+	hidenamebox
+	applymovement 3, Movement_WALKDOWN
+	waitmovement 0
+	applymovement 3, Movement_FACEUP
+	waitmovement 0
 	release
+	end
+
+GYM_NPC_3_17:
+	setvar VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0
 	end
 
 
 GYM_NPC_4::
 	lock
 	faceplayer
-	checktrainerflag TRAINER_ALKHARID_GYM_TRAINER_2
-	compare VAR_RESULT, 0
-	goto_if_ne GYM_NPC_4_2
+	goto_if_unset FLAG_ALKHARIDGYM_2, GYM_NPC_4_2
 GYM_NPC_4_1:
 	goto_if_set FLAG_BADGE04_GET, GYM_NPC_4_5
 GYM_NPC_4_4:
 	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0
 	goto_if_eq GYM_NPC_4_10
-	msgbox GYM_NPC_3_Text_6
+	msgbox GYM_NPC_3_Text_8
 GYM_NPC_4_9:
 	release
 	end
@@ -90,21 +116,34 @@ GYM_NPC_4_2:
 	goto GYM_NPC_4_1
 
 GYM_NPC_4_5:
-	msgbox GYM_NPC_3_Text_4
+	msgbox GYM_NPC_3_Text_6
 	goto GYM_NPC_4_4
 
 GYM_NPC_4_7:
 	call CHECK_IF_ALI
 	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 20
 	goto_if_eq GYM_NPC_4_14
-	applymovement 3, Movement_AlkharidGym_NPC_4
+	applymovement 2, Movement_AlkharidGym_NPC_4
 	waitmovement 0
-	trainerbattle_single TRAINER_ALKHARID_GYM_TRAINER_2, GYM_NPC_3_Text_2, GYM_NPC_3_Text_3
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACEDOWN
+	waitmovement 0
+	namebox GYM_NPC_3_Text_1
+	msgbox GYM_NPC_3_Text_2
+	hidenamebox
+	closemessage
+	trainerbattle_no_intro TRAINER_ALKHARID_GYM_TRAINER_2, GYM_NPC_3_Text_3
+	namebox GYM_NPC_3_Text_1
+	msgbox GYM_NPC_3_Text_5
+	closemessage
+	hidenamebox
+	setflag FLAG_ALKHARIDGYM_2
+	applymovement 2, Movement_AlkharidGym_moveafterbattle_1
+	waitmovement 0
 	release
 	end
 
 GYM_NPC_4_10:
-	msgbox GYM_NPC_3_Text_5
+	msgbox GYM_NPC_4_Text_0
 	goto GYM_NPC_4_9
 
 GYM_NPC_4_14:
@@ -116,22 +155,36 @@ GYM_NPC_4_14:
 	removeobject VAR_LAST_TALKED
 	addobject 1
 	clearflag FLAG_TEMP_6
-	applymovement 3, Movement_AlkharidGym_NPC_4
+	applymovement 2, Movement_AlkharidGym_NPC_4
 	applymovement 1, Movement_AlkharidGym_NPC_4_Ali
 	delay 60
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACELEFT
+	waitmovement 0
 	namebox GYM_NPC_3_Text_1
 	msgbox GYM_NPC_3_Text_2
 	hidenamebox
 	closemessage
 	trainerbattle_no_intro TRAINER_ALKHARID_GYM_TRAINER_2, GYM_NPC_3_Text_3
+	compare VAR_RESULT, B_OUTCOME_LOST
+	goto_if_eq GYM_NPC_4_17
+	msgbox GYM_NPC_3_Text_4
+	closemessage
+	hidenamebox
+	applymovement 1, Movement_WALKDOWN
+	waitmovement 0
+	applymovement 1, Movement_FACEUP
+	waitmovement 0
 	release
+	end
+
+GYM_NPC_4_17:
+	setvar VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0
 	end
 
 
 Movement_AlkharidGym_NPC_3:
 	walk_faster_down
 	walk_faster_down
-	walk_faster_left
 	walk_faster_left
 	walk_faster_left
 	walk_faster_left
@@ -148,6 +201,7 @@ Movement_AlkharidGym_NPC_3_Ali:
 	walk_faster_left
 	walk_faster_left
 	walk_faster_left
+	walk_faster_left
 	face_player
 	step_end
 
@@ -161,12 +215,11 @@ Movement_AlkharidGym_NPC_4:
 	walk_faster_right
 	walk_faster_right
 	walk_faster_right
-	walk_faster_right
-	walk_faster_up
 	face_player
 	step_end
 
 Movement_AlkharidGym_NPC_4_Ali:
+	delay_16
 	walk_fast_up
 	walk_fast_up
 	walk_fast_up
@@ -312,13 +365,26 @@ GYM_NPC_3_Text_3:
 	.string "Consider that a warning!$"
 
 GYM_NPC_3_Text_4:
-	.string "Hello congrats on beating the gym.$"
+	.string "You have defeated us!\p"
+	.string "But the Prince has made his escape so\n"
+	.string "we have done our jobs.$"
 
 GYM_NPC_3_Text_5:
-	.string "Hello.$"
+	.string "You have defeated us!\p"
+	.string "But the Prince is still somewhere\n"
+	.string "around the Palace.$"
 
 GYM_NPC_3_Text_6:
+	.string "Hello congrats on beating the gym.$"
+
+GYM_NPC_3_Text_7:
+	.string "Hello.$"
+
+GYM_NPC_3_Text_8:
 	.string "We use our lives to protect our prince.$"
+
+GYM_NPC_4_Text_0:
+	.string "Hello this is the gym.$"
 
 SAFARI_ZONE_WIZARD_Text_0:
 	.string "Dark Wizard$"

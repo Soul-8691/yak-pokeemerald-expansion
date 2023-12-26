@@ -106,6 +106,8 @@ script GYM_NPC_1
         }
     if (flag(FLAG_BADGE04_GET)) { //If Gym badge is obtained.
         msgbox(format("Hello congrats on beating the gym."))
+        release
+        end
     }
     if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==0) { // If Gym challenge hasnt been started.
         msgbox(format("Hello."))
@@ -180,6 +182,8 @@ script GYM_NPC_2
         }
     if (flag(FLAG_BADGE04_GET)) { //If Gym badge is obtained.
         msgbox(format("Hello congrats on beating the gym."))
+        release
+        end
     }
     if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==0) { // If Gym challenge hasnt been started.
         msgbox(format("Hello this is the gym."))

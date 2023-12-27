@@ -50,6 +50,7 @@ BLOCK_Alkharid_Guards_2:
 TRIGGER_ALKHAIRD_GATE::
 	goto_if_unset FLAG_BADGE04_GET, TRIGGER_ALKHAIRD_GATE_2
 TRIGGER_ALKHAIRD_GATE_1:
+	release
 	end
 
 TRIGGER_ALKHAIRD_GATE_2:
@@ -59,14 +60,14 @@ TRIGGER_ALKHAIRD_GATE_2:
 
 BLOCK_ALKHAIRD_GATE::
 	lockall
-	applymovement 30, movement_BLOCK_ALKHAIRD_GATE_1
-	applymovement 29, movement_BLOCK_ALKHAIRD_GATE_2
+	applymovement 29, movement_BLOCK_ALKHAIRD_GATE_1
+	applymovement 30, movement_BLOCK_ALKHAIRD_GATE_2
 	waitmovement 0
 	msgbox BLOCK_ALKHAIRD_GATE_Text_0
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, movement_BLOCK_ALKHAIRD_GATE_3
-	applymovement 30, Movement_FACELEFT
 	applymovement 29, Movement_FACELEFT
+	applymovement 30, Movement_FACELEFT
 	waitmovement 0
 	release
 	end

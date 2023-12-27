@@ -1,5 +1,5 @@
-const ALKAHRID_GUARD_1_ID = 30
-const ALKAHRID_GUARD_2_ID = 29
+const ALKAHRID_GUARD_1_ID = 29
+const ALKAHRID_GUARD_2_ID = 30
 const OBJ_EVENT_ID_PENGUIN_DND = 14
 const OBJ_EVENT_ID_PENGUIN = 13
 
@@ -58,6 +58,7 @@ script TRIGGER_ALKHAIRD_GATE
         {
 			goto(BLOCK_ALKHAIRD_GATE)
         }
+	release
 	end
 }
 

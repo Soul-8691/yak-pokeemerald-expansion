@@ -65,8 +65,8 @@ BLOCK_ALKHAIRD_GATE::
 	msgbox BLOCK_ALKHAIRD_GATE_Text_0
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, movement_BLOCK_ALKHAIRD_GATE_3
-	applymovement 30, movement_FACELEFT
-	applymovement 29, movement_FACELEFT
+	applymovement 30, Movement_FACELEFT
+	applymovement 29, Movement_FACELEFT
 	waitmovement 0
 	release
 	end

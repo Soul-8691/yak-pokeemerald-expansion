@@ -70,8 +70,8 @@ script BLOCK_ALKHAIRD_GATE
 	msgbox(format("Halt!\pOnly those whom possess the Al-Khaird Badge may enter!"))
 	closemessage
 	applymovement (OBJ_EVENT_ID_PLAYER,movement_BLOCK_ALKHAIRD_GATE_3)
-	applymovement (ALKAHRID_GUARD_1_ID,movement_FACELEFT)
-	applymovement (ALKAHRID_GUARD_2_ID,movement_FACELEFT)
+	applymovement (ALKAHRID_GUARD_1_ID,Movement_FACELEFT)
+	applymovement (ALKAHRID_GUARD_2_ID,Movement_FACELEFT)
 	waitmovement (0)
 	release
 	end

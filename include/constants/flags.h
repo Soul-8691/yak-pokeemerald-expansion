@@ -1230,8 +1230,8 @@
 #define FLAG_ITEM_KARAMJA_VOLCANO_3                                   0x471
 #define FLAG_ITEM_LUMBRIDGE_FOREST_3                                           0x472 // Unused Flag
 #define FLAG_ITEM_EDGEVILLE_1                              0x473
+#define FLAG_CHEAT_ITEM_PULSE_CORE                                  0x474
 
-#define FLAG_ITEM_ROUTE_109_POTION                                  0x474
 #define FLAG_ITEM_ROUTE_110_ELIXIR                                  0x475
 #define FLAG_ITEM_ROUTE_111_ELIXIR                                  0x476
 #define FLAG_ITEM_ROUTE_113_HYPER_POTION                            0x477

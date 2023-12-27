@@ -797,30 +797,46 @@ QUEST_Cooks_Assistant_STATE_4:
 	removeitem ITEM_SPECIAL_CAKE, 1
 	namebox QUEST_Cooks_Assistant_STATE_Text_0
 	msgbox QUEST_Cooks_Assistant_STATE_Text_13
-	playse SE_PIN
-	applymovement 1, COOK_COOKSASSISTANT_1
-	waitmovement 0
-	msgbox QUEST_Cooks_Assistant_STATE_Text_14
+	hidenamebox
+	closemessage
 	setvar VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 3
+	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_COOKS_ASSISTANT
+	namebox QUEST_Cooks_Assistant_STATE_Text_0
+	msgbox QUEST_Cooks_Assistant_STATE_Text_14
+	hidenamebox
+	closemessage
+	giveitem ITEM_BREAD, 5
+	giveitem ITEM_CAKE, 1
+	giveitem ITEM_PURPLE_SWEETS, 2
+	namebox QUEST_Cooks_Assistant_STATE_Text_0
+	msgbox QUEST_Cooks_Assistant_STATE_Text_15
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 0
+	goto_if_eq QUEST_Cooks_Assistant_STATE_20
+QUEST_Cooks_Assistant_STATE_19:
 	hidenamebox
 	release
 	end
 
 QUEST_Cooks_Assistant_STATE_5:
 	namebox QUEST_Cooks_Assistant_STATE_Text_0
-	msgbox QUEST_Cooks_Assistant_STATE_Text_15
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 1
+	goto_if_eq QUEST_Cooks_Assistant_STATE_17
+	msgbox QUEST_Cooks_Assistant_STATE_Text_18
 	hidenamebox
 	release
 	end
 
 QUEST_Cooks_Assistant_STATE_6:
 	namebox QUEST_Cooks_Assistant_STATE_Text_0
-	msgbox QUEST_Cooks_Assistant_STATE_Text_16
+	msgbox QUEST_Cooks_Assistant_STATE_Text_19
 	hidenamebox
 	release
 	end
 
 QUEST_Cooks_Assistant_STATE_7:
+	hidenamebox
+	startquest QUEST_COOKS_ASSISTANT
+	namebox QUEST_Cooks_Assistant_STATE_Text_0
 	msgbox QUEST_Cooks_Assistant_STATE_Text_3
 	msgbox QUEST_Cooks_Assistant_STATE_Text_4
 	giveitem ITEM_MAP
@@ -847,6 +863,19 @@ QUEST_Cooks_Assistant_STATE_13:
 	hidenamebox
 	release
 	end
+
+QUEST_Cooks_Assistant_STATE_17:
+	msgbox QUEST_Cooks_Assistant_STATE_Text_17
+	hidenamebox
+	release
+	end
+
+QUEST_Cooks_Assistant_STATE_20:
+	playse SE_PIN
+	applymovement 1, COOK_COOKSASSISTANT_1
+	waitmovement 0
+	msgbox QUEST_Cooks_Assistant_STATE_Text_16
+	goto QUEST_Cooks_Assistant_STATE_19
 
 
 COOK_COOKSASSISTANT_1:
@@ -896,16 +925,22 @@ CooksAssistant_Check_EGG_1:
 
 
 QUEST_TRIGGER_BLOCK_COOKSASSISTANT::
+	compare VAR_POKESCAPE_GAMEMODE_STATE, 1
+	goto_if_eq QUEST_TRIGGER_BLOCK_COOKSASSISTANT_2
 	switch VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE
-	case 0, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_2
-	case 1, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_2
-	case 2, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_2
-	case 3, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_3
-	case 4, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_3
-	case 5, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_3
+	case 0, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_5
+	case 1, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_5
+	case 2, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_5
+	case 3, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_6
+	case 4, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_6
+	case 5, QUEST_TRIGGER_BLOCK_COOKSASSISTANT_6
 	return
 
 QUEST_TRIGGER_BLOCK_COOKSASSISTANT_2:
+	release
+	end
+
+QUEST_TRIGGER_BLOCK_COOKSASSISTANT_5:
 	lock
 	playSE SE_PIN
 	applymovement 1, BLOCK_COOKSASSISTANT_1
@@ -919,7 +954,7 @@ QUEST_TRIGGER_BLOCK_COOKSASSISTANT_2:
 	release
 	end
 
-QUEST_TRIGGER_BLOCK_COOKSASSISTANT_3:
+QUEST_TRIGGER_BLOCK_COOKSASSISTANT_6:
 	release
 	end
 
@@ -1445,6 +1480,14 @@ QUEST_Cooks_Assistant_STATE_Text_13:
 	.string "Feel free to use my range anytime!$"
 
 QUEST_Cooks_Assistant_STATE_Text_14:
+	.string "Also as a thank you for helping me\n"
+	.string "please take these, they may be useful\l"
+	.string "to you.$"
+
+QUEST_Cooks_Assistant_STATE_Text_15:
+	.string "Once again, thank you.$"
+
+QUEST_Cooks_Assistant_STATE_Text_16:
 	.string "Oh?\n"
 	.string "What's that?\p"
 	.string "You wanted to challenge the Duke to a\n"
@@ -1453,11 +1496,15 @@ QUEST_Cooks_Assistant_STATE_Text_14:
 	.string "Go straight up those stairs.\n"
 	.string "I'll let him know you're coming.$"
 
-QUEST_Cooks_Assistant_STATE_Text_15:
+QUEST_Cooks_Assistant_STATE_Text_17:
+	.string "Once again, thank you for your help\n"
+	.string "making the cake.$"
+
+QUEST_Cooks_Assistant_STATE_Text_18:
 	.string "Just head up those stairs, you'll find\n"
 	.string "the Duke up there.$"
 
-QUEST_Cooks_Assistant_STATE_Text_16:
+QUEST_Cooks_Assistant_STATE_Text_19:
 	.string "Thank you for all of your help earlier!$"
 
 CooksAssistant_Check_MILK_Text_0:

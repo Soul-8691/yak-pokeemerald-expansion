@@ -3141,10 +3141,40 @@ extern const u8 gText_QuestAnnounce[];
 extern const u8 gText_QuestComplete[];
 extern const u8 gText_QuestActive[];
 
+
+
+
+
+extern const u8 gText_SideQuestName_CooksAssistant[];
+extern const u8 gText_SideQuestDesc_CooksAssistant[];
+extern const u8 gText_SideQuestDesc_Completed_CooksAssistant[];
+extern const u8 gText_MapName_Lumbridge[];
+extern const u8 gText_MapName_MillLaneMill[];
+extern const u8 gText_MapName_Route1[];
+extern const u8 gText_MapName_Route12[];
+extern const u8 gText_SubQuest_Cooks_Assistant_1[];
+extern const u8 gText_SubQuest_Cooks_Assistant_2[];
+extern const u8 gText_SubQuest_Cooks_Assistant_3[];
+extern const u8 gText_SubQuest1_Desc_Cooks_Assistant_1[];
+extern const u8 gText_SubQuest1_Desc_Cooks_Assistant_2[];
+extern const u8 gText_SubQuest1_Desc_Cooks_Assistant_3[];
+
+
+
+extern const u8 gText_SideQuestName_Ernest[];
+extern const u8 gText_SideQuestDesc_Ernest[];
+extern const u8 gText_SideQuestDesc_Completed_Ernest[];
+extern const u8 gText_SideQuestMap_Draynor_Manor[];
+extern const u8 gText_SubQuest_Ernest_Name1[];
+extern const u8 gText_SubQuest_Ernest_Name2[];
+extern const u8 gText_SubQuest_Ernest_Name3[];
+
+
+/*
 //names
 extern const u8 gText_SideQuestName_1[];
 extern const u8 gText_SideQuestName_2[];
-extern const u8 gText_SideQuestName_Ernest[];
+
 extern const u8 gText_SideQuestName_4[];
 extern const u8 gText_SideQuestName_5[];
 extern const u8 gText_SideQuestName_6[];
@@ -3241,7 +3271,7 @@ extern const u8 gText_SideQuestDoneDesc_30[];
 extern const u8 gText_SideQuestMap1[];
 extern const u8 gText_SideQuestMap2[];
 extern const u8 gText_SideQuestMap3[];
-extern const u8 gText_SideQuestMap_Draynor_Manor[];
+
 extern const u8 gText_SideQuestMap5[];
 extern const u8 gText_SideQuestMap6[];
 extern const u8 gText_SideQuestMap7[];
@@ -3281,9 +3311,13 @@ extern const u8 gText_SubQuest1_Name8[];
 extern const u8 gText_SubQuest1_Name9[];
 extern const u8 gText_SubQuest1_Name10[];
 
-extern const u8 gText_SubQuest_Ernest_Name1[];
-extern const u8 gText_SubQuest_Ernest_Name2[];
-extern const u8 gText_SubQuest_Ernest_Name3[];
+
+
+extern const u8 gText_SubQuest_Cooks_Assistant_1[];
+extern const u8 gText_SubQuest_Cooks_Assistant_2[];
+extern const u8 gText_SubQuest_Cooks_Assistant_3[];
+
+
 
 extern const u8 gText_SubQuest2_Name4[];
 extern const u8 gText_SubQuest2_Name5[];
@@ -3334,7 +3368,7 @@ extern const u8 gText_SubQuest2_Desc17[];
 extern const u8 gText_SubQuest2_Desc18[];
 extern const u8 gText_SubQuest2_Desc19[];
 extern const u8 gText_SubQuest2_Desc20[];
-
+*/
 extern const u8 gText_FollowerOff[];
 extern const u8 gText_FollowerOn[];
 extern const u8 gText_DifficultyEasy[];

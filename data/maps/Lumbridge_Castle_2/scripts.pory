@@ -670,6 +670,9 @@ script QUEST_Cooks_Assistant_STATE{
 			msgbox(format("Oh dear..\pWhat am I to do..\nI'm in a terrible, terrible mess!\pI should be making a cake for the Duke but I forgot to get the ingredients!"))
 			msgbox(format("Can you please help me?"), MSGBOX_YESNO)
 			if (var(VAR_RESULT)){
+				hidenamebox
+				startquest (QUEST_COOKS_ASSISTANT)
+				namebox ("Cook")
 				msgbox(format("Oh, thank you, thank you!\pI need an egg, some milk, and some flour.\pFor the eggs you should check out the chicken farms, around Lumbridge.\pYou can get some milk from the Cow Field, east of Lumbridge.\pYou should ask someone at the Windmill if they can give you some flour, north of Lumbridge."))
 				msgbox(format("Oh..\nBefore you go."))
 				giveitem (ITEM_MAP)
@@ -728,18 +731,40 @@ script QUEST_Cooks_Assistant_STATE{
 				removeitem (ITEM_SPECIAL_CAKE, 1)
 				namebox ("Cook")
 				msgbox(format("I am saved!\nThank you so much!\pFeel free to use my range anytime!"))
-				playse(SE_PIN)
-				applymovement(OBJ_EVENT_ID_COOK,COOK_COOKSASSISTANT_1)
-				waitmovement(0)
-				msgbox(format("Oh?\nWhat's that?\pYou wanted to challenge the Duke to a Gym Battle?\pWhy didn't you say so!\pGo straight up those stairs.\n I'll let him know you're coming."))
+				hidenamebox
+				closemessage
 				setvar(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE, 3)
+				questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_COOKS_ASSISTANT)
+				namebox ("Cook")
+				msgbox(format("Also as a thank you for helping me please take these, they may be useful to you."))
+				hidenamebox
+				closemessage
+				giveitem(ITEM_BREAD, 5)
+				giveitem(ITEM_CAKE, 1)
+				giveitem(ITEM_PURPLE_SWEETS, 2)
+				namebox ("Cook")
+				msgbox(format("Once again, thank you."))
+				if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 0) //if STORY MODE
+				{
+					playse(SE_PIN)
+					applymovement(OBJ_EVENT_ID_COOK,COOK_COOKSASSISTANT_1)
+					waitmovement(0)
+					msgbox(format("Oh?\nWhat's that?\pYou wanted to challenge the Duke to a Gym Battle?\pWhy didn't you say so!\pGo straight up those stairs.\n I'll let him know you're coming."))
+				}
+
 				hidenamebox
 				release
 				end
 			}
-
 		case 3: 
 			namebox ("Cook")
+			if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 1) 
+			{
+				msgbox(format("Once again, thank you for your help making the cake."))
+				hidenamebox
+				release
+				end
+			}
 			msgbox(format("Just head up those stairs, you'll find the Duke up there."))
 			hidenamebox
 			release
@@ -810,7 +835,12 @@ script CooksAssistant_Check_EGG {
 
 //---------------------------------------------------------------------------------
 
-script QUEST_TRIGGER_BLOCK_COOKSASSISTANT{
+script QUEST_TRIGGER_BLOCK_COOKSASSISTANT {
+	if (var(VAR_POKESCAPE_GAMEMODE_STATE) == 1) //if OPEN WORLD
+    	{
+            release
+			end
+    	}
 	switch (var(VAR_POKESCAPE_COOKS_ASSISTANT_QUEST_STATE)){ 
 		case 0: 
 		case 1: 

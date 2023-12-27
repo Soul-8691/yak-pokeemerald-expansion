@@ -1937,16 +1937,44 @@ const u8 gText_QuestAnnounce[] = _("The quest '{STR_VAR_1}'\nhas now {STR_VAR_2}
 const u8 gText_QuestComplete[] =_("complete");
 const u8 gText_QuestActive[] =_("started");
 
+
+//Cooks Assistant
+const u8 gText_SideQuestName_CooksAssistant[] = _("Cook's Assistant");
+const u8 gText_SideQuestDesc_CooksAssistant[] = _("Help the Cook bake a birthday cake\nfor the Duke.");
+const u8 gText_SideQuestDesc_Completed_CooksAssistant[] = _("Quest Completed!");
+const u8 gText_SubQuest_Cooks_Assistant_1[] = _("Egg");
+const u8 gText_SubQuest1_Desc_Cooks_Assistant_1[] = _("You found the super large egg.");
+const u8 gText_SubQuest_Cooks_Assistant_2[] = _("Milk");
+const u8 gText_SubQuest1_Desc_Cooks_Assistant_2[] = _("You found some top quality milk.");
+const u8 gText_SubQuest_Cooks_Assistant_3[] = _("Flour");
+const u8 gText_SubQuest1_Desc_Cooks_Assistant_3[] = _("You found some extra fine flour.");
+const u8 gText_MapName_Lumbridge[] = _("Lumbridge");
+const u8 gText_MapName_MillLaneMill[] = _("Mill Lane Mill");
+const u8 gText_MapName_Route1[] = _("Route 1");
+const u8 gText_MapName_Route12[] = _("Route 12");
+
+
+//Ernest the Chicken
+const u8 gText_SideQuestName_Ernest[] = _("Ernest the Chicken");
+const u8 gText_SideQuestDesc_Ernest[] = _("Help Prof.Oddenstein resurect Poly.");
+const u8 gText_SideQuestDesc_Completed_Ernest[] = _("Quest Completed!");
+const u8 gText_SideQuestMap_Draynor_Manor[] = _("Draynor Manor");
+const u8 gText_SubQuest_Ernest_Name1[] = _("Oil Can");
+const u8 gText_SubQuest_Ernest_Name2[] = _("Rubber Tube");
+const u8 gText_SubQuest_Ernest_Name3[] = _("Pressure Gauge");
+
 //names
+
+/*
 const u8 gText_SideQuestName_1[] = _("Art Fight - (Team Jatizso)");
 const u8 gText_SideQuestName_2[] = _("Art Fight - (Team Neitiznot)");
-const u8 gText_SideQuestName_Ernest[] = _("Ernest the Chicken");
+
 const u8 gText_SideQuestName_4[] = _("Side Quest 4");
 const u8 gText_SideQuestName_5[] = _("Side Quest 5");
 const u8 gText_SideQuestName_6[] = _("Side Quest 6");
 const u8 gText_SideQuestName_7[] = _("Side Quest 7");
 const u8 gText_SideQuestName_8[] = _("Side Quest 8");
-const u8 gText_SideQuestName_9[] = _("Side Quest 9");
+const u8 gText_SideQuestName_9[] = _("Cooks Assistant");
 const u8 gText_SideQuestName_10[] = _("Side Quest 10");
 const u8 gText_SideQuestName_11[] = _("Side Quest 11");
 const u8 gText_SideQuestName_12[] = _("Side Quest 12");
@@ -1968,8 +1996,10 @@ const u8 gText_SideQuestName_27[] = _("Side Quest 27");
 const u8 gText_SideQuestName_28[] = _("Side Quest 28");
 const u8 gText_SideQuestName_29[] = _("Side Quest 29");
 const u8 gText_SideQuestName_30[] = _("Side Quest 30");
-
+*/
 //descriptions
+
+/*
 const u8 gText_SideQuestDesc_1[] = _("An Art Fight between\nthe isles of Jatizso\nNeitiznot.");
 const u8 gText_SideQuestDesc_2[] = _("Description 2");
 const u8 gText_SideQuestDesc_3[] = _("Description 3");
@@ -1978,7 +2008,7 @@ const u8 gText_SideQuestDesc_5[] = _("Description 5");
 const u8 gText_SideQuestDesc_6[] = _("Description 6");
 const u8 gText_SideQuestDesc_7[] = _("Description 7");
 const u8 gText_SideQuestDesc_8[] = _("Description 8");
-const u8 gText_SideQuestDesc_9[] = _("Description 9");
+const u8 gText_SideQuestDesc_9[] = _("Help the Cook make\na Cake for the Dukes\nbirthday.");
 const u8 gText_SideQuestDesc_10[] = _("Description 10");
 const u8 gText_SideQuestDesc_11[] = _("Description 11");
 const u8 gText_SideQuestDesc_12[] = _("Description 12");
@@ -2000,8 +2030,10 @@ const u8 gText_SideQuestDesc_27[] = _("Description 27");
 const u8 gText_SideQuestDesc_28[] = _("Description 28");
 const u8 gText_SideQuestDesc_29[] = _("Description 29");
 const u8 gText_SideQuestDesc_30[] = _("Description 30");
-
+*/
 //completed quest description
+
+/*
 const u8 gText_SideQuestDoneDesc_1[] = _("You helped Elej take\nthe most perfect picture!");
 const u8 gText_SideQuestDoneDesc_2[] = _("Completed Quest 2");
 const u8 gText_SideQuestDoneDesc_3[] = _("Completed Quest 3");
@@ -2032,17 +2064,20 @@ const u8 gText_SideQuestDoneDesc_27[] = _("Completed Quest 27");
 const u8 gText_SideQuestDoneDesc_28[] = _("Completed Quest 28");
 const u8 gText_SideQuestDoneDesc_29[] = _("Completed Quest 29");
 const u8 gText_SideQuestDoneDesc_30[] = _("Completed Quest 30");
-
+*/
 //map
+
+/*
+
 const u8 gText_SideQuestMap1[] = _("Rellekka");
 const u8 gText_SideQuestMap2[] = _("Jatizso");
 const u8 gText_SideQuestMap3[] = _("Neitiznot");
-const u8 gText_SideQuestMap_Draynor_Manor[] = _("Draynor Manor");
+
 const u8 gText_SideQuestMap5[] = _("Map 5");
 const u8 gText_SideQuestMap6[] = _("Map 6");
 const u8 gText_SideQuestMap7[] = _("Map 7");
 const u8 gText_SideQuestMap8[] = _("Map 8");
-const u8 gText_SideQuestMap9[] = _("Map 9");
+const u8 gText_SideQuestMap9[] = _("Lumbridge");
 const u8 gText_SideQuestMap10[] = _("Map 10");
 const u8 gText_SideQuestMap11[] = _("Map 11");
 const u8 gText_SideQuestMap12[] = _("Map 12");
@@ -2064,8 +2099,10 @@ const u8 gText_SideQuestMap27[] = _("Map 27");
 const u8 gText_SideQuestMap28[] = _("Map 28");
 const u8 gText_SideQuestMap29[] = _("Map 29");
 const u8 gText_SideQuestMap30[] = _("Map 30");
-
+*/
 //subquests
+
+/*
 const u8 gText_SubQuest1_Name1[] = _("Jatizso - Elej"); //Elej Quest
 const u8 gText_SubQuest1_Name2[] = _("Jatizso - Madame Dragon");
 const u8 gText_SubQuest1_Name3[] = _("Jatizso - Bats");
@@ -2077,9 +2114,9 @@ const u8 gText_SubQuest1_Name8[] = _("Neitiznot - Part 8");
 const u8 gText_SubQuest1_Name9[] = _("Neitiznot - Part 9");
 const u8 gText_SubQuest1_Name10[] = _("Neitiznot - Part 10");
 
-const u8 gText_SubQuest_Ernest_Name1[] = _("Oil Can");
-const u8 gText_SubQuest_Ernest_Name2[] = _("Rubber Tube");
-const u8 gText_SubQuest_Ernest_Name3[] = _("Pressure Gauge");
+
+
+
 
 const u8 gText_SubQuest2_Name4[] = _("Part 4");
 const u8 gText_SubQuest2_Name5[] = _("Part 5");
@@ -2130,7 +2167,7 @@ const u8 gText_SubQuest2_Desc17[] = _("Description Sub 17");
 const u8 gText_SubQuest2_Desc18[] = _("Description Sub 18");
 const u8 gText_SubQuest2_Desc19[] = _("Description Sub 19");
 const u8 gText_SubQuest2_Desc20[] = _("Description Sub 20");
-
+*/
 
 const u8 gText_SmallDot[] = _("·");
 const u8 gText_LargeDot[] = _("{EMOJI_CIRCLE}");

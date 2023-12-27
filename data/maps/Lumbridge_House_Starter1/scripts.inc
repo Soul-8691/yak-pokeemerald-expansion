@@ -62,6 +62,7 @@ Explorer_Jack_2_1:
 	waitmovement 0
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_SYS_B_DASH
+	setflag FLAG_SYS_QUEST_MENU_GET
 	release
 	end
 
@@ -116,6 +117,11 @@ Explorer_Jack_3_4:
 	msgbox Explorer_Jack_3_Text_0
 	hidenamebox
 	release
+	end
+
+
+CHEAT_ITEM_PULSE_CORE::
+	finditem ITEM_PULSE_CORE
 	end
 
 

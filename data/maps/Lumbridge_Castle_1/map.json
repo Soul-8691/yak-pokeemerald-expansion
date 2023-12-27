@@ -215,7 +215,7 @@
       "dest_warp_id": 2
     },
     {
-      "x": 39,
+      "x": 38,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_CASTLE_3",
@@ -250,7 +250,7 @@
       "dest_warp_id": 10
     },
     {
-      "x": 6,
+      "x": 7,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_LUMBRIDGE_CASTLE_3",

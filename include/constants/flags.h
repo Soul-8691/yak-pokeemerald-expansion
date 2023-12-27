@@ -132,8 +132,10 @@
 #define FLAG_GAMEMODE_SCALE_EVOLUTION       0x96 
 #define FLAG_GAMEMODE_MONSTER_SPAWN         0x79
 #define FLAG_EXP_ALL                        0x7A
-#define FLAG_ALKHARIDGYM_1                   0x7B
-#define FLAG_ALKHARIDGYM_2                   0x89
+#define FLAG_ALKHARIDGYM_1                  0x7B
+#define FLAG_ALKHARIDGYM_2                  0x89
+#define FLAG_ALKHARIDGYM_3                  0x8D
+#define FLAG_ALKHARIDGYM_4                  0x8C
 
 
 
@@ -188,8 +190,8 @@
 
 #define FLAG_SCOTT_CALL_FORTREE_GYM          0x8A // Triggers call from Scott after defeating Winona
 #define FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY   0x8B
-#define FLAG_RECEIVED_6_SODA_POP             0x8C
-#define FLAG_DEFEATED_SEASHORE_HOUSE         0x8D
+
+
 #define FLAG_DEVON_GOODS_STOLEN              0x8E
 #define FLAG_RECOVERED_DEVON_GOODS           0x8F
 #define FLAG_RETURNED_DEVON_GOODS            0x90

@@ -4,10 +4,18 @@ mapscripts Alkharid_Gym_1F_R1_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 11) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
         call(ALKHARID_GYM_ROOMS_STATE)
+        call(ALKHARID_GYM_NPCS_POST_GYM_1F_1R)
     }
 }
 
-
+script ALKHARID_GYM_NPCS_POST_GYM_1F_1R{
+	switch (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)){ 
+        case 30: //GYM DEFEATED
+            setobjectxyperm(2, 2, 4)
+			setobjectmovementtype(2,MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT)
+    }
+    return
+}
 
 
 

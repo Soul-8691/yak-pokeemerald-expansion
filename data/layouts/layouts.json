@@ -7574,7 +7574,7 @@
     {
       "id": "LAYOUT_ALKHARID_GYM_2F_R1",
       "name": "Alkharid_Gym_2F_R1_Layout",
-      "width": 10,
+      "width": 20,
       "height": 8,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_IndoorTowns2",

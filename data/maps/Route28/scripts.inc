@@ -32,8 +32,23 @@ ENCOUNTER_PENGUIN_CACTUS::
 	end
 
 
+BLOCK_Alkharid_Guards::
+	lock
+	faceplayer
+	goto_if_unset FLAG_BADGE04_GET, BLOCK_Alkharid_Guards_2
+BLOCK_Alkharid_Guards_1:
+	msgbox BLOCK_Alkharid_Guards_Text_0
+	closemessage
+	release
+	end
+
+BLOCK_Alkharid_Guards_2:
+	goto BLOCK_ALKHAIRD_GATE
+	goto BLOCK_Alkharid_Guards_1
+
+
 TRIGGER_ALKHAIRD_GATE::
-	goto_if_unset FLAG_BADGE05_GET, TRIGGER_ALKHAIRD_GATE_2
+	goto_if_unset FLAG_BADGE04_GET, TRIGGER_ALKHAIRD_GATE_2
 TRIGGER_ALKHAIRD_GATE_1:
 	end
 
@@ -44,12 +59,14 @@ TRIGGER_ALKHAIRD_GATE_2:
 
 BLOCK_ALKHAIRD_GATE::
 	lockall
-	applymovement 1, movement_BLOCK_ALKHAIRD_GATE_1
-	applymovement 2, movement_BLOCK_ALKHAIRD_GATE_2
+	applymovement 30, movement_BLOCK_ALKHAIRD_GATE_1
+	applymovement 29, movement_BLOCK_ALKHAIRD_GATE_2
 	waitmovement 0
 	msgbox BLOCK_ALKHAIRD_GATE_Text_0
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, movement_BLOCK_ALKHAIRD_GATE_3
+	applymovement 30, movement_FACELEFT
+	applymovement 29, movement_FACELEFT
 	waitmovement 0
 	release
 	end
@@ -66,21 +83,6 @@ movement_BLOCK_ALKHAIRD_GATE_2:
 movement_BLOCK_ALKHAIRD_GATE_3:
 	walk_left
 	step_end
-
-BLOCK_Alkharid_Guards::
-	lock
-	faceplayer
-	goto_if_unset FLAG_BADGE05_GET, BLOCK_Alkharid_Guards_2
-BLOCK_Alkharid_Guards_1:
-	msgbox BLOCK_Alkharid_Guards_Text_0
-	closemessage
-	release
-	end
-
-BLOCK_Alkharid_Guards_2:
-	goto BLOCK_ALKHAIRD_GATE
-	goto BLOCK_Alkharid_Guards_1
-
 
 BLOCK_DEMO_END::
 	lockall
@@ -131,14 +133,14 @@ ENCOUNTER_PENGUIN_CACTUS_Text_0:
 ENCOUNTER_PENGUIN_CACTUS_Text_1:
 	.string "Noot! Noot!$"
 
+BLOCK_Alkharid_Guards_Text_0:
+	.string "That is the Al-Kharid Badge!\p"
+	.string "You may pass.$"
+
 BLOCK_ALKHAIRD_GATE_Text_0:
 	.string "Halt!\p"
 	.string "Only those whom possess the Al-Khaird\n"
 	.string "Badge may enter!$"
-
-BLOCK_Alkharid_Guards_Text_0:
-	.string "That is the Al-Kharid Badge!\p"
-	.string "You may pass.$"
 
 BLOCK_DEMO_END_Text_0:
 	.string "POKESCAPE MESSAGE - PAST THIS POINT\n"

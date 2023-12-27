@@ -4,9 +4,22 @@ mapscripts Alkharid_Gym_1F_R2_MapScripts {
     MAP_SCRIPT_ON_TRANSITION {
         setvar(VAR_EVOLUTION_MAP_STATE, 11) //MAP LOCATIONS: 0-NOTHING, 1-LUMBRIDGE, 16-VARROCK, 3-FALADOR, 4-MEMBERS, 5-OCEAN, 6-WILDERNESS, 7-MORYTANIA, 8-CAVES, 9-ABYSS, 10-OFFWORLD, 11-DESERT, 15-KARAMJA
         call(ALKHARID_GYM_STATE)
+        call(ALKHARID_GYM_NPCS_POST_GYM_2F_2R)
     }
 }
 
+script ALKHARID_GYM_NPCS_POST_GYM_2F_2R{
+	switch (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)){ 
+        case 30: //GYM DEFEATED
+            setobjectxyperm(9, 3, 9)
+			setobjectmovementtype(2,MOVEMENT_TYPE_WANDER_AROUND)
+            setobjectxyperm(10, 14, 6)
+			setobjectmovementtype(2,MOVEMENT_TYPE_FACE_DOWN)
+            setobjectxyperm(11, 11, 11)
+			setobjectmovementtype(2,MOVEMENT_TYPE_FACE_LEFT)
+    }
+    return
+}
 
 
 
@@ -36,6 +49,8 @@ script ALKHARID_GYM_STATE{
 		case 0: 
             setflag(FLAG_TEMP_1)
             setflag(FLAG_TEMP_B)
+            removeobject(11) // extra guard
+            setflag(FLAG_TEMP_6)
         case 5: 
             clearflag(FLAG_TEMP_1)
             addobject(3)
@@ -52,6 +67,8 @@ script ALKHARID_GYM_STATE{
             removeobject(9)
             removeobject(10)
             setflag(FLAG_TEMP_5)
+            removeobject(11) // extra guard
+            setflag(FLAG_TEMP_6)
         case 10:
             removeobject(OBJ_EVENT_ID_PRINCEALI)
             setflag(FLAG_TEMP_A) // Hides prince.
@@ -60,6 +77,8 @@ script ALKHARID_GYM_STATE{
             removeobject(9)
             removeobject(10)
             setflag(FLAG_TEMP_5)
+            removeobject(11) // extra guard
+            setflag(FLAG_TEMP_6)
         case 15:
             setobjectxy(OBJ_EVENT_ID_OSMAN,11,5)
             addobject(9)
@@ -74,6 +93,8 @@ script ALKHARID_GYM_STATE{
             removeobject(OBJ_EVENT_ID_PRINCEALI_DISGUISE)
             removeobject(7)
             removeobject(8)
+            removeobject(11) // extra guard
+            setflag(FLAG_TEMP_6)
         case 20:
             setflag(FLAG_TEMP_1)
             setflag(FLAG_TEMP_B)
@@ -83,6 +104,18 @@ script ALKHARID_GYM_STATE{
             removeobject(OBJ_EVENT_ID_PRINCEALI_DISGUISE)
             removeobject(7)
             removeobject(8)
+            removeobject(11) // extra guard
+            setflag(FLAG_TEMP_6)
+        case 30: //Gym defeated
+            setflag(FLAG_TEMP_1)
+            setflag(FLAG_TEMP_B)
+            removeobject(3)
+            removeobject(4)
+            removeobject(5)
+            removeobject(OBJ_EVENT_ID_PRINCEALI_DISGUISE)
+            removeobject(7)
+            removeobject(8)
+            
             
     }
     return
@@ -211,7 +244,7 @@ script ALKHARID_GYM_ALI {
         msgbox(format("Have this Badge."))
         hidenamebox
         playfanfare(MUS_PS_QUEST_COMPLETE) //MUS_OBTAIN_BADGE MUS_PS_QUEST_COMPLETE
-        msgbox(format("{PLAYER} received the Varrock BADGE from Prince Ali."))
+        msgbox(format("{PLAYER} received the Al-Kharid BADGE from Prince Ali."))
         waitfanfare
         waitmessage
         namebox("Prince Ali")
@@ -220,11 +253,11 @@ script ALKHARID_GYM_ALI {
         giveitem (ITEM_TM48, 1) //Power Gem.
         compare(VAR_RESULT, FALSE)
         goto_if_eq(Common_EventScript_ShowBagIsFull)
-        playbgm(MUS_PS_VARROCK, 0)
-        savebgm(MUS_PS_VARROCK)
+        playbgm(MUS_PS_ALKHARID, 0)
+        savebgm(MUS_PS_ALKHARID)
         namebox("Prince Ali")
         msgbox(format("That move is called Power Gem.\pIt sparkles just as all our precious Gems around the palace do."))
-        setvar(VAR_POKESCAPE_VARROCK_GYM_QUEST, 26)
+        setvar(VAR_POKESCAPE_ALKHARID_GYM_QUEST, 30)
         setflag(FLAG_BADGE04_GET)
         addvar(VAR_GAMEMODE_LEVEL_SCALING, 1) //INCREASES LEVEL SCALING & SHOPS
         call(SetGymTrainers_VARROCK)
@@ -385,7 +418,7 @@ script GYM_ALKHARID_TRAINER_2
 
 script CHECK_IF_ALI
 {
-    random(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE)
+    random(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE) 
         switch (var(VAR_RESULT)) {
             case 0: 
                 namebox("Warrior")
@@ -396,19 +429,19 @@ script CHECK_IF_ALI
             case 1:
                 namebox("Warrior")
                 msgbox(format("You found me!\pYep, that's right, you found me.\pI am simply known as the Greatest Warrior of Alkharid or GWoA for short."))
-                //subvar(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1) 
+                subvar(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1) 
                 hidenamebox
                 closemessage
             case 2:
                 namebox("Warrior")
-                msgbox(format("Tomorrow I am going to show those pesky Merchants who owns this town."))
-                //subvar(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1)
+                msgbox(format("Tomorrow I am going to show those pesky Merchants who owns this town.")) //Could randomise the messages.
+                subvar(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1)
                 hidenamebox
                 closemessage
             case 3:
                 namebox("Warrior")
                 msgbox(format("Are you asking for a fight?"))
-                //subvar(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1) 
+                subvar(VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE, 1) 
                 hidenamebox
                 closemessage
         }
@@ -430,6 +463,225 @@ script ClearGymTrainers_ALKHARID {
     cleartrainerflag(TRAINER_ALKHARID_GYM_TRAINER_4)
     return
 }
+
+
+
+
+
+
+
+
+
+script GYM_NPC_7
+{
+    lock
+    faceplayer
+    if (flag(FLAG_ALKHARIDGYM_4) == FALSE)
+		{	
+            if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==15) { //If Gym Challenge.
+                call(CHECK_IF_ALI)
+                if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==20) {
+                    msgbox(format("Guards help me as I make my escape!"))
+                    hidenamebox
+                    closemessage
+                    applymovement(VAR_LAST_TALKED, Movement_AlkharidGym_TELEPORT)
+                    delay(30)
+                    removeobject(VAR_LAST_TALKED)
+                    addobject(11) // extra guard
+                    clearflag(FLAG_TEMP_6)
+                    applymovement(10, Movement_AlkharidGym_NPC_7)
+                    applymovement(11, Movement_AlkharidGym_NPC_7_Ali)
+                    delay(60)
+                    applymovement(OBJ_EVENT_ID_PLAYER, Movement_FACERIGHT)
+                    waitmovement(0)
+                    namebox("Warrior")
+                    msgbox(format("Brother, I will help thee with this infidel!"))
+                    hidenamebox
+                    closemessage
+                    trainerbattle_no_intro(TRAINER_ALKHARID_GYM_TRAINER_4, format("Consider that a warning!") )
+                    if (var(VAR_RESULT) == B_OUTCOME_LOST) { //
+                        setvar(VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0)
+                        end
+                    }
+                    msgbox(format("You have defeated us!\pBut the Prince has made his escape so we have done our jobs."))
+                    closemessage
+                    hidenamebox
+                    applymovement(11, Movement_WALKDOWN)
+                    waitmovement(0)
+                    applymovement(11, Movement_FACEUP)
+                    waitmovement(0)
+                    release
+                    end
+                }
+                applymovement(10, Movement_AlkharidGym_NPC_7)
+                waitmovement(0)
+                applymovement(OBJ_EVENT_ID_PLAYER, Movement_FACERIGHT)
+                waitmovement(0)
+                namebox("Warrior")
+                msgbox(format("Brother, I will help thee with this infidel!"))
+                hidenamebox
+                closemessage
+                trainerbattle_no_intro(TRAINER_ALKHARID_GYM_TRAINER_4, format("Consider that a warning!") )
+                namebox("Warrior")
+                msgbox(format("You have defeated us!\pBut the Prince is still somewhere around the Palace."))
+                closemessage
+                hidenamebox
+                setflag(FLAG_ALKHARIDGYM_4)
+                release
+                end
+            }
+        }
+    if (flag(FLAG_BADGE04_GET)) { //If Gym badge is obtained.
+        msgbox(format("Hello congrats on beating the gym."))
+        release
+        end
+    }
+    if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==0) { // If Gym challenge hasnt been started.
+        msgbox(format("Hello."))
+    }
+    else {
+        msgbox(format("We use our lives to protect our prince."))
+    }
+    release
+    end
+}
+
+
+script GYM_NPC_8
+{
+    lock
+    faceplayer
+    if (flag(FLAG_ALKHARIDGYM_4) == FALSE)
+		{	
+            if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==15) { //If Gym Challenge.
+                call(CHECK_IF_ALI)
+                if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==20) {
+                    msgbox(format("Guards help me as I make my escape!"))
+                    hidenamebox
+                    closemessage
+                    applymovement(VAR_LAST_TALKED, Movement_AlkharidGym_TELEPORT)
+                    delay(30)
+                    removeobject(VAR_LAST_TALKED)
+                    addobject(11) // extra guard
+                    clearflag(FLAG_TEMP_6)
+                    applymovement(9, Movement_AlkharidGym_NPC_8)
+                    applymovement(11, Movement_AlkharidGym_NPC_8_Ali)
+                    delay(60)
+                    applymovement(OBJ_EVENT_ID_PLAYER, Movement_FACEUP)
+                    waitmovement(0)
+                    namebox("Warrior")
+                    msgbox(format("Brother, I will help thee with this infidel!"))
+                    hidenamebox
+                    closemessage
+                    trainerbattle_no_intro(TRAINER_ALKHARID_GYM_TRAINER_4, format("Consider that a warning!") )
+                    if (var(VAR_RESULT) == B_OUTCOME_LOST) { //
+                        setvar(VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0)
+                        end
+                    }
+                    msgbox(format("You have defeated us!\pBut the Prince has made his escape so we have done our jobs."))
+                    closemessage
+                    hidenamebox
+                    applymovement(11, Movement_WALKRIGHT)
+                    waitmovement(0)
+                    applymovement(11, Movement_FACELEFT)
+                    waitmovement(0)
+                    release
+                    end
+                }
+                applymovement(9, Movement_AlkharidGym_NPC_8)
+                waitmovement(0)
+                applymovement(OBJ_EVENT_ID_PLAYER, Movement_FACEUP)
+                waitmovement(0)
+                namebox("Warrior")
+                msgbox(format("Brother, I will help thee with this infidel!"))
+                hidenamebox
+                closemessage
+                trainerbattle_no_intro(TRAINER_ALKHARID_GYM_TRAINER_4, format("Consider that a warning!") )
+                namebox("Warrior")
+                msgbox(format("You have defeated us!\pBut the Prince is still somewhere around the Palace."))
+                closemessage
+                hidenamebox
+                setflag(FLAG_ALKHARIDGYM_4)
+                release
+                end
+            }
+        }
+    if (flag(FLAG_BADGE04_GET)) { //If Gym badge is obtained.
+        msgbox(format("Hello congrats on beating the gym."))
+        release
+        end
+    }
+    if (var(VAR_POKESCAPE_ALKHARID_GYM_QUEST)==0) { // If Gym challenge hasnt been started.
+        msgbox(format("Hello."))
+    }
+    else {
+        msgbox(format("We use our lives to protect our prince."))
+    }
+    release
+    end
+}
+
+movement Movement_AlkharidGym_NPC_7
+{
+    walk_faster_down * 2
+    walk_faster_left * 3
+    face_player
+} 
+movement Movement_AlkharidGym_NPC_7_Ali
+{
+    walk_faster_up * 2
+    walk_faster_left * 7
+    walk_faster_up * 2
+    face_player
+} 
+
+movement Movement_AlkharidGym_NPC_8
+{
+    walk_faster_right * 5
+    face_player
+} 
+movement Movement_AlkharidGym_NPC_8_Ali
+{
+    walk_faster_up * 6
+    walk_faster_left * 2
+    face_player
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

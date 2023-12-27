@@ -1,5 +1,5 @@
-const ALKAHRID_GUARD_1_ID = 1
-const ALKAHRID_GUARD_2_ID = 2
+const ALKAHRID_GUARD_1_ID = 30
+const ALKAHRID_GUARD_2_ID = 29
 const OBJ_EVENT_ID_PENGUIN_DND = 14
 const OBJ_EVENT_ID_PENGUIN = 13
 
@@ -37,9 +37,24 @@ script ENCOUNTER_PENGUIN_CACTUS {
 
 
 
+
+script BLOCK_Alkharid_Guards
+{
+	lock
+	faceplayer
+	if (!flag(FLAG_BADGE04_GET))
+        {
+			goto(BLOCK_ALKHAIRD_GATE)
+        }
+	msgbox(format("That is the Al-Kharid Badge!\pYou may pass."))
+	closemessage
+	release
+	end
+}
+
 script TRIGGER_ALKHAIRD_GATE
 {
-	if (!flag(FLAG_BADGE05_GET))
+	if (!flag(FLAG_BADGE04_GET))
         {
 			goto(BLOCK_ALKHAIRD_GATE)
         }
@@ -55,6 +70,8 @@ script BLOCK_ALKHAIRD_GATE
 	msgbox(format("Halt!\pOnly those whom possess the Al-Khaird Badge may enter!"))
 	closemessage
 	applymovement (OBJ_EVENT_ID_PLAYER,movement_BLOCK_ALKHAIRD_GATE_3)
+	applymovement (ALKAHRID_GUARD_1_ID,movement_FACELEFT)
+	applymovement (ALKAHRID_GUARD_2_ID,movement_FACELEFT)
 	waitmovement (0)
 	release
 	end
@@ -63,33 +80,18 @@ script BLOCK_ALKHAIRD_GATE
 movement movement_BLOCK_ALKHAIRD_GATE_1
 {
 	face_down
-
 }
 movement movement_BLOCK_ALKHAIRD_GATE_2
 {
 	face_up
-
 }
 movement movement_BLOCK_ALKHAIRD_GATE_3
 {
 	walk_left
-
 }
 
 
-script BLOCK_Alkharid_Guards
-{
-	lock
-	faceplayer
-	if (!flag(FLAG_BADGE05_GET))
-        {
-			goto(BLOCK_ALKHAIRD_GATE)
-        }
-	msgbox(format("That is the Al-Kharid Badge!\pYou may pass."))
-	closemessage
-	release
-	end
-}
+
 
 
 script BLOCK_DEMO_END

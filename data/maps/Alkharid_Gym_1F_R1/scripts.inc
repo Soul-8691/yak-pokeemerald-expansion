@@ -5,7 +5,20 @@ Alkharid_Gym_1F_R1_MapScripts::
 Alkharid_Gym_1F_R1_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 	setvar VAR_EVOLUTION_MAP_STATE, 11
 	call ALKHARID_GYM_ROOMS_STATE
+	call ALKHARID_GYM_NPCS_POST_GYM_1F_1R
 	return
+
+
+ALKHARID_GYM_NPCS_POST_GYM_1F_1R::
+	switch VAR_POKESCAPE_ALKHARID_GYM_QUEST
+	case 30, ALKHARID_GYM_NPCS_POST_GYM_1F_1R_3
+ALKHARID_GYM_NPCS_POST_GYM_1F_1R_1:
+	return
+
+ALKHARID_GYM_NPCS_POST_GYM_1F_1R_3:
+	setobjectxyperm 2, 2, 4
+	setobjectmovementtype 2, MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT
+	goto ALKHARID_GYM_NPCS_POST_GYM_1F_1R_1
 
 
 GYM_NPC_3::
@@ -14,7 +27,6 @@ GYM_NPC_3::
 	goto_if_unset FLAG_ALKHARIDGYM_2, GYM_NPC_3_2
 GYM_NPC_3_1:
 	goto_if_set FLAG_BADGE04_GET, GYM_NPC_3_5
-GYM_NPC_3_4:
 	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0
 	goto_if_eq GYM_NPC_3_10
 	msgbox GYM_NPC_3_Text_8
@@ -29,7 +41,8 @@ GYM_NPC_3_2:
 
 GYM_NPC_3_5:
 	msgbox GYM_NPC_3_Text_6
-	goto GYM_NPC_3_4
+	release
+	end
 
 GYM_NPC_3_7:
 	call CHECK_IF_ALI
@@ -102,7 +115,6 @@ GYM_NPC_4::
 	goto_if_unset FLAG_ALKHARIDGYM_2, GYM_NPC_4_2
 GYM_NPC_4_1:
 	goto_if_set FLAG_BADGE04_GET, GYM_NPC_4_5
-GYM_NPC_4_4:
 	compare VAR_POKESCAPE_ALKHARID_GYM_QUEST, 0
 	goto_if_eq GYM_NPC_4_10
 	msgbox GYM_NPC_3_Text_8
@@ -117,7 +129,8 @@ GYM_NPC_4_2:
 
 GYM_NPC_4_5:
 	msgbox GYM_NPC_3_Text_6
-	goto GYM_NPC_4_4
+	release
+	end
 
 GYM_NPC_4_7:
 	call CHECK_IF_ALI

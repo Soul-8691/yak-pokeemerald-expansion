@@ -7564,8 +7564,8 @@
     {
       "id": "LAYOUT_KOUREND_CATACOMBS_1",
       "name": "Kourend_Catacombs_1_Layout",
-      "width": 50,
-      "height": 62,
+      "width": 35,
+      "height": 34,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
       "border_filepath": "data/layouts/Kourend_Catacombs_1/border.bin",
@@ -7580,6 +7580,76 @@
       "secondary_tileset": "gTileset_IndoorTowns2",
       "border_filepath": "data/layouts/Alkharid_Gym_2F_R1/border.bin",
       "blockdata_filepath": "data/layouts/Alkharid_Gym_2F_R1/map.bin"
+    },
+    {
+      "id": "LAYOUT_MUSA_POINT_PUB_1F",
+      "name": "MusaPoint_Pub_1F_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Pub",
+      "border_filepath": "data/layouts/MusaPoint_Pub_1F/border.bin",
+      "blockdata_filepath": "data/layouts/MusaPoint_Pub_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_MUSA_POINT_BANANA_SHOP",
+      "name": "MusaPoint_BananaShop_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/MusaPoint_BananaShop/border.bin",
+      "blockdata_filepath": "data/layouts/MusaPoint_BananaShop/map.bin"
+    },
+    {
+      "id": "LAYOUT_MUSA_POINT_GENERAL_STORE",
+      "name": "MusaPoint_GeneralStore_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_IndoorTowns1",
+      "border_filepath": "data/layouts/MusaPoint_GeneralStore/border.bin",
+      "blockdata_filepath": "data/layouts/MusaPoint_GeneralStore/map.bin"
+    },
+    {
+      "id": "LAYOUT_KOUREND_CATACOMBS_2",
+      "name": "Kourend_Catacombs_2_Layout",
+      "width": 50,
+      "height": 28,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Kourend_Catacombs_2/border.bin",
+      "blockdata_filepath": "data/layouts/Kourend_Catacombs_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_KOUREND_CATACOMBS_3",
+      "name": "Kourend_Catacombs_3_Layout",
+      "width": 29,
+      "height": 34,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Kourend_Catacombs_3/border.bin",
+      "blockdata_filepath": "data/layouts/Kourend_Catacombs_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_KOUREND_CATACOMBS_4",
+      "name": "Kourend_Catacombs_4_Layout",
+      "width": 80,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Kourend_Catacombs_4/border.bin",
+      "blockdata_filepath": "data/layouts/Kourend_Catacombs_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_KOUREND_CATACOMBS_5",
+      "name": "Kourend_Catacombs_5_Layout",
+      "width": 20,
+      "height": 34,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Kourend_Catacombs_5/border.bin",
+      "blockdata_filepath": "data/layouts/Kourend_Catacombs_5/map.bin"
     }
   ]
 }

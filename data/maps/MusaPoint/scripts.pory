@@ -71,8 +71,8 @@ script NPC_MUSA_POINT_2
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    //namebox ("Cupholder")
+	msgbox(format("30 years ago I buried me treasure here.\pNow I've spent 5 years digging on the beach to find it only to realize that maybe I buried it in Brimhaven?"))
     closemessage
     hidenamebox
 	release
@@ -82,8 +82,8 @@ script NPC_MUSA_POINT_3
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    //namebox ("Cupholder")
+	msgbox(format("The Customs Officers constantly keep us under supervision, apparently they dont want Karamja Rum to reach the mainland.\pIts all a conspiracy to keep the White knights in power I tell you!"))
     closemessage
     hidenamebox
 	release
@@ -93,8 +93,8 @@ script NPC_MUSA_POINT_4
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    //namebox ("Cupholder")
+	msgbox(format("Up north is a fishing spot, you might find yourself a battle there with the local fishers."))
     closemessage
     hidenamebox
 	release
@@ -104,8 +104,8 @@ script NPC_MUSA_POINT_5
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    //namebox ("Cupholder")
+	msgbox(format("I once saw a Polar Bear in this well, but no one believes me.\pThey all just think I was drunk.\pBut I wasn't!\p… Or was I…"))
     closemessage
     hidenamebox
 	release
@@ -115,8 +115,8 @@ script NPC_MUSA_POINT_6
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    //namebox ("Cupholder")
+	msgbox(format("The banana farm is the pride and joy of Musa Point.\pThat or the bar is the only thing keeping us a landmark really."))
     closemessage
     hidenamebox
 	release
@@ -126,8 +126,8 @@ script NPC_MUSA_POINT_7
 {
 	lock
 	faceplayer
-    namebox ("Cupholder")
-	msgbox(format("Hello, I am a Cupholder."))
+    //namebox ("Cupholder")
+	msgbox(format("Welcome to Karamja.\pMake sure to prepare some antipoisons."))
     closemessage
     hidenamebox
 	release

@@ -57,8 +57,7 @@ NPC_MUSA_POINT_1::
 NPC_MUSA_POINT_2::
 	lock
 	faceplayer
-	namebox NPC_MUSA_POINT_1_Text_0
-	msgbox NPC_MUSA_POINT_1_Text_1
+	msgbox NPC_MUSA_POINT_2_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -68,8 +67,7 @@ NPC_MUSA_POINT_2::
 NPC_MUSA_POINT_3::
 	lock
 	faceplayer
-	namebox NPC_MUSA_POINT_1_Text_0
-	msgbox NPC_MUSA_POINT_1_Text_1
+	msgbox NPC_MUSA_POINT_3_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -79,8 +77,7 @@ NPC_MUSA_POINT_3::
 NPC_MUSA_POINT_4::
 	lock
 	faceplayer
-	namebox NPC_MUSA_POINT_1_Text_0
-	msgbox NPC_MUSA_POINT_1_Text_1
+	msgbox NPC_MUSA_POINT_4_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -90,8 +87,7 @@ NPC_MUSA_POINT_4::
 NPC_MUSA_POINT_5::
 	lock
 	faceplayer
-	namebox NPC_MUSA_POINT_1_Text_0
-	msgbox NPC_MUSA_POINT_1_Text_1
+	msgbox NPC_MUSA_POINT_5_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -101,8 +97,7 @@ NPC_MUSA_POINT_5::
 NPC_MUSA_POINT_6::
 	lock
 	faceplayer
-	namebox NPC_MUSA_POINT_1_Text_0
-	msgbox NPC_MUSA_POINT_1_Text_1
+	msgbox NPC_MUSA_POINT_6_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -112,8 +107,7 @@ NPC_MUSA_POINT_6::
 NPC_MUSA_POINT_7::
 	lock
 	faceplayer
-	namebox NPC_MUSA_POINT_1_Text_0
-	msgbox NPC_MUSA_POINT_1_Text_1
+	msgbox NPC_MUSA_POINT_7_Text_0
 	closemessage
 	hidenamebox
 	release
@@ -193,6 +187,42 @@ NPC_MUSA_POINT_1_Text_0:
 
 NPC_MUSA_POINT_1_Text_1:
 	.string "Hello, I am a Cupholder.$"
+
+NPC_MUSA_POINT_2_Text_0:
+	.string "30 years ago I buried me treasure here.\p"
+	.string "Now I've spent 5 years digging on the\n"
+	.string "beach to find it only to realize that\l"
+	.string "maybe I buried it in Brimhaven?$"
+
+NPC_MUSA_POINT_3_Text_0:
+	.string "The Customs Officers constantly keep\n"
+	.string "us under supervision, apparently they\l"
+	.string "dont want Karamja Rum to reach the\l"
+	.string "mainland.\p"
+	.string "Its all a conspiracy to keep the White\n"
+	.string "knights in power I tell you!$"
+
+NPC_MUSA_POINT_4_Text_0:
+	.string "Up north is a fishing spot, you might\n"
+	.string "find yourself a battle there with the\l"
+	.string "local fishers.$"
+
+NPC_MUSA_POINT_5_Text_0:
+	.string "I once saw a Polar Bear in this well, but\n"
+	.string "no one believes me.\p"
+	.string "They all just think I was drunk.\p"
+	.string "But I wasn't!\p"
+	.string "… Or was I…$"
+
+NPC_MUSA_POINT_6_Text_0:
+	.string "The banana farm is the pride and joy of\n"
+	.string "Musa Point.\p"
+	.string "That or the bar is the only thing\n"
+	.string "keeping us a landmark really.$"
+
+NPC_MUSA_POINT_7_Text_0:
+	.string "Welcome to Karamja.\p"
+	.string "Make sure to prepare some antipoisons.$"
 
 BATTLE_MUSA_POINT_TRAINER_1_Text_0:
 	.string "Battle me, I am a Cupholder.$"

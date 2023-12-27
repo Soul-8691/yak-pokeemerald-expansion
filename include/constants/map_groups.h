@@ -941,6 +941,13 @@
 #define MAP_JATIZSO_BANK                        (63 | (50 << 8))
 #define MAP_CORPOREAL_BEAST_LAIR                (64 | (50 << 8))
 #define MAP_KOUREND_CATACOMBS_1                 (65 | (50 << 8))
+#define MAP_MUSA_POINT_PUB_1F                   (66 | (50 << 8))
+#define MAP_MUSA_POINT_BANANA_SHOP              (67 | (50 << 8))
+#define MAP_MUSA_POINT_GENERAL_STORE            (68 | (50 << 8))
+#define MAP_KOUREND_CATACOMBS_2                 (69 | (50 << 8))
+#define MAP_KOUREND_CATACOMBS_3                 (70 | (50 << 8))
+#define MAP_KOUREND_CATACOMBS_4                 (71 | (50 << 8))
+#define MAP_KOUREND_CATACOMBS_5                 (72 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

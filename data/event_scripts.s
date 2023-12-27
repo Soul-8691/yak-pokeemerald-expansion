@@ -1684,3 +1684,17 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Kourend_Catacombs_1/scripts.inc"
 
 	.include "data/maps/Alkharid_Gym_2F_R1/scripts.inc"
+
+	.include "data/maps/MusaPoint_Pub_1F/scripts.inc"
+
+	.include "data/maps/MusaPoint_BananaShop/scripts.inc"
+
+	.include "data/maps/MusaPoint_GeneralStore/scripts.inc"
+
+	.include "data/maps/Kourend_Catacombs_2/scripts.inc"
+
+	.include "data/maps/Kourend_Catacombs_3/scripts.inc"
+
+	.include "data/maps/Kourend_Catacombs_4/scripts.inc"
+
+	.include "data/maps/Kourend_Catacombs_5/scripts.inc"

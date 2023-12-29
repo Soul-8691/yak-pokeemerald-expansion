@@ -7615,7 +7615,7 @@
       "id": "LAYOUT_KOUREND_CATACOMBS_2",
       "name": "Kourend_Catacombs_2_Layout",
       "width": 50,
-      "height": 28,
+      "height": 26,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
       "border_filepath": "data/layouts/Kourend_Catacombs_2/border.bin",
@@ -7635,7 +7635,7 @@
       "id": "LAYOUT_KOUREND_CATACOMBS_4",
       "name": "Kourend_Catacombs_4_Layout",
       "width": 80,
-      "height": 20,
+      "height": 16,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
       "border_filepath": "data/layouts/Kourend_Catacombs_4/border.bin",
@@ -7644,12 +7644,32 @@
     {
       "id": "LAYOUT_KOUREND_CATACOMBS_5",
       "name": "Kourend_Catacombs_5_Layout",
-      "width": 20,
+      "width": 16,
       "height": 34,
       "primary_tileset": "gTileset_PokeScapeOutdoors",
       "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
       "border_filepath": "data/layouts/Kourend_Catacombs_5/border.bin",
       "blockdata_filepath": "data/layouts/Kourend_Catacombs_5/map.bin"
+    },
+    {
+      "id": "LAYOUT_KOUREND_CATACOMBS_6",
+      "name": "Kourend_Catacombs_6_Layout",
+      "width": 16,
+      "height": 26,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Kourend_Catacombs_6/border.bin",
+      "blockdata_filepath": "data/layouts/Kourend_Catacombs_6/map.bin"
+    },
+    {
+      "id": "LAYOUT_KOUREND_CATACOMBS_7",
+      "name": "Kourend_Catacombs_7_Layout",
+      "width": 14,
+      "height": 26,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Kourend_Catacombs_7/border.bin",
+      "blockdata_filepath": "data/layouts/Kourend_Catacombs_7/map.bin"
     }
   ]
 }

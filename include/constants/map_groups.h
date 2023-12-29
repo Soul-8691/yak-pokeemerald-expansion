@@ -948,6 +948,8 @@
 #define MAP_KOUREND_CATACOMBS_3                 (70 | (50 << 8))
 #define MAP_KOUREND_CATACOMBS_4                 (71 | (50 << 8))
 #define MAP_KOUREND_CATACOMBS_5                 (72 | (50 << 8))
+#define MAP_KOUREND_CATACOMBS_6                 (73 | (50 << 8))
+#define MAP_KOUREND_CATACOMBS_7                 (74 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

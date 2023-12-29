@@ -131,14 +131,18 @@ static const u8 sDoorAnimTiles_TrainerHillLobbyElevator[] = INCBIN_U8("graphics/
 static const u16 sDoorNullPalette48[16] = {};
 static const u8 sDoorAnimTiles_TrainerHillRoofElevator[] = INCBIN_U8("graphics/door_anims/trainer_hill_roof_elevator.4bpp");
 static const u16 sDoorNullPalette49[16] = {};
-//POKESCAPE
-static const u8 sDoorAnimTiles_PS_Door_Left[] = INCBIN_U8("graphics/door_anims/PS_Door_Left.4bpp");
-static const u8 sDoorAnimTiles_PS_Door_Right[] = INCBIN_U8("graphics/door_anims/PS_Door_Right.4bpp");
-static const u8 sDoorAnimTiles_PS_Door_Heavy_Left[] = INCBIN_U8("graphics/door_anims/PS_Door_Heavy_Left.4bpp");
-static const u8 sDoorAnimTiles_PS_Door_Heavy_Right[] = INCBIN_U8("graphics/door_anims/PS_Door_Heavy_Right.4bpp");
-static const u8 sDoorAnimTiles_PS_Door_Pub_Left[] = INCBIN_U8("graphics/door_anims/PS_Door_Pub_Left.4bpp");
-static const u8 sDoorAnimTiles_PS_Door_Pub_Right[] = INCBIN_U8("graphics/door_anims/PS_Door_Pub_Right.4bpp");
-static const u8 sDoorAnimTiles_PS_Door_Normal_Right[] = INCBIN_U8("graphics/door_anims/PS_Door_Normal_Right.4bpp");
+
+static const u8 sDoorAnimTiles_Door_GeneralStore_L[] = INCBIN_U8("graphics/door_anims/Door_GeneralStore_L.4bpp");
+static const u8 sDoorAnimTiles_Door_GeneralStore_R[] = INCBIN_U8("graphics/door_anims/Door_GeneralStore_R.4bpp");
+static const u8 sDoorAnimTiles_Door_Bank_L[] = INCBIN_U8("graphics/door_anims/Door_Bank_L.4bpp");
+static const u8 sDoorAnimTiles_Door_Bank_R[] = INCBIN_U8("graphics/door_anims/Door_Bank_R.4bpp");
+static const u8 sDoorAnimTiles_Door_Pub_L[] = INCBIN_U8("graphics/door_anims/Door_Pub_L.4bpp");
+static const u8 sDoorAnimTiles_Door_Pub_R[] = INCBIN_U8("graphics/door_anims/Door_Pub_R.4bpp");
+static const u8 sDoorAnimTiles_Door_General_L[] = INCBIN_U8("graphics/door_anims/Door_General_L.4bpp");
+static const u8 sDoorAnimTiles_Door_General_R[] = INCBIN_U8("graphics/door_anims/Door_General_R.4bpp");
+static const u8 sDoorAnimTiles_Door_Goblin_L[] = INCBIN_U8("graphics/door_anims/Door_Goblin_L.4bpp");
+static const u8 sDoorAnimTiles_Door_Goblin_R[] = INCBIN_U8("graphics/door_anims/Door_Goblin_R.4bpp");
+
 
 
 static const struct DoorAnimFrame sDoorOpenAnimFrames[] =
@@ -246,14 +250,18 @@ static const u8 sDoorAnimPalettes_BattleDomePreBattleRoom[] = {9, 9, 7, 7, 7, 7,
 static const u8 sDoorAnimPalettes_BattleTentInterior[] = {9, 9, 9, 9, 9, 9, 9, 9};
 static const u8 sDoorAnimPalettes_TrainerHillLobbyElevator[] = {7, 7, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7, 7, 7};
-//POKESCAPE
-static const u8 sDoorAnimPalettes_PS_Door_Left[] = {3, 3, 3, 3};
-static const u8 sDoorAnimPalettes_PS_Door_Right[] = {3, 3, 3, 3};
-static const u8 sDoorAnimPalettes_PS_Door_Heavy_Left[] = {3, 3, 3, 3};
-static const u8 sDoorAnimPalettes_PS_Door_Heavy_Right[] = {3, 3, 3, 3};
-static const u8 sDoorAnimPalettes_PS_Door_Pub_Left[] = {3, 3, 3, 3};
-static const u8 sDoorAnimPalettes_PS_Door_Pub_Right[] = {3, 3, 3, 3};
-static const u8 sDoorAnimPalettes_PS_Door_Normal_Right[] = {3, 3, 3, 3};
+static const u8 sDoorAnimPalettes_Door_GeneralStore_L[] = {3, 3, 3, 3};
+static const u8 sDoorAnimPalettes_Door_GeneralStore_R[] = {3, 3, 3, 3};
+static const u8 sDoorAnimPalettes_Door_Bank_L[] = {4, 4, 4, 4};
+static const u8 sDoorAnimPalettes_Door_Bank_R[] = {4, 4, 4, 4};
+static const u8 sDoorAnimPalettes_Door_Pub_L[] = {3, 3, 3, 3};
+static const u8 sDoorAnimPalettes_Door_Pub_R[] = {3, 3, 3, 3};
+static const u8 sDoorAnimPalettes_Door_General_L[] = {4, 4, 4, 4};
+static const u8 sDoorAnimPalettes_Door_General_R[] = {4, 4, 4, 4};
+static const u8 sDoorAnimPalettes_Door_Goblin_L[] = {7, 7, 7, 7};
+static const u8 sDoorAnimPalettes_Door_Goblin_R[] = {7, 7, 7, 7};
+//number is the pallete in use.
+
 
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
@@ -312,13 +320,24 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_BattleTent_Door,                              DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_BattleTentInterior, sDoorAnimPalettes_BattleTentInterior},
     {METATILE_TrainerHill_Door_Elevator_Lobby,              DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_TrainerHillLobbyElevator, sDoorAnimPalettes_TrainerHillLobbyElevator},
     {METATILE_TrainerHill_Door_Elevator_Roof,               DOOR_SOUND_SLIDING, 1, sDoorAnimTiles_TrainerHillRoofElevator, sDoorAnimPalettes_TrainerHillRoofElevator},
-    {METATILE_PokeScapeOutdoors_PS_Door_Left,               DOOR_SOUND_NORMAL,  0, sDoorAnimTiles_PS_Door_Left, sDoorAnimPalettes_PS_Door_Left},
-    {METATILE_PokeScapeOutdoors_PS_Door_Right,               DOOR_SOUND_NORMAL,  0, sDoorAnimTiles_PS_Door_Right, sDoorAnimPalettes_PS_Door_Right},
-    {METATILE_PokeScapeOutdoors_PS_Door_Heavy_Left,               DOOR_SOUND_NORMAL,  0, sDoorAnimTiles_PS_Door_Heavy_Left, sDoorAnimPalettes_PS_Door_Heavy_Left},
-    {METATILE_PokeScapeOutdoors_PS_Door_Heavy_Right,               DOOR_SOUND_NORMAL,  0, sDoorAnimTiles_PS_Door_Heavy_Right, sDoorAnimPalettes_PS_Door_Heavy_Right},
-    {METATILE_PokeScapeOutdoors_PS_Door_Pub_Left,               DOOR_SOUND_NORMAL,  0, sDoorAnimTiles_PS_Door_Pub_Left, sDoorAnimPalettes_PS_Door_Pub_Left},
-    {METATILE_PokeScapeOutdoors_PS_Door_Pub_Right,               DOOR_SOUND_NORMAL,  0, sDoorAnimTiles_PS_Door_Pub_Right, sDoorAnimPalettes_PS_Door_Pub_Right},
-    {METATILE_PokeScapeOutdoors_PS_Door_Normal_Right,               DOOR_SOUND_NORMAL,  0, sDoorAnimTiles_PS_Door_Normal_Right, sDoorAnimPalettes_PS_Door_Normal_Right},
+    {METATILE_PokeScapeOutdoors_Door_GeneralStore_L,        DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_GeneralStore_L, sDoorAnimPalettes_Door_GeneralStore_L}, 
+    {METATILE_PokeScapeOutdoors_Door_GeneralStore_R,        DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_GeneralStore_R, sDoorAnimPalettes_Door_GeneralStore_R}, 
+    {METATILE_PokeScapeOutdoors_Door_Bank_L,                DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_Bank_L, sDoorAnimPalettes_Door_Bank_L}, 
+    {METATILE_PokeScapeOutdoors_Door_Bank_R,                DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_Bank_R, sDoorAnimPalettes_Door_Bank_R}, 
+    {METATILE_PokeScapeOutdoors_Door_Pub_L,                 DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_Pub_L, sDoorAnimPalettes_Door_Pub_L}, 
+    {METATILE_PokeScapeOutdoors_Door_Pub_R,                 DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_Pub_R, sDoorAnimPalettes_Door_Pub_R}, 
+    {METATILE_PokeScapeOutdoors_Door_General_L,             DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_General_L, sDoorAnimPalettes_Door_General_L}, 
+    {METATILE_PokeScapeOutdoors_Door_General_R,             DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_General_R, sDoorAnimPalettes_Door_General_R}, 
+    {METATILE_PokeScapeOutdoors_Door_Goblin_L,             DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_Goblin_L, sDoorAnimPalettes_Door_Goblin_L}, 
+    {METATILE_PokeScapeOutdoors_Door_Goblin_R,             DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_Goblin_R, sDoorAnimPalettes_Door_Goblin_R},
+    
+    
+    
+    
+    
+    
+    
+    
     {},
 };
 

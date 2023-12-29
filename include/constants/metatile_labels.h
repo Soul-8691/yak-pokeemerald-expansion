@@ -371,9 +371,6 @@
 #define METATILE_Mossdeep_Door              0x2A1
 #define METATILE_Mossdeep_Door_SpaceCenter  0x2ED
 
-// gTileset_PS
-#define METATILE_PS_Door_Left  0x136
-
 // gTileset_Pacifidlog
 #define METATILE_Pacifidlog_Door                               0x21A
 #define METATILE_Pacifidlog_FloatingLogs_HorizontalLeft        0x250
@@ -408,13 +405,18 @@
 #define METATILE_Petalburg_Door_Oldale      0x287
 
 // gTileset_PokeScapeOutdoors
-#define METATILE_PokeScapeOutdoors_PS_Door_Heavy_Left    0x135
-#define METATILE_PokeScapeOutdoors_PS_Door_Heavy_Right   0x13A
-#define METATILE_PokeScapeOutdoors_PS_Door_Left          0x136
-#define METATILE_PokeScapeOutdoors_PS_Door_Normal_Right  0x1DB
-#define METATILE_PokeScapeOutdoors_PS_Door_Pub_Left      0x1D2
-#define METATILE_PokeScapeOutdoors_PS_Door_Pub_Right     0x1EA
-#define METATILE_PokeScapeOutdoors_PS_Door_Right         0x12C
+#define METATILE_PokeScapeOutdoors_Door_Bank_L          0x13A
+#define METATILE_PokeScapeOutdoors_Door_Bank_R          0x135
+#define METATILE_PokeScapeOutdoors_Door_GeneralStore_L  0x12C
+#define METATILE_PokeScapeOutdoors_Door_GeneralStore_R  0x136
+#define METATILE_PokeScapeOutdoors_Door_General_L       0x1CB
+#define METATILE_PokeScapeOutdoors_Door_General_R       0x1D3
+#define METATILE_PokeScapeOutdoors_Door_Pub_L           0x1EA
+#define METATILE_PokeScapeOutdoors_Door_Pub_R           0x1D2
+
+// gTileset_GoblinVillage
+#define METATILE_PokeScapeOutdoors_Door_Goblin_L          0x229
+#define METATILE_PokeScapeOutdoors_Door_Goblin_R          0x228
 
 // gTileset_PokemonCenter
 #define METATILE_PokemonCenter_CounterBarrier            0x25D

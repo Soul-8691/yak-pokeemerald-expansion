@@ -6482,6 +6482,7 @@ const struct Item gItems[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Bike,
+        .secondaryId = MACH_BIKE,
     },
     [ITEM_YAK_POUCH] =
     {
@@ -6494,6 +6495,7 @@ const struct Item gItems[] =
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Bike,
+        .secondaryId = ACRO_BIKE,
     },
 
     [ITEM_MAP] =

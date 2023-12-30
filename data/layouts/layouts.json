@@ -7670,6 +7670,36 @@
       "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
       "border_filepath": "data/layouts/Kourend_Catacombs_7/border.bin",
       "blockdata_filepath": "data/layouts/Kourend_Catacombs_7/map.bin"
+    },
+    {
+      "id": "LAYOUT_GWD_1",
+      "name": "GWD_1_Layout",
+      "width": 50,
+      "height": 60,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Ice_Mountain",
+      "border_filepath": "data/layouts/GWD_1/border.bin",
+      "blockdata_filepath": "data/layouts/GWD_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_GWD_2",
+      "name": "GWD_2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/GWD_2/border.bin",
+      "blockdata_filepath": "data/layouts/GWD_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_GWD_3",
+      "name": "GWD_3_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Ice_Mountain",
+      "border_filepath": "data/layouts/GWD_3/border.bin",
+      "blockdata_filepath": "data/layouts/GWD_3/map.bin"
     }
   ]
 }

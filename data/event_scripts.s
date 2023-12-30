@@ -1702,3 +1702,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Kourend_Catacombs_6/scripts.inc"
 
 	.include "data/maps/Kourend_Catacombs_7/scripts.inc"
+
+	.include "data/maps/GWD_1/scripts.inc"
+
+	.include "data/maps/GWD_2/scripts.inc"
+
+	.include "data/maps/GWD_3/scripts.inc"

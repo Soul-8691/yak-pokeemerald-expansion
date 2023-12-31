@@ -144,41 +144,96 @@ script NPC_MUSA_POINT_8
 	release
 	end
 }
+script NPC_MUSA_POINT_9
+{
+	lock
+	faceplayer
+    //namebox ("Cupholder")
+	msgbox(format("Fishing Levels?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_MUSA_POINT_10
+{
+	lock
+	faceplayer
+    //namebox ("Cupholder")
+	msgbox(format("Fire, anyone?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_MUSA_POINT_Luthas
+{
+	lock
+	faceplayer
+    namebox ("Luthas")
+	msgbox(format("Bananas make the world go round.\pWould you like to buy one?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_Monkey
+{
+	lock
+	faceplayer
+    namebox ("Monkey")
+	msgbox(format("Oook, Ook!"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
+script NPC_MUSA_POINT_PubOwner
+{
+	lock
+	faceplayer
+    //namebox ("")
+	msgbox(format("Can I intrest you in some of our famous Karamajan Rum?\pOr perhaps you would like some of our wines, spirits or beers?"))
+    closemessage
+    hidenamebox
+	release
+	end
+}
 
 
 //TRAINERS
 script BATTLE_MUSA_POINT_TRAINER_1
 {
-    trainerbattle_single(TRAINER_Soffan_and_Quo, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_MUSA_POINT_TRAINER_1, format("My Fishing level is 62."),format("I can only use quick chat."))
+    //namebox ("Cupholder")
+    msgbox(format("I can only use quick chat."))
 	hidenamebox
     release
 	end
 }
 script BATTLE_MUSA_POINT_TRAINER_2
 {
-    trainerbattle_single(TRAINER_Soffan_and_Quo, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_MUSA_POINT_TRAINER_2, format("Why am I here?\pFight me to find out!"),format("I love fishing but I cannot afford membership.\pThat is why I am here."))
+    //namebox ("Cupholder")
+    msgbox(format("I love fishing but I cannot afford membership.\pThat is why I am here."))
 	hidenamebox
     release
 	end
 }
 script BATTLE_MUSA_POINT_TRAINER_3
 {
-    trainerbattle_single(TRAINER_Soffan_and_Quo, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_MUSA_POINT_TRAINER_3, format("Noob fishing spot tells me I need a higher fishing level to be here.\pNow I am angry!"),format("My fishing level is 14."))
+    //namebox ("Cupholder")
+    msgbox(format("My fishing level is 14."))
 	hidenamebox
     release
 	end
 }
 script BATTLE_MUSA_POINT_TRAINER_4
 {
-    trainerbattle_single(TRAINER_Soffan_and_Quo, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_MUSA_POINT_TRAINER_4, format("Life is like a fishing spot, you never know what you are going to get."),format("Unless you fish for lobsters, you only get lobsters like this."))
+    //namebox ("Cupholder")
+    msgbox(format("Life is like a fishing spot, you never know what you are going to get.\pUnless you fish for lobsters, you only get lobsters like this."))
 	hidenamebox
     release
 	end

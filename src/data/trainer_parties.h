@@ -3789,29 +3789,69 @@ static const struct TrainerMonItemDefaultMoves sParty_MOD_SARNIE[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE27_TRAINER_1[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 38,
+    .species = SPECIES_CAT_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 39,
+    .species = SPECIES_SHEEP_BLACK_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 37,
+    .species = SPECIES_STRAY_DOG,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE27_TRAINER_2[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 43,
+    .species = SPECIES_BIRD_NEST,
+    },
+    {
+    .iv = 0,
+    .lvl = 39,
+    .species = SPECIES_PIGEON,
+    },
+    {
+    .iv = 0,
+    .lvl = 39,
+    .species = SPECIES_ROCLING,
+    },
+    {
+    .iv = 0,
+    .lvl = 37,
+    .species = SPECIES_DREADFOWL,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE27_TRAINER_3[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
-    }
+    .lvl = 39,
+    .species = SPECIES_ROCK_POLISHED_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 39,
+    .species = SPECIES_SPOOKAXE,
+    },
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE27_TRAINER_4[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 39,
+    .species = SPECIES_UNICORN_BLACK_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 39,
+    .species = SPECIES_ANIMOUR,
+    },
+    {
+    .iv = 0,
+    .lvl = 37,
+    .species = SPECIES_RAVEN_SPOOKY_FORM,
     }
 };
 //ROUTE30
@@ -3848,130 +3888,316 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE30_TRAINER_4[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE25_TRAINER_1[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
-    }
+    .lvl = 38,
+    .species = SPECIES_GECKO,
+    },
+    {
+    .iv = 0,
+    .lvl = 39,
+    .species = SPECIES_CHAMELEON,
+    },
+    {
+    .iv = 0,
+    .lvl = 17,
+    .species = SPECIES_ZAMBIRD,
+    },
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE25_TRAINER_2[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 38,
+    .species = SPECIES_SPROUTLING_SPRING_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 37,
+    .species = SPECIES_GIANT_CRAB_RED_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 39,
+    .species = SPECIES_VOID_LEECH,
     }
+
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE25_TRAINER_3[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 38,
+    .species = SPECIES_RUNE,
+    },
+    {
+    .iv = 0,
+    .lvl = 37,
+    .species = SPECIES_DRAGONLING_RED_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 37,
+    .species = SPECIES_SNOW_IMP,
     }
 };
 //route39
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_1[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 32,
+    .species = SPECIES_IMPLING_PIRATE_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_MONKEY_HARMLESS_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_SHEEP_PIRATE_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_2[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 35,
+    .species = SPECIES_GRAAHK_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_MONKEY_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_MONKEY_NORMAL_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_3[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 33,
+    .species = SPECIES_LARUPIA_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_GECKO,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_GECKO,
+    },
+    {
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_CHARMELEON,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_4[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 33,
+    .species = SPECIES_TUROTH,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_TUROTH,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_TUROTH,
+    },
+    {
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_SPIDER_DEADLYRED_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_5[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
-    }
+    .lvl = 32,
+    .species = SPECIES_MONKEY_NINJA_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_UNICORN_WHITE_FORM,
+    },
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_6[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 34,
+    .species = SPECIES_LARUPIA_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_GRAAHK_NORMAL_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_7[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 34,
+    .species = SPECIES_KARAMBWANJ,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_KARAMBWANJ,
+    },
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_KARAMBWANJ,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_KARAMBWAN,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_ROUTE39_TRAINER_8[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 35,
+    .species = SPECIES_LARUPIA_NORMAL_FORM,
     }
 };
 //swamp cave
 static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGESWAMPCAVE_4[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 33,
+    .species = SPECIES_COCKATRICE,
+    },
+    {
+    .iv = 0,
+    .lvl = 34,
+    .species = SPECIES_VULTURE,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_SNAKE_SEA_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_RACOON,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGESWAMPCAVE_5[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 36,
+    .species = SPECIES_FROG_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 36,
+    .species = SPECIES_FROG_NORMAL_FORM,
+    },
+    {
+    .iv = 0,
+    .lvl = 38,
+    .species = SPECIES_FROGSPAWN,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_TOAD_BARKER_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_LUMBRIDGESWAMPCAVE_6[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 36,
+    .species = SPECIES_MINITRICE,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_TUROTH,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_KURASK,
     }
 };
 //musa point
 static const struct TrainerMonNoItemDefaultMoves sParty_MUSA_POINT_TRAINER_1[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 33,
+    .species = SPECIES_LOBSTER_NORMAL_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_MUSA_POINT_TRAINER_2[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 35,
+    .species = SPECIES_CRAYFISH,
+    },
+    {
+    .iv = 0,
+    .lvl = 35,
+    .species = SPECIES_CRAYFISH,
+    },
+    {
+    .iv = 0,
+    .lvl = 32,
+    .species = SPECIES_SHRIMP,
+    },
+    {
+    .iv = 0,
+    .lvl = 31,
+    .species = SPECIES_LOBSTER_NORMAL_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_MUSA_POINT_TRAINER_3[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 32,
+    .species = SPECIES_LOBSTER_GOLDEN_FORM,
     }
 };
 static const struct TrainerMonNoItemDefaultMoves sParty_MUSA_POINT_TRAINER_4[] = {
     {
     .iv = 0,
-    .lvl = 1,
-    .species = SPECIES_FROGEEL,
+    .lvl = 33,
+    .species = SPECIES_SHRIMP,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_SHRIMP,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_SHRIMP,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_SHRIMP,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_SHRIMP,
+    },
+    {
+    .iv = 0,
+    .lvl = 33,
+    .species = SPECIES_ANCHOVY,
     }
 };
 

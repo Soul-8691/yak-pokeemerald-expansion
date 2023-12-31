@@ -148,27 +148,27 @@ script BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1{
 //MID levels
 script BATTLE_LUMBRIDGESWAMPCAVE_4
 {
-    trainerbattle_single(TRAINER_LUMBRIDGESWAMPCAVE_4, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_LUMBRIDGESWAMPCAVE_4, format("Really should have brought a lantern for this task…"),format("I cannot even see if I won or lost…"))
+    //namebox ("Cupholder")
+    msgbox(format("I cannot even see if I won or lost…"))
 	hidenamebox
     release
 	end
 }
 script BATTLE_LUMBRIDGESWAMPCAVE_5
 {
-    trainerbattle_single(TRAINER_LUMBRIDGESWAMPCAVE_5, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_LUMBRIDGESWAMPCAVE_5, format("I might not be able to see, but that will not stop me from fishing!"),format("Cupholder has lost."))
+    //namebox ("Cupholder")
+    msgbox(format("I might not be able to see, but that will not stop me from ignoring you."))
 	hidenamebox
     release
 	end
 }
 script BATTLE_LUMBRIDGESWAMPCAVE_6
 {
-    trainerbattle_single(TRAINER_LUMBRIDGESWAMPCAVE_6, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_LUMBRIDGESWAMPCAVE_6, format("I am here to kill all the cave slimes!"),format("Kill all the slimes!!"))
+    //namebox ("Cupholder")
+    msgbox(format("Kill all the slimes!!"))
 	hidenamebox
     release
 	end

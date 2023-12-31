@@ -118,26 +118,23 @@ BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1::
 
 BATTLE_LUMBRIDGESWAMPCAVE_4::
 	trainerbattle_single TRAINER_LUMBRIDGESWAMPCAVE_4, BATTLE_LUMBRIDGESWAMPCAVE_4_Text_0, BATTLE_LUMBRIDGESWAMPCAVE_4_Text_1
-	namebox BATTLE_LUMBRIDGESWAMPCAVE_4_Text_2
-	msgbox BATTLE_LUMBRIDGESWAMPCAVE_4_Text_3
+	msgbox BATTLE_LUMBRIDGESWAMPCAVE_4_Text_1
 	hidenamebox
 	release
 	end
 
 
 BATTLE_LUMBRIDGESWAMPCAVE_5::
-	trainerbattle_single TRAINER_LUMBRIDGESWAMPCAVE_5, BATTLE_LUMBRIDGESWAMPCAVE_4_Text_0, BATTLE_LUMBRIDGESWAMPCAVE_4_Text_1
-	namebox BATTLE_LUMBRIDGESWAMPCAVE_4_Text_2
-	msgbox BATTLE_LUMBRIDGESWAMPCAVE_4_Text_3
+	trainerbattle_single TRAINER_LUMBRIDGESWAMPCAVE_5, BATTLE_LUMBRIDGESWAMPCAVE_5_Text_0, BATTLE_LUMBRIDGESWAMPCAVE_5_Text_1
+	msgbox BATTLE_LUMBRIDGESWAMPCAVE_5_Text_2
 	hidenamebox
 	release
 	end
 
 
 BATTLE_LUMBRIDGESWAMPCAVE_6::
-	trainerbattle_single TRAINER_LUMBRIDGESWAMPCAVE_6, BATTLE_LUMBRIDGESWAMPCAVE_4_Text_0, BATTLE_LUMBRIDGESWAMPCAVE_4_Text_1
-	namebox BATTLE_LUMBRIDGESWAMPCAVE_4_Text_2
-	msgbox BATTLE_LUMBRIDGESWAMPCAVE_4_Text_3
+	trainerbattle_single TRAINER_LUMBRIDGESWAMPCAVE_6, BATTLE_LUMBRIDGESWAMPCAVE_6_Text_0, BATTLE_LUMBRIDGESWAMPCAVE_6_Text_1
+	msgbox BATTLE_LUMBRIDGESWAMPCAVE_6_Text_1
 	hidenamebox
 	release
 	end
@@ -189,13 +186,25 @@ BATTLE_LUMBRIDGESWAMPCAVE_PVMER_1_Text_1:
 	.string "This explains a lot.$"
 
 BATTLE_LUMBRIDGESWAMPCAVE_4_Text_0:
-	.string "Battle me, I am a Cupholder.$"
+	.string "Really should have brought a lantern\n"
+	.string "for this task…$"
 
 BATTLE_LUMBRIDGESWAMPCAVE_4_Text_1:
+	.string "I cannot even see if I won or lost…$"
+
+BATTLE_LUMBRIDGESWAMPCAVE_5_Text_0:
+	.string "I might not be able to see, but that will\n"
+	.string "not stop me from fishing!$"
+
+BATTLE_LUMBRIDGESWAMPCAVE_5_Text_1:
 	.string "Cupholder has lost.$"
 
-BATTLE_LUMBRIDGESWAMPCAVE_4_Text_2:
-	.string "Cupholder$"
+BATTLE_LUMBRIDGESWAMPCAVE_5_Text_2:
+	.string "I might not be able to see, but that will\n"
+	.string "not stop me from ignoring you.$"
 
-BATTLE_LUMBRIDGESWAMPCAVE_4_Text_3:
-	.string "Hello, I am a Cupholder.$"
+BATTLE_LUMBRIDGESWAMPCAVE_6_Text_0:
+	.string "I am here to kill all the cave slimes!$"
+
+BATTLE_LUMBRIDGESWAMPCAVE_6_Text_1:
+	.string "Kill all the slimes!!$"

@@ -125,37 +125,85 @@ NPC_MUSA_POINT_8::
 	end
 
 
+NPC_MUSA_POINT_9::
+	lock
+	faceplayer
+	msgbox NPC_MUSA_POINT_9_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_MUSA_POINT_10::
+	lock
+	faceplayer
+	msgbox NPC_MUSA_POINT_10_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_MUSA_POINT_Luthas::
+	lock
+	faceplayer
+	namebox NPC_MUSA_POINT_Luthas_Text_0
+	msgbox NPC_MUSA_POINT_Luthas_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_Monkey::
+	lock
+	faceplayer
+	namebox NPC_Monkey_Text_0
+	msgbox NPC_Monkey_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+
+NPC_MUSA_POINT_PubOwner::
+	lock
+	faceplayer
+	msgbox NPC_MUSA_POINT_PubOwner_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+
 BATTLE_MUSA_POINT_TRAINER_1::
-	trainerbattle_single TRAINER_Soffan_and_Quo, BATTLE_MUSA_POINT_TRAINER_1_Text_0, BATTLE_MUSA_POINT_TRAINER_1_Text_1
-	namebox NPC_MUSA_POINT_1_Text_0
-	msgbox NPC_MUSA_POINT_1_Text_1
+	trainerbattle_single TRAINER_MUSA_POINT_TRAINER_1, BATTLE_MUSA_POINT_TRAINER_1_Text_0, BATTLE_MUSA_POINT_TRAINER_1_Text_1
+	msgbox BATTLE_MUSA_POINT_TRAINER_1_Text_1
 	hidenamebox
 	release
 	end
 
 
 BATTLE_MUSA_POINT_TRAINER_2::
-	trainerbattle_single TRAINER_Soffan_and_Quo, BATTLE_MUSA_POINT_TRAINER_1_Text_0, BATTLE_MUSA_POINT_TRAINER_1_Text_1
-	namebox NPC_MUSA_POINT_1_Text_0
-	msgbox NPC_MUSA_POINT_1_Text_1
+	trainerbattle_single TRAINER_MUSA_POINT_TRAINER_2, BATTLE_MUSA_POINT_TRAINER_2_Text_0, BATTLE_MUSA_POINT_TRAINER_2_Text_1
+	msgbox BATTLE_MUSA_POINT_TRAINER_2_Text_1
 	hidenamebox
 	release
 	end
 
 
 BATTLE_MUSA_POINT_TRAINER_3::
-	trainerbattle_single TRAINER_Soffan_and_Quo, BATTLE_MUSA_POINT_TRAINER_1_Text_0, BATTLE_MUSA_POINT_TRAINER_1_Text_1
-	namebox NPC_MUSA_POINT_1_Text_0
-	msgbox NPC_MUSA_POINT_1_Text_1
+	trainerbattle_single TRAINER_MUSA_POINT_TRAINER_3, BATTLE_MUSA_POINT_TRAINER_3_Text_0, BATTLE_MUSA_POINT_TRAINER_3_Text_1
+	msgbox BATTLE_MUSA_POINT_TRAINER_3_Text_1
 	hidenamebox
 	release
 	end
 
 
 BATTLE_MUSA_POINT_TRAINER_4::
-	trainerbattle_single TRAINER_Soffan_and_Quo, BATTLE_MUSA_POINT_TRAINER_1_Text_0, BATTLE_MUSA_POINT_TRAINER_1_Text_1
-	namebox NPC_MUSA_POINT_1_Text_0
-	msgbox NPC_MUSA_POINT_1_Text_1
+	trainerbattle_single TRAINER_MUSA_POINT_TRAINER_4, BATTLE_MUSA_POINT_TRAINER_4_Text_0, BATTLE_MUSA_POINT_TRAINER_4_Text_1
+	msgbox BATTLE_MUSA_POINT_TRAINER_4_Text_2
 	hidenamebox
 	release
 	end
@@ -224,8 +272,64 @@ NPC_MUSA_POINT_7_Text_0:
 	.string "Welcome to Karamja.\p"
 	.string "Make sure to prepare some antipoisons.$"
 
+NPC_MUSA_POINT_9_Text_0:
+	.string "Fishing Levels?$"
+
+NPC_MUSA_POINT_10_Text_0:
+	.string "Fire, anyone?$"
+
+NPC_MUSA_POINT_Luthas_Text_0:
+	.string "Luthas$"
+
+NPC_MUSA_POINT_Luthas_Text_1:
+	.string "Bananas make the world go round.\p"
+	.string "Would you like to buy one?$"
+
+NPC_Monkey_Text_0:
+	.string "Monkey$"
+
+NPC_Monkey_Text_1:
+	.string "Oook, Ook!$"
+
+NPC_MUSA_POINT_PubOwner_Text_0:
+	.string "Can I intrest you in some of our famous\n"
+	.string "Karamajan Rum?\p"
+	.string "Or perhaps you would like some of our\n"
+	.string "wines, spirits or beers?$"
+
 BATTLE_MUSA_POINT_TRAINER_1_Text_0:
-	.string "Battle me, I am a Cupholder.$"
+	.string "My Fishing level is 62.$"
 
 BATTLE_MUSA_POINT_TRAINER_1_Text_1:
-	.string "Cupholder has lost.$"
+	.string "I can only use quick chat.$"
+
+BATTLE_MUSA_POINT_TRAINER_2_Text_0:
+	.string "Why am I here?\p"
+	.string "Fight me to find out!$"
+
+BATTLE_MUSA_POINT_TRAINER_2_Text_1:
+	.string "I love fishing but I cannot afford\n"
+	.string "membership.\p"
+	.string "That is why I am here.$"
+
+BATTLE_MUSA_POINT_TRAINER_3_Text_0:
+	.string "Noob fishing spot tells me I need a\n"
+	.string "higher fishing level to be here.\p"
+	.string "Now I am angry!$"
+
+BATTLE_MUSA_POINT_TRAINER_3_Text_1:
+	.string "My fishing level is 14.$"
+
+BATTLE_MUSA_POINT_TRAINER_4_Text_0:
+	.string "Life is like a fishing spot, you never\n"
+	.string "know what you are going to get.$"
+
+BATTLE_MUSA_POINT_TRAINER_4_Text_1:
+	.string "Unless you fish for lobsters, you only\n"
+	.string "get lobsters like this.$"
+
+BATTLE_MUSA_POINT_TRAINER_4_Text_2:
+	.string "Life is like a fishing spot, you never\n"
+	.string "know what you are going to get.\p"
+	.string "Unless you fish for lobsters, you only\n"
+	.string "get lobsters like this.$"

@@ -66,72 +66,72 @@ script ITEM_ROUTE39_4
 //TRAINERS
 script BATTLE_ROUTE39_TRAINER_1
 {
-    trainerbattle_single(TRAINER_ROUTE39_TRAINER_1, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_1, format("Stop right there! I be looking for me treasure."),format("The real treasure be this marvelleous bonding we be having."))
+    //namebox ("Cupholder")
+    msgbox(format("The real treasure be this marvelleous bonding we be having."))
 	hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE39_TRAINER_2
 {
-    trainerbattle_single(TRAINER_ROUTE39_TRAINER_2, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_2, format("If you want to get to Brimhaven, you will need to get through me stranger."),format("Right this way sir, follow the path and keep going west.\pHave a nice trip."))
+    //namebox ("Cupholder")
+    msgbox(format("Right this way sir, follow the path and keep going west.\pHave a nice trip."))
 	hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE39_TRAINER_3
 {
-    trainerbattle_single(TRAINER_ROUTE39_TRAINER_3, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_3, format("My prey shows itself before me!\pI shall feast on you tonight!"),format("Hold on, you are not a monster.\pYou do not even look tasty."))
+    //namebox ("Cupholder")
+    msgbox(format("Hold on, you are not a monster.\pYou do not even look tasty."))
 	hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE39_TRAINER_4
 {
-    trainerbattle_single(TRAINER_ROUTE39_TRAINER_4, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_4, format("Stop! You are not taking my lesser demon spot!"),format("Oh you are not on a task?\pNever mind then"))
+    //namebox ("Cupholder")
+    msgbox(format("Oh you are not on a task?\pNever mind then"))
 	hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE39_TRAINER_5
 {
-    trainerbattle_single(TRAINER_ROUTE39_TRAINER_5, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_5, format("The guide said, attack any enemies you may encounter.\pYou are going down!"),format("It didn't say anything about losing in the quest guide…"))
+    //namebox ("Cupholder")
+    msgbox(format("I can not do anything without the quest guide.\pI am a quester, so im incapable of independent thoughts."))
 	hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE39_TRAINER_6
 {
-    trainerbattle_single(TRAINER_ROUTE39_TRAINER_6, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_6, format("A true hunter never reveals themselves."),format("By revealing myself, I left myself weakened.\pMy bad…"))
+    //namebox ("Cupholder")
+    msgbox(format("By revealing myself, I left myself weakened.\pMy bad…"))
 	hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE39_TRAINER_7
 {
-    trainerbattle_single(TRAINER_ROUTE39_TRAINER_7, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_7, format("You will not pass."),format("You may pass."))
+    //namebox ("Cupholder")
+    msgbox(format("You may pass."))
 	hidenamebox
     release
 	end
 }
 script BATTLE_ROUTE39_TRAINER_8
 {
-    trainerbattle_single(TRAINER_ROUTE39_TRAINER_8, format("Battle me, I am a Cupholder."),format("Cupholder has lost."))
-    namebox ("Cupholder")
-    msgbox(format("Hello, I am a Cupholder."))
+    trainerbattle_single(TRAINER_ROUTE39_TRAINER_8, format("You got a lot of guts coming into the jungle like this kid."),format("I had a lot of guts challenging a kid like you it seems."))
+    //namebox ("Cupholder")
+    msgbox(format("I had a lot of guts challenging a kid like you it seems."))
 	hidenamebox
     release
 	end

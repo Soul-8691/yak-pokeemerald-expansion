@@ -684,6 +684,12 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_CABBAGE_FARMING] = {gItemIcon_Cabbage, gItemIconPalette_Cabbage},
     [ITEM_FRIENDSHIP_BOOSTER] = {gItemIcon_Cabbage, gItemIconPalette_Cabbage},
     [ITEM_FROGEEL_BURGER] = {gItemIcon_FrogeelBurger, gItemIconPalette_FrogeelBurger},
+    [ITEM_ANCIENT_SHARD] = {gItemIcon_ANCIENT_SHARD, gItemIconPalette_ANCIENT_SHARD},
+    [ITEM_DARK_TOTEM_BASE] = {gItemIcon_DARK_TOTEM_BASE, gItemIconPalette_DARK_TOTEM_BASE},
+    [ITEM_DARK_TOTEM_MID] = {gItemIcon_DARK_TOTEM_MID, gItemIconPalette_DARK_TOTEM_MID},
+    [ITEM_DARK_TOTEM_TOP] = {gItemIcon_DARK_TOTEM_TOP, gItemIconPalette_DARK_TOTEM_TOP},
+    [ITEM_DARK_TOTEM] = {gItemIcon_DARK_TOTEM, gItemIconPalette_DARK_TOTEM},
+    [ITEM_XERIC] = {gItemIcon_Xeric, gItemIconPalette_Xeric},
 
 
     

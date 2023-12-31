@@ -11302,6 +11302,19 @@ extern const u32 gItemIconPalette_PartyHat[];
 
 extern const u32 gItemIcon_FrogeelBurger[];
 extern const u32 gItemIconPalette_FrogeelBurger[];
+
+extern const u32 gItemIcon_ANCIENT_SHARD[];
+extern const u32 gItemIconPalette_ANCIENT_SHARD[];
+extern const u32 gItemIcon_DARK_TOTEM_BASE[];
+extern const u32 gItemIconPalette_DARK_TOTEM_BASE[];
+extern const u32 gItemIcon_DARK_TOTEM_MID[];
+extern const u32 gItemIconPalette_DARK_TOTEM_MID[];
+extern const u32 gItemIcon_DARK_TOTEM_TOP[];
+extern const u32 gItemIconPalette_DARK_TOTEM_TOP[];
+extern const u32 gItemIcon_DARK_TOTEM[];
+extern const u32 gItemIconPalette_DARK_TOTEM[];
+extern const u32 gItemIcon_Xeric[];
+extern const u32 gItemIconPalette_Xeric[];
 //------
 
 // pokescape crops

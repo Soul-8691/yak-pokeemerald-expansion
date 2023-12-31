@@ -2626,6 +2626,38 @@ static const u8 sScroll_66_Desc[] = _(
 
 //END -- SCROLLS
 
+
+static const u8 sANCIENT_SHARD_Desc[] = _(
+    "An infused crystal\n"
+    "with teleportation\n"
+    "properties.");
+
+static const u8 sDARK_TOTEM_BASE_Desc[] = _(
+    "A piece of a\n"
+    "Dark Totem. Combined\n"
+    "with other pieces.");
+
+static const u8 sDARK_TOTEM_MID_Desc[] = _(
+    "A piece of a\n"
+    "Dark Totem. Combined\n"
+    "with other pieces.");
+
+static const u8 sDARK_TOTEM_TOP_Desc[] = _(
+    "A piece of a\n"
+    "Dark Totem. Combined\n"
+    "with other pieces.");
+
+static const u8 sDARK_TOTEM_Desc[] = _(
+    "A presence emanates\n"
+    "from within. What does\n"
+    "this do?");
+
+static const u8 sXeric_Desc[] = _(
+    "An amulet that\n"
+    "will teleport you\n"
+    "to another land.");
+    
+
 static const u8 sFrogeelBurgerDesc[] = _(
     "A Fresh burger\n"
     "made from Frogeels.\n"

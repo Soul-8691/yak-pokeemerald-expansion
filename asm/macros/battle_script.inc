@@ -2140,3 +2140,7 @@
 	.macro skydropyawn
 	various 0, VARIOUS_SKY_DROP_YAWN
 	.endm
+
+	.macro updateslayercounter
+	various BS_FAINTED, VARIOUS_UPDATE_SLAYER_COUNTER
+	.endm

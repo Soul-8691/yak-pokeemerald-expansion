@@ -359,32 +359,6 @@ PEST_CONTROL_RETURN_2:
 	end
 
 
-ZEAH_TELEPORT_ENTER::
-	checkitem ITEM_PURPLE_SWEETS, 1
-	compare VAR_RESULT, 0
-	goto_if_ne ZEAH_TELEPORT_ENTER_2
-	msgbox ZEAH_TELEPORT_ENTER_Text_2
-	closemessage
-	release
-	end
-
-ZEAH_TELEPORT_ENTER_2:
-	msgbox ZEAH_TELEPORT_ENTER_Text_0, MSGBOX_YESNO
-	compare VAR_RESULT, 0
-	goto_if_ne ZEAH_TELEPORT_ENTER_5
-	closemessage
-	release
-	end
-
-ZEAH_TELEPORT_ENTER_5:
-	msgbox ZEAH_TELEPORT_ENTER_Text_1
-	removeitem ITEM_PURPLE_SWEETS, 1
-	warp MAP_KOUREND_CATACOMBS_7, 0, 0, 0
-	closemessage
-	release
-	end
-
-
 ROUTE8_SIGNPOST_Text_0:
 	.string "WEST to Crafting Guild.\p"
 	.string "SOUTH to Rimmington.\p"
@@ -618,16 +592,3 @@ PEST_CONTROL_ENTER_Text_2:
 PEST_CONTROL_RETURN_Text_0:
 	.string "Would you like to return to the\n"
 	.string "mainland?$"
-
-ZEAH_TELEPORT_ENTER_Text_0:
-	.string "The totem in your backpack reacts to\n"
-	.string "the Altar.\p"
-	.string "Would you like to use it?$"
-
-ZEAH_TELEPORT_ENTER_Text_1:
-	.string "Suddenly the world thats to warp\n"
-	.string "around you.$"
-
-ZEAH_TELEPORT_ENTER_Text_2:
-	.string "There seems to be a slot in the Altar\n"
-	.string "for something.$"

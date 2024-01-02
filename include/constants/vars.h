@@ -137,9 +137,9 @@
 #define VAR_POKESCAPE_ALKHARID_GYM_ALI_STATE                   0x4076 // Unused Var
 #define VAR_GAMEMODE_MONSTERS_STATE                   0x4077 // Unused Var
 #define VAR_GAMEMODE_SCALE_EVOLUTION_STATE                   0x4078 // Unused Var
-#define VAR_ROUTE126_STATE                   0x4079 // Unused Var
-#define VAR_ROUTE127_STATE                   0x407A // Unused Var
-#define VAR_ROUTE128_STATE                   0x407B
+#define VAR_SLAYER_LEFT_TO_DEFEAT                   0x4079 // Unused Var
+#define VAR_SLAYER_ASSIGNMENT                   0x407A // Unused Var
+#define VAR_SLAYER_COMPLETE                   0x407B
 #define VAR_ROUTE129_STATE                   0x407C // Unused Var
 #define VAR_ROUTE130_STATE                   0x407D // Unused Var
 #define VAR_ROUTE131_STATE                   0x407E // Unused Var

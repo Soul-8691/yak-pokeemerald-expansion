@@ -444,24 +444,3 @@ script PEST_CONTROL_RETURN{
 
 
 
-script ZEAH_TELEPORT_ENTER {
-    checkitem(ITEM_PURPLE_SWEETS, 1)
-        if (var(VAR_RESULT)) {
-            msgbox(format("The totem in your backpack reacts to the Altar.\pWould you like to use it?"), MSGBOX_YESNO)
-            if (var(VAR_RESULT)){
-                    msgbox(format("Suddenly the world thats to warp around you."))
-                    removeitem(ITEM_PURPLE_SWEETS, 1)
-                    warp (MAP_KOUREND_CATACOMBS_7,0,0,0)
-                    closemessage
-                    release
-                    end
-                }
-            closemessage
-            release
-            end
-        }
-    msgbox(format("There seems to be a slot in the Altar for something."))
-    closemessage
-    release
-    end           
-}

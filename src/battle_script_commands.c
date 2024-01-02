@@ -9754,7 +9754,53 @@ static void Cmd_various(void)
     case VARIOUS_SWAP_SIDE_STATUSES:
         CourtChangeSwapSideStatuses();
         break;
-    } // End of switch (gBattlescriptCurrInstr[2])
+     // End of switch (gBattlescriptCurrInstr[2])
+    case VARIOUS_UPDATE_SLAYER_COUNTER:
+        {
+        u8 leftToDefeat = VarGet(VAR_SLAYER_LEFT_TO_DEFEAT);
+        s32 enemySpecies = GetMonData(&gEnemyParty[0],MON_DATA_SPECIES);
+
+        if ((VarGet(VAR_SLAYER_ASSIGNMENT) == 1) && (enemySpecies == SPECIES_BLOODVELD || enemySpecies == SPECIES_BLOODVELD_INSATIABLE_PHYSICAL_FORM || enemySpecies == SPECIES_BLOODVELD_INSATIABLE_SPECIAL_FORM)) {
+            if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+                leftToDefeat--;
+            if ((leftToDefeat <= 0))
+            {
+                VarSet(VAR_SLAYER_COMPLETE, 1);
+            }
+        }
+        else if ((VarGet(VAR_SLAYER_ASSIGNMENT) == 2) && (enemySpecies == SPECIES_DEMON_LESSER_OSRS_FORM || enemySpecies == SPECIES_DEMON_GREATER_OSRS_FORM)) {
+            if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+                leftToDefeat--;
+            if ((leftToDefeat <= 0))
+            {
+                VarSet(VAR_SLAYER_COMPLETE, 1);
+            }
+        }
+        else if ((VarGet(VAR_SLAYER_ASSIGNMENT) == 3) && (enemySpecies == SPECIES_ABYSSAL_DEMON_FORM || enemySpecies == SPECIES_ABYSSAL_MINION_FORM)) {
+            if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+                leftToDefeat--;
+            if ((leftToDefeat <= 0))
+            {
+                VarSet(VAR_SLAYER_COMPLETE, 1);
+            }
+        }
+        /* JELLY
+        else if ((VarGet(VAR_SLAYER_ASSIGNMENT) == 4) &&() enemySpecies == SPECIES_ABYSSAL_DEMON_FORM || enemySpecies == SPECIES_ABYSSAL_MINION_FORM)) {
+            if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+                leftToDefeat--;
+            if ((leftToDefeat <= 0))
+            {
+                VarSet(VAR_SLAYER_COMPLETE, 1);
+            }
+        }*/
+        
+        VarSet(VAR_SLAYER_LEFT_TO_DEFEAT,leftToDefeat);
+        gBattlescriptCurrInstr = gBattlescriptCurrInstr + 3;
+        return;
+        }
+    }
+    
+        
 
     gBattlescriptCurrInstr += 3;
 }

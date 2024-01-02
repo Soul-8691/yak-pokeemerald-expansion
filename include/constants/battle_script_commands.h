@@ -244,6 +244,9 @@
 #define VARIOUS_SET_BEAK_BLAST                      153
 #define VARIOUS_SWAP_SIDE_STATUSES                  154
 #define VARIOUS_SET_Z_EFFECT                        155
+#define VARIOUS_UPDATE_SLAYER_COUNTER               156
+
+
 
 // Cmd_manipulatedamage
 #define DMG_CHANGE_SIGN            0

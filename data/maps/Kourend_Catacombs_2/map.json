@@ -6,7 +6,7 @@
   "region_map_section": "MAPSEC_TUTORIAL_ISLAND",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_UNDERWATER",
+  "map_type": "MAP_TYPE_UNDERGROUND",
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": true,
@@ -133,8 +133,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 46,
-      "y": 10,
+      "x": 49,
+      "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -289,14 +289,14 @@
     },
     {
       "x": 48,
-      "y": 2,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_2",
       "dest_warp_id": 0
     },
     {
-      "x": 48,
-      "y": 11,
+      "x": 47,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_2",
       "dest_warp_id": 0

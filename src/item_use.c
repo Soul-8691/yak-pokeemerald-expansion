@@ -61,6 +61,8 @@ extern const u8 EventScript_SmashOrikalkum[];
 extern const u8 EventScript_SmashElemental[];
 extern const u8 EventScript_SmashBane[];
 extern const u8 EventScript_SLAYER_TASK_CHECK[];
+extern const u8 EventScript_XERIC[];
+extern const u8 EventScript_ANCIENT_SHARD[];
 
 
 
@@ -95,7 +97,9 @@ static void SetDistanceOfClosestHiddenItem(u8, s16, s16);
 static void CB2_OpenPokeblockFromBag(void);
 void DoFlyItem (u8 taskId, TaskFunc task);
 void SetUpFlyUseCallback(u8 taskId);
-static void ItemUseOnFieldCB_SlayerGem(u8);
+static void ItemUseOnFieldCB_RunScript(u8);
+
+
 
 // EWRAM variables
 EWRAM_DATA static void(*sItemUseOnFieldCB)(u8 taskId) = NULL;
@@ -249,12 +253,19 @@ void ItemUseOutOfBattle_Bike(u8 taskId)
 
 void ItemUseOutOfBattle_Function(u8 taskId) //This is used to change a Flag / Variable from the items menu.
 {
-    if (gSpecialVar_ItemId == ITEM_SLAYER_GEM)
+    if ((gSpecialVar_ItemId == ITEM_SLAYER_GEM) || (gSpecialVar_ItemId == ITEM_XERIC) || (gSpecialVar_ItemId == ITEM_ANCIENT_SHARD))
     {
-        sItemUseOnFieldCB = ItemUseOnFieldCB_SlayerGem;
-        gFieldCallback = FieldCB_UseItemOnField;
-        gBagMenu->newScreenCallback = CB2_ReturnToField;
-        Task_FadeAndCloseBagMenu(taskId);
+        if (gMapHeader.mapType == MAP_TYPE_UNDERWATER)
+        {
+            DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
+        }
+        else {
+            sItemUseOnFieldCB = ItemUseOnFieldCB_RunScript;
+            gFieldCallback = FieldCB_UseItemOnField;
+            gBagMenu->newScreenCallback = CB2_ReturnToField;
+            Task_FadeAndCloseBagMenu(taskId);
+        }   
+            
     }
     else if (gSpecialVar_ItemId >= ITEM_PULSE_CORE) { 
         if (FlagGet(FLAG_EXP_ALL) == FALSE)
@@ -272,10 +283,21 @@ void ItemUseOutOfBattle_Function(u8 taskId) //This is used to change a Flag / Va
     }
 }
 
-static void ItemUseOnFieldCB_SlayerGem(u8 taskId)
+static void ItemUseOnFieldCB_RunScript(u8 taskId)
 {
     ScriptContext2_Enable();
-    ScriptContext1_SetupScript(EventScript_SLAYER_TASK_CHECK);
+    if (gSpecialVar_ItemId == ITEM_SLAYER_GEM)
+    {
+        ScriptContext1_SetupScript(EventScript_SLAYER_TASK_CHECK);
+    }
+    else if (gSpecialVar_ItemId == ITEM_XERIC)
+    {
+        ScriptContext1_SetupScript(EventScript_XERIC);
+    }
+    else if (gSpecialVar_ItemId == ITEM_ANCIENT_SHARD)
+    {
+        ScriptContext1_SetupScript(EventScript_ANCIENT_SHARD);
+    }
     DestroyTask(taskId);
 }
 

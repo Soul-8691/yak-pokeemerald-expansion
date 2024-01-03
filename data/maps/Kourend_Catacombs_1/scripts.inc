@@ -26,12 +26,90 @@ ZEAH_TELEPORT_ENTER_2:
 
 ZEAH_TELEPORT_ENTER_5:
 	msgbox ZEAH_TELEPORT_ENTER_Text_1
+	applymovement OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT
 	removeitem ITEM_PURPLE_SWEETS, 1
-	warp MAP_KOUREND_CATACOMBS_7, 0, 0, 0
+	warpteleport MAP_KOUREND_CATACOMBS_7, 0, 0, 0
 	closemessage
 	release
 	end
 
+
+XERICS_TELEPORT::
+	msgbox XERICS_TELEPORT_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne XERICS_TELEPORT_2
+	closemessage
+	release
+	end
+
+XERICS_TELEPORT_2:
+	msgbox ZEAH_TELEPORT_ENTER_Text_1
+	applymovement OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT
+	warpteleport MAP_KOUREND_CATACOMBS_1, 0, 0, 0
+	closemessage
+	release
+	end
+
+
+ANCIENT_SHARD_TELEPORT::
+	msgbox ANCIENT_SHARD_TELEPORT_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne ANCIENT_SHARD_TELEPORT_2
+	closemessage
+	release
+	end
+
+ANCIENT_SHARD_TELEPORT_2:
+	msgbox ZEAH_TELEPORT_ENTER_Text_1
+	playse SE_WARP_IN
+	applymovement OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT
+	waitmovement 0
+	closemessage
+	release
+	random 7
+	switch VAR_RESULT
+	case 0, ANCIENT_SHARD_TELEPORT_6
+	case 1, ANCIENT_SHARD_TELEPORT_7
+	case 2, ANCIENT_SHARD_TELEPORT_8
+	case 3, ANCIENT_SHARD_TELEPORT_9
+	case 4, ANCIENT_SHARD_TELEPORT_10
+	case 5, ANCIENT_SHARD_TELEPORT_11
+	case 6, ANCIENT_SHARD_TELEPORT_12
+ANCIENT_SHARD_TELEPORT_4:
+	end
+
+ANCIENT_SHARD_TELEPORT_6:
+	warpspinenter MAP_KOUREND_CATACOMBS_1, 28, 20
+	goto ANCIENT_SHARD_TELEPORT_4
+
+ANCIENT_SHARD_TELEPORT_7:
+	warpspinenter MAP_KOUREND_CATACOMBS_4, 38, 12
+	goto ANCIENT_SHARD_TELEPORT_4
+
+ANCIENT_SHARD_TELEPORT_8:
+	warpspinenter MAP_KOUREND_CATACOMBS_4, 77, 9
+	goto ANCIENT_SHARD_TELEPORT_4
+
+ANCIENT_SHARD_TELEPORT_9:
+	warpspinenter MAP_KOUREND_CATACOMBS_5, 4, 14
+	goto ANCIENT_SHARD_TELEPORT_4
+
+ANCIENT_SHARD_TELEPORT_10:
+	warpspinenter MAP_KOUREND_CATACOMBS_2, 48, 2
+	goto ANCIENT_SHARD_TELEPORT_4
+
+ANCIENT_SHARD_TELEPORT_11:
+	warpspinenter MAP_KOUREND_CATACOMBS_2, 8, 19
+	goto ANCIENT_SHARD_TELEPORT_4
+
+ANCIENT_SHARD_TELEPORT_12:
+	warpspinenter MAP_KOUREND_CATACOMBS_6, 5, 6
+	goto ANCIENT_SHARD_TELEPORT_4
+
+
+movement_TELEPORT_OUT:
+	fly_up
+	step_end
 
 NPC_NIEVE::
 	lock
@@ -79,25 +157,25 @@ SLAYER_TASK_ASSIGN_1:
 SLAYER_TASK_ASSIGN_3:
 	setvar VAR_SLAYER_ASSIGNMENT, 1
 	bufferspeciesname STR_VAR_2, SPECIES_BLOODVELD
-	buffernumberstring STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT
+	buffernumberstring STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT
 	goto SLAYER_TASK_ASSIGN_1
 
 SLAYER_TASK_ASSIGN_4:
 	setvar VAR_SLAYER_ASSIGNMENT, 2
 	bufferspeciesname STR_VAR_2, SPECIES_FROGEEL
-	buffernumberstring STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT
+	buffernumberstring STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT
 	goto SLAYER_TASK_ASSIGN_1
 
 SLAYER_TASK_ASSIGN_5:
 	setvar VAR_SLAYER_ASSIGNMENT, 3
 	bufferspeciesname STR_VAR_2, SPECIES_GUTHLING
-	buffernumberstring STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT
+	buffernumberstring STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT
 	goto SLAYER_TASK_ASSIGN_1
 
 SLAYER_TASK_ASSIGN_6:
 	setvar VAR_SLAYER_ASSIGNMENT, 4
 	bufferspeciesname STR_VAR_2, SPECIES_ROC
-	buffernumberstring STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT
+	buffernumberstring STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT
 	goto SLAYER_TASK_ASSIGN_1
 
 SLAYER_TASK_ASSIGN_7:
@@ -109,7 +187,7 @@ SLAYER_TASK_ASSIGN_7:
 SLAYER_TASK_ASSIGN_8:
 	setvar VAR_SLAYER_ASSIGNMENT, 4
 	bufferspeciesname STR_VAR_2, SPECIES_ROC
-	buffernumberstring STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT
+	buffernumberstring STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT
 	goto SLAYER_TASK_ASSIGN_1
 
 
@@ -131,17 +209,17 @@ SLAYER_TASK_CHECK_3:
 
 SLAYER_TASK_CHECK_4:
 	bufferspeciesname STR_VAR_2, SPECIES_BLOODVELD
-	buffernumberstring STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT
+	buffernumberstring STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT
 	goto SLAYER_TASK_CHECK_1
 
 SLAYER_TASK_CHECK_5:
 	bufferspeciesname STR_VAR_2, SPECIES_DEMON_LESSER_OSRS_FORM
-	buffernumberstring STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT
+	buffernumberstring STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT
 	goto SLAYER_TASK_CHECK_1
 
 SLAYER_TASK_CHECK_6:
 	bufferspeciesname STR_VAR_2, SPECIES_ZAMLING
-	buffernumberstring STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT
+	buffernumberstring STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT
 	goto SLAYER_TASK_CHECK_1
 
 
@@ -170,12 +248,20 @@ ZEAH_TELEPORT_ENTER_Text_0:
 	.string "Would you like to use it?$"
 
 ZEAH_TELEPORT_ENTER_Text_1:
-	.string "Suddenly the world thats to warp\n"
+	.string "Suddenly the world starts to warp\n"
 	.string "around you.$"
 
 ZEAH_TELEPORT_ENTER_Text_2:
 	.string "There seems to be a slot in the Altar\n"
 	.string "for something.$"
+
+XERICS_TELEPORT_Text_0:
+	.string "Would you like to teleport to the\n"
+	.string "Kourend?$"
+
+ANCIENT_SHARD_TELEPORT_Text_0:
+	.string "Would you like to teleport to the\n"
+	.string "Catacombs of Kourend?$"
 
 NPC_NIEVE_Text_0:
 	.string "Nieve$"
@@ -192,7 +278,7 @@ SLAYER_TASK_CHECK_Text_0:
 
 SLAYER_TASK_CHECK_Text_1:
 	.string "Your current assignment is to slay\n"
-	.string "{STR_VAR_1} {STR_VAR_2}$"
+	.string "{STR_VAR_3} {STR_VAR_2}$"
 
 SLAYER_TASK_COMPLETE_Text_0:
 	.string "Slayer Assignment complete!\n"

@@ -1459,8 +1459,8 @@ const u32 gItemIconPalette_REPEL_TEA_3[] = INCBIN_U32("graphics/items/pokescape_
 const u32 gItemIcon_FrogeelBurger[] = INCBIN_U32("graphics/items/pokescape_icons/FrogeelBurger.4bpp.lz");
 const u32 gItemIconPalette_FrogeelBurger[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/FrogeelBurger.gbapal.lz");
 
-const u32 gItemIcon_ANCIENT_SHARD[] = INCBIN_U32("graphics/items/pokescape_icons/xeric.4bpp.lz");
-const u32 gItemIconPalette_ANCIENT_SHARD[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/xeric.gbapal.lz");
+const u32 gItemIcon_ANCIENT_SHARD[] = INCBIN_U32("graphics/items/pokescape_icons/ancient_shard.4bpp.lz");
+const u32 gItemIconPalette_ANCIENT_SHARD[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/ancient_shard.gbapal.lz");
 const u32 gItemIcon_DARK_TOTEM_BASE[] = INCBIN_U32("graphics/items/pokescape_icons/xeric.4bpp.lz");
 const u32 gItemIconPalette_DARK_TOTEM_BASE[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/xeric.gbapal.lz");
 const u32 gItemIcon_DARK_TOTEM_MID[] = INCBIN_U32("graphics/items/pokescape_icons/xeric.4bpp.lz");

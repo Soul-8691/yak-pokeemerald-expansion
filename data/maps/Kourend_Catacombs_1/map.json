@@ -42,8 +42,8 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
-      "x": 13,
-      "y": 14,
+      "x": 30,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -208,6 +208,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SLAYER_TASK_CHECK",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
+      "x": 13,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -319,7 +332,7 @@
       "x": 19,
       "y": 9,
       "elevation": 3,
-      "item": "ITEM_NONE",
+      "item": "ITEM_XERIC",
       "flag": "FLAG_TEMP_1"
     },
     {
@@ -327,7 +340,7 @@
       "x": 27,
       "y": 24,
       "elevation": 3,
-      "item": "ITEM_NONE",
+      "item": "ITEM_ANCIENT_SHARD",
       "flag": "FLAG_TEMP_1"
     },
     {

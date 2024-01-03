@@ -9,9 +9,10 @@ script ZEAH_TELEPORT_ENTER {
         if (var(VAR_RESULT)) {
             msgbox(format("The totem in your backpack reacts to the Altar.\pWould you like to use it?"), MSGBOX_YESNO)
             if (var(VAR_RESULT)){
-                    msgbox(format("Suddenly the world thats to warp around you."))
+                    msgbox(format("Suddenly the world starts to warp around you."))
+                    applymovement(OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT)
                     removeitem(ITEM_PURPLE_SWEETS, 1)
-                    warp (MAP_KOUREND_CATACOMBS_7,0,0,0)
+                    warpteleport (MAP_KOUREND_CATACOMBS_7,0,0,0)
                     closemessage
                     release
                     end
@@ -26,10 +27,59 @@ script ZEAH_TELEPORT_ENTER {
     end           
 }
 
+script XERICS_TELEPORT {
+    msgbox(format("Would you like to teleport to the Kourend?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)){
+            msgbox(format("Suddenly the world starts to warp around you."))
+            applymovement(OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT)
+            warpteleport (MAP_KOUREND_CATACOMBS_1,0,0,0)
+            closemessage
+            release
+            end
+        }  
+    closemessage
+    release
+    end
+}
 
+script ANCIENT_SHARD_TELEPORT {
+    
+    msgbox(format("Would you like to teleport to the Catacombs of Kourend?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)){
+            msgbox(format("Suddenly the world starts to warp around you."))
+            playse(SE_WARP_IN)
+            applymovement(OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT)
+            waitmovement(0)
+            closemessage
+            release
+            random(7)
+                switch (var(VAR_RESULT)) {
+                    case 0: 
+                        warpspinenter (MAP_KOUREND_CATACOMBS_1, 28, 20)
+                    case 1: 
+                        warpspinenter (MAP_KOUREND_CATACOMBS_4, 38, 12)
+                    case 2: 
+                        warpspinenter (MAP_KOUREND_CATACOMBS_4, 77, 9)
+                    case 3: 
+                        warpspinenter (MAP_KOUREND_CATACOMBS_5, 4, 14)
+                    case 4: 
+                        warpspinenter (MAP_KOUREND_CATACOMBS_2, 48, 2)
+                    case 5: 
+                        warpspinenter (MAP_KOUREND_CATACOMBS_2, 8, 19)
+                    case 6: 
+                        warpspinenter (MAP_KOUREND_CATACOMBS_6, 5, 6)
+                }
+            end
+        }  
+    closemessage
+    release
+    end
+}
 
-
-
+movement movement_TELEPORT_OUT
+{
+    fly_up
+} 
 
 script NPC_NIEVE
 {
@@ -79,20 +129,20 @@ script SLAYER_TASK_ASSIGN
             case 0: 
                 setvar(VAR_SLAYER_ASSIGNMENT, 1)                  //MON
                 bufferspeciesname(STR_VAR_2, SPECIES_BLOODVELD)   //MON
-                buffernumberstring(STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT)       //AMOUNT
+                buffernumberstring(STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT)       //AMOUNT
             case 1: 
                 setvar(VAR_SLAYER_ASSIGNMENT, 2)                //MON
                 bufferspeciesname(STR_VAR_2, SPECIES_FROGEEL)   //MON
-                buffernumberstring(STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT)       //AMOUNT
+                buffernumberstring(STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT)       //AMOUNT
             case 2: 
                 setvar(VAR_SLAYER_ASSIGNMENT, 3)                 //MON
                 bufferspeciesname(STR_VAR_2, SPECIES_GUTHLING)   //MON
-                buffernumberstring(STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT)        //AMOUNT
+                buffernumberstring(STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT)        //AMOUNT
             case 3:
             case 4:
                 setvar(VAR_SLAYER_ASSIGNMENT, 4)                 //MON
                 bufferspeciesname(STR_VAR_2, SPECIES_ROC)   //MON
-                buffernumberstring(STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT)        //AMOUNT
+                buffernumberstring(STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT)        //AMOUNT
             case 5:
             case 6:
             case 7:
@@ -103,7 +153,7 @@ script SLAYER_TASK_ASSIGN
             case 9:
                 setvar(VAR_SLAYER_ASSIGNMENT, 4)                 //MON
                 bufferspeciesname(STR_VAR_2, SPECIES_ROC)   //MON
-                buffernumberstring(STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT)        //AMOUNT
+                buffernumberstring(STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT)        //AMOUNT
 
         }
     return
@@ -117,16 +167,16 @@ script SLAYER_TASK_CHECK
             return
         case 1: 
             bufferspeciesname(STR_VAR_2, SPECIES_BLOODVELD)
-            buffernumberstring(STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT)
+            buffernumberstring(STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT)
         case 2: 
             bufferspeciesname(STR_VAR_2, SPECIES_DEMON_LESSER_OSRS_FORM)
-            buffernumberstring (STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT)
+            buffernumberstring (STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT)
         case 3: 
             bufferspeciesname(STR_VAR_2, SPECIES_ZAMLING)
-            buffernumberstring (STR_VAR_1, VAR_SLAYER_LEFT_TO_DEFEAT)
+            buffernumberstring (STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT)
         
     }
-    msgbox(format("Your current assignment is to slay {STR_VAR_1} {STR_VAR_2}"))
+    msgbox(format("Your current assignment is to slay {STR_VAR_3} {STR_VAR_2}"))
     closemessage
     return
 }

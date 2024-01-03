@@ -669,6 +669,14 @@ EventScript_SLAYER_TASK_CHECK::
 	goto SLAYER_TASK_CHECK
 	end
 
+EventScript_XERIC::
+	goto XERICS_TELEPORT
+	end
+
+EventScript_ANCIENT_SHARD::
+	goto ANCIENT_SHARD_TELEPORT
+	end
+
 Text_CantDive:
 	.string "The sea is deep here. A POKéMON\n"
 	.string "may be able to go underwater.$"

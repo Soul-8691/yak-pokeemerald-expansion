@@ -7780,7 +7780,7 @@ const struct Item gItems[] =
         .description = sANCIENT_SHARD_Desc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .fieldUseFunc = ItemUseOutOfBattle_Function
     },
     [ITEM_DARK_TOTEM_BASE] =
     {
@@ -7828,9 +7828,9 @@ const struct Item gItems[] =
         .itemId = ITEM_XERIC,
         .price = 0,
         .description = sXeric_Desc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .fieldUseFunc = ItemUseOutOfBattle_Function,
     },
     [ITEM_SLAYER_GEM] =
     {
@@ -7838,7 +7838,7 @@ const struct Item gItems[] =
         .itemId = ITEM_SLAYER_GEM,
         .price = 0,
         .description = sSLAYER_GEM_Desc,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Function,
     },

@@ -60,6 +60,7 @@ extern const u8 EventScript_SmashRune[];
 extern const u8 EventScript_SmashOrikalkum[];
 extern const u8 EventScript_SmashElemental[];
 extern const u8 EventScript_SmashBane[];
+extern const u8 EventScript_SLAYER_TASK_CHECK[];
 
 
 
@@ -94,6 +95,7 @@ static void SetDistanceOfClosestHiddenItem(u8, s16, s16);
 static void CB2_OpenPokeblockFromBag(void);
 void DoFlyItem (u8 taskId, TaskFunc task);
 void SetUpFlyUseCallback(u8 taskId);
+static void ItemUseOnFieldCB_SlayerGem(u8);
 
 // EWRAM variables
 EWRAM_DATA static void(*sItemUseOnFieldCB)(u8 taskId) = NULL;
@@ -247,20 +249,36 @@ void ItemUseOutOfBattle_Bike(u8 taskId)
 
 void ItemUseOutOfBattle_Function(u8 taskId) //This is used to change a Flag / Variable from the items menu.
 {
-	if (FlagGet(FLAG_EXP_ALL) == FALSE)
+    if (gSpecialVar_ItemId == ITEM_SLAYER_GEM)
     {
-        FlagSet(FLAG_EXP_ALL);
-        DisplayItemMessage(taskId, FONT_NORMAL, gText_PulseCoreOn, CloseItemMessage);
+        sItemUseOnFieldCB = ItemUseOnFieldCB_SlayerGem;
+        gFieldCallback = FieldCB_UseItemOnField;
+        gBagMenu->newScreenCallback = CB2_ReturnToField;
+        Task_FadeAndCloseBagMenu(taskId);
     }
-    else if (FlagGet(FLAG_EXP_ALL) == TRUE)
-    {
-        FlagClear(FLAG_EXP_ALL);
-        DisplayItemMessage(taskId, FONT_NORMAL, gText_PulseCoreOff, CloseItemMessage);
+    else if (gSpecialVar_ItemId >= ITEM_PULSE_CORE) { 
+        if (FlagGet(FLAG_EXP_ALL) == FALSE)
+        {
+            FlagSet(FLAG_EXP_ALL);
+            DisplayItemMessage(taskId, FONT_NORMAL, gText_PulseCoreOn, CloseItemMessage);
+        }
+        else if (FlagGet(FLAG_EXP_ALL) == TRUE)
+        {
+            FlagClear(FLAG_EXP_ALL);
+            DisplayItemMessage(taskId, FONT_NORMAL, gText_PulseCoreOff, CloseItemMessage);
+        }
+        else
+            DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
     }
-    else
-        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
-	
 }
+
+static void ItemUseOnFieldCB_SlayerGem(u8 taskId)
+{
+    ScriptContext2_Enable();
+    ScriptContext1_SetupScript(EventScript_SLAYER_TASK_CHECK);
+    DestroyTask(taskId);
+}
+
 
 static void ItemUseOnFieldCB_Bike(u8 taskId)
 {

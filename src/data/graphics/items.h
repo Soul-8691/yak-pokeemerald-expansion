@@ -1471,6 +1471,8 @@ const u32 gItemIcon_DARK_TOTEM[] = INCBIN_U32("graphics/items/pokescape_icons/xe
 const u32 gItemIconPalette_DARK_TOTEM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/xeric.gbapal.lz");
 const u32 gItemIcon_Xeric[] = INCBIN_U32("graphics/items/pokescape_icons/xeric.4bpp.lz");
 const u32 gItemIconPalette_Xeric[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/xeric.gbapal.lz");
+const u32 gItemIcon_SLAYER_GEM[] = INCBIN_U32("graphics/items/pokescape_icons/slayergem.4bpp.lz");
+const u32 gItemIconPalette_SLAYER_GEM[] = INCBIN_U32("graphics/items/pokescape_icon_palettes/slayergem.gbapal.lz");
 
 
 

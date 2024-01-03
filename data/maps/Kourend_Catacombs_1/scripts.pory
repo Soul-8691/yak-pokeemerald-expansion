@@ -47,6 +47,11 @@ script NPC_NIEVE
     end
 }
 
+script give_SLAYER_GEM
+{
+    finditem(ITEM_SLAYER_GEM)
+    end
+}
 
 
 

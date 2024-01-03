@@ -11315,6 +11315,8 @@ extern const u32 gItemIcon_DARK_TOTEM[];
 extern const u32 gItemIconPalette_DARK_TOTEM[];
 extern const u32 gItemIcon_Xeric[];
 extern const u32 gItemIconPalette_Xeric[];
+extern const u32 gItemIcon_SLAYER_GEM[];
+extern const u32 gItemIconPalette_SLAYER_GEM[];
 //------
 
 // pokescape crops

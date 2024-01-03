@@ -7824,12 +7824,22 @@ const struct Item gItems[] =
     },
     [ITEM_XERIC] =
     {
-        .name = _("Xeric Ammy"),
+        .name = _("XERIC AMMY"),
         .itemId = ITEM_XERIC,
         .price = 0,
         .description = sXeric_Desc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_SLAYER_GEM] =
+    {
+        .name = _("SLAYER GEM"),
+        .itemId = ITEM_SLAYER_GEM,
+        .price = 0,
+        .description = sSLAYER_GEM_Desc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Function,
     },
 };

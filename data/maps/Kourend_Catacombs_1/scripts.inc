@@ -52,6 +52,11 @@ NPC_NIEVE_2:
 	goto NPC_NIEVE_1
 
 
+give_SLAYER_GEM::
+	finditem ITEM_SLAYER_GEM
+	end
+
+
 SLAYER_TASK_ASSIGN::
 	random 4
 	addvar VAR_RESULT, 1

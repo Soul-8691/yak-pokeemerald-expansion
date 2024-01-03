@@ -665,6 +665,10 @@ EventScript_EndSurface::
 	releaseall
 	end
 
+EventScript_SLAYER_TASK_CHECK::
+	goto SLAYER_TASK_CHECK
+	end
+
 Text_CantDive:
 	.string "The sea is deep here. A POKéMON\n"
 	.string "may be able to go underwater.$"

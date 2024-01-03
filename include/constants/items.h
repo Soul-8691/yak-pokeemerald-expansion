@@ -807,10 +807,11 @@
 #define	ITEM_DARK_TOTEM_TOP	653
 #define	ITEM_DARK_TOTEM	654
 #define	ITEM_XERIC  655
+#define	ITEM_SLAYER_GEM  656
 
 
 
-#define ITEMS_COUNT 656
+#define ITEMS_COUNT 657
 // Last available item ID due to ITEM_EXPANSION (see battle_config.h)
 // #define ITEM_ID_LIMIT 964
 #define ITEM_FIELD_ARROW ITEMS_COUNT

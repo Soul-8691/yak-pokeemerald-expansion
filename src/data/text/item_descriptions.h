@@ -2657,6 +2657,11 @@ static const u8 sXeric_Desc[] = _(
     "will teleport you\n"
     "to another land.");
     
+static const u8 sSLAYER_GEM_Desc[] = _(
+    "A gem that contacts\n"
+    "your Slayer Master.\n"
+    "");
+    
 
 static const u8 sFrogeelBurgerDesc[] = _(
     "A Fresh burger\n"

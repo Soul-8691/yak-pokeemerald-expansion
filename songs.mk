@@ -1439,9 +1439,8 @@ $(MID_SUBDIR)/MUS_PS_ENCOUNTER_MITHRILMAN.s: %.s: %.mid
 $(MID_SUBDIR)/MUS_PS_QUEST_COMPLETE.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V100
 
-
 $(MID_SUBDIR)/MUS_PS_KOUREND_CATACOMBS.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G193 -V080 -P1
+	$(MID) $< $@ -E -R$(STD_REVERB) -G146 -V080 -P1
 
 
 	

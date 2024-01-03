@@ -690,6 +690,9 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_DARK_TOTEM_TOP] = {gItemIcon_DARK_TOTEM_TOP, gItemIconPalette_DARK_TOTEM_TOP},
     [ITEM_DARK_TOTEM] = {gItemIcon_DARK_TOTEM, gItemIconPalette_DARK_TOTEM},
     [ITEM_XERIC] = {gItemIcon_Xeric, gItemIconPalette_Xeric},
+    [ITEM_SLAYER_GEM] = {gItemIcon_SLAYER_GEM, gItemIconPalette_SLAYER_GEM},
+
+    
 
 
     

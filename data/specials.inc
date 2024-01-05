@@ -546,3 +546,4 @@ gSpecials::
 	def_special ChangeAbility
 	def_special SafariModeRestartSteps
 	def_special SafariModeIncreasePouches
+	def_special GetCurrentMap

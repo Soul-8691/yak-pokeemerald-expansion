@@ -7700,6 +7700,16 @@
       "secondary_tileset": "gTileset_Ice_Mountain",
       "border_filepath": "data/layouts/GWD_3/border.bin",
       "blockdata_filepath": "data/layouts/GWD_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_HIDDEN_GROTTOS",
+      "name": "HiddenGrottos_Layout",
+      "width": 64,
+      "height": 60,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp",
+      "border_filepath": "data/layouts/HiddenGrottos/border.bin",
+      "blockdata_filepath": "data/layouts/HiddenGrottos/map.bin"
     }
   ]
 }

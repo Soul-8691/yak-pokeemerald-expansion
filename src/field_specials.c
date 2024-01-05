@@ -1581,6 +1581,11 @@ bool8 InMultiPartnerRoom(void)
     return FALSE;
 }
 
+u32 GetCurrentMap(void)
+{
+    return (gSaveBlock1Ptr->location.mapGroup << 8) | gSaveBlock1Ptr->location.mapNum;
+}
+
 void OffsetCameraForBattle(void)
 {
     SetCameraPanningCallback(NULL);

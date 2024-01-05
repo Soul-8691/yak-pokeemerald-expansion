@@ -7710,6 +7710,16 @@
       "secondary_tileset": "gTileset_Lumbridge_Swamp",
       "border_filepath": "data/layouts/HiddenGrottos/border.bin",
       "blockdata_filepath": "data/layouts/HiddenGrottos/map.bin"
+    },
+    {
+      "id": "LAYOUT_GRAND_EXCHANGE_INDOOR",
+      "name": "Grand_Exchange_Indoor_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Bank",
+      "border_filepath": "data/layouts/Grand_Exchange_Indoor/border.bin",
+      "blockdata_filepath": "data/layouts/Grand_Exchange_Indoor/map.bin"
     }
   ]
 }

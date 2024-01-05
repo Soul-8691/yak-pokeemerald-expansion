@@ -72,8 +72,8 @@
       "x": 7,
       "y": 7,
       "elevation": 4,
-      "dest_map": "MAP_GRAND_EXCHANGE",
-      "dest_warp_id": 2
+      "dest_map": "MAP_GRAND_EXCHANGE_INDOOR",
+      "dest_warp_id": 3
     },
     {
       "x": 4,

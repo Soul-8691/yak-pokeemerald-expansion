@@ -1710,3 +1710,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/GWD_3/scripts.inc"
 
 	.include "data/maps/HiddenGrottos/scripts.inc"
+
+	.include "data/maps/Grand_Exchange_Indoor/scripts.inc"

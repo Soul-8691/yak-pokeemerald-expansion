@@ -93,8 +93,8 @@
       "x": 7,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_GRAND_EXCHANGE",
-      "dest_warp_id": 0
+      "dest_map": "MAP_GRAND_EXCHANGE_INDOOR",
+      "dest_warp_id": 3
     }
   ],
   "coord_events": [

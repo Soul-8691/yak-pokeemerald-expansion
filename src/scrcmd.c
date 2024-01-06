@@ -1901,7 +1901,7 @@ bool8 ScrCmd_cleartrainerflag(struct ScriptContext *ctx)
 bool8 ScrCmd_setwildbattle(struct ScriptContext *ctx)
 {
     u16 species = ScriptReadHalfword(ctx);
-    u8 level = ScriptReadByte(ctx);
+    u16 level = VarGet(ScriptReadHalfword(ctx));
     u16 item = ScriptReadHalfword(ctx);
     u16 species2 = ScriptReadHalfword(ctx);
     u8 level2 = ScriptReadByte(ctx);

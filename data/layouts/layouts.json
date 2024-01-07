@@ -6374,8 +6374,8 @@
     {
       "id": "LAYOUT_SINKHOLE_3",
       "name": "Sinkhole_3_Layout",
-      "width": 40,
-      "height": 40,
+      "width": 15,
+      "height": 10,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Sinkhole_3/border.bin",
@@ -7720,6 +7720,176 @@
       "secondary_tileset": "gTileset_Bank",
       "border_filepath": "data/layouts/Grand_Exchange_Indoor/border.bin",
       "blockdata_filepath": "data/layouts/Grand_Exchange_Indoor/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_1",
+      "name": "Dungeoneering_1_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_1/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_1/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_2",
+      "name": "Dungeoneering_2_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeIndoors",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_2/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_2/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_3",
+      "name": "Dungeoneering_3_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_3/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_3/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_4",
+      "name": "Dungeoneering_4_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_4/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_4/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_5",
+      "name": "Dungeoneering_5_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_5/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_5/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_6",
+      "name": "Dungeoneering_6_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_6/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_6/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_7",
+      "name": "Dungeoneering_7_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_7/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_7/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_8",
+      "name": "Dungeoneering_8_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_8/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_8/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_9",
+      "name": "Dungeoneering_9_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_9/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_9/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_10",
+      "name": "Dungeoneering_10_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_10/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_10/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_11",
+      "name": "Dungeoneering_11_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_11/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_11/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_12",
+      "name": "Dungeoneering_12_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_12/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_12/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_13",
+      "name": "Dungeoneering_13_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_13/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_13/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_14",
+      "name": "Dungeoneering_14_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_14/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_14/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_15",
+      "name": "Dungeoneering_15_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_15/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_15/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_16",
+      "name": "Dungeoneering_16_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_16/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_16/map.bin"
+    },
+    {
+      "id": "LAYOUT_DUNGEONEERING_LOBBY",
+      "name": "Dungeoneering_Lobby_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dungeoneering",
+      "border_filepath": "data/layouts/Dungeoneering_Lobby/border.bin",
+      "blockdata_filepath": "data/layouts/Dungeoneering_Lobby/map.bin"
     }
   ]
 }

@@ -547,3 +547,4 @@ gSpecials::
 	def_special SafariModeRestartSteps
 	def_special SafariModeIncreasePouches
 	def_special GetCurrentMap
+	def_special GetSeededResult

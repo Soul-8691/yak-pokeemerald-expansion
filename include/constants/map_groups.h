@@ -840,6 +840,23 @@
 #define MAP_ALKHARID_GYM_2F_R1      (6 | (45 << 8))
 
 // gMapGroup46
+#define MAP_DUNGEONEERING_1     (0 | (46 << 8))
+#define MAP_DUNGEONEERING_2     (1 | (46 << 8))
+#define MAP_DUNGEONEERING_3     (2 | (46 << 8))
+#define MAP_DUNGEONEERING_4     (3 | (46 << 8))
+#define MAP_DUNGEONEERING_5     (4 | (46 << 8))
+#define MAP_DUNGEONEERING_6     (5 | (46 << 8))
+#define MAP_DUNGEONEERING_7     (6 | (46 << 8))
+#define MAP_DUNGEONEERING_8     (7 | (46 << 8))
+#define MAP_DUNGEONEERING_9     (8 | (46 << 8))
+#define MAP_DUNGEONEERING_10    (9 | (46 << 8))
+#define MAP_DUNGEONEERING_11    (10 | (46 << 8))
+#define MAP_DUNGEONEERING_12    (11 | (46 << 8))
+#define MAP_DUNGEONEERING_13    (12 | (46 << 8))
+#define MAP_DUNGEONEERING_14    (13 | (46 << 8))
+#define MAP_DUNGEONEERING_15    (14 | (46 << 8))
+#define MAP_DUNGEONEERING_16    (15 | (46 << 8))
+#define MAP_DUNGEONEERING_LOBBY (16 | (46 << 8))
 
 // gMapGroup47
 

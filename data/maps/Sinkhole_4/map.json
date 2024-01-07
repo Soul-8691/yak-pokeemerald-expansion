@@ -60,8 +60,8 @@
       "dest_warp_id": 6
     },
     {
-      "x": 21,
-      "y": 8,
+      "x": 22,
+      "y": 5,
       "elevation": 0,
       "dest_map": "MAP_SINKHOLE_4",
       "dest_warp_id": 5
@@ -156,6 +156,20 @@
       "elevation": 0,
       "dest_map": "MAP_SINKHOLE_1",
       "dest_warp_id": 0
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_SINKHOLE_3",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_ABYSSAL_REALM_1",
+      "dest_warp_id": 37
     }
   ],
   "coord_events": [

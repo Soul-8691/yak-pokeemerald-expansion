@@ -1712,3 +1712,37 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/HiddenGrottos/scripts.inc"
 
 	.include "data/maps/Grand_Exchange_Indoor/scripts.inc"
+
+	.include "data/maps/Dungeoneering_1/scripts.inc"
+
+	.include "data/maps/Dungeoneering_2/scripts.inc"
+
+	.include "data/maps/Dungeoneering_3/scripts.inc"
+
+	.include "data/maps/Dungeoneering_4/scripts.inc"
+
+	.include "data/maps/Dungeoneering_5/scripts.inc"
+
+	.include "data/maps/Dungeoneering_6/scripts.inc"
+
+	.include "data/maps/Dungeoneering_7/scripts.inc"
+
+	.include "data/maps/Dungeoneering_8/scripts.inc"
+
+	.include "data/maps/Dungeoneering_9/scripts.inc"
+
+	.include "data/maps/Dungeoneering_10/scripts.inc"
+
+	.include "data/maps/Dungeoneering_11/scripts.inc"
+
+	.include "data/maps/Dungeoneering_12/scripts.inc"
+
+	.include "data/maps/Dungeoneering_13/scripts.inc"
+
+	.include "data/maps/Dungeoneering_14/scripts.inc"
+
+	.include "data/maps/Dungeoneering_15/scripts.inc"
+
+	.include "data/maps/Dungeoneering_16/scripts.inc"
+
+	.include "data/maps/Dungeoneering_Lobby/scripts.inc"

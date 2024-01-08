@@ -27,6 +27,11 @@
       "direction": "left",
       "offset": -12,
       "map": "MAP_ROUTE170"
+    },
+    {
+      "direction": "down",
+      "offset": 0,
+      "map": "MAP_RELLEKKA"
     }
   ],
   "object_events": [

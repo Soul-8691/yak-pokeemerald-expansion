@@ -377,3 +377,18 @@ script ITEM_SAFARI_ZONE_POUCH
     //waitfanfare
     end
 }
+
+
+
+
+
+
+
+
+
+script POKESCAPE_CURRENT_VERSION
+{
+    msgbox(format("PokeScape V.5.0"))
+    closemessage
+    end
+}

@@ -17,6 +17,11 @@
       "direction": "down",
       "offset": 24,
       "map": "MAP_ROUTE57"
+    },
+    {
+      "direction": "up",
+      "offset": 0,
+      "map": "MAP_JATIZSO"
     }
   ],
   "object_events": [

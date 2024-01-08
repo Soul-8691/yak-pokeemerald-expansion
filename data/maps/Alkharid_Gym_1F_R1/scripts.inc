@@ -364,6 +364,12 @@ ITEM_SAFARI_ZONE_POUCH::
 	end
 
 
+POKESCAPE_CURRENT_VERSION::
+	msgbox POKESCAPE_CURRENT_VERSION_Text_0
+	closemessage
+	end
+
+
 GYM_NPC_3_Text_0:
 	.string "Guards help me as I make my escape!$"
 
@@ -445,3 +451,6 @@ SAFARI_ZONE_ALTAR_STATE_Text_0:
 
 ITEM_SAFARI_ZONE_POUCH_Text_0:
 	.string "You found extra Pouches!$"
+
+POKESCAPE_CURRENT_VERSION_Text_0:
+	.string "PokeScape Version 5.0$"

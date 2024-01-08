@@ -205,6 +205,8 @@ DungeonLayout_ROOM_PATH_5::
 	call DungeonLayout_BLOCKED_UP_ROOM_15
 	call DungeonLayout_BLOCKED_UP_ROOM_14
 	call DungeonLayout_BLOCKED_DOWN_ROOM_3
+	call DungeonLayout_BLOCKED_UP_ROOM_3
+	call DungeonLayout_BLOCKED_LEFT_ROOM_5
 	setvar VAR_DUNGEONEERING_BOSS_ROOM, 11
 	specialvar VAR_RESULT, GetCurrentMap
 	call_if_eq VAR_RESULT, MAP_DUNGEONEERING_11, DungeonLayout_BossRoom

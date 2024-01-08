@@ -891,7 +891,8 @@ DungeonInteractions_DG_STRING_Text_0:
 	.string "You search the junk and find nothing.$"
 
 DungeonInteractions_DG_SPINNING_WHEEL_Text_0:
-	.string "You spin the string into some useful rope.$"
+	.string "You spin the string into some useful\n"
+	.string "rope.$"
 
 DungeonInteractions_DG_SPINNING_WHEEL_Text_1:
 	.string "You need some string to make a rope.$"

@@ -767,13 +767,13 @@ script DungeonInteractions_DG_SPINNING_WHEEL {
 
     checkitem(ITEM_DG_BALL_OF_WOOL, 1)
     if (var(VAR_RESULT)) {
-        msgbox("You spin the string into some useful rope.")
+        msgbox(format("You spin the string into some useful rope."))
         closemessage
         finditem(ITEM_DG_ROPE, 1)
         removeitem(ITEM_DG_BALL_OF_WOOL, 1)
         end
     }
-    msgbox("You need some string to make a rope.")
+    msgbox(format("You need some string to make a rope."))
     closemessage
     end
 }

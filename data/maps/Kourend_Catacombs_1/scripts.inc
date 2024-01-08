@@ -252,11 +252,7 @@ ROTTEN_POTATO_TELEPORT::
 
 ROTTEN_POTATO_TELEPORT_2:
 	msgbox ROTTEN_POTATO_TELEPORT_Text_1
-	playse SE_WARP_IN
-	applymovement OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT
-	waitmovement 0
-	closemessage
-	warpspinenter MAP_LUMBRIDGE, 36, 22
+	goto EventScript_FieldWhiteOut
 	release
 	end
 
@@ -306,7 +302,10 @@ SLAYER_TASK_COMPLETE_Text_0:
 
 ROTTEN_POTATO_TELEPORT_Text_0:
 	.string "Only use this if you are stuck.\p"
-	.string "This will take you back to Lumbridge.$"
+	.string "This will cause you to whiteout.$"
 
 ROTTEN_POTATO_TELEPORT_Text_1:
-	.string "You feel the PokeScape gods save you.$"
+	.string "As you bite into the rotten potato you\n"
+	.string "and your team feel the touch of the\l"
+	.string "PokeScape gods.\p"
+	.string "It was too much for you.$"

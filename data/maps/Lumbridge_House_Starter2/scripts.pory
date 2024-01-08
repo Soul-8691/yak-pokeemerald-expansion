@@ -45,6 +45,7 @@ script GAMEMODE_CHECK_NEWGAME_ITEMS
             playfanfare(MUS_OBTAIN_ITEM)
             msgbox(format("Obtained a load of useful items."))
             waitfanfare
+            additem (ITEM_ROTTEN_POTATO)
             additem (ITEM_NORMAL_POUCH, 10)
             additem (ITEM_MAP)
             additem (ITEM_ITEMFINDER)

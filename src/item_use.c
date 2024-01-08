@@ -63,6 +63,9 @@ extern const u8 EventScript_SmashBane[];
 extern const u8 EventScript_SLAYER_TASK_CHECK[];
 extern const u8 EventScript_XERIC[];
 extern const u8 EventScript_ANCIENT_SHARD[];
+extern const u8 EventScript_ROTTEN_POTATO[];
+
+
 
 
 
@@ -253,7 +256,7 @@ void ItemUseOutOfBattle_Bike(u8 taskId)
 
 void ItemUseOutOfBattle_Function(u8 taskId) //This is used to change a Flag / Variable from the items menu.
 {
-    if ((gSpecialVar_ItemId == ITEM_SLAYER_GEM) || (gSpecialVar_ItemId == ITEM_XERIC) || (gSpecialVar_ItemId == ITEM_ANCIENT_SHARD))
+    if ((gSpecialVar_ItemId == ITEM_SLAYER_GEM) || (gSpecialVar_ItemId == ITEM_XERIC) || (gSpecialVar_ItemId == ITEM_ANCIENT_SHARD) || (gSpecialVar_ItemId == ITEM_ROTTEN_POTATO))
     {
         if (gMapHeader.mapType == MAP_TYPE_UNDERWATER)
         {
@@ -297,6 +300,10 @@ static void ItemUseOnFieldCB_RunScript(u8 taskId)
     else if (gSpecialVar_ItemId == ITEM_ANCIENT_SHARD)
     {
         ScriptContext1_SetupScript(EventScript_ANCIENT_SHARD);
+    }
+    else if (gSpecialVar_ItemId == ITEM_ROTTEN_POTATO)
+    {
+        ScriptContext1_SetupScript(EventScript_ROTTEN_POTATO);
     }
     DestroyTask(taskId);
 }

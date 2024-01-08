@@ -242,6 +242,25 @@ SLAYER_TASK_COMPLETE::
 	return
 
 
+ROTTEN_POTATO_TELEPORT::
+	msgbox ROTTEN_POTATO_TELEPORT_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne ROTTEN_POTATO_TELEPORT_2
+	closemessage
+	release
+	end
+
+ROTTEN_POTATO_TELEPORT_2:
+	msgbox ROTTEN_POTATO_TELEPORT_Text_1
+	playse SE_WARP_IN
+	applymovement OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT
+	waitmovement 0
+	closemessage
+	warpspinenter MAP_LUMBRIDGE, 36, 22
+	release
+	end
+
+
 ZEAH_TELEPORT_ENTER_Text_0:
 	.string "The totem in your backpack reacts to\n"
 	.string "the Altar.\p"
@@ -284,3 +303,10 @@ SLAYER_TASK_COMPLETE_Text_0:
 	.string "Slayer Assignment complete!\n"
 	.string "{PLAYER} obtained {STR_VAR_1}\l"
 	.string "Slayer Point(s).$"
+
+ROTTEN_POTATO_TELEPORT_Text_0:
+	.string "Only use this if you are stuck.\p"
+	.string "This will take you back to Lumbridge.$"
+
+ROTTEN_POTATO_TELEPORT_Text_1:
+	.string "You feel the PokeScape gods save you.$"

@@ -5786,10 +5786,10 @@ const struct Item gItems[] =
         .name = _("ROTTEN POTATO"),
         .itemId = ITEM_ROTTEN_POTATO ,
         .price = 2100,
-        .description = sEvoLegendaryItemDesc,
-        .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .description = sUnstuckDesc,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Function,
     },
 	[ITEM_SOCK] =
     {

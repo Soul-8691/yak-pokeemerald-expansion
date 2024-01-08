@@ -229,6 +229,22 @@ script SLAYER_TASK_COMPLETE
 
 
 
-
+script ROTTEN_POTATO_TELEPORT {
+    
+    msgbox(format("Only use this if you are stuck.\pThis will take you back to Lumbridge."), MSGBOX_YESNO)
+    if (var(VAR_RESULT)){
+            msgbox(format("You feel the PokeScape gods save you."))
+            playse(SE_WARP_IN)
+            applymovement(OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT)
+            waitmovement(0)
+            closemessage
+            warpspinenter (MAP_LUMBRIDGE, 36, 22)
+            release
+            end
+        }  
+    closemessage
+    release
+    end
+}
 
 

@@ -63,6 +63,7 @@ Explorer_Jack_2_1:
 	setflag FLAG_RECEIVED_RUNNING_SHOES
 	setflag FLAG_SYS_B_DASH
 	setflag FLAG_SYS_QUEST_MENU_GET
+	additem ITEM_ROTTEN_POTATO
 	release
 	end
 

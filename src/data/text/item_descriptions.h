@@ -2668,6 +2668,10 @@ static const u8 sFrogeelBurgerDesc[] = _(
     "made from Frogeels.\n"
     "Tastes like AAAAA!");
 
+static const u8 sUnstuckDesc[] = _(
+    "If you are stuck\n"
+    "use this item.\n"
+    "");	
 
 static const u8 sCupholderDesc[] = _(
     "This is a Cupholder.");

@@ -677,6 +677,10 @@ EventScript_ANCIENT_SHARD::
 	goto ANCIENT_SHARD_TELEPORT
 	end
 
+EventScript_ROTTEN_POTATO::
+	goto ROTTEN_POTATO_TELEPORT
+	end
+
 Text_CantDive:
 	.string "The sea is deep here. A POKéMON\n"
 	.string "may be able to go underwater.$"

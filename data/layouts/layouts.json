@@ -6374,8 +6374,8 @@
     {
       "id": "LAYOUT_SINKHOLE_3",
       "name": "Sinkhole_3_Layout",
-      "width": 15,
-      "height": 10,
+      "width": 60,
+      "height": 60,
       "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Sinkhole_3/border.bin",

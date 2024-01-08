@@ -67,7 +67,6 @@ script BATTLE_LumbridgeSwamp_TRAINER_1{
 	trainerbattle_single(TRAINER_RSN_LUM_SWAMP, format("This is me swamp!"),format("Get out of me swamp!"))
 	namebox("Slimethighs")
 	msgbox(format("Me do not like you."))
-	warp (MAP_LUMBRIDGE, 36, 22)
 	hidenamebox
 	closemessage
 	end

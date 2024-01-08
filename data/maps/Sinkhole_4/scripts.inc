@@ -23,52 +23,11 @@ TRYWARPINGDOORS_ENTER::
 
 mapwarp::
 	copyvar VAR_TEMP_1, VAR_0x8006
-	copyvar VAR_DUNGEONEERING_LAST_DOOR_ENTERED, VAR_0x8005
 	goto checkmapwarp
 	return
 
 
 checkmapwarp::
-	compare VAR_DUNGEONEERING_LAST_DOOR_ENTERED, VAR_0x8004
-	goto_if_eq checkmapwarp_1
-	setdynamicwarp MAP_DUNGEONEERING_2, 1
-	return
-
-checkmapwarp_1:
-	compare VAR_TEMP_1, 1
-	goto_if_eq checkmapwarp_4
-	compare VAR_TEMP_1, 2
-	goto_if_eq checkmapwarp_5
-	return
-
-checkmapwarp_4:
-	compare VAR_0x8004, 2
-	goto_if_eq checkmapwarp_8
-	compare VAR_0x8004, 3
-	goto_if_eq checkmapwarp_9
-	return
-
-checkmapwarp_5:
-	compare VAR_0x8004, 2
-	goto_if_eq checkmapwarp_12
-	compare VAR_0x8004, 3
-	goto_if_eq checkmapwarp_13
-	return
-
-checkmapwarp_8:
-	setdynamicwarp MAP_DUNGEONEERING_1, 2
-	return
-
-checkmapwarp_9:
-	setdynamicwarp MAP_DUNGEONEERING_1, 3
-	return
-
-checkmapwarp_12:
-	setdynamicwarp MAP_DUNGEONEERING_2, 2
-	return
-
-checkmapwarp_13:
-	setdynamicwarp MAP_DUNGEONEERING_2, 3
 	return
 
 

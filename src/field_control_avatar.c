@@ -439,6 +439,13 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
         return EventScript_Questionnaire;
     if (MetatileBehavior_IsTrainerHillTimer(metatileBehavior) == TRUE)
         return EventScript_TrainerHillTimer;
+    if (MetatileBehavior_Is_DG_ROPE(metatileBehavior) == TRUE)
+        return EventScript_DG_ROPE;
+    if (MetatileBehavior_Is_DG_STRING(metatileBehavior) == TRUE)
+        return EventScript_DG_STRING;
+    if (MetatileBehavior_Is_DG_SPINNING_WHEEL(metatileBehavior) == TRUE)
+        return EventScript_DG_SPINNING_WHEEL;
+        
 
     elevation = position->elevation;
     if (elevation == MapGridGetElevationAt(position->x, position->y))

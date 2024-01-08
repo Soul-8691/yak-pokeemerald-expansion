@@ -2673,7 +2673,13 @@ static const u8 sUnstuckDesc[] = _(
     "use this item.\n"
     "");	
 
+static const u8 sDGItemDesc[] = _(
+    "An item that\n"
+    "can be used within\n"
+    "Dungeoneering.");
+
 static const u8 sCupholderDesc[] = _(
     "This is a Cupholder.");
+
 
 

@@ -65,7 +65,6 @@ BATTLE_LumbridgeSwamp_TRAINER_1::
 	trainerbattle_single TRAINER_RSN_LUM_SWAMP, BATTLE_LumbridgeSwamp_TRAINER_1_Text_0, BATTLE_LumbridgeSwamp_TRAINER_1_Text_1
 	namebox BATTLE_LumbridgeSwamp_TRAINER_1_Text_2
 	msgbox BATTLE_LumbridgeSwamp_TRAINER_1_Text_3
-	warp MAP_LUMBRIDGE, 36, 22
 	hidenamebox
 	closemessage
 	end

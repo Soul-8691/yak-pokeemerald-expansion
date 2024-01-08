@@ -142,14 +142,14 @@
 #define VAR_SLAYER_COMPLETE                   0x407B
 #define VAR_SEED                             0x407C // Unused Var
 #define VAR_DUNGEONEERING_DOOR                   0x407D // Unused Var
-#define VAR_DUNGEONEERING_LAST_DOOR_ENTERED                   0x407E // Unused Var
+#define VAR_DUNGEONEERING_RANDOM_PUZZLE_3                   0x407E // Unused Var
 #define VAR_STORE_SEED_RESULT                   0x407F // Unused Var
 #define VAR_DUNGEONEERING_STARTER_ROOM                   0x4080 // Unused Var
 #define VAR_DUNGEONEERING_BOSS_ROOM                   0x4081 // Unused Var
-#define VAR_LITTLEROOT_HOUSES_STATE_MAY      0x4082
-#define VAR_UNUSED_0x4083                    0x4083 // Unused Var
+#define VAR_DUNGEONEERING_RANDOM_PUZZLE_1      0x4082
+#define VAR_DUNGEONEERING_RANDOM_PUZZLE_2                    0x4083 // Unused Var
 #define VAR_BIRCH_LAB_STATE                  0x4084
-#define VAR_PETALBURG_GYM_STATE              0x4085 // 0-1: Wally tutorial, 2-6: 0-4 badges, 7: Defeated Norman, 8: Rematch Norman
+#define VAR_DUNGEONEERING_RANDOM_PUZZLE_4              0x4085 // 0-1: Wally tutorial, 2-6: 0-4 badges, 7: Defeated Norman, 8: Rematch Norman
 #define VAR_CONTEST_HALL_STATE               0x4086
 #define VAR_CABLE_CLUB_STATE                 0x4087
 #define VAR_CONTEST_TYPE                     0x4088
@@ -187,11 +187,11 @@
 #define VAR_UNUSED_0x40A8                    0x40A8 // Unused Var
 #define VAR_CYCLING_CHALLENGE_STATE          0x40A9
 #define VAR_SLATEPORT_MUSEUM_1F_STATE        0x40AA
-#define VAR_TRICK_HOUSE_PUZZLE_1_STATE       0x40AB
-#define VAR_TRICK_HOUSE_PUZZLE_2_STATE       0x40AC
-#define VAR_TRICK_HOUSE_PUZZLE_3_STATE       0x40AD
-#define VAR_TRICK_HOUSE_PUZZLE_4_STATE       0x40AE
-#define VAR_TRICK_HOUSE_PUZZLE_5_STATE       0x40AF
+#define VAR_DUNGEONEERING_RANDOM_PUZZLE_5       0x40AB
+#define VAR_DUNGEONEERING_RANDOM_PUZZLE_6       0x40AC
+#define VAR_DUNGEONEERING_RANDOM_PUZZLE_7       0x40AD
+#define VAR_DUNGEONEERING_RANDOM_PUZZLE_8       0x40AE
+#define VAR_DUNGEONEERING_AMOUNT_OF_PUZZLES       0x40AF
 #define VAR_TRICK_HOUSE_PUZZLE_6_STATE       0x40B0
 #define VAR_TRICK_HOUSE_PUZZLE_7_STATE       0x40B1
 #define VAR_TRICK_HOUSE_PUZZLE_8_STATE       0x40B2

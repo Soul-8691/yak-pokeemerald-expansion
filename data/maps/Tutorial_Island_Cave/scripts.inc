@@ -25,13 +25,11 @@ ratbattle_1:
 	removeobject 1
 	removeobject 2
 	removeobject 3
-	setvar VAR_UNUSED_0x4083, 2
 	release
 	return
 
 
 RatArenaLockedIn::
-	setvar VAR_UNUSED_0x4083, 1
 	return
 
 

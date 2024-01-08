@@ -7842,4 +7842,26 @@ const struct Item gItems[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Function,
     },
+
+
+    [ITEM_DG_BALL_OF_WOOL] =
+    {
+        .name = _("BALL OF WOOL"),
+        .itemId = ITEM_DG_BALL_OF_WOOL,
+        .price = 0,
+        .description = sDGItemDesc,
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_DG_ROPE] =
+    {
+        .name = _("ROPE"),
+        .itemId = ITEM_DG_ROPE,
+        .price = 0,
+        .description = sDGItemDesc,
+        .pocket = POCKET_BERRIES,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
 };

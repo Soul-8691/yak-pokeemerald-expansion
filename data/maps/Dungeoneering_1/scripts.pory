@@ -82,8 +82,6 @@ script DungeonLayout_StartingRoom {
     return
 }
 script DungeonLayout_BossRoom {
-    
-
     setmetatile(2, 1, 518, 1)
     setmetatile(3, 1, 518, 1)
     setmetatile(4, 1, 518, 1) 
@@ -107,8 +105,228 @@ script DungeonLayout_BossRoom {
     setmetatile(11, 2, 526, 1) 
     setmetatile(12, 2, 526, 1)
 
-    setmetatile(3, 2, 536, 0) 
-    setmetatile(3, 1, 528, 1)
+    setmetatile(3, 2, 536, 0) //ladder
+    setmetatile(3, 1, 528, 1) //ladder
+    return
+}
+
+
+
+
+
+
+script DungeonLayout_PuzzleRoom_5 {
+    setflag(FLAG_TEMP_12) //Prevents regular decorations
+
+    switch(var(VAR_DUNGEONEERING_RANDOM_PUZZLE_1)){
+		case 0:
+            call(DungeonLayout_PuzzleRoom_RopeBridge)
+        case 1:	
+            call(DungeonLayout_PuzzleRoom_VineRoom)
+        case 2:
+            call(DungeonLayout_PuzzleRoom_Rock)
+        case 3:
+            call(DungeonLayout_PuzzleRoom_Item)
+        case 4:
+            call(DungeonLayout_PuzzleRoom_Trainer)
+        case 5:
+            call(DungeonLayout_PuzzleRoom_Battle)
+        }
+    return
+}
+script DungeonLayout_PuzzleRoom_6 {
+    setflag(FLAG_TEMP_12) //Prevents regular decorations
+
+    switch(var(VAR_DUNGEONEERING_RANDOM_PUZZLE_2)){
+		case 0:
+            call(DungeonLayout_PuzzleRoom_RopeBridge)
+        case 1:	
+            call(DungeonLayout_PuzzleRoom_VineRoom)
+        case 2:
+            call(DungeonLayout_PuzzleRoom_Rock)
+        case 3:
+            call(DungeonLayout_PuzzleRoom_Item)
+        case 4:
+            call(DungeonLayout_PuzzleRoom_Trainer)
+        case 5:
+            call(DungeonLayout_PuzzleRoom_Battle)
+        }
+    return
+}
+script DungeonLayout_PuzzleRoom_7 {
+    setflag(FLAG_TEMP_12) //Prevents regular decorations
+
+    switch(var(VAR_DUNGEONEERING_RANDOM_PUZZLE_3)){
+		case 0:
+            call(DungeonLayout_PuzzleRoom_RopeBridge)
+        case 1:	
+            call(DungeonLayout_PuzzleRoom_VineRoom)
+        case 2:
+            call(DungeonLayout_PuzzleRoom_Rock)
+        case 3:
+            call(DungeonLayout_PuzzleRoom_Item)
+        case 4:
+            call(DungeonLayout_PuzzleRoom_Trainer)
+        case 5:
+            call(DungeonLayout_PuzzleRoom_Battle)
+        }
+    return
+}
+script DungeonLayout_PuzzleRoom_8 {
+    setflag(FLAG_TEMP_12) //Prevents regular decorations
+
+    switch(var(VAR_DUNGEONEERING_RANDOM_PUZZLE_4)){
+		case 0:
+            call(DungeonLayout_PuzzleRoom_RopeBridge)
+        case 1:	
+            call(DungeonLayout_PuzzleRoom_VineRoom)
+        case 2:
+            call(DungeonLayout_PuzzleRoom_Rock)
+        case 3:
+            call(DungeonLayout_PuzzleRoom_Item)
+        case 4:
+            call(DungeonLayout_PuzzleRoom_Trainer)
+        case 5:
+            call(DungeonLayout_PuzzleRoom_Battle)
+        }
+    return
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script DungeonLayout_PuzzleRoom_VineRoom {
+    //BACK WALL
+    setmetatile(2, 1, 518, 1)
+    setmetatile(3, 1, 518, 1)
+    setmetatile(4, 1, 518, 1) 
+    setmetatile(5, 1, 518, 1) 
+    setmetatile(9, 1, 518, 1)
+    setmetatile(10, 1, 518, 1) 
+    setmetatile(11, 1, 518, 1) 
+    setmetatile(12, 1, 518, 1)
+    setmetatile(2, 2, 526, 1) 
+    setmetatile(3, 2, 526, 1)
+    setmetatile(4, 2, 526, 1) 
+    setmetatile(5, 2, 526, 1) 
+    setmetatile(9, 2, 526, 1)
+    setmetatile(10, 2, 526, 1) 
+    setmetatile(11, 2, 526, 1) 
+    setmetatile(12, 2, 526, 1)
+    setflag(FLAG_TEMP_1F)
+}
+
+script DungeonLayout_PuzzleRoom_Rock {
+    //BACK WALL
+    setmetatile(7, 5, 9, 1)
+}
+script DungeonLayout_PuzzleRoom_Item {
+    //BACK WALL
+    setmetatile(7, 5, 913, 1)
+}
+script DungeonLayout_PuzzleRoom_Trainer {
+    //BACK WALL
+    setmetatile(7, 5, 922, 1)
+}
+script DungeonLayout_PuzzleRoom_Battle {
+    //BACK WALL
+    setmetatile(7, 5, 876, 1)
+}
+
+
+script DungeonLayout_PuzzleRoom_RopeBridge {
+    //BACK WALL
+    setmetatile(2, 1, 518, 1)
+    setmetatile(3, 1, 518, 1)
+    setmetatile(4, 1, 518, 1) 
+    setmetatile(5, 1, 518, 1) 
+    setmetatile(9, 1, 518, 1)
+    setmetatile(10, 1, 518, 1) 
+    setmetatile(11, 1, 518, 1) 
+    setmetatile(12, 1, 518, 1)
+    setmetatile(2, 2, 526, 1) 
+    setmetatile(3, 2, 526, 1)
+    setmetatile(4, 2, 526, 1) 
+    setmetatile(5, 2, 526, 1) 
+    setmetatile(9, 2, 526, 1)
+    setmetatile(10, 2, 526, 1) 
+    setmetatile(11, 2, 526, 1) 
+    setmetatile(12, 2, 526, 1)
+
+    setmetatile(2, 3, 589, 1) //HOLE - TOP CORNER L
+    setmetatile(3, 3, 590, 1) //HOLE - TOP 
+    setmetatile(4, 3, 590, 1) //HOLE - TOP 
+    setmetatile(5, 3, 591, 1) //HOLE - TOP CORNER R
+    setmetatile(6, 3, 520, 0) //FLOOR TILE 
+    setmetatile(7, 3, 929, 0) //ROPE - TOP TIED
+    setmetatile(8, 3, 520, 0) //FLOOR TILE
+    setmetatile(9, 3, 589, 1) //HOLE - TOP CORNER L
+    setmetatile(10, 3, 590, 1) //HOLE - TOP 
+    setmetatile(11, 3, 590, 1) //HOLE - TOP 
+    setmetatile(12, 3, 591, 1) //HOLE - TOP CORNER R
+    setmetatile(2, 4, 597, 1) //HOLE - MID EDGE L
+    setmetatile(3, 4, 598, 1) //HOLE - MID 
+    setmetatile(4, 4, 598, 1) //HOLE - MID 
+    setmetatile(5, 4, 639, 1) //HOLE - TOP > 
+    setmetatile(6, 4, 590, 1) //HOLE - TOP 
+    setmetatile(7, 4, 590, 1) //HOLE - TOP 
+    setmetatile(8, 4, 590, 1) //HOLE - TOP 
+    setmetatile(9, 4, 638, 1) //HOLE - TOP <
+    setmetatile(10, 4, 598, 1) //HOLE - MID 
+    setmetatile(11, 4, 598, 1) //HOLE - MID 
+    setmetatile(12, 4, 599, 1) //HOLE - MID EDGE R
+    setmetatile(2, 5, 605, 1) //HOLE - BOTTOM CORNER L
+    setmetatile(3, 5, 606, 1) //HOLE - BOTTOM 
+    setmetatile(4, 5, 646, 1) //HOLE - BOTTOM >
+    setmetatile(5, 5, 598, 1) //HOLE - MID
+    setmetatile(6, 5, 598, 1) //HOLE - MID
+    setmetatile(7, 5, 598, 1) //HOLE - MID
+    setmetatile(8, 5, 598, 1) //HOLE - MID
+    setmetatile(9, 5, 598, 1) //HOLE - MID
+    setmetatile(10, 5, 647, 1) //HOLE - BOTTOM <
+    setmetatile(11, 5, 606, 1) //HOLE - BOTTOM 
+    setmetatile(12, 5, 607, 1) //HOLE - BOTTOM CORNER R
+    setmetatile(4, 6, 605, 1) //HOLE - BOTTOM CORNER L
+    setmetatile(5, 6, 606, 1) //HOLE - BOTTOM 
+    setmetatile(6, 6, 606, 1) //HOLE - BOTTOM 
+    setmetatile(7, 6, 952, 1) //ROPE - EMPTY BUILD
+    setmetatile(8, 6, 606, 1) //HOLE - BOTTOM 
+    setmetatile(9, 6, 606, 1) //HOLE - BOTTOM 
+    setmetatile(10, 6, 607, 1) //HOLE - BOTTOM CORNER R
+    setmetatile(7, 7, 961, 0) //ROPE - BOTTOM TIED
+
+    
+
+
+    random(2)
+    if (var(VAR_RESULT)== 0) {
+
+        setmetatile(3, 6, 601, 0) //BOOK - BIG
+        setmetatile(11, 8, 601, 0) //BOOK - BIG
+        setmetatile(5, 8, 602, 0) //BOOK - SMALL
+        setmetatile(10, 8, 602, 0) //BOOK - SMALL
+        setmetatile(2, 8, 930, 1) //LOOM
+    }
+    elif (var(VAR_RESULT) == 1) {
+        setmetatile(11, 6, 601, 0) //BOOK - BIG
+        setmetatile(5, 7, 601, 0) //BOOK - BIG
+        setmetatile(3, 6, 602, 0) //BOOK - SMALL
+        setmetatile(9, 8, 602, 0) //BOOK - SMALL
+        setmetatile(12, 8, 930, 1) //LOOM
+    }
+
     return
 }
 
@@ -502,3 +720,60 @@ script DungeonLayout_BossRoom_DECO {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+script DungeonInteractions_DG_ROPE {
+    checkitem(ITEM_DG_ROPE, 1)
+    if (var(VAR_RESULT)) {
+        setmetatile(7, 5, 945, 0) //ROPE - MID
+        setmetatile(7, 4, 937, 0) //ROPE - TOP HOLE
+        setmetatile(7, 6, 953, 0) //ROPE - BOTTOM EDGE
+        special(DrawWholeMapView) 
+        end
+    }
+    end
+}
+script DungeonInteractions_DG_STRING {
+    checkitem(ITEM_DG_ROPE, 1)
+    if (!var(VAR_RESULT)) {
+        checkitem(ITEM_DG_BALL_OF_WOOL, 1)
+        if (!var(VAR_RESULT)) {
+            finditem (ITEM_DG_BALL_OF_WOOL)
+            end
+        }
+    }
+    msgbox(format("You search the junk and find nothing."))
+    closemessage
+    end
+}
+script DungeonInteractions_DG_SPINNING_WHEEL {
+
+    checkitem(ITEM_DG_BALL_OF_WOOL, 1)
+    if (var(VAR_RESULT)) {
+        msgbox("You spin the string into some useful rope.")
+        closemessage
+        finditem(ITEM_DG_ROPE, 1)
+        removeitem(ITEM_DG_BALL_OF_WOOL, 1)
+        end
+    }
+    msgbox("You need some string to make a rope.")
+    closemessage
+    end
+}

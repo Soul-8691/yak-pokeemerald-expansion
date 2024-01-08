@@ -1309,6 +1309,28 @@ bool8 MetatileBehavior_IsBookShelf(u8 metatileBehavior)
         return FALSE;
 }
 
+bool8 MetatileBehavior_Is_DG_ROPE(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_DG_ROPE)
+        return TRUE;
+    else
+        return FALSE;
+}
+bool8 MetatileBehavior_Is_DG_STRING(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_DG_STRING)
+        return TRUE;
+    else
+        return FALSE;
+}
+bool8 MetatileBehavior_Is_DG_SPINNING_WHEEL(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_DG_SPINNING_WHEEL)
+        return TRUE;
+    else
+        return FALSE;
+}
+
 bool8 MetatileBehavior_IsPokeCenterBookShelf(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_POKEMON_CENTER_BOOKSHELF)

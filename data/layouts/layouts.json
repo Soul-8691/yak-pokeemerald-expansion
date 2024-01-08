@@ -7746,7 +7746,7 @@
       "name": "Dungeoneering_3_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_PokeScapeOutdoors",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_3/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_3/map.bin"
@@ -7756,7 +7756,7 @@
       "name": "Dungeoneering_4_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_4/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_4/map.bin"
@@ -7766,7 +7766,7 @@
       "name": "Dungeoneering_5_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_5/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_5/map.bin"
@@ -7776,7 +7776,7 @@
       "name": "Dungeoneering_6_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_6/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_6/map.bin"
@@ -7786,7 +7786,7 @@
       "name": "Dungeoneering_7_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_7/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_7/map.bin"
@@ -7796,7 +7796,7 @@
       "name": "Dungeoneering_8_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_8/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_8/map.bin"
@@ -7806,7 +7806,7 @@
       "name": "Dungeoneering_9_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_9/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_9/map.bin"
@@ -7816,7 +7816,7 @@
       "name": "Dungeoneering_10_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_10/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_10/map.bin"
@@ -7826,7 +7826,7 @@
       "name": "Dungeoneering_11_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_11/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_11/map.bin"
@@ -7836,7 +7836,7 @@
       "name": "Dungeoneering_12_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_12/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_12/map.bin"
@@ -7846,7 +7846,7 @@
       "name": "Dungeoneering_13_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_13/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_13/map.bin"
@@ -7856,7 +7856,7 @@
       "name": "Dungeoneering_14_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_14/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_14/map.bin"
@@ -7866,7 +7866,7 @@
       "name": "Dungeoneering_15_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_15/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_15/map.bin"
@@ -7876,7 +7876,7 @@
       "name": "Dungeoneering_16_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_16/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_16/map.bin"
@@ -7886,7 +7886,7 @@
       "name": "Dungeoneering_Lobby_Layout",
       "width": 15,
       "height": 10,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_PokeScapeIndoors",
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_Lobby/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_Lobby/map.bin"

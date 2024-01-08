@@ -32,7 +32,7 @@ script TRYWARPINGDOORS_ENTER {
 
 script mapwarp {
     copyvar(VAR_TEMP_1, VAR_0x8006) //REMEMBERS the LAST Floor
-    copyvar(VAR_DUNGEONEERING_LAST_DOOR_ENTERED, VAR_0x8005) //REMEMBERS last WARP number entered from.
+    //copyvar(VAR_DUNGEONEERING_LAST_DOOR_ENTERED, VAR_0x8005) //REMEMBERS last WARP number entered from.
     //copyvar(VAR_TEMP_3, VAR_0x8004) //This is the next WARP number to go to.
     goto(checkmapwarp)
 
@@ -40,29 +40,29 @@ script mapwarp {
 script checkmapwarp {
 
 //LAST FLOOR
-        if (var(VAR_DUNGEONEERING_LAST_DOOR_ENTERED) == VAR_0x8004) { //If the Last door == the door I want to goto
-            if (var(VAR_TEMP_1) == 1) {
-                if (var(VAR_0x8004) == 2) {
-                    setdynamicwarp(MAP_DUNGEONEERING_1, 2)
-                }
-                elif (var(VAR_0x8004) == 3) {
-                    setdynamicwarp(MAP_DUNGEONEERING_1, 3)
-                }
-            }
-            elif (var(VAR_TEMP_1) == 2) {
-                if (var(VAR_0x8004) == 2) {
-                    setdynamicwarp(MAP_DUNGEONEERING_2, 2)
-                }
-                elif (var(VAR_0x8004) == 3) {
-                    setdynamicwarp(MAP_DUNGEONEERING_2, 3)
-                }
-            }
-        }
+        //if (var(VAR_DUNGEONEERING_LAST_DOOR_ENTERED) == VAR_0x8004) { //If the Last door == the door I want to goto
+        //    if (var(VAR_TEMP_1) == 1) {
+        //        if (var(VAR_0x8004) == 2) {
+        //            setdynamicwarp(MAP_DUNGEONEERING_1, 2)
+        //        }
+        //        elif (var(VAR_0x8004) == 3) {
+        //            setdynamicwarp(MAP_DUNGEONEERING_1, 3)
+        //        }
+        //    }
+        //    elif (var(VAR_TEMP_1) == 2) {
+        //        if (var(VAR_0x8004) == 2) {
+         //           setdynamicwarp(MAP_DUNGEONEERING_2, 2)
+         //       }
+          ///      elif (var(VAR_0x8004) == 3) {
+          ///          setdynamicwarp(MAP_DUNGEONEERING_2, 3)
+          ///      }
+        //    }
+     //   }
             
 //NEXT FLOOR
-    else {
-        setdynamicwarp(MAP_DUNGEONEERING_2, 1)
-    }
+   // else {
+   ///     setdynamicwarp(MAP_DUNGEONEERING_2, 1)
+   // }
 }
 
 

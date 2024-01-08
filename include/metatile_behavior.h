@@ -151,6 +151,10 @@ bool8 MetatileBehavior_IsTrainerHillTimer(u8);
 bool8 MetatileBehavior_IsRockStairs(u8);
 bool8 MetatileBehavior_IsWheat(u8);
 bool8 MetatileBehavior_IsRestBed(u8);
+bool8 MetatileBehavior_Is_DG_ROPE(u8);
+bool8 MetatileBehavior_Is_DG_STRING(u8);
+bool8 MetatileBehavior_Is_DG_SPINNING_WHEEL(u8);
+
 //sideways stairs
 bool8 MetatileBehavior_IsSidewaysStairsRightSide(u8);
 bool8 MetatileBehavior_IsSidewaysStairsLeftSide(u8);

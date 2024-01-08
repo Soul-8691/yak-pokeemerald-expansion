@@ -564,6 +564,11 @@ extern const u8 MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall[];
 extern const u8 SSTidalCorridor_EventScript_ReachedStepCount[];
 extern const u8 EventScript_FallDownHoleMtPyre[];
 extern const u8 EventScript_RestBed[];
+extern const u8 EventScript_DG_ROPE[];
+extern const u8 EventScript_DG_STRING[];
+extern const u8 EventScript_DG_SPINNING_WHEEL[];
+
+
 
 // Secret Base
 extern const u8 SecretBase_EventScript_PC[];

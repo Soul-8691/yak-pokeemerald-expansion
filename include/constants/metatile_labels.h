@@ -411,12 +411,10 @@
 #define METATILE_PokeScapeOutdoors_Door_GeneralStore_R  0x136
 #define METATILE_PokeScapeOutdoors_Door_General_L       0x1CB
 #define METATILE_PokeScapeOutdoors_Door_General_R       0x1D3
+#define METATILE_PokeScapeOutdoors_Door_Goblin_L        0x229
+#define METATILE_PokeScapeOutdoors_Door_Goblin_R        0x228
 #define METATILE_PokeScapeOutdoors_Door_Pub_L           0x1EA
 #define METATILE_PokeScapeOutdoors_Door_Pub_R           0x1D2
-
-// gTileset_GoblinVillage
-#define METATILE_PokeScapeOutdoors_Door_Goblin_L          0x229
-#define METATILE_PokeScapeOutdoors_Door_Goblin_R          0x228
 
 // gTileset_PokemonCenter
 #define METATILE_PokemonCenter_CounterBarrier            0x25D

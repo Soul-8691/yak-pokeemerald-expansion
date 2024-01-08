@@ -692,6 +692,10 @@ const u32 *const gItemIconTable[][2] =
     [ITEM_XERIC] = {gItemIcon_Xeric, gItemIconPalette_Xeric},
     [ITEM_SLAYER_GEM] = {gItemIcon_SLAYER_GEM, gItemIconPalette_SLAYER_GEM},
 
+    [ITEM_DG_BALL_OF_WOOL] = {gItemIcon_woolBall, gItemIconPalette_woolBall},
+    [ITEM_DG_ROPE] = {gItemIcon_EscapeRope, gItemIconPalette_EscapeRope},
+    
+
     
 
 

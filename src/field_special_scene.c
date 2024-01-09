@@ -297,7 +297,7 @@ bool8 TrySetPortholeWarpDestination(void)
 void Task_HandlePorthole(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
-    u16 *cruiseState = GetVarPointer(VAR_SS_TIDAL_STATE);
+    u16 *cruiseState = GetVarPointer(VAR_TEMP_0);
     struct WarpData *location = &gSaveBlock1Ptr->location;
 
     switch (data[0])
@@ -359,7 +359,7 @@ static void ShowSSTidalWhileSailing(void)
 
     gSprites[spriteId].coordOffsetEnabled = FALSE;
 
-    if (VarGet(VAR_SS_TIDAL_STATE) == SS_TIDAL_DEPART_SLATEPORT)
+    if (VarGet(VAR_TEMP_0) == SS_TIDAL_DEPART_SLATEPORT)
         StartSpriteAnim(&gSprites[spriteId], GetFaceDirectionAnimNum(DIR_EAST));
     else
         StartSpriteAnim(&gSprites[spriteId], GetFaceDirectionAnimNum(DIR_WEST));

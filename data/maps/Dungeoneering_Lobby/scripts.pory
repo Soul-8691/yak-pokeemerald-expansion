@@ -17,10 +17,29 @@ mapscripts Dungeoneering_Lobby_MapScripts {
 script DUNGEONEERING_CHECK_VAR {
     buffernumberstring(STR_VAR_1, VAR_DUNGEONEERING_STARTER_ROOM) 
     msgbox(format("The Starting room is Room: {STR_VAR_1}."))
+    buffernumberstring(STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_1) 
+    msgbox(format("The Puzzle Room 1 is: {STR_VAR_1}."))
+    buffernumberstring(STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_2) 
+    msgbox(format("The Puzzle Room 2 is: {STR_VAR_1}."))
+    buffernumberstring(STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_3) 
+    msgbox(format("The Puzzle Room 3 is: {STR_VAR_1}."))
+    buffernumberstring(STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_4) 
+    msgbox(format("The Puzzle Room 4 is: {STR_VAR_1}."))
+    buffernumberstring(STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_5) 
+    msgbox(format("The Puzzle Room 5 is: {STR_VAR_1}."))
+    buffernumberstring(STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_6) 
+    msgbox(format("The Puzzle Room 6 is: {STR_VAR_1}."))
+    buffernumberstring(STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_7) 
+    msgbox(format("The Puzzle Room 7 is: {STR_VAR_1}."))
+    buffernumberstring(STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_8) 
+    msgbox(format("The Puzzle Room 8 is: {STR_VAR_1}."))
     closemessage
     release
     end
 }
+
+
+
 
 script Randomise_Puzzles {
     setvar(VAR_DUNGEONEERING_AMOUNT_OF_PUZZLES, 6) //amount of puzzles
@@ -241,7 +260,7 @@ script DungeonLayout_ROOM_PATH_5 {
 
     specialvar (VAR_RESULT, GetCurrentMap)
     call_if_eq (VAR_RESULT, MAP_DUNGEONEERING_3, DungeonLayout_PuzzleRoom_3)
-    //FLAG_DG_PUZZLE_ROOM_1
+    //FLAG_DG_PUZZLE_ROOM_1 - Check if complete.
     specialvar (VAR_RESULT, GetCurrentMap)
     call_if_eq (VAR_RESULT, MAP_DUNGEONEERING_5, DungeonLayout_PuzzleRoom_5)
     //FLAG_DG_PUZZLE_ROOM_2

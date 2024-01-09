@@ -11,6 +11,22 @@ Dungeoneering_Lobby_MapScripts_MAP_SCRIPT_ON_LOAD:
 DUNGEONEERING_CHECK_VAR::
 	buffernumberstring STR_VAR_1, VAR_DUNGEONEERING_STARTER_ROOM
 	msgbox DUNGEONEERING_CHECK_VAR_Text_0
+	buffernumberstring STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_1
+	msgbox DUNGEONEERING_CHECK_VAR_Text_1
+	buffernumberstring STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_2
+	msgbox DUNGEONEERING_CHECK_VAR_Text_2
+	buffernumberstring STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_3
+	msgbox DUNGEONEERING_CHECK_VAR_Text_3
+	buffernumberstring STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_4
+	msgbox DUNGEONEERING_CHECK_VAR_Text_4
+	buffernumberstring STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_5
+	msgbox DUNGEONEERING_CHECK_VAR_Text_5
+	buffernumberstring STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_6
+	msgbox DUNGEONEERING_CHECK_VAR_Text_6
+	buffernumberstring STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_7
+	msgbox DUNGEONEERING_CHECK_VAR_Text_7
+	buffernumberstring STR_VAR_1, VAR_DUNGEONEERING_RANDOM_PUZZLE_8
+	msgbox DUNGEONEERING_CHECK_VAR_Text_8
 	closemessage
 	release
 	end
@@ -252,3 +268,27 @@ DungeonLayout_ROOM_PATH_5::
 DUNGEONEERING_CHECK_VAR_Text_0:
 	.string "The Starting room is Room:\n"
 	.string "{STR_VAR_1}.$"
+
+DUNGEONEERING_CHECK_VAR_Text_1:
+	.string "The Puzzle Room 1 is: {STR_VAR_1}.$"
+
+DUNGEONEERING_CHECK_VAR_Text_2:
+	.string "The Puzzle Room 2 is: {STR_VAR_1}.$"
+
+DUNGEONEERING_CHECK_VAR_Text_3:
+	.string "The Puzzle Room 3 is: {STR_VAR_1}.$"
+
+DUNGEONEERING_CHECK_VAR_Text_4:
+	.string "The Puzzle Room 4 is: {STR_VAR_1}.$"
+
+DUNGEONEERING_CHECK_VAR_Text_5:
+	.string "The Puzzle Room 5 is: {STR_VAR_1}.$"
+
+DUNGEONEERING_CHECK_VAR_Text_6:
+	.string "The Puzzle Room 6 is: {STR_VAR_1}.$"
+
+DUNGEONEERING_CHECK_VAR_Text_7:
+	.string "The Puzzle Room 7 is: {STR_VAR_1}.$"
+
+DUNGEONEERING_CHECK_VAR_Text_8:
+	.string "The Puzzle Room 8 is: {STR_VAR_1}.$"

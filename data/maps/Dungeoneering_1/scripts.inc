@@ -13,7 +13,22 @@ RandomiseSeed_ForDoors::
 	return
 
 
+Dungeon_HideFlags::
+	setflag FLAG_TEMP_1
+	setflag FLAG_TEMP_2
+	setflag FLAG_TEMP_3
+	setflag FLAG_TEMP_4
+	setflag FLAG_TEMP_5
+	setflag FLAG_TEMP_6
+	setflag FLAG_TEMP_7
+	setflag FLAG_TEMP_8
+	setflag FLAG_TEMP_9
+	setflag FLAG_TEMP_10
+	return
+
+
 Randomise_Dungeon::
+	call Dungeon_HideFlags
 	call_if_eq VAR_STORE_SEED_RESULT, 0, DungeonLayout_ROOM_PATH_1
 	call_if_eq VAR_STORE_SEED_RESULT, 1, DungeonLayout_ROOM_PATH_2
 	call_if_eq VAR_STORE_SEED_RESULT, 2, DungeonLayout_ROOM_PATH_3
@@ -438,12 +453,36 @@ DungeonLayout_PuzzleRoom_VineRoom::
 	setmetatile 2, 7, METATILE_Dungeoneering_VINE_END_L, 1
 	setmetatile 3, 7, METATILE_Dungeoneering_VINE_TOP_R, 1
 	setmetatile 3, 8, METATILE_Dungeoneering_VINE_END_DOWN, 1
+	setmetatile 7, 4, METATILE_Dungeoneering_VINE_END_L, 1
+	setmetatile 8, 4, METATILE_Dungeoneering_VINE_MID_1, 1
+	setmetatile 9, 4, METATILE_Dungeoneering_VINE_TOP_R, 1
+	setmetatile 9, 5, METATILE_Dungeoneering_VINE_MID_R, 1
+	setmetatile 9, 6, METATILE_Dungeoneering_VINE_MID_L, 1
+	setmetatile 9, 7, METATILE_Dungeoneering_VINE_BOTTOM_L, 1
+	setmetatile 10, 7, METATILE_Dungeoneering_VINE_CROSS_DOWN, 1
+	setmetatile 10, 8, METATILE_Dungeoneering_VINE_END_DOWN, 1
+	setmetatile 11, 7, METATILE_Dungeoneering_VINE_MID_1, 1
+	setmetatile 12, 7, METATILE_Dungeoneering_VINE_END_R, 1
+	setmetatile 11, 5, METATILE_Dungeoneering_VINE_END_DOWN, 1
+	setmetatile 11, 4, METATILE_Dungeoneering_VINE_CROSS_R, 1
+	setmetatile 11, 3, METATILE_Dungeoneering_VINE_END_UP, 1
+	setmetatile 12, 4, METATILE_Dungeoneering_VINE_MID_1, 1
 	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_CUTTABLE_TREE
 	setobjectxyperm 1, 6, 4
 	setobjectmovementtype 1, MOVEMENT_TYPE_NONE
+	clearflag FLAG_TEMP_1
 	setvar VAR_OBJ_GFX_ID_2, OBJ_EVENT_GFX_CUTTABLE_TREE
 	setobjectxyperm 2, 4, 7
 	setobjectmovementtype 2, MOVEMENT_TYPE_NONE
+	clearflag FLAG_TEMP_2
+	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_CUTTABLE_TREE
+	setobjectxyperm 3, 8, 7
+	setobjectmovementtype 3, MOVEMENT_TYPE_NONE
+	clearflag FLAG_TEMP_3
+	setvar VAR_OBJ_GFX_ID_4, OBJ_EVENT_GFX_CUTTABLE_TREE
+	setobjectxyperm 4, 10, 5
+	setobjectmovementtype 4, MOVEMENT_TYPE_NONE
+	clearflag FLAG_TEMP_4
 	return
 
 
@@ -1225,6 +1264,25 @@ DungeonInteractions_DG_SPINNING_WHEEL_4:
 	finditem ITEM_DG_ROPE, 1
 	removeitem ITEM_DG_BALL_OF_WOOL, 1
 	end
+
+
+DungeonInteractions::
+	compare VAR_OBJ_GFX_ID_1, 0
+	goto_if_ne DungeonInteractions_2
+	compare VAR_OBJ_GFX_ID_2, 0
+	goto_if_ne DungeonInteractions_2
+	compare VAR_OBJ_GFX_ID_3, 0
+	goto_if_ne DungeonInteractions_2
+	compare VAR_OBJ_GFX_ID_4, 0
+	goto_if_ne DungeonInteractions_2
+	compare VAR_OBJ_GFX_ID_5, OBJ_EVENT_GFX_CUTTABLE_TREE
+	goto_if_eq DungeonInteractions_2
+DungeonInteractions_1:
+	end
+
+DungeonInteractions_2:
+	call EventScript_CutTree
+	goto DungeonInteractions_1
 
 
 DungeonInteractions_DG_STRING_Text_0:

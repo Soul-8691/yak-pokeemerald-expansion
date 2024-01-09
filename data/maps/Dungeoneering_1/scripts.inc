@@ -111,9 +111,157 @@ DungeonLayout_BossRoom::
 	return
 
 
-DungeonLayout_PuzzleRoom_5::
+DungeonLayout_PuzzleRoom_1::
 	setflag FLAG_TEMP_12
 	switch VAR_DUNGEONEERING_RANDOM_PUZZLE_1
+	case 0, DungeonLayout_PuzzleRoom_1_3
+	case 1, DungeonLayout_PuzzleRoom_1_4
+	case 2, DungeonLayout_PuzzleRoom_1_5
+	case 3, DungeonLayout_PuzzleRoom_1_6
+	case 4, DungeonLayout_PuzzleRoom_1_7
+	case 5, DungeonLayout_PuzzleRoom_1_8
+DungeonLayout_PuzzleRoom_1_1:
+	return
+
+DungeonLayout_PuzzleRoom_1_3:
+	call DungeonLayout_PuzzleRoom_RopeBridge
+	goto DungeonLayout_PuzzleRoom_1_1
+
+DungeonLayout_PuzzleRoom_1_4:
+	call DungeonLayout_PuzzleRoom_VineRoom
+	goto DungeonLayout_PuzzleRoom_1_1
+
+DungeonLayout_PuzzleRoom_1_5:
+	call DungeonLayout_PuzzleRoom_Rock
+	goto DungeonLayout_PuzzleRoom_1_1
+
+DungeonLayout_PuzzleRoom_1_6:
+	call DungeonLayout_PuzzleRoom_Item
+	goto DungeonLayout_PuzzleRoom_1_1
+
+DungeonLayout_PuzzleRoom_1_7:
+	call DungeonLayout_PuzzleRoom_Trainer
+	goto DungeonLayout_PuzzleRoom_1_1
+
+DungeonLayout_PuzzleRoom_1_8:
+	call DungeonLayout_PuzzleRoom_Battle
+	goto DungeonLayout_PuzzleRoom_1_1
+
+
+DungeonLayout_PuzzleRoom_2::
+	setflag FLAG_TEMP_12
+	switch VAR_DUNGEONEERING_RANDOM_PUZZLE_2
+	case 0, DungeonLayout_PuzzleRoom_2_3
+	case 1, DungeonLayout_PuzzleRoom_2_4
+	case 2, DungeonLayout_PuzzleRoom_2_5
+	case 3, DungeonLayout_PuzzleRoom_2_6
+	case 4, DungeonLayout_PuzzleRoom_2_7
+	case 5, DungeonLayout_PuzzleRoom_2_8
+DungeonLayout_PuzzleRoom_2_1:
+	return
+
+DungeonLayout_PuzzleRoom_2_3:
+	call DungeonLayout_PuzzleRoom_RopeBridge
+	goto DungeonLayout_PuzzleRoom_2_1
+
+DungeonLayout_PuzzleRoom_2_4:
+	call DungeonLayout_PuzzleRoom_VineRoom
+	goto DungeonLayout_PuzzleRoom_2_1
+
+DungeonLayout_PuzzleRoom_2_5:
+	call DungeonLayout_PuzzleRoom_Rock
+	goto DungeonLayout_PuzzleRoom_2_1
+
+DungeonLayout_PuzzleRoom_2_6:
+	call DungeonLayout_PuzzleRoom_Item
+	goto DungeonLayout_PuzzleRoom_2_1
+
+DungeonLayout_PuzzleRoom_2_7:
+	call DungeonLayout_PuzzleRoom_Trainer
+	goto DungeonLayout_PuzzleRoom_2_1
+
+DungeonLayout_PuzzleRoom_2_8:
+	call DungeonLayout_PuzzleRoom_Battle
+	goto DungeonLayout_PuzzleRoom_2_1
+
+
+DungeonLayout_PuzzleRoom_3::
+	setflag FLAG_TEMP_12
+	switch VAR_DUNGEONEERING_RANDOM_PUZZLE_3
+	case 0, DungeonLayout_PuzzleRoom_3_3
+	case 1, DungeonLayout_PuzzleRoom_3_4
+	case 2, DungeonLayout_PuzzleRoom_3_5
+	case 3, DungeonLayout_PuzzleRoom_3_6
+	case 4, DungeonLayout_PuzzleRoom_3_7
+	case 5, DungeonLayout_PuzzleRoom_3_8
+DungeonLayout_PuzzleRoom_3_1:
+	return
+
+DungeonLayout_PuzzleRoom_3_3:
+	call DungeonLayout_PuzzleRoom_RopeBridge
+	goto DungeonLayout_PuzzleRoom_3_1
+
+DungeonLayout_PuzzleRoom_3_4:
+	call DungeonLayout_PuzzleRoom_VineRoom
+	goto DungeonLayout_PuzzleRoom_3_1
+
+DungeonLayout_PuzzleRoom_3_5:
+	call DungeonLayout_PuzzleRoom_Rock
+	goto DungeonLayout_PuzzleRoom_3_1
+
+DungeonLayout_PuzzleRoom_3_6:
+	call DungeonLayout_PuzzleRoom_Item
+	goto DungeonLayout_PuzzleRoom_3_1
+
+DungeonLayout_PuzzleRoom_3_7:
+	call DungeonLayout_PuzzleRoom_Trainer
+	goto DungeonLayout_PuzzleRoom_3_1
+
+DungeonLayout_PuzzleRoom_3_8:
+	call DungeonLayout_PuzzleRoom_Battle
+	goto DungeonLayout_PuzzleRoom_3_1
+
+
+DungeonLayout_PuzzleRoom_4::
+	setflag FLAG_TEMP_12
+	switch VAR_DUNGEONEERING_RANDOM_PUZZLE_4
+	case 0, DungeonLayout_PuzzleRoom_4_3
+	case 1, DungeonLayout_PuzzleRoom_4_4
+	case 2, DungeonLayout_PuzzleRoom_4_5
+	case 3, DungeonLayout_PuzzleRoom_4_6
+	case 4, DungeonLayout_PuzzleRoom_4_7
+	case 5, DungeonLayout_PuzzleRoom_4_8
+DungeonLayout_PuzzleRoom_4_1:
+	return
+
+DungeonLayout_PuzzleRoom_4_3:
+	call DungeonLayout_PuzzleRoom_RopeBridge
+	goto DungeonLayout_PuzzleRoom_4_1
+
+DungeonLayout_PuzzleRoom_4_4:
+	call DungeonLayout_PuzzleRoom_VineRoom
+	goto DungeonLayout_PuzzleRoom_4_1
+
+DungeonLayout_PuzzleRoom_4_5:
+	call DungeonLayout_PuzzleRoom_Rock
+	goto DungeonLayout_PuzzleRoom_4_1
+
+DungeonLayout_PuzzleRoom_4_6:
+	call DungeonLayout_PuzzleRoom_Item
+	goto DungeonLayout_PuzzleRoom_4_1
+
+DungeonLayout_PuzzleRoom_4_7:
+	call DungeonLayout_PuzzleRoom_Trainer
+	goto DungeonLayout_PuzzleRoom_4_1
+
+DungeonLayout_PuzzleRoom_4_8:
+	call DungeonLayout_PuzzleRoom_Battle
+	goto DungeonLayout_PuzzleRoom_4_1
+
+
+DungeonLayout_PuzzleRoom_5::
+	setflag FLAG_TEMP_12
+	switch VAR_DUNGEONEERING_RANDOM_PUZZLE_5
 	case 0, DungeonLayout_PuzzleRoom_5_3
 	case 1, DungeonLayout_PuzzleRoom_5_4
 	case 2, DungeonLayout_PuzzleRoom_5_5
@@ -150,7 +298,7 @@ DungeonLayout_PuzzleRoom_5_8:
 
 DungeonLayout_PuzzleRoom_6::
 	setflag FLAG_TEMP_12
-	switch VAR_DUNGEONEERING_RANDOM_PUZZLE_2
+	switch VAR_DUNGEONEERING_RANDOM_PUZZLE_6
 	case 0, DungeonLayout_PuzzleRoom_6_3
 	case 1, DungeonLayout_PuzzleRoom_6_4
 	case 2, DungeonLayout_PuzzleRoom_6_5
@@ -187,7 +335,7 @@ DungeonLayout_PuzzleRoom_6_8:
 
 DungeonLayout_PuzzleRoom_7::
 	setflag FLAG_TEMP_12
-	switch VAR_DUNGEONEERING_RANDOM_PUZZLE_3
+	switch VAR_DUNGEONEERING_RANDOM_PUZZLE_7
 	case 0, DungeonLayout_PuzzleRoom_7_3
 	case 1, DungeonLayout_PuzzleRoom_7_4
 	case 2, DungeonLayout_PuzzleRoom_7_5
@@ -224,7 +372,7 @@ DungeonLayout_PuzzleRoom_7_8:
 
 DungeonLayout_PuzzleRoom_8::
 	setflag FLAG_TEMP_12
-	switch VAR_DUNGEONEERING_RANDOM_PUZZLE_4
+	switch VAR_DUNGEONEERING_RANDOM_PUZZLE_8
 	case 0, DungeonLayout_PuzzleRoom_8_3
 	case 1, DungeonLayout_PuzzleRoom_8_4
 	case 2, DungeonLayout_PuzzleRoom_8_5
@@ -276,7 +424,26 @@ DungeonLayout_PuzzleRoom_VineRoom::
 	setmetatile 10, 2, 526, 1
 	setmetatile 11, 2, 526, 1
 	setmetatile 12, 2, 526, 1
-	setflag FLAG_TEMP_1F
+	setmetatile 3, 3, METATILE_Dungeoneering_VINE_END_UP, 1
+	setmetatile 2, 4, METATILE_Dungeoneering_VINE_MID_1, 1
+	setmetatile 3, 4, METATILE_Dungeoneering_VINE_CROSS_L, 1
+	setmetatile 3, 5, METATILE_Dungeoneering_VINE_BOTTOM_L, 1
+	setmetatile 4, 5, METATILE_Dungeoneering_VINE_MID_2, 1
+	setmetatile 5, 5, METATILE_Dungeoneering_VINE_CROSS_L, 1
+	setmetatile 5, 4, METATILE_Dungeoneering_VINE_END_UP, 1
+	setmetatile 5, 6, METATILE_Dungeoneering_VINE_MID_L, 1
+	setmetatile 5, 7, METATILE_Dungeoneering_VINE_BOTTOM_L, 1
+	setmetatile 6, 7, METATILE_Dungeoneering_VINE_MID_2, 1
+	setmetatile 7, 7, METATILE_Dungeoneering_VINE_END_R, 1
+	setmetatile 2, 7, METATILE_Dungeoneering_VINE_END_L, 1
+	setmetatile 3, 7, METATILE_Dungeoneering_VINE_TOP_R, 1
+	setmetatile 3, 8, METATILE_Dungeoneering_VINE_END_DOWN, 1
+	setvar VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_CUTTABLE_TREE
+	setobjectxyperm 1, 6, 4
+	setobjectmovementtype 1, MOVEMENT_TYPE_NONE
+	setvar VAR_OBJ_GFX_ID_2, OBJ_EVENT_GFX_CUTTABLE_TREE
+	setobjectxyperm 2, 4, 7
+	setobjectmovementtype 2, MOVEMENT_TYPE_NONE
 	return
 
 
@@ -364,6 +531,31 @@ DungeonLayout_PuzzleRoom_RopeBridge::
 	compare VAR_RESULT, 1
 	goto_if_eq DungeonLayout_PuzzleRoom_RopeBridge_3
 DungeonLayout_PuzzleRoom_RopeBridge_1:
+	specialvar VAR_RESULT, GetCurrentMap
+	compare VAR_RESULT, MAP_DUNGEONEERING_1
+	goto_if_eq DungeonLayout_PuzzleRoom_RopeBridge_36
+DungeonLayout_PuzzleRoom_RopeBridge_34:
+	compare VAR_RESULT, MAP_DUNGEONEERING_2
+	goto_if_eq DungeonLayout_PuzzleRoom_RopeBridge_33
+DungeonLayout_PuzzleRoom_RopeBridge_31:
+	compare VAR_RESULT, MAP_DUNGEONEERING_3
+	goto_if_eq DungeonLayout_PuzzleRoom_RopeBridge_30
+DungeonLayout_PuzzleRoom_RopeBridge_28:
+	compare VAR_RESULT, MAP_DUNGEONEERING_4
+	goto_if_eq DungeonLayout_PuzzleRoom_RopeBridge_27
+DungeonLayout_PuzzleRoom_RopeBridge_25:
+	compare VAR_RESULT, MAP_DUNGEONEERING_5
+	goto_if_eq DungeonLayout_PuzzleRoom_RopeBridge_24
+DungeonLayout_PuzzleRoom_RopeBridge_22:
+	compare VAR_RESULT, MAP_DUNGEONEERING_6
+	goto_if_eq DungeonLayout_PuzzleRoom_RopeBridge_21
+DungeonLayout_PuzzleRoom_RopeBridge_19:
+	compare VAR_RESULT, MAP_DUNGEONEERING_7
+	goto_if_eq DungeonLayout_PuzzleRoom_RopeBridge_18
+DungeonLayout_PuzzleRoom_RopeBridge_16:
+	compare VAR_RESULT, MAP_DUNGEONEERING_8
+	goto_if_eq DungeonLayout_PuzzleRoom_RopeBridge_15
+DungeonLayout_PuzzleRoom_RopeBridge_6:
 	return
 
 DungeonLayout_PuzzleRoom_RopeBridge_2:
@@ -381,6 +573,85 @@ DungeonLayout_PuzzleRoom_RopeBridge_3:
 	setmetatile 9, 8, 602, 0
 	setmetatile 12, 8, 930, 1
 	goto DungeonLayout_PuzzleRoom_RopeBridge_1
+
+DungeonLayout_PuzzleRoom_RopeBridge_7:
+	setflag FLAG_TEMP_1E
+	call DungeonCompleted_PuzzleRoom_Rope
+	goto DungeonLayout_PuzzleRoom_RopeBridge_6
+
+DungeonLayout_PuzzleRoom_RopeBridge_8:
+	setflag FLAG_TEMP_1E
+	call DungeonCompleted_PuzzleRoom_Rope
+	goto DungeonLayout_PuzzleRoom_RopeBridge_6
+
+DungeonLayout_PuzzleRoom_RopeBridge_9:
+	setflag FLAG_TEMP_1E
+	call DungeonCompleted_PuzzleRoom_Rope
+	goto DungeonLayout_PuzzleRoom_RopeBridge_6
+
+DungeonLayout_PuzzleRoom_RopeBridge_10:
+	setflag FLAG_TEMP_1E
+	call DungeonCompleted_PuzzleRoom_Rope
+	goto DungeonLayout_PuzzleRoom_RopeBridge_6
+
+DungeonLayout_PuzzleRoom_RopeBridge_11:
+	setflag FLAG_TEMP_1E
+	call DungeonCompleted_PuzzleRoom_Rope
+	goto DungeonLayout_PuzzleRoom_RopeBridge_6
+
+DungeonLayout_PuzzleRoom_RopeBridge_12:
+	setflag FLAG_TEMP_1E
+	call DungeonCompleted_PuzzleRoom_Rope
+	goto DungeonLayout_PuzzleRoom_RopeBridge_6
+
+DungeonLayout_PuzzleRoom_RopeBridge_13:
+	setflag FLAG_TEMP_1E
+	call DungeonCompleted_PuzzleRoom_Rope
+	goto DungeonLayout_PuzzleRoom_RopeBridge_6
+
+DungeonLayout_PuzzleRoom_RopeBridge_14:
+	setflag FLAG_TEMP_1E
+	call DungeonCompleted_PuzzleRoom_Rope
+	goto DungeonLayout_PuzzleRoom_RopeBridge_6
+
+DungeonLayout_PuzzleRoom_RopeBridge_15:
+	goto_if_set FLAG_DG_PUZZLE_ROOM_8, DungeonLayout_PuzzleRoom_RopeBridge_14
+	goto DungeonLayout_PuzzleRoom_RopeBridge_6
+
+DungeonLayout_PuzzleRoom_RopeBridge_18:
+	goto_if_set FLAG_DG_PUZZLE_ROOM_7, DungeonLayout_PuzzleRoom_RopeBridge_13
+	goto DungeonLayout_PuzzleRoom_RopeBridge_16
+
+DungeonLayout_PuzzleRoom_RopeBridge_21:
+	goto_if_set FLAG_DG_PUZZLE_ROOM_6, DungeonLayout_PuzzleRoom_RopeBridge_12
+	goto DungeonLayout_PuzzleRoom_RopeBridge_19
+
+DungeonLayout_PuzzleRoom_RopeBridge_24:
+	goto_if_set FLAG_DG_PUZZLE_ROOM_5, DungeonLayout_PuzzleRoom_RopeBridge_11
+	goto DungeonLayout_PuzzleRoom_RopeBridge_22
+
+DungeonLayout_PuzzleRoom_RopeBridge_27:
+	goto_if_set FLAG_DG_PUZZLE_ROOM_4, DungeonLayout_PuzzleRoom_RopeBridge_10
+	goto DungeonLayout_PuzzleRoom_RopeBridge_25
+
+DungeonLayout_PuzzleRoom_RopeBridge_30:
+	goto_if_set FLAG_DG_PUZZLE_ROOM_3, DungeonLayout_PuzzleRoom_RopeBridge_9
+	goto DungeonLayout_PuzzleRoom_RopeBridge_28
+
+DungeonLayout_PuzzleRoom_RopeBridge_33:
+	goto_if_set FLAG_DG_PUZZLE_ROOM_2, DungeonLayout_PuzzleRoom_RopeBridge_8
+	goto DungeonLayout_PuzzleRoom_RopeBridge_31
+
+DungeonLayout_PuzzleRoom_RopeBridge_36:
+	goto_if_set FLAG_DG_PUZZLE_ROOM_1, DungeonLayout_PuzzleRoom_RopeBridge_7
+	goto DungeonLayout_PuzzleRoom_RopeBridge_34
+
+
+DungeonCompleted_PuzzleRoom_Rope::
+	setmetatile 7, 5, 945, 0
+	setmetatile 7, 4, 937, 0
+	setmetatile 7, 6, 953, 0
+	return
 
 
 DungeonLayout_BLOCKED_RIGHT_ROOM_1::
@@ -837,49 +1108,118 @@ DungeonLayout_BossRoom_DECO_17:
 	goto DungeonLayout_BossRoom_DECO_1
 
 
+DungeonCompleted_PuzzleRoom::
+	specialvar VAR_RESULT, GetCurrentMap
+	compare VAR_RESULT, MAP_DUNGEONEERING_1
+	goto_if_eq DungeonCompleted_PuzzleRoom_1
+	compare VAR_RESULT, MAP_DUNGEONEERING_2
+	goto_if_eq DungeonCompleted_PuzzleRoom_2
+	compare VAR_RESULT, MAP_DUNGEONEERING_3
+	goto_if_eq DungeonCompleted_PuzzleRoom_3
+	compare VAR_RESULT, MAP_DUNGEONEERING_4
+	goto_if_eq DungeonCompleted_PuzzleRoom_4
+	compare VAR_RESULT, MAP_DUNGEONEERING_5
+	goto_if_eq DungeonCompleted_PuzzleRoom_5
+	compare VAR_RESULT, MAP_DUNGEONEERING_6
+	goto_if_eq DungeonCompleted_PuzzleRoom_6
+	compare VAR_RESULT, MAP_DUNGEONEERING_7
+	goto_if_eq DungeonCompleted_PuzzleRoom_7
+	compare VAR_RESULT, MAP_DUNGEONEERING_8
+	goto_if_eq DungeonCompleted_PuzzleRoom_8
+	return
+
+DungeonCompleted_PuzzleRoom_1:
+	setflag FLAG_DG_PUZZLE_ROOM_1
+	return
+
+DungeonCompleted_PuzzleRoom_2:
+	setflag FLAG_DG_PUZZLE_ROOM_2
+	return
+
+DungeonCompleted_PuzzleRoom_3:
+	setflag FLAG_DG_PUZZLE_ROOM_3
+	return
+
+DungeonCompleted_PuzzleRoom_4:
+	setflag FLAG_DG_PUZZLE_ROOM_4
+	return
+
+DungeonCompleted_PuzzleRoom_5:
+	setflag FLAG_DG_PUZZLE_ROOM_5
+	return
+
+DungeonCompleted_PuzzleRoom_6:
+	setflag FLAG_DG_PUZZLE_ROOM_6
+	return
+
+DungeonCompleted_PuzzleRoom_7:
+	setflag FLAG_DG_PUZZLE_ROOM_7
+	return
+
+DungeonCompleted_PuzzleRoom_8:
+	setflag FLAG_DG_PUZZLE_ROOM_8
+	return
+
+
 DungeonInteractions_DG_ROPE::
-	checkitem ITEM_DG_ROPE, 1
-	compare VAR_RESULT, 0
-	goto_if_ne DungeonInteractions_DG_ROPE_2
+	goto_if_unset FLAG_TEMP_1E, DungeonInteractions_DG_ROPE_2
+DungeonInteractions_DG_ROPE_1:
 	end
 
 DungeonInteractions_DG_ROPE_2:
+	checkitem ITEM_DG_ROPE, 1
+	compare VAR_RESULT, 0
+	goto_if_ne DungeonInteractions_DG_ROPE_4
+	goto DungeonInteractions_DG_ROPE_1
+
+DungeonInteractions_DG_ROPE_4:
 	setmetatile 7, 5, 945, 0
 	setmetatile 7, 4, 937, 0
 	setmetatile 7, 6, 953, 0
 	special DrawWholeMapView
+	removeitem ITEM_DG_ROPE, 1
+	call DungeonCompleted_PuzzleRoom
 	end
 
 
 DungeonInteractions_DG_STRING::
-	checkitem ITEM_DG_ROPE, 1
-	compare VAR_RESULT, 0
-	goto_if_eq DungeonInteractions_DG_STRING_2
+	goto_if_unset FLAG_TEMP_1E, DungeonInteractions_DG_STRING_2
 DungeonInteractions_DG_STRING_1:
 	msgbox DungeonInteractions_DG_STRING_Text_0
 	closemessage
 	end
 
 DungeonInteractions_DG_STRING_2:
-	checkitem ITEM_DG_BALL_OF_WOOL, 1
+	checkitem ITEM_DG_ROPE, 1
 	compare VAR_RESULT, 0
 	goto_if_eq DungeonInteractions_DG_STRING_4
 	goto DungeonInteractions_DG_STRING_1
 
 DungeonInteractions_DG_STRING_4:
+	checkitem ITEM_DG_BALL_OF_WOOL, 1
+	compare VAR_RESULT, 0
+	goto_if_eq DungeonInteractions_DG_STRING_6
+	goto DungeonInteractions_DG_STRING_1
+
+DungeonInteractions_DG_STRING_6:
 	finditem ITEM_DG_BALL_OF_WOOL
 	end
 
 
 DungeonInteractions_DG_SPINNING_WHEEL::
-	checkitem ITEM_DG_BALL_OF_WOOL, 1
-	compare VAR_RESULT, 0
-	goto_if_ne DungeonInteractions_DG_SPINNING_WHEEL_2
+	goto_if_unset FLAG_TEMP_1E, DungeonInteractions_DG_SPINNING_WHEEL_2
+DungeonInteractions_DG_SPINNING_WHEEL_1:
 	msgbox DungeonInteractions_DG_SPINNING_WHEEL_Text_1
 	closemessage
 	end
 
 DungeonInteractions_DG_SPINNING_WHEEL_2:
+	checkitem ITEM_DG_BALL_OF_WOOL, 1
+	compare VAR_RESULT, 0
+	goto_if_ne DungeonInteractions_DG_SPINNING_WHEEL_4
+	goto DungeonInteractions_DG_SPINNING_WHEEL_1
+
+DungeonInteractions_DG_SPINNING_WHEEL_4:
 	msgbox DungeonInteractions_DG_SPINNING_WHEEL_Text_0
 	closemessage
 	finditem ITEM_DG_ROPE, 1

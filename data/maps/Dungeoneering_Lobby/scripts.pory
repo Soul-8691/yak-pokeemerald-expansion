@@ -1,6 +1,8 @@
+
+
 mapscripts Dungeoneering_Lobby_MapScripts {
     MAP_SCRIPT_ON_LOAD {
-        setflag(FLAG_TEMP_12)
+        setflag(FLAG_TEMP_12) //- Prevents Normal Decorations spawning in Puzzle / Boss / Starter Rooms.
         call(Randomise_Dungeon)
     }
 }
@@ -231,17 +233,24 @@ script DungeonLayout_ROOM_PATH_5 {
 
 
 
-    
-    
+    specialvar (VAR_RESULT, GetCurrentMap)
+    call_if_eq (VAR_RESULT, MAP_DUNGEONEERING_1, DungeonLayout_PuzzleRoom_1)
+
+    specialvar (VAR_RESULT, GetCurrentMap)
+    call_if_eq (VAR_RESULT, MAP_DUNGEONEERING_2, DungeonLayout_PuzzleRoom_2)
+
+    specialvar (VAR_RESULT, GetCurrentMap)
+    call_if_eq (VAR_RESULT, MAP_DUNGEONEERING_3, DungeonLayout_PuzzleRoom_3)
+    //FLAG_DG_PUZZLE_ROOM_1
     specialvar (VAR_RESULT, GetCurrentMap)
     call_if_eq (VAR_RESULT, MAP_DUNGEONEERING_5, DungeonLayout_PuzzleRoom_5)
-
+    //FLAG_DG_PUZZLE_ROOM_2
     specialvar (VAR_RESULT, GetCurrentMap)
     call_if_eq (VAR_RESULT, MAP_DUNGEONEERING_6, DungeonLayout_PuzzleRoom_6)
-
+    //FLAG_DG_PUZZLE_ROOM_3
     specialvar (VAR_RESULT, GetCurrentMap)
     call_if_eq (VAR_RESULT, MAP_DUNGEONEERING_7, DungeonLayout_PuzzleRoom_7)
-
+    //FLAG_DG_PUZZLE_ROOM_4
     specialvar (VAR_RESULT, GetCurrentMap)
     call_if_eq (VAR_RESULT, MAP_DUNGEONEERING_8, DungeonLayout_PuzzleRoom_8)
     

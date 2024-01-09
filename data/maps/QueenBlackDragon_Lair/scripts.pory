@@ -48,7 +48,7 @@ QBD_Battle_QBD::
 	goto_if_eq NavelRock_Bottom_EventScript_RanFromLugia
 	compare VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED
 	goto_if_eq NavelRock_Bottom_EventScript_RanFromLugia
-	setflag FLAG_CAUGHT_LUGIA
+	@setflag FLAG_CAUGHT_LUGIA
 	release
 	end
 ` 

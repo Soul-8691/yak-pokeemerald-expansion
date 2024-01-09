@@ -763,7 +763,7 @@ static bool8 AreLegendariesInSootopolisPreventingEncounters(void)
         return FALSE;
     }
 
-    return FlagGet(FLAG_RETURNED_DEVON_GOODS);
+    return FlagGet(FLAG_TEMP_10);
 }
 
 bool8 StandardWildEncounter(u16 currMetaTileBehavior, u16 previousMetaTileBehavior)

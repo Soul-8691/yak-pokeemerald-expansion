@@ -328,8 +328,8 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_PokeScapeOutdoors_Door_Pub_R,                 DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_Pub_R, sDoorAnimPalettes_Door_Pub_R}, 
     {METATILE_PokeScapeOutdoors_Door_General_L,             DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_General_L, sDoorAnimPalettes_Door_General_L}, 
     {METATILE_PokeScapeOutdoors_Door_General_R,             DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_General_R, sDoorAnimPalettes_Door_General_R}, 
-    {METATILE_PokeScapeOutdoors_Door_Goblin_L,             DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_Goblin_L, sDoorAnimPalettes_Door_Goblin_L}, 
-    {METATILE_PokeScapeOutdoors_Door_Goblin_R,             DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_Goblin_R, sDoorAnimPalettes_Door_Goblin_R},
+    {METATILE_GoblinVillage_Door_Goblin_L,             DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_Goblin_L, sDoorAnimPalettes_Door_Goblin_L}, 
+    {METATILE_GoblinVillage_Door_Goblin_R,             DOOR_SOUND_SLIDING, 0, sDoorAnimTiles_Door_Goblin_R, sDoorAnimPalettes_Door_Goblin_R},
     
     
     

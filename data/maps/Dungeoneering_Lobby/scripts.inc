@@ -230,6 +230,12 @@ DungeonLayout_ROOM_PATH_5::
 	call DungeonLayout_BLOCKED_UP_ROOM_3
 	call DungeonLayout_BLOCKED_LEFT_ROOM_5
 	specialvar VAR_RESULT, GetCurrentMap
+	call_if_eq VAR_RESULT, MAP_DUNGEONEERING_1, DungeonLayout_PuzzleRoom_1
+	specialvar VAR_RESULT, GetCurrentMap
+	call_if_eq VAR_RESULT, MAP_DUNGEONEERING_2, DungeonLayout_PuzzleRoom_2
+	specialvar VAR_RESULT, GetCurrentMap
+	call_if_eq VAR_RESULT, MAP_DUNGEONEERING_3, DungeonLayout_PuzzleRoom_3
+	specialvar VAR_RESULT, GetCurrentMap
 	call_if_eq VAR_RESULT, MAP_DUNGEONEERING_5, DungeonLayout_PuzzleRoom_5
 	specialvar VAR_RESULT, GetCurrentMap
 	call_if_eq VAR_RESULT, MAP_DUNGEONEERING_6, DungeonLayout_PuzzleRoom_6

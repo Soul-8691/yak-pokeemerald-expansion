@@ -136,7 +136,14 @@
 #define FLAG_ALKHARIDGYM_2                  0x89
 #define FLAG_ALKHARIDGYM_3                  0x8D
 #define FLAG_ALKHARIDGYM_4                  0x8C
-
+#define FLAG_DG_PUZZLE_ROOM_1               0x8E    //FLAG_DEVON_GOODS_STOLEN
+#define FLAG_DG_PUZZLE_ROOM_2               0x8F    //FLAG_RECOVERED_DEVON_GOODS
+#define FLAG_DG_PUZZLE_ROOM_3               0x90    //FLAG_RETURNED_DEVON_GOODS
+#define FLAG_DG_PUZZLE_ROOM_4               0x91    //FLAG_CAUGHT_LUGIA
+#define FLAG_DG_PUZZLE_ROOM_5               0x92    //FLAG_CAUGHT_HO_OH
+#define FLAG_DG_PUZZLE_ROOM_6               0x93    //FLAG_MR_BRINEY_SAILING_INTRO
+#define FLAG_DG_PUZZLE_ROOM_7               0x94    //FLAG_DOCK_REJECTED_DEVON_GOODS
+#define FLAG_DG_PUZZLE_ROOM_8               0x95    //FLAG_DELIVERED_DEVON_GOODS
 
 
 
@@ -192,14 +199,7 @@
 #define FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY   0x8B
 
 
-#define FLAG_DEVON_GOODS_STOLEN              0x8E
-#define FLAG_RECOVERED_DEVON_GOODS           0x8F
-#define FLAG_RETURNED_DEVON_GOODS            0x90
-#define FLAG_CAUGHT_LUGIA                    0x91
-#define FLAG_CAUGHT_HO_OH                    0x92
-#define FLAG_MR_BRINEY_SAILING_INTRO         0x93
-#define FLAG_DOCK_REJECTED_DEVON_GOODS       0x94
-#define FLAG_DELIVERED_DEVON_GOODS           0x95
+
 
 #define FLAG_RECEIVED_CASTFORM               0x97
 #define FLAG_RECEIVED_SUPER_ROD              0x98

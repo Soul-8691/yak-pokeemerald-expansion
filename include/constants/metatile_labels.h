@@ -144,6 +144,23 @@
 #define METATILE_Dewford_Door              0x225
 #define METATILE_Dewford_Door_BattleTower  0x25D
 
+// gTileset_Dungeoneering
+#define METATILE_Dungeoneering_VINE_BOTTOM_L    0x3C5
+#define METATILE_Dungeoneering_VINE_BOTTOM_R    0x3C7
+#define METATILE_Dungeoneering_VINE_CROSS_DOWN  0x3D6
+#define METATILE_Dungeoneering_VINE_CROSS_L     0x3DF
+#define METATILE_Dungeoneering_VINE_CROSS_R     0x3D7
+#define METATILE_Dungeoneering_VINE_END_DOWN    0x3D5
+#define METATILE_Dungeoneering_VINE_END_L       0x3CE
+#define METATILE_Dungeoneering_VINE_END_R       0x3CF
+#define METATILE_Dungeoneering_VINE_END_UP      0x3CD
+#define METATILE_Dungeoneering_VINE_MID_1       0x3B6
+#define METATILE_Dungeoneering_VINE_MID_2       0x3C6
+#define METATILE_Dungeoneering_VINE_MID_L       0x3BD
+#define METATILE_Dungeoneering_VINE_MID_R       0x3BF
+#define METATILE_Dungeoneering_VINE_TOP_L       0x3B5
+#define METATILE_Dungeoneering_VINE_TOP_R       0x3B7
+
 // gTileset_EliteFour
 #define METATILE_EliteFour_EntryDoor_ClosedBottom    0x20E
 #define METATILE_EliteFour_EntryDoor_ClosedTop       0x206
@@ -249,6 +266,10 @@
 #define METATILE_GenericBuilding_TableEdge               0x2F1
 #define METATILE_GenericBuilding_TrickHouse_Door_Closed  0x21B
 #define METATILE_GenericBuilding_TrickHouse_Stairs_Down  0x219
+
+// gTileset_GoblinVillage
+#define METATILE_GoblinVillage_Door_Goblin_L  0x229
+#define METATILE_GoblinVillage_Door_Goblin_R  0x228
 
 // gTileset_InsideOfTruck
 #define METATILE_InsideOfTruck_DoorClosedFloor_Bottom  0x21D
@@ -411,8 +432,6 @@
 #define METATILE_PokeScapeOutdoors_Door_GeneralStore_R  0x136
 #define METATILE_PokeScapeOutdoors_Door_General_L       0x1CB
 #define METATILE_PokeScapeOutdoors_Door_General_R       0x1D3
-#define METATILE_PokeScapeOutdoors_Door_Goblin_L        0x229
-#define METATILE_PokeScapeOutdoors_Door_Goblin_R        0x228
 #define METATILE_PokeScapeOutdoors_Door_Pub_L           0x1EA
 #define METATILE_PokeScapeOutdoors_Door_Pub_R           0x1D2
 

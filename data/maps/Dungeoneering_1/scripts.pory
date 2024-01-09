@@ -1,6 +1,44 @@
+//FLAGS and VARS in use:
+//VAR_DUNGEONEERING_BOSS_ROOM               - Sets which room is the Boss Room.
+//VAR_DUNGEONEERING_STARTER_ROOM            - Sets which room is the Starting Room.
+//FLAG_TEMP_11                              - Prevents Decorations spawning in the boss Room.
+//FLAG_TEMP_12                              - Prevents Normal Decorations spawning in Puzzle / Boss / Starter Rooms.
+//VAR_STORE_SEED_RESULT                     - Stores the Dungeons randomly generated seed.
+//VAR_TEMP_9                                - Creates the % for randomised seed.
+//VAR_DUNGEONEERING_AMOUNT_OF_PUZZLES       - The amount of Puzzles to be used as a % when randomising.
+//VAR_DUNGEONEERING_RANDOM_PUZZLE_ (1-8)    - Value determines the Puzzle Room's Puzzle.
+//FLAG_DG_PUZZLE_ROOM_ (1-8)                - When a Puzzle Room is completed.
+//FLAG_TEMP_1E                              - Removes Puzzle functionality.
+
+//FLAG_TEMP_1                               - Used by ID_GFX_VAR_1
+//FLAG_TEMP_2                               - Used by ID_GFX_VAR_2
+//FLAG_TEMP_3                               - Used by ID_GFX_VAR_3
+//FLAG_TEMP_4                               - Used by ID_GFX_VAR_4
+//FLAG_TEMP_5                               - Used by ID_GFX_VAR_5
+//FLAG_TEMP_6                               - Used by ID_GFX_VAR_6
+//FLAG_TEMP_7                               - Used by ID_GFX_VAR_7
+//FLAG_TEMP_8                               - Used by ID_GFX_VAR_8
+//FLAG_TEMP_9                               - Used by ID_GFX_VAR_9
+//FLAG_TEMP_10                              - Used by ID_GFX_VAR_0
+
+
+
+
+const ID_GFX_VAR_1 = 1
+const ID_GFX_VAR_2 = 2
+const ID_GFX_VAR_3 = 3
+const ID_GFX_VAR_4 = 4
+const ID_GFX_VAR_5 = 5
+const ID_GFX_VAR_6 = 6
+const ID_GFX_VAR_7 = 7
+const ID_GFX_VAR_8 = 8
+const ID_GFX_VAR_9 = 9
+const ID_GFX_VAR_0 = 10
+
+
+
 mapscripts Dungeoneering_1_MapScripts {
     MAP_SCRIPT_ON_LOAD {
-         
         call(Randomise_Dungeon)
     }
 }
@@ -11,26 +49,21 @@ script RandomiseSeed_ForDoors {
 }
 
 script Randomise_Dungeon {
-
-    //Creates a path, by setting the starting/boss rooms and closing off certain doors.
+//Creates a path, by setting the starting/boss rooms and closing off certain doors.
     call_if_eq (VAR_STORE_SEED_RESULT, 0, DungeonLayout_ROOM_PATH_1)
     call_if_eq (VAR_STORE_SEED_RESULT, 1, DungeonLayout_ROOM_PATH_2)
     call_if_eq (VAR_STORE_SEED_RESULT, 2, DungeonLayout_ROOM_PATH_3)
     call_if_eq (VAR_STORE_SEED_RESULT, 3, DungeonLayout_ROOM_PATH_4)
     call_if_eq (VAR_STORE_SEED_RESULT, 4, DungeonLayout_ROOM_PATH_5)
 
-    //start decorating rooms
+//start decorating rooms
     call(DungeonLayout_StartingRoom_DECO)
-    
     if (!flag(FLAG_TEMP_11)) {
         call(DungeonLayout_BossRoom_DECO)
     }
-    
     if (!flag(FLAG_TEMP_12)) {
         call(DungeonLayout_NormalRoom_DECO)
     }
-
-
     special(DrawWholeMapView) 
     return
 }
@@ -104,7 +137,6 @@ script DungeonLayout_BossRoom {
     setmetatile(10, 2, 526, 1) 
     setmetatile(11, 2, 526, 1) 
     setmetatile(12, 2, 526, 1)
-
     setmetatile(3, 2, 536, 0) //ladder
     setmetatile(3, 1, 528, 1) //ladder
     return
@@ -114,8 +146,7 @@ script DungeonLayout_BossRoom {
 
 
 
-
-script DungeonLayout_PuzzleRoom_5 {
+script DungeonLayout_PuzzleRoom_1 {
     setflag(FLAG_TEMP_12) //Prevents regular decorations
 
     switch(var(VAR_DUNGEONEERING_RANDOM_PUZZLE_1)){
@@ -134,7 +165,7 @@ script DungeonLayout_PuzzleRoom_5 {
         }
     return
 }
-script DungeonLayout_PuzzleRoom_6 {
+script DungeonLayout_PuzzleRoom_2 {
     setflag(FLAG_TEMP_12) //Prevents regular decorations
 
     switch(var(VAR_DUNGEONEERING_RANDOM_PUZZLE_2)){
@@ -153,7 +184,7 @@ script DungeonLayout_PuzzleRoom_6 {
         }
     return
 }
-script DungeonLayout_PuzzleRoom_7 {
+script DungeonLayout_PuzzleRoom_3 {
     setflag(FLAG_TEMP_12) //Prevents regular decorations
 
     switch(var(VAR_DUNGEONEERING_RANDOM_PUZZLE_3)){
@@ -172,7 +203,7 @@ script DungeonLayout_PuzzleRoom_7 {
         }
     return
 }
-script DungeonLayout_PuzzleRoom_8 {
+script DungeonLayout_PuzzleRoom_4 {
     setflag(FLAG_TEMP_12) //Prevents regular decorations
 
     switch(var(VAR_DUNGEONEERING_RANDOM_PUZZLE_4)){
@@ -191,7 +222,82 @@ script DungeonLayout_PuzzleRoom_8 {
         }
     return
 }
+script DungeonLayout_PuzzleRoom_5 {
+    setflag(FLAG_TEMP_12) //Prevents regular decorations
 
+    switch(var(VAR_DUNGEONEERING_RANDOM_PUZZLE_5)){
+		case 0:
+            call(DungeonLayout_PuzzleRoom_RopeBridge)
+        case 1:	
+            call(DungeonLayout_PuzzleRoom_VineRoom)
+        case 2:
+            call(DungeonLayout_PuzzleRoom_Rock)
+        case 3:
+            call(DungeonLayout_PuzzleRoom_Item)
+        case 4:
+            call(DungeonLayout_PuzzleRoom_Trainer)
+        case 5:
+            call(DungeonLayout_PuzzleRoom_Battle)
+        }
+    return
+}
+script DungeonLayout_PuzzleRoom_6 {
+    setflag(FLAG_TEMP_12) //Prevents regular decorations
+
+    switch(var(VAR_DUNGEONEERING_RANDOM_PUZZLE_6)){
+		case 0:
+            call(DungeonLayout_PuzzleRoom_RopeBridge)
+        case 1:	
+            call(DungeonLayout_PuzzleRoom_VineRoom)
+        case 2:
+            call(DungeonLayout_PuzzleRoom_Rock)
+        case 3:
+            call(DungeonLayout_PuzzleRoom_Item)
+        case 4:
+            call(DungeonLayout_PuzzleRoom_Trainer)
+        case 5:
+            call(DungeonLayout_PuzzleRoom_Battle)
+        }
+    return
+}
+script DungeonLayout_PuzzleRoom_7 {
+    setflag(FLAG_TEMP_12) //Prevents regular decorations
+
+    switch(var(VAR_DUNGEONEERING_RANDOM_PUZZLE_7)){
+		case 0:
+            call(DungeonLayout_PuzzleRoom_RopeBridge)
+        case 1:	
+            call(DungeonLayout_PuzzleRoom_VineRoom)
+        case 2:
+            call(DungeonLayout_PuzzleRoom_Rock)
+        case 3:
+            call(DungeonLayout_PuzzleRoom_Item)
+        case 4:
+            call(DungeonLayout_PuzzleRoom_Trainer)
+        case 5:
+            call(DungeonLayout_PuzzleRoom_Battle)
+        }
+    return
+}
+script DungeonLayout_PuzzleRoom_8 {
+    setflag(FLAG_TEMP_12) //Prevents regular decorations
+
+    switch(var(VAR_DUNGEONEERING_RANDOM_PUZZLE_8)){
+		case 0:
+            call(DungeonLayout_PuzzleRoom_RopeBridge)
+        case 1:	
+            call(DungeonLayout_PuzzleRoom_VineRoom)
+        case 2:
+            call(DungeonLayout_PuzzleRoom_Rock)
+        case 3:
+            call(DungeonLayout_PuzzleRoom_Item)
+        case 4:
+            call(DungeonLayout_PuzzleRoom_Trainer)
+        case 5:
+            call(DungeonLayout_PuzzleRoom_Battle)
+        }
+    return
+}
 
 
 
@@ -225,7 +331,32 @@ script DungeonLayout_PuzzleRoom_VineRoom {
     setmetatile(10, 2, 526, 1) 
     setmetatile(11, 2, 526, 1) 
     setmetatile(12, 2, 526, 1)
-    setflag(FLAG_TEMP_1F)
+    //METATILE_Dungeoneering_
+    setmetatile(3, 3, METATILE_Dungeoneering_VINE_END_UP, 1)
+    setmetatile(2, 4, METATILE_Dungeoneering_VINE_MID_1, 1)
+    setmetatile(3, 4, METATILE_Dungeoneering_VINE_CROSS_L, 1)
+    setmetatile(3, 5, METATILE_Dungeoneering_VINE_BOTTOM_L, 1)
+    setmetatile(4, 5, METATILE_Dungeoneering_VINE_MID_2, 1)
+    setmetatile(5, 5, METATILE_Dungeoneering_VINE_CROSS_L, 1)
+    setmetatile(5, 4, METATILE_Dungeoneering_VINE_END_UP, 1)
+    setmetatile(5, 6, METATILE_Dungeoneering_VINE_MID_L, 1)
+    setmetatile(5, 7, METATILE_Dungeoneering_VINE_BOTTOM_L, 1)
+    setmetatile(6, 7, METATILE_Dungeoneering_VINE_MID_2, 1)
+    setmetatile(7, 7, METATILE_Dungeoneering_VINE_END_R, 1)
+    setmetatile(2, 7, METATILE_Dungeoneering_VINE_END_L, 1)
+    setmetatile(3, 7, METATILE_Dungeoneering_VINE_TOP_R, 1)
+    setmetatile(3, 8, METATILE_Dungeoneering_VINE_END_DOWN, 1)
+
+
+
+    setvar(VAR_OBJ_GFX_ID_1, OBJ_EVENT_GFX_CUTTABLE_TREE)
+    setobjectxyperm(ID_GFX_VAR_1, 6, 4)
+    setobjectmovementtype(ID_GFX_VAR_1,MOVEMENT_TYPE_NONE)
+
+    setvar(VAR_OBJ_GFX_ID_2, OBJ_EVENT_GFX_CUTTABLE_TREE)
+    setobjectxyperm(ID_GFX_VAR_2, 4, 7)
+    setobjectmovementtype(ID_GFX_VAR_2,MOVEMENT_TYPE_NONE)
+
 }
 
 script DungeonLayout_PuzzleRoom_Rock {
@@ -306,13 +437,9 @@ script DungeonLayout_PuzzleRoom_RopeBridge {
     setmetatile(9, 6, 606, 1) //HOLE - BOTTOM 
     setmetatile(10, 6, 607, 1) //HOLE - BOTTOM CORNER R
     setmetatile(7, 7, 961, 0) //ROPE - BOTTOM TIED
-
-    
-
-
+//Randomise Junk layout.
     random(2)
     if (var(VAR_RESULT)== 0) {
-
         setmetatile(3, 6, 601, 0) //BOOK - BIG
         setmetatile(11, 8, 601, 0) //BOOK - BIG
         setmetatile(5, 8, 602, 0) //BOOK - SMALL
@@ -327,7 +454,47 @@ script DungeonLayout_PuzzleRoom_RopeBridge {
         setmetatile(12, 8, 930, 1) //LOOM
     }
 
+    
+//Checks to see if you have completed the Puzzle room.
+    specialvar (VAR_RESULT, GetCurrentMap)
+    if (var(VAR_RESULT) == MAP_DUNGEONEERING_1 && flag(FLAG_DG_PUZZLE_ROOM_1)) {
+        setflag(FLAG_TEMP_1E) // Turns off puzzles.
+        call(DungeonCompleted_PuzzleRoom_Rope)
+    }
+    elif (var(VAR_RESULT) == MAP_DUNGEONEERING_2 && flag(FLAG_DG_PUZZLE_ROOM_2)) {
+        setflag(FLAG_TEMP_1E) // Turns off puzzles.
+        call(DungeonCompleted_PuzzleRoom_Rope)
+    }
+    elif (var(VAR_RESULT) == MAP_DUNGEONEERING_3 && flag(FLAG_DG_PUZZLE_ROOM_3)) {
+        setflag(FLAG_TEMP_1E) // Turns off puzzles.
+        call(DungeonCompleted_PuzzleRoom_Rope)
+    }
+    elif (var(VAR_RESULT) == MAP_DUNGEONEERING_4 && flag(FLAG_DG_PUZZLE_ROOM_4)) {
+        setflag(FLAG_TEMP_1E) // Turns off puzzles.
+        call(DungeonCompleted_PuzzleRoom_Rope)
+    }
+    elif (var(VAR_RESULT) == MAP_DUNGEONEERING_5 && flag(FLAG_DG_PUZZLE_ROOM_5)) {
+        setflag(FLAG_TEMP_1E) // Turns off puzzles.
+        call(DungeonCompleted_PuzzleRoom_Rope)
+    }
+    elif (var(VAR_RESULT) == MAP_DUNGEONEERING_6 && flag(FLAG_DG_PUZZLE_ROOM_6)) {
+        setflag(FLAG_TEMP_1E) // Turns off puzzles.
+        call(DungeonCompleted_PuzzleRoom_Rope)
+    }
+    elif (var(VAR_RESULT) == MAP_DUNGEONEERING_7 && flag(FLAG_DG_PUZZLE_ROOM_7)) {
+        setflag(FLAG_TEMP_1E) // Turns off puzzles.
+        call(DungeonCompleted_PuzzleRoom_Rope)
+    }
+    elif (var(VAR_RESULT) == MAP_DUNGEONEERING_8 && flag(FLAG_DG_PUZZLE_ROOM_8)) {
+        setflag(FLAG_TEMP_1E) // Turns off puzzles.
+        call(DungeonCompleted_PuzzleRoom_Rope)
+    }
     return
+}
+script DungeonCompleted_PuzzleRoom_Rope {
+    setmetatile(7, 5, 945, 0) //ROPE - MID
+    setmetatile(7, 4, 937, 0) //ROPE - TOP HOLE
+    setmetatile(7, 6, 953, 0) //ROPE - BOTTOM EDGE
 }
 
 
@@ -733,30 +900,62 @@ script DungeonLayout_BossRoom_DECO {
 
 
 
-
+script DungeonCompleted_PuzzleRoom {
+    specialvar (VAR_RESULT, GetCurrentMap)
+    if (var(VAR_RESULT) == MAP_DUNGEONEERING_1) {
+        setflag(FLAG_DG_PUZZLE_ROOM_1) //Puzzle Room is completed.
+    }
+    elif (var(VAR_RESULT) == MAP_DUNGEONEERING_2) {
+        setflag(FLAG_DG_PUZZLE_ROOM_2) //Puzzle Room is completed.
+    }
+    elif (var(VAR_RESULT) == MAP_DUNGEONEERING_3) {
+        setflag(FLAG_DG_PUZZLE_ROOM_3) //Puzzle Room is completed.
+    }
+    elif (var(VAR_RESULT) == MAP_DUNGEONEERING_4) {
+        setflag(FLAG_DG_PUZZLE_ROOM_4) //Puzzle Room is completed.
+    }
+    elif (var(VAR_RESULT) == MAP_DUNGEONEERING_5) {
+        setflag(FLAG_DG_PUZZLE_ROOM_5) //Puzzle Room is completed.
+    }
+    elif (var(VAR_RESULT) == MAP_DUNGEONEERING_6) {
+        setflag(FLAG_DG_PUZZLE_ROOM_6) //Puzzle Room is completed.
+    }
+    elif (var(VAR_RESULT) == MAP_DUNGEONEERING_7) {
+        setflag(FLAG_DG_PUZZLE_ROOM_7) //Puzzle Room is completed.
+    }
+    elif (var(VAR_RESULT) == MAP_DUNGEONEERING_8) {
+        setflag(FLAG_DG_PUZZLE_ROOM_8) //Puzzle Room is completed.
+    }
+}
 
 
 
 
 
 script DungeonInteractions_DG_ROPE {
-    checkitem(ITEM_DG_ROPE, 1)
-    if (var(VAR_RESULT)) {
-        setmetatile(7, 5, 945, 0) //ROPE - MID
-        setmetatile(7, 4, 937, 0) //ROPE - TOP HOLE
-        setmetatile(7, 6, 953, 0) //ROPE - BOTTOM EDGE
-        special(DrawWholeMapView) 
-        end
+    if (!flag(FLAG_TEMP_1E)) {
+        checkitem(ITEM_DG_ROPE, 1)
+        if (var(VAR_RESULT)) {
+            setmetatile(7, 5, 945, 0) //ROPE - MID
+            setmetatile(7, 4, 937, 0) //ROPE - TOP HOLE
+            setmetatile(7, 6, 953, 0) //ROPE - BOTTOM EDGE
+            special(DrawWholeMapView) 
+            removeitem(ITEM_DG_ROPE, 1)
+            call(DungeonCompleted_PuzzleRoom)
+            end
+        }
     }
     end
 }
 script DungeonInteractions_DG_STRING {
-    checkitem(ITEM_DG_ROPE, 1)
-    if (!var(VAR_RESULT)) {
-        checkitem(ITEM_DG_BALL_OF_WOOL, 1)
+    if (!flag(FLAG_TEMP_1E)) {
+        checkitem(ITEM_DG_ROPE, 1)
         if (!var(VAR_RESULT)) {
-            finditem (ITEM_DG_BALL_OF_WOOL)
-            end
+            checkitem(ITEM_DG_BALL_OF_WOOL, 1)
+            if (!var(VAR_RESULT)) {
+                finditem (ITEM_DG_BALL_OF_WOOL)
+                end
+            }
         }
     }
     msgbox(format("You search the junk and find nothing."))
@@ -764,14 +963,15 @@ script DungeonInteractions_DG_STRING {
     end
 }
 script DungeonInteractions_DG_SPINNING_WHEEL {
-
-    checkitem(ITEM_DG_BALL_OF_WOOL, 1)
-    if (var(VAR_RESULT)) {
-        msgbox(format("You spin the string into some useful rope."))
-        closemessage
-        finditem(ITEM_DG_ROPE, 1)
-        removeitem(ITEM_DG_BALL_OF_WOOL, 1)
-        end
+    if (!flag(FLAG_TEMP_1E)) {
+        checkitem(ITEM_DG_BALL_OF_WOOL, 1)
+        if (var(VAR_RESULT)) {
+            msgbox(format("You spin the string into some useful rope."))
+            closemessage
+            finditem(ITEM_DG_ROPE, 1)
+            removeitem(ITEM_DG_BALL_OF_WOOL, 1)
+            end
+        }
     }
     msgbox(format("You need some string to make a rope."))
     closemessage

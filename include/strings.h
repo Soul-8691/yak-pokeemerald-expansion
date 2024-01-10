@@ -3397,4 +3397,12 @@ extern const u8 gText_PokemonMode[];
 extern const u8 gText_PulseCoreOn[];
 extern const u8 gText_PulseCoreOff[];
 
+extern const u8 gText_DarkTotemTop[];
+extern const u8 gText_DarkTotemTop_Desc[];
+extern const u8 gText_DarkTotemMiddle[];
+extern const u8 gText_DarkTotemMiddle_Desc[];
+extern const u8 gText_DarkTotemBottom[];
+extern const u8 gText_DarkTotemBottom_Desc[];
+extern const u8 gText_AncientShard[];
+extern const u8 gText_AncientShard_Desc[];
 #endif // GUARD_STRINGS_H

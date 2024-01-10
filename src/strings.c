@@ -2195,3 +2195,14 @@ const u8 gText_OpenWorldOptionsMenu[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}OPEN
 const u8 gText_PkmnOrMons[] = _("SPAWN");
 const u8 gText_PokemonMode[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}POKEMON");
 const u8 gText_MonsterMode[] = _("{COLOR GREEN}{SHADOW LIGHT_GREEN}MONSTER");
+
+
+
+const u8 gText_DarkTotemTop[] = _("DARK TOTEM{CLEAR_TO 0x5E}32SP");
+const u8 gText_DarkTotemTop_Desc[] = _("The top piece of a Dark Totem.");
+const u8 gText_DarkTotemMiddle[] = _("DARK TOTEM{CLEAR_TO 0x5E}32SP");
+const u8 gText_DarkTotemMiddle_Desc[] = _("The middle piece of a Dark Totem.");
+const u8 gText_DarkTotemBottom[] = _("DARK TOTEM{CLEAR_TO 0x5E}32SP");
+const u8 gText_DarkTotemBottom_Desc[] = _("The bottom piece of a Dark Totem.");
+const u8 gText_AncientShard[] = _("ANCIENT SHARD{CLEAR_TO 0x5E}32SP");
+const u8 gText_AncientShard_Desc[] = _("An ancient Shard.");

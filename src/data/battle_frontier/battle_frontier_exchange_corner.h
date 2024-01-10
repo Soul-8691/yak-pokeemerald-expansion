@@ -48,6 +48,21 @@ static const u16 sFrontierExchangeCorner_HoldItems[] =
     0xFFFF
 };
 
+static const u16 sSlayerShopItems[] =
+{
+    ITEM_DARK_TOTEM_BASE,
+    ITEM_DARK_TOTEM_MID,
+    ITEM_DARK_TOTEM_TOP,
+    ITEM_ANCIENT_SHARD,
+    DECOR_MEOWTH_DOLL,
+    DECOR_CLEFAIRY_DOLL,
+    DECOR_DITTO_DOLL,
+    DECOR_CYNDAQUIL_DOLL,
+    DECOR_CHIKORITA_DOLL,
+    DECOR_TOTODILE_DOLL,
+    0xFFFF
+};
+
 static const u8 *const sFrontierExchangeCorner_Decor1Descriptions[] =
 {
     BattleFrontier_ExchangeServiceCorner_Text_KissPosterDesc,
@@ -96,4 +111,20 @@ static const u8 *const sFrontierExchangeCorner_HoldItemsDescriptions[] =
     BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc,
     BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc,
     gText_Exit
+};
+
+
+static const u8 *const sSlayerShopItemDescriptions[] =
+{
+    gText_DarkTotemTop_Desc,
+    gText_DarkTotemMiddle_Desc,
+    gText_DarkTotemBottom_Desc,
+    gText_AncientShard_Desc,
+    BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_DittoDollDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDesc,
+    gText_Exit,
 };

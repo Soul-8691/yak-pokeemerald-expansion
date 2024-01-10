@@ -81,6 +81,11 @@ movement movement_TELEPORT_OUT
     fly_up
 } 
 
+script give_SLAYER_GEM
+{
+    finditem(ITEM_SLAYER_GEM)
+    end
+}
 
 
 script NPC_VANNAKA_SLAYER_MASTER
@@ -100,44 +105,18 @@ script NPC_VANNAKA_SLAYER_MASTER
     end
 }
 
-
-
-
-
-
 script FUNCTION_SLAYER_TASK_MASTER {
     multichoicedefault (1, 0, MULTI_SLAYER_MASTER, 0, 0)
     switch (var(VAR_RESULT)) {
         case 0:
-            call(KOUREND_SLAYER_TASK)
+            goto(KOUREND_SLAYER_TASK)
         case 1:
-            //call(OPEN_REWARD_SHOP_SLAYER)
+            goto(SLAYER_REWARD_SHOP)
         case MULTI_B_PRESSED:
-            return
+            end
     }
-    return
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-script give_SLAYER_GEM
-{
-    finditem(ITEM_SLAYER_GEM)
     end
 }
-
-
 
 script KOUREND_SLAYER_TASK
 {

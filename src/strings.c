@@ -1892,6 +1892,10 @@ const u8 gText_BANK_STORE_ITEMS[] =_("STORE ITEMS");
 const u8 gText_JATIZSO[] =_("JATIZSO");
 const u8 gText_NEITIZNOT[] =_("NEITIZNOT");
 
+const u8 gText_GetSlayerAssignment[] =_("SLAYER ASSIGNMENT");
+const u8 gText_OpenSlayerRewardShop[] =_("REWARD SHOP");
+
+
 //misc
 const u8 gText_NextMenu[] =_("Next");
 const u8 gText_YouAlreadyHaveThis[] =_("You already have this item.{PAUSE_UNTIL_PRESS}");
@@ -1963,6 +1967,14 @@ const u8 gText_SubQuest_Ernest_Name1[] = _("Oil Can");
 const u8 gText_SubQuest_Ernest_Name2[] = _("Rubber Tube");
 const u8 gText_SubQuest_Ernest_Name3[] = _("Pressure Gauge");
 
+//Kourend Slayer
+const u8 gText_SideQuestName_Kourend_Slayer[] = _("The Dark Totem");
+const u8 gText_SideQuestDesc_Kourend_Slayer[] = _("Complete Slayer Tasks and obtain\nthe Dark totem pieces from\nthe Slayer Master.");
+const u8 gText_SideQuestDesc_Completed_Kourend_Slayer[] = _("Quest Completed!");
+const u8 gText_SideQuestMap_Kourend[] = _("Kourend");
+const u8 gText_SubQuest_Kourend_Slayer_Name1[] = _("Dark Totem - Top");
+const u8 gText_SubQuest_Kourend_Slayer_Name2[] = _("Dark Totem - Middle");
+const u8 gText_SubQuest_Kourend_Slayer_Name3[] = _("Dark Totem - Bottom");
 //names
 
 /*

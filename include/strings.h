@@ -3088,6 +3088,10 @@ extern const u8 gText_BANK_STORE_ITEMS[];
 extern const u8 gText_JATIZSO[];
 extern const u8 gText_NEITIZNOT[];
 
+extern const u8 gText_GetSlayerAssignment[];
+extern const u8 gText_OpenSlayerRewardShop[];
+
+
 
 //pokescape cheat menu
 extern const u8 gText_CheatEvolutionShop[];
@@ -3144,7 +3148,7 @@ extern const u8 gText_QuestActive[];
 
 
 
-
+//Quest - Cooks Assistant
 extern const u8 gText_SideQuestName_CooksAssistant[];
 extern const u8 gText_SideQuestDesc_CooksAssistant[];
 extern const u8 gText_SideQuestDesc_Completed_CooksAssistant[];
@@ -3158,9 +3162,7 @@ extern const u8 gText_SubQuest_Cooks_Assistant_3[];
 extern const u8 gText_SubQuest1_Desc_Cooks_Assistant_1[];
 extern const u8 gText_SubQuest1_Desc_Cooks_Assistant_2[];
 extern const u8 gText_SubQuest1_Desc_Cooks_Assistant_3[];
-
-
-
+//Quest - Ernest
 extern const u8 gText_SideQuestName_Ernest[];
 extern const u8 gText_SideQuestDesc_Ernest[];
 extern const u8 gText_SideQuestDesc_Completed_Ernest[];
@@ -3168,6 +3170,15 @@ extern const u8 gText_SideQuestMap_Draynor_Manor[];
 extern const u8 gText_SubQuest_Ernest_Name1[];
 extern const u8 gText_SubQuest_Ernest_Name2[];
 extern const u8 gText_SubQuest_Ernest_Name3[];
+
+//Quest - Kourend Slayer
+extern const u8 gText_SideQuestName_Kourend_Slayer[];
+extern const u8 gText_SideQuestDesc_Kourend_Slayer[];
+extern const u8 gText_SideQuestDesc_Completed_Kourend_Slayer[];
+extern const u8 gText_SideQuestMap_Kourend[];
+extern const u8 gText_SubQuest_Kourend_Slayer_Name1[];
+extern const u8 gText_SubQuest_Kourend_Slayer_Name2[];
+extern const u8 gText_SubQuest_Kourend_Slayer_Name3[];
 
 
 /*

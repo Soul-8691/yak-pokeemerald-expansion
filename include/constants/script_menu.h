@@ -135,6 +135,7 @@
 #define MULTI_PHEONIXEGG                   121
 #define MULTI_BANKOPTIONS                  122
 #define MULTI_FREMMYTEAMS                  123
+#define MULTI_SLAYER_MASTER                124
 
 
 // Lilycove SS Tidal Multichoice Selections

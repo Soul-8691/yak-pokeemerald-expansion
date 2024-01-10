@@ -368,7 +368,6 @@ static const struct SubQuest sSubQuests_ERNEST_THE_CHICKEN[QUEST_ERNEST_THE_CHIC
 	      ITEM,
 	      sText_Found
 	),
-
 	sub_quest(
 	      16,
 	      gText_SubQuest_Ernest_Name2,
@@ -378,7 +377,6 @@ static const struct SubQuest sSubQuests_ERNEST_THE_CHICKEN[QUEST_ERNEST_THE_CHIC
 	      ITEM,
 	      sText_Found
 	),
-
 	sub_quest(
 	      17,
 	      gText_SubQuest_Ernest_Name3,
@@ -402,7 +400,6 @@ static const struct SubQuest sSubQuests_COOKS_ASSISTANT[QUEST_COOKS_ASSISTANT_SU
 	      ITEM,
 	      sText_Found
 	),
-
 	sub_quest(
 	      19,
 	      gText_SubQuest_Cooks_Assistant_2,
@@ -425,6 +422,45 @@ static const struct SubQuest sSubQuests_COOKS_ASSISTANT[QUEST_COOKS_ASSISTANT_SU
 
 
 };
+
+
+static const struct SubQuest sSubQuests_KOUREND_SLAYER[QUEST_KOUREND_SLAYER_SUB_COUNT] =
+{
+	sub_quest(
+	      21,
+	      gText_SubQuest_Kourend_Slayer_Name1,
+	      gText_SubQuest_Kourend_Slayer_Name2,
+	      gText_SideQuestMap_Kourend,
+	      ITEM_OIL_CAN,
+	      ITEM,
+	      sText_Found
+	),
+
+	sub_quest(
+	      22,
+	      gText_SubQuest_Kourend_Slayer_Name2,
+	      gText_SubQuest_Kourend_Slayer_Name2,
+	      gText_SideQuestMap_Kourend,
+	      ITEM_RUBBER_TUBE,
+	      ITEM,
+	      sText_Found
+	),
+
+	sub_quest(
+	      23,
+	      gText_SubQuest_Kourend_Slayer_Name3,
+	      gText_SubQuest_Kourend_Slayer_Name2,
+	      gText_SideQuestMap_Kourend,
+	      ITEM_PRESSURE_GAUGE,
+	      ITEM,
+	      sText_Found
+	),
+
+
+
+};
+
+
 
 
 ////////////////////////END SUBQUEST CUSTOMIZATION/////////////////////////////
@@ -466,6 +502,16 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      PKMN,
 	      sSubQuests_ERNEST_THE_CHICKEN,
 	      QUEST_ERNEST_THE_CHICKEN_SUB_COUNT
+	),
+	side_quest(
+	      gText_SideQuestName_Kourend_Slayer,
+	      gText_SideQuestDesc_Kourend_Slayer,
+	      gText_SideQuestDesc_Completed_Kourend_Slayer,
+	      gText_SideQuestMap_Kourend,
+	      SPECIES_ERNEST,
+	      PKMN,
+	      sSubQuests_KOUREND_SLAYER,
+	      QUEST_KOUREND_SLAYER_SUB_COUNT
 	),/*
 	side_quest(
 	      gText_SideQuestName_1,

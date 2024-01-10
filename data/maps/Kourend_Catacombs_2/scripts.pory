@@ -1,0 +1,31 @@
+mapscripts Kourend_Catacombs_2_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_SLAYER_COMPLETE, 1: SLAYER_TASK_COMPLETE
+    ]
+}
+
+
+
+
+
+
+script KOUREND_SLAYER_QUEST_START {
+    msgbox(format("You look strong, could I would you be interested in doing some Slayer tasks for me?"))
+    msgbox(format("Slayer Master explains Slayer Tasks, explains how Slayer Tasks work by ONLY defeating monsters. Explains Slayer Points(SP), offers rewards mentioning totems that he found."))
+
+    msgbox(format("Take this it will help you remember your Slayer Assignment."))
+    giveitem(ITEM_SLAYER_GEM, 1)
+    
+    closemessage
+    hidenamebox
+    startquest (QUEST_KOUREND_SLAYER)
+    release
+    end
+}
+
+
+
+
+
+
+//questmenu(QUEST_MENU_COMPLETE_QUEST, QUEST_COOKS_ASSISTANT)

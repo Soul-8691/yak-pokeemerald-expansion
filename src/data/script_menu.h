@@ -873,6 +873,12 @@ static const struct MenuAction MultichoiceList_FREMMYTEAMS[] =
     {gText_JATIZSO},
     {gText_NEITIZNOT},
 };
+static const struct MenuAction MultichoiceList_SLAYER_MASTER[] =
+{
+    {gText_GetSlayerAssignment},
+    {gText_OpenSlayerRewardShop},
+    {gText_Exit},
+};
 
 
 
@@ -1015,6 +1021,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_PHEONIXEGG]			       = MULTICHOICE(MultichoiceList_PHEONIXEGG),
     [MULTI_BANKOPTIONS]				   = MULTICHOICE(MultichoiceList_BANKOPTIONS),
     [MULTI_FREMMYTEAMS]				   = MULTICHOICE(MultichoiceList_FREMMYTEAMS),
+    [MULTI_SLAYER_MASTER]			   = MULTICHOICE(MultichoiceList_SLAYER_MASTER),
 	
 };
 

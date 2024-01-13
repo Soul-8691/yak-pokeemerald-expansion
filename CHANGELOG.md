@@ -6,7 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
-- 
+- Adding GFX for Dark Totem pieces.
+
+- Added NPC to combine Dark Totem pieces.
+
+- Updated Catacomb Maps & Scripts.
 
 ## [1.5.1] - 11-01-2024
 

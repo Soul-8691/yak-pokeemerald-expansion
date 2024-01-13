@@ -128,7 +128,7 @@ script SlayerRewardShop_DarkTotemTop {
     elif (var(VAR_RESULT)) {
         setvar (VAR_0x8008, 100) //if quest is complete up the price.
     }
-    setvar (VAR_0x8009, ITEM_DARK_TOTEM_TOP)
+    setvar (VAR_0x8009, ITEM_DARK_TOTEM_BASE)
     goto (SLAYER_REWARD_SHOP_TryPurchasePrize)
     end
 }
@@ -160,7 +160,7 @@ script SlayerRewardShop_DarkTotemBottom {
     elif (var(VAR_RESULT)) {
         setvar (VAR_0x8008, 100) //if quest is complete up the price.
     }
-    setvar (VAR_0x8009, ITEM_DARK_TOTEM_BASE)
+    setvar (VAR_0x8009, ITEM_DARK_TOTEM_TOP)
     goto (SLAYER_REWARD_SHOP_TryPurchasePrize)
     end
 }

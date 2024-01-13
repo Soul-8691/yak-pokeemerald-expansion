@@ -8,7 +8,7 @@ Kourend_Catacombs_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 
 
 ZEAH_TELEPORT_ENTER::
-	checkitem ITEM_PURPLE_SWEETS, 1
+	checkitem ITEM_DARK_TOTEM, 1
 	compare VAR_RESULT, 0
 	goto_if_ne ZEAH_TELEPORT_ENTER_2
 	msgbox ZEAH_TELEPORT_ENTER_Text_2
@@ -27,7 +27,7 @@ ZEAH_TELEPORT_ENTER_2:
 ZEAH_TELEPORT_ENTER_5:
 	msgbox ZEAH_TELEPORT_ENTER_Text_1
 	applymovement OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT
-	removeitem ITEM_PURPLE_SWEETS, 1
+	removeitem ITEM_DARK_TOTEM, 1
 	warpteleport MAP_KOUREND_CATACOMBS_7, 0, 0, 0
 	closemessage
 	release
@@ -302,6 +302,88 @@ SLAYER_TASK_CANCEL::
 	return
 
 
+DARK_TOTEM_CHECK::
+	lock
+	faceplayer
+	checkitem ITEM_DARK_TOTEM, 1
+	compare VAR_RESULT, TRUE
+	goto_if_eq DARK_TOTEM_CHECK_2
+	checkitem ITEM_DARK_TOTEM_BASE, 1
+	compare VAR_RESULT, TRUE
+	goto_if_eq DARK_TOTEM_CHECK_5
+DARK_TOTEM_CHECK_4:
+	checkitem ITEM_DARK_TOTEM_MID, 1
+	compare VAR_RESULT, TRUE
+	goto_if_eq DARK_TOTEM_CHECK_8
+DARK_TOTEM_CHECK_7:
+	checkitem ITEM_DARK_TOTEM_TOP, 1
+	compare VAR_RESULT, TRUE
+	goto_if_eq DARK_TOTEM_CHECK_11
+DARK_TOTEM_CHECK_10:
+	msgbox DARK_TOTEM_CHECK_Text_1
+	closemessage
+	hidenamebox
+	release
+	end
+
+DARK_TOTEM_CHECK_2:
+	msgbox DARK_TOTEM_CHECK_Text_0
+	closemessage
+	hidenamebox
+	release
+	end
+
+DARK_TOTEM_CHECK_5:
+	goto DARK_TOTEM_COMBINE
+	goto DARK_TOTEM_CHECK_4
+
+DARK_TOTEM_CHECK_8:
+	goto DARK_TOTEM_COMBINE
+	goto DARK_TOTEM_CHECK_7
+
+DARK_TOTEM_CHECK_11:
+	goto DARK_TOTEM_COMBINE
+	goto DARK_TOTEM_CHECK_10
+
+
+DARK_TOTEM_COMBINE::
+	msgbox DARK_TOTEM_COMBINE_Text_0
+	checkitem ITEM_DARK_TOTEM_BASE, 1
+	compare VAR_RESULT, TRUE
+	goto_if_eq DARK_TOTEM_COMBINE_2
+DARK_TOTEM_COMBINE_1:
+	closemessage
+	hidenamebox
+	release
+	end
+
+DARK_TOTEM_COMBINE_2:
+	checkitem ITEM_DARK_TOTEM_MID, 1
+	compare VAR_RESULT, TRUE
+	goto_if_eq DARK_TOTEM_COMBINE_4
+	goto DARK_TOTEM_COMBINE_1
+
+DARK_TOTEM_COMBINE_4:
+	checkitem ITEM_DARK_TOTEM_TOP, 1
+	compare VAR_RESULT, TRUE
+	goto_if_eq DARK_TOTEM_COMBINE_6
+	goto DARK_TOTEM_COMBINE_1
+
+DARK_TOTEM_COMBINE_6:
+	msgbox DARK_TOTEM_COMBINE_Text_1
+	msgbox DARK_TOTEM_COMBINE_Text_2, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne DARK_TOTEM_COMBINE_8
+	goto DARK_TOTEM_COMBINE_1
+
+DARK_TOTEM_COMBINE_8:
+	removeitem ITEM_DARK_TOTEM_BASE, 1
+	removeitem ITEM_DARK_TOTEM_MID, 1
+	removeitem ITEM_DARK_TOTEM_TOP, 1
+	giveitem ITEM_DARK_TOTEM, 1
+	goto DARK_TOTEM_COMBINE_1
+
+
 ROTTEN_POTATO_TELEPORT::
 	msgbox ROTTEN_POTATO_TELEPORT_Text_0, MSGBOX_YESNO
 	compare VAR_RESULT, 0
@@ -318,7 +400,7 @@ ROTTEN_POTATO_TELEPORT_2:
 
 
 ZEAH_TELEPORT_ENTER_Text_0:
-	.string "The totem in your backpack reacts to\n"
+	.string "The Totem in your backpack reacts to\n"
 	.string "the Altar.\p"
 	.string "Would you like to use it?$"
 
@@ -360,6 +442,30 @@ SLAYER_TASK_COMPLETE_Text_0:
 	.string "Slayer Assignment complete!\n"
 	.string "{PLAYER} obtained {STR_VAR_1}\l"
 	.string "Slayer Point(s).$"
+
+DARK_TOTEM_CHECK_Text_0:
+	.string "It has been rumoured that the Dark\n"
+	.string "Totem is to be used on something but\l"
+	.string "no one has ever figured out what.$"
+
+DARK_TOTEM_CHECK_Text_1:
+	.string "Do you know what the Dark Totem is?\p"
+	.string "If you ever find a piece you should\n"
+	.string "show me.$"
+
+DARK_TOTEM_COMBINE_Text_0:
+	.string "Oh!\p"
+	.string "That is a piece of the Dark Totem!\p"
+	.string "If you can bring me all 3 pieces I can\n"
+	.string "combine it the full Dark Totem.$"
+
+DARK_TOTEM_COMBINE_Text_1:
+	.string "Oh!!!\p"
+	.string "You have all 3 pieces!$"
+
+DARK_TOTEM_COMBINE_Text_2:
+	.string "Would you like me to combine the pieces\n"
+	.string "and create the Dark Totem?$"
 
 ROTTEN_POTATO_TELEPORT_Text_0:
 	.string "Only use this if you are stuck.\p"

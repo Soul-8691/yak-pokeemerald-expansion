@@ -140,7 +140,7 @@ SlayerRewardShop_DarkTotemTop::
 	compare VAR_RESULT, 0
 	goto_if_ne SlayerRewardShop_DarkTotemTop_3
 SlayerRewardShop_DarkTotemTop_1:
-	setvar VAR_0x8009, ITEM_DARK_TOTEM_TOP
+	setvar VAR_0x8009, ITEM_DARK_TOTEM_BASE
 	goto SLAYER_REWARD_SHOP_TryPurchasePrize
 	end
 
@@ -186,7 +186,7 @@ SlayerRewardShop_DarkTotemBottom::
 	compare VAR_RESULT, 0
 	goto_if_ne SlayerRewardShop_DarkTotemBottom_3
 SlayerRewardShop_DarkTotemBottom_1:
-	setvar VAR_0x8009, ITEM_DARK_TOTEM_BASE
+	setvar VAR_0x8009, ITEM_DARK_TOTEM_TOP
 	goto SLAYER_REWARD_SHOP_TryPurchasePrize
 	end
 

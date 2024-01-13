@@ -54,12 +54,25 @@ static const u16 sSlayerShopItems[] =
     ITEM_DARK_TOTEM_MID,
     ITEM_DARK_TOTEM_TOP,
     ITEM_ANCIENT_SHARD,
-    DECOR_MEOWTH_DOLL,
-    DECOR_CLEFAIRY_DOLL,
-    DECOR_DITTO_DOLL,
-    DECOR_CYNDAQUIL_DOLL,
-    DECOR_CHIKORITA_DOLL,
-    DECOR_TOTODILE_DOLL,
+
+
+    ITEM_RED_SCALE,
+    ITEM_GREEN_SCALE,
+    ITEM_BLACK_SCALE,
+    ITEM_BLUE_SCALE,
+
+    ITEM_ABYSSAL_WHIP,
+    ITEM_DFS,
+    ITEM_DRAGON_CLAWS,
+    ITEM_DRAGON_DAGGER_POISON,
+    ITEM_DRAGON_SCIMITAR,
+    ITEM_ELEMENTAL_SHIELD,
+    ITEM_GRANITE_MAUL,
+    ITEM_KRAKEN_TENTACLE,
+
+    ITEM_OVERLOAD,
+    ITEM_SARADOMIN_BREW,
+    ITEM_PHOENIX_NECKLACE,
     0xFFFF
 };
 
@@ -116,9 +129,9 @@ static const u8 *const sFrontierExchangeCorner_HoldItemsDescriptions[] =
 
 static const u8 *const sSlayerShopItemDescriptions[] =
 {
-    gText_DarkTotemTop_Desc,
-    gText_DarkTotemMiddle_Desc,
     gText_DarkTotemBottom_Desc,
+    gText_DarkTotemMiddle_Desc,
+    gText_DarkTotemTop_Desc,
     gText_AncientShard_Desc,
     BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDesc,
     BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDesc,

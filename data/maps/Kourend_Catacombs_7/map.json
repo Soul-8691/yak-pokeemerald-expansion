@@ -52,6 +52,29 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 8,
+      "y": 24,
+      "elevation": 3,
+      "item": "ITEM_NONE",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "type": "hidden_item",
+      "x": 5,
+      "y": 8,
+      "elevation": 3,
+      "item": "ITEM_NONE",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "type": "hidden_item",
+      "x": 5,
+      "y": 16,
+      "elevation": 3,
+      "item": "ITEM_NONE",
+      "flag": "FLAG_TEMP_1"
+    }
   ]
 }

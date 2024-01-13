@@ -5,13 +5,13 @@ mapscripts Kourend_Catacombs_1_MapScripts {
 }
 
 script ZEAH_TELEPORT_ENTER {
-    checkitem(ITEM_PURPLE_SWEETS, 1)
+    checkitem(ITEM_DARK_TOTEM, 1)
         if (var(VAR_RESULT)) {
-            msgbox(format("The totem in your backpack reacts to the Altar.\pWould you like to use it?"), MSGBOX_YESNO)
+            msgbox(format("The Totem in your backpack reacts to the Altar.\pWould you like to use it?"), MSGBOX_YESNO)
             if (var(VAR_RESULT)){
                     msgbox(format("Suddenly the world starts to warp around you."))
                     applymovement(OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT)
-                    removeitem(ITEM_PURPLE_SWEETS, 1)
+                    removeitem(ITEM_DARK_TOTEM, 1)
                     warpteleport (MAP_KOUREND_CATACOMBS_7,0,0,0)
                     closemessage
                     release
@@ -250,9 +250,64 @@ script SLAYER_TASK_CANCEL
 
 
 
+script DARK_TOTEM_CHECK
+{
+    lock
+    faceplayer
+    checkitem(ITEM_DARK_TOTEM, 1)
+    if (var(VAR_RESULT) == TRUE) {
+        msgbox(format("It has been rumoured that the Dark Totem is to be used on something but no one has ever figured out what."))
+        closemessage
+        hidenamebox
+        release
+        end
+    }
+    checkitem(ITEM_DARK_TOTEM_BASE, 1)
+    if (var(VAR_RESULT) == TRUE) {
+        goto(DARK_TOTEM_COMBINE)
+    }
+    checkitem(ITEM_DARK_TOTEM_MID, 1)
+    if (var(VAR_RESULT) == TRUE) {
+        goto(DARK_TOTEM_COMBINE)
+    }
+    checkitem(ITEM_DARK_TOTEM_TOP, 1)
+    if (var(VAR_RESULT) == TRUE) {
+        goto(DARK_TOTEM_COMBINE)
+    }
+    msgbox(format("Do you know what the Dark Totem is?\pIf you ever find a piece you should show me."))
+    closemessage
+    hidenamebox
+    release
+    end
+}
 
 
+script DARK_TOTEM_COMBINE
+{
+    msgbox(format("Oh!\pThat is a piece of the Dark Totem!\pIf you can bring me all 3 pieces I can combine it the full Dark Totem."))
+    checkitem(ITEM_DARK_TOTEM_BASE, 1)
+    if (var(VAR_RESULT) == TRUE) {
+        checkitem(ITEM_DARK_TOTEM_MID, 1)
+        if (var(VAR_RESULT) == TRUE) {
 
+            checkitem(ITEM_DARK_TOTEM_TOP, 1)
+            if (var(VAR_RESULT) == TRUE) {
+                msgbox(format("Oh!!!\pYou have all 3 pieces!"))
+                msgbox(format("Would you like me to combine the pieces and create the Dark Totem?"), MSGBOX_YESNO)
+                if (var(VAR_RESULT)) {
+                    removeitem(ITEM_DARK_TOTEM_BASE, 1)
+                    removeitem(ITEM_DARK_TOTEM_MID, 1)
+                    removeitem(ITEM_DARK_TOTEM_TOP, 1)
+                    giveitem(ITEM_DARK_TOTEM, 1)
+                }
+            }
+        }
+    } 
+    closemessage
+    hidenamebox
+    release
+    end
+}
 
 
 

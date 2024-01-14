@@ -7890,6 +7890,16 @@
       "secondary_tileset": "gTileset_Dungeoneering",
       "border_filepath": "data/layouts/Dungeoneering_Lobby/border.bin",
       "blockdata_filepath": "data/layouts/Dungeoneering_Lobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_KOUREND_CATACOMBS_8",
+      "name": "Kourend_Catacombs_8_Layout",
+      "width": 21,
+      "height": 21,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lumbridge_Swamp_Caves",
+      "border_filepath": "data/layouts/Kourend_Catacombs_8/border.bin",
+      "blockdata_filepath": "data/layouts/Kourend_Catacombs_8/map.bin"
     }
   ]
 }

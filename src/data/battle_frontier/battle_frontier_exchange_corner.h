@@ -54,13 +54,9 @@ static const u16 sSlayerShopItems[] =
     ITEM_DARK_TOTEM_MID,
     ITEM_DARK_TOTEM_TOP,
     ITEM_ANCIENT_SHARD,
-
-
-    ITEM_RED_SCALE,
-    ITEM_GREEN_SCALE,
-    ITEM_BLACK_SCALE,
-    ITEM_BLUE_SCALE,
-
+    ITEM_OVERLOAD,
+    ITEM_SARADOMIN_BREW,
+    ITEM_PHOENIX_NECKLACE,
     ITEM_ABYSSAL_WHIP,
     ITEM_DFS,
     ITEM_DRAGON_CLAWS,
@@ -69,10 +65,6 @@ static const u16 sSlayerShopItems[] =
     ITEM_ELEMENTAL_SHIELD,
     ITEM_GRANITE_MAUL,
     ITEM_KRAKEN_TENTACLE,
-
-    ITEM_OVERLOAD,
-    ITEM_SARADOMIN_BREW,
-    ITEM_PHOENIX_NECKLACE,
     0xFFFF
 };
 
@@ -133,11 +125,16 @@ static const u8 *const sSlayerShopItemDescriptions[] =
     gText_DarkTotemMiddle_Desc,
     gText_DarkTotemTop_Desc,
     gText_AncientShard_Desc,
-    BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_DittoDollDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDesc,
-    gText_Exit,
+    gText_Overload_Desc,
+    gText_SaradominBrew_Desc,
+    gText_PhoenixNecklace_Desc,
+    gText_AbyssalWhip_Desc,
+    gText_DragonfireSheild_Desc,
+    gText_DragonClaws_Desc,
+    gText_DragonDaggerP_Desc,
+    gText_DragonScimitar_Desc,
+    gText_ElementalShield_Desc,
+    gText_GraniteMaul_Desc,
+    gText_KrakenTentacle_Desc,
+    gText_Exit
 };

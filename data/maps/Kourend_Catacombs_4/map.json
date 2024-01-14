@@ -307,30 +307,30 @@
   "warp_events": [
     {
       "x": 69,
-      "y": 3,
+      "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_KOUREND_CATACOMBS_4",
-      "dest_warp_id": 0
+      "dest_map": "MAP_KOUREND_CATACOMBS_3",
+      "dest_warp_id": 6
     },
     {
       "x": 44,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_4",
-      "dest_warp_id": 0
+      "dest_warp_id": 2
     },
     {
       "x": 38,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_KOUREND_CATACOMBS_4",
-      "dest_warp_id": 0
+      "dest_warp_id": 1
     },
     {
       "x": 17,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_KOUREND_CATACOMBS_4",
+      "dest_map": "MAP_KOUREND_CATACOMBS_5",
       "dest_warp_id": 0
     }
   ],

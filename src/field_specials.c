@@ -2276,7 +2276,7 @@ void ShowScrollableMultichoice(void)
         break;
     case SCROLL_SLAYER_REWARD_SHOP:
         task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
-        task->tNumItems = 11;
+        task->tNumItems = 16;
         task->tLeft = 14;
         task->tTop = 1;
         task->tWidth = 15;
@@ -2451,13 +2451,20 @@ static const u8 *const sScrollableMultichoiceOptions[][MAX_SCROLL_MULTI_LENGTH] 
         gText_DarkTotemMiddle,
         gText_DarkTotemBottom,
         gText_AncientShard,
-        gText_MeowthDoll48BP,
-        gText_ClefairyDoll48BP,
-        gText_DittoDoll48BP,
-        gText_CyndaquilDoll80BP,
-        gText_ChikoritaDoll80BP,
-        gText_TotodileDoll80BP,
+        gText_Overload,
+        gText_SaradominBrew,
+        gText_PhoenixNecklace,
+        gText_AbyssalWhip,
+        gText_DragonfireSheild,
+        gText_DragonClaws,
+        gText_DragonDaggerP,
+        gText_DragonScimitar,
+        gText_ElementalShield,
+        gText_GraniteMaul,
+        gText_KrakenTentacle,
         gText_Exit
+
+        
     }
 };
 

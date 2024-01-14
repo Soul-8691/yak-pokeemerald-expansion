@@ -1,0 +1,128 @@
+mapscripts Kourend_Catacombs_8_MapScripts {
+    MAP_SCRIPT_ON_LOAD {
+        call(SKOTIZO_CHECK)
+    }
+    MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_SLAYER_COMPLETE, 1: SLAYER_TASK_COMPLETE
+    ]
+}
+
+
+script SKOTIZO_CHECK {
+    checkitem(ITEM_DARK_TOTEM, 1)
+    if (var(VAR_RESULT)) {
+        setflag(FLAG_TEMP_A)
+        removeobject(1)
+    }
+    if (var(VAR_TEMP_E) == 5) {
+        clearflag(FLAG_TEMP_A)
+        addobject(1)
+
+        setmetatile(9,4,673,0)
+        setmetatile(10,4,673,0)
+        setmetatile(11,4,673,0)
+        setmetatile(9,5,673,0)
+        setmetatile(10,5,673,0)
+        setmetatile(11,5,673,0)
+        special (DrawWholeMapView)
+    }
+
+}
+
+script SKOTIZO_TRIGGER {
+    
+    if (var(VAR_TEMP_E) == 5) {
+        release
+        end
+    }
+    checkitem(ITEM_DARK_TOTEM, 1)
+        if (var(VAR_RESULT)) {
+            lock
+            applymovement(OBJ_EVENT_ID_PLAYER, Movement_FACEUP)
+            waitmovement(0)
+            msgbox(format("The Dark Totem in your backpack starts to react to the crystal.\pWould you like to use it?"), MSGBOX_YESNO)
+            if (var(VAR_RESULT)){
+                    msgbox(format("The Totem and the crystal begin to shake."))
+                    closemessage
+                    delay(30)
+                    setvar(VAR_0x8004, 0)  //vertical pan
+                    setvar(VAR_0x8005, 3)  //horizontal pan
+                    setvar(VAR_0x8006, 4) //NUM SHAKES
+                    setvar(VAR_0x8007, 2) //SHAKE DELAY
+                    special(ShakeCamera)
+                    delay(60)
+                    setvar(VAR_0x8004, 0)  //vertical pan
+                    setvar(VAR_0x8005, 3)  //horizontal pan
+                    setvar(VAR_0x8006, 4) //NUM SHAKES
+                    setvar(VAR_0x8007, 2) //SHAKE DELAY
+                    special(ShakeCamera)
+                    delay(60)
+                    fadescreen(FADE_TO_WHITE)
+                    clearflag(FLAG_TEMP_A)
+                    addobject(1)
+                    setmetatile(9,4,673,0)
+                    setmetatile(10,4,673,0)
+                    setmetatile(11,4,673,0)
+                    setmetatile(9,5,673,0)
+                    setmetatile(10,5,673,0)
+                    setmetatile(11,5,673,0)
+                    special (DrawWholeMapView)
+	                playse (SE_ICE_BREAK)
+                    fadescreen(FADE_FROM_WHITE)
+                    msgbox(format("The crystal shatters and reveals a giant monster!"))
+                    closemessage
+                    goto(ENCOUNTER_SKOTIZO)
+                }
+            closemessage
+            release
+            end
+        }
+    release
+    end           
+}
+
+script ENCOUNTER_SKOTIZO
+{
+	lock
+    namebox ("SKOTIZO")
+    playmoncry(SPECIES_URSARING, 0)
+	msgbox(format("ROOOARR!"))
+    waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+	setwildbattle (SPECIES_CALLISTO, 75, ITEM_NONE)
+	dowildbattle
+    switch(var(VAR_RESULT)){
+		case B_OUTCOME_WON:
+            fadescreen(FADE_TO_BLACK)
+            removeitem(ITEM_DARK_TOTEM, 1)
+            msgbox(format("The Dark Totem shatters into pieces."))
+            closemessage
+            setflag(FLAG_TEMP_A)
+            removeobject (1)
+            fadescreen(FADE_FROM_BLACK)
+            closemessage
+            end
+        case B_OUTCOME_CAUGHT:
+            fadescreen(FADE_TO_BLACK)
+            removeitem(ITEM_DARK_TOTEM, 1)
+            msgbox(format("The Dark Totem shatters into pieces."))
+            closemessage
+            setflag(FLAG_TEMP_A)
+            removeobject (1)
+            fadescreen(FADE_FROM_BLACK)
+            closemessage
+            end
+        case B_OUTCOME_RAN:
+            msgbox(format("Skotizo just stands there staring at you menacingly."))
+            closemessage
+            setvar(VAR_TEMP_E, 5)
+        case B_OUTCOME_PLAYER_TELEPORTED:
+            msgbox(format("Skotizo is in disbelief you just teleported away from battle."))
+            closemessage
+            setvar(VAR_TEMP_E, 5)
+    }
+    release
+	end
+}

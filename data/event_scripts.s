@@ -1746,3 +1746,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Dungeoneering_16/scripts.inc"
 
 	.include "data/maps/Dungeoneering_Lobby/scripts.inc"
+
+	.include "data/maps/Kourend_Catacombs_8/scripts.inc"

@@ -3408,4 +3408,41 @@ extern const u8 gText_DarkTotemBottom_SALE[];
 extern const u8 gText_DarkTotemBottom_Desc[];
 extern const u8 gText_AncientShard[];
 extern const u8 gText_AncientShard_Desc[];
+
+extern const u8 gText_Overload[];
+extern const u8 gText_SaradominBrew[];
+extern const u8	gText_PhoenixNecklace[];
+extern const u8	gText_AbyssalWhip[];
+extern const u8	gText_DragonfireSheild[];
+extern const u8	gText_DragonClaws[];
+extern const u8	gText_DragonDaggerP[];
+extern const u8	gText_DragonScimitar[];
+extern const u8	gText_ElementalShield[];
+extern const u8	gText_GraniteMaul[];
+extern const u8	gText_KrakenTentacle[];
+extern const u8 gText_Overload_Desc[];
+extern const u8 gText_SaradominBrew_Desc[];
+extern const u8	gText_PhoenixNecklace_Desc[];
+extern const u8	gText_AbyssalWhip_Desc[];
+extern const u8	gText_DragonfireSheild_Desc[];
+extern const u8	gText_DragonClaws_Desc[];
+extern const u8	gText_DragonDaggerP_Desc[];
+extern const u8	gText_DragonScimitar_Desc[];
+extern const u8	gText_ElementalShield_Desc[];
+extern const u8	gText_GraniteMaul_Desc[];
+extern const u8	gText_KrakenTentacle_Desc[];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #endif // GUARD_STRINGS_H

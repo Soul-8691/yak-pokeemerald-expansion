@@ -39,14 +39,18 @@ SLAYER_REWARD_SHOP::
 	case 2, SLAYER_REWARD_SHOP_5
 	case 3, SLAYER_REWARD_SHOP_6
 	case 4, SLAYER_REWARD_SHOP_7
-	case 5, SLAYER_REWARD_SHOP_7
-	case 6, SLAYER_REWARD_SHOP_7
-	case 7, SLAYER_REWARD_SHOP_7
-	case 8, SLAYER_REWARD_SHOP_7
-	case 9, SLAYER_REWARD_SHOP_7
-	case 10, SLAYER_REWARD_SHOP_7
-	case 11, SLAYER_REWARD_SHOP_7
-	case MULTI_B_PRESSED, SLAYER_REWARD_SHOP_7
+	case 5, SLAYER_REWARD_SHOP_8
+	case 6, SLAYER_REWARD_SHOP_9
+	case 7, SLAYER_REWARD_SHOP_10
+	case 8, SLAYER_REWARD_SHOP_11
+	case 9, SLAYER_REWARD_SHOP_12
+	case 10, SLAYER_REWARD_SHOP_13
+	case 11, SLAYER_REWARD_SHOP_14
+	case 12, SLAYER_REWARD_SHOP_15
+	case 13, SLAYER_REWARD_SHOP_16
+	case 14, SLAYER_REWARD_SHOP_17
+	case 15, SLAYER_REWARD_SHOP_18
+	case MULTI_B_PRESSED, SLAYER_REWARD_SHOP_19
 SLAYER_REWARD_SHOP_1:
 	end
 
@@ -67,8 +71,62 @@ SLAYER_REWARD_SHOP_6:
 	goto SLAYER_REWARD_SHOP_1
 
 SLAYER_REWARD_SHOP_7:
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
+	goto SlayerRewardShop_Overload
 	goto SLAYER_REWARD_SHOP_1
+
+SLAYER_REWARD_SHOP_8:
+	goto SlayerRewardShop_SARADOMIN_BREW
+	goto SLAYER_REWARD_SHOP_1
+
+SLAYER_REWARD_SHOP_9:
+	goto SlayerRewardShop_PHOENIX_NECKLACE
+	goto SLAYER_REWARD_SHOP_1
+
+SLAYER_REWARD_SHOP_10:
+	goto SlayerRewardShop_ABYSSAL_WHIP
+	goto SLAYER_REWARD_SHOP_1
+
+SLAYER_REWARD_SHOP_11:
+	goto SlayerRewardShop_DFS
+	goto SLAYER_REWARD_SHOP_1
+
+SLAYER_REWARD_SHOP_12:
+	goto SlayerRewardShop_DRAGON_CLAWS
+	goto SLAYER_REWARD_SHOP_1
+
+SLAYER_REWARD_SHOP_13:
+	goto SlayerRewardShop_DRAGON_DAGGER_POISON
+	goto SLAYER_REWARD_SHOP_1
+
+SLAYER_REWARD_SHOP_14:
+	goto SlayerRewardShop_DRAGON_SCIMITAR
+	goto SLAYER_REWARD_SHOP_1
+
+SLAYER_REWARD_SHOP_15:
+	goto SlayerRewardShop_ELEMENTAL_SHIELD
+	goto SLAYER_REWARD_SHOP_1
+
+SLAYER_REWARD_SHOP_16:
+	goto SlayerRewardShop_GRANITE_MAUL
+	goto SLAYER_REWARD_SHOP_1
+
+SLAYER_REWARD_SHOP_17:
+	goto SlayerRewardShop_KRAKEN_TENTACLE
+	goto SLAYER_REWARD_SHOP_1
+
+SLAYER_REWARD_SHOP_18:
+	goto SLAYER_REWARD_SHOP_Goodbye
+	goto SLAYER_REWARD_SHOP_1
+
+SLAYER_REWARD_SHOP_19:
+	goto SLAYER_REWARD_SHOP_Goodbye
+	goto SLAYER_REWARD_SHOP_1
+
+
+SLAYER_REWARD_SHOP_Goodbye::
+	special CloseBattlePointsWindow
+	release
+	end
 
 
 SLAYER_REWARD_SHOP_TryPurchasePrize::
@@ -104,7 +162,7 @@ SLAYER_REWARD_SHOP_TryGiveItem_9:
 	return
 
 SLAYER_REWARD_SHOP_TryGiveItem_2:
-	compare VAR_0x8009, ITEM_DARK_TOTEM_TOP
+	compare VAR_0x8009, ITEM_DARK_TOTEM_BASE
 	goto_if_eq SLAYER_REWARD_SHOP_TryGiveItem_7
 	goto SLAYER_REWARD_SHOP_TryGiveItem_1
 
@@ -118,7 +176,7 @@ SLAYER_REWARD_SHOP_TryGiveItem_7:
 	goto SLAYER_REWARD_SHOP_TryGiveItem_1
 
 SLAYER_REWARD_SHOP_TryGiveItem_10:
-	compare VAR_0x8009, ITEM_DARK_TOTEM_BASE
+	compare VAR_0x8009, ITEM_DARK_TOTEM_TOP
 	goto_if_eq SLAYER_REWARD_SHOP_TryGiveItem_14
 	goto SLAYER_REWARD_SHOP_TryGiveItem_9
 
@@ -209,6 +267,105 @@ SlayerRewardShop_AncientShard::
 	end
 
 
+SlayerRewardShop_Overload::
+	msgbox SlayerRewardShop_Overload_Text_0, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SLAYER_REWARD_SHOP
+	setvar VAR_0x8008, 48
+	setvar VAR_0x8009, ITEM_OVERLOAD
+	goto SLAYER_REWARD_SHOP_TryPurchasePrize
+	end
+
+
+SlayerRewardShop_SARADOMIN_BREW::
+	msgbox SlayerRewardShop_SARADOMIN_BREW_Text_0, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SLAYER_REWARD_SHOP
+	setvar VAR_0x8008, 48
+	setvar VAR_0x8009, ITEM_SARADOMIN_BREW
+	goto SLAYER_REWARD_SHOP_TryPurchasePrize
+	end
+
+
+SlayerRewardShop_PHOENIX_NECKLACE::
+	msgbox SlayerRewardShop_PHOENIX_NECKLACE_Text_0, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SLAYER_REWARD_SHOP
+	setvar VAR_0x8008, 48
+	setvar VAR_0x8009, ITEM_PHOENIX_NECKLACE
+	goto SLAYER_REWARD_SHOP_TryPurchasePrize
+	end
+
+
+SlayerRewardShop_ABYSSAL_WHIP::
+	msgbox SlayerRewardShop_ABYSSAL_WHIP_Text_0, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SLAYER_REWARD_SHOP
+	setvar VAR_0x8008, 48
+	setvar VAR_0x8009, ITEM_ABYSSAL_WHIP
+	goto SLAYER_REWARD_SHOP_TryPurchasePrize
+	end
+
+
+SlayerRewardShop_DFS::
+	msgbox SlayerRewardShop_DFS_Text_0, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SLAYER_REWARD_SHOP
+	setvar VAR_0x8008, 48
+	setvar VAR_0x8009, ITEM_DFS
+	goto SLAYER_REWARD_SHOP_TryPurchasePrize
+	end
+
+
+SlayerRewardShop_DRAGON_CLAWS::
+	msgbox SlayerRewardShop_DRAGON_CLAWS_Text_0, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SLAYER_REWARD_SHOP
+	setvar VAR_0x8008, 48
+	setvar VAR_0x8009, ITEM_DRAGON_CLAWS
+	goto SLAYER_REWARD_SHOP_TryPurchasePrize
+	end
+
+
+SlayerRewardShop_DRAGON_DAGGER_POISON::
+	msgbox SlayerRewardShop_DRAGON_DAGGER_POISON_Text_0, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SLAYER_REWARD_SHOP
+	setvar VAR_0x8008, 48
+	setvar VAR_0x8009, ITEM_DRAGON_DAGGER_POISON
+	goto SLAYER_REWARD_SHOP_TryPurchasePrize
+	end
+
+
+SlayerRewardShop_DRAGON_SCIMITAR::
+	msgbox SlayerRewardShop_DRAGON_SCIMITAR_Text_0, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SLAYER_REWARD_SHOP
+	setvar VAR_0x8008, 48
+	setvar VAR_0x8009, ITEM_DRAGON_SCIMITAR
+	goto SLAYER_REWARD_SHOP_TryPurchasePrize
+	end
+
+
+SlayerRewardShop_ELEMENTAL_SHIELD::
+	msgbox SlayerRewardShop_ELEMENTAL_SHIELD_Text_0, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SLAYER_REWARD_SHOP
+	setvar VAR_0x8008, 48
+	setvar VAR_0x8009, ITEM_ELEMENTAL_SHIELD
+	goto SLAYER_REWARD_SHOP_TryPurchasePrize
+	end
+
+
+SlayerRewardShop_GRANITE_MAUL::
+	msgbox SlayerRewardShop_GRANITE_MAUL_Text_0, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SLAYER_REWARD_SHOP
+	setvar VAR_0x8008, 48
+	setvar VAR_0x8009, ITEM_GRANITE_MAUL
+	goto SLAYER_REWARD_SHOP_TryPurchasePrize
+	end
+
+
+SlayerRewardShop_KRAKEN_TENTACLE::
+	msgbox SlayerRewardShop_KRAKEN_TENTACLE_Text_0, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SLAYER_REWARD_SHOP
+	setvar VAR_0x8008, 48
+	setvar VAR_0x8009, ITEM_KRAKEN_TENTACLE
+	goto SLAYER_REWARD_SHOP_TryPurchasePrize
+	end
+
+
 KOUREND_SLAYER_QUEST_START_Text_0:
 	.string "You look strong, could I would you be\n"
 	.string "interested in doing some Slayer tasks\l"
@@ -257,4 +414,48 @@ SlayerRewardShop_DarkTotemBottom_Text_0:
 
 SlayerRewardShop_AncientShard_Text_0:
 	.string "You've chosen the ANCIENT SHARD.\p"
+	.string "Is that correct?$"
+
+SlayerRewardShop_Overload_Text_0:
+	.string "You've chosen the OVERLOAD.\p"
+	.string "Is that correct?$"
+
+SlayerRewardShop_SARADOMIN_BREW_Text_0:
+	.string "You've chosen the SARADOMIN BREW.\p"
+	.string "Is that correct?$"
+
+SlayerRewardShop_PHOENIX_NECKLACE_Text_0:
+	.string "You've chosen the PHOENIX NECKLACE.\p"
+	.string "Is that correct?$"
+
+SlayerRewardShop_ABYSSAL_WHIP_Text_0:
+	.string "You've chosen the ABYSSAL WHIP.\p"
+	.string "Is that correct?$"
+
+SlayerRewardShop_DFS_Text_0:
+	.string "You've chosen the ANTI DRAGON SHIELD.\p"
+	.string "Is that correct?$"
+
+SlayerRewardShop_DRAGON_CLAWS_Text_0:
+	.string "You've chosen the DRAGON CLAWS.\p"
+	.string "Is that correct?$"
+
+SlayerRewardShop_DRAGON_DAGGER_POISON_Text_0:
+	.string "You've chosen the DRAGON DAGGER.\p"
+	.string "Is that correct?$"
+
+SlayerRewardShop_DRAGON_SCIMITAR_Text_0:
+	.string "You've chosen the DRAGON SCIMITAR.\p"
+	.string "Is that correct?$"
+
+SlayerRewardShop_ELEMENTAL_SHIELD_Text_0:
+	.string "You've chosen the ELEMENTAL SHIELD.\p"
+	.string "Is that correct?$"
+
+SlayerRewardShop_GRANITE_MAUL_Text_0:
+	.string "You've chosen the GRANITE MAUL.\p"
+	.string "Is that correct?$"
+
+SlayerRewardShop_KRAKEN_TENTACLE_Text_0:
+	.string "You've chosen the KRAKEN TENTACLE.\p"
 	.string "Is that correct?$"

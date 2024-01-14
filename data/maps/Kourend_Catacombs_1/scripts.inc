@@ -27,8 +27,24 @@ ZEAH_TELEPORT_ENTER_2:
 ZEAH_TELEPORT_ENTER_5:
 	msgbox ZEAH_TELEPORT_ENTER_Text_1
 	applymovement OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT
-	removeitem ITEM_DARK_TOTEM, 1
-	warpteleport MAP_KOUREND_CATACOMBS_7, 0, 0, 0
+	warpteleport MAP_KOUREND_CATACOMBS_8, 0, 0, 0
+	closemessage
+	release
+	end
+
+
+ZEAH_TELEPORT_EXIT::
+	msgbox ZEAH_TELEPORT_EXIT_Text_0, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_ne ZEAH_TELEPORT_EXIT_2
+	closemessage
+	release
+	end
+
+ZEAH_TELEPORT_EXIT_2:
+	msgbox ZEAH_TELEPORT_ENTER_Text_1
+	applymovement OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT
+	warpteleport MAP_KOUREND_CATACOMBS_1, 14, 0, 0
 	closemessage
 	release
 	end
@@ -411,6 +427,10 @@ ZEAH_TELEPORT_ENTER_Text_1:
 ZEAH_TELEPORT_ENTER_Text_2:
 	.string "There seems to be a slot in the Altar\n"
 	.string "for something.$"
+
+ZEAH_TELEPORT_EXIT_Text_0:
+	.string "Would you like to return to the Dark\n"
+	.string "Altar in the Catacombs?$"
 
 XERICS_TELEPORT_Text_0:
 	.string "Would you like to teleport to the\n"

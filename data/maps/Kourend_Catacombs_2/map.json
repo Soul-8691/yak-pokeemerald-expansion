@@ -305,15 +305,15 @@
       "x": 6,
       "y": 15,
       "elevation": 0,
-      "dest_map": "MAP_KOUREND_CATACOMBS_2",
+      "dest_map": "MAP_KOUREND_CATACOMBS_6",
       "dest_warp_id": 0
     },
     {
       "x": 6,
       "y": 23,
       "elevation": 0,
-      "dest_map": "MAP_KOUREND_CATACOMBS_2",
-      "dest_warp_id": 0
+      "dest_map": "MAP_KOUREND_CATACOMBS_1",
+      "dest_warp_id": 13
     }
   ],
   "coord_events": [

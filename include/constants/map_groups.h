@@ -972,6 +972,7 @@
 #define MAP_GWD_2                               (76 | (50 << 8))
 #define MAP_GWD_3                               (77 | (50 << 8))
 #define MAP_HIDDEN_GROTTOS                      (78 | (50 << 8))
+#define MAP_KOUREND_CATACOMBS_8                 (79 | (50 << 8))
 
 #define MAP_GROUPS_COUNT 51
 

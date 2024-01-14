@@ -11,8 +11,8 @@ script ZEAH_TELEPORT_ENTER {
             if (var(VAR_RESULT)){
                     msgbox(format("Suddenly the world starts to warp around you."))
                     applymovement(OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT)
-                    removeitem(ITEM_DARK_TOTEM, 1)
-                    warpteleport (MAP_KOUREND_CATACOMBS_7,0,0,0)
+                    //removeitem(ITEM_DARK_TOTEM, 1)
+                    warpteleport (MAP_KOUREND_CATACOMBS_8,0,0,0)
                     closemessage
                     release
                     end
@@ -26,6 +26,22 @@ script ZEAH_TELEPORT_ENTER {
     release
     end           
 }
+script ZEAH_TELEPORT_EXIT {
+    msgbox(format("Would you like to return to the Dark Altar in the Catacombs?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT)){
+            msgbox(format("Suddenly the world starts to warp around you."))
+            applymovement(OBJ_EVENT_ID_PLAYER, movement_TELEPORT_OUT)
+            //additem(ITEM_DARK_TOTEM, 1)
+            warpteleport (MAP_KOUREND_CATACOMBS_1, 14,0,0)
+            closemessage
+            release
+            end
+        }
+    closemessage
+    release
+    end
+}       
+
 
 script XERICS_TELEPORT {
     msgbox(format("Would you like to teleport to the Kourend?"), MSGBOX_YESNO)
@@ -244,12 +260,6 @@ script SLAYER_TASK_CANCEL
 }
 
 
-
-
-
-
-
-
 script DARK_TOTEM_CHECK
 {
     lock
@@ -280,8 +290,6 @@ script DARK_TOTEM_CHECK
     release
     end
 }
-
-
 script DARK_TOTEM_COMBINE
 {
     msgbox(format("Oh!\pThat is a piece of the Dark Totem!\pIf you can bring me all 3 pieces I can combine it the full Dark Totem."))
@@ -308,8 +316,6 @@ script DARK_TOTEM_COMBINE
     release
     end
 }
-
-
 
 
 

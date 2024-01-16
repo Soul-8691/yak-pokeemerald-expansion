@@ -1311,6 +1311,7 @@ gCryTable::
 	cry Cry_TzTok_Jad_HD_Mega_Form
 	cry Cry_TzTok_Jad_RS3_Mega_Form
 	cry Cry_Abyssal_Guardian
+	cry Cry_Skotizo
 
 	.align 2
 gCryTable_Reverse::
@@ -2625,3 +2626,4 @@ gCryTable_Reverse::
 	cry_reverse Cry_TzTok_Jad_HD_Mega_Form
 	cry_reverse Cry_TzTok_Jad_RS3_Mega_Form
 	cry_reverse Cry_Abyssal_Guardian
+	cry_reverse Cry_Skotizo

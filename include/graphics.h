@@ -9250,6 +9250,13 @@ extern const u32 gMonShinyPalette_Abyssal_Guardian[];
 extern const u32 gMonStillFrontPic_Abyssal_Guardian[];
 extern const u8 gMonIcon_Abyssal_Guardian[];
 extern const u8 gMonFootprint_Abyssal_Guardian[];
+extern const u32 gMonFrontPic_Skotizo[];
+extern const u32 gMonPalette_Skotizo[];
+extern const u32 gMonBackPic_Skotizo[];
+extern const u32 gMonShinyPalette_Skotizo[];
+extern const u32 gMonStillFrontPic_Skotizo[];
+extern const u8 gMonIcon_Skotizo[];
+extern const u8 gMonFootprint_Skotizo[];
 
 //POKESCAPE END
 extern const u32 gMonPic_Egg[];

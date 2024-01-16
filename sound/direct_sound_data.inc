@@ -5626,6 +5626,9 @@ Cry_TzTok_Jad_RS3_Mega_Form::
 Cry_Abyssal_Guardian::
 	.incbin "sound/direct_sound_samples/cries/chimecho.bin"
 
+	.align 2
+Cry_Skotizo::
+	.incbin "sound/direct_sound_samples/cries/swinub.bin"
 
 
 	.align 2

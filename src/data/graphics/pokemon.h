@@ -9167,7 +9167,12 @@ const u32 gMonShinyPalette_Abyssal_Guardian[] = INCBIN_U32("graphics/pokescape_m
 const u8 gMonIcon_Abyssal_Guardian[] = INCBIN_U8("graphics/pokescape_monsters/Abyssal_Guardian/icon.4bpp");
 const u8 gMonFootprint_Abyssal_Guardian[] = INCBIN_U8("graphics/pokescape_monsters/Abyssal_Guardian/footprint.1bpp");
 
-
+const u32 gMonStillFrontPic_Skotizo[] = INCBIN_U32("graphics/pokescape_monsters/Skotizo/front.4bpp.lz");
+const u32 gMonPalette_Skotizo[] = INCBIN_U32("graphics/pokescape_monsters/Skotizo/normal.gbapal.lz");
+const u32 gMonBackPic_Skotizo[] = INCBIN_U32("graphics/pokescape_monsters/Skotizo/back.4bpp.lz");
+const u32 gMonShinyPalette_Skotizo[] = INCBIN_U32("graphics/pokescape_monsters/Skotizo/shiny.gbapal.lz");
+const u8 gMonIcon_Skotizo[] = INCBIN_U8("graphics/pokescape_monsters/Skotizo/icon.4bpp");
+const u8 gMonFootprint_Skotizo[] = INCBIN_U8("graphics/pokescape_monsters/Skotizo/footprint.1bpp");
 
 
 

@@ -1359,6 +1359,7 @@ const u8 *const gMonIconTable[] =
 	[SPECIES_ZULRAH_TANZANITE_FORM] = gMonIcon_Zulrah_Tanzanite_Form,
 	[SPECIES_PIG_SUMMONING_FORM] = gMonIcon_Pig_Summoning_Form,
 	[SPECIES_ABYSSAL_GUARDIAN] = gMonIcon_Abyssal_Guardian,
+	[SPECIES_SKOTIZO] = gMonIcon_Skotizo,
 	//POKESCAPE END
     [SPECIES_EGG] = gMonIcon_Egg,
     [SPECIES_UNOWN_B] = gMonIcon_UnownB,
@@ -2730,6 +2731,7 @@ const u8 gMonIconPaletteIndices[] =
 	[SPECIES_ZULRAH_TANZANITE_FORM] = 0,
 	[SPECIES_PIG_SUMMONING_FORM] = 0,
 	[SPECIES_ABYSSAL_GUARDIAN] = 2,
+	[SPECIES_SKOTIZO] = 0,
 
 	//POKESCAPE END
     [SPECIES_EGG] = 2,

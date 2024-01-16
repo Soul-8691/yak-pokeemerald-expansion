@@ -15601,6 +15601,18 @@ const struct PokedexEntry gPokedexEntries[] =
 	.trainerOffset = 0 ,
 	},
 
+	[NATIONAL_DEX_SKOTIZO] =
+	{
+	.categoryName = _("Demon"),
+	.height = 0,
+	.weight = 0,
+	.description = gSkotizoPokedexText,
+	.pokemonScale = 256 ,
+	.pokemonOffset = 0 ,
+	.trainerScale = 256 ,
+	.trainerOffset = 0 ,
+	},
+
 
 
 

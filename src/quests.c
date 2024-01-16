@@ -431,7 +431,7 @@ static const struct SubQuest sSubQuests_KOUREND_SLAYER[QUEST_KOUREND_SLAYER_SUB_
 	      gText_SubQuest_Kourend_Slayer_Name1,
 	      gText_SubQuest_Kourend_Slayer_Name2,
 	      gText_SideQuestMap_Kourend,
-	      ITEM_OIL_CAN,
+	      ITEM_DARK_TOTEM_BASE,
 	      ITEM,
 	      sText_Found
 	),
@@ -441,7 +441,7 @@ static const struct SubQuest sSubQuests_KOUREND_SLAYER[QUEST_KOUREND_SLAYER_SUB_
 	      gText_SubQuest_Kourend_Slayer_Name2,
 	      gText_SubQuest_Kourend_Slayer_Name2,
 	      gText_SideQuestMap_Kourend,
-	      ITEM_RUBBER_TUBE,
+	      ITEM_DARK_TOTEM_MID,
 	      ITEM,
 	      sText_Found
 	),
@@ -451,7 +451,7 @@ static const struct SubQuest sSubQuests_KOUREND_SLAYER[QUEST_KOUREND_SLAYER_SUB_
 	      gText_SubQuest_Kourend_Slayer_Name3,
 	      gText_SubQuest_Kourend_Slayer_Name2,
 	      gText_SideQuestMap_Kourend,
-	      ITEM_PRESSURE_GAUGE,
+	      ITEM_DARK_TOTEM_TOP,
 	      ITEM,
 	      sText_Found
 	),

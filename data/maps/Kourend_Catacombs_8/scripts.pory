@@ -91,7 +91,7 @@ script ENCOUNTER_SKOTIZO
     hidenamebox
 	closemessage
 	delay(1)
-	setwildbattle (SPECIES_CALLISTO, 75, ITEM_NONE)
+	setwildbattle (SPECIES_SKOTIZO, 70, ITEM_NONE)
 	dowildbattle
     switch(var(VAR_RESULT)){
 		case B_OUTCOME_WON:
@@ -102,6 +102,11 @@ script ENCOUNTER_SKOTIZO
             setflag(FLAG_TEMP_A)
             removeobject (1)
             fadescreen(FADE_FROM_BLACK)
+            questmenu(QUEST_MENU_CHECK_COMPLETE , QUEST_KOUREND_SLAYER)
+            if (!var(VAR_RESULT))
+            { 
+                questmenu(QUEST_MENU_COMPLETE_QUEST , QUEST_KOUREND_SLAYER)
+            }
             closemessage
             end
         case B_OUTCOME_CAUGHT:
@@ -112,6 +117,11 @@ script ENCOUNTER_SKOTIZO
             setflag(FLAG_TEMP_A)
             removeobject (1)
             fadescreen(FADE_FROM_BLACK)
+            questmenu(QUEST_MENU_CHECK_COMPLETE , QUEST_KOUREND_SLAYER)
+            if (!var(VAR_RESULT))
+            { 
+                questmenu(QUEST_MENU_COMPLETE_QUEST , QUEST_KOUREND_SLAYER)
+            }
             closemessage
             end
         case B_OUTCOME_RAN:

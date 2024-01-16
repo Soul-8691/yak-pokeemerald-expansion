@@ -1335,5 +1335,6 @@ const u8 gSpeciesNames[][POKEMON_NAME_LENGTH + 1] = {
 [SPECIES_TZTOK_JAD_HD_MEGA_FORM] = _("TzTok Jad"),
 [SPECIES_TZTOK_JAD_RS3_MEGA_FORM] = _("TzTok Jad"),
 [SPECIES_ABYSSAL_GUARDIAN] = _("Abyssal"),
+[SPECIES_SKOTIZO] = _("Skotizo"),
 	//POKESCAPE END
 };

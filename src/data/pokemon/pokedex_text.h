@@ -7457,3 +7457,6 @@ const u8 gPig_Summoning_FormPokedexText[] = _(
 const u8 gAbyssal_GuardianPokedexText[] = _(
 "Nothing interesting happens.");
 
+const u8 gSkotizoPokedexText[] = _(
+"A demon found deep within the depths\n"
+"of Kourend. It's origins are unknown.");

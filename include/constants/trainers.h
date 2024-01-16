@@ -572,6 +572,7 @@
 #define TRAINER_CLASS_DIVINER		    0x7d
 #define TRAINER_CLASS_DUO		        0x7e
 #define TRAINER_CLASS_ARCHAEOLOGIST		0x7f
+#define TRAINER_CLASS_GIANT             0x80
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music

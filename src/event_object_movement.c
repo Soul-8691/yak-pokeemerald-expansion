@@ -628,7 +628,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_RUNE_GUARDIAN 0x122C
 #define OBJ_EVENT_PAL_SHEEP 0x122D
 //#define OBJ_EVENT_PAL_SARALING 0x122E
-#define OBJ_EVENT_PAL_SARAOWL 0x122F
+//#define OBJ_EVENT_PAL_SARAOWL 0x122F
 #define OBJ_EVENT_PAL_GUTHRAPTOR 0x1230
 /*
 #define OBJ_EVENT_PAL_SKELETAL_OX_M 0x1231
@@ -730,9 +730,12 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_RAC_PALETTE_5			0x126F
 #define OBJ_EVENT_PAL_RAC_PALETTE_6			0x1270
 
+
 #define OBJ_EVENT_PAL_CORP_BOSS			0x1271
 #define OBJ_EVENT_PAL_GIANTS			0x1272
-#define OBJ_EVENT_PAL_SKOTIZO           0x1273
+#define OBJ_EVENT_PAL_DRAGONS           0x1273
+#define OBJ_EVENT_PAL_SKOTIZO           0x1274
+
 /*
 #define OBJ_EVENT_PAL_RAC_BATS			0x126B
 #define OBJ_EVENT_PAL_RAC_DRAGON		0x126C
@@ -781,7 +784,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #include "data/object_events/object_event_graphics_info.h"
 #include "data/object_events/object_event_graphics_info_pointers.h"
 
-static const struct SpritePalette sObjectEventSpritePalettes[0xFF] = {
+static const struct SpritePalette sObjectEventSpritePalettes[0xFF] = { //Was 0xFF
     {gObjectEventPal_Npc1,                  OBJ_EVENT_PAL_TAG_NPC_1},
     {gObjectEventPal_Npc2,                  OBJ_EVENT_PAL_TAG_NPC_2},
     {gObjectEventPal_Npc3,                  OBJ_EVENT_PAL_TAG_NPC_3},
@@ -1002,7 +1005,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[0xFF] = {
     {gObjectEventPalette_Rune_Guardian, OBJ_EVENT_PAL_RUNE_GUARDIAN},
     {gObjectEventPalette_Sheep, OBJ_EVENT_PAL_SHEEP},
     //{gObjectEventPalette_Saraling, OBJ_EVENT_PAL_SARALING},
-    {gObjectEventPalette_Saraowl, OBJ_EVENT_PAL_SARAOWL},
+    //{gObjectEventPalette_Saraowl, OBJ_EVENT_PAL_SARAOWL},
     {gObjectEventPalette_Guthraptor, OBJ_EVENT_PAL_GUTHRAPTOR},
     /*
     {gObjectEventPalette_Skeletal_Ox_M, OBJ_EVENT_PAL_SKELETAL_OX_M},
@@ -1106,6 +1109,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[0xFF] = {
     {gObjectEventPalette_CORP_BOSS, OBJ_EVENT_PAL_CORP_BOSS},
     {gObjectEventPalette_GIANTS, OBJ_EVENT_PAL_GIANTS},
     {gObjectEventPalette_Skotizo, OBJ_EVENT_PAL_SKOTIZO},
+    {gObjectEventPalette_DRAGONS, OBJ_EVENT_PAL_DRAGONS},
     
     /*
     {gObjectEventPalette_RAC_BATS, OBJ_EVENT_PAL_RAC_BATS},

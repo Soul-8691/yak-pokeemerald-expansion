@@ -126,3 +126,295 @@ script ENCOUNTER_SKOTIZO
     release
 	end
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//OW ENCOUNTERS
+script ENCOUNTER_ABYSSAL_DEMON
+{
+	lock
+    faceplayer
+    namebox ("ABYSSAL DEMON")
+    playmoncry(SPECIES_URSARING, 0)
+	msgbox(format("WIZZZLE!"))
+    waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+    specialvar (VAR_RESULT, GetCurrentMap)
+    if (var(VAR_RESULT) == MAP_ABYSSAL_REALM_1) {
+        setwildbattle (SPECIES_ABYSSAL_DEMON_FORM, 25, ITEM_NONE)
+    }
+    else {
+        setwildbattle (SPECIES_ABYSSAL_DEMON_FORM, 50, ITEM_NONE)
+    }
+	dowildbattle
+    switch(var(VAR_RESULT)){
+		case B_OUTCOME_WON:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+        case B_OUTCOME_CAUGHT:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+    }
+    release
+	end
+}
+
+script ENCOUNTER_SLIME
+{
+	lock
+    faceplayer
+    namebox ("SLIME")
+    playmoncry(SPECIES_URSARING, 0)
+	msgbox(format("GLOOOP! GOOP!"))
+    waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+    specialvar (VAR_RESULT, GetCurrentMap)
+    if (var(VAR_RESULT) == MAP_KOUREND_CATACOMBS_4) {
+        setwildbattle (SPECIES_JELLY_WARPED_FORM, 50, ITEM_NONE)
+    }
+    elif (var(VAR_RESULT) == MAP_KOUREND_CATACOMBS_3) {
+        setwildbattle (SPECIES_JELLY_NORMAL_FORM, 50, ITEM_NONE)
+    }
+    else {
+        setwildbattle (SPECIES_CAVE_SLIME, 20, ITEM_NONE)
+    }
+	dowildbattle
+    switch(var(VAR_RESULT)){
+		case B_OUTCOME_WON:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+        case B_OUTCOME_CAUGHT:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+    }
+    release
+	end
+}
+
+script ENCOUNTER_ROCKCRAB
+{
+	lock
+    namebox ("ROCK CRAB")
+    playmoncry(SPECIES_URSARING, 0)
+	msgbox(format("SNIP SNIP!"))
+    waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+    specialvar (VAR_RESULT, GetCurrentMap)
+    if ((var(VAR_RESULT) == MAP_KOUREND_CATACOMBS_3) || (var(VAR_RESULT) == MAP_KOUREND_CATACOMBS_4)){
+        setwildbattle (SPECIES_ROCK_CRAB_GIANT_SAND_FORM, 50, ITEM_NONE)
+    }
+    else {
+        setwildbattle (SPECIES_ROCK_CRAB_NORMAL_FORM, 20, ITEM_NONE)
+    }
+	dowildbattle
+    switch(var(VAR_RESULT)){
+		case B_OUTCOME_WON:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+        case B_OUTCOME_CAUGHT:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+    }
+    release
+	end
+}
+
+script ENCOUNTER_DRAGON_BLACK
+{
+	lock
+    namebox ("DRAGON")
+    playmoncry(SPECIES_URSARING, 0)
+	msgbox(format("RAWR!"))
+    waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+    setwildbattle (SPECIES_DRAGON_BLACK_FORM, 50, ITEM_NONE)
+	dowildbattle
+    switch(var(VAR_RESULT)){
+		case B_OUTCOME_WON:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+        case B_OUTCOME_CAUGHT:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+    }
+    release
+	end
+}
+script ENCOUNTER_DRAGON_RED
+{
+	lock
+    namebox ("DRAGON")
+    playmoncry(SPECIES_URSARING, 0)
+	msgbox(format("RAWR!"))
+    waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+    setwildbattle (SPECIES_DRAGON_RED_FORM, 50, ITEM_NONE)
+	dowildbattle
+    switch(var(VAR_RESULT)){
+		case B_OUTCOME_WON:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+        case B_OUTCOME_CAUGHT:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+    }
+    release
+	end
+}
+script ENCOUNTER_DRAGON_BLUE
+{
+	lock
+    namebox ("DRAGON")
+    playmoncry(SPECIES_URSARING, 0)
+	msgbox(format("RAWR!"))
+    waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+    setwildbattle (SPECIES_DRAGON_BLUE_FORM, 50, ITEM_NONE)
+	dowildbattle
+    switch(var(VAR_RESULT)){
+		case B_OUTCOME_WON:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+        case B_OUTCOME_CAUGHT:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+    }
+    release
+	end
+}
+script ENCOUNTER_DRAGON_GREEN
+{
+	lock
+    namebox ("DRAGON")
+    playmoncry(SPECIES_URSARING, 0)
+	msgbox(format("RAWR!"))
+    waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+    setwildbattle (SPECIES_DRAGON_GREEN_FORM, 50, ITEM_NONE)
+	dowildbattle
+    switch(var(VAR_RESULT)){
+		case B_OUTCOME_WON:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+        case B_OUTCOME_CAUGHT:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+    }
+    release
+	end
+}
+script ENCOUNTER_BASILISK
+{
+	lock
+    namebox ("BASILISK")
+    playmoncry(SPECIES_URSARING, 0)
+	msgbox(format("KYARROOW!"))
+    waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+    setwildbattle (SPECIES_BASILISK_KNIGHT_FORM, 50, ITEM_NONE)
+	dowildbattle
+    switch(var(VAR_RESULT)){
+		case B_OUTCOME_WON:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+        case B_OUTCOME_CAUGHT:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+    }
+    release
+	end
+}
+
+script ENCOUNTER_GREATER_DEMON
+{
+	lock
+    faceplayer
+    namebox ("GREATER DEMON")
+    playmoncry(SPECIES_EKANS, 0)
+	msgbox(format("RAOUGH!"))
+    waitmoncry
+    hidenamebox
+	closemessage
+	delay(1)
+    specialvar (VAR_RESULT, GetCurrentMap)
+    if (var(VAR_RESULT) == MAP_KOUREND_CATACOMBS_2) {
+        setwildbattle (SPECIES_DEMON_GREATER_OSRS_FORM, 50, ITEM_NONE)
+    }
+    elif (var(VAR_RESULT) == MAP_KOUREND_CATACOMBS_3) {
+        setwildbattle (SPECIES_DEMON_GREATER_TONGUE_FORM, 50, ITEM_NONE)
+    }
+    elif (var(VAR_RESULT) == MAP_KOUREND_CATACOMBS_7) {
+        setwildbattle (SPECIES_DEMON_GREATER_BLACK_FORM, 50, ITEM_NONE)
+    }
+    else {
+        setwildbattle (SPECIES_DEMON_GREATER_OSRS_FORM, 25, ITEM_NONE)
+    }
+	dowildbattle
+    switch(var(VAR_RESULT)){
+		case B_OUTCOME_WON:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+        case B_OUTCOME_CAUGHT:
+            fadescreen(FADE_TO_BLACK)
+            removeobject (VAR_LAST_TALKED)
+            fadescreen(FADE_FROM_BLACK)
+    }
+    release
+	end
+}

@@ -526,9 +526,13 @@
 #define OBJ_EVENT_GFX_MOSS_GIANT		        509
 #define OBJ_EVENT_GFX_FIRE_GIANT		        510
 #define OBJ_EVENT_GFX_SKOTIZO		            511
+#define OBJ_EVENT_GFX_DRAGON_RED		        512
+#define OBJ_EVENT_GFX_DRAGON_BLACK		        513
+#define OBJ_EVENT_GFX_DRAGON_BLUE		        514
+#define OBJ_EVENT_GFX_DRAGON_GREEN		        515
 
 
-#define NUM_OBJ_EVENT_GFX                        512
+#define NUM_OBJ_EVENT_GFX                        516
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
 // Object event graphics ids are 1 byte in size (max value of 255), and the dynamic

@@ -1,2 +1,7 @@
 Kourend_Catacombs_6_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, Kourend_Catacombs_6_MapScripts_MAP_SCRIPT_ON_LOAD
 	.byte 0
+
+Kourend_Catacombs_6_MapScripts_MAP_SCRIPT_ON_LOAD:
+	return
+

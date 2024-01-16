@@ -1,0 +1,8 @@
+mapscripts Kourend_Catacombs_6_MapScripts {
+    MAP_SCRIPT_ON_LOAD 
+    {
+
+    }
+}
+
+

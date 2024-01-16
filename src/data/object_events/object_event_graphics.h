@@ -690,6 +690,12 @@ const u32 gObjectEventPic_Moss_Giant[] = INCBIN_U32("graphics/object_events/pics
 const u32 gObjectEventPic_Fire_Giant[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/fire_giant.4bpp");
 const u32 gObjectEventPic_Skotizo[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/skotizo.4bpp");
 
+const u32 gObjectEventPic_Dragon_Green[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/dragon_green.4bpp");
+const u32 gObjectEventPic_Dragon_Red[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/dragon_red.4bpp");
+const u32 gObjectEventPic_Dragon_Blue[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/dragon_blue.4bpp");
+const u32 gObjectEventPic_Dragon_Black[] = INCBIN_U32("graphics/object_events/pics/pokescape_overworlds/dragon_black.4bpp");
+
+
 
 
 
@@ -982,7 +988,7 @@ const u16 gObjectEventPalette_RAC_PALETTE_6[] = INCBIN_U16("graphics/object_even
 const u16 gObjectEventPalette_CORP_BOSS[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/CORP_BOSS.gbapal");
 const u16 gObjectEventPalette_GIANTS[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/giants.gbapal");
 const u16 gObjectEventPalette_Skotizo[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/skotizo.gbapal");
-
+const u16 gObjectEventPalette_DRAGONS[] = INCBIN_U16("graphics/object_events/palettes/PokeScape_Palettes/dragons.gbapal");
 /*
 const u16 gObjectEventPalette_RAC_BATS[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/RAC_BATS.gbapal");
 const u16 gObjectEventPalette_RAC_DRAGON[] = INCBIN_U16("graphics/object_events/pics/pokescape_overworlds/RAC_DRAGON.gbapal");

@@ -520,6 +520,11 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Moss_Giant;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Fire_Giant;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Skotizo;
 
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dragon_Green;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dragon_Blue;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dragon_Red;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dragon_Black;
+
 //ORES
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CopperOre;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TinOre;
@@ -1047,6 +1052,11 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MOSS_GIANT] =                    &gObjectEventGraphicsInfo_Moss_Giant,
     [OBJ_EVENT_GFX_FIRE_GIANT] =                    &gObjectEventGraphicsInfo_Fire_Giant,
     [OBJ_EVENT_GFX_SKOTIZO] =                       &gObjectEventGraphicsInfo_Skotizo,
+    [OBJ_EVENT_GFX_DRAGON_GREEN] =                       &gObjectEventGraphicsInfo_Dragon_Green,
+    [OBJ_EVENT_GFX_DRAGON_RED] =                       &gObjectEventGraphicsInfo_Dragon_Red,
+    [OBJ_EVENT_GFX_DRAGON_BLUE] =                       &gObjectEventGraphicsInfo_Dragon_Blue,
+    [OBJ_EVENT_GFX_DRAGON_BLACK] =                       &gObjectEventGraphicsInfo_Dragon_Black,
+
 
 //ORES 
 	[OBJ_EVENT_GFX_COPPER_ORE] =          		    &gObjectEventGraphicsInfo_CopperOre,

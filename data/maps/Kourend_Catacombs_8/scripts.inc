@@ -40,25 +40,31 @@ SKOTIZO_CHECK_4:
 
 
 SKOTIZO_TRIGGER::
+	compare VAR_TEMP_E, 5
+	goto_if_eq SKOTIZO_TRIGGER_2
 	checkitem ITEM_DARK_TOTEM, 1
 	compare VAR_RESULT, 0
-	goto_if_ne SKOTIZO_TRIGGER_2
+	goto_if_ne SKOTIZO_TRIGGER_5
 	release
 	end
 
 SKOTIZO_TRIGGER_2:
+	release
+	end
+
+SKOTIZO_TRIGGER_5:
 	lock
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_FACEUP
 	waitmovement 0
 	msgbox SKOTIZO_TRIGGER_Text_0, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_ne SKOTIZO_TRIGGER_5
-SKOTIZO_TRIGGER_4:
+	goto_if_ne SKOTIZO_TRIGGER_8
+SKOTIZO_TRIGGER_7:
 	closemessage
 	release
 	end
 
-SKOTIZO_TRIGGER_5:
+SKOTIZO_TRIGGER_8:
 	msgbox SKOTIZO_TRIGGER_Text_1
 	closemessage
 	delay 30
@@ -89,7 +95,7 @@ SKOTIZO_TRIGGER_5:
 	msgbox SKOTIZO_TRIGGER_Text_2
 	closemessage
 	goto ENCOUNTER_SKOTIZO
-	goto SKOTIZO_TRIGGER_4
+	goto SKOTIZO_TRIGGER_7
 
 
 ENCOUNTER_SKOTIZO::

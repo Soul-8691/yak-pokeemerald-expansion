@@ -223,6 +223,37 @@
 #define TRAINER_PIC_guard_draynor                202
 #define TRAINER_PIC_quester                203
 #define TRAINER_PIC_SoffanQuo                204
+
+#define TRAINER_PIC_Barrows_RS3_Guthan			205
+#define TRAINER_PIC_Barrows_RS3_Karil			206
+#define TRAINER_PIC_Chase			            207
+#define TRAINER_PIC_dragon_armour			    208
+#define TRAINER_PIC_duo_dragon_ranger			209
+#define TRAINER_PIC_duo_mage_light			    210
+#define TRAINER_PIC_duo_mage_runecraft			211
+#define TRAINER_PIC_fire_giant			        212
+#define TRAINER_PIC_graceful_2			        213
+#define TRAINER_PIC_hill_giant			        214
+#define TRAINER_PIC_joe			                215
+#define TRAINER_PIC_lady_keli			        216
+#define TRAINER_PIC_mage_mystic			        217
+#define TRAINER_PIC_meteor			            218
+#define TRAINER_PIC_moss_giant			        219
+#define TRAINER_PIC_necromancer			        220
+#define TRAINER_PIC_PippinSmith			        221
+#define TRAINER_PIC_ramokee			            222
+#define TRAINER_PIC_ranger_robin			    223
+#define TRAINER_PIC_runecrafter			        224
+#define TRAINER_PIC_thok			            225
+#define TRAINER_PIC_tokhaar			            226
+#define TRAINER_PIC_VoidKnight_1			    227
+#define TRAINER_PIC_VoidKnight_2			    228
+#define TRAINER_PIC_VoidKnight_3			    229
+#define TRAINER_PIC_VoidKnight_4			    230
+#define TRAINER_PIC_VoidKnight_5			    231
+#define TRAINER_PIC_WiseOldMan_1			    232
+#define TRAINER_PIC_WiseOldMan_2			    233
+#define TRAINER_PIC_wizard_zamorak			    234
 //#define TRAINER_PIC_			        204
 
 

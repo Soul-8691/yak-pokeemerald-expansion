@@ -5070,6 +5070,34 @@ static const struct SpriteFrameImage sPicTable_RAC_DEWYDD[] = {
     overworld_frame(gObjectEventPic_RAC_DEWYDD, 2, 4, 8),
 };
 
+static const struct SpriteFrameImage sPicTable_Skotizo[] = {
+    overworld_frame(gObjectEventPic_Skotizo, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Skotizo, 4, 4, 1),
+};
+static const struct SpriteFrameImage sPicTable_Hill_Giant[] = {
+    overworld_frame(gObjectEventPic_Hill_Giant, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Hill_Giant, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Hill_Giant, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Hill_Giant, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Hill_Giant, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Hill_Giant, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Moss_Giant[] = {
+    overworld_frame(gObjectEventPic_Moss_Giant, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Moss_Giant, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Moss_Giant, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Moss_Giant, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Moss_Giant, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Moss_Giant, 4, 4, 5),
+};
+static const struct SpriteFrameImage sPicTable_Fire_Giant[] = {
+    overworld_frame(gObjectEventPic_Fire_Giant, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Fire_Giant, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Fire_Giant, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Fire_Giant, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Fire_Giant, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Fire_Giant, 4, 4, 5),
+};
 
 
 

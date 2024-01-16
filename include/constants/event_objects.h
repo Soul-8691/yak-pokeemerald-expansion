@@ -522,9 +522,13 @@
 #define OBJ_EVENT_GFX_RAC_POPBUBBLE		        505
 #define OBJ_EVENT_GFX_CORP_BEAST		        506
 #define OBJ_EVENT_GFX_CORP_CORE		            507
+#define OBJ_EVENT_GFX_HILL_GIANT		        508
+#define OBJ_EVENT_GFX_MOSS_GIANT		        509
+#define OBJ_EVENT_GFX_FIRE_GIANT		        510
+#define OBJ_EVENT_GFX_SKOTIZO		            511
 
 
-#define NUM_OBJ_EVENT_GFX                        508
+#define NUM_OBJ_EVENT_GFX                        512
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
 // Object event graphics ids are 1 byte in size (max value of 255), and the dynamic

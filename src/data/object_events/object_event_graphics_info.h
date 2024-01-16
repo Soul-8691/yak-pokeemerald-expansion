@@ -598,3 +598,8 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_BLKWITCH = {TA
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_CHARM = {TAG_NONE, OBJ_EVENT_PAL_RAC_PALETTE_5, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 10, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, sOamTables_16x32, sAnimTable_Standard, sPicTable_RAC_CHARM, gDummySpriteAffineAnimTable};
 
 
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hill_Giant = {TAG_NONE, OBJ_EVENT_PAL_GIANTS, OBJ_EVENT_PAL_TAG_NONE, 512, 32, 32, 2, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_32x32, sOamTables_32x32, sAnimTable_Following, sPicTable_Hill_Giant, gDummySpriteAffineAnimTable};
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Moss_Giant = {TAG_NONE, OBJ_EVENT_PAL_GIANTS, OBJ_EVENT_PAL_TAG_NONE, 512, 32, 32, 2, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_32x32, sOamTables_32x32, sAnimTable_Following, sPicTable_Moss_Giant, gDummySpriteAffineAnimTable};
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Fire_Giant = {TAG_NONE, OBJ_EVENT_PAL_GIANTS, OBJ_EVENT_PAL_TAG_NONE, 512, 32, 32, 2, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_32x32, sOamTables_32x32, sAnimTable_Following, sPicTable_Fire_Giant, gDummySpriteAffineAnimTable};
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Skotizo = {TAG_NONE, OBJ_EVENT_PAL_SKOTIZO, OBJ_EVENT_PAL_TAG_NONE, 512, 32, 32, 5, SHADOW_SIZE_M, TRUE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_32x32, sOamTables_32x32, sAnimTable_Idle, sPicTable_Skotizo, gDummySpriteAffineAnimTable};

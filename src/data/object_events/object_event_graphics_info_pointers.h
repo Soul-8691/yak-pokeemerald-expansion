@@ -485,13 +485,10 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Labrador;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Guard;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Corgi;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dog_Dalmatian;
-
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pker_Rusher;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rune_Armour;
-
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Corp_Beast;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Corp_Core;
-
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Smuggler;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_BATS;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_DRAGON;
@@ -517,6 +514,11 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_POPBUBBLE;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_SNAILY;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_TIFA;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RAC_WHISPER;
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Hill_Giant;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Moss_Giant;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Fire_Giant;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Skotizo;
 
 //ORES
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CopperOre;
@@ -1041,6 +1043,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_RAC_WHISPER] =                       &gObjectEventGraphicsInfo_RAC_WHISPER,
     [OBJ_EVENT_GFX_CORP_BEAST] =                    &gObjectEventGraphicsInfo_Corp_Beast,
     [OBJ_EVENT_GFX_CORP_CORE] =                    &gObjectEventGraphicsInfo_Corp_Core,
+    [OBJ_EVENT_GFX_HILL_GIANT] =                    &gObjectEventGraphicsInfo_Hill_Giant,
+    [OBJ_EVENT_GFX_MOSS_GIANT] =                    &gObjectEventGraphicsInfo_Moss_Giant,
+    [OBJ_EVENT_GFX_FIRE_GIANT] =                    &gObjectEventGraphicsInfo_Fire_Giant,
+    [OBJ_EVENT_GFX_SKOTIZO] =                       &gObjectEventGraphicsInfo_Skotizo,
 
 //ORES 
 	[OBJ_EVENT_GFX_COPPER_ORE] =          		    &gObjectEventGraphicsInfo_CopperOre,

@@ -31,7 +31,7 @@ Kourend_Catacombs_1_Start:
     setflag FLAG_SYS_POKEDEX_GET
     special EnableNationalPokedex
     setflag FLAG_SYS_FRONTIER_PASS
-    additem ITEM_ULTRA_BALL, 10
+    additem ITEM_ULTRA_BALL, 20
     setflag FLAG_SYS_B_DASH
     setflag FLAG_SYS_QUEST_MENU_GET
     setrespawn HEAL_LOCATION_CATAS

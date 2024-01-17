@@ -107,7 +107,7 @@ ENCOUNTER_SKOTIZO::
 	hidenamebox
 	closemessage
 	delay 1
-	setwildbattle SPECIES_SKOTIZO, 70, ITEM_NONE
+	setwildbattle SPECIES_SKOTIZO, 60, ITEM_ROSELI_BERRY
 	dowildbattle
 	switch VAR_RESULT
 	case B_OUTCOME_WON, ENCOUNTER_SKOTIZO_3

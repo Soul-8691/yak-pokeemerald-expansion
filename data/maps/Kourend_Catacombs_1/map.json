@@ -251,13 +251,6 @@
   ],
   "warp_events": [
     {
-      "x": 23,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_ABYSSAL_REALM_1",
-      "dest_warp_id": 35
-    },
-    {
       "x": 21,
       "y": 7,
       "elevation": 0,

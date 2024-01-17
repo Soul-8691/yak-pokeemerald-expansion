@@ -50,8 +50,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "FIND_RANDOM_ITEM_KOUREND",
+      "flag": "FLAG_ITEM_REPEATABLE_ITEM_6"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_POUCH",
@@ -63,8 +63,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "FIND_RANDOM_ITEM_KOUREND",
+      "flag": "FLAG_ITEM_REPEATABLE_ITEM_7"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SKELETON_1",
@@ -219,8 +219,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "script": "ITEM_Catacombs_of_Kourend_4",
+      "flag": "FLAG_ITEM_KOUREND_CATACOMBS_4"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ABYSSAL_DEMON",
@@ -365,24 +365,24 @@
       "x": 19,
       "y": 9,
       "elevation": 3,
-      "item": "ITEM_XERIC",
-      "flag": "FLAG_TEMP_1"
+      "item": "ITEM_SPIRIT_SHARD",
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_1"
     },
     {
       "type": "hidden_item",
       "x": 27,
       "y": 24,
       "elevation": 3,
-      "item": "ITEM_ANCIENT_SHARD",
-      "flag": "FLAG_TEMP_1"
+      "item": "ITEM_LAMP_HP",
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_2"
     },
     {
       "type": "hidden_item",
       "x": 17,
       "y": 28,
       "elevation": 3,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
+      "item": "ITEM_PURPLE_SWEETS",
+      "flag": "FLAG_HIDDEN_ITEM_TEMP_3"
     },
     {
       "type": "sign",

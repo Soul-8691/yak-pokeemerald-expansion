@@ -130,6 +130,7 @@ ENCOUNTER_SKOTIZO_3:
 	compare VAR_RESULT, 0
 	goto_if_eq ENCOUNTER_SKOTIZO_8
 ENCOUNTER_SKOTIZO_7:
+	call RESET_KOUREND_CATACOMBS
 	closemessage
 	end
 
@@ -145,6 +146,7 @@ ENCOUNTER_SKOTIZO_4:
 	compare VAR_RESULT, 0
 	goto_if_eq ENCOUNTER_SKOTIZO_11
 ENCOUNTER_SKOTIZO_10:
+	call RESET_KOUREND_CATACOMBS
 	closemessage
 	end
 
@@ -167,6 +169,40 @@ ENCOUNTER_SKOTIZO_8:
 ENCOUNTER_SKOTIZO_11:
 	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_KOUREND_SLAYER
 	goto ENCOUNTER_SKOTIZO_10
+
+
+RESET_KOUREND_CATACOMBS::
+	clearflag FLAG_ITEM_REPEATABLE_ITEM_1
+	clearflag FLAG_ITEM_REPEATABLE_ITEM_2
+	clearflag FLAG_ITEM_REPEATABLE_ITEM_3
+	clearflag FLAG_ITEM_REPEATABLE_ITEM_4
+	clearflag FLAG_ITEM_REPEATABLE_ITEM_5
+	clearflag FLAG_ITEM_REPEATABLE_ITEM_6
+	clearflag FLAG_ITEM_REPEATABLE_ITEM_7
+	clearflag FLAG_ITEM_REPEATABLE_ITEM_8
+	clearflag FLAG_ITEM_REPEATABLE_ITEM_9
+	clearflag FLAG_ITEM_REPEATABLE_ITEM_10
+	clearflag FLAG_HIDDEN_ITEM_TEMP_1
+	clearflag FLAG_HIDDEN_ITEM_TEMP_2
+	clearflag FLAG_HIDDEN_ITEM_TEMP_3
+	clearflag FLAG_HIDDEN_ITEM_TEMP_4
+	clearflag FLAG_HIDDEN_ITEM_TEMP_5
+	clearflag FLAG_HIDDEN_ITEM_TEMP_6
+	clearflag FLAG_HIDDEN_ITEM_TEMP_7
+	clearflag FLAG_HIDDEN_ITEM_TEMP_8
+	clearflag FLAG_HIDDEN_ITEM_TEMP_9
+	clearflag FLAG_HIDDEN_ITEM_TEMP_10
+	clearflag FLAG_HIDDEN_ITEM_TEMP_11
+	clearflag FLAG_HIDDEN_ITEM_TEMP_12
+	clearflag FLAG_HIDDEN_ITEM_TEMP_13
+	clearflag FLAG_HIDDEN_ITEM_TEMP_14
+	clearflag FLAG_HIDDEN_ITEM_TEMP_15
+	clearflag FLAG_HIDDEN_ITEM_TEMP_16
+	clearflag FLAG_HIDDEN_ITEM_TEMP_17
+	clearflag FLAG_HIDDEN_ITEM_TEMP_18
+	clearflag FLAG_HIDDEN_ITEM_TEMP_19
+	clearflag FLAG_HIDDEN_ITEM_TEMP_20
+	return
 
 
 ENCOUNTER_ABYSSAL_DEMON::
@@ -523,7 +559,10 @@ ENCOUNTER_SKOTIZO_Text_1:
 	.string "ROOOARR!$"
 
 ENCOUNTER_SKOTIZO_Text_2:
-	.string "The Dark Totem shatters into pieces.$"
+	.string "You feel the catacombs shake and\n"
+	.string "tremble as the Dark Totem shatters\l"
+	.string "into pieces.\p"
+	.string "The air feels renewed.$"
 
 ENCOUNTER_SKOTIZO_Text_3:
 	.string "Skotizo just stands there staring at\n"

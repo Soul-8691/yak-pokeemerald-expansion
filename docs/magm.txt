@@ -1,0 +1,7 @@
+Catacombs of Kourend
+Project Leads: Yak Attack / Demonheadge
+Coders: Yak Attack / Demonheadge
+Spriters: Hyper Stan (wasn't involved with the process, but sprited most of the monsters [to my knowledge]), Demonheadge, rest of PokeScape team, Brolunite (Title Screen / Skotizo)
+Gimmick: Exploration
+Credits: pret, RHH, PokeScape team, Brolunite, Yak Attack
+ROM Base: Emerald 1.0

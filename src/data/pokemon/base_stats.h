@@ -41948,12 +41948,12 @@ const struct BaseStats gBaseStats[] =
 
     [SPECIES_SKOTIZO] =
 	{
-		.baseHP = 150,
+		.baseHP = 130,
 		.baseAttack = 120,
 		.baseDefense = 90,
 		.baseSpAttack = 90,
-		.baseSpDefense = 90,
-		.baseSpeed = 90,
+		.baseSpDefense = 110,
+		.baseSpeed = 70,
 		.type1 = TYPE_DARK,
 		.type2 = TYPE_DRAGON,
 		.catchRate = 20,
@@ -41972,7 +41972,7 @@ const struct BaseStats gBaseStats[] =
 		.growthRate = GROWTH_MEDIUM_FAST,
 		.eggGroup1 = EGG_GROUP_FIELD,
 		.eggGroup2 = EGG_GROUP_FIELD,
-		.abilities = {ABILITY_THICK_FAT, ABILITY_PICKUP},
+		.abilities = {ABILITY_TOUGH_CLAWS, ABILITY_INTIMIDATE},
 		.safariZoneFleeRate = 0,
 		.bodyColor = BODY_COLOR_BLACK,
 		.noFlip = TRUE,

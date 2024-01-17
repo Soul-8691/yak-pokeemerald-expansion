@@ -23265,63 +23265,657 @@
             "encounter_rate": 7,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 40,
+                "max_level": 42,
                 "species": "SPECIES_BLOODVELD"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 40,
+                "max_level": 42,
                 "species": "SPECIES_DEMON_LESSER_OSRS_FORM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "SPECIES_JELLY_NORMAL_FORM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "SPECIES_ABYSSAL_MINION_FORM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "SPECIES_GIANT_RAT_CRYPT_FORM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 41,
+                "max_level": 43,
                 "species": "SPECIES_HELLHOUND"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SPECIES_BLOODVELD_INSATIABLE_PHYSICAL_FORM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 42,
+                "max_level": 44,
                 "species": "SPECIES_BLOODVELD_INSATIABLE_SPECIAL_FORM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 43,
+                "max_level": 45,
                 "species": "SPECIES_DEMON_GREATER_OSRS_FORM"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 43,
+                "max_level": 45,
                 "species": "SPECIES_ABYSSAL_DEMON_FORM"
               },
               {
+                "min_level": 44,
+                "max_level": 46,
+                "species": "SPECIES_BASILISK_OSRS_FORM"
+              },
+              {
+                "min_level": 44,
+                "max_level": 46,
+                "species": "SPECIES_COCKATRICE"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BASILISK_OSRS_FORM"
+                "species": "SPECIES_ROCK_CRAB_GIANT_SAND_FORM"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_GIANT_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SLAGILITH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_STRANGE_FORM"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_KOUREND_CATACOMBS_2",
+          "base_label": "gKourend_Catacombs_20",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_BLOODVELD"
+              },
+              {
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_DEMON_LESSER_OSRS_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_JELLY_NORMAL_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_ABYSSAL_MINION_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_GIANT_RAT_CRYPT_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_HELLHOUND"
+              },
+              {
+                "min_level": 42,
+                "max_level": 44,
+                "species": "SPECIES_BLOODVELD_INSATIABLE_PHYSICAL_FORM"
+              },
+              {
+                "min_level": 42,
+                "max_level": 44,
+                "species": "SPECIES_BLOODVELD_INSATIABLE_SPECIAL_FORM"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_DEMON_GREATER_OSRS_FORM"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_ABYSSAL_DEMON_FORM"
+              },
+              {
+                "min_level": 44,
+                "max_level": 46,
+                "species": "SPECIES_BASILISK_OSRS_FORM"
+              },
+              {
+                "min_level": 44,
+                "max_level": 46,
+                "species": "SPECIES_COCKATRICE"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_GIANT_SAND_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_GIANT_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SLAGILITH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_STRANGE_FORM"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_KOUREND_CATACOMBS_3",
+          "base_label": "gKourend_Catacombs_30",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_BLOODVELD"
+              },
+              {
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_DEMON_LESSER_OSRS_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_JELLY_NORMAL_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_ABYSSAL_MINION_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_GIANT_RAT_CRYPT_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_HELLHOUND"
+              },
+              {
+                "min_level": 42,
+                "max_level": 44,
+                "species": "SPECIES_BLOODVELD_INSATIABLE_PHYSICAL_FORM"
+              },
+              {
+                "min_level": 42,
+                "max_level": 44,
+                "species": "SPECIES_BLOODVELD_INSATIABLE_SPECIAL_FORM"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_DEMON_GREATER_OSRS_FORM"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_ABYSSAL_DEMON_FORM"
+              },
+              {
+                "min_level": 44,
+                "max_level": 46,
+                "species": "SPECIES_BASILISK_OSRS_FORM"
+              },
+              {
+                "min_level": 44,
+                "max_level": 46,
+                "species": "SPECIES_COCKATRICE"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_GIANT_SAND_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_GIANT_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SLAGILITH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_STRANGE_FORM"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_KOUREND_CATACOMBS_4",
+          "base_label": "gKourend_Catacombs_40",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_BLOODVELD"
+              },
+              {
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_DEMON_LESSER_OSRS_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_JELLY_NORMAL_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_ABYSSAL_MINION_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_GIANT_RAT_CRYPT_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_HELLHOUND"
+              },
+              {
+                "min_level": 42,
+                "max_level": 44,
+                "species": "SPECIES_BLOODVELD_INSATIABLE_PHYSICAL_FORM"
+              },
+              {
+                "min_level": 42,
+                "max_level": 44,
+                "species": "SPECIES_BLOODVELD_INSATIABLE_SPECIAL_FORM"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_DEMON_GREATER_OSRS_FORM"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_ABYSSAL_DEMON_FORM"
+              },
+              {
+                "min_level": 44,
+                "max_level": 46,
+                "species": "SPECIES_BASILISK_OSRS_FORM"
+              },
+              {
+                "min_level": 44,
+                "max_level": 46,
+                "species": "SPECIES_COCKATRICE"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_GIANT_SAND_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_GIANT_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SLAGILITH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_STRANGE_FORM"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_KOUREND_CATACOMBS_5",
+          "base_label": "gKourend_Catacombs_50",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_BLOODVELD"
+              },
+              {
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_DEMON_LESSER_OSRS_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_JELLY_NORMAL_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_ABYSSAL_MINION_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_GIANT_RAT_CRYPT_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_HELLHOUND"
+              },
+              {
+                "min_level": 42,
+                "max_level": 44,
+                "species": "SPECIES_BLOODVELD_INSATIABLE_PHYSICAL_FORM"
+              },
+              {
+                "min_level": 42,
+                "max_level": 44,
+                "species": "SPECIES_BLOODVELD_INSATIABLE_SPECIAL_FORM"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_DEMON_GREATER_OSRS_FORM"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_ABYSSAL_DEMON_FORM"
+              },
+              {
+                "min_level": 44,
+                "max_level": 46,
+                "species": "SPECIES_BASILISK_OSRS_FORM"
+              },
+              {
+                "min_level": 44,
+                "max_level": 46,
+                "species": "SPECIES_COCKATRICE"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_GIANT_SAND_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_GIANT_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SLAGILITH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_STRANGE_FORM"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_KOUREND_CATACOMBS_6",
+          "base_label": "gKourend_Catacombs_60",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_BLOODVELD"
+              },
+              {
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_DEMON_LESSER_OSRS_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_JELLY_NORMAL_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_ABYSSAL_MINION_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_GIANT_RAT_CRYPT_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_HELLHOUND"
+              },
+              {
+                "min_level": 42,
+                "max_level": 44,
+                "species": "SPECIES_BLOODVELD_INSATIABLE_PHYSICAL_FORM"
+              },
+              {
+                "min_level": 42,
+                "max_level": 44,
+                "species": "SPECIES_BLOODVELD_INSATIABLE_SPECIAL_FORM"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_DEMON_GREATER_OSRS_FORM"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_ABYSSAL_DEMON_FORM"
+              },
+              {
+                "min_level": 44,
+                "max_level": 46,
+                "species": "SPECIES_BASILISK_OSRS_FORM"
+              },
+              {
+                "min_level": 44,
+                "max_level": 46,
+                "species": "SPECIES_COCKATRICE"
+              }
+            ]
+          },
+          "rock_smash_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_GIANT_SAND_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_CRAB_GIANT_NORMAL_FORM"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PET_ROCK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SLAGILITH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROCK_STRANGE_FORM"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_KOUREND_CATACOMBS_7",
+          "base_label": "gKourend_Catacombs_70",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_BLOODVELD"
+              },
+              {
+                "min_level": 40,
+                "max_level": 42,
+                "species": "SPECIES_DEMON_LESSER_OSRS_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_JELLY_NORMAL_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_ABYSSAL_MINION_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_GIANT_RAT_CRYPT_FORM"
+              },
+              {
+                "min_level": 41,
+                "max_level": 43,
+                "species": "SPECIES_HELLHOUND"
+              },
+              {
+                "min_level": 42,
+                "max_level": 44,
+                "species": "SPECIES_BLOODVELD_INSATIABLE_PHYSICAL_FORM"
+              },
+              {
+                "min_level": 42,
+                "max_level": 44,
+                "species": "SPECIES_BLOODVELD_INSATIABLE_SPECIAL_FORM"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_DEMON_GREATER_OSRS_FORM"
+              },
+              {
+                "min_level": 43,
+                "max_level": 45,
+                "species": "SPECIES_ABYSSAL_DEMON_FORM"
+              },
+              {
+                "min_level": 44,
+                "max_level": 46,
+                "species": "SPECIES_BASILISK_OSRS_FORM"
+              },
+              {
+                "min_level": 44,
+                "max_level": 46,
                 "species": "SPECIES_COCKATRICE"
               }
             ]

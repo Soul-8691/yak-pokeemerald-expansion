@@ -137,7 +137,7 @@ static void WarpToTruck(void)
 
 static void WarpToLUMBRIDGE(void)
 {
-    SetWarpDestination(MAP_GROUP(LUMBRIDGE_HOUSE_STARTER2), MAP_NUM(LUMBRIDGE_HOUSE_STARTER2), -1, 5, 5);
+    SetWarpDestination(MAP_GROUP(KOUREND_CATACOMBS_1), MAP_NUM(KOUREND_CATACOMBS_1), -1, 20, 9);
     WarpIntoMap();
 }
 static void WarpToFALADOR(void)

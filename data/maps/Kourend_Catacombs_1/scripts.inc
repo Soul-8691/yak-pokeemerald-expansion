@@ -1,11 +1,42 @@
 Kourend_Catacombs_1_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Kourend_Catacombs_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
+    map_script MAP_SCRIPT_ON_TRANSITION, Kourend_Catacombs_1_OnTransition
 	.byte 0
 
 Kourend_Catacombs_1_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 	map_script_2 VAR_SLAYER_COMPLETE, 1, SLAYER_TASK_COMPLETE
 	.2byte 0
 
+Kourend_Catacombs_1_OnTransition:
+    goto_if_unset FLAG_CATAS_START, Kourend_Catacombs_1_Start
+    end
+
+Kourend_Catacombs_1_Start:
+    givemon SPECIES_GUTHRAPTOR, 50, ITEM_SARADOMIN_BREW
+    setmonmove 0, 0, MOVE_LEAF_BLADE
+    setmonmove 0, 1, MOVE_HURRICANE
+    setmonmove 0, 2, MOVE_ENERGY_BALL
+    setmonmove 0, 3, MOVE_BRAVE_BIRD
+    givemon SPECIES_ZAMOHAWK, 50, ITEM_SARADOMIN_BREW
+    setmonmove 1, 0, MOVE_LAVA_PLUME
+    setmonmove 1, 1, MOVE_HURRICANE
+    setmonmove 1, 2, MOVE_FLARE_BLITZ
+    setmonmove 1, 3, MOVE_HEAT_WAVE
+    givemon SPECIES_SARAOWL, 50, ITEM_SARADOMIN_BREW
+    setmonmove 2, 0, MOVE_SPARKLING_ARIA
+    setmonmove 2, 1, MOVE_AIR_SLASH
+    setmonmove 2, 2, MOVE_HURRICANE
+    setmonmove 2, 3, MOVE_CALM_MIND
+    setflag FLAG_SYS_POKEMON_GET
+    setflag FLAG_SYS_POKEDEX_GET
+    special EnableNationalPokedex
+    setflag FLAG_SYS_FRONTIER_PASS
+    additem ITEM_ULTRA_BALL, 10
+    setflag FLAG_SYS_B_DASH
+    setflag FLAG_SYS_QUEST_MENU_GET
+    setrespawn HEAL_LOCATION_CATAS
+    setflag FLAG_CATAS_START
+    end
 
 ZEAH_TELEPORT_ENTER::
 	checkitem ITEM_DARK_TOTEM, 1

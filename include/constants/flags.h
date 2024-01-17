@@ -73,7 +73,7 @@
 
 //START -- TRADE FLAGS
 #define FLAG_LUMBRIDGE_TRADE_1    0x30 // Unused Flag
-#define FLAG_UNUSED_31   0x31 // Unused Flag
+#define FLAG_CATAS_START   0x31 // Unused Flag
 #define FLAG_UNUSED_32          0x32 // Unused Flag
 #define FLAG_UNUSED_33    0x33 // Unused Flag
 #define FLAG_UNUSED_34    0x34 // Unused Flag

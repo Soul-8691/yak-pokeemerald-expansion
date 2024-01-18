@@ -9768,7 +9768,7 @@ static void Cmd_various(void)
                 VarSet(VAR_SLAYER_COMPLETE, 1);
             }
         }
-        else if ((VarGet(VAR_SLAYER_ASSIGNMENT) == 2) && (enemySpecies == SPECIES_DEMON_LESSER_OSRS_FORM || enemySpecies == SPECIES_DEMON_GREATER_OSRS_FORM)) {
+        else if ((VarGet(VAR_SLAYER_ASSIGNMENT) == 2) && (enemySpecies == SPECIES_DEMON_LESSER_OSRS_FORM || enemySpecies == SPECIES_DEMON_GREATER_OSRS_FORM || enemySpecies == SPECIES_ABYSSAL_DEMON_FORM || enemySpecies == SPECIES_ABYSSAL_MINION_FORM)) {
             if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
                 leftToDefeat--;
             if ((leftToDefeat <= 0))
@@ -9776,14 +9776,14 @@ static void Cmd_various(void)
                 VarSet(VAR_SLAYER_COMPLETE, 1);
             }
         }
-        else if ((VarGet(VAR_SLAYER_ASSIGNMENT) == 3) && (enemySpecies == SPECIES_ABYSSAL_DEMON_FORM || enemySpecies == SPECIES_ABYSSAL_MINION_FORM)) {
+        /* else if ((VarGet(VAR_SLAYER_ASSIGNMENT) == 3) && (enemySpecies == SPECIES_ABYSSAL_DEMON_FORM || enemySpecies == SPECIES_ABYSSAL_MINION_FORM)) {
             if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
                 leftToDefeat--;
             if ((leftToDefeat <= 0))
             {
                 VarSet(VAR_SLAYER_COMPLETE, 1);
             }
-        }
+        } */
         /* JELLY
         else if ((VarGet(VAR_SLAYER_ASSIGNMENT) == 4) &&() enemySpecies == SPECIES_ABYSSAL_DEMON_FORM || enemySpecies == SPECIES_ABYSSAL_MINION_FORM)) {
             if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))

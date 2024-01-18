@@ -131,6 +131,10 @@ ENCOUNTER_SKOTIZO_3:
 	goto_if_eq ENCOUNTER_SKOTIZO_8
 ENCOUNTER_SKOTIZO_7:
 	call RESET_KOUREND_CATACOMBS
+    fadescreen FADE_TO_BLACK
+    msgbox THE_END
+    waitstate
+    fadescreen FADE_FROM_BLACK
 	closemessage
 	end
 
@@ -571,6 +575,14 @@ ENCOUNTER_SKOTIZO_Text_3:
 ENCOUNTER_SKOTIZO_Text_4:
 	.string "Skotizo is in disbelief you just\n"
 	.string "teleported away from battle.$"
+
+THE_END:
+	.string "Congratulations! You have completed\n"
+	.string "our MAGM entry! Flags have been reset.\l"
+	.string "A big thank you to Demonheadge for\n"
+	.string "mapping this area. Please check out\l"
+	.string "PokeScape if you want more RuneScape\n"
+	.string "in Pokemon action. Thanks for playing!$"
 
 ENCOUNTER_ABYSSAL_DEMON_Text_0:
 	.string "ABYSSAL DEMON$"

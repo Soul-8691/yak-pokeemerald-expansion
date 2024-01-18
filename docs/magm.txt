@@ -5,3 +5,4 @@ Spriters: Hyper Stan (wasn't involved with the process, but sprited most of the 
 Gimmick: Exploration
 Credits: pret, RHH, PokeScape team, Brolunite, Yak Attack
 ROM Base: Emerald 1.0
+Additional Comments: The goal of this hack is to buy the Dark Totem pieces, combine them, and use the Dark Totem on the center altar to reach and defeat or capture Skotizo. He is a level 60 boss with great coverage but kinda slow, so you will need 6 mons to take him down, most likely. He also holds a Roselia Berry; since he's Dark/Dragon, I didn't want you to one-shot him. You can buy all three Dark Totems after 9 Slayer tasks are completed, as each task is worth 36 Slayer Points. You might consider saving up for an item or two. Attached is a picture of the wild encounters for each room (they're all the same) and a map stitch as well. Overall, we hope you enjoy this experience, and make sure to check out PokeScape if you haven't already: https://linktr.ee/pokescapegba.

@@ -35,6 +35,9 @@ Kourend_Catacombs_1_Start:
     setflag FLAG_SYS_B_DASH
     setflag FLAG_SYS_QUEST_MENU_GET
     setrespawn HEAL_LOCATION_CATAS
+    additem ITEM_PICKAXE
+    additem ITEM_BOAT
+    additem ITEM_STRENGTHITEM
     setflag FLAG_CATAS_START
     end
 
@@ -240,18 +243,13 @@ SLAYER_TASK_ASSIGN::
 	random 4
 	addvar VAR_RESULT, 1
 	copyvar VAR_SLAYER_LEFT_TO_DEFEAT, VAR_RESULT
-	random 10
+	random 5
 	switch VAR_RESULT
 	case 0, SLAYER_TASK_ASSIGN_3
-	case 1, SLAYER_TASK_ASSIGN_4
-	case 2, SLAYER_TASK_ASSIGN_5
-	case 3, SLAYER_TASK_ASSIGN_6
-	case 4, SLAYER_TASK_ASSIGN_6
-	case 5, SLAYER_TASK_ASSIGN_7
-	case 6, SLAYER_TASK_ASSIGN_7
-	case 7, SLAYER_TASK_ASSIGN_7
-	case 8, SLAYER_TASK_ASSIGN_7
-	case 9, SLAYER_TASK_ASSIGN_8
+	case 1, SLAYER_TASK_ASSIGN_3
+	case 2, SLAYER_TASK_ASSIGN_4
+	case 3, SLAYER_TASK_ASSIGN_4
+	case 4, SLAYER_TASK_ASSIGN_4
 SLAYER_TASK_ASSIGN_1:
 	return
 
@@ -263,7 +261,7 @@ SLAYER_TASK_ASSIGN_3:
 
 SLAYER_TASK_ASSIGN_4:
 	setvar VAR_SLAYER_ASSIGNMENT, 2
-	bufferspeciesname STR_VAR_2, SPECIES_FROGEEL
+	bufferspeciesname STR_VAR_2, SPECIES_ABYSSAL_DEMON_FORM
 	buffernumberstring STR_VAR_3, VAR_SLAYER_LEFT_TO_DEFEAT
 	goto SLAYER_TASK_ASSIGN_1
 
@@ -330,7 +328,7 @@ SLAYER_TASK_COMPLETE::
 	random 12
 	addvar VAR_RESULT, 1
 	copyvar VAR_SLAYER_LEFT_TO_DEFEAT, VAR_RESULT
-	setvar VAR_0x8004, 12
+	setvar VAR_0x8004, 36
 	special GiveFrontierBattlePoints
 	buffernumberstring STR_VAR_1, VAR_0x8004
 	msgbox SLAYER_TASK_COMPLETE_Text_0

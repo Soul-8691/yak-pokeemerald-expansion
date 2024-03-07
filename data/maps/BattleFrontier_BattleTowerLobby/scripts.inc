@@ -38,6 +38,10 @@ BattleFrontier_BattleTowerLobby_OnWarp:
 BattleFrontier_BattleTowerLobby_EventScript_PlayerFaceNorth::
 	setvar VAR_TEMP_1, 1
 	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+    setflag FLAG_SYS_POKEMON_GET
+    setflag FLAG_SYS_POKEDEX_GET
+    setflag FLAG_SYS_NATIONAL_DEX
+    setflag FLAG_SYS_FRONTIER_PASS
 	end
 
 BattleFrontier_BattleTowerLobby_OnFrame:

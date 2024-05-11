@@ -1194,7 +1194,7 @@ void BtlController_EmitChooseItem(u32 battler, u32 bufferId, u8 *battlePartyOrde
     gBattleResources->transferBuffer[0] = CONTROLLER_OPENBAG;
     for (i = 0; i < PARTY_SIZE / 2; i++)
         gBattleResources->transferBuffer[1 + i] = battlePartyOrder[i];
-    PrepareBufferDataTransfer(battler, bufferId, gBattleResources->transferBuffer, 4);
+    PrepareBufferDataTransfer(battler, bufferId, gBattleResources->transferBuffer, 5); // Extra byte
 }
 
 void BtlController_EmitChoosePokemon(u32 battler, u32 bufferId, u8 caseId, u8 slotId, u16 abilityId, u8 *data)
@@ -1348,7 +1348,7 @@ void BtlController_EmitChosenMonReturnValue(u32 battler, u32 bufferId, u8 partyI
     gBattleResources->transferBuffer[1] = partyId;
     for (i = 0; i < (int)ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
         gBattleResources->transferBuffer[2 + i] = battlePartyOrder[i];
-    PrepareBufferDataTransfer(battler, bufferId, gBattleResources->transferBuffer, 5);
+    PrepareBufferDataTransfer(battler, bufferId, gBattleResources->transferBuffer, 6); // +1 extra byte due to expanded party size.
 }
 
 void BtlController_EmitOneReturnValue(u32 battler, u32 bufferId, u16 ret)

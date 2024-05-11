@@ -1794,7 +1794,7 @@ static void SpriteCb_MegaIndicator(struct Sprite *sprite)
 #define tBattler                data[0]
 #define tSummaryBarSpriteId     data[1]
 #define tBallIconSpriteId(n)    data[3 + n]
-#define tIsBattleStart          data[10]
+#define tIsBattleStart          data[11] // Necessary since data[3+n] overflows onto data[10] when there are 8 pokeballs
 #define tBlend                  data[15]
 
 u8 CreatePartyStatusSummarySprites(u8 battlerId, struct HpAndStatus *partyInfo, bool8 skipPlayer, bool8 isBattleStart)
@@ -1873,14 +1873,14 @@ u8 CreatePartyStatusSummarySprites(u8 battlerId, struct HpAndStatus *partyInfo, 
 
         if (!isOpponent)
         {
-            gSprites[ballIconSpritesIds[i]].x += 10 * i + 24;
+            gSprites[ballIconSpritesIds[i]].x += 8 * i + 24; // Reduced coordinates so ball sprites appear closer together
             gSprites[ballIconSpritesIds[i]].data[1] = i * 7 + 10;
             gSprites[ballIconSpritesIds[i]].x2 = 120;
         }
         else
         {
-            gSprites[ballIconSpritesIds[i]].x -= 10 * (5 - i) + 24;
-            gSprites[ballIconSpritesIds[i]].data[1] = (6 - i) * 7 + 10;
+            gSprites[ballIconSpritesIds[i]].x -= 8 * (7 - i) + 24; // Changed 5-i to 7-i to avoid negative overflow, not sure if really necessary
+            gSprites[ballIconSpritesIds[i]].data[1] = (8 - i) * 7 + 10; //Changed 6-i to 8-i for same reason
             gSprites[ballIconSpritesIds[i]].x2 = -120;
         }
 

@@ -16,7 +16,7 @@ int GameClear(void)
     struct RibbonCounter {
         u8 partyIndex;
         u8 count;
-    } ribbonCounts[6];
+    } ribbonCounts[PARTY_SIZE];
 
     HealPlayerParty();
 
@@ -65,7 +65,7 @@ int GameClear(void)
         IncrementGameStat(GAME_STAT_RECEIVED_RIBBONS);
         FlagSet(FLAG_SYS_RIBBON_GET);
 
-        for (i = 1; i < 6; i++)
+        for (i = 1; i < PARTY_SIZE; i++)
         {
             if (ribbonCounts[i].count > ribbonCounts[0].count)
             {

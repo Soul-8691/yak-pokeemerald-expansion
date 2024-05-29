@@ -1672,3 +1672,22 @@ const u16 gTilesetPalettes_ValenciaIsland[][16] =
 };
 
 const u32 gTilesetTiles_ValenciaIsland[] = INCBIN_U32("data/tilesets/secondary/valencia_island/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_ValenciaPark[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/valencia_park/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/valencia_park/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/valencia_park/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/valencia_park/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/valencia_park/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/valencia_park/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/valencia_park/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/valencia_park/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/valencia_park/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/valencia_park/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/valencia_park/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/valencia_park/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/valencia_park/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_ValenciaPark[] = INCBIN_U32("data/tilesets/secondary/valencia_park/tiles.4bpp.lz");

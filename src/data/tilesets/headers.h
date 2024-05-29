@@ -849,3 +849,14 @@ const struct Tileset gTileset_ValenciaIsland =
     .callback = NULL,
     .dontUsePal7 = TRUE,
 };
+
+const struct Tileset gTileset_ValenciaPark =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_ValenciaPark,
+    .palettes = gTilesetPalettes_ValenciaPark,
+    .metatiles = gMetatiles_ValenciaPark,
+    .metatileAttributes = gMetatileAttributes_ValenciaPark,
+    .callback = NULL,
+};

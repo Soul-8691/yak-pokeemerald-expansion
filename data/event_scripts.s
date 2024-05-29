@@ -1075,3 +1075,6 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/ValenciaIslandExterior/scripts.inc"
 	.include "data/maps/ValenciaIslandExterior/text.inc"
+
+	.include "data/maps/ValenciaPark/scripts.inc"
+	.include "data/maps/ValenciaPark/text.inc"

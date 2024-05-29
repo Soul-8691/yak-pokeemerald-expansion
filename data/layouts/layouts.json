@@ -5304,6 +5304,18 @@
       "secondary_tileset": "gTileset_ValenciaIsland",
       "border_filepath": "data/layouts/ValenciaIslandExterior/border.bin",
       "blockdata_filepath": "data/layouts/ValenciaIslandExterior/map.bin"
+    },
+    {
+      "id": "LAYOUT_VALENCIA_PARK",
+      "name": "ValenciaPark_Layout",
+      "width": 54,
+      "height": 54,
+      "border_width": 3,
+      "border_height": 2,
+      "primary_tileset": "gTileset_OrangeIslandsPrimary",
+      "secondary_tileset": "gTileset_ValenciaPark",
+      "border_filepath": "data/layouts/ValenciaPark/border.bin",
+      "blockdata_filepath": "data/layouts/ValenciaPark/map.bin"
     }
   ]
 }

@@ -396,6 +396,10 @@ const u16 gBerryTreeObjectEventGraphicsIdTable[] = {
     [BERRY_STAGE_BERRIES - 1] = OBJ_EVENT_GFX_BERRY_TREE_LATE_STAGES,
 };
 
+const u8 gBerryTreePaletteSlotTable_Tamato[] = {3, 4, 2, 2, 2};
+
+const u16 gDeadBerryTreeObjectEventGraphicsIdTable[] = {OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES, OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES, OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES, OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES, OBJ_EVENT_GFX_BERRY_TREE_EARLY_STAGES};
+
 const struct SpriteFrameImage *const gBerryTreePicTablePointers[] = {
     [ITEM_CHERI_BERRY - FIRST_BERRY_INDEX] = sPicTable_CheriBerryTree,
     [ITEM_CHESTO_BERRY - FIRST_BERRY_INDEX] = sPicTable_ChestoBerryTree,

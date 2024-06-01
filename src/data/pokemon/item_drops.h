@@ -1,11 +1,11 @@
 static const struct ItemDrops sShroodleDrops[] = 
 {
-    {ITEM_SILVERPOWDER, 100}
+    {ITEM_SILVERPOWDER, 25}
 };
 
 static const struct ItemDrops sBlipbugDrops[] = 
 {
-    {ITEM_SILVERPOWDER, 100}
+    {ITEM_SILVERPOWDER, 25}
 };
 
 const struct ItemDropSpecies gItemDropSpecies[] = {

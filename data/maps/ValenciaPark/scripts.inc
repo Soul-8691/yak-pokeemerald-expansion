@@ -2,7 +2,7 @@ ValenciaPark_MapScripts::
 	.byte 0
 
 ValenciaPark_EventScript_TestSign::
-	// givemon SPECIES_METAGROSS 10
+	givemon SPECIES_GROWLITHE 25
     setflag FLAG_SYS_POKEMON_GET
     setflag FLAG_SYS_POKEDEX_GET
     special EnableNationalPokedex

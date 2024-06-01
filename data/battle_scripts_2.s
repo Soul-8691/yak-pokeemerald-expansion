@@ -182,8 +182,8 @@ BattleScript_TryNicknameCaughtMon::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_SuccessBallThrowEnd
 BattleScript_GiveCaughtMonEnd::
-	givecaughtmon
 	updatequestcounter2
+	givecaughtmon
 BattleScript_SuccessBallThrowEnd::
 	setbyte gBattleOutcome, B_OUTCOME_CAUGHT
 	finishturn

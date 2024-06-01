@@ -10922,6 +10922,8 @@ static void Cmd_various(void)
             }
         }
         if (FlagGet(FLAG_VALENCIA_PARK_CAUGHT) && map == MAP_VALENCIA_PARK) {
+            u16 silverpowder = ITEM_SILVERPOWDER;
+            if ((enemySpecies == SPECIES_SHROODLE || enemySpecies == SPECIES_BLIPBUG) && Random() % 4 == 0) SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &silverpowder);
             if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
                 leftToCatch2--;
             if ((leftToCatch2 <= 0) && QuestMenu_GetSetQuestState(QUEST_4, FLAG_GET_ACTIVE))

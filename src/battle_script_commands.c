@@ -10960,6 +10960,10 @@ static void Cmd_various(void)
                                 if ((rand >= percentTotal - gItemDropSpecies[species].drops[k].dropChance) && (rand < percentTotal)) {
                                     species2[i] = species;
                                     items[i][j] = item;
+                                    if (item == ITEM_SILVERPOWDER) {
+                                        QuestMenu_GetSetQuestState(QUEST_6, FLAG_SET_REWARD);
+                                        QuestMenu_GetSetQuestState(QUEST_6 ,FLAG_REMOVE_ACTIVE);
+                                    }
                                 }
                             }
                         }

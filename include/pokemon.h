@@ -805,4 +805,18 @@ void HealPokemon(struct Pokemon *mon);
 void HealBoxPokemon(struct BoxPokemon *boxMon);
 const u8 *GetMoveName(u16 moveId);
 
+struct ItemDrops
+{
+    u16 item;
+    u8 dropChance;
+};
+
+struct ItemDropSpecies
+{
+    const struct ItemDrops *drops;
+    u8 dropCount;
+    u8 numDropsLower;
+    u8 numDropsUpper;
+};
+
 #endif // GUARD_POKEMON_H

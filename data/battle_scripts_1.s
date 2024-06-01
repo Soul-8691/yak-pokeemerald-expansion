@@ -5540,6 +5540,7 @@ BattleScript_LocalBattleWonReward::
 BattleScript_PayDayMoneyAndPickUpItems::
 	givepaydaymoney
 	givedroppeditems
+	updatequestcounter
 	pickup
 	end2
 

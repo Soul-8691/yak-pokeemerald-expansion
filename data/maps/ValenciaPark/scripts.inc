@@ -9,7 +9,19 @@ ValenciaPark_EventScript_TestSign::
     setflag FLAG_SYS_B_DASH
     setflag FLAG_SYS_QUEST_MENU_GET
     setflag FLAG_VALENCIA_PARK_SHROODLES
+    setflag FLAG_VALENCIA_PARK_BLIPBUGS
+    setflag FLAG_VALENCIA_PARK_DEFEATED_POKEMON
+    setflag FLAG_VALENCIA_PARK_CAUGHT
+    setflag FLAG_VALENCIA_PARK_DEFEATED_TRAINERS
     setvar VAR_QUEST_LEFT_TO_DEFEAT 5
+    setvar VAR_QUEST_LEFT_TO_CATCH 3
+    setvar VAR_QUEST_LEFT_TO_DEFEAT_2 20
+    setvar VAR_QUEST_LEFT_TO_CATCH_2 5
+    setvar VAR_QUEST_LEFT_TO_DEFEAT_3 5
     startquest QUEST_1
+    startquest QUEST_2
+    startquest QUEST_3
+    startquest QUEST_4
+    startquest QUEST_5
     additem ITEM_MASTER_BALL, 10
 	end

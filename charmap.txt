@@ -347,6 +347,10 @@ ARCHIE         = FD 0A
 MAXIE          = FD 0B
 KYOGRE         = FD 0C
 GROUDON        = FD 0D
+STR_VAR_5      = FD 0E
+STR_VAR_6      = FD 0F
+STR_VAR_7      = FD 10
+STR_VAR_8      = FD 11
 
 @ battle string placeholders
 

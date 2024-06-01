@@ -1889,11 +1889,11 @@ const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("Defeat {STR_VAR_3} Shroodle(s).");
-const u8 gText_SideQuestDesc_2[] = _("Description 2");
-const u8 gText_SideQuestDesc_3[] = _("Description 3");
-const u8 gText_SideQuestDesc_4[] = _("Description 4");
-const u8 gText_SideQuestDesc_5[] = _("Description 5");
-const u8 gText_SideQuestDesc_6[] = _("Description 6");
+const u8 gText_SideQuestDesc_2[] = _("Catch {STR_VAR_5} Blipbug(s).");
+const u8 gText_SideQuestDesc_3[] = _("Defeat {STR_VAR_6} Pokemon.");
+const u8 gText_SideQuestDesc_4[] = _("Catch {STR_VAR_7} Pokemon.");
+const u8 gText_SideQuestDesc_5[] = _("Defeat {STR_VAR_8} trainers.");
+const u8 gText_SideQuestDesc_6[] = _("Find 1 Silverpowder on a wild Shroodle/Blipbug.");
 const u8 gText_SideQuestDesc_7[] = _("Description 7");
 const u8 gText_SideQuestDesc_8[] = _("Description 8");
 const u8 gText_SideQuestDesc_9[] = _("Description 9");

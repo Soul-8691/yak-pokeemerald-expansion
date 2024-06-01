@@ -2061,6 +2061,14 @@ void UpdateQuestFlavorText(s32 questId)
 {
 	u16 leftToDefeat = VarGet(VAR_QUEST_LEFT_TO_DEFEAT);
     ConvertIntToDecimalStringN(gStringVar3, leftToDefeat, STR_CONV_MODE_LEFT_ALIGN, 1);
+	u16 leftToCatch = VarGet(VAR_QUEST_LEFT_TO_CATCH);
+    ConvertIntToDecimalStringN(gStringVar5, leftToCatch, STR_CONV_MODE_LEFT_ALIGN, 1);
+	u16 leftToDefeat2 = VarGet(VAR_QUEST_LEFT_TO_DEFEAT_2);
+    ConvertIntToDecimalStringN(gStringVar6, leftToDefeat2, STR_CONV_MODE_LEFT_ALIGN, 2);
+	u16 leftToCatch2 = VarGet(VAR_QUEST_LEFT_TO_CATCH_2);
+    ConvertIntToDecimalStringN(gStringVar7, leftToCatch2, STR_CONV_MODE_LEFT_ALIGN, 1);
+	u16 leftToDefeat3 = VarGet(VAR_QUEST_LEFT_TO_DEFEAT_3);
+    ConvertIntToDecimalStringN(gStringVar8, leftToDefeat3, STR_CONV_MODE_LEFT_ALIGN, 1);
 	StringCopy(gStringVar1, sSideQuests[questId].desc);
 }
 void PrintQuestFlavorText(s32 questId)

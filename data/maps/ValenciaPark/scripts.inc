@@ -13,6 +13,7 @@ ValenciaPark_EventScript_TestSign::
     setflag FLAG_VALENCIA_PARK_DEFEATED_POKEMON
     setflag FLAG_VALENCIA_PARK_CAUGHT
     setflag FLAG_VALENCIA_PARK_DEFEATED_TRAINERS
+    setflag FLAG_VALENCIA_PARK_SILVERPOWDER
     setvar VAR_QUEST_LEFT_TO_DEFEAT 5
     setvar VAR_QUEST_LEFT_TO_CATCH 3
     setvar VAR_QUEST_LEFT_TO_DEFEAT_2 20
@@ -23,5 +24,6 @@ ValenciaPark_EventScript_TestSign::
     startquest QUEST_3
     startquest QUEST_4
     startquest QUEST_5
+    startquest QUEST_6
     additem ITEM_MASTER_BALL, 10
 	end

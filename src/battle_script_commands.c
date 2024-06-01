@@ -10944,20 +10944,23 @@ static void Cmd_various(void)
             u16 species = GetMonData(&gEnemyParty[i], MON_DATA_SPECIES);
             if (species != SPECIES_NONE)
             {
-                u8 numDrops = (Random() % (gItemDropSpecies[species].numDropsUpper - gItemDropSpecies[species].numDropsLower + 1)) + gItemDropSpecies[species].numDropsLower;
-                if (numDrops > 0)
-                {
-                    for (j = 0; j < numDrops; j++)
+                u16 map = (gSaveBlock1Ptr->location.mapGroup << 8) + gSaveBlock1Ptr->location.mapNum;
+                if (FlagGet(FLAG_VALENCIA_PARK_SILVERPOWDER) && (species == SPECIES_SHROODLE || species == SPECIES_BLIPBUG) && map == MAP_VALENCIA_PARK) {
+                    u8 numDrops = (Random() % (gItemDropSpecies[species].numDropsUpper - gItemDropSpecies[species].numDropsLower + 1)) + gItemDropSpecies[species].numDropsLower;
+                    if (numDrops > 0)
                     {
-                        u32 rand = Random() % 100;
-                        u32 percentTotal = 0;
-                        for (k = 0; k < numDrops; k++)
+                        for (j = 0; j < numDrops; j++)
                         {
-                            u16 item = gItemDropSpecies[species].drops[k].item;
-                            percentTotal += gItemDropSpecies[species].drops[k].dropChance;
-                            if ((rand >= percentTotal - gItemDropSpecies[species].drops[k].dropChance) && (rand < percentTotal)) {
-                                species2[i] = species;
-                                items[i][j] = item;
+                            u32 rand = Random() % 100;
+                            u32 percentTotal = 0;
+                            for (k = 0; k < numDrops; k++)
+                            {
+                                u16 item = gItemDropSpecies[species].drops[k].item;
+                                percentTotal += gItemDropSpecies[species].drops[k].dropChance;
+                                if ((rand >= percentTotal - gItemDropSpecies[species].drops[k].dropChance) && (rand < percentTotal)) {
+                                    species2[i] = species;
+                                    items[i][j] = item;
+                                }
                             }
                         }
                     }

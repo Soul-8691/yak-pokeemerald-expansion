@@ -117,7 +117,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_GRASS },                      \
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_GRASSY_SURGE },  \
         .bodyColor = BODY_COLOR_GREEN,                                          \
-        .speciesName = _("Rillaboom"),                                          \
+        .speciesName = _("Moss Giant"),                                          \
         .cryId = CRY_RILLABOOM,                                                 \
         .natDexNum = NATIONAL_DEX_RILLABOOM,                                    \
         .categoryName = _("Drummer"),                                           \
@@ -2049,8 +2049,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 220,
         .weight = 0,
         .description = COMPOUND_STRING(
-            "")
-,
+            "Its sand pouch has grown to tremendous\n"
+            "proportions. More than 1,000,000 tons of\n"
+            "sand now swirl around its body with enough\n"
+            "speed and power to pulverize a skyscraper."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 610,
@@ -3089,7 +3091,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .eggGroups = { EGG_GROUP_FAIRY, EGG_GROUP_HUMAN_LIKE },                 \
         .abilities = { ABILITY_PRANKSTER, ABILITY_FRISK, ABILITY_PICKPOCKET },  \
         .bodyColor = BODY_COLOR_PURPLE,                                         \
-        .speciesName = _("Grimmsnarl"),                                         \
+        .speciesName = _("BlackDemon"),                                         \
         .cryId = CRY_GRIMMSNARL,                                                \
         .natDexNum = NATIONAL_DEX_GRIMMSNARL,                                   \
         .categoryName = _("Bulk Up"),                                           \
@@ -3324,7 +3326,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 #if P_GIGANTAMAX_FORMS
     [SPECIES_ALCREMIE_GIGANTAMAX] =
     {
-        ALCREMIE_MISC_INFO(BODY_COLOR_PINK),
+        ALCREMIE_MISC_INFO(BODY_COLOR_YELLOW),
         .isGigantamax = TRUE,
         .speciesName = _("Alcremie"),
         .cryId = CRY_ALCREMIE,
@@ -4184,7 +4186,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_DRAGON },                           \
         .abilities = { ABILITY_LIGHT_METAL, ABILITY_HEAVY_METAL, ABILITY_STALWART },    \
         .bodyColor = BODY_COLOR_WHITE,                                                  \
-        .speciesName = _("Duraludon"),                                                  \
+        .speciesName = _("SteelDragn"),                                                  \
         .cryId = CRY_DURALUDON,                                                         \
         .natDexNum = NATIONAL_DEX_DURALUDON,                                            \
         .categoryName = _("Alloy"),                                                     \
@@ -4211,7 +4213,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .frontAnimFrames = sAnims_Duraludon,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         BACK_PIC(Duraludon, 64, 64),
-        .backPicYOffset = 1,
+        .backPicYOffset = 0,
         //.backAnimId = BACK_ANIM_NONE,
         PALETTES(Duraludon),
         ICON(Duraludon, 0),

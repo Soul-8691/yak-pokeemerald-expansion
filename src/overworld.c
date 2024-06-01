@@ -414,6 +414,8 @@ void Overworld_ResetStateAfterDigEscRope(void)
     FlagClear(B_SMART_WILD_AI_FLAG);
     FlagClear(B_FLAG_NO_BAG_USE);
     FlagClear(B_FLAG_NO_CATCHING);
+    FlagClear(B_FLAG_DYNAMAX_BATTLE);
+    FlagClear(B_FLAG_SKY_BATTLE);
 }
 #endif
 
@@ -804,6 +806,7 @@ bool8 SetDiveWarpDive(u16 x, u16 y)
 void LoadMapFromCameraTransition(u8 mapGroup, u8 mapNum)
 {
     s32 paletteIndex;
+    u32 numPrimaryPals;
 
     SetWarpDestination(mapGroup, mapNum, WARP_ID_NONE, -1, -1);
 
@@ -833,7 +836,8 @@ if (I_VS_SEEKER_CHARGING != 0)
     CopySecondaryTilesetToVramUsingHeap(gMapHeader.mapLayout);
     LoadSecondaryTilesetPalette(gMapHeader.mapLayout);
 
-    for (paletteIndex = NUM_PALS_IN_PRIMARY; paletteIndex < NUM_PALS_TOTAL; paletteIndex++)
+    numPrimaryPals = NUM_PALS_IN_PRIMARY_EMERALD + gMapHeader.mapLayout->secondaryTileset->dontUsePal7;
+    for (paletteIndex = numPrimaryPals; paletteIndex < NUM_PALS_TOTAL; paletteIndex++)
         ApplyWeatherColorMapToPal(paletteIndex);
 
     InitSecondaryTilesetAnimation();
@@ -1567,7 +1571,7 @@ void CB2_NewGame(void)
     PlayTimeCounter_Start();
     ScriptContext_Init();
     UnlockPlayerFieldControls();
-    gFieldCallback = ExecuteTruckSequence;
+    // gFieldCallback = ExecuteTruckSequence;
     gFieldCallback2 = NULL;
     DoMapLoadLoop(&gMain.state);
     SetFieldVBlankCallback();
@@ -2165,10 +2169,7 @@ static void ResumeMap(bool32 a1)
     ResetAllPicSprites();
     ResetCameraUpdateInfo();
     InstallCameraPanAheadCallback();
-    if (!a1)
-        InitObjectEventPalettes(0);
-    else
-        InitObjectEventPalettes(1);
+    FreeAllSpritePalettes();
 
     FieldEffectActiveListClear();
     StartWeather();

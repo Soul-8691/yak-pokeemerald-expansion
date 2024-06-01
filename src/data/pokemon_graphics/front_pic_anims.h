@@ -6127,7 +6127,9 @@ static const union AnimCmd sAnim_Regigigas_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
+#endif //P_FAMILY_REGIGIGAS
 
+#if P_FAMILY_GIRATINA
 static const union AnimCmd sAnim_GiratinaAltered_1[] =
 {
     ANIMCMD_FRAME(0, 12),
@@ -6145,7 +6147,7 @@ static const union AnimCmd sAnim_GiratinaOrigin_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_REGIGIGAS
+#endif //P_FAMILY_GIRATINA
 
 #if P_FAMILY_CRESSELIA
 static const union AnimCmd sAnim_Cresselia_1[] =
@@ -10082,6 +10084,20 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Fezandipiti);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Ogerpon);
 #endif //P_FAMILY_OGERPON
 
+PLACEHOLDER_ANIM_SINGLE_FRAME(Bloodveld_Mutated_Special_Form);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Demon_Lesser_OSRS_Form);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Abyssal_Minion_Form);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Giant_Rat_Crypt_Form);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Hellhound);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Bloodveld_Insatiable_Physical_Form);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Bloodveld_Insatiable_Special_Form);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Demon_Greater_OSRS_Form);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Abyssal_Demon_Form);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Basilisk_OSRS_Form);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Cockatrice);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Jelly_Normal_Form);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Demon_Greater_Black_Form);
+
 static const union AnimCmd sAnim_Egg_1[] =
 {
     ANIMCMD_FRAME(0, 6),
@@ -12729,4 +12745,17 @@ SINGLE_ANIMATION(Fezandipiti);
 #if P_FAMILY_OGERPON
 SINGLE_ANIMATION(Ogerpon);
 #endif //P_FAMILY_OGERPON
+SINGLE_ANIMATION(Bloodveld_Mutated_Special_Form);
+SINGLE_ANIMATION(Demon_Lesser_OSRS_Form);
+SINGLE_ANIMATION(Abyssal_Minion_Form);
+SINGLE_ANIMATION(Giant_Rat_Crypt_Form);
+SINGLE_ANIMATION(Hellhound);
+SINGLE_ANIMATION(Bloodveld_Insatiable_Physical_Form);
+SINGLE_ANIMATION(Bloodveld_Insatiable_Special_Form);
+SINGLE_ANIMATION(Demon_Greater_OSRS_Form);
+SINGLE_ANIMATION(Abyssal_Demon_Form);
+SINGLE_ANIMATION(Basilisk_OSRS_Form);
+SINGLE_ANIMATION(Cockatrice);
+SINGLE_ANIMATION(Jelly_Normal_Form);
+SINGLE_ANIMATION(Demon_Greater_Black_Form);
 SINGLE_ANIMATION(Egg);

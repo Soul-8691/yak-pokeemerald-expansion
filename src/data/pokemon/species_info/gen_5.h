@@ -315,7 +315,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_RECKLESS },
         .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
-        .speciesName = _("Emboar"),
+        .speciesName = _("Fire Giant"),
         .cryId = CRY_EMBOAR,
         .natDexNum = NATIONAL_DEX_EMBOAR,
         .categoryName = _("Fire Pig"),
@@ -3585,7 +3585,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eggGroups = { EGG_GROUP_BUG, EGG_GROUP_MINERAL },
         .abilities = { ABILITY_STURDY, ABILITY_SHELL_ARMOR, ABILITY_WEAK_ARMOR },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Crustle"),
+        .speciesName = _("K SandCrab"),
         .cryId = CRY_CRUSTLE,
         .natDexNum = NATIONAL_DEX_CRUSTLE,
         .categoryName = _("Stone Home"),
@@ -7126,7 +7126,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .abilities = { ABILITY_IRON_FIST, ABILITY_KLUTZ, ABILITY_NO_GUARD },
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
-        .speciesName = _("Golurk"),
+        .speciesName = _("DevSpectre"),
         .cryId = CRY_GOLURK,
         .natDexNum = NATIONAL_DEX_GOLURK,
         .categoryName = _("Automaton"),
@@ -8733,7 +8733,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .evYield_Attack = 1,
         .evYield_Defense = 1,
         .description = COMPOUND_STRING(
-            ""),
+            "Meloetta's melodies are sung with\n"
+            "a special vocalization method that can\n"
+            "control the feelings of those who hear it."),
         FRONT_PIC(MeloettaPirouette, 40, 64),
         .frontPicYOffset = 2,
         .frontAnimFrames = sAnims_MeloettaPirouette,

@@ -394,13 +394,28 @@ struct SpeciesInfo /*0x8C*/
             u32 isPaldeanForm:1;
             u32 cannotBeTraded:1;
             u32 allPerfectIVs:1;
-            u32 padding4:18;
+            u32 dexForceRequired:1; // This species will be taken into account for Pokédex ratings even if they have the "isMythical" flag set.
+            u32 padding4:17;
             // Move Data
  /* 0x80 */ const struct LevelUpMove *levelUpLearnset;
  /* 0x84 */ const u16 *teachableLearnset;
  /* 0x88 */ const struct Evolution *evolutions;
  /* 0x84 */ const u16 *formSpeciesIdTable;
  /* 0x84 */ const struct FormChange *formChangeTable;
+};
+
+struct ItemDrops
+{
+    u16 item;
+    u8 dropChance;
+};
+
+struct ItemDropSpecies
+{
+    const struct ItemDrops *drops;
+    u8 dropCount;
+    u8 numDropsLower;
+    u8 numDropsUpper;
 };
 
 struct BattleMove
@@ -461,6 +476,7 @@ struct BattleMove
     u32 encoreBanned:1;
     u32 parentalBondBanned:1;
     u32 skyBattleBanned:1;
+    u32 sketchBanned:1;
 };
 
 #define SPINDA_SPOT_WIDTH 16
@@ -675,6 +691,7 @@ void MonRestorePP(struct Pokemon *mon);
 void BoxMonRestorePP(struct BoxPokemon *boxMon);
 void SetMonPreventsSwitchingString(void);
 void SetWildMonHeldItem(void);
+void SetWildMonHeldItemToPartySlot(u32 partySlot, u32 chanceNoItem, u32 chanceNotRare);
 bool8 IsMonShiny(struct Pokemon *mon);
 bool8 IsShinyOtIdPersonality(u32 otId, u32 personality);
 const u8 *GetTrainerPartnerName(void);

@@ -1611,7 +1611,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .eggGroups = { EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE },
         .abilities = { ABILITY_IRON_FIST, ABILITY_MOLD_BREAKER, ABILITY_SCRAPPY },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Pangoro"),
+        .speciesName = _("Hill Giant"),
         .cryId = CRY_PANGORO,
         .natDexNum = NATIONAL_DEX_PANGORO,
         .categoryName = _("Daunting"),
@@ -1921,7 +1921,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_MINERAL },
         .abilities = { ABILITY_NO_GUARD, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Honedge"),
+        .speciesName = _("Magic Axe"),
         .cryId = CRY_HONEDGE,
         .natDexNum = NATIONAL_DEX_HONEDGE,
         .categoryName = _("Sword"),
@@ -2860,7 +2860,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .frontAnimFrames = sAnims_Tyrantrum,
         .frontAnimId = ANIM_V_SHAKE,
         BACK_PIC(Tyrantrum, 64, 56),
-        .backPicYOffset = 11,
+        .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
         PALETTES(Tyrantrum),
         ICON(Tyrantrum, 0),
@@ -4000,7 +4000,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         #endif
         .abilities = { ABILITY_FRISK, ABILITY_INFILTRATOR, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Noivern"),
+        .speciesName = _("BrnzDragon"),
         .cryId = CRY_NOIVERN,
         .natDexNum = NATIONAL_DEX_NOIVERN,
         .categoryName = _("Sound Wave"),
@@ -4332,7 +4332,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 11,
         .weight = 278,
         .description = COMPOUND_STRING(
-            ""),
+            "The impurities upon its body's surface\n"
+            "have fallen away, sparkling so brilliantly\n"
+            "that cannot be observed directly.\n"
+            "It is known as “the Royal Pink Princess”."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -4422,7 +4425,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 65,
         .weight = 490,
         .description = COMPOUND_STRING(
-            ""),
+            "It is the true form of Hoopa, which has had\n"
+            "its power sealed away. The rings it carries\n"
+            "have the power to bend dimensions and are\n"
+            "able to seize anything in the world."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,

@@ -10879,59 +10879,76 @@ static void Cmd_various(void)
     }
     case VARIOUS_UPDATE_QUEST_COUNTER:
     {
-            u8 leftToDefeat = VarGet(VAR_QUEST_LEFT_TO_DEFEAT);
-            u8 leftToDefeat2 = VarGet(VAR_QUEST_LEFT_TO_DEFEAT_2);
-            s32 enemySpecies = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES);
-            u16 map = (gSaveBlock1Ptr->location.mapGroup << 8) + gSaveBlock1Ptr->location.mapNum;
-            if (FlagGet(FLAG_VALENCIA_PARK_SHROODLES) && enemySpecies == SPECIES_SHROODLE) {
-                if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
-                    leftToDefeat--;
-                if ((leftToDefeat <= 0) && QuestMenu_GetSetQuestState(QUEST_1, FLAG_GET_ACTIVE))
-                {
-                    QuestMenu_GetSetQuestState(QUEST_1, FLAG_SET_REWARD);
-                    QuestMenu_GetSetQuestState(QUEST_1 ,FLAG_REMOVE_ACTIVE);
-                }
+        u8 leftToDefeat = VarGet(VAR_QUEST_LEFT_TO_DEFEAT);
+        u8 leftToDefeat2 = VarGet(VAR_QUEST_LEFT_TO_DEFEAT_2);
+        s32 enemySpecies = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES);
+        u16 map = (gSaveBlock1Ptr->location.mapGroup << 8) + gSaveBlock1Ptr->location.mapNum;
+        if (FlagGet(FLAG_VALENCIA_PARK_SHROODLES) && enemySpecies == SPECIES_SHROODLE) {
+            if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+                leftToDefeat--;
+            if ((leftToDefeat <= 0) && QuestMenu_GetSetQuestState(QUEST_1, FLAG_GET_ACTIVE))
+            {
+                QuestMenu_GetSetQuestState(QUEST_1, FLAG_SET_REWARD);
+                QuestMenu_GetSetQuestState(QUEST_1 ,FLAG_REMOVE_ACTIVE);
             }
-            if (FlagGet(FLAG_VALENCIA_PARK_DEFEATED_POKEMON) && map == MAP_VALENCIA_PARK) {
-                if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
-                    leftToDefeat2--;
-                if ((leftToDefeat2 <= 0) && QuestMenu_GetSetQuestState(QUEST_3, FLAG_GET_ACTIVE))
-                {
-                    QuestMenu_GetSetQuestState(QUEST_3, FLAG_SET_REWARD);
-                    QuestMenu_GetSetQuestState(QUEST_3 ,FLAG_REMOVE_ACTIVE);
-                }
+        }
+        if (FlagGet(FLAG_VALENCIA_PARK_DEFEATED_POKEMON) && map == MAP_VALENCIA_PARK) {
+            if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+                leftToDefeat2--;
+            if ((leftToDefeat2 <= 0) && QuestMenu_GetSetQuestState(QUEST_3, FLAG_GET_ACTIVE))
+            {
+                QuestMenu_GetSetQuestState(QUEST_3, FLAG_SET_REWARD);
+                QuestMenu_GetSetQuestState(QUEST_3 ,FLAG_REMOVE_ACTIVE);
             }
-            VarSet(VAR_QUEST_LEFT_TO_DEFEAT, leftToDefeat);
-            VarSet(VAR_QUEST_LEFT_TO_DEFEAT_2, leftToDefeat2);
-            gBattlescriptCurrInstr = cmd->nextInstr;
-            return;
+        }
+        VarSet(VAR_QUEST_LEFT_TO_DEFEAT, leftToDefeat);
+        VarSet(VAR_QUEST_LEFT_TO_DEFEAT_2, leftToDefeat2);
+        gBattlescriptCurrInstr = cmd->nextInstr;
+        return;
     }
     case VARIOUS_UPDATE_QUEST_COUNTER_2:
     {
-            u8 leftToCatch = VarGet(VAR_QUEST_LEFT_TO_CATCH);
-            u8 leftToCatch2 = VarGet(VAR_QUEST_LEFT_TO_CATCH_2);
-            s32 enemySpecies = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES);
+        u8 leftToCatch = VarGet(VAR_QUEST_LEFT_TO_CATCH);
+        u8 leftToCatch2 = VarGet(VAR_QUEST_LEFT_TO_CATCH_2);
+        s32 enemySpecies = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES);
+        u16 map = (gSaveBlock1Ptr->location.mapGroup << 8) + gSaveBlock1Ptr->location.mapNum;
+        if (FlagGet(FLAG_VALENCIA_PARK_BLIPBUGS) && enemySpecies == SPECIES_BLIPBUG) {
+            if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+                leftToCatch--;
+            if ((leftToCatch <= 0) && QuestMenu_GetSetQuestState(QUEST_2, FLAG_GET_ACTIVE))
+            {
+                QuestMenu_GetSetQuestState(QUEST_2, FLAG_SET_REWARD);
+                QuestMenu_GetSetQuestState(QUEST_2 ,FLAG_REMOVE_ACTIVE);
+            }
+        }
+        if (FlagGet(FLAG_VALENCIA_PARK_CAUGHT) && map == MAP_VALENCIA_PARK) {
+            if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+                leftToCatch2--;
+            if ((leftToCatch2 <= 0) && QuestMenu_GetSetQuestState(QUEST_4, FLAG_GET_ACTIVE))
+            {
+                QuestMenu_GetSetQuestState(QUEST_4, FLAG_SET_REWARD);
+                QuestMenu_GetSetQuestState(QUEST_4 ,FLAG_REMOVE_ACTIVE);
+            }
+        }
+        VarSet(VAR_QUEST_LEFT_TO_CATCH, leftToCatch);
+        VarSet(VAR_QUEST_LEFT_TO_CATCH_2, leftToCatch2);
+        gBattlescriptCurrInstr = cmd->nextInstr;
+        return;
+    }
+    case VARIOUS_UPDATE_QUEST_COUNTER_3:
+    {
+            u8 leftToDefeat = VarGet(VAR_QUEST_LEFT_TO_DEFEAT_3);
             u16 map = (gSaveBlock1Ptr->location.mapGroup << 8) + gSaveBlock1Ptr->location.mapNum;
-            if (FlagGet(FLAG_VALENCIA_PARK_BLIPBUGS) && enemySpecies == SPECIES_BLIPBUG) {
-                if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
-                    leftToCatch--;
-                if ((leftToCatch <= 0) && QuestMenu_GetSetQuestState(QUEST_2, FLAG_GET_ACTIVE))
+            if (FlagGet(FLAG_VALENCIA_PARK_DEFEATED_TRAINERS) && map == MAP_VALENCIA_PARK) {
+                if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+                    leftToDefeat--;
+                if ((leftToDefeat <= 0) && QuestMenu_GetSetQuestState(QUEST_2, FLAG_GET_ACTIVE))
                 {
-                    QuestMenu_GetSetQuestState(QUEST_2, FLAG_SET_REWARD);
-                    QuestMenu_GetSetQuestState(QUEST_2 ,FLAG_REMOVE_ACTIVE);
+                    QuestMenu_GetSetQuestState(QUEST_5, FLAG_SET_REWARD);
+                    QuestMenu_GetSetQuestState(QUEST_5 ,FLAG_REMOVE_ACTIVE);
                 }
             }
-            if (FlagGet(FLAG_VALENCIA_PARK_CAUGHT) && map == MAP_VALENCIA_PARK) {
-                if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
-                    leftToCatch2--;
-                if ((leftToCatch2 <= 0) && QuestMenu_GetSetQuestState(QUEST_4, FLAG_GET_ACTIVE))
-                {
-                    QuestMenu_GetSetQuestState(QUEST_4, FLAG_SET_REWARD);
-                    QuestMenu_GetSetQuestState(QUEST_4 ,FLAG_REMOVE_ACTIVE);
-                }
-            }
-            VarSet(VAR_QUEST_LEFT_TO_CATCH, leftToCatch);
-            VarSet(VAR_QUEST_LEFT_TO_CATCH_2, leftToCatch2);
+            VarSet(VAR_QUEST_LEFT_TO_DEFEAT_3, leftToDefeat);
             gBattlescriptCurrInstr = cmd->nextInstr;
             return;
     }

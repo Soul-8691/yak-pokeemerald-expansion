@@ -5541,6 +5541,7 @@ BattleScript_PayDayMoneyAndPickUpItems::
 	givepaydaymoney
 	givedroppeditems
 	updatequestcounter
+	updatequestcounter3
 	pickup
 	end2
 

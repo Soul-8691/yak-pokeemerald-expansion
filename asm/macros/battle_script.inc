@@ -2537,3 +2537,7 @@
 	.macro updatequestcounter2
 	various BS_FAINTED, VARIOUS_UPDATE_QUEST_COUNTER_2
 	.endm
+
+	.macro updatequestcounter3
+	various BS_FAINTED, VARIOUS_UPDATE_QUEST_COUNTER_3
+	.endm

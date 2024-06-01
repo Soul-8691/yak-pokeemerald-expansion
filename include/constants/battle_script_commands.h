@@ -270,6 +270,7 @@
 #define VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_6_ITEM_1  178
 #define VARIOUS_UPDATE_QUEST_COUNTER                 179
 #define VARIOUS_UPDATE_QUEST_COUNTER_2               180
+#define VARIOUS_UPDATE_QUEST_COUNTER_3               181
 
 // Cmd_manipulatedamage
 #define DMG_CHANGE_SIGN            0

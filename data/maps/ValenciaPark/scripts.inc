@@ -25,7 +25,7 @@ ValenciaPark_EventScript_TestSign::
     startquest QUEST_4
     startquest QUEST_5
     startquest QUEST_6
-    additem ITEM_MASTER_BALL, 10
+    additem ITEM_ULTRA_BALL, 15
 	end
 
 ValenciaPark_EventScript_Trainer1::

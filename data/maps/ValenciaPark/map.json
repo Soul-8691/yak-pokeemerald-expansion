@@ -78,7 +78,7 @@
       "y": 9,
       "elevation": 0,
       "item": "ITEM_TM01",
-      "flag": "FLAG_TEMP_1",
+      "flag": "FLAG_VALENCIA_PARK_TM01",
       "quantity": 1,
       "underfoot": false
     },
@@ -88,7 +88,7 @@
       "y": 37,
       "elevation": 0,
       "item": "ITEM_TM02",
-      "flag": "FLAG_TEMP_1",
+      "flag": "FLAG_VALENCIA_PARK_TM02",
       "quantity": 1,
       "underfoot": false
     }

@@ -256,18 +256,3 @@ ValenciaPark_Text_AndDone:
 ValenciaPark_Text_PleaseVisitAgain:
 	.string "Please let me know if you need anything\n"
 	.string "else!$"
-
-ValenciaPark_Text_BugBuzzDesc::
-	.string "A bite that may\n"
-	.string "burn or cause\n"
-	.string "flinching.$"
-
-ValenciaPark_Text_PollenPuffDesc::
-	.string "A bite that may\n"
-	.string "burn or cause\n"
-	.string "flinching.$"
-
-ValenciaPark_Text_GigaDrainDesc::
-	.string "A bite that may\n"
-	.string "burn or cause\n"
-	.string "flinching.$"

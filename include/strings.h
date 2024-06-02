@@ -3260,4 +3260,8 @@ extern const u8 gText_SubQuest2_Desc18[];
 extern const u8 gText_SubQuest2_Desc19[];
 extern const u8 gText_SubQuest2_Desc20[];
 
+extern const u8 gText_BugBuzz[];
+extern const u8 gText_PollenPuff[];
+extern const u8 gText_GigaDrain[];
+
 #endif // GUARD_STRINGS_H

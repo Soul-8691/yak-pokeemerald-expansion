@@ -11804,3 +11804,14 @@ static const struct TrainerMon sParty_MayLinkPlaceholder[] = {
     .species = SPECIES_KYOGRE,
     }
 };
+
+static const struct TrainerMon sParty_ValenciaParkTrainer1[] = {
+    {
+    .lvl = 22,
+    .species = SPECIES_SKWOVET,
+    },
+    {
+    .lvl = 22,
+    .species = SPECIES_NICKIT,
+    }
+};

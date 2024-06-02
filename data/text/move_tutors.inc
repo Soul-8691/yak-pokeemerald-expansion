@@ -235,3 +235,39 @@ MoveTutor_Text_ExplosionTaught:
 	.string "to ignite my own EXPLOSION…\p"
 	.string "Maybe it's because deep down,\n"
 	.string "I would rather stay here…$"
+
+ValenciaPark_Text_TutorWelcome:
+	.string "Welcome!\p"
+	.string "Would you like to teach new moves to\n"
+	.string "your Pokémon?$"
+
+ValenciaPark_Text_WhichMoveTeach:
+	.string "Which move should I teach?$"
+
+ValenciaPark_Text_TheMoveIsIt:
+	.string "The move {STR_VAR_1}, is it?$"
+
+ValenciaPark_Text_PleaseChoosePkmn:
+	.string "Okay! Please choose your Pokémon.$"
+
+ValenciaPark_Text_AndDone:
+	.string "Aaand done!$"
+
+ValenciaPark_Text_PleaseVisitAgain:
+	.string "Please let me know if you need anything\n"
+	.string "else!$"
+
+ValenciaPark_Text_BugBuzzDesc::
+	.string "A bite that may\n"
+	.string "burn or cause\n"
+	.string "flinching.$"
+
+ValenciaPark_Text_PollenPuffDesc::
+	.string "A bite that may\n"
+	.string "burn or cause\n"
+	.string "flinching.$"
+
+ValenciaPark_Text_GigaDrainDesc::
+	.string "A bite that may\n"
+	.string "burn or cause\n"
+	.string "flinching.$"

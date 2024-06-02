@@ -579,7 +579,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      SPECIES_BLIPBUG,
 	      PKMN,
 	      NULL,
-	      QUEST_1_SUB_COUNT
+	      0
 	),
 	side_quest(
 	      gText_SideQuestName_3,
@@ -589,7 +589,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      SPECIES_PANCHAM,
 	      PKMN,
 	      NULL,
-	      QUEST_2_SUB_COUNT
+	      0
 	),
 	side_quest(
 	      gText_SideQuestName_4,

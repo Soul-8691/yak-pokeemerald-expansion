@@ -11815,3 +11815,14 @@ static const struct TrainerMon sParty_ValenciaParkTrainer1[] = {
     .species = SPECIES_NICKIT,
     }
 };
+
+static const struct TrainerMon sParty_ValenciaParkTrainer2[] = {
+    {
+    .lvl = 20,
+    .species = SPECIES_CHEWTLE,
+    },
+    {
+    .lvl = 23,
+    .species = SPECIES_VULPIX_ALOLAN,
+    }
+};

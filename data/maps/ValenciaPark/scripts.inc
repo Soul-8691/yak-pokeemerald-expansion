@@ -30,11 +30,12 @@ ValenciaPark_EventScript_TestSign::
 
 ValenciaPark_EventScript_Trainer1::
 	trainerbattle_single TRAINER_VALENCIA_PARK_1, Route102_Text_CalvinIntro, Route102_Text_CalvinDefeated, Route102_EventScript_CalvinRegisterMatchCallAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route102_EventScript_CalvinRematch
-	setvar VAR_0x8004, TRAINER_VALENCIA_PARK_1
-	specialvar VAR_RESULT, IsTrainerRegistered
-	goto_if_eq VAR_RESULT, FALSE, Route102_EventScript_CalvinTryRegister
+	msgbox Route102_Text_CalvinPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+ValenciaPark_EventScript_Trainer2::
+	trainerbattle_single TRAINER_VALENCIA_PARK_2, Route102_Text_CalvinIntro, Route102_Text_CalvinDefeated, Route102_EventScript_CalvinRegisterMatchCallAfterBattle
 	msgbox Route102_Text_CalvinPostBattle, MSGBOX_DEFAULT
 	release
 	end

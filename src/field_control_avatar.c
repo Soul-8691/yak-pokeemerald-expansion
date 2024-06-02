@@ -37,7 +37,7 @@
 #include "constants/songs.h"
 #include "constants/trainer_hill.h"
 
-#define VALENCIA_PARK_TRAINER_COUNT 1
+#define VALENCIA_PARK_TRAINER_COUNT 2
 
 static EWRAM_DATA u8 sWildEncounterImmunitySteps = 0;
 static EWRAM_DATA u16 sPrevMetatileBehavior = 0;
@@ -562,8 +562,8 @@ static bool8 TryStartMiscWalkingScripts(u16 metatileBehavior)
 void IncrementClearedFlagStepCounters(void)
 {
     u8 i;
-    u16 vars[VALENCIA_PARK_TRAINER_COUNT] = {VAR_VALENCIA_PARK_TRAINER_1};
-    u16 flags[VALENCIA_PARK_TRAINER_COUNT] = {TRAINER_FLAGS_START + TRAINER_CALVIN_1};
+    u16 vars[VALENCIA_PARK_TRAINER_COUNT] = {VAR_VALENCIA_PARK_TRAINER_1, VAR_VALENCIA_PARK_TRAINER_2};
+    u16 flags[VALENCIA_PARK_TRAINER_COUNT] = {TRAINER_FLAGS_START + TRAINER_VALENCIA_PARK_1, TRAINER_FLAGS_START + TRAINER_VALENCIA_PARK_2};
     
     for (i = 0; i < VALENCIA_PARK_TRAINER_COUNT; i++)
     {
@@ -579,8 +579,8 @@ void IncrementClearedFlagStepCounters(void)
 static bool8 TryStartStepCountScript(u16 metatileBehavior)
 {
     u8 i;
-    u16 vars[VALENCIA_PARK_TRAINER_COUNT] = {VAR_VALENCIA_PARK_TRAINER_1};
-    u16 flags[VALENCIA_PARK_TRAINER_COUNT] = {TRAINER_FLAGS_START + TRAINER_CALVIN_1};
+    u16 vars[VALENCIA_PARK_TRAINER_COUNT] = {VAR_VALENCIA_PARK_TRAINER_1, VAR_VALENCIA_PARK_TRAINER_2};
+    u16 flags[VALENCIA_PARK_TRAINER_COUNT] = {TRAINER_FLAGS_START + TRAINER_VALENCIA_PARK_1, TRAINER_FLAGS_START + TRAINER_VALENCIA_PARK_2};
 
     if (InUnionRoom() == TRUE)
     {

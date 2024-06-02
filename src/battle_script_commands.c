@@ -10923,7 +10923,7 @@ static void Cmd_various(void)
         }
         if (FlagGet(FLAG_VALENCIA_PARK_CAUGHT) && map == MAP_VALENCIA_PARK) {
             u16 silverpowder = ITEM_SILVERPOWDER;
-            if ((enemySpecies == SPECIES_SHROODLE || enemySpecies == SPECIES_BLIPBUG) && Random() % 4 == 0) {
+            if ((enemySpecies == SPECIES_SEWADDLE && Random() % 2 == 0) || (enemySpecies == SPECIES_BLIPBUG && Random() % 4 == 0)) {
                 SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &silverpowder);
                 QuestMenu_GetSetQuestState(QUEST_6, FLAG_SET_REWARD);
                 QuestMenu_GetSetQuestState(QUEST_6 ,FLAG_REMOVE_ACTIVE);
@@ -10968,7 +10968,7 @@ static void Cmd_various(void)
             if (species != SPECIES_NONE)
             {
                 u16 map = (gSaveBlock1Ptr->location.mapGroup << 8) + gSaveBlock1Ptr->location.mapNum;
-                if (FlagGet(FLAG_VALENCIA_PARK_SILVERPOWDER) && (species == SPECIES_SHROODLE || species == SPECIES_BLIPBUG) && map == MAP_VALENCIA_PARK) {
+                if (FlagGet(FLAG_VALENCIA_PARK_SILVERPOWDER) && (species == SPECIES_SEWADDLE || species == SPECIES_BLIPBUG) && map == MAP_VALENCIA_PARK) {
                     u8 numDrops = (Random() % (gItemDropSpecies[species].numDropsUpper - gItemDropSpecies[species].numDropsLower + 1)) + gItemDropSpecies[species].numDropsLower;
                     if (numDrops > 0)
                     {

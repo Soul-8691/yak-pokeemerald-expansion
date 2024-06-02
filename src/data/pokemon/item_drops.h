@@ -1,6 +1,6 @@
-static const struct ItemDrops sShroodleDrops[] = 
+static const struct ItemDrops sSewaddleDrops[] = 
 {
-    {ITEM_SILVERPOWDER, 25}
+    {ITEM_SILVERPOWDER, 50}
 };
 
 static const struct ItemDrops sBlipbugDrops[] = 
@@ -9,8 +9,8 @@ static const struct ItemDrops sBlipbugDrops[] =
 };
 
 const struct ItemDropSpecies gItemDropSpecies[] = {
-    [SPECIES_SHROODLE] = {
-        .drops = sShroodleDrops,
+    [SPECIES_SEWADDLE] = {
+        .drops = sSewaddleDrops,
         .dropCount = 1,
         .numDropsLower = 1,
         .numDropsUpper = 1,

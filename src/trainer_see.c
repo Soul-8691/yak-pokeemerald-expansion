@@ -217,7 +217,7 @@ static const struct SpriteTemplate sSpriteTemplate_HeartIcon =
 bool8 CheckForTrainersWantingBattle(void)
 {
     u8 i;
-    u8 numTrainers = 255;
+    u8 numTrainers = 0;
 
     if (FlagGet(OW_FLAG_NO_TRAINER_SEE))
         return FALSE;

@@ -450,6 +450,13 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
     {gObjectEventPal_ProfIvy,               OBJ_EVENT_PAL_TAG_PROF_IVY},
+    {gObjectEventPal_Skwovet,               OBJ_EVENT_PAL_TAG_SKWOVET},
+    {gObjectEventPal_Shroodle,              OBJ_EVENT_PAL_TAG_SHROODLE},
+    {gObjectEventPal_Joltik,                OBJ_EVENT_PAL_TAG_JOLTIK},
+    {gObjectEventPal_Pancham,               OBJ_EVENT_PAL_TAG_PANCHAM},
+    {gObjectEventPal_Grafaiai,              OBJ_EVENT_PAL_TAG_GRAFAIAI},
+    {gObjectEventPal_Sewaddle,              OBJ_EVENT_PAL_TAG_SEWADDLE},
+    {gObjectEventPal_Blipbug,               OBJ_EVENT_PAL_TAG_BLIPBUG},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else

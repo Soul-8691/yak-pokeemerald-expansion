@@ -566,8 +566,8 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_1,
 	      gText_SideQuestDoneDesc_1,
 	      gText_SideQuestMap1,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
+	      SPECIES_SHROODLE,
+	      PKMN,
 	      NULL,
 	      0
 	),
@@ -576,9 +576,9 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_2,
 	      gText_SideQuestDoneDesc_2,
 	      gText_SideQuestMap2,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sSubQuests1,
+	      SPECIES_BLIPBUG,
+	      PKMN,
+	      NULL,
 	      QUEST_1_SUB_COUNT
 	),
 	side_quest(
@@ -586,9 +586,9 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_3,
 	      gText_SideQuestDoneDesc_3,
 	      gText_SideQuestMap3,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sSubQuests2,
+	      SPECIES_PANCHAM,
+	      PKMN,
+	      NULL,
 	      QUEST_2_SUB_COUNT
 	),
 	side_quest(
@@ -596,8 +596,8 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_4,
 	      gText_SideQuestDoneDesc_4,
 	      gText_SideQuestMap4,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
+	      SPECIES_JOLTIK,
+	      PKMN,
 	      NULL,
 	      0
 	),
@@ -606,8 +606,8 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_5,
 	      gText_SideQuestDoneDesc_5,
 	      gText_SideQuestMap5,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
+	      SPECIES_SKWOVET,
+	      PKMN,
 	      NULL,
 	      0
 	),
@@ -616,8 +616,8 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_6,
 	      gText_SideQuestDoneDesc_6,
 	      gText_SideQuestMap6,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
+	      SPECIES_SEWADDLE,
+	      PKMN,
 	      NULL,
 	      0
 	),

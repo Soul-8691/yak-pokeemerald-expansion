@@ -241,6 +241,13 @@
 #define OBJ_EVENT_GFX_LUGIA                      237
 #define OBJ_EVENT_GFX_HOOH                       238
 #define OBJ_EVENT_GFX_PROF_IVY                   239
+#define OBJ_EVENT_GFX_SHROODLE                   240
+#define OBJ_EVENT_GFX_BLIPBUG                    241
+#define OBJ_EVENT_GFX_GRAFAIAI                   242
+#define OBJ_EVENT_GFX_JOLTIK                     243
+#define OBJ_EVENT_GFX_SKWOVET                    244
+#define OBJ_EVENT_GFX_PANCHAM                    245
+#define OBJ_EVENT_GFX_SEWADDLE                   246
 
 // NOTE: By default, the max value for NUM_OBJ_EVENT_GFX is 239.
 //
@@ -251,7 +258,7 @@
 // object graphics that can be removed. If more graphics are needed, anything that
 // stores graphics ids will need to be increased in size. See wiki entry below:
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
-#define NUM_OBJ_EVENT_GFX                        240
+#define NUM_OBJ_EVENT_GFX                        247
 
 
 // These are dynamic object gfx ids.
@@ -311,6 +318,13 @@
 #define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1121
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1122
 #define OBJ_EVENT_PAL_TAG_PROF_IVY                0x1123
+#define OBJ_EVENT_PAL_TAG_SHROODLE                0x1124
+#define OBJ_EVENT_PAL_TAG_SKWOVET                 0x1125
+#define OBJ_EVENT_PAL_TAG_PANCHAM                 0x1126
+#define OBJ_EVENT_PAL_TAG_GRAFAIAI                0x1127
+#define OBJ_EVENT_PAL_TAG_JOLTIK                  0x1128
+#define OBJ_EVENT_PAL_TAG_SEWADDLE                0x1129
+#define OBJ_EVENT_PAL_TAG_BLIPBUG                 0x112A
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #define SHADOW_SIZE_S   0

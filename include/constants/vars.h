@@ -204,7 +204,7 @@
 #define VAR_VALENCIA_PARK_GRAFAIAI                       0x40B8 // Unused Var
 #define VAR_MT_PYRE_STATE                                0x40B9
 #define VAR_NEW_MAUVILLE_STATE                           0x40BA
-#define VAR_UNUSED_0x40BB                                0x40BB // Unused Var
+#define VAR_VALENCIA_PARK_SHROODLE                       0x40BB // Unused Var
 #define VAR_BRAVO_TRAINER_BATTLE_TOWER_ON                0x40BC
 #define VAR_JAGGED_PASS_ASH_WEATHER                      0x40BD
 #define VAR_GLASS_WORKSHOP_STATE                         0x40BE
@@ -236,7 +236,7 @@
 #define VAR_SOOTOPOLIS_WALLACE_STATE                     0x40D8
 #define VAR_HAS_TALKED_TO_SEAFLOOR_CAVERN_ENTRANCE_GRUNT 0x40D9
 #define VAR_REGISTER_BIRCH_STATE                         0x40DA
-#define VAR_UNUSED_0x40DB                                0x40DB // Unused Var
+#define VAR_VALENCIA_PARK_SKWOVET                        0x40DB // Unused Var
 #define VAR_UNUSED_0x40DC                                0x40DC // Unused Var
 #define VAR_GIFT_PICHU_SLOT                              0x40DD
 #define VAR_GIFT_UNUSED_1                                0x40DE // Var is written to, but never read

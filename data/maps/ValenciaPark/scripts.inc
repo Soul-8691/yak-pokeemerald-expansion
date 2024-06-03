@@ -50,6 +50,38 @@ ValenciaPark_EventScript_Grafaiai::
     setflag FLAG_VALENCIA_PARK_GRAFAIAI
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, ValenciaPark_EventScript_RemoveStaticPokemon
+    goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, ValenciaPark_EventScript_RemoveStaticPokemon
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, ValenciaPark_EventScript_RemoveStaticPokemon
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, ValenciaPark_EventScript_RemoveStaticPokemon
+	release
+	end
+
+ValenciaPark_EventScript_Shroodle::
+	lock
+    faceplayer
+    setwildbattle SPECIES_SHROODLE, 25
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, ValenciaPark_EventScript_RemoveStaticPokemon
+    goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, ValenciaPark_EventScript_RemoveStaticPokemon
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, ValenciaPark_EventScript_RemoveStaticPokemon
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, ValenciaPark_EventScript_RemoveStaticPokemon
+	release
+	end
+
+ValenciaPark_EventScript_Skwovet::
+	lock
+    faceplayer
+    setwildbattle SPECIES_SKWOVET, 25
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+    setflag FLAG_VALENCIA_PARK_SKWOVET
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, ValenciaPark_EventScript_RemoveStaticPokemon
+    goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, ValenciaPark_EventScript_RemoveStaticPokemon
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, ValenciaPark_EventScript_RemoveStaticPokemon
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, ValenciaPark_EventScript_RemoveStaticPokemon
 	release

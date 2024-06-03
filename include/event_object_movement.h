@@ -446,5 +446,6 @@ bool32 IsVirtualObjectAnimating(u8 virtualObjId);
 
 bool8 MovementAction_EmoteX_Step0(struct ObjectEvent *, struct Sprite *);
 bool8 MovementAction_EmoteDoubleExclamationMark_Step0(struct ObjectEvent *, struct Sprite *);
+extern const union AnimCmd *const sAnimTable_Following[];
 
 #endif //GUARD_EVENT_OBJECT_MOVEMENT_H

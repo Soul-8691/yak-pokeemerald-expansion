@@ -1,4 +1,4 @@
-Copyright screen
+✓ Copyright screen
 Developer logo
 Title screen music
 Title screen logo
@@ -6,6 +6,7 @@ Title screen
 ✓ Remove clouds
 ✓ Remove shine
 Pikachu intro
+Oak intro music
 Textbox colors
 Oak intro
 Oak sprite

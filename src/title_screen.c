@@ -60,8 +60,8 @@ static void SpriteCB_PokemonLogoShine(struct Sprite *sprite);
 // const rom data
 static const u16 sUnusedUnknownPal[] = INCBIN_U16("graphics/title_screen/unused.gbapal");
 
-static const u32 sTitleScreenRayquazaGfx[] = INCBIN_U32("graphics/title_screen/rayquaza.4bpp.lz");
-static const u32 sTitleScreenRayquazaTilemap[] = INCBIN_U32("graphics/title_screen/rayquaza.bin.lz");
+static const u32 sTitleScreenRayquazaGfx[] = INCBIN_U32("graphics/title_screen/dragonite.4bpp.lz");
+static const u32 sTitleScreenRayquazaTilemap[] = INCBIN_U32("graphics/title_screen/dragonite.bin.lz");
 static const u32 sTitleScreenLogoShineGfx[] = INCBIN_U32("graphics/title_screen/logo_shine.4bpp.lz");
 static const u32 sTitleScreenCloudsGfx[] = INCBIN_U32("graphics/title_screen/clouds.4bpp.lz");
 
@@ -610,10 +610,10 @@ void CB2_InitTitleScreen(void)
         ResetSpriteData();
         FreeAllSpritePalettes();
         gReservedSpritePaletteCount = 9;
-        LoadCompressedSpriteSheet(&sSpriteSheet_EmeraldVersion[0]);
+        // LoadCompressedSpriteSheet(&sSpriteSheet_EmeraldVersion[0]);
         LoadCompressedSpriteSheet(&sSpriteSheet_PressStart[0]);
         // LoadCompressedSpriteSheet(&sPokemonLogoShineSpriteSheet[0]);
-        LoadPalette(gTitleScreenEmeraldVersionPal, OBJ_PLTT_ID(0), PLTT_SIZE_4BPP);
+        // LoadPalette(gTitleScreenEmeraldVersionPal, OBJ_PLTT_ID(0), PLTT_SIZE_4BPP);
         LoadSpritePalette(&sSpritePalette_PressStart[0]);
         gMain.state = 2;
         break;

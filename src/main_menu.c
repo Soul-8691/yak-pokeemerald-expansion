@@ -987,7 +987,7 @@ static void HighlightSelectedMainMenuItem(u8 menuType, u8 selectedMenuItem)
     }
 }
 
-#define INTRO_SPECIES SPECIES_LOTAD
+#define INTRO_SPECIES SPECIES_PIKACHU
 
 enum {
     MALE_PLAYER_PIC,
@@ -1103,7 +1103,7 @@ static void Task_NewGameBirchSpeech_WaitForSpriteFadeInWelcome(u8 taskId)
         else
         {
             BirchSpeechPrintMessage(gText_Birch_Welcome);
-            gTasks[taskId].func = Task_NewGameBirchSpeech_ThisIsAPokemon;
+            gTasks[taskId].func = Task_NewGameBirchSpeechSub_InitPokeBall;
         }
     }
 }
@@ -1115,7 +1115,7 @@ static void Task_NewGameBirchSpeech_ThisIsAPokemon(u8 taskId)
         StringExpandPlaceholders(gStringVar4, gText_Birch_MainSpeech);
         AddTextPrinterForMessage(TRUE);
         gTasks[taskId].tTimer = 30;
-        gTasks[taskId].func = Task_NewGameBirchSpeechSub_InitPokeBall;
+        gTasks[taskId].func = Task_NewGameBirchSpeech_MainSpeech;
     }
 }
 
@@ -1196,7 +1196,7 @@ static void Task_NewGameBirchSpeech_MainSpeech2(u8 taskId)
         }
         else
         {
-            BirchSpeechPrintMessage(gText_Birch_YourePlayer);
+            BirchSpeechPrintMessage(gText_Birch_WhatsYourName);
             gTasks[taskId].func = Task_NewGameBirchSpeech_StartBirchPlatformFade;
         }
     }
@@ -1208,8 +1208,9 @@ static void Task_NewGameBirchSpeech_StartBirchPlatformFade(u8 taskId)
     {
         ClearDialogWindowAndFrame(WIN_INTRO_TEXTBOX, TRUE);
         NewGameBirchSpeech_StartFadeOutTarget1InTarget2(taskId);
+        gSaveBlock2Ptr->playerGender = MALE;
         gTasks[taskId].tTimer = 48;
-        gTasks[taskId].func = Task_NewGameBirchSpeech_BoyOrGirl;
+        gTasks[taskId].func = Task_NewGameBirchSpeech_WaitPressBeforeNameChoice;
     }
 }
 
@@ -1271,7 +1272,7 @@ static void Task_NewGameBirchSpeech_WhatsYourName(u8 taskId)
         }
         else
         {
-            BirchSpeechPrintMessage(gText_Birch_WhatsYourName);
+            BirchSpeechPrintMessage(gText_Birch_YourePlayer);
             gTasks[taskId].func = Task_NewGameBirchSpeech_WaitPressBeforeNameChoice;
         }
     }

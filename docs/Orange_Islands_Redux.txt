@@ -1,3 +1,4 @@
+To-Do:
 ✓ Copyright screen
 Developer logo
 Title screen music
@@ -12,4 +13,11 @@ Oak intro
 Oak sprite
 Player overworlds
 Revamp Oak intro
+Trainer card
 Player room
+Player house 1F
+
+Credits:
+Kalarie - Original hack
+Gol Acheron - Copyright screen edit
+caco5400 - Developer logo edit

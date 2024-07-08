@@ -1,9 +1,13 @@
 gText_Birch_Welcome::
-	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is BIRCH.\p"
-	.string "But everyone calls me the POKéMON\n"
-	.string "PROFESSOR.\p"
+	.string "Hello, there!\n"
+	.string "Glad to see you again!\p"
+	.string "Welcome back to PALLET TOWN.\p"
+	.string "You and your rival really tried your\n"
+	.string "best at the INDIGO LEAGUE, but it\l"
+	.string "was just not enough.\p"
+	.string "Despite that, I'm still proud that\n"
+	.string "two trainers from my hometown came\l"
+	.string "far in such a prestigious tournament!\p"
 	.string "$"
 
 gText_Birch_Pokemon::

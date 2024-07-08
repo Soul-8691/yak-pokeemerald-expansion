@@ -6,5 +6,6 @@ Title screen
 ✓ Remove clouds
 ✓ Remove shine
 Pikachu intro
+Textbox colors
 Oak intro
 Revamp Oak intro

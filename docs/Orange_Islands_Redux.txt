@@ -11,6 +11,7 @@ Oak intro music
 Textbox colors
 Oak intro
 Oak sprite
+Ash sprite
 Player overworlds
 Revamp Oak intro
 Trainer card

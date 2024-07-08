@@ -545,6 +545,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
 #else
     {}, // BUG: FindObjectEventPaletteIndexByTag looks for OBJ_EVENT_PAL_TAG_NONE and not 0x0.
         // If it's looking for a tag that isn't in this table, the game locks in an infinite loop.
+    {gObjectEventPalette_AshWalkRun,        OBJ_EVENT_PAL_TAG_ASH},
 #endif
 };
 
@@ -671,7 +672,7 @@ static const struct PairedPalettes sSpecialObjectReflectionPaletteSets[] = {
 };
 
 static const u16 sObjectPaletteTags0[] = {
-    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_BRENDAN,
+    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_ASH,
     [PALSLOT_PLAYER_REFLECTION] = OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION,
     [PALSLOT_NPC_1]             = OBJ_EVENT_PAL_TAG_NPC_1,
     [PALSLOT_NPC_2]             = OBJ_EVENT_PAL_TAG_NPC_2,
@@ -684,7 +685,7 @@ static const u16 sObjectPaletteTags0[] = {
 };
 
 static const u16 sObjectPaletteTags1[] = {
-    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_BRENDAN,
+    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_ASH,
     [PALSLOT_PLAYER_REFLECTION] = OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION,
     [PALSLOT_NPC_1]             = OBJ_EVENT_PAL_TAG_NPC_1,
     [PALSLOT_NPC_2]             = OBJ_EVENT_PAL_TAG_NPC_2,
@@ -697,7 +698,7 @@ static const u16 sObjectPaletteTags1[] = {
 };
 
 static const u16 sObjectPaletteTags2[] = {
-    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_BRENDAN,
+    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_ASH,
     [PALSLOT_PLAYER_REFLECTION] = OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION,
     [PALSLOT_NPC_1]             = OBJ_EVENT_PAL_TAG_NPC_1,
     [PALSLOT_NPC_2]             = OBJ_EVENT_PAL_TAG_NPC_2,
@@ -710,7 +711,7 @@ static const u16 sObjectPaletteTags2[] = {
 };
 
 static const u16 sObjectPaletteTags3[] = {
-    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_BRENDAN,
+    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_ASH,
     [PALSLOT_PLAYER_REFLECTION] = OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION,
     [PALSLOT_NPC_1]             = OBJ_EVENT_PAL_TAG_NPC_1,
     [PALSLOT_NPC_2]             = OBJ_EVENT_PAL_TAG_NPC_2,
@@ -2868,7 +2869,7 @@ u8 LoadPlayerObjectEventPalette(u8 gender)
     {
         default:
         case MALE:
-            paletteTag = OBJ_EVENT_PAL_TAG_BRENDAN;
+            paletteTag = OBJ_EVENT_PAL_TAG_ASH;
             break;
         case FEMALE:
             paletteTag = OBJ_EVENT_PAL_TAG_MAY;

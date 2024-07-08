@@ -8,6 +8,10 @@ gText_Birch_Welcome::
 	.string "Despite that, I'm still proud that\n"
 	.string "two trainers from my hometown came\l"
 	.string "far in such a prestigious tournament!\p"
+	.string "Now you're back in PALLET TOWN,\n"
+	.string "and your POKéMON are at my lab.\p"
+	.string "They really enjoy it here.\p"
+	.string "Look…\p"
 	.string "$"
 
 gText_Birch_Pokemon::

@@ -8,5 +8,7 @@ Title screen
 Pikachu intro
 Textbox colors
 Oak intro
+Oak sprite
+Player overworlds
 Revamp Oak intro
 Player room

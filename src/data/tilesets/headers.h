@@ -7,6 +7,7 @@ const struct Tileset gTileset_General =
     .metatiles = gMetatiles_General,
     .metatileAttributes = gMetatileAttributes_General,
     .callback = InitTilesetAnim_General,
+    .numTiles = NUM_TILES_IN_PRIMARY_EMERALD,
 };
 
 const struct Tileset gTileset_Petalburg =
@@ -183,6 +184,7 @@ const struct Tileset gTileset_Building =
     .metatiles = gMetatiles_InsideBuilding,
     .metatileAttributes = gMetatileAttributes_InsideBuilding,
     .callback = InitTilesetAnim_Building,
+    .numTiles = NUM_TILES_IN_PRIMARY_EMERALD,
 };
 
 const struct Tileset gTileset_Shop =
@@ -634,6 +636,7 @@ const struct Tileset gTileset_SecretBase =
     .metatiles = gMetatiles_SecretBasePrimary,
     .metatileAttributes = gMetatileAttributes_SecretBasePrimary,
     .callback = NULL,
+    .numTiles = NUM_TILES_IN_PRIMARY_EMERALD,
 };
 
 const struct Tileset * const gTilesetPointer_SecretBase = &gTileset_SecretBase;
@@ -835,6 +838,7 @@ const struct Tileset gTileset_OrangeIslandsIndoorPrimary =
     .metatiles = gMetatiles_OrangeIslandsIndoorPrimary,
     .metatileAttributes = gMetatileAttributes_OrangeIslandsIndoorPrimary,
     .callback = NULL,
+    .numTiles = NUM_TILES_IN_PRIMARY_FRLG,
 };
 
 const struct Tileset gTileset_OrangeIslandsIndoorSecondary =
@@ -846,4 +850,5 @@ const struct Tileset gTileset_OrangeIslandsIndoorSecondary =
     .metatiles = gMetatiles_OrangeIslandsIndoorSecondary,
     .metatileAttributes = gMetatileAttributes_OrangeIslandsIndoorSecondary,
     .callback = NULL,
+    .dontUsePal7 = TRUE,
 };

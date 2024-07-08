@@ -26,37 +26,34 @@ gText_Birch_MainSpeech::
 	.string "Who would've known that the two of\n"
 	.string "you would be best friends, now.\p"
 	.string "I'm glad to witness that.\p"
-	.string "\n"
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "And you are?$"
+	.string "…$"
 
 gText_Birch_BoyOrGirl::
 	.string "Are you a boy?\n"
 	.string "Or are you a girl?$"
 
 gText_Birch_WhatsYourName::
-	.string "All right.\n"
-	.string "What's your name?$"
+	.string "Why don't you come to my lab to\n"
+	.string "pick up PIKACHU?\p"
+	.string "I might even have a new objective\n"
+	.string "for you.\p"
+	.string "Let's do some paperwork.\n"
+	.string "What was your name, again?"
+	.string "$"
 
 gText_Birch_SoItsPlayer::
-	.string "So it's {PLAYER}{KUN}?$"
+	.string "Right…\n"
+	.string "I see you filled in {PLAYER}{KUN}.$"
 
 gText_Birch_YourePlayer::
-	.string "Ah, okay!\p"
-	.string "You're {PLAYER}{KUN} who's moving to my\n"
-	.string "hometown of LITTLEROOT.\l"
-	.string "I get it now!\p"
+	.string "Great!\p"
 	.string "$"
 
 gText_Birch_AreYouReady::
-	.string "All right, are you ready?\p"
-	.string "Your very own adventure is about\n"
-	.string "to unfold.\p"
-	.string "Take courage, and leap into the\n"
-	.string "world of POKéMON where dreams,\l"
-	.string "adventure, and friendships await!\p"
-	.string "Well, I'll be expecting you later.\n"
-	.string "Come see me in my POKéMON LAB.\p"
+	.string "{PLAYER}{KUN}!\p"
+	.string "When you're ready, I'll see you\n"
+	.string "at my lab!\p"
 	.string "$"

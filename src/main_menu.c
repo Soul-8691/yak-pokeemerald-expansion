@@ -228,10 +228,10 @@ static const u16 sBirchSpeech_Platform_Pal[] = INCBIN_U16("graphics/oak_speech/p
 static const u32 sBirchSpeech_Platform_Gfx[] = INCBIN_U32("graphics/oak_speech/platform.4bpp.lz");
 
 static const u16 sBirchSpeech_Player_Pal[] = INCBIN_U16("graphics/oak_speech/red/pal.gbapal");
-static const u16 sBirchSpeech_Birch_Pal[] = INCBIN_U16("graphics/birch_speech/birch.gbapal");
+static const u16 sBirchSpeech_Birch_Pal[] = INCBIN_U16("graphics/oak_speech/oak/pic.gbapal");
 static const u32 sBirchSpeech_Brendan_Tiles[] = INCBIN_U32("graphics/oak_speech/rival/pic.8bpp.lz");
 static const u32 sBirchSpeech_May_Tiles[] = INCBIN_U32("graphics/oak_speech/leaf/pic.8bpp.lz");
-static const u32 sBirchSpeech_Birch_Tiles[] = INCBIN_U32("graphics/birch_speech/birch.8bpp.lz");
+static const u32 sBirchSpeech_Birch_Tiles[] = INCBIN_U32("graphics/oak_speech/oak/pic.8bpp.lz");
 
 #define MENU_LEFT 3
 #define MENU_TOP_WIN0 1

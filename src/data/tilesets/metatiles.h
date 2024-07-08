@@ -207,3 +207,9 @@ const u32 gMetatileAttributes_MysteryEventsHouse[] = INCBIN_U32("data/tilesets/s
 
 const u16 gMetatiles_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatiles.bin");
 const u32 gMetatileAttributes_UnionRoom[] = INCBIN_U32("data/tilesets/secondary/union_room/metatile_attributes.bin");
+
+const u16 gMetatiles_OrangeIslandsIndoorPrimary[] = INCBIN_U16("data/tilesets/primary/orange_islands_indoor_primary/metatiles.bin");
+const u32 gMetatileAttributes_OrangeIslandsIndoorPrimary[] = INCBIN_U32("data/tilesets/primary/orange_islands_indoor_primary/metatile_attributes.bin");
+
+const u16 gMetatiles_OrangeIslandsIndoorSecondary[] = INCBIN_U16("data/tilesets/secondary/orange_islands_indoor_secondary/metatiles.bin");
+const u32 gMetatileAttributes_OrangeIslandsIndoorSecondary[] = INCBIN_U32("data/tilesets/secondary/orange_islands_indoor_secondary/metatile_attributes.bin");

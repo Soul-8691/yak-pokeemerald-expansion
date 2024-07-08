@@ -9,3 +9,4 @@ Pikachu intro
 Textbox colors
 Oak intro
 Revamp Oak intro
+Player room

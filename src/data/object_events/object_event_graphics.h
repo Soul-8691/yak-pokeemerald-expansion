@@ -456,4 +456,6 @@ const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pic
 #endif //OW_FOLLOWERS_POKEBALLS
 
 const u32 gObjectEventPic_AshWalkRun[] = INCBIN_U32("graphics/object_events/pics/people/ash/ash_walk_run.4bpp");
-const u16 gObjectEventPalette_AshWalkRun[] = INCBIN_U16("graphics/object_events/pics/people//ash/ash_walk_run.gbapal");
+const u16 gObjectEventPalette_AshWalkRun[] = INCBIN_U16("graphics/object_events/pics/people/ash/ash_walk_run.gbapal");
+const u32 gObjectEventPic_MrMime_[] = INCBIN_U32("graphics/object_events/pics/pokemon/mr_mime.4bpp");
+const u16 gObjectEventPalette_MrMime[] = INCBIN_U16("graphics/object_events/pics/pokemon/mr_mime.gbapal");

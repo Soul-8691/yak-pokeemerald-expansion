@@ -12,11 +12,15 @@ Textbox colors
 Oak intro
 Oak sprite
 Ash sprite
-Player overworlds
+✓ Player overworlds
+Correct overworld palettes
 Revamp Oak intro
 Trainer card
-Player room
+✓ Player room
+TV problem
 Player house 1F
+Mom sprite
+Mime sprite
 
 Credits:
 Kalarie - Original hack

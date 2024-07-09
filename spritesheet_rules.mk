@@ -4004,3 +4004,6 @@ graphics/door_anims/battle_tower_multi_corridor.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/people/ash/ash_walk_run.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
+
+$(OBJEVENTGFXDIR)/pokemon/mr_mime.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4

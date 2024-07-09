@@ -1080,3 +1080,6 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/PlayerHouse1F/scripts.inc"
 	.include "data/maps/PlayerHouse1F/text.inc"
+
+	.include "data/maps/PalletTown/scripts.inc"
+	.include "data/maps/PalletTown/text.inc"

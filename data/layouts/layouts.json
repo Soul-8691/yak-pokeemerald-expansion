@@ -5316,6 +5316,18 @@
       "secondary_tileset": "gTileset_OrangeIslandsIndoorSecondary",
       "border_filepath": "data/layouts/PlayerHouse1F/border.bin",
       "blockdata_filepath": "data/layouts/PlayerHouse1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PALLET_TOWN",
+      "name": "PalletTown_Layout",
+      "width": 48,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_OrangeIslandsExteriorPrimary",
+      "secondary_tileset": "gTileset_PalletTownSecondary",
+      "border_filepath": "data/layouts/PalletTown/border.bin",
+      "blockdata_filepath": "data/layouts/PalletTown/map.bin"
     }
   ]
 }

@@ -213,3 +213,9 @@ const u32 gMetatileAttributes_OrangeIslandsIndoorPrimary[] = INCBIN_U32("data/ti
 
 const u16 gMetatiles_OrangeIslandsIndoorSecondary[] = INCBIN_U16("data/tilesets/secondary/orange_islands_indoor_secondary/metatiles.bin");
 const u32 gMetatileAttributes_OrangeIslandsIndoorSecondary[] = INCBIN_U32("data/tilesets/secondary/orange_islands_indoor_secondary/metatile_attributes.bin");
+
+const u16 gMetatiles_OrangeIslandsExteriorPrimary[] = INCBIN_U16("data/tilesets/primary/orange_islands_exterior_primary/metatiles.bin");
+const u32 gMetatileAttributes_OrangeIslandsExteriorPrimary[] = INCBIN_U32("data/tilesets/primary/orange_islands_exterior_primary/metatile_attributes.bin");
+
+const u16 gMetatiles_PalletTownSecondary[] = INCBIN_U16("data/tilesets/secondary/pallet_town_secondary/metatiles.bin");
+const u32 gMetatileAttributes_PalletTownSecondary[] = INCBIN_U32("data/tilesets/secondary/pallet_town_secondary/metatile_attributes.bin");

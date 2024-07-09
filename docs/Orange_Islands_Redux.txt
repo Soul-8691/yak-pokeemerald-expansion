@@ -14,7 +14,6 @@ Oak sprite
 Ash sprite
 ✓ Player overworlds
 Correct overworld palettes
-Revamp Oak intro
 Trainer card
 ✓ Player room
 TV problem
@@ -23,6 +22,7 @@ Mom sprite
 Mime sprite
 
 Credits:
-Kalarie - Original hack
-Gol Acheron - Copyright screen edit
-caco5400 - Developer logo edit
+Original hack - Kalarie
+Copyright screen edit - Gol Acheron
+Developer logo edit - caco5400
+Coding help - Team Aqua Hideout, pret

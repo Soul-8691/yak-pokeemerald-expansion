@@ -5304,6 +5304,18 @@
       "secondary_tileset": "gTileset_OrangeIslandsIndoorSecondary",
       "border_filepath": "data/layouts/PlayerHouse2F/border.bin",
       "blockdata_filepath": "data/layouts/PlayerHouse2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_PLAYER_HOUSE1F",
+      "name": "PlayerHouse1F_Layout",
+      "width": 13,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_OrangeIslandsIndoorPrimary",
+      "secondary_tileset": "gTileset_OrangeIslandsIndoorSecondary",
+      "border_filepath": "data/layouts/PlayerHouse1F/border.bin",
+      "blockdata_filepath": "data/layouts/PlayerHouse1F/map.bin"
     }
   ]
 }

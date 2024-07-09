@@ -38,3 +38,14 @@ PlayerHouse2F_Text_GoodLuck:
     .string "An e-mail from PROFESSOR OAK:\p"
     .string "Good luck on your journey,\n"
     .string "{PLAYER}!$"
+
+PlayerHouse2F_EventScript_HackCredits::
+	msgbox PlayerHouse2F_Text_HackCredits, MSGBOX_DEFAULT
+    release
+	end
+
+PlayerHouse2F_Text_HackCredits:
+    .string "Credits:\p"
+    .string "Gol Acheron - Copyright screen\n"
+    .string "edit\p"
+    .string "caco5400 - Developer logo edit$"

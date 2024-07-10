@@ -4007,3 +4007,6 @@ $(OBJEVENTGFXDIR)/people/ash/ash_walk_run.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokemon/mr_mime.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/people/mom_orange_islands.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 4

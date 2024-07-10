@@ -1363,3 +1363,7 @@ const struct SpriteFrameImage sPicTable_AshWalkRun[] = {
 static const struct SpriteFrameImage sPicTable_MrMime[] = {
     overworld_ascending_frames(gObjectEventPic_MrMime_, 4, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_MomOrangeIslands[] = {
+    overworld_ascending_frames(gObjectEventPic_MomOrangeIslands, 2, 4),
+};

@@ -46,6 +46,10 @@ PlayerHouse2F_EventScript_HackCredits::
 
 PlayerHouse2F_Text_HackCredits:
     .string "Credits:\p"
-    .string "Gol Acheron - Copyright screen\n"
-    .string "edit\p"
-    .string "caco5400 - Developer logo edit$"
+    .string "Original hack: Kalarie\n"
+    .string "pokeemerald-expansion: RHH\p"
+    .string "Copyright screen edit: Gol Acheron\n"
+    .string "Developer logo edit: caco5400\p"
+    .string "SM title screen theme: ShinkoNetCavy\n"
+    .string "Prof. Oak intro theme: Lewmoth\p"
+    .string "Coding help: TAH (notably SDH)$"

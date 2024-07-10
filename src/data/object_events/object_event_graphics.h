@@ -459,3 +459,5 @@ const u32 gObjectEventPic_AshWalkRun[] = INCBIN_U32("graphics/object_events/pics
 const u16 gObjectEventPalette_AshWalkRun[] = INCBIN_U16("graphics/object_events/pics/people/ash/ash_walk_run.gbapal");
 const u32 gObjectEventPic_MrMime_[] = INCBIN_U32("graphics/object_events/pics/pokemon/mr_mime.4bpp");
 const u16 gObjectEventPalette_MrMime[] = INCBIN_U16("graphics/object_events/pics/pokemon/mr_mime.gbapal");
+const u32 gObjectEventPic_MomOrangeIslands[] = INCBIN_U32("graphics/object_events/pics/people/mom_orange_islands.4bpp");
+const u16 gObjectEventPalette_MomOrangeIslands[] = INCBIN_U16("graphics/object_events/pics/people/mom_orange_islands.gbapal");

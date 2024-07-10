@@ -862,6 +862,7 @@ const struct Tileset gTileset_OrangeIslandsExteriorPrimary =
     .metatiles = gMetatiles_OrangeIslandsExteriorPrimary,
     .metatileAttributes = gMetatileAttributes_OrangeIslandsExteriorPrimary,
     .callback = NULL,
+    .numTiles = NUM_TILES_IN_PRIMARY_FRLG,
 };
 
 const struct Tileset gTileset_PalletTownSecondary =
@@ -873,4 +874,5 @@ const struct Tileset gTileset_PalletTownSecondary =
     .metatiles = gMetatiles_PalletTownSecondary,
     .metatileAttributes = gMetatileAttributes_PalletTownSecondary,
     .callback = NULL,
+    .dontUsePal7 = TRUE,
 };

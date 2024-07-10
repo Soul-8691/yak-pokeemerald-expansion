@@ -540,14 +540,14 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
 #endif //OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_Substitute,            OBJ_EVENT_PAL_TAG_SUBSTITUTE},
     {gObjectEventPaletteEmotes,             OBJ_EVENT_PAL_TAG_EMOTES},
+    {gObjectEventPalette_AshWalkRun,        OBJ_EVENT_PAL_TAG_ASH},
+    {gObjectEventPalette_MrMime,            OBJ_EVENT_PAL_TAG_MR_MIME},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else
     {}, // BUG: FindObjectEventPaletteIndexByTag looks for OBJ_EVENT_PAL_TAG_NONE and not 0x0.
         // If it's looking for a tag that isn't in this table, the game locks in an infinite loop.
 #endif
-    {gObjectEventPalette_AshWalkRun,        OBJ_EVENT_PAL_TAG_ASH},
-    {gObjectEventPalette_MrMime,            OBJ_EVENT_PAL_TAG_MR_MIME},
 };
 
 static const u16 sReflectionPaletteTags_Brendan[] = {

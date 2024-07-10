@@ -2053,6 +2053,9 @@ extern const u32 gTitleScreenCloudsTilemap[];
 extern const u16 gTitleScreenBgPalettes[];
 extern const u16 gTitleScreenPressStartPal[];
 extern const u16 gTitleScreenEmeraldVersionPal[];
+extern const u16 gTitleScreenCloudsPal[];
+extern const u16 gTitleScreenPokemonLogoPal[];
+extern const u16 gTitleScreenRayquazaPal[];
 
 // Battle Dome
 extern const u32 gDomeTourneyInfoCard_Gfx[];

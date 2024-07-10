@@ -2021,10 +2021,14 @@ const u16 gMonIconPalettes[][16] =
     INCBIN_U16("graphics/pokemon/icon_palettes/pal5.gbapal"),
 };
 
-const u16 gTitleScreenBgPalettes[]         = INCBIN_U16("graphics/title_screen/logo_orange_islands.gbapal",
-                                                        "graphics/title_screen/dragonite.gbapal");
+const u16 gTitleScreenBgPalettes[]         = INCBIN_U16("graphics/title_screen/publisher_.gbapal",
+                                                        "graphics/title_screen/dragonite.gbapal",
+                                                        "graphics/title_screen/logo_orange_islands.gbapal");
 const u16 gTitleScreenEmeraldVersionPal[]  = INCBIN_U16("graphics/title_screen/emerald_version.gbapal");
-const u32 gTitleScreenCloudsTilemap[]      = INCBIN_U32("graphics/title_screen/clouds.bin.lz");
+const u16 gTitleScreenCloudsPal[]          = INCBIN_U16("graphics/title_screen/publisher_.gbapal");
+const u16 gTitleScreenRayquazaPal[]        = INCBIN_U16("graphics/title_screen/dragonite.gbapal");
+const u16 gTitleScreenPokemonLogoPal[]     = INCBIN_U16("graphics/title_screen/logo_orange_islands.gbapal");
+const u32 gTitleScreenCloudsTilemap[]      = INCBIN_U32("graphics/title_screen/publisher_.bin.lz");
 const u32 gTitleScreenPokemonLogoGfx[]     = INCBIN_U32("graphics/title_screen/logo_orange_islands.8bpp.lz");
 const u32 gTitleScreenEmeraldVersionGfx[]  = INCBIN_U32("graphics/title_screen/emerald_version.8bpp.lz");
 const u16 gTitleScreenPressStartPal[]      = INCBIN_U16("graphics/title_screen/press_start.gbapal");

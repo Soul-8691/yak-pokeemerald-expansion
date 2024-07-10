@@ -31,12 +31,12 @@ PlayerHouse2F_EventScript_GoodLuck::
 
 PlayerHouse2F_Text_HavingAGreatTime:
     .string "An e-mail from PROFESSOR OAK:\p"
-    .string "Your POKéMON are having a great\n"
+    .string "{COLOR BLUE}Your POKéMON are having a great\n"
     .string "time at my lab.$"
 
 PlayerHouse2F_Text_GoodLuck:
     .string "An e-mail from PROFESSOR OAK:\p"
-    .string "Good luck on your journey,\n"
+    .string "{COLOR BLUE}Good luck on your journey,\n"
     .string "{PLAYER}!$"
 
 PlayerHouse2F_EventScript_HackCredits::

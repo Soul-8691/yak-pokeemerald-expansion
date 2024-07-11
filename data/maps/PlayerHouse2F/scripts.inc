@@ -52,4 +52,7 @@ PlayerHouse2F_Text_HackCredits:
     .string "Developer logo edit: caco5400\p"
     .string "SM title screen theme: ShinkoNetCavy\n"
     .string "Prof. Oak intro theme: Lewmoth\p"
+    .string "Valencia Park map: Demonheadge\p"
+    .string "Pokemon Park map: Axcellerator\p"
+    .string "Sunburst Island map: MagicApollo\p"
     .string "Coding help: TAH (notably SDH)$"

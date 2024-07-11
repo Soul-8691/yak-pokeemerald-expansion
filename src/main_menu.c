@@ -229,6 +229,7 @@ static const u32 sBirchSpeech_Platform_Gfx[] = INCBIN_U32("graphics/oak_speech/p
 
 static const u16 sBirchSpeech_Player_Pal[] = INCBIN_U16("graphics/oak_speech/red/pal.gbapal");
 static const u16 sBirchSpeech_Birch_Pal[] = INCBIN_U16("graphics/oak_speech/oak/pic.gbapal");
+static const u32 sBirchSpeech_Player_Tiles[] = INCBIN_U32("graphics/oak_speech/red/ash.8bpp.lz");
 static const u32 sBirchSpeech_Brendan_Tiles[] = INCBIN_U32("graphics/oak_speech/rival/pic.8bpp.lz");
 static const u32 sBirchSpeech_May_Tiles[] = INCBIN_U32("graphics/oak_speech/leaf/pic.8bpp.lz");
 static const u32 sBirchSpeech_Birch_Tiles[] = INCBIN_U32("graphics/oak_speech/oak/pic.8bpp.lz");
@@ -1061,8 +1062,8 @@ static void LoadTrainerPic(u16 whichPic)
     switch (whichPic)
     {
     case MALE_PLAYER_PIC:
-        LoadPalette(sBirchSpeech_Player_Pal, 0x40, sizeof(sBirchSpeech_Player_Pal));
-        LZ77UnCompVram(sBirchSpeech_Brendan_Tiles, (void *)VRAM + 0x600);
+        LoadPalette(sBirchSpeech_Player_Pal, 0x40, 2 * PLTT_SIZE_4BPP);
+        LZ77UnCompVram(sBirchSpeech_Player_Tiles, (void *)VRAM + 0x600);
         break;
     case FEMALE_PLAYER_PIC:
         LoadPalette(sBirchSpeech_Player_Pal, 0x40, sizeof(sBirchSpeech_Player_Pal));

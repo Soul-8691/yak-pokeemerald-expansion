@@ -228,11 +228,11 @@ static const u16 sBirchSpeech_Platform_Pal[] = INCBIN_U16("graphics/oak_speech/p
 static const u32 sBirchSpeech_Platform_Gfx[] = INCBIN_U32("graphics/oak_speech/platform.4bpp.lz");
 
 static const u16 sBirchSpeech_Player_Pal[] = INCBIN_U16("graphics/oak_speech/red/pal.gbapal");
-static const u16 sBirchSpeech_Birch_Pal[] = INCBIN_U16("graphics/oak_speech/oak/pic.gbapal");
+static const u16 sBirchSpeech_Birch_Pal[] = INCBIN_U16("graphics/oak_speech/oak/pal.gbapal");
 static const u32 sBirchSpeech_Player_Tiles[] = INCBIN_U32("graphics/oak_speech/red/ash.8bpp.lz");
 static const u32 sBirchSpeech_Brendan_Tiles[] = INCBIN_U32("graphics/oak_speech/rival/pic.8bpp.lz");
 static const u32 sBirchSpeech_May_Tiles[] = INCBIN_U32("graphics/oak_speech/leaf/pic.8bpp.lz");
-static const u32 sBirchSpeech_Birch_Tiles[] = INCBIN_U32("graphics/oak_speech/oak/pic.8bpp.lz");
+static const u32 sBirchSpeech_Birch_Tiles[] = INCBIN_U32("graphics/oak_speech/oak/oak.8bpp.lz");
 
 #define MENU_LEFT 3
 #define MENU_TOP_WIN0 1
@@ -1070,7 +1070,7 @@ static void LoadTrainerPic(u16 whichPic)
         LZ77UnCompVram(sBirchSpeech_May_Tiles, (void *)VRAM + 0x600);
         break;
     case BIRCH_PIC:
-        LoadPalette(sBirchSpeech_Birch_Pal, 0x60, sizeof(sBirchSpeech_Birch_Pal));
+        LoadPalette(sBirchSpeech_Birch_Pal, 0x60, 2 * PLTT_SIZE_4BPP);
         LZ77UnCompVram(sBirchSpeech_Birch_Tiles, (void *)VRAM + 0x600);
         break;
     default:
@@ -1322,7 +1322,7 @@ static void Task_NewGameBirchSpeech_CreateNameYesNo(u8 taskId)
         }
         else
         {
-            CreateYesNoMenuParameterized(2, FONT_NORMAL, 0, 2, 0x214, 14);
+            CreateYesNoMenu(&sNewGameBirchSpeechTextWindows[WIN_INTRO_YESNO], 0x214, 14, 0);
             gTasks[taskId].func = Task_NewGameBirchSpeech_ProcessNameYesNoMenu;
         }
     }

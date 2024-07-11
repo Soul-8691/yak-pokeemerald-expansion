@@ -193,8 +193,11 @@ static void Task_NewGameBirchSpeech_WaitToShowGenderMenu(u8);
 static void Task_NewGameBirchSpeech_ChooseGender(u8);
 static void Task_NewGameBirchSpeech_WhatsYourName(u8);
 static void Task_NewGameBirchSpeech_WaitPressBeforeNameChoice(u8);
+static void Task_NewGameBirchSpeech_WaitPressBeforeRivalNameChoice(u8);
 static void Task_NewGameBirchSpeech_StartNamingScreen(u8);
+static void Task_NewGameBirchSpeech_StartRivalNamingScreen(u8);
 static void CB2_NewGameBirchSpeech_ReturnFromNamingScreen(void);
+static void CB2_NewGameBirchSpeech_ReturnFromRivalNamingScreen(void);
 static void Task_NewGameBirchSpeech_CreateNameYesNo(u8);
 static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8);
 void CreateYesNoMenuParameterized(u8, u8, u16, u16, u16, u8);
@@ -1299,6 +1302,40 @@ static void Task_NewGameBirchSpeech_StartNamingScreen(u8 taskId)
     }
 }
 
+static void Task_NewGameBirchSpeech_WhatsYourRivalsName(u8 taskId)
+{
+    if (gTasks[taskId].tIsDoneFadingSprites)
+    {
+        if (gTasks[taskId].tTimer)
+        {
+            gTasks[taskId].tTimer--;
+        }
+        else
+        {
+            BirchSpeechPrintMessage(gText_Birch_RivalName);
+            gTasks[taskId].func = Task_NewGameBirchSpeech_WaitPressBeforeRivalNameChoice;
+        }
+    }
+}
+
+static void Task_NewGameBirchSpeech_WaitPressBeforeRivalNameChoice(u8 taskId)
+{
+    if (!RunTextPrintersAndIsPrinter0Active())
+    {
+        BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
+        gTasks[taskId].func = Task_NewGameBirchSpeech_StartRivalNamingScreen;
+    }
+}
+
+static void Task_NewGameBirchSpeech_StartRivalNamingScreen(u8 taskId)
+{
+    if (!gPaletteFade.active)
+    {
+        StringCopy(gSaveBlock2Ptr->rivalName, sMalePresetNames[Random() % NELEMS(sMalePresetNames)]);
+        DoNamingScreen(NAMING_SCREEN_RIVAL, gSaveBlock2Ptr->rivalName, 0, 0, 0, CB2_NewGameBirchSpeech_ReturnFromRivalNamingScreen);
+    }
+}
+
 static void Task_NewGameBirchSpeech_SoItsPlayerName(u8 taskId)
 {
     if (gTasks[taskId].tTimer-- <= 0)
@@ -1335,7 +1372,7 @@ static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8 taskId)
         case 0:
             PlaySE(SE_SELECT);
             ClearDialogWindowAndFrame(WIN_INTRO_TEXTBOX, TRUE);
-            gTasks[taskId].func = Task_NewGameBirchSpeech_SlidePlatformAway2;
+            gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourRivalsName;
             break;
         case MENU_B_PRESSED:
         case 1:
@@ -1544,6 +1581,39 @@ static void CB2_NewGameBirchSpeech_ReturnFromNamingScreen(void)
     ResetTasks();
     BirchSpeech_InitBg();
     taskId = CreateTask(Task_NewGameBirchSpeech_SoItsPlayerName, 0);
+    gTasks[taskId].tTimer = 5;
+    gTasks[taskId].tBG1HOFS = 60;
+    AddBirchSpeechObjects(taskId);
+    LoadTrainerPic(gSaveBlock2Ptr->playerGender);
+    for (i = 0; i < NUM_PLATFORM_SPRITES; i++)
+        gSprites[gTasks[taskId].tPlatformSpriteId(i)].x = 148 + (i * 32);
+    ChangeBgX(2, 60 * -0x100, 0);
+    BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
+    ShowBg(0);
+    ShowBg(1);
+    ShowBg(2);
+}
+
+static void CB2_NewGameBirchSpeech_ReturnFromRivalNamingScreen(void)
+{
+    u32 i;
+    u8 taskId;
+
+    SetGpuReg(REG_OFFSET_BG2CNT, 0);
+    SetGpuReg(REG_OFFSET_BG1CNT, 0);
+    SetGpuReg(REG_OFFSET_BG0CNT, 0);
+    SetGpuReg(REG_OFFSET_BG2HOFS, 0);
+    SetGpuReg(REG_OFFSET_BG2VOFS, 0);
+    SetGpuReg(REG_OFFSET_BG1HOFS, 0);
+    SetGpuReg(REG_OFFSET_BG1VOFS, 0);
+    SetGpuReg(REG_OFFSET_BG0HOFS, 0);
+    SetGpuReg(REG_OFFSET_BG0VOFS, 0);
+    DmaFill16(3, 0, VRAM, VRAM_SIZE);
+    DmaFill32(3, 0, OAM, OAM_SIZE);
+    DmaFill16(3, 0, PLTT, PLTT_SIZE);
+    ResetTasks();
+    BirchSpeech_InitBg();
+    taskId = CreateTask(Task_NewGameBirchSpeech_SlidePlatformAway2, 0);
     gTasks[taskId].tTimer = 5;
     gTasks[taskId].tBG1HOFS = 60;
     AddBirchSpeechObjects(taskId);

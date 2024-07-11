@@ -47,6 +47,10 @@ gText_Birch_SoItsPlayer::
 	.string "Right…\n"
 	.string "I see you filled in {PLAYER}{KUN}.$"
 
+gText_Birch_RivalName::
+	.string "…And what is your rival's name, again?\p"
+	.string "$"
+
 gText_Birch_YourePlayer::
 	.string "Great!\p"
 	.string "$"

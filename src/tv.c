@@ -768,6 +768,14 @@ static const struct MetatileMapping sTVMetatileMapping[] =
             METATILE_Building_TV_On
         },
     },
+    {
+        .tileset = &gTileset_OrangeIslandsIndoorSecondary,
+        .metatileIds =
+        {
+            METATILE_Building_TV_Off,
+            METATILE_Building_TV_On
+        },
+    },
 };
 
 void ClearTVShowData(void)
@@ -842,7 +850,7 @@ static u32 GetTVMetatile(bool32 turnOn)
     for (i = 0; i < ARRAY_COUNT(sTVMetatileMapping); i++)
     {
         const struct MetatileMapping *TVMetatileMapping = &sTVMetatileMapping[i];
-        if (gMapHeader.mapLayout->primaryTileset == TVMetatileMapping->tileset)
+        if (gMapHeader.mapLayout->primaryTileset == TVMetatileMapping->tileset || gMapHeader.mapLayout->secondaryTileset == TVMetatileMapping->tileset)
             return TVMetatileMapping->metatileIds[turnOn];
     }
     return 0;

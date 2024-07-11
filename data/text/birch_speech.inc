@@ -21,7 +21,8 @@ gText_Birch_Pokemon::
 
 gText_Birch_MainSpeech::
 	.string "Oh, I remember the day you left\n"
-	.string "PALLET TOWN for the first time together.\p"
+	.string "PALLET TOWN for the first time\l"
+	.string "together.\p"
 	.string "Who would've known that the two of\n"
 	.string "you would be best friends, now.\p"
 	.string "I'm glad to witness that.\p"
@@ -63,5 +64,5 @@ gText_Birch_AreYouReady::
 	.string "Great!\p"
 	.string "{PLAYER}{KUN}!\p"
 	.string "When you're ready, I'll see you\n"
-	.string "at my lab!\p"
+	.string "at my lab!"
 	.string "$"

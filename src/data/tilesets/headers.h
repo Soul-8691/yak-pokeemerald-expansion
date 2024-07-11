@@ -639,9 +639,6 @@ const struct Tileset gTileset_SecretBase =
     .numTiles = NUM_TILES_IN_PRIMARY_EMERALD,
 };
 
-const struct Tileset * const gTilesetPointer_SecretBase = &gTileset_SecretBase;
-const struct Tileset * const gTilesetPointer_SecretBaseRedCave = &gTileset_SecretBaseRedCave;
-
 const struct Tileset gTileset_EliteFour =
 {
     .isCompressed = TRUE,

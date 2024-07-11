@@ -302,7 +302,7 @@ static u16 CreateTrainerCardSprite(u16 species, bool8 isShiny, u32 personality, 
 
 u16 CreateMonPicSprite(u16 species, bool8 isShiny, u32 personality, bool8 isFrontPic, s16 x, s16 y, u8 paletteSlot, u16 paletteTag)
 {
-    return CreatePicSprite(species, isShiny, personality, isFrontPic, x, y, paletteSlot, paletteTag, FALSE);
+    return CreateMonPicSprite_Affine(species, isShiny, personality, isFrontPic, x, y, paletteSlot, paletteTag);
 }
 
 u16 FreeAndDestroyMonPicSprite(u16 spriteId)

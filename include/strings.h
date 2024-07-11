@@ -344,6 +344,7 @@ extern const u8 gText_Birch_AndYouAre[];
 extern const u8 gText_Birch_BoyOrGirl[];
 extern const u8 gText_Birch_WhatsYourName[];
 extern const u8 gText_Birch_SoItsPlayer[];
+extern const u8 gText_Birch_SoItsRival[];
 extern const u8 gText_Birch_YourePlayer[];
 extern const u8 gText_Birch_RivalName[];
 extern const u8 gText_Birch_AreYouReady[];

@@ -51,6 +51,10 @@ gText_Birch_RivalName::
 	.string "…And what is your rival's name, again?\p"
 	.string "$"
 
+gText_Birch_SoItsRival::
+	.string "You filled in {B_RIVAL_NAME}.\n"
+	.string "Is that correct?$"
+
 gText_Birch_YourePlayer::
 	.string "Great!\p"
 	.string "$"

@@ -251,6 +251,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvi
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AshWalkRun;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MrMime;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MomOrangeIslands;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gary;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -497,6 +498,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_ASH_WALK_RUN] =             &gObjectEventGraphicsInfo_AshWalkRun,
     [OBJ_EVENT_GFX_MR_MIME] =                  &gObjectEventGraphicsInfo_MrMime,
     [OBJ_EVENT_GFX_MOM_ORANGE_ISLANDS] =       &gObjectEventGraphicsInfo_MomOrangeIslands,
+    [OBJ_EVENT_GFX_GARY] =                     &gObjectEventGraphicsInfo_Gary,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

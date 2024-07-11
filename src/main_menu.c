@@ -238,6 +238,8 @@ static const u32 sBirchSpeech_Player_Tiles[] = INCBIN_U32("graphics/oak_speech/r
 static const u32 sBirchSpeech_Brendan_Tiles[] = INCBIN_U32("graphics/oak_speech/rival/pic.8bpp.lz");
 static const u32 sBirchSpeech_May_Tiles[] = INCBIN_U32("graphics/oak_speech/leaf/pic.8bpp.lz");
 static const u32 sBirchSpeech_Birch_Tiles[] = INCBIN_U32("graphics/oak_speech/oak/oak.8bpp.lz");
+static const u32 sBirchSpeech_Rival_Tiles[] = INCBIN_U32("graphics/oak_speech/gary/gary.8bpp.lz");
+static const u16 sBirchSpeech_Rival_Pal[] = INCBIN_U16("graphics/oak_speech/gary/pal.gbapal");
 
 #define MENU_LEFT 3
 #define MENU_TOP_WIN0 1
@@ -1071,8 +1073,8 @@ static void LoadTrainerPic(u16 whichPic)
         LZ77UnCompVram(sBirchSpeech_Player_Tiles, (void *)VRAM + 0x600);
         break;
     case FEMALE_PLAYER_PIC:
-        LoadPalette(sBirchSpeech_Player_Pal, 0x40, sizeof(sBirchSpeech_Player_Pal));
-        LZ77UnCompVram(sBirchSpeech_May_Tiles, (void *)VRAM + 0x600);
+        LoadPalette(sBirchSpeech_Rival_Pal, 0x40, 2 * PLTT_SIZE_4BPP);
+        LZ77UnCompVram(sBirchSpeech_Rival_Tiles, (void *)VRAM + 0x600);
         break;
     case BIRCH_PIC:
         LoadPalette(sBirchSpeech_Birch_Pal, 0x60, 2 * PLTT_SIZE_4BPP);
@@ -1374,6 +1376,7 @@ static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8 taskId)
         case 0:
             PlaySE(SE_SELECT);
             ClearDialogWindowAndFrame(WIN_INTRO_TEXTBOX, TRUE);
+            LoadTrainerPic(FEMALE);
             gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsYourRivalsName;
             break;
         case MENU_B_PRESSED:
@@ -1420,6 +1423,7 @@ static void Task_NewGameBirchSpeech_ProcessRivalNameYesNoMenu(u8 taskId)
         case 0:
             PlaySE(SE_SELECT);
             ClearDialogWindowAndFrame(WIN_INTRO_TEXTBOX, TRUE);
+            LoadTrainerPic(MALE);
             gTasks[taskId].func = Task_NewGameBirchSpeech_SlidePlatformAway2;
             break;
         case MENU_B_PRESSED:
@@ -1665,7 +1669,7 @@ static void CB2_NewGameBirchSpeech_ReturnFromRivalNamingScreen(void)
     gTasks[taskId].tTimer = 5;
     gTasks[taskId].tBG1HOFS = 60;
     AddBirchSpeechObjects(taskId);
-    LoadTrainerPic(gSaveBlock2Ptr->playerGender);
+    LoadTrainerPic(FEMALE);
     for (i = 0; i < NUM_PLATFORM_SPRITES; i++)
         gSprites[gTasks[taskId].tPlatformSpriteId(i)].x = 148 + (i * 32);
     ChangeBgX(2, 60 * -0x100, 0);

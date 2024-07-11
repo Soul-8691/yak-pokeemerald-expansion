@@ -52,7 +52,7 @@ gText_Birch_RivalName::
 	.string "$"
 
 gText_Birch_SoItsRival::
-	.string "You filled in {B_RIVAL_NAME}.\n"
+	.string "You filled in {RIVAL}.\n"
 	.string "Is that correct?$"
 
 gText_Birch_YourePlayer::

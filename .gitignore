@@ -38,5 +38,8 @@ prefabs.json
 *.diff
 *.sym
 *.js
+!land_encounters.js
 src/data/map_group_count.h
 tools/trainerproc/trainerproc
+tools/porytiles/*
+!tools/porytiles/porytiles

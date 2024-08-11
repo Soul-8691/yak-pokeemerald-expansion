@@ -844,4 +844,6 @@ extern const u8 BattleScript_EffectTidyUp[];
 extern const u8 BattleScript_EffectSpicyExtract[];
 extern const u8 BattleScript_DamageToQuarterTargetHP[];
 
+extern const u8 BattleScript_ItemDropped[];
+
 #endif // GUARD_BATTLE_SCRIPTS_H

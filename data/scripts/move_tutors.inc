@@ -268,3 +268,111 @@ MoveTutor_EventScript_OpenPartyMenu::
 MoveTutor_EventScript_CanOnlyBeLearnedOnce::
 	msgbox MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce, MSGBOX_YESNO
 	return
+
+ValenciaPark_EventScript_MoveTaught::
+	msgbox MoveTutor_Text_MoveTaught, MSGBOX_DEFAULT
+	release
+	end
+
+MoveTutor_Text_MoveTaught:
+	.string "Something about the environment…$"
+
+ValenciaPark_EventScript_MoveTutor::
+	lockall
+	goto_if_set FLAG_VALENCIA_PARK_TAUGHT_MOVE, ValenciaPark_EventScript_MoveTaught
+	goto_if_set FLAG_TEMP_1, ValenciaPark_EventScript_TutorMove
+	msgbox ValenciaPark_Text_TutorWelcome, MSGBOX_DEFAULT
+	goto ValenciaPark_EventScript_TutorMove
+	end
+
+ValenciaPark_EventScript_ComeBackWithSilverpowder::
+	msgbox ValenciaPark_Text_ComeBackWithSilverpowder, MSGBOX_DEFAULT
+	releaseall
+	end
+
+ValenciaPark_Text_ThatsASilverpowderWantMeToTeachMove:
+	.string "Oh! That's it! That's an honest to\n"
+	.string "goodness SILVERPOWDER!\p"
+	.string "Let me guess, you want me to teach\n"
+	.string "a move?$"
+
+ValenciaPark_Text_ComeBackWithSilverpowder:
+	.string "If your POKéMON need to learn a move,\n"
+	.string "come back with a SILVERPOWDER.$"
+
+ValenciaPark_EventScript_TutorMove::
+	checkitem ITEM_SILVERPOWDER
+	goto_if_eq VAR_RESULT, FALSE, ValenciaPark_EventScript_ComeBackWithSilverpowder
+	msgbox ValenciaPark_Text_ThatsASilverpowderWantMeToTeachMove, MSGBOX_YESNO
+	switch VAR_RESULT
+	case NO, ValenciaPark_EventScript_ComeBackWithSilverpowder
+	message ValenciaPark_Text_WhichMoveTeach
+	waitmessage
+	setvar VAR_TEMP_FRONTIER_TUTOR_ID, 0
+	setvar VAR_0x8004, SCROLL_MULTI_VALENCIA_PARK_TUTOR_MOVES
+	setvar VAR_0x8006, 0
+	special ShowScrollableMultichoice
+	waitstate
+	copyvar VAR_TEMP_FRONTIER_TUTOR_SELECTION, VAR_RESULT
+	switch VAR_RESULT
+	case 0, ValenciaPark_EventScript_BugBuzzTutor
+	case 1, ValenciaPark_EventScript_PollenPuffTutor
+	case 2, ValenciaPark_EventScript_GigaDrainTutor
+	case MULTI_B_PRESSED, ValenciaPark_EventScript_ExitTutorMoveSelect
+	end
+
+ValenciaPark_Text_HandedOverSilverpowder:
+	.string "{PLAYER} handed over one SILVERPOWDER\n"
+	.string "in exchange.$"
+
+ValenciaPark_EventScript_TeachTutorMove::
+	msgbox ValenciaPark_Text_PleaseChoosePkmn, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	special ChooseMonForMoveTutor
+	waitstate
+	goto_if_eq VAR_RESULT, FALSE, ValenciaPark_EventScript_CancelChooseMon
+	msgbox ValenciaPark_Text_AndDone, MSGBOX_DEFAULT
+	copyvar VAR_0x8004, VAR_0x8008
+	msgbox ValenciaPark_Text_HandedOverSilverpowder, MSGBOX_DEFAULT
+	removeitem ITEM_SILVERPOWDER
+	setflag FLAG_VALENCIA_PARK_TAUGHT_MOVE
+	release
+	end
+
+ValenciaPark_EventScript_ConfirmMoveSelection::
+	special BufferBattleFrontierTutorMoveName
+	buffernumberstring STR_VAR_2, VAR_0x8008
+	msgbox ValenciaPark_Text_TheMoveIsIt, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, ValenciaPark_EventScript_ChooseNewMove
+	goto_if_ge VAR_TEMP_1, VAR_0x8008, ValenciaPark_EventScript_TeachTutorMove
+	goto ValenciaPark_EventScript_ChooseNewMove
+	end
+
+ValenciaPark_EventScript_ChooseNewMove::
+	goto ValenciaPark_EventScript_TutorMove
+	end
+
+ValenciaPark_EventScript_ExitTutorMoveSelect::
+	msgbox ValenciaPark_Text_PleaseVisitAgain, MSGBOX_DEFAULT
+	release
+	end
+
+ValenciaPark_EventScript_CancelChooseMon::
+	msgbox ValenciaPark_Text_PleaseVisitAgain, MSGBOX_DEFAULT
+	release
+	end
+
+ValenciaPark_EventScript_BugBuzzTutor::
+	setvar VAR_0x8005, MOVE_BUG_BUZZ
+	goto ValenciaPark_EventScript_ConfirmMoveSelection
+	end
+
+ValenciaPark_EventScript_PollenPuffTutor::
+	setvar VAR_0x8005, MOVE_POLLEN_PUFF
+	goto ValenciaPark_EventScript_ConfirmMoveSelection
+	end
+
+ValenciaPark_EventScript_GigaDrainTutor::
+	setvar VAR_0x8005, MOVE_GIGA_DRAIN
+	goto ValenciaPark_EventScript_ConfirmMoveSelection
+	end

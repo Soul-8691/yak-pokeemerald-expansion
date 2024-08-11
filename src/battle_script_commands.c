@@ -65,6 +65,11 @@
 #include "constants/pokemon.h"
 #include "config/battle.h"
 #include "data/battle_move_effects.h"
+#include "quests.h"
+#include "data/pokemon/item_drops.h"
+
+EWRAM_DATA u16 species2[PARTY_SIZE] = {0};
+EWRAM_DATA u16 items[PARTY_SIZE][5] = {0};
 
 // table to avoid ugly powing on gba (courtesy of doesnt)
 // this returns (i^2.5)/4
@@ -10933,6 +10938,636 @@ static void Cmd_various(void)
             MarkBattlerForControllerExec(gBattlerAttacker);
         }
         return;
+    }
+    case VARIOUS_UPDATE_QUEST_COUNTER:
+    {
+        u8 leftToDefeat = VarGet(VAR_QUEST_LEFT_TO_DEFEAT);
+        u8 leftToDefeat2 = VarGet(VAR_QUEST_LEFT_TO_DEFEAT_2);
+        s32 enemySpecies = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES);
+        u16 map = (gSaveBlock1Ptr->location.mapGroup << 8) + gSaveBlock1Ptr->location.mapNum;
+        if (FlagGet(FLAG_VALENCIA_PARK_SHROODLES) && enemySpecies == SPECIES_SHROODLE) {
+            if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+                leftToDefeat--;
+            if ((leftToDefeat <= 0) && QuestMenu_GetSetQuestState(QUEST_1, FLAG_GET_ACTIVE))
+            {
+                QuestMenu_GetSetQuestState(QUEST_1, FLAG_SET_REWARD);
+                QuestMenu_GetSetQuestState(QUEST_1 ,FLAG_REMOVE_ACTIVE);
+            }
+        }
+        if (FlagGet(FLAG_VALENCIA_PARK_DEFEATED_POKEMON) && map == MAP_VALENCIA_PARK) {
+            if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+                leftToDefeat2--;
+            if ((leftToDefeat2 <= 0) && QuestMenu_GetSetQuestState(QUEST_3, FLAG_GET_ACTIVE))
+            {
+                QuestMenu_GetSetQuestState(QUEST_3, FLAG_SET_REWARD);
+                QuestMenu_GetSetQuestState(QUEST_3 ,FLAG_REMOVE_ACTIVE);
+            }
+        }
+        VarSet(VAR_QUEST_LEFT_TO_DEFEAT, leftToDefeat);
+        VarSet(VAR_QUEST_LEFT_TO_DEFEAT_2, leftToDefeat2);
+        gBattlescriptCurrInstr = cmd->nextInstr;
+        return;
+    }
+    case VARIOUS_UPDATE_QUEST_COUNTER_2:
+    {
+        u8 leftToCatch = VarGet(VAR_QUEST_LEFT_TO_CATCH);
+        u8 leftToCatch2 = VarGet(VAR_QUEST_LEFT_TO_CATCH_2);
+        s32 enemySpecies = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES);
+        u16 map = (gSaveBlock1Ptr->location.mapGroup << 8) + gSaveBlock1Ptr->location.mapNum;
+        if (FlagGet(FLAG_VALENCIA_PARK_BLIPBUGS) && enemySpecies == SPECIES_BLIPBUG) {
+            if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+                leftToCatch--;
+            if ((leftToCatch <= 0) && QuestMenu_GetSetQuestState(QUEST_2, FLAG_GET_ACTIVE))
+            {
+                QuestMenu_GetSetQuestState(QUEST_2, FLAG_SET_REWARD);
+                QuestMenu_GetSetQuestState(QUEST_2 ,FLAG_REMOVE_ACTIVE);
+            }
+        }
+        if (FlagGet(FLAG_VALENCIA_PARK_CAUGHT) && map == MAP_VALENCIA_PARK) {
+            u16 silverpowder = ITEM_SILVERPOWDER;
+            if ((enemySpecies == SPECIES_SEWADDLE && Random() % 2 == 0) || (enemySpecies == SPECIES_BLIPBUG && Random() % 4 == 0)) {
+                SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, &silverpowder);
+                QuestMenu_GetSetQuestState(QUEST_6, FLAG_SET_REWARD);
+                QuestMenu_GetSetQuestState(QUEST_6 ,FLAG_REMOVE_ACTIVE);
+            }
+            if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+                leftToCatch2--;
+            if ((leftToCatch2 <= 0) && QuestMenu_GetSetQuestState(QUEST_4, FLAG_GET_ACTIVE))
+            {
+                QuestMenu_GetSetQuestState(QUEST_4, FLAG_SET_REWARD);
+                QuestMenu_GetSetQuestState(QUEST_4 ,FLAG_REMOVE_ACTIVE);
+            }
+        }
+        VarSet(VAR_QUEST_LEFT_TO_CATCH, leftToCatch);
+        VarSet(VAR_QUEST_LEFT_TO_CATCH_2, leftToCatch2);
+        gBattlescriptCurrInstr = cmd->nextInstr;
+        return;
+    }
+    case VARIOUS_UPDATE_QUEST_COUNTER_3:
+    {
+            u8 leftToDefeat = VarGet(VAR_QUEST_LEFT_TO_DEFEAT_3);
+            u16 map = (gSaveBlock1Ptr->location.mapGroup << 8) + gSaveBlock1Ptr->location.mapNum;
+            if (FlagGet(FLAG_VALENCIA_PARK_DEFEATED_TRAINERS) && map == MAP_VALENCIA_PARK) {
+                if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+                    leftToDefeat--;
+                if ((leftToDefeat <= 0) && QuestMenu_GetSetQuestState(QUEST_2, FLAG_GET_ACTIVE))
+                {
+                    QuestMenu_GetSetQuestState(QUEST_5, FLAG_SET_REWARD);
+                    QuestMenu_GetSetQuestState(QUEST_5 ,FLAG_REMOVE_ACTIVE);
+                }
+            }
+            VarSet(VAR_QUEST_LEFT_TO_DEFEAT_3, leftToDefeat);
+            gBattlescriptCurrInstr = cmd->nextInstr;
+            return;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SET_SPECIES_ITEMS:
+    {
+        u32 i, j, k;
+        u8 enemyPartyCount = CalculateEnemyPartyCount();
+        for (i = 0; i < enemyPartyCount; i++)
+        {
+            u16 species = GetMonData(&gEnemyParty[i], MON_DATA_SPECIES);
+            if (species != SPECIES_NONE)
+            {
+                u16 map = (gSaveBlock1Ptr->location.mapGroup << 8) + gSaveBlock1Ptr->location.mapNum;
+                if (FlagGet(FLAG_VALENCIA_PARK_SILVERPOWDER) && (species == SPECIES_SEWADDLE || species == SPECIES_BLIPBUG) && map == MAP_VALENCIA_PARK) {
+                    u8 numDrops = (Random() % (gItemDropSpecies[species].numDropsUpper - gItemDropSpecies[species].numDropsLower + 1)) + gItemDropSpecies[species].numDropsLower;
+                    if (numDrops > 0)
+                    {
+                        for (j = 0; j < numDrops; j++)
+                        {
+                            u32 rand = Random() % 100;
+                            u32 percentTotal = 0;
+                            for (k = 0; k < numDrops; k++)
+                            {
+                                u16 item = gItemDropSpecies[species].drops[k].item;
+                                percentTotal += gItemDropSpecies[species].drops[k].dropChance;
+                                if ((rand >= percentTotal - gItemDropSpecies[species].drops[k].dropChance) && (rand < percentTotal)) {
+                                    species2[i] = species;
+                                    items[i][j] = item;
+                                    if (item == ITEM_SILVERPOWDER) {
+                                        QuestMenu_GetSetQuestState(QUEST_6, FLAG_SET_REWARD);
+                                        QuestMenu_GetSetQuestState(QUEST_6 ,FLAG_REMOVE_ACTIVE);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        gBattlescriptCurrInstr = cmd->nextInstr;
+        return;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_1_ITEM_1:
+    {
+        if (species2[0] != SPECIES_NONE && items[0][0] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[0]));
+            CopyItemName(items[0][0], gStringVar2);
+            if(AddBagItem(items[0][0], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[0][0] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_1_ITEM_2:
+    {
+        if (species2[0] != SPECIES_NONE && items[0][1] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[0]));
+            CopyItemName(items[0][1], gStringVar2);
+            if(AddBagItem(items[0][1], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[0][1] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_1_ITEM_3:
+    {
+        if (species2[0] != SPECIES_NONE && items[0][2] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[0]));
+            CopyItemName(items[0][2], gStringVar2);
+            if(AddBagItem(items[0][2], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[0][2] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_1_ITEM_4:
+    {
+        if (species2[0] != SPECIES_NONE && items[0][3] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[0]));
+            CopyItemName(items[0][3], gStringVar2);
+            if(AddBagItem(items[0][3], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[0][3] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_1_ITEM_5:
+    {
+        if (species2[0] != SPECIES_NONE && items[0][4] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[0]));
+            CopyItemName(items[0][4], gStringVar2);
+            if(AddBagItem(items[0][4], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[0][4] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_2_ITEM_1:
+    {
+        if (species2[1] != SPECIES_NONE && items[1][0] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[1]));
+            CopyItemName(items[1][0], gStringVar2);
+            if(AddBagItem(items[1][0], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[1][0] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_2_ITEM_2:
+    {
+        if (species2[1] != SPECIES_NONE && items[1][1] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[1]));
+            CopyItemName(items[1][1], gStringVar2);
+            if(AddBagItem(items[1][1], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[1][1] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_2_ITEM_3:
+    {
+        if (species2[1] != SPECIES_NONE && items[1][2] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[1]));
+            CopyItemName(items[1][2], gStringVar2);
+            if(AddBagItem(items[1][2], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[1][2] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_2_ITEM_4:
+    {
+        if (species2[1] != SPECIES_NONE && items[1][3] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[1]));
+            CopyItemName(items[1][3], gStringVar2);
+            if(AddBagItem(items[1][3], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[1][3] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_2_ITEM_5:
+    {
+        if (species2[1] != SPECIES_NONE && items[1][4] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[1]));
+            CopyItemName(items[1][4], gStringVar2);
+            if(AddBagItem(items[1][4], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[1][4] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_3_ITEM_1:
+    {
+        if (species2[2] != SPECIES_NONE && items[2][0] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[2]));
+            CopyItemName(items[2][0], gStringVar2);
+            if(AddBagItem(items[2][0], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[2][0] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_3_ITEM_2:
+    {
+        if (species2[2] != SPECIES_NONE && items[2][1] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[2]));
+            CopyItemName(items[2][1], gStringVar2);
+            if(AddBagItem(items[2][1], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[2][1] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_3_ITEM_3:
+    {
+        if (species2[2] != SPECIES_NONE && items[2][2] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[2]));
+            CopyItemName(items[2][2], gStringVar2);
+            if(AddBagItem(items[2][2], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[2][2] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_3_ITEM_4:
+    {
+        if (species2[2] != SPECIES_NONE && items[2][3] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[2]));
+            CopyItemName(items[2][3], gStringVar2);
+            if(AddBagItem(items[2][3], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[2][3] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_3_ITEM_5:
+    {
+        if (species2[2] != SPECIES_NONE && items[2][4] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[2]));
+            CopyItemName(items[2][4], gStringVar2);
+            if(AddBagItem(items[2][4], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[2][4] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_4_ITEM_1:
+    {
+        if (species2[3] != SPECIES_NONE && items[3][0] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[3]));
+            CopyItemName(items[3][0], gStringVar2);
+            if(AddBagItem(items[3][0], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[3][0] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_4_ITEM_2:
+    {
+        if (species2[3] != SPECIES_NONE && items[3][1] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[3]));
+            CopyItemName(items[3][1], gStringVar2);
+            if(AddBagItem(items[3][1], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[3][1] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_4_ITEM_3:
+    {
+        if (species2[3] != SPECIES_NONE && items[3][2] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[3]));
+            CopyItemName(items[3][2], gStringVar2);
+            if(AddBagItem(items[3][2], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[3][2] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_4_ITEM_4:
+    {
+        if (species2[3] != SPECIES_NONE && items[3][3] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[3]));
+            CopyItemName(items[3][3], gStringVar2);
+            if(AddBagItem(items[3][3], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[3][3] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_4_ITEM_5:
+    {
+        if (species2[3] != SPECIES_NONE && items[3][4] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[3]));
+            CopyItemName(items[3][4], gStringVar2);
+            if(AddBagItem(items[3][4], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[3][4] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_5_ITEM_1:
+    {
+        if (species2[4] != SPECIES_NONE && items[4][0] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[4]));
+            CopyItemName(items[4][0], gStringVar2);
+            if(AddBagItem(items[4][0], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[4][0] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_5_ITEM_2:
+    {
+        if (species2[4] != SPECIES_NONE && items[4][1] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[4]));
+            CopyItemName(items[4][1], gStringVar2);
+            if(AddBagItem(items[4][1], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[4][1] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_5_ITEM_3:
+    {
+        if (species2[4] != SPECIES_NONE && items[4][2] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[4]));
+            CopyItemName(items[4][2], gStringVar2);
+            if(AddBagItem(items[4][2], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[4][2] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_5_ITEM_4:
+    {
+        if (species2[4] != SPECIES_NONE && items[4][3] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[4]));
+            CopyItemName(items[4][3], gStringVar2);
+            if(AddBagItem(items[4][3], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[4][3] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_5_ITEM_5:
+    {
+        if (species2[4] != SPECIES_NONE && items[4][4] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[4]));
+            CopyItemName(items[4][4], gStringVar2);
+            if(AddBagItem(items[4][4], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[4][4] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_6_ITEM_1:
+    {
+        if (species2[5] != SPECIES_NONE && items[5][0] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[5]));
+            CopyItemName(items[5][0], gStringVar2);
+            if(AddBagItem(items[5][0], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[5][0] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_6_ITEM_2:
+    {
+        if (species2[5] != SPECIES_NONE && items[5][1] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[5]));
+            CopyItemName(items[5][1], gStringVar2);
+            if(AddBagItem(items[5][1], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[5][1] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_6_ITEM_3:
+    {
+        if (species2[5] != SPECIES_NONE && items[5][2] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[5]));
+            CopyItemName(items[5][2], gStringVar2);
+            if(AddBagItem(items[5][2], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[5][2] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_6_ITEM_4:
+    {
+        if (species2[5] != SPECIES_NONE && items[5][3] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[5]));
+            CopyItemName(items[5][3], gStringVar2);
+            if(AddBagItem(items[5][3], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[5][3] = ITEM_NONE;
+            return;
+        }
+        break;
+    }
+    case VARIOUS_GIVE_DROPPED_ITEMS_SPECIES_6_ITEM_5:
+    {
+        if (species2[5] != SPECIES_NONE && items[5][4] != ITEM_NONE)
+        {
+            StringCopy(gStringVar1, GetSpeciesName(species2[5]));
+            CopyItemName(items[5][4], gStringVar2);
+            if(AddBagItem(items[5][4], 1))
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ITEM_DROPPED;
+            else
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_BAG_IS_FULL;
+            BattleScriptPush(cmd->nextInstr);
+            gBattlescriptCurrInstr = BattleScript_ItemDropped;
+            items[5][4] = ITEM_NONE;
+            return;
+        }
+        break;
     }
     } // End of switch (cmd->id)
 

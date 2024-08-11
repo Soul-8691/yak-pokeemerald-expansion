@@ -247,6 +247,14 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Storyteller
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giddy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan2;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ProfIvy;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Shroodle;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pancham;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Grafaiai;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Joltik;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sewaddle;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Blipbug;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Skwovet;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -490,6 +498,14 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_HOOH] =                     &gObjectEventGraphicsInfo_HoOh,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
+    [OBJ_EVENT_GFX_PROF_IVY] =                 &gObjectEventGraphicsInfo_ProfIvy,
+    [OBJ_EVENT_GFX_SKWOVET] =                  &gObjectEventGraphicsInfo_Skwovet,
+    [OBJ_EVENT_GFX_BLIPBUG] =                  &gObjectEventGraphicsInfo_Blipbug,
+    [OBJ_EVENT_GFX_SEWADDLE] =                 &gObjectEventGraphicsInfo_Sewaddle,
+    [OBJ_EVENT_GFX_PANCHAM] =                  &gObjectEventGraphicsInfo_Pancham,
+    [OBJ_EVENT_GFX_JOLTIK] =                   &gObjectEventGraphicsInfo_Joltik,
+    [OBJ_EVENT_GFX_GRAFAIAI] =                 &gObjectEventGraphicsInfo_Grafaiai,
+    [OBJ_EVENT_GFX_SHROODLE] =                 &gObjectEventGraphicsInfo_Shroodle,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

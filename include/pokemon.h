@@ -882,4 +882,18 @@ void UpdateDaysPassedSinceFormChange(u16 days);
 void TrySetDayLimitToFormChange(struct Pokemon *mon);
 u32 CheckDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler);
 
+struct ItemDrops
+{
+    u16 item;
+    u8 dropChance;
+};
+
+struct ItemDropSpecies
+{
+    const struct ItemDrops *drops;
+    u8 dropCount;
+    u8 numDropsLower;
+    u8 numDropsUpper;
+};
+
 #endif // GUARD_POKEMON_H

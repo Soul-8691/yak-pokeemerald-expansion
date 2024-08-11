@@ -384,6 +384,23 @@ const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/pokemon/question_m
 
 const u16 gObjectEventPaletteEmotes[] = INCBIN_U16("graphics/misc/emotes.gbapal");
 
+const u32 gObjectEventPic_ProfIvy[] = INCBIN_U32("graphics/object_events/pics/people/prof_ivy.4bpp");
+const u16 gObjectEventPal_ProfIvy[] = INCBIN_U16("graphics/object_events/pics/people/prof_ivy.gbapal");
+const u32 gObjectEventPic_Shroodle[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/shroodle.4bpp");
+const u16 gObjectEventPal_Shroodle[] = INCBIN_U16("graphics/object_events/pics/pokemon/new/shroodle.gbapal");
+const u32 gObjectEventPic_Skwovet[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/skwovet.4bpp");
+const u16 gObjectEventPal_Skwovet[] = INCBIN_U16("graphics/object_events/pics/pokemon/new/skwovet.gbapal");
+const u32 gObjectEventPic_Blipbug[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/blipbug.4bpp");
+const u16 gObjectEventPal_Blipbug[] = INCBIN_U16("graphics/object_events/pics/pokemon/new/blipbug.gbapal");
+const u32 gObjectEventPic_Grafaiai[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/grafaiai.4bpp");
+const u16 gObjectEventPal_Grafaiai[] = INCBIN_U16("graphics/object_events/pics/pokemon/new/grafaiai.gbapal");
+const u32 gObjectEventPic_Joltik[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/joltik.4bpp");
+const u16 gObjectEventPal_Joltik[] = INCBIN_U16("graphics/object_events/pics/pokemon/new/joltik.gbapal");
+const u32 gObjectEventPic_Pancham[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/pancham.4bpp");
+const u16 gObjectEventPal_Pancham[] = INCBIN_U16("graphics/object_events/pics/pokemon/new/pancham.gbapal");
+const u32 gObjectEventPic_Sewaddle[] = INCBIN_U32("graphics/object_events/pics/pokemon/new/sewaddle.4bpp");
+const u16 gObjectEventPal_Sewaddle[] = INCBIN_U16("graphics/object_events/pics/pokemon/new/sewaddle.gbapal");
+
 #if OW_FOLLOWERS_POKEBALLS
 const u32 gObjectEventPic_MasterBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_master.4bpp");
 const u32 gObjectEventPic_UltraBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_ultra.4bpp");

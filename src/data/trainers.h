@@ -42183,3 +42183,87 @@ F_TRAINER_FEMALE |
             },
         },
     },
+#line 16877
+    [TRAINER_VALENCIA_PARK_1] =
+    {
+#line 16878
+        .trainerName = _("Trainer 1"),
+#line 16879
+        .trainerClass = TRAINER_CLASS_YOUNGSTER,
+#line 16880
+        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .encounterMusic_gender = 
+#line 16882
+            TRAINER_ENCOUNTER_MUSIC_MALE,
+#line 16883
+        .doubleBattle = FALSE,
+        .partySize = 2,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 16885
+            .species = SPECIES_CHEWTLE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 16887
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 16886
+            .lvl = 20,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 16889
+            .species = SPECIES_VULPIX_ALOLA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 16891
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 16890
+            .lvl = 23,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+        },
+    },
+#line 16893
+    [TRAINER_VALENCIA_PARK_2] =
+    {
+#line 16894
+        .trainerName = _("Trainer 2"),
+#line 16895
+        .trainerClass = TRAINER_CLASS_LASS,
+#line 16896
+        .trainerPic = TRAINER_PIC_LASS,
+        .encounterMusic_gender = 
+#line 16897
+F_TRAINER_FEMALE | 
+#line 16898
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+#line 16899
+        .doubleBattle = FALSE,
+        .partySize = 2,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 16901
+            .species = SPECIES_SKWOVET,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 16903
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 16902
+            .lvl = 22,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 16905
+            .species = SPECIES_NICKIT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 16907
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 16906
+            .lvl = 22,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+        },
+    },

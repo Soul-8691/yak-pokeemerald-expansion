@@ -7,6 +7,7 @@ const struct Tileset gTileset_General =
     .metatiles = gMetatiles_General,
     .metatileAttributes = gMetatileAttributes_General,
     .callback = InitTilesetAnim_General,
+    .numTiles = NUM_TILES_IN_PRIMARY_EMERALD,
 };
 
 const struct Tileset gTileset_Petalburg =
@@ -183,6 +184,7 @@ const struct Tileset gTileset_Building =
     .metatiles = gMetatiles_InsideBuilding,
     .metatileAttributes = gMetatileAttributes_InsideBuilding,
     .callback = InitTilesetAnim_Building,
+    .numTiles = NUM_TILES_IN_PRIMARY_EMERALD,
 };
 
 const struct Tileset gTileset_Shop =
@@ -260,6 +262,7 @@ const struct Tileset gTileset_MeteorFalls =
     .metatiles = gMetatiles_MeteorFalls,
     .metatileAttributes = gMetatileAttributes_MeteorFalls,
     .callback = NULL,
+    .numTiles = NUM_TILES_IN_PRIMARY_EMERALD,
 };
 
 const struct Tileset gTileset_OceanicMuseum =
@@ -635,9 +638,6 @@ const struct Tileset gTileset_SecretBase =
     .metatileAttributes = gMetatileAttributes_SecretBasePrimary,
     .callback = NULL,
 };
-
-const struct Tileset * const gTilesetPointer_SecretBase = &gTileset_SecretBase;
-const struct Tileset * const gTilesetPointer_SecretBaseRedCave = &gTileset_SecretBaseRedCave;
 
 const struct Tileset gTileset_EliteFour =
 {

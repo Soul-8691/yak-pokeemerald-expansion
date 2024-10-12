@@ -45,6 +45,7 @@
 #include "constants/metatile_labels.h"
 #include "constants/moves.h"
 #include "constants/region_map_sections.h"
+#include "tilesets.h"
 
 #define LAST_TVSHOW_IDX (TV_SHOWS_COUNT - 1)
 
@@ -757,6 +758,18 @@ static const u8 sTVSecretBaseSecretsActions[NUM_SECRET_BASE_FLAGS] =
     SBSECRETS_NUM_STATES                    // SECRET_BASE_UNUSED_FLAG. Odd that this is included, if it were used it would overflow sTVSecretBaseSecretsTextGroup
 };
 
+static const struct MetatileMapping sTVMetatileMapping[] =
+{
+    {
+        .tileset = &gTileset_Building,
+        .metatileIds =
+        {
+            METATILE_Building_TV_Off,
+            METATILE_Building_TV_On
+        },
+    },
+};
+
 void ClearTVShowData(void)
 {
     u8 i, j;
@@ -822,13 +835,26 @@ u8 FindAnyTVShowOnTheAir(void)
     return slot;
 }
 
+static u32 GetTVMetatile(bool32 turnOn)
+{
+    u32 i;
+    for (i = 0; i < ARRAY_COUNT(sTVMetatileMapping); i++)
+    {
+        const struct MetatileMapping *TVMetatileMapping = &sTVMetatileMapping[i];
+        if (gMapHeader.mapLayout->primaryTileset == TVMetatileMapping->tileset)
+            return TVMetatileMapping->metatileIds[turnOn];
+    }
+    return 0;
+}
+
 void UpdateTVScreensOnMap(int width, int height)
 {
+    u32 metatileId = GetTVMetatile(TRUE);
     FlagSet(FLAG_SYS_TV_WATCH);
     switch (CheckForPlayersHouseNews())
     {
     case PLAYERS_HOUSE_TV_LATI:
-        SetTVMetatilesOnMap(width, height, METATILE_Building_TV_On);
+        SetTVMetatilesOnMap(width, height, metatileId);
         break;
     case PLAYERS_HOUSE_TV_MOVIE:
         // Don't flash TV for movie text in player's house
@@ -839,12 +865,12 @@ void UpdateTVScreensOnMap(int width, int height)
          && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LILYCOVE_CITY_COVE_LILY_MOTEL_1F))
         {
             // NPC in Lilycove Hotel is always watching TV
-            SetTVMetatilesOnMap(width, height, METATILE_Building_TV_On);
+            SetTVMetatilesOnMap(width, height, metatileId);
         }
         else if (FlagGet(FLAG_SYS_TV_START) && (FindAnyTVShowOnTheAir() != 0xFF || FindAnyPokeNewsOnTheAir() != 0xFF || IsGabbyAndTyShowOnTheAir()))
         {
             FlagClear(FLAG_SYS_TV_WATCH);
-            SetTVMetatilesOnMap(width, height, METATILE_Building_TV_On);
+            SetTVMetatilesOnMap(width, height, metatileId);
         }
         break;
     }
@@ -865,16 +891,20 @@ static void SetTVMetatilesOnMap(int width, int height, u16 metatileId)
     }
 }
 
+static void SetTVScreen(bool32 turnOn)
+{
+    SetTVMetatilesOnMap(gBackupMapLayout.width, gBackupMapLayout.height, GetTVMetatile(turnOn));
+    DrawWholeMapView();
+}
+
 void TurnOffTVScreen(void)
 {
-    SetTVMetatilesOnMap(gBackupMapLayout.width, gBackupMapLayout.height, METATILE_Building_TV_Off);
-    DrawWholeMapView();
+    SetTVScreen(FALSE);
 }
 
 void TurnOnTVScreen(void)
 {
-    SetTVMetatilesOnMap(gBackupMapLayout.width, gBackupMapLayout.height, METATILE_Building_TV_On);
-    DrawWholeMapView();
+    SetTVScreen(TRUE);
 }
 
 // gSpecialVar_0x8004 here is set from GetRandomActiveShowIdx in EventScript_TryDoTVShow

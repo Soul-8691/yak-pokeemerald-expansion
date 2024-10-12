@@ -69,6 +69,7 @@
 #include "constants/metatile_labels.h"
 #include "palette.h"
 #include "battle_util.h"
+#include "tilesets.h"
 
 #define TAG_ITEM_ICON 5500
 
@@ -109,7 +110,7 @@ static void Task_PetalburgGymSlideOpenRoomDoors(u8);
 static void PetalburgGymSetDoorMetatiles(u8, u16);
 static void Task_PCTurnOnEffect(u8);
 static void PCTurnOnEffect(struct Task *);
-static void PCTurnOnEffect_SetMetatile(s16, s8, s8);
+static void PCTurnOnEffect_SetMetatile(u32, s8, s8);
 static void PCTurnOffEffect(void);
 static void Task_LotteryCornerComputerEffect(u8);
 static void LotteryCornerComputerEffect(struct Task *);
@@ -146,6 +147,18 @@ static void BufferFanClubTrainerName_(struct LinkBattleRecords *, u8, u8);
 #else
 static void BufferFanClubTrainerName_(u8 whichLinkTrainer, u8 whichNPCTrainer);
 #endif //FREE_LINK_BATTLE_RECORDS
+
+static const struct MetatileMapping sPCMetatileMapping[] =
+{
+    {
+        .tileset = &gTileset_Building,
+        .metatileIds =
+        {
+            METATILE_Building_PC_On,
+            METATILE_Building_PC_Off
+        },
+    },
+};
 
 void Special_ShowDiploma(void)
 {
@@ -1063,15 +1076,29 @@ static void PCTurnOnEffect(struct Task *task)
     task->tTimer++;
 }
 
-static void PCTurnOnEffect_SetMetatile(s16 isScreenOn, s8 dx, s8 dy)
+static u32 GetPCMetatile(u32 isScreenOn)
 {
-    u16 metatileId = 0;
+    u32 i;
+    for (i = 0; i < ARRAY_COUNT(sPCMetatileMapping); i++)
+    {
+        const struct MetatileMapping *PCMetatileMapping = &sPCMetatileMapping[i];
+        if (gMapHeader.mapLayout->primaryTileset == PCMetatileMapping->tileset)
+            return PCMetatileMapping->metatileIds[isScreenOn];
+    }
+    return 0;
+}
+
+static void PCTurnOnEffect_SetMetatile(u32 isScreenOn, s8 dx, s8 dy)
+{
+    u32 metatileId = 0;
+
+    if (gSpecialVar_0x8004 == PC_LOCATION_OTHER)
+        metatileId = GetPCMetatile(isScreenOn);
+
     if (isScreenOn)
     {
         // Screen is on, set it off
-        if (gSpecialVar_0x8004 == PC_LOCATION_OTHER)
-            metatileId = METATILE_Building_PC_Off;
-        else if (gSpecialVar_0x8004 == PC_LOCATION_BRENDANS_HOUSE)
+        if (gSpecialVar_0x8004 == PC_LOCATION_BRENDANS_HOUSE)
             metatileId = METATILE_BrendansMaysHouse_BrendanPC_Off;
         else if (gSpecialVar_0x8004 == PC_LOCATION_MAYS_HOUSE)
             metatileId = METATILE_BrendansMaysHouse_MayPC_Off;
@@ -1079,9 +1106,7 @@ static void PCTurnOnEffect_SetMetatile(s16 isScreenOn, s8 dx, s8 dy)
     else
     {
         // Screen is off, set it on
-        if (gSpecialVar_0x8004 == PC_LOCATION_OTHER)
-            metatileId = METATILE_Building_PC_On;
-        else if (gSpecialVar_0x8004 == PC_LOCATION_BRENDANS_HOUSE)
+        if (gSpecialVar_0x8004 == PC_LOCATION_BRENDANS_HOUSE)
             metatileId = METATILE_BrendansMaysHouse_BrendanPC_On;
         else if (gSpecialVar_0x8004 == PC_LOCATION_MAYS_HOUSE)
             metatileId = METATILE_BrendansMaysHouse_MayPC_On;
@@ -1123,7 +1148,7 @@ static void PCTurnOffEffect(void)
     }
 
     if (gSpecialVar_0x8004 == PC_LOCATION_OTHER)
-        metatileId = METATILE_Building_PC_Off;
+        metatileId = GetPCMetatile(TRUE);
     else if (gSpecialVar_0x8004 == PC_LOCATION_BRENDANS_HOUSE)
         metatileId = METATILE_BrendansMaysHouse_BrendanPC_Off;
     else if (gSpecialVar_0x8004 == PC_LOCATION_MAYS_HOUSE)
